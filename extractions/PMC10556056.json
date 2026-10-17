@@ -1,0 +1,1203 @@
+{
+ "pmcid": "PMC10556056",
+ "format": 2,
+ "routes": [
+  {
+   "label": "ZnS1",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "zinc sulfide nanoparticles",
+    "formula": "ZnS",
+    "family": "chalcogenure",
+    "phase": "cubic (zinc blende)",
+    "morphology": "agglomerated nanoparticles, compact polygonal grains"
+   },
+   "method": "hydrothermal, ZnCl2 + thiourea, [S]/[Zn] = 1, 220 °C 12 h",
+   "quote": "The nanoparticles (NP) of ZnS were prepared by the hydrothermal method, and the brief synthesis procedure followed.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "zinc chloride",
+     "formula": "ZnCl2",
+     "role": "precursor",
+     "quote": "The required amount of ZnCl2 and SC(NH2)2 powder were dissolved in de-ionized water separately",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "thiourea",
+     "formula": "SC(NH2)2",
+     "role": "precursor",
+     "quote": "The required amount of ZnCl2 and SC(NH2)2 powder were dissolved in de-ionized water separately",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "de-ionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "The required amount of ZnCl2 and SC(NH2)2 powder were dissolved in de-ionized water separately",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "hydrochloric acid",
+     "formula": "HCl",
+     "role": "acid",
+     "quote": "five drops of HCl were added to the ZnCl2 solution and stirred at room temperature for 1 h",
+     "amount_text": "five drops",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "de-ionized water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "The nanoparticles in the solution were filtered and washed several times using de-ionized water to remove impurities in the sample."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissoudre séparément le ZnCl2 et la thiourée dans de l'eau désionisée (quantités non données).",
+     "quote": "The required amount of ZnCl2 and SC(NH2)2 powder were dissolved in de-ionized water separately",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Ajouter cinq gouttes de HCl à la solution de ZnCl2.",
+     "quote": "five drops of HCl were added to the ZnCl2 solution and stirred at room temperature for 1 h",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "concentration",
+      "volume",
+      "ph"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Agiter la solution de ZnCl2 acidifiée à température ambiante pendant 1 h.",
+     "quote": "five drops of HCl were added to the ZnCl2 solution and stirred at room temperature for 1 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "five drops of HCl were added to the ZnCl2 solution and stirred at room temperature for 1 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "five drops of HCl were added to the ZnCl2 solution and stirred at room temperature for 1 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Verser goutte à goutte la solution de thiourée dans la solution de ZnCl2 ; le rapport molaire [S]/[Zn] est la grandeur balayée.",
+     "quote": "Thiourea solution is then dripped into ZnCl2 solution",
+     "parameters": [
+      {
+       "name": "molar_ratio",
+       "value_num": 1,
+       "unit": "[S]/[Zn]",
+       "quote": "Samples with [S]/[Zn] molar ratios of 0.66, 1, 1.5, 2, and 3 were prepared and named ZnS0.67, ZnS1, ZnS1.5, ZnS2, and ZnS3 for further characterization."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "Agiter le mélange à température ambiante pendant 1 h supplémentaire.",
+     "quote": "the mixture is stirred at room temperature for another 1 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "the mixture is stirred at room temperature for another 1 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "the mixture is stirred at room temperature for another 1 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "transfer",
+     "description": "Charger 50 ml du mélange limpide dans un autoclave en acier inoxydable revêtu de Téflon de 100 ml.",
+     "quote": "50 ml of the clear mixture was then charged to a Teflon-coated SS autoclave of 100 ml volume",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 50,
+       "unit": "ml",
+       "quote": "50 ml of the clear mixture was then charged to a Teflon-coated SS autoclave of 100 ml volume"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-coated SS autoclave",
+       "detail": "100 ml volume",
+       "quote": "50 ml of the clear mixture was then charged to a Teflon-coated SS autoclave of 100 ml volume"
+      }
+     ],
+     "not_stated": [
+      "fill_fraction"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "heat",
+     "description": "Traitement hydrothermal de l'autoclave fermé placé dans un four.",
+     "quote": "The closed autoclave was placed in a furnace at a temperature of 220 °C for 12 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 220,
+       "unit": "°C",
+       "quote": "The closed autoclave was placed in a furnace at a temperature of 220 °C for 12 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "The closed autoclave was placed in a furnace at a temperature of 220 °C for 12 h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "furnace",
+       "detail": null,
+       "quote": "The closed autoclave was placed in a furnace at a temperature of 220 °C for 12 h"
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "pressure"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "cool",
+     "description": "Laisser refroidir l'autoclave jusqu'à la température ambiante.",
+     "quote": "allowed to cool to room temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "allowed to cool to room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate",
+      "duration"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "filter",
+     "description": "Filtrer les nanoparticules de la solution.",
+     "quote": "The nanoparticles in the solution were filtered and washed several times using de-ionized water to remove impurities in the sample.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "filter_type",
+      "pore_size"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "wash",
+     "description": "Laver plusieurs fois à l'eau désionisée pour éliminer les impuretés.",
+     "quote": "The nanoparticles in the solution were filtered and washed several times using de-ionized water to remove impurities in the sample.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "de-ionized water",
+       "quote": "The nanoparticles in the solution were filtered and washed several times using de-ionized water to remove impurities in the sample."
+      },
+      {
+       "name": "repetitions",
+       "value_text": "several times",
+       "quote": "The nanoparticles in the solution were filtered and washed several times using de-ionized water to remove impurities in the sample."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
+    },
+    {
+     "order": 11,
+     "action": "dry",
+     "description": "Sécher le produit blanchâtre final.",
+     "quote": "The final whitish product was dried at 60 °C for 1 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "The final whitish product was dried at 60 °C for 1 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "The final whitish product was dried at 60 °C for 1 h."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "tous les pics sont indexés à ZnS cubique (ICDD 01-077-2100) ; pics larges pour ZnS0.67 et ZnS1, plus intenses pour les rapports S/Zn élevés",
+     "instrument": "Rigaku Miniflex 600 X-ray diffractometer",
+     "conditions": "Cu Kα (λ = 1.542 Å), 15 mA et 40 kV, balayage continu « from 100 to 800 » (sic), pas « 0.020 », vitesse « 100 per minute » ; élargissement instrumental corrigé par un monocristal de Si",
+     "quote": "The structural studies of prepared samples were carried out by the X-ray diffractometer (XRD) using Rigaku Miniflex 600 X-ray diffractometer with Cu Kα (λ = 1.542 Å) radiation, operating at 15 mA and 40 kV."
+    },
+    {
+     "technique": "Raman",
+     "result": "modes TO vers 270 cm−1 et LO vers 340 cm−1 pour tous les échantillons (phase cubique)",
+     "instrument": "Horiba Lab Ram HR Evolution Confocal Raman Spectrometer",
+     "conditions": "532 nm (Diode Pumped Solid State Laser), température ambiante",
+     "quote": "All samples showed a TO peak mode at around 270 cm−1 and LO peak at around 340 cm−1, supporting the cubic phase of ZnS."
+    },
+    {
+     "technique": "XPS",
+     "result": "pics S 2p déconvolués en composantes liées et composantes de défauts ; pourcentage de défauts 18 % (ZnS1) et 34 % (ZnS3)",
+     "instrument": "Thermo-scientific NEXA Surface analyzer",
+     "conditions": "énergies de liaison calibrées sur la raie C 1s à 284.8 eV",
+     "quote": "All binding energy (B.E) values in the XPS spectra were calibrated using the C 1 s line at 284.8 eV."
+    },
+    {
+     "technique": "ICP-OES",
+     "result": "rapports S/Zn atomiques de 0.22 à 1.89, dans le sens de l'évolution attendue mais loin des rapports nominaux",
+     "instrument": "Thermo-scientific Icap 6300 ICP-OES",
+     "conditions": null,
+     "quote": "The determination of the element content was carried out using a Thermo-scientific Icap 6300 ICP-OES."
+    },
+    {
+     "technique": "photoluminescence",
+     "result": "émissions à 365, 383 et 473 nm ; bande bleue de 473 nm intense pour ZnS0.67 et presque disparue pour ZnS3",
+     "instrument": "Agilent Cary fluorescent spectrophotometer",
+     "conditions": "longueur d'onde d'excitation 280 nm",
+     "quote": "The PL spectra show the emissions are at 365 nm, 383 nm, and 473 nm."
+    },
+    {
+     "technique": "UV-Vis DRS",
+     "result": "bandes interdites de 3.28 à 3.49 eV (tracé de Tauc, fonction de Kubelka–Munk)",
+     "instrument": "Cary 5000 UV–Vis-NIR spectrophotometer",
+     "conditions": "200–1200 nm, température ambiante",
+     "quote": "Optical studies of all ZnS nanostructures were analyzed using The Cary 5000 UV–Vis-NIR spectrophotometer, in the wavelength range of 200–1200 nm at room temperature."
+    },
+    {
+     "technique": "SEM",
+     "result": "grains polygonaux uniformes, compacts, tailles de grains de 25.8 à 158 nm selon l'échantillon",
+     "instrument": "ZEISS Gemini SEM 300",
+     "conditions": null,
+     "quote": "The morphological studies of all the synthesized ZnS nanostructures were done using a ZEISS Gemini SEM 300."
+    },
+    {
+     "technique": "TEM/SAED/HRTEM (ZnS1 seulement)",
+     "result": "particules non toutes sphériques, taille moyenne 46.5 nm (15.7–87.3 nm), polycristallines, structure blende confirmée par SAED, franges à 0.209 nm",
+     "instrument": "Tecnai G2 F20, FEI Company",
+     "conditions": "200 kV",
+     "quote": "TEM and EDAX studies by using Tecnai G2 F20, FEI Company operating at 200 kV and OXFORD X- Max, respectively."
+    },
+    {
+     "technique": "EDAX (ZnS1)",
+     "result": "quatre signaux distincts de Zn et S : produit ZnS pur",
+     "instrument": "OXFORD X- Max",
+     "conditions": null,
+     "quote": "Zn and S have produced four distinct signals demonstrating that the product was pure ZnS."
+    },
+    {
+     "technique": "BET",
+     "result": "surfaces spécifiques de 5.57 à 16.77 m2 g−1 selon l'échantillon",
+     "instrument": "BELCAT-M",
+     "conditions": null,
+     "quote": "The specific surface area of the samples is estimated through the Brunauer–Emmett–Teller (BET) method using BELCAT-M."
+    },
+    {
+     "technique": "test photocatalytique (dégradation du bleu de méthylène)",
+     "result": "efficacité de dégradation de 61.5 à 83.78 % selon l'échantillon",
+     "instrument": "VAR TECH V6610 Digital Lux meter (intensité solaire)",
+     "conditions": "0.03 g de photocatalyseur dans 25 ml de solution de MB (10 mg dans 1 L d'eau distillée) ; agitation 1 h à l'obscurité ; lumière solaire de 11 h à 14 h, intensités 56, 79, 62 et 48 k(lux)",
+     "quote": "To conduct a PC study, 0.03 g of ZnS photocatalyst is added to 25 ml of Methylene Blue (MB) solution."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "cubic ZnS",
+     "quote": "Every one of the recognizable peaks could be ordered as the cubic ZnS in the standard reference information (ICDD 01-077-2100)."
+    },
+    {
+     "property": "crystallite_size_Scherrer_(111)",
+     "value_num": 2.9,
+     "unit": "nm",
+     "quote": "ZnS1 | 28.60 | 3543 | 2.9 | 3.12 | 5.40 | 57.7"
+    },
+    {
+     "property": "crystallite_size_UDM",
+     "value_num": 2.7,
+     "unit": "nm",
+     "quote": "ZnS 1 | D (nm) | 2.9 | 2.7 | 2.8 | 2.8 | 2.9"
+    },
+    {
+     "property": "crystallite_size_UDSM",
+     "value_num": 2.8,
+     "unit": "nm",
+     "quote": "ZnS 1 | D (nm) | 2.9 | 2.7 | 2.8 | 2.8 | 2.9"
+    },
+    {
+     "property": "crystallite_size_UDEDM",
+     "value_num": 2.8,
+     "unit": "nm",
+     "quote": "ZnS 1 | D (nm) | 2.9 | 2.7 | 2.8 | 2.8 | 2.9"
+    },
+    {
+     "property": "crystallite_size_SSP",
+     "value_num": 2.9,
+     "unit": "nm",
+     "quote": "ZnS 1 | D (nm) | 2.9 | 2.7 | 2.8 | 2.8 | 2.9"
+    },
+    {
+     "property": "interplanar_spacing_d111",
+     "value_num": 3.12,
+     "unit": "Å",
+     "quote": "ZnS1 | 28.60 | 3543 | 2.9 | 3.12 | 5.40 | 57.7"
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 5.4,
+     "unit": "Å",
+     "quote": "ZnS1 | 28.60 | 3543 | 2.9 | 3.12 | 5.40 | 57.7"
+    },
+    {
+     "property": "grain_size_SEM",
+     "value_num": 57.7,
+     "unit": "nm",
+     "quote": "ZnS1 | 28.60 | 3543 | 2.9 | 3.12 | 5.40 | 57.7"
+    },
+    {
+     "property": "band_gap",
+     "value_num": 3.32,
+     "unit": "eV",
+     "quote": "ZnS1 | 3.32 | 27.66 | 72.34 | 0.38 | 5.57 | 64"
+    },
+    {
+     "property": "ICP-OES_sulphur_content",
+     "value_num": 27.66,
+     "unit": "atomic %",
+     "quote": "ZnS1 | 3.32 | 27.66 | 72.34 | 0.38 | 5.57 | 64"
+    },
+    {
+     "property": "ICP-OES_zinc_content",
+     "value_num": 72.34,
+     "unit": "atomic %",
+     "quote": "ZnS1 | 3.32 | 27.66 | 72.34 | 0.38 | 5.57 | 64"
+    },
+    {
+     "property": "ICP-OES_S_to_Zn_ratio",
+     "value_num": 0.38,
+     "unit": null,
+     "quote": "ZnS1 | 3.32 | 27.66 | 72.34 | 0.38 | 5.57 | 64"
+    },
+    {
+     "property": "BET_specific_surface_area",
+     "value_num": 5.57,
+     "unit": "m2 g−1",
+     "quote": "ZnS1 | 3.32 | 27.66 | 72.34 | 0.38 | 5.57 | 64"
+    },
+    {
+     "property": "MB_photodegradation_efficiency",
+     "value_num": 64,
+     "unit": "%",
+     "quote": "ZnS1 | 3.32 | 27.66 | 72.34 | 0.38 | 5.57 | 64"
+    },
+    {
+     "property": "appearance",
+     "value_text": "whitish",
+     "quote": "The final whitish product was dried at 60 °C for 1 h."
+    },
+    {
+     "property": "XRD_peak_profile",
+     "value_text": "broad peaks, formation of quantum dots like ZnS particles",
+     "quote": "For lower S/Zn samples ZnS0.67 and ZnS1, the XRD spectrum shows broad peaks, which indicate the formation of quantum dots like ZnS particles."
+    },
+    {
+     "property": "particle_size_TEM",
+     "value_num": 46.5,
+     "unit": "nm",
+     "quote": "The normal size of the particles assessed from the TEM images is 46.5 nm in the range of size 15.7–87.3 nm."
+    },
+    {
+     "property": "HRTEM_fringe_spacing",
+     "value_num": 0.209,
+     "unit": "nm",
+     "quote": "The interplanar distances of the crystal fringes are around 0.209 nm."
+    },
+    {
+     "property": "XPS_defect_percentage",
+     "value_num": 18,
+     "unit": "%",
+     "quote": "The defect percentage calculated from the area under the respective peaks in XPS is 18% for Zns1."
+    },
+    {
+     "property": "Raman_defect_induced_mode",
+     "value_num": 320,
+     "unit": "cm−1",
+     "quote": "The samples ZnS0.67, ZnS1, ZnS1.5, and ZnS3 centered at 320 cm−1 have a lattice defect-induced phonon mode at X-W-L"
+    }
+   ],
+   "missing_fields": [
+    "quantités de ZnCl2 et de thiourée",
+    "volume d'eau",
+    "concentration de HCl",
+    "vitesse d'agitation",
+    "vitesse de montée en température",
+    "type de filtre",
+    "nombre de lavages",
+    "rendement"
+   ]
+  },
+  {
+   "label": "ZnS0.67",
+   "parent": "ZnS1",
+   "material": {
+    "name": "zinc sulfide nanoparticles",
+    "formula": "ZnS",
+    "family": "chalcogenure",
+    "phase": "cubic (zinc blende)",
+    "morphology": "compact polygonal grains"
+   },
+   "quote": "Five samples were prepared by varying [S]/[Zn] molar ratios using the same procedure.",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 4,
+     "value_num": 0.66,
+     "unit": "[S]/[Zn]",
+     "parent_value": "1",
+     "quote": "Samples with [S]/[Zn] molar ratios of 0.66, 1, 1.5, 2, and 3 were prepared and named ZnS0.67, ZnS1, ZnS1.5, ZnS2, and ZnS3 for further characterization."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "cubic ZnS",
+     "quote": "Every one of the recognizable peaks could be ordered as the cubic ZnS in the standard reference information (ICDD 01-077-2100)."
+    },
+    {
+     "property": "crystallite_size_Scherrer_(111)",
+     "value_num": 2.8,
+     "unit": "nm",
+     "quote": "ZnS0.67 | 28.68 | 3945 | 2.8 | 3.11 | Standardd111 = 3.12 | 5.39 | StandardValue = 5.41 | 25.8"
+    },
+    {
+     "property": "crystallite_size_UDM",
+     "value_num": 2.9,
+     "unit": "nm",
+     "quote": "ZnS 0.67 | D (nm) | 2.8 | 2.9 | 2.9 | 2.9 | 2.8"
+    },
+    {
+     "property": "crystallite_size_UDSM",
+     "value_num": 2.9,
+     "unit": "nm",
+     "quote": "ZnS 0.67 | D (nm) | 2.8 | 2.9 | 2.9 | 2.9 | 2.8"
+    },
+    {
+     "property": "crystallite_size_UDEDM",
+     "value_num": 2.9,
+     "unit": "nm",
+     "quote": "ZnS 0.67 | D (nm) | 2.8 | 2.9 | 2.9 | 2.9 | 2.8"
+    },
+    {
+     "property": "crystallite_size_SSP",
+     "value_num": 2.8,
+     "unit": "nm",
+     "quote": "ZnS 0.67 | D (nm) | 2.8 | 2.9 | 2.9 | 2.9 | 2.8"
+    },
+    {
+     "property": "interplanar_spacing_d111",
+     "value_num": 3.11,
+     "unit": "Å",
+     "quote": "ZnS0.67 | 28.68 | 3945 | 2.8 | 3.11 | Standardd111 = 3.12 | 5.39 | StandardValue = 5.41 | 25.8"
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 5.39,
+     "unit": "Å",
+     "quote": "ZnS0.67 | 28.68 | 3945 | 2.8 | 3.11 | Standardd111 = 3.12 | 5.39 | StandardValue = 5.41 | 25.8"
+    },
+    {
+     "property": "grain_size_SEM",
+     "value_num": 25.8,
+     "unit": "nm",
+     "quote": "ZnS0.67 | 28.68 | 3945 | 2.8 | 3.11 | Standardd111 = 3.12 | 5.39 | StandardValue = 5.41 | 25.8"
+    },
+    {
+     "property": "band_gap",
+     "value_num": 3.46,
+     "unit": "eV",
+     "quote": "ZnS0.67 | 3.46 | 17.78 | 82.21 | 0.22 | 16.77 | 83.78"
+    },
+    {
+     "property": "ICP-OES_sulphur_content",
+     "value_num": 17.78,
+     "unit": "atomic %",
+     "quote": "ZnS0.67 | 3.46 | 17.78 | 82.21 | 0.22 | 16.77 | 83.78"
+    },
+    {
+     "property": "ICP-OES_zinc_content",
+     "value_num": 82.21,
+     "unit": "atomic %",
+     "quote": "ZnS0.67 | 3.46 | 17.78 | 82.21 | 0.22 | 16.77 | 83.78"
+    },
+    {
+     "property": "ICP-OES_S_to_Zn_ratio",
+     "value_num": 0.22,
+     "unit": null,
+     "quote": "ZnS0.67 | 3.46 | 17.78 | 82.21 | 0.22 | 16.77 | 83.78"
+    },
+    {
+     "property": "BET_specific_surface_area",
+     "value_num": 16.77,
+     "unit": "m2 g−1",
+     "quote": "ZnS0.67 | 3.46 | 17.78 | 82.21 | 0.22 | 16.77 | 83.78"
+    },
+    {
+     "property": "MB_photodegradation_efficiency",
+     "value_num": 83.78,
+     "unit": "%",
+     "quote": "ZnS0.67 | 3.46 | 17.78 | 82.21 | 0.22 | 16.77 | 83.78"
+    },
+    {
+     "property": "XRD_peak_profile",
+     "value_text": "broad peaks, formation of quantum dots like ZnS particles",
+     "quote": "For lower S/Zn samples ZnS0.67 and ZnS1, the XRD spectrum shows broad peaks, which indicate the formation of quantum dots like ZnS particles."
+    },
+    {
+     "property": "PL_blue_emission_473nm",
+     "value_text": "strong blue emission, peak maximum at 473 nm",
+     "quote": "At ZnS0.67, the example shows solid blue discharge with the peak extreme at 473 nm."
+    },
+    {
+     "property": "Raman_defect_induced_mode",
+     "value_num": 320,
+     "unit": "cm−1",
+     "quote": "The samples ZnS0.67, ZnS1, ZnS1.5, and ZnS3 centered at 320 cm−1 have a lattice defect-induced phonon mode at X-W-L"
+    }
+   ]
+  },
+  {
+   "label": "ZnS1.5",
+   "parent": "ZnS1",
+   "material": {
+    "name": "zinc sulfide nanoparticles",
+    "formula": "ZnS",
+    "family": "chalcogenure",
+    "phase": "cubic (zinc blende)",
+    "morphology": "compact polygonal grains"
+   },
+   "quote": "Five samples were prepared by varying [S]/[Zn] molar ratios using the same procedure.",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 4,
+     "value_num": 1.5,
+     "unit": "[S]/[Zn]",
+     "parent_value": "1",
+     "quote": "Samples with [S]/[Zn] molar ratios of 0.66, 1, 1.5, 2, and 3 were prepared and named ZnS0.67, ZnS1, ZnS1.5, ZnS2, and ZnS3 for further characterization."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "cubic ZnS",
+     "quote": "Every one of the recognizable peaks could be ordered as the cubic ZnS in the standard reference information (ICDD 01-077-2100)."
+    },
+    {
+     "property": "crystallite_size_Scherrer_(111)",
+     "value_num": 27.2,
+     "unit": "nm",
+     "quote": "ZnS1.5 | 28.69 | 32,265 | 27.2 | 3.11 | 5.38 | 93.9"
+    },
+    {
+     "property": "crystallite_size_UDM",
+     "value_num": 26.3,
+     "unit": "nm",
+     "quote": "ZnS 1.5 | D (nm) | 27.2 | 26.3 | 36.8 | 38.9 | 32.7"
+    },
+    {
+     "property": "crystallite_size_UDSM",
+     "value_num": 36.8,
+     "unit": "nm",
+     "quote": "ZnS 1.5 | D (nm) | 27.2 | 26.3 | 36.8 | 38.9 | 32.7"
+    },
+    {
+     "property": "crystallite_size_UDEDM",
+     "value_num": 38.9,
+     "unit": "nm",
+     "quote": "ZnS 1.5 | D (nm) | 27.2 | 26.3 | 36.8 | 38.9 | 32.7"
+    },
+    {
+     "property": "crystallite_size_SSP",
+     "value_num": 32.7,
+     "unit": "nm",
+     "quote": "ZnS 1.5 | D (nm) | 27.2 | 26.3 | 36.8 | 38.9 | 32.7"
+    },
+    {
+     "property": "interplanar_spacing_d111",
+     "value_num": 3.11,
+     "unit": "Å",
+     "quote": "ZnS1.5 | 28.69 | 32,265 | 27.2 | 3.11 | 5.38 | 93.9"
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 5.38,
+     "unit": "Å",
+     "quote": "ZnS1.5 | 28.69 | 32,265 | 27.2 | 3.11 | 5.38 | 93.9"
+    },
+    {
+     "property": "grain_size_SEM",
+     "value_num": 93.9,
+     "unit": "nm",
+     "quote": "ZnS1.5 | 28.69 | 32,265 | 27.2 | 3.11 | 5.38 | 93.9"
+    },
+    {
+     "property": "band_gap",
+     "value_num": 3.3,
+     "unit": "eV",
+     "quote": "ZnS1.5 | 3.30 | 28.77 | 71.22 | 0.40 | 14.233 | 61.5"
+    },
+    {
+     "property": "ICP-OES_sulphur_content",
+     "value_num": 28.77,
+     "unit": "atomic %",
+     "quote": "ZnS1.5 | 3.30 | 28.77 | 71.22 | 0.40 | 14.233 | 61.5"
+    },
+    {
+     "property": "ICP-OES_zinc_content",
+     "value_num": 71.22,
+     "unit": "atomic %",
+     "quote": "ZnS1.5 | 3.30 | 28.77 | 71.22 | 0.40 | 14.233 | 61.5"
+    },
+    {
+     "property": "ICP-OES_S_to_Zn_ratio",
+     "value_num": 0.4,
+     "unit": null,
+     "quote": "ZnS1.5 | 3.30 | 28.77 | 71.22 | 0.40 | 14.233 | 61.5"
+    },
+    {
+     "property": "BET_specific_surface_area",
+     "value_num": 14.233,
+     "unit": "m2 g−1",
+     "quote": "ZnS1.5 | 3.30 | 28.77 | 71.22 | 0.40 | 14.233 | 61.5"
+    },
+    {
+     "property": "MB_photodegradation_efficiency",
+     "value_num": 61.5,
+     "unit": "%",
+     "quote": "ZnS1.5 | 3.30 | 28.77 | 71.22 | 0.40 | 14.233 | 61.5"
+    },
+    {
+     "property": "Raman_defect_induced_mode",
+     "value_num": 320,
+     "unit": "cm−1",
+     "quote": "The samples ZnS0.67, ZnS1, ZnS1.5, and ZnS3 centered at 320 cm−1 have a lattice defect-induced phonon mode at X-W-L"
+    }
+   ]
+  },
+  {
+   "label": "ZnS2",
+   "parent": "ZnS1",
+   "material": {
+    "name": "zinc sulfide nanoparticles",
+    "formula": "ZnS",
+    "family": "chalcogenure",
+    "phase": "cubic (zinc blende)",
+    "morphology": "compact polygonal grains"
+   },
+   "quote": "Five samples were prepared by varying [S]/[Zn] molar ratios using the same procedure.",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 4,
+     "value_num": 2,
+     "unit": "[S]/[Zn]",
+     "parent_value": "1",
+     "quote": "Samples with [S]/[Zn] molar ratios of 0.66, 1, 1.5, 2, and 3 were prepared and named ZnS0.67, ZnS1, ZnS1.5, ZnS2, and ZnS3 for further characterization."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "cubic ZnS",
+     "quote": "Every one of the recognizable peaks could be ordered as the cubic ZnS in the standard reference information (ICDD 01-077-2100)."
+    },
+    {
+     "property": "crystallite_size_Scherrer_(111)",
+     "value_num": 36.7,
+     "unit": "nm",
+     "quote": "ZnS2 | 28.64 | 21,354 | 36.7 | 3.11 | 5.39 | 158"
+    },
+    {
+     "property": "crystallite_size_UDM",
+     "value_num": 32.6,
+     "unit": "nm",
+     "quote": "ZnS 2 | D (nm) | 36.7 | 32.6 | 51.4 | 55.2 | 46.0"
+    },
+    {
+     "property": "crystallite_size_UDSM",
+     "value_num": 51.4,
+     "unit": "nm",
+     "quote": "ZnS 2 | D (nm) | 36.7 | 32.6 | 51.4 | 55.2 | 46.0"
+    },
+    {
+     "property": "crystallite_size_UDEDM",
+     "value_num": 55.2,
+     "unit": "nm",
+     "quote": "ZnS 2 | D (nm) | 36.7 | 32.6 | 51.4 | 55.2 | 46.0"
+    },
+    {
+     "property": "crystallite_size_SSP",
+     "value_num": 46.0,
+     "unit": "nm",
+     "quote": "ZnS 2 | D (nm) | 36.7 | 32.6 | 51.4 | 55.2 | 46.0"
+    },
+    {
+     "property": "interplanar_spacing_d111",
+     "value_num": 3.11,
+     "unit": "Å",
+     "quote": "ZnS2 | 28.64 | 21,354 | 36.7 | 3.11 | 5.39 | 158"
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 5.39,
+     "unit": "Å",
+     "quote": "ZnS2 | 28.64 | 21,354 | 36.7 | 3.11 | 5.39 | 158"
+    },
+    {
+     "property": "grain_size_SEM",
+     "value_num": 158,
+     "unit": "nm",
+     "quote": "ZnS2 | 28.64 | 21,354 | 36.7 | 3.11 | 5.39 | 158"
+    },
+    {
+     "property": "band_gap",
+     "value_num": 3.28,
+     "unit": "eV",
+     "quote": "ZnS2 | 3.28 | 42.19 | 57.8 | 0.73 | 10.652 | 72"
+    },
+    {
+     "property": "ICP-OES_sulphur_content",
+     "value_num": 42.19,
+     "unit": "atomic %",
+     "quote": "ZnS2 | 3.28 | 42.19 | 57.8 | 0.73 | 10.652 | 72"
+    },
+    {
+     "property": "ICP-OES_zinc_content",
+     "value_num": 57.8,
+     "unit": "atomic %",
+     "quote": "ZnS2 | 3.28 | 42.19 | 57.8 | 0.73 | 10.652 | 72"
+    },
+    {
+     "property": "ICP-OES_S_to_Zn_ratio",
+     "value_num": 0.73,
+     "unit": null,
+     "quote": "ZnS2 | 3.28 | 42.19 | 57.8 | 0.73 | 10.652 | 72"
+    },
+    {
+     "property": "BET_specific_surface_area",
+     "value_num": 10.652,
+     "unit": "m2 g−1",
+     "quote": "ZnS2 | 3.28 | 42.19 | 57.8 | 0.73 | 10.652 | 72"
+    },
+    {
+     "property": "MB_photodegradation_efficiency",
+     "value_num": 72,
+     "unit": "%",
+     "quote": "ZnS2 | 3.28 | 42.19 | 57.8 | 0.73 | 10.652 | 72"
+    }
+   ]
+  },
+  {
+   "label": "ZnS3",
+   "parent": "ZnS1",
+   "material": {
+    "name": "zinc sulfide nanoparticles",
+    "formula": "ZnS",
+    "family": "chalcogenure",
+    "phase": "cubic (zinc blende)",
+    "morphology": "compact polygonal grains"
+   },
+   "quote": "Five samples were prepared by varying [S]/[Zn] molar ratios using the same procedure.",
+   "variations": [
+    {
+     "parameter": "molar_ratio",
+     "step_order": 4,
+     "value_num": 3,
+     "unit": "[S]/[Zn]",
+     "parent_value": "1",
+     "quote": "Samples with [S]/[Zn] molar ratios of 0.66, 1, 1.5, 2, and 3 were prepared and named ZnS0.67, ZnS1, ZnS1.5, ZnS2, and ZnS3 for further characterization."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "cubic ZnS",
+     "quote": "Every one of the recognizable peaks could be ordered as the cubic ZnS in the standard reference information (ICDD 01-077-2100)."
+    },
+    {
+     "property": "crystallite_size_Scherrer_(111)",
+     "value_num": 28.6,
+     "unit": "nm",
+     "quote": "ZnS3 | 28.51 | 18,084 | 28.6 | 3.12 | 5.42 | 85.4"
+    },
+    {
+     "property": "crystallite_size_UDM",
+     "value_num": 29.7,
+     "unit": "nm",
+     "quote": "ZnS 3 | D (nm) | 28.6 | 29.7 | 42.7 | 46.2 | 36.6"
+    },
+    {
+     "property": "crystallite_size_UDSM",
+     "value_num": 42.7,
+     "unit": "nm",
+     "quote": "ZnS 3 | D (nm) | 28.6 | 29.7 | 42.7 | 46.2 | 36.6"
+    },
+    {
+     "property": "crystallite_size_UDEDM",
+     "value_num": 46.2,
+     "unit": "nm",
+     "quote": "ZnS 3 | D (nm) | 28.6 | 29.7 | 42.7 | 46.2 | 36.6"
+    },
+    {
+     "property": "crystallite_size_SSP",
+     "value_num": 36.6,
+     "unit": "nm",
+     "quote": "ZnS 3 | D (nm) | 28.6 | 29.7 | 42.7 | 46.2 | 36.6"
+    },
+    {
+     "property": "interplanar_spacing_d111",
+     "value_num": 3.12,
+     "unit": "Å",
+     "quote": "ZnS3 | 28.51 | 18,084 | 28.6 | 3.12 | 5.42 | 85.4"
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 5.42,
+     "unit": "Å",
+     "quote": "ZnS3 | 28.51 | 18,084 | 28.6 | 3.12 | 5.42 | 85.4"
+    },
+    {
+     "property": "grain_size_SEM",
+     "value_num": 85.4,
+     "unit": "nm",
+     "quote": "ZnS3 | 28.51 | 18,084 | 28.6 | 3.12 | 5.42 | 85.4"
+    },
+    {
+     "property": "band_gap",
+     "value_num": 3.49,
+     "unit": "eV",
+     "quote": "ZnS3 | 3.49 | 65.48 | 34.52 | 1.89 | 10.534 | 82"
+    },
+    {
+     "property": "ICP-OES_sulphur_content",
+     "value_num": 65.48,
+     "unit": "atomic %",
+     "quote": "ZnS3 | 3.49 | 65.48 | 34.52 | 1.89 | 10.534 | 82"
+    },
+    {
+     "property": "ICP-OES_zinc_content",
+     "value_num": 34.52,
+     "unit": "atomic %",
+     "quote": "ZnS3 | 3.49 | 65.48 | 34.52 | 1.89 | 10.534 | 82"
+    },
+    {
+     "property": "ICP-OES_S_to_Zn_ratio",
+     "value_num": 1.89,
+     "unit": null,
+     "quote": "ZnS3 | 3.49 | 65.48 | 34.52 | 1.89 | 10.534 | 82"
+    },
+    {
+     "property": "BET_specific_surface_area",
+     "value_num": 10.534,
+     "unit": "m2 g−1",
+     "quote": "ZnS3 | 3.49 | 65.48 | 34.52 | 1.89 | 10.534 | 82"
+    },
+    {
+     "property": "MB_photodegradation_efficiency",
+     "value_num": 82,
+     "unit": "%",
+     "quote": "ZnS3 | 3.49 | 65.48 | 34.52 | 1.89 | 10.534 | 82"
+    },
+    {
+     "property": "XPS_defect_percentage",
+     "value_num": 34,
+     "unit": "%",
+     "quote": "The area of the peaks corresponding to the defects is greater in Zns3, with 34% of the defects computed for the same."
+    },
+    {
+     "property": "PL_blue_emission_473nm",
+     "value_text": "intensity of the blue band nearly vanishes",
+     "quote": "as the sulphide fixation is expanded, the intensity of the blue band diminishes impressively and nearly vanishes at an abundance S level for ZnS3"
+    },
+    {
+     "property": "Raman_defect_induced_mode",
+     "value_num": 320,
+     "unit": "cm−1",
+     "quote": "The samples ZnS0.67, ZnS1, ZnS1.5, and ZnS3 centered at 320 cm−1 have a lattice defect-induced phonon mode at X-W-L"
+    }
+   ]
+  }
+ ],
+ "sample_inventory": [
+  {
+   "sample": "ZnS0.67",
+   "defined_in": "Experimental, Synthesis",
+   "route": "ZnS0.67",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Fig. 1",
+    "Fig. 9"
+   ]
+  },
+  {
+   "sample": "ZnS1",
+   "defined_in": "Experimental, Synthesis",
+   "route": "ZnS1",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Fig. 1",
+    "Fig. 9",
+    "Fig. 4 (TEM, SAED, HRTEM, EDAX)"
+   ]
+  },
+  {
+   "sample": "ZnS1.5",
+   "defined_in": "Experimental, Synthesis",
+   "route": "ZnS1.5",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Fig. 1",
+    "Fig. 9"
+   ]
+  },
+  {
+   "sample": "ZnS2",
+   "defined_in": "Experimental, Synthesis",
+   "route": "ZnS2",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Fig. 1",
+    "Fig. 9"
+   ]
+  },
+  {
+   "sample": "ZnS3",
+   "defined_in": "Experimental, Synthesis",
+   "route": "ZnS3",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Fig. 1",
+    "Fig. 9"
+   ]
+  },
+  {
+   "sample": "ZnS2.5",
+   "defined_in": "UV (une seule mention)",
+   "route": null,
+   "why": "cité une seule fois dans la section UV, jamais défini dans la synthèse ni présent dans les tableaux ; échantillon non préparé d'après la section Synthesis"
+  },
+  {
+   "sample": "catalyseur ZnS du test de recyclage (Fig. 10)",
+   "defined_in": "Photocatalytic (PC)",
+   "route": null,
+   "why": "l'article ne dit pas quel échantillon a servi au recyclage ; les valeurs de la Fig. 10 ne peuvent donc pas être rattachées à une voie"
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules de sulfure de zinc cubique par voie hydrothermale (ZnCl2 et thiourée acidifiés par quelques gouttes de HCl, 220 °C pendant 12 h) en faisant varier le rapport molaire [S]/[Zn] des précurseurs de 0,66 à 3. Les auteurs caractérisent les cinq échantillons par DRX (plusieurs modèles de taille et de contrainte), Raman, MEB, XPS, ICP-OES, DRS UV-visible, photoluminescence et BET, et attribuent les différences à des lacunes de soufre (rapport faible) ou de zinc (rapport élevé). Ils montrent que ZnS0.67 et ZnS3 dégradent le mieux le bleu de méthylène sous lumière solaire.",
+   "quote": "By altering the S/Zn molar ratio during hydrothermal processes, Zn and S defects are successfully introduced into the ZnS crystal."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir si le seul réglage du rapport S/Zn dans le milieu hydrothermal permet de créer des lacunes de Zn ou de S dans ZnS, et si ces défauts déplacent la bande interdite, modifient la photoluminescence et améliorent la photocatalyse sous lumière visible.",
+   "quote": "This study presents a simple hydrothermal method for introducing S and Zn vacancies into the ZnS structure by changing the S/Zn molar ratios."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul paramètre de synthèse est balayé : le rapport molaire [S]/[Zn] (0,66, 1, 1,5, 2 et 3), de la situation déficitaire en soufre à l'excès de soufre, avec les autres conditions (220 °C, 12 h, HCl, volume chargé) supposées identiques. Le but est de produire des défauts de type différent (lacunes de S d'un côté, lacunes de Zn de l'autre) et de relier la composition de départ aux propriétés optiques et photocatalytiques. L'article ne dit pas si la quantité de ZnCl2 ou celle de thiourée est modifiée, ni les quantités absolues.",
+   "quote": "Five samples were prepared by varying [S]/[Zn] molar ratios using the same procedure."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Les cristallites passent de 2,8 et 2,9 nm (ZnS0.67 et ZnS1, pics larges) à 27,2 nm (ZnS1.5), 36,7 nm (ZnS2) et 28,6 nm (ZnS3) d'après Scherrer. Les grains MEB vont de 25,8 nm (ZnS0.67) à 158 nm (ZnS2). La bande interdite vaut 3,46, 3,32, 3,30, 3,28 et 3,49 eV, soit un minimum pour ZnS2 et un maximum pour ZnS3. L'efficacité de dégradation du bleu de méthylène est de 83,78, 64, 61,5, 72 et 82 % pour ZnS0.67, ZnS1, ZnS1.5, ZnS2 et ZnS3, alors que la surface BET (16,77, 5,57, 14,233, 10,652, 10,534 m2 g−1) ne suit pas le même ordre.",
+   "quote": "According to the experimental findings (Table 3), the Photodegradation Efficiency of the samples follows the order: ZnS0.67 > ZnS3 > ZnS2 > ZnS1 > ZnS1.5."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "L'activité photocatalytique n'est pas monotone avec le rapport S/Zn : elle est maximale aux deux extrémités (S/Zn = 0,67 et 3) et minimale vers 1 à 1,5. Les auteurs l'attribuent aux lacunes de S (rapport bas) et de Zn (rapport élevé) plutôt qu'à la surface BET ; le pourcentage de défauts XPS passe de 18 % (ZnS1) à 34 % (ZnS3). L'intensité de la bande bleue de PL à 473 nm (liée aux lacunes de S) baisse fortement quand le soufre augmente.",
+   "quote": "The photodegradation is more for the samples having S/Zn = 0.67 and 3."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs retiennent ZnS0.67 (riche en lacunes de soufre) et ZnS3 (riche en lacunes de zinc) comme les meilleurs photocatalyseurs et jugent les nanoparticules de ZnS riches en défauts stables et utilisables pour le traitement des eaux usées.",
+   "quote": "The photocatalysis degradation activity was very high for Sulfur defect-rich sample ZnS0.67 and Zn defect-rich ZnS3 samples."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZnS1",
+   "text": "Hypothèse de chimiste : à 220 °C en milieu aqueux acide, la thiourée s'hydrolyse probablement en libérant H2S (ou HS−/S2−), qui précipite Zn2+ en ZnS ; les gouttes de HCl limiteraient la précipitation d'hydroxyde de zinc et ralentiraient la libération de sulfure. Quand le rapport [S]/[Zn] est inférieur à 1, la sulfuration serait incomplète et le solide pourrait être déficitaire en soufre (lacunes de S), ce qui est cohérent avec les cristallites de 2 à 3 nm de ZnS0.67 et ZnS1, trop petites par manque de sulfure pour croître. Avec un excès de thiourée, on attend au contraire une cristallisation plus poussée et des lacunes de zinc. Les analyses ICP-OES de l'article ne confirment cette lecture que partiellement (le solide reste plus riche en Zn que le rapport nominal)."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "La thiourée est un produit suspecté cancérogène et reprotoxique : poudre à manipuler sous hotte. Sa décomposition hydrothermale à 220 °C peut libérer du sulfure d'hydrogène H2S (très toxique) et de l'ammoniac dans un autoclave fermé : on attend une pression interne notable ; refroidir complètement avant d'ouvrir, sous hotte. Le garnissage est de 50 ml dans 100 ml, soit 50 % si le volume de 100 ml est bien celui de la cuve. HCl est corrosif. L'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités de ZnCl2 et de thiourée (« the required amount »), leur pureté et leur fournisseur, le volume d'eau, la concentration du HCl, la vitesse d'agitation, le type de filtre, le nombre de lavages et le rendement ne sont pas donnés : le rapport [S]/[Zn] est la seule indication de composition. L'article n'écrit pas non plus quelle quantité varie entre les échantillons. La plage de balayage DRX est illisible (« from 100 to 800 », degrés perdus). Aucune annexe n'est annoncée par l'article.",
+   "quote": "The required amount of ZnCl2 and SC(NH2)2 powder were dissolved in de-ionized water separately"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Test photocatalytique : la durée d'irradiation n'est pas homogène dans l'article (essai de 11 h à 14 h, légendes de la Fig. 9 jusqu'à 190 min, cycles de recyclage de 120 min avec une lampe au xénon). L'efficacité du Tableau 3 n'est rattachée à aucune durée. Le test de recyclage (Fig. 10 : environ 83 %, 81 % puis 74 % de dégradation à la fin des cycles 1, 2 et 3, lecture graphique à ±2 %) ne dit pas quel échantillon a été utilisé ; ces valeurs ne sont donc rattachées à aucune voie.",
+   "quote": "Under identical settings, the recycling experiments were repeated three times to study the stability of the catalyst using the Xenon lamp."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les rapports S/Zn mesurés par ICP-OES (0,22 à 1,89, Tableau 3) sont très éloignés des rapports nominaux (0,66 à 3) ; seul ZnS3 est plus riche en soufre qu'en zinc. Les auteurs invoquent une perte de soufre lors de la digestion acide, ce qui rend la mesure peu fiable pour attester l'existence de lacunes. Le résumé et la conclusion écrivent d'ailleurs que la bande interdite diminue « de 3.28 à 3.49 eV » ou « de 3.49 à 3.28 eV » alors que le Tableau 3 donne 3,28 eV (ZnS2) comme minimum et 3,49 eV (ZnS3) comme maximum.",
+   "quote": "The ICP-OES data reveal that all samples follow the predicted S/Zn ratio trend (Table 3)."
+  }
+ ],
+ "method_sources": [],
+ "doubts": [
+  {
+   "where": "choix de la voie de base",
+   "issue": "L'article ne désigne aucun échantillon de référence : les cinq échantillons suivent « the same procedure » avec un [S]/[Zn] différent. ZnS1 (rapport 1) est pris comme voie de base et les quatre autres comme branches sur le paramètre molar_ratio de l'étape 4 ; le choix est arbitraire, les cinq protocoles sont équivalents."
+  },
+  {
+   "where": "ZnS0.67, rapport molaire",
+   "issue": "Le texte donne un rapport de 0.66 mais nomme l'échantillon ZnS0.67 (et écrit S/Zn = 0.67 ailleurs). La variation porte la valeur écrite dans la phrase de synthèse (0.66)."
+  },
+  {
+   "where": "variations de ratio",
+   "issue": "La phrase de synthèse ne dit pas si c'est la quantité de ZnCl2 ou celle de thiourée qui change pour obtenir le rapport ; la variation est donc rangée sur l'étape où la thiourée est ajoutée, comme un paramètre molar_ratio, sans quantité de réactif."
+  },
+  {
+   "where": "ZnS2.5",
+   "issue": "La section UV cite « ZnS2.5 » parmi les échantillons étudiés alors qu'aucun échantillon à ce nom n'est préparé ni mesuré ailleurs. Aucune voie créée ; probablement une coquille."
+  },
+  {
+   "where": "Tableau 2 contre texte (tailles W–H)",
+   "issue": "Texte UDM : 26.2 nm pour ZnS1.5 ; Tableau 2 : 26.3. Texte UDSM : 36.7 nm pour ZnS1.5 ; Tableau 2 : 36.8. Les valeurs du Tableau 2 sont extraites pour toutes les méthodes. Les déformations (ε) du Tableau 2 ne sont pas extraites : certaines diffèrent du texte (ZnS1 : −3.97 contre −3.9 ; ZnS2 : −0.025 contre -0.25) et leurs rangées ne portent pas le nom de l'échantillon."
+  },
+  {
+   "where": "XPS",
+   "issue": "Le texte dit que les spectres XPS ont été mesurés pour ZnS0.67, ZnS2 et ZnS3, la légende de la Fig. 5 cite ZnS0.67, ZnS1 et ZnS3, et le texte décrit ensuite ZnS1 et ZnS3. Les pourcentages de défauts (18 % ZnS1, 34 % ZnS3) sont repris tels qu'écrits. Les énergies de liaison du Zn 2p ne sont pas extraites : pour ZnS2 la phrase attribue 1021.69 eV à Zn 2p1/2 et 1044.64 eV à Zn 2p3/2 « respectively », ce qui inverse les deux pics."
+  },
+  {
+   "where": "Fig. 10, recyclage",
+   "issue": "Figure ouverte : trois courbes de dégradation (cycle 1 : environ 83 % à 120 min ; cycle 2 : environ 81 % à 240 min ; cycle 3 : environ 74 % à 360 min). L'échantillon n'est pas nommé (83 % pourrait être ZnS0.67 ou ZnS3), donc aucune valeur n'est attachée à une voie ; lecture à ±2 %."
+  },
+  {
+   "where": "Fig. 9, efficacités de dégradation",
+   "issue": "Les pourcentages de la Fig. 9a–e et g sont identiques à la dernière colonne du Tableau 3, extraite. La Fig. 9f (Ct/C0) s'arrête à 180 min alors que les légendes de a–e vont jusqu'à 190 min : durée de test à laquelle l'efficacité est calculée non précisée."
+  },
+  {
+   "where": "conditions de DRX",
+   "issue": "« from 100 to 800 », « step size of 0.020 », « 100 per minute » : les symboles de degré ont été perdus ; recopiés tels quels dans conditions (balayage probable de 10° à 80°, pas de 0,02°, 10°/min : non vérifiable)."
+  },
+  {
+   "where": "Tableau 1, rangée ZnS0.67",
+   "issue": "La rangée contient des cellules parasites (« Standardd111 = 3.12 », « StandardValue = 5.41 ») ; d111 = 3.11, a = 5.39 et grain = 25.8 sont lus avant et après ces cellules. Le texte écrit aussi « standard reference data 5.39 nm » (unité erronée, valeur de paramètre de maille en Å)."
+  },
+  {
+   "where": "test photocatalytique, protocole",
+   "issue": "Le paragraphe Measurements dit que 10 mg de MB dans 1 L d'eau « resulting in photocatalysts » (phrase tronquée) ; la concentration est lue comme 10 mg L−1 sans être écrite telle quelle. Le test principal se fait en lumière solaire (11 h à 14 h) alors que le recyclage mentionne une lampe au xénon."
+  },
+  {
+   "where": "figures non ouvertes",
+   "issue": "Seules les Fig. 9 et 10 ont été ouvertes. Les autres (DRX, Raman, MEB, TEM, XPS, DRS, PL) portent des résultats déjà donnés dans le texte ou les tableaux ; aucune valeur lue sur figure."
+  }
+ ]
+}
