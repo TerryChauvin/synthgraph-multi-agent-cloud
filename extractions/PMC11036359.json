@@ -21,7 +21,9 @@
    "results_in": [
     "Fig. 2a,e",
     "Fig. S2a",
-    "Fig. S9a"
+    "Fig. S9a",
+    "Fig. S10c",
+    "Fig. S8b"
    ]
   },
   {
@@ -49,7 +51,6 @@
    "results_in": [
     "Fig. 2d,h",
     "Fig. 3",
-    "Fig. 5b",
     "Fig. 6",
     "Fig. S2e",
     "Fig. S9a,b",
@@ -99,8 +100,8 @@
    ]
   },
   {
-   "sample": "Wet (undried) protonated precursor (Fig. S8b blue)",
-   "defined_in": "SI, Monolayers section",
+   "sample": "Wet (hydrated, undried) protonated precursor (Fig. 5b, S8b blue)",
+   "defined_in": "SI, Monolayers section; Fig. 5b caption (« Here, we favor the AMTP monolayer using a hydrated precursor »)",
    "route": "PROT_wet_precursor",
    "results_in": [
     "Fig. S8b",
@@ -116,7 +117,8 @@
     "Fig. S2b",
     "Fig. S9a",
     "Fig. S11a",
-    "Fig. 6a,b"
+    "Fig. 6a,b",
+    "Fig. S8b"
    ]
   },
   {
@@ -198,12 +200,11 @@
    ]
   },
   {
-   "sample": "Protonated route, lab XRD out-of-plane and in-plane (Fig. 5b, S8b black)",
-   "defined_in": "Fig. 5b caption",
+   "sample": "Protonated route, dried (dehydrated) precursor, lab XRD (Fig. S8b black)",
+   "defined_in": "SI, Monolayers section; Fig. S8b caption",
    "route": null,
-   "why": "conditions de synthèse (solvant, température, temps) non précisées pour cet échantillon",
+   "why": "conditions de synthèse (solvant, température, temps) non précisées pour cet échantillon ; ses résultats (sous-produit OAM, distance d'empilement 3,6 nm) sont rangés sur PROT_acetone_RT par décision de l'orchestrateur (voie protonée sèche), sans que l'article dise le solvant",
    "results_in": [
-    "Fig. 5b",
     "Fig. S8b"
    ]
   }
@@ -722,7 +723,7 @@
      ],
      "equipment": [
       {
-       "type": "small glass vial",
+       "type": "glass vial",
        "detail": null,
        "quote": "In a separate glass vial, 5 mL of acetone, 120 mg of the OAM-Br precursor, and 0.5 mL of OA are mixed (at room temperature or 50 °C)."
       }
@@ -824,6 +825,24 @@
      "property": "morphology",
      "quote": "When synthesizing at room temperature (in acetone), we get cubic-shaped particles that differ in their size, probably due to the presence of water (Figures 2a and 4a).",
      "value_text": "cubic-shaped particles that differ in their size"
+    },
+    {
+     "property": "preferred_monolayer_byproduct",
+     "quote": "The synthesis using the deprotonated precursor prefers the AMTP monolayers, and the synthesis using the protonated precursor prefers the OAM monolayer",
+     "value_text": "the OAM monolayer",
+     "from_figure": "Fig. S8b"
+    },
+    {
+     "property": "byproduct_OAM_monolayer_stacking_d_spacing",
+     "quote": "0.154 2 sin 1.2° = 3.6",
+     "value_num": 3.6,
+     "unit": "nm",
+     "from_figure": "Fig. S8b"
+    },
+    {
+     "property": "product_yield_PL_PLE_sample",
+     "quote": "belonging to the samples with lower product yield (Fig. S10c)",
+     "value_text": "lower product yield"
     }
    ],
    "missing_fields": [
@@ -870,6 +889,11 @@
      "quote": "TEM micrographs and SAED of colloidal heterostructures using the protonated precursors with variations of reaction and growth temperature. (a) At room temperature, (b) 50 °C, both in acetone",
      "value_text": "particules compactes, polyédriques à cubiques, regroupées en amas (lecture sur la micrographie)",
      "from_figure": "Fig. 2b"
+    },
+    {
+     "property": "particle_size_trend_with_temperature",
+     "quote": "showing a decrease in the size of the nanoparticles due to the decrease in the critical size of the nuclei",
+     "value_text": "a decrease in the size of the nanoparticles"
     }
    ]
   },
@@ -898,7 +922,7 @@
     {
      "property": "preferred_monolayer_byproduct",
      "quote": "However, when we use the protonated precursor without drying it, meaning a wet version of the protonated precursor, the preference changes from the OAM mon- olayers to the AMTP monolayers.",
-     "value_text": "AMTP monolayers (instead of OAM monolayers with the dried protonated precursor)"
+     "value_text": "the preference changes from the OAM monolayers to the AMTP monolayers"
     }
    ]
   },
@@ -1065,7 +1089,7 @@
      ],
      "equipment": [
       {
-       "type": "small glass vial",
+       "type": "glass vial",
        "detail": null,
        "quote": "In a separate glass vial, 5 mL of acetone, 120 mg of the OAM-Br precursor, and 0.5 mL of OA are mixed."
       }
@@ -1190,6 +1214,19 @@
      "value_num": 400,
      "unit": "nm",
      "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "preferred_monolayer_byproduct",
+     "quote": "The synthesis using the deprotonated precursor prefers the AMTP monolayers, and the synthesis using the protonated precursor prefers the OAM monolayer",
+     "value_text": "the AMTP monolayers",
+     "from_figure": "Fig. S8b"
+    },
+    {
+     "property": "byproduct_AMTP_monolayer_stacking_d_spacing",
+     "quote": "0.154 2 𝑠𝑖𝑛2.68° = 1.6",
+     "value_num": 1.6,
+     "unit": "nm",
+     "from_figure": "Fig. S8b"
     }
    ],
    "missing_fields": [
@@ -1365,7 +1402,7 @@
      ],
      "equipment": [
       {
-       "type": "small glass vial",
+       "type": "glass vial",
        "detail": null,
        "quote": "In a separate glass vial, 5 mL of ODE, 180 mg of the OAM-Br precursor, and 0.5 mL of OA are mixed at 150 or 180 °C."
       }
@@ -1495,6 +1532,11 @@
      "quote": "(d) PLE (of the 420 nm emission) of different samples showing a blue-shift as a function of particle size (purple—at 180 °C, blue—5 min at 150 °C, green—5 min at 180 °C (all using the deprotonated route and DMSO heating), and blue—protonated route at 150 °C).",
      "value_text": "≈ 350 nm (courbe bleue, 5 min à 150 °C)",
      "from_figure": "Fig. 6d"
+    },
+    {
+     "property": "particle_quantity_and_size_vs_unheated_complexation",
+     "quote": "we achieve a higher quantity of particles with decreased size, probably due to the heating of the complexation step",
+     "value_text": "a higher quantity of particles with decreased size"
     }
    ],
    "missing_fields": [
@@ -1547,6 +1589,11 @@
      "quote": "(d) PLE (of the 420 nm emission) of different samples showing a blue-shift as a function of particle size (purple—at 180 °C, blue—5 min at 150 °C, green—5 min at 180 °C (all using the deprotonated route and DMSO heating), and blue—protonated route at 150 °C).",
      "value_text": "≈ 350 nm (courbe verte, 5 min à 180 °C)",
      "from_figure": "Fig. 6d"
+    },
+    {
+     "property": "particle_quantity_and_size_vs_unheated_complexation",
+     "quote": "we achieve a higher quantity of particles with decreased size, probably due to the heating of the complexation step",
+     "value_text": "a higher quantity of particles with decreased size"
     }
    ]
   },
@@ -1707,7 +1754,7 @@
      "parameters": [
       {
        "name": "temperature",
-       "quote": "110 mg of PbBr2 (110 mg) and AMTP-Br (50 mg) are mixed in a small glass vial with 0.5 mL of DMSO at room temperature or 120 °C until the solution turns orange.",
+       "quote": "complexation was performed at room temperature without heating",
        "value_text": "room temperature"
       },
       {
@@ -1744,7 +1791,7 @@
      ],
      "equipment": [
       {
-       "type": "small glass vial",
+       "type": "glass vial",
        "detail": null,
        "quote": "In a separate glass vial, 5 mL of ODE, 180 mg of the OAM-Br precursor, and 0.5 mL of OA are mixed at 120–150 °C."
       }
@@ -1765,18 +1812,13 @@
     {
      "order": 4,
      "action": "stir",
-     "description": "Stir after injection (range given for the protocol).",
+     "description": "Stir after injection (duration of this sample not stated; protocol range 0-15 min).",
      "quote": "The solution is stirred for 0–15 min",
-     "parameters": [
-      {
-       "name": "duration",
-       "quote": "The solution is stirred for 0–15 min",
-       "value_text": "0–15 min"
-      }
-     ],
+     "parameters": [],
      "equipment": [],
      "not_stated": [
-      "stirring_speed"
+      "stirring_speed",
+      "duration"
      ]
     },
     {
@@ -1907,6 +1949,11 @@
      "quote": "(d) PLE (of the 420 nm emission) of different samples showing a blue-shift as a function of particle size (purple—at 180 °C, blue—5 min at 150 °C, green—5 min at 180 °C (all using the deprotonated route and DMSO heating), and blue—protonated route at 150 °C).",
      "value_text": "≈ 360 nm (courbe rouge, non listée dans la légende ; voir doute)",
      "from_figure": "Fig. 6d"
+    },
+    {
+     "property": "particle_size_trend_with_temperature",
+     "quote": "showing a decrease in the size of the nanoparticles due to the decrease in the critical size of the nuclei",
+     "value_text": "a decrease in the size of the nanoparticles"
     }
    ],
    "missing_fields": [
@@ -1954,6 +2001,11 @@
      "quote": "TEM micrographs and SAED of colloidal heterostructures using the protonated precursors with variations of reaction and growth temperature. (a) At room temperature, (b) 50 °C, both in acetone, (c) 120 °C, and (d) 150 °C, both in ODE.",
      "value_text": "bâtonnets (nanorods) en amas (lecture qualitative sur la micrographie)",
      "from_figure": "Fig. 2c"
+    },
+    {
+     "property": "particle_size_trend_with_temperature",
+     "quote": "showing a decrease in the size of the nanoparticles due to the decrease in the critical size of the nuclei",
+     "value_text": "a decrease in the size of the nanoparticles"
     }
    ]
   },
@@ -1983,7 +2035,7 @@
      "step_order": 4,
      "value_num": 30,
      "unit": "s",
-     "parent_value": "0–15 min",
+     "parent_value": "non indiquée (plage 0–15 min dans les Méthodes)",
      "quote": "while changing the mixing time in ODE at 150C. (a) 30 seconds (b) 5 minutes (c) 15 minutes"
     }
    ],
@@ -1994,6 +2046,16 @@
      "quote": "Quantum yield Protonated route 30 seconds 1.7% 5 minutes 1.58% 15 minutes 1.93% Deprotonated route 5 minutes 1.46%",
      "value_num": 1.7,
      "unit": "%"
+    },
+    {
+     "property": "particle_quantity_and_size_vs_unheated_complexation",
+     "quote": "we achieve a higher quantity of particles with decreased size, probably due to the heating of the complexation step",
+     "value_text": "a higher quantity of particles with decreased size"
+    },
+    {
+     "property": "particle_growth_with_mixing_time",
+     "quote": "as the mixing time increases, the particles grow and form rod-shaped particles",
+     "value_text": "the particles grow and form rod-shaped particles"
     }
    ]
   },
@@ -2023,7 +2085,7 @@
      "step_order": 4,
      "value_num": 5,
      "unit": "min",
-     "parent_value": "0–15 min",
+     "parent_value": "non indiquée (plage 0–15 min dans les Méthodes)",
      "quote": "while changing the mixing time in ODE at 150C. (a) 30 seconds (b) 5 minutes (c) 15 minutes"
     }
    ],
@@ -2034,6 +2096,16 @@
      "quote": "Quantum yield Protonated route 30 seconds 1.7% 5 minutes 1.58% 15 minutes 1.93% Deprotonated route 5 minutes 1.46%",
      "value_num": 1.58,
      "unit": "%"
+    },
+    {
+     "property": "particle_quantity_and_size_vs_unheated_complexation",
+     "quote": "we achieve a higher quantity of particles with decreased size, probably due to the heating of the complexation step",
+     "value_text": "a higher quantity of particles with decreased size"
+    },
+    {
+     "property": "particle_growth_with_mixing_time",
+     "quote": "as the mixing time increases, the particles grow and form rod-shaped particles",
+     "value_text": "the particles grow and form rod-shaped particles"
     }
    ]
   },
@@ -2063,7 +2135,7 @@
      "step_order": 4,
      "value_num": 15,
      "unit": "min",
-     "parent_value": "0–15 min",
+     "parent_value": "non indiquée (plage 0–15 min dans les Méthodes)",
      "quote": "while changing the mixing time in ODE at 150C. (a) 30 seconds (b) 5 minutes (c) 15 minutes"
     }
    ],
@@ -2079,6 +2151,16 @@
      "quote": "Quantum yield Protonated route 30 seconds 1.7% 5 minutes 1.58% 15 minutes 1.93% Deprotonated route 5 minutes 1.46%",
      "value_num": 1.93,
      "unit": "%"
+    },
+    {
+     "property": "particle_quantity_and_size_vs_unheated_complexation",
+     "quote": "we achieve a higher quantity of particles with decreased size, probably due to the heating of the complexation step",
+     "value_text": "a higher quantity of particles with decreased size"
+    },
+    {
+     "property": "particle_growth_with_mixing_time",
+     "quote": "as the mixing time increases, the particles grow and form rod-shaped particles",
+     "value_text": "the particles grow and form rod-shaped particles"
     }
    ]
   },
@@ -2323,7 +2405,7 @@
      ],
      "equipment": [
       {
-       "type": "small glass vial",
+       "type": "glass vial",
        "detail": null,
        "quote": "In a separate glass vial, 5 mL of acetone, 0.5 mL of the OAM, and 0.5 mL of OA are mixed."
       }
@@ -2413,12 +2495,6 @@
      "property": "PL_emission_peak",
      "quote": "The 1D PL measurement of the monolayers (Fig S14a) shows a single emission peak, at around 407 nm for the OAM monolayers and around 410 nm for the AMTP monolayers",
      "value_num": 407,
-     "unit": "nm"
-    },
-    {
-     "property": "stacked_monolayer_d_spacing",
-     "quote": "0.154 2 sin 1.2° = 3.6",
-     "value_num": 3.6,
      "unit": "nm"
     }
    ],
@@ -2605,12 +2681,6 @@
      "unit": "nm"
     },
     {
-     "property": "stacked_monolayer_d_spacing",
-     "quote": "0.154 2 𝑠𝑖𝑛2.68° = 1.6",
-     "value_num": 1.6,
-     "unit": "nm"
-    },
-    {
      "property": "lattice_parameters_a_b_c",
      "quote": "a, b, c (Å) 16.834, 8.2509, 8.2021",
      "value_text": "16.834, 8.2509, 8.2021 Å"
@@ -2708,7 +2778,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "OAM-Br",
-   "text": "Probablement une réaction acide-base : l'oléylamine est protonée par HBr en bromure d'oléylammonium, peu soluble dans l'acétonitrile, qui précipite ; les lavages à l'acétonitrile éliminent l'excès d'amine et d'acide. Avec 5 mL d'oléylamine et 5,5 mL de HBr à 47 %, HBr est probablement en léger excès."
+   "text": "Probablement une réaction acide-base : l'oléylamine est protonée par HBr en bromure d'oléylammonium, peu soluble dans l'acétonitrile, qui précipite ; les lavages à l'acétonitrile éliminent l'excès d'amine et d'acide. Avec 5 mL d'oléylamine (≈ 14,9 mmol, densité de manuel 0,813 g/mL, pureté 98 %) et 5,5 mL de HBr à 47 % (≈ 47,6 mmol), l'acide est en excès d'un facteur voisin de 3,2, et non en « léger excès » ; l'eau et l'excès de HBr ne partent qu'avec les lavages, dont le nombre n'est pas donné."
   },
   {
    "type": "mecanisme_analyse",
@@ -2718,7 +2788,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "PROT_ODE_150",
-   "text": "Probablement le DMSO solubilise PbBr2 sous forme de complexes bromoplombates, et l'injection dans un milieu peu polaire (acétone ou ODE) avec OAM-Br et acide oléique provoque une sursaturation brutale qui déclenche la nucléation, les ligands oléyl stabilisant la surface. À plus haute température, la nucléation est plus rapide et le croît plus anisotrope, ce qui pourrait expliquer le passage de cubes à des bâtonnets ou des plaques ; l'article ne l'étudie pas directement. Le rapport Pb:AMTP de la recette (PbBr2 110 mg ≈ 0,30 mmol pour environ 0,25 mmol d'AMTP-Br) est proche de 1:1, alors que la formule vise 3:2."
+   "text": "Probablement le DMSO solubilise PbBr2 sous forme de complexes bromoplombates, et l'injection dans un milieu peu polaire (acétone ou ODE) avec OAM-Br et acide oléique provoque une sursaturation brutale qui déclenche la nucléation, les ligands oléyl stabilisant la surface. À plus haute température, la nucléation est plus rapide et le croît plus anisotrope, ce qui pourrait expliquer le passage de cubes à des bâtonnets ou des plaques ; l'article ne l'étudie pas directement. Le rapport Pb:AMTP de la recette (PbBr2 110 mg ≈ 0,30 mmol pour environ 0,25 mmol d'AMTP-Br) est proche de 1:1, alors que la formule vise 3:2. Hypothèse du critique scientifique : la reprécipitation est assistée par les ligands depuis le DMSO vers l'acétone ou, en ODE, à l'interface DMSO/ODE (non miscibles à froid, miscibilité partielle à 150 °C) puis à l'ajout d'acétone ; le partage entre hétérostructure et monocouches serait gouverné par les rapports AMTP:OAM:Pb (OAM-Br à 1,15 par Pb en acétone et 1,72 en ODE) et par l'acidité plus que par le seul noyau neutre proposé par les auteurs. Cette hypothèse n'est pas testée dans l'article."
   },
   {
    "type": "mecanisme_analyse",
@@ -2728,7 +2798,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. PbBr2 est un composé du plomb toxique (reprotoxique, cumulatif) : gants, hotte, déchets métaux lourds. Le DMSO traverse la peau et peut entraîner avec lui les sels de plomb dissous. HBr à 47 % est corrosif, l'acétonitrile est toxique et inflammable, l'hexane et l'acétone sont très inflammables et l'hexane est neurotoxique. En voie ODE, du DMSO à 120 °C est injecté dans de l'ODE à 150–180 °C puis 5 mL d'acétone (point d'ébullition 56 °C) sont ajoutés dans un flacon encore chaud : risque de projection et d'ébullition brutale. La centrifugation de solvants volatils exige des tubes fermés et compatibles. Les nanopoudres de pérovskite au plomb sont à ne pas inhaler."
+   "text": "L'article ne mentionne aucune précaution. PbBr2 est un composé du plomb toxique (reprotoxique, cumulatif) : gants, hotte, déchets métaux lourds. Le DMSO traverse la peau et peut entraîner avec lui les sels de plomb dissous. HBr à 47 % est corrosif, l'acétonitrile est toxique et inflammable, l'hexane et l'acétone sont très inflammables et l'hexane est neurotoxique. En voie ODE, du DMSO à 120 °C est injecté dans de l'ODE à 150–180 °C puis 5 mL d'acétone (point d'ébullition 56 °C) sont ajoutés dans un flacon encore chaud : risque de projection et d'ébullition brutale. La centrifugation de solvants volatils exige des tubes fermés et compatibles. Les nanopoudres de pérovskite au plomb sont à ne pas inhaler. Point précisé par le critique scientifique : les acides (dont HBr) et les halogénures abaissent la température de début de la décomposition autocatalytique du DMSO (≈ 189 °C pour le DMSO pur), ce qui rend le chauffage à 120 °C du DMSO acidifié, puis son injection dans l'ODE à 150–180 °C, plus risqués qu'ils n'en ont l'air ; l'article ne le signale pas."
   },
   {
    "type": "limite_reproductibilite",
@@ -2743,14 +2813,80 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Plusieurs échantillons caractérisés (diffractogrammes de la figure 5, figure S8b, rendements quantiques du tableau S3, cartes PL-PLE) ne sont pas reliés sans ambiguïté à un protocole : la figure 5a (synchrotron, voie déprotonée) et la figure 5b (voie protonée) n'indiquent ni solvant ni température. Le tableau S2 (maxima de PL) est mal ordonné dans le texte extrait : seules les valeurs des monocouches (407 et 410 nm) ont été retenues."
+   "text": "Plusieurs échantillons caractérisés (diffractogrammes de la figure 5, figure S8b, rendements quantiques du tableau S3, cartes PL-PLE) ne sont pas reliés sans ambiguïté à un protocole : la figure 5a (synchrotron, voie déprotonée) et la figure S8b (précurseurs protoné sec, protoné hydraté et déprotoné) n'indiquent ni solvant ni température ; la figure 5b est rattachée au précurseur protoné hydraté d'après sa légende (« hydrated precursor »). Le tableau S2 (maxima de PL) est mal ordonné dans le texte extrait : seules les valeurs des monocouches (407 et 410 nm) ont été retenues."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DEP_acetone_RT",
+   "text": "Bilan de protonation : 10 µL de HBr à 47 % apportent ≈ 0,087 mmol de HBr pour ≈ 0,30 mmol d'AMTP, soit une protonation de 29 % seulement, et le bromure du premier flacon reste sous la stœchiométrie de Pb3Br8. La voie n'est « déprotonée » que de nom : l'hétérostructure ne peut se former que si l'oléylammonium ou l'acide oléique protonent le reste de l'AMTP après injection. Cela contredit l'affirmation selon laquelle, sans protonation, on n'obtient que des monocouches, et le rendement faible est cohérent avec ce manque de protons.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DEP_acetone_RT",
+   "text": "L'attribution des petites particules à l'eau apportée par HBr (hypothèse reprise de Zhang et al. 2020, Nat. Commun., doi 10.1038/s41467-020-14715-0, qui traite de films pérovskites et non de ce système) n'est pas démontrée : la voie déprotonée change en même temps l'eau, l'acidité, la forme de l'AMTP (amine libre) et le rapport Pb:AMTP ; aucun témoin à l'eau seule (voie protonée avec un peu d'eau) n'est fait. L'excès de HBr retenu par le précurseur humide est une explication concurrente non écartée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DEP_ODE_150_5min",
+   "text": "Le premier flacon chauffe HBr aqueux dans le DMSO à 120 °C jusqu'à une couleur jaune-noir. Le système DMSO–HBr est un oxydant connu (oxydation de HBr en Br2 avec formation de sulfure de diméthyle, cf. Molecules 2013, 18, doi 10.3390/molecules181215717) : ce chauffage consomme une partie de l'acide censé protoner l'AMTP et peut bromer l'acide oléique, l'oléylamine ou l'ODE après injection. L'article l'interprète comme une simple complexation, sans spectre de la solution pour distinguer.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DEP_ODE_150_5min",
+   "text": "Sécurité non signalée par l'article : les acides et les halogénures abaissent le seuil de décomposition autocatalytique du DMSO (cf. Org. Process Res. Dev. 2020, doi 10.1021/acs.oprd.0c00159) ; le noircissement du DMSO à 120 °C en est un signe possible. Le DMSO chaud est ensuite injecté dans l'ODE à 150–180 °C, puis 5 mL d'acétone sont ajoutés dans un flacon tout juste retiré de la plaque chauffante.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DEP_ODE_150_5min",
+   "text": "Décalage vers le bleu de la PLE (≈ 350 vers ≈ 320 nm) attribué par les auteurs au confinement quantique latéral : la PLE est suivie à 420 nm, dans la queue d'émission des monocouches (407–410 nm) présentes dans ces échantillons, et un changement de leur fraction déplace aussi la PLE. Les dimensions des particules ne sont pas chiffrées dans le dépôt ; le confinement latéral n'est donc pas démontré.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PROT_acetone_RT",
+   "text": "La série en température de la figure 2 (ambiante, 50, 120, 150 °C) ne change pas que la température : elle change aussi le solvant (acétone puis ODE), l'antisolvant (hexane puis acétone), la masse d'OAM-Br (120 puis 180 mg) et, à 120 °C, la quantité de ligands et d'AMTP. L'effet de la température sur la taille n'est donc pas isolé, et les tailles ne sont pas chiffrées dans le dépôt.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PROT_ODE_150",
+   "text": "Les Méthodes donnent 50 mg d'AMTP-Br pour toutes les voies protonées, alors que le SI attribue le passage aux bâtonnets et aux plaques à « more AMTP » (légende S2d) ; les quantités réelles de l'échantillon de la figure 2d sont inconnues, le tableau S4 (« Synthesis summary ») n'étant pas dans le dépôt.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PROT_ODE_120",
+   "text": "La légende S2d indique que l'échantillon à 120 °C a été préparé avec « more ligands (and more AMTP) » sans référence ni quantité : la série en température 120/150 °C n'est pas à réactifs égaux, et la variation extraite (température seule) est incomplète.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AMTP_monolayer",
+   "text": "Tel qu'écrit (PbBr2 et AMTP libre dans l'acétone, sans HBr ni AMTP-Br), le protocole ne peut pas donner (AMTPH)2PbBr4 : il manque les protons et la moitié du bromure, et l'on ne formerait au mieux qu'un adduit neutre PbBr2·AMTP. Un ajout de HBr ou l'emploi d'AMTP-Br a probablement été omis, alors que cet échantillon fonde le CIF affiné par Rietveld (wR = 24,8 %, groupe P1) servant de référence aux sous-produits.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Équations de Bragg du SI : 0,154 / (2 sin 1,2°) vaut 3,68 nm, que l'article écrit 3,6 nm (monocouches OAM) ; la valeur de 1,6 nm pour l'AMTP est recalculée sans écart. Les deux distances viennent des pics de sous-produits de la figure S8b (synthèses de l'hétérostructure), non de monocouches préparées à part.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PROT_ODE_150",
+   "text": "La durée d'agitation de l'échantillon de la figure 2d n'est pas donnée : la plage « 0–15 min » est celle du protocole général des Méthodes, non une valeur de cet échantillon.",
+   "quote": null
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "Méthodes, plages de conditions",
-   "issue": "Les protocoles donnent des plages (« room temperature or 50 °C », « 150 or 180 °C », « 120–150 °C », « room temperature or 120 °C », « 0–5 min », « 0–15 min »). Chaque échantillon prend sa valeur dans la légende de figure correspondante (Fig. 2, 4, S3, S4). Pour PROT_ODE_150 la durée d'agitation de l'échantillon de la figure 2d n'est pas dite : valeur de plage « 0–15 min » gardée en value_text sur la voie de base."
+   "issue": "Les protocoles donnent des plages (« room temperature or 50 °C », « 150 or 180 °C », « 120–150 °C », « room temperature or 120 °C », « 0–5 min », « 0–15 min »). Chaque échantillon prend sa valeur dans la légende de figure correspondante (Fig. 2, 4, S3, S4). Pour PROT_ODE_150, la durée d'agitation de l'échantillon de la figure 2d n'est pas dite : la plage « 0–15 min » est celle du protocole, la durée est donc laissée en not_stated. Conséquence : les variations de durée (30 s, 5 min, 15 min) des branches PROT_ODE_150_HC_* n'ont pas de paramètre parent à comparer (avertissement du contrôle, voulu) ; la plage 0–15 min figure dans la valeur « parent_value »."
   },
   {
    "where": "PROT_ODE_150_HC_*, étape 1",
@@ -2758,7 +2894,7 @@
   },
   {
    "where": "PROT_ODE_120 et PROT_ODE_150 (fig. 2c, 2d)",
-   "issue": "L'article ne dit pas explicitement que ces deux échantillons ont une complexation à température ambiante ; c'est lu dans le SI (Fig. S9b : « protonated method where complexation was performed at room temperature without heating » pour l'échantillon à 150 °C) et par opposition aux échantillons à complexation chauffée. Pour 120 °C la même hypothèse est faite. La légende S2d ajoute « more ligands (and more AMTP) » pour l'échantillon à 120 °C, qui correspond aux quantités de la voie ODE (180 mg OAM-Br, 50 mg AMTP-Br)."
+   "issue": "Les Méthodes donnent « at room temperature or 120 °C » pour l'étape 1 : c'est une alternative, qui ne fixe pas la température de PROT_ODE_150. La valeur « room temperature » de l'étape 1 de PROT_ODE_150 est lue dans le SI (Fig. S9b : « protonated method where complexation was performed at room temperature without heating », pour l'échantillon protoné à 150 °C) et par opposition aux échantillons à complexation chauffée ; elle est citée avec cette phrase. Aucune phrase équivalente pour 120 °C : PROT_ODE_120 hérite de la même valeur par hypothèse. La légende S2d ajoute « more ligands (and more AMTP) » pour l'échantillon à 120 °C, dont les quantités sont inconnues."
   },
   {
    "where": "DEP_ODE_150_5min, Fig. 4b et 4c",
@@ -2774,7 +2910,7 @@
   },
   {
    "where": "PROT_wet_precursor",
-   "issue": "Le SI (Fig. S8b) compare un précurseur protoné « sec » et un précurseur protoné « humide » sans préciser solvant ni température de synthèse. La voie est rattachée à PROT_acetone_RT (voie protonée en acétone, la plus simple) faute de mieux : l'héritage des étapes n'est pas confirmé par l'article. La seule variation écrite est le non-séchage du précurseur AMTP-Br (OAM-Br supposé identique)."
+   "issue": "Le SI (Fig. S8b) compare un précurseur protoné « sec » et un précurseur protoné « humide » sans préciser solvant ni température de synthèse. La voie est rattachée à PROT_acetone_RT (voie protonée en acétone, la plus simple) faute de mieux : l'héritage des étapes n'est pas confirmé par l'article. La seule variation écrite est le non-séchage du précurseur AMTP-Br (OAM-Br supposé identique). La figure 5b (courbe bleue, pics AMTP dominants) est rattachée à cette voie d'après sa légende (« Here, we favor the AMTP monolayer using a hydrated precursor ») et la légende S8b (« hydrated precursor (protonated) (blue) »)."
   },
   {
    "where": "Tableau S2",
@@ -2790,11 +2926,19 @@
   },
   {
    "where": "Monocouches, équations de Bragg (SI)",
-   "issue": "Dans le texte, l'équation (2) donne 3,6 nm pour les monocouches OAM et l'équation (1) 1,6 nm pour les monocouches AMTP (numérotation inversée dans le fichier). Les valeurs sont attribuées d'après les noms écrits dans les équations."
+   "issue": "Dans le texte, l'équation (2) donne 3,6 nm pour les monocouches OAM et l'équation (1) 1,6 nm pour les monocouches AMTP (numérotation inversée dans le fichier). Les valeurs sont attribuées d'après les noms écrits dans les équations. L'article dit que les distances sont mesurées sur l'espacement constant des pics de monocouches de la figure S8b, c'est-à-dire des sous-produits des synthèses d'hétérostructure, non de monocouches préparées à part : elles sont rangées sur PROT_acetone_RT (OAM, courbe noire, précurseur sec) et DEP_acetone_RT (AMTP, courbe verte), faute de conditions de synthèse précisées dans la légende S8b. Le calcul donne 3,68 nm pour l'équation OAM, écrit 3,6 nm."
   },
   {
    "where": "PROT_ODE_150_cleaned",
    "issue": "Les Méthodes ne disent pas à quel échantillon s'applique le nettoyage ; la légende S10 (« (b) at 150˚C after cleaning ») et le texte S10 indiquent la voie protonée à 150 °C. Hypothèse retenue : PROT_ODE_150 (complexation non chauffée, d'après la légende S10a/b listée sous « Protonated precursor (a) at 150˚C »)."
+  },
+  {
+   "where": "PROT_acetone_RT et DEP_acetone_RT, sous-produit préféré (Fig. S8b)",
+   "issue": "La légende S8b ne précise ni solvant ni température des synthèses comparées (précurseur protoné sec en noir, protoné hydraté en bleu, déprotoné en vert). Le sous-produit préféré par voie est rangé sur PROT_acetone_RT et DEP_acetone_RT, les voies de base les plus simples, sans que l'article le confirme."
+  },
+  {
+   "where": "PROT_acetone_RT, Fig. S10c",
+   "issue": "La légende S10 donne « (c) at room temperature » pour la voie protonée, et le texte attribue à S10c un « lower product yield » sans valeur : rattachée à PROT_acetone_RT, résultat qualitatif seulement."
   }
  ]
 }
