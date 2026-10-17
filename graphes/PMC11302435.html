@@ -1,0 +1,169 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11302435</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11302435 — Optimization of the Synthesis and Radiolabeling of ZIF-8 Nanoparticles.</h1>
+<h2>Voie : ZIF8_solvo_100C</h2>
+<pre class="mermaid">flowchart LR
+  R11750([&quot;2-methylimidazole&lt;br/&gt;5 g&quot;]):::reactif
+  R11750 --&gt;|&quot;ligand&quot;| S13849
+  R11751([&quot;methanol (for 2-methylimidazole)&lt;br/&gt;25 mL&quot;]):::reactif
+  R11751 --&gt;|&quot;solvent&quot;| S13849
+  R11752([&quot;zinc nitrate hexahydrate&lt;br/&gt;2.305 g&quot;]):::reactif
+  R11752 --&gt;|&quot;precursor&quot;| S13849
+  R11753([&quot;methanol (for zinc nitrate)&lt;br/&gt;25 mL&quot;]):::reactif
+  R11753 --&gt;|&quot;solvent&quot;| S13849
+  S13849[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S13849 --&gt; S13850
+  S13850[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S13850 --&gt; S13851
+  S13851[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S13851 --&gt; S13852
+  S13852[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 16 hours&quot;]:::etape
+  S13852 --&gt; S13853
+  S13853[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S13853 --&gt; M
+  M{{&quot;ZIF-8 nanoparticles&lt;br/&gt;Zn(C4H5N2)2&quot;}}:::materiau
+  O56261[&quot;particle_size_DLS_mean : 1050 nm&quot;]:::resultat
+  M -.-&gt; O56261
+  O56262[&quot;PDI : 0.725&quot;]:::resultat
+  M -.-&gt; O56262
+  O56263[&quot;suitability_for_size_and_PDI : failed to yield particles wit…&quot;]:::resultat
+  M -.-&gt; O56263
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZIF8_H2O_RT</h2>
+<pre class="mermaid">flowchart LR
+  R11754([&quot;zinc nitrate hexahydrate&lt;br/&gt;1.17 g&quot;]):::reactif
+  R11754 --&gt;|&quot;precursor&quot;| S13854
+  R11755([&quot;deionized water (zinc nitrate solution)&lt;br/&gt;8 mL&quot;]):::reactif
+  R11755 --&gt;|&quot;solvent&quot;| S13854
+  R11756([&quot;2-methylimidazole&lt;br/&gt;22.7 g&quot;]):::reactif
+  R11756 --&gt;|&quot;ligand&quot;| S13854
+  R11757([&quot;deionized water (2-methylimidazole solution)&lt;br/&gt;80 mL&quot;]):::reactif
+  R11757 --&gt;|&quot;solvent&quot;| S13854
+  R11758([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11758 --&gt;|&quot;wash&quot;| S13854
+  S13854[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S13854 --&gt; S13855
+  S13855[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S13855 --&gt; S13856
+  S13856[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;addition_rate : gradually&quot;]:::etape
+  S13856 --&gt; S13857
+  S13857[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : a few minutes&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S13857 --&gt; S13858
+  S13858[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S13858 --&gt; S13859
+  S13859[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : three rounds&quot;]:::etape
+  S13859 --&gt; S13860
+  S13860[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 65 °C&lt;br/&gt;duration : 12 hours&quot;]:::etape
+  S13860 --&gt; M
+  M{{&quot;ZIF-8 nanoparticles&lt;br/&gt;Zn(C4H5N2)2&quot;}}:::materiau
+  O56264[&quot;particle_size_DLS_mean : 1983 nm&quot;]:::resultat
+  M -.-&gt; O56264
+  O56265[&quot;PDI : 0.362&quot;]:::resultat
+  M -.-&gt; O56265
+  O56266[&quot;size_comparison_with_methanol : Deionized water resulted in l…&quot;]:::resultat
+  M -.-&gt; O56266
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZIF8_MeOH_RT</h2>
+<pre class="mermaid">flowchart LR
+  R11759([&quot;2-methylimidazole&lt;br/&gt;1.62 g&quot;]):::reactif
+  R11759 --&gt;|&quot;ligand&quot;| S13861
+  R11760([&quot;zinc nitrate hexahydrate&lt;br/&gt;1.468 g&quot;]):::reactif
+  R11760 --&gt;|&quot;precursor&quot;| S13861
+  R11761([&quot;methanol&lt;br/&gt;100 mL&quot;]):::reactif
+  R11761 --&gt;|&quot;solvent&quot;| S13861
+  S13861[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S13861 --&gt; S13862
+  S13862[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S13862 --&gt; S13863
+  S13863[&quot;&lt;b&gt;3. age&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 1 h&lt;br/&gt;stirring : remained unchanged&quot;]:::etape
+  S13863 --&gt; S13864
+  S13864[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;duration : 10 minutes&quot;]:::etape
+  S13864 --&gt; S13865
+  S13865[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : methanol&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S13865 --&gt; S13866
+  S13866[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 12 hours&quot;]:::etape
+  S13866 --&gt; M
+  M{{&quot;ZIF-8 nanoparticles&lt;br/&gt;Zn(C4H5N2)2&quot;}}:::materiau
+  O56267[&quot;particle_size_DLS_mean : 185.14 nm&quot;]:::resultat
+  M -.-&gt; O56267
+  O56268[&quot;PDI : 0.299&quot;]:::resultat
+  M -.-&gt; O56268
+  O56269[&quot;size_comparison_with_water : more successful in achieving …&quot;]:::resultat
+  M -.-&gt; O56269
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9565{{&quot;ZIF8_MeOH_RT&quot;}}:::materiau
+  B9566[&quot;ZIF8_MeOH_30C&quot;]:::etape
+  B9565 --&gt;|&quot;temperature = 30 °C&lt;br/&gt;2-methylimidazole = 1.125 g&lt;br/&gt;zinc nitrate hexahydrate = 1.101 g&lt;br/&gt;methanol = 150 mL&quot;| B9566
+  B9567[&quot;ZIF8_MeOH_50C&quot;]:::etape
+  B9565 --&gt;|&quot;temperature = 50 °C&lt;br/&gt;2-methylimidazole = 1.125 g&lt;br/&gt;zinc nitrate hexahydrate = 1.101 g&lt;br/&gt;methanol = 150 mL&quot;| B9567
+  B9568[&quot;ZIF8_MeOH_80C&quot;]:::etape
+  B9565 --&gt;|&quot;temperature = 80 °C&lt;br/&gt;2-methylimidazole = 1.125 g&lt;br/&gt;zinc nitrate hexahydrate = 1.101 g&lt;br/&gt;methanol = 150 mL&quot;| B9568
+  B9569[&quot;ZIF8_MeOH_50C_1to2&quot;]:::etape
+  B9567 --&gt;|&quot;2-methylimidazole = 2.202 g&quot;| B9569
+  B9570[&quot;ZIF8_MeOH_50C_1to1&quot;]:::etape
+  B9567 --&gt;|&quot;2-methylimidazole = 1.101 g&quot;| B9570
+  B9571[&quot;ZIF8_MeOH_50C_2to1&quot;]:::etape
+  B9567 --&gt;|&quot;zinc nitrate hexahydrate = 2.25 g&quot;| B9571
+  B9572[&quot;ZIF8_MeOH_50C_1to2_stirred&quot;]:::etape
+  B9569 --&gt;|&quot;stirring = With stirring&quot;| B9572
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Tc_Kit1</h2>
+<pre class="mermaid">flowchart LR
+  R11762([&quot;ZIF-8 nanoparticles (synthesis route not spe…&lt;br/&gt;500 µL&quot;]):::reactif
+  R11762 --&gt;|&quot;intermediate&quot;| S13867
+  R11763([&quot;deionized water (dispersion)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11763 --&gt;|&quot;solvent&quot;| S13867
+  R11764([&quot;tin(II) chloride dihydrate&lt;br/&gt;10 mg&quot;]):::reactif
+  R11764 --&gt;|&quot;reducing_agent&quot;| S13867
+  R11765([&quot;hydrochloric acid (0.01 M)&lt;br/&gt;1 mL&quot;]):::reactif
+  R11765 --&gt;|&quot;acid&quot;| S13867
+  R11766([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11766 --&gt;|&quot;gas&quot;| S13867
+  R11767([&quot;sodium pertechnetate (Na99mTcO4)&lt;br/&gt;6 mCi&quot;]):::reactif
+  R11767 --&gt;|&quot;precursor&quot;| S13867
+  S13867[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;concentration : 1 mg/mL&quot;]:::etape
+  S13867 --&gt; S13868
+  S13868[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S13868 --&gt; S13869
+  S13869[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume_nps : 500 µL&lt;br/&gt;volume_sncl2 : 100 µL&lt;br/&gt;added_radioactivity : 6 mCi&quot;]:::etape
+  S13869 --&gt; S13870
+  S13870[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : RT&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S13870 --&gt; S13871
+  S13871[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 10000 rpm&lt;br/&gt;duration : 15 minutes&quot;]:::etape
+  S13871 --&gt; S13872
+  S13872[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;repetitions : twice&quot;]:::etape
+  S13872 --&gt; S13873
+  S13873[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&quot;]:::etape
+  S13873 --&gt; M
+  M{{&quot;99mTc-labeled ZIF-8 nanoparticles&lt;br/&gt;&quot;}}:::materiau
+  O56284[&quot;radiolabeling_efficiency_RE : 47.66 %&quot;]:::resultat
+  M -.-&gt; O56284
+  O56285[&quot;radiochemical_purity_RCP : 61.35 %&quot;]:::resultat
+  M -.-&gt; O56285
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9573{{&quot;Tc_Kit1&quot;}}:::materiau
+  B9574[&quot;Tc_Kit2&quot;]:::etape
+  B9573 --&gt;|&quot;temperature = 70 °C&quot;| B9574
+  B9576[&quot;Tc_Kit4&quot;]:::etape
+  B9573 --&gt;|&quot;tin(II) chloride dihydra… = absent&quot;| B9576
+  B9575[&quot;Tc_Kit3&quot;]:::etape
+  B9574 --&gt;|&quot;tin(II) chloride dihydra… = absent&quot;| B9575
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

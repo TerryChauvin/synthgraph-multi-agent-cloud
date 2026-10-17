@@ -21,7 +21,7 @@
    "not_stated": [
     "yield"
    ],
-   "succeeded": false,
+   "succeeded": null,
    "reagents": [
     {
      "name": "2-methylimidazole",
@@ -425,7 +425,8 @@
      "quote": "Deionized water resulted in larger particles, prompting the use of methanol as a solvent.",
      "value_text": "Deionized water resulted in larger particles"
     }
-   ]
+   ],
+   "succeeded": null
   },
   {
    "label": "ZIF8_MeOH_RT",
@@ -535,7 +536,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": []
+     "not_stated": [
+      "stirring_after_addition"
+     ]
     },
     {
      "order": 4,
@@ -696,6 +699,12 @@
      "quote": "4 | 30 | 1 | Methanol | 1.125 g 2-methyl imidazole; 1.101 g zinc nitrate; 150 mL methanol | 180.5 ± 4.83 | 0.27 ± 0.032",
      "value_num": 0.27
     }
+   ],
+   "not_stated": [
+    "centrifugation",
+    "washing",
+    "drying",
+    "heating_method"
    ]
   },
   {
@@ -762,6 +771,12 @@
      "quote": "5 | 50 | 1 | Methanol | 1.125 g 2-methyl imidazole; 1.101 g zinc nitrate; 150 mL methanol | 117.83 ± 4.15 | 0.214 ± 0.027",
      "value_num": 0.214
     }
+   ],
+   "not_stated": [
+    "centrifugation",
+    "washing",
+    "drying",
+    "heating_method"
    ]
   },
   {
@@ -828,6 +843,12 @@
      "quote": "6 | 80 | 1 | Methanol | 1.125 g 2-methyl imidazole; 1.101 g zinc nitrate; 150 mL methanol | 192 ± 8.09 | 0.285 ± 0.023",
      "value_num": 0.285
     }
+   ],
+   "not_stated": [
+    "centrifugation",
+    "washing",
+    "drying",
+    "heating_method"
    ]
   },
   {
@@ -872,6 +893,11 @@
      "quote": "7 | 50 | 1 | Methanol | 1.101 g zinc nitrate; 2.202 g 2-methyl imidazole; (1:2 ratio); 150 mL methanol | 96.3 ± 1.25 | 0.16 ± 0.03",
      "value_num": 0.16
     }
+   ],
+   "not_stated": [
+    "centrifugation",
+    "washing",
+    "drying"
    ]
   },
   {
@@ -916,6 +942,11 @@
      "quote": "8 | 50 | 1 | Methanol | 1.101 g zinc nitrate; 1.101 g 2-methyl imidazole (1:1 ratio); 150 mL methanol | 118.75 ± 4.18 | 0.28 ± 0.017",
      "value_num": 0.28
     }
+   ],
+   "not_stated": [
+    "centrifugation",
+    "washing",
+    "drying"
    ]
   },
   {
@@ -960,6 +991,11 @@
      "quote": "9 | 50 | 1 | Methanol | 2.250 g zinc nitrate; 1.125 g 2-methyl imidazole (2:1 ratio); 150 mL methanol | 685.66 ± 21.19 | 0.486 ± 0.01",
      "value_num": 0.486
     }
+   ],
+   "not_stated": [
+    "centrifugation",
+    "washing",
+    "drying"
    ]
   },
   {
@@ -978,7 +1014,7 @@
     {
      "parameter": "stirring",
      "quote": "10 | 50 | 1 | Methanol | 1.101 g zinc nitrate; 2.202 g 2-methyl imidazole (1:2 ratio); 150 mL methanol (With stirring) | 145.3 ± 4.85 | 0.439 ± 0.017",
-     "parent_value": "remained unchanged (no stirring)",
+     "parent_value": "remained unchanged",
      "step_order": 3,
      "value_text": "With stirring"
     }
@@ -1004,6 +1040,11 @@
      "quote": "10 | 50 | 1 | Methanol | 1.101 g zinc nitrate; 2.202 g 2-methyl imidazole (1:2 ratio); 150 mL methanol (With stirring) | 145.3 ± 4.85 | 0.439 ± 0.017",
      "value_num": 0.439
     }
+   ],
+   "not_stated": [
+    "centrifugation",
+    "washing",
+    "drying"
    ]
   },
   {
@@ -1231,10 +1272,17 @@
    "characterizations": [
     {
      "technique": "ITLC (radiochemical purity, %RCP)",
-     "result": "%RCP from the activity of the upper and lower parts of the TLC strip",
+     "result": "%RCP from the activity of the upper and lower parts of the TLC strip (Equation 1)",
      "instrument": "ITLC-SG strip; activity measured with a Courimeter device",
-     "conditions": "mobile phase acetone; upper third and lower third of the paper counted",
-     "quote": "For this purpose, acetone and ITLC-SG were used as the mobile and stationary phases, respectively."
+     "conditions": "mobile phase acetone; upper third and lower third of the paper counted ; Équation 1 (lue dans l'image de la Fig. 2, ijpr-23-1-144928-i001.jpg) : %RCP = A0/(A0 + A1) × 100, A0 = activité de la partie basse de la bande (ZIF-8-Tc, ligne de dépôt), A1 = activité de la partie haute (TcO4−, front)",
+     "quote": "To calculate the %RCP by TLC, Equation 1 can be used, where A0 represents the activity of the lower part of the TLC paper, and A1 represents the activity of the upper part of the TLC paper."
+    },
+    {
+     "technique": "radiolabeling efficiency (%RE)",
+     "result": "%RE = a / b × 100, a = radioactivity of the sediment after centrifugation, b = primary radioactivity added to the sample",
+     "instrument": "Courimeter device",
+     "conditions": "sediment obtained after centrifugation at 10,000 rpm for 15 minutes and washed twice",
+     "quote": "After centrifugation, the %RE was obtained by dividing \"a\" by \"b\" multiplied by 100, where \"a\" represents the radioactivity of the sediment obtained after centrifugation (labeled nanoparticle activity), and \"b\" represents the primary radioactivity added to the sample (total activity)."
     }
    ],
    "outcomes": [
@@ -1743,7 +1791,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare des nanoparticules de ZIF-8 (Zn + 2-méthylimidazole) par dix conditions : solvothermale dans le méthanol à 100 °C, précipitation dans l'eau à température ambiante, puis précipitation dans le méthanol à température ambiante, à 30, 50 et 80 °C, avec trois rapports massiques zinc/ligand et avec ou sans agitation. La taille et l'indice de polydispersité (PDI) sont mesurés par diffusion dynamique de la lumière. Les meilleures nanoparticules (≈ 96 nm, PDI 0,16) sont obtenues dans le méthanol à 50 °C avec un rapport massique 1:2. Ces particules sont ensuite marquées au technétium-99m par quatre protocoles ; celui avec SnCl2 à 70 °C pendant 30 min donne plus de 95 % d'efficacité et de pureté radiochimique.",
+   "text": "L'article prépare des nanoparticules de ZIF-8 (Zn + 2-méthylimidazole) par dix conditions : solvothermale dans le méthanol à 100 °C, précipitation dans l'eau à température ambiante, puis précipitation dans le méthanol à température ambiante, à 30, 50 et 80 °C, avec trois rapports massiques zinc/ligand et avec ou sans agitation. La taille et l'indice de polydispersité (PDI) sont mesurés par diffusion dynamique de la lumière. Les meilleures nanoparticules (≈ 96 nm, PDI 0,16) sont obtenues dans le méthanol à 50 °C avec un rapport massique 1:2. Des nanoparticules de ZIF-8 (le lot n'est pas précisé par l'article) sont ensuite marquées au technétium-99m par quatre protocoles ; celui avec SnCl2 à 70 °C pendant 30 min donne plus de 95 % d'efficacité et de pureté radiochimique.",
    "quote": "The optimum conditions for ZIF-8 synthesis were determined at 50°C using methanol as the solvent."
   },
   {
@@ -1782,27 +1830,81 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZIF8_MeOH_RT",
-   "text": "Hypothèse : le 2-méthylimidazole, acide très faible, est probablement déprotoné en petite proportion en solution, et l'anion 2-méthylimidazolate se coordine à Zn2+ pour former des tétraèdres ZnN4 qui s'assemblent en topologie sodalite. L'excès de ligand (rapport 1:2) déplace probablement l'équilibre vers la déprotonation, accélère la nucléation et donne des particules plus petites ; un excès de zinc laisse peu de ligand déprotoné et on attend une nucléation lente avec croissance, donc de grosses particules polydisperses. Dans le méthanol, la nucléation est probablement plus rapide que dans l'eau, où le ligand est très solvaté ; 50 °C favorise probablement la nucléation, tandis que 80 °C accélère la croissance et le mûrissement. Le chauffage solvothermal à 100 °C pendant 16 h favorise probablement la croissance de gros cristaux."
+   "text": "Hypothèse : le 2-méthylimidazole, acide très faible, est probablement déprotoné en petite proportion en solution, et l'anion 2-méthylimidazolate se coordine à Zn2+ pour former des tétraèdres ZnN4 qui s'assemblent en topologie sodalite. L'excès de ligand joue probablement deux rôles : base (il capte le proton libéré) et agent de coiffe de surface qui freine la croissance ; plus de ligand donnerait donc plus de germes et des particules plus petites, jusqu'à un rapport molaire d'environ 8 (Zhang et al. 2018), ce qui est cohérent avec le rapport massique 1:2 (≈ 7). Sous un rapport de 2, le ligand manque et des sous-produits de type hydroxyde de zinc apparaissent probablement (essai 2:1), avec une nucléation lente et de grosses particules polydisperses. Dans le méthanol, la nucléation est probablement plus rapide que dans l'eau, où le ligand est très solvaté ; 50 °C favoriserait la nucléation, mais l'effet de 80 °C ne peut pas être attribué à la seule température puisque cette consigne dépasse l'ébullition du méthanol. Le chauffage solvothermal à 100 °C pendant 16 h favorise probablement la croissance de gros cristaux et le mûrissement."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Tc_Kit2",
-   "text": "Hypothèse : Sn(II) réduit probablement le pertechnétate TcO4− (Tc(VII)) en un état d'oxydation plus bas (Tc(IV) ou Tc(III)) capable de se coordonner aux azotes de surface du ZIF-8 ; sans réducteur, TcO4− reste anionique et n'est pas retenu, d'où 0 % pour le kit 3. La température de 70 °C accélère probablement la réduction et la complexation. La faible retenue à température ambiante pourrait aussi venir d'une hydrolyse de Sn(II) ou d'une cinétique lente."
+   "text": "Hypothèse : Sn(II) réduit probablement le pertechnétate TcO4− (Tc(VII)) en Tc(IV), voire Tc(III) ; faute de chélatant fort, ce technétium réduit s'hydrolyse en TcO2·xH2O ou coprécipite avec l'hydroxyde d'étain, et ces colloïdes s'adsorbent sur les particules ou sédimentent avec elles. C'est plus probable que la « liaison dative Tc–N » des auteurs, car les azotes du ZIF-8 sont déjà liés au zinc dans le volume du solide (elle ne serait possible qu'aux imidazoles terminaux de surface ou après dissolution partielle du réseau). Sans réducteur, TcO4− reste anionique et n'est pas retenu, d'où 0 % pour le kit 3. La température de 70 °C accélère probablement la réduction et l'hydrolyse ; la faible retenue à température ambiante pourrait venir d'une cinétique lente. Un témoin sans particules et une séparation par taille permettraient de trancher."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le marquage met en jeu du 99mTc (6 mCi par essai) : manipulation sous blindage, en laboratoire de radiopharmacie autorisé, avec gestion des déchets radioactifs et contrôle de contamination. Le méthanol est inflammable et toxique ; l'autoclave à 100 °C avec un solvant bouillant à 65 °C (route solvothermale) est sous pression et ne doit pas être ouvert chaud. Le nitrate de zinc est un oxydant et irritant ; le HCl dilué est irritant ; les nanoparticules sont à manipuler sans inhalation."
+   "text": "Le marquage met en jeu du 99mTc (6 mCi par essai) : manipulation sous blindage, en laboratoire de radiopharmacie autorisé, avec gestion des déchets radioactifs et contrôle de contamination. Le méthanol est inflammable et toxique ; l'autoclave à 100 °C avec un solvant bouillant à 65 °C (route solvothermale) est sous pression et ne doit pas être ouvert chaud. Le nitrate de zinc est un oxydant et irritant ; le HCl dilué est irritant ; les nanoparticules sont à manipuler sans inhalation. Le 2-méthylimidazole est corrosif et classé toxique pour la reproduction de catégorie 1B (H360Df) : gants, lunettes et hotte, ce que l'article ne signale pas ; les 22,7 g de la voie aqueuse et les eaux de lavage chargées en ligand demandent une gestion de déchets adaptée."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pureté des réactifs, vitesses et durées de centrifugation des synthèses, rendement, vitesse d'agitation, vitesse d'ajout et mode de chauffage de la série en température ne sont pas donnés ; le lavage et le séchage de la voie solvothermale et des branches de la série ne sont pas décrits. Les quantités du texte (1,620 g de ligand, 1,468 g de zinc, 100 mL de méthanol) diffèrent de celles du tableau 2 pour la même condition (1,125 g, 1,101 g, 150 mL). Aucune caractérisation (DRX, MEB, surface) ne confirme dans cet article que le produit est du ZIF-8 : elle est renvoyée à une autre publication des auteurs. Pour le marquage, le lot de ZIF-8 utilisé, le solvant de lavage du sédiment, les conditions de la deuxième centrifugation et l'équation 1 de la pureté radiochimique ne sont pas donnés."
+   "text": "Pureté des réactifs, vitesses et durées de centrifugation des synthèses, rendement, vitesse d'agitation, vitesse d'ajout et mode de chauffage de la série en température ne sont pas donnés ; le lavage et le séchage de la voie solvothermale et des branches de la série ne sont pas décrits. Les quantités du texte (1,620 g de ligand, 1,468 g de zinc, 100 mL de méthanol) diffèrent de celles du tableau 2 pour la même condition (1,125 g, 1,101 g, 150 mL). Aucune caractérisation (DRX, MEB, surface) ne confirme dans cet article que le produit est du ZIF-8 : elle est renvoyée à une autre publication des auteurs. Pour le marquage, le lot de ZIF-8 utilisé, le solvant de lavage du sédiment, les conditions de la deuxième centrifugation ne sont pas donnés ; l'équation 1 de la pureté radiochimique ne figure que dans l'image de la Fig. 2 (%RCP = A0/(A0 + A1) × 100) et a été reprise dans la caractérisation ITLC de Tc_Kit1, avec la formule de %RE."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Tc_Kit1",
    "text": "Le lot de ZIF-8 engagé dans les quatre kits de marquage n'est pas précisé (probablement les particules optimales, mais l'article ne le dit pas) ; la concentration (1 mg/mL) et le volume (500 µL) du kit sont donnés, le solvant de lavage des sédiments ne l'est pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF8_MeOH_RT",
+   "text": "Les réactifs de la voie viennent des Méthodes 3.4 (1,620 g de 2-méthylimidazole, 1,468 g de nitrate de zinc, 100 mL de méthanol), mais le résultat 185,14 nm (PDI 0,299) cite la rangée 3 du tableau 2, qui décrit d'autres quantités (1,125 g, 1,101 g, 150 mL) : la taille mesurée correspond aux quantités du tableau, pas à celles du texte. Le tableau reprend la recette du texte réduite aux trois quarts pour le zinc (0,75 × 1,468 = 1,101 g) et pour le volume (0,75 × 200 mL = 150 mL, si les 100 mL du texte sont lus par solution) ; pour le ligand, 0,75 × 1,620 = 1,215 g alors que le tableau écrit 1,125 g, ce qui évoque une inversion de chiffres (hypothèse, non confirmée par l'article). Les branches 30, 50 et 80 °C et les trois rapports portent les quantités du tableau ; le rapport molaire est de l'ordre de 4 dans les deux lectures. Le critique scientifique juge la voie douteuse sur ce point : le lecteur doit choisir quelles quantités appliquer.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF8_solvo_100C",
+   "text": "Les auteurs jugent la voie solvothermale inadaptée (« failed to yield particles with a suitable size and PDI »), mais des particules ont bien été obtenues (1050 nm, PDI 0,725) : il s'agit d'un échec de taille et de dispersion, pas d'une absence de produit, d'où l'absence de marque de succès ou d'échec. Un PDI de 0,725 dépasse la limite (≈ 0,7) au-delà de laquelle la diffusion dynamique de la lumière n'est plus fiable, et les tailles du tableau 2 sont mesurées sur des poudres séchées puis redispersées (lavage et séchage de cette voie non décrits) ; la capacité de l'autoclave et le taux de remplissage ne sont pas donnés. Le chauffage à 100 °C dans le méthanol en vase clos (≈ 3 bar) n'a rien d'extrême : la phrase « high temperature and pressure » est exagérée (critique scientifique).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF8_H2O_RT",
+   "text": "Cette voie donne des particules trop grosses (1983 nm, PDI 0,362) mais pas un échec de formation : elle n'est donc pas marquée comme échec. C'est la recette aqueuse de Pan et al. (Chem. Commun. 2011) à l'échelle 10 (rapport 2-méthylimidazole/zinc ≈ 70), que l'article ne cite pas ; les 1983 nm correspondent très probablement à des agrégats formés au séchage à 65 °C avant redispersion, plutôt qu'à des cristaux primaires, de sorte que la comparaison eau/méthanol ne porte pas sur des états de dispersion équivalents. L'élimination de l'excès de ligand (22,7 g) par trois lavages n'est pas démontrée, et aucune DRX ne distingue ZIF-8 d'une autre phase (ZIF-L, hydroxydes de zinc).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Tc_Kit1",
+   "text": "Les quantités du réactif SnCl2 (10 mg) et de l'acide chlorhydrique 0,01 M (1 mL) sont celles de la solution mère, pas du kit : chaque kit n'en prend que 100 µL (tableau 1, colonne 100 µL), soit environ 1 mg de SnCl2·2H2O pour 500 µL de dispersion de ZIF-8 à 1 mg/mL. L'article n'écrit pas que la solution mère sert à plusieurs kits.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF8_MeOH_80C",
+   "text": "La consigne de 80 °C dépasse le point d'ébullition du méthanol (64,7 °C ; pression de vapeur ≈ 1,8 bar à 80 °C, NIST Chemistry WebBook) et l'article ne décrit ni reflux ni récipient fermé ni mode de chauffage. En récipient ouvert, le mélange bout vers 65 °C et le solvant s'évapore : la température réelle et les concentrations ne sont pas celles annoncées, et la remontée de taille entre 50 et 80 °C (117,83 → 192 nm) n'est pas interprétable comme un effet de la seule température. La série en température n'est exploitable qu'à 30 et 50 °C. Chauffer du méthanol au-dessus de son point d'ébullition demande reflux ou flacon prévu pour 2 bar, sous hotte.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF8_MeOH_50C_2to1",
+   "text": "Le rapport molaire 2-méthylimidazole/zinc de cet essai est d'environ 1,8, inférieur à la stœchiométrie de 2 ; selon Zhang et al. (Sci. Rep. 2018, 10.1038/s41598-018-28015-7), l'hydroxyde de zinc et des cristaux mal formés apparaissent aux faibles rapports. Aucune DRX dans l'article ne confirme que les 685,66 nm (PDI 0,486) sont du ZIF-8 pur. De plus, le rapport 2:1 est obtenu en doublant le nitrate de zinc (2,25 g) et non en réduisant le ligand, ce qui contredit « the amount of zinc nitrate remained constant » et fait varier en même temps la concentration en zinc.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Tc_Kit1",
+   "text": "Le marquage n'est pas démontré : une seule chromatographie ITLC-SG à l'acétone et un culot de centrifugation ne séparent pas le ZIF-8 marqué des colloïdes de technétium réduit et d'étain (Schorr et al., ACS Pharmacol. Transl. Sci. 2024, 10.1021/acsptsci.4c00383). Chaque kit contient plus d'étain (≈ 4,4 µmol) que de zinc (≈ 2,2 µmol), soit ≈ 0,67 mg d'oxyde d'étain possible contre 0,5 mg de ZIF-8, et le témoin SnCl2 + pertechnétate sans particules est absent ; les %RE et %RCP ne prouvent donc pas que le technétium est lié au ZIF-8. Le %RE (47,66 %) est inférieur au %RCP (61,35 %) sans que l'article précise l'échantillon passé en CCM.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Tc_Kit2",
+   "text": "Même défaut que le kit 1, accentué à 70 °C : l'hydrolyse de Sn(II) et la formation de colloïde de technétium réduit sont accélérées, et le passage de 47 % à 97 % de marquage est compatible avec une formation plus complète de ce colloïde, que ni l'ITLC à l'acétone ni la centrifugation ne distinguent du ZIF-8 marqué (Schorr 2024) ; les « plus de 95 % » ne sont pas démontrés sans témoin sans particules à 70 °C. La stabilité (moins de 10 % de technétium libéré en 24 h dans le PBS et le plasma) est aussi à nuancer : ZIF-8 se dégrade dans les tampons phosphate (Wahid et al., ACS Omega 2026), et une rétention de technétium qui ne suit pas cette dissolution va dans le sens d'un technétium porté par un colloïde réduit plutôt que par le réseau.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Tc_Kit3",
+   "text": "Le 0 % du kit 3 (sans SnCl2, 70 °C) est attendu, mais le kit 4 (sans SnCl2, température ambiante) donne 10,04 % de RE et 18,56 % de RCP sans explication de l'article ; un zéro exact sans écart-type pour n = 3 est aussi inhabituel. Les kits 3 et 4 suppriment probablement aussi l'acide chlorhydrique de la solution de SnCl2 (non précisé), de sorte que le témoin change deux variables (réducteur et acidité), l'acidité pouvant agir sur l'intégrité du ZIF-8.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -1844,15 +1946,15 @@
   },
   {
    "where": "ZIF8_MeOH_RT, méthanol",
-   "issue": "« separately dissolved in 100 mL of methanol » : deux lectures, 100 mL par solution (200 mL au total) ou 100 mL au total ; le tableau 2 donne 150 mL au total. Enregistré tel quel (100 mL), sans les conclure."
+   "issue": "« separately dissolved in 100 mL of methanol » : deux lectures, 100 mL par solution (200 mL au total, comme les voies solvothermale et aqueuse qui séparent le solvant par solution) ou 100 mL au total ; le tableau 2 donne 150 mL au total (0,75 × 200 mL si lu par solution). Enregistré tel quel (100 mL, une seule entrée), sans trancher."
   },
   {
    "where": "ZIF8_MeOH_RT étape 3 (stirring)",
-   "issue": "Le texte dit seulement que le mélange « remained unchanged for one hour » ; les sections 4.1 et 5 disent que le repos sans agitation donne de plus petites particules, et seule la ligne 10 du tableau 2 porte « With stirring ». Lecture retenue : les lignes 3 à 9 correspondent à un mélange laissé au repos après l'addition ; la valeur « remained unchanged » est enregistrée comme valeur littérale du paramètre stirring."
+   "issue": "Le texte dit seulement que la solution de ligand a été ajoutée « while stirring » puis que le mélange « remained unchanged for one hour » ; il ne dit pas explicitement que les échantillons 3 à 9 sont restés sans agitation. Les sections 4.1 et 5 disent que le repos sans agitation donne de plus petites particules, et seule la ligne 10 du tableau 2 porte « With stirring ». La valeur « remained unchanged » est enregistrée telle quelle ; « no stirring » est une inférence non écrite pour le parent de la branche agitée (agitation après l'addition déclarée non citée à l'étape 3)."
   },
   {
-   "where": "Branches ZIF8_MeOH_30C/50C/80C et rapports",
-   "issue": "L'article dit que le mélange a été « exposed to temperatures of 30, 50, and 80°C for one hour » sans décrire le chauffage (bain, plaque, durée de la montée) ni le traitement après la réaction. La centrifugation de 10 min, les trois lavages au méthanol et le séchage à 70 °C de la voie à température ambiante sont supposés hérités ; ce n'est pas écrit pour ces branches."
+   "where": "Branches ZIF8_MeOH_30C/50C/80C et rapports (branches 4 à 10)",
+   "issue": "L'article dit que le mélange a été « exposed to temperatures of 30, 50, and 80°C for one hour » sans décrire le chauffage (bain, plaque, durée de la montée, préchauffage des solutions) ni le traitement après la réaction (centrifugation, lavage, séchage) des échantillons 4 à 10. Ces étapes (centrifugation 10 min, trois lavages au méthanol, séchage à 70 °C pendant 12 h) ne sont écrites que pour la voie à température ambiante : elles sont déclarées non citées (centrifugation, washing, drying) dans chaque branche, l'héritage structurel du parent n'étant pas une information de l'article."
   },
   {
    "where": "ZIF8_MeOH_50C_1to2 et suivantes",
@@ -1860,7 +1962,7 @@
   },
   {
    "where": "ZIF8_H2O_RT étape 4",
-   "issue": "Le texte dit « a few minutes » ; le tableau 2 donne 0,25 h de temps de réaction. Valeur du texte retenue en value_text."
+   "issue": "Le texte dit « a few minutes » (agitation à température ambiante jusqu'à un mélange trouble) ; le tableau 2 donne 0,25 h de temps de réaction pour cette voie et précise « with stirring ». Valeur du texte retenue en value_text, durée du tableau non extraite (0,25 h = 15 min : lecture possible, non écrite par le texte)."
   },
   {
    "where": "Tableau 2 (en-tête)",
@@ -1872,7 +1974,7 @@
   },
   {
    "where": "Tc_Kit1 à Tc_Kit4, réactif ZIF-8",
-   "issue": "L'article ne dit pas quel lot de ZIF-8 est marqué ; le réactif est enregistré avec le rôle intermediate sans rattachement à une voie. Le volume de 500 µL du tableau 1 est l'amount de la dispersion à 1 mg/mL."
+   "issue": "L'article ne dit pas quel lot de ZIF-8 est marqué ; le réactif est enregistré avec le rôle intermediate sans rattachement à une voie. Le volume de 500 µL du tableau 1 est l'amount de la dispersion à 1 mg/mL. Les quantités de SnCl2 (10 mg) et de HCl (1 mL) du réactif sont celles de la solution mère ; le kit n'en prend que 100 µL (volume_sncl2 à l'étape 3)."
   },
   {
    "where": "Tc_Kit3 et Tc_Kit4, étapes propres",
@@ -1885,6 +1987,10 @@
   {
    "where": "Résultats, 4.1 vs résumé",
    "issue": "Le résumé et la discussion parlent d'un rapport « 2-méthylimidazole : nitrate de zinc de 2:1 » (équivalent au 1:2 zinc:ligand du texte) ; aucune contradiction de données, rapport 1:2 zinc:ligand retenu comme dans le tableau."
+  },
+  {
+   "where": "Tc_Kit1, Fig. 2 (équation 1)",
+   "issue": "Figure lue : ijpr-23-1-144928-i001.jpg (Fig. 2). L'équation 1, citée dans le texte mais non écrite, y est lisible : %RCP = A0/(A0 + A1) × 100, A0 = ZIF-8-Tc (ligne de dépôt, partie basse), A1 = TcO4− (front, partie haute). Formule reprise dans les conditions de la caractérisation ITLC ; aucune valeur numérique lue sur figure."
   }
  ]
 }
