@@ -1,0 +1,355 @@
+{
+ "pmcid": "PMC9061421",
+ "format": 2,
+ "sample_inventory": [
+  {"sample": "N-CDs", "defined_in": "Experimental, Synthesis of N-doped carbon dots (N-CDs)", "route": "N-CDs", "results_in": ["Results, Characterization of the N-CDs", "Fig. 2", "Fig. 3", "Fig. 4", "Fig. S1", "Fig. S2", "Fig. S3", "Fig. S4"]},
+  {"sample": "N-CD solutions at 0.01, 0.1 and 1 mg mL−1", "defined_in": "Results, Characterization of the N-CDs (dilutions pour la mesure du rendement quantique)", "route": null, "why": "Dilutions du matériau fini pour mesurer le rendement quantique, pas une synthèse ; les valeurs vont dans les résultats de la voie N-CDs.", "results_in": ["Results, Characterization of the N-CDs", "Fig. S3"]},
+  {"sample": "N-CD solution 1.0 mg mL−1 + 15 metal ion solutions (1 mM) diluted to 50 μM", "defined_in": "Experimental, Detection of heavy metal ions", "route": null, "why": "Essai de sélectivité du matériau fini, pas une synthèse ; résultats rangés dans la voie N-CDs.", "results_in": ["Fig. 5"]},
+  {"sample": "N-CD/Cr(vi) et N-CD/Cr(vi)/AA", "defined_in": "Results, quenching mechanism and fluorescence off–on", "route": null, "why": "Mélanges de mesure (extinction puis restauration de fluorescence), pas des matériaux synthétisés ; résultats rangés dans la voie N-CDs.", "results_in": ["Fig. 6", "Fig. 7"]},
+  {"sample": "River water samples 1 to 4", "defined_in": "Results, Performances of the CDs (Table 2)", "route": null, "why": "Échantillons d'eau de rivière dopés en Cr(vi), essai analytique ; résultats rangés dans la voie N-CDs.", "results_in": ["Table 2"]},
+  {"sample": "Mung bean sprouts groups 1st, 2nd, 3rd (a, b, c)", "defined_in": "Experimental, Multicolor bioimaging", "route": null, "why": "Essai d'imagerie biologique avec le matériau fini ; pas une synthèse. Seules des images qualitatives (Fig. 8) portent le résultat.", "results_in": ["Fig. 8"]},
+  {"sample": "Probes of Table 1 (Co(ii)-CDs, N,S-CDs, Amino-CDs, CDs)", "defined_in": "Results, Performances of the CDs (Table 1)", "route": null, "why": "Sondes de la littérature citées pour comparaison, sans protocole dans l'article.", "results_in": ["Table 1"]}
+ ],
+ "routes": [
+  {
+   "label": "N-CDs",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "nitrogen-doped carbon dots",
+    "formula": null,
+    "family": "carbone",
+    "phase": "amorphous graphite structure",
+    "morphology": "nearly orbicular nanodots"
+   },
+   "method": "solvent-free, solid-state, microwave-assisted pyrolysis of maleic anhydride and urea",
+   "quote": "The N-CDs were synthesized in one step using a green, microwave-assisted, and solvent-free method.",
+   "scale": null,
+   "yield": {
+    "value": 58.5,
+    "unit": "%",
+    "quote": "the acquired N-CDs had a high yield of 58.5%"
+   },
+   "not_stated": ["yield_basis"],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "maleic anhydride (MA)",
+     "formula": "C4H2O3",
+     "role": "precursor",
+     "amount": 1.18,
+     "unit": "g",
+     "purity": "analytical grade",
+     "supplier": "Aladdin Chemical Co., Ltd (Shanghai, China)",
+     "supplier_quote": "MA, urea, K2Cr2O7, ascorbic acid, NaOH and HCl were purchased from Aladdin Chemical Co., Ltd (Shanghai, China). Other chemicals, including NaCl, KCl, AgNO3, CuCl2·2H2O, CaCl2·2H2O, FeCl2, MnSO4·H2O, BaCl2, NiCl2·6H2O, MgCl2, Zn(NO3)2, FeCl3·6H2O, Al(NO3)3·9H2O and CrCl3·6H2O, were obtained from Sinopharm Chemical Reagent Co., Ltd (Shanghai, China). Mung bean seeds were purchased from retail outlets. All the chemical agents were of analytical grade and used as received without further purification.",
+     "quote": "a solid mixture of 1.18 g MA and 1.08 g urea was ground into a fine powder in an agate mortar"
+    },
+    {
+     "name": "urea",
+     "formula": "CH4N2O",
+     "role": "precursor",
+     "amount": 1.08,
+     "unit": "g",
+     "purity": "analytical grade",
+     "supplier": "Aladdin Chemical Co., Ltd (Shanghai, China)",
+     "supplier_quote": "MA, urea, K2Cr2O7, ascorbic acid, NaOH and HCl were purchased from Aladdin Chemical Co., Ltd (Shanghai, China). Other chemicals, including NaCl, KCl, AgNO3, CuCl2·2H2O, CaCl2·2H2O, FeCl2, MnSO4·H2O, BaCl2, NiCl2·6H2O, MgCl2, Zn(NO3)2, FeCl3·6H2O, Al(NO3)3·9H2O and CrCl3·6H2O, were obtained from Sinopharm Chemical Reagent Co., Ltd (Shanghai, China). Mung bean seeds were purchased from retail outlets. All the chemical agents were of analytical grade and used as received without further purification.",
+     "quote": "a solid mixture of 1.18 g MA and 1.08 g urea was ground into a fine powder in an agate mortar"
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 50,
+     "unit": "mL",
+     "not_stated": ["purity", "supplier"],
+     "quote": "50 mL deionized water was added to the solid mixture"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "grind",
+     "description": "Grind the solid mixture of maleic anhydride and urea into a fine powder in an agate mortar.",
+     "quote": "a solid mixture of 1.18 g MA and 1.08 g urea was ground into a fine powder in an agate mortar",
+     "parameters": [],
+     "equipment": [
+      {"type": "agate mortar", "detail": null, "quote": "a solid mixture of 1.18 g MA and 1.08 g urea was ground into a fine powder in an agate mortar"}
+     ],
+     "not_stated": ["grinding_duration"]
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Transfer the powder to a beaker and irradiate it in a modified domestic 700 W microwave oven, without solvent.",
+     "quote": "The mixture was transferred to a beaker and allowed to react for three minutes in a modified domestic 700 W microwave oven.",
+     "parameters": [
+      {"name": "duration", "value_text": "three minutes", "quote": "The mixture was transferred to a beaker and allowed to react for three minutes in a modified domestic 700 W microwave oven."},
+      {"name": "power", "value_num": 700, "unit": "W", "quote": "The mixture was transferred to a beaker and allowed to react for three minutes in a modified domestic 700 W microwave oven."}
+     ],
+     "equipment": [
+      {"type": "modified domestic microwave oven", "detail": "700 W, equipped with a sensor for pressure and temperature every five seconds", "quote": "The oven was equipped with a sensor to determine the change in pressure and temperature per five seconds."},
+      {"type": "beaker", "detail": null, "quote": "The mixture was transferred to a beaker and allowed to react for three minutes in a modified domestic 700 W microwave oven."}
+     ],
+     "not_stated": ["temperature", "atmosphere", "pressure", "beaker_volume", "microwave_frequency", "heating_rate"]
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Cool the reacted mixture to room temperature.",
+     "quote": "The mixture was then cooled down to room temperature",
+     "parameters": [
+      {"name": "temperature_final", "value_text": "room temperature", "quote": "The mixture was then cooled down to room temperature"}
+     ],
+     "equipment": [],
+     "not_stated": ["cooling_rate", "cooling_duration"]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add deionized water to the cooled solid mixture to dissolve the product.",
+     "quote": "50 mL deionized water was added to the solid mixture",
+     "parameters": [
+      {"name": "volume", "value_num": 50, "unit": "mL", "quote": "50 mL deionized water was added to the solid mixture"}
+     ],
+     "equipment": [],
+     "not_stated": ["stirring_speed", "dissolution_duration"]
+    },
+    {
+     "order": 5,
+     "action": "centrifuge",
+     "description": "Centrifuge the solution to remove large particles.",
+     "quote": "To remove large particles, the obtained solution was centrifuged at 10 000 rpm for ten minutes",
+     "parameters": [
+      {"name": "centrifuge_speed", "value_num": 10000, "unit": "rpm", "quote": "centrifuged at 10 000 rpm for ten minutes"},
+      {"name": "duration", "value_text": "ten minutes", "quote": "centrifuged at 10 000 rpm for ten minutes"}
+     ],
+     "equipment": [],
+     "not_stated": ["temperature", "rotor_type"]
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Filter the supernatant through a 0.22 μm membrane to obtain a brownish yellow solution.",
+     "quote": "filtered using a 0.22 μm membrane",
+     "parameters": [
+      {"name": "pore_size", "value_num": 0.22, "unit": "μm", "quote": "filtered using a 0.22 μm membrane"}
+     ],
+     "equipment": [
+      {"type": "membrane filter", "detail": "0.22 μm", "quote": "filtered using a 0.22 μm membrane"}
+     ],
+     "not_stated": ["membrane_material"]
+    },
+    {
+     "order": 7,
+     "action": "dialyze",
+     "description": "Dialyze the brownish yellow solution against a dialysis tube of 1000 Da cut-off.",
+     "quote": "The resulting brownish yellow solution was dialyzed using a dialysis tube (MWCO = 1000 Da) for 24 h",
+     "parameters": [
+      {"name": "duration", "value_num": 24, "unit": "h", "quote": "dialyzed using a dialysis tube (MWCO = 1000 Da) for 24 h"},
+      {"name": "mwco", "value_num": 1000, "unit": "Da", "quote": "dialyzed using a dialysis tube (MWCO = 1000 Da) for 24 h"}
+     ],
+     "equipment": [
+      {"type": "dialysis tube", "detail": "MWCO = 1000 Da", "quote": "dialyzed using a dialysis tube (MWCO = 1000 Da) for 24 h"}
+     ],
+     "not_stated": ["dialysate", "dialysate_volume", "dialysate_changes", "temperature", "membrane_supplier"]
+    },
+    {
+     "order": 8,
+     "action": "dry",
+     "description": "Freeze-dry the dialyzed solution to obtain brown-colored solid N-CDs.",
+     "quote": "freeze-dried to obtain brown-colored solid N-CDs",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": ["temperature", "duration", "pressure", "freeze_dryer_model"]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "TEM / HRTEM",
+     "result": "nearly orbicular dots, size distribution 3.0–6.8 nm, average diameter 5.3 nm, lattice fringe 0.21 nm",
+     "instrument": "H-600 transmission electron microscope (Hitachi, Ltd)",
+     "conditions": null,
+     "quote": "the as-prepared N-CDs were nearly orbicular with a very narrow size distribution (3.0–6.8 nm) and an average diameter of 5.3 nm"
+    },
+    {
+     "technique": "XRD",
+     "result": "amorphous graphite structure (Fig. S1)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The XRD pattern (Fig. S1†) showed that the N-CDs exhibited an amorphous graphite structure."
+    },
+    {
+     "technique": "FTIR",
+     "result": "broad band 2800–3480 cm−1 (N–H and –OH), peaks at 1715 and 1635 cm−1 (C=O and C=C), 1440 cm−1 (C–N), 1256 cm−1 (C–O)",
+     "instrument": "Bruker VERTEX 70 FTIR spectrometer (Bruker Daltonics Inc.)",
+     "conditions": null,
+     "quote": "the broad peak range of 2800–3480 cm−1 in the FTIR spectrum of the N-CDs was due to the N–H and –OH stretching vibration"
+    },
+    {
+     "technique": "XPS",
+     "result": "C1s 285.8 eV, N1s 399.8 eV, O1s 534.2 eV; highly N-doped, O-rich N-CDs; three N states (pyridinic 399.4, pyrrolic 400.2, graphitic 401.1 eV)",
+     "instrument": "Kratos AXIS ULTRA DLD X-ray photoelectron spectrometer (Shimadzu Corp.)",
+     "conditions": null,
+     "quote": "Fig. S2b† shows three dominant peaks at 285.8 eV (C1s), 399.8 eV (N1s), and 534.2 eV (O1s), indicating the presence of C, N and O, respectively."
+    },
+    {
+     "technique": "UV-Vis absorption",
+     "result": "absorbance bands at 260 and 340 nm (π–π* of C=C sp2 domains and n–π* of C=O/C–N)",
+     "instrument": "Evolution 300 (Thermo Electron Corp.)",
+     "conditions": null,
+     "quote": "Fig. 4a shows that there were two absorbance bands appearing at 260 and 340 nm"
+    },
+    {
+     "technique": "fluorescence spectroscopy (emission, 3D spectrogram)",
+     "result": "maximum emission at 484 nm under 360 nm excitation; strong emission 355–660 nm for excitation 250–500 nm; excitation-dependent emission",
+     "instrument": "Fluoromax-3 spectrofluorometer (HORIBA JY Inc)",
+     "conditions": "excitation 360 nm for the emission spectra; 3D spectrograms at 0.01, 0.1 and 1 mg mL−1",
+     "quote": "The maximum emission peak was located at 484 nm under excitation at 360 nm"
+    },
+    {
+     "technique": "absolute quantum yield",
+     "result": "23.02%, 38.88% and 10.36% at 0.01, 0.1 and 1 mg mL−1",
+     "instrument": "Fluoromax-3 spectrofluorometer (HORIBA JY Inc) with an integral sphere",
+     "conditions": "N-CD aqueous solutions of 0.01, 0.1 and 1 mg mL−1",
+     "quote": "The absolute QY was measured using an integral sphere."
+    },
+    {
+     "technique": "fluorescence lifetime (TCSPC)",
+     "result": "average lifetime 3.31 ns (N-CDs) and 3.39 ns (N-CD/Cr(vi))",
+     "instrument": "Fluoromax-3 spectrofluorometer (HORIBA JY Inc)",
+     "conditions": "excitation 360 nm, probed at 484 nm",
+     "quote": "The average lifetimes of the N-CDs in the absence and presence of Cr(vi) excited at 360 nm and probed at 484 nm were calculated to be 3.31 ns and 3.39 ns, respectively."
+    },
+    {
+     "technique": "fluorescence microscopy",
+     "result": "cyan, green and red emission of mung bean sprouts incubated with N-CDs",
+     "instrument": "OLYMPUS BX51 fluorescence microscope (Olympus Corp.)",
+     "conditions": "excitation UV (405 nm), blue (488 nm) and green (546 nm) light",
+     "quote": "The bean sprout produced cyan, green and red emission under the excitation of UV (405 nm), blue (488 nm) and green (546 nm) light, respectively."
+    }
+   ],
+   "outcomes": [
+    {"property": "average_diameter", "value_num": 5.3, "unit": "nm", "quote": "the as-prepared N-CDs were nearly orbicular with a very narrow size distribution (3.0–6.8 nm) and an average diameter of 5.3 nm"},
+    {"property": "size_distribution", "value_text": "3.0–6.8 nm", "quote": "the as-prepared N-CDs were nearly orbicular with a very narrow size distribution (3.0–6.8 nm) and an average diameter of 5.3 nm"},
+    {"property": "lattice_fringe_spacing", "value_num": 0.21, "unit": "nm", "quote": "the prepared N-CDs exhibit the lattice fringe of 0.21 nm, which is consistent with the (100) facet of graphitic carbon"},
+    {"property": "microwave_reaction_temperature_after_135_s", "value_num": 80, "unit": "°C", "quote": "the reaction temperature slowly increased from room temperature to 80 °C in the first 135 seconds"},
+    {"property": "microwave_reaction_temperature_final", "value_num": 228, "unit": "°C", "quote": "the temperature sharply increased from 80 °C to 228 °C in just 30 seconds and remained almost steady in the final 15 seconds"},
+    {"property": "microwave_reaction_pressure", "value_text": "constant throughout the experiments", "quote": "the pressure of this reaction remained constant throughout the experiments, whereas the temperature changed"},
+    {"property": "atomic_content_C", "value_num": 38.19, "unit": "%", "quote": "The atomic percentage contents were 38.19% for C, 18.68% for N, and 43.13% for O (see inset in Fig. S2b†)."},
+    {"property": "atomic_content_N", "value_num": 18.68, "unit": "%", "quote": "The atomic percentage contents were 38.19% for C, 18.68% for N, and 43.13% for O (see inset in Fig. S2b†)."},
+    {"property": "atomic_content_O", "value_num": 43.13, "unit": "%", "quote": "The atomic percentage contents were 38.19% for C, 18.68% for N, and 43.13% for O (see inset in Fig. S2b†)."},
+    {"property": "emission_maximum_excitation_360nm", "value_num": 484, "unit": "nm", "quote": "The maximum emission peak was located at 484 nm under excitation at 360 nm"},
+    {"property": "absolute_QY_at_0.01_mg_mL", "value_num": 23.02, "unit": "%", "quote": "The absolute QY values for 0.01, 0.1 and 1 mg mL−1 were calculated to be 23.02%, 38.88%, 10.36%, respectively."},
+    {"property": "absolute_QY_at_0.1_mg_mL", "value_num": 38.88, "unit": "%", "quote": "The absolute QY values for 0.01, 0.1 and 1 mg mL−1 were calculated to be 23.02%, 38.88%, 10.36%, respectively."},
+    {"property": "absolute_QY_at_1_mg_mL", "value_num": 10.36, "unit": "%", "quote": "The absolute QY values for 0.01, 0.1 and 1 mg mL−1 were calculated to be 23.02%, 38.88%, 10.36%, respectively."},
+    {"property": "average_fluorescence_lifetime", "value_num": 3.31, "unit": "ns", "quote": "The average lifetimes of the N-CDs in the absence and presence of Cr(vi) excited at 360 nm and probed at 484 nm were calculated to be 3.31 ns and 3.39 ns, respectively."},
+    {"property": "fluorescence_retention_after_1_h_UV", "value_num": 90, "unit": "%", "quote": "the fluorescence intensity could be retained up to 90% after one hour of UV irradiation"},
+    {"property": "pH_stability_range", "value_text": "relatively stable between pH 3.0 and 8.0", "quote": "the N-CDs were relatively stable when the pH varied between 3.0 and 8.0"},
+    {"property": "fluorescence_vs_NaCl_0_to_1_M", "value_text": "no obvious fluctuation", "quote": "no obvious fluctuation was observed in the fluorescence intensity when the NaCl concentration was increased from 0 to 1 M (Fig. S4c†)"},
+    {"property": "Cr(VI)_detection_limit", "value_num": 0.12, "unit": "μM", "quote": "the limit of detection (LOD) was 0.12 μM based on 3σ/s"},
+    {"property": "Cr(VI)_linear_range", "value_text": "1–100 μM", "quote": "The linear interval was 1–100 μM with an R2 of 0.9965"},
+    {"property": "F0_minus_F_Cr(VI)_50uM", "value_num": 14000, "unit": "a.u.", "from_figure": "Fig. 5", "quote": "Fluorescence intensity changes of the N-CDs for various metal ions in water. The concentrations of all the metal ions were 50 μM."},
+    {"property": "F0_minus_F_Ag+_50uM", "value_num": 3600, "unit": "a.u.", "from_figure": "Fig. 5", "quote": "Fluorescence intensity changes of the N-CDs for various metal ions in water. The concentrations of all the metal ions were 50 μM."},
+    {"property": "F0_minus_F_Cu2+_50uM", "value_num": 3200, "unit": "a.u.", "from_figure": "Fig. 5", "quote": "Fluorescence intensity changes of the N-CDs for various metal ions in water. The concentrations of all the metal ions were 50 μM."},
+    {"property": "F0_minus_F_Fe3+_50uM", "value_num": 3200, "unit": "a.u.", "from_figure": "Fig. 5", "quote": "Fluorescence intensity changes of the N-CDs for various metal ions in water. The concentrations of all the metal ions were 50 μM."},
+    {"property": "fluorescence_recovery_with_AA_600uM", "value_num": 98.9, "unit": "%", "quote": "the recovery of the emission of N-CD/Cr(vi) could reach 98.9% when the concentration of AA was at 600 μM"},
+    {"property": "AA_detection_limit", "value_num": 2.72, "unit": "μM", "quote": "the recovery efficiency could linearly fit the SV equation (R2 = 0.9946, LOD = 2.72 μM)"},
+    {"property": "fluorescence_after_4_Cr(VI)_AA_cycles", "value_num": 96, "unit": "%", "quote": "the fluorescence intensity of the N-CD solution could remain up to 96% when the N-CD solution was quenched by Cr(vi) and recovered by AA for four cycles"},
+    {"property": "river_water_recovery_5uM_added", "value_num": 102.6, "unit": "%", "quote": "2 | Not detected | 5 | 5.13 | 102.6 | 1.21"},
+    {"property": "river_water_recovery_50uM_added", "value_num": 99.4, "unit": "%", "quote": "3 | Not detected | 50 | 49.68 | 99.4 | 1.67"},
+    {"property": "river_water_recovery_100uM_added", "value_num": 98.2, "unit": "%", "quote": "4 | Not detected | 100 | 98.18 | 98.2 | 2.54"}
+   ],
+   "missing_fields": ["freeze_drying_conditions", "dialysis_medium", "microwave_set_temperature", "reaction_atmosphere"]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des points de carbone dopés à l'azote (N-CDs) à partir d'anhydride maléique et d'urée solides, broyés puis chauffés trois minutes dans un four à micro-ondes domestique modifié, sans aucun solvant. Après dissolution dans l'eau, centrifugation, filtration et dialyse, les auteurs obtiennent des nanoparticules d'environ 5 nm, avec un rendement de 58,5 % et un rendement quantique de 38,88 %. Ils montrent ensuite que ces points servent de sonde fluorescente « off–on » pour le chrome(VI), puis l'acide ascorbique, y compris dans l'eau de rivière et dans des germes de haricot mungo.",
+   "quote": "In this study, we developed a novel method to prepare multifunctional N-doped CDs (N-CDs) just by MA and urea solids via a one-step microwave treatment (Fig. 1)."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent un procédé vert, rapide et sans solvant pour fabriquer des points de carbone fluorescents à bas coût, puis savoir si ces points détectent sélectivement le Cr(VI) à une concentration inférieure à la limite de l'EPA américaine (1,9 μM)."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Une seule synthèse est décrite : les auteurs ne balaient aucun paramètre de préparation (ni durée, ni puissance, ni rapport des précurseurs). La seule variable étudiée est la concentration de la solution de N-CDs pour la mesure du rendement quantique (0,01, 0,1 et 1 mg mL−1), afin de choisir la concentration de travail de 0,1 mg mL−1. Les autres séries portent sur l'usage du matériau fini : sélectivité vis-à-vis de quinze ions métalliques, gamme de Cr(VI), restauration par l'acide ascorbique, eau de rivière dopée."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "N-CDs",
+   "text": "Le rendement quantique n'est pas monotone avec la concentration : il passe de 23,02 % à 0,01 mg mL−1 à 38,88 % à 0,1 mg mL−1, puis chute à 10,36 % à 1 mg mL−1, ce que les auteurs rattachent à la réabsorption de l'émission aux fortes concentrations.",
+   "quote": "The absolute QY values for 0.01, 0.1 and 1 mg mL−1 were calculated to be 23.02%, 38.88%, 10.36%, respectively. Therefore, 0.1 mg mL−1 was the optimal concentration of N-CDs."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "N-CDs",
+   "text": "Les auteurs concluent que la voie solide sous micro-ondes donne en trois minutes, sans solvant, des N-CDs à haut rendement, hautement fluorescents, qui détectent le Cr(VI) de 1 à 100 μM (limite de détection 0,12 μM) par effet de filtre interne, et dont la fluorescence est restaurée par l'acide ascorbique.",
+   "quote": "Herein, a novel solvent-free, solid-state and microwave-assisted approach was developed to synthesize fluorescent N-CDs with a high yield (58.5%) using MA and urea as precursors."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "N-CDs",
+   "text": "Les auteurs ne décrivent pas de mécanisme de formation des points. Ils avancent seulement que l'anhydride maléique, polaire et de bas point de fusion, absorbe les micro-ondes et fond facilement, ce qui permet de faire réagir les solides sans solvant. Ils proposent une structure moléculaire probable des N-CDs (Fig. 3d) à partir de la FTIR et de la XPS.",
+   "quote": "Maleic anhydride (MA), a polar reagent with a low melting point of 52.8 °C, can absorb microwave radiations and easily melt."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "N-CDs",
+   "text": "Hypothèse de chimiste : 1,18 g d'anhydride maléique (≈ 12 mmol) et 1,08 g d'urée (≈ 18 mmol) sont dans un rapport molaire d'environ 2:3. L'anhydride fond vers 53 °C et absorbe les micro-ondes, ce qui dissout l'urée dans un milieu fondu. Vers 130–150 °C, l'urée se décompose probablement en ammoniac et acide isocyanique, qui ouvrent l'anhydride en maléamide et maléimide ; la montée brutale de température vers 228 °C (Fig. 2a) correspondrait à la polycondensation et à la carbonisation exothermiques de ces espèces, donnant un noyau graphitique désordonné décoré de groupes amide, pyridine et carboxyle, d'où la teneur élevée en azote (≈ 19 % atomique) et en oxygène. La dialyse à 1000 Da retire probablement les petites molécules et les oligomères non carbonisés."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "N-CDs",
+   "text": "L'anhydride maléique est corrosif et sensibilisant (peau, voies respiratoires) et libère de l'acide maléique avec l'eau. La décomposition de l'urée dégage de l'ammoniac et de l'acide isocyanique, et la carbonisation produit des vapeurs irritantes : l'irradiation doit se faire sous hotte, dans un four dédié, car l'article utilise un four domestique modifié et un bécher ouvert chauffé jusqu'à environ 228 °C (brûlures, projections, arc éventuel). Le chauffage micro-ondes d'un solide sans contrôle de la température d'arrêt est difficile à reproduire en sécurité. Le dichromate de potassium utilisé dans les essais de détection est du Cr(VI) toxique, cancérogène et polluant : ses solutions et les déchets de détection doivent être traités à part. Les nanoparticules de carbone sèches (poudre lyophilisée) sont à manipuler avec masque."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs",
+   "text": "Pour refaire la synthèse il manque : la température de consigne (seule une montée mesurée jusqu'à environ 228 °C est donnée par un capteur), la fréquence du four, le volume du bécher, l'atmosphère (a priori l'air), la durée de broyage, la température et le temps de lyophilisation, le milieu et le volume de dialyse (et le nombre de renouvellements), le matériau de la membrane de 0,22 μm et la base du rendement de 58,5 % (masse des précurseurs ou de carbone). Les puissances effectives d'un four domestique varient, ce qui rend le profil de température de la Fig. 2a difficile à reproduire.",
+   "quote": "The oven was equipped with a sensor to determine the change in pressure and temperature per five seconds."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Annexe absente du dépôt : les figures S1 à S4 (XRD, FTIR et XPS générales, spectres 3D et normalisés, stabilité à la lumière UV, au pH et à la force ionique) ne sont présentes que par leurs légendes dans le fichier texte ; les valeurs de ces courbes ne sont donc connues que par les phrases du corps de l'article. Le tableau 1 renvoie à des références (colonne « Ref. » vide dans le texte) sur les sondes de la littérature, sans protocole. Les résultats du bioimagerie (Fig. 8) sont des images qualitatives non quantifiées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N-CDs",
+   "text": "Les valeurs F0–F de la sélectivité (Fig. 5) ont été lues sur la figure avec une précision de 2 chiffres significatifs au plus (Cr(VI) ≈ 1,4 × 10^4 ; Ag+ ≈ 3,6 × 10^3 ; Cu2+ et Fe3+ ≈ 3,2 × 10^3, unités arbitraires) : ces lectures sont approximatives et dépendent de l'appareil.",
+   "quote": "Fluorescence intensity changes of the N-CDs for various metal ions in water."
+  }
+ ],
+ "method_sources": [],
+ "doubts": [
+  {
+   "where": "N-CDs étape 2, température",
+   "issue": "L'article ne donne aucune température de consigne : la température de 80 °C puis 228 °C est une valeur mesurée par un capteur (Fig. 2a) et figure en résultat (microwave_reaction_temperature_final), pas comme paramètre de l'étape. La case temperature de l'étape 2 est donc déclarée non citée. Autre lecture possible : 228 °C comme température de réaction."
+  },
+  {
+   "where": "N-CDs étape 2, durée",
+   "issue": "La durée est écrite « three minutes » (sans chiffre) dans la phrase de méthode ; elle est en value_text. La Fig. 2a montre ≈ 3 min de relevé de température, ce qui concorde."
+  },
+  {
+   "where": "N-CDs, voie unique",
+   "issue": "Les essais de détection du Cr(VI), la restauration à l'acide ascorbique, l'eau de rivière et la bioimagerie sont des tests du matériau fini : rangés en résultats de la voie N-CDs et dans l'inventaire sans voie, jamais en branches. Aucune variation de synthèse n'existe dans l'article, donc aucune branche."
+  },
+  {
+   "where": "N-CDs, résultats Fig. 5",
+   "issue": "Valeurs F0–F de la sélectivité lues sur la Fig. 5 (Cr(VI) ≈ 14000, Ag+ ≈ 3600, Cu2+ ≈ 3200, Fe3+ ≈ 3200, unités arbitraires) avec une lecture à 2 chiffres significatifs ; les autres ions sont quasi nuls ou négligeables et non relevés. Les Fig. 2 et 5 ont été ouvertes ; la Fig. 2a n'apporte rien de plus que le texte, qui donne déjà les valeurs de la synthèse."
+  },
+  {
+   "where": "N-CDs, pureté des réactifs",
+   "issue": "La phrase « All the chemical agents were of analytical grade » vaut pour tous les produits chimiques de l'étude, donc aussi pour l'anhydride maléique et l'urée ; elle est citée en supplier_quote avec la phrase d'achat chez Aladdin (le texte du paragraphe entre les deux est repris tel quel). L'eau déionisée n'a ni pureté ni fournisseur cité."
+  },
+  {
+   "where": "Concentration de la solution de N-CDs",
+   "issue": "La section « Detection of heavy metal ions » donne une solution mère de 1,0 mg mL−1 et la section bioimagerie « 0,1 g mL−1 » (soit 100 mg mL−1) alors que la Fig. 8 indique 0,1 mg mL−1 ; contradiction interne probable (unité). Aucune valeur de bioimagerie n'est extraite, la contradiction est signalée seulement."
+  }
+ ]
+}
