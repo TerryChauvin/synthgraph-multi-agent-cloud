@@ -113,24 +113,20 @@
      "role": "precursor",
      "amount": 1.6,
      "unit": "g",
-     "not_stated": [
-      "purity"
-     ],
      "supplier": "Tianjin Guangfu Fine Chemical Research Institute",
-     "supplier_quote": "Phthalic acid was purchased from Tianjin Guangfu Fine Chemical Research Institute (Tianjin, China).",
-     "quote": "Phthalic acid (1.6 g) was dissolved in 20 mL of mixed solvent of formamide and glycerol with a volume ratio of 1:1."
+     "supplier_quote": "Phthalic acid was purchased from Tianjin Guangfu Fine Chemical Research Institute (Tianjin, China). Formamide was acquired from Tianjin Fengchuan Chemical Reagent Co., Ltd. (Tianjin, China). N, N-Dimethylformamide (DMF) was provided from Tianjin Tianli Chemical Reagent Co., Ltd. (Tianjin, China). Glycerol OE-625 silicone LED encapsulation AB glue was purchased from Dow Corning Co., Ltd. (Tokyo, Japan). All chemicals were commercially available and used without further purification.",
+     "quote": "Phthalic acid (1.6 g) was dissolved in 20 mL of mixed solvent of formamide and glycerol with a volume ratio of 1:1.",
+     "purity": "used without further purification"
     },
     {
      "name": "formamide",
      "formula": "HCONH2",
      "role": "solvent",
      "amount_text": "mixed with glycerol, volume ratio 1:1, in 20 mL of mixed solvent",
-     "not_stated": [
-      "purity"
-     ],
      "supplier": "Tianjin Fengchuan Chemical Reagent Co., Ltd.",
-     "supplier_quote": "Formamide was acquired from Tianjin Fengchuan Chemical Reagent Co., Ltd. (Tianjin, China).",
-     "quote": "Phthalic acid (1.6 g) was dissolved in 20 mL of mixed solvent of formamide and glycerol with a volume ratio of 1:1."
+     "supplier_quote": "Formamide was acquired from Tianjin Fengchuan Chemical Reagent Co., Ltd. (Tianjin, China). N, N-Dimethylformamide (DMF) was provided from Tianjin Tianli Chemical Reagent Co., Ltd. (Tianjin, China). Glycerol OE-625 silicone LED encapsulation AB glue was purchased from Dow Corning Co., Ltd. (Tokyo, Japan). All chemicals were commercially available and used without further purification.",
+     "quote": "Phthalic acid (1.6 g) was dissolved in 20 mL of mixed solvent of formamide and glycerol with a volume ratio of 1:1.",
+     "purity": "used without further purification"
     },
     {
      "name": "glycerol",
@@ -138,10 +134,11 @@
      "role": "solvent",
      "amount_text": "mixed with formamide, volume ratio 1:1, in 20 mL of mixed solvent",
      "not_stated": [
-      "purity",
       "supplier"
      ],
-     "quote": "Phthalic acid (1.6 g) was dissolved in 20 mL of mixed solvent of formamide and glycerol with a volume ratio of 1:1."
+     "quote": "Phthalic acid (1.6 g) was dissolved in 20 mL of mixed solvent of formamide and glycerol with a volume ratio of 1:1.",
+     "supplier_quote": "All chemicals were commercially available and used without further purification.",
+     "purity": "used without further purification"
     }
    ],
    "steps": [
@@ -382,20 +379,23 @@
     {
      "property": "XPS_C_content",
      "value_num": 74.3,
-     "unit": "%",
-     "quote": "the element content of C, N and O in CQDs/PC phosphor is 74.3%, 11.9% and 13.8%, respectively"
+     "unit": "at%",
+     "quote": "the element content of C, N and O in CQDs/PC phosphor is 74.3%, 11.9% and 13.8%, respectively",
+     "from_figure": "Fig. 4a"
     },
     {
      "property": "XPS_N_content",
      "value_num": 11.9,
-     "unit": "%",
-     "quote": "the element content of C, N and O in CQDs/PC phosphor is 74.3%, 11.9% and 13.8%, respectively"
+     "unit": "at%",
+     "quote": "the element content of C, N and O in CQDs/PC phosphor is 74.3%, 11.9% and 13.8%, respectively",
+     "from_figure": "Fig. 4a"
     },
     {
      "property": "XPS_O_content",
      "value_num": 13.8,
-     "unit": "%",
-     "quote": "the element content of C, N and O in CQDs/PC phosphor is 74.3%, 11.9% and 13.8%, respectively"
+     "unit": "at%",
+     "quote": "the element content of C, N and O in CQDs/PC phosphor is 74.3%, 11.9% and 13.8%, respectively",
+     "from_figure": "Fig. 4a"
     },
     {
      "property": "residual_weight_after_10h_at_393K_in_air",
@@ -410,6 +410,83 @@
      "unit": "%",
      "from_figure": "Fig. 7b",
      "quote": "(b) Residual weight of CQDs/PC phosphor after keeping at 393 and 423 K with different times in air."
+    },
+    {
+     "property": "fluorescence_decay_tau1",
+     "value_num": 2.42,
+     "unit": "ns",
+     "from_figure": "Fig. 6",
+     "quote": "Fluorescence decay profile of CQDs/PC."
+    },
+    {
+     "property": "fluorescence_decay_tau2",
+     "value_num": 6.79,
+     "unit": "ns",
+     "from_figure": "Fig. 6",
+     "quote": "Fluorescence decay profile of CQDs/PC."
+    },
+    {
+     "property": "tau2_proportion_alpha2",
+     "value_num": 24.15,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Fluorescence decay profile of CQDs/PC."
+    },
+    {
+     "property": "residual_weight_after_1h_at_393K_in_air",
+     "value_num": 100,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "quote": "(b) Residual weight of CQDs/PC phosphor after keeping at 393 and 423 K with different times in air."
+    },
+    {
+     "property": "residual_weight_after_2h_at_393K_in_air",
+     "value_num": 99,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "quote": "(b) Residual weight of CQDs/PC phosphor after keeping at 393 and 423 K with different times in air."
+    },
+    {
+     "property": "residual_weight_after_4h_at_393K_in_air",
+     "value_num": 99,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "quote": "(b) Residual weight of CQDs/PC phosphor after keeping at 393 and 423 K with different times in air."
+    },
+    {
+     "property": "residual_weight_after_6h_at_393K_in_air",
+     "value_num": 99,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "quote": "(b) Residual weight of CQDs/PC phosphor after keeping at 393 and 423 K with different times in air."
+    },
+    {
+     "property": "residual_weight_after_1h_at_423K_in_air",
+     "value_num": 98,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "quote": "(b) Residual weight of CQDs/PC phosphor after keeping at 393 and 423 K with different times in air."
+    },
+    {
+     "property": "residual_weight_after_2h_at_423K_in_air",
+     "value_num": 95,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "quote": "(b) Residual weight of CQDs/PC phosphor after keeping at 393 and 423 K with different times in air."
+    },
+    {
+     "property": "residual_weight_after_4h_at_423K_in_air",
+     "value_num": 93,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "quote": "(b) Residual weight of CQDs/PC phosphor after keeping at 393 and 423 K with different times in air."
+    },
+    {
+     "property": "residual_weight_after_6h_at_423K_in_air",
+     "value_num": 91,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "quote": "(b) Residual weight of CQDs/PC phosphor after keeping at 393 and 423 K with different times in air."
     }
    ],
    "missing_fields": [
@@ -417,7 +494,6 @@
     "drying conditions",
     "heating rate",
     "yield",
-    "purity of reagents",
     "supplier of glycerol"
    ]
   },
@@ -450,6 +526,12 @@
      "from_figure": "Fig. 5c",
      "quote": "photographs of the CQDs/PC phosphors prepared at different reaction times (2, 4, 6, 8 and 10 h) under day light (above) and 365 nm UV light (below) and their quantum yields (QY)"
     }
+   ],
+   "not_stated": [
+    "dissolution",
+    "filtration",
+    "drying",
+    "grinding"
    ]
   },
   {
@@ -481,6 +563,12 @@
      "from_figure": "Fig. 5c",
      "quote": "photographs of the CQDs/PC phosphors prepared at different reaction times (2, 4, 6, 8 and 10 h) under day light (above) and 365 nm UV light (below) and their quantum yields (QY)"
     }
+   ],
+   "not_stated": [
+    "dissolution",
+    "filtration",
+    "drying",
+    "grinding"
    ]
   },
   {
@@ -512,6 +600,12 @@
      "from_figure": "Fig. 5c",
      "quote": "photographs of the CQDs/PC phosphors prepared at different reaction times (2, 4, 6, 8 and 10 h) under day light (above) and 365 nm UV light (below) and their quantum yields (QY)"
     }
+   ],
+   "not_stated": [
+    "dissolution",
+    "filtration",
+    "drying",
+    "grinding"
    ]
   },
   {
@@ -543,6 +637,12 @@
      "from_figure": "Fig. 5c",
      "quote": "photographs of the CQDs/PC phosphors prepared at different reaction times (2, 4, 6, 8 and 10 h) under day light (above) and 365 nm UV light (below) and their quantum yields (QY)"
     }
+   ],
+   "not_stated": [
+    "dissolution",
+    "filtration",
+    "drying",
+    "grinding"
    ]
   },
   {
@@ -580,12 +680,10 @@
      "role": "binder",
      "amount": 0.2,
      "unit": "mL",
-     "not_stated": [
-      "purity"
-     ],
      "supplier": "Dow Corning Co., Ltd.",
-     "supplier_quote": "Glycerol OE-625 silicone LED encapsulation AB glue was purchased from Dow Corning Co., Ltd. (Tokyo, Japan).",
-     "quote": "CQDs/PC phosphor (50 mg) was mixed evenly with 0.2 mL of A-gel, and then 0.2 mL of B-gel was added (the volume ratio of A to B is 1:1)."
+     "supplier_quote": "Glycerol OE-625 silicone LED encapsulation AB glue was purchased from Dow Corning Co., Ltd. (Tokyo, Japan). All chemicals were commercially available and used without further purification.",
+     "quote": "CQDs/PC phosphor (50 mg) was mixed evenly with 0.2 mL of A-gel, and then 0.2 mL of B-gel was added (the volume ratio of A to B is 1:1).",
+     "purity": "used without further purification"
     },
     {
      "name": "B-gel of Glycerol OE-625 silicone LED encapsulation AB glue",
@@ -593,12 +691,10 @@
      "role": "binder",
      "amount": 0.2,
      "unit": "mL",
-     "not_stated": [
-      "purity"
-     ],
      "supplier": "Dow Corning Co., Ltd.",
-     "supplier_quote": "Glycerol OE-625 silicone LED encapsulation AB glue was purchased from Dow Corning Co., Ltd. (Tokyo, Japan).",
-     "quote": "CQDs/PC phosphor (50 mg) was mixed evenly with 0.2 mL of A-gel, and then 0.2 mL of B-gel was added (the volume ratio of A to B is 1:1)."
+     "supplier_quote": "Glycerol OE-625 silicone LED encapsulation AB glue was purchased from Dow Corning Co., Ltd. (Tokyo, Japan). All chemicals were commercially available and used without further purification.",
+     "quote": "CQDs/PC phosphor (50 mg) was mixed evenly with 0.2 mL of A-gel, and then 0.2 mL of B-gel was added (the volume ratio of A to B is 1:1).",
+     "purity": "used without further purification"
     },
     {
      "name": "blue LED chip (460 nm)",
@@ -768,7 +864,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "CQDs_PC_4h",
-   "text": "Le séchage (température, durée, atmosphère) et le broyage ne sont pas décrits ; aucun lavage du solide filtré n'est décrit et le rendement n'est pas donné. La pureté des réactifs, le fournisseur du glycérol, la vitesse de chauffe et le remplissage de l'autoclave sont absents. Les durées de 2, 6, 8 et 10 h sont données sans protocole propre : on suppose, sans que l'article l'écrive, le même protocole qu'à 4 h."
+   "text": "Le séchage (température, durée, atmosphère) et le broyage ne sont pas décrits ; aucun lavage du solide filtré n'est décrit et le rendement n'est pas donné. Aucun grade de pureté n'est écrit : l'article dit seulement que les produits ont été utilisés « without further purification ». Le fournisseur du glycérol, la vitesse de chauffe et le remplissage de l'autoclave sont absents. Les durées de 2, 6, 8 et 10 h sont données sans protocole propre : on suppose, sans que l'article l'écrive, le même protocole qu'à 4 h (dissolution, filtration, séchage et broyage déclarés non cités pour ces branches)."
   },
   {
    "type": "limite_reproductibilite",
@@ -784,24 +880,60 @@
   {
    "type": "mecanisme_analyse",
    "route": "CQDs_PC_4h",
-   "text": "Hypothèse : à 453 K, l'acide phtalique se déshydrate probablement en anhydride phtalique, qui réagit avec l'ammoniac ou l'amide issus du formamide pour donner le phtalimide ; le glycérol, solvant polaire à haut point d'ébullition, permet probablement d'atteindre cette température sans pression excessive et favorise la sursaturation puis la cristallisation du phtalimide au refroidissement. Le déclin du rendement quantique aux longues durées pourrait venir d'une carbonisation ou d'une dégradation trop poussée des CQDs, mais l'article ne le démontre pas."
+   "text": "Hypothèse de la critique scientifique, non démontrée par l'article : à 453 K, le formamide (26 équivalents) se décompose en partie en NH3 + CO et transamide l'acide phtalique, qui se déshydrate et cyclise en phtalimide ; celui-ci sursature et cristallise en aiguilles, surtout au refroidissement. En parallèle, l'acide phtalique s'estérifie partiellement avec le glycérol (oligomères de type glyptal) et les produits de condensation du formamide, azotés et conjugués, pourraient se carboniser en petits domaines. L'émission à trois pics fixes serait alors celle d'un émetteur conjugué, moléculaire ou formé de petits domaines carbonisés, piégé dans les cristaux de phtalimide. La condensation des carboxyles de surface des précurseurs sur le N–H imide, proposée par les auteurs, n'est appuyée par aucune mesure. Le déclin du rendement quantique aux longues durées pourrait venir d'une carbonisation ou d'une dégradation trop poussée de l'émetteur, mais l'article ne le démontre pas."
   },
   {
    "type": "securite_analyse",
    "route": "CQDs_PC_4h",
-   "text": "Le formamide est toxique pour la reproduction (tératogène suspecté) et irritant : gants, hotte. Chauffer à 453 K dans un autoclave fermé génère une pression interne ; l'autoclave de 40 mL contient 20 mL de liquide, donc il faut le laisser refroidir complètement avant de l'ouvrir. Le formamide peut se décomposer à chaud en ammoniac et monoxyde de carbone ; la poudre fine de CQDs/PC ne doit pas être inhalée. Le DMF utilisé pour dissoudre le composite est lui aussi toxique."
+   "text": "Le formamide est classé toxique pour la reproduction de catégorie 1B (H360FD, peut nuire à la fertilité ou au fœtus) et cancérogène suspecté de catégorie 2 (fiche de sécurité Carl Roth) : gants, hotte, pas de manipulation pendant la grossesse. Il commence à se décomposer vers 180 °C (soit 453 K, la température de l'essai) en monoxyde de carbone et ammoniac (PubChem, CID 713) : si l'azote du phtalimide vient de cette décomposition, il se forme au moins autant de CO que de phtalimide, soit un ordre de grandeur de 18 bar de CO dans les 20 mL de ciel de l'autoclave de 40 mL (calcul de la critique scientifique, gaz parfait). Laisser l'autoclave refroidir complètement et l'ouvrir sous hotte (CO et NH3 toxiques, non mentionnés par l'article). La poudre fine de CQDs/PC ne doit pas être inhalée ; le DMF utilisé pour la dissoudre est lui aussi toxique."
   },
   {
    "type": "securite_analyse",
    "route": "WLED_CQDs_PC",
    "text": "La colle silicone AB doit être manipulée selon sa fiche de sécurité ; la LED bleue en fonctionnement émet une lumière intense, il ne faut pas la regarder directement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WLED_CQDs_PC",
+   "text": "Le luminophore de la LED est écrit « CQDs/PC phosphor » sans durée de synthèse : son rattachement à la voie CQDs_PC_4h est une inférence du dépôt, non une information de l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_PC_4h",
+   "text": "L'échantillon de l'essai de stabilité thermique (Fig. 7b, 393 et 423 K, 1 à 10 h) n'est pas identifié par l'article (durée de synthèse non écrite) ; son rangement dans la voie de 4 h est une convention du dépôt. Les valeurs de la Fig. 7b sont des lectures graphiques (± 1 à 2 points). La perte de 13 % après 10 h à 423 K sous air, contre moins de 3 % avant 473 K en TG sous rampe, est très probablement la sublimation du phtalimide (cristaux obtenus par sublimation, enthalpie de sublimation 83–104 kJ/mol, NIST WebBook) plutôt qu'une dégradation des points : la bonne stabilité vaut pour 393 K (≈ 2 % en 10 h), pas pour 423 K."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_PC_4h",
+   "text": "Comparaison XPS faussée par les unités (critique scientifique) : les valeurs du phtalimide (C 67,6 ; N 9,9 ; O 22,5 %) sont exactement les pourcentages massiques théoriques de C8H5NO2 hors hydrogène, alors que celles de CQDs/PC (74,3 ; 11,9 ; 13,8 %) sont des pourcentages atomiques de spectre XPS (étiquette « At% » de la Fig. 4a). À unités égales, le carbone ne monte que de 1,6 à 2,1 points, dans l'incertitude d'une quantification de surface ; seules la hausse de N et la baisse de O restent nettes. Le N 1s à 400,2 eV est appelé « graphitique » alors que c'est la position habituelle d'un N pyrrolique ou imide (Artyushkova, J. Vac. Sci. Technol. A 38, 031002, 2020) ; le spectre N 1s du phtalimide pur, mesuré dans les mêmes conditions, manque."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_PC_4h",
+   "text": "Origine de l'émission incohérente dans l'article (critique scientifique) : les trois pics (525, 564, 615 nm) sont attribués à trois états de défaut, puis le déclin biexponentiel à deux centres seulement. Les pics sont espacés de 1 317 et 1 470 cm−1, ce qui évoque une progression vibronique d'un seul émetteur aromatique, et leurs positions ne changent ni avec l'excitation ni avec la durée de synthèse : un fluorophore moléculaire piégé dans le phtalimide est plausible (Essner et al., Chem. Mater. 2018, 10.1021/acs.chemmater.7b04446) et aucun témoin ni spectre d'excitation ou d'absorption ne l'exclut."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_PC_4h",
+   "text": "Le glycérol n'est pas un simple cosolvant : avec l'acide phtalique à 453 K il peut former des esters (polyester de type glyptal, OH/COOH ≈ 21), qui concurrencent le phtalimide et fournissent des précurseurs carbonés. L'article ne donne aucun témoin sans glycérol ni dans le formamide seul pour séparer ces rôles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WLED_CQDs_PC",
+   "text": "Le point de couleur (0,3352 ; 0,3145) est sous le lieu de Planck (Duv ≈ −0,016, lumière blanche rosée, hors de la tolérance usuelle de ± 0,006) : la CCT de 5 340 K décrit mal la couleur. La CCT recalculée depuis les coordonnées CIE (McCamy) est ≈ 5 353 K, ce qui confirme 5 340 K et fait des 5 430 K du résumé une coquille. La colle « Glycerol OE-625 » est probablement la silicone bicomposant Dow Corning OE-6250 (cuisson 80 °C pendant 1 h selon le fabricant), sans rapport avec le glycérol ; référence et cuisson ne sont pas écrites par l'article."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Échantillon de référence sans voie (cristaux de phtalimide, origine non donnée) : composition XPS C 67,6 %, N 9,9 %, O 22,5 %, contre C 74,3 %, N 11,9 %, O 13,8 % pour CQDs/PC. Les auteurs en concluent que C et N augmentent à cause des CQDs ; voir la limite de reproductibilité sur les unités.",
+   "quote": "Compared with the element content of C, N and O in phthalimide crystals (67.6%, 9.9%, 22.5%), the content of C and N are increased in CQDs/PC"
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "CQDs_PC_2h, 6h, 8h, 10h",
-   "issue": "L'article dit seulement que les échantillons ont été « prepared at 453 K for different times (2, 4, 6, 8 and 10 h) » sans écrire qu'ils suivent le protocole de 2.2 (filtration, séchage, broyage). Lecture retenue : branches de CQDs_PC_4h avec la seule durée changée ; l'autre lecture est un protocole non décrit."
+   "issue": "L'article dit seulement que les échantillons ont été « prepared at 453 K for different times (2, 4, 6, 8 and 10 h) » sans écrire qu'ils suivent le protocole de 2.2 (filtration, séchage, broyage). Lecture retenue : branches de CQDs_PC_4h avec la seule durée changée ; l'autre lecture est un protocole non décrit. Les étapes de dissolution, de filtration, de séchage et de broyage sont donc déclarées non citées (not_stated) pour ces quatre branches."
   },
   {
    "where": "Résumé contre Résultats",
@@ -813,7 +945,7 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Fig. 5c : rendements quantiques lus sur les étiquettes de la figure (2 h 17,0 ; 6 h 16,9 ; 8 h 15,2 ; 10 h 2,3 %), lecture exacte. Fig. 7b : masse résiduelle après 10 h lue graphiquement (393 K environ 98 % ; 423 K environ 87 %), précision de l'ordre de 1 à 2 %."
+   "issue": "Fig. 5c : rendements quantiques lus sur les étiquettes de la figure (2 h 17,0 ; 6 h 16,9 ; 8 h 15,2 ; 10 h 2,3 %), lecture exacte. Fig. 7b : masse résiduelle après 10 h lue graphiquement (393 K environ 98 % ; 423 K environ 87 %), précision de l'ordre de 1 à 2 %. Fig. 4a : unité « At% » lue sur le tableau de la figure. Fig. 6 : τ1, τ2 et α2 lus sur les étiquettes (lecture exacte). Fig. 7b : séries à 393 et 423 K aux temps 1, 2, 4 et 6 h lues graphiquement, précision de 1 à 2 points."
   },
   {
    "where": "Essai de stabilité thermique (Fig. 7b)",
