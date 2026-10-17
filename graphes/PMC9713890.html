@@ -1,0 +1,79 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9713890</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9713890 — Facile Synthesis of Fe-Doped Hydroxyapatite Nanoparticles from Waste Coal Ash: Fabrication of a Portable Sensor for the Sensitive and Selective Colorimetric Detection of Hydrogen Sulfide.</h1>
+<h2>Voie : FeHA_coal_ash</h2>
+<pre class="mermaid">flowchart LR
+  R12221([&quot;coal ash&lt;br/&gt;1 g&quot;]):::reactif
+  R12221 --&gt;|&quot;precursor&quot;| S14414
+  R12222([&quot;water (dispersion of the coal ash)&lt;br/&gt;3 mL&quot;]):::reactif
+  R12222 --&gt;|&quot;solvent&quot;| S14414
+  R12223([&quot;hydrochloric acid&lt;br/&gt;3 mL&quot;]):::reactif
+  R12223 --&gt;|&quot;acid&quot;| S14414
+  R12224([&quot;monosodium phosphate solution (NaH2PO4, 0.5 …&lt;br/&gt;20 mL&quot;]):::reactif
+  R12224 --&gt;|&quot;precipitating_agent&quot;| S14414
+  R12225([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12225 --&gt;|&quot;wash&quot;| S14414
+  S14414[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S14414 --&gt; S14415
+  S14415[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S14415 --&gt; S14416
+  S14416[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S14416 --&gt; S14417
+  S14417[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S14417 --&gt; S14418
+  S14418[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;concentration : 0.5 M&lt;br/&gt;ph : 10&lt;br/&gt;addition_rate : slowly&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S14418 --&gt; S14419
+  S14419[&quot;&lt;b&gt;6. stir&lt;/b&gt;&lt;br/&gt;duration : 15 min&lt;br/&gt;stirring_speed : vigorous&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S14419 --&gt; S14420
+  S14420[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S14420 --&gt; S14421
+  S14421[&quot;&lt;b&gt;8. dry&lt;/b&gt;&quot;]:::etape
+  S14421 --&gt; M
+  M{{&quot;iron-substituted hydroxyapatite nanoparticles (Fe…&lt;br/&gt;&quot;}}:::materiau
+  O58437[&quot;phase : hexagonal P63/m hydroxyapatit…&quot;]:::resultat
+  M -.-&gt; O58437
+  O58438[&quot;secondary_phases : no metallic iron or iron oxid…&quot;]:::resultat
+  M -.-&gt; O58438
+  O58439[&quot;morphology : spherical&quot;]:::resultat
+  M -.-&gt; O58439
+  O58440[&quot;average_particle_size : 20 nm&quot;]:::resultat
+  M -.-&gt; O58440
+  O58441[&quot;Fe_Ca_atomic_ratio : 0.57&quot;]:::resultat
+  M -.-&gt; O58441
+  O58442[&quot;Fe_oxidation_state : +3&quot;]:::resultat
+  M -.-&gt; O58442
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : FeHA_test_strip</h2>
+<pre class="mermaid">flowchart LR
+  R12226([&quot;Fe-HA NPs (route FeHA_coal_ash), stock solut…&lt;br/&gt;3 mM&quot;]):::reactif
+  R12226 --&gt;|&quot;intermediate&quot;| S14422
+  R12227([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12227 --&gt;|&quot;solvent&quot;| S14422
+  R12228([&quot;filter paper&lt;br/&gt;one sheet cut into 2 × 1 piec…&quot;]):::reactif
+  R12228 --&gt;|&quot;substrate&quot;| S14422
+  S14422[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;concentration : 3 mM&quot;]:::etape
+  S14422 --&gt; S14423
+  S14423[&quot;&lt;b&gt;2. cut&lt;/b&gt;&quot;]:::etape
+  S14423 --&gt; S14424
+  S14424[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S14424 --&gt; S14425
+  S14425[&quot;&lt;b&gt;4. dry&lt;/b&gt;&quot;]:::etape
+  S14425 --&gt; M
+  M{{&quot;Fe-HA nanoparticle-coated filter paper test strip&lt;br/&gt;&quot;}}:::materiau
+  O58443[&quot;color_change_on_H2S : yellow to green&quot;]:::resultat
+  M -.-&gt; O58443
+  O58444[&quot;linear_range : 0.5 ppm to 130 ppm&quot;]:::resultat
+  M -.-&gt; O58444
+  O58445[&quot;limit_of_detection : 70 ppb&quot;]:::resultat
+  M -.-&gt; O58445
+  O58446[&quot;selectivity : no effect of interferents at …&quot;]:::resultat
+  M -.-&gt; O58446
+  O58447[&quot;recovery_range_real_water : recovery 97–103.5 %, RSD 0.9–…&quot;]:::resultat
+  M -.-&gt; O58447
+  O58448[&quot;pH_of_maximum_response : 8 pH&quot;]:::resultat
+  M -.-&gt; O58448
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

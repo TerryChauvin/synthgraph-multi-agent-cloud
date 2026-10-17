@@ -202,11 +202,15 @@
        "name": "addition_rate",
        "quote": "Here, 20 mL of NaH2PO4 solution (0.5 M, pH = 10) was slowly added to the leachate taken to precipitate out the cations.",
        "value_text": "slowly"
+      },
+      {
+       "name": "temperature",
+       "quote": "Iron-substituted HA was synthesized by a facile method at room temperature.",
+       "value_text": "room temperature"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "volume_of_leachate"
      ]
     },
@@ -226,12 +230,14 @@
        "name": "stirring_speed",
        "quote": "After vigorous stirring for 15 min, the mixture was washed with deionized water several times.",
        "value_text": "vigorous"
+      },
+      {
+       "name": "temperature",
+       "quote": "Iron-substituted HA was synthesized by a facile method at room temperature.",
+       "value_text": "room temperature"
       }
      ],
-     "equipment": [],
-     "not_stated": [
-      "temperature"
-     ]
+     "equipment": []
     },
     {
      "order": 7,
@@ -302,10 +308,17 @@
     },
     {
      "technique": "FTIR",
-     "result": "adsorbed water, OH-, phosphate bands (524, 676, 1060, 1134, 3550 cm–1)",
+     "result": "adsorbed water (broad peak 3250 to 3450), phosphate bands (524, 676, 1060, 1134 cm–1)",
      "instrument": "SPECTROD 250-Analytik Jena spectrophotometer (Germany)",
      "conditions": null,
      "quote": "A broad peak between 3250 and 3450 illustrated the presence of adsorbed water molecules in the Fe-HA."
+    },
+    {
+     "technique": "FTIR",
+     "result": "OH– bending (υ1) at 663 cm–1 and stretching (υs) at 3550 cm–1",
+     "instrument": "SPECTROD 250-Analytik Jena spectrophotometer (Germany)",
+     "conditions": null,
+     "quote": "The bands at 663 and 3550 cm–1 referred to the bending (υ1) and stretching (υs) vibrational modes of the OH– group, respectively."
     }
    ],
    "outcomes": [
@@ -618,6 +631,12 @@
      "from_figure": "Fig. 4A"
     },
     {
+     "property": "colour_intensity_at_0.5_ppm_H2S",
+     "quote": "Figure 4 (A) Colorimetric response of the sensor to various concentrations of H2S analyzed by the smartphone: (a) 0.5, (b) 15, (c) 40, (d) 70, (e) 100, and (f) 130 (ppm).",
+     "value_num": 43,
+     "from_figure": "Fig. 4A"
+    },
+    {
      "property": "colour_intensity_at_15_ppm_H2S",
      "quote": "Figure 4 (A) Colorimetric response of the sensor to various concentrations of H2S analyzed by the smartphone: (a) 0.5, (b) 15, (c) 40, (d) 70, (e) 100, and (f) 130 (ppm).",
      "value_num": 57,
@@ -654,9 +673,51 @@
      "from_figure": "Fig. 4B"
     },
     {
-     "property": "delta_intensity_interferents_1_to_8",
+     "property": "delta_intensity_interferent_1_Na2S2O3",
      "quote": "(B) Selectivity of the proposed sensor toward different interferences including (1) Na2S2O3, (2) GSH, (3) l-cysteine, (4) N-cysteine, (5) Na2S2O8, (6) Na2SO4, (7) NaSCN, (8) methionine, and (9) H2S and (C) the effect of pH water toward Fe-doped HA response.",
-     "value_text": "about 2 to 5",
+     "value_num": 3,
+     "from_figure": "Fig. 4B"
+    },
+    {
+     "property": "delta_intensity_interferent_2_GSH",
+     "quote": "(B) Selectivity of the proposed sensor toward different interferences including (1) Na2S2O3, (2) GSH, (3) l-cysteine, (4) N-cysteine, (5) Na2S2O8, (6) Na2SO4, (7) NaSCN, (8) methionine, and (9) H2S and (C) the effect of pH water toward Fe-doped HA response.",
+     "value_num": 5,
+     "from_figure": "Fig. 4B"
+    },
+    {
+     "property": "delta_intensity_interferent_3_L-cysteine",
+     "quote": "(B) Selectivity of the proposed sensor toward different interferences including (1) Na2S2O3, (2) GSH, (3) l-cysteine, (4) N-cysteine, (5) Na2S2O8, (6) Na2SO4, (7) NaSCN, (8) methionine, and (9) H2S and (C) the effect of pH water toward Fe-doped HA response.",
+     "value_num": 4,
+     "from_figure": "Fig. 4B"
+    },
+    {
+     "property": "delta_intensity_interferent_4_N-cysteine",
+     "quote": "(B) Selectivity of the proposed sensor toward different interferences including (1) Na2S2O3, (2) GSH, (3) l-cysteine, (4) N-cysteine, (5) Na2S2O8, (6) Na2SO4, (7) NaSCN, (8) methionine, and (9) H2S and (C) the effect of pH water toward Fe-doped HA response.",
+     "value_num": 2,
+     "from_figure": "Fig. 4B"
+    },
+    {
+     "property": "delta_intensity_interferent_5_Na2S2O8",
+     "quote": "(B) Selectivity of the proposed sensor toward different interferences including (1) Na2S2O3, (2) GSH, (3) l-cysteine, (4) N-cysteine, (5) Na2S2O8, (6) Na2SO4, (7) NaSCN, (8) methionine, and (9) H2S and (C) the effect of pH water toward Fe-doped HA response.",
+     "value_num": 5,
+     "from_figure": "Fig. 4B"
+    },
+    {
+     "property": "delta_intensity_interferent_6_Na2SO4",
+     "quote": "(B) Selectivity of the proposed sensor toward different interferences including (1) Na2S2O3, (2) GSH, (3) l-cysteine, (4) N-cysteine, (5) Na2S2O8, (6) Na2SO4, (7) NaSCN, (8) methionine, and (9) H2S and (C) the effect of pH water toward Fe-doped HA response.",
+     "value_num": 2,
+     "from_figure": "Fig. 4B"
+    },
+    {
+     "property": "delta_intensity_interferent_7_NaSCN",
+     "quote": "(B) Selectivity of the proposed sensor toward different interferences including (1) Na2S2O3, (2) GSH, (3) l-cysteine, (4) N-cysteine, (5) Na2S2O8, (6) Na2SO4, (7) NaSCN, (8) methionine, and (9) H2S and (C) the effect of pH water toward Fe-doped HA response.",
+     "value_num": 4,
+     "from_figure": "Fig. 4B"
+    },
+    {
+     "property": "delta_intensity_interferent_8_methionine",
+     "quote": "(B) Selectivity of the proposed sensor toward different interferences including (1) Na2S2O3, (2) GSH, (3) l-cysteine, (4) N-cysteine, (5) Na2S2O8, (6) Na2SO4, (7) NaSCN, (8) methionine, and (9) H2S and (C) the effect of pH water toward Fe-doped HA response.",
+     "value_num": 3,
      "from_figure": "Fig. 4B"
     },
     {
@@ -706,7 +767,8 @@
     "strip_dimensions_unit",
     "immersion_time",
     "drying_conditions",
-    "Na2S_drop_volume"
+    "Na2S_drop_volume",
+    "H2S_concentration_selectivity_test"
    ]
   }
  ],
@@ -736,7 +798,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "FeHA_coal_ash",
-   "text": "Hypothèse de chimiste : HCl dissout Ca2+ et Fe3+ de la cendre ; l'ajout du phosphate à pH 10 fait probablement précipiter l'hydroxyapatite (10 Ca2+ + 6 PO4 3– + 2 OH– → Ca10(PO4)6(OH)2), le fer étant soit substitué au calcium, soit coprécipité en phosphate ou hydroxyde de fer(III) amorphe, ce que la DRX (pics larges, sans phase de fer identifiée) ne permet pas de trancher. Le rapport Fe/Ca atomique de 0,57 est bien plus élevé que celui d'un simple dopage, ce qui rend plausible une phase riche en fer mal cristallisée. Le pH final du mélange n'est pas donné ; l'acidité du lixiviat modifie probablement le pH 10 de départ."
+   "text": "Hypothèse de chimiste : HCl dissout Ca2+, Fe3+ et probablement Al3+ de la cendre ; l'ajout de phosphate fait précipiter un phosphate de calcium de type apatite, mais le pH du mélange final n'est pas donné et peut être acide (voir limite de reproductibilité sur le pH). Le produit serait plus vraisemblablement une apatite nanocristalline mêlée de phosphates de fer(III) et d'aluminium amorphes qu'une hydroxyapatite substituée au fer : Fe/Ca = 0,57 (36 % de fer parmi les cations) est très au-dessus de la limite de substitution de Fe3+ dans HA, et la DRX ne tranche pas (pics larges, fond amorphe). Pour la détection, hypothèse du critique : réduction de Fe3+ par HS– puis précipitation de sulfure de fer(II), plutôt que l'échange PO4 3–/S2– proposé par les auteurs (S2– est négligeable en solution, pK2 de H2S ≈ 17)."
   },
   {
    "type": "tendance_observee",
@@ -753,13 +815,38 @@
    "type": "securite_analyse",
    "route": null,
    "text": "HCl concentré est corrosif (hotte, gants, lunettes). Les cendres de charbon peuvent contenir des métaux toxiques (As, Pb, Cr…) et de la silice cristalline : éviter l'inhalation de la poudre et traiter le lixiviat comme déchet chimique. Na2S libère du H2S, gaz très toxique, au contact d'un acide ou d'un milieu acide ; les solutions de 0,5 à 130 ppm sont à manipuler sous hotte et à pH non acide. Les nanoparticules sèches (≈ 20 nm) sont à manipuler avec protection respiratoire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "FeHA_coal_ash",
+   "text": "Le « pH 10 » est celui de la solution de phosphate ajoutée, pas celui du milieu de précipitation : à pH 10 cette solution est surtout HPO4 2– (≈ Na2HPO4) et ses 10 mmol neutralisent environ 10 à 20 mmol d'acide, alors que 3 mL de HCl concentré en apportent environ 36 mmol (concentration non donnée). Le mélange final est probablement acide, domaine où l'hydroxyapatite ne précipite pas (Sadat-Shojai et al., Acta Biomater. 2013, DOI 10.1016/j.actbio.2013.04.012) ; le pH final n'est pas donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "FeHA_coal_ash",
+   "text": "Le phosphate est en large excès sur le calcium lixivié : P/Ca entre 1,9 et 28 selon la teneur en CaO supposée de la cendre (fourchettes de Ahmaruzzaman, Prog. Energy Combust. Sci. 2010, DOI 10.1016/j.pecs.2009.11.003), contre 0,60 pour HA ; la composition de la cendre n'étant pas donnée, la stœchiométrie n'est pas vérifiable et le produit dépend du lot."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "FeHA_coal_ash",
+   "text": "Fe/Ca = 0,57 correspond à 36 % de fer parmi les cations, plus d'un ordre de grandeur au-dessus de la limite de substitution de Fe3+ dans HA (Fe/Ca < 0,02, étude de l'Université Florida Atlantic sur Ca5–xFex(PO4)3OH, notice sans DOI) : le fer est probablement dans une phase amorphe, et « HA dopée au fer » n'est pas démontré. Le spectre EDS de la Fig. 1C ne soutient pas ce rapport : il est dominé par un pic non étiqueté vers 1,5 keV (Al Kα d'après une lecture en pixels), le pic du phosphore n'est pas étiqueté et le pic du fer est invisible."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "FeHA_coal_ash",
+   "text": "XPS : Fe 2p3/2 à 707 eV est la position du fer métallique (706,7 eV) et non de Fe3+ (Fe2O3 à 710,8 eV ; Thermo Fisher d'après Biesinger et al., Appl. Surf. Sci. 2011) ; sur la figure, les pics de la matrice sont environ 2 eV au-dessus des valeurs du texte (O 1s ≈ 533 contre 531 eV, Ca 2p ≈ 349/352 contre 348 eV) et le référencement de charge n'est pas décrit ; l'écart 720,6 – 707 vaut 13,6 eV et non 13,5 eV."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "FeHA_test_strip",
+   "text": "Une limite de détection de 70 ppb n'est pas compatible avec la pente d'étalonnage de 0,84 unité d'intensité par ppm : 70 ppb donnent 0,059 unité, très en dessous du pas de 1 unité d'une lecture de couleur par smartphone. Même défaut pour la borne de 0,5 ppm (0,42 unité) et pour la résolution de 0,05 ppm du tableau 2 (0,04 unité) ; une moyenne sur une zone de l'image n'est pas décrite."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "FeHA_coal_ash, température",
-   "issue": "Le texte dit « synthesized by a facile method at room temperature » mais la lixiviation est faite à 60 °C pendant 1 h. Les 60 °C sont extraits pour l'étape 3 (valeur de l'étape) ; la précipitation et le lavage ne portent aucune température (déclarée non citée)."
+   "issue": "Le texte dit « synthesized by a facile method at room temperature » mais la lixiviation est faite à 60 °C pendant 1 h. Les 60 °C sont extraits pour l'étape 3 ; « room temperature » est repris en value_text pour la précipitation et l'agitation (étapes 5 et 6) d'après cette phrase générale, sans autre indication des auteurs pour ces étapes ; lavage et séchage restent sans température citée."
   },
   {
    "where": "FeHA_coal_ash étape 5",
@@ -771,7 +858,7 @@
   },
   {
    "where": "FeHA_coal_ash, XPS",
-   "issue": "Le texte donne Fe 2p3/2 à 707 eV et Fe 2p1/2 à 720,6 eV avec un écart de 13,5 eV (l'écart des deux valeurs est 13,6) ; la figure 2D montre des pics vers 708 et 721 eV. Valeurs du texte conservées sans les corriger, point de plausibilité à examiner (Fe3+ est d'ordinaire vers 711 eV)."
+   "issue": "Le texte donne Fe 2p3/2 à 707 eV et Fe 2p1/2 à 720,6 eV avec un écart de 13,5 eV (l'écart des deux valeurs est 13,6) ; la figure 2D montre des pics vers 708 et 721 eV. Valeurs du texte conservées sans les corriger, point de plausibilité à examiner (Fe3+ est d'ordinaire vers 711 eV). Autres écarts texte/figure (Fig. 2) : O 1s à 531 eV dans le texte contre environ 533 eV sur la figure, Ca 2p à 348 eV dans le texte contre environ 349 et 352 eV sur la figure ; valeurs du texte conservées, référencement de charge non décrit."
   },
   {
    "where": "FeHA_coal_ash, DRX",
@@ -783,11 +870,15 @@
   },
   {
    "where": "FeHA_test_strip, figures 4A, 4B, 4C",
-   "issue": "Valeurs lues sur figure (précision de lecture ± 2 à 3 unités d'intensité, 2 chiffres significatifs) : 4A intensité à 15, 40, 70, 100 et 130 ppm ; 4B ΔI de H2S et plage des interférents ; 4C ΔI de pH 4 à 10. La légende de 4A cite six concentrations (a à f) mais la figure porte sept points dont deux près de 0 ppm : ces deux points (≈ 38 et 43) ne sont pas extraits faute de pouvoir les attribuer sûrement (blanc et 0,5 ppm probables)."
+   "issue": "Valeurs lues sur figure (précision de lecture ± 2 à 3 unités d'intensité) : 4A intensité à 0,5, 15, 40, 70, 100 et 130 ppm ; 4B ΔI de H2S et de chacun des interférents 1 à 8 (barre par barre) ; 4C ΔI de pH 4 à 10. La figure 4A porte sept points pour six concentrations de la légende : le point le plus bas (≈ 38, blanc) n'est pas extrait faute de concentration citée, le suivant (≈ 43) est attribué à 0,5 ppm par sa position à droite du blanc, attribution probable mais non certaine. La concentration de H2S du test de sélectivité (Fig. 4B) n'est pas donnée."
   },
   {
    "where": "FeHA_test_strip, solution mère",
    "issue": "La solution mère « 3 mM » est donnée sans masse molaire ni composition de Fe-HA ; la quantité de matière active par bandelette n'est donc pas calculable. L'unité mM est placée dans amount de l'intermédiaire."
+  },
+  {
+   "where": "FeHA_coal_ash, EDS (Fig. 1C)",
+   "issue": "Fe/Ca = 0,57 est donné dans le texte, mais le spectre EDS de la Fig. 1C ne montre que des raies de fer à peine visibles et un pic dominant non étiqueté vers 1,5 à 1,7 keV ; le texte est conservé."
   }
  ]
 }
