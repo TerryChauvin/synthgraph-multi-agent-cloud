@@ -554,16 +554,12 @@
        "quote": "AgNO3 (3.14 mg) was added to the above mixture and stirred for 3 hours",
        "value_num": 3,
        "unit": "hours"
-      },
-      {
-       "name": "temperature",
-       "quote": "which only needs to be carried out in room temperature without complicated processes",
-       "value_text": "room temperature"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "stirring_speed"
+      "stirring_speed",
+      "temperature"
      ]
     },
     {
@@ -628,16 +624,12 @@
        "name": "light_exposure",
        "quote": "stirred in the dark for 30 minutes",
        "value_text": "in the dark"
-      },
-      {
-       "name": "temperature",
-       "quote": "which only needs to be carried out in room temperature without complicated processes",
-       "value_text": "room temperature"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "stirring_speed"
+      "stirring_speed",
+      "temperature"
      ]
     },
     {
@@ -698,7 +690,7 @@
      "result": "uniform rhombic dodecahedron with relatively smooth surface; some impurities (agglomerated AgNPs or ZIF-67 by-product)",
      "instrument": "Tescan Mira-3 (Czechia)",
      "conditions": null,
-     "quote": "we conducted scanning electron microscopy (SEM) and high-resolution transmission electron microscopy (HRTEM) using Tescan Mira-3 (Czechia) and FEI Talos (USA), respectively"
+     "quote": "As shown in Fig. 1a and b, Ag/ZIF-8@ZIF-67 was a uniform rhombic dodecahedron with relatively smooth surface. Ag/ZIF-8@ZIF-67 has an average particle size of 450 nm (Fig. 1a), with a specific surface area of 425.26 m2 g−1 (Fig. S2†), and the size of decorated AgNPs was determined to be approximately 15 nm (Fig. 1c). Several impurities were observed in the SEM images, some of which were formed due to the agglomeration of AgNPs, while others may be formed in the synthesis process for ZIF-67 particles."
     },
     {
      "technique": "HRTEM",
@@ -716,17 +708,17 @@
     },
     {
      "technique": "XPS",
-     "result": "Zn2+, Co2+ and zero-valent Ag present; Ag 2.89%",
+     "result": "Zn2+, Co2+ and zero-valent Ag present; Ag 2.89%; binding energies Zn2p3/2 1021.8 eV, Zn2p1/2 1044.8 eV, Co2p3/2 781.3 eV, Co2p1/2 797.2 eV, Ag3d5/2 368.3 eV, Ag3d3/2 374.3 eV",
      "instrument": "Axis Ultra DLD Kratos AXIS SUPRA instrument (USA)",
      "conditions": null,
-     "quote": "We determined the chemical state of Ag/ZIF-8@ZIF-67 using X-ray photoelectron spectroscopy (XPS) with an Axis Ultra DLD Kratos AXIS SUPRA instrument (USA)."
+     "quote": "In Fig. 2d, the two symmetric peaks were observed at 1021.8 and 1044.8 eV, corresponding to the binding energies of the Zn2p3/2 and Zn2p1/2 spin orbitals, respectively. This observation confirmed the presence of Zn2+ in the materials. Then, Fig. 2e displayed two peaks with binding energies of 781.3 eV and 797.2 eV, which corresponded to the Co2p3/2 and Co2p1/2 spin orbitals, respectively, thus indicating the presence of the Co2+ in the material. The peaks at binding energies of 368.3 eV and 374.3 eV, shown in Fig. 2f, corresponded to the Ag3d5/2 and Ag3d3/2 spin orbitals, respectively."
     },
     {
      "technique": "BET",
      "result": "specific surface area 425.26 m2 g−1",
      "instrument": null,
      "conditions": null,
-     "quote": "The specific surface area of Ag/ZIF-8@ZIF-67 was estimated by Barrett–Emmett–Teller (BET) theory."
+     "quote": "Ag/ZIF-8@ZIF-67 has an average particle size of 450 nm (Fig. 1a), with a specific surface area of 425.26 m2 g−1 (Fig. S2†)"
     }
    ],
    "outcomes": [
@@ -784,6 +776,42 @@
      "property": "morphology",
      "value_text": "uniform rhombic dodecahedron with relatively smooth surface",
      "quote": "Ag/ZIF-8@ZIF-67 was a uniform rhombic dodecahedron with relatively smooth surface."
+    },
+    {
+     "property": "XPS_Zn2p3/2_binding_energy",
+     "value_num": 1021.8,
+     "unit": "eV",
+     "quote": "In Fig. 2d, the two symmetric peaks were observed at 1021.8 and 1044.8 eV, corresponding to the binding energies of the Zn2p3/2 and Zn2p1/2 spin orbitals, respectively."
+    },
+    {
+     "property": "XPS_Zn2p1/2_binding_energy",
+     "value_num": 1044.8,
+     "unit": "eV",
+     "quote": "In Fig. 2d, the two symmetric peaks were observed at 1021.8 and 1044.8 eV, corresponding to the binding energies of the Zn2p3/2 and Zn2p1/2 spin orbitals, respectively."
+    },
+    {
+     "property": "XPS_Co2p3/2_binding_energy",
+     "value_num": 781.3,
+     "unit": "eV",
+     "quote": "Fig. 2e displayed two peaks with binding energies of 781.3 eV and 797.2 eV, which corresponded to the Co2p3/2 and Co2p1/2 spin orbitals, respectively"
+    },
+    {
+     "property": "XPS_Co2p1/2_binding_energy",
+     "value_num": 797.2,
+     "unit": "eV",
+     "quote": "Fig. 2e displayed two peaks with binding energies of 781.3 eV and 797.2 eV, which corresponded to the Co2p3/2 and Co2p1/2 spin orbitals, respectively"
+    },
+    {
+     "property": "XPS_Ag3d5/2_binding_energy",
+     "value_num": 368.3,
+     "unit": "eV",
+     "quote": "The peaks at binding energies of 368.3 eV and 374.3 eV, shown in Fig. 2f, corresponded to the Ag3d5/2 and Ag3d3/2 spin orbitals, respectively."
+    },
+    {
+     "property": "XPS_Ag3d3/2_binding_energy",
+     "value_num": 374.3,
+     "unit": "eV",
+     "quote": "The peaks at binding energies of 368.3 eV and 374.3 eV, shown in Fig. 2f, corresponded to the Ag3d5/2 and Ag3d3/2 spin orbitals, respectively."
     }
    ],
    "missing_fields": [
@@ -833,6 +861,12 @@
      "value_text": "lower than that of Ag/ZIF-8@ZIF-67 (no value given)",
      "quote": "the comparatively lower charge transfer resistance and higher specific surface area of Ag/ZIF-8@ZIF-67 in comparison to Ag/ZIF-8 and Ag/ZIF-67"
     }
+   ],
+   "not_stated": [
+    "support_mass",
+    "AgNO3_amount",
+    "n-hexane_volume",
+    "NaBH4_methanol_volume"
    ]
   },
   {
@@ -875,6 +909,12 @@
      "value_text": "lower than that of Ag/ZIF-8@ZIF-67 (no value given)",
      "quote": "the comparatively lower charge transfer resistance and higher specific surface area of Ag/ZIF-8@ZIF-67 in comparison to Ag/ZIF-8 and Ag/ZIF-67"
     }
+   ],
+   "not_stated": [
+    "support_mass",
+    "AgNO3_amount",
+    "n-hexane_volume",
+    "NaBH4_methanol_volume"
    ]
   },
   {
@@ -1064,28 +1104,35 @@
      "result": "reduction peak R at about −0.75 V and reversible couple O1/R1 for 2,6-DCNP; response 1.75, 2.23 and 2.77 times higher than Ag/ZIF-8, Ag/ZIF-67 and bare GCE",
      "instrument": "CHI 660E (Shanghai, China)",
      "conditions": "three-electrode system: glassy carbon working electrode (3 mm diameter), platinum sheet counter electrode, saturated-potassium-chloride silver chloride electrode (SSCE) reference; 20 mg per L 2,6-DCNP",
-     "quote": "Electrochemical measurements were carried out using a three-electrode system consisting of a glassy carbon working electrode (3 mm diameter), a platinum sheet counter electrode, and a saturated-potassium-chloride silver chloride electrode (SSCE) reference electrode."
+     "quote": "The electrochemical response for 2,6-DCNP on Ag/ZIF-8@ZIF-67 electrode was 1.75, 2.23, and 2.77 times higher than Ag/ZIF-8, Ag/ZIF-67, and bare GCE, respectively."
     },
     {
      "technique": "EIS",
      "result": "Rct order Ag/ZIF-67 > Ag/ZIF-8 > Ag/ZIF-8@ZIF-67",
      "instrument": "CHI 660E (Shanghai, China)",
      "conditions": "0.1 mol per L KCl solution containing 5 mmol per L [Fe(CN)6]3−/4− (1 : 1); frequency 0.01 to 100 000 Hz; amplitude 5 mV; Randles equivalent circuit",
-     "quote": "EIS Nyquist plots of the electrodes in 0.1 mol per L KCl solution containing 5 mmol per L [Fe(CN)6]3−/4− (1 : 1) (b); the frequency is from 0.01 to 100 000 Hz and the amplitude is 5 mV"
+     "quote": "As depicted in Fig. 3b, the order of Rct values follows the order of Ag/ZIF-67 > Ag/ZIF-8 > Ag/ZIF-8@ZIF-67, which were in the opposite order of the reduction current signals."
     },
     {
      "technique": "DPV",
      "result": "peak current at E = −0.75 V increasing with 2,6-DCNP concentration (0–288 μmol L−1); linear range 0.24–288 μmol L−1",
      "instrument": "CHI 660E (Shanghai, China)",
      "conditions": "0.1 mol per L PBS (pH = 6)",
-     "quote": "DPV responses of the sensor to different concentration of 2,6-DCNP (0–288 μmol L−1) in 0.1 mol per L PBS (pH = 6)"
+     "quote": "As shown in Fig. 4a, the current peak value at E = −0.75 V increased with the increase in 2,6-DCNP concentration. We plotted the relationship between the current (Ipc, μA) and 2,6-DCNP concentration (C, μmol L−1) in Fig. 4b, of which the linear range was observed at 0.24–288 μmol L−1 (R2 = 0.992)."
     },
     {
      "technique": "DPV (real water samples)",
      "result": "2,6-DCNP not detected in tap and swimming pool water before spiking; recoveries 98.24–101.64%",
      "instrument": null,
      "conditions": "samples filtered through a 0.22 μm membrane, adjusted to pH 6.0 with phosphate-buffered solution, spiked with standard solutions",
-     "quote": "The filtered sample was then adjusted to a pH of 6.0 using phosphate-buffered solution before testing for the initial concentration of 2,6-DCNP using the electrochemical method."
+     "quote": "The DPV response revealed that 2,6-DCNP was not detected in the real water samples in Table S2,† therefore, different amounts of 2,6-DCNP were added into real water samples. The recoveries of 4.8 μmol per L and 48 μmol per L 2,6-DCNP were 98.41% and 101.64% for tap water samples, respectively, which were 98.24% and 100.96% in swimming pool water samples."
+    },
+    {
+     "technique": "DPV (selectivity)",
+     "result": "interferents at 20 mg L−1: Mg2+, Cu2+, Ca2+, phenol, nitrobenzene, p-nitrophenol, 4-chloro-2-nitrophenol, 2,4-dichloro-5-nitrophenol and humus acid; the sensor exhibited a notably greater response to 2,6-DCNP",
+     "instrument": "CHI 660E (Shanghai, China)",
+     "conditions": "interferents at 20 mg L−1; 2,6-DCNP at 20 mg per L (legend of Fig. 5); DPV; raw data in Table S1",
+     "quote": "In this study, the interferents (20 mg L−1) chosen were Mg2+, Cu2+, Ca2+, phenol, nitrobenzene (NB), p-nitrophenol (p-NP), 4-chloro-2-nitrophenol (4-Cl-2-NP), 2,4-dichloro-5-nitrophenol (2,4-DC-5-NP), and humus acid (HA)."
     }
    ],
    "outcomes": [
@@ -1213,6 +1260,54 @@
      "value_num": 100.96,
      "unit": "%",
      "quote": "The recoveries of 4.8 μmol per L and 48 μmol per L 2,6-DCNP were 98.41% and 101.64% for tap water samples, respectively, which were 98.24% and 100.96% in swimming pool water samples."
+    },
+    {
+     "property": "found_concentration_tap_water_added_4.8_umol_per_L",
+     "value_num": 4.72,
+     "unit": "μmol/L",
+     "quote": "Table S2 2,6-DCNP detection in real water sample (n = 3) Sample Added Found Recovery RSD µmol/L µmol/L % %, 0 ND* - - 4.8 4.72 98.41% 4.03% Tap water 48 48.7 101.64% 1.45%"
+    },
+    {
+     "property": "RSD_tap_water_added_4.8_umol_per_L",
+     "value_num": 4.03,
+     "unit": "%",
+     "quote": "Table S2 2,6-DCNP detection in real water sample (n = 3) Sample Added Found Recovery RSD µmol/L µmol/L % %, 0 ND* - - 4.8 4.72 98.41% 4.03% Tap water 48 48.7 101.64% 1.45%"
+    },
+    {
+     "property": "found_concentration_tap_water_added_48_umol_per_L",
+     "value_num": 48.7,
+     "unit": "μmol/L",
+     "quote": "Table S2 2,6-DCNP detection in real water sample (n = 3) Sample Added Found Recovery RSD µmol/L µmol/L % %, 0 ND* - - 4.8 4.72 98.41% 4.03% Tap water 48 48.7 101.64% 1.45%"
+    },
+    {
+     "property": "RSD_tap_water_added_48_umol_per_L",
+     "value_num": 1.45,
+     "unit": "%",
+     "quote": "Table S2 2,6-DCNP detection in real water sample (n = 3) Sample Added Found Recovery RSD µmol/L µmol/L % %, 0 ND* - - 4.8 4.72 98.41% 4.03% Tap water 48 48.7 101.64% 1.45%"
+    },
+    {
+     "property": "found_concentration_swimming_pool_water_added_4.8_umol_per_L",
+     "value_num": 4.72,
+     "unit": "μmol/L",
+     "quote": "0 ND* - - 4.8 4.72 98.24% 2.31% Swimming pool water 48 48.7 100.96% 0.92%"
+    },
+    {
+     "property": "RSD_swimming_pool_water_added_4.8_umol_per_L",
+     "value_num": 2.31,
+     "unit": "%",
+     "quote": "0 ND* - - 4.8 4.72 98.24% 2.31% Swimming pool water 48 48.7 100.96% 0.92%"
+    },
+    {
+     "property": "found_concentration_swimming_pool_water_added_48_umol_per_L",
+     "value_num": 48.7,
+     "unit": "μmol/L",
+     "quote": "0 ND* - - 4.8 4.72 98.24% 2.31% Swimming pool water 48 48.7 100.96% 0.92%"
+    },
+    {
+     "property": "RSD_swimming_pool_water_added_48_umol_per_L",
+     "value_num": 0.92,
+     "unit": "%",
+     "quote": "0 ND* - - 4.8 4.72 98.24% 2.31% Swimming pool water 48 48.7 100.96% 0.92%"
     }
    ],
    "missing_fields": [
@@ -1385,6 +1480,11 @@
      "value_num": 1.75,
      "unit": "fold",
      "quote": "The electrochemical response for 2,6-DCNP on Ag/ZIF-8@ZIF-67 electrode was 1.75, 2.23, and 2.77 times higher than Ag/ZIF-8, Ag/ZIF-67, and bare GCE, respectively."
+    },
+    {
+     "property": "Rct_order_of_the_three_electrodes",
+     "value_text": "Ag/ZIF-67 > Ag/ZIF-8 > Ag/ZIF-8@ZIF-67",
+     "quote": "As depicted in Fig. 3b, the order of Rct values follows the order of Ag/ZIF-67 > Ag/ZIF-8 > Ag/ZIF-8@ZIF-67, which were in the opposite order of the reduction current signals."
     }
    ]
   },
@@ -1426,6 +1526,11 @@
      "value_num": 2.23,
      "unit": "fold",
      "quote": "The electrochemical response for 2,6-DCNP on Ag/ZIF-8@ZIF-67 electrode was 1.75, 2.23, and 2.77 times higher than Ag/ZIF-8, Ag/ZIF-67, and bare GCE, respectively."
+    },
+    {
+     "property": "Rct_order_of_the_three_electrodes",
+     "value_text": "Ag/ZIF-67 > Ag/ZIF-8 > Ag/ZIF-8@ZIF-67",
+     "quote": "As depicted in Fig. 3b, the order of Rct values follows the order of Ag/ZIF-67 > Ag/ZIF-8 > Ag/ZIF-8@ZIF-67, which were in the opposite order of the reduction current signals."
     }
    ]
   }
@@ -1567,6 +1672,15 @@
    "results_in": [
     "Table S2"
    ]
+  },
+  {
+   "sample": "pH series of the detection solution (Fig. S4b)",
+   "defined_in": "Results, The optimization of experimental parameters",
+   "route": null,
+   "why": "valeurs de pH testées non écrites dans l'article (Fig. S4b absente du dépôt) : pas de branche chiffrable ; pH optimal = 6 rangé en outcome",
+   "results_in": [
+    "Fig. S4b"
+   ]
   }
  ],
  "annotations": [
@@ -1630,12 +1744,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZIF-8@ZIF-67",
-   "text": "Hypothèse de chimiste : les germes de ZIF-8 jouent le rôle de support de nucléation hétérogène pour Co2+ et le 2-méthylimidazole (10,0 mmol de Co pour 37,5 mmol de ligand, même rapport 1 : 3,75 que pour ZIF-8), car la faible différence de maille favorise une croissance épitaxiale plutôt qu'une nucléation indépendante de ZIF-67. La quantité de cobalt (≈ 10 mmol) est très supérieure au zinc du germe (≈ 1,1 mmol pour 0,25 g), ce qui laisserait attendre une coquille massive plutôt qu'une couche mince."
+   "text": "Hypothèse de chimiste : les germes de ZIF-8 peuvent servir de support de nucléation hétérogène pour Co2+ et le 2-méthylimidazole (10,0 mmol de Co pour 37,5 mmol de ligand, même rapport 1 : 3,75 que pour ZIF-8), car la faible différence de maille (0,2 %) favorise une croissance épitaxiale. Mais le bain de croissance a les mêmes concentrations (Co 66,7 mmol/L, ligand 250 mmol/L) que le bain qui fait précipiter ZIF-8 seul et contient environ neuf fois plus de cobalt que de zinc de germe (≈ 10 mmol pour ≈ 1,1 mmol), donc une nucléation homogène de ZIF-67 est attendue en parallèle. Le produit est probablement un mélange de particules cœur–coquille à coquille irrégulière et de ZIF-67 isolé, avec un possible échange Zn/Co en surface que l'XPS (Zn/Co ≈ 0,64) suggère ; seule une cartographie Zn/Co particule par particule trancherait (Tang et al., J. Am. Chem. Soc. 2015, 10.1021/ja511539a)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Ag/ZIF-8@ZIF-67",
-   "text": "Hypothèse de chimiste : dans la méthode à deux solvants, un solvant hydrophobe (n-hexane) ne mouille pas les pores hydrophiles du MOF, ce qui devrait concentrer le sel d'argent dans les pores ; AgNO3 solide étant très peu soluble dans l'hexane, il est probable que de l'eau adsorbée dans le MOF ou une trace de solvant polaire joue le rôle du second solvant, mais l'article ne mentionne aucune phase aqueuse. NaBH4 réduit ensuite Ag+ en Ag0 dans le méthanol (Ag+ + BH4− + 3 H2O → Ag0 + H3BO3 + 3,5 H2) avec dégagement d'hydrogène. L'argent introduit (3,14 mg d'AgNO3, soit 0,0185 mmol ou environ 2 mg d'Ag pour 100 mg de support) donne une charge nominale voisine de 2 % en masse."
+   "text": "Hypothèse du critique scientifique : AgNO3, sel ionique, est probablement très peu soluble dans le n-hexane anhydre et reste en cristaux mêlés à la poudre ; il se dissoudrait ensuite dans les 5 mL de méthanol de la solution de NaBH4 (3,14 mg dans 5 mL, soit 0,63 g/L, contre ≈ 35 g/L de solubilité dans le méthanol d'après la fiche Sigma-Aldrich 248762). Ag+ serait alors réduit en solution (Ag+ + BH4− → Ag0 + ½ H2 + BH3, puis méthanolyse du borane, avec dégagement d'hydrogène) et les germes d'argent croîtraient jusqu'à ≈ 15 nm en se fixant sur la surface externe et les défauts du support, une partie s'agglomérant (agrégats vus en MEB). Des particules de 15 nm ne peuvent pas entrer dans les pores de la sodalite (cage de 11,6 Å, fenêtre de 3,4 Å : Park et al., PNAS 2006, 10.1073/pnas.0602439103), et la méthode « à deux solvants » (Aijaz et al., J. Am. Chem. Soc. 2012, 10.1021/ja3043905) suppose une petite quantité de solution aqueuse du sel ajoutée à une suspension dans un alcane, ce que l'article ne décrit pas. La charge nominale en argent est d'environ 2 % en masse (3,14 mg d'AgNO3 ≈ 2 mg d'Ag pour 100 mg de support). Le support est, d'après l'hypothèse sur ZIF-8@ZIF-67, probablement un mélange."
   },
   {
    "type": "securite_analyse",
@@ -1650,7 +1764,7 @@
   {
    "type": "securite_analyse",
    "route": "Ag/ZIF-8@ZIF-67",
-   "text": "NaBH4 réagit avec le méthanol en dégageant de l'hydrogène inflammable : préparer la solution juste avant l'emploi, loin de toute flamme, sans récipient fermé. Le n-hexane est très inflammable et neurotoxique, le nitrate d'argent est oxydant, corrosif et tache la peau ; les rejets d'argent et de cobalt sont à collecter."
+   "text": "NaBH4 réagit avec le méthanol en dégageant de l'hydrogène inflammable : préparer la solution juste avant l'emploi, loin de toute flamme, sans récipient fermé. Le n-hexane est très inflammable et neurotoxique, le méthanol (solution de NaBH4 et lavages) inflammable et toxique, le nitrate d'argent est oxydant, corrosif et tache la peau ; les rejets d'argent et de cobalt sont à collecter."
   },
   {
    "type": "securite_analyse",
@@ -1660,13 +1774,63 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pour refaire les matériaux il manque : la vitesse d'agitation et la température de mélange des synthèses de ZIF-8 et ZIF-8@ZIF-67 (36 h), les vitesses et durées de centrifugation, le rendement de chaque synthèse, la concentration de la solution de NaBH4, sa pureté et son fournisseur, le mode de séparation (« removing the supernatant ») et la nature exacte du second solvant de la méthode « dual solvent » (AgNO3 est ajouté sous forme solide dans le n-hexane). La préparation de ZIF-67 (support de Ag/ZIF-67) et des AgNPs de l'électrode AgNPs/GCE n'est pas décrite, et les quantités des variantes Ag/ZIF-8 et Ag/ZIF-67 ne sont pas données (« Similar steps »). Pour l'électrode, le temps de polissage, la température de l'étuve et les conditions de séchage du film ne sont pas donnés, ni les paramètres du DPV (amplitude, largeur et période d'impulsion, vitesse de balayage)."
+   "text": "Pour refaire les matériaux il manque : la vitesse d'agitation et la température de mélange des synthèses de ZIF-8 et ZIF-8@ZIF-67 (36 h), les vitesses et durées de centrifugation, le rendement de chaque synthèse, la concentration de la solution de NaBH4, sa pureté et son fournisseur, le mode de séparation (« removing the supernatant ») et la nature exacte du second solvant de la méthode « dual solvent » (AgNO3 est ajouté sous forme solide dans le n-hexane). La préparation de ZIF-67 (support de Ag/ZIF-67) et des AgNPs de l'électrode AgNPs/GCE n'est pas décrite, et les quantités des variantes Ag/ZIF-8 et Ag/ZIF-67 ne sont pas données (« Similar steps »). Pour l'électrode, le temps de polissage, la température de l'étuve et les conditions de séchage du film ne sont pas donnés, ni les paramètres du DPV (amplitude, largeur et période d'impulsion, vitesse de balayage). Le méthanol est écrit « C2H5OH » dans la liste des produits et le PVP y est listé sans être utilisé dans aucune étape."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Annexe absente du dépôt : les figures S2 (isothermes N2 et surface BET), S3, S4 (réponse en fonction du volume de suspension et du pH), S5 et S6 (stabilité à 7 jours) ne sont présentes que par leurs légendes ; leurs valeurs ne sont donc pas extraites. La table S1 (données brutes de la sélectivité, courant en fonction du potentiel) est reproduite sous forme d'une colonne de nombres et n'a pas été exploitée. Les chiffres de la table S2 n'apparaissent dans le texte extrait que sous forme éclatée, et seules les récupérations du corps de l'article sont retenues.",
+   "text": "Annexe absente du dépôt : les figures S2 (isothermes N2 et surface BET), S3, S4 (réponse en fonction du volume de suspension et du pH), S5 et S6 (stabilité à 7 jours) ne sont présentes que par leurs légendes ; leurs valeurs ne sont donc pas extraites. La table S1 (données brutes de la sélectivité, courant en fonction du potentiel) est reproduite sous forme d'une colonne de nombres et n'a pas été exploitée. La table S2 (eaux réelles) est lisible dans l'annexe : valeurs trouvées et RSD sont extraites.",
    "quote": "Figure S4 (a) The optimization tests of the amount of Ag/ZIF-8@ZIF-67 on GCE; (b) the pH value of the detection solution."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF-8@ZIF-67",
+   "text": "La structure cœur–coquille n'est pas démontrée : ZIF-8 et ZIF-67 ont des mailles presque identiques (16,9910 et 16,9589 Å, soit 0,2 % d'écart), donc la diffraction ne distingue ni un cœur–coquille, ni un mélange de particules, ni une solution solide Zn/Co, et la cartographie Zn/Co en MET, preuve habituelle (Tang et al., J. Am. Chem. Soc. 2015, 10.1021/ja511539a), n'est pas montrée. De plus l'XPS donne un rapport molaire Zn/Co de 0,635 (12,93 % Zn et 18,36 % Co en masse, lus sur la figure 2b) contre ≈ 0,11 attendu dans le volume si tout le cobalt croît sur les germes, alors qu'une coquille continue d'environ 120 nm masquerait presque tout le zinc : ce résultat est plus compatible avec une coquille incomplète ou des particules séparées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/ZIF-8@ZIF-67",
+   "text": "Les raies à 2θ = 24,4°, 26,6° et 29,6° (indices (233), (134), (044)), que les auteurs attribuent à la structure cœur–coquille, sont des raies ordinaires de la maille sodalite (positions de Bragg calculées avec a = 16,99 Å et Cu Kα1, longueur d'onde que l'article ne donne pas : 24,56°, 26,73° et 29,72°) ; un cœur–coquille de deux phases isostructurales ne peut pas créer de raie nouvelle, et leur absence sur les courbes de ZIF-8 et ZIF-67 tient à l'intensité ou à la cristallinité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/ZIF-8@ZIF-67",
+   "text": "La charge en argent annoncée ne correspond pas à la masse introduite : 3,14 mg d'AgNO3 pour 0,1 g de support donnent ≈ 2 mg d'Ag, soit 1,95 % en masse, et non les « 3 % » écrits ; 3 % correspondraient à 3,14 mg d'argent métal. La comparaison avec les 2,89 % de l'XPS (mesure de surface) ne prouve donc pas l'absence de perte au chargement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/ZIF-8@ZIF-67",
+   "text": "Des nanoparticules d'argent de 15 nm ne peuvent pas être « dans les pores » : la cage de ZIF-8 mesure 11,6 Å et sa fenêtre 3,4 Å (Park et al., PNAS 2006, 10.1073/pnas.0602439103 ; ZIF-67 est isostructural). La méthode dite « à deux solvants » n'en est pas une telle que décrite : aucun solvant hydrophile n'est ajouté, AgNO3 est pratiquement insoluble dans le n-hexane et se dissout dans le méthanol de la solution de NaBH4 (0,63 g/L contre ≈ 35 g/L de solubilité), si bien que la réduction a lieu en solution sans confinement (méthode de référence : Aijaz et al., J. Am. Chem. Soc. 2012, 10.1021/ja3043905)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/ZIF-8@ZIF-67",
+   "text": "La surface BET de 425 m2/g est environ trois fois plus basse que celles de ZIF-8 et ZIF-67 de la base (1325 à 1414 m2/g) ; 2 % d'argent ne l'explique pas, et l'activation (séchage à 50 °C, dégazage non décrit) ou une dégradation par NaBH4 sont possibles. L'argument « grande surface » du support n'est donc pas établi, et la comparaison avec Ag/ZIF-8 et Ag/ZIF-67 (« plus faible », sans chiffre) est invérifiable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/ZIF-8",
+   "text": "Les témoins Ag/ZIF-8 et Ag/ZIF-67 changent le support mais l'article ne donne ni leurs quantités (« Similar steps ») ni leur teneur en argent : l'écart de courant ×1,75 et ×2,23 ne peut pas être attribué à la seule structure cœur–coquille sans teneur en Ag (ICP) ni surface électroactive comparées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/ZIF-8@ZIF-67/GCE",
+   "text": "Table S2 (eaux réelles) : les valeurs trouvées sont identiques pour l'eau du robinet et l'eau de piscine (4,72 et 48,7 μmol/L) alors que les récupérations annoncées diffèrent (98,41 et 101,64 % contre 98,24 et 100,96 %), et elles ne se recalculent pas : 4,72/4,8 = 98,3 % et 48,7/48 = 101,5 %. Les récupérations publiées ne peuvent donc pas être vérifiées à partir des valeurs brutes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/ZIF-8@ZIF-67/GCE",
+   "text": "Le potentiel du pic de dosage n'est pas cohérent d'une section à l'autre : −0,75 V dans le texte (c'est le pic de la CV), ≈ −0,63 V sur la figure 4a, −0,60 V dans la Table S1 (DPV) et −0,53 V d'après l'équation Epc = −0,052 pH − 0,219 à pH 6. Un chimiste doit fixer le potentiel de lecture à partir de son propre DPV."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/ZIF-8@ZIF-67/GCE",
+   "text": "L'écart-type relatif de la réponse sur une même électrode est de 3,14 % dans le texte et de 3,47 % sur la figure 5b ; l'attribution des deux écarts aux deux séries (cinq mesures, cinq électrodes) n'est pas lisible sans ambiguïté sur la figure. Le texte est retenu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/ZIF-8@ZIF-67/GCE",
+   "text": "Réserves sur la performance : à 0,24 μmol/L le signal ne vaut que 0,43 % du fond (−2,27 μA), donc le bas de la gamme linéaire (0,24–288 μmol/L, une seule droite) et la limite de détection de 0,02 μmol/L ne sont pas démontrés ; chaque interférent a été mesuré seul (Table S1) alors que la légende de la figure 5 parle de leur influence sur 2,6-DCNP, et les comparaisons sont faites à masse égale (20 mg/L) et non à mole égale."
   }
  ],
  "method_sources": [
@@ -1699,8 +1863,8 @@
    "issue": "« were dissolved in 100 mL of methanol separately » (et « added separately to 50 mL of methanol ») : lecture retenue, 100 mL (resp. 50 mL) de méthanol pour chacune des deux solutions ; l'autre lecture serait un volume total partagé entre les deux composés. Pour ZIF-8@ZIF-67, la dispersion de ZIF-8 dans 50 mL est un troisième volume de méthanol (« three solutions »)."
   },
   {
-   "where": "Ag/ZIF-8@ZIF-67 étapes 2 à 7 (température, méthode « dual solvent »)",
-   "issue": "L'annexe (Text S1) dit que le chargement en argent se fait à température ambiante (« only needs to be carried out in room temperature »), retenu comme température des étapes d'agitation 3 et 7 ; mais le séchage se fait à 50 °C, et le texte principal affirme qu'aucune opération comme un chauffage ou une sonication n'est requise alors que le support est dispersé 30 min par sonication. La méthode est dite « dual solvent » sans qu'aucun second solvant (phase aqueuse) soit décrit : seul le n-hexane est cité, et AgNO3 est ajouté sans précision de forme."
+   "where": "Ag/ZIF-8@ZIF-67 étapes 3 et 7 (température), méthode « dual solvent »",
+   "issue": "Température des étapes d'agitation 3 et 7 déclarée non citée : la seule mention est une phrase générale de l'annexe (Text S1, « only needs to be carried out in room temperature ») qui ne vise pas ces deux étapes, et le texte principal la contredit (« no additional operations like heating or sonication are required » alors que le support est dispersé 30 min par sonication et séché à 50 °C). La méthode est dite « dual solvent » sans qu'aucun second solvant (phase aqueuse) soit décrit : seul le n-hexane est cité, et AgNO3 est ajouté sans précision de forme."
   },
   {
    "where": "Ag/ZIF-8@ZIF-67, teneur en argent",
@@ -1716,7 +1880,7 @@
   },
   {
    "where": "Eaux réelles (Table S2 de l'annexe)",
-   "issue": "Les récupérations du texte (98,41, 101,64, 98,24 et 100,96 %) sont retenues. Le tableau S2, éclaté en colonnes dans le texte, semble donner les mêmes valeurs trouvées (4,72 et 48,7 μmol/L) pour l'eau du robinet et l'eau de piscine, et 4,72/4,8 donne 98,33 % et non 98,41 % ; non résolu sans l'original."
+   "issue": "La Table S2 est lisible dans l'annexe : valeurs trouvées (4,72 et 48,7 μmol/L) et RSD (4,03, 1,45, 2,31 et 0,92 %) extraits. Les valeurs trouvées sont identiques pour l'eau du robinet et l'eau de piscine alors que les récupérations diffèrent (98,41 et 101,64 % contre 98,24 et 100,96 %) ; 4,72/4,8 donne 98,3 % et 48,7/48 donne 101,5 %. Les valeurs de l'article sont conservées telles quelles."
   },
   {
    "where": "Valeurs lues sur figure",
@@ -1725,6 +1889,10 @@
   {
    "where": "Branches de volume de suspension (4, 8, 9, 10 μL)",
    "issue": "Le texte donne « from 4 to 7 μL » puis « 8, 9, and 10 μL » ; une branche par valeur écrite (4, 8, 9, 10), pas de branche pour 5 et 6 μL non nommés. Les valeurs de la réponse sont dans Fig. S4a, absente du dépôt ; les branches portent seulement le sens de la variation. Le pH de solution est traité comme condition de mesure (outcome), pas comme branche, car ses valeurs testées ne sont pas écrites."
+  },
+  {
+   "where": "Série de pH de la solution de mesure (Fig. S4b)",
+   "issue": "Les auteurs ont balayé le pH mais n'écrivent pas les valeurs testées (seulement l'optimum 6 et la droite Epc = −0,052 pH − 0,219) : pas de branche, échantillon ajouté à l'inventaire sans voie."
   }
  ]
 }
