@@ -269,7 +269,7 @@
     },
     {
      "technique": "XPS",
-     "result": "C1s peaks at 284.56, 286.04 and 288.13 eV; Mo4+ main state, residual Mo6+; S2p of MoS2 and SO32−",
+     "result": "C1s peaks at 284.56, 286.04 and 288.13 eV",
      "instrument": "Theta Probe AR-XPS system (Thermo Fisher Scientific)",
      "conditions": null,
      "quote": "The C1s spectra for MS/CN could be deconvoluted into three peaks corresponding to strong one at 284.56 eV, and two weak peaks at 286.04 eV and 288.13 eV"
@@ -280,6 +280,62 @@
      "instrument": "Flash EA 1112 analyzer (Thermo Fisher Scientific)",
      "conditions": null,
      "quote": "elemental analysis for C and N elements in CN and MS/CN was conducted, which shows atomic C/N ratios for CN and MS/CN to be 0.72 and 0.81, respectively"
+    },
+    {
+     "technique": "XPS (Mo 3d)",
+     "result": "Mo 3d3/2 at 231.88 eV and Mo 3d5/2 at 228.65 eV, main existence state Mo4+",
+     "instrument": "Theta Probe AR-XPS system (Thermo Fisher Scientific)",
+     "conditions": null,
+     "quote": "The two high intensity peaks located in the middle region could be ascribed to the Mo3d3/2 (231.88 eV) and Mo3d5/2 (228.65 eV) demonstrating the main existence state of Mo4+"
+    },
+    {
+     "technique": "XPS (Mo 3d, Mo6+)",
+     "result": "low and broad peak at around 234.79 eV, residual Mo6+ not reduced",
+     "instrument": "Theta Probe AR-XPS system (Thermo Fisher Scientific)",
+     "conditions": null,
+     "quote": "The low and broaden peak located at around 234.79 eV corresponding to the residual Mo6+ which is still not reduced."
+    },
+    {
+     "technique": "XPS (S 2p)",
+     "result": "S 2p peaks at 162.69 and 161.46 eV (S2p1/2 and S2p3/2 of MoS2); peak at 168.39 eV attributed to S4+ in SO32− groups",
+     "instrument": "Theta Probe AR-XPS system (Thermo Fisher Scientific)",
+     "conditions": null,
+     "quote": "The peak at 168.39 eV can be attributed to S4+ species in SO32− groups, while the two main peaks 162.69 and 161.46 eV may be indexed as S2p1/2 and S2p3/2 of MoS2, respectively"
+    },
+    {
+     "technique": "CV (first cycle)",
+     "result": "first cathodic sweep: shoulder around 1.0 V and intensive peak at 0.5 V (irreversible); first anodic sweep: broad peak at 1.6 V and peak at 2.2 V",
+     "instrument": null,
+     "conditions": "0.5 mV·s−1, 0.1–3.0 V vs. Li/Li+, Li metal as counter and reference electrodes",
+     "quote": "In the first cathodic sweep process, a shoulder around 1.0 V and an intensive peak at 0.5 V are attributed to the formation of Mo and Li2S from the intercalation of Li+ into MoS2 in two irreversible steps (Equations (1) and (2))."
+    },
+    {
+     "technique": "CV (first anodic sweep)",
+     "result": "broad peak at 1.6 V (oxidation of Mo0) and considerable peak at 2.2 V (oxidation of Li2S)",
+     "instrument": null,
+     "conditions": "0.5 mV·s−1, 0.1–3.0 V vs. Li/Li+, Li metal as counter and reference electrodes",
+     "quote": "For the first anodic sweep, two reversible peaks, the broad peak at 1.6 V corresponding to the oxidation of Mo0 into higher states (i.e., Mo4+, Equation (3)) and a considerable peak at 2.2 V relating to the oxidation of Li2S (Equation (4)), are observed."
+    },
+    {
+     "technique": "CV (after first cycle)",
+     "result": "new cathodic peaks at 1.9 V and 1.1 V with anodic peaks at 2.2 V and 1.6 V",
+     "instrument": null,
+     "conditions": "0.5 mV·s−1, 0.1–3.0 V vs. Li/Li+, Li metal as counter and reference electrodes",
+     "quote": "After the first cycle, new cathodic peaks at 1.9 V and 1.1 V combining with anodic peaks at 2.2 V and 1.6 V, respectively, are assigned to two pairs of reversible redox reactions of molybdenum sulfide (Equation (3)) and sulfur (Equation (4))."
+    },
+    {
+     "technique": "charge/discharge profile (first-cycle discharge)",
+     "result": "two plateaus: slightly defined at ~1.0 V and clear at 0.5 V (text says 'for each' of MS and MS/CN)",
+     "instrument": "NAGANO BTS-2004H (Nagano Keiki Co. Ltd.)",
+     "conditions": "0.1–3.0 V, 50 mA·g−1 for the first cycle and 1000 mA·g−1 for the next cycles",
+     "quote": "For each, two plateaus, a slightly defined one at ~1.0 V and a clear one at 0.5 V, were observed from the discharge curve of the first cycle, probably due to the formation of LixMoS2 (Equation (1)) and Mo + 2Li2S (Equation (2)), respectively."
+    },
+    {
+     "technique": "charge/discharge profile (charge)",
+     "result": "one significant plateau at 2.2 V and a weak one at ~1.6 V (text says 'for each' of MS and MS/CN)",
+     "instrument": "NAGANO BTS-2004H (Nagano Keiki Co. Ltd.)",
+     "conditions": "0.1–3.0 V, 50 mA·g−1 for the first cycle and 1000 mA·g−1 for the next cycles",
+     "quote": "For the charge curves, one significant plateau at 2.2 V and a weak one at ~1.6 V were observed, which may correspond to oxidation of Li2S (Equation (4)) and the oxidation of Mo0 into higher states (Equation (3))."
     }
    ],
    "outcomes": [
@@ -361,6 +417,11 @@
      "property": "b_value_at_1.9_V",
      "value_num": 0.55,
      "quote": "The calculated data shown in Figure 6b indicate that the b-value at a potential of 1.9 V is 0.55"
+    },
+    {
+     "property": "b_value_other_potentials",
+     "value_text": "in the range of 0.8 to 1.0",
+     "quote": "Meanwhile, at higher or lower values, b-values are in the range of 0.8 to 1.0, illustrating the dominant contribution of the capacitive effect"
     },
     {
      "property": "pseudocapacitive_contribution_0.5_mV_s-1",
@@ -483,7 +544,7 @@
    "parent": "MS/CN",
    "kind": "material",
    "material": {
-    "name": "MoS2 without g-C3N4 support",
+    "name": "MoS2 calcined at 600 °C for 2 h to remove g-C3N4 (MS)",
     "formula": "MoS2",
     "family": "chalcogenure",
     "phase": "hexagonal MoS2",
@@ -530,6 +591,27 @@
      "instrument": "SEM (JSM-600F, JEOL)",
      "conditions": null,
      "quote": "Figure 2b presents spherical particles with diameters of ~500 nm aggregating together for the MS sample."
+    },
+    {
+     "technique": "charge/discharge profile (first-cycle discharge)",
+     "result": "two plateaus: slightly defined at ~1.0 V and clear at 0.5 V (text says 'for each' of MS and MS/CN)",
+     "instrument": "NAGANO BTS-2004H (Nagano Keiki Co. Ltd.)",
+     "conditions": "0.1–3.0 V, 50 mA·g−1 for the first cycle and 1000 mA·g−1 for the next cycles",
+     "quote": "For each, two plateaus, a slightly defined one at ~1.0 V and a clear one at 0.5 V, were observed from the discharge curve of the first cycle, probably due to the formation of LixMoS2 (Equation (1)) and Mo + 2Li2S (Equation (2)), respectively."
+    },
+    {
+     "technique": "charge/discharge profile (charge)",
+     "result": "one significant plateau at 2.2 V and a weak one at ~1.6 V (text says 'for each' of MS and MS/CN)",
+     "instrument": "NAGANO BTS-2004H (Nagano Keiki Co. Ltd.)",
+     "conditions": "0.1–3.0 V, 50 mA·g−1 for the first cycle and 1000 mA·g−1 for the next cycles",
+     "quote": "For the charge curves, one significant plateau at 2.2 V and a weak one at ~1.6 V were observed, which may correspond to oxidation of Li2S (Equation (4)) and the oxidation of Mo0 into higher states (Equation (3))."
+    },
+    {
+     "technique": "IR",
+     "result": "weak peak at 1524 cm−1, probably organic residue from the preparation",
+     "instrument": "IR Prestige-21 spectrophotometer (Shimadzu)",
+     "conditions": null,
+     "quote": "For MS, the weak peak at 1524 cm−1 is probably organic residue from the preparation."
     }
    ],
    "outcomes": [
@@ -998,8 +1080,7 @@
    "yield": null,
    "succeeded": true,
    "not_stated": [
-    "yield",
-    "cell_type"
+    "yield"
    ],
    "reagents": [
     {
@@ -1117,7 +1198,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare un composite MoS2/g-C3N4 (MS/CN) en une seule étape : un mélange broyé de molybdate de sodium dihydraté et de thiourée (rapport massique 1:3) est calciné à 550 °C pendant 1 h sous flux d'azote, puis lavé à l'eau et à l'éthanol. La thiourée fournit à la fois le soufre pour MoS2 et, par polycondensation, le g-C3N4. Deux témoins sont préparés par la même voie : MoS2 seul (MS, 600 °C pendant 2 h) et g-C3N4 seul (CN, thiourée seule). Le composite est testé comme anode de batterie Li-ion (capacité réversible de 1204 mA·h·g−1 après 200 cycles à 1 C contre 326 pour MS).",
+   "text": "L'article prépare un composite MoS2/g-C3N4 (MS/CN) en une seule étape : un mélange broyé de molybdate de sodium dihydraté et de thiourée (rapport massique 1:3) est calciné à 550 °C pendant 1 h sous flux d'azote, puis lavé à l'eau et à l'éthanol. La thiourée fournit à la fois le soufre pour MoS2 et, par polycondensation, le g-C3N4. Deux témoins sont préparés : MS (même mélange, calciné à 600 °C pendant 2 h « pour éliminer le g-C3N4 », sans que l'article montre que l'élimination soit complète) et CN (g-C3N4 obtenu à partir de la thiourée seule). Le composite est testé comme anode de batterie Li-ion (capacité réversible de 1204 mA·h·g−1 après 200 cycles à 1 C contre 326 pour MS).",
    "quote": "The structure and composition of MoS2/g-C3N4 were confirmed by X-ray diffraction, scanning electron microscopy, transmission electron microscopy, infrared spectroscopy, X-ray photoelectron spectroscopy, thermogravimetric analysis and elemental analysis."
   },
   {
@@ -1129,13 +1210,13 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Aucun paramètre de synthèse n'est balayé. Les auteurs comparent trois matériaux : le composite (MS/CN), MoS2 seul (MS, obtenu en calcinant plus haut et plus longtemps pour éliminer le g-C3N4) et g-C3N4 seul (CN). Ce témoin à deux composants permet d'attribuer à la présence du g-C3N4 les écarts de capacité, de résistance de transfert de charge et de diffusion du lithium.",
+   "text": "Aucun paramètre de synthèse n'est balayé. Les auteurs comparent trois matériaux : le composite (MS/CN), un témoin MS obtenu en calcinant plus haut et plus longtemps pour éliminer le g-C3N4 (600 °C pendant 2 h), et g-C3N4 seul (CN). Les auteurs attribuent à la présence du g-C3N4 les écarts de capacité, de résistance de transfert de charge et de diffusion du lithium entre MS/CN et MS ; MS n'est cependant ni un MoS2 pur ni un témoin à une seule variable (voir l'annotation limite_reproductibilite de la voie MS).",
    "quote": null
   },
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "MS diffère de MS/CN par une calcination à 600 °C pendant 2 h au lieu de 550 °C pendant 1 h, ce qui donne des particules sphériques d'environ 500 nm de MoS2 sans g-C3N4 (MS/CN : nanofeuillets de 10 à 15 nm sur g-C3N4). En batterie, MS/CN passe de ~900 à ~1204 mA·h·g−1 entre le 10e et le 175e cycle alors que MS tombe de ~650 à ~326 mA·h·g−1 entre le 50e et le 200e cycle. CN, préparé sans sel de molybdène, ne donne qu'une faible capacité. Les coefficients de diffusion du lithium sont plus élevés pour MS/CN (6,05 × 10−12 contre 9,05 × 10−13 au départ).",
+   "text": "MS diffère de MS/CN par une calcination à 600 °C pendant 2 h au lieu de 550 °C pendant 1 h, ce qui donne des particules sphériques d'environ 500 nm (MS/CN : nanofeuillets de 10 à 15 nm sur g-C3N4). MS est le MoS2 « sans g-C3N4 » des auteurs, mais leur propre TGA y voit une étape à 430 °C attribuée à la décomposition de g-C3N4 et leur IR un résidu organique : il s'agit d'un MoS2 contenant encore de la matière non MoS2 (≈ 22 % en masse selon 78,44 % de MoS2). En batterie, MS/CN passe de ~900 à ~1204 mA·h·g−1 entre le 10e et le 175e cycle alors que MS tombe de ~650 à ~326 mA·h·g−1 entre le 50e et le 200e cycle. CN, préparé sans sel de molybdène, ne donne qu'une faible capacité. Les coefficients de diffusion du lithium sont plus élevés pour MS/CN (6,05 × 10−12 contre 9,05 × 10−13 au départ).",
    "quote": null
   },
   {
@@ -1159,7 +1240,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "MS/CN",
-   "text": "Hypothèse : au-delà d'environ 180 °C la thiourée se décompose en NH3, H2S et CS2 et se condense vers 500 °C en mélamine puis en g-C3N4 ; le H2S libéré sulfure probablement le molybdate (réduction de Mo(VI) en Mo(IV)) pour former MoS2, le sodium restant sous forme de sels (sulfates, sulfures) éliminés par le lavage à l'eau. L'excès de thiourée (≈ 3 g pour 1 g de molybdate, soit ~ 40 mmol pour ~ 4 mmol de Mo) fournit donc le soufre et la matrice carbonée azotée. À 600 °C pendant 2 h, le g-C3N4, instable au-dessus de 600 °C environ, est éliminé, d'où MoS2 seul pour MS.",
+   "text": "Hypothèse de l'analyse (non écrite dans l'article) : au-delà d'environ 180 °C la thiourée fond, se décompose en NH3, H2S et CS2 et, pour la part restante, se condense vers 500–550 °C en mélamine, melem puis g-C3N4. Le H2S libéré transforme probablement le molybdate en oxythiomolybdates puis en thiomolybdate ; celui-ci se décompose vers 300–450 °C en MoS3 puis en MoS2 et soufre élémentaire, le soufre réduit assurant la réduction de Mo(VI) en Mo(IV). Ce soufre élémentaire expliquerait mieux que « la décomposition de la thiourée » invoquée par les auteurs le soufre vu en CV, et le Mo6+ résiduel en XPS (234,79 eV) indiquerait une sulfuration incomplète. Le sodium (≈ 8,3 mmol) n'a pas de destination écrite : il part probablement en sels (sulfure, sulfite ou thiosulfate, thiocyanate) éliminés par le lavage à l'eau, sans analyse de Na dans l'article. L'excès de thiourée (≈ 39 mmol pour ≈ 4,1 mmol de Mo, S/Mo ≈ 9,5) fournit à la fois le soufre et la matrice de g-C3N4. À 600 °C pendant 2 h (MS), g-C3N4 commence à se décomposer mais, d'après la TGA et l'IR de l'article, sans être éliminé entièrement.",
    "quote": null
   },
   {
@@ -1171,13 +1252,13 @@
   {
    "type": "securite_analyse",
    "route": "MS/CN",
-   "text": "La calcination de la thiourée dégage H2S, NH3, CS2 et des oxydes de soufre : le four tubulaire doit être ventilé sous hotte, avec piégeage des gaz. La thiourée est suspectée cancérogène et reprotoxique ; le molybdate de sodium est peu toxique mais irritant. Les poudres nanométriques obtenues ne doivent pas être inhalées.",
+   "text": "La calcination de la thiourée et la sulfuration du molybdate dégagent H2S, NH3 et CS2 (inflammable, point d'éclair très bas), et des oxydes de soufre et d'azote en présence d'oxygène résiduel : le four tubulaire doit être ventilé sous hotte, avec piégeage des gaz (NaOH ou hypochlorite pour H2S). La thiourée est classée cancérogène (fiche CAMEO de la NOAA) et suspectée reprotoxique ; ne pas la broyer en présence d'un oxydant. Le molybdate de sodium est peu toxique mais irritant. Les poudres nanométriques obtenues ne doivent pas être inhalées.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": "Coin_cell",
-   "text": "Le lithium métallique réagit avec l'eau ; le LiPF6 s'hydrolyse en libérant de l'HF toxique et corrosif ; les solvants carbonates sont inflammables ; le NMP de l'encre d'électrode est reprotoxique. Manipuler l'électrolyte en boîte à gants et jeter les piles usagées selon la filière batteries.",
+   "text": "Le lithium métallique réagit avec l'eau ; le LiPF6 s'hydrolyse en libérant de l'HF toxique et corrosif ; les solvants carbonates sont inflammables ; le NMP de l'encre d'électrode est reprotoxique. Manipuler l'électrolyte en boîte à gants et jeter les piles usagées selon la filière batteries. L'ouverture des piles cyclées pour l'analyse ex situ (DRX) doit aussi se faire en boîte à gants : Li2S s'hydrolyse à l'air en libérant du H2S.",
    "quote": null
   },
   {
@@ -1191,17 +1272,47 @@
    "route": "MS",
    "text": "Le protocole de MS est donné comme « following the procedure » de MS/CN sauf la calcination : on suppose, sans que l'article le dise, que la quantité de réactifs, le broyage et le lavage restent ceux de MS/CN. Pour retirer le g-C3N4, les auteurs ne décrivent aucun contrôle de pureté par DRX hors des pics de MoS2 (le pic à 1524 cm−1 en IR est attribué à un résidu organique).",
    "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MS",
+   "text": "Le témoin MS n'est pas du MoS2 pur : la TGA de MS montre une étape à 430 °C que les auteurs attribuent eux-mêmes à la décomposition de g-C3N4, l'IR un résidu organique (1524 cm−1) et la teneur en MoS2 n'est que de 78,44 %, soit ≈ 22 % d'autre matière contre 29 % pour MS/CN. MS diffère aussi de MS/CN par la température (600 contre 550 °C), la durée (2 h contre 1 h) et la morphologie (sphères d'environ 500 nm) : l'écart de capacité (326 contre 1204 mA·h·g−1) ne peut pas être attribué au seul g-C3N4. Un témoin à une seule variable manque (MoS2 préparé à 550 °C pendant 1 h puis débarrassé du g-C3N4 autrement, ou mélange physique de MS et de CN).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode",
+   "text": "Les données d'électrode sont incohérentes entre elles : un disque de 16 mm (2,01 cm2) chargé à 0,9–1,0 mg·cm−2 porte 1,8–2,0 mg de matière active, pas les 0,6–0,7 mg annoncés ; charge, masse par électrode et aire « effective » de 0,636 cm2 de l'EIS ne s'accordent qu'avec un disque de 9 mm. Si la masse est fausse, toutes les capacités en mA·h·g−1 le sont dans la même proportion. Un chimiste doit vérifier le diamètre des disques et la masse réelle.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MS/CN",
+   "text": "Le texte se contredit sur la résistance de transfert de charge : Rct de MS/CN est dit plus petit que celui de MS « in both conditions », puis « the charge transfer resistance of MS is much lower than that of MS/CN ». Le tableau 1 ne soutient aucune des deux phrases pour les deux états (initial : MS 60,017 et MS/CN 40,887 Ω ; 200e cycle : MS 33,025 et MS/CN 35,017 Ω). Les valeurs du tableau sont gardées telles quelles ; le gain de conductivité du g-C3N4 après cyclage n'est pas démontré par l'EIS.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MS/CN",
+   "text": "La capacité de 1204 mA·h·g−1 vaut 1,8 fois la capacité théorique de MoS2 (670 mA·h·g−1) et environ 2,4 fois celle attendue du mélange (≈ 500 mA·h·g−1), sans explication chiffrée (Laruelle et al., J. Electrochem. Soc. 2002, 149, A627, sur la capacité supplémentaire des anodes de conversion). Les coefficients de diffusion du tableau 1 se recalculent avec C = 1 M (concentration de LiPF6 dans l'électrolyte, et non celle du lithium dans le matériau) et n = 1 : seuls leurs rapports ont un sens, et l'unité écrite (cm2·s−1/2) est fausse, c'est cm2·s−1. Le rendement de 72,97 % est invérifiable : la masse de produit n'est pas donnée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MS/CN",
+   "text": "Caractérisation : la TEM annonce des nanofeuillets de 10–15 nm (≈ 16 à 24 feuillets de MoS2) mais la raie (002) de MoS2 vers 14,4° est absente de la DRX de MS et de MS/CN. Le sodium (≈ 8,3 mmol) n'est jamais analysé, ce qui fragilise l'hypothèse « résidu de TGA = MoO3 pur » sur laquelle reposent les teneurs en MoS2. Plusieurs termes spectroscopiques sont mal employés : le « décalage de 283 cm−1 » compare une bande N–H et une bande O–H de l'eau adsorbée (disparition d'une bande, pas un décalage) ; le pic à 13,2° est la périodicité dans le plan des unités tri-s-triazine (100) et non un empilement interplanaire ; le « pic satellite » du Mo 3d est la raie S 2s ; le pic S 2p à 168,39 eV est plutôt un sulfate qu'un sulfite.",
+   "quote": null
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "MS/CN, Table 1 et texte sur Rct",
-   "issue": "Le texte dit d'abord que la résistance de transfert de charge de MS/CN est plus petite que celle de MS « in both conditions », puis « the charge transfer resistance of MS is much lower than that of MS/CN ». Le tableau 1 donne 60,017 (MS) et 40,887 Ω (MS/CN) au départ, 33,025 (MS) et 35,017 Ω (MS/CN) au 200e cycle. Valeurs du tableau extraites telles quelles."
+   "issue": "Le texte dit d'abord que la résistance de transfert de charge de MS/CN est plus petite que celle de MS « in both conditions », puis « the charge transfer resistance of MS is much lower than that of MS/CN ». Le tableau 1 donne 60,017 (MS) et 40,887 Ω (MS/CN) au départ, 33,025 (MS) et 35,017 Ω (MS/CN) au 200e cycle. Valeurs du tableau extraites telles quelles. Le tableau 1 ne soutient aucune des deux phrases au 200e cycle (MS 33,025 < MS/CN 35,017 Ω) ; aucune valeur corrigée."
   },
   {
    "where": "MS/CN, TGA (Fig. 1C)",
-   "issue": "Le texte donne des teneurs en MoS2 de 78,44 % (MS) et 70,89 % (MS/CN) en supposant un résidu de MoO3 ; la Fig. 1C porte des repères à 70,3 % et 63,8 % (masse résiduelle). Seules les valeurs du texte sont extraites ; les repères de la figure ne sont pas expliqués dans l'article."
+   "issue": "Le texte donne des teneurs en MoS2 de 78,44 % (MS) et 70,89 % (MS/CN) en supposant un résidu de MoO3 ; la Fig. 1C porte des repères à 70,3 % et 63,8 % (masse résiduelle). Les repères ne sont pas expliqués par l'article, mais la critique scientifique a relevé que 70,3 / 0,8992 ≈ 78,2 % et 63,8 / 0,8992 ≈ 70,95 % (0,8992 = M(MoO3)/M(MoS2)), soit les teneurs du texte à 0,3 point près : ce sont donc les résidus de MoO3 d'où viennent ces teneurs. Seules les valeurs du texte sont extraites. Doute levé."
   },
   {
    "where": "Coin_cell, CV",
@@ -1217,7 +1328,7 @@
   },
   {
    "where": "CN et MS, lavage",
-   "issue": "« The two obtained solids were then washing with water and ethanol as mentioned above » : le lavage de MS est hérité de MS/CN (même procédure) ; pour CN seuls les solvants sont retenus, le nombre de lavages étant déclaré non cité."
+   "issue": "« The two obtained solids were then washing with water and ethanol as mentioned above for the preparation of MS/CN » : le lavage de CN (et de MS) est repris par renvoi à celui de MS/CN. Pour CN, la citation est cette phrase de renvoi : solvants eau et éthanol retenus, nombre de lavages non cité (la procédure de MS/CN dit « two times » avec l'eau et « one more time » avec l'éthanol, mais l'article ne reprend pas ces nombres pour CN). Le lavage de MS est supposé identique à celui de MS/CN."
   },
   {
    "where": "Valeurs lues sur figures (10)",
@@ -1225,7 +1336,11 @@
   },
   {
    "where": "MS, étape 2",
-   "issue": "La calcination à 600 °C pendant 2 h est décrite comme destinée à éliminer le g-C3N4 ; la voie est marquée réussie car MS est obtenu avec les pics de MoS2 hexagonal, mais l'article ne contrôle pas l'élimination complète du g-C3N4 (pic IR à 1524 cm−1 attribué à un résidu organique)."
+   "issue": "La calcination à 600 °C pendant 2 h est décrite comme destinée à éliminer le g-C3N4 ; la voie est marquée réussie car MS est obtenu avec les pics de MoS2 hexagonal, mais l'article ne contrôle pas l'élimination complète du g-C3N4 (pic IR à 1524 cm−1 attribué à un résidu organique). La TGA de MS montre d'ailleurs une étape à 430 °C que les auteurs attribuent à la décomposition de g-C3N4, la teneur en MoS2 n'est que de 78,44 % et l'IR relève un résidu organique : MS contient donc encore de la matière non MoS2 d'après les auteurs eux-mêmes."
+  },
+  {
+   "where": "Electrode, diamètre et masse",
+   "issue": "Disque de 16 mm (2,01 cm2) à 0,9–1,0 mg·cm−2 donne 1,8–2,0 mg de matière active, alors que le texte dit 0,6–0,7 mg par électrode ; l'aire de 0,636 cm2 utilisée en EIS correspond à un disque de 9 mm. Valeurs extraites telles qu'écrites, sans correction."
   }
  ]
 }
