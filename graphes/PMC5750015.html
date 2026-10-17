@@ -1,0 +1,62 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5750015</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5750015 — Effect of reaction solvent on hydroxyapatite synthesis in sol-gel process.</h1>
+<h2>Voie : Water-based</h2>
+<pre class="mermaid">flowchart LR
+  R11885([&quot;calcium nitrate tetrahydrate (CNTH)&lt;br/&gt;100 mmol&quot;]):::reactif
+  R11885 --&gt;|&quot;precursor&quot;| S13994
+  R11886([&quot;diammonium hydrogen phosphate (DAHP)&lt;br/&gt;60 mmol&quot;]):::reactif
+  R11886 --&gt;|&quot;precursor&quot;| S13994
+  R11887([&quot;distilled water (solvent of CNTH)&lt;br/&gt;volume giving a final concent…&quot;]):::reactif
+  R11887 --&gt;|&quot;solvent&quot;| S13994
+  R11888([&quot;distilled water (solvent of DAHP)&lt;br/&gt;volume giving a final concent…&quot;]):::reactif
+  R11888 --&gt;|&quot;solvent&quot;| S13994
+  R11889([&quot;ammonia solution (NH4OH)&lt;br/&gt;added dropwise to reach pH 10…&quot;]):::reactif
+  R11889 --&gt;|&quot;base&quot;| S13994
+  R11890([&quot;cold distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R11890 --&gt;|&quot;wash&quot;| S13994
+  S13994[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.5 M&quot;]:::etape
+  S13994 --&gt; S13995
+  S13995[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.5 M&quot;]:::etape
+  S13995 --&gt; S13996
+  S13996[&quot;&lt;b&gt;3. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 10–12&quot;]:::etape
+  S13996 --&gt; S13997
+  S13997[&quot;&lt;b&gt;4. transfer&lt;/b&gt;&quot;]:::etape
+  S13997 --&gt; S13998
+  S13998[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;addition_rate : 40 drops min−1&lt;br/&gt;stirring_speed : 250 r.p.m.&quot;]:::etape
+  S13998 --&gt; S13999
+  S13999[&quot;&lt;b&gt;6. react&lt;/b&gt;&lt;br/&gt;temperature : 40 °C&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S13999 --&gt; S14000
+  S14000[&quot;&lt;b&gt;7. filter&lt;/b&gt;&quot;]:::etape
+  S14000 --&gt; S14001
+  S14001[&quot;&lt;b&gt;8. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : cold distilled water&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S14001 --&gt; S14002
+  S14002[&quot;&lt;b&gt;9. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S14002 --&gt; S14003
+  S14003[&quot;&lt;b&gt;10. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;heating_rate : 10 °C min−1&quot;]:::etape
+  S14003 --&gt; M
+  M{{&quot;calcium phosphate powder (mainly β-calcium pyroph…&lt;br/&gt;&quot;}}:::materiau
+  O56741[&quot;phase : mainly β-calcium pyrophosphat…&quot;]:::resultat
+  M -.-&gt; O56741
+  O56742[&quot;dielectric_constant_of_solvent_mix… : 78.54&quot;]:::resultat
+  M -.-&gt; O56742
+  O56743[&quot;average_particle_size_dBET : 247 nm&quot;]:::resultat
+  M -.-&gt; O56743
+  O56744[&quot;BET_surface_area : 24 m2 g−1&quot;]:::resultat
+  M -.-&gt; O56744
+  O56745[&quot;Ca_P_ratio_XRF : 1.07&quot;]:::resultat
+  M -.-&gt; O56745
+  O56746[&quot;crystallite_size : 19.4 nm&quot;]:::resultat
+  M -.-&gt; O56746
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9623{{&quot;Water-based&quot;}}:::materiau
+  B9624[&quot;DMF-based&quot;]:::etape
+  B9623 --&gt;|&quot;distilled water (solvent… = replaced by N,N-dimethyl…&lt;br/&gt;ammonia dilution water = 5 mL&quot;| B9624
+  B9625[&quot;THF-based&quot;]:::etape
+  B9623 --&gt;|&quot;distilled water (solvent… = replaced by tetrahydrofu…&lt;br/&gt;ammonia dilution water = 5 mL&quot;| B9625
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
