@@ -330,10 +330,11 @@
      "amount": 0.1,
      "unit": "g",
      "not_stated": [
-      "purity",
-      "supplier"
+      "purity"
      ],
-     "quote": "adding 0.1 g plant powder to 100 ml heated water"
+     "quote": "adding 0.1 g plant powder to 100 ml heated water",
+     "supplier": "collected in June 2014 from the campus of the JUST in Irbid, Jordan",
+     "supplier_quote": "Leaves of olive and rosemary were collected in June 2014 from the campus of the JUST in Irbid, Jordan."
     },
     {
      "name": "heated water",
@@ -558,7 +559,7 @@
    "characterizations": [
     {
      "technique": "FTIR",
-     "result": "Table 2, pics de l'extrait d'olive (cm−1) : N–H 3,455 et 3,311 ; O–H 3,187 ; C–H 2,919 et 2,848 ; C=O 1,728 ; amide C=O 1,688 ; N–H 1,608 ; C–O 1,515",
+     "result": "Table 2, pics de l'extrait d'olive (cm−1) : N–H 3,455 et 3,311 ; O–H 3,187 ; C–H 2,919 et 2,848 ; C=O 1,728 ; amide C=O 1,688 ; C=C 1,688 ; N–H 1,608 ; C–O 1,515",
      "instrument": "Shimadzu IR_Affinity",
      "conditions": "pastilles de KBr à 1:10 de dilution, 400–4,000 cm−1",
      "quote": "The IR spectra of OLE and RLE show only minor differences (Table 2)."
@@ -573,8 +574,7 @@
     }
    ],
    "missing_fields": [
-    "wash_solvent",
-    "leaf_origin_supplier"
+    "wash_solvent"
    ]
   },
   {
@@ -605,17 +605,18 @@
      "amount": 0.1,
      "unit": "g",
      "not_stated": [
-      "purity",
-      "supplier"
+      "purity"
      ],
-     "quote": "adding 0.1 g plant powder to 100 ml heated water"
+     "quote": "adding 0.1 g plant powder to 100 ml heated water",
+     "supplier": "collected in June 2014 from the campus of the JUST in Irbid, Jordan",
+     "supplier_quote": "Leaves of olive and rosemary were collected in June 2014 from the campus of the JUST in Irbid, Jordan."
     }
    ],
    "succeeded": true,
    "characterizations": [
     {
      "technique": "FTIR",
-     "result": "Table 2, pics de l'extrait de romarin (cm−1) : N–H 3,407 et 3,282 ; O–H 3,223 ; C–H 2,917 et 2,849 ; C=O 1,727 ; amide C=O 1,685 ; N–H 1,606 ; C–O 1,516",
+     "result": "Table 2, pics de l'extrait de romarin (cm−1) : N–H 3,407 et 3,282 ; O–H 3,223 ; C–H 2,917 et 2,849 ; C=O 1,727 ; amide C=O 1,685 ; C=C 1,685 ; N–H 1,606 ; C–O 1,516",
      "instrument": "Shimadzu IR_Affinity",
      "conditions": "pastilles de KBr à 1:10 de dilution, 400–4,000 cm−1",
      "quote": "The IR spectra of OLE and RLE show only minor differences (Table 2)."
@@ -721,6 +722,16 @@
      "role": "wash",
      "amount_text": "up to 600 ml per sample",
      "quote": "The ultrafiltration process consumed up to 600 ml of DI water for each sample"
+    },
+    {
+     "name": "nitric acid (glassware washing)",
+     "formula": "HNO3",
+     "role": "wash",
+     "amount_text": "diluted (25%), glassware washed periodically",
+     "purity": "69%",
+     "supplier": "Merck, Darmstadt, Germany",
+     "supplier_quote": "nitric acid (Merck, Darmstadt, Germany, 69%)",
+     "quote": "all glassware was periodically washed with diluted nitric acid (25%) and then dried in a hot-air oven overnight at 40 °C"
     }
    ],
    "steps": [
@@ -751,6 +762,11 @@
        "type": "stirrer plate",
        "detail": null,
        "quote": "placed on a stirrer plate"
+      },
+      {
+       "type": "glassware pretreatment",
+       "detail": "verrerie lavée périodiquement à l'acide nitrique dilué (25 %), puis séchée à l'étuve à 40 °C une nuit",
+       "quote": "all glassware was periodically washed with diluted nitric acid (25%) and then dried in a hot-air oven overnight at 40 °C"
       }
      ],
      "not_stated": [
@@ -963,6 +979,20 @@
      "instrument": "Shimadzu AA-6200",
      "conditions": "nanosuspension centrifugée 4,185×g (6,000 rpm) 15 min ; surnageant dilué ; différence avec la solution mère d'AgNO3",
      "quote": "The nanosuspensions were centrifuged at a maximum relative centrifugal force of 4,185×g (6,000 rpm) for 15min (Z 200 A; HERMLE Labortechnik, Wehingen, Germany)."
+    },
+    {
+     "technique": "broth microdilution (CMI/CMB)",
+     "result": "CMI et CMB contre S. aureus ATCC 25923, E. coli ATCC 12900 et S. enterica CIP 104220 (valeurs en résultats, Tableau 3)",
+     "instrument": null,
+     "conditions": "solution mère à 100 mg/L (CLSI) ; dilutions de moitié 100 à 3,125 µg/mL en bouillon Mueller–Hinton, plaque de 96 puits, en triplicat ; 50 µL d'inoculum par puits à 0,5 McFarland pour 1 × 10^6 UFC/mL ; 37 °C, 24 h ; témoin négatif : bouillon Mueller–Hinton",
+     "quote": "Twofold dilutions of the synthesized AgNPs (e.g., 100, 50, 25, 12.5, 6.25, and 3.125 μg/ml) were prepared in a Mueller–Hinton broth using a 96-well microtitration plate (microdilution), in triplicate. Each well was inoculated with 50 μl of the respective bacterial suspension (of Mueller–Hinton broth) and the concentration was matched against a 0.5 McFarland Standard to obtain a concentration of 1 × 106 CFU/ml. After well-mixing, the inoculated 96-well microtitration plate was incubated at 37 °C for 24 h. Both the MIC and MBC were then detected during this incubation period. Mueller–Hinton broth was used as a negative control."
+    },
+    {
+     "technique": "Kirby–Bauer (diffusion en puits)",
+     "result": "zones d'inhibition contre les trois souches (valeurs en résultats, Tableau 4)",
+     "instrument": null,
+     "conditions": "100 µL d'inoculum à 1 × 10^5 UFC/mL étalés en triplicat sur gélose Mueller–Hinton ; puits percés au tube de verre stérilisé et remplis de 50 µL de suspension (concentration testée : 50 mg/L, d'après l'en-tête du Tableau 4) ; 37 °C, 24 h ; témoin positif AgNO3 à 170 mg/L ; gélose vierge pour détecter une contamination",
+     "quote": "A triplicate of 100 μl of the respective bacterial suspension (of Mueller–Hinton broth) with a turbidity of 1 × 105 CFU/ml were spread out on MH agar plates. The cultured MH agar on each plate was perforated with holes (wells) using a sterilized glass tube and labeled appropriately. Each well was filled with 50 μl of either OLE-AgNPs or RLE-AgNPs, and MH agar plates were incubated at 37 °C for 24 h. Finally, the zones of inhibition (ZI) were measured and reported. In all tests, silver nitrate was used as a positive control and a blank agar plate was incubated to detect any contamination that might have occurred during testing."
     }
    ],
    "outcomes": [
@@ -1085,6 +1115,12 @@
      "value_num": 9,
      "unit": "mm",
      "value_text": "9 ± 0.3 mm"
+    },
+    {
+     "property": "Ag_conversion_AAS",
+     "quote": "The percentages of Ag+ conversion into AgNP (Ag0) for OLE-AgNPs and RLE-AgNPs were 53% and 48%, respectively.",
+     "value_num": 53,
+     "unit": "%"
     }
    ],
    "missing_fields": [
@@ -1157,6 +1193,20 @@
      "instrument": "Shimadzu AA-6200",
      "conditions": "nanosuspension centrifugée 4,185×g (6,000 rpm) 15 min ; surnageant dilué ; différence avec la solution mère d'AgNO3",
      "quote": "The nanosuspensions were centrifuged at a maximum relative centrifugal force of 4,185×g (6,000 rpm) for 15min (Z 200 A; HERMLE Labortechnik, Wehingen, Germany)."
+    },
+    {
+     "technique": "broth microdilution (CMI/CMB)",
+     "result": "CMI et CMB contre S. aureus ATCC 25923, E. coli ATCC 12900 et S. enterica CIP 104220 (valeurs en résultats, Tableau 3)",
+     "instrument": null,
+     "conditions": "solution mère à 100 mg/L (CLSI) ; dilutions de moitié 100 à 3,125 µg/mL en bouillon Mueller–Hinton, plaque de 96 puits, en triplicat ; 50 µL d'inoculum par puits à 0,5 McFarland pour 1 × 10^6 UFC/mL ; 37 °C, 24 h ; témoin négatif : bouillon Mueller–Hinton",
+     "quote": "Twofold dilutions of the synthesized AgNPs (e.g., 100, 50, 25, 12.5, 6.25, and 3.125 μg/ml) were prepared in a Mueller–Hinton broth using a 96-well microtitration plate (microdilution), in triplicate. Each well was inoculated with 50 μl of the respective bacterial suspension (of Mueller–Hinton broth) and the concentration was matched against a 0.5 McFarland Standard to obtain a concentration of 1 × 106 CFU/ml. After well-mixing, the inoculated 96-well microtitration plate was incubated at 37 °C for 24 h. Both the MIC and MBC were then detected during this incubation period. Mueller–Hinton broth was used as a negative control."
+    },
+    {
+     "technique": "Kirby–Bauer (diffusion en puits)",
+     "result": "zones d'inhibition contre les trois souches (valeurs en résultats, Tableau 4)",
+     "instrument": null,
+     "conditions": "100 µL d'inoculum à 1 × 10^5 UFC/mL étalés en triplicat sur gélose Mueller–Hinton ; puits percés au tube de verre stérilisé et remplis de 50 µL de suspension (concentration testée : 45 mg/L, d'après l'en-tête du Tableau 4) ; 37 °C, 24 h ; témoin positif AgNO3 à 170 mg/L ; gélose vierge pour détecter une contamination",
+     "quote": "A triplicate of 100 μl of the respective bacterial suspension (of Mueller–Hinton broth) with a turbidity of 1 × 105 CFU/ml were spread out on MH agar plates. The cultured MH agar on each plate was perforated with holes (wells) using a sterilized glass tube and labeled appropriately. Each well was filled with 50 μl of either OLE-AgNPs or RLE-AgNPs, and MH agar plates were incubated at 37 °C for 24 h. Finally, the zones of inhibition (ZI) were measured and reported. In all tests, silver nitrate was used as a positive control and a blank agar plate was incubated to detect any contamination that might have occurred during testing."
     }
    ],
    "outcomes": [
@@ -1286,7 +1336,12 @@
      "unit": "mm",
      "value_text": "10 ± 0.6 mm"
     }
-   ]
+   ],
+   "yield": {
+    "value": 48,
+    "unit": "%",
+    "quote": "The percentages of Ag+ conversion into AgNP (Ag0) for OLE-AgNPs and RLE-AgNPs were 53% and 48%, respectively."
+   }
   },
   {
    "label": "OLE_C20",
@@ -2281,7 +2336,47 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Incohérences internes de l'article à connaître : (1) la quantité d'argent introduite (12,5 ml de AgNO3 à 10−3 M, soit environ 1,35 mg dans 50 ml de volume final) ne peut donner qu'au plus ≈ 27 mg/l, alors que l'article mesure environ 50 mg/l pour OLE-AgNPs avec une conversion de 53 % (≈ 14 mg/l attendu) ; (2) les essais antibactériens utilisent une solution mère à 100 mg/l, plus concentrée que la suspension mesurée (50 et 45 mg/l) ; (3) les CMI/CMB sont données en μl/ml alors que la méthode parle de μg/ml ; (4) l'absorbance au pic dans les mêmes conditions nominales (250 mg/l, 80 °C, pH 7) vaut ≈ 1,3 aux Fig. 1 et 2 mais ≈ 1,2 (olivier) à la Fig. 3 et ≈ 1,6 (olivier) et ≈ 4,3 (romarin) à la Fig. 4 ; (5) un pic à 410 nm « implique » une taille de 69 nm, alors que l'ESEM donne 45 et 38 nm. Calculs et rapprochements : extracteur, à vérifier par la critique scientifique."
+   "text": "Incohérences internes de l'article à connaître : (1) la quantité d'argent introduite (12,5 ml de AgNO3 à 10−3 M, soit environ 1,35 mg dans 50 ml de volume final) ne peut donner qu'au plus ≈ 27 mg/l, alors que l'article mesure environ 50 mg/l pour OLE-AgNPs avec une conversion de 53 % (≈ 14 mg/l attendu) ; (2) les essais antibactériens utilisent une solution mère à 100 mg/l, plus concentrée que la suspension mesurée (50 et 45 mg/l) ; (3) les CMI/CMB sont données en μl/ml alors que la méthode parle de μg/ml ; (4) l'absorbance au pic dans les mêmes conditions nominales (250 mg/l, 80 °C, pH 7) vaut ≈ 1,3 aux Fig. 1 et 2 mais ≈ 1,2 (olivier) à la Fig. 3 et ≈ 1,6 (olivier) et ≈ 4,3 (romarin) à la Fig. 4 ; (5) un pic à 410 nm « implique » une taille de 69 nm, alors que l'ESEM donne 45 et 38 nm. Calculs et rapprochements de la critique scientifique : voir les annotations limite_reproductibilite de OLE-AgNPs et RLE-AgNPs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "OLE-AgNPs",
+   "text": "pH de réaction : la recette (0,156 mmol de NaOH et environ 0,49 mmol de NH3 libre dans 50 mL) donne par le calcul un pH proche de 11,5, que les 12,5 mg d'extrait ne peuvent pas neutraliser, et aucun acide n'est décrit. Le « pH 7 ± 0,2 » des légendes des Fig. 1, 2, 4 et 5 est donc très probablement celui de la suspension après l'ultrafiltration (« 7 ± 0,3 »), alors que le texte dit que pH 11 ± 0,2 donne le meilleur rendement : la synthèse caractérisée semble avoir été conduite à pH élevé puis ramenée à 7. Valeurs de l'article conservées (voir le doute sur l'étape 5)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "OLE-AgNPs",
+   "text": "Argent et méthode de rendement : 12,5 µmol d'Ag+ dans 50 mL donnent au plus 26,9 mg/L, contre environ 50 mg/L mesurés par AAS ; avec 53 % de conversion, cela suppose environ 94 mg/L au départ (même rapport pour le romarin : 45 mg/L et 48 %), donc une erreur systématique de référence ou de volume. La méthode est elle-même contestable : l'AAS est faite après une ultrafiltration (12 volumes de lavage) qui a déjà éliminé l'Ag+ libre, contre la solution mère non diluée, et à 4 185 g pendant 15 min de petites particules (20 à 45 nm) ne sédimentent pas entièrement et sont comptées comme Ag+ restant. Concentration et conversion ne sont pas utilisables telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "OLE-AgNPs",
+   "text": "Aucun témoin sans extrait n'est décrit : la PVP (environ 61 mg, soit 4,9 fois la masse d'extrait) réduit elle-même Ag+ à chaud en milieu basique (Hoppe et al., Langmuir, 2006), de sorte que le rôle réducteur de l'extrait n'est pas démontré ; il faudrait l'essai AgNO3 + NH3 + PVP + NaOH à 80 °C sans extrait, et un essai sans PVP."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "OLE-AgNPs",
+   "text": "Interprétations de la caractérisation contestables : le pic à 410 nm, que l'article associe à un cœur de 69 nm, correspond plutôt à des particules d'environ 20 à 45 nm, ce qui concorde avec l'ESEM (45 et 38 nm) ; les PDI de 0,295 et 0,424 sont qualifiés de « monodispersed » parce qu'inférieurs à 0,7, mais 0,7 est la limite d'emploi de la DLS et non un seuil de monodispersité (suspensions plutôt polydisperses) ; le FTIR ne distingue pas l'extrait de la PVP (58 kDa, retenue par la membrane de 10 kDa contrairement à ce que dit l'article, bandes C–H, C=O et CH2 superposées), et le décalage de C=O « more than 10 cm−1 » ne ressort pas des valeurs listées (−1 à +2 cm−1)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "OLE-AgNPs",
+   "text": "Essais antibactériens : une solution mère à 100 mg/L ne peut pas se préparer à partir d'une suspension d'au plus 26,9 mg/L (50 mg/L mesurés) sans étape de concentration non décrite ; les CMI et CMB du Tableau 3 sont en µL/mL alors que la série de dilutions est en µg/mL ; les CMI (9,38, 4,69 et 18,75) sont les moyennes exactes de deux dilutions successives et non des concentrations testées ; le témoin AgNO3 (170 mg/L, soit environ 108 mg/L d'argent) contient environ deux fois plus d'argent que les nanoparticules, donc la comparaison des zones d'inhibition n'est pas à dose égale."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "RLE-AgNPs",
+   "text": "Même contradiction d'argent que pour OLE-AgNPs : 45 mg/L mesurés à 48 % de conversion supposent environ 94 mg/L d'argent au départ, contre au plus 26,9 mg/L avec 12,5 µmol dans 50 mL. Les autres limites de OLE-AgNPs (pH de réaction, méthode de rendement, absence de témoin sans extrait, taille, PDI, FTIR, essais antibactériens) valent aussi pour cette voie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "OLE_pH3",
+   "text": "L'acide employé pour descendre à pH 3 n'est pas décrit : le mélange réactionnel est naturellement à pH proche de 11,5 par le calcul, il faudrait environ 0,65 mmol d'acide, dont la nature (HNO3, ou HCl qui ferait précipiter AgCl) et le moment d'ajout manquent. À pH 3, NH3 est entièrement protoné en NH4+ : le complexe [Ag(NH3)2]+ ne se forme plus et la branche n'est plus une réduction de Tollens, mais une réduction directe de Ag+. Branche impossible à refaire telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "RLE_pH3",
+   "text": "L'acide employé pour descendre à pH 3 n'est pas décrit : le mélange réactionnel est naturellement à pH proche de 11,5 par le calcul, il faudrait environ 0,65 mmol d'acide, dont la nature (HNO3, ou HCl qui ferait précipiter AgCl) et le moment d'ajout manquent. À pH 3, NH3 est entièrement protoné en NH4+ : le complexe [Ag(NH3)2]+ ne se forme plus et la branche n'est plus une réduction de Tollens, mais une réduction directe de Ag+. Branche impossible à refaire telle qu'écrite."
   },
   {
    "type": "mecanisme_auteurs",
@@ -2292,17 +2387,23 @@
   {
    "type": "mecanisme_analyse",
    "route": "OLE-AgNPs",
-   "text": "Hypothèse de chimiste : l'ammoniaque (38,5 μl à 25 % m/m, soit environ 0,5 mmol, bien plus que les 2 équivalents nécessaires pour 12,5 μmol d'Ag+) transforme Ag+ en [Ag(NH3)2]+, ce qui évite la précipitation d'Ag2O en milieu basique. Les polyphénols de l'extrait (oleuropéine, rutine, lutéoline pour l'olivier) seraient déprotonés à pH élevé, donc meilleurs donneurs d'électrons, et réduiraient le complexe en Ag0 ; leur oxydation donne des quinones et leurs produits restent sur la surface. Le gain avec la température viendrait de la cinétique de cette réduction lente. La PVP, en se coordonnant à la surface, limiterait l'agrégation, tandis que l'extrait apporte une couche chargée négativement (potentiel zêta négatif). L'absence de pic à 20 °C indiquerait une réduction trop lente. Ces points ne sont pas démontrés par l'article."
+   "text": "Hypothèse de chimiste (critique scientifique), non démontrée par l'article : l'ammoniaque en grand excès (environ 41 NH3 par Ag) transforme Ag+ en [Ag(NH3)2]+, ce qui évite la précipitation d'Ag2O dans un milieu à pH proche de 11,5 créé par la soude. À 80 °C, les polyphénols de l'extrait (oleuropéine, hydroxytyrosol, lutéoline), déprotonés en phénolates à ce pH, réduiraient le complexe en Ag0 en s'oxydant en quinones ; la PVP, qui réduit elle-même Ag+ à chaud en milieu basique (Hoppe et al., 2006), et les sucres réducteurs libérés des glycosides y contribueraient probablement. Le complexe est un oxydant faible (E° voisin de +0,37 V contre +0,80 V pour Ag+/Ag), ce qui expliquerait le besoin de 80 °C et l'absence de pic à 20 °C. La PVP (retenue par l'ultrafiltration) et les produits d'oxydation de l'extrait couvriraient la surface, la charge négative venant des phénolates et des carboxylates. L'explication des auteurs (carbonyles réducteurs seulement en milieu basique) ne vaut que pour les aldéhydes : cétones, esters et amides ne réduisent pas le réactif de Tollens."
   },
   {
    "type": "mecanisme_analyse",
    "route": "RLE-AgNPs",
-   "text": "Même mécanisme probable que pour l'olivier, mais avec les constituants du romarin (diterpènes phénoliques comme le carnosol, terpénoïdes) : le romarin donne des particules plus petites (38 contre 45 nm) et un effet du pH plus marqué (+50 % contre +27 %), ce qui suggère une réduction plus dépendante de la déprotonation de ses phénols. C'est une hypothèse, l'article n'étudie pas la composition des extraits."
+   "text": "Hypothèse de chimiste (critique scientifique) : même mécanisme que pour l'olivier. Les constituants que l'article cite pour le romarin (isocarnosol, un diterpène, dihydronormorphinone, un alcaloïde, et camphre, un terpénoïde) sont peu réducteurs ou peu solubles dans l'eau ; une décoction aqueuse de romarin contient surtout de l'acide rosmarinique et des flavonoïdes glycosylés, réducteurs plus probables, et la PVP peut aussi participer. Le romarin donne des particules plus petites (38 contre 45 nm) et un effet du pH plus marqué (+50 % contre +27 %), ce qui suggère une réduction plus dépendante de la déprotonation des phénols. L'article n'étudie pas la composition des extraits : ces points ne sont pas démontrés."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'ammoniaque concentrée (25 %) est corrosive et irritante pour les voies respiratoires : à manipuler sous hotte. Le mélange nitrate d'argent et ammoniaque (réactif de Tollens) ne doit pas être conservé ni évaporé, car il peut former des composés d'argent explosifs (nitrure et fulminate d'argent) ; ici il est très dilué et consommé immédiatement, mais les restes doivent être détruits. La soude en pastilles est caustique. L'acide nitrique à 25 % servant à nettoyer la verrerie est corrosif. Les sels et nanoparticules d'argent sont toxiques pour le milieu aquatique : les filtrats de l'ultrafiltration (jusqu'à 600 ml par échantillon) sont à collecter comme déchets métalliques. Les tests antibactériens exigent un laboratoire adapté (S. aureus, E. coli, S. enterica sont pathogènes)."
+   "text": "L'ammoniaque concentrée (25 %) est corrosive et irritante pour les voies respiratoires : à manipuler sous hotte. Le mélange nitrate d'argent et ammoniaque (réactif de Tollens) ne doit pas être conservé ni évaporé, car il peut former de l'argent fulminant (nitrure et imide d'argent, explosifs à l'état sec), surtout s'il vieillit ou sèche ; l'article ne le signale pas. Ici le mélange est très dilué et consommé à mesure, mais les restes doivent être détruits. La soude en pastilles est caustique. L'acide nitrique à 25 % servant à nettoyer la verrerie est corrosif. Les sels et nanoparticules d'argent sont toxiques pour le milieu aquatique : les filtrats de l'ultrafiltration (jusqu'à 600 ml par échantillon) sont à collecter comme déchets métalliques. Les tests antibactériens exigent un laboratoire adapté (S. aureus, E. coli, S. enterica sont pathogènes)."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin positif AgNO3 (170 mg/L, sans voie de synthèse) dans l'essai de Kirby–Bauer, zones d'inhibition : S. aureus 18 ± 0,6 mm, S. enterica 20 ± 0,9 mm, E. coli 21 ± 1,1 mm ; les nanoparticules (50 mg/L pour l'olivier, 45 mg/L pour le romarin) donnent de 8 à 13 mm, que les auteurs jugent « comparable » au témoin.",
+   "quote": "Bacteria\\Treatment | AgNO3 (170 mg/l) | OLE-AgNPs (50mg/l) | RLE-AgNPs (45mg/l) S. aureus | 18 ± 0.6 mm | 13 ± 0.9 mm | 12 ± 0.4 mm S. enterica | 20 ± 0.9 mm | 12 ± 0.1 mm | 8 ± 0.6 mm E. coli | 21 ± 1.1 mm | 9 ± 0.3 mm | 10 ± 0.6 mm"
   }
  ],
  "method_sources": [
