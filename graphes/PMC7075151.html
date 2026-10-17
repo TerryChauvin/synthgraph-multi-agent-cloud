@@ -1,0 +1,83 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7075151</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7075151 — Facile Preparation of Stable Solid-State Carbon Quantum Dots with Multi-Peak Emission.</h1>
+<h2>Voie : CQDs_PC_4h</h2>
+<pre class="mermaid">flowchart LR
+  R11839([&quot;phthalic acid&lt;br/&gt;1.6 g&quot;]):::reactif
+  R11839 --&gt;|&quot;precursor&quot;| S13951
+  R11840([&quot;formamide&lt;br/&gt;mixed with glycerol, volume r…&quot;]):::reactif
+  R11840 --&gt;|&quot;solvent&quot;| S13951
+  R11841([&quot;glycerol&lt;br/&gt;mixed with formamide, volume …&quot;]):::reactif
+  R11841 --&gt;|&quot;solvent&quot;| S13951
+  S13951[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;volume : 20 mL&lt;br/&gt;volume_ratio : 1:1 (formamide:glycerol)&quot;]:::etape
+  S13951 --&gt; S13952
+  S13952[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 453 K&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S13952 --&gt; S13953
+  S13953[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;temperature_final : room temperature&quot;]:::etape
+  S13953 --&gt; S13954
+  S13954[&quot;&lt;b&gt;4. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.22 μm&quot;]:::etape
+  S13954 --&gt; S13955
+  S13955[&quot;&lt;b&gt;5. dry&lt;/b&gt;&quot;]:::etape
+  S13955 --&gt; S13956
+  S13956[&quot;&lt;b&gt;6. grind&lt;/b&gt;&quot;]:::etape
+  S13956 --&gt; M
+  M{{&quot;carbon quantum dots embedded in phthalimide cryst…&lt;br/&gt;&quot;}}:::materiau
+  O56527[&quot;absolute_QY : 20.3 %&quot;]:::resultat
+  M -.-&gt; O56527
+  O56528[&quot;emission_peaks : 525, 564 and 615 nm&quot;]:::resultat
+  M -.-&gt; O56528
+  O56529[&quot;CQD_average_particle_size : 2.7 nm&quot;]:::resultat
+  M -.-&gt; O56529
+  O56530[&quot;average_fluorescence_lifetime : 4.48 ns&quot;]:::resultat
+  M -.-&gt; O56530
+  O56531[&quot;tau1_proportion_alpha1 : 75.85 %&quot;]:::resultat
+  M -.-&gt; O56531
+  O56532[&quot;weight_loss_before_473K : less than 3% before 473 K&quot;]:::resultat
+  M -.-&gt; O56532
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9605{{&quot;CQDs_PC_4h&quot;}}:::materiau
+  B9606[&quot;CQDs_PC_2h&quot;]:::etape
+  B9605 --&gt;|&quot;duration = 2 h&quot;| B9606
+  B9607[&quot;CQDs_PC_6h&quot;]:::etape
+  B9605 --&gt;|&quot;duration = 6 h&quot;| B9607
+  B9608[&quot;CQDs_PC_8h&quot;]:::etape
+  B9605 --&gt;|&quot;duration = 8 h&quot;| B9608
+  B9609[&quot;CQDs_PC_10h&quot;]:::etape
+  B9605 --&gt;|&quot;duration = 10 h&quot;| B9609
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : WLED_CQDs_PC</h2>
+<pre class="mermaid">flowchart LR
+  R11842([&quot;CQDs_PC_4h (CQDs/PC phosphor)&lt;br/&gt;50 mg&quot;]):::reactif
+  R11842 --&gt;|&quot;intermediate&quot;| S13957
+  R11843([&quot;A-gel of Glycerol OE-625 silicone LED encaps…&lt;br/&gt;0.2 mL&quot;]):::reactif
+  R11843 --&gt;|&quot;binder&quot;| S13957
+  R11844([&quot;B-gel of Glycerol OE-625 silicone LED encaps…&lt;br/&gt;0.2 mL&quot;]):::reactif
+  R11844 --&gt;|&quot;binder&quot;| S13957
+  R11845([&quot;blue LED chip (460 nm)&lt;br/&gt;460 nm&quot;]):::reactif
+  R11845 --&gt;|&quot;substrate&quot;| S13957
+  S13957[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;volume : 0.2 mL&quot;]:::etape
+  S13957 --&gt; S13958
+  S13958[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;volume_ratio : A to B 1:1&quot;]:::etape
+  S13958 --&gt; S13959
+  S13959[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S13959 --&gt; S13960
+  S13960[&quot;&lt;b&gt;4. cure&lt;/b&gt;&quot;]:::etape
+  S13960 --&gt; S13961
+  S13961[&quot;&lt;b&gt;5. assemble&lt;/b&gt;&lt;br/&gt;wavelength : 460 nm&quot;]:::etape
+  S13961 --&gt; M
+  M{{&quot;white light-emitting diode coated with CQDs/PC ph…&lt;br/&gt;&quot;}}:::materiau
+  O56553[&quot;CIE_coordinates : (0.3352, 0.3145)&quot;]:::resultat
+  M -.-&gt; O56553
+  O56554[&quot;correlated_color_temperature : 5340 K&quot;]:::resultat
+  M -.-&gt; O56554
+  O56555[&quot;color_rendering_index : 82&quot;]:::resultat
+  M -.-&gt; O56555
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
