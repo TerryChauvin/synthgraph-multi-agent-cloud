@@ -1,0 +1,389 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8822483</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8822483 — In Situ Investigation of Multicomponent MOF Crystallization during Rapid Continuous Flow Synthesis.</h1>
+<h2>Voie : UMCM-1_R1_85C_10min</h2>
+<pre class="mermaid">flowchart LR
+  R14485([&quot;zinc acetate dihydrate&lt;br/&gt;0.1987 g&quot;]):::reactif
+  R14485 --&gt;|&quot;precursor&quot;| S17293
+  R14486([&quot;DMF (zinc solution)&lt;br/&gt;5 mL&quot;]):::reactif
+  R14486 --&gt;|&quot;solvent&quot;| S17293
+  R14487([&quot;terephthalic acid (H2bdc)&lt;br/&gt;0.045 g&quot;]):::reactif
+  R14487 --&gt;|&quot;ligand&quot;| S17293
+  R14488([&quot;H3btb&lt;br/&gt;0.1067 g&quot;]):::reactif
+  R14488 --&gt;|&quot;intermediate&quot;| S17293
+  R14489([&quot;DMF (ligand solution)&lt;br/&gt;5 mL&quot;]):::reactif
+  R14489 --&gt;|&quot;solvent&quot;| S17293
+  R14490([&quot;DMF (wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14490 --&gt;|&quot;wash&quot;| S17293
+  R14491([&quot;DCM (solvent exchange)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14491 --&gt;|&quot;wash&quot;| S17293
+  S17293[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S17293 --&gt; S17294
+  S17294[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S17294 --&gt; S17295
+  S17295[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 85 °C&lt;br/&gt;pressure : 5 bar&lt;br/&gt;flow_rate : 1 mL/min&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S17295 --&gt; S17296
+  S17296[&quot;&lt;b&gt;4. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S17296 --&gt; S17297
+  S17297[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S17297 --&gt; S17298
+  S17298[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DMF&lt;br/&gt;repetitions : twice&lt;br/&gt;volume : 30 mL&quot;]:::etape
+  S17298 --&gt; S17299
+  S17299[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DCM&lt;br/&gt;repetitions : thrice&lt;br/&gt;volume : 30 mL&lt;br/&gt;duration : over three days&lt;br/&gt;atmosphere : nitrogen atmosphere&quot;]:::etape
+  S17299 --&gt; S17300
+  S17300[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;atmosphere : flowing N2&quot;]:::etape
+  S17300 --&gt; M
+  M{{&quot;UMCM-1 (mesoporous Zn4O MOF with bdc and btb link…&lt;br/&gt;[Zn4O(bdc)(btb)4/3]n&quot;}}:::materiau
+  O70144[&quot;BET_surface_area : 3380 m2/g&quot;]:::resultat
+  M -.-&gt; O70144
+  O70145[&quot;yield : 57 %&quot;]:::resultat
+  M -.-&gt; O70145
+  O70146[&quot;space_time_yield : 1539 kg/m3·day&quot;]:::resultat
+  M -.-&gt; O70146
+  O70147[&quot;production_rate : 0.64 g/h&quot;]:::resultat
+  M -.-&gt; O70147
+  O70148[&quot;mass_yield_collected : 106.9 mg&quot;]:::resultat
+  M -.-&gt; O70148
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11196{{&quot;UMCM-1_R1_85C_10min&quot;}}:::materiau
+  B11197[&quot;UMCM-1_R2_85C_5min&quot;]:::etape
+  B11196 --&gt;|&quot;duration = 5 min&lt;br/&gt;flow_rate = higher throughputs of re…&quot;| B11197
+  B11198[&quot;UMCM-1_R3_130C_10min&quot;]:::etape
+  B11196 --&gt;|&quot;temperature = 130 °C&quot;| B11198
+  B11199[&quot;UMCM-1_R4_130C_5min&quot;]:::etape
+  B11196 --&gt;|&quot;temperature = 130 °C&lt;br/&gt;duration = 5 min&lt;br/&gt;flow_rate = higher throughputs of re…&quot;| B11199
+  B11200[&quot;UMCM-1_R5_25C_10min&quot;]:::etape
+  B11196 --&gt;|&quot;temperature = 25 °C&quot;| B11200
+  B11201[&quot;UMCM-1_R6_25C_5min&quot;]:::etape
+  B11196 --&gt;|&quot;temperature = 25 °C&lt;br/&gt;duration = 5 min&lt;br/&gt;flow_rate = higher throughputs of re…&quot;| B11201
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MUF-77-methyl_R1_85C_10min</h2>
+<pre class="mermaid">flowchart LR
+  R14492([&quot;zinc acetate dihydrate&lt;br/&gt;0.22 g&quot;]):::reactif
+  R14492 --&gt;|&quot;precursor&quot;| S17301
+  R14493([&quot;DMF (zinc solution)&lt;br/&gt;5 mL&quot;]):::reactif
+  R14493 --&gt;|&quot;solvent&quot;| S17301
+  R14494([&quot;terephthalic acid (H2bdc)&lt;br/&gt;0.0159 g&quot;]):::reactif
+  R14494 --&gt;|&quot;ligand&quot;| S17301
+  R14495([&quot;4,4′-biphenyldicarboxylic acid (H2bpdc)&lt;br/&gt;0.0242 g&quot;]):::reactif
+  R14495 --&gt;|&quot;ligand&quot;| S17301
+  R14496([&quot;H3hmtt&lt;br/&gt;0.1408 g&quot;]):::reactif
+  R14496 --&gt;|&quot;ligand&quot;| S17301
+  R14497([&quot;DMF (ligand solution)&lt;br/&gt;5 mL&quot;]):::reactif
+  R14497 --&gt;|&quot;solvent&quot;| S17301
+  R14498([&quot;DMF (wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14498 --&gt;|&quot;wash&quot;| S17301
+  R14499([&quot;DCM (solvent exchange)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14499 --&gt;|&quot;wash&quot;| S17301
+  S17301[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S17301 --&gt; S17302
+  S17302[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S17302 --&gt; S17303
+  S17303[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 85 °C&lt;br/&gt;pressure : 5 bar&lt;br/&gt;flow_rate : 1 mL/min&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S17303 --&gt; S17304
+  S17304[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DMF&lt;br/&gt;repetitions : twice&lt;br/&gt;volume : 30 mL&quot;]:::etape
+  S17304 --&gt; S17305
+  S17305[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DCM&lt;br/&gt;repetitions : thrice&lt;br/&gt;volume : 30 mL&lt;br/&gt;duration : over three days&quot;]:::etape
+  S17305 --&gt; S17306
+  S17306[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;atmosphere : flowing N2&quot;]:::etape
+  S17306 --&gt; M
+  M{{&quot;MUF-77-methyl (quaternary Zn4O MOF with hmtt, bpd…&lt;br/&gt;[Zn4O(hmtt)4/3(bpdc)1/2(bdc)1…&quot;}}:::materiau
+  O70174[&quot;BET_surface_area : 3340 m2/g&quot;]:::resultat
+  M -.-&gt; O70174
+  O70175[&quot;yield : 50 %&quot;]:::resultat
+  M -.-&gt; O70175
+  O70176[&quot;space_time_yield : 1659 kg/m3·day&quot;]:::resultat
+  M -.-&gt; O70176
+  O70177[&quot;production_rate : 0.69 g/h&quot;]:::resultat
+  M -.-&gt; O70177
+  O70178[&quot;mass_yield_collected : 115.2 mg&quot;]:::resultat
+  M -.-&gt; O70178
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11202{{&quot;MUF-77-methyl_R1_85C_10min&quot;}}:::materiau
+  B11203[&quot;MUF-77-methyl_R2_130C_10min&quot;]:::etape
+  B11202 --&gt;|&quot;temperature = 130 °C&quot;| B11203
+  B11204[&quot;MUF-77-methyl_R3_130C_5min&quot;]:::etape
+  B11202 --&gt;|&quot;temperature = 130 °C&lt;br/&gt;duration = 5 min&quot;| B11204
+  B11205[&quot;MUF-77-methyl_R4_25C_5min&quot;]:::etape
+  B11202 --&gt;|&quot;temperature = 25 °C&lt;br/&gt;duration = 5 min&quot;| B11205
+  B11206[&quot;MUF-77-methyl_R5_25C_10min&quot;]:::etape
+  B11202 --&gt;|&quot;temperature = 25 °C&quot;| B11206
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : UMCM-1_insitu_26C</h2>
+<pre class="mermaid">flowchart LR
+  R14500([&quot;zinc acetate dihydrate&lt;br/&gt;5.96 g&quot;]):::reactif
+  R14500 --&gt;|&quot;precursor&quot;| S17307
+  R14501([&quot;DMF (zinc solution)&lt;br/&gt;150 mL&quot;]):::reactif
+  R14501 --&gt;|&quot;solvent&quot;| S17307
+  R14502([&quot;terephthalic acid (H2bdc)&lt;br/&gt;1.35 g&quot;]):::reactif
+  R14502 --&gt;|&quot;ligand&quot;| S17307
+  R14503([&quot;H3btb&lt;br/&gt;3.2 g&quot;]):::reactif
+  R14503 --&gt;|&quot;intermediate&quot;| S17307
+  R14504([&quot;DMF (ligand solution)&lt;br/&gt;150 mL&quot;]):::reactif
+  R14504 --&gt;|&quot;solvent&quot;| S17307
+  S17307[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S17307 --&gt; S17308
+  S17308[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S17308 --&gt; S17309
+  S17309[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 26 °C&lt;br/&gt;pressure : 5 bar&lt;br/&gt;flow_rate : 1 mL/min&lt;br/&gt;tubing_length_residence_… : 0 6.2 81 10 293 20 505 30 823…&quot;]:::etape
+  S17309 --&gt; M
+  M{{&quot;UMCM-1 (in situ WAXS run)&lt;br/&gt;[Zn4O(bdc)(btb)4/3]n&quot;}}:::materiau
+  O70201[&quot;intermediate_phase : MOF-5 forms first, then UMCM-1&quot;]:::resultat
+  M -.-&gt; O70201
+  O70202[&quot;crystallite_size_(010)_10min : 770 nm&quot;]:::resultat
+  M -.-&gt; O70202
+  O70203[&quot;crystallite_size_(111)_10min : 680 nm&quot;]:::resultat
+  M -.-&gt; O70203
+  O70204[&quot;AE_growth_exponent_(010) : 1.7&quot;]:::resultat
+  M -.-&gt; O70204
+  O70205[&quot;AE_growth_exponent_(111) : 1&quot;]:::resultat
+  M -.-&gt; O70205
+  O70206[&quot;MOF-5_crystallite_size_constant_af… : 100 s&quot;]:::resultat
+  M -.-&gt; O70206
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MUF-7a_insitu_26C</h2>
+<pre class="mermaid">flowchart LR
+  R14505([&quot;zinc acetate dihydrate&lt;br/&gt;3.47 g&quot;]):::reactif
+  R14505 --&gt;|&quot;precursor&quot;| S17310
+  R14506([&quot;DMF (zinc solution)&lt;br/&gt;150 mL&quot;]):::reactif
+  R14506 --&gt;|&quot;solvent&quot;| S17310
+  R14507([&quot;terephthalic acid (H2bdc)&lt;br/&gt;0.37 g&quot;]):::reactif
+  R14507 --&gt;|&quot;ligand&quot;| S17310
+  R14508([&quot;4,4′-biphenyldicarboxylic acid (H2bpdc)&lt;br/&gt;0.55 g&quot;]):::reactif
+  R14508 --&gt;|&quot;ligand&quot;| S17310
+  R14509([&quot;H3btb&lt;br/&gt;1.64 g&quot;]):::reactif
+  R14509 --&gt;|&quot;intermediate&quot;| S17310
+  R14510([&quot;DMF (ligand solution)&lt;br/&gt;150 mL&quot;]):::reactif
+  R14510 --&gt;|&quot;solvent&quot;| S17310
+  S17310[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S17310 --&gt; S17311
+  S17311[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S17311 --&gt; S17312
+  S17312[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 26 °C&lt;br/&gt;pressure : 5 bar&lt;br/&gt;flow_rate : 1 mL/min&lt;br/&gt;tubing_length_residence_… : 0 6.2 81 10 293 20 505 30 823…&quot;]:::etape
+  S17312 --&gt; M
+  M{{&quot;MUF-7a (quaternary MOF with btb, bpdc and bdc lin…&lt;br/&gt;[Zn4O(btb)4/3(bpdc)1/2(bdc)1/…&quot;}}:::materiau
+  O70220[&quot;intermediate_phase : no intermediate phase, simply…&quot;]:::resultat
+  M -.-&gt; O70220
+  O70221[&quot;Scherrer_crystallite_size_max_(042) : 800 Å&quot;]:::resultat
+  M -.-&gt; O70221
+  O70222[&quot;kinetic_regime_FW : nucleation rate lower than gr…&quot;]:::resultat
+  M -.-&gt; O70222
+  O70223[&quot;AE_rate_constant_k_(022) : 0.00284 s-1&quot;]:::resultat
+  M -.-&gt; O70223
+  O70224[&quot;AE_growth_exponent_n_(022)_TableS4 : 1.43&quot;]:::resultat
+  M -.-&gt; O70224
+  O70225[&quot;AE_R2_(022) : 0.929&quot;]:::resultat
+  M -.-&gt; O70225
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11208{{&quot;MUF-7a_insitu_26C&quot;}}:::materiau
+  B11209[&quot;MUF-7a_insitu_80C&quot;]:::etape
+  B11208 --&gt;|&quot;temperature = 80 °C&quot;| B11209
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : H3btb</h2>
+<pre class="mermaid">flowchart LR
+  R14511([&quot;aluminium chloride&lt;br/&gt;16.66 g&quot;]):::reactif
+  R14511 --&gt;|&quot;precursor&quot;| S17313
+  R14512([&quot;acetyl chloride&lt;br/&gt;90 mL&quot;]):::reactif
+  R14512 --&gt;|&quot;precursor&quot;| S17313
+  R14513([&quot;1,3,5-triphenylbenzene&lt;br/&gt;5 g&quot;]):::reactif
+  R14513 --&gt;|&quot;precursor&quot;| S17313
+  R14514([&quot;DCM (dissolution of triphenylbenzene)&lt;br/&gt;100 mL&quot;]):::reactif
+  R14514 --&gt;|&quot;solvent&quot;| S17313
+  R14515([&quot;DCM (extraction)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14515 --&gt;|&quot;wash&quot;| S17313
+  R14516([&quot;5% NaOH aqueous solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14516 --&gt;|&quot;wash&quot;| S17313
+  R14517([&quot;anhydrous magnesium sulfate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14517 --&gt;|&quot;desiccant&quot;| S17313
+  R14518([&quot;hot ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14518 --&gt;|&quot;wash&quot;| S17313
+  R14519([&quot;1,3,5-tri(4,4’,4’’-acetylphenyl)benzene&lt;br/&gt;5 g&quot;]):::reactif
+  R14519 --&gt;|&quot;intermediate&quot;| S17313
+  R14520([&quot;1,4-dioxane&lt;br/&gt;250 mL&quot;]):::reactif
+  R14520 --&gt;|&quot;solvent&quot;| S17313
+  R14521([&quot;sodium hydroxide&lt;br/&gt;16 g&quot;]):::reactif
+  R14521 --&gt;|&quot;base&quot;| S17313
+  R14522([&quot;deionised water (NaOH solution)&lt;br/&gt;110 mL&quot;]):::reactif
+  R14522 --&gt;|&quot;solvent&quot;| S17313
+  R14523([&quot;bromine&lt;br/&gt;7.3 mL&quot;]):::reactif
+  R14523 --&gt;|&quot;oxidant&quot;| S17313
+  R14524([&quot;sodium thiosulfate pentahydrate (5% aqueous …&lt;br/&gt;5% aqueous solution&quot;]):::reactif
+  R14524 --&gt;|&quot;quencher&quot;| S17313
+  R14525([&quot;concentrated HCl&lt;br/&gt;50 mL&quot;]):::reactif
+  R14525 --&gt;|&quot;acid&quot;| S17313
+  R14526([&quot;deionised water (wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14526 --&gt;|&quot;wash&quot;| S17313
+  R14527([&quot;hot methanol (recrystallisation)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14527 --&gt;|&quot;wash&quot;| S17313
+  S17313[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;duration : 5 min&lt;br/&gt;temperature : ice/water bath&quot;]:::etape
+  S17313 --&gt; S17314
+  S17314[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S17314 --&gt; S17315
+  S17315[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 2 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S17315 --&gt; S17316
+  S17316[&quot;&lt;b&gt;4. quench&lt;/b&gt;&lt;br/&gt;volume : 1800 mL&quot;]:::etape
+  S17316 --&gt; S17317
+  S17317[&quot;&lt;b&gt;5. stir&lt;/b&gt;&lt;br/&gt;duration : overnight&quot;]:::etape
+  S17317 --&gt; S17318
+  S17318[&quot;&lt;b&gt;6. extract&lt;/b&gt;&lt;br/&gt;volume : 100 mL&quot;]:::etape
+  S17318 --&gt; S17319
+  S17319[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DCM&lt;br/&gt;repetitions : 3&lt;br/&gt;volume : 100 mL&quot;]:::etape
+  S17319 --&gt; S17320
+  S17320[&quot;&lt;b&gt;8. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : 5% NaOH aqueous solution&lt;br/&gt;repetitions : 2&lt;br/&gt;volume : 100 mL&quot;]:::etape
+  S17320 --&gt; S17321
+  S17321[&quot;&lt;b&gt;9. dry&lt;/b&gt;&quot;]:::etape
+  S17321 --&gt; S17322
+  S17322[&quot;&lt;b&gt;10. evaporate&lt;/b&gt;&quot;]:::etape
+  S17322 --&gt; S17323
+  S17323[&quot;&lt;b&gt;11. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : hot ethanol&quot;]:::etape
+  S17323 --&gt; S17324
+  S17324[&quot;&lt;b&gt;12. dry&lt;/b&gt;&lt;br/&gt;duration : overnight&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S17324 --&gt; S17325
+  S17325[&quot;&lt;b&gt;13. suspend&lt;/b&gt;&quot;]:::etape
+  S17325 --&gt; S17326
+  S17326[&quot;&lt;b&gt;14. dissolve&lt;/b&gt;&lt;br/&gt;temperature : ice/water bath&quot;]:::etape
+  S17326 --&gt; S17327
+  S17327[&quot;&lt;b&gt;15. add&lt;/b&gt;&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S17327 --&gt; S17328
+  S17328[&quot;&lt;b&gt;16. react&lt;/b&gt;&lt;br/&gt;temperature : 65 °C&lt;br/&gt;duration : 2.5 h&quot;]:::etape
+  S17328 --&gt; S17329
+  S17329[&quot;&lt;b&gt;17. quench&lt;/b&gt;&lt;br/&gt;duration : 15 min&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S17329 --&gt; S17330
+  S17330[&quot;&lt;b&gt;18. filter&lt;/b&gt;&quot;]:::etape
+  S17330 --&gt; S17331
+  S17331[&quot;&lt;b&gt;19. adjust_ph&lt;/b&gt;&lt;br/&gt;volume : 50 mL&quot;]:::etape
+  S17331 --&gt; S17332
+  S17332[&quot;&lt;b&gt;20. filter&lt;/b&gt;&lt;br/&gt;wash_solvent : deionised water&quot;]:::etape
+  S17332 --&gt; S17333
+  S17333[&quot;&lt;b&gt;21. recrystallise&lt;/b&gt;&quot;]:::etape
+  S17333 --&gt; M
+  M{{&quot;4,4’,4’’-benzene-1,3,5-triyl-tribenzoic acid (H3b…&lt;br/&gt;H3btb&quot;}}:::materiau
+  O70262[&quot;yield_intermediate_triacetyl : 95 %&quot;]:::resultat
+  M -.-&gt; O70262
+  O70263[&quot;yield_H3btb : 100 %&quot;]:::resultat
+  M -.-&gt; O70263
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : truxene</h2>
+<pre class="mermaid">flowchart LR
+  R14528([&quot;1-indanone&lt;br/&gt;10 g&quot;]):::reactif
+  R14528 --&gt;|&quot;precursor&quot;| S17334
+  R14529([&quot;concentrated HCl&lt;br/&gt;20 mL&quot;]):::reactif
+  R14529 --&gt;|&quot;acid&quot;| S17334
+  R14530([&quot;glacial acetic acid&lt;br/&gt;40 mL&quot;]):::reactif
+  R14530 --&gt;|&quot;solvent&quot;| S17334
+  R14531([&quot;deionised water (wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14531 --&gt;|&quot;wash&quot;| S17334
+  R14532([&quot;acetone (wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14532 --&gt;|&quot;wash&quot;| S17334
+  S17334[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S17334 --&gt; S17335
+  S17335[&quot;&lt;b&gt;2. reflux&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S17335 --&gt; S17336
+  S17336[&quot;&lt;b&gt;3. filter&lt;/b&gt;&lt;br/&gt;wash_solvent : deionised water followed by a…&quot;]:::etape
+  S17336 --&gt; S17337
+  S17337[&quot;&lt;b&gt;4. dry&lt;/b&gt;&quot;]:::etape
+  S17337 --&gt; M
+  M{{&quot;truxene (precursor of H3hmtt)&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MgFe2O4</h2>
+<pre class="mermaid">flowchart LR
+  R14533([&quot;magnesium chloride hexahydrate&lt;br/&gt;1.02 g&quot;]):::reactif
+  R14533 --&gt;|&quot;precursor&quot;| S17338
+  R14534([&quot;iron(III) chloride hexahydrate&lt;br/&gt;2.7 g&quot;]):::reactif
+  R14534 --&gt;|&quot;precursor&quot;| S17338
+  R14535([&quot;ethylene glycol&lt;br/&gt;80 mL&quot;]):::reactif
+  R14535 --&gt;|&quot;solvent&quot;| S17338
+  R14536([&quot;sodium acetate trihydrate&lt;br/&gt;7.2 g&quot;]):::reactif
+  R14536 --&gt;|&quot;precipitating_agent&quot;| S17338
+  R14537([&quot;polyethylene glycol&lt;br/&gt;4 g&quot;]):::reactif
+  R14537 --&gt;|&quot;stabilizer&quot;| S17338
+  R14538([&quot;distilled water (wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14538 --&gt;|&quot;wash&quot;| S17338
+  R14539([&quot;ethanol (wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14539 --&gt;|&quot;wash&quot;| S17338
+  S17338[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S17338 --&gt; S17339
+  S17339[&quot;&lt;b&gt;2. reflux&lt;/b&gt;&lt;br/&gt;duration : 16 h&quot;]:::etape
+  S17339 --&gt; S17340
+  S17340[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water (3 x 40 mL), …&lt;br/&gt;repetitions : 3&lt;br/&gt;volume : 40 mL&quot;]:::etape
+  S17340 --&gt; S17341
+  S17341[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S17341 --&gt; M
+  M{{&quot;magnesium ferrite nanoparticles&lt;br/&gt;MgFe2O4&quot;}}:::materiau
+  O70264[&quot;particle_size : spherical particles of around…&quot;]:::resultat
+  M -.-&gt; O70264
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MgFe2O4@MUF-77-methyl_bed</h2>
+<pre class="mermaid">flowchart LR
+  R14540([&quot;MUF-77-methyl_R3_130C_5min&lt;br/&gt;0.12 g&quot;]):::reactif
+  R14540 --&gt;|&quot;intermediate&quot;| S17342
+  R14541([&quot;MgFe2O4&lt;br/&gt;0.0129 g&quot;]):::reactif
+  R14541 --&gt;|&quot;intermediate&quot;| S17342
+  R14542([&quot;DCM (dispersion)&lt;br/&gt;6 mL&quot;]):::reactif
+  R14542 --&gt;|&quot;solvent&quot;| S17342
+  R14543([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14543 --&gt;|&quot;gas&quot;| S17342
+  R14544([&quot;2,3-dimethylbutane (adsorbate)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14544 --&gt;|&quot;gas&quot;| S17342
+  R14545([&quot;helium (regeneration gas)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14545 --&gt;|&quot;gas&quot;| S17342
+  S17342[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;volume : 6 mL&quot;]:::etape
+  S17342 --&gt; S17343
+  S17343[&quot;&lt;b&gt;2. evaporate&lt;/b&gt;&lt;br/&gt;duration : overnight&lt;br/&gt;atmosphere : N2 atmosphere&quot;]:::etape
+  S17343 --&gt; S17344
+  S17344[&quot;&lt;b&gt;3. mix&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S17344 --&gt; S17345
+  S17345[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S17345 --&gt; S17346
+  S17346[&quot;&lt;b&gt;5. pack&lt;/b&gt;&lt;br/&gt;bed_height : 37 mm&lt;br/&gt;wall_thickness : 2 mm&lt;br/&gt;bed_mass : 0.1329 g&quot;]:::etape
+  S17346 --&gt; S17347
+  S17347[&quot;&lt;b&gt;6. heat&lt;/b&gt;&lt;br/&gt;temperature : 66 °C&lt;br/&gt;duration : for an hour&lt;br/&gt;atmosphere : flowing N2&quot;]:::etape
+  S17347 --&gt; M
+  M{{&quot;MgFe2O4@MUF-77-methyl composite packed bed (10 wt…&lt;br/&gt;&quot;}}:::materiau
+  O70265[&quot;magnetization : 8 emu/g&quot;]:::resultat
+  M -.-&gt; O70265
+  O70266[&quot;breakthrough_time_25pct_feed : 100 s&quot;]:::resultat
+  M -.-&gt; O70266
+  O70267[&quot;saturation_time_25pct_feed : 300 s&quot;]:::resultat
+  M -.-&gt; O70267
+  O70268[&quot;breakthrough_time_3pct_feed : 300 s&quot;]:::resultat
+  M -.-&gt; O70268
+  O70269[&quot;saturation_time_3pct_feed : 850 s&quot;]:::resultat
+  M -.-&gt; O70269
+  O70270[&quot;usable_bed_capacity_25_75_feed : 176 cm3/g&quot;]:::resultat
+  M -.-&gt; O70270
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
