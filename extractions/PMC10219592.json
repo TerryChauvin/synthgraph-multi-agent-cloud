@@ -227,6 +227,12 @@
     "Fig. 4D-F",
     "Table S4"
    ]
+  },
+  {
+   "sample": "Film témoin recuit à 180 °C sous N2 (comparé au recuit à l'air)",
+   "defined_in": "Supporting Information, fig. S1",
+   "route": null,
+   "why": "Photographies seules (fig. S1, image d'annexe absente) ; l'atmosphère N2 du recuit n'est décrite dans aucune méthode et aucune valeur chiffrée n'est donnée."
   }
  ],
  "routes": [
@@ -376,10 +382,17 @@
    "characterizations": [
     {
      "technique": "single-crystal XRD",
-     "result": "structure du cation [PPN]+ et de l'anion [TFSI]− (CF3 en trans), liaisons C-H···O 2,470–2,500 Å, C-H···F 2,530–2,613 Å, C-H···π 2,736 Å",
+     "result": "structure du cation [PPN]+ et de l'anion [TFSI]− (CF3 en trans) ; liaisons C-H···O 2,470–2,500 Å, C-H···F 2,530–2,613 Å, C-H···π 2,736 Å, F···F 2,896 Å",
      "instrument": "SuperNova, Dual, Cu at home/near, Atlas diffractometer",
      "conditions": "T = 140.01(10) K ; rayonnement Cu Kα ; balayages ω",
-     "quote": "The two CF3 groups in the [TFSI] anion are trans despite the high symmetry of the cation"
+     "quote": "The shortest C-H─O bonds are in the range of 2.470 to 2.500 Å, and the shortest C-H─F distances are 2.530 to 2.613 Å (Fig. 2A). Interesting, there are relatively strong C-H─π interactions with the shortest distance being 2.736 Å (Fig. 2B). An F─F interaction is also present (2.896 Å)."
+    },
+    {
+     "technique": "XPS",
+     "result": "O 1s de [PPN][TFSI] et Pb 4f de CsPbI3 décalés vers les basses énergies après interaction (fig. S27)",
+     "instrument": "Thermo VG Scientific ESCALAB 250",
+     "conditions": "sous N2",
+     "quote": "XPS was conducted in the N2 by Thermo VG Scientific ESCALAB 250."
     }
    ],
    "outcomes": [
@@ -468,10 +481,17 @@
    "characterizations": [
     {
      "technique": "single-crystal XRD",
-     "result": "groupe d'espace P21/c (n° 14), Z′ = 2, CCDC 2201978",
+     "result": "groupe d'espace P21/c (n° 14)",
      "instrument": "SuperNova, Dual, Cu at home/near, Atlas diffractometer",
      "conditions": "T = 140.01(10) K ; Cu Kα (λ = 1.54184 Å) ; résolution maximale 0,81 Å ; CrysAlisPro 1.171.41.89a",
      "quote": "The structure was solved, and the space group P21/c (# 14) was determined by the SHELXT"
+    },
+    {
+     "technique": "single-crystal XRD (Z′, CCDC)",
+     "result": "Z′ = 2 ; CCDC 2201978",
+     "instrument": "SuperNova, Dual, Cu at home/near, Atlas diffractometer",
+     "conditions": "T = 140.01(10) K ; Cu Kα (λ = 1.54184 Å) ; résolution maximale 0,81 Å ; CrysAlisPro 1.171.41.89a",
+     "quote": "The value of Z′ is 2. This means that there are two independent molecules in the asymmetric unit. Crystallographic and refinement data are summarized in data S1 and tables S1 to S7. The Cambridge Crystallographic Data Centre (CCDC) number 2201978"
     }
    ],
    "outcomes": [
@@ -680,6 +700,11 @@
        "name": "molar_ratio",
        "quote": "(i) a three-component reaction between [PPN][TFSI], DMAI, and PbI2 was performed by mixing the three components in a 1:1:1 molar ratio in DMF.",
        "value_text": "1:1:1"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "the reactions were not conducted under an inert atmosphere",
+       "value_text": "not conducted under an inert atmosphere"
       }
      ],
      "equipment": [],
@@ -694,8 +719,14 @@
      "order": 2,
      "action": "evaporate",
      "description": "Laisser le solvant s'évaporer lentement : des cristaux jaunes de [PPN][PbI3] se forment, puis des cristaux blancs de [DMA][TFSI] après évaporation complète du DMF.",
-     "quote": "A yellow solution is obtained from which yellow crystals were grown following slow evaporation of the solvent",
-     "parameters": [],
+     "quote": "A yellow solution is obtained from which yellow crystals were grown following slow evaporation of the solvent (fig. S11, A and B). The yellow crystals were characterized as [PPN][PbI3] using single-crystal XRD analysis (fig. S12 and data S2 and S3), in which the [PPN] cation forms an ion pair with the PbI3 anion. After complete evaporation of the DMF solvent, white crystals also formed",
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "quote": "the reactions were not conducted under an inert atmosphere",
+       "value_text": "not conducted under an inert atmosphere"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "temperature",
@@ -812,8 +843,7 @@
    "succeeded": true,
    "yield": null,
    "not_stated": [
-    "yield",
-    "substrate"
+    "yield"
    ],
    "reagents": [
     {
@@ -1047,6 +1077,34 @@
      "instrument": "Hitachi S-4800 field emission scanning electron microscope",
      "conditions": null,
      "quote": "SEM images were obtained by Hitachi S-4800 field emission scanning electron microscope."
+    },
+    {
+     "technique": "TGA",
+     "result": "point d'inflexion de la perte de masse du film γ-DMAxCs1−xPbI3 à 200 °C (témoin)",
+     "instrument": "TGA/DSC1 (Mettler Toledo)",
+     "conditions": null,
+     "quote": "TGA data were collected using TGA/DSC1 from Mettler Toledo."
+    },
+    {
+     "technique": "PL and time-resolved PL",
+     "result": "intensité de PL et durées de vie des porteurs (Fig. 3E-F), films sur substrats de verre",
+     "instrument": "marine optical microfiber spectrometer (Perkin LS-55)",
+     "conditions": "films sur substrats de verre (légende Fig. 3E) ; laser d'excitation 450 nm",
+     "quote": "The PL spectra and PL decays were recorded by marine optical microfiber spectrometer (Perkin LS-55) with an excitation laser at 450 nm."
+    },
+    {
+     "technique": "SCLC",
+     "result": "tension de remplissage des pièges VTFL 1,13 V (Fig. 3G)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The quantitative characterization of defect densities was estimated by the space charge–limited current (SCLC) method"
+    },
+    {
+     "technique": "GIWAXS",
+     "result": "orientation cristalline des films ; pics supplémentaires de la phase δ à q = 0,708 et 0,922 Å−1 dans le témoin (fig. S7)",
+     "instrument": "PILATUS 300 K 2D x-ray detectors, Huber diffractometer",
+     "conditions": "ligne BL19B2 de SPring-8 ; énergie des photons 12.39 keV (1.0 Å)",
+     "quote": "The GIWAXS was measured at beamline BL19B2 of SPring-8 with PILATUS 300 K 2D x-ray detectors with a Huber diffractometer and photon energy of 12.39 keV (1.0 Å)."
     }
    ],
    "outcomes": [
@@ -1106,10 +1164,25 @@
      "property": "SCLC_trap_density",
      "quote": "the trap-filled limit voltage (VTFL) is reduced to 0.83 V from 1.13 V with the assistance of [PPN][TFSI], corresponding to a decreased density of trap states from 4.94 × 1015 to 3.63 × 1015 cm−3.",
      "value_text": "4.94 × 1015 cm−3"
+    },
+    {
+     "property": "gamma_peak_position_shift_during_annealing",
+     "quote": "as confirmed by the peak position of γ-DMAxCs1−xPbI3 shifting from 14.28° to 14.33° and 28.75° to 28.89°",
+     "value_text": "14.28° to 14.33° and 28.75° to 28.89°"
+    },
+    {
+     "property": "intermediate_phase_peak_positions",
+     "quote": "Both films exhibit only DMAPbI3 (11.69°) and C4PbI6 (11.96°, 12.17°, and 28.55°) intermediate phases at the beginning of the annealing process.",
+     "value_text": "DMAPbI3 (11.69°) and C4PbI6 (11.96°, 12.17°, and 28.55°)"
+    },
+    {
+     "property": "delta_phase_peak_positions",
+     "quote": "the total phase transition to δ phase (10.00° and 13.12°) was observed after 35 min.",
+     "value_text": "10.00° and 13.12°"
     }
    ],
    "missing_fields": [
-    "substrate_of_film",
+    "substrate_of_in_situ_series_Fig1",
     "heating_rate",
     "volume_of_DMSO",
     "sample_preparation_for_in_situ_series"
@@ -1218,6 +1291,34 @@
      "quote": "The results indicate an optimal device performance at 0.025 mol %",
      "value_num": 0.025,
      "unit": "mol %"
+    },
+    {
+     "property": "intermediate_phase_peak_positions",
+     "quote": "Both films exhibit only DMAPbI3 (11.69°) and C4PbI6 (11.96°, 12.17°, and 28.55°) intermediate phases at the beginning of the annealing process.",
+     "value_text": "DMAPbI3 (11.69°) and C4PbI6 (11.96°, 12.17°, and 28.55°)"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "TGA",
+     "result": "point d'inflexion de la perte de masse du film γ-DMAxCs1−xPbI3 avec [PPN][TFSI] à 230 °C",
+     "instrument": "TGA/DSC1 (Mettler Toledo)",
+     "conditions": null,
+     "quote": "TGA data were collected using TGA/DSC1 from Mettler Toledo."
+    },
+    {
+     "technique": "PL and time-resolved PL",
+     "result": "intensité de PL accrue et durée de vie plus longue (Fig. 3E-F), films sur substrats de verre",
+     "instrument": "marine optical microfiber spectrometer (Perkin LS-55)",
+     "conditions": "films sur substrats de verre (légende Fig. 3E) ; laser d'excitation 450 nm",
+     "quote": "The PL spectra and PL decays were recorded by marine optical microfiber spectrometer (Perkin LS-55) with an excitation laser at 450 nm."
+    },
+    {
+     "technique": "SCLC",
+     "result": "tension de remplissage des pièges VTFL 0,83 V (Fig. 3H)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The quantitative characterization of defect densities was estimated by the space charge–limited current (SCLC) method"
     }
    ]
   },
@@ -1490,6 +1591,11 @@
      "property": "phase",
      "quote": "After annealing for 150 min, the peak positions of γ-DMAxCs1−xPbI3 shifted to 14.37° and 28.93°, assigned to the characteristic peaks of pure-phase γ-CsPbI3 without DMAI residuals.",
      "value_text": "pure-phase γ-CsPbI3 without DMAI residuals"
+    },
+    {
+     "property": "gamma_peak_positions_150min",
+     "quote": "After annealing for 150 min, the peak positions of γ-DMAxCs1−xPbI3 shifted to 14.37° and 28.93°, assigned to the characteristic peaks of pure-phase γ-CsPbI3 without DMAI residuals.",
+     "value_text": "14.37° and 28.93°"
     }
    ]
   },
@@ -1741,18 +1847,12 @@
      "action": "dissolve",
      "description": "Préparer la solution de HTM : Spiro-OMeTAD dans le chlorobenzène avec la solution de Li[TFSI]/acétonitrile et la 4-tert-butylpyridine.",
      "quote": "Hole transport material (HTM) solution was prepared by dissolving 72.3 mg of Spiro-OMeTAD in 1 ml of chlorobenzene with the addition of 46.3 μl of Li[TFSI]/acetonitrile solution (1.8 M) with 1.645 ml of 4-tert-butylpyridine/ml.",
-     "parameters": [
-      {
-       "name": "concentration",
-       "quote": "of Li[TFSI]/acetonitrile solution (1.8 M)",
-       "value_num": 1.8,
-       "unit": "M"
-      }
-     ],
+     "parameters": [],
      "equipment": [],
      "not_stated": [
       "duration",
-      "temperature"
+      "temperature",
+      "concentration"
      ]
     },
     {
@@ -1822,9 +1922,9 @@
     {
      "technique": "MPP tracking",
      "result": "88 % du PCE initial après 1000 h",
-     "instrument": "LED",
-     "conditions": "100 mW cm−2, 25°C, flux de N2",
-     "quote": "The MPP tracing test was conducted under light-emitting diode illumination of 100 mW cm−2 at 25°C, and the devices were flushed with an N2 flow."
+     "instrument": null,
+     "conditions": "100 mW cm−2, AM1.5G, 25°C, RH ~2 %, flux de N2, dispositifs non encapsulés",
+     "quote": "the long-term operational stability of the unencapsulated devices was traced under continuous 1-sun irradiation (100 mW cm−2, AM1.5G, 25°C, RH of ~2%) with N2 flow at the maximum power point (MPP)"
     }
    ],
    "outcomes": [
@@ -1963,6 +2063,30 @@
      "quote": "The CsPbI3-[PPN][TFSI] device maintains about 88% of its initial PCE after 1000 hours of light soaking (Fig. 5E)",
      "value_num": 88,
      "unit": "% of initial PCE"
+    },
+    {
+     "property": "JSC_certified_forward_scan",
+     "quote": "This work 9.016 RS 20.93 1.189 79.1 19.69 3.8% FS 20.81 1.175 77.5 18.95",
+     "value_num": 20.81,
+     "unit": "mA cm−2"
+    },
+    {
+     "property": "VOC_certified_forward_scan",
+     "quote": "This work 9.016 RS 20.93 1.189 79.1 19.69 3.8% FS 20.81 1.175 77.5 18.95",
+     "value_num": 1.175,
+     "unit": "V"
+    },
+    {
+     "property": "FF_certified_forward_scan",
+     "quote": "This work 9.016 RS 20.93 1.189 79.1 19.69 3.8% FS 20.81 1.175 77.5 18.95",
+     "value_num": 77.5,
+     "unit": "%"
+    },
+    {
+     "property": "hysteresis_index_certified",
+     "quote": "This work 9.016 RS 20.93 1.189 79.1 19.69 3.8% FS 20.81 1.175 77.5 18.95",
+     "value_num": 3.8,
+     "unit": "%"
     }
    ],
    "missing_fields": [
@@ -2365,7 +2489,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "Device_PPN_0.025",
-   "text": "La couche de TiO2 par dépôt de couches atomiques est annoncée « comme dans notre rapport précédent » sans conditions ; le colloïde de SnO2 (concentration, fournisseur), le volume de HTM déposé et la pression d'évaporation de l'or ne sont pas donnés. La quantité de 4-tert-butylpyridine est écrite « 1.645 ml of 4-tert-butylpyridine/ml », dont l'unité est ambiguë.",
+   "text": "La couche de TiO2 par dépôt de couches atomiques est annoncée « comme dans notre rapport précédent » sans conditions ; le colloïde de SnO2 (concentration, fournisseur), le volume de HTM déposé et la pression d'évaporation de l'or ne sont pas donnés. La quantité de 4-tert-butylpyridine est écrite « 1.645 ml of 4-tert-butylpyridine/ml », dont l'unité est ambiguë ; le rapport 28,8/17,5 = 1,645 entre le volume de 4-tert-butylpyridine et celui de la solution de Li[TFSI] à 1,8 M d'un prémélange de 46,3 µL correspond à la recette courante du Spiro-OMeTAD, ce qui suggère « 1,645 µL de 4-tert-butylpyridine par µL de solution de Li[TFSI] » (hypothèse, valeur de l'article non modifiée). Le Jsc × Voc × FF de la cellule champion donne 20,55 % pour 20,64 % annoncé, et l'écart-type de la tension du témoin dans la Table S2 (± 0,28 V) est incompatible avec celui du rendement (± 0,62 point) : coquille probable des auteurs.",
    "quote": "1.645 ml of 4-tert-butylpyridine/ml"
   },
   {
@@ -2383,7 +2507,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Control_film",
-   "text": "Hypothèse de chimiste : la solution CsI/DMAI/PbI2 (1:1:1) donne par séchage un mélange de DMAPbI3 (cristallin) et de Cs4PbI6 ; au recuit, Cs4PbI6 + DMAPbI3 forment γ-DMAxCs1−xPbI3 puis γ-CsPbI3 lorsque le DMAI s'évapore, et l'humidité de l'air accélère la dégradation vers δ-CsPbI3. L'additif, très peu soluble dans l'eau et volatil seulement à haute température, resterait aux joints de grains et ralentirait l'échange d'ions. Si les 0,025 mol % se rapportent au Pb (1,43 M), la solution contient environ 0,36 mmol L−1 de [PPN][TFSI], soit ≈ 0,3 g L−1 (M ≈ 819 g mol−1).",
+   "text": "Hypothèse de chimiste : la solution CsI/DMAI/PbI2 (1:1:1) donne par séchage un mélange de DMAPbI3 (cristallin) et de Cs4PbI6 ; au recuit, Cs4PbI6 + DMAPbI3 forment γ-DMAxCs1−xPbI3 puis γ-CsPbI3 lorsque le DMAI s'évapore, et le recuit à l'air (par rapport à l'atmosphère inerte) accélère l'échange d'ions et le passage vers δ-CsPbI3, selon les auteurs (fig. S1) ; le rôle de l'humidité n'est pas établi, l'humidité relative du recuit n'étant pas donnée. L'additif, très peu soluble dans l'eau et volatil seulement à haute température, resterait aux joints de grains et ralentirait l'échange d'ions. Si les 0,025 mol % se rapportent au Pb (1,43 M), la solution contient environ 0,36 mmol L−1 de [PPN][TFSI], soit ≈ 0,3 g L−1 (M ≈ 819 g mol−1).",
    "quote": null
   },
   {
@@ -2408,6 +2532,36 @@
    "type": "securite_analyse",
    "route": "Device_PPN_0.025",
    "text": "Le chlorobenzène et l'acétonitrile sont inflammables et toxiques ; la 4-tert-butylpyridine est irritante et nocive ; l'évaporation de l'or se fait sous vide poussé. Les dispositifs non encapsulés contiennent du plomb et ne doivent pas être jetés comme déchets ordinaires.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "PPN_0.025",
+   "text": "Hypothèse de chimiste, à revoir : la petite quantité de sel volumineux, peu soluble dans les phases intermédiaires, serait rejetée aux surfaces et aux joints de DMAPbI3 dès le séchage, où [PPN]+ peut s'associer à des iodoplombates et [TFSI]− se coordonner au plomb ; elle diminuerait le nombre de nuclei (grains plus gros dès 2 min) et ralentirait l'interdiffusion Cs+/DMA+ et le départ du DMA (point d'inflexion de la TGA de 200 à 230 °C), d'où une conversion plus lente mais plus homogène (cinétique et thermodynamique de l'incorporation du DMAI : Mishra et al., 2022, ACS Energy Lett. 7, 2745). Une paire d'ions pour 4 000 Pb ne couvre que ≈ 3 à 7 % de la surface de grains de 100 à 250 nm, bien moins que la demi-monocouche du calcul DFT ; la stabilisation de γ contre δ par des contacts Pb–O calculés n'est donc pas démontrée à cette dose, et l'espèce présente aux joints n'est pas forcément [PPN][TFSI] intact (voir Model_DMF_3comp).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Minimodule_PPN",
+   "text": "Incohérence des auteurs : les valeurs imprimées du meilleur minimodule (Table S4 et Fig. 4E : 70,71 mA, 9,60 V, 67,35 %) donnent 16,23 % et non 16,89 % ; les cinq autres lignes de la Table S4 se recalculent, et la courbe de la Fig. 4E coupe l'axe vers 9,2 V et non 9,60 V. Au moins un des trois nombres (Voc, FF, rendement) est faux ; la valeur extraite 16,89 % est littérale et n'est pas vérifiable. La valeur certifiée à l'IMT (16,10 % en surface active, 14,49 % en ouverture) se recalcule. Avec le procédé non décrit, ce module n'est pas reproductible à partir de l'article.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PPN_0.025",
+   "text": "Incohérence entre sections : les films des cellules (témoin et 0,025 mol %) sont recuits 20 min à 180 °C (Méthodes), alors que la série in situ des mêmes auteurs montre qu'à 20 min le film additivé contient encore des intermédiaires (jusqu'à 22 min) et n'est sans DMA qu'à 150 min, tandis que le témoin se dégrade dès 14-17 min. La durée de recuit optimale de chaque film n'est pas établie et une partie du gain de rendement pourrait venir de la durée de recuit plutôt que de l'additif. Par ailleurs 0,025 mol % ne couvre que ≈ 3 à 7 % de la surface des grains de 100 à 250 nm, contre la demi-monocouche supposée par le calcul DFT.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Model_DMF_3comp",
+   "text": "Les réactions modèles se font dans le DMF, sans CsI pour la première et avec un rapport additif/plomb de 1, alors que les films sont préparés dans le DMSO avec 0,025 mol % d'additif et recuits à l'état solide ; la réaction modèle dans le DMSO ne contient pas de DMAI. Les résultats des modèles ne prouvent donc pas l'échange d'ions dans l'encre réelle.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Control_film",
+   "text": "Le recuit à 100 °C puis 180 °C se fait « à l'air ambiant » sans humidité relative indiquée, alors que les auteurs disent que l'air accélère l'échange d'ions et la transition de phase ; les Résultats parlent d'un séchage à 100 °C sous N2 (fig. S2). L'affirmation « sans résidu de DMAI » repose sur le seul décalage de la raie DRX (14,28 → 14,37°), ce qui n'est pas une preuve : le DMA peut rester piégé dans le film (Ke et al., 2018 ; Mishra et al., 2022).",
    "quote": null
   }
  ],
@@ -2446,7 +2600,7 @@
   },
   {
    "where": "Device_PPN_0.025, 4-tert-butylpyridine",
-   "issue": "« with 1.645 ml of 4-tert-butylpyridine/ml » : unité et base de calcul ambiguës (ml par ml de chlorobenzène ? μl ?). Recopié sans valeur numérique (amount_text)."
+   "issue": "« with 1.645 ml of 4-tert-butylpyridine/ml » : unité et base de calcul ambiguës, valeur recopiée telle quelle sans valeur numérique (amount_text). Lecture proposée par la critique scientifique, non retenue comme valeur : prémélange de 46,3 µL = 17,5 µL de solution de Li[TFSI] 1,8 M + 28,8 µL de 4-tert-butylpyridine (28,8/17,5 = 1,645), soit la recette courante du Spiro-OMeTAD."
   },
   {
    "where": "Device_PPN_0.025, hystérésis",
@@ -2483,6 +2637,34 @@
   {
    "where": "Figures lues (Fig. 4B, 4E, 4F)",
    "issue": "Huit valeurs lues sur des chiffres imprimés dans les panneaux : Fig. 4B balayage direct (JSC 20,90 mA cm−2, VOC 1,19 V, FF 76,49 %, PCE 19,09 %), Fig. 4E JSC 2,51 mA cm−2, Fig. 4F JSC 2,43 mA cm−2, VOC 9,21 V, FF 72,00 %. Aucune lecture de courbe. Fig. 1 (MEB, cartes PL, DRX) ouverte : les repères de temps sont déjà dans le texte ; Fig. 5 : les valeurs à 1000 h du texte concordent avec les courbes."
+  },
+  {
+   "where": "Device_PPN_0.025 étape 6, concentration 1.8 M",
+   "issue": "« 1.8 M » est la concentration de la solution mère de Li[TFSI] dans l'acétonitrile (déjà dans le nom du réactif), pas celle du HTM ; le paramètre a été retiré de l'étape et la concentration du HTM déclarée non citée (72,3 mg dans 1 ml de chlorobenzène en quantités)."
+  },
+  {
+   "where": "Control_film et PPN_0.025, SCLC_trap_density",
+   "issue": "L'exposant est aplati dans le texte source (« 4.94 × 1015 to 3.63 × 1015 cm−3 ») : lire 4,94 × 10^15 et 3,63 × 10^15 cm−3. Valeur recopiée telle quelle en value_text, citation inchangée."
+  },
+  {
+   "where": "Minimodule_PPN, Table S4 et Fig. 4E",
+   "issue": "Isc 70,71 mA × Voc 9,60 V × FF 67,35 % / (100 mW cm−2 × 28,17 cm2) donne ≈ 16,2 % et non 16,89 % ; la courbe de la Fig. 4E coupe l'axe vers 9,2 V. Valeurs extraites telles quelles (littérales), sans correction."
+  },
+  {
+   "where": "Device_PPN_0.025, champion",
+   "issue": "Jsc 20,91 × Voc 1,21 × FF 81,22 % donne 20,55 % et non 20,64 % (Voc probablement arrondi). Valeurs non modifiées."
+  },
+  {
+   "where": "Fig. 2D contre texte (non extrait)",
+   "issue": "La Fig. 2D imprime 0,20 eV pour le décalage Pb 4f de DMAPbI3 alors que le texte dit 0,22 eV ; aucune voie ne porte cette valeur, rien n'est modifié."
+  },
+  {
+   "where": "Control_film, positions des raies DRX",
+   "issue": "Les positions 14,28 → 14,33° et 28,75 → 28,89° sont données dans la phrase qui suit la description du film témoin (chauffage constant, perte de DMAI) ; elles sont rangées sur Control_film. Le substrat des films des séries in situ reste non cité (celui des films de PL est le verre)."
+  },
+  {
+   "where": "Model_DMF_3comp et Model_DMF_4comp, atmosphère",
+   "issue": "« the reactions were not conducted under an inert atmosphere » vise les deux réactions modèles DMF ; le paramètre est porté par les étapes de Model_DMF_3comp, dont Model_DMF_4comp hérite."
   }
  ]
 }

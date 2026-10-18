@@ -158,7 +158,7 @@
     {
      "order": 3,
      "action": "heat",
-     "description": "Raise the temperature to 240 °C under argon flow.",
+     "description": "Raise the temperature to 240 °C under argon flow; the cadmium acetate injection of the next step takes place during this ramp, at 205 °C.",
      "quote": "The temperature was then raised to 240 °C under argon flow.",
      "parameters": [
       {
@@ -182,7 +182,7 @@
     {
      "order": 4,
      "action": "add",
-     "description": "Quickly inject cadmium acetate dihydrate at 205 °C (yellow-orange mixture).",
+     "description": "Quickly inject cadmium acetate dihydrate at 205 °C (yellow-orange mixture), during the temperature ramp towards 240 °C.",
      "quote": "At 205 °C, when the colour was yellow-orange, 280 mg of cadmium acetate dihydrate were quickly injected.",
      "parameters": [
       {
@@ -698,9 +698,15 @@
     {
      "order": 6,
      "action": "add",
-     "description": "Transfer the solution to centrifuge tubes and add ethanol to precipitate the NPs.",
+     "description": "Transfer the solution to centrifuge tubes and add ethanol to precipitate the NPs (part of the precipitation/dissolution cycle, steps 6 to 8).",
      "quote": "To precipitate NPs, the solution was transferred to centrifuge tubes and 2 ml of ethanol was added.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "repetitions",
+       "value_text": "repeated three times",
+       "quote": "The precipitation/dissolution procedure was repeated three times before further application."
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "addition_rate"
@@ -735,9 +741,15 @@
     {
      "order": 8,
      "action": "dissolve",
-     "description": "Discard the supernatant and dissolve the precipitate in THF.",
+     "description": "Discard the supernatant and dissolve the precipitate in THF (part of the precipitation/dissolution cycle, steps 6 to 8).",
      "quote": "The supernatant was discarded and the precipitate was dissolved in THF.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "repetitions",
+       "value_text": "repeated three times",
+       "quote": "The precipitation/dissolution procedure was repeated three times before further application."
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "duration"
@@ -839,20 +851,13 @@
     "morphology": "spherical"
    },
    "quote": "On the basis of, it can be assumed that the reaction time with TAA influences the growth of the CdS shell (observed red shift in the absorbance and emission spectra), but allows only spherical structures to be obtained. Therefore, a small amount of CdCl2/Cd(OL)2 was introduced into the reaction mixture to initiate growth in a different shape.",
-   "succeeded": false,
+   "succeeded": null,
    "variations": [
     {
      "parameter": "CdCl2/Cd(OL)2 suspension (route CdCl2_CdOL2)",
      "value_text": "absent",
      "parent_value": "60 μl",
      "quote": "On the basis of, it can be assumed that the reaction time with TAA influences the growth of the CdS shell (observed red shift in the absorbance and emission spectra), but allows only spherical structures to be obtained. Therefore, a small amount of CdCl2/Cd(OL)2 was introduced into the reaction mixture to initiate growth in a different shape."
-    },
-    {
-     "parameter": "duration",
-     "step_order": 5,
-     "value_text": "varied (series of reaction times with TAA; values not given in the text)",
-     "parent_value": "72 h",
-     "quote": "The absorbance properties of the nanoparticles show a dependence on the reaction time with TAA."
     }
    ],
    "steps": [
@@ -870,18 +875,13 @@
     {
      "order": 2,
      "action": "react",
-     "description": "Let the reaction proceed with TAA only; nanoplatelets rearrange into CdSe quantum dots and CdS shell growth begins.",
+     "description": "Let the reaction proceed with TAA only (reaction time varied in the series; values not given in the text); nanoplatelets rearrange into CdSe quantum dots and CdS shell growth begins.",
      "quote": "During the reaction, nanoplatelets rearranged into CdSe quantum dots and has begun the growth of the CdS shell (Fig. S1†).",
-     "parameters": [
-      {
-       "name": "duration",
-       "value_text": "varied",
-       "quote": "The absorbance properties of the nanoparticles show a dependence on the reaction time with TAA."
-      }
-     ],
+     "parameters": [],
      "equipment": [],
      "not_stated": [
-      "temperature"
+      "temperature",
+      "duration"
      ]
     }
    ],
@@ -889,8 +889,8 @@
     {
      "technique": "absorbance and PL",
      "result": "red shift of absorbance and emission with reaction time with TAA; only spherical structures obtained",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "JASCO V-770 spectrophotometer (absorbance); FLUOROLOG-3 spectrofluorimeter (Horiba) (emission)",
+     "conditions": "excitation wavelength 400 nm",
      "quote": "On the basis of, it can be assumed that the reaction time with TAA influences the growth of the CdS shell (observed red shift in the absorbance and emission spectra), but allows only spherical structures to be obtained. Therefore, a small amount of CdCl2/Cd(OL)2 was introduced into the reaction mixture to initiate growth in a different shape."
     }
    ],
@@ -907,8 +907,18 @@
     },
     {
      "property": "TEM_intermediate_2h",
-     "value_text": "degradation of the NPLs to spherical structures after 2 h (Fig. S1C, image not readable here)",
-     "quote": "During the reaction, nanoplatelets rearranged into CdSe quantum dots and has begun the growth of the CdS shell (Fig. S1†)."
+     "value_text": "degradation of the NPLs to spherical structures (intermediate product of surface modification after 2 h)",
+     "quote": "C) TEM image of the degradation of NPLs to spherical structures (intermediate product of surface modification after 2 h)"
+    },
+    {
+     "property": "PL_intensity_trend",
+     "value_text": "the photoluminescence intensity increases",
+     "quote": "As the reaction time increases, the photoluminescence intensity increases, indicating improved NPs quality and increased emission efficiency."
+    },
+    {
+     "property": "PL_quenching_prolonged_time",
+     "value_text": "an excessively prolonged reaction time may result in quenching effects that reduce photoluminescence",
+     "quote": "However, an excessively prolonged reaction time may result in quenching effects that reduce photoluminescence."
     }
    ]
   },
@@ -945,8 +955,6 @@
      "name": "tetrahydrofuran (THF)",
      "formula": "C4H8O",
      "role": "solvent",
-     "amount": 2,
-     "unit": "ml",
      "amount_text": "to a volume of 2 ml",
      "purity": "99.0%",
      "supplier": "Sigma-Aldrich",
@@ -982,14 +990,14 @@
    ],
    "outcomes": [
     {
-     "property": "PL_max_intensity_682nm_0min",
+     "property": "PL_max_intensity_0min",
      "value_num": 27000000,
      "unit": "a.u.",
      "from_figure": "Fig. 5C",
      "quote": "Fig. 5 Emission spectra for (A) CdSe/CdS NPs and (B) CdSe/CdS + TBAF in time 0–120 min; (C) maximum intensity of photoluminescence for CdSe/CdS NPs in time before (black) and after addition of TBAF (red)."
     },
     {
-     "property": "PL_max_intensity_682nm_120min",
+     "property": "PL_max_intensity_120min",
      "value_num": 35000000,
      "unit": "a.u.",
      "from_figure": "Fig. 5C",
@@ -1061,14 +1069,14 @@
    ],
    "outcomes": [
     {
-     "property": "PL_max_intensity_682nm_0min",
+     "property": "PL_max_intensity_0min",
      "value_num": 31000000,
      "unit": "a.u.",
      "from_figure": "Fig. 5C",
      "quote": "Fig. 5 Emission spectra for (A) CdSe/CdS NPs and (B) CdSe/CdS + TBAF in time 0–120 min; (C) maximum intensity of photoluminescence for CdSe/CdS NPs in time before (black) and after addition of TBAF (red)."
     },
     {
-     "property": "PL_max_intensity_682nm_120min",
+     "property": "PL_max_intensity_120min",
      "value_num": 86000000,
      "unit": "a.u.",
      "from_figure": "Fig. 5C",
@@ -1153,11 +1161,10 @@
      "role": "precursor",
      "amount": 0.67,
      "unit": "g",
-     "not_stated": [
-      "purity",
-      "supplier"
-     ],
-     "quote": "A suspension of CdSe/CdS NPs (30 μl) in THF was introduced into a MTEOS/TEOS sol (0.67 g), prepared using an adapted procedure from previously reported method, and filled to a volume of approximately 1 ml of THF."
+     "quote": "A suspension of CdSe/CdS NPs (30 μl) in THF was introduced into a MTEOS/TEOS sol (0.67 g), prepared using an adapted procedure from previously reported method, and filled to a volume of approximately 1 ml of THF.",
+     "purity": "98.0%",
+     "supplier": "ABCR",
+     "supplier_quote": "Methyltriethoxysilane (MTEOS, 98.0%) and tetraethyl orthosilicate (TEOS, 98.0%) were purchased from ABCR."
     },
     {
      "name": "tetrahydrofuran (THF)",
@@ -1366,7 +1373,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "La préparation de l'oléate de cadmium est renvoyée aux publications d'Ithurria et al. et n'est pas décrite. Le sol MTEOS/TEOS (rapport des alcoxydes, acide d'hydrolyse, durée) est renvoyé à une méthode antérieure et n'est pas décrit ; la mention « MTEOS:TEOS, 49% » n'est pas explicitée. Pour la série en temps de réaction avec la thioacétamide seule, ni quantités ni durées ne sont données dans le texte. La concentration de la suspension de nanoparticules utilisée pour le verre, les rendements et les vitesses d'agitation ne sont pas donnés. Les figures S1 à S8 de l'annexe ne sont lisibles que par leur légende dans le dépôt : leurs courbes n'ont pas été lues. Les valeurs d'intensité de la Fig. 5C et de la Fig. 7 sont des lectures graphiques approximatives (2 chiffres significatifs).",
+   "text": "La préparation de l'oléate de cadmium est renvoyée aux publications d'Ithurria et al. et n'est pas décrite. Le sol MTEOS/TEOS (rapport des alcoxydes, acide d'hydrolyse, durée) est renvoyé à une méthode antérieure et n'est pas décrit ; la mention « MTEOS:TEOS, 49% » n'est pas explicitée. Pour la série en temps de réaction avec la thioacétamide seule, ni quantités ni durées ne sont données dans le texte. La concentration de la suspension de nanoparticules utilisée pour le verre, les rendements et les vitesses d'agitation ne sont pas donnés. Les figures S1 à S8 de l'annexe ne sont lisibles que par leur légende dans le dépôt : leurs courbes n'ont pas été lues. Les valeurs d'intensité de la Fig. 5C et de la Fig. 7 sont des lectures graphiques approximatives (2 chiffres significatifs). Les tableaux EDX de l'annexe (Fig. S2) n'ont pas été extraits (attribution centre/bord incertaine). Les quantités de TBAF de la série de la Fig. S5, la composition du lot à faible émission (Fig. S4) et le volume de THF pour redissoudre le précipité ne sont pas donnés.",
    "quote": null
   },
   {
@@ -1378,13 +1385,19 @@
   {
    "type": "mecanisme_auteurs",
    "route": "CdSe_CdS_triangles",
-   "text": "Les auteurs expliquent que la thioacétamide apporte le soufre, que les nanoplaquettes se réarrangent en points quantiques de CdSe pendant que la coquille de CdS commence à croître, et que l'ajout d'une faible quantité de CdCl2/Cd(OL)2 initie une croissance anisotrope donnant des formes triangulaires, au lieu de sphères.",
+   "text": "Les auteurs expliquent que la thioacétamide apporte le soufre et que, pendant la réaction, les nanoplaquettes se réarrangent en points quantiques de CdSe pendant que la coquille de CdS commence à croître.",
    "quote": "During the reaction, nanoplatelets rearranged into CdSe quantum dots and has begun the growth of the CdS shell (Fig. S1†)."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdSe_CdS_triangles",
+   "text": "Les auteurs notent que la thioacétamide seule ne donne que des structures sphériques ; ils introduisent donc une faible quantité de CdCl2/Cd(OL)2 pour amorcer une croissance d'une autre forme.",
+   "quote": "Therefore, a small amount of CdCl2/Cd(OL)2 was introduced into the reaction mixture to initiate growth in a different shape."
   },
   {
    "type": "mecanisme_analyse",
    "route": "CdSe_CdS_triangles",
-   "text": "Hypothèse de chimiste : en présence d'octylamine, la thioacétamide libère probablement lentement du sulfure (H2S ou S2−) à température ambiante, qui réagit avec le cadmium de surface et en solution pour former CdS ; les ions chlorure et l'oléate de cadmium ajoutés favoriseraient probablement la croissance sur certaines facettes (gravure et dissolution partielle des plaquettes puis recroissance), d'où les tétraèdres. Le temps de 72 h correspond à une croissance lente, sans chauffage.",
+   "text": "Hypothèse de chimiste : l'octylamine décompose probablement lentement la thioacétamide à température ambiante en sulfure (HS−/H2S), qui réagit avec le cadmium de surface et en solution pour former du CdS. Les plaquettes seraient en partie dissoutes puis réorganisées en grains 3D (Fig. S1C), et le CdS croîtrait en blende ; les ions chlorure et les carboxylates se fixeraient probablement sur les facettes {111} terminées Cd et freineraient leur croissance, ce qui laisserait des tétraèdres bornés par quatre faces {111}. Le bilan de Cd (voir l'annotation de limite) impose une source de Cd non dosée, vraisemblablement l'oléate de Cd entraîné avec les plaquettes ; la DRX et l'EDX ne permettent pas de distinguer un vrai cœur CdSe d'un alliage riche en S.",
    "quote": null
   },
   {
@@ -1402,7 +1415,55 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les composés de cadmium (oléate, chlorure, acétate, nitrate) sont toxiques et cancérogènes : gants, hotte et gestion des déchets de métaux lourds sont nécessaires, de même pour les nanoparticules de CdSe/CdS. Le sélénium en poudre, la thioacétamide (cancérogène suspecté, dégage du H2S), le chloroforme, l'octylamine (corrosive) et le TBAF (corrosif) demandent des précautions ; l'injection à chaud dans l'ODE à 240 °C sous vide puis argon impose une verrerie adaptée et une protection contre les projections. Le dégazage sous vide d'un mélange organique chaud et les solvants inflammables (THF, hexane, acétone) imposent d'éviter toute source d'ignition.",
+   "text": "Les composés de cadmium (oléate, chlorure, acétate, nitrate) sont toxiques et cancérogènes : gants, hotte et gestion des déchets de métaux lourds sont nécessaires, de même pour les nanoparticules de CdSe/CdS. Le sélénium en poudre, le chloroforme, l'octylamine (corrosive) et le TBAF (corrosif, en solution dans le THF) demandent des précautions. La thioacétamide est cancérogène et libère de l'H2S par hydrolyse ; avec l'octylamine en excès et 72 h en flacon ouvert à l'air, il faut travailler sous hotte. L'injection d'acétate de cadmium dihydraté solide dans l'ODE à 205 °C libère d'un coup environ 2 mmol d'eau (et de l'acide acétique) : risque de projection et de surpression, à faire avec protection et sans bouchon étanche. Les solvants inflammables (THF, hexane, acétone, éthanol) imposent d'éviter toute source d'ignition.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdSe_CdS_triangles",
+   "text": "Le bilan de cadmium ne se ferme pas avec les valeurs de l'article : la coquille d'un tétraèdre de 27 nm représente environ 6,5 fois le Cd du cœur (≈ 112 µmol, ou ≈ 11 µmol à 10 % de rendement en plaquettes) alors que seuls ≈ 4,4 µmol de Cd sont ajoutés avec les 60 µl de CdCl2/Cd(OL)2. La source probable est l'oléate de cadmium entraîné avec les plaquettes, non dosé, de sorte que le résultat dépend du lavage des plaquettes, décrit sans quantités.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdSe_CdS_triangles",
+   "text": "L'analyse EDX de l'annexe (Fig. S2) n'a pas été extraite : l'attribution centre/bord des deux tableaux est incertaine, l'un d'eux donne S/Cd = 2,83, impossible pour du CdS, et deux pointés ne suffisent pas à prouver une coquille plus épaisse sur les arêtes (une cartographie STEM-EDX serait nécessaire). La DRX ne distingue pas non plus un cœur CdSe d'un alliage CdS1−xSex (paramètre de maille lu 5,86–5,93 Å, supérieur à celui de CdS).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdSe_CdS_triangles",
+   "text": "Indexation de la DRX : la raie vers 52° est notée (331) dans le texte et sur la Fig. 3, alors que c'est la raie (311) du CdS blende (2θ ≈ 52,1° ; la (331) est vers 70,5°). La citation de l'article est gardée telle quelle ; la conclusion « blende » n'en dépend pas. Le rendement quantique de 52 % est donné sans méthode (référence, absorbance de l'échantillon), et la concentration de 5,55 mg/ml sans volume de THF ni méthode de dosage, donc sans rendement recalculable.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdSe_CdS_triangles",
+   "text": "Autres points laissés ouverts par l'article : les 72 h se déroulent en flacon de 4 ml non fermé avec 2 ml de chloroforme (évaporation possible), sans vitesse d'agitation ; la durée et la température du bain à ultrasons pour dissoudre la TAA ne sont pas données ; le point de départ des « 2 h » avant l'ajout de CdCl2/Cd(OL)2 n'est pas précisé ; le prélèvement de 60 µl d'une suspension blanche qui décante suppose une agitation préalable non décrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TAA_only_series",
+   "text": "Série invérifiable et non reproductible à partir de l'article : ni quantités, ni durées, ni température ne sont donnés pour les temps de réaction avec la TAA seule, et les courbes de la Fig. S1 ne sont pas lisibles dans le dépôt. De plus, le témoin « TAA seule » change deux variables à la fois par rapport aux triangles (absence de Cl− et de Cd supplémentaire) : l'article ne permet pas de dire lequel des deux oriente la croissance vers les tétraèdres.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Colloid_control",
+   "text": "Les mesures de fluorescence sont faites à 0,63 mg/ml environ (226 µl à 5,55 mg/ml dans 2 ml) : si cette masse est de la matière inorganique, l'absorbance à 400 nm serait bien supérieure à 0,1 et un effet de filtre interne est probable ; l'absorbance des solutions mesurées n'est pas donnée. Le témoin sans TBAF augmente lui aussi en 120 min (≈ 2,7 à 3,5·10^7 u.a., lecture graphique), ce qui peut relever d'une photoactivation sous excitation.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Colloid_TBAF_40ul",
+   "text": "Le témoin sans TBAF change plusieurs variables à la fois : le TBAF apporte F−, le cation Bu4N+, environ 0,10 mmol d'eau (solution à environ 5 % d'eau) et provoque une agrégation (DLS, SAXS). Attribuer la hausse d'émission au seul F− n'est pas démontré, et l'agrégation peut modifier l'intensité détectée sans changer le rendement quantique ; les quantités de TBAF de la série « increasing amounts » (Fig. S5) et la composition du lot à faible émission (Fig. S4) ne sont pas données.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Glass_CdSeCdS_TBAF",
+   "text": "La Fig. 7 compare le verre et la solution comme étant « de même composition », mais les Méthodes donnent environ 4 fois moins de particules par ml et 7,5 fois plus de F− par particule dans le verre, puis un séchage avec retrait du gel ; comparer des intensités en unités arbitraires entre un monolithe et une cuve ne permet pas d'affirmer que l'émission est figée à la valeur de 105 min. Le séchage est à 45 °C dans les Méthodes et à 40 °C dans les Résultats, la gélification est annoncée en 20–30 min puis comme débutant vers 15 min ; la concentration de la suspension de particules (30 µl), le rapport MTEOS:TEOS, l'acide et la durée d'hydrolyse du sol, le moule et l'atmosphère de séchage ne sont pas donnés.",
    "quote": null
   }
  ],
@@ -1460,7 +1521,6 @@
    "results_in": [
     "Fig. 5B",
     "Fig. 5C",
-    "Fig. S5",
     "Fig. S6",
     "Fig. S7"
    ]
@@ -1470,8 +1530,7 @@
    "defined_in": "Results, Effect of TBAF (SAXS)",
    "route": "Colloid_TBAF_80ul",
    "results_in": [
-    "Fig. S6",
-    "Fig. S5"
+    "Fig. S6"
    ]
   },
   {
@@ -1505,6 +1564,15 @@
    "defined_in": "Methods, Preparation of sol–gel glasses",
    "route": null,
    "why": "préparation renvoyée à une méthode antérieure, non décrite"
+  },
+  {
+   "sample": "CdSe/CdS + increasing amounts of TBAF (Fig. S5)",
+   "defined_in": "Results, Effect of TBAF (Fig. S5)",
+   "route": null,
+   "why": "série de quantités croissantes de TBAF dont l'article ne donne aucune valeur (légende de la Fig. S5 seule) ; ne se rattache pas aux seules branches 40 et 80 μl",
+   "results_in": [
+    "Fig. S5"
+   ]
   }
  ],
  "method_sources": [
@@ -1552,7 +1620,7 @@
   },
   {
    "where": "TAA_only_series",
-   "issue": "L'article ne donne ni quantités ni durées pour la série « temps de réaction avec la TAA seule » (résultats uniquement en Fig. S1, non lue). La branche est rattachée aux triangles par la phrase « a small amount of CdCl2/Cd(OL)2 was introduced », sans que l'article dise que les quantités de nanoplaquettes, TAA et octylamine sont identiques ; les étapes propres de la branche sont donc minimales."
+   "issue": "L'article ne donne ni quantités ni durées pour la série « temps de réaction avec la TAA seule » (résultats uniquement en Fig. S1, non lue). La branche est rattachée aux triangles par la phrase « a small amount of CdCl2/Cd(OL)2 was introduced », sans que l'article dise que les quantités de nanoplaquettes, TAA et octylamine sont identiques ; les étapes propres de la branche sont donc minimales. La variation « durée » n'est pas posée sur les 72 h du parent : la série en temps avec la TAA seule précède l'ajout de CdCl2/Cd(OL)2 (durée variée, valeurs non citées). Instruments et excitation de la caractérisation repris des Méthodes générales, l'article ne disant pas que la Fig. S1 a été mesurée autrement. succeeded laissé à null : les auteurs ne rapportent ni échec ni succès, seulement que la TAA seule ne donne que des sphères."
   },
   {
    "where": "Glass_CdSeCdS_TBAF étape 5",
@@ -1568,7 +1636,7 @@
   },
   {
    "where": "Fig. 5C et Fig. 7 (valeurs lues sur figure)",
-   "issue": "Intensités de PL lues sur Fig. 5C (témoin 0 et 120 min ; TBAF 0 et 120 min) et sur Fig. 7 (verre, pic de la ligne pointillée) ; précision de lecture d'environ ±0,2·10^7 u.a., 2 chiffres significatifs. Fig. 2 consultée mais non utilisée (valeurs déjà dans le texte)."
+   "issue": "Intensités de PL lues sur Fig. 5C (témoin 0 et 120 min ; TBAF 0 et 120 min) et sur Fig. 7 (verre, pic de la ligne pointillée) ; précision de lecture d'environ ±0,2·10^7 u.a., 2 chiffres significatifs. Fig. 2 consultée mais non utilisée (valeurs déjà dans le texte). L'intensité de la Fig. 5C est lue au maximum à 682 nm d'après l'axe de la figure (la légende ne donne pas cette longueur d'onde, d'où des noms de propriété sans « 682 nm »)."
   },
   {
    "where": "CdSe_CdS_triangles, forme",
@@ -1581,6 +1649,34 @@
   {
    "where": "CdSe_NPL étape 9",
    "issue": "« The solid was removed and the supernatant was centrifuged » : l'article ne dit pas quelle fraction contient les nanoplaquettes avant la dernière étape (reprise dans l'hexane)."
+  },
+  {
+   "where": "TAA_only_series, succeeded",
+   "issue": "Le relecteur avait jugé « succeeded: false » déduit : l'article ne parle pas d'échec, la série est une étape exploratoire (sphères seulement, pas de triangles). Valeur remise à null."
+  },
+  {
+   "where": "Résumé et Méthodes, atmosphère de la synthèse",
+   "issue": "Le résumé dit « under an atmosphere of oxygen », les Méthodes « The reaction was conducted in an ambient atmosphere without inert gas or vacuum connection » ; valeur des Méthodes retenue sur l'étape 5 de CdSe_CdS_triangles."
+  },
+  {
+   "where": "Glass_CdSeCdS_TBAF, réactif MTEOS/TEOS sol",
+   "issue": "Pureté (98,0 %) et fournisseur (ABCR) sont ceux du MTEOS et du TEOS achetés (liste des matériaux), pas du sol préparé par les auteurs ; le sol (« hydrolysed in acidic medium ... (MTEOS:TEOS, 49%, THF) ») n'est pas décrit plus avant."
+  },
+  {
+   "where": "Colloid_control, THF",
+   "issue": "« to a volume of 2 ml » est le volume final de la solution, non un volume de THF ajouté ; la quantité de THF est donc non citée (volume final conservé comme paramètre de l'étape)."
+  },
+  {
+   "where": "CdSe_CdS_triangles étapes 6 à 8",
+   "issue": "« repeated three times » (cycle précipitation/redissolution) ne dit pas s'il s'agit de trois cycles au total ou de trois cycles en plus du premier."
+  },
+  {
+   "where": "CdSe_NPL étapes 3 et 4",
+   "issue": "L'injection de l'acétate de cadmium a lieu à 205 °C pendant la montée vers 240 °C (l'article l'écrit après la montée) ; l'ordre séquentiel des étapes suit le texte."
+  },
+  {
+   "where": "Colloid_TBAF_40ul / Colloid_TBAF_80ul, Fig. S5",
+   "issue": "La Fig. S5 (« increasing amounts of TBAF ») décrit une série de quantités dont aucune valeur n'est donnée ; elle n'est rattachée à aucune des deux branches."
   }
  ]
 }
