@@ -1,0 +1,81 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6614408</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6614408 — A highly responsive NH3 sensor based on Pd-loaded ZnO nanoparticles prepared via a chemical precipitation approach.</h1>
+<h2>Voie : ZnO_0</h2>
+<pre class="mermaid">flowchart LR
+  R12700([&quot;zinc acetate&lt;br/&gt;0.5 g&quot;]):::reactif
+  R12700 --&gt;|&quot;precursor&quot;| S15149
+  R12701([&quot;ethanol (dissolution of zinc acetate, boilin…&lt;br/&gt;30 mL&quot;]):::reactif
+  R12701 --&gt;|&quot;solvent&quot;| S15149
+  R12702([&quot;sodium hydroxide&lt;br/&gt;10 mmol&quot;]):::reactif
+  R12702 --&gt;|&quot;base&quot;| S15149
+  R12703([&quot;ethanol (NaOH solution)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12703 --&gt;|&quot;solvent&quot;| S15149
+  R12704([&quot;heptane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12704 --&gt;|&quot;wash&quot;| S15149
+  S15149[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : boiling&quot;]:::etape
+  S15149 --&gt; S15150
+  S15150[&quot;&lt;b&gt;2. cool&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S15150 --&gt; S15151
+  S15151[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S15151 --&gt; S15152
+  S15152[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S15152 --&gt; S15153
+  S15153[&quot;&lt;b&gt;5. age&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S15153 --&gt; S15154
+  S15154[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&quot;]:::etape
+  S15154 --&gt; S15155
+  S15155[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : heptane&lt;br/&gt;repetitions : repeatedly&quot;]:::etape
+  S15155 --&gt; S15156
+  S15156[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&quot;]:::etape
+  S15156 --&gt; S15157
+  S15157[&quot;&lt;b&gt;9. anneal&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S15157 --&gt; M
+  M{{&quot;pure ZnO nanoparticles&lt;br/&gt;ZnO&quot;}}:::materiau
+  O61087[&quot;crystallite_size_XRD_D : 26 Å&quot;]:::resultat
+  M -.-&gt; O61087
+  O61088[&quot;microstrain : 4.22 10−3&quot;]:::resultat
+  M -.-&gt; O61088
+  O61089[&quot;lattice_parameter_a : 3.2498 Å&quot;]:::resultat
+  M -.-&gt; O61089
+  O61090[&quot;lattice_parameter_c : 5.2062 Å&quot;]:::resultat
+  M -.-&gt; O61090
+  O61091[&quot;d101_spacing : 2.473 Å&quot;]:::resultat
+  M -.-&gt; O61091
+  O61092[&quot;BET_surface_area : 21.8053 m²/g&quot;]:::resultat
+  M -.-&gt; O61092
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10213{{&quot;ZnO_0&quot;}}:::materiau
+  B10214[&quot;ZnO_Pd0.5&quot;]:::etape
+  B10213 --&gt;|&quot;dopant = 0.5 mol%&lt;br/&gt;duration = 24 h&quot;| B10214
+  B10215[&quot;ZnO_Pd0.75&quot;]:::etape
+  B10213 --&gt;|&quot;dopant = 0.75 mol%&lt;br/&gt;duration = 24 h&quot;| B10215
+  B10216[&quot;ZnO_Pd1&quot;]:::etape
+  B10213 --&gt;|&quot;dopant = 1 mol%&lt;br/&gt;duration = 24 h&quot;| B10216
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Sensor_fabrication</h2>
+<pre class="mermaid">flowchart LR
+  R12711([&quot;ZnO or Pd-loaded ZnO nanoparticles (routes Z…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12711 --&gt;|&quot;active_material&quot;| S15185
+  R12712([&quot;ethanol (paste)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12712 --&gt;|&quot;solvent&quot;| S15185
+  R12713([&quot;alumina substrate with Pt electrodes and mic…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12713 --&gt;|&quot;substrate&quot;| S15185
+  S15185[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S15185 --&gt; S15186
+  S15186[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S15186 --&gt; S15187
+  S15187[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&quot;]:::etape
+  S15187 --&gt; M
+  M{{&quot;ZnO or Pd-loaded ZnO NP layer on an alumina subst…&lt;br/&gt;&quot;}}:::materiau
+  O61238[&quot;optimal_operating_temperature : 350 °C&quot;]:::resultat
+  M -.-&gt; O61238
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
