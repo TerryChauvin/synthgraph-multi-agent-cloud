@@ -4,7 +4,7 @@
 
 `synthese.db` (SQLite) rassemble des voies de synthèse de matériaux extraites d'articles en accès libre, où **chaque valeur porte la citation mot pour mot de l'article** qui la fonde, sa position dans le texte, et l'état de ce que l'article ne dit pas. Ce document décrit, à la manière d'une section « Matériel et méthodes », comment la base est construite, comment chaque valeur est vérifiée, ce que les contrôles mesurent, et dans quel sens, scientifiquement, on peut considérer son contenu comme juste.
 
-État au 17 octobre 2026 : 268 publications closes dont 250 auditées (cinq paliers de 50), 2 942 voies (`synthese.db`, requêtes en lecture seule) ; 47 059 citations vérifiées sur les 250 auditées (37 478 aux paliers 1 à 4, 9 581 au palier 5, `audits/palier_005_relecture.md`) ; le sixième palier est en cours. Les mesures détaillées des sections 6 et suivantes portent sur les paliers 1 à 4 ; le palier 5 est résumé en 6.3.
+État au 18 octobre 2026 : 300 publications closes et auditées (six paliers de 50), 3 284 voies (`synthese.db`, requêtes en lecture seule) ; 56 739 citations vérifiées sur les 300 auditées (37 478 aux paliers 1 à 4, 9 581 au palier 5, 9 680 au palier 6) ; rapport du palier 6 : `audits/palier_006_relecture.md`. Les mesures détaillées des sections 6 et suivantes portent sur les paliers 1 à 4 ; les paliers 5 et 6 sont résumés en 6.3.
 
 ---
 
