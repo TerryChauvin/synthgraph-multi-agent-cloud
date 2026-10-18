@@ -223,13 +223,7 @@
      "action": "dissolve",
      "description": "Dissolve the stoichiometric Ga, La and ZrO nitrates and the 20 % excess LiOH in diethylene glycol.",
      "quote": "Stoichiometric amounts of Ga(NO3)3 (Thermo Scientific, 99.9998 % trace metal basis), La(NO3)3 (Aldrich, 99.9 % trace metal basis), and ZrO(NO3)2 (Aldrich, 99 %) combined with excessive LiOH (20 %) were dissolved in diethylene glycol (Sigma-Aldrich, ReagentPlus®, 99 %) to provide metal ions",
-     "parameters": [
-      {
-       "name": "molar_ratio",
-       "quote": "5.8:3:2:0.4 | 12.9902 | 1.04 × 10−3 | 0.32",
-       "value_text": "Li:La:Zr:Ga = 5.8:3:2:0.4 (composition nominale du Tableau 1)"
-      }
-     ],
+     "parameters": [],
      "equipment": [],
      "not_stated": [
       "volume",
@@ -514,8 +508,8 @@
      "technique": "SEM-EDS",
      "result": "grain-boundary distribution and Ga distribution on ion-milled pellet",
      "instrument": "SEM–EDS (ion milling, Gatan Model 691 polishing)",
-     "conditions": "ion-milled pellet cross-section",
-     "quote": "SEM coupled with energy-dispersive X-ray spectroscopy (SEM–EDS) analyses were to evaluate the cross-sectional morphology of these pellet samples. The SEM–EDS samples were prepared using the ion-milling method to compare the grain-boundary distribution of the pellets prepared using the MW and SG methods."
+     "conditions": "ion-milled pellet cross-section; pellet mounted in a brass tube with G1 epoxy and hardener; ground to 75 μm with sandpapers 400, 600, 800 and 1200 grit; polished with a polishing cloth and diamond suspension; final polishing with a 2 keV beam, 3° upward for the left and right guns, 15 min, Gatan Model 691",
+     "quote": "The SEM–EDS samples were prepared using the ion-milling method to compare the grain-boundary distribution of the pellets prepared using the MW and SG methods. The pellets were mounted in a brass tube using G1 epoxy and a hardener to prepare the ion-milled samples. The density of the ceramic pellets was measured using the Archimedes method with anhydrous ethanol as the immersion medium, as LLZO can absorb water, making it an unsuitable medium. The density of Ga–LLZO was determined from its mass and volume, and its relative density values were calculated by dividing the measured density by the theoretical density of LLZO (∼5.1 g cm−3) []. Next, samples with a thickness of 75 μm were fabricated by grinding the pellet using sandpapers with progressively finer grits (400, 600, 800, and 1200 grit). The ground samples were polished using a polishing cloth and diamond suspension. The final polishing step was performed using a 2 keV beam, with dual beam conditions of 3° upward for the left and right guns, for 15 min; this final polishing step was performed using a precision ion polishing system (Gatan, Model 691)."
     },
     {
      "technique": "Archimedes density",
@@ -612,6 +606,40 @@
      "property": "grain_boundaries_and_holes",
      "quote": "In contrast, MW 0.4 Ga–LLZO, which exhibits negligible grain boundaries and holes, can potentially mitigate such negative effects.",
      "value_text": "negligible grain boundaries and holes"
+    },
+    {
+     "property": "nominal_composition_ratio_Li_La_Zr_Ga",
+     "quote": "5.8:3:2:0.4 | 12.9902 | 1.04 × 10−3 | 0.32",
+     "value_text": "5.8:3:2:0.4"
+    },
+    {
+     "property": "precursor_particle_size",
+     "quote": "The MW method efficiently produced nanostructured 0.4 Ga–LLZO precursors (<50 nm) and powders (<800 nm) withing a short reaction time.",
+     "value_text": "<50 nm",
+     "unit": "nm"
+    },
+    {
+     "property": "powder_particle_size_after_calcination",
+     "quote": "The MW method efficiently produced nanostructured 0.4 Ga–LLZO precursors (<50 nm) and powders (<800 nm) withing a short reaction time.",
+     "value_text": "<800 nm",
+     "unit": "nm"
+    },
+    {
+     "property": "d10_particle_size_after_calcination",
+     "quote": "MW 0.4 Ga–LLZO | 0.19 | 0.80 | 2.07 | 1.04 | 0.81",
+     "value_num": 0.19,
+     "unit": "μm"
+    },
+    {
+     "property": "d90_particle_size_after_calcination",
+     "quote": "MW 0.4 Ga–LLZO | 0.19 | 0.80 | 2.07 | 1.04 | 0.81",
+     "value_num": 2.07,
+     "unit": "μm"
+    },
+    {
+     "property": "volume_uniformity_after_calcination",
+     "quote": "MW 0.4 Ga–LLZO | 0.19 | 0.80 | 2.07 | 1.04 | 0.81",
+     "value_num": 1.04
     }
    ],
    "missing_fields": [
@@ -645,10 +673,13 @@
    "variations": [
     {
      "parameter": "gallium nitrate",
-     "value_text": "absent",
+     "value_text": "0 Ga",
      "parent_value": "stoichiometric amount (0.4 Ga)",
-     "quote": "The MW xGa–LLZO (x: 0–0.45 mol%) ceramic samples were fabricated using the MW-assisted solvothermal method."
+     "quote": "(a) MW 0 Ga–LLZO, (b) MW 0.1 Ga–LLZO"
     }
+   ],
+   "not_stated": [
+    "gallium_nitrate_omission"
    ]
   },
   {
@@ -667,11 +698,10 @@
    "outcomes": [],
    "variations": [
     {
-     "parameter": "molar_ratio",
-     "step_order": 1,
-     "value_text": "Ga content x = 0.1 (Li:La:Zr:Ga non cité)",
-     "parent_value": "Li:La:Zr:Ga = 5.8:3:2:0.4",
-     "quote": "Figure S2. SEM images of the MW x Ga–LLZO powder after calcination: (a) MW 0 Ga–LLZO, (b) MW 0.1 Ga–LLZO, (c) MW 0.15 Ga–LLZO, (d) MW 0.2 Ga–LLZO, (e) MW 0.25 Ga–LLZO, (f) MW 0.3 Ga–LLZO, (g) MW 0.35 Ga–LLZO, (h) MW 0.4 Ga–LLZO, and (i) MW 0.45 Ga–LLZO."
+     "parameter": "gallium nitrate",
+     "value_text": "0.1 Ga",
+     "parent_value": "stoichiometric amount (0.4 Ga)",
+     "quote": "(b) MW 0.1 Ga–LLZO, (c) MW 0.15 Ga–LLZO"
     }
    ]
   },
@@ -691,11 +721,10 @@
    "outcomes": [],
    "variations": [
     {
-     "parameter": "molar_ratio",
-     "step_order": 1,
-     "value_text": "Ga content x = 0.15 (Li:La:Zr:Ga non cité)",
-     "parent_value": "Li:La:Zr:Ga = 5.8:3:2:0.4",
-     "quote": "Figure S2. SEM images of the MW x Ga–LLZO powder after calcination: (a) MW 0 Ga–LLZO, (b) MW 0.1 Ga–LLZO, (c) MW 0.15 Ga–LLZO, (d) MW 0.2 Ga–LLZO, (e) MW 0.25 Ga–LLZO, (f) MW 0.3 Ga–LLZO, (g) MW 0.35 Ga–LLZO, (h) MW 0.4 Ga–LLZO, and (i) MW 0.45 Ga–LLZO."
+     "parameter": "gallium nitrate",
+     "value_text": "0.15 Ga",
+     "parent_value": "stoichiometric amount (0.4 Ga)",
+     "quote": "(c) MW 0.15 Ga–LLZO, (d) MW 0.2 Ga–LLZO"
     }
    ]
   },
@@ -705,7 +734,7 @@
    "kind": "material",
    "material": {
     "name": "Ga-doped Li7La3Zr2O12 (MW, 0.2 Ga)",
-    "formula": null,
+    "formula": "Li6.4Ga0.2La3Zr2O12",
     "family": "batterie",
     "phase": null,
     "morphology": null
@@ -742,15 +771,31 @@
      "quote": "Fig. 2 SEM images of MW xGa–LLZO. Top row, precursor; middle row, powder; bottom row, fracture surface of the corresponding pellet. (a), (d), and (g) MW 0.2 Ga–LLZO; (b), (e), and (h) MW 0.3 Ga–LLZO; and (c), (f), and (i) MW 0.4 Ga–LLZO.",
      "value_text": "1.00 μm and 796 nm (two dimensions of one marked particle)",
      "from_figure": "Fig. 2d"
+    },
+    {
+     "property": "nominal_composition_ratio_Li_La_Zr_Ga",
+     "quote": "6.4:3:2:0.2 | 12.9934 | 1.91 × 10−4 | 0.38",
+     "value_text": "6.4:3:2:0.2"
+    },
+    {
+     "property": "precursor_particle_size",
+     "quote": "Fig. 2a–c demonstrates the uniform morphology of the as-synthesized MW 0.2–0.4 Ga–LLZO precursors, which are approximately 50 nm in size.",
+     "value_num": 50,
+     "unit": "nm",
+     "value_text": "approximately 50 nm"
+    },
+    {
+     "property": "phase",
+     "quote": "confirming that a cubic phase is formed when the Ga content in LLZO is > 0.2 mol%",
+     "value_text": "cubic phase"
     }
    ],
    "variations": [
     {
-     "parameter": "molar_ratio",
-     "step_order": 1,
-     "value_text": "Li:La:Zr:Ga = 6.4:3:2:0.2",
-     "parent_value": "Li:La:Zr:Ga = 5.8:3:2:0.4",
-     "quote": "6.4:3:2:0.2 | 12.9934 | 1.91 × 10−4 | 0.38"
+     "parameter": "gallium nitrate",
+     "value_text": "0.2 Ga",
+     "parent_value": "stoichiometric amount (0.4 Ga)",
+     "quote": "(d) MW 0.2 Ga–LLZO, (e) MW 0.25 Ga–LLZO"
     }
    ]
   },
@@ -770,11 +815,10 @@
    "outcomes": [],
    "variations": [
     {
-     "parameter": "molar_ratio",
-     "step_order": 1,
-     "value_text": "Ga content x = 0.25 (Li:La:Zr:Ga non cité)",
-     "parent_value": "Li:La:Zr:Ga = 5.8:3:2:0.4",
-     "quote": "Figure S2. SEM images of the MW x Ga–LLZO powder after calcination: (a) MW 0 Ga–LLZO, (b) MW 0.1 Ga–LLZO, (c) MW 0.15 Ga–LLZO, (d) MW 0.2 Ga–LLZO, (e) MW 0.25 Ga–LLZO, (f) MW 0.3 Ga–LLZO, (g) MW 0.35 Ga–LLZO, (h) MW 0.4 Ga–LLZO, and (i) MW 0.45 Ga–LLZO."
+     "parameter": "gallium nitrate",
+     "value_text": "0.25 Ga",
+     "parent_value": "stoichiometric amount (0.4 Ga)",
+     "quote": "(e) MW 0.25 Ga–LLZO, (f) MW 0.3 Ga–LLZO"
     }
    ]
   },
@@ -784,7 +828,7 @@
    "kind": "material",
    "material": {
     "name": "Ga-doped Li7La3Zr2O12 (MW, 0.3 Ga)",
-    "formula": null,
+    "formula": "Li6.1Ga0.3La3Zr2O12",
     "family": "batterie",
     "phase": null,
     "morphology": null
@@ -821,15 +865,31 @@
      "quote": "Fig. 2 SEM images of MW xGa–LLZO. Top row, precursor; middle row, powder; bottom row, fracture surface of the corresponding pellet. (a), (d), and (g) MW 0.2 Ga–LLZO; (b), (e), and (h) MW 0.3 Ga–LLZO; and (c), (f), and (i) MW 0.4 Ga–LLZO.",
      "value_text": "825 nm and 917 nm (two dimensions of one marked particle)",
      "from_figure": "Fig. 2e"
+    },
+    {
+     "property": "nominal_composition_ratio_Li_La_Zr_Ga",
+     "quote": "6.1:3:2:0.3 | 12.9915 | 3.84 × 10−4 | 0.38",
+     "value_text": "6.1:3:2:0.3"
+    },
+    {
+     "property": "precursor_particle_size",
+     "quote": "Fig. 2a–c demonstrates the uniform morphology of the as-synthesized MW 0.2–0.4 Ga–LLZO precursors, which are approximately 50 nm in size.",
+     "value_num": 50,
+     "unit": "nm",
+     "value_text": "approximately 50 nm"
+    },
+    {
+     "property": "phase",
+     "quote": "confirming that a cubic phase is formed when the Ga content in LLZO is > 0.2 mol%",
+     "value_text": "cubic phase"
     }
    ],
    "variations": [
     {
-     "parameter": "molar_ratio",
-     "step_order": 1,
-     "value_text": "Li:La:Zr:Ga = 6.1:3:2:0.3",
-     "parent_value": "Li:La:Zr:Ga = 5.8:3:2:0.4",
-     "quote": "6.1:3:2:0.3 | 12.9915 | 3.84 × 10−4 | 0.38"
+     "parameter": "gallium nitrate",
+     "value_text": "0.3 Ga",
+     "parent_value": "stoichiometric amount (0.4 Ga)",
+     "quote": "(f) MW 0.3 Ga–LLZO, (g) MW 0.35 Ga–LLZO"
     }
    ]
   },
@@ -849,11 +909,10 @@
    "outcomes": [],
    "variations": [
     {
-     "parameter": "molar_ratio",
-     "step_order": 1,
-     "value_text": "Ga content x = 0.35 (Li:La:Zr:Ga non cité)",
-     "parent_value": "Li:La:Zr:Ga = 5.8:3:2:0.4",
-     "quote": "Figure S2. SEM images of the MW x Ga–LLZO powder after calcination: (a) MW 0 Ga–LLZO, (b) MW 0.1 Ga–LLZO, (c) MW 0.15 Ga–LLZO, (d) MW 0.2 Ga–LLZO, (e) MW 0.25 Ga–LLZO, (f) MW 0.3 Ga–LLZO, (g) MW 0.35 Ga–LLZO, (h) MW 0.4 Ga–LLZO, and (i) MW 0.45 Ga–LLZO."
+     "parameter": "gallium nitrate",
+     "value_text": "0.35 Ga",
+     "parent_value": "stoichiometric amount (0.4 Ga)",
+     "quote": "(g) MW 0.35 Ga–LLZO, (h) MW 0.4 Ga–LLZO"
     }
    ]
   },
@@ -889,11 +948,10 @@
    ],
    "variations": [
     {
-     "parameter": "molar_ratio",
-     "step_order": 1,
-     "value_text": "Ga content x = 0.45 (Li:La:Zr:Ga non cité)",
-     "parent_value": "Li:La:Zr:Ga = 5.8:3:2:0.4",
-     "quote": "Figure S2. SEM images of the MW x Ga–LLZO powder after calcination: (a) MW 0 Ga–LLZO, (b) MW 0.1 Ga–LLZO, (c) MW 0.15 Ga–LLZO, (d) MW 0.2 Ga–LLZO, (e) MW 0.25 Ga–LLZO, (f) MW 0.3 Ga–LLZO, (g) MW 0.35 Ga–LLZO, (h) MW 0.4 Ga–LLZO, and (i) MW 0.45 Ga–LLZO."
+     "parameter": "gallium nitrate",
+     "value_text": "0.45 Ga",
+     "parent_value": "stoichiometric amount (0.4 Ga)",
+     "quote": "(h) MW 0.4 Ga–LLZO, and (i) MW 0.45 Ga–LLZO"
     }
    ]
   },
@@ -1220,8 +1278,8 @@
      "technique": "SEM-EDS",
      "result": "numerous grain boundaries and holes, Ga concentrated at grain boundaries as LiGaO2",
      "instrument": "SEM–EDS on ion-milled pellet",
-     "conditions": null,
-     "quote": "The EDS analysis results indicate that SG 0.4 Ga–LLZO contains numerous grain boundaries and holes."
+     "conditions": "ion-milled pellet cross-section; pellet mounted in a brass tube with G1 epoxy and hardener; ground to 75 μm with sandpapers 400, 600, 800 and 1200 grit; polished with a polishing cloth and diamond suspension; final polishing with a 2 keV beam, 3° upward for the left and right guns, 15 min, Gatan Model 691",
+     "quote": "The SEM–EDS samples were prepared using the ion-milling method to compare the grain-boundary distribution of the pellets prepared using the MW and SG methods. The pellets were mounted in a brass tube using G1 epoxy and a hardener to prepare the ion-milled samples. The density of the ceramic pellets was measured using the Archimedes method with anhydrous ethanol as the immersion medium, as LLZO can absorb water, making it an unsuitable medium. The density of Ga–LLZO was determined from its mass and volume, and its relative density values were calculated by dividing the measured density by the theoretical density of LLZO (∼5.1 g cm−3) []. Next, samples with a thickness of 75 μm were fabricated by grinding the pellet using sandpapers with progressively finer grits (400, 600, 800, and 1200 grit). The ground samples were polished using a polishing cloth and diamond suspension. The final polishing step was performed using a 2 keV beam, with dual beam conditions of 3° upward for the left and right guns, for 15 min; this final polishing step was performed using a precision ion polishing system (Gatan, Model 691)."
     }
    ],
    "outcomes": [
@@ -1274,6 +1332,23 @@
      "property": "grain_coarsening_during_sintering",
      "quote": "In contrast, the SG 0.4 Ga–LLZO pellet does not undergo grain coarsening because of its microscale precursor powder particles, and it exhibits numerous grain boundaries, as shown in Fig. 4f.",
      "value_text": "none; numerous grain boundaries"
+    },
+    {
+     "property": "d10_particle_size_after_calcination",
+     "quote": "SG 0.4 Ga–LLZO | 1.37 | 14.28 | 37.88 | 2.56 | 0.67",
+     "value_num": 1.37,
+     "unit": "μm"
+    },
+    {
+     "property": "d90_particle_size_after_calcination",
+     "quote": "SG 0.4 Ga–LLZO | 1.37 | 14.28 | 37.88 | 2.56 | 0.67",
+     "value_num": 37.88,
+     "unit": "μm"
+    },
+    {
+     "property": "volume_uniformity_after_calcination",
+     "quote": "SG 0.4 Ga–LLZO | 1.37 | 14.28 | 37.88 | 2.56 | 0.67",
+     "value_num": 2.56
     }
    ],
    "missing_fields": [
@@ -1516,8 +1591,8 @@
      "unit": "Ω"
     },
     {
-     "property": "R_bulk_after_cycling",
-     "quote": "As shown in Table S2, the impedance values for each component indicate that Rb decreased from 76 to 46 Ω, and Rgb decreased from 94 to 81 Ω after cycling.",
+     "property": "R_bulk_after_1600_h_cycling",
+     "quote": "we observe that the resistance after 1600 h cycling is significantly lower than that before cycling. As shown in Table S2, the impedance values for each component indicate that Rb decreased from 76 to 46 Ω, and Rgb decreased from 94 to 81 Ω after cycling.",
      "value_num": 46,
      "unit": "Ω"
     },
@@ -1528,8 +1603,8 @@
      "unit": "Ω"
     },
     {
-     "property": "R_gb_after_cycling",
-     "quote": "As shown in Table S2, the impedance values for each component indicate that Rb decreased from 76 to 46 Ω, and Rgb decreased from 94 to 81 Ω after cycling.",
+     "property": "R_gb_after_1600_h_cycling",
+     "quote": "we observe that the resistance after 1600 h cycling is significantly lower than that before cycling. As shown in Table S2, the impedance values for each component indicate that Rb decreased from 76 to 46 Ω, and Rgb decreased from 94 to 81 Ω after cycling.",
      "value_num": 81,
      "unit": "Ω"
     },
@@ -1540,8 +1615,8 @@
      "unit": "Ω"
     },
     {
-     "property": "R_Li-LLZO_after_cycling",
-     "quote": "Notably, the impedance of the entire Li/MW 0.4 Ga–LLZO/Li cell (RLi–LLZO) significantly decreased from 302 to 49 Ω after cycling, indicating a substantial reduction in the Li/LLZO interfacial impedance.",
+     "property": "R_Li-LLZO_after_1600_h_cycling",
+     "quote": "we observe that the resistance after 1600 h cycling is significantly lower than that before cycling. As shown in Table S2, the impedance values for each component indicate that Rb decreased from 76 to 46 Ω, and Rgb decreased from 94 to 81 Ω after cycling. Notably, the impedance of the entire Li/MW 0.4 Ga–LLZO/Li cell (RLi–LLZO) significantly decreased from 302 to 49 Ω after cycling",
      "value_num": 49,
      "unit": "Ω"
     },
@@ -1549,6 +1624,17 @@
      "property": "cycling_stability",
      "quote": "the results demonstrate the excellent reversibility of the Li redox reactions in the cell and the high stability of the MW 0.4 Ga–LLZO electrolyte over prolonged testing for approximately 1700 h.",
      "value_text": "excellent reversibility and stability over approximately 1700 h"
+    },
+    {
+     "property": "voltage_profile_beginning_of_cycling",
+     "quote": "Although the voltage initially fluctuated, the results demonstrate the excellent reversibility of the Li redox reactions in the cell",
+     "value_text": "the voltage initially fluctuated"
+    },
+    {
+     "property": "voltage_polarization_inset_1500_1600_h",
+     "quote": "Fig. 7c shows the time–voltage profile obtained by cycling for over 1700 h at room temperature at a constant current density of 0.4 mA cm−2.",
+     "value_text": "approximately ±0.03 to ±0.04 V (read on the inset of Fig. 7c)",
+     "from_figure": "Fig. 7c"
     }
    ],
    "missing_fields": [
@@ -1589,7 +1675,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Les précurseurs MW de la série 0,2–0,4 ont tous une taille d'environ 50 nm ; après calcination la taille des particules de poudre diminue de plus de 1 μm à moins de 800 nm quand le Ga augmente (valeur de groupe, non répartie sur les voies).",
+   "text": "Les précurseurs MW de la série 0,2–0,4 ont tous une taille d'environ 50 nm (rangée sur les voies 0,2 et 0,3 ; pour 0,4 l'introduction donne « <50 nm ») ; après calcination la taille des particules de poudre diminue de plus de 1 μm à moins de 800 nm quand le Ga augmente (valeur de groupe, non répartie sur les voies).",
    "quote": "Fig. 2a–c demonstrates the uniform morphology of the as-synthesized MW 0.2–0.4 Ga–LLZO precursors, which are approximately 50 nm in size."
   },
   {
@@ -1631,7 +1717,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "MW 0.4 Ga–LLZO",
-   "text": "Hypothèse de chimiste : dans le diéthylène glycol (polyol), l'acide citrique chélate probablement La3+, Zr(IV) et Ga3+, et à 250 °C en vase fermé (point d'ébullition du diéthylène glycol voisin de 245 °C) les nitrates et l'hydroxyde de lithium forment probablement un précurseur amorphe ou nanocristallin d'hydroxydes ou de citrates mixtes ; la calcination à 700 °C décompose la matière organique et cristallise le grenat, tandis que l'excès de 20 % de LiOH compense la volatilisation du lithium au frittage. Le dopage au Ga3+ sur les sites Li+ crée des lacunes de lithium qui stabilisent la phase cubique, d'où la nécessité de diminuer la teneur en Li quand x augmente (Li7−3x)."
+   "text": "Hypothèse de chimiste, non sourcée par l'article. Dans le diéthylène glycol, l'acide citrique chélate vraisemblablement La3+, ZrO2+ et Ga3+ (complexes citrate–polyol de type Pechini, 1967) et neutralise LiOH en citrate de lithium. Au chauffage micro-ondes à 250 °C en vase fermé, le polyol chauffe vite et de façon homogène ; une partie des nitrates oxyde le glycol et le citrate, et la condensation des complexes donnerait une nucléation éclair (type LaMer, 1950) de particules amorphes d'oxy-hydroxydes et de carbonates mixtes La–Zr(–Ga) d'environ 50 nm. Le lithium, soluble, n'y est probablement retenu qu'en partie et peut partir avec le surnageant : l'excès de 20 % de LiOH ne couvre alors que les pertes au frittage. À la calcination à 700 °C la matière organique brûle et le grenat se formerait vers 600–700 °C à partir de La2Zr2O7, La2O2CO3 et Li2CO3. Ga3+ se placerait sur les sites tétraédriques de Li (3 Li+ → Ga3+ + 2 lacunes) et le cubique serait stabilisé au-delà d'environ 0,4 lacune par formule (Thompson 2014 ; Wagner 2016). À x = 0,45 la réapparition de La2Zr2O7 s'expliquerait plutôt par une perte de Li que par un excès de Ga, la limite de solubilité du Ga étant d'environ 0,72. Au frittage à 1150 °C, la perte de Li (La2Zr2O7) et l'entrée d'Al du creuset (Geiger 2011) restent possibles. Cette hypothèse n'explique ni le devenir du Li ni la faible différence de surface BET entre MW et SG."
   },
   {
    "type": "mecanisme_analyse",
@@ -1647,7 +1733,7 @@
   {
    "type": "securite_analyse",
    "route": "MW 0.4 Ga–LLZO",
-   "text": "Le chauffage de nitrates (oxydants) dans un solvant organique (diéthylène glycol) à 250 °C en vase scellé fait courir un risque de surpression et de réaction exothermique violente ; il faut respecter le remplissage maximal du vase micro-ondes et la limite de pression, et laisser refroidir avant ouverture. Les nitrates de La, Zr et Ga sont oxydants et irritants, LiOH est corrosif, et les poudres nanométriques ne doivent pas être inhalées. Le frittage à 1150 °C demande des protections thermiques."
+   "text": "Le chauffage de nitrates (oxydants) dans un solvant organique (diéthylène glycol) à 250 °C en vase scellé fait courir un risque de surpression et de réaction exothermique violente ; il faut respecter le remplissage maximal du vase micro-ondes et la limite de pression, et laisser refroidir avant ouverture. Les nitrates de La, Zr et Ga sont oxydants et irritants, LiOH est corrosif, et les poudres nanométriques ne doivent pas être inhalées. Le frittage à 1150 °C demande des protections thermiques. Le précipité imbibé de diéthylène glycol et de nitrates est ensuite séché à 250 °C à l'air, au-dessus de la température d'auto-inflammation du diéthylène glycol (229 °C, fiche CAMEO Chemicals, NOAA) : le faire en four ventilé, en petites quantités, ce que l'article ne dit pas."
   },
   {
    "type": "securite_analyse",
@@ -1657,7 +1743,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les masses ou concentrations absolues des nitrates, de LiOH, de LiNO3, de l'acide citrique et du solvant ne sont pas données (seulement « stoichiometric amounts » et un excès de 20 %), ni le volume de diéthylène glycol ou d'eau, ni la puissance et la rampe de chauffage micro-ondes, ni les vitesses de chauffe de la calcination et du frittage, ni l'état d'hydratation des nitrates. La teneur « x » est donnée en « mol% » dans le texte mais comme coefficient de la formule Li7−3xGaxLa3Zr2O12 dans le Tableau 1, ce qui rend la composition ambiguë. Les rapports Li:La:Zr:Ga ne sont donnés que pour 0,2, 0,3 et 0,4."
+   "text": "Les masses ou concentrations absolues des nitrates, de LiOH, de LiNO3, de l'acide citrique et du solvant ne sont pas données (seulement « stoichiometric amounts » et un excès de 20 %), ni le volume de diéthylène glycol ou d'eau, ni la puissance et la rampe de chauffage micro-ondes, ni les vitesses de chauffe de la calcination et du frittage, ni l'état d'hydratation des nitrates. Les rapports Li:La:Zr:Ga ne sont donnés que pour 0,2, 0,3 et 0,4."
   },
   {
    "type": "limite_reproductibilite",
@@ -1668,6 +1754,56 @@
    "type": "limite_reproductibilite",
    "route": "Au/Ga–LLZO/Au EIS cell",
    "text": "L'épaisseur de l'or, les conditions de pulvérisation, le grain du papier abrasif et la température de recuit avant chaque mesure (« the required temperature ») ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "« 0.4 mol% Ga » (résumé, résultats, conclusion) désigne en fait 0,4 Ga par formule Li5,8Ga0,4La3Zr2O12 (Tableau 1, environ 3,6 % des cations) et non 0,4 % molaire : qui dope à 0,4 mol% met environ dix fois moins de Ga que les auteurs. Seule la lecture du Tableau 1 lève l'ambiguïté (critique scientifique, calcul d'électroneutralité)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les conductivités ne se retrouvent pas à partir des résistances et des dimensions écrites : avec ∼1 mm d'épaisseur et ∼10 mm de diamètre, σ = L/(R·S) donne 1,14 × 10−4, 1,88 × 10−4 et 4,8 × 10−4 S cm−1 pour 1114,5, 679,2 et 265 Ω (MW 0.2, 0.3, 0.4) et 5,75 × 10−5 pour 2216 Ω (SG 0.4), au lieu de 1,91 × 10−4, 3,84 × 10−4, 1,04 × 10−3 et 1,13 × 10−4 S cm−1. L'écart vaut 1,67 à 2,16 selon la pastille, ce n'est donc pas un facteur constant : l'épaisseur ou l'aire d'électrode de chaque pastille manque, ou les valeurs sont fausses ; la valeur phare de 1,04 mS cm−1 n'est pas vérifiable (calcul du critique scientifique sur les valeurs de l'article)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MW 0.4 Ga–LLZO",
+   "text": "Le « χ² = 3,26 » du Rietveld est en réalité l'indice GOF = Rwp/Rexp = 10,2/3,13 ; le χ² vaut (Rwp/Rexp)² ≈ 10,6, soit un ajustement moyen et non la concordance « satisfaisante » écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MW 0.4 Ga–LLZO",
+   "text": "La poudre calcinée n'est pas « nanostructurée » : la surface BET de 0,81 m²/g correspond à des grains d'environ 1,4 μm (1,7 μm pour le sol–gel à 0,67 m²/g ; une poudre de 50 nm aurait environ 23 m²/g), et d90 = 2,07 μm. L'écart de d50 (0,80 contre 14,28 μm) mesure surtout l'agglomération de la poudre sol–gel ; l'article écrit aussi « <800 nm » alors que d50 = 0,80 μm et que l'encart de Fig. 2f marque 810 nm (Thommes et al., IUPAC, 2015)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MW 0.4 Ga–LLZO",
+   "text": "Sécurité non écrite : le précipité imbibé de diéthylène glycol et de nitrates est séché à 250 °C à l'air, au-dessus de la température d'auto-inflammation du diéthylène glycol (229 °C, fiche CAMEO Chemicals de la NOAA) ; une étuve ordinaire peut s'enflammer."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MW 0.4 Ga–LLZO",
+   "text": "Le lithium (et le gallium) soluble dans le glycol peut partir avec le surnageant écarté après la centrifugation, et aucune analyse élémentaire (ICP) du précurseur, de la poudre ou de la pastille n'est donnée. La DRX porte sur les poudres calcinées à 700 °C et non sur les pastilles frittées à 1150 °C en creuset d'alumine : l'entrée d'Al du creuset, qui stabilise aussi le cubique, n'est pas exclue (Geiger et al., 2011)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La densité relative est calculée avec une densité théorique de ∼5,1 g cm−3 (LLZO non dopé) ; pour Li5,8Ga0,4La3Zr2O12 avec la maille de 12,9902 Å la densité DRX vaut 5,21 g cm−3, ce qui ramène 96 % et 91 % à environ 94 % et 89 % (l'écart MW/SG est conservé). La pression de pastillage de 3000 psi vaut 20,7 MPa, faible pour viser 94–96 % de densité : peut-être une lecture de manomètre, à préciser avant de reproduire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SG 0.4 Ga–LLZO",
+   "text": "Le témoin sol–gel diffère de la voie micro-ondes par plusieurs variables à la fois (solvant aqueux au lieu du diéthylène glycol, pH ajusté à 7 par NH3·H2O, gélification, absence de centrifugation, séchage à 100 puis 250 °C) : l'effet attribué à la seule taille du précurseur n'est pas isolé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Li/MW 0.4 Ga–LLZO/Li symmetric cell",
+   "text": "Rbulk après cyclage vaut 46 Ω dans le texte et 43 Ω dans le Tableau S2 de l'annexe (valeur du texte retenue) ; l'article écrit aussi 1600 h puis 1700 h de cyclage. La baisse de Rbulk de 76 à 46 Ω reste inexpliquée, une pénétration partielle de Li dans le grenat étant possible (critique scientifique)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "MW 0.45 Ga–LLZO",
+   "text": "Hypothèse de chimiste, non sourcée par l'article : la réapparition de la pyrochlore La2Zr2O7 à x = 0,45 s'explique plutôt par un déficit en Li (Li5,65 nominal, moins les pertes) que par un dépassement de la limite de solubilité du Ga, d'environ 0,72 (Wagner et al., 2016)."
   }
  ],
  "method_sources": [],
@@ -1678,15 +1814,15 @@
   },
   {
    "where": "Teneur en Ga (toutes les voies de la série)",
-   "issue": "Le texte écrit « x: 0–0.45 mol% » mais le Tableau 1 associe x = 0,2 / 0,3 / 0,4 aux rapports Li:La:Zr:Ga = 6,4/6,1/5,8:3:2:x, soit x coefficient de Li7−3xGaxLa3Zr2O12. J'ai conservé les deux écritures ; le rapport du Tableau 1 est lu comme la composition nominale visée (il ne tient pas compte de l'excès de 20 % de Li, indiqué à part)."
+   "issue": "Le texte écrit « x: 0–0.45 mol% » mais le Tableau 1 associe x = 0,2 / 0,3 / 0,4 aux rapports Li:La:Zr:Ga = 6,4/6,1/5,8:3:2:x, soit x coefficient de Li7−3xGaxLa3Zr2O12. J'ai conservé les deux écritures ; le rapport du Tableau 1 est lu comme la composition nominale visée (il ne tient pas compte de l'excès de 20 % de Li, indiqué à part). Le rapport du Tableau 1 est rangé comme résultat « composition nominale » (nominal_composition_ratio_Li_La_Zr_Ga) et non comme paramètre de dissolution : ne pas en tirer de masses."
   },
   {
    "where": "MW 0.1, 0.15, 0.25 et 0.35 Ga–LLZO",
    "issue": "Ces échantillons ne sont listés que dans les légendes des figures S2 et S3 (annexe sans images) ; leurs voies sont créées comme branches de la teneur en Ga, sans rapport Li:La:Zr:Ga ni résultat."
   },
   {
-   "where": "Résultats, phase des échantillons 0, 0,1 et 0,15",
-   "issue": "Le texte dit que MW 0 est tétragonal et que sous 0,2 de Ga l'impureté La2Zr2O7 apparaît ; il ne précise pas si MW 0 contient aussi l'impureté, ni si la phase cubique est atteinte à 0,2 (« when the Ga content ... is > 0.2 mol% » alors que 0,2 figure dans la Fig. 1a). Seule la phase tétragonale de MW 0 est extraite."
+   "where": "Résultats, phase des échantillons 0, 0,1, 0,15 et 0,2",
+   "issue": "Le texte dit que MW 0 est tétragonal et que sous 0,2 de Ga l'impureté La2Zr2O7 apparaît ; il ne précise pas si MW 0 contient aussi l'impureté. Pour 0,2 et 0,3 la phase cubique est rangée à partir de la phrase de groupe sur les diffractogrammes 0,2–0,4 de la Fig. 1a, mais « > 0.2 mol% » exclut littéralement 0,2 alors que 0,2 figure dans la série cubique : borne ambiguë pour MW 0.2."
   },
   {
    "where": "Li/MW 0.4 Ga–LLZO/Li, Rbulk après cyclage",
@@ -1698,11 +1834,19 @@
   },
   {
    "where": "MW 0 Ga–LLZO, rapport sans Ga",
-   "issue": "Le texte ne dit pas explicitement que le nitrate de gallium est omis pour x = 0 ; la lecture littérale de « x: 0–0.45 » est retenue (Ga absent) et la variation est écrite comme telle."
+   "issue": "Le texte ne dit pas explicitement que le nitrate de gallium est omis pour x = 0 (seulement « x: 0–0.45 mol% » et la légende « MW 0 Ga–LLZO ») : l'omission est déduite, déclarée en not_stated (gallium_nitrate_omission) ; la variation porte « 0 Ga » et non « absent »."
   },
   {
    "where": "Tableau S1 (distributions de taille)",
-   "issue": "Les cellules du Tableau S1 (d10, d90, uniformité de volume) sont éclatées sur plusieurs lignes dans le fichier texte et ne peuvent pas être citées intactes ; seuls le d50 et la surface spécifique, donnés dans le texte, sont extraits."
+   "issue": "Les cellules du Tableau S1 se retrouvent en ligne dans le texte aplati ; d10, d90 et l'uniformité de volume sont extraits avec la rangée du tableau pour citation."
+  },
+  {
+   "where": "Li/MW 0.4 Ga–LLZO/Li, durée de cyclage",
+   "issue": "Le texte écrit « after 1600 h cycling » pour les résistances et « over 1700 h » pour le profil de tension ; les valeurs « après cyclage » sont donc rangées sous 1600 h et la durée de 1700 h reste telle quelle."
+  },
+  {
+   "where": "Figure lue : Fig. 7c (profil de tension)",
+   "issue": "Polarisation lue sur l'encart 1500–1600 h dont l'axe va de −0,04 à 0,04 V (environ +0,037 et −0,03 V) ; lecture approximative, non chiffrée dans le texte, qui dit seulement que la tension a d'abord fluctué."
   }
  ]
 }
