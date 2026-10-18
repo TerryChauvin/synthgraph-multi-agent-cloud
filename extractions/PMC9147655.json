@@ -321,7 +321,7 @@
      "quote": "SEM imaging of the synthesized NPs revealed that the NPs had spherical morphology in all cases (Figure 1A–E)."
     },
     {
-     "property": "mean_size",
+     "property": "mode_size",
      "value_num": 50,
      "unit": "nm",
      "quote": "have a slightly larger size (50 nm)"
@@ -612,6 +612,11 @@
      "property": "XPS_C1s_C=O",
      "value_text": "288.6 eV; relative intensity 21 %",
      "quote": "DMF-TiN | 288.6 | 21 |"
+    },
+    {
+     "property": "nitrogen_content_EDX_among_all_synthesized_NPs",
+     "value_text": "the lowest among all synthesized NPs",
+     "quote": "the nitrogen content of DMF-TiN NPs was the lowest among all synthesized NPs"
     }
    ]
   },
@@ -869,7 +874,7 @@
      "quote": "SEM imaging of the synthesized NPs revealed that the NPs had spherical morphology in all cases (Figure 1A–E)."
     },
     {
-     "property": "mean_modal_size",
+     "property": "mode_size",
      "value_num": 20,
      "unit": "nm",
      "quote": "while the mean size of AN-TiN NPs was 20 nm, and almost no NPs exceeding 50 nm were observed"
@@ -984,6 +989,16 @@
      "property": "XPS_C1s_C=O",
      "value_text": "288.5 eV; relative intensity 25 %",
      "quote": "C=O | AN-TiN | 288.5 | 25 |"
+    },
+    {
+     "property": "oxygen_content_EDX_relative_to_DMF-TiN",
+     "value_text": "higher oxygen content than DMF-TiN NPs (and approximately equal oxygen content to A-TiN NPs)",
+     "quote": "AN-TiN NPs had higher oxygen content than DMF-TiN NPs (and approximately equal oxygen content to A-TiN NPs)"
+    },
+    {
+     "property": "NPs_exceeding_50_nm_SEM",
+     "value_text": "almost no NPs exceeding 50 nm were observed",
+     "quote": "almost no NPs exceeding 50 nm were observed"
     }
    ]
   },
@@ -1058,7 +1073,7 @@
      "quote": "SEM imaging of the synthesized NPs revealed that the NPs had spherical morphology in all cases (Figure 1A–E)."
     },
     {
-     "property": "mean_modal_size",
+     "property": "mode_size",
      "value_num": 95,
      "unit": "nm",
      "quote": "The mean (modal) size of H2O2-TiN NPs was 95 nm, and some of the largest NPs were up to 200 nm"
@@ -1367,7 +1382,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le laser femtoseconde (classe 4, impulsions de 30 µJ à 100 kHz) impose des lunettes adaptées et un montage fermé. L'acétonitrile et le DMF sont toxiques (l'acétonitrile peut libérer du HCN sous irradiation), l'acétone est très inflammable, et H2O2 concentré est un oxydant fort : ablation sous hotte. Les colloïdes de nanoparticules de titane sont à manipuler sans inhalation ni contact cutané."
+   "text": "Le laser femtoseconde (classe 4, 3 W de puissance moyenne, faisceau balayé à 4 m/s) impose des lunettes adaptées, un montage fermé et la maîtrise des réflexions sur la cuvette et la cible. L'article ne traite pas la sécurité. L'acétonitrile peut libérer du HCN sous irradiation (les auteurs le signalent sans précaution) et est inflammable ; l'acétone est très inflammable (point d'éclair ≈ −20 °C) sous un faisceau focalisé ; le DMF est toxique pour la reproduction (catégorie 1B) et traverse la peau ; H2O2 concentré se décompose au contact de TiN/TiO2 avec dégagement d'oxygène. Ablation sous hotte, cuvette non fermée hermétiquement, sans source d'ignition, déchets cyanurés traités à part ; nanopoudres de TiN/TiO2 à manipuler sans inhalation ni contact cutané."
   },
   {
    "type": "limite_reproductibilite",
@@ -1379,6 +1394,68 @@
    "route": null,
    "text": "Les valeurs de taille du DMF et de l'acétone, les rapports EDX N/Ti, O/Ti et N/O (Fig. 2B–D) et les maxima d'extinction (Fig. 4) sont des lectures de figures, précises à environ 0,01 à 0,02 pour les rapports EDX et 0,002 mL/(µg·cm) pour l'extinction, et à quelques nm pour la taille.",
    "quote": "Figure 2 EDX characterization of synthesized TiN-based NPs."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Dans le proche IR, les nanoparticules ablatées dans les liquides azotés (acétonitrile, DMF) ont une extinction un peu plus élevée (~10 %) que celles de l'acétone ; la lecture de la Fig. 4 donne +12 % pour AN-TiN et +4 % pour DMF-TiN, soit un écart du même ordre que la précision de lecture.",
+   "quote": "NPs ablated in nitrogen-containing liquids (AN-TiN and DMF-TiN) have slightly higher (~10%) optical extinction in near-IR than A-TiN NPs."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les auteurs ont essayé de chasser l'oxygène dissous en faisant buller du N2 dans les liquides avant et pendant l'ablation ; cela n'a pas augmenté le rapport azote/oxygène des nanoparticules. Résultat qualitatif seul (données non montrées), liquide non précisé : pas de voie créée.",
+   "quote": "We tried to pump out the dissolved molecular oxygen O2 from the liquid by bubbling the liquids with N2 before and during the ablation process, but it did not lead to an increase of the nitrogen/oxygen ratio (data not shown)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "W-TiN",
+   "text": "La surface « TiO2 amorphe » est déduite d'un rapport Ti 2p1/2:2p3/2 de 100:26–31 comparé à 100:50 pour le TiO2 cristallin. Or le rapport d'aires d'un doublet spin-orbite est fixé à 1:2 par la dégénérescence (2j+1) et ne dépend pas de la cristallinité ; un rapport mesuré près de deux fois trop bas évoque un artefact d'ajustement (fond, largeurs). L'article ne présente ni DRX ni diffraction électronique : le caractère amorphe de la surface n'est pas démontré (voir aussi Pacific Northwest National Laboratory, Bagus et al., 2019, sur l'élargissement des raies Ti(IV) 2p)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "W-TiN",
+   "text": "L'article se contredit sur le cœur des particules faites dans l'eau : au § 3.3 les rapports N/O très bas suggèrent que « not only the surface, but also the core » est oxydé, alors qu'au § 3.6 l'oxydation est dite « predominant » en surface, le cœur restant intact. Aucune technique de volume ne tranche ; l'extinction proche IR conservée favorise la seconde lecture."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AN-TiN",
+   "text": "Les auteurs écrivent que des particules deux fois plus petites ont une surface « 4-fold large » ; à masse égale la surface totale n'est qu'environ deux fois plus grande (rapport des tailles modales ≈ 39/20), le facteur 4 étant le rapport des surfaces d'une seule particule et dans l'autre sens. L'argument d'un excès d'oxygène par l'oxyde natif tient avec le bon facteur."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H2O2-TiN",
+   "text": "Les pics N 1s à 401,4 et 406,7 eV sont attribués à de l'azote moléculaire « adsorbé » ou piégé, mais du N2 physisorbé ne reste pas à la surface à température ambiante sous le vide de l'XPS, et des coques rompues n'enferment plus de gaz. Ces énergies correspondent mieux à des nitrates (≈ 407 eV) ou à des espèces NO2 adsorbées pour 406,7 eV (voir Baltrusaitis, Jayaweera et Grassian, PCCP, 2009), et à des ions ammonium ou des liaisons N–O pour 401,4 eV. L'hypothèse du gaz piégé n'est pas soutenue par l'XPS ; les auteurs disent eux-mêmes qu'elle demande confirmation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H2O2-TiN",
+   "text": "TiN se dissout presque entièrement dans H2O2 à 30 % (Popova et Kabannik, 1960) : dans le colloïde récolté sans post-traitement et conservé des mois, l'oxydation continue après l'ablation. La taille (95 nm, jusqu'à 200 nm) et les coques rompues peuvent donc venir de cette attaque chimique autant que de l'ablation. La concentration de H2O2 et le délai avant caractérisation, non donnés, commandent ce résultat."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le volume de liquide, sa température, la fluence (diamètre du faisceau non donné) et la distance de focalisation (95–97 mm ajustée par liquide) ne sont pas contrôlés : plusieurs variables changent en même temps que le liquide. La puissance crête (30 µJ en 270 fs, soit ≈ 111 MW) vaut environ 38 fois la puissance critique d'autofocalisation de l'eau : le faisceau filamente dans les 3 mm de liquide et peut refragmenter les particules déjà formées. Sans refroidissement indiqué, 3 W pendant 10 min peuvent échauffer nettement un petit volume, surtout d'acétone (ébullition à 56 °C)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le dosage de l'azote par EDX est semi-quantitatif : la raie N Kα (≈ 392 eV) est à environ 60 eV de Ti Lα (≈ 452 eV), non séparables, et le signal N dépend de la soustraction d'un spectre L du titane mis à l'échelle ; les rapports N/Ti et N/O sont des rapports d'intensité, pas des compositions. En XPS, une fois corrigé des facteurs de sensibilité, le rapport nitrure/carbure de surface vaut environ 0,8 à 1,3 selon l'échantillon : la fraction de carbure n'est pas « slight », et Ti–N et Ti–C ne se distinguent pas en Ti 2p."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les coefficients d'extinction massique sont rapportés à la masse de titane (AAS) et pris au maximum entre 650 et 750 nm, alors que les valeurs de comparaison de la littérature (Au, GO, WS2, MoS2) sont données par masse totale de matériau et à 808 nm ; la supériorité affirmée est donc surestimée d'un facteur d'environ 1,3 à 1,7 et demande un recalcul. L'extinction inclut la diffusion, qui ne chauffe pas. Le titane est dosé par AAS après simple dilution dans HNO3 à 5 %, sans minéralisation : TiO2 et TiN ne s'y dissolvent pas, donc le dosage porte sur une suspension et son rendement d'atomisation peut varier avec l'état d'oxydation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AN-Ti",
+   "text": "Les voies AN-Ti et DMF-Ti (cible de titane métallique) sont invérifiables : leurs réglages laser et leurs résultats sont dans la Fig. S4, absente du dépôt, et l'article dit seulement que l'azote est plusieurs fois plus élevé avec l'acétonitrile."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "H2O2-TiN",
+   "text": "Hypothèse : dans H2O2, les nanoparticules formées par ablation sont oxydées pendant et après la synthèse par H2O2 et ses radicaux, le nitrure se convertissant en TiO2 avec départ de l'azote sous forme de N2 et surtout d'espèces oxydées (nitrite, nitrate) et d'ammonium retenues en surface, ce qui rendrait compte des pics N 1s à 401,4 et 406,7 eV. Les cavités et coques rompues s'expliqueraient par une diffusion du titane vers l'extérieur plus rapide que celle de l'oxygène vers l'intérieur (effet Kirkendall à l'échelle nanométrique) et par le gaz dégagé pendant l'oxydation, qui fait éclater la coque ; ce gaz s'échappe et n'est pas ce que voit l'XPS. Cette lecture remplace, comme hypothèse de l'analyse, celle des auteurs d'un gaz piégé dans les cavités."
   }
  ],
  "method_sources": [
@@ -1392,7 +1469,7 @@
  "doubts": [
   {
    "where": "W-TiN, DMF-TiN, A-TiN : taille",
-   "issue": "Le texte donne 95 nm (H2O2) et 20 nm (acétonitrile) et, en conclusion, 90 nm pour H2O2 et « 40–50 nm » pour les trois autres ; la figure 1F montre environ 52 nm (eau), 39 nm (DMF) et 35 nm (acétone). Valeurs retenues : 95 et 20 nm (Résultats), 50 nm (eau, Discussion) et lecture de la Fig. 1F pour DMF et acétone (précision de quelques nm)."
+   "issue": "Le texte donne 95 nm (H2O2) et 20 nm (acétonitrile) et, en conclusion, 90 nm pour H2O2 et « 40–50 nm » pour les trois autres ; la figure 1F montre environ 52 nm (eau), 39 nm (DMF) et 35 nm (acétone). Valeurs retenues : 95 et 20 nm (Résultats), 50 nm (eau, Discussion) et lecture de la Fig. 1F pour DMF et acétone (précision de quelques nm). Une seule propriété, mode_size, sert pour les cinq liquides (la légende de la Fig. 1F définit « Mode size of the lognormal fits ») ; les « mean size » des Résultats sont lues comme tailles modales (« mean (modal) size » pour H2O2), et le 50 nm de l'eau vient de « have a slightly larger size (50 nm) » dans la Discussion."
   },
   {
    "where": "Figures lues",
@@ -1412,7 +1489,7 @@
   },
   {
    "where": "Essai sous bullage de N2",
-   "issue": "« We tried to pump out the dissolved molecular oxygen O2 from the liquid by bubbling the liquids with N2 ... (data not shown) » : liquide non précisé, aucune donnée ; non extrait comme voie."
+   "issue": "« We tried to pump out the dissolved molecular oxygen O2 from the liquid by bubbling the liquids with N2 ... (data not shown) » : liquide non précisé, aucune donnée ; non extrait comme voie. Le résultat qualitatif (pas d'augmentation du rapport azote/oxygène) est consigné dans une annotation tendance_observee."
   },
   {
    "where": "Tableau 1, colonne W-TiN, rangées Ti 2p TiN et TiNO",
@@ -1424,11 +1501,15 @@
   },
   {
    "where": "Résultats 3.5 : extinction",
-   "issue": "Le texte dit que les NPs d'acétonitrile et de DMF ont une extinction supérieure d'environ 10 % à celle de l'acétone ; la lecture de la Fig. 4 donne 0,076 et 0,071 contre 0,068 mL/(µg·cm) (soit +12 % et +4 %). Valeurs lues sur la figure et phrase du texte sont toutes deux conservées."
+   "issue": "Le texte dit que les NPs d'acétonitrile et de DMF ont une extinction supérieure d'environ 10 % à celle de l'acétone ; la lecture de la Fig. 4 donne 0,076 et 0,071 contre 0,068 mL/(µg·cm) (soit +12 % et +4 %). Les valeurs lues sur la figure sont dans les résultats des voies ; la phrase du texte est conservée dans une annotation tendance_observee (résultat de groupe), pas dans les résultats."
   },
   {
    "where": "H2O2-TiN : liquide",
    "issue": "La concentration de la solution de H2O2 n'est pas donnée ; elle est déclarée « non citée »."
+  },
+  {
+   "where": "W-TiN : cœur des particules",
+   "issue": "Le § 3.3 dit que « not only the surface, but also the core of the NPs was oxidized » pour W-TiN et H2O2-TiN, alors que le § 3.6 attribue le résultat optique de W-TiN à « a predominant oxidation of the NP surface, while the core remains unaffected ». Contradiction de l'article, sans correction de valeur ; voir l'annotation limite_reproductibilite de W-TiN."
   }
  ]
 }
