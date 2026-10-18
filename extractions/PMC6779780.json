@@ -130,7 +130,7 @@
      "technique": "photocatalytic degradation test (BPA, visible light)",
      "result": "25.2% of BPA removed",
      "instrument": "300W Xe lamp (PLS-SXE300) with 420 nm cutoff filter; HPLC Agilent 1260 (PDAD, ZORBAX Eclipse XDB-C18)",
-     "conditions": "10 mg catalyst in 50 ml of 10 mg L−1 BPA, 30 min dark equilibration before irradiation, 3 mL aliquots centrifuged, analysed by HPLC",
+     "conditions": "10 mg catalyst in 50 ml of 10 mg L−1 BPA, 30 min dark equilibration before irradiation, 3 mL aliquots centrifuged, analysed by HPLC; continuous stirring at normal atmospheric temperature (température du réacteur non régulée)",
      "quote": "For the visible-light photocatalytic study, a 300W Xe lamp (PLS-SXE300, Beijing, Perfectlight Technology Co., Ltd.) was used as the visible light source with a 420 nm cutoff filter. In each experiment, 10 mg of catalyst power was added into the BPA solution (50 ml, 10 mg L−1) by continuous stirring at normal atmospheric temperature. Prior to the irradiation, the suspension was magnetically stirred in dark for 30 min to establish adsorption-desorption equilibrium."
     }
    ],
@@ -525,8 +525,15 @@
      "technique": "photocatalytic degradation test (BPA, visible light)",
      "result": "BPA completely removed within 120 min (Results); MO 95.5% in 100 min; RhB 99.9% in 20 min",
      "instrument": "300W Xe lamp (PLS-SXE300) with 420 nm cutoff filter; HPLC Agilent 1260 (PDAD, ZORBAX Eclipse XDB-C18)",
-     "conditions": "10 mg catalyst in 50 ml of 10 mg L−1 BPA, 30 min dark equilibration before irradiation, 3 mL aliquots centrifuged, analysed by HPLC",
+     "conditions": "10 mg catalyst in 50 ml of 10 mg L−1 BPA, 30 min dark equilibration before irradiation, 3 mL aliquots centrifuged, analysed by HPLC; continuous stirring at normal atmospheric temperature (température du réacteur non régulée)",
      "quote": "For the visible-light photocatalytic study, a 300W Xe lamp (PLS-SXE300, Beijing, Perfectlight Technology Co., Ltd.) was used as the visible light source with a 420 nm cutoff filter. In each experiment, 10 mg of catalyst power was added into the BPA solution (50 ml, 10 mg L−1) by continuous stirring at normal atmospheric temperature. Prior to the irradiation, the suspension was magnetically stirred in dark for 30 min to establish adsorption-desorption equilibrium."
+    },
+    {
+     "technique": "XPS",
+     "instrument": null,
+     "conditions": null,
+     "result": "Br 3d à 68.0 et 69.0 eV sans déplacement ; Bi 4f déplacés vers 158.9 et 164.2 eV ; O 1s 532.1 eV déplacé à 532.0 eV, 529.6 eV inchangé",
+     "quote": "For O 1s spectrum of pure BiOBr and BiOBr-g-C3N4 composites Figure 3D, the peak with binding energy at 532.1 eV was converted to low binding energy at 532.0 eV. However, no significant effects were observed in the position of the binding energy at 529.6 eV."
     }
    ],
    "outcomes": [
@@ -611,6 +618,45 @@
      "property": "MO_degradation_with_scavengers",
      "quote": "It was obviously found that photocatalytic efficiency of MO decrease when EDTA and BQ were added into the solution.",
      "value_text": "photocatalytic efficiency of MO decrease when EDTA and BQ were added"
+    },
+    {
+     "property": "XPS_Br_3d_binding_energy",
+     "quote": "No obvious movement in the position of the Br3d peak was observed in Figure 3B, indicating that there is no influence on the energy spectrum of Br by coupling with g-C3N4",
+     "value_text": "No obvious movement in the position of the Br3d peak"
+    },
+    {
+     "property": "XPS_Bi_4f_binding_energy",
+     "quote": "It is noted that the two peaks of Bi 4f have a slight shift to low binding energy of 158.9 and 164.2 eV",
+     "value_text": "158.9 and 164.2 eV"
+    },
+    {
+     "property": "XPS_O_1s_binding_energy",
+     "quote": "For O 1s spectrum of pure BiOBr and BiOBr-g-C3N4 composites Figure 3D, the peak with binding energy at 532.1 eV was converted to low binding energy at 532.0 eV. However, no significant effects were observed in the position of the binding energy at 529.6 eV.",
+     "value_text": "532.0 eV"
+    },
+    {
+     "property": "MO_degradation_rate_Fig9_no_scavenger",
+     "quote": "Figure 9 Trapping experiment of active species under visible-light irradiation.",
+     "value_num": 0.95,
+     "from_figure": "Fig. 9"
+    },
+    {
+     "property": "MO_degradation_rate_Fig9_BQ",
+     "quote": "Figure 9 Trapping experiment of active species under visible-light irradiation.",
+     "value_num": 0.65,
+     "from_figure": "Fig. 9"
+    },
+    {
+     "property": "MO_degradation_rate_Fig9_TBA",
+     "quote": "Figure 9 Trapping experiment of active species under visible-light irradiation.",
+     "value_num": 0.85,
+     "from_figure": "Fig. 9"
+    },
+    {
+     "property": "MO_degradation_rate_Fig9_EDTA",
+     "quote": "Figure 9 Trapping experiment of active species under visible-light irradiation.",
+     "value_num": 0.23,
+     "from_figure": "Fig. 9"
     }
    ]
   },
@@ -1016,7 +1062,7 @@
      "instrument": "RiGdku RINT 2000 X-ray diffractometer",
      "conditions": "CuKα radiation, λ = 1.5418Å",
      "quote": "The X-ray diffraction peaks of pure BiOBr at 10.907°, 21.914°, 32.241°, 46.241°, and 57.162° were corresponded to (001), (002), (110), (200), and (212) crystal plane of BiOBr, respectively, which can correspond to tetragonal BiOBr (JCPDS 09-0393).",
-     "result": "tetragonal BiOBr (JCPDS 09-0393)"
+     "result": "pics de BiOBr pur à 10.907°, 21.914°, 32.241°, 46.241° et 57.162° = plans (001), (002), (110), (200), (212) ; BiOBr tétragonal (JCPDS 09-0393)"
     },
     {
      "technique": "UV-vis DRS",
@@ -1029,8 +1075,15 @@
      "technique": "photocatalytic degradation test (BPA, visible light)",
      "result": "96.6% of BPA removed (text of Results)",
      "instrument": "300W Xe lamp (PLS-SXE300) with 420 nm cutoff filter; HPLC Agilent 1260 (PDAD, ZORBAX Eclipse XDB-C18)",
-     "conditions": "10 mg catalyst in 50 ml of 10 mg L−1 BPA, 30 min dark equilibration before irradiation, 3 mL aliquots centrifuged, analysed by HPLC",
+     "conditions": "10 mg catalyst in 50 ml of 10 mg L−1 BPA, 30 min dark equilibration before irradiation, 3 mL aliquots centrifuged, analysed by HPLC; continuous stirring at normal atmospheric temperature (température du réacteur non régulée)",
      "quote": "For the visible-light photocatalytic study, a 300W Xe lamp (PLS-SXE300, Beijing, Perfectlight Technology Co., Ltd.) was used as the visible light source with a 420 nm cutoff filter. In each experiment, 10 mg of catalyst power was added into the BPA solution (50 ml, 10 mg L−1) by continuous stirring at normal atmospheric temperature. Prior to the irradiation, the suspension was magnetically stirred in dark for 30 min to establish adsorption-desorption equilibrium."
+    },
+    {
+     "technique": "XPS",
+     "instrument": null,
+     "conditions": null,
+     "result": "Br 3d à 68.0 et 69.0 eV (Br-) ; Bi 4f à 159 et 164.3 eV (Bi3+) ; O 1s à 532.1 eV (O-H de surface) et 529.6 eV (O du réseau, Bi-O)",
+     "quote": "The spectrum of Br 3d was shown in Figure 3B, and two typical peaks at about 68.0 and 69.0 eV were observed and attributed to Br3d5/2 and Br3d3/2 of Br- in BiOBr-g-C3N4 composites or pure BiOBr"
     }
    ],
    "outcomes": [
@@ -1096,6 +1149,21 @@
      "value_num": 0.02127,
      "unit": "min−1",
      "from_figure": "Fig. 7b"
+    },
+    {
+     "property": "XPS_Br_3d_binding_energy",
+     "quote": "The spectrum of Br 3d was shown in Figure 3B, and two typical peaks at about 68.0 and 69.0 eV were observed and attributed to Br3d5/2 and Br3d3/2 of Br- in BiOBr-g-C3N4 composites or pure BiOBr",
+     "value_text": "68.0 and 69.0 eV"
+    },
+    {
+     "property": "XPS_Bi_4f_binding_energy",
+     "quote": "As is displayed in Figure 3C, the two peaks at 159 and 164.3 eV belonged to Bi 4f5/2 and Bi 4f7/2, respectively, corresponding to the Bi element in trivalent oxidation state",
+     "value_text": "159 and 164.3 eV"
+    },
+    {
+     "property": "XPS_O_1s_binding_energy",
+     "quote": "For O 1s spectrum of pure BiOBr and BiOBr-g-C3N4 composites Figure 3D, the peak with binding energy at 532.1 eV was converted to low binding energy at 532.0 eV. However, no significant effects were observed in the position of the binding energy at 529.6 eV.",
+     "value_text": "532.1 eV"
     }
    ]
   },
@@ -1334,7 +1402,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "BiOBr-g-C3N4-4:1",
-   "text": "Probablement, Bi(NO3)3 en milieu acide nitrique/éthylène glycol libère Bi3+, qui réagit avec le bromure libéré par CTAB et avec l'eau de l'acide nitrique aqueux pour former BiOBr (Bi3+ + Br− + H2O → BiOBr + 2 H+) ; le CTAB, tensioactif, orienterait la croissance des feuillets en fleurs. La température de 160 °C et l'éthylène glycol favoriseraient la cristallisation lente et l'auto-assemblage. g-C3N4 servirait de support de nucléation, ce qui expliquerait la perte de la morphologie en fleurs aux fortes teneurs.",
+   "text": "Hypothèse, non écrite par les auteurs : Bi3+ maintenu en solution par l'acide nitrique et complexé par l'éthylène glycol s'hydrolyse lentement avec le bromure libéré par le CTAB à 160 °C (Bi3+ + Br− + H2O → BiOBr + 2 H+) ; les feuillets (001) couverts de cations CTA+ s'assemblent en microsphères (fleurs). g-C3N4, préformé, jouerait le rôle de support de nucléation hétérogène, ce qui disperse les feuillets sur le g-C3N4 et empêche l'assemblage en fleurs aux fortes teneurs. Le schéma d'activité de type II des auteurs n'est pas compatible avec leurs espèces actives (voir limite_reproductibilite).",
    "quote": null
   },
   {
@@ -1353,6 +1421,60 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Aucune quantité de CTAB, de nitrate de bismuth ou de g-C3N4 n'est donnée (« a certain amount »), seulement le rapport massique de nom d'échantillon ; la concentration de l'acide nitrique, la vitesse de centrifugation, l'atmosphère de calcination de la mélamine, le rendement et le mode de préparation exact du BiOBr seul ne sont pas cités. Les valeurs des rapports 8:1, 1:1 et 1:4 ne viennent que de la figure 7 (lecture graphique à ±5 %). Les courbes de la figure 4B (bandes interdites des composites autres que 4:1), les figures 1 (XRD), 3 (XPS) et 6 (photocourant) ne portent pas de valeur chiffrée exploitable.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOBr-g-C3N4-4:1",
+   "text": "Élimination du BPA : le résumé attribue 96,6 % au composite 4:1, les Résultats attribuent 96,6 % à BiOBr seul et disent « completely removed » pour le 4:1. La figure 7b soutient plutôt le résumé (k = 0,02751 min−1 donne ≈ 96,3 % à 120 min pour le 4:1, contre ≈ 92 % pour BiOBr avec k = 0,02127 min−1). L'article se contredit : le texte des Résultats est conservé, mais l'attribution de 96,6 % est incertaine et l'« élimination complète » du 4:1 n'est soutenue par aucune donnée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOBr",
+   "text": "La préparation de BiOBr seul n'est décrite nulle part : le protocole est déduit de celui du composite, privé de g-C3N4, et les citations des étapes ne parlent que du composite. L'attribution de 96,6 % d'élimination du BPA à BiOBr est incertaine (voir la voie 4:1).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOBr-g-C3N4-4:1",
+   "text": "Fig. 8 : les valeurs du texte (MO 95,5 % en 100 min, RhB 99,9 % en 20 min) ne sont pas soutenues par les courbes. Pour MO le 4:1 est vers 0,10 en Ct/C0 à 100 min et ≈ 0,04 à 130 min ; pour RhB le 4:1 est à ≈ 0,77 à 25 min et ≈ 0,22 à 40 min, plus lent que g-C3N4 et BiOBr, contrairement au texte. Le chimiste ne peut pas s'appuyer sur ces deux chiffres.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Bandes interdites annoncées (2,47 eV pour g-C3N4, 1,80 eV pour le 4:1, 2,13 eV pour BiOBr) inférieures de 0,4 à 0,6 eV à celles que donnent les bords d'absorption des mêmes auteurs (437, 519 et 464 nm, soit 2,84, 2,39 et 2,67 eV) : sur la figure 4B la tangente est tirée dans la queue d'absorption et non sur la montée principale (voir Makuła, Pacia et Macyk, J. Phys. Chem. Lett. 2018). Les bords de bande calculés en dépendent, et l'argument d'une « bande interdite plus étroite » du composite n'est pas établi. Les bandes interdites des composites 8:1, 1:1 et 1:4 ne figurent pas dans le texte.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOBr-g-C3N4-4:1",
+   "text": "Le mécanisme de type II proposé par les auteurs contredit leurs espèces actives : avec leurs bords de bande, les électrons passent dans la bande de conduction de BiOBr (+0,89 V), qui ne peut pas former O2•−, et le potentiel O2/O2•− cité (−0,046 V) est faux (≈ −0,18 V en solution aqueuse, IUPAC) ; la bande de valence de BiOBr (+3,02 V) peut en revanche former •OH, que les auteurs excluent. Un schéma en Z est compatible avec les espèces observées. Le piégeage (Fig. 9) est fait sur le méthylorange et non sur le BPA.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiOBr-g-C3N4-4:1",
+   "text": "Adsorption du BPA dans le noir : ≈ 45 à 50 % sur 10 mg d'un composite de 6,04 m2/g, soit ≈ 0,10 nm2 par molécule, 5 à 10 fois la densité d'une monocouche ; une adsorption de surface ordinaire ne l'explique pas (CTAB résiduel possible, non vérifié). BiOBr pur, de surface BET voisine (5,99 m2/g), adsorbe nettement moins, ce que la mesure BET ne distingue pas.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "g-C3N4",
+   "text": "Pic (002) annoncé à 26,50° (d ≈ 3,36 Å, distance du graphite) alors que g-C3N4 issu de la mélamine est attendu vers 27,4° (≈ 3,26 Å, Wang et al., Nature Materials 2009) ; les pics de BiOBr tombent sur la fiche JCPDS, donc il ne s'agit pas d'un décalage de l'appareil : faute de pointé possible, à vérifier sur la figure 1.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Incohérences de lecture dans l'article : les attributions XPS sont inversées (159 eV donné pour Bi 4f5/2 et 164,3 eV pour Bi 4f7/2, l'inverse de l'usage) ; le titre et la conclusion parlent de composites « en forme de fleur » alors que le MEB montre que la fleur de BiOBr est détruite dans le 4:1 ; les rapports BiOBr:g-C3N4 sont nominaux (supposent une conversion totale, sans dosage de la composition réelle).",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "BiOBr",
+   "text": "Hypothèse, non écrite par les auteurs : même formation que pour le composite, sans g-C3N4 : hydrolyse lente de Bi3+ complexé par l'éthylène glycol en présence du bromure du CTAB, feuillets (001) stabilisés par CTA+, assemblage en fleurs par mûrissement.",
    "quote": null
   }
  ],
@@ -1375,7 +1497,7 @@
   },
   {
    "where": "BiOBr-g-C3N4-4:1 / BiOBr, élimination du BPA",
-   "issue": "Contradiction : le résumé dit que 96,6 % du BPA est éliminé en 120 min par le 4:1 ; la section Résultats dit que le 4:1 l'élimine « completely » en 120 min et que 96,6 et 25,2 % sont éliminés par BiOBr et g-C3N4. La figure 7a (axe jusqu'à 150 min) montre les courbes 4:1 et BiOBr très proches, vers 0,07 à 0,08 en Ct/C0 à 120 min. Lecture retenue : texte des Résultats (4:1 en value_text, 96,6 % pour BiOBr, 25,2 % pour g-C3N4)."
+   "issue": "Contradiction : le résumé dit que 96,6 % du BPA est éliminé en 120 min par le 4:1 ; la section Résultats dit que le 4:1 l'élimine « completely » en 120 min et que 96,6 et 25,2 % sont éliminés par BiOBr et g-C3N4. La figure 7a (axe jusqu'à 150 min) montre les courbes 4:1 et BiOBr très proches, vers 0,07 à 0,08 en Ct/C0 à 120 min. Lecture retenue : texte des Résultats (4:1 en value_text, 96,6 % pour BiOBr, 25,2 % pour g-C3N4). Complément : la figure 7b soutient plutôt le résumé (k = 0,02751 min−1 pour le 4:1 donne ≈ 96,3 % à 120 min ; k = 0,02127 min−1 pour BiOBr donne ≈ 92 %). L'article se contredit : aucune des deux attributions n'est corrigée, le texte des Résultats est conservé."
   },
   {
    "where": "Table 1, colonne Pore volume",
@@ -1387,11 +1509,11 @@
   },
   {
    "where": "Figure 8 (MO et RhB)",
-   "issue": "La figure 8b montre la courbe du 4:1 en retard sur celles de g-C3N4 et BiOBr pour RhB (environ 0,22 de Ct/C0 contre 0 à 20 min d'éclairement), alors que le texte dit que le 4:1 décolore 99,9 % de RhB en 20 min et reste le plus actif ; la figure 8a va jusqu'à 130 min alors que le texte parle de 100 min. Valeurs du texte retenues (95,5 % MO, 99,9 % RhB), aucune valeur lue sur la figure 8."
+   "issue": "La figure 8b montre la courbe du 4:1 en retard sur celles de g-C3N4 et BiOBr pour RhB (environ 0,22 de Ct/C0 contre 0 à 20 min d'éclairement), alors que le texte dit que le 4:1 décolore 99,9 % de RhB en 20 min et reste le plus actif ; la figure 8a va jusqu'à 130 min alors que le texte parle de 100 min. Valeurs du texte retenues (95,5 % MO, 99,9 % RhB), aucune valeur lue sur la figure 8. Fig. 8 : le 4:1 est à ≈ 0,10 vers 100 min pour MO (la valeur du texte, 95,5 %, n'est pas soutenue par la courbe)."
   },
   {
    "where": "Expériences de piégeage (Fig. 9)",
-   "issue": "Le texte parle de « the BiOBr-g-C3N4 photocatalyst » sans dire le rapport ; rattaché au 4:1 qui est l'échantillon testé partout ailleurs. Les barres de la figure 9 (≈ 0,95 sans piégeur, 0,65 BQ, 0,85 TBA, 0,23 EDTA) n'ont pas été extraites."
+   "issue": "Le texte parle de « the BiOBr-g-C3N4 photocatalyst » sans dire le rapport ; rattaché au 4:1 qui est l'échantillon testé partout ailleurs. Les barres de la figure 9 (≈ 0,95 sans piégeur, 0,65 BQ, 0,85 TBA, 0,23 EDTA) sont lues sur la figure, à ±0,05 près ; l'axe est « degradation rate », la concentration des piégeurs et le rapport du photocatalyseur ne sont pas cités."
   },
   {
    "where": "Electrode_photocurrent",
@@ -1400,6 +1522,10 @@
   {
    "where": "BiOBr-g-C3N4-4:1, étape 1",
    "issue": "Le texte dit « stirred vigorously » sans vitesse ; enregistré en value_text. Le tableau 1 écrit « BiOBr/g-C3N4-4:1 » et « Pure GCN » : rattachés respectivement aux voies BiOBr-g-C3N4-4:1 et g-C3N4."
+  },
+  {
+   "where": "BiOBr, XPS (Bi 4f)",
+   "issue": "Le texte ne dit pas à quel échantillon se rapportent les pics à 159 et 164,3 eV ; rattachés à BiOBr pur parce que les pics du composite sont donnés à 158,9 et 164,2 eV comme un déplacement. L'article attribue 159 eV à Bi 4f5/2 et 164,3 eV à Bi 4f7/2 : ordre inverse de l'usage."
   }
  ]
 }
