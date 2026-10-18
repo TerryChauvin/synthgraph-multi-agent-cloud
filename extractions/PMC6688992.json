@@ -216,7 +216,7 @@
      "order": 5,
      "action": "centrifuge",
      "description": "Centrifuge the orange precipitate.",
-     "quote": "the resulting orange precipitate was cleaned through repeated centrifugation into deionised water and then absolute ethanol",
+     "quote": "cleaned through repeated centrifugation",
      "parameters": [],
      "equipment": [],
      "not_stated": [
@@ -228,11 +228,11 @@
      "order": 6,
      "action": "wash",
      "description": "Clean the precipitate by repeated centrifugation into deionised water and then absolute ethanol.",
-     "quote": "the resulting orange precipitate was cleaned through repeated centrifugation into deionised water and then absolute ethanol",
+     "quote": "into deionised water and then absolute ethanol",
      "parameters": [
       {
        "name": "wash_solvent",
-       "quote": "the resulting orange precipitate was cleaned through repeated centrifugation into deionised water and then absolute ethanol",
+       "quote": "into deionised water and then absolute ethanol",
        "value_text": "deionised water and then absolute ethanol"
       },
       {
@@ -561,7 +561,7 @@
      "order": 5,
      "action": "centrifuge",
      "description": "Obtain the dark-green precipitate by repeated centrifugation.",
-     "quote": "the dark-green precipitate was obtained by centrifuging repeatedly into deionised water and then absolute ethanol",
+     "quote": "obtained by centrifuging repeatedly",
      "parameters": [],
      "equipment": [],
      "not_stated": [
@@ -573,11 +573,11 @@
      "order": 6,
      "action": "wash",
      "description": "Wash by centrifuging repeatedly into deionised water and then absolute ethanol.",
-     "quote": "the dark-green precipitate was obtained by centrifuging repeatedly into deionised water and then absolute ethanol",
+     "quote": "into deionised water and then absolute ethanol",
      "parameters": [
       {
        "name": "wash_solvent",
-       "quote": "the dark-green precipitate was obtained by centrifuging repeatedly into deionised water and then absolute ethanol",
+       "quote": "into deionised water and then absolute ethanol",
        "value_text": "deionised water and then absolute ethanol"
       },
       {
@@ -819,6 +819,16 @@
      "property": "discharge_current_persistence_after_final_illumination",
      "quote": "a current was measured from the CdS/WOx composite more than twenty minutes after final illumination",
      "value_text": "more than twenty minutes"
+    },
+    {
+     "property": "photocurrent_decay_vs_CdS",
+     "quote": "photocurrent from the CdS/WOx sample deteriorated more rapidly than in the case of CdS, exhibiting an exponential decay over the course of the experiment.",
+     "value_text": "deteriorated more rapidly than in the case of CdS"
+    },
+    {
+     "property": "open_circuit_potential_establishment_and_removal_vs_CdS",
+     "quote": "equilibrium potential was established and removed more slowly in the case of CdS/WOx",
+     "value_text": "established and removed more slowly in the case of CdS/WOx"
     }
    ],
    "missing_fields": [
@@ -879,6 +889,10 @@
      "quote": "the WOx nanowires resemble the corresponding WOx nanostructures observed in a core-shell Ta3N5/WOx composite from a previous report",
      "value_text": "core-shell Ta3N5/WOx composite with WOx nanowires (previous report)"
     }
+   ],
+   "not_stated": [
+    "drying",
+    "cooling"
    ]
   },
   {
@@ -980,6 +994,20 @@
       "gas_flow",
       "cooling_rate"
      ]
+    },
+    {
+     "order": 2,
+     "action": "grind",
+     "description": "Grind the reference material into a fine powder.",
+     "quote": "All reference materials were ground into a fine powder using a pestle and mortar.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "pestle and mortar",
+       "detail": null,
+       "quote": "using a pestle and mortar"
+      }
+     ]
     }
    ],
    "outcomes": [
@@ -1075,23 +1103,23 @@
      "order": 2,
      "action": "heat",
      "description": "Solvothermal treatment in the Parr digestion bomb.",
-     "quote": "heated at a rate of 10 °C min−1 to 180 °C, and this temperature was held constant for a period of 24 hours. The vessel was subsequently cooled naturally to room temperature, and the dark-green precipitate was obtained by centrifuging repeatedly into deionised water and then absolute ethanol, followed by drying overnight at 80 °C. The dried material was finally ground into a fine powder using a pestle and mortar. ## Ta3N5, WOx and Ta3N5/WOx reference samples To serve as reference samples, nanoparticles of tantalum(V) nitride, Ta3N5, tungsten(VI) sub-oxide, WOx, and a nanocomposite of tantalum(V) nitride and tungsten(VI) sub-oxide, Ta3N5/WOx, were synthesised using procedures described elsewhere. In brief, the Ta3N5 nanoparticles were prepared inside a tube furnace by annealing a mixture of tantalum(V) chloride (2.0 mmol), sodium chloride (2.8 mmol) and potassium chloride (1.2 mmol) at 800 °C for ten hours under continuous flow of ammonia gas. The Ta3N5/WOx composite was subsequently obtained using a technique analogous to that described for CdS/WOx, with the CdS substituted for Ta3N5 (3.8 mM) and tungsten(VI) chloride present at a slightly increased concentration of 22.8 mM. All other reaction conditions, including the heating parameters, the composition and volume of the solvent, and the centrifugation steps used to clean the final precipitate, remained the same as in the CdS/WOx case. To prepare the WOx reference sample, an ethanolic solution of WCl6 (12.6 mM, 70 ml) was transferred to a 125 ml PTFE cup and heated at a rate of 10 °C min−1 in the 125 ml stainless steel Parr acid digestion bomb to a temperature of 180 °C, which was maintained for 24 hours.",
+     "quote": "heated at a rate of 10 °C min−1 in the 125 ml stainless steel Parr acid digestion bomb to a temperature of 180 °C, which was maintained for 24 hours.",
      "parameters": [
       {
        "name": "temperature",
-       "quote": "heated at a rate of 10 °C min−1 to 180 °C, and this temperature was held constant for a period of 24 hours. The vessel was subsequently cooled naturally to room temperature, and the dark-green precipitate was obtained by centrifuging repeatedly into deionised water and then absolute ethanol, followed by drying overnight at 80 °C. The dried material was finally ground into a fine powder using a pestle and mortar. ## Ta3N5, WOx and Ta3N5/WOx reference samples To serve as reference samples, nanoparticles of tantalum(V) nitride, Ta3N5, tungsten(VI) sub-oxide, WOx, and a nanocomposite of tantalum(V) nitride and tungsten(VI) sub-oxide, Ta3N5/WOx, were synthesised using procedures described elsewhere. In brief, the Ta3N5 nanoparticles were prepared inside a tube furnace by annealing a mixture of tantalum(V) chloride (2.0 mmol), sodium chloride (2.8 mmol) and potassium chloride (1.2 mmol) at 800 °C for ten hours under continuous flow of ammonia gas. The Ta3N5/WOx composite was subsequently obtained using a technique analogous to that described for CdS/WOx, with the CdS substituted for Ta3N5 (3.8 mM) and tungsten(VI) chloride present at a slightly increased concentration of 22.8 mM. All other reaction conditions, including the heating parameters, the composition and volume of the solvent, and the centrifugation steps used to clean the final precipitate, remained the same as in the CdS/WOx case. To prepare the WOx reference sample, an ethanolic solution of WCl6 (12.6 mM, 70 ml) was transferred to a 125 ml PTFE cup and heated at a rate of 10 °C min−1 in the 125 ml stainless steel Parr acid digestion bomb to a temperature of 180 °C, which was maintained for 24 hours.",
+       "quote": "heated at a rate of 10 °C min−1 in the 125 ml stainless steel Parr acid digestion bomb to a temperature of 180 °C, which was maintained for 24 hours.",
        "value_num": 180,
        "unit": "°C"
       },
       {
        "name": "heating_rate",
-       "quote": "heated at a rate of 10 °C min−1 to 180 °C, and this temperature was held constant for a period of 24 hours. The vessel was subsequently cooled naturally to room temperature, and the dark-green precipitate was obtained by centrifuging repeatedly into deionised water and then absolute ethanol, followed by drying overnight at 80 °C. The dried material was finally ground into a fine powder using a pestle and mortar. ## Ta3N5, WOx and Ta3N5/WOx reference samples To serve as reference samples, nanoparticles of tantalum(V) nitride, Ta3N5, tungsten(VI) sub-oxide, WOx, and a nanocomposite of tantalum(V) nitride and tungsten(VI) sub-oxide, Ta3N5/WOx, were synthesised using procedures described elsewhere. In brief, the Ta3N5 nanoparticles were prepared inside a tube furnace by annealing a mixture of tantalum(V) chloride (2.0 mmol), sodium chloride (2.8 mmol) and potassium chloride (1.2 mmol) at 800 °C for ten hours under continuous flow of ammonia gas. The Ta3N5/WOx composite was subsequently obtained using a technique analogous to that described for CdS/WOx, with the CdS substituted for Ta3N5 (3.8 mM) and tungsten(VI) chloride present at a slightly increased concentration of 22.8 mM. All other reaction conditions, including the heating parameters, the composition and volume of the solvent, and the centrifugation steps used to clean the final precipitate, remained the same as in the CdS/WOx case. To prepare the WOx reference sample, an ethanolic solution of WCl6 (12.6 mM, 70 ml) was transferred to a 125 ml PTFE cup and heated at a rate of 10 °C min−1 in the 125 ml stainless steel Parr acid digestion bomb to a temperature of 180 °C, which was maintained for 24 hours.",
+       "quote": "heated at a rate of 10 °C min−1 in the 125 ml stainless steel Parr acid digestion bomb to a temperature of 180 °C, which was maintained for 24 hours.",
        "value_num": 10,
        "unit": "°C min−1"
       },
       {
        "name": "duration",
-       "quote": "heated at a rate of 10 °C min−1 to 180 °C, and this temperature was held constant for a period of 24 hours. The vessel was subsequently cooled naturally to room temperature, and the dark-green precipitate was obtained by centrifuging repeatedly into deionised water and then absolute ethanol, followed by drying overnight at 80 °C. The dried material was finally ground into a fine powder using a pestle and mortar. ## Ta3N5, WOx and Ta3N5/WOx reference samples To serve as reference samples, nanoparticles of tantalum(V) nitride, Ta3N5, tungsten(VI) sub-oxide, WOx, and a nanocomposite of tantalum(V) nitride and tungsten(VI) sub-oxide, Ta3N5/WOx, were synthesised using procedures described elsewhere. In brief, the Ta3N5 nanoparticles were prepared inside a tube furnace by annealing a mixture of tantalum(V) chloride (2.0 mmol), sodium chloride (2.8 mmol) and potassium chloride (1.2 mmol) at 800 °C for ten hours under continuous flow of ammonia gas. The Ta3N5/WOx composite was subsequently obtained using a technique analogous to that described for CdS/WOx, with the CdS substituted for Ta3N5 (3.8 mM) and tungsten(VI) chloride present at a slightly increased concentration of 22.8 mM. All other reaction conditions, including the heating parameters, the composition and volume of the solvent, and the centrifugation steps used to clean the final precipitate, remained the same as in the CdS/WOx case. To prepare the WOx reference sample, an ethanolic solution of WCl6 (12.6 mM, 70 ml) was transferred to a 125 ml PTFE cup and heated at a rate of 10 °C min−1 in the 125 ml stainless steel Parr acid digestion bomb to a temperature of 180 °C, which was maintained for 24 hours.",
+       "quote": "heated at a rate of 10 °C min−1 in the 125 ml stainless steel Parr acid digestion bomb to a temperature of 180 °C, which was maintained for 24 hours.",
        "value_num": 24,
        "unit": "hours"
       }
@@ -1524,7 +1552,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "La seule branche est Ta3N5/WOx, obtenue en remplaçant CdS (20 mM) par Ta3N5 (3.8 mM) et en portant WCl6 de 20 à 22.8 mM, tout le reste étant identique d'après l'article. Elle sert de référence pour les positions des pics W 4f et des bords de bande, et elle ne donne qu'un photocourant cathodique à peine perceptible, alors que CdS/WOx donne environ 120 µA au premier pic, lu sur la figure 8b, contre environ 10 µA pour CdS seul (figure 8a)."
+   "text": "La seule branche est Ta3N5/WOx, obtenue en remplaçant CdS (20 mM) par Ta3N5 (3.8 mM) et en portant WCl6 de 20 à 22.8 mM ; l'article dit que les autres conditions de réaction (paramètres de chauffage, composition et volume du solvant, centrifugations) sont celles de CdS/WOx, mais il ne nomme ni le séchage ni le refroidissement pour cet échantillon. Elle sert de référence pour les positions des pics W 4f et des bords de bande, et elle ne donne qu'un photocourant cathodique à peine perceptible, alors que CdS/WOx donne environ 120 µA au premier pic, lu sur la figure 8b, contre environ 10 µA pour CdS seul (figure 8a)."
   },
   {
    "type": "tendance_observee",
@@ -1563,7 +1591,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "CdS_WOx",
-   "text": "Hypothèse de chimiste : WCl6 réagit probablement vivement avec l'éthanol et l'éthylène glycol (alcoolyse, libération de HCl, formation d'alcoxy-chlorures de tungstène). L'éthylène glycol et l'éthanol joueraient le rôle de réducteurs doux et de source d'oxygène, ce qui donne des oxydes sous-stœchiométriques comme W18O49 (mélange W6+/W5+ observé en XPS). La présence de CdS en suspension offre des sites de nucléation et serait en partie attaquée par HCl, ce qui pourrait expliquer la conversion de Cd(OH)2 en CdO signalée par les auteurs."
+   "text": "Hypothèse de chimiste : WCl6 subit une alcoolyse dans l'éthanol et l'éthylène glycol (alcoxychlorures de tungstène, libération de HCl). À 180 °C, la déshydratation de l'éthanol catalysée par HCl fournirait l'eau qui hydrolyse et condense ces espèces en oxo-tungstates ; l'éthanol et l'éthylène glycol, plus réducteur, réduiraient une partie de W6+ en W5+ et mèneraient à la phase de Magnéli W18O49, dont la croissance rapide selon [010] donne des nanofils. Les particules de CdS serviraient de germes de nucléation hétérogène ; le milieu acide les attaquerait en partie en surface, ce qui expliquerait un Cd/W inférieur au rapport nominal. La conversion de Cd(OH)2 en CdO invoquée par les auteurs paraît peu probable dans ce milieu chloruré."
   },
   {
    "type": "securite_analyse",
@@ -1573,12 +1601,52 @@
   {
    "type": "securite_analyse",
    "route": "CdS_WOx",
-   "text": "WCl6 est corrosif et très sensible à l'humidité : il dégage du HCl et réagit fortement avec les alcools, d'où une manipulation sous hotte et sans eau. L'autoclave contient de l'éthanol et de l'éthylène glycol chauffés à 180 °C, donc sous pression, avec risque d'inflammation des vapeurs en cas de fuite ; le taux de remplissage n'étant pas donné, il faut respecter la règle usuelle d'au plus deux tiers. Les poudres contenant du cadmium sont toxiques."
+   "text": "WCl6 est corrosif et très sensible à l'humidité : il dégage du HCl et réagit fortement avec les alcools, d'où une manipulation sous hotte et sans eau. L'autoclave contient de l'éthanol et de l'éthylène glycol chauffés à 180 °C, donc sous pression, avec risque d'inflammation des vapeurs en cas de fuite ; le taux de remplissage n'étant pas donné, il faut respecter la règle usuelle d'au plus deux tiers. Les poudres contenant du cadmium sont toxiques. Le HCl libéré par WCl6 peut attaquer CdS en libérant de l'H2S dans l'autoclave fermé : ouvrir à froid sous hotte."
   },
   {
    "type": "securite_analyse",
    "route": "Ta3N5",
    "text": "Le recuit à 800 °C sous ammoniac exige un four tubulaire étanche et ventilé : NH3 est toxique, corrosif et inflammable, et le piège à effluents doit être prévu. TaCl5 est corrosif et sensible à l'humidité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ta3N5",
+   "text": "Le résumé de l'article (800 °C pendant dix heures sous ammoniac) est plus court que le protocole publié par les mêmes auteurs (Jones et al., Sci. Rep. 2017, PMC5481444, renvoi CR59) : deux recuits de 10 h à 800 °C avec rebroyage et ajout de NaCl/KCl entre les deux, NH3 d'environ 100 mL/min, mélange préparé en boîte à gants, lavages à l'eau ; qui suivrait le seul résumé obtiendrait probablement un nitrure moins converti. Le mélange NaCl/KCl 70:30 y est appelé « eutectique », alors que le minimum de fusion est proche de 51:49 en mol %. Il faut suivre le protocole complet de l'article source, sans en importer les valeurs ici."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_WOx",
+   "text": "Le volume du mélange éthanol/éthylène glycol n'est pas donné ; la critique scientifique retient 60 mL comme hypothèse, d'après le protocole antérieur des mêmes auteurs (PMC5481444), ce qui correspondrait à environ 0,17 g de CdS et 0,48 g de WCl6 : valeur non écrite dans l'article, à confirmer. Le rapport Cd/W mesuré (0,57 par EDX d'après le tableau S1, 0,58 par XPS) est très inférieur au rapport nominal de 1 : une attaque acide de CdS par le HCl libéré par WCl6 dans l'alcool est probable (jusqu'à trois fois la quantité de HCl nécessaire pour dissoudre CdS), ou une zone EDX non représentative ; les auteurs ne commentent pas cet écart. Dans un tel milieu acide et chloruré, la conversion de Cd(OH)2 en CdO invoquée par les auteurs pour la composante O 1s est peu probable. WCl6 réagit violemment avec l'humidité et les alcools : l'article antérieur le manipule sous argon et le dissout d'abord dans 5 mL d'éthanol, précautions non décrites ici."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_WOx",
+   "text": "Plusieurs interprétations de l'article sont fragiles. L'oxygène en excès mesuré par EDX (30,7 at %) est attribué à des résidus organiques alors qu'il dépasse tout le carbone mesuré (24,6 at %) : un oxyde de tungstène hydraté ou hydroxylé, de l'eau adsorbée ou une surestimation de l'oxygène par EDX l'expliquent mieux. L'alignement de bandes mêle des décalages tirés de l'XPS (niveau de Fermi) et de l'UPS (vide), et suppose une bande interdite de 1,6 eV pour WOx, alors que W18O49 solvothermal issu de WCl6 dans l'éthanol est donné à 2,3–2,5 eV (Xiong et al., Discover Nano 2024) ; le transfert d'électrons de CdS vers WOx reste favorable, mais les valeurs du schéma sont incertaines. La bande interdite de 2,25 eV du composite (Tauc, réflectance diffuse) reflète au mieux le seuil de CdS, car W18O49 absorbe fortement dans le visible. Le stockage de charge est attribué à des « pièges » sans évoquer l'insertion de cations de l'électrolyte (Na+, H+) connue pour WO3 (Tatsuma 2001 ; Ng 2011), et aucune mesure ne distingue la décharge d'électrons stockés d'un courant faradique à l'obscurité. Le qualificatif « tungsten(VI) sub-oxide » est contradictoire : un sous-oxyde contient du tungstène de degré inférieur à +6 (degré moyen +5,44 pour W18O49). Le rapport O/W de 2,75 impose 50 % de W5+, alors que les auteurs disent W6+ majoritaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS",
+   "text": "La présence de sphalérite est déduite de la forte intensité du pic à 26,5°, or les raies wurtzite (002) et sphalérite (111) tombent au même angle (d ≈ 3,36 Å) : ce pic ne distingue pas les deux phases, et son intensité peut aussi venir d'une orientation préférentielle ou de fautes d'empilement. Il faudrait comparer les raies propres à la wurtzite ou faire un affinement de Rietveld. L'exposant du tracé de Tauc n'est pas écrit, et 2,26 eV est inférieur à la valeur du CdS massif (2,42 eV) pour des particules de 200 nm : la valeur est plausible mais à ne pas surinterpréter."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "WOx",
+   "text": "Cette référence est préparée dans l'éthanol seul (sans éthylène glycol) et à 12,6 mM au lieu de 20 mM : le WOx du composite n'a pas forcément la même morphologie ni le même degré de réduction, donc la conclusion « WOx seul ne donne pas de photocourant » n'est valable que qualitativement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ta3N5_WOx",
+   "text": "Le rapport W/Ta de cette référence vaut environ 2 contre W/Cd = 1 pour CdS/WOx : ce n'est pas un témoin strictement « toutes choses égales », il sert surtout de référence pour les positions XPS et UPS de WOx. Son photocourant cathodique faible est inhabituel pour Ta3N5 (semi-conducteur de type n, photocourant anodique en général) et peut traduire une surface oxydée ou une polarisation insuffisante."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PEC_cell",
+   "text": "Le « 1,0 Sun » ne vaut que pour l'irradiance (99,3 mW/cm²) : un spectre de LED blanche n'a ni UV ni proche infrarouge, et l'irradiance est déduite d'un luxmètre et d'un spectre mesuré à une autre distance, pas d'un capteur radiométrique. La conclusion parle de « short-circuit current », alors que la mesure est potentiostatique à trois électrodes (0 V contre Ag/AgCl) : les chiffres ne se transposent pas à une cellule autochargeante à deux électrodes. L'électrolyte Na2SO4 0,5 M sans capteur de trous mêle photocorrosion de CdS et effet capacitif dans le déclin du photocourant de CdS/WOx."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "WOx",
+   "text": "Hypothèse de chimiste : WCl6 dans l'éthanol seul subit une alcoolyse, l'eau formée in situ l'hydrolyse, l'éthanol réduit en partie W6+ en W5+ et la croissance anisotrope de W18O49 selon [010] donne le précipité bleu floconneux ; cette voie, sans additif, est connue pour donner des nanofils à basse concentration."
   }
  ],
  "method_sources": [
@@ -1630,7 +1698,7 @@
   },
   {
    "where": "Ta3N5_WOx, héritage des étapes",
-   "issue": "Le texte dit que toutes les autres conditions « including the heating parameters, the composition and volume of the solvent, and the centrifugation steps » sont celles de CdS/WOx ; le séchage à 80 °C n'est pas nommé pour ce composite (il l'est pour WOx), et le broyage est annoncé pour tous les matériaux de référence. Les étapes de séchage et de broyage sont héritées par lecture de « all other reaction conditions »."
+   "issue": "Le texte dit que toutes les autres conditions « including the heating parameters, the composition and volume of the solvent, and the centrifugation steps » sont celles de CdS/WOx : seuls le chauffage, le solvant et les centrifugations sont donc hérités sur la foi de l'article. Le séchage à 80 °C (cité pour CdS/WOx et WOx) et le refroidissement ne sont pas nommés pour ce composite : déclarés non cités sur la branche, bien que les étapes de CdS_WOx apparaissent par héritage. Le broyage est couvert par « All reference materials were ground into a fine powder using a pestle and mortar »."
   },
   {
    "where": "CdS (voie matériau) et réactif de CdS_WOx",
