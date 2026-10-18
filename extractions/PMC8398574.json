@@ -374,6 +374,16 @@
      "unit": "dB",
      "from_figure": "Fig. 4a",
      "quote": "Figure 4 Frequency dependence of reflection loss of the NiFe-LDH (a) and NiFe-MMO (b) by varying the thickness of the absorbent."
+    },
+    {
+     "property": "magnetic_loss_tangent_5-7_GHz",
+     "value_num": 1.4,
+     "quote": "The magnetic loss tangents (about 1.4 in Figure 2d) in the frequency of 5–7 GHz are larger than the dielectric loss tangents (less than 0.1 in Figure 2c)"
+    },
+    {
+     "property": "dielectric_loss_tangent_5-7_GHz",
+     "value_text": "less than 0.1",
+     "quote": "The magnetic loss tangents (about 1.4 in Figure 2d) in the frequency of 5–7 GHz are larger than the dielectric loss tangents (less than 0.1 in Figure 2c)"
     }
    ],
    "missing_fields": [
@@ -558,6 +568,21 @@
      "unit": "dB",
      "from_figure": "Fig. 4b",
      "quote": "Figure 4 Frequency dependence of reflection loss of the NiFe-LDH (a) and NiFe-MMO (b) by varying the thickness of the absorbent."
+    },
+    {
+     "property": "magnetic_loss_tangent_5-7_GHz",
+     "value_num": 1.4,
+     "quote": "The magnetic loss tangents (about 1.4 in Figure 2d) in the frequency of 5–7 GHz are larger than the dielectric loss tangents (less than 0.1 in Figure 2c)"
+    },
+    {
+     "property": "dielectric_loss_tangent_5-7_GHz",
+     "value_text": "less than 0.1",
+     "quote": "The magnetic loss tangents (about 1.4 in Figure 2d) in the frequency of 5–7 GHz are larger than the dielectric loss tangents (less than 0.1 in Figure 2c)"
+    },
+    {
+     "property": "XRD_peak_intensity_NiO_vs_NiFe2O4",
+     "value_text": "The peak intensities of NiO are higher than that of NiFe2O4",
+     "quote": "The peak intensities of NiO are higher than that of NiFe2O4, which means better crystallinity and more NiO in the NiFe-MMO."
     }
    ],
    "missing_fields": [
@@ -737,7 +762,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "NiFe-LDH",
-   "text": "Probablement : l'ammoniaque (NH3 + H2O ⇌ NH4+ + OH−) fournit les hydroxydes qui précipitent Ni2+ et Fe3+ en feuillets [Ni1−xFex(OH)2]x+ à charge compensée par des anions interfoliaires (nitrate ou carbonate de l'air) ; l'espacement basal de 7,8 Å est compatible avec cela. Les quantités (4,653 g de Ni(NO3)2·6H2O ≈ 16,0 mmol, 1,616 g de Fe(NO3)3·9H2O ≈ 4,00 mmol) donnent Ni/Fe = 4,0 (x ≈ 0,2), proche du 3,79 mesuré par ICP. L'ammoniaque (100 mL à 0,5 M ≈ 50 mmol de NH3) couvre à peine les 44 mmol de OH− nécessaires (2×16 + 3×4) et est une base faible ; Ni2+ peut aussi se complexer en [Ni(NH3)6]2+, ce qui peut ralentir et affiner la précipitation. Le vieillissement de 18 h à 65 °C favorise probablement la cristallinité des feuillets."
+   "text": "Probablement : l'ammoniaque (NH3 + H2O ⇌ NH4+ + OH−) fournit les hydroxydes qui précipitent Ni2+ et Fe3+ en feuillets [Ni1−xFex(OH)2]x+ à charge compensée par des anions interfoliaires (nitrate ou carbonate de l'air) ; l'espacement basal de 7,8 Å est compatible avec cela. Les quantités (4,653 g de Ni(NO3)2·6H2O ≈ 16,0 mmol, 1,616 g de Fe(NO3)3·9H2O ≈ 4,00 mmol) donnent Ni/Fe = 4,0 (x ≈ 0,2), proche du 3,79 mesuré par ICP. L'ammoniaque (100 mL à 0,5 M ≈ 50 mmol de NH3) ne fournit qu'un excès de 25 % sur les 40 mmol de OH− nécessaires au LDH (2 × 20 mmol de métal ; 44 mmol si l'on comptait des hydroxydes simples Ni(OH)2 + Fe(OH)3) et est une base faible ; Ni2+ peut aussi se complexer en [Ni(NH3)6]2+, ce qui peut ralentir et affiner la précipitation. Le vieillissement de 18 h à 65 °C favorise probablement la cristallinité des feuillets."
   },
   {
    "type": "mecanisme_analyse",
@@ -748,6 +773,41 @@
    "type": "securite_analyse",
    "route": null,
    "text": "Les nitrates de nickel (cancérogène, sensibilisant) et de fer sont à manipuler avec gants et hotte ; les nitrates sont oxydants. L'ammoniaque concentrée (25–28 %) est corrosive et dégage des vapeurs irritantes : dilution sous hotte. La calcination à 600 °C sous argon demande un four fermé et une ventilation (dégagement de vapeurs nitreuses lors de la décomposition des nitrates interfoliaires). Les poudres d'oxyde de nickel nanométriques sont à ne pas inhaler."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les valeurs de RL_min et de RL_min_frequency de chaque matériau correspondent à une épaisseur de 4,0 mm (conclusion de l'article : « with a thickness of 4.0 mm » ; Tableau 1 : −58,8 dB à 6,1 GHz pour le LDH, −64,4 dB à 6,3 GHz pour le MMO). La structure des résultats n'a pas de champ de condition : les rangées RL_min_thickness_4mm_Table1 portent cette épaisseur, alors que les rangées RL_min seules sont ambiguës face aux valeurs de la Fig. 4 à 1, 2, 3 et 5 mm. Ces RL sont des courbes calculées (ligne de transmission sur plan métallique) à partir de mesures faites sur un anneau de 3,0 mm."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiFe-LDH",
+   "text": "Perméabilité douteuse : μ′ de 1,37 à 1,89 (2–5,72 GHz) et tan δμ ≈ 1,4 sont difficilement compatibles avec un LDH NiFe, paramagnétique à température ambiante (aimantation spontanée seulement entre 2 et 15 K, Coronado et al., Inorg. Chem. 2008) et dilué à ≈ 17 % en volume dans la paraffine ; on attendrait μ′ ≈ 1,00 et aucune résonance naturelle en GHz. Aucune mesure magnétique (VSM) ni témoin non magnétique n'est montré : le pic de μ″ à 6,08 GHz, et donc le RL de −58,8 dB qui en dépend, peut venir d'un artefact de mesure ou d'inversion (lame d'air, étalonnage)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiFe-MMO",
+   "text": "Réponse magnétique probablement surestimée : NiFe2O4 (seule phase ferrimagnétique ; NiO est antiferromagnétique) ne représente que ≈ 3,2 % du volume de l'anneau, d'où μ′ attendu ≈ 1,07 et non 1,3–1,9 avec tan δμ ≈ 1,4. Le pic de μ″ du MMO (6,28 GHz) est presque identique à celui du LDH paramagnétique (6,08 GHz), ce qui suggère un artefact commun de la mesure ou de l'inversion plutôt qu'une résonance naturelle ; le RL de −64,4 dB en dépend. L'algorithme d'inversion et l'étalonnage ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiFe-MMO",
+   "text": "Perte de masse de l'ATG : le texte donne « ~2.5% » pour le MMO, mais la courbe de la Fig. 1f (axe de 100 à 97 %) finit vers 96,5 % à 900 °C, soit ≈ 3,5 % ; la valeur du texte est conservée. Par ailleurs les raies attribuées à NiO (37,3°, 43,4°, 62,9°) coïncident avec des raies (222), (400), (440) du spinelle ; aucune raie n'est propre à NiO, et la conclusion « plus de NiO » repose sur les rapports d'intensité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiFe-LDH",
+   "text": "Détails à noter : l'introduction définit x comme M2+/(M2+ + M3+), alors que dans la formule [M2+1−xM3+x(OH)2]x+ x est la fraction de M3+ (vocabulaire des auteurs, sans effet sur la synthèse) ; la perte de masse totale du LDH est écrite « ~35% » alors que 11,2 + 22,3 = 33,5 %."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'attribution des pertes magnétiques aux courants de Foucault ne discrimine rien : le critère C0 = μ″(μ′)−2f−1 est trivialement constant là où μ″ est proche de zéro, et un LDH isolant en plaquettes de moins de 50 nm n'a pas de courants de Foucault appréciables."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Absorber_ring",
+   "text": "À 40 % en masse, la charge occupe ≈ 17 % du volume pour le LDH mais ≈ 8,7 % pour l'oxyde (masses volumiques ≈ 2,88 et 6,29 g/cm3) : la comparaison LDH/MMO des permittivités et perméabilités mélange la nature du matériau et la quantité de matière. Le RL caractérise une couche sur plan métallique, non le matériau ; les RL de −58,8 et −64,4 dB sont des minima calculés très sensibles au pas d'épaisseur et de fréquence, et le Tableau 1 compare des charges, épaisseurs et fréquences différentes."
   }
  ],
  "method_sources": [],
@@ -783,6 +843,10 @@
   {
    "where": "Tableau 1",
    "issue": "Les huit absorbeurs de la littérature (Ni/Ni(OH)2, NiFe2O4, etc.) ne sont pas des échantillons de l'article et n'ont pas de voie."
+  },
+  {
+   "where": "NiFe-MMO, perte de masse totale (ATG)",
+   "issue": "Le texte écrit « ~2.5% » pour le MMO, mais la courbe de la Fig. 1f (axe de 100 à 97 %) descend vers 96,5 % à 900 °C, soit ≈ 3,5 % de perte. Valeur du texte conservée, sans correction."
   }
  ]
 }
