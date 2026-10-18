@@ -61,10 +61,12 @@
      "role": "acid",
      "amount": 4,
      "unit": "mL",
-     "purity": "37%",
      "supplier": "Panreac",
      "supplier_quote": "Absolute ethanol (C2H6O, 99.8%) and hydrochloric acid (HCl, 37%) were supplied by Panreac, Barcelona, Spain.",
-     "quote": "a solution containing HCl ((4 mL) 0.5, 0.8, 1 or 12 M) and ethanol (10 mL)"
+     "quote": "a solution containing HCl ((4 mL) 0.5, 0.8, 1 or 12 M) and ethanol (10 mL)",
+     "not_stated": [
+      "purity"
+     ]
     }
    ],
    "steps": [
@@ -109,6 +111,11 @@
        "quote": "then in ultrasonic bath (30 min)",
        "value_num": 30,
        "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "stirred at room temperature, first magnetically (1 h) and then in ultrasonic bath (30 min)",
+       "value_text": "room temperature"
       }
      ],
      "equipment": [
@@ -120,8 +127,7 @@
      ],
      "not_stated": [
       "power",
-      "frequency",
-      "temperature"
+      "frequency"
      ]
     },
     {
@@ -346,6 +352,20 @@
      "property": "phase",
      "quote": "samples TiO2-0.8M, TiO2-1M and TiO2-5M, both SG and HT, contain anatase, brookite and rutile",
      "value_text": "anatase, brookite and rutile"
+    },
+    {
+     "property": "propene_conversion_30_mL_min",
+     "value_num": 43,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 25,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
    ],
    "missing_fields": [
@@ -453,6 +473,20 @@
      "property": "phase",
      "quote": "samples TiO2-0.8M, TiO2-1M and TiO2-5M, both SG and HT, contain anatase, brookite and rutile",
      "value_text": "anatase, brookite and rutile"
+    },
+    {
+     "property": "propene_conversion_30_mL_min",
+     "value_num": 30,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 18,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
    ]
   },
@@ -555,6 +589,20 @@
      "property": "phase",
      "quote": "samples TiO2-0.8M, TiO2-1M and TiO2-5M, both SG and HT, contain anatase, brookite and rutile",
      "value_text": "anatase, brookite and rutile"
+    },
+    {
+     "property": "propene_conversion_30_mL_min",
+     "value_num": 51,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 29,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
    ]
   },
@@ -639,7 +687,17 @@
      "property": "phase",
      "quote": "sample TiO2-12M-SG only contains anatase and sample TiO2-12M-HT contains anatase and brookite",
      "value_text": "only anatase"
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 22.5,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
+   ],
+   "not_stated": [
+    "propene_conversion_flow_rate"
    ]
   },
   {
@@ -752,7 +810,18 @@
      "property": "crystallinity_note",
      "quote": "Only in sample TiO2-0M-SG the content of amorphous TiO2 is slightly higher, 33%",
      "value_text": "content of amorphous TiO2 slightly higher, 33%"
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 12.5,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
+   ],
+   "not_stated": [
+    "propene_conversion_flow_rate",
+    "ethanol_10_mL_added_with_water"
    ]
   },
   {
@@ -817,6 +886,11 @@
        "quote": "then in ultrasonic bath (30 min)",
        "value_num": 30,
        "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "stirred at room temperature, first magnetically (1 h) and then in ultrasonic bath (30 min)",
+       "value_text": "room temperature"
       }
      ],
      "equipment": [
@@ -828,8 +902,7 @@
      ],
      "not_stated": [
       "power",
-      "frequency",
-      "temperature"
+      "frequency"
      ]
     },
     {
@@ -1065,7 +1138,17 @@
      "property": "phase",
      "quote": "samples TiO2-0.8M, TiO2-1M and TiO2-5M, both SG and HT, contain anatase, brookite and rutile",
      "value_text": "anatase, brookite and rutile"
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 50,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
+   ],
+   "not_stated": [
+    "propene_conversion_flow_rate"
    ]
   },
   {
@@ -1167,6 +1250,20 @@
      "property": "phase",
      "quote": "samples TiO2-0.8M, TiO2-1M and TiO2-5M, both SG and HT, contain anatase, brookite and rutile",
      "value_text": "anatase, brookite and rutile"
+    },
+    {
+     "property": "propene_conversion_30_mL_min",
+     "value_num": 66,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 40,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
    ]
   },
@@ -1269,6 +1366,20 @@
      "property": "phase",
      "quote": "samples TiO2-0.8M, TiO2-1M and TiO2-5M, both SG and HT, contain anatase, brookite and rutile",
      "value_text": "anatase, brookite and rutile"
+    },
+    {
+     "property": "propene_conversion_30_mL_min",
+     "value_num": 53.5,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 25,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
    ]
   },
@@ -1359,6 +1470,20 @@
      "property": "phase",
      "quote": "sample TiO2-12M-SG only contains anatase and sample TiO2-12M-HT contains anatase and brookite",
      "value_text": "anatase and brookite"
+    },
+    {
+     "property": "propene_conversion_30_mL_min",
+     "value_num": 67.5,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 41,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
    ]
   },
@@ -1462,7 +1587,18 @@
      "property": "phase",
      "quote": "The samples prepared without HCl (both SG and HT) contain, as well, only anatase.",
      "value_text": "only anatase"
+    },
+    {
+     "property": "propene_conversion_60_mL_min",
+     "value_num": 35,
+     "unit": "%",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 Propene conversion (%) at 30 and 60 mL/min for the SG and HT photocatalysts and for P25."
     }
+   ],
+   "not_stated": [
+    "propene_conversion_flow_rate",
+    "ethanol_10_mL_added_with_water"
    ]
   },
   {
@@ -1528,6 +1664,11 @@
        "quote": "then in ultrasonic bath (30 min)",
        "value_num": 30,
        "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "stirred at room temperature, first magnetically (1 h) and then in ultrasonic bath (30 min)",
+       "value_text": "room temperature"
       }
      ],
      "equipment": [
@@ -1539,8 +1680,7 @@
      ],
      "not_stated": [
       "power",
-      "frequency",
-      "temperature"
+      "frequency"
      ]
     },
     {
@@ -1623,6 +1763,9 @@
      "value_num": 6.0,
      "unit": "%"
     }
+   ],
+   "not_stated": [
+    "propene_conversion_flow_rate"
    ]
   },
   {
@@ -1688,6 +1831,11 @@
        "quote": "then in ultrasonic bath (30 min)",
        "value_num": 30,
        "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "stirred at room temperature, first magnetically (1 h) and then in ultrasonic bath (30 min)",
+       "value_text": "room temperature"
       }
      ],
      "equipment": [
@@ -1699,8 +1847,7 @@
      ],
      "not_stated": [
       "power",
-      "frequency",
-      "temperature"
+      "frequency"
      ]
     },
     {
@@ -1831,6 +1978,9 @@
      "value_num": 75,
      "unit": "%"
     }
+   ],
+   "not_stated": [
+    "propene_conversion_flow_rate"
    ]
   },
   {
@@ -1896,6 +2046,11 @@
        "quote": "then in ultrasonic bath (30 min)",
        "value_num": 30,
        "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "stirred at room temperature, first magnetically (1 h) and then in ultrasonic bath (30 min)",
+       "value_text": "room temperature"
       }
      ],
      "equipment": [
@@ -1907,8 +2062,7 @@
      ],
      "not_stated": [
       "power",
-      "frequency",
-      "temperature"
+      "frequency"
      ]
     },
     {
@@ -2062,6 +2216,9 @@
      "value_num": 70,
      "unit": "%"
     }
+   ],
+   "not_stated": [
+    "propene_conversion_flow_rate"
    ]
   },
   {
@@ -2127,6 +2284,11 @@
        "quote": "then in ultrasonic bath (30 min)",
        "value_num": 30,
        "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "stirred at room temperature, first magnetically (1 h) and then in ultrasonic bath (30 min)",
+       "value_text": "room temperature"
       }
      ],
      "equipment": [
@@ -2138,8 +2300,7 @@
      ],
      "not_stated": [
       "power",
-      "frequency",
-      "temperature"
+      "frequency"
      ]
     },
     {
@@ -2246,6 +2407,9 @@
      "value_num": 51,
      "unit": "%"
     }
+   ],
+   "not_stated": [
+    "propene_conversion_flow_rate"
    ]
   }
  ],
@@ -2519,7 +2683,7 @@
    "type": "tendance_observee",
    "route": null,
    "quote": "The activity order in the SG series is the following: TiO2-5M-SG > TiO2-12M-SG > TiO2-0.8M-SG > TiO2-1M-SG > TiO2-0M-SG.",
-   "text": "Série SG : l'activité suit surtout la surface BET et, moins nettement, la teneur en anatase. Les valeurs de conversion par échantillon sont seulement sur la figure 6, non reprise ici (voir limite de reproductibilité)."
+   "text": "Série SG : l'activité suit surtout la surface BET et, moins nettement, la teneur en anatase. Les conversions par échantillon sont lues sur la figure 6 (±2 points) et rangées en résultats, par débit."
   },
   {
    "type": "tendance_observee",
@@ -2542,7 +2706,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les figures (dossier corpus/fig/PMC6266794 absent du dépôt) n'ont pas pu être lues. Les conversions en propène de TiO2-0.8M-SG, TiO2-1M-SG, TiO2-5M-SG, TiO2-1M-HT, TiO2-5M-HT et TiO2-12M-HT, et celles de tous les échantillons à 60 mL/min, ne sont que sur les figures 6 à 8. Le tableau 3 ne dit pas à quel débit (30 ou 60 mL/min) sont mesurées les conversions. Le rendement de synthèse n'est pas donné, ni le diluant de la solution d'HCl, ni le volume des récipients et de l'autoclave, ni son taux de remplissage, ni la vitesse d'agitation, ni l'atmosphère du séchage, ni la vitesse de refroidissement. Pour les échantillons sans HCl, l'article ne dit pas si les 10 mL d'éthanol sont ajoutés avec l'eau."
+   "text": "Les conversions en propène de la figure 6 sont lues sur le graphique (±2 points) ; le débit (30 ou 60 mL/min) des conversions du tableau 3 n'est pas écrit : les valeurs des échantillons -350 (24, 60, 76, 44 %) coïncident avec les barres à 30 mL/min de la figure 6, mais pas celles des -WT, dont le débit reste inconnu. La puissance de la lampe UV-A (365 nm) n'est pas donnée. Le rendement de synthèse n'est pas donné, ni le diluant de la solution d'HCl, ni le volume des récipients et de l'autoclave, ni son taux de remplissage, ni la vitesse d'agitation, ni l'atmosphère du séchage, ni la vitesse de refroidissement. Pour les échantillons sans HCl, l'article ne dit pas si les 10 mL d'éthanol sont ajoutés avec l'eau."
   },
   {
    "type": "mecanisme_auteurs",
@@ -2558,7 +2722,42 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'isopropylate de titane est inflammable et sensible à l'humidité (hydrolyse avec dégagement d'isopropanol). Le HCl concentré (37 %, jusqu'à 12 M) est corrosif et dégage des vapeurs : le diluer sous hotte avec gants et lunettes. L'éthanol chauffé à 180 °C dans un autoclave fermé produit une pression notable (point d'ébullition 78 °C), d'où la nécessité d'un autoclave adapté, d'un taux de remplissage limité, et d'un refroidissement complet avant l'ouverture. Les poudres de TiO2 nanométriques ne doivent pas être inhalées. Pour le test, le propène est inflammable (100 ppmv reste très en dessous de la limite d'explosivité) et la lampe UV-A de 365 nm demande une protection des yeux ; le four à moufle est utilisé jusqu'à 350 °C."
+   "text": "L'isopropylate de titane est inflammable et sensible à l'humidité (hydrolyse avec dégagement d'isopropanol). Le HCl concentré (37 %, jusqu'à 12 M) est corrosif et dégage des vapeurs : le diluer sous hotte avec gants et lunettes. L'éthanol chauffé à 180 °C dans un autoclave fermé produit une pression notable (point d'ébullition 78 °C), d'où la nécessité d'un autoclave adapté, d'un taux de remplissage limité, et d'un refroidissement complet avant l'ouverture. Les poudres de TiO2 nanométriques ne doivent pas être inhalées. Pour le test, le propène est inflammable (100 ppmv reste très en dessous de la limite d'explosivité) et la lampe UV-A de 365 nm demande une protection des yeux ; le four à moufle est utilisé jusqu'à 350 °C. Au séchage à 100 °C pendant 12 h du produit entier, sans filtration ni lavage écrits, environ 30 mL d'éthanol, de l'isopropanol libéré et de l'HCl s'évaporent dans l'étuve : prévoir une étuve ventilée ou résistante à la corrosion, ou évaporer d'abord sous hotte (non écrit dans l'article). À l'ouverture de l'autoclave, le liquide chauffé à 180 °C avec de l'HCl et des alcools peut libérer des gaz inflammables."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Référence P25 (commerciale, non synthétisée dans l'article), lue sur la figure 6 : environ 62 % de conversion à 30 mL/min et environ 37 % à 60 mL/min (le tableau 3 donne 61,5 %, sans débit). À 30 mL/min, TiO2-0.8M-HT, TiO2-1M-HT et TiO2-12M-HT dépassent P25, aucun échantillon SG ne l'atteint après 350 °C ; à 60 mL/min, seuls TiO2-0.8M-HT, TiO2-1M-HT et TiO2-12M-HT (50, 40 et 41 %) dépassent P25."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-12M-SG-WT",
+   "text": "TiO2-12M-SG non calciné (51 % cristallin, 160 m2/g) donne 68 % de conversion, plus que P25 (61,5 %) et que le même échantillon après 350 °C (44 %), alors que le résumé et les conclusions disent que les photocatalyseurs sol-gel sont moins actifs que P25 et que le traitement à 350 °C est nécessaire en sol-gel. La conclusion ne vaut que pour la cristallinité ; aucune valeur n'est modifiée. La conversion des -WT à l'autre débit et une répétition chiffrée manquent."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-0.8M-HT",
+   "text": "Le traitement appelé « hydrothermal » se fait dans un liquide d'environ 90 % d'alcools en volume : c'est un traitement alcoolothermal, dont la pression autogène à 180 °C serait de l'ordre de 18 bar d'après les paramètres d'Antoine de l'éthanol (NIST WebBook, paramètres rappelés de mémoire par le critique, à confirmer), et non de l'eau seule. Le volume de l'autoclave, son taux de remplissage et son revêtement ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-12M-SG",
+   "text": "La solution d'HCl « 12 M » est probablement l'acide commercial à 37 % non dilué : elle apporte environ 3,0 g d'eau contre environ 3,9 g pour la solution à 0,8 M, soit un rapport H2O/Ti d'environ 12,7 contre environ 16,7–16,9 pour les autres échantillons et pour 0M. La série en HCl change donc à la fois l'acidité et la quantité d'eau ; l'effet de l'acidité seule n'est pas démontré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-0M-SG",
+   "text": "TiO2-0M-SG est gris après 350 °C et ne fait que 34 m2/g (450 m2/g avant traitement) : le carbone résiduel est une explication plausible, mais l'article n'a ni ATG ni analyse élémentaire et ne la distingue pas de l'explication des auteurs (hydrolyse-condensation incomplète). Hench et West (1990) décrivent un précipité d'oxyde hydraté sans acide, déjà hydrolysé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Mesures à interpréter avec prudence : la fraction « amorphe » (étalon interne CaF2) compte aussi l'eau adsorbée, les hydroxyles et les résidus de carbone ou de chlorure, donc une borne haute ; la taille d'anatase vient d'une raie à 25,3° que l'article dit superposée à la brookite, donc incertaine pour les échantillons à 9–23 % de brookite ; les gaps (2,80–2,95 eV, P25 à 2,95 eV pour environ 3,1–3,2 eV habituels) ne se comparent qu'entre eux, la méthode d'extrapolation décalant les valeurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les surfaces BET sont mesurées après dégazage à 250 °C pendant 4 h : pour les échantillons non calcinés (séchés seulement à 100 °C, dont TiO2-0M-SG-WT à 450 m2/g), elles ne sont pas celles du solide testé en photocatalyse, qui contient encore HCl et restes organiques."
   }
  ],
  "method_sources": [
@@ -2596,11 +2795,11 @@
   },
   {
    "where": "TiO2-0M-SG et TiO2-0M-HT, étapes 3 et 4",
-   "issue": "« H2O (4 mL) was added instead » : l'article ne dit pas si les 10 mL d'éthanol sont encore ajoutés ni si l'ajout est goutte à goutte. Lecture littérale retenue : seule l'eau remplace la solution d'HCl ; l'étape 4 (agitation 1 h) est héritée sans que l'article le dise explicitement pour les échantillons sans HCl."
+   "issue": "« H2O (4 mL) was added instead » : l'article ne dit pas si les 10 mL d'éthanol (qui accompagnent la solution d'HCl dans la voie de base) sont encore ajoutés avec l'eau, ni si l'ajout est goutte à goutte ou à quelle température ; ces points sont donc déclarés non cités pour les voies 0M (ils ne sont pas hérités comme des valeurs de l'article). L'étape 4 (agitation 1 h) n'est pas non plus dite pour les échantillons sans HCl."
   },
   {
    "where": "Solution d'HCl",
-   "issue": "Le diluant qui ramène l'HCl 37 % à 0,5–12 M n'est pas écrit (de l'eau, très probablement). Pureté 37 % et fournisseur Panreac repris de la phrase générale de la section 2.1 pour le réactif « hydrochloric acid solution »."
+   "issue": "Le diluant qui ramène l'HCl commercial à 0,5–12 M n'est pas écrit (de l'eau, très probablement). La pureté de 37 % de la section 2.1 est celle du flacon d'acide commercial Panreac, pas celle de la solution de 4 mL utilisée : la pureté de la solution est donc déclarée non citée, et le fournisseur (Panreac) est celui de l'acide de départ."
   },
   {
    "where": "Échantillons WT, étapes",
@@ -2608,7 +2807,7 @@
   },
   {
    "where": "Tableau 3, conversion en propène",
-   "issue": "Le tableau 3 donne la conversion sans préciser le débit (30 ou 60 mL/min). Valeur extraite telle quelle, nom de propriété sans débit."
+   "issue": "Le tableau 3 donne la conversion sans préciser le débit (30 ou 60 mL/min) ; le débit est déclaré non cité pour ces huit échantillons. Les valeurs des échantillons -350 (24, 60, 76, 44 %) coïncident avec les barres à 30 mL/min de la figure 6, mais ce rapprochement n'est que dans une annotation, jamais une valeur : pour les -WT, le débit n'est pas déductible."
   },
   {
    "where": "Tableau 3 et échantillons -350",
@@ -2627,8 +2826,12 @@
    "issue": "Le renvoi « Wang et al. » pointe vers B48 (Wang S. et al., nanotubes de carbone supportés par TiO2) alors que B19 est un article Wang L. et al. sur un sol-gel modifié au glycol, plus proche du sujet. L'identifiant cité par le texte (B48) est repris tel quel."
   },
   {
-   "where": "Figures non lues",
-   "issue": "Le dossier corpus/fig/PMC6266794 n'existe pas : aucune valeur lue sur figure. Les valeurs de la figure 2 sont celles du tableau S1 (présent dans le texte)."
+   "where": "Figure 6, lecture graphique",
+   "issue": "La figure 6 (corpus/fig/PMC6266794/materials-11-02227-g006.jpg) a été lue : conversions en propène à 30 et 60 mL/min des échantillons SG et HT, lecture graphique à ±2 points, qui concorde avec les barres à 30 mL/min des figures 7 et 8. La conversion de P25 n'est que dans une annotation. Les figures 1, 2, 7 et 8 n'apportent pas d'autre valeur que celles du texte et des tableaux."
+  },
+  {
+   "where": "Résultats 3.1.2, teneurs en brookite et rutile de TiO2-0.8M-SG et TiO2-1M-SG",
+   "issue": "Le texte écrit « TiO2-0.8M-SG and TiO2-1M-SG (108 and 89 m2/g, respectively, with 18% B and 11% R versus 13% B and 8% R) », ce qui attribue 18 % de brookite et 11 % de rutile à TiO2-0.8M-SG ; le tableau S1 donne 13 % B et 8 % R pour 0.8 M et 18 % B et 11 % R pour 1 M. Les valeurs du tableau S1 sont conservées, aucune valeur corrigée."
   }
  ]
 }

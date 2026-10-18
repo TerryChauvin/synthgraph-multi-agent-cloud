@@ -1,0 +1,72 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6266794</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6266794 — Effect of the Preparation Method (Sol-Gel or Hydrothermal) and Conditions on the TiO₂ Properties and Activity for Propene Oxidation.</h1>
+<h2>Voie : TiO2-0.8M-SG</h2>
+<pre class="mermaid">flowchart LR
+  R12356([&quot;titanium tetraisopropoxide (TTIP)&lt;br/&gt;4 mL&quot;]):::reactif
+  R12356 --&gt;|&quot;precursor&quot;| S14631
+  R12357([&quot;ethanol (mixed with TTIP)&lt;br/&gt;20 mL&quot;]):::reactif
+  R12357 --&gt;|&quot;solvent&quot;| S14631
+  R12358([&quot;ethanol (added with the HCl solution)&lt;br/&gt;10 mL&quot;]):::reactif
+  R12358 --&gt;|&quot;solvent&quot;| S14631
+  R12359([&quot;hydrochloric acid solution&lt;br/&gt;4 mL&quot;]):::reactif
+  R12359 --&gt;|&quot;acid&quot;| S14631
+  S14631[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;duration : 1 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S14631 --&gt; S14632
+  S14632[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S14632 --&gt; S14633
+  S14633[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;concentration : 0.8 M&lt;br/&gt;volume : 4 mL&lt;br/&gt;addition_rate : dropwise&quot;]:::etape
+  S14633 --&gt; S14634
+  S14634[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S14634 --&gt; S14635
+  S14635[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S14635 --&gt; S14636
+  S14636[&quot;&lt;b&gt;6. calcine&lt;/b&gt;&lt;br/&gt;temperature : 350 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;heating_rate : 5 °C/min&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S14636 --&gt; M
+  M{{&quot;titanium dioxide (sol-gel, HCl 0.8 M)&lt;br/&gt;TiO2&quot;}}:::materiau
+  O59686[&quot;anatase_content : 53 wt.%&quot;]:::resultat
+  M -.-&gt; O59686
+  O59687[&quot;brookite_content : 13 wt.%&quot;]:::resultat
+  M -.-&gt; O59687
+  O59688[&quot;rutile_content : 8 wt.%&quot;]:::resultat
+  M -.-&gt; O59688
+  O59689[&quot;amorphous_TiO2_content : 26 wt.%&quot;]:::resultat
+  M -.-&gt; O59689
+  O59690[&quot;anatase_crystallite_size : 7 nm&quot;]:::resultat
+  M -.-&gt; O59690
+  O59691[&quot;brookite_crystallite_size : 6 nm&quot;]:::resultat
+  M -.-&gt; O59691
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9985{{&quot;TiO2-0.8M-SG&quot;}}:::materiau
+  B9986[&quot;TiO2-1M-SG&quot;]:::etape
+  B9985 --&gt;|&quot;concentration = 1 M&quot;| B9986
+  B9987[&quot;TiO2-5M-SG&quot;]:::etape
+  B9985 --&gt;|&quot;concentration = 5 M&quot;| B9987
+  B9988[&quot;TiO2-12M-SG&quot;]:::etape
+  B9985 --&gt;|&quot;concentration = 12 M&quot;| B9988
+  B9989[&quot;TiO2-0M-SG&quot;]:::etape
+  B9985 --&gt;|&quot;hydrochloric acid soluti… = replaced by water&lt;br/&gt;concentration = no HCl (0M)&quot;| B9989
+  B9990[&quot;TiO2-0.8M-HT&quot;]:::etape
+  B9985 --&gt;|&quot;hydrothermal_treatment = product transferred to a…&quot;| B9990
+  B9998[&quot;TiO2-12M-SG-WT&quot;]:::etape
+  B9988 --&gt;|&quot;temperature = no post-synthesis heat t…&quot;| B9998
+  B9995[&quot;TiO2-0M-SG-WT&quot;]:::etape
+  B9989 --&gt;|&quot;temperature = no post-synthesis heat t…&quot;| B9995
+  B9991[&quot;TiO2-1M-HT&quot;]:::etape
+  B9990 --&gt;|&quot;concentration = 1 M&quot;| B9991
+  B9992[&quot;TiO2-5M-HT&quot;]:::etape
+  B9990 --&gt;|&quot;concentration = 5 M&quot;| B9992
+  B9993[&quot;TiO2-12M-HT&quot;]:::etape
+  B9990 --&gt;|&quot;concentration = 12 M&quot;| B9993
+  B9994[&quot;TiO2-0M-HT&quot;]:::etape
+  B9990 --&gt;|&quot;hydrochloric acid soluti… = replaced by water&lt;br/&gt;concentration = no HCl (0M)&quot;| B9994
+  B9997[&quot;TiO2-0.8M-HT-WT&quot;]:::etape
+  B9990 --&gt;|&quot;temperature = no post-synthesis heat t…&quot;| B9997
+  B9996[&quot;TiO2-0M-HT-WT&quot;]:::etape
+  B9994 --&gt;|&quot;temperature = no post-synthesis heat t…&quot;| B9996
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
