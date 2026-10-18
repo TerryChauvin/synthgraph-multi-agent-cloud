@@ -396,6 +396,43 @@
    "steps": [
     {
      "order": 1,
+     "action": "dry",
+     "description": "Sécher la poudre de verre résiduelle (RGP) à 150 °C avant les synthèses.",
+     "quote": "The starting material for the zeolite syntheses was dried at 150 °C and sieved to obtain a grain size of around 300 μm.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 150 °C",
+       "value_num": 150,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "atmosphere"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sieve",
+     "description": "Tamiser la poudre séchée pour obtenir des grains d'environ 300 μm.",
+     "quote": "The starting material for the zeolite syntheses was dried at 150 °C and sieved to obtain a grain size of around 300 μm.",
+     "parameters": [
+      {
+       "name": "grain_size",
+       "quote": "a grain size of around 300 μm",
+       "value_num": 300,
+       "unit": "μm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "sieve_mesh"
+     ]
+    },
+    {
+     "order": 3,
      "action": "reflux",
      "description": "Lixivier 2.000 g de RGP par 40 mL de HCl 2 mol L−1 sous agitation avec montage à reflux.",
      "quote": "2.000 g of RGP were leached with 40 mL of HCl solution (2 mol L−1), stirring with a reflux system for 265 min at room temperature (25 °C) and at 80 ± 3 °C, nominated as TRGP01_25C and TRGP01_80C, respectively.",
@@ -432,7 +469,7 @@
      ]
     },
     {
-     "order": 2,
+     "order": 4,
      "action": "wash",
      "description": "Laver les échantillons traités (pH = 0~1) à l'eau distillée.",
      "quote": "the treated samples (pH = 0~1) were washed with distilled water, filtered until pH = 5",
@@ -454,7 +491,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 5,
      "action": "filter",
      "description": "Filtrer jusqu'à pH = 5.",
      "quote": "filtered until pH = 5",
@@ -465,7 +502,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 6,
      "action": "dry",
      "description": "Sécher à 60 °C pendant 12 h.",
      "quote": "dried at 60 °C for 12 h",
@@ -577,7 +614,7 @@
      "parameter": "temperature",
      "quote": "2.000 g of RGP were leached with 40 mL of HCl solution (2 mol L−1), stirring with a reflux system for 265 min at room temperature (25 °C) and at 80 ± 3 °C, nominated as TRGP01_25C and TRGP01_80C, respectively.",
      "parent_value": "25 °C",
-     "step_order": 1,
+     "step_order": 3,
      "value_num": 80,
      "unit": "°C"
     }
@@ -698,6 +735,43 @@
    "steps": [
     {
      "order": 1,
+     "action": "dry",
+     "description": "Sécher la poudre de verre résiduelle (RGP) à 150 °C avant les synthèses.",
+     "quote": "The starting material for the zeolite syntheses was dried at 150 °C and sieved to obtain a grain size of around 300 μm.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 150 °C",
+       "value_num": 150,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "atmosphere"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sieve",
+     "description": "Tamiser la poudre séchée pour obtenir des grains d'environ 300 μm.",
+     "quote": "The starting material for the zeolite syntheses was dried at 150 °C and sieved to obtain a grain size of around 300 μm.",
+     "parameters": [
+      {
+       "name": "grain_size",
+       "quote": "a grain size of around 300 μm",
+       "value_num": 300,
+       "unit": "μm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "sieve_mesh"
+     ]
+    },
+    {
+     "order": 3,
      "action": "reflux",
      "description": "Lixivier 2.000 g de RGP en milieu acide à 80 ± 3 °C sous reflux (HCl 0.50 mol L−1, 20 mL, 60 min pour TRGP02_1).",
      "quote": "2.000 g of RGP were leached in an acid medium with a reflux system at 80 ± 3 °C.",
@@ -734,7 +808,7 @@
      ]
     },
     {
-     "order": 2,
+     "order": 4,
      "action": "wash",
      "description": "Laver les échantillons traités à l'eau distillée.",
      "quote": "the treated samples (TRGP02) were washed with distilled water, filtered until pH = 5~7",
@@ -756,7 +830,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 5,
      "action": "filter",
      "description": "Filtrer jusqu'à pH = 5~7.",
      "quote": "filtered until pH = 5~7",
@@ -767,7 +841,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 6,
      "action": "dry",
      "description": "Sécher à 60 °C pendant 12 h.",
      "quote": "dried at 60 °C for 12 h",
@@ -825,7 +899,7 @@
      "parameter": "duration",
      "quote": "TRGP02_2 | 0.50 | 20 | 240 | 54.38",
      "parent_value": "60 min",
-     "step_order": 1,
+     "step_order": 3,
      "value_num": 240,
      "unit": "min"
     }
@@ -904,7 +978,7 @@
      "parameter": "duration",
      "quote": "TRGP02_4 | 0.50 | 60 | 240 | 69.27",
      "parent_value": "60 min",
-     "step_order": 1,
+     "step_order": 3,
      "value_num": 240,
      "unit": "min"
     },
@@ -951,7 +1025,7 @@
      "parameter": "hcl_concentration",
      "quote": "TRGP02_5 | 3.00 | 20 | 60 | 56.60",
      "parent_value": "0.5 mol L−1",
-     "step_order": 1,
+     "step_order": 3,
      "value_num": 3.0,
      "unit": "mol L−1"
     }
@@ -991,7 +1065,7 @@
      "parameter": "duration",
      "quote": "TRGP02_6 | 3.00 | 20 | 240 | 72.44",
      "parent_value": "60 min",
-     "step_order": 1,
+     "step_order": 3,
      "value_num": 240,
      "unit": "min"
     },
@@ -999,7 +1073,7 @@
      "parameter": "hcl_concentration",
      "quote": "TRGP02_6 | 3.00 | 20 | 240 | 72.44",
      "parent_value": "0.5 mol L−1",
-     "step_order": 1,
+     "step_order": 3,
      "value_num": 3.0,
      "unit": "mol L−1"
     }
@@ -1057,7 +1131,7 @@
      "parameter": "hcl_concentration",
      "quote": "TRGP02_7 | 3.00 | 60 | 60 | 56.33",
      "parent_value": "0.5 mol L−1",
-     "step_order": 1,
+     "step_order": 3,
      "value_num": 3.0,
      "unit": "mol L−1"
     }
@@ -1097,7 +1171,7 @@
      "parameter": "duration",
      "quote": "TRGP02_8 | 3.00 | 60 | 240 | 71.97",
      "parent_value": "60 min",
-     "step_order": 1,
+     "step_order": 3,
      "value_num": 240,
      "unit": "min"
     },
@@ -1112,7 +1186,7 @@
      "parameter": "hcl_concentration",
      "quote": "TRGP02_8 | 3.00 | 60 | 240 | 71.97",
      "parent_value": "0.5 mol L−1",
-     "step_order": 1,
+     "step_order": 3,
      "value_num": 3.0,
      "unit": "mol L−1"
     }
@@ -1498,7 +1572,6 @@
    "not_stated": [
     "yield"
    ],
-   "succeeded": false,
    "reagents": [
     {
      "name": "residual glass powder (RGP), dried at 150 °C and sieved to around 300 μm",
@@ -1557,6 +1630,43 @@
    "steps": [
     {
      "order": 1,
+     "action": "dry",
+     "description": "Sécher la poudre de verre résiduelle (RGP) à 150 °C avant les synthèses.",
+     "quote": "The starting material for the zeolite syntheses was dried at 150 °C and sieved to obtain a grain size of around 300 μm.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 150 °C",
+       "value_num": 150,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "atmosphere"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sieve",
+     "description": "Tamiser la poudre séchée pour obtenir des grains d'environ 300 μm.",
+     "quote": "The starting material for the zeolite syntheses was dried at 150 °C and sieved to obtain a grain size of around 300 μm.",
+     "parameters": [
+      {
+       "name": "grain_size",
+       "quote": "a grain size of around 300 μm",
+       "value_num": 300,
+       "unit": "μm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "sieve_mesh"
+     ]
+    },
+    {
+     "order": 3,
      "action": "mix",
      "description": "Former le gel amorphe à partir de la poudre de verre, de NaOH, de NaAlO2 et d'eau en conservant la composition molaire du gel de synthèse de la zéolite FAU-X (protocole du ZX), avec 0.846 g de SiO2 par autoclave.",
      "quote": "The aforementioned synthesis of the FAU structure methodology was applied to the study of optimal seed dosage and treatment time.",
@@ -1570,7 +1680,7 @@
      ]
     },
     {
-     "order": 2,
+     "order": 4,
      "action": "heat",
      "description": "Cristallisation statique à 100 °C dans des autoclaves scellés de téflon sur bloc chauffant (12 h pour cet échantillon).",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
@@ -1608,7 +1718,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 5,
      "action": "wash",
      "description": "Laver les produits à l'eau distillée jusqu'à pH neutre.",
      "quote": "Then, the products were washed with distilled water until neutral pH and dried at 60 °C overnight.",
@@ -1630,7 +1740,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 6,
      "action": "dry",
      "description": "Sécher à 60 °C pendant la nuit.",
      "quote": "dried at 60 °C overnight",
@@ -1684,7 +1794,7 @@
     "name": "zeolite Na-X (FAU) from untreated residue glass powder, 1% wt. seeds, 12 h",
     "formula": null,
     "family": "zeolithe",
-    "phase": "mélange FAU / GIS / LTA / SOD",
+    "phase": null,
     "morphology": null
    },
    "quote": "The samples from different residues (a = R (RGP) or TR (TRGP)), the number of seeds (b = S0, S1, or S5, with 0%, 1%, or 5% wt., respectively), and crystallization times (t) were denoted as ZX a b_t H.",
@@ -1711,6 +1821,43 @@
    "steps": [
     {
      "order": 1,
+     "action": "dry",
+     "description": "Sécher la poudre de verre résiduelle (RGP) à 150 °C avant les synthèses.",
+     "quote": "The starting material for the zeolite syntheses was dried at 150 °C and sieved to obtain a grain size of around 300 μm.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 150 °C",
+       "value_num": 150,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "atmosphere"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sieve",
+     "description": "Tamiser la poudre séchée pour obtenir des grains d'environ 300 μm.",
+     "quote": "The starting material for the zeolite syntheses was dried at 150 °C and sieved to obtain a grain size of around 300 μm.",
+     "parameters": [
+      {
+       "name": "grain_size",
+       "quote": "a grain size of around 300 μm",
+       "value_num": 300,
+       "unit": "μm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "sieve_mesh"
+     ]
+    },
+    {
+     "order": 3,
      "action": "mix",
      "description": "Former le gel amorphe à partir de la poudre de verre, de NaOH, de NaAlO2 et d'eau en conservant la composition molaire du gel de synthèse de la zéolite FAU-X, avec 0.846 g de SiO2 par autoclave.",
      "quote": "The aforementioned synthesis of the FAU structure methodology was applied to the study of optimal seed dosage and treatment time.",
@@ -1724,7 +1871,7 @@
      ]
     },
     {
-     "order": 2,
+     "order": 4,
      "action": "stir",
      "description": "Ajouter les germes ZX (1 % wt. des solides) au gel et agiter 5 min.",
      "quote": "the number of seed (ZX sample) equivalent to 0%, 1%, and 5% (wt.) of solids used in this synthesis (residue, NaOH, and NaAlO2) was stirred for 5 min",
@@ -1743,7 +1890,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 5,
      "action": "heat",
      "description": "Cristallisation statique à 100 °C dans des autoclaves scellés de téflon sur bloc chauffant (12 h pour cet échantillon).",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
@@ -1781,7 +1928,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 6,
      "action": "wash",
      "description": "Laver les produits à l'eau distillée jusqu'à pH neutre.",
      "quote": "Then, the products were washed with distilled water until neutral pH and dried at 60 °C overnight.",
@@ -1803,7 +1950,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 7,
      "action": "dry",
      "description": "Sécher à 60 °C pendant la nuit.",
      "quote": "dried at 60 °C overnight",
@@ -1860,12 +2007,11 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 2,
+     "step_order": 4,
      "value_num": 24,
      "unit": "h"
     }
    ],
-   "succeeded": false,
    "characterizations": [
     {
      "technique": "XRD",
@@ -1900,12 +2046,11 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 2,
+     "step_order": 4,
      "value_num": 36,
      "unit": "h"
     }
    ],
-   "succeeded": false,
    "characterizations": [
     {
      "technique": "XRD",
@@ -1940,7 +2085,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 2,
+     "step_order": 4,
      "value_num": 48,
      "unit": "h"
     }
@@ -2032,7 +2177,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 2,
+     "step_order": 4,
      "value_num": 24,
      "unit": "h"
     }
@@ -2072,7 +2217,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 2,
+     "step_order": 4,
      "value_num": 36,
      "unit": "h"
     }
@@ -2112,7 +2257,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 2,
+     "step_order": 4,
      "value_num": 48,
      "unit": "h"
     }
@@ -2149,7 +2294,7 @@
     "name": "zeolite Na-X (FAU) from untreated residue glass powder, 1% wt. seeds, 24 h",
     "formula": null,
     "family": "zeolithe",
-    "phase": null,
+    "phase": "mélange FAU / GIS / LTA / SOD",
     "morphology": null
    },
    "quote": "The samples from different residues (a = R (RGP) or TR (TRGP)), the number of seeds (b = S0, S1, or S5, with 0%, 1%, or 5% wt., respectively), and crystallization times (t) were denoted as ZX a b_t H.",
@@ -2158,7 +2303,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 24,
      "unit": "h"
     }
@@ -2203,7 +2348,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 36,
      "unit": "h"
     }
@@ -2243,7 +2388,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 48,
      "unit": "h"
     }
@@ -2264,6 +2409,16 @@
      "quote": "48 h | 3 | 46 | 12 | 42 | 17 | 77",
      "value_num": 12,
      "unit": "%"
+    },
+    {
+     "property": "phases",
+     "quote": "only after 48 h of synthesis does the intensity of the peaks related to LTA decrease, revealing a greater presence of the FAU and GIS structures",
+     "value_text": "the intensity of the peaks related to LTA decrease, revealing a greater presence of the FAU and GIS structures"
+    },
+    {
+     "property": "reflexions_caracteristiques_XRD",
+     "quote": "the characteristic reflections for the FAU zeolite around 2θ = 6.18°, 10.07° and 11.80° (d111 = 14.31 Å, d220 = 8.79 Å, d311 = 7.50 Å, respectively), and for the Na-P1 zeolite around 2θ = 12.50°, 21.70° and 28.12° (d = 7.08 Å, 4.09 Å and 3.17 Å)",
+     "value_text": "FAU zeolite around 2θ = 6.18°, 10.07° and 11.80°; Na-P1 zeolite around 2θ = 12.50°, 21.70° and 28.12°"
     }
    ]
   },
@@ -2308,6 +2463,11 @@
      "quote": "it is possible to obtain the desired structure with a high degree of structural order (12 h with RCFAU = 52%)",
      "value_num": 52,
      "unit": "%"
+    },
+    {
+     "property": "phases",
+     "quote": "at all crystallization times showed the faujasite phase as the main and predominant one, with the diffractogram profile similar to that of the NaX zeolite standard sample, and a secondary phase relative to Na-P1 zeolite without the presence of LTA and SOD structures (Figure 1E)",
+     "value_text": "faujasite phase as the main and predominant one, and a secondary phase relative to Na-P1 zeolite without the presence of LTA and SOD structures"
     }
    ],
    "reagents": [
@@ -2336,7 +2496,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 24,
      "unit": "h"
     }
@@ -2357,6 +2517,11 @@
      "quote": "24 h | 0 | 39 | 15 | 49 | 18 | 77",
      "value_num": 49,
      "unit": "%"
+    },
+    {
+     "property": "phases",
+     "quote": "at all crystallization times showed the faujasite phase as the main and predominant one, with the diffractogram profile similar to that of the NaX zeolite standard sample, and a secondary phase relative to Na-P1 zeolite without the presence of LTA and SOD structures (Figure 1E)",
+     "value_text": "faujasite phase as the main and predominant one, and a secondary phase relative to Na-P1 zeolite without the presence of LTA and SOD structures"
     }
    ]
   },
@@ -2376,7 +2541,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 36,
      "unit": "h"
     }
@@ -2397,6 +2562,11 @@
      "quote": "36 h | 0 | 40 | 12 | 51 | 15 | 78",
      "value_num": 51,
      "unit": "%"
+    },
+    {
+     "property": "phases",
+     "quote": "at all crystallization times showed the faujasite phase as the main and predominant one, with the diffractogram profile similar to that of the NaX zeolite standard sample, and a secondary phase relative to Na-P1 zeolite without the presence of LTA and SOD structures (Figure 1E)",
+     "value_text": "faujasite phase as the main and predominant one, and a secondary phase relative to Na-P1 zeolite without the presence of LTA and SOD structures"
     }
    ]
   },
@@ -2416,7 +2586,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 48,
      "unit": "h"
     }
@@ -2437,6 +2607,11 @@
      "quote": "48 h | 3 | 46 | 12 | 42 | 17 | 77",
      "value_num": 42,
      "unit": "%"
+    },
+    {
+     "property": "phases",
+     "quote": "at all crystallization times showed the faujasite phase as the main and predominant one, with the diffractogram profile similar to that of the NaX zeolite standard sample, and a secondary phase relative to Na-P1 zeolite without the presence of LTA and SOD structures (Figure 1E)",
+     "value_text": "faujasite phase as the main and predominant one, and a secondary phase relative to Na-P1 zeolite without the presence of LTA and SOD structures"
     }
    ]
   },
@@ -2569,7 +2744,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 24,
      "unit": "h"
     }
@@ -2614,7 +2789,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 36,
      "unit": "h"
     }
@@ -2659,7 +2834,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 48,
      "unit": "h"
     }
@@ -2819,7 +2994,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 24,
      "unit": "h"
     }
@@ -2864,7 +3039,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 36,
      "unit": "h"
     }
@@ -2909,7 +3084,7 @@
      "parameter": "duration",
      "quote": "The mixtures were transferred to a needed number of Teflon-sealed autoclaves and carried to a static heater block to crystallize at 100 °C for 12 h, 24 h, 36 h, and 48 h.",
      "parent_value": "12 h",
-     "step_order": 3,
+     "step_order": 5,
      "value_num": 48,
      "unit": "h"
     }
@@ -3009,13 +3184,79 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZXRS0_12H",
-   "text": "Hypothèse de chimiste : en milieu NaOH, le verre se dissout lentement et libère des silicates dont la spéciation est modifiée par Ca2+ (précipitation de silicates de calcium) ; l'aluminosilicate amorphe obtenu a alors un rapport Si/Al local très différent du gel visé, ce qui favorise Na-P1, riche en Al et dense, plutôt que la Na-X. Sans germes, la nucléation primaire de la FAU est lente, d'où l'absence de FAU avant 48 h.",
+   "text": "Hypothèse de chimiste : les grains de verre se dissolvent lentement et en partie dans NaOH ; Ca2+ et Mg2+ libérés précipitent probablement en hydroxydes ou en silicates de calcium hydratés qui retirent de la silice, de sorte que la solution réelle est plus pauvre en Si que le gel visé et riche en aluminate. Dans ce domaine, LTA puis Na-P1 (GIS) nucléent plus vite que la FAU, et la LTA métastable se transforme avec le temps en Na-P1 plus dense (règle d'Ostwald, voir Cundy et Cox, Chem. Rev. 2003, DOI 10.1021/cr020060i). Sans germes, la nucléation primaire de la FAU est lente, d'où l'absence de FAU avant 48 h. Le rôle propre de Ca2+ n'est isolé par aucun essai de l'article.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "Dangers non mentionnés par l'article : l'acide chlorhydrique à 37 % (corrosif, vapeurs) et sa lixiviation à reflux à 80 °C demandent une hotte et des gants ; la soude concentrée utilisée pour les gels (2 à 3 mol de NaOH par litre) est corrosive pour la peau et les yeux ; les autoclaves à 100 °C sont des récipients fermés sous pression ; la poudre de verre résiduelle fine et la silice Aerosil sont des poussières à ne pas inhaler.",
+   "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": "ZXTRS1_12H",
+   "text": "Série lixiviée avec 1 % de germes (ZXTRS1) : FAU phase principale à tous les temps, profil proche de celui de l'étalon NaX, Na-P1 en phase secondaire, sans LTA ni SOD (Figure 1E) ; les temps longs favorisent la structure GIS, la plus stable. La cristallinité FAU passe de 52 % à 12 h à 42 % à 48 h (52, 49, 51, 42 % : non monotone).",
+   "quote": "It should be noted that longer times lead to the formation of the GIS structure, which is the most stable phase."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "ZXRS0_12H",
+   "text": "ZXRS0_12H, ZXRS0_24H et ZXRS0_36H : FAU non détectée (RCFAU = 0 %, tableau 3) ; la phase principale est Na-P1 (GIS), avec une phase LTA secondaire. Les auteurs ne parlent pas d'échec : le succès de ces synthèses n'est donc pas renseigné.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TRGP01_25C",
+   "text": "Les auteurs concluent que la lixiviation acide a retiré plus de Na+ que de Ca2+ (3.2.2 et Conclusions), ce que le tableau 1 ne soutient pas : le rapport molaire Na/Ca calculé à partir du tableau 1 vaut 1,07 dans RGP, 0,45 après 25 °C et 1,05 après 80 °C, et environ 78 % de chacun des deux sont éliminés à 80 °C (recalcul à silice constante). Le texte de 3.1 attribue aussi la hausse de SiO2 et la baisse de Na à l'effet de la concentration d'acide alors que seule la température varie dans cette série (2 mol L−1 aux deux températures). Le mode de calcul du « Ca2+ removed » du tableau 2 n'est pas écrit (rapport de pourcentages normalisés ou bilan à silice constante : 71 % ou 78 % pour 80 °C). Aucune valeur de l'article n'est modifiée ; le chimiste doit doser Na et Ca dans le filtrat.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TRGP02_1",
+   "text": "Les auteurs concluent que le rapport liquide/solide n'a pas d'effet notable (3.2.2), en ne citant que la paire à 3 mol L−1 (−0,47 point). Dans le tableau 2, à 0,5 mol L−1, passer de 20 à 60 mL augmente le calcium éliminé de 12 à 15 points : l'acide est limitant dans la condition 0,5 mol L−1 / 20 mL (≈ 10 mmol de H+ pour environ 20,6 mmol demandés par les oxydes basiques de 2 g de RGP). La variable pertinente est la quantité de HCl par gramme de verre, pas la concentration seule ; la conclusion des auteurs ne vaut qu'à 3 mol L−1.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZXRS0_12H",
+   "text": "Aucune masse n'est donnée pour les synthèses à partir des résidus (seule la règle de 0.846 g de SiO2 par autoclave) : toute quantité de réactif ne peut être qu'une reconstruction, qui suppose en plus que toute la silice du verre est disponible alors que les auteurs écrivent que les grains ne se dissolvent pas complètement. Le résumé et 3.2.3 disent qu'un temps plus long permet d'obtenir la FAU à partir du résidu brut ; le tableau 3 ne le soutient pas (0 % jusqu'à 36 h puis 3 % à 48 h sans germes ; 15, 12 % pour 1 % de germes et 20 à 17 % pour 5 % de germes, donc stable ou en baisse). Aucune valeur n'est modifiée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZXTRS0_12H",
+   "text": "L'explication des auteurs par les ions Na+ comme agent minéralisant apportés par la poudre lixiviée n'est pas compatible avec le protocole : la lixiviation retire déjà environ 78 % du sodium du verre (tableau 1), la composition du gel est ramenée à la même valeur par ajustement de NaOH et NaAlO2 (le sodium total est donc comparable avec RGP et avec TRGP), et les auteurs nomment eux-mêmes OH− comme agent minéralisant en 3.2.2. La différence entre RGP et TRGP porte plutôt sur le calcium et le magnésium et sur la réactivité des grains. La masse de TRGP pour 0.846 g de SiO2 ne peut pas être calculée sans le tableau S1 (absent du dépôt) ; le chimiste doit doser sa propre poudre lixiviée. La cristallinité relative RCFAU est exprimée par rapport à l'échantillon ZX pris pour 100 % (ASTM D3906 adaptée), pas comme teneur absolue.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZXRS5_12H",
+   "text": "Les germes (5 % des solides introduits) représentent à peu près 13 à 16 % du solide final une fois la soude exclue du produit, soit le même ordre de grandeur que la RCFAU mesurée (15 à 20 % pour RGP à 5 % et 8 à 15 % à 1 %). Pour la série à partir du résidu brut, rien ne prouve donc qu'une FAU nouvelle a cristallisé : le signal peut venir des germes ajoutés (calcul fragile : masse de produit non donnée). Il manque la masse de produit récupérée et un témoin de germes seuls dans le gel RGP à t = 0.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZX",
+   "text": "La réflexion à 2θ = 6,12° est donnée avec d = 14,29 Å ; avec λ = 1,54 Å le calcul donne 14,43 Å (14,29 Å correspond à 6,18°, valeur citée plus loin pour ZXRS1) : probable erreur de recopie des auteurs, sans conséquence sur l'identification.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZXTRS5_12H",
+   "text": "La taille de pore NLDFT (0,52 nm) est inférieure à la fenêtre de la FAU (0,74 nm) et à celle de ZX (0,67 nm) : artefact probable du modèle NLDFT sur l'azote à 77 K en micropores étroits ; ne pas la lire comme une contraction des pores.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZXTRS0_12H",
+   "text": "Hypothèse de chimiste : les grains lixiviés, plus fins et en silice hydratée poreuse, se dissolvent plus vite et libèrent peu de Ca2+ ; la solution atteint un rapport Si/Al plus proche du gel visé, ce qui favorise la nucléation de la FAU, la Na-P1 se formant ensuite par transformation lente. Le sodium vient de NaOH dans les deux cas : l'effet du sodium de la poudre lixiviée n'est pas démontré.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZXRS5_12H",
+   "text": "Hypothèse de chimiste : les germes offrent une surface de croissance à la FAU (Cundy et Cox, Chem. Rev. 2003), mais dans un gel issu de RGP, pauvre en Si et chargé en Ca, LTA et Na-P1 restent favorisées ; une partie des germes peut se redissoudre ou se transformer en Na-P1, d'où une RCFAU qui baisse avec le temps (20 à 17 %).",
    "quote": null
   }
  ],
@@ -3031,11 +3272,155 @@
    "ref_id": "B40-materials-18-01393",
    "role": "autre",
    "quote": "The relative crystallinity (RCFAU, %) referring to the FAU phase could be calculated as follows by the ASTM D3906-19 method, with adaptations"
+  },
+  {
+   "route": "ZXRS0_12H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS1_12H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS0_24H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS0_36H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS0_48H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS0_12H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS0_24H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS0_36H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS0_48H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS1_24H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS1_36H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS1_48H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS1_12H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS1_24H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS1_36H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS1_48H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS5_12H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS5_24H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS5_36H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXRS5_48H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS5_12H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS5_24H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS5_36H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
+  },
+  {
+   "route": "ZXTRS5_48H",
+   "ref_id": "B39-materials-18-01393",
+   "role": "protocole_adapte",
+   "quote": "The synthesis methodologies described in this work were performed based on a standardized synthesis of zeolite X-type faujasite (FAU) obtained from the International Zeolite Association (IZA), with adaptations"
   }
  ],
  "doubts": [
   {
-   "where": "ZXRS0_12H étape 1 (et toutes les voies ZX…)",
+   "where": "ZXRS0_12H étape 3 (et toutes les voies ZX…)",
    "issue": "La formation du gel à partir des résidus n'est pas décrite : l'article dit que « the aforementioned synthesis of the FAU structure methodology was applied » (protocole des germes ZX). Étape extraite avec cette phrase en citation, sans quantités ni durées (déclarées non citées). Les 5 min d'agitation après ajout des germes ne sont écrites que pour les échantillons ensemencés ; non retenues pour S0."
   },
   {
@@ -3048,7 +3433,7 @@
   },
   {
    "where": "ZXRS0_12H, ZXRS0_24H, ZXRS0_36H (succeeded)",
-   "issue": "Cristallinité FAU de 0 % (tableau 3) : FAU absente de ces trois échantillons, marqués succeeded: false ; les auteurs ne parlent pas d'échec mais de phase Na-P1 (GIS) majoritaire. Lecture alternative : synthèses réussies mais donnant une autre phase."
+   "issue": "Cristallinité FAU de 0 % (tableau 3) : FAU absente de ces trois échantillons. Le champ succeeded est laissé vide : les auteurs ne parlent pas d'échec mais de phase Na-P1 (GIS) majoritaire (critique de fidélité : pas de critère d'échec dans l'article)."
   },
   {
    "where": "Branches ZX… (durée)",
@@ -3059,7 +3444,7 @@
    "issue": "La quantité de germes est exprimée en % en masse des solides de synthèse (résidu, NaOH et NaAlO2), pas en grammes ; 1 % attribué à S1 et 5 % à S5 d'après « b = S0, S1, or S5, with 0%, 1%, or 5% wt., respectively ». L'avertissement du contrôle sur la variation « seed_crystals » est voulu : les germes sont un ajout absent de la voie parente ZXRS0_12H (parent_value none)."
   },
   {
-   "where": "TRGP01_25C étape 1",
+   "where": "TRGP01_25C étape 3",
    "issue": "L'article écrit « stirring with a reflux system for 265 min at room temperature (25 °C) and at 80 ± 3 °C » : un reflux à 25 °C est inhabituel. Lecture littérale conservée (25 °C pour TRGP01_25C, 80 ± 3 °C pour TRGP01_80C, d'après « respectively »)."
   },
   {
@@ -3069,6 +3454,14 @@
   {
    "where": "Figures",
    "issue": "Figure 1 (XRD) ouverte : lecture qualitative seulement (les phases sont données dans le texte, les cristallinités dans le tableau 3) ; aucune valeur lue sur figure. Figures 3 (MEB), 4 (isothermes) et 5 (FTIR) non utilisées pour des valeurs : le texte et le tableau 4 donnent les résultats."
+  },
+  {
+   "where": "ZXRS1_12H phase",
+   "issue": "La composition en phases « FAU / GIS / LTA / SOD » est décrite par l'article pour 24 h (« the greater RCFAU percentage was only 24 h of synthesis in which a phase competition… »), pas pour 12 h : la phase est attribuée à ZXRS1_24H et laissée vide pour ZXRS1_12H (RCFAU = 8 % seulement)."
+  },
+  {
+   "where": "RGP séchage 150 °C",
+   "issue": "La durée du séchage de RGP à 150 °C n'est pas donnée ; étapes de séchage et de tamisage (≈ 300 μm) placées en tête des voies de base qui utilisent RGP (TRGP01_25C, TRGP02_1, ZXRS0_12H, ZXRS1_12H)."
   }
  ]
 }
