@@ -65,10 +65,11 @@
      "role": "solvent",
      "not_stated": [
       "amount",
-      "purity",
-      "supplier"
+      "purity"
      ],
-     "quote": "The precursor solutions contained stoichiometric amounts of LiNO3, Co(NO3)2·6H2O, and H3PO4 dissolved in distilled water with a total concentration of 0.12 M (denoted as bare-LCP)"
+     "quote": "The precursor solutions contained stoichiometric amounts of LiNO3, Co(NO3)2·6H2O, and H3PO4 dissolved in distilled water with a total concentration of 0.12 M (denoted as bare-LCP)",
+     "supplier": "Wako Pure Chemical Industries Ltd., Japan",
+     "supplier_quote": "All chemicals mentioned above were purchased from Wako Pure Chemical Industries Ltd., Japan."
     },
     {
      "name": "air (carrier gas)",
@@ -198,22 +199,22 @@
      "technique": "XRD",
      "result": "orthorhombic olivine, groupe Pnma ; traces de Li3PO4",
      "instrument": "Rigaku Ultima IV with D/teX Ultra",
-     "conditions": "Cu Kα (λ = 1.5406 Å), 40 kV, 40 mA, 5° min–1, 10° à 70°",
+     "conditions": "Cu Kα (λ = 1.5406 Å), 40 kV, 40 mA, 5° min–1, 10° à 70° ; affinement de Rietveld : PDXL2 (Rigaku) pour les paramètres de maille, FullProf Suite pour les antisites",
      "quote": "All peaks observed in the XRD patterns of the three samples are attributed to the orthorhombic olivine structure and exhibit the Pnma space group."
     },
     {
      "technique": "FT-IR",
-     "result": "échantillon de référence sans additif (pas de décalage vers le rouge de la bande PO4)",
+     "result": "référence pour le décalage vers le rouge de la bande PO4 observé avec les additifs (la bande de bare-LCP n'est pas décrite en elle-même)",
      "instrument": "Shimadzu IRAffinity-1 Miracle-10 FT-IR spectrometer",
      "conditions": null,
      "quote": "Upon the addition of additives, a notable red shift was observed in the PO4 band, which typically manifests between 900 and 1000 cm–1 in the FTIR spectra."
     },
     {
      "technique": "XPS",
-     "result": "pics Co 2p3/2 à 781,18, 782,49 et 786,22 eV (Co2+), pas de Co3+ ; P5+",
+     "result": "Co 2p3/2 : composantes à 781.2, 782.5 et 786.2 eV (Table S1 : Co2+ (1), Co2+ (2) et satellite) ; pas de pic de Co3+ ; P 2p dans la plage de P5+",
      "instrument": "KRATOS ULTRA2, Shimadzu",
      "conditions": "AlKα monochromatique 300 W ; énergie de passage 160 eV (large) et 20 eV (étroit) ; zone d'analyse 700 × 300 μm ; neutraliseur de charge actif",
-     "quote": "In the Co 2p XPS spectra of all three samples, the signals split into 2p3/2 and 2p1/2 multiplets. Specifically, the 2p3/2 peak exhibited a triple structure with peaks located at 781.18, 782.49, and 786.22 eV"
+     "quote": "Bare-LCP 781.2 18.2 782.5 31.0 786.2 50.8"
     },
     {
      "technique": "SEM",
@@ -228,6 +229,13 @@
      "instrument": "Micromeritics TriStar II 3020",
      "conditions": "N2 à 77 K",
      "quote": "The specific surface area of the samples was determined by the Brunauer–Emmett–Teller (BET) method from N2 absorption–desorption isotherms."
+    },
+    {
+     "technique": "Rietveld (FullProf Suite)",
+     "result": "référence de la comparaison des antisites : valeur numérique non donnée dans le texte (Figure S2a, image d'annexe)",
+     "instrument": "FullProf Suite",
+     "conditions": null,
+     "quote": "As confirmed from Rietveld refinement of XRD patterns (Figure S2), the concentration of antisite defects was lowered almost twice in DHC-LCP compared to bare-LCP"
     }
    ],
    "outcomes": [
@@ -335,6 +343,16 @@
      "value_num": 70,
      "unit": "mA h g–1",
      "quote": "This improvement translated into enhanced cycling stability for both DHC-LCP and bare-LCP samples, maintaining discharge capacities of about 100 and 70 mA h g–1, respectively, after 50 cycles at 0.1 C, as illustrated in Figure 6b."
+    },
+    {
+     "property": "XPS_P2p_dominant_component_binding_energy",
+     "value_text": "133.5–134.4 eV",
+     "quote": "revealed a dominant component appearing within the range of 133.5–134.4 eV"
+    },
+    {
+     "property": "inner_wall_structure",
+     "value_text": "similar patterned and rough inner wall structure in all three samples",
+     "quote": "the cross-sectional images depicted in Figure 2c revealed a similar patterned and rough inner wall structure in all three samples."
     }
    ],
    "missing_fields": [
@@ -393,7 +411,7 @@
      "technique": "XRD",
      "result": "orthorhombic olivine, groupe Pnma ; traces de Li3PO4",
      "instrument": "Rigaku Ultima IV with D/teX Ultra",
-     "conditions": "Cu Kα (λ = 1.5406 Å), 40 kV, 40 mA, 5° min–1, 10° à 70°",
+     "conditions": "Cu Kα (λ = 1.5406 Å), 40 kV, 40 mA, 5° min–1, 10° à 70° ; affinement de Rietveld : PDXL2 (Rigaku) pour les paramètres de maille, FullProf Suite pour les antisites",
      "quote": "All peaks observed in the XRD patterns of the three samples are attributed to the orthorhombic olivine structure and exhibit the Pnma space group."
     },
     {
@@ -405,10 +423,10 @@
     },
     {
      "technique": "XPS",
-     "result": "pics Co 2p3/2 à 781,18, 782,49 et 786,22 eV (Co2+), pas de Co3+ ; P5+",
+     "result": "Co 2p3/2 : composantes à 781.1, 782.4 et 786.1 eV (Table S1 : Co2+ (1), Co2+ (2) et satellite) ; pas de pic de Co3+ ; P 2p dans la plage de P5+",
      "instrument": "KRATOS ULTRA2, Shimadzu",
      "conditions": "AlKα monochromatique 300 W ; énergie de passage 160 eV (large) et 20 eV (étroit) ; zone d'analyse 700 × 300 μm ; neutraliseur de charge actif",
-     "quote": "In the Co 2p XPS spectra of all three samples, the signals split into 2p3/2 and 2p1/2 multiplets. Specifically, the 2p3/2 peak exhibited a triple structure with peaks located at 781.18, 782.49, and 786.22 eV"
+     "quote": "CA-LCP 781.1 18.2 782.4 31.0 786.1 50.8"
     },
     {
      "technique": "SEM",
@@ -499,6 +517,16 @@
      "unit": "mA h g–1",
      "from_figure": "Fig. 4d",
      "quote": "Figure 4 Initial CV curves (a), initial potential profiles (b), cycle performance at 0.1 C (c), and rate-capability (d) of the LCP samples with the conventional electrolyte."
+    },
+    {
+     "property": "XPS_P2p_dominant_component_binding_energy",
+     "value_text": "133.5–134.4 eV",
+     "quote": "revealed a dominant component appearing within the range of 133.5–134.4 eV"
+    },
+    {
+     "property": "inner_wall_structure",
+     "value_text": "similar patterned and rough inner wall structure in all three samples",
+     "quote": "the cross-sectional images depicted in Figure 2c revealed a similar patterned and rough inner wall structure in all three samples."
     }
    ]
   },
@@ -550,7 +578,7 @@
      "technique": "XRD",
      "result": "orthorhombic olivine, groupe Pnma ; traces de Li3PO4",
      "instrument": "Rigaku Ultima IV with D/teX Ultra",
-     "conditions": "Cu Kα (λ = 1.5406 Å), 40 kV, 40 mA, 5° min–1, 10° à 70°",
+     "conditions": "Cu Kα (λ = 1.5406 Å), 40 kV, 40 mA, 5° min–1, 10° à 70° ; affinement de Rietveld : PDXL2 (Rigaku) pour les paramètres de maille, FullProf Suite pour les antisites",
      "quote": "All peaks observed in the XRD patterns of the three samples are attributed to the orthorhombic olivine structure and exhibit the Pnma space group."
     },
     {
@@ -562,10 +590,10 @@
     },
     {
      "technique": "XPS",
-     "result": "pics Co 2p3/2 à 781,18, 782,49 et 786,22 eV (Co2+), pas de Co3+ ; P5+",
+     "result": "Co 2p3/2 : composantes à 781.1, 782.4 et 786.2 eV (Table S1 : Co2+ (1), Co2+ (2) et satellite) ; pas de pic de Co3+ ; P 2p dans la plage de P5+",
      "instrument": "KRATOS ULTRA2, Shimadzu",
      "conditions": "AlKα monochromatique 300 W ; énergie de passage 160 eV (large) et 20 eV (étroit) ; zone d'analyse 700 × 300 μm ; neutraliseur de charge actif",
-     "quote": "In the Co 2p XPS spectra of all three samples, the signals split into 2p3/2 and 2p1/2 multiplets. Specifically, the 2p3/2 peak exhibited a triple structure with peaks located at 781.18, 782.49, and 786.22 eV"
+     "quote": "DHC-LCP 781.1 18.2 782.4 31.0 786.2 50.8"
     },
     {
      "technique": "SEM",
@@ -589,8 +617,8 @@
      "quote": "the concentration of antisite defects was lowered almost twice in DHC-LCP compared to bare-LCP"
     },
     {
-     "technique": "TG-DTA (poudre de DHC seul)",
-     "result": "décomposition en plusieurs étapes dans l'air, deux pertes de masse vers 200 et 550 °C",
+     "technique": "TG-DTA (réactif DHC seul, pas le matériau DHC-LCP)",
+     "result": "poudre de DHC seule (additif, non le matériau DHC-LCP) : décomposition en plusieurs étapes dans l'air, deux pertes de masse centrées vers 200 et 550 °C",
      "instrument": "Rigaku TG-8120",
      "conditions": "dans l'air, 10° min–1",
      "quote": "undergoes a multistep decomposition process in air (Figure S3) with two main mass losses centered around 200 and 550 °C"
@@ -746,6 +774,28 @@
      "property": "overall_resistance_fluorinated_vs_conventional_after_3_cycles",
      "value_text": "four times smaller with the fluorinated electrolyte",
      "quote": "the overall resistance in cells with the fluorinated electrolyte is four times smaller after three cycles compared to that with the conventional electrolyte"
+    },
+    {
+     "property": "XPS_P2p_dominant_component_binding_energy",
+     "value_text": "133.5–134.4 eV",
+     "quote": "revealed a dominant component appearing within the range of 133.5–134.4 eV"
+    },
+    {
+     "property": "inner_wall_structure",
+     "value_text": "similar patterned and rough inner wall structure in all three samples",
+     "quote": "the cross-sectional images depicted in Figure 2c revealed a similar patterned and rough inner wall structure in all three samples."
+    },
+    {
+     "property": "internal_channels",
+     "value_text": "channels within the secondary particles",
+     "quote": "These processes create channels within the secondary particles, forming the internal structure of the patterned design in the DHC-LCP samples."
+    },
+    {
+     "property": "plateau_length_increase_fluorinated_vs_conventional",
+     "value_num": 5,
+     "unit": "%",
+     "value_text": "approximately 5%",
+     "quote": "the potential plateaus with the fluorinated electrolyte are more distinct and extended, with a length increase of approximately 5%"
     }
    ]
   },
@@ -919,7 +969,8 @@
      "property": "active_material_loading",
      "value_num": 1.0,
      "unit": "mg cm–2",
-     "quote": "The mass loading of the active materials was 1.0 ± 0.1 mg cm–2."
+     "quote": "The mass loading of the active materials was 1.0 ± 0.1 mg cm–2.",
+     "value_text": "1.0 ± 0.1 mg cm–2"
     }
    ],
    "missing_fields": [
@@ -992,7 +1043,8 @@
      "not_stated": [
       "purity"
      ],
-     "quote": "To ensure proper wettability, the separators were soaked in the electrolytes for 1–2 weeks, and an excess amount of electrolyte (about 100 μL) was added during the cell assembling."
+     "quote": "To ensure proper wettability, the separators were soaked in the electrolytes for 1–2 weeks, and an excess amount of electrolyte (about 100 μL) was added during the cell assembling.",
+     "amount_text": "about 100 μL"
     }
    ],
    "steps": [
@@ -1115,7 +1167,8 @@
       "purity",
       "supplier"
      ],
-     "quote": "To ensure proper wettability, the separators were soaked in the electrolytes for 1–2 weeks, and an excess amount of electrolyte (about 100 μL) was added during the cell assembling."
+     "quote": "To ensure proper wettability, the separators were soaked in the electrolytes for 1–2 weeks, and an excess amount of electrolyte (about 100 μL) was added during the cell assembling.",
+     "amount_text": "about 100 μL"
     }
    ],
    "succeeded": true,
@@ -1221,7 +1274,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Plus l'additif apporte à la fois des carboxyles et de l'ammonium, plus les particules primaires sont fines, plus la surface BET augmente et plus la cristallinité (fwhm de (311)), le nombre d'antisites et la tenue en cyclage s'améliorent : bare-LCP < CA-LCP < DHC-LCP pour toutes les grandeurs mesurées.",
+   "text": "Plus l'additif apporte à la fois des carboxyles et de l'ammonium, plus les particules primaires sont fines et plus la surface BET augmente (8.56, 14.17 puis 18.07 m2 g–1) ; la capacité initiale (103, 123, 132 mA h g–1) et la rétention après 50 cycles (31.7, 55.6, 63.3 %) suivent le même ordre : bare-LCP < CA-LCP < DHC-LCP. La fwhm de (311) croît aussi dans cet ordre (0.154, 0.185, 0.190), ce que les auteurs lisent comme un gain de cristallinité (voir la note de limite). Les antisites (Rietveld) ne sont comparés qu'entre bare-LCP et DHC-LCP (environ deux fois moins pour DHC-LCP), et la résistance Rs augmente de 6.0 à 8.6 Ω entre ces deux échantillons, à contre-courant de la tendance (RSEI et RCT diminuent).",
    "quote": "Notably, the DHC-LCP sample demonstrated the highest level of crystallinity among the tested samples."
   },
   {
@@ -1233,7 +1286,7 @@
   {
    "type": "conclusion_auteurs",
    "route": "DHC-LCP",
-   "text": "Les auteurs retiennent le DHC à 0.008 M comme additif qui donne les meilleures performances : structure olivine, nanostructure à grande surface spécifique, moins de défauts antisites, capacité initiale de 132 mA h g–1 (141 avec électrolyte fluoré).",
+   "text": "Les auteurs retiennent le DHC (0.008 M, la seule concentration testée) comme l'additif qui donne les meilleures performances parmi les trois échantillons comparés (sans additif, CA, DHC) : structure olivine, nanostructure à grande surface spécifique, moins de défauts antisites, capacité initiale de 132 mA h g–1 (141 avec électrolyte fluoré). Aucune optimisation de la concentration n'est présentée.",
    "quote": "Nanostructured LiCoPO4 (LCP) microspheres were successfully synthesized via one-step spray pyrolysis with the addition of diammonium hydrogen citrate (DHC) additive."
   },
   {
@@ -1263,7 +1316,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "bare-LCP",
-   "text": "Hypothèse de chimiste : dans chaque gouttelette, l'eau s'évapore, les nitrates et l'acide phosphorique se concentrent, puis les nitrates se décomposent (dégagement de NOx et d'oxygène) pendant que Li+, Co2+ et PO43– forment LiCoPO4 par réaction à l'état solide à 600 °C. Les nitrates agissent probablement comme oxydant doux, mais l'absence de Co3+ en XPS indique que Co(II) est conservé, sans doute grâce à la brève durée de séjour. Avec le DHC, la combustion locale du citrate et la libération de gaz (NH3, CO2) créent probablement une atmosphère localement réductrice et de la porosité, ce qui expliquerait la baisse de la taille de grains et la surface plus grande. Une stœchiométrie Li:Co:P de 1:1:1 est attendue.",
+   "text": "Hypothèse de chimiste : dans chaque gouttelette, l'évaporation de l'eau concentre Li+, Co2+, NO3– et H3PO4 ; l'acide phosphorique, non volatil, déplace probablement l'acide nitrique (HNO3 et NOx s'échappent), ce qui laisse un résidu de phosphates acides condensés plutôt qu'une précipitation de phosphates métalliques neutres. Ce résidu se condenserait en LiCoPO4 olivine entre 500 et 600 °C en quelques secondes. Co2+ serait conservé parce qu'il est engagé dans le phosphate avant que le nitrate de cobalt n'ait pu former Co3O4, ce qui s'accorde avec l'absence de Co3+ en XPS. Une ségrégation locale du lithium pourrait expliquer les traces de Li3PO4. Stœchiométrie Li:Co:P de 1:1:1 attendue.",
    "quote": null
   },
   {
@@ -1283,6 +1336,30 @@
    "route": "Cell_conventional",
    "text": "Le LiPF6 s'hydrolyse en libérant de l'acide fluorhydrique (HF) toxique et corrosif ; les solvants carbonates (EC, DMC, FEC) sont inflammables ; le lithium métallique réagit vivement avec l'eau. Le NMP, utilisé pour l'électrode, est reprotoxique : l'utiliser sous hotte avec des gants adaptés.",
    "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "DHC-LCP",
+   "quote": null,
+   "text": "Hypothèse de chimiste : le citrate complexe Co2+ et s'adsorbe sur les germes de phosphate pendant le séchage ; sa combustion entre 200 et 550 °C dégage CO2 et H2O, ce qui écarte les germes et limite leur coalescence. Avec le DHC, l'ammonium forme aussi du nitrate d'ammonium avec les nitrates de la gouttelette qui sèche : l'« évolution de l'ammonium » invoquée par les auteurs pourrait être une décomposition de NH4NO3 (N2O, H2O) plutôt qu'un simple dégagement de NH3. Ces gaz libérés dans la particule en formation créeraient les rainures, les pores et les particules primaires plus fines. Le rôle de l'ammonium seul n'est pas prouvé : il faudrait un témoin NH4NO3 ou NH3 à 0.016 M sans citrate."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "bare-LCP",
+   "quote": null,
+   "text": "La fwhm de (311) augmente de 0.154 (bare-LCP) à 0.185 (CA-LCP) puis 0.190 (DHC-LCP), alors que les auteurs y voient une meilleure cristallinité. Une raie plus large signifie plutôt des domaines cohérents plus petits : un calcul de Scherrer fait par le critique (K = 0,9, sans correction instrumentale) donne environ 54 nm pour bare-LCP contre 44 nm pour DHC-LCP. De plus, la fwhm est mesurée et non « calculée par la formule de Scherrer » comme l'écrit la partie expérimentale. La « meilleure cristallinité » de DHC-LCP, citée en Conclusion parmi les causes de la performance, n'est pas soutenue par ces données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DHC-LCP",
+   "quote": null,
+   "text": "DHC-LCP a la fwhm (311) la plus grande (0.190) et les auteurs y lisent « the highest level of crystallinity » : c'est le contraire de ce que donne la formule de Scherrer (domaines les plus petits, environ 44 nm), ce qui s'accorde avec les particules primaires les plus fines et la surface BET la plus grande. Le carbone résiduel n'est pas dosé (1,2 C par Co d'après le calcul du critique) : l'ATG du DHC seul ne vaut pas pour une gouttelette qui séjourne quelques secondes à 600 °C, donc l'absence de carbone n'est pas démontrée. Le témoin CA/DHC isole l'ammonium à citrate constant mais pas l'effet du pH ni de NH4NO3."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "bare-LCP",
+   "quote": null,
+   "text": "La « total concentration of 0.12 M » est ambiguë. Hypothèse (non écrite dans l'article, donc pas reprise dans les paramètres) : la référence 24 du même groupe (Li et Taniguchi, Adv. Powder Technol. 2019, 10.1016/j.apt.2019.04.016) fixe la concentration molaire totale de Li+, Co2+ et PO43– à 0,3 mol L–1, ce qui ferait ici environ 0,04 M de chaque ion. Coquilles de l'article repérées par le critique : 37.1 % (Résumé) contre 31.7 % (Résultats) pour la rétention de bare-LCP ; fiche ICSD #84722 (Table 1) contre #87422 (annexe) ; « 2.5 mm » d'osmium pour 2.5 nm probablement. Les rapports des composantes Co 2p3/2 de la Table S1 sont identiques pour les trois échantillons, signe d'un ajustement probablement contraint."
   }
  ],
  "method_sources": [
@@ -1302,7 +1379,7 @@
  "doubts": [
   {
    "where": "Résumé contre texte, rétention de bare-LCP",
-   "issue": "Le résumé écrit « 37.1% of bare-LCP » tandis que la section Résultats écrit 31.7 % (et 63.3 % pour DHC-LCP). Valeur retenue : 31.7 % (Résultats, le plus détaillé), cohérente avec la Fig. 4d (≈ 33 mA h g–1 au cycle 50 sur 103 initiaux). Le résumé est probablement une inversion de chiffres."
+   "issue": "Le résumé écrit « 37.1% of bare-LCP » tandis que la section Résultats écrit 31.7 % (et 63.3 % pour DHC-LCP). Valeur retenue : 31.7 % (Résultats, le plus détaillé), cohérente avec la Fig. 4c (≈ 33 mA h g–1 au cycle 50 sur 103 initiaux). Le résumé est probablement une inversion de chiffres."
   },
   {
    "where": "bare-LCP, réactifs et étape 1",
@@ -1330,7 +1407,15 @@
   },
   {
    "where": "Fournisseur de CA et de DHC",
-   "issue": "« All chemicals mentioned above were purchased from Wako Pure Chemical Industries Ltd. » suit la phrase qui nomme les précurseurs, l'eau distillée et les additifs DHC et CA ; retenu pour les précurseurs et les additifs, pas pour l'eau distillée."
+   "issue": "« All chemicals mentioned above were purchased from Wako Pure Chemical Industries Ltd. » suit la phrase qui nomme les précurseurs, l'eau distillée et les additifs DHC et CA ; lecture littérale retenue pour tous, eau distillée comprise (fournisseur Wako renseigné pour l'eau). Il est plausible que l'eau soit produite sur place, mais l'article ne le dit pas."
+  },
+  {
+   "where": "XPS Co 2p3/2, positions des pics",
+   "issue": "Le texte donne 781.18, 782.49 et 786.22 eV pour « all three samples » avec un renvoi à la Table S1 ; la Table S1 donne des positions par échantillon (bare 781.2/782.5/786.2, CA 781.1/782.4/786.1, DHC 781.1/782.4/786.2). Les valeurs de la Table S1 sont attribuées à chaque voie ; les valeurs à deux décimales du texte sont celles de l'ensemble."
+  },
+  {
+   "where": "DHC-LCP, TG-DTA (Fig. S3)",
+   "issue": "La TG-DTA porte sur la poudre de DHC seule (additif), pas sur l'échantillon DHC-LCP ; elle est rangée dans la voie DHC-LCP faute de voie pour le réactif, et son intitulé le dit."
   }
  ]
 }

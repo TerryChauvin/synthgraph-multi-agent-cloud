@@ -1,0 +1,104 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11425712</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11425712 — Diammonium Hydrogen Citrate-Assisted Spray Pyrolysis Synthesis of Nanostructured LiCoPO4 Microspheres as High-Voltage Cathode Material for Lithium-Ion Batteries.</h1>
+<h2>Voie : bare-LCP</h2>
+<pre class="mermaid">flowchart LR
+  R13576([&quot;lithium nitrate&lt;br/&gt;quantité stœchiométrique ; co…&quot;]):::reactif
+  R13576 --&gt;|&quot;precursor&quot;| S16247
+  R13577([&quot;cobalt(II) nitrate hexahydrate&lt;br/&gt;quantité stœchiométrique ; co…&quot;]):::reactif
+  R13577 --&gt;|&quot;precursor&quot;| S16247
+  R13578([&quot;phosphoric acid&lt;br/&gt;quantité stœchiométrique ; co…&quot;]):::reactif
+  R13578 --&gt;|&quot;precursor&quot;| S16247
+  R13579([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13579 --&gt;|&quot;solvent&quot;| S16247
+  R13580([&quot;air (carrier gas)&lt;br/&gt;air flow rate of 2 L min–1&quot;]):::reactif
+  R13580 --&gt;|&quot;gas&quot;| S16247
+  S16247[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.12 M&quot;]:::etape
+  S16247 --&gt; S16248
+  S16248[&quot;&lt;b&gt;2. nebulize&lt;/b&gt;&lt;br/&gt;gas_flow : 2 L min–1&quot;]:::etape
+  S16248 --&gt; S16249
+  S16249[&quot;&lt;b&gt;3. pyrolyze&lt;/b&gt;&lt;br/&gt;temperature : 600 °C&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S16249 --&gt; S16250
+  S16250[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 110 °C&lt;br/&gt;duration : 6 h&lt;br/&gt;atmosphere : vacuum oven&quot;]:::etape
+  S16250 --&gt; M
+  M{{&quot;LiCoPO4 nanostructured microspheres without addit…&lt;br/&gt;LiCoPO4&quot;}}:::materiau
+  O64238[&quot;phase : orthorhombic olivine structur…&quot;]:::resultat
+  M -.-&gt; O64238
+  O64239[&quot;impurity_phase_XRD : very weak Li3PO4 peaks around…&quot;]:::resultat
+  M -.-&gt; O64239
+  O64240[&quot;surface_Co_oxidation_state : +2 (Co2+), no Co3+ peaks&quot;]:::resultat
+  M -.-&gt; O64240
+  O64241[&quot;morphology : similar shapes and secondary …&quot;]:::resultat
+  M -.-&gt; O64241
+  O64242[&quot;lattice_parameter_a : 10.207 Å&quot;]:::resultat
+  M -.-&gt; O64242
+  O64243[&quot;lattice_parameter_b : 5.926 Å&quot;]:::resultat
+  M -.-&gt; O64243
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10668{{&quot;bare-LCP&quot;}}:::materiau
+  B10669[&quot;CA-LCP&quot;]:::etape
+  B10668 --&gt;|&quot;additive = CA&lt;br/&gt;additive_concentration = 0.008 M&quot;| B10669
+  B10670[&quot;DHC-LCP&quot;]:::etape
+  B10668 --&gt;|&quot;additive = DHC&lt;br/&gt;additive_concentration = 0.008 M&quot;| B10670
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_LCP</h2>
+<pre class="mermaid">flowchart LR
+  R13583([&quot;LCP sample (bare-LCP, CA-LCP or DHC-LCP)&lt;br/&gt;70 wt %&quot;]):::reactif
+  R13583 --&gt;|&quot;active_material&quot;| S16251
+  R13584([&quot;poly(vinylidene fluoride) (PVdF)&lt;br/&gt;10 wt %&quot;]):::reactif
+  R13584 --&gt;|&quot;binder&quot;| S16251
+  R13585([&quot;acetylene black (AB)&lt;br/&gt;20 wt %&quot;]):::reactif
+  R13585 --&gt;|&quot;conductive_additive&quot;| S16251
+  R13586([&quot;1-methyl-2-pyrrolidinone (NMP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13586 --&gt;|&quot;solvent&quot;| S16251
+  R13587([&quot;aluminum foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13587 --&gt;|&quot;substrate&quot;| S16251
+  S16251[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S16251 --&gt; S16252
+  S16252[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S16252 --&gt; S16253
+  S16253[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 110 °C&lt;br/&gt;duration : 4 h&lt;br/&gt;atmosphere : vacuum oven&quot;]:::etape
+  S16253 --&gt; S16254
+  S16254[&quot;&lt;b&gt;4. punch&lt;/b&gt;&lt;br/&gt;electrode_area : 1 cm2&quot;]:::etape
+  S16254 --&gt; M
+  M{{&quot;LCP cathode (LCP : PVdF : acetylene black 70:10:2…&lt;br/&gt;&quot;}}:::materiau
+  O64303[&quot;active_material_loading : 1 mg cm–2&quot;]:::resultat
+  M -.-&gt; O64303
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Cell_conventional</h2>
+<pre class="mermaid">flowchart LR
+  R13588([&quot;LCP cathode (route Electrode_LCP)&lt;br/&gt;disque de 1 cm2&quot;]):::reactif
+  R13588 --&gt;|&quot;electrode&quot;| S16255
+  R13589([&quot;lithium metal (negative electrode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13589 --&gt;|&quot;counter_electrode&quot;| S16255
+  R13590([&quot;microporous polypropylene film&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13590 --&gt;|&quot;separator&quot;| S16255
+  R13591([&quot;1 M LiPF6 in EC:DMC (1:1 vol) (conventional …&lt;br/&gt;100 μL&quot;]):::reactif
+  R13591 --&gt;|&quot;electrolyte&quot;| S16255
+  S16255[&quot;&lt;b&gt;1. soak&lt;/b&gt;&lt;br/&gt;duration : 1–2 weeks&quot;]:::etape
+  S16255 --&gt; S16256
+  S16256[&quot;&lt;b&gt;2. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : glovebox filled with high-pur…&lt;br/&gt;volume : 100 μL&quot;]:::etape
+  S16256 --&gt; M
+  M{{&quot;CR2032 half-cell Li | conventional electrolyte | …&lt;br/&gt;&quot;}}:::materiau
+  O64304[&quot;potential_window : 3.5–5.3 V vs Li/Li+&quot;]:::resultat
+  M -.-&gt; O64304
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10672{{&quot;Cell_conventional&quot;}}:::materiau
+  B10673[&quot;Cell_fluorinated&quot;]:::etape
+  B10672 --&gt;|&quot;1 M LiPF6 in EC:DMC (1:1… = replaced by 1 M LiPF6 in…&quot;| B10673
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
