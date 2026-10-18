@@ -251,6 +251,11 @@
        "quote": "Then, 5.0 g of H-type FAU and 50 g of 0.70 M H2SO4 aq. were mixed and heated at 75 °C for 4 h under stirring.",
        "value_num": 4,
        "unit": "h"
+      },
+      {
+       "name": "agitation",
+       "quote": "Then, 5.0 g of H-type FAU and 50 g of 0.70 M H2SO4 aq. were mixed and heated at 75 °C for 4 h under stirring.",
+       "value_text": "under stirring"
       }
      ],
      "equipment": [],
@@ -345,6 +350,13 @@
      "instrument": "JSM-7400F (JEOL)",
      "conditions": null,
      "quote": "The SEM image shows that the particle size of the AcT-FAU was approximately 200–500 nm (Fig. 1b)."
+    },
+    {
+     "technique": "HEXTS / PDF",
+     "result": "pic T–O vers 1,6 Å décalé vers les courtes distances (par rapport au FAU parent) ; pic 4R vers 3,75 Å fortement élargi ; pic 6R vers 4,25 Å décalé (Fig. 4a)",
+     "instrument": "ligne BL04B2, SPring-8",
+     "conditions": "énergie 61,37 keV (λ = 0,202 Å), Qmax = 25,8 Å−1, capillaire de quartz de 3,5 mm, vide, température ambiante",
+     "quote": "it was found that the peak at approximately 3.75 Å from 4R contained in the parent FAU had broadened significantly by dealumination and the peak at approximately 4.25 Å from 6R had also shifted"
     }
    ],
    "outcomes": [
@@ -367,6 +379,16 @@
      "property": "tetrahedral_Al_27Al_NMR",
      "quote": "showed no peak due to the tetrahedral Al for AcT-FAU",
      "value_text": "no peak due to the tetrahedral Al"
+    },
+    {
+     "property": "PDF_TO_peak_1.6A",
+     "quote": "the peak derived from the T–O bond observed at approximately 1.6 Å had shifted slightly to the left towards a short distance with an increase in the Si/Al ratio by dealumination",
+     "value_text": "had shifted slightly to the left towards a short distance"
+    },
+    {
+     "property": "PDF_4R_6R_peaks",
+     "quote": "it was found that the peak at approximately 3.75 Å from 4R contained in the parent FAU had broadened significantly by dealumination and the peak at approximately 4.25 Å from 6R had also shifted",
+     "value_text": "the peak at approximately 3.75 Å from 4R contained in the parent FAU had broadened significantly by dealumination and the peak at approximately 4.25 Å from 6R had also shifted"
     }
    ],
    "missing_fields": [
@@ -411,7 +433,7 @@
      "quote": "4.4 g of DMDMPOH was mixed with 2.0 g of sodium hydroxide aqueous solution"
     },
     {
-     "name": "sodium hydroxide aqueous solution",
+     "name": "sodium hydroxide aqueous solution (pureté 97 % = NaOH acheté, non la solution)",
      "formula": "NaOH",
      "role": "base",
      "amount": 2.0,
@@ -644,11 +666,6 @@
      "property": "extra_framework_Al",
      "quote": "indicating that there are no extra-framework Al species in the resultant high-silica FAU",
      "value_text": "no extra-framework Al species"
-    },
-    {
-     "property": "DMDMP+_per_fau_supercage",
-     "quote": "FAU contains approximately 2 DMDMP+ per fau-supercage",
-     "value_text": "approximately 2 DMDMP+ per fau-supercage"
     }
    ],
    "missing_fields": [
@@ -665,7 +682,7 @@
     "formula": null,
     "family": "zeolithe",
     "phase": "AEI",
-    "morphology": "rectangular particles"
+    "morphology": null
    },
    "quote": "When the synthesis period was set for 10 h using a Teflon®-lined reactor sealed in a stainless-steel autoclave, pure AEI was obtained, which was similar to the previous FAU-to-AEI interzeolite conversion.",
    "variations": [
@@ -729,7 +746,7 @@
     "formula": null,
     "family": "zeolithe",
     "phase": "FAU",
-    "morphology": "crystals with internal voids"
+    "morphology": null
    },
    "method": "interzeolite conversion from AcT-FAU with DMDMPOH, 180 °C, stainless-steel tube reactor, Na2O/SiO2 = 0,15",
    "quote": "pure FAU was obtained after 30 min and pure AEI zeolites were obtained after 4 h when the Na2O/SiO2 was 0.15",
@@ -756,7 +773,7 @@
      "quote": "The chemical composition of starting reactants is 1.0 SiO2 : 0.013 Al2O3 : 0.15 Na2O : 0.20 DMDMPOH : 5.0 H2O."
     },
     {
-     "name": "sodium hydroxide aqueous solution",
+     "name": "sodium hydroxide aqueous solution (pureté 97 % = NaOH acheté, non la solution)",
      "formula": "NaOH",
      "role": "base",
      "amount_text": "0.15 Na2O",
@@ -965,6 +982,23 @@
      "value_num": 0,
      "unit": "wt%",
      "from_figure": "Fig. 6"
+    },
+    {
+     "property": "DMDMP+_per_fau_supercage",
+     "quote": "these results mean that FAU contains approximately 2 DMDMP+ per fau-supercage and AEI zeolite contains approximately 1 DMDMP+ per aei-cage",
+     "value_text": "approximately 2 DMDMP+ per fau-supercage"
+    },
+    {
+     "property": "organic_content",
+     "value_num": 16,
+     "unit": "wt%",
+     "value_text": "approximately 16 wt%",
+     "quote": "the amount of organic matters contained in all samples for 15 min to 4 h was approximately 16 wt%, which was almost constant"
+    },
+    {
+     "property": "PDF_2ndTO_peak_shift_series",
+     "quote": "Comparing the products obtained at different heating times (Fig. 4b), the peaks derived from the 2ndT–O have shifted to the long-distance side as the synthesis process from AcT-FAU to high-silica FAU followed by high-silica FAU to AEI proceed",
+     "value_text": "the peaks derived from the 2ndT–O have shifted to the long-distance side"
     }
    ],
    "missing_fields": [
@@ -977,11 +1011,11 @@
    "parent": "Tube_Na015_30min",
    "kind": "material",
    "material": {
-    "name": "high-silica FAU zeolite",
+    "name": "solid obtained at 0 min of heating",
     "formula": null,
     "family": "zeolithe",
-    "phase": "FAU",
-    "morphology": "crystals with internal voids"
+    "phase": null,
+    "morphology": null
    },
    "quote": "Thermogravimetry-differential thermal curves of products obtained at different synthesis times.",
    "variations": [
@@ -1021,7 +1055,7 @@
     "formula": null,
     "family": "zeolithe",
     "phase": "FAU",
-    "morphology": "crystals with internal voids"
+    "morphology": null
    },
    "quote": "the amount of organic matters contained in all samples for 15 min to 4 h was approximately 16 wt%",
    "variations": [
@@ -1062,6 +1096,13 @@
      "value_num": 26,
      "unit": "%",
      "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "organic_content",
+     "value_num": 16,
+     "unit": "wt%",
+     "value_text": "approximately 16 wt%",
+     "quote": "the amount of organic matters contained in all samples for 15 min to 4 h was approximately 16 wt%, which was almost constant"
     }
    ]
   },
@@ -1070,11 +1111,11 @@
    "parent": "Tube_Na015_30min",
    "kind": "material",
    "material": {
-    "name": "high-silica FAU zeolite",
+    "name": "FAU and AEI mixture",
     "formula": null,
     "family": "zeolithe",
-    "phase": "FAU",
-    "morphology": "crystals with internal voids"
+    "phase": "FAU + AEI",
+    "morphology": null
    },
    "quote": "rectangular particles derived from AEI zeolites started to appear after 1 h",
    "variations": [
@@ -1119,6 +1160,13 @@
      "value_num": 22,
      "unit": "%",
      "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "organic_content",
+     "value_num": 16,
+     "unit": "wt%",
+     "value_text": "approximately 16 wt%",
+     "quote": "the amount of organic matters contained in all samples for 15 min to 4 h was approximately 16 wt%, which was almost constant"
     }
    ]
   },
@@ -1127,11 +1175,11 @@
    "parent": "Tube_Na015_30min",
    "kind": "material",
    "material": {
-    "name": "high-silica FAU zeolite",
+    "name": "AEI zeolite with residual FAU",
     "formula": null,
     "family": "zeolithe",
-    "phase": "FAU",
-    "morphology": "crystals with internal voids"
+    "phase": "AEI (majoritaire) + FAU",
+    "morphology": null
    },
    "quote": "Thermogravimetry-differential thermal curves of products obtained at different synthesis times.",
    "variations": [
@@ -1173,6 +1221,13 @@
      "value_num": 18,
      "unit": "%",
      "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "organic_content",
+     "value_num": 16,
+     "unit": "wt%",
+     "value_text": "approximately 16 wt%",
+     "quote": "the amount of organic matters contained in all samples for 15 min to 4 h was approximately 16 wt%, which was almost constant"
     }
    ]
   },
@@ -1229,6 +1284,18 @@
      "quote": "Yields of FAU and AEI obtained from AcT-FAU at different synthesis times.",
      "value_text": "proche de 0 (FAU dissous)",
      "from_figure": "Fig. 6"
+    },
+    {
+     "property": "DMDMP+_per_aei_cage",
+     "quote": "these results mean that FAU contains approximately 2 DMDMP+ per fau-supercage and AEI zeolite contains approximately 1 DMDMP+ per aei-cage",
+     "value_text": "approximately 1 DMDMP+ per aei-cage"
+    },
+    {
+     "property": "organic_content",
+     "value_num": 16,
+     "unit": "wt%",
+     "value_text": "approximately 16 wt%",
+     "quote": "the amount of organic matters contained in all samples for 15 min to 4 h was approximately 16 wt%, which was almost constant"
     }
    ]
   },
@@ -1241,7 +1308,7 @@
     "formula": null,
     "family": "zeolithe",
     "phase": "FAU",
-    "morphology": "crystals with internal voids"
+    "morphology": null
    },
    "quote": "in the condition that Na2O/SiO2 was 0.10, the crystallization of FAU proceeded moderately and completed after 2 h, and then FAU remained the same for 4 h (Fig. S4†)",
    "variations": [
@@ -1271,6 +1338,18 @@
      "property": "morphology_SEM",
      "quote": "In contrast, in the condition that Na2O/SiO2 was 0.10, there is no significant difference in the morphology of the samples over time, only FAU crystals were confirmed.",
      "value_text": "only FAU crystals, no significant difference in morphology over time"
+    },
+    {
+     "property": "organic_content",
+     "value_num": 16,
+     "unit": "wt%",
+     "value_text": "approximately 16 wt%",
+     "quote": "the amount of organic matters contained in all samples for 15 min to 4 h was approximately 16 wt%, which was almost constant. This tendency was also observed for the Na2O/SiO2 of 0.10 (Table S3†)."
+    },
+    {
+     "property": "amorphous_matter_SEM",
+     "quote": "However, only a few amorphous matters were observed as shown in the SEM images (Fig. S6†).",
+     "value_text": "only a few amorphous matters were observed"
     }
    ]
   },
@@ -1283,7 +1362,7 @@
     "formula": null,
     "family": "zeolithe",
     "phase": "FAU",
-    "morphology": "crystals with internal voids"
+    "morphology": null
    },
    "quote": "in the condition that Na2O/SiO2 was 0.10, the crystallization of FAU proceeded moderately and completed after 2 h, and then FAU remained the same for 4 h (Fig. S4†)",
    "variations": [
@@ -1308,6 +1387,13 @@
      "property": "phase",
      "quote": "in the condition that Na2O/SiO2 was 0.10, the crystallization of FAU proceeded moderately and completed after 2 h, and then FAU remained the same for 4 h (Fig. S4†)",
      "value_text": "FAU remained the same for 4 h"
+    },
+    {
+     "property": "organic_content",
+     "value_num": 16,
+     "unit": "wt%",
+     "value_text": "approximately 16 wt%",
+     "quote": "the amount of organic matters contained in all samples for 15 min to 4 h was approximately 16 wt%, which was almost constant. This tendency was also observed for the Na2O/SiO2 of 0.10 (Table S3†)."
     }
    ]
   },
@@ -1392,7 +1478,7 @@
      "quote": "The reactant composition was 1.0 SiO2 : 0.013 Al2O3 : x Na2O : 0.0 DMDMPOH : 5.0 H2O (x = 0.15, 0.25)."
     },
     {
-     "name": "AcT-FAU",
+     "name": "AcT-FAU (source de Si et d'Al non nommée dans l'article, déduite de la composition 0.013 Al2O3)",
      "formula": null,
      "role": "intermediate",
      "amount_text": "1.0 SiO2 : 0.013 Al2O3",
@@ -1523,7 +1609,7 @@
      "quote": "The reactant composition was 1.0 SiO2 : 0.013 Al2O3 : x Na2O : 0.0 DMDMPOH : 5.0 H2O (x = 0.15, 0.25)."
     },
     {
-     "name": "AcT-FAU",
+     "name": "AcT-FAU (source de Si et d'Al non nommée dans l'article, déduite de la composition 0.013 Al2O3)",
      "formula": null,
      "role": "intermediate",
      "amount_text": "1.0 SiO2 : 0.013 Al2O3",
@@ -1635,7 +1721,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "La teneur en matière organique du solide reste à peu près constante (environ 16 wt %) de 15 min à 4 h, alors que le rapport Si/Al diminue avec la cristallisation du FAU et que le rapport Na/Al augmente ; le pic de combustion du DMDMP+ se décale vers les hautes températures lors du passage du FAU à l'AEI. Ces résultats de groupe (Tables S2 et S3) ne sont pas recopiés voie par voie.",
+   "text": "La teneur en matière organique du solide reste à peu près constante (environ 16 wt %) de 15 min à 4 h, alors que le rapport Si/Al diminue avec la cristallisation du FAU et que le rapport Na/Al augmente ; le pic de combustion du DMDMP+ se décale vers les hautes températures lors du passage du FAU à l'AEI. La valeur approximative de 16 wt % est reportée sur chaque voie de 15 min à 4 h (0,15) et sur celles à 0,10 ; les valeurs exactes par échantillon sont dans les Tables S2 et S3, absentes du dépôt. La perte de masse totale de la TG (18 à 26 %) inclut l'eau.",
    "quote": "the amount of organic matters contained in all samples for 15 min to 4 h was approximately 16 wt%"
   },
   {
@@ -1658,7 +1744,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "HSFAU_2h",
-   "text": "On attend que le NaOH dissolve partiellement l'aluminosilicate quasi amorphe, que les espèces dissoutes et Na+ nucléent un FAU, et que DMDMP+ occupe les supercages ; le FAU étant moins stable que l'AEI en présence de DMDMP+, il se redissout ensuite pour alimenter la croissance de l'AEI (conversion interzéolithique)."
+   "text": "Hypothèse : dans le milieu très alcalin, l'aluminosilicate quasi amorphe se dissout surtout par son silicium (au plus 22 % du Si se retrouve dans le FAU de Si/Al = 6,1, d'après le bilan de matière) ; l'aluminium, peu abondant, est capté avec Na+ et DMDMP+ par des fragments ordonnés (anneaux à 4 membres) et nuclée un FAU riche en silice, phase cinétique stabilisée par DMDMP+ et Na+. La lixiviation du silicium à l'intérieur des particules laisserait les vides observés. Le FAU, moins stable que le couple AEI–DMDMP+, se redissoudrait ensuite au profit de l'AEI (conversion interzéolithique). Cette lecture est une interprétation, non démontrée par les auteurs."
   },
   {
    "type": "securite_analyse",
@@ -1675,16 +1761,44 @@
    "route": "Tube_Na015_30min",
    "text": "Le gel du réacteur tubulaire contient 0,013 Al2O3 pour 1,0 SiO2 alors que celui de l'autoclave en contient 0,018 : l'article ne dit pas si la masse d'AcT-FAU change (les masses de la section Méthodes sont données sans composition associée).",
    "quote": "The chemical composition of the starting reactant was 1.0 SiO2 : 0.013 Al2O3 : x Na2O : 0.20 DMDMPOH : 5.0 H2O (x = 0.050, 0.10, 0.15) and the heating time was 0–4 h."
-  }
- ],
- "method_sources": [
+  },
   {
+   "type": "limite_reproductibilite",
    "route": "Tube_Na015_30min",
-   "ref_id": "cit26",
-   "role": "autre",
-   "quote": "Furthermore, the obtained data were handled according to well-established analysis procedures, such as absorption, background, and Compton scattering corrections, and subsequently normalized to give a Faber–Ziman total structure factor S(Q)."
+   "text": "Le gel des séries en réacteur tubulaire (0,013 Al2O3, soit Si/Al = 38,5) ne peut pas être préparé avec l'AcT-FAU décrit (Si/Al = 27,7) sans ajout de silice que les Méthodes ne mentionnent pas : soit un autre lot d'AcT-FAU plus désaluminé a servi, soit de la silice a été ajoutée, soit 0,013 est une erreur. Toute la série cinétique (rendements, teneur en organique, PDF, ATG) repose donc sur une matière première non décrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HSFAU_2h",
+   "text": "Les masses des Méthodes (4,4 g de DMDMPOH, 2,0 g de solution de NaOH, 3,0 g d'AcT-FAU) redonnent le gel 0,018 Al2O3 avec H2O/SiO2 ≈ 4,94 (5,0 annoncé) seulement si le DMDMPOH est une solution à environ 35 % et la soude à environ 29 % ; l'article ne donne aucune de ces concentrations (ni même que 4,4 g de DMDMPOH soit une solution). Peser 4,4 g de produit pur donnerait un gel très différent."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Tube_Na015_30min",
+   "text": "Autoclave et réacteur tubulaire diffèrent à la fois par le récipient (vitesse de montée en température), l'échelle (un sixième) et la composition du gel (Si/Al de 27,7 contre 38,5) : attribuer l'accélération de la cristallisation au seul transfert de chaleur n'est pas démontré. Le rendement n'est pas défini (rapporté au gel, à l'AcT-FAU ou aux oxydes) et la Table S2 est absente."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NoOSDA_Na015_1h",
+   "text": "Ce témoin change deux variables à la fois : retirer le DMDMPOH fait passer OH/Si de 0,50 à 0,30. L'absence de FAU à x = 0,15 ne prouve donc pas à elle seule le rôle structurant de DMDMP+ ; seul l'essai à x = 0,25, où l'alcalinité est restituée, est probant. La phrase sur la zéolithe MOR obtenue « with the same amount of NaOH instead of DMDMPOH » ne dit ni la durée ni la composition du gel : le produit de ces essais n'est pas établi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HSFAU_2h",
+   "text": "Le volume microporeux de 0,23 cm3/g (502 m2/g) du FAU calciné est environ 25 % sous les ≈ 0,30 cm3/g d'un FAU bien cristallisé, écart que les auteurs qualifient de « slightly smaller » : il peut traduire une fraction non cristalline ou des micropores obstrués. Le Si/Al de 6,1 est un rapport global du solide (ICP), non confirmé par la RMN du 29Si dont le pic Q4(1Al) est confondu avec Q3."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Tube_Na015_30min",
+   "text": "≈ 2 DMDMP+ par supercage de FAU et ≈ 1 par cage aei correspondent au même rapport par atome de charpente (≈ 0,08 pour 16 wt % d'organique) : le FAU n'occlut pas plus de cations par atome T, il a des cages plus grandes. L'explication des auteurs par des défauts silanol n'est donc pas nécessaire (calcul du critique scientifique). Le chiffre vient des courbes TG de la série tubulaire (Fig. 5a, Table S2), pas de l'échantillon d'autoclave."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AcT-FAU",
+   "text": "La désalumination d'environ 90 % de l'aluminium consomme 70 à 88 % des protons apportés par 50 g d'H2SO4 0,70 M (selon que le FAU parent est sec ou contient 20 % d'eau) : l'acide est juste suffisant, et le Si/Al final de 27,7 dépend de l'humidité du FAU parent, que l'article ne donne pas."
   }
  ],
+ "method_sources": [],
  "doubts": [
   {
    "where": "Réactif DMDMPOH (Introduction contre Méthodes)",
@@ -1708,15 +1822,15 @@
   },
   {
    "where": "Tube_Na015_0min et Tube_Na015_2h",
-   "issue": "Ces deux échantillons ne sont identifiés que par la légende de la Fig. 5 (« 0 min », « 2 h ») ; le texte ne décrit pas la série à 0,15 à 2 h. Les durées sont prises de la figure."
+   "issue": "Ces deux échantillons ne sont identifiés que par la légende de la Fig. 5 (« 0 min », « 2 h ») ; le texte ne décrit pas la série à 0,15 à 2 h. Les durées sont prises de la figure. Phase de Tube_Na015_2h lue sur la Fig. 6 (AEI 17,3 wt % contre FAU 1,4 wt %) ; 0 min : la Fig. 6 ne comporte pas de point à 0 min et le texte parle seulement d'un rendement de FAU très faible juste après le chauffage, donc la phase de Tube_Na015_0min est laissée non indiquée. Tube_Na015_1h : FAU 4,2 + AEI 0,8 wt % (Fig. 6), noté mélange."
   },
   {
    "where": "NoOSDA_*, phrase sur la zéolithe MOR",
-   "issue": "« Additionally, MOR zeolite was synthesized with the same amount of NaOH instead of DMDMPOH » : on ne sait pas si le produit sans DMDMPOH est du MOR (ce que suggère la phrase) ou si c'est une synthèse distincte. Aucune voie MOR créée ; seul « no peak derived from the FAU structure » est extrait."
+   "issue": "« Additionally, MOR zeolite was synthesized with the same amount of NaOH instead of DMDMPOH » : on ne sait pas si le produit sans DMDMPOH est du MOR (ce que suggère la phrase) ou si c'est une synthèse distincte. Aucune voie MOR créée ; seul « no peak derived from the FAU structure » est extrait. Les critiques jugent la lecture la plus naturelle que ces essais ont donné de la MOR, mais ni la durée ni la composition ne sont données : aucune phase MOR n'est enregistrée, une annotation signale l'ambiguïté."
   },
   {
    "where": "NoOSDA_*, matière première",
-   "issue": "L'article ne dit pas que la matière première est l'AcT-FAU pour ces synthèses, mais la composition (0,013 Al2O3) est celle de la série précédente ; AcT-FAU est donc ajouté comme réactif par lecture contextuelle. Le traitement après chauffage (filtration, lavage, séchage) n'est pas décrit."
+   "issue": "L'article ne dit pas que la matière première est l'AcT-FAU pour ces synthèses, mais la composition (0,013 Al2O3) est celle de la série précédente ; AcT-FAU est donc ajouté comme réactif par lecture contextuelle. Le traitement après chauffage (filtration, lavage, séchage) n'est pas décrit. Le nom du réactif porte la mention « source non nommée, déduite de la composition »."
   },
   {
    "where": "Tube_Na010_2h, Tube_Na010_4h, Tube_Na005",
@@ -1725,6 +1839,14 @@
   {
    "where": "BET et RMN (HSFAU_2h)",
    "issue": "La surface BET est mesurée sur le FAU calciné à 550 °C pendant 5 h au four à moufle, alors que les spectres RMN et DRX sont ceux du produit tel que synthétisé ; la calcination n'est donc pas une étape de la voie mais une condition de mesure, consignée dans « conditions » de la caractérisation."
+  },
+  {
+   "where": "HSFAU_2h / Tube_Na015_30min / Tube_Na015_4h, DMDMP+ par cage",
+   "issue": "« approximately 2 DMDMP+ per fau-supercage » et « approximately 1 DMDMP+ per aei-cage » sont déduits des courbes TG de la série en réacteur tubulaire (Fig. 5a, Table S2, gel à 0,013 Al2O3), non de l'échantillon d'autoclave ; rattachés à Tube_Na015_30min (FAU) et Tube_Na015_4h (AEI). Les vides internes (Fig. 3) ne sont montrés que pour le FAU de l'autoclave : la morphologie n'est pas reportée sur les voies du réacteur tubulaire."
+  },
+  {
+   "where": "Méthodes contre Résultats, durée 0 min",
+   "issue": "Les Méthodes disent « 15 min to 10 h » alors que les Résultats et la Fig. 5 contiennent un échantillon à 0 min et des durées de 0 à 4 h."
   }
  ]
 }
