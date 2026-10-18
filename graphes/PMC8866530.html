@@ -1,0 +1,120 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8866530</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8866530 — Electrochemical evaluation of porous CaFe2O4 anode material prepared via solution combustion synthesis at increasing fuel-to-oxidizer ratios and calcination temperatures.</h1>
+<h2>Voie : pCFO_phi1.325_900C</h2>
+<pre class="mermaid">flowchart LR
+  R13275([&quot;calcium nitrate tetrahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13275 --&gt;|&quot;precursor&quot;| S15903
+  R13276([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13276 --&gt;|&quot;precursor&quot;| S15903
+  R13277([&quot;glycine&lt;br/&gt;ϕ = 1.325 (fuel-rich conditio…&quot;]):::reactif
+  R13277 --&gt;|&quot;fuel&quot;| S15903
+  R13278([&quot;deionized water&lt;br/&gt;12 mL&quot;]):::reactif
+  R13278 --&gt;|&quot;solvent&quot;| S15903
+  S15903[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;molar_ratio : CaNO32·4H2O+2FeNO33·9H2O+40/9…&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S15903 --&gt; S15904
+  S15904[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 5 min&lt;br/&gt;temperature : room temperature&lt;br/&gt;stirring_speed : 200 rpm&quot;]:::etape
+  S15904 --&gt; S15905
+  S15905[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 250–300 °C&lt;br/&gt;duration_to_boiling : 10–15 min&lt;br/&gt;duration_to_batter : 10–15 min&quot;]:::etape
+  S15905 --&gt; S15906
+  S15906[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;duration : rapid (‹ 3 s)&lt;br/&gt;duration_to_combustion : 3–5 more minutes&quot;]:::etape
+  S15906 --&gt; S15907
+  S15907[&quot;&lt;b&gt;5. grind&lt;/b&gt;&quot;]:::etape
+  S15907 --&gt; S15908
+  S15908[&quot;&lt;b&gt;6. calcine&lt;/b&gt;&lt;br/&gt;temperature : 900 °C&lt;br/&gt;duration : 3 h&lt;br/&gt;atmosphere : air&lt;br/&gt;heating_rate : 10 °C/min&quot;]:::etape
+  S15908 --&gt; M
+  M{{&quot;porous calcium ferrite (pCFO)&lt;br/&gt;CaFe2O4&quot;}}:::materiau
+  O63279[&quot;phase : orthorhombic CaFe2O4 (PDF car…&quot;]:::resultat
+  M -.-&gt; O63279
+  O63280[&quot;crystallite_size_Scherrer : 102.6 nm&quot;]:::resultat
+  M -.-&gt; O63280
+  O63281[&quot;particle_length : 200 nm to 2 μm&quot;]:::resultat
+  M -.-&gt; O63281
+  O63282[&quot;XPS_Fe_to_Ca_atomic_ratio : 2.2&quot;]:::resultat
+  M -.-&gt; O63282
+  O63283[&quot;XPS_O_to_Ca_atomic_ratio : 5&quot;]:::resultat
+  M -.-&gt; O63283
+  O63284[&quot;XPS_C_to_Ca_atomic_ratio : 1.5&quot;]:::resultat
+  M -.-&gt; O63284
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10511{{&quot;pCFO_phi1.325_900C&quot;}}:::materiau
+  B10512[&quot;pCFO_phi0.675_900C&quot;]:::etape
+  B10511 --&gt;|&quot;glycine = 0.675 (fuel-lean conditi…&lt;br/&gt;temperature = 300 °C&lt;br/&gt;fuel_to_oxidizer_mole_ra… = 1&quot;| B10512
+  B10513[&quot;pCFO_phi1_900C&quot;]:::etape
+  B10511 --&gt;|&quot;glycine = 1 (stoichiometrically ba…&lt;br/&gt;fuel_to_oxidizer_mole_ra… = 1.48&quot;| B10513
+  B10514[&quot;pCFO_phi1.325_noncalcined&quot;]:::etape
+  B10511 --&gt;|&quot;calcination = no calcination&quot;| B10514
+  B10515[&quot;pCFO_phi1.325_550C&quot;]:::etape
+  B10511 --&gt;|&quot;temperature = 550 °C&quot;| B10515
+  B10516[&quot;pCFO_phi1.325_700C&quot;]:::etape
+  B10511 --&gt;|&quot;temperature = 700 °C&quot;| B10516
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : pCFO_electrode</h2>
+<pre class="mermaid">flowchart LR
+  R13279([&quot;pCFO (active material, any of the six sample…&lt;br/&gt;7 (mass ratio 7:2:1)&quot;]):::reactif
+  R13279 --&gt;|&quot;active_material&quot;| S15914
+  R13280([&quot;carbon black (acetylene black)&lt;br/&gt;2 (mass ratio 7:2:1)&quot;]):::reactif
+  R13280 --&gt;|&quot;conductive_additive&quot;| S15914
+  R13281([&quot;carboxymethyl cellulose sodium salt (CMC, n …&lt;br/&gt;1 (mass ratio 7:2:1), as a 12…&quot;]):::reactif
+  R13281 --&gt;|&quot;binder&quot;| S15914
+  R13282([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13282 --&gt;|&quot;solvent&quot;| S15914
+  R13283([&quot;stainless steel spacer&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13283 --&gt;|&quot;substrate&quot;| S15914
+  S15914[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 12.5 mg-mL-1&lt;br/&gt;duration : overnight&quot;]:::etape
+  S15914 --&gt; S15915
+  S15915[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S15915 --&gt; S15916
+  S15916[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;addition_rate : dropwise&quot;]:::etape
+  S15916 --&gt; S15917
+  S15917[&quot;&lt;b&gt;4. grind&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S15917 --&gt; S15918
+  S15918[&quot;&lt;b&gt;5. mix&lt;/b&gt;&lt;br/&gt;duration : 1–2 min&quot;]:::etape
+  S15918 --&gt; S15919
+  S15919[&quot;&lt;b&gt;6. deposit&lt;/b&gt;&quot;]:::etape
+  S15919 --&gt; S15920
+  S15920[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S15920 --&gt; S15921
+  S15921[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 5 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S15921 --&gt; M
+  M{{&quot;pCFO : acetylene black : CMC composite electrode&lt;br/&gt;&quot;}}:::materiau
+  O63402[&quot;active_material_mass_loading : between 0.4 and 0.7 mg-cm-2&quot;]:::resultat
+  M -.-&gt; O63402
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CR2032_half_cell</h2>
+<pre class="mermaid">flowchart LR
+  R13284([&quot;pCFO electrode (route pCFO_electrode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13284 --&gt;|&quot;intermediate&quot;| S15922
+  R13285([&quot;separator&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13285 --&gt;|&quot;separator&quot;| S15922
+  R13286([&quot;1 M LiPF6 in EC/DMC 1:1 (electrolyte)&lt;br/&gt;50–80 μL&quot;]):::reactif
+  R13286 --&gt;|&quot;electrolyte&quot;| S15922
+  R13287([&quot;lithium chip&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13287 --&gt;|&quot;counter_electrode&quot;| S15922
+  R13288([&quot;stainless steel spacer&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13288 --&gt;|&quot;substrate&quot;| S15922
+  R13289([&quot;wave spring&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13289 --&gt;|&quot;substrate&quot;| S15922
+  R13290([&quot;coin cell can and cap, type 2032&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13290 --&gt;|&quot;substrate&quot;| S15922
+  S15922[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : argon-filled glovebox (‹ 0.5 …&quot;]:::etape
+  S15922 --&gt; S15923
+  S15923[&quot;&lt;b&gt;2. crimp&lt;/b&gt;&quot;]:::etape
+  S15923 --&gt; S15924
+  S15924[&quot;&lt;b&gt;3. rest&lt;/b&gt;&lt;br/&gt;duration : at least 2 h&quot;]:::etape
+  S15924 --&gt; M
+  M{{&quot;CaFe2O4 | Li half coin cell (type 2032)&lt;br/&gt;&quot;}}:::materiau
+  O63403[&quot;open_circuit_voltage_before_testing : usually 2.5—2.7 V vs. Li/Li+&quot;]:::resultat
+  M -.-&gt; O63403
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

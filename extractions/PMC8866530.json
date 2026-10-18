@@ -201,6 +201,11 @@
        "name": "molar_ratio",
        "quote": "CaNO32·4H2O+2FeNO33·9H2O+40/9ϕC2H5NO2+10ϕ-1O2→CaFe2O4",
        "value_text": "CaNO32·4H2O+2FeNO33·9H2O+40/9ϕC2H5NO2"
+      },
+      {
+       "name": "temperature",
+       "quote": "stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+       "value_text": "room temperature"
       }
      ],
      "equipment": [
@@ -211,7 +216,6 @@
       }
      ],
      "not_stated": [
-      "temperature",
       "amount"
      ]
     },
@@ -383,6 +387,20 @@
      "instrument": "Kratos Axis Ultra DLD, monochromatic Al Kα source",
      "conditions": "samples pressed into indium metal; charge neutralizer; pass energies 80 eV (survey) and 20 eV (high resolution); C 1 s at 284.6 eV",
      "quote": "The Ca 2p spectra have two primary peaks at binding energies of 345.3 eV and 348.7 eV, corresponding to Ca 2p3/2 and Ca 2p1/2, respectively, of pCFO (Fig. 4b)."
+    },
+    {
+     "technique": "XPS (Fe 2p)",
+     "result": "Fe 2p3/2 710.0 eV et Fe 2p1/2 723.8 eV, satellites 718.1 eV et 732.0 eV, caractéristiques de Fe3+",
+     "instrument": "Kratos Axis Ultra DLD, monochromatic Al Kα source",
+     "conditions": "série en ϕ, calcination à 900 °C",
+     "quote": "The Fe 2p spectra have two primary peaks at binding energies of 710.0 eV and 723.8 eV, corresponding to Fe 2p3/2 and Fe 2p1/2, respectively, and broad satellite peaks at binding energies of 718.1 eV and 732.0 eV"
+    },
+    {
+     "technique": "XPS (Ca 2p, espèce secondaire)",
+     "result": "pics secondaires Ca 2p3/2 347.0 eV et Ca 2p1/2 350.4 eV (oxyde ou hydroxyde de Ca, ou espèce CaFexCyOz non stœchiométrique selon les auteurs) ; rapport primaire/secondaire proche de 70/30 selon ϕ",
+     "instrument": "Kratos Axis Ultra DLD, monochromatic Al Kα source",
+     "conditions": "série en ϕ, calcination à 900 °C",
+     "quote": "The Ca 2p spectra also show the existence of lower intensity peaks at binding energies of 347.0 eV and 350.4 eV"
     }
    ],
    "outcomes": [
@@ -539,7 +557,7 @@
      "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94 | 621 @ 109"
     },
     {
-     "property": "capacity_about_500_cycles_at_1088_mA-g-1",
+     "property": "capacity_representative_over_about_500_cycles_at_1088_mA-g-1",
      "value_num": 487,
      "unit": "mAh/g",
      "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943 | ~487 @ 1088"
@@ -559,6 +577,42 @@
      "property": "current_densities_for_0.099_0.198_0.495_0.99_mA",
      "value_text": "109, 218, 544, 1088 mA g-1",
      "quote": "| 1.325 | 0.91 | 109 | 218 | 544 | 1088"
+    },
+    {
+     "property": "XPS_Fe2p3_2_binding_energy",
+     "value_num": 710.0,
+     "unit": "eV",
+     "quote": "The Fe 2p spectra have two primary peaks at binding energies of 710.0 eV and 723.8 eV, corresponding to Fe 2p3/2 and Fe 2p1/2, respectively, and broad satellite peaks at binding energies of 718.1 eV and 732.0 eV"
+    },
+    {
+     "property": "XPS_Fe2p1_2_binding_energy",
+     "value_num": 723.8,
+     "unit": "eV",
+     "quote": "The Fe 2p spectra have two primary peaks at binding energies of 710.0 eV and 723.8 eV, corresponding to Fe 2p3/2 and Fe 2p1/2, respectively, and broad satellite peaks at binding energies of 718.1 eV and 732.0 eV"
+    },
+    {
+     "property": "XPS_Fe2p_satellite_1_binding_energy",
+     "value_num": 718.1,
+     "unit": "eV",
+     "quote": "The Fe 2p spectra have two primary peaks at binding energies of 710.0 eV and 723.8 eV, corresponding to Fe 2p3/2 and Fe 2p1/2, respectively, and broad satellite peaks at binding energies of 718.1 eV and 732.0 eV"
+    },
+    {
+     "property": "XPS_Fe2p_satellite_2_binding_energy",
+     "value_num": 732.0,
+     "unit": "eV",
+     "quote": "The Fe 2p spectra have two primary peaks at binding energies of 710.0 eV and 723.8 eV, corresponding to Fe 2p3/2 and Fe 2p1/2, respectively, and broad satellite peaks at binding energies of 718.1 eV and 732.0 eV"
+    },
+    {
+     "property": "XPS_Ca2p3_2_secondary_binding_energy",
+     "value_num": 347.0,
+     "unit": "eV",
+     "quote": "The Ca 2p spectra also show the existence of lower intensity peaks at binding energies of 347.0 eV and 350.4 eV"
+    },
+    {
+     "property": "XPS_Ca2p1_2_secondary_binding_energy",
+     "value_num": 350.4,
+     "unit": "eV",
+     "quote": "The Ca 2p spectra also show the existence of lower intensity peaks at binding energies of 347.0 eV and 350.4 eV"
     }
    ],
    "missing_fields": [
@@ -583,6 +637,20 @@
      "parameter": "glycine",
      "value_text": "0.675 (fuel-lean condition)",
      "parent_value": "1.325 (fuel-rich condition)",
+     "quote": "In this study, different batches of pCFO were synthesized at ϕ’s of 0.675 (fuel-lean condition), 1 (stoichiometrically balanced condition), and 1.325 (fuel-rich condition), which also correspond to the fuel-to-oxidizer mole ratios, n, of 1, 1.48, and 1.96, respectively."
+    },
+    {
+     "parameter": "temperature",
+     "step_order": 3,
+     "value_num": 300,
+     "unit": "°C",
+     "parent_value": "250–300 °C",
+     "quote": "Preparation of porous CaFe2O4 (ϕ = 0.675) via Solution Combustion Synthesis: (a) timeline of synthesis by setting the hot plate surface temperature to 300 °C, (b) final product before grinding (left), after grinding (top-right), and after full calcination at 900 °C (bottom-right)."
+    },
+    {
+     "parameter": "fuel_to_oxidizer_mole_ratio_n",
+     "value_num": 1,
+     "parent_value": "1.96",
      "quote": "In this study, different batches of pCFO were synthesized at ϕ’s of 0.675 (fuel-lean condition), 1 (stoichiometrically balanced condition), and 1.325 (fuel-rich condition), which also correspond to the fuel-to-oxidizer mole ratios, n, of 1, 1.48, and 1.96, respectively."
     }
    ],
@@ -677,7 +745,7 @@
      "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74"
     },
     {
-     "property": "capacity_about_500_cycles_at_744_mA-g-1",
+     "property": "capacity_representative_over_about_500_cycles_at_744_mA-g-1",
      "value_num": 288,
      "unit": "mAh/g",
      "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744"
@@ -716,6 +784,12 @@
      "parameter": "glycine",
      "value_text": "1 (stoichiometrically balanced condition)",
      "parent_value": "1.325 (fuel-rich condition)",
+     "quote": "In this study, different batches of pCFO were synthesized at ϕ’s of 0.675 (fuel-lean condition), 1 (stoichiometrically balanced condition), and 1.325 (fuel-rich condition), which also correspond to the fuel-to-oxidizer mole ratios, n, of 1, 1.48, and 1.96, respectively."
+    },
+    {
+     "parameter": "fuel_to_oxidizer_mole_ratio_n",
+     "value_num": 1.48,
+     "parent_value": "1.96",
      "quote": "In this study, different batches of pCFO were synthesized at ϕ’s of 0.675 (fuel-lean condition), 1 (stoichiometrically balanced condition), and 1.325 (fuel-rich condition), which also correspond to the fuel-to-oxidizer mole ratios, n, of 1, 1.48, and 1.96, respectively."
     }
    ],
@@ -810,7 +884,7 @@
      "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94"
     },
     {
-     "property": "capacity_about_500_cycles_at_943_mA-g-1",
+     "property": "capacity_representative_over_about_500_cycles_at_943_mA-g-1",
      "value_num": 288,
      "unit": "mAh/g",
      "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943"
@@ -864,6 +938,11 @@
        "name": "molar_ratio",
        "quote": "CaNO32·4H2O+2FeNO33·9H2O+40/9ϕC2H5NO2+10ϕ-1O2→CaFe2O4",
        "value_text": "CaNO32·4H2O+2FeNO33·9H2O+40/9ϕC2H5NO2"
+      },
+      {
+       "name": "temperature",
+       "quote": "stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+       "value_text": "room temperature"
       }
      ],
      "equipment": [
@@ -874,7 +953,6 @@
       }
      ],
      "not_stated": [
-      "temperature",
       "amount"
      ]
     },
@@ -1005,6 +1083,13 @@
      "instrument": "Kratos Axis Ultra DLD, monochromatic Al Kα source",
      "conditions": "samples pressed into indium metal; charge neutralizer; pass energies 80 eV (survey) and 20 eV (high resolution); C 1 s at 284.6 eV",
      "quote": "a sharp N 1 s peak at a binding energy of 400.0 eV in the as-synthesized sample only, indicating the presence of N in an organic matrix that appears to entirely “burn off” by the first calcination temperature of 550 °C"
+    },
+    {
+     "technique": "XPS (Ca 2p, série en calcination)",
+     "result": "doublet secondaire Ca 2p à 346.5 eV et 350.0 eV, qui passe au doublet primaire à 345.3 eV et 348.7 eV quand la température de calcination augmente",
+     "instrument": "Kratos Axis Ultra DLD, monochromatic Al Kα source",
+     "conditions": "ϕ = 1.325, série en température de calcination",
+     "quote": "The Ca 2p spectra show the existence of secondary Ca 2p doublet peaks at binding energies of 346.5 eV and 350.0 eV that transition to primary doublet peaks at binding energies of 345.3 eV and 348.7 eV"
     }
    ],
    "outcomes": [
@@ -1088,6 +1173,11 @@
      "property": "current_densities_for_0.099_0.198_0.495_0.99_mA",
      "value_text": "94, 189, 471, 943 mA g-1",
      "quote": "| Non-calcined | 1.05 | 94 | 189 | 471 | 943"
+    },
+    {
+     "property": "surface_grain_size",
+     "value_text": "50–200 nm",
+     "quote": "Higher magnification inspections reveal smaller grains (50–200 nm) of material that dot the surface of the larger pieces"
     }
    ]
   },
@@ -1134,6 +1224,13 @@
      "instrument": "Kratos Axis Ultra DLD, monochromatic Al Kα source",
      "conditions": "samples pressed into indium metal; charge neutralizer; pass energies 80 eV (survey) and 20 eV (high resolution); C 1 s at 284.6 eV",
      "quote": "XPS survey scans of pCFO synthesized at the same fuel-to-oxidizer ratio (ϕ = 1.325) but increasing calcination temperature similarly reveal the presence of the expected Ca, Fe, O, and C elements in all samples (Fig. 5a)."
+    },
+    {
+     "technique": "XPS (Ca 2p, série en calcination)",
+     "result": "doublet secondaire Ca 2p à 346.5 eV et 350.0 eV, qui passe au doublet primaire à 345.3 eV et 348.7 eV quand la température de calcination augmente",
+     "instrument": "Kratos Axis Ultra DLD, monochromatic Al Kα source",
+     "conditions": "ϕ = 1.325, série en température de calcination",
+     "quote": "The Ca 2p spectra show the existence of secondary Ca 2p doublet peaks at binding energies of 346.5 eV and 350.0 eV that transition to primary doublet peaks at binding energies of 345.3 eV and 348.7 eV"
     }
    ],
    "outcomes": [
@@ -1229,6 +1326,11 @@
      "property": "current_densities_for_0.099_0.198_0.495_0.99_mA",
      "value_text": "129, 257, 643, 1286 mA g-1",
      "quote": "| 550 ⁰C | 0.77 | 129 | 257 | 643 | 1286"
+    },
+    {
+     "property": "surface_grain_size",
+     "value_text": "50–200 nm",
+     "quote": "Higher magnification inspections reveal smaller grains (50–200 nm) of material that dot the surface of the larger pieces"
     }
    ]
   },
@@ -1275,6 +1377,13 @@
      "instrument": "Kratos Axis Ultra DLD, monochromatic Al Kα source",
      "conditions": "samples pressed into indium metal; charge neutralizer; pass energies 80 eV (survey) and 20 eV (high resolution); C 1 s at 284.6 eV",
      "quote": "XPS survey scans of pCFO synthesized at the same fuel-to-oxidizer ratio (ϕ = 1.325) but increasing calcination temperature similarly reveal the presence of the expected Ca, Fe, O, and C elements in all samples (Fig. 5a)."
+    },
+    {
+     "technique": "XPS (Ca 2p, série en calcination)",
+     "result": "doublet secondaire Ca 2p à 346.5 eV et 350.0 eV, qui passe au doublet primaire à 345.3 eV et 348.7 eV quand la température de calcination augmente",
+     "instrument": "Kratos Axis Ultra DLD, monochromatic Al Kα source",
+     "conditions": "ϕ = 1.325, série en température de calcination",
+     "quote": "The Ca 2p spectra show the existence of secondary Ca 2p doublet peaks at binding energies of 346.5 eV and 350.0 eV that transition to primary doublet peaks at binding energies of 345.3 eV and 348.7 eV"
     }
    ],
    "outcomes": [
@@ -1382,6 +1491,11 @@
      "property": "current_densities_for_0.099_0.198_0.495_0.99_mA",
      "value_text": "129, 257, 643, 1286 mA g-1",
      "quote": "| 700 ⁰C | 0.77 | 129 | 257 | 643 | 1286"
+    },
+    {
+     "property": "surface_grain_size",
+     "value_text": "50–200 nm",
+     "quote": "Higher magnification inspections reveal smaller grains (50–200 nm) of material that dot the surface of the larger pieces"
     }
    ]
   },
@@ -1762,6 +1876,13 @@
      "instrument": "8 Channel Battery Analyzer (MTI Corp.)",
      "conditions": "0.01 to 3 V vs. Li/Li+; one-minute constant voltage (3 V) step between each charge and discharge in the rate test; no constant voltage step in the 500-cycle test; capacities and current densities per unit mass of active material",
      "quote": "All tests were between 0.01 and 3 V vs. Li/Li+ (charge up then charge down = 1 cycle) and proceeded in two sequential phases: rate performance and 500 cycle evaluation."
+    },
+    {
+     "technique": "galvanostatic charge-discharge (protocole de vitesse)",
+     "result": "20 cycles de test de vitesse puis 500 cycles supplémentaires à 0.99 mA",
+     "instrument": "8 Channel Battery Analyzer (MTI Corp.)",
+     "conditions": "4 courants (0.099, 0.198, 0.495, 0.99 mA) puis retour au premier courant, soit 4 cycles par palier et 20 cycles au total (déduit des cycles 2–4, 13–16 et 17–20 du texte ; « 4 cycles par palier » n'est pas écrit tel quel) ; le courant de 0.99 mA vaut 1088 mA-g-1 pour le seul échantillon ϕ = 1.325, 900 °C (Table S2)",
+     "quote": "(d) cycling stability at 1088 mA-g-1 up to additional 500 cycles after initial 20 cycle rate performance"
     }
    ],
    "outcomes": [
@@ -1794,7 +1915,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Série en ϕ (900 °C) : la taille de cristallite varie peu (107,9, 96,5 et 102,6 nm) et la morphologie ne change pas, mais la capacité de première décharge augmente de 718 à 861 puis 995 mAh/g ; en cyclage à fort courant, ϕ = 0,675 et 1 se superposent (≈ 288 mAh/g après ~500 cycles) alors que ϕ = 1,325 reste ≈ 1,2 fois plus haut (~487 mAh/g). Série en calcination (ϕ = 1,325) : la cristallite passe de 6,6 nm (non calciné) à 19,7, 27,8 puis 102,6 nm (900 °C). À 550 et 700 °C les capacités de la série en courant sont les plus hautes, mais elles s'effondrent à 25–35 % de la capacité initiale vers le 100e cycle ; seul l'échantillon à 900 °C reste stable (97–122 % de sa capacité initiale sur 500 cycles). Le non calciné est le moins stable."
+   "text": "Série en ϕ (900 °C) : la taille de cristallite varie peu (107,9, 96,5 et 102,6 nm) et la morphologie ne change pas, mais la capacité de première décharge augmente de 718 à 861 puis 995 mAh/g ; en cyclage à fort courant, ϕ = 0,675 et 1 se superposent (≈ 288 mAh/g sur ~500 cycles, cellule de Table S1) alors que ϕ = 1,325 reste plus haut (~487 mAh/g ; « 1,2 fois » selon les auteurs, 487/288 ≈ 1,7). Série en calcination (ϕ = 1,325) : la cristallite passe de 6,6 nm (non calciné) à 19,7, 27,8 puis 102,6 nm (900 °C). À 550 et 700 °C les capacités de la série en courant sont les plus hautes, mais elles s'effondrent à 25–35 % de la capacité initiale vers le 100e cycle ; seul l'échantillon à 900 °C reste stable (97–122 % de sa capacité initiale sur 500 cycles). Le non calciné est le moins stable."
   },
   {
    "type": "tendance_observee",
@@ -1840,7 +1961,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "pCFO_phi1.325_900C",
-   "text": "Hypothèse de chimiste : la glycine complexe probablement Ca2+ et Fe3+ en solution aqueuse, ce qui garde les cations mélangés à l'échelle moléculaire ; la déshydratation sur plaque à 250–300 °C donne un gel (le « roiling batter ») dont les nitrates oxydent la glycine dans une réaction très exothermique et brève (< 3 s) qui dégage N2, CO2 et H2O et laisse une mousse de faible densité. Avec les valences classiques (Ca +2, Fe +3, N 0, O −2, glycine +9), les deux nitrates représentent −40 unités de valence par CaFe2O4, d'où 40/9 ≈ 4,44 mol de glycine à ϕ = 1 ; à ϕ = 1,325 cela fait ≈ 5,9 mol de glycine par mol de CaFe2O4 (rapport n = 1,96 mol de glycine par mole de cations métalliques), ce qui est cohérent avec les n annoncés (1, 1,48, 1,96). Quand ϕ > 1 la combustion est complétée par l'oxygène de l'air et laisse un peu de carbone résiduel, ce que l'XPS de l'échantillon non calciné (C 1s, N 1s) rappelle. La mousse brute contient probablement des oxydes ou hydroxydes de Ca et de Fe mal cristallisés ; la calcination les fait réagir (CaO + Fe2O3 → CaFe2O4) et brûle les résidus organiques, d'où les pics XRD supplémentaires à 550 et 700 °C (phase secondaire, probablement CaO, Fe2O3 ou un autre ferrite de calcium non identifié)."
+   "text": "Hypothèse de chimiste : la glycine complexe probablement Ca2+ et Fe3+ en solution aqueuse, ce qui garde les cations mélangés à l'échelle moléculaire ; la déshydratation sur plaque à 250–300 °C donne un gel (le « roiling batter ») dont les nitrates oxydent la glycine dans une réaction très exothermique et brève (< 3 s) qui dégage N2, CO2 et H2O et laisse une mousse de faible densité. Avec les valences classiques (Ca +2, Fe +3, N 0, O −2, glycine +9), les deux nitrates représentent −40 unités de valence par CaFe2O4, d'où 40/9 ≈ 4,44 mol de glycine à ϕ = 1 ; à ϕ = 1,325 cela fait ≈ 5,9 mol de glycine par mol de CaFe2O4 (rapport n = 1,96 mol de glycine par mole de cations métalliques), ce qui est cohérent avec les n annoncés (1, 1,48, 1,96). Quand ϕ > 1 la combustion est complétée par l'oxygène de l'air et laisse un peu de carbone résiduel, ce que l'XPS de l'échantillon non calciné (C 1s, N 1s) rappelle. La mousse brute contient probablement des oxydes ou hydroxydes de Ca et de Fe mal cristallisés ; la calcination brûle les résidus organiques, le calcium se piège en carbonate (calcite jusqu'à ≈ 550–650 °C), puis CaFe2O4 se forme par CaO + Fe2O3 après décomposition du carbonate et n'est pur que vers 850–900 °C. Hypothèse du chimiste, sans source dans l'article : ce chemin passe par l'étape carbonate, que les auteurs ne décrivent pas."
   },
   {
    "type": "securite_auteurs",
@@ -1875,6 +1996,63 @@
    "route": "pCFO_phi1.325_noncalcined",
    "text": "L'article ne dit pas explicitement que l'échantillon non calciné suit les mêmes étapes de synthèse que les autres jusqu'au broyage ; ses étapes ont été recopiées de la voie de base sans l'étape de calcination.",
    "quote": "The product was a dark, crumbly, low-density foam that easily ground into a terra-cotta powder."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pCFO_phi0.675_900C",
+   "text": "Le rattachement à la voie de base (ϕ = 1,325) est déduit : l'article ne décrit qu'une synthèse et ne dit pas que le protocole, les 12 mL d'eau et les quantités de Ca et de Fe sont identiques pour les trois ϕ. Seules preuves directes : la calcination à 900 °C de tous les échantillons de la série et la légende de la figure 1, qui montre la synthèse pour ϕ = 0,675 avec une plaque réglée à 300 °C.",
+   "quote": "Survey scans of pCFO synthesized at increasing ϕ and constant calcination temperature (900 °C)"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pCFO_phi1_900C",
+   "text": "Le rattachement à la voie de base (ϕ = 1,325) est déduit : l'article ne décrit qu'une synthèse et ne dit pas que le protocole, les 12 mL d'eau et les quantités de Ca et de Fe sont identiques pour les trois ϕ. Seule preuve directe : la calcination à 900 °C de tous les échantillons de la série.",
+   "quote": "Survey scans of pCFO synthesized at increasing ϕ and constant calcination temperature (900 °C)"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pCFO_phi1.325_900C",
+   "text": "Le rapport n = 1 ; 1,48 ; 1,96 est donné par les auteurs sans définition. La lecture « mole de glycine par mole de cations métalliques » est un calcul de l'extracteur ((40/9)ϕ / 3), vérifié par le critique scientifique mais non écrit dans l'article. Le protocole de vitesse électrochimique (4 cycles par courant, 20 au total) est déduit des cycles 2–4, 13–16 et 17–20 cités dans le texte. L'article ne dit pas si la plaque chauffante est éteinte pendant la dissolution à température ambiante."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pCFO_phi1.325_900C",
+   "text": "Les capacités de la ligne « ~500 Cycles » de la Table S1 sont des niveaux représentatifs de la zone de cyclage et non la valeur au cycle 500 : sur la figure 7b, ϕ = 0,675 finit vers 230 mAh/g alors que la table donne 288. Le « ≈ 1,2 fois » des auteurs contredit leurs propres cellules (487/288 ≈ 1,7) ; le résumé parle de +120 à 150 %. Valeurs inchangées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pCFO_phi0.675_900C",
+   "text": "La hausse de la capacité spécifique de première décharge avec ϕ (718, 861, 995 mAh/g) suit la baisse de la masse active de la cellule (1,33, 1,05, 0,91 mg) : les capacités absolues sont presque identiques (0,955, 0,904, 0,905 mAh). Une seule cellule par échantillon, charges et courants massiques différents : l'effet de ϕ sur la capacité n'est pas démontré par ces données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pCFO_phi1_900C",
+   "text": "Même confusion entre masse active et ϕ que pour ϕ = 0,675 (capacités absolues quasi constantes, une cellule par échantillon). Après ~500 cycles, la capacité absolue de ϕ = 1 (0,302 mAh) est inférieure à celle de ϕ = 0,675 (0,383 mAh) : l'ordre ne suit pas ϕ."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pCFO_phi1.325_900C",
+   "text": "La « pureté de composition » avancée par les auteurs repose sur des rapports XPS de surface (Fe/Ca 2,6 à 2,2 ; O/Ca 5,6 à 5,0), dont l'écart est du même ordre que l'incertitude de quantification XPS ; les pics secondaires (Ca 2p3/2 à 347,0 eV, C 1s à 289,0 eV) correspondent plutôt à du carbonate de calcium (Biesinger, xpsfitting.com). La DRX ne montre aucune différence entre les trois ϕ : l'effet de ϕ sur la pureté n'est pas démontré."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "pCFO_phi1.325_550C",
+   "text": "Mécanisme à revoir : le pic « non identifié » à 2θ = 29,36° (d = 3,04 Å) est la raie (104) de la calcite, et le Ca 2p secondaire (~347 eV) avec C 1s à 289 eV va dans le même sens. L'échantillon à 550 °C serait surtout du CaCO3 avec un oxyde de fer mal cristallisé, et non du CaFe2O4 avec une impureté. Hypothèse du chimiste, non écrite dans l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pCFO_phi1.325_900C",
+   "text": "Les tailles de cristallite de Scherrer proches de 100 nm (96,5 à 107,9 nm) sont à la limite d'usage de la formule et l'élargissement instrumental n'est pas corrigé : ce sont des bornes basses, indiscernables entre elles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Chiffres de l'article contradictoires : baisse de « 64 % » à la deuxième décharge alors que 637/995 = 64 % de la valeur initiale (baisse de 36 %) ; « +120–150 % » alors que le facteur est de 1,2 à 1,5 ; courant de 0,495 mA affiché 0,3 mA/cm² sur la figure 7 (0,26 mA/cm² pour un disque de 15,5 mm). Valeurs de l'article conservées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités de nitrates de Ca et de Fe et de glycine ne sont jamais données ; le calcul du critique donne ≈ 1,5 g de CaFe2O4 au plus à ϕ = 1,325 avant que la glycine dépasse sa solubilité dans ~12 mL (calcul sur une solubilité de manuel, non revérifiée)."
   }
  ],
  "method_sources": [
@@ -1931,6 +2109,18 @@
   {
    "where": "Mécanisme des échantillons « 29.36 » et « 34.4 »",
    "issue": "Les pics non indexés sont à 2θ = 29,36 pour 550 °C et 34,4 pour 700 °C, d'après la phrase « 34.4 in the 700 °C sample and 29.36 in the 550 °C sample » (ordre du texte)."
+  },
+  {
+   "where": "pCFO_phi0.675_900C et pCFO_phi1_900C, variation fuel_to_oxidizer_mole_ratio_n",
+   "issue": "Les n de l'article (1, 1,48, 1,96) sont ajoutés en variation sous un nom propre : aucun paramètre du parent n'a ce nom, d'où l'avertissement du contrôle. L'ordre ϕ = 0,675, 1, 1,325 pour n = 1, 1,48, 1,96 est celui de la phrase (« respectively »)."
+  },
+  {
+   "where": "Table S1, ligne « ~500 Cycles » ; texte « 1.2 times higher »",
+   "issue": "Le texte dit que les capacités de ϕ = 1,325 sont « 1.2 times higher » ; la Table S1 donne 487 contre 288 (≈ 1,7) ; le résumé écrit « 120 and 150 % ». La cellule de la table est un niveau représentatif, pas la valeur au cycle 500. Aucune valeur corrigée."
+  },
+  {
+   "where": "Fig. 7, axes en mA-cm-2",
+   "issue": "L'axe porte 0,3 mA/cm² pour le courant de 0,495 mA (0,26 mA/cm² pour un disque de 15,5 mm) ; le texte et la Table S2 sont en mA-g-1. Aucune valeur extraite de l'axe."
   }
  ]
 }
