@@ -468,8 +468,8 @@
      "technique": "XRD",
      "result": "pics caractéristiques de ZSM-5 pour tous les échantillons",
      "instrument": "Rigaku SmartLab3",
-     "conditions": "range 5–50 °C (sic) at a scanning rate of 8° min−1",
-     "quote": "The XRD patterns of all samples are shown in Fig. 1. The XRD were similar, and consisted of sharp peaks near 8°, 8.8°, 23.1° and 23.3°, matched well with the characteristic peaks of ZSM-5."
+     "conditions": "range 5–50 °C (sic) at a scanning rate of 8° min−1 ; cristallinité relative calculée sur la somme des aires de pic entre 22.5–25° par rapport à HZ-150 (référence)",
+     "quote": "The XRD patterns of all samples are shown in Fig. 1. The XRD were similar, and consisted of sharp peaks near 8°, 8.8°, 23.1° and 23.3°, matched well with the characteristic peaks of ZSM-5. Lattice parameters of catalysts were calculated and depicted in Table 1. The lattice constants were close to the value of ZSM-5 reported in a previous study. The relative crystallinity (calculated based on the sum of peak area between 22.5–25° in XRD pattern of the ZSM-5 samples compared to that of HZ-150)"
     },
     {
      "technique": "SEM",
@@ -489,8 +489,15 @@
      "technique": "NH3-TPD",
      "result": "acidité totale et répartition faible / moyenne / forte (Table 2, Fig. 4)",
      "instrument": "AutoChemII2920",
-     "conditions": "300 mg ; prétraitement 200 °C 1 h sous He ; saturation par NH3 à 50 °C 1 h ; purge He 1 h ; chauffage jusqu'à 800 °C à 10 °C min−1 sous He ; détecteur TCD",
-     "quote": "Prior to adsorption experiments, 300 mg of catalyst was pretreated at 200 °C for 1 h in a He flow."
+     "conditions": "300 mg ; prétraitement 200 °C 1 h sous He ; saturation par NH3 à 50 °C 1 h ; purge He 1 h ; chauffage jusqu'à 800 °C à 10 °C min−1 sous He ; détecteur TCD ; acidité totale par comparaison à l'aire d'un pic étalon de 1 mL de NH3 ; classes faible 100–230 °C, moyenne 230–350 °C, forte 350–550 °C, répartition calculée par ajustement gaussien des profils",
+     "quote": "Prior to adsorption experiments, 300 mg of catalyst was pretreated at 200 °C for 1 h in a He flow. Upon cooling to 50 °C, the samples were saturated with a NH3 flow for 1 h, and then the physically absorbed NH3 was removed through purging with He gas for 1 h. The samples were then heated to 800 °C at a heating rate of 10 °C min−1 in He flow. Desorbed ammonia was recorded by a thermal conductivity detector (TCD). The total acidity amount was calculated from the peak area compared to a standard peak area of 1 mL of NH3 based on NH3-TPD curve. The distribution of weak acid, medium acid, and strong acid was calculated from the peak area from Gaussian fitting of the NH3-TPD profiles."
+    },
+    {
+     "technique": "NH3-TPD (définition des classes d'acidité)",
+     "result": "faible / moyenne / forte = 100–230 / 230–350 / 350–550 °C",
+     "instrument": "AutoChemII2920",
+     "conditions": "classes définies par régions de température des courbes NH3-TPD",
+     "quote": "The weak acid, medium acid and strong acid were defined in the temperature region 100–230 °C, 230–350 °C, and 350–550 °C, respectively, in NH3-TPD curves."
     },
     {
      "technique": "IR",
@@ -510,15 +517,29 @@
      "technique": "catalytic cracking test (HDPE and PP)",
      "result": "rendements en gaz, liquide et coke, distribution des produits (Tables 3 et 4)",
      "instrument": "fixed-bed quartz tube reactor",
-     "conditions": "0.5 g de catalyseur ; 550 °C ; N2 40 mL min−1 ; 1.0 g de plastique alimenté en trois portions égales à 5 min d'intervalle puis 11 min de réaction ; produits refroidis à environ −10 °C",
-     "quote": "For each run, the catalyst (0.5 g) was loaded into reactor, and heated to 550 °C in N2 stream (the flow rate: 40 mL min−1)."
+     "conditions": "charges séchées à 80 °C pendant 2 h ; 0.5 g de catalyseur ; 550 °C ; N2 40 mL min−1 ; 1.0 g de plastique alimenté en trois portions égales à 5 min d'intervalle puis 11 min de réaction ; produits refroidis à environ −10 °C ; granulés cylindriques d'environ 4 mm (HDPE 951, PP 910 kg m−3) ; résultats moyennés sur trois essais parallèles",
+     "quote": "HDPE and PP were dried at 80 °C for 2 h before use. The catalytic cracking experiments were performed in a fixed-bed quartz tube reactor. For each run, the catalyst (0.5 g) was loaded into reactor, and heated to 550 °C in N2 stream (the flow rate: 40 mL min−1)."
+    },
+    {
+     "technique": "catalytic cracking test (charges)",
+     "result": "forme des charges HDPE et PP",
+     "instrument": null,
+     "conditions": "granulés cylindriques d'environ 4 mm ; PP 910 kg m−3, HDPE 951 kg m−3",
+     "quote": "PP (d = 910 kg m−3) and HDPE (d = 951 kg m−3) were cylindrical pellets with particle size about 4 mm"
+    },
+    {
+     "technique": "catalytic cracking test (répétition)",
+     "result": "valeurs des Tables 3 et 4 moyennées sur trois essais",
+     "instrument": null,
+     "conditions": "moyenne de trois essais parallèles pour TGP, YL, YG, YC, SLO et SBTEX",
+     "quote": "The data of TGP, YL, YG, YC, SLO and SBTEX are the average value of three parallel experiments."
     },
     {
      "technique": "catalyst stability test (MZ-27)",
      "result": "BTEX selectivity en fonction du temps sous flux (Fig. 7)",
      "instrument": "fixed-bed quartz tube reactor",
-     "conditions": "550 °C sous N2 ; 0.3 g de plastique toutes les 5 min ; liquide collecté 1 min toutes les 30 min",
-     "quote": "For each test, 0.3 g plastic sample was fed in the reactor every 5 min until the end of reaction."
+     "conditions": "550 °C sous N2 pendant 600 min (méthode) ; HDPE et PP sur MZ-27 ; 0.3 g de plastique toutes les 5 min ; liquide collecté 1 min toutes les 30 min ; masse de catalyseur non donnée",
+     "quote": "The stability of the catalysts was determined by continuous catalytic cracking of HDPE and PP over MZ-27 at 550 °C in N2 stream for 600 min. For each test, 0.3 g plastic sample was fed in the reactor every 5 min until the end of reaction."
     },
     {
      "technique": "GC (gas) and GC-MS (liquid)",
@@ -1223,28 +1244,28 @@
      "value_text": "3–14 nm"
     },
     {
-     "property": "spent_catalyst_TGA_weight_loss_HDPE_Fig6a",
+     "property": "spent_catalyst_TGA_weight_loss_200-800C_HDPE_Fig6a",
      "quote": "Fig. 6 TGA and DTG profiles of the used catalysts from cracking HDPE (a) and PP (b).",
      "value_num": 2.4,
      "unit": "%",
      "from_figure": "Fig. 6a"
     },
     {
-     "property": "spent_catalyst_TGA_weight_loss_PP_Fig6b",
+     "property": "spent_catalyst_TGA_weight_loss_200-800C_PP_Fig6b",
      "quote": "Fig. 6 TGA and DTG profiles of the used catalysts from cracking HDPE (a) and PP (b).",
      "value_num": 1.5,
      "unit": "%",
      "from_figure": "Fig. 6b"
     },
     {
-     "property": "stability_BTEX_selectivity_HDPE_start_to_end",
+     "property": "stability_BTEX_selectivity_HDPE_start_to_end_600min",
      "quote": "BTEX selectivity decreased from 87.6% to 79.3% for HDPE, and from 80% to 65.7% for PP after 300 min.",
-     "value_text": "from 87.6% to 79.3% after 300 min (HDPE)"
+     "value_text": "from 87.6% to 79.3% for HDPE"
     },
     {
-     "property": "stability_BTEX_selectivity_PP_start_to_end",
+     "property": "stability_BTEX_selectivity_PP_start_to_end_600min",
      "quote": "BTEX selectivity decreased from 87.6% to 79.3% for HDPE, and from 80% to 65.7% for PP after 300 min.",
-     "value_text": "from 80% to 65.7% after 300 min (PP)"
+     "value_text": "from 80% to 65.7% for PP"
     },
     {
      "property": "stability_liquid_collected_per_minute_HDPE",
@@ -1260,6 +1281,18 @@
      "property": "pH_after_crystallization",
      "quote": "The pH value of the reaction solution after crystallization reduced to 8 (initial pH was 9), indicating that hydrolysis reaction of MCC occurred and produced acidic compounds.",
      "value_num": 8
+    },
+    {
+     "property": "particle_size_vs_HZ-27",
+     "value_text": "the particle size of the aggregates of MZ-27 were larger, and the needle-like crystals in the aggregates were obviously larger and more dispersive",
+     "quote": "Compared with HZ-27, the particle size of the aggregates of MZ-27 were larger, and the needle-like crystals in the aggregates were obviously larger and more dispersive."
+    },
+    {
+     "property": "major_pore_diameter",
+     "value_num": 3,
+     "unit": "nm",
+     "value_text": "around 3 nm",
+     "quote": "As shown in Fig. 3(b), the major pore diameter of all samples was around 3 nm."
     }
    ],
    "missing_fields": [
@@ -2341,18 +2374,25 @@
      "value_text": "approximately IV-type isotherm with hysteresis loop at P/P0 = 0.4–0.9, mesopores present"
     },
     {
-     "property": "spent_catalyst_TGA_weight_loss_HDPE_Fig6a",
+     "property": "spent_catalyst_TGA_weight_loss_200-800C_HDPE_Fig6a",
      "quote": "Fig. 6 TGA and DTG profiles of the used catalysts from cracking HDPE (a) and PP (b).",
      "value_num": 2.9,
      "unit": "%",
      "from_figure": "Fig. 6a"
     },
     {
-     "property": "spent_catalyst_TGA_weight_loss_PP_Fig6b",
+     "property": "spent_catalyst_TGA_weight_loss_200-800C_PP_Fig6b",
      "quote": "Fig. 6 TGA and DTG profiles of the used catalysts from cracking HDPE (a) and PP (b).",
      "value_num": 2.0,
      "unit": "%",
      "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "major_pore_diameter",
+     "value_num": 3,
+     "unit": "nm",
+     "value_text": "around 3 nm",
+     "quote": "As shown in Fig. 3(b), the major pore diameter of all samples was around 3 nm."
     }
    ]
   },
@@ -2736,18 +2776,30 @@
      "value_text": "3–14 nm"
     },
     {
-     "property": "spent_catalyst_TGA_weight_loss_HDPE_Fig6a",
+     "property": "spent_catalyst_TGA_weight_loss_200-800C_HDPE_Fig6a",
      "quote": "Fig. 6 TGA and DTG profiles of the used catalysts from cracking HDPE (a) and PP (b).",
      "value_num": 1.8,
      "unit": "%",
      "from_figure": "Fig. 6a"
     },
     {
-     "property": "spent_catalyst_TGA_weight_loss_PP_Fig6b",
+     "property": "spent_catalyst_TGA_weight_loss_200-800C_PP_Fig6b",
      "quote": "Fig. 6 TGA and DTG profiles of the used catalysts from cracking HDPE (a) and PP (b).",
      "value_num": 1.5,
      "unit": "%",
      "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "particle_size_vs_HZ-80",
+     "value_text": "a larger particle of MZ-80 compared to HZ-80",
+     "quote": "consequently leading to the formation of a larger particle of MZ-80 compared to HZ-80."
+    },
+    {
+     "property": "major_pore_diameter",
+     "value_num": 3,
+     "unit": "nm",
+     "value_text": "around 3 nm",
+     "quote": "As shown in Fig. 3(b), the major pore diameter of all samples was around 3 nm."
     }
    ]
   },
@@ -3121,18 +3173,25 @@
      "value_text": "typical “coffin” morphology"
     },
     {
-     "property": "spent_catalyst_TGA_weight_loss_HDPE_Fig6a",
+     "property": "spent_catalyst_TGA_weight_loss_200-800C_HDPE_Fig6a",
      "quote": "Fig. 6 TGA and DTG profiles of the used catalysts from cracking HDPE (a) and PP (b).",
      "value_num": 1.6,
      "unit": "%",
      "from_figure": "Fig. 6a"
     },
     {
-     "property": "spent_catalyst_TGA_weight_loss_PP_Fig6b",
+     "property": "spent_catalyst_TGA_weight_loss_200-800C_PP_Fig6b",
      "quote": "Fig. 6 TGA and DTG profiles of the used catalysts from cracking HDPE (a) and PP (b).",
      "value_num": 0.8,
      "unit": "%",
      "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "major_pore_diameter",
+     "value_num": 3,
+     "unit": "nm",
+     "value_text": "around 3 nm",
+     "quote": "As shown in Fig. 3(b), the major pore diameter of all samples was around 3 nm."
     }
    ]
   },
@@ -3504,6 +3563,13 @@
      "property": "morphology",
      "quote": "HZ-80, MZ-80, HZ-150 and MZ-150 showed a typical “coffin” morphology.",
      "value_text": "typical “coffin” morphology"
+    },
+    {
+     "property": "major_pore_diameter",
+     "value_num": 3,
+     "unit": "nm",
+     "value_text": "around 3 nm",
+     "quote": "As shown in Fig. 3(b), the major pore diameter of all samples was around 3 nm."
     }
    ]
   },
@@ -3875,6 +3941,19 @@
      "property": "morphology",
      "quote": "HZ-80, MZ-80, HZ-150 and MZ-150 showed a typical “coffin” morphology.",
      "value_text": "typical “coffin” morphology"
+    },
+    {
+     "property": "major_pore_diameter",
+     "value_num": 3,
+     "unit": "nm",
+     "value_text": "around 3 nm",
+     "quote": "As shown in Fig. 3(b), the major pore diameter of all samples was around 3 nm."
+    },
+    {
+     "property": "HDPE_light_olefin_yield",
+     "value_num": 37.6,
+     "unit": "%",
+     "quote": "The maximum light olefin yield (37.6%) in our study was achieved over the weakest acidic catalyst (HZ-150)."
     }
    ]
   }
@@ -4051,12 +4130,57 @@
   {
    "type": "mecanisme_analyse",
    "route": "MZ-27",
-   "text": "Hypothèse de chimiste : la solution I (NaOH, NaAlO2) fournit l'aluminate et la silice colloïdale du Ludox est dépolymérisée en milieu basique en silicate ; le mélange avec TPABr (cation Pr4N+) organise les unités de construction MFI, et l'acide sulfurique ramène le gel à pH 9 pour éviter une dissolution complète de la silice. À 180 °C pendant 48 h, la cristallisation hydrothermale produit NaZSM-5 ; la calcination à 550 °C brûle le TPA+ occlus, et les deux échanges par NH4Cl suivis d'une calcination libèrent NH3 et laissent les sites acides H+ de HZSM-5. La cellulose, probablement hydrolysée en milieu basique à 180 °C, agirait comme porogène sacrificiel ou perturbateur de croissance, puis brûlerait à la calcination."
+   "text": "Hypothèse de chimiste : la solution I (NaOH, NaAlO2) fournit l'aluminate et la silice colloïdale du Ludox est dépolymérisée en milieu basique en silicate ; le mélange avec TPABr (cation Pr4N+) organise les unités de construction MFI, et l'acide sulfurique ramène le gel à pH 9 pour éviter une dissolution complète de la silice. À 180 °C pendant 48 h, la cristallisation hydrothermale produit NaZSM-5 ; la calcination à 550 °C brûle le TPA+ occlus, et les deux échanges par NH4Cl suivis d'une calcination libèrent NH3 et laissent les sites acides H+ de HZSM-5. La cellulose, probablement hydrolysée en milieu basique à 180 °C, agirait comme porogène sacrificiel ou perturbateur de croissance, puis brûlerait à la calcination. Hypothèse du critique scientifique (non démontrée) : le gel étant très peu alcalin (OH/SiO2 ≈ 0,025 après neutralisation, pH 9), la cristallisation se ferait surtout en phase solide du gel, d'autant plus lentement que la teneur en Al est élevée, l'aluminium freinant la nucléation et la croissance (Jonscher et al. 2021, 10.1002/cctc.202101248) ; le Na+ étant voisin dans tous les gels, il ne suffit pas à expliquer le changement de morphologie. La MCC serait dégradée en milieu basique à 180 °C par « peeling » en acides isosacchariniques et petits acides carboxyliques (Knill et Kennedy 2003, 10.1016/S0144-8617(02)00183-2), puis brûlée à 550 °C, ce qui laisserait des vides intercristallins et des défauts qui abaissent la cristallinité."
   },
   {
    "type": "securite_analyse",
    "route": "MZ-27",
-   "text": "Le NaOH et les gels alcalins sont corrosifs (gants, lunettes) ; l'acide sulfurique concentré doit être dilué en versant l'acide dans l'eau. L'autoclave chauffé à 180 °C pendant 48 h contient une phase aqueuse sous pression : ne pas dépasser le taux de remplissage conseillé et refroidir avant ouverture. Le craquage du HDPE et du PP à 550 °C produit des gaz inflammables (hydrogène, méthane, oléfines légères) et des liquides riches en benzène, toluène et xylènes, toxiques et inflammables : travailler sous hotte, avec une évacuation des gaz et des pièges froids ; les catalyseurs cokés calcinés peuvent s'échauffer. Les poudres de zéolithe fines sont à ne pas inhaler."
+   "text": "Le NaOH et les gels alcalins sont corrosifs (gants, lunettes) ; l'acide sulfurique concentré doit être dilué en versant l'acide dans l'eau. L'autoclave chauffé à 180 °C pendant 48 h contient une phase aqueuse sous pression : ne pas dépasser le taux de remplissage conseillé et refroidir avant ouverture. Le craquage du HDPE et du PP à 550 °C produit des gaz inflammables (hydrogène, méthane, oléfines légères) et des liquides riches en benzène, toluène et xylènes, toxiques et inflammables : travailler sous hotte, avec une évacuation des gaz et des pièges froids ; les catalyseurs cokés calcinés peuvent s'échauffer. Les poudres de zéolithe fines sont à ne pas inhaler. Pression : à 180 °C, la vapeur d'eau saturante de l'autoclave atteint environ 10 bar (tables de vapeur), taux de remplissage non donné. L'ajout d'acide sulfurique à 98 % à un gel alcalin est exothermique et peut gélifier localement : ajouter lentement et acide dilué. La calcination de la forme NH4+ dégage de l'ammoniac, et le benzène du liquide de craquage est cancérogène."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-27",
+   "text": "La dose de cellulose microcristalline (0,8 g dans 10 g d'eau) ne peut pas être rapportée à la silice : aucune masse de réactif ni masse de gel n'est donnée, donc la quantité de silice est inconnue alors que c'est la variable centrale de l'étude. Un chimiste ne sait pas s'il faut 0,8 g de MCC pour quelques grammes ou pour des dizaines de grammes de SiO2."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-27",
+   "text": "L'explication de la morphologie (agrégats d'aiguilles à 27, cristaux « coffin » à 80 et 150) par un fort contenu en Na+ à 27 et un « manque de Na+ » à 80 et 150 est contredite par la composition donnée : 35 NaOH dans tous les gels, soit Na total ≈ 49,8 contre 37,7 (−24 %) et Na/Al de 3,4 à 14. La variable qui change vraiment est la teneur en Al, connue pour freiner nucléation et croissance de ZSM-5 (Jonscher et al., ChemCatChem 2021, 10.1002/cctc.202101248). Les valeurs ne sont pas modifiées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-80",
+   "text": "Même réserve pour MZ-80 : le « manque de Na+ » invoqué pour les gels à 80 et 150 n'est pas cohérent avec 35 NaOH présents dans tous les gels (Na total ≈ 40 pour x = 2,5) ; l'effet de la MCC sur la taille des cristaux de MZ-80 ne repose que sur ce raisonnement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-27",
+   "text": "« Plus de sites acides forts dans les échantillons avec MCC » n'est vrai qu'en proportion pour la série 27 : en quantité absolue, les sites forts de MZ-27 et de HZ-27 sont voisins (≈ 0,630 contre ≈ 0,622 cm3 g−1) et l'acidité totale de MZ-27 est plus faible. Aucune mesure (pyridine-IR, RMN 27Al) ne distingue les sites de Brønsted et de Lewis, et les organiques de la MCC sont brûlés à 550 °C : l'attribution à de nouveaux sites issus de la MCC n'est pas étayée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-27",
+   "text": "Dans la Table 5, le « p-xylène » (31,5–36,6 %) est en réalité du m+p-xylène : m- et p-xylène coéluent sur la colonne HP-5MS (Kanai et al., J. Chromatogr. Sci. 2005, 10.1093/chromsci/43.2.57), et le m-xylène, isomère majoritaire à l'équilibre, n'apparaît nulle part. La conclusion sur la production de p-xylène (> 30 %) n'est donc pas démontrée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-27",
+   "text": "L'essai de stabilité est de 600 min dans la méthode et sur la Fig. 7, mais de 300 min dans le texte des résultats ; les valeurs 79,3 % (HDPE) et 65,7 % (PP) sont celles du dernier point à 600 min. La masse de catalyseur de l'essai n'est pas donnée, et le liquide recueilli par minute (0,02–0,04 g pour 0,06 g min−1 de plastique) est très supérieur aux rendements en liquide des essais en lot (21,5 % et 32,1 %) : régimes non comparables ou erreur de chiffre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves sur la synthèse : les étiquettes « Si/Al = 27, 80, 150 » sont des rapports SiO2/Al2O3 du gel (Si/Al réel 13,5 / 40 / 75) et le rapport du solide n'est pas mesuré ; H2SO4 est donné à la fois fixe (15 dans la composition) et ajusté pour atteindre pH 9 ; la baisse de pH de 9 à 8 est attribuée à la MCC sans pH du témoin sans MCC ; le témoin sans MCC perd aussi les 10 g d'eau de la suspension de MCC."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves sur la caractérisation : l'acidité NH3-TPD, convertie en mmol g−1, ne représente que 18 à 33 % de l'Al du gel ; la surface externe de 253 à 341 m2 g−1, même pour les témoins en cristaux « coffin », est très supérieure à celle d'une ZSM-5 de gros cristaux (25 m2 g−1 dans PMC8941405) ; le diamètre moyen de pore vaut 4V/S pour HZ-27 seulement et la méthode n'est pas dite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves sur les essais de craquage : le bilan de gaz n'est pas fermé (la masse déduite du volume et de la composition dépasse le rendement en gaz calculé pour HZ-150) ; l'équation 1 est dimensionnellement fausse ; le « rendement en oléfines légères » de 37,6 % multiplie une sélectivité molaire par un rendement massique et ne se compare pas aux 58 % en masse d'Artetxe et al. ; plusieurs formules brutes de la Table 5 sont fausses (C11H14, C8H14, C14H30 au lieu de C11H24, C8H18, C17H36)."
   }
  ],
  "method_sources": [
@@ -4096,7 +4220,7 @@
   },
   {
    "where": "Essai de stabilité de MZ-27",
-   "issue": "La méthode donne 600 min, les résultats disent « in 300 min » et « after 300 min » (BTEX de 87,6 à 79,3 % pour le HDPE, de 80 à 65,7 % pour le PP). La Fig. 7 montre des courbes jusqu'à 600 min, et les valeurs finales lues sur la figure (≈ 79 % et ≈ 65 %) correspondent à 600 min plutôt qu'à 300 min. Valeurs et durée du texte conservées telles quelles."
+   "issue": "La méthode donne 600 min, les résultats disent « in 300 min » et « after 300 min » (BTEX de 87,6 à 79,3 % pour le HDPE, de 80 à 65,7 % pour le PP). La Fig. 7 s'étend jusqu'à 600 min et les valeurs finales lues sur la figure (≈ 79 % et ≈ 65 %) correspondent à la fin de l'essai à 600 min ; à 300 min la courbe du PP est vers 76 %. Les valeurs du texte sont conservées et associées à la durée de la méthode (600 min) ; la contradiction 600/300 min de l'article reste ouverte."
   },
   {
    "where": "Table 5 contre Tables 3 et 4",
@@ -4115,8 +4239,8 @@
    "issue": "La plage « 5–50 °C » est probablement 5–50° en 2θ ; recopiée telle quelle dans les conditions de caractérisation."
   },
   {
-   "where": "texte de l'article, 37,6 %",
-   "issue": "Le rendement maximal en oléfines légères de 37,6 % (HZ-150, HDPE) est mentionné dans la discussion mais il n'est ni dans un tableau ni défini ; non extrait."
+   "where": "HZ-150, rendement en oléfines légères 37,6 %",
+   "issue": "Le rendement maximal en oléfines légères de 37,6 % (HZ-150, HDPE) n'est ni dans un tableau ni défini par l'article ; il est extrait tel que cité dans la discussion. Il coïncide avec le produit de la sélectivité molaire en C2–4 (44,0 %) par le rendement massique en gaz (85,4 %) de la Table 3, ce qui n'est pas homogène (voir l'annotation de limite)."
   }
  ]
 }
