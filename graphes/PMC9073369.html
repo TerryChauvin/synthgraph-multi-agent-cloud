@@ -1,0 +1,80 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9073369</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9073369 — Preparation of an Fe2Ni MOF on nickel foam as an efficient and stable electrocatalyst for the oxygen evolution reaction.</h1>
+<h2>Voie : Fe2Ni MOF/NF</h2>
+<pre class="mermaid">flowchart LR
+  R13336([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;0.7 mmol&quot;]):::reactif
+  R13336 --&gt;|&quot;precursor&quot;| S15968
+  R13337([&quot;nickel(II) chloride hexahydrate&lt;br/&gt;0.3 mmol&quot;]):::reactif
+  R13337 --&gt;|&quot;precursor&quot;| S15968
+  R13338([&quot;N,N-dimethylformamide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13338 --&gt;|&quot;solvent&quot;| S15968
+  R13339([&quot;terephthalic acid&lt;br/&gt;1 mmol&quot;]):::reactif
+  R13339 --&gt;|&quot;ligand&quot;| S15968
+  R13340([&quot;deionized water (reaction mixture)&lt;br/&gt;2.5 mL&quot;]):::reactif
+  R13340 --&gt;|&quot;solvent&quot;| S15968
+  R13341([&quot;ethanol (reaction mixture)&lt;br/&gt;2.5 mL&quot;]):::reactif
+  R13341 --&gt;|&quot;solvent&quot;| S15968
+  R13342([&quot;nickel foam&lt;br/&gt;1 × 6 cm&quot;]):::reactif
+  R13342 --&gt;|&quot;substrate&quot;| S15968
+  R13343([&quot;acetone (nickel foam cleaning)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13343 --&gt;|&quot;wash&quot;| S15968
+  R13344([&quot;water (nickel foam cleaning)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13344 --&gt;|&quot;wash&quot;| S15968
+  R13345([&quot;hydrochloric acid (nickel foam cleaning)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13345 --&gt;|&quot;wash&quot;| S15968
+  R13346([&quot;ethanol (nickel foam cleaning)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13346 --&gt;|&quot;wash&quot;| S15968
+  R13347([&quot;deionized water (product washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13347 --&gt;|&quot;wash&quot;| S15968
+  R13348([&quot;ethanol (product washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13348 --&gt;|&quot;wash&quot;| S15968
+  S15968[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : acetone, water, hydrochloric …&quot;]:::etape
+  S15968 --&gt; S15969
+  S15969[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S15969 --&gt; S15970
+  S15970[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S15970 --&gt; S15971
+  S15971[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S15971 --&gt; S15972
+  S15972[&quot;&lt;b&gt;5. transfer&lt;/b&gt;&quot;]:::etape
+  S15972 --&gt; S15973
+  S15973[&quot;&lt;b&gt;6. immerse&lt;/b&gt;&quot;]:::etape
+  S15973 --&gt; S15974
+  S15974[&quot;&lt;b&gt;7. heat&lt;/b&gt;&lt;br/&gt;temperature : 125 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S15974 --&gt; S15975
+  S15975[&quot;&lt;b&gt;8. cool&lt;/b&gt;&lt;br/&gt;cooling_mode : natural cooling&quot;]:::etape
+  S15975 --&gt; S15976
+  S15976[&quot;&lt;b&gt;9. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water and ethanol&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S15976 --&gt; S15977
+  S15977[&quot;&lt;b&gt;10. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S15977 --&gt; M
+  M{{&quot;Fe2Ni-MIL-88B MOF grown on nickel foam&lt;br/&gt;&quot;}}:::materiau
+  O63551[&quot;OER_overpotential_at_10_mA_cm-2 : 222 mV&quot;]:::resultat
+  M -.-&gt; O63551
+  O63552[&quot;Tafel_slope : 42.39 mV dec−1&quot;]:::resultat
+  M -.-&gt; O63552
+  O63553[&quot;morphology : spindle shape&quot;]:::resultat
+  M -.-&gt; O63553
+  O63554[&quot;XPS_Fe_2p_peaks : 714 and 725.5 eV&quot;]:::resultat
+  M -.-&gt; O63554
+  O63555[&quot;XPS_Ni_2p_peaks : 856.3 eV and 874.1 eV&quot;]:::resultat
+  M -.-&gt; O63555
+  O63556[&quot;SAED_interplanar_distances : 0.35 nm (101) and 0.96 nm (00…&quot;]:::resultat
+  M -.-&gt; O63556
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10539{{&quot;Fe2Ni MOF/NF&quot;}}:::materiau
+  B10540[&quot;Fe MOF/NF&quot;]:::etape
+  B10539 --&gt;|&quot;nickel(II) chloride hexa… = absent&quot;| B10540
+  B10541[&quot;Ni MOF/NF&quot;]:::etape
+  B10539 --&gt;|&quot;iron(III) nitrate nonahy… = absent&quot;| B10541
+  B10542[&quot;Fe:Ni=5:5&quot;]:::etape
+  B10539 --&gt;|&quot;metal_ratio_Fe_Ni = Fe : Ni = 5 : 5&quot;| B10542
+  B10543[&quot;Fe:Ni=3:7&quot;]:::etape
+  B10539 --&gt;|&quot;metal_ratio_Fe_Ni = Fe : Ni = 3 : 7&quot;| B10543
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
