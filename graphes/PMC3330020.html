@@ -1,0 +1,106 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3330020</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3330020 — Effect of complexing agents on the electrochemical performance of LiFePO4/C prepared by sol-gel method.</h1>
+<h2>Voie : SGAc</h2>
+<pre class="mermaid">flowchart LR
+  R12864([&quot;lithium nitrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12864 --&gt;|&quot;precursor&quot;| S15372
+  R12865([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12865 --&gt;|&quot;precursor&quot;| S15372
+  R12866([&quot;ammonium dihydrogen phosphate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12866 --&gt;|&quot;precursor&quot;| S15372
+  R12867([&quot;acetic acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12867 --&gt;|&quot;ligand&quot;| S15372
+  R12868([&quot;water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12868 --&gt;|&quot;solvent&quot;| S15372
+  R12869([&quot;ascorbic acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12869 --&gt;|&quot;reducing_agent&quot;| S15372
+  R12870([&quot;ammonia water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12870 --&gt;|&quot;base&quot;| S15372
+  R12871([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12871 --&gt;|&quot;gas&quot;| S15372
+  S15372[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S15372 --&gt; S15373
+  S15373[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 1 h&lt;br/&gt;temperature : 55 °C&quot;]:::etape
+  S15373 --&gt; S15374
+  S15374[&quot;&lt;b&gt;3. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 6.5&quot;]:::etape
+  S15374 --&gt; S15375
+  S15375[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;temperature : 75 °C&quot;]:::etape
+  S15375 --&gt; S15376
+  S15376[&quot;&lt;b&gt;5. evaporate&lt;/b&gt;&quot;]:::etape
+  S15376 --&gt; S15377
+  S15377[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S15377 --&gt; S15378
+  S15378[&quot;&lt;b&gt;7. press&lt;/b&gt;&quot;]:::etape
+  S15378 --&gt; S15379
+  S15379[&quot;&lt;b&gt;8. sinter&lt;/b&gt;&lt;br/&gt;temperature : 600 °C&lt;br/&gt;duration : 4 h&lt;br/&gt;atmosphere : nitrogen atmosphere&quot;]:::etape
+  S15379 --&gt; S15380
+  S15380[&quot;&lt;b&gt;9. cool&lt;/b&gt;&lt;br/&gt;cooling_rate : slowly&quot;]:::etape
+  S15380 --&gt; M
+  M{{&quot;carbon-coated lithium iron phosphate (LiFePO4/C)&lt;br/&gt;LiFePO4&quot;}}:::materiau
+  O61996[&quot;Fe2+_complex_stability_constant_lo… : 8.3&quot;]:::resultat
+  M -.-&gt; O61996
+  O61997[&quot;discharge_specific_capacity : 161.08 mAh g-1&quot;]:::resultat
+  M -.-&gt; O61997
+  O61998[&quot;tap_density : 1.37 g cm-3&quot;]:::resultat
+  M -.-&gt; O61998
+  O61999[&quot;carbon_content : 2.3 wt.%&quot;]:::resultat
+  M -.-&gt; O61999
+  O62000[&quot;phase : pure single phase, orthorhomb…&quot;]:::resultat
+  M -.-&gt; O62000
+  O62001[&quot;particle_size_range : 100 nm to 1 μm&quot;]:::resultat
+  M -.-&gt; O62001
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10325{{&quot;SGAc&quot;}}:::materiau
+  B10326[&quot;SGEg&quot;]:::etape
+  B10325 --&gt;|&quot;acetic acid = replaced by ethanediol&quot;| B10326
+  B10327[&quot;SGOc&quot;]:::etape
+  B10325 --&gt;|&quot;acetic acid = replaced by oxalic acid&quot;| B10327
+  B10328[&quot;SGEn&quot;]:::etape
+  B10325 --&gt;|&quot;acetic acid = replaced by ethylenediam…&quot;| B10328
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_LiFePO4C</h2>
+<pre class="mermaid">flowchart LR
+  R12875([&quot;LiFePO4/C active material&lt;br/&gt;80 wt.%&quot;]):::reactif
+  R12875 --&gt;|&quot;active_material&quot;| S15381
+  R12876([&quot;acetylene black&lt;br/&gt;15 wt.%&quot;]):::reactif
+  R12876 --&gt;|&quot;conductive_additive&quot;| S15381
+  R12877([&quot;poly(vinylidene fluoride)&lt;br/&gt;5 wt.%&quot;]):::reactif
+  R12877 --&gt;|&quot;binder&quot;| S15381
+  R12878([&quot;dimethyl phthalate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12878 --&gt;|&quot;solvent&quot;| S15381
+  R12879([&quot;Al foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12879 --&gt;|&quot;substrate&quot;| S15381
+  S15381[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S15381 --&gt; S15382
+  S15382[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S15382 --&gt; S15383
+  S15383[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&quot;]:::etape
+  S15383 --&gt; M
+  M{{&quot;LiFePO4/C composite cathode on Al foil&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Cell_LiFePO4C</h2>
+<pre class="mermaid">flowchart LR
+  R12880([&quot;working electrode (route Electrode_LiFePO4C)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12880 --&gt;|&quot;electrode&quot;| S15384
+  R12881([&quot;Celgard 2400 microporous membrane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12881 --&gt;|&quot;separator&quot;| S15384
+  R12882([&quot;1 M LiPF6 in ethylene carbonate-dimethyl car…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12882 --&gt;|&quot;electrolyte&quot;| S15384
+  R12883([&quot;lithium foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12883 --&gt;|&quot;counter_electrode&quot;| S15384
+  S15384[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : dry glove box under argon&quot;]:::etape
+  S15384 --&gt; M
+  M{{&quot;LiFePO4/C | Li prototype cell&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
