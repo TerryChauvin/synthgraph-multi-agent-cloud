@@ -530,6 +530,7 @@
      "name": "CdSe nanoplatelets solution (route CdSe_NPL)",
      "formula": "CdSe",
      "role": "intermediate",
+     "amount": 0.5,
      "unit": "ml",
      "quote": "0.5 ml of CdSe nanoplatelets solution (in hexane)"
     },
@@ -537,6 +538,7 @@
      "name": "chloroform",
      "formula": "CHCl3",
      "role": "solvent",
+     "amount": 2,
      "unit": "ml",
      "purity": "99.8%",
      "supplier": "Sigma-Aldrich",
@@ -547,6 +549,7 @@
      "name": "thioacetamide (TAA)",
      "formula": "CH3CSNH2",
      "role": "precursor",
+     "amount": 20,
      "unit": "mg",
      "purity": "99.0%",
      "supplier": "Sigma-Aldrich",
@@ -557,6 +560,7 @@
      "name": "octylamine",
      "formula": null,
      "role": "ligand",
+     "amount": 200,
      "unit": "μl",
      "purity": "99%",
      "supplier": "Sigma-Aldrich",
@@ -567,6 +571,7 @@
      "name": "CdCl2/Cd(OL)2 suspension (route CdCl2_CdOL2)",
      "formula": null,
      "role": "intermediate",
+     "amount": 60,
      "unit": "μl",
      "quote": "60 μl of CdCl2/Cd(OL)2"
     },
@@ -574,6 +579,7 @@
      "name": "ethanol",
      "formula": "C2H5OH",
      "role": "antisolvent",
+     "amount": 2,
      "unit": "ml",
      "purity": "99.8%",
      "supplier": "Sigma-Aldrich",
@@ -836,7 +842,7 @@
    "succeeded": false,
    "variations": [
     {
-     "parameter": "CdSe_CdS_triangles_step_placeholder",
+     "parameter": "CdCl2/Cd(OL)2 suspension (route CdCl2_CdOL2)",
      "value_text": "absent",
      "parent_value": "60 μl",
      "quote": "On the basis of, it can be assumed that the reaction time with TAA influences the growth of the CdS shell (observed red shift in the absorbance and emission spectra), but allows only spherical structures to be obtained. Therefore, a small amount of CdCl2/Cd(OL)2 was introduced into the reaction mixture to initiate growth in a different shape."
@@ -1009,7 +1015,7 @@
    "quote": "To study the effect of the tetra-n-butylammonium fluoride (TBAF) on the optical properties of CdSe/CdS nanoparticles, 226 μl of NPs solution, 40 μl of TBAF were used, and the volume was supplemented to 2 ml by THF.",
    "variations": [
     {
-     "parameter": "tetra-n-butylammonium fluoride (additive)",
+     "parameter": "additive",
      "value_num": 40,
      "unit": "μl",
      "parent_value": "none",
@@ -1540,6 +1546,10 @@
   }
  ],
  "doubts": [
+  {
+   "where": "Colloid_TBAF_40ul, variation additive",
+   "issue": "L'avertissement du contrôle sur le nom « additive » est voulu : le TBAF est un réactif absent du parent (parent_value none), ajouté dans les réactifs de la branche, selon la règle du RUNBOOK."
+  },
   {
    "where": "TAA_only_series",
    "issue": "L'article ne donne ni quantités ni durées pour la série « temps de réaction avec la TAA seule » (résultats uniquement en Fig. S1, non lue). La branche est rattachée aux triangles par la phrase « a small amount of CdCl2/Cd(OL)2 was introduced », sans que l'article dise que les quantités de nanoplaquettes, TAA et octylamine sont identiques ; les étapes propres de la branche sont donc minimales."
