@@ -41,7 +41,7 @@
    "why": "composé de comparaison pour la fragmentation en masse, non synthétisé dans l'article"
   },
   {
-   "sample": "SnS on FTO (Tp 130 °C, Ts 350 °C, 30 min)",
+   "sample": "SnS on FTO (Tp 130 °C, Ts 350 °C, within 30 min)",
    "defined_in": "Results 2.2",
    "route": "SnS_FTO_350",
    "results_in": [
@@ -387,7 +387,7 @@
     },
     {
      "technique": "1H NMR",
-     "result": "single reaction product; broad N(CH3)2 resonance at δ = 1.83, signal splitting of the methylene protons",
+     "result": "single reaction product; δ = 6.58 (d, H-4), 5.39 (d, H-3), 2.79–2.67 (m, H-5a), 2.33–2.23 (m, H-6a), 2.23–2.15 (m, H-5b), 1.83 (br, 6H, H-7), 1.78 (s, H-7), 1.63 (s, 9H, H-9), 1.60–1.52 (m, H-6b)",
      "instrument": "Bruker Avance II 300 and Avance 400 spectrometers",
      "conditions": "400.1 MHz, C6D6, 25 °C",
      "quote": "The 1H-NMR spectrum of 1 in C6D6 solvent recorded at 400 MHz showed (Figure 2) the formation of a single reaction product"
@@ -426,6 +426,20 @@
      "instrument": "TGA/DSC1 (Mettler-Toledo GmbH, Gießen, Germany)",
      "conditions": "continuous N2(g) flow",
      "quote": "Thermogravimetric analysis was performed under continuous N2(g) flow to further investigate the decomposition behavior of 1 in relation to the temperature (Figure 5)."
+    },
+    {
+     "technique": "13C{1H} NMR",
+     "result": "δ = 180 (C-2, 2JC-F = 32 Hz), 165.0 (C-4), 134.6 (q, C-1, 1JC-F = 284 Hz), 91.7 (C-3), 58.1 (C-6), 56.1 (C-5), 44.8 (C-7), 44.1 (C-7′), 42.7 (C-8), 38.1 (C-9, 3J13C-119Sn = 24 Hz)",
+     "instrument": "Bruker Avance II 300 and Avance 400 spectrometers",
+     "conditions": "75.5 MHz, C6D6, 25 °C",
+     "quote": "13C{1H}-NMR (75.5 MHz, C6D6, 25 °C): 180 (C-2,2JC-F = 32 Hz),165.0 (C-4), 134.6 (q, C-1,1JC-F = 284 Hz), 91.7 (C-3), 58.1 (C-6), 56.1 (C-5), 44.8 (C-7), 44.1(C-7′), 42.7 (C-8), 38.1 (C-9, 3J13C-119Sn = 24 Hz)."
+    },
+    {
+     "technique": "19F NMR",
+     "result": "δ = −74.56 (s, 1JF-C = 284 Hz, 2JF-C = 32 Hz)",
+     "instrument": "Bruker Avance II 300 and Avance 400 spectrometers",
+     "conditions": "282.4 MHz, C6D6, 25 °C",
+     "quote": "19F-NMR (282.4 MHz, C6D6, 25 °C) δ = −74.56 (s, 1JF-C = 284 Hz, 2JF-C = 32 Hz)."
     }
    ],
    "outcomes": [
@@ -537,9 +551,8 @@
       },
       {
        "name": "duration",
-       "value_num": 30,
-       "unit": "min",
-       "quote": "At precursor temperature of Tp = 130 °C and substrates maintained at 350 °C, the FTO substrate was uniformly covered by a black layer within 30 min of the processing time."
+       "quote": "At precursor temperature of Tp = 130 °C and substrates maintained at 350 °C, the FTO substrate was uniformly covered by a black layer within 30 min of the processing time.",
+       "value_text": "within 30 min"
       },
       {
        "name": "pressure",
@@ -572,14 +585,14 @@
    "characterizations": [
     {
      "technique": "GI-XRD",
-     "result": "SnS with a strong (040) reflection and a minor (111) reflection, PDF 39-354",
+     "result": "SnS with a strong (040) reflection and a minor (111) reflection",
      "instrument": null,
      "conditions": "grazing incidence mode",
      "quote": "The deposit was identified by XRD analysis to be SnS (Figure 6a) that exhibited diffraction peaks corresponding to (040) plane, along with a minor peak due to the (111)-plane."
     },
     {
      "technique": "SEM (top view and cross-section)",
-     "result": "uniform coverage by flake-like nanostructures; ~80 nm layer on 350 nm FTO",
+     "result": "uniform coverage by flake-like nanostructures; ~80 nm layer",
      "instrument": null,
      "conditions": null,
      "quote": "The SEM images (Figure 6b,c) showed the uniform coverage of the substrate surface by flake-like nanostructures."
@@ -616,6 +629,19 @@
      "property": "adhesion",
      "value_text": "strong adhesion of SnS on FTO",
      "quote": "The strong adhesion of the deposited SnS on FTO is possibly due to a different bonding situation than the aforementioned Van der Waals interaction"
+    },
+    {
+     "property": "XRD_reference_pattern",
+     "value_text": "PDF #39-354 (SnS ref.); reflections 040, 111 and 171/080 labelled",
+     "from_figure": "Fig. 6a",
+     "quote": "Figure 6 (a) GI-XRD (recorded in grazing incidence mode) pattern of SnS deposited on FTO substrate at T = 350 °C."
+    },
+    {
+     "property": "FTO_thickness",
+     "value_num": 350,
+     "unit": "nm",
+     "from_figure": "Fig. 6d",
+     "quote": "(d) SEM cross-section of SnS on FTO (SnS layer around 80 nm)"
     }
    ],
    "missing_fields": [
@@ -649,7 +675,7 @@
      "parameter": "duration",
      "step_order": 1,
      "value_text": "15, 30, and 60 min",
-     "parent_value": "30 min",
+     "parent_value": "within 30 min",
      "quote": "By varying deposition times (15, 30, and 60 min), a linear relationship between the growth rate and deposition time was established (Figure 8d)."
     }
    ],
@@ -698,6 +724,12 @@
      "property": "film_quality",
      "value_text": "well-crystalline, dense, and of uniform thickness",
      "quote": "In both cases, the deposited films were well-crystalline, dense, and of uniform thickness."
+    },
+    {
+     "property": "XRD_indexing",
+     "value_text": "SnS reflections 110, 120, 021, 101, 111/040 and 210 (ref. PDF #39-354); Mo substrate peaks (PDF #42-1120) marked by asterisks",
+     "from_figure": "Fig. 7a",
+     "quote": "Figure 7 XRD pattern (a) of SnS deposited at 350 °C, and SEM top view at different magnifications (b,c) of SnS deposited on Mo-SLG at T = 350 °C."
     }
    ]
   },
@@ -740,6 +772,19 @@
      "property": "SAED_indexing",
      "value_text": "orthorhombic SnS (COD # 9008785)",
      "quote": "The diffraction spots in the SAED pattern are indexed consistently with the d-spacings of orthorhombic SnS (COD # 9008785)."
+    },
+    {
+     "property": "d_spacing_200_HRTEM",
+     "value_num": 0.22,
+     "unit": "nm",
+     "from_figure": "Fig. 9c",
+     "quote": "Figure 9 (a) TEM image of SnS scratched off from the films deposited on molybdenium substrate at T = 350 °C for 15 min, (b) ring diffraction pattern (upper inset), and (c) HRTEM image showing the (200) planes of the orthorhombic SnS (lower inset)."
+    },
+    {
+     "property": "SAED_rings_indexed",
+     "value_text": "(121), (200), (321), (143), (213), (234)",
+     "from_figure": "Fig. 9b",
+     "quote": "Figure 9 (a) TEM image of SnS scratched off from the films deposited on molybdenium substrate at T = 350 °C for 15 min, (b) ring diffraction pattern (upper inset), and (c) HRTEM image showing the (200) planes of the orthorhombic SnS (lower inset)."
     }
    ],
    "characterizations": [
@@ -853,7 +898,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Sur FTO (30 min), le film de SnS d'environ 80 nm montre une forte orientation (040) parallèle au substrat, avec un faible pic (111). Sur Mo-SLG, dans des conditions similaires, le SnS est cristallin et couvre toute la surface, sans orientation préférentielle déclarée. Sur Mo-SLG, l'épaisseur passe de 440 nm (15 min) à 1 µm (30 min) puis 2 µm (60 min), soit environ 33 nm par minute ; à 60 min les plaquettes de SnS sont orientées verticalement par rapport au substrat.",
+   "text": "Sur FTO (« within 30 min », durée exacte non donnée), le film de SnS d'environ 80 nm montre une forte orientation (040) parallèle au substrat, avec un faible pic (111). Sur Mo-SLG, dans des conditions similaires, le SnS est cristallin et couvre toute la surface, sans orientation préférentielle déclarée. Sur Mo-SLG, l'épaisseur passe de 440 nm (15 min) à 1 µm (30 min) puis 2 µm (60 min), soit environ 33 nm par minute ; à 60 min les plaquettes de SnS sont orientées verticalement par rapport au substrat.",
    "quote": null
   },
   {
@@ -889,13 +934,13 @@
   {
    "type": "mecanisme_analyse",
    "route": "Complex_1",
-   "text": "Hypothèse : l'amine secondaire du ligand (N-H) est plus acide que le thiol libéré et se coordonne à l'étain, la chélation par O, N et NMe2 stabilisant le centre Sn(II) et empêchant l'oligomérisation du thiolate polymérique. Le produit devient monomère et volatil (sublimation à 90–100 °C sous 10−3 mbar). Le rapport ligand/Sn de 5,640/5,624 mmol est stœchiométrique 1:1 ; la masse molaire attendue de 417 g/mol donne une perte de masse de 64 % pour la formation de SnS (valeur des auteurs), la perte mesurée de 57 % suggère probablement qu'une partie du ligand ou du soufre reste dans le résidu.",
+   "text": "Hypothèse : la protonolyse d'une liaison Sn–SBut par le N–H du ligand est probablement entraînée par la chélation tridentate O,N,N (Sn←O du carbonyle, Sn–N amidure, Sn←NMe2), qui sature la sphère de coordination et rompt le réseau polymère Sn←S, et par le départ du tert-butanethiol volatil sous vide ; ce n'est probablement pas une différence d'acidité favorable, le thiol étant l'acide le plus fort des deux. Le produit devient monomère et volatil (sublimation à 90–100 °C sous 10−3 mbar). Le rapport ligand/Sn de 5,640/5,624 mmol est stœchiométrique 1:1 ; la perte de masse théorique pour SnS est de 64 % (valeur des auteurs) et la perte mesurée de 57 % suggère qu'une partie du ligand ou du soufre reste dans le résidu.",
    "quote": null
   },
   {
    "type": "mecanisme_analyse",
    "route": "SnS_FTO_350",
-   "text": "Hypothèse : à 350 °C, la liaison S-C(tert-butyle) se rompt par élimination d'isobutène (β-hydrogène), ce qui est la voie usuelle des thiolates de tert-butyle, et le ligand se détache comme HL ou comme fragments organiques volatils ; il reste SnS. Les films orientés (040) sur FTO correspondent à la face de plus basse énergie, favorisée par une croissance limitée cinétiquement selon les auteurs.",
+   "text": "Hypothèse : le précurseur sublime vers 130 °C et gagne le substrat en régime moléculaire (p < 10−6 bar) ; à 350 °C, la liaison S–C(tert-butyle) se rompt probablement par β-élimination d'isobutène, et l'hydrogène transféré reprotone le ligand, d'où le bilan C12H21F3N2OSSn → SnS + C4H8 + HL, sans changement du degré d'oxydation de l'étain(II). Les films orientés (040) sur FTO correspondent à la face de plus basse énergie, favorisée par une croissance limitée cinétiquement selon les auteurs.",
    "quote": null
   },
   {
@@ -907,7 +952,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'amidure d'étain [Sn{N(SiMe3)2}2] et les thiolates d'étain(II) sont sensibles à l'air et à l'humidité ; le tert-butanethiol est inflammable, très malodorant et toxique. Les distillations sur sodium et benzophénone exigent des précautions (sodium métallique, toluène inflammable). Les composés organiques de l'étain sont toxiques. La sublimation et les dépôts CVD se font sous vide à 90–130 °C pour le précurseur et jusqu'à 350 °C pour le substrat ; le chauffage par induction et les gaz de décomposition (isobutène inflammable, composés soufrés ou fluorés) demandent des pièges froids et une ventilation. Les films de SnS en poudre fine sont à ne pas inhaler.",
+   "text": "L'amidure d'étain [Sn{N(SiMe3)2}2] et les thiolates d'étain(II) sont sensibles à l'air et à l'humidité ; le tert-butanethiol est inflammable, très malodorant et toxique. Les distillations sur sodium et benzophénone exigent des précautions (sodium métallique, toluène inflammable). Les composés organiques de l'étain sont toxiques. La sublimation et les dépôts CVD se font sous vide à 90–130 °C pour le précurseur et jusqu'à 350 °C pour le substrat ; le chauffage par induction et les gaz de décomposition (isobutène inflammable, composés soufrés ou fluorés) demandent des pièges froids (au N2 liquide, avec risque de condensation d'O2 si le circuit est rouvert à l'air) et une ventilation ; la pyrolyse partielle du ligand fluoré peut donner des composés fluorés acides. Les films de SnS en poudre fine sont à ne pas inhaler.",
    "quote": null
   },
   {
@@ -927,6 +972,42 @@
    "route": "SnS_FTO_350",
    "text": "La masse de précurseur, le gaz porteur éventuel, le débit, les rampes de chauffage et de refroidissement, le nettoyage des substrats et la durée exacte (« within 30 min ») ne sont pas donnés. La plage de température du substrat de 300 à 450 °C et celle du précurseur de 90 à 130 °C ne sont décrites que comme plages, avec les résultats détaillés à 350 °C seulement. Le temps de dépôt de l'échantillon sur Mo-SLG de la figure 7 n'est pas précisé.",
    "quote": "The precursor temperature (Tp) for 1 was maintained between Tp = 90–130 °C and substrate temperatures chosen in this study were Ts = 300–450 °C that resulted in crystalline deposits of homogeneous SnS films."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SnS_FTO_350",
+   "text": "Aucune analyse de composition des films (ni EDX, ni XPS, ni Raman) : la conclusion « ni N ni O, SnS pur » repose sur la seule XRD, qui ne voit pas les phases amorphes ou minoritaires (SnS2, SnO2, SnF2), et le fluor du groupe CF3 n'est pas discuté. L'ATG du précurseur laisse un résidu plus lourd que SnS (≈ 179 g/mol par Sn contre 150,8 pour SnS), non caractérisé.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SnS_FTO_350",
+   "text": "Le résumé annonce 300–450 °C mais seul 350 °C est décrit. L'épaisseur sur FTO (≈ 80 nm, soit ≈ 2,7 nm/min si le dépôt a duré 30 min) est environ douze fois plus faible que sur Mo-SLG (≈ 33 nm/min) dans des conditions dites similaires, sans masse de précurseur ni géométrie qui permettent de les comparer.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Complex_1",
+   "text": "Analyse élémentaire : S trouvé 8,23 % contre 7,69 % calculé (écart de 0,54 %, au-delà de la tolérance usuelle de 0,4 %). Le texte dit que 1 sublime « sans résidu » alors que l'ATG laisse 43 % de résidu ; les deux ne tiennent que si l'on distingue sublimation sous vide et chauffage à pression ambiante, ce que l'article ne fait pas.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Complex_1",
+   "text": "Ordre d'addition contradictoire : les Méthodes ajoutent la suspension de Sn(SBut)2 à la solution du ligand, les Résultats ajoutent le ligand à la solution de Sn(SBut)2. Un chimiste doit trancher (les Méthodes, plus précises, sont retenues dans l'extraction).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Sn(SBut)2",
+   "text": "Les auteurs observent Sn(SBut)4 et un disulfure en solution prolongée : deux produits oxydés qui trahissent plutôt une entrée d'O2 qu'une dismutation sous atmosphère strictement inerte. La pureté de Sn(SBut)2 est à vérifier en RMN 119Sn avant usage.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SnS_Mo_350",
+   "text": "Contradictions de l'article : la conclusion dit « no such preference » d'orientation sur Mo-SLG alors que les plaquettes sont décrites verticales ; les « diffraction spots » indexés selon un axe de zone sont présentés comme un cliché en anneaux (Fig. 9b) ; le réglage de maille de COD 9008785 n'est pas donné, alors que la distance du plan (200) en dépend. La sulfuration éventuelle du Mo à 350 °C n'est pas vérifiée.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -941,12 +1022,30 @@
    "ref_id": "B34-molecules-26-05367",
    "role": "precurseur",
    "quote": "A detailed synthetic procedure for ligand is described in the reference"
+  },
+  {
+   "route": "SnS_FTO_350",
+   "ref_id": "B63-molecules-26-05367",
+   "role": "protocole_complet",
+   "quote": "More detailed information can be found in previous publications from our working group"
+  },
+  {
+   "route": "SnS_FTO_350",
+   "ref_id": "B64-molecules-26-05367",
+   "role": "protocole_complet",
+   "quote": "More detailed information can be found in previous publications from our working group"
+  },
+  {
+   "route": "SnS_FTO_350",
+   "ref_id": "B65-molecules-26-05367",
+   "role": "protocole_complet",
+   "quote": "More detailed information can be found in previous publications from our working group"
   }
  ],
  "doubts": [
   {
    "where": "SnS_FTO_350 étape 1",
-   "issue": "« uniformly covered by a black layer within 30 min of the processing time » : la durée de dépôt retenue est 30 min, mais « within » peut signifier que le dépôt était complet avant 30 min ; lecture littérale conservée."
+   "issue": "« uniformly covered by a black layer within 30 min of the processing time » : « within 30 min » borne peut-être un délai de couverture et non la durée de dépôt (≈ 80 nm sur FTO contre ≈ 1 µm en 30 min sur Mo-SLG). La durée est donc gardée en texte (« within 30 min ») et n'est pas transmise comme valeur numérique aux branches Mo-SLG, qui fixent chacune la leur."
   },
   {
    "where": "SnS_Mo_350 (échantillon de la figure 7)",
@@ -975,6 +1074,14 @@
   {
    "where": "Complex_1, étape 1 unité de température",
    "issue": "L'article écrit « at 0° by cooling with crushed ice » ; l'unité est lue en °C."
+  },
+  {
+   "where": "Complex_1 étape 1 (ordre d'addition)",
+   "issue": "Les Méthodes ajoutent la suspension de Sn(SBut)2 lentement à la solution du ligand (étape retenue) ; les Résultats écrivent l'inverse (le ligand ajouté à la solution toluénique de Sn(SBut)2, à l'abri de la lumière du jour). Contradiction non résolue par l'article."
+  },
+  {
+   "where": "Valeurs lues sur figures (6a, 6d, 7a, 9b, 9c)",
+   "issue": "« 350 nm FTO » (Fig. 6d), « PDF #39-354 » et pic 171/080 (Fig. 6a), indexation et substrat Mo PDF #42-1120 (Fig. 7a), distance 0,22 nm et anneaux indexés (Fig. 9b,c) sont des étiquettes lues sur les images, absentes du texte. L'axe 2θ de la Fig. 7a (≈ 5–40°) est inhabituel et non commenté (longueur d'onde éventuellement différente de celle de la Fig. 6a)."
   }
  ]
 }
