@@ -54,7 +54,10 @@
      "purity": "99.9 wt%",
      "quote": "Equimolar ZrCl4 (0.930 g, 4 mmol) and organic ligand H2BDC (0.660 g, 4 mmol) were separately dissolved in total 20 mL DMF under ultrasound for 30 minutes.",
      "supplier": "J&K scientific Co. Ltd",
-     "supplier_quote": "Zirconium tetrachloride (ZrCl4, 99.95 wt%), 1,4-benzenedicarboxylic acid (H2BDC, 99 wt%) and N,N-dimethylformamide (DMF, 99.9 wt%) were provided by J&K scientific Co. Ltd."
+     "supplier_quote": "Zirconium tetrachloride (ZrCl4, 99.95 wt%), 1,4-benzenedicarboxylic acid (H2BDC, 99 wt%) and N,N-dimethylformamide (DMF, 99.9 wt%) were provided by J&K scientific Co. Ltd.",
+     "not_stated": [
+      "water_content"
+     ]
     },
     {
      "name": "hydrobromic acid",
@@ -100,7 +103,10 @@
      ],
      "not_stated": [
       "temperature",
-      "ultrasound_power"
+      "ultrasound_power",
+      "dmf_volume_per_solution",
+      "ultrasound_frequency",
+      "ultrasound_bath_temperature"
      ]
     },
     {
@@ -119,7 +125,8 @@
      "equipment": [],
      "not_stated": [
       "temperature",
-      "stirring_speed"
+      "stirring_speed",
+      "ultrasound_power"
      ]
     },
     {
@@ -137,7 +144,9 @@
      ],
      "equipment": [],
      "not_stated": [
-      "addition_rate"
+      "addition_rate",
+      "ultrasound_power",
+      "equivalent_definition"
      ]
     },
     {
@@ -418,6 +427,12 @@
      "value_num": 0.639,
      "unit": "cm3/g",
      "quote": "UiO-66-2HBr 1451 1273 0.516 0.639"
+    },
+    {
+     "property": "pore_size_distribution_maximum",
+     "value_num": 10.0,
+     "unit": "Å",
+     "quote": "When UiO-66 was synthesized with 1–5 eq. HBr acid additive, the pore size distribution exhibited a slight broad peak with a small shoulder. The peak was positioned at around 10.0 Å."
     }
    ],
    "missing_fields": [
@@ -427,7 +442,10 @@
     "autoclave_filling",
     "cooling_after_autoclave",
     "atmosphere_of_drying",
-    "yield"
+    "yield",
+    "dmf_volume_per_solution",
+    "equivalent_definition",
+    "water_content_of_DMF"
    ]
   },
   {
@@ -437,8 +455,8 @@
     "name": "UiO-66 without modulator",
     "formula": "Zr6O4(OH)4(BDC)6",
     "family": "MOF",
-    "phase": "UiO-66",
-    "morphology": "heterogeneous agglomerates, atypical cuboctahedron structure"
+    "phase": "trace amount of UiO-66",
+    "morphology": null
    },
    "quote": "The samples were labelled as UiO-66-free for sample synthesized without modulator",
    "variations": [
@@ -472,7 +490,10 @@
      ],
      "not_stated": [
       "temperature",
-      "ultrasound_power"
+      "ultrasound_power",
+      "dmf_volume_per_solution",
+      "ultrasound_frequency",
+      "ultrasound_bath_temperature"
      ]
     },
     {
@@ -491,7 +512,8 @@
      "equipment": [],
      "not_stated": [
       "temperature",
-      "stirring_speed"
+      "stirring_speed",
+      "ultrasound_power"
      ]
     },
     {
@@ -681,6 +703,9 @@
      "unit": "cm3/g",
      "quote": "UiO-66-free 325 331 0.132 0.377"
     }
+   ],
+   "not_stated": [
+    "morphology"
    ]
   },
   {
@@ -815,6 +840,12 @@
      "property": "XRD_phase",
      "value_text": "UiO-66 characteristic peaks at 7.4°, 8.5° and 25.8°",
      "quote": "As can be seen, all samples exhibited characteristic diffraction peaks of UiO-66 at 7.4°, 8.5° and 25.8°, which were significantly different from sample UiO-66-free (Fig. 2b)."
+    },
+    {
+     "property": "pore_size_distribution_maximum",
+     "value_num": 10.0,
+     "unit": "Å",
+     "quote": "When UiO-66 was synthesized with 1–5 eq. HBr acid additive, the pore size distribution exhibited a slight broad peak with a small shoulder. The peak was positioned at around 10.0 Å."
     }
    ]
   },
@@ -940,6 +971,12 @@
      "property": "XRD_phase",
      "value_text": "UiO-66 characteristic peaks at 7.4°, 8.5° and 25.8°",
      "quote": "As can be seen, all samples exhibited characteristic diffraction peaks of UiO-66 at 7.4°, 8.5° and 25.8°, which were significantly different from sample UiO-66-free (Fig. 2b)."
+    },
+    {
+     "property": "pore_size_distribution_maximum",
+     "value_num": 10.0,
+     "unit": "Å",
+     "quote": "When UiO-66 was synthesized with 1–5 eq. HBr acid additive, the pore size distribution exhibited a slight broad peak with a small shoulder. The peak was positioned at around 10.0 Å."
     }
    ]
   },
@@ -1065,6 +1102,12 @@
      "property": "XRD_phase",
      "value_text": "UiO-66 characteristic peaks at 7.4°, 8.5° and 25.8°",
      "quote": "As can be seen, all samples exhibited characteristic diffraction peaks of UiO-66 at 7.4°, 8.5° and 25.8°, which were significantly different from sample UiO-66-free (Fig. 2b)."
+    },
+    {
+     "property": "pore_size_distribution_maximum",
+     "value_num": 10.0,
+     "unit": "Å",
+     "quote": "When UiO-66 was synthesized with 1–5 eq. HBr acid additive, the pore size distribution exhibited a slight broad peak with a small shoulder. The peak was positioned at around 10.0 Å."
     }
    ]
   },
@@ -1201,6 +1244,12 @@
      "value_num": 1303,
      "unit": "m2 g−1",
      "quote": "For samples UiO-66-nHBr (n = 1–9), BET surface areas were afforded values of 1527, 1451, 1401, 1411, 1303, 1249, 1216, 1193 and 1134 m2 g−1 with the increase of n, respectively."
+    },
+    {
+     "property": "pore_size_distribution_maximum",
+     "value_num": 10.0,
+     "unit": "Å",
+     "quote": "When UiO-66 was synthesized with 1–5 eq. HBr acid additive, the pore size distribution exhibited a slight broad peak with a small shoulder. The peak was positioned at around 10.0 Å."
     }
    ]
   },
@@ -1451,6 +1500,12 @@
      "property": "XRD_phase",
      "value_text": "UiO-66 characteristic peaks at 7.4°, 8.5° and 25.8°",
      "quote": "As can be seen, all samples exhibited characteristic diffraction peaks of UiO-66 at 7.4°, 8.5° and 25.8°, which were significantly different from sample UiO-66-free (Fig. 2b)."
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "When HBr–ZrCl4 molar ratio was larger than 6, the heterogeneity of pores further increased. A new mode of pores positioned at around 6 Å appeared"
     }
    ]
   },
@@ -1582,6 +1637,12 @@
      "value_num": 1193,
      "unit": "m2 g−1",
      "quote": "For samples UiO-66-nHBr (n = 1–9), BET surface areas were afforded values of 1527, 1451, 1401, 1411, 1303, 1249, 1216, 1193 and 1134 m2 g−1 with the increase of n, respectively."
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "When HBr–ZrCl4 molar ratio was larger than 6, the heterogeneity of pores further increased. A new mode of pores positioned at around 6 Å appeared"
     }
    ]
   },
@@ -1712,6 +1773,12 @@
      "property": "XRD_phase",
      "value_text": "UiO-66 characteristic peaks at 7.4°, 8.5° and 25.8°",
      "quote": "As can be seen, all samples exhibited characteristic diffraction peaks of UiO-66 at 7.4°, 8.5° and 25.8°, which were significantly different from sample UiO-66-free (Fig. 2b)."
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "When HBr–ZrCl4 molar ratio was larger than 6, the heterogeneity of pores further increased. A new mode of pores positioned at around 6 Å appeared"
     }
    ]
   },
@@ -1752,10 +1819,9 @@
    "outcomes": [
     {
      "property": "reaction_mass_efficiency",
-     "value_num": 40,
+     "value_num": 40.39,
      "unit": "%",
-     "from_figure": "Fig. 9",
-     "quote": "Fig. 9 The RMEs of UiO-66 synthesized with different haloid acid modulator."
+     "quote": "As the mole ratio of HF–ZrCl4 increases, the RMEs decreased monotonically with the maximum value of only 40.39%."
     },
     {
      "property": "product_mass",
@@ -1906,6 +1972,26 @@
      "value_num": 1442,
      "unit": "m2 g−1",
      "quote": "Take samples UiO-66-2HF, UiO-66-2HCl and UiO-66-2HBr for example, BET surface area values were 1442, 1622 and 1451 m2 g−1, respectively."
+    },
+    {
+     "property": "FTIR_carboxyl_band_3103_2546",
+     "value_text": "no evident vibration peak at 3103–2546 cm−1",
+     "quote": "For samples prepared with haloid acid modulator, however, there was no evident vibration peak at 3103–2546 cm−1."
+    },
+    {
+     "property": "crystallinity_comparison",
+     "value_text": "Materials obtained with HF acid and HBr acid modulators, especially the fluorine-involved sample, exhibited better crystallinity than those with HCl additive",
+     "quote": "Materials obtained with HF acid and HBr acid modulators, especially the fluorine-involved sample, exhibited better crystallinity than those with HCl additive."
+    },
+    {
+     "property": "TGA_weight_loss_comparison",
+     "value_text": "Samples synthesized with HBr and HCl acid additive showed greater weight loss than those with HF acid",
+     "quote": "Samples synthesized with HBr and HCl acid additive showed greater weight loss than those with HF acid."
+    },
+    {
+     "property": "TGA_framework_decomposition_temperature",
+     "value_text": "a higher framework decomposition temperature of fluorine-involved samples than fluorine-free samples",
+     "quote": "The strong bond strength of Zr–F also implies a higher framework decomposition temperature of fluorine-involved samples than fluorine-free samples"
     }
    ]
   },
@@ -1956,6 +2042,12 @@
      "value_num": 0.57,
      "unit": "g",
      "quote": "UiO-66-3 HF 1 / 0.9330 1 / 0.6614 “ 3 / 0.210 0.57"
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "For the fluorine-involved samples, pores at around 6 Å corresponding to cluster-missing defectivity appeared besides those at around 9 Å when the molar ratio of HF to ZrCl4 was not less than 3."
     }
    ]
   },
@@ -2006,6 +2098,12 @@
      "value_num": 0.55,
      "unit": "g",
      "quote": "UiO-66-4 HF 1 / 0.9330 1 / 0.6640 “ 4 / 0.275 0.55"
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "For the fluorine-involved samples, pores at around 6 Å corresponding to cluster-missing defectivity appeared besides those at around 9 Å when the molar ratio of HF to ZrCl4 was not less than 3."
     }
    ]
   },
@@ -2056,6 +2154,12 @@
      "value_num": 0.48,
      "unit": "g",
      "quote": "UiO-66-5 HF 1 / 0.9330 1 / 0.6640 “ 5 / 0.345 0.48"
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "For the fluorine-involved samples, pores at around 6 Å corresponding to cluster-missing defectivity appeared besides those at around 9 Å when the molar ratio of HF to ZrCl4 was not less than 3."
     }
    ]
   },
@@ -2106,6 +2210,12 @@
      "value_num": 0.3,
      "unit": "g",
      "quote": "UiO-66-6 HF 1 / 0.9322 1 / 0.6630 “ 6 / 0.415 0.30"
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "For the fluorine-involved samples, pores at around 6 Å corresponding to cluster-missing defectivity appeared besides those at around 9 Å when the molar ratio of HF to ZrCl4 was not less than 3."
     }
    ]
   },
@@ -2156,6 +2266,12 @@
      "value_num": 0.27,
      "unit": "g",
      "quote": "UiO-66-7 HF 1 / 0.9322 1 / 0.6630 “ 7 / 0.485 0.27"
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "For the fluorine-involved samples, pores at around 6 Å corresponding to cluster-missing defectivity appeared besides those at around 9 Å when the molar ratio of HF to ZrCl4 was not less than 3."
     }
    ]
   },
@@ -2206,6 +2322,12 @@
      "value_num": 0.22,
      "unit": "g",
      "quote": "UiO-66-8 HF 1 / 0.9330 1 / 0.6619 “ 8 / 0.555 0.22"
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "For the fluorine-involved samples, pores at around 6 Å corresponding to cluster-missing defectivity appeared besides those at around 9 Å when the molar ratio of HF to ZrCl4 was not less than 3."
     }
    ]
   },
@@ -2256,6 +2378,12 @@
      "value_num": 0.19,
      "unit": "g",
      "quote": "UiO-66-9 HF 1 / 0.9330 1 / 0.6619 “ 9 / 0.620 0.19"
+    },
+    {
+     "property": "pore_size_distribution_new_mode",
+     "value_num": 6,
+     "unit": "Å",
+     "quote": "For the fluorine-involved samples, pores at around 6 Å corresponding to cluster-missing defectivity appeared besides those at around 9 Å when the molar ratio of HF to ZrCl4 was not less than 3."
     }
    ]
   },
@@ -2312,6 +2440,11 @@
      "value_num": 1647,
      "unit": "m2 g−1",
      "quote": "Similarly, BET surface area presented a significant increasement from 410 m2 g−1 of the modulator-free sample to 1647 m2 g−1 of UiO-66-1HCl sample."
+    },
+    {
+     "property": "pore_size_distribution_additional_mode",
+     "value_text": "another mode of larger pore (no larger than 12 Å)",
+     "quote": "In contrast, the pore size of chlorine-involved samples additionally exhibited another mode of larger pore (no larger than 12 Å)."
     }
    ]
   },
@@ -2456,6 +2589,31 @@
      "value_num": 1622,
      "unit": "m2 g−1",
      "quote": "Take samples UiO-66-2HF, UiO-66-2HCl and UiO-66-2HBr for example, BET surface area values were 1442, 1622 and 1451 m2 g−1, respectively."
+    },
+    {
+     "property": "pore_size_distribution_additional_mode",
+     "value_text": "another mode of larger pore (no larger than 12 Å)",
+     "quote": "In contrast, the pore size of chlorine-involved samples additionally exhibited another mode of larger pore (no larger than 12 Å)."
+    },
+    {
+     "property": "FTIR_carboxyl_band_3103_2546",
+     "value_text": "no evident vibration peak at 3103–2546 cm−1",
+     "quote": "For samples prepared with haloid acid modulator, however, there was no evident vibration peak at 3103–2546 cm−1."
+    },
+    {
+     "property": "crystallinity_comparison",
+     "value_text": "Materials obtained with HF acid and HBr acid modulators, especially the fluorine-involved sample, exhibited better crystallinity than those with HCl additive",
+     "quote": "Materials obtained with HF acid and HBr acid modulators, especially the fluorine-involved sample, exhibited better crystallinity than those with HCl additive."
+    },
+    {
+     "property": "TGA_weight_loss_comparison",
+     "value_text": "Samples synthesized with HBr and HCl acid additive showed greater weight loss than those with HF acid",
+     "quote": "Samples synthesized with HBr and HCl acid additive showed greater weight loss than those with HF acid."
+    },
+    {
+     "property": "TGA_framework_decomposition_temperature",
+     "value_text": "no significant change on the decomposition temperature compared to the sample without acid additive",
+     "quote": "This was confirmed by TGA results that samples synthesized with HCl and HBr additive showed no significant change on the decomposition temperature compared to the sample without acid additive."
     }
    ]
   },
@@ -2506,6 +2664,11 @@
      "value_num": 1.3,
      "unit": "g",
      "quote": "UiO-66-3 HCl 1 / 0.9322 1 / 0.6629 “ 3 / 0.370 1.30"
+    },
+    {
+     "property": "pore_size_distribution_additional_mode",
+     "value_text": "another mode of larger pore (no larger than 12 Å)",
+     "quote": "In contrast, the pore size of chlorine-involved samples additionally exhibited another mode of larger pore (no larger than 12 Å)."
     }
    ]
   },
@@ -2556,6 +2719,11 @@
      "value_num": 1.44,
      "unit": "g",
      "quote": "UiO-66-4 HCl 1 / 0.9339 1 / 0.6628 “ 4 / 0.495 1.44"
+    },
+    {
+     "property": "pore_size_distribution_additional_mode",
+     "value_text": "another mode of larger pore (no larger than 12 Å)",
+     "quote": "In contrast, the pore size of chlorine-involved samples additionally exhibited another mode of larger pore (no larger than 12 Å)."
     }
    ]
   },
@@ -2606,6 +2774,11 @@
      "value_num": 1.39,
      "unit": "g",
      "quote": "UiO-66-5 HCl 1 / 0.9339 1 / 0.6628 “ 5 / 0.615 1.39"
+    },
+    {
+     "property": "pore_size_distribution_additional_mode",
+     "value_text": "another mode of larger pore (no larger than 12 Å)",
+     "quote": "In contrast, the pore size of chlorine-involved samples additionally exhibited another mode of larger pore (no larger than 12 Å)."
     }
    ]
   },
@@ -2656,6 +2829,11 @@
      "value_num": 1.37,
      "unit": "g",
      "quote": "UiO-66-6 HCl 1 / 0.9333 1 / 0.6623 “ 6 / 0.740 1.37"
+    },
+    {
+     "property": "pore_size_distribution_additional_mode",
+     "value_text": "another mode of larger pore (no larger than 12 Å)",
+     "quote": "In contrast, the pore size of chlorine-involved samples additionally exhibited another mode of larger pore (no larger than 12 Å)."
     }
    ]
   },
@@ -2706,6 +2884,11 @@
      "value_num": 1.46,
      "unit": "g",
      "quote": "UiO-66-7 HCl 1 / 0.9333 1 / 0.6623 “ 7 / 0.865 1.46"
+    },
+    {
+     "property": "pore_size_distribution_additional_mode",
+     "value_text": "another mode of larger pore (no larger than 12 Å)",
+     "quote": "In contrast, the pore size of chlorine-involved samples additionally exhibited another mode of larger pore (no larger than 12 Å)."
     }
    ]
   },
@@ -2756,6 +2939,16 @@
      "value_num": 1.42,
      "unit": "g",
      "quote": "UiO-66-8 HCl 1 / 0.9332 1 / 0.6629 “ 8 / 0.985 1.42"
+    },
+    {
+     "property": "pore_size_distribution_additional_mode",
+     "value_text": "another mode of larger pore (no larger than 12 Å)",
+     "quote": "In contrast, the pore size of chlorine-involved samples additionally exhibited another mode of larger pore (no larger than 12 Å)."
+    },
+    {
+     "property": "N2_adsorption_performance",
+     "value_text": "the adsorption performance declined sharply, or even did not occur",
+     "quote": "More specially, when the amount of HCl was too large (8–9 eq.), the adsorption performance declined sharply, or even did not occur."
     }
    ]
   },
@@ -2806,6 +2999,16 @@
      "value_num": 1.38,
      "unit": "g",
      "quote": "UiO-66-9 HCl 1 / 0.9332 1 / 0.6629 “ 9 / 1.110 1.38"
+    },
+    {
+     "property": "pore_size_distribution_additional_mode",
+     "value_text": "another mode of larger pore (no larger than 12 Å)",
+     "quote": "In contrast, the pore size of chlorine-involved samples additionally exhibited another mode of larger pore (no larger than 12 Å)."
+    },
+    {
+     "property": "N2_adsorption_performance",
+     "value_text": "the adsorption performance declined sharply, or even did not occur",
+     "quote": "More specially, when the amount of HCl was too large (8–9 eq.), the adsorption performance declined sharply, or even did not occur."
     }
    ]
   },
@@ -2923,7 +3126,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "La porosité (adsorption de N2, surface BET) augmente d'abord très légèrement avec la dose de HBr (1 à 3 équivalents) puis diminue davantage (4 à 9 équivalents) ; avec HF elle baisse nettement quand la dose augmente, et avec HCl l'adsorption s'effondre à 8–9 équivalents.",
+   "text": "Selon les auteurs, l'adsorption de N2 (porosité) augmente d'abord très légèrement avec la dose de HBr (1 à 3 équivalents) puis diminue davantage (4 à 9 équivalents) ; la surface BET du Tableau S5, elle, décroît dès 1 équivalent (1527, 1451, 1401 m2/g pour 1, 2, 3 éq.). Avec HF la porosité baisse nettement quand la dose augmente, et avec HCl l'adsorption s'effondre à 8–9 équivalents.",
    "quote": "As HBr acid dosage got higher, the porosity of UiO-66 samples showed a trend of first very slightly increasing (1–3 eq.) and then decreasing much more (4–9 eq.)."
   },
   {
@@ -2941,7 +3144,7 @@
   {
    "type": "conclusion_auteurs",
    "route": null,
-   "text": "Les auteurs concluent que HBr à forte concentration de précurseurs donne un UiO-66 avec beaucoup de clusters manquants mais un RME élevé, une surface spécifique plus grande et une meilleure porosité qu'avec HCl ou HF, et que le passage à l'échelle ×3 (RME moyen 84,52 %, facteur E de 30,3 kg kg−1 contre 108,3 kg kg−1 pour la synthèse diluée classique) est plus vert.",
+   "text": "Les auteurs concluent que HBr à forte concentration de précurseurs donne un UiO-66 avec beaucoup de clusters manquants mais un RME élevé, une surface spécifique plus grande et une meilleure porosité qu'avec HCl ou HF ; cette affirmation est contredite par leur Tableau S5 : à 2 équivalents la surface BET est de 1630 m2/g avec HCl, 1451 avec HBr et 1442 avec HF. Ils concluent aussi que le passage à l'échelle ×3 (RME moyen 84,52 %, facteur E de 30,3 kg kg−1 contre 108,3 kg kg−1 pour la synthèse diluée classique) est plus vert.",
    "quote": "We successfully scaled up the synthesis of UiO-66-2HBr by a factor of 3, resulting in an average RME of 84.52%."
   },
   {
@@ -2953,22 +3156,22 @@
   {
    "type": "mecanisme_analyse",
    "route": "UiO-66-2HBr",
-   "text": "Hypothèse de l'extracteur : le ZrCl4 s'hydrolyse dans le DMF en présence d'eau (apportée surtout par la solution d'acide à 40 % en masse) et libère de l'HCl, selon 6 ZrCl4 + 8 H2O + 6 H2BDC → Zr6O4(OH)4(BDC)6 + 24 HCl, ce qui correspond au rapport ZrCl4:H2O de 6:8 cité par les auteurs. Le bromure, base plus molle et plus faiblement liée à Zr(IV) que le chlorure ou le fluorure, serait déplacé plus facilement par le carboxylate du ligand ; l'acide fort protonerait le ligand et ralentirait la coordination, mais à 0,2 mol L−1 la sursaturation domine et la cristallisation est rapide. À 120 °C pendant 24 h, le DMF peut aussi s'hydrolyser lentement en diméthylamine et acide formique, qui jouent le rôle de modulateurs secondaires ; ce point n'est pas discuté par l'article."
+   "text": "Hypothèse de l'extracteur, non mesurée : l'eau, apportée presque uniquement par la solution aqueuse d'acide (≈ 10 mmol par « éq. » nominal de HBr à 40 %), hydrolyse ZrCl4 en clusters Zr6O4(OH)4 selon 6 ZrCl4 + 8 H2O + 6 H2BDC → Zr6O4(OH)4(BDC)6 + 24 HCl, soit ≈ 16 mmol de HCl formées in situ pour 4 mmol de ZrCl4, quantité du même ordre que l'acide ajouté ou supérieure ; les clusters préformés se lient ensuite au téréphtalate. À 0,2 mol L−1 et en milieu très acide, la croissance rapide laisse des clusters et des linkers manquants, coiffés par Cl−, OH−/H2O et sans doute par du formiate issu de l'hydrolyse du DMF à 120 °C, point que l'article ne discute pas. L'effet propre de l'halogénure n'est pas séparé de celui de l'eau ; le bromure, peu retenu (0,29 % de Br contre 1,90 % de Cl en XPS), agit surtout comme acide fort et contre-ion labile."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Dangers non mentionnés par l'article : ZrCl4 réagit violemment avec l'humidité en libérant de l'HCl ; le DMF est reprotoxique et se décompose lentement à chaud ; HF (même à 40 %) est extrêmement toxique et corrosif (brûlures profondes, gluconate de calcium requis, attaque du verre) et doit être manipulé avec des gants adaptés et en plastique ; HBr et HCl concentrés sont corrosifs et dégagent des vapeurs ; le chauffage de 20 mL de DMF avec de l'eau à 120 °C dans un autoclave de 50 mL fermé crée une surpression (et le passage à l'échelle ×3 avec 60 mL de DMF exige un autoclave plus grand) ; le méthanol est inflammable et toxique ; les poudres nanométriques doivent être manipulées avec protection respiratoire."
+   "text": "Dangers non mentionnés par l'article : ZrCl4 réagit violemment avec l'humidité en libérant de l'HCl ; le DMF est reprotoxique et se décompose lentement à chaud ; HF (même à 40 %) est extrêmement toxique et corrosif (brûlures profondes, gluconate de calcium requis, attaque du verre) et doit être manipulé avec des gants adaptés et en plastique ; HBr et HCl concentrés sont corrosifs et dégagent des vapeurs ; à 120 °C le DMF reste sous son point d'ébullition (153 °C), la pression de vapeur est modeste, mais l'hydrolyse de ZrCl4 forme ≈ 16 mmol de HCl in situ, qui corrodent l'acier si la chemise PTFE fuit (et le passage à l'échelle ×3 avec 60 mL de DMF exige un autoclave plus grand) ; le méthanol est inflammable et toxique ; les poudres nanométriques doivent être manipulées avec protection respiratoire."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Définition des équivalents : les volumes d'acide du Tableau 1 et du Tableau S1 (par exemple 0,430 mL pour 2 éq. de HBr à 40 % en masse) correspondent, avec les densités usuelles des solutions, à environ 1,5 mmol d'acide par « éq. », et non aux 4 mmol de ZrCl4 pris pour référence. L'unité des quantités d'acide dans le Tableau S1 n'est pas écrite (le Tableau 1 indique mL pour HBr) ; elle a été reprise pour HF et HCl par analogie. Un chimiste doit donc se fier aux volumes plutôt qu'aux équivalents, et vérifier avec les auteurs."
+   "text": "Définition des équivalents : les volumes d'acide des Tableaux 1 et S1 (par exemple 0,215 mL de HBr à 40 % en masse pour « 1 éq. ») correspondent, avec les densités usuelles des solutions, à environ 1,5 mmol d'acide, soit ≈ 0,37 éq. réel de ZrCl4 pour HBr et HCl et ≈ 0,40 pour HF ; les volumes du Tableau S1 se retrouvent en calculant n × M / densité comme si l'acide était pur (HCl 0,124 mL calculé contre 0,125 mL écrit, HF 0,071 contre 0,070), de sorte que « 9 éq. » équivaut à ≈ 3,3–3,5 éq. réels. Selon le critique scientifique (densités PubChem, Sigma-Aldrich), un chimiste doit reprendre les volumes et non les équivalents. L'unité des quantités d'acide du Tableau S1 n'est pas écrite (le Tableau 1 indique mL pour HBr) ; elle a été reprise pour les autres rangées par analogie."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Non cités : durée de centrifugation (« certain time »), puissance et température des ultrasons, remplissage et refroidissement de l'autoclave, atmosphère de séchage, agitation entre les lavages et volume de méthanol. Les masses de ZrCl4 et de H2BDC pesées varient légèrement d'une synthèse à l'autre dans le Tableau S1 (ZrCl4 de 0,9229 à 0,9340 g, H2BDC de 0,6602 à 0,6640 g) sans que cela soit une variable étudiée ; la voie de base reprend les 0,930 g et 0,660 g des Méthodes."
+   "text": "Non cités : répartition des 20 mL de DMF entre la solution de ZrCl4 et celle de H2BDC (« in total 20 mL »), puissance, fréquence et température des ultrasons, durée de centrifugation (« certain time »), remplissage et refroidissement de l'autoclave, atmosphère de séchage, teneur en eau du DMF et des réactifs, agitation entre les lavages et volume de méthanol. Les masses de ZrCl4 et de H2BDC pesées varient légèrement d'une synthèse à l'autre dans le Tableau S1 (ZrCl4 de 0,9229 à 0,9340 g, H2BDC de 0,6602 à 0,6640 g) sans que cela soit une variable étudiée ; la voie de base reprend les 0,930 g et 0,660 g des Méthodes."
   },
   {
    "type": "limite_reproductibilite",
@@ -2978,7 +3181,52 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Résultats figurant seulement sur des figures et non repris valeur par valeur : distribution de taille de pores de chaque échantillon (figure 8, courbes superposées illisibles à l'échelle de chaque échantillon), isothermes (figure 7), courbes ATG (figure 6), diagrammes de DRX (figure 2) et images MEB (figure 1). Seul le RME de la figure 9 a été lu graphiquement (précision d'environ ± 2 points, deux chiffres significatifs). L'équation (1) du RME et l'équation (2) n'apparaissent pas dans le texte fourni."
+   "text": "Résultats figurant seulement sur des figures et non repris valeur par valeur : distribution de taille de pores de chaque échantillon (figure 8, courbes superposées illisibles à l'échelle de chaque échantillon ; seules les valeurs écrites dans le texte par plage d'équivalents sont reprises), isothermes (figure 7), courbes ATG (figure 6), diagrammes de DRX (figure 2) et images MEB (figure 1). Seul le RME de la figure 9 a été lu graphiquement (précision d'environ ± 2 points, deux chiffres significatifs). Les équations (1) et (2) sont des images absentes du texte, lues dans les fichiers de figures : RME = m(UiO-66) / (m(Zr) + m(linker)) × 100 (avec m(Zr) la masse de ZrCl4 d'après la légende) et Rel(I)BP = I(BP) / [(I(111) + I(200) + I(600)) / 3] × 100 ; les RME du Tableau S1 se recalculent avec la première (y compris 4 HBr, supérieur à 100 %). L'équation (3) (rapport ZrCl4:H2O de 6:8) n'est pas disponible."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66-2HBr",
+   "text": "Bilan de masse : le Zr introduit ne peut donner au plus que 1,110 g de Zr6O4(OH)4(BDC)6, soit un RME maximal de 69,7 % pour un UiO-66 sec, alors que l'article annonce 95,44 % (1,52 g) et 80–112 % pour d'autres échantillons. Le solide séché à 150 °C contient donc encore du solvant, de l'eau ou des sels : le RME et le facteur E mesurent une masse de solide récupérée, pas un rendement en MOF."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66-2HBr",
+   "text": "À « éq. » égal, les acides n'apportent pas la même eau : 9,9 mmol pour HBr 40 %, 5,2 pour HCl 37 % et 2,6 pour HF 40 % ; le rapport H2O:ZrCl4 est ≈ 14,8:6 pour 1 éq. nominal de HBr (contre « about 6 : 10 » écrit par les auteurs) et le besoin stœchiométrique est 8:6. L'effet propre de l'halogénure n'est donc pas isolé de celui de l'eau apportée ; il faudrait des témoins à eau ajoutée séparément ou des acides anhydres."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66-free",
+   "text": "Incohérences de l'article pour l'échantillon sans modulateur : surface BET de 410 m2/g dans le texte contre 325 m2/g au Tableau S5, et surface microporeuse de 331 m2/g supérieure à la BET (325), impossible avec la définition de l'annexe (BET moins surface BJH). Les lignes du Tableau S2 et S3 sont vides : la cristallinité de ce témoin n'est pas quantifiée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66-4HBr",
+   "text": "La masse de produit (1,77 g) dépasse la somme des masses de ZrCl4 et de H2BDC (1,583 g ; RME de 111,8 %), alors que ZrCl4 perd ses chlorures : ce solide n'est pas du UiO-66 sec, probablement mal lavé ou mal séché, ce qui rend aussi ses résultats ATG et BET suspects. Les auteurs signalent l'exception sans l'expliquer."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66-8HBr",
+   "text": "Le RME lu sur la figure 9 (≈ 97 %) ne correspond pas au Tableau S1 (1,35 g pour 0,9229 + 0,6603 g de précurseurs, soit ≈ 85,3 % avec l'équation (1)). Le texte annonce 94,50–97,31 % jusqu'à 9 éq. alors que le Tableau S1 donne ≈ 91, 85 et 80 % pour 7, 8 et 9 éq. ; la valeur lue sur la figure est conservée, et la masse du Tableau S1 est le contrôle à refaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66-2HF",
+   "text": "Les auteurs attribuent le faible rendement avec HF à une « stronger acidity » alors que HF est le plus faible des trois acides (pKa ≈ 3,2) et que le RME baisse quand la dose, donc l'eau, augmente : la complexation du Zr(IV) par le fluorure, qui garde le zirconium en solution, est l'explication la plus probable (analyse du critique scientifique, qui cite J. Electrochem. Soc. 2023, 10.1149/1945-7111/acb9c2, non vérifié)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66-2HCl",
+   "text": "Le résumé et la conclusion (1) disent que HBr donne une plus grande surface spécifique que HCl et HF, mais les données des auteurs montrent le contraire : 1622 m2/g (texte) ou 1630 (Tableau S5) pour HCl contre 1451 pour HBr et 1442 pour HF à 2 équivalents."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "UiO-66-2HF",
+   "text": "HF à 40 % provoque des brûlures profondes et une toxicité systémique et attaque le verre : les solutions et l'étape aux ultrasons doivent se faire en PTFE ou en polypropylène (sinon fluorosilicates et contamination par le silicium), avec du gel de gluconate de calcium à portée. L'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "UiO-66-2HF",
+   "text": "Hypothèse de l'extracteur, d'après la critique scientifique : le fluorure se lie fortement au Zr(IV), coiffe les sites des clusters (moins de linkers manquants, meilleure tenue thermique) et, à dose croissante, forme des fluorozirconates solubles qui retirent le zirconium de la cristallisation, d'où un RME qui décroît de 40 % à 12 % ; l'acidité ne serait pas la cause. Non mesuré par les auteurs."
   }
  ],
  "method_sources": [
@@ -3301,7 +3549,7 @@
  "doubts": [
   {
    "where": "Tableau S1 / Tableau 1, quantités d'acide",
-   "issue": "Le Tableau S1 donne « Masses (g) or volume (mL) » sans préciser l'unité de la colonne acide ; le Tableau 1 écrit « HBr acid/mL ». L'unité mL a été retenue pour HBr, HF et HCl par cohérence avec le Tableau 1. Les volumes (0,215 mL par « éq. » de HBr 40 %, 0,125 mL pour HCl 37 %, 0,070 mL pour HF 40 %) correspondent à environ 1,5 mmol d'acide, non aux 4 mmol d'un équivalent de ZrCl4 ; la définition de l'équivalent reste ambiguë."
+   "issue": "Le Tableau S1 donne « Masses (g) or volume (mL) » sans préciser l'unité de la colonne acide ; seul le Tableau 1 écrit « HBr acid/mL » (rangées 2 HBr et 2 HBrsu). L'unité mL est donc déduite, par cohérence avec le Tableau 1, pour toutes les autres rangées : HBr 1 et 3 à 9 éq. (variations, sans unité), HF 1 à 9 éq. et HCl 1 à 9 éq. (réactifs en mL). Les volumes (0,215 mL par « éq. » de HBr 40 %, 0,125 mL pour HCl 37 %, 0,070 mL pour HF 40 %) correspondent à environ 1,5 mmol d'acide, non aux 4 mmol d'un équivalent de ZrCl4 ; la définition de l'équivalent reste ambiguë."
   },
   {
    "where": "UiO-66-2HBr, réactifs",
@@ -3329,11 +3577,11 @@
   },
   {
    "where": "RME lus sur la figure 9",
-   "issue": "Valeurs lues sur le graphique (Fig. 9), deux chiffres significatifs, précision ≈ ± 2 points ; les points HBr et HCl à 7 éq. se recouvrent (≈ 91 % chacun) ; le point 4 HBr dépasse 100 % (≈ 110 %), ce que le texte signale comme exception. Les RME de 1 HBr, 2 HBr, etc. correspondent aux rapports masse de produit/masses de ZrCl4 + H2BDC du Tableau S1 ; seule la valeur 95,44 % de 2 HBr est écrite."
+   "issue": "Valeurs lues sur le graphique (Fig. 9), deux chiffres significatifs, précision ≈ ± 2 points ; les points HBr et HCl à 7 éq. se recouvrent (≈ 91 % chacun) ; le point 4 HBr dépasse 100 % (≈ 110 %), ce que le texte signale comme exception. Les RME recalculés avec les masses du Tableau S1 et l'équation (1) concordent à ± 2 points, sauf 8 HBr : ≈ 97 % lu sur la figure contre ≈ 85,3 % recalculé (1,35 g pour 0,9229 + 0,6603 g) ; le texte écrit aussi 94,50–97,31 % de 1 à 9 éq., alors que 7, 8 et 9 éq. donnent ≈ 91, 85 et 80 % avec le Tableau S1. Écart de l'article, non corrigé : la valeur lue sur la figure est conservée. Seule la valeur 95,44 % de 2 HBr est écrite pour la série HBr."
   },
   {
    "where": "Tableau S4",
-   "issue": "La « valeur théorique » 220,25 % n'apparaît qu'une fois (ligne de 6 HBr, probablement une cellule fusionnée) et diffère de la différence théorique de 131,4 % citée dans le texte ; non extraite. Les trois autres colonnes (valeur expérimentale, nombre de BDC, linkers manquants) sont extraites pour chaque échantillon."
+   "issue": "La valeur « 220.25 » n'apparaît qu'une fois, sur la ligne de 6 HBr, mais c'est la « Theoretical value, % » commune à toutes les lignes (cellule fusionnée dans l'annexe) : pour chaque échantillon, linkers manquants % = (220,25 − valeur expérimentale) / 120,25 (2 HBr : 18,5 % ; 1 HBr : 26,8 % ; 2 HF : 11,7 %), ce qui retrouve les colonnes de l'article. Elle n'est pas extraite comme résultat de 6 HBr. Le texte parle d'une différence théorique de « 131,4% » (Zr6O6(BDC)6 moins ZrO2), incompatible avec 220,25 − 100 = 120,25 : incohérence de l'article."
   },
   {
    "where": "UiO-66-2HBrsu, étapes",
@@ -3342,6 +3590,22 @@
   {
    "where": "Tableau S2, UiO-66-free",
    "issue": "La ligne UiO-66-free des Tableaux S2 et S3 est vide (pas de pic de UiO-66 mesurable ?) ; aucune valeur extraite pour ces tableaux."
+  },
+  {
+   "where": "UiO-66-free, morphologie et phase",
+   "issue": "La Fig. 1 ne montre que 1, 5 et 9 éq. de HBr : aucune image MEB ni description de morphologie n'existe pour l'échantillon sans modulateur, dont la morphologie est donc laissée non citée. Sa phase n'est pas affirmée comme UiO-66 : seule « trace amount of UiO-66 (RME 18.21%) » est formée et ses pics de DRX sont « significantly different » (Fig. 2b)."
+  },
+  {
+   "where": "UiO-66-1HF, RME",
+   "issue": "La valeur 40,39 % est le « maximum value » de la série HF d'après le texte ; elle est rattachée au point 1 éq. parce que la série décroît de façon monotone et que la lecture de la Fig. 9 donne ≈ 40 % pour ce point."
+  },
+  {
+   "where": "Distribution de taille de pores par plage d'équivalents (HBr 1–5 et 7–9, HF 3–9, HCl 1–9)",
+   "issue": "Les valeurs du texte sont données par plage : « 1–5 eq. » (10,0 Å), « larger than 6 » pour HBr (7, 8, 9 éq.), « not less than 3 » pour HF, et « chlorine-involved samples » sans liste d'équivalents pour HCl (reprises sur les neuf échantillons, dont 8 et 9 HCl dont l'adsorption de N2 s'effondre). Les modes de pores « jusqu'à 15,9 Å » ne sont rattachés à aucune dose précise et ne sont pas repris par branche."
+  },
+  {
+   "where": "UiO-66-2HF, UiO-66-2HCl, FT-IR, cristallinité et ATG",
+   "issue": "Le texte compare « the three selected samples » (DRX, Fig. 2b) et les échantillons à 2 éq. (FT-IR Fig. 4, ATG Fig. 6b) ; les phrases sont rattachées à 2 HF et 2 HCl en lisant « three selected samples » comme 2 HF, 2 HCl et 2 HBr. La phrase sur la décomposition plus haute renvoie à la « Fig. 8b » (figure de distribution de pores) au lieu de la Fig. 6b."
   }
  ]
 }
