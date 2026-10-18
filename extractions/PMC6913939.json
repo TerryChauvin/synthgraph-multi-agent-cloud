@@ -202,8 +202,8 @@
      "technique": "XRD",
      "result": "XRD of Ag NPs cast onto glass slides; the diffractograms are in Figure S1/S2 (supplementary, not in the repository)",
      "instrument": "Rigaku SmartLab SE",
-     "conditions": "60 kV, 20 mA, Cu Kα 1.54187 nm, 2θ 20 to 80",
-     "quote": "X-ray diffraction (XRD) measurements of synthesized silver nanoparticles cast onto glass slides were done on the above diffractometer operating at a voltage of 60 kV and current of 20 mA with Cu K (α) radiation of 1.54187 nm wavelength."
+     "conditions": "60 kV, 20 mA, Cu Kα 1.54187 nm, 2θ 20 to 80, scan 0.02/min, time constant 2 s",
+     "quote": "X-ray diffraction (XRD) measurements of synthesized silver nanoparticles cast onto glass slides were done on the above diffractometer operating at a voltage of 60 kV and current of 20 mA with Cu K (α) radiation of 1.54187 nm wavelength. The scanning as done in the region of 2h from 20 to 80 at 0.02/min and the time constant was 2s."
     }
    ],
    "outcomes": [
@@ -272,7 +272,7 @@
     {
      "name": "sodium alginate (SA) 1% (w/v) solution",
      "formula": null,
-     "role": "precursor",
+     "role": "polymer",
      "purity": "highest purity grade",
      "supplier": "Merck-Sigma",
      "supplier_quote": "All chemicals and reagents used in this study were of highest purity grade. Guar gum (GG), Sodium alginate (SA), Glycerol, Epigallactocatechin gallate (EGCG), Calcium chloride (CaCl2), Silver nitrate (AgNO3), Ethylenediamine (C2H8N2), Sodium borohydride (NaBH4), 2,4,6-Trinitrobenzene Sulfonic Acid (TNBS), Minimum Essential Medium (MEM), Trypsin-EDTA, Penicillin-Streptomycin antibiotic, 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyl tetrazolium bromide (MTT), were purchased from Merck-Sigma (St. Louis, MO, USA).",
@@ -282,7 +282,7 @@
     {
      "name": "gelatin (240 bloom) 1% (w/v) solution",
      "formula": null,
-     "role": "precursor",
+     "role": "polymer",
      "purity": "highest purity grade",
      "supplier": "SD Fine Chemicals, India",
      "supplier_quote": "All chemicals and reagents used in this study were of highest purity grade. Guar gum (GG), Sodium alginate (SA), Glycerol, Epigallactocatechin gallate (EGCG), Calcium chloride (CaCl2), Silver nitrate (AgNO3), Ethylenediamine (C2H8N2), Sodium borohydride (NaBH4), 2,4,6-Trinitrobenzene Sulfonic Acid (TNBS), Minimum Essential Medium (MEM), Trypsin-EDTA, Penicillin-Streptomycin antibiotic, 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyl tetrazolium bromide (MTT), were purchased from Merck-Sigma (St. Louis, MO, USA). Gelatin (240 bloom), Nitric acid (HNO3) AR grade were sourced from SD Fine Chemicals, India.",
@@ -292,7 +292,7 @@
     {
      "name": "glycerol",
      "formula": "C3H8O3",
-     "role": "precursor",
+     "role": "additive",
      "purity": "highest purity grade",
      "supplier": "Merck-Sigma",
      "supplier_quote": "All chemicals and reagents used in this study were of highest purity grade. Guar gum (GG), Sodium alginate (SA), Glycerol, Epigallactocatechin gallate (EGCG), Calcium chloride (CaCl2), Silver nitrate (AgNO3), Ethylenediamine (C2H8N2), Sodium borohydride (NaBH4), 2,4,6-Trinitrobenzene Sulfonic Acid (TNBS), Minimum Essential Medium (MEM), Trypsin-EDTA, Penicillin-Streptomycin antibiotic, 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyl tetrazolium bromide (MTT), were purchased from Merck-Sigma (St. Louis, MO, USA).",
@@ -303,7 +303,7 @@
     {
      "name": "calcium chloride",
      "formula": "CaCl2",
-     "role": "precursor",
+     "role": "crosslinker",
      "purity": "highest purity grade",
      "supplier": "Merck-Sigma",
      "supplier_quote": "All chemicals and reagents used in this study were of highest purity grade. Guar gum (GG), Sodium alginate (SA), Glycerol, Epigallactocatechin gallate (EGCG), Calcium chloride (CaCl2), Silver nitrate (AgNO3), Ethylenediamine (C2H8N2), Sodium borohydride (NaBH4), 2,4,6-Trinitrobenzene Sulfonic Acid (TNBS), Minimum Essential Medium (MEM), Trypsin-EDTA, Penicillin-Streptomycin antibiotic, 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyl tetrazolium bromide (MTT), were purchased from Merck-Sigma (St. Louis, MO, USA).",
@@ -454,6 +454,25 @@
       "pressure",
       "lyophilizer_model"
      ]
+    },
+    {
+     "order": 8,
+     "action": "sterilize",
+     "description": "UV sterilization of the patches in a cell culture hood before the cell, bacterial and in vivo tests.",
+     "quote": "Synthesized hydrogel wound patches were kept for UV sterilization in cell culture hood for 30 mins to remove any contamination before the application.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "Synthesized hydrogel wound patches were kept for UV sterilization in cell culture hood for 30 mins to remove any contamination before the application."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "uv_wavelength",
+      "lamp_distance"
+     ]
     }
    ],
    "characterizations": [
@@ -468,7 +487,7 @@
      "technique": "rheology",
      "result": "loss modulus G” higher than storage modulus G’ (fluid-like structure)",
      "instrument": "Anton Paar Modular Compact Rheometer MCR 102, parallel plate, radius 25 mm",
-     "conditions": "25°C; 0.5 g hydrogel; frequency sweep 0 to 100 rad/s",
+     "conditions": "25°C; 0.5 g hydrogel; frequency sweep 0 to 100 rad/s; shear rate γ = 100 s−1 applied for 10 s",
      "quote": "Figure 3E shows the loss modulus (G”) of HG to be higher than the storage modulus (G’) reflecting high strain amplitude and fluid-like structure, while other formulations showed reciprocal relation due to change in the interfacial properties of gel and referred as elastic solid.,"
     }
    ],
@@ -484,19 +503,57 @@
      "value_num": 78,
      "unit": "%",
      "from_figure": "Fig. 6B",
-     "quote": "Figure 6 HG-Ag-EGCG’s procoagulation and in vivo wound-healing potential."
+     "quote": "(B) Quantitative analysis of wound closure area on days 0, 9, 12 and 15th day post-treatment with different hydrogel nanocomposites"
     },
     {
      "property": "wound_remaining_day15_in_vivo",
      "value_num": 51,
      "unit": "%",
      "from_figure": "Fig. 6B",
-     "quote": "Figure 6 HG-Ag-EGCG’s procoagulation and in vivo wound-healing potential."
+     "quote": "(B) Quantitative analysis of wound closure area on days 0, 9, 12 and 15th day post-treatment with different hydrogel nanocomposites"
     },
     {
      "property": "blood_coagulation_90s",
      "value_text": "The blood remained free-flowing in HG even after 90 s",
      "quote": "The blood remained free-flowing in HG even after 90 s"
+    },
+    {
+     "property": "swelling_degree_10min_MilliQ",
+     "value_num": 1350,
+     "unit": "%",
+     "from_figure": "Fig. 3C",
+     "quote": "(C) Swelling behavior of different hydrogel formulations."
+    },
+    {
+     "property": "porosity",
+     "value_num": 54,
+     "unit": "%",
+     "from_figure": "Fig. 3D",
+     "quote": "(D) Porosity of different hydrogel patches."
+    },
+    {
+     "property": "storage_modulus_G_prime_at_100_rad_s",
+     "value_num": 1,
+     "unit": "Pa",
+     "from_figure": "Fig. 3E",
+     "quote": "(E) Young’s modulus reveals sufficient mechanical strength of hydrogel formulations concerning storage and loss modulus"
+    },
+    {
+     "property": "loss_modulus_G_double_prime_at_100_rad_s",
+     "value_num": 7,
+     "unit": "Pa",
+     "from_figure": "Fig. 3E",
+     "quote": "(E) Young’s modulus reveals sufficient mechanical strength of hydrogel formulations concerning storage and loss modulus"
+    },
+    {
+     "property": "zone_of_inhibition_antibacterial",
+     "value_text": "negligible inhibitory effects",
+     "quote": "HG formulation without Ag NPs and EGCG showed negligible inhibitory effects in both Gram +ve and Gram -ve strains (zone A), whereas, HG-Ag, HG-EGCG, and HG-Ag-EGCG hydrogel nanocomposites showed substantial inhibitory potency (zone B, C, D)."
+    },
+    {
+     "property": "histology_epithelium_migration_day12",
+     "value_text": "somewhat incomplete epithelium migration over the dermis, granulation tissue formation still under progress",
+     "quote": "Other groups, HG, HG-EGCG and HG-Ag, displayed somewhat incomplete epithelium migration over the dermis, granulation tissue formation still under progress for remodeling of tissue architecture"
     }
    ],
    "missing_fields": [
@@ -522,7 +579,8 @@
      "value_num": 50,
      "unit": "µg/mL",
      "parent_value": "none",
-     "quote": "Similarly, HG-EGCG, HG-Ag, and HG-Ag-EGCG patches are prepared following the above protocol except that 50µg/mL of EGCG for HG-EGCG, Ag@AGG instead of AGG for HG-Ag, and both, EGCG and Ag@AGG for HG-Ag-EGCG, were taken in the final homogenized solution prior to lyophilization."
+     "quote": "Similarly, HG-EGCG, HG-Ag, and HG-Ag-EGCG patches are prepared following the above protocol except that 50µg/mL of EGCG for HG-EGCG, Ag@AGG instead of AGG for HG-Ag, and both, EGCG and Ag@AGG for HG-Ag-EGCG, were taken in the final homogenized solution prior to lyophilization.",
+     "step_order": 4
     }
    ],
    "succeeded": true,
@@ -530,7 +588,7 @@
     {
      "name": "epigallocatechin gallate (EGCG)",
      "formula": null,
-     "role": "dopant",
+     "role": "additive",
      "purity": "highest purity grade",
      "supplier": "Merck-Sigma",
      "supplier_quote": "All chemicals and reagents used in this study were of highest purity grade. Guar gum (GG), Sodium alginate (SA), Glycerol, Epigallactocatechin gallate (EGCG), Calcium chloride (CaCl2), Silver nitrate (AgNO3), Ethylenediamine (C2H8N2), Sodium borohydride (NaBH4), 2,4,6-Trinitrobenzene Sulfonic Acid (TNBS), Minimum Essential Medium (MEM), Trypsin-EDTA, Penicillin-Streptomycin antibiotic, 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyl tetrazolium bromide (MTT), were purchased from Merck-Sigma (St. Louis, MO, USA).",
@@ -551,14 +609,14 @@
      "value_num": 62,
      "unit": "%",
      "from_figure": "Fig. 6B",
-     "quote": "Figure 6 HG-Ag-EGCG’s procoagulation and in vivo wound-healing potential."
+     "quote": "(B) Quantitative analysis of wound closure area on days 0, 9, 12 and 15th day post-treatment with different hydrogel nanocomposites"
     },
     {
      "property": "wound_remaining_day15_in_vivo",
      "value_num": 31,
      "unit": "%",
      "from_figure": "Fig. 6B",
-     "quote": "Figure 6 HG-Ag-EGCG’s procoagulation and in vivo wound-healing potential."
+     "quote": "(B) Quantitative analysis of wound closure area on days 0, 9, 12 and 15th day post-treatment with different hydrogel nanocomposites"
     },
     {
      "property": "wound_closure_lag_vs_NeuSkin_F_day15",
@@ -584,7 +642,48 @@
      "property": "antibacterial_selectivity",
      "value_text": "preferential antibacterial activity towards the gram-negative bacteria compared to gram-positive",
      "quote": "HG-EGCG showed a preferential antibacterial activity towards the gram-negative bacteria compared to gram-positive"
+    },
+    {
+     "property": "swelling_degree_10min_MilliQ",
+     "value_num": 1420,
+     "unit": "%",
+     "from_figure": "Fig. 3C",
+     "quote": "(C) Swelling behavior of different hydrogel formulations."
+    },
+    {
+     "property": "porosity",
+     "value_num": 54,
+     "unit": "%",
+     "from_figure": "Fig. 3D",
+     "quote": "(D) Porosity of different hydrogel patches."
+    },
+    {
+     "property": "storage_modulus_G_prime_at_100_rad_s",
+     "value_num": 80,
+     "unit": "Pa",
+     "from_figure": "Fig. 3E",
+     "quote": "(E) Young’s modulus reveals sufficient mechanical strength of hydrogel formulations concerning storage and loss modulus"
+    },
+    {
+     "property": "loss_modulus_G_double_prime_at_100_rad_s",
+     "value_num": 76,
+     "unit": "Pa",
+     "from_figure": "Fig. 3E",
+     "quote": "(E) Young’s modulus reveals sufficient mechanical strength of hydrogel formulations concerning storage and loss modulus"
+    },
+    {
+     "property": "zone_of_inhibition_antibacterial",
+     "value_text": "substantial inhibitory potency",
+     "quote": "HG formulation without Ag NPs and EGCG showed negligible inhibitory effects in both Gram +ve and Gram -ve strains (zone A), whereas, HG-Ag, HG-EGCG, and HG-Ag-EGCG hydrogel nanocomposites showed substantial inhibitory potency (zone B, C, D)."
+    },
+    {
+     "property": "histology_epithelium_migration_day12",
+     "value_text": "somewhat incomplete epithelium migration over the dermis, granulation tissue formation still under progress",
+     "quote": "Other groups, HG, HG-EGCG and HG-Ag, displayed somewhat incomplete epithelium migration over the dermis, granulation tissue formation still under progress for remodeling of tissue architecture"
     }
+   ],
+   "not_stated": [
+    "EGCG_addition_mode"
    ]
   },
   {
@@ -634,14 +733,14 @@
      "value_num": 64,
      "unit": "%",
      "from_figure": "Fig. 6B",
-     "quote": "Figure 6 HG-Ag-EGCG’s procoagulation and in vivo wound-healing potential."
+     "quote": "(B) Quantitative analysis of wound closure area on days 0, 9, 12 and 15th day post-treatment with different hydrogel nanocomposites"
     },
     {
      "property": "wound_remaining_day15_in_vivo",
      "value_num": 36,
      "unit": "%",
      "from_figure": "Fig. 6B",
-     "quote": "Figure 6 HG-Ag-EGCG’s procoagulation and in vivo wound-healing potential."
+     "quote": "(B) Quantitative analysis of wound closure area on days 0, 9, 12 and 15th day post-treatment with different hydrogel nanocomposites"
     },
     {
      "property": "OD600_24h_E_coli_K12_growth_curve",
@@ -659,6 +758,44 @@
      "property": "antibacterial_activity",
      "value_text": "HG-Ag and HG-Ag-EGCG were quite lethal against both the strains",
      "quote": "the result affirmed that HG-Ag and HG-Ag-EGCG were quite lethal against both the strains (Figure 5B)"
+    },
+    {
+     "property": "swelling_degree_10min_MilliQ",
+     "value_num": 1450,
+     "unit": "%",
+     "from_figure": "Fig. 3C",
+     "quote": "(C) Swelling behavior of different hydrogel formulations."
+    },
+    {
+     "property": "porosity",
+     "value_num": 51,
+     "unit": "%",
+     "from_figure": "Fig. 3D",
+     "quote": "(D) Porosity of different hydrogel patches."
+    },
+    {
+     "property": "storage_modulus_G_prime_at_100_rad_s",
+     "value_num": 255,
+     "unit": "Pa",
+     "from_figure": "Fig. 3E",
+     "quote": "(E) Young’s modulus reveals sufficient mechanical strength of hydrogel formulations concerning storage and loss modulus"
+    },
+    {
+     "property": "loss_modulus_G_double_prime_at_100_rad_s",
+     "value_num": 195,
+     "unit": "Pa",
+     "from_figure": "Fig. 3E",
+     "quote": "(E) Young’s modulus reveals sufficient mechanical strength of hydrogel formulations concerning storage and loss modulus"
+    },
+    {
+     "property": "zone_of_inhibition_antibacterial",
+     "value_text": "substantial inhibitory potency",
+     "quote": "HG formulation without Ag NPs and EGCG showed negligible inhibitory effects in both Gram +ve and Gram -ve strains (zone A), whereas, HG-Ag, HG-EGCG, and HG-Ag-EGCG hydrogel nanocomposites showed substantial inhibitory potency (zone B, C, D)."
+    },
+    {
+     "property": "histology_epithelium_migration_day12",
+     "value_text": "somewhat incomplete epithelium migration over the dermis, granulation tissue formation still under progress",
+     "quote": "Other groups, HG, HG-EGCG and HG-Ag, displayed somewhat incomplete epithelium migration over the dermis, granulation tissue formation still under progress for remodeling of tissue architecture"
     }
    ]
   },
@@ -686,7 +823,8 @@
      "value_num": 50,
      "unit": "µg/mL",
      "parent_value": "none",
-     "quote": "Similarly, HG-EGCG, HG-Ag, and HG-Ag-EGCG patches are prepared following the above protocol except that 50µg/mL of EGCG for HG-EGCG, Ag@AGG instead of AGG for HG-Ag, and both, EGCG and Ag@AGG for HG-Ag-EGCG, were taken in the final homogenized solution prior to lyophilization."
+     "quote": "Similarly, HG-EGCG, HG-Ag, and HG-Ag-EGCG patches are prepared following the above protocol except that 50µg/mL of EGCG for HG-EGCG, Ag@AGG instead of AGG for HG-Ag, and both, EGCG and Ag@AGG for HG-Ag-EGCG, were taken in the final homogenized solution prior to lyophilization.",
+     "step_order": 4
     }
    ],
    "succeeded": true,
@@ -701,7 +839,7 @@
     {
      "name": "epigallocatechin gallate (EGCG)",
      "formula": null,
-     "role": "dopant",
+     "role": "additive",
      "purity": "highest purity grade",
      "supplier": "Merck-Sigma",
      "supplier_quote": "All chemicals and reagents used in this study were of highest purity grade. Guar gum (GG), Sodium alginate (SA), Glycerol, Epigallactocatechin gallate (EGCG), Calcium chloride (CaCl2), Silver nitrate (AgNO3), Ethylenediamine (C2H8N2), Sodium borohydride (NaBH4), 2,4,6-Trinitrobenzene Sulfonic Acid (TNBS), Minimum Essential Medium (MEM), Trypsin-EDTA, Penicillin-Streptomycin antibiotic, 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyl tetrazolium bromide (MTT), were purchased from Merck-Sigma (St. Louis, MO, USA).",
@@ -724,25 +862,25 @@
      "quote": "The relative material viscosity of HG, HG-Ag, HG-EGCG and HG-Ag-EGCG hydrogel patches was observed to be 1030, 24,983, 12,429 and 16,958 Pa, respectively"
     },
     {
-     "property": "cumulative_Ag_release_15_days",
+     "property": "Ag_release_max_concentration",
      "value_num": 4.1,
      "unit": "ppm",
      "quote": "In our case, we observed a cumulative release of ~4.1 ppm of silver over 15 days, as shown in Figure 4A suggesting an optimal antibacterial environment at the wound site."
     },
     {
-     "property": "EGCG_release_day1",
+     "property": "EGCG_release_PBS_day1",
      "value_num": 18.6,
      "unit": "%",
      "quote": "we found on day 1, the release was 18.6% which increased to 59.8% on day 2, and finally reached 79.8% on day 8."
     },
     {
-     "property": "EGCG_release_day2",
+     "property": "EGCG_release_PBS_day2",
      "value_num": 59.8,
      "unit": "%",
      "quote": "we found on day 1, the release was 18.6% which increased to 59.8% on day 2, and finally reached 79.8% on day 8."
     },
     {
-     "property": "EGCG_release_day8",
+     "property": "EGCG_release_PBS_day8",
      "value_num": 79.8,
      "unit": "%",
      "quote": "we found on day 1, the release was 18.6% which increased to 59.8% on day 2, and finally reached 79.8% on day 8."
@@ -777,7 +915,7 @@
      "value_num": 12,
      "unit": "%",
      "from_figure": "Fig. 6B",
-     "quote": "Figure 6 HG-Ag-EGCG’s procoagulation and in vivo wound-healing potential."
+     "quote": "(B) Quantitative analysis of wound closure area on days 0, 9, 12 and 15th day post-treatment with different hydrogel nanocomposites"
     },
     {
      "property": "Ki67_expression_vs_control",
@@ -799,6 +937,98 @@
      "property": "liver_kidney_toxicity",
      "value_text": "no significant alteration in ALT, AST, urea, and creatinine was observed between control and HG-Ag-EGCG treated groups post wounding till day 15",
      "quote": "Further, no significant alteration in ALT, AST, urea, and creatinine was observed between control and HG-Ag-EGCG treated groups post wounding till day 15 (Figure S4B)."
+    },
+    {
+     "property": "EGCG_release_DMEM_day8",
+     "value_num": 82,
+     "unit": "%",
+     "from_figure": "Fig. 4B",
+     "quote": "(B) UV analysis for EGCG release shows sustained release profile in aspirated media and ~80% of EGCG was released in 8th day which remains constant afterward."
+    },
+    {
+     "property": "Ag_release_24h_initial_burst",
+     "value_text": "almost 2–2.5 ppm initial burst release of Ag NPs at the end of the 24hrs",
+     "quote": "Interestingly, there is almost 2–2.5 ppm initial burst release of Ag NPs at the end of the 24hrs, followed by a sustained release."
+    },
+    {
+     "property": "Ag_content_medium_day1",
+     "value_num": 2.7,
+     "unit": "ppm",
+     "from_figure": "Fig. 4A",
+     "quote": "(A) AAS estimation of Ag content with a maximum concentration of 4.1 ppm."
+    },
+    {
+     "property": "swelling_degree_10min_MilliQ",
+     "value_num": 1570,
+     "unit": "%",
+     "from_figure": "Fig. 3C",
+     "quote": "(C) Swelling behavior of different hydrogel formulations."
+    },
+    {
+     "property": "porosity",
+     "value_num": 57,
+     "unit": "%",
+     "from_figure": "Fig. 3D",
+     "quote": "(D) Porosity of different hydrogel patches."
+    },
+    {
+     "property": "storage_modulus_G_prime_at_100_rad_s",
+     "value_num": 127,
+     "unit": "Pa",
+     "from_figure": "Fig. 3E",
+     "quote": "(E) Young’s modulus reveals sufficient mechanical strength of hydrogel formulations concerning storage and loss modulus"
+    },
+    {
+     "property": "loss_modulus_G_double_prime_at_100_rad_s",
+     "value_num": 114,
+     "unit": "Pa",
+     "from_figure": "Fig. 3E",
+     "quote": "(E) Young’s modulus reveals sufficient mechanical strength of hydrogel formulations concerning storage and loss modulus"
+    },
+    {
+     "property": "zone_of_inhibition_antibacterial",
+     "value_text": "substantial inhibitory potency",
+     "quote": "HG formulation without Ag NPs and EGCG showed negligible inhibitory effects in both Gram +ve and Gram -ve strains (zone A), whereas, HG-Ag, HG-EGCG, and HG-Ag-EGCG hydrogel nanocomposites showed substantial inhibitory potency (zone B, C, D)."
+    },
+    {
+     "property": "histology_reepithelialization_day12",
+     "value_text": "complete re-epithelialization with apparent granulation tissue formation, highest fibroblast density",
+     "quote": "HG-Ag-EGCG induces complete re-epithelialization with apparent granulation tissue formation, highest fibroblast density as observed in the H&E sections studied."
+    },
+    {
+     "property": "collagen_deposition_day12",
+     "value_text": "dense mature collagen deposition with clear well-formed and differentiated epithelium",
+     "quote": "By 12th day HG-Ag-EGCG treated group showed significant healing response and dense mature collagen deposition with clear well-formed and differentiated epithelium"
+    },
+    {
+     "property": "IL6_level",
+     "value_text": "eliciting lowest level",
+     "quote": "The levels of pro-inflammatory cytokine, IL-6, decreased gradually during the whole healing process across all the formulations and are statistically significant with the final formulation HG-Ag-EGCG, eliciting lowest level as shown in Figure 9B."
+    },
+    {
+     "property": "VEGF_level",
+     "value_text": "upregulated till day 9 in HG-Ag-EGCG-treated groups compared to other groups",
+     "quote": "we found the levels were upregulated till day 9 in HG-Ag-EGCG-treated groups compared to other groups"
+    },
+    {
+     "property": "IFN_gamma_level",
+     "value_text": "remains statistically insignificant during the healing period",
+     "quote": "The levels of IFN-γ in the HG-Ag-EGCG-treated group remains statistically insignificant during the healing period"
+    },
+    {
+     "property": "TNF_alpha_level",
+     "value_text": "remain more or less unaltered",
+     "quote": "Interestingly, the levels of TNF-α remain more or less unaltered (Figure 9D)"
+    },
+    {
+     "property": "IL10_level_day9",
+     "value_text": "decreased significantly across the group and more prominently HG-Ag-EGCG group on day 9",
+     "quote": "the levels of anti-inflammatory IL-10 decreased significantly across the group and more prominently HG-Ag-EGCG group on day 9"
+    },
+    {
+     "property": "wound_closure_day15",
+     "value_text": "complete wound closure",
+     "quote": "HG-Ag-EGCG presented complete wound closure and higher resemblance with the normal skin with complete hair growth on and around wound surface"
     }
    ],
    "characterizations": [
@@ -816,6 +1046,9 @@
      "conditions": "532 nm laser; 500 to 3800 cm−1; silicon reference at 520 cm−1; powder on glass slides",
      "quote": "Raman spectra of HG-Ag-EGCG were measured using a WITEC Alpha 300AR (Germany) laser with a wavelength of 532 nm."
     }
+   ],
+   "not_stated": [
+    "EGCG_addition_mode"
    ]
   },
   {
@@ -880,7 +1113,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Tous les patchs gonflent de 1400 à 1800 % en 10 min et gardent une porosité de 53 à 56 % : ces valeurs sont données pour le groupe, pas par échantillon.",
+   "text": "Le texte donne pour le groupe un gonflement de 1400 à 1800 % en 10 min et une porosité de 53 à 56 % ; les valeurs par échantillon ont été lues sur les Fig. 3C et 3D (≈ 1350 à 1570 % ; ≈ 51 à 57 %), et la lecture de HG (≈ 1350 %) tombe sous la plage du texte.",
    "quote": "All the hydrogel patches showed a rapid and higher degree of saturated swelling in the range from 1400% to 1800% in Milli Q within 10 min Figure 3C."
   },
   {
@@ -904,7 +1137,7 @@
   {
    "type": "mecanisme_auteurs",
    "route": "Ag@AGG",
-   "text": "L'AGG joue le rôle de réducteur et de stabilisant : les groupes amine introduits dans la gomme de guar permettent une réduction sans réactif chimique. La gélification de l'hydrogel est attribuée à une interaction de coordination entre l'AGG, les ions calcium et l'alginate.",
+   "text": "L'AGG joue le rôle de réducteur et de stabilisant : les groupes amine introduits dans la gomme de guar permettent une réduction sans réactif chimique.",
    "quote": "Stable and size-controlled Ag NPs were obtained using simple reduction chemistry where AGG plays a dual role in reducing and stabilizing agent."
   },
   {
@@ -916,17 +1149,58 @@
   {
    "type": "mecanisme_analyse",
    "route": "Ag@AGG",
-   "text": "Probablement, les amines et les hydroxyles de l'AGG réduisent Ag+ en Ag0 (couleur jaune des nanoparticules, bande plasmon vers 420 nm), puis les chaînes polymères encapsulent les particules par interaction avec les amines, ce qui limite leur croissance à 6–12 nm. Une température et une concentration d'AGG plus élevées devraient accélérer la nucléation, mais l'article ne donne pas la série d'optimisation."
+   "text": "Hypothèse : Ag+ est réduit par les groupes réducteurs de l'AGG, mais très probablement aussi par du borohydrure résiduel de l'amination (NaBH4 figure dans la liste des réactifs et aucune purification de l'AGG n'est décrite), puis les chaînes polymères stabilisent les particules par interaction avec les amines. La bande plasmon large et la taille DLS de 217 nm évoquent des amas de particules plutôt qu'une dispersion monodisperse."
   },
   {
    "type": "mecanisme_analyse",
    "route": "HG",
-   "text": "On attend que Ca2+ forme des ponts entre les groupes carboxylate de l'alginate (modèle en « boîte à œufs ») et probablement aussi avec les amines ou hydroxyles de l'AGG et de la gélatine. Le gel se fige à −20 °C puis la lyophilisation fixe la porosité en sublimant la glace ; le glycérol joue le rôle d'humectant plastifiant."
+   "text": "Hypothèse : Ca2+ réticule l'alginate par des ponts entre carboxylates (modèle en « boîte à œufs »), auquel s'ajoute un complexe électrostatique entre les amines protonées de l'AGG (et de la gélatine) et les carboxylates de l'alginate, plutôt qu'une coordination de Ca2+ par les amines. Le gel se fige à −20 °C puis la lyophilisation fixe la porosité en sublimant la glace ; le glycérol joue le rôle d'humectant."
   },
   {
    "type": "securite_analyse",
    "route": "Ag@AGG",
    "text": "AgNO3 est oxydant, corrosif et tache la peau ; les solutions d'argent sont à éliminer comme déchets métalliques. L'article liste aussi NaBH4 (dégage de l'hydrogène au contact de l'eau) et l'éthylènediamine (corrosive, volatile), dont le rôle n'est pas précisé ; HNO3 sert à la digestion pour l'AAS. La lyophilisation à −105 °C impose des gants cryogéniques, et les nanoparticules d'argent sont à manipuler en solution pour éviter l'inhalation."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AGG",
+   "text": "Hypothèse : avec l'éthylènediamine et NaBH4, la voie chimiquement plausible est une amination réductrice, qui exige un carbonyle sur le guar (oxydation préalable, par exemple au periodate) ; les greffons seraient alors –NH–CH2CH2–NH2 et non –NH2 comme dessiné. L'article ne décrit pas cette étape d'activation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AGG",
+   "text": "Le schéma de la Fig. 1A (éthylènediamine, eau, température ambiante, NaBH4) n'est pas lisible dans le texte et ne représente pas une réaction possible telle que dessinée : un alcool ne se substitue pas par une amine sans activation préalable, et l'éthylènediamine greffée donnerait –NH–CH2CH2–NH2. Le protocole est seulement renvoyé à un « prior art » : la voie AGG n'est pas reproductible depuis l'article (critique scientifique, s'appuyant sur le brevet US 4 683 298 pour l'amination réductrice du guar oxydé). Le « degré de substitution » de 67,79 % est un rapport d'absorbances (Ab − Gb)/Ab, d'environ 69 % avec les barres de la Fig. 1C, et dépasse le maximum d'environ 33 % que permet un groupe amine sur le seul galactose du schéma.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag@AGG",
+   "text": "NaBH4 de l'amination, non purifié, peut rester dans l'AGG et réduire lui-même Ag+, ce qui contredit la réduction « reagent-free » annoncée (Dai et al., 2016, système guar–NaBH4) ; un témoin avec AGG dialysé et avec GG non aminé manque. Le potentiel zêta de −2,6 à −1,59 mV est peu compatible avec 67,79 % d'amines primaires, la DLS (217 nm) contre la TEM (6–12 nm, histogramme d'environ 18 particules) montre surtout des pelotes de polymère ou des amas, et la longueur d'onde DRX est écrite « 1.54187 nm » au lieu de 0,154187 nm (1,54187 Å).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HG",
+   "text": "Les « viscosités » de 1030 à 24 983 données en Pa ne correspondent pas aux modules de la Fig. 3E : la viscosité complexe tirée des modules est d'environ 13 Pa·s (HG) à 290 Pa·s (HG-Ag), et Pa est une unité de contrainte ; ces valeurs ne sont pas exploitables. Avec CaCl2 à 2,5 % w/v non lavé, le sel représente environ 61 % de la masse sèche du patch et gélifierait l'alginate dès le contact : l'ordre d'ajout, la forme (anhydre ou dihydraté) et la méthode d'homogénéisation sont à préciser, et la porosité par éthanol et le gonflement incluent aussi la dissolution du glycérol et du sel.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HG-Ag",
+   "text": "Mélangé à CaCl2 ≈ 0,2 M, l'argent passe en partie en AgCl et en chlorocomplexes (Levard et al., 2013) : la libération et l'activité mesurées peuvent venir d'espèces dissoutes plutôt que des nanoparticules. Le saut de viscosité attribué à une « induced crystallinity » par ≈ 0,13 % d'argent n'est pas démontré, faute de témoin AGG traité sans AgNO3.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HG-EGCG",
+   "text": "Sur la Fig. 5B, la densité optique à 24 h de HG-EGCG (≈ 12 pour E. coli, ≈ 8,4 pour B. subtilis) est au-dessus de celle du témoin en croissance (≈ 9 et ≈ 7,3), alors que le texte parle de « bacteriostatic propensity » et d'inhibition ; ces valeurs sont aussi hors de l'échelle habituelle d'une DO600 sans dilution.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HG-Ag-EGCG",
+   "text": "Le tableau EDX donne Ag 11,43 % en masse, soit 21 à 89 fois la teneur nominale (≈ 0,13 % du patch sec), avec un rapport Ag/Ca environ 400 fois trop élevé ; il omet Cl et Pt visibles sur le spectre (somme 65,39 %). Les pourcentages de libération d'EGCG (18,6 / 59,8 / 79,8 %) sont ceux de la courbe PBS (Fig. 4D) alors que le texte dit « culture medium » (Fig. 4B : ≈ 27 / 51 / 82 %), et la quantité d'EGCG d'un patch de 5 mg donnerait une absorbance de l'ordre de 0,005, sous ce qu'un dosage UV direct permet (Snitsarev et al., 2013 pour ε). La « cumulative release » de 4,1 ppm d'argent est le maximum de concentrations par prélèvement, non monotones, et l'AAS mesure l'argent total. Le texte annonce « complete wound closure » au jour 15 alors que la Fig. 6B montre ≈ 12 % de plaie restante ; l'EGCG, réducteur de Ag+, s'oxyde aussi à pH 7,4, ce qui peut expliquer le plateau à ≈ 80 %.",
+   "quote": null
   }
  ],
  "sample_inventory": [
@@ -1067,16 +1341,16 @@
    "issue": "Les Méthodes donnent 50µg/mL d'EGCG pour les patchs ; la légende de la Fig. 5 compare HG-Ag-EGCG à 10 ppm et à 50 ppm, et le texte dit que 50 ppm « did not augment » l'effet. 50 µg/mL et 50 ppm sont lus comme la même concentration ; HG-Ag-EGCG (50 ppm) est la formulation standard et le 10 ppm une branche. La base de la concentration (par mL de quoi) n'est pas précisée."
   },
   {
-   "where": "HG-Ag-EGCG, libération d'EGCG",
-   "issue": "Le texte (18,6 % jour 1, 59,8 % jour 2, 79,8 % jour 8) est dit mesuré « in the culture medium », mais ces valeurs correspondent à la courbe PBS de la Fig. 4D ; la Fig. 4B (DMEM) lit environ 27 %, 51 % et 82 % aux jours 1, 2 et 8. Valeurs du texte retenues, valeurs de la figure ajoutées avec from_figure."
+   "where": "HG-Ag-EGCG, libération d'EGCG (PBS ou DMEM)",
+   "issue": "Le texte dit mesurer 18,6 % (jour 1), 59,8 % (jour 2), 79,8 % (jour 8) « in the culture medium » (Fig. 4B), mais ces valeurs correspondent à la courbe PBS de la Fig. 4D ; la Fig. 4B (DMEM) lit environ 27 %, 51 % et 82 % aux jours 1, 2 et 8. Les valeurs du texte sont rangées sous EGCG_release_PBS_day1/2/8, les valeurs DMEM lues sur la figure sous EGCG_release_DMEM_day1/2/8 (précision ≈ ±3 points)."
   },
   {
    "where": "HG-Ag-EGCG, cicatrisation jour 15",
-   "issue": "Le texte parle de « complete wound closure » au jour 15 ; la Fig. 6B montre environ 12 % de plaie restante. Valeur lue sur la figure (≈ 12 %) gardée sans corriger le texte."
+   "issue": "Le texte parle de « complete wound closure » au jour 15 (wound_closure_day15) ; la Fig. 6B montre environ 12 % de plaie restante (wound_remaining_day15_in_vivo, lu sur la figure). Les deux sont gardés sans corriger l'un par l'autre."
   },
   {
-   "where": "Matériaux, Ag@AGG et AGG",
-   "issue": "NaBH4 et l'éthylènediamine figurent dans la liste des réactifs achetés, mais aucun passage ne dit à quelle étape ils servent ; l'article insiste sur une réduction de l'argent « reagent-free ». Ils n'ont pas été rattachés à une voie ; l'éthylènediamine est probablement l'agent d'amination de l'AGG (hypothèse, non extraite)."
+   "where": "Matériaux, AGG et Ag@AGG",
+   "issue": "L'éthylènediamine et NaBH4 figurent dans la liste des réactifs achetés, mais aucun passage de texte ne dit à quelle étape ils servent ; ils n'apparaissent comme réactif d'amination que sur le schéma de la Fig. 1A (« C2H4(NH2)2, Aq., RT » et « NaBH4 »), lisible seulement sur l'image et renvoyé à l'art antérieur (CIT0042). Par la règle des paramètres lisibles seulement sur figure, ils ne sont pas saisis dans la voie AGG, dont le réactif aminant, le solvant, la température, la durée et les quantités restent not_stated ; l'article insiste en outre sur une réduction de l'argent « reagent-free »."
   },
   {
    "where": "Ag@AGG étape 2",
@@ -1092,11 +1366,11 @@
   },
   {
    "where": "HG, gonflement et porosité (Fig. 3C et 3D)",
-   "issue": "Les valeurs par échantillon ne sont pas extraites : le texte ne donne que des plages de groupe (1400 à 1800 % ; 53 à 56 %) et la lecture graphique des barres (≈ 1400 à 1600 % ; ≈ 51 à 57 %) sort en partie de ces plages. Annotation tendance_observee de groupe seulement."
+   "issue": "Le texte ne donne que des plages de groupe (1400 à 1800 % ; 53 à 56 %). Les valeurs par échantillon sont lues sur les barres des Fig. 3C et 3D (gonflement ≈ 1350, 1450, 1420, 1570 % pour HG, HG-Ag, HG-EGCG, HG-Ag-EGCG, précision ≈ ±50 ; porosité ≈ 54, 51, 54, 57 %, ±2 points) ; la lecture de HG (≈ 1350 %) est sous la plage du texte."
   },
   {
    "where": "Figures lues",
-   "issue": "Figures lues sur image : Fig. 6B (plaie restante jours 9 et 15 pour HG, HG-EGCG, HG-Ag, HG-Ag-EGCG ; précision ≈ ±3 points), Fig. 4B (libération d'EGCG en DMEM, ≈ ±3 points), Fig. 5B (DO à 24 h de HG-EGCG, ≈ ±0,3). Fig. 2, 3, 4A, 4C, 5A relues sans valeur ajoutée par échantillon."
+   "issue": "Figures lues sur image : Fig. 6B (plaie restante jours 9 et 15, ≈ ±3 points), Fig. 4A (argent libéré au jour 1, ≈ ±0,2 ppm), Fig. 4B (libération d'EGCG en DMEM, ≈ ±3 points), Fig. 5B (DO à 24 h de HG-EGCG, ≈ ±0,3), Fig. 3C et 3D (gonflement ±50 %, porosité ±2 points), Fig. 3E (modules G' et G'' à 100 rad/s, ≈ ±10 %). Fig. 1, 2, 4C, 4D, 5A relues sans autre valeur ajoutée par échantillon."
   },
   {
    "where": "HG-EGCG et HG-Ag-EGCG, variation « additive »",
@@ -1104,7 +1378,15 @@
   },
   {
    "where": "Fig. 5A, zones d'inhibition",
-   "issue": "Les diamètres de halo ne sont donnés ni dans le texte ni en tableau et la figure est une photographie de boîtes : aucune valeur extraite pour les zones d'inhibition."
+   "issue": "Les diamètres de halo ne sont donnés ni dans le texte ni en tableau et la figure est une photographie de boîtes : seul le résultat qualitatif du texte (« negligible inhibitory effects » pour HG, « substantial inhibitory potency » pour les trois autres) est extrait."
+  },
+  {
+   "where": "HG-EGCG, Fig. 5B contre texte",
+   "issue": "La Fig. 5B place HG-EGCG au-dessus du témoin en croissance à 24 h (E. coli ≈ 12 contre ≈ 9 ; B. subtilis ≈ 8,4 contre ≈ 7,3), ce qui contredit « substantial inhibitory potency » et « bacteriostatic » du texte ; les valeurs lues sont gardées sans correction."
+  },
+  {
+   "where": "HG-EGCG, HG-Ag-EGCG, ajout de l'EGCG",
+   "issue": "L'EGCG est rattaché à l'étape 4 (solution homogénéisée) d'après « in the final homogenized solution prior to lyophilization » ; le mode d'ajout (solide ou solution) n'est pas donné. Ag@AGG « instead of AGG » est placé sur le même plan par la même phrase, d'où le rattachement laissé sans étape pour lui."
   }
  ]
 }
