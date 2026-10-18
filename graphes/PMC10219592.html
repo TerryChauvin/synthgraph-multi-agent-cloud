@@ -1,0 +1,256 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10219592</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10219592 — Retarding solid-state reactions enable efficient and stable all-inorganic perovskite solar cells and modules.</h1>
+<h2>Voie : PPN_TFSI</h2>
+<pre class="mermaid">flowchart LR
+  R13811([&quot;PPN chloride&lt;br/&gt;574 mg&quot;]):::reactif
+  R13811 --&gt;|&quot;precursor&quot;| S16503
+  R13812([&quot;lithium bis(trifluoromethylsulfonyl)imide&lt;br/&gt;288 mg&quot;]):::reactif
+  R13812 --&gt;|&quot;precursor&quot;| S16503
+  R13813([&quot;water&lt;br/&gt;10 mL&quot;]):::reactif
+  R13813 --&gt;|&quot;solvent&quot;| S16503
+  R13814([&quot;water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13814 --&gt;|&quot;wash&quot;| S16503
+  S16503[&quot;&lt;b&gt;1. stir&lt;/b&gt;&lt;br/&gt;duration : overnight&lt;br/&gt;temperature : RT&quot;]:::etape
+  S16503 --&gt; S16504
+  S16504[&quot;&lt;b&gt;2. filter&lt;/b&gt;&quot;]:::etape
+  S16504 --&gt; S16505
+  S16505[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water&lt;br/&gt;repetitions : 4&lt;br/&gt;wash_volume : 10 ml per wash&quot;]:::etape
+  S16505 --&gt; S16506
+  S16506[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S16506 --&gt; M
+  M{{&quot;bis(triphenylphosphine)iminium bis(trifluoromethy…&lt;br/&gt;[(Ph3P)2N][N(SO2CF3)2]&quot;}}:::materiau
+  O65771[&quot;yield_mass : 794 mg&quot;]:::resultat
+  M -.-&gt; O65771
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Crystal_PPN_TFSI</h2>
+<pre class="mermaid">flowchart LR
+  R13815([&quot;[PPN][TFSI] (route PPN_TFSI)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13815 --&gt;|&quot;intermediate&quot;| S16507
+  R13816([&quot;N,N-dimethylformamide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13816 --&gt;|&quot;solvent&quot;| S16507
+  S16507[&quot;&lt;b&gt;1. evaporate&lt;/b&gt;&lt;br/&gt;temperature : RT&lt;br/&gt;duration : 5 days&quot;]:::etape
+  S16507 --&gt; M
+  M{{&quot;monocristaux de [PPN][TFSI]&lt;br/&gt;[(Ph3P)2N][N(SO2CF3)2]&quot;}}:::materiau
+  O65772[&quot;crystal_habit : colorless plate-shaped crysta…&quot;]:::resultat
+  M -.-&gt; O65772
+  O65773[&quot;space_group : P21/c (№ 14)&quot;]:::resultat
+  M -.-&gt; O65773
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Model_DMSO</h2>
+<pre class="mermaid">flowchart LR
+  R13817([&quot;[PPN][TFSI] (route PPN_TFSI)&lt;br/&gt;1:1:1 molar ratio (with CsI a…&quot;]):::reactif
+  R13817 --&gt;|&quot;intermediate&quot;| S16508
+  R13818([&quot;cesium iodide&lt;br/&gt;1:1:1 molar ratio (with [PPN]…&quot;]):::reactif
+  R13818 --&gt;|&quot;precursor&quot;| S16508
+  R13819([&quot;lead iodide&lt;br/&gt;1:1:1 molar ratio (with [PPN]…&quot;]):::reactif
+  R13819 --&gt;|&quot;precursor&quot;| S16508
+  R13820([&quot;dimethyl sulfoxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13820 --&gt;|&quot;solvent&quot;| S16508
+  S16508[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 1:1:1&quot;]:::etape
+  S16508 --&gt; S16509
+  S16509[&quot;&lt;b&gt;2. crystallize&lt;/b&gt;&quot;]:::etape
+  S16509 --&gt; M
+  M{{&quot;[PPN][TFSI] et PbI2·DMSO cristallisés séparément …&lt;br/&gt;&quot;}}:::materiau
+  O65774[&quot;reaction_outcome : no chemical reactions between…&quot;]:::resultat
+  M -.-&gt; O65774
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Model_DMF_3comp</h2>
+<pre class="mermaid">flowchart LR
+  R13821([&quot;[PPN][TFSI] (route PPN_TFSI)&lt;br/&gt;1:1:1 molar ratio (with DMAI …&quot;]):::reactif
+  R13821 --&gt;|&quot;intermediate&quot;| S16510
+  R13822([&quot;dimethylammonium iodide&lt;br/&gt;1:1:1 molar ratio (with [PPN]…&quot;]):::reactif
+  R13822 --&gt;|&quot;precursor&quot;| S16510
+  R13823([&quot;lead iodide&lt;br/&gt;1:1:1 molar ratio (with [PPN]…&quot;]):::reactif
+  R13823 --&gt;|&quot;precursor&quot;| S16510
+  R13824([&quot;N,N-dimethylformamide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13824 --&gt;|&quot;solvent&quot;| S16510
+  S16510[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 1:1:1&lt;br/&gt;atmosphere : not conducted under an inert …&quot;]:::etape
+  S16510 --&gt; S16511
+  S16511[&quot;&lt;b&gt;2. evaporate&lt;/b&gt;&lt;br/&gt;atmosphere : not conducted under an inert …&quot;]:::etape
+  S16511 --&gt; M
+  M{{&quot;[PPN][PbI3] (cristaux jaunes) et [DMA][TFSI] (cri…&lt;br/&gt;[PPN][PbI3]&quot;}}:::materiau
+  O65775[&quot;product_yellow_crystals : [PPN][PbI3]&quot;]:::resultat
+  M -.-&gt; O65775
+  O65776[&quot;product_white_crystals : [DMA][TFSI]&quot;]:::resultat
+  M -.-&gt; O65776
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10822{{&quot;Model_DMF_3comp&quot;}}:::materiau
+  B10823[&quot;Model_DMF_4comp&quot;]:::etape
+  B10822 --&gt;|&quot;CsI addition = CsI added (1:1:1:1 molar…&quot;| B10823
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Control_film</h2>
+<pre class="mermaid">flowchart LR
+  R13826([&quot;cesium iodide&lt;br/&gt;1:1:1 molar ratio with DMAI a…&quot;]):::reactif
+  R13826 --&gt;|&quot;precursor&quot;| S16512
+  R13827([&quot;dimethylammonium iodide&lt;br/&gt;1:1:1 molar ratio with CsI an…&quot;]):::reactif
+  R13827 --&gt;|&quot;precursor&quot;| S16512
+  R13828([&quot;lead iodide&lt;br/&gt;1:1:1 molar ratio with CsI an…&quot;]):::reactif
+  R13828 --&gt;|&quot;precursor&quot;| S16512
+  R13829([&quot;dimethyl sulfoxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13829 --&gt;|&quot;solvent&quot;| S16512
+  R13830([&quot;ethyl acetate&lt;br/&gt;300 μl&quot;]):::reactif
+  R13830 --&gt;|&quot;antisolvent&quot;| S16512
+  S16512[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 1.43 M&lt;br/&gt;molar_ratio : 1:1:1&quot;]:::etape
+  S16512 --&gt; S16513
+  S16513[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&lt;br/&gt;spin_speed_stage1 : 1000 rpm&lt;br/&gt;spin_duration_stage1 : 10 s&lt;br/&gt;spin_speed_stage2 : 4000 rpm&lt;br/&gt;spin_duration_stage2 : 30 s&lt;br/&gt;atmosphere : glovebox&quot;]:::etape
+  S16513 --&gt; S16514
+  S16514[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume : 300 μl&lt;br/&gt;timing : at 20 s of the second step&quot;]:::etape
+  S16514 --&gt; S16515
+  S16515[&quot;&lt;b&gt;4. anneal&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 10 min&lt;br/&gt;atmosphere : ambient&quot;]:::etape
+  S16515 --&gt; S16516
+  S16516[&quot;&lt;b&gt;5. anneal&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : 20 min&lt;br/&gt;atmosphere : ambient&quot;]:::etape
+  S16516 --&gt; M
+  M{{&quot;film de CsPbI3 témoin (sans [PPN][TFSI]) préparé …&lt;br/&gt;CsPbI3&quot;}}:::materiau
+  O65778[&quot;time_to_turn_black_in_air_at_180C : 4 min&quot;]:::resultat
+  M -.-&gt; O65778
+  O65779[&quot;stability_at_180C_before_degradati… : 17 min&quot;]:::resultat
+  M -.-&gt; O65779
+  O65780[&quot;grain_size_early_annealing_180C_air : 100 nm&quot;]:::resultat
+  M -.-&gt; O65780
+  O65781[&quot;intermediates_DMAPbI3_Cs4PbI6_disa… : 7 min&quot;]:::resultat
+  M -.-&gt; O65781
+  O65782[&quot;gamma_phase_onset_time : 2 min&quot;]:::resultat
+  M -.-&gt; O65782
+  O65783[&quot;complete_gamma_to_delta_transition… : 35 min&quot;]:::resultat
+  M -.-&gt; O65783
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10824{{&quot;Control_film&quot;}}:::materiau
+  B10825[&quot;PPN_0.025&quot;]:::etape
+  B10824 --&gt;|&quot;additive = 0.025 mol %&quot;| B10825
+  B10826[&quot;PPN_0.015&quot;]:::etape
+  B10824 --&gt;|&quot;additive = 0.015 mol %&quot;| B10826
+  B10827[&quot;PPN_0.035&quot;]:::etape
+  B10824 --&gt;|&quot;additive = 0.035 mol %&quot;| B10827
+  B10828[&quot;PPN_5mol&quot;]:::etape
+  B10824 --&gt;|&quot;additive = 5 mol %&quot;| B10828
+  B10829[&quot;Control_12min&quot;]:::etape
+  B10824 --&gt;|&quot;duration = 12 min&quot;| B10829
+  B10830[&quot;Control_15min&quot;]:::etape
+  B10824 --&gt;|&quot;duration = 15 min&quot;| B10830
+  B10831[&quot;Control_40min&quot;]:::etape
+  B10824 --&gt;|&quot;duration = 40 min&quot;| B10831
+  B10832[&quot;PPN_40min&quot;]:::etape
+  B10825 --&gt;|&quot;duration = 40 min&quot;| B10832
+  B10833[&quot;PPN_150min&quot;]:::etape
+  B10825 --&gt;|&quot;duration = 150 min&quot;| B10833
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Device_PPN_0.025</h2>
+<pre class="mermaid">flowchart LR
+  R13835([&quot;FTO substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13835 --&gt;|&quot;substrate&quot;| S16517
+  R13836([&quot;detergent&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13836 --&gt;|&quot;wash&quot;| S16517
+  R13837([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13837 --&gt;|&quot;wash&quot;| S16517
+  R13838([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13838 --&gt;|&quot;wash&quot;| S16517
+  R13839([&quot;isopropanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13839 --&gt;|&quot;wash&quot;| S16517
+  R13840([&quot;titanium dioxide (atomic layer deposition)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13840 --&gt;|&quot;precursor&quot;| S16517
+  R13841([&quot;SnO2 colloidal solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13841 --&gt;|&quot;precursor&quot;| S16517
+  R13842([&quot;perovskite film (route PPN_0.025)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13842 --&gt;|&quot;intermediate&quot;| S16517
+  R13843([&quot;Spiro-OMeTAD&lt;br/&gt;72.3 mg&quot;]):::reactif
+  R13843 --&gt;|&quot;hole_transport_mate…&quot;| S16517
+  R13844([&quot;chlorobenzene&lt;br/&gt;1 ml&quot;]):::reactif
+  R13844 --&gt;|&quot;solvent&quot;| S16517
+  R13845([&quot;Li[TFSI]/acetonitrile solution (1.8 M)&lt;br/&gt;46.3 μl&quot;]):::reactif
+  R13845 --&gt;|&quot;additive&quot;| S16517
+  R13846([&quot;acetonitrile (solvent of the Li[TFSI] soluti…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13846 --&gt;|&quot;solvent&quot;| S16517
+  R13847([&quot;4-tert-butylpyridine&lt;br/&gt;1.645 ml of 4-tert-butylpyrid…&quot;]):::reactif
+  R13847 --&gt;|&quot;additive&quot;| S16517
+  R13848([&quot;gold&lt;br/&gt;60-nm-thick&quot;]):::reactif
+  R13848 --&gt;|&quot;electrode&quot;| S16517
+  S16517[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : detergent, deionized water, a…&quot;]:::etape
+  S16517 --&gt; S16518
+  S16518[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S16518 --&gt; S16519
+  S16519[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;spin_speed : 3000 rpm&lt;br/&gt;spin_duration : 30 s&quot;]:::etape
+  S16519 --&gt; S16520
+  S16520[&quot;&lt;b&gt;4. anneal&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S16520 --&gt; S16521
+  S16521[&quot;&lt;b&gt;5. deposit&lt;/b&gt;&quot;]:::etape
+  S16521 --&gt; S16522
+  S16522[&quot;&lt;b&gt;6. dissolve&lt;/b&gt;&quot;]:::etape
+  S16522 --&gt; S16523
+  S16523[&quot;&lt;b&gt;7. deposit&lt;/b&gt;&lt;br/&gt;spin_speed : 3000 rpm&lt;br/&gt;spin_duration : 30 s&quot;]:::etape
+  S16523 --&gt; S16524
+  S16524[&quot;&lt;b&gt;8. deposit&lt;/b&gt;&lt;br/&gt;thickness : 60 nm&lt;br/&gt;pressure : high vacuum&quot;]:::etape
+  S16524 --&gt; M
+  M{{&quot;cellule solaire FTO/SnO2/CsPbI3-[PPN][TFSI]/Spiro…&lt;br/&gt;&quot;}}:::materiau
+  O65813[&quot;PCE_champion_reverse_scan : 20.64 %&quot;]:::resultat
+  M -.-&gt; O65813
+  O65814[&quot;JSC_champion_reverse_scan : 20.91 mA cm−2&quot;]:::resultat
+  M -.-&gt; O65814
+  O65815[&quot;VOC_champion_reverse_scan : 1.21 V&quot;]:::resultat
+  M -.-&gt; O65815
+  O65816[&quot;FF_champion_reverse_scan : 81.22 %&quot;]:::resultat
+  M -.-&gt; O65816
+  O65817[&quot;PCE_champion_forward_scan : 19.09 %&quot;]:::resultat
+  M -.-&gt; O65817
+  O65818[&quot;JSC_champion_forward_scan : 20.9 mA cm−2&quot;]:::resultat
+  M -.-&gt; O65818
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10834{{&quot;Device_PPN_0.025&quot;}}:::materiau
+  B10835[&quot;Device_control&quot;]:::etape
+  B10834 --&gt;|&quot;perovskite film (route P… = replaced by perovskite f…&quot;| B10835
+  B10836[&quot;Device_PPN_0.015&quot;]:::etape
+  B10834 --&gt;|&quot;perovskite film (route P… = replaced by perovskite f…&quot;| B10836
+  B10837[&quot;Device_PPN_0.035&quot;]:::etape
+  B10834 --&gt;|&quot;perovskite film (route P… = replaced by perovskite f…&quot;| B10837
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Minimodule_PPN</h2>
+<pre class="mermaid">flowchart LR
+  R13852([&quot;perovskite film with [PPN][TFSI] (route PPN_…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13852 --&gt;|&quot;intermediate&quot;| S16525
+  S16525[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&lt;br/&gt;substrate_size : 6.5 cm by 7 cm&lt;br/&gt;number_of_subcells : eight&quot;]:::etape
+  S16525 --&gt; M
+  M{{&quot;minimodule solaire CsPbI3-[PPN][TFSI] à huit sous…&lt;br/&gt;&quot;}}:::materiau
+  O65854[&quot;PCE_active_area_28.17cm2 : 16.89 %&quot;]:::resultat
+  M -.-&gt; O65854
+  O65855[&quot;PCE_aperture_area_31.30cm2 : 15.2 %&quot;]:::resultat
+  M -.-&gt; O65855
+  O65856[&quot;geometric_fill_factor : 90 %&quot;]:::resultat
+  M -.-&gt; O65856
+  O65857[&quot;PCE_stabilized_active_area_certifi… : 16.1 %&quot;]:::resultat
+  M -.-&gt; O65857
+  O65858[&quot;PCE_stabilized_aperture_certified_… : 14.49 %&quot;]:::resultat
+  M -.-&gt; O65858
+  O65859[&quot;ISC_module : 70.71 mA&quot;]:::resultat
+  M -.-&gt; O65859
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
