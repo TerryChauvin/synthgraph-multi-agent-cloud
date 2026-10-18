@@ -20,6 +20,8 @@
    "yield": null,
    "succeeded": true,
    "not_stated": [
+    "ammonium_exchange_to_H_form",
+    "crystal_size_value",
     "yield"
    ],
    "reagents": [
@@ -366,15 +368,15 @@
      "technique": "Py-FTIR",
      "result": "acidité de Brønsted et de Lewis, faible et forte (Tableau 2)",
      "instrument": "Bruker Tensor 37 FTIR spectrometer",
-     "conditions": "pyridine adsorbée puis désorbée à 473 et 623 K ; bandes à ~1 450 (LAS) et 1 540 cm−1 (BAS)",
+     "conditions": "« absorbing and desorbing pyridine at 473 and 623 K, respectively » (Méthodes) ; légende de la Fig. 4 : désorption à 200 °C (A) et 350 °C (B) ; bandes à ~1 450 (LAS) et 1 540 cm−1 (BAS)",
      "quote": "Pyridine-absorbed FTIR was characterized on a Bruker Tensor 37 FTIR spectrometer. Pyridine-absorbed FTIR was determined after absorbing and desorbing pyridine at 473 and 623 K, respectively."
     }
    ],
    "outcomes": [
     {
      "property": "SiO2_Al2O3_ratio",
-     "value_num": 80,
-     "quote": "ZSM-5 zeolite with a SiO2/Al2O3 ratio of about 80 was synthesized by a hydrothermal method."
+     "quote": "ZSM-5 zeolite with a SiO2/Al2O3 ratio of about 80 was synthesized by a hydrothermal method.",
+     "value_text": "about 80"
     },
     {
      "property": "morphology",
@@ -382,7 +384,7 @@
      "quote": "The typical morphology of MFI crystals, a uniform hexagonal prism, was observed on the parent ZSM-5 zeolite."
     },
     {
-     "property": "pore_diameter_D",
+     "property": "D",
      "value_num": 2.12,
      "unit": "nm",
      "quote": "Z5 | 2.12 | 354 | 108 | 245 | 0.19"
@@ -510,7 +512,7 @@
      "quote": "The morphology of ZSM-5 zeolites after nickel modification by the in situ synthesis method remains unchanged, while the size of ZSM-5 zeolites decreased."
     },
     {
-     "property": "pore_diameter_D",
+     "property": "D",
      "value_num": 3.54,
      "unit": "nm",
      "quote": "1NiZ5 | 3.54 | 292 | 129 | 163 | 0.26"
@@ -579,6 +581,9 @@
      "value_text": "obvious hysteresis loop at high pressure (isotherme), mesopores créés",
      "quote": "After the incorporation of nickel by the in situ synthesis method, especially for the 1NiZ5 sample, the isotherms exhibited an obvious hysteresis hoop at high pressure, which originated from the mesoporous structure."
     }
+   ],
+   "not_stated": [
+    "nickel_content_reference_basis"
    ]
   },
   {
@@ -639,7 +644,7 @@
      "quote": "The morphology of ZSM-5 zeolites after nickel modification by the in situ synthesis method remains unchanged, while the size of ZSM-5 zeolites decreased."
     },
     {
-     "property": "pore_diameter_D",
+     "property": "D",
      "value_num": 2.21,
      "unit": "nm",
      "quote": "2NiZ5 | 2.21 | 345 | 115 | 230 | 0.19"
@@ -703,6 +708,9 @@
      "value_text": "from 86.84 to 76.74 μmol·g−1",
      "quote": "And with further nickel introduction (2 wt.%), the amount of BAS shows a smaller decrease (from 86.84 to 76.74 μmol·g−1)"
     }
+   ],
+   "not_stated": [
+    "nickel_content_reference_basis"
    ]
   },
   {
@@ -725,7 +733,8 @@
    "not_stated": [
     "yield",
     "drying_after_impregnation",
-    "calcination_after_impregnation"
+    "calcination_after_impregnation",
+    "nickel_content_reference_basis"
    ],
    "reagents": [
     {
@@ -806,7 +815,7 @@
      "quote": "Compared to the parent ZSM-5 zeolite, incorporation of small amount of nickel by the impregnation method did not change the BET surface area, pore volume, and pore diameter of those materials (Table 2)."
     },
     {
-     "property": "pore_diameter_D",
+     "property": "D",
      "value_num": 2.22,
      "unit": "nm",
      "quote": "1Ni-Z5 | 2.22 | 339 | 111 | 228 | 0.19"
@@ -906,7 +915,7 @@
      "quote": "increased slightly with the further introduction of nickel to 2 wt.% (from 104.5 to 111.5 μmol·g−1)"
     },
     {
-     "property": "pore_diameter_D",
+     "property": "D",
      "value_num": 2.23,
      "unit": "nm",
      "quote": "2Ni-Z5 | 2.23 | 343 | 113 | 230 | 0.19"
@@ -965,6 +974,9 @@
      "unit": "μmol·g−1",
      "quote": "2Ni-Z5 | 66.00 | 49.64 | 45.50 | 41.70 | 202.84"
     }
+   ],
+   "not_stated": [
+    "nickel_content_reference_basis"
    ]
   },
   {
@@ -988,7 +1000,11 @@
     "yield",
     "metal_loading",
     "support_calcination",
-    "extrusion_aids"
+    "extrusion_aids",
+    "catalyst_mass",
+    "H2_to_noctane_ratio",
+    "temperature_of_stability_test_Fig5B",
+    "temperature_at_20pct_conversion"
    ],
    "reagents": [
     {
@@ -1188,18 +1204,13 @@
        "unit": "h"
       }
      ],
-     "equipment": [
-      {
-       "type": "fixed-bed reactor",
-       "detail": null,
-       "quote": "was assessed in a fixed-bed reactor"
-      }
-     ],
+     "equipment": [],
      "not_stated": [
       "pressure",
       "flow_rate",
       "hydrogen_co_feed",
-      "heating_rate"
+      "heating_rate",
+      "equipment"
      ]
     }
    ],
@@ -1217,6 +1228,13 @@
      "instrument": "SP-3420 gas chromatograph, 30-m capillary PONA column",
      "conditions": "colonne programmée de 40 à 120 °C à 1,5 °C/min",
      "quote": "The liquid products were collected carefully, and the analysis was performed immediately on an SP-3420 gas chromatograph equipped with a 30-m capillary PONA column."
+    },
+    {
+     "technique": "catalytic test (n-octane hydroconversion)",
+     "result": "conversion du n-octane et sélectivités (Tableau 3, Fig. 5) ; produits liquides analysés par chromatographie en phase gazeuse (SP-3420, colonne capillaire PONA de 30 m)",
+     "instrument": "fixed-bed reactor",
+     "conditions": "275 à 305 °C ; H2 à 4,0 MPa ; WHSV 4 h−1",
+     "quote": "The catalytic performance of NiMo catalysts supported on ZSM-5 zeolites with different nickel modifications was assessed in a fixed-bed reactor from 275 to 305°C under H2 at 4.0 MPa, and the weight hourly space velocity (WHSV) was fixed at 4 h−1."
     }
    ],
    "outcomes": [
@@ -1327,6 +1345,16 @@
      "unit": "%",
      "from_figure": "Fig. 5B",
      "quote": "Figure 5 Conversion of n-octane at different temperatures (A) and conversion with TOS (B) over the series catalysts."
+    },
+    {
+     "property": "olefins_and_products_above_C8",
+     "value_text": "not detected",
+     "quote": "olefins and products with a carbon number exceeding 8 were not detected in these experiments"
+    },
+    {
+     "property": "main_reaction",
+     "value_text": "cracking",
+     "quote": "Under the conditions studied, cracking was the main reaction over this series catalyst."
     }
    ]
   },
@@ -1469,6 +1497,16 @@
      "unit": "%",
      "from_figure": "Fig. 5B",
      "quote": "Figure 5 Conversion of n-octane at different temperatures (A) and conversion with TOS (B) over the series catalysts."
+    },
+    {
+     "property": "olefins_and_products_above_C8",
+     "value_text": "not detected",
+     "quote": "olefins and products with a carbon number exceeding 8 were not detected in these experiments"
+    },
+    {
+     "property": "main_reaction",
+     "value_text": "cracking",
+     "quote": "Under the conditions studied, cracking was the main reaction over this series catalyst."
     }
    ]
   },
@@ -1611,6 +1649,16 @@
      "unit": "%",
      "from_figure": "Fig. 5B",
      "quote": "Figure 5 Conversion of n-octane at different temperatures (A) and conversion with TOS (B) over the series catalysts."
+    },
+    {
+     "property": "olefins_and_products_above_C8",
+     "value_text": "not detected",
+     "quote": "olefins and products with a carbon number exceeding 8 were not detected in these experiments"
+    },
+    {
+     "property": "main_reaction",
+     "value_text": "cracking",
+     "quote": "Under the conditions studied, cracking was the main reaction over this series catalyst."
     }
    ]
   },
@@ -1753,6 +1801,16 @@
      "unit": "%",
      "from_figure": "Fig. 5B",
      "quote": "Figure 5 Conversion of n-octane at different temperatures (A) and conversion with TOS (B) over the series catalysts."
+    },
+    {
+     "property": "olefins_and_products_above_C8",
+     "value_text": "not detected",
+     "quote": "olefins and products with a carbon number exceeding 8 were not detected in these experiments"
+    },
+    {
+     "property": "main_reaction",
+     "value_text": "cracking",
+     "quote": "Under the conditions studied, cracking was the main reaction over this series catalyst."
     }
    ]
   },
@@ -1895,6 +1953,16 @@
      "unit": "%",
      "from_figure": "Fig. 5B",
      "quote": "Figure 5 Conversion of n-octane at different temperatures (A) and conversion with TOS (B) over the series catalysts."
+    },
+    {
+     "property": "olefins_and_products_above_C8",
+     "value_text": "not detected",
+     "quote": "olefins and products with a carbon number exceeding 8 were not detected in these experiments"
+    },
+    {
+     "property": "main_reaction",
+     "value_text": "cracking",
+     "quote": "Under the conditions studied, cracking was the main reaction over this series catalyst."
     }
    ]
   }
@@ -2053,7 +2121,7 @@
   {
    "type": "mecanisme_auteurs",
    "route": "1NiZ5",
-   "text": "Pour la voie in situ, les auteurs expliquent l'absence de phase de nickel visible en DRX par un nickel de charpente qui remplace l'aluminium pendant la cristallisation, ce qui diminue les sites BAS.",
+   "text": "Pour la voie in situ, les auteurs expliquent l'absence de phase de nickel visible en DRX par un nickel qui remplace l'aluminium dans la charpente zéolithique pendant la cristallisation.",
    "quote": "Al species can be replaced by Ni species in the zeolite framework during the crystallization process"
   },
   {
@@ -2065,7 +2133,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Z5",
-   "text": "Probablement : en milieu NaOH, le TEOS s'hydrolyse en silicate (d'où l'agitation de nuit), l'aluminate issu de Al2(SO4)3 et le cation TPA+ servent à structurer le gel, la température de 100 °C favorise sans doute la nucléation, puis les 160 °C la croissance des cristaux MFI ; la calcination brûle le TPA+ qui occupe les pores. Le produit de calcination est sous forme sodique, et l'article ne décrit aucun échange ammoniacal : la présence de BAS mesurée en Py-FTIR suggère qu'une étape d'échange vers la forme H a eu lieu sans être écrite, ou que le sodium résiduel n'a pas été dosé."
+   "text": "Probablement : en milieu NaOH, le TEOS s'hydrolyse en silicate (d'où l'agitation de nuit), l'aluminate issu de Al2(SO4)3 et le cation TPA+ servent à structurer le gel, la température de 100 °C favorise sans doute la nucléation, puis les 160 °C la croissance des cristaux MFI ; la calcination brûle le TPA+ qui occupe les pores. Le produit de calcination est sous forme sodique, et l'article ne décrit aucun échange ammoniacal : la présence de BAS mesurée en Py-FTIR suggère qu'une étape d'échange vers la forme H a eu lieu sans être écrite, ou que le sodium résiduel n'a pas été dosé. Le schéma en deux paliers (nucléation à 100 °C, croissance à 160 °C) est classique pour une ZSM-5 à gabarit TPA+ (Cundy & Cox, Chem. Rev. 2003, doi 10.1021/cr020060i) ; la pression de vapeur de l'eau saturée à 160 °C est d'environ 0,618 MPa."
   },
   {
    "type": "mecanisme_analyse",
@@ -2075,7 +2143,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "La soude concentrée est corrosive, le TEOS est inflammable et libère de l'éthanol à l'hydrolyse, l'acide sulfurique est corrosif, et les sels de nickel sont sensibilisants et cancérogènes par inhalation. L'autoclave chauffé à 160 °C pendant 48 h monte en pression : respecter un taux de remplissage prudent et laisser refroidir avant d'ouvrir. Le CS2 (sulfuration à 360 °C) est très inflammable, très volatil et toxique pour le système nerveux, et la sulfuration peut dégager de l'H2S ; le test sous H2 à 4,0 MPa demande un réacteur sous pression adapté et un balayage de sécurité. Les poudres de zéolithe sont à manipuler sans inhalation."
+   "text": "La soude concentrée est corrosive, le TEOS est inflammable et libère de l'éthanol à l'hydrolyse, l'acide sulfurique est corrosif, et les sels de nickel sont sensibilisants et cancérogènes par inhalation. L'autoclave chauffé à 160 °C pendant 48 h monte en pression : respecter un taux de remplissage prudent et laisser refroidir avant d'ouvrir. Le CS2 (sulfuration à 360 °C) est très inflammable, très volatil et toxique pour le système nerveux, et la sulfuration peut dégager de l'H2S ; le test sous H2 à 4,0 MPa demande un réacteur sous pression adapté et un balayage de sécurité. Les poudres de zéolithe sont à manipuler sans inhalation. Le CS2 s'auto-enflamme vers 90 °C : la sulfuration à 360 °C sous H2 doit se faire dans un réacteur sous pression avec balayage et sans point chaud ; la pression de vapeur saturante de l'eau à 160 °C (≈ 0,618 MPa) s'ajoute à l'éthanol libéré par le TEOS dans l'autoclave."
   },
   {
    "type": "limite_reproductibilite",
@@ -2085,8 +2153,64 @@
   {
    "type": "limite_reproductibilite",
    "route": "NiMo/Z5",
-   "text": "Les valeurs de conversion de la Fig. 5 sont des lectures graphiques à ±1 à 2 points près (2 chiffres significatifs). Les sélectivités du Tableau 3 sont données « à ~20 % de conversion » alors que les conversions de la Fig. 5A sont comprises entre 22 et 57 % : la température ou le temps de ce point de comparaison n'est pas écrit.",
+   "text": "Les valeurs de conversion de la Fig. 5 sont des lectures graphiques à ±1 à 2 points près (2 chiffres significatifs). Les sélectivités du Tableau 3 sont données « à ~20 % de conversion » alors que les conversions de la Fig. 5A sont comprises entre 22 et 57 % : la température ou le temps de ce point de comparaison n'est pas écrit. À 275 °C, la plus basse température testée, NiMo/1Ni-Z5 est déjà à environ 34 % de conversion.",
    "quote": "The product selectivity of n-octane over the five catalysts was obtained at ~20% n-octane conversion and listed in Table 3."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "1NiZ5",
+   "text": "Les auteurs attribuent la forte baisse des sites de Brønsted (de 193,48 à 86,84 μmol/g) à une baisse du rapport Si/Al.",
+   "quote": "which can be attributed to the decrease of Si/Al"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "1NiZ5",
+   "text": "Probablement : le nitrate de nickel est dissous dans le mélange acide B puis versé dans le gel de soude, où Ni2+ précipite plus probablement en hydroxyde ou en phyllosilicate, ou se place en position d'échange cationique ; le nickel de charpente invoqué par les auteurs n'est pas démontré (travaux sur Ni-ZSM-5 synthétisée directement en milieu fluorure, Ni-ZSM-5 and Cu-ZSM-5 Synthesized Directly from Aqueous Fluoride Gels). Un moindre Al incorporé ou Ni2+ compensant la charge feraient aussi baisser les sites de Brønsted, ce que seul un dosage ICP départagerait."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "1Ni-Z5",
+   "text": "Probablement : une solution de sel de Ni2+ est seulement faiblement acide, donc une désalumination notable à température ambiante est peu probable ; l'échange H+ → Ni2+ explique plus simplement la baisse des sites de Brønsted et l'apparition de sites de Lewis (travaux sur Ni/HZSM-5, Vapor-Phase Hydrogenation of Levulinic Acid to γ-Valerolactone Over Bi-Functional Ni/HZSM-5 Catalyst)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Z5",
+   "text": "Aucune quantité ni composition molaire du gel (OH/Si, TPA/Si, H2O/Si) n'est donnée, seulement un rapport SiO2/Al2O3 « d'environ 80 » sans dosage ICP du produit : la synthèse ne peut pas être refaite telle quelle (Cundy & Cox, Chem. Rev. 2003, doi 10.1021/cr020060i)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Z5",
+   "text": "Texture à lire avec prudence pour Z5, 1NiZ5, 2NiZ5, 1Ni-Z5 et 2Ni-Z5 : l'isotherme est dite de type IV et les « mésopores préservés » pour une MFI microporeuse, et le BJH n'est pas valable dans les micropores ; la colonne D du Tableau 1 est égale à 4V/S, et le pic vers 3,8 nm de la Fig. 3B est un artefact connu de la branche de désorption (Groen, Peffer & Pérez-Ramírez, Microporous Mesoporous Mater. 2003, doi 10.1016/S1387-1811(03)00339-1)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1NiZ5",
+   "text": "DRX déclarée de 5 à 35° (2θ) pour 1NiZ5, 2NiZ5, 1Ni-Z5 et 2Ni-Z5, alors que les raies de NiO sont à 37,2° et 43,3° (fiche JCPDS 47-1049) : « aucune phase de Ni » ne prouve ni la dispersion de NiO ni la présence de nickel de charpente ; 1 à 2 % de Ni resteraient de toute façon près de la limite de détection."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1NiZ5",
+   "text": "Voie in situ (1NiZ5 et 2NiZ5) : Ni(NO3)2 ajouté à un gel fortement basique devrait précipiter (hydroxyde ou phyllosilicate) ; le nickel « dans la charpente » n'est appuyé par aucune mesure (ni UV-vis, ni TPR, ni ICP, ni paramètre de maille), et les quantités d'Al2(SO4)3 ajoutées avec le sel ne sont pas données (Ni-ZSM-5 synthétisée en milieu fluorure, Ni-ZSM-5 and Cu-ZSM-5 Synthesized Directly from Aqueous Fluoride Gels)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1NiZ5",
+   "text": "La baisse des sites de Brønsted est attribuée à « la baisse de Si/Al », ce qui est l'inverse de l'attendu : une baisse de Si/Al signifie plus d'Al, donc plus de sites de Brønsted ; le rapport Si/Al des produits n'est pas mesuré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1Ni-Z5",
+   "text": "Imprégnation par « an excessive aqueous solution » sans concentration, volume, durée, filtration, lavage, séchage ni calcination ; la teneur en Ni (1 ou 2 %) est visée et non mesurée, et l'état du nickel au moment des caractérisations n'est pas défini."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiMo/Z5",
+   "text": "Le catalyseur est appelé « NiMo » mais le seul précurseur du second métal est le métatungstate d'ammonium : c'est un catalyseur NiW, le nom de l'article est gardé ; les teneurs en métaux déposés, la nature de l'alumine, le liant et l'acide d'extrusion, la calcination de l'extrudé ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiMo/Z5",
+   "text": "Bilan des produits non fermé : C1–C3 vaut 0,35 à 4 % pour 28 à 37 % de C5, car seuls les produits liquides sont analysés et les gaz légers sont perdus ; « iso-sum » additionne des produits de craquage ramifiés (iso-C4 à iso-C7) et l'iso-C8 : ce n'est pas une sélectivité d'isomérisation au sens usuel."
   }
  ],
  "method_sources": [],
@@ -2105,7 +2229,7 @@
   },
   {
    "where": "Table 1, colonne D/nm",
-   "issue": "L'en-tête dit seulement « D/nm » ; le texte parle de surface BET, volume et diamètre de pore donnés dans ce tableau : la colonne D est lue comme le diamètre de pore (3,54 nm pour 1NiZ5, plus élevé que les autres, ce qui va dans le sens de mésopores créés). L'en-tête de première colonne est « Ni/wt.% » mais contient les noms d'échantillons."
+   "issue": "L'en-tête dit seulement « D/nm » ; le texte annonce « BET surface area, pore volume, and pore diameter » pour ce tableau, mais la nature de D n'est pas définie : la propriété est nommée D, sans l'interpréter comme diamètre de pore, et les valeurs sont recopiées telles quelles (2,12 ; 3,54 ; 2,21 ; 2,22 ; 2,23 nm). La Fig. 3B montre un pic vers 3,8 nm pour Z5, 2NiZ5, 1Ni-Z5 et 2Ni-Z5, contre 2,1 à 2,2 nm dans le tableau. L'en-tête de première colonne est « Ni/wt.% » mais contient les noms d'échantillons."
   },
   {
    "where": "1NiZ5 et 2NiZ5 (voie in situ)",
@@ -2121,7 +2245,7 @@
   },
   {
    "where": "NiMo/Z5, étape 6 (sulfuration)",
-   "issue": "La sulfuration est décrite dans la section Catalytic Evaluation comme étape « avant l'essai » ; elle est enregistrée comme dernière étape de préparation de chaque catalyseur (hérité par les branches), faute de savoir si les auteurs sulfurent chaque échantillon avant l'essai : c'est ce que dit « the catalyst was sulfided »."
+   "issue": "La sulfuration est décrite dans la section Catalytic Evaluation comme étape « avant l'essai » ; elle est enregistrée comme dernière étape de préparation de chaque catalyseur (hérité par les branches), faute de savoir si les auteurs sulfurent chaque échantillon avant l'essai : c'est ce que dit « the catalyst was sulfided ». Le réacteur de la sulfuration n'est pas nommé (« in situ » seulement) ; le « fixed-bed reactor » de la phrase d'essai est porté par la caractérisation d'essai catalytique, pas par l'étape de sulfuration."
   },
   {
    "where": "Figures 5A et 5B (valeurs lues sur figure)",
@@ -2142,6 +2266,10 @@
   {
    "where": "1NiZ5 et 2NiZ5, variations nickel_content et nickel_nitrate",
    "issue": "Les deux variations ajoutent un dopant absent de la voie parente (parent_value « none », réactif ajouté dans la branche) : les avertissements du contrôle sur les noms de paramètres inconnus sont attendus pour ce cas."
+  },
+  {
+   "where": "Py-FTIR, conditions (Méthodes contre légende de la Fig. 4)",
+   "issue": "Les Méthodes disent « after absorbing and desorbing pyridine at 473 and 623 K, respectively » (adsorption à 473 K et désorption à 623 K à la lecture littérale), alors que la légende de la Fig. 4 donne la désorption à 200 °C (A) et à 350 °C (B) ; 473 et 623 K correspondent numériquement à ces deux températures. Les deux formulations sont gardées telles quelles ; la correspondance faible/forte = 200/350 °C n'est écrite nulle part."
   }
  ]
 }
