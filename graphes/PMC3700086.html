@@ -1,0 +1,53 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3700086</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3700086 — A Biological Approach to the Synthesis of Silver Nanoparticles with Streptomyces sp JAR1 and its Antimicrobial Activity.</h1>
+<h2>Voie : Streptomyces_supernatant</h2>
+<pre class="mermaid">flowchart LR
+  R12295([&quot;ISP-2 medium (sterile)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12295 --&gt;|&quot;medium&quot;| S14522
+  R12296([&quot;Streptomyces sp JAR1 culture (inoculum)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12296 --&gt;|&quot;inoculum&quot;| S14522
+  S14522[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S14522 --&gt; S14523
+  S14523[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;temperature : 28 °C&lt;br/&gt;stirring_speed : 200 rpm&lt;br/&gt;ph : 7.2&lt;br/&gt;duration : 96 h&quot;]:::etape
+  S14523 --&gt; S14524
+  S14524[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4000 rpm&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S14524 --&gt; M
+  M{{&quot;culture supernatant of Streptomyces sp JAR1 (bior…&lt;br/&gt;&quot;}}:::materiau
+  O59241[&quot;GenBank_accession_number_of_strain : JN859043&quot;]:::resultat
+  M -.-&gt; O59241
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNP_Streptomyces</h2>
+<pre class="mermaid">flowchart LR
+  R12297([&quot;silver nitrate&lt;br/&gt;1mM concentration&quot;]):::reactif
+  R12297 --&gt;|&quot;precursor&quot;| S14525
+  R12298([&quot;culture supernatant of Streptomyces sp JAR1 …&lt;br/&gt;1% (v/v)&quot;]):::reactif
+  R12298 --&gt;|&quot;intermediate&quot;| S14525
+  R12299([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12299 --&gt;|&quot;solvent&quot;| S14525
+  S14525[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;volume_fraction : 1 % (v/v)&lt;br/&gt;concentration : 1 mM&quot;]:::etape
+  S14525 --&gt; S14526
+  S14526[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;temperature : 30 °C&lt;br/&gt;duration : 96 h&lt;br/&gt;light_exposure : dark conditions&quot;]:::etape
+  S14526 --&gt; S14527
+  S14527[&quot;&lt;b&gt;3. dry&lt;/b&gt;&quot;]:::etape
+  S14527 --&gt; S14528
+  S14528[&quot;&lt;b&gt;4. grind&lt;/b&gt;&quot;]:::etape
+  S14528 --&gt; M
+  M{{&quot;silver nanoparticles biosynthesized by Streptomyc…&lt;br/&gt;Ag&quot;}}:::materiau
+  O59242[&quot;color_change : from brown to yellowish-brown&quot;]:::resultat
+  M -.-&gt; O59242
+  O59243[&quot;SPR_peak_wavelength : between 420nm and 425 nm&quot;]:::resultat
+  M -.-&gt; O59243
+  O59244[&quot;absorbance_at_420nm_after_24h : 1.2 a.u.&quot;]:::resultat
+  M -.-&gt; O59244
+  O59245[&quot;absorbance_at_420nm_after_48h : 2.9 a.u.&quot;]:::resultat
+  M -.-&gt; O59245
+  O59246[&quot;absorbance_at_420nm_after_72h : 5.1 a.u.&quot;]:::resultat
+  M -.-&gt; O59246
+  O59247[&quot;XRD_peak_positions : 38°, 45°, and 65° (1 1 1), (2…&quot;]:::resultat
+  M -.-&gt; O59247
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

@@ -230,8 +230,7 @@
     "yield",
     "reaction_volume",
     "isolation_method",
-    "purification",
-    "drying"
+    "purification"
    ],
    "reagents": [
     {
@@ -327,6 +326,32 @@
       "vessel_volume",
       "atmosphere"
      ]
+    },
+    {
+     "order": 3,
+     "action": "dry",
+     "description": "Les nanoparticules sont séchées puis broyées en poudre avant la DRX ; conditions non décrites.",
+     "quote": "The biologically synthesized silver nanoparticles using Streptomyces sp JAR1 were dried, powdered, and used for XRD analysis.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "drying_method",
+      "isolation_before_drying"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "grind",
+     "description": "Les nanoparticules séchées sont réduites en poudre pour la DRX.",
+     "quote": "The biologically synthesized silver nanoparticles using Streptomyces sp JAR1 were dried, powdered, and used for XRD analysis.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "grinding_method",
+      "duration"
+     ]
     }
    ],
    "characterizations": [
@@ -362,7 +387,7 @@
      "technique": "well diffusion antibacterial assay",
      "result": "zones of inhibition against bacteria (Table 2)",
      "instrument": null,
-     "conditions": "6 mm wells in Mueller-Hinton agar; 25, 50, 75, 100 μl of AgNP solution per well",
+     "conditions": "6 mm wells in Mueller-Hinton agar; 25, 50, 75, 100 μl of AgNP solution per well; précultures des bactéries en bouillon Mueller-Hinton (Hi-media) à 37 °C sur agitateur rotatif à 200 rpm (« Pure cultures of the bacteria were grown in Mueller-Hinton broth (Hi-media, Mumbai, India) at 37°C on a rotary shaker at 200 rpm ») ; durée et température d'incubation après dépôt non citées (« After incubation »)",
      "quote": "Wells of 6mm in diameter were punctured in the Mueller-Hinton agar plates using a gel puncture and each well was inoculated with individual cultures."
     },
     {
@@ -376,7 +401,7 @@
      "technique": "disk diffusion synergy assay",
      "result": "zones of inhibition of antibiotics alone and with AgNPs (second Table 3)",
      "instrument": null,
-     "conditions": "antibiotic disks impregnated with 10 μL of AgNPs; plates seeded with 100 μl of test organisms; 37°C for 24 h",
+     "conditions": "antibiotic disks impregnated with 10 μL of AgNPs; plates seeded with 100 μl of test organisms; 37°C for 24 h; doses des disques d'antibiotique (Discussion) : « vancomycin (30mcg/disk), followed by erythromycin (15mcg/disk), ofloxacin (5mcg/disk), and tigecycline (15mcg/disk) » (vancomycine 30, érythromycine 15, ofloxacine 5, tigécycline 15 mcg/disque) ; précultures des souches une nuit en bouillon Mueller-Hinton, 37 °C, agitateur rotatif 200 rpm",
      "quote": "In this assay, each standard antibiotic disk was further impregnated with 10 μL of freshly prepared AgNPs"
     }
    ],
@@ -947,7 +972,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNP_Streptomyces",
-   "text": "Hypothèse de chimiste : le surnageant contient des enzymes réductrices (probablement la nitrate réductase) et des métabolites réducteurs (sucres, protéines, cofacteur NADH) qui réduisent Ag+ en Ag0 ; les protéines adsorbées jouent probablement le rôle d'agent de coiffage et de stabilisant, ce que soutient la bande amide du FT-IR. L'incubation dans le noir limite probablement la photoréduction parasite d'AgNO3. L'absorbance mesurée (jusqu'à environ 5) est vraisemblablement hors du domaine linéaire de l'instrument."
+   "text": "Hypothèse de chimiste, non établie par l'article : le surnageant d'un actinomycète contient des métabolites réducteurs (sucres résiduels, phénols, pigment mélanoïde brun, protéines) qui réduisent lentement Ag⁺ en Ag⁰ ; le glucose de l'ISP-2 dilué à 1 % ne suffirait pas à lui seul à réduire 1 mM d'Ag⁺, et la conversion n'est pas mesurée. Le chlorure du milieu peut précipiter une partie de l'argent en AgCl, ce que suggèrent des pics non indexés de la DRX. Le rôle de la nitrate réductase NADH-dépendante, repris de la littérature, n'est pas testé ici, et le FT-IR montré (bandes de l'eau, pas de bande amide II) ne prouve pas la stabilisation par des protéines. L'incubation à l'obscurité limite probablement la photoréduction parasite d'AgNO3. L'absorbance mesurée (jusqu'à environ 5) est vraisemblablement hors du domaine linéaire de l'instrument."
   },
   {
    "type": "securite_analyse",
@@ -963,6 +988,31 @@
    "type": "limite_reproductibilite",
    "route": "AgNP_Streptomyces",
    "text": "Plusieurs valeurs de l'article sont incohérentes : le tableau de synergie contient des pourcentages d'augmentation qui ne correspondent pas à (Ab+NP − Ab)/Ab (par exemple 17 → 20 mm donne environ 17,6 % et non 6,64 %), la ligne vancomycine de Salmonella est décalée (« – | 30.76 | – »), et le texte annonce que les champignons Candida, Scedosporium et Ganoderma sont inhibés alors que le tableau 3 ne donne aucune zone pour eux. Ces valeurs sont recopiées telles quelles. Les trois valeurs d'absorbance lues sur la figure 2 sont approximatives (±0,2)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Streptomyces",
+   "text": "DRX : outre les pics de l'argent indexés (38°, 45°, 65°, 77°), la figure 4 montre des pics non indexés vers 27,8°, 32,2° et 46,2° (et de petits pics vers 55° et 57,5°), dont les positions sont compatibles avec le chlorure d'argent. L'article ne les commente pas et conclut à de l'argent métallique ; le produit pourrait être un mélange Ag/AgCl, et l'échantillon de DRX semble être la solution séchée sans lavage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Streptomyces",
+   "text": "FT-IR : le spectre de la figure 3 présente surtout les bandes de l'eau (large bande O–H vers 3411 cm⁻¹, déformation H–O–H vers 1640 cm⁻¹) et aucune bande amide II vers 1540 cm⁻¹ n'est visible ; l'attribution à des amines primaires et la conclusion « présence de protéines » ne sont donc pas démontrées. Les Méthodes disent une pastille de KBr, les Résultats une pastille de KI, avec un accessoire de réflexion diffuse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Streptomyces",
+   "text": "Essais antimicrobiens : ils utilisent la solution réactionnelle brute, qui contient encore des ions Ag⁺ non réduits et peut contenir de l'AgCl, et aucun témoin AgNO3 1 mM ni surnageant seul n'est testé sur les souches. L'activité ne peut donc pas être attribuée aux nanoparticules plutôt qu'aux ions argent."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Streptomyces",
+   "text": "Tableau de synergie : 6 pourcentages sur 31 ne suivent pas la formule de la note du tableau (par exemple tigécycline/Proteus 15→29 mm : 93,3 % attendu, 26,67 % imprimé ; ofloxacine/Klebsiella 24→39 mm : 62,5 % attendu, 24,16 % imprimé) ; le texte désigne la vancomycine comme l'antibiotique le plus renforcé alors que le tableau et le résumé donnent l'érythromycine. Valeurs du tableau recopiées telles quelles ; à ne pas citer sans recalcul."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_Streptomyces",
+   "text": "AFM : la figure 5 affiche dans son panneau de paramètres « Length = 68.13nm » (avec Width = 30.47nm et Height = 60.94nm) pour une image de 7,8 µm de côté ; cela ressemble à la mesure d'un seul objet ou profil et non à une moyenne statistique, alors que l'article parle de taille moyenne. La valeur de 68,13 nm est recopiée du texte ; son statut (objet unique ou moyenne) n'est pas établi."
   }
  ],
  "method_sources": [
@@ -1007,6 +1057,12 @@
    "ref_id": "b36-scipharm-2013-81-607",
    "role": "autre",
    "quote": "In this assay, each standard antibiotic disk was further impregnated with 10 μL of freshly prepared AgNPs"
+  },
+  {
+   "route": "Streptomyces_supernatant",
+   "ref_id": "b21-scipharm-2013-81-607",
+   "role": "autre",
+   "quote": "The cultural characteristics of the strain Streptomyces sp JAR1 were studied through the International Streptomyces Project (ISP)"
   }
  ],
  "doubts": [
@@ -1049,6 +1105,14 @@
   {
    "where": "AgNP_Streptomyces, essais antimicrobiens",
    "issue": "L'article ne dit pas si la « biosynthesized AgNPs solution » déposée dans les puits est la solution réactionnelle brute ou une préparation purifiée ; c'est la lecture la plus littérale (solution) qui est suivie."
+  },
+  {
+   "where": "AgNP_Streptomyces, étapes 3-4 (séchage et broyage)",
+   "issue": "L'article dit seulement que les nanoparticules ont été « dried, powdered, and used for XRD analysis » : température, durée, méthode de séchage et d'isolement des particules avant séchage ne sont pas donnés. Ces étapes concernent l'échantillon de DRX ; on ne sait pas si elles font partie de la préparation utilisée pour les autres essais. Aucune valeur n'est supposée."
+  },
+  {
+   "where": "Tableau de synergie (second Tab. 3), pourcentages d'augmentation",
+   "issue": "Le recalcul par la formule de la note, 100*(b-a)/a, donne 6 pourcentages différents de ceux imprimés sur 31 : tigécycline E. coli 17→20 (imprimé 6.64), tigécycline Proteus 15→29 (26.67), vancomycine S. aureus 17→19 (11.16), vancomycine Klebsiella 17→18 (7.89), ofloxacine Shigella 17→18 (7.89), ofloxacine Klebsiella 24→39 (24.16). Les valeurs imprimées sont conservées telles quelles ; la ligne vancomycine/Salmonella est décalée."
   }
  ]
 }
