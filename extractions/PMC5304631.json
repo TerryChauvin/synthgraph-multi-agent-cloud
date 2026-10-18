@@ -63,7 +63,7 @@
     },
     {
      "name": "sodium citrate (growth injection, 60 mM)",
-     "formula": "Na3C6H5O7",
+     "formula": null,
      "role": "reducing_agent",
      "quote": "For further NP growth, then 1 mL sodium citrate (60 mM) and 1 mL of HAuCl4 solution (25 mM) were sequentially injected with a time delay of two minutes between the two injections",
      "amount": 1,
@@ -88,6 +88,18 @@
    "steps": [
     {
      "order": 1,
+     "action": "clean",
+     "description": "Clean all glassware in aqua regia and rinse it with ultrapure water before the synthesis.",
+     "quote": "All glassware was cleaned in aqua regia and rinsed with ultrapure water.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "aqua_regia_composition",
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
      "action": "heat",
      "description": "Heat the 2.2 mM trisodium citrate solution to 100 °C under stirring and reflux.",
      "quote": "a solution containing 150 mL (2.2 mM) trisodium citrate dihydrate (Na3C6H5O7·2H2O) was heated in a 250 mL flask to 100 °C with stirring under reflux",
@@ -118,7 +130,7 @@
      ]
     },
     {
-     "order": 2,
+     "order": 3,
      "action": "add",
      "description": "Inject the first 1 mL of 25 mM HAuCl4 with a syringe and stir at 100 °C; the solution turns deep red.",
      "quote": "Using a syringe, 1 mL of 25 mM HAuCl4·3H2O was injected into the flask and stirred at 100 °C.",
@@ -149,7 +161,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "react",
      "description": "Lower the temperature to 90 °C and keep stirring.",
      "quote": "The temperature was then reduced to 90 °C, and the solution was stirred continuously for another 30 min.",
@@ -173,7 +185,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "add",
      "description": "Sequentially inject 1 mL of 60 mM sodium citrate and 1 mL of 25 mM HAuCl4 for further growth.",
      "quote": "For further NP growth, then 1 mL sodium citrate (60 mM) and 1 mL of HAuCl4 solution (25 mM) were sequentially injected with a time delay of two minutes between the two injections",
@@ -187,11 +199,12 @@
      "equipment": [],
      "not_stated": [
       "injection_rate",
-      "order_of_the_two_injections_confirmed"
+      "order_of_the_two_injections_confirmed",
+      "temperature"
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "react",
      "description": "Continue the reaction after the injections.",
      "quote": "After 30 min, the reaction was cooled down to room temperature using an ice bath.",
@@ -209,7 +222,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "cool",
      "description": "Cool to room temperature in an ice bath.",
      "quote": "After 30 min, the reaction was cooled down to room temperature using an ice bath.",
@@ -662,7 +675,55 @@
      "action": "measure",
      "description": "Determine the protein concentration with the Bradford assay.",
      "quote": "First, the concentration of proteins was determined with the Bradford method as described above.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "sample_volume_high_range",
+       "quote": "Following the indication of the guide, in order to get the high concentration curve, 10 μL of NP solution sample were mixed with 300 μL of Coomassie reagent, previously equilibrated at room temperature.",
+       "value_num": 10,
+       "unit": "μL"
+      },
+      {
+       "name": "reagent_volume_high_range",
+       "quote": "Following the indication of the guide, in order to get the high concentration curve, 10 μL of NP solution sample were mixed with 300 μL of Coomassie reagent, previously equilibrated at room temperature.",
+       "value_num": 300,
+       "unit": "μL"
+      },
+      {
+       "name": "sample_volume_low_range",
+       "quote": "To obtain the low concentration curve instead of using 10 μL NP sample and 300 μLCoomassie reagent, 150 μL of sample and 150 μL of reagent were used.",
+       "value_num": 150,
+       "unit": "μL"
+      },
+      {
+       "name": "reagent_volume_low_range",
+       "quote": "To obtain the low concentration curve instead of using 10 μL NP sample and 300 μLCoomassie reagent, 150 μL of sample and 150 μL of reagent were used.",
+       "value_num": 150,
+       "unit": "μL"
+      },
+      {
+       "name": "mixing_time",
+       "quote": "After mixing for 30 s and incubating for 10 min for each protein concentration, CP, the absorption of the protein—Coomassie Blue mix at 595 nm—was recorded",
+       "value_num": 30,
+       "unit": "s"
+      },
+      {
+       "name": "incubation_time",
+       "quote": "After mixing for 30 s and incubating for 10 min for each protein concentration, CP, the absorption of the protein—Coomassie Blue mix at 595 nm—was recorded",
+       "value_num": 10,
+       "unit": "min"
+      },
+      {
+       "name": "wavelength",
+       "quote": "After mixing for 30 s and incubating for 10 min for each protein concentration, CP, the absorption of the protein—Coomassie Blue mix at 595 nm—was recorded",
+       "value_num": 595,
+       "unit": "nm"
+      },
+      {
+       "name": "working_range",
+       "quote": "Two different calibration curves were recorded, one for high protein concentrations (working range of 100–1500 μg/mL protein concentrations CP) and a second one for low protein concentrations (working range 1–25 μg/mL protein concentrations CP).",
+       "value_text": "100–1500 μg/mL (high) and 1–25 μg/mL (low)"
+      }
+     ],
      "equipment": [],
      "not_stated": []
     },
@@ -745,7 +806,55 @@
      "action": "measure",
      "description": "Re-determine the protein concentration of the FITC-conjugated proteins with the Bradford assay.",
      "quote": "After the column purification the protein solution becomes diluted, the protein concentration CP (of the now FITC-conjugated proteins) was determined again with the Bradford assay.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "sample_volume_high_range",
+       "quote": "Following the indication of the guide, in order to get the high concentration curve, 10 μL of NP solution sample were mixed with 300 μL of Coomassie reagent, previously equilibrated at room temperature.",
+       "value_num": 10,
+       "unit": "μL"
+      },
+      {
+       "name": "reagent_volume_high_range",
+       "quote": "Following the indication of the guide, in order to get the high concentration curve, 10 μL of NP solution sample were mixed with 300 μL of Coomassie reagent, previously equilibrated at room temperature.",
+       "value_num": 300,
+       "unit": "μL"
+      },
+      {
+       "name": "sample_volume_low_range",
+       "quote": "To obtain the low concentration curve instead of using 10 μL NP sample and 300 μLCoomassie reagent, 150 μL of sample and 150 μL of reagent were used.",
+       "value_num": 150,
+       "unit": "μL"
+      },
+      {
+       "name": "reagent_volume_low_range",
+       "quote": "To obtain the low concentration curve instead of using 10 μL NP sample and 300 μLCoomassie reagent, 150 μL of sample and 150 μL of reagent were used.",
+       "value_num": 150,
+       "unit": "μL"
+      },
+      {
+       "name": "mixing_time",
+       "quote": "After mixing for 30 s and incubating for 10 min for each protein concentration, CP, the absorption of the protein—Coomassie Blue mix at 595 nm—was recorded",
+       "value_num": 30,
+       "unit": "s"
+      },
+      {
+       "name": "incubation_time",
+       "quote": "After mixing for 30 s and incubating for 10 min for each protein concentration, CP, the absorption of the protein—Coomassie Blue mix at 595 nm—was recorded",
+       "value_num": 10,
+       "unit": "min"
+      },
+      {
+       "name": "wavelength",
+       "quote": "After mixing for 30 s and incubating for 10 min for each protein concentration, CP, the absorption of the protein—Coomassie Blue mix at 595 nm—was recorded",
+       "value_num": 595,
+       "unit": "nm"
+      },
+      {
+       "name": "working_range",
+       "quote": "Two different calibration curves were recorded, one for high protein concentrations (working range of 100–1500 μg/mL protein concentrations CP) and a second one for low protein concentrations (working range 1–25 μg/mL protein concentrations CP).",
+       "value_text": "100–1500 μg/mL (high) and 1–25 μg/mL (low)"
+      }
+     ],
      "equipment": [],
      "not_stated": []
     }
@@ -773,6 +882,20 @@
      "value_num": 5498.3,
      "unit": "mL/µg",
      "value_text": "ΔI/ΔCP, Figure 5b (anti-VEGF)"
+    },
+    {
+     "property": "fluorescence_calibration_intercept_I0_anti-HRP",
+     "quote": "A linear fit leads to the following correlation between fluorescence intensity I and concentration CP: (a) I(CP) = I0 + (ΔI/ΔCP)·CP = −464.28 + (4447.1 mL/µg)·CP; (b) I(CP) = −3549.4 + (5498.3 mL/µg)·CP.",
+     "value_num": -464.28,
+     "unit": "a.u.",
+     "value_text": "I0 = I(CP = 0), Figure 5a (anti-HRP)"
+    },
+    {
+     "property": "fluorescence_calibration_intercept_I0_anti-VEGF",
+     "quote": "A linear fit leads to the following correlation between fluorescence intensity I and concentration CP: (a) I(CP) = I0 + (ΔI/ΔCP)·CP = −464.28 + (4447.1 mL/µg)·CP; (b) I(CP) = −3549.4 + (5498.3 mL/µg)·CP.",
+     "value_num": -3549.4,
+     "unit": "a.u.",
+     "value_text": "I0 = I(CP = 0), Figure 5b (anti-VEGF)"
     }
    ],
    "missing_fields": [
@@ -903,6 +1026,11 @@
        "quote": "For the reaction 19.23 μL of Au, NPs dispersed in water (corresponding to 4pmol) with concentration cNP = 208 nM were taken, and mixed with 923.5 μL of 4-morpholineethanesulfonic acid (MES, Sigma Aldrich #M8250, 50 mM, pH 6.5) and 57.3 µL of EDC stock solution (100 mg/mL).",
        "value_num": 208,
        "unit": "nM"
+      },
+      {
+       "name": "edc_per_np",
+       "quote": "The ratios were chosen that per 1 Au NP 7.5 × 106 EDC molecules, 50 antibodies, 103 TAMRA molecules, and 2.5 × 104 amine-PEG molecules were added for reaction.",
+       "value_text": "7.5 × 106 EDC molecules"
       }
      ],
      "equipment": [],
@@ -931,7 +1059,13 @@
      "action": "purify",
      "description": "Remove unreacted EDC and salts on a PD-10 desalting column equilibrated with MES.",
      "quote": "After 20 min, the sample with a total volume V = 1 mL containing the activated NPs was cleaned from unreacted EDC and the salts, using a pre-packed column PD-10 desalting column (GE healthcare #17-0851-01, Bucks, UK) equilibrated with MES (50 mM, pH 6.5).",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "dilution_factor",
+       "quote": "During this step, the NP volume was roughly diluted twice.",
+       "value_text": "roughly diluted twice"
+      }
+     ],
      "equipment": [
       {
        "type": "PD-10 desalting column",
@@ -964,7 +1098,13 @@
      "action": "add",
      "description": "Add the antibody (30 μg) immediately after cleaning.",
      "quote": "Immediately after the NP cleaning, 30 μg of antibodies were added.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "antibody_per_np",
+       "quote": "The ratios were chosen that per 1 Au NP 7.5 × 106 EDC molecules, 50 antibodies, 103 TAMRA molecules, and 2.5 × 104 amine-PEG molecules were added for reaction.",
+       "value_text": "50 antibodies"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "addition_rate"
@@ -993,7 +1133,13 @@
      "action": "add",
      "description": "Add TAMRA (2 μg).",
      "quote": "After incubation for 15 min, 2 μg of TAMRA were added.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "tamra_per_np",
+       "quote": "The ratios were chosen that per 1 Au NP 7.5 × 106 EDC molecules, 50 antibodies, 103 TAMRA molecules, and 2.5 × 104 amine-PEG molecules were added for reaction.",
+       "value_text": "103 TAMRA molecules"
+      }
+     ],
      "equipment": [],
      "not_stated": []
     },
@@ -1020,7 +1166,13 @@
      "action": "add",
      "description": "Add amine-PEG (75 μg) to block the remaining reactive carboxylic groups.",
      "quote": "Finally, after another 15 min of incubation, 75 μg of amine-PEG were added to block the remaining reactive carboxylic groups.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "amine_peg_per_np",
+       "quote": "The ratios were chosen that per 1 Au NP 7.5 × 106 EDC molecules, 50 antibodies, 103 TAMRA molecules, and 2.5 × 104 amine-PEG molecules were added for reaction.",
+       "value_text": "2.5 × 104 amine-PEG molecules"
+      }
+     ],
      "equipment": [],
      "not_stated": []
     },
@@ -1180,6 +1332,38 @@
      "property": "cellular_internalization_HUVEC",
      "quote": "In addition, NP-antibody conjugates were incorporated by cells, as shown in the fluorescence microscopyimages in Figure 12.",
      "value_text": "incorporated by HUVECs (fluorescence microscopy, Fig. 12)"
+    },
+    {
+     "property": "HUVEC_cell_number_48h_VEGF_16ngmL_VEGF_only_reference",
+     "quote": "The number of cells was normalized to 100% for untreated control cells. *p < 0.01; **p < 0.001 (versus cells treated with VEGF only).",
+     "value_num": 143,
+     "unit": "%",
+     "value_text": "about 143 % of untreated control (48 h, 16 ng/mL VEGF, no NP: reference 'cells treated with VEGF only'), read on Fig. 16b",
+     "from_figure": "Fig. 16b"
+    },
+    {
+     "property": "HUVEC_cell_number_48h_VEGF_12ngmL_VEGF_only_reference",
+     "quote": "The number of cells was normalized to 100% for untreated control cells. *p < 0.01; **p < 0.001 (versus cells treated with VEGF only).",
+     "value_num": 128,
+     "unit": "%",
+     "value_text": "about 128 % of untreated control (48 h, 12 ng/mL VEGF, no NP: reference 'cells treated with VEGF only'), read on Fig. 16b",
+     "from_figure": "Fig. 16b"
+    },
+    {
+     "property": "HUVEC_cell_number_48h_VEGF_12ngmL_with_NP_antibody_50ngmL",
+     "quote": "The number of cells was normalized to 100% for untreated control cells. *p < 0.01; **p < 0.001 (versus cells treated with VEGF only).",
+     "value_num": 110,
+     "unit": "%",
+     "value_text": "about 110 % of untreated control (48 h, 12 ng/mL VEGF, antibody 50 ng/mL equivalent), read on Fig. 16b",
+     "from_figure": "Fig. 16b"
+    },
+    {
+     "property": "HUVEC_cell_number_48h_VEGF_12ngmL_with_NP_antibody_100ngmL",
+     "quote": "The number of cells was normalized to 100% for untreated control cells. *p < 0.01; **p < 0.001 (versus cells treated with VEGF only).",
+     "value_num": 115,
+     "unit": "%",
+     "value_text": "about 115 % of untreated control (48 h, 12 ng/mL VEGF, antibody 100 ng/mL equivalent), read on Fig. 16b",
+     "from_figure": "Fig. 16b"
     }
    ],
    "missing_fields": [
@@ -1263,6 +1447,38 @@
      "property": "cellular_internalization_HUVEC",
      "quote": "In addition, NP-antibody conjugates were incorporated by cells, as shown in the fluorescence microscopyimages in Figure 12.",
      "value_text": "incorporated by HUVECs (fluorescence microscopy, Fig. 12)"
+    },
+    {
+     "property": "HUVEC_cell_number_48h_VEGF_16ngmL_VEGF_only_reference",
+     "quote": "The number of cells was normalized to 100% for untreated control cells. *p < 0.01; **p < 0.001 (versus cells treated with VEGF only).",
+     "value_num": 142,
+     "unit": "%",
+     "value_text": "about 142 % of untreated control (48 h, 16 ng/mL VEGF, no NP: reference 'cells treated with VEGF only'), read on Fig. 16d",
+     "from_figure": "Fig. 16d"
+    },
+    {
+     "property": "HUVEC_cell_number_48h_VEGF_12ngmL_VEGF_only_reference",
+     "quote": "The number of cells was normalized to 100% for untreated control cells. *p < 0.01; **p < 0.001 (versus cells treated with VEGF only).",
+     "value_num": 127,
+     "unit": "%",
+     "value_text": "about 127 % of untreated control (48 h, 12 ng/mL VEGF, no NP: reference 'cells treated with VEGF only'), read on Fig. 16d",
+     "from_figure": "Fig. 16d"
+    },
+    {
+     "property": "HUVEC_cell_number_48h_VEGF_12ngmL_with_NP_antibody_50ngmL",
+     "quote": "The number of cells was normalized to 100% for untreated control cells. *p < 0.01; **p < 0.001 (versus cells treated with VEGF only).",
+     "value_num": 113,
+     "unit": "%",
+     "value_text": "about 113 % of untreated control (48 h, 12 ng/mL VEGF, antibody 50 ng/mL equivalent), read on Fig. 16d",
+     "from_figure": "Fig. 16d"
+    },
+    {
+     "property": "HUVEC_cell_number_48h_VEGF_12ngmL_with_NP_antibody_100ngmL",
+     "quote": "The number of cells was normalized to 100% for untreated control cells. *p < 0.01; **p < 0.001 (versus cells treated with VEGF only).",
+     "value_num": 108,
+     "unit": "%",
+     "value_text": "about 108 % of untreated control (48 h, 12 ng/mL VEGF, antibody 100 ng/mL equivalent), read on Fig. 16d",
+     "from_figure": "Fig. 16d"
     }
    ]
   },
@@ -1299,6 +1515,11 @@
        "quote": "For the reaction 19.23 μL of Au, NPs dispersed in water (corresponding to 4pmol) with concentration cNP = 208 nM were taken, and mixed with 923.5 μL of 4-morpholineethanesulfonic acid (MES, Sigma Aldrich #M8250, 50 mM, pH 6.5) and 57.3 µL of EDC stock solution (100 mg/mL).",
        "value_num": 208,
        "unit": "nM"
+      },
+      {
+       "name": "edc_per_np",
+       "quote": "The ratios were chosen that per 1 Au NP 7.5 × 106 EDC molecules, 50 antibodies, 103 TAMRA molecules, and 2.5 × 104 amine-PEG molecules were added for reaction.",
+       "value_text": "7.5 × 106 EDC molecules"
       }
      ],
      "equipment": [],
@@ -1327,7 +1548,13 @@
      "action": "purify",
      "description": "Remove unreacted EDC and salts on a PD-10 desalting column equilibrated with MES.",
      "quote": "After 20 min, the sample with a total volume V = 1 mL containing the activated NPs was cleaned from unreacted EDC and the salts, using a pre-packed column PD-10 desalting column (GE healthcare #17-0851-01, Bucks, UK) equilibrated with MES (50 mM, pH 6.5).",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "dilution_factor",
+       "quote": "During this step, the NP volume was roughly diluted twice.",
+       "value_text": "roughly diluted twice"
+      }
+     ],
      "equipment": [
       {
        "type": "PD-10 desalting column",
@@ -1360,7 +1587,13 @@
      "action": "add",
      "description": "Add TAMRA (2 μg).",
      "quote": "After incubation for 15 min, 2 μg of TAMRA were added.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "tamra_per_np",
+       "quote": "The ratios were chosen that per 1 Au NP 7.5 × 106 EDC molecules, 50 antibodies, 103 TAMRA molecules, and 2.5 × 104 amine-PEG molecules were added for reaction.",
+       "value_text": "103 TAMRA molecules"
+      }
+     ],
      "equipment": [],
      "not_stated": []
     },
@@ -1387,7 +1620,13 @@
      "action": "add",
      "description": "Add amine-PEG (75 μg) to block the remaining reactive carboxylic groups.",
      "quote": "Finally, after another 15 min of incubation, 75 μg of amine-PEG were added to block the remaining reactive carboxylic groups.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "amine_peg_per_np",
+       "quote": "The ratios were chosen that per 1 Au NP 7.5 × 106 EDC molecules, 50 antibodies, 103 TAMRA molecules, and 2.5 × 104 amine-PEG molecules were added for reaction.",
+       "value_text": "2.5 × 104 amine-PEG molecules"
+      }
+     ],
      "equipment": [],
      "not_stated": []
     },
@@ -1664,7 +1903,7 @@
     {
      "order": 1,
      "action": "mix",
-     "description": "Au-PEG NPs in MES buffer without EDC (conditions of this first stage not given).",
+     "description": "Au-PEG NPs in MES buffer without EDC (conditions of this first stage not given). Steps 2 to 10 are inherited from the EDC protocol by hypothesis: the article only says the reactions were repeated without EDC.",
      "quote": "As proteins can also nonspecifically adsorb to the surface of NPs, the conjugation reactions were repeated but without addition of EDC.",
      "parameters": [],
      "equipment": [],
@@ -1678,12 +1917,13 @@
     {
      "order": 2,
      "action": "add",
-     "description": "Add the antibody (30 μg) immediately after cleaning.",
-     "quote": "Immediately after the NP cleaning, 30 μg of antibodies were added.",
+     "description": "Add the antibody (30 μg).",
+     "quote": "30 μg of antibodies were added",
      "parameters": [],
      "equipment": [],
      "not_stated": [
-      "addition_rate"
+      "addition_rate",
+      "timing_relative_to_activation_or_desalting"
      ]
     },
     {
@@ -1734,7 +1974,7 @@
     {
      "order": 6,
      "action": "add",
-     "description": "Add amine-PEG (75 μg) to block the remaining reactive carboxylic groups.",
+     "description": "Add amine-PEG (75 μg).",
      "quote": "Finally, after another 15 min of incubation, 75 μg of amine-PEG were added to block the remaining reactive carboxylic groups.",
      "parameters": [],
      "equipment": [],
@@ -1875,7 +2115,7 @@
     {
      "order": 1,
      "action": "mix",
-     "description": "Au-PEG NPs in MES buffer without EDC (conditions of this first stage not given).",
+     "description": "Au-PEG NPs in MES buffer without EDC (conditions of this first stage not given). Steps 2 to 10 are inherited from the EDC protocol by hypothesis: the article only says the reactions were repeated without EDC.",
      "quote": "As proteins can also nonspecifically adsorb to the surface of NPs, the conjugation reactions were repeated but without addition of EDC.",
      "parameters": [],
      "equipment": [],
@@ -1889,12 +2129,13 @@
     {
      "order": 2,
      "action": "add",
-     "description": "Add the antibody (30 μg) immediately after cleaning.",
-     "quote": "Immediately after the NP cleaning, 30 μg of antibodies were added.",
+     "description": "Add the antibody (30 μg).",
+     "quote": "30 μg of antibodies were added",
      "parameters": [],
      "equipment": [],
      "not_stated": [
-      "addition_rate"
+      "addition_rate",
+      "timing_relative_to_activation_or_desalting"
      ]
     },
     {
@@ -1945,7 +2186,7 @@
     {
      "order": 6,
      "action": "add",
-     "description": "Add amine-PEG (75 μg) to block the remaining reactive carboxylic groups.",
+     "description": "Add amine-PEG (75 μg).",
      "quote": "Finally, after another 15 min of incubation, 75 μg of amine-PEG were added to block the remaining reactive carboxylic groups.",
      "parameters": [],
      "equipment": [],
@@ -2086,7 +2327,7 @@
     {
      "order": 1,
      "action": "mix",
-     "description": "Au-PEG NPs in MES buffer without EDC (conditions of this first stage not given).",
+     "description": "Au-PEG NPs in MES buffer without EDC (conditions of this first stage not given). Steps 2 to 10 are inherited from the EDC protocol by hypothesis: the article only says the reactions were repeated without EDC.",
      "quote": "As proteins can also nonspecifically adsorb to the surface of NPs, the conjugation reactions were repeated but without addition of EDC.",
      "parameters": [],
      "equipment": [],
@@ -2127,7 +2368,7 @@
     {
      "order": 4,
      "action": "add",
-     "description": "Add amine-PEG (75 μg) to block the remaining reactive carboxylic groups.",
+     "description": "Add amine-PEG (75 μg).",
      "quote": "Finally, after another 15 min of incubation, 75 μg of amine-PEG were added to block the remaining reactive carboxylic groups.",
      "parameters": [],
      "equipment": [],
@@ -2263,7 +2504,7 @@
      "quote": "In addition, using a high pH such as 8 was tried, with the motivation to take advantage of linking antibodies in an oriented manner [], but the activation process was not working as well as at pH 6.5, and thus, throughout this work, pH 6.5 was used."
     }
    ],
-   "succeeded": false,
+   "succeeded": null,
    "steps": [
     {
      "order": 1,
@@ -2316,7 +2557,7 @@
    "type": "comparaison_branches",
    "route": null,
    "quote": null,
-   "text": "Dans l'eau, le diamètre hydrodynamique reste de 27 à 29 nm pour la plupart des échantillons (27,4 nm pour Au-PEG, 28,9 nm pour Au-PEG-anti-VEGF, 27,0 nm pour Au-PEG-anti-HRP), sauf Au-PEG-anti-VEGF* à 38,0 nm. Le potentiel zêta passe de −32,8 mV (Au-PEG) à −11,8 mV (anti-VEGF) et −6,3 mV (anti-HRP) avec EDC, mais seulement à −31,4 et −24,3 mV sans EDC, ce qui indique un couplage surtout covalent. Les conjugués marqués portent 2,4 à 2,7 anticorps par particule (anti-HRP*) et 6,2 à 6,3 (anti-VEGF*)."
+   "text": "Dans l'eau, le diamètre hydrodynamique reste de 27 à 29 nm pour la plupart des échantillons (27,4 nm pour Au-PEG, 28,9 nm pour Au-PEG-anti-VEGF, 27,0 nm pour Au-PEG-anti-HRP), sauf Au-PEG-anti-VEGF* à 38,0 nm. Le potentiel zêta passe de −32,8 mV (Au-PEG) à −11,8 mV (anti-VEGF) et −6,3 mV (anti-HRP) avec EDC, mais seulement à −31,4 et −24,3 mV sans EDC, ce que les auteurs interprètent comme un couplage surtout covalent. Les conjugués marqués portent 2,4 à 2,7 anticorps par particule (anti-HRP*) et 6,2 à 6,3 (anti-VEGF*)."
   },
   {
    "type": "tendance_observee",
@@ -2350,7 +2591,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Au-PEG-anti-VEGF",
-   "text": "Hypothèse : EDC active les carboxyles du PEG en O-acylisourée, instable en milieu aqueux ; le pH 6,5 du tampon MES est proche de l'optimum de cette activation. Après élimination de l'EDC en excès sur colonne, les amines de l'anticorps, du TAMRA puis du PEG-amine attaquent l'ester actif pour former des amides ; le PEG-amine en excès bloque les carboxyles restants et limite l'adsorption non spécifique."
+   "text": "Hypothèse : l'EDC active les carboxyles terminaux du PEG en O-acylisourée, intermédiaire instable en milieu aqueux (hydrolyse vers le carboxyle ou réarrangement en N-acylurée en quelques secondes à minutes) ; le pH 6,5 du tampon MES est proche de l'optimum de cette activation. Sans NHS ni sulfo-NHS, peu d'esters actifs survivent au dessalage sur PD-10 avant l'ajout de l'anticorps : la fixation observée peut donc relever en partie de l'adsorption non spécifique de la protéine sur la couronne de PEG et en partie d'un couplage sur les rares intermédiaires restants. La baisse de la charge négative peut aussi venir de l'amidation par le TAMRA et le PEG-amine, ou de N-acylurées portant un groupe diméthylaminopropyle protonable. Le PEG-amine en excès bloque ensuite les carboxyles restants. Un couplage EDC/sulfo-NHS avec dosage des anticorps fixés après correction du filtre interne trancherait (fiche Thermo Fisher sur l'EDC)."
   },
   {
    "type": "securite_analyse",
@@ -2362,6 +2603,72 @@
    "route": null,
    "quote": null,
    "text": "Pas de rendement ni de purification des nanoparticules de citrate ; durée de la première agitation à 100 °C et température des 30 dernières minutes non données ; durée et température de la pégylation non données, et les exposants des quantités par particule (« 105 PEG molecules », « 7.5 × 106 EDC », « 103 TAMRA », « 2.5 × 104 amine-PEG ») sont perdus dans le texte (probablement des puissances de 10). Masse du PEG-amine donnée en « 750 kDa » alors que le PEG est dit « short » (probablement 750 Da). Pureté de la plupart des réactifs non donnée. Le protocole de la répétition sans EDC (activation, dessalage) n'est pas détaillé. La concentration de 11,1 nM annoncée pour les nanoparticules brutes paraît difficile à concilier avec les quantités d'or introduites (≈ 50 µmol d'or dans ≈ 152 mL, soit au plus environ 1,3 nM de particules de 20 nm) ; la concentration de 208 nM utilisée ensuite n'est pas expliquée. Aucune annexe n'est citée. Figures non lues en valeurs : Fig. 1 (histogramme, moyenne donnée dans le texte), 4, 5, 7, 8, 9, 10 (données reprises dans les tableaux et légendes), 12 (images), 14 et 15 (essais avec anticorps soluble, hors matériau synthétisé) ; seules les Fig. 2, 11, 13 et 16 ont été lues."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-citrate",
+   "quote": null,
+   "text": "La concentration de 11,1 nM annoncée pour les particules brutes est environ 9,5 fois supérieure au maximum permis par l'or introduit (50 µmol d'or, soit au plus ≈ 1,2 nM pour des particules de 20,9 nm), et l'absorbance déclarée (0,23 à 450 nm, dilution 26) est environ dix fois trop forte (≈ 0,024 attendue) ; une erreur de dilution ou d'absorbance dans l'article est probable (calcul d'après Haiss et al., 2007). Toutes les concentrations en particules déduites du même dosage UV-Vis (208 nM avant couplage, cNP du tableau 1, rapports par particule) sont donc à vérifier avant de reprendre le protocole. Une seule injection de croissance ne fait passer le diamètre que d'un facteur 1,26 ; des cycles ont peut-être été omis du texte (méthode apparentée de Bastús et al., 2011)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": null,
+   "text": "Tableau 1 : le nombre d'anticorps par particule (RP/NP = 2,7 ; 2,4 ; 6,2 ; 6,3) ne se recalcule pas à partir des lignes du même tableau : cP/cNP donne 3,0 ; 2,9 ; 8,3 et 14,9, alors que CP et cP se recalculent bien. Les deux dilutions de l'anti-VEGF* sont aussi discordantes entre elles (cNP ÷ 4, cP ÷ 2,2). Les valeurs de l'article sont recopiées telles quelles ; le rapport d'anticorps par particule n'est pas établi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-PEG-anti-VEGF*",
+   "quote": null,
+   "text": "Le rapport RP/NP de cette voie est mesuré par fluorescence de la FITC en présence de particules d'or à 2 nM, dont l'absorbance dépasse 1 aux longueurs d'onde d'excitation (494 nm) et d'émission (519 nm) ; l'étalonnage a été fait sur les protéines libres, sans or, et aucune correction d'effet de filtre interne n'est décrite (Lakowicz, Principles of Fluorescence Spectroscopy) : le nombre d'anticorps par particule est probablement sous-estimé. Il n'est de plus pas recalculable à partir du tableau 1 (voir l'annotation générale)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-PEG-anti-HRP*",
+   "quote": null,
+   "text": "Le rapport RP/NP de cette voie est mesuré par fluorescence de la FITC en présence de particules d'or à 2 nM, dont l'absorbance dépasse 1 aux longueurs d'onde d'excitation (494 nm) et d'émission (519 nm) ; l'étalonnage a été fait sur les protéines libres, sans or, et aucune correction d'effet de filtre interne n'est décrite (Lakowicz, Principles of Fluorescence Spectroscopy) : le nombre d'anticorps par particule est probablement sous-estimé. Il n'est de plus pas recalculable à partir du tableau 1 (voir l'annotation générale)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-PEG-anti-HRP",
+   "quote": null,
+   "text": "Dans la figure 16, le témoin anti-HRP est dosé à concentration d'anticorps égale à l'anti-VEGF, donc à environ 2,4 fois plus de particules (RP/NP de 2,55 contre 6,25) ; l'absence d'effet spécifique et la conclusion de « toxicité générale » ne sont donc pas démontrées sans témoin à concentration de particules égale."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-PEG-anti-VEGF",
+   "quote": null,
+   "text": "Le rapport par particule de la FITC (750 par protéine) n'est pas mesuré (pas de degré de marquage F/P) et le RP/NP du tableau 1 vient de conjugués marqués dont la charge et la taille diffèrent de ceux, non marqués, utilisés en biologie ; l'appliquer aux conjugués de la figure 16 n'est pas justifié. Le couplage EDC se fait sans NHS ni sulfo-NHS, avec un passage de plusieurs minutes sur PD-10 avant l'ajout de l'anticorps : l'intermédiaire est instable dans l'eau et la fixation peut être en partie une adsorption non spécifique (fiche Thermo Fisher sur l'EDC). L'anticorps ne dispose que de 15 min avant l'ajout du TAMRA et du PEG-amine en grand excès, et le SDS du premier lavage peut abîmer les anticorps fixés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-PEG-anti-VEGF",
+   "quote": null,
+   "text": "Le PEG-amine est écrit « Mw = 750 kDa » ; avec 75 µg pour 4 pmol de particules, seul 750 g/mol redonne le rapport annoncé de 2,5 × 104 par particule, donc « kDa » est probablement une coquille (doute conservé, texte inchangé). De même, les rapports de 7,5 × 106 EDC, 50 anticorps et 103 TAMRA par particule se recalculent à partir des masses données si les exposants aplatis sont des puissances de dix."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "FITC-antibody",
+   "quote": null,
+   "text": "Le marquage utilise 750 FITC par protéine, soit 30 à 50 fois l'excès molaire habituellement conseillé (15 à 25), sans mesure du degré de marquage ; la solution mère de FITC est préparée dans un tampon borate aqueux (l'isothiocyanate s'y hydrolyse, la pratique courante est le DMSO ou le DMF anhydre) et aucune protection contre la lumière n'est mentionnée (fiche Thermo Fisher sur le marquage FITC/TRITC)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-PEG/anti-VEGF",
+   "quote": null,
+   "text": "La conclusion « couplage surtout covalent » repose sur le seul potentiel zêta : l'EDC change à lui seul la charge (témoin sans anticorps : −20,0 mV avec EDC contre −30,1 mV sans), et aucun dosage d'anticorps n'est fait sur les échantillons sans EDC. On ignore aussi si le tampon MES, l'activation de 20 min et le dessalage ont été conservés, ce qui pourrait changer plusieurs variables à la fois."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-PEG",
+   "quote": null,
+   "text": "Le PEG est ajouté à 10^5 molécules par particule (exposant aplati dans le texte), soit un excès de 70 à 140 fois la capacité de greffage d'un PEG de 3 kDa (Rahme et al., 2013) ; la masse à peser dépend de la concentration de particules, elle-même douteuse d'un facteur ≈ 10 (voir Au-citrate). Les durées et températures de la pégylation ne sont pas données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": null,
+   "text": "Figure 16 : la légende écrit « ng/L » pour « ng/mL » et la résistivité de l'eau est écrite « 18.2 mΩ·cm−1 » pour 18,2 MΩ·cm ; ce sont des coquilles de l'article sans conséquence pour la synthèse. Le potentiel zêta est mesuré dans l'eau milliQ sans force ionique ni pH fixé, donc peu transposable."
   }
  ],
  "method_sources": [
@@ -2418,12 +2725,6 @@
    "ref_id": "B24-nanomaterials-05-01297",
    "role": "autre",
    "quote": "The calibration curve was done following the fabricant specifications"
-  },
-  {
-   "route": "Au-PEG-anti-VEGF_pH8",
-   "ref_id": "B28-nanomaterials-05-01297",
-   "role": "autre",
-   "quote": "In addition, using a high pH such as 8 was tried, with the motivation to take advantage of linking antibodies in an oriented manner"
   }
  ],
  "sample_inventory": [
@@ -2572,11 +2873,11 @@
   },
   {
    "where": "Branches sans EDC (Au-PEG/anti-VEGF, /anti-HRP, /control)",
-   "issue": "L'article dit seulement que les réactions ont été « repeated but without addition of EDC ». On ignore si le tampon MES, l'incubation de 20 min et la colonne de dessalage ont été conservés ; les branches reçoivent donc leurs propres étapes à partir de l'ajout d'anticorps (ou de TAMRA pour le témoin), précédées d'une étape de mélange sans détail."
+   "issue": "L'article dit seulement que les réactions ont été « repeated but without addition of EDC ». On ignore si le tampon MES, l'incubation de 20 min et la colonne de dessalage ont été conservés ; les étapes 2 à 10 sont reprises du protocole EDC par hypothèse (pas d'héritage de « after the NP cleaning » : le moment de l'ajout de l'anticorps est déclaré non cité) et l'étape 1 est un mélange sans détail."
   },
   {
    "where": "Au-PEG-anti-VEGF_pH8",
-   "issue": "L'essai à « a high pH such as 8 » n'est pas rattaché à un anticorps précis ni détaillé ; il est extrait comme essai d'activation moins efficace (succeeded false), sans quantité ni durée."
+   "issue": "L'essai à « a high pH such as 8 » n'est pas rattaché à un anticorps précis ni détaillé ; l'article dit que l'activation « was not working as well » qu'à pH 6,5, pas qu'elle a échoué : succeeded laissé non renseigné."
   },
   {
    "where": "Table 2, Au-PEG-anti-VEGF*",
@@ -2592,15 +2893,23 @@
   },
   {
    "where": "Fig. 2, 11, 13, 16 (valeurs lues sur figure)",
-   "issue": "Valeurs lues à l'œil, au plus 2 chiffres significatifs : pic plasmon ≈ 530 nm (Fig. 2) ; internalisation Fig. 11 (barres blanches avec sérum, noires sans sérum, d'après la légende) précise à ± 10 % ; viabilité Fig. 13 à ± 3 points ; Fig. 16b/d à 48 h et 16 ng/mL de VEGF seulement, à ± 5 points près, les valeurs de 105 % étant arrondies à 100 ou 110."
+   "issue": "Valeurs lues à l'œil, au plus 2 chiffres significatifs : pic plasmon ≈ 530 nm (Fig. 2) ; internalisation Fig. 11 (barres blanches avec sérum, noires sans sérum, d'après la légende) précise à ± 10 % ; viabilité Fig. 13 à ± 3 points ; Fig. 16b/d à 48 h seulement (12 et 16 ng/mL de VEGF, VEGF seul compris), à ± 5 points près, les valeurs de 105 % à 16 ng/mL étant arrondies à 100 ou 110 ; panneaux a et c (24 h) non repris."
   },
   {
    "where": "Fig. 16, légende",
    "issue": "La légende écrit « 50 ... and 100 ng/L » alors que la figure et la Fig. 15 portent ng/mL ; ng/mL retenu dans les noms de propriétés."
   },
   {
-   "where": "Voie Au-citrate, étape 5 et température",
+   "where": "Voie Au-citrate, étape 6 et température",
    "issue": "« After 30 min, the reaction was cooled down » : la température de ces 30 minutes n'est pas écrite (90 °C probablement) ; déclarée non citée."
+  },
+  {
+   "where": "Au-PEG-anti-VEGF étapes 1, 5, 7, 9 ; Au-PEG-control étapes 1, 5, 7 (rapports par particule)",
+   "issue": "Les rapports par nanoparticule (7.5 × 106 EDC, 50 anticorps, 103 TAMRA, 2.5 × 104 amine-PEG) sont recopiés avec les exposants aplatis du texte, sans recalcul ; « 50 antibodies » est non ambigu. Les branches sans EDC n'en portent pas."
+  },
+  {
+   "where": "Au-PEG-anti-VEGF, réactif amine-PEG",
+   "issue": "« Mw = 750 kDa » est recopié tel quel dans la citation du fournisseur ; 750 Da est plus plausible (« short » PEG) mais n'est pas écrit : texte conservé, voir l'annotation limite_reproductibilite."
   }
  ]
 }
