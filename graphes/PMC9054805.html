@@ -1,0 +1,83 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9054805</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9054805 — Controlled synthesis of graphene oxide/silica hybrid nanocomposites for removal of aromatic pollutants in water.</h1>
+<h2>Voie : RHA1</h2>
+<pre class="mermaid">flowchart LR
+  R12751([&quot;rice husk&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12751 --&gt;|&quot;precursor&quot;| S15242
+  R12752([&quot;distilled water (washing of rice husk)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12752 --&gt;|&quot;wash&quot;| S15242
+  S15242[&quot;&lt;b&gt;1. sieve&lt;/b&gt;&quot;]:::etape
+  S15242 --&gt; S15243
+  S15243[&quot;&lt;b&gt;2. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S15243 --&gt; S15244
+  S15244[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 105 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S15244 --&gt; S15245
+  S15245[&quot;&lt;b&gt;4. grind&lt;/b&gt;&quot;]:::etape
+  S15245 --&gt; S15246
+  S15246[&quot;&lt;b&gt;5. calcine&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S15246 --&gt; M
+  M{{&quot;rice husk ash obtained at 400 °C&lt;br/&gt;&quot;}}:::materiau
+  O61377[&quot;rice_husk_powder_particle_size : 355.8 nm&quot;]:::resultat
+  M -.-&gt; O61377
+  O61378[&quot;carbon_content_EDX : 49.09 %&quot;]:::resultat
+  M -.-&gt; O61378
+  O61379[&quot;silicon_content_EDX : 27 %&quot;]:::resultat
+  M -.-&gt; O61379
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10238{{&quot;RHA1&quot;}}:::materiau
+  B10239[&quot;RHA2&quot;]:::etape
+  B10238 --&gt;|&quot;temperature = 500 °C&quot;| B10239
+  B10240[&quot;RHA3&quot;]:::etape
+  B10238 --&gt;|&quot;temperature = 600 °C&quot;| B10240
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : FGS1</h2>
+<pre class="mermaid">flowchart LR
+  R12753([&quot;RHA1&lt;br/&gt;3 g&quot;]):::reactif
+  R12753 --&gt;|&quot;intermediate&quot;| S15247
+  R12754([&quot;potassium hydroxide&lt;br/&gt;15 g&quot;]):::reactif
+  R12754 --&gt;|&quot;base&quot;| S15247
+  R12755([&quot;distilled water (washing of the activated pr…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12755 --&gt;|&quot;wash&quot;| S15247
+  S15247[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;duration : 15 min&lt;br/&gt;mass_ratio : 5:1&quot;]:::etape
+  S15247 --&gt; S15248
+  S15248[&quot;&lt;b&gt;2. load&lt;/b&gt;&quot;]:::etape
+  S15248 --&gt; S15249
+  S15249[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 850 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S15249 --&gt; S15250
+  S15250[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S15250 --&gt; S15251
+  S15251[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S15251 --&gt; M
+  M{{&quot;functionalized graphene oxide/SiO2 hybrid nanocom…&lt;br/&gt;&quot;}}:::materiau
+  O61385[&quot;interlayer_spacing_d : 3.376 Å&quot;]:::resultat
+  M -.-&gt; O61385
+  O61386[&quot;number_of_layers : 11&quot;]:::resultat
+  M -.-&gt; O61386
+  O61387[&quot;SBET : 1390 m2 g−1&quot;]:::resultat
+  M -.-&gt; O61387
+  O61388[&quot;Smicro : 2398 m2 g−1&quot;]:::resultat
+  M -.-&gt; O61388
+  O61389[&quot;L0 : 2.64 nm&quot;]:::resultat
+  M -.-&gt; O61389
+  O61390[&quot;carbon_content_EDX : 84.48 %&quot;]:::resultat
+  M -.-&gt; O61390
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10241{{&quot;FGS1&quot;}}:::materiau
+  B10242[&quot;FGS2&quot;]:::etape
+  B10241 --&gt;|&quot;RHA1 = replaced by RHA2&quot;| B10242
+  B10243[&quot;FGS3&quot;]:::etape
+  B10241 --&gt;|&quot;RHA1 = replaced by RHA3&quot;| B10243
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
