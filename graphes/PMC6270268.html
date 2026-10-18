@@ -1,0 +1,138 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6270268</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6270268 — The synthesis and characterization of hydroxyapatite-β-alanine modified by grafting polymerization of γ-benzyl-L-glutamate-N-carboxyanhydride.</h1>
+<h2>Voie : HAP-NH2</h2>
+<pre class="mermaid">flowchart LR
+  R14135([&quot;calcium hydroxide&lt;br/&gt;0.1 mol&quot;]):::reactif
+  R14135 --&gt;|&quot;precursor&quot;| S16866
+  R14136([&quot;phosphoric acid&lt;br/&gt;0.06 mol&quot;]):::reactif
+  R14136 --&gt;|&quot;precursor&quot;| S16866
+  R14137([&quot;β-alanine&lt;br/&gt;0.1 mol&quot;]):::reactif
+  R14137 --&gt;|&quot;modulator&quot;| S16866
+  R14138([&quot;deionised water (dissolution)&lt;br/&gt;5000 mL&quot;]):::reactif
+  R14138 --&gt;|&quot;solvent&quot;| S16866
+  R14139([&quot;deionised water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14139 --&gt;|&quot;wash&quot;| S16866
+  S16866[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;temperature : 25 °C&quot;]:::etape
+  S16866 --&gt; S16867
+  S16867[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S16867 --&gt; S16868
+  S16868[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;temperature : 25 °C&quot;]:::etape
+  S16868 --&gt; S16869
+  S16869[&quot;&lt;b&gt;4. age&lt;/b&gt;&quot;]:::etape
+  S16869 --&gt; S16870
+  S16870[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S16870 --&gt; S16871
+  S16871[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionised water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S16871 --&gt; S16872
+  S16872[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;duration : 48 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S16872 --&gt; M
+  M{{&quot;hydroxyapatite-β-alanine (HAP-NH2)&lt;br/&gt;&quot;}}:::materiau
+  O67817[&quot;calcium_content_theoretical : 38.46 %&quot;]:::resultat
+  M -.-&gt; O67817
+  O67818[&quot;calcium_content_measured : 15.89 %&quot;]:::resultat
+  M -.-&gt; O67818
+  O67819[&quot;particle_size : 27.5 nm&quot;]:::resultat
+  M -.-&gt; O67819
+  O67820[&quot;morphology : sheet&quot;]:::resultat
+  M -.-&gt; O67820
+  O67821[&quot;TGA_weight_loss_to_1000C : less than 6%&quot;]:::resultat
+  M -.-&gt; O67821
+  O67822[&quot;TGA_residual_weight_1000C : 92 %&quot;]:::resultat
+  M -.-&gt; O67822
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : HAP-5</h2>
+<pre class="mermaid">flowchart LR
+  R14140([&quot;HAP-NH2 (route HAP-NH2)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14140 --&gt;|&quot;intermediate&quot;| S16873
+  R14141([&quot;γ-benzyl-L-glutamate N-carboxyanhydride (BLG…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14141 --&gt;|&quot;monomer&quot;| S16873
+  R14142([&quot;dimethylformamide (DMF)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14142 --&gt;|&quot;solvent&quot;| S16873
+  R14143([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14143 --&gt;|&quot;gas&quot;| S16873
+  R14144([&quot;alcohol (précipitant, nature non précisée)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14144 --&gt;|&quot;antisolvent&quot;| S16873
+  S16873[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S16873 --&gt; S16874
+  S16874[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 5/1&quot;]:::etape
+  S16874 --&gt; S16875
+  S16875[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 48 h&lt;br/&gt;temperature : room temperature&lt;br/&gt;atmosphere : N2&quot;]:::etape
+  S16875 --&gt; S16876
+  S16876[&quot;&lt;b&gt;4. add&lt;/b&gt;&quot;]:::etape
+  S16876 --&gt; S16877
+  S16877[&quot;&lt;b&gt;5. wash&lt;/b&gt;&quot;]:::etape
+  S16877 --&gt; S16878
+  S16878[&quot;&lt;b&gt;6. dry&lt;/b&gt;&quot;]:::etape
+  S16878 --&gt; M
+  M{{&quot;hydroxyapatite-β-alanine-poly(γ-benzyl-L-glutamat…&lt;br/&gt;&quot;}}:::materiau
+  O67824[&quot;Mn_GPC : not detected by GPC (insolubl…&quot;]:::resultat
+  M -.-&gt; O67824
+  O67825[&quot;percentage_grafting : 39.31 %&quot;]:::resultat
+  M -.-&gt; O67825
+  O67826[&quot;calcium_content_theoretical : 2.65 %&quot;]:::resultat
+  M -.-&gt; O67826
+  O67827[&quot;calcium_content_measured : 4.03 %&quot;]:::resultat
+  M -.-&gt; O67827
+  O67828[&quot;TGA_residual_weight_1000C : 40 %&quot;]:::resultat
+  M -.-&gt; O67828
+  O67829[&quot;particle_size : 9.1 nm&quot;]:::resultat
+  M -.-&gt; O67829
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10992{{&quot;HAP-5&quot;}}:::materiau
+  B10993[&quot;HAP-10&quot;]:::etape
+  B10992 --&gt;|&quot;molar_ratio = 10/1&quot;| B10993
+  B10994[&quot;HAP-20&quot;]:::etape
+  B10992 --&gt;|&quot;molar_ratio = 20/1&quot;| B10994
+  B10995[&quot;HAP-50&quot;]:::etape
+  B10992 --&gt;|&quot;molar_ratio = 50/1&quot;| B10995
+  B10996[&quot;HAP-100&quot;]:::etape
+  B10992 --&gt;|&quot;molar_ratio = 100/1&quot;| B10996
+  B10997[&quot;HAP-200&quot;]:::etape
+  B10992 --&gt;|&quot;molar_ratio = 200/1&quot;| B10997
+  B10998[&quot;HAP-300&quot;]:::etape
+  B10992 --&gt;|&quot;molar_ratio = 300/1&quot;| B10998
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : HAP-PLGA</h2>
+<pre class="mermaid">flowchart LR
+  R14145([&quot;HAP-100 (route HAP-100)&lt;br/&gt;0.5 g&quot;]):::reactif
+  R14145 --&gt;|&quot;intermediate&quot;| S16879
+  R14146([&quot;dimethylformamide (DMF)&lt;br/&gt;45 mL&quot;]):::reactif
+  R14146 --&gt;|&quot;solvent&quot;| S16879
+  R14147([&quot;methanol&lt;br/&gt;5 mL&quot;]):::reactif
+  R14147 --&gt;|&quot;solvent&quot;| S16879
+  R14148([&quot;palladium-carbon catalyst (5% wt.)&lt;br/&gt;2.5 g&quot;]):::reactif
+  R14148 --&gt;|&quot;catalyst&quot;| S16879
+  R14149([&quot;tert-butyl methyl ether&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14149 --&gt;|&quot;antisolvent&quot;| S16879
+  S16879[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S16879 --&gt; S16880
+  S16880[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S16880 --&gt; S16881
+  S16881[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 18 h&quot;]:::etape
+  S16881 --&gt; S16882
+  S16882[&quot;&lt;b&gt;4. add&lt;/b&gt;&quot;]:::etape
+  S16882 --&gt; S16883
+  S16883[&quot;&lt;b&gt;5. collect&lt;/b&gt;&quot;]:::etape
+  S16883 --&gt; S16884
+  S16884[&quot;&lt;b&gt;6. wash&lt;/b&gt;&quot;]:::etape
+  S16884 --&gt; S16885
+  S16885[&quot;&lt;b&gt;7. dry&lt;/b&gt;&quot;]:::etape
+  S16885 --&gt; M
+  M{{&quot;hydroxyapatite-β-alanine-poly(L-glutamic acid) (H…&lt;br/&gt;&quot;}}:::materiau
+  O67869[&quot;benzyl_group_removal : benzyl group missing (peak at…&quot;]:::resultat
+  M -.-&gt; O67869
+  O67870[&quot;OH_band_FTIR : 3450 cm−1&quot;]:::resultat
+  M -.-&gt; O67870
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
