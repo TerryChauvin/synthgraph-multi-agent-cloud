@@ -81,7 +81,7 @@
    "sample": "BTS12-1100, -1150, -1200, -1250 °C",
    "defined_in": "Results : 7 pastilles BTS12 de 1100 à 1400 °C par pas de 50 °C",
    "route": null,
-   "why": "températures déduites de la plage « 1100 °C to 1400 °C (with 50 °C intervals) » ; aucune valeur individuelle (hors 1300, 1350, 1400 °C) n'est donnée par l'article"
+   "why": "7 pastilles BTS12 de 1100 à 1400 °C par pas de 50 °C ; seuls 1300, 1350 et 1400 °C ont des valeurs individuelles. Les températures 1100 à 1250 °C sont déduites de la plage et n'ont ni résultat propre ni voie ; la tendance de densité les couvre (annotation tendance_observee)."
   },
   {
    "sample": "BTS12-Con",
@@ -128,16 +128,42 @@
    ]
   },
   {
-   "sample": "(Sr0.5Pb0.5)CeO3, (Sr0.2Pb0.8)CeO3, (La0.3Bi0.7)CrO3, (K0.5Bi0.5)CeO3 (échantillons ML multiphasés)",
-   "defined_in": "Supplementary Fig. 14 (légende)",
-   "route": null,
-   "why": "essais ML ratés (XRD multiphase) dont ni les conditions de frittage ni le traitement ne sont donnés : la légende du SI mentionne seulement « calcining at different temperatures »"
-  },
-  {
    "sample": "BST conventionnel à vitesse lente",
    "defined_in": "Results, Evaluation of automated rapid sintering (10 ± 2 µm)",
    "route": null,
    "why": "échantillon de comparaison dont les conditions de frittage conventionnel ne sont pas données"
+  },
+  {
+   "sample": "(Sr0.5Pb0.5)CeO3 (essai ML multiphasé)",
+   "defined_in": "Results (ML-predicted compositions); Supplementary Fig. 14 (légende)",
+   "route": "(Sr0.5Pb0.5)CeO3",
+   "results_in": [
+    "Supplementary Fig. 14"
+   ]
+  },
+  {
+   "sample": "(Sr0.2Pb0.8)CeO3 (essai ML multiphasé)",
+   "defined_in": "Results (ML-predicted compositions); Supplementary Fig. 14 (légende)",
+   "route": "(Sr0.2Pb0.8)CeO3",
+   "results_in": [
+    "Supplementary Fig. 14"
+   ]
+  },
+  {
+   "sample": "(La0.3Bi0.7)CrO3 (essai ML multiphasé)",
+   "defined_in": "Results (ML-predicted compositions); Supplementary Fig. 14 (légende)",
+   "route": "(La0.3Bi0.7)CrO3",
+   "results_in": [
+    "Supplementary Fig. 14"
+   ]
+  },
+  {
+   "sample": "(K0.5Bi0.5)CeO3 (essai ML multiphasé)",
+   "defined_in": "Results (ML-predicted compositions); Supplementary Fig. 14 (légende)",
+   "route": "(K0.5Bi0.5)CeO3",
+   "results_in": [
+    "Supplementary Fig. 14"
+   ]
   }
  ],
  "routes": [
@@ -396,6 +422,23 @@
      "not_stated": [
       "atmosphere",
       "heating_rate",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 11,
+     "action": "cool",
+     "description": "Forced cooling of the hot sample by compressed air through a vortex tube, until room temperature (cooling rate not stated).",
+     "quote": "To increase the cooling rate, a pneumatic solenoid valve was activated, which controlled the flow of compressed air to a cooling vortex tube.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "cooling vortex tube",
+       "detail": "compressed air, pneumatic solenoid valve",
+       "quote": "To increase the cooling rate, a pneumatic solenoid valve was activated, which controlled the flow of compressed air to a cooling vortex tube."
+      }
+     ],
+     "not_stated": [
       "cooling_rate"
      ]
     }
@@ -1158,6 +1201,23 @@
       "heating_rate",
       "cooling_rate"
      ]
+    },
+    {
+     "order": 11,
+     "action": "cool",
+     "description": "Forced cooling of the hot sample by compressed air through a vortex tube, until room temperature (cooling rate not stated).",
+     "quote": "To increase the cooling rate, a pneumatic solenoid valve was activated, which controlled the flow of compressed air to a cooling vortex tube.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "cooling vortex tube",
+       "detail": "compressed air, pneumatic solenoid valve",
+       "quote": "To increase the cooling rate, a pneumatic solenoid valve was activated, which controlled the flow of compressed air to a cooling vortex tube."
+      }
+     ],
+     "not_stated": [
+      "cooling_rate"
+     ]
     }
    ],
    "characterizations": [
@@ -1301,6 +1361,13 @@
      "unit": "°C",
      "parent_value": "1350 °C",
      "quote": "Supplementary Fig. 4a shows SEM data of BTS12 samples sintered at 1300 °C (porous), 1350 °C (dense), and 1400 °C (grain growth)"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 10,
+     "value_text": "non précisée",
+     "parent_value": "10 min",
+     "quote": "The rapid sintering of all 7 samples took a total of 70 min"
     }
    ],
    "succeeded": true,
@@ -1347,6 +1414,13 @@
      "unit": "°C",
      "parent_value": "1350 °C",
      "quote": "Supplementary Fig. 4a shows SEM data of BTS12 samples sintered at 1300 °C (porous), 1350 °C (dense), and 1400 °C (grain growth)"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 10,
+     "value_text": "non précisée",
+     "parent_value": "10 min",
+     "quote": "The rapid sintering of all 7 samples took a total of 70 min"
     }
    ],
    "succeeded": true,
@@ -1440,6 +1514,197 @@
      "quote": "At 1.3 GHz frequency, the dielectric tunability of BTS12-1350 and BTS12-Con was 36.28% (±1.62) and 30% under an electric field of 4 kV mm−1, respectively.",
      "value_num": 30,
      "unit": "%"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "grind",
+     "description": "Ball milling of the stoichiometric mixture of the powders at 180 rpm for 20 h.",
+     "quote": "were ball milled at 180 rpm for 20 h",
+     "parameters": [
+      {
+       "name": "milling_speed",
+       "value_num": 180,
+       "unit": "rpm",
+       "quote": "were ball milled at 180 rpm for 20 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 20,
+       "unit": "h",
+       "quote": "were ball milled at 180 rpm for 20 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "milling_medium",
+      "solvent",
+      "ball_to_powder_ratio"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "dry",
+     "description": "Drying of the milled mixture.",
+     "quote": "The mixture was dried and sieved",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "sieve",
+     "description": "Sieving of the dried mixture.",
+     "quote": "The mixture was dried and sieved",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "mesh_size"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "calcine",
+     "description": "Calcination of the sieved powder.",
+     "quote": "The mixture was dried and sieved, followed by calcination at 1000 °C for 4 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 1000,
+       "unit": "°C",
+       "quote": "followed by calcination at 1000 °C for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "followed by calcination at 1000 °C for 4 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "grind",
+     "description": "Second ball milling of the calcined powder.",
+     "quote": "The powder was ball-milled again, dried and sieved for pelletizing under 150 MPa pressure.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "milling_speed",
+      "milling_medium"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Drying of the milled powder.",
+     "quote": "The powder was ball-milled again, dried and sieved for pelletizing under 150 MPa pressure.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "sieve",
+     "description": "Sieving of the dried powder before pelletizing.",
+     "quote": "The powder was ball-milled again, dried and sieved for pelletizing under 150 MPa pressure.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "mesh_size"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "press",
+     "description": "Dry pressing of the powder into pellets 15 mm in diameter and ca. 1.5 mm thick.",
+     "quote": "All samples are pressed into pellets of 15 mm in diameter and ca. 1.5 mm in thickness.",
+     "parameters": [
+      {
+       "name": "pressure",
+       "value_num": 150,
+       "unit": "MPa",
+       "quote": "dried and sieved for pelletizing under 150 MPa pressure"
+      },
+      {
+       "name": "pellet_diameter",
+       "value_num": 15,
+       "unit": "mm",
+       "quote": "pellets of 15 mm in diameter"
+      },
+      {
+       "name": "pellet_thickness",
+       "value_num": 1.5,
+       "unit": "mm",
+       "quote": "ca. 1.5 mm in thickness"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "binder",
+      "press_type",
+      "dwell_time"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "heat",
+     "description": "Partial sintering of the pellets at 200 °C to increase their mechanical strength for robotic handling.",
+     "quote": "As a deviation from the normal process, the samples were partially sintered at 200 °C to enhance their mechanical strength and ensure that they could endure automated handling better.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 200,
+       "unit": "°C",
+       "quote": "the samples were partially sintered at 200 °C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "sinter",
+     "description": "Conventional sintering of the pellet at 1350 °C for 2 h (furnace, atmosphere and rates not stated).",
+     "quote": "To compare the dielectric performance of robotic versus conventional sintering methods, another batch of BTS12 (BTS12-Con) was prepared by sintering at 1350 °C for 2 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 1350,
+       "unit": "°C",
+       "quote": "prepared by sintering at 1350 °C for 2 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "prepared by sintering at 1350 °C for 2 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate",
+      "furnace"
+     ]
     }
    ]
   },
@@ -1727,6 +1992,23 @@
       "heating_rate",
       "cooling_rate"
      ]
+    },
+    {
+     "order": 6,
+     "action": "cool",
+     "description": "Forced cooling of the hot sample by compressed air through a vortex tube, until room temperature (cooling rate not stated).",
+     "quote": "To increase the cooling rate, a pneumatic solenoid valve was activated, which controlled the flow of compressed air to a cooling vortex tube.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "cooling vortex tube",
+       "detail": "compressed air, pneumatic solenoid valve",
+       "quote": "To increase the cooling rate, a pneumatic solenoid valve was activated, which controlled the flow of compressed air to a cooling vortex tube."
+      }
+     ],
+     "not_stated": [
+      "cooling_rate"
+     ]
     }
    ],
    "characterizations": [
@@ -1872,6 +2154,406 @@
      "unit": "%",
      "from_figure": "Fig. 4b"
     }
+   ]
+  },
+  {
+   "label": "(Sr0.5Pb0.5)CeO3",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "ML-predicted perovskite solid solution (multiphase attempt)",
+    "formula": "(Sr0.5Pb0.5)CeO3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "solid-state reaction (hand-mixed with ethanol) followed by calcination at different temperatures",
+   "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14).",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "raw materials (not named)",
+     "formula": null,
+     "role": "precursor",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Hand-mixing of the raw materials with ethanol in a mortar.",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "mortar and pestle",
+       "detail": null,
+       "quote": "hand-mixed with ethanol by a mortar and pestle"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "calcine",
+     "description": "Calcination at different temperatures (values not given in the text).",
+     "quote": "XRD patterns of ML-predicted compositions calcining at different temperatures",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "multiple phases",
+     "instrument": null,
+     "conditions": null,
+     "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_purity",
+     "value_text": "multiple phases",
+     "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14)."
+    }
+   ],
+   "missing_fields": [
+    "precursors",
+    "amounts",
+    "calcination temperature and duration",
+    "pressing and sintering conditions"
+   ]
+  },
+  {
+   "label": "(Sr0.2Pb0.8)CeO3",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "ML-predicted perovskite solid solution (multiphase attempt)",
+    "formula": "(Sr0.2Pb0.8)CeO3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "solid-state reaction (hand-mixed with ethanol) followed by calcination at different temperatures",
+   "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14).",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "raw materials (not named)",
+     "formula": null,
+     "role": "precursor",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Hand-mixing of the raw materials with ethanol in a mortar.",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "mortar and pestle",
+       "detail": null,
+       "quote": "hand-mixed with ethanol by a mortar and pestle"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "calcine",
+     "description": "Calcination at different temperatures (values not given in the text).",
+     "quote": "XRD patterns of ML-predicted compositions calcining at different temperatures",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "multiple phases",
+     "instrument": null,
+     "conditions": null,
+     "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_purity",
+     "value_text": "multiple phases",
+     "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14)."
+    }
+   ],
+   "missing_fields": [
+    "precursors",
+    "amounts",
+    "calcination temperature and duration",
+    "pressing and sintering conditions"
+   ]
+  },
+  {
+   "label": "(La0.3Bi0.7)CrO3",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "ML-predicted perovskite solid solution (multiphase attempt)",
+    "formula": "(La0.3Bi0.7)CrO3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "solid-state reaction (hand-mixed with ethanol) followed by calcination at different temperatures",
+   "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14).",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "raw materials (not named)",
+     "formula": null,
+     "role": "precursor",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Hand-mixing of the raw materials with ethanol in a mortar.",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "mortar and pestle",
+       "detail": null,
+       "quote": "hand-mixed with ethanol by a mortar and pestle"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "calcine",
+     "description": "Calcination at different temperatures (values not given in the text).",
+     "quote": "XRD patterns of ML-predicted compositions calcining at different temperatures",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "multiple phases",
+     "instrument": null,
+     "conditions": null,
+     "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_purity",
+     "value_text": "multiple phases",
+     "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14)."
+    }
+   ],
+   "missing_fields": [
+    "precursors",
+    "amounts",
+    "calcination temperature and duration",
+    "pressing and sintering conditions"
+   ]
+  },
+  {
+   "label": "(K0.5Bi0.5)CeO3",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "ML-predicted perovskite solid solution (multiphase attempt)",
+    "formula": "(K0.5Bi0.5)CeO3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "solid-state reaction (hand-mixed with ethanol) followed by calcination at different temperatures",
+   "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14).",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "raw materials (not named)",
+     "formula": null,
+     "role": "precursor",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Hand-mixing of the raw materials with ethanol in a mortar.",
+     "quote": "For ML-predicted samples, the raw materials were hand-mixed with ethanol by a mortar and pestle.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "mortar and pestle",
+       "detail": null,
+       "quote": "hand-mixed with ethanol by a mortar and pestle"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "calcine",
+     "description": "Calcination at different temperatures (values not given in the text).",
+     "quote": "XRD patterns of ML-predicted compositions calcining at different temperatures",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "multiple phases",
+     "instrument": null,
+     "conditions": null,
+     "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14)."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase_purity",
+     "value_text": "multiple phases",
+     "quote": "However, XRD results revealed multiple phases in these samples (Supplementary Fig. 14)."
+    }
+   ],
+   "missing_fields": [
+    "precursors",
+    "amounts",
+    "calcination temperature and duration",
+    "pressing and sintering conditions"
    ]
   },
   {
@@ -2109,7 +2791,7 @@
   {
    "type": "mecanisme_auteurs",
    "route": null,
-   "text": "Les auteurs attribuent la hausse de permittivité du BTS12 avec la température de frittage à l'augmentation de la taille de grain et de la cristallinité ; ils expliquent l'accordabilité par l'activité de nano-amas polaires. L'article ne décrit pas de mécanisme chimique de formation des phases au-delà de la séquence broyage, calcination, frittage.",
+   "text": "Les auteurs attribuent la hausse de permittivité du BTS12 avec la température de frittage à l'augmentation de la taille de grain et de la cristallinité. L'article ne décrit pas de mécanisme chimique de formation des phases au-delà de la séquence broyage, calcination, frittage.",
    "quote": "the dielectric permittivity increases as the sintering temperature increases, which can be attributed to the larger grain size and higher crystallinity when increasing the sintering temperature on the basis of the XRD and SEM results."
   },
   {
@@ -2125,7 +2807,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le four tubulaire monte à 1400 °C et sa charge est manipulée par un bras robotique : risque de brûlure et de pincement en cas d'accès pendant le cycle. Les carbonates de baryum sont toxiques par ingestion, et les poudres fines des broyages à billes (BaCO3, SrCO3, oxydes de Nb, Ta, Hf, Zr) doivent être manipulées sous aspiration. L'éthanol du mélange manuel est inflammable. Les mesures sous champ continu de plusieurs kV mm−1 imposent des protections contre le claquage, que l'article signale seulement comme risque pour les échantillons. Les essais ratés contiennent du plomb (Sr, Pb)CeO3, toxique."
+   "text": "Le four tubulaire monte à 1400 °C et sa charge est manipulée par un bras robotique : risque de brûlure et de pincement en cas d'accès pendant le cycle. Les carbonates de baryum sont toxiques par ingestion, et les poudres fines des broyages à billes (BaCO3, SrCO3, oxydes de Nb, Ta, Hf, Zr) doivent être manipulées sous aspiration. L'éthanol du mélange manuel est inflammable. Les mesures sous champ continu de plusieurs kV mm−1 imposent des protections contre le claquage, que l'article signale seulement comme risque pour les échantillons. Les essais ratés contiennent du plomb (Sr, Pb)CeO3, toxique. Les essais ML ratés contiennent aussi du bismuth et du chrome ((La,Bi)CrO3), chauffés dans le même tube ouvert que les autres pastilles : volatilisation possible d'oxydes de plomb et de bismuth, formation possible de chrome(VI) sous air et contamination croisée du porte-échantillon, non mentionnées par l'article."
   },
   {
    "type": "limite_reproductibilite",
@@ -2140,12 +2822,59 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "La Fig. 6a (diagramme de contour du pic de phase secondaire de (Ba0.4Sr0.6)CeO3 en fonction de la température et de la durée de frittage) porte des résultats que l'article ne chiffre pas ; la figure est une carte continue, elle n'a pas été lue valeur par valeur."
+   "text": "La Fig. 6a (diagramme de contour du pic de phase secondaire de (Ba0.4Sr0.6)CeO3 en fonction de la température et de la durée de frittage) porte des résultats que l'article ne chiffre pas ; la figure est une carte continue, elle n'a pas été lue valeur par valeur. Le texte écrit (Ba0.6Sr0.4)CeO3 pour la condition 1250 °C, 25 min, le Tableau 2 et la Fig. 6 (Ba0.4Sr0.6)CeO3 et la Fig. 4b (Ba0.5Sr0.5)CeO3. Les flèches de la Fig. 6a semblent aussi relier les deux conditions aux compositions dans l'ordre inverse du texte, avec des durées lues d'environ 30 et 15 min au lieu de 25 et 10 : l'attribution des conditions aux deux cérates reste à confirmer."
   },
   {
    "type": "limite_reproductibilite",
    "route": "BTS12-1350",
-   "text": "La formule BaTi1-xSnxO3 est donnée sans la valeur de x correspondant à BTS12, BTS14 et BTS16 ; les figures 3 et 4 de l'article parlent de rapports de 12 %, 14 % et 16 %, mais l'article écrit seulement « 3 BTS ratios (BaTi1-xSnxO3) (referred to as BTS12, 14 and 16) »."
+   "text": "La formule BaTi1-xSnxO3 est donnée sans la valeur de x correspondant à BTS12, BTS14 et BTS16 ; les figures 3 et 4 de l'article parlent de rapports de 12 %, 14 % et 16 %, mais l'article écrit seulement « 3 BTS ratios (BaTi1-xSnxO3) (referred to as BTS12, 14 and 16) ». La critique scientifique relève que, sans x ni précurseur d'étain, la composition ne peut pas être pesée."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Sept pastilles BTS12 ont été frittées de 1100 à 1400 °C par pas de 50 °C ; l'article ne donne de valeurs individuelles que pour 1300, 1350 et 1400 °C (sans voie propre pour 1100, 1150, 1200 et 1250 °C) et dit seulement que la densité augmente avec la température de frittage, avec un maximum à 1350 et 1400 °C.",
+   "quote": "Supplementary Fig. 3 shows the density of BTS12 ceramics increases with increasing sintering temperature, reaching its maximum values at 1350 °C and 1400 °C."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Les auteurs expliquent la baisse de permittivité sous champ continu (accordabilité) par la réduction de l'activité des nano-amas polaires, dont la contribution à la permittivité diminue.",
+   "quote": "The reason is that the activity of the polar nanoclusters is reduced by applying the DC bias field, resulting in a decrease in their contribution to the dielectric permittivity."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La formule écrite dans les Résultats, Ba0.6Sr0.4Ti0.02O3, n'est pas neutre en charge (somme des charges −3,92) : coquille probable pour Ba0.6Sr0.4TiO3, ou taux de dopant écrit à la place de l'indice du titane. Le taux réel de Ta, Nb, Zr et Hf n'est donné nulle part, si bien que la formule à peser pour les BST dopés est inconnue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "« Partially sintered at 200 °C » ne peut pas être un frittage : aucun oxyde ne fritte à 200 °C (le frittage des titanates commence vers 900 °C ou plus). Le gain de tenue des pastilles crues vient au mieux du séchage d'un liant que l'article ne mentionne pas ; sans liant, les pastilles risquent d'être trop fragiles pour la préhension par ventouse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les facteurs de mérite annoncés (5,37 ; 4,31 ; 5,57) ne se recalculent pas avec la définition FOM = accordabilité / tan δ et les tan δ donnés (par exemple ZrBST 42,3 % et 0,013 donnent 32,5 ou 3254 selon l'unité, non 5,37) ; les tan δ implicites seraient six à sept fois plus grands. Le classement entre BST dopés ne peut pas être vérifié."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les valeurs 58,4 % et 38,1 % sont citées dans le texte comme accordabilité sous 2 kV mm−1, mais ce sont celles de la colonne thermique (25–65 °C, sans champ) du Tableau 1 ; la colonne sous champ donne 60,44 et 39,4 %. Le champ continu varie aussi selon la section (0 à 2 kV mm−1 dans les Résultats, 0 et 4 kV mm−1 dans les Méthodes) : 2 kV mm−1 sur une pastille de 1,5 mm demande environ 3 kV, bien au-delà de la polarisation interne de l'analyseur d'impédance cité (±40 V), et la source haute tension n'est pas décrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les grains de BTS12 passent de 1 µm (1350 °C) à 20 µm (1400 °C) : saut compatible avec une croissance anormale assistée par un liquide eutectique riche en titane, présent au-dessus d'environ 1320 °C dès qu'il y a un léger excès de TiO2 ; le rapport exact (Ba+Sr)/Ti est donc critique et non vérifié (réserve de la critique scientifique, source non vérifiée)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les cérates (Ba,Sr)CeO3 sont présentés comme matériaux inédits prédits par apprentissage automatique, alors que BaCeO3 et SrCeO3 sont des pérovskites orthorhombiques connues et que leurs solutions solides sont attendues sans prédiction : le succès de la synthèse ne valide pas à lui seul le modèle (réserve de la critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Aucune calcination n'est décrite pour (Ba0.8Sr0.2)CeO3 (mélange au mortier à l'éthanol, puis pastille et 10 min à 1400 °C), alors que la réaction complète des carbonates avec l'oxyde de cérium en une phase en 10 min est rapide pour un mélange manuel ; une calcination préalable, mentionnée pour les essais ratés, est probable mais non écrite."
   }
  ],
  "method_sources": [
@@ -2172,12 +2901,18 @@
    "ref_id": "CR25",
    "role": "autre",
    "quote": "Solid State Reaction (SSR) steps include (Fig. 1b): (1) ball milling, (2) calcining, (3) second ball milling, (4) dry pressing, and (5) sintering"
+  },
+  {
+   "route": null,
+   "ref_id": "CR65",
+   "role": "autre",
+   "quote": "the automated setup uses a free space dielectric characterization technique to measure the resonant modes within the hot samples in 0 to 3 GHz frequency range"
   }
  ],
  "doubts": [
   {
-   "where": "(Ba0.4Sr0.6)CeO3, étape 5",
-   "issue": "Le texte écrit « (Ba0.6Sr0.4)CeO3 sintered at 1250 °C for 25 min » alors que le Tableau 2, la Fig. 6c et le contour de la Fig. 6a portent sur (Ba0.4Sr0.6)CeO3 ; le contour semble aussi placer la condition basse température vers 30 min plutôt que 25. Lecture retenue : la composition est (Ba0.4Sr0.6)CeO3 (Tableau 2, Fig. 6), 1250 °C et 25 min comme écrit ; l'autre lecture est une troisième composition (Ba0.6Sr0.4)CeO3 non répertoriée ailleurs."
+   "where": "(Ba0.4Sr0.6)CeO3, étape 5 et (Ba0.8Sr0.2)CeO3, étape 5 (Fig. 6a)",
+   "issue": "Le texte écrit « (Ba0.6Sr0.4)CeO3 sintered at 1250 °C for 25 min » alors que le Tableau 2, la Fig. 6c et le contour de la Fig. 6a portent sur (Ba0.4Sr0.6)CeO3 (et l'étiquette de la Fig. 4b dit (Ba0.5Sr0.5)CeO3 : trois graphies). Lecture retenue : la composition est (Ba0.4Sr0.6)CeO3, 1250 °C et 25 min comme écrit. Sur la Fig. 6a (lue), les deux cadres de condition semblent reliés aux panneaux en sens inverse du texte : le cadre haut (1250 °C, environ 30 min) vers le panneau b (XRD de (Ba0.8Sr0.2)CeO3) et le cadre bas (environ 1400 °C, environ 15 min) vers le panneau c ((Ba0.4Sr0.6)CeO3), avec des durées lues d'environ 30 et 15 min au lieu de 25 et 10. Le texte est conservé ; l'inversion possible des deux compositions et les écarts de durée sont non tranchés."
   },
   {
    "where": "(Ba0.4Sr0.6)CeO3, Fig. 4b",
@@ -2200,12 +2935,12 @@
    "issue": "L'article ne nomme ni les précurseurs ni la source d'étain du BTS ; BaCO3 et TiO2 sont repris de la phrase générale « All samples were prepared by solid-state reaction methods » et un « tin precursor (not named) » est ajouté pour porter la substitution. SrCO3 n'est pas attribué au BTS car la formule BaTi1-xSnxO3 n'en contient pas. L'article ne dit pas que le BTS a suivi les étapes de broyage et de calcination de la phrase générale, hormis ce « All samples »."
   },
   {
-   "where": "BTS12-1300 et BTS12-1400, étape 10",
-   "issue": "L'article ne donne la durée de maintien (10 min) que pour BTS12-1350 ; pour les autres températures de la série (7 pastilles de 1100 à 1400 °C par pas de 50 °C, « took a total of 70 min ») la durée est héritée de BTS12-1350 faute d'autre information, et la Fig. 3 donne une plage de temps de 5 à 10 min pour le BTS. Les autres températures de la plage (1100, 1150, 1200, 1250 °C) n'ont pas de voie, faute de résultat écrit."
+   "where": "BTS12-1300 et BTS12-1400, étape 10 (durée)",
+   "issue": "La durée de maintien de 10 min n'est citée que pour la condition retenue (1350 °C) : « a sintering temperature of 1350 °C for 10 min was chosen ». Pour 1300 et 1400 °C l'article ne donne aucune durée de palier ; « The rapid sintering of all 7 samples took a total of 70 min » est une durée totale pour les sept pastilles, pas un palier (le contrôle sur les BST, 4 pastilles en 60 min pour 10 min de palier, montre qu'on ne peut pas diviser). La Fig. 3 donne une plage de 5 à 10 min pour la série BTS. La durée n'est donc pas héritée : variation « non précisée »."
   },
   {
-   "where": "BTS12-Con",
-   "issue": "L'article ne précise ni le four ni les étapes avant frittage du lot conventionnel (BTS12-Con) ; seules température (1350 °C) et durée (2 h) sont écrites. Les étapes amont du parent sont héritées, y compris le pré-frittage à 200 °C, ce que l'article ne confirme pas."
+   "where": "BTS12-Con (étapes 1 à 10)",
+   "issue": "L'article ne précise ni le four ni les étapes avant frittage du lot conventionnel (BTS12-Con) ; seules température (1350 °C) et durée (2 h) sont écrites. Il oppose frittage robotisé et conventionnel (« in an air furnace » pour le frittage classique dans les Méthodes) : le lot n'a pas été dit passé par le four tubulaire robotisé, donc l'étape 10 est propre (four, atmosphère et vitesses non cités). Les étapes 1 à 9 (broyage, calcination, pressage, pré-frittage à 200 °C) sont reprises du parent sans que l'article le confirme ; le pré-frittage à 200 °C, présenté comme une déviation pour la manutention automatisée, est particulièrement douteux pour un lot conventionnel."
   },
   {
    "where": "BTS12-1350, tan δ",
@@ -2234,6 +2969,22 @@
   {
    "where": "Dispositifs, électrodes",
    "issue": "Les électrodes en pâte d'argent et le motif CPW pulvérisé sont préparés sur des pastilles frittées pour mesurer les propriétés ; ils sont gardés en voies device sans résultat propre, leurs étapes ne s'appliquent qu'aux échantillons mesurés (les pastilles du Tableau 1 et non à toutes les voies)."
+  },
+  {
+   "where": "BTS12-1350 et BTS16-1350, Tableau 1 colonne (b), phrase « 58.4% and 38.1% » et Fig. 5b",
+   "issue": "Le texte donne 58.4 % et 38.1 % comme accordabilité sous 2 kV mm−1, alors que ce sont les valeurs de la colonne (b) du Tableau 1 (25–65 °C, sans champ) ; la colonne (a), sous champ, et la Fig. 5a donnent environ 60 et 40 %. De plus la Fig. 5b (lue) place BTS12 vers 39 % et BTS16 vers 57 % à 65 °C, soit l'inverse des valeurs de la colonne (b). Les rangées du tableau sont attribuées par nom d'échantillon comme écrit ; aucune valeur n'est modifiée."
+  },
+  {
+   "where": "(Ba,Sr)CeO3, plage de criblage du frittage (Fig. 3 contre texte)",
+   "issue": "Le texte écrit des températures de 1250 à 1400 °C et des durées de 10, 15, 25 et 35 min ; la Fig. 3 (image, lue) écrit « 5-35 min » et « 1200-1400 °C » pour le groupe ML. Valeurs du texte retenues ; aucune branche créée (carte continue de la Fig. 6a, sans résultat chiffré par condition)."
+  },
+  {
+   "where": "essais ML multiphasés (4 voies succeeded:false)",
+   "issue": "L'article ne dit que « Additional samples from the likely and the least likely ML-predicted materials were fabricated and tested. However, XRD results revealed multiple phases » ; les quatre compositions ne sont nommées que dans la légende de la Supplementary Fig. 14, qui parle de « calcining at different temperatures ». Le mélange manuel à l'éthanol est repris de la phrase sur les échantillons ML ; précurseurs, quantités, températures de calcination, pressage et frittage ne sont pas donnés. Le graphisme mathématique de la légende n'étant pas reproductible en citation, les compositions viennent de la légende lue."
+  },
+  {
+   "where": "Pure-BST, BTS12-1350 et (Ba0.8Sr0.2)CeO3, étape de refroidissement par tube vortex",
+   "issue": "Le tube vortex est décrit dans la partie sur la mesure diélectrique à chaud (« until the sample cooled to room temperature »), pas dans la partie frittage ; il est rattaché à la sortie du four des trois voies de base de la plateforme robotisée. La vitesse de refroidissement n'est pas donnée."
   }
  ]
 }
