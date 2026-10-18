@@ -1,0 +1,85 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5302706</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5302706 — Influence of External Gaseous Environments on the Electrical Properties of ZnO Nanostructures Obtained by a Hydrothermal Method.</h1>
+<h2>Voie : ZnO_HT</h2>
+<pre class="mermaid">flowchart LR
+  R13644([&quot;sodium hydroxide&lt;br/&gt;0.6 g&quot;]):::reactif
+  R13644 --&gt;|&quot;base&quot;| S16321
+  R13645([&quot;zinc nitrate hexahydrate&lt;br/&gt;0.44 g&quot;]):::reactif
+  R13645 --&gt;|&quot;precursor&quot;| S16321
+  R13646([&quot;deionized water (dissolution)&lt;br/&gt;3 mL&quot;]):::reactif
+  R13646 --&gt;|&quot;solvent&quot;| S16321
+  R13647([&quot;ethanol&lt;br/&gt;30 mL&quot;]):::reactif
+  R13647 --&gt;|&quot;solvent&quot;| S16321
+  R13648([&quot;deionized water (added)&lt;br/&gt;5 mL&quot;]):::reactif
+  R13648 --&gt;|&quot;solvent&quot;| S16321
+  R13649([&quot;ethylenediamine (EDA)&lt;br/&gt;5 mL&quot;]):::reactif
+  R13649 --&gt;|&quot;ligand&quot;| S16321
+  R13650([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13650 --&gt;|&quot;wash&quot;| S16321
+  R13651([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13651 --&gt;|&quot;wash&quot;| S16321
+  S16321[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S16321 --&gt; S16322
+  S16322[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S16322 --&gt; S16323
+  S16323[&quot;&lt;b&gt;3. sonicate&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S16323 --&gt; S16324
+  S16324[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : two hours&quot;]:::etape
+  S16324 --&gt; S16325
+  S16325[&quot;&lt;b&gt;5. cool&lt;/b&gt;&quot;]:::etape
+  S16325 --&gt; S16326
+  S16326[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&quot;]:::etape
+  S16326 --&gt; S16327
+  S16327[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water and ethanol&lt;br/&gt;repetitions : repeatedly&quot;]:::etape
+  S16327 --&gt; S16328
+  S16328[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;duration : 12 h&lt;br/&gt;pressure : 15 mbar&lt;br/&gt;temperature : RT&quot;]:::etape
+  S16328 --&gt; M
+  M{{&quot;ZnO nanostructures (mixture of nanobars, nanotube…&lt;br/&gt;ZnO&quot;}}:::materiau
+  O64682[&quot;phase : hexagonal structure of ZnO wi…&quot;]:::resultat
+  M -.-&gt; O64682
+  O64683[&quot;morphology : rich mixture of different geo…&quot;]:::resultat
+  M -.-&gt; O64683
+  O64684[&quot;average_crystal_size_Scherrer : 227 nm (for crystallographic …&quot;]:::resultat
+  M -.-&gt; O64684
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZnO_IDT_sensor</h2>
+<pre class="mermaid">flowchart LR
+  R13652([&quot;ZnO nanostructures (route ZnO_HT)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13652 --&gt;|&quot;intermediate&quot;| S16329
+  R13653([&quot;hexane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13653 --&gt;|&quot;solvent&quot;| S16329
+  R13654([&quot;interdigital transducer (300 nm Au on Si wit…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13654 --&gt;|&quot;substrate&quot;| S16329
+  R13655([&quot;compressed air&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13655 --&gt;|&quot;gas&quot;| S16329
+  S16329[&quot;&lt;b&gt;1. fabricate&lt;/b&gt;&lt;br/&gt;gold_layer_thickness : 300 nm&lt;br/&gt;sio2_layer_thickness : 1 μm&quot;]:::etape
+  S16329 --&gt; S16330
+  S16330[&quot;&lt;b&gt;2. disperse&lt;/b&gt;&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S16330 --&gt; S16331
+  S16331[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S16331 --&gt; S16332
+  S16332[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : RT&quot;]:::etape
+  S16332 --&gt; S16333
+  S16333[&quot;&lt;b&gt;5. remove&lt;/b&gt;&lt;br/&gt;pressure : 10 bar&quot;]:::etape
+  S16333 --&gt; S16334
+  S16334[&quot;&lt;b&gt;6. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&quot;]:::etape
+  S16334 --&gt; M
+  M{{&quot;resistive gas sensor: ZnO nanostructures drop-coa…&lt;br/&gt;&quot;}}:::materiau
+  O64685[&quot;NO2_1ppm_response_nitrogen_200C : 600 %&quot;]:::resultat
+  M -.-&gt; O64685
+  O64686[&quot;NO2_1ppm_response_air_200C : 232 %&quot;]:::resultat
+  M -.-&gt; O64686
+  O64687[&quot;NO2_1ppm_response_nitrogen_RT_UV : 431 %&quot;]:::resultat
+  M -.-&gt; O64687
+  O64688[&quot;NO2_1ppm_response_air_RT_UV : 341 %&quot;]:::resultat
+  M -.-&gt; O64688
+  O64689[&quot;NO2_1ppm_response_nitrogen_RT_firs… : 50 %&quot;]:::resultat
+  M -.-&gt; O64689
+  O64690[&quot;NO2_1ppm_response_air_RT_first_cyc… : 30 %&quot;]:::resultat
+  M -.-&gt; O64690
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
