@@ -178,7 +178,7 @@
      "purity": "99%",
      "supplier": "Sigma Aldrich",
      "supplier_quote": "Li2S (Sigma Aldrich; 99.98%), P2S5 (Sigma Aldrich; 99%), LiI (Alfa Aesar; 99.99%) and anhydrous 1,2-dimethoxyethane (Sigma Aldrich; DME, 99.5%) were used as received.",
-     "quote": "0.488 g Li2S (10.62 mmol) and 1.012 g P2S5 (4.553 mmol) were ground using a mortar and pestle and filled into a flask."
+     "quote": "0.488 g Li2S (10.62 mmol) and 1.012 g P2S5 (4.553 mmol) were ground using a mortar and pestle and filled into a flask. Excess P2S5 was used to account for the loss during synthesis."
     },
     {
      "name": "1,2-dimethoxyethane (DME), anhydrous",
@@ -197,7 +197,10 @@
      "role": "wash",
      "amount": 5,
      "unit": "mL",
-     "quote": "Subsequently, white precipitate was recovered through filtration, washed three times with 5 mL DME and dried in a vacuum overnight to yield Li3PS4∙DME."
+     "quote": "Subsequently, white precipitate was recovered through filtration, washed three times with 5 mL DME and dried in a vacuum overnight to yield Li3PS4∙DME.",
+     "purity": "99.5%",
+     "supplier": "Sigma Aldrich",
+     "supplier_quote": "Li2S (Sigma Aldrich; 99.98%), P2S5 (Sigma Aldrich; 99%), LiI (Alfa Aesar; 99.99%) and anhydrous 1,2-dimethoxyethane (Sigma Aldrich; DME, 99.5%) were used as received."
     }
    ],
    "steps": [
@@ -211,6 +214,11 @@
        "name": "atmosphere",
        "quote": "All manipulations were carried out under protective Ar atmosphere in a glovebox (MBraun; O2 < 0.1 ppm, H2O < 0.1 ppm) or using Schlenk-line techniques, if not stated otherwise.",
        "value_text": "Ar (boîte à gants ou ligne de Schlenk)"
+      },
+      {
+       "name": "excess_reagent",
+       "quote": "Excess P2S5 was used to account for the loss during synthesis.",
+       "value_text": "Excess P2S5"
       }
      ],
      "equipment": [
@@ -475,7 +483,7 @@
    "missing_fields": [
     "rendement",
     "rapport billes/poudre",
-    "atmosphère du jar (supposée Ar)"
+    "masses individuelles de Li2S, P2S5 et LiI (seulement 1.5 g au total, « stoichiometric amounts »)"
    ]
   },
   {
@@ -602,11 +610,15 @@
        "name": "duration",
        "quote": "The recovered powder was first dried at 50 °C overnight and finally annealed at 175, 200 or 250 °C (~ 2 °C min–1 heating rate) under a dynamic vacuum for 12 h, followed by natural cooling.",
        "value_text": "overnight"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "All manipulations were carried out under protective Ar atmosphere in a glovebox (MBraun; O2 < 0.1 ppm, H2O < 0.1 ppm) or using Schlenk-line techniques, if not stated otherwise.",
+       "value_text": "Ar (boîte à gants ou ligne de Schlenk)"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "atmosphere",
       "pressure"
      ]
     },
@@ -660,7 +672,7 @@
      "result": "conductivité à température ambiante de 4.2×10−6 S cm−1 (pastille comprimée)",
      "instrument": "SP-200 potentiostat (BioLogic)",
      "conditions": "0.1 Hz à 7 MHz, amplitude 20 mV; poudre (120 mg) comprimée 2 min à 440 MPa entre deux tiges d'acier inoxydable de 10 mm ; pression de 63 MPa (0.5 t) maintenue pendant la mesure; ajustement R1(R2Q2)Q3 (EC-Lab)",
-     "quote": "EIS was measured from 0.1 Hz to 7 MHz, with a 20 mV voltage amplitude, using a SP-200 potentiostat (BioLogic)."
+     "quote": "For the material prepared through the solvent-based approach, the conductivity varied from 4.2×10−6 S cm−1 (175 °C) to 2.3×10−6 S cm−1 (250 °C)."
     }
    ],
    "outcomes": [
@@ -717,6 +729,13 @@
      "instrument": "STADI P diffractometer (STOE)",
      "conditions": "Cu-Kα1; capillaires de borosilicate (Hilgenberg; 0.48 mm inner diameter, 0.01 mm wall thickness); affinement de Rietveld avec FullProf Suite (version July 2017)",
      "quote": "The reflections of LiI largely vanished upon increasing the temperature to 200 or 250 °C, while those of Li4PS4I increased in intensity and decreased in broadening."
+    },
+    {
+     "technique": "EIS",
+     "result": "conductivité à température ambiante de 1.7×10−5 S cm−1 (pastille comprimée)",
+     "instrument": "SP-200 potentiostat (BioLogic)",
+     "conditions": "0.1 Hz à 7 MHz, amplitude 20 mV; poudre (120 mg) comprimée 2 min à 440 MPa entre deux tiges d'acier inoxydable de 10 mm ; pression de 63 MPa (0.5 t) maintenue pendant la mesure; ajustement R1(R2Q2)Q3 (EC-Lab)",
+     "quote": "The maximum value of 1.7×10−5 S cm−1, similar to what has been reported in the original study, was achieved at 200 °C."
     }
    ],
    "outcomes": [
@@ -768,6 +787,13 @@
      "instrument": "STADI P diffractometer (STOE)",
      "conditions": "Cu-Kα1; capillaires de borosilicate (Hilgenberg; 0.48 mm inner diameter, 0.01 mm wall thickness); affinement de Rietveld avec FullProf Suite (version July 2017)",
      "quote": "According to Rietveld analysis, the LiI content amounted to ~ 0.2 wt.% after 250 °C (Fig. 2d)."
+    },
+    {
+     "technique": "EIS",
+     "result": "conductivité à température ambiante de 2.3×10−6 S cm−1 (pastille comprimée)",
+     "instrument": "SP-200 potentiostat (BioLogic)",
+     "conditions": "0.1 Hz à 7 MHz, amplitude 20 mV; poudre (120 mg) comprimée 2 min à 440 MPa entre deux tiges d'acier inoxydable de 10 mm ; pression de 63 MPa (0.5 t) maintenue pendant la mesure; ajustement R1(R2Q2)Q3 (EC-Lab)",
+     "quote": "For the material prepared through the solvent-based approach, the conductivity varied from 4.2×10−6 S cm−1 (175 °C) to 2.3×10−6 S cm−1 (250 °C)."
     }
    ],
    "outcomes": [
@@ -788,6 +814,17 @@
      "quote": "For the solvent-based materials, it ranged from 1.47 g cm−3 at 175 °C to 1.53 g cm−3 at 250 °C.",
      "value_num": 1.53,
      "unit": "g cm−3"
+    },
+    {
+     "property": "Rietveld_Rwp",
+     "quote": "| Wet-chemical | Solid-state | Hot-press | Rwp / % | 16.2 | 26.6 | 22.9 |",
+     "value_num": 16.2,
+     "unit": "%"
+    },
+    {
+     "property": "Rietveld_chi2",
+     "quote": "| Wet-chemical | Solid-state | Hot-press | Rwp / % | 16.2 | 26.6 | 22.9 | χ2 | 4.28 | 11.7 | 4.44 |",
+     "value_num": 4.28
     }
    ]
   },
@@ -915,10 +952,10 @@
     },
     {
      "technique": "EIS",
-     "result": "conductivité à température ambiante de 6.6×10−4 S cm−1",
+     "result": "conductivité à température ambiante de 6.6×10−4 S cm−1 (pastille comprimée)",
      "instrument": "SP-200 potentiostat (BioLogic)",
      "conditions": "0.1 Hz à 7 MHz, amplitude 20 mV; poudre (120 mg) comprimée 2 min à 440 MPa entre deux tiges d'acier inoxydable de 10 mm ; pression de 63 MPa (0.5 t) maintenue pendant la mesure; ajustement R1(R2Q2)Q3 (EC-Lab)",
-     "quote": "EIS was measured from 0.1 Hz to 7 MHz, with a 20 mV voltage amplitude, using a SP-200 potentiostat (BioLogic)."
+     "quote": "In agreement with previous reports, annealing at 175 °C already led to a decrease to 6.6×10−4 S cm−1."
     }
    ],
    "outcomes": [
@@ -974,6 +1011,13 @@
      "instrument": "STADI P diffractometer (STOE)",
      "conditions": "Cu-Kα1; capillaires de borosilicate (Hilgenberg; 0.48 mm inner diameter, 0.01 mm wall thickness); affinement de Rietveld avec FullProf Suite (version July 2017)",
      "quote": "On increasing the annealing temperature, the reflections of Li4PS4I became even more apparent and the intensity of the LiI reflections decreased. However, small reflections characteristics of argyrodite Li6PS5I (F − 43 m) appeared."
+    },
+    {
+     "technique": "EIS",
+     "result": "conductivité à température ambiante de 1.5×10−4 S cm−1 (pastille comprimée)",
+     "instrument": "SP-200 potentiostat (BioLogic)",
+     "conditions": "0.1 Hz à 7 MHz, amplitude 20 mV; poudre (120 mg) comprimée 2 min à 440 MPa entre deux tiges d'acier inoxydable de 10 mm ; pression de 63 MPa (0.5 t) maintenue pendant la mesure; ajustement R1(R2Q2)Q3 (EC-Lab)",
+     "quote": "This trend continued with increasing temperature, leading to conductivities of 1.5×10−4 and 6.4×10−5 S cm−1 at 200 and 250 °C, respectively."
     }
    ],
    "outcomes": [
@@ -1025,6 +1069,13 @@
      "instrument": "STADI P diffractometer (STOE)",
      "conditions": "Cu-Kα1; capillaires de borosilicate (Hilgenberg; 0.48 mm inner diameter, 0.01 mm wall thickness); affinement de Rietveld avec FullProf Suite (version July 2017)",
      "quote": "Rietveld refinement resulted in fractions of LiI and Li6PS5I impurities of ~ 0.4 and 14.1 wt.%, respectively, after 250 °C (Fig. 2e)."
+    },
+    {
+     "technique": "EIS",
+     "result": "conductivité à température ambiante de 6.4×10−5 S cm−1 (pastille comprimée)",
+     "instrument": "SP-200 potentiostat (BioLogic)",
+     "conditions": "0.1 Hz à 7 MHz, amplitude 20 mV; poudre (120 mg) comprimée 2 min à 440 MPa entre deux tiges d'acier inoxydable de 10 mm ; pression de 63 MPa (0.5 t) maintenue pendant la mesure; ajustement R1(R2Q2)Q3 (EC-Lab)",
+     "quote": "This trend continued with increasing temperature, leading to conductivities of 1.5×10−4 and 6.4×10−5 S cm−1 at 200 and 250 °C, respectively."
     }
    ],
    "outcomes": [
@@ -1051,6 +1102,17 @@
      "quote": "For the materials prepared by solid-state synthesis, an increase in density from 2.07 to 2.65 g cm−3 with increasing temperature from 175 to 250 °C was observed (2.58 g cm−3 at 200 °C).",
      "value_num": 2.65,
      "unit": "g cm−3"
+    },
+    {
+     "property": "Rietveld_Rwp",
+     "quote": "| Wet-chemical | Solid-state | Hot-press | Rwp / % | 16.2 | 26.6 | 22.9 |",
+     "value_num": 26.6,
+     "unit": "%"
+    },
+    {
+     "property": "Rietveld_chi2",
+     "quote": "| Wet-chemical | Solid-state | Hot-press | Rwp / % | 16.2 | 26.6 | 22.9 | χ2 | 4.28 | 11.7 | 4.44 |",
+     "value_num": 11.7
     }
    ]
   },
@@ -1116,6 +1178,11 @@
        "quote": "Initially, the pressure was set to 173 MPa (2 t) and monitored further throughout the experiment.",
        "value_num": 173,
        "unit": "MPa"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "All processing steps were done in an Ar glovebox.",
+       "value_text": "Ar (boîte à gants)"
       }
      ],
      "equipment": [],
@@ -1146,12 +1213,16 @@
        "quote": "The sample was heated to the target temperature (175, 200 or 250 °C) at a rate of 500 °C h−1 and kept there for 5 h, followed by natural cooling.",
        "value_num": 500,
        "unit": "°C h−1"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "All processing steps were done in an Ar glovebox.",
+       "value_text": "Ar (boîte à gants)"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "cooling_rate",
-      "atmosphere"
+      "cooling_rate"
      ]
     }
    ],
@@ -1168,7 +1239,7 @@
      "result": "conductivité à température ambiante de 2.6×10−3 S cm−1",
      "instrument": "SP-200 potentiostat (BioLogic)",
      "conditions": "0.1 Hz à 7 MHz, amplitude 20 mV ; mesure directement dans la presse après recuit et refroidissement à température ambiante ; R déterminée par l'intersection d'un ajustement linéaire avec l'axe des x",
-     "quote": "For samples prepared by hot pressing, EIS was directly performed in the setup (after annealing and subsequent cooling to room temperature)."
+     "quote": "Here, by far the highest conductivities of 2.6×10−3 S cm−1 (175 °C) and 3.5×10−3 S cm−1 (200 °C) were achieved."
     },
     {
      "technique": "EIS dépendant de la température (Arrhenius)",
@@ -1203,8 +1274,7 @@
     }
    ],
    "missing_fields": [
-    "rendement",
-    "atmosphère pendant le chauffage dans la presse"
+    "rendement"
    ]
   },
   {
@@ -1236,6 +1306,13 @@
      "instrument": "STADI P diffractometer (STOE)",
      "conditions": "Cu-Kα1; capillaires de borosilicate (Hilgenberg; 0.48 mm inner diameter, 0.01 mm wall thickness); affinement de Rietveld avec FullProf Suite (version July 2017)",
      "quote": "Surprisingly, at 175 and 200 °C, virtually no crystallization of Li4PS4I occurred (Fig. 2c). However, broad reflections of LiI were visible."
+    },
+    {
+     "technique": "EIS",
+     "result": "conductivité à température ambiante de 3.5×10−3 S cm−1",
+     "instrument": "SP-200 potentiostat (BioLogic)",
+     "conditions": "0.1 Hz à 7 MHz, amplitude 20 mV ; mesure directement dans la presse après recuit et refroidissement à température ambiante ; R déterminée par l'intersection d'un ajustement linéaire avec l'axe des x",
+     "quote": "Here, by far the highest conductivities of 2.6×10−3 S cm−1 (175 °C) and 3.5×10−3 S cm−1 (200 °C) were achieved."
     }
    ],
    "outcomes": [
@@ -1313,6 +1390,13 @@
      "instrument": "DSC 204 F1 Phoenix (NETZSCH)",
      "conditions": "mesure sur le verre 1.5Li2S–0.5P2S5–LiI, voir voie Glass",
      "quote": "The crystallization temperature of 250 °C determined from the pTR-diagram was not consistent with differential scanning calorimetry (DSC) data recorded at a similar heating rate of 8.3 °C min−1 (Figure S4)."
+    },
+    {
+     "technique": "EIS",
+     "result": "conductivité à température ambiante de 7.3×10−5 S cm−1",
+     "instrument": "SP-200 potentiostat (BioLogic)",
+     "conditions": "0.1 Hz à 7 MHz, amplitude 20 mV ; mesure directement dans la presse après recuit et refroidissement à température ambiante ; R déterminée par l'intersection d'un ajustement linéaire avec l'axe des x",
+     "quote": "A value of 7.3×10−5 S cm−1 was determined for the crystalline Li4PS4I (250 °C), which is virtually identical to that of the solid-state synthesis."
     }
    ],
    "outcomes": [
@@ -1361,6 +1445,17 @@
      "property": "Avrami_exponent",
      "quote": "From the data, we calculated an Avrami exponent of 1.64(2), suggesting that the crystallization (crystal growth) occurs through a diffusion-controlled, non-ideal 1-dimensional/2-dimensional growth (Figure S3b)",
      "value_num": 1.64
+    },
+    {
+     "property": "Rietveld_Rwp",
+     "quote": "| Wet-chemical | Solid-state | Hot-press | Rwp / % | 16.2 | 26.6 | 22.9 |",
+     "value_num": 22.9,
+     "unit": "%"
+    },
+    {
+     "property": "Rietveld_chi2",
+     "quote": "| Wet-chemical | Solid-state | Hot-press | Rwp / % | 16.2 | 26.6 | 22.9 | χ2 | 4.28 | 11.7 | 4.44 |",
+     "value_num": 4.44
     }
    ]
   }
@@ -1369,7 +1464,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare l'électrolyte solide Li4PS4I (tétragonal P4/nmm) par trois voies : en solution dans le DME (Li3PS4·DME + LiI puis recuit sous vide), à l'état solide (broyage à billes d'un verre 1.5Li2S–0.5P2S5–LiI puis recuit en ampoule scellée) et par pressage à chaud du même verre. Chaque voie est recuite à 175, 200 ou 250 °C. Les auteurs suivent la cristallisation par DRX et la conductivité par spectroscopie d'impédance, et montrent que la cristallisation fait chuter la conductivité d'un ordre de grandeur, tandis que la pression retarde la cristallisation vers 250 °C.",
+   "text": "L'article prépare l'électrolyte solide Li4PS4I (tétragonal P4/nmm) par trois voies : en solution dans le DME (Li3PS4·DME + LiI puis recuit sous vide), à l'état solide (broyage à billes d'un verre 1.5Li2S–0.5P2S5–LiI puis recuit en ampoule scellée) et par pressage à chaud du même verre. Chaque voie est recuite à 175, 200 ou 250 °C. Les auteurs suivent la cristallisation par DRX et la conductivité par spectroscopie d'impédance ; ils observent que la cristallisation fait chuter la conductivité d'un ordre de grandeur et attribuent, par hypothèse, le retard de cristallisation du pressage à chaud (vers 250 °C) à la pression.",
    "quote": "Here, we report about the effect of synthesis parameters on the crystallization behavior and charge-transport properties of Li4PS4I."
   },
   {
@@ -1381,36 +1476,36 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Deux paramètres sont balayés : la voie de synthèse (solvant, voie solide, pressage à chaud) et la température de recuit finale (175, 200 et 250 °C, valeurs choisies autour de la température de cristallisation de Li4PS4I mesurée par DSC vers 165 °C). La comparaison des trois voies à température égale isole l'effet de la voie (solvant résiduel, densification, pression) ; la montée en température isole l'effet de la cristallisation. Une expérience in situ (pression, température, résistance) complète le tableau pour identifier la température de cristallisation sous pression.",
+   "text": "Deux paramètres sont balayés : la voie de synthèse (solvant, voie solide, pressage à chaud) et la température de recuit finale (175, 200 et 250 °C). L'article n'explique pas le choix de ces trois températures ; elles encadrent probablement la cristallisation de Li4PS4I (pic DSC à 165 °C du verre), mais c'est une hypothèse. La comparaison des trois voies à température égale permet de séparer l'effet de la voie (solvant résiduel, densification, pression) de celui de la température. Une expérience in situ (pression, température, résistance) complète le tableau pour situer la cristallisation sous pression.",
    "quote": "The Li4PS4I SE was prepared at temperatures from 175 to 250 °C using wet-chemical, solid-state and hot-press routes."
   },
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "À 175, 200 et 250 °C, les conductivités à température ambiante sont : voie solvant 4.2×10−6, 1.7×10−5 et 2.3×10−6 S cm−1 ; voie solide 6.6×10−4, 1.5×10−4 et 6.4×10−5 S cm−1 ; pressage à chaud 2.6×10−3, 3.5×10−3 et 7.3×10−5 S cm−1. Les meilleurs échantillons sont donc les verres presque amorphes densifiés à chaud (175 et 200 °C). À 250 °C, voie solide et pressage à chaud donnent des conductivités voisines (cristallisation, impureté Li6PS5I à 13–14 wt.%), alors que la voie solvant reste un ordre de grandeur plus bas. La densité suit la conductivité pour la voie solvant (maximum 2.38 g cm−3 à 200 °C)."
+   "text": "À 175, 200 et 250 °C, les conductivités à température ambiante sont : voie solvant 4.2×10−6, 1.7×10−5 et 2.3×10−6 S cm−1 ; voie solide 6.6×10−4, 1.5×10−4 et 6.4×10−5 S cm−1 ; pressage à chaud 2.6×10−3, 3.5×10−3 et 7.3×10−5 S cm−1. Les meilleures conductivités sont donc celles des verres presque amorphes pressés à chaud (175 et 200 °C), dont les densités calculées sont toutefois physiquement douteuses (voir la limite de reproductibilité sur les densités). À 250 °C, voie solide et pressage à chaud donnent des conductivités voisines (cristallisation, impureté Li6PS5I à 13–14 wt.%), alors que la voie solvant reste un ordre de grandeur plus bas. La densité suit la conductivité pour la voie solvant (maximum 2.38 g cm−3 à 200 °C)."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Plus Li4PS4I est cristallin, plus la conductivité chute : le verre de départ (~1.1–1.2×10−3 S cm−1) perd environ un ordre de grandeur à la cristallisation, et l'énergie d'activation passe de 0.28–0.29 eV (amorphe) à 0.48 eV (cristallin).",
+   "text": "Pour la voie solide et le pressage à chaud, plus Li4PS4I est cristallin, plus la conductivité chute : le verre de départ (~1.1–1.2×10−3 S cm−1) perd environ un ordre de grandeur à la cristallisation, et l'énergie d'activation passe de 0.28–0.29 eV (verre) à 0.48 eV (cristallin). Pour la voie solvant, la conductivité dépend peu de la température (4.2×10−6 à 1.7×10−5 S cm−1), même avec beaucoup de LiI non réagi à 175 °C : les auteurs l'attribuent, sans la mesurer, au solvant (DME) ou à ses résidus aux joints de grains.",
    "quote": "Overall, the results confirm that (partially) amorphous solid electrolytes exhibit orders of magnitude higher ionic conductivity than the crystalline Li4PS4I phase (P4/nmm)."
   },
   {
    "type": "conclusion_auteurs",
    "route": null,
-   "text": "Les auteurs concluent que le pressage à chaud d'un verre jusqu'à 175–200 °C donne les conductivités les plus élevées (2.6 à 3.5 mS cm−1), que la cristallisation de Li4PS4I est défavorable, et que la pression appliquée augmente l'énergie d'activation de la nucléation et repousse la cristallisation de ~165 à ~250 °C.",
+   "text": "Les auteurs concluent que le pressage à chaud d'un verre jusqu'à 175–200 °C donne les conductivités les plus élevées (2.6 à 3.5 mS cm−1) et que la cristallisation de Li4PS4I est défavorable à la conduction. Ils formulent l'hypothèse que la pression appliquée augmente l'énergie d'activation de la nucléation et repousse la cristallisation de ~165 à ~250 °C, tout en reconnaissant ne pas pouvoir exclure un simple blocage cinétique.",
    "quote": "When the samples are consolidated via hot pressing, significantly increased room-temperature conductivities ranging from 2.6 to 3.5 mS cm–1 can be achieved (unlike for the wet-chemical and solid-state synthesis routes)."
   },
   {
    "type": "mecanisme_auteurs",
    "route": "HotPress_250",
-   "text": "Les auteurs attribuent le retard de cristallisation sous pression à une augmentation de l'énergie d'activation de la nucléation : la dérivée de ΔG* par rapport à la pression est positive si le verre est plus dense que Li4PS4I (ΔV > 0), car la phase cristalline tétragonale contient beaucoup de volume libre (cinq sites Li d'occupation inférieure à 50 %). Ils notent aussi que la cinétique de cristallisation suit un modèle JMAK avec un exposant d'Avrami de 1.64.",
+   "text": "Les auteurs formulent l'hypothèse que la pression retarde la cristallisation en augmentant l'énergie d'activation de la nucléation. Ils écrivent la dérivée de ΔG* par rapport à la pression avec ΔG = Ga – Gc et ΔV = Va – Vc, concluent à ΔV > 0 (cristallisation exothermique, « ΔG < 0 »), puis disent que le verre « may indeed be more dense » que Li4PS4I, qui contient cinq sites Li d'occupation inférieure à 50 % (beaucoup de « volume libre »). Ils ajoutent ne pas pouvoir exclure que la cristallisation soit simplement ralentie cinétiquement. Ils notent aussi que la cinétique de cristallisation suit un modèle JMAK avec un exposant d'Avrami de 1.64.",
    "quote": "Hence, we hypothesize that the large discrepancy is a result of the applied pressure during the hot-press experiment, increasing the activation energy for nucleation (Fig. 5) and delaying crystallization."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Li3PS4_DME",
-   "text": "Hypothèse : P2S5 réagit avec Li2S dans le DME pour former Li3PS4 qui précipite sous forme de solvate Li3PS4·DME (Li2S est peu soluble, d'où les 72 h d'agitation). Il est probable que l'excès de P2S5 compense la perte de P2S5 par réaction ou sublimation. Ensuite Li3PS4·DME·LiI se forme par réaction avec LiI dissous, et le recuit sous vide retire le DME pour former Li4PS4I. La température et la durée du recuit déterminent à la fois l'élimination du DME et la cristallisation."
+   "text": "Hypothèse : P2S5 réagit avec Li2S dans le DME pour former Li3PS4, qui précipite sous forme de solvate Li3PS4·DME (Li2S est peu soluble, d'où les 72 h d'agitation). Les auteurs écrivent eux-mêmes que P2S5 est en excès « pour compenser la perte pendant la synthèse » (10.62 mmol de Li2S pour 4.553 mmol de P2S5, soit un rapport 2.33:1 au lieu de 3:1 pour Li3PS4) ; ils ne disent ni la nature de la perte ni la composition exacte du solvate. Ensuite Li3PS4·DME·LiI se forme par réaction avec LiI dissous, et le recuit sous vide retire le DME pour former Li4PS4I. La température et la durée du recuit déterminent à la fois l'élimination du DME et la cristallisation."
   },
   {
    "type": "securite_auteurs",
@@ -1426,8 +1521,44 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pour refaire la synthèse il manque : le rendement des trois voies ; la température et la durée de la dissolution de LiI et de l'évaporation du DME ; la pression de pastillage avant le recuit en ampoule ; le rapport billes/poudre du broyage ; l'atmosphère pendant le chauffage de la presse ; la vitesse d'agitation. La pression de départ du pressage à chaud est 176 MPa dans les Résultats et 173 MPa dans les Méthodes et pour l'expérience in situ. Les spectres d'impédance (Fig. S1, S2, S5) et la modélisation JMAK (Fig. S3) ne sont présents dans le dépôt que sous forme de légendes.",
+   "text": "Pour refaire la synthèse il manque : le rendement des trois voies ; la température et la durée de la dissolution de LiI et de l'évaporation du DME ; la pression de pastillage avant le recuit en ampoule ; le rapport billes/poudre du broyage et les masses individuelles de Li2S, P2S5 et LiI du verre (seulement 1.5 g au total) ; la vitesse d'agitation. La pression de départ du pressage à chaud est 176 MPa dans les Résultats et 173 MPa dans les Méthodes et pour l'expérience in situ. Les spectres d'impédance (Fig. S1, S2, S5) et la modélisation JMAK (Fig. S3) ne sont présents dans le dépôt que sous forme de légendes. Les conditions de l'EIS diffèrent selon la voie : poudre comprimée à 440 puis 63 MPa pour les voies solvant et solide, mesure directe dans la presse pour le pressage à chaud.",
    "quote": "Initially, the pressure was set to 173 MPa (2 t) and monitored further throughout the experiment."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Les diagrammes pTR (pression, température, résistance) de HotPress_175 et HotPress_200 (Fig. S2, présente dans le dépôt seulement par sa légende) ne montrent pas l'évolution de pression observée à 250 °C ; l'article ne chiffre pas cette absence, donc aucun résultat numérique n'a été ajouté pour ces deux branches.",
+   "quote": "We note that pTR-diagrams for ϑ < 250 °C did not show such a pressure evolution (Figure S2)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "HotPress_250",
+   "text": "Hypothèse non sourcée : le signal que les auteurs utilisent pour suivre la cristallisation est une baisse de pression à 250 °C dans une matrice à course fixe (de 147 à 133 MPa), donc une contraction de l'échantillon, ce qui irait plutôt vers un cristal plus dense que le verre, à l'inverse de leur hypothèse thermodynamique. L'explication la plus simple serait un retard cinétique : sous 140–147 MPa la mobilité atomique du verre baisserait, la nucléation et la croissance de Li4PS4I ne devenant rapides qu'à 250 °C. Aucune mesure de densité du verre ne permet de trancher."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "SolidState_250",
+   "text": "Hypothèse non sourcée : à 200–250 °C le verre se dismuterait en partie, Li4PS4I cristallisant pendant qu'une partie du Li2S et du LiI forme l'argyrodite Li6PS5I ; la composition globale étant celle de Li4PS4I, une fraction pauvre en Li (amorphe ou non indexée) devrait subsister, que l'affinement de Rietveld ne compte pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HotPress_175",
+   "text": "Les densités de pastille calculées pour le pressage à chaud (4.57, 3.06 et 2.95 g cm−3 à 175, 200 et 250 °C) sont physiquement douteuses : 4.57 dépasse la densité de LiI pur donnée par les auteurs (4.09) et ces trois valeurs dépassent la densité cristallographique de Li4PS4I (2.45) et celle d'un mélange de phases de même composition (au plus ≈ 2.4 g cm−3). L'épaisseur ou la masse de la pastille est probablement erronée ; comme la conductivité se calcule avec la même épaisseur, les 2.6 à 3.5 mS cm−1 ne sont fiables qu'à ce facteur près, et l'argument de densification de l'article n'est pas établi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SolidState_250",
+   "text": "Les densités de 2.58 g cm−3 (200 °C) et 2.65 g cm−3 (250 °C) dépassent la densité maximale du mélange de phases mesuré par Rietveld (≈ 2.43 g cm−3, calculée avec les densités données par l'article) ; l'explication des auteurs par les impuretés LiI et Li6PS5I ne tient pas, puisque Li6PS5I (2.29 g cm−3) est moins dense que Li4PS4I et que LiI ne fait que 0.4 wt.%. L'épaisseur ou la masse des pastilles est à vérifier, ce qui touche aussi les conductivités. Les fractions de Rietveld ne comptent que les phases cristallines indexées : former 14.1 wt.% de Li6PS5I à partir d'un verre de composition Li4PS4I suppose une phase pauvre en Li non comptée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HotPress_250",
+   "text": "Le mécanisme de retard de cristallisation par la pression est contredit par les données de l'article : l'hypothèse exige un verre plus dense que le cristal, alors que la baisse de pression mesurée à 250 °C indique une contraction de l'échantillon (cristal plus dense), et la dérivation comporte des erreurs de signe (avec ΔG = Ga – Gc, la cristallisation spontanée donne ΔG > 0, pas « ΔG < 0 » ; ΔV = Va – Vc > 0 signifierait un verre moins dense, l'inverse de la phrase suivante). Les auteurs reconnaissent eux-mêmes un possible blocage cinétique. La baisse de pression pourrait aussi venir d'un fluage ou d'un frittage, ce qui affecterait l'ajustement JMAK (exposant 1.64)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le pressage à chaud n'est pas un témoin qui isole la pression : par rapport à la voie solide il change aussi la durée du palier (5 h contre 12 h), la vitesse de chauffe (500 °C h−1 soit 8.3 °C min−1 contre 5 °C min−1) et le contenant (disques de Pt dans une matrice contre ampoule de quartz). Par ailleurs le solvate Li3PS4·DME n'est pas analysé : son rapport DME/Li3PS4 de 1:1 est supposé pour la stœchiométrie de l'étape avec LiI, et l'excès de P2S5 de la première étape rend ce rapport incertain."
   }
  ],
  "method_sources": [
@@ -1478,6 +1609,18 @@
   {
    "where": "Figures",
    "issue": "Fig. 3 ouverte et comparée au texte : valeurs de conductivité et de densité cohérentes avec le texte ; aucune valeur lue sur figure. Fig. 2, 4, 5, 6 non ouvertes (DRX, pTR, schéma, Arrhenius : valeurs déjà dans le texte)."
+  },
+  {
+   "where": "Glass, DSC (conditions)",
+   "issue": "La section Méthodes donne deux vitesses de chauffe (« 5 or 8.3 °C min−1 ») et la légende de la Fig. S4 deux courbes sans dire laquelle donne chaque pic. Le texte des Résultats ne cite que 8.3 °C min−1 (« similar heating rate of 8.3 °C min−1 ») pour les pics à 165 °C et ~250 °C ; la caractérisation garde « 5 ou 8.3 » sans trancher."
+  },
+  {
+   "where": "atmosphère, Li3PS4_DME / Solvent_* / Glass",
+   "issue": "L'atmosphère d'argon n'est donnée que par la phrase générale des Méthodes (« All manipulations were carried out under protective Ar atmosphere … if not stated otherwise »). Elle est citée sur l'étape 1 de Li3PS4_DME, sur la dissolution et le séchage à 50 °C de Solvent_*, et sur le broyage du verre, mais pas répétée sur chaque étape (agitation, filtration, lavage) : elle vaut pour toutes sans mention contraire. Pour le jar de broyage, l'article ne dit pas explicitement qu'il est fermé en boîte à gants."
+  },
+  {
+   "where": "HotPress_*, atmosphère",
+   "issue": "« All processing steps were done in an Ar glovebox » est dans le paragraphe du pressage à chaud, dont l'appareil est décrit ailleurs (« provided elsewhere ») : on suppose que la presse chauffante est elle-même en boîte à gants."
   }
  ]
 }
