@@ -96,34 +96,15 @@
     {
      "order": 3,
      "action": "extrude",
-     "description": "Melt extrusion in a corotating twin-screw microextruder (neat PLLA).",
+     "description": "Melt extrusion of the neat PLLA (the article gives no extrusion parameters for the neat PLLAs).",
      "quote": "Furthermore, molecular weight has been estimated on both PLLAs after extrusion was applied and the final pristine polymeric matrix has been obtained.",
-     "parameters": [
-      {
-       "name": "screw_speed",
-       "value_num": 60,
-       "unit": "rpm",
-       "quote": "at a rate of 60 rpm"
-      },
-      {
-       "name": "screw_temperature_profile",
-       "value_text": "125, 160, 190, 190, and 185 °C from the hopper to the die",
-       "quote": "A screw temperature profile of 125, 160, 190, 190, and 185 °C was employed in the extruder from the hopper to the die."
-      },
-      {
-       "name": "length_to_diameter_ratio",
-       "value_text": "20:1",
-       "quote": "The length-to-diameter ratio was 20:1."
-      }
-     ],
-     "equipment": [
-      {
-       "type": "corotating twin-screw microextruder",
-       "detail": "Rondol, Rondol Industrie, Nancy, France",
-       "quote": "in a corotating twin-screw microextruder (Rondol, Rondol Industrie, Nancy, France)"
-      }
-     ],
+     "parameters": [],
+     "equipment": [],
      "not_stated": [
+      "screw_speed",
+      "screw_temperature_profile",
+      "length_to_diameter_ratio",
+      "extruder_model",
       "feed_rate",
       "residence_time",
       "atmosphere",
@@ -153,6 +134,11 @@
        "value_num": 6,
        "unit": "min",
        "quote": "30 bar for 6 min"
+      },
+      {
+       "name": "film_thickness",
+       "value_text": "Film samples of around 5 × 5 × 0.1 mm3",
+       "quote": "Film samples of around 5 × 5 × 0.1 mm3 were used in the synchrotron analysis."
       }
      ],
      "equipment": [
@@ -161,9 +147,6 @@
        "detail": "Collin GmbH, Maitenbeth, Germany",
        "quote": "in a hot-plate Collin press (Collin GmbH, Maitenbeth, Germany)"
       }
-     ],
-     "not_stated": [
-      "film_thickness"
      ]
     },
     {
@@ -287,16 +270,41 @@
     },
     {
      "property": "microhardness_MH_aging_60_min",
-     "value_num": 140,
+     "value_num": 138,
      "unit": "MPa",
      "quote": "Figure 12 Microhardness, MH, dependence on aging time (ta) for the neat amorphous PLLAs (PLLA2 and PLLA4) and for their amorphous composites with mesoporous SBA-15 particles (PLLA2SBA8 and PLLA4SBA9) just after processing from the melt.",
      "from_figure": "Fig. 12"
+    },
+    {
+     "property": "density_of_grade",
+     "value_num": 1.24,
+     "unit": "g/cm3",
+     "quote": "Their grades are named PLA Polymer 3051D and Ingeo™ Biopolymer 6202D, with a density of 1.25 and 1.24 g/cm3, respectively."
+    },
+    {
+     "property": "Tg_first_heating",
+     "value_num": 60,
+     "unit": "°C",
+     "quote": "Glass transition (not displayed) takes place at approximately 60 °C in all the specimens"
+    },
+    {
+     "property": "Tg_cooling",
+     "value_num": 55,
+     "unit": "°C",
+     "quote": "The unique transition clearly noted is the glass transition, which occurs at around 55 °C."
+    },
+    {
+     "property": "Tm_main_first_heating",
+     "value_num": 166,
+     "unit": "°C",
+     "quote": "whose main melting temperature, Tm, appears at about 166 °C"
     }
    ],
    "missing_fields": [
     "amount of PLLA fed to the extruder",
-    "film thickness",
-    "extruder atmosphere"
+    "extrusion parameters for the neat PLLAs (screw speed, temperature profile, L/D, extruder)",
+    "extruder atmosphere",
+    "thickness of the films used for microhardness"
    ]
   },
   {
@@ -406,10 +414,54 @@
     },
     {
      "property": "microhardness_MH_aging_60_min",
-     "value_num": 120,
+     "value_num": 125,
      "unit": "MPa",
      "quote": "Figure 12 Microhardness, MH, dependence on aging time (ta) for the neat amorphous PLLAs (PLLA2 and PLLA4) and for their amorphous composites with mesoporous SBA-15 particles (PLLA2SBA8 and PLLA4SBA9) just after processing from the melt.",
      "from_figure": "Fig. 12"
+    },
+    {
+     "property": "density_of_grade",
+     "value_num": 1.25,
+     "unit": "g/cm3",
+     "quote": "Their grades are named PLA Polymer 3051D and Ingeo™ Biopolymer 6202D, with a density of 1.25 and 1.24 g/cm3, respectively."
+    },
+    {
+     "property": "Tg_first_heating",
+     "value_num": 60,
+     "unit": "°C",
+     "quote": "Glass transition (not displayed) takes place at approximately 60 °C in all the specimens"
+    },
+    {
+     "property": "Tg_cooling",
+     "value_num": 55,
+     "unit": "°C",
+     "quote": "The unique transition clearly noted is the glass transition, which occurs at around 55 °C."
+    },
+    {
+     "property": "Tm_main_first_heating",
+     "value_num": 149,
+     "unit": "°C",
+     "quote": "whose maximum is located at 149 °C"
+    },
+    {
+     "property": "DSC_melting_after_isothermal_cold_crystallization_from_glass",
+     "value_text": "within the TccisothermGLASS range from 85 to 105 °C are very analogous to those for PLLA2 and PLLA2SBA9 but now in the TccisothermGLASS interval between 100 and 120 °C",
+     "quote": "DSC curves of PLLA4 and PLLA4SBA9 within the TccisothermGLASS range from 85 to 105 °C are very analogous to those for PLLA2 and PLLA2SBA9 but now in the TccisothermGLASS interval between 100 and 120 °C"
+    },
+    {
+     "property": "alpha_prime_to_alpha_transition_in_DSC_after_cold_crystallization",
+     "value_text": "not noticeable even at the lowest TccisothermGLASS here tested",
+     "quote": "the α’ → α transition is not noticeable even at the lowest TccisothermGLASS here tested"
+    },
+    {
+     "property": "melting_peaks_after_cold_crystallization_at_high_Tcc",
+     "value_text": "merging into only one melting peak",
+     "quote": "perfection of neat crystals developed at crystallization temperatures high enough is achieved since the merging into only one melting peak of the two initially evident endothermic events is observed"
+    },
+    {
+     "property": "melting_temperature_after_cold_crystallization",
+     "value_text": "does not reach 160 °C",
+     "quote": "Even under this most favorable situation, melting temperature does not reach 160 °C"
     }
    ]
   },
@@ -446,7 +498,8 @@
      "not_stated": [
       "purity"
      ],
-     "quote": "PLLA2SBA8 | 8.2 | 328.5 | 355.0 | 8.5 | 334.5 | 359.5 | 7.8"
+     "quote": "PLLA2SBA8 | 8.2 | 328.5 | 355.0 | 8.5 | 334.5 | 359.5 | 7.8",
+     "amount_text": "8.2 wt.% (content of the composite determined by TGA, Table 2)"
     }
    ],
    "steps": [
@@ -597,6 +650,11 @@
        "value_num": 6,
        "unit": "min",
        "quote": "30 bar for 6 min"
+      },
+      {
+       "name": "film_thickness",
+       "value_text": "Film samples of around 5 × 5 × 0.1 mm3",
+       "quote": "Film samples of around 5 × 5 × 0.1 mm3 were used in the synchrotron analysis."
       }
      ],
      "equipment": [
@@ -605,9 +663,6 @@
        "detail": "Collin GmbH, Maitenbeth, Germany",
        "quote": "in a hot-plate Collin press (Collin GmbH, Maitenbeth, Germany)"
       }
-     ],
-     "not_stated": [
-      "film_thickness"
      ]
     },
     {
@@ -727,7 +782,7 @@
     },
     {
      "property": "microhardness_MH_aging_60_min",
-     "value_num": 150,
+     "value_num": 147,
      "unit": "MPa",
      "quote": "Figure 12 Microhardness, MH, dependence on aging time (ta) for the neat amorphous PLLAs (PLLA2 and PLLA4) and for their amorphous composites with mesoporous SBA-15 particles (PLLA2SBA8 and PLLA4SBA9) just after processing from the melt.",
      "from_figure": "Fig. 12"
@@ -742,11 +797,47 @@
      "property": "SBA-15_dispersion",
      "value_text": "good distribution, absence of bulky silica domains",
      "quote": "It is noted a good distribution of mesoporous SBA-15 in the two PLLA matrices and the absence across the films of bulky silica domains."
+    },
+    {
+     "property": "reagent_SBA-15_specific_surface_area_BET",
+     "value_num": 517,
+     "unit": "m2/g",
+     "quote": "specific surface area, SBET = 517 m2/g"
+    },
+    {
+     "property": "reagent_SBA-15_total_pore_volume",
+     "value_num": 0.83,
+     "unit": "cm3/g",
+     "quote": "total pore volume, Vt = 0.83 cm3/g"
+    },
+    {
+     "property": "reagent_SBA-15_average_mesopore_diameter",
+     "value_num": 6.25,
+     "unit": "nm",
+     "quote": "average mesopore diameter, Dp = 6.25 nm"
+    },
+    {
+     "property": "Tg_first_heating",
+     "value_num": 60,
+     "unit": "°C",
+     "quote": "Glass transition (not displayed) takes place at approximately 60 °C in all the specimens"
+    },
+    {
+     "property": "Tg_cooling",
+     "value_num": 55,
+     "unit": "°C",
+     "quote": "The unique transition clearly noted is the glass transition, which occurs at around 55 °C."
+    },
+    {
+     "property": "Tm_main_first_heating",
+     "value_num": 166,
+     "unit": "°C",
+     "quote": "whose main melting temperature, Tm, appears at about 166 °C"
     }
    ],
    "missing_fields": [
     "SBA-15 amount fed to the extruder",
-    "film thickness"
+    "thickness of the films used for microhardness"
    ]
   },
   {
@@ -769,10 +860,9 @@
     },
     {
      "parameter": "SBA-15 mesoporous silica",
-     "value_num": 9.3,
-     "unit": "wt.%",
      "parent_value": "8.2 wt.%",
-     "quote": "PLLA4SBA9 | 9.3 | 343.0 | 369.5 | 9.6 | 336.5 | 362.5 | 8.9"
+     "quote": "PLLA4SBA9 | 9.3 | 343.0 | 369.5 | 9.6 | 336.5 | 362.5 | 8.9",
+     "value_text": "9.3 wt.% (content of the composite determined by TGA, Table 2)"
     }
    ],
    "succeeded": true,
@@ -864,7 +954,7 @@
     },
     {
      "property": "microhardness_MH_aging_60_min",
-     "value_num": 150,
+     "value_num": 148,
      "unit": "MPa",
      "quote": "Figure 12 Microhardness, MH, dependence on aging time (ta) for the neat amorphous PLLAs (PLLA2 and PLLA4) and for their amorphous composites with mesoporous SBA-15 particles (PLLA2SBA8 and PLLA4SBA9) just after processing from the melt.",
      "from_figure": "Fig. 12"
@@ -874,6 +964,44 @@
      "value_num": 23,
      "unit": "MPa",
      "quote": "Thus, the initial increase is around 23 MPa for this PLLA4SBA9 while it is only around 10 MPa for PLLA2SBA8."
+    },
+    {
+     "property": "Tg_first_heating",
+     "value_num": 60,
+     "unit": "°C",
+     "quote": "Glass transition (not displayed) takes place at approximately 60 °C in all the specimens"
+    },
+    {
+     "property": "Tg_cooling",
+     "value_num": 55,
+     "unit": "°C",
+     "quote": "The unique transition clearly noted is the glass transition, which occurs at around 55 °C."
+    },
+    {
+     "property": "Tm_main_first_heating",
+     "value_num": 149,
+     "unit": "°C",
+     "quote": "whose maximum is located at 149 °C"
+    },
+    {
+     "property": "DSC_melting_after_isothermal_cold_crystallization_from_glass",
+     "value_text": "within the TccisothermGLASS range from 85 to 105 °C are very analogous to those for PLLA2 and PLLA2SBA9 but now in the TccisothermGLASS interval between 100 and 120 °C",
+     "quote": "DSC curves of PLLA4 and PLLA4SBA9 within the TccisothermGLASS range from 85 to 105 °C are very analogous to those for PLLA2 and PLLA2SBA9 but now in the TccisothermGLASS interval between 100 and 120 °C"
+    },
+    {
+     "property": "alpha_prime_to_alpha_transition_in_DSC_after_cold_crystallization",
+     "value_text": "not noticeable even at the lowest TccisothermGLASS here tested",
+     "quote": "the α’ → α transition is not noticeable even at the lowest TccisothermGLASS here tested"
+    },
+    {
+     "property": "melting_peaks_after_cold_crystallization_at_high_Tcc",
+     "value_text": "merging into only one melting peak",
+     "quote": "perfection of neat crystals developed at crystallization temperatures high enough is achieved since the merging into only one melting peak of the two initially evident endothermic events is observed"
+    },
+    {
+     "property": "melting_temperature_after_cold_crystallization",
+     "value_text": "does not reach 160 °C",
+     "quote": "Even under this most favorable situation, melting temperature does not reach 160 °C"
     }
    ]
   },
@@ -924,8 +1052,8 @@
      "parameters": [
       {
        "name": "temperature",
-       "value_text": "from 80 to 140 °C (series of isothermal temperatures)",
-       "quote": "from 80 to 140 °C"
+       "value_text": "from 80 to 120 °C",
+       "quote": "cannot be measured above 120 °C"
       }
      ],
      "equipment": [
@@ -1015,6 +1143,18 @@
      "value_text": "just some minutes",
      "parent_value": "not stated",
      "quote": "Cold crystallization for just some minutes at 85 and 95 °C in PLLA2 leads to the α’ form"
+    },
+    {
+     "parameter": "PLLA2 amorphous compression-molded film (route PLLA2)",
+     "value_text": "Film samples of around 5 × 5 × 0.1 mm3",
+     "parent_value": "3 mg",
+     "quote": "Film samples of around 5 × 5 × 0.1 mm3 were used in the synchrotron analysis."
+    },
+    {
+     "parameter": "PLLA2SBA8 amorphous compression-molded film (route PLLA2SBA8)",
+     "value_text": "absent",
+     "parent_value": "present",
+     "quote": "The evaluation is only performed on neat PLLAs since the influence of SBA-15 particles has turned out only slight"
     }
    ],
    "succeeded": true,
@@ -1036,6 +1176,48 @@
      "unit": "nm",
      "quote": "Figure 11 SAXS profiles, at room temperature, for different cold crystallized temperatures: (a) for PLLA2 and (b) for PLLA4. (c) Dependence of most probable crystallite size on isothermal cold crystallization temperature for PLLA2 and PLLA4, estimated from SAXS long spacing values assuming a two-phase model (lc = LSAXS × fcWAXS).",
      "from_figure": "Fig. 11c"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "anneal",
+     "description": "Isothermal cold crystallization of the film at 85 °C for a few minutes, followed by synchrotron X-ray analysis.",
+     "quote": "Cold crystallization for just some minutes at 85 and 95 °C in PLLA2 leads to the α’ form",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 85,
+       "unit": "°C",
+       "quote": "Cold crystallization for just some minutes at 85 and 95 °C in PLLA2 leads to the α’ form"
+      },
+      {
+       "name": "duration",
+       "value_text": "just some minutes",
+       "quote": "Cold crystallization for just some minutes at 85 and 95 °C in PLLA2 leads to the α’ form"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "temperature control unit",
+       "detail": "Linkam Unit (Waterfield, UK) coupled to a liquid-nitrogen cooling system",
+       "quote": "A Linkam Unit (Waterfield, UK), coupled to a cooling system of liquid nitrogen, was utilized for the temperature control."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "atmosphere"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "SAXS/WAXS (synchrotron)",
+     "result": "polymorph, crystallinity and crystallite size of the cold-crystallized film",
+     "instrument": "beamline BL11-NCD-SWEET at ALBA",
+     "conditions": "film samples of around 5 × 5 × 0.1 mm3",
+     "quote": "Real-time variable-temperature small-angle (SAXS) and wide-angle (WAXS) experiments were performed using synchrotron radiation in beamline BL11-NCD-SWEET at ALBA (Cerdanyola del Valles, Barcelona, Spain) at a fixed wavelength of 0.1 nm."
     }
    ]
   },
@@ -1066,6 +1248,18 @@
      "value_text": "just some minutes",
      "parent_value": "not stated",
      "quote": "Cold crystallization for just some minutes at 85 and 95 °C in PLLA2 leads to the α’ form"
+    },
+    {
+     "parameter": "PLLA2 amorphous compression-molded film (route PLLA2)",
+     "value_text": "Film samples of around 5 × 5 × 0.1 mm3",
+     "parent_value": "3 mg",
+     "quote": "Film samples of around 5 × 5 × 0.1 mm3 were used in the synchrotron analysis."
+    },
+    {
+     "parameter": "PLLA2SBA8 amorphous compression-molded film (route PLLA2SBA8)",
+     "value_text": "absent",
+     "parent_value": "present",
+     "quote": "The evaluation is only performed on neat PLLAs since the influence of SBA-15 particles has turned out only slight"
     }
    ],
    "succeeded": true,
@@ -1087,6 +1281,48 @@
      "unit": "nm",
      "quote": "Figure 11 SAXS profiles, at room temperature, for different cold crystallized temperatures: (a) for PLLA2 and (b) for PLLA4. (c) Dependence of most probable crystallite size on isothermal cold crystallization temperature for PLLA2 and PLLA4, estimated from SAXS long spacing values assuming a two-phase model (lc = LSAXS × fcWAXS).",
      "from_figure": "Fig. 11c"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "anneal",
+     "description": "Isothermal cold crystallization of the film at 95 °C for a few minutes, followed by synchrotron X-ray analysis.",
+     "quote": "Cold crystallization for just some minutes at 85 and 95 °C in PLLA2 leads to the α’ form",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 95,
+       "unit": "°C",
+       "quote": "Cold crystallization for just some minutes at 85 and 95 °C in PLLA2 leads to the α’ form"
+      },
+      {
+       "name": "duration",
+       "value_text": "just some minutes",
+       "quote": "Cold crystallization for just some minutes at 85 and 95 °C in PLLA2 leads to the α’ form"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "temperature control unit",
+       "detail": "Linkam Unit (Waterfield, UK) coupled to a liquid-nitrogen cooling system",
+       "quote": "A Linkam Unit (Waterfield, UK), coupled to a cooling system of liquid nitrogen, was utilized for the temperature control."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "atmosphere"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "SAXS/WAXS (synchrotron)",
+     "result": "polymorph, crystallinity and crystallite size of the cold-crystallized film",
+     "instrument": "beamline BL11-NCD-SWEET at ALBA",
+     "conditions": "film samples of around 5 × 5 × 0.1 mm3",
+     "quote": "Real-time variable-temperature small-angle (SAXS) and wide-angle (WAXS) experiments were performed using synchrotron radiation in beamline BL11-NCD-SWEET at ALBA (Cerdanyola del Valles, Barcelona, Spain) at a fixed wavelength of 0.1 nm."
     }
    ]
   },
@@ -1176,6 +1412,13 @@
      "value_num": 120,
      "unit": "°C",
      "quote": "The location of Tcc at around 120 °C points out that the α phase [] is the one developed during the DSC heating run."
+    },
+    {
+     "property": "alpha_prime_to_alpha_transition_temperature_in_PLLA4_series",
+     "value_num": 82.5,
+     "unit": "°C",
+     "quote": "estimated to take place at approximately 97.5 °C in PLLA2 while it is seen at around 82.5 °C in PLLA4",
+     "from_figure": "Fig. 10"
     }
    ],
    "missing_fields": [
@@ -1203,6 +1446,14 @@
      "unit": "°C",
      "parent_value": "65 °C",
      "quote": "Specimens isothermally cold crystallized at 70 °C show ordering features more complex."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_num": 8,
+     "unit": "h",
+     "parent_value": "8 h",
+     "quote": "Thus, additional isothermal cold crystallization experiments were performed for longer times, 8 h, without registering the DSC isotherm."
     }
    ],
    "succeeded": true,
@@ -1253,6 +1504,11 @@
      "property": "alpha_prime_to_alpha_transformation_interval",
      "value_text": "from 130 to 140 °C",
      "quote": "the α’ to α-crystal transformation is now clearly noticeable in the temperature interval from 130 to 140 °C"
+    },
+    {
+     "property": "polymorph",
+     "value_text": "α’ polymorph",
+     "quote": "The α’ polymorph is developed at this temperature"
     }
    ]
   },
@@ -1276,6 +1532,14 @@
      "unit": "°C",
      "parent_value": "65 °C",
      "quote": "The behavior of the specimens isothermally crystallized at 80 °C is rather similar to that just described for samples treated at 75 °C."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_num": 8,
+     "unit": "h",
+     "parent_value": "8 h",
+     "quote": "Thus, additional isothermal cold crystallization experiments were performed for longer times, 8 h, without registering the DSC isotherm."
     }
    ],
    "succeeded": true,
@@ -1284,6 +1548,11 @@
      "property": "alpha_prime_to_alpha_transformation",
      "value_text": "transformation shifted to slightly higher temperature, small narrowing of the main melting process",
      "quote": "A displacement of the transformation from α’ to α crystals to slightly higher temperature is noticed together with a small narrowing of the main melting process."
+    },
+    {
+     "property": "alpha_prime_formation_range",
+     "value_text": "from 70 to 80 °C",
+     "quote": "being in the former from 70 to 80 °C"
     }
    ]
   },
@@ -1321,6 +1590,12 @@
      "value_text": "absent",
      "parent_value": "present",
      "quote": "The evaluation is only performed on neat PLLAs since the influence of SBA-15 particles has turned out only slight"
+    },
+    {
+     "parameter": "PLLA4 amorphous compression-molded film (route PLLA4)",
+     "value_text": "Film samples of around 5 × 5 × 0.1 mm3",
+     "parent_value": "3 mg",
+     "quote": "Film samples of around 5 × 5 × 0.1 mm3 were used in the synchrotron analysis."
     }
    ],
    "succeeded": true,
@@ -1334,12 +1609,43 @@
      "property": "degree_of_crystallinity_WAXS",
      "value_num": 0.13,
      "quote": "Crystallinity achieves the value of only 0.13, as depicted in Figure 9."
-    },
+    }
+   ],
+   "steps": [
     {
-     "property": "alpha_prime_to_alpha_transition_temperature",
-     "value_num": 82.5,
-     "unit": "°C",
-     "quote": "estimated to take place at approximately 97.5 °C in PLLA2 while it is seen at around 82.5 °C in PLLA4"
+     "order": 1,
+     "action": "anneal",
+     "description": "Isothermal cold crystallization of the film for 15 h at 70 °C, followed by WAXS analysis.",
+     "quote": "In fact, a small amount of α’ phase is achieved after annealing for 15 h at 70 °C, as noted in Figure 8b for the pure crystal WAXS profile at that temperature.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "In fact, a small amount of α’ phase is achieved after annealing for 15 h at 70 °C, as noted in Figure 8b for the pure crystal WAXS profile at that temperature."
+      },
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "h",
+       "quote": "In fact, a small amount of α’ phase is achieved after annealing for 15 h at 70 °C, as noted in Figure 8b for the pure crystal WAXS profile at that temperature."
+      }
+     ],
+     "not_stated": [
+      "equipment",
+      "heating_rate",
+      "cooling_rate",
+      "atmosphere"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "WAXS (synchrotron)",
+     "result": "pure crystal WAXS profile of PLLA4 annealed 15 h at 70 °C (Fig. 8b)",
+     "instrument": "beamline BL11-NCD-SWEET at ALBA",
+     "conditions": "film samples of around 5 × 5 × 0.1 mm3",
+     "quote": "Real-time variable-temperature small-angle (SAXS) and wide-angle (WAXS) experiments were performed using synchrotron radiation in beamline BL11-NCD-SWEET at ALBA (Cerdanyola del Valles, Barcelona, Spain) at a fixed wavelength of 0.1 nm."
     }
    ]
   },
@@ -1385,13 +1691,13 @@
     {
      "order": 1,
      "action": "crystallize",
-     "description": "Isothermal crystallization from the melt at a series of temperatures (highest tested: 130 °C for PLLA2).",
+     "description": "Isothermal crystallization from the melt at a series of temperatures (highest tested: 130 °C for PLLA2 and PLLA2SBA8).",
      "quote": "Figure 4a displays the processes of isothermal crystallization from the melt for the two neat PLLAs and their composites PLLA2SBA8 and PLLA4SBA9 at the distinct temperatures analyzed.",
      "parameters": [
       {
        "name": "temperature",
-       "value_text": "130 °C for PLLA2 (highest crystallization temperature tested)",
-       "quote": "for the highest crystallization temperatures tested (130 °C for PLLA2 and 115 °C for PLLA4)"
+       "value_text": "up to 130 °C",
+       "quote": "highest crystallization temperatures tested (130 °C for PLLA2 and 115 °C for PLLA4)"
       }
      ],
      "equipment": [
@@ -1462,10 +1768,9 @@
     {
      "parameter": "temperature",
      "step_order": 1,
-     "value_num": 115,
-     "unit": "°C",
-     "parent_value": "130 °C for PLLA2",
-     "quote": "for the highest crystallization temperatures tested (130 °C for PLLA2 and 115 °C for PLLA4)"
+     "parent_value": "up to 130 °C",
+     "quote": "for the highest crystallization temperatures tested (130 °C for PLLA2 and 115 °C for PLLA4)",
+     "value_text": "up to 115 °C"
     },
     {
      "parameter": "PLLA2 amorphous compression-molded film (route PLLA2)",
@@ -1578,7 +1883,7 @@
    ]
   },
   {
-   "sample": "PLLA2 and PLLA2SBA8, isothermal cold crystallization 80-140 °C (DSC)",
+   "sample": "PLLA2 and PLLA2SBA8, isothermal cold crystallization 80-120 °C (DSC)",
    "defined_in": "Results, Fig. 5-7",
    "route": "ColdCryst_PLLA2",
    "results_in": [
@@ -1640,7 +1945,7 @@
    ]
   },
   {
-   "sample": "PLLA4 held 15 h at 70 °C (X-ray)",
+   "sample": "PLLA4 held 15 h at 70 °C (X-ray, film samples 5 × 5 × 0.1 mm3)",
    "defined_in": "Results, Fig. 8b",
    "route": "ColdCryst_PLLA4_70C_15h",
    "results_in": [
@@ -1662,6 +1967,16 @@
    "route": "MeltCryst_PLLA4",
    "results_in": [
     "Fig. 4"
+   ]
+  },
+  {
+   "sample": "PLLA4 and PLLA4SBA9, isothermal cold crystallization from the glass 85-140 °C (DSC, Fig. 5, 6c-d)",
+   "defined_in": "Results, Fig. 5-6",
+   "route": null,
+   "why": "températures individuelles et durées des isothermes non écrites (lisibles seulement sur Fig. 5-6) ; seules les phrases imprimées sont rangées dans les résultats des voies PLLA4 et PLLA4SBA9",
+   "results_in": [
+    "Fig. 5",
+    "Fig. 6c-d"
    ]
   },
   {
@@ -1692,7 +2007,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "PLLA4 diffère de PLLA2 par le seul grade de polymère (4,2 contre 2,0 % mol de D, masses molaires voisines de 118 000 g/mol) : sa cristallisation à froid se fait à 126,5 °C contre 110,5 °C. L'ajout de SBA-15 abaisse ces températures (106,5 °C pour PLLA2SBA8, 124,5 °C pour PLLA4SBA9). Pour les recuits depuis le verre, PLLA4 donne le polymorphe α’ entre 70 et 80 °C seulement, contre environ 95 à 105 °C pour PLLA2, et ne cristallise qu'à 0,13 après 15 h à 70 °C. La microdureté initiale (lecture graphique) passe de 140 à 150 MPa pour PLLA2 avec la silice et de 120 à 150 MPa pour PLLA4."
+   "text": "PLLA4 diffère de PLLA2 par le seul grade de polymère (4,2 contre 2,0 % mol de D, masses molaires voisines de 118 000 g/mol) : sa cristallisation à froid se fait à 126,5 °C contre 110,5 °C. L'ajout de SBA-15 abaisse ces températures (106,5 °C pour PLLA2SBA8, 124,5 °C pour PLLA4SBA9). Pour les recuits depuis le verre, PLLA4 donne le polymorphe α’ entre 70 et 80 °C seulement, contre environ 95 à 105 °C pour PLLA2 selon les Résultats (80 à 105 °C selon les Conclusions), et ne cristallise qu'à 0,13 après 15 h à 70 °C. La microdureté initiale (lecture graphique) passe de 138 à 147 MPa pour PLLA2 avec la silice et de 125 à 148 MPa pour PLLA4."
   },
   {
    "type": "tendance_observee",
@@ -1737,19 +2052,39 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Quantités et masses de polymère et de silice chargées dans l'extrudeuse, débit, temps de séjour, atmosphère et refroidissement en sortie de filière, épaisseur des films, pureté des réactifs ne sont pas donnés ; la teneur en SBA-15 connue est celle mesurée par ATG (8,2 et 9,3 % en masse), pas la consigne d'alimentation. Les paramètres d'extrusion ne sont décrits que pour les composites ; on suppose qu'ils valent aussi pour les PLLA seuls. Pour les recuits, les durées des isothermes, la vitesse de chauffe jusqu'à la température d'isotherme et les durées des échantillons de rayons X (« just some minutes », durées non écrites à 75 et 80 °C) manquent."
+   "text": "Quantités et masses de polymère et de silice chargées dans l'extrudeuse, débit, temps de séjour, atmosphère et refroidissement en sortie de filière, épaisseur des films de microdureté, pureté des réactifs ne sont pas donnés ; la teneur en SBA-15 connue est celle mesurée par ATG (8,2 et 9,3 % en masse), pas la consigne d'alimentation. Les paramètres d'extrusion (vitesse de vis, profil de température, L/D, extrudeuse) ne sont décrits que pour les composites : ils ne sont pas repris pour les PLLA seuls, déclarés non cités. Pour les recuits, les durées des isothermes, la vitesse de chauffe jusqu'à la température d'isotherme et les durées des échantillons de rayons X (« just some minutes », durées non écrites à 75 et 80 °C) manquent."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Figures portant des résultats non extraits faute de valeurs lisibles ou d'attribution univoque : Fig. 3 (courbes DSC), Fig. 4a et 5a (isothermes), Fig. 5b-c (temps de cristallisation pour chaque température de 80 à 140 °C), Fig. 6 et 7b (fusions Tm1, Tm2), Fig. 8 et 10 (profils et positions des réflexions), Fig. 9 pour PLLA2 et PLLA4 aux températures non écrites dans le texte, Fig. 11a-b, Fig. 12 aux temps de vieillissement autres que 60 min. Lectures faites sur figure : Fig. 12 (microdureté à 60 min), Fig. 9 (cristallinité), Fig. 11c (taille de cristallite), Fig. 4b (temps du pic de cristallisation), à 2 chiffres significatifs au plus."
+   "text": "Figures portant des résultats non extraits faute de valeurs lisibles ou d'attribution univoque : Fig. 3 (courbes DSC), Fig. 4a et 5a (isothermes), Fig. 5b-c (temps de cristallisation pour chaque température de 80 à 140 °C), Fig. 6 et 7b (fusions Tm1, Tm2), Fig. 8 et 10 (profils et positions des réflexions), Fig. 9 pour PLLA2 et PLLA4 aux températures non écrites dans le texte, Fig. 11a-b, Fig. 12 aux temps de vieillissement autres que 60 min. Lectures faites sur figure : Fig. 12 (microdureté à 60 min : 138, 147, 125 et 148 MPa pour PLLA2, PLLA2SBA8, PLLA4, PLLA4SBA9, qui donnent l'écart de 23 MPa du texte pour PLLA4SBA9), Fig. 9 (cristallinité), Fig. 11c (taille de cristallite), Fig. 4b (temps du pic de cristallisation), à 2 chiffres significatifs au plus."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ColdCryst_PLLA2",
+   "text": "Les positions de référence des réflexions principales de α′ et α, « 0.5363 to 0.5286 nm−1 » et « 0.4715 to 0.4629 nm−1 », sont en réalité des distances en nm : lues ainsi, elles donnent s ≈ 1,87–2,16 nm−1, soit 2θ (Cu) ≈ 16,5–19,2°, ce qui tombe sur les raies (110)/(200) et (203) du PLLA et dans le domaine de la Fig. 8. Erreur d'unité de l'article, aucune valeur modifiée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ColdCryst_PLLA2",
+   "text": "Le domaine de formation de α′ dans PLLA2 est donné de trois façons : 95–105 °C (Résultats), 80–105 °C (Conclusions), et le WAXS montre α′ à 85 et 95 °C avec une transition α′→α estimée à 97,5 °C. Le chimiste doit donc compter sur α′ dès 85 °C ; la valeur 95–105 °C est celle des Résultats, retenue telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves de lecture : la diagonale d'empreinte Vickers (≈ 110–120 µm pour 120–150 MPa sous 0,98 N) dépasse la règle usuelle d'épaisseur du film (≥ 1,5 fois la diagonale), et l'épaisseur des films de microdureté n'est pas donnée (0,1 mm pour les films de rayons X) ; la masse molaire n'est mesurée que sur les PLLA seuls après extrusion, pas sur les composites ; les comparaisons PLLA2/PLLA4 mêlent teneur en D et durée de recuit, et les deux composites n'ont pas la même charge de silice (8,2 contre 9,3 % en masse) ; les teneurs en silice par ATG diffèrent de 0,7 point entre azote et air (résidu carboné possible sous azote) ; le diffractomètre de la Fig. 3b n'est pas décrit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les échantillons de PLLA4 recuits en isothermes depuis le verre entre 85 et 140 °C (DSC, Fig. 5 et 6c-d) n'ont pas de voie propre faute de températures individuelles et de durées écrites ; la transition α′→α de PLLA4 à 82,5 °C (Fig. 10) est une valeur de série rattachée à la voie du recuit à 65 °C, et les échantillons de rayons X de PLLA4 (75, 80, 85, 100 et 120 °C) ont des durées de recuit non écrites, probablement bien plus longues que les 8 h des essais DSC."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
-   "where": "PLLA2, étapes 1-6",
-   "issue": "L'extrusion et ses paramètres (60 rpm, profil de vis, L/D) ne sont décrits que pour les composites. Les PLLA seuls sont dits « after extrusion was applied » ; le même protocole d'extrusion, de séchage et de moulage est appliqué ici au PLLA seul, sans que l'article le détaille pour lui."
+   "where": "PLLA2, étape 3 (extrusion)",
+   "issue": "L'extrusion et ses paramètres (60 rpm, profil de vis, L/D, extrudeuse) ne sont décrits que pour les composites ; les PLLA seuls sont dits « after extrusion was applied » sans détail. Les paramètres ne sont donc pas repris pour les PLLA seuls (non cités). Séchage et moulage sont décrits pour le PLLA seul."
   },
   {
    "where": "PLLA2SBA8 et PLLA4SBA9, réactif SBA-15",
@@ -1761,19 +2096,19 @@
   },
   {
    "where": "PLLA4 et PLLA4SBA9 (héritage)",
-   "issue": "L'article ne dit pas explicitement que PLLA4 suit le même protocole d'extrusion que PLLA2 ; il traite les deux PLLA comme « processed by melt extrusion » (Conclusions). PLLA4 est rattachée à PLLA2 avec le seul changement de grade."
+   "issue": "L'article ne dit pas explicitement que PLLA4 suit le même protocole que PLLA2 ; il traite les deux PLLA ensemble (« both PLLAs after extrusion was applied », Conclusions « processed by melt extrusion »). PLLA4 est rattachée à PLLA2 avec le seul changement de grade ; ses étapes d'extrusion n'ont aucun paramètre."
   },
   {
    "where": "ColdCryst_PLLA2, étape 1",
-   "issue": "La plage « from 80 to 140 °C » (Fig. 5) est donnée pour l'ensemble des échantillons, mais le texte précise ensuite que la cristallisation depuis le verre de PLLA2 et PLLA2SBA8 ne peut pas être mesurée au-dessus de 120 °C ; les températures individuelles ne sont pas écrites dans le texte, donc seule la plage est enregistrée."
+   "issue": "La plage de la Fig. 5 est « from 80 to 140 °C » pour l'ensemble des échantillons, mais la cristallisation depuis le verre de PLLA2 et PLLA2SBA8 « cannot be measured above 120 °C » : la plage est donc enregistrée de 80 à 120 °C pour cette voie (borne basse issue de la phrase de la Fig. 5) ; les températures individuelles ne sont pas écrites."
   },
   {
-   "where": "ColdCryst_PLLA2_85C et _95C",
-   "issue": "La variation de durée « just some minutes » ajoute un paramètre absent du parent (durée non citée dans la voie parent), d'où un avertissement du contrôle. Ces deux échantillons sont des échantillons de rayons X synchrotron (films d'environ 5 × 5 × 0,1 mm3) alors que la voie parent est décrite pour la DSC (3 mg)."
+   "where": "ColdCryst_PLLA2_85C, _95C et ColdCryst_PLLA4_70C_15h",
+   "issue": "Ces échantillons de rayons X synchrotron sont des films d'environ 5 × 5 × 0,1 mm3, pas des 3 mg de la DSC : la voie parent est décrite pour la DSC, d'où des étapes propres et un réactif surchargé. L'appareil de recuit du point 15 h à 70 °C n'est pas écrit (Linkam citée pour les mesures en température variable seulement)."
   },
   {
    "where": "ColdCryst_PLLA4_70C, _75C, _80C",
-   "issue": "La durée de 8 h est écrite pour le recuit de 65 °C (« for longer times, 8 h ») et pour celui de 75 °C (« isothermal annealing for 8 h ») ; elle est héritée par les recuits de 70 et 80 °C, présentés dans la même série de courbes (Fig. 7a), sans que le texte la répète."
+   "issue": "La durée de 8 h est écrite pour le recuit de 65 °C (« for longer times, 8 h ») et pour celui de 75 °C (« isothermal annealing for 8 h ») ; pour 70 et 80 °C elle est tirée de la phrase générale qui vise toute la Fig. 7a. Elle ne concerne pas l'échantillon de rayons X de 70 °C, recuit 15 h (autre lignée)."
   },
   {
    "where": "Fig. 9 pour PLLA4 à 75 et 80 °C",
@@ -1785,7 +2120,7 @@
   },
   {
    "where": "Résultats, microdureté (Fig. 12)",
-   "issue": "Valeurs lues sur la Fig. 12 à 60 min de vieillissement, à 2 chiffres significatifs : PLLA2 138 → 140 MPa, PLLA2SBA8 147 → 150, PLLA4 125 → 120, PLLA4SBA9 148 → 150 MPa ; précision de lecture environ 3 MPa, barres d'erreur de l'ordre de 4 à 5 MPa. Les arrondis écrasent des écarts réels (par exemple PLLA2SBA8 et PLLA4SBA9 sont indistinguables dans les barres d'erreur)."
+   "issue": "Valeurs lues sur la Fig. 12 à 60 min de vieillissement : PLLA2 ≈ 138, PLLA2SBA8 ≈ 147, PLLA4 ≈ 124,5 (noté 125), PLLA4SBA9 ≈ 148 MPa ; précision de lecture environ 3 MPa, barres d'erreur de 4 à 5 MPa. Les écarts lus (PLLA4SBA9 − PLLA4 ≈ 23 MPa, PLLA2SBA8 − PLLA2 ≈ 10 MPa) sont ceux du texte."
   },
   {
    "where": "Figures lues (9, 11c, 4b)",
@@ -1794,6 +2129,22 @@
   {
    "where": "Texte, section sur les points de fusion",
    "issue": "Une coquille du texte écrit « PLLA2SBA9 » et « PLLAS2BA8 » ; ces noms sont lus comme PLLA2SBA8. Le texte écrit aussi « PLLASBA9 » dans la légende de la Fig. 5."
+  },
+  {
+   "where": "PLLA2 et PLLA2SBA8, épaisseur du film",
+   "issue": "L'article n'écrit pas l'épaisseur des films moulés ; seuls les échantillons de rayons X découpés dedans sont dits d'environ 5 × 5 × 0,1 mm3. Cette valeur est enregistrée pour l'épaisseur du film, avec cette réserve ; celle des films de microdureté reste non citée."
+  },
+  {
+   "where": "PLLA4, série de recuits depuis le verre",
+   "issue": "La transition α′→α de PLLA4 à 82,5 °C (Fig. 10) est une valeur de la série de températures de PLLA4, rattachée à la voie de base ColdCryst_PLLA4_65C faute de voie propre ; ce n'est pas une propriété de l'échantillon de 15 h à 70 °C, qui est α′ seul. De même, les résultats DSC de PLLA4 et PLLA4SBA9 de 85 à 140 °C sont rangés dans les résultats des voies PLLA4 et PLLA4SBA9."
+  },
+  {
+   "where": "ColdCryst_PLLA4_75C et _80C, polymorphe",
+   "issue": "Le texte DSC donne α′ à 75 °C et « from 70 to 80 °C » pour la série ; pour les échantillons de rayons X à 75 et 80 °C (« the α’ polymorph is also the main lattice », avec un peu de α à 80 °C) les durées de recuit ne sont pas écrites et diffèrent probablement de 8 h : ces valeurs ne sont pas rattachées aux voies DSC."
+  },
+  {
+   "where": "PLLA2SBA8 et PLLA4SBA9, teneur en SBA-15",
+   "issue": "Les teneurs 8,2 et 9,3 % en masse sont mesurées par ATG (Table 2) ; la consigne d'alimentation est « about 9 wt.% » (résumé) pour les deux composites. La valeur du réactif est la teneur mesurée, dite telle dans amount_text."
   }
  ]
 }
