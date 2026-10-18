@@ -265,7 +265,15 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "Si–O–Si asymmetric stretching at 1100 cm–1; Si–C absorption at 890 cm–1 (amination of MSN)",
+     "instrument": "Thermo Scientific Nicolet IS20 (Waltham, MA, USA)",
+     "conditions": null,
+     "quote": "The characteristic absorption peak of Si–C is located at 890 cm–1"
+    }
+   ],
    "outcomes": [],
    "missing_fields": [
     "amination_degree"
@@ -594,11 +602,34 @@
      "action": "add",
      "description": "Add ADH, LDH and MSN-NAD to the zinc acetate solution.",
      "quote": "1 mg ADH (300 U/mg), 1 mg LDH (250 U/mg) and 2 mg MSN-NAD+ were added to 10 mL zinc acetate (40 mM) solution.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "solvent",
+       "value_text": "aqueous solution",
+       "quote": "synthesized by in-situ polymerization in aqueous solution"
+      },
+      {
+       "name": "zinc_acetate_concentration",
+       "value_num": 40,
+       "unit": "mM",
+       "quote": "10 mL zinc acetate (40 mM) solution"
+      },
+      {
+       "name": "adh_specific_activity",
+       "value_num": 300,
+       "unit": "U/mg",
+       "quote": "1 mg ADH (300 U/mg)"
+      },
+      {
+       "name": "ldh_specific_activity",
+       "value_num": 250,
+       "unit": "U/mg",
+       "quote": "1 mg LDH (250 U/mg)"
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "temperature",
-      "solvent"
+      "temperature"
      ]
     },
     {
@@ -616,12 +647,21 @@
        "name": "addition_rate",
        "quote": "was quickly added at room temperature",
        "value_text": "quickly"
+      },
+      {
+       "name": "solvent",
+       "value_text": "aqueous solution",
+       "quote": "synthesized by in-situ polymerization in aqueous solution"
+      },
+      {
+       "name": "methylimidazole_concentration",
+       "value_num": 2.8,
+       "unit": "mM",
+       "quote": "The 10 mL (2.8 mM) 2-methylimidazole"
       }
      ],
      "equipment": [],
-     "not_stated": [
-      "solvent"
-     ]
+     "not_stated": []
     },
     {
      "order": 3,
@@ -725,7 +765,7 @@
      "technique": "HPLC (lactic acid assay)",
      "result": "lactic acid quantified in the cascade assays",
      "instrument": null,
-     "conditions": "Column: C18 4.6 × 150 mm, 5 μm. Mobile phase: 2.5% ammonium dihydrogen phosphate adjusted pH 2.65 with phosphoric acid. Flow rate: 1.0 mL/min. Injection volume: 5 μL. Detection wavelength: 210 nm.",
+     "conditions": "Column: C18 4.6 × 150 mm, 5 μm. Mobile phase: 2.5% ammonium dihydrogen phosphate adjusted pH 2.65 with phosphoric acid. Flow rate: 1.0 mL/min. Injection volume: 5 μL. Detection wavelength: 210 nm. Assay conditions (section 2.5): 100 μg/mL ZIF@ADH/NAD-MSN/LDH, 2 mM pyruvate, 20 mM ethanol were added to 200 μL PB buffer solution (100 mM, pH 7.4), respectively; the reaction was performed for 3 h.",
      "quote": "Column: C18 4.6 × 150 mm, 5 μm. Mobile phase: 2.5% ammonium dihydrogen phosphate adjusted pH 2.65 with phosphoric acid. Flow rate: 1.0 mL/min. Injection volume: 5 μL. Detection wavelength: 210 nm."
     },
     {
@@ -741,6 +781,13 @@
      "instrument": "spectrophotometer",
      "conditions": "reaction with 2,4-dinitrophenylhydrazine, absorbance at 520 nm; 37 °C; 1 U = consumption of 1 nmol pyruvate per mg protein per min",
      "quote": "A spectrophotometer was used to detect the absorbance of the reaction solution at 520 nm to analyze the content of pyruvate."
+    },
+    {
+     "technique": "lactic acid cascade assay (conditions of section 2.5)",
+     "result": "reaction conditions of the NAD+-mediated enzyme-linked reaction; lactic acid then measured by HPLC",
+     "instrument": null,
+     "conditions": "100 μg/mL ZIF@ADH/NAD-MSN/LDH, 2 mM pyruvate, 20 mM ethanol were added to 200 μL PB buffer solution (100 mM, pH 7.4), respectively; the reaction was performed for 3 h",
+     "quote": "100 μg/mL ZIF@ADH/NAD-MSN/LDH, 2 mM pyruvate, 20 mM ethanol were added to 200 μL PB buffer solution (100 mM, pH 7.4), respectively."
     }
    ],
    "outcomes": [
@@ -769,10 +816,10 @@
      "unit": "m2/g"
     },
     {
-     "property": "pore_size",
-     "quote": "ZIF@ADH/NAD-MSN/LDH still had about 3 nm pores for the mass transfer of substrates and intermediate products",
-     "value_num": 3,
-     "unit": "nm"
+     "property": "pore_size_after_ZIF-8_embedding",
+     "quote": "the average pore size of ADH, LDH and coenzyme polymer was reduced to 3–4 nm after ZIF-8 embedding",
+     "unit": "nm",
+     "value_text": "3–4"
     },
     {
      "property": "lactic_acid_concentration_cascade_assay",
@@ -816,7 +863,7 @@
      "value_num": 8
     },
     {
-     "property": "relative_activity_first_reuse_cycle",
+     "property": "relative_activity_reuse_cycle_1",
      "quote": "The first relative recovery was 93.16%.",
      "value_num": 93.16,
      "unit": "%"
@@ -1020,10 +1067,29 @@
      "value_num": 96,
      "unit": "%",
      "from_figure": "Fig. 7B"
+    },
+    {
+     "property": "pore_size_remaining_for_mass_transfer",
+     "value_num": 3,
+     "unit": "nm",
+     "quote": "ZIF@ADH/NAD-MSN/LDH still had about 3 nm pores for the mass transfer of substrates and intermediate products"
+    },
+    {
+     "property": "lactic_acid_concentration_control_ADH_MSN-NAD_LDH_cascade_assay",
+     "value_num": 58.85,
+     "unit": "μg/mL",
+     "from_figure": "Fig. 5",
+     "quote": "The concentration of lactic acid about the other two control groups were 58.850 μg/mL and 46.235 μg/mL, respectively."
+    },
+    {
+     "property": "lactic_acid_concentration_control_ADH_NAD_LDH_cascade_assay",
+     "value_num": 46.235,
+     "unit": "μg/mL",
+     "from_figure": "Fig. 5",
+     "quote": "The concentration of lactic acid about the other two control groups were 58.850 μg/mL and 46.235 μg/mL, respectively."
     }
    ],
    "missing_fields": [
-    "solvent_of_zinc_and_2-methylimidazole_solutions",
     "scale_of_batch"
    ]
   },
@@ -1121,6 +1187,9 @@
      "quote": "LDHMSN-NAD 5 | C2H5OHCH3COCOOH | No reaction",
      "value_text": "No reaction"
     }
+   ],
+   "not_stated": [
+    "MSN-NAD_amount"
    ]
   },
   {
@@ -1149,6 +1218,9 @@
      "quote": "ADHMSN-NAD+ | C2H5OHCH3COCOOH | CH3CHO",
      "value_text": "CH3CHO"
     }
+   ],
+   "not_stated": [
+    "MSN-NAD_amount"
    ]
   },
   {
@@ -1177,6 +1249,9 @@
      "quote": "ADHLDH | C2H5OHCH3COCOOH | No reaction",
      "value_text": "No reaction"
     }
+   ],
+   "not_stated": [
+    "enzyme_mass_split"
    ]
   }
  ],
@@ -1204,7 +1279,7 @@
   {
    "type": "tendance_observee",
    "route": "ZIF@ADH/NAD-MSN/LDH",
-   "text": "Les groupes témoins non synthétisés (enzymes libres ADH, MSN-NAD, LDH et ADH, NAD+, LDH) donnent moins d'acide lactique que le matériau : 58,850 et 46,235 μg/mL contre 124,605 μg/mL (l'attribution de chaque valeur à un témoin n'est pas écrite dans le texte). La production du matériau passe par un maximum à 40 °C et à pH 8, et chute à 50 °C et à pH 9 ; les témoins restent plus bas à toutes les températures.",
+   "text": "Les groupes témoins non synthétisés (enzymes libres) donnent moins d'acide lactique que le matériau : 58,850 μg/mL (ADH, MSN-NAD, LDH) et 46,235 μg/mL (ADH, NAD+, LDH) contre 124,605 μg/mL ; le texte ne dit pas quelle valeur va avec quel témoin, l'attribution est lue sur la Fig. 5 (courbes ≈ 57 et ≈ 45 μg/mL à 3,5 h). La production du matériau passe par un maximum à 40 °C et à pH 8, et chute à 50 °C et à pH 9 ; les témoins restent plus bas à toutes les températures.",
    "quote": "The concentration of lactic acid about the other two control groups were 58.850 μg/mL and 46.235 μg/mL, respectively."
   },
   {
@@ -1216,19 +1291,25 @@
   {
    "type": "mecanisme_auteurs",
    "route": "MSN-NAD",
-   "text": "Selon les auteurs, l'EDC active le carboxyle de MSN-COOH et forme une liaison amide avec un site NH du NAD+.",
+   "text": "Selon les auteurs, sous l'action de l'EDC, la liaison amide se forme entre le site NH du NAD+ et le COOH de la surface de MSN.",
    "quote": "Under the action of the accelerator carbodiimide (EDC), the amide bond was formed by the inactive site -NH of NAD+ and -COOH modified on the surface of MSN"
   },
   {
    "type": "mecanisme_auteurs",
    "route": "ZIF@ADH/NAD-MSN/LDH",
-   "text": "Les carboxyles de surface de MSN interagissent avec Zn2+ et induisent la croissance du ZIF-8 sur MSN-COOH ; les enzymes se retrouvent confinées dans le ZIF-8, ce que les auteurs rattachent à la coordination entre Zn2+ et la liaison amide des protéines.",
+   "text": "Les carboxyles de surface de MSN interagissent avec Zn2+ et induisent la croissance du ZIF-8 sur MSN-COOH, pour une nanostructure cœur-coquille uniforme.",
    "quote": "The interaction between MSN surfaces carboxyl groups and Zn2+ was essential for inducing the growth of ZIF-8 on the MSN-COOH surface and constructing a uniform core–shell nanostructure"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "ZIF@ADH/NAD-MSN/LDH",
+   "text": "Les auteurs relient le confinement des deux enzymes dans le ZIF-8 à la coordination entre Zn2+ et la liaison amide des protéines (formulation prudente : « may be related »).",
+   "quote": "This may be related to the coordination between Zn2+ and protein amide bond"
   },
   {
    "type": "mecanisme_analyse",
    "route": "MSN-NH2",
-   "text": "Probablement, l'APTES s'hydrolyse et se condense sur les silanols de surface de la silice en laissant des groupes amine propyle ; le reflux dans l'éthanol anhydre limite la polycondensation en solution. La carboxylation suivante (non décrite) transforme ces amines en acides, ce que l'article ne détaille pas."
+   "text": "Hypothèse : l'APTES s'hydrolyse partiellement (eau adsorbée ou résiduelle) et se condense sur les silanols de surface de la silice en laissant des groupes amine propyle ; la pureté et la teneur en eau de l'éthanol ne sont pas données, et plus il contient d'eau, plus la polycondensation en solution (oligomères) est probable. La carboxylation suivante (non décrite) transforme ces amines en acides, ce que l'article ne détaille pas."
   },
   {
    "type": "mecanisme_analyse",
@@ -1238,7 +1319,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZIF@ADH/NAD-MSN/LDH",
-   "text": "Probablement, l'ajout rapide de 2-méthylimidazole déprotone le ligand (faible basicité du milieu) et provoque la nucléation du ZIF-8 autour des enzymes et de MSN-NAD, dont les carboxyles ancrent le Zn2+ ; l'enzyme et la silice sont ainsi englobées par biomimétisme (cristallisation induite par des biomacromolécules). Le rapport Zn/ligand écrit (0,4 mmol pour 0,028 mmol) est très inférieur à celui d'un ZIF-8 usuel."
+   "text": "Hypothèse (minéralisation biomimétique) : les surfaces chargées négativement, carboxylates de MSN-COOH et résidus acides des enzymes, concentrent Zn2+ et le 2-méthylimidazolate, d'où un précurseur amorphe qui peut cristalliser en ZIF-8 autour des enzymes et des MSN si le rapport ligand/zinc est élevé. Avec le rapport écrit (0,028 mmol de ligand pour 0,4 mmol de zinc), on attendrait plutôt un précipité amorphe qu'un ZIF-8. L'article ne donne pas de diffraction des rayons X : la phase ZIF-8 est déduite de la morphologie et de l'infrarouge, elle n'est pas prouvée. En tampon phosphate, la coque peut se dégrader pendant les essais."
   },
   {
    "type": "securite_analyse",
@@ -1253,17 +1334,59 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Quantités à confirmer ou absentes : « 700 mL of APTSES » pour 200 mL d'éthanol et 0,2 g de MSN est vraisemblablement une erreur d'unité (valeur recopiée telle quelle) ; la quantité de NAD+ est « a certain amount » ; la carboxylation de MSN-NH2 en MSN-COOH n'est pas décrite, et la synthèse de MSN est renvoyée à la littérature (réactifs, durées inconnus) ; le solvant des solutions d'acétate de zinc (40 mM) et de 2-méthylimidazole (2,8 mM) n'est pas écrit dans la section 2.3 ; les vitesses d'agitation et de centrifugation, durées de centrifugation, nombre de lavages et conditions de lyophilisation manquent ; le rendement n'est pas donné."
+   "text": "Quantités à confirmer ou absentes : « 700 mL of APTSES » pour 200 mL d'éthanol et 0,2 g de MSN (valeur recopiée telle quelle, voir la voie MSN-NH2) ; la quantité de NAD+ est « a certain amount » ; la carboxylation de MSN-NH2 en MSN-COOH n'est pas décrite, et la synthèse de MSN est renvoyée à la littérature (réactifs, durées inconnus) ; le solvant des solutions d'acétate de zinc (40 mM) et de 2-méthylimidazole (2,8 mM) n'est écrit que dans la section 3.2 (« in aqueous solution ») ; les vitesses d'agitation et de centrifugation, durées de centrifugation, nombre de lavages et conditions de lyophilisation manquent ; le rendement n'est pas donné ; l'origine du marquage des enzymes (rhodamine B, FITC), le ZIF-8 sans enzyme (comparaison BET, MEB, MET) et les enzymes (espèce, isoforme) ne sont pas décrits."
   },
   {
    "type": "limite_reproductibilite",
    "route": "ZIF@ADH/NAD-MSN/LDH",
-   "text": "Le rapport molaire Zn2+ : 2-méthylimidazole écrit (10 mL à 40 mM contre 10 mL à 2,8 mM, soit environ 14:1 en zinc) est inhabituel pour un ZIF-8 ; une erreur de concentration (2,8 M ?) est possible mais l'article ne le dit pas. La note 1 du tableau 1 donne aussi 1 mg d'enzymes au total et 1 mg de MSN-NAD+, contre 1 mg de chaque enzyme et 2 mg de MSN-NAD+ en section 2.3."
+   "text": "Le rapport molaire écrit (10 mL à 40 mM d'acétate de zinc contre 10 mL à 2,8 mM de 2-méthylimidazole, soit 0,40 mmol pour 0,028 mmol, rapport ligand/zinc ≈ 0,07) est très inférieur à celui d'un ZIF-8 (au moins 2) : au plus quelques mg de ZIF-8 pourraient se former, alors que la charge annoncée (40 μg d'enzyme par mg) suppose une quarantaine de mg de composite. Une concentration de 2,8 M (soit 70 fois celle du zinc, rapport de Pan et al. 2011) rendrait les chiffres cohérents ; 160 mM (Liang et al. 2015) est une autre lecture possible ; l'article ne tranche pas."
   },
   {
    "type": "limite_reproductibilite",
    "route": "ZIF@ADH/NAD-MSN/LDH",
-   "text": "Les figures 5, 6A, 6B, 7A et 7B portent des résultats absents du texte (cinétique, séries en température et en pH, recyclage, stockage) : valeurs lues sur les graphiques à 2 chiffres significatifs près. Les figures 1 à 4 (spectres, images, schéma) sont qualitatives et n'ont pas été converties en valeurs. Les conditions de la série en température (pH) et de la série en pH (température) ne sont pas écrites."
+   "text": "La note 1 du tableau 1 donne 1 mg d'enzymes au total et 1 mg de MSN-NAD+ pour les systèmes du tableau, contre 1 mg de chaque enzyme et 2 mg de MSN-NAD+ en section 2.3 ; les branches du tableau 1 ne reprennent donc pas la quantité de MSN-NAD de la voie de base (case non citée), et la répartition du 1 mg entre ADH et LDH pour ZIF@ADH/LDH n'est pas écrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF@ADH/NAD-MSN/LDH",
+   "text": "Les figures 5, 6A, 6B, 7A et 7B portent des résultats absents du texte (cinétique, séries en température et en pH, recyclage, stockage) : valeurs lues sur les graphiques à 2 chiffres significatifs près. Les figures 1 à 4 (spectres, images, schéma) sont qualitatives et n'ont pas été converties en valeurs. Les conditions de la série en température (pH) et de la série en pH (température) ne sont pas écrites. Le texte dit « no significant difference » à pH 6,5, 8,5 et 9, alors que les lettres de la Fig. 6B (a contre b) indiquent une différence entre le matériau et les témoins à pH 6,5 et 8,5."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MSN-NH2",
+   "text": "Quantité d'APTES : « 700 mL » pour 0,2 g de MSN représenterait environ 3 mol, soit près de 2000 fois les silanols disponibles, et le mélange (78 % d'APTES, point d'ébullition ≈ 217 °C) ne refluerait pas à 70–80 °C ; l'unité est presque sûrement le μL (≈ 3 mmol, environ 2 équivalents de silanols). Hypothèse du critique, la valeur de l'article n'est pas corrigée. Les 0,2 g de MSN aminées contre 2 g de MSN-COOH engagées ensuite restent inexpliqués.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF@ADH/NAD-MSN/LDH",
+   "text": "Vocabulaire infrarouge : la bande à 1090 cm–1 attribuée à « Zn–O–Zn » correspond plutôt à l'élongation Si–O–Si de la silice (les auteurs donnent 1100 cm–1 pour MSN), donc à la trace des MSN encapsulées ; les vibrations Zn–N du ZIF-8 sont vers 421 cm–1.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF@ADH/NAD-MSN/LDH",
+   "text": "Porosité incohérente dans l'article : le ZIF-8 est microporeux (isotherme de type I), alors que les auteurs lui donnent des pores de 17–22 nm et une isotherme de type IV, et que le composite à 1118 m2/g est dit de type III, incompatible avec une surface BET élevée. Les données (Tableau S1, Figure S2) sont absentes du dépôt.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF@ADH/NAD-MSN/LDH",
+   "text": "Stabilité du ZIF-8 en tampon phosphate : les essais (PB 100 mM, pH 7,4), le lavage au PBS et le stockage « in PBS » exposent le ZIF-8 à une dégradation connue (Velásquez-Hernández et al. 2019) ; la protection des enzymes et leur confinement ne sont donc pas démontrés (pas de dosage de l'enzyme ni du NAD+ libérés dans le surnageant, ni de DRX après essai).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF@ADH/NAD-MSN/LDH",
+   "text": "Section 3.3 : l'explication des auteurs (l'acétonitrile, plus petit que le DMF, entrerait dans les pores et détruirait l'activité) contredit leurs chiffres, car l'activité gardée est de 76,89 % dans l'acétonitrile et de 27,42 % dans le DMF.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF@ADH/NAD-MSN/LDH",
+   "text": "Microscopie confocale : la résolution (≈ 200–250 nm) ne permet pas de distinguer une enzyme à l'intérieur d'une particule de 400–500 nm d'une enzyme à sa surface ; la rhodamine B n'a pas de groupe réactif et peut s'adsorber sans marquer la LDH ; les couleurs sont inversées entre les Méthodes (rhodamine B = LDH) et les Résultats (rouge = ADH). L'image ne prouve donc pas le confinement.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -1301,7 +1424,7 @@
   },
   {
    "where": "Figure 1 (lignes C, D)",
-   "issue": "Le texte dit que les lignes C et D de la Fig. 1 sont MSN avant et après modification amino, la légende dit C = MSN-COOH et D = MSN. Les bandes à 890, 1100, 3300 et 1720 cm−1 ne sont donc pas rangées sur une voie (MSN-COOH n'a pas de voie)."
+   "issue": "Le texte dit que les lignes C et D de la Fig. 1 sont MSN avant et après modification amino, la légende dit C = MSN-COOH et D = MSN. Les bandes à 1100 cm−1 (Si–O–Si) et 890 cm−1 (Si–C), que le texte donne comme preuve de l'amination, sont rangées sur MSN-NH2 d'après le texte ; les bandes à 3300 et 1720 cm−1 (O–H et C=O de MSN–COOH) et la taille de MSN (70–90 nm) restent sans voie (MSN-COOH et MSN n'en ont pas) et ne sont pas extraites."
   },
   {
    "where": "CLSM (Fig. 3)",
@@ -1309,11 +1432,11 @@
   },
   {
    "where": "Table 1 footnote 1 contre section 2.3",
-   "issue": "La note 1 du tableau 1 dit « The total mass of enzymes in ZIF-8 was 1 mg, and the amount of MSN-NAD+ was 1 mg » tandis que 2.3 donne 1 mg d'ADH, 1 mg de LDH et 2 mg de MSN-NAD+ ; les branches du tableau 1 n'ont pas de variation de quantité (l'article dit que la préparation est « consistent with 2.3 »), la voie de base garde les quantités de 2.3."
+   "issue": "La note 1 du tableau 1 dit « The total mass of enzymes in ZIF-8 was 1 mg, and the amount of MSN-NAD+ was 1 mg » tandis que 2.3 donne 1 mg d'ADH, 1 mg de LDH et 2 mg de MSN-NAD+ ; la contradiction reste littérale. Les branches du tableau 1 (« consistent with 2.3 ») n'héritent donc pas de la quantité de MSN-NAD (case non citée) ; pour ZIF@ADH/LDH la répartition du 1 mg d'enzymes n'est pas écrite, et pour les branches à une seule enzyme l'héritage de 1 mg reste compatible avec la note."
   },
   {
    "where": "ZIF base steps 1–2",
-   "issue": "La section 2.3 ne dit pas dans quel solvant sont les solutions d'acétate de zinc et de 2-méthylimidazole ; la section 3.2 dit « in aqueous solution ». Aucun réactif eau-solvant n'est ajouté ; déclaré non cité. Le rapport 40 mM / 2,8 mM est inhabituel (voir annotation)."
+   "issue": "La section 2.3 ne dit pas dans quel solvant sont les solutions d'acétate de zinc et de 2-méthylimidazole ; la section 3.2 dit que les enzymes sont enrobées « by in-situ polymerization in aqueous solution » : « aqueous solution » est renseigné comme solvant des étapes 1 et 2 avec cette phrase pour citation (le passage décrit le principe de la synthèse, non la préparation des solutions de 2.3). Le rapport 40 mM / 2,8 mM est inhabituel (voir annotation)."
   },
   {
    "where": "Branches du tableau 1 (étape 1 héritée)",
@@ -1325,7 +1448,7 @@
   },
   {
    "where": "Fig. 5 contre texte",
-   "issue": "Le texte donne 124,605 μg/mL d'acide lactique (après trois heures), la courbe de la Fig. 5 est à environ 120 μg/mL à 3 h et 3,5 h ; les deux valeurs sont extraites, la lecture de figure est approximative. Les valeurs 58,850 et 46,235 μg/mL des deux témoins ne sont pas rattachées à un témoin précis (annotation tendance_observee)."
+   "issue": "Le texte donne 124,605 μg/mL d'acide lactique (après trois heures), la courbe de la Fig. 5 est à environ 120 μg/mL à 3 h et 3,5 h ; les deux valeurs sont extraites, la lecture de figure est approximative. Les valeurs 58,850 et 46,235 μg/mL des deux témoins ne sont pas attribuées dans le texte : l'attribution (58,850 = ADH, MSN-NAD, LDH ; 46,235 = ADH, NAD+, LDH) est lue sur la Fig. 5 (≈ 57 et ≈ 45 μg/mL à 3,5 h) et marquée from_figure."
   },
   {
    "where": "Valeurs lues sur figure",
@@ -1333,7 +1456,7 @@
   },
   {
    "where": "Témoins enzymes libres",
-   "issue": "Les groupes « ADH, MSN-NAD, LDH » et « ADH, NAD+, LDH » (Fig. 5, 6, 7) sont des mélanges d'enzymes libres non synthétisés ; ils n'ont pas de voie. Leurs valeurs ne sont pas extraites (seulement les deux concentrations écrites dans le texte, en annotation)."
+   "issue": "Les groupes « ADH, MSN-NAD, LDH » et « ADH, NAD+, LDH » (Fig. 5, 6, 7) sont des mélanges d'enzymes libres non synthétisés ; ils n'ont pas de voie. Seules les deux concentrations écrites dans le texte (58,850 et 46,235 μg/mL) sont extraites, en résultats de la voie de base, avec l'attribution lue sur la Fig. 5."
   },
   {
    "where": "Séries en température et pH (section 2.7.1)",
@@ -1342,6 +1465,14 @@
   {
    "where": "Table 1, lignes 6 à 8",
    "issue": "Les trois dernières lignes du tableau 1 (ADH, LDH, MSN-NAD+ avec éthanol seul, pyruvate seul, ou les deux) concernent le même ZIF que la voie de base : rangées en outcomes de la voie de base. Dans le tableau, « C2H5OHCH3COCOOH » est la juxtaposition des deux substrats (colonne Reactant)."
+  },
+  {
+   "where": "Fig. 6B contre texte (pH 6,5, 8,5 et 9)",
+   "issue": "Le texte dit « no significant difference » entre le matériau et les deux autres traitements à pH 6,5, 8,5 et 9 (p > 0,05), mais les lettres de la Fig. 6B (a pour le matériau, b pour les témoins) indiquent une différence à pH 6,5 et 8,5 ; seul pH 9 porte des lettres identiques. Contradiction de l'article, aucune valeur modifiée."
+  },
+  {
+   "where": "Recyclage (Fig. 7A), premier cycle",
+   "issue": "« The first relative recovery was 93.16% » : sur la Fig. 7A (axe « Recycling Times », 1 à 4) 93 % est la barre du cycle 1 ; la propriété est nommée relative_activity_reuse_cycle_1, en cohérence avec les cycles 2 et 3 lus sur la figure."
   }
  ]
 }

@@ -1,0 +1,585 @@
+{
+ "pmcid": "PMC9000489",
+ "format": 2,
+ "sample_inventory": [
+  {
+   "sample": "S, N-CQDs",
+   "defined_in": "Methods, 3.3.1",
+   "route": "SN-CQDs",
+   "results_in": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Section 2.1",
+    "Section 2.2"
+   ]
+  },
+  {
+   "sample": "MTX tablet sample solution",
+   "defined_in": "Methods, 3.3.3",
+   "route": null,
+   "why": "échantillon de dosage (comprimés commerciaux), pas un matériau synthétisé",
+   "results_in": [
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "Standard addition samples (80 μL of 0.01 mol/L MTX)",
+   "defined_in": "Results, 2.7",
+   "route": null,
+   "why": "échantillons de dosage par ajout dosé, pas un matériau synthétisé",
+   "results_in": [
+    "Table 3"
+   ]
+  },
+  {
+   "sample": "Series pH 4.5–8.5 and S, N-CQDs 50–250 μL",
+   "defined_in": "Results, 2.3",
+   "route": null,
+   "why": "conditions du dosage du MTX, pas des conditions de synthèse",
+   "results_in": [
+    "Fig. 4A",
+    "Fig. 4B"
+   ]
+  },
+  {
+   "sample": "Interferent solutions (ions, sugars, amino acids)",
+   "defined_in": "Results, 2.5",
+   "route": null,
+   "why": "test de sélectivité du dosage, pas un matériau synthétisé",
+   "results_in": [
+    "Fig. 6"
+   ]
+  },
+  {
+   "sample": "Quinine sulfate reference",
+   "defined_in": "Methods, 3.3.2",
+   "route": null,
+   "why": "référence commerciale de rendement quantique, non synthétisée",
+   "results_in": []
+  }
+ ],
+ "routes": [
+  {
+   "label": "SN-CQDs",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "S, N co-doped carbon quantum dots",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": "amorphous carbon",
+    "morphology": "round-shaped quasi-spherical dots, mean diameter 7 nm"
+   },
+   "method": "one-step hydrothermal synthesis from citric acid and thiourea (180 °C, 12 h)",
+   "quote": "A one-step hydrothermal approach was used to synthesize the S, N-CQDs, according to that previously reported in the literature, with modifications",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "citric acid",
+     "formula": "C6H8O7",
+     "role": "precursor",
+     "amount": 0.5764,
+     "unit": "g",
+     "purity": ">99.5% purity",
+     "supplier": "Sinopharm Chemical Reagent Co., Ltd. (Shanghai, China)",
+     "supplier_quote": "Thiourea (>99%) and citric acid (>99.5% purity) were purchased from Sinopharm Chemical Reagent Co., Ltd. (Shanghai, China).",
+     "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C."
+    },
+    {
+     "name": "thiourea",
+     "formula": "CH4N2S",
+     "role": "precursor",
+     "amount": 0.4567,
+     "unit": "g",
+     "purity": ">99%",
+     "supplier": "Sinopharm Chemical Reagent Co., Ltd. (Shanghai, China)",
+     "supplier_quote": "Thiourea (>99%) and citric acid (>99.5% purity) were purchased from Sinopharm Chemical Reagent Co., Ltd. (Shanghai, China).",
+     "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C."
+    },
+    {
+     "name": "ultrapure water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 30,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve citric acid and thiourea in ultrapure water.",
+     "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C.",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 30,
+       "unit": "mL",
+       "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Homogenize the solution by ultrasonication.",
+     "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 20,
+       "unit": "min",
+       "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "power",
+      "frequency",
+      "temperature"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Hydrothermal treatment in a Teflon autoclave.",
+     "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 180,
+       "unit": "°C",
+       "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C."
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon autoclave",
+       "detail": "50 mL",
+       "quote": "The citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) were dissolved in 30 mL ultrapure water, homogenized with ultrasonication for 20 min, then placed in a Teflon autoclave (50 mL) and heated for 12 h at 180 °C."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "fill_fraction",
+      "pressure"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "cool",
+     "description": "Bring the autoclave contents back to room temperature.",
+     "quote": "The samples were then brought to room temperature.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The samples were then brought to room temperature."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "cooling_rate",
+      "duration"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "centrifuge",
+     "description": "Centrifuge the resulting mixture.",
+     "quote": "The resultant mixture was centrifuged for 10 min at 5000 rpm and then purified further via a 0.22 μm filter membrane.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 5000,
+       "unit": "rpm",
+       "quote": "The resultant mixture was centrifuged for 10 min at 5000 rpm and then purified further via a 0.22 μm filter membrane."
+      },
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "The resultant mixture was centrifuged for 10 min at 5000 rpm and then purified further via a 0.22 μm filter membrane."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "fraction_kept"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Purify further through a 0.22 μm filter membrane.",
+     "quote": "The resultant mixture was centrifuged for 10 min at 5000 rpm and then purified further via a 0.22 μm filter membrane.",
+     "parameters": [
+      {
+       "name": "pore_size",
+       "value_num": 0.22,
+       "unit": "μm",
+       "quote": "The resultant mixture was centrifuged for 10 min at 5000 rpm and then purified further via a 0.22 μm filter membrane."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "filter membrane",
+       "detail": "0.22 μm",
+       "quote": "The resultant mixture was centrifuged for 10 min at 5000 rpm and then purified further via a 0.22 μm filter membrane."
+      }
+     ],
+     "not_stated": [
+      "filter_material"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "dialyze",
+     "description": "Dialyze the transparent aqueous solution against water to remove overreacted residue, precursors and side products.",
+     "quote": "Then, the transparent aqueous solution was then subjected to dialysis (Mw = 1000 Da) for 2 days to eliminate the overreacted residue.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "days",
+       "quote": "Then, the transparent aqueous solution was then subjected to dialysis (Mw = 1000 Da) for 2 days to eliminate the overreacted residue."
+      },
+      {
+       "name": "membrane_cutoff",
+       "value_num": 1000,
+       "unit": "Da",
+       "quote": "Then, the transparent aqueous solution was then subjected to dialysis (Mw = 1000 Da) for 2 days to eliminate the overreacted residue."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "dialysis membrane",
+       "detail": "Mw = 1000 Da",
+       "quote": "Then, the transparent aqueous solution was then subjected to dialysis (Mw = 1000 Da) for 2 days to eliminate the overreacted residue."
+      }
+     ],
+     "not_stated": [
+      "dialysis_medium",
+      "dialysis_medium_volume",
+      "water_changes",
+      "membrane_material"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "store",
+     "description": "Store the purified S, N-CQDs solution in a refrigerator.",
+     "quote": "After that, clear and transparent S, N-CQDs were obtained and stored in a refrigerator at 4 °C for future usage.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 4,
+       "unit": "°C",
+       "quote": "After that, clear and transparent S, N-CQDs were obtained and stored in a refrigerator at 4 °C for future usage."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "HRTEM",
+     "result": "homogeneous particle size distribution, round-shaped, mean diameter 7 nm",
+     "instrument": "Tecnai G2 F20, FEI, Hillsboro, OR, USA",
+     "conditions": "200 kV working voltage",
+     "quote": "The synthesized S, N-CQDs had a homogeneous particle size distribution with a mean diameter of 7 nm."
+    },
+    {
+     "technique": "dynamic light scattering (nanoparticle analyzer)",
+     "result": "particle size distribution (Fig. 1B)",
+     "instrument": "Zetasizer Nano ZS 90 Zeta potential analyzer (Malvern, Melvin City, UK)",
+     "conditions": null,
+     "quote": "The morphological properties and microstructure of S, N-CQDs are depicted in Figure 1 using an HRTEM (Figure 1A), a nanoparticle analyzer (Figure 1B), an energy-dispersive X-ray spectrometer (EDS, Figure 1C), and X-ray photoelectron spectroscopy (XPS, Figure 1D)"
+    },
+    {
+     "technique": "EDS",
+     "result": "C 90.3%, O 5.98%, N 2.65%, S 1.07%",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The EDS result showed the C, O, N, and S elemental contents in the synthesized S, N-CQDs were 90.3%, 5.98%, 2.65%, and 1.07%, respectively."
+    },
+    {
+     "technique": "XPS",
+     "result": "four peaks at 169, 285, 400 and 532 eV (S 2p, C 1s, N 1s, O 1s), successful co-doping of S and N",
+     "instrument": "K-Alpha spectrometer (Thermo Fisher Scientific, Waltham, MA, USA)",
+     "conditions": null,
+     "quote": "The XPS presents four peaks at 169, 285, 400, and 532 eV, corresponding to S 2p, C 1s, N 1s and O 1s, respectively."
+    },
+    {
+     "technique": "FTIR",
+     "result": "N-H and O-H stretching at 3184 and 3006 cm−1, C=O at 1650 cm−1, COO− at 1556 and 1405 cm−1, C=S at 1194 cm−1",
+     "instrument": "AVATAR-370 spectrometer (Nicolet, Brookfield, WI, USA)",
+     "conditions": "pressed KBr pellets, 400–4000 cm−1",
+     "quote": "The broad absorption bands at 3184 and 3006 cm−1 were attributed to the N-H and O-H stretching vibrations, respectively, demonstrating the presence of a large number of amino and hydroxyl groups on the surface of S, N-CQDs, which contributed to their hydrophilic properties."
+    },
+    {
+     "technique": "XRD",
+     "result": "amorphous carbon, broad diffraction peak at 2θ = 21.46°",
+     "instrument": "D8 advance (Bruker, Karlsruhe, Germany)",
+     "conditions": null,
+     "quote": "The diffraction peak of amorphous carbon was observed at 2θ = 21.46°, and the crystal structure of S, N-CQDs was determined to be amorphous carbon."
+    },
+    {
+     "technique": "UV–Vis",
+     "result": "absorption peak at 325 nm (n-π* transitions between C-N and C=S bonds)",
+     "instrument": "UV-2501PC spectrophotometer (Shimadzu, Kyoto, Japan)",
+     "conditions": null,
+     "quote": "The UV–Vis spectrum exhibited a distinctive absorption peak at 325 nm, which was caused by n-π* transitions between C-N and C=S bonds, as illustrated in Figure 3A."
+    },
+    {
+     "technique": "fluorescence spectroscopy",
+     "result": "optimum excitation 320 nm and emission 425 nm; emission excitation-dependent between 280 and 370 nm excitation",
+     "instrument": "Hitachi F-7000 spectrophotometer (Tokyo, Japan)",
+     "conditions": "excitation 280–370 nm for the excitation-dependence series",
+     "quote": "The optimum wavelengths for S, N-CQDs excitation, and emission were 320 nm and 425 nm, respectively."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "mean_diameter",
+     "value_num": 7,
+     "unit": "nm",
+     "quote": "The synthesized S, N-CQDs had a homogeneous particle size distribution with a mean diameter of 7 nm."
+    },
+    {
+     "property": "diameter_range",
+     "value_text": "4–8 nm",
+     "quote": "The S, N-CQDs were 4–8 nm in diameter."
+    },
+    {
+     "property": "EDS_C_content",
+     "value_num": 90.3,
+     "unit": "%",
+     "quote": "The EDS result showed the C, O, N, and S elemental contents in the synthesized S, N-CQDs were 90.3%, 5.98%, 2.65%, and 1.07%, respectively."
+    },
+    {
+     "property": "EDS_O_content",
+     "value_num": 5.98,
+     "unit": "%",
+     "quote": "The EDS result showed the C, O, N, and S elemental contents in the synthesized S, N-CQDs were 90.3%, 5.98%, 2.65%, and 1.07%, respectively."
+    },
+    {
+     "property": "EDS_N_content",
+     "value_num": 2.65,
+     "unit": "%",
+     "quote": "The EDS result showed the C, O, N, and S elemental contents in the synthesized S, N-CQDs were 90.3%, 5.98%, 2.65%, and 1.07%, respectively."
+    },
+    {
+     "property": "EDS_S_content",
+     "value_num": 1.07,
+     "unit": "%",
+     "quote": "The EDS result showed the C, O, N, and S elemental contents in the synthesized S, N-CQDs were 90.3%, 5.98%, 2.65%, and 1.07%, respectively."
+    },
+    {
+     "property": "XPS_surface_composition",
+     "from_figure": "Fig. 1D",
+     "value_text": "C 1s ≈ 44 %, N 1s ≈ 17 %, O 1s ≈ 38 %, S 2p ≈ 1.0 % (étiquettes imprimées sur la figure : 44.42 / 16.50 / 38.07 / 1.01 %)",
+     "quote": "Figure 1 (A) HRTEM image of the synthesized S, N-CQDs; (B) S, N-CQDs particle size distribution; (C) Element composition of S, N-CQDs; (D) XPS of S, N-CQDs."
+    },
+    {
+     "property": "XRD_peak_position",
+     "value_num": 21.46,
+     "unit": "°",
+     "quote": "The diffraction peak of amorphous carbon was observed at 2θ = 21.46°, and the crystal structure of S, N-CQDs was determined to be amorphous carbon."
+    },
+    {
+     "property": "UV_absorption_peak",
+     "value_num": 325,
+     "unit": "nm",
+     "quote": "The UV–Vis spectrum exhibited a distinctive absorption peak at 325 nm, which was caused by n-π* transitions between C-N and C=S bonds, as illustrated in Figure 3A."
+    },
+    {
+     "property": "quantum_yield",
+     "value_num": 10.3,
+     "unit": "%",
+     "quote": "The QY of S, N-CQDs was also determined, which was found to be 10.3%."
+    },
+    {
+     "property": "MTX_detection_limit",
+     "value_num": 0.33,
+     "unit": "μmol/L",
+     "quote": "According to Figure 5, S, N-CQDs undergo fluorescence quenching in the presence of MTX at concentrations ranging from 1 to 300 μmol/L under optimal conditions with a limit of detection (LOD) of 0.33 μmol/L (S/N = 3)."
+    },
+    {
+     "property": "MTX_linear_range",
+     "value_text": "1 to 300 μmol/L",
+     "quote": "According to Figure 5, S, N-CQDs undergo fluorescence quenching in the presence of MTX at concentrations ranging from 1 to 300 μmol/L under optimal conditions with a limit of detection (LOD) of 0.33 μmol/L (S/N = 3)."
+    },
+    {
+     "property": "MTX_assay_optimal_pH",
+     "value_num": 6.5,
+     "unit": null,
+     "quote": "Thus, to facilitate the in vivo study, MTX was measured in a PBS buffer solution with a pH of 6.5."
+    },
+    {
+     "property": "MTX_assay_optimal_CQD_volume",
+     "value_num": 200,
+     "unit": "μL",
+     "quote": "As a result, 200 μL S, N-CQDs were determined to be preferred."
+    },
+    {
+     "property": "MTX_assay_fluorescence_vs_pH",
+     "from_figure": "Fig. 4A",
+     "value_text": "intensité ≈ 1200 à pH 4,5, ≈ 1500 à pH 6,5, ≈ 1700 de pH 7 à 8,5 (en présence de MTX 50 μmol/L)",
+     "quote": "Figure 4 (A) Fluorescence response of S, N-CQDs at pH values from 4.5 to 8.5 in the presence of 50 μmol/L MTX; (B) fluorescence response of S, N-CQDs at dosage values from 50 to 250 μL in the presence of 50 μmol/L MTX."
+    },
+    {
+     "property": "MTX_assay_fluorescence_vs_CQD_volume",
+     "from_figure": "Fig. 4B",
+     "value_text": "intensité ≈ 700 (50 μL), ≈ 1700 (100 μL), ≈ 2100 (150 μL), ≈ 1600 (200 μL), ≈ 2500 (250 μL) (en présence de MTX 50 μmol/L)",
+     "quote": "Figure 4 (A) Fluorescence response of S, N-CQDs at pH values from 4.5 to 8.5 in the presence of 50 μmol/L MTX; (B) fluorescence response of S, N-CQDs at dosage values from 50 to 250 μL in the presence of 50 μmol/L MTX."
+    },
+    {
+     "property": "photostability_intensity_retained",
+     "value_num": 95.44,
+     "unit": "%",
+     "quote": "The average fluorescence intensity decreased to 95.44%, with an RSD of just 0.80%, demonstrating that S, N-CQDs exhibit excellent photostability."
+    },
+    {
+     "property": "tablet_MTX_labeled_quantity_average",
+     "value_num": 99,
+     "unit": "%",
+     "quote": "The average labeled quantity was 99%, with an RSD of 1.1%."
+    },
+    {
+     "property": "MTX_standard_addition_recovery_average",
+     "value_num": 94.9,
+     "unit": "%",
+     "quote": "The average recovery rate was 94.9%, with an RSD of 2.13%."
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "water_purity_and_supplier_for_synthesis",
+    "yield",
+    "dialysis_medium",
+    "number_of_water_changes",
+    "autoclave_fill_fraction",
+    "heating_rate"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des points quantiques de carbone co-dopés au soufre et à l'azote (S, N-CQDs) par une seule synthèse hydrothermale : acide citrique et thiourée dissous dans l'eau, traités 12 h à 180 °C, puis centrifugés, filtrés et dialysés. Les points obtenus, de 7 nm en moyenne et à quantum yield de 10,3 %, servent de sonde de fluorescence éteinte par le méthotrexate (MTX), dosé de 1 à 300 μmol/L dans des comprimés.",
+   "quote": "Therefore, utilizing citric acid as a source of carbon and thiourea as a source of nitrogen, we synthesized novel S, N-CQDs through one-step hydrothermal synthesis."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si des CQDs co-dopés S, N, faciles à produire en une étape, peuvent servir de sonde sélective et sensible du méthotrexate pour l'analyse pharmaceutique, par extinction de fluorescence (effet de filtre interne)."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Aucun paramètre de synthèse n'est balayé : une seule composition et un seul traitement thermique sont décrits. Les séries de l'article (pH de 4,5 à 8,5 et volume de CQDs de 50 à 250 μL, Fig. 4 ; interférents, Fig. 6) portent sur le protocole de dosage, pas sur la fabrication des points, et servent à fixer les conditions optimales du capteur ; elles ne donnent donc pas de branches."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "SN-CQDs",
+   "text": "Les auteurs expliquent la formation des CQDs par des interactions entre les groupes amine de la thiourée et les groupes hydroxyle, carboxyle et carbonyle de l'acide citrique, sous haute température et pression ; ils décrivent des liaisons hydrogène, ioniques et covalentes sans écrire de réaction.",
+   "quote": "In the synthesis of S, N-CQDs, the amine group in thiourea can react with hydroxyl groups in citric acid to form hydrogen bond, the amine group can react with carboxyl groups in citric acid to form ionic bond, and the amine group can also react with carbonyl groups to form covalent bonds."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "SN-CQDs",
+   "text": "Hypothèse de chimiste : à 180 °C sous pression autogène, l'acide citrique se déshydrate et se décarboxyle en précurseurs de type citrazinique, tandis que la thiourée se décompose probablement en ammoniac, H2S ou espèces soufrées qui s'incorporent par amidation et thionation. Ces unités polymérisent puis se carbonisent en noyau amorphe de quelques nanomètres, avec des groupes C=S, C-N et COO− en surface, ce qui est cohérent avec l'IR, la DRX amorphe et le XPS rapportés. Le rapport molaire thiourée/acide citrique de 2 (0,006 pour 0,003 en unités de l'article) paraît choisi pour fournir un excès d'azote et de soufre."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "SN-CQDs",
+   "text": "L'article ne cite aucune précaution. L'autoclave scellé à 180 °C est sous pression : le laisser refroidir à température ambiante avant ouverture, ce que l'article indique seulement comme retour à température ambiante. La décomposition de la thiourée peut libérer de l'ammoniac et du H2S, gaz toxiques : ouvrir l'autoclave sous hotte. La thiourée est suspectée cancérogène et toxique pour la reproduction. Le méthotrexate utilisé dans la partie dosage est un cytotoxique tératogène à manipuler avec gants et hotte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les quantités de l'acide citrique et de la thiourée sont données en grammes (0,5764 g et 0,4567 g) mais les mmol écrites (0,003 et 0,006 mmol) sont fausses d'un facteur 1000 : ces masses valent 3,0 et 6,0 mmol, ce que le chimiste doit retenir. Manquent la pureté et le fournisseur de l'eau, la vitesse d'agitation éventuelle, la vitesse de chauffe, le taux de remplissage de l'autoclave (30 mL d'eau pour un autoclave de 50 mL, mais le volume total de solution n'est pas donné), le milieu et le nombre de changements d'eau de la dialyse, et le rendement. Le protocole est dit adapté d'une référence (« with modifications ») sans que les modifications soient détaillées. Aucune annexe n'est citée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SN-CQDs",
+   "text": "Valeurs lues sur figure (précision de lecture environ ±5 %) : Fig. 4A et 4B (intensité de fluorescence en fonction du pH et du volume de CQDs, conditions de dosage) et Fig. 1D (composition XPS, étiquettes imprimées). La Fig. 1B (histogramme de taille) donne un maximum vers 6 nm, le texte annonçant 7 nm en moyenne ; la valeur du texte est retenue.",
+   "quote": "Figure 1 (A) HRTEM image of the synthesized S, N-CQDs; (B) S, N-CQDs particle size distribution; (C) Element composition of S, N-CQDs; (D) XPS of S, N-CQDs."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "SN-CQDs",
+   "ref_id": "B38-molecules-27-02118",
+   "role": "protocole_adapte",
+   "quote": "A one-step hydrothermal approach was used to synthesize the S, N-CQDs, according to that previously reported in the literature, with modifications"
+  },
+  {
+   "route": null,
+   "ref_id": "B24-molecules-27-02118",
+   "role": "autre",
+   "quote": "The fluorescence QY of S, N-CQDs could be determined and calculated following the method reported earlier"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "SN-CQDs, réactifs (méthodes 3.3.1)",
+   "issue": "L'article écrit « citric acid (0.5764 g, 0.003 mmol) and thiourea (0.4567 g, 0.006 mmol) ». Les masses correspondent à 3,0 et 6,0 mmol (192 et 76 g/mol) : les « mmol » écrites sont incohérentes avec les grammes. Les grammes sont extraits comme quantité ; les mmol ne sont pas extraites."
+  },
+  {
+   "where": "SN-CQDs étape 7 (dialyse)",
+   "issue": "Le texte dit deux fois la dialyse (« subjected to dialysis (Mw = 1000 Da) for 2 days » puis « Dialysis was then performed for the solution to eliminate any remaining precursors or side products »). Lecture retenue : une seule dialyse de 2 jours, la seconde phrase reprenant le but ; l'autre lecture est une seconde dialyse de durée non citée."
+  },
+  {
+   "where": "SN-CQDs réactif eau",
+   "issue": "« All analytical measurements were performed using ultrapure water (18.25 MΩ cm) » vise les mesures analytiques, pas la synthèse ; pureté et fournisseur de l'eau de synthèse restent non cités."
+  },
+  {
+   "where": "SN-CQDs étape 6 (ordre centrifugation / filtre)",
+   "issue": "Une seule phrase donne centrifugation puis « purified further via a 0.22 μm filter membrane » : filtration prise comme étape distincte. Le volume traité, la fraction gardée (surnageant) et la matière du filtre ne sont pas cités."
+  },
+  {
+   "where": "Fig. 4A et 4B (valeurs lues sur figure)",
+   "issue": "Lectures approximatives (≈ ±5 %) à partir des courbes ; le texte dit que l'effet d'extinction diminue quand le pH augmente (Fig. 4A, courbe d'intensité croissante) et que 200 μL donne une extinction forte (creux de la courbe 4B à 200 μL, avec 150 μL à ≈ 2100 et 250 μL à ≈ 2500). Les valeurs sont celles des courbes, sans conversion."
+  },
+  {
+   "where": "Fig. 1B et texte, taille",
+   "issue": "Texte : diamètre moyen 7 nm (2.1) ; conclusion : 4–8 nm ; histogramme 1B : maximum vers 6 nm, valeurs de 3 à 11 nm. Les deux valeurs du texte sont extraites telles quelles."
+  },
+  {
+   "where": "Résumé contre section 2.7 et Table 3",
+   "issue": "Le résumé annonce des récupérations de 98–101 % ; la section 2.7 donne une moyenne de 94,9 % (Table 3, avec 98,5 % à la rangée 4 alors que (80,68 − 5,95)/80 donne environ 93 %). Valeur du corps de l'article (94,9 %) extraite."
+  },
+  {
+   "where": "Longueur d'onde d'excitation du dosage",
+   "issue": "Section 2.4 : excitation à 320 nm ; section 3.3.3 : « detected at a 360 nm excitation wavelength ». Contradiction interne du protocole de dosage, non reprise dans les voies."
+  }
+ ]
+}
