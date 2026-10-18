@@ -209,7 +209,14 @@
     }
    ],
    "characterizations": [],
-   "outcomes": [],
+   "outcomes": [
+    {
+     "property": "cesium_oleate_concentration",
+     "value_num": 0.125,
+     "unit": "M",
+     "quote": "the Cs-oleate solution (0.8 mL, 0.125 M in ODE) was quickly injected in"
+    }
+   ],
    "missing_fields": [
     "stirring_speed",
     "vacuum_pressure",
@@ -412,6 +419,12 @@
        "name": "addition_rate",
        "value_text": "quickly injected",
        "quote": "the Cs-oleate solution (0.8 mL, 0.125 M in ODE) was quickly injected in"
+      },
+      {
+       "name": "injected_solution_temperature",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "The Cs-oleate precursor solution was preheated to 120 °C before injection."
       }
      ],
      "equipment": [],
@@ -558,6 +571,13 @@
      "quote": "The improved CsPbBr3 QDs synthesized in this paper are arranged in an orderly manner on the substrate, and show a trend of self-assembly."
     },
     {
+     "technique": "TEM",
+     "result": "QDs made by the general method show a chaotic arrangement, in contrast to the orderly arrangement of the QDs of this work",
+     "instrument": null,
+     "conditions": "comparison sample made by the general method; protocol not given; Figure S2 absent from the deposit",
+     "quote": "compared with the monodisperse CsPbBr3 QDs synthesized by the general method, they show a chaotic arrangement (Figure S2)"
+    },
+    {
      "technique": "XRD",
      "result": "two intense peaks near 2θ = 15° and 30°, (001) and (002) of cubic CsPbBr3; preferred orientation along (001)",
      "instrument": "Bruker D8 ADVANCE diffractometer (Karlsruhe, Germany)",
@@ -603,7 +623,7 @@
      "technique": "photocurrent response",
      "result": "photocurrent density near zero in the dark and a sharp rise on illumination, 30 s light modulation",
      "instrument": "Zennium workstation, Zahner (Kronach, Germany); 405 nm LED, intensity measured with a Newport photometer",
-     "conditions": "0.5 M Na2SO4 electrolyte; three-electrode cell as for EIS",
+     "conditions": "0.5 M Na2SO4 electrolyte; −0.1 V vs. NHE (légende de la figure 4B); three-electrode cell as for EIS",
      "quote": "Remarkably, when the illumination was discontinued, the photocurrent density approached zero, but surged immediately when the light was reinstated after a 30 s interval."
     }
    ],
@@ -651,7 +671,10 @@
     "stirring_speed",
     "centrifuge_speeds_and_durations_except_final",
     "clarified_solution_volume",
-    "pressure_vacuum"
+    "pressure_vacuum",
+    "working_electrode_preparation",
+    "sample_used_for_XRD_XPS",
+    "flask_temperature_before_injection_in_Methods"
    ]
   },
   {
@@ -783,6 +806,11 @@
      "value_num": 464,
      "unit": "nm",
      "quote": "the emission peak positions of PL shift from 494 nm, 484 nm and 474 nm to 464 nm (deep blue light), while the corresponding absorption peak positions shift from 485 nm, 474 nm and 459 nm to 450 nm"
+    },
+    {
+     "property": "emission_color",
+     "value_text": "deep blue light",
+     "quote": "the emission peak positions of PL shift from 494 nm, 484 nm and 474 nm to 464 nm (deep blue light)"
     }
    ]
   },
@@ -804,19 +832,12 @@
      "value_text": "twice as much",
      "parent_value": "0.17 g",
      "quote": "When the molar ratio of Br:Pb = 6:1, ZnBr2 (0.17 g) was required, and when the molar ratio of Br:Pb = 10:1, twice as much was required."
-    },
-    {
-     "parameter": "temperature",
-     "step_order": 3,
-     "value_text": "same reaction temperature",
-     "parent_value": "150 °C",
-     "quote": "it can be found that as the molar ratio of bromine to lead increases from Br: Pb = 6:1 to Br: Pb = 10:1, the sizes of QDs in the system with higher concentrations of Br− ions at the same reaction temperature become smaller."
     }
    ],
    "outcomes": [
     {
      "property": "particle_diameter",
-     "value_text": "smaller than at Br:Pb = 6:1 at the same reaction temperature (values in Figure S1)",
+     "value_text": "at the same reaction temperature become smaller",
      "quote": "it can be found that as the molar ratio of bromine to lead increases from Br: Pb = 6:1 to Br: Pb = 10:1, the sizes of QDs in the system with higher concentrations of Br− ions at the same reaction temperature become smaller."
     }
    ]
@@ -875,7 +896,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "CsPbBr3_150C",
-   "text": "Probablement, Cs2CO3 réagit avec l'acide oléique pour donner l'oléate de césium (Cs2CO3 + 2 HOA → 2 CsOA + H2O + CO2), d'où le séchage sous vide et le chauffage jusqu'à dissolution. L'oléylamine et l'acide oléique solubilisent PbBr2 et jouent le rôle de ligands de surface. À l'injection, la réaction de formation de CsPbBr3 est très rapide, et la température d'injection règle probablement la compétition entre nucléation et croissance : plus froid, moins de croissance, donc des QDs plus petits. Bilan de matière : PbBr2 0,138 g (≈ 0,376 mmol) et ZnBr2 0,17 g (≈ 0,755 mmol) donnent ≈ 2,26 mmol de Br, soit Br:Pb ≈ 6:1 ; avec 0,34 g de ZnBr2, Br:Pb ≈ 10:1. Le césium injecté (0,8 mL à 0,125 M, ≈ 0,1 mmol) est très inférieur au plomb : Pb est en large excès, et le Cs est probablement le réactif limitant. Ces calculs sont de nous, pas de l'article."
+   "text": "Hypothèse : Cs2CO3 réagit avec l'acide oléique pour donner l'oléate de césium (Cs2CO3 + 2 HOA → 2 CsOA + H2O + CO2), d'où le séchage sous vide et le chauffage jusqu'à dissolution. L'oléylamine et l'acide oléique solubilisent PbBr2 et ZnBr2 et jouent le rôle de ligands de surface. À l'injection, CsPbBr3 nucléerait presque instantanément (le césium est limitant) ; la croissance s'arrêterait quand le cristal est en équilibre avec la solution riche en Br−, ce qui fixerait une taille dépendant de l'activité du bromure et de la température (plus petit à froid et à Br:Pb élevé), comme le décrivent Dong et al. 2018 (réf. 38 de l'article) et Atteberry et al. 2024. Le schéma de LaMer invoqué par les auteurs décrit la nucléation éclair mais n'explique pas à lui seul la dépendance en Br−. Bilan de matière : PbBr2 0,138 g (≈ 0,376 mmol) et ZnBr2 0,17 g (≈ 0,755 mmol) donnent ≈ 2,26 mmol de Br, soit Br:Pb ≈ 6,0 ; avec 0,34 g de ZnBr2, Br:Pb ≈ 10,0. Le césium injecté (0,8 mL à 0,125 M, ≈ 0,1 mmol) est très inférieur au plomb (Pb/Cs ≈ 3,8) : Cs est le réactif limitant. Ces calculs et ce mécanisme sont de nous, pas de l'article."
   },
   {
    "type": "mecanisme_analyse",
@@ -885,12 +906,37 @@
   {
    "type": "securite_analyse",
    "route": "CsPbBr3_150C",
-   "text": "L'article ne mentionne aucune précaution. Les sels de plomb (PbBr2) sont toxiques et à manipuler avec gants et hotte ; l'oléylamine est corrosive ; l'injection d'un liquide à 90–150 °C sous azote dans un ballon à trois cols demande une montée en pression maîtrisée et une protection contre les projections ; l'acétone est inflammable ; les poudres nanométriques de pérovskite au plomb ne doivent pas être inhalées et les déchets sont à traiter comme déchets de plomb."
+   "text": "L'article ne mentionne aucune précaution. Les sels de plomb (PbBr2) sont toxiques et à manipuler avec gants et hotte ; ZnBr2 et l'oléylamine sont corrosifs ; l'injection rapide d'une solution à 120 °C dans un ballon à 90–150 °C sous azote demande une protection contre les projections et les surpressions ; l'acétone et l'hexane sont inflammables ; les poudres nanométriques de pérovskite au plomb ne doivent pas être inhalées et les déchets plombifères sont à collecter séparément."
   },
   {
    "type": "securite_analyse",
    "route": "CsOA_precursor",
    "text": "Chauffage d'un flacon sous vide puis sous azote à 120–140 °C avec dégagement de CO2 : prévoir une évacuation du gaz et utiliser une verrerie intacte sous vide. L'octadécène chaud et l'acide oléique sont à manipuler avec gants et lunettes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_150C",
+   "text": "Les incertitudes de taille (± 0,05 à 0,1 nm, soit 1 à 3 % du diamètre) ne peuvent guère être des écarts types de distribution : les meilleurs lots publiés de CsPbBr3 de 5 nm sont à ≈ 7,5 % (Kovalenko et al. 2023, ACS Nano, PMC9933619), et 0,05 nm est inférieur au dixième d'une maille. Il s'agit probablement d'erreurs-types de la moyenne ; l'argument « ultra-high uniformity » et l'auto-assemblage qui en découle ne sont pas établis par ces chiffres."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_150C",
+   "text": "Le mécanisme de LaMer invoqué par les auteurs n'est pas démontré : Dong et al. 2018 (réf. 38, citée par l'article) décrivent une taille fixée par un équilibre thermodynamique avec les ions Br− en excès et la température. Le témoin est à variables liées : passer de Br:Pb = 6:1 à 10:1 double aussi Zn2+, et la « méthode générale » de comparaison (figure S2, protocole non décrit) supprime à la fois Br− et Zn2+. Le zinc n'est pas dosé (XPS Zn 2p, ICP) : un dopage partiel n'est pas exclu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_150C",
+   "text": "Caractérisation : 7 nm est donné comme « rayon de Bohr » alors que c'est le diamètre de Bohr de l'exciton (rayon ≈ 3,5 nm). Deux raies {100} sur 10–60° en DRX ne prouvent ni auto-assemblage (qui donnerait des réflexions aux petits angles) ni phase cubique, et la fiche citée est l'ICSD 029073 dans le texte mais 01-075-0412 sur la figure. L'appareil XPS est décrit comme un Kratos AXIS Supra « featuring a Thermo Scientific Kα » traité avec Avantage (Thermo), description contradictoire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_150C",
+   "text": "Purification et essais : le surnageant reste ≈ 3 h à l'air dans un milieu riche en PbBr2, ZnBr2 et ligands sans contrôle avant/après. Les mesures de photocourant sont faites dans Na2SO4 aqueux, milieu où CsPbBr3 se dégrade, avec une électrode non décrite et des photocourants très faibles (≈ 0,3 µA cm−2, en baisse de 0,35 à 0,28 sur six cycles) ; la conclusion sur la photocatalyse n'est pas soutenue sans caractérisation de l'électrode après essai."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_Br10",
+   "text": "Branche invérifiable ici : la figure S1 est absente, aucune taille ni température n'est citée. Br:Pb passe de 6,0 à 10,0 d'après la stœchiométrie (0,34 g de ZnBr2), mais Zn2+ double en même temps, donc l'effet n'est pas attribuable au seul bromure."
   }
  ],
  "method_sources": [],
@@ -900,12 +946,12 @@
    "issue": "Les Méthodes disent seulement « the temperature was set to a different temperature » ; les valeurs 150, 130, 110 et 90 °C viennent des Résultats et de la figure 1 (A–D, ordre décroissant). Température de la voie de base fixée à 150 °C (premier échantillon cité) ; la température de réaction pendant les 30 s n'est pas donnée séparément, elle est supposée égale à la température d'injection (déclarée non citée à l'étape 5)."
   },
   {
-   "where": "CsPbBr3_150C, ZnBr2 0,17 g et rapport Br:Pb de la figure 1",
-   "issue": "Le texte donne 0,17 g de ZnBr2 pour Br:Pb = 6:1 et le double pour 10:1, et compare la figure S1 à la figure 1 en passant de 6:1 à 10:1 : la figure 1 correspond donc probablement à 6:1, mais l'article ne le dit pas explicitement. Lecture retenue : 6:1 pour la série en température."
+   "where": "CsPbBr3_150C, réactif zinc bromide 0,17 g (rapport Br:Pb de la figure 1)",
+   "issue": "Déduction : l'article ne dit jamais que la figure 1 correspond à Br:Pb = 6:1 (il écrit seulement « comparing Figure S1 and Figure 1 … from Br: Pb = 6:1 to Br: Pb = 10:1 ») ni que les 0,17 g de ZnBr2 concernent cette série. La citation du réactif est la phrase des Méthodes qui donne 0,17 g pour 6:1 ; son rattachement à la voie de base est une lecture, pas une citation directe. Elle est cohérente avec le bilan de matière (0,138 g PbBr2 et 0,17 g ZnBr2 donnent Br:Pb ≈ 6,0 ; 0,34 g donnent ≈ 10,0), ce qui la rend plausible sans la prouver."
   },
   {
    "where": "CsPbBr3_Br10",
-   "issue": "La série à Br:Pb = 10:1 (figure S1, absente) est résumée en une branche : les températures sont « the same reaction temperature » que la figure 1, sans valeurs. Les tailles ne sont pas données dans le texte, seulement « smaller »."
+   "issue": "La série à Br:Pb = 10:1 relève de la figure S1, absente du dépôt : ses températures ne sont pas citées et le texte ne donne aucune taille, seulement « smaller ». Aucune variation de température n'est portée sur cette branche (« at the same reaction temperature » ne désigne pas un échantillon à 150 °C seulement) ; la masse de ZnBr2 est « twice as much » (0,17 g × 2 non écrit par l'article)."
   },
   {
    "where": "CsOA_precursor étape 3",
@@ -926,6 +972,10 @@
   {
    "where": "Électrochimie",
    "issue": "L'électrode de travail « sample-based » n'est pas décrite (pas de voie device) ; EIS et photocurrent ne donnent aucune valeur numérique dans le texte."
+  },
+  {
+   "where": "CsPbBr3_150C, électrode et échantillons de caractérisation",
+   "issue": "L'électrode de travail « sample-based » et l'échantillon mesuré en DRX et XPS ne sont pas décrits ; la température du ballon avant injection n'est donnée que par « set to a different temperature » dans les Méthodes."
   }
  ]
 }
