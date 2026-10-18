@@ -650,9 +650,10 @@
     {
      "technique": "SEM",
      "result": "microparticles of 1 to 5 micrometers in all samples; flower-like or spherical morphologies depending on conditions",
-     "instrument": null,
-     "conditions": null,
-     "quote": "As may be seen from Figs. 6 and 7 the obtained samples contain relatively uniform microparticles of size lying in the apparent range of 1 to 5 micrometers"
+     "instrument": "WUT_SU8000",
+     "conditions": "5.0 kV, détecteur SE(U), distance de travail 5.2–6.2 mm ; x20.0k (Fig. 6) ; x5.00k et x3.00k (Fig. 7)",
+     "quote": "As may be seen from Figs. 6 and 7 the obtained samples contain relatively uniform microparticles of size lying in the apparent range of 1 to 5 micrometers",
+     "from_figure": "Fig. 6 et 7 (bandeau des images)"
     },
     {
      "technique": "EDS",
@@ -681,6 +682,12 @@
      "property": "percentage_yield",
      "value_num": 91.39,
      "unit": "%",
+     "quote": "1 | 302 | 276 | 91.39 | 9.89 | Yes"
+    },
+    {
+     "property": "theoretical_yield",
+     "value_num": 302,
+     "unit": "mg",
      "quote": "1 | 302 | 276 | 91.39 | 9.89 | Yes"
     },
     {
@@ -732,12 +739,17 @@
      "value_text": "SnS2 and SnS; broad peak at 315 cm-1 (Fig. 5b,c), peak at 96 cm-1 (Fig. 5a)",
      "from_figure": "Fig. 5 (summary table)",
      "quote": "Additionally, at the bottom section, a summary table of the identified crystalline phases from Raman spectra."
+    },
+    {
+     "property": "XRD_peak_indexing",
+     "value_text": "SnS: (2 0 0), (1 2 0), (1 0 2), JCPDS 33-1735 ; SnS2: (1 1 0), (1 0 1), (0 1 2), JCPDS 22-0951",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Powder X-ray diffractograms of obtained samples."
     }
    ],
    "missing_fields": [
     "purification_details",
-    "sonocatalytic_test_conditions",
-    "SEM_instrument"
+    "sonocatalytic_test_conditions"
    ]
   },
   {
@@ -794,6 +806,12 @@
      "property": "percentage_yield",
      "value_num": 75.5,
      "unit": "%",
+     "quote": "2 | 302 | 228 | 75.50 | 8.17 | Yes"
+    },
+    {
+     "property": "theoretical_yield",
+     "value_num": 302,
+     "unit": "mg",
      "quote": "2 | 302 | 228 | 75.50 | 8.17 | Yes"
     },
     {
@@ -888,6 +906,12 @@
      "quote": "5 | 366 | 270 | 73.77 | 9.68 | Yes"
     },
     {
+     "property": "theoretical_yield",
+     "value_num": 366,
+     "unit": "mg",
+     "quote": "5 | 366 | 270 | 73.77 | 9.68 | Yes"
+    },
+    {
      "property": "actual_yield",
      "value_num": 270,
      "unit": "mg",
@@ -979,6 +1003,12 @@
      "quote": "6 | 366 | 126 | 34.43 | 4.52 | Yes"
     },
     {
+     "property": "theoretical_yield",
+     "value_num": 366,
+     "unit": "mg",
+     "quote": "6 | 366 | 126 | 34.43 | 4.52 | Yes"
+    },
+    {
      "property": "actual_yield",
      "value_num": 126,
      "unit": "mg",
@@ -1047,6 +1077,12 @@
      "value_text": "absent",
      "parent_value": "20 mg",
      "quote": "3 | 452 | – | 376 | MeOH | SnS | No"
+    },
+    {
+     "parameter": "methanol (first 10 mL portion)",
+     "value_text": "absent",
+     "parent_value": "methanol",
+     "quote": "3 | 452 | – | 376 | MeOH | SnS | No"
     }
    ],
    "reagents": [],
@@ -1055,6 +1091,12 @@
      "property": "percentage_yield",
      "value_num": 75.17,
      "unit": "%",
+     "quote": "3 | 302 | 227 | 75.17 | 8.14 | No"
+    },
+    {
+     "property": "theoretical_yield",
+     "value_num": 302,
+     "unit": "mg",
      "quote": "3 | 302 | 227 | 75.17 | 8.14 | No"
     },
     {
@@ -1251,6 +1293,9 @@
      ],
      "order": 6
     }
+   ],
+   "not_stated": [
+    "solvent_volume_without_chalcone"
    ]
   },
   {
@@ -1266,12 +1311,6 @@
    "quote": "4 | 452 | – | 376 | EtOH | SnS | No",
    "variations": [
     {
-     "parameter": "methanol (first 10 mL portion)",
-     "value_text": "replaced by ethanol",
-     "parent_value": "methanol",
-     "quote": "4 | 452 | – | 376 | EtOH | SnS | No"
-    },
-    {
      "parameter": "methanol (second 10 mL portion)",
      "value_text": "replaced by ethanol",
      "parent_value": "methanol",
@@ -1279,17 +1318,6 @@
     }
    ],
    "reagents": [
-    {
-     "name": "ethanol (first 10 mL portion)",
-     "formula": "C2H5OH",
-     "role": "solvent",
-     "quote": "First, 20 mg of synthesized chalcone (1,5-bis-(4-dimethylamino-phenyl)-penta-1,4-dien-3-one) were placed in 10 mL of corresponding solvent and stirred for 10 min to dissolution.",
-     "amount": 10,
-     "unit": "mL",
-     "purity": "analytical grade",
-     "supplier": "POCH",
-     "supplier_quote": "All chemicals used in this study were of analytical grade (producer: POCH)."
-    },
     {
      "name": "ethanol (second 10 mL portion)",
      "formula": "C2H5OH",
@@ -1307,6 +1335,12 @@
      "property": "percentage_yield",
      "value_num": 40.4,
      "unit": "%",
+     "quote": "4 | 302 | 122 | 40.40 | 4.37 | No"
+    },
+    {
+     "property": "theoretical_yield",
+     "value_num": 302,
+     "unit": "mg",
      "quote": "4 | 302 | 122 | 40.40 | 4.37 | No"
     },
     {
@@ -1358,7 +1392,20 @@
      "value_text": "SnS2; distinct broad peak at 315 cm-1 (Fig. 5a,b,c)",
      "from_figure": "Fig. 5 (summary table)",
      "quote": "Additionally, at the bottom section, a summary table of the identified crystalline phases from Raman spectra."
+    },
+    {
+     "property": "FT-IR_Sn-S_bands",
+     "value_text": "The bands related to Sn-S bond (range of 1000–1300 cm− 1) are especially pronounced",
+     "quote": "The bands related to Sn-S bond (range of 1000–1300 cm− 1) are especially pronounced in sample obtained from SnCl2 in ethanol,"
+    },
+    {
+     "property": "FT-IR_solvent_bands",
+     "value_text": "peaks corresponding to C-H and C-C bonds, and –OH groups (bands at 1400, 1600 and 3000–3500 cm− 1, respectively)",
+     "quote": "They show the occurrence of trace amounts of solvents that were used in syntheses and purification (C2H5OH) what is evidenced by peaks corresponding to C-H and C-C bonds, and –OH groups (bands at 1400, 1600 and 3000–3500 cm− 1, respectively)"
     }
+   ],
+   "not_stated": [
+    "solvent_volume_without_chalcone"
    ]
   },
   {
@@ -1398,6 +1445,12 @@
      "property": "percentage_yield",
      "value_num": 63.93,
      "unit": "%",
+     "quote": "7 | 366 | 234 | 63.93 | 8.39 | No"
+    },
+    {
+     "property": "theoretical_yield",
+     "value_num": 366,
+     "unit": "mg",
      "quote": "7 | 366 | 234 | 63.93 | 8.39 | No"
     },
     {
@@ -1450,6 +1503,9 @@
      "from_figure": "Fig. 5 (summary table)",
      "quote": "Additionally, at the bottom section, a summary table of the identified crystalline phases from Raman spectra."
     }
+   ],
+   "not_stated": [
+    "solvent_volume_without_chalcone"
    ]
   },
   {
@@ -1465,12 +1521,6 @@
    "quote": "8 | – | 701 | 376 | EtOH | SnS2 | No",
    "variations": [
     {
-     "parameter": "methanol (first 10 mL portion)",
-     "value_text": "replaced by ethanol",
-     "parent_value": "methanol",
-     "quote": "8 | – | 701 | 376 | EtOH | SnS2 | No"
-    },
-    {
      "parameter": "methanol (second 10 mL portion)",
      "value_text": "replaced by ethanol",
      "parent_value": "methanol",
@@ -1478,17 +1528,6 @@
     }
    ],
    "reagents": [
-    {
-     "name": "ethanol (first 10 mL portion)",
-     "formula": "C2H5OH",
-     "role": "solvent",
-     "quote": "First, 20 mg of synthesized chalcone (1,5-bis-(4-dimethylamino-phenyl)-penta-1,4-dien-3-one) were placed in 10 mL of corresponding solvent and stirred for 10 min to dissolution.",
-     "amount": 10,
-     "unit": "mL",
-     "purity": "analytical grade",
-     "supplier": "POCH",
-     "supplier_quote": "All chemicals used in this study were of analytical grade (producer: POCH)."
-    },
     {
      "name": "ethanol (second 10 mL portion)",
      "formula": "C2H5OH",
@@ -1506,6 +1545,12 @@
      "property": "percentage_yield",
      "value_num": 7.65,
      "unit": "%",
+     "quote": "8 | 366 | 28 | 7.65 | 1.00 | No"
+    },
+    {
+     "property": "theoretical_yield",
+     "value_num": 366,
+     "unit": "mg",
      "quote": "8 | 366 | 28 | 7.65 | 1.00 | No"
     },
     {
@@ -1558,6 +1603,9 @@
      "from_figure": "Fig. 5 (summary table)",
      "quote": "Additionally, at the bottom section, a summary table of the identified crystalline phases from Raman spectra."
     }
+   ],
+   "not_stated": [
+    "solvent_volume_without_chalcone"
    ]
   }
  ],
@@ -1576,7 +1624,7 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Le plan est factoriel complet 2 × 2 × 2 (précurseur SnCl2 ou SnCl4, solvant méthanol ou éthanol, avec ou sans chalcone), soit huit essais décrits par la table 1. Le précurseur détermine le produit visé (SnS depuis Sn(II), SnS2 depuis Sn(IV)), le solvant fait varier le rendement sonochimique et la morphologie, et la chalcone sert d'additif organique de fonctionnalisation de surface, choisie pour sa solubilité dans les alcools.",
+   "text": "Le plan est factoriel complet 2 × 2 × 2 (précurseur SnCl2 ou SnCl4, solvant méthanol ou éthanol, avec ou sans chalcone), soit huit essais décrits par la table 1. Le précurseur détermine le produit visé (SnS depuis Sn(II), SnS2 depuis Sn(IV)). Le choix des solvants est motivé par la bonne solubilité de la chalcone dans les alcools et par l'absence de travaux antérieurs en méthanol ; la chalcone elle-même est choisie comme colorant additif pour son grand système de doubles liaisons conjuguées, sa couleur jaune-orangé intense et ses groupes amino, qui pourraient permettre de modifier la surface du matériau.",
    "quote": "The main rationale behind choice of solvents was the very good solubility of chalcone in alcohols."
   },
   {
@@ -1611,7 +1659,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Sample 1",
-   "text": "Probablement, la thioacétamide s'hydrolyse dans l'alcool chaud localement (points chauds de cavitation) en libérant H2S ou S2−, qui précipite l'étain. La stœchiométrie est cohérente : 452 mg de SnCl2·2H2O font environ 2,00 mmol, 701 mg de SnCl4·5H2O environ 2,00 mmol et 376 mg de thioacétamide environ 5,0 mmol, soit 2,5 équivalents de soufre, un excès par rapport aux rendements théoriques de 302 mg (SnS) et 366 mg (SnS2) de la table 2. Le SnS2 obtenu depuis SnCl2 s'explique probablement par l'oxydation de Sn(II) par les radicaux de la cavitation ou par l'air, d'où des produits SnS2 même quand SnS était visé. L'effet de la chalcone (rendements plus élevés) pourrait venir d'une nucléation facilitée par ses groupes amine et de la stabilisation des particules, sans preuve dans l'article."
+   "text": "Hypothèse : la thioacétamide s'hydrolyse dans l'alcool acide (eau d'hydratation du sel, HCl formé, échauffement et points chauds de cavitation) en H2S/HS−, qui précipite l'étain. La stœchiométrie est cohérente : 452 mg de SnCl2·2H2O font environ 2,00 mmol, 701 mg de SnCl4·5H2O environ 2,00 mmol et 376 mg de thioacétamide environ 5,0 mmol, soit 2,5 équivalents de soufre, un excès par rapport aux rendements théoriques de 302 mg (SnS) et 366 mg (SnS2) de la table 2. Le SnS2 obtenu depuis SnCl2 exige l'oxydation de Sn(II) en Sn(IV) ; l'article ne nomme aucun oxydant (air dissous ou entrant, espèces de cavitation : non démontré). La décoloration du surnageant n'établit pas que la chalcone est consommée : l'HCl libéré (≈ 0,2 mol/L à précipitation complète) protone ses groupes diméthylamino et éteint la bande de transfert de charge jaune, et une addition de H2S sur la diénone est possible ; un greffage sur le sulfure n'est pas démontré. L'effet de la chalcone sur le rendement reste sans explication établie."
   },
   {
    "type": "securite_auteurs",
@@ -1633,6 +1681,31 @@
    "type": "securite_analyse",
    "route": "Chalcone_dye",
    "text": "La soude est corrosive (gants, lunettes), l'acétone et le méthanol sont inflammables, et le méthanol est toxique ; l'évaporation libre du solvant sans hotte (non précisée) expose à ses vapeurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Sample 1",
+   "text": "Les rendements des essais 1 à 4 (91,39 ; 75,50 ; 75,17 ; 40,40 %) sont rapportés à 302 mg de SnS alors que les produits sont surtout du SnS2 (366 mg théoriques pour 2,00 mmol d'étain) ; rapportés à 366 mg, ils vaudraient environ 75,4 ; 62,3 ; 62,0 et 33,3 %, ce qui change la comparaison avec les essais 5 à 8. Par ailleurs, la masse de 20 mg de chalcone, probablement incorporée au produit, peut représenter 41 % de l'écart de masse entre les essais 1 et 3 et 56 % de celui entre 5 et 7 : « la chalcone augmente le rendement » n'est établi sans réserve que dans l'éthanol."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Sample 1",
+   "text": "L'« efficacité sonochimique » du tableau 2 est la masse récoltée divisée par la densité de puissance acoustique de 27,9 W/L (276/27,9 = 9,89) : l'unité réelle est le mg·L/W et non le mg/W, et ce n'est pas un rendement par énergie reçue ; la comparaison avec des valeurs de la littérature n'a de sens que si le même calcul a été fait."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Sample 1",
+   "text": "Les bandes FT-IR attribuées à la liaison Sn–S à 1000–1300 cm− 1 sont physiquement impossibles : une élongation Sn–S se situe vers 200–370 cm− 1, hors de la plage d'une pastille de KBr. Les bandes observées relèvent plus probablement du solvant, de sulfates ou de matière organique ; seul le Raman (pic vers 315 cm− 1) fournit une preuve vibrationnelle de SnS2."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les gaps de Tauc (1,94 à 4,05 eV) sont présentés comme élargis par confinement quantique, ce que l'article contredit : l'échantillon 8 (1,94 eV) est sous le gap massif de SnS2 donné par les auteurs (≈ 2,4 eV), et l'échantillon 3, le plus riche en SnS et aux pics de DRX les plus fins, donne 2,49 eV pour un SnS massif à ≈ 1,3 eV. Aucune taille de cristallite (Scherrer, MET) n'est donnée, les mesures portent sur des suspensions éthanoliques diffusantes et les échantillons avec chalcone contiennent un chromophore organique ; ce sont des seuils d'absorption apparents, pas des gaps de SnS2 ou de SnS confinés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Sample 1",
+   "text": "Ni la température du bain pendant 120 min (sans refroidissement indiqué ; le méthanol bout à 65 °C), ni la fermeture des flacons ou l'atmosphère, ni la teneur en eau des alcools ne sont donnés, alors qu'elles gouvernent probablement l'oxydation de Sn(II) en Sn(IV) et l'hydrolyse de la thioacétamide."
   }
  ],
  "method_sources": [
@@ -1670,7 +1743,7 @@
  "doubts": [
   {
    "where": "Samples 3, 4, 7, 8 (sans chalcone), protocole",
-   "issue": "L'article décrit le protocole avec la chalcone (« First, 20 mg of synthesized chalcone ... ») et ne dit pas comment les essais sans chalcone ont été faits. Lecture retenue : mêmes étapes sans la dissolution de la chalcone (Sample 3 a ses propres étapes, sans l'étape 1 du parent) ; mais le premier volume de 10 mL de solvant est hérité du parent alors qu'on ne sait pas s'il est ajouté sans chalcone."
+   "issue": "L'article décrit le protocole avec la chalcone (« First, 20 mg of synthesized chalcone ... ») et ne dit pas comment les essais sans chalcone ont été faits. Lecture retenue : mêmes étapes sans la dissolution de la chalcone (Sample 3 a ses propres étapes, sans l'étape 1 du parent). Le premier lot de 10 mL de solvant, cité seulement pour la dissolution de la chalcone, n'est pas repris pour les essais 3, 4, 7 et 8 (variation « absent » sur Sample 3, réactif retiré de Samples 4 et 8) : on ne sait pas si le volume de solvant est de 10 mL ou de 20 mL sans chalcone (case solvent_volume_without_chalcone non citée)."
   },
   {
    "where": "Samples 1–4 (produit visé SnS)",
@@ -1694,11 +1767,27 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Figure 5 (tableau de synthèse Raman, huit lignes) lue sur l'image : valeurs qualitatives (phase, position des pics), pas de mesure numérique. Les figures 3 (XRD) et 8 (gap contre décoloration) ont été ouvertes sans en tirer de valeur nouvelle (la figure 8 redessine les tableaux 4 et 5) ; les images MEB (figures 6 et 7) n'ont pas été ouvertes : la morphologie est prise du texte, sans taille mesurée par échantillon."
+   "issue": "Figure 5 (tableau de synthèse Raman, huit lignes) lue sur l'image : valeurs qualitatives (phase, position des pics), pas de mesure numérique. Figure 3 (XRD) lue pour les indexations (hkl) et les fiches JCPDS écrites sur l'image, absentes du texte. Les bandeaux des images MEB (Fig. 6a, 6b, 7a, 7b) sont lus pour l'instrument et les conditions ; la morphologie reste prise du texte, sans taille mesurée par échantillon. La figure 8 redessine les tableaux 4 et 5 : aucune valeur nouvelle."
   },
   {
    "where": "Purification (étape 7 de Sample 1)",
    "issue": "Seule la phrase de renvoi (« adopted from Matyszczak et al. ») et l'usage d'éthanol dénaturé sont écrits ; la méthode de séparation, le nombre de lavages et le séchage sont déclarés non cités."
+  },
+  {
+   "where": "Sample 1, MEB (instrument et conditions)",
+   "issue": "Le texte renvoie le MEB à Matyszczak et al. sans nommer l'appareil. Instrument (WUT_SU8000), tension (5.0 kV), détecteur (SE(U)), distance de travail (5.2–6.2 mm) et grossissements (x20.0k pour la Fig. 6, x5.00k et x3.00k pour la Fig. 7) sont lus sur le bandeau des images de corpus/fig, pas dans le texte."
+  },
+  {
+   "where": "Sample 4, FT-IR (bandes Sn-S et solvant)",
+   "issue": "Le texte dit que les bandes Sn-S (1000–1300 cm− 1) sont « especially pronounced in sample obtained from SnCl2 in ethanol », dans un paragraphe sur les échantillons non modifiés : rattaché à Sample 4 (SnCl2, éthanol, sans chalcone) par ce contexte, la phrase ne précisant pas l'absence de chalcone. Les bandes du solvant (1400, 1600, 3000–3500 cm− 1) sont dites pour les échantillons non modifiés en général et ne sont enregistrées que sous Sample 4."
+  },
+  {
+   "where": "Sample 1, indexation XRD",
+   "issue": "Les plans (hkl) et les fiches JCPDS (SnS 33-1735 ; SnS2 22-0951) sont lus sur la figure 3 ; le texte ne donne que les angles 2θ approximatifs (28.5°, 33°, 51° pour SnS2 ; 31°, 32°, 38.4° pour SnS)."
+  },
+  {
+   "where": "Table 2, rendement théorique",
+   "issue": "La table 2 donne 302 mg (SnS) pour les réactions 1 à 4 et 366 mg (SnS2) pour les réactions 5 à 8 comme rendement théorique ; valeurs reprises telles quelles dans les résultats. Voir l'annotation limite_reproductibilite sur la base de calcul des essais 1 à 4."
   }
  ]
 }
