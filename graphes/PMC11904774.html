@@ -1,0 +1,133 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11904774</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11904774 — Green synthesis of carbon quantum dots from nutshells for enhanced performance in dye-sensitized solar cells.</h1>
+<h2>Voie : CQD_2.5_180_12h</h2>
+<pre class="mermaid">flowchart LR
+  R14036([&quot;pecan nutshell (ground, 200 mesh)&lt;br/&gt;10 g&quot;]):::reactif
+  R14036 --&gt;|&quot;precursor&quot;| S16769
+  R14037([&quot;hydrogen peroxide, 30 wt% stock solution&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14037 --&gt;|&quot;oxidant&quot;| S16769
+  R14038([&quot;H2O2 working solution (2.5% in the base rout…&lt;br/&gt;1.5 L&quot;]):::reactif
+  R14038 --&gt;|&quot;intermediate&quot;| S16769
+  R14039([&quot;water (dilution of H2O2)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14039 --&gt;|&quot;solvent&quot;| S16769
+  R14040([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14040 --&gt;|&quot;gas&quot;| S16769
+  S16769[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;particle_size : 74 μm&lt;br/&gt;sieve_mesh : 200 mesh&quot;]:::etape
+  S16769 --&gt; S16770
+  S16770[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S16770 --&gt; S16771
+  S16771[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S16771 --&gt; S16772
+  S16772[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;concentration : 2.5 %&lt;br/&gt;volume : 1.5 L&quot;]:::etape
+  S16772 --&gt; S16773
+  S16773[&quot;&lt;b&gt;5. purge&lt;/b&gt;&lt;br/&gt;gas_flow : 1 L min−1&lt;br/&gt;duration : 30 minutes&quot;]:::etape
+  S16773 --&gt; S16774
+  S16774[&quot;&lt;b&gt;6. heat&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : 12 hours&quot;]:::etape
+  S16774 --&gt; S16775
+  S16775[&quot;&lt;b&gt;7. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.45 μm&quot;]:::etape
+  S16775 --&gt; S16776
+  S16776[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 24 hours&quot;]:::etape
+  S16776 --&gt; M
+  M{{&quot;carbon quantum dots from pecan nutshell&lt;br/&gt;&quot;}}:::materiau
+  O67119[&quot;carbon_in_residue : 21.79 %&quot;]:::resultat
+  M -.-&gt; O67119
+  O67120[&quot;carbon_in_solution : 31.15 %&quot;]:::resultat
+  M -.-&gt; O67120
+  O67121[&quot;carbon_in_gas : 38.05 %&quot;]:::resultat
+  M -.-&gt; O67121
+  O67122[&quot;cqd_average_diameter : 3 nm&quot;]:::resultat
+  M -.-&gt; O67122
+  O67123[&quot;cqd_size_range : 2 to 6 nm&quot;]:::resultat
+  M -.-&gt; O67123
+  O67124[&quot;cqd_shape : spherical&quot;]:::resultat
+  M -.-&gt; O67124
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10919{{&quot;CQD_2.5_180_12h&quot;}}:::materiau
+  B10920[&quot;CQD_H2O2_1.5&quot;]:::etape
+  B10919 --&gt;|&quot;concentration = 1.5 %&quot;| B10920
+  B10921[&quot;CQD_H2O2_2.0&quot;]:::etape
+  B10919 --&gt;|&quot;concentration = 2 %&quot;| B10921
+  B10922[&quot;CQD_H2O2_3.0&quot;]:::etape
+  B10919 --&gt;|&quot;concentration = 3 %&quot;| B10922
+  B10923[&quot;CQD_H2O2_3.5&quot;]:::etape
+  B10919 --&gt;|&quot;concentration = 3.5 %&quot;| B10923
+  B10924[&quot;CQD_T_90&quot;]:::etape
+  B10919 --&gt;|&quot;temperature = 90 °C&quot;| B10924
+  B10925[&quot;CQD_T_120&quot;]:::etape
+  B10919 --&gt;|&quot;temperature = 120 °C&quot;| B10925
+  B10926[&quot;CQD_T_150&quot;]:::etape
+  B10919 --&gt;|&quot;temperature = 150 °C&quot;| B10926
+  B10927[&quot;CQD_T_210&quot;]:::etape
+  B10919 --&gt;|&quot;temperature = 210 °C&quot;| B10927
+  B10928[&quot;CQD_t_2h&quot;]:::etape
+  B10919 --&gt;|&quot;duration = 2 hours&quot;| B10928
+  B10929[&quot;CQD_t_4h&quot;]:::etape
+  B10919 --&gt;|&quot;duration = 4 hours&quot;| B10929
+  B10930[&quot;CQD_t_6h&quot;]:::etape
+  B10919 --&gt;|&quot;duration = 6 hours&quot;| B10930
+  B10931[&quot;CQD_t_8h&quot;]:::etape
+  B10919 --&gt;|&quot;duration = 8 hours&quot;| B10931
+  B10932[&quot;CQD_t_10h&quot;]:::etape
+  B10919 --&gt;|&quot;duration = 10 hours&quot;| B10932
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : DSSC_N3_CQD</h2>
+<pre class="mermaid">flowchart LR
+  R14041([&quot;CQD solution (route CQD_2.5_180_12h)&lt;br/&gt;three drops added to the past…&quot;]):::reactif
+  R14041 --&gt;|&quot;intermediate&quot;| S16777
+  R14042([&quot;TiO2 paste&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14042 --&gt;|&quot;active_material&quot;| S16777
+  R14043([&quot;FTO glass substrate&lt;br/&gt;1.5 cm × 2.0 cm&quot;]):::reactif
+  R14043 --&gt;|&quot;substrate&quot;| S16777
+  R14044([&quot;N3 dye solution&lt;br/&gt;1 mM&quot;]):::reactif
+  R14044 --&gt;|&quot;dye&quot;| S16777
+  R14045([&quot;Pt-coated FTO glass cathode&lt;br/&gt;1.5 cm × 2.0 cm&quot;]):::reactif
+  R14045 --&gt;|&quot;counter_electrode&quot;| S16777
+  R14046([&quot;Kapton polyimide spacer&lt;br/&gt;3.5-mil, 1 cm × 1 cm&quot;]):::reactif
+  R14046 --&gt;|&quot;separator&quot;| S16777
+  R14047([&quot;iodolyte Z-50 electrolyte&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14047 --&gt;|&quot;electrolyte&quot;| S16777
+  S16777[&quot;&lt;b&gt;1. dilute&lt;/b&gt;&lt;br/&gt;dilution_factor : 50 -fold&quot;]:::etape
+  S16777 --&gt; S16778
+  S16778[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S16778 --&gt; S16779
+  S16779[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 1 hour&quot;]:::etape
+  S16779 --&gt; S16780
+  S16780[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&quot;]:::etape
+  S16780 --&gt; S16781
+  S16781[&quot;&lt;b&gt;5. calcine&lt;/b&gt;&quot;]:::etape
+  S16781 --&gt; S16782
+  S16782[&quot;&lt;b&gt;6. add&lt;/b&gt;&lt;br/&gt;volume : three drops&quot;]:::etape
+  S16782 --&gt; S16783
+  S16783[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&quot;]:::etape
+  S16783 --&gt; S16784
+  S16784[&quot;&lt;b&gt;8. soak&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&lt;br/&gt;duration : 24 hours&quot;]:::etape
+  S16784 --&gt; S16785
+  S16785[&quot;&lt;b&gt;9. assemble&lt;/b&gt;&lt;br/&gt;spacer_thickness : 3.5 mil&quot;]:::etape
+  S16785 --&gt; M
+  M{{&quot;dye-sensitized solar cell with TiO2 photoanode, N…&lt;br/&gt;&quot;}}:::materiau
+  O67254[&quot;open_circuit_voltage_Voc : 0.64 V&quot;]:::resultat
+  M -.-&gt; O67254
+  O67255[&quot;short_circuit_current_density_Jsc : 7.05 mA cm−2&quot;]:::resultat
+  M -.-&gt; O67255
+  O67256[&quot;fill_factor_FF : 0.68&quot;]:::resultat
+  M -.-&gt; O67256
+  O67257[&quot;photo_conversion_efficiency : 3.08 %&quot;]:::resultat
+  M -.-&gt; O67257
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10933{{&quot;DSSC_N3_CQD&quot;}}:::materiau
+  B10934[&quot;DSSC_N3_only&quot;]:::etape
+  B10933 --&gt;|&quot;CQD solution (route CQD_… = absent&quot;| B10934
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
