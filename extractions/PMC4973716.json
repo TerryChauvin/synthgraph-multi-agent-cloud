@@ -244,7 +244,8 @@
    "missing_fields": [
     "extract_concentration",
     "extract_storage",
-    "plant_origin"
+    "plant_origin",
+    "fresh_leaf_quantity"
    ]
   },
   {
@@ -626,7 +627,8 @@
     "centrifuge_temperature",
     "ethanol_volume",
     "reaction_yield",
-    "silver_content_of_AgNPs_batch"
+    "silver_content_of_AgNPs_batch",
+    "drying_atmosphere"
    ]
   },
   {
@@ -654,9 +656,10 @@
      "name": "silver nanoparticles (AgNPs_Eucalyptus)",
      "formula": "Ag",
      "role": "intermediate",
-     "amount": 300,
-     "unit": "µg",
-     "quote": "According to the results of the adjuvanticity test, the concentration of 15 mg/kg (300 µg AgNPs per injection dose) was used for the NIH test."
+     "amount": null,
+     "unit": null,
+     "quote": "According to the results of the adjuvanticity test, the concentration of 15 mg/kg (300 µg AgNPs per injection dose) was used for the NIH test.",
+     "amount_text": "300 µg AgNPs per injection dose"
     },
     {
      "name": "inactivated rabies virus",
@@ -807,12 +810,23 @@
      "property": "safety_dogs_14d",
      "value_text": "no signs of either disease or local and systemic reactions, no fever or death",
      "quote": "The animals did not show signs of either disease or local and systemic reactions (Table 4), and no fever or death was observed due to the vaccine during monitoring."
+    },
+    {
+     "property": "neutralizing_antibody_titer_survived_mice",
+     "value_text": "≥3.00 IU/mL",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0"
+    },
+    {
+     "property": "neutralizing_antibody_titer_dead_mice",
+     "value_text": "≤0.38 IU/mL",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6"
     }
    ],
    "missing_fields": [
     "AgNPs_amount_per_mL_for_15mgkg_explicit",
     "virus_titre",
-    "stirring_speed_value"
+    "stirring_speed_value",
+    "dog_dose_AgNPs_content"
    ]
   },
   {
@@ -834,6 +848,13 @@
      "unit": "mg/kg",
      "parent_value": "15 mg/kg",
      "quote": "Group | Neutralizing antibody titer | 5 mg/kg | 10 mg/kg | 15 mg/kg | 20 mg/kg | Alum | PBS"
+    },
+    {
+     "parameter": "silver nanoparticles (AgNPs_Eucalyptus)",
+     "value_num": 200,
+     "unit": "µg",
+     "parent_value": "300 µg AgNPs per injection dose",
+     "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions."
     }
    ],
    "succeeded": true,
@@ -862,6 +883,16 @@
      "unit": "%",
      "from_figure": "Fig. 5",
      "quote": "Figure 5 Survival rate of mice received inactivated rabies vaccine with different concentrations of AgNPs."
+    },
+    {
+     "property": "neutralizing_antibody_titer_survived_mice",
+     "value_text": "≥3.00 IU/mL",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0"
+    },
+    {
+     "property": "neutralizing_antibody_titer_dead_mice",
+     "value_text": "≤0.38 IU/mL",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6"
     }
    ]
   },
@@ -884,6 +915,13 @@
      "unit": "mg/kg",
      "parent_value": "15 mg/kg",
      "quote": "Group | Neutralizing antibody titer | 5 mg/kg | 10 mg/kg | 15 mg/kg | 20 mg/kg | Alum | PBS"
+    },
+    {
+     "parameter": "silver nanoparticles (AgNPs_Eucalyptus)",
+     "value_num": 400,
+     "unit": "µg",
+     "parent_value": "300 µg AgNPs per injection dose",
+     "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions."
     }
    ],
    "succeeded": true,
@@ -912,6 +950,16 @@
      "unit": "%",
      "from_figure": "Fig. 5",
      "quote": "Figure 5 Survival rate of mice received inactivated rabies vaccine with different concentrations of AgNPs."
+    },
+    {
+     "property": "neutralizing_antibody_titer_survived_mice",
+     "value_text": "≥3.00 IU/mL",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0"
+    },
+    {
+     "property": "neutralizing_antibody_titer_dead_mice",
+     "value_text": "≤0.38 IU/mL",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6"
     }
    ]
   },
@@ -934,6 +982,13 @@
      "unit": "mg/kg",
      "parent_value": "15 mg/kg",
      "quote": "Group | Neutralizing antibody titer | 5 mg/kg | 10 mg/kg | 15 mg/kg | 20 mg/kg | Alum | PBS"
+    },
+    {
+     "parameter": "silver nanoparticles (AgNPs_Eucalyptus)",
+     "value_num": 800,
+     "unit": "µg",
+     "parent_value": "300 µg AgNPs per injection dose",
+     "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions."
     }
    ],
    "succeeded": true,
@@ -962,6 +1017,16 @@
      "unit": "%",
      "from_figure": "Fig. 5",
      "quote": "Figure 5 Survival rate of mice received inactivated rabies vaccine with different concentrations of AgNPs."
+    },
+    {
+     "property": "neutralizing_antibody_titer_survived_mice",
+     "value_text": "≥3.00 IU/mL",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0"
+    },
+    {
+     "property": "neutralizing_antibody_titer_dead_mice",
+     "value_text": "≤0.38 IU/mL",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6"
     }
    ]
   }
@@ -1004,14 +1069,56 @@
   {
    "type": "limite_reproductibilite",
    "route": "AgNPs_Eucalyptus",
-   "text": "La durée et la température de l'incubation du mélange extrait/nitrate d'argent ne sont pas données (seulement « jusqu'à ce que la solution incolore devienne brun sale »), ni la concentration de l'extrait en matières sèches, la température de centrifugation, le volume d'éthanol, l'atmosphère du séchage, la pureté du nitrate d'argent ou le rendement. La préparation est aussi renvoyée à une communication de congrès (« described earlier ») non accessible. Enfin la concentration de 0,01 mM de nitrate d'argent (100 mL) correspond à 1 µmol d'argent, soit environ 0,11 mg au maximum par lot, alors que la seule dose de 300 µg par injection demande presque trois fois cette quantité : la concentration écrite est donc probablement erronée ou les lots ont été multipliés sans que l'article le dise.",
-   "quote": "The preparation method of AgNPs was described earlier."
+   "text": "Le bilan de matière ne ferme pas telle qu'écrite : 100 mL de nitrate d'argent à 0,01 mM contiennent 1 µmol d'argent, soit au plus environ 108 µg, alors que les essais décrits (adjuvanticité 200 à 800 µg par mL de virus, test NIH, toxicité anormale à 300 µg par souris) demandent au moins 5 à 7 mg, soit un facteur 50 à 100 (critique scientifique, calcul à partir des valeurs de l'article). Une erreur d'unité (0,01 M ou 1 mM) est l'hypothèse la plus probable, mais l'article ne le dit pas : la valeur de l'article n'est pas corrigée. Dans la base, 0,01 mM n'apparaît que dans cette publication (1 mM dans 72 mentions, 5 mM dans 39, 2 mM dans 17).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Eucalyptus_extract",
+   "quote": null,
+   "text": "La concentration de l'extrait est indéterminée : 50 g de poudre bouillis 2 h dans 500 mL d'eau sans reflux ni volume final donné, donc une perte d'eau inconnue ; ni matière sèche, ni teneur en polyphénols, ni conservation du filtrat ne sont indiquées, et l'origine botanique et la quantité de feuilles fraîches manquent. Deux extraits préparés selon ce texte peuvent différer nettement en pouvoir réducteur (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_Eucalyptus",
+   "quote": null,
+   "text": "La durée et la température de l'incubation du mélange extrait et nitrate d'argent ne sont pas données : le seul critère d'arrêt est le virage de « colorless » à « dirty brown ». À 0,01 mM ce virage serait à peine visible (bande plasmon de 1 µmol d'argent dans environ 106 mL), ce qui renforce le doute sur la concentration écrite. Manquent aussi la pureté du nitrate d'argent, le volume d'éthanol, la température de centrifugation, l'atmosphère du séchage et le rendement ; la préparation est renvoyée à une communication de congrès (« described earlier ») non accessible."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_Eucalyptus",
+   "quote": null,
+   "text": "Les Méthodes se contredisent : les nanoparticules séchées sont « stored at 4°C for a few days » et les étapes suivantes « performed immediately ». Le séchage de 2 h à 75 °C d'une poudre d'argent de 60 nm sans agent de coiffe ajouté, puis son emploi sans redispersion décrite, risque d'agréger les particules ; le potentiel zêta de −14,9 mV est faible (−28,3 mV dans PMC3998862, −31 mV dans PMC4043712) et « no instability was observed » est écrit sans durée ni mesure de suivi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_Eucalyptus",
+   "quote": null,
+   "text": "Les essais de toxicité sont peu probants tels qu'écrits. Cytotoxicité : l'absence de toxicité à 10 mg/mL correspond à 1,0 mg d'AgNPs par puits, 200 à 2 000 fois la plage où les nanoparticules d'argent deviennent cytotoxiques (de l'ordre de 5 à 50 µg/mL), sans témoin d'interférence optique à 570 et 630 nm ni de contrôle de la sédimentation. Toxicité anormale : 300 µg d'AgNPs sont « dissolved » dans du NaCl à 9 g/L, or l'argent métallique ne se dissout pas et, à −14,9 mV et 0,154 mol/L de sel, les particules s'agrègent probablement (extrapolation du critique scientifique). L'innocuité n'est donc pas établie pour des particules de 60 nm."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Vaccine_15mgkg",
-   "text": "Les quantités de nanoparticules sont données en µg par mL de virus (200 à 800 µg) dans les Méthodes et en mg/kg dans les résultats ; la correspondance (200, 400, 600 et 800 µg par mL pour 5, 10, 15 et 20 mg/kg) se déduit de la seule valeur explicite, 300 µg par dose de 0,5 mL pour 15 mg/kg, avec des souris de 20 g. Le titre du virus inactivé n'est pas donné, ni la vitesse d'agitation, ni la quantité de nanoparticules du vaccin donné aux chiens (« double dose »).",
-   "quote": "According to the results of the adjuvanticity test, the concentration of 15 mg/kg (300 µg AgNPs per injection dose) was used for the NIH test."
+   "text": "Les quantités de nanoparticules sont données en µg par mL de virus (200 à 800 µg) dans les Méthodes et en mg/kg dans les résultats ; seule l'équivalence 15 mg/kg = 300 µg par dose de 0,5 mL est écrite. La correspondance des quatre groupes (200, 400, 600 et 800 µg par mL pour 5, 10, 15 et 20 mg/kg) se recalcule exactement avec des souris de 20 g (600 µg/mL × 0,5 mL / 0,020 kg = 15 mg/kg), mais elle n'est pas écrite. Le titre du virus inactivé (donc le rapport nanoparticules/antigène que la Discussion juge déterminant), la vitesse d'agitation, le pH du milieu et la quantité de nanoparticules du vaccin donné aux chiens (« double dose ») manquent.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Vaccine_15mgkg",
+   "quote": null,
+   "text": "Le témoin décisif manque : les Méthodes annoncent le virus inactivé seul comme témoin négatif, mais le tableau 1 et la figure 5 ne rapportent que le groupe PBS, et il n'y a pas de groupe « AgNPs seules ». L'effet attribué aux nanoparticules n'est donc pas isolé de celui de l'antigène. La significativité est annoncée par khi-deux sur 5 à 6 souris par groupe (effectifs attendus inférieurs à 5) ; un test exact de Fisher donne environ p = 0,06 pour 4/6 contre 0/6 (calcul du critique scientifique). La légende de la figure 5 compare au groupe alun, le texte au groupe PBS, et le groupe 10 mg/kg ne compte que 5 souris."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Vaccine_15mgkg",
+   "quote": null,
+   "text": "Test NIH : les Méthodes annoncent dix souris par dilution, le tableau 2 en totalise 11 à 16 ; la puissance est calculée « par la méthode probit » dans les Méthodes et par Spearman–Karber selon la note du tableau, de sorte que la valeur 1,303 n'est pas recalculable à partir des données publiées. L'argument de la Discussion (« seul le rapport nanoparticules/antigène compte ») compare la dilution 1/5 du test NIH (3 mg/kg, antigène divisé par 5) au groupe 5 mg/kg de l'essai d'adjuvanticité : la dose d'antigène et le rapport changent en même temps, et les deux essais diffèrent par le lot, la date et les effectifs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Vaccine_15mgkg",
+   "quote": null,
+   "text": "L'innocuité in vivo n'est pas établie : deux injections intrapéritonéales de 300 µg font 600 µg, soit 30 mg/kg cumulés pour une souris de 20 g, avec un suivi clinique de 24 h seulement (pas d'histologie ni de biochimie hépatique), alors que 10 mg/kg d'AgNPs en intraveineuse unique sont rapportés hépatotoxiques chez la souris. Le suivi des chiens (deux animaux, « double dose » de teneur inconnue) ne permet aucune conclusion de dose. La Discussion écrit « 15 mg/mL » là où il s'agit de 15 mg/kg."
   },
   {
    "type": "limite_reproductibilite",
@@ -1027,12 +1134,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNPs_Eucalyptus",
-   "text": "Hypothèse : les polyphénols et les terpénoïdes de l'extrait (flavonoïdes, composés phénoliques) réduisent Ag+ en Ag0, puis les nanoparticules sont stabilisées par ces mêmes molécules adsorbées en surface, ce qui expliquerait le potentiel zêta négatif d'environ −14,9 mV et l'absence d'agrégation observée. Le virage au brun sale est probablement dû à l'apparition de la bande plasmon vers 438 nm."
+   "text": "Hypothèse : les polyphénols et flavonoïdes de la décoction réduisent Ag+ en Ag0 (couples quinone/hydroquinone plus bas que +0,80 V pour Ag+/Ag), puis nucléation et croissance jusqu'à 50–70 nm. Ces mêmes molécules, avec les polysaccharides de l'extrait, restent probablement adsorbées et stabilisent surtout de façon stérique, le potentiel zêta de −14,9 mV étant trop faible pour une stabilisation électrostatique. La taille élevée s'expliquerait par l'absence de contrôle du pH et par un fort excès de réducteur qui favorise la croissance plutôt que la nucléation. Le virage au brun sale correspond à la bande plasmon vers 438 nm. Rien de cela n'est démontré par l'article."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Vaccine_15mgkg",
-   "text": "Hypothèse : les nanoparticules adsorbent l'antigène viral à leur surface par interactions électrostatiques et hydrophobes pendant l'agitation de nuit à 4 °C, ce qui expliquerait l'effet de dépôt et de libération lente que proposent les auteurs et l'importance du rapport antigène/nanoparticules."
+   "text": "Hypothèse : le piégeage de l'antigène par les nanoparticules, puis sa libération prolongée, que proposent les auteurs, n'est étayé par aucune mesure (ni antigène lié dosé, ni taille ou potentiel zêta après chargement). Une adsorption forte est peu probable à pH neutre entre un virion globalement négatif et une surface à −14,9 mV sans pont cationique, et une stimulation directe de l'immunité innée par les nanoparticules est au moins aussi plausible, sans association physique avec l'antigène."
   },
   {
    "type": "securite_auteurs",
@@ -1042,8 +1149,15 @@
   },
   {
    "type": "securite_analyse",
-   "route": null,
-   "text": "Le nitrate d'argent est oxydant, corrosif et tache la peau ; le virus rabique inactivé doit être manipulé selon les règles de biosécurité (risque résiduel si l'inactivation est incomplète) et la souche CVS-11 vivante utilisée pour l'épreuve se manipule en laboratoire de niveau 2 ou 3 avec vaccination du personnel. Les nanoparticules d'argent sèches sont une poudre fine à ne pas inhaler."
+   "route": "AgNPs_Eucalyptus",
+   "quote": null,
+   "text": "Le nitrate d'argent est oxydant et corrosif (taches noires sur la peau, lésions oculaires). L'éthanol dans lequel les nanoparticules sont séchées à 75 °C pendant 120 min produit des vapeurs inflammables (point d'ébullition 78 °C) ; l'étuve n'est pas décrite comme ventilée. La poudre sèche d'argent de 60 nm est une nanopoudre inhalable à manipuler sous sorbonne, et l'argent est toxique pour le milieu aquatique (déchets à collecter). Aucune de ces précautions n'est écrite dans l'article pour la partie synthèse."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "Vaccine_15mgkg",
+   "quote": null,
+   "text": "Risque biologique sous-déclaré : l'épreuve emploie du virus rabique vivant CVS-11 à 20 DL50, inoculé par voie intracérébrale, ce qui demande un confinement de niveau 2 à 3 et la vaccination du personnel ; seule une hotte de classe II est citée, pour le mélange. Le virus du vaccin est inactivé, mais le contrôle d'inactivation du lot (« inactivity test » du test NIH) est mentionné sans résultat, d'où un risque résiduel si l'inactivation est incomplète."
   }
  ],
  "method_sources": [
@@ -1076,6 +1190,24 @@
    "ref_id": "b22-ijn-11-3597",
    "role": "autre",
    "quote": "The National Institutes of Health (NIH) test is a gold standard method according to WHO, British, European, and US Pharmacopeia for measuring the potency of adjuvants for rabies virus vaccine."
+  },
+  {
+   "route": "AgNPs_Eucalyptus",
+   "ref_id": "b24-ijn-11-3597",
+   "role": "autre",
+   "quote": "All the mice were monitored for abnormal reaction, signs of illness, and weight loss for 24 hours after the time of injection."
+  },
+  {
+   "route": "Vaccine_15mgkg",
+   "ref_id": "b25-ijn-11-3597",
+   "role": "autre",
+   "quote": "the animals were monitored at least daily for signs of abnormal local and systemic reactions for 14 days after administration."
+  },
+  {
+   "route": "Vaccine_15mgkg",
+   "ref_id": "b26-ijn-11-3597",
+   "role": "autre",
+   "quote": "In addition, the body temperatures were monitored at 0 hour, 4 hours, and 4 days after administration."
   }
  ],
  "doubts": [
@@ -1085,11 +1217,11 @@
   },
   {
    "where": "Vaccine_5mgkg/10mgkg/20mgkg, paramètre varié",
-   "issue": "Les Méthodes donnent 200, 400, 600 et 800 µg ajoutés à 1 mL de virus, les Résultats 5, 10, 15 et 20 mg/kg. Seule l'équivalence 15 mg/kg = 300 µg par dose de 0,5 mL est écrite. La correspondance 200/400/600/800 µg pour 5/10/15/20 mg/kg suit l'ordre et le calcul (300 µg / 0,02 kg), mais elle n'est pas écrite ; les branches sont nommées en mg/kg, comme le tableau 1."
+   "issue": "Les Méthodes donnent 200, 400, 600 et 800 µg ajoutés à 1 mL de virus, les Résultats 5, 10, 15 et 20 mg/kg. Seule l'équivalence 15 mg/kg = 300 µg par dose est écrite ; l'article ne dit pas que 200, 400 et 800 µg correspondent à 5, 10 et 20 mg/kg. L'ordre des listes et le calcul (600 µg/mL × 0,5 mL / 0,020 kg = 15 mg/kg ; 200, 400, 800 µg donnent 5, 10, 20 mg/kg) concordent, et la critique scientifique l'a confirmé par ce calcul, mais la correspondance reste une déduction. Les branches portent donc deux variations : la quantité en mg/kg (en-tête du tableau 1) et la quantité en µg ajoutée à 1 mL de virus (Méthodes), appariées par l'ordre des listes."
   },
   {
    "where": "Vaccine_15mgkg comme voie de base",
-   "issue": "Le vaccin à 15 mg/kg est pris comme voie de base parce que c'est le seul dont la quantité (300 µg par dose) est explicitement écrite et celui des tests NIH, d'innocuité et de toxicité. L'article ne dit pas que les autres groupes suivent exactement le même protocole de mélange, mais les Méthodes décrivent un seul protocole de chargement pour toutes les quantités."
+   "issue": "Le vaccin à 15 mg/kg est pris comme voie de base parce que c'est le seul dont la quantité (300 µg par dose) est explicitement écrite et celui des tests NIH, d'innocuité et de toxicité. L'article ne dit pas que les autres groupes suivent exactement le même protocole de mélange, mais les Méthodes décrivent un seul protocole de chargement pour toutes les quantités. Le réactif AgNPs de cette voie est donné en texte (« 300 µg AgNPs per injection dose ») : 300 µg est la quantité par dose injectée de 0,5 mL, non la quantité mélangée à 1 mL de virus ; les seules quantités de mélange écrites sont 200, 400, 600 et 800 µg pour 1 mL (le 600 µg/mL du groupe 15 mg/kg n'est pas écrit)."
   },
   {
    "where": "Vaccine_10mgkg, tableau 1",
@@ -1109,7 +1241,7 @@
   },
   {
    "where": "AgNPs_Eucalyptus, taille et potentiel zêta",
-   "issue": "Résumé : 60 nm et −14 mV ; Résultats : ∼63 nm (DLS), 50−70 nm (MEB) et −14.9 mV ; Discussion : 50–70 nm et −14 mV. Le pic principal de la fig. 3 est lu vers 90 nm en intensité (non consigné). Valeurs des Résultats retenues."
+   "issue": "Résumé : 60 nm et −14 mV ; Résultats : ∼63 nm (DLS), 50−70 nm (MEB) et −14.9 mV ; Discussion : 50–70 nm et −14 mV. Le pic principal de la fig. 3 est lu vers 90 nm en intensité (non consigné). Valeurs des Résultats retenues. Fig. 3 non consignée en résultat : le pic principal est lu vers 90 nm en intensité, avec un pic secondaire vers 10 nm."
   },
   {
    "where": "AgNPs_Eucalyptus, caractérisation DRX",
@@ -1130,6 +1262,18 @@
   {
    "where": "method_sources, test NIH",
    "issue": "Le renvoi « [[b19]]–[[b22]] » est un intervalle ; b20 et b21 sont déduits de l'intervalle. Les références sont des ouvrages et pharmacopées, non accessibles. Le renvoi b17 (méthode de préparation des AgNPs) est une communication de congrès ; le rôle « protocole_complet » est choisi car l'article en reprend déjà les étapes."
+  },
+  {
+   "where": "Eucalyptus_extract, étape 3, température",
+   "issue": "Le texte écrit seulement « boiled in 500 mL deionized water for 2 hours » : « boiled » décrit un état, aucune température chiffrée n'est donnée (100 °C n'est pas écrit). La valeur est gardée telle quelle en texte."
+  },
+  {
+   "where": "AgNPs_Eucalyptus, étapes 7 et 8",
+   "issue": "Contradiction interne dans la même phrase des Méthodes : les AgNPs sont séchées puis « stored at 4°C for a few days, and subsequent procedures were performed immediately ». Les deux membres ne peuvent pas être vrais ensemble ; les deux sont recopiés tels quels (étape 8 : durée « a few days »)."
+  },
+  {
+   "where": "Vaccine_5mgkg/10mgkg/15mgkg/20mgkg, titre d'anticorps neutralisants",
+   "issue": "Le tableau 1 ne donne pas de titre par groupe : seulement deux seuils de classe (survivantes ≥3.00 IU/mL, mortes ≤0.38 IU/mL) dans la première colonne, appliqués à chaque groupe par le texte (« all the living mice had >3 IU/mL ... dead ones <0.375 IU/mL »). Les résultats « neutralizing_antibody_titer_* » reprennent ces seuils pour chaque branche ; aucun titre individuel n'est publié. Le texte écrit 0.375 et le tableau 0.38."
   }
  ]
 }

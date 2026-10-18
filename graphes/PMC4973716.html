@@ -1,0 +1,102 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4973716</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4973716 — Green synthesis and evaluation of silver nanoparticles as adjuvant in rabies veterinary vaccine.</h1>
+<h2>Voie : Eucalyptus_extract</h2>
+<pre class="mermaid">flowchart LR
+  R14477([&quot;dried Eucalyptus procera leaf powder&lt;br/&gt;50 g&quot;]):::reactif
+  R14477 --&gt;|&quot;precursor&quot;| S17279
+  R14478([&quot;deionized water&lt;br/&gt;500 mL&quot;]):::reactif
+  R14478 --&gt;|&quot;solvent&quot;| S17279
+  S17279[&quot;&lt;b&gt;1. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature (RT)&quot;]:::etape
+  S17279 --&gt; S17280
+  S17280[&quot;&lt;b&gt;2. grind&lt;/b&gt;&quot;]:::etape
+  S17280 --&gt; S17281
+  S17281[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : boiled&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S17281 --&gt; S17282
+  S17282[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S17282 --&gt; M
+  M{{&quot;Eucalyptus procera leaf aqueous extract&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNPs_Eucalyptus</h2>
+<pre class="mermaid">flowchart LR
+  R14479([&quot;silver nitrate (0.01 mM aqueous solution)&lt;br/&gt;100 mL&quot;]):::reactif
+  R14479 --&gt;|&quot;precursor&quot;| S17283
+  R14480([&quot;Eucalyptus procera leaf extract (Eucalyptus_…&lt;br/&gt;6 mL&quot;]):::reactif
+  R14480 --&gt;|&quot;intermediate&quot;| S17283
+  R14481([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14481 --&gt;|&quot;wash&quot;| S17283
+  R14482([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14482 --&gt;|&quot;solvent&quot;| S17283
+  S17283[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;volume : 6 mL&lt;br/&gt;concentration : 0.01 mM&quot;]:::etape
+  S17283 --&gt; S17284
+  S17284[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;stirring_speed : gently&lt;br/&gt;temperature : RT&quot;]:::etape
+  S17284 --&gt; S17285
+  S17285[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;endpoint : until the colorless solution …&quot;]:::etape
+  S17285 --&gt; S17286
+  S17286[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 13000 × g&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S17286 --&gt; S17287
+  S17287[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S17287 --&gt; S17288
+  S17288[&quot;&lt;b&gt;6. disperse&lt;/b&gt;&quot;]:::etape
+  S17288 --&gt; S17289
+  S17289[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 75 °C&lt;br/&gt;duration : 120 min&quot;]:::etape
+  S17289 --&gt; S17290
+  S17290[&quot;&lt;b&gt;8. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&lt;br/&gt;duration : a few days&quot;]:::etape
+  S17290 --&gt; M
+  M{{&quot;silver nanoparticles (green synthesis with Eucaly…&lt;br/&gt;Ag&quot;}}:::materiau
+  O70101[&quot;SPR_peak : 438 nm&quot;]:::resultat
+  M -.-&gt; O70101
+  O70102[&quot;particle_size_SEM : 50−70 nm&quot;]:::resultat
+  M -.-&gt; O70102
+  O70103[&quot;mean_size_DLS : 63 nm&quot;]:::resultat
+  M -.-&gt; O70103
+  O70104[&quot;zeta_potential : -14.9 mV&quot;]:::resultat
+  M -.-&gt; O70104
+  O70105[&quot;morphology : spherical&quot;]:::resultat
+  M -.-&gt; O70105
+  O70106[&quot;crystal_structure : face-centered cubic&quot;]:::resultat
+  M -.-&gt; O70106
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Vaccine_15mgkg</h2>
+<pre class="mermaid">flowchart LR
+  R14483([&quot;silver nanoparticles (AgNPs_Eucalyptus)&lt;br/&gt;300 µg AgNPs per injection do…&quot;]):::reactif
+  R14483 --&gt;|&quot;intermediate&quot;| S17291
+  R14484([&quot;inactivated rabies virus&lt;br/&gt;1 mL&quot;]):::reactif
+  R14484 --&gt;|&quot;active_material&quot;| S17291
+  S17291[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;volume : 1 mL&quot;]:::etape
+  S17291 --&gt; S17292
+  S17292[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : overnight&lt;br/&gt;temperature : 4 °C&lt;br/&gt;stirring_speed : gently&quot;]:::etape
+  S17292 --&gt; M
+  M{{&quot;AgNPs-loaded inactivated rabies virus vaccine&lt;br/&gt;&quot;}}:::materiau
+  O70116[&quot;mice_survived_after_challenge_21d : 4 mice&quot;]:::resultat
+  M -.-&gt; O70116
+  O70117[&quot;mice_dead_after_challenge_21d : 2 mice&quot;]:::resultat
+  M -.-&gt; O70117
+  O70118[&quot;mice_total_in_group : 6 mice&quot;]:::resultat
+  M -.-&gt; O70118
+  O70119[&quot;survival_rate_21d : 67 %&quot;]:::resultat
+  M -.-&gt; O70119
+  O70120[&quot;NIH_test_live_dead_counts_per_dilu… : 11 | 4 | 5 | 6 | 2 | 11 | 2 |…&quot;]:::resultat
+  M -.-&gt; O70120
+  O70121[&quot;NIH_potency : 1.303&quot;]:::resultat
+  M -.-&gt; O70121
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11192{{&quot;Vaccine_15mgkg&quot;}}:::materiau
+  B11193[&quot;Vaccine_5mgkg&quot;]:::etape
+  B11192 --&gt;|&quot;silver nanoparticles (Ag… = 5 mg/kg&lt;br/&gt;silver nanoparticles (Ag… = 200 µg&quot;| B11193
+  B11194[&quot;Vaccine_10mgkg&quot;]:::etape
+  B11192 --&gt;|&quot;silver nanoparticles (Ag… = 10 mg/kg&lt;br/&gt;silver nanoparticles (Ag… = 400 µg&quot;| B11194
+  B11195[&quot;Vaccine_20mgkg&quot;]:::etape
+  B11192 --&gt;|&quot;silver nanoparticles (Ag… = 20 mg/kg&lt;br/&gt;silver nanoparticles (Ag… = 800 µg&quot;| B11195
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
