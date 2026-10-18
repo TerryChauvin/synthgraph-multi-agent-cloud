@@ -1,0 +1,78 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8398574</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8398574 — A Facile Synthesis of NiFe-Layered Double Hydroxide and Mixed Metal Oxide with Excellent Microwave Absorption Properties.</h1>
+<h2>Voie : NiFe-LDH</h2>
+<pre class="mermaid">flowchart LR
+  R12422([&quot;nickel nitrate hexahydrate&lt;br/&gt;4.653 g&quot;]):::reactif
+  R12422 --&gt;|&quot;precursor&quot;| S14749
+  R12423([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;1.616 g&quot;]):::reactif
+  R12423 --&gt;|&quot;precursor&quot;| S14749
+  R12424([&quot;ammonia solution&lt;br/&gt;100 mL&quot;]):::reactif
+  R12424 --&gt;|&quot;base&quot;| S14749
+  R12425([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12425 --&gt;|&quot;wash&quot;| S14749
+  S14749[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;volume_metal_salt_soluti… : 20 mL&lt;br/&gt;volume_ammonia_solution : 100 mL&lt;br/&gt;concentration_ammonia_so… : 0.5 M&lt;br/&gt;addition_rate : drop by drop&lt;br/&gt;stirring_speed : vigorously stirred&quot;]:::etape
+  S14749 --&gt; S14750
+  S14750[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 18 h&lt;br/&gt;temperature : 65 °C&quot;]:::etape
+  S14750 --&gt; S14751
+  S14751[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&quot;]:::etape
+  S14751 --&gt; S14752
+  S14752[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;endpoint_ph : close to 7&quot;]:::etape
+  S14752 --&gt; S14753
+  S14753[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : overnight&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S14753 --&gt; M
+  M{{&quot;NiFe layered double hydroxide&lt;br/&gt;&quot;}}:::materiau
+  O60022[&quot;platelet_thickness : less than 50 nm&quot;]:::resultat
+  M -.-&gt; O60022
+  O60023[&quot;interplanar_spacing_003 : 7.8 Å&quot;]:::resultat
+  M -.-&gt; O60023
+  O60024[&quot;molar_ratio_Ni_Fe_ICP : 3.79&quot;]:::resultat
+  M -.-&gt; O60024
+  O60025[&quot;weight_loss_50_175C : 11.2 %&quot;]:::resultat
+  M -.-&gt; O60025
+  O60026[&quot;weight_loss_175_475C : 22.3 %&quot;]:::resultat
+  M -.-&gt; O60026
+  O60027[&quot;total_weight_loss_TGA : ~35%&quot;]:::resultat
+  M -.-&gt; O60027
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : NiFe-MMO</h2>
+<pre class="mermaid">flowchart LR
+  R12426([&quot;NiFe-LDH (route NiFe-LDH)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12426 --&gt;|&quot;intermediate&quot;| S14754
+  R12427([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12427 --&gt;|&quot;gas&quot;| S14754
+  S14754[&quot;&lt;b&gt;1. calcine&lt;/b&gt;&lt;br/&gt;temperature : 600 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;atmosphere : Ar atmosphere&quot;]:::etape
+  S14754 --&gt; M
+  M{{&quot;NiFe mixed metal oxide (NiO + NiFe2O4)&lt;br/&gt;&quot;}}:::materiau
+  O60040[&quot;particle_diameter : about 30 nm&quot;]:::resultat
+  M -.-&gt; O60040
+  O60041[&quot;phase : composite oxide phase with Ni…&quot;]:::resultat
+  M -.-&gt; O60041
+  O60042[&quot;total_weight_loss_TGA : ~2.5%&quot;]:::resultat
+  M -.-&gt; O60042
+  O60043[&quot;real_permittivity : almost 3.8&quot;]:::resultat
+  M -.-&gt; O60043
+  O60044[&quot;imaginary_permeability_peak_freque… : 6.28 GHz&quot;]:::resultat
+  M -.-&gt; O60044
+  O60045[&quot;RL_min : -64.43 dB&quot;]:::resultat
+  M -.-&gt; O60045
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Absorber_ring</h2>
+<pre class="mermaid">flowchart LR
+  R12428([&quot;NiFe-LDH or NiFe-MMO (routes NiFe-LDH, NiFe-…&lt;br/&gt;40 wt%&quot;]):::reactif
+  R12428 --&gt;|&quot;intermediate&quot;| S14755
+  R12429([&quot;paraffin&lt;br/&gt;60 wt%&quot;]):::reactif
+  R12429 --&gt;|&quot;binder&quot;| S14755
+  S14755[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;mass_fraction_product : 40 wt%&lt;br/&gt;mass_fraction_paraffin : 60 wt%&quot;]:::etape
+  S14755 --&gt; S14756
+  S14756[&quot;&lt;b&gt;2. press&lt;/b&gt;&lt;br/&gt;outer_diameter : 7 mm&lt;br/&gt;inner_diameter : 3 mm&lt;br/&gt;thickness : 3 mm&quot;]:::etape
+  S14756 --&gt; M
+  M{{&quot;NiFe-LDH or NiFe-MMO / paraffin composite ring fo…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
