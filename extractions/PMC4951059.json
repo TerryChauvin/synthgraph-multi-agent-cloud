@@ -474,7 +474,7 @@
     "formula": "SiO2",
     "family": "oxyde",
     "phase": "silicon dioxide and tetragonal zirconium silicate (ZrSiO4) per XRD",
-    "morphology": "uniform coating, ~10 μm thick"
+    "morphology": "uniform coating"
    },
    "method": "sol–gel dip coating of Y-TZP blocks with silica sol followed by calcination",
    "quote": "Si, silica sol dip coating + calcination",
@@ -589,7 +589,7 @@
     {
      "order": 5,
      "action": "deposit",
-     "description": "Dip-coat the blocks in the silica sol (dip-coating device, 80 mm/s, dipping time 60 seconds).",
+     "description": "Dip-coat the blocks in the sol (silica sol for route Si, aluminosilicate sol for route Si/Al; dip-coating device, 80 mm/s, dipping time 60 seconds).",
      "quote": "The Y-TZP blocks were coated either by the silica or aluminosilicate sol using a dip-coating device (80 mm/s, dipping time: 60 seconds) and calcinated at 400°C (5°C/min) for 2 hours.",
      "parameters": [
       {
@@ -686,6 +686,13 @@
      "instrument": "SEM unit (S360; Oxford Co., Cambridge, UK) equipped with an energy-dispersive spectroscopy detector (INCA Energy 300; Oxford Instruments, Oxford, UK)",
      "conditions": "20 kV, after gold sputtering (Polaron E5200; Watford, Hertfordshire, UK)",
      "quote": "EDS pattern demonstrated the presence of silicon and oxygen (silica) on the silica-coated samples and a combination of silicon, aluminum, and oxygen on the aluminosilicate-coated surfaces (Figure 4)."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "wide band in the range 3,000–3,800 cm−1 (H2O stretching) and band at 1,644 cm−1 (H2O bending)",
+     "instrument": "Bruker FT-IR extended spectrometer (Bruker Optics Inc., Billerica, MA, USA)",
+     "conditions": "transmittance spectra of the calcinated prepared gel, 4,000–400 cm−1, resolution 4 cm−1",
+     "quote": "The wide IR band in the range of 3,000–3,800 cm−1 is due to the stretching vibration of H2O molecules, and the band at 1,644 cm−1 is related to the corresponding bending."
     }
    ],
    "outcomes": [
@@ -693,12 +700,6 @@
      "property": "XRD_phases",
      "quote": "Analysis of the diffraction pattern of silica-coated sample showed the presence of silicon dioxide and tetragonal structure of zirconium silicate (ZrSiO4).",
      "value_text": "silicon dioxide and tetragonal zirconium silicate (ZrSiO4)"
-    },
-    {
-     "property": "coating_thickness",
-     "quote": "The cross-sectional SEM examination (figures 5A to D) indicated that interfacial silica or aluminosilicate layers were ~10 μm thick (Figure 5C and D).",
-     "value_num": 10,
-     "unit": "μm"
     },
     {
      "property": "FTIR_main_Si-O_band",
@@ -712,6 +713,13 @@
      "quote": "(A) No treatment (C), (B) sandblasted zirconia surface (S), (C) silica coating (Si), and (D) aluminosilicate coating (Si/Al).",
      "value_text": "Zr, Si and O peaks (EDS insert of Fig. 4C)",
      "from_figure": "Fig. 4C"
+    },
+    {
+     "property": "FTIR_water_bending_band",
+     "quote": "FT-IR spectra of silica (red line) and aluminosilicate (purple line) coating materials.",
+     "value_num": 1643.2,
+     "unit": "cm−1",
+     "from_figure": "Fig. 2"
     }
    ],
    "missing_fields": [
@@ -728,7 +736,7 @@
     "formula": null,
     "family": "oxyde",
     "phase": "aluminum silicates (Al2SiO5: sillimanite, kyanite), tetragonal ZrSiO4 and hexagonal Zr5Al3O0.5 per XRD",
-    "morphology": "uniform coating, ~10 μm thick"
+    "morphology": "uniform coating"
    },
    "quote": "Si/Al, aluminosilicate sol dip coating + calcination.",
    "variations": [
@@ -800,18 +808,6 @@
      "value_text": "hexagonal zirconium aluminum oxide Zr5Al3O0.5"
     },
     {
-     "property": "coating_thickness",
-     "quote": "The cross-sectional SEM examination (figures 5A to D) indicated that interfacial silica or aluminosilicate layers were ~10 μm thick (Figure 5C and D).",
-     "value_num": 10,
-     "unit": "μm"
-    },
-    {
-     "property": "FTIR_main_Si-O_band",
-     "quote": "FT-IR spectrum obtained from aluminosilicate composite indicated that the peak at 1,082 cm−1 was shifted to 1,073 cm−1, due to the incorporation of aluminum ions, confirming the formation of Al–O–Si bonds.",
-     "value_num": 1073,
-     "unit": "cm−1"
-    },
-    {
      "property": "FTIR_main_Si-O_band",
      "quote": "FT-IR spectra of silica (red line) and aluminosilicate (purple line) coating materials.",
      "value_num": 1073.4,
@@ -823,6 +819,13 @@
      "quote": "(A) No treatment (C), (B) sandblasted zirconia surface (S), (C) silica coating (Si), and (D) aluminosilicate coating (Si/Al).",
      "value_text": "Zr, Al, Si and O peaks (EDS insert of Fig. 4D)",
      "from_figure": "Fig. 4D"
+    },
+    {
+     "property": "FTIR_water_bending_band",
+     "quote": "FT-IR spectra of silica (red line) and aluminosilicate (purple line) coating materials.",
+     "value_num": 1644.9,
+     "unit": "cm−1",
+     "from_figure": "Fig. 2"
     }
    ]
   },
@@ -1151,7 +1154,7 @@
      "technique": "microtensile bond strength (μTBS)",
      "result": "bars mounted on a split holder with cyanoacrylate glue and loaded to failure after thermocycling",
      "instrument": "universal testing machine (STM20; Santam, Tehran, Iran)",
-     "conditions": "6 kgf load cell, load rate 0.5 mm/min, after thermocycling",
+     "conditions": "6 kgf load cell, load rate 0.5 mm/min, after thermocycling; statistics: one-way ANOVA followed by Tukey's post hoc pairwise comparison (α=0.05), SPSS V11.5",
      "quote": "After thermocycling, the specimens were mounted on a split holder using cyanoacrylate glue and subjected to μTBS testing using a universal testing machine (STM20; Santam, Tehran, Iran) equipped with a 6 kgf load cell under the load rate of 0.5 mm/min (Figure 1)."
     }
    ],
@@ -1189,6 +1192,12 @@
      "property": "fracture_mode",
      "quote": "All specimens were fractured in a mixed fashion including the interfacial area and the porcelain part.",
      "value_text": "mixed fashion including the interfacial area and the porcelain part"
+    },
+    {
+     "property": "coating_thickness",
+     "quote": "The cross-sectional SEM examination (figures 5A to D) indicated that interfacial silica or aluminosilicate layers were ~10 μm thick (Figure 5C and D).",
+     "value_num": 10,
+     "unit": "μm"
     }
    ],
    "missing_fields": [
@@ -1253,6 +1262,12 @@
      "property": "fracture_mode",
      "quote": "All specimens were fractured in a mixed fashion including the interfacial area and the porcelain part.",
      "value_text": "mixed fashion including the interfacial area and the porcelain part"
+    },
+    {
+     "property": "coating_thickness",
+     "quote": "The cross-sectional SEM examination (figures 5A to D) indicated that interfacial silica or aluminosilicate layers were ~10 μm thick (Figure 5C and D).",
+     "value_num": 10,
+     "unit": "μm"
     }
    ]
   },
@@ -1275,13 +1290,6 @@
      "value_text": "replaced by untreated Y-TZP blocks (route C)",
      "parent_value": "Y-TZP blocks coated with silica (route Si)",
      "quote": "C, without any further surface treatment as the control group"
-    },
-    {
-     "parameter": "wash_solvent",
-     "step_order": 1,
-     "value_text": "not stated for uncoated blocks (only the coated Y-TZP blocks are described as washed)",
-     "parent_value": "running distilled water",
-     "quote": "The coated Y-TZP blocks were washed under running distilled water to remove any possible remnants from the coating procedure."
     }
    ],
    "reagents": [
@@ -1313,6 +1321,239 @@
      "quote": "All specimens were fractured in a mixed fashion including the interfacial area and the porcelain part.",
      "value_text": "mixed fashion including the interfacial area and the porcelain part"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Paint a thin layer of porcelain dough (porcelain powder mixed with the supplied liquid, 'porcelain wash') on the surface with a fine brush.",
+     "quote": "A layer of thin porcelain dough (porcelain wash), prepared by mixing the porcelain powder and the supplied liquid, was painted on the Y-TZP surface using a fine brush and fired.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "porcelain_powder_to_liquid_ratio",
+      "layer_thickness"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sinter",
+     "description": "Fire the porcelain wash in the dental porcelain firing furnace (Table 1, wash firing: start 440 °C, dry time 2 min, 45 °C/min to 860 °C, hold 1.5 min, vacuum, cooling 3 min).",
+     "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+     "parameters": [
+      {
+       "name": "temperature_start",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 440,
+       "unit": "°C"
+      },
+      {
+       "name": "temperature_final",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 860,
+       "unit": "°C"
+      },
+      {
+       "name": "duration_dry",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 2,
+       "unit": "min"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 45,
+       "unit": "°C/min"
+      },
+      {
+       "name": "duration_hold",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 1.5,
+       "unit": "min"
+      },
+      {
+       "name": "duration_cooling",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 3,
+       "unit": "min"
+      },
+      {
+       "name": "atmosphere_vacuum",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_text": "Yes"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "dental porcelain firing furnace",
+       "detail": "EP3000; Ivoclar-Vivadent, Lichtenstein, Germany",
+       "quote": "A thermally compatible veneering porcelain (DD Nature Zr; Dental Direkt GmbH) with matching coefficient of thermal expansion (CTE) was fired on the coated Y-TZP surface under the instructed conditions in a dental porcelain firing furnace (EP3000; Ivoclar-Vivadent, Lichtenstein, Germany)."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 3,
+     "action": "deposit",
+     "description": "Condense a 3 mm thick layer of porcelain (main body) in a polymethyl methacrylate split mold, removing excess water with an absorbent tissue.",
+     "quote": "In the next step, a polymethyl methacrylate split mold was used to condense a 3 mm thick layer of the porcelain (main body), while the excess water was removed using an absorbent tissue.",
+     "parameters": [
+      {
+       "name": "layer_thickness",
+       "quote": "In the next step, a polymethyl methacrylate split mold was used to condense a 3 mm thick layer of the porcelain (main body), while the excess water was removed using an absorbent tissue.",
+       "value_num": 3,
+       "unit": "mm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "polymethyl methacrylate split mold",
+       "detail": null,
+       "quote": "In the next step, a polymethyl methacrylate split mold was used to condense a 3 mm thick layer of the porcelain (main body), while the excess water was removed using an absorbent tissue."
+      }
+     ],
+     "not_stated": [
+      "porcelain_powder_to_liquid_ratio"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "sinter",
+     "description": "Remove the split mold and fire the porcelain body (Table 1, main body firing: start 440 °C, dry time 4 min, 45 °C/min to 830 °C, hold 1.5 min, vacuum, cooling 3 min).",
+     "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+     "parameters": [
+      {
+       "name": "temperature_start",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 440,
+       "unit": "°C"
+      },
+      {
+       "name": "temperature_final",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 830,
+       "unit": "°C"
+      },
+      {
+       "name": "duration_dry",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 4,
+       "unit": "min"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 45,
+       "unit": "°C/min"
+      },
+      {
+       "name": "duration_hold",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 1.5,
+       "unit": "min"
+      },
+      {
+       "name": "duration_cooling",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 3,
+       "unit": "min"
+      },
+      {
+       "name": "atmosphere_vacuum",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_text": "Yes"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "dental porcelain firing furnace",
+       "detail": "EP3000; Ivoclar-Vivadent, Lichtenstein, Germany",
+       "quote": "A thermally compatible veneering porcelain (DD Nature Zr; Dental Direkt GmbH) with matching coefficient of thermal expansion (CTE) was fired on the coated Y-TZP surface under the instructed conditions in a dental porcelain firing furnace (EP3000; Ivoclar-Vivadent, Lichtenstein, Germany)."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 5,
+     "action": "cut",
+     "description": "Embed the porcelain-bonded blocks in transparent PMMA resin and section them under water cooling into bars with a 1 mm × 1 mm zirconia–porcelain bond area.",
+     "quote": "To evaluate the efficacy of the bond between Y-TZP and overlayered porcelain, porcelain-bonded blocks were embedded in transparent polymethyl methacrylate resin and sectioned using a low-speed computerized numerical control cutting machine (Nemo, Mashhad, Iran) under water cooling to fabricate bar-shaped specimens with a 1 mm ×1 mm zirconia–porcelain bond area (Figure 1).",
+     "parameters": [
+      {
+       "name": "bond_area",
+       "quote": "To evaluate the efficacy of the bond between Y-TZP and overlayered porcelain, porcelain-bonded blocks were embedded in transparent polymethyl methacrylate resin and sectioned using a low-speed computerized numerical control cutting machine (Nemo, Mashhad, Iran) under water cooling to fabricate bar-shaped specimens with a 1 mm ×1 mm zirconia–porcelain bond area (Figure 1).",
+       "value_text": "1 mm ×1 mm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "low-speed computerized numerical control cutting machine",
+       "detail": "Nemo, Mashhad, Iran",
+       "quote": "To evaluate the efficacy of the bond between Y-TZP and overlayered porcelain, porcelain-bonded blocks were embedded in transparent polymethyl methacrylate resin and sectioned using a low-speed computerized numerical control cutting machine (Nemo, Mashhad, Iran) under water cooling to fabricate bar-shaped specimens with a 1 mm ×1 mm zirconia–porcelain bond area (Figure 1)."
+      }
+     ],
+     "not_stated": [
+      "cutting_speed",
+      "resin_curing_conditions"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "select",
+     "description": "Screen the bars under a stereomicroscope (×40) for cracks or chipped edges and select 12 sound bars at random per group.",
+     "quote": "The bars were screened under a stereomicroscope using ×40 magnification (Zoom; Blue Light Industry USA Inc., La Habra, CA, USA) for any probable cracks or chipped edges, and 12 sound bar specimens were selected randomly for each group.",
+     "parameters": [
+      {
+       "name": "bars_per_group",
+       "quote": "The bars were screened under a stereomicroscope using ×40 magnification (Zoom; Blue Light Industry USA Inc., La Habra, CA, USA) for any probable cracks or chipped edges, and 12 sound bar specimens were selected randomly for each group.",
+       "value_num": 12
+      }
+     ],
+     "equipment": [
+      {
+       "type": "stereomicroscope",
+       "detail": "×40; Zoom, Blue Light Industry USA Inc., La Habra, CA, USA",
+       "quote": "The bars were screened under a stereomicroscope using ×40 magnification (Zoom; Blue Light Industry USA Inc., La Habra, CA, USA) for any probable cracks or chipped edges, and 12 sound bar specimens were selected randomly for each group."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 7,
+     "action": "thermocycle",
+     "description": "Thermocycle the bars to simulate oral thermal conditions: 2,000 cycles between 5 and 55 °C, dwell time 20 seconds.",
+     "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+     "parameters": [
+      {
+       "name": "cycles",
+       "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+       "value_num": 2000
+      },
+      {
+       "name": "temperature_low",
+       "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+       "value_num": 5,
+       "unit": "°C"
+      },
+      {
+       "name": "temperature_high",
+       "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+       "value_num": 55,
+       "unit": "°C"
+      },
+      {
+       "name": "dwell_time",
+       "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+       "value_num": 20,
+       "unit": "s"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "transfer_time",
+      "bath_medium"
+     ]
+    }
    ]
   },
   {
@@ -1334,13 +1575,6 @@
      "value_text": "replaced by sandblasted Y-TZP blocks (route S)",
      "parent_value": "Y-TZP blocks coated with silica (route Si)",
      "quote": "S, sandblasted using 110 μm alumina powder under 2.5 bar and the tip distance of 10 mm"
-    },
-    {
-     "parameter": "wash_solvent",
-     "step_order": 1,
-     "value_text": "not stated for uncoated blocks (only the coated Y-TZP blocks are described as washed)",
-     "parent_value": "running distilled water",
-     "quote": "The coated Y-TZP blocks were washed under running distilled water to remove any possible remnants from the coating procedure."
     }
    ],
    "reagents": [
@@ -1375,6 +1609,239 @@
      "property": "fracture_mode",
      "quote": "All specimens were fractured in a mixed fashion including the interfacial area and the porcelain part.",
      "value_text": "mixed fashion including the interfacial area and the porcelain part"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Paint a thin layer of porcelain dough (porcelain powder mixed with the supplied liquid, 'porcelain wash') on the surface with a fine brush.",
+     "quote": "A layer of thin porcelain dough (porcelain wash), prepared by mixing the porcelain powder and the supplied liquid, was painted on the Y-TZP surface using a fine brush and fired.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "porcelain_powder_to_liquid_ratio",
+      "layer_thickness"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sinter",
+     "description": "Fire the porcelain wash in the dental porcelain firing furnace (Table 1, wash firing: start 440 °C, dry time 2 min, 45 °C/min to 860 °C, hold 1.5 min, vacuum, cooling 3 min).",
+     "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+     "parameters": [
+      {
+       "name": "temperature_start",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 440,
+       "unit": "°C"
+      },
+      {
+       "name": "temperature_final",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 860,
+       "unit": "°C"
+      },
+      {
+       "name": "duration_dry",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 2,
+       "unit": "min"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 45,
+       "unit": "°C/min"
+      },
+      {
+       "name": "duration_hold",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 1.5,
+       "unit": "min"
+      },
+      {
+       "name": "duration_cooling",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_num": 3,
+       "unit": "min"
+      },
+      {
+       "name": "atmosphere_vacuum",
+       "quote": "Wash firing | 440 | 2 | 45 | 860 | 1.5 | Yes | 3",
+       "value_text": "Yes"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "dental porcelain firing furnace",
+       "detail": "EP3000; Ivoclar-Vivadent, Lichtenstein, Germany",
+       "quote": "A thermally compatible veneering porcelain (DD Nature Zr; Dental Direkt GmbH) with matching coefficient of thermal expansion (CTE) was fired on the coated Y-TZP surface under the instructed conditions in a dental porcelain firing furnace (EP3000; Ivoclar-Vivadent, Lichtenstein, Germany)."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 3,
+     "action": "deposit",
+     "description": "Condense a 3 mm thick layer of porcelain (main body) in a polymethyl methacrylate split mold, removing excess water with an absorbent tissue.",
+     "quote": "In the next step, a polymethyl methacrylate split mold was used to condense a 3 mm thick layer of the porcelain (main body), while the excess water was removed using an absorbent tissue.",
+     "parameters": [
+      {
+       "name": "layer_thickness",
+       "quote": "In the next step, a polymethyl methacrylate split mold was used to condense a 3 mm thick layer of the porcelain (main body), while the excess water was removed using an absorbent tissue.",
+       "value_num": 3,
+       "unit": "mm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "polymethyl methacrylate split mold",
+       "detail": null,
+       "quote": "In the next step, a polymethyl methacrylate split mold was used to condense a 3 mm thick layer of the porcelain (main body), while the excess water was removed using an absorbent tissue."
+      }
+     ],
+     "not_stated": [
+      "porcelain_powder_to_liquid_ratio"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "sinter",
+     "description": "Remove the split mold and fire the porcelain body (Table 1, main body firing: start 440 °C, dry time 4 min, 45 °C/min to 830 °C, hold 1.5 min, vacuum, cooling 3 min).",
+     "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+     "parameters": [
+      {
+       "name": "temperature_start",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 440,
+       "unit": "°C"
+      },
+      {
+       "name": "temperature_final",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 830,
+       "unit": "°C"
+      },
+      {
+       "name": "duration_dry",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 4,
+       "unit": "min"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 45,
+       "unit": "°C/min"
+      },
+      {
+       "name": "duration_hold",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 1.5,
+       "unit": "min"
+      },
+      {
+       "name": "duration_cooling",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_num": 3,
+       "unit": "min"
+      },
+      {
+       "name": "atmosphere_vacuum",
+       "quote": "Main body firing | 440 | 4 | 45 | 830 | 1.5 | Yes | 3",
+       "value_text": "Yes"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "dental porcelain firing furnace",
+       "detail": "EP3000; Ivoclar-Vivadent, Lichtenstein, Germany",
+       "quote": "A thermally compatible veneering porcelain (DD Nature Zr; Dental Direkt GmbH) with matching coefficient of thermal expansion (CTE) was fired on the coated Y-TZP surface under the instructed conditions in a dental porcelain firing furnace (EP3000; Ivoclar-Vivadent, Lichtenstein, Germany)."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 5,
+     "action": "cut",
+     "description": "Embed the porcelain-bonded blocks in transparent PMMA resin and section them under water cooling into bars with a 1 mm × 1 mm zirconia–porcelain bond area.",
+     "quote": "To evaluate the efficacy of the bond between Y-TZP and overlayered porcelain, porcelain-bonded blocks were embedded in transparent polymethyl methacrylate resin and sectioned using a low-speed computerized numerical control cutting machine (Nemo, Mashhad, Iran) under water cooling to fabricate bar-shaped specimens with a 1 mm ×1 mm zirconia–porcelain bond area (Figure 1).",
+     "parameters": [
+      {
+       "name": "bond_area",
+       "quote": "To evaluate the efficacy of the bond between Y-TZP and overlayered porcelain, porcelain-bonded blocks were embedded in transparent polymethyl methacrylate resin and sectioned using a low-speed computerized numerical control cutting machine (Nemo, Mashhad, Iran) under water cooling to fabricate bar-shaped specimens with a 1 mm ×1 mm zirconia–porcelain bond area (Figure 1).",
+       "value_text": "1 mm ×1 mm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "low-speed computerized numerical control cutting machine",
+       "detail": "Nemo, Mashhad, Iran",
+       "quote": "To evaluate the efficacy of the bond between Y-TZP and overlayered porcelain, porcelain-bonded blocks were embedded in transparent polymethyl methacrylate resin and sectioned using a low-speed computerized numerical control cutting machine (Nemo, Mashhad, Iran) under water cooling to fabricate bar-shaped specimens with a 1 mm ×1 mm zirconia–porcelain bond area (Figure 1)."
+      }
+     ],
+     "not_stated": [
+      "cutting_speed",
+      "resin_curing_conditions"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "select",
+     "description": "Screen the bars under a stereomicroscope (×40) for cracks or chipped edges and select 12 sound bars at random per group.",
+     "quote": "The bars were screened under a stereomicroscope using ×40 magnification (Zoom; Blue Light Industry USA Inc., La Habra, CA, USA) for any probable cracks or chipped edges, and 12 sound bar specimens were selected randomly for each group.",
+     "parameters": [
+      {
+       "name": "bars_per_group",
+       "quote": "The bars were screened under a stereomicroscope using ×40 magnification (Zoom; Blue Light Industry USA Inc., La Habra, CA, USA) for any probable cracks or chipped edges, and 12 sound bar specimens were selected randomly for each group.",
+       "value_num": 12
+      }
+     ],
+     "equipment": [
+      {
+       "type": "stereomicroscope",
+       "detail": "×40; Zoom, Blue Light Industry USA Inc., La Habra, CA, USA",
+       "quote": "The bars were screened under a stereomicroscope using ×40 magnification (Zoom; Blue Light Industry USA Inc., La Habra, CA, USA) for any probable cracks or chipped edges, and 12 sound bar specimens were selected randomly for each group."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 7,
+     "action": "thermocycle",
+     "description": "Thermocycle the bars to simulate oral thermal conditions: 2,000 cycles between 5 and 55 °C, dwell time 20 seconds.",
+     "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+     "parameters": [
+      {
+       "name": "cycles",
+       "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+       "value_num": 2000
+      },
+      {
+       "name": "temperature_low",
+       "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+       "value_num": 5,
+       "unit": "°C"
+      },
+      {
+       "name": "temperature_high",
+       "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+       "value_num": 55,
+       "unit": "°C"
+      },
+      {
+       "name": "dwell_time",
+       "quote": "To simulate the thermal conditions of oral cavity, the bar specimens were subjected to a thermocycling regime (2,000 cycles, 5°C–55°C, dwell time: 20 seconds).",
+       "value_num": 20,
+       "unit": "s"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "transfer_time",
+      "bath_medium"
+     ]
     }
    ]
   }
@@ -1464,13 +1931,13 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Les deux sols diffèrent par leur composition : sol de silice (TEOS, HNO3, éthanol, eau) contre sol d'aluminosilicate (TEOS, isopropanol, HNO3, nitrate d'aluminium). Les revêtements font environ 10 μm et créent des phases nouvelles à l'interface (ZrSiO4 pour la silice ; Al2SiO5, ZrSiO4 et Zr5Al3O0.5 pour l'aluminosilicate). La résistance μTBS est de 24,08 MPa pour Si/Al, 22,82 pour Si, 20,52 pour le témoin (valeur lue sur la figure 6) et 16,74 pour le sablage ; seule la différence entre Si/Al et Si n'est pas significative (P=0,67).",
+   "text": "Les deux sols diffèrent par leur composition : sol de silice (TEOS, HNO3, éthanol, eau) contre sol d'aluminosilicate (TEOS, isopropanol, HNO3, nitrate d'aluminium). Les couches interfaciales mesurent « ~10 μm » (valeur avec tilde, relevée sur coupe MEB des éprouvettes liées à la porcelaine, donc après cuisson) et, selon l'attribution DRX des auteurs, de nouvelles phases se formeraient (ZrSiO4 pour la silice ; Al2SiO5, ZrSiO4 et Zr5Al3O0.5 pour l'aluminosilicate ; ces attributions sont discutées dans les annotations de limites). La résistance μTBS est de 24,08 MPa pour Si/Al, 22,82 pour Si, 20,52 pour le témoin (valeur lue sur la figure 6) et 16,74 pour le sablage ; deux différences ne sont pas significatives : Si/Al contre Si (P=0,67) et Si contre témoin (P=0,18, flèche en pointillés de la figure 6 ; les auteurs parlent d'une résistance « relatively equal » pour les échantillons revêtus de silice et le témoin).",
    "quote": "The maximum μTBS mean value was obtained in the Al/Si group (24.08±3.44 MPa), followed by the Si group (22.82±2.44 MPa), having no statistically significant difference (P=0.67)."
   },
   {
    "type": "comparaison_branches",
    "route": "Bars_Si",
-   "text": "Les quatre voies Bars_* partagent le même protocole de cuisson de la porcelaine, de découpe et de thermocyclage ; seul le bloc de départ change (revêtu de silice, revêtu d'aluminosilicate, non traité, sablé). Les résistances sont rangées par groupe sur ces voies. L'article ne dit pas que les blocs non revêtus ont été lavés à l'eau courante avant la cuisson : l'étape 1 est donc signalée comme variation « non citée » pour Bars_C et Bars_S."
+   "text": "Les quatre voies Bars_* partagent le même protocole de cuisson de la porcelaine, de découpe et de thermocyclage ; seul le bloc de départ change (revêtu de silice, revêtu d'aluminosilicate, non traité, sablé). Les résistances sont rangées par groupe sur ces voies. L'article ne décrit le lavage à l'eau courante qu'à propos des « coated Y-TZP blocks » : Bars_C et Bars_S ont donc leurs propres étapes, sans ce lavage."
   },
   {
    "type": "tendance_observee",
@@ -1501,14 +1968,74 @@
    "quote": "during sol–gel dip-coating process used in this study, a silica or an aluminosilicate network forms in two steps through a sol–gel process, consisting of a hydrolysis and the consequent polycondensation reactions to form a silica or an aluminosilicate network."
   },
   {
-   "type": "mecanisme_analyse",
-   "route": "Si/Al",
-   "text": "Hypothèse de chimiste : le nitrate d'aluminium ajouté au sol de silice partiellement hydrolysé apporterait des liaisons Al–O–Si (décalage de la bande IR de 1 082 à 1 073 cm−1) ; à 400 °C, la calcination n'est probablement pas assez chaude pour former ZrSiO4 ou Zr5Al3O0.5 par réaction à l'état solide, ces phases détectées en DRX pourraient donc se former en partie lors de la cuisson de la porcelaine (830–860 °C) ou être des attributions de fiches DRX discutables (la légende de la figure 3 cite stishovite et coesite, polymorphes de SiO2 de haute pression). Estimation : 67 mL de TEOS (densité ≈ 0,93 g/mL) font environ 0,3 mol de Si pour ≈ 20 mmol d'Al (7,36 g de Al(NO3)3·9H2O), soit un rapport Al/Si voisin de 0,07."
-  },
-  {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'acide nitrique concentré (≥ 65 %) est corrosif et oxydant. Le TEOS, l'éthanol et l'isopropanol sont inflammables et le TEOS libère de l'éthanol en s'hydrolysant ; le nitrate d'aluminium est un oxydant. Le sablage à l'alumine et la découpe des blocs produisent des poussières fines de céramique à ne pas inhaler (masque, aspiration). La découpe a lieu sous refroidissement par eau."
+   "text": "L'acide nitrique concentré (≥ 65 %) est corrosif et oxydant. Le TEOS, l'éthanol et l'isopropanol sont inflammables et le TEOS libère de l'éthanol en s'hydrolysant ; le nitrate d'aluminium est un oxydant. Le sablage à l'alumine et la découpe des blocs produisent des poussières fines de céramique à ne pas inhaler (masque, aspiration). La découpe a lieu sous refroidissement par eau. Le sol de silice commence par mélanger l'acide nitrique concentré (≥ 65 %) à l'éthanol : le prémélange contient environ 24 % en masse de HNO3, oxydant fort au contact d'un combustible, et les mélanges d'acide nitrique concentré et d'alcool peuvent s'emballer avec dégagement de NOx ; ajouter l'acide lentement et à froid, sous hotte, sans stocker le mélange en flacon fermé (fiche NOAA CAMEO de l'acide nitrique). À la calcination à 400 °C du sol d'aluminosilicate, les nitrates restants se décomposent en NOx : four ventilé ou sous hotte."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Si",
+   "text": "Hypothèse de chimiste : au trempage, le sol forme un film humide qui draine ; l'évaporation concentre les oligomères de silanols, qui se condensent entre eux et avec les hydroxyles de surface de la zircone (liaisons Zr–O–Si). À 400 °C on obtiendrait une silice amorphe microporeuse, sans zircon. À la cuisson de la porcelaine (830–860 °C), la silice se souderait à la porcelaine feldspathique par frittage visqueux et interdiffusion, ce qui irait avec les ruptures mixtes observées ; la liaison au substrat serait une adhérence oxyde/oxyde par liaisons Zr–O–Si plutôt qu'une couche de ZrSiO4 cristallin (Hench et West, Chem. Rev. 1990 ; notice OSTI 784452)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Si/Al",
+   "text": "Hypothèse de chimiste : l'Al3+ hydraté du nitrate d'aluminium se condense avec les silanols du sol de silice partiellement hydrolysé (liaisons Si–O–Al), ce qui irait avec le décalage de la bande IR de 1 082 à 1 073 cm−1. Estimation : 67 mL de TEOS (densité ≈ 0,93 g/mL) font ≈ 0,300 mol de Si pour ≈ 19,6 mmol d'Al (7,36 g de Al(NO3)3·9H2O), soit Al/Si ≈ 0,065 : le gel serait une silice amorphe dopée à ≈ 6 % d'Al, sans phase aluminosilicate cristalline à 400 °C. À la cuisson de la porcelaine, ce film se souderait au verre feldspathique, déjà aluminosilicaté, ce qui pourrait améliorer un peu le mouillage. Les phases Al2SiO5, ZrSiO4 et Zr5Al3O0.5 annoncées en DRX ne pourraient pas se former dans ces conditions."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Silica_sol",
+   "text": "Le rapport molaire TEOS:HNO3 = 1:1,7 met l'acide nitrique en quantité stœchiométrique et non catalytique : avec les masses molaires de manuel, cela fait ≈ 2,3 mol/L de HNO3 dans le sol, 1 à 3 ordres de grandeur au-dessus des sols de TEOS acides courants (Hench et West, Chem. Rev. 1990). Une coquille (0,017 ?) est possible mais n'a pas pu être vérifiée, la source étant « as described previously ». De plus, l'eau de l'acide à 65 % n'est pas comptée dans le rapport H2O:TEOS = 2 : le rapport réel serait d'environ 5,2."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Aluminosilicate_sol",
+   "text": "Avec 67 mL de TEOS et 7,36 g de Al(NO3)3·9H2O, le sol contient ≈ 0,300 mol de Si pour ≈ 19,6 mmol d'Al, soit Al/Si ≈ 0,065 : une silice dopée à ≈ 6 % d'Al, et non un précurseur d'aluminosilicate cristallin. Une phase Al2SiO5 « prédominante » (Al/Si = 2) demanderait environ 30 fois plus d'aluminium ; la quantité d'eau et d'acide de la préhydrolyse n'est pas donnée (H2O/TEOS ≥ 9,8 sans elle)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si",
+   "text": "Le zircon (ZrSiO4) annoncé après calcination à 400 °C est improbable : dans les gels ZrO2–SiO2 sans minéralisateur, il ne se forme que vers 1 200 °C (notice OSTI 784452) et la silice sol–gel reste amorphe à 400 °C ; il s'agit très probablement d'un recouvrement de raies de la zircone tétragonale du substrat ou d'une indexation abusive."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si",
+   "text": "Les fiches DRX retenues sur la figure 3 pour la silice sont la stishovite (01-082-1646, figure 3A) et la coésite (00-008-0018, figure 3B), polymorphes de SiO2 de haute pression impossibles par sol–gel à pression ambiante, et « Aluminum zirconium » (00-016-0075, intermétallique) en 3B ; aucune fiche de zircone tétragonale n'est retenue en 3A et 3B alors que le substrat (3C) en donne les raies. L'identification ressemble à une recherche automatique sans contrôle chimique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si/Al",
+   "text": "Sillimanite et kyanite « prédominantes » sont impossibles : le sol ne contient que Al/Si ≈ 0,065 ; aucune phase aluminosilicate cristalline ne se forme d'un gel à 400 °C (même un gel de composition mullite ne cristallise qu'à ≈ 980 °C, notice Penn State de Huling et Messing) ; la kyanite est le polymorphe de haute pression d'Al2SiO5 (Holdaway, Am. J. Sci. 1971, cité via le rapport USGS OF 92-298)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si/Al",
+   "text": "« Zr5Al3O0.5 » n'est pas un oxyde mais l'intermétallique Zr5Al3 de type Mn5Si3 stabilisé par un peu d'oxygène interstitiel (Kim et al., J. Less-Common Met. 137, 55–59, 1988) : le former par calcination sous air à 400 °C demanderait de réduire Zr(IV) et Al(III), ce qui est impossible ; il s'agit d'une indexation automatique erronée de la DRX."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si/Al",
+   "text": "Le décalage IR de 1 082 à 1 073 cm−1 est bien compatible avec ≈ 6 % d'Al dans la silice, mais l'explication des auteurs est inversée : l'aluminium (électronégativité de Pauling 1,61) attire l'oxygène moins que le silicium (1,90), et la liaison Al–O plus longue et plus ionique abaisse la constante de force, d'où la bande à plus bas nombre d'onde ; « oxygen molecule » désigne un atome d'oxygène pontant. Les spectres IR portent sur le gel calciné et non sur le film déposé : aucune bande Zr–O–Si n'est discutée, donc la « liaison chimique » au substrat ne repose que sur la DRX, elle-même douteuse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si",
+   "text": "L'épaisseur d'environ 10 μm obtenue en un seul trempage dépasse largement l'épaisseur critique de fissuration des films de silice sol–gel (≈ 0,3 μm, Kappert et al., Soft Matter 2015, DOI non vérifié) et l'épaisseur attendue (≈ 2 μm de silice dense à 80 mm/s, ≈ 0,14 μm à 80 mm/min d'après un calcul de Landau–Levich aux propriétés de sol estimées) ; elle est mesurée après cuisson de la porcelaine, probablement sur une zone d'interdiffusion. « 80 mm/s » est une vitesse très élevée pour un dispositif de trempage (0,1 à 10 mm/s en général) : mm/min est plausible, mais la valeur est gardée telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Si",
+   "text": "L'argument des auteurs sur le volume de maille (« the cell volume of ZrSiO4 is four times larger ») compare des mailles de Z différents : par motif, ZrSiO4 occupe ≈ 1,94 fois le volume de ZrO2, et la réaction ZrO2 + SiO2 → ZrSiO4 diminue le volume d'environ 17 % ; la contrainte de compression annoncée ne s'en déduit pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Bars_C",
+   "text": "Le témoin n'a subi ni lavage, ni bain d'ultrasons, ni calcination à 400 °C, que les groupes revêtus ont eus ; aucune zircone nettoyée et calcinée sans sol n'est testée, donc l'écart Si/Al–témoin ne peut pas être attribué au seul revêtement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Bars_Si",
+   "text": "Les barres sont prises comme unités statistiques (12 par groupe) alors qu'elles proviennent de 10 blocs par groupe (pseudo-réplication), et le résumé annonce 30 blocs pour 4 groupes de 10. En revanche, un test de Tukey recalculé avec 12 barres par groupe à partir des moyennes et écarts types retrouve les valeurs de P de l'article (0,67 ; 0,013 ; 0,18 ; 0,008)."
   }
  ],
  "method_sources": [
@@ -1539,16 +2066,12 @@
    "issue": "Les spectres IR portent sur « the calcinated prepared gel » et non sur le revêtement lui-même ; ils sont rangés sous les voies Si et Si/Al faute de voie de gel calciné (conditions de calcination du gel non données)."
   },
   {
-   "where": "Bars_C, Bars_S, étape 1",
-   "issue": "Seuls les « coated Y-TZP blocks » sont décrits comme lavés à l'eau courante avant la cuisson ; pour les blocs non revêtus, le lavage n'est pas écrit. La variation de Bars_C et Bars_S le signale. Les conditions de cuisson de la porcelaine sont décrites une fois et appliquées aux quatre groupes."
-  },
-  {
    "where": "figure 6 (Bars_C, Bars_S, Bars_Si)",
    "issue": "Valeur du témoin 20,52 MPa lue sur l'étiquette de la barre ; son écart type (≈ 2,8 MPa, extrémité de la barre d'erreur autour de 23,3 MPa) est une lecture graphique approximative à 2 chiffres. Les P de la figure 6 (0,008 témoin/sablage, 0,18 témoin/silice, < 0,001 sablage/silice) sont lus sur les flèches ; 0,013 et < 0,001 pour Si/Al sont écrits dans le résumé."
   },
   {
    "where": "figures 2 à 5 lues",
-   "issue": "Figures lues : 2 (positions de bandes IR imprimées : 1 082,4 et 1 073,4 cm−1), 3 (fiches de référence), 4 (pics EDS qualitatifs : Zr, O ; + Al ; + Si ; + Al et Si), 5 (flèches sur le revêtement, épaisseur non mesurable) et 6. L'épaisseur du revêtement (~10 μm) vient du texte et est donnée pour Si et Si/Al ensemble ; les légendes des figures 4 et 5 n'ordonnent pas les groupes de la même façon (4C = Si, 5C = Al/Si)."
+   "issue": "Figures lues : 2 (positions de bandes IR imprimées : 1 082,4 et 1 073,4 cm−1), 3 (fiches de référence), 4 (pics EDS qualitatifs : Zr, O ; + Al ; + Si ; + Al et Si), 5 (flèches sur le revêtement, épaisseur non mesurable) et 6. L'épaisseur du revêtement (« ~10 μm », avec tilde) vient du texte, donnée pour Si et Si/Al ensemble, et rangée sur Bars_Si et Bars_Si/Al ; les légendes des figures 4 et 5 n'ordonnent pas les groupes de la même façon (4C = Si, 5C = Al/Si)."
   },
   {
    "where": "figure 3 (DRX)",
@@ -1561,6 +2084,22 @@
   {
    "where": "Silica_sol / Aluminosilicate_sol",
    "issue": "Les deux sols renvoient à des publications antérieures (« as described previously », « as previously mentioned by Cao et al. ») ; le protocole résumé ici n'est donné que par ce que l'article répète, les quantités du sol de silice ne sont données que comme rapport molaire."
+  },
+  {
+   "where": "Bars_C, Bars_S, lavage",
+   "issue": "Seuls les « coated Y-TZP blocks » sont décrits comme lavés à l'eau courante avant la cuisson de la porcelaine. Pour les blocs non revêtus (C, S), le lavage n'est pas écrit : Bars_C et Bars_S ont leurs propres étapes, sans lavage, mais le réactif « distilled water (running) » du parent Bars_Si reste hérité dans leur liste sans être utilisé par une étape. Les conditions de cuisson de la porcelaine sont décrites une fois et appliquées aux quatre groupes."
+  },
+  {
+   "where": "Bars_Si, Bars_Si/Al, coating_thickness",
+   "issue": "La légende de la figure 5 (« Cross-sectional SEM imaging of porcelain bonded to zirconia ») montre que l'épaisseur « ~10 μm » est mesurée sur la coupe d'éprouvettes liées à la porcelaine (après cuisson à 830–860 °C), et non sur le revêtement tel que calciné à 400 °C. Le texte ne distingue pas les voies Si et Si/Al : la même valeur est portée sur Bars_Si et Bars_Si/Al."
+  },
+  {
+   "where": "Si/Al, FTIR_main_Si-O_band",
+   "issue": "Le texte écrit « 1,073 cm−1 » ; l'étiquette imprimée de la figure 2 donne 1 073,4 cm−1 (silice : 1 082,4 sur la figure, « 1,082 » dans le texte). Une seule valeur est gardée par voie, celle de la figure."
+  },
+  {
+   "where": "Bars_Si, μTBS, statistiques",
+   "issue": "Traitement statistique des valeurs de P (conditions de la caractérisation) : « The effect of different surface treatments on the zirconia–porcelain μTBS was examined using one-way analysis of variance (ANOVA) procedure, which was followed by Tukey’s post hoc pairwise comparison (α=0.05) using SPSS V11.5 software. »"
   }
  ]
 }
