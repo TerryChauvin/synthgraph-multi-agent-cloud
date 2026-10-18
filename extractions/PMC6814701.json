@@ -47,11 +47,10 @@
      "role": "solvent",
      "amount": 1.2,
      "unit": "mL",
-     "not_stated": [
-      "purity",
-      "supplier"
-     ],
-     "quote": "AuMt1 | 3,2 | 1,6 | 1,20"
+     "quote": "AuMt1 | 3,2 | 1,6 | 1,20",
+     "purity": "18 MΩ",
+     "supplier": "Millipore",
+     "supplier_quote": "30 mL of ultrapure water (18 MΩ, Millipore) were added"
     },
     {
      "name": "ethanol (washing)",
@@ -78,6 +77,21 @@
        "value_num": 6,
        "unit": "mL",
        "quote": "The reducing agent volume was kept constant (1.6 mL), and the total volume sample was completed to 6 mL with ultrapure water."
+      },
+      {
+       "name": "reagent_ph_haucl4_solution",
+       "value_num": 2.02,
+       "quote": "HAuCl4 0.01M V (mL) pH=2.02"
+      },
+      {
+       "name": "reagent_ph_mt_extract",
+       "value_num": 5.1,
+       "quote": "Vol (mL) pH=5.10"
+      },
+      {
+       "name": "reagent_ph_ultrapure_water",
+       "value_num": 6.47,
+       "quote": "Vol (mL) pH=6.47"
       }
      ],
      "equipment": [
@@ -274,7 +288,7 @@
      "technique": "TEM",
      "result": "multiple shapes, average size 40 nm, extract layer around NPs, no aggregation",
      "instrument": "field emission Jeol 2010 F",
-     "conditions": "operated at 200 keV; 10 μL on copper grids with formvar-carbon film (300 mesh), dried 1 h, vacuum 12 h",
+     "conditions": "operated at 200 keV; 10 μL on copper grids with formvar-carbon film (300 mesh), dried 1 h, vacuum 12 h; NPs observed without cleaning the extract (without the centrifugation and washing of the Methods), to observe the interaction around the NPs",
      "quote": "Figure 5c, f show size distribution for each sample, and AuMt1 have an average size dispersion of 40 nm and AuMt2 of 150 nm."
     },
     {
@@ -311,6 +325,13 @@
      "instrument": "UV-Vis spectrometer, absorbance at 660 nm",
      "conditions": "MB 3.33 × 10−5 M, 90 μL of NPs (2 mg/mL), 200 μL of NaBH4 100 mM, magnetic stirring, 25 °C",
      "quote": "Catalytic activity on MB, at a concentration of 3.33 × 10−5 M, was analyzed by UV-Vis spectroscopy. In homogeneous catalysis, 90 μL of NPs (2 mg/mL) was added directly in the quartz cell that contains MB and 200 μL of NaBH4 at a concentration of 100 mM."
+    },
+    {
+     "technique": "MTT cytotoxicity assay (HUVEC)",
+     "result": "HUVEC viability at 25-200 μg/mL after 24 and 48 h (values in the results of this route)",
+     "instrument": "multimode plate reader (Synergy HTX, BioTek)",
+     "conditions": "cells adjusted to 100,000 cells/mL, 100 μL per well in 96-well plates; AuMt1 and AuMt2 at 200, 100, 50 and 25 μg/mL; incubation 24 and 48 h at 37 °C, 5% CO2; PBS wash, MTT solution 4 h, DMSO to dissolve the crystals; absorbance at 570 nm (Synergy HTX plate reader)",
+     "quote": "For MTT assay, cells were adjusted to 100,000 cells/mL, and 100 μL per well was placed in 96-well plates."
     }
    ],
    "outcomes": [
@@ -499,6 +520,66 @@
      "unit": "%",
      "from_figure": "Fig. 7b",
      "quote": "Fig. 7 Viability assay using MTT in HUVEC cell. a For 24 h and b 48 h."
+    },
+    {
+     "property": "XPS_C1s_C=O_contribution",
+     "value_num": 28.61,
+     "unit": "%",
+     "quote": "C=O | 286.97 | 4.51 | 28.61 | 287.09 | 1.95 | 25.45"
+    },
+    {
+     "property": "XPS_C1s_C-C_C=C_contribution",
+     "value_num": 54.74,
+     "unit": "%",
+     "quote": "C-C/C=C | 284.53 | 1.95 | 54.74 | 284.78 | 4.51 | 46.68"
+    },
+    {
+     "property": "XPS_O1s_O=C-O_contribution",
+     "value_num": 1.47,
+     "unit": "%",
+     "quote": "O=C-O | 534.44 | 1.61 | 1.47"
+    },
+    {
+     "property": "XPS_O1s_C=O_contribution",
+     "value_num": 71.85,
+     "unit": "%",
+     "quote": "C=O | 532.48 | 2.32 | 71.85 | 532.38 | 2.45 | 12.4"
+    },
+    {
+     "property": "XPS_O1s_O=C_contribution",
+     "value_num": 26.67,
+     "unit": "%",
+     "quote": "O=C | 530.98 | 2.6 | 26.67 | 530.98 | 3.02 | 73.74"
+    },
+    {
+     "property": "PdI_water_37C",
+     "value_num": 0.389,
+     "quote": "AuMt1 in water (37 °C) | 145.1 ± 8.67 | 0.389 | – | –"
+    },
+    {
+     "property": "PdI_s-DMEM_37C",
+     "value_num": 0.288,
+     "quote": "AuMt1 DMEM (37 °C) | 178.9 ± 7.69 | 0.288 | − 26.5 ± 2.19 | 7.2 ± 0.51"
+    },
+    {
+     "property": "HUVEC_localisation_confocal_50ugmL",
+     "value_text": "AuMt1: material dispersed in the cytoplasm; AuMt2: material concentrated in the nuclear periphery",
+     "quote": "In Fig. 11a, b for AuMt1, it can be observed that a material is dispersed in the cytoplasm, while in AuMt2, the material is concentrated in the nuclear periphery, as shown in Fig. 11c, d."
+    },
+    {
+     "property": "fluorescence_650_700nm_640nm_excitation",
+     "value_text": "red fluorescence of AuMt (collected emission 650–700 nm), excited with 640 nm diode laser",
+     "quote": "Red fluorescence of AuMt (collected emission 650–700 nm) was excited employing 640 nm diode laser"
+    },
+    {
+     "property": "live_dead_HUVEC_50ugmL_24h",
+     "value_text": "a large part of the cell population favorably marked for calcein and just a few for ethidium homodimer, indicating that cell culture is viable",
+     "quote": "it was found that a large part of the cell population favorably marked for calcein and just a few for ethidium homodimer, indicating that cell culture is viable"
+    },
+    {
+     "property": "s-DMEM_size_vs_concentration_25_200ugmL",
+     "value_text": "hydrodynamic diameter does not change with nanoparticle concentration",
+     "quote": "For each studied system, the hydrodynamic diameter does not change with nanoparticle concentration"
     }
    ],
    "missing_fields": [
@@ -562,7 +643,7 @@
      "technique": "TEM",
      "result": "average size 150 nm, no aggregation",
      "instrument": "field emission Jeol 2010 F",
-     "conditions": "operated at 200 keV; 10 μL on copper grids with formvar-carbon film (300 mesh)",
+     "conditions": "operated at 200 keV; 10 μL on copper grids with formvar-carbon film (300 mesh); NPs observed without cleaning the extract (without the centrifugation and washing of the Methods), to observe the interaction around the NPs",
      "quote": "Figure 5c, f show size distribution for each sample, and AuMt1 have an average size dispersion of 40 nm and AuMt2 of 150 nm."
     },
     {
@@ -585,6 +666,13 @@
      "instrument": "UV-Vis spectrometer, absorbance at 660 nm",
      "conditions": "MB 3.33 × 10−5 M, 90 μL of NPs (2 mg/mL), 200 μL of NaBH4 100 mM, magnetic stirring, 25 °C",
      "quote": "Catalytic activity on MB, at a concentration of 3.33 × 10−5 M, was analyzed by UV-Vis spectroscopy. In homogeneous catalysis, 90 μL of NPs (2 mg/mL) was added directly in the quartz cell that contains MB and 200 μL of NaBH4 at a concentration of 100 mM."
+    },
+    {
+     "technique": "MTT cytotoxicity assay (HUVEC)",
+     "result": "HUVEC viability at 25-200 μg/mL after 24 and 48 h (values in the results of this route)",
+     "instrument": "multimode plate reader (Synergy HTX, BioTek)",
+     "conditions": "cells adjusted to 100,000 cells/mL, 100 μL per well in 96-well plates; AuMt1 and AuMt2 at 200, 100, 50 and 25 μg/mL; incubation 24 and 48 h at 37 °C, 5% CO2; PBS wash, MTT solution 4 h, DMSO to dissolve the crystals; absorbance at 570 nm (Synergy HTX plate reader)",
+     "quote": "For MTT assay, cells were adjusted to 100,000 cells/mL, and 100 μL per well was placed in 96-well plates."
     }
    ],
    "outcomes": [
@@ -761,6 +849,66 @@
      "unit": "%",
      "from_figure": "Fig. 7b",
      "quote": "Fig. 7 Viability assay using MTT in HUVEC cell. a For 24 h and b 48 h."
+    },
+    {
+     "property": "XPS_C1s_C=O_contribution",
+     "value_num": 25.45,
+     "unit": "%",
+     "quote": "C=O | 286.97 | 4.51 | 28.61 | 287.09 | 1.95 | 25.45"
+    },
+    {
+     "property": "XPS_C1s_C-C_C=C_contribution",
+     "value_num": 46.68,
+     "unit": "%",
+     "quote": "C-C/C=C | 284.53 | 1.95 | 54.74 | 284.78 | 4.51 | 46.68"
+    },
+    {
+     "property": "XPS_O1s_C-O-C_contribution",
+     "value_num": 13.86,
+     "unit": "%",
+     "quote": "C-O-C | ----- | ----- | ----- | 532.78 | 1.57 | 13.86"
+    },
+    {
+     "property": "XPS_O1s_C=O_contribution",
+     "value_num": 12.4,
+     "unit": "%",
+     "quote": "C=O | 532.48 | 2.32 | 71.85 | 532.38 | 2.45 | 12.4"
+    },
+    {
+     "property": "XPS_O1s_O=C_contribution",
+     "value_num": 73.74,
+     "unit": "%",
+     "quote": "O=C | 530.98 | 2.6 | 26.67 | 530.98 | 3.02 | 73.74"
+    },
+    {
+     "property": "PdI_water_37C",
+     "value_num": 0.194,
+     "quote": "AuMt2 in water (37 °C) | 330.7 ± 11.4 | 0.194 | – | –"
+    },
+    {
+     "property": "PdI_s-DMEM_37C",
+     "value_num": 0.258,
+     "quote": "AuMt2 DMEM (37 °C) | 373.5 ± 9.85 | 0.258 | − 24.8 ± 2.37 | 7.18 ± 0.43"
+    },
+    {
+     "property": "HUVEC_localisation_confocal_50ugmL",
+     "value_text": "AuMt1: material dispersed in the cytoplasm; AuMt2: material concentrated in the nuclear periphery",
+     "quote": "In Fig. 11a, b for AuMt1, it can be observed that a material is dispersed in the cytoplasm, while in AuMt2, the material is concentrated in the nuclear periphery, as shown in Fig. 11c, d."
+    },
+    {
+     "property": "fluorescence_650_700nm_640nm_excitation",
+     "value_text": "red fluorescence of AuMt (collected emission 650–700 nm), excited with 640 nm diode laser",
+     "quote": "Red fluorescence of AuMt (collected emission 650–700 nm) was excited employing 640 nm diode laser"
+    },
+    {
+     "property": "live_dead_HUVEC_50ugmL_24h",
+     "value_text": "a large part of the cell population favorably marked for calcein and just a few for ethidium homodimer, indicating that cell culture is viable",
+     "quote": "it was found that a large part of the cell population favorably marked for calcein and just a few for ethidium homodimer, indicating that cell culture is viable"
+    },
+    {
+     "property": "s-DMEM_size_vs_concentration_25_200ugmL",
+     "value_text": "only for AuMt2 s-DMEM at 100 μg/mL the particle size increases with respect to the lowest evaluated concentration, which may indicate NP aggregation",
+     "quote": "only for, AuMt2 s-DMEM at 100 μg/mL, the particle size increases with respect to the lowest evaluated concentration, which may indicate NP aggregation processes at these concentrations"
     }
    ]
   },
@@ -898,6 +1046,20 @@
      "not_stated": [
       "filtrate_volume"
      ]
+    },
+    {
+     "order": 5,
+     "action": "evaporate",
+     "description": "A portion of the filtrate is rotoevaporated then lyophilized (for the DPPH and total polyphenol assays and to build the calibration curve of the extract concentration); not the extract used in the synthesis.",
+     "quote": "A portion of the filtrate was rotoevaporated and then lyophilized for DPPH and total polyphenol assay and to construct a calibration curve of Mt extract.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "pressure",
+      "portion_volume"
+     ]
     }
    ],
    "characterizations": [
@@ -957,6 +1119,34 @@
      "value_num": 425,
      "unit": "mg/g",
      "quote": "The value of 425 mg/g obtained from total polyphenols assay indicates that almost half of the extracted mass is equivalent to gallic acid."
+    },
+    {
+     "property": "DPPH_inhibition_extract_25ugmL",
+     "value_num": 86,
+     "unit": "%",
+     "quote": "Fig. 1 Characterization of Mt Extract. a Mt extract UV-Vis spectrum and b DPPH inhibition with one-way ANOVA analysis (*p < 0.05)",
+     "from_figure": "Fig. 1b"
+    },
+    {
+     "property": "DPPH_inhibition_extract_12.5ugmL",
+     "value_num": 52,
+     "unit": "%",
+     "quote": "Fig. 1 Characterization of Mt Extract. a Mt extract UV-Vis spectrum and b DPPH inhibition with one-way ANOVA analysis (*p < 0.05)",
+     "from_figure": "Fig. 1b"
+    },
+    {
+     "property": "DPPH_inhibition_extract_6.75ugmL_figure_label",
+     "value_num": 31,
+     "unit": "%",
+     "quote": "Fig. 1 Characterization of Mt Extract. a Mt extract UV-Vis spectrum and b DPPH inhibition with one-way ANOVA analysis (*p < 0.05)",
+     "from_figure": "Fig. 1b"
+    },
+    {
+     "property": "DPPH_inhibition_extract_3.375ugmL_figure_label",
+     "value_num": 18,
+     "unit": "%",
+     "quote": "Fig. 1 Characterization of Mt Extract. a Mt extract UV-Vis spectrum and b DPPH inhibition with one-way ANOVA analysis (*p < 0.05)",
+     "from_figure": "Fig. 1b"
     }
    ]
   }
@@ -987,7 +1177,7 @@
    "type": "tendance_observee",
    "route": null,
    "quote": "AuNP sizes are easily controlled by regulating a metal precursor/reducing an extract ratio.",
-   "text": "Quand le rapport extrait/précurseur augmente (AuMt2), la nucléation est très rapide mais la croissance est plus lente et les particules finales plus grosses. Plus de précurseur par rapport à l'extrait (AuMt1) donne des particules plus petites, plus variées en forme, plus actives en catalyse et mieux internalisées par les cellules."
+   "text": "Selon les auteurs, quand le rapport extrait/précurseur augmente (AuMt2), la nucléation est très rapide mais la croissance est plus lente et les particules finales plus grosses (voir la limite de reproductibilité sur AuMt2 : cette lecture est contredite par le comptage des particules). Plus de précurseur par rapport à l'extrait (AuMt1) donne des particules plus petites, plus variées en forme, plus actives en catalyse et mieux internalisées par les cellules."
   },
   {
    "type": "conclusion_auteurs",
@@ -1003,7 +1193,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AuMt1",
-   "text": "Hypothèse de chimiste : HAuCl4 (acide fort) abaisse le pH et le Au(III) est réduit par les tanins condensés et flavonoïdes de l'extrait, probablement avec une nucléation rapide puis une croissance autocatalytique, comme le suggère la courbe sigmoïde de l'absorbance. Avec peu d'or par rapport à l'extrait (AuMt2), la nucléation est probablement presque instantanée, et les auteurs attribuent les grosses particules finales à une croissance ensuite plus lente ; ce point reste une interprétation qui n'est pas démontrée par une série en temps. Les molécules d'extrait adsorbées jouent le rôle de stabilisant stérique et électrostatique (potentiels zêta de −35 à −43 mV)."
+   "text": "Hypothèse de chimiste : HAuCl4 (acide fort) abaisse le pH et le Au(III) est réduit par les catéchols et pyrogallols des tanins condensés et des flavonoïdes de l'extrait, oxydés en quinones avec libération de protons (probablement 3 H+ par Au), ce qui cadre avec l'acidification observée ; les protons viennent de l'oxydation elle-même, car un phénol (pKa voisin de 8 à 10) n'est pas déprotoné à pH < 2,65, contrairement à ce que disent les auteurs. Une croissance autocatalytique à la surface des germes est probable, comme le suggère la courbe sigmoïde de l'absorbance. Les molécules d'extrait adsorbées jouent le rôle de stabilisant stérique et électrostatique (potentiels zêta de −35 à −43 mV)."
   },
   {
    "type": "securite_analyse",
@@ -1018,12 +1208,47 @@
   {
    "type": "limite_reproductibilite",
    "route": "Mt_extract",
-   "text": "La concentration de l'extrait est de 32,5 mg/mL dans les Méthodes et de 121,8 mg/mL dans l'en-tête du tableau S1 de l'annexe : les deux valeurs ne peuvent pas être conciliées sans autre information. L'espèce botanique est donnée, mais pas l'origine de l'écorce, ni sa granulométrie, ni l'agitation pendant les 15 jours de macération."
+   "text": "La concentration de l'extrait est de 32,5 mg/mL dans les Méthodes et de 121,8 mg/mL dans l'en-tête du tableau S1 de l'annexe : les deux valeurs ne peuvent pas être conciliées sans autre information. La valeur des Méthodes (≤ 22 % de l'écorce extraite, proche de la teneur en tanins condensés rapportée par Marques et al., 2021) est plausible ; celle de l'annexe (≤ 81 % de la masse d'écorce dissoute par macération) est impossible. Le rapport extrait/or, présenté comme le paramètre qui règle la taille, n'est donc connu qu'à un facteur 3,75 près. L'espèce botanique est donnée, mais pas l'origine de l'écorce, ni sa granulométrie, ni l'agitation pendant les 15 jours de macération."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Annexe absente du dépôt : les figures S1 (évolution du pH au cours de la synthèse), S2 (DLS en fonction de la concentration), S3 (composés de l'extrait), S4 (déconvolution O 1s) et S5–S7 (internalisation, intensités de fluorescence) de l'annexe 1 ne sont présentes que par leur légende ; seuls les tableaux S1 et S2 sont lisibles. Le rapport d'internalisation 3:1 vient du texte principal."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AuMt2",
+   "text": "Hypothèse de chimiste : même réduction que AuMt1. Avec deux fois moins d'or et des particules 3,75 fois plus grosses en diamètre (TEM), AuMt2 contient environ 100 fois moins de particules ; la « nucléation plus rapide » invoquée par les auteurs ne l'explique pas (une nucléation rapide donne plus de germes, donc des particules plus petites, selon LaMer et Dinegar, 1950). Il est plus probable que l'excès de polyphénols complexe le Au(III) et limite les germes, ou que les objets de 150 nm soient des assemblages de particules plus petites pontés par les tanins, ce qui irait avec la DLS à 314 nm et le plasmon à 560 nm seulement. À vérifier par HRTEM d'un objet de 150 nm après lavage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuMt2",
+   "text": "Contradiction dans l'article : AuMt2 contient deux fois moins d'or mais des particules 3,75 fois plus grosses en diamètre (150 contre 40 nm en TEM), soit environ 100 fois moins de particules, ce qui est contraire à la « nucléation plus rapide » invoquée par les auteurs. L'objet de 150 nm est aussi peu compatible avec le plasmon à 560 nm et la DLS à 314 nm, et la TEM a été faite sans lavage de l'extrait : il pourrait s'agir d'assemblages de particules plus petites. Le lien « taille réglée par le rapport précurseur/extrait » n'est établi que sur deux points."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuMt1",
+   "text": "La position Au 4f7/2 de 84,95 eV (tableau S2) est supérieure de 0,95 eV à celle de l'or métallique et proche de Au(I) (environ 85,0 eV) ; la référence en énergie n'est pas donnée. Les auteurs l'expliquent par la taille, mais Radnik et al. (2003) ne rapportent de tels décalages que pour des particules de moins de 10 nm, pas pour 40 nm : « gold fully reduced » n'est pas démontré pour AuMt1."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuMt1",
+   "text": "La fluorescence des particules n'est pas démontrée : excitation à 640 nm et collecte dès 650 nm, à 10 nm de la raie laser, sur des particules d'or de 40 à 150 nm qui diffusent fortement ; aucun spectre d'émission ni témoin (or de même taille sans extrait, extrait seul). La conclusion « sondes fluorescentes » et le rapport d'internalisation 3:1, mesuré par l'intensité de ce canal, reposent sur ce point."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuMt1",
+   "text": "Catalyse : K = 8,24 × 10−3 s−1 donne un temps de demi-réaction de 84 s alors que 50 % de dégradation sont atteints à 190 s, d'où une période d'induction : la courbe n'est pas d'ordre 1 depuis t = 0. Il s'agit d'une réduction du bleu de méthylène en leuco-MB. Les témoins NaBH4 seul et extrait seul manquent, et le volume de la cuve n'est pas donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuMt1",
+   "text": "Les déconvolutions C 1s et O 1s du tableau S2 sont fragiles : C=O (286,97 eV) et C–O (286,17 eV) ne sont séparés que de 0,8 eV avec des largeurs jusqu'à 4,51 eV, la largeur de 4,51 eV apparaît deux fois (C=O de AuMt1 et C–C de AuMt2), et en O 1s « C=O » et « O=C » désignent le même groupe. L'argument 16,6 contre 27,8 % de C–O repose sur ces ajustements."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Mt_extract",
+   "text": "Quinze grammes d'écorce et 100 mL de solvant dans un flacon de 100 mL : le volume dépasse la capacité nominale, et le simple couvercle d'aluminium laisse évaporer l'éthanol pendant 15 jours ; prévoir un flacon plus grand et fermé."
   }
  ],
  "sample_inventory": [
@@ -1097,36 +1322,12 @@
    "ref_id": "CR41",
    "role": "autre",
    "quote": "For scavenging activity, DPPH radical dissolved on ethanol was used as a blank"
-  },
-  {
-   "route": "Mt_extract",
-   "ref_id": "CR42",
-   "role": "autre",
-   "quote": "The results are expressed as gallic acid equivalents"
-  },
-  {
-   "route": "Mt_extract",
-   "ref_id": "CR43",
-   "role": "autre",
-   "quote": "The results are expressed as gallic acid equivalents"
-  },
-  {
-   "route": "AuMt1",
-   "ref_id": "CR46",
-   "role": "autre",
-   "quote": "where A sample is the absorbance of the sample and A control is the absorbance of blank"
-  },
-  {
-   "route": "AuMt1",
-   "ref_id": "CR47",
-   "role": "autre",
-   "quote": "where A sample is the absorbance of the sample and A control is the absorbance of blank"
   }
  ],
  "doubts": [
   {
    "where": "Mt_extract, concentration",
-   "issue": "Les Méthodes donnent 32,5 mg/mL (« The concentration of Mt extract was 32.5 mg/mL ») alors que l'en-tête du tableau S1 de l'annexe écrit « Mt Extract 121.8 mg/mL ». Valeur des Méthodes retenue en résultat de la voie ; la valeur de l'annexe n'est pas extraite."
+   "issue": "Les Méthodes donnent 32,5 mg/mL (« The concentration of Mt extract was 32.5 mg/mL ») alors que l'en-tête du tableau S1 de l'annexe écrit « Mt Extract 121.8 mg/mL » (facteur 3,75). Valeur des Méthodes retenue en résultat de la voie et dans la réaction ; la valeur de l'annexe n'est pas extraite, elle est notée ici et dans l'annotation limite_reproductibilite."
   },
   {
    "where": "AuMt1, étape 3 (durée de réaction)",
@@ -1155,6 +1356,22 @@
   {
    "where": "AuMt2, étape 1 (concentration)",
    "issue": "Les concentrations de précurseur (5,3 et 2,6 mM) sont celles du mélange final de 6 mL ; elles sont enregistrées comme paramètre de l'étape 1 et en variation, en plus des volumes de HAuCl4 (tableau S1)."
+  },
+  {
+   "where": "Mt_extract, Fig. 1b (DPPH)",
+   "issue": "Inhibitions lues sur la figure 1b (précision ±3 points environ). La figure écrit 6.75 et 3.375 μg/mL en abscisse alors que les Méthodes écrivent 6.25 et 3.125 μg/mL : étiquettes de la figure conservées dans les noms de propriété ; le texte donne 50 % à 12,5 mg/L, cohérent avec la lecture de 52 %."
+  },
+  {
+   "where": "AuMt1, eau ultrapure (étape 1)",
+   "issue": "La pureté et le fournisseur (« 18 MΩ, Millipore ») viennent du paragraphe d'extraction, où l'eau ultrapure est citée pour la macération ; la phrase de la synthèse dit seulement « ultrapure water ». Même appellation dans le même paragraphe de Méthodes : renvoi implicite."
+  },
+  {
+   "where": "AuMt1 et AuMt2, fluorescence (Fig. 9)",
+   "issue": "Les Méthodes donnent une collecte de 650 à 670 nm, les Résultats « collected emission 650–700 nm ». Les deux valeurs sont dans l'article ; seule celle des Résultats est extraite (résultat)."
+  },
+  {
+   "where": "AuMt1, pH des réactifs (tableau S1)",
+   "issue": "Les pH 2,02 (HAuCl4), 5,10 (extrait) et 6,47 (eau) viennent de l'en-tête du tableau S1, qui porte aussi la concentration d'extrait de 121,8 mg/mL en désaccord avec les Méthodes ; pH repris en paramètres de l'étape 1 sans trancher."
   }
  ]
 }
