@@ -1,0 +1,71 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8292365</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8292365 — One-pot synthesis of S-scheme MoS2/g-C3N4 heterojunction as effective visible light photocatalyst.</h1>
+<h2>Voie : MCN-500</h2>
+<pre class="mermaid">flowchart LR
+  R13692([&quot;sodium molybdate dihydrate&lt;br/&gt;mass ratio of 1:3&quot;]):::reactif
+  R13692 --&gt;|&quot;precursor&quot;| S16378
+  R13693([&quot;thiourea&lt;br/&gt;mass ratio of 1:3&quot;]):::reactif
+  R13693 --&gt;|&quot;precursor&quot;| S16378
+  R13694([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13694 --&gt;|&quot;gas&quot;| S16378
+  R13695([&quot;water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13695 --&gt;|&quot;wash&quot;| S16378
+  R13696([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13696 --&gt;|&quot;wash&quot;| S16378
+  S16378[&quot;&lt;b&gt;1. grind&lt;/b&gt;&quot;]:::etape
+  S16378 --&gt; S16379
+  S16379[&quot;&lt;b&gt;2. transfer&lt;/b&gt;&quot;]:::etape
+  S16379 --&gt; S16380
+  S16380[&quot;&lt;b&gt;3. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;heating_rate : 10 °C/min&lt;br/&gt;atmosphere : N2 gas flow&quot;]:::etape
+  S16380 --&gt; S16381
+  S16381[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water and ethanol&quot;]:::etape
+  S16381 --&gt; M
+  M{{&quot;MoS2/g-C3N4 composite (one-pot, 500 °C)&lt;br/&gt;&quot;}}:::materiau
+  O65253[&quot;phase : peaks of MoS2 and g-C3N4 simu…&quot;]:::resultat
+  M -.-&gt; O65253
+  O65254[&quot;RhB_degradation_efficiency : 90 %&quot;]:::resultat
+  M -.-&gt; O65254
+  O65255[&quot;RhB_C_over_C0_at_7_h : 0.1&quot;]:::resultat
+  M -.-&gt; O65255
+  O65256[&quot;RhB_degradation_rate_constant_k : 0.22851 h−1&quot;]:::resultat
+  M -.-&gt; O65256
+  O65257[&quot;MoS2_content_TGA_estimate : 55.8 %&quot;]:::resultat
+  M -.-&gt; O65257
+  O65258[&quot;BET_surface_area : 48.78 m2 g−1&quot;]:::resultat
+  M -.-&gt; O65258
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10768{{&quot;MCN-500&quot;}}:::materiau
+  B10769[&quot;MCN-450&quot;]:::etape
+  B10768 --&gt;|&quot;temperature = 450 °C&quot;| B10769
+  B10770[&quot;MCN-550&quot;]:::etape
+  B10768 --&gt;|&quot;temperature = 550 °C&quot;| B10770
+  B10771[&quot;MCN-600&quot;]:::etape
+  B10768 --&gt;|&quot;temperature = 600 °C&quot;| B10771
+  B10772[&quot;CN-500&quot;]:::etape
+  B10768 --&gt;|&quot;sodium molybdate dihydra… = absent&quot;| B10772
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : FTO_working_electrode</h2>
+<pre class="mermaid">flowchart LR
+  R13698([&quot;selected samples (CN-500, MCN-T)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13698 --&gt;|&quot;active_material&quot;| S16384
+  R13699([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13699 --&gt;|&quot;solvent&quot;| S16384
+  R13700([&quot;fluorine doped tin oxide (FTO) glass&lt;br/&gt;1 × 1 cm&quot;]):::reactif
+  R13700 --&gt;|&quot;substrate&quot;| S16384
+  S16384[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S16384 --&gt; S16385
+  S16385[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S16385 --&gt; S16386
+  S16386[&quot;&lt;b&gt;3. dry&lt;/b&gt;&quot;]:::etape
+  S16386 --&gt; M
+  M{{&quot;photoelectrode: sample slurry cast on FTO glass&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
