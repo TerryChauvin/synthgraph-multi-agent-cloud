@@ -1,6 +1,6 @@
 # Audit du palier 6
 
-Genere le 2026-10-18T01:45:54Z — publications n°251 a n°300 (50 sur 50).
+Genere le 2026-10-18T01:53:57Z — publications n°251 a n°300 (50 sur 50).
 
 ## Volume
 
@@ -17,19 +17,10 @@ Genere le 2026-10-18T01:45:54Z — publications n°251 a n°300 (50 sur 50).
 | citation | 0 | 0 | 0 |
 | physique | 0 | 6 | 0 |
 | chimie | 0 | 48 | 213 |
-| coherence | 9 | 2 | 78 |
+| coherence | 0 | 2 | 78 |
 
 | id | Gravite | Controle | Article | Cible | Description |
 |---|---|---|---|---|---|
-| 4573 | bloquant | coherence | PMC9795147 | PMC9795147 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
-| 4578 | bloquant | coherence | PMC6266794 | PMC6266794 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
-| 4577 | bloquant | coherence | PMC11297172 | PMC11297172 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
-| 4572 | bloquant | coherence | PMC9307632 | PMC9307632 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
-| 4576 | bloquant | coherence | PMC6369825 | PMC6369825 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
-| 4580 | bloquant | coherence | PMC5304631 | PMC5304631 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
-| 4575 | bloquant | coherence | PMC11752507 | PMC11752507 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
-| 4574 | bloquant | coherence | PMC12805362 | PMC12805362 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
-| 4579 | bloquant | coherence | PMC11098855 | PMC11098855 | relecture integrale due (calibrage ou echantillon 1/5) non faite |
 | 4415 | avertissement | chimie | PMC8930993 | route 'NiCo2S4@PPy/NF' | elements du produit NiCo2S4@PPy sans source parmi les reactifs: ['P'] |
 | 4506 | avertissement | chimie | PMC11297172 | route '(Ba0.8Sr0.2)CeO3' | elements du produit (Ba0.8Sr0.2)CeO3 sans source parmi les reactifs: ['Ba', 'Ce', 'Sr'] |
 | 4507 | avertissement | chimie | PMC11297172 | route '(Sr0.5Pb0.5)CeO3' | elements du produit (Sr0.5Pb0.5)CeO3 sans source parmi les reactifs: ['Ce', 'Pb', 'Sr'] |
@@ -78,8 +69,8 @@ Genere le 2026-10-18T01:45:54Z — publications n°251 a n°300 (50 sur 50).
 | 4363 | avertissement | chimie | PMC7153708 | route 'Au@Se' | elements du produit Au@Se sans source parmi les reactifs: ['Au'] |
 | 4364 | avertissement | chimie | PMC7153708 | route 'Au@Se_5uL' | elements du produit Au@Se sans source parmi les reactifs: ['Au'] |
 | 4365 | avertissement | chimie | PMC7153708 | route 'Au@Se_10uL' | elements du produit Au@Se sans source parmi les reactifs: ['Au'] |
-| 4660 | avertissement | coherence | PMC4726031 | routes ['La(FeCo)O3/MMT', 'La(FeNi)O3/MMT'] | branches identiques (memes variations) |
-| 4610 | avertissement | coherence | PMC8930993 | route 'NiCo2S4_NF' | voie de base sans reactif |
+| 4651 | avertissement | coherence | PMC4726031 | routes ['La(FeCo)O3/MMT', 'La(FeNi)O3/MMT'] | branches identiques (memes variations) |
+| 4601 | avertissement | coherence | PMC8930993 | route 'NiCo2S4_NF' | voie de base sans reactif |
 | 4305 | avertissement | physique | PMC7648642 | voie 'HCF' etape 4 temperature | unite non reconnue, pas de conversion SI: '℃' |
 | 4306 | avertissement | physique | PMC7648642 | voie 'HCF' etape 7 temperature | unite non reconnue, pas de conversion SI: '℃' |
 | 4307 | avertissement | physique | PMC7181732 | voie 'rGO-Am-Benz' etape 7 temperature | 150 °C au-dessus du point d'ebullition du solvant (82 °C) sans autoclave, reflux ni enceinte fermee mentionnes |
