@@ -1,0 +1,85 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10967699</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10967699 — One-pot in situ synthesis of an NS-ligand co-doped metal-organic framework for the enhanced adsorption-assisted photocatalytic decontamination of metronidazole.</h1>
+<h2>Voie : PCN-600</h2>
+<pre class="mermaid">flowchart LR
+  R13913([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;80 mg&quot;]):::reactif
+  R13913 --&gt;|&quot;precursor&quot;| S16617
+  R13914([&quot;tetrakis(4-carboxyphenyl)porphyrin (TCPP)&lt;br/&gt;80 mg&quot;]):::reactif
+  R13914 --&gt;|&quot;ligand&quot;| S16617
+  R13915([&quot;trifluoroacetic acid&lt;br/&gt;2.4 mL&quot;]):::reactif
+  R13915 --&gt;|&quot;modulator&quot;| S16617
+  R13916([&quot;N,N-dimethylformamide (DMF)&lt;br/&gt;16 mL&quot;]):::reactif
+  R13916 --&gt;|&quot;solvent&quot;| S16617
+  R13917([&quot;DMF (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13917 --&gt;|&quot;wash&quot;| S16617
+  S16617[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S16617 --&gt; S16618
+  S16618[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S16618 --&gt; S16619
+  S16619[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;temperature : ambient temperature&quot;]:::etape
+  S16619 --&gt; S16620
+  S16620[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DMF&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S16620 --&gt; S16621
+  S16621[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S16621 --&gt; M
+  M{{&quot;PCN-600 (Fe-TCPP MOF)&lt;br/&gt;&quot;}}:::materiau
+  O66478[&quot;BET_surface_area : 79.8 m2 g−1&quot;]:::resultat
+  M -.-&gt; O66478
+  O66479[&quot;band_gap_allowed_indirect : 2.89 eV&quot;]:::resultat
+  M -.-&gt; O66479
+  O66480[&quot;band_gap_allowed_direct : 2.5 eV&quot;]:::resultat
+  M -.-&gt; O66480
+  O66481[&quot;morphology : needle-shaped structures, sev…&quot;]:::resultat
+  M -.-&gt; O66481
+  O66482[&quot;MNZ_adsorption_at_adsorption_equil… : 12 %&quot;]:::resultat
+  M -.-&gt; O66482
+  O66483[&quot;MNZ_adsorption_capacity_at_adsorpt… : 24 mg g−1&quot;]:::resultat
+  M -.-&gt; O66483
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10863{{&quot;PCN-600&quot;}}:::materiau
+  B10864[&quot;PCN-600-NS-10&quot;]:::etape
+  B10863 --&gt;|&quot;dopant = 10 mg&lt;br/&gt;repetitions = twice&lt;br/&gt;temperature = 80 °C&quot;| B10864
+  B10865[&quot;PCN-600-NS-20&quot;]:::etape
+  B10864 --&gt;|&quot;1,2-benzisothiazole-3-on… = 20 mg&quot;| B10865
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PCN-600-NS-10_regeneration</h2>
+<pre class="mermaid">flowchart LR
+  R13919([&quot;PCN-600-NS-10 reused sample (route PCN-600-N…&lt;br/&gt;concentration of approximatel…&quot;]):::reactif
+  R13919 --&gt;|&quot;intermediate&quot;| S16622
+  R13920([&quot;water&lt;br/&gt;5 mL&quot;]):::reactif
+  R13920 --&gt;|&quot;wash&quot;| S16622
+  R13921([&quot;acetone&lt;br/&gt;5 mL&quot;]):::reactif
+  R13921 --&gt;|&quot;wash&quot;| S16622
+  R13922([&quot;ethanol&lt;br/&gt;5 mL&quot;]):::reactif
+  R13922 --&gt;|&quot;wash&quot;| S16622
+  S16622[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : water, acetone, and ethanol&lt;br/&gt;volume : 5 mL&lt;br/&gt;repetitions : three times for each solvent&quot;]:::etape
+  S16622 --&gt; S16623
+  S16623[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S16623 --&gt; S16624
+  S16624[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&quot;]:::etape
+  S16624 --&gt; S16625
+  S16625[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S16625 --&gt; M
+  M{{&quot;regenerated PCN-600-NS-10&lt;br/&gt;&quot;}}:::materiau
+  O66597[&quot;weight_1st_cycle : 0.02&quot;]:::resultat
+  M -.-&gt; O66597
+  O66598[&quot;MNZ_adsorption_removal_1st_cycle : 44 %&quot;]:::resultat
+  M -.-&gt; O66598
+  O66599[&quot;MNZ_degradation_removal_1st_cycle : 50 %&quot;]:::resultat
+  M -.-&gt; O66599
+  O66600[&quot;MNZ_total_removal_1st_cycle : 94 %&quot;]:::resultat
+  M -.-&gt; O66600
+  O66601[&quot;weight_2nd_cycle : 0.018&quot;]:::resultat
+  M -.-&gt; O66601
+  O66602[&quot;MNZ_adsorption_removal_2nd_cycle : 39 %&quot;]:::resultat
+  M -.-&gt; O66602
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

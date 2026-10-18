@@ -71,6 +71,7 @@
    "scale": null,
    "yield": null,
    "not_stated": [
+    "modifications_vs_ref19",
     "yield"
    ],
    "succeeded": true,
@@ -274,7 +275,7 @@
      "result": "BET surface area 79.80 m2 g−1",
      "instrument": "Autosorb-1MP instrument manufactured by Quantachrome in the United States",
      "conditions": "temperature of -196 °C (77 K)",
-     "quote": "The porosity analysis of PCN-600 was conducted through N2-adsorption studies at a temperature of 77 K, as illustrated in Fig. 1(c)."
+     "quote": "the Brunauer–Emmett–Teller (BET) surface area values were found to be 79.80 m2 g−1 for PCN-600 and 25.85 m2 g−1 for PCN-600-NS-10, respectively"
     },
     {
      "technique": "SEM / EDX / mapping",
@@ -288,7 +289,7 @@
      "result": "three weight-loss stages: solvent below 150 °C, incomplete ligands 150–375 °C, full pyrolysis 375–575 °C",
      "instrument": null,
      "conditions": null,
-     "quote": "Thermogravimetric analysis (TGA) is a commonly used method to measure defects in MOF materials."
+     "quote": "first, the weight loss at temperatures below 150 °C was related to the loss of the solvent. Next from 150 °C to 375 °C, there was a mass reduction related to loss of the incomplete ligands. Finally, peaks were observed between 375 °C, and a temperature of 575 °C, which was a sufficient temperature for the full pyrolysis of the substance structure."
     },
     {
      "technique": "UV-vis (solid state), Tauc plot",
@@ -359,6 +360,9 @@
     }
    ],
    "missing_fields": [
+    "BET degassing conditions",
+    "TGA conditions (heating rate, atmosphere)",
+    "UV-vis solid-state conditions",
     "pHpzc"
    ]
   },
@@ -428,10 +432,17 @@
     },
     {
      "technique": "N2 sorption",
-     "result": "BET surface area 25.85 m2 g−1; mesoporous architecture larger after doping",
+     "result": "BET surface area 25.85 m2 g−1",
      "instrument": "Autosorb-1MP instrument manufactured by Quantachrome in the United States",
      "conditions": "temperature of -196 °C (77 K)",
      "quote": "the Brunauer–Emmett–Teller (BET) surface area values were found to be 79.80 m2 g−1 for PCN-600 and 25.85 m2 g−1 for PCN-600-NS-10, respectively"
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "mesoporous architecture became larger after doping with the NS-ligand",
+     "instrument": "Autosorb-1MP instrument manufactured by Quantachrome in the United States",
+     "conditions": "pore-size distribution by the BJH method (Fig. S1b)",
+     "quote": "The results demonstrated a mesoporous architecture that became larger after doping with the NS-ligand."
     },
     {
      "technique": "SEM / EDX / mapping",
@@ -442,17 +453,24 @@
     },
     {
      "technique": "XPS",
-     "result": "Fe–O, Fe 2p3/2 (711.1 eV) and 2p1/2 (724.4 eV), N 1s Fe–N (400.4 eV) and carbonitrile (398 eV), S–C at 165 eV",
+     "result": "Fe–O (O 1s, 529.5 eV); Fe 2p3/2 (711.1 eV) and Fe 2p1/2 (724.4 eV)",
      "instrument": "X-ray photoelectron spectroscopy equipment from Thermo Scientific in the United Kingdom",
      "conditions": "AlKα radiation",
-     "quote": "Similarly, the corresponding peak at 165 eV indicated the presence of S–C in the synthesized structure."
+     "quote": "a notable peak appeared at approximately 529.5 eV, which was assigned to the Fe–O, while the peaks at 531 and 532 eV were indicative of oxygen vacancies, signifying the presence of surface hydroxyl groups. XPS analysis of the Fe 2p spectrum revealed two distinct binding energy peaks. The first peak, observed at around 711.1 eV, was associated with the Fe 2p3/2 orbital, while the second peak at approximately 724.4 eV corresponded to the Fe 2p1/2 orbital."
+    },
+    {
+     "technique": "XPS",
+     "result": "N 1s signals at 400.4 eV (Fe–N) and 398 eV (carbonitrile); S–C at 165 eV",
+     "instrument": "X-ray photoelectron spectroscopy equipment from Thermo Scientific in the United Kingdom",
+     "conditions": "AlKα radiation",
+     "quote": "two distinct signals could be seen to emerge at 400.4 and 398 eV, attributed to the chemical species Fe–N and carbonitrile, respectively. Similarly, the corresponding peak at 165 eV indicated the presence of S–C in the synthesized structure."
     },
     {
      "technique": "TGA",
      "result": "largest weight loss between 150 and 375 °C, taken as maximum defects in PCN-600-NS-10",
      "instrument": null,
      "conditions": null,
-     "quote": "The presence of the maximum defects suggested in the PCN-600-NS-10 framework can be seen in Fig. 1(d)."
+     "quote": "the peak with the greatest elevation in TGA shows relationship between the temperature and weight loss with the most significant reduction occurring between 150 °C and 375 °C. The presence of the maximum defects suggested in the PCN-600-NS-10 framework can be seen in Fig. 1(d)."
     },
     {
      "technique": "UV-vis (solid state), Tauc plot",
@@ -930,7 +948,176 @@
      "value_num": 129.1,
      "unit": "J mol−1",
      "quote": "333 | 21.14 | −0.108 | 0.999 | 15 522 | −0.478 | 0.999 | 3 × 10−5 | 22.13 | 129.1 | 0.999"
+    },
+    {
+     "property": "pseudo_second_order_R2_initial_MNZ_10_mg_L-1",
+     "value_num": 0.999,
+     "quote": "10 | 44 | 46.8 | 46.9 | 0.273 | 0.999 | 59 | 0.0143 | 0.992"
+    },
+    {
+     "property": "pseudo_first_order_R2_initial_MNZ_10_mg_L-1",
+     "value_num": 0.992,
+     "quote": "10 | 44 | 46.8 | 46.9 | 0.273 | 0.999 | 59 | 0.0143 | 0.992"
+    },
+    {
+     "property": "pseudo_second_order_R2_initial_MNZ_20_mg_L-1",
+     "value_num": 0.999,
+     "quote": "20 | 29 | 57.6 | 57.8 | 0.121 | 0.999 | 42 | 0.0084 | 0.979"
+    },
+    {
+     "property": "pseudo_first_order_R2_initial_MNZ_20_mg_L-1",
+     "value_num": 0.979,
+     "quote": "20 | 29 | 57.6 | 57.8 | 0.121 | 0.999 | 42 | 0.0084 | 0.979"
+    },
+    {
+     "property": "pseudo_second_order_R2_initial_MNZ_30_mg_L-1",
+     "value_num": 0.999,
+     "quote": "30 | 25 | 74.1 | 73.7 | 0.0575 | 0.999 | 29 | 0.0054 | 0.988"
+    },
+    {
+     "property": "pseudo_first_order_R2_initial_MNZ_30_mg_L-1",
+     "value_num": 0.988,
+     "quote": "30 | 25 | 74.1 | 73.7 | 0.0575 | 0.999 | 29 | 0.0054 | 0.988"
+    },
+    {
+     "property": "k_app_298_K",
+     "value_num": 0.173,
+     "unit": "g mg−1 min−1",
+     "quote": "298 | 0.173 | 57.8 | 14.3 | 4.0 | −2.48 | −4.05 | 25.2"
+    },
+    {
+     "property": "Ce_298_K",
+     "value_num": 14.3,
+     "unit": "mg L−1",
+     "quote": "298 | 0.173 | 57.8 | 14.3 | 4.0 | −2.48 | −4.05 | 25.2"
+    },
+    {
+     "property": "k_app_318_K",
+     "value_num": 0.161,
+     "unit": "g mg−1 min−1",
+     "quote": "318 | 0.161 | 62.5 | 13.9 | 4.4 | −2.64"
+    },
+    {
+     "property": "Ce_318_K",
+     "value_num": 13.9,
+     "unit": "mg L−1",
+     "quote": "318 | 0.161 | 62.5 | 13.9 | 4.4 | −2.64"
+    },
+    {
+     "property": "k_app_338_K",
+     "value_num": 0.15,
+     "unit": "g mg−1 min−1",
+     "quote": "338 | 0.15 | 66.7 | 13.6 | 4.9 | −2.81"
+    },
+    {
+     "property": "Ce_338_K",
+     "value_num": 13.6,
+     "unit": "mg L−1",
+     "quote": "338 | 0.15 | 66.7 | 13.6 | 4.9 | −2.81"
+    },
+    {
+     "property": "Langmuir_R2_293_K",
+     "value_num": 0.999,
+     "quote": "293 | 14.95 | −0.093 | 0.999 | 72 403 | −0.441 | 0.999 | 5 × 10−5 | 13.82 | 100.0 | 0.999"
+    },
+    {
+     "property": "Freundlich_R2_293_K",
+     "value_num": 0.999,
+     "quote": "293 | 14.95 | −0.093 | 0.999 | 72 403 | −0.441 | 0.999 | 5 × 10−5 | 13.82 | 100.0 | 0.999"
+    },
+    {
+     "property": "Dubinin-Radushkevich_R2_293_K",
+     "value_num": 0.999,
+     "quote": "293 | 14.95 | −0.093 | 0.999 | 72 403 | −0.441 | 0.999 | 5 × 10−5 | 13.82 | 100.0 | 0.999"
+    },
+    {
+     "property": "Langmuir_R2_313_K",
+     "value_num": 0.999,
+     "quote": "313 | 18.80 | −0.103 | 0.999 | 25 336 | −0.439 | 0.999 | 4 × 10−5 | 18.95 | 111.8 | 0.999"
+    },
+    {
+     "property": "Freundlich_R2_313_K",
+     "value_num": 0.999,
+     "quote": "313 | 18.80 | −0.103 | 0.999 | 25 336 | −0.439 | 0.999 | 4 × 10−5 | 18.95 | 111.8 | 0.999"
+    },
+    {
+     "property": "Dubinin-Radushkevich_R2_313_K",
+     "value_num": 0.999,
+     "quote": "313 | 18.80 | −0.103 | 0.999 | 25 336 | −0.439 | 0.999 | 4 × 10−5 | 18.95 | 111.8 | 0.999"
+    },
+    {
+     "property": "Langmuir_R2_333_K",
+     "value_num": 0.999,
+     "quote": "333 | 21.14 | −0.108 | 0.999 | 15 522 | −0.478 | 0.999 | 3 × 10−5 | 22.13 | 129.1 | 0.999"
+    },
+    {
+     "property": "Freundlich_R2_333_K",
+     "value_num": 0.999,
+     "quote": "333 | 21.14 | −0.108 | 0.999 | 15 522 | −0.478 | 0.999 | 3 × 10−5 | 22.13 | 129.1 | 0.999"
+    },
+    {
+     "property": "Dubinin-Radushkevich_R2_333_K",
+     "value_num": 0.999,
+     "quote": "333 | 21.14 | −0.108 | 0.999 | 15 522 | −0.478 | 0.999 | 3 × 10−5 | 22.13 | 129.1 | 0.999"
+    },
+    {
+     "property": "MNZ_dark_adsorption_at_pH_2",
+     "value_num": 3,
+     "unit": "%",
+     "from_figure": "Fig. 4b",
+     "quote": "Effect of the initial pH of the solution on the removal of metronidazole using PCN-600-NS-10; conditions: catalyst dose = 0.01 g L−1, MNZ conc. = 20 mg L−1, RT (b)."
+    },
+    {
+     "property": "MNZ_dark_adsorption_at_pH_4",
+     "value_num": 10,
+     "unit": "%",
+     "from_figure": "Fig. 4b",
+     "quote": "Effect of the initial pH of the solution on the removal of metronidazole using PCN-600-NS-10; conditions: catalyst dose = 0.01 g L−1, MNZ conc. = 20 mg L−1, RT (b)."
+    },
+    {
+     "property": "MNZ_dark_adsorption_at_pH_8",
+     "value_num": 16,
+     "unit": "%",
+     "from_figure": "Fig. 4b",
+     "quote": "Effect of the initial pH of the solution on the removal of metronidazole using PCN-600-NS-10; conditions: catalyst dose = 0.01 g L−1, MNZ conc. = 20 mg L−1, RT (b)."
+    },
+    {
+     "property": "MNZ_dark_adsorption_at_pH_10",
+     "value_num": 10,
+     "unit": "%",
+     "from_figure": "Fig. 4b",
+     "quote": "Effect of the initial pH of the solution on the removal of metronidazole using PCN-600-NS-10; conditions: catalyst dose = 0.01 g L−1, MNZ conc. = 20 mg L−1, RT (b)."
+    },
+    {
+     "property": "MNZ_dark_adsorption_at_5_mg_L-1_dose",
+     "value_num": 17,
+     "unit": "%",
+     "from_figure": "Fig. 4c",
+     "quote": "Effect of the dose of PCN-600-NS-10; conditions: MNZ conc. = 20 mg L−1, pH = 6, RT, (c)."
+    },
+    {
+     "property": "MNZ_dark_adsorption_at_20_mg_L-1_dose",
+     "value_num": 44,
+     "unit": "%",
+     "from_figure": "Fig. 4c",
+     "quote": "Effect of the dose of PCN-600-NS-10; conditions: MNZ conc. = 20 mg L−1, pH = 6, RT, (c)."
+    },
+    {
+     "property": "MNZ_dark_adsorption_at_40_mg_L-1_dose",
+     "value_num": 71,
+     "unit": "%",
+     "from_figure": "Fig. 4c",
+     "quote": "Effect of the dose of PCN-600-NS-10; conditions: MNZ conc. = 20 mg L−1, pH = 6, RT, (c)."
     }
+   ],
+   "missing_fields": [
+    "visible lamp (200 W): model, filter, spectrum",
+    "stirring speed of the photocatalytic test",
+    "concentrations of IPA, TEOA and p-BQ scavengers",
+    "kinetic constants by pH and dose (Fig. S6b-c, S7b-c): association to conditions not readable",
+    "pHpzc value",
+    "TGA conditions (heating rate, atmosphere)",
+    "BET degassing conditions"
    ]
   },
   {
@@ -957,10 +1144,10 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "pattern similar to PCN-600-NS-10 (Fig. 1a)",
+     "result": "After NS-ligand doping, the PXRD pattern of the material showed the main characteristic peaks of MOF",
      "instrument": "D/MAX-RB X-ray diffractometer (Rigaku, Japan)",
      "conditions": "Cu-Kα radiation, 40 kV and 40 mA",
-     "quote": "Fig. 1 XRD patterns (a) and FTIR spectra (b) of PCN-600, PCN-600-NS-10, and PCN-600-NS-20"
+     "quote": "After NS-ligand doping, the PXRD pattern of the material showed the main characteristic peaks of MOF, verifying the stability of PCN-600."
     },
     {
      "technique": "FTIR",
@@ -1318,13 +1505,13 @@
   {
    "type": "mecanisme_analyse",
    "route": "PCN-600",
-   "text": "Hypothèse : le Fe(III) du nitrate se coordonne aux carboxylates de TCPP pour former le réseau Fe-porphyrine (PCN-600), l'acide trifluoroacétique jouant probablement le rôle de modulateur qui ralentit la nucléation et améliore la cristallinité ; le chauffage à 150 °C dans le DMF permet la cristallisation solvothermale. En présence de BIT, le ligand compétiteur ou une partie de ses produits de décomposition pourraient occuper des sites de coordination de Fe ou remplacer des linkers, ce qui expliquerait la perte de cristallinité (pics de diffraction affaiblis) et de surface BET.",
+   "text": "Hypothèse : le fer vient ici du nitrate Fe(NO3)3·9H2O et non de la grappe préassemblée de la méthode de référence (Wang et al., JACS 2014, 10.1021/ja507269n) ; dans le DMF à 150 °C, les grappes Fe3O(COO)6 se formeraient donc in situ et les carboxylates de TCPP les relieraient en réseau. L'acide trifluoroacétique, présent en très large excès (environ 310 équivalents par TCPP d'après les quantités de l'article, calcul de l'analyste), jouerait le rôle de modulateur monocarboxylique : il occupe des positions de la grappe, ralentit la nucléation et améliore la cristallinité. Avec Fe:TCPP voisin de 2, le cœur des porphyrines resterait surtout non métallé. Sans grappe préassemblée ni activation, une phase mal cristallisée ou peu poreuse est possible, ce qui serait compatible avec 80 m2 g−1.",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": "PCN-600",
-   "text": "Le DMF est reprotoxique et s'absorbe par la peau ; l'acide trifluoroacétique est corrosif et ses vapeurs irritent. Le chauffage à 150 °C d'un mélange de DMF et d'acide dans un flacon Pyrex de 20 mL rempli à environ 92 % (18,4 mL de mélange, calcul de l'analyste) produit probablement une surpression, avec risque de rupture du flacon : à faire sous protection et dans un contenant adapté. Le nitrate de fer est oxydant. La BIT est irritante et sensibilisante pour la peau. Le métronidazole utilisé pour les essais est un composé suspecté mutagène.",
+   "text": "Le DMF est reprotoxique et s'absorbe par la peau ; l'acide trifluoroacétique est corrosif et ses vapeurs irritent. Le chauffage à 150 °C d'un mélange de DMF et d'acide dans un flacon Pyrex de 20 mL rempli à environ 92 % (18,4 mL de mélange, calcul de l'analyste) produit probablement une surpression, avec risque de rupture du flacon : à faire sous protection et dans un contenant adapté. Le nitrate de fer est oxydant. La BIT est irritante et sensibilisante pour la peau. Le métronidazole utilisé pour les essais est un composé suspecté mutagène. Le DMF (ébullition vers 153 °C) est presque à ébullition à 150 °C et le TFA (ébullition vers 72 °C) représente 13 % du volume ; l'article ne dit pas si le flacon est fermé, et un remplissage de 92 % ne laisse pas de marge à la dilatation : un remplissage plus faible ou un autoclave est préférable.",
    "quote": null
   },
   {
@@ -1337,6 +1524,60 @@
    "type": "limite_reproductibilite",
    "route": "PCN-600-NS-10",
    "text": "Le protocole de dopage et celui de PCN-600 diffèrent à plusieurs endroits non commentés par les auteurs (lavage au DMF deux fois contre trois, séchage à 80 °C contre 70 °C, refroidissement à « room temperature » contre « ambient temperature »). Le rendement n'est pas donné. Les constantes cinétiques par pH et par dose figurent seulement dans les figures S6 et S7 de l'annexe, dont l'association aux conditions n'est pas lisible dans le texte de l'annexe, et n'ont donc pas été extraites.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "PCN-600-NS-10",
+   "text": "Hypothèse : la BIT (0,65 équivalent par TCPP d'après les quantités de l'article, calcul de l'analyste) n'a pas de carboxylate et ne peut donc pas remplacer TCPP dans le réseau ; elle entrerait en compétition avec le TFA et TCPP comme ligand terminal sur les grappes Fe3O, comme modulateur de défauts ou comme espèce occluse, ce qui expliquerait la perte de cristallinité et de surface BET. Le gain d'adsorption du métronidazole (neutre à pH 6) s'expliquerait aussi simplement par ces défauts, par des sites Fe ouverts et par des –COOH libres que par des sites « Fe–N » nouveaux. En photocatalyse, la porphyrine serait excitée sous visible, puis des voies •OH et h+ interviendraient selon les pièges chimiques ; le rôle de 1O2 n'est pas exclu.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PCN-600",
+   "text": "La porosité de PCN-600 n'est pas démontrée : surface BET de 79,8 m2 g−1 et isotherme de type II, alors que le réseau PCN-600 de référence est attendu avec un volume poreux de 1,80 cm3 g−1 et des canaux de 3,1 nm (Wang et al., JACS 2014, 10.1021/ja507269n) ; l'article parle tantôt de microporosité, tantôt de mésoporosité en fente, et ne décrit aucune activation avant l'isotherme. Le rapport Fe:TCPP de 1,96 (calcul de l'analyste) suffit pour la charpente mais ne laisse pas de fer pour le cœur des porphyrines, et le fer vient du nitrate au lieu de la grappe préassemblée : le solide peut être une phase Fe-TCPP moins cristalline que le PCN-600(Fe) de la référence.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PCN-600",
+   "text": "Les gaps direct et indirect de PCN-600 semblent inversés dans le texte : la phrase donne indirect 2,89 et direct 2,50 eV, mais la légende de la Fig. S2 (indirect en (b), direct en (c)) et les étiquettes des panneaux placent 2,50 eV (comme 2,18 eV du MOF dopé) sur le panneau indirect et 2,89 eV (comme 2,53 eV) sur le panneau direct, soit PCN-600 direct 2,89 et indirect 2,50 eV ; la phrase sur NS-10 est cohérente avec cette lecture. Les valeurs extraites restent celles du texte.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PCN-600-NS-10",
+   "text": "La thermodynamique du tableau 2 est incohérente : les ΔGads publiés (−2,478 ; −2,644 ; −2,810 kJ mol−1) valent exactement −RT à chaque température, alors que −RT ln Kd donne −3,43 ; −3,92 ; −4,47 kJ mol−1 avec Kd = 4,0 ; 4,4 ; 4,9, et ΔH et ΔS ne se déduisent pas de ces trois ΔG. Un van 't Hoff sur les Kd de l'article donne ΔH = +4,24 kJ mol−1 et ΔS = +25,7 J mol−1 K−1, soit une adsorption endothermique, ce qui contredit le mot « exothermic » du résumé et de la conclusion ; de plus Kd en L g−1 est dimensionné, ce qui rend ΔG dépendant des unités (Lima et al., J. Mol. Liq. 273, 425, 2019). Les valeurs extraites sont celles du tableau.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PCN-600-NS-10",
+   "text": "L'énergie d'activation publiée (+2,99 kJ mol−1) a le signe contraire de ce que donnent les k app du tableau 2 : ils décroissent de 0,173 à 0,150 g mg−1 min−1 quand T monte, ce qui donne une pente d'Arrhenius correspondant à Ea = −2,98 kJ mol−1. La valeur k app = 0,173 ne recoupe pas non plus les k2 de 0,121 à 0,124 g mg−1 min−1 donnés ailleurs pour la même condition. Une Ea apparente négative ne permet pas de conclure à une physisorption sans barrière.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PCN-600-NS-10",
+   "text": "La dose de catalyseur est probablement fausse d'un facteur 10 dans les légendes : 10 mg dans 100 mL font 0,1 g L−1 et non « 0,01 g L−1 » (quatre recalculs concordants). Il faut lire la dose réelle comme 10 mg pour 100 mL avant de refaire l'essai.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PCN-600-NS-10",
+   "text": "Les isothermes du tableau 3 sont ininterprétables : paramètres négatifs (KL, nF), R2 = 0,999 pour trois modèles incompatibles, capacités qm inférieures aux qe mesurés, axe de la Fig. S4 limité aux trois Ce du tableau 2 et légende « CV dye », ce qui laisse penser à un jeu de données repris d'une autre étude. Ne pas s'en servir pour fixer une capacité maximale d'adsorption.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PCN-600-NS-10",
+   "text": "L'incorporation de la BIT et les sites « Fe–N » ne sont pas prouvés : le N 1s à 400,4 et 398 eV correspond à une porphyrine à cœur libre, pas à Fe–N ni à un carbonitrile ; la bande à 1700 cm−1 peut venir de –COOH libres ; aucun dosage du soufre de la BIT incorporée n'est donné (analyse élémentaire, ICP-OES ou RMN après digestion).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PCN-600-NS-10_regeneration",
+   "text": "Le titre du tableau 4 (« 0,02 g L−1 ») est incompatible avec les pourcentages : la colonne « Weight » vaut 0,02 g, donc le premier cycle (94 %) n'est pas l'essai de référence (87 %) et la stabilité est jugée à une autre dose. Environ 20 % de la masse est perdue en cinq cycles, sans dosage du fer ou de TCPP relargués : la stabilité est surtout une perte de matériau.",
    "quote": null
   }
  ],
@@ -1355,23 +1596,23 @@
   },
   {
    "where": "PCN-600-NS-10, tableau 1 (20 mg L−1) contre conditions de référence",
-   "issue": "Les conditions de référence (MNZ 20 mg L−1, pH 6, dose 0,01 g L−1) donnent 28 % d'adsorption, 59 % de dégradation et k1 = 0,0129 min−1 (texte, figure 4a, figure S7a), alors que la rangée 20 mg L−1 du tableau 1 donne 29 %, 42 % et k1 = 0,0084 min−1 ; la rangée 10 mg L−1 (44 % et 59 %) rappelle l'essai de référence. Les valeurs du tableau sont rangées sous leur concentration d'après la rangée, sans les corriger. Le texte donne aussi une capacité de 74,4 mg g−1 à 30 mg L−1 que le tableau écrit 74,1 (qe exp) ou 73,7 (qe calc)."
+   "issue": "Les conditions de référence (MNZ 20 mg L−1, pH 6, dose 0,01 g L−1) donnent 28 % d'adsorption, 59 % de dégradation et k1 = 0,0129 min−1 (texte, figure 4a, figure S7a), alors que la rangée 20 mg L−1 du tableau 1 donne 29 %, 42 % et k1 = 0,0084 min−1 ; la rangée 10 mg L−1 (44 % et 59 %) rappelle l'essai de référence. Les valeurs du tableau sont rangées sous leur concentration d'après la rangée, sans les corriger. Le texte donne aussi une capacité de 74,4 mg g−1 à 30 mg L−1 que le tableau écrit 74,1 (qe exp) ou 73,7 (qe calc). Base de temps probable : l'axe de la Fig. 5c s'arrête à 60 min et ses courbes finissent à environ 59, 42 et 29 %, soit les valeurs de dégradation du tableau 1 ; la colonne dégradation correspond donc à 60 min de lumière, alors que les 59 % de l'essai de référence (Fig. 4a) sont à 120 min de lumière. Le désaccord de la rangée 20 mg L−1 vient en partie de cette base de temps, que le texte ne donne pas."
   },
   {
    "where": "PCN-600-NS-10, tableau 2 (thermodynamique) contre texte et isothermes",
-   "issue": "Le tableau 2 donne les températures 298, 318 et 338 K, le texte 293, 313 et 333 K, et la section sur l'énergie d'activation 298, 318 et 338 K. Les valeurs sont rangées sous la température écrite dans la rangée du tableau (298, 318, 338 K), et le tableau 3 sous 293, 313, 333 K. ΔHads et ΔSads sont écrits seulement sur la première rangée ; ils sont repris du texte. Le tableau 2 mentionne k app, une constante apparente, et non extraite."
+   "issue": "Le tableau 2 donne les températures 298, 318 et 338 K, le texte 293, 313 et 333 K, et la section sur l'énergie d'activation 298, 318 et 338 K. Les valeurs sont rangées sous la température écrite dans la rangée du tableau (298, 318, 338 K), et le tableau 3 sous 293, 313, 333 K. ΔHads et ΔSads sont écrits seulement sur la première rangée ; ils sont repris du texte. Le tableau 2 mentionne aussi k app et Ce, extraits rangée par rangée."
   },
   {
    "where": "PCN-600 et PCN-600-NS-10, band gaps",
-   "issue": "Le texte donne pour PCN-600 « indirect 2.89 et direct 2.50 eV, respectively » mais pour PCN-600-NS-10 « 2.53 and 2.18 eV for direct and indirect, respectively » : les ordres sont inversés d'une phrase à l'autre, et le gap direct du MOF dopé (2,53) est supérieur à celui du MOF nu (2,50) alors que les auteurs parlent d'une diminution. Le texte de l'annexe (figure S2) ne permet pas de trancher. Lecture littérale retenue pour chaque phrase."
+   "issue": "Le texte donne pour PCN-600 « indirect 2.89 et direct 2.50 eV, respectively » mais pour PCN-600-NS-10 « 2.53 and 2.18 eV for direct and indirect, respectively » : les ordres sont inversés d'une phrase à l'autre, et le gap direct du MOF dopé (2,53) est supérieur à celui du MOF nu (2,50) alors que les auteurs parlent d'une diminution. L'annexe suggère une inversion dans la phrase sur PCN-600 : la légende de la Fig. S2 est « Indirect band gap (b), and Direct band gap (c) » et les étiquettes extraites placent 2.50 et 2.18 sur le panneau (b) (Ahν)1/2 (indirect) et 2.89 et 2.53 sur le panneau (c) (Ahν)2 (direct), ce qui donnerait PCN-600 indirect 2,50 / direct 2,89 et NS-10 indirect 2,18 / direct 2,53, cohérent avec la diminution annoncée. Non tranchable : l'image de la Fig. S2 n'est pas dans le dépôt et l'ordre des étiquettes vient d'une extraction de PDF. Valeurs littérales de chaque phrase conservées, sans échange."
   },
   {
    "where": "PCN-600-NS-10, conditions d'essai (dose, pH, durée)",
-   "issue": "La dose de catalyseur est écrite 10 mg, 0,01 g L−1 et 10 mg L−1 selon les endroits, 0,02 g L−1 dans le tableau 4 du recyclage ; le pH optimal est 6 dans le texte mais 8,0 dans le tableau S1 de l'annexe ; la durée totale est de 150 min dans le texte et le résumé, mais les courbes de la figure 4 s'arrêtent à 120 min. Valeurs rangées telles qu'écrites sans correction."
+   "issue": "La dose de catalyseur est écrite 10 mg, 0,01 g L−1 et 10 mg L−1 selon les endroits, 0,02 g L−1 dans le tableau 4 du recyclage ; le pH optimal est 6 dans le texte mais 8,0 dans le tableau S1 de l'annexe. Valeurs rangées telles qu'écrites sans correction."
   },
   {
    "where": "Valeurs lues sur figures",
-   "issue": "Fig. 4b (élimination totale à la fin de la phase lumineuse, 120 min, à pH 2, 4, 8, 10 : environ 28, 57, 58, 57 %), Fig. 4a (PCN-600-NS-20 : environ 63 %) et Fig. 4d (capacité à 20 mg L−1 : environ 44 mg g−1). Précision de lecture de l'ordre de ±3 points. Les figures 5 et 7 ne portent que des valeurs déjà écrites dans le texte ou le tableau 1 et n'ont pas été relues."
+   "issue": "Fig. 4b (élimination totale à la fin de la phase lumineuse, 120 min, à pH 2, 4, 8, 10 : environ 28, 57, 58, 57 %), Fig. 4a (PCN-600-NS-20 : environ 63 %) et Fig. 4d (capacité à 20 mg L−1 : environ 44 mg g−1). Précision de lecture de l'ordre de ±3 points. Les figures 5 et 7 ne portent que des valeurs déjà écrites dans le texte ou le tableau 1 et n'ont pas été relues. Fig. 4b et 4c (adsorption à l'obscurité à la fin des 30 min d'obscurité, t = 0 : pH 2, 4, 8, 10 environ 3, 10, 16, 10 % ; doses 5, 20, 40 mg L−1 environ 17, 44, 71 %), même précision de lecture de ±3 points ; les valeurs de pH 6 et de dose 10 mg L−1 sont celles de l'essai de référence (28 %)."
   },
   {
    "where": "PCN-600-NS-10, héritage de PCN-600",
@@ -1384,6 +1625,10 @@
   {
    "where": "Réactifs, pureté et fournisseur",
    "issue": "Pureté et fournisseur viennent de l'annexe (S1) : une liste unique (« were obtained from Macklin ») couvre les réactifs nommés ; le TCPP et le DMF n'ont pas de pureté écrite. La citation recopie la phrase de l'annexe en ignorant les sauts de ligne de l'extraction."
+  },
+  {
+   "where": "PCN-600-NS-10, étape 3 (refroidissement)",
+   "issue": "Le texte de PCN-600 écrit « cooled down to ambient temperature » et celui du dopage « cooled down to room temperature » : synonymes probables, non enregistrés comme variation de la branche (aucune variation ajoutée)."
   }
  ]
 }
