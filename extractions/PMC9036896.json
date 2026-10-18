@@ -2,13 +2,70 @@
  "pmcid": "PMC9036896",
  "format": 2,
  "sample_inventory": [
-  {"sample": "bulk g-C3N4", "defined_in": "Experimental, Preparation of bulk g-C3N4", "route": "Bulk_gC3N4", "results_in": ["Fig. 1c", "Fig. 2"]},
-  {"sample": "g-C3N4QDs", "defined_in": "Experimental, Preparation of g-C3N4QDS", "route": "gC3N4QDs", "results_in": ["Fig. 1", "Fig. 2", "Fig. 3", "Fig. 4", "Fig. 5", "Fig. 6", "Fig. 7", "Fig. 8", "Table 1", "Table S1", "Table S2", "Table S3", "Table S4", "Table S5"]},
-  {"sample": "g-C3N4QDs resynthesized 7 times (reproducibility test)", "defined_in": "Results and discussion, Sensing for TC", "route": "gC3N4QDs", "results_in": ["Fig. 7d", "Table S1"], "why": "Même protocole répété 7 fois, sans différence de conditions : pas une branche."},
-  {"sample": "TC standard solutions", "defined_in": "Experimental, Fluorescence detection of TC", "route": null, "why": "Solutions d'analyte préparées à partir d'un produit commercial (Aladdin), pas un matériau synthétisé."},
-  {"sample": "other antibiotics and metal ions (CTC, OTC, DTC, CIP, AMX, SDZ, CAM, Mg2+, Ba2+, K+, Na+, Cu2+, Fe3+)", "defined_in": "Experimental, Fluorescence detection of TC", "route": null, "why": "Interférents commerciaux de l'essai de sélectivité, pas des matériaux synthétisés."},
-  {"sample": "tap water samples", "defined_in": "Experimental, Fluorescence detection of TC in tap water and milk powder samples", "route": null, "why": "Échantillon réel analysé, pas un matériau synthétisé."},
-  {"sample": "milk powder samples", "defined_in": "Experimental, Fluorescence detection of TC in tap water and milk powder samples", "route": null, "why": "Échantillon réel analysé (prétraitement à l'acide trichloracétique), pas un matériau synthétisé."}
+  {
+   "sample": "bulk g-C3N4",
+   "defined_in": "Experimental, Preparation of bulk g-C3N4",
+   "route": "Bulk_gC3N4",
+   "results_in": [
+    "Fig. 1c",
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "g-C3N4QDs",
+   "defined_in": "Experimental, Preparation of g-C3N4QDS",
+   "route": "gC3N4QDs",
+   "results_in": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. 8",
+    "Table 1",
+    "Table S1",
+    "Table S2",
+    "Table S3",
+    "Table S4",
+    "Table S5"
+   ]
+  },
+  {
+   "sample": "g-C3N4QDs resynthesized 7 times (reproducibility test)",
+   "defined_in": "Results and discussion, Sensing for TC",
+   "route": "gC3N4QDs",
+   "results_in": [
+    "Fig. 7d",
+    "Table S1"
+   ],
+   "why": "Même protocole répété 7 fois, sans différence de conditions : pas une branche."
+  },
+  {
+   "sample": "TC standard solutions",
+   "defined_in": "Experimental, Fluorescence detection of TC",
+   "route": null,
+   "why": "Solutions d'analyte préparées à partir d'un produit commercial (Aladdin), pas un matériau synthétisé."
+  },
+  {
+   "sample": "other antibiotics and metal ions (CTC, OTC, DTC, CIP, AMX, SDZ, CAM, Mg2+, Ba2+, K+, Na+, Cu2+, Fe3+)",
+   "defined_in": "Experimental, Fluorescence detection of TC",
+   "route": null,
+   "why": "Interférents commerciaux de l'essai de sélectivité, pas des matériaux synthétisés."
+  },
+  {
+   "sample": "tap water samples",
+   "defined_in": "Experimental, Fluorescence detection of TC in tap water and milk powder samples",
+   "route": null,
+   "why": "Échantillon réel analysé, pas un matériau synthétisé."
+  },
+  {
+   "sample": "milk powder samples",
+   "defined_in": "Experimental, Fluorescence detection of TC in tap water and milk powder samples",
+   "route": null,
+   "why": "Échantillon réel analysé (prétraitement à l'acide trichloracétique), pas un matériau synthétisé."
+  }
  ],
  "routes": [
   {
@@ -28,7 +85,9 @@
    "scale": null,
    "yield": null,
    "succeeded": true,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "reagents": [
     {
      "name": "melamine",
@@ -49,14 +108,36 @@
      "description": "Heat melamine in a tube furnace to 500 °C and hold.",
      "quote": "5 g of melamine was heated to 500 °C in a tube furnace at a ramping rate of 10 °C min−1 and kept at this temperature for 2 h",
      "parameters": [
-      {"name": "temperature", "value_num": 500, "unit": "°C", "quote": "heated to 500 °C in a tube furnace"},
-      {"name": "heating_rate", "value_num": 10, "unit": "°C min−1", "quote": "at a ramping rate of 10 °C min−1"},
-      {"name": "duration", "value_num": 2, "unit": "h", "quote": "kept at this temperature for 2 h"}
+      {
+       "name": "temperature",
+       "value_num": 500,
+       "unit": "°C",
+       "quote": "heated to 500 °C in a tube furnace"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 10,
+       "unit": "°C min−1",
+       "quote": "at a ramping rate of 10 °C min−1"
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "kept at this temperature for 2 h"
+      }
      ],
      "equipment": [
-      {"type": "tube furnace", "detail": null, "quote": "5 g of melamine was heated to 500 °C in a tube furnace"}
+      {
+       "type": "tube furnace",
+       "detail": null,
+       "quote": "5 g of melamine was heated to 500 °C in a tube furnace"
+      }
      ],
-     "not_stated": ["atmosphere", "crucible"]
+     "not_stated": [
+      "atmosphere",
+      "crucible"
+     ]
     },
     {
      "order": 2,
@@ -64,12 +145,29 @@
      "description": "Continue heating to 520 °C at the same heating rate and hold.",
      "quote": "then continued to heat up to 520 °C at the same heating rate and kept for another 2 h",
      "parameters": [
-      {"name": "temperature", "value_num": 520, "unit": "°C", "quote": "continued to heat up to 520 °C"},
-      {"name": "heating_rate", "value_num": 10, "unit": "°C min−1", "quote": "a ramping rate of 10 °C min−1 and kept at this temperature for 2 h and then continued to heat up to 520 °C at the same heating rate"},
-      {"name": "duration", "value_num": 2, "unit": "h", "quote": "kept for another 2 h"}
+      {
+       "name": "temperature",
+       "value_num": 520,
+       "unit": "°C",
+       "quote": "continued to heat up to 520 °C"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 10,
+       "unit": "°C min−1",
+       "quote": "a ramping rate of 10 °C min−1 and kept at this temperature for 2 h and then continued to heat up to 520 °C at the same heating rate"
+      },
+      {
+       "name": "duration",
+       "value_num": 2,
+       "unit": "h",
+       "quote": "kept for another 2 h"
+      }
      ],
      "equipment": [],
-     "not_stated": ["atmosphere"]
+     "not_stated": [
+      "atmosphere"
+     ]
     },
     {
      "order": 3,
@@ -78,7 +176,9 @@
      "quote": "After naturally cooling to room temperature",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["cooling_rate"]
+     "not_stated": [
+      "cooling_rate"
+     ]
     },
     {
      "order": 4,
@@ -87,7 +187,10 @@
      "quote": "the obtained yellow product was ground into a homogeneous powder",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["grinding_method", "duration"]
+     "not_stated": [
+      "grinding_method",
+      "duration"
+     ]
     }
    ],
    "characterizations": [
@@ -113,7 +216,11 @@
      "quote": "the obtained yellow product was ground into a homogeneous powder"
     }
    ],
-   "missing_fields": ["atmosphere", "crucible", "yield"]
+   "missing_fields": [
+    "atmosphere",
+    "crucible",
+    "yield"
+   ]
   },
   {
    "label": "gC3N4QDs",
@@ -131,13 +238,15 @@
    "scale": null,
    "yield": null,
    "succeeded": true,
-   "not_stated": ["yield"],
+   "not_stated": [
+    "yield"
+   ],
    "reagents": [
     {
      "name": "bulk g-C3N4 (route Bulk_gC3N4)",
      "formula": "g-C3N4",
      "role": "intermediate",
-     "amount": 0.10,
+     "amount": 0.1,
      "unit": "g",
      "quote": "The bulk g-C3N4 (0.10 g) was mixed with ethylene glycol (15 mL) and ammonia (15 mL)."
     },
@@ -161,7 +270,9 @@
      "purity": "analytical grade",
      "supplier": "Shanghai Sinopharm Chemical Reagent Co., Ltd.",
      "supplier_quote": "Melamine, ethylene glycol, and ammonia were purchased from Shanghai Sinopharm Chemical Reagent Co., Ltd. TC, chlorotetracycline hydrochloride (CTC), oxytetracycline (OTC), doxycycline hydrochloride (DTC), ciprofloxacin (CIP), amoxicillin (AMX), sulfadiazine (SDZ), and chloramphenicol (CAM) were purchased from Aladdin Industrial Corporation. All reagents were of analytical grade and used as received without further purification.",
-     "not_stated": ["concentration"],
+     "not_stated": [
+      "concentration"
+     ],
      "quote": "The bulk g-C3N4 (0.10 g) was mixed with ethylene glycol (15 mL) and ammonia (15 mL)."
     }
    ],
@@ -173,7 +284,11 @@
      "quote": "The bulk g-C3N4 (0.10 g) was mixed with ethylene glycol (15 mL) and ammonia (15 mL).",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["duration", "stirring_speed", "temperature"]
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "temperature"
+     ]
     },
     {
      "order": 2,
@@ -181,13 +296,32 @@
      "description": "Solvothermal treatment in a Teflon-sealed autoclave.",
      "quote": "The mixture was transferred into a Teflon-sealed autoclave and kept at 180 °C for 12 h.",
      "parameters": [
-      {"name": "temperature", "value_num": 180, "unit": "°C", "quote": "kept at 180 °C for 12 h"},
-      {"name": "duration", "value_num": 12, "unit": "h", "quote": "kept at 180 °C for 12 h"}
+      {
+       "name": "temperature",
+       "value_num": 180,
+       "unit": "°C",
+       "quote": "kept at 180 °C for 12 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 12,
+       "unit": "h",
+       "quote": "kept at 180 °C for 12 h"
+      }
      ],
      "equipment": [
-      {"type": "Teflon-sealed autoclave", "detail": null, "quote": "The mixture was transferred into a Teflon-sealed autoclave"}
+      {
+       "type": "Teflon-sealed autoclave",
+       "detail": null,
+       "quote": "The mixture was transferred into a Teflon-sealed autoclave"
+      }
      ],
-     "not_stated": ["heating_rate", "fill_fraction", "pressure", "autoclave_volume"]
+     "not_stated": [
+      "heating_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
     },
     {
      "order": 3,
@@ -196,7 +330,9 @@
      "quote": "The resultant product was cooled to room temperature and filtered with a 0.22 μm membrane.",
      "parameters": [],
      "equipment": [],
-     "not_stated": ["cooling_rate"]
+     "not_stated": [
+      "cooling_rate"
+     ]
     },
     {
      "order": 4,
@@ -204,12 +340,24 @@
      "description": "Filter through a 0.22 μm membrane to keep the dispersed QDs in the filtrate.",
      "quote": "The resultant product was cooled to room temperature and filtered with a 0.22 μm membrane.",
      "parameters": [
-      {"name": "pore_size", "value_num": 0.22, "unit": "μm", "quote": "filtered with a 0.22 μm membrane"}
+      {
+       "name": "pore_size",
+       "value_num": 0.22,
+       "unit": "μm",
+       "quote": "filtered with a 0.22 μm membrane"
+      }
      ],
      "equipment": [
-      {"type": "membrane filter", "detail": "0.22 μm", "quote": "filtered with a 0.22 μm membrane"}
+      {
+       "type": "membrane filter",
+       "detail": "0.22 μm",
+       "quote": "filtered with a 0.22 μm membrane"
+      }
      ],
-     "not_stated": ["membrane_material", "filtration_method"]
+     "not_stated": [
+      "membrane_material",
+      "filtration_method"
+     ]
     },
     {
      "order": 5,
@@ -217,10 +365,17 @@
      "description": "Store the filtrate containing the g-C3N4QDs before use.",
      "quote": "Finally, the obtained filtrate containing highly dispersed g-C3N4QDs was stored at 4 °C before use.",
      "parameters": [
-      {"name": "temperature", "value_num": 4, "unit": "°C", "quote": "was stored at 4 °C before use"}
+      {
+       "name": "temperature",
+       "value_num": 4,
+       "unit": "°C",
+       "quote": "was stored at 4 °C before use"
+      }
      ],
      "equipment": [],
-     "not_stated": ["storage_duration"]
+     "not_stated": [
+      "storage_duration"
+     ]
     }
    ],
    "characterizations": [
@@ -286,6 +441,27 @@
      "instrument": null,
      "conditions": null,
      "quote": "the calculated average lifetimes are 5.66 and 5.56 ns for g-C3N4QDs and g-C3N4QDs/TC based on eqn (6), respectively"
+    },
+    {
+     "technique": "XPS N 1s",
+     "result": "two nitrogen species: N–(C)3 at 399.7 eV and C–N=C at 398.7 eV",
+     "instrument": "ESCALAB 250Xi spectrometer (Thermo Scientific, USA)",
+     "conditions": "pass energy of 30 eV and 100 W",
+     "quote": "g-C3N4QDs possess two types of nitrogen species: N–(C)3 (399.7 eV) and C–N"
+    },
+    {
+     "technique": "XPS C 1s",
+     "result": "deconvolution into four peaks at 284.8, 286.3, 288.1 and 289.5 eV, ascribed to graphitic carbon (sp2 C=C or sp3 C–C), C–NHx (x = 1, 2), N–C=N and C–O",
+     "instrument": "ESCALAB 250Xi spectrometer (Thermo Scientific, USA)",
+     "conditions": "pass energy of 30 eV and 100 W",
+     "quote": "The deconvolution of the C 1s spectrum (Fig. 3c) presents four peaks at 284.8, 286.3, 288.1, and 289.5 eV, which could be ascribed to graphitic carbon (sp2 C"
+    },
+    {
+     "technique": "XPS O 1s",
+     "result": "deconvoluted into two peaks at 531.8 eV (C–O–C) and 532.8 eV (hydroxyls of adsorbed water)",
+     "instrument": "ESCALAB 250Xi spectrometer (Thermo Scientific, USA)",
+     "conditions": "pass energy of 30 eV and 100 W",
+     "quote": "For the O 1s spectrum (Fig. 3d), it can be deconvoluted into two peaks at 531.8 eV and 532.8 eV, which are related to C–O–C and hydroxyls of adsorbed water, respectively."
     }
    ],
    "outcomes": [
@@ -362,7 +538,7 @@
     },
     {
      "property": "TC_sensing_reproducibility_RSD",
-     "value_num": 1.10,
+     "value_num": 1.1,
      "unit": "%",
      "quote": "The relative standard deviation (RSD) of TC detected for the seven parallel tests is 1.10%"
     },
@@ -386,9 +562,85 @@
      "property": "Stern_Volmer_slopes_303_313_333K",
      "value_text": "4.56 × 10 3, 4.15 × 10 3 and 3.71 × 10 3 L mol−1",
      "quote": "The slopes of linear regression equations are 4.56 × 10 3, 4.15 × 10 3 and 3.71 × 10 3 L mol−1 at the temperature of 303, 313 and 333 K, correspondingly."
+    },
+    {
+     "property": "fluorescence_pH_optimum",
+     "value_text": "maximum under neutral conditions (pH 7–8)",
+     "quote": "the PL intensity of g-C3N4QDs gradually increases first and reaches a maximum under neutral conditions (pH 7–8), and then decreases slowly."
+    },
+    {
+     "property": "fluorescence_ionic_strength_effect",
+     "value_text": "PL intensity can remain unaffected by ion strength with NaCl from 0 to 500 mM",
+     "quote": "the PL intensity can remain unaffected by ion strength when adding NaCl into the ultrapure water system with the salt concentration increasing from 0 to 500 mM"
+    },
+    {
+     "property": "fluorescence_photostability_irradiation",
+     "value_text": "PL intensity can remain stable during continuous irradiation for 60 minutes",
+     "quote": "the PL intensity can remain stable during the following continuous irradiation for 60 minutes, which verifies the good light stability of the as-prepared g-C3N4QDs"
+    },
+    {
+     "property": "TC_detected_value_mean_7_syntheses_TableS1",
+     "value_num": 199.26,
+     "unit": "μM",
+     "quote": "199.26 99.63 1.10"
+    },
+    {
+     "property": "TC_recovery_by_level_tap_water_TableS3",
+     "value_text": "added 6.75, 18.02, 56.31, 157.66 μM; detected 6.80, 18.81, 55.63, 162.01 μM; recovery 100.74, 101.22, 97.19, 102.76 %; RSD 2.27, 2.87, 3.75, 0.23 %",
+     "quote": "6.75 6.80 100.74 2.27 18.02 18.81 101.22 2.87 56.31 55.63 97.19 3.75 Tap water 157.66 162.01 102.76 0.23"
+    },
+    {
+     "property": "TC_recovery_by_level_milk_powder_TableS3",
+     "value_text": "added 6.75, 18.02, 56.31, 157.66 μM; detected 6.49, 18.89, 57.83, 153.16 μM; recovery 96.16, 104.85, 102.69, 95.08 %; RSD 1.17, 3.00, 3.14, 0.41 %",
+     "quote": "6.75 6.49 96.16 1.17 18.02 18.89 104.85 3.00 56.31 57.83 102.69 3.14 Milk powder 157.66 153.16 95.08 0.41"
+    },
+    {
+     "property": "Stern_Volmer_equation_303K_TableS4",
+     "value_text": "F0/F = 1.01555 + 4.56×10-3 [Q]",
+     "quote": "303 F0/F = 1.01555 + 4.56×10-3 [Q] 0.99836 4.56×103"
+    },
+    {
+     "property": "Stern_Volmer_R2_303K_TableS4",
+     "value_num": 0.99836,
+     "quote": "303 F0/F = 1.01555 + 4.56×10-3 [Q] 0.99836 4.56×103"
+    },
+    {
+     "property": "Stern_Volmer_equation_313K_TableS4",
+     "value_text": "F0/F = 1.00511 + 4.15×10-3 [Q]",
+     "quote": "313 F0/F = 1.00511 + 4.15×10-3 [Q] 0.99688 4.15×103"
+    },
+    {
+     "property": "Stern_Volmer_R2_313K_TableS4",
+     "value_num": 0.99688,
+     "quote": "313 F0/F = 1.00511 + 4.15×10-3 [Q] 0.99688 4.15×103"
+    },
+    {
+     "property": "Stern_Volmer_equation_333K_TableS4",
+     "value_text": "F0/F = 1.00821 + 3.71×10-3 [Q]",
+     "quote": "333 F0/F = 1.00821 + 3.71×10-3 [Q] 0.99687 3.71×103"
+    },
+    {
+     "property": "Stern_Volmer_R2_333K_TableS4",
+     "value_num": 0.99687,
+     "quote": "333 F0/F = 1.00821 + 3.71×10-3 [Q] 0.99687 3.71×103"
+    },
+    {
+     "property": "fluorescence_decay_parameters_gC3N4QDs_TableS5",
+     "value_text": "τ1 5.04, A1 285.18, τ2 1.48, A2 759.53, τ3 19.08, A3 21.79, τave 5.66",
+     "quote": "g-C3N4QDs 5.04 285.18 1.48 759.53 19.08 21.79 5.66"
+    },
+    {
+     "property": "fluorescence_decay_parameters_gC3N4QDs_TC_TableS5",
+     "value_text": "τ1 1.50, A1 706.64, τ2 5.42, A2 347.79, τ3 22.54, A3 11.90, τave 5.56",
+     "quote": "C3N4QDs-TC 1.50 706.64 5.42 347.79 22.54 11.90 5.56"
     }
    ],
-   "missing_fields": ["yield", "ammonia_concentration", "autoclave_volume", "mixing_duration"]
+   "missing_fields": [
+    "yield",
+    "ammonia_concentration",
+    "autoclave_volume",
+    "mixing_duration"
+   ]
   }
  ],
  "annotations": [
@@ -413,8 +665,8 @@
   {
    "type": "mecanisme_auteurs",
    "route": "gC3N4QDs",
-   "text": "Les auteurs ne décrivent pas de mécanisme de formation des points. Ils notent seulement que le traitement solvothermal (qu'ils appellent « tailoring », découpe) conserve la structure de base du g-C3N4 tout en fragilisant la périodicité dans le plan et en introduisant de l'oxygène en surface.",
-   "quote": "The results indicated that the basic surface functional structures of g-C3N4 are not changed in the process of solvothermal “tailoring”."
+   "text": "Les auteurs ne décrivent pas de mécanisme de formation des points. Ils constatent en FT-IR que les groupes de surface de base du g-C3N4 ne sont pas changés par la « découpe » solvothermale, que l'intensité relative du pic (100) des points est bien plus faible que celle du massif, ce qui indiquerait que le motif répété dans le plan « may be damaged to a certain extent », et qu'il leur semble possible que des atomes d'oxygène soient introduits dans les points (« It seems possible that oxygen atoms may be introduced »), sans preuve directe d'un mécanisme.",
+   "quote": "the in plane repeated unit structure may be damaged to a certain extent after solvothermal treatment"
   },
   {
    "type": "mecanisme_analyse",
@@ -424,12 +676,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "gC3N4QDs",
-   "text": "Hypothèse de chimiste : à 180 °C sous pression autogène, l'ammoniaque et l'éthylène glycol attaqueraient probablement les liaisons C–N faibles qui relient les feuillets et les unités tri-s-triazine (hydrolyse, aminolyse), ce qui fragmente le g-C3N4 massif en fragments de quelques nanomètres. Les pics FT-IR à 1731 et 1032 cm−1 et le signal O 1s en XPS indiquent que de l'oxygène s'incorpore en surface, vraisemblablement par l'éthylène glycol ou l'eau de l'ammoniaque, ce qui rendrait les points hydrosolubles. La filtration à 0,22 μm écarte le solide non découpé."
+   "text": "Hypothèse de chimiste, non démontrée par l'article ni appuyée sur une source précise pour le couple éthylène glycol et ammoniaque : à 180 °C sous pression autogène, l'ammoniaque (NH3 et OH−) et peut-être l'éthylène glycol attaqueraient par voie nucléophile les ponts NH entre unités tri-s-triazine du mélon (structure et réactivité décrites par Thomas et al. 2008), coupant chaînes et feuillets en fragments de quelques nanomètres porteurs de groupes NH2, OH et C=O, donc hydrosolubles ; l'éthylène glycol visqueux aiderait à disperser. Les bandes FT-IR à 1731 et 1032 cm−1 et le signal O 1s indiquent de l'oxygène en surface, venant de l'ammoniaque aqueuse ou de l'éthylène glycol, éventuellement résiduel. Rien n'établit que l'émission vienne de points cristallins de g-C3N4 plutôt que de fragments moléculaires solubles de type heptazine."
   },
   {
    "type": "securite_analyse",
    "route": "gC3N4QDs",
-   "text": "L'article ne mentionne aucune précaution. Le mélange éthylène glycol et ammoniaque chauffé à 180 °C dans un autoclave scellé produit une pression interne notable (vapeur d'ammoniac et d'eau) : respecter un taux de remplissage modéré (ici 30 mL, volume d'autoclave non donné), laisser refroidir complètement avant d'ouvrir, sous hotte. L'ammoniaque est irritante et corrosive pour les voies respiratoires ; l'éthylène glycol est toxique par ingestion. La pyrolyse de la mélamine dans un four tubulaire dégage de l'ammoniac et doit se faire sous ventilation. Les poudres et solutions de nanoparticules sont à manipuler avec gants et sans inhalation."
+   "text": "L'article ne mentionne aucune précaution. Le mélange éthylène glycol et ammoniaque chauffé à 180 °C dans un autoclave scellé produit une pression interne notable (vapeur d'ammoniac et d'eau) : respecter un taux de remplissage modéré (ici 30 mL, volume d'autoclave non donné), laisser refroidir complètement avant d'ouvrir, sous hotte. L'ammoniaque est irritante et corrosive pour les voies respiratoires ; l'éthylène glycol est toxique par ingestion. La pyrolyse de la mélamine dans un four tubulaire dégage de l'ammoniac et doit se faire sous ventilation. Les poudres et solutions de nanoparticules sont à manipuler avec gants et sans inhalation. Pression de l'autoclave : la concentration de l'ammoniaque et le volume de l'autoclave n'étant pas donnés, la pression à 180 °C ne peut pas être estimée ; l'ammoniac dissous s'ajoute aux ≈ 10 bar de vapeur d'eau à cette température, et avec 30 mL de liquide dans un petit autoclave (taux de remplissage élevé) on peut approcher ou dépasser la tenue courante d'une chemise PTFE (≈ 30 bar) ; la borne haute théorique, tout l'ammoniac passant en phase gazeuse, serait de 110 à 420 bar selon le volume. La condensation de 5 g de mélamine dégage en outre ≈ 79 mmol d'ammoniac, soit ≈ 1,8 L de gaz, à évacuer du four tubulaire."
   },
   {
    "type": "conclusion_auteurs",
@@ -450,7 +702,32 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les résultats de l'essai de détection (effet du pH, de la force ionique, du temps, intensités de sélectivité) ne sont donnés que sur les figures 5 et 7 ; ils ne concernent pas la synthèse et n'ont pas été lus sur figure. Les tableaux S3 à S5 de l'annexe sont présents mais mis en page sans colonnes dans le texte."
+   "text": "Les effets du pH (optimum à pH 7–8), de la force ionique (aucun effet de 0 à 500 mM de NaCl) et du temps de réaction (équilibre atteint en 10 à 15 min) sont écrits dans le texte et repris en résultats ; les tableaux S1 et S3 à S5 de l'annexe sont lisibles ligne à ligne. Seules les courbes des figures 5 et 7 (intensités de fluorescence par pH, sel, temps et interférent) ne sont pas chiffrées dans le texte et n'ont pas été lues sur figure ; elles ne concernent pas la synthèse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "gC3N4QDs",
+   "text": "Frange HRTEM : l'article attribue l'espacement de 0,24 nm au plan (100) du g-C3N4, mais son propre pic (100) à 13,1° correspond à d = 0,675 nm (Cu Kα) ; 0,24 nm correspondrait à 2θ ≈ 37,4°. La référence citée pour cette attribution (Kwon et Rhee, Chem. Commun. 2012) porte sur des points de carbone graphitiques. L'attribution de la frange est donc douteuse ; l'espacement lui-même est conservé tel que publié."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "gC3N4QDs",
+   "text": "Essai de détection : le vocabulaire de l'extinction est confus. Les auteurs décrivent l'effet de filtre interne comme « induit par la formation d'un complexe à l'état fondamental » et le FRET comme causé par une « collision vibrationnelle », puis concluent à une extinction « statique à cause de l'IFE » : ce sont des phénomènes distincts. La baisse de la constante de Stern–Volmer avec la température (4,56 à 3,71 × 10³ L mol−1) et kq ≈ 8 × 10¹¹ L mol−1 s−1, au-dessus de la limite de diffusion, plaident pour une association statique indépendamment de l'effet de filtre interne ; sans les absorbances de la tétracycline ni correction de filtre interne, la part de chaque phénomène est indéterminable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "gC3N4QDs",
+   "text": "Table S3 : trois récupérations sur huit ne suivent pas le rapport détecté sur ajouté (eau du robinet : 101,22 % annoncé pour 18,81/18,02 soit 104,38 % ; 97,19 % pour 55,63/56,31 soit 98,79 % ; lait en poudre : 95,08 % pour 153,16/157,66 soit 97,15 %), et les plages du texte reprennent les valeurs annoncées. Un décalage de colonne dans l'annexe est possible ; les valeurs de l'article sont gardées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "gC3N4QDs",
+   "text": "Concentration des points : l'essai donne « 0.3 mg mL−1 » après dilution au dixième, ce qui suppose une solution mère d'environ 3 mg mL−1 ; si ce chiffre désigne les points, plus de 90 % des 0,10 g de g-C3N4 (3,33 mg mL−1 au plus dans 30 mL) devraient passer la membrane de 0,22 µm, sans rendement ni titrage cité. La concentration est probablement nominale (masse de g-C3N4 introduite)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "gC3N4QDs",
+   "text": "Nature des émetteurs : le filtrat (éthylène glycol et ammoniaque) n'est ni dialysé ni purifié, et aucun témoin éthylène glycol et ammoniaque chauffé sans g-C3N4 n'est présenté ; des fluorophores moléculaires (fragments heptazine solubles, produits de l'éthylène glycol et de l'ammoniac, cf. Essner et al. 2018) pourraient expliquer l'émission à 394 nm, et de l'éthylène glycol résiduel la bande à 1032 cm−1 et le signal O 1s. Le confinement quantique invoqué n'est pas démontré (pas de série de tailles), et un diffractogramme net sur des objets de 3,5 nm est peu attendu."
   }
  ],
  "method_sources": [
@@ -503,6 +780,14 @@
   {
    "where": "Bulk_gC3N4 comme voie intermédiaire",
    "issue": "Le g-C3N4 massif est préparé « according to our previous work » mais décrit en détail dans l'article ; il est extrait en voie intermédiaire (kind intermediate) et réutilisé comme réactif de gC3N4QDs. Les échantillons de l'essai de détection (eau, lait, solutions d'analytes) ne sont pas des voies de synthèse."
+  },
+  {
+   "where": "gC3N4QDs, HRTEM",
+   "issue": "L'article attribue l'espacement de 0,24 nm au plan (100) du g-C3N4, alors que son pic XRD (100) à 13,1° donne d = 0,675 nm ; valeur et attribution gardées telles que publiées."
+  },
+  {
+   "where": "gC3N4QDs, Table S3",
+   "issue": "Trois récupérations (101,22 ; 97,19 ; 95,08 %) ne correspondent pas à détecté sur ajouté (104,38 ; 98,79 ; 97,15 %) ; les plages du texte reprennent les valeurs annoncées. Valeurs de l'article gardées littérales ; un décalage de colonne de l'annexe est possible. Les rangées sont attribuées à l'eau du robinet puis au lait en poudre d'après les plages du texte."
   }
  ]
 }
