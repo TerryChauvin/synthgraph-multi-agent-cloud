@@ -209,6 +209,21 @@
      "property": "reactive_oxygen_species_generation",
      "value_text": "extremely efficient production of 1O2 and/or oxygen radicals induced by photo-activated CQDs in water solution",
      "quote": "indicating that the extremely efficient production of 1O2 and/or oxygen radicals is facilely induced by photo-activated CQDs in water solution"
+    },
+    {
+     "property": "EPR_DMPO_OH_signal_H2O2_with_CQDs_Fig_S4",
+     "value_text": "With adding CQDs into H2O2 solution, the signal intensity of DMPO/･OH was reduced",
+     "quote": "With adding CQDs into H2O2 solution, the signal intensity of DMPO/･OH was reduced"
+    },
+    {
+     "property": "emission_colour_under_365nm_Fig_1a",
+     "value_text": "a pale-green emission appeared gradually under UV light (365 nm) irradiation",
+     "quote": "a pale-green emission appeared gradually under UV light (365 nm) irradiation"
+    },
+    {
+     "property": "Fig_1a_two_graphite_rod_types",
+     "value_text": "the sample was obtained after 3500 CV scan cycles on two types of graphite-coated rods",
+     "quote": "the sample was obtained after 3500 CV scan cycles on two types of graphite-coated rods"
     }
    ],
    "missing_fields": [
@@ -664,6 +679,27 @@
      "instrument": "PARSTAT 2263 Advanced Electrochemical System; fit with ZView",
      "conditions": "open-circuit voltage, 1 sun illumination, 200 kHz–100 mHz, ac amplitude 10 mV",
      "quote": "The electrochemical impedance spectroscopy (EIS) was measured by applying the open-circuit voltage under 1 sun illumination and recorded over the frequency range of 200 kHz–100 mHz with ac amplitude of 10 mV by using a PARSTAT 2263 Advanced Electrochemical System."
+    },
+    {
+     "technique": "XPS Ti 2p",
+     "result": "Ti 2p: 2p3/2 binding energies 457.6 and 458.14 eV, 2p1/2 components 463.21 and 464.0 eV, assigned to Ti3+ (TiOOH/coordinatively unsaturated) and Ti4+ (TiO2)",
+     "instrument": "ULVAC-PHI, PHI 5000 VersaProbe/Scanning ESCA Microprobe; fit with XPSPEAK41",
+     "conditions": null,
+     "quote": "The Ti 2p spectra were deconvoluted and resolved into four spin orbit components at 2p3/2 binding energies 457.6, 458.14 eV and their corresponding 2p1/2 components (463.21, 464.0 eV) which are assigned as Ti3+ (TiOOH/coordinatively unsaturated) and Ti4+ (TiO2), respectively"
+    },
+    {
+     "technique": "XPS C 1s",
+     "result": "C 1 s: peaks at 284.24, 285.44 and 287.99 eV for C–C (sp2), C–O and C=O",
+     "instrument": "ULVAC-PHI, PHI 5000 VersaProbe/Scanning ESCA Microprobe; fit with XPSPEAK41",
+     "conditions": null,
+     "quote": "The peaks at 284.24, 285.44 and 287.99 eV for C 1 s spectrum are ascribed to the C–C bond with sp2 orbital, C–O and C=O bonds, respectively."
+    },
+    {
+     "technique": "XPS O 1s",
+     "result": "O 1 s: peaks at 529.06, 530.49 and 531.49 eV for Ti=O, C=O and C–OH",
+     "instrument": "ULVAC-PHI, PHI 5000 VersaProbe/Scanning ESCA Microprobe; fit with XPSPEAK41",
+     "conditions": null,
+     "quote": "The main peak of O 1 s spectrum at 529.06, 530.49 and 531.49 eV is attributed to Ti=O, C=O and C–OH, respectively"
     }
    ],
    "outcomes": [
@@ -776,13 +812,33 @@
    "type": "limite_reproductibilite",
    "route": "TiO2_NW",
    "text": "La croissance des nanofils manque de la vitesse de chauffe, du volume de la cuve en Téflon, du taux de remplissage, du rinçage et du séchage après la voie hydrothermale ; la longueur des nanofils, la surface de l'électrode et la charge en CQDs ne sont pas données, ce qui limite la comparaison des densités de photocourant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQD_solution",
+   "text": "Les CQDs sont présentés dans le texte et la figure 2 comme producteurs de •OH et de 1O2 sous UV, alors que l'annexe (figure S4) montre que l'ajout de CQDs à H2O2 réduit le signal DMPO/•OH. Cette baisse peut aussi venir d'un piégeage des radicaux par les CQDs ; aucun dosage de O2 ni de H2O2 n'est fait, donc l'activité de type « peroxydase » n'est pas démontrée par ces données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_TiO2_NW",
+   "text": "Il manque un témoin : le TiO2 nu polarisé à −3,0 V pendant 1 h sans CQDs. Une forte polarisation cathodique peut à elle seule modifier le TiO2 et le FTO et augmenter le photocourant ; le facteur 6,4 n'est donc pas attribuable avec certitude aux seuls CQDs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQDs_TiO2_NW",
+   "text": "La frange de 0,223 nm est attribuée par les auteurs aux plans (101) du graphite, dont la distance attendue est proche de 0,203 nm ; elle est plus proche de plans du rutile. L'autre frange (0,325 nm) ne distingue pas le rutile (110) du graphite (002). Le HRTEM seul ne prouve donc pas la présence des CQDs sur les nanofils ; le Raman et le XPS y renvoient."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CQD_solution",
+   "text": "Les 3500 cycles à 0,5 V s−1 représentent environ 23 h d'électrolyse (estimation d'après les valeurs de l'article) dans 30 ml d'eau, avec une référence Ag/AgCl dont une fuite de KCl peut fournir l'électrolyte réel ; la nature exacte de la tige « graphite-coated » n'est pas précisée."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "CQDs_TiO2_NW étape 1, réactifs",
-   "issue": "L'article écrit « electrodeposition of CQDs onto TiO2 NWs » avec TiO2 NW comme électrode de travail, Ag/AgCl en référence et une feuille de platine en contre-électrode, sans nommer l'électrolyte. La solution de CQDs (voie CQD_solution) est inscrite comme réactif intermédiaire parce que les CQDs sont ce qui se dépose ; l'électrolyte, sa composition et son volume restent non cités."
+   "issue": "L'article écrit « electrodeposition of CQDs onto TiO2 NWs » avec TiO2 NW comme électrode de travail, Ag/AgCl en référence et une feuille de platine en contre-électrode, sans nommer l'électrolyte. La solution de CQDs (voie CQD_solution) est inscrite comme réactif intermédiaire par lecture probable, non écrite par les auteurs : la citation ne dit pas qu'elle sert d'électrolyte, ni son volume, ni si elle est diluée. Présentation seulement ; l'électrolyte reste dans not_stated de l'étape."
   },
   {
    "where": "Figure 1, légendes (b) et (c)",
@@ -790,7 +846,7 @@
   },
   {
    "where": "TiO2_NW étape 1",
-   "issue": "« for 15 min, respectively » : on ne sait pas si 15 min s'applique à chacun des trois bains de nettoyage ou au total ; lecture littérale : duration = 15 min pour l'étape de nettoyage entière."
+   "issue": "« for 15 min, respectively » : on ne sait pas si 15 min s'applique à chacun des trois bains de nettoyage (détergent, eau, mélange éthanol/acétone/eau) ou au total ; lecture littérale conservée : duration = 15 min pour l'étape de nettoyage entière, sans trancher."
   },
   {
    "where": "CQD_solution, figure 1a",
