@@ -265,7 +265,7 @@
    "characterizations": [
     {
      "technique": "XRD (low angle)",
-     "result": "one intense peak at 2θ 0.91 and two weak peaks at 1.58 and 1.82 indexed (100), (110), (200): hexagonal SBA-15 (sentence given jointly for SBA-15 and SBA-15@ELA)",
+     "result": "one intense peak at 2θ 0.91 and two weak peaks at 1.58 and 1.82 indexed (100), (110), (200): hexagonal SBA-15 (Fig. 9a for SBA-15; the sentence gives one set of three values for Fig. 9a and Fig. 9b together)",
      "instrument": "Rigaku Ultima IV",
      "conditions": "0 to 5 degrees",
      "quote": "They are typical hexagonally structured SBA-15 with highly ordered mesoporous channels."
@@ -538,6 +538,13 @@
      "instrument": "Perkin Elmer 1720-X spectrometer, KBr pellets",
      "conditions": "400–4000 cm–1",
      "quote": "Also, the peak at 1575 cm−1 proves the presence of C-NH2 functional group (Fig. 4b)."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "peak at 2930 cm−1 assigned to stretching vibrations of aliphatic C-H bonds of the propyl chains (the text does not name the figure for this band; Fig. 4b is the likeliest)",
+     "instrument": "Perkin Elmer 1720-X spectrometer, KBr pellets",
+     "conditions": "400–4000 cm–1",
+     "quote": "the peak of 2930 cm−1 indicates stretching vibrations of aliphatic C-H bonds of the propyl chains"
     }
    ],
    "outcomes": [
@@ -546,6 +553,13 @@
      "quote": "Also, the peak at 1575 cm−1 proves the presence of C-NH2 functional group (Fig. 4b).",
      "value_num": 1575,
      "unit": "cm−1"
+    },
+    {
+     "property": "FTIR_aliphatic_C-H_band",
+     "value_num": 2930,
+     "value_text": null,
+     "unit": "cm−1",
+     "quote": "the peak of 2930 cm−1 indicates stretching vibrations of aliphatic C-H bonds of the propyl chains"
     }
    ],
    "missing_fields": [
@@ -830,10 +844,24 @@
     },
     {
      "technique": "TGA",
-     "result": "weight loss <150 °C (~10%, water/solvents) and 300–360 °C (organic moieties)",
+     "result": "weight loss below 150 °C (estimated 10 %, adsorbed water and solvents); 40 % of the structure decomposed, major weight loss within 300–360 °C attributed to organic moieties",
      "instrument": "STD Q600",
      "conditions": null,
      "quote": "The large weight loss in the SBA-15@ELA sample explains the presence and subsequent breakdown of the organic moieties attached to the SBA-15"
+    },
+    {
+     "technique": "XRD (low angle)",
+     "result": "one intense peak at 2θ 0.91 and two weak peaks at 1.58 and 1.82 indexed (100), (110), (200) (Fig. 9b for SBA-15@ELA; the sentence gives one set of three values for Fig. 9a and Fig. 9b together); decrease in diffraction intensity attributed to the incorporation of organic groups on the surface",
+     "instrument": "Rigaku Ultima IV",
+     "conditions": "0 to 5 degrees",
+     "quote": "Fig. 9b for the structure of SBA-15@ELA indicated that one high intensity peak at 2Ө: 0.91 and two small peaks at 2Ө: 1.58 and 1.82 corresponding to (1 0 0), (1 1 0) and (2 0 0) planes, respectively."
+    },
+    {
+     "technique": "catalytic test, general procedure (4-oxo-dihydroquinazolinones 4a–t)",
+     "result": "isatoic anhydride 1 mmol (0.163 g), phenylhydrazine 1.1 mmol (0.118 g), SBA-15@ELA (mass not given), ethanol 5 mL, reflux 1 h; then aldehyde or ketone 1 mmol added and reflux 6 h; catalyst separated with filter paper, solvent evaporated, EtOH-H2O (5:5 mL) added and stirred 1 h at R.T., precipitate filtered and washed with cold H2O",
+     "instrument": null,
+     "conditions": "ethanol 5 mL, reflux",
+     "quote": "Isatoic anhydride (1 mmol, 0.163 g), and phenylhydrazine (1.1 mmol, 0.118 g) were placed in a round-bottomed flask and SBA-15@ELA nanocatalyst were added. Ethanol (5 mL) was added, and the mixture was heated for an hour under reflux."
     }
    ],
    "outcomes": [
@@ -867,10 +895,17 @@
      "unit": "%"
     },
     {
-     "property": "TGA_weight_loss_300–360 °C_organic_moieties",
-     "quote": "It seems that 40% of the structure was decomposed and, major weight loss within the range of 300–360 °C was due to the degradation of organic moieties.",
+     "property": "TGA_weight_loss_total_decomposed_structure",
+     "quote": "It seems that 40% of the structure was decomposed",
      "value_num": 40,
      "unit": "%"
+    },
+    {
+     "property": "TGA_main_weight_loss_range_organic_moieties",
+     "value_num": null,
+     "value_text": "300–360 °C",
+     "unit": null,
+     "quote": "major weight loss within the range of 300–360 °C was due to the degradation of organic moieties."
     },
     {
      "property": "XRD_high_angle_peaks_2theta",
@@ -1225,8 +1260,8 @@
   },
   {
    "type": "tendance_observee",
-   "route": null,
-   "text": "Le texte (diffraction aux petits angles) donne un pic intense à 2θ = 0,91° et deux pics faibles à 1,58° et 1,82° pour la paire SBA-15 / SBA-15@ELA, indexés (100), (110) et (200) : structure hexagonale conservée après fonctionnalisation, avec une baisse d'intensité due aux groupes organiques. La phrase n'attribue pas les trois valeurs à l'un des deux échantillons en particulier.",
+   "route": "SBA-15@ELA",
+   "text": "Le texte (diffraction aux petits angles, plage 0 à 5 degrés) rattache la Fig. 9a à SBA-15 et la Fig. 9b à SBA-15@ELA, puis donne une seule série de valeurs pour les deux : un pic intense à 2θ = 0,91° et deux pics faibles à 1,58° et 1,82°, indexés (100), (110) et (200). La structure hexagonale est conservée après fonctionnalisation, avec une baisse d'intensité attribuée aux groupes organiques ; l'article ne donne pas de positions séparées pour chaque échantillon.",
    "quote": "one high intensity peak at 2Ө: 0.91 and two small peaks at 2Ө: 1.58 and 1.82 corresponding to (1 0 0), (1 1 0) and (2 0 0) planes, respectively."
   },
   {
@@ -1242,12 +1277,6 @@
    "quote": "An important step in preparing the final composite is the interaction of -NH2 from APTES and carbonyl from a cyclic ester of Ellagic acid to form an amide bond through a nucleophilic substitution reaction (Fig. 2)."
   },
   {
-   "type": "mecanisme_auteurs",
-   "route": "SBA-15",
-   "text": "Les auteurs ne décrivent pas le mécanisme de formation de SBA-15 : ils renvoient à la recette de Stucky et rappellent que le matériau est une mésophase hexagonale silice–copolymère à blocs formée en milieu acide.",
-   "quote": "This compound was first synthesized in acidic media to produce highly ordered, two-dimensional hexagonal silica-block copolymer mesophases in 1992 by Stucky and co-workers at the University of California."
-  },
-  {
    "type": "mecanisme_analyse",
    "route": "SBA-15",
    "text": "Hypothèse de chimiste : en milieu HCl 2 M, les micelles de P123 servent de gabarit ; le TEOS s'hydrolyse et se condense autour des chaînes d'oxyde d'éthylène à 40 °C, la température de traitement hydrothermal de 100 °C pendant 2 jours achève la condensation de la silice, et la calcination à 550 °C brûle le P123 et laisse les canaux hexagonaux. Les quantités sont cohérentes avec les rapports molaires annoncés (P123 : TEOS d'environ 0,017 avec 4 g de P123 et 8,5 g de TEOS, TEOS d'environ 0,041 mol)."
@@ -1255,12 +1284,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "SBA-15-NH2",
-   "text": "Hypothèse de chimiste : le groupe méthoxysilane de l'APTES réagit avec les silanols de surface de SBA-15 (condensation avec perte de méthanol), ce qui greffe une chaîne propylamine ; la réaction se fait dans le toluène anhydre sous azote pour limiter l'auto-condensation de l'APTES en solution. 2,0 mL d'APTES (environ 8,5 mmol) pour 1 g de silice constitue un large excès par rapport aux silanols accessibles."
+   "text": "Hypothèse de chimiste : le groupe méthoxysilane de l'APTES réagit avec les silanols de surface de SBA-15 (condensation avec perte de méthanol), ce qui greffe une chaîne propylamine ; la réaction se fait sous azote dans le toluène, que l'article dit utilisé sans purification (rien n'indique qu'il soit séché), si bien que l'eau résiduelle peut favoriser l'auto-condensation de l'APTES en solution. 2,0 mL d'APTES (environ 8,5 mmol) pour 1 g de silice constitue un large excès par rapport aux silanols accessibles."
   },
   {
    "type": "mecanisme_analyse",
    "route": "SBA-15@ELA",
-   "text": "Hypothèse de chimiste : l'amine primaire de SBA-15–NH2 ouvre probablement une lactone de l'acide ellagique pour donner une amide et un phénol libre ; K2CO3 sert probablement à maintenir l'amine non protonée et à déprotoner les hydroxyles phénoliques de l'acide ellagique. 3 mmol d'acide ellagique (environ 0,9 g) pour 1 g de SBA-15–NH2 correspondent à un excès probable par rapport aux amines greffées (non quantifiées par l'article)."
+   "text": "Hypothèse de chimiste, réserves du critique scientifique : l'amine primaire de SBA-15–NH2 peut ouvrir une lactone de l'acide ellagique (amide et phénol libre), mais cette réaction ne concerne au mieux qu'une fraction minoritaire des amines ; le K2CO3 (1 équivalent) déprotone les phénols de l'acide ellagique, ce qui rend la lactone moins électrophile et forme un ellagate de potassium insoluble. Le plus probable au vu des données est un dépôt d'acide ellagique, en partie sous forme d'ellagate de potassium, sur SBA-15–NH2 (raies de Bragg, perte ATG de 40 %, obstruction des pores à 90 m2/g) ; l'activité catalytique viendrait alors des phénols de l'acide ellagique, supporté ou en partie dissous, plutôt que d'une monocouche greffée. 3 mmol d'acide ellagique (environ 0,9 g) pour 1 g de SBA-15–NH2 forment un excès probable par rapport aux amines greffées, non quantifiées par l'article."
   },
   {
    "type": "securite_analyse",
@@ -1300,6 +1329,90 @@
    "route": "SBA-15-NH2",
    "text": "Seule précaution écrite : le greffage de l'APTES et celui de l'acide ellagique se font sous atmosphère d'azote.",
    "quote": "The mixture was allowed to stir at 120 °C under reflux for 48 h under N2 condition after adding 2.0 mL of APTES."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15@ELA",
+   "text": "L'ATG de SBA-15@ELA est difficile à lire : le texte donne 10 % de perte sous 150 °C et 40 % de structure décomposée (perte principale entre 300 et 360 °C), alors que la Fig. 12 montre environ 3 % de perte à 150 °C et porte l'annotation « 57.81% weight change ». Les valeurs du texte sont conservées telles quelles ; le taux réel de matière organique n'est pas établi.",
+   "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": "SBA-15@ELA",
+   "text": "Pour les 19 dérivés du tableau 3, les auteurs écrivent que les substituants donneurs d'électrons (4a, 4c, 4k) augmentent le rendement et que les substituants attracteurs comme -NO2 (4b) le diminuent ; ils ajoutent qu'une substitution en para donne de meilleurs résultats (4c, 4g) et que les produits spiro (cétones, cyclohexanone) ont des rendements plus faibles que ceux des aldéhydes. Ces affirmations sont celles des auteurs.",
+   "quote": "The results showed that electron-donating substitutions (4a, 4c, 4k) increase the yield, and electron-withdrawing substitutions such as -NO2 (4b) decrease the yield in the products."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15@ELA",
+   "text": "Récupération du catalyseur entre cycles (réutilisation de la Fig. 14) : après la réaction, 20 mL d'éthanol chaud sont ajoutés sous agitation, le catalyseur est filtré, lavé à l'éthanol (3 × 10 mL), séché à l'étuve à 70 °C pendant 10 h, puis réutilisé « en quantité constante » ; la masse de catalyseur engagée à chaque cycle n'est pas donnée.",
+   "quote": "after completion of the reaction, 20 mL hot ethanol was added and stirred. The catalyst was filtered out and washed with ethanol"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15@ELA",
+   "text": "Suite de la procédure de récupération du catalyseur : séchage à l'étuve à 70 °C pendant 10 h, puis réutilisation en quantité constante pour les cycles suivants (le comptage « constant amount » ne précise pas la masse).",
+   "quote": "then kept in an oven at 70 °C for 10 h and dried to prepare for the next catalytic run. The recovered catalyst was used in a constant amount for the next runs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15@ELA",
+   "text": "L'acide ellagique est très peu soluble dans l'alcool et l'eau (PubChem, fiche de l'acide ellagique) et le K2CO3 est insoluble dans l'éthanol et l'acétone : les lavages à l'éthanol et à l'acétone décrits ne peuvent éliminer ni l'excès d'acide ellagique (0,9 g) ni le carbonate de potassium (0,41 g), et aucun lavage à l'eau ou en milieu basique n'est décrit. La réaction se fait aussi entre deux solides en suspension dans le toluène.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15@ELA",
+   "text": "Le diffractogramme aux grands angles montre 13 raies fines, qui indiquent une phase organique cristalline massive plutôt qu'une monocouche greffée ; les raies à 10,8° et 15,8° ne correspondent pas à celles de l'acide ellagique dihydraté calculées d'après sa maille publiée (PMID 1747921) et aucun diffractogramme de référence n'est montré. Avec une perte ATG de 40 % proche de la rétention de tout l'acide ellagique engagé (39 à 48 %), la liaison amide n'est pas démontrée (pas de RMN 13C du solide ni d'XPS N 1s).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15@ELA",
+   "text": "L'EDX de SBA-15@ELA ne mentionne que C, O, Si et N alors que 6 mmol de K+ ont été ajoutées et qu'aucun lavage décrit ne peut les retirer : soit le potassium a été omis du spectre, soit un lavage n'est pas écrit.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15@ELA",
+   "text": "Le maximum BJH à 3,53 nm est incompatible avec le diamètre moyen 4V/S de 7,54 nm calculé à partir des valeurs du tableau 1 ; il correspond très probablement à l'artefact de cavitation de l'azote à 77 K (pic de désorption vers 3,4 à 3,8 nm quand les canaux sont obstrués ; Thommes et al., Pure Appl. Chem. 2015, recommandations IUPAC) et n'est donc pas une taille de pore. La boucle d'hystérèse annoncée H1 pour les deux matériaux est aussi douteuse pour des canaux obstrués.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15@ELA",
+   "text": "Les témoins de catalyse changent plusieurs variables à la fois (SBA-15 nu dans le toluène à 120 °C pendant 10 h, SBA-15@ELA dans l'éthanol au reflux pendant 6 h, acide ellagique libre pendant 24 h) et aucun test de filtration à chaud n'est décrit : l'acide ellagique éventuellement dissous dans l'éthanol bouillant pourrait catalyser en phase homogène. Il manque aussi SBA-15–NH2 seul et le K2CO3 seul comme témoins.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15@ELA",
+   "text": "« 120 °C » est annoncé pour un reflux dans le toluène, dont le point d'ébullition est 110,6 °C (NIST WebBook) : c'est probablement la consigne du bain. La conclusion dit le composite utilisable « jusqu'à 350 °C », alors que la perte principale d'ATG (40 %) se situe entre 300 et 360 °C ; les particules « d'environ 80 à 90 nm » sont aussi trop petites pour des grains de SBA-15 de cette recette (a0 de 11,2 nm calculé d'après la raie (100)), et correspondent plutôt à des cristallites en surface.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15",
+   "text": "Le rapport H2O/TEOS écrit (162,681) ne correspond pas aux masses de la recette : 120 g de HCl 2 M et 30 g d'eau pour 8,5 g de TEOS donnent environ 192 (environ 21 g d'eau non comptés) ; refaire la synthèse avec les masses. L'agitation initiale dure 8 h, contre 20 à 24 h dans les autres SBA-15 de la base (PMC6812203, PMC11990281, PMC8495851), sans effet visible sur les résultats.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15",
+   "text": "L'introduction date la synthèse de SBA-15 de 1992 et donne des pores d'environ 30 nm, alors que SBA-15 a été publiée en 1998 (Zhao et al., Science 1998, DOI 10.1126/science.279.5350.548 non vérifié ; 1992 est l'année de MCM-41) et que la recette présente donne 7,35 nm, valeur mesurée par les auteurs eux-mêmes. Ces deux informations de contexte sont gardées telles qu'écrites dans l'article.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15-NH2",
+   "text": "Le réactif est nommé « (3-aminopropyl)trimethoxysilane (APTES) » : le nom chimique désigne le dérivé triméthoxy (APTMS) et le sigle APTES le dérivé triéthoxy, ce qui change la quantité de 2,0 mL (environ 8,5 mmol pour l'APTES, 11,5 mmol pour l'APTMS). Le « 120 °C under reflux » dans le toluène (ébullition 110,6 °C, NIST WebBook) est probablement la consigne du bain.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15-NH2",
+   "text": "Aucune teneur en amine greffée n'est mesurée (ni analyse élémentaire, ni ATG de SBA-15–NH2) et le toluène n'est pas dit anhydre : l'eau adsorbée sur la silice calcinée peut favoriser l'auto-condensation du silane en couche polymérique.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -1337,15 +1450,15 @@
   },
   {
    "where": "SBA-15, TGA / Conclusion",
-   "issue": "Le texte écrit que SBA-15 est stable jusqu'à 700 °C, et la conclusion que le nanocomposite SBA-15@ELA supporte jusqu'à 350 °C, alors que la perte de 40 % se situe entre 300 et 360 °C : l'étendue de stabilité thermique du composite est ambiguë. Seules les pertes de masse du texte sont extraites."
+   "issue": "Le texte écrit que SBA-15 est stable jusqu'à 700 °C, et la conclusion que le nanocomposite SBA-15@ELA supporte jusqu'à 350 °C, alors que la perte principale se situe entre 300 et 360 °C (40 % de la structure décomposée selon le texte) : l'étendue de stabilité thermique du composite est ambiguë. Seules les pertes de masse du texte sont extraites."
   },
   {
    "where": "SBA-15-NH2, atmosphère et température",
    "issue": "« stir at 120 °C under reflux » dans le toluène (point d'ébullition d'environ 111 °C) : la température donnée est conservée telle quelle ; il s'agit probablement de la température du bain."
   },
   {
-   "where": "SBA-15, diffraction aux petits angles",
-   "issue": "La phrase des pics à 0,91°, 1,58° et 1,82° vise SBA-15 (Fig. 9a) et SBA-15@ELA (Fig. 9b) ensemble ; les valeurs ne sont donc pas attribuées à un seul échantillon (annotation tendance_observee d'article). Le texte indexe d'ailleurs les trois pics (100), (110), (200) avec « 2Ө »."
+   "where": "SBA-15 et SBA-15@ELA, diffraction aux petits angles",
+   "issue": "La phrase cite la Fig. 9a pour SBA-15 et la Fig. 9b pour SBA-15@ELA, puis ne donne qu'une série de pics (0,91°, 1,58°, 1,82°, indexés (100), (110), (200)). Les mêmes valeurs sont donc portées par les deux voies ; l'article ne dit pas si les positions diffèrent d'un échantillon à l'autre. Le texte écrit « 2Ө » avec ce caractère."
   },
   {
    "where": "Réactifs, fournisseur",
@@ -1358,6 +1471,26 @@
   {
    "where": "Protocole catalytique général, durées",
    "issue": "Le protocole général indique 1 h de reflux puis 6 h après ajout de l'aldéhyde, alors que le tableau 3 donne des durées de 6 à 10 h par produit sans dire si elles incluent l'heure initiale. Aucune des deux lectures n'est corrigée ; ce protocole n'est de toute façon pas chargé comme voie (synthèse organique)."
+  },
+  {
+   "where": "SBA-15@ELA, ATG (Fig. 12)",
+   "issue": "Le texte donne une perte « estimated 10% » sous 150 °C et « 40% of the structure was decomposed », la perte principale étant située entre 300 et 360 °C ; les 40 % sont la perte totale et non celle de la seule plage 300–360 °C. Sur la Fig. 12 (lue), la courbe rouge est à environ 97 % vers 150 °C (perte d'environ 3 %, loin des 10 % du texte) et la figure porte l'annotation « 57.81% weight change » que le texte ne reprend pas. Valeurs du texte conservées, écart non résolu."
+  },
+  {
+   "where": "SBA-15-NH2, bande IR 2930 cm−1",
+   "issue": "Le texte attribue la bande à 2930 cm−1 aux liaisons C-H aliphatiques des chaînes propyle, mais ne dit pas dans quelle figure elle se lit ; elle est rangée sous SBA-15-NH2 (spectre Fig. 4b, vers lequel renvoie la phrase suivante sur la bande à 1575 cm−1)."
+  },
+  {
+   "where": "SBA-15@ELA, Table 3, effet de la position du substituant",
+   "issue": "Le texte écrit « -para substitution in aldehyde substrates with the same substitution type had better performance (4c, 4g) », alors que sur l'image du tableau 3 le composé 4g porte un groupe 2-méthylphényle (position ortho) et 4c un 4-méthylphényle (para). L'affirmation de l'article n'est pas corrigée."
+  },
+  {
+   "where": "SBA-15-NH2, nom du silane",
+   "issue": "L'article écrit « (3-aminopropyl)trimethoxysilane (APTES) » : le nom désigne le dérivé triméthoxy et le sigle le dérivé triéthoxy ; l'article ne dit pas lequel a été utilisé. Nom recopié tel quel dans la voie, pureté et fournisseur non donnés."
+  },
+  {
+   "where": "SBA-15, taille de pore (introduction contre tableau 1)",
+   "issue": "L'introduction écrit que les pores hexagonaux de SBA-15 font « about 30 nm » alors que le tableau 1 donne 7,35 nm pour le SBA-15 préparé. Valeur du tableau 1 retenue en résultat ; la phrase d'introduction n'est pas extraite."
   }
  ]
 }
