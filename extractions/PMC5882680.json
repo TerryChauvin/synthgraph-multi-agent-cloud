@@ -147,12 +147,17 @@
        "type": "muffle furnace",
        "detail": null,
        "quote": "Bulk g-C3N4 was prepared by the thermal treatment of 4 g melamine at 550°C for 4 h in a muffle furnace under an ambient pressure."
+      },
+      {
+       "type": "alumina crucible",
+       "detail": null,
+       "quote": "After reaction, the alumina crucible was cooled to room temperature."
       }
      ],
      "not_stated": [
       "atmosphere",
       "heating_rate",
-      "crucible"
+      "crucible_volume_and_lid"
      ]
     },
     {
@@ -305,7 +310,7 @@
     }
    ],
    "missing_fields": [
-    "crucible_type",
+    "crucible_volume_and_lid",
     "muffle_furnace_atmosphere_and_heating_rate",
     "bulk_gCN_vs_nanosheet_specific_surface_area"
    ]
@@ -488,7 +493,7 @@
     {
      "order": 4,
      "action": "dissolve",
-     "description": "Dissolve solid Na2WO4·2H2O in 20 ml ethylene glycol (done meanwhile).",
+     "description": "Meanwhile, during the 1.5 h stirring of step 3, dissolve solid Na2WO4·2H2O in 20 ml ethylene glycol.",
      "quote": "a certain amount of Na2WO4·2H2O solid was added to 20 ml ethylene glycol (EG) to obtain a uniform solution",
      "parameters": [
       {
@@ -667,6 +672,20 @@
      "instrument": "500 W xenon lamp with 420 nm cut-off filter; UV–vis spectrometer at 463 nm",
      "conditions": "50 mg of sample in 50 ml of methyl orange solution (5 mg l−1), stirred for 120 min in the dark before irradiation",
      "quote": "The photocatalytic activity of the catalysts was tested by degrading the methyl orange (MO) solution under a visible light using a 500 W xenon lamp with a 420 nm cut-off filter as the light source."
+    },
+    {
+     "technique": "scavenger experiments (free radical capture)",
+     "result": "with TBA 80.53 %, with BQ 45.02 % of MO degraded (95.89 % without scavenger); degradation slightly enhanced with EDTA",
+     "instrument": null,
+     "conditions": "EDTA 6 mmol l−1 (hole scavenger), BQ 0.5 mmol l−1 (·O2− scavenger), TBA 6 mmol l−1 (·OH scavenger)",
+     "quote": "using ethylenediaminetetraacetate (EDTA, 6 mmol l−1), benzoquinone (BQ, 0.5 mmol l−1) and tert-butanol (TBA, 6 mmol l−1) as effective scavengers for holes, ·O2− and ·OH radicals respectively"
+    },
+    {
+     "technique": "photocatalytic recycling (four cycles)",
+     "result": "degradation rate of MO still 84.26% after four cycles",
+     "instrument": null,
+     "conditions": "four cycles under the same conditions; after every cycle the sample was centrifuged, washed and dried at 60°C",
+     "quote": "The g-C3N4-Bi2WO6 composite photocatalyst was circulated four times under the same conditions. After every cycle, the sample was centrifuged, washed and dried at 60°C."
     }
    ],
    "outcomes": [
@@ -894,12 +913,6 @@
      "value_text": "absent",
      "parent_value": "g-C3N4 nanosheets, mass ratio 8 : 2",
      "quote": "The pure Bi2WO6 sample was synthesized according to the same method without g-C3N4."
-    },
-    {
-     "parameter": "triethylene glycol (g-C3N4 suspension)",
-     "value_text": "absent",
-     "parent_value": "30 ml",
-     "quote": "The pure Bi2WO6 sample was synthesized according to the same method without g-C3N4."
     }
    ],
    "succeeded": true,
@@ -907,18 +920,13 @@
     {
      "order": 1,
      "action": "dissolve",
-     "description": "Dissolve Bi(NO3)3·5H2O in 20 ml TEG by stirring (no g-C3N4 suspension to add it to; see doubts).",
+     "description": "Dissolve Bi(NO3)3·5H2O in 20 ml TEG by stirring (the article does not say how it is added once there is no g-C3N4 suspension; see doubts).",
      "quote": "a certain percentage of Bi(NO3)3·5H2O dissolved in 20 ml TEG by stirring and added dropwise to the above suspension",
      "parameters": [
       {
        "name": "volume",
        "value_num": 20,
        "unit": "ml",
-       "quote": "a certain percentage of Bi(NO3)3·5H2O dissolved in 20 ml TEG by stirring and added dropwise to the above suspension"
-      },
-      {
-       "name": "addition_mode",
-       "value_text": "dropwise",
        "quote": "a certain percentage of Bi(NO3)3·5H2O dissolved in 20 ml TEG by stirring and added dropwise to the above suspension"
       }
      ],
@@ -927,13 +935,14 @@
       "duration",
       "stirring_speed",
       "addition_rate",
-      "temperature"
+      "temperature",
+      "addition_mode"
      ]
     },
     {
      "order": 2,
      "action": "stir",
-     "description": "Stir the mixture at room temperature to form a homogeneous solution (carried over from the typical procedure).",
+     "description": "Stir the mixture at room temperature to form a homogeneous solution (inherited from the typical procedure, not confirmed for the sample without g-C3N4; see doubts).",
      "quote": "The mixture was stirred for 1.5 h at room temperature to form a homogeneous solution.",
      "parameters": [
       {
@@ -956,7 +965,7 @@
     {
      "order": 3,
      "action": "dissolve",
-     "description": "Dissolve solid Na2WO4·2H2O in 20 ml ethylene glycol (done meanwhile).",
+     "description": "Meanwhile, during the 1.5 h stirring of step 2, dissolve solid Na2WO4·2H2O in 20 ml ethylene glycol.",
      "quote": "a certain amount of Na2WO4·2H2O solid was added to 20 ml ethylene glycol (EG) to obtain a uniform solution",
      "parameters": [
       {
@@ -975,7 +984,7 @@
     {
      "order": 4,
      "action": "add",
-     "description": "Add the sodium tungstate solution rapidly to the mixture suspension and stir for another 3 h at room temperature.",
+     "description": "Add the sodium tungstate solution rapidly to the mixture and stir for another 3 h at room temperature (inherited from the typical procedure, not confirmed for the sample without g-C3N4; see doubts).",
      "quote": "After stirring and dissolving, the solution was added rapidly to the above mixture suspension and then stirred for another 3 h at room temperature.",
      "parameters": [
       {
@@ -1109,6 +1118,20 @@
      "quote": "For pure Bi2WO6, there is a series of narrow and pointed diffraction peaks, which are in good agreement with the orthorhombic phase of Bi2WO6 (JCPDS 39-0256) without any impurity."
     },
     {
+     "technique": "FT-IR",
+     "result": "O–H stretching band at 3428 cm−1 and bending band at 1628 cm−1",
+     "instrument": "Thermo Electron Nicolet-Nexus 470 FT-IR spectrometer",
+     "conditions": "KBr disc",
+     "quote": "The absorption peaks at 3428 cm−1 and 1628 cm−1 in the spectrum of pure Bi2WO6 are attributed to the stretching vibration and bending vibration of the O–H, respectively."
+    },
+    {
+     "technique": "FT-IR (400–800 cm−1)",
+     "result": "main absorption peaks at 400–800 cm−1 (Bi–O, W–O stretching and W–O–W bridging modes)",
+     "instrument": "Thermo Electron Nicolet-Nexus 470 FT-IR spectrometer",
+     "conditions": "KBr disc",
+     "quote": "The main absorption peaks at 400–800 cm−1 in pure Bi2WO6 sample correspond to Bi–O, W–O stretching and W–O–W bridging stretching modes"
+    },
+    {
      "technique": "TEM",
      "result": "irregular nanoparticles with a mean size of approximately 30 nm",
      "instrument": "TEM JEOL JEM-2100",
@@ -1164,6 +1187,9 @@
      "value_text": "low photocatalytic activity",
      "quote": "the pure Bi2WO6 sample exhibits its low photocatalytic activity"
     }
+   ],
+   "not_stated": [
+    "triethylene_glycol_suspension_30_ml"
    ]
   }
  ],
@@ -1210,12 +1236,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "8:2 g-C3N4-Bi2WO6",
-   "text": "Hypothèse : Bi3+ (issu du nitrate dissous dans TEG) et WO4 2− (tungstate dissous dans EG) précipitent sous forme de Bi2WO6 lors du traitement solvothermal à 200 °C, les glycols jouant probablement le rôle de solvant visqueux et d'agent de contrôle de la croissance, ce qui expliquerait des particules de 30 nm environ. Les feuillets de g-C3N4 servent probablement de support de nucléation hétérogène, ce qui répartit les particules. Le rapport Bi:W de 2:1 de Bi2WO6 n'est pas vérifiable car les quantités ne sont pas données."
+   "text": "Hypothèse : Bi3+ se complexe aux glycols (TEG, EG) sous forme de glycolates, ce qui retarderait son hydrolyse. Après l'ajout du tungstate, WO4 2− se combinerait à Bi3+ et, à 200 °C, Bi2WO6 orthorhombique (structure d'Aurivillius, couches (Bi2O2)2+ / WO4 2−) cristalliserait ; les glycols, visqueux et complexants, limiteraient la croissance à de petites particules (environ 30 nm pour Bi2WO6 pur) et les feuillets de g-C3N4 serviraient probablement de sites de nucléation hétérogène. Le rapport Bi:W de 2:1 n'est pas vérifiable car les quantités ne sont pas données."
   },
   {
    "type": "mecanisme_analyse",
    "route": "g-C3N4",
-   "text": "Hypothèse : la mélamine se condense vers 550 °C en libérant de l'ammoniac (via mélame et mélon) pour donner g-C3N4 massif ; le second traitement à 500 °C, qualifié de désammoniation, attaque et exfolie probablement les couches, d'où les nanofeuillets de quelques nanomètres. L'atmosphère n'étant pas précisée, un four à moufle laisse supposer de l'air."
+   "text": "Hypothèse : la mélamine se condense par étapes (mélame, mélem, puis melon, avec perte d'ammoniac) jusqu'à 550 °C pour donner g-C3N4 massif, au degré de condensation fixé par la température maximale. L'étape à 500 °C, dite désammoniation, ne peut pas pousser plus loin cette condensation ; elle agirait plutôt comme une oxydation thermique sous air qui attaque les couches de proche en proche, les amincit et les détache, avec une perte de masse notable (Niu et al. 2012). L'atmosphère n'étant pas précisée (four à moufle, donc air probable), l'accès de l'air, non décrit, déciderait de la formation de nanofeuillets."
   },
   {
    "type": "securite_analyse",
@@ -1225,7 +1251,7 @@
   {
    "type": "securite_analyse",
    "route": "8:2 g-C3N4-Bi2WO6",
-   "text": "Le traitement à 200 °C en autoclave scellé monte en pression ; le taux de remplissage n'est pas donné (70 ml de solvants au total, volume d'autoclave inconnu) et le nitrate de bismuth, oxydant, est chauffé avec des glycols organiques : ne pas dépasser les deux tiers de remplissage et laisser refroidir avant d'ouvrir. Le triéthylène glycol et l'éthylène glycol sont toxiques (l'éthylène glycol surtout par ingestion). Le tungstate de sodium est nocif ; les poudres nanométriques ne sont pas à inhaler. La benzoquinone des essais de piégeage est toxique et l'orange de méthyle est un colorant azoïque à éliminer comme déchet."
+   "text": "Le traitement à 200 °C en autoclave scellé monte en pression ; le taux de remplissage n'est pas donné (70 ml de solvants au total, volume d'autoclave inconnu) et le nitrate de bismuth, oxydant, est chauffé avec des glycols organiques : il faut un autoclave d'au moins 100 mL pour 70 ml de liquide (remplissage de 70 % au plus) et le laisser refroidir avant de l'ouvrir. Le triéthylène glycol et l'éthylène glycol sont toxiques (l'éthylène glycol surtout par ingestion). Le tungstate de sodium est nocif ; les poudres nanométriques ne sont pas à inhaler. La benzoquinone des essais de piégeage est toxique et l'orange de méthyle est un colorant azoïque à éliminer comme déchet."
   },
   {
    "type": "limite_reproductibilite",
@@ -1236,8 +1262,28 @@
   {
    "type": "limite_reproductibilite",
    "route": "8:2 g-C3N4-Bi2WO6",
-   "text": "Incohérence de l'article : la DRX attribue Bi2WO6 à la phase orthorhombique (JCPDS 39-0256), alors que la légende HR-TEM parle de plans (113) et (060) du Bi2WO6 « cubic ». Les constantes cinétiques du texte (0,0166 pour 5:5, 0,01104 pour 2:8, 0,00999 pour g-C3N4) diffèrent un peu des barres de la figure 7b (environ 0,015, 0,010 et 0,009) : le texte est retenu.",
+   "text": "Incohérence de l'article : la DRX attribue Bi2WO6 à la phase orthorhombique (JCPDS 39-0256), alors que la légende HR-TEM parle de plans (113) et (060) du Bi2WO6 « cubic ». Avec les paramètres de cette fiche, la frange de 0,316 nm correspond à (131) (d ≈ 0,315 nm) et non à (113) (d ≈ 0,171 nm), et Bi2WO6 n'a pas de phase cubique à température ambiante : l'indexation de l'article est fausse (fiche JCPDS 39-0256). Les constantes cinétiques du texte (0,0166 pour 5:5, 0,01104 pour 2:8, 0,00999 pour g-C3N4) diffèrent un peu des barres de la figure 7b (environ 0,015, 0,010 et 0,009) : le texte est retenu.",
    "quote": "which belongs to (113) and (060) lattice planes of cubic Bi2WO6"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "8:2 g-C3N4-Bi2WO6",
+   "text": "Incohérence de l'article : le schéma de type II (figure 9) contredit les potentiels que les auteurs donnent eux-mêmes. Dans un type II, les électrons finissent dans la bande de conduction de Bi2WO6 (+0,46 V, écrit « eV » alors qu'il faut lire V contre ENH), trop positive pour réduire O2 en ·O2− (−0,33 V contre ENH, Wood 1988), alors que les auteurs concluent que ·O2− est l'espèce active principale (BQ : 45,02 %). Un schéma Z direct serait plus cohérent avec ces essais ; l'article ne le discute pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "g-C3N4",
+   "text": "L'étape dite de « désammoniation » (500 °C, 3 h) suit une polycondensation à 550 °C : une étape plus froide ne peut pas pousser la condensation plus loin. Ce qui amincit les feuillets est plutôt une oxydation thermique sous air (Niu et al. 2012), dont la condition efficace (creuset ouvert, accès de l'air) n'est pas écrite ; avec un creuset fermé on obtiendrait du g-C3N4 massif. La bande interdite de 2,71 eV est celle du g-C3N4 massif et aucune mesure d'épaisseur (AFM) ni de surface (BET) ne l'appuie : le caractère nanofeuillet repose sur les seules images MEB et MET."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "8:2 g-C3N4-Bi2WO6",
+   "text": "La teneur réelle en Bi2WO6 du composite n'est pas mesurée (ni ATG ni ICP) alors que sa DRX ressemble à celle de Bi2WO6 pur ; la surface spécifique invoquée pour expliquer l'activité n'est pas mesurée non plus (pas de BET). Deux témoins manquent : un mélange physique 8:2 de g-C3N4 et de Bi2WO6, et du g-C3N4 traité seul dans le triéthylène glycol et l'éthylène glycol à 200 °C. Le pic XPS Bi 4f7/2 à 157,58 eV est proche de celui du bismuth métallique (157 eV) et loin de Bi2O3 (159 eV) : une réduction partielle de Bi3+ par l'éthylène glycol n'est pas exclue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "8:2 g-C3N4-Bi2WO6",
+   "text": "Les bandes interdites des composites viennent d'un tracé de Tauc sur un mélange de deux phases, qui ne mesure pas une bande interdite, et le décalage vers le rouge s'explique par le simple mélange. L'orange de méthyle absorbe à 463 nm, dans la plage d'irradiation (λ > 420 nm) : une dégradation sensibilisée par le colorant n'est pas exclue par le blanc sans catalyseur."
   }
  ],
  "method_sources": [
@@ -1257,7 +1303,7 @@
  "doubts": [
   {
    "where": "Bi2WO6, étapes",
-   "issue": "L'article dit que Bi2WO6 pur est préparé « according to the same method without g-C3N4 ». Les étapes du parent concernant g-C3N4 (dispersion dans 30 ml de TEG, sonication) sont retirées. L'article ne dit pas si les 30 ml de TEG sont conservés ni si le nitrate de bismuth est versé dans un autre solvant ; les 20 ml de TEG sont gardés et la variation retire le réactif de 30 ml. L'étape d'agitation de 1,5 h est conservée telle quelle du parent."
+   "issue": "L'article dit que Bi2WO6 pur est préparé « according to the same method without g-C3N4 ». Les étapes du parent propres à g-C3N4 (dispersion dans 30 ml de TEG, sonication) sont retirées. « Without g-C3N4 » ne dit ni que les 30 ml de TEG de la suspension sont retirés, ni qu'ils sont conservés, ni comment le nitrate de bismuth est ajouté une fois la suspension absente : volume de TEG de la suspension et mode d'addition de l'étape 1 sont donc déclarés non cités. Les 20 ml de TEG de la solution de bismuth et du tungstate sont gardés (volumes propres du protocole). Les agitations de 1,5 h et de 3 h (étapes 2 et 4) sont héritées du protocole typique, sans que l'article le confirme ni le contredise."
   },
   {
    "where": "voie de base 8:2 et variations 2:8, 5:5",
@@ -1286,6 +1332,10 @@
   {
    "where": "figures lues",
    "issue": "Valeurs lues sur Fig. 6b (C/C0 à 120 min : 5:5 ≈ 0,16 ; 2:8 ≈ 0,30 ; Bi2WO6 ≈ 0,70), Fig. 8 (C/C0 en fin de chaque cycle ≈ 0,03, 0,07, 0,16, 0,17) et Fig. 10a (EDTA ≈ 0,02 à 120 min). Précision de lecture environ ±0,02. Les autres valeurs de ces figures sont déjà dans le texte ; les gaps des composites (Fig. 4b) ne sont pas lisibles avec précision et n'ont pas été relevés."
+  },
+  {
+   "where": "g-C3N4, étape 1, creuset",
+   "issue": "Le creuset en alumine n'est cité que dans la phrase de refroidissement (« After reaction, the alumina crucible was cooled to room temperature »), placée après les deux calcinations. Il est rattaché à l'étape 1 comme équipement du protocole, sans que l'article dise que le même creuset sert aux deux traitements ; volume et couvercle ne sont pas cités."
   }
  ]
 }
