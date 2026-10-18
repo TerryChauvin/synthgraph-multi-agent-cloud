@@ -65,6 +65,42 @@
     "Fig. 6",
     "Fig. S4"
    ]
+  },
+  {
+   "sample": "Solutions de CDs à différentes températures ambiantes",
+   "defined_in": "Results, Stability of CDs",
+   "route": null,
+   "why": "Essai de stabilité sur le matériau fini (outcomes de la voie CDs), pas une synthèse ; valeurs seulement sur la Fig. S2 (image d'annexe), le texte ne donne qu'une tendance.",
+   "results_in": [
+    "Fig. S2A"
+   ]
+  },
+  {
+   "sample": "Solutions de CDs conservées pendant des durées différentes (jusqu'à 6 mois)",
+   "defined_in": "Results, Stability of CDs",
+   "route": null,
+   "why": "Essai de stabilité sur le matériau fini (outcomes de la voie CDs), pas une synthèse ; valeurs seulement sur la Fig. S2 (image d'annexe), le texte ne donne qu'une tendance.",
+   "results_in": [
+    "Fig. S2B"
+   ]
+  },
+  {
+   "sample": "Solutions de CDs sous irradiation à 400 nm de durées différentes",
+   "defined_in": "Results, Stability of CDs",
+   "route": null,
+   "why": "Essai de stabilité sur le matériau fini (outcomes de la voie CDs), pas une synthèse ; valeurs seulement sur la Fig. S2 (image d'annexe), le texte ne donne qu'une tendance.",
+   "results_in": [
+    "Fig. S2C"
+   ]
+  },
+  {
+   "sample": "Solutions de CDs avec différentes concentrations de NaCl",
+   "defined_in": "Results, Stability of CDs",
+   "route": null,
+   "why": "Essai de stabilité sur le matériau fini (outcomes de la voie CDs), pas une synthèse ; valeurs seulement sur la Fig. S2 (image d'annexe), le texte ne donne qu'une tendance.",
+   "results_in": [
+    "Fig. S2D"
+   ]
   }
  ],
  "routes": [
@@ -333,13 +369,13 @@
     },
     {
      "property": "ph_response_fluorescence",
-     "value_text": "fluorescence stronger in acidic than alkaline solution; intensity highest at pH 3 and 5, lower at pH 7, very low at pH 9, 11 and 13; emission blue-shifts from acidic to alkaline",
+     "value_text": "fluorescence stronger in acidic than alkaline solution; intensity highest at pH 3 and 5, lower at pH 7, low at pH 9, very low at pH 11 and 13; emission blue-shifts from acidic to alkaline",
      "from_figure": "Fig. 4B",
      "quote": "To put it simply, the fluorescence intensity of CDs in acidic solution is stronger than that in alkaline solution, and the emission wavelength of CDs blue shifts with the pH changing from acidic to alkaline (Fig. 4B)."
     },
     {
      "property": "solvent_dependence_fluorescence",
-     "value_text": "strong in water, much weaker in DMSO, DMF and ethyl acetate (reading of Fig. 4D)",
+     "value_text": "strong in water; very weak in DMSO, DMF and ethyl acetate; intermediate in MeOH, EtOH, IPA and THF; acetone and CH2Cl2 about equal to or slightly above water (reading of Fig. 4D)",
      "from_figure": "Fig. 4D",
      "quote": "In addition, the fluorescence properties of CDs in organic solvents of different polarities were very diverse (Fig. 4C and D)."
     },
@@ -380,6 +416,47 @@
      "property": "selectivity_other_anions",
      "value_text": "S2O82−, HCO3−, CO32−, HPO42−, H2PO4−, SO42−, NO3−, Cl−, COONH4−, SO32− exhibited a scarce effect on the fluorescence",
      "quote": "Particularly, the results described that these negative ions exhibited a scarce effect on the fluorescence of CDs (Fig. S4†), indicating the acceptable selectivity of CDs towards NO2−."
+    },
+    {
+     "property": "temperature_effect_on_fluorescence",
+     "value_text": "fluorescence intensity of CDs will decrease slightly with the increase of ambient temperature",
+     "quote": "With the increase of ambient temperature, the fluorescence intensity of CDs will decrease slightly."
+    },
+    {
+     "property": "NaCl_concentration_effect_on_fluorescence",
+     "value_text": "fluorescence intensity of CDs decreased significantly with the increase of NaCl concentration",
+     "quote": "with the increase of NaCl concentration, the fluorescence intensity of CDs decreased significantly"
+    },
+    {
+     "property": "xps_C1s_binding_energies",
+     "value_text": "285.69, 284.82, 284.12 eV, originated from C–S/C–O, C–N and CC, respectively",
+     "quote": "C1s peak could be deconvoluted into three peaks of 285.69, 284.82, 284.12 eV, which were originated from C–S/C–O, C–N and CC, respectively."
+    },
+    {
+     "property": "xps_O1s_binding_energies",
+     "value_text": "C–O (532.17 eV), SO (531.44 eV)",
+     "quote": "C–O (532.17 eV), SO (531.44 eV)"
+    },
+    {
+     "property": "xps_N1s_binding_energies",
+     "value_text": "C–N/N–H at 401.90 eV, CN–C at 401.05 eV",
+     "quote": "C–N/N–H at 401.90 eV, CN–C at 401.05 eV"
+    },
+    {
+     "property": "xps_sulfur_binding_energies",
+     "value_text": "SO at 169.28 eV and C–S at 167.95 eV (the article writes S1s; the caption of Fig. 3F says S2p)",
+     "quote": "S1s spectrum exhibited the signals of SO at 169.28 eV and C–S at 167.95 eV"
+    },
+    {
+     "property": "selectivity_anion_solutions_concentration",
+     "value_num": 0.01,
+     "unit": "mol/L",
+     "quote": "Complex anion solutions (0.01 mol L−1) are prepared with various salts"
+    },
+    {
+     "property": "ph_adjustment_buffer",
+     "value_text": "citrate phosphate buffer concentrate",
+     "quote": "pH buffer solution (citrate phosphate buffer concentrate) was used to adjust the pH of the solution."
     }
    ],
    "missing_fields": [
@@ -387,7 +464,8 @@
     "yield",
     "autoclave_volume",
     "dilution_factor",
-    "purification"
+    "purification",
+    "nitrite_concentrations_fig6"
    ]
   },
   {
@@ -409,7 +487,10 @@
    "not_stated": [
     "yield",
     "film_thickness",
-    "casting_substrate"
+    "casting_substrate",
+    "cds_solution_volume",
+    "methylcellulose_percent_definition",
+    "drying_time"
    ],
    "succeeded": true,
    "reagents": [
@@ -525,13 +606,13 @@
   {
    "type": "limite_reproductibilite",
    "route": "MC_CDs_film",
-   "text": "La préparation du film tient en une phrase : le volume de solution de CDs, la définition exacte de la « fraction volume-masse » de 3 %, la température d'agitation, la durée du séchage, le support et l'épaisseur du film ne sont pas donnés. Le fournisseur de la méthylcellulose n'est pas cité pour cet usage (la phrase de fournisseur vise « the synthesis »).",
+   "text": "La préparation du film tient en une phrase : le volume de solution de CDs, la définition exacte de la « fraction volume-masse » de 3 %, la température d'agitation, la durée de séchage, le support et l'épaisseur du film ne sont pas donnés (cases not_stated). Le fournisseur de la méthylcellulose n'est pas cité pour cet usage (la phrase de fournisseur vise « the synthesis »).",
    "quote": "The methylcellulose powder and CDs solution were stirred for more than 12 hours (the volume mass fraction of methylcellulose was 3%) to obtain the methylcellulose/CDs colloid, which was dried at 60 °C to obtain the fluorescent film."
   },
   {
    "type": "tendance_observee",
    "route": "CDs",
-   "text": "Les essais de dilution, de pH et de solvant montrent que la fluorescence des CDs dépend fortement du milieu : maximale pour une dilution 1 : 5 dans l'eau, plus forte en milieu acide qu'en milieu basique (quasi éteinte à pH ≥ 9 d'après la Fig. 4B), et très diverse selon le solvant organique. Ce sont des propriétés du matériau fini, non des variations de synthèse.",
+   "text": "Les essais de dilution, de pH et de solvant montrent que la fluorescence des CDs dépend fortement du milieu : maximale pour une dilution 1 : 5 dans l'eau, plus forte en milieu acide qu'en milieu basique (faible à pH 9 (environ 15 % du maximum d'après la Fig. 4B) et très faible à pH 11 et 13), et très diverse selon le solvant organique. Ce sont des propriétés du matériau fini, non des variations de synthèse.",
    "quote": "In contrast, the fluorescence of CDs showed a response to diverse organic solvents and pH values, which revealed that these factors could affect the fluorescent property of CDs."
   },
   {
@@ -549,12 +630,32 @@
   {
    "type": "mecanisme_analyse",
    "route": "CDs",
-   "text": "Hypothèse : la carbonisation solvothermale à 200 °C de l'acide sulfanilique dans l'eau/éthanol passerait probablement par une déshydratation et une condensation partielles du cycle aromatique aminé, qui forment un noyau de carbone sp2 de moins de 2 nm ; le soufre sulfonique et l'azote amine seraient en partie conservés, d'où le dopage N,S et les groupes –NH2 et –SO3H de surface. L'éthanol, cosolvant, sert probablement à régler la polarité et la pression de vapeur dans l'autoclave. À 0.6 g (≈ 3.5 mmol, M = 173.2 g/mol) dans 25 à 50 ml, la concentration est d'environ 0.07 à 0.14 mol/L (calcul de l'orchestrateur, non écrit dans l'article)."
+   "text": "Hypothèse (non sourcée dans l'article) : à 200 °C en milieu aqueux acide (l'acide sulfanilique est lui-même un acide, pKa ≈ 3,2), une petite fraction du précurseur subirait une désulfonation hydrolytique partielle (Ar–SO3H + H2O → Ar–H + H2SO4), qui libère de l'aniline ; une condensation ou une oxydation partielle donnerait ensuite de petits oligomères conjugués aminés et sulfonés, fluorescents dans le bleu-vert, au sein d'un grand excès de précurseur resté intact (ce que suggèrent l'XPS, l'ATG et l'absence de purification). Un cœur carboné sp2 n'est pas démontré. L'éthanol, cosolvant, sert probablement à régler la polarité et la pression de vapeur dans l'autoclave. À 0.6 g (≈ 3.5 mmol, M = 173.2 g/mol) dans 25 à 50 ml, la concentration est d'environ 0.07 à 0.14 mol/L (calcul de l'orchestrateur, non écrit dans l'article)."
   },
   {
    "type": "securite_analyse",
    "route": "CDs",
    "text": "Un autoclave chauffé à 200 °C avec un mélange eau/éthanol développe une pression notable, d'autant que le taux de remplissage n'est pas donné (au plus 25 à 50 ml selon la lecture du volume) : ne pas dépasser les deux tiers du volume de la chemise de Téflon et refroidir complètement avant d'ouvrir. L'éthanol est inflammable, l'acide sulfanilique est irritant, et la décomposition à haute température d'un composé soufré peut libérer des oxydes de soufre ou du H2S. Le nitrite de sodium utilisé pour la détection est toxique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs",
+   "text": "Les caractérisations ne distinguent pas le produit du précurseur : la composition XPS (C 52,85 / N 7,51 / O 31,14 / S 8,49 %) est proche de celle de l'acide sulfanilique lui-même (C 54,5 / N 9,1 / O 27,3 / S 9,1 % en at. hors H, calcul de la critique scientifique), l'ATG ressemble à celle du précurseur et aucune purification n'est faite (pas de dialyse ni de centrifugation). Les mesures décrivent donc peut-être surtout du précurseur non consommé (PubChem, fiche de l'acide sulfanilique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs",
+   "text": "La preuve d'un cœur carboné n'est pas discriminante : des particules d'environ 1 nm, une émission indépendante de l'excitation et des bandes d'absorption à 240 et 350 nm vont aussi avec des fluorophores moléculaires (Essner et al., Chem. Mater. 2018). Il manque une dialyse ou une chromatographie, un contrôle du précurseur seul chauffé, le rendement et le rendement quantique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs",
+   "text": "Le dopage en soufre n'est pas démontré par l'XPS : les deux composantes S2p à 169,28 et 167,95 eV (écart de 1,33 eV, aires d'environ 1 : 2) ressemblent au doublet spin-orbite d'un seul sulfonate (Thermo Fisher, XPS Periodic Table, soufre), et non à une composante C–S distincte ; la composante C1s à 284,82 eV, attribuée à C–N par les auteurs, est aussi la position de référence du carbone aromatique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs",
+   "text": "Le mécanisme d'extinction par le nitrite est discutable : la bande d'absorption apparue vers 500 nm (Fig. 6A, lecture de la critique) recouvre l'émission à 480 nm, ce qui suffit à expliquer la baisse par effet de filtre interne ; l'acide sulfanilique résiduel est le réactif de la réaction de Griess (diazotation puis couplage azoïque, Tsikas, J. Chromatogr. B 2007) dans un milieu de pH calculé voisin de 2,5 ; l'article ne donne aucune durée de vie pour établir l'extinction « statique », et l'« oxydation du sulfonate en acide sulfurique » n'a pas de base chimique (le soufre est déjà au degré d'oxydation +6). Les concentrations de nitrite de la Fig. 6 ne sont pas chiffrées."
   }
  ],
  "method_sources": [
@@ -593,6 +694,22 @@
   {
    "where": "CDs, nom du matériau",
    "issue": "Les auteurs écrivent « N, S-CDs », « N/S-CDs », « CDs » et « PA-CDs » pour le même matériau ; le seul échantillon synthétisé est le CDs de la section Preparation."
+  },
+  {
+   "where": "CDs, énergies de liaison XPS",
+   "issue": "Le texte écrit « S1s spectrum » alors que la légende de la Fig. 3F dit S2p ; il écrit « four types of carbon bonds » pour un spectre O1s qui n'en liste que deux (C–O, SO) ; les symboles « = » des liaisons doubles sont perdus dans le texte du dépôt (« CC », « SO », « CN–C »). Valeurs recopiées telles quelles, sans correction."
+  },
+  {
+   "where": "CDs étape 1, matériel",
+   "issue": "« DF-101S thermostat water bath is used for stirring and keeping warm. » : l'article ne rattache pas ce bain thermostaté à une étape ; il sert probablement à l'agitation à 60 °C de l'étape 1, mais l'équipement de l'étape reste « magnetic stirrer »."
+  },
+  {
+   "where": "CDs, essais avec nitrite (Fig. 6)",
+   "issue": "La légende de la Fig. 6 parle de « two concentrations of NO2− » que l'article ne chiffre nulle part : concentrations non citées, rien n'est extrait."
+  },
+  {
+   "where": "CDs, séries de stabilité (Fig. S2)",
+   "issue": "Température, durée, irradiation et NaCl : seules des tendances qualitatives sont écrites dans le texte ; les valeurs testées sont sur la Fig. S2 (image absente), donc non extraites."
   }
  ]
 }
