@@ -1,0 +1,189 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5304631</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5304631 — Conjugation of Polymer-Coated Gold Nanoparticles with Antibodies-Synthesis and Characterization.</h1>
+<h2>Voie : Au-citrate</h2>
+<pre class="mermaid">flowchart LR
+  R12669([&quot;hydrogen tetrachloroaurate (III) hydrate (fi…&lt;br/&gt;1 mL&quot;]):::reactif
+  R12669 --&gt;|&quot;precursor&quot;| S15070
+  R12670([&quot;hydrogen tetrachloroaurate (III) hydrate (gr…&lt;br/&gt;1 mL&quot;]):::reactif
+  R12670 --&gt;|&quot;precursor&quot;| S15070
+  R12671([&quot;trisodium citrate dihydrate (initial solutio…&lt;br/&gt;150 mL&quot;]):::reactif
+  R12671 --&gt;|&quot;reducing_agent&quot;| S15070
+  R12672([&quot;sodium citrate (growth injection, 60 mM)&lt;br/&gt;1 mL&quot;]):::reactif
+  R12672 --&gt;|&quot;reducing_agent&quot;| S15070
+  R12673([&quot;ultrapure water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12673 --&gt;|&quot;solvent&quot;| S15070
+  S15070[&quot;&lt;b&gt;1. clean&lt;/b&gt;&quot;]:::etape
+  S15070 --&gt; S15071
+  S15071[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&quot;]:::etape
+  S15071 --&gt; S15072
+  S15072[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume : 1 mL&lt;br/&gt;temperature : 100 °C&quot;]:::etape
+  S15072 --&gt; S15073
+  S15073[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S15073 --&gt; S15074
+  S15074[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;delay_between_injections : two minutes&quot;]:::etape
+  S15074 --&gt; S15075
+  S15075[&quot;&lt;b&gt;6. react&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S15075 --&gt; S15076
+  S15076[&quot;&lt;b&gt;7. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S15076 --&gt; M
+  M{{&quot;citrate-capped gold nanoparticles (20 nm core)&lt;br/&gt;Au&quot;}}:::materiau
+  O60923[&quot;core_diameter : 20.9 nm&quot;]:::resultat
+  M -.-&gt; O60923
+  O60924[&quot;NP_concentration_after_synthesis : 11.1 nM&quot;]:::resultat
+  M -.-&gt; O60924
+  O60925[&quot;SPR_peak_wavelength : 530 nm&quot;]:::resultat
+  M -.-&gt; O60925
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Au-PEG</h2>
+<pre class="mermaid">flowchart LR
+  R12674([&quot;Au NPs (route Au-citrate)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12674 --&gt;|&quot;intermediate&quot;| S15077
+  R12675([&quot;heterofunctional thiol-PEG-carboxylic acid (…&lt;br/&gt;105 PEG molecules per NP (exp…&quot;]):::reactif
+  R12675 --&gt;|&quot;capping_agent&quot;| S15077
+  R12676([&quot;sodium hydroxide (1 M)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12676 --&gt;|&quot;base&quot;| S15077
+  R12677([&quot;fresh buffer&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12677 --&gt;|&quot;wash&quot;| S15077
+  S15077[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S15077 --&gt; S15078
+  S15078[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 12&quot;]:::etape
+  S15078 --&gt; S15079
+  S15079[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 14000 rpm&lt;br/&gt;duration : 30 min&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S15079 --&gt; M
+  M{{&quot;PEGylated gold nanoparticles (HS-PEG-COOH, 3 kDa)&lt;br/&gt;Au&quot;}}:::materiau
+  O60926[&quot;hydrodynamic_diameter_dh_water : 27.4 nm&quot;]:::resultat
+  M -.-&gt; O60926
+  O60927[&quot;zeta_potential_water : -32.8 mV&quot;]:::resultat
+  M -.-&gt; O60927
+  O60928[&quot;cell_uptake_A549_with_serum_0.6nM : 2400 ppb Au per mg protein&quot;]:::resultat
+  M -.-&gt; O60928
+  O60929[&quot;cell_uptake_A549_with_serum_1nM : 4000 ppb Au per mg protein&quot;]:::resultat
+  M -.-&gt; O60929
+  O60930[&quot;cell_uptake_A549_without_serum_0.6… : 9700 ppb Au per mg protein&quot;]:::resultat
+  M -.-&gt; O60930
+  O60931[&quot;cell_uptake_A549_without_serum_1nM : 16000 ppb Au per mg protein&quot;]:::resultat
+  M -.-&gt; O60931
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : FITC-antibody</h2>
+<pre class="mermaid">flowchart LR
+  R12678([&quot;anti-HRP antibody&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12678 --&gt;|&quot;precursor&quot;| S15080
+  R12679([&quot;anti-VEGF antibody&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12679 --&gt;|&quot;precursor&quot;| S15080
+  R12680([&quot;fluorescein isothiocyanate (FITC)&lt;br/&gt;750 FITC molecules per protein&quot;]):::reactif
+  R12680 --&gt;|&quot;precursor&quot;| S15080
+  R12681([&quot;sodium borate buffer (SBB), pH 9&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12681 --&gt;|&quot;solvent&quot;| S15080
+  S15080[&quot;&lt;b&gt;1. measure&lt;/b&gt;&lt;br/&gt;sample_volume_high_range : 10 μL&lt;br/&gt;reagent_volume_high_range : 300 μL&lt;br/&gt;sample_volume_low_range : 150 μL&lt;br/&gt;reagent_volume_low_range : 150 μL&lt;br/&gt;mixing_time : 30 s&lt;br/&gt;incubation_time : 10 min&quot;]:::etape
+  S15080 --&gt; S15081
+  S15081[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;ph : 9&lt;br/&gt;molar_ratio : 750&quot;]:::etape
+  S15081 --&gt; S15082
+  S15082[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S15082 --&gt; S15083
+  S15083[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&lt;br/&gt;duration : at least 4 h&quot;]:::etape
+  S15083 --&gt; S15084
+  S15084[&quot;&lt;b&gt;5. purify&lt;/b&gt;&quot;]:::etape
+  S15084 --&gt; S15085
+  S15085[&quot;&lt;b&gt;6. measure&lt;/b&gt;&lt;br/&gt;sample_volume_high_range : 10 μL&lt;br/&gt;reagent_volume_high_range : 300 μL&lt;br/&gt;sample_volume_low_range : 150 μL&lt;br/&gt;reagent_volume_low_range : 150 μL&lt;br/&gt;mixing_time : 30 s&lt;br/&gt;incubation_time : 10 min&quot;]:::etape
+  S15085 --&gt; M
+  M{{&quot;FITC-labelled antibodies (anti-HRP, anti-VEGF)&lt;br/&gt;&quot;}}:::materiau
+  O60947[&quot;fluorescence_calibration_slope_ant… : 4447.1 mL/µg&quot;]:::resultat
+  M -.-&gt; O60947
+  O60948[&quot;fluorescence_calibration_slope_ant… : 5498.3 mL/µg&quot;]:::resultat
+  M -.-&gt; O60948
+  O60949[&quot;fluorescence_calibration_intercept… : -464.28 a.u.&quot;]:::resultat
+  M -.-&gt; O60949
+  O60950[&quot;fluorescence_calibration_intercept… : -3549.4 a.u.&quot;]:::resultat
+  M -.-&gt; O60950
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Au-PEG-anti-VEGF</h2>
+<pre class="mermaid">flowchart LR
+  R12682([&quot;Au-PEG NPs (route Au-PEG), 208 nM&lt;br/&gt;19.23 μL&quot;]):::reactif
+  R12682 --&gt;|&quot;intermediate&quot;| S15086
+  R12683([&quot;MES buffer (50 mM, pH 6.5)&lt;br/&gt;923.5 μL&quot;]):::reactif
+  R12683 --&gt;|&quot;solvent&quot;| S15086
+  R12684([&quot;EDC stock solution (100 mg/mL)&lt;br/&gt;57.3 µL&quot;]):::reactif
+  R12684 --&gt;|&quot;precursor&quot;| S15086
+  R12685([&quot;anti-VEGF antibody&lt;br/&gt;30 μg&quot;]):::reactif
+  R12685 --&gt;|&quot;ligand&quot;| S15086
+  R12686([&quot;TAMRA&lt;br/&gt;2 μg&quot;]):::reactif
+  R12686 --&gt;|&quot;ligand&quot;| S15086
+  R12687([&quot;amine-PEG (methoxy-PEG-amine)&lt;br/&gt;75 μg&quot;]):::reactif
+  R12687 --&gt;|&quot;capping_agent&quot;| S15086
+  R12688([&quot;sodium dodecylsulfate (SDS, 10%)&lt;br/&gt;10 μL&quot;]):::reactif
+  R12688 --&gt;|&quot;wash&quot;| S15086
+  R12689([&quot;fresh buffer&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12689 --&gt;|&quot;wash&quot;| S15086
+  S15086[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;concentration : 208 nM&lt;br/&gt;edc_per_np : 7.5 × 106 EDC molecules&quot;]:::etape
+  S15086 --&gt; S15087
+  S15087[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S15087 --&gt; S15088
+  S15088[&quot;&lt;b&gt;3. purify&lt;/b&gt;&lt;br/&gt;dilution_factor : roughly diluted twice&quot;]:::etape
+  S15088 --&gt; S15089
+  S15089[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;volume : 2 mL&quot;]:::etape
+  S15089 --&gt; S15090
+  S15090[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;antibody_per_np : 50 antibodies&quot;]:::etape
+  S15090 --&gt; S15091
+  S15091[&quot;&lt;b&gt;6. age&lt;/b&gt;&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S15091 --&gt; S15092
+  S15092[&quot;&lt;b&gt;7. add&lt;/b&gt;&lt;br/&gt;tamra_per_np : 103 TAMRA molecules&quot;]:::etape
+  S15092 --&gt; S15093
+  S15093[&quot;&lt;b&gt;8. age&lt;/b&gt;&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S15093 --&gt; S15094
+  S15094[&quot;&lt;b&gt;9. add&lt;/b&gt;&lt;br/&gt;amine_peg_per_np : 2.5 × 104 amine-PEG molecules&quot;]:::etape
+  S15094 --&gt; S15095
+  S15095[&quot;&lt;b&gt;10. age&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S15095 --&gt; S15096
+  S15096[&quot;&lt;b&gt;11. age&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S15096 --&gt; S15097
+  S15097[&quot;&lt;b&gt;12. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 14000 rpm&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S15097 --&gt; S15098
+  S15098[&quot;&lt;b&gt;13. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : fresh buffer&lt;br/&gt;repetitions : at least five cleaning cycles&lt;br/&gt;wash_additive : 10 μL of sodium dodecylsulfat…&quot;]:::etape
+  S15098 --&gt; M
+  M{{&quot;Au-PEG nanoparticles conjugated with anti-VEGF an…&lt;br/&gt;Au&quot;}}:::materiau
+  O60951[&quot;hydrodynamic_diameter_dh_water : 28.9 nm&quot;]:::resultat
+  M -.-&gt; O60951
+  O60952[&quot;zeta_potential_water : -11.8 mV&quot;]:::resultat
+  M -.-&gt; O60952
+  O60953[&quot;HUVEC_cell_number_48h_VEGF_16ngmL_… : 110 %&quot;]:::resultat
+  M -.-&gt; O60953
+  O60954[&quot;HUVEC_cell_number_48h_VEGF_16ngmL_… : 100 %&quot;]:::resultat
+  M -.-&gt; O60954
+  O60955[&quot;effect_on_VEGF_stimulated_prolifer… : some effect on HUVEC prolifer…&quot;]:::resultat
+  M -.-&gt; O60955
+  O60956[&quot;cellular_internalization_HUVEC : incorporated by HUVECs (fluor…&quot;]:::resultat
+  M -.-&gt; O60956
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10198{{&quot;Au-PEG-anti-VEGF&quot;}}:::materiau
+  B10199[&quot;Au-PEG-anti-HRP&quot;]:::etape
+  B10198 --&gt;|&quot;anti-VEGF antibody = replaced by anti-HRP ant…&quot;| B10199
+  B10200[&quot;Au-PEG-control&quot;]:::etape
+  B10198 --&gt;|&quot;anti-VEGF antibody = absent&quot;| B10200
+  B10201[&quot;Au-PEG-anti-VEGF*&quot;]:::etape
+  B10198 --&gt;|&quot;anti-VEGF antibody = replaced by FITC-labelle…&quot;| B10201
+  B10203[&quot;Au-PEG/anti-VEGF&quot;]:::etape
+  B10198 --&gt;|&quot;EDC stock solution (100 … = absent&quot;| B10203
+  B10206[&quot;Au-PEG-anti-VEGF_pH8&quot;]:::etape
+  B10198 --&gt;|&quot;MES buffer (50 mM, pH 6.… = a high pH such as 8&quot;| B10206
+  B10202[&quot;Au-PEG-anti-HRP*&quot;]:::etape
+  B10199 --&gt;|&quot;anti-HRP antibody = replaced by FITC-labelle…&quot;| B10202
+  B10204[&quot;Au-PEG/anti-HRP&quot;]:::etape
+  B10199 --&gt;|&quot;EDC stock solution (100 … = absent&quot;| B10204
+  B10205[&quot;Au-PEG/control&quot;]:::etape
+  B10200 --&gt;|&quot;EDC stock solution (100 … = absent&quot;| B10205
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
