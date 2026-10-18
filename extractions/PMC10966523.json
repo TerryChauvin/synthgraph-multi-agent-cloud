@@ -908,9 +908,9 @@
    "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
    "variations": [
     {
-     "parameter": "KBr I@SAPO-34 (voie KBr I@SAPO-34)",
+     "parameter": "SAPO-34 zeolite",
      "value_text": "replaced by ZSM-5 zeolite",
-     "parent_value": "SAPO-34 zeolite host",
+     "parent_value": "SAPO-34 zeolite (support of step I)",
      "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
     }
    ],
@@ -919,7 +919,12 @@
      "name": "ZSM-5 zeolite",
      "formula": null,
      "role": "substrate",
-     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD"
+     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "succeeded": true,
@@ -935,6 +940,124 @@
      "value_num": 511,
      "unit": "nm"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Step I solution: PbBr2 dissolved in aqueous KBr; masse de PbBr2, concentration de KBr et volume non donnés pour ce support (seulement « same processes »).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Step I: immerse the porous support in the PbBr2-KBr solution under ultrasound; support mass, volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "support_mass",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Step I: anneal the impregnated support (intermediate KBr I@support).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "dissolve",
+     "description": "Step II solution: CsBr dissolved in ultrapure water; masse de CsBr, concentration et volume non donnés pour ce support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "sonicate",
+     "description": "Step II: soak the intermediate in the CsBr solution under ultrasound; volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "anneal",
+     "description": "Step II: anneal to obtain the CsPbBr3@support composite.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "support_mass",
+    "solution_volumes",
+    "sonication_time",
+    "annealing_temperature_and_time",
+    "support_supplier"
    ]
   },
   {
@@ -950,9 +1073,9 @@
    "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
    "variations": [
     {
-     "parameter": "KBr I@SAPO-34 (voie KBr I@SAPO-34)",
+     "parameter": "SAPO-34 zeolite",
      "value_text": "replaced by SBA-15 mesoporous silica",
-     "parent_value": "SAPO-34 zeolite host",
+     "parent_value": "SAPO-34 zeolite (support of step I)",
      "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
     }
    ],
@@ -961,7 +1084,12 @@
      "name": "SBA-15 mesoporous silica",
      "formula": null,
      "role": "substrate",
-     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD"
+     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "succeeded": true,
@@ -978,6 +1106,124 @@
      "unit": "nm",
      "from_figure": "Fig. 5d"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Step I solution: PbBr2 dissolved in aqueous KBr; masse de PbBr2, concentration de KBr et volume non donnés pour ce support (seulement « same processes »).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Step I: immerse the porous support in the PbBr2-KBr solution under ultrasound; support mass, volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "support_mass",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Step I: anneal the impregnated support (intermediate KBr I@support).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "dissolve",
+     "description": "Step II solution: CsBr dissolved in ultrapure water; masse de CsBr, concentration et volume non donnés pour ce support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "sonicate",
+     "description": "Step II: soak the intermediate in the CsBr solution under ultrasound; volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "anneal",
+     "description": "Step II: anneal to obtain the CsPbBr3@support composite.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "support_mass",
+    "solution_volumes",
+    "sonication_time",
+    "annealing_temperature_and_time",
+    "support_supplier"
    ]
   },
   {
@@ -993,9 +1239,9 @@
    "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
    "variations": [
     {
-     "parameter": "KBr I@SAPO-34 (voie KBr I@SAPO-34)",
+     "parameter": "SAPO-34 zeolite",
      "value_text": "replaced by AlPO-5 zeolite",
-     "parent_value": "SAPO-34 zeolite host",
+     "parent_value": "SAPO-34 zeolite (support of step I)",
      "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
     }
    ],
@@ -1004,7 +1250,12 @@
      "name": "AlPO-5 zeolite",
      "formula": null,
      "role": "substrate",
-     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD"
+     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "succeeded": true,
@@ -1021,6 +1272,124 @@
      "unit": "nm",
      "from_figure": "Fig. 5d"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Step I solution: PbBr2 dissolved in aqueous KBr; masse de PbBr2, concentration de KBr et volume non donnés pour ce support (seulement « same processes »).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Step I: immerse the porous support in the PbBr2-KBr solution under ultrasound; support mass, volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "support_mass",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Step I: anneal the impregnated support (intermediate KBr I@support).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "dissolve",
+     "description": "Step II solution: CsBr dissolved in ultrapure water; masse de CsBr, concentration et volume non donnés pour ce support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "sonicate",
+     "description": "Step II: soak the intermediate in the CsBr solution under ultrasound; volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "anneal",
+     "description": "Step II: anneal to obtain the CsPbBr3@support composite.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "support_mass",
+    "solution_volumes",
+    "sonication_time",
+    "annealing_temperature_and_time",
+    "support_supplier"
    ]
   },
   {
@@ -1036,9 +1405,9 @@
    "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
    "variations": [
     {
-     "parameter": "KBr I@SAPO-34 (voie KBr I@SAPO-34)",
+     "parameter": "SAPO-34 zeolite",
      "value_text": "replaced by SOD zeolite",
-     "parent_value": "SAPO-34 zeolite host",
+     "parent_value": "SAPO-34 zeolite (support of step I)",
      "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
     }
    ],
@@ -1047,7 +1416,12 @@
      "name": "SOD zeolite",
      "formula": null,
      "role": "substrate",
-     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD"
+     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "succeeded": true,
@@ -1064,6 +1438,124 @@
      "unit": "nm",
      "from_figure": "Fig. 5d"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Step I solution: PbBr2 dissolved in aqueous KBr; masse de PbBr2, concentration de KBr et volume non donnés pour ce support (seulement « same processes »).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Step I: immerse the porous support in the PbBr2-KBr solution under ultrasound; support mass, volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "support_mass",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Step I: anneal the impregnated support (intermediate KBr I@support).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "dissolve",
+     "description": "Step II solution: CsBr dissolved in ultrapure water; masse de CsBr, concentration et volume non donnés pour ce support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "sonicate",
+     "description": "Step II: soak the intermediate in the CsBr solution under ultrasound; volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "anneal",
+     "description": "Step II: anneal to obtain the CsPbBr3@support composite.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "support_mass",
+    "solution_volumes",
+    "sonication_time",
+    "annealing_temperature_and_time",
+    "support_supplier"
    ]
   },
   {
@@ -1079,9 +1571,9 @@
    "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
    "variations": [
     {
-     "parameter": "NaBr I@SAPO-34 (voie NaBr I@SAPO-34)",
+     "parameter": "SAPO-34 zeolite",
      "value_text": "replaced by ZSM-5 zeolite",
-     "parent_value": "SAPO-34 zeolite host",
+     "parent_value": "SAPO-34 zeolite (support of step I)",
      "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
     }
    ],
@@ -1090,7 +1582,12 @@
      "name": "ZSM-5 zeolite",
      "formula": null,
      "role": "substrate",
-     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD"
+     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "succeeded": true,
@@ -1106,6 +1603,124 @@
      "value_num": 477,
      "unit": "nm"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Step I solution: PbBr2 dissolved in aqueous NaBr; masse de PbBr2, concentration de NaBr et volume non donnés pour ce support (seulement « same processes »).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Step I: immerse the porous support in the PbBr2-NaBr solution under ultrasound; support mass, volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "support_mass",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Step I: anneal the impregnated support (intermediate NaBr I@support).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "dissolve",
+     "description": "Step II solution: CsBr dissolved in ultrapure water; masse de CsBr, concentration et volume non donnés pour ce support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "sonicate",
+     "description": "Step II: soak the intermediate in the CsBr solution under ultrasound; volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "anneal",
+     "description": "Step II: anneal to obtain the CsPbBr3@support composite.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "support_mass",
+    "solution_volumes",
+    "sonication_time",
+    "annealing_temperature_and_time",
+    "support_supplier"
    ]
   },
   {
@@ -1121,9 +1736,9 @@
    "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
    "variations": [
     {
-     "parameter": "NaBr I@SAPO-34 (voie NaBr I@SAPO-34)",
+     "parameter": "SAPO-34 zeolite",
      "value_text": "replaced by SBA-15 mesoporous silica",
-     "parent_value": "SAPO-34 zeolite host",
+     "parent_value": "SAPO-34 zeolite (support of step I)",
      "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
     }
    ],
@@ -1132,7 +1747,12 @@
      "name": "SBA-15 mesoporous silica",
      "formula": null,
      "role": "substrate",
-     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD"
+     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "succeeded": true,
@@ -1149,6 +1769,124 @@
      "unit": "nm",
      "from_figure": "Fig. 5e"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Step I solution: PbBr2 dissolved in aqueous NaBr; masse de PbBr2, concentration de NaBr et volume non donnés pour ce support (seulement « same processes »).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Step I: immerse the porous support in the PbBr2-NaBr solution under ultrasound; support mass, volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "support_mass",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Step I: anneal the impregnated support (intermediate NaBr I@support).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "dissolve",
+     "description": "Step II solution: CsBr dissolved in ultrapure water; masse de CsBr, concentration et volume non donnés pour ce support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "sonicate",
+     "description": "Step II: soak the intermediate in the CsBr solution under ultrasound; volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "anneal",
+     "description": "Step II: anneal to obtain the CsPbBr3@support composite.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "support_mass",
+    "solution_volumes",
+    "sonication_time",
+    "annealing_temperature_and_time",
+    "support_supplier"
    ]
   },
   {
@@ -1164,9 +1902,9 @@
    "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
    "variations": [
     {
-     "parameter": "NaBr I@SAPO-34 (voie NaBr I@SAPO-34)",
+     "parameter": "SAPO-34 zeolite",
      "value_text": "replaced by AlPO-5 zeolite",
-     "parent_value": "SAPO-34 zeolite host",
+     "parent_value": "SAPO-34 zeolite (support of step I)",
      "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
     }
    ],
@@ -1175,7 +1913,12 @@
      "name": "AlPO-5 zeolite",
      "formula": null,
      "role": "substrate",
-     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD"
+     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "succeeded": true,
@@ -1192,6 +1935,124 @@
      "unit": "nm",
      "from_figure": "Fig. 5e"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Step I solution: PbBr2 dissolved in aqueous NaBr; masse de PbBr2, concentration de NaBr et volume non donnés pour ce support (seulement « same processes »).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Step I: immerse the porous support in the PbBr2-NaBr solution under ultrasound; support mass, volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "support_mass",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Step I: anneal the impregnated support (intermediate NaBr I@support).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "dissolve",
+     "description": "Step II solution: CsBr dissolved in ultrapure water; masse de CsBr, concentration et volume non donnés pour ce support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "sonicate",
+     "description": "Step II: soak the intermediate in the CsBr solution under ultrasound; volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "anneal",
+     "description": "Step II: anneal to obtain the CsPbBr3@support composite.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "support_mass",
+    "solution_volumes",
+    "sonication_time",
+    "annealing_temperature_and_time",
+    "support_supplier"
    ]
   },
   {
@@ -1207,9 +2068,9 @@
    "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
    "variations": [
     {
-     "parameter": "NaBr I@SAPO-34 (voie NaBr I@SAPO-34)",
+     "parameter": "SAPO-34 zeolite",
      "value_text": "replaced by SOD zeolite",
-     "parent_value": "SAPO-34 zeolite host",
+     "parent_value": "SAPO-34 zeolite (support of step I)",
      "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
     }
    ],
@@ -1218,7 +2079,12 @@
      "name": "SOD zeolite",
      "formula": null,
      "role": "substrate",
-     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD"
+     "quote": "including mesoporous silica SBA‐15, zeolites ZSM‐5, AlPO‐5, and SOD",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "succeeded": true,
@@ -1235,6 +2101,124 @@
      "unit": "nm",
      "from_figure": "Fig. 5e"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Step I solution: PbBr2 dissolved in aqueous NaBr; masse de PbBr2, concentration de NaBr et volume non donnés pour ce support (seulement « same processes »).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Step I: immerse the porous support in the PbBr2-NaBr solution under ultrasound; support mass, volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "support_mass",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "anneal",
+     "description": "Step I: anneal the impregnated support (intermediate NaBr I@support).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "dissolve",
+     "description": "Step II solution: CsBr dissolved in ultrapure water; masse de CsBr, concentration et volume non donnés pour ce support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "amount",
+      "concentration",
+      "duration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "sonicate",
+     "description": "Step II: soak the intermediate in the CsBr solution under ultrasound; volume and time not stated for this support.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "solution_volume",
+      "temperature",
+      "sonication_power"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "remove",
+     "description": "Remove the excess solution (method not stated).",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "removal_method"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "anneal",
+     "description": "Step II: anneal to obtain the CsPbBr3@support composite.",
+     "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "support_mass",
+    "solution_volumes",
+    "sonication_time",
+    "annealing_temperature_and_time",
+    "support_supplier"
    ]
   },
   {
@@ -1792,7 +2776,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "KBr II@SAPO-34",
-   "text": "Hypothèse de chimiste : lors du trempage dans CsBr, Cs+ rencontre dans les pores les ions Pb2+ et Br− laissés par l'étape I (PbBrx accompagné de KBr) ; la réaction probable est Cs+ + PbBr2 + Br− → CsPbBr3, l'eau de CsBr dissolvant en partie KBr (d'où la disparition des pics de KBr en DRX). La forte concentration en KBr ou NaBr restant dans les pores doit aussi favoriser les complexes [PbBr4]2− et limiter la croissance continue du cristal, ce qui expliquerait les pics DRX de CsPbBr3 absents. Le recuit à 100 °C chasse l'eau et cristallise la pérovskite."
+   "text": "Hypothèse de chimiste (non démontrée par l'article) : à l'étape II, l'eau de la solution de CsBr redissout KBr et une partie des espèces Pb–Br déposées à l'étape I ; au séchage à 100 °C, Cs+ et PbBrx se rencontrent dans un film de saumure concentrée et CsPbBr3 précipite dans une gangue de KBr (ou de NaBr), dans les défauts, les joints entre cristaux et à la surface du support, plutôt que dans les cages CHA intactes, trop petites pour des cristaux émettant à 483 ou 513 nm. La forte teneur en halogénure alcalin freine la croissance : Na+, plus soluble, donne des cristaux plus fins et une émission bleue. Des phases comme Cs4PbBr6 ou CsPb2Br5 pourraient aussi se former."
   },
   {
    "type": "securite_analyse",
@@ -1824,6 +2808,103 @@
    "type": "securite_analyse",
    "route": "one-step PbBr2-KBr-CsBr solution",
    "text": "Mélange de sels de plomb en solution aqueuse concentrée : mêmes précautions que pour PbBr2 (gants, déchets plombés). Aucun danger spécifique supplémentaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "KBr II@ZSM-5",
+   "text": "Pour ZSM-5, l'article ne dit que « the same processes of CsPbBr3@SAPO-34 » : masse de support, volumes, durées d'ultrasons, températures et durées de recuit ne sont pas donnés, et les valeurs de SAPO-34 ne sont pas reprises ici.",
+   "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "KBr II@SBA-15",
+   "text": "Pour SBA-15, l'article ne dit que « the same processes of CsPbBr3@SAPO-34 » : masse de support, volumes, durées d'ultrasons, températures et durées de recuit ne sont pas donnés, et les valeurs de SAPO-34 ne sont pas reprises ici. Le support SBA-15 aurait été broyé « during synthesis » (formes irrégulières, canaux incomplets) alors que SAPO-34 est décrit intact : méthode, durée et moment du broyage non donnés, et « same processes » ne peut pas être pris au pied de la lettre.",
+   "quote": "irregular shapes and incomplete channel structures of these porous materials caused by grinding during synthesis"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "KBr II@AlPO-5",
+   "text": "Pour AlPO-5, l'article ne dit que « the same processes of CsPbBr3@SAPO-34 » : masse de support, volumes, durées d'ultrasons, températures et durées de recuit ne sont pas donnés, et les valeurs de SAPO-34 ne sont pas reprises ici. Le support AlPO-5 aurait été broyé « during synthesis » (formes irrégulières, canaux incomplets) alors que SAPO-34 est décrit intact : méthode, durée et moment du broyage non donnés, et « same processes » ne peut pas être pris au pied de la lettre.",
+   "quote": "irregular shapes and incomplete channel structures of these porous materials caused by grinding during synthesis"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "KBr II@SOD",
+   "text": "Pour SOD, l'article ne dit que « the same processes of CsPbBr3@SAPO-34 » : masse de support, volumes, durées d'ultrasons, températures et durées de recuit ne sont pas donnés, et les valeurs de SAPO-34 ne sont pas reprises ici. Le support SOD aurait été broyé « during synthesis » (formes irrégulières, canaux incomplets) alors que SAPO-34 est décrit intact : méthode, durée et moment du broyage non donnés, et « same processes » ne peut pas être pris au pied de la lettre.",
+   "quote": "irregular shapes and incomplete channel structures of these porous materials caused by grinding during synthesis"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NaBr II@ZSM-5",
+   "text": "Pour ZSM-5, l'article ne dit que « the same processes of CsPbBr3@SAPO-34 » : masse de support, volumes, durées d'ultrasons, températures et durées de recuit ne sont pas donnés, et les valeurs de SAPO-34 ne sont pas reprises ici.",
+   "quote": "The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NaBr II@SBA-15",
+   "text": "Pour SBA-15, l'article ne dit que « the same processes of CsPbBr3@SAPO-34 » : masse de support, volumes, durées d'ultrasons, températures et durées de recuit ne sont pas donnés, et les valeurs de SAPO-34 ne sont pas reprises ici. Le support SBA-15 aurait été broyé « during synthesis » (formes irrégulières, canaux incomplets) alors que SAPO-34 est décrit intact : méthode, durée et moment du broyage non donnés, et « same processes » ne peut pas être pris au pied de la lettre.",
+   "quote": "irregular shapes and incomplete channel structures of these porous materials caused by grinding during synthesis"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NaBr II@AlPO-5",
+   "text": "Pour AlPO-5, l'article ne dit que « the same processes of CsPbBr3@SAPO-34 » : masse de support, volumes, durées d'ultrasons, températures et durées de recuit ne sont pas donnés, et les valeurs de SAPO-34 ne sont pas reprises ici. Le support AlPO-5 aurait été broyé « during synthesis » (formes irrégulières, canaux incomplets) alors que SAPO-34 est décrit intact : méthode, durée et moment du broyage non donnés, et « same processes » ne peut pas être pris au pied de la lettre.",
+   "quote": "irregular shapes and incomplete channel structures of these porous materials caused by grinding during synthesis"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NaBr II@SOD",
+   "text": "Pour SOD, l'article ne dit que « the same processes of CsPbBr3@SAPO-34 » : masse de support, volumes, durées d'ultrasons, températures et durées de recuit ne sont pas donnés, et les valeurs de SAPO-34 ne sont pas reprises ici. Le support SOD aurait été broyé « during synthesis » (formes irrégulières, canaux incomplets) alors que SAPO-34 est décrit intact : méthode, durée et moment du broyage non donnés, et « same processes » ne peut pas être pris au pied de la lettre.",
+   "quote": "irregular shapes and incomplete channel structures of these porous materials caused by grinding during synthesis"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "KBr I@SAPO-34",
+   "text": "Le support SAPO-34 de départ a une taille moyenne de cristal de 24,49 µm (MEB, Fig. 2a,b) ; fournisseur, rapport Si/Al et état du support ne sont pas donnés.",
+   "quote": "owns a rectangular morphology with an average particle size of 24.49 µm"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "KBr I@SAPO-34",
+   "text": "Les auteurs donnent un diamètre de pore de SAPO-34 d'environ 0,68 nm (Fig. S2, absente du dépôt) ; c'est la taille de cage, pas celle des fenêtres d'accès (voir l'annotation sur l'accès des complexes plombés).",
+   "quote": "the pore diameter of SAPO‐34 zeolite is only ∽0.68 nm"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Témoin DMSO@SAPO-34 (protocole renvoyé à la réf. advs7159-bib-0038, aucune voie enregistrée) : bord d'absorption très faible vers 535 nm et énergie de bande interdite d'environ 2,32 eV, sans luminescence vive à 365 nm.",
+   "quote": "extremely weak absorption band edge from ~535 nm attributed to CsPbBr3 NCs and corresponding to a bandgap energy of ~2.32 eV"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Témoins DMSO sur les autres supports (aucune voie enregistrée) : pic PL lu sur les étiquettes de la Fig. 5f à 518 nm pour DMSO@SBA-15, 518 nm pour DMSO@AlPO-5 et 513 nm pour DMSO@SOD (valeurs lues sur la figure, ±1 nm) ; DMSO@ZSM-5 montre deux pics à environ 463 et 530 nm (texte).",
+   "quote": "d–f) UV–vis absorption (dashed lines) and PL (solid lines) spectra of synthesized composites with different micro‐/meso‐porous materials by KBr‐/NaBr‐assisted green‐solvent method and one‐step organic‐solvent method."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "KBr I@SAPO-34",
+   "text": "Accès des précurseurs : [PbBr4]2− (≈ 0,9 nm) ne passe pas les fenêtres à 8 atomes de SAPO-34 (≈ 0,38 nm ; la cage CHA fait environ 1,0 × 0,67 nm, ce que les auteurs prennent pour le « diamètre de pore » de 0,68 nm, d'après la revue PMC10411685). Le plomb n'est ni contrôlé ni dosé après l'étape I, et le retrait de l'excès n'est pas décrit : la charge réelle est inconnue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "KBr II@SAPO-34",
+   "text": "Localisation des émetteurs : un nanocristal émettant à 513 nm (7 couches ou plus) ne tient pas dans une cage CHA de 1,0 × 0,67 nm (Bohn et al., Nano Lett. 2018, 10.1021/acs.nanolett.8b02190). La MEB sert de preuve de croissance interne alors que l'absorption est attribuée à des particules de surface sans confinement : les deux lectures se contredisent. Les phases Cs4PbBr6 ou CsPb2Br5 (Li et al., Materials 2018, 10.3390/ma11050717) restent possibles, et SAPO-34 est sensible à l'eau sans que la charpente soit vérifiée après traitement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NaBr II@SAPO-34",
+   "text": "Un émetteur à 483 nm correspond à environ 4 à 5 couches (2,4 à 3 nm), qui ne tiennent pas dans une cage CHA ; le glissement de 481 à 506 nm au stockage montre une croissance des cristaux, donc pas un confinement rigide par la charpente (Bohn et al., Nano Lett. 2018, 10.1021/acs.nanolett.8b02190). L'effet de Na+ sur la taille des cristaux est plausible, le rôle de la zéolithe n'est pas démontré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le témoin DMSO@SAPO-34 change à la fois le solvant, le nombre d'étapes (une contre deux), les concentrations (renvoyées à un article antérieur) et l'absence d'alcalin : il ne prouve pas que l'eau seule ouvre l'accès aux pores. Les facteurs de tolérance des auteurs (0,750 et 0,669) viennent de rayons de coordinence 6 ; avec ceux de coordinence 12, tK vaut environ 0,81. Le texte écrit « 4.0 m » et l'annexe « 4 M » ; les phases Cs4PbBr6 ou CsPb2Br5 ne sont pas cherchées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "KBr II film",
+   "text": "La phrase « both films experience a redshift » est inexacte pour KBr : le film émet à 511 nm contre 513 nm pour le composite KBr II@SAPO-34 (écart de 2 nm, dans l'incertitude), donc l'argument de confinement par SAPO-34 ne vaut que pour Na."
   }
  ],
  "method_sources": [
@@ -1837,7 +2918,7 @@
  "doubts": [
   {
    "where": "KBr II@ZSM-5, SBA-15, AlPO-5, SOD et variantes NaBr",
-   "issue": "L'annexe dit seulement « The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34 ». Les quantités (0,1 g de support, 400 µL) sont donc héritées sans être écrites pour ces supports ; la variation est enregistrée comme le remplacement du support, via le réactif intermédiaire du parent."
+   "issue": "L'annexe dit seulement « The CsPbBr3@porous materials were synthesized by the same processes of CsPbBr3@SAPO-34 ». Ces 8 branches ont leurs propres étapes I et II avec cette phrase en citation ; masse de support, volumes, concentrations, durées et températures sont déclarés non cités et ne sont pas repris de SAPO-34. Les réactifs CsBr (0,0213 g) et eau (1 mL) et l'intermédiaire KBr I@SAPO-34 affichés par héritage du parent ne valent donc pas pour ces supports."
   },
   {
    "where": "Figure 5d,e (pics PL des composites SBA-15, AlPO-5, SOD)",
@@ -1874,6 +2955,14 @@
   {
    "where": "Texte principal, étape I",
    "issue": "Le texte principal dit que le précipité est recuit « at 100 °C » sans durée ; la durée (15 min, 20 min pour l'étape II) vient de l'annexe."
+  },
+  {
+   "where": "KBr II@ZSM-5, SBA-15, AlPO-5, SOD et variantes NaBr, variations",
+   "issue": "Le changement de support a lieu à l'étape I (immersion du support dans PbBr2-KBr/NaBr). La voie parent n'a que l'étape II (l'étape I est la voie KBr I/NaBr I@SAPO-34) : la variation porte donc sur le support « SAPO-34 zeolite » (réactif de la voie KBr I@SAPO-34) et le contrôle de chargement signale qu'elle ne correspond à aucun réactif hérité."
+  },
+  {
+   "where": "SBA-15, AlPO-5, SOD (K et Na)",
+   "issue": "Le texte attribue les formes irrégulières de ces trois supports au broyage « during synthesis » (Figure S6), ce qui contredit « same processes » appliqué à SAPO-34 et ZSM-5 intacts ; ni la méthode, ni la durée, ni le moment du broyage ne sont donnés : aucune étape de broyage n'est enregistrée, seulement une annotation par voie."
   }
  ]
 }
