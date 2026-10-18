@@ -170,6 +170,41 @@
      "instrument": null,
      "conditions": "degassed under vacuum at 350 °C for 4 h; pore diameter by BJH, desorption branch",
      "quote": "3 | 800MA | – | 31.0 | 86 | 0.135 | 6.63"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "band at 700 cm−1 (Al3+ in octahedral sites) and at 750 cm−1 (Mg2+ in tetrahedral sites); spectra described for the support series 600–900 °C",
+     "instrument": "spectrum-GX spectrometer",
+     "conditions": "4000 to 400 cm−1",
+     "quote": "The signal at 700 cm−1 indicates the presence of Al3+ ions in the octahedral sites, and another vibration band at 750 cm−1 assigned to the occupation of Mg2+ ions in the tetrahedral sites."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "bands at 1630 cm−1 (water deformation) and 3430 cm−1 (surface O–H stretching); spectra described for the support series 600–900 °C",
+     "instrument": "spectrum-GX spectrometer",
+     "conditions": "4000 to 400 cm−1",
+     "quote": "Further, the signal located at 1630 cm−1 is assigned to the deformation band of interlayer water molecules (H–O–H) corresponding to the MgAl2O4 spinel surface."
+    },
+    {
+     "technique": "UV–Vis DRS",
+     "result": "absorption maxima below 300 nm (charge transfer O2− to Al3+); all supports of the 600–900 °C series follow a similar trend",
+     "instrument": "UV Winlab spectrometer",
+     "conditions": "200–800 nm, diffuse reflectance",
+     "quote": "The absorption maxima below 300 nm can be attributed to the charge transfer (CT) from O−2 to Al3+ ions due to excitation of electrons from the valence band of O(2p) to the conduction band of Al(3d)."
+    },
+    {
+     "technique": "HRTEM",
+     "result": "bare 800MA spinel: a lesser number of aggregated species, lattice fringes similar to 15Co/800MA",
+     "instrument": "high-resolution TEM (TECHNAI G2, Japan)",
+     "conditions": null,
+     "quote": "Similarly, the bare 800MA spinel (Fig. 5c) is prominently displayed a lesser number of aggregated species with related lattice fringes substantially similar to the 15Co/800MA catalyst."
+    },
+    {
+     "technique": "SAED",
+     "result": "amorphous or poor crystalline nature of 800MA spinel (bright circular planes, brighter than for 15Co/800MA)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Indeed, the SAED pattern of 800MA spinel showed bright circular planes compared to low-intensity circular planes in the SAED image of 15Co/800MA catalysts."
     }
    ],
    "outcomes": [
@@ -268,7 +303,7 @@
      "quote": "The obtained solid was calcined at different temperatures like 600, 700, 800, and 900 °C for 5 h labeled as 600MA, 700MA, 800MA, and 900MA respectively."
     }
    ],
-   "succeeded": false,
+   "succeeded": null,
    "outcomes": [
     {
      "property": "phase",
@@ -799,6 +834,11 @@
      "value_num": 31.8,
      "unit": "nm",
      "quote": "11 | 15Co/800MA (spent) | 14.5 | 17.0 | 148 | 0.523 | 31.8"
+    },
+    {
+     "property": "styrene_yield",
+     "value_text": "≥ 81%",
+     "quote": "Also, high yields of styrene (≥ 81%) could be consistently achieved on the same active catalyst."
     }
    ]
   },
@@ -1009,6 +1049,15 @@
      "unit": "%",
      "quote": "The 15Co/800MA and 15Co/700MA catalysts have a low intense endothermic signal beyond 450 °C with a weight loss of 10% and 11.5% results from the catalytic oxidation of deposited carbon (coke)."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "H2-TPR",
+     "result": "two reduction signals: 500–600 °C (less intense) and 600–900 °C (more intense)",
+     "instrument": "self-made reactor system with online TCD in a GC (M/s. CIC Instruments, India)",
+     "conditions": "50 mg catalyst, 5%H2/Ar 30 mL/min, linear heating to 800 °C at 10 °C min−1, 60 min isothermal",
+     "quote": "The H2-TPR of 15Co/700MA catalyst displayed two reduction signals one at a lower temperature (500–600 °C) with less intensity and another peak at a high temperature (600–900 °C) with more intensity."
+    }
    ]
   },
   {
@@ -1171,6 +1220,12 @@
      "value_num": 14.5,
      "unit": "%",
      "quote": "While 15Co/900MA catalyst has a steep decomposition peak at 470 °C with a significant weight loss of 14.5% owing to excessive decomposition of EB molecules on the cobalt oxide particles with large crystallize size."
+    },
+    {
+     "property": "styrene_selectivity_N2_time_on_stream",
+     "value_num": 90,
+     "unit": "%",
+     "quote": "However, the SST stayed constant at 90% in both the samples during the reaction."
     }
    ]
   },
@@ -1411,7 +1466,7 @@
     {
      "name": "γ-Al2O3",
      "formula": "γ-Al2O3",
-     "role": "precursor",
+     "role": "substrate",
      "not_stated": [
       "amount",
       "purity",
@@ -1472,6 +1527,31 @@
      "unit": "%",
      "quote": "11 | CA | 52 | 91 | 9"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "impregnate",
+     "description": "Wet impregnation of the commercial-type support with cobalt nitrate, « under similar conditions » (details not given).",
+     "quote": "For the comparison studies, 15 wt% Co3O4/γ-Al2O3 (CA) and 15 wt% Co3O4/MgO (CM) catalysts are synthesized by the wet-impregnation method under similar conditions.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "solvent",
+      "solution_volume",
+      "mixing",
+      "drying"
+     ]
+    }
+   ],
+   "not_stated": [
+    "calcination_temperature",
+    "calcination_duration",
+    "calcination_atmosphere",
+    "calcination_heating_rate",
+    "cobalt_nitrate_mass"
    ]
   },
   {
@@ -1489,7 +1569,7 @@
     {
      "name": "MgO",
      "formula": "MgO",
-     "role": "precursor",
+     "role": "substrate",
      "not_stated": [
       "amount",
       "purity",
@@ -1550,6 +1630,40 @@
      "unit": "%",
      "quote": "12 | CM | 46 | 98 | 2"
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "H2-TPR",
+     "result": "three reduction signals: centered at 300 °C, Tmax 400 °C, and about 600 °C",
+     "instrument": "self-made reactor system with online TCD in a GC (M/s. CIC Instruments, India)",
+     "conditions": "50 mg catalyst, 5%H2/Ar 30 mL/min, linear heating to 800 °C at 10 °C min−1, 60 min isothermal",
+     "quote": "the first reduced signal centered at 300 °C is ascribed to the direct transition of Co3O4 into metallic Co species, while second reduced signal about Tmax 400 °C is illustrated the transformation of strongly support interacted Co3O4 species into CoO and metallic Co."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "impregnate",
+     "description": "Wet impregnation of the commercial-type support with cobalt nitrate, « under similar conditions » (details not given).",
+     "quote": "For the comparison studies, 15 wt% Co3O4/γ-Al2O3 (CA) and 15 wt% Co3O4/MgO (CM) catalysts are synthesized by the wet-impregnation method under similar conditions.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "solvent",
+      "solution_volume",
+      "mixing",
+      "drying"
+     ]
+    }
+   ],
+   "not_stated": [
+    "calcination_temperature",
+    "calcination_duration",
+    "calcination_atmosphere",
+    "calcination_heating_rate",
+    "cobalt_nitrate_mass"
    ]
   },
   {
@@ -1732,7 +1846,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Support : de 600 à 900 °C la surface BET baisse de 152 à 52 m2/g et les cristallites passent de 20,0 à 49,6 nm (700 à 900 °C) ; 600MA contient encore du γ-Al2O3. Catalyseurs : le dépôt de cobalt augmente la surface de 86 à 144 m2/g pour 800MA mais la réduit à 63 m2/g pour 900MA. La conversion de l'éthylbenzène sous CO2 à 600 °C vaut 64 % (15Co/600MA), 71 % (700MA), 82 % (800MA) et 56 % (900MA), avec une sélectivité en styrène de 94, 95, 98 et 93 %. Selon la charge sur 800MA : 63 % (10 %), 82 % (15 %) et 74 % (20 %), la sélectivité tombant à 87 % pour 20 %. Références : CA 52 % et CM 46 %."
+   "text": "Support : de 600 à 900 °C la surface BET baisse de 152 à 52 m2/g et les cristallites passent de 20,0 à 49,6 nm (700 à 900 °C) ; 600MA contient encore du γ-Al2O3. Catalyseurs (Tableau 1) : le dépôt de cobalt fait monter la surface de 86 à 144 m2/g pour 800MA, de 114 à 121 m2/g pour 700MA et de 52 à 63 m2/g pour 900MA ; seul 600MA baisse légèrement (152 à 146 m2/g). 15Co/900MA reste le catalyseur de plus faible surface. La conversion de l'éthylbenzène sous CO2 à 600 °C vaut 64 % (15Co/600MA), 71 % (700MA), 82 % (800MA) et 56 % (900MA), avec une sélectivité en styrène de 94, 95, 98 et 93 %. Selon la charge sur 800MA : 63 % (10 %), 82 % (15 %) et 74 % (20 %), la sélectivité tombant à 87 % pour 20 %. Références : CA 52 % et CM 46 %."
   },
   {
    "type": "tendance_observee",
@@ -1755,7 +1869,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "15Co/800MA",
-   "text": "Hypothèse : le nitrate de cobalt imprégné se décompose pendant la calcination à 600 °C (3 Co(NO3)2 → Co3O4 + 6 NO2 + O2 environ) en particules de Co3O4 ancrées sur le spinelle ; la teneur de 15 % en masse correspond à environ 0,3 mol de Co pour 100 g de catalyseur. Pour le support, un rapport Mg/Al de 1:2 correspond exactement à la stœchiométrie de MgAl2O4 ; à pH 9 la précipitation de Mg(OH)2 est probablement incomplète, de sorte que le rapport Mg/Al réellement obtenu pourrait différer de 1:2."
+   "text": "Hypothèse : le nitrate de cobalt imprégné se décompose pendant la calcination à 600 °C (3 Co(NO3)2 → Co3O4 + 6 NO2 + O2 environ) en particules de Co3O4 ancrées sur le spinelle ; la teneur de 15 % en masse correspond à environ 0,3 mol de Co pour 100 g de catalyseur. Pour le support, un rapport Mg/Al de 1:2 correspond exactement à la stœchiométrie de MgAl2O4 ; à pH 9 la précipitation de Mg(OH)2 est probablement incomplète, de sorte que le rapport Mg/Al réellement obtenu pourrait différer de 1:2. En réaction, le H2 formé par la déshydrogénation réduit probablement Co3O4 en CoO, voire en Co ; sous CO2, le H2 est consommé par la réaction du gaz à l'eau inverse (RWGS) et une partie du coke brûle (C + CO2 → 2 CO), ce qui déplace l'équilibre et ralentit la désactivation."
   },
   {
    "type": "securite_analyse",
@@ -1776,9 +1890,82 @@
    "type": "limite_reproductibilite",
    "route": "CA",
    "text": "Les supports γ-Al2O3 et MgO (origine commerciale ou préparés, surface, pureté) ne sont pas décrits ; « similar conditions » est la seule indication de protocole pour CA et CM."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "600MA",
+   "text": "Phase impure : le spinelle ne s'est formé que partiellement et du γ-Al2O3 reste présent, sans que les auteurs parlent d'échec ; 600MA sert de support à 15Co/600MA. Il est de plus prétraité 1 h à 650 °C sous N2 puis testé jusqu'à 650 °C, au-dessus de sa température de calcination (600 °C) : l'échantillon testé n'est donc probablement pas celui qui a été caractérisé (surface 152 m2/g)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Figure 6b contre Tableau 3 : à 600 °C sous CO2, la figure semble donner environ 63 % pour 15Co/900MA et 55 % pour 10Co/800MA, alors que le tableau 3 donne 56 et 63 % (les deux catalyseurs semblent inversés) ; la légende de la figure 6 annonce 450–600 °C alors que les courbes vont jusqu'à 650 °C. Les valeurs du tableau 3 sont retenues."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "800MA",
+   "text": "Le total d'acidité de 800MA au tableau 2 (0,510 mmol/g) ne fait pas la somme de ses trois classes de sites (0,032 + 0,158 + 0,352 = 0,542 mmol/g) ; l'écart vaut exactement la valeur des sites faibles. Les sept autres lignes du tableau s'additionnent correctement. Une des deux valeurs est fausse dans l'article, qui ne permet pas de savoir laquelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "800MA",
+   "text": "Le rapport Mg/Al de 1:2 est celui de la solution, pas du solide : à pH 8,9–9,0, l'ammoniaque ne précipite qu'environ 73 % du Mg contre plus de 95 % de l'Al (estimation du critique d'après la littérature). Le support est donc probablement plus riche en alumine que MgAl2O4 ; l'article ne mesure pas Mg/Al (ICP réservé au cobalt), si bien que « spinelle MgAl2O4 très pur » n'est pas démontré par la seule DRX."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "15Co/800MA",
+   "text": "Texture peu plausible : le dépôt de 20 % de Co3O4 fait passer la surface de 86 à 144 m2/g et le volume poreux de 0,135 à 0,556 cm3/g, alors qu'un dépôt dilue le support (on attendrait au plus environ 80 m2/g). De plus, le diamètre 4V/S vaut la moitié du diamètre BJH pour tous les catalyseurs au cobalt, mais pas pour les supports. La texture des catalyseurs serait à remesurer avant d'en tirer une conclusion ; la valeur est recopiée telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "15Co/800MA",
+   "text": "La preuve de dispersion de Co3O4 n'est pas discriminante : Co3O4 et MgAl2O4 ont presque le même paramètre de maille (environ 8,08 Å), leurs raies DRX se superposent (les auteurs le disent) et les distances HRTEM correspondent aux deux phases. La taille de Scherrer de la raie (311) mesure donc l'enveloppe de deux phases et ne renseigne ni sur Co3O4 ni sur le support ; la « dispersion uniforme » de Co3O4 n'est pas établie par une mesure qui le distingue du support."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "15Co/800MA",
+   "text": "La phase active est probablement CoO, voire Co métallique : sous éthylbenzène à 600–650 °C, le H2 formé suffit à réduire le Co3O4 du lit en quelques minutes, et la RTP de l'article montre cette réduction entre 300 et 600 °C. L'« intégrité » de Co3O4 sur le catalyseur usagé repose sur une DRX où ses raies se confondent avec celles du support, et l'XPS n'a été faite que sur les catalyseurs calcinés : l'affirmation d'un Co3O4 actif tel quel n'est pas démontrée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "15Co/800MA",
+   "text": "Rendement en styrène : le résumé annonce « ≥ 81 % », alors que XEB × SST du tableau 3 donne 80,4 % (82 % × 98 %)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CA",
+   "text": "Le texte sur l'acidité contredit le tableau 2 : il dit que CA a « plus de sites faibles et moyens », alors que le tableau lui donne les plus faibles valeurs (0,021 et 0,106 mmol/g), et il dit que 10Co/800MA a une acidité totale supérieure à celle de CM alors que le tableau donne l'inverse (0,676 contre 0,889 mmol/g). L'argument acidité–activité des auteurs ne suit donc pas leurs propres chiffres."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les témoins CA et CM sont écrits « 15 wt% Co3O4 », alors que la série MA est définie en pourcentage de cobalt : à la lettre, ils portent environ 11 % de Co, soit 27 % de moins, sans ICP pour le vérifier. La comparaison d'activité (52 et 46 % contre 82 %) change donc peut-être deux variables à la fois, le support et la charge."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "15Co/800MA_regenerated",
+   "text": "Le texte dit qu'il n'y a « aucun changement observable de l'activité » après régénération, mais la figure 8 montre 78 puis 48 % de conversion pour le catalyseur régénéré contre 82 puis 59 % pour le catalyseur frais, soit 11 points de moins à 20 h : la conclusion d'« excellente stabilité thermique » n'est pas soutenue par les données. La température de l'activation sous air (30 mL/min, 1 h) n'est pas donnée, alors que la combustion du coke est exothermique et peut fritter le cobalt : l'étape n'est pas reproductible en l'état."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "800MA",
+   "text": "Hypothèse : à pH 9, il précipite un hydroxyde mixte Mg–Al (type hydrotalcite) accompagné d'un hydroxyde d'aluminium amorphe en excès, une partie du Mg restant dans le filtrat ; vers 400 °C, ces hydroxydes se déshydroxylent en un oxyde mixte amorphe ; vers 600 °C apparaissent un spinelle mal cristallisé et du γ-Al2O3 (structure de spinelle lacunaire, d'où leur coexistence à 600 °C et la grande surface) ; de 700 à 800 °C, Mg diffuse et l'on obtient un spinelle unique, peut-être riche en alumine ; à 900 °C, frittage et grossissement des cristallites. L'affirmation des auteurs que Al(OH)3 serait « stable jusqu'à 600 °C » est probablement inexacte, la déshydroxylation étant achevée avant."
   }
  ],
- "method_sources": [],
+ "method_sources": [
+  {
+   "route": null,
+   "ref_id": "CR19",
+   "role": "autre",
+   "quote": "Reduction patterns of calcined catalysts are investigated by TPR on a self-made reactor system."
+  },
+  {
+   "route": null,
+   "ref_id": "CR30",
+   "role": "autre",
+   "quote": "The TPD patterns were recorded by desorption of NH3 from 100 to 800 °C at a heat ramp of 5 °C min−1."
+  }
+ ],
  "doubts": [
   {
    "where": "Fig. 6b contre Table 3 (15Co/900MA, 10Co/800MA, 20Co/800MA à 600 °C)",
@@ -1802,15 +1989,15 @@
   },
   {
    "where": "CA et CM, héritage des étapes",
-   "issue": "L'article dit « wet-impregnation method under similar conditions » : le parent 15Co/800MA est retenu, avec imprégnation puis calcination à 600 °C 5 h, mais ce n'est pas écrit littéralement ; le terme « wet-impregnation » n'est pas employé pour les autres catalyseurs."
+   "issue": "L'article dit seulement « wet-impregnation method under similar conditions ». Les étapes de 15Co/800MA ne sont pas héritées : CA et CM ont leur propre étape d'imprégnation sans paramètres, et la calcination (température, durée, atmosphère, rampe) est déclarée non citée. La teneur est écrite en Co3O4 (15 wt% Co3O4) et non en Co comme pour la série MA."
   },
   {
    "where": "600MA (succeeded)",
-   "issue": "Marqué succeeded: false car la phase est impure (spinelle partiel avec γ-Al2O3) ; les auteurs ne parlent pas d'échec et utilisent l'échantillon comme support de 15Co/600MA."
+   "issue": "Le champ succeeded est laissé vide : la phase est impure (spinelle partiel avec γ-Al2O3), mais les auteurs ne parlent pas d'échec et utilisent l'échantillon comme support de 15Co/600MA et comme échantillon testé."
   },
   {
    "where": "15Co/800MA calcination des catalyseurs",
-   "issue": "La calcination à 600 °C, 5 h, 10 °C/min est donnée pour « the catalysts » ; elle est appliquée à toute la série x Co3O4/yMA et héritée par CA et CM."
+   "issue": "La calcination à 600 °C, 5 h, 10 °C/min est donnée pour « the catalysts » ; elle est appliquée à toute la série x Co3O4/yMA (branches de 15Co/800MA). Elle n'est pas reprise pour CA et CM, dont le protocole est seulement « under similar conditions »."
   },
   {
    "where": "TGA des catalyseurs usagés",
@@ -1827,6 +2014,18 @@
   {
    "where": "Fig. S du texte et de l'annexe",
    "issue": "Le texte cite Fig. S2 pour l'UV–Vis et le FT-IR des supports et Fig. S8 pour la TGA ; l'annexe numérote ces figures S2 et S7. Aucune valeur extraite n'en dépend."
+  },
+  {
+   "where": "15Co/800MA, rendement en styrène (résumé)",
+   "issue": "Le résumé annonce un rendement en styrène de « ≥ 81% » ; le corps de l'article ne le chiffre pas ailleurs. Le produit XEB × SST du tableau 3 (82 % × 98 %) donne 80,4 %, soit un point de moins. Valeur du résumé conservée telle quelle, sans correction."
+  },
+  {
+   "where": "800MA, FT-IR et UV–Vis (Fig. S2)",
+   "issue": "L'article décrit les spectres FT-IR et UV–Vis de la série de supports 600–900 °C en bloc (Fig. S2 de l'annexe, images absentes du dépôt) sans les attribuer à un échantillon précis ; les bandes sont rangées sur 800MA, support de référence, avec la mention de la série dans le résultat."
+  },
+  {
+   "where": "800MA, SAED contre DRX",
+   "issue": "La SAED est décrite comme « amorphous or poor crystalline » pour 800MA alors que la DRX donne un spinelle « très pur » de 31 nm ; les deux lectures sont gardées telles quelles, sans correction."
   }
  ],
  "sample_inventory": [
