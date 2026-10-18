@@ -1,0 +1,132 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3998862</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3998862 — Synthesis and in vitro antineoplastic evaluation of silver nanoparticles mediated by Agrimoniae herba extract.</h1>
+<h2>Voie : AH_extract</h2>
+<pre class="mermaid">flowchart LR
+  R13628([&quot;Agrimoniae herba (fresh herb)&lt;br/&gt;30 g&quot;]):::reactif
+  R13628 --&gt;|&quot;precursor&quot;| S16283
+  R13629([&quot;deionized water&lt;br/&gt;300 mL&quot;]):::reactif
+  R13629 --&gt;|&quot;solvent&quot;| S16283
+  S16283[&quot;&lt;b&gt;1. heat&lt;/b&gt;&lt;br/&gt;duration : 15 minutes&quot;]:::etape
+  S16283 --&gt; S16284
+  S16284[&quot;&lt;b&gt;2. filter&lt;/b&gt;&lt;br/&gt;pressure : reduced-pressure condition&quot;]:::etape
+  S16284 --&gt; S16285
+  S16285[&quot;&lt;b&gt;3. dilute&lt;/b&gt;&lt;br/&gt;volume : 300 mL&quot;]:::etape
+  S16285 --&gt; S16286
+  S16286[&quot;&lt;b&gt;4. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&lt;br/&gt;duration : until further use&quot;]:::etape
+  S16286 --&gt; M
+  M{{&quot;Agrimoniae herba aqueous extract (0.1 g crude dru…&lt;br/&gt;&quot;}}:::materiau
+  O64590[&quot;total_flavonoid_content : 4 mg · mL−1&quot;]:::resultat
+  M -.-&gt; O64590
+  O64591[&quot;total_phenol_content : 2.6 mg · mL−1&quot;]:::resultat
+  M -.-&gt; O64591
+  O64592[&quot;IC50_A549_24h : 1.147 × 10^4 μg · mL−1&quot;]:::resultat
+  M -.-&gt; O64592
+  O64593[&quot;IC50_A549_24h_Fig10B : 11470 μg/mL&quot;]:::resultat
+  M -.-&gt; O64593
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AH-AgNPs</h2>
+<pre class="mermaid">flowchart LR
+  R13630([&quot;A. herba extract (route AH_extract)&lt;br/&gt;10 mL&quot;]):::reactif
+  R13630 --&gt;|&quot;intermediate&quot;| S16287
+  R13631([&quot;silver nitrate (1 mM aqueous solution)&lt;br/&gt;100 mL&quot;]):::reactif
+  R13631 --&gt;|&quot;precursor&quot;| S16287
+  R13632([&quot;deionized water (redispersion)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13632 --&gt;|&quot;solvent&quot;| S16287
+  S16287[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : until crimson was observed&lt;br/&gt;stirring_speed : vigorous&quot;]:::etape
+  S16287 --&gt; S16288
+  S16288[&quot;&lt;b&gt;2. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 13000 rpm&lt;br/&gt;duration : 15 minutes&quot;]:::etape
+  S16288 --&gt; S16289
+  S16289[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;repetitions : thrice&quot;]:::etape
+  S16289 --&gt; S16290
+  S16290[&quot;&lt;b&gt;4. disperse&lt;/b&gt;&lt;br/&gt;dispersion_medium : deionized water&quot;]:::etape
+  S16290 --&gt; M
+  M{{&quot;silver nanoparticles conjugated with Agrimoniae h…&lt;br/&gt;Ag&quot;}}:::materiau
+  O64594[&quot;phase : face-centered cubic silver (J…&quot;]:::resultat
+  M -.-&gt; O64594
+  O64595[&quot;xrd_peak_2theta_111 : 38.52 °&quot;]:::resultat
+  M -.-&gt; O64595
+  O64596[&quot;particle_size_TEM_mean : 11 nm&quot;]:::resultat
+  M -.-&gt; O64596
+  O64597[&quot;particle_size_TEM_mean_Fig6B : 11.22 nm&quot;]:::resultat
+  M -.-&gt; O64597
+  O64598[&quot;hydrodynamic_size_DLS : 30.34 nm&quot;]:::resultat
+  M -.-&gt; O64598
+  O64599[&quot;polydispersity_index_DLS : 0.142&quot;]:::resultat
+  M -.-&gt; O64599
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B10706{{&quot;AH-AgNPs&quot;}}:::materiau
+  B10707[&quot;AH-AgNPs_ext2min&quot;]:::etape
+  B10706 --&gt;|&quot;extraction_duration = 2 minutes&quot;| B10707
+  B10708[&quot;AH-AgNPs_ext5min&quot;]:::etape
+  B10706 --&gt;|&quot;extraction_duration = 5 minutes&quot;| B10708
+  B10709[&quot;AH-AgNPs_ext30min&quot;]:::etape
+  B10706 --&gt;|&quot;extraction_duration = 30 minutes&quot;| B10709
+  B10710[&quot;AH-AgNPs_ext60min&quot;]:::etape
+  B10706 --&gt;|&quot;extraction_duration = 60 minutes&quot;| B10710
+  B10711[&quot;AH-AgNPs_4C&quot;]:::etape
+  B10706 --&gt;|&quot;temperature = 4 °C&lt;br/&gt;duration = different reaction times&quot;| B10711
+  B10712[&quot;AH-AgNPs_25C&quot;]:::etape
+  B10706 --&gt;|&quot;temperature = 25 °C&lt;br/&gt;duration = different reaction times&quot;| B10712
+  B10713[&quot;AH-AgNPs_40C&quot;]:::etape
+  B10706 --&gt;|&quot;temperature = 40 °C&lt;br/&gt;duration = different reaction times&quot;| B10713
+  B10714[&quot;AH-AgNPs_50C&quot;]:::etape
+  B10706 --&gt;|&quot;temperature = 50 °C&lt;br/&gt;duration = different reaction times&quot;| B10714
+  B10715[&quot;AH-AgNPs_60C&quot;]:::etape
+  B10706 --&gt;|&quot;temperature = 60 °C&lt;br/&gt;duration = different reaction times&quot;| B10715
+  B10716[&quot;AH-AgNPs_0.1mM&quot;]:::etape
+  B10706 --&gt;|&quot;silver nitrate (1 mM aqu… = 0.1 mM&quot;| B10716
+  B10717[&quot;AH-AgNPs_0.5mM&quot;]:::etape
+  B10706 --&gt;|&quot;silver nitrate (1 mM aqu… = 0.5 mM&quot;| B10717
+  B10718[&quot;AH-AgNPs_2mM&quot;]:::etape
+  B10706 --&gt;|&quot;silver nitrate (1 mM aqu… = 2 mM&quot;| B10718
+  B10719[&quot;AH-AgNPs_1.5mM&quot;]:::etape
+  B10706 --&gt;|&quot;silver nitrate (1 mM aqu… = 1.5 mM&quot;| B10719
+  B10720[&quot;AH-AgNPs_extract2.5mL&quot;]:::etape
+  B10706 --&gt;|&quot;A. herba extract (route … = 2.5 mL&quot;| B10720
+  B10721[&quot;AH-AgNPs_extract5mL&quot;]:::etape
+  B10706 --&gt;|&quot;A. herba extract (route … = 5 mL&quot;| B10721
+  B10722[&quot;AH-AgNPs_extract25mL&quot;]:::etape
+  B10706 --&gt;|&quot;A. herba extract (route … = 25 mL&quot;| B10722
+  B10723[&quot;AH-AgNPs_extract50mL&quot;]:::etape
+  B10706 --&gt;|&quot;A. herba extract (route … = 50 mL&quot;| B10723
+  B10724[&quot;AH-AgNPs_extract75mL&quot;]:::etape
+  B10706 --&gt;|&quot;A. herba extract (route … = 75 mL&quot;| B10724
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Bare_AgNPs_citrate</h2>
+<pre class="mermaid">flowchart LR
+  R13633([&quot;trisodium citrate (1% solution)&lt;br/&gt;10 mL&quot;]):::reactif
+  R13633 --&gt;|&quot;reducing_agent&quot;| S16309
+  R13634([&quot;silver nitrate (300 μg · mL−1 aqueous soluti…&lt;br/&gt;300 μg · mL−1&quot;]):::reactif
+  R13634 --&gt;|&quot;precursor&quot;| S16309
+  R13635([&quot;phosphoric acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13635 --&gt;|&quot;acid&quot;| S16309
+  S16309[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;addition_rate : dropwise&lt;br/&gt;volume : 10 mL&quot;]:::etape
+  S16309 --&gt; S16310
+  S16310[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 10 minutes&lt;br/&gt;stirring_speed : vigorous&quot;]:::etape
+  S16310 --&gt; S16311
+  S16311[&quot;&lt;b&gt;3. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 4.0–6.0&quot;]:::etape
+  S16311 --&gt; M
+  M{{&quot;bare silver nanoparticles (sodium citrate reducti…&lt;br/&gt;Ag&quot;}}:::materiau
+  O64636[&quot;particle_size : 26.42 nm&quot;]:::resultat
+  M -.-&gt; O64636
+  O64637[&quot;zeta_potential : -28.3 mV&quot;]:::resultat
+  M -.-&gt; O64637
+  O64638[&quot;IC50_A549_24h : 184.87 μg · mL−1&quot;]:::resultat
+  M -.-&gt; O64638
+  O64639[&quot;cell_inhibition_rate_A549_24h_50ug… : 23 %&quot;]:::resultat
+  M -.-&gt; O64639
+  O64640[&quot;cell_inhibition_rate_A549_24h_200u… : 57 %&quot;]:::resultat
+  M -.-&gt; O64640
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
