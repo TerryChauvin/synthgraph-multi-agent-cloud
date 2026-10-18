@@ -980,13 +980,7 @@
      "quote": "The charge-discharge cycle performance was examined by an Arbin instrument BT-2000 (Arbin Instruments, College Station, TX, USA) between 2.5 and 4.3 V vs. Li+/Li at room temperature."
     }
    ],
-   "outcomes": [
-    {
-     "property": "cell_voltage_window",
-     "value_text": "2.5 and 4.3 V vs. Li+/Li",
-     "quote": "between 2.5 and 4.3 V vs. Li+/Li at room temperature"
-    }
-   ],
+   "outcomes": [],
    "missing_fields": [
     "current density (C-rate)",
     "electrode loading",
@@ -1014,7 +1008,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "L'acide acétique (SGAc, logβ 8,3) donne la meilleure capacité initiale (161,08 mAh g-1), la densité de tassement la plus élevée (1,37 g cm-3) et la plus faible teneur en carbone (2,3 wt.%). L'acide oxalique (SGOc, logβ 5,22) donne 143,04 mAh g-1 et 1,23 g cm-3, l'éthanediol (SGEg, 9,67) 133,53 mAh g-1 et 1,16 g cm-3, l'éthylènediamine (SGEn, 9,70) 126,73 mAh g-1 et 1,12 g cm-3. La teneur en carbone suit l'ordre des constantes de stabilité (2,3 ; 3,2 ; 4,8 ; 5,1 wt.%), sauf l'acide acétique, dont la capacité contredit la règle générale."
+   "text": "L'acide acétique (SGAc, logβ 8,3) donne la meilleure capacité initiale (161,08 mAh g-1), la densité de tassement la plus élevée (1,37 g cm-3) et la plus faible teneur en carbone (2,3 wt.%). L'acide oxalique (SGOc, logβ 5,22) donne 143,04 mAh g-1 et 1,23 g cm-3, l'éthanediol (SGEg, 9,67) 133,53 mAh g-1 et 1,16 g cm-3, l'éthylènediamine (SGEn, 9,70) 126,73 mAh g-1 et 1,12 g cm-3. La teneur en carbone vaut 2,3 ; 3,2 ; 4,8 ; 5,1 wt.% pour SGAc, SGOc, SGEg, SGEn, dont les logβ du tableau 1 (8,3 ; 5,22 ; 9,67 ; 9,70) ne sont pas croissants dans cet ordre : la proportionnalité affirmée par les auteurs entre carbone et constante de stabilité ne vaut que pour l'oxalate, l'éthanediol et l'éthylènediamine, et l'acide acétique est hors tendance pour le carbone comme pour la capacité."
   },
   {
    "type": "tendance_observee",
@@ -1053,7 +1047,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "SGAc",
-   "text": "Hypothèse de chimiste : en solution, l'acide ascorbique réduit probablement Fe3+ en Fe2+ (la phase finale contient du fer(II)), qui forme alors des complexes avec l'agent complexant. Au chauffage, le gel de nitrate-complexe se décompose, les nitrates et l'ammoniac partent, et la fraction organique restante se carbonise sous azote en formant le carbone amorphe qui enrobe LiFePO4. Le pH de 6,5 limite la précipitation d'hydroxydes ou de phosphates de fer(III) avant la gélification. À 600 °C et sous azote, l'olivine cristallise sans réoxyder Fe2+."
+   "text": "Hypothèse de chimiste (combustion nitrate/organique au chauffage, puis pyrolyse sous N2) : en solution, l'acide ascorbique réduit probablement Fe3+ en Fe2+ (la phase finale contient du fer(II)), qui forme alors des complexes avec l'agent complexant. Au chauffage, le gel de nitrate-complexe se décompose, les nitrates et l'ammoniac partent, et la fraction organique restante (agent complexant, mais aussi acide ascorbique, qui contribue au carbone et que les auteurs ne mentionnent pas dans leur explication de la teneur en carbone) se carbonise sous azote en formant le carbone amorphe qui enrobe LiFePO4. Le pH de 6,5 limite la précipitation d'hydroxydes ou de phosphates de fer(III) avant la gélification. À 600 °C et sous azote, l'olivine cristallise sans réoxyder Fe2+."
   },
   {
    "type": "securite_analyse",
@@ -1070,6 +1064,36 @@
    "type": "securite_analyse",
    "route": "Cell_LiFePO4C",
    "text": "Le lithium métallique réagit vivement avec l'eau et le LiPF6 s'hydrolyse en libérant de l'acide fluorhydrique (HF), très toxique et corrosif ; les solvants carbonates sont inflammables. Manipuler l'électrolyte uniquement en boîte à gants."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SGAc",
+   "text": "« Saturated solution of complexing agent in water » n'a pas de sens pour l'acide acétique, miscible à l'eau en toutes proportions : la concentration de l'agent complexant, donc la quantité de carbone, est indéfinie. L'ajustement à pH 6,5 d'une solution riche en acide acétique exige environ une mole d'ammoniac par mole d'acide (formation massive d'acétate d'ammonium), volume d'ammoniaque non donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SGAc",
+   "text": "La constante logβ3 = 8,3 du tableau 1 pour Fe2+–acétate est incompatible avec log K1 = 1,40 (Martell & Smith, via Harvey, Analytical Chemistry 2.1) : logβ3 ne peut guère dépasser environ 4 ; la valeur ressemble à celle d'un complexe de Fe3+. L'argument du champ cristallin est aussi fragile : la notation « eg3t2g3 » est fausse en symétrie tétraédrique, rien ne montre un Fe2+ tétraédrique en solution aqueuse (il y reste hexacoordiné), et logβ inclut déjà la stabilisation du champ cristallin, qui est donc comptée deux fois."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SGEg",
+   "text": "« Saturated solution » est indéfini pour l'éthanediol, miscible à l'eau, donc la quantité d'agent complexant et le carbone résiduel (4,8 wt.%) ne sont pas reproductibles. La valeur logβ = 9,67 pour Fe2+–éthanediol est invraisemblable pour un diol neutre à peine complexant et presque égale à celle de l'éthylènediamine (9,70) ; aucune source n'a été trouvée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SGOc",
+   "text": "La constante 5,22 est un β2 de Fe2+ alors que celle de l'acétate (8,3) est présentée comme un β3 : comparer ces valeurs pour définir l'« exception » de l'acide acétique n'est pas valable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SGEn",
+   "text": "Le protocole commun (pH ajusté à 6,5 avec de l'ammoniaque) est inapplicable tel quel à l'éthylènediamine, base miscible à l'eau : le mélange reste basique (pH supérieur à 9) et ne peut pas être ramené à 6,5 en ajoutant une base. À pH 6,5, l'éthylènediamine est surtout diprotonée (69 à 92 %) et complexe très peu Fe2+ : la constante logβ3 = 9,70 du tableau 1, valable pour la base libre, ne décrit pas le milieu de synthèse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cell_LiFePO4C",
+   "text": "Les positions des pics anodique et cathodique de la voltammétrie cyclique (figure 3) ne sont imprimées nulle part dans le texte ; seule la comparaison qualitative de l'écart entre pics est donnée et la figure n'a pas été numérisée."
   }
  ],
  "method_sources": [],
@@ -1109,6 +1133,10 @@
   {
    "where": "Lecture sur figure 5 (SGOc, SGEg, SGEn)",
    "issue": "Capacités à 30 cycles lues sur la figure 5 : SGOc ≈ 134, SGEg ≈ 112, SGEn ≈ 117 mAh g-1 ; arrondies à 2 chiffres significatifs (130, 110, 120), précision de lecture ± 3 mAh g-1. Figures 1 à 4 non numérisées (courbes qualitatives)."
+  },
+  {
+   "where": "Cell_LiFePO4C, voltammétrie cyclique (fenêtre)",
+   "issue": "Le texte annonce une voltammétrie cyclique « from 2.0 V to 4.5 V », mais l'axe de la figure 3 ne va que d'environ 2,8 V à 4,2 V (courbes tracées jusqu'à environ 4,0 V) : la fenêtre tracée diffère de la fenêtre annoncée. Valeur du texte conservée."
   }
  ]
 }
