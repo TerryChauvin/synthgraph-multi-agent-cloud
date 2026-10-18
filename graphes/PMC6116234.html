@@ -1,0 +1,117 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6116234</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6116234 — Controllable Synthesis of 2D Perovskite on Different Substrates and Its Application as Photodetector.</h1>
+<h2>Voie : MAPbI3_SiO2Si</h2>
+<pre class="mermaid">flowchart LR
+  R12283([&quot;lead(II) iodide&lt;br/&gt;0.2 mg&quot;]):::reactif
+  R12283 --&gt;|&quot;precursor&quot;| S14511
+  R12284([&quot;distilled water&lt;br/&gt;1 mL&quot;]):::reactif
+  R12284 --&gt;|&quot;solvent&quot;| S14511
+  R12285([&quot;methylammonium iodide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12285 --&gt;|&quot;precursor&quot;| S14511
+  R12286([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12286 --&gt;|&quot;gas&quot;| S14511
+  R12287([&quot;SiO2/Si substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12287 --&gt;|&quot;substrate&quot;| S14511
+  S14511[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S14511 --&gt; S14512
+  S14512[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S14512 --&gt; S14513
+  S14513[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;solution_temperature : 100 °C&quot;]:::etape
+  S14513 --&gt; S14514
+  S14514[&quot;&lt;b&gt;4. place&lt;/b&gt;&lt;br/&gt;distance_downstream : 10–15 cm&quot;]:::etape
+  S14514 --&gt; S14515
+  S14515[&quot;&lt;b&gt;5. purge&lt;/b&gt;&lt;br/&gt;gas_flow : 500 sccm&lt;br/&gt;duration_purge : 30 min&quot;]:::etape
+  S14515 --&gt; S14516
+  S14516[&quot;&lt;b&gt;6. set_flow&lt;/b&gt;&lt;br/&gt;gas_flow : 30 sccm&lt;br/&gt;pressure : lower than 1 Torr&quot;]:::etape
+  S14516 --&gt; S14517
+  S14517[&quot;&lt;b&gt;7. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;heating_rate : 2.5 °C/min&lt;br/&gt;duration : 5–30 min&quot;]:::etape
+  S14517 --&gt; S14518
+  S14518[&quot;&lt;b&gt;8. cool&lt;/b&gt;&quot;]:::etape
+  S14518 --&gt; M
+  M{{&quot;methylammonium lead iodide platelets&lt;br/&gt;CH3NH3PbI3&quot;}}:::materiau
+  O59200[&quot;platelet_thickness_range : from hundreds of nanometers t…&quot;]:::resultat
+  M -.-&gt; O59200
+  O59201[&quot;highest_process_temperature : 100 °C&quot;]:::resultat
+  M -.-&gt; O59201
+  O59202[&quot;surface_roughness_hundreds_nm_thic… : more rough&quot;]:::resultat
+  M -.-&gt; O59202
+  O59203[&quot;surface_roughness_ten_nm_thick_Fig… : much smoother surface&quot;]:::resultat
+  M -.-&gt; O59203
+  O59204[&quot;surface_roughness_single_unit_cell… : more rough&quot;]:::resultat
+  M -.-&gt; O59204
+  O59205[&quot;PL_boundary_vs_center_thickness_ov… : boundary PL intensity is much…&quot;]:::resultat
+  M -.-&gt; O59205
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B9927{{&quot;MAPbI3_SiO2Si&quot;}}:::materiau
+  B9928[&quot;MAPbI3_Si&quot;]:::etape
+  B9927 --&gt;|&quot;SiO2/Si substrate = replaced by Si substrate&quot;| B9928
+  B9929[&quot;MAPbI3_mica&quot;]:::etape
+  B9927 --&gt;|&quot;SiO2/Si substrate = replaced by mica substra…&quot;| B9929
+  B9930[&quot;MAPbI3_glass&quot;]:::etape
+  B9927 --&gt;|&quot;SiO2/Si substrate = replaced by glass substr…&quot;| B9930
+  B9931[&quot;MAPbI3_PDMS&quot;]:::etape
+  B9927 --&gt;|&quot;SiO2/Si substrate = replaced by PDMS substra…&quot;| B9931
+  B9933[&quot;MAPbI3_p1_63nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 63 nm&quot;| B9933
+  B9934[&quot;MAPbI3_p2_41nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 41 nm&quot;| B9934
+  B9935[&quot;MAPbI3_p3_25nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 25 nm&quot;| B9935
+  B9936[&quot;MAPbI3_p4_18nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 18 nm&quot;| B9936
+  B9937[&quot;MAPbI3_p5_11nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 11 nm&quot;| B9937
+  B9938[&quot;MAPbI3_p6_2nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 2 nm&quot;| B9938
+  B9939[&quot;MAPbI3_AFM_450nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 450 nm&quot;| B9939
+  B9940[&quot;MAPbI3_AFM_175nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 175 nm&quot;| B9940
+  B9941[&quot;MAPbI3_AFM_150nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 150 nm&quot;| B9941
+  B9942[&quot;MAPbI3_AFM_60nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 60 nm&quot;| B9942
+  B9943[&quot;MAPbI3_TEM_10nm&quot;]:::etape
+  B9927 --&gt;|&quot;platelet_thickness = 10 nm&quot;| B9943
+  B9944[&quot;MAPbI3_insufficient_MAI&quot;]:::etape
+  B9927 --&gt;|&quot;methylammonium iodide = insufficient CH3NH3I sup…&quot;| B9944
+  B9932[&quot;MAPbI3_glass_10nm&quot;]:::etape
+  B9930 --&gt;|&quot;platelet_thickness = 10 nm&quot;| B9932
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Phototransistor_MAPbI3</h2>
+<pre class="mermaid">flowchart LR
+  R12292([&quot;MAPbI3_SiO2Si&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12292 --&gt;|&quot;intermediate&quot;| S14519
+  R12293([&quot;gold&lt;br/&gt;30 nm thick&quot;]):::reactif
+  R12293 --&gt;|&quot;electrode&quot;| S14519
+  R12294([&quot;SiO2/Si substrate (Si back gate)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R12294 --&gt;|&quot;substrate&quot;| S14519
+  S14519[&quot;&lt;b&gt;1. place&lt;/b&gt;&quot;]:::etape
+  S14519 --&gt; S14520
+  S14520[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&lt;br/&gt;film_thickness : 30 nm&quot;]:::etape
+  S14520 --&gt; S14521
+  S14521[&quot;&lt;b&gt;3. peel_off&lt;/b&gt;&quot;]:::etape
+  S14521 --&gt; M
+  M{{&quot;2D CH3NH3PbI3 platelet phototransistor (Au source…&lt;br/&gt;&quot;}}:::materiau
+  O59235[&quot;photoresponsivity_1V : 8.3 A W−1&quot;]:::resultat
+  M -.-&gt; O59235
+  O59236[&quot;photocurrent_to_dark_current_ratio : up to three orders of magnitu…&quot;]:::resultat
+  M -.-&gt; O59236
+  O59237[&quot;rise_time : 30 ms&quot;]:::resultat
+  M -.-&gt; O59237
+  O59238[&quot;decay_time : 50 ms&quot;]:::resultat
+  M -.-&gt; O59238
+  O59239[&quot;dark_current : nearly zero&quot;]:::resultat
+  M -.-&gt; O59239
+  O59240[&quot;photoresponsivity_highest_incident… : 3.2 A W−1&quot;]:::resultat
+  M -.-&gt; O59240
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

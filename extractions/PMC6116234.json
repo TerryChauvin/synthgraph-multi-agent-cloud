@@ -176,13 +176,13 @@
    "sample": "Fig. 1i–p, quatre plaquettes d'épaisseur qualitative (centaines de nm, ~10 nm, 2 nm)",
    "defined_in": "Results, Fig. 1i–p",
    "route": null,
-   "why": "épaisseurs données seulement qualitativement, non rattachables avec certitude aux séries p1–p6 ou AFM ; résultat reporté en annotation tendance_observee"
+   "why": "épaisseurs données seulement qualitativement, non rattachables avec certitude aux séries p1–p6 ou AFM ; pas de voie propre, résultats qualitatifs (rugosité) rangés en outcomes de la voie de base MAPbI3_SiO2Si et tendance en annotation tendance_observee"
   },
   {
    "sample": "Fig. 2c–f, cartographies de PL de plaquettes (> 100 nm, 20 nm, < 10 nm)",
    "defined_in": "Results, Fig. 2c–f",
    "route": null,
-   "why": "épaisseurs données en plages ou en valeurs approximatives, sans échantillon défini ; résultat reporté en annotation tendance_observee"
+   "why": "épaisseurs données en plages ou en valeurs approximatives, sans échantillon défini ; pas de voie propre, contraste bord/centre rangé en outcomes de la voie de base MAPbI3_SiO2Si et tendance en annotation tendance_observee"
   }
  ],
  "routes": [
@@ -269,7 +269,7 @@
     {
      "order": 2,
      "action": "heat",
-     "description": "Heat the PbI2 suspension at 100 °C to obtain an oversaturated PbI2 solution.",
+     "description": "Heat the PbI2 solution at 100 °C for 1 h to obtain an oversaturated PbI2 solution.",
      "quote": "0.2 mg PbI2 powder was dissolved in 1 mL distilled water and heated at 100 °C for 1 h to get oversaturated PbI2 solution",
      "parameters": [
       {
@@ -460,6 +460,36 @@
      "value_num": 100,
      "unit": "°C",
      "quote": "Notably, we can obtain CH3NH3PbI3 perovskite on almost all kinds of substrates as long as its melting point is higher than 100 °C, which is the highest temperature during the whole process."
+    },
+    {
+     "property": "surface_roughness_hundreds_nm_thick_Fig1i",
+     "value_text": "more rough",
+     "quote": "Clearly, the surface of the 2D perovskites is more rough for the hundreds-nanometer-thick (Figure 1i) and the single-unit-cell-thick samples (Figure 1l), but the ten-nanometer-thick sample exhibits a much smoother surface (Figure 1k)."
+    },
+    {
+     "property": "surface_roughness_ten_nm_thick_Fig1k",
+     "value_text": "much smoother surface",
+     "quote": "Clearly, the surface of the 2D perovskites is more rough for the hundreds-nanometer-thick (Figure 1i) and the single-unit-cell-thick samples (Figure 1l), but the ten-nanometer-thick sample exhibits a much smoother surface (Figure 1k)."
+    },
+    {
+     "property": "surface_roughness_single_unit_cell_2nm_Fig1l",
+     "value_text": "more rough",
+     "quote": "Clearly, the surface of the 2D perovskites is more rough for the hundreds-nanometer-thick (Figure 1i) and the single-unit-cell-thick samples (Figure 1l), but the ten-nanometer-thick sample exhibits a much smoother surface (Figure 1k)."
+    },
+    {
+     "property": "PL_boundary_vs_center_thickness_over_100nm_Fig2c",
+     "value_text": "boundary PL intensity is much higher than that in the central part",
+     "quote": "When the perovskite thickness is larger than 100 nm, the boundary PL intensity is much higher than that in the central part (Figure 2c)."
+    },
+    {
+     "property": "PL_boundary_vs_center_thickness_20nm_Fig2d",
+     "value_text": "intensity contrast is lower than that of the thicker ones",
+     "quote": "this phenomenon still can be observed when the thickness decreases to 20 nm (inner triangular perovskite sheet in Figure 2d), although the intensity contrast is lower than that of the thicker ones"
+    },
+    {
+     "property": "PL_boundary_vs_center_thickness_under_10nm_Fig2e",
+     "value_text": "PL intensity is uniform over the whole crystal and no clear intensity contrast can be observed",
+     "quote": "as the thickness decreases to thinner than 10 nm, the PL intensity is uniform over the whole crystal and no clear intensity contrast can be observed (inner triangular perovskite sheet in Figure 2e)"
     }
    ],
    "missing_fields": [
@@ -692,6 +722,11 @@
      "property": "PbI2_conversion",
      "value_text": "PbI2 completely converted to CH3NH3PbI3 (PbI2 (001), (002), (003), (004) peaks disappeared)",
      "quote": "we can observe that the (001), (002), (003), (004) diffraction peaks of PbI2 disappeared after the conversion process, indicating that the PbI2 was completely converted to CH3NH3PbI3 perovskite crystals"
+    },
+    {
+     "property": "XRD_peaks_(112)_(211)_(310)_(224)",
+     "value_text": "not observed in our samples, attesting the fine crystal orientation",
+     "quote": "the normally observed (112), (211), (310) and (224) diffraction peaks in perovskite synthesized via solution method are not observed in our samples, attesting the fine crystal orientation of the converted CH3NH3PbI3 perovskite"
     }
    ]
   },
@@ -733,6 +768,9 @@
      "from_figure": "Fig. 2b",
      "quote": "(b) PL spectra of perovskite platelets with different thicknesses."
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -773,6 +811,9 @@
      "from_figure": "Fig. 2b",
      "quote": "(b) PL spectra of perovskite platelets with different thicknesses."
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -813,6 +854,9 @@
      "from_figure": "Fig. 2b",
      "quote": "(b) PL spectra of perovskite platelets with different thicknesses."
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -853,6 +897,9 @@
      "from_figure": "Fig. 2b",
      "quote": "(b) PL spectra of perovskite platelets with different thicknesses."
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -893,6 +940,9 @@
      "from_figure": "Fig. 2b",
      "quote": "(b) PL spectra of perovskite platelets with different thicknesses."
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -937,7 +987,16 @@
      "property": "PL_intensity_vs_p1",
      "value_text": "reduced by over 30 times compared with the 63 nm sample p1",
      "quote": "the PL intensity reduces dramatically by over 30 times as the film thickness decreases from 63 nm (marked by p1 in Figure 2b and Figure S1a,b) to single unit cell (2 nm, marked by p6 as shown in the upper left inset in Figure 2b and Figure S1a,b)"
+    },
+    {
+     "property": "PL_peak_wavelength",
+     "value_num": 720,
+     "unit": "nm",
+     "quote": "The PL peak shifts towards shorter wavelength from 770 to 720 nm as the thickness of the perovskite decreases from 100 nm to single unit cell (2 nm)"
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -977,6 +1036,9 @@
      "unit": "nm",
      "quote": "AFM morphology indicates a surface roughness of 24 nm, 22 nm, 18 nm and 13 nm, corresponding to 450 nm, 175 nm, 150 nm and 60 nm samples, respectively."
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -1016,6 +1078,9 @@
      "unit": "nm",
      "quote": "AFM morphology indicates a surface roughness of 24 nm, 22 nm, 18 nm and 13 nm, corresponding to 450 nm, 175 nm, 150 nm and 60 nm samples, respectively."
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -1055,6 +1120,9 @@
      "unit": "nm",
      "quote": "AFM morphology indicates a surface roughness of 24 nm, 22 nm, 18 nm and 13 nm, corresponding to 450 nm, 175 nm, 150 nm and 60 nm samples, respectively."
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -1094,6 +1162,9 @@
      "unit": "nm",
      "quote": "AFM morphology indicates a surface roughness of 24 nm, 22 nm, 18 nm and 13 nm, corresponding to 450 nm, 175 nm, 150 nm and 60 nm samples, respectively."
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -1132,6 +1203,9 @@
      "value_text": "single crystalline, lattice fringes (200) and (02¯2)",
      "quote": "The corresponding high resolution TEM (HRTEM) image in Figure 3b shows clear lattice fringes with (200) and (02¯2) planes, further revealing the single crystalline structure of the converted perovskite platelet"
     }
+   ],
+   "not_stated": [
+    "substrate"
    ]
   },
   {
@@ -1394,7 +1468,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "MAPbI3_SiO2Si",
-   "text": "Probablement, la goutte chaude refroidit au contact du substrat et le PbI2, moins soluble à froid dans l'eau, cristallise en plaquettes hexagonales ou triangulaires (symétrie du réseau en couches). Dans le four, CH3NH3I sublime vers 100 °C sous faible pression et le gaz porteur Ar l'entraîne vers l'aval, où PbI2 + CH3NH3I donne CH3NH3PbI3 par intercalation entre les couches de PbI2. Rester à 100 °C éviterait la décomposition de CH3NH3I (en CH3NH2 et HI) et la fusion de substrats comme le PDMS ; une montée lente à 2,5 °C/min limiterait le dépassement de température, comme le disent les auteurs."
+   "text": "Hypothèse : la goutte aqueuse chaude déposée sur le substrat chauffé devient sursaturée surtout par évaporation (à 0,2 g/L, le refroidissement seul ne suffit pas, voir la limite de reproductibilité sur la solubilité), et le PbI2, composé en feuillets, nuclée en plaquettes hexagonales ou triangulaires dont l'axe c est probablement normal au substrat. Dans le four, CH3NH3I sublime vers 100 °C sous faible pression et l'Ar l'entraîne vers l'aval, où PbI2 + CH3NH3I donne CH3NH3PbI3 par intercalation entre les feuillets, avec une augmentation d'épaisseur d'un facteur voisin de 1,8 (Ha et al., Adv. Opt. Mater. 2014, 10.1002/adom.201400106). La réaction part des bords exposés puis devient limitée par la diffusion dans l'épaisseur, ce qui expliquerait le contraste de PL entre bord et centre des plaquettes épaisses. Rester à 100 °C éviterait la décomposition de CH3NH3I (CH3NH2 et HI) et la perte de MAPbI3 au-dessus de 150 °C environ, et permet des substrats comme le PDMS ; la montée lente à 2,5 °C/min limiterait le dépassement de température, comme le disent les auteurs."
   },
   {
    "type": "securite_auteurs",
@@ -1406,6 +1480,56 @@
    "type": "securite_analyse",
    "route": null,
    "text": "Les composés du plomb (PbI2, perovskite) sont toxiques et reprotoxiques : travailler avec gants et masque, éviter les poussières, collecter les déchets et solutions de plomb à part. La solution aqueuse à 100 °C présente un risque de brûlure et d'éclaboussures ; le four ouvert rapidement est encore chaud et peut libérer des vapeurs de CH3NH3I et de ses produits de décomposition (méthylamine, HI). Les mesures laser à 405 et 532 nm demandent des lunettes de protection, et l'évaporation de l'or se fait sous vide poussé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MAPbI3_SiO2Si",
+   "text": "Solubilité du PbI2 : 0,2 mg dans 1 mL d'eau fait 0,2 g/L, soit environ 26 % de la solubilité à 20 °C (0,76 g/L, CRC Handbook via PubChem) et environ 5 % de celle à 100 °C (environ 4 g/L, fiche de compilation ChemicalBook, source secondaire) : la solution ne peut être « sursaturée ». Soit la masse est fausse (0,2 g ?), soit les plaquettes se forment par évaporation de la goutte sur le substrat chaud. L'article ne corrige pas ; valeur littérale conservée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MAPbI3_SiO2Si",
+   "text": "Durée de conversion : 5 à 30 min à 100 °C avec l'échantillon à 10–15 cm en aval, ce qui paraît court pour des plaquettes de plusieurs centaines de nm ; la littérature sur le transport de vapeur à courte distance (RSC Advances 2020, 10.1039/d0ra01640c) donne au moins 125 min pour 225 nm. Cela rejoint le contraste bord/centre observé par les auteurs au-dessus de 20 nm, mais la conversion complète n'est vérifiée par XRD que pour l'échantillon dit de 10 nm."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MAPbI3_SiO2Si",
+   "text": "XPS : l'écart entre les pics Pb 4f à 138,8 et 144,3 eV est de 5,5 eV alors que le couplage spin-orbite du Pb 4f est de 4,87 eV (Thermo Fisher, tableau périodique XPS) ; la Fig. 3e se lit plutôt vers 143,8 eV, donc 144,3 eV est probablement une faute de frappe. La position du C 1s à 285,3 eV attribuée au méthylammonium est aussi discutable (C–N plutôt vers 286 eV), sans source primaire trouvée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MAPbI3_glass_10nm",
+   "text": "Les pics (110) et (220) de la Fig. 2a sont beaucoup plus fins que ne le prévoit la formule de Scherrer pour une épaisseur de 10 nm (environ 0,8° de largeur), et l'article n'en discute pas : le diffractogramme vient probablement de plaquettes plus épaisses ou d'un ensemble d'épaisseurs, de sorte que « 10 nm » et « conversion complète » ne valent pas sûrement pour l'échantillon mesuré. Par ailleurs les deux pics sont deux ordres d'une même famille ; sans réflexions de surstructure, l'attribution tétragonale est plausible mais non prouvée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MAPbI3_TEM_10nm",
+   "text": "La plaquette « de 10 nm » de la Fig. 3a apparaît uniformément opaque sur environ 2 µm, ce qui est surprenant pour 10 nm à 200 keV ; les plans (200) et (02¯2) indexés définissent un axe de zone [011] qui n'est pas la normale attendue de la texture XRD, et le transfert sur grille n'est pas décrit. L'épaisseur attribuée à cet échantillon est donc à prendre avec réserve."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MAPbI3_p6_2nm",
+   "text": "« Single unit cell (2 nm) » : une maille de MAPbI3 mesure environ 1,26 nm selon c et le même groupe annonçait environ 1,3 nm par maille (Liu et al., ACS Nano 2016, 10.1021/acsnano.5b07791), soit environ 1,6 maille pour 2 nm ; l'AFM sur SiO2/Si peut surestimer l'épaisseur d'environ 1 nm. Le nombre de mailles n'est pas établi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MAPbI3_p1_63nm",
+   "text": "Le texte annonce un pic de PL à 770 nm pour une plaquette de 100 nm, mais p1 mesure 63 nm et la Fig. 2b place son maximum vers 755 nm (spectres épais coupés net vers 775–780 nm, bord de filtre possible). L'attribution du décalage à l'expansion du réseau ne distingue pas la réabsorption de l'émission dans les cristaux épais, autre cause possible du décalage vers le rouge."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MAPbI3_PDMS",
+   "text": "Le PDMS réticulé reste stable bien au-delà de 100 °C : cet essai ne démontre pas l'avantage revendiqué pour les substrats à bas point de fusion (un PET, ramolli vers 70–80 °C, serait le vrai test). La surface hydrophobe fait perler la goutte aqueuse, ce qui modifie probablement la nucléation ; aucun traitement de surface n'est mentionné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MAPbI3_insufficient_MAI",
+   "text": "Cet essai ne chiffre ni la quantité de CH3NH3I, ni la durée, ni l'épaisseur : un défaut de CH3NH3I, une durée trop courte et un cristal trop épais donnent le même contraste bord/centre, de sorte que le témoin ne permet pas d'isoler la cause. Il n'est pas reproductible tel qu'il est écrit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Phototransistor_MAPbI3",
+   "text": "Le dispositif est appelé FET ou phototransistor, mais aucune mesure en fonction de la tension de grille n'est montrée : il est caractérisé comme un photoconducteur à deux électrodes. Des courbes I-V linéaires ne prouvent pas à elles seules un contact ohmique, et la surface active, nécessaire pour recalculer la responsivité, n'est pas donnée."
   }
  ],
  "method_sources": [
@@ -1460,6 +1584,30 @@
   {
    "where": "Caractérisation XPS",
    "issue": "Les pics XPS (Fig. 3d–g) sont donnés pour « the CH3NH3PbI3 perovskite » sans échantillon précisé ; attribués à la voie de base."
+  },
+  {
+   "where": "MAPbI3_p1…p6, MAPbI3_AFM_*, MAPbI3_TEM_10nm : substrat",
+   "issue": "L'article ne dit le substrat que pour Fig. 1i–p (SiO2/Si), Fig. 1e–h (par substrat), Fig. 2a (verre) et Fig. S2 (SiO2/Si) ; il ne le dit pas pour p1–p6 (Fig. 2b, S1), les images AFM de la Fig. 1q–t ni la plaquette TEM (qui suppose un transfert sur grille, non décrit). Ces branches restent rattachées à la voie SiO2/Si par défaut, mais le substrat est déclaré non cité (not_stated) et n'est pas une donnée de l'article."
+  },
+  {
+   "where": "MAPbI3_glass_10nm, XRD",
+   "issue": "Les Méthodes annoncent un balayage de 10 à 60° ; la Fig. 2a s'étend visiblement d'environ 5 à 55° (lecture sur figure). Valeurs du texte conservées."
+  },
+  {
+   "where": "Phototransistor_MAPbI3, photoresponsivity_1V",
+   "issue": "Le texte ne donne pas la puissance d'éclairement de 8,3 A W−1 (« can reach up to »). Sur la Fig. 4d, ce maximum se lit au point de plus faible puissance (≈ 1 nW ; la légende de la Fig. 4c indique 1,04, 5,88, 21,4 et 46,8 nW, lecture sur image) ; la valeur à 46,8 nW (≈ 3,2 A W−1) est déjà extraite. Les puissances ne figurent dans aucune phrase du texte : les points intermédiaires de la Fig. 4d (≈ 7,4 et ≈ 5,3 A W−1) ne sont pas extraits faute de citation qui porte leur condition."
+  },
+  {
+   "where": "Fig. 2c–f, légende et texte",
+   "issue": "La légende de la Fig. 2 dit que le centre est plus faible que le bord quand la plaquette est « thicker than 10 nm », le texte le voit encore à 20 nm et plus de 100 nm et le dit uniforme sous 10 nm. Lecture du texte retenue pour les résultats qualitatifs de la voie de base."
+  },
+  {
+   "where": "MAPbI3_p1_63nm, longueur d'onde du pic de PL",
+   "issue": "Le texte donne un décalage « from 770 to 720 nm as the thickness decreases from 100 nm to single unit cell (2 nm) » ; p1 mesure 63 nm (et non 100 nm) et la Fig. 2b place son maximum vers 755 nm (740–760 nm selon la lecture). Seule la valeur de 720 nm, rattachée à p6 (2 nm), est extraite ; 770 nm n'est rattachée à aucun échantillon défini."
+  },
+  {
+   "where": "MAPbI3_SiO2Si, résultats qualitatifs Fig. 1i–l et Fig. 2c–f",
+   "issue": "Ces résultats qualitatifs (rugosité et contraste bord/centre par épaisseur) portent sur des plaquettes d'épaisseur approximative qui ne correspondent à aucun échantillon nommé ; ils sont rangés dans les résultats de la voie de base SiO2/Si (substrat écrit pour la Fig. 1i–p, non écrit pour la Fig. 2c–f), sans créer de branche."
   }
  ]
 }
