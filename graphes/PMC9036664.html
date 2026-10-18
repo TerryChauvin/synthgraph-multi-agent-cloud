@@ -1,0 +1,81 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9036664</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9036664 — Productive preparation of N-doped carbon dots from sodium lignosulfonate/melamine formaldehyde foam and its fluorescence detection of trivalent iron ions.</h1>
+<h2>Voie : LSMF_foam</h2>
+<pre class="mermaid">flowchart LR
+  R13053([&quot;paraformaldehyde&lt;br/&gt;0.3 mol&quot;]):::reactif
+  R13053 --&gt;|&quot;precursor&quot;| S15608
+  R13054([&quot;deionized water&lt;br/&gt;20 mL&quot;]):::reactif
+  R13054 --&gt;|&quot;solvent&quot;| S15608
+  R13055([&quot;melamine&lt;br/&gt;0.1 mol&quot;]):::reactif
+  R13055 --&gt;|&quot;precursor&quot;| S15608
+  R13056([&quot;triethanolamine&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13056 --&gt;|&quot;base&quot;| S15608
+  R13057([&quot;sodium lignosulfonate&lt;br/&gt;2 g&quot;]):::reactif
+  R13057 --&gt;|&quot;precursor&quot;| S15608
+  R13058([&quot;sodium lauryl sulfate&lt;br/&gt;0.05 g&quot;]):::reactif
+  R13058 --&gt;|&quot;surfactant&quot;| S15608
+  R13059([&quot;ammonium chloride&lt;br/&gt;4 g&quot;]):::reactif
+  R13059 --&gt;|&quot;catalyst&quot;| S15608
+  R13060([&quot;petroleum ether&lt;br/&gt;5 mL&quot;]):::reactif
+  R13060 --&gt;|&quot;blowing_agent&quot;| S15608
+  S15608[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&quot;]:::etape
+  S15608 --&gt; S15609
+  S15609[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S15609 --&gt; S15610
+  S15610[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S15610 --&gt; S15611
+  S15611[&quot;&lt;b&gt;4. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 9&quot;]:::etape
+  S15611 --&gt; S15612
+  S15612[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;duration : until the solution is clear a…&quot;]:::etape
+  S15612 --&gt; S15613
+  S15613[&quot;&lt;b&gt;6. add&lt;/b&gt;&quot;]:::etape
+  S15613 --&gt; S15614
+  S15614[&quot;&lt;b&gt;7. add&lt;/b&gt;&quot;]:::etape
+  S15614 --&gt; S15615
+  S15615[&quot;&lt;b&gt;8. cure&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S15615 --&gt; M
+  M{{&quot;sodium lignosulfonate melamine formaldehyde (LSMF…&lt;br/&gt;&quot;}}:::materiau
+  O62604[&quot;hollow_ball_diameter : 2.5 μm&quot;]:::resultat
+  M -.-&gt; O62604
+  O62605[&quot;XRD_broad_peak_range : 19–26° °&quot;]:::resultat
+  M -.-&gt; O62605
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : NCDs</h2>
+<pre class="mermaid">flowchart LR
+  R13061([&quot;LSMF foam (route LSMF_foam)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13061 --&gt;|&quot;intermediate&quot;| S15616
+  R13062([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13062 --&gt;|&quot;gas&quot;| S15616
+  R13063([&quot;deionized water (dissolution of the calcined…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13063 --&gt;|&quot;solvent&quot;| S15616
+  R13064([&quot;deionized water (NCDs solution)&lt;br/&gt;10 mL&quot;]):::reactif
+  R13064 --&gt;|&quot;solvent&quot;| S15616
+  S15616[&quot;&lt;b&gt;1. calcine&lt;/b&gt;&lt;br/&gt;temperature : 250 °C&lt;br/&gt;atmosphere : N2&quot;]:::etape
+  S15616 --&gt; S15617
+  S15617[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 0.5 h&quot;]:::etape
+  S15617 --&gt; S15618
+  S15618[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 8000 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S15618 --&gt; S15619
+  S15619[&quot;&lt;b&gt;4. dry&lt;/b&gt;&quot;]:::etape
+  S15619 --&gt; S15620
+  S15620[&quot;&lt;b&gt;5. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 0.1 g in 10 mL&quot;]:::etape
+  S15620 --&gt; M
+  M{{&quot;N-doped carbon dots (NCDs)&lt;br/&gt;&quot;}}:::materiau
+  O62606[&quot;particle_size_TEM : 5 to 20 nm nm&quot;]:::resultat
+  M -.-&gt; O62606
+  O62607[&quot;particle_size_conclusion : 10 nm&quot;]:::resultat
+  M -.-&gt; O62607
+  O62608[&quot;XRD_peak_2theta : 25.6 °&quot;]:::resultat
+  M -.-&gt; O62608
+  O62609[&quot;HRTEM_lattice_spacing : 0.21 nm&quot;]:::resultat
+  M -.-&gt; O62609
+  O62610[&quot;fluorescence_emission_maximum : 580 nm&quot;]:::resultat
+  M -.-&gt; O62610
+  O62611[&quot;fluorescence_quantum_yield : 2.94 %&quot;]:::resultat
+  M -.-&gt; O62611
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
