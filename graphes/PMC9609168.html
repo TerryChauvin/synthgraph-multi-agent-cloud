@@ -1,0 +1,118 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9609168</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9609168 — Green Synthesis of Hexagonal Silver Nanoparticles Using a Novel Microalgae Coelastrella aeroterrestrica Strain BA_Chlo4 and Resulting Anticancer, Antibacterial, and Antioxidant Activities.</h1>
+<h2>Voie : Algal_extract</h2>
+<pre class="mermaid">flowchart LR
+  R13886([&quot;Coelastrella aeroterrestrica BA_Chlo4 dried …&lt;br/&gt;500 mg&quot;]):::reactif
+  R13886 --&gt;|&quot;precursor&quot;| S16573
+  R13887([&quot;distilled water&lt;br/&gt;500 mL&quot;]):::reactif
+  R13887 --&gt;|&quot;solvent&quot;| S16573
+  R13888([&quot;BG11 medium&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13888 --&gt;|&quot;culture_medium&quot;| S16573
+  R13889([&quot;distilled water (biomass wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13889 --&gt;|&quot;wash&quot;| S16573
+  S16573[&quot;&lt;b&gt;1. grow&lt;/b&gt;&lt;br/&gt;duration : 15 days&quot;]:::etape
+  S16573 --&gt; S16574
+  S16574[&quot;&lt;b&gt;2. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4700 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S16574 --&gt; S16575
+  S16575[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : dist. H2O&lt;br/&gt;repetitions : at least four times&quot;]:::etape
+  S16575 --&gt; S16576
+  S16576[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;duration : 2 days&quot;]:::etape
+  S16576 --&gt; S16577
+  S16577[&quot;&lt;b&gt;5. grind&lt;/b&gt;&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S16577 --&gt; S16578
+  S16578[&quot;&lt;b&gt;6. dissolve&lt;/b&gt;&quot;]:::etape
+  S16578 --&gt; S16579
+  S16579[&quot;&lt;b&gt;7. heat&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S16579 --&gt; S16580
+  S16580[&quot;&lt;b&gt;8. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S16580 --&gt; S16581
+  S16581[&quot;&lt;b&gt;9. filter&lt;/b&gt;&quot;]:::etape
+  S16581 --&gt; S16582
+  S16582[&quot;&lt;b&gt;10. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4700 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S16582 --&gt; S16583
+  S16583[&quot;&lt;b&gt;11. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S16583 --&gt; M
+  M{{&quot;aqueous extract of Coelastrella aeroterrestrica s…&lt;br/&gt;&quot;}}:::materiau
+  O66234[&quot;IC25_MCF-7_cells : 159.55 µg/mL&quot;]:::resultat
+  M -.-&gt; O66234
+  O66235[&quot;IC50_MCF-7_cells : 319.1 µg/mL&quot;]:::resultat
+  M -.-&gt; O66235
+  O66236[&quot;IC25_MDA_cells : 132.15 µg/mL&quot;]:::resultat
+  M -.-&gt; O66236
+  O66237[&quot;IC50_MDA_cells : 264.3 µg/mL&quot;]:::resultat
+  M -.-&gt; O66237
+  O66238[&quot;IC25_HCT-116_cells : 125.75 µg/mL&quot;]:::resultat
+  M -.-&gt; O66238
+  O66239[&quot;IC50_HCT-116_cells : 251.5 µg/mL&quot;]:::resultat
+  M -.-&gt; O66239
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Extract_GCMS</h2>
+<pre class="mermaid">flowchart LR
+  R13890([&quot;Coelastrella aeroterrestrica BA_Chlo4 biomass&lt;br/&gt;163 mg&quot;]):::reactif
+  R13890 --&gt;|&quot;precursor&quot;| S16584
+  R13891([&quot;boiled distilled water&lt;br/&gt;100 mL&quot;]):::reactif
+  R13891 --&gt;|&quot;solvent&quot;| S16584
+  S16584[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&quot;]:::etape
+  S16584 --&gt; S16585
+  S16585[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S16585 --&gt; S16586
+  S16586[&quot;&lt;b&gt;3. macerate&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S16586 --&gt; S16587
+  S16587[&quot;&lt;b&gt;4. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.22 µm&quot;]:::etape
+  S16587 --&gt; S16588
+  S16588[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 48 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S16588 --&gt; M
+  M{{&quot;aqueous extract of C. aeroterrestrica BA_Chlo4 dr…&lt;br/&gt;&quot;}}:::materiau
+  O66263[&quot;GCMS_area_pct_1_Heptanol : 0.31 %&quot;]:::resultat
+  M -.-&gt; O66263
+  O66264[&quot;GCMS_area_pct_2_Ethyl_1_hexanethiol : 0.25 %&quot;]:::resultat
+  M -.-&gt; O66264
+  O66265[&quot;GCMS_area_pct_1_Octene : 4.58 %&quot;]:::resultat
+  M -.-&gt; O66265
+  O66266[&quot;GCMS_area_pct_1_Deoxy_d_mannitol : 0.46 %&quot;]:::resultat
+  M -.-&gt; O66266
+  O66267[&quot;GCMS_area_pct_1_Chlorotetradecane : 0.51, 0.40 %&quot;]:::resultat
+  M -.-&gt; O66267
+  O66268[&quot;GCMS_area_pct_Methyl_10_methylunde… : 3.76 %&quot;]:::resultat
+  M -.-&gt; O66268
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : C@Ag-NPs</h2>
+<pre class="mermaid">flowchart LR
+  R13892([&quot;silver nitrate&lt;br/&gt;90 mL&quot;]):::reactif
+  R13892 --&gt;|&quot;precursor&quot;| S16589
+  R13893([&quot;Algal_extract&lt;br/&gt;10 mL&quot;]):::reactif
+  R13893 --&gt;|&quot;intermediate&quot;| S16589
+  R13894([&quot;distilled water (wash)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R13894 --&gt;|&quot;wash&quot;| S16589
+  S16589[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;concentration : 10−3 M AgNO3&quot;]:::etape
+  S16589 --&gt; S16590
+  S16590[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;temperature : RT&lt;br/&gt;duration : 24 h&lt;br/&gt;illumination : fluorescent light&quot;]:::etape
+  S16590 --&gt; S16591
+  S16591[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 13000 rpm&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S16591 --&gt; S16592
+  S16592[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : dist. H2O&lt;br/&gt;repetitions : at least three times&quot;]:::etape
+  S16592 --&gt; S16593
+  S16593[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;duration : 6 to 8 h&quot;]:::etape
+  S16593 --&gt; M
+  M{{&quot;silver nanoparticles biosynthesized by C. aeroter…&lt;br/&gt;Ag&quot;}}:::materiau
+  O66283[&quot;colour_of_mixture : colorless, pale yellow after …&quot;]:::resultat
+  M -.-&gt; O66283
+  O66284[&quot;UV_max_wavelength : 404.5 nm&quot;]:::resultat
+  M -.-&gt; O66284
+  O66285[&quot;average_diameter_size_distribution : 14.5 nm&quot;]:::resultat
+  M -.-&gt; O66285
+  O66286[&quot;size_range : 4 to 32 nm&quot;]:::resultat
+  M -.-&gt; O66286
+  O66287[&quot;average_diameter_SEM : 15.6 nm&quot;]:::resultat
+  M -.-&gt; O66287
+  O66288[&quot;morphology : polyform: hexagonal dominant,…&quot;]:::resultat
+  M -.-&gt; O66288
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

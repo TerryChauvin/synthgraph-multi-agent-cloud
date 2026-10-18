@@ -463,7 +463,7 @@
     },
     {
      "technique": "in situ synchrotron XRD",
-     "result": "P2 phase kept during desodiation, no Z/OP4 phase near 17°, P′2 phase (Cmcm) appears on discharge toward 1.5 V",
+     "result": "P2 phase retained throughout the whole charge except for a stacking fault (OP4 phase) formation, attributed by the authors to irreversible oxygen loss; the detrimental Z/OP4 phase near 2θ ≈ 17° did not appear; on discharge the P2 phase continues at first, then an additional orthorhombic P′2 phase (Cmcm) appears toward ~1.5 V (biphasic mechanism after an intermediate solid solution region)",
      "instrument": null,
      "conditions": "first charge to 4.3 V then discharge to 1.5 V at a current density of 10 mA g−1",
      "quote": "In situ synchrotron XRD of NFM-Mg electrode during the first charge/discharge process at a current density of 10 mA g−1."
@@ -616,6 +616,32 @@
      "value_num": 60,
      "unit": "%",
      "quote": "The NFM-Mg electrode could retain approximately 60% of its reversible capacity when the current density was increased ten times (from 20 to 200 mAh g−1)."
+    },
+    {
+     "property": "dQdV_broad_cathodic_peak",
+     "value_num": 2.8,
+     "unit": "V",
+     "quote": "A broad cathodic peak at around 2.8 V in the differential capacity curve corresponded to oxygen reduction"
+    },
+    {
+     "property": "dQdV_anodic_cathodic_peak_pair_low_voltage",
+     "value_text": "around 2.0 and 1.85 V",
+     "quote": "a pair of anodic/cathodic peaks at around 2.0 and 1.85 V associated with the Mn3+/Mn4+ redox reaction dominated the low-voltage region of the NFM-Mg cathode"
+    },
+    {
+     "property": "in_situ_XRD_stacking_fault_during_charge",
+     "value_text": "stacking fault (OP4 phase) formation",
+     "quote": "The P2 phase (blue color) is retained throughout the whole charge process, except for a stacking fault (OP4 phase) formation."
+    },
+    {
+     "property": "XRD_diffraction_peaks_2theta",
+     "value_text": "15.63°, 31.67°, 35.42°, 38.86°, 43.01°, 48.30°, 61.37°, 63.48°, and 65.88°",
+     "quote": "The XRD pattern can be fully indexed to the hexagonal P63/mmc space group, with diffraction peaks mainly at 2θ = 15.63°, 31.67°, 35.42°, 38.86°, 43.01°, 48.30°, 61.37°, 63.48°, and 65.88°."
+    },
+    {
+     "property": "XRD_reference_pattern",
+     "value_text": "Na2/3Fe1/2Mn1/2O2 (ICSD No. 194-731)",
+     "quote": "all the peaks are identical to the standard values of Na2/3Fe1/2Mn1/2O2 (ICSD No. 194-731)"
     }
    ],
    "missing_fields": [
@@ -718,7 +744,46 @@
      "unit": "mAh g−1",
      "from_figure": "Fig. 4d",
      "quote": "Figure 4 (a) Galvanostatic voltage profiles; (b) dQ/dV curves of the NFM-Mg cathode material; (c) cycling; (d) rate capability performance comparison between P2-Na2/3Fe1/2Mn1/2O2 (NFM) and P2-Na2/3Mg2/9Fe2/9Mn5/9O2 (NFM-Mg) cathode materials in Na-ion half-cell."
+    },
+    {
+     "property": "first_charge_voltage_profile",
+     "value_text": "two-step slope corresponding to Mn3+/Mn4+ and Fe3+/Fe4+",
+     "quote": "The NFM had a two-step slope corresponding to Mn3+/Mn4+ and Fe3+/Fe4+"
+    },
+    {
+     "property": "dQdV_Fe3+/Fe4+_redox_peaks_high_voltage",
+     "value_text": "around 4.1 and 3.25 V",
+     "quote": "In contrast, the Fe3+/Fe4+ redox peaks at around 4.1 and 3.25 V dominated the high-voltage region of the NFM cathode material (Figure S2b)."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve the nitrate salts of Na, Fe and Mn (no magnesium nitrate) following a similar approach to the NFM-Mg; the later steps are not described for the NFM.",
+     "quote": "We prepared the P2-Na2/3Fe1/2Mn1/2O2 (NFM) material by following a similar approach, excluding the addition of magnesium nitrate salt.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "volume"
+     ]
+    }
+   ],
+   "not_stated": [
+    "yield",
+    "amount_sodium_nitrate",
+    "amount_iron_nitrate",
+    "amount_manganese_nitrate",
+    "amount_citric_acid",
+    "amount_water",
+    "gelation_conditions",
+    "auto_combustion_conditions",
+    "precalcination_conditions",
+    "pellet_pressing",
+    "sintering_conditions",
+    "quench_and_storage"
    ]
   },
   {
@@ -775,6 +840,15 @@
       "supplier"
      ],
      "quote": "a liquid electrolyte of 1.2 M NaPF6 in 9:9:2 v/v ethylene carbonate/dimethyl carbonate (DMC)/propylene carbonate (PC)"
+    },
+    {
+     "name": "NFM (route NFM)",
+     "formula": "Na2/3Fe1/2Mn1/2O2",
+     "role": "intermediate",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "On the other hand, the NFM delivered ≈112.5 mAh g−1 of initial charge capacity and ≈183 mAh g−1 of discharge capacity, followed by the second charge (≈180.7 mAh g−1) and discharge (≈178.3 mAh g−1) capacities at the same condition (Figure S2a)."
     }
    ],
    "steps": [
@@ -869,7 +943,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "NFM-Mg",
-   "text": "Les masses ou volumes des quatre nitrates et de l'eau ne sont pas donnés : seules la formule visée et le rapport acide citrique:cations de 0,5:1 permettent de les recalculer. La durée de la gélification à 80 °C (« a certain period »), la durée du chauffage à 200 °C, les rampes de montée des fours à 500 °C, la pression de pressage, la vitesse de refroidissement et la méthode de trempe ne sont pas indiquées. La pureté du nitrate de magnésium et de l'acide citrique, ainsi que le rendement, manquent aussi."
+   "text": "Les masses ou volumes des quatre nitrates et de l'eau ne sont pas donnés : seules la formule visée et le rapport acide citrique:cations de 0,5:1 permettent de les recalculer. La durée de la gélification à 80 °C (« a certain period »), la durée du chauffage à 200 °C, les rampes de montée des fours à 500 °C, la pression de pressage, la vitesse de refroidissement et la méthode de trempe ne sont pas indiquées. La pureté du nitrate de magnésium et de l'acide citrique, ainsi que le rendement, manquent aussi. Le rapport acide citrique:cations ne dit pas si Na+ est compté parmi les cations, ce qui change la quantité de combustible d'un facteur proche de 1,7 ; le débit d'oxygène, la taille des pastilles, le récipient et l'atmosphère de l'auto-combustion à 200 °C ne sont pas non plus indiqués."
   },
   {
    "type": "limite_reproductibilite",
@@ -886,7 +960,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "NFM-Mg",
-   "text": "Hypothèse de chimiste : l'acide citrique complexe probablement les cations Na+, Mg2+, Fe3+ et Mn2+ en solution et fournit un gel homogène où les cations sont mélangés à l'échelle moléculaire ; l'auto-combustion citrate–nitrate à 200 °C, fortement exothermique, donnerait un précurseur d'oxyde très réactif. Le chauffage à 850 °C sous oxygène oxyderait probablement Mn2+ de départ en Mn4+, ce qui est cohérent avec la formule visée : la charge de Na2/3Mg2/9Fe2/9Mn5/9O2 s'équilibre avec Mg2+, Fe3+ et Mn4+. La trempe fige probablement la phase P2 haute température et limite la reprise d'eau. Le rapport 0,5:1 (acide citrique:cations) est une valeur faible par rapport aux gels citrate usuels (1:1), ce qui ne chélate probablement qu'une partie des cations."
+   "text": "Hypothèse de chimiste : le citrate complexe probablement les cations Fe3+, Mn2+ et Mg2+ en solution (Na+ très peu), puis l'évaporation à 80 °C donne un gel citrate–nitrate homogène, sans hydrolyse–condensation au sens des alcoxydes. Vers 200 °C, la réaction redox nitrate–citrate (auto-combustion) laisserait une poudre très divisée d'oxydes mixtes, des sels de sodium et du carbone résiduel, que le recuit à 500 °C sous air éliminerait. À 850 °C sous oxygène, la réaction à l'état solide formerait la phase P2, Mn étant oxydé en Mn4+ (neutralité avec Mg2+ et Fe3+), et la trempe figerait la phase haute température. En électrochimie, l'oxygène serait actif à la première charge, probablement par les liaisons Na–O–Mg ; en fin de décharge, le retour de Mn3+ (Jahn–Teller) expliquerait l'apparition de la phase P′2."
   },
   {
    "type": "securite_analyse",
@@ -897,13 +971,43 @@
    "type": "securite_analyse",
    "route": "NaCell_coin",
    "text": "Le sodium métal réagit vivement avec l'eau et l'humidité ; l'électrolyte NaPF6 dans des carbonates (EC, DMC, PC) est inflammable et libère de l'acide fluorhydrique par hydrolyse. L'assemblage doit se faire en boîte à gants."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NFM-Mg",
+   "text": "Incohérence de l'article : la capacité théorique du couple Fe3+/Fe4+ est annoncée à ≈ 45 mAh g−1, alors que 2/9 Fe pour une masse molaire d'environ 95,7 g/mol donnent environ 62 mAh g−1. La conclusion des auteurs (une part importante de la première charge vient de l'oxygène) tient malgré tout, car au moins 0,32 électron par unité formulaire ne peut pas venir de Fe."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NFM-Mg",
+   "text": "Incohérence de l'article sur la DRX in situ : les raies (100) et (110) sont décrites comme se déplaçant en sens opposés alors qu'elles ne dépendent que du paramètre a, et le paragraphe annonce la formation d'une faute d'empilement OP4 tout en disant que la phase Z/OP4 n'apparaît pas. Une coquille sur l'indexation d'une raie est possible ; l'évolution de a et de c doit être relue sur la figure 7 avant d'être utilisée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NFM-Mg",
+   "text": "Détails à ne pas reprendre tels quels : la longueur d'onde du diffractogramme n'est pas donnée (les positions 2θ correspondent à une longueur d'onde voisine de 1,53 Å, et non à Cu Kα) et la mesure synchrotron est attribuée à « Rigaku » ; le pic du magnésium est appelé « Mg 2p » dans le texte et « Mg 1s » dans la légende (1303,75 eV correspond à Mg 1s) ; Biso est donné en « Å3 × 102 » alors qu'un facteur de déplacement s'exprime en Å2 ; la gélification est décrite comme « hydrolysis and condensation », vocabulaire des alcoxydes peu adapté à un gel citrate–nitrate."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NFM-Mg",
+   "text": "La preuve de la redox de l'oxygène reste indirecte : le creux t2g–eg du seuil O K en mode TFY est rempli à la première charge, mais les auteurs n'ont pas fait de mRIXS, aucune mesure de gaz n'est présentée et l'oxydation de l'électrolyte vers 4,3 V n'est pas exclue. Un seuil Fe K immobile ne prouve pas à lui seul l'absence de Fe3+/Fe4+, Fe ne représentant que 0,22 par unité formulaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NFM",
+   "text": "Incohérence de l'article : en retirant seulement le nitrate de magnésium des quantités du NFM-Mg, on obtiendrait environ Na0,86(Fe0,29Mn0,71)O2 et non Na2/3Fe1/2Mn1/2O2. Les quantités de nitrates de Fe et de Mn du NFM sont à recalculer pour la formule visée ; l'article ne les donne pas, et ne donne ni ICP, ni paramètres de maille, ni diffractogramme du NFM dans le texte principal."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NFM",
+   "text": "Le NFM ne diffère pas du NFM-Mg par le seul magnésium : la teneur en fer passe de 0,50 à 0,22 et le rapport Fe:Mn de 1:1 à environ 2:5. L'amélioration de la tenue en cyclage attribuée au dopage ne peut donc pas être imputée au seul Mg, la migration du fer étant une cause connue de perte de capacité des oxydes P2 Fe/Mn. Il faut garder cette réserve en comparant les deux voies."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "NFM, protocole",
-   "issue": "Le texte dit que le NFM est préparé « by following a similar approach, excluding the addition of magnesium nitrate salt », et non « same procedure ». J'ai extrait le NFM comme branche du NFM-Mg avec la seule variation « nitrate de magnésium absent ». Les quantités des autres nitrates (qui doivent changer pour la formule Na2/3Fe1/2Mn1/2O2) ne sont pas données, et l'article ne dit pas explicitement que les températures et durées de chauffage restent identiques."
+   "issue": "Le texte dit que le NFM est préparé « by following a similar approach, excluding the addition of magnesium nitrate salt », et non « same procedure ». Le NFM n'hérite donc plus des 11 étapes du NFM-Mg : il a une seule étape propre (dissolution des nitrates de Na, Fe et Mn, sans nitrate de magnésium) et ni quantités, ni gélification, ni auto-combustion, ni recuit à 500 °C, ni frittage à 850 °C sous O2, ni trempe ne sont affirmés pour lui (cases non citées). La formule visée change (Na2/3Fe1/2Mn1/2O2 contre Na2/3Mg2/9Fe2/9Mn5/9O2) : les proportions de nitrates de Fe et de Mn ne sont pas données, et le simple retrait du nitrate de magnésium ne permettrait pas de les obtenir."
   },
   {
    "where": "NFM, valeurs lues sur la Fig. 4c, 4d",
@@ -928,6 +1032,14 @@
   {
    "where": "NFM-Mg, courbe de première charge",
    "issue": "Le texte renvoie le dQ/dV à « Figure 3a » alors qu'il s'agit de la Figure 4a (Figure 3 = MEB) ; la conclusion écrit « a reversible capacity of mAh g−1 after 80 cycles » sans nombre. La valeur de 134 mAh g−1 à 80 cycles vient de la section 2.2."
+  },
+  {
+   "where": "NFM-Mg, rapport acide citrique:cations",
+   "issue": "Le rapport « 0.5:1 (citric acid:cations) » ne dit pas si Na+ est compté parmi les cations ; la quantité d'acide citrique en dépend. Valeur extraite telle qu'écrite (amount_text)."
+  },
+  {
+   "where": "NFM-Mg, DRX in situ (section 2.3)",
+   "issue": "Le paragraphe écrit que la phase P2 est conservée « except for a stacking fault (OP4 phase) formation » puis que la « Z/OP4 phase » n'apparaît pas ; il fait aussi bouger (100) vers les grands angles et (110) vers les petits angles alors que ces deux raies ne dépendent que du paramètre a. Lecture littérale conservée (faute OP4 intermédiaire attribuée à la perte d'oxygène irréversible, phase Z/OP4 délétère absente), sans correction."
   }
  ]
 }
