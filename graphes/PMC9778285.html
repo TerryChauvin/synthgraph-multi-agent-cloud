@@ -1,0 +1,85 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9778285</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9778285 — Effect of Thermal Treatment on the Structure and Morphology of Vanadium Doped ZnO Nanostructures Obtained by Microwave Assisted Sol-Gel Method.</h1>
+<h2>Voie : MW_gel</h2>
+<pre class="mermaid">flowchart LR
+  R14243([&quot;zinc acetate dihydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14243 --&gt;|&quot;precursor&quot;| S17009
+  R14244([&quot;vanadyl acetylacetonate&lt;br/&gt;2 mol% vanadium doping level&quot;]):::reactif
+  R14244 --&gt;|&quot;dopant&quot;| S17009
+  R14245([&quot;absolute ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14245 --&gt;|&quot;solvent&quot;| S17009
+  R14246([&quot;triethanolamine (TEA)&lt;br/&gt;molar ratio ZnAc:TEA = 5:1&quot;]):::reactif
+  R14246 --&gt;|&quot;autre&quot;| S17009
+  S17009[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S17009 --&gt; S17010
+  S17010[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;addition_rate : drop by drop&lt;br/&gt;molar_ratio : ZnAc:TEA = 5:1&quot;]:::etape
+  S17010 --&gt; S17011
+  S17011[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;duration : 10 min&lt;br/&gt;temperature : 60 °C&lt;br/&gt;power : 200 W&lt;br/&gt;frequency : 2.45 GHz&quot;]:::etape
+  S17011 --&gt; S17012
+  S17012[&quot;&lt;b&gt;4. gel&lt;/b&gt;&lt;br/&gt;temperature : ambient temperature&quot;]:::etape
+  S17012 --&gt; S17013
+  S17013[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S17013 --&gt; M
+  M{{&quot;2 mol% vanadium doped ZnO dried gel&lt;br/&gt;&quot;}}:::materiau
+  O68325[&quot;total_weight_loss_up_to_550C : 74.1 %&quot;]:::resultat
+  M -.-&gt; O68325
+  O68326[&quot;mass_loss_25_100C : 7.1 %&quot;]:::resultat
+  M -.-&gt; O68326
+  O68327[&quot;mass_loss_100_190C : 3.45 %&quot;]:::resultat
+  M -.-&gt; O68327
+  O68328[&quot;mass_loss_190_390C : 53 %&quot;]:::resultat
+  M -.-&gt; O68328
+  O68329[&quot;mass_loss_390_550C : 10.3 %&quot;]:::resultat
+  M -.-&gt; O68329
+  O68330[&quot;mass_loss_550_1000C : 0.3 %&quot;]:::resultat
+  M -.-&gt; O68330
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11073{{&quot;MW_gel&quot;}}:::materiau
+  B11074[&quot;SG_gel&quot;]:::etape
+  B11073 --&gt;|&quot;temperature = 50 °C&lt;br/&gt;duration = two hours&lt;br/&gt;power = absent&lt;br/&gt;frequency = absent&quot;| B11074
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MW@500</h2>
+<pre class="mermaid">flowchart LR
+  R14247([&quot;MW_gel (dried gel, route MW_gel)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14247 --&gt;|&quot;intermediate&quot;| S17017
+  S17017[&quot;&lt;b&gt;1. calcine&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S17017 --&gt; M
+  M{{&quot;2 mol% vanadium doped ZnO powder&lt;br/&gt;ZnO&quot;}}:::materiau
+  O68340[&quot;phase : zincite single phase, polycry…&quot;]:::resultat
+  M -.-&gt; O68340
+  O68341[&quot;lattice_constant_a : 3.2504 Å&quot;]:::resultat
+  M -.-&gt; O68341
+  O68342[&quot;lattice_constant_c : 5.2061 Å&quot;]:::resultat
+  M -.-&gt; O68342
+  O68343[&quot;crystallite_size_Williamson_Hall : 20 nm&quot;]:::resultat
+  M -.-&gt; O68343
+  O68344[&quot;morphology : well-defined shape, mostly he…&quot;]:::resultat
+  M -.-&gt; O68344
+  O68345[&quot;particle_size_SEM : 30–250 nm&quot;]:::resultat
+  M -.-&gt; O68345
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11075{{&quot;MW@500&quot;}}:::materiau
+  B11076[&quot;MW@300&quot;]:::etape
+  B11075 --&gt;|&quot;temperature = 300 °C&quot;| B11076
+  B11077[&quot;MW@650&quot;]:::etape
+  B11075 --&gt;|&quot;temperature = 650 °C&quot;| B11077
+  B11078[&quot;SG@500&quot;]:::etape
+  B11075 --&gt;|&quot;MW_gel (dried gel, route… = replaced by SG_gel&quot;| B11078
+  B11079[&quot;SG@300&quot;]:::etape
+  B11078 --&gt;|&quot;temperature = 300 °C&quot;| B11079
+  B11080[&quot;SG@650&quot;]:::etape
+  B11078 --&gt;|&quot;temperature = 650 °C&quot;| B11080
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
