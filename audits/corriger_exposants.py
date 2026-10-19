@@ -59,16 +59,21 @@ def fix(pm, text):
     for o, n in all_edits(pm, text):
         if o == "(100\u2013105)" or True:
             text = text.replace(o, n)
-    return GENERIC.sub(lambda m: m.group(1) + "10^" + m.group(2), text)
+    def sub(m):
+        d = m.group(2)
+        if d == "0" or (d == "1" and pm != "PMC9078598"):  # x 100 % ; x 100 lux
+            return m.group(0)
+        return m.group(1) + "10^" + d
+    return GENERIC.sub(sub, text)
 
 if __name__ == "__main__":
     pms = open(sys.argv[1]).read().split(); apply = "--apply" in sys.argv
     for pm in pms:
-        tp = f"corpus/text/{pm}.txt"; text = open(tp, encoding="utf-8").read(); new = fix(pm, text)
-        jp = f"extractions/{pm}.json"; js = open(jp, encoding="utf-8").read() if os.path.exists(jp) else None
+        tp = f"corpus/text/{pm}.txt"; text = open(tp, encoding="utf-8", newline="").read(); new = fix(pm, text)
+        jp = f"extractions/{pm}.json"; js = open(jp, encoding="utf-8", newline="").read() if os.path.exists(jp) else None
         njs = fix(pm, js) if js else None
         print(pm, "texte", sum(1 for a, b in zip(text, new) if a != b) if len(text)==len(new) else "len+%d" % (len(new)-len(text)),
               "json", None if js is None else ("len+%d" % (len(njs)-len(js))))
         if apply:
-            open(tp, "w", encoding="utf-8").write(new)
-            if js: open(jp, "w", encoding="utf-8").write(njs)
+            open(tp, "w", encoding="utf-8", newline="").write(new)
+            if js: open(jp, "w", encoding="utf-8", newline="").write(njs)

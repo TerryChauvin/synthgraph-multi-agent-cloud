@@ -8968,3 +8968,13 @@ Colonne *cité* : la chaîne aplatie (contexte) apparaît telle quelle dans le J
 | PMC9999475 | `step of 0.03 Å–1 for the p` |  |
 | PMC9999475 | `th R bkg = 1 Å–1 in the k ` |  |
 | PMC9999475 | `y of 215 mAh g–1, which is` |  |
+
+## Correction appliquée (option B)
+
+Appliquée par `audits/corriger_exposants.py` à 43 publications (45 listées, moins PMC12455581 : degré, et PMC6678425 : charges d'ions). Les exposants sont écrits `10^n` dans `corpus/text/<PMCID>.txt` et dans les citations de `extractions/<PMCID>.json`. Le texte et le JSON sont modifiés de la même façon, donc les citations restent des sous-chaînes exactes.
+
+- Exclus : `× 100 %`, `× 100 ± 100 lux` ; `× 101` converti seulement dans PMC9078598 ; renvois en exposant (`AgNO3^25`) ignorés.
+- Valeurs numériques : les `value_num` des 67 objets concernés étaient déjà justes (les extracteurs avaient lu les vrais exposants). Aucune valeur modifiée.
+- Corrections manuelles de citations en début de phrase : PMC5304631 (`10^5 PEG molecules`), PMC9063653 (`up to 10^4 s`).
+- `load.py check` : 0 erreur sur les 43 ; `reload_all.py` : 0 en erreur.
+- Limite : seules les 45 publications listées sont corrigées ; les 170 autres publications du corpus avec exposants aplatis ne sont pas extraites, et le défaut de `sections.py` reste à corriger pour les nouveaux articles (option A).
