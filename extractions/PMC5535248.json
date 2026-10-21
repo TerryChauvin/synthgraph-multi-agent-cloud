@@ -201,6 +201,17 @@
     },
     {
      "order": 7,
+     "action": "weigh",
+     "description": "Once the sample has cooled to room temperature, weigh it again to determine the carbon yield percentage.",
+     "quote": "After the sample temperature reduced to room temperature, the sample was weighed again to determine the yield percentage.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "balance"
+     ]
+    },
+    {
+     "order": 8,
      "action": "grind",
      "description": "Grind the carbonized material with a mortar and pestle and store it in sample bottles.",
      "quote": "the as-carbonized materials, i.e., carbon material, were made into powder using a mortar and pestle",
@@ -217,7 +228,22 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "broad basal reflection (002) peak at 2θ = 25° (Fig. 6a); the text gives one value for the carbons produced at 900 °C from the various precursors",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "X-ray diffraction patterns of (a) graphite-like material produced at 900 °C from the various precursors"
+    },
+    {
+     "technique": "TGA/DTG",
+     "result": "raw OPL (before carbonization): DTG peaks at about 81, 133, 288 and 345 °C (read on Fig. 11a, approximate)",
+     "instrument": "TGA/DSC 1HT (METTLER TOLEDO, Shah Alam, Selangor, Malaysia)",
+     "conditions": "25 to 1000 °C",
+     "quote": "TGA/DTG thermograms of (a) the raw OPL sample; (b) the OPL sample carbonized at 900 °C; (c) the raw PKS sample; and (d) the as-carbonized PKS samples at 900 °C."
+    }
+   ],
    "outcomes": [
     {
      "property": "Raman_IG_ID_ratio",
@@ -237,6 +263,12 @@
      "value_text": "96, 392 and 722 °C",
      "from_figure": "Fig. 11b",
      "quote": "TGA/DTG thermograms of (a) the raw OPL sample; (b) the OPL sample carbonized at 900 °C; (c) the raw PKS sample; and (d) the as-carbonized PKS samples at 900 °C."
+    },
+    {
+     "property": "XRD_002_peak_2theta",
+     "value_num": 25,
+     "unit": "°",
+     "quote": "Initially, the as-prepared graphite-like material exhibits a basal reflection (002) peak at 2θ = 25° as illustrated in Figure 6a."
     }
    ],
    "missing_fields": [
@@ -495,6 +527,28 @@
      "value_text": "74 and 728 °C",
      "from_figure": "Fig. 11d",
      "quote": "TGA/DTG thermograms of (a) the raw OPL sample; (b) the OPL sample carbonized at 900 °C; (c) the raw PKS sample; and (d) the as-carbonized PKS samples at 900 °C."
+    },
+    {
+     "property": "XRD_002_peak_2theta",
+     "value_num": 25,
+     "unit": "°",
+     "quote": "Initially, the as-prepared graphite-like material exhibits a basal reflection (002) peak at 2θ = 25° as illustrated in Figure 6a."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "broad basal reflection (002) peak at 2θ = 25° (Fig. 6a); the text gives one value for the carbons produced at 900 °C from the various precursors",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "X-ray diffraction patterns of (a) graphite-like material produced at 900 °C from the various precursors"
+    },
+    {
+     "technique": "TGA/DTG",
+     "result": "raw PKS (before carbonization): DTG peaks at about 90, 283 and 359 °C (read on Fig. 11c, approximate)",
+     "instrument": "TGA/DSC 1HT (METTLER TOLEDO, Shah Alam, Selangor, Malaysia)",
+     "conditions": "25 to 1000 °C",
+     "quote": "TGA/DTG thermograms of (a) the raw OPL sample; (b) the OPL sample carbonized at 900 °C; (c) the raw PKS sample; and (d) the as-carbonized PKS samples at 900 °C."
     }
    ]
   },
@@ -729,6 +783,23 @@
      ],
      "quote": "About 6.0 g of the powdered sample were weighed and transferred into an alumina boat, placed in a quartz tube and into the midpoint of the furnace chamber."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "broad basal reflection (002) peak at 2θ = 25° (Fig. 6a); the text gives one value for the carbons produced at 900 °C from the various precursors",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "X-ray diffraction patterns of (a) graphite-like material produced at 900 °C from the various precursors"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "XRD_002_peak_2theta",
+     "value_num": 25,
+     "unit": "°",
+     "quote": "Initially, the as-prepared graphite-like material exhibits a basal reflection (002) peak at 2θ = 25° as illustrated in Figure 6a."
+    }
    ]
   },
   {
@@ -746,11 +817,6 @@
    "method": "improved graphene oxide synthesis (Marcano et al.) applied to the carbonized material",
    "quote": "The graphene oxide synthesis was carried out following the ‘improved graphene oxide synthesis’ as reported by Marcano et al.",
    "scale": null,
-   "yield": {
-    "value": 5.0,
-    "unit": "g",
-    "quote": "obtaining about 5.00 g of the GO products"
-   },
    "succeeded": true,
    "reagents": [
     {
@@ -868,7 +934,7 @@
     {
      "order": 2,
      "action": "wash",
-     "description": "Wash the product twice in succession with deionized water, 37% HCl and ethanol.",
+     "description": "Wash the product twice in succession with 200 mL of deionized water, 200 mL of 37% HCl and 200 mL of ethanol, each washing step followed by centrifugation (see step 3).",
      "quote": "the as-produced materials were washed twice repeatedly in 200 mL of deionized water, 200 mL of 37% HCl and 200 mL of ethanol, each step followed by centrifugation",
      "parameters": [
       {
@@ -893,7 +959,7 @@
     {
      "order": 3,
      "action": "centrifuge",
-     "description": "Centrifuge after each washing step.",
+     "description": "Centrifuge after each of the washing steps with water, HCl and ethanol (the article gives no speed or duration).",
      "quote": "the as-produced materials were washed twice repeatedly in 200 mL of deionized water, 200 mL of 37% HCl and 200 mL of ethanol, each step followed by centrifugation",
      "parameters": [],
      "equipment": [],
@@ -955,12 +1021,43 @@
      ]
     }
    ],
-   "characterizations": [],
-   "outcomes": [],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "diffraction peak at 2θ = 10.3° (Fig. 6b); the text calls it strong for the GO from the biomass carbons",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "(b) GO samples prepared from the as-produced graphite-like materials generated from the various precursors."
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectrum in Fig. 8a: bands labelled -OH, C=O, H2O and C-H (read on the figure)",
+     "instrument": "Thermo Nicolet, Nicolet 6700 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "resolution 4 cm−1; range 400 to 4000 cm−1; KBr pellet of 1 mg of sample in 200 mg of KBr; room temperature",
+     "quote": "Comparison of the FTIR spectra of the GOs (a–d) and rGOs (e–h) samples."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "GO_products_mass",
+     "value_text": "about 5.00 g of the GO products",
+     "quote": "dried overnight at room temperature, obtaining about 5.00 g of the GO products"
+    },
+    {
+     "property": "XRD_GO_peak",
+     "value_num": 10.3,
+     "unit": "°",
+     "value_text": "strong diffraction peak observed at 2θ = 10.3°",
+     "quote": "Therefore, the strong and weak diffraction peaks observed at 2θ = 10.3° (Figure 6b) signify GO formation due to chemical oxidation of the as-prepared graphite-like material and commercially-obtained graphite, respectively"
+    }
+   ],
    "missing_fields": [
     "oxidation_reagent_quantities",
     "oxidation_temperature_and_time",
     "centrifuge_speed"
+   ],
+   "not_stated": [
+    "yield"
    ]
   },
   {
@@ -995,8 +1092,31 @@
     }
    ],
    "succeeded": true,
-   "characterizations": [],
-   "outcomes": []
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "diffraction peak at 2θ = 10.3° (Fig. 6b); the text calls it strong for the GO from the biomass carbons",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "(b) GO samples prepared from the as-produced graphite-like materials generated from the various precursors."
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectrum in Fig. 8b: bands labelled -OH, C=O, H2O and C-H (read on the figure)",
+     "instrument": "Thermo Nicolet, Nicolet 6700 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "resolution 4 cm−1; range 400 to 4000 cm−1; KBr pellet of 1 mg of sample in 200 mg of KBr; room temperature",
+     "quote": "Comparison of the FTIR spectra of the GOs (a–d) and rGOs (e–h) samples."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "XRD_GO_peak",
+     "value_num": 10.3,
+     "unit": "°",
+     "value_text": "strong diffraction peak observed at 2θ = 10.3°",
+     "quote": "Therefore, the strong and weak diffraction peaks observed at 2θ = 10.3° (Figure 6b) signify GO formation due to chemical oxidation of the as-prepared graphite-like material and commercially-obtained graphite, respectively"
+    }
+   ]
   },
   {
    "label": "GO-EFB",
@@ -1030,8 +1150,31 @@
     }
    ],
    "succeeded": true,
-   "characterizations": [],
-   "outcomes": []
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "diffraction peak at 2θ = 10.3° (Fig. 6b); the text calls it strong for the GO from the biomass carbons",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "(b) GO samples prepared from the as-produced graphite-like materials generated from the various precursors."
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectrum in Fig. 8c: bands labelled -OH, C=O, H2O, C-H and C–O (read on the figure)",
+     "instrument": "Thermo Nicolet, Nicolet 6700 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "resolution 4 cm−1; range 400 to 4000 cm−1; KBr pellet of 1 mg of sample in 200 mg of KBr; room temperature",
+     "quote": "Comparison of the FTIR spectra of the GOs (a–d) and rGOs (e–h) samples."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "XRD_GO_peak",
+     "value_num": 10.3,
+     "unit": "°",
+     "value_text": "strong diffraction peak observed at 2θ = 10.3°",
+     "quote": "Therefore, the strong and weak diffraction peaks observed at 2θ = 10.3° (Figure 6b) signify GO formation due to chemical oxidation of the as-prepared graphite-like material and commercially-obtained graphite, respectively"
+    }
+   ]
   },
   {
    "label": "GO-CG",
@@ -1102,6 +1245,13 @@
      "instrument": "FEI Nova NanoSEM 230 field emission scanning electron microscope (FEI, Hillsboro, OR, USA)",
      "conditions": "magnification 80,000×",
      "quote": "On the other hand, in Figure 9d, porosities were reduced and left only flake-like carbon."
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectrum in Fig. 8d: bands labelled -OH, C=O, H2O, C-H and C–O (read on the figure); the article names this sample GOCG",
+     "instrument": "Thermo Nicolet, Nicolet 6700 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "resolution 4 cm−1; range 400 to 4000 cm−1; KBr pellet of 1 mg of sample in 200 mg of KBr; room temperature",
+     "quote": "Comparison of the FTIR spectra of the GOs (a–d) and rGOs (e–h) samples."
     }
    ],
    "outcomes": [
@@ -1147,6 +1297,12 @@
      "property": "N2_isotherm",
      "value_text": "feature similar to Type III isotherm (non-porous material)",
      "quote": "A similar feature is also observed for GOCG samples (Figure 12d)."
+    },
+    {
+     "property": "DTG_peak_temperatures",
+     "value_text": "79, 203 and 724 °C",
+     "from_figure": "Fig. 10d",
+     "quote": "TGA/DTG thermograms of the (a) rGOOPL, (b) rGOPKS, (c) rGOEFB and (d) GOCG samples."
     }
    ]
   },
@@ -1254,6 +1410,20 @@
      "instrument": "FEI Nova NanoSEM 230 field emission scanning electron microscope (FEI, Hillsboro, OR, USA)",
      "conditions": "magnification 80,000×",
      "quote": "It can be seen in Figure 9a–c that rGOOPL, rGOPKS and rGOEFB produced small pores and nanoball like-structure distributed heterogeneously."
+    },
+    {
+     "technique": "XRD",
+     "result": "pattern in Fig. 7; the text says the 10.3° peak disappeared after reduction and gives a broad peak at 2θ = 23 to 25° (23.6° and 25.3°) for the three non-commercial rGO without assigning a value to each sample",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "XRD patterns of rGO samples obtained after the low-temperature annealing reduction of the graphene oxides prepared using various precursors."
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectrum in Fig. 8e: bands labelled -OH, C=O, H2O and C-H (read on the figure)",
+     "instrument": "Thermo Nicolet, Nicolet 6700 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "resolution 4 cm−1; range 400 to 4000 cm−1; KBr pellet of 1 mg of sample in 200 mg of KBr; room temperature",
+     "quote": "Comparison of the FTIR spectra of the GOs (a–d) and rGOs (e–h) samples."
     }
    ],
    "outcomes": [
@@ -1304,6 +1474,12 @@
      "property": "morphology",
      "value_text": "small pores and nanoball like-structure distributed heterogeneously",
      "quote": "It can be seen in Figure 9a–c that rGOOPL, rGOPKS and rGOEFB produced small pores and nanoball like-structure distributed heterogeneously."
+    },
+    {
+     "property": "DTG_peak_temperatures",
+     "value_text": "102 °C",
+     "from_figure": "Fig. 10a",
+     "quote": "TGA/DTG thermograms of the (a) rGOOPL, (b) rGOPKS, (c) rGOEFB and (d) GOCG samples."
     }
    ],
    "missing_fields": [
@@ -1372,6 +1548,20 @@
      "instrument": "FEI Nova NanoSEM 230 field emission scanning electron microscope (FEI, Hillsboro, OR, USA)",
      "conditions": "magnification 80,000×",
      "quote": "It can be seen in Figure 9a–c that rGOOPL, rGOPKS and rGOEFB produced small pores and nanoball like-structure distributed heterogeneously."
+    },
+    {
+     "technique": "XRD",
+     "result": "pattern in Fig. 7; the text says the 10.3° peak disappeared after reduction and gives a broad peak at 2θ = 23 to 25° (23.6° and 25.3°) for the three non-commercial rGO without assigning a value to each sample",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "XRD patterns of rGO samples obtained after the low-temperature annealing reduction of the graphene oxides prepared using various precursors."
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectrum in Fig. 8f: bands labelled -OH, C=O, H2O and C-H (read on the figure)",
+     "instrument": "Thermo Nicolet, Nicolet 6700 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "resolution 4 cm−1; range 400 to 4000 cm−1; KBr pellet of 1 mg of sample in 200 mg of KBr; room temperature",
+     "quote": "Comparison of the FTIR spectra of the GOs (a–d) and rGOs (e–h) samples."
     }
    ],
    "outcomes": [
@@ -1422,6 +1612,12 @@
      "property": "morphology",
      "value_text": "small pores and nanoball like-structure distributed heterogeneously",
      "quote": "It can be seen in Figure 9a–c that rGOOPL, rGOPKS and rGOEFB produced small pores and nanoball like-structure distributed heterogeneously."
+    },
+    {
+     "property": "DTG_peak_temperatures",
+     "value_text": "116, 186, 248 and 370 °C",
+     "from_figure": "Fig. 10b",
+     "quote": "TGA/DTG thermograms of the (a) rGOOPL, (b) rGOPKS, (c) rGOEFB and (d) GOCG samples."
     }
    ]
   },
@@ -1484,6 +1680,20 @@
      "instrument": "FEI Nova NanoSEM 230 field emission scanning electron microscope (FEI, Hillsboro, OR, USA)",
      "conditions": "magnification 80,000×",
      "quote": "It can be seen in Figure 9a–c that rGOOPL, rGOPKS and rGOEFB produced small pores and nanoball like-structure distributed heterogeneously."
+    },
+    {
+     "technique": "XRD",
+     "result": "pattern in Fig. 7; the text says the 10.3° peak disappeared after reduction and gives a broad peak at 2θ = 23 to 25° (23.6° and 25.3°) for the three non-commercial rGO without assigning a value to each sample",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "XRD patterns of rGO samples obtained after the low-temperature annealing reduction of the graphene oxides prepared using various precursors."
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectrum in Fig. 8g: bands labelled -OH, C=O, H2O and C-H (read on the figure)",
+     "instrument": "Thermo Nicolet, Nicolet 6700 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "resolution 4 cm−1; range 400 to 4000 cm−1; KBr pellet of 1 mg of sample in 200 mg of KBr; room temperature",
+     "quote": "Comparison of the FTIR spectra of the GOs (a–d) and rGOs (e–h) samples."
     }
    ],
    "outcomes": [
@@ -1534,6 +1744,69 @@
      "property": "morphology",
      "value_text": "small pores and nanoball like-structure distributed heterogeneously",
      "quote": "It can be seen in Figure 9a–c that rGOOPL, rGOPKS and rGOEFB produced small pores and nanoball like-structure distributed heterogeneously."
+    },
+    {
+     "property": "DTG_peak_temperatures",
+     "value_text": "116, 183, 226 and 355 °C",
+     "from_figure": "Fig. 10c",
+     "quote": "TGA/DTG thermograms of the (a) rGOOPL, (b) rGOPKS, (c) rGOEFB and (d) GOCG samples."
+    }
+   ]
+  },
+  {
+   "label": "rGO-CG",
+   "parent": "rGO-OPL",
+   "material": {
+    "name": "reduced graphene oxide from commercial graphite (rGOCG)",
+    "formula": null,
+    "family": "materiau_2D",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The band at 3442 cm−1, which exist due the O–H stretching vibration in rGOCG, was weaker than O–H vibration in the FTIR spectra of the GOCG",
+   "variations": [
+    {
+     "parameter": "GO-OPL",
+     "value_text": "replaced by GO-CG",
+     "parent_value": "GO-OPL",
+     "quote": "rGO commercial graphite (rGOCG)"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "GO-CG",
+     "formula": null,
+     "role": "intermediate",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "The band at 3442 cm−1, which exist due the O–H stretching vibration in rGOCG, was weaker than O–H vibration in the FTIR spectra of the GOCG"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "pattern of rGOCG in Fig. 7; the text does not describe it (the 23.6° and 25.3° shift is stated for the non-commercial rGO only)",
+     "instrument": "powder X-ray diffractometer XRD-6000 (Shimadzu, Tokyo, Japan)",
+     "conditions": "room temperature; 5 to 40° (2θ); scanning rate 4° min−1",
+     "quote": "XRD patterns of rGO samples obtained after the low-temperature annealing reduction of the graphene oxides prepared using various precursors."
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectrum in Fig. 8h: bands labelled -OH, C=O, H2O and C-H (read on the figure); O–H band at 3442 cm−1 weaker than in GOCG",
+     "instrument": "Thermo Nicolet, Nicolet 6700 (Thermo Scientific, Waltham, MA, USA)",
+     "conditions": "resolution 4 cm−1; range 400 to 4000 cm−1; KBr pellet of 1 mg of sample in 200 mg of KBr; room temperature",
+     "quote": "The band at 3442 cm−1, which exist due the O–H stretching vibration in rGOCG, was weaker than O–H vibration in the FTIR spectra of the GOCG"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "FTIR_OH_stretch_band",
+     "value_num": 3442,
+     "unit": "cm−1",
+     "value_text": "weaker than O–H vibration in the FTIR spectra of the GOCG",
+     "quote": "The band at 3442 cm−1, which exist due the O–H stretching vibration in rGOCG, was weaker than O–H vibration in the FTIR spectra of the GOCG"
     }
    ]
   }
@@ -1596,7 +1869,10 @@
    "results_in": [
     "Fig. 3",
     "Fig. 4",
-    "Fig. 5"
+    "Fig. 5",
+    "Fig. 6a",
+    "Fig. 11a",
+    "Fig. 11b"
    ]
   },
   {
@@ -1656,7 +1932,10 @@
    "results_in": [
     "Fig. 3",
     "Fig. 4",
-    "Fig. 5"
+    "Fig. 5",
+    "Fig. 6a",
+    "Fig. 11c",
+    "Fig. 11d"
    ]
   },
   {
@@ -1719,15 +1998,28 @@
    ]
   },
   {
-   "sample": "GOCG (appelé rGOCG dans le résumé, le FTIR et le BET)",
+   "sample": "GOCG (étiquette des tableaux 1 et 2 et des figures 2, 9d, 10d, 12d)",
    "defined_in": "Results 3.1 à 3.6",
    "route": "GO-CG",
    "results_in": [
     "Table 1",
     "Table 2",
+    "Fig. 2",
+    "Fig. 6b",
+    "Fig. 8d",
     "Fig. 9d",
     "Fig. 10d",
     "Fig. 12d"
+   ]
+  },
+  {
+   "sample": "rGOCG (résumé, FTIR 3.3, Fig. 7, Fig. 8h)",
+   "defined_in": "Abstract; Results 3.3",
+   "route": "rGO-CG",
+   "results_in": [
+    "Fig. 7",
+    "Fig. 8h",
+    "Results 3.3"
    ]
   },
   {
@@ -1740,7 +2032,8 @@
     "Fig. 7",
     "Fig. 9a",
     "Fig. 10a",
-    "Fig. 12a"
+    "Fig. 12a",
+    "Fig. 8e"
    ]
   },
   {
@@ -1753,7 +2046,8 @@
     "Fig. 7",
     "Fig. 9b",
     "Fig. 10b",
-    "Fig. 12b"
+    "Fig. 12b",
+    "Fig. 8f"
    ]
   },
   {
@@ -1766,7 +2060,8 @@
     "Fig. 7",
     "Fig. 9c",
     "Fig. 10c",
-    "Fig. 12c"
+    "Fig. 12c",
+    "Fig. 8g"
    ]
   }
  ],
@@ -1785,12 +2080,12 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Le seul paramètre balayé est la température de carbonisation (400, 500, 600, 700, 800 et 900 °C, 3 h, 10 °C/min), uniquement pour les feuilles (OPL) et les coques (PKS), car les auteurs jugent leurs densités comparables à celles de EFB et du graphite commercial. Le rapport IG/ID de Raman sert de critère pour choisir la température optimale de formation du carbone graphitique, et le rendement en carbone mesure le prix de cette température. Les matériaux à 900 °C sont ensuite oxydés en GO puis réduits en rGO, et comparés au graphite commercial pour juger l'effet de la nature du précurseur."
+   "text": "Le seul paramètre balayé est la température de carbonisation (400, 500, 600, 700, 800 et 900 °C, 3 h, 10 °C/min), uniquement pour les feuilles (OPL) et les coques (PKS), car les auteurs jugent que OPL a une densité comparable à celle de EFB et PKS une densité comparable à celle du graphite commercial (appariement « respectively » de l'article). Le rapport IG/ID de Raman sert de critère pour choisir la température optimale de formation du carbone graphitique, et le rendement en carbone mesure le prix de cette température. Les matériaux à 900 °C sont ensuite oxydés en GO puis réduits en rGO, et comparés au graphite commercial pour juger l'effet de la nature du précurseur."
   },
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Branches de carbonisation : lues sur les figures 4 et 5 (valeurs approchées), le rendement en carbone passe de ≈ 37 % (OPL) et ≈ 33 % (PKS) à 400 °C à ≈ 27 % et ≈ 26 % à 900 °C, tandis que IG/ID passe d'environ 1,3 (OPL) et 1,7 (PKS) à 400 °C à environ 1,0 et 1,1 à 900 °C avec un minimum vers 800 °C, ce qui contredit l'idée du texte d'un rapport qui augmente avec la température (voir doutes). Branches de précurseur : après oxydation et réduction, les IG/ID de Raman sont de 1,06 (rGOOPL), 1,14 (rGOPKS) et 1,20 (rGOEFB), contre 1,16 pour le graphite commercial (GOCG), et les surfaces BET de 15, 114 et 117 m2/g contre 8 m2/g. Les rGO de PKS et EFB sont donc nettement plus poreux (diamètre de pore moyen de 3 nm, isothermes de type I) que ceux de OPL et du graphite (pores de 14 et 41 nm, type III)."
+   "text": "Branches de carbonisation : lues sur les figures 4 et 5 (valeurs approchées), le rendement en carbone passe de ≈ 37 % (OPL) et ≈ 33 % (PKS) à 400 °C à ≈ 27 % et ≈ 26 % à 900 °C, tandis que IG/ID passe d'environ 1,3 (OPL) et 1,7 (PKS) à 400 °C à environ 1,0 et 1,1 à 900 °C avec un minimum vers 800 °C, ce qui contredit l'idée du texte d'un rapport qui augmente avec la température (voir doutes). Branches de précurseur : après oxydation et réduction, les IG/ID de Raman sont de 1,06 (rGOOPL), 1,14 (rGOPKS) et 1,20 (rGOEFB), contre 1,16 pour le graphite commercial (GOCG), et les surfaces BET de 15, 114 et 117 m2/g contre 8 m2/g. Les rGO de PKS et EFB sont donc nettement plus poreux (diamètre de pore moyen de 3 nm, isothermes de type I) que ceux de OPL et du graphite (pores de 14 et 41 nm, type III). Le graphite commercial n'a de voie rGO-CG que pour ce que l'article étiquette rGOCG (FTIR et DRX) ; ses valeurs Raman, BET, ATG et MEB sont étiquetées GOCG (oxyde non réduit) et restent sur la voie GO-CG, ce qui mélange l'effet du précurseur et celui de la réduction."
   },
   {
    "type": "tendance_observee",
@@ -1801,13 +2096,13 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Après réduction à 300 °C sous azote, le pic DRX de GO à 2θ = 10,3° disparaît et un pic large apparaît vers 23-25° (23,6° et 25,3°) pour les trois rGO issus de biomasse, ce qui traduit la restauration d'un empilement graphitique ; le rGO issu du graphite commercial ne montre pas ce déplacement.",
+   "text": "Après réduction à 300 °C sous azote, le pic DRX de GO à 2θ = 10,3° disparaît et un pic large apparaît vers 23-25° (23,6° et 25,3°) ; le texte dit que ce déplacement est observé pour les trois rGO issus de biomasse (rGOOPL, rGOPKS, rGOEFB), ce qui traduit selon les auteurs la restauration d'un empilement graphitique. Le texte ne dit rien de rGOCG ; la Fig. 7 montre pour lui une bosse large vers 23-25° et une bosse vers 14°.",
    "quote": "This spectacular shift to elevated 2θ angles (23.6° and 25.3°), which is indicative of lattice d-spacing, was observed for all the non-commercial rGO (i.e., rGOOPL, rGOPKS, rGOEFB) samples."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Le matériau carbonisé à 900 °C à partir des différents précurseurs montre en DRX une réflexion de base (002) vers 2θ = 25° (figure 6a), et le GO correspondant un pic vers 10,3° : fort pour les GO issus des matériaux graphitiques de biomasse, faible pour le graphite commercial.",
+   "text": "Le matériau carbonisé à 900 °C à partir des différents précurseurs montre en DRX une réflexion de base (002) vers 2θ = 25° (figure 6a), et le GO correspondant un pic vers 10,3° (figure 6b). Le texte l'appelle « strong » pour les GO issus des matériaux de biomasse et « weak » pour le graphite commercial (« respectively »), mais la figure 6b montre le contraire : le texte et la figure se contredisent (voir limite_reproductibilité).",
    "quote": "Initially, the as-prepared graphite-like material exhibits a basal reflection (002) peak at 2θ = 25° as illustrated in Figure 6a."
   },
   {
@@ -1846,7 +2141,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "OPL-C900",
-   "text": "Hypothèse de chimiste : pendant la pyrolyse sous azote, la cellulose, l'hémicellulose et la lignine se décomposent en matières volatiles (eau, CO, CO2, goudrons) en laissant un carbone amorphe qui se réorganise en domaines de type graphite quand la température monte. La perte de masse en fonction de la température explique la baisse du rendement (≈ 37 % à 400 °C, ≈ 27 % à 900 °C pour OPL). Le minimum de IG/ID vers 800 °C observé sur la figure 4 est probablement lié à la croissance de domaines de carbone désordonné avant leur graphitisation, mais l'article ne le discute pas."
+   "text": "Hypothèse de chimiste : sous azote, l'hémicellulose (≈ 220–315 °C), la cellulose (≈ 315–400 °C) puis, lentement, la lignine (jusqu'à 900 °C) se dévolatilisent (eau, CO, CO2, goudrons) (Yang et al., Fuel 2007, 10.1016/j.fuel.2006.12.013). Le résidu est probablement un carbone non graphitable (« hard carbon ») dont les petits domaines aromatiques grossissent et s'ordonnent avec la température sans former de graphite : le pic (002) large vers 25° correspond à une distance d'environ 0,36 nm (calcul avec Cu Kα supposé) contre 0,335 nm pour le graphite (Franklin, Proc. R. Soc. A 1951, 10.1098/rspa.1951.0197). La baisse du rendement (≈ 37 % à 400 °C, ≈ 27 % à 900 °C pour OPL) suit probablement le départ continu des hétéroatomes (O, H). Dans ce régime de carbone désordonné, ID/IG augmente avec l'ordre (Ferrari et Robertson, Phys. Rev. B 2000, 10.1103/physrevb.61.14095) : la baisse de IG/ID de 400 à 800 °C sur la figure 4 serait donc compatible avec un ordonnancement progressif, alors que l'article y lit une graphitisation croissante."
   },
   {
    "type": "mecanisme_analyse",
@@ -1867,7 +2162,7 @@
   {
    "type": "securite_analyse",
    "route": "GO-OPL",
-   "text": "Le mélange H2SO4/H3PO4 concentré et le KMnO4 sont très corrosifs et oxydants ; KMnO4 ne doit pas entrer en contact avec des solvants organiques (éthanol, éther) avant d'avoir été détruit par H2O2, dont l'ajout dégage du gaz et de la chaleur. Le HCl à 37 % est corrosif et émet des vapeurs, et l'éther diéthylique est extrêmement inflammable et forme des peroxydes : travailler sous hotte, sans flamme. Le GO sec est une poudre fine à ne pas inhaler."
+   "text": "L'article dit que la méthode de Marcano « n'est pas exothermique » : c'est inexact. L'ajout du KMnO4 au mélange H2SO4/H3PO4 échauffe le milieu et la trempe sur glace avec H2O2 est exothermique et dégage de l'O2 ; l'avantage réel de la méthode est l'absence de NOx (pas de NaNO3) (Dreyer et al., Chem. Soc. Rev. 2010, 10.1039/B917103G). KMnO4 dans l'acide sulfurique concentré forme du Mn2O7, qui peut détoner au-delà d'environ 55 °C : ne pas dépasser la consigne de température et ajouter le KMnO4 par petites portions. Le mélange H2SO4/H3PO4 concentré et le KMnO4 sont très corrosifs et oxydants ; KMnO4 ne doit pas entrer en contact avec des solvants organiques (éthanol, éther) avant d'avoir été détruit par H2O2. Le HCl à 37 % est corrosif et émet des vapeurs ; s'il reste du MnO2 non réduit, il dégage du Cl2 : vérifier que la suspension n'est plus brune avant le lavage acide. L'éther diéthylique est extrêmement inflammable et forme des peroxydes : travailler sous hotte, sans flamme. Le GO sec est une poudre fine à ne pas inhaler."
   },
   {
    "type": "securite_analyse",
@@ -1878,6 +2173,42 @@
    "type": "securite_analyse",
    "route": "rGO-OPL",
    "text": "Le recuit à 300 °C sous azote d'un GO qui se décompose peut libérer brusquement CO2 et vapeur (exfoliation thermique) : ne pas charger une grande masse dans le tube et garder un débit d'azote suffisant. Les poudres de rGO très divisées doivent être manipulées avec protection respiratoire."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "FTIR (section 3.3, Fig. 8) : après le recuit, l'intensité des bandes des groupes oxygénés baisse nettement ; l'article attribue les bandes à 1628 cm−1 (C=O), vers 1640 cm−1 (eau), 1560 cm−1 (C–C conjugué), 1383 cm−1 (C–H) et 1039–1218 cm−1 sans les répartir par échantillon (valeur de groupe, non recopiée sur chaque voie). Seule la bande O–H à 3442 cm−1, plus faible pour rGOCG que pour GOCG, est rattachée à un échantillon (voie rGO-CG). Sur la Fig. 8, la bande C–O n'est étiquetée que pour GOEFB et GOCG.",
+   "quote": "The band at 1628 cm−1 was attributed to C=O stretching vibration."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "OPL-C900",
+   "text": "Les termes « graphite-like material » et « graphitization » sont impropres pour ce carbone : un carbone de biomasse porté à 900 °C est un carbone non graphitable (réseau réticulé, riche en oxygène) ; le pic (002) large vers 25° correspond à une distance d'environ 0,36 nm (calcul avec Cu Kα supposé, la longueur d'onde n'étant pas écrite) contre 0,335 nm pour le graphite (Franklin, Proc. R. Soc. A 1951, 10.1098/rspa.1951.0197). Le choix de 900 °C fondé sur une « formation de phase graphitique » n'est donc pas démontré, et le taux de cendres du carbone n'est pas mesuré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le critère IG/ID est lu à l'envers dans ce domaine : pour un carbone désordonné qui s'ordonne, ID/IG augmente avec l'ordre (Ferrari et Robertson, Phys. Rev. B 2000, 10.1103/physrevb.61.14095), donc lire un IG/ID plus haut comme un degré de graphitisation plus élevé est discutable. De plus, le texte et la figure 4 se contredisent : le texte parle de bandes plus prononcées et d'un IG/ID qui varie « presque linéairement » jusqu'à 800 °C, alors que la figure 4 (axe IG/ID) montre une baisse de 400 à 800 °C (OPL ≈ 1,3 à ≈ 0,96 ; PKS ≈ 1,7 à ≈ 1,0) puis une légère remontée à 900 °C ; un chimiste ne peut pas lire cette courbe comme une hausse de graphitisation. Le texte dit aussi que OPL est « toujours plus bas en ID/IG » que PKS, ce que la figure 4 contredit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le classement des rGO par IG/ID (rGOOPL 1,06 < rGOPKS 1,14 < rGOCG 1,16 < rGOEFB 1,20) repose sur des écarts de 0,06 à 0,14 sans répétition ni incertitude, dans un régime très désordonné où le rapport ne varie pas de façon monotone avec l'ordre (Ferrari et Robertson 2000) : il ne permet pas de classer. La conclusion « IG/ID plus élevé, surface plus élevée » est contredite par GOCG (IG/ID 1,16 pour 8 m2/g)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-CG",
+   "text": "Le graphite commercial est un témoin qui change deux variables : les tableaux 1 et 2 et les figures 9d, 10d et 12d portent sur GOCG (oxyde de graphène non réduit), alors que les échantillons de biomasse sont des rGO réduits à 300 °C. La comparaison de surface BET (8 contre 114–117 m2/g), de perte de masse en ATG et de IG/ID mélange donc l'effet du précurseur et celui de la réduction. Le résumé et la section FTIR parlent pourtant de « rGOCG » : l'article ne dit pas si le Raman, la BET, l'ATG et le MEB portent sur le GO ou sur le rGO du graphite ; seuls le FTIR et la DRX étiquetés rGOCG sont rattachés à la voie rGO-CG."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le texte (3.2) dit que le pic DRX à 2θ = 10,3° est « strong » pour les GO issus de biomasse et « weak » pour le graphite commercial (« respectively »), mais la figure 6b montre l'inverse : le pic de GOCG est de loin le plus intense, ceux de GOOPL, GOPKS et GOEFB sont faibles. La valeur du texte est gardée comme écrite ; un chimiste ne doit pas s'appuyer sur ce « fort/faible » sans revoir la figure. Sans analyse C/O ni épaisseur de feuillet (AFM), l'identité « oxyde de graphène » des produits de biomasse n'est pas établie non plus (Dreyer et al., Chem. Soc. Rev. 2010, 10.1039/B917103G)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-OPL",
+   "text": "Les « about 5.00 g of the GO products » ne sont rattachés à aucun précurseur ni à une masse de départ, et n'ont donc pas été portés en rendement. Un lot de carbonisation de 6,0 g à ≈ 27 % de rendement (lecture de la figure 5) donne ≈ 1,6 g de carbone, alors que 5,00 g de GO demandent au moins 2,5 g de carbone (fraction massique de carbone d'un GO ≈ 0,5 à 0,6) : il faut au moins deux lots de carbonisation, ce que l'article ne dit pas. La masse n'est pas non plus une masse sèche (séchage une nuit à température ambiante, après coagulation à l'éther)."
   }
  ],
  "method_sources": [
@@ -1907,19 +2238,19 @@
   },
   {
    "where": "OPL-C900 (voie de base) et sample_inventory",
-   "issue": "Le texte donne 6 températures de carbonisation pour OPL, PKS et EFB mais ne dit pas lequel des échantillons sert à la synthèse du GO. 900 °C est retenu parce que la légende de la figure 6a parle de « graphite-like material produced at 900 °C from the various precursors » et que le texte dit que les rapports convergent « optimalement à 900 °C ». Une autre lecture est que les GO utilisent d'autres températures."
+   "issue": "Le texte donne 6 températures de carbonisation pour OPL, PKS et EFB mais ne dit pas lequel des échantillons sert à la synthèse du GO. 900 °C est retenu parce que la légende de la figure 6a parle de « graphite-like material produced at 900 °C from the various precursors » et que le texte dit que les rapports convergent « optimalement à 900 °C ». Une autre lecture est que les GO utilisent d'autres températures. Les légendes de la Fig. 6 (« graphite-like material produced at 900 °C from the various precursors » en 6a ; « GO samples prepared from the as-produced graphite-like materials generated from the various precursors » en 6b) fondent ce choix ; elles sont citées dans les caractérisations DRX des carbones et des GO."
   },
   {
    "where": "EFB-C900",
    "issue": "EFB est dit chauffé aux six températures (Méthodes 2.2), mais seules OPL et PKS ont des résultats en fonction de la température (3.1 : « limited to oil palm leaves and palm kernel shell »). Seule la voie à 900 °C est créée pour EFB ; les autres températures sont dans l'inventaire sans voie."
   },
   {
-   "where": "GO-CG / rGOCG",
-   "issue": "Le résumé, le FTIR (3.3) et le BET (« rGOCG ») parlent de rGO issu du graphite commercial, alors que les tableaux 1 et 2 et les figures 9d, 10d et 12d le nomment GOCG (oxyde de graphène non réduit : « flake-like carbon »). L'article ne dit pas clairement si le GO du graphite a été réduit. Lecture littérale retenue : une seule voie GO-CG portant les rangées GOCG des tableaux ; aucune voie rGO-CG créée, faute de protocole ou de résultat distinct."
+   "where": "GO-CG / rGO-CG (GOCG ou rGOCG)",
+   "issue": "Le résumé, le FTIR (3.3), le BET (« rGOCG ») et la DRX (Fig. 7) parlent d'un rGO issu du graphite commercial, alors que les tableaux 1 et 2 et les figures 2, 9d, 10d et 12d le nomment GOCG (oxyde de graphène non réduit : « flake-like carbon »). L'article ne dit pas clairement si le Raman, la BET, l'ATG et le MEB portent sur le GO ou sur le rGO du graphite. Lecture retenue : les valeurs étiquetées GOCG restent sur la voie GO-CG ; la voie rGO-CG (branche de rGO-OPL, seul le précurseur GO-CG change) ne porte que ce qui est étiqueté rGOCG (FTIR 3.3 et Fig. 8h, DRX Fig. 7). L'étape de recuit de rGO-CG est héritée de rGO-OPL : la légende de la Fig. 7 parle de « graphene oxides prepared using various precursors », sans citer le graphite."
   },
   {
-   "where": "GO-OPL, rendement",
-   "issue": "« obtaining about 5.00 g of the GO products » n'est rattaché à aucun précurseur ni à une masse de départ. La valeur est portée par la voie de base GO-OPL, sans l'attribuer aux autres."
+   "where": "GO-OPL, masse de GO (« about 5.00 g »)",
+   "issue": "« obtaining about 5.00 g of the GO products » n'est rattaché à aucun précurseur ni à une masse de départ : précurseur et masse de départ non précisés. Il n'est donc pas porté en rendement ; il est gardé en texte (résultat GO_products_mass de GO-OPL, sans valeur numérique). Pour mémoire, ≈ 1,6 g de carbone attendu pour 6,0 g de biomasse à 27 % de rendement (lecture de la Fig. 5), ce qui est insuffisant pour 5,00 g de GO (au moins deux lots de carbonisation, non dit)."
   },
   {
    "where": "GO-OPL, protocole renvoyé à Marcano",
@@ -1935,7 +2266,19 @@
   },
   {
    "where": "Fig. 11, légende",
-   "issue": "Le panneau PKS@900 est étiqueté « (b) » sur l'image alors que la légende l'appelle (d). Les pics DTG annotés sur la figure (96, 392, 722 °C pour OPL@900 ; 74 et 728 °C pour PKS@900) sont lus sur l'image, sans autre citation que la légende."
+   "issue": "Le panneau PKS@900 est étiqueté « (b) » sur l'image alors que la légende l'appelle (d). Les pics DTG annotés sur la figure (96, 392, 722 °C pour OPL@900 ; 74 et 728 °C pour PKS@900) sont lus sur l'image, sans autre citation que la légende. Figures lues en plus à la correction : Fig. 6a/6b (DRX), Fig. 7 (DRX des rGO), Fig. 8 (étiquettes des bandes FTIR par échantillon), Fig. 10 et Fig. 11a/11c (pics DTG annotés) ; précision de lecture d'environ ± 5 °C sur les pics DTG."
+  },
+  {
+   "where": "GO-CG, GO-OPL, GO-PKS, GO-EFB (Fig. 6b), pic DRX à 10,3°",
+   "issue": "Contradiction texte/figure : le texte (3.2) dit « the strong and weak diffraction peaks observed at 2θ = 10.3° (Figure 6b) signify GO formation due to chemical oxidation of the as-prepared graphite-like material and commercially-obtained graphite, respectively » (pic fort pour les GO de biomasse, faible pour le graphite), mais la Fig. 6b montre le pic de GOCG de loin le plus intense et des pics faibles pour GOOPL, GOPKS et GOEFB (GOEFB un peu plus marqué). Valeur du texte conservée (« strong » pour les GO de biomasse, « weak » pour GOCG) ; la figure est signalée en limite_reproductibilité."
+  },
+  {
+   "where": "OPL-C900, PKS-C900, EFB-C900 (DRX Fig. 6a)",
+   "issue": "Le texte ne donne qu'une valeur, « (002) peak at 2θ = 25° », pour le matériau carbonisé à 900 °C ; elle est reprise pour les trois précurseurs. Sur la Fig. 6a, OPL@900 et EFB@900 ont leur maximum large près de la ligne pointillée à 25°, alors que PKS@900 montre un maximum plus proche de 22° (lecture approximative)."
+  },
+  {
+   "where": "rGO-OPL, rGO-PKS, rGO-EFB (DRX Fig. 7)",
+   "issue": "Le texte donne « 23.6° and 25.3° » pour les trois rGO de biomasse sans dire lequel va à quel échantillon : aucune valeur n'est attribuée par échantillon (annotation tendance_observee de groupe). Pour rGOCG, le texte ne dit rien ; la Fig. 7 montre une bosse large vers 23-25° et une bosse vers 14°."
   }
  ]
 }
