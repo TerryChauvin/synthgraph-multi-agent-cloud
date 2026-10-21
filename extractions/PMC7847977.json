@@ -378,7 +378,7 @@
     "formula": "Li7La3Zr2O12",
     "family": "oxyde",
     "phase": "cubic LLZO + La2Zr2O7",
-    "morphology": "particules agglomérées de taille micrométrique (hypothèse des auteurs)"
+    "morphology": null
    },
    "quote": "the brown precursor was calcined at various temperatures such as 600, 800, and 1,000°C for 6.5 h in air to obtain cubic phase Al-doped LLZO nanoparticles and demonstrate the effect of temperature on the LLZO sol-gel synthesis.",
    "variations": [
@@ -437,7 +437,7 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "poly(ethylene oxide) (PEO)",
+     "name": "poly(ethylene oxide) (PEO), MW = 4 × 10^5 (écrit « 4 × 105 g », exposant aplati)",
      "formula": null,
      "role": "polymer",
      "amount_text": "molar ratio PEO:LiTFSI 18:1",
@@ -704,7 +704,7 @@
      "technique": "LSV",
      "result": "courant stable jusqu'à 5,0 V ; pic d'oxydation vers 5,3 V",
      "instrument": null,
-     "conditions": "électrode de référence en lithium, électrode de travail en acier inoxydable, 3 V à 6 V, 1 mV s−1",
+     "conditions": "électrode de référence en lithium, électrode de travail en acier inoxydable, 3 V à 6 V, 1 mV s−1, 60 °C (légende de la Fig. S4)",
      "quote": "The cell was tested with the potential range of 3 V ~ 6 V at a scan rate of 1 mV s−1."
     }
    ],
@@ -790,6 +790,50 @@
      "value_num": 0.02,
      "unit": "V",
      "from_figure": "Fig. 4D"
+    },
+    {
+     "property": "Li_ion_conductivity_25C_TableS3",
+     "value_text": "6.34 ×10-6",
+     "unit": "S cm−1",
+     "quote": "Temperature (oC) | 25 | 40 | 60 | 80 | Electrolyte | Thickness (µm) | R | σ | R | σ | R | σ | R | σ | PL | 100 | 1698.0 | 2.95 ×10-6 | 799.3 | 6.26 ×10-6 | 175.9 | 2.84 ×10-5 | 97.8 | 5.15 ×10-5 | PLL | 100 | 788.6 | 6.34 ×10-6 | 294.7 | 1.70 ×10-5 | 71.2 | 7.02 ×10-5 | 29.4 | 1.70 ×10-4"
+    },
+    {
+     "property": "Li_ion_conductivity_40C_TableS3",
+     "value_text": "1.70 ×10-5",
+     "unit": "S cm−1",
+     "quote": "Temperature (oC) | 25 | 40 | 60 | 80 | Electrolyte | Thickness (µm) | R | σ | R | σ | R | σ | R | σ | PL | 100 | 1698.0 | 2.95 ×10-6 | 799.3 | 6.26 ×10-6 | 175.9 | 2.84 ×10-5 | 97.8 | 5.15 ×10-5 | PLL | 100 | 788.6 | 6.34 ×10-6 | 294.7 | 1.70 ×10-5 | 71.2 | 7.02 ×10-5 | 29.4 | 1.70 ×10-4"
+    },
+    {
+     "property": "Li_ion_conductivity_60C_TableS3",
+     "value_text": "7.02 ×10-5",
+     "unit": "S cm−1",
+     "quote": "Temperature (oC) | 25 | 40 | 60 | 80 | Electrolyte | Thickness (µm) | R | σ | R | σ | R | σ | R | σ | PL | 100 | 1698.0 | 2.95 ×10-6 | 799.3 | 6.26 ×10-6 | 175.9 | 2.84 ×10-5 | 97.8 | 5.15 ×10-5 | PLL | 100 | 788.6 | 6.34 ×10-6 | 294.7 | 1.70 ×10-5 | 71.2 | 7.02 ×10-5 | 29.4 | 1.70 ×10-4"
+    },
+    {
+     "property": "Li_ion_conductivity_80C_TableS3",
+     "value_text": "1.70 ×10-4",
+     "unit": "S cm−1",
+     "quote": "Temperature (oC) | 25 | 40 | 60 | 80 | Electrolyte | Thickness (µm) | R | σ | R | σ | R | σ | R | σ | PL | 100 | 1698.0 | 2.95 ×10-6 | 799.3 | 6.26 ×10-6 | 175.9 | 2.84 ×10-5 | 97.8 | 5.15 ×10-5 | PLL | 100 | 788.6 | 6.34 ×10-6 | 294.7 | 1.70 ×10-5 | 71.2 | 7.02 ×10-5 | 29.4 | 1.70 ×10-4"
+    },
+    {
+     "property": "electrolyte_resistance_25C_Table1",
+     "value_num": 165.3,
+     "quote": "Temperature (°C) | 25 | 40 | 60 | 80 Electrolyte | Thickness (μm) | R | σ | R | σ | R | σ | R | σ PL | 90 | 200.2 | 2.25 × 10−5 | 120.2 | 3.74 × 10−5 | 37 | 1.21 × 10−4 | 15.4 | 2.92 × 10−4 PLL | 100 | 165.3 | 3.02 × 10−5 | 62.5 | 8 × 10−5 | 24.5 | 2.04 × 10−4 | 7.3 | 6.85 × 10−4"
+    },
+    {
+     "property": "electrolyte_resistance_40C_Table1",
+     "value_num": 62.5,
+     "quote": "Temperature (°C) | 25 | 40 | 60 | 80 Electrolyte | Thickness (μm) | R | σ | R | σ | R | σ | R | σ PL | 90 | 200.2 | 2.25 × 10−5 | 120.2 | 3.74 × 10−5 | 37 | 1.21 × 10−4 | 15.4 | 2.92 × 10−4 PLL | 100 | 165.3 | 3.02 × 10−5 | 62.5 | 8 × 10−5 | 24.5 | 2.04 × 10−4 | 7.3 | 6.85 × 10−4"
+    },
+    {
+     "property": "electrolyte_resistance_60C_Table1",
+     "value_num": 24.5,
+     "quote": "Temperature (°C) | 25 | 40 | 60 | 80 Electrolyte | Thickness (μm) | R | σ | R | σ | R | σ | R | σ PL | 90 | 200.2 | 2.25 × 10−5 | 120.2 | 3.74 × 10−5 | 37 | 1.21 × 10−4 | 15.4 | 2.92 × 10−4 PLL | 100 | 165.3 | 3.02 × 10−5 | 62.5 | 8 × 10−5 | 24.5 | 2.04 × 10−4 | 7.3 | 6.85 × 10−4"
+    },
+    {
+     "property": "electrolyte_resistance_80C_Table1",
+     "value_num": 7.3,
+     "quote": "Temperature (°C) | 25 | 40 | 60 | 80 Electrolyte | Thickness (μm) | R | σ | R | σ | R | σ | R | σ PL | 90 | 200.2 | 2.25 × 10−5 | 120.2 | 3.74 × 10−5 | 37 | 1.21 × 10−4 | 15.4 | 2.92 × 10−4 PLL | 100 | 165.3 | 3.02 × 10−5 | 62.5 | 8 × 10−5 | 24.5 | 2.04 × 10−4 | 7.3 | 6.85 × 10−4"
     }
    ],
    "missing_fields": [
@@ -866,6 +910,35 @@
     },
     {
      "order": 3,
+     "action": "sonicate",
+     "description": "Sonication d'1 h à forte puissance, reprise par le renvoi « same method » (sans LLZO à disperser, son utilité est incertaine).",
+     "quote": "PL (without LLZO) was also obtained using the same method.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The mixture was sonicated for 1 h using an ultrasonic machine at high power to improve the dispersion of LLZO.",
+       "value_num": 1,
+       "unit": "h"
+      },
+      {
+       "name": "power",
+       "quote": "The mixture was sonicated for 1 h using an ultrasonic machine at high power to improve the dispersion of LLZO.",
+       "value_text": "high power"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonic machine",
+       "detail": null,
+       "quote": "The mixture was sonicated for 1 h using an ultrasonic machine at high power to improve the dispersion of LLZO."
+      }
+     ],
+     "not_stated": [
+      "frequency"
+     ]
+    },
+    {
+     "order": 4,
      "action": "stir",
      "description": "Agitation de la suspension toute la nuit dans la boîte à gants.",
      "quote": "The homogeneous slurry was continuously stirred overnight inside the glove box.",
@@ -889,7 +962,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "deposit",
      "description": "Enduction humide de la suspension sur une plaque de Téflon.",
      "quote": "Subsequently, the electrolyte membrane was gained by wet coating the final slurry on a Teflon plate and drying at 45°C in a vacuum oven for 24 h to evaporate the acetonitrile.",
@@ -907,7 +980,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "dry",
      "description": "Séchage à 45 °C pendant 24 h en étuve sous vide pour évaporer l'acétonitrile.",
      "quote": "Subsequently, the electrolyte membrane was gained by wet coating the final slurry on a Teflon plate and drying at 45°C in a vacuum oven for 24 h to evaporate the acetonitrile.",
@@ -942,7 +1015,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "store",
      "description": "Conservation des membranes en boîte à gants pendant 12 h avant montage des cellules.",
      "quote": "They were then stored in a glove box for 12 h before being used to assemble the cell for electrochemical analysis.",
@@ -985,6 +1058,13 @@
      "instrument": "LANHE CT2001A battery testing system",
      "conditions": "0,3 et 0,5 mA cm−2, 60 °C",
      "quote": "The coin cells with symmetric lithium metal as electrodes and PL or PLL as electrolytes were charged and discharged at various current densities ranging from 0.1 to 0.5 mA cm−2 at 60°C."
+    },
+    {
+     "technique": "LSV",
+     "result": "courant stable jusqu'à 5,0 V ; pic d'oxydation vers 5,1 V",
+     "instrument": null,
+     "conditions": "électrode de référence en lithium, électrode de travail en acier inoxydable, 3 V à 6 V, 1 mV s−1, 60 °C (légende de la Fig. S4)",
+     "quote": "From the linear plot result, the oxidation peak of PLL and PL presents around 5.3 and 5.1 V, respectively."
     }
    ],
    "outcomes": [
@@ -1045,7 +1125,7 @@
     {
      "property": "stripping_plating_voltage_window_0.3_mA_cm-2_first_120_cycles",
      "quote": "For the first 120 cycles, the voltage windows range from −1.6 to 1.6 V which is more than double compared to that of the cell with the PLL electrolyte.",
-     "value_text": "−1,6 à 1,6 V (texte) ; critique après 120 cycles"
+     "value_text": "−1,6 à 1,6 V pendant les 120 premiers cycles"
     },
     {
      "property": "stripping_plating_voltage_window_0.5_mA_cm-2",
@@ -1058,6 +1138,50 @@
      "value_num": 0.2,
      "unit": "V",
      "from_figure": "Fig. 4A"
+    },
+    {
+     "property": "Li_ion_conductivity_25C_TableS3",
+     "value_text": "2.95 ×10-6",
+     "unit": "S cm−1",
+     "quote": "Temperature (oC) | 25 | 40 | 60 | 80 | Electrolyte | Thickness (µm) | R | σ | R | σ | R | σ | R | σ | PL | 100 | 1698.0 | 2.95 ×10-6 | 799.3 | 6.26 ×10-6 | 175.9 | 2.84 ×10-5 | 97.8 | 5.15 ×10-5"
+    },
+    {
+     "property": "Li_ion_conductivity_40C_TableS3",
+     "value_text": "6.26 ×10-6",
+     "unit": "S cm−1",
+     "quote": "Temperature (oC) | 25 | 40 | 60 | 80 | Electrolyte | Thickness (µm) | R | σ | R | σ | R | σ | R | σ | PL | 100 | 1698.0 | 2.95 ×10-6 | 799.3 | 6.26 ×10-6 | 175.9 | 2.84 ×10-5 | 97.8 | 5.15 ×10-5"
+    },
+    {
+     "property": "Li_ion_conductivity_60C_TableS3",
+     "value_text": "2.84 ×10-5",
+     "unit": "S cm−1",
+     "quote": "Temperature (oC) | 25 | 40 | 60 | 80 | Electrolyte | Thickness (µm) | R | σ | R | σ | R | σ | R | σ | PL | 100 | 1698.0 | 2.95 ×10-6 | 799.3 | 6.26 ×10-6 | 175.9 | 2.84 ×10-5 | 97.8 | 5.15 ×10-5"
+    },
+    {
+     "property": "Li_ion_conductivity_80C_TableS3",
+     "value_text": "5.15 ×10-5",
+     "unit": "S cm−1",
+     "quote": "Temperature (oC) | 25 | 40 | 60 | 80 | Electrolyte | Thickness (µm) | R | σ | R | σ | R | σ | R | σ | PL | 100 | 1698.0 | 2.95 ×10-6 | 799.3 | 6.26 ×10-6 | 175.9 | 2.84 ×10-5 | 97.8 | 5.15 ×10-5"
+    },
+    {
+     "property": "electrolyte_resistance_25C_Table1",
+     "value_num": 200.2,
+     "quote": "Temperature (°C) | 25 | 40 | 60 | 80 Electrolyte | Thickness (μm) | R | σ | R | σ | R | σ | R | σ PL | 90 | 200.2 | 2.25 × 10−5 | 120.2 | 3.74 × 10−5 | 37 | 1.21 × 10−4 | 15.4 | 2.92 × 10−4 PLL | 100 | 165.3 | 3.02 × 10−5 | 62.5 | 8 × 10−5 | 24.5 | 2.04 × 10−4 | 7.3 | 6.85 × 10−4"
+    },
+    {
+     "property": "electrolyte_resistance_40C_Table1",
+     "value_num": 120.2,
+     "quote": "Temperature (°C) | 25 | 40 | 60 | 80 Electrolyte | Thickness (μm) | R | σ | R | σ | R | σ | R | σ PL | 90 | 200.2 | 2.25 × 10−5 | 120.2 | 3.74 × 10−5 | 37 | 1.21 × 10−4 | 15.4 | 2.92 × 10−4 PLL | 100 | 165.3 | 3.02 × 10−5 | 62.5 | 8 × 10−5 | 24.5 | 2.04 × 10−4 | 7.3 | 6.85 × 10−4"
+    },
+    {
+     "property": "electrolyte_resistance_60C_Table1",
+     "value_num": 37,
+     "quote": "Temperature (°C) | 25 | 40 | 60 | 80 Electrolyte | Thickness (μm) | R | σ | R | σ | R | σ | R | σ PL | 90 | 200.2 | 2.25 × 10−5 | 120.2 | 3.74 × 10−5 | 37 | 1.21 × 10−4 | 15.4 | 2.92 × 10−4 PLL | 100 | 165.3 | 3.02 × 10−5 | 62.5 | 8 × 10−5 | 24.5 | 2.04 × 10−4 | 7.3 | 6.85 × 10−4"
+    },
+    {
+     "property": "electrolyte_resistance_80C_Table1",
+     "value_num": 15.4,
+     "quote": "Temperature (°C) | 25 | 40 | 60 | 80 Electrolyte | Thickness (μm) | R | σ | R | σ | R | σ | R | σ PL | 90 | 200.2 | 2.25 × 10−5 | 120.2 | 3.74 × 10−5 | 37 | 1.21 × 10−4 | 15.4 | 2.92 × 10−4 PLL | 100 | 165.3 | 3.02 × 10−5 | 62.5 | 8 × 10−5 | 24.5 | 2.04 × 10−4 | 7.3 | 6.85 × 10−4"
     }
    ]
   },
@@ -1344,10 +1468,16 @@
      "quote": "then gradually increased to the maximal point of 156.6 mAh g−1 at the fourth cycle",
      "value_num": 156.6,
      "unit": "mAh g−1"
+    },
+    {
+     "property": "cycling_voltage_window_from_figure",
+     "value_text": "2,5 à 4,2 V",
+     "unit": "V",
+     "from_figure": "Fig. 5B/5D",
+     "quote": "Figure 5 (A) Long cycle performances of the PLL and PL electrolytes in full-cell tests (LiFePO4/PLL/Li and LiFePO4/PL/Li) at 50 mA g−1 current density and 60°C for 100 cycles. (B) Galvanostatic charge-discharge profiles of the batteries with the PLL and PL electrolytes at the 25th cycle derived from (A). (C) Rate capability of the battery with the PLL electrolyte with the current density ranging from 10 to 200 mA g−1. (D) Galvanostatic charge-discharge profiles of the battery with the PLL electrolytes for the rate capability test at the first cycle of each current density derived from (C)."
     }
    ],
    "missing_fields": [
-    "voltage_window",
     "cell_type_details",
     "electrolyte_membrane_diameter",
     "yield"
@@ -1409,6 +1539,13 @@
      "quote": "This is also consistent with the high polarization value of the cell with the PL electrolyte, which is 161 mV.",
      "value_num": 161,
      "unit": "mV"
+    },
+    {
+     "property": "cycling_voltage_window_from_figure",
+     "value_text": "2,5 à 4,2 V",
+     "unit": "V",
+     "from_figure": "Fig. 5B",
+     "quote": "Figure 5 (A) Long cycle performances of the PLL and PL electrolytes in full-cell tests (LiFePO4/PLL/Li and LiFePO4/PL/Li) at 50 mA g−1 current density and 60°C for 100 cycles. (B) Galvanostatic charge-discharge profiles of the batteries with the PLL and PL electrolytes at the 25th cycle derived from (A)."
     }
    ]
   }
@@ -1438,7 +1575,7 @@
   {
    "type": "tendance_observee",
    "route": "LLZO-800",
-   "text": "Selon les auteurs, une température trop basse laisse du carbonate de lithium non décomposé, une température trop haute fait évaporer le lithium et forme La2Zr2O7 ; la fenêtre étroite autour de 800 °C donne le LLZO cubique.",
+   "text": "Selon les auteurs, une température trop basse laisse du carbonate de lithium non décomposé et une température trop haute fait évaporer le lithium et forme La2Zr2O7 ; parmi les trois températures testées (600, 800 et 1 000 °C), seule 800 °C donne le grenat cubique sans impureté.",
    "quote": "This could be explained by the loss of lithium by evaporation of the alkali metal at elevated temperatures."
   },
   {
@@ -1456,12 +1593,12 @@
   {
    "type": "limite_reproductibilite",
    "route": "PLL",
-   "text": "Les masses de PEO, de LiTFSI, de liquide ionique et de LLZO ne sont pas données (seulement un rapport molaire 18:1, et 10 wt% ou 10 %, sans base de référence), ni le volume d'acétonitrile, ni la température de calcination du LLZO employé dans la membrane. La présence du liquide ionique et de la sonication dans PL est impliquée mais non écrite."
+   "text": "Les masses de PEO, de LiTFSI, de liquide ionique et de LLZO ne sont pas données (seulement un rapport molaire 18:1, et 10 wt% ou 10 %, sans base de référence), ni le volume d'acétonitrile, ni la température de calcination du LLZO employé dans la membrane. Dans PL, le liquide ionique et la sonication sont repris par « same method » (sans LLZO à disperser, l'utilité de la sonication est incertaine)."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Cell_Li_PLL_LFP",
-   "text": "Le collecteur de courant, le solvant et le séchage de la cathode, la fenêtre de tension de cyclage, le diamètre de la membrane et la pression de sertissage ne sont pas donnés. Les Figures S1 à S4 du matériel complémentaire sont décrites par leur légende seulement (images absentes du texte) ; les valeurs numériques de l'article proviennent du texte et des Tables S1 à S3."
+   "text": "Le collecteur de courant, le solvant et le séchage de la cathode, le diamètre de la membrane et la pression de sertissage ne sont pas donnés. Les Figures S1 à S4 du matériel complémentaire sont décrites par leur légende seulement (images absentes du texte) ; les valeurs numériques de l'article proviennent du texte et des Tables S1 à S3. La fenêtre de cyclage n'est écrite nulle part dans le texte ; elle se lit sur les axes des Fig. 5B et 5D (≈ 2,5 à 4,2 V)."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1472,12 +1609,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "LLZO-800",
-   "text": "Probablement, l'acide citrique complexe La3+, ZrO2+ et Li+ dans le sol puis forme un gel polymérisé ; le séchage à 250 °C décompose partiellement nitrates et citrates en un précurseur brun amorphe, et la calcination à l'air brûle le carbone résiduel et fait cristalliser la phase grenat. L'excès de 10 % de lithium compense la volatilisation du lithium à haute température. On attend que l'aluminium vienne de la nacelle d'alumine, qui stabilise la phase cubique."
+   "text": "Hypothèse : l'acide citrique chélate La3+, ZrO2+ et Li+ dans le sol, qui donne un gel citrate-nitrate (sans éthylène glycol, pas de vraie polyestérification de Pechini) ; le séchage à 250 °C décompose partiellement nitrates et citrates en un précurseur brun amorphe, et la calcination à l'air brûle le carbone résiduel et fait cristalliser le grenat. L'excès de 10 % de lithium compense sa volatilisation à haute température. L'origine de la phase cubique (aluminium de la nacelle d'alumine, ou cubique de basse température protoné/carbonaté) n'est pas établie."
   },
   {
    "type": "mecanisme_analyse",
    "route": "PLL",
-   "text": "On attend que le PEO solvate les ions Li+ du LiTFSI, que le liquide ionique plastifie la matrice et réduise sa cristallinité, et que la charge de LLZO ajoute des surfaces de conduction et un obstacle mécanique à la croissance des dendrites ; la baisse de l'énergie d'activation de 0,35 à 0,25 eV irait dans ce sens."
+   "text": "Hypothèse : le PEO solvate les ions Li+ du LiTFSI ; le liquide ionique plastifie la matrice (il ne la réticule pas) et réduit sa cristallinité ; à 10 % en masse, la charge de LLZO (≈ 3 % en volume) n'atteint pas le seuil de percolation, donc son effet passe plutôt par l'interface et la baisse de cristallinité du PEO. La baisse de l'énergie d'activation annoncée par les auteurs ne se retrouve pas dans leurs tableaux."
   },
   {
    "type": "securite_auteurs",
@@ -1488,7 +1625,42 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le séchage des nitrates et du citrate à 250 °C libère des oxydes d'azote (NOx) et se fait sous hotte ; l'acétonitrile est inflammable et toxique, le lithium métallique réagit vivement avec l'eau et le LiTFSI est irritant. Les nanopoudres de LLZO ne doivent pas être inhalées, et les piles tout solide à lithium métal peuvent s'échauffer en cas de court-circuit par dendrites, risque que l'article évoque lui-même."
+   "text": "Le séchage des nitrates et du citrate à 250 °C libère des oxydes d'azote (NOx) et se fait sous hotte ; l'acétonitrile est inflammable et toxique, le lithium métallique réagit vivement avec l'eau et le LiTFSI est irritant. Les nanopoudres de LLZO ne doivent pas être inhalées, et les piles tout solide à lithium métal peuvent s'échauffer en cas de court-circuit par dendrites, risque que l'article évoque lui-même. Le gel nitrates/acide citrique est riche en combustible (rapport combustible/oxydant ≈ 1,36 par la méthode des valences, Jain et al. 1981, 10.1016/0010-2180(81)90111-5) : séché à 250 °C, il peut s'auto-enflammer (récipient large, quantité limitée)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LLZO-800",
+   "text": "Les « D average » de la Table S1 pour 800 et 1 000 °C (30,9 et 42,16 nm) ne sont pas les moyennes des tailles listées (26,7 nm sur les sept pics, 39,1 nm sur les huit) : elles correspondent aux seuls trois premiers pics, et la liste à 1 000 °C inclut un pic de La2Zr2O7. La taille décroît régulièrement avec 2θ, signe d'un élargissement non corrigé ; les valeurs extraites restent celles de l'article, à lire comme des ordres de grandeur."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PL",
+   "text": "Le texte donne une fenêtre de −1,6 à 1,6 V pour Li/PL/Li à 0,3 mA cm−2, mais la Fig. 4A montre environ ±0,16 V au début et ±0,23 V vers 200 h, et « more than double » de ±0,07 V (PLL) n'est cohérent qu'avec ≈ ±0,16 V ; la résistance de la Table S3 prévoit ≈ 0,11 V. Coquille très probable (1,6 pour 0,16) : la valeur du texte est extraite telle quelle, ne pas la reprendre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PLL",
+   "text": "Le rapport molaire PEO:LiTFSI de 18:1 ne peut se lire qu'en EO:Li ; la masse molaire du PEO est écrite « 4 × 105 g » (exposant aplati, lire 4 × 10^5, unité probablement g mol−1). L'épaisseur de PL est de 90 µm en Table 1 mais de 100 µm en Table S3 et dans le texte : avec 100 µm, le gain de conductivité à 25 °C serait de 21 % et non d'environ 35 %."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PLL",
+   "text": "Une stabilité jusqu'à 5,0 V et un pic d'oxydation vers 5,1–5,3 V (mesure sur acier inoxydable à 1 mV s−1, critère de pic) dépassent nettement la fenêtre usuelle d'un PEO (oxydation dès ≈ 3,8–4,5 V) ; valeur sans conséquence pour LiFePO4 mais à ne pas reprendre pour une cathode à haute tension (Huo et al., InfoMat 2023, 10.1002/inf2.12394)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PLL",
+   "text": "Les énergies d'activation annoncées (0,35 eV pour PL, 0,25 eV pour PLL ; 0,26 et 0,13 eV pour la Table S3) ne se retrouvent pas : la pente de la Table S2 (−0,17631) donne 0,035 eV avec la formule de l'annexe (facteur 10), et la régression de log σ sur 1000/T des valeurs de la Table 1 donne −2,20 (PL) et −2,54 (PLL), soit ≈ 0,44 et ≈ 0,50 eV (≈ 0,50 et ≈ 0,55 eV avec la Table S3), donc une énergie plus élevée avec LLZO, à l'inverse de la conclusion des auteurs. L'ordre de grandeur attendu pour un PEO-LiTFSI est ≈ 0,5 eV (J. Electrochem. Soc. 2020, 10.1149/1945-7111/ab7fb8) ; les valeurs extraites sont celles de l'article, à ne pas reprendre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LLZO-800",
+   "text": "Le LLZO est dit « Al-doped » mais aucune source d'aluminium n'est introduite, la formule nominale reste Li7 (+10 %) et aucune analyse ne mesure Al ; un cubique non dopé à 800 °C n'est pas attendu (Thompson et al., J. Mater. Chem. A 2014, 10.1039/C4TA02099E), l'alternative la plus simple étant un cubique de basse température stabilisé par H+/Li+ et CO2 (Larraz et al., J. Mater. Chem. A 2013, 10.1039/c3ta11996c). L'identité chimique du produit n'est donc pas établie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LLZO-800",
+   "text": "Appelé « Pechini », le protocole n'a ni polyalcool (éthylène glycol) ni plus de 0,61 acide citrique par cation : c'est un sol-gel citrate-nitrate proche d'une auto-combustion, pas la polyestérification de Pechini (brevet US 3 330 697) ; les nitrates de La et de Zr sont hydratés à x non précisé, ce qui laisse le rapport 3:2 non garanti."
   }
  ],
  "method_sources": [
@@ -1544,7 +1716,7 @@
   },
   {
    "where": "PL, découpage et étapes",
-   "issue": "« PL (without LLZO) was also obtained using the same method » : PL est une voie fille de PLL avec ses propres étapes, sans ajout de LLZO ni sonication (réalisée pour disperser le LLZO). L'article ne dit pas explicitement que PL contient le liquide ionique ni qu'elle est sonifiée ; la lecture retenue est liquide ionique oui, sonication non."
+   "issue": "« PL (without LLZO) was also obtained using the same method » : PL est une voie fille de PLL avec ses propres étapes. « same method » couvre littéralement la sonication d'1 h : l'étape est reprise (citée par le renvoi ; durée et puissance prises dans la phrase de PLL), mais sans LLZO à disperser son utilité est incertaine. La présence du liquide ionique dans PL est aussi impliquée par « without LLZO », non écrite."
   },
   {
    "where": "PL, épaisseur et conductivité à 25 °C",
@@ -1556,7 +1728,7 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Figures ouvertes : Fig. 1 (XRD, MEB, rien de plus que le texte) et Fig. 4 (valeurs lues : amplitude d'environ 0,02 V pour PLL à 0,1 mA cm−2 sur la Fig. 4D, et d'environ 0,2 V pour PL à 0,3 mA cm−2 sur la Fig. 4A). Précision de lecture : environ un chiffre significatif."
+   "issue": "Figures ouvertes : Fig. 1 (XRD, MEB, rien de plus que le texte) et Fig. 4 (valeurs lues : amplitude d'environ 0,02 V pour PLL à 0,1 mA cm−2 sur la Fig. 4D, et d'environ 0,2 V pour PL à 0,3 mA cm−2 sur la Fig. 4A). Précision de lecture : environ un chiffre significatif. Fig. 5B et 5D ouvertes pour la fenêtre de cyclage (axes de 2,5 à 4,2 V)."
   },
   {
    "where": "Cell_Li_PLL_LFP, capacité à 200 mA g−1",
@@ -1569,6 +1741,26 @@
   {
    "where": "Texte, renvoi de figure",
    "issue": "Le texte renvoie l'ajustement d'Arrhenius à « Figure 2A » alors que la conductivité est en Fig. 3A ; aucune valeur extraite n'en dépend (énergies d'activation données dans le texte et la Table S2)."
+  },
+  {
+   "where": "LLZO-800 et LLZO-1000, Table S1 « D average »",
+   "issue": "Les moyennes imprimées (30,9 et 42,16 nm) ne sont pas les moyennes des tailles listées (26,7 et 39,1 nm) alors que les tailles par pic se recalculent par Scherrer ; seule la moyenne à 600 °C (11,9 nm) concorde. Valeurs de l'article conservées."
+  },
+  {
+   "where": "LLZO-1000, morphologie",
+   "issue": "La phrase sur les « agglomerated particles of micron size » vise les températures élevées en général, ne nomme pas 1 000 °C, et aucune image MEB n'existe pour cet échantillon ; la morphologie n'est donc pas renseignée. Les auteurs l'attribuent à une transformation cubique vers tétragonal que leur DRX à 1 000 °C (cubique + La2Zr2O7) ne montre pas."
+  },
+  {
+   "where": "Cell_Li_PLL_LFP et Cell_Li_PL_LFP, fenêtre de cyclage",
+   "issue": "Non écrite dans le texte ; 2,5 à 4,2 V est lu sur les axes des Fig. 5B et 5D (précision de lecture : ≈ 0,1 V)."
+  },
+  {
+   "where": "PL et PLL, énergies d'activation (texte, Tables S2 et S3)",
+   "issue": "Les 0,35/0,25 eV et 0,26/0,13 eV de l'article ne se recalculent pas à partir de ses tables (pente de la Table S2 convertie avec un facteur 10 de trop ; Tables 1 et S3 donnant ≈ 0,44/0,50 et ≈ 0,50/0,55 eV). Valeurs de l'article conservées."
+  },
+  {
+   "where": "PL et PLL, Table 1 et Table S3, unités",
+   "issue": "Les unités de R et de σ ne sont pas écrites dans les Tables 1 et S3 : σ est pris en S cm−1 (comme dans le texte), R est laissé sans unité (en ohms d'après les diagrammes de Nyquist de la Fig. 3B). La Table S3 donne 100 µm pour PL, la Table 1 90 µm."
   }
  ]
 }
