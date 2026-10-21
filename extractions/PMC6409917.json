@@ -25,7 +25,7 @@
    "reagents": [
     {
      "name": "zinc acetate dehydrate",
-     "formula": "Zn(CH3COO)2·2H2O",
+     "formula": null,
      "role": "precursor",
      "quote": "Briefly, 2.94 g zinc acetate dehydrate was added in an agate mortar and grinded for about 30 min.",
      "amount": 2.94,
@@ -40,7 +40,7 @@
     {
      "order": 1,
      "action": "grind",
-     "description": "Grind the zinc acetate dihydrate in an agate mortar.",
+     "description": "Grind the zinc acetate (written « zinc acetate dehydrate » in the article) in an agate mortar.",
      "quote": "Briefly, 2.94 g zinc acetate dehydrate was added in an agate mortar and grinded for about 30 min.",
      "parameters": [
       {
@@ -136,6 +136,27 @@
      "instrument": "UV–visible spectrophotometry (Shimadzu UV-2450); quartz tube; UV lamp Philips 18 W or sunlight",
      "conditions": "MB 1 × 10−5 mol/L, 50 mg photocatalyst in 100 mL, 30 min dark equilibration then illumination under stirring; 5 mL sampled at regular intervals",
      "quote": "Methylene blue (MB, 1 × 10−5 mol/L) photocatalytic degradation was typically conducted in a quartz tube under ultraviolet light (Philips, 18 W) or sunlight (place location: 120.76° in longitude, and 30.77° in latitude), and 50 mg of photocatalyst was dispersed in 100 mL of MB solution each time."
+    },
+    {
+     "technique": "XPS (O 1s)",
+     "result": "three O 1s peaks at around 532.4, 531.4 and 530 eV",
+     "instrument": "Thermo Scientific ESCALAB 250",
+     "conditions": "monochromatic Al Kα; binding energies calibrated on C 1s = 284.6 eV",
+     "quote": "The binding energy values at 532.5 eV, 531.5 eV, and 530.1 eV in O 1s spectra were observed in the heterostructured samples, while three peaks at around 532.4 eV, 531.4 eV and 530 eV existed in ZnO."
+    },
+    {
+     "technique": "PL",
+     "result": "broad violet emission (~380 nm) and narrow green-yellow band (~560 nm)",
+     "instrument": "Hitachi F-4500 fluorescence spectrometer",
+     "conditions": null,
+     "quote": "However, the PL results of ZnO and g-C3N4/ZnO showed emissions of broad violet (~380 nm) and narrow green-yellow bands (~560 nm)."
+    },
+    {
+     "technique": "UV–vis DRS",
+     "result": "absorption studied over 200–800 nm; reference for the red shift of the composites; band gap 3.07 eV (Figure 5c)",
+     "instrument": "UV-3101 PC Shimadzu",
+     "conditions": "room temperature; BaSO4 reference; 200–800 nm",
+     "quote": "DRS was performed to study the optical adsorption properties in the range of 200–800 nm for as-prepared ZnO nanorods, g-C3N4, and two distinct series of g-C3N4/ZnO composite (x:1, and x:1 CN) samples."
     }
    ],
    "outcomes": [
@@ -332,7 +353,7 @@
     "name": "g-C3N4/ZnO nanocomposite (x:1, x = 0.1), from ZnO nanorods and urea",
     "formula": null,
     "family": "composite",
-    "phase": "ZnO hexagonal with amorphous or highly dispersed g-C3N4 (no g-C3N4 peak)",
+    "phase": "g-C3N4 phase not detected by XRD (weight ratio not greater than 0.1:1)",
     "morphology": "ZnO nanorods wrapped (completely covered) with g-C3N4"
    },
    "method": "two-step in-situ calcination: ZnO nanorods ground with urea, then annealed at 550 °C",
@@ -372,7 +393,13 @@
      "action": "grind",
      "description": "Grind and mix the ZnO nanorods with urea.",
      "quote": "synthesized ZnO nanorods were grinded and mixed with various amounts of urea",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "g_c3n4_zno_weight_ratio",
+       "value_num": 0.1,
+       "quote": "the nanorods were completely covered with g-C3N4 even at a g-C3N4:ZnO ratio of 0.1:1"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "duration",
@@ -443,6 +470,20 @@
      "instrument": "UV–visible spectrophotometry (Shimadzu UV-2450); quartz tube; UV lamp Philips 18 W or sunlight",
      "conditions": "MB 1 × 10−5 mol/L, 50 mg photocatalyst in 100 mL, 30 min dark equilibration then illumination under stirring; 5 mL sampled at regular intervals",
      "quote": "Methylene blue (MB, 1 × 10−5 mol/L) photocatalytic degradation was typically conducted in a quartz tube under ultraviolet light (Philips, 18 W) or sunlight (place location: 120.76° in longitude, and 30.77° in latitude), and 50 mg of photocatalyst was dispersed in 100 mL of MB solution each time."
+    },
+    {
+     "technique": "XRD",
+     "result": "g-C3N4 phase not detected (weight ratio not greater than 0.1:1)",
+     "quote": "When using zinc acetate as the starting precursor, the g-C3N4 phase could not be detected until the g-C3N4 weight ratio in nanocomposite was greater than 0.1:1.",
+     "instrument": "German Bruker D8 Focus Powder",
+     "conditions": "Cu Kα radiation; scanning speed 4°/min"
+    },
+    {
+     "technique": "UV–vis DRS",
+     "result": "absorption edge red-shifted and absorption significantly enhanced between 380 and 800 nm compared with bare ZnO nanorods (all nanocomposites)",
+     "instrument": "UV-3101 PC Shimadzu",
+     "conditions": "room temperature; BaSO4 reference; 200–800 nm",
+     "quote": "Evidently, the absorption edges of all nanocomposites had red-shifted and demonstrated significantly enhanced absorption between 380 nm and 800 nm, when compared with that of bare ZnO nanorods."
     }
    ],
    "outcomes": [
@@ -480,15 +521,16 @@
     "name": "g-C3N4/ZnO nanocomposite (x:1, x = 0.05), from ZnO nanorods and urea",
     "formula": null,
     "family": "composite",
-    "phase": null,
+    "phase": "g-C3N4 phase not detected by XRD (weight ratio not greater than 0.1:1)",
     "morphology": null
    },
    "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method",
    "variations": [
     {
-     "parameter": "urea",
-     "value_text": "x = 0.05 (g-C3N4:ZnO weight ratio of x:1)",
-     "parent_value": "x = 0.1 (route 0.1:1)",
+     "parameter": "g_c3n4_zno_weight_ratio",
+     "step_order": 1,
+     "value_num": 0.05,
+     "parent_value": "0.1:1",
      "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method"
     }
    ],
@@ -508,6 +550,15 @@
      "from_figure": "Fig. 7b",
      "quote": "Figure 7 Degradation rate of methyl blue (MB) under ultraviolet (a,c) and sunlight (b,d) irradiation, kinetic linear simulation over 0.1:1 CN photocatalyst (e) and stability study of MB degradation over 0.1:1 CN."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "g-C3N4 phase not detected (weight ratio not greater than 0.1:1)",
+     "quote": "When using zinc acetate as the starting precursor, the g-C3N4 phase could not be detected until the g-C3N4 weight ratio in nanocomposite was greater than 0.1:1.",
+     "instrument": "German Bruker D8 Focus Powder",
+     "conditions": "Cu Kα radiation; scanning speed 4°/min"
+    }
    ]
   },
   {
@@ -517,15 +568,16 @@
     "name": "g-C3N4/ZnO nanocomposite (x:1, x = 0.2), from ZnO nanorods and urea",
     "formula": null,
     "family": "composite",
-    "phase": null,
+    "phase": "g-C3N4 phase detected by XRD (weight ratio greater than 0.1:1)",
     "morphology": null
    },
    "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method",
    "variations": [
     {
-     "parameter": "urea",
-     "value_text": "x = 0.2 (g-C3N4:ZnO weight ratio of x:1)",
-     "parent_value": "x = 0.1 (route 0.1:1)",
+     "parameter": "g_c3n4_zno_weight_ratio",
+     "step_order": 1,
+     "value_num": 0.2,
+     "parent_value": "0.1:1",
      "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method"
     }
    ],
@@ -545,6 +597,15 @@
      "from_figure": "Fig. 7b",
      "quote": "Figure 7 Degradation rate of methyl blue (MB) under ultraviolet (a,c) and sunlight (b,d) irradiation, kinetic linear simulation over 0.1:1 CN photocatalyst (e) and stability study of MB degradation over 0.1:1 CN."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "g-C3N4 phase detected (weight ratio greater than 0.1:1)",
+     "quote": "When using zinc acetate as the starting precursor, the g-C3N4 phase could not be detected until the g-C3N4 weight ratio in nanocomposite was greater than 0.1:1.",
+     "instrument": "German Bruker D8 Focus Powder",
+     "conditions": "Cu Kα radiation; scanning speed 4°/min"
+    }
    ]
   },
   {
@@ -554,15 +615,16 @@
     "name": "g-C3N4/ZnO nanocomposite (x:1, x = 0.3), from ZnO nanorods and urea",
     "formula": null,
     "family": "composite",
-    "phase": null,
+    "phase": "g-C3N4 phase detected by XRD (weight ratio greater than 0.1:1)",
     "morphology": null
    },
    "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method",
    "variations": [
     {
-     "parameter": "urea",
-     "value_text": "x = 0.3 (g-C3N4:ZnO weight ratio of x:1)",
-     "parent_value": "x = 0.1 (route 0.1:1)",
+     "parameter": "g_c3n4_zno_weight_ratio",
+     "step_order": 1,
+     "value_num": 0.3,
+     "parent_value": "0.1:1",
      "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method"
     }
    ],
@@ -582,6 +644,15 @@
      "from_figure": "Fig. 7b",
      "quote": "Figure 7 Degradation rate of methyl blue (MB) under ultraviolet (a,c) and sunlight (b,d) irradiation, kinetic linear simulation over 0.1:1 CN photocatalyst (e) and stability study of MB degradation over 0.1:1 CN."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "g-C3N4 phase detected (weight ratio greater than 0.1:1)",
+     "quote": "When using zinc acetate as the starting precursor, the g-C3N4 phase could not be detected until the g-C3N4 weight ratio in nanocomposite was greater than 0.1:1.",
+     "instrument": "German Bruker D8 Focus Powder",
+     "conditions": "Cu Kα radiation; scanning speed 4°/min"
+    }
    ]
   },
   {
@@ -593,7 +664,7 @@
     "name": "g-C3N4/ZnO nanocomposite (x:1 CN, x = 0.1), from g-C3N4 and zinc acetate",
     "formula": null,
     "family": "composite",
-    "phase": "ZnO with g-C3N4 not detected by XRD (ratio not above 0.1:1)",
+    "phase": "no evidence of g-C3N4 crystalline formation by XRD (Fig. 1b, whole x:1 CN series)",
     "morphology": "ZnO nanorods slightly covered with g-C3N4"
    },
    "method": "grinding of g-C3N4 powder with zinc acetate, then calcination at 350 °C",
@@ -616,7 +687,7 @@
     },
     {
      "name": "zinc acetate",
-     "formula": "Zn(CH3COO)2",
+     "formula": null,
      "role": "precursor",
      "quote": "The x:1 CN samples were obtained by grinding the necessary amounts of g-C3N4 powder mixed with zinc acetate in a quartz mortar.",
      "purity": "analytical grade",
@@ -633,7 +704,13 @@
      "action": "grind",
      "description": "Grind the g-C3N4 powder with zinc acetate in a quartz mortar.",
      "quote": "The x:1 CN samples were obtained by grinding the necessary amounts of g-C3N4 powder mixed with zinc acetate in a quartz mortar.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "g_c3n4_zno_weight_ratio",
+       "value_num": 0.1,
+       "quote": "SEM images depicted in Figure 2 are ZnO nanorods, g-C3N4/ZnO (0.1:1), and g-C3N4/ZnO (0.1:1 CN), respectively."
+      }
+     ],
      "equipment": [
       {
        "type": "quartz mortar",
@@ -737,6 +814,41 @@
      "instrument": "UV–visible spectrophotometry (Shimadzu UV-2450); quartz tube; UV lamp Philips 18 W or sunlight",
      "conditions": "MB 1 × 10−5 mol/L, 50 mg photocatalyst in 100 mL, 30 min dark equilibration then illumination under stirring; 5 mL sampled at regular intervals",
      "quote": "Methylene blue (MB, 1 × 10−5 mol/L) photocatalytic degradation was typically conducted in a quartz tube under ultraviolet light (Philips, 18 W) or sunlight (place location: 120.76° in longitude, and 30.77° in latitude), and 50 mg of photocatalyst was dispersed in 100 mL of MB solution each time."
+    },
+    {
+     "technique": "XRD",
+     "result": "no evidence of g-C3N4 crystalline formation even with increasing g-C3N4 content; ascribed by the authors to the high dispersion of g-C3N4",
+     "quote": "In contrast, there was no evidence of g-C3N4 crystalline formation, even with the increase of g-C3N4 content when using urea as the starting precursor, which can be ascribed to the high dispersion of g-C3N4.",
+     "instrument": "German Bruker D8 Focus Powder",
+     "conditions": "Cu Kα radiation; scanning speed 4°/min"
+    },
+    {
+     "technique": "XPS (O 1s)",
+     "result": "three O 1s peaks at 532.5, 531.5 and 530.1 eV in the heterostructured samples (ZnO: 532.4, 531.4, 530 eV)",
+     "instrument": "Thermo Scientific ESCALAB 250",
+     "conditions": "monochromatic Al Kα; binding energies calibrated on C 1s = 284.6 eV",
+     "quote": "The binding energy values at 532.5 eV, 531.5 eV, and 530.1 eV in O 1s spectra were observed in the heterostructured samples, while three peaks at around 532.4 eV, 531.4 eV and 530 eV existed in ZnO."
+    },
+    {
+     "technique": "PL",
+     "result": "broad violet (~380 nm) and narrow green-yellow (~560 nm) emission bands for ZnO and g-C3N4/ZnO",
+     "instrument": "Hitachi F-4500 fluorescence spectrometer",
+     "conditions": null,
+     "quote": "However, the PL results of ZnO and g-C3N4/ZnO showed emissions of broad violet (~380 nm) and narrow green-yellow bands (~560 nm)."
+    },
+    {
+     "technique": "UV–vis DRS",
+     "result": "absorption edge red-shifted and absorption significantly enhanced between 380 and 800 nm compared with bare ZnO nanorods (all nanocomposites)",
+     "instrument": "UV-3101 PC Shimadzu",
+     "conditions": "room temperature; BaSO4 reference; 200–800 nm",
+     "quote": "Evidently, the absorption edges of all nanocomposites had red-shifted and demonstrated significantly enhanced absorption between 380 nm and 800 nm, when compared with that of bare ZnO nanorods."
+    },
+    {
+     "technique": "stability test (regeneration between runs)",
+     "result": "between runs: suspension centrifuged, washed with deionized water several times, powder collected and dried in an oven in air at 60 °C overnight",
+     "instrument": null,
+     "conditions": "four repeated cycles; irradiation type and duration of Figure 7f not stated in the text",
+     "quote": "During the stability test, the suspension was centrifuged and washed with deionized water several times for each run. Finally, the powder photocatalyst was collected and dried in an oven in air at 60 °C overnight prior to being used for the next run."
     }
    ],
    "outcomes": [
@@ -801,13 +913,6 @@
      "quote": "Figure 7 Degradation rate of methyl blue (MB) under ultraviolet (a,c) and sunlight (b,d) irradiation, kinetic linear simulation over 0.1:1 CN photocatalyst (e) and stability study of MB degradation over 0.1:1 CN."
     },
     {
-     "property": "MB_C/C0_after_70_min_blank_no_catalyst",
-     "value_num": 0.96,
-     "unit": "C/C0",
-     "from_figure": "Fig. 8",
-     "quote": "Figure 8 Effect of several scavengers on the photocatalytic activity of 0.1:1 CN sample."
-    },
-    {
      "property": "MB_C/C0_after_70_min_no_scavenger",
      "value_num": 0.08,
      "unit": "C/C0",
@@ -855,15 +960,16 @@
     "name": "g-C3N4/ZnO nanocomposite (x:1 CN, x = 0.05), from g-C3N4 and zinc acetate",
     "formula": null,
     "family": "composite",
-    "phase": null,
+    "phase": "no evidence of g-C3N4 crystalline formation by XRD (Fig. 1b, whole x:1 CN series)",
     "morphology": null
    },
    "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method",
    "variations": [
     {
-     "parameter": "graphitic carbon nitride (g-C3N4) (route g-C3N4)",
-     "value_text": "x = 0.05 (g-C3N4:ZnO weight ratio of x:1)",
-     "parent_value": "x = 0.1 (route 0.1:1 CN)",
+     "parameter": "g_c3n4_zno_weight_ratio",
+     "step_order": 1,
+     "value_num": 0.05,
+     "parent_value": "0.1:1 CN",
      "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method"
     }
    ],
@@ -883,6 +989,15 @@
      "from_figure": "Fig. 7d",
      "quote": "Figure 7 Degradation rate of methyl blue (MB) under ultraviolet (a,c) and sunlight (b,d) irradiation, kinetic linear simulation over 0.1:1 CN photocatalyst (e) and stability study of MB degradation over 0.1:1 CN."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "no evidence of g-C3N4 crystalline formation even with increasing g-C3N4 content; ascribed by the authors to the high dispersion of g-C3N4",
+     "quote": "In contrast, there was no evidence of g-C3N4 crystalline formation, even with the increase of g-C3N4 content when using urea as the starting precursor, which can be ascribed to the high dispersion of g-C3N4.",
+     "instrument": "German Bruker D8 Focus Powder",
+     "conditions": "Cu Kα radiation; scanning speed 4°/min"
+    }
    ]
   },
   {
@@ -892,15 +1007,16 @@
     "name": "g-C3N4/ZnO nanocomposite (x:1 CN, x = 0.2), from g-C3N4 and zinc acetate",
     "formula": null,
     "family": "composite",
-    "phase": null,
+    "phase": "no evidence of g-C3N4 crystalline formation by XRD (Fig. 1b, whole x:1 CN series)",
     "morphology": null
    },
    "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method",
    "variations": [
     {
-     "parameter": "graphitic carbon nitride (g-C3N4) (route g-C3N4)",
-     "value_text": "x = 0.2 (g-C3N4:ZnO weight ratio of x:1)",
-     "parent_value": "x = 0.1 (route 0.1:1 CN)",
+     "parameter": "g_c3n4_zno_weight_ratio",
+     "step_order": 1,
+     "value_num": 0.2,
+     "parent_value": "0.1:1 CN",
      "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method"
     }
    ],
@@ -926,6 +1042,15 @@
      "from_figure": "Fig. 7d",
      "quote": "Figure 7 Degradation rate of methyl blue (MB) under ultraviolet (a,c) and sunlight (b,d) irradiation, kinetic linear simulation over 0.1:1 CN photocatalyst (e) and stability study of MB degradation over 0.1:1 CN."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "no evidence of g-C3N4 crystalline formation even with increasing g-C3N4 content; ascribed by the authors to the high dispersion of g-C3N4",
+     "quote": "In contrast, there was no evidence of g-C3N4 crystalline formation, even with the increase of g-C3N4 content when using urea as the starting precursor, which can be ascribed to the high dispersion of g-C3N4.",
+     "instrument": "German Bruker D8 Focus Powder",
+     "conditions": "Cu Kα radiation; scanning speed 4°/min"
+    }
    ]
   },
   {
@@ -935,15 +1060,16 @@
     "name": "g-C3N4/ZnO nanocomposite (x:1 CN, x = 0.3), from g-C3N4 and zinc acetate",
     "formula": null,
     "family": "composite",
-    "phase": null,
+    "phase": "no evidence of g-C3N4 crystalline formation by XRD (Fig. 1b, whole x:1 CN series)",
     "morphology": null
    },
    "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method",
    "variations": [
     {
-     "parameter": "graphitic carbon nitride (g-C3N4) (route g-C3N4)",
-     "value_text": "x = 0.3 (g-C3N4:ZnO weight ratio of x:1)",
-     "parent_value": "x = 0.1 (route 0.1:1 CN)",
+     "parameter": "g_c3n4_zno_weight_ratio",
+     "step_order": 1,
+     "value_num": 0.3,
+     "parent_value": "0.1:1 CN",
      "quote": "we used urea and zinc acetate as the only precursor materials to synthesize g-C3N4/ZnO nanocomposites with a g-C3N4:ZnO weight ratio of x:1 (x = 0.05, 0.1, 0.2 and 0.3) through a two-step in-situ calcination method"
     }
    ],
@@ -969,6 +1095,15 @@
      "from_figure": "Fig. 7d",
      "quote": "Figure 7 Degradation rate of methyl blue (MB) under ultraviolet (a,c) and sunlight (b,d) irradiation, kinetic linear simulation over 0.1:1 CN photocatalyst (e) and stability study of MB degradation over 0.1:1 CN."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "no evidence of g-C3N4 crystalline formation even with increasing g-C3N4 content; ascribed by the authors to the high dispersion of g-C3N4",
+     "quote": "In contrast, there was no evidence of g-C3N4 crystalline formation, even with the increase of g-C3N4 content when using urea as the starting precursor, which can be ascribed to the high dispersion of g-C3N4.",
+     "instrument": "German Bruker D8 Focus Powder",
+     "conditions": "Cu Kα radiation; scanning speed 4°/min"
+    }
    ]
   }
  ],
@@ -976,7 +1111,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare des nanocomposites g-C3N4/ZnO par deux voies de calcination in situ à partir de l'urée et de l'acétate de zinc seuls. Dans la série x:1, des nanobâtonnets de ZnO (acétate de zinc broyé, 350 °C) sont broyés avec de l'urée puis recuits à 550 °C ; dans la série x:1 CN, du g-C3N4 (urée, 550 °C) est broyé avec de l'acétate de zinc puis calciné à 350 °C. Les auteurs montrent que l'ordre des étapes change la couverture du ZnO par le g-C3N4 et l'activité photocatalytique de dégradation du bleu de méthylène : la série x:1 enveloppe les bâtonnets et se montre moins active que ZnO, la série x:1 CN donne un contact en hétérojonction et une meilleure activité sous lumière solaire.",
+   "text": "L'article prépare des nanocomposites g-C3N4/ZnO par deux voies de calcination in situ à partir de l'urée et de l'acétate de zinc seuls. Dans la série x:1, des nanobâtonnets de ZnO (acétate de zinc broyé, 350 °C) sont broyés avec de l'urée puis recuits à 550 °C ; dans la série x:1 CN, du g-C3N4 (urée, 550 °C) est broyé avec de l'acétate de zinc puis calciné à 350 °C. Les auteurs montrent que l'ordre des étapes change la couverture du ZnO par le g-C3N4 et l'activité photocatalytique de dégradation du bleu de méthylène : la série x:1 enveloppe les bâtonnets et, selon les auteurs, se montre moins active que ZnO (la Fig. 7b montre toutefois 0.3:1 plus actif que ZnO sous lumière solaire), la série x:1 CN donne un contact en hétérojonction et une meilleure activité sous lumière solaire.",
    "quote": "In this study, a series of g-C3N4/ZnO nanocomposites were prepared through two distinct procedures of a low-cost, environmentally-friendly, in-situ fabrication process, with urea and zinc acetate being the only precursor materials."
   },
   {
@@ -993,13 +1128,19 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Les branches de chaque série ne diffèrent que par le rapport massique g-C3N4:ZnO (0,05 ; 0,1 ; 0,2 ; 0,3). La série x:1 CN a une surface spécifique qui croît avec la teneur en g-C3N4 (20,11, 26,09 et 35,15 m2 g-1 pour 0,1:1, 0,2:1 et 0,3:1 CN, contre 11,77 pour ZnO), et plus élevée que celle de la série x:1 à teneur égale (valeur chiffrée absente du texte). Sous UV, tous les composites sont moins actifs que ZnO ; sous lumière solaire, lecture graphique approximative à 20 min : 0,1:1 reste à C/C0 ≈ 0,68 contre ≈ 0,15 pour ZnO, alors que 0,1:1 CN atteint ≈ 0 ; les constantes cinétiques sont de 0,0901 min−1 pour ZnO et 0,1862 min−1 pour 0,1:1 CN."
+   "text": "Les branches de chaque série ne diffèrent que par le rapport massique g-C3N4:ZnO (0,05 ; 0,1 ; 0,2 ; 0,3). La série x:1 CN a une surface spécifique qui croît avec la teneur en g-C3N4 (20,11, 26,09 et 35,15 m2 g-1 pour 0,1:1, 0,2:1 et 0,3:1 CN, contre 11,77 pour ZnO), et plus élevée que celle de la série x:1 à teneur égale (valeur chiffrée absente du texte). Sous UV, tous les composites sont moins actifs que ZnO ; sous lumière solaire, lecture graphique approximative à 20 min : 0,1:1 reste à C/C0 ≈ 0,68 contre ≈ 0,15 pour ZnO (0,05:1 ≈ 0,44, 0,2:1 ≈ 0,30), mais 0,3:1 atteint ≈ 0,05, donc mieux que ZnO, et la série n'est pas monotone ; 0,1:1 CN atteint 0,1:1 CN atteint ≈ 0 ; les constantes cinétiques sont de 0,0901 min−1 pour ZnO et 0,1862 min−1 pour 0,1:1 CN."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Dans la série x:1 (urée + ZnO), le g-C3N4 reste invisible en DRX même quand sa teneur augmente (forte dispersion), alors que dans la série x:1 CN la phase g-C3N4 n'est détectée qu'au-delà de 0,1:1. Sous lumière solaire, l'activité des composites x:1 augmente avec la teneur en g-C3N4 tout en restant inférieure à celle de ZnO nu, ce que les auteurs attribuent à un effet d'écran (« shading effect ») car les bâtonnets sont enveloppés.",
-   "quote": "In contrast, there was no evidence of g-C3N4 crystalline formation, even with the increase of g-C3N4 content when using urea as the starting precursor, which can be ascribed to the high dispersion of g-C3N4."
+   "text": "Dans la série x:1 (acétate de zinc d'abord, donc ZnO, puis urée), la phase g-C3N4 n'est détectée en DRX qu'au-delà du rapport 0,1:1 (soit 0.2:1 et 0.3:1) ; dans la série x:1 CN (urée d'abord, donc g-C3N4, puis acétate de zinc), aucune preuve de g-C3N4 cristallin n'apparaît même quand la teneur augmente, ce que les auteurs attribuent à la forte dispersion du g-C3N4. « Starting precursor » désigne le précurseur de la première calcination (légende du Scheme 1).",
+   "quote": "When using zinc acetate as the starting precursor, the g-C3N4 phase could not be detected until the g-C3N4 weight ratio in nanocomposite was greater than 0.1:1. In contrast, there was no evidence of g-C3N4 crystalline formation, even with the increase of g-C3N4 content when using urea as the starting precursor, which can be ascribed to the high dispersion of g-C3N4."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Sous lumière solaire, les auteurs écrivent que l'activité des composites x:1 augmente avec la teneur en g-C3N4 tout en restant inférieure à celle de ZnO nu, qu'ils attribuent à un effet d'écran (« shading effect ») car les bâtonnets sont enveloppés. La lecture de la Fig. 7b à 20 min nuance l'énoncé : 0.3:1 (C/C0 ≈ 0,05) est plus actif que ZnO (≈ 0,15) et la série n'est pas monotone (0.05:1 ≈ 0,44 meilleur que 0.1:1 ≈ 0,68).",
+   "quote": "For g-C3N4/ZnO (x:1) nanocomposites, the photodegradation activity continued to improve with the increase of g-C3N4 weight ratio under sunlight irradiation, although they exhibited less activity than that of bare ZnO nanorods."
   },
   {
    "type": "tendance_observee",
@@ -1027,17 +1168,17 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZnO",
-   "text": "Hypothèse : l'acétate de zinc dihydraté perd son eau de cristallisation puis se décompose vers 300–350 °C en ZnO en libérant de l'acide acétique, de l'acétone et du CO2 ; le broyage préalable de 30 min assure un contact intime et une nucléation homogène, et la température modérée de 350 °C favorise probablement des cristallites anisotropes en forme de bâtonnets."
+   "text": "Hypothèse : l'acétate de zinc hydraté perd son eau de cristallisation, puis se décompose vers 250–350 °C en libérant de l'acide acétique, de l'acétone et du CO2. Selon la littérature sur la décomposition thermique de l'acétate de zinc dihydraté (Lin et Li, Mater. Chem. Phys., 2009), les bâtonnets se formeraient par vaporisation/décomposition puis dépôt de ZnO, avec une croissance selon l'axe c [001] propre au wurtzite, plutôt que par nucléation homogène dans la poudre broyée ; le creuset ouvert et la température modérée de 350 °C sont compatibles avec cette morphologie."
   },
   {
    "type": "mecanisme_analyse",
    "route": "g-C3N4",
-   "text": "Hypothèse : en chauffant sous air statique dans un creuset, l'urée fond vers 135 °C, se décompose en ammoniac et acide isocyanique, puis forme biuret, acide cyanurique, mélamine et mélem ; la polycondensation vers 550 °C donne le polymère graphitique g-C3N4 par perte d'ammoniac. Le creuset partiellement fermé retient les gaz et améliore probablement le rendement."
+   "text": "Hypothèse : en chauffant sous air statique dans un creuset, l'urée fond vers 135 °C, se décompose en ammoniac et acide isocyanique, puis forme biuret, acide cyanurique, mélamine et mélem ; la polycondensation vers 550 °C donne le polymère graphitique g-C3N4 par perte d'ammoniac. L'article ne dit pas si le creuset est couvert ; un creuset couvert retiendrait les gaz et améliorerait probablement le rendement (hypothèse)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "0.1:1",
-   "text": "Hypothèse : ZnO, déjà cristallisé, est recouvert d'urée fondue qui polymérise en g-C3N4 à 550 °C autour des bâtonnets, d'où une couche enveloppante. Le deuxième recuit à 550 °C explique probablement le grossissement des cristallites de ZnO observé en TEM, et le recuit sous couvercle limite la perte de gaz."
+   "text": "Hypothèse : ZnO, déjà cristallisé, est recouvert d'urée fondue (vers 133 °C) qui se décompose puis polymérise en g-C3N4 à 550 °C autour des bâtonnets, d'où une couche enveloppante. En parallèle, l'acide isocyanique et les intermédiaires de type cyanamide issus de l'urée pourraient réagir avec la surface de ZnO ; aux fortes teneurs (0.2:1 et 0.3:1), cela pourrait former de la cyanamide de zinc ZnNCN (voir l'annotation sur les raies de DRX supplémentaires). Le deuxième recuit à 550 °C explique probablement le grossissement des cristallites de ZnO observé en TEM, et le recuit sous couvercle limite la perte de gaz."
   },
   {
    "type": "mecanisme_analyse",
@@ -1057,7 +1198,37 @@
   {
    "type": "securite_analyse",
    "route": "0.1:1 CN",
-   "text": "Le bleu de méthylène est nocif en cas d'ingestion et tache ; la lampe UV de 18 W exige des lunettes et un écran contre les UV ; les poudres de ZnO et de g-C3N4 ne doivent pas être inhalées. L'azote barboté dans l'essai de piégeage est inerte, mais les scavengers (oxalate d'ammonium, isopropanol inflammable) demandent les précautions usuelles."
+   "text": "Le bleu de méthylène est nocif en cas d'ingestion et tache ; la lampe UV de 18 W exige des lunettes et un écran contre les UV ; les poudres de ZnO et de g-C3N4 ne doivent pas être inhalées. L'azote ajouté dans l'essai de piégeage est inerte, mais les scavengers (oxalate d'ammonium, isopropanol inflammable) demandent les précautions usuelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO",
+   "text": "La bande interdite de 3,07 eV de ZnO est tirée d'un tracé de (αhν)^1/2, c'est-à-dire de la forme pour transition indirecte, alors que ZnO est à bande interdite directe (exposant 2) ; la relation (αhν)^n = k(hν − Eg) est celle de Tauc et non de Kubelka–Munk. L'émission PL de ZnO à ≈ 380 nm (3,26 eV) est au-dessus de ce gap : la valeur n'est pas comparable à la littérature (Makuła, Pacia et Macyk, J. Phys. Chem. Lett., 2018)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "0.1:1",
+   "text": "La masse d'urée n'est pas donnée et le rendement de conversion de l'urée en g-C3N4 varie d'environ 1 à 12 % selon les conditions (par exemple Materials 2020, PMC7344968) : la teneur réelle en g-C3N4 des composites x:1 est incertaine d'un facteur d'environ 10 et n'a jamais été mesurée (ni ATG ni analyse élémentaire). La série ne peut pas être refaite au même rapport massique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'article se contredit sur l'activité des composites x:1 sous lumière solaire (« moins actifs que ZnO », puis « tous les nanocomposites plus actifs ») et invoque une PL « renforcée » du g-C3N4 pour expliquer la baisse d'activité sous UV, alors que les PL mesurées de 0.1:1 et 0.1:1 CN diminuent. Les explications des auteurs ne sont donc pas toutes soutenues par leurs propres mesures."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "0.2:1",
+   "text": "La Fig. 1a montre pour 0.2:1 et 0.3:1 des raies fines supplémentaires (vers 28,0 ; 39,0 ; 40,8 ; 45,8 et 54,8°), absentes de ZnO et incompatibles avec les deux raies larges de g-C3N4 ; elles coïncident avec la cyanamide de zinc ZnNCN (Becker et Jansen, Acta Cryst. C, 2001 ; Pourali et al., Sci. Rep., 2025). Ces produits sont donc probablement des mélanges ZnO/ZnNCN/g-C3N4, et la hausse d'activité avec la teneur peut suivre la quantité de ZnNCN et non celle de g-C3N4."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "0.1:1 CN",
+   "text": "La « liaison chimique » entre ZnO et g-C3N4 est déduite de décalages d'O 1s de +0,1 eV (532,5 contre 532,4 ; 531,5 contre 531,4 ; 530,1 contre 530 eV), dans l'incertitude de calibration, et celui de Zn 2p n'est pas chiffré. La composante d'oxygène de réseau est écrite « O22− » alors que l'oxygène de réseau de ZnO est O2− (O22− est l'ion peroxyde) : la preuve XPS d'une liaison n'est pas établie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les pics XPS de C 1s (284,6 et 288,4 eV), de N 1s (398,6 et 400,0 eV) et de Zn 2p (1021,0 et 1044,0 eV) sont donnés sans nommer l'échantillon de la Fig. 6 (« the composite ») : ils ne sont rattachés à aucune voie."
   }
  ],
  "sample_inventory": [
@@ -1182,6 +1353,12 @@
    "defined_in": "Section 3.2",
    "route": null,
    "why": "test de stabilité de 0.1:1 CN, outcome de 0.1:1 CN"
+  },
+  {
+   "sample": "MB blank without catalyst",
+   "defined_in": "Section 3.2 (Fig. 8, courbe « Blank »)",
+   "route": null,
+   "why": "témoin sans catalyseur (« No detected degradation was observed without catalyst under light irradiation »), pas un matériau synthétisé ; la courbe du blanc de la Fig. 8 (C/C0 ≈ 0,96 à 70 min en lecture graphique) n'est pas rangée en résultat de 0.1:1 CN"
   }
  ],
  "method_sources": [
@@ -1201,11 +1378,11 @@
  "doubts": [
   {
    "where": "Scheme 1 (légende) contre Méthodes 2.1 et résumé",
-   "issue": "La légende du Scheme 1 écrit « (a): Zinc acetate as the starting precursor (denoted as x:1); (b) urea as the starting precursor (denoted as x:1 CN) », alors que les Méthodes et le résumé définissent x:1 comme ZnO + urée et x:1 CN comme g-C3N4 + acétate de zinc. Les Méthodes (section la plus détaillée) sont retenues ; le sens de la légende serait l'inverse."
+   "issue": "Aucune contradiction : « starting precursor » désigne le précurseur de la première calcination. La légende du Scheme 1 (« (a): Zinc acetate as the starting precursor (denoted as x:1); (b) urea as the starting precursor (denoted as x:1 CN) ») concorde avec les Méthodes et le résumé : x:1 = ZnO d'abord puis urée, x:1 CN = g-C3N4 d'abord puis acétate de zinc. L'attribution des voies est retenue telle quelle."
   },
   {
    "where": "Série x:1, voie de base 0.1:1",
-   "issue": "L'article décrit un protocole générique « x:1 » sans quantité d'urée. L'échantillon 0.1:1, le plus caractérisé (Fig. 2b, 3c, 3d), est pris comme voie de base et les valeurs 0,05, 0,2 et 0,3 sont des branches de rapport massique g-C3N4:ZnO. On ne sait pas si x désigne la masse de g-C3N4 attendue à partir de l'urée ou la masse d'urée."
+   "issue": "L'article décrit un protocole générique « x:1 » sans quantité d'urée. L'échantillon 0.1:1, le plus caractérisé (Fig. 2b, 3c, 3d), est pris comme voie de base et les valeurs 0,05, 0,2 et 0,3 sont des branches de rapport massique g-C3N4:ZnO. On ne sait pas si x désigne la masse de g-C3N4 attendue à partir de l'urée ou la masse d'urée. Le rapport 0,1 de la base 0.1:1 est porté par « a g-C3N4:ZnO ratio of 0.1:1 » (TEM) et celui de la base 0.1:1 CN seulement par le nom d'échantillon « 0.1:1 CN » (légende de la Fig. 2) et par la liste x = 0.05, 0.1, 0.2 et 0.3 de l'Introduction."
   },
   {
    "where": "Séries x:1 et x:1 CN, échantillons 0.05, 0.2 et 0.3",
@@ -1213,7 +1390,7 @@
   },
   {
    "where": "Section 3.2, activité sous lumière solaire des composites x:1",
-   "issue": "Le texte dit que les composites x:1 sont moins actifs que ZnO sous lumière solaire, puis que tous les nanocomposites (x:1 et x:1 CN) montrent une activité améliorée par rapport à ZnO sous lumière solaire. La figure 7b montre ZnO plus rapide que 0.05:1, 0.1:1 et 0.2:1 à 20 min. Aucune des deux formulations n'est corrigée ; les valeurs lues sur figure sont enregistrées telles quelles."
+   "issue": "Le texte dit que les composites x:1 sont moins actifs que ZnO sous lumière solaire, puis que tous les nanocomposites (x:1 et x:1 CN) montrent une activité améliorée par rapport à ZnO sous lumière solaire. La figure 7b montre ZnO plus rapide que 0.05:1, 0.1:1 et 0.2:1 à 20 min, mais 0.3:1 (C/C0 ≈ 0,05) plus actif que ZnO (≈ 0,15), et la série n'est pas monotone (0.05:1 ≈ 0,44 meilleur que 0.1:1 ≈ 0,68). Aucune des deux formulations n'est corrigée ; les valeurs lues sur figure sont enregistrées telles quelles."
   },
   {
    "where": "Valeurs lues sur les figures 7a–f et 8",
@@ -1225,15 +1402,27 @@
   },
   {
    "where": "Section 3.1, DRX « using zinc acetate as the starting precursor »",
-   "issue": "La phrase « When using zinc acetate as the starting precursor, the g-C3N4 phase could not be detected until the g-C3N4 weight ratio … was greater than 0.1:1 » est lue comme portant sur la série x:1 CN (acétate de zinc avec g-C3N4), conformément aux Méthodes. Elle est consignée en annotation de tendance, non en résultat d'échantillon, car la figure 1 n'est pas lisible par échantillon."
+   "issue": "La phrase « When using zinc acetate as the starting precursor, the g-C3N4 phase could not be detected until the g-C3N4 weight ratio … was greater than 0.1:1 » est lue comme portant sur la série x:1 (acétate de zinc d'abord, légende du Scheme 1), donc g-C3N4 détecté pour 0.2:1 et 0.3:1 ; la phrase suivante (« using urea as the starting precursor », aucun g-C3N4 cristallin) porte sur la série x:1 CN. Le rattachement à 0.2:1 et 0.3:1 est déduit de la liste des rapports (0.05, 0.1, 0.2, 0.3) : le texte ne nomme pas ces échantillons. La Fig. 1 n'est pas lue pour les pics."
   },
   {
    "where": "ZnO, réactif",
-   "issue": "L'article écrit « zinc acetate dehydrate » ; lu comme « dihydrate » (formule Zn(CH3COO)2·2H2O), la déshydratation n'ayant pas de sens pour un réactif de départ. Le nom reste celui de l'article."
+   "issue": "L'article écrit « zinc acetate dehydrate » pour ZnO et « zinc acetate » pour x:1 CN, sans état d'hydratation pour ce dernier : aucune formule n'est posée, le nom reste celui de l'article."
   },
   {
    "where": "Section 2.1, annexes",
    "issue": "Les annexes (Figures S1–S3) sont dans le dépôt sous forme de texte, mais les courbes d'isothermes et de DRX ne sont pas dans les figures du dossier corpus/fig ; seules les valeurs écrites de surface spécifique sont extraites."
+  },
+  {
+   "where": "XPS de 0.1:1 CN, O 1s",
+   "issue": "Le texte donne les pics O 1s « in the heterostructured samples » sans nommer l'échantillon ; ils sont rattachés à 0.1:1 CN, seul composite dont l'O 1s est discuté (décalage positif, défauts de surface). Les pics C 1s, N 1s et Zn 2p ne sont rattachés à aucune voie (annotation)."
+  },
+  {
+   "where": "Fig. 7f, test de stabilité de 0.1:1 CN",
+   "issue": "Le type d'irradiation et la durée de chaque cycle ne sont pas écrits dans le texte ; seul le protocole de régénération (centrifugation, lavages, séchage à 60 °C) l'est."
+  },
+  {
+   "where": "Blanc sans catalyseur (Fig. 8)",
+   "issue": "La valeur de la courbe « Blank » de la Fig. 8 n'est plus rangée en résultat de 0.1:1 CN : le blanc n'est pas une propriété du matériau (échantillon d'inventaire sans voie). Le texte dit seulement « No detected degradation was observed without catalyst under light irradiation »."
   }
  ]
 }
