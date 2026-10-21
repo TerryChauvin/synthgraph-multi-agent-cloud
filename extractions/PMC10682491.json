@@ -195,6 +195,12 @@
        "quote": "The resulting solution was stirred for 2 h",
        "value_num": 2,
        "unit": "h"
+      },
+      {
+       "name": "stirring_mode",
+       "quote": "Schematic representation for the fabrication process of the Mn2SnS3/NF.",
+       "value_text": "Magnetic Stirring",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
@@ -353,10 +359,11 @@
     },
     {
      "technique": "EDX",
-     "result": "Sn 33.97%, S 40.06%, Mn 25.97%, uniformly distributed (Mn2SnS3/NF; Fig. 4 caption: mapping of NC-MTS)",
+     "result": "Sn 33.97 wt%, S 40.06 wt%, Mn 25.97 wt%, uniformly distributed (Mn2SnS3/NF; Fig. 4 caption: mapping of NC-MTS; en-tête du tableau de la Fig. 4 : « W% », soit pourcentages massiques)",
      "instrument": null,
      "conditions": null,
-     "quote": "the Mn2SnS3/NF consists of Sn, S and Mn elements, with percentages of 33.97%, 40.06% and 25.97%, respectively"
+     "quote": "the Mn2SnS3/NF consists of Sn, S and Mn elements, with percentages of 33.97%, 40.06% and 25.97%, respectively",
+     "from_figure": "Fig. 4"
     },
     {
      "technique": "N2 adsorption-desorption (BET, BJH)",
@@ -467,6 +474,33 @@
      "value_num": 1600,
      "unit": "F g−1",
      "from_figure": "Fig. 7h"
+    },
+    {
+     "property": "EDX_Sn_mass_fraction",
+     "quote": "the Mn2SnS3/NF consists of Sn, S and Mn elements, with percentages of 33.97%, 40.06% and 25.97%, respectively",
+     "value_num": 33.97,
+     "unit": "wt%",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "EDX_Mn_mass_fraction",
+     "quote": "the Mn2SnS3/NF consists of Sn, S and Mn elements, with percentages of 33.97%, 40.06% and 25.97%, respectively",
+     "value_num": 25.97,
+     "unit": "wt%",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "EDX_S_mass_fraction",
+     "quote": "the Mn2SnS3/NF consists of Sn, S and Mn elements, with percentages of 33.97%, 40.06% and 25.97%, respectively",
+     "value_num": 40.06,
+     "unit": "wt%",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "cycling_current_density_text",
+     "quote": "such as 3000, at a current density of 8 A g−1",
+     "value_num": 8,
+     "unit": "A g−1"
     }
    ],
    "missing_fields": [
@@ -576,12 +610,37 @@
      "parameters": [],
      "equipment": [],
      "not_stated": [
-      "temperature",
-      "stirring"
+      "temperature"
      ]
     },
     {
      "order": 2,
+     "action": "stir",
+     "description": "Magnetic stirring for 2 h (value read on Fig. 1, NW-MTS panel; the text only says « a similar synthetic process »).",
+     "quote": "A similar synthetic process was employed for the production of nanoworm-like Mn2SnS3 (NW-MTS).",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "Schematic representation for the fabrication process of the Mn2SnS3/NF.",
+       "value_num": 2,
+       "unit": "h",
+       "from_figure": "Fig. 1"
+      },
+      {
+       "name": "stirring_mode",
+       "quote": "Schematic representation for the fabrication process of the Mn2SnS3/NF.",
+       "value_text": "Magnetic Stirring",
+       "from_figure": "Fig. 1"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
      "action": "heat",
      "description": "Solvothermal treatment in a sealed autoclave.",
      "quote": "The resulting mixture was then placed into a sealed autoclave and kept at 200 °C for duration of 6 h.",
@@ -614,7 +673,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "cool",
      "description": "The autoclave cools naturally.",
      "quote": "After natural cooling of the autoclave",
@@ -632,7 +691,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "centrifuge",
      "description": "Centrifuge the product.",
      "quote": "the sample was subjected to centrifugation",
@@ -644,7 +703,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "wash",
      "description": "Wash repeatedly with deionized water and absolute ethanol.",
      "quote": "washed repeatedly with deionized water and absolute ethanol",
@@ -666,7 +725,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "dry",
      "description": "Dry in a vacuum oven.",
      "quote": "dried in a vacuum oven at 60 °C for 12 h",
@@ -707,7 +766,7 @@
      "result": "cubic Mn2SnS3 (JCPDS no. 89-2877), no impurity peak; lower peak intensity than NC-MTS",
      "instrument": "XRD, Rigaku Denki Co. Ltd., Japan",
      "conditions": "Cu Kα radiation (λ = 0.15418 nm, at 40 kV and 30 mA)",
-     "quote": "Interestingly, the peak intensity of NC-MTS is higher than that of NW-MTS, implying that it has better crystallinity than that of NW-MTS."
+     "quote": "(JCPDS no. 89-2877), and no impurity diffraction peak is evident, which is in good agreement with the standard data for the cubic phase of the Mn2SnS3. Interestingly, the peak intensity of NC-MTS is higher than that of NW-MTS, implying that it has better crystallinity than that of NW-MTS."
     },
     {
      "technique": "FESEM",
@@ -727,7 +786,7 @@
    "outcomes": [
     {
      "property": "phase",
-     "quote": "Figure 3 illustrates the XRD patterns of NC-MTS and NW-MTS.",
+     "quote": "for Mn2SnS3 the major XRD diffraction peaks that evidenced at 2θ = 11.5°, 22.5°, 26.5°, 32°,45° and 57.5° correspond to (110), (111), (200), (211), (220), and (311) of Mn2SnS3 (JCPDS no. 89-2877), and no impurity diffraction peak is evident, which is in good agreement with the standard data for the cubic phase of the Mn2SnS3",
      "value_text": "cubic Mn2SnS3 (JCPDS no. 89-2877) as for NC-MTS, no impurity peak (XRD patterns of both samples, Fig. 3)"
     },
     {
@@ -814,15 +873,24 @@
      "value_num": 390,
      "unit": "F g−1",
      "from_figure": "Fig. 7h"
+    },
+    {
+     "property": "cycling_current_density_text",
+     "quote": "such as 3000, at a current density of 8 A g−1",
+     "value_num": 8,
+     "unit": "A g−1"
     }
    ],
    "missing_fields": [
-    "stirring_of_the_solution",
+    "stirring_speed",
     "yield",
     "autoclave_volume",
     "centrifuge_speed",
     "centrifuge_duration",
     "number_of_washing_cycles"
+   ],
+   "not_stated": [
+    "yield"
    ]
   },
   {
@@ -1433,12 +1501,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "NC-MTS",
-   "text": "Hypothèse : dans l'éthylène glycol à 180 °C, la thiourée se décompose probablement en libérant du sulfure (H2S ou S2−) qui précipite Sn(II) et Mn(II) en Mn2SnS3 ; l'éthylène glycol, visqueux et faiblement réducteur, ralentit probablement la diffusion et pourrait limiter l'oxydation de Sn(II). La stœchiométrie Mn2SnS3 demande Mn2+, Sn2+ et S2− (2:1:3) : 0,4 g de MnCl2·4H2O (≈ 2,0 mmol), 0,225 g de SnCl2·2H2O (≈ 1,0 mmol) et 0,225 g de thiourée (≈ 3,0 mmol) donnent exactement ce rapport, ce qui laisse penser que le sel de manganèse est réellement le tétrahydrate (comme dans la liste des réactifs et la Fig. 1) et non le dihydrate écrit dans le protocole."
+   "text": "Hypothèse : dans l'éthylène glycol à 180 °C, la thiourée se décompose probablement en libérant du sulfure (H2S ou HS−) ; Sn2+, plus mou, précipiterait le premier (SnS), puis Mn2+ (MnS), avec nucléation et croissance selon LaMer ; l'éthylène glycol, visqueux et faiblement réducteur, ralentit probablement la diffusion et pourrait limiter l'oxydation de Sn(II). Une phase ternaire Mn2SnS3 unique n'est pas démontrée (indexation DRX impossible, EDX éloigné de Mn2SnS3) : un mélange SnS + MnS, ou une phase à Sn(IV) (SnS2, Mn2SnS4) si Sn(II) s'oxyde, reste possible ; un affinement de Rietveld et une EDX quantitative calibrée trancheraient. La stœchiométrie 2:1:3 est retrouvée avec 0,4 g de MnCl2·4H2O (≈ 2,0 mmol), 0,225 g de SnCl2·2H2O (≈ 1,0 mmol) et 0,225 g de thiourée (≈ 3,0 mmol), ce qui laisse penser que le sel de manganèse est le tétrahydrate (liste des réactifs et panneau NC-MTS de la Fig. 1) et non le dihydrate écrit dans le protocole ; la thiourée est exactement stœchiométrique alors que sa décomposition est rarement complète à 180 °C."
   },
   {
    "type": "mecanisme_analyse",
    "route": "NW-MTS",
-   "text": "Hypothèse : avec Na2S dans un mélange eau/éthanol, le sulfure est libre dès la dissolution et la précipitation est probablement beaucoup plus rapide, d'où une croissance moins ordonnée en nanovers. Mais SnCl4 apporte Sn(IV) alors que Mn2SnS3 contient Sn(II) : sans réduction, on attendrait plutôt un mélange MnS et SnS2 ou un sulfure de type Mn2SnS4. Les rapports molaires Mn:Sn (≈ 3,8:1 avec le dihydrate de MnCl2, pour 2:1 attendu) et S:Sn ne correspondent pas non plus au Mn2SnS3 ; l'article ne discute pas cette différence."
+   "text": "Hypothèse : avec Na2S dans un mélange eau/éthanol, le sulfure est libre dès la dissolution : MnS précipiterait immédiatement et Sn(IV) s'hydrolyserait ou formerait SnS2 ou des thiostannates selon l'ordre d'addition et l'excès de sulfure ; le traitement à 200 °C ferait mûrir ces précipités, et la morphologie en « vers » refléterait plutôt une précipitation rapide et désordonnée qu'une croissance anisotrope. Mais SnCl4 apporte Sn(IV) alors que Mn2SnS3 contient Sn(II) et aucun réducteur n'est présent : on attendrait plutôt un mélange MnS + SnS2 ou un sulfure de type Mn2SnS4 (à Sn(IV)). Les rapports Mn:Sn (≈ 3,2:1 avec le tétrahydrate, ≈ 3,8:1 avec le dihydrate de MnCl2, pour 2:1 attendu) et S:Sn ne correspondent pas non plus à Mn2SnS3 ; l'article ne discute pas cette différence."
   },
   {
    "type": "securite_analyse",
@@ -1458,37 +1526,77 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Aucune annexe n'est citée par l'article ni présente dans le dépôt. Ce qui manque pour refaire les synthèses : pureté des réactifs (seul le fournisseur Merck est donné pour les sels, la thiourée, CB, PTFE et NMP), fournisseur de l'éthylène glycol, de l'éthanol, de l'eau, du charbon actif, de KOH et de la mousse de nickel, volume de l'autoclave et taux de remplissage, vitesse d'agitation, vitesse et durée de centrifugation, nombre de lavages (« several times », « repeatedly »), rendement, et pour NW-MTS l'agitation (la Fig. 1 montre 2 h d'agitation magnétique que le texte ne mentionne pas). Pour l'électrode : masse de matière active déposée, méthode d'enduction, base du rapport 7:2:1 (massique ou autre). Pour le dispositif : séparateur, type de cellule, volume d'électrolyte, masses des deux électrodes."
+   "text": "Aucune annexe n'est citée par l'article ni présente dans le dépôt. Ce qui manque pour refaire les synthèses : pureté des réactifs (seul le fournisseur Merck est donné pour les sels, la thiourée, CB, PTFE et NMP), fournisseur de l'éthylène glycol, de l'éthanol, de l'eau, du charbon actif, de KOH et de la mousse de nickel, volume de l'autoclave et taux de remplissage, vitesse d'agitation, vitesse et durée de centrifugation, nombre de lavages (« several times », « repeatedly »), rendement. L'agitation de NW-MTS n'est donnée que par la Fig. 1 (2 h, magnétique), pas par le texte. Pour l'électrode : masse de matière active déposée, méthode d'enduction, base du rapport 7:2:1 (massique ou autre). Pour le dispositif : séparateur, type de cellule, volume d'électrolyte, masses des deux électrodes."
   },
   {
    "type": "limite_reproductibilite",
    "route": "NC-MTS",
-   "text": "Incohérences de l'article à connaître : le protocole écrit MnCl2·2H2O, la liste des réactifs et la Fig. 1 écrivent MnCl2·4H2O (le rapport stœchiométrique 2:1:3 correspond au tétrahydrate) ; la composition EDX donnée (Sn 33,97 %, S 40,06 %, Mn 25,97 %) est très éloignée de Mn2SnS3 (Mn ≈ 33 %, Sn ≈ 17 %, S ≈ 50 % attendus) et le spectre inclut la mousse de nickel ; la rétention après 3000 cycles est de 92 % (résumé, résultats, conclusion) mais de 91 % dans l'introduction ; le courant du test de cyclage est de 8 A g−1 dans le texte et de 9 A g−1 dans la légende de la Fig. 7h ; la capacité de 2115 F g−1 est appelée « areal capacitance » alors que l'unité est gravimétrique ; la Table 1 désigne la référence de ce travail comme « Nanocubes Cu2SnS3 » ; l'analyse capacitive/diffusive est annoncée pour une électrode « Ni-Mn-S/NiMn-LDH » (copier-coller probable), les valeurs étant rapportées ici à NC-MTS d'après la légende de la Fig. 7i ; l'électrolyte du dispositif est KOH 2 mol L−1 dans les méthodes et 3 mol L−1 dans les résultats."
+   "text": "Incohérences de l'article à connaître : le protocole écrit MnCl2·2H2O, la liste des réactifs et le panneau NC-MTS de la Fig. 1 écrivent MnCl2·4H2O (le rapport stœchiométrique 2:1:3 correspond au tétrahydrate ; le panneau NW-MTS de la Fig. 1 écrit MnCl2·2H2O) ; la rétention après 3000 cycles est de 92 % (résumé, résultats, conclusion) mais de 91 % dans l'introduction ; le courant du test de cyclage est de 8 A g−1 dans le texte et de 9 A g−1 dans la légende de la Fig. 7h ; la capacité de 2115 F g−1 est appelée « areal capacitance » alors que l'unité est gravimétrique ; la Table 1 désigne la référence de ce travail comme « Nanocubes Cu2SnS3 » ; l'analyse capacitive/diffusive est annoncée pour une électrode « Ni-Mn-S/NiMn-LDH » (copier-coller probable), avec 5 à 50 mV s−1 dans le texte et 5 à 60 mV s−1 sur l'axe de la Fig. 7i, les valeurs étant rapportées ici à NC-MTS d'après la légende de la Fig. 7i ; l'électrolyte du dispositif est KOH 2 mol L−1 dans les méthodes et 3 mol L−1 dans les résultats."
   },
   {
    "type": "limite_reproductibilite",
    "route": "NW-MTS",
-   "text": "Le texte dit « A similar synthetic process » sans rappeler l'agitation : seules les étapes écrites (dissolution, autoclave scellé 200 °C 6 h, refroidissement naturel, centrifugation, lavage, séchage sous vide 60 °C 12 h) sont reprises ; la mention d'un revêtement en téflon n'est pas donnée pour cet autoclave. Sa composition (SnCl4, Na2S) rend peu plausible une phase Mn2SnS3 pure sans réduction de l'étain ; aucune analyse EDX n'est donnée pour cet échantillon."
+   "text": "Le texte dit « A similar synthetic process » sans rappeler l'agitation, que seule la Fig. 1 (panneau NW-MTS : « Magnetic Stirring 2 hours ») donne ; les autres étapes sont celles écrites (dissolution, autoclave scellé 200 °C 6 h, refroidissement naturel, centrifugation, lavage, séchage sous vide 60 °C 12 h) ; la mention d'un revêtement en téflon n'est pas donnée pour cet autoclave. La phase attribuée à NW-MTS repose sur une phrase de DRX commune aux deux échantillons ; aucune EDX n'est donnée pour cet échantillon."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Electrode_MTS_NF",
    "text": "Valeurs lues sur figure (précision de lecture ≈ 5 %) : capacité à 17 A g−1 (Fig. 7g) et capacité après 3000 cycles (Fig. 7h). Les courbes CV, GCD et Nyquist (Fig. 7a-f, 8, 9) portent d'autres résultats qui ne sont pas lus ici, leurs valeurs clés étant dans le texte. La durée de nettoyage aux ultrasons (30 min) n'est pas précisée par solvant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NC-MTS",
+   "text": "Identité de phase non démontrée : les six raies annoncées (2θ = 11,5 ; 22,5 ; 26,5 ; 32 ; 45 ; 57,5°) donnent, avec λ = 0,15418 nm, un paramètre de maille de 0,53 à 1,09 nm selon la raie, donc ne s'indexent pas dans une maille cubique unique ((110) et (211) sont en outre interdites dans un réseau cubique F). La fiche JCPDS 89-2877 citée correspond au Cu2SnS3 cubique (Chalapathi et al., Chalcogenide Letters 13, 2016), cohérent avec « Nanocubes Cu2SnS3 » dans la Table 1 pour ce travail ; aucune structure cubique de Mn2SnS3 n'a été trouvée par le critique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NC-MTS",
+   "text": "L'EDX de la Fig. 4 (pourcentages massiques : Sn 33,97 ; Mn 25,97 ; S 40,06) s'écarte de Mn2SnS3 quelle que soit la base : comparé en base massique (Mn 33,8 ; Sn 36,5 ; S 29,6 % attendus), le soufre est en net excès et le manganèse en défaut ; converti en atomes, Mn:Sn:S ≈ 1,65:1:4,4 au lieu de 2:1:3. Le spectre ne montre que Mn, S et Sn (ni Ni, ni O, ni Cl), alors que l'article conclut à une « high purity »."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NC-MTS",
+   "text": "Porosité peu fiable : le diamètre BJH de 1,22 nm (micropores, domaine où la méthode BJH n'est pas valable selon le rapport IUPAC de Thommes et al., Pure Appl. Chem. 2015) est incompatible avec le diamètre 4V/S tiré des mêmes données (0,036 cm3 g−1 et 52,803 m2 g−1 donnent 2,73 nm)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NC-MTS",
+   "text": "Les 2115 F g−1 viennent d'une courbe de décharge à plateau faradique (846 C g−1 ≈ 235 mAh g−1 en 0,4 V, soit environ 2,85 électrons par unité Mn2SnS3, plus que l'oxydation Mn(II)/Mn(III) des deux Mn) ; ils sont donnés sans masse active ni soustraction de la contribution de la mousse de nickel. Un matériau de type batterie se décrit plutôt en C g−1 ou mAh g−1 (Brousse et al., J. Electrochem. Soc. 162, 2015) ; la valeur est probablement surestimée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NW-MTS",
+   "text": "Stœchiométrie et état d'oxydation incompatibles avec Mn2SnS3 : SnCl4 apporte Sn(IV) sans réducteur, alors que Mn2SnS3 demande Sn(II) (Mn2SnS4, à Sn(IV), est le ternaire Mn–Sn–S documenté, Moun et al., Dalton Trans. 2020) ; Mn:Sn vaut environ 3,15:1 (tétrahydrate) ou 3,85:1 (dihydrate) au lieu de 2:1 ; le soufre varie d'un facteur 3,1 selon que Na2S est anhydre ou nonahydrate. La DRX est déclarée identique à celle de NC-MTS sans EDX pour cet échantillon, avec les mêmes réserves d'indexation (fiche 89-2877 = Cu2SnS3)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NW-MTS",
+   "text": "Porosité peu fiable : diamètre BJH de 1,66 nm (sous 2 nm, hors du domaine de validité de la méthode BJH) contre 8,31 nm par 4V/S tiré des mêmes données (0,025 cm3 g−1 et 12,035 m2 g−1)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_MTS_NF",
+   "text": "Les capacités en F g−1 de NC-MTS/NF et NW-MTS/NF ne sont pas exploitables en l'état : la masse de matière active déposée n'est pas donnée, et la mousse de nickel est elle-même électroactive en KOH entre 0 et 0,5 V vs Ag/AgCl (Ni(OH)2/NiOOH) ; le témoin de mousse nue de la Fig. 7d ne suffit pas sans masse ni soustraction de sa charge (Gogotsi et Penner, ACS Nano 12, 2018)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ASC_NC-MTS_AC",
+   "text": "Capacité de la cellule incompatible avec l'équilibrage des masses : avec m+/m− ≈ 0,21 et l'Éq. 4, le charbon actif ne stocke que 180–220 F g−1 sur 1 V, d'où au plus environ 100–120 F g−1 rapporté à la masse totale des deux électrodes, contre 222,5 F g−1 annoncés ; soit la masse de normalisation n'est pas la masse totale, soit le charbon fournit environ 400 F g−1. L'énergie et la puissance (60,56 Wh kg−1 ; 699,89 W kg−1) se retrouvent avec une fenêtre de 1,40 V et non de 1,5 V (69,5 Wh kg−1 avec 1,5 V)."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "NC-MTS réactifs et étape 1",
-   "issue": "Le protocole écrit MnCl2·2H2O (0,4 g) alors que la liste des réactifs du même paragraphe et la Fig. 1 donnent MnCl2·4H2O. Lecture retenue : dihydrate, tel qu'écrit dans le protocole (formule et quantité) ; le fournisseur Merck est repris de la liste, qui nomme le tétrahydrate."
+   "issue": "Le protocole écrit MnCl2·2H2O (0,4 g) alors que la liste des réactifs du même paragraphe et le panneau NC-MTS de la Fig. 1 donnent MnCl2·4H2O (le panneau NW-MTS de la Fig. 1 écrit MnCl2·2H2O). Lecture retenue : dihydrate, tel qu'écrit dans le protocole (formule et quantité) ; le fournisseur Merck est repris de la liste, qui nomme le tétrahydrate."
   },
   {
    "where": "NW-MTS réactifs",
-   "issue": "La liste des réactifs nomme Na2S·9H2O ; le protocole écrit « sodium sulfide (Na2S) » avec 0,225 g. Formule retenue : Na2S, comme dans le protocole ; fournisseur Merck repris de la liste."
+   "issue": "La liste des réactifs nomme Na2S·9H2O ; le protocole écrit « sodium sulfide (Na2S) » avec 0,225 g, et le panneau NW-MTS de la Fig. 1 écrit Na2S, MnCl2·2H2O et SnCl4·5H2O (aucun hydrate de Mn en conflit pour NW-MTS : l'incohérence 2H2O/4H2O ne concerne que NC-MTS). Formule retenue : Na2S, comme dans le protocole ; fournisseur Merck repris de la liste."
   },
   {
    "where": "NW-MTS découpage",
-   "issue": "L'article dit « A similar synthetic process » mais change tous les réactifs, le solvant, la température et la durée. NW-MTS est donc une branche de NC-MTS (variations listées) avec ses propres étapes : l'agitation de 2 h de NC-MTS n'est pas reprise car le texte ne la mentionne pas pour NW-MTS (la Fig. 1 la montre) ; elle est déclarée non citée. Autre lecture : branche héritant de toutes les étapes de NC-MTS, agitation comprise."
+   "issue": "L'article dit « A similar synthetic process » mais change tous les réactifs, le solvant, la température et la durée. NW-MTS est donc une branche de NC-MTS (variations listées) avec ses propres étapes. Le texte ne mentionne pas l'agitation pour NW-MTS, mais le panneau NW-MTS de la Fig. 1 montre « Magnetic Stirring 2 hours » : étape d'agitation ajoutée (étape 2) avec from_figure Fig. 1. Autre lecture : branche héritant de toutes les étapes de NC-MTS ; ni le revêtement en téflon ni l'étape sans recuit ne sont repris pour NW-MTS, faute de mention."
   },
   {
    "where": "NW-MTS étape 1, solvant",
@@ -1512,7 +1620,7 @@
   },
   {
    "where": "NC-MTS résultats, cyclage",
-   "issue": "Rétention de 92 % (résumé, résultats, conclusion) contre 91 % (introduction) ; test à 8 A g−1 (texte) contre 9 A g−1 (légende Fig. 7h). Valeur 92 % retenue ; courant non enregistré comme paramètre."
+   "issue": "Rétention de 92 % (résumé, résultats, conclusion) contre 91 % (introduction) ; test à 8 A g−1 dans le texte (« at a current density of 8 A g−1 ») contre 9 A g−1 dans la légende de la Fig. 7h. Courant du texte (8 A g−1) enregistré dans les résultats de cyclage de NC-MTS et NW-MTS ; les capacités lues sur la Fig. 7h citent la légende (9 A g−1) : 8 ou 9 A g−1, l'article ne tranche pas."
   },
   {
    "where": "NC-MTS et NW-MTS, capacité",
@@ -1520,11 +1628,11 @@
   },
   {
    "where": "NC-MTS, contribution capacitive",
-   "issue": "Le paragraphe parle de l'électrode « Ni-Mn-S/NiMn-LDH » et de 5 à 50 mV s−1, alors que la légende de la Fig. 7i parle de NC-MTS (5 à 60 mV s−1). Valeurs « 41 to 92.14% » rattachées à NC-MTS selon la légende."
+   "issue": "Le paragraphe parle de l'électrode « Ni-Mn-S/NiMn-LDH » et de 5 à 50 mV s−1 (texte). La légende de la Fig. 7i parle de NC-MTS mais ne donne pas de gamme de vitesses ; l'axe de la Fig. 7i porte 5, 10, 20, 30, 40, 50 et 60 mV s−1 (5 à 60). Valeurs « 41 to 92.14% » rattachées à NC-MTS selon la légende et la figure."
   },
   {
    "where": "NC-MTS, EDX",
-   "issue": "Le texte donne l'analyse EDX de « Mn2SnS3/NF » ; la légende de la Fig. 4 précise NC-MTS pour la cartographie. Rattachée à NC-MTS ; pourcentages sans précision atomique ou massique."
+   "issue": "Le texte donne l'analyse EDX de « Mn2SnS3/NF » sans préciser la base ; la légende de la Fig. 4 précise NC-MTS pour la cartographie, et l'en-tête du tableau de la Fig. 4 est « ELT / W% » : pourcentages massiques (wt%), lus sur la figure. Rattachée à NC-MTS."
   },
   {
    "where": "NC-MTS résultats, Table 1",
@@ -1536,11 +1644,23 @@
   },
   {
    "where": "Valeurs lues sur figure",
-   "issue": "Fig. 7g : capacité à 17 A g−1 de NC-MTS (entre 1600 et 1700 F g−1, noté en value_text) et de NW-MTS (≈ 430) ; Fig. 7h : capacités après 3000 cycles (≈ 1600 pour NC-MTS, ≈ 390 pour NW-MTS). Précision de lecture d'environ 5 %. Les autres figures (CV, GCD, Nyquist, Ragone) ne sont pas lues : leurs valeurs essentielles sont dans le texte."
+   "issue": "Fig. 7g : capacité à 17 A g−1 de NC-MTS (entre 1600 et 1700 F g−1, noté en value_text) et de NW-MTS (≈ 430) ; Fig. 7h : capacités après 3000 cycles (≈ 1600 pour NC-MTS, ≈ 390 pour NW-MTS). Précision de lecture d'environ 5 %. Les autres figures (CV, GCD, Nyquist, Ragone) ne sont pas lues : leurs valeurs essentielles sont dans le texte. Fig. 1 (agitation magnétique de 2 h, NW-MTS ; mode magnétique, NC-MTS) et Fig. 4 (en-tête « W% » du tableau EDX, unité wt%) lues pour du texte, non pour des courbes."
   },
   {
    "where": "ASC électrodes",
    "issue": "Le dispositif utilise « a Mn2SnS3/NF electrode » (Méthodes) ; les Résultats précisent NC-MTS : la voie du matériau est NC-MTS."
+  },
+  {
+   "where": "NW-MTS résultats, phase XRD",
+   "issue": "L'article ne donne qu'une phrase commune aux deux échantillons (pics, fiche JCPDS 89-2877, absence d'impureté, phase cubique) ; l'attribution de la phase à NW-MTS repose sur ce texte commun, sans pic ni indexation propres à NW-MTS. Citation : la phrase commune."
+  },
+  {
+   "where": "NW-MTS, agitation (Fig. 1)",
+   "issue": "Agitation magnétique de 2 h lue sur le panneau NW-MTS de la Fig. 1 (légende « Schematic representation for the fabrication process of the Mn2SnS3/NF. ») ; le texte ne la donne pas. Vitesse d'agitation non donnée."
+  },
+  {
+   "where": "Manques propres à l'article",
+   "issue": "Non donnés : pureté des réactifs et fournisseurs (éthylène glycol, éthanol, charbon actif, KOH, mousse de nickel), volume de l'autoclave, vitesse d'agitation, vitesse et durée de centrifugation, nombre de lavages, rendement, masse active déposée, base du rapport 7:2:1, quantité de NMP, séparateur ; KOH 2 ou 3 mol L−1 (ASC) et hydrate de MnCl2 (NC-MTS) contradictoires. Rien n'est tranché à la place des auteurs."
   }
  ]
 }
