@@ -690,13 +690,13 @@
      "order": 2,
      "action": "heat",
      "description": "Traitement thermique du mélange TiO2/graphène sans milieu liquide, à 200 °C (autoclave).",
-     "quote": "Thermal treatment at 200 °C generally leads to the decrease of the SBET to ca. 100 m2/g due to the increase of the anatase crystallite size.",
+     "quote": "Samples heated at 200 °C in an autoclave are characterized by a lower intensity of O–H groups at 3700–2600 cm−1",
      "parameters": [
       {
        "name": "temperature",
        "value_num": 200,
        "unit": "°C",
-       "quote": "Thermal treatment at 200 °C generally leads to the decrease of the SBET to ca. 100 m2/g due to the increase of the anatase crystallite size."
+       "quote": "Samples heated at 200 °C in an autoclave are characterized by a lower intensity of O–H groups at 3700–2600 cm−1"
       }
      ],
      "equipment": [
@@ -740,6 +740,13 @@
      "instrument": "CN628 elemental analyser (LECO Corporation, Saint Joseph, MI, USA)",
      "conditions": "étalonnage avec le standard certifié EDTA (41,06 wt% C)",
      "quote": "TiO2-rGO(1 wt%)-A | 99 | 18 | 0.56 | 94 | 0.26 | 0.03 | 0.23 | 0.89"
+    },
+    {
+     "technique": "XPS (C 1s)",
+     "result": "raie C 1s pratiquement identique au spectre de référence du rGO ; pas d'effet de la charge en rGO (1 ou 5 wt%) (Fig. 4e, étiquette (4)) ; pas de différence de composition de surface entre mélange manuel et autoclave",
+     "instrument": "Scienta SES 2002 spectrometer (Scienta Scientific AB, Uppsala, Sweden)",
+     "conditions": "Al Kα (hv = 1486.6 eV), énergie de transmission constante Ep = 50 eV ; échelle de énergie de liaison corrigée sur Ti 2p3/2 = 459.0 eV ; chambre < 1 × 10−9 mbar",
+     "quote": "In the case of reduced graphene oxide there is no observable influence of the amount of the rGO added to the mixture (1 wt% or 5 wt%). Both C 1s lines are virtually identical with the reference spectrum of rGO."
     }
    ],
    "outcomes": [
@@ -843,6 +850,13 @@
      "instrument": "Hitachi SU8020 ultra-high resolution field emission scanning electron microscope (Hitachi Ltd., Tokyo, Japan)",
      "conditions": null,
      "quote": "Figure 2b,d shows that the whole surface of GO or rGO sheets are decorated with TiO2 nanoparticles, not mainly the edges of the flakes"
+    },
+    {
+     "technique": "XPS (C 1s)",
+     "result": "raie C 1s pratiquement identique au spectre de référence du rGO ; pas d'effet de la charge en rGO (1 ou 5 wt%) (Fig. 4e, étiquette (5)) ; pas de différence de composition de surface entre mélange manuel et autoclave",
+     "instrument": "Scienta SES 2002 spectrometer (Scienta Scientific AB, Uppsala, Sweden)",
+     "conditions": "Al Kα (hv = 1486.6 eV), énergie de transmission constante Ep = 50 eV ; échelle de énergie de liaison corrigée sur Ti 2p3/2 = 459.0 eV ; chambre < 1 × 10−9 mbar",
+     "quote": "In the case of reduced graphene oxide there is no observable influence of the amount of the rGO added to the mixture (1 wt% or 5 wt%). Both C 1s lines are virtually identical with the reference spectrum of rGO."
     }
    ],
    "outcomes": [
@@ -1177,10 +1191,8 @@
      "unit": "cm3",
      "purity": "conductivity of 0.05 μS/cm at 25 °C",
      "supplier_quote": "High purity water (Millipore Elix Advantage water purification system purchased from Merck KGaA, Darmstadt, Germany, with the conductivity of 0.05 μS/cm at 25 °C)",
-     "not_stated": [
-      "supplier"
-     ],
-     "quote": "5 cm3 of ultra-pure water or butyl alcohol was added"
+     "quote": "5 cm3 of ultra-pure water or butyl alcohol was added",
+     "supplier": "Merck KGaA"
     }
    ],
    "not_stated": [
@@ -2179,7 +2191,7 @@
    "type": "resume",
    "route": null,
    "quote": "A hybrid nanocomposites containing nanocrystalline TiO2 and graphene-related materials (graphene oxide or reduced graphene oxide) were successfully prepared by mechanical mixing and the hydrothermal method in the high-pressure atmosphere.",
-   "text": "L'article prépare 16 composites TiO2/graphène à partir d'un TiO2 anatase commercial (procédé au sulfate) et d'oxyde de graphène (GO) ou d'oxyde de graphène réduit (rGO) à 1 ou 5 % massique, soit par simple mélange dans un mortier, soit par traitement à 200 °C pendant 4 h dans un réacteur sous pression, sans liquide, avec de l'eau ou avec du 1-butanol. La caractérisation (DRX, BET, analyse élémentaire, FTIR/DRS, XPS, UV-VIS/DRS, MEB) montre que le TiO2 n'est pas lié chimiquement au graphène (pas de Ti–O–C) : le procédé hydrothermal en une étape est jugé inefficace pour créer des liaisons covalentes à partir de TiO2 commercial."
+   "text": "L'article prépare 16 composites TiO2/graphène à partir d'un TiO2 anatase commercial (procédé au sulfate) et d'oxyde de graphène (GO) ou d'oxyde de graphène réduit (rGO) à 1 ou 5 % massique, soit par simple mélange dans un mortier, soit par traitement à 200 °C dans un réacteur sous pression : sans liquide (durée non écrite), ou avec 5 cm3 d'eau ou de 1-butanol (suspension maintenue 4 h à 200 °C, puis dégazage et séchage). La caractérisation (DRX, BET, analyse élémentaire, FTIR/DRS, XPS, UV-VIS/DRS, MEB) montre que le TiO2 n'est pas lié chimiquement au graphène (pas de Ti–O–C) : le procédé hydrothermal en une étape est jugé inefficace pour créer des liaisons covalentes à partir de TiO2 commercial."
   },
   {
    "type": "objectif_etude",
@@ -2217,12 +2229,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "TiO2-H2O-rGO(1 wt%)-A",
-   "text": "Hypothèse : à 200 °C sous pression autogène, l'eau n'agit que comme milieu de contact et de transfert de chaleur entre les particules de TiO2 et les feuillets. La croissance des cristallites d'anatase (de 12 à environ 20 nm) s'explique probablement par un mûrissement thermique et une coalescence des particules, avec fermeture des micropores. Les groupes –OH de surface du TiO2 et les groupes –COOH de bord du GO pourraient en principe se condenser en Ti–O–C, mais les auteurs ne le détectent pas, probablement parce que le GO du dépôt industriel porte peu de groupes de bord."
+   "text": "Hypothèse : à 200 °C dans le réacteur fermé, les 5 cm3 d'eau sont probablement en grande partie vaporisés (le volume de la cuve n'est pas donné) ; la fraction amorphe et hydratée du TiO2 issu du procédé au sulfate se dissoudrait puis se redéposerait sur les cristallites d'anatase (mûrissement hydrothermal), ce qui expliquerait la croissance de 12 nm à environ 19–22 nm et la perte des micropores. Le rGO, déjà très réduit (98 wt% de carbone en volume), resterait inerte et les nanoparticules se déposeraient physiquement sur les feuillets, comme le concluent les auteurs. Les groupes –OH de surface du TiO2 et –COOH de bord du GO pourraient en principe se condenser en Ti–O–C, mais aucune technique utilisée ne peut le détecter à cette dilution. Pour le GO, une déshydratation partielle est attendue dès 180 °C en milieu hydrothermal (Zhou et al., Chem. Mater. 2009, 21, 2950, doi 10.1021/cm9006603) mais n'est pas mesurée sur les échantillons à l'eau."
   },
   {
    "type": "mecanisme_analyse",
-   "route": "TiO2-ButOH-rGO(1 wt%)-A",
-   "text": "Hypothèse : le 1-butanol, qui se chauffe à 200 °C bien au-dessus de son point d'ébullition (117 °C), s'adsorbe sur le graphène par interactions hydrophobes et peut laisser des résidus carbonés sur les feuillets, ce qui explique probablement les teneurs en carbone supérieures à la charge introduite (6,27 wt% pour 5 % de rGO ; 8,38 wt% pour 5 % de GO)."
+   "route": "TiO2-ButOH-GO(5 wt%)-A",
+   "text": "Hypothèse : à 200 °C, bien au-dessus du point d'ébullition du 1-butanol (117 °C), l'alcool, en vapeur ou en liquide, réagirait avec les groupes oxygénés du GO (estérification des COOH de bord, ouverture des époxydes en éthers butyliques) et le réduirait en partie, comme d'autres alcools primaires (Dreyer et al., J. Mater. Chem. 2011, 21, 3443) ; il pourrait aussi se fixer en butoxyde sur les Ti–OH du TiO2. Ces groupes butyle liés résisteraient au dégazage et au séchage sous vide, ce qui expliquerait les teneurs en carbone supérieures à la charge introduite (8,38 wt% pour 5 % de GO, 6,27 wt% pour 5 % de rGO), plutôt qu'un simple recouvrement des feuillets par du butanol adsorbé. Le TiO2 cristalliserait moins que dans l'eau, faute de dissolution-reprécipitation."
   },
   {
    "type": "mecanisme_analyse",
@@ -2232,7 +2244,7 @@
   {
    "type": "securite_analyse",
    "route": "TiO2-H2O-rGO(1 wt%)-A",
-   "text": "L'article ne mentionne aucune précaution. Le réacteur sous pression chauffé à 200 °C avec un liquide (eau ou butanol inflammable) génère une pression autogène élevée : respecter le taux de remplissage et la pression maximale du réacteur, laisser refroidir avant d'ouvrir la soupape, et évacuer les vapeurs de butanol sous hotte. Les poudres de TiO2 nanométrique et de graphène sont à manipuler sans les inhaler (gants, masque)."
+   "text": "L'article ne mentionne aucune précaution. Le réacteur sous pression chauffé à 200 °C avec un liquide (eau, ou butanol inflammable, point éclair ≈ 29 °C d'après NOAA CAMEO Chemicals) génère une pression autogène élevée : respecter le taux de remplissage et la pression maximale du réacteur et laisser refroidir avant d'ouvrir la cuve. L'ouverture de la soupape à 200 °C (étape de dégazage d'1 h) détend brutalement de la vapeur d'eau ou de butanol : l'orienter vers une évacuation sous hotte, loin de toute source d'ignition, sans s'exposer au jet. Les poudres de TiO2 nanométrique et de graphène sont à manipuler sans les inhaler (gants, masque)."
   },
   {
    "type": "limite_reproductibilite",
@@ -2248,8 +2260,88 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Valeurs de référence des matériaux graphéniques utilisés, sans voie de synthèse dans l'article : GO et rGO contiennent respectivement environ 52 et 92 wt% de carbone en surface (XPS) et 46 et 98 wt% en volume (analyse élémentaire), pour des surfaces BET de 33 et 62 m2/g.",
+   "text": "Teneurs en carbone des matériaux graphéniques de départ, sans voie de synthèse dans l'article : le GO et le rGO contiennent respectivement environ 52 et 92 wt% de carbone en surface (XPS) et 46 et 98 wt% en volume (analyse élémentaire).",
    "quote": "Quantitative calculation of the surface composition of GO and rGO indicates that graphene oxide and reduced graphene oxide contain about 52 wt% and 92 wt% of carbon, respectively. Elemental analysis confirm the presence of 46 wt% of carbon in pure GO and 98 wt% for pure rGO in the bulk."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "TiO2-rGO(1 wt%)-A",
+   "text": "Hypothèse : sans liquide ajouté, le TiO2 de départ garde de l'eau adsorbée (les auteurs observent une perte de masse en ATG entre 70 et 130 °C) ; dans le réacteur fermé, cette eau crée une atmosphère de vapeur. Une fraction amorphe et hydratée du TiO2 cristalliserait et mûrirait sous cette vapeur, avec frittage des agrégats : croissance des cristallites à 16–18 nm, perte des micropores, SBET ramenée vers la surface géométrique des cristallites. Le graphène n'y jouerait aucun rôle mesurable (Vmicro identique à 1 et 5 %)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "TiO2-GO(5 wt%)-A",
+   "text": "Hypothèse : à 200 °C en enceinte close, les époxydes et hydroxyles du GO se déshydrateraient et se décomposeraient d'abord en surface (désoxygénation partielle, rétablissement de domaines sp2), ce qui expliquerait un C 1s de surface proche de celui du rGO alors que le FTIR/DRS voit encore les groupes oxygénés du GO en volume (Zhou et al., Chem. Mater. 2009, 21, 2950 ; Dreyer et al., Chem. Soc. Rev. 2010, 39, 228). Le TiO2 serait seulement déposé sur les feuillets ; une condensation Ti–OH + HOOC– reste possible en faible quantité, mais aucune technique utilisée ne peut la détecter à cette dilution."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Valeurs de référence du TiO2 de départ (matière première sans voie de synthèse dans l'article), base de comparaison des séries M et A : anatase 99 %, cristallites dA = 12 nm, FWHM = 0,79°, SBET = 312 m2/g, Vtotal = 0,27, Vmicro = 0,11 et Vmeso = 0,16 cm3/g, carbone 0 wt% (rangée du tableau 1).",
+   "quote": "starting TiO2 | 99 | 12 | 0.79 | 312 | 0.27 | 0.11 | 0.16 | 0"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Surfaces BET des matériaux graphéniques de départ, sans voie de synthèse dans l'article : 33 m2/g pour le GO et 62 m2/g pour le rGO (ordre « respectively » vérifié), très en dessous de la surface théorique du graphène (2630 m2/g).",
+   "quote": "The SBET values measured for GO and rGO amount to 33 and 62 m2/g, respectively, which is substantially lower than the theoretical surface area (2630 m2/g)"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Provenance du rGO : il provient de la même partie de GO que le GO utilisé, dont la moitié a été réduite ; les conditions de cette réduction ne sont pas décrites. GO et rGO ne sont donc pas des voies de l'article.",
+   "quote": "Then, the amount of GO was divided into equal halves and one of obtained halves was reduced to obtain reduced graphene oxide"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Résultat FTIR/DRS donné pour le groupe des échantillons chauffés à 200 °C dans l'autoclave (série A, avec ou sans liquide) : intensité plus faible des groupes O–H à 3700–2600 et 1644 cm−1 (déshydroxylation de la surface du TiO2) et nouveaux pics à 3688 et 3628 cm−1 attribués à des groupes hydroxyle isolés.",
+   "quote": "Samples heated at 200 °C in an autoclave are characterized by a lower intensity of O–H groups at 3700–2600 cm−1, as well as at 1644 cm−1, which is typical for dehydroxylation of TiO2 surface due to the heat treatment [,,], although the new peaks at 3688 and 3628 cm−1 associated with a stretching vibration modes of isolated hydroxyl groups are observed for heat-treated samples []."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Absence de liaison Ti–O–C, pour l'ensemble des composites : pas de bande à 799 cm−1 en FTIR/DRS (la bande Ti–O–C de Jiang et al. prouverait une interaction chimique) et pas de décalage vers le rouge du seuil d'absorption en UV-VIS/DRS.",
+   "quote": "According to Jiang et al. [] the presence of the Ti–O–C bond at 799 cm−1 proves the chemical interaction between rGO and TiO2. This peak was not found in our case. Additionally, the UV-VIS/DRS analysis allows to observe no red-shift of the modified TiO2 absorption band edge (see Figure 5)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-GO(5 wt%)-A",
+   "text": "Incohérence interne du tableau 1 pour cet échantillon : Vmeso = 0,31 cm3/g alors que Vtotal − Vmicro = 0,31 − 0,04 = 0,27 cm3/g, l'égalité étant vérifiée pour les 16 autres rangées ; l'un des trois chiffres est probablement une erreur de l'article. Les valeurs sont conservées telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-GO(5 wt%)-A",
+   "text": "L'état du GO de cet échantillon n'est pas établi : le résumé dit que le traitement n'a pas réduit le GO, l'XPS C 1s indique une réduction « presque totale » alors que le FTIR/DRS montre encore les pics du GO, un autre passage dit que les spectres XPS en autoclave à 1 et 5 wt% sont proches de TiO2-GO(1 wt%)-M (donc sans rGO), et les conclusions parlent d'une réduction du GO en rGO à 5 wt%. Un chimiste ne peut pas savoir si ce GO est réduit, et les analyses ne portent pas sur le même échantillon."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-GO(1 wt%)-A",
+   "text": "L'argument « pas de changement de la teneur en carbone, donc pas de réduction du GO » ne discrimine pas : le carbone se conserve lors de la désoxygénation, et une réduction complète ne ferait passer le composite à 5 wt% de GO que de 2,19 à 2,25 wt% de carbone, sous la dispersion de mesure. En outre, la preuve de non-réduction vient d'un échantillon traité sans liquide, alors que le GO se réduit en milieu hydrothermal dès 180 °C (Zhou et al., Chem. Mater. 2009, 21, 2950) ; les échantillons TiO2-H2O-GO ne sont pas analysés en XPS."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-rGO(1 wt%)-A",
+   "text": "Les auteurs attribuent la baisse du volume microporeux en partie au blocage par les feuillets de GO et de rGO, mais Vmicro est le même à 1 et à 5 % de graphène (0,03–0,04 cm3/g) et aucun témoin TiO2 seul traité à 200 °C (à sec, dans l'eau, dans le butanol) n'est décrit : aucun effet ne peut être attribué au graphène. Le TiO2 de départ a une SBET (312 m2/g) environ 2,4 fois supérieure à la surface géométrique de cristallites de 12 nm, ce qui suggère une fraction amorphe ou hydratée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2-ButOH-GO(5 wt%)-A",
+   "text": "Le carbone retenu dépasse l'attendu d'environ 6 wt% (8,38 wt% mesurés pour environ 2,19 wt% attendus) après 1 h de dégazage à 200 °C et 24 h à 105 °C sous vide : un butanol simplement adsorbé (ébullition à 117,7 °C) serait parti, il s'agit probablement de butyle lié chimiquement (Dreyer et al., J. Mater. Chem. 2011, 21, 3443), ce qui rend l'interprétation des auteurs (butanol qui couvre le graphène) trop faible. Aucun témoin TiO2 + butanol sans graphène n'est décrit, et les liaisons Ti–O–C cherchées pourraient se former avec le butanol."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Volume de la cuve et taux de remplissage du réacteur non donnés : le « BLH-800 » semble désigner un module de chauffage Berghof plutôt qu'une cuve (la critique scientifique n'a pas trouvé de fiche « BLH-800 » ; les cuves de la série BR font de 30 à 2230 mL). Avec 5 cm3 de liquide dans une cuve de plusieurs centaines de mL, le TiO2 est probablement exposé à de la vapeur plutôt qu'à une suspension, et la pression atteinte dépend de ce volume."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le texte lit la hausse de la FWHM des mélanges (0,79° à 0,87–0,93°) comme une possible hausse de cristallinité ; c'est l'inverse (raie plus large = cristallites plus petites ou plus désordonnées), et l'écart est de l'ordre de la répétabilité de la DRX. Les tailles dA du tableau 1 ne se retrouvent par la formule de Scherrer qu'avec une correction de l'élargissement instrumental (environ 0,115° d'après la critique scientifique) que l'article ne mentionne pas, ni la constante K. Le texte écrit aussi « Ti 2p5/2 » pour le doublet Ti 2p3/2–Ti 2p1/2 (écart de 5,7 eV, valeur de l'anatase d'après Biesinger et al., Appl. Surf. Sci. 2010, 257, 887)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Preuve de l'absence de Ti–O–C fragile : à 95–99 wt% de TiO2, la zone vers 799 cm−1 est dominée par l'absorption du réseau Ti–O–Ti (bande large sous 1000 cm−1, placée à 954 cm−1 par les auteurs), qui masquerait une bande de liaisons interfaciales peu nombreuses ; le décalage UV-visible n'est pas chiffré (pas de gap de Tauc). La conclusion « pas de liaison covalente » est vraisemblable, mais aucune des trois techniques n'est discriminante à cette dilution."
   }
  ],
  "method_sources": [
@@ -2277,7 +2369,7 @@
   },
   {
    "where": "Fig. 2 (MEB)",
-   "issue": "Le texte dit que la Fig. 2 montre TiO2-ButOH-GO(5 wt%)-A et TiO2-ButOH-rGO(5 wt%)-A ; la légende dit TiO2-GO(5 wt%)-A et TiO2-rGO(5 wt%)-A. Légende retenue (échantillons sans liquide), la lecture du texte étant possible ; l'image ne porte pas d'étiquette d'échantillon."
+   "issue": "Attribution incertaine de la Fig. 2 (MEB, observation « toute la surface des feuillets est décorée de nanoparticules de TiO2 ») : le texte dit qu'elle montre TiO2-ButOH-GO(5 wt%)-A et TiO2-ButOH-rGO(5 wt%)-A (échantillons au butanol), la légende dit TiO2-GO(5 wt%)-A et TiO2-rGO(5 wt%)-A (échantillons sans liquide) ; l'image, sans étiquette d'échantillon, ne tranche pas. Deux lectures possibles : échantillons sans liquide (légende, retenue pour les caractérisations SEM de TiO2-rGO(5 wt%)-A et TiO2-GO(5 wt%)-A) ou échantillons au butanol (texte, aucune caractérisation SEM rattachée aux voies TiO2-ButOH)."
   },
   {
    "where": "TiO2-rGO/GO(1 ou 5 wt%)-A (sans liquide), étapes",
@@ -2294,6 +2386,14 @@
   {
    "where": "Figures lues",
    "issue": "Aucune valeur n'a été lue sur figure : tous les résultats chiffrés sont dans le tableau 1 ou le texte. Figures ouvertes : Fig. 1 (DRX), Fig. 2 (MEB), Fig. 5 (UV-VIS/DRS), sans valeur chiffrable ; Fig. 3 (FTIR) et Fig. 4 (XPS) non ouvertes car leurs valeurs sont données dans le texte."
+  },
+  {
+   "where": "TiO2-GO(5 wt%)-A, Table 1 (Vmeso)",
+   "issue": "Pour les 16 autres rangées du tableau 1, Vtotal = Vmicro + Vmeso ; ici 0,04 + 0,31 = 0,35, différent de Vtotal = 0,31. Un des trois chiffres (Vtotal, Vmicro ou Vmeso) est probablement une erreur de l'article (si Vmeso = Vtotal − Vmicro, il vaudrait 0,27). Les trois valeurs sont recopiées telles qu'écrites, sans correction."
+  },
+  {
+   "where": "TiO2-GO(1 wt%)-A et TiO2-GO(5 wt%)-A, XPS C 1s du GO en autoclave",
+   "issue": "Deux phrases des auteurs s'opposent : « Mixing of GO with TiO2 in the autoclave results in the almost identical spectrum for both small and high concentration of GO and are both similar to the spectrum of TiO2-GO(1 wt%)-M sample » (spectres identiques à 1 et 5 wt%, proches du mélange manuel à 1 wt% donc du carbone adventice, c'est-à-dire pas de rGO) et « XPS study for TiO2-GO(5 wt%)-A confirms almost total reduction of GO in the tested sample (C 1s signal very similar to TiO2-rGO(5 wt%)-A) ». Seule la seconde est extraite (caractérisation XPS de TiO2-GO(5 wt%)-A). Les figures ne tranchent pas : la Fig. 4 porte l'étiquette (14) sur TiO2-GO(5 wt%)-A alors que la Fig. 3b numérote (14) TiO2-H2O-GO(1 wt%)-A ; c'est le nom écrit qui est retenu, pas le numéro."
   }
  ]
 }

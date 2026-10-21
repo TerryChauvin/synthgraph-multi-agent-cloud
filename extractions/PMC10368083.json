@@ -173,10 +173,9 @@
      "amount": 0.06,
      "unit": "g",
      "amount_text": "0.06 g, 2 mmol",
-     "supplier": "Merck or Sigma-Aldrich",
-     "supplier_quote": "All materials and solvents such as 2-amino terephthalic acid (NH2–H2BDC), DMF, ZrCl4, methanol, acetone, ethanol, paraformaldehyde, phosphorous acid, p-toluene sulfonic acid (p-TSA), 2-oxopropanoic acid, ethyl 2-oxopropanoate, acetic acid, ammonium acetate, malononitrile and aldehyde derivatives were purchased from Merck or Sigma-Aldrich and used without further purification.",
      "not_stated": [
-      "purity"
+      "purity",
+      "supplier"
      ]
     },
     {
@@ -241,6 +240,11 @@
        "value_num": 12,
        "unit": "hours",
        "quote": "Then, by the method of functionalization with phosphorus acid, a mixture of UiO-66(Zr)-NH2 (0.5 g), formaldehyde (0.06 g, 2 mmol), phosphorus acid (0.164 g, 2 mmol), p-TSA (10 mol%, 0.017 g) and ethanol (10 mL) in a 25 mL round-bottomed flask were refluxed for 12 hours."
+      },
+      {
+       "name": "temperature",
+       "value_text": "reflux",
+       "quote": "a mixture of UiO-66(Zr)-NH2 (0.5 g), formaldehyde (0.06 g, 2 mmol), phosphorus acid (0.164 g, 2 mmol), p-TSA (10 mol%, 0.017 g) and ethanol (10 mL) in a 25 mL round-bottomed flask were refluxed for 12 hours."
       }
      ],
      "equipment": [
@@ -251,7 +255,6 @@
       }
      ],
      "not_stated": [
-      "temperature",
       "stirring_speed",
       "atmosphere",
       "cooling_rate"
@@ -318,6 +321,13 @@
      "instrument": null,
      "conditions": null,
      "quote": "The broad peak 2800–3500 cm−1 is related to OH of PO3H2 groups. Then, the absorption bands at 1014 and 1065 cm−1 are related to P–O bond stretching"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "band at 1104 cm−1 related to P=O (the double-bond symbol is an image in the source text, which stops after « related to P »; read as P=O)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "the absorption bands at 1014 and 1065 cm−1 are related to P–O bond stretching and the band at 1104 cm−1 is related to P"
     },
     {
      "technique": "FT-IR",
@@ -745,6 +755,13 @@
      "instrument": null,
      "conditions": "101 MHz, DMSO",
      "quote": "13C NMR (101 MHz, DMSO) δ (ppm) 167.3, 167.2, 161.8, 158.4, 116.4, 115.3, 79.1, 70.4."
+    },
+    {
+     "technique": "catalytic test: recyclability (Fig. 11)",
+     "result": "recyclability of the catalyst in the model reaction, see outcomes yield_run_1 to yield_run_7 (Fig. 11)",
+     "instrument": null,
+     "conditions": "ethyl 2-oxopropanoate 1 mmol (0.116 g), ammonium acetate 1.5 mmol (0.115 g), malononitrile 1.2 mmol (0.079 g), 4-chlorobenzaldehyde 1 mmol (0.140 g), under the above-mentioned optimized reaction conditions; duration of each cycle, washing and drying of the catalyst between cycles not stated",
+     "quote": "by reaction of ethyl 2-oxopropanoate (1 mmol, 0.116 g), ammonium acetate (1.5 mmol, 0.115 g), malononitrile (1.2 mmol, 0.079 g) and 4-chlorobenzaldehyde (1 mmol, 0.140 g) as a model reaction under the above-mentioned optimized reaction conditions"
     }
    ],
    "outcomes": [
@@ -1304,10 +1321,15 @@
      "property": "melting_point (product B6)",
      "value_text": ">300 °C",
      "quote": "Mp: >300 °C"
+    },
+    {
+     "property": "model reaction under argon, nitrogen and oxygen atmospheres (Fig. 10)",
+     "value_text": "The obtained results of the model reaction under argon, nitrogen and oxygen atmospheres are similar",
+     "quote": "The obtained results of the model reaction under argon, nitrogen and oxygen atmospheres are similar which are verified presented mechanism (Fig. 10)."
     }
    ],
    "missing_fields": [
-    "reflux temperature",
+    "numerical reflux temperature",
     "drying time",
     "yield and recovery of the product"
    ]
@@ -1333,8 +1355,8 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "quote": "As shown Table 2, UiO-66(Zr)-N(CH2PO3H2)2 is the best catalyst for the synthesis of picolinate and picolinic acid derivatives.",
-   "text": "Sur la réaction modèle (4-chlorobenzaldéhyde, pyruvate d'éthyle), le meilleur rendement (88 %) est obtenu avec 5 mg de catalyseur dans l'éthanol à 25 °C en 60 min ; 10 mg donnent le même rendement (88 %), 2,5 mg seulement 70 % en 80 min et sans catalyseur on n'observe que des traces. Le DMF à 100 °C donne 80 %, l'éthanol à reflux 60 % et à 50 °C 72 % ; l'eau (25 %), l'acétonitrile (60 %), le chloroforme (50 %) et le méthanol (45 %) sont moins bons, l'hexane, le dichlorométhane et l'acétate d'éthyle ne donnent rien, et sans solvant on obtient 25 % à 100 °C et rien à 25 °C. Les autres catalyseurs acides donnent de 35 % (SSA) à 70 % ([PVI-SO3H]Cl, H3PO4, H3PO3), le support UiO-66-NH2 seul 24 % et Fe3O4 rien, contre 88 % pour le MOF phosphonaté (ces autres catalyseurs ne sont pas synthétisés ici et ne sont donc pas des voies). Avec les aldéhydes du tableau 3, les rendements vont de 74 % (A3, pyridin-3-yle) à 91 % (A6, 4-nitrophényle) en 45 à 75 min."
+   "quote": "1 | [Py-SO3H]Cl (ref. ) | 10 mol% | 120 | 40\n2 | Fe3O4 | 10 mg | 120 | —\n3 | Al(HSO4)3 | 10 mol% | 90 | 45\n4 | H3[P(W3O10)4]·XH2O | 10 mol% | 80 | 50\n5 | p-TSA | 10 mol% | 60 | 60\n6 | SSA (ref. and ) | 10 mg | 80 | 35\n7 | GTBSA (ref. ) | 10 mol% | 70 | 58\n8 | [PVI-SO3H]Cl (ref. ) | 10 mol% | 65 | 70\n9 | UiO-66-NH2 | 5 mg | 120 | 24\n10 | H3PO4 | 10 mol% | 80 | 70\n11 | UiO-66-N(CH2PO3H2)2 | 5 mg | 60 | 88\n12 | H3PO3 | 5 mol% | 85 | 70",
+   "text": "Sur la réaction modèle (4-chlorobenzaldéhyde, pyruvate d'éthyle), le meilleur rendement (88 %) est obtenu avec 5 mg de catalyseur dans l'éthanol à 25 °C en 60 min ; 10 mg donnent le même rendement (88 %), 2,5 mg seulement 70 % en 80 min et sans catalyseur on n'observe que des traces. Le DMF à 100 °C donne 80 %, l'éthanol à reflux 60 % et à 50 °C 72 % ; l'eau (25 %), l'acétonitrile (60 %), le chloroforme (50 %) et le méthanol (45 %) sont moins bons, l'hexane, le dichlorométhane et l'acétate d'éthyle ne donnent rien, et sans solvant on obtient 25 % à 100 °C et rien à 25 °C. Tableau 2 (réaction modèle dans l'éthanol à température ambiante ; les auteurs concluent que le MOF phosphonaté est le meilleur catalyseur) : [Py-SO3H]Cl 10 mol % 120 min 40 % ; Fe3O4 10 mg 120 min, aucun rendement (« — ») ; Al(HSO4)3 10 mol % 90 min 45 % ; H3[P(W3O10)4]·XH2O 10 mol % 80 min 50 % ; p-TSA 10 mol % 60 min 60 % ; SSA 10 mg 80 min 35 % ; GTBSA 10 mol % 70 min 58 % ; [PVI-SO3H]Cl 10 mol % 65 min 70 % ; UiO-66-NH2 seul 5 mg 120 min 24 % ; H3PO4 10 mol % 80 min 70 % ; H3PO3 5 mol % 85 min 70 % ; contre 5 mg du MOF phosphonaté, 60 min, 88 % (ces autres catalyseurs ne sont pas synthétisés ici et ne sont donc pas des voies ; le réactif de référence des « mol % » n'est pas précisé). Avec les aldéhydes du tableau 3, les rendements vont de 74 % (A3, pyridin-3-yle) à 91 % (A6, 4-nitrophényle) en 45 à 75 min."
   },
   {
    "type": "tendance_observee",
@@ -1357,7 +1379,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "UiO-66(Zr)-N(CH2PO3H2)2",
-   "text": "Probablement une phosphonométhylation de type Moedritzer–Irani (ou Kabachnik–Fields) : l'amine aromatique du ligand 2-aminotéréphtalate condense avec le formaldéhyde, puis l'acide phosphoreux (forme H-phosphonate) s'additionne sur l'iminium pour donner N(CH2PO3H2)2 ; le p-TSA fournit l'acidité qui catalyse la formation de l'iminium. On attend que la fonctionnalisation reste sur la surface et les pores accessibles du MOF, puisque la structure cristalline est conservée."
+   "text": "Hypothèse : réaction de type Moedritzer–Irani (Mannich avec l'acide phosphoreux) : l'amine aromatique du ligand 2-aminotéréphtalate forme un iminium avec le formaldéhyde (catalyse acide par le p-TSA), puis la forme P(III) de l'acide phosphoreux s'additionne pour donner N–CH2–PO3H2. Avec 1,17 équivalent de chaque réactif, une aniline peu nucléophile (carboxylates liés au Zr) et seulement environ 5 mol % de p-TSA dans l'éthanol, le matériau obtenu est plus probablement une phosphonométhylation partielle, c'est-à-dire un mélange de NH2 libres, de NH–CH2PO3H2 et de quelques N(CH2PO3H2)2, avec de l'acide phosphoreux adsorbé ou coordiné aux sites Zr (Zr–O–P) non éliminé par le lavage, comme le suggèrent les raies d'H3PO3 en DRX. La fonctionnalisation resterait sur la surface et les pores accessibles puisque la cristallinité est conservée (non vérifié par BET)."
   },
   {
    "type": "mecanisme_analyse",
@@ -1367,12 +1389,48 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le formaldéhyde (ou le paraformaldéhyde) est toxique et cancérogène, l'acide phosphoreux et l'acide p-toluènesulfonique sont corrosifs, ZrCl4 est corrosif et dégage du HCl à l'humidité, le DMF est reprotoxique, le malononitrile est toxique (libération possible de cyanure) et l'autoclave de la synthèse de UiO-66(Zr)-NH2 travaille sous pression à 120 °C. À manipuler sous hotte, avec gants et lunettes ; les poudres nanométriques de MOF ne doivent pas être inhalées. L'article ne mentionne aucune précaution."
+   "text": "Le formaldéhyde (ou le paraformaldéhyde) est toxique et cancérogène, l'acide phosphoreux et l'acide p-toluènesulfonique sont corrosifs, ZrCl4 est corrosif et dégage du HCl à l'humidité, le DMF est reprotoxique, le malononitrile est toxique (libération possible de cyanure) et l'autoclave de la synthèse de UiO-66(Zr)-NH2 travaille sous pression à 120 °C. À manipuler sous hotte, avec gants et lunettes ; les poudres nanométriques de MOF ne doivent pas être inhalées. L'article ne mentionne aucune précaution. L'acide phosphoreux se décompose à la chaleur (vers 200 °C) en phosphine, gaz toxique et spontanément inflammable : ne pas activer ce catalyseur à haute température (NOAA, CAMEO Chemicals, fiche de l'acide phosphoreux)."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Le texte ne décrit pas la synthèse de UiO-66(Zr)-NH2 (renvoi à une publication antérieure) : seules les conditions dessinées sur la figure 4 (DMF, acide acétique, 120 °C, 24 h) sont lues, sans quantités ni isolement du solide. La température du reflux, la durée de séchage de la fonctionnalisation et le rendement ne sont pas donnés. Le tableau 3 est une image : rendements et durées ont été lus sur celle-ci. Les aldéhydes des produits A1–A3, A5–A10 et B2–B6 ne sont pas nommés. Les références des catalyseurs comparés dans le tableau 2 ne sont pas dans le texte.",
+   "text": "Le texte ne décrit pas la synthèse de UiO-66(Zr)-NH2 (renvoi à une publication antérieure) : seules les conditions dessinées sur la figure 4 (DMF, acide acétique, 120 °C, 24 h) sont lues, sans quantités ni isolement du solide. La température du reflux, la durée de séchage de la fonctionnalisation et le rendement ne sont pas donnés. Le tableau 3 est une image : rendements et durées ont été lus sur celle-ci. Les aldéhydes des produits A1–A3, A5–A10 et B2–B6 ne sont pas nommés. Les marqueurs « (ref. ) » du tableau 2 n'ont pas de numéro dans le texte, mais les renvois correspondants existent dans la liste des références (cit49 à cit53, pour [Py-SO3H]Cl, SSA, GTBSA et [PVI-SO3H]Cl) ; ces catalyseurs ne sont pas préparés dans l'article.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66(Zr)-N(CH2PO3H2)2",
+   "text": "La figure 11 montre une baisse du rendement de 90 % (cycle 1) à 75 % (cycles 6 et 7), soit 15 points, alors que les auteurs écrivent que le catalyseur est réutilisable « sans changement notable de son activité catalytique ». Les conditions du test (durée de chaque cycle, lavage et séchage entre cycles, masse de catalyseur récupérée) ne sont pas décrites ; six réutilisations plus la première utilisation font sept cycles, ce qui peut s'accorder avec « after seven times of use ».",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66(Zr)-N(CH2PO3H2)2",
+   "text": "Bilan de la fonctionnalisation : 0,5 g de UiO-66-NH2 contient au plus 1,71 mmol de NH2 (3,42 mmol/g pour la maille idéale, sans défauts), et les 2 mmol de formaldéhyde et d'acide phosphoreux ne font que 1,17 équivalent par amine, alors que le groupe N(CH2PO3H2)2 en exige 2 chacun. Même à conversion totale, au plus 58 % des amines pourraient porter deux groupes CH2PO3H2 : la formule UiO-66(Zr)-N(CH2PO3H2)2 est idéalisée et le taux réel de greffage n'est dosé nulle part (EDX en cartes sans pourcentages).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66(Zr)-N(CH2PO3H2)2",
+   "text": "Le greffage covalent N–CH2–P n'est pas démontré : la DRX montre les raies de l'acide phosphoreux libre après un simple lavage à l'éthanol (2 × 5 mL), aucun test de filtration à chaud ni dosage de P dans le filtrat n'exclut une activité due à H3PO3 lixivié, et H3PO3 libre à 5 mol % donne déjà 70 % (tableau 2, entrée 12) ; le témoin UiO-66-NH2 traité par H3PO3 sans formaldéhyde manque. Le pic N 1s à 399,6 eV attribué à N–C–P est aussi la position d'une amine aromatique libre, sans spectre N 1s du matériau de départ pour comparaison.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66(Zr)-N(CH2PO3H2)2",
+   "text": "Ajustement XPS du P 2p : les composantes à 133,4 et 135,5 eV, attribuées à P 2p3/2 et P 2p1/2, sont séparées de 2,1 eV alors que le doublet spin-orbite réel du phosphore est de 0,86–0,87 eV (Thermo Fisher, tableau périodique XPS) et que le rapport d'aires attendu est 2:1 : la seconde composante est une autre espèce de P ou un artefact d'ajustement. Les positions du C 1s (283,6 eV pour C–C, C–N sous C=C) suggèrent en outre une calibration décalée d'environ 1 eV.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66(Zr)-N(CH2PO3H2)2",
+   "text": "Données de caractérisation des produits incohérentes : la RMN 1H de A7 (4-pyridyle) recopie celle de A6 (4-nitrophényle) (8,39 et 7,89 ppm) alors que les H en α de l'azote d'un 4-pyridyle sortent vers 8,7 ppm ; la RMN 13C de B6 ne compte que 8 pics, dont 79,1 et 70,4 ppm absents de la structure ; les valeurs IR « 230 » (A3) et « 34.8 » (B6) sont probablement des fautes de frappe. L'identité de A7 et de B6 n'est donc pas établie par ces spectres.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UiO-66(Zr)-N(CH2PO3H2)2",
+   "text": "Réserves de chimie : (1) le p-TSA « 10 mol % » correspond à 0,017 g, soit environ 5 mol % des 2 mmol de réactifs (0,038 g de monohydrate seraient nécessaires pour 10 mol %) ; l'une des deux valeurs est fausse. (2) 0,06 g de formaldéhyde = 2 mmol de CH2O ne vaut que pour le paraformaldéhyde solide (la liste des matériaux le nomme) ; une solution de formol à 37 % n'en apporterait que 0,74 mmol. (3) L'acide phosphoreux en excès sur les sites Zr (1,17 P par Zr) peut coordiner les clusters Zr6 et dégrader UiO-66 (Bůžek et al., Inorg. Chem. Front. 2021, 8, 720, doi 10.1039/D0QI00973C) ; la conservation des raies DRX ne l'exclut pas, et aucune mesure BET ne vérifie la porosité.",
    "quote": null
   }
  ],
@@ -1792,6 +1850,15 @@
     "Table 3",
     "Spectral data"
    ]
+  },
+  {
+   "sample": "réaction modèle sous argon, azote et oxygène",
+   "defined_in": "Results and discussion, mécanisme (Fig. 10)",
+   "route": null,
+   "why": "essai catalytique de la réaction modèle sous trois atmosphères : l'article ne donne que le constat « résultats similaires », sans valeurs, rangé en outcome de la voie du catalyseur",
+   "results_in": [
+    "Fig. 10"
+   ]
   }
  ],
  "doubts": [
@@ -1817,7 +1884,7 @@
   },
   {
    "where": "Réutilisation du catalyseur (Fig. 11 et texte)",
-   "issue": "Le texte dit que le catalyseur peut être réutilisé « up to six times » mais que le catalyseur est analysé « after seven times of use » ; la figure 11 compte sept barres (90, 90, 85, 82, 77, 75, 75 %). Les sept valeurs imprimées sur la figure sont reprises (outcomes yield_run_1 à 7 de la voie du catalyseur) ; le premier cycle (90 %) diffère du 88 % du tableau 1 pour la même réaction. Dans la figure l'axe des cycles est numéroté de 1 à 7 ; l'ordre est lu avec le cycle 1 à droite."
+   "issue": "Le texte dit que le catalyseur peut être réutilisé « up to six times » mais qu'il est analysé « after seven times of use » ; la figure 11 compte sept barres (90, 90, 85, 82, 77, 75, 75 %). Les deux formules peuvent s'accorder (première utilisation plus six réutilisations), les auteurs ne le précisent pas. Les sept valeurs imprimées sur la figure sont reprises (outcomes yield_run_1 à 7 de la voie du catalyseur) ; le premier cycle (90 %) diffère du 88 % du tableau 1 pour la même réaction. Dans la figure l'axe des cycles est numéroté de 1 à 7 ; l'ordre est lu avec le cycle 1 à droite. Les conditions du test de recyclage ne sont pas décrites : durée de chaque cycle, lavage et séchage du catalyseur entre cycles, masse récupérée ; seule la réaction modèle « under the above-mentioned optimized reaction conditions » est citée."
   },
   {
    "where": "UiO-66(Zr)-NH2, étape 1",
@@ -1825,15 +1892,15 @@
   },
   {
    "where": "Catalyseur, étape 1",
-   "issue": "« were refluxed for 12 hours » sans température : la température est déclarée non citée (le point d'ébullition de l'éthanol n'est pas écrit)."
+   "issue": "« were refluxed for 12 hours » : l'article écrit « refluxed » (température enregistrée en texte, « reflux ») mais ne donne aucune valeur numérique ; la température en °C, que le texte ne cite pas, reste non citée (l'éthanol bout à environ 78 °C, valeur non reprise de l'article)."
   },
   {
    "where": "Catalyseur, réactifs",
-   "issue": "La procédure utilise « formaldehyde » alors que la liste des matériaux donne « paraformaldehyde » ; le fournisseur du formaldéhyde est repris de la phrase générale « All materials and solvents ... » qui vise tous les matériaux, sans certitude que ce soit le même produit."
+   "issue": "La procédure utilise « formaldehyde » alors que la liste des matériaux donne « paraformaldehyde » : la phrase générale « All materials and solvents ... » ne nomme donc pas le formaldéhyde de la procédure, et son fournisseur est déclaré non cité (rien n'assure qu'il s'agisse du même produit)."
   },
   {
    "where": "Spectres des produits A6 et A7",
-   "issue": "Les données RMN du 13C (et du 1H, hors quartet de l'éthyle) de A6 (4-nitrophényle) et A7 (4-pyridyle) sont presque identiques dans le texte (mêmes déplacements principaux, A7 ajoute un pic à 53,2 ppm). Elles sont recopiées telles quelles sans corriger ; une erreur de copie des auteurs est possible. Même remarque pour la RMN 13C de B6, qui ne compte que 8 pics pour 11 carbones distincts attendus."
+   "issue": "Les données RMN du 13C (et du 1H, hors quartet de l'éthyle) de A6 (4-nitrophényle) et A7 (4-pyridyle) sont presque identiques dans le texte (mêmes déplacements principaux, A7 ajoute un pic à 53,2 ppm). Elles sont recopiées telles quelles sans corriger ; une erreur de copie des auteurs est possible. Même remarque pour la RMN 13C de B6, qui ne compte que 8 pics pour 11 carbones distincts attendus. Les valeurs IR « 230 » (A3, 2929, 230, 1734…) et « 34.8 » (B6) sont recopiées telles quelles ; ce sont probablement des fautes de frappe des auteurs."
   },
   {
    "where": "Produits A1–A10 et B1–B6, réactifs",
@@ -1850,6 +1917,10 @@
   {
    "where": "Figures lues",
    "issue": "Figures ouvertes : Fig. 3 (schéma, redit le texte), Fig. 4 (conditions de UiO-66(Zr)-NH2 lues), Fig. 7 (MEB sans valeur chiffrée), Fig. 8 (EDX, pas de pourcentages), Fig. 11 (barres avec valeurs imprimées) et le tableau 3 (image). Les autres (FT-IR, DRX, XPS) ne portent que des spectres déjà décrits dans le texte."
+  },
+  {
+   "where": "UiO-66(Zr)-NH2 et fonctionnalisation, quantités et isolement",
+   "issue": "Aucune quantité de ZrCl4, de 2-aminotéréphtalate ou d'acide acétique, aucun volume d'autoclave ni isolement du MOF ne sont donnés (renvoi à la réf. cit44) ; la fonctionnalisation n'a ni rendement ni taux de greffage. Les aldéhydes des produits A1–A3, A5–A10 et B2–B6 ne sont écrits que sur le schéma du tableau 3, non nommés ici. Rien n'est déduit : ces informations sont marquées non citées."
   }
  ]
 }
