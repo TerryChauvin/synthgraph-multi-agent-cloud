@@ -1057,7 +1057,7 @@
      "quote": "the precipitation was redispersed in 5 mL of hexane",
      "amount": 5,
      "unit": "mL",
-     "purity": "A.R. Aldrich or 99.9%",
+     "purity": "99.9%",
      "supplier": "Fischer Scientific",
      "supplier_quote": "hexane (A.R. Aldrich or 99.9%, Fischer Scientific)"
     }
@@ -1263,8 +1263,15 @@
      "technique": "UV-vis absorption, PL and PLE",
      "result": "optical spectra of the hexane dispersions (Figures 2, 3 and S3-S4)",
      "instrument": "Gen5 Synergy H1 hybrid multimode reader spectrophotometer",
-     "conditions": "99-well plates; products in the hexane emulsion solution, blank well of clean hexane; step size of 1nm wavelength and intensity gain of 50 or 100",
+     "conditions": "99-well plates; products in the hexane emulsion solution, blank well of clean hexane; step size of 1nm wavelength and intensity gain of 50 or 100 ; longueur d'onde d'excitation du PL non citée dans le texte : λex = 350 nm sur la figure 3a (Bi) (étiquette de la figure, hors texte)",
      "quote": "The absorption, emission, and PLE characterizations were performed using a Gen5 Synergy H1 hybrid multimode reader spectrophotometer with 99-well plates."
+    },
+    {
+     "technique": "PLE (longueurs d'onde de détection)",
+     "result": "longueurs d'onde d'émission suivies pour le PLE : (S4a) 620 nm ; (S4c) 610 à 680 nm aux pics d'émission",
+     "instrument": "Gen5 Synergy H1 hybrid multimode reader spectrophotometer",
+     "conditions": "longueur d'onde de détection : (S4a) 620 nm ; (S4c) 610 à 680 nm aux pics d'émission",
+     "quote": "The emission wavelength for (a) is 620nm, for (b) between 450nm to 580nm at the emission peaks, for (c) between 610nm to 680nm at the emission peaks, and for (d) is 450nm."
     },
     {
      "technique": "PL lifetime and PLQY",
@@ -1362,6 +1369,11 @@
      "value_num": 365,
      "unit": "nm",
      "from_figure": "Fig. 2d"
+    },
+    {
+     "property": "PL_peak_shift_with_Ag_Na_ratio",
+     "quote": "For the Bi-doped system’s normalized photoluminescence (PL), changing the matrix almost does not influence the emission peak position, contrary to the absorption, as shown in Figure 2a.",
+     "value_text": "changing the matrix almost does not influence the emission peak position"
     }
    ]
   },
@@ -1445,6 +1457,11 @@
      "value_num": 365,
      "unit": "nm",
      "from_figure": "Fig. 2d"
+    },
+    {
+     "property": "PL_peak_shift_with_Ag_Na_ratio",
+     "quote": "For the Bi-doped system’s normalized photoluminescence (PL), changing the matrix almost does not influence the emission peak position, contrary to the absorption, as shown in Figure 2a.",
+     "value_text": "changing the matrix almost does not influence the emission peak position"
     }
    ]
   },
@@ -1528,6 +1545,11 @@
      "value_num": 350,
      "unit": "nm",
      "from_figure": "Fig. 2d"
+    },
+    {
+     "property": "PL_peak_shift_with_Ag_Na_ratio",
+     "quote": "For the Bi-doped system’s normalized photoluminescence (PL), changing the matrix almost does not influence the emission peak position, contrary to the absorption, as shown in Figure 2a.",
+     "value_text": "changing the matrix almost does not influence the emission peak position"
     }
    ]
   },
@@ -1594,6 +1616,11 @@
      "value_num": 42,
      "unit": null,
      "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "PL_peak_shift_with_Ag_Na_ratio",
+     "quote": "For the Bi-doped system’s normalized photoluminescence (PL), changing the matrix almost does not influence the emission peak position, contrary to the absorption, as shown in Figure 2a.",
+     "value_text": "changing the matrix almost does not influence the emission peak position"
     }
    ]
   },
@@ -1677,6 +1704,11 @@
      "value_num": 330,
      "unit": "nm",
      "from_figure": "Fig. 2d"
+    },
+    {
+     "property": "PL_peak_shift_with_Ag_Na_ratio",
+     "quote": "For the Bi-doped system’s normalized photoluminescence (PL), changing the matrix almost does not influence the emission peak position, contrary to the absorption, as shown in Figure 2a.",
+     "value_text": "changing the matrix almost does not influence the emission peak position"
     }
    ]
   },
@@ -1816,6 +1848,13 @@
      "instrument": "ID22 beamline of the European Synchrotron Radiation Facility (ESRF), Grenoble",
      "conditions": "wavelength of 0.35423 Å, room temperature; residue of the NC solution smeared onto a capillary",
      "quote": "The samples were measured by the ID22 beamline of the European Synchrotron Radiation Facility (ESRF) in Grenoble, France, at room temperature, using a wavelength of 0.35423 Å."
+    },
+    {
+     "technique": "DFT (structure relaxée, inclinaison des octaèdres)",
+     "result": "angles d'inclinaison extraits des structures relaxées ; écart maximal à l'angle non incliné (Figure 4d)",
+     "instrument": "code GPAW",
+     "conditions": "fonctionnelle PBEsol (GGA) ; mode ondes planes, coupure de 700 eV ; maille k de Monkhorst-Pack centrée en Γ de 4 k-point/Å ; forces résiduelles inférieures à 0,01 eV/Å ; supercellule 2√2x2√2x2 ; double pérovskite massive (bulk)",
+     "quote": "within the description of the PBEsol4 exchange-correlation functional, using the Plane Wave mode (cutoff of 700 eV) and a Γ-centered k-point Monkhorst-Pack mesh of 4 k-point/Å."
     }
    ]
   },
@@ -2055,6 +2094,13 @@
      "instrument": "HR-SEM Zeiss Ultra-Plus",
      "conditions": "working distance of 7mm, acceleration voltage of 15 kV",
      "quote": "The atomic percentage shows sub-stochiometric ratios, close to the loading ratios, with some deviations."
+    },
+    {
+     "technique": "DFT (structure relaxée, inclinaison des octaèdres)",
+     "result": "angles d'inclinaison extraits des structures relaxées ; écart maximal à l'angle non incliné (Figure 4d)",
+     "instrument": "code GPAW",
+     "conditions": "fonctionnelle PBEsol (GGA) ; mode ondes planes, coupure de 700 eV ; maille k de Monkhorst-Pack centrée en Γ de 4 k-point/Å ; forces résiduelles inférieures à 0,01 eV/Å ; supercellule 2√2x2√2x2 ; double pérovskite massive (bulk)",
+     "quote": "within the description of the PBEsol4 exchange-correlation functional, using the Plane Wave mode (cutoff of 700 eV) and a Γ-centered k-point Monkhorst-Pack mesh of 4 k-point/Å."
     }
    ]
   },
@@ -2136,8 +2182,8 @@
     {
      "technique": "XRD",
      "result": "XRD pattern recorded for the lattice parameter versus Bi content (Figure S5)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "(a) Cs2Ag0.4Na0.6In1-xBixCl6 (x=0, 0.4, 0.6, 1)"
     }
    ]
@@ -2186,6 +2232,13 @@
      "instrument": "ID22 beamline of the European Synchrotron Radiation Facility (ESRF), Grenoble",
      "conditions": "wavelength of 0.35423 Å, room temperature; residue of the NC solution smeared onto a capillary",
      "quote": "The samples were measured by the ID22 beamline of the European Synchrotron Radiation Facility (ESRF) in Grenoble, France, at room temperature, using a wavelength of 0.35423 Å."
+    },
+    {
+     "technique": "DFT (structure relaxée, inclinaison des octaèdres)",
+     "result": "angles d'inclinaison extraits des structures relaxées ; écart maximal à l'angle non incliné (Figure 4d)",
+     "instrument": "code GPAW",
+     "conditions": "fonctionnelle PBEsol (GGA) ; mode ondes planes, coupure de 700 eV ; maille k de Monkhorst-Pack centrée en Γ de 4 k-point/Å ; forces résiduelles inférieures à 0,01 eV/Å ; supercellule 2√2x2√2x2 ; double pérovskite massive (bulk)",
+     "quote": "within the description of the PBEsol4 exchange-correlation functional, using the Plane Wave mode (cutoff of 700 eV) and a Γ-centered k-point Monkhorst-Pack mesh of 4 k-point/Å."
     }
    ]
   },
@@ -2215,8 +2268,8 @@
     {
      "technique": "XRD",
      "result": "XRD pattern recorded for the lattice parameter versus Bi content (Figure S5)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "(a) Cs2Ag0.4Na0.6In1-xBixCl6 (x=0, 0.4, 0.6, 1)"
     }
    ]
@@ -2248,7 +2301,7 @@
      "technique": "PLE",
      "result": "PLE spectrum recorded at an emission wavelength between 610nm and 680nm (Figure S4c)",
      "instrument": null,
-     "conditions": null,
+     "conditions": "longueur d'onde de détection entre 610nm et 680nm aux pics d'émission (légende S4c) ; autres conditions comme pour le PLE de la voie de base",
      "quote": "(c) Cs2Ag0.4Na0.6In1-xBixCl6 (x=0.05, 0.2, 0.4, 0.6, 0.8, 1)"
     }
    ]
@@ -2285,8 +2338,8 @@
     {
      "technique": "XRD",
      "result": "XRD pattern recorded for the lattice parameter versus Bi content (Figure S5)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "(a) Cs2Ag0.4Na0.6In1-xBixCl6 (x=0, 0.4, 0.6, 1)"
     }
    ]
@@ -2315,12 +2368,38 @@
     {
      "technique": "XRD",
      "result": "pattern compared with the theoretical Cs2AgInCl6 (ICCD 01-085-7533) and Cs2NaInCl6 (CIF 4003575) patterns (Figure 1b); with Na alloying the {111} peak appears at about 14° and the {220} and {400} intensities change",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "(b) Cs2AgInCl6, Cs2Ag0.5Na0.5InCl6, Cs2NaInCl6, and Cs2Ag0.5Na0.5In0.9Bi0.1Cl6 nanoparticles"
     }
    ],
-   "outcomes": []
+   "outcomes": [],
+   "steps": [
+    {
+     "order": 1,
+     "action": "prepare",
+     "description": "Préparation non décrite : l'article ne donne que la composition de l'échantillon (légende de la figure 1b), aucun protocole.",
+     "quote": "(b) Cs2AgInCl6, Cs2Ag0.5Na0.5InCl6, Cs2NaInCl6, and Cs2Ag0.5Na0.5In0.9Bi0.1Cl6 nanoparticles",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "procedure",
+      "reagent_amounts",
+      "temperature",
+      "duration",
+      "atmosphere",
+      "workup"
+     ]
+    }
+   ],
+   "not_stated": [
+    "atmosphere",
+    "duration",
+    "reagent_amounts",
+    "synthesis_procedure",
+    "temperature",
+    "workup"
+   ]
   },
   {
    "label": "Cs2AgInCl6 (Fig. 1b)",
@@ -2352,12 +2431,38 @@
     {
      "technique": "XRD",
      "result": "pattern compared with the theoretical Cs2AgInCl6 (ICCD 01-085-7533) and Cs2NaInCl6 (CIF 4003575) patterns (Figure 1b)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "(b) Cs2AgInCl6, Cs2Ag0.5Na0.5InCl6, Cs2NaInCl6, and Cs2Ag0.5Na0.5In0.9Bi0.1Cl6 nanoparticles"
     }
    ],
-   "outcomes": []
+   "outcomes": [],
+   "steps": [
+    {
+     "order": 1,
+     "action": "prepare",
+     "description": "Préparation non décrite : l'article ne donne que la composition de l'échantillon (légende de la figure 1b), aucun protocole.",
+     "quote": "(b) Cs2AgInCl6, Cs2Ag0.5Na0.5InCl6, Cs2NaInCl6, and Cs2Ag0.5Na0.5In0.9Bi0.1Cl6 nanoparticles",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "procedure",
+      "reagent_amounts",
+      "temperature",
+      "duration",
+      "atmosphere",
+      "workup"
+     ]
+    }
+   ],
+   "not_stated": [
+    "atmosphere",
+    "duration",
+    "reagent_amounts",
+    "synthesis_procedure",
+    "temperature",
+    "workup"
+   ]
   },
   {
    "label": "Cs2NaInCl6 (Fig. 1b)",
@@ -2389,12 +2494,38 @@
     {
      "technique": "XRD",
      "result": "pattern compared with the theoretical Cs2AgInCl6 (ICCD 01-085-7533) and Cs2NaInCl6 (CIF 4003575) patterns (Figure 1b); with Na alloying the {111} peak appears at about 14° and the {220} and {400} intensities change",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "(b) Cs2AgInCl6, Cs2Ag0.5Na0.5InCl6, Cs2NaInCl6, and Cs2Ag0.5Na0.5In0.9Bi0.1Cl6 nanoparticles"
     }
    ],
-   "outcomes": []
+   "outcomes": [],
+   "steps": [
+    {
+     "order": 1,
+     "action": "prepare",
+     "description": "Préparation non décrite : l'article ne donne que la composition de l'échantillon (légende de la figure 1b), aucun protocole.",
+     "quote": "(b) Cs2AgInCl6, Cs2Ag0.5Na0.5InCl6, Cs2NaInCl6, and Cs2Ag0.5Na0.5In0.9Bi0.1Cl6 nanoparticles",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "procedure",
+      "reagent_amounts",
+      "temperature",
+      "duration",
+      "atmosphere",
+      "workup"
+     ]
+    }
+   ],
+   "not_stated": [
+    "atmosphere",
+    "duration",
+    "reagent_amounts",
+    "synthesis_procedure",
+    "temperature",
+    "workup"
+   ]
   },
   {
    "label": "Cs2Ag0.5Na0.5In0.9Sb0.1Cl6",
@@ -2495,7 +2626,7 @@
      "quote": "the precipitation was redispersed in 5ml hexane",
      "amount": 5,
      "unit": "mL",
-     "purity": "A.R. Aldrich or 99.9%",
+     "purity": "99.9%",
      "supplier": "Fischer Scientific",
      "supplier_quote": "hexane (A.R. Aldrich or 99.9%, Fischer Scientific)"
     }
@@ -2570,7 +2701,7 @@
     {
      "order": 4,
      "action": "react",
-     "description": "Stir for another 5 seconds after injection, then cool in a cold water bath.",
+     "description": "Stir for another 5 seconds after injection.",
      "quote": "The reaction was stirred for another 5 seconds and then cooled in a cold water bath.",
      "parameters": [
       {
@@ -2701,8 +2832,15 @@
      "technique": "UV-vis absorption, PL and PLE",
      "result": "optical spectra of the hexane dispersions (Figures 2b, 3b and S4)",
      "instrument": "Gen5 Synergy H1 hybrid multimode reader spectrophotometer",
-     "conditions": "99-well plates; products in the hexane emulsion solution, blank well of clean hexane",
+     "conditions": "99-well plates; products in the hexane emulsion solution, blank well of clean hexane; step size of 1nm wavelength and intensity gain of 50 or 100, depending on the specific product and the solution concentration ; longueur d'onde d'excitation du PL non citée dans le texte : λex = 320 nm sur la figure 3b (Sb) (étiquette de la figure, hors texte)",
      "quote": "The absorption, emission, and PLE characterizations were performed using a Gen5 Synergy H1 hybrid multimode reader spectrophotometer with 99-well plates."
+    },
+    {
+     "technique": "PLE (longueurs d'onde de détection)",
+     "result": "longueurs d'onde d'émission suivies pour le PLE : (S4b) 450 à 580 nm aux pics d'émission ; (S4d) 450 nm",
+     "instrument": "Gen5 Synergy H1 hybrid multimode reader spectrophotometer",
+     "conditions": "longueur d'onde de détection : (S4b) 450 à 580 nm aux pics d'émission ; (S4d) 450 nm",
+     "quote": "The emission wavelength for (a) is 620nm, for (b) between 450nm to 580nm at the emission peaks, for (c) between 610nm to 680nm at the emission peaks, and for (d) is 450nm."
     },
     {
      "technique": "PL lifetime and PLQY",
@@ -3054,6 +3192,11 @@
      "value_num": 28,
      "unit": null,
      "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "PL_peak_shift_with_dopant_concentration",
+     "quote": "Therefore, the Sb system does not experience any shift in the emission wavelength with increasing dopant concentration (Figure 3b).",
+     "value_text": "does not experience any shift in the emission wavelength"
     }
    ]
   },
@@ -3100,6 +3243,13 @@
      "instrument": "ID22 beamline of the European Synchrotron Radiation Facility (ESRF), Grenoble",
      "conditions": "wavelength of 0.35423 Å, room temperature; residue of the NC solution smeared onto a capillary",
      "quote": "The samples were measured by the ID22 beamline of the European Synchrotron Radiation Facility (ESRF) in Grenoble, France, at room temperature, using a wavelength of 0.35423 Å."
+    },
+    {
+     "technique": "DFT (structure relaxée, inclinaison des octaèdres)",
+     "result": "angles d'inclinaison extraits des structures relaxées ; écart maximal à l'angle non incliné (Figure 4d)",
+     "instrument": "code GPAW",
+     "conditions": "fonctionnelle PBEsol (GGA) ; mode ondes planes, coupure de 700 eV ; maille k de Monkhorst-Pack centrée en Γ de 4 k-point/Å ; forces résiduelles inférieures à 0,01 eV/Å ; supercellule 2√2x2√2x2 ; double pérovskite massive (bulk)",
+     "quote": "within the description of the PBEsol4 exchange-correlation functional, using the Plane Wave mode (cutoff of 700 eV) and a Γ-centered k-point Monkhorst-Pack mesh of 4 k-point/Å."
     }
    ]
   },
@@ -3138,6 +3288,11 @@
      "value_num": 28,
      "unit": null,
      "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "PL_peak_shift_with_dopant_concentration",
+     "quote": "Therefore, the Sb system does not experience any shift in the emission wavelength with increasing dopant concentration (Figure 3b).",
+     "value_text": "does not experience any shift in the emission wavelength"
     }
    ],
    "characterizations": []
@@ -3198,25 +3353,30 @@
     },
     {
      "property": "d_spacing_200",
-     "quote": "(f) HAADF-STEM micrograph of Cs2NaIn0.9Sb0.1Cl6. Inset: zoomed-in micrograph with labeled d-spacings of {200} and {220}.",
+     "quote": "To verify the structure of Cs2NaIn0.85Sb0.15Cl6, the HAADF-STEM micrograph is shown in Figure 1f, including the lattice structure d-spacing (inset).",
      "value_num": 5.33,
      "unit": "Å",
      "from_figure": "Fig. 1f"
     },
     {
      "property": "d_spacing_220",
-     "quote": "(f) HAADF-STEM micrograph of Cs2NaIn0.9Sb0.1Cl6. Inset: zoomed-in micrograph with labeled d-spacings of {200} and {220}.",
+     "quote": "To verify the structure of Cs2NaIn0.85Sb0.15Cl6, the HAADF-STEM micrograph is shown in Figure 1f, including the lattice structure d-spacing (inset).",
      "value_num": 3.76,
      "unit": "Å",
      "from_figure": "Fig. 1f"
+    },
+    {
+     "property": "PL_peak_shift_with_dopant_concentration",
+     "quote": "Therefore, the Sb system does not experience any shift in the emission wavelength with increasing dopant concentration (Figure 3b).",
+     "value_text": "does not experience any shift in the emission wavelength"
     }
    ],
    "characterizations": [
     {
      "technique": "XRD",
      "result": "NaCl peaks (gray stars) next to the double perovskite pattern (Figure 1c)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "Additional peaks of unwanted products are evident, including NaCl while alloying with Na and CsAgCl2 while alloying with Ag."
     },
     {
@@ -3224,7 +3384,7 @@
      "result": "d-spacings of 5.33 Å for {200} and 3.76 Å for {220} labelled on the inset (Figure 1f)",
      "instrument": "FEI/Thermo-Fisher double corrected 60-300 Titan Themis FEG-S/TEM",
      "conditions": "HAADF mode, accelerating voltage of 200KeV",
-     "quote": "(f) HAADF-STEM micrograph of Cs2NaIn0.9Sb0.1Cl6. Inset: zoomed-in micrograph with labeled d-spacings of {200} and {220}."
+     "quote": "To verify the structure of Cs2NaIn0.85Sb0.15Cl6, the HAADF-STEM micrograph is shown in Figure 1f, including the lattice structure d-spacing (inset)."
     }
    ]
   },
@@ -3270,6 +3430,11 @@
      "value_num": 28,
      "unit": null,
      "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "PL_peak_shift_with_dopant_concentration",
+     "quote": "Therefore, the Sb system does not experience any shift in the emission wavelength with increasing dopant concentration (Figure 3b).",
+     "value_text": "does not experience any shift in the emission wavelength"
     }
    ],
    "characterizations": []
@@ -3330,6 +3495,11 @@
      "value_num": 1.1,
      "unit": "deg",
      "from_figure": "Fig. 4d"
+    },
+    {
+     "property": "PL_peak_shift_with_dopant_concentration",
+     "quote": "Therefore, the Sb system does not experience any shift in the emission wavelength with increasing dopant concentration (Figure 3b).",
+     "value_text": "does not experience any shift in the emission wavelength"
     }
    ],
    "characterizations": [
@@ -3339,6 +3509,13 @@
      "instrument": "ID22 beamline of the European Synchrotron Radiation Facility (ESRF), Grenoble",
      "conditions": "wavelength of 0.35423 Å, room temperature; residue of the NC solution smeared onto a capillary",
      "quote": "The samples were measured by the ID22 beamline of the European Synchrotron Radiation Facility (ESRF) in Grenoble, France, at room temperature, using a wavelength of 0.35423 Å."
+    },
+    {
+     "technique": "DFT (structure relaxée, inclinaison des octaèdres)",
+     "result": "angles d'inclinaison extraits des structures relaxées ; écart maximal à l'angle non incliné (Figure 4d)",
+     "instrument": "code GPAW",
+     "conditions": "fonctionnelle PBEsol (GGA) ; mode ondes planes, coupure de 700 eV ; maille k de Monkhorst-Pack centrée en Γ de 4 k-point/Å ; forces résiduelles inférieures à 0,01 eV/Å ; supercellule 2√2x2√2x2 ; double pérovskite massive (bulk)",
+     "quote": "within the description of the PBEsol4 exchange-correlation functional, using the Plane Wave mode (cutoff of 700 eV) and a Γ-centered k-point Monkhorst-Pack mesh of 4 k-point/Å."
     }
    ]
   },
@@ -3384,6 +3561,11 @@
      "value_num": 28,
      "unit": null,
      "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "PL_peak_shift_with_dopant_concentration",
+     "quote": "Therefore, the Sb system does not experience any shift in the emission wavelength with increasing dopant concentration (Figure 3b).",
+     "value_text": "does not experience any shift in the emission wavelength"
     }
    ],
    "characterizations": []
@@ -3414,8 +3596,8 @@
     {
      "technique": "XRD",
      "result": "XRD pattern recorded for the lattice parameter versus Sb content (Figure S5); NaCl peaks marked",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "(b) Cs2NaIn1-xSbxCl6 (x=0, 0.4, 0.6, 1)"
     }
    ]
@@ -3464,6 +3646,13 @@
      "instrument": "ID22 beamline of the European Synchrotron Radiation Facility (ESRF), Grenoble",
      "conditions": "wavelength of 0.35423 Å, room temperature; residue of the NC solution smeared onto a capillary",
      "quote": "The samples were measured by the ID22 beamline of the European Synchrotron Radiation Facility (ESRF) in Grenoble, France, at room temperature, using a wavelength of 0.35423 Å."
+    },
+    {
+     "technique": "DFT (structure relaxée, inclinaison des octaèdres)",
+     "result": "angles d'inclinaison extraits des structures relaxées ; écart maximal à l'angle non incliné (Figure 4d)",
+     "instrument": "code GPAW",
+     "conditions": "fonctionnelle PBEsol (GGA) ; mode ondes planes, coupure de 700 eV ; maille k de Monkhorst-Pack centrée en Γ de 4 k-point/Å ; forces résiduelles inférieures à 0,01 eV/Å ; supercellule 2√2x2√2x2 ; double pérovskite massive (bulk)",
+     "quote": "within the description of the PBEsol4 exchange-correlation functional, using the Plane Wave mode (cutoff of 700 eV) and a Γ-centered k-point Monkhorst-Pack mesh of 4 k-point/Å."
     }
    ]
   },
@@ -3493,8 +3682,8 @@
     {
      "technique": "XRD",
      "result": "XRD pattern recorded for the lattice parameter versus Sb content (Figure S5); NaCl peaks marked",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "(b) Cs2NaIn1-xSbxCl6 (x=0, 0.4, 0.6, 1)"
     }
    ]
@@ -3560,8 +3749,8 @@
     {
      "technique": "XRD",
      "result": "CsAgCl2 peaks (light blue rhombus) next to the double perovskite pattern (Figure 1c)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "Additional peaks of unwanted products are evident, including NaCl while alloying with Na and CsAgCl2 while alloying with Ag."
     }
    ],
@@ -3592,8 +3781,8 @@
     {
      "technique": "XRD",
      "result": "NaCl (gray stars) and CsAgCl2 (light blue rhombus) peaks next to the double perovskite pattern (Figure 1c)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Rigaku Smart-Lab 9kW high-resolution X-ray diffractometer with a rotating anode X-ray source",
+     "conditions": "1.54Å (Cu Kα) wavelength and a 2θ range of 10o-90o ; residue of the NC hexane solution centrifuged at 12000rpm for 10 minutes and drop-cast onto a glass substrate (protocole XRD unique de l'annexe)",
      "quote": "Additional peaks of unwanted products are evident, including NaCl while alloying with Na and CsAgCl2 while alloying with Ag."
     }
    ],
@@ -3604,7 +3793,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare par injection rapide de chlorure de benzoyle, à 100 °C sous air et dans l'octadécène, des nanocristaux de pérovskite double sans plomb Cs2Ag1–yNayIn1–xBixCl6 et Cs2Ag1–yNayIn1–xSbxCl6, à partir d'acétates ou d'oléates métalliques, de Cs-oléate et d'oléylamine. Les compositions varient par le rapport Ag/Na (y) et par le taux de dopant Bi ou Sb (x). Les auteurs montrent par spectroscopie, DRX synchrotron, DFT et PL en température que le gros ion Bi3+ introduit une microcontrainte et un facteur de Huang–Rhys qui croissent avec x, alors que Sb3+, de taille proche de In3+, ne change presque rien, et ils comparent rendements quantiques et durées de vie."
+   "text": "L'article prépare par injection rapide de chlorure de benzoyle, à 100 °C sous air et dans l'octadécène, des nanocristaux de pérovskite double sans plomb Cs2Ag1–yNayIn1–xBixCl6 et Cs2Ag1–yNayIn1–xSbxCl6, à partir d'acétates ou d'oléates métalliques, de Cs-oléate et d'oléylamine. Les compositions varient par le rapport Ag/Na (y) et par le taux de dopant Bi ou Sb (x). Les auteurs montrent par spectroscopie, DRX synchrotron, DFT et PL en température que le gros ion Bi3+ introduit une microcontrainte et un facteur de Huang–Rhys qui croissent avec x, alors que Sb3+, de taille proche de In3+, ne change presque rien, et ils comparent rendements quantiques et durées de vie. Le résumé de l'article annonce un rendement quantique d'environ 40 % pour Sb ; les figures 5a et 5b donnent au plus environ 35 % (lecture graphique)."
   },
   {
    "type": "objectif_etude",
@@ -3660,12 +3849,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "Cs2Ag0.5Na0.5In0.9Bi0.1Cl6",
-   "text": "Hypothèse de chimiste : le chlorure de benzoyle réagit avec les acétates et les oléates métalliques (anhydride acétique ou benzoate d'acétyle formés) et libère du chlorure, ce qui déclenche une nucléation presque instantanée du Cs2AgInCl6 allié ; les 5 s de réaction puis le refroidissement rapide limitent la croissance. Bilan de chlorure : 1,72 mmol de Bz-Cl pour 0,25 mmol de formule (6 Cl chacune, soit 1,5 mmol), donc un excès d'environ 15 %, cohérent avec une voie qui ne laisse pas de Cl en défaut. L'oléylamine sert probablement de ligand de surface et de moyen de solubiliser les acétates dans l'ODE à 100 °C ; le rôle des oléates est de rendre les métaux solubles dans la phase organique."
+   "text": "Hypothèse de chimiste : le chlorure de benzoyle injecté réagit en quelques secondes avec l'oléylamine (probablement N-oléylbenzamide et chlorure d'oléylammonium) et avec l'acide oléique et les carboxylates métalliques (anhydrides mixtes, anhydride acétique ou benzoate d'acétyle, et HCl), ce qui libère d'un coup environ 1,7 mmol de chlorure ; la sursaturation provoque probablement une nucléation presque instantanée de la double pérovskite, que les 5 s de réaction puis la trempe empêchent de grossir. Bilan de chlorure : 1,72 mmol de Bz-Cl pour 0,25 mmol de formule (6 Cl chacune, soit 1,5 mmol), donc un excès d'environ 15 %. L'oléylamine sert probablement de ligand de surface et aide à solubiliser les acétates dans l'ODE à 100 °C. Réactions parasites possibles : réduction partielle d'Ag+ en Ag0 par l'oléylamine pendant les 5 min à 100 °C avant l'injection, et précipitation de NaCl si Na+ n'est pas incorporé."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Cs2Ag0.5Na0.5In0.9Sb0.1Cl6",
-   "text": "Même mécanisme probable que pour la voie Bi : le Bz-Cl fournit le chlorure par réaction avec les carboxylates. Ici In, Sb et Na sont apportés sous forme d'oléates préformés, tandis qu'Ag reste un acétate ; la solubilité plus faible d'Ag(ac) dans l'ODE à 100 °C rend plausible la présence de CsAgCl2 ou NaCl observée en DRX quand Ag ou Na sont présents, signe d'une formation incomplète de la phase double."
+   "text": "Hypothèse de chimiste : le chlorure de benzoyle libère le chlorure par réaction avec l'oléylamine (probablement N-oléylbenzamide et chlorure d'oléylammonium) et avec les carboxylates et l'acide oléique (anhydrides mixtes et HCl), puis la nucléation est quasi instantanée et la trempe après 5 s limite la croissance, comme pour la voie Bi, mais dans un milieu plus acide (rapport acide oléique/oléylamine d'environ 5 contre 2 pour Bi) avec des oléates préformés. Ces phases parasites sont d'abord attribuées par les auteurs au séchage sur le verre et à la moindre stabilité de Cs2AgSbCl6 ; l'hypothèse supplémentaire d'une solubilité plus faible d'Ag(ac) dans l'ODE à 100 °C, ou d'un excès local de Na+ et d'Ag+ qui précipiterait NaCl et CsAgCl2 pendant la réaction, est celle du chimiste, non celle de l'article."
   },
   {
    "type": "mecanisme_analyse",
@@ -3675,7 +3864,7 @@
   {
    "type": "securite_analyse",
    "route": "Cs2Ag0.5Na0.5In0.9Bi0.1Cl6",
-   "text": "Le chlorure de benzoyle est corrosif et lacrymogène, il réagit avec l'humidité en dégageant du HCl : à manipuler sous hotte, gants et lunettes, et l'injection « rapide » à 100 °C éclabousse facilement. La synthèse se fait à l'air à 100 °C dans l'ODE et l'oléylamine (corrosive). L'hexane est inflammable. Les nanopoudres contenant Ag, In et Bi ne doivent pas être inhalées ; les déchets métalliques et halogénés sont à collecter à part."
+   "text": "Le chlorure de benzoyle est corrosif et lacrymogène, il réagit avec l'humidité en dégageant du HCl : à manipuler sous hotte, gants et lunettes, et l'injection « rapide » à 100 °C éclabousse facilement. La synthèse se fait à l'air à 100 °C dans l'ODE et l'oléylamine (corrosive). L'hexane est inflammable. Les nanopoudres contenant Ag, In et Bi ne doivent pas être inhalées ; les déchets métalliques et halogénés sont à collecter à part. L'injection rapide de 200 μL de chlorure de benzoyle sur l'oléylamine (environ 1,5 mmol) à 100 °C, à l'air libre, est exothermique et dégage du HCl : le chlorure de benzoyle réagit vivement avec les amines (fiche NOAA CAMEO Chemicals, https://cameochemicals.noaa.gov/chemical/2594) ; l'article ne donne aucune consigne de sécurité."
   },
   {
    "type": "securite_analyse",
@@ -3702,8 +3891,78 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Incohérence interne : la PLQY et la durée de vie de l'échantillon Cs2Ag0.4Na0.6In0.9Bi0.1Cl6 diffèrent entre la série Ag/Na (fig. 5a et 5c : environ 12 % et 4,8 μs) et la série de dopage (fig. 5b et 5d : environ 22 % et 5,8 μs) ; de même Sb à x = 0,1 et y = 1 vaut environ 35 % (5a) et 32 % (5b). Les auteurs attribuent les variations de pic d'absorption à des écarts de rapport Ag/Na entre lots de synthèse, ce qui indique une reproductibilité limitée d'un lot à l'autre.",
+   "text": "Incohérence interne : la PLQY et la durée de vie de l'échantillon Cs2Ag0.4Na0.6In0.9Bi0.1Cl6 diffèrent entre la série Ag/Na (fig. 5a et 5c : environ 12 % et 4,8 μs) et la série de dopage (fig. 5b et 5d : environ 22 % et 5,8 μs) ; de même Sb à x = 0,1 et y = 1 vaut environ 35 % (5a) et 32 % (5b). Les auteurs attribuent les variations de pic d'absorption à des écarts de rapport Ag/Na entre lots de synthèse, ce qui indique une reproductibilité limitée d'un lot à l'autre. Le résumé annonce aussi « QY ∼40% » pour l'antimoine, alors que les figures 5a et 5b donnent au plus environ 35 % (5a, y = 1) et 32 % (5b, x = 0,1).",
    "quote": "We assign the fluctuations in absorption peak positions of Bi-doped samples to deviations in Ag/Na ratios between reaction batches (Figures S3 and S4)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cs2NaIn0.85Sb0.15Cl6",
+   "text": "Le texte et la légende de la figure 1f ne s'accordent pas sur la composition de l'échantillon imagé en HAADF-STEM (Cs2NaIn0.85Sb0.15Cl6 dans le texte, Cs2NaIn0.9Sb0.1Cl6 dans la légende) : les distances réticulaires de 5,33 et 3,76 Å ne sont donc rattachées qu'avec réserve à x = 0,15 (lecture du texte).",
+   "quote": "(f) HAADF-STEM micrograph of Cs2NaIn0.9Sb0.1Cl6."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Pseudo-déformation calculée par DFT (figure 3d, Δa/a*, lectures graphiques approximatives à 2 chiffres significatifs) : Bi ≈ 0, 0,0006, 0,0017, 0,0070 et 0,0117 pour x = 0, 0,125, 0,25, 0,375 et 0,5 ; Sb ≈ 0, 0,0004, 0,0006, 0,0015 et 0,0030 aux mêmes x. Ces compositions sont des modèles de calcul, pas des échantillons synthétisés (x = 0,125 et 0,375 n'ont pas de voie) : les valeurs ne sont donc rangées dans aucune voie. La pseudo-déformation de Bi croît nettement plus vite que celle de Sb, comme l'inclinaison des octaèdres de la figure 4d.",
+   "quote": "A calculated pseudostrain comparison of Bi and Sb doping appears in Figure 3d."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les auteurs écrivent que changer le taux de dopant ne déplace pas le pic d'absorption, pour Bi comme pour Sb, ce qui accorde le mécanisme d'absorption entre octaèdres de matrice et de dopant ; les spectres d'absorption concernés (figures S3 et S4) sont absents du dépôt et aucune valeur n'est extraite. Les fluctuations observées pour Bi sont attribuées par les auteurs aux écarts de rapport Ag/Na entre lots.",
+   "quote": "Changing the doping concentration does not affect the absorption peak position for both systems (see Figures S3 and S4)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les formules des échantillons sont des rapports de charge du mélange réactionnel, non des compositions mesurées : l'EDS (figure S1) donne des rapports sous-stœchiométriques « proches des rapports de charge, avec quelques écarts », et le rapport Ag/Na réellement obtenu est étalonné sur la seule position du pic d'absorption (figure 2d, ajustement linéaire, R² = 0,95).",
+   "quote": "ratios in the chemical formula are referring to the loading ratios in the reaction mixture."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Cs2Ag0.5Na0.5In0.9Sb0.1Cl6",
+   "text": "Les auteurs attribuent les phases parasites NaCl et CsAgCl2 vues en DRX du système Sb à un artefact de dépôt (précipité séché sur la lame de verre) et à la moindre stabilité de Cs2AgSbCl6 face à Cs2AgInCl6 et Cs2AgBiCl6 (J. C. Dahl et al.) ; ils ne proposent pas de réaction de formation.",
+   "quote": "These unwanted minor products probably formed, while the precipitants were deposited and dried on the XRD glass substrate. The Cs2AgSbCl6 system is less stable than Cs2AgInCl6 and Cs2AgBiCl6 systems, as reported by J. C. Dahl et al."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La comparaison Bi/Sb qui fonde la discussion n'est pas à conditions égales : les précurseurs diffèrent (acétates pour Bi, oléates préformés pour Sb), de même que la quantité d'acide oléique (environ 7,9 contre 3,2 mmol, soit un rapport acide oléique/oléylamine d'environ 5,2 contre 2,1), le volume réactionnel (7,7 contre 6,2 mL) et, dans les séries en dopage, la matrice (Cs2NaInCl6 pour Sb, Cs2Ag0.4Na0.6InCl6 pour Bi). Le rapport acide/base gouverne taille, forme et phase des nanocristaux d'halogénures (Role of Acid–Base Equilibria in the Size, Shape, and Phase Control of Cesium Lead Bromide Nanocrystals, ACS Nano, DOI 10.1021/acsnano.7b08357) : les écarts de taille (8,1 contre 11,2 nm), de facettage et de propriétés ne sont donc pas attribuables au seul dopant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cs2Ag0.4Na0.6In0.75Bi0.25Cl6",
+   "text": "La microcontrainte est tirée de la seule raie (400) par une décomposition de Voigt qui met toute la largeur gaussienne sur la contrainte ; or l'élargissement de taille seul (Scherrer) est de l'ordre de 0,16 à 0,23° pour des cristaux de 8 à 11 nm, soit les largeurs totales mesurées, et la part lorentzienne est quasi nulle pour Bi à x = 0,25 et 0,5. Avec une seule raie, taille et contrainte ne se séparent pas (il faudrait un Williamson–Hall ou plusieurs ordres h00) ; la microcontrainte plus forte pour Bi peut venir en partie de sa taille plus petite (Langford, Louër et Scardi, Commission on Powder Diffraction Newsletter n° 24, https://www.iucr.org/__data/assets/pdf_file/0013/21631/cpd24.pdf)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cs2NaIn0.75Sb0.25Cl6",
+   "text": "Même réserve pour la série Sb : à x = 0, la largeur totale de la raie (0,160°) s'explique entièrement par une taille d'environ 11 nm, donc la microcontrainte de la matrice non dopée (≈ 0,007) n'est pas séparable de la taille, et l'hétérogénéité de taille qui croît avec Sb (figure S10) brouille la tendance en x. De plus le paramètre de maille augmente d'environ 1 % de x = 0 à 0,5 alors que Sb3+ (0,76 Å) est plus petit qu'In3+ (0,80 Å) selon Shannon (Acta Cryst. A32, 1976, DOI 10.1107/S0567739476001551) : cela contredit l'idée d'un Sb « sans effet sur la maille »."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cs2Ag0.4Na0.6In0.9Bi0.1Cl6",
+   "text": "La même composition nominale donne environ 12 % de PLQY dans la série Ag/Na (figure 5a) et environ 22 % dans la série de dopage (figure 5b) : l'écart entre lots (10 points) dépasse plus de deux fois la baisse de PLQY attribuée au taux de Bi (24 à 19 % de x = 0,05 à 0,3). Sans répétitions ni barres d'erreur, la tendance « la PLQY baisse quand Bi augmente » n'est pas établie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cs2Ag0.4Na0.6In0.95Bi0.05Cl6",
+   "text": "Facteur de Huang–Rhys de 82,5 par ajustement de la largeur en température contre environ 40 par le décalage de Stokes pour le même échantillon et le même ħω : un facteur 2, que les auteurs attribuent à un spectre tronqué ; la comparaison Bi/Sb n'est valable qu'à méthode identique. La formule de l'annexe pour l'énergie de liaison (I = I0/(1 + e^(−Eb/kBT))) est écrite sans préfacteur ; avec 1 comme préfacteur, Eb = 69 à 87 meV ne donnerait que 3 à 6 % d'extinction à 300 K, et il s'agit plutôt d'une énergie d'activation de l'extinction thermique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cs2Ag0.5Na0.5In0.9Bi0.1Cl6",
+   "text": "À 100 °C en présence d'oléylamine, Ag+ peut être réduit en Ag0 avant l'injection, ce qui dégrade la photoluminescence (article Nano Letters 2022, DOI 10.1021/acs.nanolett.2c03112, auteurs non vérifiés) ; l'acétate de sodium, ajouté solide dans l'ODE avec peu d'acide oléique libre, n'est peut-être pas dissous en 5 min, ce qui expliquerait les écarts de rapport Ag/Na entre lots et l'EDS sous-stœchiométrique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cs2Ag0.5Na0.5In0.9Sb0.1Cl6",
+   "text": "Les pics de NaCl apparaissent aussi en DRX synchrotron sur un dépôt en capillaire (figure 4), ce qui affaiblit l'explication des auteurs par le séchage sur la lame de verre ; l'excès de chlorure (15 à 19 %) avec Na+ apporté en oléate réactif peut précipiter NaCl pendant la réaction."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Sb-oleate_0.25M",
+   "text": "L'échange acétate/oléate à 90 °C en flacon ouvert est un équilibre : l'acide acétique libéré (éb. 118 °C) n'est que partiellement chassé, la solution d'oléate de Sb, d'In ou de Na contient donc un mélange acétate/oléate et de l'acide acétique résiduel, et Sb(III) chauffé 45 min à l'air peut s'hydrolyser ; l'oléate d'indium est une pâte blanche à froid, dont la température de prélèvement n'est pas donnée."
   }
  ],
  "method_sources": [
@@ -3735,7 +3994,7 @@
   },
   {
    "where": "Cs2NaIn0.85Sb0.15Cl6 ou Cs2NaIn0.9Sb0.1Cl6, figure 1f",
-   "issue": "Le texte (« Cs2NaIn0.85Sb0.15Cl6 ») et la légende de la figure 1f (« Cs2NaIn0.9Sb0.1Cl6 ») ne donnent pas la même composition pour l'image HAADF-STEM. Les distances réticulaires de 5,33 et 3,76 Å lues sur l'inset sont rangées sur Cs2NaIn0.85Sb0.15Cl6 (texte) ; l'autre lecture les place sur Cs2NaIn0.9Sb0.1Cl6."
+   "issue": "Attribution incertaine : le texte (« To verify the structure of Cs2NaIn0.85Sb0.15Cl6, the HAADF-STEM micrograph is shown in Figure 1f ») nomme x = 0,15, alors que la légende de la figure 1f (« (f) HAADF-STEM micrograph of Cs2NaIn0.9Sb0.1Cl6 ») nomme x = 0,1. Lecture du texte retenue : les distances réticulaires de 5,33 Å ({200}) et 3,76 Å ({220}), lues sur l'inset de la figure 1f, sont rangées sur Cs2NaIn0.85Sb0.15Cl6 et citées avec la phrase du texte ; l'autre lecture les place sur Cs2NaIn0.9Sb0.1Cl6."
   },
   {
    "where": "Figure 5 : séries Ag/Na et dopage",
@@ -3755,11 +4014,11 @@
   },
   {
    "where": "Fig. 5a, Bi sans Ag",
-   "issue": "La légende dit qu'un point est exclu de 5a pour Bi sans alliage Ag car la PLQY est nulle, alors que la figure dessine un point à 0 ; valeur 0 retenue pour Cs2NaIn0.9Bi0.1Cl6."
+   "issue": "La légende dit qu'un point est exclu de 5a pour Bi sans alliage Ag car la PLQY est nulle, alors que la figure dessine un point à 0 ; valeur 0 retenue pour Cs2NaIn0.9Bi0.1Cl6. Pour le même échantillon (Cs2NaIn0.9Bi0.1Cl6, sans émission), la figure 5c trace pourtant une durée de vie d'environ 5,0 μs : valeur lue gardée, incohérente avec l'absence d'émission, à ne pas interpréter comme une mesure d'émission."
   },
   {
    "where": "Échantillons non dopés de la figure 1b",
-   "issue": "Cs2AgInCl6, Cs2Ag0.5Na0.5InCl6 et Cs2NaInCl6 sont rattachés à la voie Bi (suppression de l'acétate de bismuth, et d'Ag ou de Na) ; l'article ne dit pas comment ils sont préparés, la lecture littérale étant le protocole général x = 0."
+   "issue": "Cs2AgInCl6, Cs2Ag0.5Na0.5InCl6 et Cs2NaInCl6 ne sont connus que par la légende de la figure 1b, qui donne leur composition et non leur préparation ; l'article ne dit pas qu'ils suivent le protocole Bi (acétates). Ils n'héritent donc pas des étapes de la voie Bi : une seule étape « préparation non décrite » et les paramètres déclarés non cités. Les réactifs du parent restent visibles par construction (variations « absent » pour l'acétate de bismuth et, selon le cas, d'argent ou de sodium). Cs2Ag0.4Na0.6InCl6 et Cs2NaInCl6 de la série Sb sont soutenus par « without Bi addition » et par la formule générale x = 0 : inchangés."
   },
   {
    "where": "Séries x = 0,4 à 1 (Bi et Sb) et x = 0,8 (Bi)",
@@ -3779,7 +4038,23 @@
   },
   {
    "where": "Hexane",
-   "issue": "« hexane (A.R. Aldrich or 99.9%, Fischer Scientific) » : deux qualités possibles selon le lot ; pureté et fournisseur recopiés tels quels."
+   "issue": "La phrase « hexane (A.R. Aldrich or 99.9%, Fischer Scientific) » donne deux qualités possibles, « A.R. Aldrich » ou « 99.9%, Fischer Scientific » (même forme « pureté, fournisseur » que les autres réactifs) : pureté et fournisseur sont séparés sur la seconde lecture (99.9 %, Fischer Scientific) ; la première (A.R., Aldrich) n'est pas retenue dans les champs. L'article ne dit pas laquelle a servi."
+  },
+  {
+   "where": "Figure 3d, pseudo-déformation DFT",
+   "issue": "La légende de la figure 3 écrit « (d) calculated pseudo strain of Cs2Ag0.4Na0.6In1–xBixCl6 (x = 0.05, 0.1, 0.2, 0.3) and Cs2NaIn1–xSbxCl6 (x = 0.05, 0.1, 0.15, 0.2, 0.25, 0.3) », mais l'axe de la figure trace x de 0 à 0,5 avec des points à 0, 0,125, 0,25, 0,375 et 0,5 : la légende ne correspond pas à l'axe. Valeurs lues sur la figure (± 0,0005 environ), consignées dans une annotation sans voie."
+  },
+  {
+   "where": "Conditions de PL, PLQY et durée de vie",
+   "issue": "Longueur d'onde d'excitation du PL, laser de la durée de vie (VPL) et longueur d'onde d'excitation de la mesure de PLQY : non citées dans le texte (la figure 3a porte « λex = 350 nm » et la figure 3b « λex = 320 nm », notés dans les conditions comme lectures de figure). Longueurs d'onde de détection du PLE : légende S4 seulement ; le PLE n'est rattaché qu'à la voie de base de chaque dopant et à la branche Bi x = 0,8, pas à chaque composition listée."
+  },
+  {
+   "where": "Cs2NaSbCl6 et échantillons x = 0 de la figure S5",
+   "issue": "La légende S5b liste x = 0, 0,4, 0,6 et 1 pour la série Sb ; Cs2NaIn0.6Sb0.4Cl6 et Cs2NaIn0.4Sb0.6Cl6 portent une caractérisation XRD S5, mais Cs2NaSbCl6 (x = 1) n'en a aucune dans l'extraction, pas plus que les échantillons x = 0 (Cs2Ag0.4Na0.6InCl6 et Cs2NaInCl6 de la série Sb) pour la figure S5. Figure d'annexe absente du dépôt : omission laissée en doute, non comblée."
+  },
+  {
+   "where": "Résumé, rendement quantique de Sb",
+   "issue": "Le résumé écrit « brighter emission (QY ∼40%) » pour le système Sb ; les figures 5a (≈ 35 %, y = 1) et 5b (≈ 32 %, x = 0,1) ne dépassent pas 35 % environ. Valeurs de figure gardées, écart signalé."
   }
  ]
 }
