@@ -118,7 +118,7 @@
     {
      "name": "citric acid monohydrate",
      "formula": "C6H8O7·H2O",
-     "role": "carbon_source",
+     "role": "precursor",
      "amount": 4,
      "unit": "g",
      "purity": "≥ 99.5%",
@@ -131,7 +131,7 @@
     {
      "name": "ethylene glycol",
      "formula": "C2H6O2",
-     "role": "carbon_source",
+     "role": "precursor",
      "amount": 2.2,
      "unit": "cm3",
      "purity": "≥ 99%",
@@ -481,6 +481,27 @@
      "value_num": 30,
      "unit": "Ω",
      "quote": "Further, the resistance of the ternary electrode decreases to about 30 Ω due to the activation process."
+    },
+    {
+     "property": "CV_first_cycle_cathodic_peak_range",
+     "value_text": "0–0.5 V",
+     "quote": "A cathodic peak at 0–0.5 V can be observed in the initial cycle, corresponding to the alloying process of SiO2"
+    },
+    {
+     "property": "CV_anodic_peak_range",
+     "value_text": "0.24–0.9 V",
+     "quote": "the anodic peak at 0.24–0.9 V is extensive in the Li extraction part, matching well with the de-alloying process between amorphous Li-Si alloys and amorphous SiO2"
+    },
+    {
+     "property": "discharge_capacity_stabilization",
+     "value_text": "becomes stable after 10 cycles",
+     "quote": "The discharge capacity becomes stable after 10 cycles, and the coulombic efficiency increases to ~100%."
+    },
+    {
+     "property": "coulombic_efficiency_after_stabilization",
+     "value_num": 100,
+     "unit": "%",
+     "quote": "The discharge capacity becomes stable after 10 cycles, and the coulombic efficiency increases to ~100%."
     }
    ],
    "missing_fields": [
@@ -500,7 +521,7 @@
     "name": "carbon-coated SiO2 without MWNT",
     "formula": "SiO2@C",
     "family": "composite",
-    "phase": "amorphous SiO2 and amorphous carbon",
+    "phase": null,
     "morphology": null
    },
    "quote": "A reference SiO2@C composite without MWNT was obtained following the same preparation route.",
@@ -518,7 +539,7 @@
      "order": 1,
      "action": "mix",
      "description": "Disperser le TEOS et HCl 0,1 mol dm−3 dans l'éthanol et agiter.",
-     "quote": "Nine cubic centimeter of tetraethyl orthosilicate (TEOS) ((C2H5O)4Si ≥ 99.5%) and 9 cm3 HCl (0.1 mol dm−3) were dispersed in ethanol (16 cm3) and stirred for 30 min.",
+     "quote": "A reference SiO2@C composite without MWNT was obtained following the same preparation route.",
      "parameters": [
       {
        "name": "duration",
@@ -538,7 +559,7 @@
      "order": 2,
      "action": "dissolve",
      "description": "Dissoudre l'acide citrique et l'éthylène glycol dans l'eau déionisée (sans dispersion de MWNT).",
-     "quote": "4 g citric acid (C6H8O7 · H2O ≥ 99.5%) and 2.2 cm3 ethylene glycol (C2H6O2 ≥ 99%) were dissolved in deionized water (10 cm3)",
+     "quote": "A reference SiO2@C composite without MWNT was obtained following the same preparation route.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
@@ -550,7 +571,7 @@
      "order": 3,
      "action": "mix",
      "description": "Mélanger les deux solutions et les transférer dans une capsule d'évaporation.",
-     "quote": "The two resulting solutions were thoroughly mixed and transferred into an evaporating dish and dried at 55 °C for 10 h.",
+     "quote": "A reference SiO2@C composite without MWNT was obtained following the same preparation route.",
      "parameters": [],
      "equipment": [
       {
@@ -569,7 +590,7 @@
      "order": 4,
      "action": "dry",
      "description": "Sécher le mélange dans la capsule d'évaporation.",
-     "quote": "The two resulting solutions were thoroughly mixed and transferred into an evaporating dish and dried at 55 °C for 10 h.",
+     "quote": "A reference SiO2@C composite without MWNT was obtained following the same preparation route.",
      "parameters": [
       {
        "name": "temperature",
@@ -594,7 +615,7 @@
      "order": 5,
      "action": "calcine",
      "description": "Pyrolyse du produit sec sous argon.",
-     "quote": "The resulting product was heated under Ar atmosphere for 1 h at 1100 °C to obtain SiO2@C/MWNT composite.",
+     "quote": "A reference SiO2@C composite without MWNT was obtained following the same preparation route.",
      "parameters": [
       {
        "name": "temperature",
@@ -1053,7 +1074,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "SiO2@C_MWNT",
-   "text": "Hypothèse de chimiste : le TEOS est hydrolysé et polycondensé en réseau de silice par l'eau et HCl 0,1 mol dm−3 (catalyse acide), tandis que l'acide citrique et l'éthylène glycol s'estérifient probablement en un polyester (voie de type Pechini) qui forme un gel emprisonnant la silice et les MWNT lors du séchage à 55 °C. À 1100 °C sous argon, ce polymère se carbonise vraisemblablement en une couche de carbone amorphe de quelques nanomètres autour des particules de SiO2, ce qui concorde avec les 2–7 nm observés. Les quantités sont cohérentes avec l'article : 9 cm3 de TEOS donnent environ 40 mmol de Si (≈ 1,13 g), les 1,9 g de dispersion à 9 wt% apportent environ 0,17 g de MWNT, soit bien le rapport massique Si:MWNT de 6,6:1 ; la composition finale annoncée (SiO2 77,5 %, MWNT 5,5 %) donne un rapport SiO2/MWNT de 14, cohérent avec 2,4 g de SiO2 pour 0,17 g de MWNT. À 1100 °C sous Ar, une réaction carbothermique partielle de SiO2 avec le carbone est peu probable mais pas exclue."
+   "text": "Hypothèse de chimiste, non écrite par les auteurs : le TEOS est hydrolysé et polycondensé en réseau de silice par l'eau et HCl 0,1 mol dm−3 (catalyse acide). L'acide citrique et l'éthylène glycol forment vraisemblablement un polyester de type Pechini, mais l'estérification non catalysée est lente à 55 °C ; elle a plus probablement lieu pendant la montée en température vers 1100 °C, au-dessus de 100 °C (≈ 120–200 °C), en concurrence avec l'évaporation de l'éthylène glycol (point d'ébullition 197 °C) et la décomposition de l'acide citrique (≈ 175 °C). Le séchage à 55 °C laisse donc plutôt un résidu visqueux silice–citrate–glycol qu'un xérogel sec. Entre 200 et 600 °C, la matière organique se carbonise en une couche de carbone désordonné autour des particules de SiO2, ce qui concorde avec les 2–7 nm observés, les MWNT, stables sous argon, restant noyés dans la matrice. Il n'y a pas de réduction carbothermique de la silice à 1100 °C : SiO2 + C → SiO(g) ou SiC ne devient favorable qu'au-delà de ≈ 1500 °C, ce qui est cohérent avec la silice conservée. Les quantités sont cohérentes avec l'article : 9 cm3 de TEOS donnent environ 40 mmol de Si (≈ 1,13 g), les 1,9 g de dispersion à 9 wt% apportent environ 0,17 g de MWNT, soit le rapport massique Si:MWNT de 6,6:1 ; la composition annoncée (SiO2 77,5 %, MWNT 5,5 %) donne un rapport SiO2/MWNT d'environ 14, cohérent avec 2,4 g de SiO2 pour 0,17 g de MWNT, et un rendement en carbone d'environ 23 % du carbone organique apporté. Sources : Hench et West, The sol-gel process (1990, 10.1021/cr00099a003) ; Danks, Hall et Schnepp (2016, 10.1039/C5MH00260E) ; brevet de Pechini US 3 330 697 (1967)."
   },
   {
    "type": "securite_auteurs",
@@ -1064,17 +1085,47 @@
   {
    "type": "securite_analyse",
    "route": "SiO2@C_MWNT",
-   "text": "Le TEOS est inflammable et irritant, l'éthanol est inflammable, l'éthylène glycol est nocif par ingestion et HCl dilué est irritant : travailler sous hotte avec gants et lunettes. Les MWNT sont une poudre ou une dispersion de nanomatériaux à ne pas inhaler. La pyrolyse à 1100 °C libère des gaz de décomposition (CO, CO2, composés organiques volatils) et exige un four fermé et une atmosphère d'argon bien purgée pour éviter l'inflammation du carbone à chaud."
+   "text": "Le TEOS est inflammable (point éclair d'environ 45 °C) et toxique par inhalation, l'éthanol est inflammable, l'éthylène glycol est nocif par ingestion et HCl dilué est irritant : travailler sous hotte avec gants et lunettes. Les MWNT sont à manipuler en dispersion et à ne pas inhaler (le MWCNT-7 est classé 2B par le CIRC, les autres MWNT groupe 3 ; CIRC, Monographie 111, 2017). La pyrolyse d'un résidu citrate/glycol à 1100 °C dégage CO, CO2 et vapeurs organiques : four fermé avec évacuation et atmosphère d'argon bien purgée. Aucune de ces précautions n'est écrite par les auteurs."
   },
   {
    "type": "securite_analyse",
    "route": "Electrode_SiO2C",
-   "text": "Le NMP est reprotoxique et doit être manipulé sous hotte ; le PVDF ne pose pas de danger à froid mais dégage du HF s'il est chauffé fortement. La suspension contient des poudres nanométriques (noir d'acétylène, MWNT)."
+   "text": "Le NMP est classé reprotoxique de catégorie 1B (règlement CLP) et doit être manipulé sous hotte avec des gants adaptés ; le PVDF ne pose pas de danger à froid mais dégage du HF s'il est chauffé fortement. La suspension contient des poudres nanométriques (noir d'acétylène, MWNT). Aucune de ces précautions n'est écrite par les auteurs."
   },
   {
    "type": "securite_analyse",
    "route": "Cell_SiO2C_Li",
    "text": "Le lithium métallique réagit vivement avec l'eau et l'humidité. L'électrolyte, non décrit dans l'article, est probablement un sel de lithium dans des carbonates organiques inflammables, dont l'hydrolyse libère du HF : ne l'ouvrir qu'en boîte à gants et prévoir l'élimination des piles usagées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le résumé annonce « 475 mAh g−1 even at 1000 mA g−1 », alors que les Résultats et les Fig. 8 et 10 donnent environ 215–220 mAh g−1 à 1000 mA g−1 pour le même composite (la Fig. 8 passe par ≈ 475 vers les premiers cycles). Aucune donnée du corps de l'article ne soutient 475 : la valeur du résumé n'est pas extraite, les valeurs du texte sont retenues."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SiO2@C_MWNT",
+   "text": "Atmosphère de la TGA incertaine : les Méthodes disent « under N2 flow (30 ml min−1) », mais les Résultats attribuent la perte de masse entre 550 et 730 °C à l'« oxidization of carbon and MWNT ». Sous azote, un matériau déjà pyrolysé sous argon à 1100 °C ne perd pas son carbone dans cette plage : la teneur de 77,5 wt% de SiO2 n'a de sens que sous air ou oxygène. L'une des deux phrases est fausse ; il faut refaire la TGA sous air avant de reprendre cette composition (ISO/TS 11308:2020 pour la TGA des nanotubes)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SiO2@C_MWNT",
+   "text": "La teneur de 5,5 wt% de MWNT, donnée comme estimée d'après la TG/DTG, est identique à la valeur recalculée depuis la recette (≈ 5,47 %) : elle est probablement calculée plutôt que mesurée, car deux pics DTG qui se chevauchent (635 et 690 °C) ne séparent pas quantitativement le carbone amorphe et les MWNT."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SiO2@C_MWNT",
+   "text": "Attributions de caractérisation non tranchées : les franges HRTEM de 0,411, 0,215 et 0,205 nm, attribuées à (111), (311) et (222) de SiO2, correspondent aussi à la β-cristobalite et, pour les deux plus petites, au graphite (100) et (101), alors que le DRX ne montre qu'un halo amorphe vers 21° et que les auteurs concluent à une structure amorphe. La raie à 26,1° est indexée (200) alors que la réflexion du graphite des MWNT est (002) (d = 3,41 Å). La hausse de ID/IG de 0,94 à 0,99 est expliquée par des « défauts Si–O », ce qui n'est pas physique pour des bandes D et G du carbone (Ferrari et Robertson, 2000) ; l'écart de 0,05 est de l'ordre de l'incertitude d'ajustement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SiO2@C",
+   "text": "Le témoin SiO2@C n'est pas dosé par TGA : sa composition n'est pas mesurée (environ 82 wt% de SiO2 attendus si le rendement en carbone est le même que pour le composite, contre 77,5 wt%), ce qui pèse peu face aux écarts de capacité observés. Le texte appelle l'électrode « cathode » (Résultats et Conclusion) alors qu'il s'agit de l'anode d'une demi-pile au lithium."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SiO2@C_MWNT",
+   "text": "Résistance d'impédance : l'article donne un demi-cercle d'environ 95 Ω pour la pile neuve et après le cycle initial, puis dit que « the resistance of the ternary electrode decreases to about 30 Ω due to the activation process » sans préciser le nombre de cycles ni s'il s'agit du même élément du circuit équivalent ; les valeurs de 95 Ω et de 30 Ω ne se comparent pas sans cette précision. Les capacités en mAh g−1 et la charge de ~4 mg cm−2 ne disent pas à quelle masse elles sont rapportées (composite entier ou SiO2 seul)."
   }
  ],
  "method_sources": [],
@@ -1085,7 +1136,7 @@
   },
   {
    "where": "SiO2@C, protocole",
-   "issue": "L'article dit seulement « following the same preparation route ». SiO2@C est enregistrée comme branche aux étapes propres : celles de la voie de base sans l'ajout de la dispersion de MWNT, avec les mêmes durées, températures et quantités des autres réactifs. L'article ne dit pas si l'eau de la dispersion a été remplacée."
+   "issue": "L'article dit seulement « following the same preparation route ». SiO2@C est enregistrée comme branche aux étapes propres : celles de la voie de base sans l'ajout de la dispersion de MWNT, avec les mêmes durées, températures et quantités des autres réactifs ; la citation de chaque étape est la phrase du renvoi (les valeurs gardent la citation de la voie de base où elles sont écrites). L'article ne dit pas si l'eau de la dispersion a été remplacée par de l'eau déionisée."
   },
   {
    "where": "Electrode_SiO2C (voie unique pour deux échantillons)",
@@ -1114,6 +1165,18 @@
   {
    "where": "Voie de base, étape 3",
    "issue": "Le rapport massique Si:MWNT de 6,6:1 est lu comme un paramètre de l'ajout de la dispersion de MWNT. Il se vérifie avec 9 cm3 de TEOS et 0,17 g de MWNT (calcul de l'extracteur, non écrit dans l'article)."
+  },
+  {
+   "where": "SiO2@C, phase du matériau",
+   "issue": "Les attributions de pics DRX (≈ 21° pour SiO2 amorphe, ≈ 43° pour le carbone amorphe) sont données pour le composite SiO2@C/MWNT ; pour SiO2@C l'article dit seulement que le pic graphitique à 26,1° est absent. La phase de SiO2@C est donc laissée vide (non citée), sans héritage de la voie de base."
+  },
+  {
+   "where": "SiO2@C_MWNT, rôle de l'acide citrique et de l'éthylène glycol",
+   "issue": "L'article cite l'acide citrique et le TEOS comme « starting materials » mais ne donne aucun rôle à l'éthylène glycol ni à l'acide citrique (source de carbone, agent de polyestérification) ; le rôle neutre « precursor » est enregistré, l'interprétation Pechini est dans l'annotation mecanisme_analyse."
+  },
+  {
+   "where": "Résultats et Conclusion, anode appelée cathode",
+   "issue": "Les Résultats et la Conclusion appellent « cathode » l'électrode de SiO2@C/MWNT, qui est l'anode d'une demi-pile au lithium ; le terme de l'article est conservé dans les citations."
   }
  ]
 }
