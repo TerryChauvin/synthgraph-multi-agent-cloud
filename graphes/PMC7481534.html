@@ -1,0 +1,65 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7481534</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7481534 — A novel synthesis of graphene quantum dots via thermal treatment of crude graphite oxide in a dry and alkaline condition, and their application in uranyl detection.</h1>
+<h2>Voie : GO_crude</h2>
+<pre class="mermaid">flowchart LR
+  R14597([&quot;natural graphite powder (300 mesh)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14597 --&gt;|&quot;precursor&quot;| S17404
+  S17404[&quot;&lt;b&gt;1. oxidize&lt;/b&gt;&quot;]:::etape
+  S17404 --&gt; S17405
+  S17405[&quot;&lt;b&gt;2. grind&lt;/b&gt;&lt;br/&gt;sieve_mesh : 1200 mesh&quot;]:::etape
+  S17405 --&gt; M
+  M{{&quot;crude graphite oxide (GO) powder&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : aGQD</h2>
+<pre class="mermaid">flowchart LR
+  R14598([&quot;potassium hydroxide&lt;br/&gt;20 g&quot;]):::reactif
+  R14598 --&gt;|&quot;base&quot;| S17406
+  R14599([&quot;ethanol (component of the ethanol/water solv…&lt;br/&gt;vethanol/vwater = 4:1, 25 mL …&quot;]):::reactif
+  R14599 --&gt;|&quot;solvent&quot;| S17406
+  R14600([&quot;water (component of the ethanol/water solven…&lt;br/&gt;vethanol/vwater = 4:1, 25 mL …&quot;]):::reactif
+  R14600 --&gt;|&quot;solvent&quot;| S17406
+  R14601([&quot;crude graphite oxide (route GO_crude)&lt;br/&gt;5 g&quot;]):::reactif
+  R14601 --&gt;|&quot;intermediate&quot;| S17406
+  R14602([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14602 --&gt;|&quot;wash&quot;| S17406
+  S17406[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;volume : 25 mL&lt;br/&gt;solvent_ratio : vethanol/vwater = 4:1&quot;]:::etape
+  S17406 --&gt; S17407
+  S17407[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S17407 --&gt; S17408
+  S17408[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&quot;]:::etape
+  S17408 --&gt; S17409
+  S17409[&quot;&lt;b&gt;4. calcine&lt;/b&gt;&lt;br/&gt;temperature : 300 °C&lt;br/&gt;heating_rate : 10 °C min−1&lt;br/&gt;duration : 4 h&lt;br/&gt;atmosphere : ambient atmosphere&quot;]:::etape
+  S17409 --&gt; S17410
+  S17410[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&quot;]:::etape
+  S17410 --&gt; S17411
+  S17411[&quot;&lt;b&gt;6. dialyze&lt;/b&gt;&lt;br/&gt;duration : two weeks&lt;br/&gt;membrane_cutoff : 1000 g mol−1&quot;]:::etape
+  S17411 --&gt; S17412
+  S17412[&quot;&lt;b&gt;7. concentrate&lt;/b&gt;&quot;]:::etape
+  S17412 --&gt; M
+  M{{&quot;alkaline-treated graphene quantum dots (aGQDs), n…&lt;br/&gt;&quot;}}:::materiau
+  O70405[&quot;particle_size_range : mainly around 5–14 nm&quot;]:::resultat
+  M -.-&gt; O70405
+  O70406[&quot;particle_size_most_frequent_range : mostly from 8 nm to 13 nm; a …&quot;]:::resultat
+  M -.-&gt; O70406
+  O70407[&quot;particle_size_mode_histogram : 12 nm&quot;]:::resultat
+  M -.-&gt; O70407
+  O70408[&quot;Raman_ID_IG : 1.08&quot;]:::resultat
+  M -.-&gt; O70408
+  O70409[&quot;UV_absorption_shoulder : 260 nm&quot;]:::resultat
+  M -.-&gt; O70409
+  O70410[&quot;PL_peak_wavelength_at_323nm_excita… : 427 nm&quot;]:::resultat
+  M -.-&gt; O70410
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11244{{&quot;aGQD&quot;}}:::materiau
+  B11245[&quot;aGQD_500C&quot;]:::etape
+  B11244 --&gt;|&quot;temperature = 500 °C&quot;| B11245
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
