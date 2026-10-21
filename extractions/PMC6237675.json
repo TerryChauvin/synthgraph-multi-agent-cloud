@@ -158,7 +158,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "tpaoh_volume"
    ],
    "succeeded": true,
    "reagents": [
@@ -232,7 +233,7 @@
     {
      "order": 1,
      "action": "add",
-     "description": "Add the ST methanol solution to the solution of silica sol and TPAOH (TPAOH/ST molar ratio 8).",
+     "description": "Add the ST methanol solution to the solution of silica sol and TPAOH, emulsion A (TPAOH/ST molar ratio 8). The 20-60 mL of TPAOH is the range of the typical protocol, not a volume stated for MZ-3.",
      "quote": "we added the mesoporogen ST (methanol solution, 48 wt%, ρ = 0.9120 g/mL; C24H57O13NSi3, molar weight 651) into the solution of 8.7 g silica sol (40 wt% SiO2, Guangdong Huihe Silicon Products Co., Ltd) and 20–60 mL tetrapropylammonium hydroxide (TPAOH, 25 wt%, C12H29NO, 203.37, Zhengzhou Alpha Chemical Co., Ltd), after rapid stirring, the obtained emulsion was named as A",
      "parameters": [
       {
@@ -312,7 +313,7 @@
     {
      "order": 6,
      "action": "heat",
-     "description": "First crystallization stage in Teflon-coated stainless-steel autoclaves.",
+     "description": "First crystallization stage in Teflon-coated stainless-steel autoclaves (80 °C for 24 h, as written in the typical protocol; applied to MZ-3 by the typical-protocol wording).",
      "quote": "hydrothermally crystallized at 80 °C for 24 h",
      "parameters": [
       {
@@ -516,7 +517,7 @@
      "technique": "catalytic cracking of 1,3,5-tri-isopropylbenzene",
      "result": "conversion and selectivity to DIPB, IPB and benzene (Fig. 8)",
      "instrument": "Varian CP3800 gas chromatograph with FID detector",
-     "conditions": "300 °C; 120 mg catalyst and 0.8 μL raw material per injection; sample purified 1 h under N2 flow of 60 mL/min before analysis",
+     "conditions": "300 °C; 120 mg catalyst and 0.8 μL raw material per injection; sample purified 1 h under N2 flow of 60 mL/min before analysis; fixed bed reactor (named in the recycling test)",
      "quote": "Cracking of 1,3,5-tri-isopropylbenzene was conducted at 300 °C. In every injection, the amount of catalyst was 120 mg and the raw material was 0.8 μL."
     },
     {
@@ -676,19 +677,19 @@
      "property": "TIPB_cracking_conversion_after_20_consecutive_runs",
      "value_num": 31.8,
      "unit": "%",
-     "quote": "the conversion of raw material (1,3,5-tri-isopropylbenzene) dropped to 31.8% and the selectivity of benzene was only 21.6%"
+     "quote": "Twenty sets of cracking reaction were conducted consecutively without changing of the catalyst of MZ-3. After a continuous measurement in fixed bed reactor, the conversion of raw material (1,3,5-tri-isopropylbenzene) dropped to 31.8% and the selectivity of benzene was only 21.6%"
     },
     {
      "property": "TIPB_cracking_benzene_selectivity_after_20_consecutive_runs",
      "value_num": 21.6,
      "unit": "%",
-     "quote": "the conversion of raw material (1,3,5-tri-isopropylbenzene) dropped to 31.8% and the selectivity of benzene was only 21.6%"
+     "quote": "Twenty sets of cracking reaction were conducted consecutively without changing of the catalyst of MZ-3. After a continuous measurement in fixed bed reactor, the conversion of raw material (1,3,5-tri-isopropylbenzene) dropped to 31.8% and the selectivity of benzene was only 21.6%"
     },
     {
      "property": "coke_deposition_after_20_runs",
      "value_num": 18.57,
      "unit": "wt%",
-     "quote": "the total amount of coke deposition was 18.57 wt% as shown in Additional file 1: Figure S5"
+     "quote": "The catalyst of MZ-3-used was characterized with TG method, and the total amount of coke deposition was 18.57 wt% as shown in Additional file 1: Figure S5."
     },
     {
      "property": "recycle_stability",
@@ -722,10 +723,45 @@
      "unit": "g",
      "parent_value": "3.1 g",
      "quote": "The amounts of the ST molecules added in MZ-1 to MZ-4 were 1.3 g, 2.2 g, 3.1 g, and 3.9 g, respectively."
+    },
+    {
+     "parameter": "tetrapropylammonium hydroxide (TPAOH)",
+     "value_text": "molar ratio of TPAOH/ST = 8",
+     "parent_value": "20–60 mL",
+     "quote": "The MZ samples were crystallined under the optimum conditions of 170 °C for 3 days and the molar ratio of TPAOH/ST = 8"
     }
    ],
    "succeeded": true,
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "same diffraction peaks as TZ, typical MFI structure (stated for the MZ samples as a group)",
+     "instrument": "Shimadzu XRD-6000 diffractometer equipped with a copper tube",
+     "conditions": "λ = 0.15418 nm",
+     "quote": "The XRD spectrum of MZ samples (Fig. 1a) presents the same diffraction peaks with the sample TZ"
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectra consistent with TZ (stated for the MZ samples as a group)",
+     "instrument": "Nicolet iS50 spectrometer",
+     "conditions": "samples dehydrated before analysis to equalize adsorbed H2O",
+     "quote": "The FTIR result of the MZ samples is consistent with that of TZ, corresponding with the conclusion from the XRD analysis."
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "type IV isotherm with hysteresis loop, implying mesopores (stated for the MZ samples as a group)",
+     "instrument": "Quantachrome Nova 2000e Surface Area & Pore Size Analyzer",
+     "conditions": "degassed at 300 °C for 10 h before analysis; t-plot method for micropore volume, micropore surface area and external surface area; DFT method for mesopore size distribution",
+     "quote": "The isotherms of MZ samples all exhibit an obviously hysteresis loop of typical type IV, implying the existence of mesopores"
+    },
+    {
+     "technique": "N2 sorption (mesopore size distribution)",
+     "result": "mesopores centered at 4–8 nm (stated for the MZ samples as a group)",
+     "instrument": "Quantachrome Nova 2000e Surface Area & Pore Size Analyzer",
+     "conditions": "degassed at 300 °C for 10 h before analysis; t-plot method for micropore volume, micropore surface area and external surface area; DFT method for mesopore size distribution",
+     "quote": "the mesopores centered at 4–8 nm can only be found on samples of MZ"
+    }
+   ],
    "outcomes": [
     {
      "property": "S_BET",
@@ -767,6 +803,9 @@
      "value_num": 50,
      "quote": "MZ-1 | 444 | 330 | 114 | 0.14 | 0.22 | 0.16 | 50"
     }
+   ],
+   "not_stated": [
+    "tpaoh_volume"
    ]
   },
   {
@@ -787,10 +826,45 @@
      "unit": "g",
      "parent_value": "3.1 g",
      "quote": "The amounts of the ST molecules added in MZ-1 to MZ-4 were 1.3 g, 2.2 g, 3.1 g, and 3.9 g, respectively."
+    },
+    {
+     "parameter": "tetrapropylammonium hydroxide (TPAOH)",
+     "value_text": "molar ratio of TPAOH/ST = 8",
+     "parent_value": "20–60 mL",
+     "quote": "The MZ samples were crystallined under the optimum conditions of 170 °C for 3 days and the molar ratio of TPAOH/ST = 8"
     }
    ],
    "succeeded": true,
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "same diffraction peaks as TZ, typical MFI structure (stated for the MZ samples as a group)",
+     "instrument": "Shimadzu XRD-6000 diffractometer equipped with a copper tube",
+     "conditions": "λ = 0.15418 nm",
+     "quote": "The XRD spectrum of MZ samples (Fig. 1a) presents the same diffraction peaks with the sample TZ"
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectra consistent with TZ (stated for the MZ samples as a group)",
+     "instrument": "Nicolet iS50 spectrometer",
+     "conditions": "samples dehydrated before analysis to equalize adsorbed H2O",
+     "quote": "The FTIR result of the MZ samples is consistent with that of TZ, corresponding with the conclusion from the XRD analysis."
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "type IV isotherm with hysteresis loop, implying mesopores (stated for the MZ samples as a group)",
+     "instrument": "Quantachrome Nova 2000e Surface Area & Pore Size Analyzer",
+     "conditions": "degassed at 300 °C for 10 h before analysis; t-plot method for micropore volume, micropore surface area and external surface area; DFT method for mesopore size distribution",
+     "quote": "The isotherms of MZ samples all exhibit an obviously hysteresis loop of typical type IV, implying the existence of mesopores"
+    },
+    {
+     "technique": "N2 sorption (mesopore size distribution)",
+     "result": "mesopores centered at 4–8 nm (stated for the MZ samples as a group)",
+     "instrument": "Quantachrome Nova 2000e Surface Area & Pore Size Analyzer",
+     "conditions": "degassed at 300 °C for 10 h before analysis; t-plot method for micropore volume, micropore surface area and external surface area; DFT method for mesopore size distribution",
+     "quote": "the mesopores centered at 4–8 nm can only be found on samples of MZ"
+    }
+   ],
    "outcomes": [
     {
      "property": "S_BET",
@@ -832,6 +906,9 @@
      "value_num": 50,
      "quote": "MZ-2 | 496 | 338 | 158 | 0.14 | 0.27 | 0.17 | 50"
     }
+   ],
+   "not_stated": [
+    "tpaoh_volume"
    ]
   },
   {
@@ -852,10 +929,45 @@
      "unit": "g",
      "parent_value": "3.1 g",
      "quote": "The amounts of the ST molecules added in MZ-1 to MZ-4 were 1.3 g, 2.2 g, 3.1 g, and 3.9 g, respectively."
+    },
+    {
+     "parameter": "tetrapropylammonium hydroxide (TPAOH)",
+     "value_text": "molar ratio of TPAOH/ST = 8",
+     "parent_value": "20–60 mL",
+     "quote": "The MZ samples were crystallined under the optimum conditions of 170 °C for 3 days and the molar ratio of TPAOH/ST = 8"
     }
    ],
    "succeeded": true,
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "same diffraction peaks as TZ, typical MFI structure (stated for the MZ samples as a group)",
+     "instrument": "Shimadzu XRD-6000 diffractometer equipped with a copper tube",
+     "conditions": "λ = 0.15418 nm",
+     "quote": "The XRD spectrum of MZ samples (Fig. 1a) presents the same diffraction peaks with the sample TZ"
+    },
+    {
+     "technique": "FTIR",
+     "result": "spectra consistent with TZ (stated for the MZ samples as a group)",
+     "instrument": "Nicolet iS50 spectrometer",
+     "conditions": "samples dehydrated before analysis to equalize adsorbed H2O",
+     "quote": "The FTIR result of the MZ samples is consistent with that of TZ, corresponding with the conclusion from the XRD analysis."
+    },
+    {
+     "technique": "N2 sorption",
+     "result": "type IV isotherm with hysteresis loop, implying mesopores (stated for the MZ samples as a group)",
+     "instrument": "Quantachrome Nova 2000e Surface Area & Pore Size Analyzer",
+     "conditions": "degassed at 300 °C for 10 h before analysis; t-plot method for micropore volume, micropore surface area and external surface area; DFT method for mesopore size distribution",
+     "quote": "The isotherms of MZ samples all exhibit an obviously hysteresis loop of typical type IV, implying the existence of mesopores"
+    },
+    {
+     "technique": "N2 sorption (mesopore size distribution)",
+     "result": "mesopores centered at 4–8 nm (stated for the MZ samples as a group)",
+     "instrument": "Quantachrome Nova 2000e Surface Area & Pore Size Analyzer",
+     "conditions": "degassed at 300 °C for 10 h before analysis; t-plot method for micropore volume, micropore surface area and external surface area; DFT method for mesopore size distribution",
+     "quote": "the mesopores centered at 4–8 nm can only be found on samples of MZ"
+    }
+   ],
    "outcomes": [
     {
      "property": "S_BET",
@@ -897,6 +1009,9 @@
      "value_num": 47,
      "quote": "MZ-4 | 541 | 321 | 220 | 0.13 | 0.30 | 0.18 | 47"
     }
+   ],
+   "not_stated": [
+    "tpaoh_volume"
    ]
   },
   {
@@ -984,7 +1099,7 @@
     {
      "order": 5,
      "action": "heat",
-     "description": "First crystallization stage in Teflon-coated stainless-steel autoclaves.",
+     "description": "First crystallization stage in Teflon-coated stainless-steel autoclaves (80 °C for 24 h, as written in the typical protocol; TZ made with 'the same method of MZ').",
      "quote": "hydrothermally crystallized at 80 °C for 24 h",
      "parameters": [
       {
@@ -1018,8 +1133,8 @@
     {
      "order": 6,
      "action": "heat",
-     "description": "Second crystallization stage at the optimal temperature and time.",
-     "quote": "The optimal samples in this work were produced under the crystalline conditions of 170 °C for 3 days",
+     "description": "Second crystallization stage; 170 °C for 3 days are the conditions of the MZ samples, applied to TZ through 'the same method of MZ' (not written for TZ alone).",
+     "quote": "The optimal samples in this work were produced under the crystalline conditions of 170 °C for 3 days and the optimal molar ratio of TPAOH/ST = 8, named MZ (mesoporous zeolite) in latter discussions. The amounts of the ST molecules added in MZ-1 to MZ-4 were 1.3 g, 2.2 g, 3.1 g, and 3.9 g, respectively. The detailed studies of synthesis conditions were presented in Additional file1: Figures S2–S4 and Tables S1–S3). The traditional microporous ZSM-5 zeolite, named TZ (traditional zeolite), was produced with the same method of MZ without the mesoporogen ST.",
      "parameters": [
       {
        "name": "temperature",
@@ -1127,6 +1242,41 @@
      "instrument": "Hitachi S4800",
      "conditions": "10 kV",
      "quote": "For comparison, the morphology of sample TZ is also characterized in Fig. 2b, where typical coffin-like particles with length of 2–10 μm and width of 1–3 μm have been observed."
+    },
+    {
+     "technique": "catalytic alkylation of benzene with benzyl alcohol",
+     "result": "benzyl alcohol conversion over TZ followed every hour (Fig. 7a)",
+     "instrument": "Varian CP3800 gas chromatograph with FID detector",
+     "conditions": "80 °C; 0.30 g sample, 68 mL benzene, 1.0 mL benzyl alcohol",
+     "quote": "The alkylation of benzene and benzyl alcohol was conducted at 80 °C with the mixture of 0.30 g sample, 68 mL benzene, and 1.0 mL benzyl alcohol."
+    },
+    {
+     "technique": "catalytic cracking of 1,3,5-tri-isopropylbenzene",
+     "result": "conversion and selectivity to DIPB, IPB and benzene over TZ (Fig. 8a)",
+     "instrument": "Varian CP3800 gas chromatograph with FID detector",
+     "conditions": "300 °C; 120 mg catalyst and 0.8 μL raw material per injection; sample purified 1 h under N2 flow of 60 mL/min before analysis",
+     "quote": "Cracking of 1,3,5-tri-isopropylbenzene was conducted at 300 °C. In every injection, the amount of catalyst was 120 mg and the raw material was 0.8 μL."
+    },
+    {
+     "technique": "catalytic thermal cracking of LDPE",
+     "result": "LDPE conversion versus temperature over TZ, with a blank test without catalyst (Fig. 9a)",
+     "instrument": "Netzsch Sta 449 F3 thermobalance",
+     "conditions": "0.0023 g H-form catalyst and 0.023 g LDPE (XOM, ≤ 500 μm, density 0.925 g/cm3, fusion point 115 °C) remixed in a crucible; N2 flow 60 mL/min; 30 to 600 °C at 10 °C/min",
+     "quote": "the blank test without any catalysts is also conducted for comparison"
+    },
+    {
+     "technique": "NH3-TPD",
+     "result": "weak-acid peak around 150 °C and strong-acid peak around 375 °C, acid amount almost the same as MZ-3",
+     "instrument": "Finetec Finesorb 3010 analyzer",
+     "conditions": "H-form sample",
+     "quote": "Figure 6 shows the NH3-TPD patterns of H-type TZ and MZ-3"
+    },
+    {
+     "technique": "TG-DSC/DTG",
+     "result": "weight losses of the uncalcined TZ (H2O, TPA+ burning, occluded TPA+)",
+     "instrument": "Netzsch Sta 449 F3",
+     "conditions": "uncalcined sample",
+     "quote": "As shown in Fig. 5, the uncalcined samples of TZ and MZ-3 have been analyzed by thermal gravimetric."
     }
    ],
    "outcomes": [
@@ -1255,6 +1405,18 @@
      "property": "LDPE_conversion_100pct_temperature",
      "value_text": "nearby 500 °C",
      "quote": "The conversion of LDPE on sample MZ-3 reaches to 100% at 375 °C, and the 100% conversion on sample TZ is nearby 500 °C"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "tetrapropylammonium hydroxide (TPAOH), TZ",
+     "formula": "C12H29NO",
+     "role": "template",
+     "amount_text": "same amounts of TPAOH utilized",
+     "purity": "25 wt%",
+     "supplier": "Zhengzhou Alpha Chemical Co., Ltd",
+     "supplier_quote": "tetrapropylammonium hydroxide (TPAOH, 25 wt%, C12H29NO, 203.37, Zhengzhou Alpha Chemical Co., Ltd)",
+     "quote": "the weight loss in 350–770 °C of the samples of MZ-3 and TZ are almost the same, because of the same amounts of TPAOH utilized"
     }
    ]
   },
@@ -1592,7 +1754,7 @@
    "sample": "MZ-3-used",
    "defined_in": "Results, recycle test",
    "route": null,
-   "why": "catalyseur MZ-3 usagé après 20 essais de craquage du TIPB, pas une nouvelle synthèse ; ses résultats sont rangés dans les résultats de MZ-3 (Additional file 1 absent)",
+   "why": "catalyseur MZ-3 usagé après 20 essais de craquage du TIPB, pas une nouvelle synthèse ; ses résultats (conversion, sélectivité, coke) sont rangés dans les résultats de MZ-3 sous des noms de propriété « after_20 runs » et distincts de ceux du MZ-3 frais (annexe absente pour le reste)",
    "results_in": [
     "Additional file 1 Figures S5-S7, Table S4"
    ]
@@ -1601,7 +1763,7 @@
    "sample": "blank (LDPE without catalyst)",
    "defined_in": "Results, LDPE cracking",
    "route": null,
-   "why": "essai à blanc sans catalyseur, aucun matériau synthétisé",
+   "why": "essai à blanc sans catalyseur, aucun matériau synthétisé ; son T50 de 460 °C (craquage du LDPE, texte et Fig. 9) est consigné dans une annotation tendance_observee",
    "results_in": [
     "Fig. 9"
    ]
@@ -1678,20 +1840,62 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le TPAOH en solution à 25 % est une base forte corrosive ; le méthanol de la solution de ST est toxique et inflammable ; les alkoxysilanes libèrent du méthanol à l'hydrolyse et l'aminosilane et l'époxysilane sont irritants et sensibilisants. La réaction sous micro-ondes dans un réacteur fermé à 85 °C et la cristallisation en autoclave à 170 °C pendant 3 jours (pression autogène, ne pas dépasser le taux de remplissage recommandé) demandent un équipement adapté. La digestion ICP utilise de l'acide fluorhydrique (HF) concentré avec de l'acide chlorhydrique et nitrique, très dangereux : gants adaptés, hotte, gluconate de calcium à portée de main. Le test de craquage du LDPE est conduit en thermobalance jusqu'à 600 °C ; les zéolithes en poudre fine sont à ne pas inhaler."
+   "text": "Le TPAOH en solution à 25 % est une base forte corrosive ; le méthanol de la solution de ST est toxique et inflammable ; les alkoxysilanes libèrent du méthanol à l'hydrolyse et l'aminosilane et l'époxysilane sont irritants et sensibilisants. La réaction sous micro-ondes dans un réacteur fermé à 85 °C et la cristallisation en autoclave à 170 °C pendant 3 jours (pression autogène, ne pas dépasser le taux de remplissage recommandé) demandent un équipement adapté. La digestion ICP utilise de l'acide fluorhydrique (HF) concentré avec de l'acide chlorhydrique et nitrique, très dangereux : gants adaptés, hotte, gluconate de calcium à portée de main. Le test de craquage du LDPE est conduit en thermobalance jusqu'à 600 °C ; les zéolithes en poudre fine sont à ne pas inhaler. Les essais catalytiques emploient du benzène (cancérogène, inflammable) en grand volume (68 mL) et de l'alcool benzylique : travail sous hotte, sans source d'ignition."
   },
   {
    "type": "limite_reproductibilite",
    "route": "HT-MZ-3",
    "text": "Le milieu du traitement hydrothermique (eau liquide ou vapeur), le récipient, la forme (Na ou H) de MZ-3 traitée et la pression ne sont pas donnés ; seules la température (150 °C) et la durée (10 jours) sont écrites, et dans la section Caractérisation.",
    "quote": "The hydrothermal treatment was operated at 150 °C for 10 days."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Au craquage du LDPE en thermobalance, l'essai à blanc sans catalyseur donne un T50 de 460 °C, contre 390 °C avec TZ et 350 °C avec MZ-3 : TZ gagne 70 °C sur le blanc et MZ-3 110 °C. Le blanc n'est pas un matériau synthétisé, il n'a donc pas de voie.",
+   "quote": "The T50 (temperature for 50% conversion of LDPE) of blank test, TZ and MZ-3 are 460, 390, and 350 °C, respectively"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Incohérence de l'article : le texte écrit « SiO2/Al2O3 = 50 » pour TZ et MZ-3 (NH3-TPD, Fig. 6), alors que la Table 1 (ICP) donne 49 pour TZ et 51 pour MZ-3. Les valeurs de la Table 1 sont conservées ; la différence est faible mais le rapport « identique » invoqué pour comparer les acidités n'est qu'approché.",
+   "quote": "with the same SiO2/Al2O3 molar ratios (SiO2/Al2O3 = 50)"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-1",
+   "text": "Le rapport TPAOH/ST = 8 est incompatible avec le volume de TPAOH écrit. Calcul de la critique scientifique : avec 1,3 g de ST pur, TPAOH/ST = 8 impose environ 12,8 mL de TPAOH à 25 %, hors de la plage 20–60 mL du protocole type ; et si le volume de TPAOH est fixe (celui de MZ-3, environ 30,6 mL), le rapport vaut environ 19 pour MZ-1. Le volume réel de TPAOH de MZ-1, MZ-2 et MZ-4 est donc indéterminable ; il est aussi possible que la série MZ-1 à MZ-4 fasse varier l'alcalinité (OH/SiO2 de 0,28 à 0,83) en même temps que la masse de ST. Dans la composition annoncée, 2–7 ST avec TPAOH/ST = 8 donnent 16–56 TPAOH pour 60 SiO2, alors que l'article écrit 25,4–76.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-3",
+   "text": "Déduction de la critique scientifique, que l'article n'écrit pas : les masses de ST (1,3 à 3,9 g) sont cohérentes avec du ST pur (environ 2 à 6 ST par Al2O3, dans la plage « 2–7 ST ») et non avec la solution méthanolique à 48 % (MZ-1 et MZ-2 tomberaient sous la borne de 2, et le TPAOH de MZ-3 imposé par TPAOH/ST = 8 passerait sous 20 mL). Pour MZ-3, cela ferait 3,1 g de ST pur et environ 30 mL de TPAOH à 25 % ; le chimiste doit le vérifier avant de refaire la synthèse.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-3",
+   "text": "Le test de recyclage est incohérent avec ses Méthodes. Selon la critique scientifique, 20 injections de 0,8 µL de triisopropylbenzène représentent environ 13,5 mg de réactif, moins que le coke annoncé (18,57 % de 120 mg de catalyseur, soit 22 à 27 mg) ; le lit fixe (débit, durée, masse de réactif) n'est pas décrit. La conclusion « great recycle stability » contredit aussi la chute de conversion de 97,5 % à 31,8 % et de la sélectivité en benzène de 30,8 % à 21,6 % : ces valeurs décrivent le catalyseur usagé, pas le MZ-3 frais.",
+   "quote": "the hierarchical ZSM-5 zeolites obtained in this paper in the presence of mesoporogen ST was of great recycle stability"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MZ-3",
+   "text": "Réserves de la critique scientifique sur l'interprétation : le greffage covalent du ST n'est pas démontré (pas de RMN 29Si ; la perte d'ATG de 10 % est inférieure aux environ 22 % attendus si tout le ST était retenu ; SiO2/Al2O3 de 47 à 51 sans tendance), et le caractère « intracristallin » des mésopores n'est pas prouvé. Le silicium du ST n'est pas compté dans la composition « 60 SiO2 » (il en ajoute environ 25 % pour MZ-3). L'alcalinité du gel est forte (OH/SiO2 environ 0,66). Le vocabulaire est inexact par endroits : « ternary ammonium » pour une amine tertiaire neutre, « hysteresis loop of type I » pour TZ, « distorted DDR5 » pour la bande à 542 cm-1. Le mécanisme proposé (ST inhibiteur de croissance greffé, plutôt que micelle) reste une hypothèse.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TZ",
+   "text": "TZ est un témoin imparfait : préparée « without the mesoporogen ST », elle est aussi sans le méthanol apporté par la solution de ST, et son volume de TPAOH n'est pas chiffré (« the same amounts of TPAOH utilized » seulement). La critique scientifique note qu'une alcalinité OH/SiO2 d'au moins 0,43 donnerait d'ordinaire des cristaux sub-micrométriques, alors que TZ forme des particules de 2 à 10 µm ; et que l'argument de l'ATG (« same amounts of TPAOH ») ne tient pas, la teneur en TPA+ occlus étant fixée par la structure MFI. L'alkylation du benzène à 80 °C est décrite sans mention de reflux.",
+   "quote": null
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "MZ-3 réactif TPAOH",
-   "issue": "Le texte donne « 20–60 mL » de TPAOH pour le protocole type, sans dire le volume utilisé pour MZ-3 (seulement TPAOH/ST = 8). La plage est recopiée telle quelle en amount_text ; elle peut ne pas valoir pour MZ-3. Une branche par borne n'est pas créée (règle des plages)."
+   "issue": "Le texte donne « 20–60 mL » de TPAOH pour le protocole type, sans dire le volume utilisé pour MZ-3 (seulement TPAOH/ST = 8). La plage est recopiée telle quelle en amount_text ; elle peut ne pas valoir pour MZ-3. Une branche par borne n'est pas créée (règle des plages). Correction : « 20–60 mL » est la plage du protocole type (criblage) ; le volume réel de MZ-3 est déclaré non cité au niveau de la voie (tpaoh_volume)."
   },
   {
    "where": "MZ-3 réactif ST (3,1 g)",
@@ -1699,11 +1903,11 @@
   },
   {
    "where": "MZ-1, MZ-2, MZ-4",
-   "issue": "Seule la masse de ST est donnée par échantillon ; les autres étapes sont héritées de MZ-3 car l'article dit que « the MZ samples were crystallined under the optimum conditions of 170 °C for 3 days and the molar ratio of TPAOH/ST = 8 ». Comme le rapport TPAOH/ST reste à 8, le volume de TPAOH varie sûrement avec la masse de ST, sans que l'article le dise ; seule la variation sur ST est enregistrée."
+   "issue": "Seule la masse de ST est donnée par échantillon ; 170 °C, 3 jours et TPAOH/ST = 8 sont hérités de MZ-3 car l'article les écrit pour « the MZ samples ». Avec TPAOH/ST = 8, le volume de TPAOH varie avec la masse de ST ; l'article ne le donne pas : la plage « 20–60 mL » n'est PAS reprise pour MZ-1, MZ-2, MZ-4 (déclarée non citée, variation « molar ratio of TPAOH/ST = 8 » à la place)."
   },
   {
    "where": "TZ",
-   "issue": "« produced with the same method of MZ without the mesoporogen ST » : TZ reçoit ses propres étapes (celles de MZ-3 sans l'ajout de ST), avec les conditions de cristallisation de MZ (170 °C, 3 jours) et le volume de TPAOH non précisé ; l'article ne chiffre pas la cristallisation de TZ séparément."
+   "issue": "« produced with the same method of MZ without the mesoporogen ST » : TZ reçoit les étapes de MZ-3 sans ST. La quantité de TPAOH de TZ n'est pas chiffrée : l'article dit seulement « the same amounts of TPAOH utilized » (renvoi à MZ-3, discussion de la TG). Les 170 °C et 3 jours de la cristallisation de TZ sont déduits de « same method of MZ » (l'article ne chiffre pas la cristallisation de TZ séparément) ; la citation de l'étape 6 est le passage qui relie les conditions optimales de MZ à TZ."
   },
   {
    "where": "Table 1 et caractérisations",
@@ -1715,7 +1919,7 @@
   },
   {
    "where": "MZ-3 crystallisation",
-   "issue": "Le protocole type indique 80 °C pendant 24 h puis 160–200 °C pendant 1–5 jours ; la condition de MZ-3 (170 °C, 3 jours) vient de la phrase sur les échantillons optimaux ; l'étape à 80 °C est supposée appliquée à MZ-3 car le protocole est présenté comme commun."
+   "issue": "Le protocole type indique 80 °C pendant 24 h puis 160–200 °C pendant 1–5 jours ; la condition de MZ-3 (170 °C, 3 jours) vient de la phrase sur les échantillons optimaux ; l'étape à 80 °C est celle du protocole type, supposée appliquée à MZ-3 et à TZ (l'article ne la répète pas pour chaque échantillon)."
   },
   {
    "where": "Valeurs lues sur figure",
@@ -1723,11 +1927,23 @@
   },
   {
    "where": "MZ-3 test de recyclage",
-   "issue": "Les résultats après 20 essais successifs (conversion 31,8 %, sélectivité benzène 21,6 %, coke 18,57 % en masse) sont des résultats du catalyseur MZ-3 usagé et sont rangés dans les résultats de MZ-3 ; les données de MZ-3-used (Figures S5–S7, Table S4) sont dans l'annexe absente."
+   "issue": "Les résultats après 20 essais successifs (conversion 31,8 %, sélectivité benzène 21,6 %, coke 18,57 % en masse) décrivent le catalyseur MZ-3 usagé (« MZ-3-used »), pas le MZ-3 frais ; ils sont rangés dans les résultats de MZ-3 sous des noms « after 20 runs ». Les données de MZ-3-used (Figures S5–S7, Table S4) sont dans l'annexe absente."
   },
   {
    "where": "Résumé de l'article",
    "issue": "Le résumé parle d'un « ternary ammonium » au centre du ST alors que la réaction amine + époxyde décrite ne donne qu'une amine tertiaire ; la structure n'est pas extraite, seule la formule C24H57O13NSi3 l'est."
+  },
+  {
+   "where": "Table 1 et NH3-TPD (SiO2/Al2O3)",
+   "issue": "Le texte dit « SiO2/Al2O3 = 50 » pour TZ et MZ-3 (Fig. 6) alors que la Table 1 donne 49 pour TZ et 51 pour MZ-3 ; valeurs de la Table 1 conservées."
+  },
+  {
+   "where": "MZ-1, MZ-2, MZ-4 caractérisations",
+   "issue": "XRD, FTIR, isotherme de type IV et mésopores de 4–8 nm sont écrits pour « MZ samples » (groupe) ; ils sont portés par une citation de groupe sur MZ-1, MZ-2, MZ-4 et sur MZ-3, sans mesure propre à chaque échantillon dans le texte."
+  },
+  {
+   "where": "TZ caractérisations",
+   "issue": "Les conditions des essais catalytiques, de la TG et de la TPD sont écrites pour « the sample » ou « the catalyst » : elles sont rattachées à TZ par concordance avec les résultats de TZ (Fig. 5a–9a), sans phrase propre à TZ."
   }
  ]
 }
