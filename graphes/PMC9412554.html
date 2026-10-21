@@ -1,0 +1,102 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9412554</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9412554 — Design and Preparation of Polyimide/TiO2@MoS2 Nanofibers by Hydrothermal Synthesis and Their Photocatalytic Performance.</h1>
+<h2>Voie : PI</h2>
+<pre class="mermaid">flowchart LR
+  R14585([&quot;4,4′-oxydianiline (ODA)&lt;br/&gt;3.97 g&quot;]):::reactif
+  R14585 --&gt;|&quot;monomer&quot;| S17387
+  R14586([&quot;pyromellitic dianhydride (PMDA)&lt;br/&gt;4.33 g&quot;]):::reactif
+  R14586 --&gt;|&quot;monomer&quot;| S17387
+  R14587([&quot;N,N-dimethylformamide (DMF)&lt;br/&gt;35 mL&quot;]):::reactif
+  R14587 --&gt;|&quot;solvent&quot;| S17387
+  S17387[&quot;&lt;b&gt;1. purify&lt;/b&gt;&quot;]:::etape
+  S17387 --&gt; S17388
+  S17388[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;solid_content : 25 %&lt;br/&gt;duration : 8 h&quot;]:::etape
+  S17388 --&gt; S17389
+  S17389[&quot;&lt;b&gt;3. electrospin&lt;/b&gt;&lt;br/&gt;concentration : 15 %&lt;br/&gt;voltage : 15 kV&lt;br/&gt;needle_collector_distance : 15 cm&quot;]:::etape
+  S17389 --&gt; S17390
+  S17390[&quot;&lt;b&gt;4. heat&lt;/b&gt;&quot;]:::etape
+  S17390 --&gt; M
+  M{{&quot;electrospun polyimide (PMDA-ODA) nanofibers&lt;br/&gt;&quot;}}:::materiau
+  O70393[&quot;MB_C_over_C0_180min_UV : 0.91&quot;]:::resultat
+  M -.-&gt; O70393
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PI/TiO2</h2>
+<pre class="mermaid">flowchart LR
+  R14588([&quot;hydrochloric acid solution (1 mol/L in water)&lt;br/&gt;33 mL&quot;]):::reactif
+  R14588 --&gt;|&quot;acid&quot;| S17391
+  R14589([&quot;titanium powder&lt;br/&gt;0.04~0.05 g&quot;]):::reactif
+  R14589 --&gt;|&quot;precursor&quot;| S17391
+  R14590([&quot;PI nanofibers (route PI)&lt;br/&gt;0.1 g&quot;]):::reactif
+  R14590 --&gt;|&quot;intermediate&quot;| S17391
+  R14591([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14591 --&gt;|&quot;wash&quot;| S17391
+  S17391[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;volume : 33 mL&lt;br/&gt;concentration : 1 mol/L&quot;]:::etape
+  S17391 --&gt; S17392
+  S17392[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;mass : 0.04~0.05 g g&quot;]:::etape
+  S17392 --&gt; S17393
+  S17393[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;mass : 0.1 g&quot;]:::etape
+  S17393 --&gt; S17394
+  S17394[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S17394 --&gt; S17395
+  S17395[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 160 °C&lt;br/&gt;duration : 16 h&quot;]:::etape
+  S17395 --&gt; S17396
+  S17396[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&quot;]:::etape
+  S17396 --&gt; S17397
+  S17397[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&quot;]:::etape
+  S17397 --&gt; M
+  M{{&quot;TiO2 nanorods grown on polyimide nanofibers&lt;br/&gt;TiO2&quot;}}:::materiau
+  O70394[&quot;TiO2_rod_length : 800 to 1000 nm&quot;]:::resultat
+  M -.-&gt; O70394
+  O70395[&quot;TiO2_rod_width : 50 to 200 nm&quot;]:::resultat
+  M -.-&gt; O70395
+  O70396[&quot;TiO2_rod_distribution : very dense on the polyimide f…&quot;]:::resultat
+  M -.-&gt; O70396
+  O70397[&quot;MB_C_over_C0_180min_UV : 0.3&quot;]:::resultat
+  M -.-&gt; O70397
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PI/TiO2@MoS2</h2>
+<pre class="mermaid">flowchart LR
+  R14592([&quot;sodium molybdate dihydrate&lt;br/&gt;A small amount&quot;]):::reactif
+  R14592 --&gt;|&quot;precursor&quot;| S17398
+  R14593([&quot;thioacetamide&lt;br/&gt;A small amount&quot;]):::reactif
+  R14593 --&gt;|&quot;precursor&quot;| S17398
+  R14594([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14594 --&gt;|&quot;solvent&quot;| S17398
+  R14595([&quot;PI/TiO2 fibers (route PI/TiO2)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14595 --&gt;|&quot;intermediate&quot;| S17398
+  R14596([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14596 --&gt;|&quot;wash&quot;| S17398
+  S17398[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S17398 --&gt; S17399
+  S17399[&quot;&lt;b&gt;2. stir&lt;/b&gt;&quot;]:::etape
+  S17399 --&gt; S17400
+  S17400[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S17400 --&gt; S17401
+  S17401[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S17401 --&gt; S17402
+  S17402[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S17402 --&gt; S17403
+  S17403[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&quot;]:::etape
+  S17403 --&gt; M
+  M{{&quot;MoS2 grown on TiO2 nanorods on polyimide nanofibe…&lt;br/&gt;MoS2/TiO2/PI&quot;}}:::materiau
+  O70398[&quot;phase_TiO2 : rutile (JCPDS 21-1276, P42/mn…&quot;]:::resultat
+  M -.-&gt; O70398
+  O70399[&quot;phase_MoS2 : hexagonal (JCPDS 37-1492), we…&quot;]:::resultat
+  M -.-&gt; O70399
+  O70400[&quot;morphology : MoS2 nanospheres grown in sit…&quot;]:::resultat
+  M -.-&gt; O70400
+  O70401[&quot;band_gap : 2.7 eV&quot;]:::resultat
+  M -.-&gt; O70401
+  O70402[&quot;absorption_threshold_wavelength : 450 nm&quot;]:::resultat
+  M -.-&gt; O70402
+  O70403[&quot;MB_degradation_180min_UV : 95 %&quot;]:::resultat
+  M -.-&gt; O70403
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

@@ -62,6 +62,19 @@
    "steps": [
     {
      "order": 1,
+     "action": "purify",
+     "description": "Purify the monomers PMDA and 4,4'-ODA by sublimation before use.",
+     "quote": "they were further purified by sublimation before use",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "pressure",
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
      "action": "react",
      "description": "Polycondensation of ODA and PMDA in DMF to give the poly(amic acid) (PAA) solution; stirring stopped after 8 h when the solution had become highly viscous.",
      "quote": "Both 3.97 g ODA and 4.33 g PMDA were reacted in 35 mL of N,N-dimethylformamide (DMF) by polycondensation, with a solid content of 25%.",
@@ -88,7 +101,7 @@
      ]
     },
     {
-     "order": 2,
+     "order": 3,
      "action": "electrospin",
      "description": "Electrospin the PAA solution (15%) to obtain PAA nanofibers.",
      "quote": "The PAA nanofibers were prepared by electrospinning the PAA solution (15%) at 15 kV with 15 cm from needle to collector.",
@@ -130,7 +143,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "heat",
      "description": "Thermal imidation of the electrospun PAA nanofibers to give polyimide nanofibers.",
      "quote": "then polyamide acid nanofibers proceeded with thermal imidation",
@@ -159,6 +172,20 @@
      "instrument": "Varian 670-IR spectrometer",
      "conditions": null,
      "quote": "The FTIR of PI is shown without the –OH peak in Figure 6f."
+    },
+    {
+     "technique": "FTIR",
+     "result": "bands at 3426, 1720, 1648 and 1498 cm−1 described as amide groups, the 1648 cm−1 band as tertiary amide, 'imidization was completed'; bands at 1405 cm−1 (asymmetric C–N stretching) and 725 cm−1 (imide ring deformation) described as characteristic of polyimide (Figure 6f)",
+     "instrument": "Varian 670-IR spectrometer",
+     "conditions": null,
+     "quote": "The strong characteristic absorption peaks at 3426, 1720, 1648, and 1498 cm−1 in Figure 6f also indicated the presence of amide groups, while the absorption peak at 1648 cm−1 represented the tertiary amide, which indicated that imidization was completed. The peaks at 1405 and 725 cm−1 corresponded to the asymmetric stretching vibration of C–N and the deformation of the imide ring, respectively, which create the characteristic peaks of polyimide groups."
+    },
+    {
+     "technique": "photocatalytic MB degradation",
+     "result": "C/C0 about 0.91 at 180 min read on Figure 8 (right); the text says it is difficult to degrade pure MB and PI nanofiber in UV",
+     "instrument": "UV lamp Shanghai Guanghao ZF-2 (365 nm)",
+     "conditions": "UV irradiation (λ = 365 nm, Figure 8 caption); the text says the samples were compared 'with the same irradiation rate of UV at the same time'; catalyst mass, MB concentration, solution volume and dark period are stated only for PI/TiO2@MoS2, not for this sample",
+     "quote": "As shown in Figure 8 (right), we observed that the dye degradation rate of the prepared samples varied with the same irradiation rate of UV at the same time."
     }
    ],
    "outcomes": [
@@ -166,7 +193,7 @@
      "property": "MB_C_over_C0_180min_UV",
      "value_num": 0.91,
      "from_figure": "Fig. 8 (right)",
-     "quote": "Figure 8 UV–Vis absorption spectra of methylene blue (MB) as a function of UV-light irradiation time (λ = 365 nm) in the presence of the PI/TiO2@MoS2 composites fiber (left); MB concentration changes with the as-prepared samples (right)."
+     "quote": "As shown in Figure 8 (right), we observed that the dye degradation rate of the prepared samples varied with the same irradiation rate of UV at the same time."
     }
    ],
    "missing_fields": [
@@ -407,6 +434,20 @@
      "instrument": "Varian 670-IR spectrometer",
      "conditions": null,
      "quote": "The PI/TiO2 nanorods showed bands around 3426 and 1648 cm−1, corresponding to the stretching and bending vibrations of hydroxyl groups on the surface of the TiO2 nanorod surface, respectively (Figure 6f)."
+    },
+    {
+     "technique": "XRD",
+     "result": "XRD pattern of PI/TiO2 shown only in Figure 4 (with PI/MoS2 and PI/TiO2@MoS2); no peak position or phase given in the text for this sample",
+     "instrument": "Bruker D8 Advance diffractometer",
+     "conditions": "CuKa1 radiation (λ = 0.15406 nm)",
+     "quote": "Figure 4 XRD pattern of the as-prepared PI/MoS2, PI/TiO2 and PI/TiO2@ MoS2. 2θ."
+    },
+    {
+     "technique": "photocatalytic MB degradation",
+     "result": "C/C0 about 0.30 at 180 min read on Figure 8 (right); PI/TiO2@MoS2 shows enhanced photocatalytic activity compared with PI/TiO2",
+     "instrument": "UV lamp Shanghai Guanghao ZF-2 (365 nm)",
+     "conditions": "UV irradiation (λ = 365 nm, Figure 8 caption); the text says the samples were compared 'with the same irradiation rate of UV at the same time'; catalyst mass, MB concentration, solution volume and dark period are stated only for PI/TiO2@MoS2, not for this sample",
+     "quote": "As shown in Figure 8 (right), we observed that the dye degradation rate of the prepared samples varied with the same irradiation rate of UV at the same time."
     }
    ],
    "outcomes": [
@@ -429,7 +470,7 @@
      "property": "MB_C_over_C0_180min_UV",
      "value_num": 0.3,
      "from_figure": "Fig. 8 (right)",
-     "quote": "Figure 8 UV–Vis absorption spectra of methylene blue (MB) as a function of UV-light irradiation time (λ = 365 nm) in the presence of the PI/TiO2@MoS2 composites fiber (left); MB concentration changes with the as-prepared samples (right)."
+     "quote": "As shown in Figure 8 (right), we observed that the dye degradation rate of the prepared samples varied with the same irradiation rate of UV at the same time."
     }
    ],
    "missing_fields": [
@@ -677,6 +718,13 @@
      "instrument": "UV lamp Shanghai Guanghao ZF-2 (365 nm); UV-3600 Shimadzu spectrophotometer",
      "conditions": "room temperature; MB 5 mg/L; catalyst 0.02 g; 30 min in the dark before irradiation; MB band at 663 nm followed every 30 min",
      "quote": "Figure 8 (left) shows the UV–Vis spectra of MB (5 mg/L) after ultraviolet light (λ = 365 nm) irradiation in the presence of PI/TiO2@MoS2 (0.02 g)."
+    },
+    {
+     "technique": "FTIR",
+     "result": "FTIR peaks (Figure 6f, nanocomposite) in the range from 1008 to 1648, 2925 and 3426 cm−1; strong O-H peak and water bonding at 3426 and 603 cm−1; peaks at 1008 and 1243 cm−1 attributed to complex sulfur with the active sites in MoS2",
+     "instrument": "Varian 670-IR spectrometer",
+     "conditions": null,
+     "quote": "In MoS2, FTIR peaks exist in the range from 1008 to 1648, 2925, and 3426 cm−1."
     }
    ],
    "outcomes": [
@@ -792,7 +840,43 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le HCl à 1 mol/L est corrosif. Les réactions hydrothermales à 160 et 200 °C se font sous pression propre dans un autoclave fermé : taux de remplissage inconnu, refroidissement complet avant ouverture. La thioacétamide est un cancérigène suspecté et dégage du H2S toxique à chaud, donc ouverture sous hotte. Le DMF est reprotoxique ; le PMDA est irritant et sensible à l'humidité. L'électrofilage met en jeu 15 kV : isoler l'appareil et éviter tout contact. Poudre de titane et nanofibres fines : éviter l'inhalation."
+   "text": "Le HCl à 1 mol/L est corrosif. Les réactions hydrothermales à 160 et 200 °C se font sous pression propre dans un autoclave fermé : taux de remplissage inconnu, refroidissement complet avant ouverture. La thioacétamide est un cancérigène suspecté et dégage du H2S toxique à chaud, donc ouverture sous hotte. Le DMF est reprotoxique ; le PMDA est irritant et sensible à l'humidité. L'électrofilage met en jeu 15 kV : isoler l'appareil et éviter tout contact. Poudre de titane et nanofibres fines : éviter l'inhalation. La dissolution de la poudre de titane dans HCl dégage de l'hydrogène, inflammable (réaction écrite par les auteurs : 2Ti + 6HCl → 2TiCl3 + 3H2) : dans l'autoclave scellé chauffé à 160 °C, ce gaz s'ajoute à la pression de vapeur de l'eau ; ouvrir seulement après refroidissement complet, sous hotte et loin de toute flamme."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PI",
+   "text": "La bande à 1648 cm−1, que les auteurs donnent comme preuve que l'imidation est complète (« amide tertiaire »), est en réalité la bande amide de l'acide polyamique, qui disparaît quand l'imidation est complète ; la bande imide à 1780 cm−1 n'est pas citée et aucun programme d'imidation (température, paliers, durée, atmosphère) n'est donné, donc le taux d'imidation n'est pas démontré (réserve du critique scientifique, d'après la notice « IR studies of polyimides I », Bell Labs). La teneur en solide de 25 % ne correspond pas non plus aux quantités : 8,30 g de monomères dans 35 mL de DMF (≈ 33 g) donnent ≈ 20 % en masse, et la dilution à 15 % avant électrofilage n'est pas décrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PI/TiO2",
+   "text": "La section Materials cite une « Titania powder » alors que la synthèse et le mécanisme emploient du titane métal (2Ti + 6HCl) : seule la lecture titane métal est cohérente, mais pureté, granulométrie et fournisseur restent inconnus et le volume de l'autoclave n'est pas donné (il fixe l'oxygène disponible pour oxyder Ti(III)). La tenue des fibres de polyimide dans HCl 1 mol/L à 160 °C pendant 16 h n'est pas vérifiée dans l'article (pas de FTIR avant/après).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PI/TiO2@MoS2",
+   "text": "Quantités de molybdate de sodium et de thioacétamide (« a small amount »), volume d'eau, masse de fibres PI/TiO2 et volume d'autoclave absents : le bilan redox exige au moins 3 thioacétamides par Mo, rapport impossible à fixer, et la charge en MoS2 n'est pas mesurée ; la voie n'est pas reproductible telle qu'écrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PI/TiO2@MoS2",
+   "text": "Dans l'article, les énergies de liaison Mo 3d3/2 = 229,5 eV et Mo 3d5/2 = 232,8 eV sont inversées : la composante 3d5/2 est toujours à plus basse énergie (≈ 229,5 eV pour Mo4+ dans MoS2, 3d3/2 ≈ 232,7 eV, d'après arXiv:1906.05436). Les valeurs et leur étiquetage sont conservés tels qu'écrits ; elles restent compatibles avec Mo4+.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PI/TiO2@MoS2",
+   "text": "La bande interdite de 2,7 eV vient d'un tracé de Tauc sur un composite noir contenant MoS2, comparée à ≈ 3,2 eV, valeur de l'anatase, alors que le TiO2 est du rutile (≈ 3,0 eV, Hanaor et Sorrell, J. Mater. Sci. 46, 855, 2011) ; aucun spectre de PI/TiO2 n'est montré. La baisse de bande interdite attribuée à MoS2 n'est donc pas démontrée (l'absorption de MoS2 dans le visible déplace le seuil apparent).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PI/TiO2@MoS2",
+   "text": "Photocatalyse : 30 min d'obscurité seulement, ni témoin d'adsorption sur 180 min, ni photolyse sans catalyseur, ni piégeurs de radicaux, ni volume de solution ; le gain par rapport à PI/TiO2 (C/C0 ≈ 0,05 contre ≈ 0,30) peut donc mêler adsorption et photocatalyse. Les raies du rutile en DRX sont identiques à 0,01° près à celles de la fiche JCPDS 21-1276, ce qui suggère des positions recopiées de la fiche plutôt que mesurées. Le mécanisme de transfert d'électrons de TiO2 vers MoS2 reste une hypothèse des auteurs, sans mesure à l'appui.",
+   "quote": null
   }
  ],
  "sample_inventory": [
@@ -856,11 +940,11 @@
    "issue": "La section Materials cite « Titania powder » (poudre de TiO2) acheté chez Sinopharm, alors que la synthèse (et le mécanisme, Ti + HCl → TiCl3) emploie « titanium powders ». Lecture littérale retenue : poudre de titane, avec pureté et fournisseur non cités ; l'autre lecture est une erreur de traduction pour titanium powder, fournisseur Sinopharm."
   },
   {
-   "where": "PI, étapes 1 et 2",
+   "where": "PI, étapes 2 et 3",
    "issue": "La synthèse du PAA donne une teneur en solide de 25 %, mais la solution électrofilée est dite à 15 % sans que la dilution soit décrite. Les deux valeurs sont extraites telles quelles, chacune dans son étape."
   },
   {
-   "where": "PI, étape 1",
+   "where": "PI, étape 2",
    "issue": "La durée de 8 h est celle de l'agitation (« we stopped stirring after 8 h »), prise comme durée de réaction ; l'article ne donne ni température ni atmosphère."
   },
   {
@@ -878,6 +962,30 @@
   {
    "where": "PI/TiO2@MoS2, réactifs",
    "issue": "« A small amount of sodium molybdate and thioacetamide » : quantité non chiffrée, enregistrée en amount_text sans nombre ; les masses réelles ne sont pas dans l'article."
+  },
+  {
+   "where": "PI, étape 1",
+   "issue": "La sublimation des monomères (PMDA et ODA) n'est écrite que dans la phrase du fournisseur, en Materials ; elle est consignée comme étape de purification préalable, sans température, pression ni durée (non citées)."
+  },
+  {
+   "where": "PI, caractérisation FTIR",
+   "issue": "La phrase sur les bandes 3426, 1720, 1648, 1498, 1405 et 725 cm−1 suit celle de PI/TiO2 et renvoie à la figure 6f (spectres du nanocomposite) sans nommer l'échantillon : l'attribution à PI est implicite. Les auteurs lisent 1648 cm−1 comme amide tertiaire prouvant l'imidation, mais le même pic reçoit ailleurs deux autres attributions (OH de TiO2, Ti-O)."
+  },
+  {
+   "where": "PI/TiO2@MoS2, caractérisation FTIR",
+   "issue": "La phrase « In MoS2, FTIR peaks exist… » ne dit pas si le spectre est celui du MoS2 seul ou du composite final ; elle est rattachée à la voie finale parce qu'elle commente la figure 6f (nanocomposite)."
+  },
+  {
+   "where": "PI/TiO2@MoS2, XPS",
+   "issue": "Mo 3d3/2 = 229,5 eV et Mo 3d5/2 = 232,8 eV sont recopiés tels que l'article les écrit, mais l'ordre physique est inverse (3d5/2 à plus basse énergie) ; étiquetage de l'article conservé."
+  },
+  {
+   "where": "PI/TiO2, caractérisation XRD",
+   "issue": "Le diagramme de PI/TiO2 n'existe que sur la figure 4 : aucune position de pic ni phase n'est écrite dans le texte pour cet échantillon ; le texte ne décrit que le composite final."
+  },
+  {
+   "where": "PI et PI/TiO2, photocatalyse",
+   "issue": "Masse de catalyseur (0,02 g), concentration de MB (5 mg/L) et période d'obscurité ne sont écrites que pour PI/TiO2@MoS2 ; pour PI et PI/TiO2 le texte dit seulement « the same irradiation rate of UV at the same time », donc ces conditions sont laissées non citées."
   }
  ]
 }
