@@ -495,7 +495,13 @@
      "action": "dissolve",
      "description": "Dissolve 17.0 mg of the polar extract in 100 mL of DW (freshly prepared solution called 1 mM).",
      "quote": "The solution of A. lycoctonum (1 mM) was freshly prepared by dissolving 17.0 mg of polar extract in 100 mL of DW",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_text": "1 mM",
+       "quote": "The solution of A. lycoctonum (1 mM) was freshly prepared by dissolving 17.0 mg of polar extract in 100 mL of DW"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "duration",
@@ -558,13 +564,18 @@
        "name": "light_source",
        "value_text": "diffused sunlight",
        "quote": "was observed over the course of 15 min of exposure to diffused sunlight"
+      },
+      {
+       "name": "vessel",
+       "value_text": "beaker covered with aluminium foil",
+       "from_figure": "Fig. 1",
+       "quote": "Fig. 1 A depiction of the color by exposing the A. lycoctonum-AgNO3 mixture is exposed to diffused sunlight; A 0 min, B Exposed to sunlight for 1 min, C 5 min, D 10 min, and E 15 min"
       }
      ],
      "equipment": [],
      "not_stated": [
       "temperature",
       "light_intensity",
-      "vessel",
       "stirring"
      ]
     }
@@ -644,7 +655,7 @@
      "technique": "α-amylase inhibition, DNS assay",
      "result": "inhibition 34.11% at 10 mg/mL and 59.12% at 30 mg/mL",
      "instrument": "absorbance at 540 nm",
-     "conditions": "250 µL AgNPs (10–30 mg/mL) + 250 µL amylase 0.4 U/mL; 10 min at 37 °C; 250 µL 1% starch, 30 min; DNS, boiling water bath 10 min",
+     "conditions": "250 µL AgNPs (10–30 mg/mL) + 250 µL amylase (0.4 U/mL, in 0.02 M PBS pH 6.9 containing 0.06 M sodium acetate); 10 min at 37 °C; 250 µL soluble starch 1% (w/v) in 0.02 M PBS pH 6.9, 30 min; reaction stopped in a boiling water bath for 10 min after adding 250 µL DNS reagent (DNS 96 mM, 30% Na–K tartrate, 0.4 M NaOH); after cooling to room temperature and dilution with 2 mL PBS, absorbance at 540 nm",
      "quote": "After a 10 min incubation at 37 °C, 250 µL of soluble starch 1% (w/v) (in 0.02 M PBS, pH 6.9) was added, followed by another 30 min of incubation."
     }
    ],
@@ -654,13 +665,6 @@
      "value_num": 460,
      "unit": "nm",
      "quote": "The AgNPs exhibited an SPR absorption peak at 460 nm after 15 min which confirmed the formation of biogenic AgNPs."
-    },
-    {
-     "property": "UV_vis_absorbance_at_band_maximum_after_0.5_min_sunlight_exposure",
-     "value_num": 0.1,
-     "unit": "a.u.",
-     "from_figure": "Fig. 2",
-     "quote": "Fig. 2 UV–Vis absorption spectra of biosynthesized AgNPs from A. lycoctonum. The inset shows the changes in absorbance as a function of reaction time"
     },
     {
      "property": "UV_vis_absorbance_at_band_maximum_after_1_min_sunlight_exposure",
@@ -874,7 +878,7 @@
      "quote": "50 | 0.3126 | 0.25 | 91.87"
     },
     {
-     "property": "alpha_amylase_agar_ZOI_AgNPs_20_uL",
+     "property": "alpha_amylase_agar_hydrolysis_zone_radius_AgNPs_20_uL",
      "value_num": 27,
      "unit": "mm",
      "quote": "AgNPs | 20 | 27 | 16.6"
@@ -886,7 +890,7 @@
      "quote": "AgNPs | 20 | 27 | 16.6"
     },
     {
-     "property": "alpha_amylase_agar_ZOI_AgNPs_30_uL",
+     "property": "alpha_amylase_agar_hydrolysis_zone_radius_AgNPs_30_uL",
      "value_num": 24,
      "unit": "mm",
      "quote": "| 30 | 24 | 25.0"
@@ -910,11 +914,17 @@
      "quote": "The lowest inhibitory activity, 34.11% was observed at a concentration 10 mg/mL of the synthesized AgNPs."
     },
     {
-     "property": "alpha_amylase_inhibition_AgNPs_figure_axis_3_mg_per_mL",
+     "property": "alpha_amylase_inhibition_AgNPs_Fig10_graduation_3_mg_per_mL",
      "value_num": 50,
      "unit": "%",
      "from_figure": "Fig. 10",
      "quote": "Fig. 10 Inhibitory effect of AgNPs synthesized from the polar extract of A. lycoctonum and the standard drug (acarbose) against α-amylase"
+    },
+    {
+     "property": "EDX_peaks_labelled_on_figure_not_in_text",
+     "value_text": "Si and Al peaks labelled in addition to Ag, C, O and Cl",
+     "from_figure": "Fig. 5B",
+     "quote": "Fig. 5 EDX of AgNPs synthesized with the polar extract of A. lycoctonum"
     }
    ]
   }
@@ -957,7 +967,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNPs_Aconitum",
-   "text": "Hypothèse de chimiste : les polyphénols, flavonoïdes et autres métabolites réducteurs de l'extrait (non identifiés ici) réduiraient probablement Ag+ en Ag0, la lumière accélérant probablement la réduction et la nucléation, tandis que les molécules de l'extrait adsorbées à la surface stabiliseraient les particules. Le rapport extrait/AgNO3 (17,0 mg chacun) n'est pas une stœchiométrie : la quantité de fonctions réductrices de l'extrait est inconnue."
+   "text": "Hypothèse de chimiste : à l'ajout de l'extrait, Ag+ se complexerait aux phénolates, carboxylates et hydroxyles des métabolites (non identifiés ici), et le chlorure de l'extrait précipiterait probablement tout de suite une partie de l'argent en AgCl. Sous la lumière solaire (UV-A et bleu), on attend un transfert de charge ligand → métal dans les complexes Ag+–matière organique et une excitation des phénols, qui cèdent des électrons à Ag+ (ligand oxydé en quinones ou acides), sans électrons hydratés ; AgCl, photosensible, se décomposerait en partie en Ag0 à sa surface (hétérostructures Ag/AgCl, voir Hou et al., 2013, Environ. Sci. Technol. 47, 7713). Les germes d'Ag0 croîtraient ensuite par réduction à leur surface, les molécules adsorbées de l'extrait limitant l'agrégation. Le produit le plus probable serait donc de l'Ag0 mêlé d'AgCl dans une matrice organique, à confirmer par DRX. Le rapport extrait/AgNO3 (17,0 mg chacun) n'est pas une stœchiométrie : la quantité de fonctions réductrices de l'extrait est inconnue."
   },
   {
    "type": "mecanisme_analyse",
@@ -978,7 +988,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "AgNPs_Aconitum",
-   "text": "Il manque la manière d'isoler les nanoparticules (centrifugation, lavage, séchage) : l'article ne décrit aucune étape après l'irradiation, ni le rendement, ni la température du mélange, l'intensité de la lumière, le récipient ou l'heure de l'exposition. L'extrait est « 1 mM » alors qu'il s'agit d'un mélange de composés (17,0 mg dans 100 mL, soit 0,17 g/L) ; la composition de l'extrait n'est pas donnée. Le modèle du microscope électronique, la préparation de l'échantillon (« microtomes ») et le mode de calcul de la taille moyenne ne sont pas précisés."
+   "text": "Il manque la manière d'isoler les nanoparticules (centrifugation, lavage, séchage) : l'article ne décrit aucune étape après l'irradiation, ni le rendement, ni la température du mélange, l'intensité de la lumière ou l'heure de l'exposition ; le récipient n'est visible que sur la photographie de la Fig. 1 (bécher couvert d'aluminium), sans volume. L'extrait est « 1 mM » alors qu'il s'agit d'un mélange de composés (17,0 mg dans 100 mL, soit 0,17 g/L) ; la composition de l'extrait n'est pas donnée. Le modèle du microscope électronique, la préparation de l'échantillon (« microtomes ») et le mode de calcul de la taille moyenne ne sont pas précisés."
   },
   {
    "type": "limite_reproductibilite",
@@ -988,7 +998,27 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "L'article contient plusieurs incohérences internes : z-average DLS de 65,9 nm dans le texte contre 80,87 nm sur la figure (65,9 nm est la position du pic) ; concentrations du tableau 1 (10–50 ppm) différentes du texte (100–500 µg/mL) ; absorbance de 0,25 pour 50 ppm dans le tableau 1, incompatible avec 91,87 % d'inhibition ; durée de réaction « moins de 60 s » contre 15 min. Aucune annexe n'est citée dans l'article."
+   "text": "L'article contient plusieurs incohérences internes : z-average DLS de 65,9 nm dans le texte contre 80,87 nm sur la figure (65,9 nm est la position du pic), et sur la Fig. 6 le PdI de 0,067, l'écart-type de 42,22 nm et la distribution tracée de 62 à 71 nm sont incompatibles entre eux ; concentrations du tableau 1 (10–50 ppm) différentes du texte (100–500 µg/mL) ; absorbance de 0,25 pour 50 ppm dans le tableau 1, incompatible avec 91,87 % d'inhibition (le recalcul donne 20 %) ; durée de réaction « moins de 60 s » contre 15 min. Aucune annexe n'est citée dans l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_Aconitum",
+   "text": "L'extrait est écrit « 1 mM » et le mélange « équimolaire », ce qui n'a pas de sens pour un extrait brut sans masse molaire : 17,0 mg dans 100 mL ne vaut 1 mM que pour une masse molaire de 170 g/mol, celle de AgNO3. Seule la concentration massique compte (0,17 g/L avant mélange) et les volumes mélangés (« 1:1 ») ne sont pas écrits. Aucun isolement n'est décrit alors qu'un lot contient au plus 10,8 mg d'argent (0,054 mg/mL dans le mélange) et que les essais utilisent 1 mg/mL puis 10–30 mg/mL : il faudrait concentrer de ×18,5 à ×556, et l'on ne sait pas si « mg/mL » désigne l'argent ou le solide sec."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_Aconitum",
+   "text": "La durée de réaction est contradictoire : « en moins de 60 s » tout l'Ag+ serait réduit, mais le temps minimum de réduction complète est donné à 15 min, et l'absorbance de la Fig. 2 croît encore entre 10 et 15 min (≈ 1,3 puis ≈ 1,5) sans plateau ; la réduction complète n'est pas démontrée (ni Ag+ résiduel, ni rendement mesurés). La phase n'est pas non plus démontrée : ni DRX ni diffraction électronique, et le pic Cl de l'EDX (Fig. 5B) atteint environ les deux tiers de celui de Ag ; avec le chlorure de l'extrait, le produit est probablement un mélange Ag/AgCl (voir Villanueva-Ibáñez et al., 2015, Mater. Lett. 152, 166), que l'EDX seule ne distingue pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_Aconitum",
+   "text": "Le mécanisme des auteurs (électrons « hydrogénés » produits par la lumière solaire diffuse dans la solution de AgNO3) est physiquement exclu : la photo-ionisation de l'eau demande des photons de plus de ≈ 6,5 eV alors que le rayonnement solaire au sol s'arrête vers 295 nm, et une solution de AgNO3 seule reste incolore au soleil. La photoréduction passe plutôt par les composés organiques (transfert de charge ligand → métal), comme décrit par Hou et al. (2013, Environ. Sci. Technol. 47, 7713)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_Aconitum",
+   "text": "Les dosages des essais biologiques sont incohérents entre sections : FRAP dilué à « 10 µg et 50 µg/L » en Méthodes contre résultats à 50–90 ppm (Fig. 8a), soit un facteur 1000 et une autre gamme ; DNS à 10–30 mg/mL dans le texte contre 1, 3 et 5 mg/ml sur la Fig. 10 ; DPPH à 20 µg/mL (résumé) contre 1–5 mL (Méthodes, Fig. 8b) ; tableau 1 en ppm contre 100–500 µg/mL dans le texte (facteur 10). Des pourcentages ne se recalculent pas : tableau 1, 50 ppm donne 20 % et non 91,87 % ; tableau 2, 16,6 % pour 27 mm alors que (32−27)/32 = 15,6 %, et acarbose 20 µL : 33,0 % au lieu de 37,5 %. La conclusion « aussi efficace que la ceftriaxone » contredit les zones mesurées (15–19 mm contre 22–23 mm sur la Fig. 7)."
   }
  ],
  "method_sources": [
@@ -1040,11 +1070,11 @@
   },
   {
    "where": "AgNPs_Aconitum, α-amylase Table 2",
-   "issue": "Les rangées « | 30 | 24 | 25.0 » et « | 30 | 21 | 34.3 » n'ont pas de nom de solution : leur attribution (AgNPs et acarbose) se fait par l'ordre des rangées sous « AgNPs » et « Standard (acarbose) ». L'unité de la colonne « Concentration » est le µL (volume), non une concentration. Les rangées acarbose (20 mm / 33.0 % et 21 mm / 34.3 %) et témoin (32 mm) ne sont pas reprises en résultats car elles ne portent pas sur une voie ; le pourcentage de 16.6 % ne correspond pas exactement à (32−27)/32."
+   "issue": "Les rangées « | 30 | 24 | 25.0 » et « | 30 | 21 | 34.3 » n'ont pas de nom de solution : leur attribution (AgNPs et acarbose) se fait par l'ordre des rangées sous « AgNPs » et « Standard (acarbose) ». L'unité de la colonne « Concentration » est le µL (volume), non une concentration. Les rangées acarbose (20 mm / 33.0 % et 21 mm / 34.3 %) et témoin (32 mm) ne sont pas reprises en résultats car elles ne portent pas sur une voie ; le pourcentage de 16.6 % ne correspond pas exactement à (32−27)/32. Le tableau intitule la colonne « Zone of inhibition (mm) », mais le témoin sans inhibiteur a la plus grande zone (32 mm) et les Méthodes parlent du rayon de la zone d'hydrolyse de l'amidon : les propriétés des AgNPs sont nommées « hydrolysis_zone_radius » (27 et 24 mm), non « zone d'inhibition ». Recalcul : (32−27)/32 = 15.6 % pour 16.6 % donné ; acarbose 20 µL : (32−20)/32 = 37.5 % pour 33.0 % donné."
   },
   {
    "where": "AgNPs_Aconitum, α-amylase DNS (Fig. 10)",
-   "issue": "Le texte et les Méthodes donnent 10 à 30 mg/mL, la Fig. 10 trace des points à 1, 3 et 5 mg/ml (AgNPs ≈ 34, 50 et 59 %, acarbose ≈ 57, 75 et 83 %). Seul le point intermédiaire des AgNPs (≈ 50 %, axe 3 mg/ml) est lu sur la figure, avec une précision de ± 2 points ; la concentration réelle correspondante n'est pas écrite."
+   "issue": "Le texte et les Méthodes donnent 10 à 30 mg/mL, la Fig. 10 trace des points à 1, 3 et 5 mg/ml (AgNPs ≈ 34, 50 et 59 %, acarbose ≈ 57, 75 et 83 %). Les deux points extrêmes des AgNPs (≈ 34 et ≈ 59 %) coïncident avec les valeurs du texte attribuées à 10 et 30 mg/mL : l'écart d'abscisse entre le texte et la figure n'est pas expliqué. Seul le point intermédiaire (≈ 50 %) est lu sur la figure, étiqueté selon la graduation de l'axe (3 mg/ml), précision ± 2 points ; sa concentration en mg/mL du texte n'est pas écrite."
   },
   {
    "where": "AgNPs_Aconitum, DPPH et FRAP (Fig. 8)",
@@ -1052,7 +1082,7 @@
   },
   {
    "where": "AgNPs_Aconitum, Fig. 2 (cinétique UV–vis)",
-   "issue": "Les Méthodes citent des spectres à 0, 1, 5, 10 et 15 min, la légende de la Fig. 2 porte 0.5, 1, 5, 10 et 15 min. Les absorbances ont été lues sur la figure au sommet de la bande (≈ 440–460 nm) avec une précision de ± 0.05 : 0.5 min ≈ 0.1, 1 min ≈ 0.45, 5 min ≈ 0.9, 10 min ≈ 1.3, 15 min ≈ 1.5. Le texte situe le pic de résonance à 460 nm, le sommet se lit plutôt vers 440–450 nm."
+   "issue": "Les Méthodes citent des spectres à 0, 1, 5, 10 et 15 min, la légende de la Fig. 2 porte 0.5, 1, 5, 10 et 15 min. Les absorbances de 1, 5, 10 et 15 min ont été lues sur la figure au sommet de la bande (≈ 440–460 nm) avec une précision de ± 0.05 : 1 min ≈ 0.45, 5 min ≈ 0.9, 10 min ≈ 1.3, 15 min ≈ 1.5. La courbe de 0.5 min, trop basse pour une lecture sûre (≈ 0.08 à 0.1 selon la longueur d'onde), n'est pas retenue comme résultat. Le texte situe le pic de résonance à 460 nm, le sommet se lit plutôt vers 440–450 nm."
   },
   {
    "where": "AgNPs_Aconitum, Fig. 7 (antibactérien)",
@@ -1073,6 +1103,10 @@
   {
    "where": "Matériaux de l'article (périmètre)",
    "issue": "Les essais biologiques (antibactérien, FRAP, DPPH, dénaturation de l'albumine, α-amylase) sont rangés en résultats de la voie AgNPs_Aconitum, conformément aux règles sur les tests du matériau fini. Les données de la Table 3 (AgNPs d'autres plantes, issues de la littérature) ne sont pas des synthèses de l'article et ne sont pas extraites."
+  },
+  {
+   "where": "AgNPs_Aconitum, Fig. 1 et Fig. 5B (lectures de figure)",
+   "issue": "Le récipient (bécher de verre gradué, ouvert, coiffé d'un morceau de papier aluminium) est lu sur la photographie de la Fig. 1 ; le texte ne le dit pas, ni le volume de mélange. Les pics Si et Al de l'EDX (Fig. 5B) sont lus sur les étiquettes de la figure ; le texte ne cite que C, O et Cl en plus de Ag. Aucun pourcentage atomique n'est donné."
   }
  ]
 }

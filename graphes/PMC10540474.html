@@ -1,0 +1,79 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10540474</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10540474 — Aconitum lycoctonum L. (Ranunculaceae) mediated biogenic synthesis of silver nanoparticles as potential antioxidant, anti-inflammatory, antimicrobial and antidiabetic agents.</h1>
+<h2>Voie : Extract_polar</h2>
+<pre class="mermaid">flowchart LR
+  R14859([&quot;A. lycoctonum tuberous root powder&lt;br/&gt;5 g&quot;]):::reactif
+  R14859 --&gt;|&quot;precursor&quot;| S17671
+  R14860([&quot;deionized water (DW)&lt;br/&gt;100 mL&quot;]):::reactif
+  R14860 --&gt;|&quot;solvent&quot;| S17671
+  R14861([&quot;purified water (DW) for washing the roots&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14861 --&gt;|&quot;wash&quot;| S17671
+  R14862([&quot;n-hexane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R14862 --&gt;|&quot;wash&quot;| S17671
+  S17671[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : purified water (DW)&quot;]:::etape
+  S17671 --&gt; S17672
+  S17672[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 25 ℃&lt;br/&gt;duration : 10 days&quot;]:::etape
+  S17672 --&gt; S17673
+  S17673[&quot;&lt;b&gt;3. grind&lt;/b&gt;&quot;]:::etape
+  S17673 --&gt; S17674
+  S17674[&quot;&lt;b&gt;4. mix&lt;/b&gt;&lt;br/&gt;volume : 100 mL&quot;]:::etape
+  S17674 --&gt; S17675
+  S17675[&quot;&lt;b&gt;5. stir&lt;/b&gt;&lt;br/&gt;duration : 5 h&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S17675 --&gt; S17676
+  S17676[&quot;&lt;b&gt;6. filter&lt;/b&gt;&quot;]:::etape
+  S17676 --&gt; S17677
+  S17677[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : n-hexane&quot;]:::etape
+  S17677 --&gt; S17678
+  S17678[&quot;&lt;b&gt;8. separate&lt;/b&gt;&quot;]:::etape
+  S17678 --&gt; S17679
+  S17679[&quot;&lt;b&gt;9. dry&lt;/b&gt;&lt;br/&gt;temperature : 45 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S17679 --&gt; S17680
+  S17680[&quot;&lt;b&gt;10. collect&lt;/b&gt;&quot;]:::etape
+  S17680 --&gt; M
+  M{{&quot;polar (water-soluble, n-hexane-washed) root extra…&lt;br/&gt;&quot;}}:::materiau
+  O71064[&quot;ZOI_plant_extract_Escherichia_coli : 0 mm&quot;]:::resultat
+  M -.-&gt; O71064
+  O71065[&quot;ZOI_plant_extract_Listeria_monocyt… : 2 mm&quot;]:::resultat
+  M -.-&gt; O71065
+  O71066[&quot;ZOI_plant_extract_Staphylococcus_e… : 3 mm&quot;]:::resultat
+  M -.-&gt; O71066
+  O71067[&quot;ZOI_plant_extract_Pseudomonas_aeru… : 6 mm&quot;]:::resultat
+  M -.-&gt; O71067
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNPs_Aconitum</h2>
+<pre class="mermaid">flowchart LR
+  R14863([&quot;Extract_polar&lt;br/&gt;17 mg&quot;]):::reactif
+  R14863 --&gt;|&quot;intermediate&quot;| S17681
+  R14864([&quot;silver nitrate&lt;br/&gt;17 mg&quot;]):::reactif
+  R14864 --&gt;|&quot;precursor&quot;| S17681
+  R14865([&quot;deionized water (extract solution)&lt;br/&gt;100 mL&quot;]):::reactif
+  R14865 --&gt;|&quot;solvent&quot;| S17681
+  R14866([&quot;deionized water (AgNO3 solution)&lt;br/&gt;100 mL&quot;]):::reactif
+  R14866 --&gt;|&quot;solvent&quot;| S17681
+  S17681[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&quot;]:::etape
+  S17681 --&gt; S17682
+  S17682[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&quot;]:::etape
+  S17682 --&gt; S17683
+  S17683[&quot;&lt;b&gt;3. mix&lt;/b&gt;&lt;br/&gt;volume_ratio : 1:1&quot;]:::etape
+  S17683 --&gt; S17684
+  S17684[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;duration : 15 min&lt;br/&gt;light_source : diffused sunlight&lt;br/&gt;vessel : beaker covered with aluminium…&quot;]:::etape
+  S17684 --&gt; M
+  M{{&quot;silver nanoparticles synthesized with A. lycocton…&lt;br/&gt;Ag&quot;}}:::materiau
+  O71068[&quot;SPR_absorption_peak_wavelength : 460 nm&quot;]:::resultat
+  M -.-&gt; O71068
+  O71069[&quot;UV_vis_absorbance_at_band_maximum_… : 0.45 a.u.&quot;]:::resultat
+  M -.-&gt; O71069
+  O71070[&quot;UV_vis_absorbance_at_band_maximum_… : 0.9 a.u.&quot;]:::resultat
+  M -.-&gt; O71070
+  O71071[&quot;UV_vis_absorbance_at_band_maximum_… : 1.3 a.u.&quot;]:::resultat
+  M -.-&gt; O71071
+  O71072[&quot;UV_vis_absorbance_at_band_maximum_… : 1.5 a.u.&quot;]:::resultat
+  M -.-&gt; O71072
+  O71073[&quot;average_size_SEM : 67 nm&quot;]:::resultat
+  M -.-&gt; O71073
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
