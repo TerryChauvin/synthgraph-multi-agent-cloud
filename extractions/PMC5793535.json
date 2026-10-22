@@ -136,7 +136,7 @@
    "sample": "GZR films on glass for Hall measurements",
    "defined_in": "Results 2.8",
    "route": null,
-   "why": "même croissance sur substrat de verre isolant, aucune différence de protocole écrite ; valeurs de Hall rattachées aux voies UZR et GZR*_NH4OH",
+   "why": "films sur verre isolant pour l'effet Hall, couche de germes sur verre non décrite ; leurs valeurs (inset de la Fig. 8) restent rattachées aux voies UZR et GZR*_NH4OH avec un doute",
    "results_in": [
     "Fig. 8 (inset table)"
    ]
@@ -145,7 +145,7 @@
    "sample": "growth series 30 min, 2 h, 4 h, 6 h (Fig. 4)",
    "defined_in": "Results 2.4",
    "route": null,
-   "why": "taux de dopage et ammoniaque non précisés, longueurs non chiffrées ; série mécanistique sans paramètres exploitables",
+   "why": "le texte et la légende ne disent ni le taux de dopage ni la présence d'ammoniaque ; longueurs non chiffrées ; les pH imprimés sur la figure (9, 8,5, 7,5, < 7,5) sont rangés en résultats de la voie UZR",
    "results_in": [
     "Fig. 4"
    ]
@@ -210,7 +210,7 @@
      ]
     },
     {
-     "name": "p-Si substrate with bottom In electrode (route Device_UZR)",
+     "name": "p-Si substrate (100, 1–10 Ω·cm)",
      "formula": "Si",
      "role": "substrate",
      "quote": "To make a p-n heterojunction, n-GZRs were grown on p-Si (100, 1–10 Ω·cm) substrates."
@@ -378,7 +378,27 @@
      "value_text": "larger than in Ga-doped seeds",
      "from_figure": "Fig. 1a,b"
     }
-   ]
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "deposit",
+     "description": "Préparation et dépôt de la couche de germes non dopés : aucun protocole n'est décrit, seule la légende de la Fig. 1a nomme l'échantillon.",
+     "quote": "(a) undoped ZnO seeds",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "procedure",
+      "precursor_amounts",
+      "solvent",
+      "spin_speed",
+      "annealing_temperature",
+      "annealing_duration",
+      "atmosphere"
+     ]
+    }
+   ],
+   "not_stated": []
   },
   {
    "label": "UZR",
@@ -441,7 +461,7 @@
      "name": "Ga-doped ZnO seed layer on p-Si (route Seeds_Ga)",
      "formula": "ZnO:Ga",
      "role": "intermediate",
-     "quote": "After 1 h, the seeded substrates were immersed upside down into solution autoclaves and was heated at 90 °C.",
+     "quote": "Hence, throughout the experiments, we used Ga-doped ZnO seeds for GZR growth to minimize surface free energy between GZRs and Si substrates",
      "not_stated": [
       "amount"
      ]
@@ -623,7 +643,7 @@
     {
      "property": "carrier_concentration_order_of_magnitude",
      "quote": "Because of having an extra electron in the outermost shell (4S2 4P1), Ga-doing is an effective way to increase the average carrier concentration from 1016 in UZRs to 1021 in 5% GZRs.",
-     "value_text": "1016 in UZRs"
+     "value_text": "10^16 (exposant aplati par la conversion du texte)"
     },
     {
      "property": "nanorod_dimensions",
@@ -635,6 +655,27 @@
      "property": "preferred_orientation",
      "quote": "Furthermore, the vertical NR alignment confirms that the preferred orientation provided by Ga-doped seeds is along 0001 rather than 2110 or 1110 directions.",
      "value_text": "vertical alignment; preferred orientation along 0001 rather than 2110 or 1110"
+    },
+    {
+     "property": "solution_pH_initial",
+     "quote": "Initially, the solution pH was 7 and no nucleation was promoted.",
+     "value_num": 7
+    },
+    {
+     "property": "solution_pH_maximum",
+     "quote": "With methenamine decomposition, the solution pH was naturally raised to 9",
+     "value_num": 9
+    },
+    {
+     "property": "growth_stoppage_pH",
+     "quote": "until pH was reduced to 7.5",
+     "value_num": 7.5
+    },
+    {
+     "property": "pH_at_Fig4_growth_times",
+     "quote": "Figure 4 GZR isoelectric point-dependent growth mechanism with their corresponding cross-sectional SEM images at (a) 30 min; (b) 2 h; (c) 4 h; and (d) 6 h.",
+     "value_text": "pH 9 (30 min); pH 8.5 (2 h); pH 7.5 (4 h); pH < 7.5 (6 h)",
+     "from_figure": "Fig. 4"
     }
    ],
    "missing_fields": [
@@ -1027,6 +1068,23 @@
      "value_num": 0.617,
      "unit": "cm2/V-s",
      "from_figure": "Fig. 8 (inset table)"
+    },
+    {
+     "property": "PL_visible_band",
+     "quote": "the 1% GZRs show more or less a similar trend with UZRs but the peak moves toward a flat band condition with an increased Ga concentration",
+     "value_text": "similar trend with UZRs; the peak moves toward a flat band condition with an increased Ga concentration",
+     "from_figure": "Fig. 7a"
+    },
+    {
+     "property": "PL_near_IR_peak",
+     "quote": "Ga-doping creates some defects which respond to near IR region as shown by the peaks around 750 nm",
+     "value_text": "peaks around 750 nm",
+     "from_figure": "Fig. 7a"
+    },
+    {
+     "property": "XRD_002_peak_intensity_trend",
+     "quote": "which was certified by an increase in 002 peak intensity with an increase in doping concentration",
+     "value_text": "increase in 002 peak intensity with an increase in doping concentration"
     }
    ]
   },
@@ -1211,6 +1269,23 @@
      "value_num": 0.0437,
      "unit": "cm2/V-s",
      "from_figure": "Fig. 8 (inset table)"
+    },
+    {
+     "property": "PL_visible_band",
+     "quote": "An increase in UV peak intensity and a decrease in visible peak intensity with an increased doping concentration show that Ga doping improves the ZnO optical properties.",
+     "value_text": "decrease in visible peak intensity with an increased doping concentration",
+     "from_figure": "Fig. 7b"
+    },
+    {
+     "property": "PL_near_IR_peak",
+     "quote": "Ga-doping creates some defects which respond to near IR region as shown by the peaks around 750 nm",
+     "value_text": "peaks around 750 nm",
+     "from_figure": "Fig. 7b"
+    },
+    {
+     "property": "XRD_002_peak_intensity_trend",
+     "quote": "which was certified by an increase in 002 peak intensity with an increase in doping concentration",
+     "value_text": "increase in 002 peak intensity with an increase in doping concentration"
     }
    ]
   },
@@ -1401,6 +1476,28 @@
      "value_num": 0.000527,
      "unit": "cm2/V-s",
      "from_figure": "Fig. 8 (inset table)"
+    },
+    {
+     "property": "carrier_concentration_order_of_magnitude",
+     "quote": "Ga-doing is an effective way to increase the average carrier concentration from 1016 in UZRs to 1021 in 5% GZRs.",
+     "value_text": "10^21 (exposant aplati par la conversion du texte)"
+    },
+    {
+     "property": "PL_visible_band",
+     "quote": "An increase in UV peak intensity and a decrease in visible peak intensity with an increased doping concentration show that Ga doping improves the ZnO optical properties.",
+     "value_text": "decrease in visible peak intensity with an increased doping concentration",
+     "from_figure": "Fig. 7c"
+    },
+    {
+     "property": "PL_near_IR_peak",
+     "quote": "Ga-doping creates some defects which respond to near IR region as shown by the peaks around 750 nm",
+     "value_text": "peaks around 750 nm",
+     "from_figure": "Fig. 7c"
+    },
+    {
+     "property": "XRD_002_peak_intensity_trend",
+     "quote": "which was certified by an increase in 002 peak intensity with an increase in doping concentration",
+     "value_text": "increase in 002 peak intensity with an increase in doping concentration"
     }
    ]
   },
@@ -1934,6 +2031,51 @@
    "type": "securite_analyse",
    "route": "Device_UZR",
    "text": "L'oxyde tampon gravant (BOE) contient de l'acide fluorhydrique et du fluorure d'ammonium : très toxique et corrosif, il demande gants, lunettes et blouse adaptés et du gel de gluconate de calcium à portée de main en cas de contact. L'ammoniaque concentrée (28 %) dégage des vapeurs irritantes (hotte). Les nitrates de zinc et de gallium sont oxydants. Le n-propanol est inflammable. La croissance se fait dans des autoclaves fermés à 90 °C, donc sous légère pression : refroidir avant d'ouvrir. La photolithographie et l'évaporation de l'indium utilisent des résines et des solvants et du vide poussé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La solution de germes est décrite comme « saturated seed solution », ce qui n'est pas une concentration, et l'ammoniaque est donnée en 5, 7 et 10 mL à 28 % sans volume de bain ni moment d'ajout (« after intermittent intervals ») : la concentration finale d'ammoniac n'est pas calculable alors que les auteurs en font la variable qui règle le diamètre. Le critique scientifique juge ces deux étapes non reproductibles telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "UZR",
+   "text": "Le suivi du pH annoncé (7 au départ, 9 au maximum, puis 7,5 à l'arrêt de la croissance) est difficile à concilier avec 25 mM de Zn2+ dissous, qui précipiterait en hydroxyde à pH 9 ; pour des bains équimolaires de nitrate de zinc et de méthénamine plus dilués, une étude (Sci. Rep. 2015, annexe) mesure in situ un pH presque neutre, vers 6,3. L'arrêt de la croissance peut aussi venir de l'épuisement du zinc plutôt que d'une inversion de charge de surface ; les pH de la Fig. 4 ne disent ni le taux de Ga, ni la présence d'ammoniaque, ni la température de mesure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GZR5_NH4OH",
+   "text": "Les mesures de Hall sont à prendre avec réserve : la conductivité reste à 0,02 S/cm de l'UZR à 2 % alors que la concentration de porteurs est multipliée par 34 et la mobilité divisée par 36, ce qui suggère une tension de Hall noyée dans le bruit. À 5 %, 2,38E21 cm−3 représenterait environ 5,7 % des sites Zn tous ionisés, plus que le gallium du bain ou l'EDS ; des mobilités de l'ordre de 0,04 et 5E−4 cm2/V·s sont sous le seuil où une mesure de Hall en courant continu est fiable (Werner, J. Appl. Phys. 2017). Ces valeurs viennent de films sur verre, pas des échantillons sur silicium."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GZR5_NH4OH",
+   "text": "Le décalage du pic UV (+7 meV de 1 à 2 % et +21 meV de 2 à 5 %) est attribué à l'effet Burstein-Moss, mais aux concentrations de porteurs annoncées (2,02E17 et 2,64E18 cm−3) cet effet n'apparaît pas encore (Saw et al., PLoS ONE 2015), et à 2,38E21 cm−3 il serait bien plus grand : soit les valeurs de Hall, soit l'attribution du décalage, sont fausses."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GZR1_NH4OH",
+   "text": "Contradictions internes du tableau 1 : avec λ = 1,5418 Å, la raie (002) à 34,38° (1 %) et 34,39° (2 %) donne un paramètre c supérieur à celui du ZnO massif, donc une déformation en traction d'environ +0,2 %, alors que le tableau donne −0,07 et −0,03 % (compression) ; seul l'échantillon à 5 % est bien en compression. Les auteurs écrivent aussi que les bâtonnets sont « stress-free » alors que le tableau donne de 0,17 à 0,94 GPa, ce qui affaiblit l'argument « sans contrainte, donc Burstein-Moss ». Valeurs du tableau extraites telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_UZR",
+   "text": "L'électrode inférieure d'indium est déposée (Fig. 9c) avant le recuit des germes à 300 °C sur plaque (Fig. 9d) ; l'indium fond à 156,6 °C (PubChem) et séjourne ensuite 4 h dans le bain de croissance basique : l'ordre des étapes est douteux et l'ohmicité du contact n'est pas démontrée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_UZR",
+   "text": "Les courbes I–V de la Fig. 8 sont quasi symétriques (rapport I(+2 V)/|I(−2 V)| de 2,0 pour l'UZR, de 0,54 et 0,77 pour 1 et 2 %, de 1,09 pour 5 %, calculé sur les courants lus sur le graphique) : ce n'est pas un comportement de diode, contrairement à « diode-like » dans l'article ; la hausse du courant avec le dopage peut venir d'une baisse de résistance série ou de fuites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_GZR5",
+   "text": "Même constat que pour Device_UZR : I–V quasi symétrique (+10 mA à +2 V, −9,2 mA à −2 V, rapport 1,09), sans redressement ; l'augmentation du courant avec le taux de Ga ne prouve ni une jonction p-n ni un effet de la concentration de porteurs."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "GZR5_NH4OH",
+   "text": "Hypothèse du critique scientifique, non démontrée par l'article : l'ammoniac est en large excès par rapport au gallium, donc l'idée d'une simple compensation des OH− consommés par Ga ne tient pas ; Zn2+ pourrait être complexé en Zn(NH3)4 2+ (moins de nucléation homogène) et Ga3+ passer en Ga(OH)4−, qui s'adsorberait sur les faces latérales chargées et réglerait le diamètre selon la concentration d'ammoniac, d'où la sensibilité au volume ajouté (Gaffuri et al., Inorg. Chem. 2019, sur le chemin du gallium dans les nanofils de ZnO)."
   }
  ],
  "method_sources": [],
@@ -1948,11 +2090,11 @@
   },
   {
    "where": "UZR, couche de germes",
-   "issue": "L'article dit qu'il utilise des germes dopés au Ga « throughout the experiments » pour la croissance des GZR ; les UZR de la Fig. 1d en reposent sûrement sur eux, mais celles de la Fig. 2a ne sont pas explicitement identifiées. Lecture retenue : toute la série UZR/GZR est faite sur germes dopés ; l'UZR sur germes non dopés (Fig. 1c) est la branche UZR_undoped_seeds."
+   "issue": "L'article dit « throughout the experiments, we used Ga-doped ZnO seeds for GZR growth » ; cette phrase est citée comme héritage pour l'UZR, mais elle vise la croissance des GZR. La Fig. 1d (« UZRs on Ga-doped ZnO seeds ») confirme des germes dopés pour cet échantillon seulement ; ceux de la Fig. 2a et des dispositifs ne sont pas explicitement identifiés. Lecture retenue : toute la série UZR/GZR est sur germes dopés ; l'UZR sur germes non dopés (Fig. 1c) est la branche UZR_undoped_seeds."
   },
   {
    "where": "Seeds_undoped",
-   "issue": "L'article ne décrit pas la préparation des germes non dopés. Seeds_undoped est rattachée à Seeds_Ga avec pour seule variation l'absence de nitrate de gallium ; les autres étapes (sonication, dépôt, recuit) ne sont pas dites identiques."
+   "issue": "L'article ne décrit pas la préparation des germes non dopés (Fig. 1a, 1c). La branche n'hérite pas des étapes de Seeds_Ga : elle a une seule étape propre dont le protocole est déclaré non cité (sonication, dépôt, recuit, quantités). La variation « gallium nitrate hydrate = absent » est déduite de l'adjectif « undoped » de la légende, sans phrase qui décrive la solution."
   },
   {
    "where": "Table 1, Fig. 6, Fig. 7, Fig. 8 (inset)",
@@ -1960,11 +2102,11 @@
   },
   {
    "where": "Fig. 4 (série en durée 30 min, 2 h, 4 h, 6 h)",
-   "issue": "La série de coupes MEB et les pH associés (9, 8,5, 7,5, < 7,5) ne précisent pas le taux de dopage ni la présence d'ammoniaque ; elle n'a pas de voie et n'est pas rattachée à une voie existante. L'étape à 4 h est la durée standard de croissance."
+   "issue": "La série de coupes MEB et les pH associés (9, 8,5, 7,5, < 7,5) ne précisent ni le taux de dopage ni la présence d'ammoniaque ; la série n'a pas de voie. Les pH (initial 7, maximum 9, arrêt de croissance 7,5) sont rangés en résultats de la voie UZR faute de mieux, alors que le texte les présente comme mécanisme du GZR en général : le rattachement à l'UZR est une lecture. Les pH sont des mesures, pas des variations ; les durées 30 min, 2 h, 6 h n'ont pas de branche parce que les germes, le dopage et l'ammoniaque de ces échantillons ne sont pas dits."
   },
   {
    "where": "Hall, films sur verre",
-   "issue": "Les mesures de Hall sont faites sur des GZR « grown on an insulating glass substrate », dont les dimensions ont été synchronisées avec celles sur p-Si. Les valeurs de l'inset de la Fig. 8 sont attribuées aux voies GZR/UZR correspondantes, sans voie séparée pour le substrat de verre (aucune différence de protocole n'est écrite)."
+   "issue": "Les valeurs de Hall (inset de la Fig. 8) ont été mesurées sur des films de GZR « grown on an insulating glass substrate », avec contacts d'indium aux quatre coins, et non sur les échantillons sur p-Si des Fig. 3, 5, 6 et 7. Elles restent rattachées aux voies UZR et GZR*_NH4OH parce que les auteurs disent avoir synchronisé les dimensions des films avec celles sur p-Si ; la préparation des films sur verre n'est pas décrite."
   },
   {
    "where": "Seeds_Ga, recuit",
@@ -1980,15 +2122,15 @@
   },
   {
    "where": "UZR, résultat « 1016 » et « 1021 » du texte",
-   "issue": "Les exposants sont aplatis dans le texte (« 1016 in UZRs to 1021 in 5% GZRs ») et l'unité n'est pas écrite ; la valeur est gardée en value_text et les valeurs chiffrées viennent du tableau imprimé de la Fig. 8 (7,86E16 cm−3 pour UZR, 2,38E21 cm−3 pour 5 %)."
+   "issue": "Les exposants sont aplatis par la conversion du texte (« 1016 in UZRs to 1021 in 5% GZRs » pour 10^16 et 10^21, cohérents avec 7,86E16 et 2,38E21 cm−3 du tableau de Hall) et l'unité n'est pas écrite ; les value_text l'indiquent, et les valeurs chiffrées viennent du tableau imprimé de la Fig. 8."
   },
   {
    "where": "GZR1, GZR2, GZR5, GZR*_NH4OH, variations dopant, ga_doping_level et additive",
    "issue": "Avertissements de load.py : ces trois noms de variation désignent un ajout absent du protocole parent (nitrate de gallium, ammoniaque), nommés explicitement et déclarés avec parent_value « none » comme le demande le RUNBOOK ; ils ne correspondent donc à aucun paramètre hérité."
   },
   {
-   "where": "Table 1, contrainte σ",
-   "issue": "Le tableau donne σ positive (0,17, 0,08, 0,94 GPa) avec ε négative, alors que l'équation (3) σ = −233 ε a le signe inverse : les valeurs du tableau sont extraites telles qu'écrites."
+   "where": "GZR*_NH4OH, bande visible et pic proche IR de la PL",
+   "issue": "Le paragraphe 2.7 décrit la bande visible (baisse avec le dopage) et le pic vers 750 nm sans les attribuer échantillon par échantillon : la phrase de série est portée par chaque branche, et le pic à 750 nm est à peine visible sur la Fig. 7a (1 %) alors qu'il est net sur 7b et 7c."
   }
  ]
 }
