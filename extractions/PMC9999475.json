@@ -221,7 +221,7 @@
      "technique": "XAFS Mn K-edge (synchrotron, cycled electrodes)",
      "result": "cycled normal LMOF (20 cycles, discharged) edge close to Mn2O3: Mn3+, reversible Mn redox for 20 cycles",
      "instrument": "ROCK beamline, SOLEIL synchrotron (Si(111) quick-EXAFS monochromator)",
-     "conditions": "transmission, ionization chambers, 2 Hz oscillation, spectra averaged over >1000 scans",
+     "conditions": "transmission, ionization chambers, 2 Hz oscillation, spectra averaged over >1000 scans; cycled electrode tapes (20 cycles, discharge state): «Electrode tapes of normal LMOF and HT-LMOF were prepared according to the method described below. After cycling (20 cycles), the tapes were washed in dimethyl carbonate and sealed in a small Mylar bag in an Ar-filled glove box using a heat sealer.»; standards: «Standard pellets were wrapped using Kapton tapes.»",
      "quote": "The normalized XANES spectra of pristine normal LMOF and the cycled electrodes (20 cycles) of normal and HT-LMOF showed an edge energy close to that of Mn2O3, as seen in Figure 7a. This indicates an average Mn3+ in the discharged/lithiated state, which is similar to the pristine LMOF (Figure 3) and a reversible manganese redox behavior for the first 20 cycles."
     },
     {
@@ -347,6 +347,16 @@
      "property": "EXAFS_Mn-Mn_coordination_number_after_20_cycles",
      "quote": "normal LMOF_20C | –4.4 ± 1.3 | 1.890 ± 0.006 | 2.0 ± 0.2 | 0.002 ± 0.001 | 2.90 ± 0.01 | 3.6 ± 0.8 | 0.014 ± 0.002 | 0.004",
      "value_num": 3.6
+    },
+    {
+     "property": "XRD_after_DSC_to_400C",
+     "value_text": "some additional peaks which are not related to the DRS structure",
+     "quote": "The XRD result of the samples after DSC measurement at room temperature is shown in Figure S3. The patterns present some additional peaks which are not related to the DRS structure."
+    },
+    {
+     "property": "phase_transition_reversibility_after_DSC",
+     "value_text": "phase transition was only partially reversible",
+     "quote": "This also suggests that the phase transition was only partially reversible."
     }
    ],
    "missing_fields": [
@@ -589,6 +599,16 @@
      "property": "EIS_resistance_growth",
      "quote": "However, the resistance of the LMVOF cell increased faster upon cycling, which correlates to a faster degradation process for this sample.",
      "value_text": "resistance increased faster upon cycling than LMOF"
+    },
+    {
+     "property": "XRD_after_DSC_to_400C",
+     "value_text": "some additional peaks which are not related to the DRS structure",
+     "quote": "The XRD result of the samples after DSC measurement at room temperature is shown in Figure S3. The patterns present some additional peaks which are not related to the DRS structure."
+    },
+    {
+     "property": "phase_transition_reversibility_after_DSC",
+     "value_text": "phase transition was only partially reversible",
+     "quote": "This also suggests that the phase transition was only partially reversible."
     }
    ]
   },
@@ -683,7 +703,10 @@
       "gas_flow",
       "forming_gas_composition",
       "furnace",
-      "crucible"
+      "crucible",
+      "dwell_time_at_300C",
+      "intermediate_cooling",
+      "starting_temperature"
      ]
     }
    ],
@@ -706,7 +729,7 @@
      "technique": "XAFS Mn K-edge (synchrotron, cycled electrode)",
      "result": "HT-LMOF after 20 cycles: Mn3+, slightly higher Fourier transform magnitude (reduced local disordering), higher Mn–O/F distance than normal LMOF",
      "instrument": "ROCK beamline, SOLEIL synchrotron",
-     "conditions": "transmission, shell fitting of the first Mn–O/F and second Mn–Mn shells",
+     "conditions": "transmission, shell fitting of the first Mn–O/F and second Mn–Mn shells; cycled electrode tapes (20 cycles, discharge state): «Electrode tapes of normal LMOF and HT-LMOF were prepared according to the method described below. After cycling (20 cycles), the tapes were washed in dimethyl carbonate and sealed in a small Mylar bag in an Ar-filled glove box using a heat sealer.»; standards: «Standard pellets were wrapped using Kapton tapes.»",
      "quote": "A higher Mn–O/F interatomic distance and a little increase of the Mn–Mn path length were obtained for HT-LMOF."
     },
     {
@@ -862,8 +885,8 @@
     {
      "technique": "XANES Mn and V K-edges (cycled electrode)",
      "result": "after prolonged cycling Mn K-edge shifted slightly to higher energy and V K-edge showed a prominent edge shift and a sharp pre-edge increase (V3+ to V4+)",
-     "instrument": "easyXAFS300+ laboratory device (easyXAFS LLC, Renton, WA)",
-     "conditions": "transmission, Mn and V K-edges, energy step 0.25 eV (XANES region), 0.03 Å–1 (post-edge); samples diluted with cellulose, pressed into pellets, between Kapton tapes",
+     "instrument": null,
+     "conditions": "discharged state, cycled electrode (text: «cycled HT-LMVOF electrode»; Fig. 8 caption: «cycled LMVOF_20C electrode»); instrument, electrode preparation and cycle number not stated",
      "quote": "On the other hand, the V K-edge demonstrated a prominent edge shift and a sharp pre-edge increase, suggesting that the average oxidation state of vanadium had been increased from 3+ to 4+."
     },
     {
@@ -879,6 +902,20 @@
      "instrument": null,
      "conditions": "discharged state (1.5 V), 25 °C, 1 MHz to 50 mHz, AC voltage 20 mV; initial cycle and after 25th and 50th cycles",
      "quote": "Electrochemical impedance spectra were collected for all four samples in the discharge state (1.5 V) for the initial cycle and after the 25th and 50th cycles, as shown in Figure 9."
+    },
+    {
+     "technique": "CV",
+     "result": "sharper CV peaks after heat treatment (peak potentials not given in the text; Fig. S6 not available)",
+     "instrument": "VMP3 potentiostat (BioLogic)",
+     "conditions": "1.5–4.3 V, different scan rates (0.1 mV/s plotted in Fig. S6)",
+     "quote": "After the heat treatment, both samples showed sharper CV peaks."
+    },
+    {
+     "technique": "XANES Mn K-edge",
+     "result": "lower average Mn oxidation state, near MnO (stated for the LMVOF samples, normal and HT)",
+     "instrument": "easyXAFS300+ laboratory device (easyXAFS LLC, Renton, WA)",
+     "conditions": "transmission, Mn and V K-edges, energy step 0.25 eV (XANES region), 0.03 Å–1 (post-edge); samples diluted with cellulose, pressed into pellets, between Kapton tapes",
+     "quote": "In contrast, a lower average oxidation state near MnIIO can be observed for the LMVOF samples."
     }
    ],
    "outcomes": [
@@ -950,6 +987,31 @@
      "property": "Mn_V_oxidation_state_after_cycling",
      "quote": "It seems that after prolonged cycling, both V and Mn were slightly oxidized, mainly the oxidation state of Mn, which could be affected by the Mn dissolution.",
      "value_text": "both V and Mn slightly oxidized after prolonged cycling"
+    },
+    {
+     "property": "CV_peak_sharpness",
+     "value_text": "sharper CV peaks after heat treatment",
+     "quote": "After the heat treatment, both samples showed sharper CV peaks."
+    },
+    {
+     "property": "Mn_oxidation_state",
+     "value_text": "lower average oxidation state near MnIIO (LMVOF samples)",
+     "quote": "In contrast, a lower average oxidation state near MnIIO can be observed for the LMVOF samples."
+    },
+    {
+     "property": "coulombic_efficiency",
+     "value_text": "higher than that of the LMOFs and close to 100%",
+     "quote": "The Coulombic efficiency of both the LMVOF cathodes was higher than that of the LMOFs and close to 100%."
+    },
+    {
+     "property": "Fe_trace",
+     "value_text": "traces of Fe, probably originating from the stainless steel jar (LMVOF samples)",
+     "quote": "Some traces of Fe in LMVOF samples have also been detected, probably originating from the stainless steel jar."
+    },
+    {
+     "property": "rate_test_return_to_0.1C",
+     "value_text": "quite a larger difference between the two 0.1 C rate sections",
+     "quote": "However, HT-LMVOF shows quite a larger difference between the two 0.1 C rate sections mentioned."
     }
    ]
   },
@@ -968,7 +1030,9 @@
    "succeeded": false,
    "not_stated": [
     "precursor_amounts",
-    "LiF_use"
+    "LiF_use",
+    "LiF_addition_step",
+    "second_milling_step"
    ],
    "variations": [
     {
@@ -1020,27 +1084,6 @@
      "value_text": "stainless steel",
      "parent_value": "silicon nitride",
      "quote": "(b) analogous to LMVOF (stainless steel jar)"
-    },
-    {
-     "parameter": "ball_to_powder_ratio",
-     "step_order": 2,
-     "value_text": "analogous to LMVOF",
-     "parent_value": "13:1",
-     "quote": "(b) analogous to LMVOF (stainless steel jar)"
-    },
-    {
-     "parameter": "rotation_speed",
-     "step_order": 2,
-     "value_text": "analogous to LMVOF",
-     "parent_value": "600 rpm",
-     "quote": "(b) analogous to LMVOF (stainless steel jar)"
-    },
-    {
-     "parameter": "rotation_speed",
-     "step_order": 4,
-     "value_text": "analogous to LMVOF",
-     "parent_value": "600 rpm",
-     "quote": "(b) analogous to LMVOF (stainless steel jar)"
     }
    ],
    "characterizations": [],
@@ -1050,6 +1093,11 @@
      "quote": "The substitution of only one-third of manganese by vanadium which should lead to the compound Li2Mn0.66V0.33O2F was not successful since no pure DRS phase was formed, as can be seen from the XRD patterns in Figure S1a,b.",
      "value_text": "no pure DRS phase formed (not successful)"
     }
+   ],
+   "not_stated": [
+    "ball_to_powder_ratio",
+    "rotation_speed",
+    "hardened_steel_grade"
    ]
   },
   {
@@ -1122,6 +1170,15 @@
      "formula": "Al",
      "role": "substrate",
      "quote": "The final mixture was tape-cast on a thin layer of an aluminum foil and dried in the oven under dynamic vacuum for 12 h at 120 °C."
+    },
+    {
+     "name": "HT-LMOF (voie HT-LMOF)",
+     "formula": "Li2MnO2F",
+     "role": "intermediate",
+     "quote": "Electrode tapes of normal LMOF and HT-LMOF were prepared according to the method described below.",
+     "not_stated": [
+      "amount"
+     ]
     }
    ],
    "steps": [
@@ -1569,6 +1626,22 @@
     "Fig. 3",
     "Table 1"
    ]
+  },
+  {
+   "sample": "LMOF after DSC heating to 400 °C (Fig. S3a)",
+   "defined_in": "Results, XRD (DSC measurements, Fig. S2 and S3)",
+   "route": "LMOF",
+   "results_in": [
+    "Fig. S3a"
+   ]
+  },
+  {
+   "sample": "LMVOF after DSC heating to 400 °C (Fig. S3b)",
+   "defined_in": "Results, XRD (DSC measurements, Fig. S2 and S3)",
+   "route": "LMVOF",
+   "results_in": [
+    "Fig. S3b"
+   ]
   }
  ],
  "annotations": [
@@ -1576,7 +1649,7 @@
    "type": "resume",
    "route": null,
    "quote": null,
-   "text": "L'article prépare deux oxyfluorures de type sel gemme désordonné, Li2MnO2F (LMOF) et Li2Mn0,5V0,5O2F (LMVOF), par broyage à boulets planétaire à haute énergie en deux temps (oxydes puis ajout de LiF), puis leur applique un traitement thermique doux à 300 °C sous gaz de formage. Les auteurs comparent par DRX, MEB, MET, XANES/EXAFS, cyclage galvanostatique, voltampérométrie et impédance les quatre échantillons (normal et HT) pour montrer que la substitution partielle du Mn par V n'améliore pas la rétention de capacité de la phase de base, alors que le traitement thermique la fait passer de 31 % à environ 81 % pour LMOF."
+   "text": "L'article prépare deux oxyfluorures de type sel gemme désordonné, Li2MnO2F (LMOF) et Li2Mn0,5V0,5O2F (LMVOF), par broyage à boulets planétaire à haute énergie en deux temps (oxydes puis ajout de LiF), puis leur applique un traitement thermique doux à 300 °C sous gaz de formage. Les auteurs comparent par DRX, MEB, MET, XANES/EXAFS, cyclage galvanostatique, voltampérométrie et impédance les quatre échantillons (normal et HT) pour savoir si la substitution partielle du Mn par V stabilise le matériau. Sur les échantillons normaux, LMVOF retient 43,8 % de sa capacité après 100 cycles contre 31,4 % pour LMOF ; après traitement thermique, HT-LMOF (80,8 %) dépasse HT-LMVOF (49,6 %), et les auteurs concluent que la substitution par le vanadium n'apporte pas d'amélioration nette."
   },
   {
    "type": "objectif_etude",
@@ -1600,7 +1673,7 @@
    "type": "tendance_observee",
    "route": null,
    "quote": "In general, the HT samples have slightly larger particles; however, the agglomerations are still present.",
-   "text": "Pour les quatre échantillons, le traitement thermique augmente légèrement la taille des particules (frittage) et resserre les pics de diffraction, ce que les auteurs attribuent à la diffusion atomique aux joints de grains activée par la chauffe."
+   "text": "Pour LMOF et LMVOF, les échantillons traités thermiquement ont en général des particules légèrement plus grosses que leurs homologues normaux (les agglomérats restent présents) et des pics de diffraction plus fins, ce que les auteurs attribuent à un effet de frittage (diffusion atomique aux joints de grains activée par la chauffe)."
   },
   {
    "type": "conclusion_auteurs",
@@ -1617,23 +1690,29 @@
   {
    "type": "mecanisme_analyse",
    "route": "LMOF",
-   "text": "Hypothèse de chimiste : la réaction globale ½ Li2O + ½ Mn2O3 + LiF → Li2MnO2F est équilibrée en lithium, manganèse, oxygène et fluor, et conserve Mn3+, ce qui correspond à des rapports molaires 1:1:2 de Li2O, Mn2O3 et LiF. Le broyage haute énergie (600 rpm, 20 h) fournit l'énergie de déformation et de soudure à froid qui force l'interdiffusion des cations et du fluor dans un réseau cubique faces centrées désordonné, sans passer par une phase liquide. On attend que la première étape sans LiF forme déjà un sel gemme Li–Mn–O, puis que LiF s'y incorpore. Le rôle de l'atmosphère inerte est probablement d'éviter l'hydratation de Li2O et de LiF."
+   "text": "Hypothèse de chimiste : la réaction globale ½ Li2O + ½ Mn2O3 + LiF → Li2MnO2F est équilibrée en lithium, manganèse, oxygène et fluor, et conserve Mn3+, ce qui correspond à des rapports molaires 1:1:2 de Li2O, Mn2O3 et LiF. Le broyage haute énergie (600 rpm, 20 h) fournit l'énergie de déformation et de soudure à froid qui force l'interdiffusion des cations dans un réseau cubique faces centrées désordonné, sans passer par une phase liquide. On attend que le premier broyage forme déjà un sel gemme Li–Mn–O désordonné de type LiMnO2 (Li:Mn = 1:1), puis que le second broyage dissolve LiF (lui-même de type sel gemme) dans ce réseau, avec F sur le sous-réseau anionique et le lithium en excès sur le sous-réseau cationique, Mn restant 3+. L'obtention de la même phase à partir de LiMnO2 + LiF, rapportée dans la littérature (House et al., Energy Environ. Sci. 2018, 10.1039/C7EE03195E ; étude de PubMed 38457780), appuie cette séquence en deux temps. Le rôle de l'atmosphère inerte est probablement d'éviter l'hydratation de Li2O et de LiF."
   },
   {
    "type": "mecanisme_analyse",
    "route": "LMVOF",
-   "text": "Hypothèse de chimiste : la stœchiométrie ½ Li2O + ½ MnO + ½ VO2 + LiF → Li2Mn0,5V0,5O2F est équilibrée, avec Mn2+ et V4+ (charge totale +5 pour 2 O2– et F–). Les auteurs trouvent pourtant V proche de 3+ par XANES, ce qui laisse un déficit de charge d'environ 0,5 e par formule : soit un transfert de charge Mn2+→V4+ partiel que les auteurs excluent, soit des lacunes d'oxygène, de l'oxygène non indexé ou du fluor en défaut, ou encore une attribution de degré d'oxydation trop imprécise (calage sur des références de structure différente)."
+   "text": "Hypothèse de chimiste : la stœchiométrie ½ Li2O + ½ MnO + ½ VO2 + LiF → Li2Mn0,5V0,5O2F est équilibrée, avec Mn2+ et V4+ (charge totale +5 pour 2 O2– et F–). Le premier broyage formerait probablement un sel gemme désordonné de type LiMn0,5V0,5O2, puis le second broyage dissoudrait LiF dans ce réseau, de façon incomplète (LiF résiduel supposé à la DRX). Les auteurs trouvent pourtant V proche de 3+ par XANES, ce qui laisse un déficit de charge d'environ 0,5 e par formule : soit un transfert de charge partiel Mn2+ + V4+ → Mn(2+δ) + V(4–δ) que les auteurs excluent, soit des lacunes d'oxygène, du fluor en défaut, ou une attribution du degré d'oxydation trop imprécise (références de structure différente). Le fer d'usure de la jarre ne peut pas à lui seul expliquer la réduction du vanadium (environ 11 % en masse seraient nécessaires, contre des « traces »)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "HT-LMOF",
+   "quote": null,
+   "text": "Hypothèse de chimiste, différente de l'effet de frittage invoqué par les auteurs : à 300 °C, la température homologue des oxydes reste inférieure à 0,4 et la diffusion en volume est faible. Après 40 h de broyage, l'affinement des raies de diffraction vient probablement d'abord de la relaxation des microcontraintes et du recuit des défauts introduits par le broyage (restauration), avec une mise en ordre locale des cations et peut-être une légère perte de fluor ou de lithium en surface (la contraction de maille de 4,161 à 4,148 Å est compatible avec ces effets). Le frittage serait limité aux contacts entre grains de la pastille. Une réduction de surface de Mn3+ par l'hydrogène du gaz de formage n'est pas exclue. Une analyse de Williamson–Hall avant et après recuit permettrait de séparer taille et contrainte."
   },
   {
    "type": "securite_auteurs",
    "route": "Cell_DRS",
    "quote": "The cell assembly was handled in an argon-filled glove box (O2/H2O < 1 ppm).",
-   "text": "Seule précaution écrite : le travail des précurseurs (atmosphère inerte au broyage), l'échantillonnage DRX (porte-échantillon étanche) et l'assemblage des piles en boîte à gants sous argon (O2/H2O < 1 ppm) protègent les poudres hygroscopiques et le lithium métallique de l'air."
+   "text": "Précautions écrites : mélange des précurseurs et ajout de LiF « under an inert atmosphere », prémélange de l'électrode sous atmosphère inerte, porte-échantillon DRX étanche (« airtight »), assemblage des piles en boîte à gants sous argon (O2/H2O < 1 ppm) et électrodes cyclées lavées au carbonate de diméthyle puis scellées dans un sac Mylar en boîte à gants sous argon. Les auteurs n'écrivent pas la raison de ces précautions et ne mentionnent aucune précaution pour la manipulation des poudres, du vanadium, du gaz de formage ou du four."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Li2O et LiF sont corrosifs et irritants ; VO2 et V2O3 sont des composés du vanadium toxiques à inhaler, et les poudres broyées finement sont à manipuler sous boîte à gants ou hotte. Le gaz de formage (H2 dilué dans N2) est inflammable ; le chauffage de pastilles à 300 °C doit se faire dans un four prévu pour cela. Au stade de la pile : le N-méthyl-2-pyrrolidone est reprotoxique, le LiPF6 libère du HF au contact de l'eau, les carbonates (EC, DEC) sont inflammables et le lithium métallique réagit avec l'eau. Le broyage de 20 h en jarre fermée peut s'échauffer et mettre le contenu sous pression : laisser refroidir avant d'ouvrir."
+   "text": "Li2O et LiF sont corrosifs et irritants ; VO2 et V2O3 sont des composés du vanadium toxiques à inhaler, et les poudres broyées finement sont à manipuler sous boîte à gants ou hotte. Le gaz de formage (H2 dilué dans N2) est inflammable ; le chauffage de pastilles à 300 °C doit se faire dans un four prévu pour cela. Au stade de la pile : le N-méthyl-2-pyrrolidone est reprotoxique, le LiPF6 libère du HF au contact de l'eau, les carbonates (EC, DEC) sont inflammables et le lithium métallique réagit avec l'eau. Le broyage de 20 h en jarre fermée peut s'échauffer et mettre le contenu sous pression : laisser refroidir avant d'ouvrir. Les atmosphères inertes et la boîte à gants servent probablement à protéger Li2O et LiF (hygroscopiques) et le lithium métallique de l'humidité et du CO2 de l'air : c'est une interprétation, l'article ne donne pas la raison."
   },
   {
    "type": "limite_reproductibilite",
@@ -1651,7 +1730,25 @@
    "type": "limite_reproductibilite",
    "route": "LMVOF",
    "quote": "the synthesized compounds can be assumed to keep the oxidation state of the starting precursors",
-   "text": "Incohérence de l'article : les auteurs écrivent que les composés gardent l'état d'oxydation des précurseurs, alors que le précurseur de vanadium est VO2 (V4+) et que le XANES place V près de V2O3 (3+). L'état d'oxydation réel de V dans LMVOF est donc incertain."
+   "text": "Incohérence de bilan redox dans l'article : les précurseurs MnO et VO2 correspondent à Mn2+ et V4+, le XANES donne Mn proche de 2+ et V proche de 3+, et les auteurs écrivent que les composés gardent l'état d'oxydation des précurseurs. Li2Mn0,5V0,5O2F ne peut pas être neutre avec Mn2+ et V3+ (déficit d'environ 0,5 charge positive par formule), donc l'absence de transfert de charge n'est pas soutenue, et le fer de la jarre ne suffit pas à l'expliquer (environ 11 % en masse requis, contre des traces à l'EDX). L'état d'oxydation réel de Mn et de V n'est pas établi ; une méthode indépendante (titrage iodométrique, comme dans Sharpe et al., J. Am. Chem. Soc. 2020, 142, 21799) serait nécessaire."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LMVOF",
+   "quote": null,
+   "text": "La comparaison LMVOF / LMOF change cinq variables à la fois : la composition (vanadium), le précurseur et le degré d'oxydation du manganèse (MnO contre Mn2O3), la jarre (acier trempé, avec du fer détecté, contre nitrure de silicium), le rapport billes/poudre (32:1 contre 13:1) et la vitesse (500 contre 600 rpm). L'effet du vanadium ne peut donc pas être isolé, et l'augmentation du paramètre de maille attribuée au vanadium s'explique aussi par le Mn2+ plus gros (rayons de Shannon, Acta Cryst. A 1976, 32, 751). Il faudrait un témoin qui ne change que le vanadium."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HT-LMVOF",
+   "quote": null,
+   "text": "Le vanadium est dit « may be electrochemically inactive » (voltampérométrie), mais la figure 8 montre qu'il passe de V3+ à V4+ après cyclage, et le pic de voltampérométrie à environ 2,6 V, attribué à Mn2+/Mn3+, tombe aussi là où se trouve le couple du vanadium dans les oxyfluorures de type sel gemme (Ren et al., ECS Meeting Abstracts 2015, MA2015-03, 426). Le rôle redox du vanadium n'est donc pas tranché. La figure 8 est de plus attribuée à HT-LMVOF dans le texte et à LMVOF_20C dans la légende : l'échantillon mesuré est incertain, et l'instrument, la préparation de l'électrode et le numéro de cycle ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "LMOF",
+   "quote": null,
+   "text": "Les ajustements EXAFS du tableau 2 ne sont pas cohérents : le nombre de coordination Mn–O/F vaut environ 2 (1,7 à 2,1) pour un Mn octaédrique dont on attend 6 (facteur d'occupation appliqué à tort ?, comparer Sharpe et al., J. Am. Chem. Soc. 2020, 142, 21799), S0² est « fixed as 0 » dans les Méthodes mais 0,98 dans le tableau, et σ² de la première couche passe de 0,002 (LMOF_20C) à 0,014 Å² (HT-LMOF_20C), soit plus de désordre, alors que le texte conclut à « reduced local disordering » après traitement thermique. Les conclusions sur la symétrie et les défauts ne reposent pas sur des ajustements cohérents."
   }
  ],
  "method_sources": [
@@ -1683,7 +1780,7 @@
   },
   {
    "where": "Li2Mn0.66V0.33O2F_Si3N4 et _steel",
-   "issue": "Deux essais « analogous to the above syntheses of LMOF and LMVOF » : la jarre (nitrure de silicium puis acier) vient de la légende de la figure S1 ; vitesse et rapport billes/poudre du second essai sont seulement « analogous to LMVOF » ; la présence de LiF n'est pas écrite pour ces essais (lue comme héritée). Les masses de Mn2O3 et V2O3 ne sont pas données. La variation « vanadium_precursor » (V2O3 ajouté) est un ajout absent du parent : l'avertissement de nom de `load.py check` est attendu, comme pour LMVOF (VO2)."
+   "issue": "Deux essais « analogous to the above syntheses of LMOF and LMVOF » : la jarre (nitrure de silicium puis acier) vient de la légende de la figure S1. L'article ne nomme jamais LiF dans les précurseurs de ces essais (Li2O, Mn2O3, V2O3) : les étapes 3 et 4 (ajout de LiF, second broyage) sont héritées de LMOF par « analogous », sans être écrites, et déclarées non citées (LiF_use). Pour l'essai b, le rapport billes/poudre et la vitesse sont seulement « analogous to LMVOF » : aucune valeur n'est donnée, et les 13:1 et 600 rpm de LMOF hérités par la voie ne doivent pas être lus pour cet essai. Les masses de Mn2O3 et V2O3 ne sont pas données. L'avertissement de nom de `load.py check` pour « vanadium_precursor » est attendu."
   },
   {
    "where": "HT-LMOF étape 2",
@@ -1692,10 +1789,6 @@
   {
    "where": "HT-LMOF et HT-LMVOF, rattachement",
    "issue": "Les échantillons HT sont des traitements des poudres LMOF et LMVOF ; ils sont créés comme voies post_treatment ayant le matériau fini pour réactif (role intermediate, 500 mg « of each powder »). HT-LMVOF est une branche de HT-LMOF (réactif remplacé par LMVOF)."
-  },
-  {
-   "where": "Électrode, ratios",
-   "issue": "« premixed in a ratio of 60:30 » (matière active : Super P) puis PVDF « in a ratio of 10:90 » par rapport au mélange : 60:30:10 en masse est probable mais n'est pas écrit ; les ratios sont recopiés tels quels en amount_text. Une seule voie électrode et une seule voie pile ont été créées pour les quatre échantillons ; l'article ne dit pas explicitement que les électrodes HT ont suivi le même protocole."
   },
   {
    "where": "XANES, degré d'oxydation du vanadium",
@@ -1720,6 +1813,26 @@
   {
    "where": "XRD LMVOF, rétention de capacité",
    "issue": "Le texte donne « 12.4% higher » entre LMVOF (43,8 %) et LMOF (31,4 %) : écart de 12,4 points. Valeurs de la parenthèse retenues."
+  },
+  {
+   "where": "Électrode, ratios",
+   "issue": "« premixed in a ratio of 60:30 » (matière active : Super P) puis PVDF « in a ratio of 10:90 » par rapport au mélange : 60:30:10 en masse est probable mais n'est pas écrit ; les ratios sont recopiés tels quels en amount_text. Une seule voie électrode et une seule voie pile servent aux quatre échantillons."
+  },
+  {
+   "where": "Electrode_DRS, échantillons HT",
+   "issue": "L'article écrit « Electrode tapes of normal LMOF and HT-LMOF were prepared according to the method described below » (section XAFS synchrotron) : les électrodes de HT-LMOF suivent donc le protocole d'électrode, cité pour ce réactif. Pour HT-LMVOF, l'article teste les quatre échantillons en cyclage, CV et EIS sans écrire la préparation de son électrode : même protocole supposé, implicite. Les rapports 60:30 et 10:90 sont écrits pour « LMOF or LMVOF » seulement."
+  },
+  {
+   "where": "HT-LMOF étape 2, palier et refroidissement",
+   "issue": "Le palier à 300 °C, le refroidissement entre les trois chauffes et la température de départ ne sont pas écrits (non cités). À 80 °C/h, la montée de 25 à 300 °C prend environ 3,4 h, donc les « 5 h » comprennent la montée et un palier de durée inconnue, ou sont une autre durée."
+  },
+  {
+   "where": "Figure 8 (instrument)",
+   "issue": "Le texte ne dit pas quel appareil a mesuré les spectres V et Mn de la figure 8 (la section synchrotron ne concerne que le Mn des électrodes LMOF et HT-LMOF ; l'easyXAFS300+ est décrit pour les poudres) ni comment l'électrode cyclée a été préparée. Instrument et préparation laissés non cités ; le numéro de cycle n'est donné que par la légende (LMVOF_20C)."
+  },
+  {
+   "where": "DRX après DSC (Fig. S3)",
+   "issue": "Résultat qualitatif du texte seulement (pics supplémentaires non DRS) ; la figure S3 n'est pas dans le dépôt, donc ni positions des pics ni phase parasite."
   }
  ]
 }
