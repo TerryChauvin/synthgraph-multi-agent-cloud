@@ -14,3 +14,8 @@
 - Formule C22H40O12 donnée pour le caprate de lactose par calcul d'un monoester (le texte dit « monocaprate ester » majoritaire) ; doute écrit.
 - Figures : Fig. 3 et Fig. 4 ouvertes ; le MEB n'a que des barres d'échelle de 200 nm, sans taille écrite, donc aucune valeur extraite. Les Fig. 5 (a, b), 6 et 7 sont lues. Fig. S1 et S2 du SI absentes du dépôt de figures (légendes seules dans le texte).
 - `method_sources` : cit23 (ZIF-8, « modified procedure », protocole adapté) et cit24 (dosage Bradford, mesure). Non retenus : cit25 (formule d'efficacité), cit21 et cit22 (travaux antérieurs évoqués comme contexte), cit18 (Zaidan, comparaison de résultats).
+
+## Révision (consigne de l'orchestrateur, règle RUNBOOK ligne 44)
+- L'estérification lactose + acide caprique est un test catalytique du matériau fini : voie d'estérification et 14 branches supprimées. Deux voies restent (ZIF-8, CRL@ZIF-8).
+- Dans CRL@ZIF-8 : caractérisation « catalytic esterification test » (conditions de référence de la légende de la Fig. 6, acétone 50 mL retenu et 10 mL en doute) et un outcome par condition testée, nommé par ses conditions (`ester_conversion_ratio1to1_50C_48h_20mg`, etc.), `from_figure` pour les barres lues sur la Fig. 6, citation = légende. IC50 et inhibition cellulaire rangés aussi en outcomes de CRL@ZIF-8 (`lactose_caprate_*`).
+- Formule C22H40O12 retirée (calculée, non écrite). Inventaire : les conditions d'essai ne sont plus des échantillons ; le caprate de lactose y figure avec `route: null` et la raison.
