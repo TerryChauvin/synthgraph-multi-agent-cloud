@@ -1,0 +1,83 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3833402</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3833402 — Synthesis and use of [Cd(Detu)₂(OOCCH₃)₂]·H₂O as single molecule precursor for Cds nanoparticles.</h1>
+<h2>Voie : Cd-detu-complex</h2>
+<pre class="mermaid">flowchart LR
+  R16337([&quot;cadmium acetate dihydrate&lt;br/&gt;2 mmol&quot;]):::reactif
+  R16337 --&gt;|&quot;precursor&quot;| S19601
+  R16338([&quot;absolute ethanol (dissolution of cadmium ace…&lt;br/&gt;50 mL&quot;]):::reactif
+  R16338 --&gt;|&quot;solvent&quot;| S19601
+  R16339([&quot;diethylthiourea&lt;br/&gt;4 mmol&quot;]):::reactif
+  R16339 --&gt;|&quot;ligand&quot;| S19601
+  R16340([&quot;absolute ethanol (dissolution of diethylthio…&lt;br/&gt;50 mL&quot;]):::reactif
+  R16340 --&gt;|&quot;solvent&quot;| S19601
+  S19601[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S19601 --&gt; S19602
+  S19602[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S19602 --&gt; S19603
+  S19603[&quot;&lt;b&gt;3. reflux&lt;/b&gt;&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S19603 --&gt; S19604
+  S19604[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S19604 --&gt; S19605
+  S19605[&quot;&lt;b&gt;5. crystallize&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : few days&quot;]:::etape
+  S19605 --&gt; M
+  M{{&quot;bis(diethylthiourea)cadmium(II) acetate monohydra…&lt;br/&gt;[Cd(detu)2(OOCCH3)2]·H2O&quot;}}:::materiau
+  O77887[&quot;crystal_system : Monoclinic&quot;]:::resultat
+  M -.-&gt; O77887
+  O77888[&quot;space_group : P2(1)/c&quot;]:::resultat
+  M -.-&gt; O77888
+  O77889[&quot;unit_cell_a : 11.755 Å&quot;]:::resultat
+  M -.-&gt; O77889
+  O77890[&quot;melting_point_DTA : 145 °C&quot;]:::resultat
+  M -.-&gt; O77890
+  O77891[&quot;decomposition_endotherm_DTA : 182 °C&quot;]:::resultat
+  M -.-&gt; O77891
+  O77892[&quot;mass_loss_stage_2_TGA : 71 %&quot;]:::resultat
+  M -.-&gt; O77892
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CdS-HDA-150</h2>
+<pre class="mermaid">flowchart LR
+  R16341([&quot;[Cd(detu)2(OOCCH3)2]·H2O (voie Cd-detu-compl…&lt;br/&gt;0.5 g&quot;]):::reactif
+  R16341 --&gt;|&quot;intermediate&quot;| S19606
+  R16342([&quot;trinoctylphosphine&lt;br/&gt;10 mL&quot;]):::reactif
+  R16342 --&gt;|&quot;solvent&quot;| S19606
+  R16343([&quot;hexadecylamine (HDA)&lt;br/&gt;6 g&quot;]):::reactif
+  R16343 --&gt;|&quot;capping_agent&quot;| S19606
+  R16344([&quot;methanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16344 --&gt;|&quot;antisolvent&quot;| S19606
+  R16345([&quot;toluene&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16345 --&gt;|&quot;solvent&quot;| S19606
+  S19606[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S19606 --&gt; S19607
+  S19607[&quot;&lt;b&gt;2. inject&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&lt;br/&gt;temperature_drop : 20–30°C&quot;]:::etape
+  S19607 --&gt; S19608
+  S19608[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S19608 --&gt; S19609
+  S19609[&quot;&lt;b&gt;4. cool&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&quot;]:::etape
+  S19609 --&gt; S19610
+  S19610[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;amount : excess&quot;]:::etape
+  S19610 --&gt; S19611
+  S19611[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&quot;]:::etape
+  S19611 --&gt; S19612
+  S19612[&quot;&lt;b&gt;7. disperse&lt;/b&gt;&quot;]:::etape
+  S19612 --&gt; S19613
+  S19613[&quot;&lt;b&gt;8. evaporate&lt;/b&gt;&lt;br/&gt;pressure : vacuum&quot;]:::etape
+  S19613 --&gt; M
+  M{{&quot;HDA-capped CdS nanoparticles&lt;br/&gt;CdS&quot;}}:::materiau
+  O77901[&quot;excitonic_absorption_feature : 420 nm&quot;]:::resultat
+  M -.-&gt; O77901
+  O77902[&quot;emission_maximum : 559 nm&quot;]:::resultat
+  M -.-&gt; O77902
+  O77903[&quot;crystal_phase : hexagonal phase&quot;]:::resultat
+  M -.-&gt; O77903
+  O77904[&quot;particle_size_min : 5 nm&quot;]:::resultat
+  M -.-&gt; O77904
+  O77905[&quot;particle_size_max : 19 nm&quot;]:::resultat
+  M -.-&gt; O77905
+  O77906[&quot;particle_shape : almost spherical&quot;]:::resultat
+  M -.-&gt; O77906
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
