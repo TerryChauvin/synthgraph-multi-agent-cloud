@@ -46,11 +46,14 @@
    "sample": "DC7 pur (silicone sans nanoparticules)",
    "defined_in": "Results 2.2 et Methods, 4.6",
    "route": null,
-   "why": "témoin : élastomère commercial réticulé, sans synthèse décrite",
+   "why": "témoin : élastomère commercial réticulé, sans synthèse décrite ; ses valeurs de référence (Fig. 7) et ses résultats des sections 2.2, 2.4 et 2.5 sont consignés en annotations (voir « Témoin DC7 pur »)",
    "results_in": [
     "Fig. 4",
     "Fig. 7",
-    "Fig. 8"
+    "Fig. 8",
+    "Results 2.2 (stabilité de forme)",
+    "Results 2.4 (rapport d'intégrales RMN)",
+    "Results 2.5 (rapport d'intensité IRM, ADC)"
    ]
   },
   {
@@ -73,6 +76,24 @@
    "defined_in": "Results 2.1",
    "route": null,
    "why": "oxydes de référence de provenance non décrite, pas préparés dans l'article"
+  },
+  {
+   "sample": "DC7 pur refroidi de la température ambiante à −20 °C (3 échantillons, tubes RMN de 5 mm)",
+   "defined_in": "Results 2.2",
+   "route": null,
+   "why": "essai de stabilité de forme sur l'élastomère commercial réticulé, sans synthèse ; résultat en annotation (vides sous 10 °C)",
+   "results_in": [
+    "Results 2.2"
+   ]
+  },
+  {
+   "sample": "DC7 pur chauffé jusqu'à 60 °C (3 échantillons, tubes RMN de 5 mm)",
+   "defined_in": "Results 2.2",
+   "route": null,
+   "why": "essai de stabilité de forme sur l'élastomère commercial réticulé, sans synthèse ; aucun changement visible",
+   "results_in": [
+    "Results 2.2"
+   ]
   }
  ],
  "routes": [
@@ -287,7 +308,14 @@
      "action": "add",
      "description": "À 130 °C, ajouter 10 mL d'éther dibenzylique pour limiter la vaporisation des sels métalliques.",
      "quote": "At this temperature, 10 mL of dibenzyl ether (DBE) was added to the mixture to limit the vaporization of the metal salts.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 130,
+       "unit": "°C",
+       "quote": "The mixture was then heated to 130 °C. At this temperature, 10 mL of dibenzyl ether (DBE) was added to the mixture to limit the vaporization of the metal salts."
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "addition_rate"
@@ -351,6 +379,11 @@
        "name": "temperature",
        "value_text": "room temperature",
        "quote": "After cooling down to room temperature"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "an inert atmosphere until it is fully cooled",
+       "quote": "to maintain the resulting solution under an inert atmosphere until it is fully cooled"
       }
      ],
      "equipment": [],
@@ -443,7 +476,7 @@
      "technique": "XRD",
      "result": "structure spinelle (JCPDS No. 74-2401), paramètre de maille 0,8424 nm ± 0,0002 nm, taille de cristallite 2,12 nm ± 0,17 nm",
      "instrument": "Rigaku SmartLab multipurpose X-ray system (Tokyo, Japan)",
-     "conditions": "source Cu ; pics très larges et faibles (<4000 CPS) à cause de la silicone",
+     "conditions": "source Cu ; pics très larges et faibles (<4000 CPS) à cause de la silicone ; taille de cristallite par tracé de Williamson–Hall avec « an assumed shape factor of 0.89 » ; paramètre de maille par la méthode de Nelson–Riley ; incertitudes ± 0.17 nm (cristallite) et ± 0.0002 nm (maille)",
      "quote": "the fitted lattice parameter of 0.8424 nm ± 0.0002 nm was somewhat larger than the bulk lattice parameter"
     },
     {
@@ -1003,6 +1036,77 @@
    "type": "securite_analyse",
    "route": "MnZnFe-DC7",
    "text": "Le chauffage à 280 °C d'éther dibenzylique, d'acétylacétonates et de silicone libère des vapeurs organiques (pentane-2,4-dione, benzaldéhyde, toluène) : travailler sous hotte, avec une colonne à reflux. Le chloroforme, l'acétone et le n-hexane sont toxiques ou inflammables. Les nanoparticules magnétiques en poudre ou en suspension ne doivent pas être inhalées, et les solvants de lavage doivent être collectés comme déchets organiques halogénés (chloroforme) ou non halogénés."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin DC7 pur (silicone sans nanoparticules, sans voie propre), valeurs lues sur la Fig. 7 à 2 chiffres significatifs, précision de lecture de l'ordre de 5 % : T1 d'environ 920 ms à 20 °C et 1300 ms à 60 °C (contre environ 1000 à 1400 ms pour les deux silicones dopées) ; composante longue de T2 d'environ 360 ms à 20 °C et 560 ms à 60 °C (contre environ 310 à 420 ms à 0,6 mmol L−1 et 260 à 360 ms à 1,0 mmol L−1) ; composante courte d'environ 110 ms à 20 °C et 150 ms à 60 °C, du même ordre (100 à 150 ms) pour les trois échantillons. Le T2* du témoin n'est pas tracé sur la Fig. 7a. L'attribution longue/courte suit le texte (a = longue), la légende de la Fig. 7c plaçant b au-dessus de a.",
+   "quote": "Temperature dependence of nuclear relaxation times of silicone protons at 3.0 T. (a) spin dephasing time T2*, (b) spin–lattice time T1, (c) spin–spin time T2."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Témoin DC7 pur, stabilité de forme : trois échantillons cuits dans des tubes RMN de 5 mm refroidis jusqu'à −20 °C montrent de longs vides sous 10 °C, trois autres chauffés jusqu'à 60 °C restent clairs et inchangés ; c'est pourquoi les mesures RMN et IRM sont faites au-dessus de 10 °C.",
+   "quote": "The cooled samples showed clear defects in the form of long voids that appeared below 10 °C."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Témoin DC7 pur, RMN : le rapport des intégrales des spectres des protons de la silicone DC7 et de l'eau vaut 0,70 à 20 °C, ce que les auteurs jugent cohérent avec 0,65 à 0,80 pour d'autres polymères.",
+   "quote": "The obtained value of 0.70 corresponds well to previously reported numbers in other polymers (0.65–0.80)"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Témoin DC7 pur, IRM en écho de spin : le rapport d'intensité de la silicone pure à l'échantillon d'eau vaut 0,65 ± 0,07, légèrement inférieur au rapport RMN (0,70) mais dans l'erreur expérimentale selon les auteurs.",
+   "quote": "The ratio of intensity in the region of interest marked by red circles in Figure 8a of pure DC7 to the water sample is 0.65 ± 0.07"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Mesure du coefficient de diffusion apparent (ADC) sur la silicone étudiée : il est très inférieur à la limite basse de 10−12 m2 s−1 de la configuration du scanner, donc non mesurable ; la phrase ne désigne pas un fantôme précis.",
+   "quote": "The value of ADC for the studied silicone is well below the lower limit of 10−12 m2s−1 in the MRI scanner configuration."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "MnZnFe-DC7",
+   "text": "Les auteurs justifient l'emploi de la seule partie A de l'élastomère : elle contient le catalyseur mais pas les groupes alcényle insaturés, donc la silicone polymérise moins pendant la synthèse. Un chimiste qui change de silicone doit exclure les alcényles réactifs du mélange réactionnel.",
+   "quote": "Part A was selected because it contains the catalyst and not the unsaturated alkenyl groups. Therefore, it is less likely to polymerize during synthesis."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnZnFe-DC7",
+   "text": "La pente d'aimantation du texte (0,078 Am2kg−1K−1) est environ 2,4 fois plus faible que celle de la Fig. 6b (environ 0,19, soit environ 104 Am2kg−1 à 233 K et 82 à 350 K) ; les deux valeurs lues retenues dans l'extraction (100 et 82) donnent déjà 0,15. Le rapport est voisin de la part de ferrite de l'ATG (environ 0,41), ce qui suggère une normalisation par masse de composite dans le texte et par masse de ferrite sur la figure, mais l'article ne l'écrit pas : la valeur écrite est conservée, la normalisation est à confirmer avant tout usage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnZnFe-DC7",
+   "text": "Les valeurs « 1,2 / 0,4 / 0,4 mmol L−1 » des précurseurs sont des quantités de matière, non des concentrations : 427,4 mg de Fe(acac)3 font environ 1,21 mmol, 101,2 mg de Mn(acac)2 environ 0,40 mmol et 103,2 mg de Zn(acac)2 (anhydre) environ 0,39 mmol, soit dans 30 mL des concentrations réelles d'environ 40 mmol/L de fer et 13 mmol/L de chacun de Mn et Zn. Les masses sont la donnée fiable. Le rapport (Mn+Zn):Fe des précurseurs (environ 0,65) est un peu plus élevé que celui du produit à l'ICP (0,58) : Mn ou Zn sont probablement moins incorporés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnZnFe-DC7",
+   "text": "La taille de cristallite de 2,12 nm (Williamson–Hall) paraît incompatible avec la largeur des raies de la Fig. 2, qui correspond plutôt à une dizaine de nanomètres, et avec le TEM (4,4 nm en moyenne, environ 8 nm en diamètre pondéré en volume pour une loi log-normale de même moyenne et écart-type). La maille mesurée (0,8424 nm) est dite « plus grande que le massif » par comparaison à 0,8302–0,8311 nm, valeur qui ne correspond pas à une ferrite Mn–Zn (les fiches de manuel donnent environ 0,846 à 0,849 nm, non vérifiées sur une source primaire) : elle est en réalité plus petite, ce qui évoque une oxydation partielle plutôt qu'une dilatation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnZnFe-DC7",
+   "text": "La méthode EPA 200.7 citée pour le dosage « ICP-MS » est une méthode d'émission atomique (ICP-AES), l'ICP-MS relevant de la méthode 200.8 : l'article ne dit pas quel instrument a servi. La neutralisation du pH après l'eau régale peut faire précipiter Fe(OH)3 avant Mn2+ et Zn2+ (le résumé de la méthode, consulté par la critique, exige des solutions acidifiées), ce qui fausserait le rapport Fe/(Mn+Zn)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MnZnFe-DC7",
+   "text": "Réserves de chimie non traitées par l'article : à 280 °C la silicone peut commencer à se dépolymériser (les auteurs le suggèrent eux-mêmes en IR et ATG) et le complexe de platine de la partie A est probablement réduit en platine métallique, contaminant non dosé. Le bullage d'argon à 500 mL/min dans 30 mL de mélange à 280 °C peut aussi entraîner l'éther dibenzylique si la colonne de 0,5 m ne condense pas bien : le débit réel pendant les paliers et le rôle de la colonne sont à préciser."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Phantom_0.6mM",
+   "text": "Les concentrations massiques des fantômes (160 et 240 µg/mL) impliquent des masses molaires différentes : 240 µg/mL est cohérent avec 1,0 mmol/L, alors que 160 µg/mL correspond plutôt à environ 0,67 mmol/L, la concentration « 0,6 » étant donc probablement arrondie. Le T2* diminue d'un facteur 2,4 (1,6 à 0,67 ms) pour une concentration multipliée par 1,7. La relaxivité r2* de plus de 1200 L s−1 mmol−1 est comparée à 482 L s−1 mmol−1 (maghémite), mais elle est exprimée par mmol de formule de ferrite alors que la référence l'est probablement par mmol de fer : par mmol de fer elle vaudrait environ 720, la comparaison n'est donc pas valable telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Phantom_0.6mM",
+   "text": "Le témoin de silicone pure ne contrôle pas l'effet de la matrice : le T1 des silicones dopées est environ 10 % plus long que celui de la silicone pure alors que les particules agissent peu sur T1, et la composante longue de T2 est plus courte. Ces écarts peuvent venir de la silicone modifiée par le cycle thermique à 280 °C plutôt que des particules ; il manque un témoin fait de la même partie A chauffée de la même façon sans précurseurs."
   }
  ],
  "method_sources": [
@@ -1041,6 +1145,12 @@
    "ref_id": "B66-ijms-24-05685",
    "role": "autre",
    "quote": "ADC was measured with a standard pulsed-gradient spin-echo (PGSE) sequence with b-values reaching to 2000 s/mm2"
+  },
+  {
+   "route": "MnZnFe-DC7",
+   "ref_id": "B43-ijms-24-05685",
+   "role": "autre",
+   "quote": "Soft X-ray absorption spectroscopy (XAS) was performed at room temperature at the PEEM/XAS beamline station of the Solaris National Synchrotron Radiation Center in Krakow, Poland"
   }
  ],
  "doubts": [
@@ -1079,6 +1189,22 @@
   {
    "where": "Phantom_0.6mM, type de voie",
    "issue": "Les fantômes de silicone sont classés `device` (préparation d'échantillons de mesure à partir du matériau) ; on peut aussi les lire comme un nouveau matériau composite. Le témoin de silicone pure n'a pas de voie : aucun protocole propre n'est écrit."
+  },
+  {
+   "where": "MnZnFe-DC7, résultat magnetization_temperature_coefficient",
+   "issue": "La pente écrite dans le texte (0,078 Am2kg−1K−1) est conservée ; la Fig. 6b donne environ 0,19 (valeurs lues dans l'extraction : 100 à 230 K et 82 à 350 K, soit 0,15). Normalisation (masse de composite ou de ferrite) non écrite ; voir l'annotation limite_reproductibilite."
+  },
+  {
+   "where": "MnZnFe-DC7, étape 8 (refroidissement)",
+   "issue": "L'atmosphère inerte jusqu'au refroidissement complet est une recommandation générale de la section sur les peroxydes de l'éther dibenzylique, non une étape du récit de synthèse ; elle est reprise comme paramètre de l'étape 8 avec cette phrase pour citation."
+  },
+  {
+   "where": "Témoin DC7 pur, Fig. 7",
+   "issue": "Valeurs du témoin lues sur la Fig. 7b et 7c (2 chiffres significatifs, précision d'environ 5 %) et placées dans une annotation comparaison_branches, car le témoin n'a pas de voie ; la même ambiguïté de légende a/b que pour les fantômes s'applique."
+  },
+  {
+   "where": "Témoin DC7 pur, rapports RMN et IRM, ADC",
+   "issue": "Les rapports 0,70 (RMN) et 0,65 ± 0,07 (IRM) portent explicitement sur la silicone pure, et l'ADC sur « the studied silicone » sans désigner un fantôme : ils sont en annotations et non dans les résultats d'un fantôme, pour ne pas leur attribuer un échantillon qu'ils ne visent pas."
   }
  ]
 }
