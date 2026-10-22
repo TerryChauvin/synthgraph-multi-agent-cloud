@@ -96,7 +96,227 @@
    ],
    "steps": [
     {
-     "order": 1,
+     "action": "dry",
+     "description": "Sécher les tamis moléculaires 3 Å (billes d'aluminosilicate) qui servent à sécher et stocker les solvants et réactifs liquides ci-dessous : une nuit sous vide à 300 °C.",
+     "quote": "Molecular sieves used for solvent drying were synthetic crystalline aluminosilicate beads with a pore size of 3 Å. These were dried overnight in vacuo at 300 °C before use.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "These were dried overnight in vacuo at 300 °C before use.",
+       "value_num": 300,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "These were dried overnight in vacuo at 300 °C before use.",
+       "value_text": "overnight"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "These were dried overnight in vacuo at 300 °C before use.",
+       "value_text": "in vacuo"
+      },
+      {
+       "name": "pore_size",
+       "quote": "Molecular sieves used for solvent drying were synthetic crystalline aluminosilicate beads with a pore size of 3 Å.",
+       "value_num": 3,
+       "unit": "Å"
+      }
+     ],
+     "equipment": [],
+     "order": 1
+    },
+    {
+     "action": "degas",
+     "description": "Préparation de l'oléylamine (OLA), étape 1 : dégazer ~250 mL d'OLA dans un ballon de 500 mL (rempli en boîte à gants sous N2, puis raccordé à une rampe Schlenk sous Ar) par trois cycles gel-pompage-dégel sous vide (congélation à l'azote liquide, fusion accélérée par un chauffage doux au pistolet thermique, ballon maintenu sous vide).",
+     "quote": "Three FPT cycles were then performed to remove dissolved gasses from the OLA.",
+     "parameters": [
+      {
+       "name": "repetitions",
+       "quote": "Three FPT cycles were then performed to remove dissolved gasses from the OLA.",
+       "value_text": "three"
+      },
+      {
+       "name": "volume",
+       "quote": "~250 mL of OLA was transferred to a 500 mL round-bottom flask",
+       "value_text": "~250 mL of OLA in a 500 mL round-bottom flask"
+      },
+      {
+       "name": "pressure",
+       "quote": "Pressure usually varied between ~150-350 mtorr",
+       "value_text": "~150-350 mtorr"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "round-bottom flask",
+       "detail": "500 mL",
+       "quote": "~250 mL of OLA was transferred to a 500 mL round-bottom flask"
+      },
+      {
+       "type": "borosilicate glass dish with liquid nitrogen",
+       "detail": null,
+       "quote": "Lowering the 500 mL flask into a borosilicate glass dish, filling the dish with liquid nitrogen and allowing the OLA to freeze"
+      },
+      {
+       "type": "heat gun",
+       "detail": "gentle heating to melt the OLA",
+       "quote": "A heat gun was used to apply gentle heating to accelerate the process"
+      }
+     ],
+     "order": 2
+    },
+    {
+     "action": "dry",
+     "description": "Préparation de l'OLA, étape 2 : sécher l'OLA sur CaH2 (1 g pour 100 mL, soit ~2,5 g ici, léger excès en général) sous agitation et sous vide, d'abord à température ambiante une nuit (~12-16 h), puis 2 h de plus à 200 °C (température lue à la surface du verre du ballon de 500 mL ; celle de l'OLA est probablement un peu plus basse).",
+     "quote": "1 g of CaH2 was used per 100 mL of solvent, so ~2.5 g of CaH2 was used in this case, although slight excess was typically used.",
+     "parameters": [
+      {
+       "name": "cah2_amount",
+       "quote": "1 g of CaH2 was used per 100 mL of solvent, so ~2.5 g of CaH2 was used in this case, although slight excess was typically used.",
+       "value_text": "1 g per 100 mL of solvent (~2.5 g for ~250 mL), slight excess typically used"
+      },
+      {
+       "name": "temperature_initial",
+       "quote": "left stirring in vacuo at room temperature overnight (~12-16 hours)",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "duration_initial",
+       "quote": "left stirring in vacuo at room temperature overnight (~12-16 hours)",
+       "value_text": "overnight (~12-16 hours)"
+      },
+      {
+       "name": "temperature_final",
+       "quote": "the flask was then heated up to 200 °C for 2 additional hours, continuing to stir in vacuo",
+       "value_num": 200,
+       "unit": "°C"
+      },
+      {
+       "name": "duration_final",
+       "quote": "the flask was then heated up to 200 °C for 2 additional hours, continuing to stir in vacuo",
+       "value_num": 2,
+       "unit": "h"
+      },
+      {
+       "name": "temperature_measured_at",
+       "quote": "the temperature at this step was measured at the glass surface of the 500 mL RBF",
+       "value_text": "glass surface of the 500 mL RBF (OLA itself likely a bit lower)"
+      }
+     ],
+     "equipment": [],
+     "order": 3
+    },
+    {
+     "action": "distill",
+     "description": "Préparation de l'OLA, étape 3 : après refroidissement, décanter l'OLA en boîte à gants dans un ballon de 250 mL en limitant le passage du CaH2, monter le montage de distillation (Fig. S2), purger trois fois par cycles vide/Ar, chauffer le ballon collecteur au pistolet thermique sous vide, puis distiller l'OLA sous vide réduit.",
+     "quote": "Distillation of OLA required reduced pressures, so the setup was connected to an Ar-purged Schlenk line.",
+     "parameters": [
+      {
+       "name": "pressure",
+       "quote": "pressure would typically be maintained at ~200- 400 mtorr",
+       "value_text": "~200-400 mtorr"
+      },
+      {
+       "name": "heating_mantle_setting",
+       "quote": "The heating mantle was typically set between 200-280 °C",
+       "value_text": "200-280 °C"
+      },
+      {
+       "name": "heating_tape_power",
+       "quote": "heating tape was typically set between 30-50% power (110-120V source)",
+       "value_text": "30-50% power (110-120V source)"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "vacuum distillation setup",
+       "detail": "source flask on a heating mantle with heating tape, Schlenk line connection (Fig. S2)",
+       "quote": "Item 1 is the source flask set on a heating mantle with heating tape wrapped around the body."
+      }
+     ],
+     "order": 4
+    },
+    {
+     "action": "store",
+     "description": "Préparation de l'OLA, étape 4 : stocker l'OLA distillée sur tamis moléculaires 3 Å au moins une journée avant usage ; elle reste sur les mêmes tamis pendant toute son utilisation. Dans les essais, « dried OLA » désigne cette OLA (l'essai n° 11 emploie de l'OLA « as-received »).",
+     "quote": "After distillation, the dried OLA was stored over molecular sieves for at least a day before experimental use.",
+     "parameters": [
+      {
+       "name": "storage_duration",
+       "quote": "After distillation, the dried OLA was stored over molecular sieves for at least a day before experimental use.",
+       "value_text": "at least a day"
+      }
+     ],
+     "equipment": [],
+     "order": 5
+    },
+    {
+     "action": "purify",
+     "description": "CS2 de marque Fisher Scientific (non étiqueté anhydre) : sécher sur CaH2 et distiller (sans vide ni usage rigoureux du ruban chauffant), puis stocker sur tamis moléculaires au moins une journée. Le CS2 étiqueté « anhydrous » est utilisé tel quel (« All materials listed as anhydrous were used as received »).",
+     "quote": "Carbon disulfide purchased from Fisher Scientific was not branded as anhydrous, so this underwent drying over CaH2 along with distillation.",
+     "parameters": [
+      {
+       "name": "storage_duration",
+       "quote": "Once distilled, the Fisher Scientific CS2 was similarly stored over molecular sieves for at least a day before experimental use.",
+       "value_text": "at least a day"
+      },
+      {
+       "name": "distillation_pressure",
+       "quote": "Distillation of CS2 did not require operation in vacuo or rigorous use of the heating tape.",
+       "value_text": "did not require operation in vacuo"
+      }
+     ],
+     "equipment": [],
+     "order": 6
+    },
+    {
+     "action": "store",
+     "description": "Amines et thiols des essais qui les emploient (n-butylamine BA, n-propylamine PA, 2-méthylpropane-2-thiol MePT, 1-dodécanethiol DDT) : simplement stockés sur tamis moléculaires au moins une journée avant usage, chacun dans son flacon, sur les mêmes tamis pendant toute leur utilisation.",
+     "quote": "Solvents like n-butylamine (BA), n-propylamine (PA), 2-methyl-2-propanethiol (MePT), and 1-dodecanethiol (DDT) were simply stored over molecular sieves for at least a day before experimental use.",
+     "parameters": [
+      {
+       "name": "storage_duration",
+       "quote": "Solvents like n-butylamine (BA), n-propylamine (PA), 2-methyl-2-propanethiol (MePT), and 1-dodecanethiol (DDT) were simply stored over molecular sieves for at least a day before experimental use.",
+       "value_text": "at least a day"
+      }
+     ],
+     "equipment": [],
+     "order": 7
+    },
+    {
+     "action": "dry",
+     "description": "Poudres Ba(acac)2·nH2O (hydrate mal défini) et Zr(acac)4 (essais n° 26 et 27) : mises en boîte à gants dans un ballon de 50-100 mL, scellé et raccordé à une rampe Schlenk sous Ar, puis chauffées une nuit (~12-16 h) à 150 °C (température de surface du ballon) sous vide.",
+     "quote": "the above powders were dried by heating the RBF overnight (~12-16 h) to a flask surface temperature of 150 °C in vacuo before use.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "the above powders were dried by heating the RBF overnight (~12-16 h) to a flask surface temperature of 150 °C in vacuo before use.",
+       "value_num": 150,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "the above powders were dried by heating the RBF overnight (~12-16 h) to a flask surface temperature of 150 °C in vacuo before use.",
+       "value_text": "overnight (~12-16 h)"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "the above powders were dried by heating the RBF overnight (~12-16 h) to a flask surface temperature of 150 °C in vacuo before use.",
+       "value_text": "in vacuo"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "round-bottom flask",
+       "detail": "50-100 mL, sealed, on an Ar-purged Schlenk line",
+       "quote": "Ba(acac)2∙nH2O, an ill-defined hydrate, and Zr(acac)4 were added to a 50-100 mL RBF in an N2-filled glovebox, sealed, and transferred to an Ar-purged Schlenk line."
+      }
+     ],
+     "order": 8
+    },
+    {
+     "order": 9,
      "action": "dry",
      "description": "Sécher la verrerie au four sous vide partiel avant usage.",
      "quote": "Before use, all glassware used for nanoparticle reactions was dried at 150 °C in a vacuum oven under partial vacuum (~800 mbar) in an N2 atmosphere for ≥30 min prior to use.",
@@ -132,7 +352,7 @@
      ]
     },
     {
-     "order": 2,
+     "order": 10,
      "action": "add",
      "description": "Introduire Cp*2Ba et Zr(NEtMe)4 dans un ballon tricol de 25 mL, en boîte à gants sous N2.",
      "quote": "0.16 mmol of Cp*2Ba (65.2 mg) and 0.16 mmol of Zr(NEtMe)4 (49.3 μL) were added to a 25 mL, 3- neck round bottom flask (RBF).",
@@ -155,7 +375,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 11,
      "action": "add",
      "description": "Ajouter le CS2 : insertion de CS2 dans les précurseurs métalliques pour former (Cp*CS2)2Ba et Zr(S2CNEtMe)4, avec un excès de CS2 non réagi.",
      "quote": "~21 times molar excess of CS2 (300 μL) was added to the flask to “sulfurize” the metal precursors via insertion of the CS2 to form (Cp*CS2)2Ba and Zr(S2CNEtMe)4.",
@@ -179,7 +399,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 12,
      "action": "add",
      "description": "Ajouter l'oleylamine séchée ; elle réagit avec le CS2 en excès pour former le sel oléyldithiocarbamate-oléylammonium, seconde source de soufre.",
      "quote": "After this step, 4 mL of dried OLA was added to the flask.",
@@ -197,7 +417,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 13,
      "action": "assemble",
      "description": "Fermer le ballon avec un réfrigérant Allihn, un thermocouple in situ et un bouchon, puis le sortir de la boîte à gants et le raccorder à une rampe Schlenk sous Ar.",
      "quote": "From here, the 3-neck flask was sealed with an Allihn condenser, in situ thermocouple, and stopper before removing from the glovebox to attach to an Ar-purged Schlenk line.",
@@ -217,11 +437,16 @@
        "type": "Schlenk line",
        "detail": "Ar-purged",
        "quote": "From here, the 3-neck flask was sealed with an Allihn condenser, in situ thermocouple, and stopper before removing from the glovebox to attach to an Ar-purged Schlenk line."
+      },
+      {
+       "type": "thermocouple glass sleeve",
+       "detail": "filled with a small amount of OLA (75-100 μL) to aid thermal conduction; paraffin wax instead for T ≳ 340 °C (Fig. S1 legend)",
+       "quote": "For most experiments in this study, a small amount of OLA (75-100 μL) was inserted into the glass sleeve to aid in thermal conduction to better measure the reaction temperature. For the high temperature reactions (T ≳ 340 °C), paraffin wax was used instead."
       }
      ]
     },
     {
-     "order": 6,
+     "order": 14,
      "action": "purge",
      "description": "Purger la rampe trois fois par cycles Ar/vide, puis ouvrir le ballon sur le flux d'Ar.",
      "quote": "The Schlenk line port was purged three times via Ar/vacuum cycles, allowing the vacuum to get <150 mtorr on the last cycle, after which the reaction flask was opened to the Ar flow from the Schlenk line.",
@@ -240,7 +465,7 @@
      "equipment": []
     },
     {
-     "order": 7,
+     "order": 15,
      "action": "heat",
      "description": "Chauffer le ballon à une consigne de 290-345 °C pendant 0,5 à 5 h ; la température est mesurée par thermocouple in situ.",
      "quote": "The flask was then heated up to a set point of 290-345 °C for 0.5-5 h.",
@@ -274,7 +499,7 @@
      ]
     },
     {
-     "order": 8,
+     "order": 16,
      "action": "cool",
      "description": "Laisser refroidir naturellement, puis ramener le ballon en boîte à gants.",
      "quote": "allowed to cool naturally. Afterward, it was returned to the N2-filled glovebox, where nanoparticle washing ensued.",
@@ -291,7 +516,7 @@
      ]
     },
     {
-     "order": 9,
+     "order": 17,
      "action": "wash",
      "description": "Dans la boîte à gants : ajouter 1-3 mL de toluène puis 12-18 mL d'isopropanol, mélanger au vortex ; le mélange est ensuite centrifugé ; lavage répété et gel rouge foncé éliminé entre les cycles.",
      "quote": "To wash the nanoparticles, 1-3 mL of toluene was first added to the reaction mixture and vortex mixed, followed by the addition of 12-18 mL IPA and a vortex mix.",
@@ -313,7 +538,7 @@
      ]
     },
     {
-     "order": 10,
+     "order": 18,
      "action": "centrifuge",
      "description": "Centrifuger le mélange : culot sombre et surnageant rouge.",
      "quote": "This mixture was then centrifuged for 5 min at 14,000 rpm after which a dark pellet and a red supernatant at varying levels of opaqueness was observed.",
@@ -334,7 +559,7 @@
      "equipment": []
     },
     {
-     "order": 11,
+     "order": 19,
      "action": "disperse",
      "description": "Remettre les nanoparticules lavées en suspension dans le toluène et les conserver en boîte à gants.",
      "quote": "After washing, the nanoparticles were suspended with toluene and stored in the N2-filled glovebox before further use and characterization.",
@@ -416,6 +641,16 @@
      "property": "PL_as_synthesized",
      "quote": "the as-synthesized nanoparticles in this study fail to show any significant PL at room temperature",
      "value_text": "no significant PL at room temperature (PL seen before thorough washing comes from the organosulfur by-product)"
+    },
+    {
+     "property": "PL_vs_washing",
+     "value_text": "intensity decreases and peak moves towards a lower value of 2 eV with increasing washings",
+     "quote": "with increasing washings, the intensity of the PL spectrum decreased along with the peak location moving towards a lower value of 2 eV."
+    },
+    {
+     "property": "PL_before_thorough_washing",
+     "value_text": "peak location near 2 eV, nearly identical to the PL spectrum of α-SrZrS3 (Fig. S13)",
+     "quote": "Interestingly, both the IP-BZS and α-SrZrS3 nanoparticles prior to thorough washing showed nearly identical PL spectrum with a peak location near 2 eV"
     }
    ],
    "missing_fields": [
@@ -632,7 +867,23 @@
      "action": "assemble",
      "description": "Une fois les composants solidifiés ou épaissis dans l'adaptateur, assembler le ballon, le sortir de la boîte à gants, le raccorder à la rampe Schlenk et le purger comme pour la montée en température.",
      "quote": "Once the components had solidified or significantly thickened in the Merlic adapter, the flask was assembled, removed from the glove box, transferred to the Schlenk line, and purged as described above.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "glovebox_atmosphere",
+       "quote": "With all of these things accounted for (highly inert glove box, fresh/dry desiccant, UHP Ar in use), we were able to re-synthesize SP- BZS without issue.",
+       "value_text": "highly inert glove box (elevated O2/H2O levels prevented replication)"
+      },
+      {
+       "name": "desiccant",
+       "quote": "With all of these things accounted for (highly inert glove box, fresh/dry desiccant, UHP Ar in use), we were able to re-synthesize SP- BZS without issue.",
+       "value_text": "fresh/dry desiccant on the Ar line of the Schlenk line"
+      },
+      {
+       "name": "argon_grade",
+       "quote": "With adequate O2/H2O trapping, standard grade Ar can likely be used.",
+       "value_text": "UHP Ar (standard grade can likely be used with adequate O2/H2O trapping)"
+      }
+     ],
      "equipment": [
       {
        "type": "Schlenk line",
@@ -1055,14 +1306,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "1 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) SP-BZS# Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "1 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) SP-BZS# Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 340,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1070,7 +1321,7 @@
     {
      "parameter": "duration",
      "quote": "1 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) SP-BZS# Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 5,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1078,7 +1329,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "1 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) SP-BZS# Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Glas-Col, 25 mL (Fabric)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -1118,14 +1369,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "2 Cp*2Ba + Zr(NEtMe)4 + CS2 0.85:1:62. 5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 0.85:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "2 Cp*2Ba + Zr(NEtMe)4 + CS2 0.85:1:62. 5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 340,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1133,7 +1384,7 @@
     {
      "parameter": "duration",
      "quote": "2 Cp*2Ba + Zr(NEtMe)4 + CS2 0.85:1:62. 5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 5,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1141,7 +1392,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "2 Cp*2Ba + Zr(NEtMe)4 + CS2 0.85:1:62. 5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Glas-Col, 25 mL (Fabric)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -1176,14 +1427,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "3 Cp*2Ba + Zr(NEtMe)4 + MePT + CS2 1:1 Ba/Zr One-pot, heat-up, 330 °C%, 15 min-1 hr Yes 0.24 1 Glas-Col, 25 mL (Fabric) SP-BZS# No",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1 Ba/Zr",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "3 Cp*2Ba + Zr(NEtMe)4 + MePT + CS2 1:1 Ba/Zr One-pot, heat-up, 330 °C%, 15 min-1 hr Yes 0.24 1 Glas-Col, 25 mL (Fabric) SP-BZS# No",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1191,14 +1442,14 @@
     {
      "parameter": "duration",
      "quote": "3 Cp*2Ba + Zr(NEtMe)4 + MePT + CS2 1:1 Ba/Zr One-pot, heat-up, 330 °C%, 15 min-1 hr Yes 0.24 1 Glas-Col, 25 mL (Fabric) SP-BZS# No",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "15 min-1 hr",
      "parent_value": "0.5-5 h"
     },
     {
      "parameter": "heating_mantle",
      "quote": "3 Cp*2Ba + Zr(NEtMe)4 + MePT + CS2 1:1 Ba/Zr One-pot, heat-up, 330 °C%, 15 min-1 hr Yes 0.24 1 Glas-Col, 25 mL (Fabric) SP-BZS# No",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Glas-Col, 25 mL (Fabric)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
@@ -1266,14 +1517,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "4 Cp*2Ba + Zr(NEtMe)4 + CS2 0.85:1:62. 5 and 1:1:62.5 One-pot, heat-up, 340 °C, 3 h No, CS2 dried under UHP Ar flow 0.04 4 Glas-Col, 25 mL (Fabric) Amorphous n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 0.85:1:62.5 and 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "4 Cp*2Ba + Zr(NEtMe)4 + CS2 0.85:1:62. 5 and 1:1:62.5 One-pot, heat-up, 340 °C, 3 h No, CS2 dried under UHP Ar flow 0.04 4 Glas-Col, 25 mL (Fabric) Amorphous n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 340,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1281,7 +1532,7 @@
     {
      "parameter": "duration",
      "quote": "4 Cp*2Ba + Zr(NEtMe)4 + CS2 0.85:1:62. 5 and 1:1:62.5 One-pot, heat-up, 340 °C, 3 h No, CS2 dried under UHP Ar flow 0.04 4 Glas-Col, 25 mL (Fabric) Amorphous n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 3,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1289,7 +1540,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "4 Cp*2Ba + Zr(NEtMe)4 + CS2 0.85:1:62. 5 and 1:1:62.5 One-pot, heat-up, 340 °C, 3 h No, CS2 dried under UHP Ar flow 0.04 4 Glas-Col, 25 mL (Fabric) Amorphous n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Glas-Col, 25 mL (Fabric)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
@@ -1325,7 +1576,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "5 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 Heat-up of metal precursors, injection of CS2 at 340 °C n/a 0.04 4 Glas-Col, 25 mL (Fabric) Amorphous n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -1338,7 +1589,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "5 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 Heat-up of metal precursors, injection of CS2 at 340 °C n/a 0.04 4 Glas-Col, 25 mL (Fabric) Amorphous n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Glas-Col, 25 mL (Fabric)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -1403,14 +1654,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "6 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h Yes 0.08 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:125",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "6 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h Yes 0.08 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 340,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1418,7 +1669,7 @@
     {
      "parameter": "duration",
      "quote": "6 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h Yes 0.08 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 5,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1426,17 +1677,17 @@
     {
      "parameter": "heating_mantle",
      "quote": "6 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h Yes 0.08 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Glas-Col, 25 mL (Fabric)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
     {
-     "parameter": "oleylamine",
-     "quote": "6 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h Yes 0.08 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "value_num": 4,
-     "unit": "mL",
-     "value_text": "4 mL; concentration 0.08 (M, w.r.t. Zr)",
-     "parent_value": "4 mL"
+     "parameter": "concentration",
+     "value_num": 0.08,
+     "unit": "M",
+     "value_text": "0.08 M (w.r.t. Zr)",
+     "parent_value": "0.04 M (Table S1 no. 1)",
+     "quote": "6 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h Yes 0.08 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes"
     }
    ],
    "outcomes": [
@@ -1469,14 +1720,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "7 Cp*2Ba + Zr(NMe2)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "7 Cp*2Ba + Zr(NMe2)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 340,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1484,7 +1735,7 @@
     {
      "parameter": "duration",
      "quote": "7 Cp*2Ba + Zr(NMe2)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 5,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1492,7 +1743,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "7 Cp*2Ba + Zr(NMe2)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 5 h Yes 0.04 4 Glas-Col, 25 mL (Fabric) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Glas-Col, 25 mL (Fabric)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
@@ -1547,14 +1798,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "8 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h; 600 μL CS2 added after OLA addition to metal precursors Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:125",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "8 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h; 600 μL CS2 added after OLA addition to metal precursors Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 340,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1562,7 +1813,7 @@
     {
      "parameter": "duration",
      "quote": "8 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h; 600 μL CS2 added after OLA addition to metal precursors Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 5,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1570,14 +1821,14 @@
     {
      "parameter": "heating_mantle",
      "quote": "8 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h; 600 μL CS2 added after OLA addition to metal precursors Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
     {
      "parameter": "volume",
      "quote": "8 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:125 One-pot, heat-up, 340 °C, 5 h; 600 μL CS2 added after OLA addition to metal precursors Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_num": 600,
      "unit": "μL",
      "parent_value": "300 μL"
@@ -1619,14 +1870,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "9 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; CS2 added while reaction flask kept cold (~-15-0 °C) by cold gel pack Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "9 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; CS2 added while reaction flask kept cold (~-15-0 °C) by cold gel pack Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1634,7 +1885,7 @@
     {
      "parameter": "duration",
      "quote": "9 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; CS2 added while reaction flask kept cold (~-15-0 °C) by cold gel pack Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 3,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1642,7 +1893,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "9 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; CS2 added while reaction flask kept cold (~-15-0 °C) by cold gel pack Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
@@ -1683,14 +1934,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "10 Cp*2Ba + Zr(NEtMe)4 + EITC 1:1:31.25 One-pot, heat-up, 330 °C, 3 h Yes (excess EITC reacted with OLA) 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:31.25",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "10 Cp*2Ba + Zr(NEtMe)4 + EITC 1:1:31.25 One-pot, heat-up, 330 °C, 3 h Yes (excess EITC reacted with OLA) 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1698,7 +1949,7 @@
     {
      "parameter": "duration",
      "quote": "10 Cp*2Ba + Zr(NEtMe)4 + EITC 1:1:31.25 One-pot, heat-up, 330 °C, 3 h Yes (excess EITC reacted with OLA) 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 3,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1706,7 +1957,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "10 Cp*2Ba + Zr(NEtMe)4 + EITC 1:1:31.25 One-pot, heat-up, 330 °C, 3 h Yes (excess EITC reacted with OLA) 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
@@ -1761,14 +2012,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "11 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; as-received OLA used (no drying procedure) Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS& Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "11 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; as-received OLA used (no drying procedure) Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS& Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1776,7 +2027,7 @@
     {
      "parameter": "duration",
      "quote": "11 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; as-received OLA used (no drying procedure) Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS& Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 3,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1784,7 +2035,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "11 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; as-received OLA used (no drying procedure) Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS& Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
@@ -1830,14 +2081,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "12 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 3 h; Prepared under UHP Ar flow Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "12 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 3 h; Prepared under UHP Ar flow Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 340,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1845,7 +2096,7 @@
     {
      "parameter": "duration",
      "quote": "12 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 3 h; Prepared under UHP Ar flow Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 3,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -1853,14 +2104,14 @@
     {
      "parameter": "heating_mantle",
      "quote": "12 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 3 h; Prepared under UHP Ar flow Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
     {
      "parameter": "atmosphere",
      "quote": "12 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up, 340 °C, 3 h; Prepared under UHP Ar flow Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 2,
+     "step_order": 10,
      "value_text": "Prepared under UHP Ar flow",
      "parent_value": "N2-filled glovebox"
     }
@@ -1895,7 +2146,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "13 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 Injection of hot OLA (~300 °C) to flask containing metal precursors with excess CS2; 330 °C, 3h Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -1908,7 +2159,7 @@
     {
      "parameter": "temperature",
      "quote": "13 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 Injection of hot OLA (~300 °C) to flask containing metal precursors with excess CS2; 330 °C, 3h Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -1916,7 +2167,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "13 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 Injection of hot OLA (~300 °C) to flask containing metal precursors with excess CS2; 330 °C, 3h Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -1996,7 +2247,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "14 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 Injection of OLA/Pyd (Cp*CS2)2Ba/Zr(S2CNEtM e)4 to OLA+CS2 at 300 °C n/a 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -2009,7 +2260,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "14 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:62.5 Injection of OLA/Pyd (Cp*CS2)2Ba/Zr(S2CNEtM e)4 to OLA+CS2 at 300 °C n/a 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -2075,7 +2326,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "15 Cp*2Ba + Zr(NEtMe)4 + MePT 1:1:62.5 Cp*2Ba + Zr(NEtMe)4 dissolved in ink of 1:1 molar BA:MePT; 10 mmol MePT excess added; 330 °C, 30 min n/a 0.031 4 Thermowell 100 mL (Ceramic) Amorphous n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -2096,7 +2347,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "15 Cp*2Ba + Zr(NEtMe)4 + MePT 1:1:62.5 Cp*2Ba + Zr(NEtMe)4 dissolved in ink of 1:1 molar BA:MePT; 10 mmol MePT excess added; 330 °C, 30 min n/a 0.031 4 Thermowell 100 mL (Ceramic) Amorphous n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -2190,7 +2441,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "16 Cp*2Ba + Zr(NEtMe)4 + MePT+ DDT 1:1:62.5 Cp*2Ba + Zr(NEtMe)4 dissolved in ink of 1:1 molar BA:MePT; 10 mmol DDT excess added; 330 °C$, 2.5 h n/a 0.028 3.3 Thermowell 100 mL (Ceramic) Amorphous n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -2211,7 +2462,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "16 Cp*2Ba + Zr(NEtMe)4 + MePT+ DDT 1:1:62.5 Cp*2Ba + Zr(NEtMe)4 dissolved in ink of 1:1 molar BA:MePT; 10 mmol DDT excess added; 330 °C$, 2.5 h n/a 0.028 3.3 Thermowell 100 mL (Ceramic) Amorphous n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -2317,7 +2568,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "17 Cp*2Ba + Zr(NEtMe)4 + MePT + CS2 1:1:62.5 Cp*2Ba + Zr(NEtMe)4 dissolved in ink of 1:1 molar BA:MePT; OLA added followed by CS2; 330 °C, 3 h n/a 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -2330,7 +2581,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "17 Cp*2Ba + Zr(NEtMe)4 + MePT + CS2 1:1:62.5 Cp*2Ba + Zr(NEtMe)4 dissolved in ink of 1:1 molar BA:MePT; OLA added followed by CS2; 330 °C, 3 h n/a 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -2430,7 +2681,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "18 Cp*2Ba + Zr(NEtMe)4 + CS2 + DDT 1:1:62.5 Precursors “sulfurized” with CS2, dried, equimolar OLA+DDT added (10 mmol ea); 330 °C$, 4 h No; CS2 dried under UHP Ar flow 0.04 3.3 Thermowell 100 mL (Ceramic) Amorphous n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -2451,7 +2702,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "18 Cp*2Ba + Zr(NEtMe)4 + CS2 + DDT 1:1:62.5 Precursors “sulfurized” with CS2, dried, equimolar OLA+DDT added (10 mmol ea); 330 °C$, 4 h No; CS2 dried under UHP Ar flow 0.04 3.3 Thermowell 100 mL (Ceramic) Amorphous n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -2545,14 +2796,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "19 Cp*2Ba + Zr(NEtMe)4 + CS2 1.5:1:62.5 One-pot, heat-up, 330 °C, 1.5 h Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1.5:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "19 Cp*2Ba + Zr(NEtMe)4 + CS2 1.5:1:62.5 One-pot, heat-up, 330 °C, 1.5 h Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -2560,7 +2811,7 @@
     {
      "parameter": "duration",
      "quote": "19 Cp*2Ba + Zr(NEtMe)4 + CS2 1.5:1:62.5 One-pot, heat-up, 330 °C, 1.5 h Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 1.5,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -2568,7 +2819,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "19 Cp*2Ba + Zr(NEtMe)4 + CS2 1.5:1:62.5 One-pot, heat-up, 330 °C, 1.5 h Yes 0.04 4 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -2603,14 +2854,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "21 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:52 One-pot, heat-up, 330 °C%, 1 h No; CS2 dried under UHP Ar flow 0.25 1 Thermowell 100 mL (Ceramic) IP-BZS No",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:52",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "21 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:52 One-pot, heat-up, 330 °C%, 1 h No; CS2 dried under UHP Ar flow 0.25 1 Thermowell 100 mL (Ceramic) IP-BZS No",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -2618,7 +2869,7 @@
     {
      "parameter": "duration",
      "quote": "21 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:52 One-pot, heat-up, 330 °C%, 1 h No; CS2 dried under UHP Ar flow 0.25 1 Thermowell 100 mL (Ceramic) IP-BZS No",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 1,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -2626,7 +2877,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "21 Cp*2Ba + Zr(NEtMe)4 + CS2 1:1:52 One-pot, heat-up, 330 °C%, 1 h No; CS2 dried under UHP Ar flow 0.25 1 Thermowell 100 mL (Ceramic) IP-BZS No",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
@@ -2675,14 +2926,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "22 Cp*2Ba + Zr(NEtMe)4 + DETU 1:1:37.5 One-pot, heat-up, 330 °C%, 30 min n/a 0.08 2 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:37.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "22 Cp*2Ba + Zr(NEtMe)4 + DETU 1:1:37.5 One-pot, heat-up, 330 °C%, 30 min n/a 0.08 2 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -2690,14 +2941,14 @@
     {
      "parameter": "duration",
      "quote": "22 Cp*2Ba + Zr(NEtMe)4 + DETU 1:1:37.5 One-pot, heat-up, 330 °C%, 30 min n/a 0.08 2 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "30 min",
      "parent_value": "0.5-5 h"
     },
     {
      "parameter": "heating_mantle",
      "quote": "22 Cp*2Ba + Zr(NEtMe)4 + DETU 1:1:37.5 One-pot, heat-up, 330 °C%, 30 min n/a 0.08 2 Thermowell 100 mL (Ceramic) IP-BZS Yes",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     },
@@ -2760,7 +3011,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "23 BaCl2 + ZrCl4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.04 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -2779,7 +3030,7 @@
     {
      "parameter": "temperature",
      "quote": "23 BaCl2 + ZrCl4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.04 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -2787,7 +3038,7 @@
     {
      "parameter": "duration",
      "quote": "23 BaCl2 + ZrCl4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.04 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 3,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -2801,7 +3052,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "23 BaCl2 + ZrCl4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.04 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -2857,7 +3108,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "24 BaCl2 + ZrCl4 + CS2 1:1:15.6 Heat-up of metal precursors in OLA; injection of 1 mL OLA + 300 μL CS2 at 300 °C; heat up to 330 °C, dwell for 3 h n/a 0.16 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:15.6",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -2882,9 +3133,17 @@
     {
      "parameter": "heating_mantle",
      "quote": "24 BaCl2 + ZrCl4 + CS2 1:1:15.6 Heat-up of metal precursors in OLA; injection of 1 mL OLA + 300 μL CS2 at 300 °C; heat up to 330 °C, dwell for 3 h n/a 0.16 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
+    },
+    {
+     "parameter": "concentration",
+     "value_num": 0.16,
+     "unit": "M",
+     "value_text": "0.16 M (w.r.t. Zr)",
+     "parent_value": "0.04 M (Table S1 no. 1)",
+     "quote": "24 BaCl2 + ZrCl4 + CS2 1:1:15.6 Heat-up of metal precursors in OLA; injection of 1 mL OLA + 300 μL CS2 at 300 °C; heat up to 330 °C, dwell for 3 h n/a 0.16 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a"
     }
    ],
    "outcomes": [
@@ -2988,7 +3247,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "25 BaI2 + ZrI4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.08 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -3007,7 +3266,7 @@
     {
      "parameter": "temperature",
      "quote": "25 BaI2 + ZrI4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.08 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -3015,7 +3274,7 @@
     {
      "parameter": "duration",
      "quote": "25 BaI2 + ZrI4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.08 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 3,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -3027,17 +3286,17 @@
      "parent_value": "added before the OLA"
     },
     {
-     "parameter": "oleylamine",
-     "quote": "25 BaI2 + ZrI4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.08 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "value_num": 4,
-     "unit": "mL",
-     "value_text": "4 mL; concentration 0.08 (M, w.r.t. Zr)",
-     "parent_value": "4 mL"
+     "parameter": "concentration",
+     "value_num": 0.08,
+     "unit": "M",
+     "value_text": "0.08 M (w.r.t. Zr)",
+     "parent_value": "0.04 M (Table S1 no. 1)",
+     "quote": "25 BaI2 + ZrI4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.08 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a"
     },
     {
      "parameter": "heating_mantle",
      "quote": "25 BaI2 + ZrI4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.08 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -3093,7 +3352,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "26 Ba(acac)2 + Zr(acac)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.04 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -3112,7 +3371,7 @@
     {
      "parameter": "temperature",
      "quote": "26 Ba(acac)2 + Zr(acac)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.04 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -3120,7 +3379,7 @@
     {
      "parameter": "duration",
      "quote": "26 Ba(acac)2 + Zr(acac)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.04 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 3,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -3134,7 +3393,7 @@
     {
      "parameter": "heating_mantle",
      "quote": "26 Ba(acac)2 + Zr(acac)4 + CS2 1:1:62.5 One-pot, heat-up, 330 °C, 3 h; OLA added before CS2 n/a 0.04 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
     }
@@ -3190,7 +3449,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "27 Ba(acac)2 + Zr(acac)4 + CS2 1:1:15.6 Heat-up of metal precursors in OLA; injection of 1 mL OLA + 300 μL CS2 at 300 °C; heat up to 330 °C, dwell for 3 h n/a 0.16 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ba:Zr:S 1:1:15.6",
      "parent_value": "~21 times molar excess of CS2"
     },
@@ -3215,9 +3474,17 @@
     {
      "parameter": "heating_mantle",
      "quote": "27 Ba(acac)2 + Zr(acac)4 + CS2 1:1:15.6 Heat-up of metal precursors in OLA; injection of 1 mL OLA + 300 μL CS2 at 300 °C; heat up to 330 °C, dwell for 3 h n/a 0.16 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "Thermowell 100 mL (Ceramic)",
      "parent_value": "Glas-Col or Thermowell (varies)"
+    },
+    {
+     "parameter": "concentration",
+     "value_num": 0.16,
+     "unit": "M",
+     "value_text": "0.16 M (w.r.t. Zr)",
+     "parent_value": "0.04 M (Table S1 no. 1)",
+     "quote": "27 Ba(acac)2 + Zr(acac)4 + CS2 1:1:15.6 Heat-up of metal precursors in OLA; injection of 1 mL OLA + 300 μL CS2 at 300 °C; heat up to 330 °C, dwell for 3 h n/a 0.16 4 Thermowell 100 mL (Ceramic) Amorphous, some ZrO2 n/a"
     }
    ],
    "outcomes": [
@@ -3321,7 +3588,7 @@
     {
      "parameter": "temperature",
      "quote": "The heat-up reaction temperature was further raised to 380 °C by using an equimolar solution of OLA and octacosane (OCA)",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 380,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -3375,7 +3642,7 @@
     {
      "parameter": "temperature",
      "quote": "Even heat up in OCA or mineral oil to reaction temperatures approaching 380 °C resulted in IP-BZS.",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "approaching 380 °C",
      "parent_value": "290-345 °C"
     },
@@ -3425,7 +3692,7 @@
     {
      "parameter": "temperature",
      "quote": "285 °C | 12.3",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 285,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -3462,7 +3729,7 @@
     {
      "parameter": "temperature",
      "quote": "290 °C – 0 min | 0.669",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 290,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -3470,7 +3737,7 @@
     {
      "parameter": "duration",
      "quote": "290 °C – 0 min | 0.669",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 0,
      "unit": "min",
      "parent_value": "0.5-5 h"
@@ -3488,6 +3755,15 @@
      "property": "nucleation",
      "quote": "However, in the sample collected just after nucleation was observed to occur (as the reaction temperature reached 290 °C), significant and rapid nucleation and growth of the particles are observed, indicated by the well-defined pXRD pattern as compared to the other aliquot samples (Fig. 3).",
      "value_text": "significant and rapid nucleation and growth, well-defined pXRD pattern"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "Raman (Fig. S8a)",
+     "result": "un pic principal vers ~360 cm-1, le plus proche du pic principal de la phase Ruddlesden-Popper Ba4Zr3S10 ; signal masqué aux temps plus longs et aux températures plus hautes par le sous-produit luminescent",
+     "instrument": "Horiba/Jobin-Yvon HR800 Raman spectrometer",
+     "conditions": "632.8 nm wavelength excitation laser",
+     "quote": "We see one main peak at ~360 cm-1 which is closest to the main peak of the Ba4Zr3S10 Ruddlesden-Popper (RP) phase."
     }
    ]
   },
@@ -3507,7 +3783,7 @@
     {
      "parameter": "temperature",
      "quote": "290 °C – 30 min | 0.768",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 290,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -3515,7 +3791,7 @@
     {
      "parameter": "duration",
      "quote": "290 °C – 30 min | 0.768",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 30,
      "unit": "min",
      "parent_value": "0.5-5 h"
@@ -3547,7 +3823,7 @@
     {
      "parameter": "temperature",
      "quote": "325 °C | 0.757",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 325,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -3579,7 +3855,7 @@
     {
      "parameter": "temperature",
      "quote": "340 °C | 0.858",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 340,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -3611,14 +3887,14 @@
     {
      "parameter": "temperature",
      "quote": "Reflux – 30 min | 0.658",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "reflux temperature of the technical grade OLA (~345 °C)",
      "parent_value": "290-345 °C"
     },
     {
      "parameter": "duration",
      "quote": "Reflux – 30 min | 0.658",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 30,
      "unit": "min",
      "parent_value": "0.5-5 h"
@@ -3664,7 +3940,7 @@
     {
      "parameter": "repetitions",
      "quote": "2 washes: 1 st: Add 1 mL toluene + 10 mL IPA to reaction mixture. Vortex mix after adding each solvent, and centrifuge at 5k RPM for 5 min. Decant supernatant. 2 nd: Same as 1 st",
-     "step_order": 9,
+     "step_order": 17,
      "value_num": 2,
      "unit": "washes",
      "parent_value": "two to three times"
@@ -3672,7 +3948,7 @@
     {
      "parameter": "centrifuge_speed",
      "quote": "2 washes: 1 st: Add 1 mL toluene + 10 mL IPA to reaction mixture. Vortex mix after adding each solvent, and centrifuge at 5k RPM for 5 min. Decant supernatant. 2 nd: Same as 1 st",
-     "step_order": 10,
+     "step_order": 18,
      "value_text": "5k RPM",
      "parent_value": "14,000 rpm"
     }
@@ -3711,14 +3987,14 @@
     {
      "parameter": "wash_solvent",
      "quote": "2 washes: 1 st: Same as first step for Sample 1. 2 nd: Using decanted supernatant from Sample 1, add excess IPA (~10 additional mL), vortex mix, centrifuge for 10k RPM for 5 min",
-     "step_order": 9,
+     "step_order": 17,
      "value_text": "1st wash: 1 mL toluene + 10 mL IPA; 2nd wash: decanted supernatant of sample 1 + ~10 mL additional IPA",
      "parent_value": "toluene then IPA (antisolvent)"
     },
     {
      "parameter": "repetitions",
      "quote": "2 washes: 1 st: Same as first step for Sample 1. 2 nd: Using decanted supernatant from Sample 1, add excess IPA (~10 additional mL), vortex mix, centrifuge for 10k RPM for 5 min",
-     "step_order": 9,
+     "step_order": 17,
      "value_num": 2,
      "unit": "washes",
      "parent_value": "two to three times"
@@ -3726,7 +4002,7 @@
     {
      "parameter": "centrifuge_speed",
      "quote": "2 washes: 1 st: Same as first step for Sample 1. 2 nd: Using decanted supernatant from Sample 1, add excess IPA (~10 additional mL), vortex mix, centrifuge for 10k RPM for 5 min",
-     "step_order": 10,
+     "step_order": 18,
      "value_text": "5k RPM (1st wash), 10k RPM (2nd wash)",
      "parent_value": "14,000 rpm"
     }
@@ -3771,7 +4047,7 @@
     {
      "parameter": "repetitions",
      "quote": "2 washes: 1 st: Add 10 mL toluene + 10 mL IPA to reaction mixture. Vortex mix after adding each solvent, and centrifuge at 14k RPM for 5 min. Discard supernatant. 2 nd: Same as 1 st",
-     "step_order": 9,
+     "step_order": 17,
      "value_num": 2,
      "unit": "washes",
      "parent_value": "two to three times"
@@ -3779,7 +4055,7 @@
     {
      "parameter": "centrifuge_speed",
      "quote": "2 washes: 1 st: Add 10 mL toluene + 10 mL IPA to reaction mixture. Vortex mix after adding each solvent, and centrifuge at 14k RPM for 5 min. Discard supernatant. 2 nd: Same as 1 st",
-     "step_order": 10,
+     "step_order": 18,
      "value_num": 14,
      "unit": "k RPM",
      "parent_value": "14,000 rpm"
@@ -3818,7 +4094,7 @@
     {
      "parameter": "repetitions",
      "quote": "1 wash: Add 1 mL toluene + 10 mL MeOH to reaction mixture. Vortex mix after adding each solvent, and centrifuge at 14k RPM for 5 min. Discard supernatant. No second wash as MeOH appeared to be immiscible with the organosulfur gel species.",
-     "step_order": 9,
+     "step_order": 17,
      "value_num": 1,
      "unit": "wash",
      "parent_value": "two to three times"
@@ -3826,7 +4102,7 @@
     {
      "parameter": "centrifuge_speed",
      "quote": "1 wash: Add 1 mL toluene + 10 mL MeOH to reaction mixture. Vortex mix after adding each solvent, and centrifuge at 14k RPM for 5 min. Discard supernatant. No second wash as MeOH appeared to be immiscible with the organosulfur gel species.",
-     "step_order": 10,
+     "step_order": 18,
      "value_num": 14,
      "unit": "k RPM",
      "parent_value": "14,000 rpm"
@@ -3888,7 +4164,7 @@
     {
      "parameter": "repetitions",
      "quote": "1 wash: Add 1 mL toluene + 10 mL MeCN to reaction mixture. Vortex mix after adding each solvent, and centrifuge at 14k RPM for 5 min. Discard supernatant. No second wash as MeCN appeared to be immiscible with the organosulfur gel species",
-     "step_order": 9,
+     "step_order": 17,
      "value_num": 1,
      "unit": "wash",
      "parent_value": "two to three times"
@@ -3896,7 +4172,7 @@
     {
      "parameter": "centrifuge_speed",
      "quote": "1 wash: Add 1 mL toluene + 10 mL MeCN to reaction mixture. Vortex mix after adding each solvent, and centrifuge at 14k RPM for 5 min. Discard supernatant. No second wash as MeCN appeared to be immiscible with the organosulfur gel species",
-     "step_order": 10,
+     "step_order": 18,
      "value_num": 14,
      "unit": "k RPM",
      "parent_value": "14,000 rpm"
@@ -4108,6 +4384,11 @@
      "quote": "Fig. 4 Structural characterization of the other colloidal ABS3 compounds investigated in this study. The rows from the top to the bottom show data corresponding to BaTiS3 (a–c), BaHfS3 (d–f), α-SrZrS3 (g–i), and α-SrHfS3 (j–l) respectively with the left, middle, and right-side columns",
      "value_text": "(301) 2.7 Å, (111) 3.4 Å, (212) 2.6 Å",
      "from_figure": "Fig. 4h"
+    },
+    {
+     "property": "PL_before_thorough_washing",
+     "value_text": "peak location near 2 eV, nearly identical to the PL spectrum of IP-BZS, while the measured bandgap is much lower than 2 eV (Fig. S13)",
+     "quote": "Interestingly, both the IP-BZS and α-SrZrS3 nanoparticles prior to thorough washing showed nearly identical PL spectrum with a peak location near 2 eV"
     }
    ]
   },
@@ -4193,10 +4474,10 @@
    "quote": "More success was seen for SrHfS3 when performing reactions at higher concentrations (≥0.16 M; at least 4× the concentration of the standard protocol).",
    "variations": [
     {
-     "parameter": "oleylamine",
+     "parameter": "concentration",
      "quote": "More success was seen for SrHfS3 when performing reactions at higher concentrations (≥0.16 M; at least 4× the concentration of the standard protocol).",
      "value_text": "reaction concentration ≥0.16 M, at least 4× the standard (OLA volume not stated)",
-     "parent_value": "4 mL"
+     "parent_value": "standard protocol concentration"
     }
    ],
    "succeeded": true,
@@ -4236,14 +4517,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "1 SrxTiS3 (iPr3Cp)2Sr + Ti(NMe2)4 + CS2 1.2 One-pot, heat-up; 330 °C, 3 h Yes 0.04 4 SrS + TiS2",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "AE/IVB ratio 1.2",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "1 SrxTiS3 (iPr3Cp)2Sr + Ti(NMe2)4 + CS2 1.2 One-pot, heat-up; 330 °C, 3 h Yes 0.04 4 SrS + TiS2",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -4251,7 +4532,7 @@
     {
      "parameter": "duration",
      "quote": "1 SrxTiS3 (iPr3Cp)2Sr + Ti(NMe2)4 + CS2 1.2 One-pot, heat-up; 330 °C, 3 h Yes 0.04 4 SrS + TiS2",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 3,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -4320,12 +4601,12 @@
     {
      "parameter": "molar_ratio",
      "quote": "2 SrxTiS3 (iPr3Cp)2Sr + Ti(NMe2)4 + CS2 1.2 Hot injection of all precursors; 330 °C, 5 h Yes 0.04 4 SrS + TiS2",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "AE/IVB ratio 1.2",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
-     "parameter": "oleylamine",
+     "parameter": "addition_method",
      "quote": "2 SrxTiS3 (iPr3Cp)2Sr + Ti(NMe2)4 + CS2 1.2 Hot injection of all precursors; 330 °C, 5 h Yes 0.04 4 SrS + TiS2",
      "value_text": "hot injection of all precursors",
      "parent_value": "one-pot heat-up"
@@ -4431,14 +4712,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "3 SrxTiS3 (iPr3Cp)2Sr + Ti(NMe2)4 + DDT 1.2 One-pot, heat-up; 330 °C, 5 h and 24 h n/a 0.04 4 Amorphous",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "AE/IVB ratio 1.2",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "3 SrxTiS3 (iPr3Cp)2Sr + Ti(NMe2)4 + DDT 1.2 One-pot, heat-up; 330 °C, 5 h and 24 h n/a 0.04 4 Amorphous",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -4446,7 +4727,7 @@
     {
      "parameter": "duration",
      "quote": "3 SrxTiS3 (iPr3Cp)2Sr + Ti(NMe2)4 + DDT 1.2 One-pot, heat-up; 330 °C, 5 h and 24 h n/a 0.04 4 Amorphous",
-     "step_order": 7,
+     "step_order": 15,
      "value_text": "5 h and 24 h",
      "parent_value": "0.5-5 h"
     }
@@ -4520,14 +4801,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "4 CaZrS3 CaiPr-FA2 + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up; 330 °C, 5 h Yes 0.04 4 CaS, some ZrO2",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ca:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "4 CaZrS3 CaiPr-FA2 + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up; 330 °C, 5 h Yes 0.04 4 CaS, some ZrO2",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -4535,7 +4816,7 @@
     {
      "parameter": "duration",
      "quote": "4 CaZrS3 CaiPr-FA2 + Zr(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up; 330 °C, 5 h Yes 0.04 4 CaS, some ZrO2",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 5,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -4586,7 +4867,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "5 CaZrS3 CaiPr-FA2 + Zr(NEtMe)4 + CS2 1:1:62.5 Heat-up of OLA+CS2+ Zr(NEtMe)4 to 330 °C. Inject CaiPr-FA2 via Merlic adapter at 150 °C during heat up, dwell for 3 h at 330 °C Yes 0.04 4 CaS, some ZrO2",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ca:Zr:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     }
@@ -4698,14 +4979,14 @@
     {
      "parameter": "molar_ratio",
      "quote": "6 CaHfS3 CaiPr-FA2 + Hf(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up; 330 °C, 5 h Yes 0.04 4 CaS, some HfO2",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ca:Hf:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     },
     {
      "parameter": "temperature",
      "quote": "6 CaHfS3 CaiPr-FA2 + Hf(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up; 330 °C, 5 h Yes 0.04 4 CaS, some HfO2",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 330,
      "unit": "°C",
      "parent_value": "290-345 °C"
@@ -4713,7 +4994,7 @@
     {
      "parameter": "duration",
      "quote": "6 CaHfS3 CaiPr-FA2 + Hf(NEtMe)4 + CS2 1:1:62.5 One-pot, heat-up; 330 °C, 5 h Yes 0.04 4 CaS, some HfO2",
-     "step_order": 7,
+     "step_order": 15,
      "value_num": 5,
      "unit": "h",
      "parent_value": "0.5-5 h"
@@ -4782,7 +5063,7 @@
     {
      "parameter": "molar_ratio",
      "quote": "7 CaHfS3 CaiPr-FA2 + Hf(NEtMe)4 + CS2 1:1:62.5 Heat-up of OLA+CS2+ Zr(NEtMe)4 to 330 °C. Inject CaiPr-FA2 via Merlic adapter at 175 °C during heat up, dwell for 3 h at 330 °C Yes 0.04 4 CaS, some HfO2",
-     "step_order": 3,
+     "step_order": 11,
      "value_text": "Ca:Hf:S 1:1:62.5",
      "parent_value": "~21 times molar excess of CS2"
     }
@@ -5044,7 +5325,7 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "SP-BZS nanoparticles (route BZS_HI)",
+     "name": "SP-BZS nanoparticles (route S1_run01)",
      "formula": "BaZrS3",
      "role": "intermediate",
      "quote": "films were coated from nanoparticle inks at a concentration of 100 mg/mL from 1-hexanethiol.",
@@ -5151,11 +5432,15 @@
        "quote": "Between each layer, films were annealed for 2 min at 350 °C to volatilize any lingering ink residues.",
        "value_num": 2,
        "unit": "min"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "which were annealed in a N2-filled glovebox under the same annealing conditions as the blade-coated film (350 °C for at least 1 min)",
+       "value_text": "N2-filled glovebox"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "atmosphere",
       "heating_rate"
      ]
     }
@@ -5284,6 +5569,36 @@
    "steps": [
     {
      "order": 1,
+     "action": "dry",
+     "description": "Poudre de soufre : les flocons de soufre sont broyés en fine poudre au mortier, puis séchés à température ambiante sous vide une nuit (~12-16 h) avant usage.",
+     "quote": "Sulfur flakes were ground into a fine powder with a mortar and pestle and dried at room temperature in vacuo overnight (~12-16 h) before use.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Sulfur flakes were ground into a fine powder with a mortar and pestle and dried at room temperature in vacuo overnight (~12-16 h) before use.",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "duration",
+       "quote": "Sulfur flakes were ground into a fine powder with a mortar and pestle and dried at room temperature in vacuo overnight (~12-16 h) before use.",
+       "value_text": "overnight (~12-16 h)"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "Sulfur flakes were ground into a fine powder with a mortar and pestle and dried at room temperature in vacuo overnight (~12-16 h) before use.",
+       "value_text": "in vacuo"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "mortar and pestle",
+       "detail": null,
+       "quote": "Sulfur flakes were ground into a fine powder with a mortar and pestle"
+      }
+     ]
+    },
+    {
+     "order": 2,
      "action": "load",
      "description": "Introduire le film, la poudre de soufre séchée et HfH2 dans une ampoule en borosilicate.",
      "quote": "For sulfurizations, the coated film was inserted along with ~0.2 mmol of dried S powder (~6.4 mg) and ~0.02 mmol of HfH2 (~3.6 mg)—serving as the “oxygen trap”—into a borosilicate glass ampule for furnace sulfurization.",
@@ -5297,7 +5612,7 @@
      ]
     },
     {
-     "order": 2,
+     "order": 3,
      "action": "evacuate",
      "description": "Raccorder l'ampoule à une rampe Schlenk sous Ar, purger la tête, puis évacuer l'ampoule.",
      "quote": "Once all components were in the ampule, the ampule was attached to an Ar-purged Schlenk line where its Schlenk line headspace was purged, ampule was evacuated to a pressure of <200 mtorr, and then flame sealed using a butane/air torch.",
@@ -5317,7 +5632,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "seal",
      "description": "Sceller l'ampoule à la flamme (chalumeau butane/air).",
      "quote": "Once all components were in the ampule, the ampule was attached to an Ar-purged Schlenk line where its Schlenk line headspace was purged, ampule was evacuated to a pressure of <200 mtorr, and then flame sealed using a butane/air torch.",
@@ -5331,7 +5646,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "anneal",
      "description": "Sulfurer dans un four tubulaire à 575 °C pendant 2 h.",
      "quote": "After sealing, sulfurization was conducted in a tubular furnace at a temperature of 575 °C for 2 h.",
@@ -5523,7 +5838,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "En montée en température sous ~330 °C, l'IP-BZS est toujours obtenue ; vers 340-345 °C la phase SP-BZS n'apparaît qu'au hasard de quelques essais (lignes 1 et 3 du tableau S1, signalées comme non répétées ou inhomogènes en TEM). La montée en huile minérale ou en OLA/octacosane jusqu'à ~380 °C donne encore l'IP-BZS, alors que l'injection à chaud au-dessus de 365 °C donne SP-BZS (gap 1,89 eV contre 1,59 eV pour l'IP-BZS). Remplacer CS2 par MePT seul, DDT ou MePT+DDT donne des matériaux amorphes ; DETU ou EITC donnent l'IP-BZS ; les précurseurs BaCl2/ZrCl4, BaI2/ZrI4 et acac donnent des amorphes avec un peu de ZrO2. Les variantes Sr, Ca, Ti, Hf donnent soit une phase aiguille α (SrZrS3, SrHfS3), soit une phase hexagonale (BaTiS3), soit une phase irrégulière (BHS), soit des binaires (SrS + TiS2, CaS + oxyde)."
+   "text": "En montée en température sous ~330 °C, l'IP-BZS est toujours obtenue ; vers 340-345 °C la phase SP-BZS n'apparaît qu'au hasard de quelques essais : la ligne 1 du tableau S1 (340 °C, 5 h) et la ligne 3 (consigne 330 °C, température réelle incertaine d'après la note %), toutes deux en calotte textile Glas-Col et signalées comme non répétées ou inhomogènes en TEM. Cela ne contredit qu'en apparence la phrase « en dessous de ~330 °C l'IP-BZS est toujours obtenue », qui porte sur les températures mesurées. La montée en huile minérale ou en OLA/octacosane jusqu'à ~380 °C donne encore l'IP-BZS, alors que l'injection à chaud au-dessus de 365 °C donne SP-BZS (gap 1,89 eV contre 1,59 eV pour l'IP-BZS). Remplacer CS2 par MePT seul, DDT ou MePT+DDT donne des matériaux amorphes ; DETU ou EITC donnent l'IP-BZS ; les précurseurs BaCl2/ZrCl4, BaI2/ZrI4 et acac donnent des amorphes avec un peu de ZrO2. Les variantes Sr, Ca, Ti, Hf donnent soit une phase aiguille α (SrZrS3, SrHfS3), soit une phase hexagonale (BaTiS3), soit une phase irrégulière (BHS), soit des binaires (SrS + TiS2, CaS + oxyde)."
   },
   {
    "type": "tendance_observee",
@@ -5540,25 +5855,55 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Les auteurs attribuent la formation préférentielle de SP-BZS par montée en température, quand elle a lieu, à la vitesse de chauffe de la calotte Glas-Col (plus rapide que le Thermowell) ; ils parlent d'hypothèse, non testée directement.",
+   "text": "Les auteurs attribuent la formation préférentielle de SP-BZS par montée en température, quand elle a lieu, à la vitesse de chauffe de la calotte Glas-Col (plus rapide que le Thermowell) ; ils parlent d'hypothèse, non testée directement. La note @ du tableau S1 chiffre l'écart : la calotte textile atteint la température de palier en environ la moitié du temps de la calotte céramique, seule indication de vitesse de chauffe de l'article.",
    "quote": "From these results, we can see that SP-BZS appears to be achievable from a simple one- pot, heat-up, but we believe heating rate to be the primary factor involved."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les deux calottes chauffantes ne chauffent pas à la même vitesse : la calotte textile Glas-Col (25 mL, limitée à 400 °C) atteint la température de palier en environ la moitié du temps de la calotte céramique Thermowell (100 mL, limitée à 550 °C). Les auteurs pensent que cette différence de vitesse de chauffe a pu favoriser la formation de SP-BZS avec la calotte textile, sans que ce soit clair.",
+   "quote": "The fabric mantles were observed to heat up to the prescribed dwell temperature in roughly half the time as the ceramic mantles."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "La stabilité colloïdale du tableau S1 est jugée de façon qualitative, surtout d'après la sédimentation visible pendant une nuit. Les auteurs relient les écarts à la concentration de réaction : instable nettement au-dessus de 0,08 M (lignes 3 à 0,24 M et 21 à 0,25 M), stable à 0,08 M et en dessous.",
+   "quote": "Observations listed here on colloidal stability are purely qualitative. Our determination is based mostly on if significant sedimentation was observed to occur overnight. Major differences in colloidal stability were a result of reaction concentrations (concentrations significantly above 0.08 M led to colloidally unstable materials, whereas concentrations of 0.08 M or below led to colloidally stable materials)."
   },
   {
    "type": "conclusion_auteurs",
    "route": "BZS_HI",
-   "text": "Les auteurs retiennent l'injection à chaud dans l'huile minérale au-dessus de 365 °C (consigne 370-375 °C) comme la voie fiable vers SP-BZS, qui sert ensuite à la mesure du gap et au film.",
+   "text": "Les auteurs retiennent l'injection à chaud dans l'huile minérale au-dessus de 365 °C (consigne 370-375 °C) comme la voie fiable vers SP-BZS, qui sert ensuite à la mesure du gap (le film à la lame, lui, vient d'un essai en montée en température, voir la voie BZS_film).",
    "quote": "On the other hand, hot injections at temperatures greater than 365 °C reproducibly resulted in the synthesis of SP-BZS as shown by the pXRD patterns shown in Fig. 1."
   },
   {
    "type": "mecanisme_auteurs",
    "route": "BZS_HU",
-   "text": "Les auteurs expliquent que CS2 s'insère dans les liaisons métal-ligand pour former des dithiocarbamates, puis que le CS2 en excès réagit avec l'oléylamine pour donner le sel oléyldithiocarbamate-oléylammonium, seconde source de soufre jugée indispensable. À la montée en température, ils décrivent une décomposition vers 100-120 °C, une solution rouge monophasée entre 130 et 270 °C, puis une seconde décomposition vers 270-290 °C avec nucléation (solution rouge foncé opaque).",
+   "text": "Les auteurs expliquent que CS2 s'insère dans les liaisons métal-ligand pour former des dithiocarbamates, puis que le CS2 en excès réagit avec l'oléylamine pour donner le sel oléyldithiocarbamate-oléylammonium, seconde source de soufre jugée indispensable.",
    "quote": "Upon addition of OLA to the excess CS2, the oleyldithiocarbamate–oleylammonium salt was formed, creating an additional sulfur source which was shown to be crucial for our syntheses."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "BZS_HU",
+   "text": "À la montée en température, les auteurs décrivent : le solide OLA–CS2 fond vers 50-60 °C ; un bullage jaune vers 100-120 °C (début de décomposition des précurseurs, intermédiaire probable) ; une solution rouge monophasée entre 130 et 270 °C ; vers 270-290 °C une seconde décomposition avec léger bullage, la solution devenant rouge foncé opaque (nucléation) et des espèces soufrées condensant dans le réfrigérant.",
+   "quote": "(2) Upon heating to ∼100–120 °C, vigorous yellow bubbling was observed, likely the result of some initial precursor decomposition and formation of an intermediate species. (3) Between ∼130 and 270 °C, a transparent, vibrant red to dark red solution was observed. By this point, it was clear that the reaction solution was entirely single-phase. (4) Between temperature readings of ∼270–290 °C—depending on how well the in situ thermocouple was in contact with the reaction solution—a second decomposition event occurred in which mild bubbling was observed. At this point, the solution turned into an opaque, dark red (indicating nucleation of nanoparticles), and condensation of sulfur-containing species (noted by its green and yellow color) was observed in the condenser."
   },
   {
    "type": "mecanisme_analyse",
    "route": "BZS_HU",
-   "text": "Hypothèse de chimiste : les dithiocarbamates métalliques (Cp*CS2)2Ba et Zr(S2CNEtMe)4 se décomposent probablement en sulfures binaires (BaS, ZrS2 ou espèces apparentées) qui réagissent ensuite pour donner BaZrS3, avec perte de CS2 et de fragments organiques. La phase IP-BZS, qui contient des pics supplémentaires, correspondrait probablement à un produit cinétique formé pendant la montée lente, tandis que l'injection à chaud, en créant une sursaturation brutale à plus de 365 °C, favoriserait la phase pérovskite Pnma. Le sel dithiocarbamate d'oléylammonium libère probablement du soufre et de l'oléylamine à haute température, ce qui expliquerait le sous-produit organosoufré luminescent."
+   "text": "Hypothèse de chimiste, non démontrée par les auteurs : CS2 s'insère dans les liaisons Zr–N et Ba–C pour donner des dithiocarbamates et dithiocarboxylates, et le CS2 en excès se fixe sur l'oléylamine sous forme de sel oléyldithiocarbamate d'oléylammonium, ce qui explique la prise en masse initiale. Au chauffage, ce sel et les dithiocarbamates libéreraient probablement un isothiocyanate et du H2S (le bullage vers 100-120 °C) ; l'isothiocyanate et l'amine donneraient une thiourée N,N'-dioléylique, qui se décomposerait vers 270-290 °C en H2S et en guanidine (second bullage). Cette libération brutale de H2S coïnciderait avec la nucléation observée à 285-290 °C. Les germes formés à ce moment prendraient la phase IP-BZS, piégée cinétiquement jusqu'à 380 °C en montée lente ; l'essai OLA + thiourée qui donne le même sous-produit va dans le sens d'un intermédiaire de type thiourée commun. Le sel dithiocarbamate et les dérivés organosoufrés expliqueraient aussi le sous-produit luminescent."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "BZS_HI",
+   "text": "Hypothèse de chimiste : lors de l'injection au-dessus de ~365 °C, tous les intermédiaires soufrés (dithiocarbamates, sel d'oléylammonium, thiourée) se décomposeraient à la fois. La sursaturation brutale qui en résulte ferait nucléer directement la pérovskite Pnma, sans passer par la fenêtre de 270-290 °C où naît l'IP-BZS. Cette vue est compatible avec l'explication des auteurs (IP-BZS « supprimée » à haute température) mais ne la prouve pas ; l'absence de transformation IP vers SP en montée lente jusqu'à 380 °C indique que l'IP-BZS est cinétiquement piégée.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "OLA_CS2_byproduct",
+   "text": "Hypothèse de chimiste : l'oléylamine et CS2 forment le sel RNHCS2− RNH3+, qui donnerait à chaud RNCS et H2S, puis la thiourée (RNH)2CS ; vers 270 °C celle-ci libérerait H2S et donnerait une guanidine ou un carbodiimide, et le soufre libéré pourrait s'additionner en partie sur la double liaison de l'oléyle. Ce mélange de guanidines, de thiourées et d'oligomères soufrés formerait le gel rouge luminescent ; l'essai OLA + thiourée, qui donne le même produit, désigne la thiourée et ses produits de décomposition comme intermédiaire commun.",
+   "quote": null
   },
   {
    "type": "mecanisme_auteurs",
@@ -5575,12 +5920,18 @@
   {
    "type": "securite_analyse",
    "route": "BZS_HU",
-   "text": "Le CS2 est extrêmement inflammable (point d'éclair d'environ −30 °C, auto-inflammation vers 90 °C) et neurotoxique ; son emploi en excès (~21 fois la stœchiométrie) dans de la verrerie à plus de 300 °C impose hotte, absence de source d'ignition et piège sur la rampe. Cp*2Ba et les amidures de Zr, Hf et Ti sont sensibles à l'air et à l'eau et peuvent s'enflammer ou libérer des amines inflammables ; l'article ne décrit pas leur neutralisation. La décomposition à chaud des dithiocarbamates libère probablement du H2S et des composés soufrés toxiques (condensation de soufre dans le réfrigérant). La pyrolyse de l'oléylamine à 345-380 °C, la mise sous vide d'une verrerie chaude et le scellage à la flamme des ampoules (S + HfH2, HfH2 étant un hydrure pyrophorique divisé) demandent des écrans de protection."
+   "text": "Le CS2 est extrêmement inflammable (point d'éclair d'environ −30 °C, auto-inflammation vers 90 °C) et neurotoxique ; il est employé en large excès (~21 fois la quantité stœchiométrique de soufre, comptée en atomes de S) dans une verrerie ouverte à plus de 300 °C, sur des calottes chauffantes à plus de 300 °C : hotte, aucune source d'ignition et piège sur la rampe sont indispensables. La décomposition des dithiocarbamates et du sel d'oléylammonium libère du H2S (bullages vers 100-120 °C puis 270-290 °C) et du soufre qui se dépose dans le réfrigérant et peut le boucher (surpression) : prévoir une sortie de rampe vers un bulleur et un piège à H2S sous hotte. Cp*2Ba et les amidures de Zr, Hf et Ti sont sensibles à l'air et à l'eau ; Zr(NEtMe)4 liquide est très inflammable et libère des gaz inflammables au contact de l'eau. L'article ne décrit pas leur neutralisation. La pyrolyse de l'oléylamine à 345-380 °C et la mise sous vide d'une verrerie chaude demandent des écrans de protection."
   },
   {
    "type": "securite_analyse",
    "route": "BZS_HI",
-   "text": "L'injection à chaud d'un mélange visqueux ou solide chauffé au pistolet thermique dans un solvant à 370-380 °C présente un risque de projection et de surpression (dégazage rapide, CS2 volatil de point d'ébullition 46 °C) ; le chauffage de l'adaptateur de Merlic doit rester doux, comme l'indiquent les auteurs, pour éviter une décomposition prématurée."
+   "text": "Dans l'injection à chaud, le mélange visqueux ou solide est chauffé au pistolet thermique, dont la buse dépasse largement la température d'auto-inflammation du CS2 (~90 °C) : toute fuite de vapeur peut s'enflammer, et les auteurs ne le signalent pas. L'injection dans un solvant à 370-380 °C libère d'un coup le CS2 resté libre (environ 1 à 2 mmol, soit une estimation de 50 à 100 mL de gaz, à comparer au ballon de 25 mL) et du H2S : le montage doit garder une sortie libre vers un bulleur, jamais un système fermé. Le chauffage de l'adaptateur de Merlic doit rester doux, comme l'indiquent les auteurs, pour éviter une décomposition prématurée ; le protocole suppose l'adaptateur coudé à ~90° (modification par un souffleur de verre)."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "OLA_CS2_byproduct",
+   "text": "Le chauffage de l'oléylamine avec CS2 à 300 °C pendant 3 h dégage en continu du H2S et du CS2 (auto-inflammation vers 90 °C) : réaliser l'essai sous hotte avec un piège sur la sortie de gaz.",
+   "quote": null
   },
   {
    "type": "limite_reproductibilite",
@@ -5590,12 +5941,12 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Figures de l'annexe non disponibles dans le dépôt (seules leurs légendes le sont) : Fig. S7, S8, S10, S13, S15, S16, S17. Les résultats qu'elles portent (diffractogrammes, PL, MEB) ne sont donc extraits que par ce que dit le texte. Aucun tableau d'annexe n'est absent : les tableaux S1, S2 et S3 sont dans le fichier."
+   "text": "Figures de l'annexe non disponibles dans le dépôt (seules leurs légendes le sont) : Fig. S7, S8, S10, S12, S13, S15, S16, S17. Les résultats qu'elles portent (diffractogrammes, PL, MEB) ne sont donc extraits que par ce que dit le texte. Aucun tableau d'annexe n'est absent : les tableaux S1, S2 et S3 sont dans le fichier."
   },
   {
    "type": "limite_reproductibilite",
    "route": "BZS_film",
-   "text": "Le film est décrit en quelques lignes : volume d'encre, vitesse et écartement de la lame, température du substrat, atmosphère du recuit entre couches et chauffage ne sont pas donnés. Pour les films coulés à la goutte, les auteurs écrivent « at least 1 min » de recuit à 350 °C, contre 2 min entre couches pour le film à la lame."
+   "text": "Le film est décrit en quelques lignes : volume d'encre, vitesse et écartement de la lame, température du substrat et vitesse de chauffe du recuit ne sont pas donnés ; l'atmosphère du recuit (boîte à gants sous N2) n'est écrite que par renvoi, dans la légende de la Fig. S17. Pour les films coulés à la goutte, les auteurs écrivent « at least 1 min » de recuit à 350 °C, contre 2 min entre couches pour le film à la lame."
   },
   {
    "type": "limite_reproductibilite",
@@ -5611,7 +5962,7 @@
   {
    "type": "securite_analyse",
    "route": "BZS_sulf",
-   "text": "Une ampoule scellée à la flamme contenant du soufre et un hydrure (HfH2) chauffée à 575 °C monte en pression (vapeur de soufre, H2S formé par réaction S + HfH2) ; elle peut éclater au chauffage ou à l'ouverture. Il faut la chauffer dans un four tubulaire protégé, la laisser refroidir complètement et l'ouvrir sous hotte. HfH2 en poudre fine est inflammable."
+   "text": "La pression interne d'une ampoule scellée sous vide avec ~6 mg de soufre et HfH2 et chauffée à 575 °C reste estimée sous 1 bar (vapeur de soufre et H2S formé par S + HfH2) : le risque d'éclatement au chauffage est faible. Le danger principal est l'ouverture de l'ampoule (H2S, soufre) : la laisser refroidir complètement et l'ouvrir sous hotte. Le four tubulaire doit rester protégé et HfH2 en poudre fine est inflammable ; le verre borosilicaté travaille au-dessus de son point de recuit à 575 °C et peut fluer légèrement sous vide."
   },
   {
    "type": "securite_analyse",
@@ -5622,6 +5973,42 @@
    "type": "securite_analyse",
    "route": "SrZrS3_HU",
    "text": "(CpiPr3)2Sr est un organométallique du strontium sensible à l'air et à l'eau ; il se manipule en boîte à gants, comme Cp*2Ba."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BZS_HI",
+   "text": "Conditions d'inertage que les auteurs jugent nécessaires pour obtenir SP-BZS de façon reproductible : boîte à gants très inerte (faible teneur en O2/H2O), dessiccant frais sur la ligne d'argon et argon UHP (un argon de qualité standard peut probablement suffire avec un bon piégeage de O2/H2O). Sans cela, ils n'ont pas pu répliquer SP-BZS, ce qu'ils attribuent à l'oxophilie des précurseurs, surtout ceux de Zr ; avec ces précautions, ils l'ont re-synthétisé sans difficulté. Cela explique aussi que l'essai n° 12 du tableau S1 (préparation sous flux d'Ar UHP) soit présenté comme une variation.",
+   "quote": "During verification of our methods, we found difficulties in replicating the SP-BZS nanoparticles if we were not preparing our reactions under rigorously dry/air-free conditions which we believe was primarily due to the high oxophilicty of the metal precursors used in these reactions, especially the Zr precursors. This includes, but is not necessarily limited to, if our experiments were set up in a glove box with elevated O2/H2O levels, if our in-line desiccant to the Schlenk line (on the Ar line) was hydrated, and if the Ar being supplied was not UHP Ar. With adequate O2/H2O trapping, standard grade Ar can likely be used. With all of these things accounted for (highly inert glove box, fresh/dry desiccant, UHP Ar in use), we were able to re-synthesize SP- BZS without issue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BZS_HU",
+   "text": "L'exclusion d'une phase de type Ruddlesden–Popper pour l'IP-BZS n'est pas démontrée : le seul pic Raman (~360 cm-1) est le plus proche de celui de Ba4Zr3S10, le gap de 1,59 eV tombe entre celui de BaZrS3 et ceux des phases RP calculées (Li et al., Phys. Rev. Materials, 2019), et le décalage constant de 0,3° des pics de pXRD aux trois angles ressemble à une erreur de zéro ou de hauteur d'échantillon plus qu'à une contraction de maille, faute d'étalon interne. La nature de l'IP-BZS (intercroissance RP, mélange de phases, écart de stœchiométrie Ba/Zr) reste ouverte, et la valeur de 1,59 eV n'est pas rattachée à une ligne précise du tableau S1.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SrZrS3_HU",
+   "text": "Le confinement quantique invoqué pour expliquer le gap de 1,69 eV de α-SrZrS3 (contre 1,52-1,53 eV en massif, Niu et al., Adv. Mater., 2017) ne tient pas avec les chiffres de l'article : une longueur de de Broglie de 2,14 nm pour des aiguilles de 5-10 nm donne un confinement de quelques meV, loin des 160-170 meV observés, et les auteurs écartent ce même confinement pour BaZrS3 sur un rapport de tailles du même ordre. Le gap ajusté par Kubelka–Munk sur un fond diffusant, la présence du sous-produit organosoufré ou un écart de stœchiométrie sont des explications au moins aussi plausibles.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BZS_film",
+   "text": "Le film continu de BaZrS3 présenté comme le premier film entièrement en solution semble fait avec des nanoparticules SP-BZS de l'essai n° 1 du tableau S1 (montée en température, 340 °C, 5 h, calotte Glas-Col), d'après les légendes des Fig. S16 et S17, et non avec la voie par injection à chaud donnée comme fiable. Cet essai est signalé comme non répété (note # du tableau S1) : le résultat repose donc sur une seule synthèse, et le texte principal n'indique pas l'origine des nanoparticules.",
+   "quote": "The SP-BZS sample here was synthesized from heat-up conditions which were not shown to reliably synthesize the SP-BZS phase. It is from the first experiment detailed in Table S1."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Incohérences à vérifier dans l'annexe : la concentration de 0,04 M écrite à la ligne 18 du tableau S1 ne correspond pas aux volumes (3,3 mL d'OLA et 10 mmol de DDT donnent environ 0,028 M, comme à la ligne 16) ; l'excès « ~21 times molar excess of CS2 » compte les atomes de soufre (environ 10 fois en molécules de CS2) ; la ligne 7 du tableau S2 (cible CaHfS3) écrit Zr(NEtMe)4, probablement recopié de la ligne 5, et HfO2 et ZrO2 monocliniques sont presque indiscernables en pXRD.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves d'interprétation : l'essai n° 21 (CS2 séché, sans excès, mais 0,25 M dans 1 mL d'OLA) donne l'IP-BZS cristallisée alors que l'essai n° 4 (CS2 séché, 0,04 M) est amorphe, ce qui nuance le rôle « crucial » du sel dithiocarbamate (la quantité de soufre disponible par volume compte aussi) ; la recommandation de laver avec un faible rapport antisolvant/solvant contredit le protocole standard (1-3 mL de toluène pour 12-18 mL d'IPA) ; l'huile minérale, dont l'intervalle d'ébullition dépend du lot, rend la température atteinte à l'injection variable.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -6229,11 +6616,20 @@
     "Fig. S13"
    ],
    "why": "échantillons de caractérisation PL, même matériau que BZS_HU et SrZrS3_HU"
+  },
+  {
+   "sample": "BHS nanoparticles from a hot-injection experiment (second UV-vis spectrum)",
+   "defined_in": "Fig. S12 caption",
+   "route": null,
+   "results_in": [
+    "Fig. S12a"
+   ],
+   "why": "aucun protocole propre ; on ne sait pas s'il s'agit de l'essai BHS_HI (Fig. S10a) ; sa bande interdite, lue sur une figure absente du dépôt, diffère de celle de la Fig. 6 (variation de lot à lot selon les auteurs)"
   }
  ],
  "doubts": [
   {
-   "where": "BZS_HU, étape 7 (consigne)",
+   "where": "BZS_HU, étape 15 (consigne)",
    "issue": "Les Méthodes SI donnent une plage (« 290-345 °C for 0.5-5 h ») pour la montée en température ; elle est gardée en value_text sur la voie de base, et chaque ligne du tableau S1 porte sa température et sa durée en variation. Aucune valeur unique n'est présentée par les auteurs comme « le protocole standard »."
   },
   {
@@ -6250,7 +6646,7 @@
   },
   {
    "where": "Table S1 no 8",
-   "issue": "Les étapes 3 (CS2) et 4 (OLA) de la voie de base sont dans l'ordre inverse pour cette ligne (« 600 μL CS2 added after OLA addition to metal precursors »). L'ordre est consigné en variation sur le réactif CS2 ; le SI écrit que l'ordre d'addition n'était pas crucial."
+   "issue": "Les étapes 11 (CS2) et 12 (OLA) de la voie de base sont dans l'ordre inverse pour cette ligne (« 600 μL CS2 added after OLA addition to metal precursors »). L'ordre est consigné en variation sur le réactif CS2 ; le SI écrit que l'ordre d'addition n'était pas crucial."
   },
   {
    "where": "Table S1 nos 3, 21, 22 (330 °C%)",
@@ -6289,12 +6685,44 @@
    "issue": "Les aliquotes de 285 à reflux viennent d'une première expérience et ceux à 290 °C d'une seconde (légende de la Fig. 3) ; ce sont des prélèvements d'une même réaction, rattachés à la voie de base comme conditions d'arrêt (température et durée)."
   },
   {
-   "where": "BZS_film, atmosphère du recuit",
-   "issue": "L'article dit que les films sont coulés dans une boîte à gants sous N2 et que les films coulés à la goutte ont été recuits en boîte à gants dans les mêmes conditions que le film à la lame, sans écrire l'atmosphère du recuit entre couches : déclarée non citée pour le film à la lame."
+   "where": "BZS_film, atmosphère du recuit entre couches",
+   "issue": "Les Méthodes disent que les films sont coulés dans une boîte à gants sous N2 ; la légende de la Fig. S17 écrit que les films coulés à la goutte ont été recuits dans une boîte à gants sous N2 « under the same annealing conditions as the blade-coated film ». L'atmosphère du recuit du film à la lame est donc reprise par renvoi (citation : la phrase de la légende), non écrite pour lui directement."
   },
   {
-   "where": "Variations « additional sulfur source » (S1_run03, S1_run17)",
-   "issue": "L'ajout de MePT n'a pas de paramètre équivalent dans la voie de base : la variation porte un nom explicite avec parent_value « none » (règle du RUNBOOK), d'où deux avertissements du contrôle, acceptés."
+   "where": "Variations « additional sulfur source », « concentration » et « addition_method »",
+   "issue": "L'ajout de MePT n'a pas de paramètre équivalent dans la voie de base : la variation porte un nom explicite avec parent_value « none » (règle du RUNBOOK), d'où deux avertissements du contrôle, acceptés. Même cas pour les variations « concentration » (S1_run06, 24, 25, 27, SrHfS3_highconc) et « addition_method » (S2_run02) : la voie de base ne porte pas de paramètre de concentration ni de mode d'addition nommé ; les avertissements du contrôle sont acceptés."
+  },
+  {
+   "where": "BZS_HU, étapes 1 à 8 (préparation des réactifs)",
+   "issue": "Les traitements de la section « Purification of Materials Prior to Use » (tamis 3 Å, OLA, CS2 Fisher, amines et thiols, poudres d'acac) sont communs à tout l'article ; ils sont rangés comme étapes préalables de la voie de base BZS_HU. Ceux qui ne servent qu'à certaines branches (BA, PA, MePT, DDT : essais 15 à 17 ; acac : essais 26 et 27) ne s'appliquent qu'à elles, et le séchage du CS2 ne vise que la marque Fisher. Le nombre de jours de stockage des tamis et la fréquence de renouvellement de l'OLA purifiée ne sont pas donnés."
+  },
+  {
+   "where": "BZS_HI, purification de l'OLA et du CS2",
+   "issue": "Le protocole d'injection ne redit pas que l'OLA est « dried » ; la section de purification de l'annexe vaut pour les deux méthodes (« Before experimental use, many of the materials we used underwent various purification steps »), mais l'extraction ne rattache les étapes de préparation qu'à BZS_HU."
+  },
+  {
+   "where": "BZS_film, origine des nanoparticules",
+   "issue": "Le texte principal écrit seulement « Upon favorable synthesis of SP-BZS (in terms of colloidal stability), we then dried the NPs ». La légende de la Fig. S16 attribue l'échantillon SP-BZS NPs* à « the first experiment detailed in Table S1 » (montée en température) et celle de la Fig. S17 dit que cet échantillon SP-BZS a été enduit à la lame (~500 nm). Le rattachement du film à l'essai n° 1 (S1_run01) se fait par concordance de ces légendes avec les Méthodes (500 nm, 4 couches) ; l'article ne l'écrit pas pour le film de la Fig. 5."
+  },
+  {
+   "where": "BHS, second spectre UV-vis (Fig. S12a)",
+   "issue": "La légende de la Fig. S12 mentionne « another measured sample of BHS nanoparticles from a hot-injection experiment », dont le gap diffère de celui de la Fig. 6 (variation de lot à lot). On ne sait pas s'il s'agit de l'essai de la Fig. S10a (BHS_HI), aucun protocole propre n'est écrit et la valeur est dans une figure absente du dépôt : échantillon consigné à l'inventaire sans voie."
+  },
+  {
+   "where": "AL_290_0, Raman (Fig. S8a)",
+   "issue": "La valeur de ~360 cm-1 vient de la légende de la Fig. S8 ; le spectre lui-même n'est pas dans le dépôt. Le texte principal dit « shorter times (>30 min) and lower temperatures (<300 °C) » pour la détection d'un signal Raman : le signe « > » est probablement une coquille de l'article (« < 30 min »), la valeur n'est pas corrigée."
+  },
+  {
+   "where": "Table S1 no 18",
+   "issue": "La concentration écrite (0.04 M) ne correspond pas aux volumes donnés (3,3 mL d'OLA et 10 mmol de DDT, soit environ 5,7 mL ; avec 0,16 mmol de Zr comme au protocole standard, environ 0,028 M, valeur écrite à la ligne 16 pour les mêmes volumes). La valeur du tableau est gardée."
+  },
+  {
+   "where": "Lavage, recommandation et protocole",
+   "issue": "Le SI conclut que le meilleur lavage se fait avec « a low antisolvent-to-solvent ratio, using IPA and toluene » (échantillon 3 du tableau S3 : 10 mL de toluène et 10 mL d'IPA, rapport 1), alors que le protocole standard emploie 1-3 mL de toluène et 12-18 mL d'IPA (rapport 4 à 18). Valeurs gardées telles qu'écrites."
+  },
+  {
+   "where": "Table S1 note * et concentration des lignes 24 et 27",
+   "issue": "La concentration 0.16 M des lignes 24 et 27 est lue dans la colonne « Conc. w.r.t. Zr (M) » (cellule « 0.16 » suivie de « 4 », le volume d'OLA), comme pour les autres lignes."
   }
  ]
 }
