@@ -177,7 +177,10 @@
      "name": "ethanol",
      "formula": "C2H5OH",
      "role": "wash",
-     "quote": "washed repeatedly with deionized water and ethanol"
+     "quote": "washed repeatedly with deionized water and ethanol",
+     "supplier": "PanReac",
+     "supplier_quote": "All reagents employed in the synthesis of silica nanoparticles, the immobilization of bisphenol A, and the adsorption process were of analytical grade. Sodium silicate solution (Na2O·3SiO2; Na2O, 8%; SiO2, 27%) was donated by Adwan Chemical Industries Co., Ltd. (Riyadh, Saudi Arabia). Poly(ethylene glycol) (M.W. 20,000) and bisphenol A were obtained from Acros Organics (Geel, Belgium). Trimethoxyphenylsilane and anhydrous toluene were acquired from Sigma-Aldrich (St. Louis, MO, USA). Hydrochloric acid and sodium hydroxide were sourced from Simnt (Riyadh, Saudi Arabia). Ammonium acetate, ethanol, and sodium dithionite (Na2S2O4) were purchased from PanReac (Barcelona, Spain), while nitric acid and ammonium hydroxide solution were obtained from Loba Chemie (Mumbai, India).",
+     "purity": "analytical grade"
     }
    ],
    "steps": [
@@ -514,6 +517,19 @@
      "quote": "MSNs | 32.1 | 52.81 | 15.12 | 0.0",
      "value_num": 0.0,
      "unit": "wt%"
+    },
+    {
+     "property": "TGA_residual_mass_at_800C",
+     "value_num": 91,
+     "unit": "%",
+     "from_figure": "Fig. 7",
+     "quote": "Thermogravimetric analysis of samples: as-made MSNs (red line) and after functionalization with BPA (black line)."
+    },
+    {
+     "property": "particle_size_range_SEM_histogram_Fig3b",
+     "value_text": "14–21 nm",
+     "from_figure": "Fig. 3b",
+     "quote": "The corresponding particle size distribution histograms are shown in (b,d), respectively, illustrating narrow diameter ranges consistent with the SEM observations."
     }
    ],
    "missing_fields": [
@@ -649,7 +665,10 @@
      "name": "ethanol (washing)",
      "formula": "C2H5OH",
      "role": "wash",
-     "quote": "repeatedly washed with ethanol"
+     "quote": "repeatedly washed with ethanol",
+     "supplier": "PanReac",
+     "supplier_quote": "All reagents employed in the synthesis of silica nanoparticles, the immobilization of bisphenol A, and the adsorption process were of analytical grade. Sodium silicate solution (Na2O·3SiO2; Na2O, 8%; SiO2, 27%) was donated by Adwan Chemical Industries Co., Ltd. (Riyadh, Saudi Arabia). Poly(ethylene glycol) (M.W. 20,000) and bisphenol A were obtained from Acros Organics (Geel, Belgium). Trimethoxyphenylsilane and anhydrous toluene were acquired from Sigma-Aldrich (St. Louis, MO, USA). Hydrochloric acid and sodium hydroxide were sourced from Simnt (Riyadh, Saudi Arabia). Ammonium acetate, ethanol, and sodium dithionite (Na2S2O4) were purchased from PanReac (Barcelona, Spain), while nitric acid and ammonium hydroxide solution were obtained from Loba Chemie (Mumbai, India).",
+     "purity": "analytical grade"
     },
     {
      "name": "distilled water (washing)",
@@ -930,11 +949,16 @@
        "quote": "the coupling reaction proceeded for 4 h",
        "value_num": 4,
        "unit": "h"
+      },
+      {
+       "name": "temperature",
+       "value_text": "ice",
+       "from_figure": "Fig. 1",
+       "quote": "Reaction scheme for the covalent attachment of bisphenol-A onto MSNs"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "stirring_speed"
      ]
     },
@@ -997,7 +1021,7 @@
     },
     {
      "technique": "EDX",
-     "result": "Si 8.15, O 27.29, C 60.31, N 4.25 (weight %); carbon and nitrogen peaks absent in pristine MSNs",
+     "result": "Si 8.15, O 27.29, C 60.31, N 4.25 (weight %); carbon and nitrogen peaks said by the authors to be \"absent in the pristine MSNs\"",
      "instrument": null,
      "conditions": null,
      "quote": "BPA-MSNs | 8.15 | 27.29 | 60.31 | 4.25"
@@ -1022,6 +1046,27 @@
      "instrument": "NEXTA STA200 analyzer (Hitachi High-Tech Corporation, Tokyo, Japan)",
      "conditions": null,
      "quote": "In contrast, BPA-MSNs exhibited significant weight losses between 150 and 650 °C, attributed to the decomposition of organic fragments"
+    },
+    {
+     "technique": "UV-Vis spectrophotometry (3-chloroaniline concentration)",
+     "result": "3-CA concentrations measured with a Shimadzu UV-1800 spectrophotometer",
+     "instrument": "Shimadzu UV-1800 spectrophotometer (Shimadzu Corporation, Kyoto, Japan)",
+     "conditions": "235 nm (section 2.5); lambda max = 240 nm (section 3.5)",
+     "quote": "Concentrations of 3-chloroaniline were measured using a Shimadzu UV-1800 spectrophotometer (Shimadzu Corporation, Kyoto, Japan)."
+    },
+    {
+     "technique": "batch adsorption test (protocol, section 2.5)",
+     "result": "equilibrium concentration measured spectrophotometrically; effect of pH 2-9",
+     "instrument": null,
+     "conditions": "100 mg of BPA-MSNs in 100 mL of 3-CA solution; pH 2–9 examined",
+     "quote": "Adsorption studies were conducted using batch adsorption experiments by dispersing 100 mg of BPA-MSNs into 100 mL of 3-CA solution, with the equilibrium concentration measured spectrophotometrically at 235 nm."
+    },
+    {
+     "technique": "D-SPE and regeneration (protocol, section 2.5)",
+     "result": "sorbent dispersed in water sample, centrifuged, eluted with ethanol; regenerated by HNO3 (1 M) and water, then vacuum-dried",
+     "instrument": null,
+     "conditions": "50 mg of sorbent in 100 mL of water sample; elution 10 mL of ethanol; regeneration HNO3 1 M, water, vacuum-drying",
+     "quote": "For D-SPE experiments, 50 mg of sorbent was dispersed into 100 mL of a water sample, which was then centrifuged and eluted with 10 mL of ethanol. The regeneration of the sorbent was attained by washing with HNO3 (1 M) and water and then vacuum-drying before reuse."
     }
    ],
    "outcomes": [
@@ -1599,7 +1644,7 @@
     {
      "property": "reuse_retention_after_5_cycles",
      "quote": "The adsorption capacity decreased progressively from 4.92 mg g−1 in the first cycle to 4.20 mg g−1 in the fifth, retaining >85% of initial performance.",
-     "value_text": ">85% of initial performance (text)"
+     "value_text": ">85% of initial performance"
     },
     {
      "property": "desorption_efficiency_ethanol",
@@ -1610,6 +1655,63 @@
      "property": "BET_surface_area_loss_after_cycling",
      "quote": "Structural characterization post-cycling indicated minimal loss in the BET surface area (<8%), supporting sustained mesoporous accessibility.",
      "value_text": "<8%"
+    },
+    {
+     "property": "TGA_residual_mass_at_800C",
+     "value_num": 79,
+     "unit": "%",
+     "from_figure": "Fig. 7",
+     "quote": "Thermogravimetric analysis of samples: as-made MSNs (red line) and after functionalization with BPA (black line)."
+    },
+    {
+     "property": "particle_size_range_SEM",
+     "value_text": "12–21 nm",
+     "quote": "with a narrow particle-size distribution of 12–21 nm"
+    },
+    {
+     "property": "particle_size_range_SEM_histogram_Fig3d",
+     "value_text": "11–20 nm",
+     "from_figure": "Fig. 3d",
+     "quote": "The corresponding particle size distribution histograms are shown in (b,d), respectively, illustrating narrow diameter ranges consistent with the SEM observations."
+    },
+    {
+     "property": "EDX_O_atomic_percent_per_text",
+     "value_num": 68.8,
+     "unit": "%",
+     "quote": "Quantitative analysis determined the atomic percentages of oxygen and silicon to be 68.8% and 31.2%, respectively."
+    },
+    {
+     "property": "EDX_Si_atomic_percent_per_text",
+     "value_num": 31.2,
+     "unit": "%",
+     "quote": "Quantitative analysis determined the atomic percentages of oxygen and silicon to be 68.8% and 31.2%, respectively."
+    },
+    {
+     "property": "EDX_Si_O_atomic_ratio_per_text",
+     "value_text": "approximately 1:2",
+     "quote": "with a measured Si:O atomic ratio of approximately 1:2"
+    },
+    {
+     "property": "EDX_C_atomic_percent_per_text",
+     "value_num": 60.31,
+     "unit": "%",
+     "quote": "the BPA-MSNs spectrum revealed significant atomic percentages of 60.31% for carbon and 4.25% for nitrogen"
+    },
+    {
+     "property": "EDX_N_atomic_percent_per_text",
+     "value_num": 4.25,
+     "unit": "%",
+     "quote": "the BPA-MSNs spectrum revealed significant atomic percentages of 60.31% for carbon and 4.25% for nitrogen"
+    },
+    {
+     "property": "reuse_retention_after_5_cycles_abstract",
+     "value_text": ">90% efficiency over five reuse cycles",
+     "quote": "The sorbent retained >90% efficiency over five reuse cycles"
+    },
+    {
+     "property": "reuse_retention_after_5_cycles_Table7",
+     "value_text": "Five cycles, >92%",
+     "quote": "BPA-MSNs | 30.2 | 6 (25 °C) | Five cycles, >92% | This work"
     }
    ],
    "missing_fields": [
@@ -1666,13 +1768,13 @@
   {
    "type": "mecanisme_analyse",
    "route": "MSNs",
-   "text": "À pH 9 puis 11,5, le silicate est surtout sous forme de monomères et d'oligomères anioniques ; après passage sur résine échangeuse de cations (le sodium est retiré), on obtient probablement de l'acide silicique qui condense en présence de PEG et d'ammoniac. On attend que les 120 °C en autoclave accélèrent la condensation et la réorganisation du composite PEG–silice, la calcination à 550 °C brûlant ensuite le PEG et libérant la porosité.",
+   "text": "Hypothèse (non démontrée par l'article) : après échange de cations, l'acide silicique oligomère est versé dans le milieu PEG/ammoniac à pH 11,5, où il forme des particules primaires de silice d'une quinzaine de nanomètres dont la croissance est limitée par la forte solubilité de la silice à ce pH. Le PEG, faiblement adsorbé par liaisons hydrogène sur les silanols résiduels, stabilise et occlut en partie les agrégats ; le traitement à 120 °C consolide les particules (mûrissement d'Ostwald), et la calcination à 550 °C brûle le PEG en laissant une porosité désordonnée faite surtout des vides entre particules agrégées et de petits pores de 2 à 3 nm, sans mésophase ordonnée. Cette lecture s'écarte de celle des auteurs (micelles composites PEG « protoné »–silicate ordonnées) ; elle s'appuie sur les valeurs de l'article (4V/S ≈ 15 nm, halo amorphe) et sur la voie de gabarit au PEO de Bagshaw, Prouzet et Pinnavaia (Science, 1995).",
    "quote": null
   },
   {
    "type": "mecanisme_analyse",
    "route": "BPA-MSNs",
-   "text": "Probablement : le triméthoxyphénylsilane se condense sur les silanols de surface de la silice (liaisons Si–O–Si) ; le mélange HNO3/H2SO4 nitre le cycle aromatique, surtout en para ; le dithionite réduit NO2 en NH2 ; NaNO2/HCl à froid convertit l'amine en sel de diazonium, qui réagit en couplage azoïque en ortho d'un OH phénolique du bisphénol A. La température de 0–5 °C est nécessaire parce que les sels de diazonium se décomposent à température ambiante.",
+   "text": "Hypothèse : le phényltriméthoxysilane se condense sur les silanols de surface (liaisons Si–O–Si ; la liaison Si–C6H5 est conservée) ; le mélange HNO3/H2SO4 nitre le cycle aromatique par l'ion nitronium, avec une régiochimie méta ou para non établie (le groupe Si(OSi)3 oriente mal) et un risque de coupure ipso de la liaison aryl–Si ; le dithionite réduit NO2 en NH2. Pour que la diazotation fonctionne, l'amine devrait être lavée, puis traitée par un excès de NaNO2 dans un excès de HCl à 0–5 °C, les sels de diazonium se décomposant à température ambiante. Le couplage avec le bisphénol A se fait en ortho de son OH (les positions para sont occupées par le pont isopropylidène) et demande d'ordinaire un milieu faiblement alcalin. Dans les conditions écrites, une partie des diazoniums est probablement réduite par les sulfites ou hydrolysée en phénol, d'où une charge organique plus faible (≤ 0,4 mmol/g d'après l'ATG) que ne le suggère l'EDX. Précédents de nitration et réduction sur organosilices à ponts phénylène : Microporous and Mesoporous Materials, 2015 (équipe de l'Université d'Aveiro).",
    "quote": null
   },
   {
@@ -1684,7 +1786,7 @@
   {
    "type": "securite_analyse",
    "route": "BPA-MSNs",
-   "text": "L'article ne donne aucune précaution. Le mélange sulfonitrique concentré est très corrosif et oxydant (nitration exothermique à 60 °C : addition lente, protection du visage). Les sels de diazonium peuvent être explosifs s'ils sèchent : les garder en suspension froide et ne pas les isoler. Le toluène est inflammable et reprotoxique, le dithionite de sodium s'échauffe et libère du SO2 en milieu acide, le bisphénol A est un perturbateur endocrinien et la 3-chloroaniline, utilisée en test, est toxique et probablement cancérogène : travail sous hotte et gants.",
+   "text": "L'article ne donne aucune précaution. Le solide lavé à l'éthanol est séché à 70 °C, sous le point d'ébullition de l'éthanol (78 °C) : de l'alcool peut rester dans les pores, or l'acide nitrique concentré peut enflammer les alcools ; sécher à fond avant d'ajouter le mélange sulfonitrique, et l'ajouter lentement, au froid, sous écran (nitration exothermique à 60 °C, protection du visage). Le dithionite de sodium s'échauffe et dégage du SO2 en milieu acide (HCl), et l'acide nitreux formé par NaNO2/HCl dégage des NOx : travailler sous hotte. Les sels de diazonium non couplés peuvent être explosifs s'ils sèchent : ne pas sécher sous vide un solide qui en contient encore, les garder en suspension froide et laisser le temps de les décomposer. Le toluène au reflux est inflammable et reprotoxique, le bisphénol A est un perturbateur endocrinien et la 3-chloroaniline, utilisée en test, est toxique : gants et hotte.",
    "quote": null
   },
   {
@@ -1696,13 +1798,61 @@
   {
    "type": "limite_reproductibilite",
    "route": "BPA-MSNs",
-   "text": "Manquent : la température du reflux dans le toluène, la durée de la dispersion initiale, la concentration de la solution de NaNO2, la température du couplage azoïque (supposée froide mais non écrite), la durée et la température du séchage sous vide final, le nombre de lavages, le séchage entre la nitration et la réduction, l'isolement du produit aminé, le lavage après couplage, le rendement et la densité de greffage (la perte de masse en ATG est donnée en figure seulement). Le fournisseur de l'acide sulfurique et du nitrite de sodium n'est pas cité (absents de la liste des réactifs). Les quantités d'acides de la nitration (10:20 mL) sont attribuées dans l'ordre de l'énumération « nitric acid and sulfuric acid ».",
+   "text": "Manquent : la température du reflux dans le toluène, la durée de la dispersion initiale, la concentration de la solution de NaNO2, la température du couplage azoïque (seul le schéma de la figure 1 la signale, par une flèche étiquetée « ice », sans valeur ; le texte ne la donne pas), la durée et la température du séchage sous vide final, le nombre de lavages, le séchage entre la nitration et la réduction, l'isolement du produit aminé, le lavage après couplage, le rendement et la densité de greffage (la perte de masse en ATG est donnée en figure seulement). Le fournisseur de l'acide sulfurique et du nitrite de sodium n'est pas cité (absents de la liste des réactifs). Les quantités d'acides de la nitration (10:20 mL) sont attribuées dans l'ordre de l'énumération « nitric acid and sulfuric acid ».",
    "quote": "The dried PhO-MSNs was subjected to nitration using a mixed acid system comprising concentrated nitric acid and sulfuric acid (10:20 mL, v/v 1:2)."
   },
   {
    "type": "limite_reproductibilite",
    "route": "BPA-MSNs",
    "text": "Les résultats d'adsorption et de D-SPE sont contradictoires entre sections : pH optimal 4 (figure 8, légende des figures 9 et 10) contre pH 6 (section 3.6, tableau 7) ; longueur d'onde de mesure 235 nm (méthodes) contre 240 nm (résultats) ; masse de sorbant 50 mg (méthodes) contre 100 mg (résultats) ; facteur de préconcentration 20 pour 50 mL et 2,5 mL d'éluant (tableau 5) contre 9,54 pour 100 mL et 10 mL ; récupération 95,4 % (texte) contre 73–85 % (tableau 5) alors que le tableau 6 donne 110 et 113 % pour l'eau usée synthétique ; rétention après cinq cycles >85 % (texte), >90 % (résumé), >92 % (tableau 7). Les capacités à pH 4 et 20 mg L−1 (8,5 mg g−1 sur la figure 8a, 4,55–4,65 mg g−1 pour la cinétique, 4,92 mg g−1 au premier cycle) ne concordent pas non plus. Le texte parle de matériau « imprimé » moléculairement alors qu'aucune étape d'empreinte n'est décrite : le greffage est un couplage azoïque. Aucune annexe n'est citée par l'article.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MSNs",
+   "text": "Le mécanisme des auteurs invoque des chaînes de PEG « protonées » à pH ≈ 11,5. Or l'oxygène d'éther d'un PEG ne se protone qu'en milieu très acide, et l'association PEO–silice par liaisons hydrogène demande des silanols neutres (voie de type MSU, Bagshaw, Prouzet et Pinnavaia, Science, 1995, à pH proche de la neutralité) ; à pH 11,5 la silice est très déprotonée et l'interaction est faible. Le mécanisme proposé n'est pas crédible tel qu'écrit.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MSNs",
+   "text": "L'ordre mésoporeux annoncé n'est pas démontré : la diffraction X est décrite balayée de 0,7 à 5° (2θ), mais le seul pic donné est à 22,6° (halo de la silice amorphe), hors de cette plage, et aucun pic aux petits angles n'est rapporté. Le diamètre 4V/S calculé avec les valeurs de l'article (1,9 cm3/g, 503 m2/g) vaut ≈ 15 nm contre 2,6 nm annoncé : le volume poreux est surtout fait des vides entre particules de 17 nm (voir la norme IUPAC de Thommes et al., Pure Appl. Chem., 2015). L'une des deux indications de plage ou de pic est fausse ; le solide est une silice amorphe poreuse.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MSNs",
+   "text": "L'EDX des MSNs calcinées donne C = 15,12 % massique (C/Si ≈ 1,1) alors que le texte dit le carbone « absent » des MSNs, que l'ATG ne perd que ≈ 3,5 % au-dessus de 150 °C et qu'une calcination à 550 °C ne laisse pas 15 % de carbone ; l'origine probable est le support carboné ou une contamination, l'EDX étant semi-quantitatif pour les éléments légers. Le rapport Si:O « ≈ 1:2 » du texte n'est pas celui du tableau 1 (O/Si ≈ 2,9). La composition élémentaire des MSNs n'est donc pas fiable ; un dosage CHN ou un EDX sur support non carboné serait à faire.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BPA-MSNs",
+   "text": "La diazotation est décrite dans la suspension issue de la réduction par le dithionite (14,4 mmol apportés pour ≤ 8 mmol nécessaires), refroidie puis acidifiée par 3 mL de HCl 2 M, sans lavage écrit de l'amine. Le dithionite résiduel et les sulfites consomment l'acide nitreux et réduisent les sels de diazonium (réaction de Fischer vers les arylhydrazines), et 6 mmol de HCl ne suffisent pas à rendre le milieu franchement acide. Tel qu'écrit, le protocole ne peut guère diazoter efficacement : une étape de lavage de l'aniline-MSNs a probablement été omise du texte.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BPA-MSNs",
+   "text": "Le dosage élémentaire par EDX des BPA-MSNs (C 60,3 %, N 4,25 % massiques, C/Si ≈ 17) est incompatible avec l'ATG (figure 7), qui montre ≈ 14 % de matière organique nette (au plus ≈ 0,42 mmol/g de motifs azo-BPA, soit C ≈ 10,7 % et N ≈ 1,2 %) et avec une surface de 334 m2/g : l'EDX surestime le carbone d'un facteur ≈ 6 (support carboné, contamination, analyse de surface) et ne quantifie pas le greffage. Le texte appelle en outre « pourcentages atomiques » des valeurs qui sont des pour cent massiques au tableau 1. La densité de greffage réelle est donc inconnue.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BPA-MSNs",
+   "text": "Les données d'adsorption se contredisent : à 20 mg/L, 0,1 g et 100 mL (pH 4), la figure 8a donne qe = 8,5 mg/g alors que la cinétique (4,55–4,65 mg/g) et le premier cycle de réutilisation (4,92 mg/g) donnent environ la moitié, ce qui est aussi ce que prévoit l'isotherme de Langmuir des auteurs (≈ 3,9–5 mg/g). Le pH optimal est 4 pour les figures 8 à 10 mais 6 pour le texte 3.6 et le tableau 7. La capacité qm = 30,2 mg/g est extrapolée au-delà de la plus forte valeur mesurée (≈ 22 mg/g, lecture de la figure 9).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BPA-MSNs",
+   "text": "Les résultats de D-SPE sont incompatibles avec l'isotherme des auteurs : avec Kd ≈ qm·KL ≈ 0,38 L/g, 100 mg de sorbant dans 100 mL ne retiennent qu'environ 28 % de la 3-chloroaniline à l'état de traces (≈ 16 % avec 50 mg), alors que le texte rapporte 95,4 % et le tableau 5 de 73 à 85 %, à moins de conditions (pH, masse) non décrites. Les récupérations de 110 et 113 % de l'eau usée synthétique traduisent très probablement des interférences UV de la matrice à 240 nm ; le texte les passe sous silence en annonçant 74–85 %.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BPA-MSNs",
+   "text": "Réserves chimiques, non corrigées : (1) le réactif est nommé « 3-trimethoxyphenylsilane » et l'intermédiaire « PhO-MSNs » (phénoxy), et la figure 1 dessine Si–O–phényle, alors que le phényltriméthoxysilane donne une liaison Si–C6H5 (une liaison Si–O–aryle serait hydrolysée par le mélange sulfonitrique) ; (2) la nitration se fait avec un très large excès d'acide (HNO3/phényle ≥ 59, 60 °C), ce qui expose à la nitrodésilylation (coupure aryl–Si), à la polynitration et laisse la régiochimie (méta ou para) non établie, sans précédent direct ; (3) un couplage azoïque sur un phénol se fait d'ordinaire en milieu faiblement alcalin (phénolate), alors que le milieu reste acide et à moitié éthanolique ; la couleur orange ne prouve pas à elle seule la liaison azo–BPA ; (4) dans le tableau 3, bT de Temkin = 0,31 J/mol est incompatible avec la courbe de la figure 9 (il faudrait de l'ordre de 580 J/mol), les valeurs ou unités sont erronées ; (5) la 3-chloroaniline (pKa ≈ 3,5) n'est protonée qu'à environ 25 % à pH 4, contrairement à « predominantly protonated », et un meilleur ajustement pseudo-premier ordre ne prouve pas la physisorption ; (6) « molecular imprinting » ou « imprinted » est impropre, aucune étape d'empreinte n'existant, le greffage étant un couplage azoïque ; (7) la rétention après cinq cycles vaut 4,20/4,92 ≈ 85 % comme le texte, et non > 90 % (résumé) ni > 92 % (tableau 7).",
    "quote": null
   }
  ],
@@ -1731,11 +1881,11 @@
   },
   {
    "where": "BPA-MSNs, EDX (tableau 1 et texte 3.1)",
-   "issue": "Le texte parle de « pourcentages atomiques » (O 68,8 %, Si 31,2 %, C 60,31 %, N 4,25 %, rapport Si:O ≈ 1:2) alors que le tableau 1 est en pour cent massique (Si 8,15, O 27,29, C 60,31, N 4,25) et que 68,8 + 31,2 ne correspond à aucune ligne du tableau. Valeurs du tableau extraites en wt%, avec la lecture « atomique » non reprise."
+   "issue": "Le texte parle de « pourcentages atomiques » (O 68,8 %, Si 31,2 %, C 60,31 %, N 4,25 %, rapport Si:O ≈ 1:2) alors que le tableau 1 est en pour cent massique (Si 8,15, O 27,29, C 60,31, N 4,25) et que 68,8 + 31,2 ne correspond à aucune ligne du tableau. Valeurs du tableau extraites en wt%, avec la lecture « atomique » non reprise. Les pourcentages « atomiques » du texte (O 68,8 %, Si 31,2 %, rapport Si:O ≈ 1:2 ; C 60,31 % et N 4,25 % dits atomiques) sont maintenant repris comme résultats `…_per_text` ; le paragraphe parle des BPA-MSNs mais 68,8 + 31,2 = 100 % exclut C et N, donc l'échantillon visé n'est pas établi : rattachés à BPA-MSNs faute de mieux."
   },
   {
    "where": "MSNs, ATG (texte 3.1 et légende de la figure 7)",
-   "issue": "Le texte parle de MSNs calcinées (perte négligeable au-dessus de 180 °C, « removal of PEG ») alors que la légende de la figure 7 dit « as-made MSNs » ; la figure n'a pas été exploitée. Lecture retenue : MSNs calcinées, comme dans le texte."
+   "issue": "Le texte parle de MSNs calcinées (perte négligeable au-dessus de 180 °C, « removal of PEG ») alors que la légende de la figure 7 dit « as-made MSNs ». Lecture retenue : MSNs calcinées, comme dans le texte. La figure 7 a été lue après la critique : masse restante à 800 °C ≈ 91 % (MSNs) et ≈ 79 % (BPA-MSNs), à 2 chiffres significatifs, lecture approximative (± 1 point)."
   },
   {
    "where": "MSNs et BPA-MSNs, XRD (méthodes 2.2)",
@@ -1767,7 +1917,23 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Figure 8a (qe à pH 4, 7, 9 : 8,5, 5,2 et 4,2 mg g−1) et figure 11 (capacités des cycles 2 à 4 : 4,8, 4,4, 4,3 mg g−1) : valeurs imprimées sur les barres, pas estimées ; aucune imprécision de lecture. Figure 1 (schéma réactionnel) ouverte, sans valeur à extraire. Figures 2 à 7, 9 et 10 non lues : leurs valeurs sont dans le texte et les tableaux (figures 9 et 10 : points expérimentaux seulement)."
+   "issue": "Figure 8a (qe à pH 4, 7, 9 : 8,5, 5,2 et 4,2 mg g−1) et figure 11 (capacités des cycles 2 à 4 : 4,8, 4,4, 4,3 mg g−1) : valeurs imprimées sur les barres, pas estimées. Figure 7 (ATG) : masses restantes à 800 °C lues sur les courbes (≈ 91 % et ≈ 79 %), précision de l'ordre de 1 point. Figure 3 (histogrammes) : plages lues 14–21 nm (MSNs, 3b) et 11–20 nm (BPA-MSNs, 3d), précision de lecture ± 1 nm. Figure 1 (schéma) : flèches étiquetées « NaNO2/ ice » (diazotation) et « ice » (couplage), sans valeur chiffrée. Figures 2, 4, 5, 6, 9 et 10 non lues : leurs valeurs sont dans le texte et les tableaux (figures 9 et 10 : points expérimentaux seulement)."
+  },
+  {
+   "where": "BPA-MSNs step 15 (couplage azoïque), température",
+   "issue": "Le texte ne donne pas la température ; seul le schéma de la figure 1 porte la flèche « ice » avant BPA-MSNs. Valeur reprise en texte (« ice », lecture du schéma), citation = légende de la figure 1 faute de phrase du texte."
+  },
+  {
+   "where": "MSNs, plage de taille SEM 12–21 nm",
+   "issue": "La phrase du texte renvoie aux deux histogrammes (3b,d) : la plage 12–21 nm est donc attribuée aux deux voies. Les lectures séparées de la figure 3 (14–21 nm pour les MSNs, 11–20 nm pour les BPA-MSNs) la précisent, sans la contredire de façon nette (la borne basse de 12 nm n'apparaît pas sur le 3b)."
+  },
+  {
+   "where": "MSNs / BPA-MSNs, EDX : carbone",
+   "issue": "Le texte dit le carbone « absent » des MSNs alors que le tableau 1 donne C = 15,12 % massique pour les MSNs calcinées. Les deux sont rapportés tels quels ; l'origine de ce carbone n'est pas expliquée (voir limite de reproductibilité)."
+  },
+  {
+   "where": "BPA-MSNs, ethanol (solution de bisphénol A)",
+   "issue": "L'éthanol de la solution à 2 % (w/v) de bisphénol A n'a pas de ligne de réactif propre : le fournisseur PanReac de l'éthanol (2.1) est donné aux lignes de lavage seulement ; la ligne de la solution porte le fournisseur du bisphénol A (Acros Organics)."
   }
  ]
 }
