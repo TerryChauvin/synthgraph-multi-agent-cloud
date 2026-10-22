@@ -1,0 +1,96 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6409692</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6409692 — Synthesis and Characterization of Elongated-Shaped Silver Nanoparticles as a Biocompatible Anisotropic SERS Probe for Intracellular Imaging: Theoretical Modeling and Experimental Verification.</h1>
+<h2>Voie : AgNPs</h2>
+<pre class="mermaid">flowchart LR
+  R16356([&quot;silver nitrate&lt;br/&gt;3.06 mM&quot;]):::reactif
+  R16356 --&gt;|&quot;precursor&quot;| S19623
+  R16357([&quot;sodium citrate&lt;br/&gt;6.2 mM&quot;]):::reactif
+  R16357 --&gt;|&quot;capping_agent&quot;| S19623
+  R16358([&quot;Milli-Q water (reaction medium)&lt;br/&gt;25 mL&quot;]):::reactif
+  R16358 --&gt;|&quot;solvent&quot;| S19623
+  R16359([&quot;ascorbic acid&lt;br/&gt;0.5 mL&quot;]):::reactif
+  R16359 --&gt;|&quot;reducing_agent&quot;| S19623
+  R16360([&quot;Milli-Q water (redispersion of the pellet)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16360 --&gt;|&quot;wash&quot;| S19623
+  S19623[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;stirring_speed : 700 rpm&lt;br/&gt;temperature : ice bath&quot;]:::etape
+  S19623 --&gt; S19624
+  S19624[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;addition_rate : quickly&lt;br/&gt;concentration : 56.7 mM&lt;br/&gt;temperature : ice bath&quot;]:::etape
+  S19624 --&gt; S19625
+  S19625[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;duration : 5 min&lt;br/&gt;temperature : ice bath&quot;]:::etape
+  S19625 --&gt; S19626
+  S19626[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4000 rpm&lt;br/&gt;duration : 20 min&lt;br/&gt;repetitions : 3&quot;]:::etape
+  S19626 --&gt; S19627
+  S19627[&quot;&lt;b&gt;5. disperse&lt;/b&gt;&quot;]:::etape
+  S19627 --&gt; M
+  M{{&quot;elongated-shaped silver nanoparticles&lt;br/&gt;Ag&quot;}}:::materiau
+  O77951[&quot;long_axis_length : 19 nm&quot;]:::resultat
+  M -.-&gt; O77951
+  O77952[&quot;short_axis_length : 13 nm&quot;]:::resultat
+  M -.-&gt; O77952
+  O77953[&quot;SPR_band_maximum_range : 650–950 nm&quot;]:::resultat
+  M -.-&gt; O77953
+  O77954[&quot;SPR_band_position_conclusion : 800 nm&quot;]:::resultat
+  M -.-&gt; O77954
+  O77955[&quot;hydrodynamic_diameter_DLS : 153.6 nm&quot;]:::resultat
+  M -.-&gt; O77955
+  O77956[&quot;PDI : 0.184&quot;]:::resultat
+  M -.-&gt; O77956
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNPs@R6G</h2>
+<pre class="mermaid">flowchart LR
+  R16361([&quot;AgNPs suspension (route AgNPs), 2.84 mg/mL&lt;br/&gt;0.65 mL&quot;]):::reactif
+  R16361 --&gt;|&quot;intermediate&quot;| S19628
+  R16362([&quot;rhodamine 6G (tetraethylrhodamine hydrochlor…&lt;br/&gt;120 µL&quot;]):::reactif
+  R16362 --&gt;|&quot;ligand&quot;| S19628
+  S19628[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;concentration : 10−3 M&quot;]:::etape
+  S19628 --&gt; S19629
+  S19629[&quot;&lt;b&gt;2. incubate&lt;/b&gt;&lt;br/&gt;duration : two hours&quot;]:::etape
+  S19629 --&gt; M
+  M{{&quot;silver nanoparticles with physically adsorbed rho…&lt;br/&gt;&quot;}}:::materiau
+  O77961[&quot;hydrodynamic_diameter_DLS : 269.2 nm&quot;]:::resultat
+  M -.-&gt; O77961
+  O77962[&quot;PDI : 0.41&quot;]:::resultat
+  M -.-&gt; O77962
+  O77963[&quot;colloidal_stability_cell_culture_m… : very low colloidal stability …&quot;]:::resultat
+  M -.-&gt; O77963
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNPs@R6G@BSA</h2>
+<pre class="mermaid">flowchart LR
+  R16363([&quot;AgNPs@R6G (route AgNPs@R6G)&lt;br/&gt;mixture obtained after two ho…&quot;]):::reactif
+  R16363 --&gt;|&quot;intermediate&quot;| S19630
+  R16364([&quot;bovine serum albumin (BSA) solution, 50 µM&lt;br/&gt;2 mL&quot;]):::reactif
+  R16364 --&gt;|&quot;stabilizer&quot;| S19630
+  R16365([&quot;phosphate buffer saline (PBS)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16365 --&gt;|&quot;solvent&quot;| S19630
+  R16366([&quot;Milli-Q water (re-suspension)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16366 --&gt;|&quot;wash&quot;| S19630
+  S19630[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;concentration : 50 µM&quot;]:::etape
+  S19630 --&gt; S19631
+  S19631[&quot;&lt;b&gt;2. incubate&lt;/b&gt;&lt;br/&gt;duration : overnight&quot;]:::etape
+  S19631 --&gt; S19632
+  S19632[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4000 rpm&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S19632 --&gt; S19633
+  S19633[&quot;&lt;b&gt;4. disperse&lt;/b&gt;&quot;]:::etape
+  S19633 --&gt; M
+  M{{&quot;BSA-coated silver nanoparticles carrying rhodamin…&lt;br/&gt;&quot;}}:::materiau
+  O77964[&quot;bound_R6G_remaining_concentration : 9.8 × 10−7 M&quot;]:::resultat
+  M -.-&gt; O77964
+  O77965[&quot;bound_R6G_per_mass_Ag : 4.1 × 10−10mol R6G/mg AgNPs&quot;]:::resultat
+  M -.-&gt; O77965
+  O77966[&quot;hydrodynamic_diameter_DLS : 214.6 nm&quot;]:::resultat
+  M -.-&gt; O77966
+  O77967[&quot;PDI : 0.212&quot;]:::resultat
+  M -.-&gt; O77967
+  O77968[&quot;analytical_enhancement_factor_633nm : 2.7 × 10^7 (633 nm laser, 136…&quot;]:::resultat
+  M -.-&gt; O77968
+  O77969[&quot;EM_contribution_estimate_633nm : of the order of 8 × 10^5 (est…&quot;]:::resultat
+  M -.-&gt; O77969
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

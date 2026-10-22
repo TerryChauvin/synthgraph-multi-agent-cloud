@@ -126,11 +126,10 @@
      "role": "solvent",
      "amount": 25,
      "unit": "mL",
-     "not_stated": [
-      "purity",
-      "supplier"
-     ],
-     "quote": "A solution containing silver nitrate (3.06 mM) and sodium citrate (6.2 mM) was prepared in 25 mL of Milli-Q water in a round bottom flask dipped in an ice bath and was stirred at 700 rpm."
+     "quote": "A solution containing silver nitrate (3.06 mM) and sodium citrate (6.2 mM) was prepared in 25 mL of Milli-Q water in a round bottom flask dipped in an ice bath and was stirred at 700 rpm.",
+     "purity": "18.2 MΩ",
+     "supplier": "Millipore",
+     "supplier_quote": "Water was purified using a Milli-Q (18.2 MΩ) water system from Millipore (Madrid, Spain)."
     },
     {
      "name": "ascorbic acid",
@@ -147,7 +146,10 @@
      "name": "Milli-Q water (redispersion of the pellet)",
      "formula": "H2O",
      "role": "wash",
-     "quote": "After this, the dispersion was centrifuged at 4000 rpm for 20 min and the resulting pellet was redispersed in Milli-Q water."
+     "quote": "After this, the dispersion was centrifuged at 4000 rpm for 20 min and the resulting pellet was redispersed in Milli-Q water.",
+     "purity": "18.2 MΩ",
+     "supplier": "Millipore",
+     "supplier_quote": "Water was purified using a Milli-Q (18.2 MΩ) water system from Millipore (Madrid, Spain)."
     }
    ],
    "steps": [
@@ -203,11 +205,15 @@
        "value_num": 56.7,
        "unit": "mM",
        "quote": "0.5 mL of a 56.7 mM solution of ascorbic acid"
+      },
+      {
+       "name": "temperature",
+       "value_text": "ice bath",
+       "quote": "in a round bottom flask dipped in an ice bath"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "temperature",
       "stirring_speed"
      ]
     },
@@ -237,7 +243,7 @@
     {
      "order": 4,
      "action": "centrifuge",
-     "description": "Centrifuge the dispersion to pellet the nanoparticles; the pellet is then redispersed in Milli-Q water; the cycle is done 3 times in total.",
+     "description": "Centrifuge the dispersion to pellet the nanoparticles; the pellet is then redispersed in Milli-Q water; the process is repeated 3 times (article wording).",
      "quote": "After this, the dispersion was centrifuged at 4000 rpm for 20 min and the resulting pellet was redispersed in Milli-Q water.",
      "parameters": [
       {
@@ -255,14 +261,16 @@
       {
        "name": "repetitions",
        "value_num": 3,
-       "value_text": "3 times",
+       "value_text": "repeated 3 times",
        "quote": "This process was repeated 3 times to remove unreacted reagents, resulting in a final dispersion of AgNPs."
       }
      ],
      "equipment": [],
      "not_stated": [
       "rotor_or_centrifuge_model",
-      "temperature_of_centrifugation"
+      "temperature_of_centrifugation",
+      "redispersion_volume",
+      "centrifuge_g_force"
      ]
     },
     {
@@ -303,7 +311,7 @@
     },
     {
      "technique": "DLS",
-     "result": "hydrodynamic diameter 153.6 ± 0.9 nm, PDI 0.184 ± 0.006 (PBS, pH 7.4)",
+     "result": "hydrodynamic diameter 153.6 ± 0.9 nm, PDI 0.184 ± 0.006 (medium and age of the sample not stated for this measurement)",
      "instrument": "Zetasizer Nano ZS90 (Malvern, UK)",
      "conditions": "nanoparticles dispersed in milli-Q water or PBS at 50 mg/L of Ag; ZEN0118 low-volume cuvette; 173° backscatter detection; three measurement repeats; general purpose (normal resolution) model",
      "quote": "Synthesized AgNPs showed a hydrodynamic diameter by DLS of 153.6 ± 0.9 nm."
@@ -402,7 +410,7 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "AgNPs suspension (route AgNPs)",
+     "name": "AgNPs suspension (route AgNPs), 2.84 mg/mL",
      "formula": "Ag",
      "role": "intermediate",
      "amount": 0.65,
@@ -410,7 +418,7 @@
      "quote": "A volume of 0.65 mL of the AgNPs suspension (2.84 mg/mL) was incubated with 120 µL of R6G 10−3 M."
     },
     {
-     "name": "rhodamine 6G (tetraethylrhodamine hydrochloride)",
+     "name": "rhodamine 6G (tetraethylrhodamine hydrochloride), 10−3 M solution",
      "formula": null,
      "role": "ligand",
      "amount": 120,
@@ -555,7 +563,10 @@
      "name": "Milli-Q water (re-suspension)",
      "formula": "H2O",
      "role": "wash",
-     "quote": "After two hours of incubation, 2 mL of a 50 µM BSA solution in phosphate buffer saline (PBS) was added and allowed to incubate overnight, followed by centrifugation at 4000 rpm for 30 min and re-suspension in Milli-Q water."
+     "quote": "After two hours of incubation, 2 mL of a 50 µM BSA solution in phosphate buffer saline (PBS) was added and allowed to incubate overnight, followed by centrifugation at 4000 rpm for 30 min and re-suspension in Milli-Q water.",
+     "purity": "18.2 MΩ",
+     "supplier": "Millipore",
+     "supplier_quote": "Water was purified using a Milli-Q (18.2 MΩ) water system from Millipore (Madrid, Spain)."
     }
    ],
    "steps": [
@@ -657,7 +668,7 @@
     },
     {
      "technique": "Raman/SERS (633 nm, AEF)",
-     "result": "AEF 2.7 × 107 from the area under the signal at 1360 cm−1",
+     "result": "AEF 2.7 × 10^7 from the area under the signal at 1360 cm−1",
      "instrument": "Labram 300 Jobin Yvon spectrometer (Horiba Jobin Yvon, Bensheim, Germany) equipped with a 17 mW HeNe laser operating at 632.8 nm and with an air-cooled CCD detector",
      "conditions": "50× Olympus objective; neutral density filter (optical density 0.3); 5 scans with 25 s of laser exposure; control R6G 10−3 M drop on glass",
      "quote": "All measurements for calculating the AEF were performed with a 633 nm laser since both the R6G control and AgNPs@R6G@BSA can be measured with the same time and laser power experimental conditions."
@@ -717,17 +728,17 @@
     },
     {
      "property": "analytical_enhancement_factor_633nm",
-     "value_text": "2.7 × 107 (633 nm laser, 1360 cm−1 band)",
+     "value_text": "2.7 × 10^7 (633 nm laser, 1360 cm−1 band)",
      "quote": "The AEF for the AgNP@R6G@BSA nanosystem was thus calculated as 2.7 × 107."
     },
     {
      "property": "EM_contribution_estimate_633nm",
-     "value_text": "of the order of 8 × 105 (estimate)",
+     "value_text": "of the order of 8 × 10^5 (estimate)",
      "quote": "For the 633 nm laser and assuming the R6G to be near the spot with the highest near field enhancement, the EM contribution would be of the order of 8 × 105."
     },
     {
      "property": "EM_contribution_estimate_785nm",
-     "value_text": "as high as 2 × 108 (estimate)",
+     "value_text": "as high as 2 × 10^8 (estimate)",
      "quote": "However, using equation 2 and the field enhancements obtained from the FEM calculations for the 785 nm laser under the same conditions, we can estimate that the EM contribution in this case could be as high as 2 × 108."
     },
     {
@@ -783,6 +794,86 @@
      "unit": "%",
      "from_figure": "Fig. 6C",
      "quote": "Flow cytometry analysis of cell cycle after 24 h of treatment with increasing concentrations of AgNP@R6G@BSA (C)."
+    },
+    {
+     "property": "DFT_calculated_Raman_intensity_ratio_1545",
+     "value_text": "1 order of magnitude higher than isolated R6G (peak 1545 cm−1; calculated SERS = 429,898/isolated R6G = 39,682; R6G on a flat surface of 10 Ag atoms)",
+     "quote": "Notably, the Raman intensity is 1 order of magnitude higher when compared to isolated R6G (area under the curve for the peak 1545 cm−1; calculated SERS = 429,898/isolated R6G = 39,682)."
+    },
+    {
+     "property": "DFT_TableS1_experimental_vs_computational_wavenumbers",
+     "value_text": "experimental/computational (cm−1): 1646/1695, 1509/1544, 1452/1464, 1363/1386, 1307/1335, 1307/1322 (all assigned to aromatic C–C stretching)",
+     "quote": "Table S1 shows the correspondence between the main peaks in the experimental and the calculated (DFT) spectra."
+    },
+    {
+     "property": "MTT_viability_0.5ug_mL_from_figure",
+     "value_num": 115,
+     "unit": "%",
+     "from_figure": "Fig. 6A",
+     "quote": "Mitochondrial function (MTT reduction) after 24 h of treatment with increasing concentrations of AgNPs (A)."
+    },
+    {
+     "property": "MTT_viability_1.5ug_mL_from_figure",
+     "value_num": 114,
+     "unit": "%",
+     "from_figure": "Fig. 6A",
+     "quote": "Mitochondrial function (MTT reduction) after 24 h of treatment with increasing concentrations of AgNPs (A)."
+    },
+    {
+     "property": "MTT_viability_15ug_mL_from_figure",
+     "value_num": 108,
+     "unit": "%",
+     "from_figure": "Fig. 6A",
+     "quote": "Mitochondrial function (MTT reduction) after 24 h of treatment with increasing concentrations of AgNPs (A)."
+    },
+    {
+     "property": "cell_cycle_S_control_from_figure",
+     "value_num": 20,
+     "unit": "%",
+     "from_figure": "Fig. 6C",
+     "quote": "Flow cytometry analysis of cell cycle after 24 h of treatment with increasing concentrations of AgNP@R6G@BSA (C)."
+    },
+    {
+     "property": "cell_cycle_G2_control_from_figure",
+     "value_num": 8,
+     "unit": "%",
+     "from_figure": "Fig. 6C",
+     "quote": "Flow cytometry analysis of cell cycle after 24 h of treatment with increasing concentrations of AgNP@R6G@BSA (C)."
+    },
+    {
+     "property": "cell_cycle_G1_25ug_mL_from_figure",
+     "value_num": 71,
+     "unit": "%",
+     "from_figure": "Fig. 6C",
+     "quote": "Flow cytometry analysis of cell cycle after 24 h of treatment with increasing concentrations of AgNP@R6G@BSA (C)."
+    },
+    {
+     "property": "cell_cycle_S_25ug_mL_from_figure",
+     "value_num": 23,
+     "unit": "%",
+     "from_figure": "Fig. 6C",
+     "quote": "Flow cytometry analysis of cell cycle after 24 h of treatment with increasing concentrations of AgNP@R6G@BSA (C)."
+    },
+    {
+     "property": "cell_cycle_G2_25ug_mL_from_figure",
+     "value_num": 6,
+     "unit": "%",
+     "from_figure": "Fig. 6C",
+     "quote": "Flow cytometry analysis of cell cycle after 24 h of treatment with increasing concentrations of AgNP@R6G@BSA (C)."
+    },
+    {
+     "property": "cell_cycle_S_140ug_mL_from_figure",
+     "value_num": 21,
+     "unit": "%",
+     "from_figure": "Fig. 6C",
+     "quote": "Flow cytometry analysis of cell cycle after 24 h of treatment with increasing concentrations of AgNP@R6G@BSA (C)."
+    },
+    {
+     "property": "cell_cycle_G2_140ug_mL_from_figure",
+     "value_num": 9,
+     "unit": "%",
+     "from_figure": "Fig. 6C",
+     "quote": "Flow cytometry analysis of cell cycle after 24 h of treatment with increasing concentrations of AgNP@R6G@BSA (C)."
     }
    ],
    "missing_fields": [
@@ -797,7 +888,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare des nanoparticules d'argent allongées (long axe ≈ 19 nm, court axe ≈ 13 nm) par réduction de AgNO3 par l'acide ascorbique en présence de citrate de sodium, dans l'eau et dans un bain de glace. Ces particules adsorbent la rhodamine 6G (R6G) puis sont enrobées de sérum-albumine bovine (BSA) pour donner une sonde SERS biocompatible. Les auteurs montrent un facteur d'exhaussement analytique de 2,7 × 107 à 633 nm, comparent calculs FEM (champ proche) et DFT (effet chimique), et vérifient l'internalisation dans des cellules A431 sans toxicité marquée en dessous de 70 μg/mL.",
+   "text": "L'article prépare des nanoparticules d'argent allongées (long axe ≈ 19 nm, court axe ≈ 13 nm) par réduction de AgNO3 par l'acide ascorbique en présence de citrate de sodium, dans l'eau et dans un bain de glace. Ces particules adsorbent la rhodamine 6G (R6G) puis sont enrobées de sérum-albumine bovine (BSA) pour donner une sonde SERS biocompatible. Les auteurs montrent un facteur d'exhaussement analytique de 2,7 × 10^7 à 633 nm, comparent calculs FEM (champ proche) et DFT (effet chimique), et vérifient l'internalisation dans des cellules A431 sans toxicité marquée en dessous de 70 μg/mL.",
    "quote": "Anisotropic silver nanoparticles were easily produced by a one-pot method, using non-toxic reagents and water as solvent."
   },
   {
@@ -819,7 +910,7 @@
   {
    "type": "conclusion_auteurs",
    "route": "AgNPs@R6G@BSA",
-   "text": "Les auteurs concluent que la sonde amplifie fortement le signal de la R6G et reste peu toxique, avec une viabilité compatible jusqu'à 70 μg/mL ; l'AEF pourrait être plus élevé à 785 nm que les 2,7 × 107 mesurés à 633 nm.",
+   "text": "Les auteurs concluent que la sonde amplifie fortement le signal de la R6G et reste peu toxique, avec une viabilité compatible jusqu'à 70 μg/mL ; l'AEF pourrait être plus élevé à 785 nm que les 2,7 × 10^7 mesurés à 633 nm.",
    "quote": "The AgNP@R6G@BSA bioprobe has shown an extraordinary capacity to amplify the Raman signal of the R6G dye, reaching an AEF of 2.7 × 107 at 633 nm and possibly even higher at 785 nm."
   },
   {
@@ -847,12 +938,52 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNPs",
-   "text": "Hypothèse de chimiste : l'acide ascorbique, réducteur doux, réduit Ag+ en Ag0 à basse température ; l'ajout rapide favorise probablement une nucléation brusque, puis une croissance lente donnant des particules petites et peu sphériques. Le citrate sert probablement de ligand de surface qui stabilise les particules et oriente la croissance. Bilan de matière : ≈ 78 µmol d'Ag+ (3,06 mM dans ≈ 25,5 mL) pour ≈ 28 µmol d'acide ascorbique (0,5 mL à 56,7 mM, soit ≈ 57 µmol d'électrons au plus, contre ≈ 78 µmol nécessaires) : l'ascorbate est sous-stœchiométrique, donc la réduction est probablement partielle, ou le citrate (≈ 155 µmol) participe à la réduction ; une partie de l'Ag+ resterait alors en solution et serait éliminée par les trois centrifugations, ce qui laisse attendre un rendement faible."
+   "text": "Hypothèse de chimiste, non démontrée par l'article : l'ascorbate (monoanion, 2 électrons par molécule) réduit Ag+ en Ag0 dans le bain de glace ; l'ajout rapide déclenche probablement une nucléation brusque (modèle de LaMer), puis une croissance courte arrêtée par l'épuisement du réducteur. Le citrate (≈ 2 équivalents) s'adsorbe sur l'argent et assure la stabilisation électrostatique ; le citrate ne réduit Ag+ qu'à chaud (méthode de Lee et Meisel), donc pas à 0 °C en 5 min. Les formes allongées irrégulières de 19 × 13 nm s'expliquent aussi bien par la coalescence de germes que par une croissance anisotrope dirigée, et l'extinction vers 800 nm vient plus probablement du couplage de particules agrégées (DLS ≈ 150 nm) que de la forme d'une particule isolée. Bilan de matière : ≈ 76,5 µmol d'Ag+ (3,06 mM dans 25 mL) pour ≈ 28 µmol d'acide ascorbique (0,5 mL à 56,7 mM, soit ≈ 57 µmol d'électrons au plus) : au plus ≈ 74 % de l'argent peut être réduit, le reste part avec les lavages ; le rendement attendu est donc inférieur à 74 %."
   },
   {
    "type": "securite_analyse",
    "route": "AgNPs",
-   "text": "Le nitrate d'argent est oxydant, corrosif et tache la peau (gants, lunettes). Les nanoparticules d'argent sont cytotoxiques et écotoxiques : déchets liquides à collecter. Le produit séché utilisé pour la pesée (« after drying ») est une poudre nanométrique à ne pas inhaler. La R6G est un colorant toxique et mutagène suspecté ; la manipulation du sérum bovin et des lignées cellulaires relève du niveau de sécurité biologique 1 ou 2."
+   "text": "Le nitrate d'argent est oxydant, corrosif et tache la peau (gants, lunettes). Les nanoparticules d'argent sont cytotoxiques et écotoxiques : déchets liquides à collecter. Le produit séché utilisé pour la pesée (« after drying ») est une poudre nanométrique à ne pas inhaler. La rhodamine 6G est un colorant nocif (toxicité aiguë par voie orale, risque de lésions oculaires). Les essais cellulaires (lignée humaine A431, sérum) relèvent du niveau de sécurité biologique 1 ou 2 ; le paraformaldéhyde (fixation) est toxique et sensibilisant ; l'iodure de propidium (cytométrie) est suspecté d'être mutagène. Aucune de ces précautions n'est mentionnée dans l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Point venant de l'article : la bande plasmon « 650–950 nm » (légende de la Fig. 1 : « 650–1350 nm ») est attribuée à la forme allongée, mais le rapport d'aspect mesuré au MET (≈ 19/13 = 1,5) place la résonance longitudinale d'une particule d'argent isolée vers 400–440 nm (ajustements DDA publiés dans un mémoire de master de l'université Massey ; relation arXiv 2201.03426) ; une bande vers 800 nm demande un rapport d'aspect d'environ 5 à 6. Le diamètre hydrodynamique de 153,6 nm et la sédimentation à 4000 rpm (une particule isolée de 15 nm ne sédimente pas) suggèrent des agrégats. Le spectre d'une suspension diluée ou filtrée et un MET sans agrégats manquent pour trancher."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Concentration non reproductible : 2,84 mg/mL est une masse sèche (« direct weighing of a sample after drying »), qui inclut le citrate et les sels résiduels, et vaut ≈ 8,5 fois la concentration maximale d'argent possible dans la synthèse (≈ 8,3 mg d'Ag dans ≈ 25,5 mL, soit ≈ 0,33 mg/mL ; au plus ≈ 6 mg d'Ag0 si l'ascorbate est le seul réducteur). Cette valeur n'est compatible qu'avec une redispersion dans ≤ 2,15 mL, volume que l'article ne donne pas. Les doses en aval (0,65 mL × 2,84 mg/mL, µg/mL des essais cellulaires, 50 mg/L « of Ag » en DLS) en dépendent. L'ascorbate étant sous-stœchiométrique (≤ 74 % de l'Ag+ réductible), le rendement n'est pas donné non plus."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Le modèle FEM (ellipsoïde 30 × 13 × 5 nm) repose sur une épaisseur de 5 nm qui ne vient d'aucune mesure (le MET ne donne que deux dimensions) et qui fixe un rapport d'aspect de 6, celui qui place la résonance près de 785 nm : les exhaussements calculés (110–120 à 785 nm, 30 à 633 nm) décrivent une particule extrême choisie, pas la population mesurée (19 × 13 nm)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs@R6G@BSA",
+   "text": "Point venant de l'article : la R6G liée (≈ 0,6 % de la R6G introduite, soit ≈ 0,76 nmol sur 120 nmol) est obtenue par différence entre deux solutions à ≈ 156 µM dont l'absorbance non diluée serait d'environ 17 (hors de la plage linéaire), sans dilution décrite, sans réplicat ni incertitude. La valeur de 4,1 × 10−10 mol/mg fixe la concentration de R6G utilisée dans le calcul de l'AEF, qui en dépend linéairement. L'article ne dit pas si 9,8 × 10−7 M est la R6G restante ou la R6G liée rapportée au volume d'incubation (0,77 mL) ; l'arithmétique (0,65 mL × 2,84 mg/mL) penche pour la seconde lecture et pour une mesure faite avant l'ajout de la BSA."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs@R6G@BSA",
+   "text": "Point venant de l'article : l'AEF de 2,7 × 10^7 n'est pas recalculable. Il suppose la concentration de R6G dans l'échantillon Raman effectivement mesuré, or le volume de remise en suspension après la BSA n'est pas donné, ni l'état de l'échantillon (goutte, film séché) ni la puissance au point. Le rapport EM 785/633 nm calculé (≈ 2,3 à 2,4 ordres de grandeur) n'atteint pas les « almost 3 orders » annoncés, et l'accord EM × effet chimique avec l'AEF n'est qu'à un facteur ≈ 3 près sur une particule modèle non représentative. Un témoin BSA + R6G sans argent, après la même centrifugation, manque pour démontrer que la R6G est liée à l'argent et non retenue par la protéine."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs@R6G@BSA",
+   "text": "Point venant de l'article : « completely biocompatible, as no cell death was observed » (résumé) contredit la viabilité MTT de ≈ 50 % à 140 µg/mL, et le texte limite l'usage à moins de 70 µg/mL ; l'hypothèse d'apoptose avancée pour expliquer l'écart MTT/LDH n'est pas confirmée par la cytométrie, qui ne montre pas d'apoptose à la même dose. L'équation (1) de viabilité relative est imprimée avec un numérateur faux (Abs_test − Abs_négatif au lieu de Abs_test − Abs_positif). Un contrôle sans cellules d'interférence des nanoparticules d'argent avec le dosage MTT (réduction directe, absorbance plasmonique) manque (voir Kroll et al., Arch. Toxicol., 2012), et la base des doses en µg/mL (argent, masse sèche ou composite) n'est pas définie ; 6,6 mg de BSA, soit 3,6 fois la masse d'AgNPs, et 99 % de la R6G restent probablement libres après une seule centrifugation."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AgNPs@R6G",
+   "text": "Hypothèse de chimiste, non démontrée : le cation R6G s'adsorbe par attraction électrostatique sur l'argent recouvert de citrate (anionique), neutralise en partie la charge de surface et provoque une agrégation partielle (DLS : 153,6 → 269,2 nm, PDI 0,184 → 0,410), qui crée des jonctions entre particules porteuses de l'essentiel du signal SERS (travaux de Kruszewski et Cyrankiewicz, 2013). L'attribution par les auteurs d'une adsorption par une amine latérale n'est appuyée par aucune mesure. La R6G liée n'est qu'≈ 1 % d'une monocouche (≈ 4 molécules par particule)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AgNPs@R6G@BSA",
+   "text": "Hypothèse de chimiste, non démontrée : la BSA, en grand excès (≈ 575 molécules par particule), s'adsorbe sur les agrégats Ag–R6G et les stabilise stériquement dans le PBS, ce qui arrête l'agrégation induite par le colorant et le sel (214,6 nm au lieu de 269,2 nm : arrêt de l'agrégation plutôt que désagrégation). Une partie du colorant libre peut aussi être fixée par l'albumine. L'exhaussement mesuré combine un effet électromagnétique des jonctions (non modélisé : le FEM porte sur une particule isolée) et un effet chimique d'ordre 10 (DFT)."
   }
  ],
  "method_sources": [
@@ -869,8 +1000,8 @@
    "issue": "La phrase des matériaux cite l'hydroxylamine chlorhydrate (Panreac), qui n'apparaît dans aucune synthèse ; elle n'est pas extraite. La pureté « reagent grade » est reprise de la phrase générale pour les réactifs nommés."
   },
   {
-   "where": "AgNPs, étape 3, température",
-   "issue": "L'article dit que le ballon est plongé dans un bain de glace au début, puis que la réaction continue 5 min ; l'ablation du bain n'est pas mentionnée. Lecture retenue : bain de glace pendant la réaction (« low temperature » en Résultats), en value_text."
+   "where": "AgNPs, étapes 2 et 3, température",
+   "issue": "L'article dit que le ballon est plongé dans un bain de glace au début, puis que la réaction continue 5 min ; l'ablation du bain n'est pas mentionnée. Lecture retenue : bain de glace pendant la réaction (« low temperature » en Résultats), en value_text. La même citation (« dipped in an ice bath ») est portée à l'étape 2 (ajout de l'acide ascorbique), faute de texte plus précis."
   },
   {
    "where": "AgNPs, rôle du citrate de sodium",
@@ -882,11 +1013,11 @@
   },
   {
    "where": "AgNPs@R6G@BSA, concentration de R6G liée",
-   "issue": "La concentration de R6G restante (9,8 × 10−7 M ; 4,1 × 10−10 mol/mg) est calculée en comparant le surnageant après incubation et centrifugation ; l'article ne dit pas si c'est après l'étape R6G seule ou après la BSA. Rattachée à AgNPs@R6G@BSA, fin du protocole."
+   "issue": "La concentration de R6G (9,8 × 10−7 M ; 4,1 × 10−10 mol/mg) est calculée en comparant le surnageant « after incubation with the particles and centrifugation » à un blanc de 120 µL de R6G + 0,65 mL d'eau ; la BSA n'est pas mentionnée dans ce dosage et l'article ne nomme pas l'étape. Le bilan (0,65 mL × 2,84 mg/mL = 1,85 mg ; 1,85 mg × 4,1 × 10−10 mol/mg ≈ 7,6 × 10−10 mol ; ÷ 9,8 × 10−7 M ≈ 0,77 mL = 0,65 + 0,12 mL) suggère le mélange AgNPs + R6G avant l'ajout de la BSA (interprétation, non écrite). Valeurs laissées sur la voie AgNPs@R6G@BSA faute de texte qui les déplace. L'article dit « remaining concentration » alors que le libellé de l'extraction parle de R6G liée."
   },
   {
    "where": "Essais cellulaires, plage de concentration",
-   "issue": "Méthodes : de 0,5 à 140 μg/mL ; Résultats : de 0,3 à 140 μg/mL ; la Fig. 6 montre 0,5 ; 1,5 ; 15 ; 70 ; 140. Méthodes : cinq réplicats ; légende Fig. 6 : trois réplicats. Aucune valeur de synthèse concernée."
+   "issue": "Méthodes : de 0,5 à 140 μg/mL ; Résultats : de 0,3 à 140 μg/mL ; la Fig. 6 montre 0,5 ; 1,5 ; 15 ; 70 ; 140. Méthodes : cinq réplicats ; légende Fig. 6 : trois réplicats. Aucune valeur de synthèse concernée. La Fig. 6C montre un camembert à 25 µg/mL, concentration qui n'apparaît dans aucun texte ; la Fig. 6A porte un astérisque au-dessus de 70 et 140 µg/mL alors que le texte dit « not detrimental … up to 70 µg/mL »."
   },
   {
    "where": "Viabilité MTT à 140 μg/mL",
@@ -894,11 +1025,31 @@
   },
   {
    "where": "Valeurs lues sur figure",
-   "issue": "Fig. 6A (viabilité à 70 et 140 μg/mL : ≈ 83 % et ≈ 55 %) et Fig. 6C (G1 : 72 % témoin, 70 % à 140 μg/mL, étiquettes des camemberts lisibles). Précision de lecture ≈ ± 3 points pour les barres. Fig. 1 relue : l'absorbance maximale est vers 800 nm, cohérente avec le texte."
+   "issue": "Fig. 6A (viabilité à 70 et 140 μg/mL : ≈ 83 % et ≈ 55 %) et Fig. 6C (G1 : 72 % témoin, 70 % à 140 μg/mL, étiquettes des camemberts lisibles). Précision de lecture ≈ ± 3 points pour les barres. Fig. 1 relue : l'absorbance maximale est vers 800 nm, cohérente avec le texte. Ajouts : Fig. 6A barres ≈ 115 (0,5), ≈ 114 (1,5), ≈ 108 % (15 µg/mL) ; Fig. 6C étiquettes des camemberts (témoin S 20 %, G2 8 % ; 25 µg/mL G1 71, S 23, G2 6 % ; 140 µg/mL S 21, G2 9 %)."
   },
   {
    "where": "Références de méthode",
    "issue": "Une seule source de méthode retenue (B29, méthodologie du calcul Raman par DFT) ; B54 (données de Johnson et Christy) et B55 (contexte) sont des renvois de données ou de contexte. Le renvoi est de type « autre »."
+  },
+  {
+   "where": "AgNPs, étape 4, répétitions",
+   "issue": "« This process was repeated 3 times » peut se lire comme 3 cycles au total ou 1 + 3 ; la valeur 3 et les mots de l'article sont repris sans trancher."
+  },
+  {
+   "where": "AgNPs, caractérisation DLS (153,6 nm)",
+   "issue": "La phrase du résultat ne donne ni milieu ni âge de l'échantillon ; « PBS (pH = 7.4) » vient de la phrase voisine sur la stabilité (Fig. S1) et la méthode dit « milli-Q water or PBS » : le milieu de la mesure de 153,6 nm n'est donc pas retenu."
+  },
+  {
+   "where": "Exposants (2,7 × 10^7 ; 8 × 10^5 ; 2 × 10^8)",
+   "issue": "Le texte du corpus a perdu les exposants (2.7 × 107, 8 × 105, 2 × 108) lors de la conversion du XML. Valeurs lues : 2,7 × 10^7 (AEF), 8 × 10^5 et 2 × 10^8 (contribution EM, rapport de 250 cohérent avec « almost 3 orders of magnitude »). Les citations restent telles que dans le corpus."
+  },
+  {
+   "where": "Légende de la Fig. 1 et de la Fig. 4",
+   "issue": "La légende de la Fig. 1 dit « 650–1350 nm » alors que le texte dit « 650–950 nm » ; la légende de la Fig. 4A dit « pure R6G solution » et le texte « pure solid R6G crystals » ; la Fig. 4 ne précise pas la longueur d'onde des spectres (785 nm supposé d'après la méthode du Bruker). Valeurs du texte retenues."
+  },
+  {
+   "where": "AgNPs@R6G, échantillon et volume final",
+   "issue": "Volume de redispersion de la suspension d'AgNPs, volume de remise en suspension après la BSA et préparation des échantillons AgNP@R6G et AgNP@BSA mesurés en DLS et Raman : non décrits."
   }
  ]
 }
