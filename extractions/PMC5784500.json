@@ -83,7 +83,7 @@
     "Table 3",
     "Fig. 8a"
    ],
-   "why": "synthèse non décrite (NaY à la place de HY, pH non précisé)"
+   "why": "synthèse non décrite (NaY à la place de HY, pH non précisé) ; rangée du Tableau 3 gardée dans une annotation citée, sans voie inventée"
   },
   {
    "sample": "SBA-15 (référence)",
@@ -106,12 +106,12 @@
   {
    "sample": "Y traité par H2SO4 (RMN, masse)",
    "defined_in": "Results, Possible mechanism",
-   "route": null,
+   "route": "HY",
    "results_in": [
     "Fig. 11",
     "Fig. 12"
    ],
-   "why": "traitement acide de HY non décrit (concentration, durée)"
+   "why": "HY après traitement acide (acide, concentration et durée non décrits) ; résultats RMN et masse rangés dans les caractérisations de HY parce que le texte nomme HY"
   },
   {
    "sample": "Spectres Raman UV 1 à 5 (phases liquide et solide)",
@@ -120,7 +120,7 @@
    "results_in": [
     "Fig. 9"
    ],
-   "why": "prélèvements en cours de cristallisation, non détaillés"
+   "why": "prélèvements en cours de cristallisation, non détaillés ; bandes chiffrées rangées dans les caractérisations UV Raman de SYS2, correspondance spectre / échantillon non définie par le texte"
   },
   {
    "sample": "Craquage thermique du PS seul",
@@ -129,7 +129,7 @@
    "results_in": [
     "Table 4 (colonne PS)"
    ],
-   "why": "témoin sans catalyseur, aucun matériau synthétisé"
+   "why": "témoin sans catalyseur, aucun matériau synthétisé ; colonne PS complète du Tableau 4 gardée dans une annotation citée"
   },
   {
    "sample": "PS+HY",
@@ -585,6 +585,27 @@
      "instrument": "homemade hydrocracking micro-reactor device",
      "conditions": "conditions du test avec HY non détaillées (le protocole décrit est celui de SYS2, m(catalyseur):m(PS) = 1:2)",
      "quote": "Benzene | | 49.22 | 58.43"
+    },
+    {
+     "technique": "29Si MAS NMR",
+     "result": "HY traité par H2SO4 (traitement non décrit) : pics 29Si à δ = –88.48, –94.12, –98.14 et –103.81, attribués dans l'ordre à Si (3Al), Si (2Al), Si (1Al) et Si (0Al) ; après traitement acide les signaux se déplacent vers les hauts champs et s'élargissent",
+     "instrument": "Bruker MSL-300 NMR spectrometer (Allemagne)",
+     "conditions": "fréquence de résonance 59.592 MHz, rotation 4 kHz, champ RF 37 kHz, angle 60°, temps de cycle 2 s",
+     "quote": "The peaks in the 29Si spectra of HY molecular sieves when δ = –88.48, –94.12, –98.14, and –103.81 are in turn attributed to Si (3Al), Si (2Al), Si (1Al), and Si (0Al) in their skeletons."
+    },
+    {
+     "technique": "27Al MAS NMR",
+     "result": "HY traité par H2SO4 (traitement non décrit) : nouveau pic à δ = 0 ; pic de l'Al tétracoordiné à δ = 55 nettement élargi (attribution des auteurs : Al hexacoordiné de la charpente devenu tétracoordiné)",
+     "instrument": "Bruker MSL-300 NMR spectrometer (Allemagne)",
+     "conditions": "fréquence de résonance 78.205 MHz, rotation 3 kHz, champ RF 51 kHz, angle 18°, temps de cycle 500 s",
+     "quote": "From the 27Al MAS NMR spectra, the acid treated HY molecular sieve appears a new peak at δ = 0, which shows that acid treatment turns the original HY molecular sieve with six-coordinated Al on the skeleton part to four-coordinated Al. It can be seen that the peak of the four-coordinated Al at δ = 55 is obviously broadened"
+    },
+    {
+     "technique": "ESI-MS (ions négatifs)",
+     "result": "HY dissous dans la phase liquide de H2SO4 : m/z = 30.7 et 75 attribués à C6H3 et HSiAlO3 3+ ; pic de fragmentation principal H6Al2Si2O12 2− à m/z = 154",
+     "instrument": "LTQ XL linear ion mass spectrometer (Thermo, USA), source ESI",
+     "conditions": "mode d'ions négatifs, domaine déclaré m/z 100–900 Da, tension d'aspersion 4 kV, tension du capillaire –20 V",
+     "quote": "As can be seen from Figure 12, the mass spectra values m/z = 30.7 and 75 correspond to C6H3 and HSiAlO33+, respectively. The major fragmentation peak of the secondary structure is H6Al2Si2O122- (m/z = 154)"
     }
    ],
    "outcomes": [
@@ -906,7 +927,7 @@
     },
     {
      "technique": "SEM",
-     "result": "morphologie tubulaire continue",
+     "result": "morphologie tubulaire continue (échantillon filtré et séché, non calciné)",
      "instrument": null,
      "conditions": "grossissement 250,000–1,000,000 X, tension 0.1–30 kV",
      "quote": "Surface morphology of the samples was studied by scanning electron microscopy (SEM) at a magnification of 250,000–1,000,000 microscope (SEM) with a magnification of 250,000–1,000,000 X at an accelerating voltage of 0.1–30 kV."
@@ -957,19 +978,19 @@
      "technique": "Py-FTIR",
      "result": "bandes à 1542 et 1450 cm−1 (pyridine chimisorbée) ; l'ajout de HY améliore l'acidité du composite",
      "instrument": "Bio-Rad FTS15/C spectrometer",
-     "conditions": null,
+     "conditions": "désorption de la pyridine à 473 K et à 673 K (valeurs lues sur la légende des courbes de la Fig. 8, non écrites dans le texte) ; échantillons NaY/SBA-15 (a) et HY/SBA-15 (b), ce dernier identifié à SYS2 sans que l'article le dise",
      "quote": "Pyrolysis Fourier transform infrared (Py-FTIR) spectra were recorded on a Bio-Rad FTS15/C spectrometer (Shimadzu, Japan) to determine the surface acid site types (B acid, L acid)."
     },
     {
      "technique": "NH3-TPD",
-     "result": "HY/SBA-15 : acidité totale 0.823 mmol·g−1 ; fortes 20.87 %, moyennes 42.95 %, faibles 36.18 %",
+     "result": "HY/SBA-15 (identifié à SYS2 sans que l'article le dise) : acidité totale 0.823 mmol·g−1 ; fortes 20.87 %, moyennes 42.95 %, faibles 36.18 %",
      "instrument": null,
      "conditions": null,
      "quote": "HY/SBA-15 | 20.87 | 42.95 | 36.18 | 0.823"
     },
     {
      "technique": "UV Raman",
-     "result": "spectres en phase liquide et solide pendant la cristallisation (figure 9)",
+     "result": "spectres en phase liquide et solide pendant la cristallisation (Fig. 9) ; bandes chiffrées ci-dessous",
      "instrument": "RM2000 Raman spectrometer, Renishaw, UK",
      "conditions": "laser He–Cd 325 nm, puissance ≈ 4.5 mW sur l'échantillon",
      "quote": "Excitation was provided by a helium–cadmium laser at 325 nm and the laser power at the sample position was about 4.5 mW."
@@ -980,6 +1001,48 @@
      "instrument": "homemade hydrocracking micro-reactor device",
      "conditions": "m(SYS2):m(PS) = 1:2, mélange homogène, purge N2 5 min, chauffage à 20 °C/min jusqu'à 650 °C ; produits liquides analysés par chromatographie liquide après condensation",
      "quote": "The device was slowly purged with N2 for 5 min and heated up to the decomposition temperature at a heating rate of 20 °C/min for the catalytic degradation to occur."
+    },
+    {
+     "technique": "UV Raman (bandes)",
+     "result": "bandes à 380, 520 et 610 cm−1 (attribuées à P123) dans tous les spectres sauf le spectre 2",
+     "instrument": "RM2000 Raman spectrometer, Renishaw, UK",
+     "conditions": "laser He–Cd 325 nm, puissance ≈ 4.5 mW sur l'échantillon",
+     "quote": "Characteristic bands at 380, 520, and 610 cm−1, attributed to P123, appeared in all the spectra except for spectrum 2."
+    },
+    {
+     "technique": "UV Raman (bandes)",
+     "result": "spectre 3 par rapport au spectre 4 : nouvelle bande à 298 cm−1 et bande de 520 déplacée à 514 cm−1",
+     "instrument": "RM2000 Raman spectrometer, Renishaw, UK",
+     "conditions": "laser He–Cd 325 nm, puissance ≈ 4.5 mW sur l'échantillon",
+     "quote": "Compared to spectrum 4, spectrum 3 showed a new characteristic peak at 298 cm−1 and the initial peak at 520 cm−1 shifted to 514 cm−1"
+    },
+    {
+     "technique": "UV Raman (bandes)",
+     "result": "spectre 1 : bande à 778 cm−1 (espèces silicatées oligomères en phase liquide)",
+     "instrument": "RM2000 Raman spectrometer, Renishaw, UK",
+     "conditions": "laser He–Cd 325 nm, puissance ≈ 4.5 mW sur l'échantillon",
+     "quote": "In spectrum 1, the band at 778 cm−1 could be assigned to the oligomeric silicon species in the liquid phase"
+    },
+    {
+     "technique": "UV Raman (bandes)",
+     "result": "singulets à 1024 et 1310 cm−1 (espèces silicatées en phase liquide) ; le spectre n'est pas nommé dans la phrase",
+     "instrument": "RM2000 Raman spectrometer, Renishaw, UK",
+     "conditions": "laser He–Cd 325 nm, puissance ≈ 4.5 mW sur l'échantillon",
+     "quote": "The characteristic singlets at 1024 and 1310 cm−1 were attributed to the silicon species in the liquid phase."
+    },
+    {
+     "technique": "UV Raman (bandes)",
+     "result": "spectre 2 : une seule bande à 985 cm−1 (SO4 2−)",
+     "instrument": "RM2000 Raman spectrometer, Renishaw, UK",
+     "conditions": "laser He–Cd 325 nm, puissance ≈ 4.5 mW sur l'échantillon",
+     "quote": "In spectrum 2, only one band at 985 cm−1, attributed to SO42-, could be observed."
+    },
+    {
+     "technique": "UV Raman (bandes)",
+     "result": "spectre 5 : bandes à 298 et 380 cm−1 (cycles à six atomes doubles) et bandes de SBA-15 vers 500, 606, 808 et 976 cm−1",
+     "instrument": "RM2000 Raman spectrometer, Renishaw, UK",
+     "conditions": "laser He–Cd 325 nm, puissance ≈ 4.5 mW sur l'échantillon",
+     "quote": "In spectrum 5, the characteristic bands at 298 and 380 cm−1 were assigned to the breathing vibrations of dual-hexatomic rings, whereas the typical vibrational bands of SBA-15 appeared at around 500, 606, 808, and 976 cm−1."
     }
    ],
    "outcomes": [
@@ -1280,7 +1343,7 @@
   {
    "type": "tendance_observee",
    "route": "SYS2",
-   "text": "L'ajout de HY augmente la part des acides moyens et forts par rapport au composite NaY/SBA-15 (non décrit en voie : sa synthèse n'est pas écrite). Rangée NaY/SBA-15 : fortes 24.60 %, moyennes 38.79 %, faibles 37.61 %, acidité totale 0.738 mmol·g−1, à comparer à 20.87 / 42.95 / 36.18 % et 0.823 mmol·g−1 pour HY/SBA-15.",
+   "text": "D'après le Tableau 3, comparé au composite NaY/SBA-15 (non décrit en voie : sa synthèse n'est pas écrite), HY/SBA-15 a une acidité totale plus élevée (0.738 puis 0.823 mmol·g−1). Par classe, la part des acides forts baisse (24.60 puis 20.87 %), celle des acides moyens monte (38.79 puis 42.95 %) et celle des acides faibles baisse légèrement (37.61 puis 36.18 %). L'affirmation du texte selon laquelle les acides moyens et forts augmentent ne vaut donc que pour les moyens. HY/SBA-15 est identifié à SYS2 sans que l'article le dise (voir les doutes).",
    "quote": "NaY/SBA-15 | 24.60 | 38.79 | 37.61 | 0.738"
   },
   {
@@ -1292,8 +1355,20 @@
   {
    "type": "mecanisme_auteurs",
    "route": "SYS2",
-   "text": "Selon les auteurs, HY se dissocie partiellement dans la solution acide en unités structurales secondaires (cycles à quatre atomes contenant de l'aluminium), qui se lient à la coque SBA-15 par des liaisons Si–O ; le pH 6 protège la charpente (effet tampon), le pH 2 favorise la polymérisation rapide des silicates, le pH 1 retire trop d'aluminium et dégrade FAU.",
+   "text": "Selon les auteurs, HY se dissocie partiellement dans la solution de H2SO4 et donne des unités structurales secondaires.",
    "quote": "HY dissociated partially in the H2SO4 solution (pH = 6) and consisted of secondary structural units."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "SYS2",
+   "text": "Selon les auteurs, le milieu faiblement acide se comporte comme un tampon qui protège la structure de la zéolithe Y ; en acidifiant davantage, la polymérisation rapide des silicates forme la phase mésoporeuse (pH 2) ; à pH 1, davantage d'aluminium est retiré de la charpente et les cristaux FAU se dégradent.",
+   "quote": "This reversible reaction medium showed some buffer-like properties in maintaining the pH value and had protective effect on the Y-type microporous zeolite structure. As the acidity increased gradually (<pH 6 < 2), a rapid polymerization of the silicates occurred in the second step, which promoted the formation of the mesoporous phase (pH = 2). Increase in the amount of acid (pH = 1) introduced led to an increase in amount of aluminum removed from the framework and consequently the degradation of FAU type crystals."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "SYS2",
+   "text": "Selon les auteurs, l'aluminium se place de préférence sur les cycles à quatre atomes ; l'unité secondaire correspondante, moins stable quand Si remplace Al (pH 4), joue un rôle de guide et se lie étroitement à SBA-15 par une liaison Si–O (pH 2).",
+   "quote": "It was proved by the self-consistent field molecular orbital calculation that, considering the energy aspect, Al preferably existed on the tetra-rings. This framework structure was more stable than its presence in the isolated form on the same ring or in the absence of Al []. Since the bond length of Si–O (0.165 nm) was smaller than that of Al–O (0.175 nm), substitution of Si at the Al position led to irregular contraction of crystal cell and decrease in stability (pH = 4). Thus, it played a guiding role and connected with SBA-15 closely through the Si–O bond (pH = 2)."
   },
   {
    "type": "mecanisme_analyse",
@@ -1308,12 +1383,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "SYS2",
-   "text": "Probablement, le TEOS s'hydrolyse à pH acide et se condense autour des micelles de P123 ; les cristaux HY, partiellement attaqués par H2SO4, servent de support d'enrobage. À pH 2 la condensation est assez rapide pour former une coque ordonnée sans détruire le cœur, tandis qu'à pH 1 l'extraction d'aluminium dégrade complètement Y. La calcination à 550 °C élimine P123 et ouvre les mésopores."
+   "text": "Hypothèse : en milieu H2SO4, HY (Si/Al 2.44, peu stable en acide) se désaluminerait : l'Al de charpente passerait en Al octaédrique hors charpente et en Al3+ dissous, et la charpente s'amorphiserait en partie (signaux 29Si élargis, pics FAU affaiblis). En parallèle, le TEOS s'hydrolyserait et se condenserait autour des micelles de P123 par l'assemblage (S0H+)(X−)(I+) décrit par Zhao et al. (Science, 1998), condensation qui n'est rapide qu'en dessous de pH ≈ 2. La mésophase se déposerait en partie sur les cristaux de HY (nucléation hétérogène sur les silanols créés par l'attaque acide) et en partie seule (cordons de la Fig. 4c) ; l'aluminium lixivié serait en partie incorporé à la silice. À pH 4 ou plus la silice ne s'organiserait pas, et à pH 1 la zéolithe Y serait entièrement dissoute. Le rôle de guide des unités secondaires à cycles de quatre atomes, invoqué par les auteurs, n'est pas démontré. La calcination à 550 °C éliminerait ensuite P123 et ouvrirait les mésopores."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Dangers non mentionnés par l'article : H2SO4 à 10 mol/L (corrosif, projections lors de l'ajout goutte à goutte), soude concentrée de la synthèse de NaY, TEOS inflammable et libérant de l'éthanol à l'hydrolyse, chauffage à 90–100 °C en récipient fermé, calcinations jusqu'à 550 °C, craquage du polystyrène à 650 °C produisant du styrène, du benzène et du toluène (vapeurs toxiques et inflammables), poudres nanométriques et fines de zéolithe à manipuler sous aspiration."
+   "text": "Dangers non mentionnés par l'article : H2SO4 à 10 mol/L (corrosif, projections lors de l'ajout goutte à goutte), soude concentrée de la synthèse de NaY, TEOS inflammable et libérant de l'éthanol à l'hydrolyse, chauffage à 90–100 °C en récipient fermé, calcinations jusqu'à 550 °C, craquage du polystyrène à 650 °C produisant du styrène, du benzène et du toluène (vapeurs toxiques et inflammables), poudres nanométriques et fines de zéolithe à manipuler sous aspiration. L'hydrolyse du TEOS libère ≈ 8 g d'éthanol qui, chauffé à 100 °C, impose un récipient fermé tenant la pression ; le benzène formé lors du craquage du polystyrène est cancérogène (CLP Carc. 1A) : condenser et manipuler sous hotte."
   },
   {
    "type": "limite_reproductibilite",
@@ -1324,7 +1399,58 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les figures 1 (DRX) et 7 (distribution de tailles de pores) ont été ouvertes ; les autres figures (MEB, MET, isothermes, Py-FTIR, Raman UV, RMN, spectre de masse) sont qualitatives et n'ont pas été relues. Les valeurs quantitatives utiles (tailles de pores, acidité) sont dans le texte ou les tableaux. Aucune annexe n'est renvoyée par l'article."
+   "text": "Les figures 1 (DRX), 7 (distribution de tailles de pores) et 8 (Py-FTIR) ont été ouvertes ; les autres figures (MEB, MET, isothermes, Raman UV, RMN, spectre de masse) sont qualitatives et n'ont pas été relues pour cette extraction. Les températures de désorption de la pyridine (473 et 673 K) sont lues sur la Fig. 8. Les valeurs quantitatives utiles (tailles de pores, acidité) sont dans le texte ou les tableaux. Aucune annexe n'est renvoyée par l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SYS2",
+   "text": "Contradiction entre le texte et le Tableau 3 : l'article écrit que, par rapport à NaY/SBA-15, la part des acides moyens et forts de HY/SBA-15 augmente, alors que la part des acides forts baisse (24.60 puis 20.87 %) ; seule la part des acides moyens augmente (38.79 puis 42.95 %), et la somme moyens plus forts reste presque inchangée (63.4 puis 63.8 %, somme calculée sur les valeurs du tableau). Valeurs du tableau gardées telles quelles."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Colonne « PS » du Tableau 4, craquage thermique du polystyrène sans catalyseur (aucun matériau synthétisé, donc sans voie) : toluène 1.82 %, éthylbenzène 3.10 %, styrène 69.15 %, autres composants recombinés 22.76 %, coke 3.15 % ; benzène et cumène non rapportés (cases vides). C'est la référence qui donne leur sens aux colonnes PS+HY et PS+SYS2.",
+   "quote": "The thermal cracking of PS alone produced styrene monomer as the major product."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NaY",
+   "text": "Gel de NaY : la phrase de préparation du gel n'ajoute que l'aluminate de sodium, la soude, l'eau et la solution de germes, alors que la composition finale annoncée (4.3 Na2O:Al2O3:10 SiO2:180 H2O) est impossible sans verre soluble dans le gel. Les seuls germes (15 SiO2 et 16 Na2O pour un Al2O3) n'apportent 10 SiO2 par Al2O3 qu'avec un rapport Na2O/Al2O3 d'au moins 10.7, supérieur à 4.3 (bilan du critique scientifique). Du verre soluble doit donc être ajouté, en quantité non dite, et la part de l'aluminium venant des germes n'est pas donnée. La recette vérifiée de l'IZA pour la NaY (Linde Type Y, méthode de Ginter, Bell et Radke) a une composition finale voisine (gel global 4.62 Na2O:Al2O3:10 SiO2:180 H2O, germes = 5 % de l'Al) et peut aider à combler les quantités. Le « lavage à 110 °C » est vraisemblablement le séchage (l'eau bout à 100 °C) : citation gardée telle quelle (voir les doutes)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SYS2",
+   "text": "« pH 2 » ne fixe pas la quantité d'acide : il faut environ 0.3 mmol de H+ libre pour atteindre pH 2 dans une trentaine de mL, mais 4 g de HY (≈ 19 mmol d'Al) peuvent en consommer jusqu'à ≈ 58 mmol en se désaluminant (estimation du critique scientifique, ≈ 3 H+ par Al extrait). Le pH dépend donc du moment de la mesure et de la vitesse d'ajout de HY, et le volume de H2SO4 10 mol/L n'est pas donné. Par ailleurs P123 représente ≈ 12 % de la masse (4 g dans 30 g d'eau) contre ≈ 2.6 % dans la recette de Zhao et al. (Science, 1998, 279, 548), qui opère dans HCl 2 mol/L au-dessous de pH 1 ; au-delà de ≈ 6 % de copolymère, le groupe de Stucky (brevet US 6 592 764) n'obtient qu'un gel de silice ou rien, et entre pH 2 et 6 sans préhydrolyse du TEOS Zhao et al. n'obtiennent pas de mésophase ordonnée. Le récipient du mûrissement et de la cristallisation à 100 °C n'est pas précisé : ≈ 8 g d'éthanol sont libérés par l'hydrolyse du TEOS, ce qui impose un récipient fermé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SYS2",
+   "text": "Tableau 1 : les pourcentages atomiques d'Al ne correspondent pas aux pourcentages massiques de la même rangée (O, Na et Si concordent à ± 0.01 près). Recalculés à partir des pourcentages massiques, les rapports Si:Al valent ≈ 15 (point A), 27 (B), 18 (C) et 25 (D), contre 5, 81.25, 4.6 et 91 annoncés ; au point D la rangée donne même 79.5 et non 91. Le contraste entre cœur (Si:Al ≈ 5) et coque (≈ 80 à 90), sur lequel les auteurs fondent la preuve EDS de la structure cœur–coque, est donc fragile ; même le cœur recalculé (Si:Al ≈ 15 à 18) est loin de la zéolithe Y de départ (2.44). Valeurs gardées telles quelles (calcul du critique scientifique, masses atomiques IUPAC)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SYS2",
+   "text": "Tableau 2 : les deux rangées de SYS2 (« mesoporous » et « micropores ») additionnent ≈ 900 m2·g−1 et 0.573 cm3·g−1, alors que l'isotherme de la Fig. 6, lue approximativement par le critique, donne ≈ 400 à 450 m2·g−1 et ≈ 0.40 cm3·g−1 au total ; la rangée « mesoporous » (406.588 m2·g−1) correspond probablement à la surface BET totale, et la méthode de partition micro/méso n'est pas dite. La taille de 1.85 nm attribuée aux micropores provient d'une distribution BJH, méthode non valable sous ≈ 2 à 4 nm (Thommes et al., rapport technique IUPAC, Pure Appl. Chem., 2015) : elle ne décrit pas les micropores de la faujasite (fenêtres ≈ 0.74 nm). Enfin, les Méthodes déclarent un balayage SXRD de 0.4–0.8°, alors que les pics (100), (110) et (200) de la Fig. 1a se situent vers 2θ ≈ 1 à 2° : l'une des deux indications est fausse. Valeurs gardées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SYS2",
+   "text": "Mécanisme et témoins : les auteurs décrivent des micelles de P123 « négatives » autour desquelles s'agrègent des espèces silicatées « positives » ; P123 est un copolymère non ionique, et l'assemblage de SBA-15 sous le point isoélectrique de la silice passe par la voie (S0H+)(X−)(I+) (Zhao et al., Science, 1998), la silice étant quasi neutre à pH 2. La structure cœur–coque n'est pas distinguée d'un mélange physique de HY désaluminée et de SBA-15 (EDS en projection, cordons tubulaires de plusieurs µm à la Fig. 4c, pics FAU affaiblis) : il manque les témoins « mélange mécanique HY + SBA-15 » aux mêmes proportions et « HY traitée au même pH sans TEOS », et une cartographie EDS sur coupe. Ces manques affaiblissent aussi la comparaison des craquages HY contre SYS2, qui change à la fois la teneur en zéolithe (≈ 59 % de HY en masse dans SYS2, calcul du critique), la désalumination, le sodium résiduel et la porosité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "HY",
+   "text": "RMN et spectrométrie de masse (Fig. 11 et 12, échantillon : HY traité par H2SO4, traitement non décrit). RMN 27Al : l'attribution est inversée par rapport à l'usage ; le nouveau pic à δ ≈ 0 est de l'Al hexacoordiné (octaédrique, hors charpente) issu de la désalumination et le pic vers 55–60 ppm est l'Al tétraédrique de charpente, alors que les auteurs écrivent « six-coordinated Al … to four-coordinated Al » ; l'élargissement du pic à 55 ppm traduit un environnement moins uniforme, non « amélioré » (source citée par le critique : document de l'ETH Zurich Research Collection sur des Y désaluminées). Masse : m/z 30.7 est attribué à C6H3 (masse ≈ 75) et m/z 75 à HSiAlO3 3+ (masse ≈ 104, soit m/z ≈ 34.7), deux valeurs hors du domaine m/z 100–900 déclaré, et un ion 3+ est attribué en mode d'ions négatifs ; seule l'attribution de m/z 154 (H6Al2Si2O12 2−) est arithmétiquement juste. Ces spectres ne prouvent donc pas la présence de cycles à quatre atomes Al–Si dans la phase liquide."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SYS6",
+   "text": "Contradiction entre le texte et la Fig. 1b : le texte écrit que de très faibles pics apparaissent aux grands angles (« Very weak peaks appeared in the wide-angle region »), alors que la figure, lue par les critiques, montre pour SYS6 (courbe violette) les raies de la faujasite les plus intenses de la série (111 vers 6°, plus de 5000 cps) ; SYS1 n'y montre qu'une bosse amorphe. Le texte est extrait tel quel. Les pics (100), (110) et (200) de la Fig. 1a apparaissent surtout sur SYS1 et SYS2, sans que le texte le dise."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SYS1",
+   "text": "Sur la Fig. 1b, la courbe de SYS1 montre une bosse amorphe et une raie fine vers 2θ ≈ 31.7° que le texte ne commente pas ; cette position est compatible avec NaCl (200), hypothèse du critique scientifique seulement (lecture approximative de la figure)."
   }
  ],
  "method_sources": [
@@ -1367,8 +1493,8 @@
    "issue": "Le texte donne un rapport atomique Si:Al de 91 au point D, mais la rangée du tableau (Si 0.318, Al 0.004) donne 79.5. Valeur du texte extraite, rangée citée dans la caractérisation ; contradiction non corrigée. Points A (4.97), B (81.25) et C (4.6) concordent."
   },
   {
-   "where": "HY/SBA-15 (Table 3, Py-FTIR)",
-   "issue": "L'article ne dit pas que HY/SBA-15 est SYS2 ; l'échantillon est rattaché à SYS2 car c'est le composite HY/SBA-15 utilisé partout ailleurs. Autre lecture possible : un composite préparé à un autre pH."
+   "where": "HY/SBA-15 (Table 3, Py-FTIR, Fig. 8b) rattaché à SYS2",
+   "issue": "L'article n'écrit jamais que HY/SBA-15 est SYS2, ni à quel pH HY/SBA-15 et NaY/SBA-15 ont été préparés. Le rattachement à SYS2 est une identification de l'extracteur, gardée parce que HY/SBA-15 est le seul composite HY/SBA-15 décrit ; les résultats concernés portent le nom HY/SBA-15 et leur caractérisation le signale. Autre lecture possible : un composite préparé à un autre pH."
   },
   {
    "where": "Table 2",
@@ -1384,11 +1510,31 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Les figures 1 (DRX) et 7 (distribution de tailles de pores) ont été ouvertes ; elles confirment le texte (pic de micropores vers 1,85 nm, pic de mésopores vers 5–6 nm) et ne fournissent aucune valeur supplémentaire ; aucune valeur lue sur figure n'est extraite."
+   "issue": "Les figures 1 (DRX), 7 (distribution de tailles de pores) et 8 (Py-FTIR) ont été ouvertes. Fig. 1 et 7 confirment le texte (pic de micropores vers 1.85 nm, pic de mésopores vers 5–6 nm) ; Fig. 8 : températures de désorption de la pyridine 473 K et 673 K, lues sur la légende des courbes (valeurs de légende, sans lecture graphique). Les bandes étiquetées sur la figure (1544 et 1442 cm−1 pour NaY/SBA-15, 1542 et 1455 cm−1 pour HY/SBA-15) diffèrent de moins de 1 % des valeurs du texte (1542, 1450, 1442 cm−1) ; valeurs du texte gardées."
   },
   {
    "where": "Y crystals / HY",
    "issue": "Le protocole dit « Y crystals » à l'étape d'ajout et « m(HY) » dans les rapports massiques ; HY retenu comme réactif (intermédiaire de la voie HY)."
+  },
+  {
+   "where": "RMN 27Al/29Si et ESI-MS (Fig. 11 et 12), rattachement à HY",
+   "issue": "Les spectres portent sur HY traité par H2SO4 (légende de la Fig. 11 : « H2SO4-treated Y zeolite samples »), sans acide, concentration ni durée. Les résultats sont rangés dans les caractérisations de la voie HY parce que le texte nomme HY (« HY molecular sieves », « acid treated HY molecular sieve », « HY is dissolved in the liquid phase of H2SO4 ») ; l'échantillon mesuré n'est pas HY tel que préparé. Les attributions des auteurs sont reprises telles quelles, malgré leurs incohérences (voir l'annotation limite_reproductibilite de HY)."
+  },
+  {
+   "where": "UV Raman (Fig. 9), spectres 1 à 5",
+   "issue": "Le texte numérote les spectres 1 à 5 sans dire à quel pH, à quel instant de la cristallisation ni dans quelle phase (liquide ou solide) chacun correspond ; seul le spectre 2 est relié à pH 2 et à H2SO4. Les bandes sont rangées dans les caractérisations de SYS2 sans que l'on puisse rattacher un spectre à un échantillon. Les singulets à 1024 et 1310 cm−1 suivent la phrase du spectre 1 sans que le spectre soit nommé."
+  },
+  {
+   "where": "Table 3 contre le texte",
+   "issue": "Le texte écrit que la part des acides moyens et forts de HY/SBA-15 augmente par rapport à NaY/SBA-15, alors que le tableau donne des acides forts en baisse (24.60 puis 20.87 %). Valeurs du tableau extraites, texte cité dans l'annotation correspondante."
+  },
+  {
+   "where": "Table 1, colonne Al atomique",
+   "issue": "Les pourcentages atomiques d'Al ne concordent pas avec les pourcentages massiques de la même rangée : Si:Al recalculé à partir des masses ≈ 15, 27, 18 et 25 (points A à D) contre 5, 81.25, 4.6 et 91 dans le texte. Valeurs de l'article extraites sans correction (voir l'annotation limite_reproductibilite)."
+  },
+  {
+   "where": "SYS6, Fig. 1b contre le texte",
+   "issue": "Le texte décrit de « very weak peaks » aux grands angles pour SYS6, alors que la Fig. 1b montre pour SYS6 les raies de la faujasite les plus intenses de la série. Texte extrait tel quel ; contradiction signalée dans l'annotation limite_reproductibilite de SYS6."
   }
  ]
 }
