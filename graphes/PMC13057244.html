@@ -1,0 +1,148 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC13057244</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC13057244 — Direct recycling of end-of-life lithium-ion batteries cathode active materials by hydrothermal route.</h1>
+<h2>Voie : Spent_CAM</h2>
+<pre class="mermaid">flowchart LR
+  R15378([&quot;spent LG Chem E63B NMC pouch cells (Hyundai …&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15378 --&gt;|&quot;precursor&quot;| S18290
+  S18290[&quot;&lt;b&gt;1. discharge&lt;/b&gt;&quot;]:::etape
+  S18290 --&gt; S18291
+  S18291[&quot;&lt;b&gt;2. disassemble&lt;/b&gt;&quot;]:::etape
+  S18291 --&gt; S18292
+  S18292[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S18292 --&gt; S18293
+  S18293[&quot;&lt;b&gt;4. sonicate&lt;/b&gt;&quot;]:::etape
+  S18293 --&gt; S18294
+  S18294[&quot;&lt;b&gt;5. filter&lt;/b&gt;&quot;]:::etape
+  S18294 --&gt; S18295
+  S18295[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S18295 --&gt; M
+  M{{&quot;spent NMC622 cathode active material (pre-treated…&lt;br/&gt;LixNiyMnwCozO2&quot;}}:::materiau
+  O74370[&quot;Li_content : 6.21 wt %&quot;]:::resultat
+  M -.-&gt; O74370
+  O74371[&quot;Ni_content : 36.928 wt %&quot;]:::resultat
+  M -.-&gt; O74371
+  O74372[&quot;Mn_content : 10.6 wt %&quot;]:::resultat
+  M -.-&gt; O74372
+  O74373[&quot;Co_content : 8.379 wt %&quot;]:::resultat
+  M -.-&gt; O74373
+  O74374[&quot;Li_over_Ni_Mn_Co_molar_ratio : 0.928&quot;]:::resultat
+  M -.-&gt; O74374
+  O74375[&quot;apparent_lithium_deficiency : 7.2 %&quot;]:::resultat
+  M -.-&gt; O74375
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : M1</h2>
+<pre class="mermaid">flowchart LR
+  R15379([&quot;Spent_CAM (poudre de cathode usagée, voie Sp…&lt;br/&gt;50 g/L&quot;]):::reactif
+  R15379 --&gt;|&quot;intermediate&quot;| S18296
+  R15380([&quot;lithium hydroxide (LiOH)&lt;br/&gt;4 M&quot;]):::reactif
+  R15380 --&gt;|&quot;precursor&quot;| S18296
+  R15381([&quot;water (aqueous LiOH medium)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15381 --&gt;|&quot;solvent&quot;| S18296
+  R15382([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15382 --&gt;|&quot;wash&quot;| S18296
+  S18296[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;concentration : 50 g/L&quot;]:::etape
+  S18296 --&gt; S18297
+  S18297[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 160 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;stirring_speed : 300 rpm&quot;]:::etape
+  S18297 --&gt; S18298
+  S18298[&quot;&lt;b&gt;3. filter&lt;/b&gt;&quot;]:::etape
+  S18298 --&gt; S18299
+  S18299[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&quot;]:::etape
+  S18299 --&gt; S18300
+  S18300[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S18300 --&gt; S18301
+  S18301[&quot;&lt;b&gt;6. anneal&lt;/b&gt;&lt;br/&gt;temperature : 850 °C&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S18301 --&gt; M
+  M{{&quot;regenerated NMC622 cathode active material&lt;br/&gt;LiNi0.6Mn0.2Co0.2O2&quot;}}:::materiau
+  O74382[&quot;lattice_parameter_a : 2.86 Å&quot;]:::resultat
+  M -.-&gt; O74382
+  O74383[&quot;lattice_parameter_c : 14.19 Å&quot;]:::resultat
+  M -.-&gt; O74383
+  O74384[&quot;cell_volume : 100.8 Å3&quot;]:::resultat
+  M -.-&gt; O74384
+  O74385[&quot;I003_I104_ratio : 1.18&quot;]:::resultat
+  M -.-&gt; O74385
+  O74386[&quot;discharge_capacity_cycle_1 : 156 mAh/g&quot;]:::resultat
+  M -.-&gt; O74386
+  O74387[&quot;discharge_capacity_0.5C : 124 mAh/g&quot;]:::resultat
+  M -.-&gt; O74387
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11834{{&quot;M1&quot;}}:::materiau
+  B11835[&quot;M2&quot;]:::etape
+  B11834 --&gt;|&quot;duration = 2 h&quot;| B11835
+  B11836[&quot;M3&quot;]:::etape
+  B11834 --&gt;|&quot;temperature = 220 °C&lt;br/&gt;duration = 2 h&quot;| B11836
+  B11837[&quot;M4&quot;]:::etape
+  B11834 --&gt;|&quot;temperature = 220 °C&quot;| B11837
+  B11838[&quot;M5&quot;]:::etape
+  B11834 --&gt;|&quot;lithium hydroxide (LiOH) = 2 M&lt;br/&gt;duration = 2 h&quot;| B11838
+  B11839[&quot;M6&quot;]:::etape
+  B11834 --&gt;|&quot;lithium hydroxide (LiOH) = 2 M&quot;| B11839
+  B11840[&quot;M7&quot;]:::etape
+  B11834 --&gt;|&quot;lithium hydroxide (LiOH) = 2 M&lt;br/&gt;temperature = 220 °C&lt;br/&gt;duration = 2 h&quot;| B11840
+  B11841[&quot;M8&quot;]:::etape
+  B11834 --&gt;|&quot;lithium hydroxide (LiOH) = 2 M&lt;br/&gt;temperature = 220 °C&quot;| B11841
+  B11842[&quot;M9&quot;]:::etape
+  B11834 --&gt;|&quot;lithium hydroxide (LiOH) = 0.5 M&lt;br/&gt;duration = 2 h&quot;| B11842
+  B11843[&quot;M10&quot;]:::etape
+  B11834 --&gt;|&quot;lithium hydroxide (LiOH) = 0.5 M&quot;| B11843
+  B11844[&quot;M11&quot;]:::etape
+  B11834 --&gt;|&quot;lithium hydroxide (LiOH) = 0.5 M&lt;br/&gt;temperature = 220 °C&lt;br/&gt;duration = 2 h&quot;| B11844
+  B11845[&quot;M12&quot;]:::etape
+  B11834 --&gt;|&quot;lithium hydroxide (LiOH) = 0.5 M&lt;br/&gt;temperature = 220 °C&quot;| B11845
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_coin_cell_NMC</h2>
+<pre class="mermaid">flowchart LR
+  R15383([&quot;M1 / M2 / M8 (matériau actif régénéré, voies…&lt;br/&gt;90 wt%&quot;]):::reactif
+  R15383 --&gt;|&quot;intermediate&quot;| S18302
+  R15384([&quot;commercial NMC622 (référence)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15384 --&gt;|&quot;active_material&quot;| S18302
+  R15385([&quot;super P carbon&lt;br/&gt;5 wt%&quot;]):::reactif
+  R15385 --&gt;|&quot;conductive_additive&quot;| S18302
+  R15386([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;5 wt%&quot;]):::reactif
+  R15386 --&gt;|&quot;binder&quot;| S18302
+  R15387([&quot;N-methylpyrrolidone (NMP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15387 --&gt;|&quot;solvent&quot;| S18302
+  R15388([&quot;aluminium current collector&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15388 --&gt;|&quot;substrate&quot;| S18302
+  R15389([&quot;lithium metal&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15389 --&gt;|&quot;counter_electrode&quot;| S18302
+  R15390([&quot;Celgard 2400 microporous membrane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15390 --&gt;|&quot;separator&quot;| S18302
+  R15391([&quot;1 M LiPF6 in EC/DEC (50/50 vol%)&lt;br/&gt;1 M&quot;]):::reactif
+  R15391 --&gt;|&quot;electrolyte&quot;| S18302
+  S18302[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S18302 --&gt; S18303
+  S18303[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;frequency : 20 Hz&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S18303 --&gt; S18304
+  S18304[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S18304 --&gt; S18305
+  S18305[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;temperature : 110 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S18305 --&gt; S18306
+  S18306[&quot;&lt;b&gt;5. cut&lt;/b&gt;&lt;br/&gt;diameter : 12 mm&quot;]:::etape
+  S18306 --&gt; S18307
+  S18307[&quot;&lt;b&gt;6. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : inert atmosphere, oxygen and …&quot;]:::etape
+  S18307 --&gt; S18308
+  S18308[&quot;&lt;b&gt;7. age&lt;/b&gt;&lt;br/&gt;duration : 8 h&quot;]:::etape
+  S18308 --&gt; M
+  M{{&quot;half-cell 2032 NMC622 électrode / Li métal&lt;br/&gt;&quot;}}:::materiau
+  O74428[&quot;mass_loading_M1 : 3.6 mg/cm2&quot;]:::resultat
+  M -.-&gt; O74428
+  O74429[&quot;mass_loading_M2 : 3.86 mg/cm2&quot;]:::resultat
+  M -.-&gt; O74429
+  O74430[&quot;mass_loading_M8 : 3.08 mg/cm2&quot;]:::resultat
+  M -.-&gt; O74430
+  O74431[&quot;mass_loading_commercial_NMC622 : 3.5 mg/cm2&quot;]:::resultat
+  M -.-&gt; O74431
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
