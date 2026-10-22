@@ -128,11 +128,10 @@
      "name": "ethanol (exfoliation)",
      "formula": "C2H5OH",
      "role": "solvent",
-     "purity": "99.5%",
-     "supplier": "Sigma Aldrich",
-     "supplier_quote": "ethanol (99.5%, Sigma Aldrich)",
      "not_stated": [
-      "amount"
+      "amount",
+      "purity",
+      "supplier"
      ],
      "quote": "GO was then exfoliated with ethanol using an ultrasound bath (Fisher Brand, Model CPXH, Boston, MA, USA) for 90 min."
     }
@@ -141,7 +140,7 @@
     {
      "order": 1,
      "action": "add",
-     "description": "Add KMnO4 slowly, in six equal portions, to the 9:1 H2SO4/H3PO4 mixture containing the graphite flakes, keeping the temperature within 35–40 °C.",
+     "description": "Add KMnO4 slowly, in six equal portions, to the 9:1 H2SO4/H3PO4 mixture, keeping the temperature within 35–40 °C; the moment at which the graphite flakes are added (before or after KMnO4) is not stated.",
      "quote": "KMnO4 (18.0 g, equivalent weight –equ/wt-) (Sigma-Aldrich, CAS 10294-64-1) was slowly and carefully added in six equal portions, to a mixture in 9:1 ratio of H2SO4/H3PO4 (360:40 mL)",
      "parameters": [
       {
@@ -160,7 +159,8 @@
       "addition_rate",
       "stirring_speed",
       "duration",
-      "cooling_during_addition"
+      "cooling_during_addition",
+      "order_of_addition_graphite"
      ]
     },
     {
@@ -198,6 +198,11 @@
        "name": "temperature_final",
        "quote": "After 24 h had elapsed, the mixture was naturally cooled to room temperature and then carefully brought to a temperature of 1 °C using a cryostat with which adequate temperature control was achieved.",
        "value_text": "room temperature"
+      },
+      {
+       "name": "elapsed_time_before_cooling",
+       "quote": "After 24 h had elapsed, the mixture was naturally cooled to room temperature and then carefully brought to a temperature of 1 °C using a cryostat with which adequate temperature control was achieved.",
+       "value_text": "After 24 h"
       }
      ],
      "equipment": [],
@@ -499,6 +504,13 @@
      "instrument": "Perkin–Elmer Analyst 700 atomic absorption spectrophotometer",
      "conditions": "20 mg GO in 20 mL of 2–100 mg L−1 solution, 210 min contact, 0.1 µm cellulose membrane filtration, centrifugation 6000 rpm 5 min; kinetics 298, 308 and 318 K",
      "quote": "Twenty milligrams of GO were taken, which were placed in 20 mL of a solution containing each of the respective adsorbates Zn (II) and Pb (II)) in a concentration range between 2 and 100 mg L−1."
+    },
+    {
+     "technique": "batch kinetics of Pb(II) and Zn(II) adsorption (Table 5)",
+     "result": "kinetic parameters fitted for the pseudo-first-order, pseudo-second-order, Elovich and intraparticle diffusion models",
+     "instrument": null,
+     "conditions": "pH = 5.5; T = 298 K; initial concentration 25 mg L−1 (la section Méthodes 2.4.2 donne 60 mg L−1 : voir doute)",
+     "quote": "Table 5 Determined kinetic parameters for the adsorption of Pb(II) and Zn(II) on GO, Conditions: pH = 5.5; T = 298 K; into an aqueous solution of initial concentration 25 mg L−1."
     }
    ],
    "outcomes": [
@@ -640,48 +652,48 @@
     },
     {
      "property": "Pb_pseudo_first_order_qe",
-     "quote": "Pseudo-first order | qe (mg/g) | 196.7 | 169.6",
+     "quote": "Table 5 Determined kinetic parameters for the adsorption of Pb(II) and Zn(II) on GO, Conditions: pH = 5.5; T = 298 K; into an aqueous solution of initial concentration 25 mg L−1. Model | Parameters | Adsorbate | | Pb (II) | Zn (II) Pseudo-first order | qe (mg/g) | 196.7 | 169.6",
      "value_num": 196.7,
      "unit": "mg/g"
     },
     {
      "property": "Zn_pseudo_first_order_qe",
-     "quote": "Pseudo-first order | qe (mg/g) | 196.7 | 169.6",
+     "quote": "Table 5 Determined kinetic parameters for the adsorption of Pb(II) and Zn(II) on GO, Conditions: pH = 5.5; T = 298 K; into an aqueous solution of initial concentration 25 mg L−1. Model | Parameters | Adsorbate | | Pb (II) | Zn (II) Pseudo-first order | qe (mg/g) | 196.7 | 169.6",
      "value_num": 169.6,
      "unit": "mg/g"
     },
     {
      "property": "Pb_pseudo_second_order_qe",
-     "quote": "Pseudo-second order | qe (mg/g) | 220.5 | 199.6",
+     "quote": "Table 5 Determined kinetic parameters for the adsorption of Pb(II) and Zn(II) on GO, Conditions: pH = 5.5; T = 298 K; into an aqueous solution of initial concentration 25 mg L−1. Model | Parameters | Adsorbate | | Pb (II) | Zn (II) Pseudo-first order | qe (mg/g) | 196.7 | 169.6 K1 × 104 (1/min) | 4.5406 | 2.3402 R2 | 0.9560 | 0.9341 Pseudo-second order | qe (mg/g) | 220.5 | 199.6",
      "value_num": 220.5,
      "unit": "mg/g"
     },
     {
      "property": "Zn_pseudo_second_order_qe",
-     "quote": "Pseudo-second order | qe (mg/g) | 220.5 | 199.6",
+     "quote": "Table 5 Determined kinetic parameters for the adsorption of Pb(II) and Zn(II) on GO, Conditions: pH = 5.5; T = 298 K; into an aqueous solution of initial concentration 25 mg L−1. Model | Parameters | Adsorbate | | Pb (II) | Zn (II) Pseudo-first order | qe (mg/g) | 196.7 | 169.6 K1 × 104 (1/min) | 4.5406 | 2.3402 R2 | 0.9560 | 0.9341 Pseudo-second order | qe (mg/g) | 220.5 | 199.6",
      "value_num": 199.6,
      "unit": "mg/g"
     },
     {
      "property": "Pb_pseudo_second_order_k2",
-     "quote": "K2 (g/mg min) | 0.2450 | 0.1351",
+     "quote": "Table 5 Determined kinetic parameters for the adsorption of Pb(II) and Zn(II) on GO, Conditions: pH = 5.5; T = 298 K; into an aqueous solution of initial concentration 25 mg L−1. Model | Parameters | Adsorbate | | Pb (II) | Zn (II) Pseudo-first order | qe (mg/g) | 196.7 | 169.6 K1 × 104 (1/min) | 4.5406 | 2.3402 R2 | 0.9560 | 0.9341 Pseudo-second order | qe (mg/g) | 220.5 | 199.6 K2 (g/mg min) | 0.2450 | 0.1351",
      "value_num": 0.245,
      "unit": "g/mg min"
     },
     {
      "property": "Zn_pseudo_second_order_k2",
-     "quote": "K2 (g/mg min) | 0.2450 | 0.1351",
+     "quote": "Table 5 Determined kinetic parameters for the adsorption of Pb(II) and Zn(II) on GO, Conditions: pH = 5.5; T = 298 K; into an aqueous solution of initial concentration 25 mg L−1. Model | Parameters | Adsorbate | | Pb (II) | Zn (II) Pseudo-first order | qe (mg/g) | 196.7 | 169.6 K1 × 104 (1/min) | 4.5406 | 2.3402 R2 | 0.9560 | 0.9341 Pseudo-second order | qe (mg/g) | 220.5 | 199.6 K2 (g/mg min) | 0.2450 | 0.1351",
      "value_num": 0.1351,
      "unit": "g/mg min"
     },
     {
      "property": "Pb_pseudo_second_order_R2",
-     "quote": "R2 | 0.9998 | 0.9998",
+     "quote": "Table 5 Determined kinetic parameters for the adsorption of Pb(II) and Zn(II) on GO, Conditions: pH = 5.5; T = 298 K; into an aqueous solution of initial concentration 25 mg L−1. Model | Parameters | Adsorbate | | Pb (II) | Zn (II) Pseudo-first order | qe (mg/g) | 196.7 | 169.6 K1 × 104 (1/min) | 4.5406 | 2.3402 R2 | 0.9560 | 0.9341 Pseudo-second order | qe (mg/g) | 220.5 | 199.6 K2 (g/mg min) | 0.2450 | 0.1351 R2 | 0.9998 | 0.9998",
      "value_num": 0.9998
     },
     {
      "property": "Zn_pseudo_second_order_R2",
-     "quote": "R2 | 0.9998 | 0.9998",
+     "quote": "Table 5 Determined kinetic parameters for the adsorption of Pb(II) and Zn(II) on GO, Conditions: pH = 5.5; T = 298 K; into an aqueous solution of initial concentration 25 mg L−1. Model | Parameters | Adsorbate | | Pb (II) | Zn (II) Pseudo-first order | qe (mg/g) | 196.7 | 169.6 K1 × 104 (1/min) | 4.5406 | 2.3402 R2 | 0.9560 | 0.9341 Pseudo-second order | qe (mg/g) | 220.5 | 199.6 K2 (g/mg min) | 0.2450 | 0.1351 R2 | 0.9998 | 0.9998",
      "value_num": 0.9998
     },
     {
@@ -820,6 +832,53 @@
      "value_num": 74,
      "unit": "%",
      "from_figure": "Fig. 10a"
+    },
+    {
+     "property": "Table1_n_parameter",
+     "value_num": 5.4,
+     "quote": "Oxide Graphene (GO) | 47.5 | 0.154 | 18.60 | 5.4 | 9.3 | 0.18 | 8.75"
+    },
+    {
+     "property": "DFT_pore_radius",
+     "value_num": 9.3,
+     "unit": "Å",
+     "quote": "Oxide Graphene (GO) | 47.5 | 0.154 | 18.60 | 5.4 | 9.3 | 0.18 | 8.75"
+    },
+    {
+     "property": "NLDFT_fitting_error_slit_pore",
+     "value_num": 2.345,
+     "unit": "%",
+     "quote": "Graphene Oxide (GO) | 2.345 | 3.576 | 4.765 | 1.354 | 2.546 | 3.087"
+    },
+    {
+     "property": "NLDFT_fitting_error_cylindrical_pore",
+     "value_num": 3.576,
+     "unit": "%",
+     "quote": "Graphene Oxide (GO) | 2.345 | 3.576 | 4.765 | 1.354 | 2.546 | 3.087"
+    },
+    {
+     "property": "NLDFT_fitting_error_cylinder_slit_pore",
+     "value_num": 4.765,
+     "unit": "%",
+     "quote": "Graphene Oxide (GO) | 2.345 | 3.576 | 4.765 | 1.354 | 2.546 | 3.087"
+    },
+    {
+     "property": "QSDFT_fitting_error_slit_pore",
+     "value_num": 1.354,
+     "unit": "%",
+     "quote": "Graphene Oxide (GO) | 2.345 | 3.576 | 4.765 | 1.354 | 2.546 | 3.087"
+    },
+    {
+     "property": "QSDFT_fitting_error_cylindrical_pore",
+     "value_num": 2.546,
+     "unit": "%",
+     "quote": "Graphene Oxide (GO) | 2.345 | 3.576 | 4.765 | 1.354 | 2.546 | 3.087"
+    },
+    {
+     "property": "QSDFT_fitting_error_cylinder_slit_pore",
+     "value_num": 3.087,
+     "unit": "%",
+     "quote": "Graphene Oxide (GO) | 2.345 | 3.576 | 4.765 | 1.354 | 2.546 | 3.087"
     }
    ],
    "missing_fields": [
@@ -857,7 +916,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "GO",
-   "text": "Hypothèse de chimiste : dans l'acide sulfurique concentré, KMnO4 donne l'heptoxyde de dimanganèse Mn2O7, oxydant fort qui attaque les plans de graphite, s'intercale avec les ions HSO4− puis introduit des groupes époxy, hydroxyle et carboxyle ; l'acide phosphorique limite probablement la sur-oxydation et la formation de trous dans les plans. Le chauffage à 50 °C accélère l'oxydation. H2O2 réduit l'excès de permanganate et de MnO2 en Mn2+ soluble. La coagulation à l'éther et les ultrasons séparent ensuite les feuillets oxydés. Le rapport KMnO4/graphite de 18,0 g pour 3,5 g (environ 5,1 en masse) est proche d'un protocole Hummers amélioré où KMnO4 vaut 6 fois la masse de graphite ; la mention « 1.17 wt equiv » suggère que le protocole d'origine partait de 3 g de graphite."
+   "text": "Hypothèse de chimiste : dans l'acide sulfurique concentré, KMnO4 donne l'heptoxyde de dimanganèse Mn2O7, oxydant fort. Le graphite passerait d'abord à un composé d'intercalation avec H2SO4/HSO4− (étape lente de diffusion de l'oxydant dans les galeries, d'où plusieurs heures à 50 °C), puis à un oxyde de graphite portant des groupes époxy, hydroxyle et carboxyle ; le contact avec l'eau (arrêt, lavages) hydrolyserait les groupes sulfate liés de façon covalente et ferait perdre l'ordre d'empilement, ce qui donne le GO (Dimiev et Tour, ACS Nano 2014, 10.1021/nn500606a). Selon Marcano et al. (ACS Nano 2010, 10.1021/nn1006368), l'acide phosphorique limite la formation de trous dans les plans en protégeant des diols sous forme de phosphates cycliques. H2O2 réduit Mn(VII) et MnO2 résiduels en Mn2+ soluble ; la coagulation à l'éther et les ultrasons séparent ensuite les feuillets. Le séchage à 80 °C et le pic DRX à 13,7° (d ≈ 0,65 nm) indiquent plutôt un oxyde de graphite déshydraté et ré-empilé que des feuillets isolés. L'adsorption de Pb2+ et Zn2+ se ferait par complexation et échange sur les carboxylates et phénolates, en concurrence avec la précipitation des hydroxydes au-dessus de pH 6–7. Le rapport KMnO4/graphite de 18,0 g pour 3,5 g (environ 5,1 en masse, 0,39 mol/mol) est proche d'un protocole Hummers amélioré où KMnO4 vaut 6 fois la masse de graphite ; la mention « 1.17 wt equiv » suggère que le protocole d'origine partait de 3 g de graphite."
   },
   {
    "type": "securite_auteurs",
@@ -868,17 +927,50 @@
   {
    "type": "securite_analyse",
    "route": "GO",
-   "text": "KMnO4 en milieu H2SO4 concentré forme Mn2O7, un composé explosif à sec et au-dessus d'environ 55 °C ; il faut donc maintenir la température sous 40 °C pendant l'addition et ajouter le permanganate lentement, par petites portions. Les acides sulfurique et phosphorique concentrés sont corrosifs. L'ajout de H2O2 sur un mélange acide riche en permanganate est très exothermique et dégage de l'oxygène : à faire lentement, dans un bain froid. L'éther diéthylique est extrêmement inflammable et forme des peroxydes ; son évaporation à 45 °C se fait sous hotte, loin de toute flamme. Les poudres de GO fines ne doivent pas être inhalées."
+   "text": "KMnO4 en milieu H2SO4 concentré forme Mn2O7, composé explosif à sec et au-dessus d'environ 55 °C : il faut maintenir la température sous 40 °C pendant l'addition, ajouter le permanganate lentement par petites portions, et chauffer à 50 °C dans un bain thermostaté (marge de 5 °C seulement). Les acides sulfurique et phosphorique concentrés sont corrosifs. Réserve sur l'arrêt de la réaction : 1,5 mL de H2O2 à 30 % (environ 0,015 mol) ne réduisent au plus que 5 % du permanganate introduit (0,114 mol) ou 13 % du Mn s'il est passé à MnO2, soit la moitié de la dose de Marcano et al. (3 mL) pour plus de graphite ; la quantité devrait se régler sur le point de virage (fin du dégagement gazeux, suspension jaune vif) plutôt que sur un volume fixe, sinon MnO2 et Mn résiduels contaminent le GO. Le H2O2 est ajouté goutte à goutte directement dans l'acide concentré à 1 °C, puis l'eau est ajoutée à l'acide, ce qui est l'inverse de la pratique sûre (verser le mélange acide sur de la glace contenant H2O2, comme Marcano et al.) : la dilution de 6,6 mol de H2SO4 est très exothermique et la réduction de Mn(VII) dégage de l'oxygène. Le lavage à HCl concentré d'un solide qui peut encore contenir MnO2 dégage du chlore. L'éther diéthylique (ébullition à 34,6 °C) est chassé en chauffant à 45 °C : vapeurs très inflammables, formation de peroxydes, à faire sous hotte et loin de toute source d'ignition. Les poudres de GO fines ne doivent pas être inhalées."
   },
   {
    "type": "limite_reproductibilite",
    "route": "GO",
-   "text": "L'article ne donne pas le rendement, ni les volumes d'eau, d'éther et d'éthanol, ni la vitesse d'agitation, ni le volume des lavages, ni la durée du chauffage à 45 °C pour l'éther, ni la puissance de l'ultrason. L'ordre d'addition du graphite et du permanganate est ambigu, la durée de 36 h est contredite par « After 24 h had elapsed », et la référence CAS de H3PO4 est attribuée à HNO3. Les courbes d'isothermes (figure 11) et de cinétique (figure 12) ne sont pas reprises point par point ; seuls les paramètres des tableaux sont extraits. Les deux références renvoyées pour la méthode améliorée de Hummers (B16, B17) sont des articles sur l'adsorption, pas des protocoles de synthèse."
+   "text": "L'article ne donne pas le rendement, ni les volumes d'eau, d'éther et d'éthanol, ni la vitesse d'agitation, ni le volume des lavages, ni la durée du chauffage à 45 °C pour l'éther, ni la puissance de l'ultrason. L'ordre d'addition du graphite et du permanganate est ambigu, la durée de 36 h est contredite par « After 24 h had elapsed », et la référence CAS de H3PO4 est attribuée à HNO3. Les courbes d'isothermes (figure 11) et de cinétique (figure 12) ne sont pas reprises point par point ; seuls les paramètres des tableaux sont extraits. La référence B17 renvoyée pour la méthode améliorée de Hummers est un article sur l'adsorption, pas un protocole de synthèse (B16, article de DFT, n'est pas retenue comme source de méthode) ; le protocole décrit reprend en réalité, presque mot pour mot, la version corrigée de Marcano et al. (ACS Nano 2018, 10.1021/acsnano.8b00128), que l'article ne cite pas."
   },
   {
    "type": "limite_reproductibilite",
    "route": "GO",
    "text": "Incohérences internes de l'article sur les essais d'adsorption : l'efficacité d'élimination de Pb(II) à pH 5,5 est de 93 % dans le texte mais d'environ 77 % sur la figure 10a ; la concentration initiale des cinétiques est de 60 mg L−1 dans les Méthodes mais de 25 mg L−1 dans le tableau 5 et la figure 12 ; les valeurs de ΔG du tableau 6 sont données en kJ mol−1 (−6787 etc.), ce qui est impossible, et ΔG calculé avec ΔH = 37,54 kJ mol−1 et ΔS = 45,32 J K−1 mol−1 serait positif à 298 K ; le texte donne R2 de Langmuir 0,996 et 0,964 alors que le tableau 3 donne 0,9968 et 0,9989."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Valeurs de référence du graphite précurseur (Gr, échantillon sans voie de synthèse) pour mesurer l'effet de l'oxydation (tableau 1, GO entre parenthèses) : surface BET 5,2 m2·g−1 (GO : 47,5), volume microporeux DR 0,010 cm3·g−1 (0,154), énergie caractéristique Eo 7,250 kJ·mol−1 (18,60), volume poreux DFT 0,04 cm3·g−1 (0,18). L'oxydation multiplie donc la surface BET par environ 9 et le volume poreux par environ 4,5 d'après les auteurs.",
+   "quote": "Graphite (Gr) | 5.2 | 0.010 | 7.250 | 3.4 | 7.4 | 0.04 | 7.80"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Composition de surface du graphite précurseur par XPS : 93,7 % de carbone et 6,3 % d'oxygène, contre 72,4 % et 27,6 % pour GO ; l'oxydation multiplie donc par environ 4 la teneur en oxygène de surface (l'article mêle pourcentage massique et concentration atomique).",
+   "quote": "In this investigation, 93.7% by weight of carbon and 6.3% by weight of oxygen were obtained for the Gr"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Le graphite précurseur montre en DRX un pic net vers 2θ = 27° (réflexion (002)), alors que GO a son pic (001) vers 13,7° : l'espacement entre feuillets augmente avec l'oxydation.",
+   "quote": "For Gr there is a clear, well defined, and characteristic peak towards 2θ = 27°, which corresponds to reflection (002)"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO",
+   "text": "Deux points de la préparation ne sont pas réalisables tels qu'écrits. Le mélange est « ajusté à pH 1 par ajout d'eau désionisée » : avec environ 6,6 mol de H2SO4 (360 mL concentré), atteindre [H+] = 0,1 mol/L demanderait au moins 66 L d'eau ; le pH 1 est sans doute celui des lavages ou une valeur approximative, et le volume réel n'est pas donné. La durée d'oxydation est contradictoire dans la même phrase (36 h puis « After 24 h had elapsed ») alors que le protocole de Marcano et al. (ACS Nano 2018, 10.1021/acsnano.8b00128) dont il est presque copié donne 12 h : il faut fixer la durée et la rapporter, car elle règle le degré d'oxydation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO",
+   "text": "Les paramètres de texture du tableau 1 (N2 à 77 K) ne décrivent pas le GO utilisé pour l'adsorption : le dégazage à 250 °C sous vide pendant 5 h dépasse les 185 °C où l'ATG des auteurs montre déjà la perte des groupes oxygénés, donc le solide mesuré est un GO partiellement réduit thermiquement (Qiu et al., Carbon 2014, 10.1016/j.carbon.2014.02.005 ; un dégazage à 100–120 °C au plus serait approprié). Le volume microporeux DR de 0,154 cm3·g−1 correspond à environ 9 fois la capacité de la monocouche BET (SBET = 47,5 m2·g−1) ; le tableau donne un rayon de pore de 9,3 Å et une demi-largeur de 8,75 nm pour le même solide, et le texte parle d'« ultramicropores » pour des largeurs de 7,8 à 8,75 nm qui sont des mésopores (classification IUPAC, Thommes et al. 2015, 10.1515/pac-2014-1117)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO",
+   "text": "Les capacités d'adsorption annoncées dépassent ce que l'expérience peut mesurer. Avec 20 mg de GO dans 20 mL (1 g·L−1), qe ne peut pas dépasser la concentration initiale : environ 100 mg·g−1 pour les isothermes et 25 mg·g−1 pour la cinétique du tableau 5 (60 mg·g−1 avec la concentration des Méthodes), alors que le tableau 5 donne qe = 220,5 et 199,6 mg·g−1 (pseudo-second ordre) et que Qm de Langmuir (987,33 mg·g−1 pour Pb) est une extrapolation d'un facteur environ 10 ; ces valeurs ne doivent pas être reprises comme propriétés établies du matériau. Le tableau 6 est incohérent quelle que soit l'unité de ΔG : ΔG = ΔH − TΔS calculé avec les ΔH et ΔS du tableau vaut environ +24 kJ·mol−1 (Pb) et +13 kJ·mol−1 (Zn) à 298 K, soit une adsorption non spontanée, et la constante d'équilibre prise en mg·L−1 n'est pas adimensionnelle (Lima et al., J. Mol. Liq. 2019, sciencedirect S0167732218346014)."
   }
  ],
  "sample_inventory": [
@@ -924,12 +1016,6 @@
  "method_sources": [
   {
    "route": "GO",
-   "ref_id": "B16-nanomaterials-10-01022",
-   "role": "protocole_adapte",
-   "quote": "using the improved Hummers method reported in the literature and taking into account changes that have been suggested by several authors to perform a procedure with good performance and laboratory safety"
-  },
-  {
-   "route": "GO",
    "ref_id": "B17-nanomaterials-10-01022",
    "role": "protocole_adapte",
    "quote": "using the improved Hummers method reported in the literature and taking into account changes that have been suggested by several authors to perform a procedure with good performance and laboratory safety"
@@ -945,16 +1031,22 @@
    "ref_id": "B41-nanomaterials-10-01022",
    "role": "autre",
    "quote": "proposed one of the most widely used methods for the synthesis of graphene oxide (GO), which consists of the oxidation of graphite to graphite oxide and subsequently an exfoliation to GO"
+  },
+  {
+   "route": "GO",
+   "ref_id": "B40-nanomaterials-10-01022",
+   "role": "protocole_complet",
+   "quote": "The chemical states of the composition of elements of GO and Gr were investigated following the procedure recommended in the scientific literature"
   }
  ],
  "doubts": [
   {
    "where": "GO, étape 1",
-   "issue": "Le texte dit que KMnO4 est ajouté « to a mixture in 9:1 ratio of H2SO4/H3PO4 (360:40 mL) ... previously prepared, and graphite flakes (3.5 g, 1.17 wt equiv) » sans dire si le graphite est dans le mélange acide avant l'ajout de KMnO4 ou ajouté après. Lecture retenue : le graphite est présent dans le mélange acide quand KMnO4 est ajouté (ordre non cité)."
+   "issue": "Le texte dit que KMnO4 est ajouté « to a mixture in 9:1 ratio of H2SO4/H3PO4 (360:40 mL) ... previously prepared, and graphite flakes (3.5 g, 1.17 wt equiv) » sans dire si le graphite est déjà dans le mélange acide avant l'ajout de KMnO4 ou s'il est ajouté après. L'ordre d'addition n'est pas affirmé dans la description de l'étape et reste non cité."
   },
   {
    "where": "GO, étapes 2 et 3",
-   "issue": "Durée de chauffage à 50 °C : « stirred for 36 h », puis « After 24 h had elapsed, the mixture was naturally cooled ». Les deux durées sont incompatibles ; 36 h retenue pour l'étape de chauffage (phrase explicite sur la durée), la phrase « After 24 h » est citée pour le refroidissement."
+   "issue": "Durée de chauffage à 50 °C : « stirred for 36 h » (étape 2), puis « After 24 h had elapsed, the mixture was naturally cooled » (étape 3). Les deux durées sont incompatibles dans la même phrase. Les deux valeurs sont extraites (36 h comme duration de l'étape 2, « After 24 h » comme elapsed_time_before_cooling de l'étape 3) sans trancher."
   },
   {
    "where": "GO, réactifs H2SO4 et H3PO4",
@@ -966,7 +1058,7 @@
   },
   {
    "where": "GO, éthanol d'exfoliation",
-   "issue": "La pureté (99,5 %) et le fournisseur (Sigma Aldrich) de l'éthanol ne sont donnés qu'à la phrase de lavage ; ils sont repris pour l'éthanol d'exfoliation (même réactif nommé), ce que l'article n'écrit pas explicitement."
+   "issue": "La pureté (99,5 %) et le fournisseur (Sigma Aldrich) de l'éthanol ne sont écrits qu'à la phrase de lavage (« ethanol (99.5%, Sigma Aldrich) ») ; la phrase de l'exfoliation (« GO was then exfoliated with ethanol using an ultrasound bath ») n'en donne pas. Pour l'éthanol d'exfoliation, pureté et fournisseur sont donc déclarés non cités ; on ne sait pas si c'est le même flacon que celui des lavages."
   },
   {
    "where": "GO, essais d'adsorption, conditions",
@@ -994,11 +1086,19 @@
   },
   {
    "where": "method_sources",
-   "issue": "Les références renvoyées pour la méthode de Hummers améliorée (B16 : adsorption de Na sur graphène, DFT ; B17 : Zhao et al., oxyde de graphène en feuillets pour l'adsorption de métaux) ne sont pas des articles de synthèse de GO au sens strict ; B40 (Hummers et Offeman, 1958) et B41 (Al-Gaashani et al., 2019, comparaison de méthodes d'oxydation) sont les sources de méthode plausibles. Les quatre sont listées, B40 et B41 en rôle « autre »."
+   "issue": "B16 (Moon et al., adsorption de Na sur graphène et GO, approche DFT) est retirée des sources de méthode : c'est un article de calcul, pas un protocole de préparation. B17 (Zhao et al., feuillets de GO pour l'adsorption de métaux) est gardée en protocole_adapte car l'article la cite pour la méthode de Hummers améliorée, mais elle n'est pas un article de synthèse de GO au sens strict. B40 (Hummers et Offeman, 1958, vérifié dans corpus/refs) et B41 (Al-Gaashani et al., 2019) sont gardées en rôle « autre » pour la méthode d'origine. B40 est aussi le renvoi donné pour la procédure XPS (« following the procedure recommended in the scientific literature »), ce qui est surprenant pour un article de 1958 sur la préparation de l'oxyde de graphite : numérotation probablement fausse, renvoi recopié tel quel."
   },
   {
    "where": "Figures lues",
    "issue": "Figures ouvertes : Fig. 1 (schéma de synthèse, équations de formation de Mn2O7 reprises dans mecanisme_auteurs) et Fig. 10 (valeurs de l'efficacité à pH 3, 5 et 10, lecture à ±3 points). Les figures 11 et 12 (points d'isotherme et de cinétique) ne sont pas lues point par point ; les paramètres des modèles sont pris dans les tableaux 3, 5 et 6."
+  },
+  {
+   "where": "GO, tableau 1 (colonne n)",
+   "issue": "La colonne « n » du tableau 1 (5,4 pour GO) n'est pas définie dans le texte ; recopiée telle quelle sous le nom Table1_n_parameter, sans unité. Le rayon de pore (9,3 Å) et la demi-largeur de pore (8,75 nm) du même tableau diffèrent d'un facteur 10 pour le même solide (valeurs non corrigées)."
+  },
+  {
+   "where": "GO, potentiel zêta (Fig. 10b)",
+   "issue": "Le texte dit que la surface de GO est négative « at pH greater than 2 », mais la figure 10b montre un potentiel zêta déjà négatif à pH 1 (environ −10 mV, lecture à ±3 mV) et environ −24 mV à pH 2, sans point isoélectrique. Aucune valeur de potentiel zêta n'est extraite ; la phrase du texte est conservée telle quelle dans la caractérisation."
   }
  ]
 }
