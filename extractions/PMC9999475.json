@@ -972,12 +972,6 @@
    ],
    "variations": [
     {
-     "parameter": "manganese(III) oxide",
-     "value_text": "Mn2O3",
-     "parent_value": "Mn2O3",
-     "quote": "For this purpose, Li2O (99.7%, Alfa Aesar), Mn2O3 (99%, Alfa Aesar), and V2O3 (99.7%, Alfa Aesar) were used as precursors."
-    },
-    {
      "parameter": "vanadium_precursor",
      "value_text": "V2O3",
      "parent_value": "none",
@@ -1623,7 +1617,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "LMOF",
-   "text": "Hypothèse de chimiste : la réaction globale ½ Li2O + ½ Mn2O3 + LiF → Li2MnO2F est équilibrée en lithium, manganèse, oxygène et fluor, et conserve Mn3+, ce qui correspond à la rapports molaires 1:1:2 de Li2O, Mn2O3 et LiF. Le broyage haute énergie (600 rpm, 20 h) fournit l'énergie de déformation et de soudure à froid qui force l'interdiffusion des cations et du fluor dans un réseau cubique faces centrées désordonné, sans passer par une phase liquide. On attend que la première étape sans LiF forme déjà un sel gemme Li–Mn–O, puis que LiF s'y incorpore. Le rôle de l'atmosphère inerte est probablement d'éviter l'hydratation de Li2O et de LiF."
+   "text": "Hypothèse de chimiste : la réaction globale ½ Li2O + ½ Mn2O3 + LiF → Li2MnO2F est équilibrée en lithium, manganèse, oxygène et fluor, et conserve Mn3+, ce qui correspond à des rapports molaires 1:1:2 de Li2O, Mn2O3 et LiF. Le broyage haute énergie (600 rpm, 20 h) fournit l'énergie de déformation et de soudure à froid qui force l'interdiffusion des cations et du fluor dans un réseau cubique faces centrées désordonné, sans passer par une phase liquide. On attend que la première étape sans LiF forme déjà un sel gemme Li–Mn–O, puis que LiF s'y incorpore. Le rôle de l'atmosphère inerte est probablement d'éviter l'hydratation de Li2O et de LiF."
   },
   {
    "type": "mecanisme_analyse",
@@ -1689,7 +1683,7 @@
   },
   {
    "where": "Li2Mn0.66V0.33O2F_Si3N4 et _steel",
-   "issue": "Deux essais « analogous to the above syntheses of LMOF and LMVOF » : la jarre (nitrure de silicium puis acier) vient de la légende de la figure S1 ; vitesse et rapport billes/poudre du second essai sont seulement « analogous to LMVOF » ; la présence de LiF n'est pas écrite pour ces essais (lue comme héritée). Les masses de Mn2O3 et V2O3 ne sont pas données. Les variations « manganese(III) oxide = Mn2O3 » et « vanadium_precursor » décrivent les précurseurs cités ; un avertissement de nom est attendu sur ces ajouts."
+   "issue": "Deux essais « analogous to the above syntheses of LMOF and LMVOF » : la jarre (nitrure de silicium puis acier) vient de la légende de la figure S1 ; vitesse et rapport billes/poudre du second essai sont seulement « analogous to LMVOF » ; la présence de LiF n'est pas écrite pour ces essais (lue comme héritée). Les masses de Mn2O3 et V2O3 ne sont pas données. La variation « vanadium_precursor » (V2O3 ajouté) est un ajout absent du parent : l'avertissement de nom de `load.py check` est attendu, comme pour LMVOF (VO2)."
   },
   {
    "where": "HT-LMOF étape 2",
