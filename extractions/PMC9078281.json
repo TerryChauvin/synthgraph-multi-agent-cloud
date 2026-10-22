@@ -245,11 +245,17 @@
      "action": "disperse",
      "description": "Disperse the powder in water to make the stock solution used for characterization and detection.",
      "quote": "Finally, the resulted Mn(ii)-NGQDs were dispersed in water as a stock solution for further characterization and detection.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 6.52,
+       "unit": "mg/mL",
+       "quote": "the calculated concentration of Mn(II)-NGQDs solution was 6.52 mg/mL, and this concentration value was used as a standard for further application of Hg2+ ions detection, MTT test and cell fluorescence imaging"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "duration",
-      "concentration",
       "volume"
      ]
     }
@@ -336,7 +342,7 @@
      "technique": "Hg2+ fluorescence sensing",
      "result": "quenching of the emission at 443 nm with increasing Hg2+; LOD 3.4 × 10−8 mol L−1",
      "instrument": null,
-     "conditions": "10 min at room temperature, excitation 370 nm, HMTA buffer pH 7.35",
+     "conditions": "200 μL of Hg2+ solution (0–5 × 10−6 mol L−1) and 200 μL of Mn(ii)-NGQDs (6.52 mg mL−1) solution diluted to 5 mL with HMTA buffer (pH 7.35); 10 min at room temperature; excitation 370 nm",
      "quote": "In a typical process, 200 μL of Hg2+ solution with various concentrations (0–5 × 10−6 mol L−1) and 200 μL of Mn(ii)-NGQDs (6.52 mg mL−1) solution were mixed together and diluted to 5 mL with the HMTA buffer solution (pH = 7.35)."
     },
     {
@@ -471,6 +477,51 @@
      "property": "HepG2_cell_viability_4_h_and_24_h_0-300_ug_mL",
      "quote": "the cell viabilities of HepG2 cells are all close to 100% in the tested period with the concentration of Mn(ii)-NGQDs from 0 to 300 μg mL−1",
      "value_text": "close to 100%"
+    },
+    {
+     "property": "Hg2+_linear_ranges_Milli-Q_water",
+     "quote": "The linear relationship of F/F0 versus Hg2+ ions concentration is in the range of 0 mol/L to 2.0×10-6 mol/L ( Fig. S7c,) and 2.0×10-6 mol/L to 8.0×10-6 mol/L (Fig. S7d), and the detection limit of 3.2×10-7 mol/L.",
+     "value_text": "0 mol/L to 2.0×10-6 mol/L (Fig. S7c) and 2.0×10-6 mol/L to 8.0×10-6 mol/L (Fig. S7d)"
+    },
+    {
+     "property": "Hg2+_calibration_equation_Milli-Q_water_0-2.0e-6",
+     "quote": "F/F0=0.9805-0.2059C",
+     "value_text": "F/F0=0.9805-0.2059C"
+    },
+    {
+     "property": "Hg2+_calibration_equation_Milli-Q_water_2.0e-6-8.0e-6",
+     "quote": "F/F0=0.7156-0.0674C",
+     "value_text": "F/F0=0.7156-0.0674C"
+    },
+    {
+     "property": "C_atomic_fraction_XPS",
+     "quote": "Mn(II)-NGQDs 55.43 4.24 40.11 0.21",
+     "value_num": 55.43,
+     "unit": "%"
+    },
+    {
+     "property": "O_atomic_fraction_XPS",
+     "quote": "Mn(II)-NGQDs 55.43 4.24 40.11 0.21",
+     "value_num": 40.11,
+     "unit": "%"
+    },
+    {
+     "property": "average_fluorescence_lifetime_with_HMTA",
+     "quote": "NGQDs+ HMTA 7.50",
+     "value_num": 7.5,
+     "unit": "ns"
+    },
+    {
+     "property": "average_fluorescence_lifetime_HMTA_2.0e-6_mol/L_Hg2+",
+     "quote": "+2.0×10-6 mol/L Hg2+ 7.44",
+     "value_num": 7.44,
+     "unit": "ns"
+    },
+    {
+     "property": "average_fluorescence_lifetime_HMTA_4.0e-6_mol/L_Hg2+",
+     "quote": "+4.0×10-6 mol/L Hg2+ 7.41",
+     "value_num": 7.41,
+     "unit": "ns"
     }
    ],
    "missing_fields": [
@@ -478,8 +529,7 @@
     "stirring_speed",
     "flask_volume",
     "dialysis_water_volume",
-    "freeze_drying_conditions",
-    "stock_solution_concentration"
+    "freeze_drying_conditions"
    ]
   },
   {
@@ -541,6 +591,23 @@
      "quote": "Compared with NG (−15.2 eV), Mn(ii)-NGQDs exhibit a more negative potential value (−19.7 eV)",
      "value_num": -15.2,
      "unit": "eV"
+    },
+    {
+     "property": "C_atomic_fraction_XPS",
+     "quote": "NG 60.48 2.2 37.33 0",
+     "value_num": 60.48,
+     "unit": "%"
+    },
+    {
+     "property": "O_atomic_fraction_XPS",
+     "quote": "NG 60.48 2.2 37.33 0",
+     "value_num": 37.33,
+     "unit": "%"
+    },
+    {
+     "property": "fluorescence_lifetime_components",
+     "quote": "NG 1.25 5.45 11.96",
+     "value_text": "1.25, 5.45 and 11.96 ns (tri-exponential)"
     }
    ],
    "succeeded": true
@@ -552,8 +619,8 @@
     "name": "manganese(II)-bonded nitrogen-doped graphene quantum dots",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "well dispersed, uniform quantum dots"
+    "phase": null,
+    "morphology": null
    },
    "quote": "Fig. 5c and d show the emission spectra and QY of Mn(ii)-NGQDs with different concentrations of Mn2+ ion in reaction system under the excitation wavelength of 370 nm.",
    "variations": [
@@ -584,8 +651,8 @@
     "name": "manganese(II)-bonded nitrogen-doped graphene quantum dots",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "well dispersed, uniform quantum dots"
+    "phase": null,
+    "morphology": null
    },
    "quote": "Fig. 5c and d show the emission spectra and QY of Mn(ii)-NGQDs with different concentrations of Mn2+ ion in reaction system under the excitation wavelength of 370 nm.",
    "variations": [
@@ -616,8 +683,8 @@
     "name": "manganese(II)-bonded nitrogen-doped graphene quantum dots",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "well dispersed, uniform quantum dots"
+    "phase": null,
+    "morphology": null
    },
    "quote": "Fig. 5c and d show the emission spectra and QY of Mn(ii)-NGQDs with different concentrations of Mn2+ ion in reaction system under the excitation wavelength of 370 nm.",
    "variations": [
@@ -648,8 +715,8 @@
     "name": "manganese(II)-bonded nitrogen-doped graphene quantum dots",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "well dispersed, uniform quantum dots"
+    "phase": null,
+    "morphology": null
    },
    "quote": "the control experiments were carried out by utilizing other Mn salts to replace manganese chloride, including manganese acetate, manganese sulfate and manganese nitrate, the results show that they can still enhance the fluorescence (Fig. S5a, ESI†)",
    "variations": [
@@ -690,8 +757,8 @@
     "name": "manganese(II)-bonded nitrogen-doped graphene quantum dots",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "well dispersed, uniform quantum dots"
+    "phase": null,
+    "morphology": null
    },
    "quote": "the control experiments were carried out by utilizing other Mn salts to replace manganese chloride, including manganese acetate, manganese sulfate and manganese nitrate, the results show that they can still enhance the fluorescence (Fig. S5a, ESI†)",
    "variations": [
@@ -732,8 +799,8 @@
     "name": "manganese(II)-bonded nitrogen-doped graphene quantum dots",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "well dispersed, uniform quantum dots"
+    "phase": null,
+    "morphology": null
    },
    "quote": "the control experiments were carried out by utilizing other Mn salts to replace manganese chloride, including manganese acetate, manganese sulfate and manganese nitrate, the results show that they can still enhance the fluorescence (Fig. S5a, ESI†)",
    "variations": [
@@ -774,8 +841,8 @@
     "name": "manganese(II)-bonded nitrogen-doped graphene quantum dots",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "well dispersed, uniform quantum dots"
+    "phase": null,
+    "morphology": null
    },
    "quote": "citric acid was chosen to replace citric sodium as carbon precursor to prepare Mn(ii)-NGQDs and NG for comparison",
    "variations": [
@@ -816,8 +883,8 @@
     "name": "nitrogen-doped graphene quantum dots without metal (NG)",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "irregular nanosheets with a small amount of QDs"
+    "phase": null,
+    "morphology": null
    },
    "quote": "citric acid was chosen to replace citric sodium as carbon precursor to prepare Mn(ii)-NGQDs and NG for comparison",
    "variations": [
@@ -858,8 +925,8 @@
     "name": "manganese(II)-bonded nitrogen-doped graphene quantum dots",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "well dispersed, uniform quantum dots"
+    "phase": null,
+    "morphology": null
    },
    "quote": "160 C 10 h",
    "variations": [
@@ -880,8 +947,8 @@
     "name": "manganese(II)-bonded nitrogen-doped graphene quantum dots",
     "formula": null,
     "family": "carbone",
-    "phase": "graphitic carbon (broad XRD peaks)",
-    "morphology": "well dispersed, uniform quantum dots"
+    "phase": null,
+    "morphology": null
    },
    "quote": "200 C 10 h",
    "variations": [
@@ -935,6 +1002,11 @@
      "value_num": 27,
      "unit": "%",
      "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "morphology_TEM",
+     "quote": "TEM images of NG doping with other metal ions display similar morphology to pure NG, some large irregular sheets and small QDs can be observed (Fig. S6, ESI†).",
+     "value_text": "similar morphology to pure NG, some large irregular sheets and small QDs"
     }
    ]
   },
@@ -1193,6 +1265,11 @@
      "value_num": 26,
      "unit": "%",
      "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "morphology_TEM",
+     "quote": "TEM images of NG doping with other metal ions display similar morphology to pure NG, some large irregular sheets and small QDs can be observed (Fig. S6, ESI†).",
+     "value_text": "similar morphology to pure NG, some large irregular sheets and small QDs"
     }
    ]
   },
@@ -1279,6 +1356,11 @@
      "value_num": 23,
      "unit": "%",
      "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "morphology_TEM",
+     "quote": "TEM images of NG doping with other metal ions display similar morphology to pure NG, some large irregular sheets and small QDs can be observed (Fig. S6, ESI†).",
+     "value_text": "similar morphology to pure NG, some large irregular sheets and small QDs"
     }
    ]
   },
@@ -1399,6 +1481,11 @@
      "value_num": 26,
      "unit": "%",
      "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "morphology_TEM",
+     "quote": "TEM images of NG doping with other metal ions display similar morphology to pure NG, some large irregular sheets and small QDs can be observed (Fig. S6, ESI†).",
+     "value_text": "similar morphology to pure NG, some large irregular sheets and small QDs"
     }
    ]
   },
@@ -1442,6 +1529,11 @@
      "value_num": 27,
      "unit": "%",
      "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "morphology_TEM",
+     "quote": "TEM images of NG doping with other metal ions display similar morphology to pure NG, some large irregular sheets and small QDs can be observed (Fig. S6, ESI†).",
+     "value_text": "similar morphology to pure NG, some large irregular sheets and small QDs"
     }
    ]
   },
@@ -1485,6 +1577,11 @@
      "value_num": 28,
      "unit": "%",
      "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "morphology_TEM",
+     "quote": "TEM images of NG doping with other metal ions display similar morphology to pure NG, some large irregular sheets and small QDs can be observed (Fig. S6, ESI†).",
+     "value_text": "similar morphology to pure NG, some large irregular sheets and small QDs"
     }
    ]
   },
@@ -1551,7 +1648,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Sans manganèse (NG), la poudre contient surtout des nanofeuillets irréguliers et son rendement quantique est de 27,06 % ; avec 2 × 10−3 mol L−1 de Mn2+ on obtient des points quantiques de 4,5 nm en moyenne et 42,16 %. Lu sur la figure 5d, le rendement quantique est d'environ 30 % à 1 et 3 × 10−3 mol L−1 et d'environ 29 % à 4 × 10−3 mol L−1 : l'optimum est étroit. Les autres ions donnent entre 3,5 % (Cr3+) et 30 % (Ba2+) (figure 5f), aucun ne dépasse le témoin NG de plus de 3 points. Les trois autres sels de manganèse augmentent encore la fluorescence ; l'acide citrique est jugé inadapté ; les résultats à 160 et 200 °C ne sont que dans l'annexe (figure S5d)."
+   "text": "Sans manganèse (NG), la poudre contient surtout des nanofeuillets irréguliers et son rendement quantique est de 27,06 % ; avec 2 × 10−3 mol L−1 de Mn2+ on obtient des points quantiques de 4,5 nm en moyenne et 42,16 %. Lu sur la figure 5d, le rendement quantique est d'environ 30 % à 1 et 3 × 10−3 mol L−1 et d'environ 29 % à 4 × 10−3 mol L−1 : l'optimum est étroit. Les autres ions donnent entre 3,5 % (Cr3+) et 30 % (Ba2+) (figure 5f), aucun ne dépasse le témoin NG de plus de 3 points. Les trois autres sels de manganèse augmentent encore la fluorescence ; l'acide citrique est jugé inadapté ; les résultats à 160 et 200 °C ne sont que dans l'annexe (figure S5d). Hg2+ figure aussi comme barre de la figure 5f (lecture d'environ 16–17 %, entre Pb2+ et Cd2+) sans que sa préparation soit décrite : aucune voie n'est créée pour cet échantillon."
   },
   {
    "type": "tendance_observee",
@@ -1580,7 +1677,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Mn-NGQDs",
-   "text": "Probablement : à 180 °C sous pression autogène, le citrate se décarboxyle et se condense en carbone aromatique, la glycine apporte l'azote par amidation et pyrolyse, et Mn2+ se complexe aux carboxylates (chélation par le citrate) ce qui limite l'agglomération. On attend aussi que le rôle du Mn2+ dépende du rapport Mn/citrate, ce qui expliquerait l'optimum étroit observé."
+   "text": "Hypothèse, non démontrée par les auteurs : à 180 °C, le citrate et la glycine forment des amides puis, par cyclisation, des fluorophores moléculaires de type acide citrazinique ou 2-pyridone (analogues de ceux obtenus avec le citrate et une amine, travaux de Song et al., J. Mater. Chem. C 2015, et de Fang et al., Carbon 2017), dans une matrice oligomérique partiellement carbonisée. Mn2+, chélaté par les carboxylates du citrate, agirait en acide de Lewis : il favoriserait l'amidation et la cyclisation (l'azote de surface passe de 2,2 à 4,24 % au tableau S1) et limiterait la condensation en feuillets, d'où plus de fluorophores et moins de domaines éteignant la fluorescence. L'effet de confinement avancé par les auteurs n'est pas démontré."
   },
   {
    "type": "securite_analyse",
@@ -1600,7 +1697,33 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les trois protocoles de mesure du SI (rendement quantique, MTT, déclin de fluorescence) renvoient à des références [S1] à [S3] qui ne figurent pas dans la liste de références de l'article : aucune source de méthode n'a pu être rattachée."
+   "text": "Les trois protocoles de mesure de l'annexe renvoient à des références [S1] à [S3] listées à la fin de l'annexe (Liao et al., ACS Sustain. Chem. Eng. 2016, 4, 3053 pour le rendement quantique ; Choi et al., Biosens. Bioelectron. 2017, 93, 267 pour le test MTT ; Zhang et al., Talanta 2016, 152, 288 pour le déclin de fluorescence). Elles ne figurent pas dans la liste de références de l'article, que le contrôle exige pour une entrée de method_sources : aucune source de méthode n'a donc pu être rattachée, et les protocoles sont à chercher dans ces trois publications.",
+   "quote": "according to an established procedure using quinine sulfate"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Unité du potentiel zêta : l'article écrit −19,7 eV (Mn(ii)-NGQDs) et −15,2 eV (NG), mais un potentiel zêta ne s'exprime pas en eV et l'axe de la figure S9 de l'annexe porte « Zeta potential(mV) ». La valeur est gardée telle qu'écrite ; il faut la lire en mV."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Attributions structurales fragiles : les deux pics de DRX à 9,2° et 31,5° (2θ) correspondent à des distances de 9,60 et 2,84 Å, dont le rapport (3,38) exclut une indexation (001)/(002) d'une même phase et qui ne coïncident ni avec le graphite (3,36 Å) ni avec le nitrure de carbone graphitique (3,26 Å) ; un pic voisin de 31,5° évoque plutôt un sel cristallisé (par exemple un sel de sodium), hypothèse non vérifiée. En Raman, les bandes appelées « G » (1645 cm−1) et « D » (1411 cm−1) ne sont pas les bandes D et G du carbone (elles rappellent des bandes de carboxylate et d'amide), de sorte que le rapport ID/IG n'a pas son sens habituel."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Concentration de référence : les 6,52 mg/mL sont mesurés par lyophilisation du surnageant avant la dialyse, soit environ 80 à 90 % de la masse des solutés introduits (surtout du citrate de sodium résiduel). Les doses du test MTT, de l'imagerie cellulaire et de la détection de Hg2+ exprimées à partir de cette valeur ne sont donc pas des doses de points quantiques."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Détection de Hg2+ : la gamme annoncée (0–5 × 10−6 mol L−1) est ambiguë d'un facteur 25, car 200 μL de solution de Hg2+ sont dilués à 5 mL alors que la figure 6b donne cette gamme comme concentration dans la cuve ; la limite de détection en dépend. L'équation « F0/F » décroissante est en réalité F/F0, et l'écart-type de la limite de détection est pris sur « le signal le plus bas » et non sur un blanc, ce qui rend la limite optimiste."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves sur la nature et les témoins : (1) les signatures optiques (émission bleue indépendante de l'excitation, déclin mono-exponentiel, poudre blanche) évoquent des fluorophores moléculaires citrate–glycine plutôt que des points quantiques de graphène, ce que l'article ne tranche pas (cf. Essner et al., Chem. Mater. 2018 ; Song et al., J. Mater. Chem. C 2015) ; (2) l'optimum à 2 × 10−3 mol L−1 repose sur un seul point (42 %) entre deux points à environ 30 %, sans répétition ; (3) la référence quinine est donnée à 54 % dans H2SO4 0,1 M alors que cette valeur est établie pour 0,5 M ; (4) le témoin à l'acide citrique change aussi le pH (de l'ordre de 8 à 3) et retire le sodium, il ne isole donc pas l'effet du précurseur ; (5) dans la série M-NG, la formation et l'extinction par l'ion résiduel sont confondues, et Ag+ est probablement réduit en argent métallique par le citrate à 180 °C ; (6) la forme du citrate de sodium (trisodique anhydre ou hydraté) et le pH initial ne sont pas donnés."
   }
  ],
  "method_sources": [],
@@ -1937,6 +2060,14 @@
   {
    "where": "Mn-NGQDs, MnCl2",
    "issue": "La liste des produits cite MnCl2·4H2O et la synthèse « MnCl2 solution » : formule MnCl2 retenue pour le réactif, la forme hydratée n'étant pas explicitement reliée à la solution."
+  },
+  {
+   "where": "Mn-NGQDs_Mn1, _Mn3, _Mn4, _MnSO4, _MnNO3, _MnOAc, _160C, _200C, _citric-acid, NG_citric-acid",
+   "issue": "Morphologie (TEM) et phase (DRX) ne sont données par l'article que pour Mn(ii)-NGQDs (2 × 10−3 mol L−1, MnCl2, 180 °C) et NG ; elles ne sont plus recopiées sur ces branches. Pour l'acide citrique, l'article dit seulement que le précurseur est « unsuitable » pour des points quantiques de qualité (Fig. S5b, absente)."
+  },
+  {
+   "where": "Mn-NGQDs step 7, concentration 6.52 mg/mL",
+   "issue": "L'annexe mesure 6.52 mg/mL en lyophilisant le surnageant de la centrifugation, avant la dialyse (formule (M-M0)/V), puis prend cette valeur comme « standard » pour la détection de Hg2+, le test MTT et l'imagerie. L'identité avec la solution mère redispersée après dialyse est une lecture ; le volume de redispersion n'est pas donné."
   }
  ]
 }
