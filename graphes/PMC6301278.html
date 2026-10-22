@@ -1,0 +1,118 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6301278</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6301278 — Synthesis, characterization and antibacterial activity of silver nanoparticles using Rhazya stricta.</h1>
+<h2>Voie : R_stricta_root_extract</h2>
+<pre class="mermaid">flowchart LR
+  R15121([&quot;dried roots of Rhazya stricta&lt;br/&gt;147 g&quot;]):::reactif
+  R15121 --&gt;|&quot;precursor&quot;| S17992
+  R15122([&quot;methanol 80%&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15122 --&gt;|&quot;solvent&quot;| S17992
+  R15123([&quot;deionized water (root washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15123 --&gt;|&quot;wash&quot;| S17992
+  S17992[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : thrice&quot;]:::etape
+  S17992 --&gt; S17993
+  S17993[&quot;&lt;b&gt;2. dry&lt;/b&gt;&quot;]:::etape
+  S17993 --&gt; S17994
+  S17994[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 3 days&quot;]:::etape
+  S17994 --&gt; S17995
+  S17995[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S17995 --&gt; S17996
+  S17996[&quot;&lt;b&gt;5. evaporate&lt;/b&gt;&quot;]:::etape
+  S17996 --&gt; M
+  M{{&quot;methanolic root extract of Rhazya stricta&lt;br/&gt;&quot;}}:::materiau
+  O72937[&quot;dry_extract_mass : 13 g&quot;]:::resultat
+  M -.-&gt; O72937
+  O72938[&quot;zone_of_inhibition_B_subtilis : 10 mm&quot;]:::resultat
+  M -.-&gt; O72938
+  O72939[&quot;zone_of_inhibition_E_coli : 10 mm&quot;]:::resultat
+  M -.-&gt; O72939
+  O72940[&quot;zone_of_inhibition_E_coli_Fig7_dis… : 8 mm&quot;]:::resultat
+  M -.-&gt; O72940
+  O72941[&quot;zone_of_inhibition_E_coli_Fig7_dis… : 9 mm&quot;]:::resultat
+  M -.-&gt; O72941
+  O72942[&quot;zone_of_inhibition_B_subtilis_Fig7… : 9 mm&quot;]:::resultat
+  M -.-&gt; O72942
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNP_RS</h2>
+<pre class="mermaid">flowchart LR
+  R15124([&quot;silver nitrate solution&lt;br/&gt;100 mL&quot;]):::reactif
+  R15124 --&gt;|&quot;precursor&quot;| S17997
+  R15125([&quot;root methanol extract of Rhazya stricta&lt;br/&gt;six mL of the solution of 10 …&quot;]):::reactif
+  R15125 --&gt;|&quot;intermediate&quot;| S17997
+  R15126([&quot;methanol (dissolution of the extract)&lt;br/&gt;18 mL&quot;]):::reactif
+  R15126 --&gt;|&quot;solvent&quot;| S17997
+  R15127([&quot;deionized water (AgNO3 solution)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15127 --&gt;|&quot;solvent&quot;| S17997
+  R15128([&quot;distilled water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15128 --&gt;|&quot;wash&quot;| S17997
+  S17997[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature_storage : 4 °C&quot;]:::etape
+  S17997 --&gt; S17998
+  S17998[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;concentration : one millimolar&quot;]:::etape
+  S17998 --&gt; S17999
+  S17999[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume : six milliliter extract soluti…&lt;br/&gt;addition_rate : drop by drop&quot;]:::etape
+  S17999 --&gt; S18000
+  S18000[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S18000 --&gt; S18001
+  S18001[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 12000 rpm&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S18001 --&gt; S18002
+  S18002[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : thrice&quot;]:::etape
+  S18002 --&gt; S18003
+  S18003[&quot;&lt;b&gt;7. sonicate&lt;/b&gt;&quot;]:::etape
+  S18003 --&gt; S18004
+  S18004[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S18004 --&gt; M
+  M{{&quot;silver nanoparticles&lt;br/&gt;Ag&quot;}}:::materiau
+  O72946[&quot;agglomeration : more agglomeration (Fig. 3A)&quot;]:::resultat
+  M -.-&gt; O72946
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11616{{&quot;AgNP_RS&quot;}}:::materiau
+  B11617[&quot;AgNP_RS_xylitol&quot;]:::etape
+  B11616 --&gt;|&quot;additive = xylitol, six mL (10−2 M)&quot;| B11617
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNP_ser_450</h2>
+<pre class="mermaid">flowchart LR
+  R15130([&quot;silver nitrate solution (10 mL)&lt;br/&gt;10 mL&quot;]):::reactif
+  R15130 --&gt;|&quot;precursor&quot;| S18005
+  R15131([&quot;root methanol extract of Rhazya stricta&lt;br/&gt;450 μL&quot;]):::reactif
+  R15131 --&gt;|&quot;intermediate&quot;| S18005
+  S18005[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S18005 --&gt; M
+  M{{&quot;silver nanoparticles&lt;br/&gt;Ag&quot;}}:::materiau
+  O72949[&quot;zone_of_inhibition_E_coli : 10 mm&quot;]:::resultat
+  M -.-&gt; O72949
+  O72950[&quot;zone_of_inhibition_B_subtilis : 11 mm&quot;]:::resultat
+  M -.-&gt; O72950
+  O72951[&quot;uv_vis_lambda_max : 402 nm&quot;]:::resultat
+  M -.-&gt; O72951
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11618{{&quot;AgNP_ser_450&quot;}}:::materiau
+  B11619[&quot;AgNP_ser_250&quot;]:::etape
+  B11618 --&gt;|&quot;root methanol extract of… = 250 μL&quot;| B11619
+  B11620[&quot;AgNP_ser_350&quot;]:::etape
+  B11618 --&gt;|&quot;root methanol extract of… = 350 μL&quot;| B11620
+  B11621[&quot;AgNP_ser_550&quot;]:::etape
+  B11618 --&gt;|&quot;root methanol extract of… = 550 μL&quot;| B11621
+  B11622[&quot;AgNP_ser_650&quot;]:::etape
+  B11618 --&gt;|&quot;root methanol extract of… = 650 μL&quot;| B11622
+  B11623[&quot;AgNP_ser_xylitol_450&quot;]:::etape
+  B11618 --&gt;|&quot;additive = xylitol&quot;| B11623
+  B11624[&quot;AgNP_ser_xylitol_550&quot;]:::etape
+  B11623 --&gt;|&quot;root methanol extract of… = 550 μL&quot;| B11624
+  B11625[&quot;AgNP_ser_xylitol_650&quot;]:::etape
+  B11623 --&gt;|&quot;root methanol extract of… = 650 μL&quot;| B11625
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
