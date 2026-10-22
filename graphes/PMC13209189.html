@@ -1,0 +1,102 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC13209189</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC13209189 — Controlled Chemical Synthesis of Color Centers in Nanocrystalline Silicon Carbide.</h1>
+<h2>Voie : 0%-3 h-1050 °C</h2>
+<pre class="mermaid">flowchart LR
+  R15676([&quot;activated carbon (NORIT A SUPRA EUR USP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15676 --&gt;|&quot;precursor&quot;| S18849
+  R15677([&quot;silicon powder (~325 mesh)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15677 --&gt;|&quot;precursor&quot;| S18849
+  R15678([&quot;poly(tetrafluoroethylene) powder (1 µm parti…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15678 --&gt;|&quot;precursor&quot;| S18849
+  R15679([&quot;isopropanol&lt;br/&gt;added until the samples had a…&quot;]):::reactif
+  R15679 --&gt;|&quot;solvent&quot;| S18849
+  R15680([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15680 --&gt;|&quot;gas&quot;| S18849
+  R15681([&quot;polyvinyl alcohol solution (5 w/w%)&lt;br/&gt;a few drops&quot;]):::reactif
+  R15681 --&gt;|&quot;binder&quot;| S18849
+  R15682([&quot;hydrofluoric acid&lt;br/&gt;1:1:10 (HF:HNO3:H2O)&quot;]):::reactif
+  R15682 --&gt;|&quot;etchant&quot;| S18849
+  R15683([&quot;nitric acid&lt;br/&gt;1:1:10 (HF:HNO3:H2O)&quot;]):::reactif
+  R15683 --&gt;|&quot;etchant&quot;| S18849
+  R15684([&quot;water (cleaning solution)&lt;br/&gt;1:1:10 (HF:HNO3:H2O)&quot;]):::reactif
+  R15684 --&gt;|&quot;solvent&quot;| S18849
+  R15685([&quot;air (carbon removal)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15685 --&gt;|&quot;gas&quot;| S18849
+  S18849[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;milling_speed : 500 RPM&lt;br/&gt;duration : 3 h&lt;br/&gt;ball_to_powder_ratio : 1:10&lt;br/&gt;atmosphere : argon&quot;]:::etape
+  S18849 --&gt; S18850
+  S18850[&quot;&lt;b&gt;2. dry&lt;/b&gt;&quot;]:::etape
+  S18850 --&gt; S18851
+  S18851[&quot;&lt;b&gt;3. press&lt;/b&gt;&quot;]:::etape
+  S18851 --&gt; S18852
+  S18852[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature_dwell : 200 °C&lt;br/&gt;duration : 60 min&lt;br/&gt;heating_rate : 5 °C/min&lt;br/&gt;atmosphere : argon&quot;]:::etape
+  S18852 --&gt; S18853
+  S18853[&quot;&lt;b&gt;5. react&lt;/b&gt;&lt;br/&gt;temperature : 1050 °C&lt;br/&gt;duration : 60 min&lt;br/&gt;heating_rate : 5 °C/min&lt;br/&gt;atmosphere : argon&quot;]:::etape
+  S18853 --&gt; S18854
+  S18854[&quot;&lt;b&gt;6. cool&lt;/b&gt;&lt;br/&gt;duration : overnight&quot;]:::etape
+  S18854 --&gt; S18855
+  S18855[&quot;&lt;b&gt;7. calcine&lt;/b&gt;&lt;br/&gt;temperature : 650 °C&lt;br/&gt;duration : 10 h&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S18855 --&gt; S18856
+  S18856[&quot;&lt;b&gt;8. etch&lt;/b&gt;&lt;br/&gt;duration : overnight&quot;]:::etape
+  S18856 --&gt; S18857
+  S18857[&quot;&lt;b&gt;9. wash&lt;/b&gt;&lt;br/&gt;ph_endpoint : 5&quot;]:::etape
+  S18857 --&gt; S18858
+  S18858[&quot;&lt;b&gt;10. dry&lt;/b&gt;&quot;]:::etape
+  S18858 --&gt; M
+  M{{&quot;nanocrystalline silicon carbide powder&lt;br/&gt;SiC&quot;}}:::materiau
+  O75607[&quot;SiC_yield : 11 %&quot;]:::resultat
+  M -.-&gt; O75607
+  O75608[&quot;crystallite_size : 47 nm&quot;]:::resultat
+  M -.-&gt; O75608
+  O75609[&quot;polytype_3C_content : did not contain 3C-SiC&quot;]:::resultat
+  M -.-&gt; O75609
+  O75610[&quot;polytype_4H_content : 11 wt%&quot;]:::resultat
+  M -.-&gt; O75610
+  O75611[&quot;polytype_6H_content : 89 wt%&quot;]:::resultat
+  M -.-&gt; O75611
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12055{{&quot;0%-3 h-1050 °C&quot;}}:::materiau
+  B12056[&quot;0%-3 h-1150 °C&quot;]:::etape
+  B12055 --&gt;|&quot;temperature = 1150 °C&quot;| B12056
+  B12057[&quot;0%-3 h-1250 °C&quot;]:::etape
+  B12055 --&gt;|&quot;temperature = 1250 °C&quot;| B12057
+  B12058[&quot;0%-3 h-1350 °C&quot;]:::etape
+  B12055 --&gt;|&quot;temperature = 1350 °C&quot;| B12058
+  B12059[&quot;0%-3 h-1450 °C&quot;]:::etape
+  B12055 --&gt;|&quot;temperature = 1450 °C&quot;| B12059
+  B12060[&quot;10%-3 h-1050 °C&quot;]:::etape
+  B12055 --&gt;|&quot;additive = 10 mol%&quot;| B12060
+  B12065[&quot;0%-0 h-1050 °C&quot;]:::etape
+  B12055 --&gt;|&quot;milling_speed = 75 RPM&lt;br/&gt;duration = overnight&quot;| B12065
+  B12061[&quot;10%-3 h-1150 °C&quot;]:::etape
+  B12060 --&gt;|&quot;temperature = 1150 °C&quot;| B12061
+  B12062[&quot;10%-3 h-1250 °C&quot;]:::etape
+  B12060 --&gt;|&quot;temperature = 1250 °C&quot;| B12062
+  B12063[&quot;10%-3 h-1350 °C&quot;]:::etape
+  B12060 --&gt;|&quot;temperature = 1350 °C&quot;| B12063
+  B12064[&quot;10%-3 h-1450 °C&quot;]:::etape
+  B12060 --&gt;|&quot;temperature = 1450 °C&quot;| B12064
+  B12066[&quot;0%-0 h-1150 °C&quot;]:::etape
+  B12065 --&gt;|&quot;temperature = 1150 °C&quot;| B12066
+  B12067[&quot;0%-0 h-1250 °C&quot;]:::etape
+  B12065 --&gt;|&quot;temperature = 1250 °C&quot;| B12067
+  B12068[&quot;0%-0 h-1350 °C&quot;]:::etape
+  B12065 --&gt;|&quot;temperature = 1350 °C&quot;| B12068
+  B12069[&quot;0%-0 h-1450 °C&quot;]:::etape
+  B12065 --&gt;|&quot;temperature = 1450 °C&quot;| B12069
+  B12070[&quot;10%-0 h-1050 °C&quot;]:::etape
+  B12065 --&gt;|&quot;additive = 10 mol%&quot;| B12070
+  B12071[&quot;10%-0 h-1150 °C&quot;]:::etape
+  B12070 --&gt;|&quot;temperature = 1150 °C&quot;| B12071
+  B12072[&quot;10%-0 h-1250 °C&quot;]:::etape
+  B12070 --&gt;|&quot;temperature = 1250 °C&quot;| B12072
+  B12073[&quot;10%-0 h-1350 °C&quot;]:::etape
+  B12070 --&gt;|&quot;temperature = 1350 °C&quot;| B12073
+  B12074[&quot;10%-0 h-1450 °C&quot;]:::etape
+  B12070 --&gt;|&quot;temperature = 1450 °C&quot;| B12074
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
