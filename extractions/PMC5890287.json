@@ -47,7 +47,7 @@
    "route": "Au-Fe2O3-RGO",
    "results_in": [
     "Fig. 2",
-    "Fig. 3b",
+    "Fig. 3 (légende : 3b ; sur l'image publiée ce diagramme porte l'étiquette (a))",
     "Fig. 4e",
     "Fig. 5c",
     "Fig. 6",
@@ -76,7 +76,10 @@
    "sample": "Au@RGO",
    "defined_in": "Results, XRD (Fig. 3a)",
    "route": null,
-   "why": "Aucune préparation décrite dans l'article ; seul le diagramme XRD (Fig. 3a) est présenté."
+   "why": "Aucune préparation décrite dans l'article ; seul le diagramme XRD (Fig. 3a) est présenté.",
+   "results_in": [
+    "Fig. 3 (légende : 3a ; sur l'image publiée ce diagramme porte l'étiquette (b))"
+   ]
   },
   {
    "sample": "Au (XRD reference in Fig. 3a)",
@@ -194,7 +197,11 @@
      "name": "hydrochloric acid 5%",
      "formula": "HCl",
      "role": "wash",
-     "quote": "Finally, the precipitate was filtered and washed with 5 ml of HCl (5%) followed copious washing with deionized water, to neutral pH."
+     "quote": "Finally, the precipitate was filtered and washed with 5 ml of HCl (5%) followed copious washing with deionized water, to neutral pH.",
+     "amount": 5,
+     "unit": "ml",
+     "purity": "analytical grade",
+     "supplier_quote": "All chemicals were of analytical grade and used as received without further purification."
     },
     {
      "name": "deionized water",
@@ -543,7 +550,9 @@
      "name": "ethanol",
      "formula": "C2H5OH",
      "role": "wash",
-     "quote": "After cooling to room temperature, the obtained precipitate was collected and copiously washed with deionized water followed by ethanol."
+     "quote": "After cooling to room temperature, the obtained precipitate was collected and copiously washed with deionized water followed by ethanol.",
+     "purity": "analytical grade",
+     "supplier_quote": "All chemicals were of analytical grade and used as received without further purification."
     }
    ],
    "steps": [
@@ -739,20 +748,24 @@
     "washing",
     "drying",
     "dissolution_solvent",
-    "yield"
+    "yield",
+    "FeCl2_concentration",
+    "sodium_acetate_concentration"
    ],
    "steps": [
     {
      "order": 1,
      "action": "dissolve",
-     "description": "Iron precursor and sodium acetate dissolved (solvent and volume not given because the GO suspension is absent).",
+     "description": "Iron precursor and sodium acetate dissolved; the article does not give their quantities, the solvent or the volume for this control (the concentrations shown for the parent route are not stated for this sample).",
      "quote": "Pristine α-Fe2O3 nanoparticles were also synthesized by similar hydrothermal preparation process in the absence of GO solutions.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
       "duration",
       "solvent",
-      "volume"
+      "volume",
+      "FeCl2_concentration",
+      "sodium_acetate_concentration"
      ]
     },
     {
@@ -860,14 +873,12 @@
      "name": "ethanol 99.9%",
      "formula": "C2H5OH",
      "role": "solvent",
-     "amount": 5,
-     "unit": "mL",
      "purity": "99.9%",
-     "supplier_quote": "The chlorophyll used had been extracted with 99.9% ethanol from 2 g of Ficusreligiosa leaves collected near Salem-Tamilnadu, India, and its chromophore characteristics studied by UV-VIS absorption spectroscopy in the range of 250 to 750 nm.",
      "not_stated": [
+      "amount",
       "supplier"
      ],
-     "quote": "The proposed formation mechanism of chlorophyll (concentration- 2 g leaves in 5 mL of ethanol) was coated on an ITO glass substrate by drop casting method"
+     "quote": "The chlorophyll used had been extracted with 99.9% ethanol from 2 g of Ficusreligiosa leaves collected near Salem-Tamilnadu, India"
     }
    ],
    "steps": [
@@ -961,10 +972,11 @@
      "amount": 10,
      "unit": "ml",
      "not_stated": [
-      "purity",
       "supplier"
      ],
-     "quote": "This was followed by addition of 50 mM of HAuCl4.3H2O dissolved in 10 ml of ethanol."
+     "quote": "This was followed by addition of 50 mM of HAuCl4.3H2O dissolved in 10 ml of ethanol.",
+     "purity": "analytical grade",
+     "supplier_quote": "All chemicals were of analytical grade and used as received without further purification."
     },
     {
      "name": "chlorophyll extract (route Chlorophyll)",
@@ -1112,6 +1124,20 @@
      "instrument": "UV-Vis spectrophotometer (Josco V-650)",
      "conditions": "5 mg catalyst in 50 ml MB solution (10 ppm), stirred 15 min in the dark, then irradiated in visible sunlight; aliquots every 30 min, UV-Vis (MB maximum 664 nm)",
      "quote": "The 5 mg of the catalysts were taken and dispersed in 50 ml of aqueous solution of methylene blue. The solution was mixed by using a stirrer constantly in the presence of dark environment for 15 minutes and then irradiated in the visible sun light."
+    },
+    {
+     "technique": "FTIR",
+     "result": "peaks at 570 (Fe-O in α-Fe2O3), 1630 (C=C), 1710 (C=O of COOH), 2850–2925 (C-H of methylene) and 3430 cm−1 (water)",
+     "instrument": null,
+     "conditions": "4000 to 450 cm−1",
+     "quote": "The FTIR spectra for the Au@α-Fe2O3@RGO ternary nanocomposite, Fig. 4(c), exhibits six intense peaks at 570, 1630, 1710, 2850–2925 and 3430 cm−1 corresponds to Fe-O vibration in α-Fe2O3, stretching vibration of C=C, stretching of C=O in COOH groups, C-H stretch vibrations of the methylene groups and stretching vibration of water molecules, respectively"
+    },
+    {
+     "technique": "UV-Vis absorption",
+     "result": "colour change from yellow to dark red within 30 min with an absorption peak at ~543 nm (Fig. 9b)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "the results in color change from yellow to dark red within 30 min with a correspondent absorption peak at ~543 nm (Fig. 9(b))"
     }
    ],
    "outcomes": [
@@ -1197,13 +1223,6 @@
      "value_text": "absent",
      "parent_value": "5 ml",
      "quote": "Similar photochemical synthesis process was conducted for synthesis of Au@α-Fe2O3@RGO ternary nanocomposite in absence of chlorophyll."
-    },
-    {
-     "parameter": "duration",
-     "step_order": 4,
-     "value_text": "0 to 60 min",
-     "parent_value": "20 min",
-     "quote": "Au3+ ions reduction on α-Fe2O3@RGO under visible light irradiation (0 to 60 min) without chlorophyll"
     }
    ],
    "succeeded": true,
@@ -1212,13 +1231,16 @@
     "washing",
     "light_intensity",
     "irradiation_temperature",
-    "collection_time"
+    "collection_time",
+    "product_collection",
+    "centrifugation_speed_and_duration",
+    "drying_temperature_and_duration"
    ],
    "steps": [
     {
      "order": 1,
      "action": "disperse",
-     "description": "α-Fe2O3/RGO dispersed in ethanol (same as the chlorophyll synthesis; the article says the process is similar).",
+     "description": "α-Fe2O3/RGO dispersed in ethanol (quantities of the chlorophyll synthesis; the article only says the process is similar).",
      "quote": "100 mg of α-Fe2O3/RGO nanocomposites was dispersed in 20 ml of 99.9% ethanol.",
      "parameters": [],
      "equipment": [],
@@ -1241,63 +1263,17 @@
     {
      "order": 3,
      "action": "irradiate",
-     "description": "Mixture placed in sunlight; reduction followed by UV-Vis for 0 to 60 min.",
+     "description": "Mixture irradiated with visible light; the reduction of Au3+ is followed by UV-Vis over 0 to 60 min (observation window of Fig. 9a, not a stated synthesis duration; 60 min is the point where the article reports complete reduction). Light source, intensity, sampling interval and collection time are not stated for this sample.",
      "quote": "Au3+ ions reduction on α-Fe2O3@RGO under visible light irradiation (0 to 60 min) without chlorophyll",
-     "parameters": [
-      {
-       "name": "light_source",
-       "value_text": "sunlight",
-       "quote": "The mixed solutions were placed in sunlight and 2 ml aliquot was withdrawn every 5 min for UV-Vis analysis."
-      },
-      {
-       "name": "duration",
-       "value_text": "0 to 60 min",
-       "quote": "Au3+ ions reduction on α-Fe2O3@RGO under visible light irradiation (0 to 60 min) without chlorophyll"
-      }
-     ],
+     "parameters": [],
      "equipment": [],
      "not_stated": [
+      "light_source",
       "light_intensity",
-      "temperature"
+      "temperature",
+      "duration",
+      "sampling_interval"
      ]
-    },
-    {
-     "order": 4,
-     "action": "centrifuge",
-     "description": "Collection and centrifugation as in the chlorophyll synthesis (assumed from 'similar process').",
-     "quote": "After 20 min irradiation, the suspension was collected and centrifuged for 30 min.",
-     "parameters": [
-      {
-       "name": "duration",
-       "value_num": 30,
-       "unit": "min",
-       "quote": "After 20 min irradiation, the suspension was collected and centrifuged for 30 min."
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "speed"
-     ]
-    },
-    {
-     "order": 5,
-     "action": "dry",
-     "description": "Dried overnight in a vacuum oven at 70 °C (assumed from 'similar process').",
-     "quote": "The final product was dried overnight under vacuum oven at 70 °C.",
-     "parameters": [
-      {
-       "name": "temperature",
-       "value_num": 70,
-       "unit": "°C",
-       "quote": "The final product was dried overnight under vacuum oven at 70 °C."
-      },
-      {
-       "name": "duration",
-       "value_text": "overnight",
-       "quote": "The final product was dried overnight under vacuum oven at 70 °C."
-      }
-     ],
-     "equipment": []
     }
    ],
    "characterizations": [
@@ -1380,7 +1356,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Au-Fe2O3-RGO",
-   "text": "Hypothèse : dans l'éthanol, HAuCl4 est réduit en Au0 par les électrons photogénérés (hématite, chlorophylle) et l'éthanol peut jouer le rôle de donneur de trous/réducteur sacrificiel ; le RGO fixe les ions Au3+ sur ses groupes résiduels, ce qui explique le dépôt d'Au sur le support plutôt qu'en solution."
+   "text": "Hypothèse : la réduction de Au(III) en Au0 se fait probablement par plusieurs voies en parallèle : métabolites réducteurs de l'extrait brut (polyphénols, sucres), photoréduction en milieu éthanolique (l'éthanol jouant le rôle de donneur sacrificiel) et électrons photogénérés de l'hématite transférés au RGO. La chlorophylle, présente à quelques micromoles, ne pourrait agir que comme sensibilisateur régénéré par un donneur sacrificiel. Le RGO fixe probablement les ions Au3+ sur ses groupes résiduels, d'où un dépôt sur le support plutôt qu'en solution. Le rôle de photosensibilisateur n'est pas démontré (voir la limite de reproductibilité ci-dessous)."
   },
   {
    "type": "securite_auteurs",
@@ -1404,6 +1380,53 @@
    "route": "Au-Fe2O3-RGO",
    "text": "Durée d'irradiation contradictoire : 20 min dans les Méthodes, 30 min dans le résumé, la figure 9b et la conclusion. HAuCl4 est écrit « 50 mM » dans 10 ml pour 100 mg de support, soit environ 0,5 mmol d'Au (≈ 0,1 g d'or), ce qui ne cadre pas avec des nanopoints de 5 à 10 nm et paraît trop élevé ; la valeur de l'article est conservée.",
    "quote": "After 20 min irradiation, the suspension was collected and centrifuged for 30 min."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Fe2O3-RGO",
+   "text": "Hypothèse : Fe2+ s'adsorbe sur les groupes carboxylate et hydroxyle du GO ; à pH faiblement acide à neutre (acétate, base faible), Fe2+ est probablement en partie oxydé par les fonctions oxygénées du GO (réduit en RGO) et par l'O2 du ciel gazeux, puis précipite en oxyhydroxydes de fer qui se déshydratent en hématite à 180 °C. La fraction de Fe2+ non oxydée pourrait donner de la magnétite ou de la maghémite. L'équation des auteurs, non équilibrée et à pH ≥ 11, ne décrit pas ce mécanisme."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-Fe2O3-RGO",
+   "text": "Les deux clichés de la Fig. 3 portent des étiquettes inversées par rapport à la légende : sur l'image publiée, le diagramme étiqueté (a) montre les pics de l'hématite avec Au(111) (c'est le ternaire, légende 3b) et celui étiqueté (b) ne montre que les pics de l'or (Au@RGO, légende 3a). Légende et texte concordent entre eux.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Fe2O3-RGO",
+   "text": "La dégradation complète de α-Fe2O3@RGO est donnée à 180 min dans le texte, mais les spectres de la Fig. 10b ne montrent plus de bande de bleu de méthylène dès 120–150 min (spectres jusqu'à 210 min) et la courbe C/C0 de la Fig. 10d s'arrête vers 150 min : les figures et le texte ne concordent pas. Valeur du texte conservée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'acide aspartique et la soude (NaOH) sont listés dans les produits chimiques utilisés (Sigma Aldrich) mais ne sont employés dans aucune étape des Méthodes.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Fe2O3-RGO",
+   "text": "Critique scientifique : les équations 2, 3 et 5 des auteurs ne sont pas équilibrées ; « pH ≥ 11 » est impossible avec 40 mM d'acétate de sodium (pH ≲ 8,7, plus bas encore avec Fe2+ et le GO acide) et le pH n'est pas mesuré ; les bandes Raman à 669, 540 et 309 cm−1, attribuées à la magnétite, sont celles de Fe3O4 (Shebanova & Lazor, J. Solid State Chem. 2003), et l'hématite est décrite à tort comme une « spinelle inverse cubique » alors qu'elle est de type corindon. La DRX indique l'hématite mais le Raman indique la magnétite : la pureté de phase α-Fe2O3 n'est pas démontrée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-Fe2O3-RGO",
+   "text": "Critique scientifique : la frange HRTEM à 0,326 nm, attribuée à Au(110), ne prouve pas la présence d'or ((110) est éteint en structure cubique à faces centrées, d(111) = 0,2355 nm) ; elle ressemble plutôt à l'espacement entre feuillets du RGO. Les paramètres de maille annoncés pour l'hématite (a = 0,24 nm, c = 0,56 nm) sont faux (a = 0,5038 nm, c = 1,3772 nm selon la fiche ICDD 24-0072, Handbook of Mineralogy) et plusieurs indices de Miller sont erronés. Environ 0,5 mmol d'or (≈ 98 mg) pour 100 mg de support représente ≈ 50 % en masse d'or, incompatible avec des nanopoints de 5–10 nm et une raie Au(111) de faible intensité ; la teneur en or n'est jamais mesurée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-Fe2O3-RGO",
+   "text": "Critique scientifique : le rôle de photosensibilisateur de la chlorophylle n'est pas démontré. L'extrait brut contient des polyphénols et des sucres qui réduisent HAuCl4 sans lumière (Iravani, Green Chem. 2011) ; la chlorophylle (≈ 2–5 µmol) ne peut pas fournir les ≈ 1,5 mmol d'électrons nécessaires ; l'équation 10 n'est pas équilibrée ; aucun témoin à l'obscurité ni extrait sans α-Fe2O3@RGO n'est décrit.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au-Fe2O3-RGO-noChl",
+   "text": "Critique scientifique : le témoin sans chlorophylle change plusieurs variables à la fois : il retire la chlorophylle mais aussi tous les métabolites réducteurs de l'extrait, les 5 mL de solvant et donc la concentration (≈ 16,7 contre ≈ 14,3 mM). Il ne permet pas d'attribuer l'accélération de la réduction à la photosensibilisation par la chlorophylle ; un meilleur témoin serait de la chlorophylle purifiée, ou l'extrait à l'obscurité, à volume égal (Iravani, Green Chem. 2011).",
+   "quote": null
   }
  ],
  "method_sources": [],
@@ -1415,14 +1438,6 @@
   {
    "where": "Au-Fe2O3-RGO reagent HAuCl4",
    "issue": "« 50 mM of HAuCl4.3H2O dissolved in 10 ml of ethanol » pour 100 mg de support = 0,5 mmol d'Au (≈ 0,1 g), un chiffre improbable pour des nanopoints sur 100 mg de support (µM plus plausible). Valeur de l'article recopiée sans correction."
-  },
-  {
-   "where": "Au-Fe2O3-RGO-noChl",
-   "issue": "« Similar photochemical synthesis process … in absence of chlorophyll » : étapes de dispersion, centrifugation et séchage reprises d'après « similar » (lecture littérale la plus proche) ; la durée d'irradiation n'est donnée que comme 0 à 60 min suivis (légende de la Fig. 9a), la durée de collecte du produit n'est pas écrite. Aucun test de dégradation du bleu de méthylène n'est donné pour ce matériau."
-  },
-  {
-   "where": "Fe2O3 (hématite pure)",
-   "issue": "« similar hydrothermal preparation process in the absence of GO solutions » : les quantités de FeCl2 et d'acétate de sodium sont héritées de la voie Fe2O3-RGO (non écrites pour ce témoin) ; le solvant de dissolution (le GO étant absent), le lavage et le séchage ne sont pas décrits ; 180 °C / 12 h repris des Résultats."
   },
   {
    "where": "Fe2O3-RGO, résultat MB",
@@ -1441,16 +1456,28 @@
    "issue": "L'échantillon RGO n'a pas de protocole propre : 180 °C, 12 h déduits de la phrase FTIR « reduction of GO to RGO under hydrothermal method at 180 °C for 12 h ». Quantités, volume et traitement ne sont pas donnés."
   },
   {
-   "where": "Chlorophyll",
-   "issue": "Extraction décrite en une phrase (2 g de feuilles, éthanol 99,9 %) ; « 5 ml of chlorophyll in ethanol suspension » (Méthodes) et « 2 g leaves in 5 mL of ethanol » (Résultats, I-V) sont rapprochés sans que l'article dise que c'est la même préparation."
-  },
-  {
    "where": "Fig. 11a",
    "issue": "Lecture graphique : plateau de dégradation ≈ 99 % à la fin de chacun des 5 cycles (≈ 180 min), précision de lecture ± 2 % ; seule figure lue en valeurs. Les courbes C/C0 de la Fig. 10d et les spectres des Fig. 9 et 10 ne sont pas retranscrits (le texte donne les durées de dégradation complète)."
   },
   {
    "where": "Au-Fe2O3-RGO caractérisation",
    "issue": "Le diagramme XRD de la Fig. 3a est donné pour « Au@RGO and Au » (cristallite d'Au de 8 nm) : cet échantillon n'a aucune préparation dans l'article, donc cette valeur n'est pas rangée dans une voie."
+  },
+  {
+   "where": "Au-Fe2O3-RGO-noChl",
+   "issue": "« Similar photochemical synthesis process … in absence of chlorophyll » : la collecte, la centrifugation (30 min), le séchage (70 °C), la source lumineuse (soleil) et les prélèvements toutes les 5 min ne sont écrits que pour la synthèse avec chlorophylle ; ils sont déclarés non cités pour ce témoin. Les quantités de dispersion et d'ajout de HAuCl4 (étapes 1 et 2) viennent de la voie avec chlorophylle par héritage de la branche. « 0 to 60 min » est la fenêtre de suivi UV-Vis de la Fig. 9a, pas une durée de synthèse ; seul le texte dit qu'après 60 min la suspension est rouge foncé. Aucun test de dégradation du bleu de méthylène pour ce matériau."
+  },
+  {
+   "where": "Fe2O3 (hématite pure)",
+   "issue": "« similar hydrothermal preparation process in the absence of GO solutions » : les concentrations en FeCl2·4H2O et en acétate de sodium (20 et 40 mM, écrites pour 30 ml de suspension de GO) apparaissent par héritage de branche mais ne sont pas données pour ce témoin, de même que le solvant, le volume, le refroidissement, la collecte, le lavage et le séchage : tous déclarés non cités. 180 °C / 12 h sont repris de la phrase des Résultats."
+  },
+  {
+   "where": "Chlorophyll",
+   "issue": "Extraction décrite en une phrase (2 g de feuilles, éthanol 99,9 %), sans volume. Le « 5 mL » de « 2 g leaves in 5 mL of ethanol » (Résultats, film I-V) et les « 5 ml of chlorophyll in ethanol suspension » ajoutés à la synthèse de l'or ne sont pas rattachés à l'extraction par l'article : le volume d'éthanol est déclaré non cité."
+  },
+  {
+   "where": "Au-Fe2O3-RGO, FTIR du ternaire",
+   "issue": "Le texte situe le spectre FTIR du ternaire en « Fig. 4(c) » (qui est α-Fe2O3 selon la légende) et annonce « six intense peaks » pour cinq valeurs listées ; la légende place le ternaire en Fig. 4e. Valeurs du texte recopiées sans correction."
   }
  ]
 }

@@ -9,7 +9,7 @@
    "kind": "material",
    "material": {
     "name": "Ni-BTA, 1D π-d conjugated metal-organic framework with Ni-(NH)4 nodes",
-    "formula": "Ni(C6H4N4)",
+    "formula": "Ni1.0C6.0N4.0H6.0",
     "family": "MOF",
     "phase": "fishbone-like (herringbone) layered stacking, crystalline",
     "morphology": "nanorods, diameter ~30 nm, length over 150 nm"
@@ -263,6 +263,34 @@
      "instrument": "CHI 760E electrochemical workstation; RRDE with glassy carbon disk and Pt ring",
      "conditions": "scan rate 10 mV s−1, 1600 rpm, O2-saturated electrolytes, Pt ring held at 1.5 V (alkaline) or 1.2 V vs. RHE (neutral), collection efficiency 0.37",
      "quote": "LSV curves were measured on the RRDE at a scan rate of 10 mV s−1 and a rotating speed of 1600 rpm in O2-saturated alkaline and neutral media"
+    },
+    {
+     "technique": "XPS (N 1s, C 1s, O 1s)",
+     "result": "-C = N (398.3 eV) and -C-NH-M (399.6 eV, noted as -C-N-M) species coexist in the N 1s and C 1s spectra; metal-O (M-O, ~531.2 eV) in the O 1s spectra",
+     "instrument": "Escalab 250Xi, USA",
+     "conditions": "deconvolution of the high-resolution spectra of all the M-BTA analogs",
+     "quote": "-C = N (398.3 eV) and -C-NH-M (399.6 eV, noted as -C-N-M) species coexist"
+    },
+    {
+     "technique": "FTIR",
+     "result": "emerging peak around 3300 cm−1 assigned to -N-H stretching vibration of -NH- groups; -C = N species at 1500-1700 cm−1",
+     "instrument": null,
+     "conditions": "M-BTA analogs compared with the BTA precursor (symmetric and antisymmetric N-H stretching at 3300-3500 cm−1)",
+     "quote": "an emerging peak around 3300 cm−1 could be found, which can be assigned to -N-H stretching vibration of -NH- groups"
+    },
+    {
+     "technique": "Raman",
+     "result": "metal-N (-M-N) species at 600-700 cm−1",
+     "instrument": "Raman microscopy, HR800, Japan",
+     "conditions": null,
+     "quote": "the metal-N (-M-N) species at 600-700 cm−1 in the Raman spectra of M-BTA"
+    },
+    {
+     "technique": "simulated crystal structure (unit cell)",
+     "result": "a=7.6 Å, b=11.6 Å, c=7.6 Å; α=82.4°, β=68.9°, γ=74.6°",
+     "instrument": null,
+     "conditions": "simulated structure (Supplementary Fig. 6)",
+     "quote": "The simulated crystal structure of Ni-BTA, where the a=7.6 Å, b=11.6 Å, c=7.6 Å; α=82.4°, β=68.9°, γ=74.6°."
     }
    ],
    "outcomes": [
@@ -642,6 +670,19 @@
      "value_num": 0.12,
      "unit": "mA"
     }
+   ],
+   "not_stated": [
+    "ammonia_amount",
+    "water_volume",
+    "washing",
+    "drying"
+   ],
+   "missing_fields": [
+    "ammonia_amount",
+    "water_volume",
+    "washing",
+    "drying",
+    "air_flow_rate"
    ]
   },
   {
@@ -750,26 +791,26 @@
    "variations": [
     {
      "parameter": "deionized water (solution 1)",
-     "quote": "Note: the details on preparing H-Cu-BTA include: diluting the concentration of the reactants (by increasing the volume of deionized water from the previous 20 mL in total to 500 mL in total), decreasing the amount of NH3·H2O (decreasing the volume of concentrated aqueous ammonia (~14 M) from 1.0 mL to 0.1 mL), and prolonging the reaction time to 2 days from previous 6 h.",
+     "quote": "Diluted solution means diluting the concentration of the reactants (by increasing the volume of deionized water from the previous 20 mL in total to 500 mL in total), decreasing the amount of NH3·H2O (decreasing the volume of concentrated aqueous ammonia (~14 M) from 1.0 mL to 0.1 mL), and prolonging the reaction time to 2 days from previous 6 h.",
      "parent_value": "10 mL",
      "value_text": "500 mL in total for both solutions; split between the two solutions not stated"
     },
     {
      "parameter": "deionized water (metal salt solution)",
-     "quote": "Note: the details on preparing H-Cu-BTA include: diluting the concentration of the reactants (by increasing the volume of deionized water from the previous 20 mL in total to 500 mL in total), decreasing the amount of NH3·H2O (decreasing the volume of concentrated aqueous ammonia (~14 M) from 1.0 mL to 0.1 mL), and prolonging the reaction time to 2 days from previous 6 h.",
+     "quote": "Diluted solution means diluting the concentration of the reactants (by increasing the volume of deionized water from the previous 20 mL in total to 500 mL in total), decreasing the amount of NH3·H2O (decreasing the volume of concentrated aqueous ammonia (~14 M) from 1.0 mL to 0.1 mL), and prolonging the reaction time to 2 days from previous 6 h.",
      "parent_value": "10 mL",
      "value_text": "500 mL in total for both solutions; split between the two solutions not stated"
     },
     {
      "parameter": "concentrated aqueous ammonia",
-     "quote": "Note: the details on preparing H-Cu-BTA include: diluting the concentration of the reactants (by increasing the volume of deionized water from the previous 20 mL in total to 500 mL in total), decreasing the amount of NH3·H2O (decreasing the volume of concentrated aqueous ammonia (~14 M) from 1.0 mL to 0.1 mL), and prolonging the reaction time to 2 days from previous 6 h.",
+     "quote": "Diluted solution means diluting the concentration of the reactants (by increasing the volume of deionized water from the previous 20 mL in total to 500 mL in total), decreasing the amount of NH3·H2O (decreasing the volume of concentrated aqueous ammonia (~14 M) from 1.0 mL to 0.1 mL), and prolonging the reaction time to 2 days from previous 6 h.",
      "parent_value": "1.0 mL",
      "value_num": 0.1,
      "unit": "mL"
     },
     {
      "parameter": "duration",
-     "quote": "Note: the details on preparing H-Cu-BTA include: diluting the concentration of the reactants (by increasing the volume of deionized water from the previous 20 mL in total to 500 mL in total), decreasing the amount of NH3·H2O (decreasing the volume of concentrated aqueous ammonia (~14 M) from 1.0 mL to 0.1 mL), and prolonging the reaction time to 2 days from previous 6 h.",
+     "quote": "Diluted solution means diluting the concentration of the reactants (by increasing the volume of deionized water from the previous 20 mL in total to 500 mL in total), decreasing the amount of NH3·H2O (decreasing the volume of concentrated aqueous ammonia (~14 M) from 1.0 mL to 0.1 mL), and prolonging the reaction time to 2 days from previous 6 h.",
      "parent_value": "6 h",
      "step_order": 3,
      "value_num": 2,
@@ -1169,6 +1210,36 @@
      ]
     },
     {
+     "name": "sodium chloride (0.9 wt.%, physiological saline electrolyte)",
+     "formula": "NaCl",
+     "role": "electrolyte",
+     "quote": "Either the concentrated electrolytes, including 1 M KOH and 1 M NaCl solutions, or the diluted electrolytes, including 3.6 wt. % NaCl electrolyte (simulated seawater), 0.9 wt. % NaCl (physiological saline) and 0.1 M Na2SO4 were all cycled at a rate of 6 mL min-1, using pumps on each side, with a volume of 30 or 260 mL",
+     "amount_text": "0.9 wt. %",
+     "purity": "GR, 99.8%",
+     "supplier": "Macklin",
+     "supplier_quote": "NaCl (GR, 99.8%) was procured from Macklin."
+    },
+    {
+     "name": "sodium chloride (3.6 wt.%, simulated seawater electrolyte)",
+     "formula": "NaCl",
+     "role": "electrolyte",
+     "quote": "Either the concentrated electrolytes, including 1 M KOH and 1 M NaCl solutions, or the diluted electrolytes, including 3.6 wt. % NaCl electrolyte (simulated seawater), 0.9 wt. % NaCl (physiological saline) and 0.1 M Na2SO4 were all cycled at a rate of 6 mL min-1, using pumps on each side, with a volume of 30 or 260 mL",
+     "amount_text": "3.6 wt. %",
+     "purity": "GR, 99.8%",
+     "supplier": "Macklin",
+     "supplier_quote": "NaCl (GR, 99.8%) was procured from Macklin."
+    },
+    {
+     "name": "sodium sulfate (electrolyte)",
+     "formula": "Na2SO4",
+     "role": "electrolyte",
+     "quote": "Either the concentrated electrolytes, including 1 M KOH and 1 M NaCl solutions, or the diluted electrolytes, including 3.6 wt. % NaCl electrolyte (simulated seawater), 0.9 wt. % NaCl (physiological saline) and 0.1 M Na2SO4 were all cycled at a rate of 6 mL min-1, using pumps on each side, with a volume of 30 or 260 mL",
+     "amount_text": "0.1 M",
+     "purity": "AR, 99%",
+     "supplier": "Aladdin Reagents",
+     "supplier_quote": "1,2,4,5-benzenetetramine tetrahydrochloride (BTA·4HCl, >97%), ammonia solution (NH3·H2O, GR, 25-28%), NiCl2·6H2O (AR, 98%), MnCl2·4H2O (99.99%), FeSO4·7H2O (AR, >99%), CoCl2·6H2O ( > 98%) and CuCl2·2H2O ( > 99.99%), KOH (AR, 95.0%) and Na2SO4 (AR, 99%) were purchased from Aladdin Reagents."
+    },
+    {
      "name": "platinum foil (2×2 cm2)",
      "formula": "Pt",
      "role": "counter_electrode",
@@ -1234,29 +1305,44 @@
     {
      "order": 3,
      "action": "treat",
-     "description": "Pre-treat the Nafion 117 membrane with 5 wt.% H2O2 at 80 °C then 0.5 M H2SO4 at 80 °C for 1 h.",
+     "description": "Pre-treat the Nafion 117 membrane with 5 wt.% H2O2 solution at 80 °C (duration missing in the article).",
      "quote": "The anode and cathode were separated by a Nafion 117 membrane (pre-treated with 5 wt.% H2O2 solution at 80 °C for, followed 0.5 M H2SO4 at 80 °C for 1 h).",
      "parameters": [
       {
        "name": "temperature",
-       "quote": "The anode and cathode were separated by a Nafion 117 membrane (pre-treated with 5 wt.% H2O2 solution at 80 °C for, followed 0.5 M H2SO4 at 80 °C for 1 h).",
+       "quote": "pre-treated with 5 wt.% H2O2 solution at 80 °C for",
+       "value_num": 80,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "treat",
+     "description": "Then treat the Nafion membrane with 0.5 M H2SO4 at 80 °C for 1 h.",
+     "quote": "The anode and cathode were separated by a Nafion 117 membrane (pre-treated with 5 wt.% H2O2 solution at 80 °C for, followed 0.5 M H2SO4 at 80 °C for 1 h).",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "followed 0.5 M H2SO4 at 80 °C for 1 h",
        "value_num": 80,
        "unit": "°C"
       },
       {
        "name": "duration",
-       "quote": "The anode and cathode were separated by a Nafion 117 membrane (pre-treated with 5 wt.% H2O2 solution at 80 °C for, followed 0.5 M H2SO4 at 80 °C for 1 h).",
+       "quote": "followed 0.5 M H2SO4 at 80 °C for 1 h",
        "value_num": 1,
        "unit": "h"
       }
      ],
-     "equipment": [],
-     "not_stated": [
-      "duration_H2O2_step"
-     ]
+     "equipment": []
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "electrolyze",
      "description": "Run the three-electrode flow cell: electrolytes cycled by pumps, pure O2 fed to the back of the GDE; i-t tests from 0.7 to −0.6 V vs. RHE and V-t tests at 50, 100 and 200 mA cm−2.",
      "quote": "Either the concentrated electrolytes, including 1 M KOH and 1 M NaCl solutions, or the diluted electrolytes, including 3.6 wt. % NaCl electrolyte (simulated seawater), 0.9 wt. % NaCl (physiological saline) and 0.1 M Na2SO4 were all cycled at a rate of 6 mL min-1, using pumps on each side, with a volume of 30 or 260 mL",
@@ -1282,6 +1368,11 @@
        "name": "current_density",
        "quote": "The i-t test at different potentials from 0.7 to −0.6 V vs. RHE and the V-t test at different current densities (50, 100 and 200 mA cm−2) were both adopted to study the H2O2 production of the catalyst.",
        "value_text": "50, 100 and 200 mA cm−2"
+      },
+      {
+       "name": "temperature",
+       "quote": "The electrochemical measurements were conducted at room temperature (~25 °C)",
+       "value_text": "room temperature (~25 °C)"
       }
      ],
      "equipment": [
@@ -1292,7 +1383,6 @@
       }
      ],
      "not_stated": [
-      "cell_temperature",
       "cell_volume"
      ]
     }
@@ -1307,7 +1397,7 @@
     },
     {
      "technique": "dye decomposition (electro-Fenton-like, UV)",
-     "result": "rapid removal of Rhodamine B and Methylene blue (Rhodamine B fully decolorized after 75 min in Fig. 4f)",
+     "result": "rapid removal of Rhodamine B and Methylene blue",
      "instrument": "UV lamp",
      "conditions": "100 mA cm-2, 30 mL 1 M NaCl with 60 mg L–1 dye",
      "quote": "electrocatalytic H2O2 synthesis using the Ni-BTA electrode in 1 M NaCl electrolyte at 100 mA cm−2 could be directly utilized in an in-situ and UV-coupled Fenton process for rapidly removing Rhodamine B and Methylene blue"
@@ -1444,6 +1534,25 @@
      "quote": "the disinfection performance for E. coli and S. aureus in 0.9 wt.% NaCl (g) after 2e−-ORR catalysis using Ni-BTA catalyst. The data points and error bars in g represent the average and standard deviation of data from triplicate parallel tests.",
      "value_num": 0.1,
      "from_figure": "Fig. 4g"
+    },
+    {
+     "property": "OD600_E_coli_1h",
+     "value_num": 0.06,
+     "from_figure": "Fig. 4g",
+     "quote": "the disinfection performance for E. coli and S. aureus in 0.9 wt.% NaCl (g) after 2e−-ORR catalysis using Ni-BTA catalyst. The data points and error bars in g represent the average and standard deviation of data from triplicate parallel tests."
+    },
+    {
+     "property": "OD600_S_aureus_1h",
+     "value_num": 0.06,
+     "from_figure": "Fig. 4g",
+     "quote": "the disinfection performance for E. coli and S. aureus in 0.9 wt.% NaCl (g) after 2e−-ORR catalysis using Ni-BTA catalyst. The data points and error bars in g represent the average and standard deviation of data from triplicate parallel tests."
+    },
+    {
+     "property": "Rhodamine_B_time_to_near_zero_absorption_peak_100mA_cm-2_1M_NaCl_UV",
+     "value_num": 75,
+     "unit": "min",
+     "from_figure": "Fig. 4f",
+     "quote": "The degradation performance for Rhodamine B in 1 M NaCl solution (f), and the disinfection performance for E. coli and S. aureus in 0.9 wt.% NaCl (g) after 2e−-ORR catalysis using Ni-BTA catalyst."
     }
    ],
    "missing_fields": [
@@ -1641,7 +1750,7 @@
    "type": "tendance_observee",
    "route": null,
    "quote": "Although the Mn/Fe/Co/Cu-BTAs deliver a low crystallinity, they still show similar XRD peaks with the Ni-BTA, indicating the successful preparation of the other M-BTAs (Supplementary Fig. 7).",
-   "text": "Les analogues Mn, Fe, Co et Cu sont peu cristallins mais présentent des pics de DRX semblables à ceux de Ni-BTA, ce que les auteurs prennent comme preuve de leur préparation ; tous les M-BTA forment de petits agrégats, et seul Ni-BTA a été décrit en nanobâtonnets de ~30 nm de diamètre."
+   "text": "Les analogues Mn, Fe, Co et Cu sont peu cristallins mais présentent des pics de DRX semblables à ceux de Ni-BTA, ce que les auteurs prennent comme preuve de leur préparation ; tous les M-BTA forment de petits agrégats, et, parmi les M-BTA de la voie de base, seul Ni-BTA est décrit en nanobâtonnets de ~30 nm de diamètre (H-Cu-BTA, préparé à part, est lui aussi décrit comme « rod-like »)."
   },
   {
    "type": "tendance_observee",
@@ -1653,7 +1762,7 @@
    "type": "tendance_observee",
    "route": null,
    "quote": "Unfortunately, we were not able to successfully prepare high-crystallinity Fe/Co/Mn-TBA samples, although a number of methods have been tried, including the common growth kinetics regulations (lowing the reaction temperature, reducing the concentration of reactants) and sequential ligand exchange strategy, etc.",
-   "text": "Les tentatives d'obtention de Co-BTA hautement cristallin (basse température, dilution, produit de surface, NMP, échange séquentiel de ligand avec la phénylamine, à 25 °C ou 60 °C) sont rapportées dans la réponse aux relecteurs comme n'ayant pas réussi ; aucune valeur de résultat n'est donnée pour chacune dans le texte (seule la figure R1 de DRX, non disponible dans le dépôt)."
+   "text": "Les tentatives d'obtention de Co-BTA hautement cristallin (basse température, dilution, produit de surface, NMP, échange séquentiel de ligand avec la phénylamine, seul ou à 60 °C) sont rapportées dans la réponse aux relecteurs comme n'ayant pas réussi ; aucune valeur de résultat n'est donnée pour chacune dans le texte (seule la figure R1 de DRX, non disponible dans le dépôt)."
   },
   {
    "type": "conclusion_auteurs",
@@ -1671,7 +1780,7 @@
    "type": "mecanisme_analyse",
    "route": "Ni-BTA",
    "quote": null,
-   "text": "Hypothèse : BTA·4HCl apporte 1,2 mmol de HCl pour 0,3 mmol d'amine ; les 1,0 mL d'ammoniaque ~14 M (environ 14 mmol de NH3) neutralisent ce HCl et déprotonent les amines, ce qui laisse un large excès d'ammoniaque. Cet excès peut former des amminocomplexes de nickel solubles qui libèrent lentement Ni2+ et ralentissent la nucléation, ce qui favorise l'ordre d'empilement. La réaction exige probablement l'oxydation partielle du ligand (liaisons -C=N- observées en IR), vraisemblablement par l'oxygène de l'air, d'où le rôle du bullage d'air dans la voie a-Ni-BTA qui accélère la réaction et donne un matériau amorphe. Le rapport BTA/Ni de 1,5 (0,3/0,2 mmol) laisse un excès de ligand, alors que l'analyse élémentaire est proche de 1 Ni par motif BTA."
+   "text": "Hypothèse : BTA·4HCl apporte 1,2 mmol de HCl pour 0,3 mmol d'amine ; les 1,0 mL d'ammoniaque ~14 M (environ 14 mmol de NH3) neutralisent ce HCl (pH d'environ 10,3) et laissent un large excès d'ammoniaque, qui peut former des amminocomplexes de nickel solubles libérant lentement Ni2+ et ralentissant la nucléation. L'ammoniaque ne peut pas « déprotoner » les groupes -NH2 aromatiques (pKa de l'ordre de 28 à 30 contre 9,25 pour NH4+) : passer de BTA à la chaîne Ni(C6H6N4) exige une oxydation du ligand (environ 2 e− par Ni, cohérente avec les liaisons -C=N vues en IR et en XPS), et le seul oxydant présent est l'oxygène de l'air (≈ 0,1 mmol, bien plus que l'O2 dissous) ; l'article ne le dit pas, ce qui rend le récipient (ouvert ou fermé) déterminant, et explique que le bullage d'air de la voie a-Ni-BTA accélère la réaction et donne un matériau amorphe. Le rapport BTA/Ni de 1,5 (0,3/0,2 mmol) laisse un excès de ligand, alors que l'analyse élémentaire est proche de 1 Ni par motif BTA."
   },
   {
    "type": "mecanisme_analyse",
@@ -1683,7 +1792,7 @@
    "type": "securite_analyse",
    "route": null,
    "quote": null,
-   "text": "L'article ne mentionne aucune précaution. Dangers connus : l'ammoniaque concentrée (~14 M, 25-28 %) est corrosive et dégage des vapeurs irritantes (hotte) ; BTA·4HCl est une amine aromatique sensible à l'air et probablement toxique ; les sels de nickel, de cobalt et de cuivre sont toxiques et sensibilisants (Ni et Co classés cancérogènes) ; l'acétone est inflammable ; la poudre de MOF nanométrique doit être manipulée avec protection respiratoire. En cellule à flux, l'alimentation en O2 pur avec de l'isopropanol dans l'encre, des solutions concentrées de KOH 1 M, de H2SO4 0,5 M à 80 °C et de H2O2 à 5 % ou jusqu'à 26,8 g L−1 demandent des précautions (gants, lunettes, ventilation) ; les essais de désinfection utilisent des souches bactériennes (E. coli, S. aureus) à manipuler en laboratoire de niveau de sécurité adapté et la lampe UV demande une protection des yeux."
+   "text": "L'article ne mentionne aucune précaution. Dangers connus : l'ammoniaque concentrée (~14 M, 25-28 %) est corrosive et dégage des vapeurs irritantes (hotte) ; BTA·4HCl est une amine aromatique sensible à l'air et probablement toxique ; les sels de nickel, de cobalt et de cuivre sont toxiques et sensibilisants (Ni et Co classés cancérogènes) ; l'acétone est inflammable ; la poudre de MOF nanométrique doit être manipulée avec protection respiratoire. En cellule à flux, l'alimentation en O2 pur avec de l'isopropanol dans l'encre, des solutions concentrées de KOH 1 M, de H2SO4 0,5 M à 80 °C et de H2O2 à 5 % ou jusqu'à 26,8 g L−1 demandent des précautions (gants, lunettes, ventilation) ; les essais de désinfection utilisent des souches bactériennes (E. coli, S. aureus) à manipuler en laboratoire de niveau de sécurité adapté et la lampe UV demande une protection des yeux. En cellule à flux dans NaCl (1 M ou 0,9 %), l'anode de platine dégage probablement du chlore ou de l'hypochlorite (à ventiler, tuyaux et pompes compatibles) ; le peroxyde d'hydrogène alcalin se décompose avec dégagement d'oxygène (ne pas fermer les réservoirs)."
   },
   {
    "type": "limite_reproductibilite",
@@ -1702,6 +1811,24 @@
    "route": null,
    "quote": null,
    "text": "Les figures supplémentaires (courbes LSV de a-Ni-BTA et de H-Cu-BTA, DRX de H-Cu-BTA, figure R1 des tentatives sur Co-BTA) ne sont disponibles que par leurs légendes dans le dépôt : leurs valeurs ne sont pas lisibles. Les résultats de a-Ni-BTA et de H-Cu-BTA viennent donc uniquement du texte principal."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_GDE",
+   "quote": null,
+   "text": "Le catholyte NaCl 1 M présenté comme « neutre » ne le reste probablement pas : l'ORR à 2 e− libère 2 OH− par H2O2 formé, soit environ 30 mmol d'OH− par cycle de 8 h à 100 mA dans 30 mL (jusqu'à ≈ 1 M si Na+ porte le courant à travers le Nafion), l'anode de platine oxydant surtout Cl−. Les auteurs ne suivent pas le pH du catholyte : le rendement de 13,5 mol g−1 h−1 « en milieu neutre » et la résistance à Cl− sont donc mesurés dans un milieu devenu probablement fortement basique. Une hausse de pH de 7 à 10 est observée dans une électrosynthèse de H2O2 comparable (Scaling-up of microbial electrosynthesis with multiple electrodes for in situ production of hydrogen peroxide, iScience 2021, PMC7969820)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_GDE",
+   "quote": null,
+   "text": "Aucun essai à blanc sur la GDE carbonée nue (SGL 39BB avec couche microporeuse) n'est rapporté. Les carbones, surtout oxydés, réduisent O2 en H2O2 (Lu et al., Nature Catalysis 2018, 10.1038/s41929-017-0017-x) ; avec seulement 0,1 mg cm−2 de Ni-BTA, une part inconnue du courant et du H2O2 peut venir du support, et le rendement par gramme de catalyseur (13,5 à 34 mol g−1 h−1) ainsi que le TOF supposent que tout le H2O2 vient de Ni-BTA."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": null,
+   "text": "Réserves de la critique scientifique sur l'article : le rapport N/Ni de l'analyse élémentaire recalculé vaut 4,58 et non 4,4, et la somme des teneurs fait 100,0 % (oxygène sans doute par différence, chlore non dosé), ce qui affaiblit l'argument de l'hydroxyle axial ; la Table S1 donne des distances simulées incompatibles avec ses angles ; la recette de H-Cu-BTA (0,1 mL d'ammoniaque) est déficitaire en base par rapport aux 1,2 mmol de HCl du sel de BTA ; les analogues Mn et Fe sont probablement contaminés par des (oxy)hydroxydes précipités à pH ≈ 10 (et Fe(II) oxydé à l'air) ; le témoin de désinfection (sérum physiologique pur) ignore le pH ≈ 12,5 de l'électrolyte électrolysé ; la décoloration du bleu de méthylène peut être réductrice (leuco-bleu à la cathode) et l'appellation « electro-Fenton-like » est impropre sans fer ; la dilution avant le dosage au titane-oxalate n'est pas écrite ; dans D2O, une bande N-H à 3240 cm−1 est surprenante (échange N-D attendu)."
   }
  ],
  "method_sources": [
@@ -1735,7 +1862,7 @@
   },
   {
    "where": "a-Ni-BTA, héritage d'étapes",
-   "issue": "Le texte ne dit pas si l'ammoniaque (1,0 mL), les volumes d'eau, le lavage et le séchage de Ni-BTA s'appliquent à a-Ni-BTA ; la lecture littérale « même protocole avec quatre changements (0,2 mmol BTA·4HCl, bullage d'air, 2 h) » est retenue, avec le débit d'air non cité."
+   "issue": "Le texte ne dit pas si l'ammoniaque (1,0 mL), les volumes d'eau, le lavage et le séchage de Ni-BTA s'appliquent à a-Ni-BTA : ces informations sont déclarées « non citées » pour a-Ni-BTA (route not_stated) ; seuls 0,2 mmol de BTA·4HCl, le bullage d'air (débit non précisé) et 2 h sont écrits."
   },
   {
    "where": "H-Cu-BTA et Co-BTA_diluted, volume d'eau",
@@ -1747,15 +1874,15 @@
   },
   {
    "where": "Valeurs lues sur figure",
-   "issue": "Fig. 3e (sélectivité H2O2 dans NaCl 3,6 wt.% à 0,2 V vs. RHE : Mn ~45 %, Fe ~65 %, Co ~70 %, Cu ~78 %) et Fig. 4g (OD600 : E. coli 0,34 à 0 h puis 0,06 ; S. aureus 0,27 à 0 h puis 0,10 à 0,5 h) ; lecture à ±5 points de % pour la Fig. 3e, ±0,02 pour la Fig. 4g. Les valeurs des autres figures de résultats sont dans le texte."
+   "issue": "Fig. 3e (sélectivité H2O2 dans NaCl 3,6 wt.% à 0,2 V vs. RHE : Mn ~45 %, Fe ~65 %, Co ~70 %, Cu ~78 %), Fig. 4g (OD600 : E. coli 0,34 à 0 h puis 0,06 à 0,5 h et à 1 h ; S. aureus 0,27 à 0 h, 0,10 à 0,5 h, 0,06 à 1 h) et Fig. 4f (spectres de Rhodamine B quasi nuls à 75 min) : lecture à ±5 points de % pour la Fig. 3e, ±0,02 pour la Fig. 4g. Les valeurs des autres figures de résultats sont dans le texte."
   },
   {
    "where": "Electrode_GDE, rendement en milieu alcalin",
    "issue": "La conclusion annonce « a double-enhanced H2O2 yield rate of over 27.0 mol g−1 h−1 in an alkaline medium », alors que le texte donne 34 mol g–1 h–1 à −0.4 V dans KOH 1 M (courbe de polarisation) ; les deux chiffres viennent de tests différents (le 27,0 n'est calculé nulle part dans le corps). Seule la valeur du texte détaillé est extraite."
   },
   {
-   "where": "Electrode_GDE, étape 3",
-   "issue": "Le texte du prétraitement du Nafion est « 5 wt.% H2O2 solution at 80 °C for, followed 0.5 M H2SO4 at 80 °C for 1 h » : la durée de l'étape H2O2 est manquante dans l'article ; la température 80 °C et la durée 1 h de l'étape H2SO4 sont extraites séparément."
+   "where": "Electrode_GDE, étapes 3 et 4",
+   "issue": "Le texte du prétraitement du Nafion est « 5 wt.% H2O2 solution at 80 °C for, followed 0.5 M H2SO4 at 80 °C for 1 h » : la durée de l'étape H2O2 est manquante dans l'article ; l'étape H2O2 (80 °C) et l'étape H2SO4 (80 °C, 1 h) sont donc séparées. Le prétraitement est cité avant l'assemblage de la cellule, l'ordre exact par rapport au dépôt de l'encre n'est pas précisé."
   },
   {
    "where": "a-Ni-BTA, Co-BTA_surface, Co-BTA_NMP, Co-BTA_PAN (avertissements du contrôle)",
@@ -1764,6 +1891,14 @@
   {
    "where": "Electrode_RRDE et Electrode_GDE, résultats",
    "issue": "Les sélectivités RRDE sont rangées sur les voies de matériau (Ni-BTA, Mn-BTA, etc.), les résultats de la cellule à flux sur la voie du dispositif GDE (Ni-BTA seul), pour éviter les doublons entre matériau et dispositif."
+  },
+  {
+   "where": "Ni-BTA, formule",
+   "issue": "La formule est la composition théorique de l'article (Ni1.0C6.0N4.0H6.0, Supplementary Table 2, oxygène nul dans la colonne théorique) ; le texte écrit « Ni1.0C6.0N4.0O1.4H6.0 » (oxygène expérimental) et la composition expérimentale est Ni1.0C7.1N4.4O1.4H8.0."
+  },
+  {
+   "where": "Electrode_GDE, Na2SO4",
+   "issue": "Les Résultats donnent « 0.5 M Na2SO4 » et les Méthodes de la cellule à flux « 0.1 M Na2SO4 » : la valeur des Méthodes est portée au réactif, sans correction."
   }
  ]
 }
