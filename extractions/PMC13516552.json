@@ -460,6 +460,11 @@
        "quote": "Separately, 0.1 mg of SWCNTs was dispersed in 10 mL of ethanol using probe sonication for 30 min to obtain a homogeneous suspension.",
        "value_num": 30,
        "unit": "min"
+      },
+      {
+       "name": "swcnt_diameter",
+       "quote": "An SWCNT (diameter 1.4–1.7 nm) was used for the modification of the Poly-CoPc/SWCNT composite.",
+       "value_text": "1.4–1.7 nm"
       }
      ],
      "equipment": [
@@ -526,7 +531,13 @@
      "action": "filter",
      "description": "Collect the product by vacuum filtration.",
      "quote": "The product was collected by vacuum filtration, washed repeatedly with ethanol and deionized water to remove physically adsorbed species, and dried overnight at 60 °C.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "filtration_method",
+       "quote": "The product was collected by vacuum filtration, washed repeatedly with ethanol and deionized water to remove physically adsorbed species, and dried overnight at 60 °C.",
+       "value_text": "vacuum"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "filter_type"
@@ -586,10 +597,10 @@
     },
     {
      "technique": "Raman",
-     "result": "D-band ~1320 cm−1 and G-band ~1565 cm−1; ID/IG increased vs Poly-CoPc",
+     "result": "D-band ~1320 cm−1 and G-band ~1565 cm−1; intensity ratio ID/IG increased in the composite",
      "instrument": "Olympus BX51",
      "conditions": null,
-     "quote": "The composite exhibits the typical D-band (~1320 cm−1) and G-band (~1565 cm−1) associated with graphitic carbon."
+     "quote": "The composite exhibits the typical D-band (~1320 cm−1) and G-band (~1565 cm−1) associated with graphitic carbon. The increased intensity ratio (ID/IG) in the composite indicates the introduction of defects and edge sites, which are beneficial for electrochemical reactions."
     },
     {
      "technique": "XRD",
@@ -654,7 +665,7 @@
     }
    ],
    "missing_fields": [
-    "SWCNT_supplier_and_purity",
+    "SWCNT_purity",
     "product_mass"
    ]
   },
@@ -864,7 +875,8 @@
       {
        "name": "active_material_loading",
        "quote": "After drying, the electrodes were punched into circular disks with a diameter of 12 mm, and the degree of active material loading was controlled within the range of approximately 0.85–1.0 mg cm−2.",
-       "value_text": "approximately 0.85–1.0 mg cm−2"
+       "value_text": "approximately 0.85–1.0",
+       "unit": "mg cm−2"
       }
      ],
      "equipment": [],
@@ -1090,17 +1102,11 @@
      "quote": "Poly-CoPc | 0.01 | 81.23 | 220.1 | 1.386 × 10−7 | 0.0003752 | 0.004852",
      "value_num": 0.004852,
      "unit": "Ω"
-    },
-    {
-     "property": "active_material_loading",
-     "quote": "After drying, the electrodes were punched into circular disks with a diameter of 12 mm, and the degree of active material loading was controlled within the range of approximately 0.85–1.0 mg cm−2.",
-     "value_text": "approximately 0.85–1.0 mg cm−2",
-     "unit": "mg cm−2"
     }
    ],
    "missing_fields": [
     "electrolyte_volume",
-    "current_density_for_CV_beyond_0.1_mV_s-1"
+    "CV_scan_rates_beyond_0.1_mV_s-1"
    ]
   },
   {
@@ -1427,7 +1433,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Poly-CoPc",
-   "text": "Hypothèse : à 175–180 °C, l'urée se décompose en ammoniac et acide isocyanique qui aminent l'anhydride en phtalimide puis isoindoline ; quatre unités se condensent autour de Co2+, le molybdate d'ammonium jouant probablement le rôle de catalyseur de cyclotétramérisation (procédé « urée » classique). L'ODPA portant deux groupes anhydride, chacun peut entrer dans un macrocycle, d'où un réseau réticulé. Le nitrobenzène sert de solvant à haut point d'ébullition."
+   "text": "Hypothèse : voie « urée » classique de Wyler et Achar. À 175–180 °C l'urée fond puis se décompose en ammoniac et acide isocyanique, qui transforment les fonctions anhydride de l'ODPA en phtalimide, puis, probablement avec la catalyse du molybdate d'ammonium, en dérivés de type iso-indoline aminée. Quatre de ces unités se condenseraient autour de Co2+ (effet de gabarit) pour former le macrocycle ; NH4Cl serait un apport d'azote et un acide faible. Comme l'ODPA porte deux fonctions anhydride, chacune peut entrer dans un macrocycle différent, d'où un réseau réticulé à pont éther. Une conversion incomplète laisserait des imides ou des acides pendants, ce qui expliquerait l'écart entre la formule annoncée [C33H14CoN8O4]n et l'unité idéale du réseau ; l'article ne contient aucune preuve qui les distingue (région IR 1700–1780 cm−1, analyse élémentaire). Le nitrobenzène sert de solvant à point d'ébullition élevé."
   },
   {
    "type": "mecanisme_analyse",
@@ -1453,6 +1459,36 @@
    "type": "limite_reproductibilite",
    "route": "PolyCoPc_electrode_cell",
    "text": "Épaisseur d'enduction, volume d'éthanol, durée d'agitation, volume d'électrolyte, pression de sertissage non donnés ; Cu, Li, Celgard et LiPF6 sans fournisseur ni pureté."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Poly-CoPc",
+   "text": "Le rapport molaire CoCl2:ODPA:NH4Cl:urée = 2:1:6:12, lu dans l'ordre écrit, donne 1 cobalt par unité phtalique, soit un excès de cobalt d'un facteur 4 par rapport à une phtalocyanine (1 métal pour 4 unités isoindole) et par rapport aux recettes de la voie anhydride–urée du brevet NASA d'Achar et al. ; soit l'ordre est inversé (ODPA:Co = 2:1), soit le cobalt excédentaire reste dans le produit (hydroxydes ou oxydes). Le rendement de 89 % ne peut valoir que rapporté à l'ODPA (au plus 25 % rapporté au cobalt) et aucune analyse élémentaire ne permet de trancher."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Poly-CoPc",
+   "text": "Les mesures BET sont écrites « at 100 K » : à cette température la pression de vapeur saturante de N2 (≈ 7,9 bar) dépasse la limite d'un analyseur ASAP 2020, qui ne mesure que jusqu'à environ 1 atm ; la valeur probable est 77 K. Les surfaces et volumes poreux sont à lire avec cette réserve."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Poly-CoPc/SWCNT",
+   "text": "Les quantités du composite (0,9 mg de Poly-CoPc et 0,1 mg de SWCNT) donnent au plus 1 mg de produit avant les pertes de filtration, ce qui ne suffit ni pour une mesure BET ni pour des électrodes chargées à 0,85–1,0 mg cm−2 sur disque de 12 mm ; une erreur d'unité (g au lieu de mg) est probable. L'échelle réelle de préparation du composite, et donc celle de son électrode, est inconnue. Agitation 12 h à 80 °C dans l'éthanol (ébullition à 78 °C) sans reflux ni récipient fermé déclarés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PolyCoPcSWCNT_electrode_cell",
+   "text": "Dans l'analyse d'impédance, les constantes de temps indiquent que R1/C1 et R2/C2 correspondent à des arcs différents pour les deux électrodes (arc haute fréquence pour le Poly-CoPc, basse fréquence pour le composite) : la baisse annoncée des deux résistances n'est pas démontrée, seule leur somme diminue (301 puis 140 Ω). Une résistance Rs de 0,01 Ω est irréaliste pour une pile bouton CR2032, et le Warburg est donné en Ω au lieu d'un coefficient en Ω s−1/2 : les ajustements sont à vérifier."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La référence [18] de l'article (commande de recharge de véhicules électriques par « fuzzy-MPC ») est citée pour des capacités d'anodes à base de phtalocyanines métalliques : elle est hors sujet, probablement une confusion entre MPC (commande prédictive) et MPc (phtalocyanine métallée), et ne soutient pas la comparaison de la Table 5."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "Poly-CoPc",
+   "text": "Dangers non mentionnés dans l'article : le nitrobenzène est toxique par voie cutanée et par inhalation (méthémoglobinisant, cancérogène suspecté) et inflammable (point d'éclair voisin de 88 °C) alors que la réaction se fait à 175–185 °C : travailler sous hotte, sous azote, avec réfrigérant. CoCl2·6H2O est classé cancérogène et toxique pour la reproduction (catégorie 1B) et sensibilisant respiratoire : le broyage au mortier crée des poussières. La décomposition de l'urée libère NH3 et acide isocyanique : prévoir un évent ou un piège. Les poussières de SWCNT du composite (pesée, sonication par sonde) sont à manipuler sous hotte."
   }
  ],
  "method_sources": [
