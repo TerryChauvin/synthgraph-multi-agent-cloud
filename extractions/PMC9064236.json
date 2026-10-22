@@ -26,10 +26,10 @@
    "why": "substrat commercial (NSG Ltd) utilisé tel quel, nettoyé ; décrit comme réactif des voies de films"
   },
   {
-   "sample": "borosilicate glass",
+   "sample": "glass substrate (borosilicate listed among AA-CVD substrates)",
    "defined_in": "Methods, AA-CVD",
    "route": null,
-   "why": "substrat commercial ; les films déposés sur verre ont leurs voies alpha-SnS_glass et pi-SnS_glass"
+   "why": "substrat commercial ; le type de verre n'est pas précisé dans la phrase UV-Vis (« deposited onto glass ») ; les films sur verre ont leurs voies alpha-SnS_glass et pi-SnS_glass"
   },
   {
    "sample": "precursor (1), Sn(II) thio-ureide complex",
@@ -278,10 +278,68 @@
    ]
   },
   {
-   "sample": "devices A–C at 150 °C (20, 40, 60, 240 min) and 200 °C 60 min; devices D–F at 200 °C",
-   "defined_in": "Results, Device performance",
-   "route": null,
-   "why": "conditions testées décrites seulement de façon qualitative et groupée (aucune valeur par cellule) ; reprises en annotations tendance_observee"
+   "sample": "A, 200 °C 60 min",
+   "defined_in": "Results, Device performance (constat qualitatif)",
+   "route": "Anneal_A_200C_60min",
+   "results_in": [
+    "Results, Device performance"
+   ]
+  },
+  {
+   "sample": "B, 200 °C 60 min",
+   "defined_in": "Results, Device performance (constat qualitatif)",
+   "route": "Anneal_B_200C_60min",
+   "results_in": [
+    "Results, Device performance"
+   ]
+  },
+  {
+   "sample": "A, 150 °C 20 min à 4 h",
+   "defined_in": "Results, Device performance (constat qualitatif)",
+   "route": "Anneal_A_150C_20min-4h",
+   "results_in": [
+    "Results, Device performance"
+   ]
+  },
+  {
+   "sample": "B, 150 °C 20 min à 4 h",
+   "defined_in": "Results, Device performance (constat qualitatif)",
+   "route": "Anneal_B_150C_20min-4h",
+   "results_in": [
+    "Results, Device performance"
+   ]
+  },
+  {
+   "sample": "C, 150 °C 20 min à 4 h",
+   "defined_in": "Results, Device performance (constat qualitatif)",
+   "route": "Anneal_C_150C_20min-4h",
+   "results_in": [
+    "Results, Device performance"
+   ]
+  },
+  {
+   "sample": "D, 200 °C 20 min à 4 h",
+   "defined_in": "Results, Device performance (constat qualitatif)",
+   "route": "Anneal_D_200C_20min-4h",
+   "results_in": [
+    "Results, Device performance"
+   ]
+  },
+  {
+   "sample": "E, 200 °C 20 min à 4 h",
+   "defined_in": "Results, Device performance (constat qualitatif)",
+   "route": "Anneal_E_200C_20min-4h",
+   "results_in": [
+    "Results, Device performance"
+   ]
+  },
+  {
+   "sample": "F, 200 °C 20 min à 4 h",
+   "defined_in": "Results, Device performance (constat qualitatif)",
+   "route": "Anneal_F_200C_20min-4h",
+   "results_in": [
+    "Results, Device performance"
+   ]
   },
   {
    "sample": "literature devices of Table 1",
@@ -657,7 +715,7 @@
    "reagents": [
     {
      "name": "single source precursor (1)",
-     "formula": null,
+     "formula": "[Sn({C6H5}NCSN{Me2})(NMe2)]",
      "role": "precursor",
      "quote": "SnS thin films were deposited by Aerosol Assisted Chemical Vapor Deposition (AA-CVD) from a 0.08 M toluene solution of the well-defined single source precursor (1), (dimethylamido)(N-phenyl-N′,N′-dimethylthiouriate)tin(ii) dimer/Sn(ii) thio-ureide complex reported previously (see Scheme S1†).",
      "amount": 0.08,
@@ -698,8 +756,8 @@
     {
      "order": 1,
      "action": "purify",
-     "description": "Dry toluene with a solvent purification system and degas all solvents under argon.",
-     "quote": "Toluene solvents were dried using a commercially available solvent purification system (Innovative Technology Inc., Amesbury, MA, USA) and all solvents were degassed under argon prior to use.",
+     "description": "Dry toluene with a solvent purification system.",
+     "quote": "Toluene solvents were dried using a commercially available solvent purification system (Innovative Technology Inc., Amesbury, MA, USA)",
      "parameters": [],
      "equipment": [
       {
@@ -712,6 +770,23 @@
     },
     {
      "order": 2,
+     "action": "degas",
+     "description": "Degas all solvents under argon before use.",
+     "quote": "all solvents were degassed under argon prior to use",
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "quote": "all solvents were degassed under argon prior to use",
+       "value_text": "argon"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 3,
      "action": "dissolve",
      "description": "Prepare a 0.08 M toluene solution of the single source precursor (1).",
      "quote": "SnS thin films were deposited by Aerosol Assisted Chemical Vapor Deposition (AA-CVD) from a 0.08 M toluene solution of the well-defined single source precursor (1), (dimethylamido)(N-phenyl-N′,N′-dimethylthiouriate)tin(ii) dimer/Sn(ii) thio-ureide complex reported previously (see Scheme S1†).",
@@ -724,7 +799,24 @@
      ]
     },
     {
-     "order": 3,
+     "order": 4,
+     "action": "load_substrates",
+     "description": "Place the substrates (Mo-glass, FTO, TiOx-FTO or glass) inside the quartz reactor tube.",
+     "quote": "Either borosilicate glass, Mo-glass, FTO (TEC 7) or TiOx-FTO (TEC 7) substrates were placed inside the quartz reactor tube/deposition chamber.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "quartz reactor tube / deposition chamber",
+       "detail": null,
+       "quote": "Either borosilicate glass, Mo-glass, FTO (TEC 7) or TiOx-FTO (TEC 7) substrates were placed inside the quartz reactor tube/deposition chamber."
+      }
+     ],
+     "not_stated": [
+      "substrate_position"
+     ]
+    },
+    {
+     "order": 5,
      "action": "purge",
      "description": "Purge the deposition chamber with argon before deposition.",
      "quote": "The deposition chamber was purged with argon gas prior deposition.",
@@ -736,9 +828,9 @@
      ]
     },
     {
-     "order": 4,
+     "order": 6,
      "action": "deposit",
-     "description": "AA-CVD deposition of α-SnS, first stage.",
+     "description": "AA-CVD deposition of α-SnS, first stage. Argon fed to the atomizer at 5 bar (pressure of the carrier gas at the atomizer inlet, not of the reactor).",
      "quote": "α-SnS films were deposited at 375 °C for 90 min, then at 400 °C for 10 min to prevent the formation of secondary π-SnS phases at cooler regions of the deposition chamber.",
      "parameters": [
       {
@@ -754,7 +846,7 @@
        "unit": "min"
       },
       {
-       "name": "pressure",
+       "name": "atomizer_inlet_gas_pressure",
        "quote": "The argon gas flow was monitored via a bubbler and gas pressure fixed at 5 bar until it reached the atomizer.",
        "value_num": 5,
        "unit": "bar"
@@ -779,7 +871,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 7,
      "action": "deposit",
      "description": "AA-CVD deposition of α-SnS, second stage at higher temperature (to prevent secondary π-SnS phases at cooler regions).",
      "quote": "α-SnS films were deposited at 375 °C for 90 min, then at 400 °C for 10 min to prevent the formation of secondary π-SnS phases at cooler regions of the deposition chamber.",
@@ -804,9 +896,9 @@
      ]
     },
     {
-     "order": 6,
+     "order": 8,
      "action": "cool",
-     "description": "Cool the samples to room temperature under argon and store them in air.",
+     "description": "Cool the samples to room temperature under argon.",
      "quote": "After deposition the samples were cooled to room temperature under argon atmosphere and stored in air.",
      "parameters": [
       {
@@ -824,12 +916,29 @@
      "not_stated": [
       "cooling_rate"
      ]
+    },
+    {
+     "order": 9,
+     "action": "store",
+     "description": "Store the samples in air.",
+     "quote": "After deposition the samples were cooled to room temperature under argon atmosphere and stored in air.",
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "quote": "After deposition the samples were cooled to room temperature under argon atmosphere and stored in air.",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
     }
    ],
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "phase pure orthorhombic α-SnS (JCPDS no. 00-039-0354), no preferential orientation",
+     "result": "phase pure orthorhombic α-SnS (JCPDS no. 00-039-0354), no preferential orientation ; a = 4.33 Å, b = 11.20 Å, c = 3.98 Å",
      "instrument": "BRUKER D8-Advance analyzer",
      "conditions": "flat plate mode, Bragg–Brentano geometry, 5 to 70° at 2° min−1, Cu source, 1.54 Å",
      "quote": "The SnS films deposited at a higher temperature range (at 375 °C for 90 min, then at 400 °C for 10 min), shows the presence of diffraction peak positions and relative intensities consistent with the formation of orthorhombic α-SnS"
@@ -852,6 +961,24 @@
      "property": "morphology",
      "value_text": "small plate like grains with many grain boundaries",
      "quote": "For the Mo and FTO substrates the grains form small plate like morphologies with many grain boundaries."
+    },
+    {
+     "property": "unit_cell_a",
+     "value_num": 4.33,
+     "unit": "Å",
+     "quote": "The unit cell parameters, a = 4.33 Å, b = 11.20 Å, c = 3.98 Å, determined for these samples match that of the known orthorhombic SnS crystal structure."
+    },
+    {
+     "property": "unit_cell_b",
+     "value_num": 11.2,
+     "unit": "Å",
+     "quote": "The unit cell parameters, a = 4.33 Å, b = 11.20 Å, c = 3.98 Å, determined for these samples match that of the known orthorhombic SnS crystal structure."
+    },
+    {
+     "property": "unit_cell_c",
+     "value_num": 3.98,
+     "unit": "Å",
+     "quote": "The unit cell parameters, a = 4.33 Å, b = 11.20 Å, c = 3.98 Å, determined for these samples match that of the known orthorhombic SnS crystal structure."
     }
    ],
    "missing_fields": [
@@ -897,7 +1024,7 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "phase pure orthorhombic α-SnS (JCPDS no. 00-039-0354), no preferential orientation",
+     "result": "phase pure orthorhombic α-SnS (JCPDS no. 00-039-0354), no preferential orientation ; a = 4.33 Å, b = 11.20 Å, c = 3.98 Å",
      "instrument": "BRUKER D8-Advance analyzer",
      "conditions": "flat plate mode, Bragg–Brentano geometry, 5 to 70° at 2° min−1, Cu source, 1.54 Å",
      "quote": "The SnS films deposited at a higher temperature range (at 375 °C for 90 min, then at 400 °C for 10 min), shows the presence of diffraction peak positions and relative intensities consistent with the formation of orthorhombic α-SnS"
@@ -911,7 +1038,7 @@
     },
     {
      "technique": "Raman",
-     "result": "8 peaks resolved; peak at 96 cm−1 confirms α-SnS",
+     "result": "8 peaks resolved; peak at 96 cm−1 confirms α-SnS ; positions des pics étiquetés sur la Fig. 3 : 41, 50, 68, 96, 163, 192, 220, 277 cm−1",
      "instrument": "Horiba Jobin-Yvon T6400 spectrometer, CCD detector, Olympus objective",
      "conditions": "514.5 nm Ag+ laser, laser energy density below 30 kW cm−2, backscattering, from 20 cm−1",
      "quote": "In the present study in the Raman spectra of the α-SnS and π-SnS thin films allowed for the resolution of 8 and 15 peaks, respectively (Fig. 3)."
@@ -927,6 +1054,80 @@
      "property": "morphology",
      "value_text": "small plate like grains with many grain boundaries",
      "quote": "For the Mo and FTO substrates the grains form small plate like morphologies with many grain boundaries."
+    },
+    {
+     "property": "unit_cell_a",
+     "value_num": 4.33,
+     "unit": "Å",
+     "quote": "The unit cell parameters, a = 4.33 Å, b = 11.20 Å, c = 3.98 Å, determined for these samples match that of the known orthorhombic SnS crystal structure."
+    },
+    {
+     "property": "unit_cell_b",
+     "value_num": 11.2,
+     "unit": "Å",
+     "quote": "The unit cell parameters, a = 4.33 Å, b = 11.20 Å, c = 3.98 Å, determined for these samples match that of the known orthorhombic SnS crystal structure."
+    },
+    {
+     "property": "unit_cell_c",
+     "value_num": 3.98,
+     "unit": "Å",
+     "quote": "The unit cell parameters, a = 4.33 Å, b = 11.20 Å, c = 3.98 Å, determined for these samples match that of the known orthorhombic SnS crystal structure."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 41,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 50,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 68,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 96,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 163,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 192,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 220,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 277,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
     }
    ]
   },
@@ -965,7 +1166,7 @@
    "characterizations": [
     {
      "technique": "XRD",
-     "result": "phase pure orthorhombic α-SnS (JCPDS no. 00-039-0354), no preferential orientation",
+     "result": "phase pure orthorhombic α-SnS (JCPDS no. 00-039-0354), no preferential orientation ; a = 4.33 Å, b = 11.20 Å, c = 3.98 Å",
      "instrument": "BRUKER D8-Advance analyzer",
      "conditions": "flat plate mode, Bragg–Brentano geometry, 5 to 70° at 2° min−1, Cu source, 1.54 Å",
      "quote": "The SnS films deposited at a higher temperature range (at 375 °C for 90 min, then at 400 °C for 10 min), shows the presence of diffraction peak positions and relative intensities consistent with the formation of orthorhombic α-SnS"
@@ -988,6 +1189,24 @@
      "property": "morphology",
      "value_text": "larger plate like grains, more pronounced growth in the perpendicular domain of the crystallite plates",
      "quote": "Comparatively, α-SnS growth on FTO treated with amorphous TiOx, consists of larger plate like grains with much more pronounced growth in the perpendicular domain of the crystallite plates."
+    },
+    {
+     "property": "unit_cell_a",
+     "value_num": 4.33,
+     "unit": "Å",
+     "quote": "The unit cell parameters, a = 4.33 Å, b = 11.20 Å, c = 3.98 Å, determined for these samples match that of the known orthorhombic SnS crystal structure."
+    },
+    {
+     "property": "unit_cell_b",
+     "value_num": 11.2,
+     "unit": "Å",
+     "quote": "The unit cell parameters, a = 4.33 Å, b = 11.20 Å, c = 3.98 Å, determined for these samples match that of the known orthorhombic SnS crystal structure."
+    },
+    {
+     "property": "unit_cell_c",
+     "value_num": 3.98,
+     "unit": "Å",
+     "quote": "The unit cell parameters, a = 4.33 Å, b = 11.20 Å, c = 3.98 Å, determined for these samples match that of the known orthorhombic SnS crystal structure."
     }
    ]
   },
@@ -1006,28 +1225,24 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "borosilicate glass",
+     "name": "glass substrate",
      "formula": null,
      "role": "substrate",
-     "quote": "Either borosilicate glass, Mo-glass, FTO (TEC 7) or TiOx-FTO (TEC 7) substrates were placed inside the quartz reactor tube/deposition chamber."
+     "quote": "UV-Vis transreflectance measurements of the α-SnS and π-SnS deposited onto glass were performed using a UV-VIS Lambda 950 spectrophotometer (PerkinElmer®) equipped with an integrating sphere and center mount.",
+     "not_stated": [
+      "glass_type"
+     ]
     }
    ],
    "variations": [
     {
      "parameter": "Mo-glass",
-     "value_text": "replaced by borosilicate glass",
+     "value_text": "replaced by glass substrate",
      "parent_value": "Mo-glass",
      "quote": "UV-Vis transreflectance measurements of the α-SnS and π-SnS deposited onto glass were performed using a UV-VIS Lambda 950 spectrophotometer (PerkinElmer®) equipped with an integrating sphere and center mount."
     }
    ],
    "characterizations": [
-    {
-     "technique": "XRD",
-     "result": "phase pure orthorhombic α-SnS (JCPDS no. 00-039-0354), no preferential orientation",
-     "instrument": "BRUKER D8-Advance analyzer",
-     "conditions": "flat plate mode, Bragg–Brentano geometry, 5 to 70° at 2° min−1, Cu source, 1.54 Å",
-     "quote": "The SnS films deposited at a higher temperature range (at 375 °C for 90 min, then at 400 °C for 10 min), shows the presence of diffraction peak positions and relative intensities consistent with the formation of orthorhombic α-SnS"
-    },
     {
      "technique": "UV-Vis-NIR transflectance",
      "result": "direct band gap 1.28 eV",
@@ -1037,11 +1252,6 @@
     }
    ],
    "outcomes": [
-    {
-     "property": "phase",
-     "value_text": "phase pure film of the targeted polymorph (XRD)",
-     "quote": "It is clear from the XRD analysis (Fig. 2) that we can selectively grow phase pure films of either α-SnS or π-SnS on all substrates, where the polymorph selectivity is dependent on the temperature at which the AA-CVD deposition is undertaken."
-    },
     {
      "property": "direct_band_gap",
      "value_num": 1.28,
@@ -1068,7 +1278,7 @@
    "reagents": [
     {
      "name": "single source precursor (1)",
-     "formula": null,
+     "formula": "[Sn({C6H5}NCSN{Me2})(NMe2)]",
      "role": "precursor",
      "quote": "SnS thin films were deposited by Aerosol Assisted Chemical Vapor Deposition (AA-CVD) from a 0.08 M toluene solution of the well-defined single source precursor (1), (dimethylamido)(N-phenyl-N′,N′-dimethylthiouriate)tin(ii) dimer/Sn(ii) thio-ureide complex reported previously (see Scheme S1†).",
      "amount": 0.08,
@@ -1109,8 +1319,8 @@
     {
      "order": 1,
      "action": "purify",
-     "description": "Dry toluene with a solvent purification system and degas all solvents under argon.",
-     "quote": "Toluene solvents were dried using a commercially available solvent purification system (Innovative Technology Inc., Amesbury, MA, USA) and all solvents were degassed under argon prior to use.",
+     "description": "Dry toluene with a solvent purification system.",
+     "quote": "Toluene solvents were dried using a commercially available solvent purification system (Innovative Technology Inc., Amesbury, MA, USA)",
      "parameters": [],
      "equipment": [
       {
@@ -1123,6 +1333,23 @@
     },
     {
      "order": 2,
+     "action": "degas",
+     "description": "Degas all solvents under argon before use.",
+     "quote": "all solvents were degassed under argon prior to use",
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "quote": "all solvents were degassed under argon prior to use",
+       "value_text": "argon"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 3,
      "action": "dissolve",
      "description": "Prepare a 0.08 M toluene solution of the single source precursor (1).",
      "quote": "SnS thin films were deposited by Aerosol Assisted Chemical Vapor Deposition (AA-CVD) from a 0.08 M toluene solution of the well-defined single source precursor (1), (dimethylamido)(N-phenyl-N′,N′-dimethylthiouriate)tin(ii) dimer/Sn(ii) thio-ureide complex reported previously (see Scheme S1†).",
@@ -1135,7 +1362,24 @@
      ]
     },
     {
-     "order": 3,
+     "order": 4,
+     "action": "load_substrates",
+     "description": "Place the substrates (Mo-glass, FTO, TiOx-FTO or glass) inside the quartz reactor tube.",
+     "quote": "Either borosilicate glass, Mo-glass, FTO (TEC 7) or TiOx-FTO (TEC 7) substrates were placed inside the quartz reactor tube/deposition chamber.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "quartz reactor tube / deposition chamber",
+       "detail": null,
+       "quote": "Either borosilicate glass, Mo-glass, FTO (TEC 7) or TiOx-FTO (TEC 7) substrates were placed inside the quartz reactor tube/deposition chamber."
+      }
+     ],
+     "not_stated": [
+      "substrate_position"
+     ]
+    },
+    {
+     "order": 5,
      "action": "purge",
      "description": "Purge the deposition chamber with argon before deposition.",
      "quote": "The deposition chamber was purged with argon gas prior deposition.",
@@ -1147,9 +1391,9 @@
      ]
     },
     {
-     "order": 4,
+     "order": 6,
      "action": "deposit",
-     "description": "AA-CVD deposition of π-SnS.",
+     "description": "AA-CVD deposition of π-SnS. Argon fed to the atomizer at 5 bar (pressure of the carrier gas at the atomizer inlet, not of the reactor).",
      "quote": "π-SnS films were deposited at 300 °C for 100 min",
      "parameters": [
       {
@@ -1165,7 +1409,7 @@
        "unit": "min"
       },
       {
-       "name": "pressure",
+       "name": "atomizer_inlet_gas_pressure",
        "quote": "The argon gas flow was monitored via a bubbler and gas pressure fixed at 5 bar until it reached the atomizer.",
        "value_num": 5,
        "unit": "bar"
@@ -1190,9 +1434,9 @@
      ]
     },
     {
-     "order": 5,
+     "order": 7,
      "action": "cool",
-     "description": "Cool the samples to room temperature under argon and store them in air.",
+     "description": "Cool the samples to room temperature under argon.",
      "quote": "After deposition the samples were cooled to room temperature under argon atmosphere and stored in air.",
      "parameters": [
       {
@@ -1209,6 +1453,23 @@
      "equipment": [],
      "not_stated": [
       "cooling_rate"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "store",
+     "description": "Store the samples in air.",
+     "quote": "After deposition the samples were cooled to room temperature under argon atmosphere and stored in air.",
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "quote": "After deposition the samples were cooled to room temperature under argon atmosphere and stored in air.",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
      ]
     }
    ],
@@ -1301,7 +1562,7 @@
     },
     {
      "technique": "Raman",
-     "result": "15 peaks resolved; peak at 111 cm−1 attributed to π-SnS",
+     "result": "15 peaks resolved; peak at 111 cm−1 attributed to π-SnS ; positions des pics étiquetés sur la Fig. 3 : 40, 46, 59, 71, 85, 90, 111, 122, 173, 204, 230, 263 cm−1",
      "instrument": "Horiba Jobin-Yvon T6400 spectrometer, CCD detector, Olympus objective",
      "conditions": "514.5 nm Ag+ laser, laser energy density below 30 kW cm−2, backscattering, from 20 cm−1",
      "quote": "In the present study in the Raman spectra of the α-SnS and π-SnS thin films allowed for the resolution of 8 and 15 peaks, respectively (Fig. 3)."
@@ -1322,6 +1583,90 @@
      "property": "morphology",
      "value_text": "compact cube like crystallites",
      "quote": "SEM micrographs in Fig. 6 shows that indeed compact cube like crystallite morphologies are formed for all thin film samples of π-SnS deposited by AA-CVD."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 40,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 46,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 59,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 71,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 85,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 90,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 111,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 122,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 173,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 204,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 230,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
+    },
+    {
+     "property": "Raman_peak_position",
+     "value_num": 263,
+     "unit": "cm−1",
+     "from_figure": "Fig. 3",
+     "quote": "Fig. 3 Comparison of Raman spectra for α-SnS and π-SnS samples deposited onto FTO substrates, using a 514.5 nm laser wavelength."
     }
    ]
   },
@@ -1406,28 +1751,24 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "borosilicate glass",
+     "name": "glass substrate",
      "formula": null,
      "role": "substrate",
-     "quote": "Either borosilicate glass, Mo-glass, FTO (TEC 7) or TiOx-FTO (TEC 7) substrates were placed inside the quartz reactor tube/deposition chamber."
+     "quote": "UV-Vis transreflectance measurements of the α-SnS and π-SnS deposited onto glass were performed using a UV-VIS Lambda 950 spectrophotometer (PerkinElmer®) equipped with an integrating sphere and center mount.",
+     "not_stated": [
+      "glass_type"
+     ]
     }
    ],
    "variations": [
     {
      "parameter": "Mo-glass",
-     "value_text": "replaced by borosilicate glass",
+     "value_text": "replaced by glass substrate",
      "parent_value": "Mo-glass",
      "quote": "UV-Vis transreflectance measurements of the α-SnS and π-SnS deposited onto glass were performed using a UV-VIS Lambda 950 spectrophotometer (PerkinElmer®) equipped with an integrating sphere and center mount."
     }
    ],
    "characterizations": [
-    {
-     "technique": "XRD",
-     "result": "phase pure cubic π-SnS, average unit cell constant a = 11.6 Å",
-     "instrument": "BRUKER D8-Advance analyzer",
-     "conditions": "flat plate mode, Bragg–Brentano geometry, 5 to 70° at 2° min−1, Cu source, 1.54 Å",
-     "quote": "Using the known hkl values and the associated peak positions for the reported π-SnS structure, an average unit cell constant of a = 11.6 Å was determined for these π-SnS thin film samples."
-    },
     {
      "technique": "UV-Vis-NIR transflectance",
      "result": "direct band gap 1.7 eV",
@@ -1437,11 +1778,6 @@
     }
    ],
    "outcomes": [
-    {
-     "property": "phase",
-     "value_text": "phase pure film of the targeted polymorph (XRD)",
-     "quote": "It is clear from the XRD analysis (Fig. 2) that we can selectively grow phase pure films of either α-SnS or π-SnS on all substrates, where the polymorph selectivity is dependent on the temperature at which the AA-CVD deposition is undertaken."
-    },
     {
      "property": "direct_band_gap",
      "value_num": 1.7,
@@ -1858,6 +2194,18 @@
      "unit": "μm",
      "from_figure": "Fig. 4",
      "quote": "Fig. 4 Illustration of the six devices investigated in this study. Layer thicknesses are indicated and same across all devices unless specified."
+    },
+    {
+     "property": "sheet_resistance_ITO",
+     "value_num": 10,
+     "unit": "Ω sq−1",
+     "quote": "The deposition of the i-ZnO (10 nm) layer and 200 nm ITO top contact was achieved by DC-sputtering techniques a RT (Rsq = 10 Ω sq−1) using a CT100, Alliance Concepts."
+    },
+    {
+     "property": "E_PV_g",
+     "value_num": 1.3,
+     "unit": "eV",
+     "quote": "From Fig. S6,† an EPVg of 1.3 eV is determined for devices using α-SnS as the absorber layer (devices A, B, and C)."
     }
    ],
    "missing_fields": [
@@ -1974,6 +2322,19 @@
      "unit": "mA cm−2",
      "from_figure": "Fig. 8a",
      "quote": "Fig. 8 External quantum efficiency (EQE) vs. photon wavelength for (a) device B consisting of FTO/α-SnS/CdS/ZnO/ITO and (b) device F consisting of FTO/am-TiOx/π-SnS/CdS/ZnO/ITO. The EQE measurements after consecutive hot plate annealing treatments are presented."
+    },
+    {
+     "property": "FTO_layer_thickness",
+     "value_num": 400,
+     "unit": "nm",
+     "from_figure": "Fig. 4",
+     "quote": "Fig. 4 Illustration of the six devices investigated in this study. Layer thicknesses are indicated and same across all devices unless specified."
+    },
+    {
+     "property": "E_PV_g",
+     "value_num": 1.3,
+     "unit": "eV",
+     "quote": "From Fig. S6,† an EPVg of 1.3 eV is determined for devices using α-SnS as the absorber layer (devices A, B, and C)."
     }
    ]
   },
@@ -2069,6 +2430,19 @@
      "unit": "μm",
      "from_figure": "Fig. 4",
      "quote": "Fig. 4 Illustration of the six devices investigated in this study. Layer thicknesses are indicated and same across all devices unless specified."
+    },
+    {
+     "property": "FTO_layer_thickness",
+     "value_num": 400,
+     "unit": "nm",
+     "from_figure": "Fig. 4",
+     "quote": "Fig. 4 Illustration of the six devices investigated in this study. Layer thicknesses are indicated and same across all devices unless specified."
+    },
+    {
+     "property": "E_PV_g",
+     "value_num": 1.3,
+     "unit": "eV",
+     "quote": "From Fig. S6,† an EPVg of 1.3 eV is determined for devices using α-SnS as the absorber layer (devices A, B, and C)."
     }
    ]
   },
@@ -2163,6 +2537,17 @@
      "value_num": 800,
      "unit": "nm",
      "quote": "The film thickness of the π-SnS layer in device D was significantly smaller (∼800 nm) as compared to E and F (∼1.8 μm)."
+    },
+    {
+     "property": "Jsc_Table_1",
+     "value_num": 5.96,
+     "unit": "mA cm−2",
+     "quote": "D: Mo/π-SnS/CdS/i-ZnO/ITO | AA-CVD | 133 | 5.96 | 27 | 0.1 | 0.21 | This work"
+    },
+    {
+     "property": "E_PV_g",
+     "value_text": "1.75–1.79 eV",
+     "quote": "For devices using π-SnS (devices D, E, and F), the EPVg varies between 1.75–1.79 eV (Fig. S7†)."
     }
    ]
   },
@@ -2257,6 +2642,18 @@
      "value_num": 1.8,
      "unit": "μm",
      "quote": "The film thickness of the π-SnS layer in device D was significantly smaller (∼800 nm) as compared to E and F (∼1.8 μm)."
+    },
+    {
+     "property": "FTO_layer_thickness",
+     "value_num": 400,
+     "unit": "nm",
+     "from_figure": "Fig. 4",
+     "quote": "Fig. 4 Illustration of the six devices investigated in this study. Layer thicknesses are indicated and same across all devices unless specified."
+    },
+    {
+     "property": "E_PV_g",
+     "value_text": "1.75–1.79 eV",
+     "quote": "For devices using π-SnS (devices D, E, and F), the EPVg varies between 1.75–1.79 eV (Fig. S7†)."
     }
    ]
   },
@@ -2371,6 +2768,18 @@
      "unit": "mA cm−2",
      "from_figure": "Fig. 8b",
      "quote": "Fig. 8 External quantum efficiency (EQE) vs. photon wavelength for (a) device B consisting of FTO/α-SnS/CdS/ZnO/ITO and (b) device F consisting of FTO/am-TiOx/π-SnS/CdS/ZnO/ITO. The EQE measurements after consecutive hot plate annealing treatments are presented."
+    },
+    {
+     "property": "FTO_layer_thickness",
+     "value_num": 400,
+     "unit": "nm",
+     "from_figure": "Fig. 4",
+     "quote": "Fig. 4 Illustration of the six devices investigated in this study. Layer thicknesses are indicated and same across all devices unless specified."
+    },
+    {
+     "property": "E_PV_g",
+     "value_text": "1.75–1.79 eV",
+     "quote": "For devices using π-SnS (devices D, E, and F), the EPVg varies between 1.75–1.79 eV (Fig. S7†)."
     }
    ]
   },
@@ -2988,6 +3397,13 @@
      "value_num": 0.22,
      "unit": "%",
      "quote": "F: FTO/am-TiOx/π-SnS/CdS/i-ZnO/ITO 150 oC, 120 min 200 3.50 31 0.1 0.22"
+    },
+    {
+     "property": "EQE_integrated_Jsc_curve_labelled_1hr_150C",
+     "value_num": 5.35,
+     "unit": "mA cm−2",
+     "from_figure": "Fig. 8b",
+     "quote": "Fig. 8 External quantum efficiency (EQE) vs. photon wavelength for (a) device B consisting of FTO/α-SnS/CdS/ZnO/ITO and (b) device F consisting of FTO/am-TiOx/π-SnS/CdS/ZnO/ITO. The EQE measurements after consecutive hot plate annealing treatments are presented."
     }
    ]
   },
@@ -3075,6 +3491,375 @@
      "quote": "The measurement of the External Quantum Efficiency (EQE) vs. photon energy of completed devices were measured with a pre-calibrated Bentham PVE300 system in the 300–1200 nm wavelength range, and calibrated using Si and Ge photodiodes."
     }
    ]
+  },
+  {
+   "label": "Anneal_A_200C_60min",
+   "parent": "Anneal_A_200C_40min",
+   "kind": "post_treatment",
+   "material": {
+    "name": "annealed solar cell (device A)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "thin film solar cell"
+   },
+   "quote": "Eventually, the devices became completely shunted after 1 hour of annealing at 200 °C.",
+   "succeeded": false,
+   "reagents": [],
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_num": 1,
+     "unit": "h",
+     "parent_value": "40 min",
+     "quote": "Eventually, the devices became completely shunted after 1 hour of annealing at 200 °C."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "device_status",
+     "value_text": "completely shunted after 1 hour of annealing at 200 °C",
+     "quote": "Eventually, the devices became completely shunted after 1 hour of annealing at 200 °C."
+    }
+   ]
+  },
+  {
+   "label": "Anneal_B_200C_60min",
+   "parent": "Anneal_B_200C_40min",
+   "kind": "post_treatment",
+   "material": {
+    "name": "annealed solar cell (device B)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "thin film solar cell"
+   },
+   "quote": "Eventually, the devices became completely shunted after 1 hour of annealing at 200 °C.",
+   "succeeded": false,
+   "reagents": [],
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_num": 1,
+     "unit": "h",
+     "parent_value": "40 min",
+     "quote": "Eventually, the devices became completely shunted after 1 hour of annealing at 200 °C."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "device_status",
+     "value_text": "completely shunted after 1 hour of annealing at 200 °C",
+     "quote": "Eventually, the devices became completely shunted after 1 hour of annealing at 200 °C."
+    }
+   ]
+  },
+  {
+   "label": "Anneal_A_150C_20min-4h",
+   "parent": "Anneal_A_200C_20min",
+   "kind": "post_treatment",
+   "material": {
+    "name": "annealed solar cell (device A)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "thin film solar cell"
+   },
+   "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance.",
+   "succeeded": true,
+   "reagents": [],
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 1,
+     "value_num": 150,
+     "unit": "°C",
+     "parent_value": "200 °C",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_text": "20 min, 40 min, 1 hour and 4 hours",
+     "parent_value": "20 min",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "performance_effect",
+     "value_text": "no significant effect on the device performance",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    }
+   ]
+  },
+  {
+   "label": "Anneal_B_150C_20min-4h",
+   "parent": "Anneal_A_200C_20min",
+   "kind": "post_treatment",
+   "material": {
+    "name": "annealed solar cell (device B)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "thin film solar cell"
+   },
+   "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance.",
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "Device_B",
+     "formula": null,
+     "role": "intermediate",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance.",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "Device_A",
+     "value_text": "replaced by Device_B",
+     "parent_value": "Device_A",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    },
+    {
+     "parameter": "temperature",
+     "step_order": 1,
+     "value_num": 150,
+     "unit": "°C",
+     "parent_value": "200 °C",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_text": "20 min, 40 min, 1 hour and 4 hours",
+     "parent_value": "20 min",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "performance_effect",
+     "value_text": "no significant effect on the device performance",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    }
+   ]
+  },
+  {
+   "label": "Anneal_C_150C_20min-4h",
+   "parent": "Anneal_A_200C_20min",
+   "kind": "post_treatment",
+   "material": {
+    "name": "annealed solar cell (device C)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "thin film solar cell"
+   },
+   "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance.",
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "Device_C",
+     "formula": null,
+     "role": "intermediate",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance.",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "Device_A",
+     "value_text": "replaced by Device_C",
+     "parent_value": "Device_A",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    },
+    {
+     "parameter": "temperature",
+     "step_order": 1,
+     "value_num": 150,
+     "unit": "°C",
+     "parent_value": "200 °C",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_text": "20 min, 40 min, 1 hour and 4 hours",
+     "parent_value": "20 min",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "performance_effect",
+     "value_text": "no significant effect on the device performance",
+     "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
+    }
+   ]
+  },
+  {
+   "label": "Anneal_D_200C_20min-4h",
+   "parent": "Anneal_A_200C_20min",
+   "kind": "post_treatment",
+   "material": {
+    "name": "annealed solar cell (device D)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "thin film solar cell"
+   },
+   "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes.",
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "Device_D",
+     "formula": null,
+     "role": "intermediate",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes.",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "Device_A",
+     "value_text": "replaced by Device_D",
+     "parent_value": "Device_A",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_text": "any annealing time from 20 min to 4 h",
+     "parent_value": "20 min",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "performance_effect",
+     "value_text": "significantly detrimental to the device performance",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    },
+    {
+     "property": "device_status",
+     "value_text": "completely shunted after 40 minutes",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    }
+   ]
+  },
+  {
+   "label": "Anneal_E_200C_20min-4h",
+   "parent": "Anneal_A_200C_20min",
+   "kind": "post_treatment",
+   "material": {
+    "name": "annealed solar cell (device E)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "thin film solar cell"
+   },
+   "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes.",
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "Device_E",
+     "formula": null,
+     "role": "intermediate",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes.",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "Device_A",
+     "value_text": "replaced by Device_E",
+     "parent_value": "Device_A",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_text": "any annealing time from 20 min to 4 h",
+     "parent_value": "20 min",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "performance_effect",
+     "value_text": "significantly detrimental to the device performance",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    },
+    {
+     "property": "device_status",
+     "value_text": "completely shunted after 40 minutes",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    }
+   ]
+  },
+  {
+   "label": "Anneal_F_200C_20min-4h",
+   "parent": "Anneal_A_200C_20min",
+   "kind": "post_treatment",
+   "material": {
+    "name": "annealed solar cell (device F)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": "thin film solar cell"
+   },
+   "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes.",
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "Device_F",
+     "formula": null,
+     "role": "intermediate",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes.",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "Device_A",
+     "value_text": "replaced by Device_F",
+     "parent_value": "Device_A",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    },
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_text": "any annealing time from 20 min to 4 h",
+     "parent_value": "20 min",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "performance_effect",
+     "value_text": "significantly detrimental to the device performance",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    },
+    {
+     "property": "device_status",
+     "value_text": "completely shunted after 40 minutes",
+     "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
+    }
+   ]
   }
  ],
  "annotations": [
@@ -3096,7 +3881,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Films : sur Mo, α-SnS forme de petites plaquettes (épaisseur de la couche de 1 μm dans la cellule A) et π-SnS de petits grains cubiques de 100–300 nm (≈ 800 nm d'épaisseur, cellule D) ; sur FTO et FTO/am-TiOx, les couches croissent plus vite (α : 1,3 et 1,8 μm ; π : ≈ 1,8 μm) et les grains de π-SnS atteignent 700–1000 nm. Cellules (valeurs de la table S2) : après 20 min à 200 °C, A passe de 0,29 à 0,82 % et B de 0,28 à 0,88 % (Jsc 3,81 → 12,96 et 4,26 → 12,78 mA cm−2), mais 40 min dégradent à 0,35 et 0,32 %, et la cellule C est court-circuitée (shunt) dès 20 min. Pour π-SnS, à 150 °C, E reste à 0,14–0,15 % tandis que F passe de 0,14 à 0,41 % (Voc 180 → 217 mV, Jsc 2,50 → 5,40 mA cm−2) ; D est court-circuitée après 20 min."
+   "text": "Films : sur Mo, α-SnS forme de petites plaquettes (épaisseur de la couche de 1 μm dans la cellule A) et π-SnS de petits grains cubiques de 100–300 nm (≈ 800 nm d'épaisseur, cellule D) ; sur FTO et FTO/am-TiOx, les couches croissent plus vite (α : 1,3 et 1,8 μm ; π : ≈ 1,8 μm) et les grains de π-SnS atteignent 700–1000 nm. Cellules (valeurs de la table S2) : après 20 min à 200 °C, A passe de 0,29 à 0,82 % et B de 0,28 à 0,88 % (Jsc 3,81 → 12,96 et 4,26 → 12,78 mA cm−2), mais 40 min dégradent à 0,35 et 0,32 %, et la cellule C est court-circuitée (shunt) dès 20 min. Pour π-SnS, à 150 °C, E reste à 0,14–0,15 % tandis que F passe de 0,14 à 0,41 % (Voc 180 → 217 mV, Jsc 2,50 → 5,40 mA cm−2) ; D est court-circuitée après 20 min. Les recuits donnés seulement de façon qualitative (A, B, C à 150 °C : sans effet notable ; A et B à 200 °C pendant 1 h : totalement court-circuitées ; D, E, F à 200 °C : nuisibles, court-circuitées après 40 min) sont rangés en branches sans valeurs chiffrées."
   },
   {
    "type": "tendance_observee",
@@ -3107,13 +3892,13 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Pour les cellules α-SnS A et B, un recuit à 150 °C (20 min, 40 min, 1 h, 4 h) n'a pas d'effet notable, tandis que 200 °C pendant 20 min améliore fortement les rendements par hausse de Jsc au prix d'une légère baisse de Voc ; au-delà de 40 min à 200 °C, les rendements et l'EQE chutent et les cellules sont totalement court-circuitées après 1 h. Ces durées intermédiaires (150 °C × 20 min à 4 h, 200 °C × 1 h) ne sont données que qualitativement, sans valeurs par cellule : elles n'ont pas été transformées en branches.",
+   "text": "Pour les cellules α-SnS A, B et C, un recuit à 150 °C (20 min, 40 min, 1 h, 4 h) n'a pas d'effet notable ; à 200 °C pendant 20 min, les rendements de A et B s'améliorent fortement par hausse de Jsc au prix d'une légère baisse de Voc, puis chutent après 40 min et les cellules sont totalement court-circuitées après 1 h. Les conditions de 150 °C (durées de 20 min à 4 h) et de 1 h à 200 °C ne sont données que qualitativement : elles sont rangées en branches sans valeurs chiffrées par cellule.",
    "quote": "For devices containing the α-SnS polymorph (A, B, and C) hot plate treatment at 150 °C for 20 min, 40 min, 1 hour and 4 hours had no significant effect on the device performance."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Pour les cellules π-SnS, un recuit à 200 °C, quelle que soit la durée de 20 min à 4 h, est nuisible et les cellules sont court-circuitées après 40 min ; à 150 °C le rendement augmente avec la durée (Jsc surtout) et se stabilise après 4 h. Les valeurs chiffrées à 200 °C ne sont pas rapportées par cellule.",
+   "text": "Pour les cellules π-SnS, un recuit à 200 °C, quelle que soit la durée de 20 min à 4 h, est nuisible et les cellules sont court-circuitées après 40 min ; à 150 °C le rendement augmente avec la durée (Jsc surtout) et se stabilise après 4 h. Les valeurs chiffrées à 200 °C ne sont pas rapportées par cellule (branches qualitatives).",
    "quote": "For devices containing the π-SnS polymorph, hot plate treatment at 200 °C was significantly detrimental to the device performance at any annealing time from 20 min to 4 h and all devices decreased in efficiency and were completely shunted after 40 minutes."
   },
   {
@@ -3148,7 +3933,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Dangers non mentionnés par l'article : le sulfate de cadmium (cancérogène, toxique) et la thiourée (cancérogène suspecté) du bain chimique ; le sulfure d'ammonium (dégagement de H2S, très toxique, odeur) pour la gravure ; l'ammoniaque ; le précurseur organostannique (amidure d'étain, sensible à l'air et à l'humidité, manipulation sous argon) et le toluène (inflammable, toxique) ; un aérosol sous 5 bar d'argon dans un réacteur à quartz chauffé à 400 °C ; le plasma d'oxygène, la pulvérisation cathodique et la soudure à l'indium."
+   "text": "Dangers non mentionnés par l'article : le sulfate de cadmium (cancérogène, toxique) et la thiourée (cancérogène suspecté) du bain chimique ; le sulfure d'ammonium (dégagement de H2S, très toxique, odeur) pour la gravure ; l'ammoniaque ; le précurseur organostannique (amidure d'étain, sensible à l'air et à l'humidité, manipulation sous argon) et le toluène (inflammable, toxique) ; un aérosol de toluène nébulisé dans un tube de quartz chauffé à 400 °C (l'argon est réglé à 5 bar à l'entrée de l'atomiseur, et non dans le réacteur, qui reste en principe près de la pression atmosphérique) ; le plasma d'oxygène, la pulvérisation cathodique et la soudure à l'indium."
   },
   {
    "type": "limite_reproductibilite",
@@ -3158,12 +3943,61 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "La synthèse du précurseur Sn(II) thiouréide (1) n'est pas décrite dans l'article (schéma S1 et référence 4) ; la concentration (0,08 M) est donnée mais pas le volume de solution, le débit d'argon, le taux de nébulisation, la durée du plasma d'oxygène (30 min seulement), les puissances et pressions de pulvérisation de i-ZnO et ITO, ni la vitesse de chauffage ou de refroidissement des recuits. Le fournisseur et la pureté de CdSO4, thiourée, (NH4)2S et des cibles de pulvérisation ne sont pas cités."
+   "text": "La synthèse du précurseur Sn(II) thiouréide (1) n'est pas décrite dans l'article (schéma S1 et référence 4). La concentration (0,08 M) est donnée, mais pas le volume de solution, la masse ou le volume nébulisés par dépôt, le débit d'argon ni le taux de nébulisation ; pour la couche de TiOx manquent la durée de chaque recuit à 150 °C, la puissance du plasma d'oxygène et le volume de solution déposé à la tournette ; le nettoyage du Mo-glass et du FTO nu avant l'AA-CVD n'est pas décrit (le lavage Hellmanex ne vise que le FTO destiné au TiOx) ; les puissances, pressions et gaz de pulvérisation de i-ZnO et ITO, les vitesses de chauffage ou de refroidissement des recuits ne sont pas donnés. Le fournisseur et la pureté de CdSO4, thiourée, (NH4)2S et des cibles de pulvérisation ne sont pas cités."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Anneal_A_200C_20min",
    "text": "L'article ne dit pas si les durées de recuit successives (20, 40 min ; 120, 240 min) sont cumulatives sur la même cellule ou indépendantes ; les valeurs de la table S2 sont rangées par durée indiquée, une branche par condition, sans trancher."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Anneal_C_200C_20min",
+   "text": "Les auteurs expliquent le court-circuit de la cellule C après recuit à 200 °C par les gros grains rugueux de α-SnS sur TiOx amorphe, qui empêchent un dépôt uniforme du tampon et du contact supérieur et favorisent des trous (pinholes) et des chemins de shunt.",
+   "quote": "These larger grains do not allow for a uniform deposition of the buffer layers and top contact and thus promotes the formation of pinholes."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Anneal_A_200C_20min",
+   "text": "Pour expliquer la hausse de Jsc et la baisse de Voc au recuit, les auteurs invoquent, par analogie avec des mesures sur cellules CIGS, l'extension de la zone de charge d'espace à la jonction, qui améliore la séparation des porteurs et l'EQE mais abaisse le potentiel interne ; ils disent observer les mêmes variations sur leurs cellules.",
+   "quote": "An increase in the SCR implies a decrease in the density of carriers and will assist the degree of carrier separation at the junction and therefore increase the EQE."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Anneal_F_150C_240min",
+   "text": "Les auteurs attribuent la meilleure performance de la cellule F après recuit à une meilleure croissance cristalline et à des grains de π-SnS plus gros, qu'ils pensent induits par la couche d'ensemencement de TiOx sur le FTO.",
+   "quote": "The higher performance of this particular device is attributed to the improved crystallite growth and larger grain size of π-SnS absorber layers, which appears to be induced by the TiOx seed layer on the FTO substrate."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Anneal_D_150C_20min",
+   "text": "Pour la cellule D (absorbeur π-SnS de 800 nm contre 1,8 μm pour E et F), les auteurs supposent que l'épaisseur plus faible favorise les chemins de shunt, ce qui expliquerait l'absence de comportement redresseur après le recuit à 150 °C.",
+   "quote": "Therefore, for the similar reasons mentioned above, it can be assumed that the smaller thickness of the π-SnS layer in device D may promote the formation for shunt pathways"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_A",
+   "text": "Les Méthodes écrivent une pulvérisation « DC » pour i-ZnO et ITO, les Résultats une pulvérisation « RF » ; la valeur « DC » est gardée telle que citée. Pour i-ZnO, isolant, la pulvérisation RF est la plus plausible (une cible céramique isolante se charge sous décharge DC) : le mode réel est à vérifier avant de refaire la cellule."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pi-SnS_Mo",
+   "text": "Les auteurs expliquent les grains plus gros de π-SnS sur FTO et TiOx par un accord de maille avec l'oxyde, alors qu'ils décrivent eux-mêmes le TiOx comme amorphe (donc sans maille) ; la taille de grain suit aussi l'épaisseur du film (0,8 μm sur Mo contre 1,8 μm sur oxydes). Aucun témoin à épaisseur égale n'est donné : le rôle propre du substrat n'est pas établi. L'hypothèse des auteurs est conservée telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Device_F",
+   "text": "Pour la cellule F, le Jsc intégré de l'EQE vaut 1,27 à 1,94 fois le Jsc mesuré en J–V (4,84 contre 2,50 mA cm−2 à l'état fabriqué ; 6,88 contre 5,40 mA cm−2 après 4 h à 150 °C) : aire éclairée, éclairage de polarisation ou étalonnage peuvent l'expliquer. Les Jsc des cellules π et les gains attribués au recuit sont à prendre avec prudence."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Valeurs contradictoires pour la cellule F dans l'article : le résumé donne Voc = 0,135 V et la conclusion η = 0,47 %, alors que les tables 1 et S2 donnent 217 mV et 0,41 %. Les valeurs des tables sont gardées ; celles du résumé et de la conclusion sont probablement des erreurs de l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Points de l'article recopiés tels quels mais à vérifier : (1) la pression de 0,0006 mbar (0,06 Pa) pour le Mo est inférieure aux pressions de travail usuelles (environ 0,1 à 1,5 Pa, Scofield et al., Thin Solid Films 260, 1995) et pourrait être une pression de base ; (2) 0,12 M de CdSO4 et 0,3 M de thiourée sont très probablement les solutions mères et non les concentrations du bain, dont les volumes et dilutions ne sont pas donnés ; (3) la molarité 0,08 M du précurseur ne dit pas si elle porte sur le dimère ou sur le monomère (facteur 2 sur l'étain) ; (4) 11 mA cm−2 correspondent à 51 % et non à 45 % du maximum théorique de 21,7 mA cm−2 ; (5) « Ag+ laser » désigne en réalité un laser à ions argon (Ar+) et « isotropic growth » devrait se lire croissance anisotrope."
   }
  ],
  "method_sources": [
@@ -3207,7 +4041,7 @@
  "doubts": [
   {
    "where": "Device_D as completed, Jsc",
-   "issue": "Table 1 et Fig. 7d donnent Jsc = 5,96 mA cm−2 (Voc 133 mV, FF 27 %, η 0,21 %) pour la cellule D, la table S2 donne 5,93 mA cm−2 pour D « As completed ». Valeur de la table S2 retenue (table de l'état de la cellule)."
+   "issue": "Contradiction de l'article : la table S2 donne Jsc = 5,93 mA cm−2 pour D « As completed », la table 1 et la Fig. 7d donnent 5,96 mA cm−2 (Voc 133 mV, FF 27 %, η 0,21 % identiques). Les deux valeurs sont extraites (Jsc : table S2 ; Jsc_Table_1 : table 1), sans trancher."
   },
   {
    "where": "Résumé et conclusion, cellule F",
@@ -3219,7 +4053,7 @@
   },
   {
    "where": "Anneal_F_150C_120min et Fig. 8b",
-   "issue": "La légende de la Fig. 8b indique « 1hr @ 150 °C » (Jsc EQE 5,35 mA cm−2) alors que la table S2 et la Fig. 7f indiquent 120 min (2 hr) ; la valeur 5,35 n'est pas extraite. La valeur 6,88 mA cm−2 (« 4hr @ 150 °C ») est rangée sur Anneal_F_150C_240min."
+   "issue": "La légende de la courbe de la Fig. 8b indique « 1hr @ 150 °C » (Jsc EQE 5,35 mA cm−2), alors que la table S2 et la Fig. 7f indiquent 120 min (2 hr). La valeur 5,35 est extraite sur Anneal_F_150C_120min sous la propriété EQE_integrated_Jsc_curve_labelled_1hr_150C, avec cette réserve sur la durée. La valeur 6,88 mA cm−2 (« 4hr @ 150 °C ») est rangée sur Anneal_F_150C_240min."
   },
   {
    "where": "Device_A step 6–7",
@@ -3243,11 +4077,11 @@
   },
   {
    "where": "alpha-SnS_glass, pi-SnS_glass",
-   "issue": "« deposited onto glass » : verre non précisé dans cette phrase, mais les Méthodes citent « borosilicate glass » parmi les substrats ; borosilicate retenu. Les valeurs de gap direct (1,28 eV pour α, 1,7 eV pour π) viennent de phrases sur les cellules et du texte de la Fig. S5 ; celle de π n'est pas explicitement dite « sur verre » dans la phrase citée."
+   "issue": "« deposited onto glass » : le type de verre n'est pas précisé dans la phrase UV-Vis (« borosilicate glass » n'apparaît que dans la liste des substrats de l'AA-CVD) : type de verre déclaré non cité. La phrase « phase pure films … on all substrates » et la Fig. 2 (Mo, FTO, FTO/am-TiOx) ne couvrent pas les films sur verre : XRD et résultat « phase » retirés de ces deux voies. Les valeurs de gap direct (1,28 eV pour α, 1,7 eV pour π) viennent de phrases sur les cellules et du texte de la Fig. S5 ; celle de π n'est pas explicitement dite « sur verre » dans la phrase citée."
   },
   {
-   "where": "Anneal_* (conditions qualitatives non branchées)",
-   "issue": "Recuits à 150 °C (20, 40, 60, 240 min) des cellules α, à 200 °C pendant 1 h, et à 200 °C des cellules π : seulement des constats qualitatifs de groupe dans le texte, sans valeurs par cellule ; non transformés en branches, repris en annotations tendance_observee."
+   "where": "Anneal_* (conditions qualitatives)",
+   "issue": "Recuits à 150 °C (20, 40, 60, 240 min) des cellules α A, B et C, à 200 °C pendant 1 h (A et B) et à 200 °C des cellules π D, E et F : constats qualitatifs de groupe, sans valeurs par cellule ; rangés en branches avec le résultat qualitatif cité. La phrase sur les cellules π à 200 °C vise « les dispositifs π-SnS » sans les nommer ; pour D, la table S2 ne donne qu'un essai à 150 °C pendant 20 min (court-circuité), jamais 200 °C. La durée de 1 h est lue dans « 1 hour »."
   },
   {
    "where": "Anneal_F_150C_240min, polarisation inverse",
@@ -3256,6 +4090,34 @@
   {
    "where": "Device_A étape 9",
    "issue": "L'ordre de la soudure des contacts d'indium par rapport aux dépôts n'est pas précisé ; étape placée en dernier."
+  },
+  {
+   "where": "Valeurs lues sur la Fig. 3 (Raman) et la Fig. 4 (FTO 400 nm)",
+   "issue": "Les positions des pics Raman sont les étiquettes numériques de la Fig. 3 (8 pics étiquetés pour α, 12 pour π ; le texte annonce 8 et 15 pics résolus, les traits pointillés à 50 et 192 cm−1 sont communs aux deux spectres). L'épaisseur du FTO (400 nm) est étiquetée une seule fois sur la Fig. 4 (cellule B) ; elle est étendue à C, E et F d'après la légende « same across all devices unless specified »."
+  },
+  {
+   "where": "Device_A étape 7 (ITO), Rsq",
+   "issue": "« DC-sputtering techniques a RT (Rsq = 10 Ω sq−1) » : la phrase ne dit pas explicitement que Rsq = 10 Ω sq−1 vise l'ITO ; attribution à l'ITO (couche conductrice) retenue (sheet_resistance_ITO)."
+  },
+  {
+   "where": "alpha-SnS_Mo / pi-SnS_Mo, précurseur (1), formule",
+   "issue": "La formule [Sn({C6H5}NCSN{Me2})(NMe2)] est donnée dans la légende du schéma S1 (annexe), écrite pour l'unité Sn sans indice alors que le titre du schéma et le texte principal parlent d'un « dimer » ; formule recopiée telle que dans l'article, sans trancher entre monomère et dimère pour la molarité de 0,08 M."
+  },
+  {
+   "where": "alpha-SnS_Mo / pi-SnS_Mo, étape de dépôt, 5 bar",
+   "issue": "« gas pressure fixed at 5 bar until it reached the atomizer » : la valeur de 5 bar est la pression de l'argon à l'entrée de l'atomiseur (paramètre atomizer_inlet_gas_pressure), pas la pression du réacteur, qui n'est pas donnée."
+  },
+  {
+   "where": "Mo-glass, pression de 0,0006 mbar",
+   "issue": "La pression de 0,0006 mbar (0,06 Pa) est inférieure aux pressions de travail usuelles de pulvérisation du Mo ; il pourrait s'agir d'une pression de base. Valeur citée conservée, base_pressure déclarée non citée."
+  },
+  {
+   "where": "Device_A étape 3, bain CdS (0,12 M CdSO4, 0,3 M thiourée)",
+   "issue": "Les concentrations ne précisent pas s'il s'agit des solutions mères ou du bain final (aucun volume donné) ; valeurs citées conservées, sans conversion."
+  },
+  {
+   "where": "Anneal_F_150C_240min, « 45 % of the maximum theoretical photocurrent »",
+   "issue": "Pour ≈ 11 mA cm−2 et un maximum théorique de 21,7 mA cm−2 cité dans l'introduction, le rapport est de 51 % et non 45 % ; texte de l'article conservé."
   }
  ]
 }
