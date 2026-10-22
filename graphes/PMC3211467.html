@@ -1,0 +1,62 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3211467</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3211467 — Shape and phase control of CdS nanocrystals using cationic surfactant in noninjection synthesis.</h1>
+<h2>Voie : CdS_CTAC_0</h2>
+<pre class="mermaid">flowchart LR
+  R15328([&quot;cadmium oxide&lt;br/&gt;1 mmol&quot;]):::reactif
+  R15328 --&gt;|&quot;precursor&quot;| S18232
+  R15329([&quot;oleic acid&lt;br/&gt;6 mmol&quot;]):::reactif
+  R15329 --&gt;|&quot;ligand&quot;| S18232
+  R15330([&quot;1-octadecene&lt;br/&gt;15 mL&quot;]):::reactif
+  R15330 --&gt;|&quot;solvent&quot;| S18232
+  R15331([&quot;sulfur&lt;br/&gt;0.5 mmol&quot;]):::reactif
+  R15331 --&gt;|&quot;precursor&quot;| S18232
+  R15332([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15332 --&gt;|&quot;gas&quot;| S18232
+  R15333([&quot;ethanol&lt;br/&gt;excess&quot;]):::reactif
+  R15333 --&gt;|&quot;antisolvent&quot;| S18232
+  R15334([&quot;hexane&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15334 --&gt;|&quot;solvent&quot;| S18232
+  S18232[&quot;&lt;b&gt;1. degas&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S18232 --&gt; S18233
+  S18233[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 280 °C&lt;br/&gt;atmosphere : Ar flow&quot;]:::etape
+  S18233 --&gt; S18234
+  S18234[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;temperature : 30 °C&quot;]:::etape
+  S18234 --&gt; S18235
+  S18235[&quot;&lt;b&gt;4. add&lt;/b&gt;&quot;]:::etape
+  S18235 --&gt; S18236
+  S18236[&quot;&lt;b&gt;5. react&lt;/b&gt;&lt;br/&gt;temperature : 240 °C&lt;br/&gt;duration : 60 min&lt;br/&gt;heating_rate : 20 °C/min&lt;br/&gt;atmosphere : flow of argon gas&quot;]:::etape
+  S18236 --&gt; S18237
+  S18237[&quot;&lt;b&gt;6. precipitate&lt;/b&gt;&quot;]:::etape
+  S18237 --&gt; S18238
+  S18238[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&quot;]:::etape
+  S18238 --&gt; S18239
+  S18239[&quot;&lt;b&gt;8. disperse&lt;/b&gt;&quot;]:::etape
+  S18239 --&gt; M
+  M{{&quot;CdS nanocrystals (spherical, sans CTAC)&lt;br/&gt;CdS&quot;}}:::materiau
+  O74096[&quot;average_diameter : 3.6 nm&quot;]:::resultat
+  M -.-&gt; O74096
+  O74097[&quot;morphology : spherical&quot;]:::resultat
+  M -.-&gt; O74097
+  O74098[&quot;crystal_phase : pure zinc-blende&quot;]:::resultat
+  M -.-&gt; O74098
+  O74099[&quot;exciton_peak_wavelength : 425 nm&quot;]:::resultat
+  M -.-&gt; O74099
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11795{{&quot;CdS_CTAC_0&quot;}}:::materiau
+  B11796[&quot;CdS_CTAC_0.25&quot;]:::etape
+  B11795 --&gt;|&quot;additive = 0.25 mmol&quot;| B11796
+  B11797[&quot;CdS_CTAC_0.5&quot;]:::etape
+  B11795 --&gt;|&quot;additive = 0.5 mmol&quot;| B11797
+  B11798[&quot;CdS_CTAC_1&quot;]:::etape
+  B11795 --&gt;|&quot;additive = 1 mmol&quot;| B11798
+  B11799[&quot;CdS_CTAOH_0.5&quot;]:::etape
+  B11797 --&gt;|&quot;cetyltrimethylammonium c… = replaced by cetyltrimeth…&quot;| B11799
+  B11800[&quot;CdS_CTAB_0.5&quot;]:::etape
+  B11797 --&gt;|&quot;cetyltrimethylammonium c… = replaced by cetyltrimeth…&quot;| B11800
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

@@ -86,7 +86,7 @@
     "morphology": "spherical"
    },
    "method": "noninjection synthesis in ODE (heat-up), Cd-oleate + S",
-   "quote": "Recently, we have proposed a noninjection method to synthesize high-quality size-controllable CdS quantum dots in noncoordinating solvents without nucleation initiators",
+   "quote": "A mixture of CdO (1 mmol), OA (6 mmol), and 15 mL ODE was degassed at room temperature for 15 min in a three-necked flask",
    "scale": null,
    "yield": null,
    "succeeded": true,
@@ -393,7 +393,7 @@
     "formula": "CdS",
     "family": "chalcogenure",
     "phase": null,
-    "morphology": null
+    "morphology": "spherical"
    },
    "quote": "Figure 1 TEM images of the CdS nanocrystals obtained with different amounts of CTAC added: (a) 0 mmol, (b) 0.25 mmol, (c) 0.5 mmol, and (d) 1 mmol.",
    "variations": [
@@ -422,8 +422,56 @@
     }
    ],
    "succeeded": true,
-   "characterizations": [],
-   "outcomes": []
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "diagramme de la Fig. 2 : large, de type zinc-blende, sans pic wurtzite distinct (lecture de figure)",
+     "instrument": "X'Pert pro X-ray diffractometer",
+     "conditions": "échantillon : solution d'hexane déposée à la goutte sur lame de verre",
+     "quote": "Figure 2 XRD patterns of the CdS nanocrystals obtained with different amounts of CTAC added. A phase transformation from zinc blende to wurtzite was exhibited with the increase of the amount of CTAC."
+    },
+    {
+     "technique": "TEM",
+     "result": "nanocristaux sphériques, sans bras (Fig. 1b, lecture de figure)",
+     "instrument": "Philips CM200 transmission electron microscope",
+     "conditions": "160 kV ; échantillon : une goutte de solution d'hexane séchée à l'air sur une grille de cuivre recouverte de carbone",
+     "quote": "Figure 1 TEM images of the CdS nanocrystals obtained with different amounts of CTAC added: (a) 0 mmol, (b) 0.25 mmol, (c) 0.5 mmol, and (d) 1 mmol. A shape transformation from spherical to multi-armed was observed with the increase of the amount of CTAC."
+    },
+    {
+     "technique": "UV-Vis",
+     "result": "pas de pic excitonique net ; seuil d'absorption vers 500 nm (Fig. 6, lecture de figure)",
+     "instrument": "U-4100 Spectrophotometer",
+     "conditions": null,
+     "quote": "Figure 6 UV-Vis absorption spectra of the CdS nanocrystals obtained with different amounts of CTAC added. The multi-armed nanocrystals lose quantum confinement effect."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystal_phase",
+     "value_text": "zinc-blende",
+     "from_figure": "Fig. 2",
+     "quote": "Figure 2 XRD patterns of the CdS nanocrystals obtained with different amounts of CTAC added. A phase transformation from zinc blende to wurtzite was exhibited with the increase of the amount of CTAC."
+    },
+    {
+     "property": "morphology",
+     "value_text": "spherical",
+     "from_figure": "Fig. 1b",
+     "quote": "Figure 1 TEM images of the CdS nanocrystals obtained with different amounts of CTAC added: (a) 0 mmol, (b) 0.25 mmol, (c) 0.5 mmol, and (d) 1 mmol. A shape transformation from spherical to multi-armed was observed with the increase of the amount of CTAC."
+    },
+    {
+     "property": "exciton_peak",
+     "value_text": "gradually disappears",
+     "from_figure": "Fig. 6",
+     "quote": "the absorption peak red-shifts and gradually disappears due to the increase of the size of CdS nanocrystals"
+    },
+    {
+     "property": "absorption_onset_wavelength",
+     "value_num": 500,
+     "unit": "nm",
+     "from_figure": "Fig. 6",
+     "quote": "Figure 6 UV-Vis absorption spectra of the CdS nanocrystals obtained with different amounts of CTAC added. The multi-armed nanocrystals lose quantum confinement effect."
+    }
+   ]
   },
   {
    "label": "CdS_CTAC_0.5",
@@ -476,6 +524,20 @@
      "instrument": "JEOL 2010F",
      "conditions": "200 kV",
      "quote": "It is obvious that the CdS bipod consists of a zinc-blende core with two wurtzite arms grown out of the (111) facets of the zinc-blende core."
+    },
+    {
+     "technique": "XRD",
+     "result": "diagramme de la Fig. 2 : pic (002) wurtzite net, (100) faible, massif zinc-blende (lecture de figure)",
+     "instrument": "X'Pert pro X-ray diffractometer",
+     "conditions": "échantillon : solution d'hexane déposée à la goutte sur lame de verre",
+     "quote": "Figure 2 XRD patterns of the CdS nanocrystals obtained with different amounts of CTAC added. A phase transformation from zinc blende to wurtzite was exhibited with the increase of the amount of CTAC."
+    },
+    {
+     "technique": "HRTEM",
+     "result": "tétrapode vu selon [111] du cœur zinc-blende ; section transversale du bras = plan (0001), qui s'accorde au plan (111) du cœur",
+     "instrument": "JEOL 2010F",
+     "conditions": "200 kV",
+     "quote": "It is seen that the cross-sectional plane of the wurtzite arm is that of (0001) which fits well with the (111) plane of the zinc-blende core."
     }
    ],
    "outcomes": [
@@ -494,6 +556,26 @@
      "property": "crystal_structure_HRTEM",
      "value_text": "zinc-blende core with two wurtzite arms (bipod)",
      "quote": "It is obvious that the CdS bipod consists of a zinc-blende core with two wurtzite arms grown out of the (111) facets of the zinc-blende core."
+    },
+    {
+     "property": "crystal_phase",
+     "value_text": "mixed zinc-blende and wurtzite",
+     "from_figure": "Fig. 2",
+     "quote": "Figure 2 XRD patterns of the CdS nanocrystals obtained with different amounts of CTAC added. A phase transformation from zinc blende to wurtzite was exhibited with the increase of the amount of CTAC."
+    },
+    {
+     "property": "lattice_distance_(0001)_arm",
+     "value_num": 0.33,
+     "unit": "nm",
+     "from_figure": "Fig. 3a",
+     "quote": "Figure 3 HRTEM images of the multi-armed CdS nanocrystals synthesized with 0.5 mmol CTAC added: (a) HRTEM image of a typical CdS bipod, consisting of a zinc-blende core and two wurtzite arms; (b) HRTEM image of a CdS tetrapod viewed along the [111] direction of the zinc-blende core."
+    },
+    {
+     "property": "lattice_distance_(10-10)_tetrapod_cross_section",
+     "value_num": 0.35,
+     "unit": "nm",
+     "from_figure": "Fig. 3b",
+     "quote": "Figure 3 HRTEM images of the multi-armed CdS nanocrystals synthesized with 0.5 mmol CTAC added: (a) HRTEM image of a typical CdS bipod, consisting of a zinc-blende core and two wurtzite arms; (b) HRTEM image of a CdS tetrapod viewed along the [111] direction of the zinc-blende core."
     }
    ]
   },
@@ -541,6 +623,13 @@
      "instrument": "Philips CM200 transmission electron microscope",
      "conditions": "160 kV ; échantillon : une goutte de solution d'hexane séchée à l'air sur une grille de cuivre recouverte de carbone",
      "quote": "The average diameter of the multi-armed nanorods further increased to 13 nm when 1 mmol CTAC was added."
+    },
+    {
+     "technique": "XRD",
+     "result": "diagramme de la Fig. 2 : pics wurtzite (100), (002), (101), (102), (110), (103), (112) nets (lecture de figure)",
+     "instrument": "X'Pert pro X-ray diffractometer",
+     "conditions": "échantillon : solution d'hexane déposée à la goutte sur lame de verre",
+     "quote": "Figure 2 XRD patterns of the CdS nanocrystals obtained with different amounts of CTAC added. A phase transformation from zinc blende to wurtzite was exhibited with the increase of the amount of CTAC."
     }
    ],
    "outcomes": [
@@ -554,6 +643,12 @@
      "property": "morphology",
      "value_text": "multi-armed nanorods",
      "quote": "The average diameter of the multi-armed nanorods further increased to 13 nm when 1 mmol CTAC was added."
+    },
+    {
+     "property": "crystal_phase",
+     "value_text": "wurtzite",
+     "from_figure": "Fig. 2",
+     "quote": "Figure 2 XRD patterns of the CdS nanocrystals obtained with different amounts of CTAC added. A phase transformation from zinc blende to wurtzite was exhibited with the increase of the amount of CTAC."
     }
    ]
   },
@@ -565,7 +660,7 @@
     "formula": "CdS",
     "family": "chalcogenure",
     "phase": "zinc-blende",
-    "morphology": "spherical-like (shape changed little)"
+    "morphology": "shape changed little"
    },
    "quote": "To gain insight into the role of cationic surfactant, we replaced CTAC with other cationic surfactants.",
    "variations": [
@@ -711,7 +806,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Sans CTAC : sphères de 3,6 nm, zinc-blende pure, pic excitonique à 425 nm. 0,5 mmol de CTAC : mélange de bâtonnets, bipodes, tripodes et tétrapodes d'environ 7 nm. 1 mmol de CTAC : nanobâtonnets multi-bras de 13 nm. Avec 0,5 mmol de CTAOH, taille et forme changent peu (4 nm) et la phase reste zinc-blende ; avec 0,5 mmol de CTAB, la transformation de morphologie et de phase se reproduit. Les résultats chiffrés de la branche à 0,25 mmol ne figurent que sur les figures.",
+   "text": "Sans CTAC : sphères de 3,6 nm, zinc-blende pure, pic excitonique à 425 nm. 0,5 mmol de CTAC : mélange de bâtonnets, bipodes, tripodes et tétrapodes d'environ 7 nm. 1 mmol de CTAC : nanobâtonnets multi-bras de 13 nm. Avec 0,5 mmol de CTAOH, taille et forme changent peu (4 nm) et la phase reste zinc-blende ; avec 0,5 mmol de CTAB, la transformation de morphologie et de phase se reproduit. Pour la branche à 0,25 mmol, seuls des résultats qualitatifs lus sur les figures 1b, 2 et 6 sont extraits (sphérique, zinc-blende, pas de pic excitonique, seuil vers 500 nm).",
    "quote": "The average diameter of the multi-armed nanorods further increased to 13 nm when 1 mmol CTAC was added."
   },
   {
@@ -723,7 +818,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Les nanocristaux multi-bras perdent le confinement quantique : leur seuil d'absorption est à environ 512 nm, proche du gap du CdS massif (2,42 eV). Le texte ne dit pas à quelle quantité de CTAC ce seuil s'applique (groupe d'échantillons), d'où une annotation et non une valeur rangée sur une voie.",
+   "text": "Les nanocristaux multi-bras perdent le confinement quantique : leur seuil d'absorption est à environ 512 nm, proche du gap du CdS massif (2,42 eV). Le texte ne dit pas à quelle quantité de CTAC ce seuil s'applique ; d'après la lecture de la Fig. 6, il concerne les échantillons à 0,5 et à 1 mmol de CTAC (leurs courbes rejoignent la ligne de base vers 510 à 520 nm), alors que la courbe à 0,25 mmol l'atteint vers 500 nm. Lecture de figure, approximative ; 512 nm n'est donc pas rangé sur une voie.",
    "quote": "they lose quantum confinement effect, confirmed by the absorption onset located at approx. 512 nm, matching well with the band gap energy of bulk CdS (2.42 eV)."
   },
   {
@@ -747,12 +842,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "CdS_CTAC_0",
-   "text": "Probablement, à 280 °C le CdO réagit avec l'acide oléique pour donner du Cd(oléate)2 et de l'eau (la solution devient limpide) ; le soufre se dissout dans l'ODE chaud en formant des espèces soufrées réactives (type polysulfures/ODE-S), qui réagissent avec le Cd-oléate pour former des noyaux de CdS vers 200 à 240 °C. On attend que l'oléate libre joue le rôle de ligand de surface qui contrôle la taille, comme dans le travail précédent des auteurs."
+   "text": "Hypothèse : à 280 °C le CdO réagit avec l'acide oléique pour donner du Cd(oléate)2 et de l'eau (la solution devient limpide). Au chauffage, le soufre élémentaire serait réduit par l'ODE (vers 180 °C et au-delà) en H2S, qui réagirait avec le Cd-oléate pour donner du CdS et de l'acide oléique (schéma proposé par le critique scientifique d'après Li, Ji, Xie, Grisham et Peng, J. Am. Chem. Soc., 2011, source non relue ici) ; cela s'accorde avec des multipodes déjà formés à 200 °C. L'oléate libre servirait de ligand de surface et contrôlerait la taille, comme dans le travail précédent des auteurs. Dans les branches avec CTAC, le chlorure lié au Cd (Cd(oléate)Cl) baisserait la réactivité des monomères ; la part du chlorure disponible reste inconnue, car le cation CTA+ pourrait se dégrader à 240 °C. Rien de cela n'est démontré par l'article."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le cadmium et ses composés (CdO, Cd-oléate, CdS) sont toxiques et cancérigènes : manipuler les poudres et les nanocristaux sous hotte avec gants et gérer les déchets métalliques. Le chauffage de soufre dans l'ODE à 240 à 280 °C peut dégager de l'H2S toxique ; le montage sous flux d'argon doit être ventilé et ne pas être fermé. Les solvants chauds (ODE) et les températures de 280 °C demandent une protection contre les brûlures ; le CTAC, le CTAB et le CTAOH (corrosif, base forte) sont irritants."
+   "text": "Le cadmium et ses composés (CdO, Cd-oléate, CdS) sont toxiques et cancérigènes : manipuler les poudres et les nanocristaux sous hotte avec gants et gérer les déchets métalliques. Le chauffage de soufre dans l'ODE à 240 à 280 °C peut dégager de l'H2S toxique ; le montage sous flux d'argon doit être ventilé et ne pas être fermé. Les solvants chauds (ODE) et les températures de 280 °C demandent une protection contre les brûlures ; le CTAC, le CTAB et le CTAOH (corrosif, base forte) sont irritants. Si les sels d'ammonium quaternaire se dégradent à 240 °C (désalkylation, hypothèse du critique scientifique, sans source), des halogénures de méthyle toxiques (CH3Cl, CH3Br) peuvent se dégager : évacuer le flux d'argon vers la hotte. Si le CTAOH est utilisé en solution commerciale dans le méthanol (inflammable) ou dans l'eau, son ajout à 30 °C puis la montée à 20 °C/min peuvent faire bouillir brutalement le solvant (projections, vapeurs inflammables)."
   },
   {
    "type": "limite_reproductibilite",
@@ -762,7 +857,52 @@
   {
    "type": "limite_reproductibilite",
    "route": "CdS_CTAC_0.25",
-   "text": "Les résultats de l'échantillon à 0,25 mmol de CTAC (taille, forme, phase, absorption) ne sont donnés par aucun texte ni tableau : seules les figures 1b, 2 et 6 les portent, sans valeur chiffrée lisible avec fiabilité (barres d'échelle de 20 nm sur des images de basse résolution) ; ils n'ont donc pas été extraits."
+   "text": "Pour l'échantillon à 0,25 mmol de CTAC, aucun texte ni tableau ne donne de résultat : seuls des résultats qualitatifs ont été lus sur les figures 1b (sphérique), 2 (zinc-blende) et 6 (plus de pic excitonique, seuil vers 500 nm). Aucune taille chiffrée fiable ne peut être lue (barres d'échelle de 20 nm sur des images de basse résolution) ; elle n'a donc pas été extraite."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdS_CTAC_0.5",
+   "text": "Les auteurs expliquent la formation des objets multi-bras par la nucléation de cœurs zinc-blende suivie de la croissance de bras wurtzite à partir de leur surface.",
+   "quote": "The formation of the CdS multi-armed nanocrystals is the result of nucleation of zinc-blende cores followed by surface-initiated growth of wurtzite arms."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdS_CTAC_0.5",
+   "text": "Selon les auteurs, les cœurs zinc-blende viennent de noyaux de taille « magique » formés à l'étape de nucléation, de structure zinc-blende, plus stable pour les structures à couche fermée.",
+   "quote": "The formation of zinc-blende cores can be attributed to the magic-sized nuclei formed at the nucleation stage."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdS_CTAC_0.5",
+   "text": "Selon les auteurs, la liaison forte entre Cl- et Cd2+ (raisonnement acide mou/base molle) réduit la réactivité des précurseurs ; il se forme moins de noyaux, il reste plus de précurseur pour la croissance, d'où des nanocristaux plus gros, et la wurtzite domine au-delà d'environ 5 nm.",
+   "quote": "Soft acids bind strongly to soft base, so Cl- binds strongly to Cd2+, which reduces the reactivity of the precursors."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdS_CTAC_0.5",
+   "text": "Selon les auteurs, à forte concentration de précurseur, la croissance plus rapide du plan (0001) fait pousser les bras wurtzite.",
+   "quote": "At high precursor concentration, the faster growth rate of (0001) plane leads to the growth of wurtzite arms."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Les auteurs observent que les nanocristaux multi-bras sont déjà formés quand la température de réaction atteint 200 °C, donc pendant la montée en température et avant le palier de 240 °C ; ils n'ont pas pu isoler les noyaux à cause de la vitesse de réaction élevée. La quantité de CTAC de cet essai n'est pas précisée.",
+   "quote": "It was observed that multi-armed CdS nanocrystals had been formed when the reaction temperature reached 200°C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_CTAOH_0.5",
+   "text": "Le témoin CTAOH change plusieurs variables à la fois par rapport au CTAC : absence d'halogénure, mais aussi ajout d'une base forte qui neutralise une partie de l'acide oléique et, selon la forme commerciale utilisée (le fournisseur Aldrich vend le CTAOH en solution dans le méthanol ou dans l'eau, fiche Sigma-Aldrich du critique scientifique), apport de solvant ; l'article ne dit pas quelle forme a servi. La conclusion « Cl- est responsable » n'est donc pas isolée : il manque un témoin à teneur égale en Cl- (par exemple un chlorure sans ammonium quaternaire) ou un CTA+ sans anion coordinant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_CTAC_0.5",
+   "text": "Les auteurs attribuent l'effet du CTAOH aux amines issues de sa dégradation ; le CTAC et le CTAB se dégradent probablement de la même façon à 240 °C (raisonnement général du critique scientifique, sans source). La différence entre essais n'est donc pas « amine contre pas d'amine », et la part du chlorure réellement disponible pour le Cd est inconnue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves sur l'article (critique scientifique) : (i) Cl- est présenté comme une « base molle », ce qui est inexact dans la classification de Pearson (base dure ou intermédiaire ; l'ordre de liaison au Cd2+ est I- > Br- > Cl-) ; la conclusion qualitative sur la liaison Cd-Cl reste défendable. (ii) « Pure zinc-blende » repose sur l'absence des raies (102) et (103) de la wurtzite, et la longueur d'onde du diffractomètre n'est pas donnée. (iii) « Far beyond the exciton Bohr radius » est exagéré pour l'échantillon de 7 nm (environ 1,2 fois deux rayons de Bohr de 3 nm) ; il est vrai pour 13 nm. (iv) « Monodispersed » (résumé) n'est pas soutenu pour le mélange de formes à 0,5 mmol, et un « high yield » est annoncé sans rendement mesuré : le soufre est limitant (Cd:S = 2:1), soit au plus 72 mg de CdS par lot."
   }
  ],
  "method_sources": [
@@ -776,7 +916,7 @@
  "doubts": [
   {
    "where": "CdS_CTAC_0 (échantillon sans CTAC)",
-   "issue": "La section Synthesis ne décrit que la procédure avec tensioactif (« with different amounts »). L'échantillon à 0 mmol de CTAC (Fig. 1a) est supposé suivre la même procédure sans tensioactif, d'après « the only difference in this study is the addition of CTAC » ; le texte ne le dit pas explicitement pour cet échantillon."
+   "issue": "La section Synthesis ne décrit que la procédure avec tensioactif (« with different amounts »). L'échantillon à 0 mmol (Fig. 1a) n'est pas décrit pas à pas ; qu'il suive la même procédure sans tensioactif est soutenu par « the only difference in this study is the addition of CTAC into the reaction mixture » (comparaison avec l'étude antérieure des auteurs), pas par une phrase propre à cet échantillon."
   },
   {
    "where": "Branches CTAOH et CTAB, parent",
@@ -784,7 +924,7 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Figures 1, 2, 4 et 6 ouvertes : aucune valeur lue sur figure. Les tailles de l'échantillon à 0,25 mmol (Fig. 1b) et les seuils d'absorption (Fig. 6) ne sont pas fiables à la résolution disponible ; les valeurs données par le texte sont reprises à la place. Les figures 3 et 5 n'ont pas été ouvertes (le texte les décrit)."
+   "issue": "Figures 1, 2, 3, 4 et 6 ouvertes ; la figure 5 n'a pas été ouverte (le texte la décrit). Valeurs lues : Fig. 2 (phases : wurtzite à 1 mmol, mélange à 0,5, zinc-blende à 0,25 ; qualitatif, précision limitée par la largeur des raies), Fig. 1b (forme sphérique à 0,25 mmol), Fig. 3a et 3b (distances 0,33 nm et 0,35 nm, valeurs imprimées dans l'image), Fig. 6 (seuil d'absorption vers 500 nm à 0,25 mmol, lecture à environ 10 nm). Aucune taille n'est lue sur la Fig. 1b (barre d'échelle de 20 nm, image de basse résolution)."
   },
   {
    "where": "Prélèvement à 200 °C",
@@ -792,11 +932,15 @@
   },
   {
    "where": "Seuil d'absorption à 512 nm",
-   "issue": "La valeur est donnée pour « the multi-armed CdS nanocrystals » sans préciser 0,5 ou 1 mmol de CTAC ; rangée en annotation de tendance et non sur une voie."
+   "issue": "La valeur est donnée pour « the multi-armed CdS nanocrystals » sans préciser 0,5 ou 1 mmol de CTAC ; rangée en annotation de tendance et non sur une voie. Lecture de la Fig. 6 : les courbes à 0,5 et 1 mmol rejoignent la ligne de base vers 510 à 520 nm (compatible avec 512 nm), celle à 0,25 mmol vers 500 nm."
   },
   {
    "where": "Branches CTAC, variation « additive »",
    "issue": "Le CTAC n'existe pas dans la voie de base : la variation porte le nom explicite « additive » (parent_value none) conformément au RUNBOOK, d'où trois avertissements du contrôle sans gravité."
+  },
+  {
+   "where": "CdS_CTAOH_0.5 material.morphology",
+   "issue": "Le texte dit que « the size and shape changed little » (par rapport à l'échantillon sans CTAC), pas que les nanocristaux sont sphériques ; la forme est donc reprise telle que l'article la formule (l'ancienne mention « spherical-like » était une déduction)."
   }
  ]
 }
