@@ -103,12 +103,16 @@
        "quote": "63 mL GO aqueous solution was mixed with 20 mL FeSO4·7H2O aqueous solution with ultrasonication for 30 min and vigorous stirring for 1 h.",
        "value_num": 1,
        "unit": "h"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "63 mL GO aqueous solution was mixed with 20 mL FeSO4·7H2O aqueous solution with ultrasonication for 30 min and vigorous stirring for 1 h.",
+       "value_text": "vigorous"
       }
      ],
      "equipment": [],
      "not_stated": [
       "temperature",
-      "stirring_speed",
       "ultrasonic_power"
      ]
     },
@@ -262,7 +266,7 @@
      "parameters": [
       {
        "name": "temperature",
-       "quote": "Figure 1b shows the XRD patterns of samples S500, S600, S700 and S800.",
+       "quote": "when the temperature was increased from 500°C to 800°C",
        "value_num": 500,
        "unit": "°C"
       },
@@ -292,7 +296,8 @@
       }
      ],
      "not_stated": [
-      "pressure"
+      "pressure",
+      "gas_flow"
      ]
     },
     {
@@ -393,6 +398,13 @@
      "instrument": "analyseur de réseau vectoriel Agilent E5071C",
      "conditions": "méthode coaxiale, plage 2–18 GHz, échantillon à 50 wt% dans la paraffine pressé en tore (diamètre extérieur 7.0 mm, intérieur 3.04 mm), mesures à température ambiante (épaisseur 3 mm pour Fig. 4 et Table 1)",
      "quote": "The relative complex permittivity and permeability of the paraffin composites containing 50 wt% of the samples were determined by using a coaxial method with the vector network analyzer (Agilent E5071C, Agilent, USA) in the frequency range of 2–18 GHz."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "seuls les groupes époxyde et hydroxyle subsistent après recuit à 600 °C",
+     "instrument": "VERTEX 80+HYPERION2000 (Bruker Optics, Germany)",
+     "conditions": null,
+     "quote": "This was confirmed in our FT-IR study, which showed that only epoxide and hydroxyl groups remained after annealing at 600°C."
     }
    ],
    "outcomes": [
@@ -726,7 +738,7 @@
    "parent": "S700",
    "kind": "material",
    "material": {
-    "name": "Fe3O4/reduced graphene oxide composite (10% GO in starting materials)",
+    "name": "iron oxides/reduced graphene oxide composite (10% GO in starting materials, annealed at 700 °C)",
     "formula": null,
     "family": "composite",
     "phase": null,
@@ -766,6 +778,13 @@
      "unit": "mm",
      "from_figure": "Fig. 3d"
     }
+   ],
+   "not_stated": [
+    "annealing_atmosphere",
+    "annealing_duration",
+    "annealing_heating_rate",
+    "go_volume",
+    "go_concentration"
    ]
   },
   {
@@ -874,13 +893,6 @@
      "value_text": "replaced by FeSO4·7H2O powders",
      "parent_value": "S90",
      "quote": "The control samples were prepared by directly heating FeSO4·7H2O powders in furnace with the same procedure without GO."
-    },
-    {
-     "parameter": "temperature",
-     "step_order": 3,
-     "value_text": "at every temperature point",
-     "parent_value": "500 °C",
-     "quote": "In contrast, treating FeSO4·7H2O powders without the aid of rGO under the same conditions generated α-Fe2O3 at every temperature point."
     }
    ],
    "reagents": [
@@ -904,9 +916,19 @@
      "quote": "The control samples were prepared by directly heating FeSO4·7H2O powders in furnace with the same procedure without GO.",
      "parameters": [
       {
-       "name": "temperature",
-       "quote": "In contrast, treating FeSO4·7H2O powders without the aid of rGO under the same conditions generated α-Fe2O3 at every temperature point.",
-       "value_text": "at every temperature point"
+       "name": "duration",
+       "quote": "The control samples were prepared by directly heating FeSO4·7H2O powders in furnace with the same procedure without GO.",
+       "value_text": "same procedure"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "The control samples were prepared by directly heating FeSO4·7H2O powders in furnace with the same procedure without GO.",
+       "value_text": "same procedure"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The control samples were prepared by directly heating FeSO4·7H2O powders in furnace with the same procedure without GO.",
+       "value_text": "same procedure"
       }
      ],
      "equipment": [
@@ -917,9 +939,8 @@
       }
      ],
      "not_stated": [
-      "duration",
-      "atmosphere",
-      "heating_rate"
+      "temperature",
+      "sample_mass"
      ]
     }
    ],
@@ -1001,13 +1022,13 @@
   {
    "type": "mecanisme_auteurs",
    "route": "S500",
-   "text": "Selon les auteurs, les groupes hydroxyle et le H2 libérés par la réduction thermique de l'oxyde de graphite jouent un rôle important dans la transformation α-Fe2O3 → γ-Fe2O3 entre 540 et 700 °C ; les gaz réducteurs (CO, CH4, H2) piégés dans la structure poreuse favoriseraient γ-Fe2O3 → Fe3O4.",
+   "text": "Selon les auteurs, les groupes hydroxyle et le H2 libérés par la réduction thermique de l'oxyde de graphite jouent un rôle important dans la transformation α-Fe2O3 → γ-Fe2O3 entre 540 et 700 °C.",
    "quote": "The hydroxyl groups and H2 gas generated from the thermal reduction of graphite oxide are believed to play an important role in the transformation considering the similarities in conditions of our system with previously reported reaction systems."
   },
   {
    "type": "mecanisme_analyse",
    "route": "S500",
-   "text": "Sous argon, FeSO4 se déshydrate puis se décompose probablement selon 2 FeSO4 → Fe2O3 + SO2 + SO3 (d'où le piégeage des gaz soufrés par NaOH), tandis que GO perd ses groupes oxygénés en libérant CO, CO2, H2 et CH4. Plus la température monte, plus ces gaz réducteurs sont produits et retenus dans le solide dense et poreux, ce qui explique probablement la réduction partielle de Fe3+ en Fe2+ et la formation de Fe3O4 ; le broyage préalable de S90 laisserait s'échapper ces gaz, d'où l'α-Fe2O3 observé."
+   "text": "Hypothèse issue de la critique scientifique, non démontrée par les auteurs : sous argon, FeSO4 se déshydrate puis se décompose vers 430–540 °C selon 2 FeSO4 → Fe2O3 + SO2 + SO3 (d'où le piège NaOH). Le GO perd l'eau et ses hydroxyles vers 230 °C et, au-dessus de 400 °C, ne libère plus que CO et CO2 (Viana et al., 2023, désorption thermique de films de GO) : le rôle de H2 et des hydroxyles invoqué par les auteurs entre 540 et 700 °C est peu probable. L'hypothèse la plus simple est une réduction carbothermique progressive de l'hématite par le carbone du rGO et le CO, d'abord en spinelle lacunaire Fe3−δO4 (nommée γ-Fe2O3 par les auteurs) puis en Fe3O4 ; le bilan de carbone (≈ 9–11 mmol de C pour 18 mmol de Fe) suffit pour Fe3O4 mais pas pour FeO, ce qui borne la réduction avec 5 % de GO. Le confinement du CO dans le bloc dense, perdu par le broyage de S90, expliquerait l'α-Fe2O3 obtenu après broyage."
   },
   {
    "type": "securite_auteurs",
@@ -1018,7 +1039,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "SO2 et SO3 sont toxiques et corrosifs ; la réduction thermique de l'oxyde de graphite libère aussi du CO (toxique) et du H2 et CH4 (inflammables), à manipuler sous argon et sous hotte avec un piège basique adapté. Les fours tubulaires à 800 °C exigent une purge préalable de l'air (étape à 500 sccm pendant 10 min) ; les poudres nanométriques d'oxydes de fer et de rGO doivent être manipulées avec protection respiratoire. La préparation de GO par la méthode de Hummers modifiée (non détaillée ici) met en jeu des oxydants forts et de l'acide sulfurique concentré."
+   "text": "SO2 (toxique) et SO3 (brouillard d'acide sulfurique au contact de l'humidité) se dégagent à la décomposition de FeSO4, et la réduction du rGO libère du CO (toxique) : four sous hotte, après purge de l'air à l'argon. Le piège NaOH n'est pas dimensionné : il faut au moins 36 mmol de NaOH (≈ 1.45 g) pour 18 mmol de soufre gazeux, à multiplier pour garder un excès. Au refroidissement, le liquide du bulleur peut remonter dans le tube chaud : prévoir un clapet anti-retour ou un flacon de garde vide. Les poudres nanométriques d'oxydes de fer et de rGO se manipulent avec protection respiratoire. La préparation de GO par la méthode de Hummers modifiée (non détaillée ici) met en jeu des oxydants forts et de l'acide sulfurique concentré."
   },
   {
    "type": "limite_reproductibilite",
@@ -1028,7 +1049,58 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Le rendement, la masse de S90 chargée dans la nacelle, la préparation détaillée de l'oxyde de graphène (renvoi à la méthode de Hummers modifiée, réf. b42), la pureté et le fournisseur de FeSO4·7H2O, l'appareil de séchage et la procédure de broyage ne sont pas donnés. La teneur de 5 % de GO de la synthèse standard n'est qu'implicite (« from 5% to 10% ») et sa base massique n'est pas précisée."
+   "text": "Le rendement, la masse de S90 chargée dans la nacelle, la préparation détaillée de l'oxyde de graphène (renvoi à la méthode de Hummers modifiée, réf. b42), la pureté et le fournisseur de FeSO4·7H2O, l'appareil de séchage et le modèle du four ne sont pas donnés. La teneur de « 5 % de GO » de la synthèse standard n'est qu'implicite (« from 5% to 10% ») : interprétation, 63 mL × 4.0 mg mL−1 = 252 mg de GO pour 5.04 g de FeSO4·7H2O, soit 5 % en rapport massique GO/sel, mais l'article ne l'écrit pas."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "S500",
+   "text": "Pour la transformation γ-Fe2O3 → Fe3O4, les auteurs invoquent les gaz réducteurs (CO, CH4, H2) de la réduction thermique de l'oxyde de graphite, adsorbés et confinés dans la structure poreuse d'un solide dense.",
+   "quote": "It was shown before that the thermal reduction of graphite oxide could generate reducing gases including CO, CH4 and H2,. Because of its porous structure, sample S800 could adsorb and confine these reducing gases especially when the sample is dense solid, thus providing reducing atmosphere for the reduction of γ-Fe2O3 to Fe3O4."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S500",
+   "text": "Le paragraphe « Samples Labeling » des Résultats prescrit un broyage avant le recuit, alors que les Méthodes ne broient pas et que la Discussion montre que broyer S90 mène à l'hématite : suivre les Méthodes (bloc non broyé), sinon on obtient α-Fe2O3 au lieu de Fe3O4."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S500",
+   "text": "Le piège NaOH n'est pas dimensionné (volume et concentration non donnés, alors qu'il faut au moins 36 mmol de NaOH), le débit d'argon pendant le palier n'est pas donné, et les teneurs résiduelles en carbone et en soufre des produits ne sont pas mesurées : l'étiquette « rGO composite » ne dit pas combien de rGO reste, le bilan de carbone laissant penser qu'une bonne part est consommée par la réduction."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S90",
+   "text": "La butlérite est écrite Fe(OH)SO4·7H2O dans le texte ; la formule correcte est Fe(OH)SO4·2H2O (fiche Mindat de la butlérite, la Fig. 1a de l'article porte aussi ·2H2O). Le « ·7H2O » vient probablement d'une confusion avec FeSO4·7H2O ; un chimiste qui cherche la fiche par la formule écrite ne la trouvera pas."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S600",
+   "text": "Dans le Tableau 1, la plage tanδE de S600 (0.28–0.43) est incompatible avec ses plages ε″ (1.21–7.61) et ε′ (16.88–24.44), qui donnent tanδE ≥ 0.07 seulement ; une des trois colonnes est fausse, à remesurer avant de s'en servir."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S700",
+   "text": "Dans le texte, ε′ et ε″ à 2 GHz de S700 et S800 (« about 8 and 11 », « about 0.5 and 1.5 ») sont dans l'ordre inverse du Tableau 1 (ε′ de S800 ≤ 8.18 ; ε″ de S700 ≥ 1.44) ; le tableau et la conclusion des auteurs (ε″ de S700 supérieur à celui de S800) concordent, mais les deux valeurs sont gardées sans choisir."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S700",
+   "text": "Les μ″ et tanδM négatifs de S700 et S800 (jusqu'à −0.22) ne sont pas physiques pour un matériau passif : artefact probable de la mesure (résonance de Fabry-Pérot, Hou et al., Applied Physics Letters, 2013), à ne pas lire comme une perte magnétique. Le Raman ne donne pas la puissance du laser, qui peut oxyder la magnétite (Bauer et al., 2011), et la DRX ne sépare pas γ-Fe2O3 de Fe3−δO4."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S800",
+   "text": "La « stabilité jusqu'à 800 °C » n'est montrée que sous argon, sur un matériau formé sous argon ; à l'air, Fe3O4 s'oxyde et le rGO brûle bien avant 800 °C, et l'application revendiquée (surfaces chauffées à l'air) n'est pas testée. La phrase « the RL for sample S700 under the same conditions is −17 dB » ne dit pas si S700 a été chauffé à 800 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S700-10%GO",
+   "text": "L'échantillon à 10 % de GO n'est pas caractérisé et la façon de passer de 5 à 10 % (volume ou concentration de GO) n'est pas dite ; avec environ deux fois plus de carbone, la réduction peut aller au-delà de Fe3O4 (wüstite, fer), si bien que le meilleur RL (−20.8 dB) peut venir d'un matériau de composition différente de S700."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S0X",
+   "text": "Le témoin change deux variables à la fois (pas de GO, et poudre de FeSO4·7H2O non dissoute ni séchée en bloc), alors que les auteurs montrent que la compacité décide de la phase : il ne sépare pas l'effet du GO de celui de la mise en forme. Le résultat « α-Fe2O3 à chaque température » est de plus douteux à 500 °C, la TG des auteurs plaçant le début de décomposition de FeSO4·7H2O pur à 510 °C (Kanari et al., 2018) ; la Fig. S1 qui le montrerait est absente."
   }
  ],
  "method_sources": [
@@ -1120,7 +1192,7 @@
    "sample": "S540",
    "defined_in": "Results, XRD and Raman Analysis",
    "route": null,
-   "why": "cité une seule fois (« XRD pattern of sample S540 (α-Fe2O3, Supplementary Figure S1) ») sans protocole ni indication d'avec ou sans GO ; résultat dans une annexe absente",
+   "why": "cité une seule fois (« XRD pattern of sample S540 (α-Fe2O3, Supplementary Figure S1) ») ; l'article ne dit pas si S540 contient du GO (Fig. S1 = courbes des témoins sans GO, mais l'étiquette SX désigne les échantillons avec GO) et ne donne ni protocole ni phase hors de cette parenthèse ; résultat dans une annexe absente",
    "results_in": [
     "Fig. S1 (absente)"
    ]
@@ -1177,20 +1249,29 @@
    "results_in": [
     "Fig. 5c"
    ]
+  },
+  {
+   "sample": "FeSO4·7H2O pur (référence TG/DTG)",
+   "defined_in": "Results, FT-IR and TG/DTG Analysis",
+   "route": null,
+   "why": "réactif analysé tel quel en TG/DTG pour comparaison avec S90 (510 °C et 578 °C) ; non synthétisé dans l'article, donc pas de voie ; valeurs rapportées en annotation tendance_observee",
+   "results_in": [
+    "Fig. S5 (TG/DTG, absente)"
+   ]
   }
  ],
  "doubts": [
   {
    "where": "S500 (Results, Experimental Procedure and Samples Labeling vs Methods)",
-   "issue": "Les Résultats disent « After heating, the products were grounded in an agate mortar, annealed at a certain temperature and labeled as SX », ce qui placerait un broyage avant le recuit ; les Méthodes (plus détaillées) mettent le bloc noir séché dans la nacelle sans broyage, et la Discussion dit que broyer S90 empêche la transition vers Fe3O4. Lecture retenue : pas de broyage dans S500–S800 (Méthodes) ; le broyage est un essai séparé (S90-ground_800). Un éventuel broyage du produit après recuit pour les mesures n'est pas décrit."
+   "issue": "Trois passages se contredisent sur le broyage : « Experimental Procedure and Samples Labeling » (Résultats) dit « After heating, the products were grounded in an agate mortar, annealed at a certain temperature and labeled as SX » ; les Méthodes mettent le bloc noir séché directement dans la nacelle, sans broyage ; la Discussion dit que broyer S90 empêche la transition vers Fe3O4 (S90 broyé recuit à 800 °C : surtout α-Fe2O3, 1.93 emu/g contre 80.4 pour S800). Lecture retenue : pas de broyage dans S500–S800 (Méthodes et Discussion) ; le broyage est un essai séparé (S90-ground_800). Un chimiste qui suit le seul paragraphe « Samples Labeling » risque d'obtenir de l'hématite. Un éventuel broyage du produit après recuit pour les mesures n'est pas décrit."
   },
   {
    "where": "S700-10%GO, variation go_dosage",
-   "issue": "Les auteurs écrivent « increased from 5% to 10% » : la teneur de 5 % de la synthèse standard est déduite de cette phrase, sans base massique ni lien explicite avec les 63 mL de GO à 4.0 mg mL−1. Le contrôle signale que go_dosage ne correspond à aucun paramètre du protocole hérité (le GO est dans la voie S90). L'article ne dit pas que l'échantillon à 10 % a suivi les mêmes étapes que S700 (même recuit sous Ar, 3 °C/min, 1 h) : héritage par défaut."
+   "issue": "Les auteurs écrivent « increased from 5% to 10% » : la teneur de 5 % de la synthèse standard n'est pas écrite comme un rapport massique ni reliée aux 63 mL de GO à 4.0 mg mL−1 (interprétation dans les annotations : 252 mg de GO pour 5.04 g de FeSO4·7H2O). go_dosage ne correspond à aucun paramètre du protocole hérité (le GO est dans la voie S90). L'article ne dit pas que l'échantillon à 10 % a suivi les mêmes étapes que S700 (recuit sous Ar, 3 °C/min, 1 h) ni comment la teneur est passée de 5 à 10 % (volume ou concentration de GO) : héritage non confirmé, déclaré en not_stated de la branche. Le matériau n'est pas nommé Fe3O4 : l'article ne donne aucune phase pour cet échantillon."
   },
   {
    "where": "S0X, step 1",
-   "issue": "« with the same procedure without GO » et « under the same conditions » : la durée, l'atmosphère et la vitesse de chauffe sont implicites et déclarées non citées ; les températures des témoins ne sont pas listées (« at every temperature point »). L'article ne dit pas si FeSO4·7H2O a été redissous et séché à 90 °C avant le recuit (« directly heating FeSO4·7H2O powders »)."
+   "issue": "« with the same procedure without GO » (Méthodes) et « under the same conditions » (Résultats) : la durée, l'atmosphère et la vitesse de chauffe sont reprises par ce renvoi au programme de four de S500 (purge à l'argon, 3 °C/min, palier de 1 h, refroidissement sous gaz protecteur), sans valeur propre au témoin ; elles sont citées par la phrase du renvoi en value_text « same procedure ». Les températures des témoins ne sont pas listées (« at every temperature point ») : temperature est déclarée non citée. L'article ne dit pas si FeSO4·7H2O a été redissous et séché à 90 °C avant le recuit (« directly heating FeSO4·7H2O powders »), ni la masse de poudre."
   },
   {
    "where": "S90 outcomes (TG/DTG)",
@@ -1219,6 +1300,30 @@
   {
    "where": "S90-ground_800 step 2",
    "issue": "L'article ne dit pas si ce recuit à 800 °C s'est fait sous argon, à 3 °C/min et 1 h ; durée, atmosphère et vitesse de chauffe sont déclarées non citées. La branche est rattachée à S800 pour la comparaison mais ses étapes sont propres ; l'avertissement du contrôle sur « pre_annealing_grinding » (paramètre absent du protocole hérité) est voulu : le broyage est une étape ajoutée."
+  },
+  {
+   "where": "S540 (sample_inventory)",
+   "issue": "L'article ne dit pas si S540 est un échantillon avec GO (série SX) ou un témoin sans GO (S0X) : la parenthèse « (α-Fe2O3, Supplementary Figure S1) » renvoie à la figure des témoins, alors que l'étiquette SX désigne les échantillons avec GO. Aucune branche n'est créée ; l'échantillon reste dans l'inventaire sans voie."
+  },
+  {
+   "where": "S600 characterizations FT-IR",
+   "issue": "La phrase « only epoxide and hydroxyl groups remained after annealing at 600°C » ne nomme pas S600 : elle est attribuée à S600 d'après la température de recuit citée."
+  },
+  {
+   "where": "S700 et S800 : ε′ et ε″ à 2 GHz (Results, Table 1)",
+   "issue": "Le texte dit « the ε′ of S700 and S800 are about 8 and 11 at 2 GHz, respectively » et « the ε″ are about 0.5 and 1.5 », alors que le Tableau 1 borne ε′ de S800 à 8.18 au plus et ε″ de S700 à 1.44 au moins : texte et tableau se contredisent. Les valeurs du Tableau 1 sont extraites telles quelles ; les valeurs du texte ne sont pas reprises comme résultats, aucun choix n'est fait entre les deux."
+  },
+  {
+   "where": "S600 Table 1, tanδE",
+   "issue": "La plage tanδE 0.28–0.43 ne se déduit pas des plages ε′ 16.88–24.44 et ε″ 1.21–7.61 de la même rangée (ε″/ε′ peut descendre vers 0.07) ; valeur recopiée telle quelle, contradiction interne de l'article."
+  },
+  {
+   "where": "Comparaison [Fe,Ni] commercial (Fig. 5b et 5c)",
+   "issue": "Le texte donne −7 dB (3.5 mm) puis −5 dB après chauffage ; la lecture des courbes des Fig. 5b et 5c donne environ −6.3 et −4.5 dB (écart de 10 %, lecture d'image à ± 0.3 dB). Les valeurs du texte sont gardées."
+  },
+  {
+   "where": "S700-10%GO material",
+   "issue": "L'article ne donne aucune phase pour l'échantillon à 10 % de GO (« the sample with 10% GO annealed at 700°C ») ; le nom du matériau ne retient donc pas Fe3O4 et la phase reste vide."
   }
  ]
 }

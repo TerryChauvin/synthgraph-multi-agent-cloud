@@ -1,0 +1,63 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4365402</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4365402 — Facile synthesis of iron oxides/reduced graphene oxide composites: application for electromagnetic wave absorption at high temperature.</h1>
+<h2>Voie : S90</h2>
+<pre class="mermaid">flowchart LR
+  R16188([&quot;iron(II) sulfate heptahydrate&lt;br/&gt;5.04 g&quot;]):::reactif
+  R16188 --&gt;|&quot;precursor&quot;| S19458
+  R16189([&quot;distilled water (dissolution of FeSO4·7H2O)&lt;br/&gt;20 mL&quot;]):::reactif
+  R16189 --&gt;|&quot;solvent&quot;| S19458
+  R16190([&quot;graphene oxide aqueous solution (4.0 mg mL−1)&lt;br/&gt;63 mL&quot;]):::reactif
+  R16190 --&gt;|&quot;precursor&quot;| S19458
+  S19458[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S19458 --&gt; S19459
+  S19459[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;concentration : 4 mg mL−1&lt;br/&gt;duration_ultrasonication : 30 min&lt;br/&gt;duration_stirring : 1 h&lt;br/&gt;stirring_speed : vigorous&quot;]:::etape
+  S19459 --&gt; S19460
+  S19460[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 90 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S19460 --&gt; M
+  M{{&quot;FeSO4·7H2O / graphene oxide dried precursor (S90)&lt;br/&gt;&quot;}}:::materiau
+  O77517[&quot;decomposition_onset_temperature : 430 °C&quot;]:::resultat
+  M -.-&gt; O77517
+  O77518[&quot;maximum_weight_loss_temperature : 538 °C&quot;]:::resultat
+  M -.-&gt; O77518
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : S500</h2>
+<pre class="mermaid">flowchart LR
+  R16191([&quot;S90&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16191 --&gt;|&quot;intermediate&quot;| S19461
+  R16192([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16192 --&gt;|&quot;gas&quot;| S19461
+  S19461[&quot;&lt;b&gt;1. load&lt;/b&gt;&quot;]:::etape
+  S19461 --&gt; S19462
+  S19462[&quot;&lt;b&gt;2. purge&lt;/b&gt;&lt;br/&gt;gas_flow : 500 sccm&lt;br/&gt;duration : 10 min&lt;br/&gt;atmosphere : high purity argon&quot;]:::etape
+  S19462 --&gt; S19463
+  S19463[&quot;&lt;b&gt;3. anneal&lt;/b&gt;&lt;br/&gt;temperature : 500 °C&lt;br/&gt;heating_rate : 3 °C/min&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : high purity argon&quot;]:::etape
+  S19463 --&gt; S19464
+  S19464[&quot;&lt;b&gt;4. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;atmosphere : protective gas&quot;]:::etape
+  S19464 --&gt; M
+  M{{&quot;α-Fe2O3/reduced graphene oxide composite&lt;br/&gt;α-Fe2O3/rGO&quot;}}:::materiau
+  O77519[&quot;phase : hematite (α-Fe2O3)&quot;]:::resultat
+  M -.-&gt; O77519
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12497{{&quot;S500&quot;}}:::materiau
+  B12498[&quot;S600&quot;]:::etape
+  B12497 --&gt;|&quot;temperature = 600 °C&quot;| B12498
+  B12499[&quot;S700&quot;]:::etape
+  B12497 --&gt;|&quot;temperature = 700 °C&quot;| B12499
+  B12500[&quot;S800&quot;]:::etape
+  B12497 --&gt;|&quot;temperature = 800 °C&quot;| B12500
+  B12503[&quot;S0X&quot;]:::etape
+  B12497 --&gt;|&quot;S90 = replaced by FeSO4·7H2O p…&quot;| B12503
+  B12501[&quot;S700-10%GO&quot;]:::etape
+  B12499 --&gt;|&quot;go_dosage = 10 %&quot;| B12501
+  B12502[&quot;S90-ground_800&quot;]:::etape
+  B12500 --&gt;|&quot;pre_annealing_grinding = grinding of S90 into pow…&quot;| B12502
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
