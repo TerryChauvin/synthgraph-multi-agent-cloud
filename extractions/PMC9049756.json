@@ -491,6 +491,33 @@
      "quote": "Cs3BiBr6 NCs 46.62 4.24 24.14 12.63 2.63 1.18",
      "value_num": 12.63,
      "unit": "ns"
+    },
+    {
+     "property": "PL_amplitude_alpha1",
+     "value_num": 46.62,
+     "unit": "%",
+     "quote": "Cs3BiBr6 NCs 46.62 4.24 24.14 12.63 2.63 1.18"
+    },
+    {
+     "property": "PL_amplitude_alpha2",
+     "value_num": 24.14,
+     "unit": "%",
+     "quote": "Cs3BiBr6 NCs 46.62 4.24 24.14 12.63 2.63 1.18"
+    },
+    {
+     "property": "PL_fit_chi_squared",
+     "value_num": 1.18,
+     "quote": "Cs3BiBr6 NCs 46.62 4.24 24.14 12.63 2.63 1.18"
+    },
+    {
+     "property": "solution_color_up_to_105C",
+     "value_text": "transparent up to 105 °C",
+     "quote": "When 1.5 mL of OA is used for the reaction, the color of the solution is transparent up to 105 °C. Upon heating, the solution color changes to white at approximately 135 °C and then changes to bright yellow at 160 °C, indicating the formation of Cs3BiBr6 NCs."
+    },
+    {
+     "property": "solution_color_at_135C",
+     "value_text": "white at approximately 135 °C",
+     "quote": "When 1.5 mL of OA is used for the reaction, the color of the solution is transparent up to 105 °C. Upon heating, the solution color changes to white at approximately 135 °C and then changes to bright yellow at 160 °C, indicating the formation of Cs3BiBr6 NCs."
     }
    ],
    "missing_fields": [
@@ -612,6 +639,23 @@
      "quote": "Cs3Bi2Br9 NPs 40.19 2.77 26.35 12.16 1.52 0.94",
      "value_num": 12.16,
      "unit": "ns"
+    },
+    {
+     "property": "PL_amplitude_alpha1",
+     "value_num": 40.19,
+     "unit": "%",
+     "quote": "Cs3Bi2Br9 NPs 40.19 2.77 26.35 12.16 1.52 0.94"
+    },
+    {
+     "property": "PL_amplitude_alpha2",
+     "value_num": 26.35,
+     "unit": "%",
+     "quote": "Cs3Bi2Br9 NPs 40.19 2.77 26.35 12.16 1.52 0.94"
+    },
+    {
+     "property": "PL_fit_chi_squared",
+     "value_num": 0.94,
+     "quote": "Cs3Bi2Br9 NPs 40.19 2.77 26.35 12.16 1.52 0.94"
     }
    ]
   },
@@ -813,7 +857,6 @@
     {
      "parameter": "temperature",
      "quote": "When the reaction temperature is set above 180 °C while in the absence of CsBr, the reaction solution becomes gray in color, and the XRD pattern indicates that metallic Bi is present, which indicates that the BiOBr phase is reduced to the metallic Bi phase in the absence of CsBr.",
-     "step_order": 3,
      "value_text": "above 180 °C",
      "parent_value": "135 °C"
     }
@@ -870,7 +913,7 @@
     "formula": "Cs3Bi2Br9",
     "family": "perovskite",
     "phase": "trigonal",
-    "morphology": "nanoplaquettes hexagonales de 200–400 nm"
+    "morphology": null
    },
    "quote": "When the temperature increases to approximately 170 °C, Cs3Bi2Br9 NPs are synthesized predominantly, as shown in the XRD patterns (Fig S4, ESI†).",
    "variations": [
@@ -914,14 +957,13 @@
     "formula": "BiOBr",
     "family": "autre",
     "phase": "tétragonal",
-    "morphology": "nanoplaquettes rectangulaires"
+    "morphology": null
    },
    "quote": "Fig. 3 displays XRD patterns of the Bi-based NCs taken 15 min from the time interval at 170 °C.",
    "variations": [
     {
      "parameter": "duration",
      "quote": "Fig. 3 displays XRD patterns of the Bi-based NCs taken 15 min from the time interval at 170 °C.",
-     "step_order": 3,
      "value_num": 15,
      "unit": "min",
      "parent_value": "60 min"
@@ -933,6 +975,40 @@
      "quote": "XRD reveals that BiOBr is predominantly formed during the early stages of the reaction.",
      "value_text": "BiOBr predominantly (early stage)"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Réaction à 170 °C ; une aliquote est prélevée après 15 min (refroidissement et purification éventuels avant la DRX non décrits).",
+     "quote": "aliquots are taken at different time intervals at a fixed temperature and crystal structure is investigated",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Fig. 3 displays XRD patterns of the Bi-based NCs taken 15 min from the time interval at 170 °C.",
+       "value_num": 170,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Fig. 3 displays XRD patterns of the Bi-based NCs taken 15 min from the time interval at 170 °C.",
+       "value_num": 15,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "atmosphere",
+      "stirring_speed",
+      "cooling",
+      "purification"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "refroidissement avant DRX",
+    "purification avant DRX"
    ]
   },
   {
@@ -940,18 +1016,17 @@
    "parent": "T170",
    "kind": "material",
    "material": {
-    "name": "bismuth oxybromide nanoplates",
+    "name": "Bi-based NCs (aliquote 30 min, BiOBr majoritaire d'après la Fig. 3)",
     "formula": "BiOBr",
     "family": "autre",
-    "phase": "tétragonal",
-    "morphology": "nanoplaquettes rectangulaires"
+    "phase": "BiOBr majoritaire (lecture de figure), raies faibles supplémentaires",
+    "morphology": null
    },
    "quote": "Fig. 3 Reaction time-dependent phase evolution. XRD patterns of Bi-based NCs synthesized at 170 °C with different time intervals.",
    "variations": [
     {
      "parameter": "duration",
      "quote": "Fig. 3 Reaction time-dependent phase evolution. XRD patterns of Bi-based NCs synthesized at 170 °C with different time intervals.",
-     "step_order": 3,
      "value_num": 30,
      "unit": "min",
      "parent_value": "60 min",
@@ -965,6 +1040,41 @@
      "value_text": "BiOBr reflections (about 11° and 32°) still strong; additional weak reflections near 13°, 29° and 30° 2θ",
      "from_figure": "Fig. 3"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Réaction à 170 °C ; une aliquote est prélevée après 30 min (refroidissement et purification éventuels avant la DRX non décrits).",
+     "quote": "aliquots are taken at different time intervals at a fixed temperature and crystal structure is investigated",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Fig. 3 Reaction time-dependent phase evolution. XRD patterns of Bi-based NCs synthesized at 170 °C with different time intervals.",
+       "value_num": 170,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Fig. 3 Reaction time-dependent phase evolution. XRD patterns of Bi-based NCs synthesized at 170 °C with different time intervals.",
+       "value_num": 30,
+       "unit": "min",
+       "from_figure": "Fig. 3"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "atmosphere",
+      "stirring_speed",
+      "cooling",
+      "purification"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "refroidissement avant DRX",
+    "purification avant DRX"
    ]
   },
   {
@@ -976,14 +1086,13 @@
     "formula": "Cs3Bi2Br9",
     "family": "perovskite",
     "phase": "trigonal",
-    "morphology": "nanoplaquettes hexagonales de 200–400 nm"
+    "morphology": null
    },
    "quote": "After 90 minutes of reaction, BiOBr NPs are completely converted into Cs3Bi2Br9 NCs.",
    "variations": [
     {
      "parameter": "duration",
      "quote": "After 90 minutes of reaction, BiOBr NPs are completely converted into Cs3Bi2Br9 NCs.",
-     "step_order": 3,
      "value_num": 90,
      "unit": "min",
      "parent_value": "60 min"
@@ -1001,6 +1110,40 @@
      "value_text": "reflections marked as CsBr at about 29° and 41° 2θ",
      "from_figure": "Fig. 3"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Réaction à 170 °C ; une aliquote est prélevée après 90 min (refroidissement et purification éventuels avant la DRX non décrits).",
+     "quote": "aliquots are taken at different time intervals at a fixed temperature and crystal structure is investigated",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Fig. 3 Reaction time-dependent phase evolution. XRD patterns of Bi-based NCs synthesized at 170 °C with different time intervals.",
+       "value_num": 170,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "After 90 minutes of reaction, BiOBr NPs are completely converted into Cs3Bi2Br9 NCs.",
+       "value_num": 90,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "atmosphere",
+      "stirring_speed",
+      "cooling",
+      "purification"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "refroidissement avant DRX",
+    "purification avant DRX"
    ]
   },
   {
@@ -1012,14 +1155,13 @@
     "formula": "Cs3Bi2Br9",
     "family": "perovskite",
     "phase": "trigonal",
-    "morphology": "nanoplaquettes hexagonales de 200–400 nm"
+    "morphology": null
    },
    "quote": "Fig. 3 Reaction time-dependent phase evolution. XRD patterns of Bi-based NCs synthesized at 170 °C with different time intervals.",
    "variations": [
     {
      "parameter": "duration",
      "quote": "Fig. 3 Reaction time-dependent phase evolution. XRD patterns of Bi-based NCs synthesized at 170 °C with different time intervals.",
-     "step_order": 3,
      "value_num": 120,
      "unit": "min",
      "parent_value": "60 min",
@@ -1033,6 +1175,41 @@
      "value_text": "Cs3Bi2Br9 pattern, with CsBr reflections marked at about 29° and 41° 2θ",
      "from_figure": "Fig. 3"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Réaction à 170 °C ; une aliquote est prélevée après 120 min (refroidissement et purification éventuels avant la DRX non décrits).",
+     "quote": "aliquots are taken at different time intervals at a fixed temperature and crystal structure is investigated",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Fig. 3 Reaction time-dependent phase evolution. XRD patterns of Bi-based NCs synthesized at 170 °C with different time intervals.",
+       "value_num": 170,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Fig. 3 Reaction time-dependent phase evolution. XRD patterns of Bi-based NCs synthesized at 170 °C with different time intervals.",
+       "value_num": 120,
+       "unit": "min",
+       "from_figure": "Fig. 3"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "atmosphere",
+      "stirring_speed",
+      "cooling",
+      "purification"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "refroidissement avant DRX",
+    "purification avant DRX"
    ]
   },
   {
@@ -1040,10 +1217,10 @@
    "parent": "Cs3BiBr6_NC",
    "kind": "material",
    "material": {
-    "name": "metallic bismuth",
-    "formula": "Bi",
-    "family": "nanoparticule_metallique",
-    "phase": "bismuth métallique",
+    "name": "produit de la synthèse à 200 °C (Bi et/ou Cs3Bi2Br9, non tranché)",
+    "formula": null,
+    "family": "autre",
+    "phase": "phase Bi « can appear » (Fig. S5 non disponible) ; contredit par « up to 300 °C » sans autre phase",
     "morphology": null
    },
    "quote": "Fig S5. XRD patterns of sample synthesized at 200 oC for 1 h in the presence of 1.5 mL of OA.",
@@ -1074,10 +1251,10 @@
     "formula": "BiOBr",
     "family": "autre",
     "phase": "tétragonal",
-    "morphology": "nanoplaquettes rectangulaires"
+    "morphology": null
    },
    "quote": "If Cs and Bi are used at a stoichiometric ratio, the phase transformation of BiOBr to Cs3Bi2Br9 is delayed and a relatively large amount of BiOBr remains as a final product.",
-   "succeeded": false,
+   "succeeded": null,
    "variations": [
     {
      "parameter": "cesium bromide",
@@ -1110,7 +1287,6 @@
     {
      "parameter": "temperature",
      "quote": "Fig. S6 TEM images of small Cs3Bi2Br9 NCs synthesized at 100 oC for 30 min with 15 mL of OA.",
-     "step_order": 3,
      "value_num": 100,
      "unit": "°C",
      "parent_value": "160 °C"
@@ -1118,7 +1294,6 @@
     {
      "parameter": "duration",
      "quote": "Fig. S6 TEM images of small Cs3Bi2Br9 NCs synthesized at 100 oC for 30 min with 15 mL of OA.",
-     "step_order": 3,
      "value_num": 30,
      "unit": "min",
      "parent_value": "60 min"
@@ -1224,7 +1399,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Cs3BiBr6_NC",
-   "text": "Probablement, l'eau et l'oxygène résiduels (BiBr3 est hygroscopique et s'hydrolyse facilement) hydrolysent BiBr3 en BiOBr tant que CsBr solide, très peu soluble, n'est pas disponible ; le dégazage à 105 °C réduit mais n'élimine pas cette voie. Quand la température monte, l'oleylamine et l'acide oléique solubilisent un peu de CsBr (sous forme de complexes oleylammonium/oléate), ce qui permet la réaction CsBr + BiOBr/BiBr3 et la formation d'une phase riche en Cs (Cs3BiBr6) à partir de petits germes, puis d'une phase plus pauvre en Cs (Cs3Bi2Br9) par croissance. On attend que le rapport Cs/Bi du produit suive la quantité de CsBr dissous plutôt que la charge totale en CsBr.",
+   "text": "Hypothèse (Claude, non tirée de l'article) : des traces d'eau (une dizaine de microlitres suffisent pour hydrolyser tout le BiBr3 ; eau des réactifs techniques, humidité de BiBr3, ou eau libérée par la condensation acide oléique + oleylamine) hydrolysent Bi(III) en nanoplaquettes de BiOBr, produit cinétique, tant que CsBr solide, très peu soluble, ne fournit pas de Cs+. La dissolution de CsBr (par échange avec l'oléate d'oleylammonium) serait l'étape limitante : le rapport Cs/Bi du produit suivrait le Cs dissous, non la charge en CsBr. Au-delà d'environ 160 °C, BiOBr se redissoudrait (re-bromation) puis reprécipiterait avec Cs+, en Cs3BiBr6 quand le Cs dissous est abondant, en Cs3Bi2Br9 quand il est limitant ; sans CsBr, l'oleylamine réduit Bi(III) en Bi(0) au-dessus de 180 °C. Point à revoir dans l'explication des auteurs : si l'acide oléique ne faisait que dissoudre davantage CsBr, 15 mL d'acide oléique devraient favoriser la phase riche en Cs, or c'est Cs3Bi2Br9, pauvre en Cs, qui se forme ; l'excès d'acide (≈ 10 : 1 par rapport à l'amine) agit sans doute aussi sur la spéciation du bismuth et du bromure.",
    "quote": null
   },
   {
@@ -1236,7 +1411,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "L'article ne mentionne aucune précaution. À prévoir : BiBr3 est corrosif et sensible à l'humidité ; l'1-octadécène, l'oleylamine (corrosive, irritante) et l'acide oléique sont chauffés à 160 °C et plus (jusqu'à 300 °C dans la série en température), donc risque de brûlures et de vapeurs ; le dégazage sous vide d'un mélange chaud demande un piège froid et une verrerie intacte ; le toluène et le méthanol utilisés pour la purification sont inflammables et toxiques ; les nanopoudres de Cs/Bi doivent être manipulées sous hotte.",
+   "text": "L'article ne mentionne aucune précaution. À prévoir : BiBr3 est corrosif et sensible à l'humidité ; l'1-octadécène, l'oleylamine (corrosive, irritante) et l'acide oléique sont chauffés à 160 °C et plus (jusqu'à 300 °C dans la série en température), donc risque de brûlures et de vapeurs ; le dégazage sous vide d'un mélange chaud demande un piège froid et une verrerie intacte ; le toluène et le méthanol utilisés pour la purification sont inflammables et toxiques ; les nanopoudres de Cs/Bi doivent être manipulées sous hotte. L'hydrolyse de BiBr3 en BiOBr libère du HBr, aspiré pendant le dégazage à 105 °C vers la rampe à vide et la pompe : prévoir un piège froid et un piège basique.",
    "quote": null
   },
   {
@@ -1256,6 +1431,66 @@
    "route": null,
    "text": "Les figures S1 à S6 de l'annexe (images TEM, diffractogrammes) ne sont pas dans le dépôt : seules leurs légendes sont disponibles. Les résultats de la série en température (Fig. S4, S5) et de l'échantillon à 100 °C (Fig. S6) reposent donc sur le texte et les légendes. Les valeurs de la série en durée lues sur la Fig. 3 sont qualitatives.",
    "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T170_t15min",
+   "text": "Cette aliquote n'a qu'une étape propre (réaction à 170 °C, prélèvement à t) : l'article ne décrit ni son refroidissement ni sa purification avant la DRX, et ne dit pas qu'elle a suivi les étapes 4 à 7 du protocole de base. Le « Identique à la voie T170, sauf » de la fiche ne vaut donc que pour les conditions listées.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T170_t30min",
+   "text": "Cette aliquote n'a qu'une étape propre (réaction à 170 °C, prélèvement à t) : l'article ne décrit ni son refroidissement ni sa purification avant la DRX, et ne dit pas qu'elle a suivi les étapes 4 à 7 du protocole de base. Le « Identique à la voie T170, sauf » de la fiche ne vaut donc que pour les conditions listées.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T170_t90min",
+   "text": "Cette aliquote n'a qu'une étape propre (réaction à 170 °C, prélèvement à t) : l'article ne décrit ni son refroidissement ni sa purification avant la DRX, et ne dit pas qu'elle a suivi les étapes 4 à 7 du protocole de base. Le « Identique à la voie T170, sauf » de la fiche ne vaut donc que pour les conditions listées.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T170_t120min",
+   "text": "Cette aliquote n'a qu'une étape propre (réaction à 170 °C, prélèvement à t) : l'article ne décrit ni son refroidissement ni sa purification avant la DRX, et ne dit pas qu'elle a suivi les étapes 4 à 7 du protocole de base. Le « Identique à la voie T170, sauf » de la fiche ne vaut donc que pour les conditions listées.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NP_100C_30min",
+   "text": "Cette voie n'a qu'une étape propre (100 °C, 30 min, 15 mL d'OA) : le dégazage à 105 °C et la purification du protocole parent ne sont pas attribués à l'échantillon, l'article ne les décrivant pas. Le « Identique à la voie Cs3Bi2Br9_NP, sauf température » de la fiche est trompeur sur ce point.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Bi_noCsBr_above180C",
+   "text": "Cette voie n'a qu'une étape propre (chauffage au-dessus de 180 °C sans CsBr) : durée, dégazage et purification ne sont pas donnés. Le « Identique à la voie BiOBr_NP, sauf » de la fiche ne vaut que pour les conditions listées.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "T200",
+   "text": "Contradiction de l'article : la Fig. S5 (200 °C, 1 h, 1.5 mL d'OA, avec CsBr) est citée pour dire que la phase Bi « can appear » en présence de CsBr, alors que le texte dit ailleurs que Cs3Bi2Br9 reste majoritaire jusqu'à 300 °C sans formation de Bi métallique. La composition du produit à 200 °C n'est pas tranchée ; la figure n'est pas disponible.",
+   "quote": "Even in the presence of CsBr, the Bi phase can appear at a higher temperature and a lower amount of OA in the reaction mixture"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cs3BiBr6_NC",
+   "text": "Table S1 (durées de vie de photoluminescence) : les τave déclarés (2,63 ns pour Cs3BiBr6, 1,52 ns pour Cs3Bi2Br9) sont inférieurs aux deux composantes τ1 et τ2 (4,24 et 12,63 ns ; 2,77 et 12,16 ns), ce qu'aucune moyenne ne permet ; recalculés, ils vaudraient environ 7,1 ou 9,3 ns (Cs3BiBr6) et 6,5 ou 9,7 ns (Cs3Bi2Br9). Les amplitudes α1 + α2 ne font pas 100 % (70,76 % et 66,54 %), ce qui laisse penser à une troisième composante non déclarée. La conclusion « much longer » repose sur ces τave : à utiliser avec prudence, valeurs recopiées telles quelles.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cs3BiBr6_NC",
+   "text": "À 160 °C, condition de cette voie, l'article dit à la fois que BiOBr est formé majoritairement « up to a reaction temperature of 160 °C » sans réaction entre CsBr et BiBr3, et que Cs3BiBr6 est majoritaire à 160 °C avec BiOBr résiduel ; la phase obtenue dépend probablement de la rampe et de la température réelle du liquide, non précisées. Autres réserves : le rapport Br/Bi mesuré par EDS (≈ 4,8 après normalisation à Bi = 1, au lieu de 6) laisse un déficit en bromure que l'article ne commente pas ; la fiche JCPDS du texte (73-0348) diffère de celle de la Fig. 3 (78-0348).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves du relecteur scientifique sur l'interprétation : (1) le décalage vers le bleu de Cs3BiBr6 (435 nm) est attribué à la petite taille, mais Cs3BiBr6 est un composé 0D à octaèdres isolés dont l'émission est intrinsèquement plus bleue (des nanocristaux de 1,5–3 nm émettent aussi vers 438 nm, Tang et al., J. Mater. Chem. C 9, 158–163, 2021) : composition et taille changent ensemble entre les deux échantillons. (2) L'origine de la photoluminescence n'est pas discriminée (pas de témoin BiBr3 seul ni de mesure du surnageant). (3) Les centrifugations courtes (3000 rpm 15 s ; 8000 rpm 3 min) ne séparent des nanocristaux de 14 nm ou des nanoplaquettes de BiOBr que s'ils sont agrégés ; l'article ne décrit pas d'antisolvant.",
+   "quote": null
   }
  ],
  "method_sources": [],
@@ -1270,7 +1505,7 @@
   },
   {
    "where": "T170_t15min, t30min, t90min, t120min",
-   "issue": "Les prélèvements sont des aliquotes d'une même réaction à 170 °C (« aliquots are taken at different time intervals at a fixed temperature »). L'article ne dit pas comment ils ont été refroidis ni purifiés avant la DRX ; l'héritage des étapes de T170 est donc une simplification (le rattachement à T170 sert à comparer la durée). Les durées 30 et 120 min, et les observations de la figure pour 30, 90 et 120 min, sont lues sur la Fig. 3 (étiquettes de l'axe, précision : phases identifiées qualitativement, positions 2θ à ± 1°). La phrase « taken 15 min from the time interval » est lue comme un pas de 15 min ; 15 min est aussi l'étiquette du premier diffractogramme. Le texte n'indique pas quels temps sont « early stages » : BiOBr majoritaire est attribué à 15 min seulement."
+   "issue": "Les prélèvements sont des aliquotes d'une même réaction à 170 °C (« aliquots are taken at different time intervals at a fixed temperature »). L'article ne décrit ni refroidissement ni purification avant la DRX : les quatre branches ont donc une seule étape propre (réaction à 170 °C, aliquote à t) et n'héritent PAS des étapes 4 à 7 du protocole de base (la centrifugation de base jette justement BiOBr), refroidissement et purification déclarés non cités. Les durées 30 et 120 min, et les observations de la figure pour 30, 90 et 120 min, sont lues sur la Fig. 3 (étiquettes de l'axe ; phases identifiées qualitativement, positions 2θ à ± 1°). La phrase « taken 15 min from the time interval » est lue comme un pas de 15 min ; 15 min est aussi l'étiquette du premier diffractogramme. Le texte n'indique pas quels temps sont « early stages » : BiOBr majoritaire est attribué à 15 min seulement. Morphologie et taille non données pour ces aliquotes (celles des nanoplaquettes viennent d'autres échantillons)."
   },
   {
    "where": "BiOBr_NP",
@@ -1278,19 +1513,19 @@
   },
   {
    "where": "Bi_noCsBr_above180C",
-   "issue": "Seul le seuil « above 180 °C » est donné (pas de température précise, ni durée, ni purification) ; la voie a une seule étape de chauffage avec la température en value_text. Même chose pour T200 (légende de la Fig. S5 : 200 °C, 1 h, 1.5 mL OA) : le texte dit seulement que la phase Bi « can appear »."
+   "issue": "Seul le seuil « above 180 °C » est donné (pas de température précise, ni durée, ni purification) ; la voie a une seule étape propre de chauffage avec la température en value_text et n'hérite pas des étapes de BiOBr_NP : la mention « Identique à la voie BiOBr_NP, sauf » de la fiche ne vaut que pour les conditions listées. T200 : légende de la Fig. S5 (200 °C, 1 h, 1.5 mL OA) ; le texte dit seulement que la phase Bi « can appear », alors qu'un autre passage dit que Cs3Bi2Br9 reste majoritaire jusqu'à 300 °C « without the formation of other phases of Bi-based materials » : contradiction interne, matériau de T200 non tranché (Bi et/ou Cs3Bi2Br9), Fig. S5 non disponible."
   },
   {
    "where": "Stoich_CsBr",
-   "issue": "Le rapport « stoichiometric » entre Cs et Bi n'est pas chiffré (quelle stœchiométrie : Cs3BiBr6 ou Cs3Bi2Br9 ?) et la température, la durée et les autres conditions de cet essai ne sont pas données. La voie est rattachée à la voie de base pour la seule variation de CsBr."
+   "issue": "Le rapport « stoichiometric » entre Cs et Bi n'est pas chiffré (quelle stœchiométrie : Cs3BiBr6 ou Cs3Bi2Br9 ?) et la température, la durée et les autres conditions de cet essai ne sont pas données. La voie est rattachée à la voie de base pour la seule variation de CsBr. L'article décrit une transformation BiOBr vers Cs3Bi2Br9 « delayed » avec BiOBr restant en produit final, pas un échec de synthèse : succeeded laissé vide (« échec » était une lecture de l'extracteur) ; morphologie non donnée pour cet essai."
   },
   {
    "where": "NP_100C_30min",
-   "issue": "La légende de la Fig. S6 donne 100 °C, 30 min, 15 mL d'OA, alors que le protocole hérité dégaze déjà à 105 °C ; l'article ne dit pas si cet échantillon a suivi le dégazage, ni la purification. La voie n'a donc qu'une étape propre. Le texte dit « even below 100 °C » pour la couleur jaune."
+   "issue": "La légende de la Fig. S6 donne 100 °C, 30 min, 15 mL d'OA, alors que le protocole de base dégaze déjà à 105 °C ; l'article ne dit pas si cet échantillon a suivi le dégazage, ni la purification. La voie n'a donc qu'une étape propre et n'hérite pas du reste du protocole : la mention « Identique à la voie Cs3Bi2Br9_NP, sauf » de la fiche ne vaut que pour les conditions listées. Le texte dit « even below 100 °C » pour la couleur jaune."
   },
   {
    "where": "Table S1 (durées de vie de photoluminescence)",
-   "issue": "Les amplitudes α1 + α2 ne font pas 100 % (70,76 % pour Cs3BiBr6, 66,54 % pour Cs3Bi2Br9) et τave (2,63 ns et 1,52 ns) ne correspond pas à la moyenne pondérée de τ1 et τ2 ; les valeurs sont recopiées telles qu'écrites. Le texte dit que le déclin de Cs3BiBr6 est « much longer » alors que les τave sont 2,63 et 1,52 ns."
+   "issue": "Les amplitudes α1 + α2 ne font pas 100 % (70,76 % pour Cs3BiBr6, 66,54 % pour Cs3Bi2Br9) et τave (2,63 ns et 1,52 ns) ne correspond pas à la moyenne pondérée de τ1 et τ2 ; les valeurs sont recopiées telles qu'écrites. Le texte dit que le déclin de Cs3BiBr6 est « much longer » alors que les τave sont 2,63 et 1,52 ns. α1, α2 et χ² sont maintenant extraits comme résultats (mêmes rangées de la Table S1)."
   },
   {
    "where": "Cs3BiBr6_NC (EDS)",
