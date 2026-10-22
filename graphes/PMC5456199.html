@@ -1,0 +1,94 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5456199</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5456199 — Methylcellulose-Directed Synthesis of Nanocrystalline Zeolite NaA with High CO₂ Uptake.</h1>
+<h2>Voie : PSS</h2>
+<pre class="mermaid">flowchart LR
+  R16194([&quot;colloidal silica (Ludox HS-30)&lt;br/&gt;27 g&quot;]):::reactif
+  R16194 --&gt;|&quot;precursor&quot;| S19468
+  R16195([&quot;sodium aluminate (Nalco 680)&lt;br/&gt;10.9 g&quot;]):::reactif
+  R16195 --&gt;|&quot;precursor&quot;| S19468
+  R16196([&quot;sodium hydroxide&lt;br/&gt;20 g&quot;]):::reactif
+  R16196 --&gt;|&quot;base&quot;| S19468
+  R16197([&quot;double-deionized water&lt;br/&gt;161 g&quot;]):::reactif
+  R16197 --&gt;|&quot;solvent&quot;| S19468
+  S19468[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S19468 --&gt; S19469
+  S19469[&quot;&lt;b&gt;2. age&lt;/b&gt;&lt;br/&gt;temperature : 298 K&lt;br/&gt;duration : 20 h&lt;br/&gt;stirring_speed : vigorous stirring&quot;]:::etape
+  S19469 --&gt; M
+  M{{&quot;aged Na2O-SiO2-Al2O3-H2O precursor solution syste…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : NZ040</h2>
+<pre class="mermaid">flowchart LR
+  R16198([&quot;aged precursor solution system (PSS)&lt;br/&gt;16.5 g&quot;]):::reactif
+  R16198 --&gt;|&quot;intermediate&quot;| S19470
+  R16199([&quot;methylcellulose Methocel 90 HG (MW 87000)&lt;br/&gt;0.4 g&quot;]):::reactif
+  R16199 --&gt;|&quot;polymer&quot;| S19470
+  R16200([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16200 --&gt;|&quot;wash&quot;| S19470
+  S19470[&quot;&lt;b&gt;1. dry&lt;/b&gt;&lt;br/&gt;temperature : 333 K&lt;br/&gt;duration : overnight&lt;br/&gt;pressure : vacuum&quot;]:::etape
+  S19470 --&gt; S19471
+  S19471[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;temperature : 313 K&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S19471 --&gt; S19472
+  S19472[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;stirring_speed : vigorous manual stirring&quot;]:::etape
+  S19472 --&gt; S19473
+  S19473[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;temperature : 278 K&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S19473 --&gt; S19474
+  S19474[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 355 K&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S19474 --&gt; S19475
+  S19475[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized (DI) water&lt;br/&gt;repetitions : several times&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S19475 --&gt; S19476
+  S19476[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 6000 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S19476 --&gt; S19477
+  S19477[&quot;&lt;b&gt;8. disperse&lt;/b&gt;&lt;br/&gt;ph : below 8 (supernatant, end poi…&quot;]:::etape
+  S19477 --&gt; S19478
+  S19478[&quot;&lt;b&gt;9. dry&lt;/b&gt;&lt;br/&gt;temperature : 373 K&lt;br/&gt;duration : overnight&quot;]:::etape
+  S19478 --&gt; M
+  M{{&quot;nanocrystalline zeolite NaA (zeolite A, LTA)&lt;br/&gt;&quot;}}:::materiau
+  O77559[&quot;mean_particle_diameter_DLS : 100 nm&quot;]:::resultat
+  M -.-&gt; O77559
+  O77560[&quot;zeta_potential : -48 mV&quot;]:::resultat
+  M -.-&gt; O77560
+  O77561[&quot;external_surface_area_BET_N2_77K : 61 m2 g−1&quot;]:::resultat
+  M -.-&gt; O77561
+  O77562[&quot;MC_content_of_PSS : 3.5 %&quot;]:::resultat
+  M -.-&gt; O77562
+  O77563[&quot;CO2_uptake_293K_100kPa : 4.9 mmol/g&quot;]:::resultat
+  M -.-&gt; O77563
+  O77564[&quot;crystal_size_SEM : around 100 nm&quot;]:::resultat
+  M -.-&gt; O77564
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12505{{&quot;NZ040&quot;}}:::materiau
+  B12506[&quot;NZ010&quot;]:::etape
+  B12505 --&gt;|&quot;methylcellulose Methocel… = 0.1 g&quot;| B12506
+  B12507[&quot;NZ020&quot;]:::etape
+  B12505 --&gt;|&quot;methylcellulose Methocel… = 0.2 g&quot;| B12507
+  B12508[&quot;NZ060&quot;]:::etape
+  B12505 --&gt;|&quot;methylcellulose Methocel… = 0.6 g&quot;| B12508
+  B12509[&quot;NZ080&quot;]:::etape
+  B12505 --&gt;|&quot;methylcellulose Methocel… = 0.8 g&quot;| B12509
+  B12510[&quot;NZ100&quot;]:::etape
+  B12505 --&gt;|&quot;methylcellulose Methocel… = 1 g&quot;| B12510
+  B12511[&quot;Z0&quot;]:::etape
+  B12505 --&gt;|&quot;methylcellulose Methocel… = absent&quot;| B12511
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : NZ040_calcined</h2>
+<pre class="mermaid">flowchart LR
+  R16201([&quot;NZ040 zeolite powder (washed and dried)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16201 --&gt;|&quot;intermediate&quot;| S19485
+  S19485[&quot;&lt;b&gt;1. calcine&lt;/b&gt;&lt;br/&gt;heating_rate : 1 K/min&lt;br/&gt;temperature : 773 K&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S19485 --&gt; M
+  M{{&quot;calcined nanocrystalline zeolite NaA&lt;br/&gt;&quot;}}:::materiau
+  O77626[&quot;hydroxyl_groups : most O–H groups lost compared…&quot;]:::resultat
+  M -.-&gt; O77626
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
