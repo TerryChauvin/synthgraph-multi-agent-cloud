@@ -1,0 +1,119 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9418562</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9418562 — Gold nanoparticle assisted synthesis of MoS2 monolayers by chemical vapor deposition.</h1>
+<h2>Voie : MoS2_AuNP60</h2>
+<pre class="mermaid">flowchart LR
+  R15816([&quot;gold nanoparticles (citrate-stabilized collo…&lt;br/&gt;100 μl&quot;]):::reactif
+  R15816 --&gt;|&quot;catalyst&quot;| S19050
+  R15817([&quot;poly-l-lysine solution&lt;br/&gt;60 μL&quot;]):::reactif
+  R15817 --&gt;|&quot;adhesion_promoter&quot;| S19050
+  R15818([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15818 --&gt;|&quot;wash&quot;| S19050
+  R15819([&quot;iso-propanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15819 --&gt;|&quot;wash&quot;| S19050
+  R15820([&quot;water (rinsing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15820 --&gt;|&quot;wash&quot;| S19050
+  R15821([&quot;N2 gas (drying)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15821 --&gt;|&quot;gas&quot;| S19050
+  R15822([&quot;SiO2/Si substrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15822 --&gt;|&quot;substrate&quot;| S19050
+  R15823([&quot;perylene-3,4,9,10-tetracarboxylic dianhydrid…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15823 --&gt;|&quot;promoter&quot;| S19050
+  R15824([&quot;sulfur powder&lt;br/&gt;175 mg&quot;]):::reactif
+  R15824 --&gt;|&quot;precursor&quot;| S19050
+  R15825([&quot;molybdenum trioxide powder&lt;br/&gt;50 mg&quot;]):::reactif
+  R15825 --&gt;|&quot;precursor&quot;| S19050
+  R15826([&quot;nitrogen (carrier gas)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15826 --&gt;|&quot;gas&quot;| S19050
+  S19050[&quot;&lt;b&gt;1. clean&lt;/b&gt;&lt;br/&gt;wash_solvent : acetone and iso-propanol&quot;]:::etape
+  S19050 --&gt; S19051
+  S19051[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&lt;br/&gt;volume : 60 μL&lt;br/&gt;concentration : 0.1 % w/v&quot;]:::etape
+  S19051 --&gt; S19052
+  S19052[&quot;&lt;b&gt;3. rinse&lt;/b&gt;&lt;br/&gt;wash_solvent : water&quot;]:::etape
+  S19052 --&gt; S19053
+  S19053[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&lt;br/&gt;volume : 100 μL&lt;br/&gt;nanoparticle_diameter : 60 nm&lt;br/&gt;number_of_drop_casts : one drop-casting&quot;]:::etape
+  S19053 --&gt; S19054
+  S19054[&quot;&lt;b&gt;5. rinse&lt;/b&gt;&lt;br/&gt;wash_solvent : water&lt;br/&gt;delay_before_rinse : 60 s&quot;]:::etape
+  S19054 --&gt; S19055
+  S19055[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;drying_gas : N2 gas&quot;]:::etape
+  S19055 --&gt; S19056
+  S19056[&quot;&lt;b&gt;7. deposit&lt;/b&gt;&lt;br/&gt;solvent : water&quot;]:::etape
+  S19056 --&gt; S19057
+  S19057[&quot;&lt;b&gt;8. load&lt;/b&gt;&quot;]:::etape
+  S19057 --&gt; S19058
+  S19058[&quot;&lt;b&gt;9. heat&lt;/b&gt;&lt;br/&gt;temperature_t2 : 785 °C&lt;br/&gt;duration_ramp : 20 min&lt;br/&gt;gas_flow : 300 sccm&lt;br/&gt;pressure : atmospheric pressure&quot;]:::etape
+  S19058 --&gt; S19059
+  S19059[&quot;&lt;b&gt;10. heat&lt;/b&gt;&lt;br/&gt;temperature_t1 : 140 °C&lt;br/&gt;duration_stabilization_t2 : 5 min&lt;br/&gt;gas_flow_direction : inverted: injected from the s…&quot;]:::etape
+  S19059 --&gt; S19060
+  S19060[&quot;&lt;b&gt;11. react&lt;/b&gt;&lt;br/&gt;duration : 10 min&lt;br/&gt;temperature : 785 °C&lt;br/&gt;gas_flow : 300 sccm&quot;]:::etape
+  S19060 --&gt; S19061
+  S19061[&quot;&lt;b&gt;12. cool&lt;/b&gt;&lt;br/&gt;temperature_final : room temperature&lt;br/&gt;atmosphere : nitrogen flow&quot;]:::etape
+  S19061 --&gt; M
+  M{{&quot;monolayer MoS2 flakes grown on SiO2/Si with 60 nm…&lt;br/&gt;MoS2&quot;}}:::materiau
+  O76103[&quot;flake_lateral_size_max : 20 μm&quot;]:::resultat
+  M -.-&gt; O76103
+  O76104[&quot;flake_lateral_size_average : 20 μm&quot;]:::resultat
+  M -.-&gt; O76104
+  O76105[&quot;flake_families : three families: irregular mon…&quot;]:::resultat
+  M -.-&gt; O76105
+  O76106[&quot;hexagonal_island_average_size : 347 nm&quot;]:::resultat
+  M -.-&gt; O76106
+  O76107[&quot;hexagonal_island_fraction_0deg_rot… : 95 %&quot;]:::resultat
+  M -.-&gt; O76107
+  O76108[&quot;triangular_island_average_size : 84 nm&quot;]:::resultat
+  M -.-&gt; O76108
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12142{{&quot;MoS2_AuNP60&quot;}}:::materiau
+  B12143[&quot;MoS2_AuNP40&quot;]:::etape
+  B12142 --&gt;|&quot;nanoparticle_diameter = 40 nm&quot;| B12143
+  B12144[&quot;MoS2_AuNP100&quot;]:::etape
+  B12142 --&gt;|&quot;nanoparticle_diameter = 100 nm&quot;| B12144
+  B12145[&quot;MoS2_AuNP60_2dropcasts&quot;]:::etape
+  B12142 --&gt;|&quot;number_of_drop_casts = two drop-casts of 100 µL…&quot;| B12145
+  B12146[&quot;MoS2_AuNP60_4dropcasts&quot;]:::etape
+  B12142 --&gt;|&quot;number_of_drop_casts = four drop-casts (400 µL …&quot;| B12146
+  B12147[&quot;MoS2_noAuNP&quot;]:::etape
+  B12142 --&gt;|&quot;gold nanoparticles (citr… = absent&quot;| B12147
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : FET_AuNP_MoS2</h2>
+<pre class="mermaid">flowchart LR
+  R15827([&quot;MoS2_AuNP60 (monolayer MoS2 flakes grown wit…&lt;br/&gt;monolayer flakes on the SiO2/…&quot;]):::reactif
+  R15827 --&gt;|&quot;intermediate&quot;| S19077
+  R15828([&quot;SiO2/p+-Si substrate (backgate)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15828 --&gt;|&quot;substrate&quot;| S19077
+  R15829([&quot;nickel (source/drain contact, lower layer)&lt;br/&gt;20 nm&quot;]):::reactif
+  R15829 --&gt;|&quot;electrode&quot;| S19077
+  R15830([&quot;gold (source/drain contact, upper layer)&lt;br/&gt;100 nm&quot;]):::reactif
+  R15830 --&gt;|&quot;electrode&quot;| S19077
+  S19077[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;thickness_ni : 20 nm&lt;br/&gt;thickness_au : 100 nm&quot;]:::etape
+  S19077 --&gt; M
+  M{{&quot;back-gated MoS2 field-effect transistor (MoS2 gro…&lt;br/&gt;&quot;}}:::materiau
+  O76171[&quot;field_effect_mobility : 1 cm2 V−1 s−1&quot;]:::resultat
+  M -.-&gt; O76171
+  O76172[&quot;transconductance_gm_over_W : 1.12 × 10−9 S μm−1&quot;]:::resultat
+  M -.-&gt; O76172
+  O76173[&quot;threshold_voltage : 4.9 V&quot;]:::resultat
+  M -.-&gt; O76173
+  O76174[&quot;channel_length : 10 μm&quot;]:::resultat
+  M -.-&gt; O76174
+  O76175[&quot;p_type_doping_estimate : 1.85 × 10^12 cm−2 (exposant a…&quot;]:::resultat
+  M -.-&gt; O76175
+  O76176[&quot;threshold_voltage_difference_with_… : 24.9 V&quot;]:::resultat
+  M -.-&gt; O76176
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12148{{&quot;FET_AuNP_MoS2&quot;}}:::materiau
+  B12149[&quot;FET_noAuNP_MoS2&quot;]:::etape
+  B12148 --&gt;|&quot;MoS2_AuNP60 (monolayer M… = replaced by MoS2 flakes …&quot;| B12149
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
