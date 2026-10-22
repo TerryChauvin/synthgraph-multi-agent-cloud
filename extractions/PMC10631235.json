@@ -279,12 +279,21 @@
    ]
   },
   {
-   "sample": "alloys x = 0.1, 0.3, 0.4, 0.6, 0.8, 0.9 of the Fig. 5 / Fig. S15 series",
-   "defined_in": "Fig. 5 and Fig. S15 captions",
+   "sample": "alloys x = 0.1, 0.3, 0.4, 0.6, 0.8, 0.9 of the Fig. 5 series (x = mole fraction of Se)",
+   "defined_in": "Fig. 5 caption (Fig. 5B and 5C plot x = 0 to 1)",
    "route": null,
-   "why": "compositions intermédiaires de la série absorption/luminescence : seules les valeurs graphiques de la Fig. 5 existent, aucun protocole propre ; non retenues comme voies",
+   "why": "compositions intermédiaires de la série absorption/luminescence de la Fig. 5 : aucun résultat chiffré dans le texte, seulement des points de graphique (±5 nm) et la Fig. S15 est absente du dépôt ; aucune branche créée, le rapport des deux précurseurs n'étant pas donné ; seules les compositions x = 0, 0,2, 0,5, 0,7 et 1 ont une voie",
    "results_in": [
     "Fig. 5",
+    "Fig. S15"
+   ]
+  },
+  {
+   "sample": "alloys x = 0.33 and x = 0.66 of the Fig. S15 series (x = mole fraction of S in S15)",
+   "defined_in": "Figure S15 caption (13 ratios listed: x = 1.0, 0.90, 0.80, 0.70, 0.66, 0.60, 0.50, 0.40, 0.33, 0.30, 0.20, 0.10, 0)",
+   "route": null,
+   "why": "compositions citées seulement dans la légende de la Fig. S15 (spectres d'absorption, figure absente du dépôt) ; aucun résultat chiffré ni protocole propre, donc pas de voie ; dans la Fig. S15, la liste va de CdS pur (x = 1,0) à CdSe pur (x = 0), le x de la Fig. 5 étant la fraction de Se",
+   "results_in": [
     "Fig. S15"
    ]
   },
@@ -696,6 +705,11 @@
        "quote": "When the reaction mixture has cooled under argon for approximately an hour, the mixture is cleaned by centrifuging at 7200 rpm for 3 minutes to remove any precipitate.",
        "value_num": 3,
        "unit": "min"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "All manipulations were performed in air unless otherwise indicated."
       }
      ],
      "equipment": []
@@ -711,6 +725,11 @@
        "quote": "The supernatant is diluted with acetone (10 mL) and the cloudy suspension centrifuged for 4 minutes.",
        "value_num": 10,
        "unit": "mL"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "All manipulations were performed in air unless otherwise indicated."
       }
      ],
      "equipment": []
@@ -726,6 +745,11 @@
        "quote": "The supernatant is diluted with acetone (10 mL) and the cloudy suspension centrifuged for 4 minutes.",
        "value_num": 4,
        "unit": "min"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "All manipulations were performed in air unless otherwise indicated."
       }
      ],
      "equipment": [],
@@ -744,6 +768,11 @@
        "quote": "The nanoplatelet gel is then dispersed in toluene (5 mL) and acetone (10 mL) is added and the cloudy suspension centrifuged.",
        "value_num": 5,
        "unit": "mL"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "All manipulations were performed in air unless otherwise indicated."
       }
      ],
      "equipment": [],
@@ -762,6 +791,11 @@
        "quote": "The nanoplatelet gel is then dispersed in toluene (5 mL) and acetone (10 mL) is added and the cloudy suspension centrifuged.",
        "value_num": 10,
        "unit": "mL"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "All manipulations were performed in air unless otherwise indicated."
       }
      ],
      "equipment": []
@@ -771,7 +805,13 @@
      "action": "centrifuge",
      "description": "Centrifuge the cloudy suspension.",
      "quote": "The nanoplatelet gel is then dispersed in toluene (5 mL) and acetone (10 mL) is added and the cloudy suspension centrifuged.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "All manipulations were performed in air unless otherwise indicated."
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "speed",
@@ -789,6 +829,11 @@
        "quote": "The resulting nanoplatelets can then be suspended in toluene or hexanes (10 mL).",
        "value_num": 10,
        "unit": "mL"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "air",
+       "quote": "All manipulations were performed in air unless otherwise indicated."
       }
      ],
      "equipment": [],
@@ -816,8 +861,8 @@
      "technique": "HAADF-STEM",
      "result": "lateral dimensions of the nanoplatelets measured throughout the reaction; growth by lateral extension",
      "instrument": "FEI Talos F200X",
-     "conditions": "200 kV",
-     "quote": "Nanoplatelet imaging and sizing by STEM was performed on an FEI Talos F200X at 200 kV."
+     "conditions": "200 kV; aliquots further diluted with toluene (4–5× that of the concentration used for UV-vis absorption in the Methods; typically 4–7× after the 35× dilution of a 0.1 mL aliquot in the ESI), drop cast on lacey carbon support film grids (Ted Pella # 10824 ultra-thin carbon film)",
+     "quote": "Electron microscopy samples were prepared by further diluting reaction aliquots with toluene (4–5× that of the concentration used for UV-vis absorption). Nanoplatelets lie flat upon when dropcast on the dull side of Ted Pella # 10824 ultra-thin carbon film on lacey carbon support film grids. Nanoplatelet imaging and sizing by STEM was performed on an FEI Talos F200X at 200 kV."
     }
    ],
    "outcomes": [
@@ -833,6 +878,20 @@
      "unit": "μM",
      "from_figure": "Fig. 3",
      "quote": "Fig. 3 Theoretical nanoplatelet concentration (yellow = CdS, red = CdSe), determined from the nanoplatelet size as measured by TEM and assuming 100% yield of CdE (10 mM) as nanoplatelets, versus the associated precursor kobs."
+    },
+    {
+     "property": "average_edge_length_150s",
+     "value_num": 50,
+     "unit": "nm",
+     "from_figure": "Fig. 2E",
+     "quote": "Fig. 2 CdSe nanoplatelets from a NPL reaction using 18. (A–D) STEM images of aliquots at reaction time indicated. (E) Histogram of the average nanoplatelet length measured from STEM images."
+    },
+    {
+     "property": "average_edge_length_3600s",
+     "value_num": 70,
+     "unit": "nm",
+     "from_figure": "Fig. 2E",
+     "quote": "Fig. 2 CdSe nanoplatelets from a NPL reaction using 18. (A–D) STEM images of aliquots at reaction time indicated. (E) Histogram of the average nanoplatelet length measured from STEM images."
     }
    ],
    "missing_fields": [
@@ -880,7 +939,7 @@
    "outcomes": [
     {
      "property": "k_obs",
-     "value_text": "a",
+     "value_text": "Conversion kinetics too rapid to measure (note a)",
      "quote": "1 | S | H | n-C6H13 | H | n-C12H25 | a"
     },
     {
@@ -929,7 +988,7 @@
    "outcomes": [
     {
      "property": "k_obs",
-     "value_text": "a",
+     "value_text": "Conversion kinetics too rapid to measure (note a)",
      "quote": "2 | S | H | n-C6H13 | n-C8H17 | n-C8H17 | a"
     },
     {
@@ -983,7 +1042,7 @@
    "outcomes": [
     {
      "property": "k_obs",
-     "value_text": "a",
+     "value_text": "Conversion kinetics too rapid to measure (note a)",
      "quote": "3 | S | H | Cy | –(CH2)4– | a"
     }
    ]
@@ -1027,7 +1086,7 @@
    "outcomes": [
     {
      "property": "k_obs",
-     "value_text": "a",
+     "value_text": "Conversion kinetics too rapid to measure (note a)",
      "quote": "4 | S | H | n-C6H13 | –(CH2)4– | a"
     }
    ]
@@ -1081,6 +1140,13 @@
      "unit": "μM",
      "from_figure": "Fig. 3",
      "quote": "Fig. 3 Theoretical nanoplatelet concentration (yellow = CdS, red = CdSe), determined from the nanoplatelet size as measured by TEM and assuming 100% yield of CdE (10 mM) as nanoplatelets, versus the associated precursor kobs."
+    },
+    {
+     "property": "average_edge_length",
+     "value_num": 14,
+     "unit": "nm",
+     "from_figure": "Fig. 3",
+     "quote": "The average edge length of CdS nanoplatelets as measured by TEM is shown on the right axis."
     }
    ]
   },
@@ -1133,6 +1199,13 @@
      "unit": "μM",
      "from_figure": "Fig. 3",
      "quote": "Fig. 3 Theoretical nanoplatelet concentration (yellow = CdS, red = CdSe), determined from the nanoplatelet size as measured by TEM and assuming 100% yield of CdE (10 mM) as nanoplatelets, versus the associated precursor kobs."
+    },
+    {
+     "property": "average_edge_length",
+     "value_num": 15,
+     "unit": "nm",
+     "from_figure": "Fig. 3",
+     "quote": "The average edge length of CdS nanoplatelets as measured by TEM is shown on the right axis."
     }
    ]
   },
@@ -1185,6 +1258,13 @@
      "unit": "μM",
      "from_figure": "Fig. 3",
      "quote": "Fig. 3 Theoretical nanoplatelet concentration (yellow = CdS, red = CdSe), determined from the nanoplatelet size as measured by TEM and assuming 100% yield of CdE (10 mM) as nanoplatelets, versus the associated precursor kobs."
+    },
+    {
+     "property": "average_edge_length",
+     "value_num": 15,
+     "unit": "nm",
+     "from_figure": "Fig. 3",
+     "quote": "The average edge length of CdS nanoplatelets as measured by TEM is shown on the right axis."
     }
    ]
   },
@@ -1237,6 +1317,13 @@
      "unit": "μM",
      "from_figure": "Fig. 3",
      "quote": "Fig. 3 Theoretical nanoplatelet concentration (yellow = CdS, red = CdSe), determined from the nanoplatelet size as measured by TEM and assuming 100% yield of CdE (10 mM) as nanoplatelets, versus the associated precursor kobs."
+    },
+    {
+     "property": "average_edge_length",
+     "value_num": 19,
+     "unit": "nm",
+     "from_figure": "Fig. 3",
+     "quote": "The average edge length of CdS nanoplatelets as measured by TEM is shown on the right axis."
     }
    ]
   },
@@ -1289,6 +1376,13 @@
      "unit": "μM",
      "from_figure": "Fig. 3",
      "quote": "Fig. 3 Theoretical nanoplatelet concentration (yellow = CdS, red = CdSe), determined from the nanoplatelet size as measured by TEM and assuming 100% yield of CdE (10 mM) as nanoplatelets, versus the associated precursor kobs."
+    },
+    {
+     "property": "average_edge_length",
+     "value_num": 15,
+     "unit": "nm",
+     "from_figure": "Fig. 3",
+     "quote": "The average edge length of CdS nanoplatelets as measured by TEM is shown on the right axis."
     }
    ]
   },
@@ -1341,6 +1435,13 @@
      "unit": "μM",
      "from_figure": "Fig. 3",
      "quote": "Fig. 3 Theoretical nanoplatelet concentration (yellow = CdS, red = CdSe), determined from the nanoplatelet size as measured by TEM and assuming 100% yield of CdE (10 mM) as nanoplatelets, versus the associated precursor kobs."
+    },
+    {
+     "property": "average_edge_length",
+     "value_num": 20,
+     "unit": "nm",
+     "from_figure": "Fig. 3",
+     "quote": "The average edge length of CdS nanoplatelets as measured by TEM is shown on the right axis."
     }
    ]
   },
@@ -1393,6 +1494,18 @@
      "unit": "μM",
      "from_figure": "Fig. 3",
      "quote": "Fig. 3 Theoretical nanoplatelet concentration (yellow = CdS, red = CdSe), determined from the nanoplatelet size as measured by TEM and assuming 100% yield of CdE (10 mM) as nanoplatelets, versus the associated precursor kobs."
+    },
+    {
+     "property": "average_edge_length",
+     "value_num": 21,
+     "unit": "nm",
+     "from_figure": "Fig. 3",
+     "quote": "The average edge length of CdS nanoplatelets as measured by TEM is shown on the right axis."
+    },
+    {
+     "property": "thickness_purity",
+     "value_text": "cleanly form 3 ML CdS nanoplatelets",
+     "quote": "Less reactive precursors such as the monosubstituted cyclic thiones (11–14) cleanly form 3 ML CdS nanoplatelets."
     }
    ]
   },
@@ -1438,6 +1551,11 @@
      "value_num": 0.00121,
      "unit": "s−1",
      "quote": "12 | S | H | –CH2CH2– | Ph | 0.00121"
+    },
+    {
+     "property": "thickness_purity",
+     "value_text": "cleanly form 3 ML CdS nanoplatelets",
+     "quote": "Less reactive precursors such as the monosubstituted cyclic thiones (11–14) cleanly form 3 ML CdS nanoplatelets."
     }
    ]
   },
@@ -1483,6 +1601,11 @@
      "value_num": 0.00167,
      "unit": "s−1",
      "quote": "13 | S | H | –CH2CH2– | Me | 0.00167"
+    },
+    {
+     "property": "thickness_purity",
+     "value_text": "cleanly form 3 ML CdS nanoplatelets",
+     "quote": "Less reactive precursors such as the monosubstituted cyclic thiones (11–14) cleanly form 3 ML CdS nanoplatelets."
     }
    ]
   },
@@ -1533,6 +1656,11 @@
      "property": "thickness_impurities_after_endpoint",
      "value_text": "4ML and 5ML nanoplatelets form after the reaction’s endpoint (1200s)",
      "quote": "Figure S11. Quantitative absorption spectra of CdS Nanoplatelets made from 14. 4ML and 5ML nanoplatelets form after the reaction’s endpoint (1200s)."
+    },
+    {
+     "property": "thickness_purity",
+     "value_text": "cleanly form 3 ML CdS nanoplatelets",
+     "quote": "Less reactive precursors such as the monosubstituted cyclic thiones (11–14) cleanly form 3 ML CdS nanoplatelets."
     }
    ]
   },
@@ -1575,7 +1703,7 @@
    "outcomes": [
     {
      "property": "k_obs",
-     "value_text": "a",
+     "value_text": "Conversion kinetics too rapid to measure (note a)",
      "quote": "15 | Se | H | –CH2CH2– | Ph | a"
     }
    ]
@@ -1858,7 +1986,7 @@
      "technique": "STEM-EELS",
      "result": "ADF image, Cd M4,5 map, Se L2/L3 map and Cd and Se linescans of the core/crown sample",
      "instrument": "aberration-corrected FEI Titan Themis 300, 965 GIF Quantum ER",
-     "conditions": "120 kV; Cd M4,5 edge 404 eV, Se L2/L3 edges 1476/1436 eV, S L2,3 edge 165 eV; data collected at −140 °C",
+     "conditions": "120 kV; Cd M4,5 edge 404 eV, Se L2/L3 edges 1476/1436 eV, S L2,3 edge 165 eV; data collected at −140 °C; the Methods say −140 °C but the text says the 3 ML nanoplatelets are unstable under the beam unless measured at 100 K or lower and the Fig. 6 caption says STEM EELS at 100 K (contradiction, see doubts)",
      "quote": "Figure S16. CdSe/CdS core/crown sample prepared from 15 and 8 A) Annular Dark Field"
     }
    ]
@@ -1971,7 +2099,7 @@
      "technique": "STEM-EELS",
      "result": "homogeneous distribution of Cd, Se and S (dual-EELS of the CdSe0.50/CdS0.50 nanoplatelet)",
      "instrument": "aberration-corrected FEI Titan Themis 300, 965 GIF Quantum ER",
-     "conditions": "120 kV; Cd M4,5 edge 404 eV, Se L2/L3 edges 1476/1436 eV, S L2,3 edge 165 eV; data collected at −140 °C",
+     "conditions": "120 kV; Cd M4,5 edge 404 eV, Se L2/L3 edges 1476/1436 eV, S L2,3 edge 165 eV; data collected at −140 °C; the Methods say −140 °C but the text says the 3 ML nanoplatelets are unstable under the beam unless measured at 100 K or lower and the Fig. 6 caption says STEM EELS at 100 K (contradiction, see doubts)",
      "quote": "STEM EELS mapping of Cd, Se, and S support a homogeneous distribution of these elements across the nanoplatelet (Fig. S15†)."
     }
    ]
@@ -2090,7 +2218,7 @@
      "technique": "STEM-EELS",
      "result": "ADF image, Cd M4,5 map, Se L2/L3 map and Cd and Se linescans",
      "instrument": "aberration-corrected FEI Titan Themis 300, 965 GIF Quantum ER",
-     "conditions": "120 kV; Cd M4,5 edge 404 eV, Se L2/L3 edges 1476/1436 eV, S L2,3 edge 165 eV; data collected at −140 °C",
+     "conditions": "120 kV; Cd M4,5 edge 404 eV, Se L2/L3 edges 1476/1436 eV, S L2,3 edge 165 eV; data collected at −140 °C; the Methods say −140 °C but the text says the 3 ML nanoplatelets are unstable under the beam unless measured at 100 K or lower and the Fig. 6 caption says STEM EELS at 100 K (contradiction, see doubts)",
      "quote": "Figure S17. CdSe/CdS graded alloy prepared from 15 and 7"
     }
    ]
@@ -2162,7 +2290,7 @@
      "technique": "STEM-EELS",
      "result": "ADF image, Se L2/L3 map, Cd M4,5 and S L2,3 maps and linescans (100 K or lower)",
      "instrument": "aberration-corrected FEI Titan Themis 300, 965 GIF Quantum ER",
-     "conditions": "120 kV; Cd M4,5 edge 404 eV, Se L2/L3 edges 1476/1436 eV, S L2,3 edge 165 eV; data collected at −140 °C",
+     "conditions": "120 kV; Cd M4,5 edge 404 eV, Se L2/L3 edges 1476/1436 eV, S L2,3 edge 165 eV; data collected at −140 °C; the Methods say −140 °C but the text says the 3 ML nanoplatelets are unstable under the beam unless measured at 100 K or lower and the Fig. 6 caption says STEM EELS at 100 K (contradiction, see doubts)",
      "quote": "Figure S18. CdS/CdSe graded alloy sample prepared from 15 and 1"
     }
    ]
@@ -2180,8 +2308,8 @@
    "quote": "In the first series, nanoplatelets are made with precursors with matched reactivities and varying Se : S ratios and thus constitute homogeneous alloys CdS1−xSex, with x = 0, 0.2, 0.5, 0.7, and 1.",
    "variations": [
     {
-     "parameter": "thiourea 8",
-     "value_text": "ratio of the two precursors set for x = 0 (Se : S ratio, amounts not stated)",
+     "parameter": "Se_S_precursor_ratio",
+     "value_text": "precursors with matched reactivities, not named; Se : S ratio set for x = 0, amounts not stated",
      "parent_value": "x = 0.5 (ratio not stated)",
      "quote": "In the first series, nanoplatelets are made with precursors with matched reactivities and varying Se : S ratios and thus constitute homogeneous alloys CdS1−xSex, with x = 0, 0.2, 0.5, 0.7, and 1."
     }
@@ -2225,6 +2353,10 @@
      "conditions": "samples drop cast on silicon wafers, 77 K; Ondax laser λ = 406 nm; typical laser power 1 mW, typical acquisition time 150 s",
      "quote": "Raman spectroscopy measurements are performed on a home built micro-Raman spectrometer."
     }
+   ],
+   "not_stated": [
+    "precursor_identity",
+    "precursor_ratio"
    ]
   },
   {
@@ -2240,8 +2372,8 @@
    "quote": "In the first series, nanoplatelets are made with precursors with matched reactivities and varying Se : S ratios and thus constitute homogeneous alloys CdS1−xSex, with x = 0, 0.2, 0.5, 0.7, and 1.",
    "variations": [
     {
-     "parameter": "thiourea 8",
-     "value_text": "ratio of the two precursors set for x = 0.2 (Se : S ratio, amounts not stated)",
+     "parameter": "Se_S_precursor_ratio",
+     "value_text": "precursors with matched reactivities, not named; Se : S ratio set for x = 0.2, amounts not stated",
      "parent_value": "x = 0.5 (ratio not stated)",
      "quote": "In the first series, nanoplatelets are made with precursors with matched reactivities and varying Se : S ratios and thus constitute homogeneous alloys CdS1−xSex, with x = 0, 0.2, 0.5, 0.7, and 1."
     }
@@ -2268,6 +2400,12 @@
      "unit": "nm",
      "from_figure": "Fig. 5B",
      "quote": "(B) The λmax of the band edge absorption feature (red), the band edge luminescence (blue), and (C) the FWHM of the band edge luminescence feature were extracted using the multi-fitting function in Igor Pro and are plotted versus the mole fraction of the selenium."
+    },
+    {
+     "property": "Raman_nu_CdS_LO",
+     "value_num": 299.4,
+     "unit": "cm−1",
+     "quote": "CdS0.8Se0.2 299.4 ± 0.4"
     }
    ],
    "characterizations": [
@@ -2278,6 +2416,10 @@
      "conditions": "samples drop cast on silicon wafers, 77 K; Ondax laser λ = 406 nm; typical laser power 1 mW, typical acquisition time 150 s",
      "quote": "Raman spectroscopy measurements are performed on a home built micro-Raman spectrometer."
     }
+   ],
+   "not_stated": [
+    "precursor_identity",
+    "precursor_ratio"
    ]
   },
   {
@@ -2293,8 +2435,8 @@
    "quote": "In the first series, nanoplatelets are made with precursors with matched reactivities and varying Se : S ratios and thus constitute homogeneous alloys CdS1−xSex, with x = 0, 0.2, 0.5, 0.7, and 1.",
    "variations": [
     {
-     "parameter": "thiourea 8",
-     "value_text": "ratio of the two precursors set for x = 0.7 (Se : S ratio, amounts not stated)",
+     "parameter": "Se_S_precursor_ratio",
+     "value_text": "precursors with matched reactivities, not named; Se : S ratio set for x = 0.7, amounts not stated",
      "parent_value": "x = 0.5 (ratio not stated)",
      "quote": "In the first series, nanoplatelets are made with precursors with matched reactivities and varying Se : S ratios and thus constitute homogeneous alloys CdS1−xSex, with x = 0, 0.2, 0.5, 0.7, and 1."
     }
@@ -2328,6 +2470,12 @@
      "unit": "nm",
      "from_figure": "Fig. 5C",
      "quote": "(B) The λmax of the band edge absorption feature (red), the band edge luminescence (blue), and (C) the FWHM of the band edge luminescence feature were extracted using the multi-fitting function in Igor Pro and are plotted versus the mole fraction of the selenium."
+    },
+    {
+     "property": "Raman_nu_CdSe_LO",
+     "value_num": 198.9,
+     "unit": "cm−1",
+     "quote": "CdS0.3Se0.7 198.9 ± 0.2"
     }
    ],
    "characterizations": [
@@ -2338,6 +2486,10 @@
      "conditions": "samples drop cast on silicon wafers, 77 K; Ondax laser λ = 406 nm; typical laser power 1 mW, typical acquisition time 150 s",
      "quote": "Raman spectroscopy measurements are performed on a home built micro-Raman spectrometer."
     }
+   ],
+   "not_stated": [
+    "precursor_identity",
+    "precursor_ratio"
    ]
   },
   {
@@ -2353,8 +2505,8 @@
    "quote": "In the first series, nanoplatelets are made with precursors with matched reactivities and varying Se : S ratios and thus constitute homogeneous alloys CdS1−xSex, with x = 0, 0.2, 0.5, 0.7, and 1.",
    "variations": [
     {
-     "parameter": "thiourea 8",
-     "value_text": "ratio of the two precursors set for x = 1 (Se : S ratio, amounts not stated)",
+     "parameter": "Se_S_precursor_ratio",
+     "value_text": "precursors with matched reactivities, not named; Se : S ratio set for x = 1, amounts not stated",
      "parent_value": "x = 0.5 (ratio not stated)",
      "quote": "In the first series, nanoplatelets are made with precursors with matched reactivities and varying Se : S ratios and thus constitute homogeneous alloys CdS1−xSex, with x = 0, 0.2, 0.5, 0.7, and 1."
     }
@@ -2398,6 +2550,10 @@
      "conditions": "samples drop cast on silicon wafers, 77 K; Ondax laser λ = 406 nm; typical laser power 1 mW, typical acquisition time 150 s",
      "quote": "Raman spectroscopy measurements are performed on a home built micro-Raman spectrometer."
     }
+   ],
+   "not_stated": [
+    "precursor_identity",
+    "precursor_ratio"
    ]
   },
   {
@@ -2511,7 +2667,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Seule la chalcogénourée change entre les voies simples : plus k_obs est grand, plus il y a de plaquettes (donc plus petites) ; à k_obs égal, il y a environ quatre fois plus de plaquettes de CdS que de CdSe (lecture Fig. 3 : 3,3 µM pour le composé 5, k_obs = 0,0329 s−1, contre 0,46 µM pour le composé 18, k_obs = 0,0149 s−1). Les hétérostructures dépendent de l'écart de réactivité de la paire : plus de 10× donne un cœur/couronne (CdSe/CdS, paire 8 + 15), environ 2× un alliage homogène (paire 8 + 18), moins de 10× un alliage gradué. Les branches de la série d'alliages (x = 0 à 1) font varier le rapport S/Se à réactivités appariées."
+   "text": "Seule la chalcogénourée change entre les voies simples : plus k_obs est grand, plus il y a de plaquettes (donc plus petites) ; à k_obs voisin, il y a plus de plaquettes de CdS que de CdSe, environ quatre fois selon les auteurs (lecture Fig. 3 : composé 9, k_obs = 0,0145 s−1, 2,6 µM, contre composé 18, k_obs = 0,0149 s−1, 0,46 µM ; les rapports lus sur d'autres paires voisines vont d'environ 2 à 6). Les hétérostructures dépendent de l'écart de réactivité de la paire : plus de 10× donne un cœur/couronne (CdSe/CdS, paire 8 + 15), environ 2× un alliage dit homogène (paire 8 + 18), moins de 10× un alliage gradué. Les branches de la série d'alliages (x = 0 à 1) font varier le rapport S/Se à réactivités appariées."
   },
   {
    "type": "tendance_observee",
@@ -2546,18 +2702,41 @@
   {
    "type": "mecanisme_auteurs",
    "route": "CdSe_18",
-   "text": "Les auteurs décrivent une nucléation en explosion suivie d'une croissance par extension latérale, l'apport de monomère étant limité par la conversion de la chalcogénourée (activation par acide de Lewis menant à la rupture de la liaison C=E), et non par un mûrissement d'Ostwald ; le nombre de plaquettes est fixé par la compétition entre nucléation et croissance pour le soluté.",
+   "text": "Les auteurs concluent que la conversion de la chalcogénourée limite la formation des plaquettes, comme dans une étude récente sur des nanocristaux quasi sphériques, et rattachent les tendances de réactivité à une activation par acide de Lewis qui mène à la rupture de la liaison C=E.",
    "quote": "The large range of growth kinetics indicates that the chalcogenourea conversion reactivity limits the formation of the nanoplatelets, as was also observed in a recent study on quasi-spherical nanocrystals."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdSe_18",
+   "text": "Les auteurs retiennent un mécanisme de nucléation et croissance homogènes : une explosion de nucléation suivie de croissance, la conversion du précurseur limitant la cinétique, de sorte que la réactivité du précurseur commande le soluté et la microstructure.",
+   "quote": "The results above support a homogeneous nucleation and growth mechanism that proceeds from a burst of nucleation followed by growth."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdSe_18",
+   "text": "Les mesures de dimensions latérales par HAADF-STEM indiquent, selon les auteurs, que les plaquettes grandissent par extension latérale.",
+   "quote": "These measurements indicate that nanoplatelets grow via lateral extension (see ESI†)."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdSe_18",
+   "text": "En l'absence de mûrissement d'Ostwald ou d'agrégation, le nombre de plaquettes est fixé, selon les auteurs, par la compétition entre croissance et nucléation pour le soluté : une croissance plus rapide du CdSe expliquerait qu'il y ait moins de plaquettes de CdSe que de CdS à apport de soluté égal.",
+   "quote": "In the absence of Ostwald ripening or aggregation, the number of nanoplatelets is determined by the relative kinetics of growth and nucleation. These two manifolds compete for solutes."
   },
   {
    "type": "mecanisme_analyse",
    "route": "CdSe_18",
-   "text": "Hypothèse de chimiste : l'acide oléique échange probablement ses ligands avec l'acétate de cadmium à 100 °C pour donner des carboxylates de cadmium (avec libération d'acide acétique), qui structurent les plaquettes de trois monocouches ; la chalcogénourée injectée à 195 °C se décompose en présence de Cd2+ pour fournir E2− (S ou Se), qui précipite en CdE puis s'attache aux bords des noyaux. Un précurseur très réactif sature la nucléation (beaucoup de petites plaquettes, impuretés de 4 et 5 ML), un précurseur lent maintient une faible sursaturation et des plaquettes plus grandes."
+   "text": "Hypothèse de chimiste, non établie par l'article : l'acide oléique (0,19 mmol pour environ 0,94 mmol de Cd) n'échange qu'une partie de l'acétate de cadmium vers 100 °C, ce qui donne un peu de carboxylate de cadmium (avec libération d'acide acétique) à côté d'acétate en excès ; à 195 °C la chalcogénourée, activée par le Cd2+ (acide de Lewis), perd sa liaison C=E et libère un monomère CdE. La vitesse de conversion fixe l'apport de soluté : une nucléation courte fixe le nombre de noyaux bidimensionnels, puis les plaquettes s'étendent latéralement. Un précurseur très réactif sature la nucléation (beaucoup de petites plaquettes, impuretés de 4 et 5 ML), un précurseur lent maintient une faible sursaturation et donne moins de plaquettes plus grandes."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CdS0.5Se0.5_alloy_8+18",
+   "text": "Hypothèse de chimiste : les deux précurseurs se convertissent en même temps, mais 18 environ 2,2 fois plus vite que 8, si bien que le soluté est d'abord riche en Se puis s'appauvrit en Se ; après une nucléation courte, la croissance latérale enregistre cette évolution. Selon le modèle des auteurs (incorporation non sélective), on attendrait donc un alliage faiblement gradué, avec un centre autour de x ≈ 0,7 et un bord presque pur en CdS, plutôt qu'un alliage strictement homogène (calcul du critique scientifique, non confirmé par une mesure)."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les composés du cadmium sont toxiques et cancérogènes (poudre d'acétate de cadmium à manipuler sous hotte, déchets à collecter) ; les sélénourées et thiourées sont toxiques, et la décomposition à chaud peut dégager des composés soufrés ou séléniés odorants et toxiques. L'octadécène à 195 °C sous argon, l'injection à la seringue d'une solution tiède, le chauffage au pistolet à air chaud et les solvants inflammables (acétone, toluène, hexanes) imposent la hotte, des gants adaptés et l'absence de flamme."
+   "text": "Non écrit dans l'article : l'acétate de cadmium est classé cancérogène, mutagène et toxique pour la reproduction (catégories 1B, PubChem) et le tétraglyme est toxique pour la reproduction (catégorie 1B, substance extrêmement préoccupante selon l'ECHA) ; la sélénourée mère est classée H301/H331/H373 (fiche fournisseur) et les dérivés substitués de l'article doivent être traités de la même façon. À 195 °C en présence d'acide carboxylique, la décomposition des chalcogénourées peut libérer des traces de H2Se ou de H2S : travailler sous argon avec sortie de gaz vers la hotte, peser et broyer l'acétate de cadmium sous hotte (ou en boîte à gants), collecter les déchets cadmiés et séléniés (y compris les surnageants de lavage). L'octadécène chaud, l'injection à la seringue d'une solution tiède, le chauffage au pistolet à air chaud et les solvants inflammables (acétone, toluène, hexanes) imposent la hotte, des gants adaptés et l'absence de flamme."
   },
   {
    "type": "limite_reproductibilite",
@@ -2572,7 +2751,47 @@
   {
    "type": "limite_reproductibilite",
    "route": "CdSe_18",
-   "text": "Fig. 2 (histogrammes de longueur de la réaction avec 18) et Fig. 3 (axe des longueurs de bord du CdS) portent des résultats non repris en valeurs : seules les concentrations de plaquettes de la Fig. 3 ont été lues, avec une précision d'environ 0,1 µM ; les points des composés 12, 13 et 14 se superposent et n'ont pas été lus."
+   "text": "Longueurs de bord lues sur figure : axe de droite de la Fig. 3 (CdS seulement, axe non linéaire repéré par 15, 20, 25, 30, 40 et 60 nm ; les plaquettes de CdSe seraient 4 % plus grandes que l'axe) et histogramme de la Fig. 2E pour la réaction avec 18 (moyenne estimée sur les hauteurs de barres), avec une incertitude d'environ ±2 nm pour le CdS et ±5 nm pour le CdSe ; les points des composés 12, 13 et 14 se superposent et n'ont pas été lus."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdSe_18",
+   "text": "Acétate de cadmium : 0,250 g de dihydrate (environ 266,5 g/mol, PubChem) font 0,94 mmol, soit 6,25 éq. des 0,15 mmol de chalcogénourée injectés ; les 1,08 mmol écrits correspondent à 0,250 g de sel anhydre (environ 230,5 g/mol) ou à 5,75 éq. de 0,1875 mmol préparés (la Fig. 1A écrit 5,75 CdOAc2). Interprétation par calcul : la masse pesée de dihydrate est la consigne la plus cohérente, et peser 1,08 mmol de dihydrate (environ 0,288 g) mettrait environ 15 % de cadmium en trop. L'eau d'hydratation (environ 1,9 mmol) n'est peut-être pas éliminée par un dégazage de 15 min à température non dite, alors que l'hydratation du sel est connue pour influencer les plaquettes (source citée par le critique scientifique : PMC11597073, accès libre, non revérifiée ici)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS0.5Se0.5_alloy_8+18",
+   "text": "L'alliage 8 + 18 est dit « homogène » alors que k_obs diffère de 2,2× et que la règle des auteurs (moins de 10× : gradué) et leur modèle cinétique prévoient plutôt un alliage faiblement gradué (centre vers x ≈ 0,7, bord presque pur en CdS) ; l'article antérieur du même groupe (Hamachi et al., Chem. Sci. 2019, cit11 de l'article) demande une réactivité très précisément appariée pour un alliage homogène. Aucune mesure de l'article (DRX de poudre, STEM-EELS, Raman, absence de décalage spectral de 150 à 1500 s) ne distingue « homogène » de « faiblement gradué »."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS0.5Se0.5_alloy_8+18",
+   "text": "Le texte rattache la Fig. S15 (cartes STEM-EELS et aliquotes à 15, 45, 90, 150, 300 ou 400 et 500 s) à l'alliage homogène de la Fig. 4B, mais ces temps d'aliquote sont ceux de la légende de la Fig. 4C (échantillon gradué 3 + 18), pas ceux de la Fig. 4B (150 à 1500 s) : l'attribution du texte est gardée, mais le rattachement peut être inexact dans l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves du critique scientifique sur l'article : le seuil de 10× entre cœur/couronne et alliage gradué ne repose que sur une paire dont le rapport est mesuré, car 15, 1 et 3 sont trop rapides pour être mesurés ; le résumé parle de plaquettes de CdS « 4× smaller lateral dimensions », mais un nombre de plaquettes 4 fois plus grand donne une aire 4 fois plus petite, soit un côté environ 2 fois plus petit, et le facteur 4 est une moyenne de rapports dispersés. La fin de réaction définie à 2 t1/2 (75 % de conversion pour une cinétique d'ordre 1) est aussi en tension avec le rendement de 100 % supposé pour la Fig. 3, d'où une concentration de plaquettes possiblement surestimée d'un facteur allant jusqu'à 1,33, le même pour CdS et CdSe."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_2",
+   "text": "Le texte dit que les thiourées 1 et 2 donnent des plaquettes de 4 et 5 ML « within 5 minutes », alors que la légende de la Fig. S12 (thiourée 2) les place après le point final de la réaction (600 s) : les deux énoncés sont incompatibles, et comme k_obs de 2 n'est pas mesurable ce point final n'est pas défini ; pour obtenir du 3 ML pur, il faut arrêter tôt sans critère chiffré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS0.8Se0.2_alloy_x0.2",
+   "text": "Raman : ν(CdS)LO de x = 0,2 (299,4 cm−1, Table S4) est un peu au-dessus de celui du CdS pur (298,8 cm−1), contrairement à la phrase « decrease as their mole fraction decreases » ; l'écart (0,6 cm−1) est inférieur à la variabilité annoncée (±1,5 cm−1). Les conditions de résonance changent d'un échantillon à l'autre (CdS pur excité hors résonance à 3,05 eV, x = 0,2 en pré-résonance, alliages plus riches en Se en résonance) : une partie du décalage de ν(CdS)LO peut venir de la résonance et non de l'alliage (source citée par le critique : arXiv:1707.05444, auteurs non relevés)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La température des mesures STEM-EELS n'est pas univoque : −140 °C (environ 133 K) dans les Méthodes, mais « 100 K or lower » dans le texte (les plaquettes 3 ML se dégradent sous le faisceau au-dessus) et « at 100 K » dans la légende de la Fig. 6. Un opérateur qui travaillerait à 133 K sur la foi des Méthodes serait au-dessus du seuil annoncé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdS_alloy_x0",
+   "text": "Les précurseurs des échantillons Raman de la série x = 0 ; 0,2 ; 0,5 ; 0,7 ; 1 ne sont pas nommés dans l'article (« precursors with matched reactivities ») et leur rapport n'est pas donné ; le rattachement à la paire 8 + 18 est une lecture de la Fig. 5, pas une affirmation de l'article."
   }
  ],
  "method_sources": [
@@ -2700,7 +2919,7 @@
  "doubts": [
   {
    "where": "CdSe_18 réactifs (acétate de cadmium)",
-   "issue": "Le texte donne 0,250 g, 1,08 mmol et « 6,25 eq. » d'acétate de cadmium ; avec 1 mL de solution à 150 mM (0,15 mmol injectés) 1,08 mmol représente 7,2 équivalents, et la Fig. 1A écrit 5,75 CdOAc2 et 1,25 HO2CR (oléate). Les équivalents ne sont pas cohérents entre eux ; les quantités absolues du texte (0,250 g, 1,08 mmol) sont retenues, les équivalents ne sont pas extraits."
+   "issue": "Le texte donne 0,250 g, 1,08 mmol et « 6,25 eq. » d'acétate de cadmium dihydrate ; 0,250 g de dihydrate font environ 0,94 mmol (6,25 éq. de 0,15 mmol injectés), alors que 1,08 mmol correspond à 0,250 g de sel anhydre ou à 5,75 éq. de 0,1875 mmol (la Fig. 1A écrit 5,75 CdOAc2 et 1,25 HO2CR). Les trois valeurs ne sont pas cohérentes entre elles ; la masse littérale (0,250 g) est retenue, les équivalents ne sont pas extraits, voir l'annotation limite_reproductibilite."
   },
   {
    "where": "CdSe_18 étape 1 et 6",
@@ -2720,7 +2939,7 @@
   },
   {
    "where": "Table 1, composés 1 à 4 et 15",
-   "issue": "k_obs est noté « a » (note du tableau : conversion trop rapide pour être mesurée) ; la valeur est donc enregistrée comme texte « a »."
+   "issue": "k_obs est noté « a » dans la Table 1 (note du tableau : « Conversion kinetics too rapid to measure ») ; la valeur est enregistrée en texte « Conversion kinetics too rapid to measure (note a) », la citation restant la rangée du tableau, car la note est séparée de la rangée dans le texte extrait."
   },
   {
    "where": "Composés 1 et 2, impuretés 4 ML et 5 ML",
@@ -2748,7 +2967,7 @@
   },
   {
    "where": "Figures lues (Fig. 3, Fig. 5B, Fig. 5C)",
-   "issue": "Fig. 3 : concentration de NPL (µM) lue pour les composés 5, 6, 7, 8, 9, 10, 11 (CdS) et 16, 17, 18, 19 (CdSe), chaque point rattaché à son précurseur par son k_obs en abscisse ; précision ≈ ±0,1 µM, deux chiffres significatifs. Les points CdS 12, 13, 14 se superposent vers 0,9 µM et le point CdSe 20 est trop près de zéro : non lus. Fig. 5B : λmax d'absorption et de luminescence lus aux x = 0, 0,2, 0,5, 0,7, 1, arrondis à 10 nm (précision de lecture ≈ ±5 nm) ; Fig. 5C : FWHM de luminescence lue à x = 0, 0,5, 0,7, 1 (≈ ±1 nm) ; les points x = 0,2 et 0,3 sont des cercles vides (émission non déconvoluée de l'émission de pièges) et ne sont pas lus. Fig. 2E (histogramme) non lue."
+   "issue": "Fig. 3 : concentration de NPL (µM) lue pour les composés 5, 6, 7, 8, 9, 10, 11 (CdS) et 16, 17, 18, 19 (CdSe), chaque point rattaché à son précurseur par son k_obs en abscisse ; précision ≈ ±0,1 µM, deux chiffres significatifs. Les points CdS 12, 13, 14 se superposent vers 0,9 µM et le point CdSe 20 est trop près de zéro : non lus. Fig. 5B : λmax d'absorption et de luminescence lus aux x = 0, 0,2, 0,5, 0,7, 1, arrondis à 10 nm (précision de lecture ≈ ±5 nm) ; Fig. 5C : FWHM de luminescence lue à x = 0, 0,5, 0,7, 1 (≈ ±1 nm) ; les points x = 0,2 et 0,3 sont des cercles vides (émission non déconvoluée de l'émission de pièges) et ne sont pas lus. Longueur de bord du CdS (axe de droite de la Fig. 3, non linéaire) : lue pour les composés 5 à 11 par interpolation entre les repères 15, 20, 25 nm, ±2 nm (14, 15, 15, 19, 15, 20, 21 nm). Fig. 2E (CdSe, réaction avec 18) : moyenne estimée sur les hauteurs de barres, environ 50 nm à 150 s et 70 nm à 3600 s, arrondie à 10 nm, ±5 nm. Fig. 5B, CdSe (x = 1) : absorption et luminescence lues vers 465 nm, arrondies à 470 comme les autres points ; non modifié."
   },
   {
    "where": "Hétérostructures, variation « second_chalcogenourea_precursor »",
@@ -2761,6 +2980,34 @@
   {
    "where": "method_sources",
    "issue": "Les renvois [[cit30]], [[cit25]], [[cit45]], [[cit11]] pour la synthèse des précurseurs viennent de la phrase « (1, 4, 8);[[cit30]] (2, 7);[[cit25]]3;[[cit45]] (12–20).[[cit11]] ». Pour 5, 6, 9 et 10, la phrase renvoie à l'annexe, pas à une référence. La liste de références donne cit45 identique à cit24 (même article) ; l'identifiant écrit dans le texte est gardé."
+  },
+  {
+   "where": "STEM-EELS, température de mesure",
+   "issue": "Les Méthodes écrivent « All data was collected at −140 °C », le texte « unstable to beam damage unless measurements were conducted at 100 K or lower » et la légende de la Fig. 6 « STEM EELS at 100 K » ; −140 °C vaut environ 133 K. Contradiction de l'article non tranchée ; les deux valeurs figurent dans les conditions des caractérisations STEM-EELS et dans une annotation limite_reproductibilite."
+  },
+  {
+   "where": "Fig. S15 et alliage homogène 8 + 18 (Fig. 4B)",
+   "issue": "Le texte cite la Fig. S15 (STEM-EELS, aliquotes) pour l'alliage homogène de la Fig. 4B, mais les temps d'aliquote de la légende de la Fig. S15C (15, 45, 90, 150, 400/300, 500 s) sont ceux de la légende de la Fig. 4C (échantillon gradué 3 + 18), pas ceux de la Fig. 4B (150 à 1500 s). L'attribution du texte est gardée (branche 8 + 18) ; le rattachement peut être inexact dans l'article."
+  },
+  {
+   "where": "Série d'alliages, convention de x (Fig. 5 et Fig. S15)",
+   "issue": "Dans la Fig. 5, x est la fraction molaire de Se (CdSexS1−x) ; la légende de la Fig. S15 liste les rapports de x = 1,0 (CdS pur, en tête) à x = 0 (CdSe pur, en fin), donc x y est la fraction de S. Huit compositions (0,1, 0,3, 0,33, 0,4, 0,6, 0,66, 0,8, 0,9) n'ont pas de voie : voir l'inventaire."
+  },
+  {
+   "where": "CdS0.8Se0.2_alloy_x0.2, ν(CdS)LO",
+   "issue": "Table S4 : ν(CdS)LO = 299,4 ± 0,4 cm−1 pour CdS0,8Se0,2, supérieur à 298,8 cm−1 du CdS pur, ce qui contredit en apparence « both frequencies decrease as their mole fraction decreases ». Valeur recopiée sans correction ; l'écart est inférieur à la variabilité annoncée."
+  },
+  {
+   "where": "Branches de la série d'alliages (x = 0, 0,2, 0,7, 1), variation « Se_S_precursor_ratio »",
+   "issue": "L'article ne nomme aucun précurseur pour la série Raman (« precursors with matched reactivities ») et x = 0 ou x = 1 n'a qu'un seul chalcogène : le rapport des précurseurs et leur identité sont donc déclarés non cités. Les branches restent rattachées à l'alliage 8 + 18 par héritage de la Fig. 5 sans que l'article l'écrive pour le Raman, et ne répètent pas les voies CdS_8 et CdSe_18. Le nom de paramètre ne correspond à aucun paramètre du protocole hérité, d'où l'avertissement du contrôle."
+  },
+  {
+   "where": "CdSe_18 étapes 10 à 16 (purification), atmosphère",
+   "issue": "L'atmosphère « air » vient de la phrase générale des Méthodes « All manipulations were performed in air unless otherwise indicated » ; elle est appliquée à ces étapes parce qu'aucune autre atmosphère n'y est indiquée (la boîte à gants, l'argon et le refroidissement sous argon concernent d'autres étapes)."
+  },
+  {
+   "where": "Préparation des échantillons de STEM, dilution",
+   "issue": "Dilution supplémentaire avant dépôt : 4–5× dans les Méthodes, 4–7× dans l'annexe (après 35× pour l'UV-vis, à partir d'une aliquote de 0,1 mL). Les deux valeurs sont gardées dans les conditions."
   }
  ]
 }
