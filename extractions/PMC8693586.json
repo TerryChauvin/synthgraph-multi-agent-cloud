@@ -103,12 +103,43 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "spectrum of the RBM extract (not of the AgNPs), Fig. S3: peak at 3402 cm-1, peak at 2931 cm-1, broad peak from 2287 to 1193 cm-1 with a sharp peak at 1457 cm-1",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Figure S3 FT-IR spectra of Bazheng Mixture residue extract (the peak at 3402 cm-1 corresponds"
+    }
+   ],
    "outcomes": [
     {
      "property": "primary_extract_ph",
      "value_num": 4.0,
      "quote": "with 5.0 mL primary extract of RBM (pH 4.0)"
+    },
+    {
+     "property": "FTIR_peak_3402",
+     "value_num": 3402,
+     "unit": "cm-1",
+     "quote": "the peak at 3402 cm-1 corresponds"
+    },
+    {
+     "property": "FTIR_peak_2931",
+     "value_num": 2931,
+     "unit": "cm-1",
+     "quote": "The peak at 2931 cm-1 belongs to the stretching vibration of methyl groups."
+    },
+    {
+     "property": "FTIR_broad_peak_range",
+     "value_text": "from 2287 to 1193 cm-1",
+     "quote": "The broad peak from 2287 to 1193 cm-1, which has a sharp peak locating at 1457 cm-1"
+    },
+    {
+     "property": "FTIR_sharp_peak_1457",
+     "value_num": 1457,
+     "unit": "cm-1",
+     "quote": "which has a sharp peak locating at 1457 cm-1"
     }
    ],
    "missing_fields": [
@@ -178,11 +209,11 @@
     {
      "order": 1,
      "action": "react",
-     "description": "Mix the RBM extract and the 10 mM AgNO3 solution under ultrasonic radiation at ambient temperature for the incubation time.",
+     "description": "Mix the RBM extract (pH of the extract given) and the 10 mM AgNO3 solution under ultrasonic radiation at ambient temperature for the incubation time.",
      "quote": "AgNPs were initially prepared by reducing Ag+ in 5.0 mL of 10 mM AgNO3 solution with 5.0 mL primary extract of RBM (pH 4.0) under ultrasonic radiation at ambient temperature.",
      "parameters": [
       {
-       "name": "ph",
+       "name": "extract_ph",
        "value_num": 4.0,
        "quote": "with 5.0 mL primary extract of RBM (pH 4.0)"
       },
@@ -210,7 +241,8 @@
       "ultrasonic_frequency",
       "addition_order",
       "stirring_speed",
-      "ph_adjustment_reagent"
+      "ph_adjustment_reagent",
+      "mixture_ph"
      ]
     },
     {
@@ -326,7 +358,8 @@
    "missing_fields": [
     "AgNP_yield",
     "ph_adjustment_reagent",
-    "ultrasonic_power"
+    "ultrasonic_power",
+    "mixture_ph"
    ]
   },
   {
@@ -342,7 +375,7 @@
    "quote": "We firstly tested the effect of RBM extract pH.",
    "variations": [
     {
-     "parameter": "ph",
+     "parameter": "extract_ph",
      "step_order": 1,
      "value_num": 5.0,
      "unit": null,
@@ -363,6 +396,11 @@
      "from_figure": "Fig. 1A",
      "quote": "Fig. 1 (A) UV-vis spectra of mixture after the reaction between RBM extract and AgNO3 at different pH values; (B) average size of AgNPs obtained from (A).",
      "value_num": 0.36
+    },
+    {
+     "property": "SPR_peak_position_range_pH_series",
+     "value_text": "band shift between 411 to 445 nm",
+     "quote": "As shown in Fig. 1A, with pH increasing to 10.0, the SPR peak of AgNPs at 445 nm sharply increases accompanying with band shift between 411 to 445 nm."
     }
    ]
   },
@@ -379,7 +417,7 @@
    "quote": "We firstly tested the effect of RBM extract pH.",
    "variations": [
     {
-     "parameter": "ph",
+     "parameter": "extract_ph",
      "step_order": 1,
      "value_num": 6.0,
      "unit": null,
@@ -400,6 +438,11 @@
      "from_figure": "Fig. 1A",
      "quote": "Fig. 1 (A) UV-vis spectra of mixture after the reaction between RBM extract and AgNO3 at different pH values; (B) average size of AgNPs obtained from (A).",
      "value_num": 0.55
+    },
+    {
+     "property": "SPR_peak_position_range_pH_series",
+     "value_text": "band shift between 411 to 445 nm",
+     "quote": "As shown in Fig. 1A, with pH increasing to 10.0, the SPR peak of AgNPs at 445 nm sharply increases accompanying with band shift between 411 to 445 nm."
     }
    ]
   },
@@ -416,7 +459,7 @@
    "quote": "We firstly tested the effect of RBM extract pH.",
    "variations": [
     {
-     "parameter": "ph",
+     "parameter": "extract_ph",
      "step_order": 1,
      "value_num": 7.0,
      "unit": null,
@@ -437,6 +480,11 @@
      "from_figure": "Fig. 1A",
      "quote": "Fig. 1 (A) UV-vis spectra of mixture after the reaction between RBM extract and AgNO3 at different pH values; (B) average size of AgNPs obtained from (A).",
      "value_num": 0.57
+    },
+    {
+     "property": "SPR_peak_position_range_pH_series",
+     "value_text": "band shift between 411 to 445 nm",
+     "quote": "As shown in Fig. 1A, with pH increasing to 10.0, the SPR peak of AgNPs at 445 nm sharply increases accompanying with band shift between 411 to 445 nm."
     }
    ]
   },
@@ -453,7 +501,7 @@
    "quote": "We firstly tested the effect of RBM extract pH.",
    "variations": [
     {
-     "parameter": "ph",
+     "parameter": "extract_ph",
      "step_order": 1,
      "value_num": 8.0,
      "unit": null,
@@ -474,6 +522,11 @@
      "from_figure": "Fig. 1A",
      "quote": "Fig. 1 (A) UV-vis spectra of mixture after the reaction between RBM extract and AgNO3 at different pH values; (B) average size of AgNPs obtained from (A).",
      "value_num": 0.62
+    },
+    {
+     "property": "SPR_peak_position_range_pH_series",
+     "value_text": "band shift between 411 to 445 nm",
+     "quote": "As shown in Fig. 1A, with pH increasing to 10.0, the SPR peak of AgNPs at 445 nm sharply increases accompanying with band shift between 411 to 445 nm."
     }
    ]
   },
@@ -490,7 +543,7 @@
    "quote": "We firstly tested the effect of RBM extract pH.",
    "variations": [
     {
-     "parameter": "ph",
+     "parameter": "extract_ph",
      "step_order": 1,
      "value_num": 9.0,
      "unit": null,
@@ -511,6 +564,11 @@
      "from_figure": "Fig. 1A",
      "quote": "Fig. 1 (A) UV-vis spectra of mixture after the reaction between RBM extract and AgNO3 at different pH values; (B) average size of AgNPs obtained from (A).",
      "value_num": 0.87
+    },
+    {
+     "property": "SPR_peak_position_range_pH_series",
+     "value_text": "band shift between 411 to 445 nm",
+     "quote": "As shown in Fig. 1A, with pH increasing to 10.0, the SPR peak of AgNPs at 445 nm sharply increases accompanying with band shift between 411 to 445 nm."
     }
    ]
   },
@@ -527,7 +585,7 @@
    "quote": "We firstly tested the effect of RBM extract pH.",
    "variations": [
     {
-     "parameter": "ph",
+     "parameter": "extract_ph",
      "step_order": 1,
      "value_num": 10.0,
      "unit": null,
@@ -561,6 +619,16 @@
      "from_figure": "Fig. 2A",
      "quote": "Fig. 2 (A) UV-vis spectra of mixtures after the reaction between RBM extract and AgNO3 at different ratios; (B) average size of AgNPs obtained from (A).",
      "value_text": "about 1.5 (curve of ratio 1:1)"
+    },
+    {
+     "property": "SPR_peak_position_range_pH_series",
+     "value_text": "band shift between 411 to 445 nm",
+     "quote": "As shown in Fig. 1A, with pH increasing to 10.0, the SPR peak of AgNPs at 445 nm sharply increases accompanying with band shift between 411 to 445 nm."
+    },
+    {
+     "property": "SPR_band_shift_time_series",
+     "value_text": "no obvious band shift was displayed",
+     "quote": "And then, the absorption intensity increased steadily as a function of incubation time and reached a maximum after 5 h, where no obvious band shift was displayed."
     }
    ]
   },
@@ -1572,6 +1640,11 @@
      "from_figure": "Fig. 3A",
      "quote": "Fig. 3 (A) UV-vis spectra of mixture after the reaction between RBM extract and AgNO3 at different times; (B) average size of AgNPs obtained from (A).",
      "value_num": 1.1
+    },
+    {
+     "property": "SPR_band_shift_time_series",
+     "value_text": "no obvious band shift was displayed",
+     "quote": "And then, the absorption intensity increased steadily as a function of incubation time and reached a maximum after 5 h, where no obvious band shift was displayed."
     }
    ]
   },
@@ -1609,6 +1682,11 @@
      "from_figure": "Fig. 3A",
      "quote": "Fig. 3 (A) UV-vis spectra of mixture after the reaction between RBM extract and AgNO3 at different times; (B) average size of AgNPs obtained from (A).",
      "value_num": 1.1
+    },
+    {
+     "property": "SPR_band_shift_time_series",
+     "value_text": "no obvious band shift was displayed",
+     "quote": "And then, the absorption intensity increased steadily as a function of incubation time and reached a maximum after 5 h, where no obvious band shift was displayed."
     }
    ]
   },
@@ -1646,6 +1724,11 @@
      "from_figure": "Fig. 3A",
      "quote": "Fig. 3 (A) UV-vis spectra of mixture after the reaction between RBM extract and AgNO3 at different times; (B) average size of AgNPs obtained from (A).",
      "value_num": 1.1
+    },
+    {
+     "property": "SPR_band_shift_time_series",
+     "value_text": "no obvious band shift was displayed",
+     "quote": "And then, the absorption intensity increased steadily as a function of incubation time and reached a maximum after 5 h, where no obvious band shift was displayed."
     }
    ]
   },
@@ -1786,6 +1869,17 @@
      "property": "uptake_cancer_cells_side_scatter",
      "value_text": "no significant increase of SSC values for the three cell lines (negligible internalization)",
      "quote": "the SSC values for these three cells do not have significant increase, indicating the negligible AgNPs' internalization"
+    },
+    {
+     "property": "SPR_band_shift_time_series",
+     "value_text": "no obvious band shift was displayed",
+     "quote": "And then, the absorption intensity increased steadily as a function of incubation time and reached a maximum after 5 h, where no obvious band shift was displayed."
+    },
+    {
+     "property": "antibacterial_growth_inhibition_lowest_dose_tested",
+     "value_num": 0.8,
+     "unit": "μg mL−1",
+     "quote": "The growth inhibition was clearly observed even in 0.8 μg mL−1 of AgNPs."
     }
    ],
    "succeeded": true,
@@ -1880,6 +1974,11 @@
      "from_figure": "Fig. 2A",
      "quote": "Fig. 2 (A) UV-vis spectra of mixtures after the reaction between RBM extract and AgNO3 at different ratios; (B) average size of AgNPs obtained from (A).",
      "value_text": "about 1.4 to 1.5; the five curves are nearly superimposed"
+    },
+    {
+     "property": "SPR_peak_position_range_ratio_series",
+     "value_text": "band shift between 403 to 410 nm",
+     "quote": "Meanwhile, on increasing dose of RBM extract, a band shift between 403 to 410 nm was observed in the absorption spectra, meaning the different size of AgNPs."
     }
    ]
   },
@@ -1915,6 +2014,11 @@
      "from_figure": "Fig. 2A",
      "quote": "Fig. 2 (A) UV-vis spectra of mixtures after the reaction between RBM extract and AgNO3 at different ratios; (B) average size of AgNPs obtained from (A).",
      "value_text": "about 1.4 to 1.5; the five curves are nearly superimposed"
+    },
+    {
+     "property": "SPR_peak_position_range_ratio_series",
+     "value_text": "band shift between 403 to 410 nm",
+     "quote": "Meanwhile, on increasing dose of RBM extract, a band shift between 403 to 410 nm was observed in the absorption spectra, meaning the different size of AgNPs."
     }
    ]
   },
@@ -1950,6 +2054,11 @@
      "from_figure": "Fig. 2A",
      "quote": "Fig. 2 (A) UV-vis spectra of mixtures after the reaction between RBM extract and AgNO3 at different ratios; (B) average size of AgNPs obtained from (A).",
      "value_text": "about 1.4 to 1.5; the five curves are nearly superimposed"
+    },
+    {
+     "property": "SPR_peak_position_range_ratio_series",
+     "value_text": "band shift between 403 to 410 nm",
+     "quote": "Meanwhile, on increasing dose of RBM extract, a band shift between 403 to 410 nm was observed in the absorption spectra, meaning the different size of AgNPs."
     }
    ]
   },
@@ -1991,6 +2100,11 @@
      "value_num": 408,
      "unit": "nm",
      "quote": "When the ratio of RBM extract to AgNO3 is 1 : 5, a strong band with maximum absorbance at 408 nm was observed."
+    },
+    {
+     "property": "SPR_peak_position_range_ratio_series",
+     "value_text": "band shift between 403 to 410 nm",
+     "quote": "Meanwhile, on increasing dose of RBM extract, a band shift between 403 to 410 nm was observed in the absorption spectra, meaning the different size of AgNPs."
     }
    ]
   }
@@ -2478,12 +2592,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "pH4_2h",
-   "text": "Hypothèse de chimiste : les composés réducteurs de l'extrait (probablement des polyphénols et flavonoïdes, des sucres réducteurs, des acides aminés) réduisent Ag+ en Ag0, qui nuclée puis est coiffé par ces mêmes biomolécules ; à pH élevé la déprotonation des phénols augmente leur pouvoir réducteur et la complexation de Ag+, ce qui expliquerait la bande SPR plus intense et la nucléation plus rapide donnant de plus petites particules. Les ultrasons favorisent probablement le mélange et la nucléation par cavitation. Ordre de grandeur : 5,0 mL de AgNO3 10 mM représentent 0,05 mmol d'argent (≈ 5,4 mg), face à un extrait obtenu à 50 g de résidu par litre, donc très en excès de matière organique."
+   "text": "Hypothèse de chimiste, non démontrée par l'article : les composés réducteurs de l'extrait (probablement polyphénols et flavonoïdes, sucres réducteurs, acides aminés) réduisent Ag+ en Ag0, qui nuclée puis est recouvert par les polysaccharides, protéines et carboxylates oxydés de l'extrait (zêta négatif). À pH élevé, la déprotonation des phénols (phénolates) et l'énolisation des sucres abaissent leur potentiel d'oxydation : la réduction est plus rapide, la nucléation en rafale donne plus de germes et des particules plus petites ; au-dessus de pH ≈ 8,5 (à 5 mM d'Ag+, si le pH de l'extrait est conservé), Ag2O peut précipiter puis être réduit par l'extrait, ce qui pourrait expliquer la taille anormale à pH 9,0. L'explication des auteurs (ligands complexants forts pour Ag+) est discutable, car complexer Ag+ abaisse en général son potentiel et ralentit sa réduction. Les ultrasons agitent, échauffent et peuvent ajouter une réduction sonochimique minoritaire. Ordre de grandeur : 5,0 mL de AgNO3 10 mM représentent 0,05 mmol d'argent (≈ 5,4 mg), face à un extrait obtenu à 50 g de résidu par litre, donc très en excès de matière organique."
   },
   {
    "type": "securite_analyse",
    "route": "pH4_2h",
-   "text": "AgNO3 est oxydant, corrosif et tache la peau (gants, lunettes) ; les solutions et boues d'argent sont à collecter comme déchets métalliques toxiques pour le milieu aquatique. Le réactif d'ajustement du pH de l'extrait n'est pas indiqué : si une base forte est utilisée, elle est corrosive. Les nanoparticules d'argent lyophilisées forment une poudre fine à ne pas inhaler. Les essais biologiques manipulent des bactéries (E. coli, S. aureus), des lignées cellulaires humaines et du DMSO, ce qui demande les précautions habituelles de laboratoire de biologie."
+   "text": "AgNO3 est oxydant, corrosif et tache la peau (gants, lunettes) ; les solutions et boues d'argent sont à collecter comme déchets métalliques toxiques pour le milieu aquatique. Le réactif d'ajustement du pH de l'extrait n'est pas indiqué : si une base forte est utilisée, elle est corrosive ; si c'est de l'ammoniaque, ne jamais laisser sécher ni stocker une solution ammoniacale d'argent (risque d'argent fulminant, explosif). Les nanoparticules d'argent lyophilisées forment une poudre fine à ne pas inhaler. Les essais biologiques manipulent des bactéries (E. coli, S. aureus), des lignées cellulaires humaines et du DMSO, ce qui demande les précautions habituelles de laboratoire de biologie."
   },
   {
    "type": "limite_reproductibilite",
@@ -2496,6 +2610,60 @@
    "route": "RBM_extract",
    "text": "Seuls la masse de résidu (5,0 g), le volume d'eau (100,0 mL), la durée de sonication (4 h), la filtration et le stockage à 4 °C sont donnés. La température pendant la sonication, la puissance, le type de filtre et la durée de conservation avant usage ne sont pas indiqués. Il n'y a pas d'étape de séchage ni de dosage de la teneur de l'extrait en matière sèche.",
    "quote": "which was further filtered and stored in 4 °C for the following studies"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pH4_2h",
+   "text": "Les 45 autres échantillons sont notés comme héritant de la purification de l'échantillon de base (centrifugation 30 min à 10 000 rpm, lavage à l'eau, lyophilisation 12 h) parce que l'article dit que pH, proportion et durée ont été évalués « comme décrit plus haut ». Or le suivi périodique par UV-vis et DLS de 1 à 6 h n'implique pas que chaque échantillon ait été purifié : les tailles DLS des tableaux S1 et S2 peuvent avoir été mesurées dans le mélange brut, et seul l'échantillon pH 10,0 / 1 : 1 / 6 h (caractérisé et testé) est sûrement centrifugé, lavé et lyophilisé.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pH4_2h",
+   "text": "Le réactif qui porte l'extrait de pH 4,0 à pH 5,0–10,0 n'est pas donné, ni le pH du mélange avec AgNO3 (seul le pH de l'extrait est écrit) : NaOH et NH3 ne donnent pas la même chimie (NH3 complexe Ag+ en [Ag(NH3)2]+, comme le réactif de Tollens, ce qui change la vitesse de réduction et la taille ; une solution ammoniacale d'argent ne doit jamais être séchée ni conservée, risque d'argent fulminant). Au-dessus de pH ≈ 8,5 (Ksp de AgOH ≈ 1,5–2 × 10⁻⁸ avec 5 mM d'Ag+ si le mélange garde le pH de l'extrait), Ag2O brun peut précipiter, ce qui pourrait expliquer la taille de 176 nm à pH 9,0, hors tendance et sur un seul lot ; non vérifié (aucune DRX, aucun pH de mélange).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pH4_2h",
+   "text": "Les absorbances lues (0,13 à 1,5) sont incompatibles avec 5 mM d'argent réduit (0,050 mmol dans 10 mL ; une absorbance supérieure à 17 serait attendue d'après l'extinction des atomes d'argent, Abkhalimov et al. 2022) : les spectres ont été dilués d'un facteur non dit, donc les intensités ne se convertissent pas en rendement et la conclusion « rendement constant » de la série en proportion n'est pas quantitative. L'échantillon pH 10,0 / 1 : 1 / 2 h a une absorbance ≈ 1,0 sur les Fig. 1A et 3A mais ≈ 1,5 sur la Fig. 2A (dilution ou lots différents). Les positions du maximum SPR par échantillon ne sont pas extraites quand l'article ne les écrit pas : les courbes sont larges et superposées.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pH4_2h",
+   "text": "Ultrasons à « température ambiante » pendant 1 à 6 h sans thermostat : un bain s'échauffe de plusieurs °C par heure, ce qui accélère la réduction et confond durée et température dans la série en durée. Aucun témoin (AgNO3 sous ultrasons sans extrait, extrait + AgNO3 sans ultrasons, essai à l'abri de la lumière) : la part de la photoréduction et de la sonochimie n'est pas séparée de celle de l'extrait. Les tailles DLS ne précisent pas le type de moyenne et leurs écarts-types viennent de mesures répétées d'un même échantillon, non de lots indépendants ; l'« optimum » à 6 h (22,2 nm contre 23,7 nm à 5 h et 25,1 nm à 3 h) n'est donc pas significatif.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pH10_2h_ratio_1to5",
+   "text": "Les deux contraintes écrites (AgNO3 = 5,0 mL et mélange = 10,0 mL constants) ne sont compatibles qu'avec le rapport 1 : 1. Si le mélange fait 10,0 mL, l'argent varie de 33 à 83 µmol (facteur 2,5) et une bande SPR d'intensité inchangée ne dirait pas un rendement constant ; si AgNO3 reste à 5,0 mL, le volume total varie de 6 à 15 mL. Les volumes réels de chaque rapport (et l'éventuel complément d'eau) sont inconnus, donc la série en proportion n'est pas refaisable et la conclusion « rendement insensible à la proportion » n'a pas de sens tant qu'ils ne sont pas connus.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "RBM_extract",
+   "text": "L'extrait n'est pas caractérisé (ni extrait sec, ni phénols totaux) et vient d'un résidu industriel de lot non identifié : le pouvoir réducteur de toute la série varie probablement d'un lot à l'autre, et la sonication de 4 h n'est pas thermostatée, ce qui change ce qui est extrait. Le FTIR de la Fig. S3 (annexe, légende seule) est celui de l'extrait et non des AgNPs lavées : il ne peut pas « confirmer » les agents réducteurs et de recouvrement des particules (il faudrait comparer extrait et AgNPs), l'instrument n'est pas nommé, et les attributions sont discutables (bande à 3402 cm-1 dite « presque entièrement N–H » dans un extrait riche en polysaccharides où domine O–H ; « bande large de 2287 à 1193 cm-1 » qui n'est pas une bande unique).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pH10_6h",
+   "text": "Les méthodes des essais biologiques contiennent des coquilles d'unités, recopiées telles quelles : DPPH à 2,5 mg mL−1 (soit ≈ 3 mM dans le mélange et une absorbance ≈ 40, non mesurable ; probablement 0,025 mg mL−1 ou une unité erronée, d'après l'extinction du DPPH de Brand-Williams et al. 1995) ; MTT « 20 mL » et DMEM ou DMSO « 150 mL » par puits d'une plaque 96 puits (des µL) et MTT « 5,0 μg mL−1 » (probablement mg mL−1) ; HeLa dite « human breast cancer » alors que c'est une lignée de cancer du col de l'utérus (« cervical cancer » dans Materials). Aucun témoin d'interférence n'est rapporté (AgNPs + MTT sans cellules ; blanc d'échantillon au DPPH), alors que les AgNPs absorbent dans le visible et peuvent réduire MTT. Un piégeage du DPPH de 44,8 % à 0,8 μg mL−1 demanderait plus d'équivalents réducteurs que 0,8 µg de matière n'en fournit (au plus ≈ 13 nmol d'électrons contre au moins ≈ 45 nmol de DPPH à réduire, même à 0,1 mM) et la réponse presque plate (44,8 à 85,8 % sur un facteur 125) suggère un artefact : l'activité « comparable à la vitamine C » n'est pas établie.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pH10_6h",
+   "text": "Toutes les doses biologiques (0,8 à 200 μg mL−1) sont des masses de poudre lyophilisée dont la teneur en argent n'est pas dosée (ni ICP ni ATG) et dont le rendement par lot n'est pas donné (au plus 5,4 mg d'argent par lot de 10 mL) ; la poudre contient aussi de l'extrait adsorbé non quantifié. La dose d'argent réelle de chaque essai est donc inconnue, et la comparaison avec les AgNPs d'autres études (400 ou 1,56 μg mL−1) n'est pas concluante.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "pH10_6h",
+   "text": "Réserves sur les résultats biologiques : les IC50 de HCT116 (13,07) et de HeLa (26,18 μg mL−1) sont supérieures à des concentrations où la viabilité citée est déjà inférieure à 50 % ; la CMI de 50,0 μg mL−1 contraste avec l'inhibition « clairement observée dès 0,8 μg mL−1 », la croissance est suivie 24 h dans les méthodes mais sur 9 h dans les résultats, et le milieu LB (≈ 10 g/L de NaCl) précipite une partie de l'Ag+ en AgCl ; une hausse de la diffusion latérale (SSC) ne distingue pas adsorption et internalisation ; « nécrose par désintégration de la paroi cellulaire » est écrit pour des cellules de mammifère, qui n'ont pas de paroi ; le zêta de −25,5 mV est présenté comme un « haut degré de stabilité » alors qu'il est à la limite du critère ±25 mV cité ; sans DRX, une phase minoritaire (AgCl, Ag2O) n'est pas exclue par la seule SAED.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -2514,8 +2682,8 @@
  ],
  "doubts": [
   {
-   "where": "pH4_2h, étape 1 (pH 4.0)",
-   "issue": "L'extrait primaire est dit « pH 4.0 » ; les autres pH sont obtenus par un réglage dont ni le réactif ni la méthode ne sont donnés. Les branches pH 5,0 à 10,0 ne modifient que le paramètre pH de l'étape 1 du parent, lecture littérale."
+   "where": "pH4_2h, étape 1 (paramètre extract_ph = 4.0)",
+   "issue": "L'extrait primaire est dit « pH 4.0 » ; les autres pH sont obtenus par un réglage dont ni le réactif ni la méthode ne sont donnés. Les branches pH 5,0 à 10,0 ne modifient que le paramètre pH de l'étape 1 du parent, lecture littérale. Le pH 4.0 est celui de l'extrait primaire avant mélange (« primary extract of RBM (pH 4.0) ») : le pH du mélange avec AgNO3 n'est jamais donné, le paramètre est donc nommé extract_ph (pas « ph ») et mixture_ph est inscrit aux manques."
   },
   {
    "where": "Série pH × durée (Table S1)",
@@ -2523,7 +2691,7 @@
   },
   {
    "where": "Série en proportion (Fig. 2, Table S2)",
-   "issue": "« the volume of AgNO3 (5.0 mL) and mixture (10.0 mL) kept in constant » est incompatible avec des rapports 2 : 1 à 1 : 5 si le volume de AgNO3 est fixé à 5,0 mL et celui du mélange à 10,0 mL. Les volumes de chaque branche ne sont donc pas extraits ; seule la proportion est donnée en value_text."
+   "issue": "« the volume of AgNO3 (5.0 mL) and mixture (10.0 mL) kept in constant » est incompatible avec des rapports 2 : 1 à 1 : 5 si le volume de AgNO3 est fixé à 5,0 mL et celui du mélange à 10,0 mL. Les volumes de chaque branche ne sont donc pas extraits ; seule la proportion est donnée en value_text. Deux lectures incompatibles : mélange fixé à 10,0 mL (la quantité d'argent varie alors de 33 à 83 µmol, facteur 2,5, et une bande SPR d'intensité inchangée ne dit plus un rendement constant) ou AgNO3 fixé à 5,0 mL (le volume total varie de 6 à 15 mL). L'article ne tranche pas et dit lui-même que l'intensité inchangée viendrait de l'épuisement de Ag+."
   },
   {
    "where": "pH7_2h, taille DLS",
@@ -2535,7 +2703,7 @@
   },
   {
    "where": "Fig. 1A, 2A, 3A (valeurs lues sur figure)",
-   "issue": "Absorbance au maximum de la bande SPR, lue à 2 chiffres significatifs (précision ≈ ± 0.05) : Fig. 1A (pH 4,0 à 10,0), Fig. 3A (1 à 6 h ; les courbes de 3 à 6 h sont presque confondues), Fig. 2A (valeur 1.4–1.5 pour tous les rapports, donnée en texte). L'échantillon pH 10,0 / 1 : 1 / 2 h a une absorbance ≈ 1.0 sur les Fig. 1A et 3A mais ≈ 1.5 sur la Fig. 2A : l'article ne l'explique pas (dilution ou lot différents ?)."
+   "issue": "Absorbance au maximum de la bande SPR, lue à 2 chiffres significatifs (précision ≈ ± 0.05) : Fig. 1A (pH 4,0 à 10,0), Fig. 3A (1 à 6 h ; les courbes de 3 à 6 h sont presque confondues), Fig. 2A (valeur 1.4–1.5 pour tous les rapports, donnée en texte). L'échantillon pH 10,0 / 1 : 1 / 2 h a une absorbance ≈ 1.0 sur les Fig. 1A et 3A mais ≈ 1.5 sur la Fig. 2A : l'article ne l'explique pas (dilution ou lot différents ?). Positions du maximum SPR non lues sur figure : les maxima sont plats, très proches (écarts inférieurs à la précision de lecture) et les courbes sont superposées ; seules les valeurs écrites dans le texte sont extraites (445, 412 et 408 nm, plages 411–445, 403–410 nm, « no obvious band shift »). Les plages de série sont recopiées sur chaque échantillon de la série car le texte ne les attribue à aucun échantillon en particulier."
   },
   {
    "where": "pH10_6h, essais biologiques",
@@ -2547,7 +2715,23 @@
   },
   {
    "where": "Section antibactérienne",
-   "issue": "Méthodes : croissance suivie 24 h ; Résultats : courbes tracées sur 9,0 h ; seule la CMI de 50,0 μg mL−1 est extraite."
+   "issue": "Méthodes : croissance suivie 24 h ; Résultats : courbes tracées sur 9,0 h ; seule la CMI de 50,0 μg mL−1 est extraite. La CMI de 50,0 μg mL−1 coexiste avec « growth inhibition was clearly observed even in 0.8 μg mL−1 », extraite comme résultat séparé ; les deux sont écrits tels quels."
+  },
+  {
+   "where": "Séries pH, pH × durée, proportion, durée : étapes 2 à 4 de pH4_2h (centrifugation, lavage, lyophilisation) héritées par les 45 autres échantillons",
+   "issue": "L'article décrit une seule purification (« The AgNPs were purified by centrifuging the mixture for 30 min at 10 000 rpm », lavage à l'eau, lyophilisation 12 h) et dit que pH, proportion et durée ont été évalués « as per the procedures mentioned above » : l'héritage est retenu. Mais les échantillons sont suivis « periodically » par UV-vis et DLS de 1 à 6 h, ce qui n'implique pas que chacun ait été centrifugé, lavé et lyophilisé (mesures possibles dans le mélange brut) ; seul pH10_6h (caractérisé et testé) est sûrement purifié."
+  },
+  {
+   "where": "RBM_extract, FTIR (Fig. S3, annexe)",
+   "issue": "Le spectre FTIR dont la légende donne les bandes est celui de l'extrait RBM seul, non celui des AgNPs ; les bandes sont donc rangées en caractérisation et résultats de RBM_extract. L'instrument FTIR n'est pas nommé. Les attributions des auteurs (3402 cm-1 « presque entièrement N–H », « broad peak » de 2287 à 1193 cm-1) sont recopiées sans être reprises."
+  },
+  {
+   "where": "pH10_6h, essais DPPH et MTT (unités écrites par les auteurs)",
+   "issue": "Valeurs recopiées littéralement, sans correction : DPPH « 2.5 mg mL−1 » ; MTT « 20 mL » (5.0 μg mL−1), DMEM « 150 mL » et DMSO « 150 mL » par puits d'une plaque 96 puits (volumes de l'ordre du µL attendus, concentration de MTT probablement en mg mL−1). Ces coquilles ne changent aucune valeur extraite de la synthèse."
+  },
+  {
+   "where": "pH10_6h, IC50 contre viabilités",
+   "issue": "IC50 de HCT116 (13.07 μg mL−1) et de HeLa (26.18 μg mL−1) supérieures à des concentrations où l'article donne déjà une viabilité inférieure à 50 % (41.1 % à 12.5 ; 48.1 % à 20.0 μg mL−1) : incohérence interne de l'article, valeurs extraites telles quelles."
   }
  ]
 }

@@ -1,0 +1,153 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8693586</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8693586 — A novel green synthesis of silver nanoparticles by the residues of Chinese herbal medicine and their biological activities.</h1>
+<h2>Voie : RBM_extract</h2>
+<pre class="mermaid">flowchart LR
+  R16137([&quot;residues of Bazheng Mixture (RBM), powder&lt;br/&gt;5 g&quot;]):::reactif
+  R16137 --&gt;|&quot;precursor&quot;| S19365
+  R16138([&quot;deionized water&lt;br/&gt;100 mL&quot;]):::reactif
+  R16138 --&gt;|&quot;solvent&quot;| S19365
+  S19365[&quot;&lt;b&gt;1. sonicate&lt;/b&gt;&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S19365 --&gt; S19366
+  S19366[&quot;&lt;b&gt;2. filter&lt;/b&gt;&quot;]:::etape
+  S19366 --&gt; S19367
+  S19367[&quot;&lt;b&gt;3. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S19367 --&gt; M
+  M{{&quot;aqueous extract of Bazheng Mixture residues (RBM)&lt;br/&gt;&quot;}}:::materiau
+  O77126[&quot;primary_extract_ph : 4&quot;]:::resultat
+  M -.-&gt; O77126
+  O77127[&quot;FTIR_peak_3402 : 3402 cm-1&quot;]:::resultat
+  M -.-&gt; O77127
+  O77128[&quot;FTIR_peak_2931 : 2931 cm-1&quot;]:::resultat
+  M -.-&gt; O77128
+  O77129[&quot;FTIR_broad_peak_range : from 2287 to 1193 cm-1&quot;]:::resultat
+  M -.-&gt; O77129
+  O77130[&quot;FTIR_sharp_peak_1457 : 1457 cm-1&quot;]:::resultat
+  M -.-&gt; O77130
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : pH4_2h</h2>
+<pre class="mermaid">flowchart LR
+  R16139([&quot;RBM extract (route RBM_extract)&lt;br/&gt;5 mL&quot;]):::reactif
+  R16139 --&gt;|&quot;intermediate&quot;| S19368
+  R16140([&quot;silver nitrate (10 mM aqueous solution)&lt;br/&gt;5 mL&quot;]):::reactif
+  R16140 --&gt;|&quot;precursor&quot;| S19368
+  R16141([&quot;ultrapure Milli-Q water (solvent of the solu…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16141 --&gt;|&quot;solvent&quot;| S19368
+  R16142([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16142 --&gt;|&quot;wash&quot;| S19368
+  S19368[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;extract_ph : 4&lt;br/&gt;temperature : ambient temperature&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S19368 --&gt; S19369
+  S19369[&quot;&lt;b&gt;2. centrifuge&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;centrifuge_speed : 10000 rpm&quot;]:::etape
+  S19369 --&gt; S19370
+  S19370[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S19370 --&gt; S19371
+  S19371[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;method : lyophilized&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S19371 --&gt; M
+  M{{&quot;silver nanoparticles (AgNPs) biosynthesized with …&lt;br/&gt;Ag&quot;}}:::materiau
+  O77131[&quot;dls_average_size : 112.3 nm&quot;]:::resultat
+  M -.-&gt; O77131
+  O77132[&quot;SPR_peak_position : 445 nm&quot;]:::resultat
+  M -.-&gt; O77132
+  O77133[&quot;SPR_peak_absorbance : 0.13&quot;]:::resultat
+  M -.-&gt; O77133
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12410{{&quot;pH4_2h&quot;}}:::materiau
+  B12411[&quot;pH5_2h&quot;]:::etape
+  B12410 --&gt;|&quot;extract_ph = 5&quot;| B12411
+  B12412[&quot;pH6_2h&quot;]:::etape
+  B12410 --&gt;|&quot;extract_ph = 6&quot;| B12412
+  B12413[&quot;pH7_2h&quot;]:::etape
+  B12410 --&gt;|&quot;extract_ph = 7&quot;| B12413
+  B12414[&quot;pH8_2h&quot;]:::etape
+  B12410 --&gt;|&quot;extract_ph = 8&quot;| B12414
+  B12415[&quot;pH9_2h&quot;]:::etape
+  B12410 --&gt;|&quot;extract_ph = 9&quot;| B12415
+  B12416[&quot;pH10_2h&quot;]:::etape
+  B12410 --&gt;|&quot;extract_ph = 10&quot;| B12416
+  B12417[&quot;pH4_1h&quot;]:::etape
+  B12410 --&gt;|&quot;duration = 1 h&quot;| B12417
+  B12418[&quot;pH4_3h&quot;]:::etape
+  B12410 --&gt;|&quot;duration = 3 h&quot;| B12418
+  B12419[&quot;pH4_4h&quot;]:::etape
+  B12410 --&gt;|&quot;duration = 4 h&quot;| B12419
+  B12420[&quot;pH4_5h&quot;]:::etape
+  B12410 --&gt;|&quot;duration = 5 h&quot;| B12420
+  B12421[&quot;pH4_6h&quot;]:::etape
+  B12410 --&gt;|&quot;duration = 6 h&quot;| B12421
+  B12422[&quot;pH5_1h&quot;]:::etape
+  B12411 --&gt;|&quot;duration = 1 h&quot;| B12422
+  B12423[&quot;pH5_3h&quot;]:::etape
+  B12411 --&gt;|&quot;duration = 3 h&quot;| B12423
+  B12424[&quot;pH5_4h&quot;]:::etape
+  B12411 --&gt;|&quot;duration = 4 h&quot;| B12424
+  B12425[&quot;pH5_5h&quot;]:::etape
+  B12411 --&gt;|&quot;duration = 5 h&quot;| B12425
+  B12426[&quot;pH5_6h&quot;]:::etape
+  B12411 --&gt;|&quot;duration = 6 h&quot;| B12426
+  B12427[&quot;pH6_1h&quot;]:::etape
+  B12412 --&gt;|&quot;duration = 1 h&quot;| B12427
+  B12428[&quot;pH6_3h&quot;]:::etape
+  B12412 --&gt;|&quot;duration = 3 h&quot;| B12428
+  B12429[&quot;pH6_4h&quot;]:::etape
+  B12412 --&gt;|&quot;duration = 4 h&quot;| B12429
+  B12430[&quot;pH6_5h&quot;]:::etape
+  B12412 --&gt;|&quot;duration = 5 h&quot;| B12430
+  B12431[&quot;pH6_6h&quot;]:::etape
+  B12412 --&gt;|&quot;duration = 6 h&quot;| B12431
+  B12432[&quot;pH7_1h&quot;]:::etape
+  B12413 --&gt;|&quot;duration = 1 h&quot;| B12432
+  B12433[&quot;pH7_3h&quot;]:::etape
+  B12413 --&gt;|&quot;duration = 3 h&quot;| B12433
+  B12434[&quot;pH7_4h&quot;]:::etape
+  B12413 --&gt;|&quot;duration = 4 h&quot;| B12434
+  B12435[&quot;pH7_5h&quot;]:::etape
+  B12413 --&gt;|&quot;duration = 5 h&quot;| B12435
+  B12436[&quot;pH7_6h&quot;]:::etape
+  B12413 --&gt;|&quot;duration = 6 h&quot;| B12436
+  B12437[&quot;pH8_1h&quot;]:::etape
+  B12414 --&gt;|&quot;duration = 1 h&quot;| B12437
+  B12438[&quot;pH8_3h&quot;]:::etape
+  B12414 --&gt;|&quot;duration = 3 h&quot;| B12438
+  B12439[&quot;pH8_4h&quot;]:::etape
+  B12414 --&gt;|&quot;duration = 4 h&quot;| B12439
+  B12440[&quot;pH8_5h&quot;]:::etape
+  B12414 --&gt;|&quot;duration = 5 h&quot;| B12440
+  B12441[&quot;pH8_6h&quot;]:::etape
+  B12414 --&gt;|&quot;duration = 6 h&quot;| B12441
+  B12442[&quot;pH9_1h&quot;]:::etape
+  B12415 --&gt;|&quot;duration = 1 h&quot;| B12442
+  B12443[&quot;pH9_3h&quot;]:::etape
+  B12415 --&gt;|&quot;duration = 3 h&quot;| B12443
+  B12444[&quot;pH9_4h&quot;]:::etape
+  B12415 --&gt;|&quot;duration = 4 h&quot;| B12444
+  B12445[&quot;pH9_5h&quot;]:::etape
+  B12415 --&gt;|&quot;duration = 5 h&quot;| B12445
+  B12446[&quot;pH9_6h&quot;]:::etape
+  B12415 --&gt;|&quot;duration = 6 h&quot;| B12446
+  B12447[&quot;pH10_1h&quot;]:::etape
+  B12416 --&gt;|&quot;duration = 1 h&quot;| B12447
+  B12448[&quot;pH10_3h&quot;]:::etape
+  B12416 --&gt;|&quot;duration = 3 h&quot;| B12448
+  B12449[&quot;pH10_4h&quot;]:::etape
+  B12416 --&gt;|&quot;duration = 4 h&quot;| B12449
+  B12450[&quot;pH10_5h&quot;]:::etape
+  B12416 --&gt;|&quot;duration = 5 h&quot;| B12450
+  B12451[&quot;pH10_6h&quot;]:::etape
+  B12416 --&gt;|&quot;duration = 6 h&quot;| B12451
+  B12452[&quot;pH10_2h_ratio_2to1&quot;]:::etape
+  B12416 --&gt;|&quot;RBM extract (route RBM_e… = RBM extract : AgNO3 = 2:1&quot;| B12452
+  B12453[&quot;pH10_2h_ratio_1to2&quot;]:::etape
+  B12416 --&gt;|&quot;RBM extract (route RBM_e… = RBM extract : AgNO3 = 1:2&quot;| B12453
+  B12454[&quot;pH10_2h_ratio_1to3&quot;]:::etape
+  B12416 --&gt;|&quot;RBM extract (route RBM_e… = RBM extract : AgNO3 = 1:3&quot;| B12454
+  B12455[&quot;pH10_2h_ratio_1to5&quot;]:::etape
+  B12416 --&gt;|&quot;RBM extract (route RBM_e… = RBM extract : AgNO3 = 1:5&quot;| B12455
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
