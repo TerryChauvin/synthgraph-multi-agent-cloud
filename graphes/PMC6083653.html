@@ -1,0 +1,54 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6083653</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6083653 — A rapid microwave synthesis of green-emissive carbon dots with solid-state fluorescence and pH-sensitive properties.</h1>
+<h2>Voie : L1</h2>
+<pre class="mermaid">flowchart LR
+  R15583([&quot;phthalic acid&lt;br/&gt;2 g&quot;]):::reactif
+  R15583 --&gt;|&quot;carbon_source&quot;| S18701
+  R15584([&quot;triethylenediamine hexahydrate&lt;br/&gt;feed ratio of 1 : 0.5&quot;]):::reactif
+  R15584 --&gt;|&quot;precursor&quot;| S18701
+  R15585([&quot;deionized water&lt;br/&gt;3 mL&quot;]):::reactif
+  R15585 --&gt;|&quot;solvent&quot;| S18701
+  R15586([&quot;deionized water (dialysis)&lt;br/&gt;500 mL&quot;]):::reactif
+  R15586 --&gt;|&quot;wash&quot;| S18701
+  S18701[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S18701 --&gt; S18702
+  S18702[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;duration : 60 s&lt;br/&gt;power : 700 W&quot;]:::etape
+  S18702 --&gt; S18703
+  S18703[&quot;&lt;b&gt;3. cool&lt;/b&gt;&quot;]:::etape
+  S18703 --&gt; S18704
+  S18704[&quot;&lt;b&gt;4. dialyze&lt;/b&gt;&lt;br/&gt;volume : 500 mL&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S18704 --&gt; S18705
+  S18705[&quot;&lt;b&gt;5. freeze_dry&lt;/b&gt;&quot;]:::etape
+  S18705 --&gt; M
+  M{{&quot;carbon quantum dots (CQDs)&lt;br/&gt;&quot;}}:::materiau
+  O75148[&quot;mean_particle_diameter : 3.5 nm&quot;]:::resultat
+  M -.-&gt; O75148
+  O75149[&quot;particle_diameter_deviation : 0.7 nm&quot;]:::resultat
+  M -.-&gt; O75149
+  O75150[&quot;lattice_d_spacing : 0.34 nm&quot;]:::resultat
+  M -.-&gt; O75150
+  O75151[&quot;cie_coordinates : (0.18, 0.43)&quot;]:::resultat
+  M -.-&gt; O75151
+  O75152[&quot;max_excitation_wavelength : 430 nm&quot;]:::resultat
+  M -.-&gt; O75152
+  O75153[&quot;quantum_yield : 15.8 %&quot;]:::resultat
+  M -.-&gt; O75153
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11983{{&quot;L1&quot;}}:::materiau
+  B11984[&quot;L2&quot;]:::etape
+  B11983 --&gt;|&quot;triethylenediamine hexah… = feed ratio of 1 : 1&quot;| B11984
+  B11985[&quot;L3&quot;]:::etape
+  B11983 --&gt;|&quot;triethylenediamine hexah… = 1 : 2&quot;| B11985
+  B11986[&quot;L4&quot;]:::etape
+  B11983 --&gt;|&quot;triethylenediamine hexah… = 1 : 3&quot;| B11986
+  B11987[&quot;L1-2&quot;]:::etape
+  B11983 --&gt;|&quot;duration = 2 min&quot;| B11987
+  B11988[&quot;L2-2&quot;]:::etape
+  B11984 --&gt;|&quot;duration = 2 min&quot;| B11988
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
