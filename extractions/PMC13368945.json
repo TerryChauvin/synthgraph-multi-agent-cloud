@@ -618,6 +618,18 @@
      "from_figure": "Fig. 13"
     },
     {
+     "property": "adsorption_equilibrium_time",
+     "quote": "The amount of MePr adsorbed (qt) significantly increased during the first 20 min, and then attained equilibrium, which was after 90 min for all three concentrations, as depicted in Fig. 9.",
+     "value_num": 90,
+     "unit": "min"
+    },
+    {
+     "property": "adsorption_rapid_uptake_period",
+     "quote": "The amount of MePr adsorbed (qt) significantly increased during the first 20 min, and then attained equilibrium, which was after 90 min for all three concentrations, as depicted in Fig. 9.",
+     "value_num": 20,
+     "unit": "min"
+    },
+    {
      "property": "kinetic_PFO_qe_MePr_10_mg/L",
      "quote": "PFO | 10 mg/L | qe (mg/g)k1 (min−1)R2χ2 | 5.900.130.860.14",
      "value_num": 5.9,
@@ -1689,7 +1701,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Zn-Mn_MOF",
-   "text": "Hypothèse de chimiste : le 2-méthylimidazole, en large excès (rapport 8:1 par rapport au total des métaux, soit une quantité de ligand de l'ordre de 8 fois les 5 mmol de métaux), est déprotoné partiellement par le milieu et le nitrate, ce qui permet la coordination de Zn2+ (tétraédrique, comme dans ZIF-8) et de Mn2+ qui se substitue en partie aux sites du zinc. Le manganèse étant très minoritaire (XPS : 0,13 % at. contre 1,57 % pour Zn en surface), on attend plutôt un ZIF-8 dopé qu'une phase mixte ; l'état mixte Mn2+/Mn3+ lu en XPS suggère une oxydation partielle à l'air pendant la nuit d'agitation. À température ambiante dans le méthanol, la cristallisation est rapide et donne de petites particules de 50 à 100 nm."
+   "text": "Hypothèse de chimiste, non démontrée par l'article : le 2-méthylimidazole en large excès (8:1 par rapport au total des métaux, soit de l'ordre de 40 mmol pour 5 mmol de métaux) sert de ligand et de base pour capter les protons libérés ; le mélange rapide dans le méthanol à température ambiante donne une nucléation éclair et de petits cristaux de ZIF-8 de type sodalite, comme dans le protocole de Cravillon et al. (2009) pour des nanocristaux de ZIF-8, ce qui va dans le sens des particules de 50 à 100 nm. Le Mn2+, qui préfère une coordination octaédrique, ne se substituerait qu'en faible part aux sites tétraédriques du zinc (XPS : Mn/(Zn+Mn) = 7,6 % en surface contre 25 % visé) ; le reste resterait en solution ou formerait une phase mineure amorphe ou oxydée. Le produit serait plutôt un ZIF-8 faiblement dopé en Mn qu'une phase bimétallique 75:25, et l'état mixte Mn2+/Mn3+ annoncé en XPS n'est pas démontré."
   },
   {
    "type": "mecanisme_analyse",
@@ -1699,7 +1711,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Mn-MOF",
-   "text": "Hypothèse de chimiste : Mn2+ et 2-méthylimidazole (rapport 4,5:1) forment un imidazolate de manganèse ; le vieillissement de 48 h en récipient fermé laisse croître les cristaux. La couleur brun pâle du précipité fait penser à une oxydation partielle de Mn(II) en Mn(III), et la très petite taille des cristallites (3,22 nm) indique une phase peu cristalline."
+   "text": "Hypothèse de chimiste : Mn2+ et 2-méthylimidazole (rapport 4,5:1) donnent un solide peu cristallin par coordination partielle du ligand. À l'air, en milieu rendu basique par le ligand, une partie du Mn(II) peut s'oxyder, ce qui expliquerait la couleur brun pâle (oxyhydroxydes ou Mn(III) coordiné). Un imidazolate de Mn cristallin demanderait plutôt une atmosphère inerte et un solvant sec ; la taille de Scherrer de 3,22 nm indique une phase quasi amorphe et l'identité du produit n'est pas établie."
   },
   {
    "type": "securite_analyse",
@@ -1715,6 +1727,46 @@
    "type": "limite_reproductibilite",
    "route": "Zn-Mn_MOF",
    "text": "Valeurs lues sur les figures 8, 12, 13 et 17 avec une précision d'environ 5 % : voir les doutes. Les figures 1 à 7, 10, 11, 14, 15, 16 et 19 à 21 n'ont pas été relues pour extraire des valeurs absentes du texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Pour les essais d'adsorption et la régénération, il manque aussi : le mode de séparation de l'adsorbant avant le dosage (filtration ou centrifugation, non précisé), la composition des eaux de lac, de rivière, du robinet et de mer (pH, salinité, carbone organique, ions) ainsi que la concentration, le temps et la dose utilisés pour ces eaux (« optimised conditions » seulement), le volume d'éthanol, la durée et l'agitation de la désorption, les conditions de dégazage de la mesure BET et la plage de balayage du XRD. Le nombre de lavages et la vitesse d'agitation de ZIF-8 et de Mn-MOF ne sont pas donnés non plus."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Groupe : les essais d'adsorption de Zn-Mn_MOF contiennent des incohérences venant de l'article, à ne pas reprendre telles quelles. (a) La dose « 0,05 g/L » des légendes des Fig. 8, 9 et 13 est incompatible avec les capacités : à 10 mg/L et 79 % d'élimination elle imposerait 158 mg/g, au-dessus de qm = 52,38 mg/g ; les points de la Fig. 12 ne sont cohérents que si la « dose » est une masse en grammes dans environ 0,15 L. (b) Il n'existe pas de dose commune entre figures : à 10 mg/L et pH 5, la Fig. 8 donne 79 %, la Fig. 12 35 % et la Fig. 13 72 %. (c) L'étude en concentration est physiquement incohérente : la quantité adsorbée C0 × élimination décroît de 29 à 12 mg/L entre 75 et 120 mg/L, et la Fig. 14 atteint Ce ≈ 141 mg/L, au-delà de C0 maximal. (d) Les paramètres de Langmuir et de Freundlich sont incompatibles entre eux et avec la Fig. 14 (R² recalculé ≈ 0,87 ; 1/n = 1,55 ; qe = 43,49 mg/g au-dessus du maximum de Langmuir ; KL = 0,062 contre 1,60 L/mg). (e) La thermodynamique est incohérente (voir l'annotation de la voie). Il faut refaire les mesures avec une dose et un volume explicites avant de reprendre les paramètres publiés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zn-Mn_MOF",
+   "text": "Thermodynamique (Tableau 6, Fig. 15) : les trois jeux KL, ΔG et ΔH/ΔS sont mutuellement incohérents. ΔH − TΔS donne environ −29,7 kJ/mol à 298 K contre −17,16 dans le tableau ; −RT ln KL ne reproduit pas les ΔG tabulés ; la Fig. 15 se lit ln KL ≈ 1,1, −0,5 et −2,9, valeurs différentes de ln KL du tableau, et sa pente donne ΔH ≈ −158 kJ/mol et non −38,30. KL en L/mg doit en outre être rendu sans dimension avant l'équation de van't Hoff. Le texte annonce 293 à 318 K, le tableau trois températures. Valeurs conservées comme écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zn-Mn_MOF",
+   "text": "Tableau 3 : les rangées « 10 mg/L » et « 50 mg/L » sont probablement permutées (qt à 90 min recalculé 43 mg/g à 10 mg/L contre qe = 6,52 ; 6 mg/g à 50 mg/L contre qe = 43,49). L'étiquetage de l'article est conservé ; ne pas s'appuyer sur ces constantes sans vérification."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zn-Mn_MOF",
+   "text": "Eaux dopées : le texte donne des capacités 1,5 à 2,6 fois celles de la Fig. 18 pour le lac, la rivière, le robinet et la mer (environ 6,6, 6,0, 5,1 et 2,4 mg/g lus sur la figure, contre 12, 9, 8 et 6 mg/g). Les capacités du texte sont proportionnelles aux éliminations (rapport constant), celles de la figure ne le sont pas alors que la concentration et la dose sont annoncées identiques. Les valeurs du texte sont gardées ; une des deux séries est fausse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Zn-Mn_MOF",
+   "text": "Réserves sur la caractérisation de Zn-Mn_MOF. Les pics XRD annoncés (10,4 ; 12,7 ; 14,7 ; 16,4 ; 18,0 ; 22,1°) coïncident avec ceux de ZIF-8 (maille cubique d'environ 16,99 Å) : aucun décalage dû au Mn n'est mesurable. Le volume poreux de 0,3625 cm3/g est faible pour 1657 m2/g (environ 0,64 cm3/g attendu pour un ZIF-8 de cette surface) et la distribution BJH à 0,9 nm porte sur des micropores, hors du domaine de validité de BJH. En XPS, Mn/(Zn+Mn) vaut 7,6 % en surface contre 25 % nominal, sans dosage de volume (ICP) : le produit est plutôt un ZIF-8 faiblement dopé en Mn. La chimisorption est déduite du seul meilleur ajustement au pseudo-second ordre, ce qui ne renseigne pas sur la nature de la liaison. La stabilité de la charpente à pH 3 et 5 (le 2-méthylimidazolium a un pKa voisin de 8) n'est pas vérifiée : ni Zn ni Mn relargués ne sont dosés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF-8",
+   "text": "Le témoin ZIF-8 est préparé avec Hmim:Zn d'environ 4,3:1 et non 8:1 comme Zn-Mn : l'effet du Mn sur la taille des cristallites (54 contre 20 nm) et sur l'élimination n'est pas isolé, car le rapport ligand:métal contrôle aussi la taille des ZIF-8. Il manque un ZIF-8 préparé exactement comme Zn-Mn. La taille de Scherrer de 54 nm est du même ordre que la largeur instrumentale, sans correction."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Mn-MOF",
+   "text": "L'identité de Mn-MOF n'est pas établie : le précipité brun pâle formé à l'air en milieu basique suggère une oxydation partielle du Mn(II), la taille de Scherrer de 3,22 nm indique une phase quasi amorphe, et la seule caractérisation est un diagramme XRD différent de celui de ZIF-8, sans indexation ni analyse élémentaire. Ce témoin ne permet pas de conclure à une synergie Zn-Mn."
   }
  ],
  "method_sources": [
@@ -1763,6 +1815,26 @@
   {
    "where": "Zn-Mn_MOF, essais en eaux dopées",
    "issue": "Les cinq valeurs de la phrase « respectively » suivent l'ordre eau distillée, lac, rivière, robinet, mer. La concentration initiale, le temps de contact et la dose de ces essais sont seulement qualifiés d'« optimised conditions » : non cités."
+  },
+  {
+   "where": "Zn-Mn_MOF, essais en eaux dopées, texte contre Fig. 18",
+   "issue": "Les capacités du texte (12, 9, 8 et 6 mg/g pour le lac, la rivière, le robinet et la mer) sont conservées avec la citation de la phrase « respectively ». La Fig. 18 se lit environ 69 % et 6,6 mg/g (lac), 55 % et 6,0 mg/g (rivière), 46 % et 5,1 mg/g (robinet), 33 % et 2,4 mg/g (mer) ; seules l'eau distillée (environ 80 % et 14 mg/g) et l'élimination dans le lac concordent. Les capacités du texte valent jusqu'à 2,5 fois celles de la figure ; les rendements (70, 50, 40, 30 %) sont également un peu différents. Lecture de figure à environ 5 % ; l'une des deux séries est fausse, sans que l'article permette de dire laquelle."
+  },
+  {
+   "where": "Zn-Mn_MOF, thermodynamique : Tableau 6 contre Fig. 15",
+   "issue": "Les valeurs du Tableau 6 (KL, ΔG, ΔH, ΔS) sont recopiées telles quelles. Elles ne sont pas cohérentes entre elles : ΔH − TΔS donne environ −29,7 kJ/mol à 298 K et non −17,16 ; la Fig. 15 (van't Hoff) se lit ln KL ≈ 1,1, −0,5 et −2,9 à 1/T = 0,003356, 0,003247 et 0,003145 K−1, soit des KL d'environ 3,0, 0,6 et 0,055 L/mg, qui ne sont pas ceux du tableau (ln 1,60 = 0,47 ; ln 0,30 = −1,2), et sa pente donne ΔH ≈ −158 kJ/mol et non −38,30. Aucune correction de valeur."
+  },
+  {
+   "where": "Zn-Mn_MOF, Tableau 3 (diffusion intraparticulaire)",
+   "issue": "Les rangées « 10 mg/L » et « 50 mg/L » sont probablement permutées : avec l'étiquetage de l'article, qt(90 min) = C3 + Kid3·√90 vaut environ 43 mg/g à 10 mg/L et 6 mg/g à 50 mg/L, alors que les qe du pseudo-second ordre sont 6,52 et 43,49 mg/g ; inversées, elles concordent. L'étiquetage de l'article est conservé dans les résultats."
+  },
+  {
+   "where": "Zn-Mn_MOF, isothermes (Tableau 4, Fig. 14) et étude en concentration (Fig. 13)",
+   "issue": "Les paramètres d'isotherme sont incohérents entre eux : avec qm = 52,38 mg/g et KL = 0,062 L/mg, le Langmuir ne rend que R² ≈ 0,87 sur les points lus de la Fig. 14 (0,99 annoncé) ; 1/n de Freundlich = 1,55 contredit la courbe concave tracée ; qe = 43,49 mg/g (Tableau 2, 50 mg/L) dépasse ce que le Langmuir donne à Ce ≤ 50 mg/L (environ 39,6 mg/g) ; KL = 0,062 L/mg (Tableau 4, 25 °C) contre 1,60 L/mg à 298 K (Tableau 6). La Fig. 14 va jusqu'à Ce ≈ 141 mg/L, au-delà de la concentration initiale maximale de l'étude (120 mg/L). Valeurs recopiées sans réconciliation."
+  },
+  {
+   "where": "ZIF-8 et Mn-MOF, témoins",
+   "issue": "Le témoin ZIF-8 est préparé avec Hmim:Zn d'environ 4,27:1 (8,49 mmol pour 1,99 mmol) contre 8:1 pour Zn-Mn, et Mn-MOF avec environ 4,5:1 et 48 h de vieillissement : plusieurs variables changent en même temps que la présence de Mn. L'effet du Mn sur la taille des cristallites et sur l'élimination n'est donc pas isolé."
   }
  ]
 }

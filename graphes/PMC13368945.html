@@ -1,0 +1,124 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC13368945</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC13368945 — Facile synthesis of Zn-Mn bimetallic MOF for adsorptive removal of methyl paraben from aqueous solution.</h1>
+<h2>Voie : Zn-Mn_MOF</h2>
+<pre class="mermaid">flowchart LR
+  R16806([&quot;zinc nitrate hexahydrate&lt;br/&gt;3.75 mmol&quot;]):::reactif
+  R16806 --&gt;|&quot;precursor&quot;| S20013
+  R16807([&quot;manganese(II) nitrate tetrahydrate&lt;br/&gt;1.25 mmol&quot;]):::reactif
+  R16807 --&gt;|&quot;precursor&quot;| S20013
+  R16808([&quot;methanol (dissolution of the metal salts)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16808 --&gt;|&quot;solvent&quot;| S20013
+  R16809([&quot;2-methylimidazole (Hmim)&lt;br/&gt;Hmim:total metal = 8:1&quot;]):::reactif
+  R16809 --&gt;|&quot;ligand&quot;| S20013
+  R16810([&quot;methanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16810 --&gt;|&quot;wash&quot;| S20013
+  S20013[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;molar_ratio : Zn:Mn 75:25&quot;]:::etape
+  S20013 --&gt; S20014
+  S20014[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;molar_ratio : Hmim:total metal = 8:1&quot;]:::etape
+  S20014 --&gt; S20015
+  S20015[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : overnight&lt;br/&gt;temperature : room-temperature&quot;]:::etape
+  S20015 --&gt; S20016
+  S20016[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S20016 --&gt; S20017
+  S20017[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : methanol&lt;br/&gt;repetitions : thrice&quot;]:::etape
+  S20017 --&gt; S20018
+  S20018[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S20018 --&gt; M
+  M{{&quot;Zn-Mn bimetallic MOF (Mn-doped ZIF-8, Zn:Mn 75:25)&lt;br/&gt;&quot;}}:::materiau
+  O79859[&quot;BET_surface_area : 1657.2 m2/g&quot;]:::resultat
+  M -.-&gt; O79859
+  O79860[&quot;pore_volume : 0.3625 cm3 g−1&quot;]:::resultat
+  M -.-&gt; O79860
+  O79861[&quot;pore_diameter : 0.7 nm&quot;]:::resultat
+  M -.-&gt; O79861
+  O79862[&quot;BJH_pore_diameter_peak : 0.9 nm&quot;]:::resultat
+  M -.-&gt; O79862
+  O79863[&quot;particle_size : 50 to 100 nm&quot;]:::resultat
+  M -.-&gt; O79863
+  O79864[&quot;morphology : polyhedral particles with rho…&quot;]:::resultat
+  M -.-&gt; O79864
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZIF-8</h2>
+<pre class="mermaid">flowchart LR
+  R16811([&quot;2-methylimidazole (Hmim)&lt;br/&gt;8.49 mmol&quot;]):::reactif
+  R16811 --&gt;|&quot;ligand&quot;| S20019
+  R16812([&quot;methanol (dissolution of 2-methylimidazole)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16812 --&gt;|&quot;solvent&quot;| S20019
+  R16813([&quot;zinc nitrate hexahydrate&lt;br/&gt;1.99 mmol&quot;]):::reactif
+  R16813 --&gt;|&quot;precursor&quot;| S20019
+  R16814([&quot;methanol (dissolution of zinc nitrate)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16814 --&gt;|&quot;solvent&quot;| S20019
+  R16815([&quot;methanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16815 --&gt;|&quot;wash&quot;| S20019
+  S20019[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S20019 --&gt; S20020
+  S20020[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S20020 --&gt; S20021
+  S20021[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S20021 --&gt; S20022
+  S20022[&quot;&lt;b&gt;4. collect&lt;/b&gt;&quot;]:::etape
+  S20022 --&gt; S20023
+  S20023[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : methanol&quot;]:::etape
+  S20023 --&gt; S20024
+  S20024[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S20024 --&gt; M
+  M{{&quot;ZIF-8 (désigné « Zn-MOF » dans la caractérisation…&lt;br/&gt;&quot;}}:::materiau
+  O80001[&quot;precipitate_color : white&quot;]:::resultat
+  M -.-&gt; O80001
+  O80002[&quot;XRD_d_spacing : 2.72 Å&quot;]:::resultat
+  M -.-&gt; O80002
+  O80003[&quot;XRD_average_crystallite_size : 54.38 nm&quot;]:::resultat
+  M -.-&gt; O80003
+  O80004[&quot;MePr_removal_efficiency_pH_3 : 18 %&quot;]:::resultat
+  M -.-&gt; O80004
+  O80005[&quot;MePr_removal_efficiency_pH_5 : 46 %&quot;]:::resultat
+  M -.-&gt; O80005
+  O80006[&quot;MePr_removal_efficiency_pH_7 : 36 %&quot;]:::resultat
+  M -.-&gt; O80006
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Mn-MOF</h2>
+<pre class="mermaid">flowchart LR
+  R16816([&quot;manganese(II) nitrate tetrahydrate&lt;br/&gt;1.89 mmol&quot;]):::reactif
+  R16816 --&gt;|&quot;precursor&quot;| S20025
+  R16817([&quot;methanol (dissolution of manganese nitrate)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16817 --&gt;|&quot;solvent&quot;| S20025
+  R16818([&quot;2-methylimidazole (Hmim)&lt;br/&gt;8.49 mmol&quot;]):::reactif
+  R16818 --&gt;|&quot;ligand&quot;| S20025
+  R16819([&quot;methanol (dissolution of 2-methylimidazole)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16819 --&gt;|&quot;solvent&quot;| S20025
+  R16820([&quot;methanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16820 --&gt;|&quot;wash&quot;| S20025
+  S20025[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S20025 --&gt; S20026
+  S20026[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S20026 --&gt; S20027
+  S20027[&quot;&lt;b&gt;3. mix&lt;/b&gt;&quot;]:::etape
+  S20027 --&gt; S20028
+  S20028[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;duration : 48 h&quot;]:::etape
+  S20028 --&gt; S20029
+  S20029[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : methanol&quot;]:::etape
+  S20029 --&gt; S20030
+  S20030[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&quot;]:::etape
+  S20030 --&gt; M
+  M{{&quot;Mn-MOF (manganese 2-methylimidazolate)&lt;br/&gt;&quot;}}:::materiau
+  O80008[&quot;precipitate_color : pale brown&quot;]:::resultat
+  M -.-&gt; O80008
+  O80009[&quot;XRD_d_spacing : 2.84 Å&quot;]:::resultat
+  M -.-&gt; O80009
+  O80010[&quot;XRD_average_crystallite_size : 3.22 nm&quot;]:::resultat
+  M -.-&gt; O80010
+  O80011[&quot;MePr_removal_efficiency_pH_3 : 26 %&quot;]:::resultat
+  M -.-&gt; O80011
+  O80012[&quot;MePr_removal_efficiency_pH_5 : 41 %&quot;]:::resultat
+  M -.-&gt; O80012
+  O80013[&quot;MePr_removal_efficiency_pH_7 : 30 %&quot;]:::resultat
+  M -.-&gt; O80013
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
