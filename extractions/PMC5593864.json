@@ -23,14 +23,10 @@
     {
      "name": "graphene oxide",
      "formula": null,
-     "role": "precursor",
+     "role": "intermediate",
      "quote": "0.05 g of the obtained GO was dispersed into 100 mL deionized water and ultrasonicated for 1 h at room temperature (RT) to obtain suspension liquid",
      "amount": 0.05,
-     "unit": "g",
-     "not_stated": [
-      "purity",
-      "supplier"
-     ]
+     "unit": "g"
     },
     {
      "name": "deionized water (GO suspension)",
@@ -40,9 +36,10 @@
      "amount": 100,
      "unit": "mL",
      "not_stated": [
-      "purity",
       "supplier"
-     ]
+     ],
+     "purity": "analytically pure",
+     "supplier_quote": "All the used chemical regents were analytically pure and used without further purification."
     },
     {
      "name": "iron(II) sulfate heptahydrate",
@@ -65,9 +62,10 @@
      "amount": 100,
      "unit": "mL",
      "not_stated": [
-      "purity",
       "supplier"
-     ]
+     ],
+     "purity": "analytically pure",
+     "supplier_quote": "All the used chemical regents were analytically pure and used without further purification."
     },
     {
      "name": "sodium bicarbonate",
@@ -138,8 +136,21 @@
     },
     {
      "order": 3,
+     "action": "mix",
+     "description": "Mélange de la suspension de GO et de la solution de FeSO4 (l'article ne dit ni l'ordre d'addition, ni la durée, ni l'agitation).",
+     "quote": "the aforementioned GO and FeSO4 mixed solution",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_order",
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 4,
      "action": "add",
-     "description": "Mélange de la suspension de GO et de la solution de FeSO4, puis ajout de NaHCO3.",
+     "description": "Ajout de NaHCO3 solide au mélange de GO et de FeSO4.",
      "quote": "Then 0.084 g NaHCO3 was added into the aforementioned GO and FeSO4 mixed solution",
      "parameters": [],
      "equipment": [],
@@ -150,7 +161,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "heat",
      "description": "Traitement hydrothermal en autoclave chemisé de Téflon.",
      "quote": "the as-synthesized solution was transferred into a 250 mL Teflon-lined stainless steel autoclave and heated at 140 °C for 6 h",
@@ -182,7 +193,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "cool",
      "description": "Refroidissement jusqu'à la température ambiante.",
      "quote": "After being cooling to RT, the product was separated by centrifugation, washed with distilled water and absolute ethanol, and dried at 60 °C",
@@ -200,7 +211,7 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "centrifuge",
      "description": "Séparation du produit par centrifugation.",
      "quote": "After being cooling to RT, the product was separated by centrifugation, washed with distilled water and absolute ethanol, and dried at 60 °C",
@@ -213,7 +224,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 8,
      "action": "wash",
      "description": "Lavage à l'eau distillée et à l'éthanol absolu.",
      "quote": "After being cooling to RT, the product was separated by centrifugation, washed with distilled water and absolute ethanol, and dried at 60 °C",
@@ -231,7 +242,7 @@
      ]
     },
     {
-     "order": 8,
+     "order": 9,
      "action": "dry",
      "description": "Séchage du produit.",
      "quote": "After being cooling to RT, the product was separated by centrifugation, washed with distilled water and absolute ethanol, and dried at 60 °C",
@@ -326,6 +337,30 @@
      "quote": "RL values below −10 dB (90% of EM wave attenuation) for C1, C2 and C3 can be observed in the frequency range of 8.8–18.0, 9.6–18.0 and 9.6–18.0 GHz, respectively",
      "unit": "GHz",
      "value_text": "8.8–18.0"
+    },
+    {
+     "property": "Raman_D_band_position",
+     "quote": "Figure 5b gives Raman spectra of the as-synthesized GO, C1 and C2, in which two sharp peaks are obviously in common: D band at ca. 1356 cm−1 originating from disordered carbon and the G band at ca. 1599 cm−1 corresponding to sp2 hybridized carbon",
+     "value_num": 1356,
+     "unit": "cm−1"
+    },
+    {
+     "property": "Raman_G_band_position",
+     "quote": "Figure 5b gives Raman spectra of the as-synthesized GO, C1 and C2, in which two sharp peaks are obviously in common: D band at ca. 1356 cm−1 originating from disordered carbon and the G band at ca. 1599 cm−1 corresponding to sp2 hybridized carbon",
+     "value_num": 1599,
+     "unit": "cm−1"
+    },
+    {
+     "property": "Raman_2D_band_position",
+     "quote": "Furthermore, the 2D peak (2706 cm−1) and a combination mode of D + D´ at higher wave number (2937 cm−1) can also observed clearly over the as-synthesized samples",
+     "value_num": 2706,
+     "unit": "cm−1"
+    },
+    {
+     "property": "Raman_D+D'_band_position",
+     "quote": "Furthermore, the 2D peak (2706 cm−1) and a combination mode of D + D´ at higher wave number (2937 cm−1) can also observed clearly over the as-synthesized samples",
+     "value_num": 2937,
+     "unit": "cm−1"
     }
    ],
    "missing_fields": [
@@ -430,12 +465,17 @@
        "unit": "h"
       }
      ],
-     "equipment": [],
+     "equipment": [
+      {
+       "type": "Teflon-lined stainless steel autoclave",
+       "detail": "250 mL",
+       "quote": "the as-synthesized solution was transferred into a 250 mL Teflon-lined stainless steel autoclave and heated at 140 °C for 6 h"
+      }
+     ],
      "not_stated": [
       "heating_rate",
       "fill_fraction",
-      "pressure",
-      "autoclave_volume"
+      "pressure"
      ]
     },
     {
@@ -542,6 +582,13 @@
      "instrument": "Agilent E8363B vector network analyzer",
      "conditions": "plage 2–18 GHz ; 30 wt% d'échantillon mélangé à de la paraffine, pressé en anneau coaxial de diamètre extérieur 7.0 mm et intérieur 3.0 mm",
      "quote": "the minimum RL values for C1, C2 and C3 are ca. −32.3 dB at 9.4 GHz with the matching thickness of 9.99 mm, −37.4 dB at 12.2 GHz with the matching thickness of 8.29 mm and −71.4 dB at 14.36 GHz with a matching thickness of 7.48 mm, respectively"
+    },
+    {
+     "technique": "N2 adsorption (BET)",
+     "result": "surface BET inférieure à celle de C3 (« evidently enhanced » pour C3 par rapport à C2) ; valeur non donnée, isothermes en Figure S1 absente du dépôt",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Compared to that of C2, one can find that the as-prepared C3 exhibits an evidently enhanced BET surface area."
     }
    ],
    "outcomes": [
@@ -586,6 +633,30 @@
      "quote": "RL values below −10 dB (90% of EM wave attenuation) for C1, C2 and C3 can be observed in the frequency range of 8.8–18.0, 9.6–18.0 and 9.6–18.0 GHz, respectively",
      "unit": "GHz",
      "value_text": "9.6–18.0"
+    },
+    {
+     "property": "Raman_D_band_position",
+     "quote": "Figure 5b gives Raman spectra of the as-synthesized GO, C1 and C2, in which two sharp peaks are obviously in common: D band at ca. 1356 cm−1 originating from disordered carbon and the G band at ca. 1599 cm−1 corresponding to sp2 hybridized carbon",
+     "value_num": 1356,
+     "unit": "cm−1"
+    },
+    {
+     "property": "Raman_G_band_position",
+     "quote": "Figure 5b gives Raman spectra of the as-synthesized GO, C1 and C2, in which two sharp peaks are obviously in common: D band at ca. 1356 cm−1 originating from disordered carbon and the G band at ca. 1599 cm−1 corresponding to sp2 hybridized carbon",
+     "value_num": 1599,
+     "unit": "cm−1"
+    },
+    {
+     "property": "Raman_2D_band_position",
+     "quote": "Furthermore, the 2D peak (2706 cm−1) and a combination mode of D + D´ at higher wave number (2937 cm−1) can also observed clearly over the as-synthesized samples",
+     "value_num": 2706,
+     "unit": "cm−1"
+    },
+    {
+     "property": "Raman_D+D'_band_position",
+     "quote": "Furthermore, the 2D peak (2706 cm−1) and a combination mode of D + D´ at higher wave number (2937 cm−1) can also observed clearly over the as-synthesized samples",
+     "value_num": 2937,
+     "unit": "cm−1"
     }
    ]
   },
@@ -793,7 +864,7 @@
   {
    "type": "mecanisme_auteurs",
    "route": "C1",
-   "text": "Selon les auteurs, quand FeSO4, NaHCO3 et GO sont mélangés, une réaction d'oxydoréduction pendant le traitement hydrothermal forme les nanoparticules de Fe2O3 sur RGO ; le GO est réduit pendant ce traitement (diminution des bandes FTIR des groupes oxygénés, augmentation de ID/IG en Raman).",
+   "text": "Selon les auteurs, quand FeSO4, NaHCO3 et GO sont mélangés, une réaction d'oxydoréduction pendant le traitement hydrothermal forme les nanoparticules de Fe2O3 sur RGO. Ils concluent que le GO est réduit pendant le traitement hydrothermal : la réduction est établie par la diminution des bandes FTIR des groupes oxygénés (montrée pour C2 et C3 seulement) et par l'augmentation de ID/IG en Raman (montrée pour C1 et C2).",
    "quote": "When the solutions of FeSO4, NaHCO3 and GO are mixed, the redox reaction during the hydrothermal treatment brings the formation of heterostructured Fe2O3 NPs-RGO nanohybrids (denoted as C1)."
   },
   {
@@ -811,19 +882,19 @@
   {
    "type": "mecanisme_analyse",
    "route": "C1",
-   "text": "Les quantités correspondent à environ 5.0 mmol de FeSO4·7H2O (1.39 g) et 1.0 mmol de NaHCO3 (0.084 g). On attend que le bicarbonate élève un peu le pH et favorise l'hydrolyse puis la précipitation de Fe(III) sous forme d'hématite à 140 °C, alors que le GO, qui joue probablement le rôle d'oxydant ou de support de nucléation, est réduit en RGO ; ces explications restent des hypothèses.",
+   "text": "Les quantités correspondent à environ 5.0 mmol de FeSO4·7H2O (1.39 g) et 1.0 mmol de NaHCO3 (0.084 g), soit 0,2 équivalent de bicarbonate par fer. Hypothèse, que ni mesure de pH ni suivi en temps ne confirment : Fe2+ adsorbé sur les groupes oxygénés du GO réduit en partie le GO et s'oxyde en Fe(III), qui s'hydrolyse ; le bicarbonate, trop peu abondant pour tenir le pH (il ne neutralise qu'environ 10 % de l'acide libéré), agirait surtout au début, en amorçant près de la neutralité la précipitation de ferrihydrite ou de FeCO3/Fe(OH)2, ce qui à 140 °C favorise l'hématite par agrégation-déshydratation. La tendance (hématite près de la neutralité, goethite en milieu acide) est connue pour la transformation de la ferrihydrite (Schwertmann et Murad, 1983). Les auteurs ne nomment pas l'oxydant ; l'O2 de l'autoclave et les groupes oxygénés du GO n'en fournissent probablement pas assez pour convertir tout le Fe(II) (bilan ≈ 3,8–4,4 mmol d'électrons contre 5,0 nécessaires) : le rendement est inconnu.",
    "quote": null
   },
   {
    "type": "mecanisme_analyse",
    "route": "C2",
-   "text": "Sans base, le milieu reste acide (FeSO4 s'hydrolyse), et l'oxydation de Fe2+ par le GO ou l'oxygène résiduel donne plus probablement de la goethite α-FeOOH, en forme de bâtonnets, ancrée sur les groupes oxygénés du GO.",
+   "text": "Hypothèse : sans base, le milieu sulfate s'acidifie au fil de la réaction ; Fe2+ adsorbé sur les groupes oxygénés du GO est oxydé lentement (par le GO, qui est réduit, et par l'O2 de l'espace de tête), puis le Fe(III) précipite en goethite α-FeOOH par dissolution-reprécipitation, avec une croissance anisotrope en bâtonnets le long de l'axe c, ancrés sur le GO. Même déficit d'oxydant que pour C1 : la conversion du fer est probablement partielle.",
    "quote": null
   },
   {
    "type": "mecanisme_analyse",
    "route": "C3",
-   "text": "À 300 °C, α-FeOOH se déshydrate en α-Fe2O3 (2 FeOOH → Fe2O3 + H2O) ; le départ d'eau laisse des pores dans les bâtonnets, ce qui explique probablement l'augmentation de la surface BET. L'atmosphère de N2 évite la combustion du RGO.",
+   "text": "Hypothèse : à 300 °C, α-FeOOH se déshydrate de façon topotactique (2 FeOOH → Fe2O3 + H2O) ; le réseau anionique est conservé, le départ d'eau laisse des pores dans les bâtonnets (pseudomorphes de la goethite), ce qui explique probablement l'augmentation de la surface BET. L'atmosphère de N2 évite la combustion du RGO et achève de lui retirer ses groupes oxygénés résiduels.",
    "quote": null
   },
   {
@@ -841,14 +912,32 @@
   {
    "type": "limite_reproductibilite",
    "route": "C1",
-   "text": "La préparation du GO est renvoyée à la méthode de Hummers modifiée (références 71 et 72) sans aucun détail dans l'article : un chimiste ne peut pas refaire le GO à partir de ce texte. Les durées de séparation (vitesse de centrifugation) et de séchage, ainsi que la vitesse d'agitation, ne sont pas données. La tension d'accélération du MET est écrite « 20 kV » (un Tecnai G20 fonctionne d'ordinaire à 200 kV) : valeur recopiée telle quelle.",
+   "text": "La préparation du GO est renvoyée à la méthode de Hummers modifiée (références 71 et 72) sans aucun détail dans l'article : un chimiste ne peut pas refaire le GO à partir de ce texte. Ne sont pas donnés : la vitesse et la durée de centrifugation, le nombre de lavages, la durée de séchage à 60 °C et la vitesse d'agitation. La tension d'accélération du MET est écrite « 20 kV » (un Tecnai G20 fonctionne d'ordinaire à 200 kV) : valeur recopiée telle quelle.",
    "quote": "Firstly, GO was prepared according to the modified Hummers method"
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les plages de fréquence où RL < −20 dB et RL < −10 dB ne sont pas associées à une épaisseur d'échantillon, et la plage de C1 (12.6–15.1 GHz) exclut sa fréquence de RL minimale (9.4 GHz) : les deux valeurs viennent donc d'épaisseurs différentes que l'article ne précise pas. Les figures 6 à 9 (cartes de RL, permittivité, perméabilité, pertes, adaptation d'impédance) ne sont pas quantifiées dans le texte ; seuls les classements sont écrits.",
+   "text": "Les plages de fréquence où RL < −20 dB et RL < −10 dB ne sont associées à aucune épaisseur d'échantillon, et la plage de C1 (12.6–15.1 GHz) exclut sa fréquence de RL minimale (9.4 GHz, où RL = −32.3 dB, donc sous le seuil de −20 dB) : si la plage couvre toutes les épaisseurs elle devrait contenir 9.4 GHz, et si elle porte sur une seule épaisseur celle-ci n'est pas dite. Les plages par seuil des trois échantillons, et leur comparaison, sont donc ininterprétables. Les figures 6 à 9 (cartes de RL, permittivité, perméabilité, pertes, adaptation d'impédance) ne sont pas quantifiées dans le texte ; seuls les classements sont écrits.",
    "quote": "RL values below −20 dB (99% of EM wave attenuation) for C1, C2 and C3 can be obtained in the frequency range of 12.6–15.1, 11.2–18.0, and 10.3–18.0 GHz, respectively"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "C1",
+   "quote": null,
+   "text": "Réserves de chimie sur C1 : le NaHCO3 (0,2 équivalent de fer) ne neutralise qu'environ 10 % de l'acide libéré par l'oxydation-hydrolyse du fer, donc il ne tient pas le pH, qui n'est mesuré ni au départ ni à la fin ; l'oxydant n'est pas nommé et ne suffit probablement pas à oxyder tout le Fe(II), si bien que le rendement et la teneur en fer du produit sont inconnus. Le GO de départ contient du graphite résiduel (pic de DRX à 26,5°, soit 3,36 Å), ce qui pèse sur la reproductibilité puisque sa préparation n'est pas décrite. Le remplissage de l'autoclave (200 mL dans 250 mL) est de 80 % à froid et d'environ 86 % à 140 °C, au-dessus de la limite usuelle de 80 % : à ne pas augmenter."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": null,
+   "text": "Fig. 9 : l'axe « dm (mm) » est gradué de 0 à 0,04 alors que les épaisseurs d'accord sont de 7 à 10 mm : les valeurs sont en mètres, soit une erreur d'unité d'un facteur 1000 sur l'axe. Les épaisseurs d'accord (9.99, 8.29 et 7.48 mm) ne sont cohérentes qu'avec la résonance en 3λ/4 (n = 3), pas avec n = 1 ; celle de C1 est proche de la limite de 10 mm de la grille calculée, et le tableau 1 compare des RL optimales sans épaisseur commune (le modèle du quart d'onde est discuté par Liu, Liu et Drew, Physica Scripta, 2021)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "C3",
+   "quote": null,
+   "text": "Les auteurs attribuent la meilleure absorption de C3 (RL = −71.4 dB) à sa morphologie poreuse en bâtonnets, mais le passage de C2 à C3 change aussi la phase (FeOOH puis Fe2O3), la fraction de RGO et la réduction du RGO (bandes FTIR oxygénées presque disparues) ; aucun témoin (par exemple RGO seul recuit à 300 °C sous N2, ou C1 recuit dans les mêmes conditions) ne sépare ces effets. La teneur en RGO et le degré de réduction ne sont pas mesurés (pas d'analyse thermogravimétrique). La valeur de −71.4 dB est le fond calculé d'une résonance d'interférence très étroite à 7.48 mm, pas une mesure directe, et le classement fondé sur ce chiffre est fragile. La surface BET « nettement augmentée » n'a aucune valeur dans le texte (Figure S1 absente du dépôt)."
   }
  ],
  "sample_inventory": [
@@ -966,6 +1055,14 @@
   {
    "where": "Characterization, TEM",
    "issue": "« Tecnai-G20, operated at an accelerating voltage of 20 kV » : probable coquille pour 200 kV ; valeur littérale conservée."
+  },
+  {
+   "where": "Raman de C1 et C2 (positions des bandes)",
+   "issue": "L'article donne les positions des bandes D (≈ 1356 cm−1) et G (≈ 1599 cm−1) comme communes à GO, C1 et C2, et celles des bandes 2D (2706 cm−1) et D + D´ (2937 cm−1) pour « les échantillons synthétisés » sans les distinguer : les mêmes valeurs sont rangées sur C1 et sur C2."
+  },
+  {
+   "where": "C2 étape 4 (volume de l'autoclave)",
+   "issue": "Le volume de l'autoclave (250 mL) n'est écrit que pour C1 ; il est repris pour C2 au titre de la clause « with the other experimental conditions unchanged » (citation de C1), comme les étapes de refroidissement et de centrifugation."
   }
  ]
 }
