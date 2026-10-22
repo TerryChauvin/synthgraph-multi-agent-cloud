@@ -123,6 +123,13 @@
      "instrument": "XPS (Kratos, London, UK)",
      "conditions": null,
      "quote": "there were several peaks at 284.95 eV (-C-C), 287.15 eV (-C-O) and 288.55 eV (-C=O) in GO sponge"
+    },
+    {
+     "technique": "Raman (graphite de départ)",
+     "result": "graphite, matériau de départ : G band at 1578 cm−1, no obvious D band (no remarkable defect)",
+     "instrument": "Raman (inVia, Renishaw, UK)",
+     "conditions": null,
+     "quote": "the initial graphite had a good in-plane sp2 carbon vibration in 1578 cm−1 (G band) with no remarkable defect in its lattice (Figure 2b)"
     }
    ],
    "outcomes": [
@@ -148,12 +155,6 @@
      "quote": "For GO sponge, there were two steps of weight loss at 192 °C and 529 °C.",
      "value_num": 529,
      "unit": "°C"
-    },
-    {
-     "property": "MB_adsorption_capacity_qm",
-     "quote": "GO sponge | 446 | []",
-     "value_num": 446,
-     "unit": "mg/g"
     },
     {
      "property": "MB_pseudo_first_order_rate_constant_k1",
@@ -261,18 +262,13 @@
        "unit": "h"
       }
      ],
-     "equipment": [
-      {
-       "type": "ultrasonic bath or probe",
-       "detail": null,
-       "quote": "under ultrasonic treatment for 3 h"
-      }
-     ],
+     "equipment": [],
      "not_stated": [
       "temperature",
       "power",
       "frequency",
-      "volume"
+      "volume",
+      "ultrasonic_device"
      ]
     },
     {
@@ -392,16 +388,16 @@
     },
     {
      "technique": "TEM",
-     "result": "more single-layer sheets than in GO sponge; specimens prepared by sonication in water",
+     "result": "more single-layer sheets than in GO sponge; specimens prepared by sonication in water; GO-COOH sponge could not be dispersed in water without sonication",
      "instrument": "TEM (JEM-200CX, JEOL, Tokyo, Japan)",
-     "conditions": "specimens sonicated in water",
+     "conditions": "specimens sonicated in water (GO-COOH sponge cannot be dispersed in water without sonication treatment)",
      "quote": "The main difference was that more single-layer sheets were found in the GO-COOH sponge."
     },
     {
      "technique": "batch adsorption of MB (isotherm)",
-     "result": "equilibrium adsorption capacity as a function of equilibrium concentration",
+     "result": "equilibrium adsorption capacity as a function of equilibrium concentration; standard curve Abs = 0.2197Ce (R = 0.9994)",
      "instrument": "thermostat shaker CHA-S (Jintan Hankang Electronic Co., Jintan, China); centrifuge TG16 W (Pingfan Instrument and Meter Co., Changsha, China); UV-1800 spectrometer (Shanghai Mapada Instrument Co., Ltd.)",
-     "conditions": "5.0 mg sponge, 8.0 mL MB 50–1000 mg/L, pH 7.3, 303 K, 100 rpm, 24 h; centrifugation at 12,000 rpm",
+     "conditions": "5.0 mg sponge, 8.0 mL MB 50–1000 mg/L, pH 7.3, 303 K, 100 rpm, 24 h; centrifugation at 12,000 rpm; Ce from the standard curve of MB (Abs = 0.2197Ce, R = 0.9994); measurement wavelength and dilution factor not stated",
      "quote": "Each 5.0 mg of GO-COOH sponge was mixed with MB (8.0 mL, 50–1000 mg/L, pH 7.3) in a plastic tube."
     },
     {
@@ -434,9 +430,9 @@
     },
     {
      "technique": "regeneration (recycling)",
-     "result": "re-adsorption capacity after washing with acidic water, up to 5 cycles; IR and SEM of the recycled sponge",
+     "result": "re-adsorption capacity after washing with acidic water, up to 5 cycles; IR of the recycled sponge: the main signals were from the adsorbed MB molecules; SEM: morphology had so few changes that the sheet structure became more distinguishable, some sheets rolled",
      "instrument": "IR; SEM",
-     "conditions": "residue washed with acidic water (pH 3); desorption at 303 K; up to 5 cycles",
+     "conditions": "residue washed with acidic water (pH 3); desorption at 303 K; up to 5 cycles; drying step before re-adsorption: lyophilization (23 %); oven drying cited in Fig. 7 legend, conditions not stated",
      "quote": "To evaluate the recycling of GO-COOH sponge, the residue was washed with acidic water (pH 3)."
     }
    ],
@@ -613,6 +609,13 @@
      "from_figure": "Fig. 5a"
     },
     {
+     "property": "MB_qe_at_pH_3",
+     "quote": "Figure 6 Adsorption of MB on GO-COOH sponge at different pH (a) and ionic strength (b) values.",
+     "value_num": 600,
+     "unit": "mg/g",
+     "from_figure": "Fig. 6a"
+    },
+    {
      "property": "MB_qe_at_pH_3.6",
      "quote": "Figure 6 Adsorption of MB on GO-COOH sponge at different pH (a) and ionic strength (b) values.",
      "value_num": 680,
@@ -736,7 +739,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare une éponge d'oxyde de graphène carboxylé (GO-COOH). L'oxyde de graphène est fait par une méthode de Hummers modifiée, dispersé aux ultrasons puis lyophilisé en éponge ; celle-ci est ensuite carboxylée par NaOH et l'acide chloroacétique sous ultrasons, dialysée et relyophilisée. Le matériau sert à adsorber le bleu de méthylène : isothermes, cinétique, thermodynamique, effet du pH et de la force ionique, régénération. La capacité atteint environ 780 mg/g contre 446 mg/g pour l'éponge de GO.",
+   "text": "L'article prépare une éponge d'oxyde de graphène carboxylé (GO-COOH). L'oxyde de graphène est fait par une méthode de Hummers modifiée, dispersé aux ultrasons puis lyophilisé en éponge ; celle-ci est ensuite carboxylée par NaOH et l'acide chloroacétique sous ultrasons, dialysée et relyophilisée. Le matériau sert à adsorber le bleu de méthylène : isothermes, cinétique, thermodynamique, effet du pH et de la force ionique, régénération. La capacité atteint environ 780 mg/g contre 446 mg/g pour l'éponge de GO (valeur du tableau 2 rattachée à une référence de la littérature, non mesurée dans l'article).",
    "quote": "In this study, we prepared graphene oxide (GO), functionalized it with carboxyl groups to produce carboxylated GO (GO-COOH) dispersion, and lyophilized the GO-COOH dispersion to obtain the GO-COOH sponge."
   },
   {
@@ -754,7 +757,7 @@
   {
    "type": "tendance_observee",
    "route": "GO-COOH sponge",
-   "text": "La carboxylation augmente nettement la capacité d'adsorption : de 446 mg/g pour l'éponge de GO à 780 mg/g pour GO-COOH. Cette capacité augmente avec le pH (déprotonation des groupes -COOH), faiblement avec la température (adsorption endothermique, ΔH = 25,85 kJ/mol) et ne dépend pas de la force ionique entre 0 et 100 mM de Na+. La régénération en milieu acide est mauvaise : environ 23 % de la capacité initiale subsiste.",
+   "text": "La carboxylation augmente nettement la capacité d'adsorption : de 446 mg/g pour l'éponge de GO (valeur du tableau 2 rattachée à la référence B38, non mesurée dans l'article) à 780 mg/g pour GO-COOH. Cette capacité augmente avec le pH (déprotonation des groupes -COOH), faiblement avec la température (adsorption endothermique, ΔH = 25,85 kJ/mol) et ne dépend pas de la force ionique entre 0 et 100 mM de Na+. La régénération en milieu acide est mauvaise : environ 23 % de la capacité initiale subsiste.",
    "quote": "the carboxylation increased the adsorption capacity significantly from 446 mg/g for GO sponge to 780 mg/g for GO-COOH sponge"
   },
   {
@@ -772,7 +775,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "GO-COOH sponge",
-   "text": "Hypothèse de chimiste : en milieu fortement basique (NaOH), les hydroxyles du GO sont probablement déprotonés et les époxydes ouverts, puis ces alcoolates attaquent l'acide chloroacétique (sous forme de chloroacétate) par substitution nucléophile (type Williamson) pour donner des groupes -O-CH2-COO−, qui sont carboxylés après protonation. Il s'agit plus probablement d'une carboxyméthylation que d'une « addition électrophile ». Le NaOH (12 g, environ 0,30 mol) est en large excès par rapport à ClCH2COOH (10 g, environ 0,106 mol pour une masse molaire de 94,5 g/mol) : il neutralise l'acide puis crée le milieu basique nécessaire ; ce milieu peut aussi réduire en partie le GO. Les ultrasons maintiennent probablement les feuillets dispersés et accélèrent le contact.",
+   "text": "Hypothèse de chimiste : en milieu fortement basique (NaOH), les hydroxyles du GO sont probablement déprotonés et les époxydes ouverts par OH−, puis les alcoolates attaquent le chloroacétate par substitution nucléophile SN2 (éthérification de Williamson) pour greffer des groupes –O–CH2–COO− : c'est une carboxyméthylation, et non une « addition électrophile ». Le NaOH (12 g, environ 0,30 mol) est en large excès par rapport à ClCH2COOH (10 g, environ 0,106 mol pour une masse molaire de 94,5 g/mol) : il neutralise l'acide puis crée le milieu basique nécessaire. En parallèle, la base chaude peut désoxygéner et réduire en partie le GO (retour partiel du sp2, défauts, trous) et hydrolyser une partie du chloroacétate en glycolate ; Guo et al. (2020, Nanoscale Advances) ont montré que ce type de traitement n'augmente les carboxyles qu'avec de fortes quantités de base. Les indices de l'article (bande G de 1590 à 1582 cm−1, ID/IG de 0,674 à 0,763, trous en MEB) vont dans ce sens. Le gain net en carboxyles reste à mesurer. Les ultrasons maintiennent probablement les feuillets dispersés et accélèrent le contact.",
    "quote": null
   },
   {
@@ -791,6 +794,60 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "L'article ne donne ni le volume d'eau de la carboxylation, ni la température de la « thermal filtration », ni le seuil de coupure de la membrane de dialyse, ni les conditions de lyophilisation, ni la pureté de NaOH et de ClCH2COOH. Le GO lui-même est renvoyé à « the modified Hummers methods » sans réactifs ni quantités. Le rendement n'est pas donné. Les figures 3a (isotherme), 4a (cinétique) et 3b-d, 4b-d (linéarisations) portent des courbes dont seuls les paramètres d'ajustement sont écrits dans le texte ; les points n'ont pas été relevés un à un, l'axe des abscisses de la figure 3a étant trop serré près de l'origine pour une lecture fiable. Les capacités lues sur les figures 5a, 6a et 6b sont plus élevées (jusqu'à 1200 mg/g) que les 780 mg/g du texte pour des conditions apparemment voisines.",
+   "quote": null
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "GO sponge",
+   "text": "Les 446 mg/g de l'éponge de GO viennent du tableau 2, où la colonne des références les rattache à B38 (Yu et al. 2017, même groupe) : ce n'est pas une mesure faite dans cet article, ni dans les mêmes conditions (masse, volume, concentration, pH) que les 780 mg/g de GO-COOH. La valeur n'est donc pas rangée dans les résultats de la voie GO sponge ; la comparaison « presque deux fois plus » n'est pas un témoin interne.",
+   "quote": "Comparing to the adsorption capacity of GO sponge, the carboxylation increased the adsorption capacity significantly from 446 mg/g for GO sponge to 780 mg/g for GO-COOH sponge"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-COOH sponge",
+   "text": "Plusieurs valeurs d'adsorption de l'article ne sont pas cohérentes entre elles. L'isotherme : « Ce of 900 mg/L » pour 780 mg/g alors que la figure 3a s'arrête à Ce ≈ 490 mg/L (le bilan de matière donne C0 ≈ 1000 mg/L pour ce point) ; 780 mg/g est le qe du dernier point et non un qm, le Langmuir du tableau 1 donnant qm ≈ 481 mg/g, ce qui biaise la comparaison du tableau 2 ; KF = 508 ne se retrouve pas dans l'équation du tableau 1 (exp(5,706) ≈ 301, unité incomplète). La cinétique : k1 = 0,00157 min−1 est incompatible avec le plateau à 900 min, et le qe calculé (679 mg/g) est inférieur aux qt mesurés. La thermodynamique : droite de van't Hoff sur 4 points (R² ≈ 0,64), signe de ΔH non établi, Kd en L/g qui fixe ΔG. Les capacités d'une série à l'autre pour la même condition nominale varient de 665 à 990 mg/g. Valeurs de l'article conservées telles quelles.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-COOH sponge",
+   "text": "Ce de 900 mg/L et 780 mg/g : le texte écrit « At the Ce of 900 mg/L, the equilibrium adsorption capacity was about 780 mg/g », mais la figure 3a ne dépasse pas Ce ≈ 490 mg/L ; la concentration de 900 mg/L est probablement une concentration initiale mal nommée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-COOH sponge",
+   "text": "Le tableau 1 donne pour le Freundlich y = 0,144x + 5,706, soit KF = exp(5,706) ≈ 301 et non les 508 écrits dans le texte, et l'unité « (L/mg)1/n » omet le facteur mg/g ; la pente du Langmuir est imprimée « 0000216 » (point décimal manquant). Le texte est conservé, sans correction.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-COOH sponge",
+   "text": "1190 mg/g à pH 10,8 (lu sur la figure 6a) équivaut à une surface de bleu de méthylène couché à plat proche de la surface géométrique d'un graphène monocouche (≈ 2630 m²/g) : possible seulement avec un empilement de molécules ou une orientation de chant, pas avec une monocouche électrostatique.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-COOH sponge",
+   "text": "L'article parle d'une « electrophilic addition » : la réaction est en réalité une O-alkylation de type Williamson (substitution nucléophile SN2) qui greffe des groupes –O–CH2–COO−. La citation des auteurs est conservée dans l'annotation de leur mécanisme ; l'analyse chimique figure dans l'annotation mécanisme_analyse.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-COOH sponge",
+   "text": "La preuve de carboxylation de l'article n'est pas discriminante : la hausse à 3470 cm−1 est l'élongation O–H (eau adsorbée, hydroxyles) et non la bande C=O d'un acide (≈ 1720 cm−1) ; en XPS, les composantes –C–O et –C=O descendent en énergie sans qu'apparaisse une composante O–C=O vers 289 eV. Les décalages Raman (G de 1590 à 1582 cm−1, ID/IG plus élevé) et les trous vus en MEB suggèrent aussi une réduction partielle du GO (Guo et al. 2020, Nanoscale Advances). Aucun dosage des carboxyles n'est donné.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-COOH sponge",
+   "text": "Le volume d'eau de la carboxylation n'est pas écrit. La dissolution de 12 g de NaOH et la neutralisation de 10 g d'acide chloroacétique dégagent environ 19 kJ, soit une élévation d'environ 45 K pour 100 mL d'eau si le volume est de cet ordre ; aucune température ni refroidissement n'est écrit pour la carboxylation ni pour les 2 × 3 h de sonication, alors que la chaleur accélère l'hydrolyse du chloroacétate et la désoxygénation du GO.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO sponge",
+   "text": "La méthode de Hummers est dite « modified » mais renvoyée à la référence B28 (Hummers et Offeman, 1958), la méthode originale : ni le rapport KMnO4/graphite, ni la durée, ni le lavage ne sont donnés, donc le degré d'oxydation du GO, qui fixe la capacité d'adsorption, n'est pas reproductible. La constante k1 = 0,0053 min−1 et la hausse de 3 % entre pH 2 et 12 sont attribuées à « GO sponge » sans qu'une expérience de l'article sur cette éponge soit décrite en Méthodes : ces valeurs viennent probablement de la littérature (B38) ; leur origine n'est pas tranchée.",
    "quote": null
   }
  ],
@@ -817,7 +874,7 @@
     "Fig. 2b",
     "Fig. 2c"
    ],
-   "why": "réactif commercial de départ (Sinopharm), simple référence en Raman et TGA, pas synthétisé"
+   "why": "réactif commercial de départ (Sinopharm), pas synthétisé ; Raman (G à 1578 cm−1, pas de bande D) repris en caractérisation de la voie GO sponge ; TGA de la Fig. 2c non décrite dans le texte"
   },
   {
    "sample": "GO (dispersion homogène avant lyophilisation)",
@@ -937,6 +994,13 @@
     "Table 2"
    ],
    "why": "adsorbant de la littérature"
+  },
+  {
+   "sample": "recycled GO-COOH sponge, oven-dried",
+   "defined_in": "Légende de la Fig. 7",
+   "route": "GO-COOH sponge",
+   "results_in": [],
+   "why": "traitement « oven dry » cité dans la légende de la Fig. 7 (« lyophilization and oven dry treatments ») ; ni protocole (température, durée) ni valeur dans l'article : not_stated"
   }
  ],
  "doubts": [
@@ -950,11 +1014,11 @@
   },
   {
    "where": "Fig. 5a, 6a, 6b, 7a (valeurs lues)",
-   "issue": "Lecture graphique à 2 chiffres significatifs, précision d'environ 5 à 10 %. Fig. 5a : points à 303, 313, 323 et 333 K. Fig. 6a : seuls les points alignés sur une graduation (pH 3,6 ; 5,4 ; 9,0 ; 10,8) ont été relevés ; les points intermédiaires et le point le plus bas (pH 3 probable) ne sont pas relevés car l'axe du pH est irrégulièrement gradué. Fig. 6b : Na+ 0, 25, 50, 75, 100 mM ; barres d'erreur grandes (environ ±50 à 90 mg/g). Fig. 7a : cycles 1 à 5, les valeurs étant quasi constantes. Fig. 3a et 4a non relevées (courbes d'essai dont le texte donne les paramètres d'ajustement)."
+   "issue": "Lecture graphique à 2 chiffres significatifs, précision d'environ 5 à 10 %. Fig. 5a : points à 303, 313, 323 et 333 K. Fig. 6a : points à pH ≈ 3, 3,6 ; 5,4 ; 9,0 ; 10,8 relevés (le point à pH ≈ 3, qe ≈ 600 mg/g, est la borne basse de la plage « 3–11 » du texte) ; les points intermédiaires (pH ≈ 6,3 et 7,6) ne sont pas relevés car l'axe du pH est irrégulièrement gradué. Fig. 6b : Na+ 0, 25, 50, 75, 100 mM ; barres d'erreur grandes (environ ±50 à 90 mg/g). Fig. 7a : cycles 1 à 5, les valeurs étant quasi constantes. Fig. 3a et 4a non relevées (courbes d'essai dont le texte donne les paramètres d'ajustement)."
   },
   {
    "where": "GO sponge, Table 2 « GO sponge | 446 | [] » et k1 = 0,0053 min−1",
-   "issue": "La capacité de 446 mg/g est attribuée dans le tableau 2 à une référence (B38, même groupe), et le texte compare k1 à celui de l'éponge de GO sans dire que cette expérience a été refaite dans l'article. Les deux valeurs sont consignées sur la voie « GO sponge » avec leur citation, mais leur origine (littérature ou mesure de l'article) n'est pas tranchée."
+   "issue": "La capacité de 446 mg/g est rattachée par le tableau 2 à la référence B38 (Yu et al. 2017) : elle a été retirée des résultats de la voie « GO sponge » et gardée dans une annotation de comparaison. En revanche k1 = 0,0053 min−1 et la hausse de 3 % entre pH 2 et 12 sont écrits pour « GO sponge » sans source dans le texte (aucune expérience sur l'éponge de GO n'est décrite en Méthodes) : gardés sur la voie « GO sponge », mais mesure de l'article ou valeur de la littérature non tranché."
   },
   {
    "where": "GO sponge, Raman G band 1590 cm−1",
@@ -962,7 +1026,7 @@
   },
   {
    "where": "GO-COOH sponge, régénération (Section 2.6, 3.5, Fig. 7)",
-   "issue": "Les méthodes disent seulement que le résidu est lavé à l'eau acidifiée (pH 3) ; les résultats précisent une désorption à 303 K et parlent de « lyophilization treatment », et la légende de la figure 7 cite aussi un traitement à l'étuve (« oven dry ») dont aucune courbe ni valeur n'est donnée. Seule la valeur lyophilisation (23 %) est extraite ; les valeurs par cycle sont lues sur la figure 7a (une seule courbe)."
+   "issue": "Les méthodes disent seulement que le résidu est lavé à l'eau acidifiée (pH 3) ; les résultats précisent une désorption à 303 K et parlent de « lyophilization treatment », et la légende de la figure 7 cite aussi un traitement à l'étuve (« oven dry ») dont aucune courbe ni valeur n'est donnée. Seule la valeur lyophilisation (23 %) est extraite ; les valeurs par cycle sont lues sur la figure 7a (une seule courbe). La courbe unique de la figure 7a n'est pas nommée : le texte rattache le 23 % à la lyophilisation, donc c'est probablement la courbe de la lyophilisation (hypothèse) ; le séchage à l'étuve n'a ni condition ni valeur (échantillon ajouté à l'inventaire)."
   },
   {
    "where": "GO-COOH sponge, étape 4",
@@ -983,6 +1047,22 @@
   {
    "where": "Statistiques d'ajustement",
    "issue": "Le texte écrit « R » (probablement le coefficient de corrélation ou R²) sans préciser ; valeurs gardées telles quelles."
+  },
+  {
+   "where": "GO-COOH sponge, étape 1 (sonication)",
+   "issue": "L'article dit seulement « ultrasonic treatment » : le type de dispositif (bain ou sonde) n'est pas écrit et a été déclaré non cité (une hypothèse « bath or probe » avait été saisie, retirée)."
+  },
+  {
+   "where": "GO-COOH sponge, Freundlich_KF (Table 1)",
+   "issue": "KF = 508 (texte) contre exp(5,706) ≈ 301 d'après l'équation y = 0,144x + 5,706 du tableau 1 : contradiction interne de l'article ; valeur du texte conservée sans correction."
+  },
+  {
+   "where": "GO-COOH sponge, MB_adsorption_capacity_qm = 780 mg/g",
+   "issue": "780 mg/g est présenté comme qm (texte et tableau 2) mais correspond au qe du dernier point de l'isotherme ; le Langmuir du tableau 1 (1/0,00208) donne qm ≈ 481 mg/g. Valeur du texte conservée sans correction."
+  },
+  {
+   "where": "GO-COOH sponge, isotherme (dosage du bleu de méthylène)",
+   "issue": "La courbe d'étalonnage (Abs = 0,2197 Ce) est donnée, mais ni la longueur d'onde de mesure ni le facteur de dilution ne sont écrits dans l'article (aucune annexe)."
   }
  ]
 }
