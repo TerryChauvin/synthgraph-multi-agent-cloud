@@ -208,7 +208,13 @@
      "name": "absolute ethanol",
      "formula": "C2H5OH",
      "role": "wash",
-     "quote": "followed by washing the sedimented particles with ethanol"
+     "quote": "followed by washing the sedimented particles with ethanol",
+     "purity": "99.8%",
+     "supplier_quote": "absolute ethanol 99.8% were used",
+     "supplier": null,
+     "not_stated": [
+      "supplier"
+     ]
     }
    ],
    "steps": [
@@ -357,6 +363,11 @@
        "quote": "the suspension was centrifuged at 7830 rpm for 10 min to separate particles from the parent solution",
        "value_num": 10,
        "unit": "min"
+      },
+      {
+       "name": "repetitions",
+       "quote": "followed by washing the sedimented particles with ethanol. This step was repeated three times.",
+       "value_text": "three times"
       }
      ],
      "equipment": [],
@@ -367,7 +378,7 @@
     {
      "order": 9,
      "action": "wash",
-     "description": "Wash the sedimented particles with ethanol; the step is repeated three times.",
+     "description": "Wash the sedimented particles with ethanol.",
      "quote": "followed by washing the sedimented particles with ethanol",
      "parameters": [
       {
@@ -377,7 +388,7 @@
       },
       {
        "name": "repetitions",
-       "quote": "This step was repeated three times.",
+       "quote": "followed by washing the sedimented particles with ethanol. This step was repeated three times.",
        "value_text": "three times"
       }
      ],
@@ -456,7 +467,7 @@
      "result": "spherical particles, average size 130 ± 15 nm for all MBGN types",
      "instrument": "SEM LEO 435VP (Carl Zeiss)",
      "conditions": "samples sputter-coated with a thin layer (around 10 nm) of gold (Q150/S, Quorum)",
-     "quote": "Figure 1 shows that all types of MBGNs have spherical morphology regardless of the addition of metallic precursor."
+     "quote": "Figure 1 shows that all types of MBGNs have spherical morphology regardless of the addition of metallic precursor. Figure 1 depicts that average particle size of synthesized MBGNs was 130 ± 15 nm."
     },
     {
      "technique": "EDX",
@@ -492,6 +503,27 @@
      "instrument": "ICP-OES IRIS Advantage (Thermo Jarrell Ash)",
      "conditions": "75 mg powder in 50 mL SBF, orbital shaking incubator, 37 °C, days 1, 3, 7, 14 and 21",
      "quote": "To investigate the Ag and Sr ion release from prepared Ag-Sr MBGNs, 75 mg of powder sample was dispersed in SBF solution (50 mL) for different time intervals (day 1, day 3, day 7, day 14, and day 21) in an orbital shaking incubator at 37 °C."
+    },
+    {
+     "technique": "antibacterial turbidity test (OD600)",
+     "result": "OD600 followed at 1, 2, 3, 4, 6 and 24 h for MBGNs, Ag-Sr MBGNs, Ag MBGNs and Sr MBGNs (Table 2)",
+     "instrument": null,
+     "conditions": "E. coli and S. carnosus grown in Lysogeny broth (LB-medium) for 24 h; particles added in the test tubes and incubated for 24 h; absorbance at 600 nm, OD600 medium as reference; each experiment repeated thrice; particle concentration, medium volume and inoculum density not stated",
+     "quote": "Ag-Sr MBGNs, Ag MBGNs, Sr MBGNs, and Ag-Sr MBGNs were added in the test tubes and incubated for 24 h. Then, an optical density (OD) measurement was performed with absorbance at 600 nm (OD600). For each measurement, OD600 medium was taken as a reference."
+    },
+    {
+     "technique": "disc diffusion test (inhibition halo)",
+     "result": "qualitative inhibition of E. coli and S. carnosus growth (Fig. 7)",
+     "instrument": null,
+     "conditions": "Petri dishes spread with heated agar inoculated with E. coli and S. carnosus; pellets of MBGNs of different concentrations placed; 37 °C for 24 h; digital images taken; pellet size and concentrations not stated",
+     "quote": "Petri dishes were spread homogenously with heated agar inoculated with bacteria (E. coli and S. Carnasous). Afterwards, the prepared pellets of different concentrations of MBGNs were placed and then incubated at 37 °C for 24 h."
+    },
+    {
+     "technique": "in vitro bioactivity (SBF immersion)",
+     "result": "EDX (Fig. 8), SEM (Fig. 9) and pH (Fig. 10) of Ag-Sr MBGNs pellets after immersion in SBF",
+     "instrument": "electrohydraulic pressing device (Mauthe Maschinenbau) for the pellets",
+     "conditions": "following Kokubo et al.; SBF composition adopted from a reference, pH 7.4; powder pressed into pellets; SBF volume set to 1 mg/mL; SBF changed every three days (Results 2.7 says every 3 h); samples taken after 1, 7 and 30 days, washed with DI-water, dried at 60 °C, weighed, then SEM and EDX",
+     "quote": "The prepared pellets were immersed in SBF, and the volume of SBF was set to 1 mg/mL. The SBF solution was changed every three days to simulate a refreshing system. The different sets of samples were taken after 1, 7, and 30 days."
     }
    ],
    "outcomes": [
@@ -595,7 +627,7 @@
     },
     {
      "property": "EDX_after_SBF_immersion",
-     "quote": "The decrease in the intensity of Si peak over the immersion time in SBF may indicate the degradation of Ag-Sr MBGNs or the formation of a thick layer of hydroxyapatite (HA)",
+     "quote": "The decrease in the intensity of Si peak over the immersion time in SBF may indicate the degradation of Ag-Sr MBGNs or the formation of a thick layer of hydroxyapatite (HA) []. Moreover, it was observed that the intensity of calcium and phosphate peaks increased over the incubation time, which indicates the formation of HA crystals on the surface of the Ag-Sr MBGNs",
      "value_text": "Si peak decreases and Ca and P peaks increase over the immersion time (1, 7, 30 days)"
     },
     {
@@ -633,7 +665,7 @@
      "from_figure": "Fig. 10"
     },
     {
-     "property": "Ag_ion_concentration_range_cited_for_antibacterial_effect",
+     "property": "Ag_release_range_reported_by_authors",
      "quote": "Ag ions released from Ag-Sr MBGNs samples were within the concentration range of 2–48 ppm, which has been proven to induce significant antibacterial properties against Gram-positive and Gram-negative bacterial strains",
      "value_text": "2–48 ppm"
     }
@@ -643,7 +675,10 @@
     "stirring_speed",
     "calcination_atmosphere",
     "heating_rate",
-    "yield"
+    "yield",
+    "turbidity_particle_concentration_and_inoculum",
+    "disc_diffusion_pellet_size_and_concentration",
+    "SBF_recipe_in_text"
    ]
   },
   {
@@ -692,7 +727,7 @@
      "result": "spherical particles, average size 130 ± 15 nm for all MBGN types",
      "instrument": "SEM LEO 435VP (Carl Zeiss)",
      "conditions": "samples sputter-coated with a thin layer (around 10 nm) of gold (Q150/S, Quorum)",
-     "quote": "Figure 1 shows that all types of MBGNs have spherical morphology regardless of the addition of metallic precursor."
+     "quote": "Figure 1 shows that all types of MBGNs have spherical morphology regardless of the addition of metallic precursor. Figure 1 depicts that average particle size of synthesized MBGNs was 130 ± 15 nm."
     },
     {
      "technique": "zeta potential",
@@ -728,7 +763,7 @@
     {
      "property": "EDX_Ca_Si_peaks",
      "quote": "It was observed that the Ca and Si peaks are present in MBGNs, which indicated the formation MBGNs",
-     "value_text": "Ca and Si peaks present, no Ag or Sr peaks"
+     "value_text": "Ca and Si peaks present"
     },
     {
      "property": "disc_diffusion_E_coli_S_carnosus",
@@ -827,7 +862,7 @@
      "result": "spherical particles, average size 130 ± 15 nm for all MBGN types",
      "instrument": "SEM LEO 435VP (Carl Zeiss)",
      "conditions": "samples sputter-coated with a thin layer (around 10 nm) of gold (Q150/S, Quorum)",
-     "quote": "Figure 1 shows that all types of MBGNs have spherical morphology regardless of the addition of metallic precursor."
+     "quote": "Figure 1 shows that all types of MBGNs have spherical morphology regardless of the addition of metallic precursor. Figure 1 depicts that average particle size of synthesized MBGNs was 130 ± 15 nm."
     },
     {
      "technique": "zeta potential",
@@ -966,7 +1001,7 @@
      "result": "spherical particles, average size 130 ± 15 nm for all MBGN types",
      "instrument": "SEM LEO 435VP (Carl Zeiss)",
      "conditions": "samples sputter-coated with a thin layer (around 10 nm) of gold (Q150/S, Quorum)",
-     "quote": "Figure 1 shows that all types of MBGNs have spherical morphology regardless of the addition of metallic precursor."
+     "quote": "Figure 1 shows that all types of MBGNs have spherical morphology regardless of the addition of metallic precursor. Figure 1 depicts that average particle size of synthesized MBGNs was 130 ± 15 nm."
     },
     {
      "technique": "zeta potential",
@@ -1128,7 +1163,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "5Sr-1Ag-MBGNs",
-   "text": "Hypothèse de chimiste : le CTAB forme des micelles qui servent de gabarit aux mésopores, l'acétate d'éthyle gonfle probablement ces micelles et l'ammoniaque (pH 9,5) catalyse l'hydrolyse puis la condensation du TEOS en réseau de silice autour des micelles. Les nitrates sont probablement adsorbés ou piégés à la surface des particules plutôt qu'incorporés dans le réseau à 40 °C ; Ca2+, Sr2+ et Ag+ ne s'insèrent sans doute dans le réseau qu'à la calcination à 700 °C, qui élimine aussi le CTAB. En milieu ammoniacal, Ag+ forme probablement le complexe diammine [Ag(NH3)2]+, ce qui évite la précipitation d'oxyde d'argent. Bilan matière (hypothèse, TEOS de densité environ 0,93 g/mL) : 6 mL de TEOS donnent environ 26,9 mmol de Si, 2,24 g de nitrate de calcium tétrahydraté 9,5 mmol de Ca, 0,42 g de nitrate de strontium 1,98 mmol de Sr et 0,0834 g de nitrate d'argent 0,49 mmol d'Ag, soit environ 69:24:5:1,3 mol.%, proche de la composition nominale 70:24:5:1 : les quantités citées correspondent donc au co-dopage Ag-Sr."
+   "text": "Hypothèse de chimiste : le CTAB forme des micelles qui servent de gabarit aux mésopores, l'acétate d'éthyle gonfle probablement ces micelles et l'ammoniaque (pH 9,5) catalyse l'hydrolyse puis la condensation du TEOS en réseau de silice autour des micelles. Les nitrates sont probablement adsorbés ou piégés à la surface des particules plutôt qu'incorporés dans le réseau à 40 °C ; Ca2+, Sr2+ et Ag+ ne s'insèrent sans doute dans le réseau qu'à la calcination à 700 °C, qui élimine aussi le CTAB. Hypothèse sur l'argent : en milieu ammoniacal, Ag+ forme probablement le complexe diammine [Ag(NH3)2]+, mais le bromure du CTAB (≈ 1,5 mmol pour 0,49 mmol d'Ag) devrait faire précipiter de l'AgBr (produit ionique supérieur au Ksp), qui donnerait à 700 °C de l'argent métallique dispersé plutôt qu'Ag+ substitué au Ca ; l'incorporation de l'argent dans le réseau dépend des conditions (Kozon et al., 2016) et n'est pas démontrée par l'article. Les nitrates sont aussi en partie éliminés au lavage, ce qui rend la composition réelle plus riche en Si que la charge (Naruphontjirakul et al., 2024). Bilan matière (hypothèse, TEOS de densité environ 0,93 g/mL) : 6 mL de TEOS donnent environ 26,9 mmol de Si, 2,24 g de nitrate de calcium tétrahydraté 9,5 mmol de Ca, 0,42 g de nitrate de strontium 1,98 mmol de Sr et 0,0834 g de nitrate d'argent 0,49 mmol d'Ag, soit environ 69:24:5:1,3 mol.%, proche de la composition nominale 70:24:5:1 : les quantités citées correspondent donc au co-dopage Ag-Sr."
   },
   {
    "type": "securite_analyse",
@@ -1145,6 +1180,48 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Valeurs lues sur figure (précision ≈ 5 %, deux chiffres significatifs) : libération d'ions à 21 jours (Fig. 6), pH du SBF (Fig. 10) et volume de N2 adsorbé à P/P0 = 0,98 (Fig. 2). Les images de diffusion sur disque (Fig. 7), les spectres EDX (Fig. 3 et 8) et FTIR/DRX (Fig. 4 et 5) ne portent pas de valeur chiffrée exploitable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Essai de libération d'ions (Fig. 6, tous les échantillons) incohérent avec le bilan de matière : pour 75 mg de poudre dans 50 mL (1,5 g/L), la poudre 5Sr-1Ag ne contient au plus que ≈ 26–33 ppm d'argent et ≈ 106–108 ppm de strontium, alors que la figure donne ≈ 67–73 ppm d'Ag et ≈ 140 ppm de Sr à 21 jours ; le Ca (≈ 260 ppm) dépasse aussi le maximum contenu (≈ 233–237 ppm), sauf à compter le Ca du SBF. Dans le SBF (≈ 148 mM de chlorure), l'argent dissous est limité par AgCl à environ 0,3–1 mg/L : 67–73 ppm d'argent « ionique » est invraisemblable. Le Si à 350–360 ppm vaut environ cinq fois la solubilité de la silice amorphe à 37 °C (≈ 68 mg/L de Si ; Gunnarsson et Arnórsson, 2000), ce qui touche aussi MBGNs. Le protocole ICP est lui-même incohérent (≈ 1 g « dissous » dans HNO3 à 5 % ne dissout pas un verre silicaté, et ne correspond pas aux 75 mg immergés), et le texte donne 2–48 ppm d'argent contre 67–73 ppm sur la figure. Ne pas reprendre ces concentrations sans vérifier masse, volume et mode de prélèvement.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "5Sr-1Ag-MBGNs",
+   "text": "Bioactivité : « l'ajout de Sr améliore la bioactivité » n'est pas démontré, car seule la poudre Ag-Sr est immergée dans le SBF, sans témoin 1Ag-MBGNs ni 5Sr-MBGNs. La preuve de l'apatite repose sur l'EDX des échantillons métallisés à l'or après SBF : la raie Au Mα (≈ 2,12 keV) recouvre la raie P Kα (≈ 2,01 keV) à la résolution de l'EDX, donc la hausse du pic de phosphore n'est pas discriminante (valeurs de manuel, non revérifiées en ligne) ; ni DRX ni IRTF n'ont été faites après immersion.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "5Sr-1Ag-MBGNs",
+   "text": "Réserves sur la synthèse : l'ammoniaque « 32 vol.% » donnerait un pH calculé d'environ 11,8 et non 9,5 annoncé (probable coquille sur la dilution ; NH3/Si ≈ 5,6, treize fois le protocole voisin de Naruphontjirakul et al., 2024). L'argent ajouté avec le bromure du CTAB doit précipiter en partie en AgBr (produit ionique 6 à 1 800 fois le Ksp, même complexé en diammine), puis donner de l'argent métallique à 700 °C : l'état de l'argent (substitution au Ca, Ag0, AgBr) n'est pas établi, la DRX sans raie d'Ag à ≈ 1 mol.% étant peu discriminante, et « Ag in its pure form » contredit « released in an ionic form ». La composition finale n'est jamais mesurée (EDX qualitatif seulement) : 70:24:5:1 est une composition de charge, une partie du Ca partant probablement au lavage.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Potentiel zêta (Table 1) mesuré dans l'éthanol pur, où le pH n'est pas défini : des valeurs positives (+15 à +34 mV) pour un verre silicaté calciné, alors que ces nanoparticules sont d'ordinaire négatives dans l'eau (≈ −40 mV chez Naruphontjirakul et al., 2024), et l'explication par un « changement de pH » ou l'électronégativité de l'Ag ne décrit pas un mécanisme de charge. Associer une charge positive à une solubilité accrue confond stabilité colloïdale et solubilité.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MBGNs",
+   "text": "Pour MBGNs, le Si de la Fig. 6A (≈ 360 ppm) dépasse environ cinq fois la solubilité de la silice amorphe à 37 °C ; la quantité de nitrate de calcium (≈ 2,7 g pour 70:30 à partir de 6 mL de TEOS, calcul) n'est pas écrite.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "5Sr-MBGNs",
+   "text": "Pour 5Sr-MBGNs, le Sr à 140 ppm à 21 jours dépasse les ≈ 107 ppm contenus dans 75 mg de poudre (≈ 130 % du strontium), de même que le Ca (260 contre ≈ 245 ppm) ; quantité de nitrate de calcium non écrite (≈ 2,3 g, calcul).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "1Ag-MBGNs",
+   "text": "Pour 1Ag-MBGNs, l'argent à 73 ppm à 21 jours dépasse les ≈ 27–33 ppm contenus dans 75 mg de poudre, et plus de cent fois la solubilité d'AgCl dans le SBF ; la précipitation d'AgBr avec le bromure du CTAB décrite pour la voie de base s'applique aussi ici ; quantité de nitrate de calcium non écrite (≈ 2,6 g, calcul).",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -1183,6 +1260,12 @@
    "ref_id": "B33-gels-07-00034",
    "role": "autre",
    "quote": "The composition of SBF was adopted from Reference"
+  },
+  {
+   "route": "5Sr-1Ag-MBGNs",
+   "ref_id": "B27-gels-07-00034",
+   "role": "protocole_adapte",
+   "quote": "(Ag-Sr-MBGNs) via a modified Stöber process"
   }
  ],
  "doubts": [
@@ -1199,8 +1282,8 @@
    "issue": "Matériaux : ammonium hydroxide 35 % (VWR) ; Méthodes : « diluted solution of ammonium hydroxide (32 vol.%) ». La pureté 35 % est rattachée à ce réactif, la dilution réelle n'est pas donnée."
   },
   {
-   "where": "5Sr-1Ag-MBGNs étape 9, lavage",
-   "issue": "« This step was repeated three times » : le texte ne dit pas si la répétition porte sur le lavage seul ou sur centrifugation + lavage. Lecture littérale : 3 répétitions du lavage à l'éthanol."
+   "where": "5Sr-1Ag-MBGNs étapes 8 et 9, centrifugation et lavage",
+   "issue": "« This step was repeated three times » suit la phrase qui lie centrifugation et lavage (« the suspension was centrifuged … followed by washing … with ethanol ») : la répétition est rattachée aux deux étapes (8 et 9). Lecture alternative possible : lavage à l'éthanol seul répété trois fois ; le texte ne tranche pas."
   },
   {
    "where": "5Sr-1Ag-MBGNs étape 7",
@@ -1212,7 +1295,7 @@
   },
   {
    "where": "Fig. 6, libération des ions",
-   "issue": "Le texte parle d'un « burst release » de l'argent dans les premières 24 h et d'une plage de 2–48 ppm, alors que la figure montre une libération presque linéaire jusqu'à environ 67 ppm (Ag-Sr) et 73 ppm (Ag) à 21 jours. Valeurs à 21 jours lues sur figure à ≈ 5 % : Si 360/350, Ca 230/260, Sr 140, Ag 67 et 73 ppm. Attribution des panneaux selon la légende (A MBGNs, B Ag-Sr, C Ag, D Sr). La plage 2–48 ppm est extraite comme valeur citée de la littérature, non comme résultat."
+   "issue": "Le texte parle d'un « burst release » de l'argent dans les premières 24 h et d'une plage de 2–48 ppm, alors que la figure montre une libération presque linéaire jusqu'à environ 67 ppm (Ag-Sr) et 73 ppm (Ag) à 21 jours. Valeurs à 21 jours lues sur figure à ≈ 5 % : Si 360/350, Ca 230/260, Sr 140, Ag 67 et 73 ppm. Attribution des panneaux selon la légende (A MBGNs, B Ag-Sr, C Ag, D Sr). La plage 2–48 ppm est la phrase des auteurs sur l'argent libéré par Ag-Sr MBGNs (période non précisée) : elle est extraite comme résultat de 5Sr-1Ag-MBGNs (Ag_release_range_reported_by_authors), et non comme valeur de la littérature ; elle diffère des 67–73 ppm lus sur la figure à 21 jours."
   },
   {
    "where": "Fig. 2, BET",
