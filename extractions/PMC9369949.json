@@ -170,7 +170,7 @@
      "role": "modulator",
      "amount": 6,
      "unit": "mmol",
-     "purity": "99%",
+     "purity": "highest purity available",
      "supplier": "Sigma Aldrich",
      "supplier_quote": "All reagents used have been supplied by Sigma Aldrich (St. Louis, MO, USA), in the highest purity available, and none have undergone a subsequent purification process.",
      "quote": "CIM-80_6 | 6 mmol | 67"
@@ -182,7 +182,7 @@
      "amount": 60,
      "unit": "mL",
      "purity": "18.2 MΩ.cm",
-     "supplier": "Millipore Milli-Q, Merck, Darmstadt, Germany",
+     "supplier": "Merck, Darmstadt, Germany",
      "supplier_quote": "in 60 mL of deionized water (18.2 MΩ.cm Millipore® Milli-Q® water, Merck, Darmstadt, Germany)",
      "quote": "in 60 mL of deionized water (18.2 MΩ.cm Millipore® Milli-Q® water, Merck, Darmstadt, Germany)"
     },
@@ -1580,7 +1580,7 @@
   },
   {
    "where": "Choix de la voie de base",
-   "issue": "Les Méthodes donnent une plage d'urée (« 2 mmol to 10 mmol ») sans voie unique. CIM-80_6 (6 mmol), échantillon optimal et le plus caractérisé, est pris comme voie de base ; les cinq autres échantillons MOF/boehmite en sont des branches (quantité d'urée), l'article disant que les autres réactifs et l'eau sont gardés constants. La pureté de l'urée (99 %) vient de la phrase des Méthodes « urea (99%) » et non de la rangée du tableau 1 citée pour la quantité de 6 mmol."
+   "issue": "Les Méthodes donnent une plage d'urée (« 2 mmol to 10 mmol ») sans voie unique. CIM-80_6 (6 mmol), échantillon optimal et le plus caractérisé, est pris comme voie de base ; les cinq autres échantillons MOF/boehmite en sont des branches (quantité d'urée), l'article disant que les autres réactifs et l'eau sont gardés constants. La pureté de l'urée est donnée « urea (99%) » dans la phrase des Méthodes, mais la quantité de 6 mmol n'est écrite que dans le tableau 1 (autre citation) : la pureté reste donc « highest purity available » (phrase générale du fournisseur) et le 99 % est signalé ici."
   },
   {
    "where": "CIM-80_6, volume poreux",
@@ -1608,7 +1608,7 @@
   },
   {
    "where": "CIM-80_10_CTAB",
-   "issue": "La quantité de CTAB (écrit « CTBA » dans la phrase des Méthodes), le moment de son ajout et son fournisseur ne sont pas donnés. La branche est rattachée à CIM-80_10 (même quantité d'urée, comparaison explicite « sample without CTAB containing the same amount of urea »), en héritant de ses étapes."
+   "issue": "La quantité de CTAB (écrit « CTBA » dans la phrase des Méthodes), le moment de son ajout et son fournisseur ne sont pas donnés. La branche est rattachée à CIM-80_10 (même quantité d'urée, comparaison explicite « sample without CTAB containing the same amount of urea »), en héritant de ses étapes. L'avertissement du contrôle sur la variation « additive » est voulu : le CTAB est absent du parent, la variation porte un nom explicite avec parent_value « none » (RUNBOOK)."
   },
   {
    "where": "AlO(OH) : protocole",
