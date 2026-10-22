@@ -1,0 +1,74 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9049756</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9049756 — Heating-up synthesis of cesium bismuth bromide perovskite nanocrystals with tailored composition, morphology, and optical properties.</h1>
+<h2>Voie : Cs3BiBr6_NC</h2>
+<pre class="mermaid">flowchart LR
+  R15319([&quot;cesium bromide&lt;br/&gt;1.072 g&quot;]):::reactif
+  R15319 --&gt;|&quot;precursor&quot;| S18215
+  R15320([&quot;bismuth bromide&lt;br/&gt;0.252 g&quot;]):::reactif
+  R15320 --&gt;|&quot;precursor&quot;| S18215
+  R15321([&quot;1-octadecene&lt;br/&gt;20 mL&quot;]):::reactif
+  R15321 --&gt;|&quot;solvent&quot;| S18215
+  R15322([&quot;oleylamine&lt;br/&gt;1.5 mL&quot;]):::reactif
+  R15322 --&gt;|&quot;surfactant&quot;| S18215
+  R15323([&quot;oleic acid&lt;br/&gt;1.5 mL&quot;]):::reactif
+  R15323 --&gt;|&quot;surfactant&quot;| S18215
+  R15324([&quot;anhydrous toluene&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15324 --&gt;|&quot;solvent&quot;| S18215
+  S18215[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S18215 --&gt; S18216
+  S18216[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 105 °C&lt;br/&gt;duration : an hour&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S18216 --&gt; S18217
+  S18217[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 160 °C&lt;br/&gt;duration : 60 min&quot;]:::etape
+  S18217 --&gt; S18218
+  S18218[&quot;&lt;b&gt;4. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperatures&quot;]:::etape
+  S18218 --&gt; S18219
+  S18219[&quot;&lt;b&gt;5. add&lt;/b&gt;&quot;]:::etape
+  S18219 --&gt; S18220
+  S18220[&quot;&lt;b&gt;6. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 3000 rpm&lt;br/&gt;duration : 15 s&quot;]:::etape
+  S18220 --&gt; S18221
+  S18221[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 8000 rpm&lt;br/&gt;duration : 3 min&quot;]:::etape
+  S18221 --&gt; M
+  M{{&quot;cesium bismuth bromide nanocrystals&lt;br/&gt;Cs3BiBr6&quot;}}:::materiau
+  O74052[&quot;nanocrystal_size : 14.22 nm&quot;]:::resultat
+  M -.-&gt; O74052
+  O74053[&quot;nanocrystal_size_standard_deviation : 1.72 nm&quot;]:::resultat
+  M -.-&gt; O74053
+  O74054[&quot;EDS_atomic_ratio_Cs_Bi_Br : 34.96 : 11.18 : 53.86&quot;]:::resultat
+  M -.-&gt; O74054
+  O74055[&quot;solution_color_at_160C : bright yellow at 160 °C&quot;]:::resultat
+  M -.-&gt; O74055
+  O74056[&quot;phase_at_160C : Cs3BiBr6 predominantly, BiOBr…&quot;]:::resultat
+  M -.-&gt; O74056
+  O74057[&quot;optical_band_gap : 3.05 eV&quot;]:::resultat
+  M -.-&gt; O74057
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11783{{&quot;Cs3BiBr6_NC&quot;}}:::materiau
+  B11784[&quot;Cs3Bi2Br9_NP&quot;]:::etape
+  B11783 --&gt;|&quot;oleic acid = 15 mL&lt;br/&gt;1-octadecene = 7.5 mL&quot;| B11784
+  B11785[&quot;BiOBr_NP&quot;]:::etape
+  B11783 --&gt;|&quot;cesium bromide = absent&lt;br/&gt;temperature = 135 °C&quot;| B11785
+  B11787[&quot;T170&quot;]:::etape
+  B11783 --&gt;|&quot;temperature = 170 °C&quot;| B11787
+  B11792[&quot;T200&quot;]:::etape
+  B11783 --&gt;|&quot;temperature = 200 °C&quot;| B11792
+  B11793[&quot;Stoich_CsBr&quot;]:::etape
+  B11783 --&gt;|&quot;cesium bromide = stoichiometric ratio of …&quot;| B11793
+  B11794[&quot;NP_100C_30min&quot;]:::etape
+  B11784 --&gt;|&quot;temperature = 100 °C&lt;br/&gt;duration = 30 min&quot;| B11794
+  B11786[&quot;Bi_noCsBr_above180C&quot;]:::etape
+  B11785 --&gt;|&quot;temperature = above 180 °C&quot;| B11786
+  B11788[&quot;T170_t15min&quot;]:::etape
+  B11787 --&gt;|&quot;duration = 15 min&quot;| B11788
+  B11789[&quot;T170_t30min&quot;]:::etape
+  B11787 --&gt;|&quot;duration = 30 min&quot;| B11789
+  B11790[&quot;T170_t90min&quot;]:::etape
+  B11787 --&gt;|&quot;duration = 90 min&quot;| B11790
+  B11791[&quot;T170_t120min&quot;]:::etape
+  B11787 --&gt;|&quot;duration = 120 min&quot;| B11791
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
