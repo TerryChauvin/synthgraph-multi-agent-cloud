@@ -411,6 +411,27 @@
      "instrument": "JEOL JDX–8030",
      "conditions": "30 kV, 20 mA",
      "quote": "As shown in Fig. 6b, CuFe2O4 NPs with tetragonal structure was loaded in inner and outer of HNTs."
+    },
+    {
+     "technique": "catalytic test",
+     "result": "masse de catalyseur non tranchée par l'article : « in the presence of 50 mg of the catalyst » (partie Résultats, optimisation) et « nanocatalyst (5 mg) » (procédure générale) ; réaction à température ambiante dans l'éthanol, 20 min, catalyseur séparé à l'aimant",
+     "instrument": null,
+     "conditions": "hydrate d'hydrazine 2 mmol, acétoacétate d'éthyle 2 mmol, aldéhyde 1 mmol, acétate d'ammonium 3 mmol, éthanol, température ambiante, 20 min",
+     "quote": "A mixture of hydrazine hydrate 1 (2 mmol), ethyl acetoacetate 2 (2 mmol), aromatic aldehydes 3 (1 mmol), and ammonium acetate 4 (3 mmol), in the presence of CuFe2O4@HNTs nanocatalyst (5 mg) was reacted in ethanol at room temperature."
+    },
+    {
+     "technique": "XRD (positions des pics)",
+     "result": "CuFe2O4 : 2θ = 18.59, 30.14, 36.12, 38.99, 44.00, 54.18 et 62.37, dits conformes à la fiche JCPDS 00-034-0425",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The diffraction angles (2θ) 18.59, 30.14, 36.12, 38.99, 44.00, 54.18 and 62.37 are fully complied with the characteristic data of (JCPDS card no. 00-034-0425)."
+    },
+    {
+     "technique": "XRD (positions des pics)",
+     "result": "HNTs de départ (Fig. 6a) : pics typiques à 12.62° et 20.26°",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The typical diffraction peaks of HNTs appeared at 12.62° and 20.26° (Fig. 6a)"
     }
    ],
    "outcomes": [
@@ -610,7 +631,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "CuFe2O4@HNTs",
-   "text": "Hypothèse de chimiste : en milieu NaOH, Fe3+ et Cu2+ précipitent probablement sous forme d'hydroxydes ou d'oxy-hydroxydes mixtes qui se déposent sur les parois externes (et peut-être internes) des tubes ; le chauffage à 90 °C vieillit ce précipité, et la calcination à 500 °C déshydrate et cristallise le spinelle CuFe2O4 (rapport Cu:Fe de 1:2 conforme à la stœchiométrie, 0,58 mmol de Cu pour 1,17 mmol de Fe). La perte des bandes Al-OH et l'amorphisation de l'halloysite correspondent à la déshydroxylation de l'argile vers 500 °C (métahalloysite). Le NaOH est en net excès (12 mmol contre environ 4,7 mmol nécessaires pour précipiter les hydroxydes). Le chiffre d'EDX (Fe : Cu en masse de 13,98 : 5,50, soit environ 2,9 : 1 en mole) s'écarte du rapport de synthèse de 2 : 1 : l'EDX est semi-quantitatif, et la perte de cuivre au lavage ou la présence d'oxyde de fer en plus sont possibles. Avec 0,58 mmol de CuFe2O4 (environ 0,14 g) pour 0,50 g de HNTs, la charge attendue est d'environ 22 % en masse."
+   "text": "Hypothèse de chimiste, non démontrée par l'article : l'ajout goutte à goutte de NaOH dans la solution acide de nitrates précipite d'abord Fe3+ (ferrihydrite, pH ≈ 2–3) puis Cu2+ (Cu(OH)2 vers pH ≈ 5–6), donc une précipitation séquentielle plutôt qu'une vraie coprécipitation ; les espèces hydrolysées se déposent probablement surtout sur la face externe des tubes. À pH élevé et 90 °C, Cu(OH)2 peut se déshydrater en CuO, et une partie du fer et du cuivre forme peut-être une ferrite mal cristallisée, ce qui expliquerait la séparation à l'aimant avant calcination. La base libre (NaOH en excès ×2,7, ≈ 0,3 mol/L, 12,5 mmol contre ≈ 4,7 mmol nécessaires) peut aussi attaquer la couche interne d'alumine de l'halloysite. À 500 °C, CuO et l'oxyde de fer peuvent réagir en CuFe2O4, mais la réaction peut rester incomplète (CuO résiduel, cf. pic à 38,99°), et l'halloysite se déshydroxyle en métahalloysite amorphe de forme tubulaire (perte des bandes Al-OH, amorphisation en DRX). Le rapport Cu:Fe de synthèse (0,58 mmol pour 1,17 mmol) est de 1:2 ; l'EDX (Fe:Cu ≈ 2,9:1 en mole) est semi-quantitatif. La charge attendue est d'environ 22 % en masse sur halloysite non calcinée, ≈ 24 % après calcination. La forme cubique ou tétragonale finale dépend du refroidissement, non décrit."
   },
   {
    "type": "securite_analyse",
@@ -639,17 +660,64 @@
    "route": "CuFe2O4@HNTs",
    "text": "Le protocole du test catalytique est lisible dans l'article (hydrate d'hydrazine 2 mmol, acétoacétate d'éthyle 2 mmol, aldéhyde 1 mmol, acétate d'ammonium 3 mmol, catalyseur, éthanol, température ambiante, 20 min, séparation à l'aimant, précipitation à l'eau) mais il est rangé ici en résultats du catalyseur, non en voie. La quantité de catalyseur est contradictoire dans l'article (50 mg dans la partie optimisation, 5 mg dans la procédure générale) et le volume d'éthanol n'est pas donné.",
    "quote": "A mixture of hydrazine hydrate 1 (2 mmol), ethyl acetoacetate 2 (2 mmol), aromatic aldehydes 3 (1 mmol), and ammonium acetate 4 (3 mmol), in the presence of CuFe2O4@HNTs nanocatalyst (5 mg) was reacted in ethanol at room temperature."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "CuFe2O4@HNTs",
+   "text": "Valeur de la littérature, non mesurée par les auteurs : l'aimantation de CuFe2O4 seul (≈ 45 emu/g, renvoi [CR33]) sert de comparaison aux 30 emu/g du composite ; les auteurs y voient la preuve que le dépôt sur HNTs diminue l'aimantation et confirme la synthèse. Aucune voie de CuFe2O4 seul n'est décrite.",
+   "quote": "In the previously reported study, the magnetization of neat CuFe2O4 NPs was around 45 electromagnetic units per gram (emu g−1)."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "CuFe2O4@HNTs",
+   "text": "Valeur de la littérature, non mesurée par les auteurs : la surface BET des HNTs (≈ 47,8 m2/g) est la référence à laquelle les 51,13 m2/g du composite sont comparés ; le volume poreux « reported » des HNTs est aussi invoqué sans que sa valeur soit donnée dans l'article.",
+   "quote": "As stated in reported articles, BET surface area of HNTs is around 47.8 m2g−1"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuFe2O4@HNTs",
+   "text": "Écart texte/figure : le texte donne une aimantation à saturation d'environ 30 emu/g, mais la courbe de la Fig. 3b monte seulement à environ 23–24 emu/g vers ±14 000 Oe, sans plateau net ; la valeur du texte est conservée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuFe2O4@HNTs",
+   "text": "Aimantation incompatible avec la recette : la charge attendue est d'environ 24 % en masse de CuFe2O4 (0,58 mmol de Cu, soit ≈ 0,14 g pour 0,50 g de HNTs), ce qui donne 7–11 emu/g avec une aimantation de 27 à 45 emu/g pour la ferrite (Saikova et al., Materials 2023, pour la plage nanométrique). Atteindre 30 emu/g demanderait au moins 52 à 67 % de ferrite ; le rendement de la séparation magnétique, qui a pu écarter les tubes peu chargés, n'est pas donné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuFe2O4@HNTs",
+   "text": "Phase « tétragonale » non démontrée : la structure tétragonale de la fiche 00-034-0425 se distingue du cubique par des doublets vers 34,7/35,9° et 62,2/63,6°, absents de la liste des pics de l'article, qui reste compatible avec la spinelle cubique. Le pic à 38,99° n'est pas indexé par cette fiche (CuO possible). Pour une longueur d'onde non déclarée, le calcul a supposé Cu Kα1."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuFe2O4@HNTs",
+   "text": "La « stabilité thermique accrue » confond deux variables : l'ATG compare des HNTs non calcinées au composite calciné 5 h à 500 °C, dont la déshydroxylation est déjà faite (perte théorique ≈ 14 %). Le texte donne en outre une perte de ≈ 20 % pour les HNTs, alors que la Fig. 2b montre ≈ 13–14 % ; le témoin utile serait des HNTs calcinées sans métal."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuFe2O4@HNTs",
+   "text": "La hausse de surface BET de 47,8 m2/g (valeur de la littérature, autre échantillon) à 51,13 m2/g ne prouve pas le chargement : 24 % de particules denses de ≈ 36 nm devraient plutôt faire baisser la surface (≈ 44 m2/g attendus). La calcination, l'excès de NaOH ou la variabilité entre lots de HNTs peuvent l'expliquer ; le volume poreux est lui aussi comparé à une valeur publiée, non à des HNTs de départ mesurées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuFe2O4@HNTs",
+   "text": "Interprétation des valeurs de pores sans unité : en supposant 0,126 cm3/g et une surface de 51,13 m2/g, le calcul 4V/S donne ≈ 9,9 nm, ce qui rend cohérent « 9,87 » comme diamètre moyen de pore en nm (distinct du pic de la distribution de la Fig. 5b vers 6 nm) ; l'isotherme de la Fig. 5a atteint ≈ 0,13 cm3/g. Les unités restent non écrites dans l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuFe2O4@HNTs",
+   "text": "Localisation des particules douteuse : l'article donne un diamètre interne de 10–15 nm pour les HNTs et une taille de particules de 35,88 nm, qui ne peuvent pas entrer dans un tel lumen ; une image MET en projection ne distingue pas l'intérieur de la paroi externe, et l'élargissement du lumen attribué à la calcination (Yuan et al., Clays and Clay Minerals 2012, indiquent une morphologie quasi inchangée sous 900 °C) n'est pas démontré."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "CuFe2O4@HNTs, test catalytique (résultats)",
-   "issue": "La quantité de catalyseur est de 50 mg dans la partie Résultats (« A considerable yield was obtained in the presence of 50 mg of the catalyst ») et de 5 mg dans la procédure générale. Aucune valeur de catalyseur n'est extraite ; le protocole du test est rangé en résultats du matériau (règle des tests du matériau fini)."
+   "issue": "La quantité de catalyseur est de 50 mg dans la partie Résultats (« A considerable yield was obtained in the presence of 50 mg of the catalyst ») et de 5 mg dans la procédure générale (« nanocatalyst (5 mg) »). Les deux valeurs sont rapportées dans la caractérisation « catalytic test » sans choisir ; les rendements de la Table 1 ne peuvent pas être rattachés à une charge sûre. Le protocole du test est rangé en résultats du matériau (règle des tests du matériau fini) ; volume d'éthanol non donné."
   },
   {
    "where": "CuFe2O4@HNTs, pore_volume et pore_size",
-   "issue": "Le texte donne 0,126 et 9,87 sans unité. La Fig. 5b (distribution de taille de pores) a son pic vers 6 nm et son axe en nm, sans que 9,87 y soit lisible : valeurs du texte retenues, sans unité ; unité probable cm3/g et nm."
+   "issue": "Le texte donne 0,126 et 9,87 sans unité ; valeurs du texte retenues, sans unité. Les unités probables sont cm3/g et nm : la Fig. 5b (distribution de taille de pores, axe en nm) a son pic vers 6 nm, distinct de 9,87, qui correspond plutôt au diamètre moyen 4V/S (interprétation, voir l'annotation limite_reproductibilite)."
   },
   {
    "where": "CuFe2O4@HNTs, saturation_magnetization",
@@ -674,6 +742,14 @@
   {
    "where": "Table 1, entrée 8 (5h)",
    "issue": "Le substituant est écrit « 4-OH » sans cycle aromatique ; recopié tel quel. La colonne « Yieldb » et la note b du tableau n'ont pas de légende dans le fichier texte (« optimal conditions » non définies)."
+  },
+  {
+   "where": "XRD, pic à 25,61",
+   "issue": "Le pic faible à 25,61 annoncé pour l'HNTs amorphisée n'est pas visible à l'œil sur la Fig. 6b (courbe bruitée) ; valeur du texte conservée."
+  },
+  {
+   "where": "method_sources, phrase de conception du catalyseur",
+   "issue": "La phrase « according to previous scientific reports » renvoie à [CR29] (Maleki, HNTs magnétiques fonctionnalisées SO3H) et [CR30] (Hajizadeh, HNTs magnétiques modifiées PEI), des préparations de HNTs magnétiques des mêmes auteurs, mais sans les désigner comme protocole à suivre (« as described in ») : method_sources laissé vide, décision de l'orchestrateur."
   }
  ]
 }
