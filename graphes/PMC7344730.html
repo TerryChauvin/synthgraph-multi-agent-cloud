@@ -1,0 +1,125 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7344730</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7344730 — Synthesis and Characterization of LiFePO4-PANI Hybrid Material as Cathode for Lithium-Ion Batteries.</h1>
+<h2>Voie : PANI</h2>
+<pre class="mermaid">flowchart LR
+  R16069([&quot;ammonium persulfate (APS)&lt;br/&gt;25 mmol&quot;]):::reactif
+  R16069 --&gt;|&quot;oxidant&quot;| S19325
+  R16070([&quot;distilled water (APS solution)&lt;br/&gt;50 mL&quot;]):::reactif
+  R16070 --&gt;|&quot;solvent&quot;| S19325
+  R16071([&quot;aniline&lt;br/&gt;20 mmol&quot;]):::reactif
+  R16071 --&gt;|&quot;monomer&quot;| S19325
+  R16072([&quot;phosphoric acid, 1 M aqueous solution&lt;br/&gt;50 mL&quot;]):::reactif
+  R16072 --&gt;|&quot;acid&quot;| S19325
+  R16073([&quot;distilled water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16073 --&gt;|&quot;wash&quot;| S19325
+  R16074([&quot;ethanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16074 --&gt;|&quot;wash&quot;| S19325
+  S19325[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S19325 --&gt; S19326
+  S19326[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;concentration : 1 M&quot;]:::etape
+  S19326 --&gt; S19327
+  S19327[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S19327 --&gt; S19328
+  S19328[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;temperature : 5 °C&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S19328 --&gt; S19329
+  S19329[&quot;&lt;b&gt;5. filter&lt;/b&gt;&quot;]:::etape
+  S19329 --&gt; S19330
+  S19330[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;repetitions : 5&quot;]:::etape
+  S19330 --&gt; S19331
+  S19331[&quot;&lt;b&gt;7. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&lt;br/&gt;repetitions : 5&quot;]:::etape
+  S19331 --&gt; S19332
+  S19332[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 8 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S19332 --&gt; M
+  M{{&quot;polyaniline (emeraldine base, EB), self-assembly …&lt;br/&gt;&quot;}}:::materiau
+  O76915[&quot;product_colour_species : dark blue precipitate of emer…&quot;]:::resultat
+  M -.-&gt; O76915
+  O76916[&quot;crystallinity : higher crystallinity of the p…&quot;]:::resultat
+  M -.-&gt; O76916
+  O76917[&quot;aggregate_diameter : 2.75 µm&quot;]:::resultat
+  M -.-&gt; O76917
+  O76918[&quot;primary_particle_diameter : 310 nm&quot;]:::resultat
+  M -.-&gt; O76918
+  O76919[&quot;IR_quinoid_benzenoid_ratio_R : 0.462&quot;]:::resultat
+  M -.-&gt; O76919
+  O76920[&quot;discharge_capacity_0.1C_2.5-3.9V : 95 mAh g−1&quot;]:::resultat
+  M -.-&gt; O76920
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LFP-PANI</h2>
+<pre class="mermaid">flowchart LR
+  R16075([&quot;commercial LiFePO4 (carbon-coated, 2% C)&lt;br/&gt;0.75 g&quot;]):::reactif
+  R16075 --&gt;|&quot;precursor&quot;| S19333
+  R16076([&quot;PANI (emeraldine base, route PANI)&lt;br/&gt;0.25 g&quot;]):::reactif
+  R16076 --&gt;|&quot;intermediate&quot;| S19333
+  R16077([&quot;lithium acetate (AcOLi)&lt;br/&gt;0.1675 g&quot;]):::reactif
+  R16077 --&gt;|&quot;dopant&quot;| S19333
+  R16078([&quot;Ar/H2 (90/10)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16078 --&gt;|&quot;gas&quot;| S19333
+  S19333[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;duration : 0.5 h&quot;]:::etape
+  S19333 --&gt; S19334
+  S19334[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 300 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : Ar/H2 (90/10)&quot;]:::etape
+  S19334 --&gt; M
+  M{{&quot;LiFePO4–PANI hybrid (PANI-coated carbon-coated Li…&lt;br/&gt;&quot;}}:::materiau
+  O76932[&quot;product_appearance : black powder&quot;]:::resultat
+  M -.-&gt; O76932
+  O76933[&quot;PANI_content_TGA : 25 %&quot;]:::resultat
+  M -.-&gt; O76933
+  O76934[&quot;average_particle_diameter : 180 nm&quot;]:::resultat
+  M -.-&gt; O76934
+  O76935[&quot;phase_composition : LiFePO4 (group Pnmb) with low…&quot;]:::resultat
+  M -.-&gt; O76935
+  O76936[&quot;IR_quinoid_benzenoid_ratio_R : 0.5&quot;]:::resultat
+  M -.-&gt; O76936
+  O76937[&quot;specific_discharge_capacity_0.1C : 145 mAh g−1&quot;]:::resultat
+  M -.-&gt; O76937
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_LFP_PANI</h2>
+<pre class="mermaid">flowchart LR
+  R16079([&quot;LiFePO4–PANI (route LFP-PANI)&lt;br/&gt;80 (80:10:10 active material …&quot;]):::reactif
+  R16079 --&gt;|&quot;active_material&quot;| S19335
+  R16080([&quot;Super P (conducting agent)&lt;br/&gt;10 (80:10:10 active material …&quot;]):::reactif
+  R16080 --&gt;|&quot;conductive_additive&quot;| S19335
+  R16081([&quot;PVDF (binder)&lt;br/&gt;10 (80:10:10 active material …&quot;]):::reactif
+  R16081 --&gt;|&quot;binder&quot;| S19335
+  R16082([&quot;N-methylpyrrolidone (NMP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16082 --&gt;|&quot;solvent&quot;| S19335
+  R16083([&quot;Al foil (current collector)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16083 --&gt;|&quot;substrate&quot;| S19335
+  S19335[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S19335 --&gt; S19336
+  S19336[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S19336 --&gt; S19337
+  S19337[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S19337 --&gt; S19338
+  S19338[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&lt;br/&gt;slit_height : 100 µm&quot;]:::etape
+  S19338 --&gt; M
+  M{{&quot;LFP–PANI composite cathode (LFP–PANI : Super P : …&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Cell_LFP_PANI</h2>
+<pre class="mermaid">flowchart LR
+  R16084([&quot;LFP–PANI cathode (route Electrode_LFP_PANI)&lt;br/&gt;0.9 cm2 active area&quot;]):::reactif
+  R16084 --&gt;|&quot;electrode&quot;| S19339
+  R16085([&quot;metallic lithium (counter and reference elec…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16085 --&gt;|&quot;counter_electrode&quot;| S19339
+  R16086([&quot;Celgard 2325 (separator)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16086 --&gt;|&quot;separator&quot;| S19339
+  R16087([&quot;1 M LiPF6 in EC-DMC (1:1 vol) (electrolyte)&lt;br/&gt;1 M LiPF6 in EC-DMC (1:1 vol)&quot;]):::reactif
+  R16087 --&gt;|&quot;electrolyte&quot;| S19339
+  S19339[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&quot;]:::etape
+  S19339 --&gt; M
+  M{{&quot;Li/LFP–PANI half-cell (bottom-type test cell)&lt;br/&gt;&quot;}}:::materiau
+  O76950[&quot;electrode_active_area : 0.9 cm2&quot;]:::resultat
+  M -.-&gt; O76950
+  O76951[&quot;cell_voltage_window : between 2.5 and 4.2 V vs. Li+…&quot;]:::resultat
+  M -.-&gt; O76951
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
