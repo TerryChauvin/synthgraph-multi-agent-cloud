@@ -1,0 +1,60 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5727554</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5727554 — Synthesis of stable TiO2 nanotubes: effect of hydrothermal treatment, acid washing and annealing temperature.</h1>
+<h2>Voie : TiO2NT-400</h2>
+<pre class="mermaid">flowchart LR
+  R16172([&quot;Degussa P25 TiO2 nanoparticles&lt;br/&gt;0.3 g&quot;]):::reactif
+  R16172 --&gt;|&quot;precursor&quot;| S19427
+  R16173([&quot;sodium hydroxide solution (10 M)&lt;br/&gt;30 ml&quot;]):::reactif
+  R16173 --&gt;|&quot;base&quot;| S19427
+  R16174([&quot;hydrochloric acid solution (0.1 M)&lt;br/&gt;200 ml&quot;]):::reactif
+  R16174 --&gt;|&quot;acid&quot;| S19427
+  R16175([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R16175 --&gt;|&quot;wash&quot;| S19427
+  S19427[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;concentration : 10 M&lt;br/&gt;volume : 30 ml&quot;]:::etape
+  S19427 --&gt; S19428
+  S19428[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 2 h&lt;br/&gt;temperature : 30 °C&lt;br/&gt;stirring_speed : vigorously&quot;]:::etape
+  S19428 --&gt; S19429
+  S19429[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 110 °C&lt;br/&gt;duration : 72 h&quot;]:::etape
+  S19429 --&gt; S19430
+  S19430[&quot;&lt;b&gt;4. disperse&lt;/b&gt;&lt;br/&gt;volume : 200 ml&lt;br/&gt;concentration : 0.1 M&lt;br/&gt;duration : 3 hours&quot;]:::etape
+  S19430 --&gt; S19431
+  S19431[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S19431 --&gt; S19432
+  S19432[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&lt;br/&gt;final_wash_ph : 6.7&quot;]:::etape
+  S19432 --&gt; S19433
+  S19433[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S19433 --&gt; S19434
+  S19434[&quot;&lt;b&gt;8. anneal&lt;/b&gt;&lt;br/&gt;temperature : 400 °C&lt;br/&gt;duration : 2 hours&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S19434 --&gt; S19435
+  S19435[&quot;&lt;b&gt;9. grind&lt;/b&gt;&quot;]:::etape
+  S19435 --&gt; M
+  M{{&quot;TiO2 nanotubes annealed at 400 °C&lt;br/&gt;TiO2&quot;}}:::materiau
+  O77462[&quot;anatase_fraction : 72 %&quot;]:::resultat
+  M -.-&gt; O77462
+  O77463[&quot;rutile_fraction : 28 %&quot;]:::resultat
+  M -.-&gt; O77463
+  O77464[&quot;nanotube_inner_diameter : 7.2 nm&quot;]:::resultat
+  M -.-&gt; O77464
+  O77465[&quot;nanotube_outer_diameter : 8.1 nm&quot;]:::resultat
+  M -.-&gt; O77465
+  O77466[&quot;nanotube_length : 20–30 nm&quot;]:::resultat
+  M -.-&gt; O77466
+  O77467[&quot;size_distribution_sigma : 2.73 nm&quot;]:::resultat
+  M -.-&gt; O77467
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12488{{&quot;TiO2NT-400&quot;}}:::materiau
+  B12489[&quot;TiO2NT-600&quot;]:::etape
+  B12488 --&gt;|&quot;temperature = 600 °C&quot;| B12489
+  B12490[&quot;TiO2NT-800&quot;]:::etape
+  B12488 --&gt;|&quot;temperature = 800 °C&quot;| B12490
+  B12491[&quot;TiO2NT-AW&quot;]:::etape
+  B12488 --&gt;|&quot;temperature = no annealing (acid washi…&lt;br/&gt;duration = no annealing (acid washi…&quot;| B12491
+  B12492[&quot;TiO2NS-HT&quot;]:::etape
+  B12488 --&gt;|&quot;hydrochloric acid soluti… = absent&lt;br/&gt;distilled water = absent&quot;| B12492
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

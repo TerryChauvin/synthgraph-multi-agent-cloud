@@ -99,9 +99,9 @@
      "role": "precursor",
      "amount": 0.3,
      "unit": "g",
-     "purity": "analytical grade",
+     "purity": "≥99.5",
      "supplier": "Aeroxide (Evonik, Germany)",
-     "supplier_quote": "All chemical reagents used in this study were analytical grade (Table 1). For the synthesis of TiO2 nanotubes, Degussa P25 (88% anatase and 12% rutile) was used as a precursor from Aeroxide (Evonik, Germany).",
+     "supplier_quote": "All chemical reagents used in this study were analytical grade (Table 1). For the synthesis of TiO2 nanotubes, Degussa P25 (88% anatase and 12% rutile) was used as a precursor from Aeroxide (Evonik, Germany). Sodium hydroxide (NaOH) and hydrochloric acid (HCl) were purchased form J.T. Baker (Center Valley, PA, USA). Ultra-pure water was prepared with a Milli-Q water purification system (Bedford, MA, USA). [TABLE] Table 1 Physical properties of the chemical reagents. Reagent | Formula | Molecular Weight (g/mol) | Purity (%) Degussa P25 | TiO2 | 79.87 | ≥99.5",
      "quote": "0.3 g of Degussa P25 TiO2 nanoparticles were dispersed into 30 ml of a 10 M sodium hydroxide solution."
     },
     {
@@ -110,9 +110,9 @@
      "role": "base",
      "amount": 30,
      "unit": "ml",
-     "purity": "analytical grade",
+     "purity": "99.1",
      "supplier": "J.T. Baker (Center Valley, PA, USA)",
-     "supplier_quote": "All chemical reagents used in this study were analytical grade (Table 1). For the synthesis of TiO2 nanotubes, Degussa P25 (88% anatase and 12% rutile) was used as a precursor from Aeroxide (Evonik, Germany). Sodium hydroxide (NaOH) and hydrochloric acid (HCl) were purchased form J.T. Baker (Center Valley, PA, USA).",
+     "supplier_quote": "All chemical reagents used in this study were analytical grade (Table 1). For the synthesis of TiO2 nanotubes, Degussa P25 (88% anatase and 12% rutile) was used as a precursor from Aeroxide (Evonik, Germany). Sodium hydroxide (NaOH) and hydrochloric acid (HCl) were purchased form J.T. Baker (Center Valley, PA, USA). Ultra-pure water was prepared with a Milli-Q water purification system (Bedford, MA, USA). [TABLE] Table 1 Physical properties of the chemical reagents. Reagent | Formula | Molecular Weight (g/mol) | Purity (%) Degussa P25 | TiO2 | 79.87 | ≥99.5 Sodium Hydroxide | NaOH | 40 | 99.1",
      "quote": "0.3 g of Degussa P25 TiO2 nanoparticles were dispersed into 30 ml of a 10 M sodium hydroxide solution.",
      "not_stated": [
       "solvent"
@@ -124,9 +124,9 @@
      "role": "acid",
      "amount": 200,
      "unit": "ml",
-     "purity": "analytical grade",
+     "purity": "99.7",
      "supplier": "J.T. Baker (Center Valley, PA, USA)",
-     "supplier_quote": "All chemical reagents used in this study were analytical grade (Table 1). For the synthesis of TiO2 nanotubes, Degussa P25 (88% anatase and 12% rutile) was used as a precursor from Aeroxide (Evonik, Germany). Sodium hydroxide (NaOH) and hydrochloric acid (HCl) were purchased form J.T. Baker (Center Valley, PA, USA).",
+     "supplier_quote": "All chemical reagents used in this study were analytical grade (Table 1). For the synthesis of TiO2 nanotubes, Degussa P25 (88% anatase and 12% rutile) was used as a precursor from Aeroxide (Evonik, Germany). Sodium hydroxide (NaOH) and hydrochloric acid (HCl) were purchased form J.T. Baker (Center Valley, PA, USA). Ultra-pure water was prepared with a Milli-Q water purification system (Bedford, MA, USA). [TABLE] Table 1 Physical properties of the chemical reagents. Reagent | Formula | Molecular Weight (g/mol) | Purity (%) Degussa P25 | TiO2 | 79.87 | ≥99.5 Sodium Hydroxide | NaOH | 40 | 99.1 Hydrochloric acid | HCl | 36.46 | 99.7",
      "quote": "The product obtained was redispersed in 200 ml of a 0.1 M HCl solution for 3 hours"
     },
     {
@@ -349,6 +349,21 @@
       "cooling_rate",
       "furnace"
      ]
+    },
+    {
+     "order": 9,
+     "action": "grind",
+     "description": "Powder the annealed sample in an agate mortar before analysis.",
+     "quote": "Annealed samples were powdered by using an agate mortar and then analyzed.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "agate mortar",
+       "detail": null,
+       "quote": "Annealed samples were powdered by using an agate mortar and then analyzed."
+      }
+     ],
+     "not_stated": []
     }
    ],
    "characterizations": [
@@ -478,6 +493,13 @@
      "instrument": "JEM-2100 (JEOL) transmission electron microscope",
      "conditions": "accelerating voltage 15 eV; current 75 mA; pressure 1.3 × 10−3 Pa; working distance 25 mm (valeurs telles qu'écrites)",
      "quote": "inner diameter: 7.1 nm, outer diameter: 8.1 nm, length: 28 nm"
+    },
+    {
+     "technique": "SEM",
+     "result": "tubular morphology observed on the SEM images for each annealing temperature",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The tubular morphology is proved observing the SEM images for each annealing temperature."
     }
    ],
    "outcomes": [
@@ -530,7 +552,7 @@
     "morphology": "irregular non-uniform nanoparticles (average diameter 116 nm)"
    },
    "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively.",
-   "succeeded": false,
+   "succeeded": null,
    "variations": [
     {
      "parameter": "temperature",
@@ -735,71 +757,6 @@
       "temperature",
       "stirring_speed"
      ]
-    },
-    {
-     "order": 5,
-     "action": "centrifuge",
-     "description": "Centrifuge the suspension to recover the solid.",
-     "quote": "Then, the suspension was centrifuged",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": [
-      "speed",
-      "duration"
-     ]
-    },
-    {
-     "order": 6,
-     "action": "wash",
-     "description": "Wash the solid with distilled water until the pH stabilises at 6.7.",
-     "quote": "the solid sample was washed with distilled water until pH was stabilized at 6.7.",
-     "parameters": [
-      {
-       "name": "wash_solvent",
-       "value_text": "distilled water",
-       "quote": "the solid sample was washed with distilled water until pH was stabilized at 6.7."
-      },
-      {
-       "name": "final_wash_ph",
-       "value_num": 6.7,
-       "quote": "the solid sample was washed with distilled water until pH was stabilized at 6.7."
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "repetitions",
-      "volume"
-     ]
-    },
-    {
-     "order": 7,
-     "action": "dry",
-     "description": "Dry the washed solid at 80 °C for 24 h in a vacuum oven.",
-     "quote": "Finally, the sample was dried at 80 °C for 24 h in a vacuum oven.",
-     "parameters": [
-      {
-       "name": "temperature",
-       "value_num": 80,
-       "unit": "°C",
-       "quote": "Finally, the sample was dried at 80 °C for 24 h in a vacuum oven."
-      },
-      {
-       "name": "duration",
-       "value_num": 24,
-       "unit": "h",
-       "quote": "Finally, the sample was dried at 80 °C for 24 h in a vacuum oven."
-      }
-     ],
-     "equipment": [
-      {
-       "type": "vacuum oven",
-       "detail": null,
-       "quote": "Finally, the sample was dried at 80 °C for 24 h in a vacuum oven."
-      }
-     ],
-     "not_stated": [
-      "pressure"
-     ]
     }
    ],
    "characterizations": [
@@ -862,6 +819,9 @@
      "from_figure": "Fig. 6b",
      "quote": "Fig. 6 EDS spectra of nanotubes (a) after hydrothermal treatment without acid washing process, (b) after acid washing process."
     }
+   ],
+   "not_stated": [
+    "centrifugation_washing_drying_steps"
    ]
   },
   {
@@ -1064,12 +1024,12 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Rendement, vitesse de centrifugation, nombre de lavages, vitesse d'agitation, vitesse de chauffe du recuit et type de four ne sont pas donnés ; le solvant de la solution de NaOH 10 M, la nature du récipient d'autoclave (chemise en téflon ou non) et son taux de remplissage ne sont pas indiqués, et les équations (2) à (4) du mécanisme sont absentes du texte extrait. L'atmosphère du recuit (air) n'apparaît que dans les Résultats et la légende de la Fig. 2, pas dans les Méthodes."
+   "text": "Rendement, vitesse de centrifugation, nombre de lavages, vitesse d'agitation, vitesse de chauffe du recuit et type de four ne sont pas donnés ; le solvant de la solution de NaOH 10 M, la nature du récipient d'autoclave (chemise en téflon ou non) et son taux de remplissage ne sont pas indiqués, et les équations (2) à (4) du mécanisme sont absentes du texte extrait. L'atmosphère du recuit (air) n'apparaît que dans les Résultats et la légende de la Fig. 2, pas dans les Méthodes. Aucun instrument ni condition de MEB n'est donné dans les Méthodes, alors que des images MEB sont présentées (Fig. 9c et 9d). Le broyage des échantillons recuits au mortier d'agate avant analyse n'est pas décrit plus avant (durée, quantité)."
   },
   {
    "type": "limite_reproductibilite",
    "route": "TiO2NT-400",
-   "text": "Les puretés chiffrées du Tableau 1 (P25 ≥ 99,5 ; NaOH 99,1 ; HCl 99,7) ne sont pas reprises dans le champ pureté, qui ne retient que « analytical grade » : la pureté et le fournisseur doivent tenir dans la même citation et la phrase des Méthodes porte le fournisseur. Une pureté de 99,7 % pour HCl est peu plausible pour une solution aqueuse."
+   "text": "Le Tableau 1 donne des puretés chiffrées (P25 ≥ 99,5 ; NaOH 99,1 ; HCl 99,7), reprises dans le champ pureté ; la mention « analytical grade » des Méthodes reste dans la citation. Une pureté de 99,7 % est impossible pour une solution aqueuse d'HCl (l'acide concentré du commerce contient environ 37 % en masse) : la valeur de l'article est recopiée telle quelle. L'eau est dite « Milli-Q » dans la liste des réactifs, sans étape rattachée, et « distilled water » pour le lavage (Tableau 1, « 18 Ω ») : on ne sait pas quelle eau sert à préparer la solution de NaOH 10 M."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1080,18 +1040,64 @@
   {
    "type": "mecanisme_auteurs",
    "route": "TiO2NT-AW",
-   "text": "Le lavage à l'acide dilué échange les ions Na+ du titanate contre des ions H3O+, ce que les auteurs relient à la disparition du pic Na en EDS.",
+   "text": "Le lavage à l'acide dilué échange les ions Na+ du titanate contre des ions H3O+, ce que les auteurs relient à la forte réduction du pic Na en EDS.",
    "quote": "When Na2Ti3O7 is immersed and washed with diluted hydrochloric acid solution, the Na+ ions in the TiO2 matrix are replaced by H3O+ ions to form H2Ti3O7, as shown in Eq. (3)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "TiO2NT-400",
-   "text": "Hypothèse du rédacteur : 0,3 g de P25 correspond à environ 3,8 mmol de TiO2 face à 300 mmol de NaOH, soit un très large excès de base. TiO2 se dissout probablement en titanate de sodium en feuillets (environ 3 TiO2 + 2 NaOH → Na2Ti3O7 + H2O), dont les feuillets s'enroulent en tubes. Le lavage acide donnerait H2Ti3O7, qui se déshydrate au recuit en anatase (H2Ti3O7 → 3 TiO2 + H2O). On attend aussi une transformation anatase vers rutile vers 800 °C, favorisée par la perte de groupes hydroxyle et le grossissement des grains."
+   "text": "Hypothèse du rédacteur : 0,3 g de P25 correspond à environ 3,8 mmol de TiO2 face à 300 mmol de NaOH (rapport molaire d'environ 80), un très large excès de base. TiO2 se dissout probablement en titanate de sodium en feuillets (environ 3 TiO2 + 2 NaOH → Na2Ti3O7 + H2O), dont les feuillets s'enroulent en tubes multiparois. Le lavage acide remplace Na+ par H+ (H3O+) et donnerait des tubes de titanate protoné de type H2Ti3O7, plutôt que de l'anatase : l'attribution « anatase » de l'échantillon lavé serait à vérifier. Le recuit déshydraterait ce titanate protoné, probablement en TiO2(B) puis en anatase entre 300 et 500 °C environ, en conservant la forme tubulaire ; vers 600–800 °C, le frittage des parois et la nucléation du rutile détruiraient les tubes, d'autant plus tôt que le sodium résiduel est faible (un peu de sodium peut stabiliser le réseau et retarder l'effondrement). Ces étapes sont des hypothèses du rédacteur, non démontrées par l'article."
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "NaOH 10 M est fortement caustique (gants, lunettes, projections), et la montée à 110 °C dans un autoclave ferme sous pression autogène impose un récipient résistant à la base chaude ; refroidir l'autoclave avant ouverture. Les nanopoudres de TiO2 sèches et broyées au mortier sont à manipuler sous hotte ou avec un masque filtrant, et le HCl dilué reste irritant."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les fractions d'anatase et de rutile (88/12 pour le P25, 72/28 à 400 °C, 100/0 à 600 °C, 40/60 à 800 °C) sont attribuées à un ajustement de type Le Bail. Cette méthode ajuste la maille et le profil des raies sans facteur d'échelle structural : elle ne peut pas fournir de fractions de phase, qui demandent un affinement de Rietveld. Ces pourcentages sont donc des estimations non démontrées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les trois portions recuites viennent de la même poudre séchée : 28 % de rutile à 400 °C puis 100 % d'anatase à 600 °C sont incompatibles avec l'irréversibilité de la transformation anatase → rutile (Hanaor et Sorrell, J. Mater. Sci. 46, 855–874, 2011). Cette séquence laisse penser que les fractions de 400 et 600 °C ne sont pas fiables ; une anatase pure à 600 °C reste en revanche plausible pour un titanate protoné recuit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les diamètres moyens donnent des parois (De − Di)/2 d'environ 0,45 nm (400 °C et après lavage acide) et 0,50 nm (600 °C), inférieures à l'espacement interfeuillet du titanate (environ 0,92 nm d'après la raie à 9,6° de l'échantillon b, loi de Bragg, λ = 1,5418 Å : calcul du rédacteur). L'écart entre diamètres interne et externe moyens (0,9 à 1,0 nm) est en outre inférieur aux écarts types de 2,0 à 2,7 nm lus sur les histogrammes : il n'est pas résolu par la mesure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les conditions MET « accelerating voltage, 15 eV; current, 75 mA; … working distance, 25 mm » ne peuvent pas être celles d'un JEM-2100 : une tension d'accélération ne s'exprime pas en eV, un courant de faisceau de 75 mA est impossible et la distance de travail relève du MEB. Ce sont plutôt des conditions de MEB-EDS aux unités fausses ; les valeurs sont recopiées telles qu'écrites et les conditions réelles restent inconnues."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le lavage éventuel du solide entre l'autoclave et la redispersion dans HCl n'est pas décrit : 1 mL de liqueur mère NaOH 10 M retenu par le gâteau humide apporte 10 mmol de base et neutraliserait la moitié des 20 mmol de HCl (200 mL à 0,1 M). Le sodium résiduel, qui fixe la stabilité thermique des tubes, n'est jamais dosé (EDS qualitatif seulement, Fig. 6)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2NT-400",
+   "text": "Eg = 3,28 eV correspond à 1240/378 nm, mais la tangente tracée sur la Fig. 13 coupe l'axe des énergies vers 3,20 eV (lecture du rédacteur) ; la méthode est une tangente sur le spectre de Kubelka–Munk, non un tracé de Tauc. La valeur et sa comparaison avec les 3,2 eV de l'anatase massif sont approximatives."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2NT-AW",
+   "text": "L'attribution « anatase » de l'échantillon (c) repose sur deux pics larges (25,3° et 48,1°) qui ne distinguent pas l'anatase du titanate protoné H2Ti3O7 (raies voisines ; Bavykin, Friedrich et Walsh, Adv. Mater. 2006) : elle n'est pas démontrée, d'autant que le mécanisme des auteurs fait de (c) un titanate. Aucun témoin lavé à l'eau seule (sans HCl) n'est décrit : le rôle de l'échange Na+/H+ dans la formation des tubes (Tsai et Teng, Chem. Mater. 2006) n'est pas isolé du lavage, de la neutralisation et du séchage, et d'autres auteurs observent des tubes dès l'étape hydrothermale. La légende et le texte de la Fig. 2 appellent par ailleurs (c) « annealed nanotubes », alors que le Tableau 2 en fait l'échantillon lavé non recuit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2NT-800",
+   "text": "Seule la température de 800 °C a été essayée au-delà de 600 °C : la température d'effondrement des tubes, entre 600 et 800 °C, n'est pas déterminée. Aucune phase sodée (Na2Ti6O13 par exemple, que du sodium résiduel peut former vers 800 °C ; Qamar et al., Nanotechnology 17, 2006) n'est recherchée."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "TiO2NT-800",
+   "text": "À 800 °C, les auteurs présentent la perte de la forme tubulaire comme la limite de stabilité thermique des nanotubes (le recuit sert à observer la stabilité thermique des tubes), non comme un échec de synthèse ; l'indicateur d'échec de la voie est donc laissé non renseigné.",
+   "quote": "Temperatures greater than 600 °C change the morphology of nanotubes from tubular to an irregular structure of nanoparticles, which are bigger than those of the precursor material, i.e., the crystallinity changes from anatase phase to rutile phase causing the collapse of the nanotubes."
   }
  ],
  "method_sources": [
@@ -1111,7 +1117,7 @@
  "doubts": [
   {
    "where": "TiO2NT-AW",
-   "issue": "La légende de la Fig. 2 et le texte appellent l'échantillon (c) « annealed nanotubes after acid washing », alors que le Tableau 2 le nomme « Acid washing » et que les trois portions recuites portent les lettres d, e, f. Lecture retenue : échantillon lavé à l'acide et non recuit ; ses étapes 1 à 7 sont reprises, mais l'article ne dit pas explicitement que l'échantillon (c) a été séché avant la DRX et la MET."
+   "issue": "La légende de la Fig. 2 et le texte appellent l'échantillon (c) « annealed nanotubes after acid washing », alors que le Tableau 2 le nomme « Acid washing » et que les trois portions recuites portent les lettres d, e, f. Lecture retenue : échantillon lavé à l'acide et non recuit. Seules les étapes 1 à 4 (jusqu'à la redispersion dans HCl) lui sont attribuées : l'article décrit la centrifugation, le lavage à l'eau et le séchage pour l'échantillon qui est ensuite divisé en trois portions, mais ne dit pas que (c) les a subis avant la DRX et la MET ; ces étapes sont déclarées non citées et non héritées de la voie parente."
   },
   {
    "where": "TiO2NS-HT",
@@ -1119,15 +1125,27 @@
   },
   {
    "where": "TiO2NT-400 reagents",
-   "issue": "Le Tableau 1 donne des puretés chiffrées (P25 ≥ 99,5 ; NaOH 99,1 ; HCl 99,7) non reprises : le champ pureté contient « analytical grade », phrase qui accompagne le fournisseur. Le solvant de la solution de NaOH 10 M n'est pas indiqué."
+   "issue": "Le Tableau 1 donne des puretés chiffrées (P25 ≥ 99,5 ; NaOH 99,1 ; HCl 99,7), reprises dans le champ pureté avec la rangée du tableau en citation ; « analytical grade » reste dans la citation. HCl 99,7 % est recopié littéralement mais impossible pour une solution aqueuse. Le solvant de la solution de NaOH 10 M n'est pas indiqué : l'article cite de l'eau « Milli-Q » dans la liste des réactifs sans dire à quelle étape elle sert, et de l'eau « distilled water » (Tableau 1, « 18 Ω ») pour le lavage ; aucune étape n'est rattachée à l'eau Milli-Q."
   },
   {
    "where": "Characterizations TEM",
-   "issue": "Les conditions MET sont recopiées telles qu'écrites (« accelerating voltage, 15 eV; current, 75 mA ») : unités et valeurs peu plausibles pour un JEM-2100, sans que l'article le corrige."
+   "issue": "Les conditions MET sont recopiées telles qu'écrites (« accelerating voltage, 15 eV; current, 75 mA; … working distance, 25 mm ») : unités et valeurs impossibles pour un JEM-2100 (conditions de type MEB-EDS), sans que l'article le corrige."
   },
   {
    "where": "Valeurs lues sur figure",
    "issue": "Six valeurs viennent de figures : écarts types σ imprimés sur les histogrammes Fig. 8 (2,01 nm), Fig. 10a (2,73 nm), Fig. 10b (2,02 nm) et Fig. 12 (18,5 nm), recopiés tels qu'imprimés (le texte ne définit pas σ ; on suppose l'écart type de la distribution), et lecture qualitative du pic Na de l'EDS (Fig. 6a intense, Fig. 6b très réduit)."
+  },
+  {
+   "where": "TiO2NT-400 UV-vis DRS",
+   "issue": "Eg = 3,28 eV (378 nm) est la valeur écrite par les auteurs ; la tangente tracée sur la Fig. 13 coupe l'axe des énergies vers 3,20 eV. Valeur de l'article conservée."
+  },
+  {
+   "where": "TiO2NT-800 succeeded",
+   "issue": "L'article présente l'effondrement des tubes à 800 °C comme la limite de stabilité thermique et non comme un échec de synthèse : succeeded laissé non renseigné."
+  },
+  {
+   "where": "TiO2NT-400 step 9",
+   "issue": "Le broyage au mortier d'agate vise les « annealed samples » ; il est rattaché à la voie de base (donc aux portions recuites 600 et 800 °C par héritage) et non aux échantillons b et c, non recuits."
   }
  ]
 }
