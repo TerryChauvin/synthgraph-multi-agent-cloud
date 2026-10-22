@@ -1,0 +1,71 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8401075</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8401075 — Green Synthesis of Silver Nanoparticles Using Diospyros malabarica Fruit Extract and Assessments of Their Antimicrobial, Anticancer and Catalytic Reduction of 4-Nitrophenol (4-NP).</h1>
+<h2>Voie : Fruit_extract</h2>
+<pre class="mermaid">flowchart LR
+  R15736([&quot;Diospyros malabarica fruit&lt;br/&gt;20 g&quot;]):::reactif
+  R15736 --&gt;|&quot;precursor&quot;| S18904
+  R15737([&quot;double-distilled water (ddH2O)&lt;br/&gt;100 mL&quot;]):::reactif
+  R15737 --&gt;|&quot;solvent&quot;| S18904
+  R15738([&quot;tap water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15738 --&gt;|&quot;wash&quot;| S18904
+  R15739([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15739 --&gt;|&quot;wash&quot;| S18904
+  S18904[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : tap water followed by distill…&lt;br/&gt;repetitions : until all the impurities were…&quot;]:::etape
+  S18904 --&gt; S18905
+  S18905[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S18905 --&gt; S18906
+  S18906[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S18906 --&gt; S18907
+  S18907[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S18907 --&gt; S18908
+  S18908[&quot;&lt;b&gt;5. collect&lt;/b&gt;&quot;]:::etape
+  S18908 --&gt; S18909
+  S18909[&quot;&lt;b&gt;6. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S18909 --&gt; M
+  M{{&quot;Diospyros malabarica aqueous fruit extract&lt;br/&gt;&quot;}}:::materiau
+  O75839[&quot;zone_of_inhibition_E_coli : 5 mm&quot;]:::resultat
+  M -.-&gt; O75839
+  O75840[&quot;zone_of_inhibition_S_aureus : 7 mm&quot;]:::resultat
+  M -.-&gt; O75840
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNPs</h2>
+<pre class="mermaid">flowchart LR
+  R15740([&quot;silver nitrate&lt;br/&gt;1 mM solution in ddH2O, prepa…&quot;]):::reactif
+  R15740 --&gt;|&quot;precursor&quot;| S18910
+  R15741([&quot;double-distilled water (ddH2O)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15741 --&gt;|&quot;solvent&quot;| S18910
+  R15742([&quot;Fruit_extract&lt;br/&gt;1 part of extract to 9 parts …&quot;]):::reactif
+  R15742 --&gt;|&quot;intermediate&quot;| S18910
+  R15743([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15743 --&gt;|&quot;wash&quot;| S18910
+  S18910[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&quot;]:::etape
+  S18910 --&gt; S18911
+  S18911[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;volume_ratio : 1:9 mL&quot;]:::etape
+  S18911 --&gt; S18912
+  S18912[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 24 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;light : dark&quot;]:::etape
+  S18912 --&gt; S18913
+  S18913[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 10000 rpm&lt;br/&gt;duration : 15 min&quot;]:::etape
+  S18913 --&gt; S18914
+  S18914[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : deionized water&quot;]:::etape
+  S18914 --&gt; S18915
+  S18915[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S18915 --&gt; M
+  M{{&quot;silver nanoparticles (green synthesis, D. malabar…&lt;br/&gt;Ag&quot;}}:::materiau
+  O75841[&quot;SPR_peak_wavelength : 430 nm&quot;]:::resultat
+  M -.-&gt; O75841
+  O75842[&quot;TEM_average_size : 17.4 nm&quot;]:::resultat
+  M -.-&gt; O75842
+  O75843[&quot;TEM_size_range : 8 to 28 nm&quot;]:::resultat
+  M -.-&gt; O75843
+  O75844[&quot;FESEM_average_size : 48.72 nm&quot;]:::resultat
+  M -.-&gt; O75844
+  O75845[&quot;EDX_Ag_weight_percentage : 17.25&quot;]:::resultat
+  M -.-&gt; O75845
+  O75846[&quot;EDX_Ag_atomic_percentage : 4.21&quot;]:::resultat
+  M -.-&gt; O75846
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

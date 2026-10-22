@@ -63,14 +63,16 @@
    "sample": "AgNO3 solution without plant extract",
    "defined_in": "Results, 3.1.1",
    "route": null,
-   "why": "Témoin non synthétisé : aucun changement de couleur sans extrait, aucun résultat chiffré.",
-   "results_in": []
+   "why": "Témoin non synthétisé : aucun changement de couleur sans extrait (constat qualitatif consigné en annotation tendance_observee de la voie AgNPs).",
+   "results_in": [
+    "Section 3.1.1"
+   ]
   },
   {
    "sample": "Negative control ddH2O and antibiotics (streptomycin, tetracycline, chloramphenicol)",
    "defined_in": "Methods, 2.4.9",
    "route": null,
-   "why": "Témoins commerciaux de l'essai antibactérien, non synthétisés.",
+   "why": "Témoins commerciaux de l'essai antibactérien, non synthétisés ; zones des antibiotiques consignées en annotation comparaison_branches de la voie AgNPs.",
    "results_in": [
     "Fig. 9"
    ]
@@ -124,10 +126,11 @@
      "amount": 20,
      "unit": "g",
      "not_stated": [
-      "purity",
-      "supplier"
+      "purity"
      ],
-     "quote": "Then, 20 g of fruit was weighed and immersed in 100 mL of double-distilled water (ddH2O) in an Erlenmeyer flask, were kept on a heated plate (60 °C) and allowed to boil for 15 min."
+     "quote": "Then, 20 g of fruit was weighed and immersed in 100 mL of double-distilled water (ddH2O) in an Erlenmeyer flask, were kept on a heated plate (60 °C) and allowed to boil for 15 min.",
+     "supplier": "freshly collected from the Morigaon district of Assam, India",
+     "supplier_quote": "Diospyros malabarica fruit was freshly collected from the Morigaon district of Assam, India."
     },
     {
      "name": "double-distilled water (ddH2O)",
@@ -274,6 +277,13 @@
      "instrument": "Perkin Elmer spectrum 100 FTIR spectrophotometer",
      "conditions": "4000 to 400 cm−1, resolution of 4 cm−1, transmittance mode",
      "quote": "The FT-IR spectrum of Diospyros malabarica aqueous fruit extracts exhibits several absorption peaks at 3411, 2088, 1645, 1382 and 656 cm−1, which are associated with several functional groups."
+    },
+    {
+     "technique": "Antibacterial assay conditions (agar well diffusion, extract)",
+     "result": "extract tested at 1000 µg/mL, 50 µL per well, against E. coli and S. aureus",
+     "instrument": null,
+     "conditions": "Muller Hinton agar (20 mL) plates; four wells per plate; samples in triplicate; 24 h at 37 °C; ddH2O (50 µL) as negative control",
+     "quote": "The wells were loaded with Diospyros malabarica aqueous fruit extracts (1000 µg/mL, 50 µL), synthesized AgNPs (500 and 1000 µg/mL, 50 µL) and double-distilled water (ddH2O) as the negative control (50 µL), respectively."
     }
    ],
    "outcomes": [
@@ -534,6 +544,27 @@
      "instrument": "Jasco FP-8300 spectrofluorometer (Jasco, Oklahoma City, OK, USA)",
      "conditions": "excitation 320 to 430 nm, slit width 5 nm, AgNPs dispersed in water, room temperature",
      "quote": "This illustrated that the AgNPs solution was irradiated at varieties of excitation wavelengths ranging from 320 to 430 nm, which showed different emission intensities centered at 470 nm."
+    },
+    {
+     "technique": "Antibacterial assay conditions (agar well diffusion, AgNPs)",
+     "result": "AgNPs tested at 500 and 1000 µg/mL, 50 µL per well, against E. coli and S. aureus",
+     "instrument": null,
+     "conditions": "Muller Hinton agar (20 mL) plates; four wells per plate; samples in triplicate; antibiotics (streptomycin 10 µg, tetracycline 30 µg, chloramphenicol 30 µg) as positive control; ddH2O (50 µL) as negative control; 24 h at 37 °C",
+     "quote": "The wells were loaded with Diospyros malabarica aqueous fruit extracts (1000 µg/mL, 50 µL), synthesized AgNPs (500 and 1000 µg/mL, 50 µL) and double-distilled water (ddH2O) as the negative control (50 µL), respectively."
+    },
+    {
+     "technique": "MTT assay conditions (U87-MG)",
+     "result": "cells seeded at 1 × 104 cells/well in a 96-well plate, 24 h, then treated with AgNPs in triplicate for 48 h",
+     "instrument": "SYNERGY-H1 microplate reader (Biotek)",
+     "conditions": "37 °C; MTT 5 mg/mL in PBS, 100 µL per well, 4 h; formazan dissolved in DMSO (100 µL); OD at 570 nm, reference filter 655 nm",
+     "quote": "Both the cancerous cell lines (1 × 104 cells/well) were seeded in a 96-well microtiter plate and incubated at 37 °C for 24 h. After incubation, various concentrations (µg/mL) of synthesized AgNPs were treated in triplicates and incubated at 37 °C for 48 h."
+    },
+    {
+     "technique": "Catalytic 4-nitrophenol reduction test conditions",
+     "result": "4-NP 50 mM and NaBH4 0.1 M, 15 mL of each; catalyst 1 mL or 2 mL of AgNPs solution; blank with NaBH4 only, stirred continuously for one hour",
+     "instrument": null,
+     "conditions": "UV-visible spectra recorded at regular time intervals; concentration of the AgNPs solution used as catalyst not stated",
+     "quote": "we have prepared a 50 mM solution of 4-NP. As a hydrogen source, we prepared a 0.1 M solution of NaBH4. When 15 mL of NaBH4 solution is added to 15 mL of 4-NP solution"
     }
    ],
    "outcomes": [
@@ -712,7 +743,7 @@
      "property": "U87-MG_IC50_48_h",
      "value_num": 58.63,
      "unit": "μg/mL",
-     "quote": "The IC50 value of AgNPs was calculated to be 58.63 ± 5.74 μg/mL."
+     "quote": "different concentrations (0, 10, 20, 40, 60, 80 and 100 µg/mL) of nanoparticles were added to U87-MG cancer cell lines and incubated for 48 h. The results were analyzed by MTT assay, which showed a decrease in viable cells with an increasing concentration of AgNPs (Figure 10). The IC50 value of AgNPs was calculated to be 58.63 ± 5.74 μg/mL."
     },
     {
      "property": "U87-MG_viability_0_ug_mL",
@@ -774,9 +805,9 @@
      "quote": "On the other hand, the treated U87-MG cells with biosynthesized AgNPs depicted more apoptotic cells."
     },
     {
-     "property": "catalysis_4-NP_NaBH4_only_60_min",
+     "property": "catalysis_4-NP_NaBH4_only_one_hour",
      "value_text": "negligible change of the 400 nm peak with NaBH4 alone (blank)",
-     "quote": "There was a negligible change observed in the peak of 4-nitrophenolate at λmax = 400 nm, as depicted in Figure 14a."
+     "quote": "When we added 15 mL of 4-NP (50 mM) and 15 mL of NaBH4 (0.1 M) and stirred continuously for one hour as a blank (control) experiment, we noticed the effect of only sodium borohydride (NaBH4) in the reduction of 4-NP to 4-AP. There was a negligible change observed in the peak of 4-nitrophenolate at λmax = 400 nm, as depicted in Figure 14a."
     },
     {
      "property": "catalysis_4-NP_1_mL_AgNPs_conversion_time",
@@ -875,7 +906,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNPs",
-   "text": "Hypothèse de chimiste : les polyphénols de l'extrait (acide gallique, flavonoïdes, tanins, vitamine C cités par les auteurs) céderaient des électrons à Ag+ en s'oxydant en quinones, ce qui expliquerait le virage du brun clair au brun foncé ; la phase lente initiale correspondrait probablement à la nucléation des germes d'Ag0, suivie d'une croissance rapide. Les protéines et polyphénols résiduels adsorbés en surface expliqueraient le potentiel zêta négatif de −22,3 mV et la stabilité colloïdale."
+   "text": "Hypothèse de chimiste : dès le mélange, le chlorure de l'extrait (EDX : Cl, Na, K) précipite probablement une partie de l'argent en AgCl (Ksp ≈ 1,8 × 10^−10 : un seuil d'environ 0,2 µM de Cl− suffit face à 0,9 mM d'Ag+). En parallèle, les polyphénols de l'extrait (acide gallique, flavonoïdes, tanins, vitamine C cités par les auteurs) réduiraient lentement Ag+ en Ag0 en s'oxydant en quinones, ce qui expliquerait le brunissement ; la phase initiale de 30 min correspondrait à une période d'induction, suivie d'une croissance sur germes jusqu'à ≈ 2,5 h, des germes d'Ag pouvant se former à la surface des grains d'AgCl (Ag@AgCl). Les polyphénols oxydés et les protéines adsorbés expliqueraient le potentiel zêta négatif de −22,3 mV. La DRX montrerait alors surtout la phase chlorure, l'argent métallique étant minoritaire ou peu cristallisé. Rien de tout cela n'est démontré par l'article."
   },
   {
    "type": "securite_analyse",
@@ -893,6 +924,53 @@
    "route": "Fruit_extract",
    "text": "Variété et maturité du fruit, partie utilisée (pulpe entière ou non) et préparation avant extraction ne sont pas précisées ; la chauffe est décrite à 60 °C « jusqu'à ébullition » (60 °C n'est pas l'ébullition de l'eau). Rendement et concentration de l'extrait non donnés ; le fruit vient d'Assam (district de Morigaon) sans autre précision.",
    "quote": "were kept on a heated plate (60 °C) and allowed to boil for 15 min"
+  },
+  {
+   "type": "tendance_observee",
+   "route": "AgNPs",
+   "text": "Témoin sans extrait : dans les mêmes conditions (obscurité, température ambiante), la solution d'AgNO3 seule ne change pas de couleur, alors que le mélange avec l'extrait passe du brun clair au brun foncé en 30 min. L'article en tire le rôle réducteur de l'extrait ; aucune mesure UV-Vis du témoin n'est donnée.",
+   "quote": "Indeed, no transformation in color was observed in AgNO3 solution in the absence of plant extract under similar circumstances."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "AgNPs",
+   "text": "Témoins positifs de l'essai antibactérien (antibiotiques commerciaux, non synthétisés, donc hors voie) : streptomycine 10 µg 14 et 12 mm, tétracycline 30 µg 32 et 34 mm, chloramphénicol 30 µg 31 et 33 mm, « respectively » pour les deux souches. La phrase précédente cite E. coli puis S. aureus : première valeur = E. coli, seconde = S. aureus, selon cet ordre, que l'article ne répète pas souche par souche. Les zones des AgNPs (S. aureus 8,4 et 12,1 mm, E. coli 6,1 et 13,1 mm à 500 et 1000 µg/mL) sont dites proches de la streptomycine et inférieures aux deux autres antibiotiques.",
+   "quote": "The zone of inhibition against these two bacterial strains was recorded as Streptomycin 10 µg: 14 and 12 mm, Tetracycline 30 µg: 32 and 34 mm and Chloramphenicol 30 µg: 31 and 33 mm, respectively."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Diffraction des rayons X : sur la figure 6, les pics se lisent vers 32,2° et 66,5–67° (et non 64,4° comme dans le texte), sans pic à 38,1° (Ag(111), le plus intense de l'argent cfc, fiche JCPDS 04-0783) ni à 44,3° (Ag(200)). Le d = 0,28 nm que donnent les auteurs ne correspond pas à Ag(111) (0,236 nm) mais, avec un rapport des d proche de 2, à la paire (200)/(400) d'un chlorure cubique (AgCl, chlorargyrite, ou NaCl). La DRX ne démontre donc pas l'argent métallique ; le produit est probablement un mélange Ag/AgCl (critique scientifique, calcul de Bragg ; cas voisin dans Muñoz et al., Nanomaterials 2023)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Durée de réaction : les Méthodes prescrivent 1 h d'incubation avant centrifugation, mais la bande plasmon (Fig. 2a) n'atteint à 1 h qu'environ 44 % de sa valeur finale (≈ 0,61 contre ≈ 1,4) et le plateau n'arrive que vers 2,5 h. Qui suit la durée écrite récupère donc un produit de conversion partielle. L'échantillon de la série de stabilité (1 et 60 jours) ne semble pas avoir été lavé : la réaction y continue probablement pendant le stockage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Photoluminescence : le déplacement de Stokes déclaré (249,05 nm ; 8884,15 cm−1) correspond à une émission vers 668 nm (bande de la Fig. 8b), non à l'émission « centrée à 470 nm » ; les coordonnées CIE (0,21 ; 0,54) se situent dans le vert, alors que le texte parle de lumière bleue ; un rendement quantique de 0,06 % n'est pas « modéré » ; l'absorbance utilisée vaut pour 330 nm alors que l'excitation est à 360 nm ; aucun témoin d'extrait seul n'est mesuré, de sorte que l'émission peut venir des composés organiques de l'extrait."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Réduction du 4-nitrophénol : 4-NP à 50 mM (25 mM après mélange 15 mL + 15 mL) est incompatible avec une absorbance d'environ 1,1 à 400 nm (≈ 62 µM pour un coefficient d'absorption molaire d'environ 1,8 × 10^4 M−1 cm−1, selon Das et al., RSC Advances 2012, source secondaire) : facteur ≈ 400, soit une erreur d'unité probable (non affirmée), soit une dilution non écrite. Le rapport NaBH4/4-NP vaut 2, et non le large excès qu'exige un pseudo-premier ordre ; la cinétique dite de pseudo-premier ordre est donc discutable (Aditya, Pal et Pal, 2015)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Figure 14 : les panneaux 14c, 14d et 14e ne donnent pas les mêmes valeurs (pour 2 mL à 5 min, −ln(C/C0) vaut ≈ 3,9 en 14d, 2,8 en 14c et 3,0 en 14e ; C/C0 ≈ 0,02 en 14d contre ≈ 0,05 en 14e). La courbe à 1 mL montre une période d'induction de 2–3 min que la droite forcée par l'origine efface, et le rapport des constantes (0,61127 / 0,20023 = 3,05 pour un volume de catalyseur doublé) ne mesure pas l'effet de la quantité de catalyseur seule."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Doses des essais biologiques : le mélange de synthèse contient au plus 0,9 mM d'Ag, soit ≈ 97 µg d'Ag par mL, alors que l'essai antibactérien utilise 500 et 1000 µg/mL ; aucune reconcentration ni redispersion de poudre n'est décrite. La morphologie cellulaire et le test live/dead sont faits à 1 mg/mL selon les Méthodes, mais « à l'IC50 » (58,63 µg/mL, soit un écart d'environ 17 fois) selon les Résultats et les légendes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Fruit_extract",
+   "text": "Concentration de l'extrait : l'essai antibactérien charge l'extrait à « 1000 µg/mL », mais le protocole ne comporte ni évaporation ni pesée de l'extrait sec (20 g de fruit frais dans 100 mL d'eau, soit ≈ 0,2 g de fruit par mL) : cette concentration ne peut pas être reliée à la préparation. La température d'extraction (plaque à 60 °C ou ébullition à 100 °C) fixe pourtant la teneur en polyphénols, en protéines et en chlorure, donc le pouvoir réducteur et la part possible d'AgCl."
   }
  ],
  "method_sources": [
@@ -947,6 +1025,14 @@
   {
    "where": "AgNPs, caractérisation (taille)",
    "issue": "TEM : 17,4 nm en moyenne ; FESEM : 48,72 nm ; DLS : 22,26 nm et 1,032 nm (deux pics, PDI 0,954). Les auteurs écrivent que TEM et DLS sont « nearly similar » ; les trois valeurs sont gardées telles quelles."
+  },
+  {
+   "where": "AgNPs, Fig. 14d / 14e",
+   "issue": "La valeur C/C0 = 0,02 à 5 min pour 2 mL est lue sur la Fig. 14d ; la Fig. 14e donne −ln(C/C0) ≈ 3,0 au même point, soit C/C0 ≈ 0,05. Les deux panneaux de l'article divergent ; la lecture de 14d est gardée, l'incertitude est consignée en annotation."
+  },
+  {
+   "where": "AgNPs, antibiotiques témoins",
+   "issue": "Les zones des antibiotiques (14 et 12, 32 et 34, 31 et 33 mm) sont données « respectively » pour les deux souches sans les nommer ; l'attribution E. coli puis S. aureus suit l'ordre de la phrase précédente. Valeurs consignées en annotation (témoins non synthétisés)."
   }
  ]
 }
