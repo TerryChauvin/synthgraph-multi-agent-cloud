@@ -2077,13 +2077,6 @@
      "value_num": 90,
      "unit": "°C",
      "parent_value": "65 °C"
-    },
-    {
-     "parameter": "duration",
-     "quote": "The urea- and thiourea-derived films changed to opaque appearance in 30 minutes, which indicated an over-crystallization of the perovskites.",
-     "step_order": 12,
-     "value_text": "30 minutes",
-     "parent_value": "4.5 h"
     }
    ],
    "outcomes": [
@@ -2099,6 +2092,9 @@
      "unit": "min",
      "value_text": "changed to opaque appearance in 30 minutes (over-crystallization)"
     }
+   ],
+   "not_stated": [
+    "annealing_duration"
    ]
   },
   {
@@ -2121,13 +2117,6 @@
      "value_num": 90,
      "unit": "°C",
      "parent_value": "65 °C"
-    },
-    {
-     "parameter": "duration",
-     "quote": "The urea- and thiourea-derived films changed to opaque appearance in 30 minutes, which indicated an over-crystallization of the perovskites.",
-     "step_order": 12,
-     "value_text": "30 minutes",
-     "parent_value": "4.5 h"
     }
    ],
    "outcomes": [
@@ -2143,6 +2132,9 @@
      "unit": "min",
      "value_text": "changed to opaque appearance in 30 minutes (over-crystallization)"
     }
+   ],
+   "not_stated": [
+    "annealing_duration"
    ]
   },
   {
@@ -2172,13 +2164,6 @@
      "value_num": 90,
      "unit": "°C",
      "parent_value": "65 °C"
-    },
-    {
-     "parameter": "duration",
-     "quote": "The urea- and thiourea-derived films changed to opaque appearance in 30 minutes, which indicated an over-crystallization of the perovskites.",
-     "step_order": 12,
-     "value_text": "30 minutes",
-     "parent_value": "4.5 h"
     }
    ],
    "outcomes": [
@@ -2194,6 +2179,9 @@
      "unit": "min",
      "value_text": "changed to opaque appearance in 30 minutes (over-crystallization)"
     }
+   ],
+   "not_stated": [
+    "annealing_duration"
    ]
   },
   {
@@ -2216,13 +2204,6 @@
      "value_num": 90,
      "unit": "°C",
      "parent_value": "75 °C"
-    },
-    {
-     "parameter": "duration",
-     "quote": "The urea- and thiourea-derived films changed to opaque appearance in 30 minutes, which indicated an over-crystallization of the perovskites.",
-     "step_order": 12,
-     "value_text": "30 minutes",
-     "parent_value": "2.5 h"
     }
    ],
    "outcomes": [
@@ -2238,6 +2219,9 @@
      "unit": "min",
      "value_text": "changed to opaque appearance in 30 minutes (over-crystallization)"
     }
+   ],
+   "not_stated": [
+    "annealing_duration"
    ]
   },
   {
@@ -2267,13 +2251,6 @@
      "value_num": 90,
      "unit": "°C",
      "parent_value": "75 °C"
-    },
-    {
-     "parameter": "duration",
-     "quote": "The urea- and thiourea-derived films changed to opaque appearance in 30 minutes, which indicated an over-crystallization of the perovskites.",
-     "step_order": 12,
-     "value_text": "30 minutes",
-     "parent_value": "2.5 h"
     }
    ],
    "outcomes": [
@@ -2289,6 +2266,9 @@
      "unit": "min",
      "value_text": "changed to opaque appearance in 30 minutes (over-crystallization)"
     }
+   ],
+   "not_stated": [
+    "annealing_duration"
    ]
   },
   {
@@ -2318,13 +2298,6 @@
      "value_num": 90,
      "unit": "°C",
      "parent_value": "75 °C"
-    },
-    {
-     "parameter": "duration",
-     "quote": "The urea- and thiourea-derived films changed to opaque appearance in 30 minutes, which indicated an over-crystallization of the perovskites.",
-     "step_order": 12,
-     "value_text": "30 minutes",
-     "parent_value": "2.5 h"
     }
    ],
    "outcomes": [
@@ -2340,6 +2313,9 @@
      "unit": "min",
      "value_text": "changed to opaque appearance in 30 minutes (over-crystallization)"
     }
+   ],
+   "not_stated": [
+    "annealing_duration"
    ]
   },
   {
@@ -2727,12 +2703,21 @@
      "action": "deposit",
      "description": "Deposit PC61BM from anhydrous chlorobenzene.",
      "quote": "The PC61BM (20 mg mL−1 in anhydrous chlorobenzene) was then sequentially deposited and following deposited the BCP (2 mg mL−1 in IPA) via spin coating at 6000 rpm for 30 s.",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": [
-      "spin_speed",
-      "duration"
-     ]
+     "parameters": [
+      {
+       "name": "spin_speed",
+       "quote": "The PC61BM (20 mg mL−1 in anhydrous chlorobenzene) was then sequentially deposited and following deposited the BCP (2 mg mL−1 in IPA) via spin coating at 6000 rpm for 30 s.",
+       "value_num": 6000,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "The PC61BM (20 mg mL−1 in anhydrous chlorobenzene) was then sequentially deposited and following deposited the BCP (2 mg mL−1 in IPA) via spin coating at 6000 rpm for 30 s.",
+       "value_num": 30,
+       "unit": "s"
+      }
+     ],
+     "equipment": []
     },
     {
      "order": 10,
@@ -2868,6 +2853,28 @@
      "quote": "MAPbI3 17.3 768.2 1.11E-8 0.97 3004 4.30E-5 0.55",
      "value_num": 3004,
      "unit": "Ω"
+    },
+    {
+     "property": "EIS_C1_T",
+     "quote": "MAPbI3 17.3 768.2 1.11E-8 0.97 3004 4.30E-5 0.55",
+     "value_text": "1.11E-8",
+     "unit": "F"
+    },
+    {
+     "property": "EIS_C1_P",
+     "quote": "MAPbI3 17.3 768.2 1.11E-8 0.97 3004 4.30E-5 0.55",
+     "value_num": 0.97
+    },
+    {
+     "property": "EIS_C2_T",
+     "quote": "MAPbI3 17.3 768.2 1.11E-8 0.97 3004 4.30E-5 0.55",
+     "value_text": "4.30E-5",
+     "unit": "F"
+    },
+    {
+     "property": "EIS_C2_P",
+     "quote": "MAPbI3 17.3 768.2 1.11E-8 0.97 3004 4.30E-5 0.55",
+     "value_num": 0.55
     }
    ],
    "characterizations": [
@@ -2875,7 +2882,7 @@
      "technique": "J–V",
      "result": "forward/reverse scans; best PCE reported per condition",
      "instrument": "Keithley 2400 SMU; Newport Oriel Sol2A solar simulator",
-     "conditions": "AM 1.5 illumination (100 mW cm–2), active area 0.01 cm2",
+     "conditions": "AM 1.5 illumination (100 mW cm–2)",
      "quote": "using a computer-controlled Keithley 2400 source measurement unit (SMU) and a Newport solar simulator (Oriel® Sol2A Class ABA Solar Simulators) under AM 1.5 illumination (100 mW cm–2)"
     },
     {
@@ -2915,7 +2922,6 @@
     }
    ],
    "missing_fields": [
-    "spin_coating_conditions_of_PC61BM",
     "heating_rate",
     "atmosphere_of_annealing"
    ]
@@ -3017,7 +3023,7 @@
     "phase": null,
     "morphology": "thin film"
    },
-   "quote": "At an annealed temperature of 65 °C (10 min), the PCEs of the normal devices were 7.0 ± 0.2% while the PCEs of the 1% urea derived devices were 15.9 ± 0.3%.",
+   "quote": "Control 65 oC (20min) 14.1±0.5 0.98±0.01 51.0±4.2 7.0±0.2 7.2 157.4 30.2",
    "variations": [
     {
      "parameter": "temperature",
@@ -3617,6 +3623,100 @@
      "property": "hysteresis",
      "quote": "we found that the hysteresis effect of the device after addition of 1% urea (85 °C, 10 min) was not significant, and the J–V curves for the forward and reverse scans with various delay times were similar (Table S3†)",
      "value_text": "not significant; forward and reverse J–V curves similar for various delay times"
+    },
+    {
+     "property": "Jsc_forward_0.2s",
+     "quote": "Forward(0.2s) 22.09 1.06 78.7 18.4",
+     "value_num": 22.09,
+     "unit": "mA cm−2"
+    },
+    {
+     "property": "Voc_forward_0.2s",
+     "quote": "Forward(0.2s) 22.09 1.06 78.7 18.4",
+     "value_num": 1.06,
+     "unit": "V"
+    },
+    {
+     "property": "FF_forward_0.2s",
+     "quote": "Forward(0.2s) 22.09 1.06 78.7 18.4",
+     "value_num": 78.7,
+     "unit": "%"
+    },
+    {
+     "property": "Jsc_reverse_0.2s",
+     "quote": "Reverse(0.2s) 22.25 1.07 77.4 18.4",
+     "value_num": 22.25,
+     "unit": "mA cm−2"
+    },
+    {
+     "property": "Voc_reverse_0.2s",
+     "quote": "Reverse(0.2s) 22.25 1.07 77.4 18.4",
+     "value_num": 1.07,
+     "unit": "V"
+    },
+    {
+     "property": "FF_reverse_0.2s",
+     "quote": "Reverse(0.2s) 22.25 1.07 77.4 18.4",
+     "value_num": 77.4,
+     "unit": "%"
+    },
+    {
+     "property": "Jsc_forward_0.1s",
+     "quote": "Forward(0.1s) 22.74 1.06 77.6 18.7",
+     "value_num": 22.74,
+     "unit": "mA cm−2"
+    },
+    {
+     "property": "Voc_forward_0.1s",
+     "quote": "Forward(0.1s) 22.74 1.06 77.6 18.7",
+     "value_num": 1.06,
+     "unit": "V"
+    },
+    {
+     "property": "FF_forward_0.1s",
+     "quote": "Forward(0.1s) 22.74 1.06 77.6 18.7",
+     "value_num": 77.6,
+     "unit": "%"
+    },
+    {
+     "property": "Jsc_reverse_0.1s",
+     "quote": "Reverse(0.1s) 22.58 1.06 78.5 18.8",
+     "value_num": 22.58,
+     "unit": "mA cm−2"
+    },
+    {
+     "property": "Voc_reverse_0.1s",
+     "quote": "Reverse(0.1s) 22.58 1.06 78.5 18.8",
+     "value_num": 1.06,
+     "unit": "V"
+    },
+    {
+     "property": "FF_reverse_0.1s",
+     "quote": "Reverse(0.1s) 22.58 1.06 78.5 18.8",
+     "value_num": 78.5,
+     "unit": "%"
+    },
+    {
+     "property": "EIS_C1_T",
+     "quote": "urea 14.07 461.3 5.64E-9 1.0 3014 3.33E-5 0.57",
+     "value_text": "5.64E-9",
+     "unit": "F"
+    },
+    {
+     "property": "EIS_C1_P",
+     "quote": "urea 14.07 461.3 5.64E-9 1.0 3014 3.33E-5 0.57",
+     "value_num": 1.0
+    },
+    {
+     "property": "EIS_C2_T",
+     "quote": "urea 14.07 461.3 5.64E-9 1.0 3014 3.33E-5 0.57",
+     "value_text": "3.33E-5",
+     "unit": "F"
+    },
+    {
+     "property": "EIS_C2_P",
+     "quote": "urea 14.07 461.3 5.64E-9 1.0 3014 3.33E-5 0.57",
+     "value_num": 0.57
     }
    ],
    "characterizations": [
@@ -3648,7 +3748,7 @@
     "phase": null,
     "morphology": "thin film"
    },
-   "quote": "At an annealed temperature of 65 °C (10 min), the PCEs of the normal devices were 7.0 ± 0.2% while the PCEs of the 1% urea derived devices were 15.9 ± 0.3%.",
+   "quote": "urea 65 oC (20min) 20.5±0.1 1.06±0.01 73.5±0.7 15.9±0.3 16.2 1462.9 34.5",
    "variations": [
     {
      "parameter": "temperature",
@@ -4137,7 +4237,7 @@
     "phase": null,
     "morphology": "thin film"
    },
-   "quote": "Fig. S5 FE-SEM images of MAPbI3 perovskite thin films under different conditions (a) MAPbI3, (b) addition of 1% urea, (c) addition of 0.5% thiourea at 65 oC for 20 min, respectively, magnification by 50000 times.",
+   "quote": "thiourea 65 oC (20min) 17.8±1.2 0.99±0.0 50.0±0.3 8.8±0.6 9.2 172.7 22.6",
    "variations": [
     {
      "parameter": "temperature",
@@ -4625,7 +4725,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Cl_urea1_65C_4.5h",
-   "text": "Hypothèse : le carbonyle de l'urée (C=O) et le soufre de la thiourée (C=S) sont des donneurs de Lewis qui se coordonnent probablement à Pb2+ et forment un intermédiaire avec le précurseur ; cet adduit modifie la cinétique de nucléation et de croissance, ce qui expliquerait la transformation plus complète à 65 °C et des grains plus larges. Un excès d'additif (3 %) ou une température trop élevée provoquerait une cristallisation trop rapide (aspect opaque).",
+   "text": "Hypothèse : le carbonyle de l'urée (C=O) et le soufre de la thiourée (C=S) sont des bases de Lewis qui forment probablement un adduit avec Pb2+ dans la solution et le film humide, ce qui retarderait la nucléation et favoriserait des grains plus larges et une couverture continue ; ces additifs non volatils à 65–75 °C resteraient vraisemblablement aux joints de grains, où ils pourraient passiver Pb2+ sous-coordonné, sans qu'aucune mesure de l'article (IR, XPS) ne le montre. Le départ du MACl resterait l'étape lente, d'où le recuit de plusieurs heures. Le brunissement en 10 s à 90 °C (contre 2,5 h sans additif), puis l'aspect opaque en 30 min, n'est pas expliqué par l'article : un excès d'additif ou une température trop élevée provoquerait peut-être une cristallisation trop rapide (non démontré).",
    "quote": null
   },
   {
@@ -4663,6 +4763,63 @@
    "route": null,
    "text": "Le MAI est synthétisé « selon des techniques déjà rapportées » sans protocole ni référence précise dans le texte ; les références 1 et 2 de la liste du SI (appelées pour la cuisson du NiOx et pour l'antisolvant) ne figurent pas dans la liste de références de l'article.",
    "quote": "MAI was synthesized according to previously reported techniques."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les conditions de recuit des films et dispositifs mesurés en TRPL (Tableau S4) et en EIS (Tableau S5) ne sont pas données : les légendes disent seulement « MAPbI3 » et « urea ». Les valeurs sont rangées sur le témoin à 100 °C et sur l'urée à 1 % à 85 °C par analogie avec la Fig. 3b-c, hypothèse non confirmée par les auteurs ; elles ne doivent pas être lues comme sûres pour ces deux voies."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cl_thiourea0.5_75C_2.5h",
+   "text": "L'IPCE de 83,9 % à 640 nm (contre 73,9 %) est rattaché à la thiourée 0,5 % à 75 °C, 2,5 h du système MAPbI3−xClx d'après « under the same annealing conditions », mais le texte cite la Fig. S10, dont la légende porte sur les dispositifs MAPbI3 (dont la thiourée 0,5 % à 100 °C, 10 min). L'attribution à cette voie est incertaine ; l'échantillon de départ à 73,9 % n'est pas identifié."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les auteurs rapportent que la surface des films reste sur-cristallisée avec 0,5 % d'urée à 80 °C et avec 1 % d'urée à 75 °C pendant 2,5 h (lecture de « respectively », ambiguë), observations renvoyées aux Fig. S1 et S2. Aucune branche n'est créée pour ces deux échantillons : la phrase est ambiguë et la légende de la Fig. S1 ne décrit que des films à 65 °C.",
+   "quote": "We observed that the surface of the perovskite films still over-crystallized when 0.5% and 1% of urea was added at 80 °C and heated at 75 °C for 2.5 hours, respectively"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le SI annonce des temps de recuit optimisés de 2,5 h pour le témoin et de 4,5 h pour les films avec urée et thiourée, alors que le texte principal et le Tableau S1 donnent 2,5 h pour la thiourée à 75 °C (4,5 h pour l'urée à 65 °C). Le chimiste doit savoir que la durée optimale de la thiourée est contradictoire dans l'article.",
+   "quote": "An optimized annealing times for our normal (no urea or thiourea) and urea and thiourea derived perovskite films were 2.5 and 4.5 h, respectively."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "I_normal_100C_10min",
+   "text": "Les conditions de dépôt de la couche de PC61BM ne sont pas écrites séparément : les 6000 rpm pendant 30 s de la phrase sont au mieux partagés avec le dépôt du BCP."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La durée du recuit à 65 °C pour les dispositifs MAPbI3 est de 10 min dans une phrase du texte principal mais de 20 min dans le Tableau S2, la légende de la Fig. S5 et la Conclusion ; 20 min est la valeur retenue ici."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "I_normal_100C_10min",
+   "text": "La surface active des dispositifs MAPbI3 est donnée deux fois avec un facteur 10 (0,01 cm2 pour l'électrode, 10 mm2 soit 0,1 cm2 pour le dispositif) et les mesures sont dites faites à l'air ambiant puis dans une boîte à gants ; Jsc et PCE dépendent directement de la surface, donc les rendements ne sont comparables qu'avec réserve."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cl_normal_90C_2.5h",
+   "text": "Le rapport MAI:PbCl2 et le solvant du précurseur MAPbI3−xClx ne sont pas donnés. Si le rapport était 3:1 (usage habituel, hypothèse, cf. Dualeh et al., Adv. Funct. Mater. 2014), la teneur serait d'environ 0,42 mol/L de plomb à 25 wt% et d'environ 0,54 mol/L à 30 wt% (DMF supposé) ; la stœchiométrie et la concentration réelles ne peuvent pas être vérifiées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cl_normal_65C_4.5h",
+   "text": "L'IPCE maximal de 17 % annoncé pour le témoin à 65 °C, 4,5 h est incompatible avec le Jsc de 16,1 mA cm−2 du Tableau S1 : à ce niveau d'IPCE, le Jsc ne dépasserait pas environ 4,6 mA cm−2 (par comparaison avec la cellule à l'urée, 20,9 mA cm−2 pour 77 %). L'une des deux valeurs est probablement erronée dans l'article ; elles sont reprises telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cl_urea1_65C_4.5h",
+   "text": "L'unité de la concentration d'additif n'est pas définie (« 0.5%, 1% and 3% » dans le texte, « vol% » dans le SI, solution d'additif à 25 wt% dans le DMF) : selon la lecture, « 1 % » d'urée correspond à environ 1 à 10 mol% par rapport au plomb, donc la condition optimale annoncée n'est pas transposable telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "I_urea1_85C_10min",
+   "text": "La préparation de l'additif pour les films MAPbI3 n'est pas décrite et l'unité de « 1 % » n'est pas définie : selon la lecture, 1 à 10 mol% d'urée par plomb (environ 3,5 mol% si 1 vol% de la solution à 25 wt%, proche des 4 mol% rapportés par Lee et al., Chem 2017). La condition record (18,8 %) n'est pas reproductible telle qu'écrite."
   }
  ],
  "method_sources": [
@@ -4688,15 +4845,15 @@
   },
   {
    "where": "I_normal_100C_10min step 12",
-   "issue": "Surface active : « fixed at 0.01 cm2 » puis « The active area of the device was 10 mm2 » (0,1 cm2). Non repris en valeur. De plus « All device measurements were performed in the ambient environment » contredit « The cell performance was measured inside a glove box »."
+   "issue": "Surface active : « The active area of this electrode was fixed at 0.01 cm2 » puis « The active area of the device was 10 mm2 » (0,1 cm2), soit un facteur 10 ; aucune des deux valeurs n'est reprise dans les paramètres ni dans les conditions de la caractérisation J–V. De plus « All device measurements were performed in the ambient environment » contredit « The cell performance was measured inside a glove box »."
   },
   {
    "where": "Cl_urea0.5_65C_1h … Cl_urea3_65C_4.5h",
-   "issue": "Grille additif × durée : les légendes Fig. S1 et S2 donnent l'ordre des concentrations par « respectively » (a, a-1, a-2 = 0,5, 1 et 3 %), appliqué ici. Les images ne sont pas dans le dépôt et le texte ne donne aucun résultat chiffré pour ces échantillons : 16 branches de grille sans résultat, plus les témoins Cl_normal_75C_2.5h et Cl_normal_80C_2.5h (Fig. S3, images seules) : avertissements attendus. Le texte « over-crystallized when 0.5% and 1% of urea was added at 80 °C and heated at 75 °C for 2.5 hours, respectively » est incohérent avec la légende de la Fig. S1 (urée à 65 °C) : aucune branche créée pour ce passage."
+   "issue": "Grille additif × durée : les légendes Fig. S1 et S2 donnent l'ordre des concentrations par « respectively » (a, a-1, a-2 = 0,5, 1 et 3 %), appliqué ici. Les images ne sont pas dans le dépôt et le texte ne donne aucun résultat chiffré pour ces échantillons : 16 branches de grille sans résultat, plus les témoins Cl_normal_75C_2.5h et Cl_normal_80C_2.5h (Fig. S3, images seules) : avertissements attendus. Le texte « over-crystallized when 0.5% and 1% of urea was added at 80 °C and heated at 75 °C for 2.5 hours, respectively » est incohérent avec la légende de la Fig. S1 (urée à 65 °C) : aucune branche créée pour ce passage. Le passage « over-crystallized when 0.5% and 1% of urea was added at 80 °C and heated at 75 °C for 2.5 hours, respectively (Fig. S1 and S2) » est consigné en annotation citée (tendance_observee) ; sa lecture contredit la légende de la Fig. S1 (urée à 65 °C seulement) et l'appariement 0,5 % / 80 °C et 1 % / 75 °C n'est pas établi."
   },
   {
    "where": "Cl_urea0.5_90C … Cl_thiourea3_90C",
-   "issue": "Six échantillons à 90 °C (0,5, 1, 3 % d'urée ou de thiourée) décrits par une seule phrase (« respectively »). La durée de recuit n'est pas donnée ; la durée « 30 minutes » vient de « changed to opaque appearance in 30 minutes » et n'est pas forcément la durée de recuit. Les pérovskites sont aussi devenues brun foncé « within 10 seconds » : les deux observations sont en résultats."
+   "issue": "Six échantillons à 90 °C (0,5, 1, 3 % d'urée ou de thiourée) décrits par une seule phrase (« respectively »). La durée de recuit n'est pas donnée : « changed to opaque appearance in 30 minutes » est le délai d'observation de l'aspect opaque, pas une durée de recuit imposée. La variation de durée a donc été retirée et la durée de recuit est déclarée non citée ; la durée du parent (4,5 h ou 2,5 h) ne s'applique pas à ces échantillons et doit se lire comme inconnue. Les deux observations (brun foncé « within 10 seconds », opaque « in 30 minutes ») restent en résultats."
   },
   {
    "where": "I_urea1_100C_10min, I_urea1_85C_10min, I_urea1_65C_20min",
@@ -4704,11 +4861,11 @@
   },
   {
    "where": "I_normal_100C_10min / I_urea1_85C_10min (TRPL, EIS)",
-   "issue": "Les mesures TRPL (Tableau S4) et EIS (Tableau S5) sont étiquetées « MAPbI3 » et « urea » sans température. Elles sont rangées sur le témoin à 100 °C et sur l'urée à 85 °C, par analogie avec les courbes J–V de la Fig. 3b (MAPbI3 100 °C ; 1 % d'urée 85 °C). Hypothèse non écrite par les auteurs."
+   "issue": "Les mesures TRPL (Tableau S4) et EIS (Tableau S5) sont étiquetées « MAPbI3 » et « urea » sans température ni durée de recuit. Elles sont rangées sur le témoin à 100 °C et sur l'urée à 85 °C, par analogie avec les courbes J–V de la Fig. 3b (MAPbI3 100 °C ; 1 % d'urée 85 °C). Hypothèse non écrite par les auteurs : lectures possibles, témoin à 100 °C ou à 85 °C, urée à 85 °C ou à 100 °C."
   },
   {
    "where": "Cl_thiourea0.5_75C_2.5h outcomes",
-   "issue": "« IPCE increased from 73.9% to 83.9% (640 nm) … under the same annealing conditions » : l'échantillon de départ à 73.9 % n'est pas identifié (témoin 65 °C ou 75 °C ?). Seule la valeur 83,9 % de la voie thiourée est extraite."
+   "issue": "« IPCE increased from 73.9% to 83.9% (640 nm) … under the same annealing conditions » : la phrase renvoie à la Fig. S10, dont la légende est « Incident photon-to-current efficiency (IPCE) for MAPbI3 devices » (courbes MAPbI3 100, 85 et 65 °C, et 0.5% thiourea 100 °C 10 min), alors que la Fig. S9 est celle des dispositifs MAPbI3−xClx. « The same annealing conditions » peut aussi renvoyer à la phrase précédente (65 °C, 4,5 h). L'attribution de 83,9 % à la thiourée 0,5 % à 75 °C, 2,5 h (MAPbI3−xClx) est donc incertaine (thiourée sur MAPbI3 à 100 °C, 10 min ?) ; l'échantillon de départ à 73,9 % n'est pas identifié. Valeur conservée sur cette voie, à lire avec réserve."
   },
   {
    "where": "I_urea1_65C_20min, I_thiourea0.5_65C_20min (grains)",
@@ -4724,7 +4881,7 @@
   },
   {
    "where": "Cl_normal_65C_2.5h",
-   "issue": "« below 75 °C for 2 hours was incomplete » : la durée de 2 h du texte diffère des 2,5 h de la légende Fig. S3 ; le résultat est rangé sur l'échantillon 65 °C, 2,5 h (seul échantillon sans additif à moins de 75 °C pour 2,5 h)."
+   "issue": "« the annealing temperature below 75 °C for 2 hours was incomplete » : la durée de 2 h du texte diffère des 2,5 h de la légende Fig. S3, et la température n'est pas précisée (« below 75 °C » peut couvrir 65 °C comme 70 °C). Le résultat est rangé sur l'échantillon 65 °C, 2,5 h (seul échantillon sans additif à moins de 75 °C pour 2,5 h) ; rattachement par concordance, non écrit par les auteurs."
   },
   {
    "where": "I_urea1_100C_10min, I_thiourea0.5_100C_10min (étape d'ajout)",
@@ -4733,6 +4890,22 @@
   {
    "where": "Fournisseurs",
    "issue": "La phrase « All chemicals were purchased from Aldrich and used as received, unless otherwise specified » est appliquée aux solvants, sels de plomb, urée, thiourée, Ni(acac)2, HCl, toluène. Elle n'est pas appliquée à PEDOT:PSS (Baytron), PCBM, BCP, MAI (synthétisé), ITO ni aux métaux, dont la provenance peut être différente."
+  },
+  {
+   "where": "SI, Device Fabrication (MAPbI3−xClx), temps de recuit optimisés",
+   "issue": "Le SI dit « optimized annealing times for our normal (no urea or thiourea) and urea and thiourea derived perovskite films were 2.5 and 4.5 h, respectively » : 2,5 h pour le témoin, 4,5 h pour urée et thiourée. Le texte principal et le Tableau S1 donnent pourtant 2,5 h pour la thiourée à 75 °C. Les durées de la voie thiourée (2,5 h) sont celles du Tableau S1 ; la contradiction n'est pas tranchée par l'article. Le SI situe aussi le temps de cristallisation complète « between 2.5 and 4.5 h » à 75 °C et 65 °C."
+  },
+  {
+   "where": "Cl_urea1_65C_4.5h et Cl_thiourea0.5_75C_2.5h, étape 8 (agitation « overnight »)",
+   "issue": "La phrase du SI est mal ponctuée : « …dissolving MAI and lead(II) chloride at 25 wt% urea and thiourea were first dissolved in DMF at a concentration of 25 wt%, and then stirring continuously overnight. » L'agitation d'une nuit peut porter sur la solution d'additif (lecture retenue pour l'étape 8), sur la solution de précurseur (étape 6, durée non citée) ou sur le mélange. Rattachement non tranché par l'article."
+  },
+  {
+   "where": "I_normal_100C_10min étape 9 (PC61BM)",
+   "issue": "« The PC61BM … was then sequentially deposited and following deposited the BCP … via spin coating at 6000 rpm for 30 s » : les 6000 rpm et 30 s peuvent couvrir les deux couches (PC61BM puis BCP) ou seulement le BCP. Lecture littérale retenue (valeurs reprises pour l'étape 9 comme pour l'étape 10) ; non tranché par l'article."
+  },
+  {
+   "where": "I_normal_65C_20min, I_urea1_65C_20min, I_thiourea0.5_65C_20min (durée du recuit)",
+   "issue": "Le texte dit « At an annealed temperature of 65 °C (10 min) » alors que le Tableau S2 (« 65 oC (20min) »), la légende de la Fig. S5 (« 65 oC for 20 min ») et la Conclusion (« 65 °C for 20 minutes ») disent 20 min. 20 min retenu ; contradiction interne non tranchée par l'article."
   }
  ]
 }
