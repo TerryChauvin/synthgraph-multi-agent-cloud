@@ -30,7 +30,7 @@
    "severity": "deduit",
    "where": "FET_noAuNP_MoS2 (voie fille de FET_AuNP_MoS2) et outcome threshold_voltage = −20 V",
    "extracted": "parent FET_AuNP_MoS2 : mêmes contacts Ni/Au, même substrat ; Vth = −20 V",
-   "article_says": "transistors fabricated using similar geometry and the same SiO2 thickness on CVD grown MoS2 without gold nanoparticles,[[cit50]] which showed a negative threshold voltage (Vth = −20 V)",
+   "article_says": "transistors fabricated using similar geometry and the same SiO2 thickness on CVD grown MoS2 without gold nanoparticles, which showed a negative threshold voltage (Vth = −20 V)",
    "fix": "la valeur est rapportée avec un renvoi (cit50, Giannazzo et al. 2020) : il est possible qu'elle provienne d'un autre jeu d'échantillons que le témoin MoS2_noAuNP de cet article, et « similar geometry » n'est pas « same fabrication ». Ne pas hériter la fabrication (ou le dire) et ajouter une annotation `limite_reproductibilite` : valeur du témoin FET tirée d'un travail antérieur, croissance du témoin non décrite.",
    "confidence": "probable"
   },
