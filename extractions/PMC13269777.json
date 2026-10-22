@@ -61,7 +61,7 @@
    "sample": "ZIF-67 nanoparticles / powder separated from PES-ZIF672",
    "defined_in": "Results, Investigation of in situ synthesis of ZIF-67",
    "route": null,
-   "why": "échantillon d'analyse : support PES-ZIF672 dissous dans le DCM, particules isolées ; ses résultats (Fig. 1) sont rangés dans la voie PES-ZIF672",
+   "why": "échantillon d'analyse : support PES-ZIF672 dissous dans le DCM, particules séparées par centrifugation et lavées ; résultats (non rangés dans une voie) : octaèdres irréguliers de 200–300 nm (Fig. 1a), raies DRX à 7°, 12,5° et 18° (Fig. 1b)",
    "results_in": [
     "Fig. 1a",
     "Fig. 1b"
@@ -168,8 +168,8 @@
      "quote": "A solution containing 1.3 g of PEG-400 in 4.3 g of NMP was prepared."
     },
     {
-     "name": "Co2+ (cobalt nitrate hexahydrate)",
-     "formula": "Co(NO3)2·6H2O",
+     "name": "Co2+",
+     "formula": null,
      "role": "precursor",
      "amount": 0.29,
      "unit": "g",
@@ -178,7 +178,8 @@
      "not_stated": [
       "purity"
      ],
-     "quote": "PES-ZIF672-Water | 4.3 | 1.3 | 1.0 | 0.29 | 0.13 | Yes | TFC-2"
+     "quote": "PES-ZIF672-Water | 4.3 | 1.3 | 1.0 | 0.29 | 0.13 | Yes | TFC-2",
+     "amount_text": "Co2+"
     },
     {
      "name": "2-methylimidazole (Hmim)",
@@ -516,6 +517,13 @@
      "property": "larger_pore_size",
      "value_text": "some pores of 400–600 nm",
      "quote": "It is worth noting that some pores are larger (400–600 nm), which may be attributed to the slight agglomeration of ZIF-67 nanoparticles."
+    },
+    {
+     "property": "EDS_Co_content",
+     "value_num": 0.7,
+     "unit": "wt%",
+     "from_figure": "Fig. 3e",
+     "quote": "Fig. 3 (a) digital photo, (b) elemental mapping images, and (c) EDS spectrum of the PES-ZIF672 support layer (before ZIF-67 washing); (d) digital photo and (e) EDS spectrum of the PES-ZIF672-Water support layer (after ZIF-67 washing)."
     }
    ],
    "missing_fields": [
@@ -536,7 +544,7 @@
    "quote": "PES-ZIF671-Water | 4.3 | 1.3 | 1.0 | 0.14 | 0.07 | Yes | TFC-1",
    "variations": [
     {
-     "parameter": "Co2+ (cobalt nitrate hexahydrate)",
+     "parameter": "Co2+",
      "value_num": 0.14,
      "unit": "g",
      "parent_value": "0.29 g",
@@ -602,7 +610,7 @@
    "quote": "PES-ZIF673-Water | 4.3 | 1.3 | 1.0 | 0.43 | 0.2 | Yes | TFC-3",
    "variations": [
     {
-     "parameter": "Co2+ (cobalt nitrate hexahydrate)",
+     "parameter": "Co2+",
      "value_num": 0.43,
      "unit": "g",
      "parent_value": "0.29 g",
@@ -674,7 +682,7 @@
    "quote": "PES | 4.3 | 1.3 | 1.0 | 0.0 | 0.0 | Yes | TFC",
    "variations": [
     {
-     "parameter": "Co2+ (cobalt nitrate hexahydrate)",
+     "parameter": "Co2+",
      "value_text": "absent",
      "parent_value": "0.29 g",
      "quote": "PES | 4.3 | 1.3 | 1.0 | 0.0 | 0.0 | Yes | TFC"
@@ -703,23 +711,13 @@
     {
      "order": 2,
      "action": "stir",
-     "description": "Stir the solution at room temperature for 2 h.",
+     "description": "Stirring of the PEG/NMP solution before adding PES: the article gives the 2 h at room temperature only for the solution containing Co2+ and Hmim; not stated for the control.",
      "quote": "After 2 h of stirring at room temperature",
-     "parameters": [
-      {
-       "name": "duration",
-       "value_num": 2,
-       "unit": "h",
-       "quote": "After 2 h of stirring at room temperature"
-      },
-      {
-       "name": "temperature",
-       "value_text": "room temperature",
-       "quote": "After 2 h of stirring at room temperature"
-      }
-     ],
+     "parameters": [],
      "equipment": [],
      "not_stated": [
+      "duration",
+      "temperature",
       "stirring_speed"
      ]
     },
@@ -737,7 +735,7 @@
     {
      "order": 4,
      "action": "heat",
-     "description": "Heat to 65 °C and stir for 6 h to dissolve PES; a purple colour appears upon ZIF-67 formation.",
+     "description": "Heat to 65 °C and stir for 6 h to dissolve PES.",
      "quote": "the solution is heated to 65 °C and stirred for 6 h to dissolve the PES",
      "parameters": [
       {
@@ -807,8 +805,8 @@
     {
      "order": 7,
      "action": "immerse",
-     "description": "Immerse the cast film in a DI water coagulation bath (non-solvent induced phase separation) to obtain the purple PES nanocomposite support layer.",
-     "quote": "immediately immersed in a DI water coagulation bath to yield a purple PES nanocomposite support layer",
+     "description": "Immerse the cast film in a DI water coagulation bath (non-solvent induced phase separation) to obtain the PES support layer.",
+     "quote": "immediately immersed in a DI water coagulation bath",
      "parameters": [],
      "equipment": [],
      "not_stated": [
@@ -820,24 +818,24 @@
     {
      "order": 8,
      "action": "wash",
-     "description": "Soak the support layer in DI water for 24 h to leach out the ZIF-67 nanoparticles; refresh the water every 2 h.",
-     "quote": "Finally, the support layer was soaked in DI water for 24 h to leach out ZIF-67 nanoparticles, with the water refreshed every 2 h.",
+     "description": "Soak the support layer in DI water for 24 h; refresh the water every 2 h (Table 1: water immersion, Yes).",
+     "quote": "the support layer was soaked in DI water for 24 h",
      "parameters": [
       {
        "name": "duration",
        "value_num": 24,
        "unit": "h",
-       "quote": "Finally, the support layer was soaked in DI water for 24 h to leach out ZIF-67 nanoparticles, with the water refreshed every 2 h."
+       "quote": "the support layer was soaked in DI water for 24 h"
       },
       {
        "name": "wash_solvent",
        "value_text": "DI water",
-       "quote": "Finally, the support layer was soaked in DI water for 24 h to leach out ZIF-67 nanoparticles, with the water refreshed every 2 h."
+       "quote": "the support layer was soaked in DI water for 24 h"
       },
       {
        "name": "repetitions",
        "value_text": "water refreshed every 2 h",
-       "quote": "Finally, the support layer was soaked in DI water for 24 h to leach out ZIF-67 nanoparticles, with the water refreshed every 2 h."
+       "quote": "with the water refreshed every 2 h"
       }
      ],
      "equipment": [],
@@ -889,6 +887,22 @@
      "property": "pores_in_magnified_SEM",
      "value_text": "no surface pores",
      "quote": "In contrast, magnified SEM images of the bare PES support (Fig. 6e) showed no surface pores, confirming the proposed."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "PES sample: broad peak at 2θ = 20°, characteristic of amorphous materials",
+     "instrument": "X-ray diffraction (XRD; DX-2700BH)",
+     "conditions": null,
+     "quote": "The PES sample exhibited a broad peak at 2θ = 20°, characteristic of amorphous materials."
+    },
+    {
+     "technique": "ATR-FTIR",
+     "result": "PES matrix bands: 1246 and 1150 cm-1 (asymmetric and symmetric stretching of sulfone O = S = O), 1482 and 1580 cm−1 (aromatic ring stretching)",
+     "instrument": "ATR-FTIR, Bruker Equinox 55",
+     "conditions": "wavenumber range of 600 to 3900 cm-1 (Supporting Information)",
+     "quote": "The 1246 cm-1 and 1150 cm-1 peaks correspond to the asymmetric and symmetric stretching vibrations of the sulfone (O = S = O) functional groups, respectively. Furthermore, the absorption bands at 1482 cm−1 and 1580 cm−1 are attributed to the stretching vibration of the aromatic rings of the PES backbone."
     }
    ]
   },
@@ -1081,10 +1095,10 @@
      "quote": "Figure 3b, c show the elemental mapping image and EDS of the PES-ZIF672 support layer, revealing that the Co and N elements of ZIF-67 are uniformly distributed across the membrane surface."
     },
     {
-     "technique": "XRD and SEM of isolated ZIF-67",
-     "result": "ZIF-67 separated from the support layer: irregular octahedral particles of 200–300 nm, XRD matching simulated ZIF-67",
+     "technique": "XRD and SEM of ZIF-67 powder separated from the support layer",
+     "result": "ZIF-67 nanoparticles isolated from the PES-ZIF672 support layer (dissolution in DCM, centrifugation, washing) and analysed by XRD and SEM (Fig. 1a, b); these results concern the isolated powder, not the support layer, and are given in the annotation and in sample_inventory",
      "instrument": "XRD (DX-2700BH); SEM (Tescan)",
-     "conditions": "support layer dissolved in DCM before the 24 h water immersion, nanoparticles separated by centrifuge and washed to remove residual polymer",
+     "conditions": "support layer dissolved in DCM before the 24 h water immersion, nanoparticles separated by centrifuge and washed to remove residual polymer; DCM volume, centrifugation speed and time, washing solvent not stated",
      "quote": "The PES-ZIF672 support layer was dissolved in DCM (before immersion in water for 24 h), and the nanoparticles were separated with a centrifuge and thoroughly washed to remove residual polymer."
     }
    ],
@@ -1100,14 +1114,11 @@
      "quote": "However, in the PES-ZIF672 sample, distinct peaks corresponding to ZIF-67 are observed at 2θ values of 7° (011), 12.5° (112), and 18° (222), in addition to the broad amorphous characteristic of the PES matrix."
     },
     {
-     "property": "ZIF-67_particle_size",
-     "value_text": "200–300 nm",
-     "quote": "Figure 1a confirms that ZIF-67 nanoparticles have an irregular octahedral morphology with a particle size in the range of 200–300 nm, indicating precise crystal growth and controlled nucleation during synthesis."
-    },
-    {
-     "property": "ZIF-67_morphology",
-     "value_text": "irregular octahedral",
-     "quote": "Figure 1a confirms that ZIF-67 nanoparticles have an irregular octahedral morphology with a particle size in the range of 200–300 nm, indicating precise crystal growth and controlled nucleation during synthesis."
+     "property": "EDS_Co_content",
+     "value_num": 20.13,
+     "unit": "wt%",
+     "from_figure": "Fig. 3c",
+     "quote": "Fig. 3 (a) digital photo, (b) elemental mapping images, and (c) EDS spectrum of the PES-ZIF672 support layer (before ZIF-67 washing); (d) digital photo and (e) EDS spectrum of the PES-ZIF672-Water support layer (after ZIF-67 washing)."
     }
    ]
   },
@@ -1442,6 +1453,20 @@
      "unit": "LMH",
      "from_figure": "Fig. 9b",
      "quote": "As shown, the water flux increases as DS concentration rises from 0.5 to 1.5 M."
+    },
+    {
+     "property": "PA_layer_thickness",
+     "value_num": 380,
+     "unit": "nm",
+     "from_figure": "Fig. 7b",
+     "quote": "Fig. 7 (a) top surface and (b) cross-sectional SEM images of the TFC-FO membranes, (c) 3D AFM images of the PA active layer in the TFC-FO membranes."
+    },
+    {
+     "property": "PA_layer_surface_roughness_Ra",
+     "value_num": 62.8,
+     "unit": "nm",
+     "from_figure": "Fig. 7c",
+     "quote": "Fig. 7 (a) top surface and (b) cross-sectional SEM images of the TFC-FO membranes, (c) 3D AFM images of the PA active layer in the TFC-FO membranes."
     }
    ],
    "missing_fields": [
@@ -1558,6 +1583,20 @@
      "unit": "g/L",
      "from_figure": "Fig. 9a",
      "quote": "Fig. 9 (a) Selectivity trend of the TFC-FO membranes, (b) the effect of DS concentration on water flux of TFC and TFC-2 membranes."
+    },
+    {
+     "property": "PA_layer_thickness",
+     "value_num": 463,
+     "unit": "nm",
+     "from_figure": "Fig. 7b",
+     "quote": "Fig. 7 (a) top surface and (b) cross-sectional SEM images of the TFC-FO membranes, (c) 3D AFM images of the PA active layer in the TFC-FO membranes."
+    },
+    {
+     "property": "PA_layer_surface_roughness_Ra",
+     "value_num": 83.6,
+     "unit": "nm",
+     "from_figure": "Fig. 7c",
+     "quote": "Fig. 7 (a) top surface and (b) cross-sectional SEM images of the TFC-FO membranes, (c) 3D AFM images of the PA active layer in the TFC-FO membranes."
     }
    ]
   },
@@ -1706,6 +1745,20 @@
      "property": "PA_layer_morphology",
      "value_text": "thicker and rougher PA layer than on the unmodified support",
      "quote": "Additionally, the thickness and roughness of the PA layer in modified membranes are increased, as verified by cross-section SEM and 3D AFM images (Fig. 7b, c)."
+    },
+    {
+     "property": "PA_layer_thickness",
+     "value_num": 553,
+     "unit": "nm",
+     "from_figure": "Fig. 7b",
+     "quote": "Fig. 7 (a) top surface and (b) cross-sectional SEM images of the TFC-FO membranes, (c) 3D AFM images of the PA active layer in the TFC-FO membranes."
+    },
+    {
+     "property": "PA_layer_surface_roughness_Ra",
+     "value_num": 98.7,
+     "unit": "nm",
+     "from_figure": "Fig. 7c",
+     "quote": "Fig. 7 (a) top surface and (b) cross-sectional SEM images of the TFC-FO membranes, (c) 3D AFM images of the PA active layer in the TFC-FO membranes."
     }
    ]
   },
@@ -1823,6 +1876,20 @@
      "property": "PA_layer_morphology",
      "value_text": "thickness and roughness of the PA layer reduced",
      "quote": "However, as shown, the thickness and roughness of the PA layer in the TFC-3 membrane are reduced."
+    },
+    {
+     "property": "PA_layer_thickness",
+     "value_num": 478,
+     "unit": "nm",
+     "from_figure": "Fig. 7b",
+     "quote": "Fig. 7 (a) top surface and (b) cross-sectional SEM images of the TFC-FO membranes, (c) 3D AFM images of the PA active layer in the TFC-FO membranes."
+    },
+    {
+     "property": "PA_layer_surface_roughness_Ra",
+     "value_num": 85.7,
+     "unit": "nm",
+     "from_figure": "Fig. 7c",
+     "quote": "Fig. 7 (a) top surface and (b) cross-sectional SEM images of the TFC-FO membranes, (c) 3D AFM images of the PA active layer in the TFC-FO membranes."
     }
    ]
   }
@@ -1847,12 +1914,12 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Quand la charge en précurseurs passe de 0 (PES) à 0,43 g de Co2+ (PES-ZIF673-Water), la porosité passe de 75,5 % à 84,5 %, la perméabilité à l'eau pure de 98,1 à 265,9 LMH/bar, la taille moyenne des pores de surface de 14,1 à 23,2 nm et l'angle de contact de 77,6° à 65,3°. En membrane complète, le flux d'eau en mode FO passe de 13,2 LMH (TFC) à 29,4 LMH (TFC-2) puis redescend vers 27 LMH (TFC-3, lu sur figure) tandis que le paramètre structural S passe de 593 µm à 242 µm (TFC-2) puis remonte à 364 µm (TFC-3). La sélectivité de TFC-3 s'effondre (Rs 81,6 %) alors que TFC-2 atteint 95,8 %. L'optimum est donc à la charge intermédiaire."
+   "text": "Quand la charge en précurseurs passe de 0 (PES) à 0,43 g de Co2+ (PES-ZIF673-Water), la porosité passe de 75,5 % à 84,5 %, la perméabilité à l'eau pure de 98,1 à 265,9 LMH/bar, la taille moyenne des pores de surface de 14,1 à 23,2 nm et l'angle de contact de 77,6° à 65,3°. En membrane complète, le flux d'eau en mode FO passe de 13,2 LMH (TFC) à 29,4 LMH (TFC-2) puis redescend vers 27 LMH (TFC-3, lu sur figure) tandis que le paramètre structural S passe de 593 µm à 242 µm (TFC-2) puis remonte à 364 µm (TFC-3). La sélectivité de TFC-3 s'effondre (Rs 81,6 % selon le tableau 2, valeur douteuse) alors que TFC-2 atteint 95,8 %. L'optimum est donc à la charge intermédiaire."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "La porosité, la perméabilité du support et la taille des pores augmentent de façon monotone avec la charge en ZIF-67, alors que les performances FO passent par un maximum à la charge intermédiaire : au-delà, la viscosité de la solution de coulée dégrade la morphologie en doigts et le film de polyamide devient plus mince et plus rugueux.",
+   "text": "La porosité, la perméabilité du support et la taille des pores augmentent de façon monotone avec la charge en ZIF-67, alors que les performances FO passent par un maximum à la charge intermédiaire : au-delà, la viscosité de la solution de coulée dégrade la morphologie en doigts et le film de polyamide, plus épais et plus rugueux jusqu'à TFC-2, redevient plus mince et moins rugueux pour TFC-3 (478 nm et Ra 85,7 nm contre 553 nm et 98,7 nm pour TFC-2, valeurs imprimées sur la figure 7).",
    "quote": "However, further increasing the ZIF-67 loading in the PES-ZIF673-Water support reduced water flux, likely due to increased casting solution viscosity, which adversely affected the support-layer morphology."
   },
   {
@@ -1864,7 +1931,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "L'unité « Co2+ (g) » du tableau 1 n'est pas explicite : l'article ne dit pas si 0,29 g est la masse de Co(NO3)2·6H2O ou celle de l'ion cobalt ; les rapports molaires Hmim/Co ne sont donc pas calculables sans hypothèse. Sont aussi absents : l'ordre et la vitesse d'addition de Co2+ et Hmim, la vitesse d'agitation, la méthode et la durée du dégazage, la température de la pièce lors du coulage, la durée de séjour dans le bain de coagulation, le volume du bain de trempage, le séchage ou le stockage du support avant le dépôt du polyamide, la taille des échantillons, la pureté de PEG-400, NMP et nitrate de cobalt, le fournisseur du PEG, du NMP, du MPD et du TMC, et le rendement. L'équation 1 (porosité) n'est pas reproduite dans le texte. Les valeurs de TFC-1 et TFC-3 (flux d'eau, flux de sel inverse, Js/Jw) et celles de PES-ZIF671-Water et PES-ZIF672-Water (porosité, PWP, taille de pores, angle de contact) ne sont données que sur les figures 4, 8 et 9 et ont été lues à 2 chiffres significatifs au plus."
+   "text": "L'unité « Co2+ (g) » du tableau 1 n'est pas explicite : l'article ne dit pas si 0,29 g est la masse de Co(NO3)2·6H2O ou celle de l'ion cobalt ; les rapports molaires Hmim/Co ne sont donc pas calculables sans hypothèse. Sont aussi absents : l'ordre et la vitesse d'addition de Co2+ et Hmim, la vitesse d'agitation, la méthode et la durée du dégazage, la température de la pièce lors du coulage, la durée de séjour dans le bain de coagulation, le volume du bain de trempage, le séchage ou le stockage du support avant le dépôt du polyamide, la taille des échantillons, la pureté de PEG-400, NMP et nitrate de cobalt, le fournisseur du PEG, du NMP, du MPD et du TMC, et le rendement. L'équation 1 (porosité) n'est pas reproduite dans le texte. Les valeurs de TFC-1 et TFC-3 (flux d'eau, flux de sel inverse, Js/Jw) et celles de PES-ZIF671-Water et PES-ZIF672-Water (porosité, PWP, taille de pores, angle de contact) ne sont données que sur les figures 4, 8 et 9 et ont été lues à 2 chiffres significatifs au plus. L'épaisseur et la rugosité Ra du film de polyamide (figure 7b, c) et la teneur en cobalt par EDS (figure 3c, e) sont des valeurs imprimées sur les images, absentes du texte."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1875,7 +1942,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "PES-ZIF672-Water",
-   "text": "Hypothèse de chimiste : dans le NMP, Co2+ et l'imidazolate (déprotoné partiellement par le solvant basique ou l'excès d'amine) se coordinent pour nucléer des cristaux de ZIF-67 de 200 à 300 nm, que le polymère enrobe à mesure que la viscosité augmente. Le ZIF-67 massif est réputé stable dans l'eau liquide : la disparition observée (DRX, FTIR) viendrait donc plutôt d'un lessivage de particules de taille submicronique mal retenues dans la matrice, ou d'une décomposition lente, que d'une vraie dissolution ; l'EDS ne montre d'ailleurs qu'une « réduction » du cobalt. Un rapport Hmim/Co aussi faible (de l'ordre de 1,5 à 1,6 en mole si le tableau donne la masse du sel hexahydraté) est inhabituel pour ZIF-67 et pourrait donner une phase cobalt-imidazolate peu cristalline."
+   "text": "Hypothèse de chimiste, à vérifier : dans le NMP, le nitrate de cobalt se complexe d'abord au 2-méthylimidazole (solution violette de complexes Co–Hmim, couleur peu discriminante). Comme Hmim est en défaut par rapport à la stœchiométrie de Co(mim)2 (2 Hmim par Co, davantage encore sans base ajoutée) et que le NMP est une amide peu basique, seule une fraction du cobalt, probablement de l'ordre de 40 à 80 %, peut nucléer des cristaux SOD de ZIF-67 de 200 à 300 nm, que le polymère enrobe à mesure que la viscosité monte à 65 °C ; le reste demeure sel ou complexe soluble. À l'immersion, le sel et le PEG sortent avec le NMP et modifient la séparation de phase (doigts plus larges, porosité plus forte) ; les cristaux piégés se dégraderaient ensuite lentement dans l'eau (liaison Co–N labile), en laissant des vides de 200 à 600 nm dans les parois. Le gain de porosité serait ainsi dû en grande partie à un effet porogène du sel lessivé et au changement de démixtion, et seulement pour une petite part au volume du gabarit ; l'EDS (0,7 % en masse de Co restant) montre que l'élimination n'est pas complète."
   },
   {
    "type": "mecanisme_analyse",
@@ -1895,15 +1962,41 @@
   {
    "type": "comparaison_branches",
    "route": "TFC-3",
-   "text": "TFC-3 (support à la charge la plus élevée) a un flux d'eau plus faible que TFC-2, un flux de sel inverse presque double en mode FO (5,8 contre 3,7 gMH, lu sur figure), une rétention de sel de 81,6 % contre 95,8 % et un paramètre structural remonté à 364 µm : les auteurs l'attribuent à la viscosité plus forte de la solution de coulée et à un film de polyamide plus mince et plus rugueux.",
+   "text": "TFC-3 (support à la charge la plus élevée) a un flux d'eau plus faible que TFC-2, un flux de sel inverse environ 1,6 fois plus élevé en mode FO (5,8 contre 3,7 gMH, lu sur figure), une rétention de sel de 81,6 % contre 95,8 % et un paramètre structural remonté à 364 µm : les auteurs l'attribuent à la viscosité plus forte de la solution de coulée et à un film de polyamide plus mince et moins rugueux que celui de TFC-2.",
    "quote": "However, as shown, the thickness and roughness of the PA layer in the TFC-3 membrane are reduced."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PES-ZIF672-Water",
+   "text": "Bilan stœchiométrique défavorable venant de l'article : avec les masses du tableau 1, Hmim/Co vaut 1,59 si « Co2+ (g) » est la masse du sel hexahydraté (0,32 si c'est celle de l'ion), alors que Co(mim)2 demande 2 Hmim par Co, et 4 si Hmim neutralise lui-même les protons libérés (aucune base n'est ajoutée). Au plus 79 % du cobalt, plus probablement environ 40 %, peut donc former du ZIF-67 ; la conversion totale sous-entendue par le texte n'est pas établie. À un rapport voisin (≈ 1,5), une étude en solvant différent (RSC Advances 2021, PMC8693792) obtient un hydroxyde de cobalt lamellaire plutôt que du ZIF-67."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PES",
+   "text": "Le seul témoin de la série retire à la fois le gabarit ZIF-67 et le sel de cobalt : l'effet porogène d'un sel soluble lessivé n'est pas écarté (cas de LiCl dans les collodions PES/NMP, Shafie et al., RSC Advances 2020). D'après le critique scientifique, le volume du ZIF-67 ne peut expliquer qu'environ 1,5 des 7,5 points de porosité gagnés (75,5 % à 83 %), sous réserve des masses volumiques supposées. Des témoins manquent : Co(NO3)2 seul, Hmim seul, ZIF-67 préformé à même masse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TFC-3",
+   "text": "Le tableau 2 est incohérent pour TFC-3 : avec A = 2,3 LMH/bar et Rs = 81,6 %, l'équation de l'annexe donne B ≈ 2,2 LMH et B/A ≈ 0,97 bar, et non 0,53 LMH et 0,24 bar. Les flux de sel en FO soutiennent plutôt B = 0,53, si bien que Rs est probablement faux (≈ 94,8 % attendu) ; l'article affirme d'ailleurs une rétention accrue pour les membranes modifiées. Le paramètre S de 364 µm ne se retrouve pas non plus avec le flux de 27 LMH lu sur la figure 8a (≈ 291 µm recalculés)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Incohérences internes de l'article, valeurs non corrigées : le résumé annonce « 3.0 wt.% ZIF-67 precursors » pour TFC-2, alors que le tableau 1 donne 5,98 % (3,08 % pour le support 1) ; « 15% higher » pour la porosité, alors que 83 contre 75,5 % fait + 9,9 % en relatif (+ 7,5 points) ; A du témoin 1,2 (tableau 2) contre 1,25 LMH/bar (texte) ; Js/Jw du témoin 0,2 (texte) contre 0,25 (tableau 3) ; amélioration du flux de 126 % (tableau 3) contre 123 % calculés avec 29,4 et 13,2 LMH ; pour TFC-3, Js/Jw de 0,29 g/L (figure 9a) fois Jw de 26,5 LMH donne ≈ 7,6 gMH contre 5,8 gMH sur la figure 8b. La « mean pore size » est en fait le rayon de l'équation de Guerout–Elford–Ferry, qui demande l'épaisseur du support, non donnée. Le texte affirme que le ZIF-67 est « removed completely », mais l'EDS laisse 0,7 % en masse de cobalt."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "PES-ZIF672",
+   "text": "Les nanoparticules de ZIF-67 isolées du support PES-ZIF672 (support dissous dans le DCM, centrifugation, lavage) sont des octaèdres irréguliers de 200 à 300 nm en MEB (figure 1a), et leur DRX (figure 1b) montre les raies à 7°, 12,5° et 18° du ZIF-67. Ces résultats portent sur la poudre isolée, non sur le support.",
+   "quote": "Figure 1a confirms that ZIF-67 nanoparticles have an irregular octahedral morphology with a particle size in the range of 200–300 nm, indicating precise crystal growth and controlled nucleation during synthesis."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "Table 1, colonne Co2+(g), routes PES-ZIF671/2/3-Water",
-   "issue": "L'article ne précise pas si « Co2+ (g) » est la masse du sel Co(NO3)2·6H2O (cité dans Materials comme source de métal) ou celle de l'ion Co2+. La valeur du tableau est extraite telle quelle en grammes et rattachée au réactif nitrate de cobalt hexahydraté, lecture la plus littérale du texte."
+   "issue": "L'article ne précise pas si « Co2+ (g) » est la masse du sel Co(NO3)2·6H2O (cité dans Materials comme source de métal) ou celle de l'ion Co2+. La valeur du tableau (0,14 / 0,29 / 0,43 g) est extraite telle quelle en grammes, sous le nom « Co2+ » avec amount_text « Co2+ », sans l'attribuer au sel hexahydraté ; la formule du réactif est laissée vide, le fournisseur Merck vient de la phrase de Materials. Rapport Hmim/Co : 1,6 (sel) ou 0,32 (ion)."
   },
   {
    "where": "Résumé : « 3.0 wt.% ZIF-67 precursors », « porosity of 83%, 15% higher »",
@@ -1927,19 +2020,19 @@
   },
   {
    "where": "PES-ZIF672-Water, élimination du ZIF-67",
-   "issue": "Le texte conclut à une élimination complète (DRX, FTIR) mais l'EDS de PES-ZIF672-Water montre seulement « a reduction in Co content ». Les deux affirmations sont conservées telles quelles."
+   "issue": "Le texte conclut à une élimination complète (DRX, FTIR) mais l'EDS de PES-ZIF672-Water montre seulement « a reduction in Co content ». Les deux affirmations sont conservées telles quelles. L'EDS de la figure 3 imprime Co = 20,13 % en masse avant trempage et 0,7 ± 0,1 % après : il reste du cobalt, ce qui nuance « removed completely »."
   },
   {
    "where": "Voie PES-ZIF672 (sans immersion)",
    "issue": "Le tableau 1 note « Water immersion: No ». Lecture retenue : l'échantillon est coulé et coagulé dans le bain d'eau (étape 8) mais ne subit pas le trempage de 24 h (étape 9), qui n'est donc pas hérité ; l'article ne dit rien sur son éventuel séchage avant caractérisation."
   },
   {
-   "where": "Voie PES (témoin)",
-   "issue": "L'article décrit l'agitation de 2 h à température ambiante après l'ajout de Co2+ et Hmim ; pour PES (Co 0.0, Hmim 0.0 dans le tableau 1) il ne dit pas si ce temps d'agitation est maintenu. Les étapes communes (hors étape d'ajout de Co2+ et Hmim) sont reprises, comme l'indique « All support layers were fabricated via the NIPS process »."
+   "where": "Voie PES (témoin), étape 2",
+   "issue": "L'article décrit l'agitation de 2 h à température ambiante après l'ajout de Co2+ et Hmim ; pour PES (Co 0.0, Hmim 0.0 dans le tableau 1) il ne dit pas si ce temps est maintenu : l'étape est gardée mais sa durée et sa température sont déclarées non citées. Les autres étapes sont reprises du protocole général (« All support layers were fabricated via the NIPS process »), sans mention de couleur violette ni de ZIF-67 pour ce témoin."
   },
   {
    "where": "Valeurs lues sur figure (from_figure)",
-   "issue": "Fig. 4a (porosité et PWP de PES-ZIF671/2-Water : 78 %, 83 %, 120 et 200 LMH/bar), Fig. 4b (angle de contact 73° et 68°, taille de pores 15 et 20 nm), Fig. 5 (Ra imprimés sur l'image : 8.5, 19.2, 21.1, 22.4 nm), Fig. 8a (flux d'eau de TFC-1 : 23 et 40 LMH ; TFC-3 : 27 et 44 LMH ; ± 1 LMH), Fig. 8b (flux de sel inverse, ± 0,2 gMH), Fig. 9a (Js/Jw, ± 0,01 g/L) et Fig. 9b (flux d'eau à 0,5 et 1,5 M de DS, ± 1 LMH). Lecture graphique, 2 chiffres significatifs au plus ; les barres d'erreur ne sont pas reportées."
+   "issue": "Fig. 4a (porosité et PWP de PES-ZIF671/2-Water : 78 %, 83 %, 120 et 200 LMH/bar), Fig. 4b (angle de contact 73° et 68°, taille de pores 15 et 20 nm), Fig. 5 (Ra imprimés sur l'image : 8.5, 19.2, 21.1, 22.4 nm), Fig. 8a (flux d'eau de TFC-1 : 23 et 40 LMH ; TFC-3 : 27 et 44 LMH ; ± 1 LMH), Fig. 8b (flux de sel inverse, ± 0,2 gMH), Fig. 9a (Js/Jw, ± 0,01 g/L) et Fig. 9b (flux d'eau à 0,5 et 1,5 M de DS, ± 1 LMH). Lecture graphique, 2 chiffres significatifs au plus ; les barres d'erreur ne sont pas reportées. Ajouts du 2026-10 : épaisseur et Ra du polyamide (Fig. 7b, c : 380/463/553/478 nm et 62,8/83,6/98,7/85,7 nm, valeurs imprimées sur l'image, lecture nette) et Co par EDS (Fig. 3c, 3e : 20,13 et 0,7 % en masse, tableaux imprimés)."
   },
   {
    "where": "Rapport Hmim/Co2+ « constant »",
@@ -1948,6 +2041,14 @@
   {
    "where": "Équations 1 à 3 (Méthodes)",
    "issue": "Les équations 1 à 3 ne figurent pas dans le texte du dépôt (formules perdues à la conversion) ; la porosité et les flux sont décrits par leur méthode seulement."
+  },
+  {
+   "where": "Résultats du ZIF-67 isolé (Fig. 1a, b)",
+   "issue": "Les tailles et la morphologie des particules sont celles du ZIF-67 séparé du support PES-ZIF672 après dissolution dans le DCM, non celles du support : elles ne sont plus rangées dans les résultats de la voie PES-ZIF672 mais dans l'inventaire et une annotation. Volume de DCM, vitesse et durée de centrifugation, solvant de lavage non cités."
+  },
+  {
+   "where": "Js/Jw et Jw de TFC-3 ; amélioration du flux de TFC-2",
+   "issue": "Pour TFC-3, Js/Jw de 0,29 g/L (Fig. 9a) fois Jw de 26,5 LMH donne ≈ 7,6 gMH, alors que la Fig. 8b indique 5,8 gMH ; le tableau 3 donne 126 % d'amélioration pour TFC-2, contre 123 % calculés avec 29,4 et 13,2 LMH. Valeurs des figures et du tableau conservées telles quelles."
   }
  ]
 }
