@@ -48,7 +48,7 @@
     {
      "name": "formamide",
      "formula": "CH3NO",
-     "role": "solvent",
+     "role": "precursor, solvent",
      "amount": 10,
      "unit": "mL",
      "purity": "analytical grade",
@@ -208,12 +208,6 @@
        "quote": "The glass column filled with the DOWEX 1 × 8 chloride form (100–200 mesh) (30 mL) was equilibrated with 0.5 M HCl, followed by washing with deionized water repeatedly to a neutral pH.",
        "value_num": 0.5,
        "unit": "M"
-      },
-      {
-       "name": "volume",
-       "quote": "The glass column filled with the DOWEX 1 × 8 chloride form (100–200 mesh) (30 mL) was equilibrated with 0.5 M HCl, followed by washing with deionized water repeatedly to a neutral pH.",
-       "value_num": 30,
-       "unit": "mL"
       }
      ],
      "equipment": [
@@ -226,7 +220,8 @@
      "not_stated": [
       "equilibration_volume",
       "duration",
-      "flow_rate"
+      "flow_rate",
+      "volume"
      ]
     },
     {
@@ -391,6 +386,13 @@
      "quote": "Similar to the surface-related C–N bonds at 1017 cm−1, carboxylic CO bonds at 1710 cm−1 were significant in both the bCD and gCD samples."
     },
     {
+     "technique": "FTIR (absence de pics)",
+     "result": "no obvious peaks at 1360 and 1650 cm−1 (C–N and C=N bonds according to the text, which writes 'bCDs and rCDs')",
+     "instrument": "Bruker Tencer 2",
+     "conditions": null,
+     "quote": "The spectra of the bCDs and rCDs displayed no obvious peaks at 1360 and 1650 cm−1 typical for C–N bonds and CN bonds."
+    },
+    {
      "technique": "Raman",
      "result": "AD/AG about 1.065, low graphitic level (a single value is given for bCDs and gCDs)",
      "instrument": "HORIBA, HR800",
@@ -398,11 +400,39 @@
      "quote": "Besides, Raman spectrum showed that AD/AG was about 1.065 (Fig. S5†), further suggesting a low graphitic level for the bCDs and gCDs."
     },
     {
+     "technique": "Raman (bandes G et D)",
+     "result": "intensity of the G-band (1590 cm−1) reducing and intensity of the D-band (1340 cm−1) rising from blue to green CDs (trend stated for the pair of fractions)",
+     "instrument": "HORIBA, HR800",
+     "conditions": null,
+     "quote": "The obviously reducing intensity of the G-band at 1590 cm−1 and rising intensity of the D-band at 1340 cm−1 from blue to green CDs."
+    },
+    {
      "technique": "XPS",
-     "result": "P 1.26 % ; C 1s peaks at 284.8, 286.29 and 288.02 eV (C–C, C–N, C(O)OH); N 1s peaks at 398.7, 398.92, 399.84 and 400.67 eV (assignment as written in the text); P 2p: P–C 132.5 eV and P–O 133.5 eV",
+     "result": "P 2p: P–C band at 132.5 eV and P–O band at 133.5 eV; P 1.26 % (as written in the text)",
      "instrument": "Thermo Fisher Escalab 250X",
      "conditions": null,
      "quote": "Fig. 3c shows the high-resolution P 2p peak with obvious P–C bands (132.5 eV) and P–O bands (133.5 eV), indicating the presence of phosphorus species."
+    },
+    {
+     "technique": "XPS survey",
+     "result": "binding energy peaks at 131.5, 285.0, 398.2 and 531.0 eV, indicating P, C, N and O",
+     "instrument": "Thermo Fisher Escalab 250X",
+     "conditions": null,
+     "quote": "The binding energy peaks at 131.5, 285.0, 398.2, and 531.0 eV indicate the presence of P, C, N and O."
+    },
+    {
+     "technique": "XPS C 1s",
+     "result": "peaks at 284.8, 286.29 and 288.02 eV attributed to C–C, C–N and C(O)OH respectively (the text says 'six peaks' but lists three)",
+     "instrument": "Thermo Fisher Escalab 250X",
+     "conditions": null,
+     "quote": "Fig. 3a displays the high-resolution C 1s spectrum, which can be deconvoluted into six peaks at 284.8, 286.29 and 288.02 eV, representing C 1s states in C–C, C–N and C(O)OH, respectively."
+    },
+    {
+     "technique": "XPS N 1s",
+     "result": "four peaks at 398.7, 398.92, 399.84 and 400.67 eV attributed by the authors to pyridinic-N-oxide, pyridinic-N, pyrrolic-N and quaternary-N respectively",
+     "instrument": "Thermo Fisher Escalab 250X",
+     "conditions": null,
+     "quote": "The N 1s spectrum (Fig. 3b) shows four peaks at 398.7, 398.92, 399.84 and 400.67 eV, which are associated with pyridinic-N-oxide, pyridinic-N, pyrrolic-N and quaternary-N, respectively."
     },
     {
      "technique": "quantum yield",
@@ -423,7 +453,7 @@
      "result": "fluorescence and UV absorption little affected by NaCl up to 1.0 mol L−1 and by pH 3, 7, 11 (qualitative)",
      "instrument": "ETT-F97 Series",
      "conditions": "200 μL of 8 mg mL−1 P,N-CDs in 2 mL of NaCl solution (0.2, 0.6, 1 mol L−1), λex 374 nm; UV absorbance 0.1–0.2 at pH 3, 7, 11",
-     "quote": "200 μL P,N-CDs solution (8 mg mL−1) was added to 2 mL of sodium chloride buffer solution with different concentrations, so that the concentration of sodium chloride in the solution is 0.2, 0.6, and 1 mol L−1."
+     "quote": "PH value and the concentration of sodium chloride have almost no effect on their stability (Fig. S7 and S8†)."
     },
     {
      "technique": "MTT assay",
@@ -434,10 +464,10 @@
     },
     {
      "technique": "confocal fluorescence microscopy",
-     "result": "blue (bCDs) or green (gCDs) fluorescence mainly distributed on the cell membrane and in the cytoplasm of U20S and 143B cells",
+     "result": "bright blue (bCDs) and green (gCDs) fluorescence almost distributed on the cell membrane of U20S and 143B cells; the two fractions had difficulty in infiltrating into the inner nuclei (the text also says the bCDs were 'mainly located in the cytoplasm' in U20S cells)",
      "instrument": "Leica confocal microscope (SP8)",
-     "conditions": "0.08 mg mL−1 of P,N-CDs, 2 hours at 37 °C, cells washed twice with PBS; 405 nm laser for bCDs",
-     "quote": "Cells were seeded into 35 mm special laser confocal culture dish (104 cells per cell culture dish) in DMEM overnight and co-incubated with 0.08 mg mL−1 of P,N-CDs for 2 hours at 37 °C."
+     "conditions": "0.08 mg mL−1 of P,N-CDs, 2 hours at 37 °C, cells washed twice with PBS; 405 nm laser for bCDs; for gCDs the text gives 'green emissions at a λEm of 488 nm'",
+     "quote": "In particular, the bright blue and green fluorescence was almost distributed on the cell membrane, indicating that the two types of fractions had difficulty in infiltrating into the inner nuclei (Fig. 5a and c)."
     }
    ],
    "outcomes": [
@@ -521,6 +551,46 @@
      "unit": "%",
      "from_figure": "Fig. 4a",
      "quote": "Fig. 4 (a and b) The cytotoxic activities of bCDs and gCDs on U20S and 143B cells at 0–160 μg mL−1 (from left to right)."
+    },
+    {
+     "property": "elemental_content_C_TableS2",
+     "value_num": 48.13,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26"
+    },
+    {
+     "property": "elemental_content_H_TableS2",
+     "value_num": 1.04,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26"
+    },
+    {
+     "property": "elemental_content_O_TableS2",
+     "value_num": 15.81,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26"
+    },
+    {
+     "property": "elemental_content_N_TableS2",
+     "value_num": 33.76,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26"
+    },
+    {
+     "property": "elemental_content_P_TableS2",
+     "value_num": 1.26,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26"
+    },
+    {
+     "property": "photobleaching_resistance",
+     "value_text": "no decay after several hours of UV irradiation",
+     "quote": "However, the fluorescence strength of the separated fractions had no decay after several hours of UV irradiation, indicating their good photobleaching resistance."
+    },
+    {
+     "property": "storage_photostability",
+     "value_text": "no fluorescence attenuation, even if the preservation time lasted over several weeks",
+     "quote": "It is worth noting that the as-eluted bCDs and gCDs had no fluorescence attenuation, even if the preservation time lasted over several weeks, indicating their significant photostability."
     }
    ],
    "missing_fields": [
@@ -616,12 +686,6 @@
        "quote": "The glass column filled with the DOWEX 1 × 8 chloride form (100–200 mesh) (30 mL) was equilibrated with 0.5 M HCl, followed by washing with deionized water repeatedly to a neutral pH.",
        "value_num": 0.5,
        "unit": "M"
-      },
-      {
-       "name": "volume",
-       "quote": "The glass column filled with the DOWEX 1 × 8 chloride form (100–200 mesh) (30 mL) was equilibrated with 0.5 M HCl, followed by washing with deionized water repeatedly to a neutral pH.",
-       "value_num": 30,
-       "unit": "mL"
       }
      ],
      "equipment": [
@@ -634,7 +698,8 @@
      "not_stated": [
       "equilibration_volume",
       "duration",
-      "flow_rate"
+      "flow_rate",
+      "volume"
      ]
     },
     {
@@ -793,11 +858,25 @@
      "quote": "Similar to the surface-related C–N bonds at 1017 cm−1, carboxylic CO bonds at 1710 cm−1 were significant in both the bCD and gCD samples."
     },
     {
+     "technique": "FTIR (absence de pics)",
+     "result": "no obvious peaks at 1360 and 1650 cm−1 (C–N and C=N bonds according to the text, which writes 'bCDs and rCDs')",
+     "instrument": "Bruker Tencer 2",
+     "conditions": null,
+     "quote": "The spectra of the bCDs and rCDs displayed no obvious peaks at 1360 and 1650 cm−1 typical for C–N bonds and CN bonds."
+    },
+    {
      "technique": "Raman",
      "result": "AD/AG about 1.065, low graphitic level (a single value is given for bCDs and gCDs)",
      "instrument": "HORIBA, HR800",
      "conditions": null,
      "quote": "Besides, Raman spectrum showed that AD/AG was about 1.065 (Fig. S5†), further suggesting a low graphitic level for the bCDs and gCDs."
+    },
+    {
+     "technique": "Raman (bandes G et D)",
+     "result": "intensity of the G-band (1590 cm−1) reducing and intensity of the D-band (1340 cm−1) rising from blue to green CDs (trend stated for the pair of fractions)",
+     "instrument": "HORIBA, HR800",
+     "conditions": null,
+     "quote": "The obviously reducing intensity of the G-band at 1590 cm−1 and rising intensity of the D-band at 1340 cm−1 from blue to green CDs."
     },
     {
      "technique": "XPS",
@@ -825,7 +904,7 @@
      "result": "fluorescence and UV absorption little affected by NaCl up to 1.0 mol L−1 and by pH 3, 7, 11 (qualitative)",
      "instrument": "ETT-F97 Series",
      "conditions": "200 μL of 8 mg mL−1 P,N-CDs in 2 mL of NaCl solution (0.2, 0.6, 1 mol L−1), λex 374 nm; UV absorbance 0.1–0.2 at pH 3, 7, 11",
-     "quote": "200 μL P,N-CDs solution (8 mg mL−1) was added to 2 mL of sodium chloride buffer solution with different concentrations, so that the concentration of sodium chloride in the solution is 0.2, 0.6, and 1 mol L−1."
+     "quote": "PH value and the concentration of sodium chloride have almost no effect on their stability (Fig. S7 and S8†)."
     },
     {
      "technique": "MTT assay",
@@ -836,10 +915,10 @@
     },
     {
      "technique": "confocal fluorescence microscopy",
-     "result": "blue (bCDs) or green (gCDs) fluorescence mainly distributed on the cell membrane and in the cytoplasm of U20S and 143B cells",
+     "result": "bright blue (bCDs) and green (gCDs) fluorescence almost distributed on the cell membrane of U20S and 143B cells; the two fractions had difficulty in infiltrating into the inner nuclei (the text also says the bCDs were 'mainly located in the cytoplasm' in U20S cells)",
      "instrument": "Leica confocal microscope (SP8)",
-     "conditions": "0.08 mg mL−1 of P,N-CDs, 2 hours at 37 °C, cells washed twice with PBS; 405 nm laser for bCDs",
-     "quote": "Cells were seeded into 35 mm special laser confocal culture dish (104 cells per cell culture dish) in DMEM overnight and co-incubated with 0.08 mg mL−1 of P,N-CDs for 2 hours at 37 °C."
+     "conditions": "0.08 mg mL−1 of P,N-CDs, 2 hours at 37 °C, cells washed twice with PBS; 405 nm laser for bCDs; for gCDs the text gives 'green emissions at a λEm of 488 nm'",
+     "quote": "In particular, the bright blue and green fluorescence was almost distributed on the cell membrane, indicating that the two types of fractions had difficulty in infiltrating into the inner nuclei (Fig. 5a and c)."
     }
    ],
    "outcomes": [
@@ -917,6 +996,46 @@
      "unit": "%",
      "from_figure": "Fig. 4b",
      "quote": "Fig. 4 (a and b) The cytotoxic activities of bCDs and gCDs on U20S and 143B cells at 0–160 μg mL−1 (from left to right)."
+    },
+    {
+     "property": "elemental_content_C_TableS2",
+     "value_num": 42.54,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26 gCDs 42.54 2.16 16.73 34.92 3.65"
+    },
+    {
+     "property": "elemental_content_H_TableS2",
+     "value_num": 2.16,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26 gCDs 42.54 2.16 16.73 34.92 3.65"
+    },
+    {
+     "property": "elemental_content_O_TableS2",
+     "value_num": 16.73,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26 gCDs 42.54 2.16 16.73 34.92 3.65"
+    },
+    {
+     "property": "elemental_content_N_TableS2",
+     "value_num": 34.92,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26 gCDs 42.54 2.16 16.73 34.92 3.65"
+    },
+    {
+     "property": "elemental_content_P_TableS2",
+     "value_num": 3.65,
+     "unit": "%",
+     "quote": "Sample C H O N P bCDs 48.13 1.04 15.81 33.76 1.26 gCDs 42.54 2.16 16.73 34.92 3.65"
+    },
+    {
+     "property": "photobleaching_resistance",
+     "value_text": "no decay after several hours of UV irradiation",
+     "quote": "However, the fluorescence strength of the separated fractions had no decay after several hours of UV irradiation, indicating their good photobleaching resistance."
+    },
+    {
+     "property": "storage_photostability",
+     "value_text": "no fluorescence attenuation, even if the preservation time lasted over several weeks",
+     "quote": "It is worth noting that the as-eluted bCDs and gCDs had no fluorescence attenuation, even if the preservation time lasted over several weeks, indicating their significant photostability."
     }
    ],
    "missing_fields": [
@@ -1006,17 +1125,17 @@
   {
    "type": "mecanisme_analyse",
    "route": "PN-CDs_mixture",
-   "text": "Hypothèse : à 180 °C en autoclave, la formamide se décompose partiellement (vers l'ammoniac et le monoxyde de carbone ou l'acide cyanhydrique) et l'urée libère de l'ammoniac et du dioxyde de carbone, ce qui fournirait l'azote ; ces petites molécules, ainsi que les produits de condensation de la formamide, polymériseraient puis se carboniseraient en noyaux de quelques nanomètres. Le HEDP apporterait le phosphore sous forme de groupes phosphonate qui resteraient en surface, ce qui expliquerait la charge négative de la fraction retenue sur la résine échangeuse d'anions. La formamide jouerait à la fois le rôle de solvant et de source de carbone et d'azote."
+   "text": "Hypothèse : le formamide n'est pas qu'un solvant, il apporte environ 99 % du carbone et de l'azote (151 fois plus de moles que l'urée, 518 fois plus que le HEDP ; l'urée n'apporte qu'environ 1 % de l'azote). À 180 °C, en milieu acide, il se décompose partiellement (monoxyde de carbone et ammoniac, acide cyanhydrique) et se condense en hétérocycles azotés et en oligomères très riches en azote (rapport atomique N/C de 0,6 à 0,7 d'après le tableau S2), qui se carbonisent en partie en domaines de quelques nanomètres. Le HEDP, qui porte déjà une liaison P–C, serait greffé sous forme de phosphonates ; les espèces les plus phosphonatées et carboxylées, anioniques, sont retenues par la résine échangeuse d'anions : la colonne trie par charge. Une part de l'émission peut venir de fluorophores moléculaires plutôt que de points de carbone (Essner et al., Chem. Mater., 2018). Aucun essai sans urée ni sans HEDP ne permet de départager les rôles."
   },
   {
    "type": "mecanisme_analyse",
    "route": "gCDs",
-   "text": "Hypothèse : la résine DOWEX 1 × 8 est une résine échangeuse d'anions fortement basique ; les points de carbone portant le plus de groupes phosphonate ou carboxylate (phosphore 3,65 % contre 1,26 % pour bCDs d'après le tableau S2) seraient retenus, puis déplacés par les ions chlorure en excès de HCl 1,0 M. La fraction éluée à l'eau serait peu chargée et passerait sans être retenue."
+   "text": "Hypothèse : la résine DOWEX 1 × 8 est un échangeur d'anions fortement basique (groupes triméthylammonium, forme chlorure). Les domaines azotés portant le plus de groupes phosphonate ou carboxylate, et peut-être du HEDP non réagi, seraient retenus puis déplacés par les ions chlorure de l'acide chlorhydrique 1,0 M ; la fraction éluée à l'eau serait peu chargée et passerait sans être retenue. Le rendement quantique plus faible des gCDs (1,92 % contre 20,33 %) correspond à une constante de désactivation non radiative environ 3,6 fois plus grande ; il peut venir de l'extinction par les groupes phosphonate et carbonyle ou de l'agrégation, sans qu'un rôle de l'azote graphitique soit démontré par cet article."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "La formamide est classée toxique pour la reproduction (H360D) : à manipuler sous hotte avec gants. Le chauffage de formamide et d'urée à 180 °C en autoclave fermé produit une pression interne et des gaz (ammoniac, monoxyde de carbone, éventuellement acide cyanhydrique) : laisser refroidir complètement l'autoclave avant ouverture, sous hotte. Le HEDP et l'acide chlorhydrique 1,0 M sont corrosifs. La lampe UV à 365 nm exige des lunettes de protection. Les nanoparticules de carbone en poudre ou en solution doivent être manipulées avec des gants."
+   "text": "Le formamide est classé toxique pour la reproduction de catégorie 1B (H360D, H360FD selon les fournisseurs) et cancérogène de catégorie 2 (H351) d'après les fiches de sécurité (Thermo Fisher Scientific, NOAA CAMEO Chemicals) : à manipuler sous hotte, avec gants. Il commence à se décomposer à 180 °C, température de la synthèse, en monoxyde de carbone et ammoniac, avec formation possible d'acide cyanhydrique : la pression réelle dans l'autoclave de 50 mL dépend de ce taux de décomposition, que l'article ne donne pas. Laisser refroidir complètement l'autoclave avant ouverture, sous hotte (le monoxyde de carbone est inodore). Le HEDP et l'acide chlorhydrique 1,0 M sont corrosifs. La lampe UV à 365 nm exige des lunettes de protection. Les nanoparticules de carbone doivent être manipulées avec des gants."
   },
   {
    "type": "limite_reproductibilite",
@@ -1032,6 +1151,43 @@
    "type": "limite_reproductibilite",
    "route": "gCDs",
    "text": "Le texte de l'article ne donne, pour les gCDs, ni les énergies de liaison des pics XPS de C 1s, N 1s et P 2p, ni leur taux d'azote graphitique chiffré ; seul le tableau S2 donne l'analyse élémentaire (C 42,54, H 2,16, O 16,73, N 34,92, P 3,65 %)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "bCDs",
+   "text": "Hypothèse : fraction peu chargée, faite d'oligomères et de domaines carbonés azotés pauvres en phosphonates et en carboxylates, qui traversent la résine échangeuse d'anions avec les espèces non retenues. L'émission bleue (environ 440 nm sous excitation à 380 nm d'après la Fig. 2b) serait attribuable à des états de surface ou à des fluorophores moléculaires azotés plutôt qu'à un effet de taille démontré."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "PN-CDs_mixture",
+   "text": "Les auteurs présentent le HEDP et le formamide, riches en phosphore et en azote, comme les précurseurs de la synthèse ; le formamide est aussi le solvant dans lequel HEDP et urée sont dissous.",
+   "quote": "Hydroxyethylidene diphosphonic acid (HEDP) and formamide with abundant phosphorus and nitrogen components were chosen as the precursors."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "En Raman, l'intensité de la bande G (1590 cm−1) diminue et celle de la bande D (1340 cm−1) augmente du bleu au vert ; les auteurs relient cette tendance à un plus grand nombre d'atomes d'azote graphitique dans l'échelle sp2. Le rapport AD/AG n'est pourtant donné que sous une valeur unique (environ 1,065) pour les deux fractions.",
+   "quote": "The obviously reducing intensity of the G-band at 1590 cm−1 and rising intensity of the D-band at 1340 cm−1 from blue to green CDs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les maxima d'émission de 460 nm (bCDs) et 510 nm (gCDs) sont donnés « selon la couleur sous la lampe UV » : ils ne sont pas mesurés. Les spectres des Fig. 2b et 2e culminent vers 440 et 430 nm sous excitation à 380 nm, pratiquement au même endroit, ce qui ne soutient pas la distinction bleu/vert telle qu'elle est documentée ; la Fig. S9 censée montrer les spectres n'est pas lisible dans le dépôt. La phrase sur la photoluminescence (excitation de 400 à 600 nm, émission passant de « 380 (orange) à 450 nm ») est physiquement impossible et contredit les Méthodes (excitation de 380 à 450 nm) : il faut refaire les spectres d'émission avec la longueur d'onde d'excitation et le maximum mesurés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "bCDs",
+   "text": "Le texte écrit que les teneurs « en dopants P et O » valent environ 1,26 et 33,76 % : dans le tableau S2, 33,76 % est la teneur en azote (l'oxygène vaut 15,81 %). Ce tableau contient aussi l'hydrogène, que l'XPS ne détecte pas : c'est une analyse élémentaire (somme exactement 100 %), non le résultat XPS annoncé. Le texte annonce enfin « six pics » en C 1s mais n'en liste que trois."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Attributions XPS N 1s douteuses : le texte place le N-oxyde pyridinique à 398,7 eV, alors qu'il se situe au-dessus de 402 eV dans la littérature (Beilstein J. Nanotechnol., 2018) et que la Fig. 3b le met vers 401,7 eV ; deux composantes séparées de 0,22 eV (398,7 et 398,92 eV) sont plus proches que la résolution d'un spectromètre de laboratoire. Pour les gCDs, l'azote graphitique « croissant » est situé à 401,6–401,3 eV, sur le pic que la Fig. 3b/3e étiquette N-oxyde pyridinique, et aucune proportion n'est chiffrée ; l'affirmation, reprise de Holá et al. (ACS Nano, 2017) où l'azote graphitique n'augmente qu'entre les fractions jaune et rouge, n'est pas démontrée ici."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le dopage au phosphore n'est pas démontré : le HEDP porte déjà une liaison P–C, si bien qu'un pic « P–C » en P 2p ne distingue pas un phosphore inséré dans le réseau carboné d'un phosphonate greffé ou adsorbé ; les composantes « P–C » (132,5 eV) et « P–O » (133,5 eV), séparées d'environ 1 eV, ressemblent à un doublet spin-orbite P 2p3/2–P 2p1/2 d'une seule espèce ; du HEDP non réagi, anionique, peut être retenu par la résine et élué avec les gCDs. Une RMN 31P ou un dosage du HEDP résiduel après dialyse serait nécessaire."
   }
  ],
  "method_sources": [],
@@ -1050,7 +1206,7 @@
   },
   {
    "where": "bCDs, caractérisation XPS (N 1s)",
-   "issue": "Le texte attribue 398.7, 398.92, 399.84 et 400.67 eV à pyridinic-N-oxide, pyridinic-N, pyrrolic-N et quaternary-N « respectively », alors que la Fig. 3b place le pyridinic N-oxide à l'énergie la plus haute (environ 401.7 eV). Le texte parle aussi de « six peaks » pour C 1s mais n'en liste que trois. Valeurs et attributions du texte recopiées, sans correction."
+   "issue": "Le texte attribue 398.7, 398.92, 399.84 et 400.67 eV à pyridinic-N-oxide, pyridinic-N, pyrrolic-N et quaternary-N « respectively », alors que la Fig. 3b place le pyridinic N-oxide à l'énergie la plus haute (environ 401.7 eV). Le texte parle aussi de « six peaks » pour C 1s mais n'en liste que trois. Valeurs et attributions du texte recopiées, sans correction. Pour les gCDs, l'azote graphitique « à 401,6–401,3 eV » tombe sur le pic que la Fig. 3b/3e étiquette N-oxyde pyridinique, et aucune proportion n'est chiffrée."
   },
   {
    "where": "Hydrothermal ou solvothermal",
@@ -1066,11 +1222,31 @@
   },
   {
    "where": "Tableau S2 (annotations comparaison_branches et limite_reproductibilite)",
-   "issue": "Le tableau S2 est aplati en une cellule par ligne (colonnes C, H, O, N, P, rangées bCDs puis gCDs) ; aucune de ses cellules n'est extraite comme résultat, car une citation d'un seul nombre (3.65) est refusée par le contrôle. Les valeurs P = 1.26 % (bCDs) et P = 3.65 % (gCDs) citées dans les annotations suivent l'ordre des colonnes ; seule P = 1.26 % de bCDs est aussi dans le texte."
+   "issue": "Le tableau S2 est aplati en une cellule par ligne (colonnes C, H, O, N, P ; rangées bCDs puis gCDs). Les valeurs sont extraites comme résultats avec pour citation l'en-tête et la rangée (la citation du gCDs contient aussi la rangée bCDs qui la précède dans le texte). Le texte appelle ce tableau de l'XPS alors qu'il contient l'hydrogène (analyse élémentaire)."
   },
   {
    "where": "Fig. 2f et Fig. 5",
    "issue": "Le texte renvoie la Fig. 2f au rendement quantique alors que la légende la décrit comme la durée de vie (la figure montre les deux valeurs) ; la légende de la Fig. 5 ne mentionne que les cellules 143B alors que le texte parle de U20S et 143B. Sans effet sur les valeurs extraites."
+  },
+  {
+   "where": "PN-CDs_mixture, étape 2 heat, fill_fraction",
+   "issue": "Les auteurs ne donnent pas de taux de remplissage : seuls 10 mL de solution (réactifs) et un autoclave de 50 mL (étape 2) sont cités, chacun à sa place. Aucun pourcentage n'est écrit à la place des auteurs ; fill_fraction reste non cité."
+  },
+  {
+   "where": "PN-CDs_mixture, rôle du formamide",
+   "issue": "Rôle noté « precursor, solvent » : les auteurs disent avoir choisi le HEDP et le formamide comme précurseurs (voir l'annotation mecanisme_auteurs) et dissolvent HEDP et urée dans le formamide. Le contrôle de complétude du chargement, qui cherche un rôle « solvent » exact, ne compte plus ce solvant."
+  },
+  {
+   "where": "bCDs et gCDs, confocal",
+   "issue": "Le texte dit des bCDs qu'elles sont « mainly located in the cytoplasm » (cellules U20S), puis que les fluorescences bleue et verte sont « almost distributed on the cell membrane » ; le résultat retenu suit cette seconde phrase (citée) et signale la première. Pour les gCDs, « green emissions at a λEm of 488 nm » (probablement la longueur d'onde d'excitation) est repris tel quel dans les conditions."
+  },
+  {
+   "where": "bCDs et gCDs, Raman et FTIR",
+   "issue": "Raman : une valeur unique AD/AG ≈ 1,065 est donnée pour les deux fractions alors que les bandes D et G évoluent du bleu au vert. FTIR : le texte écrit « the bCDs and rCDs », « rCDs » est vraisemblablement une coquille pour gCDs (texte repris de Holá et al., 2017) ; l'absence de pics à 1360 et 1650 cm−1 est attribuée aux deux voies."
+  },
+  {
+   "where": "Photostabilité, bCDs et gCDs",
+   "issue": "Photostabilité (plusieurs heures d'irradiation UV) et conservation (plusieurs semaines) sont qualitatives et données pour « the separated fractions » / « the as-eluted bCDs and gCDs » : attribuées aux deux fractions sans durée, intensité ni conditions précises."
   }
  ]
 }
