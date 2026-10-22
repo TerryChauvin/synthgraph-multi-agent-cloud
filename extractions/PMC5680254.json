@@ -475,12 +475,6 @@
      "quote": "During the growth, the substrates are immersed facing down in a Teflon flask, sealed inside stainless steel autoclave reactor and placed in a preheated convection oven for 15 hours.",
      "parameters": [
       {
-       "name": "temperature",
-       "value_num": 358,
-       "unit": "K",
-       "quote": "At this pH and temperature range (358 K), there are very few positively charges Zn (II) complex species present in the growth solution."
-      },
-      {
        "name": "duration",
        "value_num": 15,
        "unit": "hours",
@@ -509,7 +503,8 @@
       "fill_fraction",
       "pressure",
       "volume",
-      "substrate_position_details"
+      "substrate_position_details",
+      "temperature"
      ]
     },
     {
@@ -643,6 +638,14 @@
      "unit": "mM",
      "parent_value": "none",
      "quote": "SEM images of NWs grown for different concentrations of ammonia: (a) 0 mM, (b) 10 mM, (c) 20 mM, (d) 30 mM, (e) 40 mM."
+    },
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 358,
+     "unit": "K",
+     "parent_value": "not_stated",
+     "quote": "At this pH and temperature range (358 K), there are very few positively charges Zn (II) complex species present in the growth solution."
     }
    ],
    "reagents": [
@@ -1160,22 +1163,24 @@
      "property": "threshold_voltage_variation",
      "value_num": -5.4,
      "unit": "V",
-     "quote": "0 | −5.4 ± 4.7 | 106–107 | 3.8 ± 3.3 | 4.3 ± 3.9 × 1016"
+     "quote": "0 | −5.4 ± 4.7 | 106–107 | 3.8 ± 3.3 | 4.3 ± 3.9 × 1016",
+     "value_text": "−5.4 ± 4.7"
     },
     {
      "property": "on_off_current_ratio",
-     "value_text": "106–107",
+     "value_text": "10^6–10^7",
      "quote": "0 | −5.4 ± 4.7 | 106–107 | 3.8 ± 3.3 | 4.3 ± 3.9 × 1016"
     },
     {
      "property": "field_effect_mobility",
      "value_num": 3.8,
      "unit": "cm2/Vs",
-     "quote": "0 | −5.4 ± 4.7 | 106–107 | 3.8 ± 3.3 | 4.3 ± 3.9 × 1016"
+     "quote": "0 | −5.4 ± 4.7 | 106–107 | 3.8 ± 3.3 | 4.3 ± 3.9 × 1016",
+     "value_text": "3.8 ± 3.3"
     },
     {
      "property": "free_charge_density",
-     "value_text": "4.3 ± 3.9 × 1016",
+     "value_text": "4.3 ± 3.9 × 10^16",
      "unit": "/cm3",
      "quote": "0 | −5.4 ± 4.7 | 106–107 | 3.8 ± 3.3 | 4.3 ± 3.9 × 1016"
     },
@@ -1227,22 +1232,24 @@
      "property": "threshold_voltage_variation",
      "value_num": -20.7,
      "unit": "V",
-     "quote": "20 | −20.7 ± 18 | 105–106 | 2 ± 2 | 8.3 ± 4 × 1016"
+     "quote": "20 | −20.7 ± 18 | 105–106 | 2 ± 2 | 8.3 ± 4 × 1016",
+     "value_text": "−20.7 ± 18"
     },
     {
      "property": "on_off_current_ratio",
-     "value_text": "105–106",
+     "value_text": "10^5–10^6",
      "quote": "20 | −20.7 ± 18 | 105–106 | 2 ± 2 | 8.3 ± 4 × 1016"
     },
     {
      "property": "field_effect_mobility",
      "value_num": 2,
      "unit": "cm2/Vs",
-     "quote": "20 | −20.7 ± 18 | 105–106 | 2 ± 2 | 8.3 ± 4 × 1016"
+     "quote": "20 | −20.7 ± 18 | 105–106 | 2 ± 2 | 8.3 ± 4 × 1016",
+     "value_text": "2 ± 2"
     },
     {
      "property": "free_charge_density",
-     "value_text": "8.3 ± 4 × 1016",
+     "value_text": "8.3 ± 4 × 10^16",
      "unit": "/cm3",
      "quote": "20 | −20.7 ± 18 | 105–106 | 2 ± 2 | 8.3 ± 4 × 1016"
     },
@@ -1289,22 +1296,24 @@
      "property": "threshold_voltage_variation",
      "value_num": -13,
      "unit": "V",
-     "quote": "40 | −13 ± 18 | 105–107 | 0.35 ± 0.3 | 2 ± 1 × 1017"
+     "quote": "40 | −13 ± 18 | 105–107 | 0.35 ± 0.3 | 2 ± 1 × 1017",
+     "value_text": "−13 ± 18"
     },
     {
      "property": "on_off_current_ratio",
-     "value_text": "105–107",
+     "value_text": "10^5–10^7",
      "quote": "40 | −13 ± 18 | 105–107 | 0.35 ± 0.3 | 2 ± 1 × 1017"
     },
     {
      "property": "field_effect_mobility",
      "value_num": 0.35,
      "unit": "cm2/Vs",
-     "quote": "40 | −13 ± 18 | 105–107 | 0.35 ± 0.3 | 2 ± 1 × 1017"
+     "quote": "40 | −13 ± 18 | 105–107 | 0.35 ± 0.3 | 2 ± 1 × 1017",
+     "value_text": "0.35 ± 0.3"
     },
     {
      "property": "free_charge_density",
-     "value_text": "2 ± 1 × 1017",
+     "value_text": "2 ± 1 × 10^17",
      "unit": "/cm3",
      "quote": "40 | −13 ± 18 | 105–107 | 0.35 ± 0.3 | 2 ± 1 × 1017"
     },
@@ -1320,7 +1329,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article fait croître des nanofils de ZnO par voie hydrothermale basse température (358 K, 15 h) directement sur une surface d'or sans couche de germination, à partir de nitrate de zinc et d'hexaméthylènetétramine (HMTA) en rapport 1:1, en ajoutant 0 à 40 mM d'hydroxyde d'ammonium. La concentration de NH4OH fait varier la densité de nanofils sur environ deux ordres de grandeur, et des transistors à effet de champ à nanofil unique montrent que la densité de porteurs libres augmente et la mobilité diminue avec NH4OH.",
+   "text": "L'article fait croître des nanofils de ZnO par voie hydrothermale basse température (15 h en autoclave ; la température n'est pas donnée dans la partie expérimentale) directement sur une surface d'or sans couche de germination, à partir de nitrate de zinc et d'hexaméthylènetétramine (HMTA) en rapport 1:1, en ajoutant 0 à 40 mM d'hydroxyde d'ammonium. La concentration de NH4OH fait varier la densité de nanofils sur environ deux ordres de grandeur selon les auteurs (1,7 ordre entre 10 et 40 mM d'après la Fig. 1f), et des transistors à effet de champ à nanofil unique montrent que la densité de porteurs libres augmente et la mobilité diminue avec NH4OH.",
    "quote": "A two order of magnitude change in ZnO NW density is demonstrated via careful control of the ammonium hydroxide concentration (NH4OH) in the solution."
   },
   {
@@ -1331,13 +1340,13 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Un seul paramètre de croissance est balayé : la concentration de NH4OH, de 0 à 40 mM par pas de 10 mM, les autres conditions étant constantes. Cinq échantillons donnent la densité (Fig. 1f) et le rapport d'aspect (Table 1). Trois d'entre eux (0, 20 et 40 mM) sont ensuite transformés en transistors pour relier la quantité de NH4OH au dopage et à la mobilité.",
+   "text": "Un seul paramètre de croissance est balayé : la concentration de NH4OH, de 0 à 40 mM par pas de 10 mM ; l'article ne dit pas expressément que les autres conditions de croissance sont identiques pour les cinq échantillons. Cinq échantillons donnent la densité (Fig. 1f) et le rapport d'aspect (Table 1). Trois d'entre eux (0, 20 et 40 mM) sont ensuite transformés en transistors pour relier la quantité de NH4OH au dopage et à la mobilité.",
    "quote": "In the experiments, the concentration of NH4OH is varied from 0 to 40 mM."
   },
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "De 10 à 40 mM de NH4OH, la densité lue sur la Fig. 1f passe d'environ 2×107 à environ 1×109 nanofils par cm2, soit presque deux ordres de grandeur ; sans NH4OH (0 mM), la densité (environ 4×108) est plus élevée qu'à 10 mM, donc non monotone. La longueur moyenne est de 4,6 à 4,8 µm entre 0 et 20 mM, puis chute à 3,4 µm (30 mM) et 2,2 µm (40 mM). Le rapport d'aspect à la pointe est maximal à 20 mM (30), celui de la base reste proche de 10. En transistor, la mobilité passe de 3,8 (0 mM) à 2 (20 mM) puis 0,35 cm2/Vs (40 mM) et la densité de charge libre de 4,3×1016 à 2×1017 cm−3."
+   "text": "De 10 à 40 mM de NH4OH, la densité lue sur la Fig. 1f passe d'environ 2×107 à environ 1×109 nanofils par cm2, soit environ 1,7 ordre de grandeur (les auteurs annoncent « deux ordres ») ; sans NH4OH (0 mM), la densité (environ 4×108) est plus élevée qu'à 10 mM, donc non monotone. La longueur moyenne est de 4,6 à 4,8 µm entre 0 et 20 mM, puis chute à 3,4 µm (30 mM) et 2,2 µm (40 mM). Le rapport d'aspect à la pointe est maximal à 20 mM (30), celui de la base reste proche de 10. En transistor, la mobilité passe de 3,8 (0 mM) à 2 (20 mM) puis 0,35 cm2/Vs (40 mM) et la densité de charge libre de 4,3×1016 à 2×1017 cm−3."
   },
   {
    "type": "tendance_observee",
@@ -1372,12 +1381,12 @@
    "type": "mecanisme_auteurs",
    "route": "ZnO_40mM",
    "text": "Pour la densité, les auteurs expliquent que peu de complexes Zn(II) positifs existent à pH 6,8 (10 mM de NH4OH), d'où peu de sites de nucléation ; à 40 mM le pH augmente à environ 7, la solubilité du zinc diminue et la sursaturation devient assez grande pour amorcer un grand nombre de noyaux dans la solution et sur le substrat.",
-   "quote": "In fact, this increase of pH leads to the increase of Zn (II) in the solution, which will largely decrease the Zn solubility and lead to a supersaturation large enough to initiate large number of nuclei both in the solution and onto the substrate."
+   "quote": "At this pH and temperature range (358 K), there are very few positively charges Zn (II) complex species present in the growth solution. Such a low concentration of the ZnO precursors results into the low density of nucleation sites for the growth of ZnO NWs (Fig. 2a). When increasing the NH4OH concentration from 10 to 40 mM, the pH of the system increases from 6.8 to around 7. Although the change in pH is very low (between 6.8 and 7), there is an exponential change of the Zn (II) species in this pH regime. In fact, this increase of pH leads to the increase of Zn (II) in the solution, which will largely decrease the Zn solubility and lead to a supersaturation large enough to initiate large number of nuclei both in the solution and onto the substrate."
   },
   {
    "type": "mecanisme_analyse",
    "route": "ZnO_0mM",
-   "text": "Hypothèse : à 85 °C (358 K), le HMTA s'hydrolyse lentement et libère NH3, ce qui élève le pH localement et permet la précipitation de Zn(OH)2 puis sa déshydratation en ZnO sur l'or ; le HMTA, en s'adsorbant sur les faces latérales non polaires, favoriserait la croissance anisotrope selon l'axe c. L'article ne dit pas pourquoi la densité à 0 mM (environ 4×108 cm−2) dépasse celle à 10 mM (environ 2×107 cm−2) : on peut supposer, sans preuve dans l'article, une différence de nucléation sur l'or entre une solution sans NH3 ajouté et une solution faiblement ammoniaquée où le zinc est davantage complexé."
+   "text": "Hypothèse : le HMTA s'hydrolyse lentement à chaud en libérant NH3 (et du formaldéhyde), ce qui fait monter la concentration de OH− et la sursaturation de ZnO à partir de Zn2+ (ion hexaaqua majoritaire vers pH 6,5–7) ; ZnO germe sur l'or (111) puis croît selon l'axe c. Le HMTA servirait surtout à régler la sursaturation par libération lente de base, et non à coiffer les faces latérales. L'ajout de NH3 élève le pH initial et la sursaturation, donc la densité de germes, mais complexe aussi une partie du zinc. L'article n'explique pas pourquoi la densité à 0 mM (environ 4×108 cm−2) dépasse celle à 10 mM (environ 2×107 cm−2) : ce minimum reste inexpliqué."
   },
   {
    "type": "mecanisme_analyse",
@@ -1404,6 +1413,31 @@
    "type": "securite_analyse",
    "route": "NWFET_0mM",
    "text": "Les nanofils de ZnO en suspension sont des nano-objets à ne pas inhaler (poudre, gouttes séchées) ; l'isopropanol et l'acétone sont inflammables ; les résines de lithographie électronique et leurs révélateurs demandent la hotte ; l'évaporation par faisceau d'électrons met en jeu haute tension et rayons X."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Au_Si_substrate",
+   "text": "Le texte écrit le dépôt de l'or (~200 nm) puis du titane (~100 nm) « pour améliorer l'adhérence entre l'or et le silicium » : une couche d'accroche ne peut se placer que sous l'or, l'ordre réel est donc probablement Ti puis Au ; suivre la lettre ferait croître ZnO sur du titane oxydé et non sur l'or (111). L'ordre du texte est conservé dans les étapes ; une épaisseur de Ti de 100 nm est aussi inhabituelle pour une couche d'accroche."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_0mM",
+   "text": "Sans les concentrations de Zn(NO3)2 et de HMTA (seulement « 1:1 »), le volume, le solvant et la concentration de la solution de NH4OH, les densités de nanofils de la Fig. 1f ne sont pas reproductibles telles qu'écrites : en croissance sans germe sur or, la densité dépend fortement de la concentration en précurseurs (Xu et al., J. Mater. Res. 2008, DOI 10.1557/JMR.2008.0274, non vérifié sur Crossref)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_40mM",
+   "text": "Dans la discussion du mécanisme, l'affirmation qu'il existe « très peu » d'espèces Zn(II) positives à pH 6,8 est contredite par la spéciation du zinc à 85 °C, où l'ion [Zn(H2O)6]2+ domine sous pH ≈ 8 (Villafuerte et al., Nanoscale Adv. 2022) ; la phrase suivante (plus de Zn(II) en solution, donc moins de solubilité) se contredit elle-même. Le « changement exponentiel » entre pH 6,8 et 7 correspond à un facteur d'environ 2,5 sur la solubilité de ZnO. Le sens (plus de sursaturation, plus de germes) reste défendable, mais l'argument des auteurs ne doit pas être pris comme établi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_40mM",
+   "text": "Les auteurs annoncent une variation de densité de « deux ordres de grandeur » ; la Fig. 1f en montre environ 1,7 entre 10 et 40 mM et seulement un facteur 2,5 par rapport à la croissance sans NH4OH (0 mM). L'amplitude annoncée repose sur le minimum isolé à 10 mM, sans répétition."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NWFET_0mM",
+   "text": "L'équation 10 de l'article divise par 2πr²qL alors que le volume du fil est πr²L : les densités de porteurs de la Table 2 sont donc probablement sous-estimées d'un facteur 2 si l'équation a été appliquée telle quelle (calcul à rebours du critique sur les moyennes de VTH, indicatif). La tendance avec la concentration de NH4OH n'en est pas modifiée ; les valeurs de la Table 2 sont conservées telles qu'écrites."
   }
  ],
  "method_sources": [],
@@ -1413,8 +1447,8 @@
    "issue": "Avertissement du contrôle attendu : NH4OH est absent du protocole de la voie de base (0 mM, aucun ajout) ; la variation « additive » (parent_value none) et le réactif ajouté dans la branche suivent la règle du RUNBOOK pour un additif absent du parent. Les auteurs parlent de « additive » pour NH4OH."
   },
   {
-   "where": "ZnO_0mM étape 2, temperature",
-   "issue": "La température de croissance (358 K) n'apparaît pas dans la section Experimental part, seulement dans la discussion du mécanisme : « At this pH and temperature range (358 K) » à propos de la solution de croissance à 10 mM de NH4OH. Lecture retenue : température de croissance de tous les échantillons (le four n'est pas autrement décrit)."
+   "where": "ZnO_0mM étape 2, temperature (retirée) ; ZnO_10mM, variation temperature",
+   "issue": "La section Experimental part ne donne aucune température de four (« preheated convection oven for 15 hours »). 358 K n'apparaît que dans la discussion du mécanisme : « At this pH and temperature range (358 K) », à propos de la solution de croissance à 10 mM de NH4OH. La température est donc déclarée non indiquée pour la voie de base ZnO_0mM (not_stated) et rattachée seulement à ZnO_10mM (variation, parent_value not_stated) ; il est plausible mais non écrit que tous les échantillons aient été cultivés à 358 K."
   },
   {
    "where": "Au_Si_substrate étapes 6 et 7",
@@ -1442,7 +1476,7 @@
   },
   {
    "where": "NWFET_*, on_off_current_ratio et free_charge_density",
-   "issue": "Dans le texte, les exposants sont aplatis (« 106–107 », « 4.3 ± 3.9 × 1016 », « 2 ± 1 × 1017 ») : lus 10^6–10^7, 4,3×10^16 et 2×10^17 cm−3 (le texte de conclusion écrit « 4.3 × 1016 to 2 × 1017 cm−3 »). Les valeurs sont gardées en value_text tel quel."
+   "issue": "Dans le texte de l'article les exposants sont aplatis (« 106–107 », « 4.3 ± 3.9 × 1016 », « 2 ± 1 × 1017 »), alors que le XML source porte des exposants (10<sup>6</sup>–10<sup>7</sup>, ×10<sup>16</sup>, ×10<sup>17</sup>). Les citations restent telles que dans corpus/text ; les value_text sont écrits avec exposants lisibles (10^6–10^7, 4.3 ± 3.9 × 10^16, 2 ± 1 × 10^17). Le texte de conclusion écrit « 4.3 × 1016 to 2 × 1017 cm−3 »."
   },
   {
    "where": "NWFET_*, Table 2 VTH",

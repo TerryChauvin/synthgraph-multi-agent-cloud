@@ -1,0 +1,146 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5680254</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5680254 — A facile hydrothermal approach for the density tunable growth of ZnO nanowires and their electrical characterizations.</h1>
+<h2>Voie : Au_Si_substrate</h2>
+<pre class="mermaid">flowchart LR
+  R15215([&quot;silicon wafer (100)&lt;br/&gt;4 cm²&quot;]):::reactif
+  R15215 --&gt;|&quot;substrate&quot;| S18099
+  R15216([&quot;sulfuric acid&lt;br/&gt;1:1 with H2O2 (piranha soluti…&quot;]):::reactif
+  R15216 --&gt;|&quot;acid&quot;| S18099
+  R15217([&quot;hydrogen peroxide&lt;br/&gt;1:1 with H2SO4 (piranha solut…&quot;]):::reactif
+  R15217 --&gt;|&quot;oxidant&quot;| S18099
+  R15218([&quot;hydrofluoric acid&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15218 --&gt;|&quot;etchant&quot;| S18099
+  R15219([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15219 --&gt;|&quot;wash&quot;| S18099
+  R15220([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15220 --&gt;|&quot;gas&quot;| S18099
+  R15221([&quot;gold&lt;br/&gt;200 nm&quot;]):::reactif
+  R15221 --&gt;|&quot;precursor&quot;| S18099
+  R15222([&quot;titanium&lt;br/&gt;100 nm&quot;]):::reactif
+  R15222 --&gt;|&quot;precursor&quot;| S18099
+  S18099[&quot;&lt;b&gt;1. clean&lt;/b&gt;&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S18099 --&gt; S18100
+  S18100[&quot;&lt;b&gt;2. etch&lt;/b&gt;&lt;br/&gt;duration : 2 min&quot;]:::etape
+  S18100 --&gt; S18101
+  S18101[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DI water&quot;]:::etape
+  S18101 --&gt; S18102
+  S18102[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;atmosphere : nitrogen gas&quot;]:::etape
+  S18102 --&gt; S18103
+  S18103[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 200 °C&quot;]:::etape
+  S18103 --&gt; S18104
+  S18104[&quot;&lt;b&gt;6. deposit&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S18104 --&gt; S18105
+  S18105[&quot;&lt;b&gt;7. deposit&lt;/b&gt;&quot;]:::etape
+  S18105 --&gt; M
+  M{{&quot;Au/Ti-coated (100) Si substrate with (111)-orient…&lt;br/&gt;&quot;}}:::materiau
+  O73405[&quot;Au_film_orientation : (111)&quot;]:::resultat
+  M -.-&gt; O73405
+  O73406[&quot;Au_film_RMS_roughness : 2 nm&quot;]:::resultat
+  M -.-&gt; O73406
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZnO_0mM</h2>
+<pre class="mermaid">flowchart LR
+  R15223([&quot;Au/Ti-coated Si substrate (route Au_Si_subst…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15223 --&gt;|&quot;intermediate&quot;| S18106
+  R15224([&quot;zinc nitrate hexahydrate&lt;br/&gt;1:1 ratio with HMTA&quot;]):::reactif
+  R15224 --&gt;|&quot;precursor&quot;| S18106
+  R15225([&quot;hexamethylenetetramine (HMTA)&lt;br/&gt;1:1 ratio with zinc nitrate h…&quot;]):::reactif
+  R15225 --&gt;|&quot;precursor&quot;| S18106
+  R15226([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15226 --&gt;|&quot;wash&quot;| S18106
+  R15227([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15227 --&gt;|&quot;gas&quot;| S18106
+  S18106[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;ratio : 1:1 ratio&quot;]:::etape
+  S18106 --&gt; S18107
+  S18107[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;duration : 15 hours&quot;]:::etape
+  S18107 --&gt; S18108
+  S18108[&quot;&lt;b&gt;3. cool&lt;/b&gt;&lt;br/&gt;cooling_rate : cools down naturally&quot;]:::etape
+  S18108 --&gt; S18109
+  S18109[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DI water&quot;]:::etape
+  S18109 --&gt; S18110
+  S18110[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;atmosphere : N2 gas flow&quot;]:::etape
+  S18110 --&gt; M
+  M{{&quot;ZnO nanowires on seedless Au surface&lt;br/&gt;ZnO&quot;}}:::materiau
+  O73407[&quot;NW_density : 4e+08 /cm2&quot;]:::resultat
+  M -.-&gt; O73407
+  O73408[&quot;NW_average_length : 4.6 µm&quot;]:::resultat
+  M -.-&gt; O73408
+  O73409[&quot;aspect_ratio_tip : 22&quot;]:::resultat
+  M -.-&gt; O73409
+  O73410[&quot;aspect_ratio_base : 9&quot;]:::resultat
+  M -.-&gt; O73410
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11694{{&quot;ZnO_0mM&quot;}}:::materiau
+  B11695[&quot;ZnO_10mM&quot;]:::etape
+  B11694 --&gt;|&quot;additive = 10 mM&lt;br/&gt;temperature = 358 K&quot;| B11695
+  B11696[&quot;ZnO_20mM&quot;]:::etape
+  B11694 --&gt;|&quot;additive = 20 mM&quot;| B11696
+  B11697[&quot;ZnO_30mM&quot;]:::etape
+  B11694 --&gt;|&quot;additive = 30 mM&quot;| B11697
+  B11698[&quot;ZnO_40mM&quot;]:::etape
+  B11694 --&gt;|&quot;additive = 40 mM&quot;| B11698
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : NWFET_0mM</h2>
+<pre class="mermaid">flowchart LR
+  R15232([&quot;ZnO nanowires (route ZnO_0mM)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15232 --&gt;|&quot;intermediate&quot;| S18111
+  R15233([&quot;highly doped Si substrate with 170 nm therma…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15233 --&gt;|&quot;substrate&quot;| S18111
+  R15234([&quot;isopropanol (IPA)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15234 --&gt;|&quot;solvent&quot;| S18111
+  R15235([&quot;e-beam resist&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15235 --&gt;|&quot;polymer&quot;| S18111
+  R15236([&quot;titanium&lt;br/&gt;100 nm&quot;]):::reactif
+  R15236 --&gt;|&quot;electrode&quot;| S18111
+  R15237([&quot;aluminium&lt;br/&gt;400 nm&quot;]):::reactif
+  R15237 --&gt;|&quot;electrode&quot;| S18111
+  R15238([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15238 --&gt;|&quot;wash&quot;| S18111
+  S18111[&quot;&lt;b&gt;1. anneal&lt;/b&gt;&lt;br/&gt;temperature : 450 °C&lt;br/&gt;duration : 30 min&lt;br/&gt;atmosphere : air ambient&quot;]:::etape
+  S18111 --&gt; S18112
+  S18112[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 5–10 sec&quot;]:::etape
+  S18112 --&gt; S18113
+  S18113[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&quot;]:::etape
+  S18113 --&gt; S18114
+  S18114[&quot;&lt;b&gt;4. pattern&lt;/b&gt;&quot;]:::etape
+  S18114 --&gt; S18115
+  S18115[&quot;&lt;b&gt;5. deposit&lt;/b&gt;&lt;br/&gt;pressure : vacuum ≤10−6 mbar&lt;br/&gt;thickness_ti : 100 nm&lt;br/&gt;thickness_al : 400 nm&quot;]:::etape
+  S18115 --&gt; S18116
+  S18116[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : acetone&quot;]:::etape
+  S18116 --&gt; S18117
+  S18117[&quot;&lt;b&gt;7. anneal&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S18117 --&gt; M
+  M{{&quot;bottom-gate single ZnO nanowire field-effect tran…&lt;br/&gt;&quot;}}:::materiau
+  O73429[&quot;threshold_voltage_variation : -5.4 V&quot;]:::resultat
+  M -.-&gt; O73429
+  O73430[&quot;on_off_current_ratio : 10^6–10^7&quot;]:::resultat
+  M -.-&gt; O73430
+  O73431[&quot;field_effect_mobility : 3.8 cm2/Vs&quot;]:::resultat
+  M -.-&gt; O73431
+  O73432[&quot;free_charge_density : 4.3 ± 3.9 × 10^16 /cm3&quot;]:::resultat
+  M -.-&gt; O73432
+  O73433[&quot;number_of_devices_measured : 5&quot;]:::resultat
+  M -.-&gt; O73433
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B11699{{&quot;NWFET_0mM&quot;}}:::materiau
+  B11700[&quot;NWFET_20mM&quot;]:::etape
+  B11699 --&gt;|&quot;ZnO nanowires (route ZnO… = replaced by ZnO nanowire…&quot;| B11700
+  B11701[&quot;NWFET_40mM&quot;]:::etape
+  B11699 --&gt;|&quot;ZnO nanowires (route ZnO… = replaced by ZnO nanowire…&quot;| B11701
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
