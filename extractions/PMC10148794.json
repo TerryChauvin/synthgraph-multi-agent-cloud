@@ -55,6 +55,24 @@
    "defined_in": "Methods, Thin-film fabrication",
    "route": "NC_solid_film",
    "results_in": []
+  },
+  {
+   "sample": "NC5.1",
+   "defined_in": "Peer Review File, réponse aux relecteurs (Fig. R1a)",
+   "route": null,
+   "why": "Lot de nanocristaux un peu plus petit que NC5 (NC5.5) : préparation non décrite, apparu seulement dans la réponse aux relecteurs ; pas de protocole pour créer une voie.",
+   "results_in": [
+    "Fig. R1 (réponse aux relecteurs)"
+   ]
+  },
+  {
+   "sample": "mélange NC5.1 + NC5.5",
+   "defined_in": "Peer Review File, réponse aux relecteurs (Fig. R1a)",
+   "route": null,
+   "why": "Mélange volontaire de deux lots de tailles voisines, fait pour tester l'effet de la distribution de tailles ; proportions et protocole non décrits, pas de voie.",
+   "results_in": [
+    "Fig. R1 (réponse aux relecteurs)"
+   ]
   }
  ],
  "routes": [
@@ -383,7 +401,7 @@
     {
      "order": 7,
      "action": "add",
-     "description": "Ajouter de l'acétate d'éthyle au brut réactionnel (rapport volumique 2:1) jusqu'à turbidité.",
+     "description": "Ajouter de l'acétate d'éthyle au brut réactionnel (rapport volumique 2:1) ; le mélange devient trouble.",
      "quote": "To separate the NCs, ethyl acetate was added to the crude solution in a volume ratio of 2:1 and the mixture became turbid.",
      "parameters": [
       {
@@ -394,7 +412,8 @@
      ],
      "equipment": [],
      "not_stated": [
-      "volume"
+      "volume",
+      "end_criterion"
      ]
     },
     {
@@ -515,6 +534,18 @@
      "value_num": 1.7,
      "unit": "meV",
      "quote": "be ~2.5 ps with the corresponding energy of ~1.7 meV in Fig. 2c, for sample NC5."
+    },
+    {
+     "property": "biexciton_binding_energy",
+     "value_num": 50,
+     "unit": "meV",
+     "quote": "binding energy is then estimated to be ~50 meV at 12 K"
+    },
+    {
+     "property": "exciton_beating_oscillation_period",
+     "value_num": 2.5,
+     "unit": "ps",
+     "quote": "an oscillation period of ~2.5 ps"
     }
    ],
    "missing_fields": [
@@ -686,12 +717,21 @@
        "value_num": 0.1,
        "unit": "M",
        "quote": "a 0.1 M Cs-Octanoate stock solution was prepared by dissolving Cs2CO3 in octanoic acid."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient conditions",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
       }
      ],
      "equipment": [],
      "not_stated": [
       "duration",
-      "temperature",
       "volume"
      ]
     },
@@ -706,12 +746,21 @@
        "value_num": 5,
        "unit": "mL",
        "quote": "a PbBr2 stock solution was prepared by dissolving 225 mg of PbBr2, 2.9 g of trioctylphosphine oxide along with 0.2 M of octylphosphonic acid in 5 mL of anhydrous toluene."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient conditions",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
       }
      ],
      "equipment": [],
      "not_stated": [
-      "duration",
-      "temperature"
+      "duration"
      ]
     },
     {
@@ -725,6 +774,16 @@
        "value_num": 0.05,
        "unit": "M",
        "quote": "A 0.05 M solution of dimethyldidodecylammonium bromide (DDAB) was prepared by dissolving DDAB in anhydrous toluene."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient conditions",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
       }
      ],
      "equipment": [],
@@ -744,6 +803,16 @@
        "value_num": 0.5,
        "unit": "mL",
        "quote": "To prepare the NCs, 0.5 mL of the PbBr2 stock solution was loaded into a vial under vigorous stirring."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient conditions",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
       }
      ],
      "equipment": [
@@ -754,8 +823,7 @@
       }
      ],
      "not_stated": [
-      "stirring_speed",
-      "temperature"
+      "stirring_speed"
      ]
     },
     {
@@ -769,6 +837,16 @@
        "value_num": 55,
        "unit": "μL",
        "quote": "55 μL of Cs-Octanoate stock solution was then swiftly injected."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient conditions",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
       }
      ],
      "equipment": [],
@@ -792,6 +870,11 @@
        "name": "temperature",
        "value_text": "room temperature",
        "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient conditions",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
       }
      ],
      "equipment": [],
@@ -808,6 +891,16 @@
        "value_num": 155,
        "unit": "μL",
        "quote": "After the desired growth period (30 s, 2 min and 30 min for NC6, NC8 and NC12, respectively), 155 μL of DDAB solution was injected and the solution was left to stir for further 5 min."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient conditions",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
       }
      ],
      "equipment": [],
@@ -826,6 +919,16 @@
        "value_num": 5,
        "unit": "min",
        "quote": "After the desired growth period (30 s, 2 min and 30 min for NC6, NC8 and NC12, respectively), 155 μL of DDAB solution was injected and the solution was left to stir for further 5 min."
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "ambient conditions",
+       "quote": "The synthesis of NC6, NC8, and NC12 was performed according to a previously reported method under room temperature ambient conditions."
       }
      ],
      "equipment": [],
@@ -1094,16 +1197,15 @@
      "name": "glass substrate",
      "formula": null,
      "role": "substrate",
-     "amount": 10,
-     "unit": "mm",
-     "quote": "Specifically, 20 μL of the precursor is dropped onto a 10 mm × 10 mm glass substrate for spin-coating with a speed of 4,000 r.p.m. followed by an annealing process at 100 °C for 10 min."
+     "quote": "Specifically, 20 μL of the precursor is dropped onto a 10 mm × 10 mm glass substrate for spin-coating with a speed of 4,000 r.p.m. followed by an annealing process at 100 °C for 10 min.",
+     "amount_text": "10 mm × 10 mm"
     }
    ],
    "steps": [
     {
      "order": 1,
      "action": "dissolve",
-     "description": "Dissoudre CsBr et PbBr2 (rapport molaire 1:1) dans le DMSO à 0,2 M pour former le précurseur.",
+     "description": "Dissoudre CsBr et PbBr2 (rapport molaire 1:1) dans le DMSO à 0,2 M pour former le précurseur, en boîte à gants sous azote.",
      "quote": "For the polycrystalline thin-film, CsBr and PbBr2 with a stoichiometric molar ratio of 1:1 are dissolved in dimethyl sulfoxide (DMSO) with a concentration of 0.2 M to form a precursor, which is then used for film deposition.",
      "parameters": [
       {
@@ -1116,6 +1218,11 @@
        "value_num": 0.2,
        "unit": "M",
        "quote": "For the polycrystalline thin-film, CsBr and PbBr2 with a stoichiometric molar ratio of 1:1 are dissolved in dimethyl sulfoxide (DMSO) with a concentration of 0.2 M to form a precursor, which is then used for film deposition."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "nitrogen-filled glove box",
+       "quote": "All procedures are done in a nitrogen-filled glove box, and the as-deposited thin-film is of ~40 nm thick."
       }
      ],
      "equipment": [],
@@ -1127,7 +1234,7 @@
     {
      "order": 2,
      "action": "deposit",
-     "description": "Déposer 20 μL de précurseur sur un substrat de verre 10 mm × 10 mm et le centrifuger (spin-coating) à 4 000 r.p.m.",
+     "description": "Déposer 20 μL de précurseur sur un substrat de verre 10 mm × 10 mm et le centrifuger (spin-coating) à 4 000 r.p.m, en boîte à gants sous azote.",
      "quote": "Specifically, 20 μL of the precursor is dropped onto a 10 mm × 10 mm glass substrate for spin-coating with a speed of 4,000 r.p.m. followed by an annealing process at 100 °C for 10 min.",
      "parameters": [
       {
@@ -1141,6 +1248,11 @@
        "value_num": 4000,
        "unit": "r.p.m.",
        "quote": "Specifically, 20 μL of the precursor is dropped onto a 10 mm × 10 mm glass substrate for spin-coating with a speed of 4,000 r.p.m. followed by an annealing process at 100 °C for 10 min."
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "nitrogen-filled glove box",
+       "quote": "All procedures are done in a nitrogen-filled glove box, and the as-deposited thin-film is of ~40 nm thick."
       }
      ],
      "equipment": [
@@ -1323,22 +1435,22 @@
   {
    "type": "mecanisme_analyse",
    "route": "NC5",
-   "text": "Probablement, Cs2CO3 réagit avec l'acide oléique pour former le Cs-oléate soluble ; l'injection rapide dans la solution chaude de Pb(II) et de bromure déclenche une nucléation brève, et l'arrêt dans un bain de glace après 15 s limite la croissance, d'où des cristaux de ≈ 5 nm. Le rôle de ZnBr2 n'est pas précisé par les auteurs : il fournit vraisemblablement du bromure en excès (passivation de surface), hypothèse non vérifiée dans l'article."
+   "text": "Hypothèse : Cs2CO3 réagit avec l'acide oléique pour former le Cs-oléate soluble (avec dégagement de CO2 et d'eau) ; dans la solution chaude de Pb(II), très riche en bromure (Br/Pb calculé ≈ 10 d'après les quantités de l'article), l'injection du Cs-oléate forme des amas de CsPbBr3. La taille finale serait fixée surtout par l'équilibre entre le potentiel chimique du bromure et la température (régime décrit par Dong et collaborateurs, 2018, et Atteberry et collaborateurs, 2024), et pas seulement par l'arrêt cinétique dans un bain de glace après 15 s, qui fige cet état. Le rôle de ZnBr2 n'est pas précisé par les auteurs : il serait ici une source de bromure en excès plutôt qu'un dopant (hypothèse, non vérifiée dans l'article ; le zinc n'est pas dosé)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "NC6",
-   "text": "On attend une cristallisation quasi instantanée à température ambiante à l'injection du Cs-octanoate dans PbBr2 ; TOPO et l'acide octylphosphonique stabilisent la surface pendant la croissance, et le DDAB ajouté après la période de croissance arrête celle-ci en passivant la surface (échange de ligand). La taille dépend donc de la durée avant l'ajout de DDAB (30 s, 2 min, 30 min)."
+   "text": "On attend une cristallisation rapide à température ambiante à l'injection du Cs-octanoate dans PbBr2 ; TOPO et acide octylphosphonique règlent surtout la cinétique (rayon critique, vitesse de croissance, d'après Brown et collaborateurs, 2021), et le DDAB ajouté après la période de croissance arrête celle-ci en passivant la surface. La surface finale, après purification, serait surtout passivée par le DDAB, avec peu de phosphonate restant (Hooper et collaborateurs, 2021) ; la taille dépend de la durée avant l'ajout de DDAB (30 s, 2 min, 30 min)."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les sels de plomb (PbBr2) sont toxiques (reprotoxiques, cumulatifs) : manipuler en boîte à gants ou sous hotte avec gants. Le dégazage sous vide à 100 °C et le chauffage à 170 °C de l'octadécène et de l'oléylamine demandent une verrerie intacte et un montage sous azote ; la poudre de Cs2CO3 est irritante ; le toluène et l'acétate d'éthyle sont inflammables et le DMSO traverse la peau en entraînant les solutés. L'article ne mentionne aucune précaution."
+   "text": "Les sels de plomb (PbBr2) sont toxiques (reprotoxiques, cumulatifs) : manipuler en boîte à gants ou sous hotte avec gants. Le dégazage sous vide à 100 °C (moussage et dégagement de CO2 avec Cs2CO3 dans l'acide oléique), le chauffage à 170 °C de l'octadécène et de l'oléylamine et l'injection rapide à 170 °C (projections possibles) demandent une verrerie intacte, un écran et un montage sous azote ; la poudre de Cs2CO3 est irritante ; le toluène et l'acétate d'éthyle sont inflammables et le DMSO traverse la peau en entraînant les solutés. L'article ne mentionne aucune précaution."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Annexe absente du dépôt : le fichier « Source Data » (données brutes des figures 2 et 3) cité dans les légendes n'est pas dans le corpus ; les valeurs de durée de vie de spin (Fig. 3b) et de période d'oscillation par taille (Fig. 2j) ne sont donc pas reprises. Pour la synthèse : NC6, NC8 et NC12 renvoient à une méthode publiée pour les centrifugations (conditions non données), les quantités de Cs2CO3 et d'acide octanoïque du stock de Cs-octanoate sont absentes, la température après l'injection pour NC5 n'est pas écrite, et les fournisseurs et puretés des réactifs ne sont pas cités."
+   "text": "Annexe absente du dépôt : le fichier « Source Data » (données brutes des figures 2 et 3) cité dans les légendes n'est pas dans le corpus ; les valeurs de durée de vie de spin (Fig. 3b) et de période d'oscillation par taille (Fig. 2j) ne sont donc pas reprises. Pour la synthèse : NC6, NC8 et NC12 renvoient à une méthode publiée pour les centrifugations (conditions non données), les quantités de Cs2CO3 et d'acide octanoïque du stock de Cs-octanoate sont absentes, la température après l'injection pour NC5 n'est pas écrite, et les fournisseurs et puretés des réactifs ne sont pas cités. Fig. 3b (durées de vie de spin selon la température) n'est pas reprise en valeurs chiffrées : seuls les maxima écrits dans le texte le sont."
   },
   {
    "type": "limite_reproductibilite",
@@ -1350,6 +1462,21 @@
    "route": "NC_solid_film",
    "text": "L'article ne dit pas quelle taille de nanocristaux sert à chaque film (« NC solids »), ni la nature du substrat ni la concentration du colloïde ; seule la vitesse de rotation (500–800 r.p.m.) est donnée.",
    "quote": "For the NC solids, pre-synthesized colloidal CsPbBr3 NCs are directly used for spin-coating with a speed of 500–800 r.p.m., and the resultant thickness is tens of nanometers."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NC5",
+   "text": "L'énergie de liaison du biexciton (~50 meV à 12 K) ne découle pas des positions écrites par les auteurs (exciton ≈ 2,46 eV, biexciton ≈ 2,39 eV, soit ≈ 60 à 70 meV) et dépasse les valeurs mesurées sur particule unique (de l'ordre de 10 meV selon une étude de spectroscopie de nanocristaux d'environ 6 nm, PMC8717625) ; Ashner et collaborateurs (2019) notent que le spectre d'ensemble tend à surestimer cette liaison. Pour la synthèse : le Cs-oléate est seulement chauffé à 120 °C sans que l'article dise que la solution est devenue limpide, aucune diffraction n'est donnée pour NC5 (film de mauvaise qualité), et le zinc résiduel de l'excès de ZnBr2 n'est pas dosé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NC6",
+   "text": "Le stock de PbBr2 est ambigu : l'acide octylphosphonique « 0,2 M » est donné sans masse, et « 5 mL de toluène » ne dit pas si c'est le volume final avec 2,9 g de TOPO, d'où une concentration en plomb d'environ 0,123 M ou 0,074 M selon la lecture. Les trois pics de diffraction (15°, 21°, 31°) ne distinguent pas la phase orthorhombique de la phase cubique ; l'indexation orthorhombique reste une attente de la littérature (Cottingham et Brutchey, 2016), non démontrée par ces pics."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La série NC5 → NC12 mélange deux synthèses : NC5 vient d'une injection à chaud (OA/OAm, excès de ZnBr2, structure fine lue sur la carte de battements) et NC6, NC8, NC12 d'une synthèse à température ambiante avec TOPO (structure fine tirée d'une simulation) ; seule la série NC6 / NC8 / NC12, où la durée de croissance est la seule variable, est un essai à une variable. Pour le film PTF, la pureté de phase n'est pas démontrée : les trois pics ne distinguent pas CsPbBr3 orthorhombique et cubique, et la présence minoritaire de phases secondaires (Cs4PbBr6, CsPb2Br5) n'est pas exclue."
   }
  ],
  "method_sources": [
@@ -1396,6 +1523,22 @@
   {
    "where": "NC5 step 8",
    "issue": "La force centrifuge est écrite « 11,627 × g » (virgule de milliers) ; saisie 11627 × g."
+  },
+  {
+   "where": "NC5 step 7",
+   "issue": "L'article dit « the mixture became turbid » après ajout d'acétate d'éthyle (rapport 2:1) ; il ne dit pas que l'ajout s'arrête à la turbidité. Critère d'arrêt déclaré non cité ; le sens du rapport (acétate : brut) n'est pas écrit non plus."
+  },
+  {
+   "where": "NC5 outcomes (biexciton_binding_energy, exciton_beating_oscillation_period)",
+   "issue": "Ces deux valeurs viennent du fichier Peer Review (réponse aux relecteurs) pour l'énergie de liaison, et du texte principal pour la période (~2,5 ps) ; l'échantillon n'est nommé NC5 que dans la réponse aux relecteurs. La liaison du biexciton (~50 meV) est incohérente avec les positions écrites par les auteurs (exciton ~2,46 eV, biexciton ~2,39 eV, soit ~70 meV) : valeur de l'article gardée telle quelle."
+  },
+  {
+   "where": "NC6/NC8/NC12 étapes 1 à 8",
+   "issue": "La phrase « under room temperature ambient conditions » est générale pour la synthèse ; elle est reportée en température et atmosphère sur les étapes 1 à 8. Les étapes 9 (centrifugations, renvoi à la méthode publiée) et 10 (stockage au réfrigérateur) ne sont pas couvertes explicitement."
+  },
+  {
+   "where": "PTF étapes 1 et 2",
+   "issue": "« All procedures are done in a nitrogen-filled glove box » : atmosphère reportée sur les trois étapes."
   }
  ]
 }
