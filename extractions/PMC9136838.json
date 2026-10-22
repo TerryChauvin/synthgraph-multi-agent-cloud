@@ -23,15 +23,40 @@
    "succeeded": true,
    "reagents": [
     {
+     "name": "choline chloride",
+     "formula": "C5H14ClNO",
+     "role": "solvent",
+     "quote": "The DES was prepared by mixing malonic acid and choline chloride in a 1:1 molar ratio.",
+     "purity": "98%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Choline chloride (Sigma-Aldrich, 98%)",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "malonic acid",
+     "formula": "CH2(COOH)2",
+     "role": "solvent",
+     "quote": "The DES was prepared by mixing malonic acid and choline chloride in a 1:1 molar ratio.",
+     "purity": "99.5%",
+     "supplier": "Alfa Aesar",
+     "supplier_quote": "Malonic acid CH2(COOH)2 (Alfa Aesar, 99.5%), LaCl3 (Alfa Aesar, 99.9%), CoCl2 (Alfa Aesar, 97%), NiCl2 (Alfa Aesar, 98%), Mn2O3 (Sigma-Aldrich, 99.9%) were used as received without any further purification.",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
      "name": "deep eutectic solvent (choline chloride : malonic acid, 1:1 molar ratio)",
      "formula": null,
      "role": "solvent",
      "quote": "0.7158 g of LaCl3 and 0.2304 g Mn2O3 in 87 g of the solvent for LaMnO3",
      "amount": 87,
      "unit": "g",
-     "purity": "choline chloride 98% ; malonic acid 99.5%",
-     "supplier": "Sigma-Aldrich (choline chloride) ; Alfa Aesar (malonic acid)",
-     "supplier_quote": "Malonic acid CH2(COOH)2 (Alfa Aesar, 99.5%), LaCl3 (Alfa Aesar, 99.9%), CoCl2 (Alfa Aesar, 97%), NiCl2 (Alfa Aesar, 98%), Mn2O3 (Sigma-Aldrich, 99.9%) were used as received without any further purification. Choline chloride (Sigma-Aldrich, 98%) was dried at 120 C under vacuum prior to use."
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
     },
     {
      "name": "lanthanum chloride",
@@ -329,7 +354,7 @@
      "quote": "0.5368 g of LaCl3, 0.0865 g Mn2O3, and 0.1418 g NiCl2 in 72.5 g of the solvent for LaMn0.5Ni0.5O3"
     },
     {
-     "parameter": "nickel(II) chloride",
+     "parameter": "second_B_site_precursor",
      "value_num": 0.1418,
      "unit": "g",
      "parent_value": "none",
@@ -1669,7 +1694,15 @@
   },
   {
    "where": "Réactif DES (87 g, 72,5 g, 80,0 g)",
-   "issue": "L'article donne la masse totale de solvant, non celle de chaque constituant ; un seul réactif « DES » est créé, avec la pureté et le fournisseur des deux constituants recopiés ensemble."
+   "issue": "L'article donne la masse totale de solvant, non celle de chaque constituant ; les deux constituants portent pureté et fournisseur (« amount » non cité), et un réactif « DES » porte la masse totale ; les variations de masse de solvant portent sur ce dernier."
+  },
+  {
+   "where": "LaMn0.5Ni0.5O3, variation du NiCl2",
+   "issue": "NiCl2 n'existe pas dans le protocole parent (LaMnO3) : la variation est nommée « second_B_site_precursor » avec parent_value « none » (ajout), d'où l'avertissement du contrôle sur un nom sans correspondance."
+  },
+  {
+   "where": "chlorure de choline, pureté",
+   "issue": "Le texte source porte un caractère de police symbole devant « 98% » (probablement ≥ 98 %) ; la pureté est recopiée « 98% » sans le signe."
   },
   {
    "where": "Fig. S4 (LaOCl)",
