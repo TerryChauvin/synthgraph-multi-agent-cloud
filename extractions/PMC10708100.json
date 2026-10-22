@@ -28,14 +28,15 @@
    ]
   },
   {
-   "sample": "CdZnS@ZIF-8 (composite décrit au 3.3 et utilisé dans les essais 4b à 4f)",
+   "sample": "CdZnS@ZIF-8 (composite décrit au 3.3 et utilisé dans les essais 4b, 4d à 4f)",
    "defined_in": "Experimental Section 3.3",
    "route": "CdZnS@ZIF-8",
    "results_in": [
     "Fig. 1",
     "Fig. 2c,d",
     "Fig. 3e,f",
-    "Fig. 4b-f",
+    "Fig. 4b",
+    "Fig. 4d-f",
     "Fig. S1-S6",
     "Table S1"
    ]
@@ -162,7 +163,13 @@
      "action": "dissolve",
      "description": "Dissoudre 2-methylimidazole et l'acétate de zinc, pesés séparément, dans un bécher contenant 70 mL de méthanol.",
      "quote": "To initiate the synthesis, 3.2836 g of 2-methylimidazole and 2.195 g of zinc acetate were individually weighed and dissolved in a beaker containing 70 mL of methanol solution.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "At room temperature, 2-methylimidazole was synthesized using organic bridging ligands and inorganic metal nodes provided by zinc acetate in a methanol solution."
+      }
+     ],
      "equipment": [
       {
        "type": "beaker",
@@ -171,7 +178,6 @@
       }
      ],
      "not_stated": [
-      "temperature",
       "dissolution_time",
       "stirring_speed"
      ]
@@ -304,7 +310,7 @@
      "technique": "photocatalytic dye degradation test",
      "result": "removal rate of methylene blue (and other dyes) under simulated sunlight; 30 min dark adsorption then irradiation, dye concentration followed by UV-VIS spectrophotometry",
      "instrument": "300 W xenon lamp; UV–VIS spectrophotometer",
-     "conditions": "50 mL dye solution, 10 mg/L and 20 mg catalyst in a typical scheme; 30 min in the dark with oscillation; lamp at 30 cm, irradiance 735 W/m2",
+     "conditions": "50 mL dye solution, 10 mg/L and 20 mg catalyst in a typical scheme; 30 min in the dark with oscillation; lamp at 30 cm, irradiance 735 W/m2; série de la Fig. 4a (ZIF-8, CdZnS et composites par rapport massique) : 30 mg/L de bleu de méthylène et 50 mg de matériau",
      "quote": "A 300 W xenon lamp was used to simulate the irradiation of sunlight at 30 cm from the reaction solution to be measured (irradiance: 735 W/m2)."
     }
    ],
@@ -608,7 +614,7 @@
      "technique": "photocatalytic dye degradation test",
      "result": "removal rate of methylene blue (and other dyes) under simulated sunlight; 30 min dark adsorption then irradiation, dye concentration followed by UV-VIS spectrophotometry",
      "instrument": "300 W xenon lamp; UV–VIS spectrophotometer",
-     "conditions": "50 mL dye solution, 10 mg/L and 20 mg catalyst in a typical scheme; 30 min in the dark with oscillation; lamp at 30 cm, irradiance 735 W/m2",
+     "conditions": "50 mL dye solution, 10 mg/L and 20 mg catalyst in a typical scheme; 30 min in the dark with oscillation; lamp at 30 cm, irradiance 735 W/m2; série de la Fig. 4a (ZIF-8, CdZnS et composites par rapport massique) : 30 mg/L de bleu de méthylène et 50 mg de matériau",
      "quote": "A 300 W xenon lamp was used to simulate the irradiation of sunlight at 30 cm from the reaction solution to be measured (irradiance: 735 W/m2)."
     }
    ],
@@ -892,6 +898,20 @@
      "quote": "XPS measurement scans revealed the presence of O, N, C, Cd, Zn, and S elements in the composite sample, as shown in Figure S1."
     },
     {
+     "technique": "XPS C 1s",
+     "result": "trois pics à 288,5, 285,5 et 284,5 eV, attribués par les auteurs à C-C/C=C, C-N (2-méthylimidazole) et O-C-O respectivement (attributions telles qu'écrites ; voir doutes)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Figure S2 shows the C1s spectrum of CdZnS@ZIF-8, with three peaks at 288.5 eV, 285.5 eV, and 284.5 eV, corresponding to C-C/C=C, C-N(2-methylimidazole), and O-C-O, respectively"
+    },
+    {
+     "technique": "XPS O 1s",
+     "result": "deux pics à 530,95 et 531,7 eV, attribués par les auteurs à des lacunes d'oxygène et à O2− dans CdZnS en surface",
+     "instrument": null,
+     "conditions": null,
+     "quote": "The two peaks at 530.95 eV and 531.7 eV correspond to oxygen vacancies and O2− in CdZnS on the surface of the material, respectively."
+    },
+    {
      "technique": "N2 adsorption–desorption (BET)",
      "result": "isotherme de type I avec hystérésis H4 ; structure poreuse à trois niveaux (micro, méso, macropores)",
      "instrument": null,
@@ -946,34 +966,6 @@
      "quote": "In the experimental reaction, the amount of catalyst was 0.04 g, the pH value was 7, the initial concentration of methylene blue aqueous solution was 20 mg/L, and the degradation of methylene blue in 50 mL aqueous solution reached 99.55% under visible light irradiation for 90 min"
     },
     {
-     "property": "MB_removal_rate_10_mg/L_initial_concentration_after_90_min",
-     "value_num": 98,
-     "unit": "%",
-     "from_figure": "Fig. 4c",
-     "quote": "(c) comparison of the photocatalytic degradation of methylene blue at different initial concentrations"
-    },
-    {
-     "property": "MB_removal_rate_20_mg/L_initial_concentration_after_90_min",
-     "value_num": 99,
-     "unit": "%",
-     "from_figure": "Fig. 4c",
-     "quote": "(c) comparison of the photocatalytic degradation of methylene blue at different initial concentrations"
-    },
-    {
-     "property": "MB_removal_rate_30_mg/L_initial_concentration_after_90_min",
-     "value_num": 85,
-     "unit": "%",
-     "from_figure": "Fig. 4c",
-     "quote": "(c) comparison of the photocatalytic degradation of methylene blue at different initial concentrations"
-    },
-    {
-     "property": "MB_removal_rate_40_mg/L_initial_concentration_after_90_min",
-     "value_num": 94,
-     "unit": "%",
-     "from_figure": "Fig. 4c",
-     "quote": "(c) comparison of the photocatalytic degradation of methylene blue at different initial concentrations"
-    },
-    {
      "property": "RhB_removal_rate_pH_7",
      "value_num": 99,
      "unit": "%",
@@ -1006,6 +998,13 @@
      "unit": "%",
      "from_figure": "Fig. 4d",
      "quote": "(d) comparison of the photocatalytic degradation of methylene blue at different pH concentrations"
+    },
+    {
+     "property": "MB_removal_rate_cycle_1",
+     "value_num": 99,
+     "unit": "%",
+     "from_figure": "Fig. 4e",
+     "quote": "(e) CdZnS@ZIF-8 cyclic stability of composites"
     },
     {
      "property": "MB_removal_rate_cycle_2",
@@ -1079,7 +1078,7 @@
    "quote": "To obtain CdZnS@ZIF-8 composite material with good catalytic performance, composites with different mass ratios were prepared",
    "variations": [
     {
-     "parameter": "CdZnS (route CdZnS)",
+     "parameter": "mass_ratio",
      "value_text": "0.6%",
      "parent_value": "not stated",
      "quote": "(a) Comparison of methylene blue degradation by photocatalysis with different mass ratios",
@@ -1094,6 +1093,48 @@
      "unit": "%",
      "from_figure": "Fig. 4a",
      "quote": "(a) Comparison of methylene blue degradation by photocatalysis with different mass ratios"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "prepare",
+     "description": "Préparation non décrite par l'article (seulement « composites with different mass ratios were prepared »).",
+     "quote": "composites with different mass ratios were prepared",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "procedure",
+      "CdZnS_mass",
+      "ZIF-8_precursor_amounts",
+      "solvent_volumes",
+      "temperature",
+      "duration",
+      "washing",
+      "drying"
+     ]
+    }
+   ],
+   "not_stated": [
+    "protocol",
+    "CdZnS_mass",
+    "reagent_amounts",
+    "solvent_volumes",
+    "temperature",
+    "duration",
+    "washing",
+    "drying"
+   ],
+   "missing_fields": [
+    "préparation complète du composite (définition du rapport massique, masse de CdZnS, quantités de ZIF-8, durée, lavage, séchage) : aucune citation"
+   ],
+   "characterizations": [
+    {
+     "technique": "photocatalytic dye degradation test (série Fig. 4a)",
+     "result": "taux d'élimination du bleu de méthylène suivi par spectrophotométrie UV-Vis ; série comparant les rapports massiques, ZIF-8 et CdZnS",
+     "instrument": "300 W xenon lamp; UV–VIS spectrophotometer",
+     "conditions": "30 mg/L de bleu de méthylène et 50 mg de matériau (série des rapports massiques)",
+     "quote": "In the experiment, the initial concentration of methylene blue was specified as 30 mg/L and the dosage of photocatalytic degradation material was 50 mg."
     }
    ]
   },
@@ -1110,7 +1151,7 @@
    "quote": "To obtain CdZnS@ZIF-8 composite material with good catalytic performance, composites with different mass ratios were prepared",
    "variations": [
     {
-     "parameter": "CdZnS (route CdZnS)",
+     "parameter": "mass_ratio",
      "value_text": "0.8%",
      "parent_value": "not stated",
      "quote": "After a reaction time of 90 min, the removal rate of 0.8% composite photocatalytic degradation of methylene blue reached 99.54%"
@@ -1123,6 +1164,76 @@
      "value_num": 99.54,
      "unit": "%",
      "quote": "After a reaction time of 90 min, the removal rate of 0.8% composite photocatalytic degradation of methylene blue reached 99.54%"
+    },
+    {
+     "property": "MB_removal_rate_10_mg/L_initial_concentration_after_90_min",
+     "value_num": 98,
+     "unit": "%",
+     "from_figure": "Fig. 4c",
+     "quote": "(c) comparison of the photocatalytic degradation of methylene blue at different initial concentrations"
+    },
+    {
+     "property": "MB_removal_rate_20_mg/L_initial_concentration_after_90_min",
+     "value_num": 99,
+     "unit": "%",
+     "from_figure": "Fig. 4c",
+     "quote": "(c) comparison of the photocatalytic degradation of methylene blue at different initial concentrations"
+    },
+    {
+     "property": "MB_removal_rate_30_mg/L_initial_concentration_after_90_min",
+     "value_num": 85,
+     "unit": "%",
+     "from_figure": "Fig. 4c",
+     "quote": "(c) comparison of the photocatalytic degradation of methylene blue at different initial concentrations"
+    },
+    {
+     "property": "MB_removal_rate_40_mg/L_initial_concentration_after_90_min",
+     "value_num": 94,
+     "unit": "%",
+     "from_figure": "Fig. 4c",
+     "quote": "(c) comparison of the photocatalytic degradation of methylene blue at different initial concentrations"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "prepare",
+     "description": "Préparation non décrite par l'article (seulement « composites with different mass ratios were prepared »).",
+     "quote": "composites with different mass ratios were prepared",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "procedure",
+      "CdZnS_mass",
+      "ZIF-8_precursor_amounts",
+      "solvent_volumes",
+      "temperature",
+      "duration",
+      "washing",
+      "drying"
+     ]
+    }
+   ],
+   "not_stated": [
+    "protocol",
+    "CdZnS_mass",
+    "reagent_amounts",
+    "solvent_volumes",
+    "temperature",
+    "duration",
+    "washing",
+    "drying"
+   ],
+   "missing_fields": [
+    "préparation complète du composite (définition du rapport massique, masse de CdZnS, quantités de ZIF-8, durée, lavage, séchage) : aucune citation"
+   ],
+   "characterizations": [
+    {
+     "technique": "photocatalytic dye degradation test (série Fig. 4a)",
+     "result": "taux d'élimination du bleu de méthylène suivi par spectrophotométrie UV-Vis ; série comparant les rapports massiques, ZIF-8 et CdZnS",
+     "instrument": "300 W xenon lamp; UV–VIS spectrophotometer",
+     "conditions": "30 mg/L de bleu de méthylène et 50 mg de matériau (série des rapports massiques)",
+     "quote": "In the experiment, the initial concentration of methylene blue was specified as 30 mg/L and the dosage of photocatalytic degradation material was 50 mg."
     }
    ]
   },
@@ -1139,7 +1250,7 @@
    "quote": "To obtain CdZnS@ZIF-8 composite material with good catalytic performance, composites with different mass ratios were prepared",
    "variations": [
     {
-     "parameter": "CdZnS (route CdZnS)",
+     "parameter": "mass_ratio",
      "value_text": "1%",
      "parent_value": "not stated",
      "quote": "It can be seen from the figure that except for 1% material, the removal rate curve of the remaining materials increased greatly during 0–10 min of illumination"
@@ -1159,6 +1270,48 @@
      "value_text": "steady rise with the increase in time",
      "quote": "while the removal rate of 1% showed a steady rise with the increase in time"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "prepare",
+     "description": "Préparation non décrite par l'article (seulement « composites with different mass ratios were prepared »).",
+     "quote": "composites with different mass ratios were prepared",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "procedure",
+      "CdZnS_mass",
+      "ZIF-8_precursor_amounts",
+      "solvent_volumes",
+      "temperature",
+      "duration",
+      "washing",
+      "drying"
+     ]
+    }
+   ],
+   "not_stated": [
+    "protocol",
+    "CdZnS_mass",
+    "reagent_amounts",
+    "solvent_volumes",
+    "temperature",
+    "duration",
+    "washing",
+    "drying"
+   ],
+   "missing_fields": [
+    "préparation complète du composite (définition du rapport massique, masse de CdZnS, quantités de ZIF-8, durée, lavage, séchage) : aucune citation"
+   ],
+   "characterizations": [
+    {
+     "technique": "photocatalytic dye degradation test (série Fig. 4a)",
+     "result": "taux d'élimination du bleu de méthylène suivi par spectrophotométrie UV-Vis ; série comparant les rapports massiques, ZIF-8 et CdZnS",
+     "instrument": "300 W xenon lamp; UV–VIS spectrophotometer",
+     "conditions": "30 mg/L de bleu de méthylène et 50 mg de matériau (série des rapports massiques)",
+     "quote": "In the experiment, the initial concentration of methylene blue was specified as 30 mg/L and the dosage of photocatalytic degradation material was 50 mg."
+    }
    ]
   },
   {
@@ -1174,7 +1327,7 @@
    "quote": "To obtain CdZnS@ZIF-8 composite material with good catalytic performance, composites with different mass ratios were prepared",
    "variations": [
     {
-     "parameter": "CdZnS (route CdZnS)",
+     "parameter": "mass_ratio",
      "value_text": "1.2%",
      "parent_value": "not stated",
      "quote": "(a) Comparison of methylene blue degradation by photocatalysis with different mass ratios",
@@ -1189,6 +1342,48 @@
      "unit": "%",
      "from_figure": "Fig. 4a",
      "quote": "(a) Comparison of methylene blue degradation by photocatalysis with different mass ratios"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "prepare",
+     "description": "Préparation non décrite par l'article (seulement « composites with different mass ratios were prepared »).",
+     "quote": "composites with different mass ratios were prepared",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "procedure",
+      "CdZnS_mass",
+      "ZIF-8_precursor_amounts",
+      "solvent_volumes",
+      "temperature",
+      "duration",
+      "washing",
+      "drying"
+     ]
+    }
+   ],
+   "not_stated": [
+    "protocol",
+    "CdZnS_mass",
+    "reagent_amounts",
+    "solvent_volumes",
+    "temperature",
+    "duration",
+    "washing",
+    "drying"
+   ],
+   "missing_fields": [
+    "préparation complète du composite (définition du rapport massique, masse de CdZnS, quantités de ZIF-8, durée, lavage, séchage) : aucune citation"
+   ],
+   "characterizations": [
+    {
+     "technique": "photocatalytic dye degradation test (série Fig. 4a)",
+     "result": "taux d'élimination du bleu de méthylène suivi par spectrophotométrie UV-Vis ; série comparant les rapports massiques, ZIF-8 et CdZnS",
+     "instrument": "300 W xenon lamp; UV–VIS spectrophotometer",
+     "conditions": "30 mg/L de bleu de méthylène et 50 mg de matériau (série des rapports massiques)",
+     "quote": "In the experiment, the initial concentration of methylene blue was specified as 30 mg/L and the dosage of photocatalytic degradation material was 50 mg."
     }
    ]
   }
@@ -1236,20 +1431,26 @@
   {
    "type": "limite_reproductibilite",
    "route": "CdZnS",
-   "text": "Les masses de CdCl2•2.5H2O (0,18 g) et d'acétate de zinc (0,292 g) ne correspondent pas aux 1,0 mmol annoncées pour chacun avec les masses molaires usuelles (environ 0,228 g pour CdCl2•2.5H2O ; 0,183 g d'acétate anhydre ou 0,220 g de dihydrate). Un chimiste doit trancher entre masses et moles avant de reproduire la synthèse.",
+   "text": "Les masses de CdCl2•2.5H2O (0,18 g) et d'acétate de zinc (0,292 g) ne correspondent pas aux 1,0 mmol annoncées pour chacun : 0,18 g de CdCl2•2.5H2O font environ 0,79 mmol, 0,292 g d'acétate de zinc environ 1,33 mmol (dihydrate) ou 1,59 mmol (anhydre) ; seul le thioacétamide (0,15 g, environ 2,0 mmol) est cohérent. Si les masses font foi, le solide visé serait plutôt Cd0,33–0,37Zn0,63–0,67S que Cd0,5Zn0,5S, avec un léger défaut de soufre (S/métaux de 0,84 à 0,94). La composition n'est pas mesurée (DRX comparé à un « CdZnS standard » sans positions de raies, ni EDS ni ICP). Un chimiste doit trancher entre masses et moles et vérifier la composition avant de reproduire la synthèse. Le volume du réacteur hydrothermal et l'atmosphère de l'ATG (perte de 6,5 % à 800 °C) ne sont pas donnés.",
    "quote": "In a beaker containing 20 mL of deionized water, 0.18 g (1.0 mmol) of CdCl2•2.5H2O, 0.292 g (1.0 mmol) of zinc acetate, and 0.15 g (2.0 mmol) of TAA were added."
   },
   {
    "type": "limite_reproductibilite",
    "route": "CdZnS@ZIF-8",
-   "text": "Les conditions d'essai photocatalytique sont décrites de trois façons : 10 mg/L de colorant et 20 mg de catalyseur (schéma type), 30 mg/L et 50 mg (série des rapports massiques), 20 mg/L et 40 mg (conditions optimales du résumé). La lampe est un xénon de 300 W qui simule le soleil, alors que le résumé parle de lumière visible sans filtre cité.",
+   "text": "Les conditions d'essai photocatalytique sont décrites de trois façons : 10 mg/L de colorant et 20 mg de catalyseur (schéma type), 30 mg/L et 50 mg (série des rapports massiques de la Fig. 4a, qui comprend aussi ZIF-8 et CdZnS), 20 mg/L et 40 mg (conditions optimales du résumé). À 30 mg/L, la Fig. 4a donne environ 99,5 % pour le composite à 0,8 % alors que la Fig. 4c en donne environ 85 % pour ce même composite à la même concentration. Les taux d'élimination des branches et des témoins ne sont donc comparables qu'à l'intérieur d'une même figure.",
    "quote": "In a typical scheme, the 50 mL dye solution with a mass concentration of 10 mg/L was mixed with 20 mg of CdZnS@ZIF-8 composite material or ZIF-8 or CdZnS prepared by different methods."
   },
   {
    "type": "mecanisme_auteurs",
    "route": "CdZnS@ZIF-8",
-   "text": "Pour la formation du composite, les auteurs décrivent seulement l'observation au MEB : des couches de ZIF-8 se déposent de façon inégale sur les particules de CdZnS en forme de chrysanthème, qui sont entièrement enrobées. Pour la photocatalyse, ils invoquent une hétérojonction ZIF-8/CdZnS avec champ électrique interne qui limite la recombinaison électron-trou.",
+   "text": "Pour la formation du composite, les auteurs décrivent seulement l'observation au MEB : des couches de ZIF-8 se déposent de façon inégale sur les particules de CdZnS en forme de chrysanthème, qui sont entièrement enrobées dans une coque rigide.",
    "quote": "In Figure 2c,d, the scarce CdZnS chrysanthemum-like particles in the solution have absorbed many layers of ZIF-8 unevenly, and CdZnS is completely encased in cubes, forming a rigid organometal skeleton shell."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdZnS@ZIF-8",
+   "text": "Pour la photocatalyse, les auteurs invoquent une hétérojonction ZIF-8/CdZnS avec un champ électrique interne qui limite la recombinaison électron-trou.",
+   "quote": "The self-generated electric field can effectively inhibit electron–hole recombination, making the electron–holes participate in the photocatalytic reaction in CdZnS."
   },
   {
    "type": "mecanisme_analyse",
@@ -1259,28 +1460,53 @@
   {
    "type": "mecanisme_analyse",
    "route": "CdZnS",
-   "text": "Hypothèse de chimiste : le thioacétamide (TAA) s'hydrolyse à chaud dans l'eau en libérant H2S ou S2−, qui précipite Cd2+ et Zn2+ sous forme de solution solide Cd0,5Zn0,5S. Le rapport S:métal de 2:2 (2 mmol de TAA pour 1 mmol de Cd et 1 mmol de Zn) est stœchiométrique, avec un léger excès de soufre probable."
+   "text": "Hypothèse de chimiste : le thioacétamide (TAA) s'hydrolyse à chaud dans l'eau en libérant H2S ou S2−, qui précipite Cd2+ et Zn2+ sous forme de solution solide CdxZn1−xS ; CdS, moins soluble, germe probablement en premier et les 12 h à 160 °C permettent l'interdiffusion. Avec les moles écrites (1,0 mmol de Cd, 1,0 mmol de Zn, 2,0 mmol de TAA) le rapport S:métaux est stœchiométrique ; avec les masses écrites il y aurait un léger défaut de soufre et une fraction de Cd de 0,33 à 0,37 au lieu de 0,5 (voir l'annotation de reproductibilité)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "CdZnS@ZIF-8",
-   "text": "Hypothèse de chimiste : les particules de CdZnS servent probablement de germes d'hétéronucléation à ZIF-8, dont les cristaux croissent à leur surface pendant les 24 h d'agitation. Le rapport Zn:2-méthylimidazole de 1:4 (0,01 mol pour 0,04 mol) est celui des synthèses usuelles de ZIF-8 en méthanol."
+   "text": "Hypothèse de chimiste, qui diffère de l'interprétation des auteurs : ZIF-8 germe surtout en solution dans les minutes qui suivent le mélange de l'acétate de zinc et du 2-méthylimidazole (rapport Zn:ligand de 1:4, usuel pour ZIF-8 en méthanol), avant le contact avec CdZnS ; les rares particules de CdZnS en fleur se recouvrent ensuite de cristaux de ZIF-8 par hétéronucléation tardive ou par agrégation pendant les 24 h. Pour l'activité, l'élimination du bleu de méthylène s'explique d'abord, hypothèse, par l'adsorption sur ZIF-8 (forte dans les 30 premières minutes), puis par une photodégradation sous UV de la lampe xénon non filtrée ; la part de CdZnS et d'une hétérojonction n'est pas mesurée et serait faible avec moins de 1 % de CdZnS."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le méthanol est inflammable et toxique (cécité par ingestion ou inhalation prolongée) : travailler sous hotte. Le chlorure de cadmium et les sulfures de cadmium sont des composés toxiques et cancérogènes du cadmium : gants, hotte, déchets métalliques séparés. Le thioacétamide est un cancérogène suspecté et dégage H2S à chaud dans le réacteur hydrothermal fermé ; laisser refroidir complètement avant ouverture. Les poudres fines de CdZnS et de ZIF-8 sont à ne pas inhaler."
+   "text": "Le méthanol (140 mL de solvant plus les lavages pour le composite) est inflammable et toxique (cécité par ingestion ou inhalation prolongée) : travailler sous hotte. Les poudres fines de CdZnS et de ZIF-8 sont à ne pas inhaler. Le composite contient du sulfure de cadmium qui se photocorrode (les auteurs le rappellent en introduction) : aucun dosage du cadmium relargué dans l'eau traitée n'est donné. Pour le cadmium et le thioacétamide de la préparation de CdZnS, voir l'annotation de sécurité de cette voie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdZnS@ZIF-8",
+   "text": "Préparation du composite : la recette du 3.3 (0,012 g de CdZnS pour au plus 2,276 g de ZIF-8 théorique, soit 10 mmol de zinc) donne au plus environ 0,5 % de CdZnS, ce qui ne correspond à aucun des rapports annoncés (0,6, 0,8, 1 et 1,2 %) ; le rapport n'est ni défini (sur ZIF-8 ? sur le total ? théorique ou mesuré ?) ni mesuré (pas de dosage du Cd). Les quatre composites de la série n'ont pas de protocole propre et ne sont pas reproductibles tels qu'écrits ; la série n'est pas monotone (le composite à 1,2 % fait moins bien que ZIF-8 seule sur la Fig. 4a), sans répétition ni barre d'erreur. Ordre d'addition : l'acétate de zinc et le 2-méthylimidazole sont dissous ensemble avant d'être versés sur la dispersion de CdZnS ; hypothèse de chimiste, ZIF-8 germe surtout en solution avant le contact avec CdZnS et le produit est probablement surtout de la ZIF-8 libre avec quelques particules de CdZnS enrobées (l'article parle lui-même de particules de CdZnS « scarce » et le DRX ne montre que ZIF-8). Témoin : la ZIF-8 de référence (3.1) est préparée à concentration double (70 mL au lieu de 140 mL), séchée 24 h au lieu de 12 h et sans ultrasons ; la baisse de surface BET (1836 m2/g pour ZIF-8, 1152 m2/g pour le composite) ne s'explique pas par la dilution par moins de 1 % de CdZnS. Toute différence d'activité peut venir de ces écarts de préparation et non de CdZnS ; une ZIF-8 préparée exactement comme au 3.3 sans CdZnS manque comme témoin."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdZnS@ZIF-8",
+   "text": "Essais photocatalytiques : (1) l'équation (1) désigne un « degradation rate or adsorption rate » et l'essentiel de l'élimination du colorant est acquis dans les 30 premières minutes (30 min à l'obscurité, puis 0 à 10 min de lumière où les auteurs admettent que l'adsorption agit encore) ; la courbe à 30 mg/L de la Fig. 4c redescend ensuite, ce qui évoque une désorption. Aucun essai à l'obscurité de même durée, aucun blanc colorant + lumière sans catalyseur, aucun piégeur de radicaux, aucun dosage du carbone organique total : les taux annoncés sont des taux d'élimination, pas une preuve de dégradation photocatalytique. (2) « Lumière visible » n'est pas justifiée : lampe xénon de 300 W sans filtre de coupure cité (UV compris) ; ZIF-8 seule atteint déjà 96,32 % et le composite à 0,8 % n'ajoute que 3 points (99,54 %), sans répétition ; d'après la critique scientifique, ZIF-8 est photoactive sous UV (Jing et al., RSC Advances, 2014). (3) Le mécanisme d'hétérojonction est contradictoire et non démontré : le résumé fait de ZIF-8 l'accepteur d'électrons, la section 2.3 y envoie les trous et garde les électrons dans CdZnS ; aucune position de bande, photoluminescence, photocourant ni piégeage de radicaux n'est montré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CdZnS@ZIF-8",
+   "text": "Incohérences entre texte et figures : la Fig. 4b (« comparison of methylene blue degradation by photocatalysis with different dosages », 10 à 60 mg) n'est pas lue, les courbes étant serrées et certaines dépassant 100 % ; seule la valeur du texte (40 mg, 99,55 %) est extraite, alors que le texte annonce une hausse de 10 à 40 mg et que 40 mg n'est pas le maximum de la figure. Sur la Fig. 4c, la courbe à 40 mg/L finit au-dessus de celle à 30 mg/L, contrairement au texte. Le texte attribue le taux de 99 % à pH 7 à la rhodamine B (« When pH = 7, the removal rate of Rhodamine B reaches 99% ») alors que la Fig. 4d et le reste du paragraphe portent sur le bleu de méthylène : valeur du texte conservée sous RhB_removal_rate_pH_7, à lire probablement comme du bleu de méthylène."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves de chimiste sur des affirmations de l'article, sans effet sur les valeurs extraites (d'après la critique scientifique) : (1) la bande interdite de 2,4 eV citée en introduction pour Cd0,5Zn0,5S n'est pas mesurée ici et correspond à CdS ; (2) les attributions des pics C 1s du XPS paraissent inversées (C-C/C=C se place plutôt vers 284,5 eV et O-C-O vers 288 eV, l'article écrit l'inverse) et « O2− dans CdZnS » n'a pas de sens pour un sulfure ; (3) l'isotherme de CdZnS est dite de type III et le solide « microporeux », alors qu'un type III indique un solide non poreux ou macroporeux (les micropores donnent un type I)."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "CdZnS",
+   "text": "Le chlorure de cadmium est classé cancérogène, mutagène et toxique pour la reproduction de catégorie 1B, et toxique par inhalation (classification harmonisée européenne, d'après la critique scientifique). Le thioacétamide est cancérogène et, hydrolysé à 160 °C dans le réacteur fermé, libère H2S et NH3 : ouvrir le réacteur refroidi, sous hotte. Les filtrats et les eaux de lavage contiennent du Cd2+ : à collecter comme déchets métalliques. Rien de cela n'est écrit dans l'article."
   }
  ],
  "method_sources": [],
  "doubts": [
   {
    "where": "CdZnS@ZIF-8, rapport massique de la recette du 3.3",
-   "issue": "Le paragraphe 3.3 décrit une seule recette de composite (0,012 g de CdZnS, 3,284 g de 2-méthylimidazole, 2,195 g d'acétate de zinc) sans dire quel rapport massique (0,6, 0,8, 1 ou 1,2 %) elle produit. Le composite « à 0,8 % » est celui des essais de la figure 4c (légende « 0.8% C@Z ») et du texte sur la figure 4a, et probablement celui des essais 4b à 4f, mais l'article ne l'écrit pas. Lecture littérale retenue : voie de base CdZnS@ZIF-8 sans rapport, rapport déclaré non cité, et le composite à 0,8 % est une branche à part comme les trois autres ; les essais 4b à 4f (« CdZnS@ZIF-8 » dans le texte) sont rangés sur la voie de base."
+   "issue": "Le paragraphe 3.3 décrit une seule recette de composite (0,012 g de CdZnS, 3,284 g de 2-méthylimidazole, 2,195 g d'acétate de zinc) sans dire quel rapport massique (0,6, 0,8, 1 ou 1,2 %) elle produit. Le composite « à 0,8 % » est celui de la légende de l'image de la Fig. 4c (« 10, 20, 30, 40 mg/l 0.8% C@Z ») et du texte sur la Fig. 4a, et probablement celui des essais 4b, 4d à 4f, mais l'article ne l'écrit pas. Lecture retenue : voie de base CdZnS@ZIF-8 sans rapport (déclaré non cité) ; le composite à 0,8 % est une branche à part comme les trois autres et porte les lectures de la Fig. 4c ; les essais 4b, 4d, 4e (« CdZnS@ZIF-8 » dans le texte, sans mention du rapport sur l'image) et 4f restent sur la voie de base."
   },
   {
    "where": "CdZnS@ZIF-8_0.6%, _0.8%, _1%, _1.2% (branches)",
-   "issue": "Seule la phrase « composites with different mass ratios were prepared » dit que ces composites existent ; les rapports 0,6 % et 1,2 % n'apparaissent que dans la légende de la figure 4a (image), 0,8 % et 1 % dans le texte. La définition du rapport (CdZnS sur ZIF-8 ? sur quoi ?) et le protocole propre à chaque composite ne sont pas donnés. Les branches héritent par hypothèse du protocole du 3.3 avec une variation sur la quantité de CdZnS ; l'héritage n'est pas écrit dans l'article."
+   "issue": "Seule la phrase « composites with different mass ratios were prepared » dit que ces composites existent ; les rapports 0,6 % et 1,2 % n'apparaissent que dans la légende de la Fig. 4a (image), 0,8 % et 1 % dans le texte. La définition du rapport (CdZnS sur ZIF-8 ? sur le total ?) et le protocole de chaque composite ne sont pas donnés, ni « same procedure » ni quantités. Ces branches n'héritent donc d'aucune étape du 3.3 : une seule étape marqueur « prepare » (non décrite) les remplace, leurs cases sont déclarées non citées, et la seule variation est le rapport massique (valeur de l'article, lue sur la Fig. 4a pour 0,6 et 1,2 %). Les quantités de réactifs visibles dans la fiche sont héritées de la voie de base, non citées pour ces échantillons. Le nom « mass_ratio » est volontairement nouveau : l'avertissement de load.py sur un paramètre absent du protocole hérité est attendu."
   },
   {
    "where": "CdZnS, réactifs (0.18 g / 1.0 mmol et 0.292 g / 1.0 mmol)",
@@ -1292,7 +1518,7 @@
   },
   {
    "where": "CdZnS@ZIF-8, rendement au pH 7 (Results 2.2, Fig. 4d)",
-   "issue": "Le texte écrit « When pH = 7, the removal rate of Rhodamine B reaches 99% » alors que la légende de la figure 4d et le reste du paragraphe parlent du bleu de méthylène (la courbe donne environ 99 % à pH 7). Valeur du texte extraite telle qu'écrite sous la propriété « RhB_removal_rate_pH_7 » ; lecture possible : erreur de colorant dans le texte (bleu de méthylène), auquel cas la propriété serait MB_removal_rate_pH_7."
+   "issue": "Le texte écrit « When pH = 7, the removal rate of Rhodamine B reaches 99% » alors que la légende de la figure 4d et le reste du paragraphe parlent du bleu de méthylène (la courbe donne environ 99 % à pH 7). Valeur du texte extraite telle qu'écrite sous la propriété « RhB_removal_rate_pH_7 » ; lecture possible : erreur de colorant dans le texte (bleu de méthylène), auquel cas la propriété serait MB_removal_rate_pH_7. Décision : valeur et citation du texte conservées ; incohérence consignée dans une annotation de reproductibilité ; aucune propriété MB_removal_rate_pH_7 ajoutée (la Fig. 4d donne déjà 99 % à pH 7,5 et ≈ 99,2 % à pH 7 sur la courbe, non extraits)."
   },
   {
    "where": "CdZnS, taux d'élimination du bleu de méthylène",
@@ -1300,7 +1526,7 @@
   },
   {
    "where": "Valeurs lues sur figures (Fig. 4a, 4c, 4d, 4e)",
-   "issue": "Valeurs lues à la fin des courbes (90 min ou fin de cycle), précision d'environ ±2 points : Fig. 4a composites 0,6 % (96), 1 % (97), 1,2 % (88) ; Fig. 4c concentrations 10, 20, 30, 40 mg/L (98, 99, 85, 94) ; Fig. 4d pH 7,5, 8, 8,5, 9 (99, 95, 94, 91) ; Fig. 4e cycles 2, 3, 4 (95, 88, 85). Les figures 2 et 3 (MEB, isothermes) ne portent pas de valeur manquante au texte. La figure 4b (masse de catalyseur 10 à 60 mg) n'a pas été lue : les courbes sont serrées et certaines dépassent 100 %."
+   "issue": "Valeurs lues à la fin des courbes (90 min ou fin de cycle), précision d'environ ±2 points : Fig. 4a composites 0,6 % (96), 1 % (97), 1,2 % (88) ; Fig. 4c concentrations 10, 20, 30, 40 mg/L (98, 99, 85, 94), rangées sur la branche 0,8 % d'après la légende de l'image ; Fig. 4d pH 7,5, 8, 8,5, 9 (99, 95, 94, 91) ; Fig. 4e cycles 1 à 4 (99, 95, 88, 85). Les images des Fig. 4d et 4e ne portent pas le rapport massique : lectures laissées sur la voie de base. Les figures 2 et 3 ne portent pas de valeur manquante au texte. La Fig. 4b (masse de catalyseur 10 à 60 mg) n'a pas de lecture chiffrée : courbes serrées, certaines au-dessus de 100 %."
   },
   {
    "where": "Fig. 4c, concentration initiale de colorant",
@@ -1308,15 +1534,19 @@
   },
   {
    "where": "Fig. 4b, plage de masses de catalyseur",
-   "issue": "Le texte parle de 10 à 40 mg alors que la figure trace 10 à 60 mg et que 40 mg (99,55 %) n'est pas le maximum visible. Seule la valeur du texte (40 mg, 99,55 %) est extraite."
+   "issue": "Le texte parle de 10 à 40 mg alors que la figure trace 10 à 60 mg et que 40 mg (99,55 %) n'est pas le maximum visible. Seule la valeur du texte (40 mg, 99,55 %) est extraite ; aucune lecture de la figure (voir l'annotation de reproductibilité)."
   },
   {
    "where": "ZIF-8, réactifs (3.1)",
-   "issue": "La première phrase du 3.1 dit que le 2-méthylimidazole a été « synthesized using organic bridging ligands and inorganic metal nodes provided by zinc acetate », formule confuse (c'est ZIF-8 qui est synthétisé). Interprétation retenue : synthèse de ZIF-8 à partir des deux réactifs pesés plus bas."
+   "issue": "La première phrase du 3.1 dit que le 2-méthylimidazole a été « synthesized using organic bridging ligands and inorganic metal nodes provided by zinc acetate », formule confuse (c'est ZIF-8 qui est synthétisé). Interprétation retenue : synthèse de ZIF-8 à partir des deux réactifs pesés plus bas. La température ambiante de l'étape de dissolution est reprise de cette même phrase d'ouverture (« At room temperature, … »), la seule qui place la dissolution à température ambiante."
   },
   {
    "where": "Annexes (Figures S1 à S6, Table S1)",
    "issue": "Aucune section Supporting Information dans le fichier texte ; les valeurs de BET sont reprises du corps du texte, les autres données d'annexe (XPS, UV-Vis, TGA) ne sont pas disponibles au-delà de ce que dit le texte."
+  },
+  {
+   "where": "CdZnS@ZIF-8, XPS C 1s et O 1s",
+   "issue": "Les attributions des pics C 1s (288,5 eV à C-C/C=C, 284,5 eV à O-C-O) sont reportées telles qu'écrites ; elles paraissent inversées (C-C/C=C est habituellement vers 284,5 eV). Les pics viennent de l'annexe citée dans le texte (Fig. S2, S3), absente du dépôt."
   }
  ]
 }

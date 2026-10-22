@@ -1,0 +1,138 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10708100</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10708100 — The Development and Synthesis of a CdZnS @Metal-Organic Framework ZIF-8 for the Highly Efficient Photocatalytic Degradation of Organic Dyes.</h1>
+<h2>Voie : ZIF-8</h2>
+<pre class="mermaid">flowchart LR
+  R15800([&quot;2-methylimidazole&lt;br/&gt;3.2836 g&quot;]):::reactif
+  R15800 --&gt;|&quot;ligand&quot;| S19027
+  R15801([&quot;zinc acetate&lt;br/&gt;2.195 g&quot;]):::reactif
+  R15801 --&gt;|&quot;precursor&quot;| S19027
+  R15802([&quot;methanol&lt;br/&gt;70 mL&quot;]):::reactif
+  R15802 --&gt;|&quot;solvent&quot;| S19027
+  R15803([&quot;methanol (washing)&lt;br/&gt;50 mL&quot;]):::reactif
+  R15803 --&gt;|&quot;wash&quot;| S19027
+  S19027[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S19027 --&gt; S19028
+  S19028[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S19028 --&gt; S19029
+  S19029[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 7000 rpm&lt;br/&gt;duration : 5 min&quot;]:::etape
+  S19029 --&gt; S19030
+  S19030[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : methanol&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S19030 --&gt; S19031
+  S19031[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S19031 --&gt; M
+  M{{&quot;ZIF-8&lt;br/&gt;&quot;}}:::materiau
+  O76066[&quot;grain_size : between 200 nm and 300 nm&quot;]:::resultat
+  M -.-&gt; O76066
+  O76067[&quot;particle_shape : dodecahedral, very uniform pa…&quot;]:::resultat
+  M -.-&gt; O76067
+  O76068[&quot;BET_specific_surface_area : 1836.35 m2/g&quot;]:::resultat
+  M -.-&gt; O76068
+  O76069[&quot;TGA_weight_loss_100_to_200_C : 10 %&quot;]:::resultat
+  M -.-&gt; O76069
+  O76070[&quot;MB_removal_rate_after_90_min : 96.32 %&quot;]:::resultat
+  M -.-&gt; O76070
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CdZnS</h2>
+<pre class="mermaid">flowchart LR
+  R15804([&quot;cadmium chloride hemipentahydrate&lt;br/&gt;0.18 g&quot;]):::reactif
+  R15804 --&gt;|&quot;precursor&quot;| S19032
+  R15805([&quot;zinc acetate&lt;br/&gt;0.292 g&quot;]):::reactif
+  R15805 --&gt;|&quot;precursor&quot;| S19032
+  R15806([&quot;thioacetamide (TAA)&lt;br/&gt;0.15 g&quot;]):::reactif
+  R15806 --&gt;|&quot;precursor&quot;| S19032
+  R15807([&quot;deionized water&lt;br/&gt;20 mL&quot;]):::reactif
+  R15807 --&gt;|&quot;solvent&quot;| S19032
+  R15808([&quot;anhydrous ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15808 --&gt;|&quot;wash&quot;| S19032
+  R15809([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15809 --&gt;|&quot;wash&quot;| S19032
+  S19032[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S19032 --&gt; S19033
+  S19033[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S19033 --&gt; S19034
+  S19034[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 160 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S19034 --&gt; S19035
+  S19035[&quot;&lt;b&gt;4. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S19035 --&gt; S19036
+  S19036[&quot;&lt;b&gt;5. filter&lt;/b&gt;&quot;]:::etape
+  S19036 --&gt; S19037
+  S19037[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : anhydrous ethanol and deioniz…&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S19037 --&gt; S19038
+  S19038[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S19038 --&gt; M
+  M{{&quot;Cd0.5Zn0.5S solid solution (CdZnS)&lt;br/&gt;Cd0.5Zn0.5S&quot;}}:::materiau
+  O76071[&quot;morphology : most of which are chrysanthem…&quot;]:::resultat
+  M -.-&gt; O76071
+  O76072[&quot;particle_size : 1 um to 2 um, wide particle s…&quot;]:::resultat
+  M -.-&gt; O76072
+  O76073[&quot;BET_specific_surface_area : 12.662 m2/g&quot;]:::resultat
+  M -.-&gt; O76073
+  O76074[&quot;TGA_mass_loss_after_800_C : 6.5 %&quot;]:::resultat
+  M -.-&gt; O76074
+  O76075[&quot;MB_removal_rate_after_90_min : 63.73 %&quot;]:::resultat
+  M -.-&gt; O76075
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CdZnS@ZIF-8</h2>
+<pre class="mermaid">flowchart LR
+  R15810([&quot;CdZnS (route CdZnS)&lt;br/&gt;0.012 g&quot;]):::reactif
+  R15810 --&gt;|&quot;intermediate&quot;| S19039
+  R15811([&quot;methanol (CdZnS dispersion)&lt;br/&gt;70 mL&quot;]):::reactif
+  R15811 --&gt;|&quot;solvent&quot;| S19039
+  R15812([&quot;2-methylimidazole&lt;br/&gt;3.284 g&quot;]):::reactif
+  R15812 --&gt;|&quot;ligand&quot;| S19039
+  R15813([&quot;zinc acetate&lt;br/&gt;2.195 g&quot;]):::reactif
+  R15813 --&gt;|&quot;precursor&quot;| S19039
+  R15814([&quot;methanol (ligand and zinc solution)&lt;br/&gt;70 mL&quot;]):::reactif
+  R15814 --&gt;|&quot;solvent&quot;| S19039
+  R15815([&quot;methanol solution (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R15815 --&gt;|&quot;wash&quot;| S19039
+  S19039[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S19039 --&gt; S19040
+  S19040[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S19040 --&gt; S19041
+  S19041[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S19041 --&gt; S19042
+  S19042[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&quot;]:::etape
+  S19042 --&gt; S19043
+  S19043[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : methanol solution&lt;br/&gt;repetitions : three times&quot;]:::etape
+  S19043 --&gt; S19044
+  S19044[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S19044 --&gt; S19045
+  S19045[&quot;&lt;b&gt;7. grind&lt;/b&gt;&quot;]:::etape
+  S19045 --&gt; M
+  M{{&quot;CdZnS@ZIF-8 composite&lt;br/&gt;&quot;}}:::materiau
+  O76076[&quot;BET_specific_surface_area : 1151.68 m2/g&quot;]:::resultat
+  M -.-&gt; O76076
+  O76077[&quot;thermal_stability_TGA : 400 °C&quot;]:::resultat
+  M -.-&gt; O76077
+  O76078[&quot;MB_removal_rate_dosage_40_mg : 99.55 %&quot;]:::resultat
+  M -.-&gt; O76078
+  O76079[&quot;MB_removal_rate_20_mg/L_initial_co… : 99.55 %&quot;]:::resultat
+  M -.-&gt; O76079
+  O76080[&quot;RhB_removal_rate_pH_7 : 99 %&quot;]:::resultat
+  M -.-&gt; O76080
+  O76081[&quot;MB_removal_rate_pH_7.5_after_90_min : 99 %&quot;]:::resultat
+  M -.-&gt; O76081
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12137{{&quot;CdZnS@ZIF-8&quot;}}:::materiau
+  B12138[&quot;CdZnS@ZIF-8_0.6%&quot;]:::etape
+  B12137 --&gt;|&quot;mass_ratio = 0.6%&quot;| B12138
+  B12139[&quot;CdZnS@ZIF-8_0.8%&quot;]:::etape
+  B12137 --&gt;|&quot;mass_ratio = 0.8%&quot;| B12139
+  B12140[&quot;CdZnS@ZIF-8_1%&quot;]:::etape
+  B12137 --&gt;|&quot;mass_ratio = 1%&quot;| B12140
+  B12141[&quot;CdZnS@ZIF-8_1.2%&quot;]:::etape
+  B12137 --&gt;|&quot;mass_ratio = 1.2%&quot;| B12141
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
