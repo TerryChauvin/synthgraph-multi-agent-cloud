@@ -487,7 +487,7 @@
    "variations": [
     {
      "parameter": "sodium hydroxide (NaOH)",
-     "quote": "Interestingly, from 10 min onwards, the mixture with the highest CNaOH (360 mM) becomes turbid, thus suggesting, according to [], the formation of insoluble O-CDs.",
+     "quote": "Interestingly, from 10 min onwards, the mixture with the highest CNaOH (360 mM) becomes turbid, thus suggesting, according to [], the formation of insoluble O-CDs. When the synthesis is run at RT, the same result was reached after just 20 h.",
      "value_num": 360,
      "unit": "mM",
      "parent_value": "90 mM"
@@ -700,6 +700,42 @@
      "value_num": 20,
      "unit": "min",
      "parent_value": "from 15 to 60 min"
+    },
+    {
+     "parameter": "chloroform (extraction solvent, alternative to dichloromethane)",
+     "value_text": "absent",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "dichloromethane (extraction solvent, alternative to chloroform)",
+     "value_text": "immiscible CH2Cl2",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "hydrochloric acid (HCl)",
+     "value_text": "replaced by dichloromethane",
+     "parent_value": "2 M aqueous solution (concentrated), volume added until pH 7",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "acetone (non-solvent for the O-CDs purification, as in Fig. 2)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "other non-solvents tested (methanol, n-hexane, tetrahydrofuran, acetonitrile, N,N-dimethylformamide)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "nitrogen",
+     "value_text": "absent",
+     "parent_value": "nitrogen flow used to dry the O-CDs",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
     }
    ],
    "outcomes": [
@@ -707,6 +743,89 @@
      "property": "W-CDs_isolable_at_20_min",
      "quote": "As shown in Figure 3b, the W-CDs can be isolated within the first 20 min of reaction only when the carbonization process leading to the O-CDs occurs not too fast, that is, when a NaOH solution with a concentration in the range 90–180 mM is used.",
      "value_text": "W-CDs can still be isolated within the first 20 min with 90–180 mM NaOH"
+    },
+    {
+     "property": "color_upon_NaOH_addition_at_70C",
+     "quote": "Indeed, upon the NaOH addition at 70 °C, the initially colorless CPC solution quickly turns yellow, irrespective of the CNaOH (Figure 3a).",
+     "value_text": "the initially colorless CPC solution quickly turns yellow, irrespective of the CNaOH"
+    },
+    {
+     "property": "color_for_reaction_times_above_10_min",
+     "quote": "Then, for reaction times above 10 min, the mixture goes brownish, getting darker and darker as the CNaOH increases.",
+     "value_text": "the mixture goes brownish, getting darker and darker as the CNaOH increases"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the NaOH aqueous solution to the CPC aqueous solution, which was first heated at 70 °C in a thermostatic bath; the vials are common glass vials.",
+     "quote": "In this case, the CPC aqueous solution was initially heated at the selected temperature in a thermostatic bath, and subsequently, the NaOH solution was added.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "thermostatic bath",
+       "quote": "initially heated at the selected temperature in a thermostatic bath"
+      }
+     ],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Keep the mixture at 70 °C for 20 min.",
+     "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      },
+      {
+       "name": "duration",
+       "value_num": 20,
+       "unit": "min",
+       "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "quench",
+     "description": "Stop the reaction by adding immiscible CH2Cl2; the O-CDs go into the bottom, denser CH2Cl2 phase. No neutralisation with HCl is described for these samples.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "mixture_temperature_at_addition"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Centrifuge to separate the CH2Cl2 phase containing the O-CDs from the aqueous phase, then inspect the two-phase system visually.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "speed",
+      "centrifuge_speed",
+      "duration",
+      "temperature"
+     ]
     }
    ]
   },
@@ -737,6 +856,42 @@
      "value_num": 40,
      "unit": "min",
      "parent_value": "from 15 to 60 min"
+    },
+    {
+     "parameter": "chloroform (extraction solvent, alternative to dichloromethane)",
+     "value_text": "absent",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "dichloromethane (extraction solvent, alternative to chloroform)",
+     "value_text": "immiscible CH2Cl2",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "hydrochloric acid (HCl)",
+     "value_text": "replaced by dichloromethane",
+     "parent_value": "2 M aqueous solution (concentrated), volume added until pH 7",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "acetone (non-solvent for the O-CDs purification, as in Fig. 2)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "other non-solvents tested (methanol, n-hexane, tetrahydrofuran, acetonitrile, N,N-dimethylformamide)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "nitrogen",
+     "value_text": "absent",
+     "parent_value": "nitrogen flow used to dry the O-CDs",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
     }
    ],
    "outcomes": [
@@ -744,6 +899,84 @@
      "property": "conversion_of_W-CDs_into_O-CDs",
      "quote": "A rather complete conversion, with a brown lower organic phase and an almost colorless upper aqueous phase, is found to occur in just 20 min when 360 mM NaOH is added, and in 40 min in the presence of 90 and 180 mM NaOH (Figure 3b).",
      "value_text": "rather complete conversion in 40 min: brown lower organic phase, almost colorless upper aqueous phase"
+    },
+    {
+     "property": "phases_obtained",
+     "quote": "Otherwise, with higher CNaOH or longer reaction times, only O-CDs are obtained.",
+     "value_text": "only O-CDs are obtained"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the NaOH aqueous solution to the CPC aqueous solution, which was first heated at 70 °C in a thermostatic bath; the vials are common glass vials.",
+     "quote": "In this case, the CPC aqueous solution was initially heated at the selected temperature in a thermostatic bath, and subsequently, the NaOH solution was added.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "thermostatic bath",
+       "quote": "initially heated at the selected temperature in a thermostatic bath"
+      }
+     ],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Keep the mixture at 70 °C for 40 min.",
+     "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      },
+      {
+       "name": "duration",
+       "value_num": 40,
+       "unit": "min",
+       "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "quench",
+     "description": "Stop the reaction by adding immiscible CH2Cl2; the O-CDs go into the bottom, denser CH2Cl2 phase. No neutralisation with HCl is described for these samples.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "mixture_temperature_at_addition"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Centrifuge to separate the CH2Cl2 phase containing the O-CDs from the aqueous phase, then inspect the two-phase system visually.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "speed",
+      "centrifuge_speed",
+      "duration",
+      "temperature"
+     ]
     }
    ]
   },
@@ -774,6 +1007,42 @@
      "value_num": 20,
      "unit": "min",
      "parent_value": "from 15 to 60 min"
+    },
+    {
+     "parameter": "chloroform (extraction solvent, alternative to dichloromethane)",
+     "value_text": "absent",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "dichloromethane (extraction solvent, alternative to chloroform)",
+     "value_text": "immiscible CH2Cl2",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "hydrochloric acid (HCl)",
+     "value_text": "replaced by dichloromethane",
+     "parent_value": "2 M aqueous solution (concentrated), volume added until pH 7",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "acetone (non-solvent for the O-CDs purification, as in Fig. 2)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "other non-solvents tested (methanol, n-hexane, tetrahydrofuran, acetonitrile, N,N-dimethylformamide)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "nitrogen",
+     "value_text": "absent",
+     "parent_value": "nitrogen flow used to dry the O-CDs",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
     }
    ],
    "outcomes": [
@@ -781,6 +1050,89 @@
      "property": "W-CDs_isolable_at_20_min",
      "quote": "As shown in Figure 3b, the W-CDs can be isolated within the first 20 min of reaction only when the carbonization process leading to the O-CDs occurs not too fast, that is, when a NaOH solution with a concentration in the range 90–180 mM is used.",
      "value_text": "W-CDs can still be isolated within the first 20 min with 90–180 mM NaOH"
+    },
+    {
+     "property": "color_upon_NaOH_addition_at_70C",
+     "quote": "Indeed, upon the NaOH addition at 70 °C, the initially colorless CPC solution quickly turns yellow, irrespective of the CNaOH (Figure 3a).",
+     "value_text": "the initially colorless CPC solution quickly turns yellow, irrespective of the CNaOH"
+    },
+    {
+     "property": "color_for_reaction_times_above_10_min",
+     "quote": "Then, for reaction times above 10 min, the mixture goes brownish, getting darker and darker as the CNaOH increases.",
+     "value_text": "the mixture goes brownish, getting darker and darker as the CNaOH increases"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the NaOH aqueous solution to the CPC aqueous solution, which was first heated at 70 °C in a thermostatic bath; the vials are common glass vials.",
+     "quote": "In this case, the CPC aqueous solution was initially heated at the selected temperature in a thermostatic bath, and subsequently, the NaOH solution was added.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "thermostatic bath",
+       "quote": "initially heated at the selected temperature in a thermostatic bath"
+      }
+     ],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Keep the mixture at 70 °C for 20 min.",
+     "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      },
+      {
+       "name": "duration",
+       "value_num": 20,
+       "unit": "min",
+       "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "quench",
+     "description": "Stop the reaction by adding immiscible CH2Cl2; the O-CDs go into the bottom, denser CH2Cl2 phase. No neutralisation with HCl is described for these samples.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "mixture_temperature_at_addition"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Centrifuge to separate the CH2Cl2 phase containing the O-CDs from the aqueous phase, then inspect the two-phase system visually.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "speed",
+      "centrifuge_speed",
+      "duration",
+      "temperature"
+     ]
     }
    ]
   },
@@ -811,6 +1163,42 @@
      "value_num": 40,
      "unit": "min",
      "parent_value": "from 15 to 60 min"
+    },
+    {
+     "parameter": "chloroform (extraction solvent, alternative to dichloromethane)",
+     "value_text": "absent",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "dichloromethane (extraction solvent, alternative to chloroform)",
+     "value_text": "immiscible CH2Cl2",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "hydrochloric acid (HCl)",
+     "value_text": "replaced by dichloromethane",
+     "parent_value": "2 M aqueous solution (concentrated), volume added until pH 7",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "acetone (non-solvent for the O-CDs purification, as in Fig. 2)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "other non-solvents tested (methanol, n-hexane, tetrahydrofuran, acetonitrile, N,N-dimethylformamide)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "nitrogen",
+     "value_text": "absent",
+     "parent_value": "nitrogen flow used to dry the O-CDs",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
     }
    ],
    "outcomes": [
@@ -818,6 +1206,84 @@
      "property": "conversion_of_W-CDs_into_O-CDs",
      "quote": "A rather complete conversion, with a brown lower organic phase and an almost colorless upper aqueous phase, is found to occur in just 20 min when 360 mM NaOH is added, and in 40 min in the presence of 90 and 180 mM NaOH (Figure 3b).",
      "value_text": "rather complete conversion in 40 min: brown lower organic phase, almost colorless upper aqueous phase"
+    },
+    {
+     "property": "phases_obtained",
+     "quote": "Otherwise, with higher CNaOH or longer reaction times, only O-CDs are obtained.",
+     "value_text": "only O-CDs are obtained"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the NaOH aqueous solution to the CPC aqueous solution, which was first heated at 70 °C in a thermostatic bath; the vials are common glass vials.",
+     "quote": "In this case, the CPC aqueous solution was initially heated at the selected temperature in a thermostatic bath, and subsequently, the NaOH solution was added.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "thermostatic bath",
+       "quote": "initially heated at the selected temperature in a thermostatic bath"
+      }
+     ],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Keep the mixture at 70 °C for 40 min.",
+     "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      },
+      {
+       "name": "duration",
+       "value_num": 40,
+       "unit": "min",
+       "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "quench",
+     "description": "Stop the reaction by adding immiscible CH2Cl2; the O-CDs go into the bottom, denser CH2Cl2 phase. No neutralisation with HCl is described for these samples.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "mixture_temperature_at_addition"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Centrifuge to separate the CH2Cl2 phase containing the O-CDs from the aqueous phase, then inspect the two-phase system visually.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "speed",
+      "centrifuge_speed",
+      "duration",
+      "temperature"
+     ]
     }
    ]
   },
@@ -848,6 +1314,42 @@
      "value_num": 20,
      "unit": "min",
      "parent_value": "from 15 to 60 min"
+    },
+    {
+     "parameter": "chloroform (extraction solvent, alternative to dichloromethane)",
+     "value_text": "absent",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "dichloromethane (extraction solvent, alternative to chloroform)",
+     "value_text": "immiscible CH2Cl2",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "hydrochloric acid (HCl)",
+     "value_text": "replaced by dichloromethane",
+     "parent_value": "2 M aqueous solution (concentrated), volume added until pH 7",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "acetone (non-solvent for the O-CDs purification, as in Fig. 2)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "other non-solvents tested (methanol, n-hexane, tetrahydrofuran, acetonitrile, N,N-dimethylformamide)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "nitrogen",
+     "value_text": "absent",
+     "parent_value": "nitrogen flow used to dry the O-CDs",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
     }
    ],
    "outcomes": [
@@ -860,6 +1362,94 @@
      "property": "conversion_of_W-CDs_into_O-CDs",
      "quote": "A rather complete conversion, with a brown lower organic phase and an almost colorless upper aqueous phase, is found to occur in just 20 min when 360 mM NaOH is added, and in 40 min in the presence of 90 and 180 mM NaOH (Figure 3b).",
      "value_text": "rather complete conversion in 20 min: brown lower organic phase, almost colorless upper aqueous phase"
+    },
+    {
+     "property": "phases_obtained",
+     "quote": "Otherwise, with higher CNaOH or longer reaction times, only O-CDs are obtained.",
+     "value_text": "only O-CDs are obtained"
+    },
+    {
+     "property": "color_upon_NaOH_addition_at_70C",
+     "quote": "Indeed, upon the NaOH addition at 70 °C, the initially colorless CPC solution quickly turns yellow, irrespective of the CNaOH (Figure 3a).",
+     "value_text": "the initially colorless CPC solution quickly turns yellow, irrespective of the CNaOH"
+    },
+    {
+     "property": "color_for_reaction_times_above_10_min",
+     "quote": "Then, for reaction times above 10 min, the mixture goes brownish, getting darker and darker as the CNaOH increases.",
+     "value_text": "the mixture goes brownish, getting darker and darker as the CNaOH increases"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the NaOH aqueous solution to the CPC aqueous solution, which was first heated at 70 °C in a thermostatic bath; the vials are common glass vials.",
+     "quote": "In this case, the CPC aqueous solution was initially heated at the selected temperature in a thermostatic bath, and subsequently, the NaOH solution was added.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "thermostatic bath",
+       "quote": "initially heated at the selected temperature in a thermostatic bath"
+      }
+     ],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Keep the mixture at 70 °C for 20 min.",
+     "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      },
+      {
+       "name": "duration",
+       "value_num": 20,
+       "unit": "min",
+       "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "quench",
+     "description": "Stop the reaction by adding immiscible CH2Cl2; the O-CDs go into the bottom, denser CH2Cl2 phase. No neutralisation with HCl is described for these samples.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "mixture_temperature_at_addition"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Centrifuge to separate the CH2Cl2 phase containing the O-CDs from the aqueous phase, then inspect the two-phase system visually.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "speed",
+      "centrifuge_speed",
+      "duration",
+      "temperature"
+     ]
     }
    ]
   },
@@ -890,6 +1480,42 @@
      "value_num": 40,
      "unit": "min",
      "parent_value": "from 15 to 60 min"
+    },
+    {
+     "parameter": "chloroform (extraction solvent, alternative to dichloromethane)",
+     "value_text": "absent",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "dichloromethane (extraction solvent, alternative to chloroform)",
+     "value_text": "immiscible CH2Cl2",
+     "parent_value": "10 mL",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "hydrochloric acid (HCl)",
+     "value_text": "replaced by dichloromethane",
+     "parent_value": "2 M aqueous solution (concentrated), volume added until pH 7",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "acetone (non-solvent for the O-CDs purification, as in Fig. 2)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "other non-solvents tested (methanol, n-hexane, tetrahydrofuran, acetonitrile, N,N-dimethylformamide)",
+     "value_text": "absent",
+     "parent_value": "non-solvent used for the O-CDs purification (amount not stated)",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
+    },
+    {
+     "parameter": "nitrogen",
+     "value_text": "absent",
+     "parent_value": "nitrogen flow used to dry the O-CDs",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation"
     }
    ],
    "outcomes": [
@@ -901,7 +1527,80 @@
     {
      "property": "phases_obtained",
      "quote": "Otherwise, with higher CNaOH or longer reaction times, only O-CDs are obtained.",
-     "value_text": "only O-CDs obtained (higher CNaOH or longer reaction time)"
+     "value_text": "only O-CDs are obtained"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the NaOH aqueous solution to the CPC aqueous solution, which was first heated at 70 °C in a thermostatic bath; the vials are common glass vials.",
+     "quote": "In this case, the CPC aqueous solution was initially heated at the selected temperature in a thermostatic bath, and subsequently, the NaOH solution was added.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "thermostatic bath",
+       "quote": "initially heated at the selected temperature in a thermostatic bath"
+      }
+     ],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "react",
+     "description": "Keep the mixture at 70 °C for 40 min.",
+     "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 70,
+       "unit": "°C",
+       "quote": "(a) Pictures of the vials containing the CPC initial solutions after the addition of 90, 180 and 360 mM NaOH solutions at 70 °C, at different reaction times;"
+      },
+      {
+       "name": "duration",
+       "value_num": 40,
+       "unit": "min",
+       "quote": "(b) Pictures of vials containing TPS after the separation procedure performed on the samples in (a) at reaction times of 20 and 40 min;"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "quench",
+     "description": "Stop the reaction by adding immiscible CH2Cl2; the O-CDs go into the bottom, denser CH2Cl2 phase. No neutralisation with HCl is described for these samples.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "mixture_temperature_at_addition"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Centrifuge to separate the CH2Cl2 phase containing the O-CDs from the aqueous phase, then inspect the two-phase system visually.",
+     "quote": "quenching the reaction after 20 and 40 min, respectively, by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "speed",
+      "centrifuge_speed",
+      "duration",
+      "temperature"
+     ]
     }
    ]
   },
@@ -1378,6 +2077,12 @@
    "defined_in": "Results 3.1",
    "route": null,
    "why": "Espèces intermédiaires supposées par les auteurs, non isolées ni synthétisées."
+  },
+  {
+   "sample": "Vials of Fig. 3a at 0, 2, 10 min (70 °C, 90/180/360 mM NaOH)",
+   "defined_in": "Results 3.2; Fig. 3a caption",
+   "route": null,
+   "why": "Temps intermédiaires photographiés des mêmes mélanges que les branches à 20 min ; la couleur est décrite dans le texte et portée par les branches à 20 min, sans résultat chiffré propre."
   }
  ],
  "annotations": [
@@ -1435,12 +2140,54 @@
   {
    "type": "mecanisme_analyse",
    "route": "O-CDs_RT",
-   "text": "Hypothèse de chimiste : la soude apporte à la fois le nucléophile (OH−, qui s'additionne sur le cation pyridinium) et la base qui déprotone ; le mélange acide-base (CPC à pH ≈ 5, NaOH à pH > 12) dégage de la chaleur qui amorce la réaction, ce que les auteurs signalent. On attend que la concentration plus forte en NaOH déplace les équilibres d'addition et de déprotonation vers les espèces réactives, d'où la conversion plus rapide, et que le chauffage à 70 °C accélère cinétiquement les mêmes étapes sans changer la voie, puisque taille et spectres sont inchangés. Le CPC au-dessus de sa concentration micellaire critique (15 mM) concentre probablement les têtes pyridinium à la surface des micelles et favorise les réactions entre elles."
+   "text": "Hypothèse de chimiste (à confirmer : aucune donnée de structure dans l'article). OH− s'additionnerait lentement en C2 (ou C4) du cation N-hexadécylpyridinium pour donner une pseudobase ; l'équilibre est très défavorable pour un pyridinium non activé, ce qui expliquerait des durées de jours à température ambiante et une énergie d'activation apparente d'environ 90 à 107 kJ/mol (estimée par la critique scientifique à partir des durées de l'article). L'oxydation par l'O2 de l'air (ou une dismutation) donnerait la N-hexadécyl-2-pyridone, fluorophore bleu amphiphile qui passe dans la phase organique, et des 1,2-dihydropyridines ; une ouverture partielle du cycle en dérivés aminopentadiénals (type Zincke), très colorés, est possible. Ces diénamines et aldéhydes conjugués se condenseraient et s'oligomériseraient à l'air en chromophores conjugués portant les chaînes C16, qui s'agrégeraient dans les micelles en particules hydrophobes d'environ 3 nm : jaunissement puis brunissement, turbidité, passage dans CH2Cl2. Le caractère carboné (cœur sp2 étendu) de ces particules n'est pas établi, et la cycloaddition [3+2] d'ylures de pyridinium proposée par les auteurs est peu probable ici, l'ylure non stabilisé (CH2 en α de l'azote portant seulement une chaîne alkyle) étant très peu peuplé à pH 13. Une chaleur de mélange n'amorce pas la réaction (échauffement estimé au plus 1 K à 90 mM et 3,8 K à 360 mM, même avec un majorant) : à température ambiante il s'agit d'une réaction thermique lente, accélérée par le chauffage à 70 °C selon la même énergie d'activation. Le CPC au-dessus de sa concentration micellaire critique (15 mM) concentre probablement les têtes pyridinium à la surface des micelles et favorise les réactions entre elles."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Aucune précaution n'est écrite dans l'article. NaOH à 2 M et HCl concentré sont corrosifs (gants, lunettes). Le chloroforme et le dichlorométhane sont des solvants volatils et toxiques, suspectés cancérogènes : à manipuler sous hotte. Le dichlorométhane bout à environ 40 °C : l'ajouter à un mélange encore chaud (70 °C) pour extraire les O-CDs peut provoquer une ébullition brutale, il vaut mieux refroidir d'abord. Le CPC est un tensioactif cationique irritant et toxique pour le milieu aquatique ; les déchets halogénés et aqueux sont à éliminer séparément. Le mélange NaOH-CPC dégage de la chaleur à l'addition."
+   "text": "Aucune précaution n'est écrite dans l'article. NaOH 2 M et HCl 2 M (que l'article appelle « concentrated » alors que 2 M n'est pas concentré) sont corrosifs (gants, lunettes). Le chloroforme et le dichlorométhane sont des solvants volatils et toxiques, suspectés cancérogènes : à manipuler sous hotte, avec des tubes de centrifugeuse compatibles (le polycarbonate est attaqué), bien fermés et équilibrés pour 20 à 40 min. Le dichlorométhane (point d'ébullition ≈ 40 °C) versé sur un mélange encore à 70 °C, comme dans la figure 3b, vaporiserait d'après un calcul de la critique scientifique environ 20 % du solvant : ébullition vive, surpression dans un récipient fermé, perte de solvant ; il vaut mieux refroidir et neutraliser d'abord. Extraire au chloroforme un mélange encore basique contenant du CPC (ammonium quaternaire, catalyseur de transfert de phase) peut former du dichlorocarbène (réaction de Makosza) : neutraliser avant l'extraction, comme le fait la méthode générale. Le CPC est un tensioactif cationique irritant et toxique pour le milieu aquatique ; les déchets halogénés et aqueux sont à éliminer séparément. La chaleur dégagée à l'addition de la soude est négligeable (élévation d'au plus quelques kelvins) et ne constitue pas un danger propre."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "O-CDs_RT_360mM",
+   "text": "La durée minimale de 96 h à température ambiante (avec 360 mM de NaOH, plus longtemps encore avec des concentrations plus faibles) est la valeur rapportée par la référence de départ citée par les auteurs, pas un résultat mesuré dans cet article ; elle sert de comparaison avec les 20 min à 70 °C.",
+   "quote": "In fact, a minimum reaction time of 96 h was reported [] with high CNaOH (360 mM), while an even longer reaction time was needed for the lower CNaOH."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Plage de NaOH incohérente entre sections : le texte principal donne 90–360 mM, le protocole de l'annexe 15–360 mM (rapport NaOH/CPC de 1 à 24). À 15 mM il n'y a qu'un équivalent de OH− par CPC et aucun résultat n'y est rattaché : l'annexe est probablement erronée, et il ne faut pas descendre sous 90 mM sans essai préalable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "O-CDs_RT",
+   "text": "Chaleur de mélange : les auteurs écrivent que la réaction « peut être activée » par la chaleur dégagée quand la solution de CPC (pH ≈ 5) rencontre la soude concentrée. D'après les calculs de la critique scientifique, l'échauffement est d'au plus 1 K à 90 mM et 3,8 K à 360 mM, même avec un majorant ; l'explication ne tient pas, la réaction à température ambiante est une réaction thermique lente. Ne pas compter sur cet effet pour amorcer ou accélérer la synthèse.",
+   "quote": "since the reaction can be activated just by the heat generated when the weakly acidic CPC solution (pH ≈ 5) is mixed with the concentrated NaOH solution (pH > 12)"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les intermédiaires 2-pyridone et le cœur polyhétéroaromatique sont présentés comme « démontrés » par les auteurs, mais aucune donnée de structure n'est montrée (ni RMN, ni IR, ni XPS, ni spectrométrie de masse, ni spectre d'un témoin N-hexadécyl-2-pyridone). L'émission bleue indépendante de l'excitation prouve une espèce moléculaire, pas sa nature. La microscopie à 100 kV de particules de 3 nm sans réseau cristallin ne distingue pas un point de carbone d'agrégats de colorants amphiphiles (piège décrit par Essner et al., Chem. Mater. 2018, d'après la critique scientifique). Le mécanisme proposé est une hypothèse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "O-CDs_RT",
+   "text": "Protocole à température ambiante incomplet ou contradictoire : (1) le volume total est fixé à 10 mL avec une solution mère de CPC à 20 mM ; d'après la critique scientifique il faut ajouter environ 0,7 à 2 mL d'eau pour atteindre 10 mL selon la concentration en NaOH, ce que l'article ne mentionne pas ; (2) les flacons sont-ils bouchés pendant 167 h ? À pH 13 une solution ouverte absorbe le CO2 et s'évapore, et l'oxydation consomme de l'O2 : l'espace de tête et la fermeture changent la chimie ; (3) la température « ambiante » réelle n'est pas donnée (20 ou 25 °C changent la durée d'un facteur environ 2) ; (4) le « non-solvant » du lavage est contredit par la phrase suivante, qui dit les O-CDs dispersibles à un certain degré dans tous les solvants testés : une partie des O-CDs part dans le surnageant et le rendement est inconnu ; (5) la turbidité à 360 mM n'est pas comparée à un témoin CPC + NaCl à même force ionique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "O-CDs_70C",
+   "text": "Conditions exactes absentes : les échantillons à 70 °C caractérisés (microscopie de la figure 3c, spectres de la figure 4, tableau S1, rendement quantique « irrespective of the reaction conditions ») ne sont rattachés à aucune concentration en NaOH ni à aucune durée (plages 90–360 mM, 15–60 min) ; la condition recommandée par les auteurs est 360 mM pendant 20 min. L'arrêt de la réaction est dit par ajout de CH2Cl2 (figure 3b) ou par neutralisation à l'HCl (méthode générale) sans préciser lequel s'applique aux échantillons caractérisés. Pour la figure 3b, verser du CH2Cl2 sur le mélange à 70 °C vaporiserait environ 20 % du solvant (calcul de la critique scientifique) : surpression si le récipient est fermé. La soude n'est pas dite préchauffée : son ajout à température ambiante refroidirait transitoirement le mélange (jusqu'à environ 9 K à 360 mM)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "O-CDs_40C",
+   "text": "L'absence de « différence significative » à 40 °C n'est étayée par aucune donnée (« data not reported »), ni durée ni concentration. Avec l'énergie d'activation apparente de 90 à 107 kJ/mol estimée par la critique scientifique à partir des autres données, on attend un facteur 6 à 8 sur la vitesse entre 25 et 40 °C : le constat n'est compatible qu'avec une observation très courte. Résultat à refaire avant de l'utiliser."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "W-CDs_70C",
+   "text": "La dialyse sur membrane de 12,4 kDa est à la limite de la masse d'un point de 3,3 nm (≈ 17 à 26 kDa selon la masse volumique supposée, d'après la critique scientifique) et la taille des W-CDs n'est pas mesurée : des W-CDs plus petits traverseraient la membrane, tandis que des micelles de CPC (plus d'une trentaine de monomères) sont retenues, ce qui peut expliquer le pic résiduel à 260 nm ; milieu et volume de dialyse non donnés. L'attribution « sans ambiguïté » des bandes à des transitions n-π* par solvatochromie compare deux populations différentes (W-CDs dans l'eau, O-CDs dans le chloroforme) : elle montre un décalage hypsochrome entre deux échantillons, pas une solvatochromie démontrée."
   }
  ],
  "method_sources": [
@@ -1449,12 +2196,6 @@
    "ref_id": "B24-materials-13-03716",
    "role": "protocole_adapte",
    "quote": "Firstly, the CDs were synthesized according to the method reported by Zheng et al. [], consisting of a simple reaction of CPC with NaOH at RT."
-  },
-  {
-   "route": "O-CDs_70C",
-   "ref_id": "B24-materials-13-03716",
-   "role": "autre",
-   "quote": "Thus, a visual inspection of the TPS will already provide a rough estimation of the extent of the conversion of W-CDs into O-CDs []."
   }
  ],
  "doubts": [
@@ -1471,12 +2212,12 @@
    "issue": "Le résultat à 40 °C est « sans différence significative » et « data not reported » ; ni concentration en NaOH ni durée ne sont données : la branche ne porte que la température (préchauffage de la solution de CPC puis réaction à 40 °C)."
   },
   {
-   "where": "O-CDs_70C et branches à 70 °C, étapes héritées",
-   "issue": "Le préchauffage de la solution de CPC dans un bain thermostaté avant l'ajout de NaOH n'est pas une étape du protocole de base ; il est représenté par la variation de température de l'étape 1 (ajout) et de l'étape 2 (réaction), l'équipement (bain thermostaté) n'étant pas reporté sur la branche. Pour le plan à deux phases de la figure 3b, le texte dit que la réaction est arrêtée « by adding immiscible CH2Cl2 » alors que la méthode générale neutralise d'abord au HCl ; l'ordre des étapes 3 et 4 de la voie de base est repris sans certitude pour ces échantillons."
+   "where": "O-CDs_70C (préchauffage et étapes héritées)",
+   "issue": "Le préchauffage de la solution de CPC dans un bain thermostaté avant l'ajout de NaOH n'est pas une étape du protocole de base ; il est représenté par la variation de température de l'étape 1 (ajout) et de l'étape 2 (réaction). Les échantillons caractérisés à 70 °C (branche O-CDs_70C, figures 3c et 4, tableau S1) héritent de la neutralisation par HCl (étape 3) parce que la méthode générale la décrit, mais pour la figure 3b le texte dit que la réaction est arrêtée « by adding immiscible CH2Cl2 » (voir le doute sur les six branches du plan à deux phases) ; l'article ne dit pas lequel des deux arrêts a été appliqué aux échantillons caractérisés."
   },
   {
    "where": "O-CDs_70C_*_20min et 40min",
-   "issue": "Seules les conversions complètes sont écrites (360 mM en 20 min ; 90 et 180 mM en 40 min). Pour 90 et 180 mM à 20 min, le seul fait écrit est que les W-CDs peuvent encore être isolés ; pour 360 mM à 40 min, « only O-CDs are obtained ». Rien n'est écrit sur les photographies à 0, 2, 10, 20 min au-delà des tendances générales."
+   "issue": "Les conversions complètes écrites sont : 360 mM en 20 min ; 90 et 180 mM en 40 min. Pour 90 et 180 mM à 20 min, le seul fait écrit est que les W-CDs peuvent encore être isolés. La phrase « Otherwise, with higher CNaOH or longer reaction times, only O-CDs are obtained » est un énoncé général : elle est rattachée par concordance aux échantillons 360 mM à 20 min, 90 et 180 mM à 40 min et 360 mM à 40 min (concentration plus forte ou durée plus longue que 90–180 mM à 20 min) ; l'article ne nomme pas ces échantillons. La couleur observée à 70 °C (jaune dès l'ajout, brun au-delà de 10 min) est donnée pour toutes les concentrations par le texte ; les photographies à 0, 2 et 10 min n'ont pas de branche."
   },
   {
    "where": "O-CDs_70C, valeurs lues sur la figure 3c",
@@ -1493,6 +2234,18 @@
   {
    "where": "W-CDs_70C",
    "issue": "Les W-CDs sont isolables à 70 °C « within the first 20 min » avec 90–180 mM de NaOH ; la concentration et le temps exacts de l'échantillon analysé aux figures 4a-c et au tableau S1 ne sont pas donnés. La voie est écrite avec les plages et le solvant d'extraction « CHCl3 or CH2Cl2 »."
+  },
+  {
+   "where": "O-CDs_RT, plage de concentration en NaOH (texte et annexe)",
+   "issue": "Le texte principal donne CNaOH = 90–360 mM (« The final CNaOH was varied in the range of 90–360 mM ») ; le protocole de l'annexe donne 15 mM de CPC et NaOH « in the range 15–360 mM ». Les valeurs extraites sont celles du texte (90 mM pour la voie de base, 90–360 mM pour les séries) ; aucune donnée n'est rattachée à 15, ni à 15–90 mM."
+  },
+  {
+   "where": "O-CDs_70C_90/180/360mM_20/40min (six branches du plan à deux phases, figure 3b)",
+   "issue": "Pour ces échantillons le texte dit seulement que la réaction est arrêtée « by adding immiscible CH2Cl2 in order to extract the O-CDs by centrifugation ». Les branches ont donc leurs propres étapes (ajout de NaOH à 70 °C, réaction, arrêt au CH2Cl2, centrifugation) et ne reprennent ni la neutralisation par HCl à pH 7 ni la purification des O-CDs (séchage sous azote, lavage au non-solvant, redispersion) ; le chloroforme, l'acétone et les autres non-solvants sont déclarés absents. Non cités : volume de CH2Cl2 (le volume fixe de 10 mL est décrit pour la méthode générale), température du mélange à l'ajout, vitesse et durée de centrifugation, agitation. La légende (b) parle de « the separation procedure » appliquée aux échantillons de (a), ce qui pourrait renvoyer à la méthode générale (avec neutralisation) : lecture ambiguë, la plus littérale (arrêt au CH2Cl2) est retenue."
+  },
+  {
+   "where": "O-CDs_RT_360mM, rattachement du résultat à température ambiante",
+   "issue": "Le rattachement de la concentration 360 mM à la phrase sur la température ambiante repose sur « the same result was reached after just 20 h », qui renvoie au mélange à 360 mM turbide dès 10 min à 70 °C sans répéter la concentration. La citation de la variation contient les deux phrases."
   }
  ]
 }
