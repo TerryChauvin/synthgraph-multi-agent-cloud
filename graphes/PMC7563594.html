@@ -1,0 +1,64 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7563594</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7563594 — Preparation of Cross-Linked Graphene Oxide on Polyethersulfone Membrane for Pharmaceuticals and Personal Care Products Removal.</h1>
+<h2>Voie : GO-EDA</h2>
+<pre class="mermaid">flowchart LR
+  R17216([&quot;graphene oxide sol&lt;br/&gt;400 ppm&quot;]):::reactif
+  R17216 --&gt;|&quot;precursor&quot;| S20500
+  R17217([&quot;ethylenediamine (EDA)&lt;br/&gt;0.1 M&quot;]):::reactif
+  R17217 --&gt;|&quot;crosslinker&quot;| S20500
+  R17218([&quot;dopamine hydrochloride&lt;br/&gt;2 g/L&quot;]):::reactif
+  R17218 --&gt;|&quot;precursor&quot;| S20500
+  R17219([&quot;tris(hydroxymethyl)aminomethane acetic acid&lt;br/&gt;10 mM&quot;]):::reactif
+  R17219 --&gt;|&quot;additive&quot;| S20500
+  R17220([&quot;PES ultrafiltration membrane (PBVK07610)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17220 --&gt;|&quot;substrate&quot;| S20500
+  R17221([&quot;methanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17221 --&gt;|&quot;wash&quot;| S20500
+  S20500[&quot;&lt;b&gt;1. wash&lt;/b&gt;&quot;]:::etape
+  S20500 --&gt; S20501
+  S20501[&quot;&lt;b&gt;2. immerse&lt;/b&gt;&lt;br/&gt;duration : 48 h&lt;br/&gt;concentration_dopamine : 2 g/L&lt;br/&gt;concentration_tris : 10 mM&quot;]:::etape
+  S20501 --&gt; S20502
+  S20502[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;concentration_go : 400 ppm&lt;br/&gt;concentration_amine : 0.1 M&quot;]:::etape
+  S20502 --&gt; S20503
+  S20503[&quot;&lt;b&gt;4. sonicate&lt;/b&gt;&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S20503 --&gt; S20504
+  S20504[&quot;&lt;b&gt;5. age&lt;/b&gt;&lt;br/&gt;duration : 5 h&quot;]:::etape
+  S20504 --&gt; S20505
+  S20505[&quot;&lt;b&gt;6. add&lt;/b&gt;&lt;br/&gt;volume : 100 mL&quot;]:::etape
+  S20505 --&gt; S20506
+  S20506[&quot;&lt;b&gt;7. filter&lt;/b&gt;&lt;br/&gt;pressure : 1 bar&lt;br/&gt;surface_density : 25 mg/m2&quot;]:::etape
+  S20506 --&gt; S20507
+  S20507[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 65 °C&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S20507 --&gt; S20508
+  S20508[&quot;&lt;b&gt;9. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : methanol&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S20508 --&gt; S20509
+  S20509[&quot;&lt;b&gt;10. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S20509 --&gt; M
+  M{{&quot;EDA cross-linked graphene oxide membrane on dopam…&lt;br/&gt;&quot;}}:::materiau
+  O81552[&quot;layer_spacing : 0.95 nm&quot;]:::resultat
+  M -.-&gt; O81552
+  O81553[&quot;O_C_ratio : 0.44&quot;]:::resultat
+  M -.-&gt; O81553
+  O81554[&quot;water_contact_angle_initial : 62 °&quot;]:::resultat
+  M -.-&gt; O81554
+  O81555[&quot;water_contact_angle_final_about_5_s : 50 °&quot;]:::resultat
+  M -.-&gt; O81555
+  O81556[&quot;pure_water_flux : 5.27 L/m2·h·bar&quot;]:::resultat
+  M -.-&gt; O81556
+  O81557[&quot;ibuprofen_total_removal_rate : 44.9 %&quot;]:::resultat
+  M -.-&gt; O81557
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13077{{&quot;GO-EDA&quot;}}:::materiau
+  B13078[&quot;GO-0&quot;]:::etape
+  B13077 --&gt;|&quot;ethylenediamine (EDA) = absent&lt;br/&gt;methanol = absent&quot;| B13078
+  B13079[&quot;GO-BDA&quot;]:::etape
+  B13077 --&gt;|&quot;ethylenediamine (EDA) = replaced by butanediamin…&quot;| B13079
+  B13080[&quot;GO-PPD&quot;]:::etape
+  B13077 --&gt;|&quot;ethylenediamine (EDA) = replaced by p-phenylened…&quot;| B13080
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
