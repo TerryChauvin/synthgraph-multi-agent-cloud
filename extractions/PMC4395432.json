@@ -303,6 +303,13 @@
      "value_num": 0.15,
      "unit": "a.u.",
      "from_figure": "Fig 5a"
+    },
+    {
+     "property": "nanorod_diameter",
+     "quote": "Fig 1 FESEM and HRTEM images of ZnO-based nanostructures.FESEM images of (a) ZnO nanorods, (b) ZnO nanocons, (c) ZnO–ZnS core–shell nanocones, and (d) HRTEM image of the ZnO-ZnS core-shell structure.",
+     "value_num": 150,
+     "unit": "nm",
+     "from_figure": "Fig 1a"
     }
    ],
    "missing_fields": [
@@ -692,7 +699,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": []
+     "not_stated": [
+      "number_of_rinses"
+     ]
     },
     {
      "order": 5,
@@ -729,7 +738,7 @@
     },
     {
      "technique": "XRD",
-     "result": "ZnO wurtzite hexagonal, pic large et faible du ZnS à 2θ = 28,6°",
+     "result": "ZnO wurtzite hexagonal, pic (0002) prédominant et étroit (orientation selon la normale au substrat), pic large et faible du ZnS à 2θ = 28,6°",
      "instrument": "Rigaku Ultima IV",
      "conditions": null,
      "quote": "An additional relatively broad and weak peak was observed at 2θ = 28.6°, which corresponds to the ZnS phase."
@@ -813,6 +822,18 @@
      "value_num": 1.2,
      "unit": "a.u.",
      "from_figure": "Fig 5a"
+    },
+    {
+     "property": "XRD_preferred_orientation",
+     "quote": "The predominant (0002) peak with narrow width indicates well oriented along the normal direction of the substrate surface, which is consistent with the FESEM observation in Fig 1.",
+     "value_text": "predominant (0002) peak with narrow width indicates well oriented along the normal direction of the substrate surface"
+    },
+    {
+     "property": "ZnS_shell_thickness_TEM",
+     "quote": "Fig 1 FESEM and HRTEM images of ZnO-based nanostructures.FESEM images of (a) ZnO nanorods, (b) ZnO nanocons, (c) ZnO–ZnS core–shell nanocones, and (d) HRTEM image of the ZnO-ZnS core-shell structure.",
+     "value_num": 10,
+     "unit": "nm",
+     "from_figure": "Fig 1d"
     }
    ],
    "missing_fields": [
@@ -1048,7 +1069,7 @@
     {
      "technique": "dye loading",
      "result": "quantité de colorant adsorbée par désorption et spectre UV–vis de la solution",
-     "instrument": "UV–vis spectrophotometer (Perkin Elmer Lambda 750)",
+     "instrument": null,
      "conditions": null,
      "quote": "The dye absorbed amounts on ZnO-based photoelectrodes were determined by measuring the UV–vis absorption spectra of solutions containing dyes desorbed from the samples."
     },
@@ -1096,6 +1117,10 @@
      "value_num": 1.93,
      "unit": "10−8 mol/cm2"
     }
+   ],
+   "missing_fields": [
+    "dye_desorption_solvent",
+    "dye_loading_instrument"
    ]
   },
   {
@@ -1186,7 +1211,7 @@
    "reagents": [
     {
      "name": "ZnO_ZnS_nanocones",
-     "formula": "ZnO",
+     "formula": "ZnO/ZnS",
      "role": "intermediate",
      "quote": "The photovoltaic properties of the ZnO nanorods, nanocones, and core–shell structures were investigated by assembling the DSSCs and performing the standard methods described in the experimental section.",
      "not_stated": [
@@ -1286,12 +1311,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZnO_ZnS_nanocones",
-   "text": "Hypothèse de chimiste : la thioacétamide s'hydrolyse à 80 °C en libérant probablement du H2S (CH3CSNH2 + 2 H2O → CH3COO− + NH4+ + H2S), et le ZnO de surface est converti en ZnS par échange d'anions (ZnO + H2S → ZnS + H2O) ; le ZnS étant bien moins soluble, la coquille s'épaissit par dissolution–reprécipitation de Zn2+ issu du cœur, ce qui est cohérent avec la taille de nanocristaux de 2,7 nm."
+   "text": "Hypothèse de chimiste, non démontrée par l'article : la thioacétamide s'hydrolyse à 80 °C en libérant probablement du H2S (CH3CSNH2 + 2 H2O → CH3COO− + NH4+ + H2S), et le ZnO de surface est converti en ZnS (ZnO + H2S → ZnS + H2O), très favorisé par l'écart de solubilité ; la coquille croîtrait par dissolution–reprécipitation de Zn2+ issu du cœur, en nanograins de quelques nm. Si la coquille provient du cœur, la conversion consomme d'abord les parties les plus fines (pointes) et la croissance est limitée par la diffusion à travers la coquille déjà formée."
   },
   {
    "type": "securite_analyse",
    "route": "ZnO_ZnS_nanocones",
-   "text": "La thioacétamide est cancérogène suspectée et dégage du H2S, gaz très toxique, quand elle s'hydrolyse à chaud : travailler sous hotte et traiter les effluents. Le nitrate de zinc est un oxydant ; l'acétonitrile et le butanol sont inflammables, le 3-méthoxypropionitrile et la 4-tert-butylpyridine sont nocifs, l'iode est irritant. La solution d'électrodéposition étant chauffée à 110 °C dans un milieu aqueux, une cellule fermée serait sous pression : l'article ne précise pas le montage."
+   "text": "La thioacétamide est cancérogène (catégorie 1B) et hépatotoxique ; elle libère du H2S, gaz très toxique, en s'hydrolysant à chaud. La sulfuration dure 3 h à 80 °C dans « a conventional laboratory oven » : une étuve ordinaire non ventilée disperse le H2S dans l'étuve et la pièce, donc travailler en enceinte ventilée (hotte) et traiter les effluents. Le nitrate de zinc est un oxydant ; l'acétonitrile et le butanol sont inflammables, le 3-méthoxypropionitrile et la 4-tert-butylpyridine sont nocifs, l'iode est irritant. La solution d'électrodéposition étant chauffée à 110 °C en milieu aqueux, une cellule fermée serait sous pression (≈ 1,4 bar) : l'article ne précise pas le montage."
   },
   {
    "type": "limite_reproductibilite",
@@ -1308,6 +1333,51 @@
    "type": "securite_analyse",
    "route": "DSSC_ZnO_nanorods",
    "text": "Les électrolytes iodure/organiques sont irritants et l'acétonitrile est inflammable ; le montage de la cellule scellée (Surlyn chauffé) n'est pas décrit. L'illumination au simulateur solaire (xénon, 100 mW/cm2) demande une protection des yeux contre l'UV."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZnO_nanocones",
+   "text": "Hypothèse de chimiste : l'effilement continu sur ≈ 2 μm s'expliquerait plus probablement par la diminution du diamètre de la zone en croissance (appauvrissement local en Zn2+ ou courant croissant au cours du dépôt) que par la seule disparition des faces à croissance rapide, qui ne donne qu'une pointe facettée ; l'article n'apporte aucune mesure qui permette de trancher."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "DSSC_ZnO_ZnS_nanocones",
+   "text": "Hypothèse de chimiste : la coquille de ZnS passive les états de surface du ZnO et réduit la recombinaison avec I3−, ce qui expliquerait la hausse de Voc ; l'injection depuis le colorant passerait plutôt par une coquille mince ou discontinue de nanograins que par un effet tunnel à travers « plusieurs dizaines de nm ». L'alignement de type II invoqué par les auteurs ne favoriserait la séparation des charges que si l'interface est continue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_nanorods",
+   "text": "La croissance se fait à 110 °C en solution aqueuse dans « an electrochemical cell » dont aucune fermeture ni pression n'est décrite : la pression de vapeur de l'eau à 110 °C (≈ 143 kPa, table de saturation du NIST WebBook) dépasse la pression atmosphérique. Soit la cellule est close et sous ≈ 0,4 bar de surpression, soit 110 °C est la consigne d'une étuve ou d'un bain et la solution est à 100 °C au plus ; un chimiste ne peut pas savoir lequel (voie des nanocônes concernée de la même façon)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_nanocones",
+   "text": "La densité de courant de l'EFAS est la seule variable qui distingue nanotiges et nanocônes et elle n'est pas chiffrée (« low current densities » contre « gradually increased », renvoi à la réf. 29, non consultée) : la forme conique ne peut pas être refaite avec l'article seul. À titre d'indication non vérifiée, une thèse du même groupe (R. Dalvand, Universiti Sains Malaysia, 2019, d'après un résumé) rapporte environ 0,5 mA/cm2 pour des tiges et environ 0,65 mA/cm2 pour des têtes coniques, à concentration et durée différentes de celles de l'article ; ces chiffres ne sont pas des valeurs de l'article. Le recuit à 250 °C des nanocônes avant la sulfuration reste ambigu (voir les doutes)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_ZnS_nanocones",
+   "text": "L'article écrit « the lattice spacing of 0.52 nm corresponds to the d-spacing of (0002) crystal planes » : or d(0002) du ZnO wurtzite vaut ≈ 0,26 nm, et 0,52 nm est le paramètre c (d(0001)), selon Özgür et al., J. Appl. Phys. 98, 041301 (2005). La conclusion d'une croissance selon l'axe c reste juste, mais la valeur 0,52 nm ne doit pas être reprise comme d(0002) ; la valeur extraite est celle écrite par les auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_ZnS_nanocones",
+   "text": "Réserves sur la coquille de ZnS : la taille de cristallite de 2,7 nm (Scherrer, sans largeur à mi-hauteur ni facteur K) implique une raie d'environ 3° de large, alors que la bosse de la Fig 2 paraît deux fois plus étroite (lecture de figure approximative) ; le polytype du ZnS (blende ou wurtzite) n'est pas tranché, la frange de 0,31 nm et le pic à 28,6° convenant aux deux ; « plusieurs dizaines de nm » de coquille contredit une coquille d'environ 10 nm sur la Fig 1d et des pointes de 15 nm, car 30 nm de ZnS consommeraient environ 18 nm de rayon de ZnO si la coquille vient de la conversion du cœur ; les images de la Fig 1 portent des dates d'acquisition différentes (mars et juillet 2014), donc des lots possiblement différents."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO_ZnS_nanocones",
+   "text": "L'« absorption » de 1,2 u.a. à 600 nm (Fig 5a) ne peut venir du ZnO ni du ZnS, qui n'absorbent pas à cette longueur d'onde (≈ 2,07 eV) : une diffusion par la surface rugueuse de la coquille l'expliquerait plus simplement que la bande interfaciale invoquée par les auteurs, et les Méthodes ne décrivent qu'une mesure de transmittance sans sphère d'intégration."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DSSC_ZnO_nanocones",
+   "text": "Le témoin nanotiges contre nanocônes change plusieurs variables à la fois (forme, densité de courant du dépôt non chiffrée, recuit à 250 °C peut-être absent pour les nanocônes, densité de défauts), et aucune mesure d'IPCE ni de rendement de collecte n'étaie l'explication par les faces {10-11} et le piégeage de lumière : l'effet de la seule forme n'est pas isolé."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DSSC_ZnO_ZnS_nanocones",
+   "text": "Les auteurs écrivent que le ZnS « supprime l'effet tunnel » et confine les électrons dans le ZnO, alors que le colorant adsorbé sur la coquille doit injecter ses électrons à travers elle ; l'injection n'est cohérente qu'avec une coquille mince ou discontinue (Schrier et al., Nano Lett. 7, 2377, 2007). Le vocabulaire est inexact : « LOMO » pour LUMO, énergie libre d'injection « plus positive » présentée comme favorable (une injection favorable a une énergie libre plus négative), émission à 580 nm dite « verte » alors qu'elle est jaune-orangée, et « core/shell nanowires » pour des nanocônes dans la discussion de la Fig 7."
   }
  ],
  "method_sources": [
@@ -1405,7 +1475,7 @@
   },
   {
    "where": "ZnO_nanocones",
-   "issue": "Le rinçage et le recuit à 250 °C ne sont écrits que pour « the FTO substrates containing the ZnO nanorods » ; la voie nanocônes a ses propres étapes 1 à 4 sans ces deux étapes, déclarées non citées. L'autre lecture (mêmes rinçage et recuit) est possible mais non écrite."
+   "issue": "Le rinçage et le recuit à 250 °C ne sont écrits que pour « the FTO substrates containing the ZnO nanorods » ; la voie nanocônes a ses propres étapes 1 à 4 sans ces deux étapes, déclarées non citées. Deux lectures sont possibles. (1) Le paragraphe décrit un seul protocole EFAS pour « nanorod and nanocone arrays » (durée et température communes) puis enchaîne rinçage, recuit et « The as-grown ZnO nanocone arrays » comme gabarit : les auteurs emploieraient « nanorods » au sens large (ailleurs « nanoneedles », « nanowires »), et les nanocônes seraient donc rincés et recuits. (2) « as-grown » plaide pour des nanocônes non recuits et la phrase ne vise que les nanotiges. Lecture retenue : not_stated, aucune étape ajoutée."
   },
   {
    "where": "ZnO_nanocones, résultats",
@@ -1426,6 +1496,22 @@
   {
    "where": "Méthodes (UV–vis)",
    "issue": "La section Méthodes cite la « transmittance » mesurée au Perkin Elmer Lambda 750, alors que les Résultats montrent des spectres d'absorption et de réflectance (Fig 5) ; l'appareil est attribué à ces deux mesures sans certitude."
+  },
+  {
+   "where": "DSSC_ZnO_nanorods, dosage de colorant",
+   "issue": "L'appareil de l'UV–vis n'est nommé que pour la transmittance (« The transmittance property was characterized using a UV–vis spectrophotometer (Perkin Elmer Lambda 750) ») ; pour le dosage du colorant désorbé, ni l'appareil ni le solvant de désorption ne sont donnés (instrument non renseigné, solvant en manque)."
+  },
+  {
+   "where": "ZnO_nanorods et ZnO_ZnS_nanocones, dimensions lues sur la Fig 1",
+   "issue": "Diamètre des nanotiges ≈ 150 nm lu sur la Fig 1a (hexagones vus en bout, barre de 400 nm ; largeurs de ≈ 100 à 200 nm, précision ±50 nm). Épaisseur de la coquille de ZnS ≈ 10 nm lue sur la Fig 1d (barre de 50 nm ; objet imagé d'environ 40 nm de large, précision ±3 nm, un seul objet). La longueur des nanotiges n'est pas lisible (tiges coupées par le cadre de l'encart, vue inclinée) : non extraite. Ces lectures ne remplacent pas « several tens of nanometers » écrit par les auteurs."
+  },
+  {
+   "where": "ZnO_ZnS_nanocones, résultats du TEM",
+   "issue": "« the lattice spacing of 0.52 nm corresponds to the d-spacing of (0002) crystal planes » : valeur et phrase de l'article conservées telles quelles (la frange de 0,52 nm porte la flèche [001] sur la Fig 1d)."
+  },
+  {
+   "where": "DSSC_ZnO_nanocones, texte de la Table 1",
+   "issue": "« the ZnO nanocones cell exhibited the highest efficiency (η = 2.09%) » alors que la cellule cœur–coquille atteint 4,07 % (Table 1) : incohérence de rédaction des auteurs (la plus haute des deux cellules sans coquille), aucune valeur corrigée."
   }
  ]
 }
