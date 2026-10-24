@@ -1,0 +1,62 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10420257</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10420257 — Improved Visible Emission from ZnO Nanoparticles Synthesized via the Co-Precipitation Method.</h1>
+<h2>Voie : ZnO_Ac_KOH4_water</h2>
+<pre class="mermaid">flowchart LR
+  R17203([&quot;zinc acetate dihydrate&lt;br/&gt;20 mmol&quot;]):::reactif
+  R17203 --&gt;|&quot;precursor&quot;| S20494
+  R17204([&quot;water&lt;br/&gt;70 mL&quot;]):::reactif
+  R17204 --&gt;|&quot;solvent&quot;| S20494
+  R17205([&quot;potassium hydroxide&lt;br/&gt;80 mmol&quot;]):::reactif
+  R17205 --&gt;|&quot;base&quot;| S20494
+  R17206([&quot;water (wash)&lt;br/&gt;20 mL&quot;]):::reactif
+  R17206 --&gt;|&quot;wash&quot;| S20494
+  R17207([&quot;ethanol (wash)&lt;br/&gt;20 mL&quot;]):::reactif
+  R17207 --&gt;|&quot;wash&quot;| S20494
+  S20494[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S20494 --&gt; S20495
+  S20495[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;order_of_addition : simultaneously precipitated&quot;]:::etape
+  S20495 --&gt; S20496
+  S20496[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 1 h&lt;br/&gt;temperature : ambient conditions&quot;]:::etape
+  S20496 --&gt; S20497
+  S20497[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S20497 --&gt; S20498
+  S20498[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : 20 mL of water and then with …&quot;]:::etape
+  S20498 --&gt; S20499
+  S20499[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S20499 --&gt; M
+  M{{&quot;zinc oxide nanoparticles&lt;br/&gt;ZnO&quot;}}:::materiau
+  O81475[&quot;crystalline_domain_size_XRD_(Table… : 20 nm&quot;]:::resultat
+  M -.-&gt; O81475
+  O81476[&quot;XRD_FWHM_(101) : 0.44 °&quot;]:::resultat
+  M -.-&gt; O81476
+  O81477[&quot;crystalline_domain_size_(101)_Sche… : 20 nm&quot;]:::resultat
+  M -.-&gt; O81477
+  O81478[&quot;XRD_FWHM_(002) : 0.36 °&quot;]:::resultat
+  M -.-&gt; O81478
+  O81479[&quot;crystalline_domain_size_(002)_Sche… : 24 nm&quot;]:::resultat
+  M -.-&gt; O81479
+  O81480[&quot;morphology : needles&quot;]:::resultat
+  M -.-&gt; O81480
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13069{{&quot;ZnO_Ac_KOH4_water&quot;}}:::materiau
+  B13070[&quot;ZnO_Ac_KOH4_ethanol&quot;]:::etape
+  B13069 --&gt;|&quot;water = replaced by ethanol&quot;| B13070
+  B13071[&quot;ZnO_Ac_KOH2&quot;]:::etape
+  B13069 --&gt;|&quot;potassium hydroxide = two equivalents of KOH&quot;| B13071
+  B13072[&quot;ZnO_Ac_LiOH2&quot;]:::etape
+  B13069 --&gt;|&quot;potassium hydroxide = replaced by LiOH, volume…&quot;| B13072
+  B13073[&quot;ZnO_Ac_LiOH4&quot;]:::etape
+  B13069 --&gt;|&quot;potassium hydroxide = replaced by LiOH, volume…&quot;| B13073
+  B13074[&quot;ZnO_Sulf_KOH4&quot;]:::etape
+  B13069 --&gt;|&quot;zinc acetate dihydrate = replaced by zinc sulfate…&quot;| B13074
+  B13075[&quot;ZnO_Sulf_LiOH2&quot;]:::etape
+  B13069 --&gt;|&quot;zinc acetate dihydrate = replaced by zinc sulfate…&lt;br/&gt;potassium hydroxide = replaced by LiOH, volume…&quot;| B13075
+  B13076[&quot;ZnO_Sulf_LiOH4&quot;]:::etape
+  B13069 --&gt;|&quot;zinc acetate dihydrate = replaced by zinc sulfate…&lt;br/&gt;potassium hydroxide = replaced by LiOH, volume…&quot;| B13076
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
