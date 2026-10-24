@@ -450,9 +450,10 @@
      "amount": 3,
      "unit": "g",
      "not_stated": [
-      "purity",
-      "supplier"
-     ]
+      "purity"
+     ],
+     "supplier": "Aldrich Chemical Co.",
+     "supplier_quote": "All other reagents and anhydrous solvents, stored over 4 Å molecular sieves, were purchased from Aldrich Chemical Co. (Madrid, Spain) and used without further purification."
     },
     {
      "name": "methanol (washing of the resin)",
@@ -513,9 +514,30 @@
     {
      "order": 3,
      "action": "neutralize",
-     "description": "Neutralise the mixture with IR-120 resin, filter and wash with methanol.",
-     "quote": "reaction mixture was neutralized with IR-120 resin (3 g), filtered and washed with 10 mL of methanol",
+     "description": "Neutralise the reaction mixture with IR-120 resin.",
+     "quote": "reaction mixture was neutralized with IR-120 resin (3 g)",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "filter",
+     "description": "Filter off the resin.",
+     "quote": "neutralized with IR-120 resin (3 g), filtered",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash the resin with methanol.",
+     "quote": "filtered and washed with 10 mL of methanol",
      "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "filtered and washed with 10 mL of methanol",
+       "value_text": "methanol"
+      },
       {
        "name": "volume",
        "quote": "washed with 10 mL of methanol",
@@ -523,10 +545,13 @@
        "unit": "mL"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
     },
     {
-     "order": 4,
+     "order": 6,
      "action": "concentrate",
      "description": "Concentrate the combined methanol layers.",
      "quote": "Combined methanol layers were concentrated and purified",
@@ -538,7 +563,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 7,
      "action": "purify",
      "description": "Purify by silica gel column chromatography (12% MeOH in dichloromethane).",
      "quote": "Combined methanol layers were concentrated and purified using column chromatography (silica gel, 12% MeOH in dichloromethane) to yield [4]− as a yellow solid (505 mg, 60.5%)",
@@ -920,9 +945,10 @@
      "amount": 100,
      "unit": "mg",
      "not_stated": [
-      "purity",
-      "supplier"
-     ]
+      "purity"
+     ],
+     "supplier": "Aldrich Chemical Co.",
+     "supplier_quote": "All other reagents and anhydrous solvents, stored over 4 Å molecular sieves, were purchased from Aldrich Chemical Co. (Madrid, Spain) and used without further purification."
     },
     {
      "name": "methanol (washing of the resin)",
@@ -983,9 +1009,30 @@
     {
      "order": 3,
      "action": "neutralize",
-     "description": "Neutralise with IR-120 resin, filter and wash with methanol.",
-     "quote": "the reaction mixture was neutralized with IR-120 resin (100 mg), filtered and washed with 2 mL of methanol",
+     "description": "Neutralise the reaction mixture with IR-120 resin.",
+     "quote": "the reaction mixture was neutralized with IR-120 resin (100 mg)",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "filter",
+     "description": "Filter off the resin.",
+     "quote": "neutralized with IR-120 resin (100 mg), filtered",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash the resin with methanol.",
+     "quote": "filtered and washed with 2 mL of methanol",
      "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "filtered and washed with 2 mL of methanol",
+       "value_text": "methanol"
+      },
       {
        "name": "volume",
        "quote": "washed with 2 mL of methanol",
@@ -993,10 +1040,13 @@
        "unit": "mL"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
     },
     {
-     "order": 4,
+     "order": 6,
      "action": "concentrate",
      "description": "Concentrate the combined methanol layer.",
      "quote": "The combined methanol layer was concentrated",
@@ -1008,7 +1058,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 7,
      "action": "purify",
      "description": "Purify the residue by silica gel column chromatography (12% MeOH in dichloromethane).",
      "quote": "the residue was purified using column chromatography (silica gel, 12% MeOH in dichloromethane) to yield [6]− as a yellow solid (4.5 mg, 55%)",
@@ -1125,9 +1175,10 @@
      "amount": 0.1,
      "unit": "mg",
      "not_stated": [
-      "purity",
-      "supplier"
-     ]
+      "purity"
+     ],
+     "supplier": "Aldrich Chemical Co.",
+     "supplier_quote": "All other reagents and anhydrous solvents, stored over 4 Å molecular sieves, were purchased from Aldrich Chemical Co. (Madrid, Spain) and used without further purification."
     },
     {
      "name": "toluene",
@@ -1136,6 +1187,31 @@
      "quote": "1 mg of [5]− dissolved in acetonitrile (100 μL) was added together with trans-bis(acetate)bis[o-(di-o-tolylphosphino)benzyl] dipalladium (II) (Herrmann’s catalyst, HC, 0.1 mg, 0.101 μmol) dissolved in toluene (100 µL)",
      "amount": 100,
      "unit": "µL",
+     "not_stated": [
+      "purity"
+     ],
+     "supplier": "Aldrich Chemical Co.",
+     "supplier_quote": "All other reagents and anhydrous solvents, stored over 4 Å molecular sieves, were purchased from Aldrich Chemical Co. (Madrid, Spain) and used without further purification."
+    },
+    {
+     "name": "acetonitrile (dissolution of the solid)",
+     "formula": "CH3CN",
+     "role": "solvent",
+     "quote": "the resulting solid was dissolved in 0.5 mL acetonitrile and 30 mL MQ water",
+     "amount": 0.5,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "MQ water (dissolution of the solid)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "the resulting solid was dissolved in 0.5 mL acetonitrile and 30 mL MQ water",
+     "amount": 30,
+     "unit": "mL",
      "not_stated": [
       "purity",
       "supplier"
@@ -1230,20 +1306,27 @@
     },
     {
      "order": 4,
-     "action": "dissolve",
-     "description": "Remove the solvent under helium flow and dissolve the solid in acetonitrile and MQ water.",
-     "quote": "the solvent was removed under a constant helium flow and the resulting solid was dissolved in 0.5 mL acetonitrile and 30 mL MQ water",
-     "parameters": [
-      {
-       "name": "volume",
-       "quote": "the solvent was removed under a constant helium flow and the resulting solid was dissolved in 0.5 mL acetonitrile and 30 mL MQ water",
-       "value_text": "0.5 mL acetonitrile and 30 mL MQ water"
-      }
-     ],
-     "equipment": []
+     "action": "evaporate",
+     "description": "Remove the solvent under a constant helium flow.",
+     "quote": "the solvent was removed under a constant helium flow",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "gas_flow"
+     ]
     },
     {
      "order": 5,
+     "action": "dissolve",
+     "description": "Dissolve the resulting solid in acetonitrile and MQ water.",
+     "quote": "the resulting solid was dissolved in 0.5 mL acetonitrile and 30 mL MQ water",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 6,
      "action": "wash",
      "description": "Pass the crude solution through a C-18 cartridge and wash with MQ water to remove free iodine-124.",
      "quote": "The crude solution was passed through a C-18 cartridge (Sep-Pak® Light, Waters, Milford, MA, USA) and washed with MQ water (5 mL × 2) to remove free iodine-124.",
@@ -1268,18 +1351,26 @@
      ]
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "elute",
-     "description": "Elute the labelled compound with ethanol and evaporate to dryness.",
-     "quote": "The desired labelled compound (124I-[5]−) was eluted from the cartridge with ethanol (500 μL) and the solvent was evaporated to dryness.",
+     "description": "Elute the labelled compound from the cartridge with ethanol.",
+     "quote": "The desired labelled compound (124I-[5]−) was eluted from the cartridge with ethanol (500 μL)",
      "parameters": [
       {
        "name": "volume",
-       "quote": "The desired labelled compound (124I-[5]−) was eluted from the cartridge with ethanol (500 μL) and the solvent was evaporated to dryness.",
+       "quote": "The desired labelled compound (124I-[5]−) was eluted from the cartridge with ethanol (500 μL)",
        "value_num": 500,
        "unit": "μL"
       }
      ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "evaporate",
+     "description": "Evaporate the solvent to dryness.",
+     "quote": "the solvent was evaporated to dryness",
+     "parameters": [],
      "equipment": [],
      "not_stated": [
       "temperature",
@@ -1382,7 +1473,9 @@
      "role": "wash",
      "quote": "After Complete hydrolysis, confirmed by analytical radio-HPLC, reformulation was carried out by dilution with water, retention on a C-18 cartridge (Sep-Pak® Light, Waters), further elution with ethanol (500 μL, Sigma-Aldrich) and evaporation to dryness.",
      "amount": 500,
-     "unit": "μL"
+     "unit": "μL",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "further elution with ethanol (500 μL, Sigma-Aldrich)"
     }
    ],
    "steps": [
@@ -1725,7 +1818,7 @@
     "name": "PEG-stabilised, COSAN-functionalised gold nanoparticles (PEG-AuNPs@[4]−)",
     "formula": null,
     "family": "nanoparticule_metallique",
-    "phase": "gold (fcc)",
+    "phase": null,
     "morphology": "spherical nanoparticles"
    },
    "method": "ligand displacement on citrate-stabilised AuNPs with mPEG-SH (5 kDa) and thiolated COSAN [4]−",
@@ -1733,7 +1826,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "phase"
    ],
    "succeeded": true,
    "reagents": [
@@ -1994,7 +2088,7 @@
     "name": "PEG-AuNPs@[4]− labelled with 124I at the gold core",
     "formula": null,
     "family": "nanoparticule_metallique",
-    "phase": "gold (fcc)",
+    "phase": null,
     "morphology": "spherical nanoparticles"
    },
    "quote": "[124I]NaI (15 μL, solution in 0.1 M NaOH) was added and the solution was stirred for 10 min.",
@@ -2152,7 +2246,7 @@
      "technique": "PET/CT imaging in HT1080 tumour-bearing mice",
      "result": "biodistribution of the core-labelled NPs (n = 2 mice)",
      "instrument": "eXplore Vista-CT small animal PET-CT system (GE Healthcare)",
-     "conditions": "3.8 ± 0.6 MBq in 150 μL injected intravenously; 60 min dynamic scan then 30 min scans at 10, 24, 72 and 144 h; 400–700 KeV window; 3% isoflurane induction",
+     "conditions": "3.8 ± 0.6 MBq in 150 μL injected intravenously; 60 min dynamic scan then 30 min scans at 10, 24, 72 and 144 h; 400–700 KeV window; 3% isoflurane induction; dose de particules administrée 150 µg (ca. 7.5 mg NP/kg body weight; 0.675 mg B/kg body weight), d'après les Résultats",
      "quote": "PET studies with labelled NPs were carried out in mice (n = 2 per compound) using an eXplore Vista-CT small animal PET-CT system (GE Healthcare, Chicago, IL, USA)."
     }
    ],
@@ -2263,10 +2357,27 @@
      "value_num": 1.4,
      "unit": "%ID/cm3",
      "from_figure": "Fig. 6 (thyroid)"
+    },
+    {
+     "property": "administered_NP_dose",
+     "quote": "the administered dose of NPs was 150 µg (ca. 7.5 mg NP/kg body weight; 0.675 mg B/kg body weight)",
+     "value_num": 150,
+     "unit": "µg",
+     "value_text": "150 µg (ca. 7.5 mg NP/kg body weight; 0.675 mg B/kg body weight)"
+    },
+    {
+     "property": "stomach_uptake_peak_time",
+     "quote": "Accumulation in the stomach peaked at t = 24 h after administration",
+     "value_num": 24,
+     "unit": "h",
+     "value_text": "peaked at t = 24 h after administration"
     }
    ],
    "missing_fields": [
     "activity_of_[124I]NaI_added"
+   ],
+   "not_stated": [
+    "phase"
    ]
   },
   {
@@ -2277,7 +2388,7 @@
     "name": "PEG-AuNPs@[4]− labelled with 124I at the shell (on the COSAN ligand)",
     "formula": null,
     "family": "nanoparticule_metallique",
-    "phase": "gold (fcc)",
+    "phase": null,
     "morphology": "spherical nanoparticles"
    },
    "quote": "After 15 min, 100 μL of a fresh solution of [4]− in ethanol (3 mg/mL) and freshly prepared 124I-[6]− (22.2 MBq) dissolved in ethanol (15μL) were quickly added and stirring was maintained for 2 h.",
@@ -2318,7 +2429,7 @@
      "technique": "PET/CT imaging in HT1080 tumour-bearing mice",
      "result": "biodistribution of the shell-labelled NPs (n = 2 mice)",
      "instrument": "eXplore Vista-CT small animal PET-CT system (GE Healthcare)",
-     "conditions": "2.7 ± 0.3 MBq in 150 μL injected intravenously; 60 min dynamic scan then 30 min scans at 10, 24, 72 and 144 h; 400–700 KeV window; 3% isoflurane induction",
+     "conditions": "2.7 ± 0.3 MBq in 150 μL injected intravenously; 60 min dynamic scan then 30 min scans at 10, 24, 72 and 144 h; 400–700 KeV window; 3% isoflurane induction; dose de particules administrée 150 µg (ca. 7.5 mg NP/kg body weight; 0.675 mg B/kg body weight), d'après les Résultats",
      "quote": "PET studies with labelled NPs were carried out in mice (n = 2 per compound) using an eXplore Vista-CT small animal PET-CT system (GE Healthcare, Chicago, IL, USA)."
     }
    ],
@@ -2388,9 +2499,26 @@
      "value_num": 2.3,
      "unit": "%ID/cm3",
      "from_figure": "Fig. 6 (thyroid)"
+    },
+    {
+     "property": "administered_NP_dose",
+     "quote": "the administered dose of NPs was 150 µg (ca. 7.5 mg NP/kg body weight; 0.675 mg B/kg body weight)",
+     "value_num": 150,
+     "unit": "µg",
+     "value_text": "150 µg (ca. 7.5 mg NP/kg body weight; 0.675 mg B/kg body weight)"
+    },
+    {
+     "property": "stomach_uptake_peak_time",
+     "quote": "Accumulation in the stomach peaked at t = 24 h after administration",
+     "value_num": 24,
+     "unit": "h",
+     "value_text": "peaked at t = 24 h after administration"
     }
    ],
-   "missing_fields": []
+   "missing_fields": [],
+   "not_stated": [
+    "phase"
+   ]
   },
   {
    "label": "PEG-AuNPs@[4]-_postlabel",
@@ -2484,7 +2612,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Le marquage du cœur (iodure ajouté aux particules citrate avant PEG et COSAN) donne une incorporation de l'ordre de 98 %, contre 55 % pour le marquage de la coque (ligand 124I-[6]− ajouté avec [4]−). Le même marquage appliqué aux particules déjà fonctionnalisées donne moins de 10 %, ce qui a imposé l'ordre d'addition. En biodistribution, les deux marquages donnent des profils proches : foie à 42,2 ± 4,8 (cœur) et 39,1 ± 5,8 %ID/cm3 (coque) au premier point, tumeur sous 0,5 %ID/cm3 dans les deux cas ; la thyroïde monte plus vite avec le marquage du cœur, signe d'une perte lente de l'iode."
+   "text": "Le marquage du cœur (iodure ajouté aux particules citrate avant PEG et COSAN) donne une incorporation de l'ordre de 98 %, contre 55 % pour le marquage de la coque (ligand 124I-[6]− ajouté avec [4]−). Le même marquage appliqué aux particules déjà fonctionnalisées donne moins de 10 %, ce qui a imposé l'ordre d'addition. En biodistribution, les deux marquages donnent des profils proches : foie à 42,2 ± 4,8 (cœur) et 39,1 ± 5,8 %ID/cm3 (coque) au premier point, tumeur sous 0,5 %ID/cm3 dans les deux cas ; la thyroïde semble monter plus vite avec le marquage du cœur, ce que les auteurs rapprochent d'un détachement très lent du marqueur, mais en précisant que ces valeurs sont entachées d'une erreur importante de délinéation des VOI et ne doivent être lues que qualitativement (ils écrivent aussi qu'aucune accumulation thyroïdienne n'a été détectée : contradiction notée en doute)."
   },
   {
    "type": "tendance_observee",
@@ -2507,7 +2635,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "CIT-AuNPs",
-   "text": "Hypothèse de chimiste : dans la synthèse de Turkevich, le citrate bouillant réduit Au(III) en Au(0) par oxydation en dicarboxyacétone, puis coiffe les germes, ce qui donne des sphères stabilisées par des anions citrate chargés. L'injection rapide à ébullition favorise une nucléation courte et des particules assez monodisperses (≈ 19 nm). Le rapport citrate/Au écrit (0,33 mmol pour 0,025 mmol d'Au, soit environ 13/1) est cohérent avec cette méthode. La concentration de 1 mg/mL annoncée suppose une reprise du culot dans environ 5 mL (4,9 mg d'Au au total), volume que l'article ne donne pas."
+   "text": "Hypothèse de chimiste : le citrate bouillant réduit Au(III) en Au(0) (le citrate s'oxyde en acétonedicarboxylate), la nucléation est quasi instantanée à l'injection de l'or dans le citrate chaud, puis le citrate adsorbé stabilise des sphères chargées négativement. Le rapport citrate/Au écrit (0,33 mmol pour 0,025 mmol d'Au, soit environ 13/1) et ces volumes sont ceux des germes d'environ 10 nm de Bastús, Comenge et Puntes (Langmuir, 2011), non d'une particule de 19 nm : atteindre ≈ 19 nm demanderait des injections de croissance à 90 °C ou un rapport citrate/Au plus faible (méthode de Frens), que l'article ne décrit pas (voir l'annotation de limite de reproductibilité de cette voie)."
   },
   {
    "type": "mecanisme_analyse",
@@ -2533,12 +2661,60 @@
   {
    "type": "limite_reproductibilite",
    "route": "PEG-AuNPs@[4]-",
-   "text": "Contrôle de stœchiométrie (analyse, à vérifier) : avec 100 µL de [4]− à 3 mg/mL (0,3 mg, 0,68 µmol, soit ≈ 0,13 mg de bore pour 18 B par anion, 44 % en masse) ajoutés à 2 mL de colloïde à 1 mg d'Au/mL (2 mg d'Au), la charge maximale serait d'environ 0,066 mg de B par mg d'Au, inférieure aux 0,09 mg de B/mg d'Au (« ca. 9 % ») mesurés par ICP-MS. Soit la concentration réelle en or de la suspension est plus basse que 1 mg/mL, soit la masse de [4]− est sous-estimée ; l'article ne tranche pas."
+   "text": "Charge en bore incohérente avec les quantités écrites (analyse, à vérifier) : 100 µL de [4]− à 3 mg/mL (0,3 mg, 0,68 µmol, soit ≈ 0,13 mg de bore pour 18 B par anion, 44 % en masse) ajoutés à 2 mL de colloïde à 1 mg d'Au/mL (2 mg d'Au) apportent au plus ≈ 0,066 mg de B par mg d'Au, moins que les 0,09 mg de B/mg d'Au (« ca. 9 % ») mesurés par ICP-MS ; une monocouche dense de [4]− sur des sphères de 19 nm n'en porterait d'ailleurs que ≈ 0,009 à 0,024 mg B/mg Au (surface partagée en plus avec le PEG), soit 4 à 10 fois moins que la valeur annoncée. Soit la concentration réelle en or est bien inférieure à 1 mg/mL, soit le dosage du bore est biaisé (ligand libre non éliminé, bore de la verrerie borosilicatée, effet mémoire en ICP-MS), soit la quantité de [4]− est mal écrite ; l'article ne tranche pas. Le calcul de 0,06 µg B/g de tumeur et la conclusion « trop faible pour la BNCT » en dépendent : une charge réelle plus basse creuserait l'écart."
   },
   {
    "type": "securite_analyse",
    "route": "PEG-AuNPs@[4]-_shell",
    "text": "Les particules marquées sont manipulées avec 22,2 MBq d'iode-124 par préparation : blindage, travail en zone contrôlée, gants et contrôle de contamination ; les déchets (centrifugats, surnageants) restent radioactifs plusieurs semaines (≈ 10 périodes) et suivent la filière des déchets radioactifs à courte période."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "[3]-",
+   "text": "Quantités incohérentes (à vérifier avant de refaire) : 750 mg du composé 2 sont donnés pour 1,209 mmol, soit 620 g/mol implicites, alors que la masse molaire du zwitterion [3,3′-Co(8-C5H10O-1,2-C2B9H10)(1′,2′-C2B9H11)] (C9H31B18CoO), recalculée avec les masses atomiques IUPAC, est ≈ 408,9 g/mol, ce qui donne 1,834 mmol. La valeur de 620 g/mol ressemble à celle du sel de césium de [3]− (≈ 617 g/mol), peut-être reprise par erreur. Si les 750 mg sont exacts, le thioacétate de potassium (165,7 mg, 1,451 mmol) n'est plus qu'à 0,79 équivalent et devient le réactif limitant, au lieu d'un léger excès (1,20 éq. sur 1,209 mmol). L'article ne tranche pas.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Rendements de [3]−, [4]− et [5]− inconciliables entre Résultats et Méthodes, et contre-ion jamais écrit (analyse du critique, masses molaires recalculées). [3]− : 52 % « overall » (Résultats) contre 84 % (Méthodes, 705 mg) ; avec 1,209 mmol de départ, 705 mg donnent ≈ 95 % pour un sel de césium et plus de 100 % pour un sel de potassium, et avec 1,834 mmol ≈ 62 % (Cs) ou ≈ 73 % (K). [4]− : « almost quantitative » (Résultats) contre 60,5 % (505 mg, Méthodes) ; ce 60,5 % ne se retrouve qu'avec la masse molaire du sel de césium (≈ 580 g/mol), alors qu'après la résine IR-120 sous forme H+ le produit isolé est plutôt la forme acide (rendement ≈ 79 %) ; aucune forme n'est quantitative. [5]− : 69 % « overnight » (Résultats) contre 41,6 % (25 mg) en 10 h (Méthodes) ; 41,6 % ne s'obtient qu'avec la masse molaire du sel de césium (≈ 743 g/mol). Le contre-ion de [3]− n'est jamais écrit : les 890 mg = 1,440 mmol engagés pour [4]− supposent Cs+, alors que le césium du COSAN de départ quitte le système à la formation du zwitterion 2 et que le seul cation apporté ensuite est K+ ; ces 890 mg dépassent aussi les 705 mg obtenus en 3.3.1. Fixer la masse molaire (analyse élémentaire, ICP) avant de calculer un rendement.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "124I-[5]-",
+   "text": "Purification contradictoire : les Résultats annoncent une purification par HPLC semi-préparative donnant un composé « chemically and radiochemically pure », les Méthodes décrivent une cartouche C-18 (Sep-Pak Light) puis une élution à l'éthanol, la HPLC ne servant qu'au contrôle qualité. Une cartouche C-18 retire l'iodure libre mais ni le catalyseur au palladium ni ses ligands phosphine, lipophiles : la pureté chimique annoncée n'est garantie que si la HPLC semi-préparative a réellement servi. Le milieu de la solution de Na[124I]I n'est pas écrit ici ; s'il s'agit de NaOH 0,1 M comme pour le marquage du cœur (3.5.3), le résidu sec contient ≈ 5 µmol de NaOH, soit ≈ 3 éq. de base face au thioacétate de [5]− chauffé à 100 °C, ce qui pourrait désacétyler en partie le composé.",
+   "quote": null
+  },
+  {
+   "type": "securite_analyse",
+   "route": "124I-[5]-",
+   "text": "Le chauffage à 100 °C pendant 5 min de 200 µL d'acétonitrile (éb. 82 °C) et de toluène (éb. 111 °C) dans un flacon conique de 2,5 mL suppose un flacon fermé, sinon le solvant s'évapore en quelques minutes ; l'article ne dit pas que le flacon est fermé. Un flacon fermé chauffé au-dessus du point d'ébullition de l'acétonitrile se met en surpression : utiliser un flacon prévu pour cela, derrière un blindage.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CIT-AuNPs",
+   "text": "La recette écrite (150 mL de citrate 2,2 mM au reflux, injection de 1 mL de HAuCl4 25 mM) est celle des germes d'environ 10 nm de Bastús, Comenge et Puntes (Langmuir, 2011), non de particules de 19 nm (TEM 19,2 ± 1,4 nm, bande plasmon à 524 nm) : pour ≈ 20 nm il faut des étapes de croissance (injections supplémentaires de citrate et d'or à 90 °C) qui ne sont pas décrites. Dans la base, PMC5304631 part de la même recette et ajoute deux injections (1 mL de citrate 60 mM et 1 mL de HAuCl4 25 mM) pour atteindre 20,9 nm. Tel qu'écrit, le protocole ne redonne vraisemblablement pas la taille annoncée. Le volume de reprise après centrifugation n'est pas écrit non plus : 1 mg d'Au/mL suppose de reprendre les 4,9 mg d'or dans ≈ 4,9 mL (récupération totale), après 20 min à 12 000 g, mal adaptées à de grands volumes.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PEG-AuNPs@[4]-_shell",
+   "text": "Le marquage de la coque n'est pas sans porteur : l'échange isotopique ne sépare pas 124I-[5]− du [5]− froid, si bien que les 22,2 MBq de 124I-[6]− engagés apportent environ 1 µmol (≈ 0,56 mg) de ligand iodé, soit ≈ 1,4 fois plus que le [4]− ajouté (0,68 µmol), avec 2,5 fois plus de thiol COSAN au total (calcul à partir de ≈ 1 mg de [5]− de départ et ≈ 60 % de récupération). La couche de ces particules est donc majoritairement iodée, différente de celle des particules marquées au cœur : la comparaison cœur/coque, et la conclusion de stabilité in vivo qui en découle, changent deux variables à la fois (position du traceur et composition de la couche). Un témoin préparé avec la même quantité de [6]− froid, ou un 124I-[6]− dilué, aurait été nécessaire.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PEG-AuNPs@[4]-_core",
+   "text": "Contradiction de l'article sur la thyroïde : « no accumulation was detected in the thyroid gland, confirming the lack of de-iodination », puis, quelques lignes plus loin, la détection d'un signal thyroïdien « suggests the progressive (although very slow) detachment of the radiolabel », avec une accumulation plus rapide pour le marquage du cœur que les auteurs eux-mêmes jugent seulement qualitative (erreur importante de délinéation des VOI). La stabilité in vivo du marquage est donc à prendre avec cette réserve. Le pic tumoral est situé à 12 h dans le texte alors que les images sont prises à 10, 24, 72 et 144 h.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Formulations inexactes de l'article, sans effet sur la synthèse : (i) « thermal neutrons (ca. 0.5–10 keV) » désigne la gamme épithermique (neutrons thermiques < 0,5 eV selon l'AIEA, Advances in Boron Neutron Capture Therapy, 2023) ; (ii) pour les liposomes, la dose est dite « ca. 250 times higher » alors que 50 mg B/kg contre 0,675 mg B/kg donne un rapport d'environ 74 (le rapport de ca. 3000 sur l'accumulation tumorale est juste : 175 contre 0,06 µg/g) ; (iii) la bande plasmon est dite « longitudinal » pour des sphères, qui n'ont qu'une seule bande plasmon : le décalage de 524 à 531 nm vient du changement d'indice local dû à la couche PEG/COSAN.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -2614,7 +2790,7 @@
   },
   {
    "where": "solvants (MeCN, MeOH, éthanol)",
-   "issue": "Une phrase donne l'éthanol, le méthanol et l'acétonitrile « HPLC grade » de Scharlab, une autre « anhydrous solvents » d'Aldrich pour tous les autres : on ne sait pas quel lot sert aux réactions. Fournisseur et pureté de ces trois solvants déclarés non cités (sauf l'éthanol d'élution de 124I-[6]−, « Sigma-Aldrich »)."
+   "issue": "Une phrase donne l'éthanol, le méthanol et l'acétonitrile « HPLC grade » de Scharlab, une autre « anhydrous solvents » d'Aldrich pour tous les autres : on ne sait pas quel lot sert aux réactions. Fournisseur et pureté de ces trois solvants déclarés non cités (sauf l'éthanol d'élution de 124I-[6]−, « Sigma-Aldrich »). Le catalyseur de Herrmann, le toluène et la résine IR-120, qu'aucune autre phrase ne nomme, reçoivent le fournisseur Aldrich de la phrase « All other reagents and anhydrous solvents… » (pureté non citée)."
   },
   {
    "where": "PEG-AuNPs@[4]-_core, découpage",
@@ -2639,6 +2815,18 @@
   {
    "where": "Conclusions",
    "issue": "La conclusion écrit « human fibroblastoma » alors que le reste de l'article parle de fibrosarcome humain (HT1080) ; sans conséquence sur les données de synthèse."
+  },
+  {
+   "where": "[4]-, réactif [3]−",
+   "issue": "Les 890 mg (1.440 mmol) de [3]− engagés pour [4]− dépassent les 705 mg de [3]− obtenus en 3.3.1 : les 890 mg viennent d'un lot plus grand ou d'une autre préparation que l'article ne décrit pas. La quantité écrite est gardée telle quelle."
+  },
+  {
+   "where": "PEG-AuNPs@[4]-_core / _shell, thyroïde",
+   "issue": "Contradiction interne : « no accumulation was detected in the thyroid gland, confirming the lack of de-iodination » puis « the detection of radioactive signal in the thyroid gland, suggests the progressive (although very slow) detachment of the radiolabel » ; les auteurs ajoutent que l'accumulation thyroïdienne plus rapide avec le marquage du cœur est entachée d'une erreur importante de délinéation des VOI et doit être lue qualitativement. Aucune valeur corrigée."
+  },
+  {
+   "where": "PEG-AuNPs@[4]-_core / _shell, estomac",
+   "issue": "« Accumulation in the stomach peaked at t = 24 h » est dit dans le paragraphe qui décrit un profil similaire « for both » marquages : le pic à 24 h est donc rattaché aux deux voies. Vessie et cœur ne sont qu'à la figure 6 (non lus)."
   }
  ]
 }
