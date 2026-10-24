@@ -200,8 +200,10 @@
   {
    "sample": "γ-CD loaded with curcumin",
    "defined_in": "Results, Adsorption of Curcumin (7.05 %)",
-   "route": null,
-   "why": "protocole de chargement de la γ-CD seule non décrit (concentration non donnée) ; valeur reprise dans une annotation tendance_observee"
+   "route": "Cur_gammaCD",
+   "results_in": [
+    "Results, Adsorption of Curcumin (7.05 %)"
+   ]
   },
   {
    "sample": "pure curcumin",
@@ -519,6 +521,20 @@
      "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
      "conditions": "Cu–Kα X-rays were used during measurements, and the samples were scanned in the 2θ range of 2 to 30°, with a step size of 0.01° and a scan rate of 0.3°/min.",
      "quote": "Sample 1A exhibited crystalline features; however, none of the observed reflections matched the characteristic peaks of γ -CD-MOF, suggesting the formation of an unidentified crystalline phase."
+    },
+    {
+     "technique": "SEM",
+     "result": "plate-like particles, broad size distribution",
+     "instrument": "JEOL JIB 4601F Multibeam SEM-FIB System (Akishima, Tokyo, Japan), Oxford Xmax-N EDS",
+     "conditions": "working voltage 5 kV; sample on carbon double-sided tape, sputter-coated twice with gold (CRESSINGTON 108 AUTO); particle sizes by ImageJ, SEM-based values obtained from a minimum of 62 crystals (Table 2 footnote)",
+     "quote": "The samples were adhered to a sample pan by a carbon double-sided tape and sputter-coated with gold by using an automatic sputter coater (CRESSINGTON 108 AUTO, Ted Pella, Inc., Redding, California, USA) twice and then observed and photographed with a working voltage of 5 kV."
+    },
+    {
+     "technique": "XRD crystallite size",
+     "result": "crystallite size from Scherrer analysis of the first three diffraction peaks (average of the three values)",
+     "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
+     "conditions": "Pseudo-Voigt fit of the first three diffraction peaks; FWHM related to crystallite size by the Scherrer equation; no instrumental correction stated",
+     "quote": "These values were calculated by fitting a Pseudo-Voigt function to the first three diffraction peaks of each sample. The full width at half-maximum (FWHM) of the peaks was then related to the average crystallite size using the Scherrer equation, and the final average crystallite size was obtained by averaging the values derived from the three diffraction peaks."
     }
    ],
    "outcomes": [
@@ -553,7 +569,7 @@
     "name": "γ-cyclodextrin metal-organic framework (K-γ-CD-MOF)",
     "formula": null,
     "family": "MOF",
-    "phase": "not γ-CD-MOF",
+    "phase": null,
     "morphology": null
    },
    "quote": "For each synthesis, 3 replicate experiments were conducted, with the resulting samples designated as A, B, and C corresponding to their set numbers",
@@ -586,7 +602,10 @@
      "quote": "Apparent from the lack of well-defined peaks, 1B showed almost no crystallization."
     }
    ],
-   "succeeded": false
+   "succeeded": false,
+   "not_stated": [
+    "phase"
+   ]
   },
   {
    "label": "1C",
@@ -637,7 +656,7 @@
     "name": "γ-cyclodextrin metal-organic framework (K-γ-CD-MOF)",
     "formula": null,
     "family": "MOF",
-    "phase": "γ-CD-MOF",
+    "phase": null,
     "morphology": "small, irregularly shaped particles with rough surfaces"
    },
    "quote": "2A, 2B, 2C | 25 °C, 12 h | 50 °C, 24 h",
@@ -671,6 +690,20 @@
      "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
      "conditions": "Cu–Kα X-rays were used during measurements, and the samples were scanned in the 2θ range of 2 to 30°, with a step size of 0.01° and a scan rate of 0.3°/min.",
      "quote": "However, for 2A and 2B, the remaining peaks were either shifted from their expected positions or absent altogether, suggesting suboptimal crystallization."
+    },
+    {
+     "technique": "SEM",
+     "result": "small, irregularly shaped particles with rough surfaces",
+     "instrument": "JEOL JIB 4601F Multibeam SEM-FIB System (Akishima, Tokyo, Japan), Oxford Xmax-N EDS",
+     "conditions": "working voltage 5 kV; sample on carbon double-sided tape, sputter-coated twice with gold (CRESSINGTON 108 AUTO); particle sizes by ImageJ, SEM-based values obtained from a minimum of 62 crystals (Table 2 footnote)",
+     "quote": "The samples were adhered to a sample pan by a carbon double-sided tape and sputter-coated with gold by using an automatic sputter coater (CRESSINGTON 108 AUTO, Ted Pella, Inc., Redding, California, USA) twice and then observed and photographed with a working voltage of 5 kV."
+    },
+    {
+     "technique": "XRD crystallite size",
+     "result": "crystallite size from Scherrer analysis of the first three diffraction peaks (average of the three values)",
+     "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
+     "conditions": "Pseudo-Voigt fit of the first three diffraction peaks; FWHM related to crystallite size by the Scherrer equation; no instrumental correction stated",
+     "quote": "These values were calculated by fitting a Pseudo-Voigt function to the first three diffraction peaks of each sample. The full width at half-maximum (FWHM) of the peaks was then related to the average crystallite size using the Scherrer equation, and the final average crystallite size was obtained by averaging the values derived from the three diffraction peaks."
     }
    ],
    "outcomes": [
@@ -696,6 +729,9 @@
      "unit": "μm",
      "quote": "2A | 1.570 ± 0.865 | 0.39"
     }
+   ],
+   "not_stated": [
+    "phase"
    ]
   },
   {
@@ -705,7 +741,7 @@
     "name": "γ-cyclodextrin metal-organic framework (K-γ-CD-MOF)",
     "formula": null,
     "family": "MOF",
-    "phase": "γ-CD-MOF",
+    "phase": null,
     "morphology": null
    },
    "quote": "For each synthesis, 3 replicate experiments were conducted, with the resulting samples designated as A, B, and C corresponding to their set numbers",
@@ -737,6 +773,9 @@
      "value_text": "first peak at the expected position; remaining peaks shifted or absent (suboptimal crystallization)",
      "quote": "However, for 2A and 2B, the remaining peaks were either shifted from their expected positions or absent altogether, suggesting suboptimal crystallization."
     }
+   ],
+   "not_stated": [
+    "phase"
    ]
   },
   {
@@ -822,6 +861,20 @@
      "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
      "conditions": "Cu–Kα X-rays were used during measurements, and the samples were scanned in the 2θ range of 2 to 30°, with a step size of 0.01° and a scan rate of 0.3°/min.",
      "quote": "Within sample set 3, only 3A exhibited a diffraction pattern consistent with high-quality γ-CD-MOF."
+    },
+    {
+     "technique": "SEM",
+     "result": "plate-like particles, broad size distribution",
+     "instrument": "JEOL JIB 4601F Multibeam SEM-FIB System (Akishima, Tokyo, Japan), Oxford Xmax-N EDS",
+     "conditions": "working voltage 5 kV; sample on carbon double-sided tape, sputter-coated twice with gold (CRESSINGTON 108 AUTO); particle sizes by ImageJ, SEM-based values obtained from a minimum of 62 crystals (Table 2 footnote)",
+     "quote": "The samples were adhered to a sample pan by a carbon double-sided tape and sputter-coated with gold by using an automatic sputter coater (CRESSINGTON 108 AUTO, Ted Pella, Inc., Redding, California, USA) twice and then observed and photographed with a working voltage of 5 kV."
+    },
+    {
+     "technique": "XRD crystallite size",
+     "result": "crystallite size from Scherrer analysis of the first three diffraction peaks (average of the three values)",
+     "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
+     "conditions": "Pseudo-Voigt fit of the first three diffraction peaks; FWHM related to crystallite size by the Scherrer equation; no instrumental correction stated",
+     "quote": "These values were calculated by fitting a Pseudo-Voigt function to the first three diffraction peaks of each sample. The full width at half-maximum (FWHM) of the peaks was then related to the average crystallite size using the Scherrer equation, and the final average crystallite size was obtained by averaging the values derived from the three diffraction peaks."
     }
    ],
    "outcomes": [
@@ -857,7 +910,7 @@
     "name": "γ-cyclodextrin metal-organic framework (K-γ-CD-MOF)",
     "formula": null,
     "family": "MOF",
-    "phase": "γ-CD-MOF",
+    "phase": null,
     "morphology": null
    },
    "quote": "For each synthesis, 3 replicate experiments were conducted, with the resulting samples designated as A, B, and C corresponding to their set numbers",
@@ -889,6 +942,9 @@
      "value_text": "pattern not consistent with high-quality γ-CD-MOF (only 3A was in set 3)",
      "quote": "Within sample set 3, only 3A exhibited a diffraction pattern consistent with high-quality γ-CD-MOF."
     }
+   ],
+   "not_stated": [
+    "phase"
    ]
   },
   {
@@ -898,7 +954,7 @@
     "name": "γ-cyclodextrin metal-organic framework (K-γ-CD-MOF)",
     "formula": null,
     "family": "MOF",
-    "phase": "γ-CD-MOF",
+    "phase": null,
     "morphology": null
    },
    "quote": "For each synthesis, 3 replicate experiments were conducted, with the resulting samples designated as A, B, and C corresponding to their set numbers",
@@ -930,6 +986,9 @@
      "value_text": "pattern not consistent with high-quality γ-CD-MOF (only 3A was in set 3)",
      "quote": "Within sample set 3, only 3A exhibited a diffraction pattern consistent with high-quality γ-CD-MOF."
     }
+   ],
+   "not_stated": [
+    "phase"
    ]
   },
   {
@@ -973,6 +1032,20 @@
      "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
      "conditions": "Cu–Kα X-rays were used during measurements, and the samples were scanned in the 2θ range of 2 to 30°, with a step size of 0.01° and a scan rate of 0.3°/min.",
      "quote": "In contrast, the lower photon counts, and broadened Bragg peaks observed from the diffraction profiles of 4A and 5C suggested substantially smaller average crystallite sizes."
+    },
+    {
+     "technique": "SEM",
+     "result": "large, uniform cubic crystals with sharp facets and smooth surfaces",
+     "instrument": "JEOL JIB 4601F Multibeam SEM-FIB System (Akishima, Tokyo, Japan), Oxford Xmax-N EDS",
+     "conditions": "working voltage 5 kV; sample on carbon double-sided tape, sputter-coated twice with gold (CRESSINGTON 108 AUTO); particle sizes by ImageJ, SEM-based values obtained from a minimum of 62 crystals (Table 2 footnote)",
+     "quote": "The samples were adhered to a sample pan by a carbon double-sided tape and sputter-coated with gold by using an automatic sputter coater (CRESSINGTON 108 AUTO, Ted Pella, Inc., Redding, California, USA) twice and then observed and photographed with a working voltage of 5 kV."
+    },
+    {
+     "technique": "XRD crystallite size",
+     "result": "crystallite size from Scherrer analysis of the first three diffraction peaks (average of the three values)",
+     "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
+     "conditions": "Pseudo-Voigt fit of the first three diffraction peaks; FWHM related to crystallite size by the Scherrer equation; no instrumental correction stated",
+     "quote": "These values were calculated by fitting a Pseudo-Voigt function to the first three diffraction peaks of each sample. The full width at half-maximum (FWHM) of the peaks was then related to the average crystallite size using the Scherrer equation, and the final average crystallite size was obtained by averaging the values derived from the three diffraction peaks."
     }
    ],
    "outcomes": [
@@ -1142,6 +1215,34 @@
      "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
      "conditions": "Cu–Kα X-rays were used during measurements, and the samples were scanned in the 2θ range of 2 to 30°, with a step size of 0.01° and a scan rate of 0.3°/min.",
      "quote": "With the exception of samples 4A and 5C, the diffraction patterns featured sharp, well-resolved peaks with high photon counts, indicative of high-quality crystals with relatively large average crystallite sizes"
+    },
+    {
+     "technique": "SEM",
+     "result": "plate-like particles, large in size",
+     "instrument": "JEOL JIB 4601F Multibeam SEM-FIB System (Akishima, Tokyo, Japan), Oxford Xmax-N EDS",
+     "conditions": "working voltage 5 kV; sample on carbon double-sided tape, sputter-coated twice with gold (CRESSINGTON 108 AUTO); particle sizes by ImageJ, SEM-based values obtained from a minimum of 62 crystals (Table 2 footnote)",
+     "quote": "The samples were adhered to a sample pan by a carbon double-sided tape and sputter-coated with gold by using an automatic sputter coater (CRESSINGTON 108 AUTO, Ted Pella, Inc., Redding, California, USA) twice and then observed and photographed with a working voltage of 5 kV."
+    },
+    {
+     "technique": "XRD crystallite size",
+     "result": "crystallite size from Scherrer analysis of the first three diffraction peaks (average of the three values)",
+     "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
+     "conditions": "Pseudo-Voigt fit of the first three diffraction peaks; FWHM related to crystallite size by the Scherrer equation; no instrumental correction stated",
+     "quote": "These values were calculated by fitting a Pseudo-Voigt function to the first three diffraction peaks of each sample. The full width at half-maximum (FWHM) of the peaks was then related to the average crystallite size using the Scherrer equation, and the final average crystallite size was obtained by averaging the values derived from the three diffraction peaks."
+    },
+    {
+     "technique": "XPS",
+     "result": "survey shows C, O and K; C 1s peaks for C–C, C–O and O–C–O; lower binding energy O 1s component attributed to K–O coordination; K 2p doublet of K+ species",
+     "instrument": "Thermo VG K-α+ (Thermo Scientific, United Kingdom)",
+     "conditions": "monochromatic Al Kα source (hv = 1486.6 eV)",
+     "quote": "The appearance of a lower binding energy component in the O 1s spectrum was attributed to K–O coordination, indicating the interaction between potassium ions and cyclodextrin hydroxyl groups."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "O–H stretching 3310 cm–1 (broad); C–H and CH2 stretching 2922 cm–1; C–O–C asymmetric stretching 1078 and 1018 cm–1; 1641 cm–1 (H–O–H bending, adsorbed or coordinated water); no significant variation among the three samples (A–C)",
+     "instrument": "Shimadzu IRAffinity-1S, ATR",
+     "conditions": "600–4000 cm–1, 4 cm–1 resolution, 16 scans, room temperature",
+     "quote": "A broad absorption band at 3310 cm–1 in the synthesized γ-CD-MOF-5 samples was assigned to the O–H stretching vibrations of hydroxyl groups in the glucose units of the γ-CD-MOF framework"
     }
    ],
    "outcomes": [
@@ -1235,6 +1336,13 @@
      "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
      "conditions": "Cu–Kα X-rays were used during measurements, and the samples were scanned in the 2θ range of 2 to 30°, with a step size of 0.01° and a scan rate of 0.3°/min.",
      "quote": "With the exception of samples 4A and 5C, the diffraction patterns featured sharp, well-resolved peaks with high photon counts, indicative of high-quality crystals with relatively large average crystallite sizes"
+    },
+    {
+     "technique": "FT-IR",
+     "result": "O–H stretching 3310 cm–1 (broad); C–H and CH2 stretching 2922 cm–1; C–O–C asymmetric stretching 1078 and 1018 cm–1; 1641 cm–1 (H–O–H bending, adsorbed or coordinated water); no significant variation among the three samples (A–C)",
+     "instrument": "Shimadzu IRAffinity-1S, ATR",
+     "conditions": "600–4000 cm–1, 4 cm–1 resolution, 16 scans, room temperature",
+     "quote": "A broad absorption band at 3310 cm–1 in the synthesized γ-CD-MOF-5 samples was assigned to the O–H stretching vibrations of hydroxyl groups in the glucose units of the γ-CD-MOF framework"
     }
    ],
    "outcomes": [
@@ -1311,6 +1419,20 @@
      "instrument": "D8 ADVANCE, Bruker, Karlsruhe, Germany",
      "conditions": "Cu–Kα X-rays were used during measurements, and the samples were scanned in the 2θ range of 2 to 30°, with a step size of 0.01° and a scan rate of 0.3°/min.",
      "quote": "For nearly all samples in sets 4 and 5, the diffraction peaks were well aligned with the expected Bragg angles (red vertical lines), except for 5C, which displayed significant deviations and pronounced broadening."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "O–H stretching 3310 cm–1 (broad); C–H and CH2 stretching 2922 cm–1; C–O–C asymmetric stretching 1078 and 1018 cm–1; 1641 cm–1 (H–O–H bending, adsorbed or coordinated water); no significant variation among the three samples (A–C)",
+     "instrument": "Shimadzu IRAffinity-1S, ATR",
+     "conditions": "600–4000 cm–1, 4 cm–1 resolution, 16 scans, room temperature",
+     "quote": "A broad absorption band at 3310 cm–1 in the synthesized γ-CD-MOF-5 samples was assigned to the O–H stretching vibrations of hydroxyl groups in the glucose units of the γ-CD-MOF framework"
+    },
+    {
+     "technique": "TGA",
+     "result": "unloaded γ-CD-MOF-5C: two-step weight loss; initial loss below approximately 120 °C (adsorbed and coordinated water); major decomposition step between 300 and 400 °C (text; see doubt on Fig. 7); final residue above 600 °C consistent with potassium carbonate species",
+     "instrument": "Mettler Toledo Stare Thermal Analysis System (USA)",
+     "conditions": "10 °C/min, 25–800 °C, N2 50 mL/min",
+     "quote": "All samples exhibited a characteristic two-step weight loss behavior."
     }
    ],
    "outcomes": [
@@ -1619,10 +1741,10 @@
     },
     {
      "technique": "TGA",
-     "result": "γ-CD-MOF-5C loaded at 4 and 5 mg/mL: two-step weight loss (water below ≈120 °C, framework degradation 300–400 °C), similar to unloaded",
+     "result": "γ-CD-MOF-5C loaded at 4 and 5 mg/mL: characteristic two-step weight loss; initial loss below approximately 120 °C (water); major decomposition step between 300 and 400 °C; similar decomposition profiles to the unloaded γ-CD-MOF-5C",
      "instrument": "Mettler Toledo Stare Thermal Analysis System (USA)",
      "conditions": "10 °C/min, 25–800 °C, N2 50 mL/min",
-     "quote": "These analyses were done at a heating rate of 10 °C per minute across a temperature range of 25–800 °C, under a nitrogen flow of 50 mL per minute."
+     "quote": "All samples exhibited a characteristic two-step weight loss behavior."
     }
    ]
   },
@@ -1672,10 +1794,10 @@
     },
     {
      "technique": "TGA",
-     "result": "γ-CD-MOF-5C loaded at 4 and 5 mg/mL: two-step weight loss, similar to unloaded",
+     "result": "γ-CD-MOF-5C loaded at 4 and 5 mg/mL: characteristic two-step weight loss; initial loss below approximately 120 °C (water); major decomposition step between 300 and 400 °C; similar decomposition profiles to the unloaded γ-CD-MOF-5C",
      "instrument": "Mettler Toledo Stare Thermal Analysis System (USA)",
      "conditions": "10 °C/min, 25–800 °C, N2 50 mL/min",
-     "quote": "These analyses were done at a heating rate of 10 °C per minute across a temperature range of 25–800 °C, under a nitrogen flow of 50 mL per minute."
+     "quote": "All samples exhibited a characteristic two-step weight loss behavior."
     }
    ]
   },
@@ -1712,6 +1834,132 @@
      "unit": "mg/mL",
      "quote": "the amount of adsorbed curcumin in three γ-CD-MOF-5 samples continuously increased as the curcumin concentration was increased to 0.012 mg/mL"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "adsorb",
+     "description": "Adsorption of curcumin on the γ-CD-MOF-5 samples for 24 h; the article gives no mass of MOF, volume, solvent or mixing for this series.",
+     "quote": "The UV–vis spectroscopy measurements that were obtained after 24 h adsorption",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "The UV–vis spectroscopy measurements that were obtained after 24 h adsorption"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "mass_of_MOF",
+      "volume",
+      "solvent",
+      "stirring_speed",
+      "temperature",
+      "separation_of_supernatant"
+     ]
+    }
+   ],
+   "not_stated": [
+    "mass_of_MOF",
+    "volume_of_solution",
+    "solvent"
+   ],
+   "missing_fields": [
+    "mass_of_MOF",
+    "volume_of_solution",
+    "solvent",
+    "stirring",
+    "temperature",
+    "separation_of_supernatant"
+   ]
+  },
+  {
+   "label": "Cur_gammaCD",
+   "parent": null,
+   "kind": "post_treatment",
+   "is_baseline": false,
+   "material": {
+    "name": "curcumin-loaded γ-cyclodextrin",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "adsorption of curcumin onto native γ-cyclodextrin (control for the γ-CD-MOF; protocol not described)",
+   "quote": "Curcumin was also loaded into γ-CD, affording a loading capacity of 7.05%, which was consistent with the reported values in the literature.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield",
+    "curcumin_concentration",
+    "mass_of_adsorbent",
+    "volume_of_solution",
+    "solvent",
+    "duration",
+    "temperature"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "curcumin",
+     "formula": "C21H20O6",
+     "role": "adsorbate",
+     "purity": "≥ 95.0%",
+     "supplier": "AFG Scientific (Northbrook, USA)",
+     "supplier_quote": "Curcumin (C21H20O6, purity ≥ 95.0%) was obtained from AFG Scientific (Northbrook, USA).",
+     "quote": "Curcumin was also loaded into γ-CD, affording a loading capacity of 7.05%, which was consistent with the reported values in the literature.",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "γ-cyclodextrin",
+     "formula": "C48H80O40",
+     "role": "adsorbent",
+     "purity": "> 99.98%, food grade",
+     "supplier": "Wacker Chemicals Co., Ltd. (Shanghai, China)",
+     "supplier_quote": "γ-cyclodextrin (γ-CD, purity > 99.98%, food grade) was purchased from Wacker Chemicals Co., Ltd. (Shanghai, China).",
+     "quote": "Curcumin was also loaded into γ-CD, affording a loading capacity of 7.05%, which was consistent with the reported values in the literature.",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "adsorb",
+     "description": "Load curcumin onto native γ-CD; concentration, masses, volume, solvent, duration and temperature are not described.",
+     "quote": "Curcumin was also loaded into γ-CD, affording a loading capacity of 7.05%, which was consistent with the reported values in the literature.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "volume",
+      "solvent",
+      "mass_of_adsorbent",
+      "curcumin_concentration"
+     ]
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [
+    {
+     "property": "loading_capacity",
+     "value_num": 7.05,
+     "unit": "%",
+     "quote": "Curcumin was also loaded into γ-CD, affording a loading capacity of 7.05%, which was consistent with the reported values in the literature."
+    }
+   ],
+   "missing_fields": [
+    "curcumin_concentration",
+    "mass_of_adsorbent",
+    "volume_of_solution",
+    "solvent",
+    "duration",
+    "temperature"
    ]
   }
  ],
@@ -1747,8 +1995,8 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Les valeurs de rendement des trois répétitions d'un même jeu sont très dispersées pour les jeux 1 à 3 (par exemple 14, 17 et 57 % pour le jeu 3) et beaucoup moins pour le jeu 4 (84, 81, 80 %). Pour le jeu 4 les auteurs annoncent un rendement moyen de 83 % ; la moyenne des trois valeurs du tableau S2 est de 81,7 %. La capacité de chargement moyenne maximale à forte concentration est donnée comme 245,92 mg/g ; la γ-CD seule charge 7,05 % de curcumine ; la surface BET du MOF est de 430,8 m2/g (échantillon non précisé).",
-   "quote": "Curcumin was also loaded into γ-CD, affording a loading capacity of 7.05%, which was consistent with the reported values in the literature."
+   "text": "Les rendements des trois répétitions d'un même jeu sont très dispersés pour les jeux 1 à 3 (par exemple 14, 17 et 57 % pour le jeu 3) et beaucoup moins pour le jeu 4 (84, 81, 80 %). Pour le jeu 4 les auteurs annoncent un rendement moyen de 83 % ; la moyenne des trois valeurs du tableau S2 est de 81,7 %.",
+   "quote": "producing γ-CD-MOF with a consistently high average product yield of 83%."
   },
   {
    "type": "tendance_observee",
@@ -1765,18 +2013,18 @@
   {
    "type": "mecanisme_auteurs",
    "route": "1A",
-   "text": "Les auteurs expliquent l'effet de la température par les calculs DFT : l'enthalpie augmente avec la température, donc la stabilisation du MOF à haute température vient d'une contribution entropique de plus en plus favorable ; à température élevée, la diffusion de vapeur de méthanol provoque une sursaturation rapide des précurseurs.",
+   "text": "Les auteurs expliquent l'effet de la température par les calculs DFT : l'enthalpie augmente avec la température, donc la stabilisation du MOF à haute température vient d'une contribution entropique de plus en plus favorable.",
    "quote": "Thus, the stabilization of γ-CD-MOF at elevated temperatures was attributed to an increasingly favorable entropic contribution, which points out that at higher incubation temperatures more organized crystalline structures are attained."
   },
   {
    "type": "mecanisme_analyse",
    "route": "1A",
-   "text": "Hypothèse de chimiste : KOH déprotone en partie les hydroxyles de la γ-CD (8 équivalents de K+ pour une γ-CD), les ions K+ se coordinent aux oxygènes des cyclodextrines et le méthanol, antisolvant qui diffuse en phase vapeur, abaisse peu à peu la solubilité du complexe et déclenche la cristallisation lente du réseau cubique. L'incubation à 25 °C pendant 7 jours donnerait une sursaturation lente et une croissance ordonnée, tandis qu'une température plus élevée pourrait accélérer la diffusion du méthanol et provoquer une nucléation rapide, d'où des cristaux plus petits ou fragmentés selon les répétitions."
+   "text": "Hypothèse de chimiste : dans la solution aqueuse de γ-CD et de KOH (K+ en excès, pH probablement voisin de 13,6), le méthanol qui diffuse en phase vapeur joue le rôle d'antisolvant et abaisse la solubilité du complexe K+–γ-CD. La sursaturation qui en résulte déclencherait la nucléation puis la croissance du réseau cubique, où les K+ relieraient les oxygènes des faces primaires et secondaires de plusieurs γ-CD, les OH− restant probablement contre-ions libres. La vitesse d'entrée du méthanol fixerait la sursaturation : à 50 °C la pression de vapeur du méthanol est environ trois fois plus élevée qu'à 25 °C (≈ 0,55 contre ≈ 0,17 bar), ce qui pourrait donner une nucléation plus rapide et des cristaux plus petits. Une fuite de méthanol à travers le Parafilm ou une carbonatation de la solution par le CO2 de l'air pourraient laisser la solution sous-saturée ou faire précipiter de la γ-CD ou des sels de potassium. Les calculs DFT présentés ne testent pas ce mécanisme."
   },
   {
    "type": "securite_analyse",
    "route": "1A",
-   "text": "Le KOH en pastilles est corrosif (brûlures de la peau et des yeux, solution fortement basique) ; le méthanol est inflammable et toxique (vapeurs, absorption cutanée) : la diffusion de vapeur dans un récipient fermé par du Parafilm et le séchage sous vide à 25 puis 45 °C doivent se faire sous hotte, loin de toute flamme. L'article ne mentionne aucune précaution."
+   "text": "Le KOH en pastilles est corrosif (brûlures de la peau et des yeux, solution fortement basique) ; le méthanol est inflammable et toxique (vapeurs, absorption cutanée). Pour les jeux 2, 3 et 5, il est mis en vapeur à 50 °C (pression de vapeur ≈ 0,55 bar) dans un récipient fermé seulement par du Parafilm, à la limite de sa plage d'usage, dans une étuve ou un incubateur pas forcément antidéflagrant ; le séchage sous vide à 25 puis 45 °C exige aussi une hotte. Tout cela doit se faire loin de toute flamme. L'article ne mentionne aucune précaution."
   },
   {
    "type": "securite_analyse",
@@ -1792,14 +2040,104 @@
   {
    "type": "limite_reproductibilite",
    "route": "Cur_1mgmL",
-   "text": "L'échantillon de γ-CD-MOF utilisé pour la série de 1 à 5 mg/mL n'est pas nommé (« γ-CD-MOF samples ») ; seuls Cur-5A-4 et Cur-5A-5 (DRX, FT-IR) et le MOF 5C chargé à 4 et 5 mg/mL (ATG) sont nommés. La série à basse concentration (0,001 à 0,016 mg/mL) ne précise ni la masse de MOF ni le volume de solution. La vitesse d'agitation, la température exacte (« room temperature ») et la durée de la dissolution ne sont pas données. L'adsorption de la curcumine sur la γ-CD seule (7,05 %) est donnée sans la concentration utilisée. La surface BET (430,8 m2/g, dégazage à 60 °C pendant 8 h) est donnée sans nom d'échantillon.",
-   "quote": "Prior to analysis, approximately 50 mg of the sample was degassed at 60 °C for 8 h."
+   "text": "L'échantillon de γ-CD-MOF utilisé pour la série de 1 à 5 mg/mL n'est pas nommé (« γ-CD-MOF samples ») ; seuls Cur-5A-4 et Cur-5A-5 (DRX, FT-IR) et le MOF 5C chargé à 4 et 5 mg/mL (ATG) sont nommés. La série à basse concentration (0,001 à 0,016 mg/mL) ne précise ni la masse de MOF ni le volume de solution ni le solvant (voir Cur_low). La vitesse d'agitation, la température exacte (« room temperature ») et la durée de la dissolution de la curcumine ne sont pas données, ni le traitement du MOF après chargement (lavage, séchage). L'adsorption de la curcumine sur la γ-CD seule (7,05 %) est donnée sans protocole (voir Cur_gammaCD).",
+   "quote": "50 mg of γ-CD-MOF samples were weighed and dispersed into 10 mL of curcumin solution in a glass vial and stirred magnetically in the dark for 24 h at room temperature."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Valeurs lues sur la figure 8b (capacité de chargement à 4 mg/mL, environ 23 %) : lecture graphique approximative. Les valeurs de ± de 8b sont des écarts types sans précision du nombre d'échantillons (probablement les trois MOF 5A à 5C, non écrit). Les calculs DFT et CBMC (ΔG, ΔH, énergies d'interaction, capacité simulée de 195,6 mg/g) ne sont pas des voies de synthèse et ne sont pas extraits.",
    "quote": "8 Curcumin (a) adsorption capacities of synthesized γ-CD-MOF samples 5A, 5B, and 5C at low concentration and (b) loading capacities at high concentration."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "La capacité d'adsorption maximale expérimentale moyenne à forte concentration est donnée comme 245,92 mg/g, soit 24,59 %, valeur du point à 3 mg/mL (rattachement par concordance : le texte ne l'attribue pas à un échantillon ni à une concentration). La γ-CD seule charge 7,05 % de curcumine (voie Cur_gammaCD).",
+   "quote": "experimentally determined average maximum adsorption capacity (245.92 mg/g) as given in Table"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "1A",
+   "text": "Selon Liu et al., dont les auteurs rapprochent leurs observations, une température de synthèse plus élevée favorise la diffusion de vapeur de méthanol dans la solution des réactifs et provoque une sursaturation rapide des précurseurs. Ce résultat est celui de la référence citée, pas un résultat de l'étude.",
+   "quote": "These observations align with the findings of Liu et al., who reported that increasing the synthesis temperature promotes vapor diffusion of methanol into the reactant solution, leading to rapid supersaturation of the precursors."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Cur_1mgmL",
+   "text": "Hypothèse de chimiste : la curcumine serait retenue à la surface et dans les grands pores et cavités de γ-CD du réseau, par liaisons hydrogène avec les hydroxyles des glucoses et par association avec les K+ ; une partie serait probablement déprotonée par les OH− résiduels du MOF préparé au KOH. Le plafond d'environ 250 mg/g est du même ordre qu'une monocouche estimée à partir de 430,8 m2/g, ce que les auteurs soulignent aussi."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Cur_low",
+   "text": "Hypothèse de chimiste : à ces concentrations (concentration à l'équilibre de quelques µg/mL), la région de Henry d'une isotherme dont la capacité est d'environ 250 mg/g ne peut pas saturer vers 1,5 mg/g. Le plateau serait plus probablement un artefact du dosage (fin de la gamme d'étalonnage) ou du rapport volume/masse qu'une monocouche."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La surface BET (430,8 m2/g ; environ 50 mg dégazés à 60 °C pendant 8 h, N2 à 77 K) est donnée sans nom d'échantillon : elle n'est rattachée à aucune voie. Elle est basse pour un CD-MOF préparé au KOH (environ 1 000 m2/g et plus rapportés selon le critique scientifique, d'après Roy et Stoddart, 2021), ce qui suggère une activation incomplète ou une perte partielle de structure.",
+   "quote": "Prior to analysis, approximately 50 mg of the sample was degassed at 60 °C for 8 h."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les auteurs définissent le rendement comme le rapport de la masse de produit obtenue à la masse théorique calculée sur les réactifs de départ ; la base du calcul (réactif limitant, formule et solvatation du produit) n'est pas donnée, et les Méthodes renvoient au Tableau S1 alors que les valeurs sont au Tableau S2.",
+   "quote": "The yield of each γ-CD-MOF sample was calculated as the percent ratio of the obtained product mass to the theoretical mass based on reagent inputs, with all results shown in Table S1."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le rendement ne mesure probablement pas le MOF : sur la base de la somme des intrants, 84 % dépasse la masse maximale de MOF anhydre, et le jeu 1 (sans γ-CD-MOF identifiable) atteint 68 à 84 %, 2A 85 % pour une cristallisation sous-optimale. Il reflète plutôt le solide récupéré (γ-CD reprécipitée, sels de potassium, solvant retenu) et ne peut pas servir de critère de réussite ; le rendement moyen de 83 % annoncé pour le jeu 4 ne correspond pas non plus à la moyenne de 81,7 % du Tableau S2."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les tailles de cristallite par Scherrer (0,22 à 0,50 µm) sont hors du domaine d'usage de la méthode (au-delà d'environ 100–200 nm, Holzwarth et Gibson, 2011), sans correction de la largeur instrumentale déclarée ; elles ne sont pas interprétables comme des tailles, et la conclusion que 4A a des cristallites plus petits que 3A et 5A n'est pas démontrée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'argument DFT (ΔG relatif de plus en plus négatif de 15 à 60 °C, calculé sur un seul agrégat chargé référencé à lui-même à 15 °C) est trivial, puisque dG/dT = −S pour toute espèce ; il ne dit rien de l'énergie libre de cristallisation. Le meilleur jeu expérimental (jeu 4) est d'ailleurs incubé à 25 °C : la DFT ne départage pas les jeux."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les répétitions A, B, C d'un même jeu divergent fortement (rendements de 14, 17 et 57 % pour le jeu 3), ce qui trahit une variable non contrôlée : fermeture au Parafilm à 50 °C, perte de méthanol, filtration ou carbonatation par l'air. L'agitation diffère aussi entre jeux (12 h à 25 °C contre 1 h à 50 °C), ce qui confond température et durée. Une partie de la lecture par DRX peut enfin dépendre du trempage de 7 jours dans le méthanol et de l'humidité au moment des mesures, non précisés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "5C",
+   "text": "ATG (Fig. 7, MOF 5C) : le texte place la décomposition principale entre 300 et 400 °C, alors que la figure 7 la montre vers 240–320 °C ; Cur-5C-4 descend aussi à ≈ 8 % de masse à 800 °C contre ≈ 22 % pour 5C, ce qui s'accorde mal avec « similar decomposition profiles » et avec un résidu attribué au carbonate de potassium (≈ 10 % attendu). Valeurs de l'article inchangées ; activer le MOF d'après le texte (300 °C) le dégraderait, la décomposition commençant dès environ 240 °C d'après la figure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "5A",
+   "text": "Les auteurs retiennent le jeu 4 comme optimal, mais toute l'étude d'adsorption (DRX, FT-IR et ATG des matériaux chargés, isothermes) porte sur le jeu 5 (5A, 5B, 5C), alors que le résumé et la conclusion l'attribuent aux γ-CD-MOF « optimisés » ; 5C, jugé déformé en DRX, sert à l'ATG et à l'isotherme. Aucune donnée d'adsorption ne se rapporte au jeu 4."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cur_low",
+   "text": "Série incohérente : à 0,001 mg/mL, Qe ≈ 0,22 mg/g (lecture de la figure 8a) dépasse le maximum possible (≈ 0,20 mg/g) avec le rapport 10 mL pour 50 mg de la série principale, et le rapport volume/masse implicite varie d'environ 111 à plus de 220 mL/g dans la série ; masse, volume et solvant ne sont pas donnés. De plus, deux capacités de Langmuir (≈ 1,5 mg/g à basse concentration, ≈ 250 mg/g à haute concentration) sont présentées comme des monocouches du même matériau : le plateau à 1,46 mg/g vient plus probablement de l'étalonnage UV (absorbance élevée en haut de gamme, 0,012–0,016 mg/mL) ou du rapport volume/masse que d'une saturation de sites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cur_1mgmL",
+   "text": "Le chargement est mesuré par déplétion du surnageant à 426 nm : toute curcumine déprotonée par les OH− du MOF ou dégradée est comptée comme adsorbée, sans témoin de curcumine sans MOF ni dosage direct dans le solide. La baisse de 24,6 à 20,9 % entre 3 et 5 mg/mL repose sur un écart de concentration d'environ 20 % mesuré après forte dilution, à la limite de l'incertitude, et l'écart type est calculé sur trois MOF différents, non sur des répétitions de mesure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cur_1mgmL",
+   "text": "Les preuves de mécanisme sont faibles : le déplacement FT-IR de 3310 à 3302 cm−1 (8 cm−1, pour une résolution de 4 cm−1 sur une bande large) et la disparition de la bande à 3508 cm−1, qui peut venir de la simple dilution, ne distinguent pas inclusion et adsorption de surface. Les énergies DFT (−39 à −64 kcal/mol) viennent d'un agrégat de charge +2 sans contre-ion, et la chaleur isostérique de 66,14 kcal/mol (≈ 277 kJ/mol) est de l'ordre d'une liaison chimique, très au-dessus d'une physisorption : elles ne fondent pas une comparaison quantitative."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cur_gammaCD",
+   "text": "Le témoin γ-CD seule (7,05 %) n'est pas comparable terme à terme : concentration, masse, solvant et durée ne sont pas donnés, et la γ-CD est insoluble dans l'éthanol, donc l'essai mesure une adsorption sur une poudre de faible surface et non une inclusion en solution. Il ne prouve pas à lui seul l'effet du réseau."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "Cur_gammaCD",
+   "text": "Les auteurs opposent la capacité de chargement de la γ-CD native (7,05 %) à celle du γ-CD-MOF (24,59 % au maximum, voir Cur_1mgmL et ses branches) pour conclure que la conversion en MOF augmente nettement le chargement en curcumine ; les protocoles de la γ-CD ne sont pas décrits.",
+   "quote": "Yet, both were markedly lower than the capacities observed for γ-CD-MOF in this work, indicating that conversion of γ-CD to γ-CD-MOF substantially enhances curcumin loading."
   }
  ],
  "method_sources": [
@@ -1828,20 +2166,12 @@
    "issue": "Les répétitions A, B, C d'un jeu suivent le même protocole mais ont des résultats différents ; pour respecter une variation par branche, le paramètre « replicate » (valeur B ou C, parent A) a été créé. Il ne correspond à aucun paramètre du protocole : l'avertissement du contrôle est volontaire."
   },
   {
-   "where": "method_sources",
-   "issue": "Le corps de corpus/refs/PMC12917697.txt ne contient aucun marqueur [[id]] dans le texte ; la référence ref2 est choisie parce que « Smaldone et al. » est nommé dans la phrase et que ref2 est Smaldone et al. 2010. Les autres renvois (« guided by previously reported protocols ») sont des numéros isolés non identifiables et ne sont pas repris."
-  },
-  {
    "where": "2A, 2B, 3B, 3C, 5C : succeeded",
    "issue": "Le texte ne dit pas explicitement échec ou réussite pour 2A et 2B (« suboptimal crystallization »), pour 3B et 3C (seulement « only 3A ... high-quality ») ni pour 5C (déviations et élargissement) ; succeeded est laissé vide pour ces cinq échantillons. Sur la figure 1c, 3B et 3C montrent des diffractogrammes bruités sans pic net (lecture visuelle, non extraite)."
   },
   {
    "where": "Cur_1mgmL réactif MOF",
    "issue": "Les Méthodes disent seulement « γ-CD-MOF samples » pour la série de 1 à 5 mg/mL ; la Figure 8b et le Tableau 3 portent sur les échantillons 5A, 5B et 5C. L'attribution des taux de chargement (moyenne ± écart type) à un échantillon précis n'est pas possible : les valeurs sont rattachées aux voies de concentration, sans nom d'échantillon."
-  },
-  {
-   "where": "Cur_low héritage",
-   "issue": "La série 0,001–0,016 mg/mL n'a pas de protocole propre dans les Méthodes (masse de MOF, volume, durée). La branche hérite du protocole de Cur_1mgmL (50 mg, 10 mL, 24 h) sans que l'article le dise explicitement ; seule la concentration est enregistrée comme variation."
   },
   {
    "where": "Cur_4mgmL, taux de chargement",
@@ -1852,8 +2182,40 @@
    "issue": "XRD et FT-IR portent sur 5A chargé à 4 et 5 mg/mL (Cur-5A-4, Cur-5A-5) et l'ATG sur 5C chargé à 4 et 5 mg/mL ; chacune est rangée dans la voie de concentration correspondante, sans distinguer 5A de 5C autrement que dans le champ result."
   },
   {
+   "where": "Cur_low, héritage du protocole de Cur_1mgmL",
+   "issue": "Les Méthodes ne décrivent que la série 1–5 mg/mL ; pour 0,001–0,016 mg/mL seule la durée (« after 24 h adsorption ») est citée. La branche porte donc ses propres étapes réduites (24 h) et déclare masse de MOF, volume, solvant, agitation, température et séparation non cités. Les réactifs hérités de Cur_1mgmL (50 mg de MOF, éthanol, 10 mL) ne doivent pas être lus comme valant pour cette série."
+  },
+  {
+   "where": "Cur_gammaCD",
+   "issue": "Voie créée pour porter le 7,05 % de la γ-CD seule ; protocole de chargement non décrit (concentration de curcumine, masse, volume, solvant, durée, température en not_stated). Pureté et fournisseur de la γ-CD et de la curcumine repris de la section Materials, seule source citée pour ces réactifs."
+  },
+  {
+   "where": "1B, 2A, 2B, 3B, 3C, phase",
+   "issue": "L'article ne dit pas quelle phase constituent 1B (« almost no crystallization »), 2A et 2B (premier pic attendu, autres pics décalés ou absents), 3B et 3C (seul 3A est dit « consistent with high-quality γ-CD-MOF ») ; la phase est laissée non citée et le résultat xrd_crystallinity_vs_gamma_CD_MOF porte l'information. 1A et 1C : pics ne correspondant pas à ceux du γ-CD-MOF."
+  },
+  {
    "where": "BET 430.8 m2/g",
-   "issue": "L'échantillon mesuré par BET n'est pas nommé ; la valeur n'est pas rattachée à une voie (annotation uniquement)."
+   "issue": "L'échantillon mesuré par BET n'est pas nommé ; la valeur n'est rattachée à aucune voie (annotation d'article seulement)."
+  },
+  {
+   "where": "245.92 mg/g (capacité maximale moyenne)",
+   "issue": "Le texte donne 245,92 mg/g comme capacité maximale expérimentale moyenne sans la rattacher à une concentration ni à un échantillon ; elle coïncide avec le point à 3 mg/mL (24,59 % = 245,9 mg/g). Rattachement par concordance, donc consigné en annotation tendance_observee et non en résultat de Cur_3mgmL."
+  },
+  {
+   "where": "5C, ATG (texte et figure 7)",
+   "issue": "Le texte place la décomposition principale entre 300 et 400 °C ; la figure 7 la montre vers 240–320 °C. Valeur du texte retenue dans le résultat, écart signalé en annotation limite_reproductibilite."
+  },
+  {
+   "where": "5A, 5B, 5C, FT-IR",
+   "issue": "Les bandes FT-IR sont décrites pour « the synthesized γ-CD-MOF-5 samples (A–C) » sans distinguer A, B, C (« no significant variation among three samples ») ; la même entrée est portée par les trois voies. Résolution de 4 cm−1 contre un déplacement de 8 cm−1 à interpréter avec prudence."
+  },
+  {
+   "where": "method_sources",
+   "issue": "La référence ref2 est retenue parce que « Smaldone et al. » est nommé dans la phrase et que ref2 est Smaldone et al. 2010. Les autres renvois (« guided by previously reported protocols ») ne sont pas identifiables et ne sont pas repris."
+  },
+  {
+   "where": "Cur_4mgmL, Cur_5mgmL, ATG",
+   "issue": "La citation du résultat ATG est « All samples exhibited a characteristic two-step weight loss behavior. » ; les conditions (10 °C/min, 25–800 °C, N2) viennent de la phrase des Méthodes."
   }
  ]
 }
