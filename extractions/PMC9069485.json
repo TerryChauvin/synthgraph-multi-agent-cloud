@@ -320,7 +320,7 @@
     {
      "property": "LIB_rate_capacity_100mAg-1_end_of_step_approx",
      "quote": "Fig. 6 (a) Cyclic performance, at a current density of 100 mA g−1, and (b) rate capability, at different current densities, of the SGP and pristine SnS2 nanocrystals.",
-     "value_num": 440,
+     "value_num": 390,
      "unit": "mA h g−1",
      "from_figure": "Fig. 6b"
     },
@@ -410,6 +410,19 @@
      "quote": "Rtotal/Ω 204.77 143.16 149.85 50.38",
      "value_num": 149.85,
      "unit": "Ω"
+    },
+    {
+     "property": "LIB_rate_capacity_return_100mAg-1_end_of_step_approx",
+     "quote": "Fig. 6 (a) Cyclic performance, at a current density of 100 mA g−1, and (b) rate capability, at different current densities, of the SGP and pristine SnS2 nanocrystals.",
+     "value_num": 300,
+     "unit": "mA h g−1",
+     "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "LIB_CV_cathodic_peak_1st_scan",
+     "quote": "which is consistent with the strong cathodic peak at ∼1 V (vs. Li/Li+) observed for SnS2 during 1st cathodic scan in CV measurements (Fig. S4a†)",
+     "value_num": 1,
+     "unit": "V vs Li/Li+"
     }
    ],
    "missing_fields": [
@@ -848,6 +861,16 @@
      "quote": "Rtotal/Ω 204.77 143.16 149.85 50.38",
      "value_num": 50.38,
      "unit": "Ω"
+    },
+    {
+     "property": "paper_appearance_after_reduction",
+     "quote": "It is converted into a dark-black shinning SGP without visible shrinkage after hydrothermally reduced at 180 °C (Fig. 2b).",
+     "value_text": "dark-black shinning SGP without visible shrinkage"
+    },
+    {
+     "property": "SGOP_appearance_after_peeling_before_reduction",
+     "quote": "The SGOP exhibits a translucent brown-colored thin film after peeling from the filtration membrane (Fig. 2a).",
+     "value_text": "translucent brown-colored thin film"
     }
    ],
    "missing_fields": [
@@ -876,6 +899,12 @@
      "value_text": "absent",
      "parent_value": "SnS2 nanocrystals, SnS2:GO = 1 : 1 by weight",
      "quote": "For comparison, pure graphene paper (GP) was prepared following the same protocol, without SnS2."
+    },
+    {
+     "parameter": "deionized water (SnS2 redispersion)",
+     "value_text": "absent",
+     "parent_value": "DI water used to re-disperse the SnS2 nanocrystals",
+     "quote": "For comparison, pure graphene paper (GP) was prepared following the same protocol, without SnS2."
     }
    ],
    "succeeded": true,
@@ -889,7 +918,9 @@
      "equipment": [],
      "not_stated": [
       "filter_type",
-      "filtration_membrane"
+      "filtration_membrane",
+      "sonication_of_GO_suspension",
+      "stirring_of_GO_suspension"
      ]
     },
     {
@@ -937,6 +968,20 @@
      "instrument": "X-ray diffractometer (XRD, Rigaku Smart Lab III) equipped with Cu Kα radiations",
      "conditions": "2θ range of 5–80°, scan speed of 10° min−1",
      "quote": "One should note that the (002) peak of graphene in the composite shifts towards a lower angle as compared to pure GP (2θ = 23.33°)"
+    },
+    {
+     "technique": "Raman",
+     "result": "ID/IG = 0.92 for pure GP (1.04 for SGP)",
+     "instrument": "Raman spectroscopy (LabRAM HR)",
+     "conditions": "He–Ne laser (532 nm) as the excitation source",
+     "quote": "As shown in Fig. 3b, SGP shows a slightly higher ID/IG value of 1.04 than pure GP (0.92), which could be ascribed to the increased defects in graphene sheets due to the intervention of SnS2 nanocrystals."
+    },
+    {
+     "technique": "FESEM",
+     "result": "graphene nanosheets tightly stack (Fig. S2)",
+     "instrument": "field-emission scanning electron microscopy (FESEM, Quanta FEI)",
+     "conditions": null,
+     "quote": "In contrast to the pure GP where graphene nanosheets tightly stack (Fig. S2†)"
     }
    ],
    "outcomes": [
@@ -962,6 +1007,10 @@
      "quote": "In contrast to the pure GP where graphene nanosheets tightly stack (Fig. S2†)",
      "value_text": "graphene nanosheets tightly stack"
     }
+   ],
+   "not_stated": [
+    "sonication_of_GO_suspension",
+    "stirring_of_GO_suspension"
    ]
   },
   {
@@ -1284,6 +1333,17 @@
      "quote": "The commercial LiFePO4 electrode exhibits an initial coulombic efficiency of 74.24% and can maintain a reversible specific capacity of 134 mA h g−1 (Fig. S7c and d†).",
      "value_num": 134,
      "unit": "mA h g−1"
+    },
+    {
+     "property": "half_cell_voltage_window",
+     "quote": "measured at a current density of 100 mA g-1 in the voltage range of 2.5 to 4.5 V (vs. Li/Li+)",
+     "value_text": "2.5 to 4.5 V (vs. Li/Li+)"
+    },
+    {
+     "property": "half_cell_current_density",
+     "quote": "measured at a current density of 100 mA g-1 in the voltage range of 2.5 to 4.5 V (vs. Li/Li+)",
+     "value_num": 100,
+     "unit": "mA g-1"
     }
    ]
   },
@@ -1620,12 +1680,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "SnS2",
-   "text": "Hypothèse : le thioacétamide s'hydrolyse à chaud en libérant H2S ; Sn(IV), probablement complexé par l'acide citrique pour modérer l'hydrolyse de SnCl4, précipite avec le sulfure en SnS2 (Sn4+ + 2 H2S → SnS2 + 4 H+). Le rapport 20 mmol de thioacétamide pour 10 mmol de SnCl4 correspond à la stœchiométrie S/Sn = 2 de SnS2 (excès de soufre probable en pratique à cause de pertes en H2S)."
+   "text": "Hypothèse : le thioacétamide s'hydrolyse à chaud en libérant H2S ; Sn(IV), probablement complexé par l'acide citrique pour modérer l'hydrolyse de SnCl4, précipite avec le sulfure en SnS2 (Sn4+ + 2 H2S → SnS2 + 4 H+), sans changement d'état d'oxydation. Le rapport 20 mmol de thioacétamide pour 10 mmol de SnCl4 correspond exactement à S/Sn = 2 : aucun excès de soufre n'est apporté alors que H2S se partage entre solution et ciel gazeux, si bien qu'une partie de l'étain peut rester en solution (rendement non donné)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "SGP",
-   "text": "Hypothèse : à 180 °C la vapeur de H2S de la solution de thioacétamide réduit les groupes oxygénés de l'oxyde de graphène (réduction probable de type sulfure/hydrosulfure) et maintient une pression partielle de soufre qui évite l'hydrolyse oxydante de SnS2. Sans thioacétamide, la vapeur d'eau seule à 180 °C hydrolyse SnS2 en SnO2, comme observé."
+   "text": "Hypothèse, non démontrée par l'article : le papier, tenu hors du liquide, est exposé à de la vapeur d'eau (≈ 10 bar à 180 °C) et à du H2S issu du thioacétamide. L'oxyde de graphène est réduit surtout par déshydratation hydrothermale (perte des groupes époxydes et hydroxyles), peut-être aidée par H2S, que les groupes oxygénés peuvent oxyder en soufre ; le rôle de réducteur attribué au thioacétamide n'est donc pas prouvé (aucune mesure du degré de réduction du carbone, ni avec ni sans thioacétamide). La pression partielle de H2S déplace l'équilibre d'hydrolyse SnS2 + 2 H2O ⇌ SnO2 + 2 H2S vers SnS2 ; sans thioacétamide, la vapeur d'eau seule conduit à SnO2 (l'étain reste Sn(IV) : c'est une hydrolyse, non une oxydation de l'étain). L'eau condensée dans le papier permettrait le mûrissement de SnS2 de 6–10 nm à 20–25 nm."
   },
   {
    "type": "securite_analyse",
@@ -1635,7 +1695,7 @@
   {
    "type": "securite_analyse",
    "route": "SGP",
-   "text": "La réduction à 180 °C au-dessus de la solution de thioacétamide produit de la vapeur de H2S sous pression dans l'autoclave : ouvrir après refroidissement complet, sous hotte ou avec piégeage du gaz. Les nanocristaux de SnS2 et le papier broyé sont des poudres fines à ne pas inhaler."
+   "text": "La réduction à 180 °C au-dessus de la solution de thioacétamide produit de la vapeur de H2S sous pression dans l'autoclave : ouvrir après refroidissement complet, sous hotte ou avec piégeage du gaz. Les nanocristaux de SnS2 secs sont une poudre fine à ne pas inhaler."
   },
   {
    "type": "securite_analyse",
@@ -1661,8 +1721,38 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les résultats d'impédance (tableau S1 de l'annexe) ont été attribués aux échantillons par l'ordre des colonnes d'un tableau aplati en texte. La résistance totale du SGP après 10 cycles (50,38 Ω) est égale à Rs seul, alors que Re + Rs + Rct vaut 52,32 Ω : incohérence probable des auteurs.",
+   "text": "Les résultats d'impédance (tableau S1 de l'annexe) ont été attribués aux échantillons par l'ordre des colonnes d'un tableau aplati en texte. La résistance totale du SGP après 10 cycles (50,38 Ω) est égale à Rs seul, alors que Re + Rs + Rct vaut 52,32 Ω : incohérence probable des auteurs. Écart relevé aussi par la critique scientifique (Re + Rs + Rct = 1,66 + 50,38 + 0,28 = 52,32 Ω) ; la conclusion (résistance de SGP bien inférieure à celle de SnS2) n'en dépend pas.",
    "quote": "Rtotal/Ω 204.77 143.16 149.85 50.38"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GP",
+   "text": "Incohérence de l'article : le d-spacing de GP (3,72 Å) est incompatible avec son pic (002) à 2θ = 23,33° ; la loi de Bragg (Cu Kα, λ = 1,5406 Å) donne d ≈ 3,81 Å pour 23,33°, alors qu'elle redonne bien 3,88 Å pour SGP à 22,93°. L'expansion due à SnS2 serait d'environ 0,07 Å et non 0,16 Å : le sens de l'effet tient, son ampleur est surestimée, et un décalage de 0,4° sur une raie large de graphène réduit est proche de l'incertitude de position. Valeurs recopiées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SGP",
+   "text": "Raman : l'article écrit « He–Ne laser (532 nm) », ce qui est contradictoire (un laser He–Ne émet à 632,8 nm, 532 nm est la raie d'un laser Nd:YAG doublé). Le rapport ID/IG dépend de l'énergie d'excitation : les valeurs 0,92 (GP) et 1,04 (SGP) restent comparables entre elles (même appareil) mais pas à celles d'autres travaux tant que la longueur d'onde réelle est inconnue ; l'attribution de la hausse à plus de défauts n'est pas univoque et l'écart est faible, sans barre d'erreur."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SGP",
+   "text": "Réserves de lecture sur le papier : (1) la réduction de l'oxyde de graphène est attribuée au thioacétamide sans démonstration, la vapeur d'eau seule à 180 °C réduisant déjà l'oxyde de graphène (Zhou et al., Chem. Mater. 2009) et le témoin à l'eau ne mesure pas le degré de réduction ; seul le rôle stabilisant du thioacétamide pour SnS2 est démontré. (2) Les groupes oxygénés du GO peuvent oxyder H2S en soufre élémentaire : le rapport S/Sn « proche de 2 » et la teneur de 60 % en SnS2 viennent de l'EDX, semi-quantitatif, qui attribue tout le soufre à SnS2 ; un soufre hors SnS2 n'est pas exclu. (3) Le passage de SnS2 à SnO2 sans thioacétamide, nommé « oxydation » par les auteurs, est une hydrolyse (l'étain reste Sn(IV))."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SGP",
+   "text": "Coefficients de diffusion (Tableau 1) : l'unité de σ, écrite « Ω cm2 s−1/2 », est inexacte, la formule utilisée contenant déjà l'aire A (le recalcul de 3,64 × 10−13 et 1,00 × 10−16 cm2 s−1 n'est reproduit qu'avec σ en Ω s−1/2). Le rapport des D(Li+), ≈ 3 600, contient un facteur 3,6 dû aux seules aires d'électrode différentes (0,81 contre 1,54 cm2) ; ce sont des valeurs apparentes, utiles en comparaison et non en absolu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Cell_half_SGP",
+   "text": "L'impédance (Tableau S1) attribue Rs, 139–196 Ω avant cyclage, au film d'interface (SEI) alors qu'une SEI n'existe pas encore dans une pile neuve : le demi-cercle avant cyclage reflète plutôt les contacts et le transfert de charge, et Rct de 0,3 à 2 Ω, cent fois plus faible que Rs, est inhabituel. L'attribution des éléments du circuit est discutable, sans changer le classement SGP < SnS2."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_LiFePO4",
+   "text": "Le rendement coulombique initial de 74,24 % du LiFePO4 commercial en demi-pile est bas (un LiFePO4 enrobé de carbone dépasse d'ordinaire 90 %) : avec une coupure haute à 4,5 V, une oxydation de l'électrolyte en charge est probable, non discutée par l'article. La plage du demi-pile (2,5–4,5 V, légende de la Fig. S7) diffère de celle de la pile complète (2,0–4,5 V)."
   }
  ],
  "method_sources": [
@@ -1679,8 +1769,8 @@
    "issue": "« vigorous stirring until a homogenous suspension was obtained » : aucune durée ; consignée en value_text avec l'expression de l'article, vitesse d'agitation non citée."
   },
   {
-   "where": "GP, étapes",
-   "issue": "L'article dit seulement « following the same protocol, without SnS2 ». GP a des étapes propres (filtration, décollement, réduction) sans les étapes qui concernent SnS2. On ne sait pas si la suspension d'oxyde de graphène seul a été ultrasonée et agitée comme celle du mélange (non reprise) ; les paramètres de réduction (180 °C, 12 h) sont ceux du protocole de SGP, par « same protocol »."
+   "where": "GP, étapes (« same protocol, without SnS2 »)",
+   "issue": "L'article dit seulement « following the same protocol, without SnS2 ». GP garde les étapes de filtration, de décollement et de réduction (180 °C, 12 h, repris du protocole de SGP par ce renvoi) ; la sonication et l'agitation de la suspension d'oxyde de graphène seul sont déclarées dans not_stated, car l'article ne dit pas si elles ont été faites sans SnS2. Le réactif « deionized water (SnS2 redispersion) » est marqué absent."
   },
   {
    "where": "Cell_half_SnS2 / Electrode_SnS2",
@@ -1692,7 +1782,7 @@
   },
   {
    "where": "Fig. 6b, valeurs lues",
-   "issue": "Capacités SGP et SnS2 à la fin de chaque palier de 100, 200, 500 mA g−1 et 1 A g−1 (SGP ≈ 700, 540, 390, 250 ; SnS2 ≈ 440, 310, 210, 150 mA h g−1), lues sur la figure avec une précision d'environ 10 % ; les valeurs à 2 A g−1 et au retour à 100 mA g−1 sont écrites dans le texte."
+   "issue": "Capacités SGP et SnS2 à la fin de chaque palier de 100, 200, 500 mA g−1 et 1 A g−1 (SGP ≈ 700, 540, 390, 250 ; SnS2 ≈ 390, 310, 210, 150 mA h g−1), lues sur la figure avec une précision d'environ 10 % (deux chiffres significatifs seulement). SnS2 à 100 mA g−1 relu à ≈ 390 (440 à l'extraction) lors de la critique de fidélité. Le retour à 100 mA g−1 de SnS2 (≈ 300 mA h g−1 au cycle 60) est aussi lu sur la figure ; les valeurs à 2 A g−1 et le retour de SGP sont écrits dans le texte."
   },
   {
    "where": "Caractérisation Raman",
@@ -1705,6 +1795,10 @@
   {
    "where": "Tableau 1 et texte, D(Li+) du SGP",
    "issue": "Le texte écrit « three orders of magnitude higher » pour 3,64 × 10−13 contre 1,00 × 10−16 cm2 s−1, soit un facteur 3640 (≈ 3,6 ordres) ; valeurs recopiées du tableau."
+  },
+  {
+   "where": "Electrode_LiFePO4, plage de potentiel du demi-pile",
+   "issue": "La plage 2,5 à 4,5 V (vs. Li/Li+) et la densité de courant de 100 mA g-1 du demi-pile LiFePO4 viennent de la légende de la Fig. S7 (annexe) ; le texte principal ne donne que le rendement et la capacité."
   }
  ]
 }
