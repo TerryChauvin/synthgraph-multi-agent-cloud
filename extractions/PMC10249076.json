@@ -63,6 +63,15 @@
    "results_in": [
     "Table 2"
    ]
+  },
+  {
+   "sample": "YIG sol–gel de Fopase et al. (littérature)",
+   "defined_in": "Texte, section hyperthermie magnétique (SAR de 146.76 W/g rapporté, réf. 5)",
+   "route": null,
+   "why": "Valeur de la littérature (réf. 5), non synthétisée dans l'article ; comparée par les auteurs à leurs propres SAR.",
+   "results_in": [
+    "Texte (hyperthermie)"
+   ]
   }
  ],
  "routes": [
@@ -444,6 +453,12 @@
        "quote": "The pellet obtained is once again milled and pressed into pellets and sintered at 1250 °C for another 30 min using the microwave furnace.",
        "value_num": 30,
        "unit": "min"
+      },
+      {
+       "name": "frequency",
+       "quote": "The pellets are preheated at 1000 °C for 30 min using a microwave-programmable furnace fitted with dual magnetrons, operating at a frequency of 2.45 GHz.",
+       "value_num": 2.45,
+       "unit": "GHz"
       }
      ],
      "equipment": [
@@ -614,6 +629,26 @@
      "quote": "| 3 | 146",
      "value_num": 146,
      "unit": "J s–1 g–1"
+    },
+    {
+     "property": "particle_size_Table2",
+     "quote": "hydrothermal | microwave | 1250 | 59 | 24.78 | 0.147 | 3.39 | present work",
+     "value_num": 59,
+     "unit": "nm"
+    },
+    {
+     "property": "time_to_44C_1_mg_mL",
+     "quote": "Figure 3 (a) Magnetization cycle and (b, c) transient temperature as a function of time of YIG synthesized by the hydrothermal method and sol–gel auto combustion technique.",
+     "value_num": 8,
+     "unit": "min",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "time_to_44C_3_mg_mL",
+     "quote": "Figure 3 (a) Magnetization cycle and (b, c) transient temperature as a function of time of YIG synthesized by the hydrothermal method and sol–gel auto combustion technique.",
+     "value_num": 3,
+     "unit": "min",
+     "from_figure": "Fig. 3b"
     }
    ],
    "missing_fields": [
@@ -700,7 +735,8 @@
      "not_stated": [
       "amount",
       "purity",
-      "supplier"
+      "supplier",
+      "formula"
      ]
     },
     {
@@ -928,7 +964,8 @@
       "atmosphere",
       "heating_rate",
       "cooling_rate",
-      "power"
+      "power",
+      "frequency"
      ]
     },
     {
@@ -984,7 +1021,8 @@
       "atmosphere",
       "heating_rate",
       "cooling_rate",
-      "power"
+      "power",
+      "frequency"
      ]
     }
    ],
@@ -1141,6 +1179,26 @@
      "quote": "| 3 | 101",
      "value_num": 101,
      "unit": "J s–1 g–1"
+    },
+    {
+     "property": "particle_size_Table2",
+     "quote": "sol–gel auto combustion | microwave | 1250 | 56 | 26.39 | 0.145 | 3.14 | present work",
+     "value_num": 56,
+     "unit": "nm"
+    },
+    {
+     "property": "time_to_44C_1_mg_mL",
+     "quote": "Figure 3 (a) Magnetization cycle and (b, c) transient temperature as a function of time of YIG synthesized by the hydrothermal method and sol–gel auto combustion technique.",
+     "value_num": 11,
+     "unit": "min",
+     "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "time_to_44C_3_mg_mL",
+     "quote": "Figure 3 (a) Magnetization cycle and (b, c) transient temperature as a function of time of YIG synthesized by the hydrothermal method and sol–gel auto combustion technique.",
+     "value_num": 4,
+     "unit": "min",
+     "from_figure": "Fig. 3c"
     }
    ],
    "missing_fields": [
@@ -1157,7 +1215,7 @@
    "type": "resume",
    "route": null,
    "quote": null,
-   "text": "L'article prépare le grenat d'yttrium et de fer Y3Fe5O12 (YIG) par deux voies à partir des mêmes précurseurs (Y2O3 dissous dans HNO3, nitrate ferrique) : une voie hydrothermale (pH 11, autoclave à 195 °C pendant 7 h) et une voie sol–gel par auto-combustion (citrate, éthylène glycol, gel brûlé à 120 °C). Dans les deux cas la poudre est pressée en pastilles, préfrittée à 1000 °C puis frittée à 1250 °C pendant 30 min dans un four micro-ondes. Les auteurs comparent structure, grains, gap, vibrations, aimantation, potentiel zêta et chauffage par hyperthermie magnétique (SAR)."
+   "text": "L'article prépare le grenat d'yttrium et de fer Y3Fe5O12 (YIG) par deux voies à partir des mêmes précurseurs (Y2O3, HNO3 et nitrate ferrique dissous dans l'eau ; la dissolution de Y2O3 par HNO3 est une hypothèse, l'article ne l'écrit pas) : une voie hydrothermale (pH 11, autoclave à 195 °C pendant 7 h) et une voie sol–gel par auto-combustion (citrate, éthylène glycol, gel brûlé à 120 °C). Dans les deux cas la poudre est pressée en pastilles, préfrittée à 1000 °C puis frittée à 1250 °C pendant 30 min dans un four micro-ondes. Les auteurs comparent structure, grains, gap, vibrations, aimantation, potentiel zêta et chauffage par hyperthermie magnétique (SAR)."
   },
   {
    "type": "objectif_etude",
@@ -1199,7 +1257,31 @@
    "type": "limite_reproductibilite",
    "route": null,
    "quote": null,
-   "text": "Annexe absente du dépôt : le contenu des figures S1 et S2 (schémas des deux protocoles), S3 (spectres EDX et cartographie) et S4 (transmittance) est une image du PDF d'annexe ; seules leurs légendes sont lisibles. Les courbes de chauffage des figures 3b et 3c n'ont pas été relevées (attribution des deux panneaux aux deux échantillons ambiguë)."
+   "text": "Annexe absente du dépôt : le contenu des figures S1 et S2 (schémas des deux protocoles), S3 (spectres EDX et cartographie) et S4 (transmittance) est une image du PDF d'annexe ; seules leurs légendes sont lisibles. Les courbes de chauffage des figures 3b et 3c sont lues à ± 1 min seulement (durée pour atteindre ≈ 44 °C) ; la légende ne dit pas quel panneau est quel échantillon, attribution tirée de l'ordre de la légende et des pentes initiales."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": null,
+   "text": "Quatre points des Tableaux 1 et 3 et du texte viennent de l'article et n'ont pas été corrigés. (a) Le paramètre de maille 1,22 nm est 1,4 % sous la fiche JCPDS 00-043-0507 citée par les auteurs (1,2376 nm) et incompatible avec la densité théorique 5,22 g/cm3 de la même table (1,22 nm donnerait 5,40 g/cm3 ; 5,22 g/cm3 correspondrait à 1,234 nm). (b) La densité de dislocations 1/D² est exprimée en cm–2 mais correspond à des m–2 (facteur 10^4). (c) La phrase « highly transparent … (<1000 nm) » contredit le gap de 2,25 eV, qui correspond à une absorption sous ≈ 550 nm. (d) Le SAR n'est pas recalculable : la masse du solvant manque dans la formule, un recalcul avec l'hexane et les pentes de la Fig. 3 donne des valeurs ≈ 1,7 à 1,9 fois plus basses que le Tableau 3, les pertes par hystérésis tirées du cycle quasi statique sont bornées à ≈ 10 W/g, et aucun essai à blanc (hexane seul) n'est rapporté."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "YIG_hydrothermal",
+   "quote": null,
+   "text": "Densité de dislocations 2,78 × 10^14 « cm–2 » : la valeur est celle de 1/D² avec D = 59,95 nm en mètres, donc en m–2 (≈ 2,78 × 10^10 cm–2). Valeur et unité gardées telles que l'article les écrit ; unité probablement fausse chez les auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "YIG_solgel",
+   "quote": null,
+   "text": "Densité de dislocations 3,13 × 10^14 « cm–2 » : même incohérence d'unité que pour la voie hydrothermale (1/D² avec D = 56,45 nm en mètres, soit des m–2). Valeur et unité gardées telles que l'article les écrit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": null,
+   "text": "Réserves supplémentaires du critique scientifique. Aucune quantité de précurseur ; la dissolution de Y2O3 (insoluble dans l'eau) par HNO3 n'est pas écrite. Champ de l'hyperthermie 35,33 kA/m (résumé) contre 35,2 kA/m (texte) ; le produit H·f ≈ 1,1 × 10^10 A m–1 s–1 dépasse le critère de Hergt et Dutz (5 × 10^9 A m–1 s–1), donc la conclusion « suitable for magnetic hyperthermia » n'est pas établie en conditions admissibles ; mesures faites dans l'hexane. Fopase et al. (Mater. Sci. Eng. C 116, 111163, 2020) sont cités à 146,76 W/g alors que le résumé de leur article donne 114,65 W/g à 1 mg/mL. La taille de Scherrer (≈ 56–60 nm) est présentée comme taille de particule alors que les grains font 1,4 à 2,3 µm. Potentiel zêta donné sans signe ni milieu. « Biocompatible » n'est appuyé par aucun essai biologique. Le titre « microwave-assisted hydrothermal » désigne en fait une étape hydrothermale faite en étuve. La comparaison des deux voies porte sur plusieurs variables à la fois (réactifs, pH, méthode)."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1211,7 +1293,7 @@
    "type": "mecanisme_analyse",
    "route": "YIG_hydrothermal",
    "quote": null,
-   "text": "Hypothèse : Y2O3 se dissout dans l'acide nitrique en Y(NO3)3 (Y2O3 + 6 HNO3 → 2 Y(NO3)3 + 3 H2O), puis l'ammoniaque à pH 11 précipite probablement les hydroxydes Y(OH)3 et Fe(OH)3 dans le rapport 3:5 de Y3Fe5O12. Le traitement à 195 °C déshydraterait en partie ces hydroxydes en oxydes ou oxyhydroxydes mélangés, mais la phase grenat ne se forme probablement qu'à la haute température du frittage (1000 à 1250 °C), par diffusion à l'état solide, d'où les deux traitements micro-ondes."
+   "text": "Hypothèse : Y2O3 se dissout probablement dans l'acide nitrique en Y(NO3)3 (Y2O3 + 6 HNO3 → 2 Y(NO3)3 + 3 H2O), puis l'ammoniaque à pH 11 précipite les hydroxydes Y(OH)3 et Fe(OH)3 (ou ferrihydrite) dans le rapport 3:5 de Y3Fe5O12. À 195 °C sans minéralisateur, l'étape hydrothermale (en étuve, sans micro-ondes) ne ferait que vieillir et cristalliser partiellement ces hydroxydes (oxyhydroxydes, hématite, Y(OH)3) ; la formation complète d'un précipité de nanoferrite dans l'autoclave n'est pas montrée, aucune DRX n'étant faite avant frittage. Le grenat se formerait au préfrittage et au frittage (1000 à 1250 °C), par réaction à l'état solide (par exemple 3 YFeO3 + Fe2O3 → Y3Fe5O12), les micro-ondes n'intervenant que là. Source du critique scientifique : raisonnement de chimie générale, sans source citée."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1239,16 +1321,12 @@
    "issue": "Le résumé donne 35.33 kA/m, le corps du texte 35.2 kAm–1 pour la même mesure à 316 kHz. Les deux valeurs sont citées dans les conditions de la caractérisation ; aucune n'est retenue comme paramètre de résultat."
   },
   {
-   "where": "Table 3, SAR à 3 mg/mL",
-   "issue": "Les rangées « | 3 | 146 » et « | 3 | 101 » n'ont pas de cellule de technique (cellules fusionnées). Attribution par position : 146 au-dessous de « hydrothermal » et 101 au-dessous de « sol–gel auto combustion » ; l'ordre du résumé (237 sol–gel, 214 hydrothermal à 1 mg/mL) confirme l'attribution pour 1 mg/mL seulement."
-  },
-  {
-   "where": "Figure 3b,c et SAR",
-   "issue": "La légende dit « (b, c) … hydrothermal method and sol–gel auto combustion technique » sans dire quel panneau est lequel. Sur les images, le panneau b atteint ≈ 44 °C en 8 min à 1 mg/mL, le panneau c en 12 min, ce qui semble contredire un SAR plus fort pour la voie sol–gel si b est la voie hydrothermale. Aucune valeur n'a été lue sur ces courbes."
+   "where": "Figure 3b,c : attribution des panneaux et lecture des durées",
+   "issue": "La légende dit « (b, c) … hydrothermal method and sol–gel auto combustion technique » sans dire quel panneau est lequel ; ordre de la légende retenu (b = hydrothermale, c = sol–gel). Les pentes initiales lues sur la figure le corroborent : à 1 mg/mL ≈ 4,6 °C/min (b) et ≈ 5,1 °C/min (c), rapport 1,11 proche de 237/214 ; le rapport des pentes 1→3 mg/mL du panneau b (≈ 1,47) est proche de 214/146. Elles confirment aussi l'attribution des rangées « | 3 | 146 » (hydrothermale) et « | 3 | 101 » (sol–gel) du Tableau 3. Durées lues pour atteindre ≈ 44 °C : 8 et 3 min (panneau b, 1 et 3 mg/mL), 11 et 4 min (panneau c) ; pour c à 1 mg/mL, la courbe passe de 43,9 °C (10 min) à ≈ 44,3 °C (11 min) et s'arrête à 12 min. Lecture graphique, précision ≈ ± 1 min et ± 10 % sur les pentes."
   },
   {
    "where": "Gap optique, Fig. 2a,b",
-   "issue": "Lu sur les droites de Tauc (étiquettes de la figure) : 2.25 eV (a, hydrothermale) et 2.24 eV (b, sol–gel), précision ≈ ± 0.01 eV ; la conclusion écrit ∼2.25 eV pour les deux échantillons. Les deux valeurs sont gardées (texte et lecture de figure). Figures lues : 2a et 2b ; les autres panneaux portent des résultats déjà écrits dans le texte."
+   "issue": "Lu sur les droites de Tauc (étiquettes de la figure) : 2.25 eV (a, hydrothermale) et 2.24 eV (b, sol–gel), précision ≈ ± 0.01 eV ; la conclusion écrit ∼2.25 eV pour les deux échantillons. Les deux valeurs sont gardées (texte et lecture de figure). Figures lues : 2a, 2b, 3b et 3c ; les autres panneaux portent des résultats déjà écrits dans le texte."
   },
   {
    "where": "Table 1, unités",
@@ -1269,6 +1347,14 @@
   {
    "where": "Raman, longueur d'onde",
    "issue": "Le texte écrit « Raman spectroscopy (= 536 nm) » (le symbole λ a été perdu). Conservé tel quel dans les conditions de caractérisation."
+  },
+  {
+   "where": "YIG_hydrothermal étape 14, fréquence du four",
+   "issue": "L'étape 14 dit « the microwave furnace » sans répéter la fréquence ; la fréquence 2.45 GHz est donnée à l'étape 11 pour le même four, citée ici comme renvoi. Pour la voie sol–gel, aucune fréquence n'est écrite : marquée non indiquée aux étapes 9 et 12."
+  },
+  {
+   "where": "YIG_solgel réactifs, acide citrique",
+   "issue": "L'article ne donne pas la formule de l'acide citrique : marquée non indiquée. Les formules de l'éthylène glycol et de l'ammoniaque ne sont pas non plus écrites dans le texte."
   }
  ]
 }
