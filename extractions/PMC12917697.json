@@ -1803,7 +1803,7 @@
   },
   {
    "label": "Cur_low",
-   "parent": "Cur_1mgmL",
+   "parent": null,
    "kind": "post_treatment",
    "material": {
     "name": "curcumin-loaded γ-CD-MOF (low curcumin concentration series)",
@@ -1813,14 +1813,6 @@
     "morphology": null
    },
    "quote": "The adsorption capacity of synthesized γ-CD-MOF-5 samples was then examined at low curcumin concentrations ranging from 0.001 to 0.016 mg/mL by using a single-beam UV–vis spectrophotometer and eq , as displayed in Figure a.",
-   "variations": [
-    {
-     "parameter": "curcumin",
-     "value_text": "0.001 to 0.016 mg/mL",
-     "parent_value": "1 mg/mL",
-     "quote": "The adsorption capacity of synthesized γ-CD-MOF-5 samples was then examined at low curcumin concentrations ranging from 0.001 to 0.016 mg/mL by using a single-beam UV–vis spectrophotometer and eq , as displayed in Figure a."
-    }
-   ],
    "outcomes": [
     {
      "property": "max_adsorption_capacity_low_concentration",
@@ -1863,7 +1855,8 @@
    "not_stated": [
     "mass_of_MOF",
     "volume_of_solution",
-    "solvent"
+    "solvent",
+    "yield"
    ],
    "missing_fields": [
     "mass_of_MOF",
@@ -1872,7 +1865,33 @@
     "stirring",
     "temperature",
     "separation_of_supernatant"
-   ]
+   ],
+   "is_baseline": false,
+   "method": "adsorption of curcumin at low concentration (0.001–0.016 mg/mL) onto γ-CD-MOF-5 samples, 24 h; mass, volume and solvent not stated",
+   "scale": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "curcumin",
+     "formula": "C21H20O6",
+     "role": "adsorbate",
+     "amount_text": "0.001 to 0.016 mg/mL",
+     "purity": "≥ 95.0%",
+     "supplier": "AFG Scientific (Northbrook, USA)",
+     "supplier_quote": "Curcumin (C21H20O6, purity ≥ 95.0%) was obtained from AFG Scientific (Northbrook, USA).",
+     "quote": "The adsorption capacity of synthesized γ-CD-MOF-5 samples was then examined at low curcumin concentrations ranging from 0.001 to 0.016 mg/mL by using a single-beam UV–vis spectrophotometer and eq , as displayed in Figure a."
+    },
+    {
+     "name": "γ-CD-MOF-5 samples (routes 5A, 5B, 5C)",
+     "formula": null,
+     "role": "intermediate",
+     "quote": "The adsorption capacity of synthesized γ-CD-MOF-5 samples was then examined at low curcumin concentrations ranging from 0.001 to 0.016 mg/mL by using a single-beam UV–vis spectrophotometer and eq , as displayed in Figure a.",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "yield": null
   },
   {
    "label": "Cur_gammaCD",
@@ -2216,6 +2235,10 @@
   {
    "where": "Cur_4mgmL, Cur_5mgmL, ATG",
    "issue": "La citation du résultat ATG est « All samples exhibited a characteristic two-step weight loss behavior. » ; les conditions (10 °C/min, 25–800 °C, N2) viennent de la phrase des Méthodes."
+  },
+  {
+   "issue": "Cur_low détachée de Cur_1mgmL par l'orchestrateur : l'article ne dit pas que la série à basse concentration reprend 50 mg / 10 mL / éthanol ; seuls la concentration, les échantillons γ-CD-MOF-5 et la durée de 24 h sont cités.",
+   "where": "Cur_low"
   }
  ]
 }
