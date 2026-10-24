@@ -210,6 +210,30 @@
    "steps": [
     {
      "order": 1,
+     "action": "harvest",
+     "description": "Harvest ripe, yellow, healthy Citrus limon fruits by hand from the same tree (January 2020, farm of Data Ben Dahoua, Ghardaïa, Algeria).",
+     "quote": "In January 2020, the fresh and adult Citrus limon (L.) were harvested randomly by hand when they were fully mature, from the same tree in a private-public farm in the area of Data Ben Dahoua, Ghardaïa, a Sahara Desert town located in northern-central Algeria. The selected fruits must be ripe, of yellow color, edible, and without any sign of infection.",
+     "parameters": [
+      {
+       "name": "harvest_date",
+       "value_text": "January 2020",
+       "quote": "In January 2020, the fresh and adult Citrus limon (L.) were harvested randomly by hand when they were fully mature"
+      },
+      {
+       "name": "harvest_location",
+       "value_text": "private-public farm in the area of Data Ben Dahoua, Ghardaïa",
+       "quote": "from the same tree in a private-public farm in the area of Data Ben Dahoua, Ghardaïa"
+      },
+      {
+       "name": "fruit_maturity",
+       "value_text": "ripe, of yellow color",
+       "quote": "The selected fruits must be ripe, of yellow color, edible, and without any sign of infection."
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
      "action": "wash",
      "description": "Wash the harvested fruit three times with running water then three times with deionized water.",
      "quote": "The fruit was washed three times with running water and then three times with deionized water, to remove any residual dust and black stains from the surface, and then air-dried at room temperature.",
@@ -229,7 +253,7 @@
      "not_stated": []
     },
     {
-     "order": 2,
+     "order": 3,
      "action": "dry",
      "description": "Air-dry the washed fruit at room temperature.",
      "quote": "The fruit was washed three times with running water and then three times with deionized water, to remove any residual dust and black stains from the surface, and then air-dried at room temperature.",
@@ -246,7 +270,7 @@
      ]
     },
     {
-     "order": 3,
+     "order": 4,
      "action": "reflux",
      "description": "Reflux the rinsed and dried zest in deionized water at 60 °C with shaking.",
      "quote": "The extract of Citrus limon zest was made by refluxing 15 g of rinsed and dried lemon zest in 150 mL of deionized water at 60 °C with shaking for 15 min.",
@@ -272,7 +296,7 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "cool",
      "description": "Let the extract cool to room temperature.",
      "quote": "After allowing it to cool to room temperature, the extract solution was filtered with Whatman No.1 filter paper (Whatman, Fisher Scientific, Pittsburgh, PA, USA) to remove any suspended particles",
@@ -289,7 +313,7 @@
      ]
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "filter",
      "description": "Filter the extract through Whatman No.1 filter paper to remove suspended particles.",
      "quote": "After allowing it to cool to room temperature, the extract solution was filtered with Whatman No.1 filter paper (Whatman, Fisher Scientific, Pittsburgh, PA, USA) to remove any suspended particles",
@@ -304,7 +328,7 @@
      "not_stated": []
     },
     {
-     "order": 6,
+     "order": 7,
      "action": "store",
      "description": "Store the filtered extract at 4–8 °C until its use in the AgNP synthesis.",
      "quote": "one part was stored at 4–8 °C to be utilized in the following step",
@@ -321,7 +345,22 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "DPPH radical scavenging",
+     "result": "Antioxidant test of the extract: inhibition at 25, 50 and 100 µg/mL and IC50 84 µg/mL (Table 4); text series and Fig. 7 disagree (see doubts).",
+     "instrument": "UV-visible spectrophotometer",
+     "conditions": "2 mL of DPPH solution (0.1 mM) added to 1 mL of sample diluted with methanol (Methods range 100–500 μg/mL, Fig. 7 shows 20–100 µg/mL); shaken and stored in the dark at room temperature; absorbance read at 517 nm after 1 h; ascorbic acid positive control (IC50 22.6 ± 0.06 µg/mL, Table 4), methanol negative control.",
+     "quote": "A total of 2 mL of a standard solution of DPPH (0.1 mM) was added to 1 mL of synthesized AgNPs–lemon zest extract solution diluted with methanol to obtain various concentrations (100–500 μg/mL), along with the standard methanolic solutions of ascorbic acid."
+    },
+    {
+     "technique": "agar well diffusion",
+     "result": "Inhibition zone 8 mm against C. albicans, none for the bacteria (Table 5); the text says the extract has no antibacterial activity.",
+     "instrument": null,
+     "conditions": "100 μL of plant extract per 6 mm well (extract concentration not stated); Mueller–Hinton agar for bacteria, Sabouraud dextrose agar for the fungus; inoculum 106 CFU/mL (0.5 McFarland standards, as written); 24 h at 37 °C (bacteria) or 30 °C (fungi); triplicates; sterilized water as negative control; gentamicin (100 μg) and nystatin (100 μg) as positive controls; E. coli ATCC 25922, S. aureus ATCC 25923, clinical C. albicans.",
+     "quote": "After that, 6 mm wells were punched in the agar plate with a sterilized cork borer, and then each well was filled separately with 100 μL of AgNPs suspended in double sterilized water of 1 mg/mL, plant extract, and sterilized water as the negative control."
+    }
+   ],
    "outcomes": [
     {
      "property": "DPPH_IC50",
@@ -522,6 +561,12 @@
        "value_num": 4,
        "unit": "h",
        "quote": "The optimum conditions were found to be 1 mM of silver nitrate concentration, a 1:9 ratio extract of the mixture, and a 4 h incubation period."
+      },
+      {
+       "name": "concentration",
+       "value_num": 1,
+       "unit": "mM",
+       "quote": "a concentration of 1 mM freshly prepared silver nitrate aqueous solution (AgNO3)"
       }
      ],
      "equipment": [
@@ -648,6 +693,20 @@
      "instrument": "Zeiss EM 900 instrument model",
      "conditions": null,
      "quote": "which recorded that the nanoparticle had a spherical particle, relatively face-centered cubic shape, with different sizes between 7–28 nm"
+    },
+    {
+     "technique": "DPPH radical scavenging",
+     "result": "Antioxidant test of the AgNPs: inhibition at 25, 50 and 100 µg/mL and IC50 42.56 µg/mL (Table 4); text series and Fig. 7 disagree (see doubts).",
+     "instrument": "UV-visible spectrophotometer",
+     "conditions": "2 mL of DPPH solution (0.1 mM) added to 1 mL of sample diluted with methanol (Methods range 100–500 μg/mL, Fig. 7 shows 20–100 µg/mL); shaken and stored in the dark at room temperature; absorbance read at 517 nm after 1 h; ascorbic acid positive control (IC50 22.6 ± 0.06 µg/mL, Table 4), methanol negative control.",
+     "quote": "A total of 2 mL of a standard solution of DPPH (0.1 mM) was added to 1 mL of synthesized AgNPs–lemon zest extract solution diluted with methanol to obtain various concentrations (100–500 μg/mL), along with the standard methanolic solutions of ascorbic acid."
+    },
+    {
+     "technique": "agar well diffusion",
+     "result": "Inhibition zones 14 mm (S. aureus), 20 mm (E. coli), 24 mm (C. albicans) (Table 5).",
+     "instrument": null,
+     "conditions": "100 μL of AgNPs suspended in double sterilized water at 1 mg/mL per 6 mm well; Mueller–Hinton agar for bacteria, Sabouraud dextrose agar for the fungus; inoculum 106 CFU/mL (0.5 McFarland standards, as written); 24 h at 37 °C (bacteria) or 30 °C (fungi); triplicates; sterilized water as negative control; gentamicin (100 μg) and nystatin (100 μg) as positive controls; E. coli ATCC 25922, S. aureus ATCC 25923, clinical C. albicans.",
+     "quote": "After that, 6 mm wells were punched in the agar plate with a sterilized cork borer, and then each well was filled separately with 100 μL of AgNPs suspended in double sterilized water of 1 mg/mL, plant extract, and sterilized water as the negative control."
     }
    ],
    "outcomes": [
@@ -755,6 +814,126 @@
      "value_num": 24,
      "unit": "mm",
      "quote": "Ag NPs | 14 | 20 | 24"
+    },
+    {
+     "property": "colour_observation_after_30_min",
+     "value_text": "the mixture solution turned turbid and became reddish-brown",
+     "quote": "After 30 min, the mixture solution turned turbid and became reddish-brown, and the color of the colloidal suspension changed from yellow to brown, suggesting the formation of silver nanoparticles."
+    },
+    {
+     "property": "SPR_peak_absorbance_AgNO3_series_1_mM",
+     "value_num": 0.77,
+     "unit": "a.u.",
+     "from_figure": "Fig. 2a",
+     "quote": "Figure 2 UV-Visible spectrum of the optimizing factor nanoparticles: (a) concentration of silver nitrate; (b) the contact time; (c) concentration of Citrus lemon zest extract."
+    },
+    {
+     "property": "EDX_C_weight_percent",
+     "value_num": 4.14,
+     "unit": "%",
+     "quote": "C (K) | 4.14 | 10.43 | 110.91"
+    },
+    {
+     "property": "EDX_C_atomic_percent",
+     "value_num": 10.43,
+     "unit": "%",
+     "quote": "C (K) | 4.14 | 10.43 | 110.91"
+    },
+    {
+     "property": "EDX_N_weight_percent",
+     "value_num": 5.18,
+     "unit": "%",
+     "quote": "N (K) | 5.18 | 11.2 | 45.34"
+    },
+    {
+     "property": "EDX_N_atomic_percent",
+     "value_num": 11.2,
+     "unit": "%",
+     "quote": "N (K) | 5.18 | 11.2 | 45.34"
+    },
+    {
+     "property": "EDX_O_weight_percent",
+     "value_num": 31.65,
+     "unit": "%",
+     "quote": "O (K) | 31.65 | 59.93 | 331.45"
+    },
+    {
+     "property": "EDX_O_atomic_percent",
+     "value_num": 59.93,
+     "unit": "%",
+     "quote": "O (K) | 31.65 | 59.93 | 331.45"
+    },
+    {
+     "property": "EDX_K_weight_percent",
+     "value_num": 3.75,
+     "unit": "%",
+     "quote": "K (K) | 3.75 | 2.91 | 268.93"
+    },
+    {
+     "property": "EDX_K_atomic_percent",
+     "value_num": 2.91,
+     "unit": "%",
+     "quote": "K (K) | 3.75 | 2.91 | 268.93"
+    },
+    {
+     "property": "crystallite_size_Scherrer_peak_1",
+     "value_num": 19.37,
+     "unit": "nm",
+     "quote": "1 | 38.17753 | 0.45325 | 19.37 | 15.98 | 2.355"
+    },
+    {
+     "property": "d_spacing_Bragg_peak_1",
+     "value_num": 2.355,
+     "unit": "Å",
+     "quote": "1 | 38.17753 | 0.45325 | 19.37 | 15.98 | 2.355"
+    },
+    {
+     "property": "crystallite_size_Scherrer_peak_2",
+     "value_num": 13.3,
+     "unit": "nm",
+     "quote": "2 | 44.34242 | 0.67363 | 13.30 | 2.041"
+    },
+    {
+     "property": "d_spacing_Bragg_peak_2",
+     "value_num": 2.041,
+     "unit": "Å",
+     "quote": "2 | 44.34242 | 0.67363 | 13.30 | 2.041"
+    },
+    {
+     "property": "crystallite_size_Scherrer_peak_3",
+     "value_num": 16.1,
+     "unit": "nm",
+     "quote": "3 | 64.53204 | 0.60943 | 16.10 | 1.443"
+    },
+    {
+     "property": "d_spacing_Bragg_peak_3",
+     "value_num": 1.443,
+     "unit": "Å",
+     "quote": "3 | 64.53204 | 0.60943 | 16.10 | 1.443"
+    },
+    {
+     "property": "crystallite_size_Scherrer_peak_4",
+     "value_num": 15.14,
+     "unit": "nm",
+     "quote": "4 | 77.46486 | 0.7025 | 15.14 | 1.231"
+    },
+    {
+     "property": "d_spacing_Bragg_peak_4",
+     "value_num": 1.231,
+     "unit": "Å",
+     "quote": "4 | 77.46486 | 0.7025 | 15.14 | 1.231"
+    },
+    {
+     "property": "conductivity",
+     "value_num": 0.158,
+     "unit": "mS/cm",
+     "quote": "25 | 0.158 | −21.5 | 6.20 | 82.51 | 0.254"
+    },
+    {
+     "property": "zeta_potential_deviation",
+     "value_num": 6.2,
+     "unit": "mV",
+     "quote": "25 | 0.158 | −21.5 | 6.20 | 82.51 | 0.254"
     }
    ],
    "missing_fields": [
@@ -788,16 +967,11 @@
    "succeeded": true,
    "outcomes": [
     {
-     "property": "SPR_peak_absorbance",
+     "property": "absorbance_at_535_5_nm",
      "value_num": 0.1,
      "unit": "a.u.",
      "from_figure": "Fig. 2b",
      "quote": "Figure 2 UV-Visible spectrum of the optimizing factor nanoparticles: (a) concentration of silver nitrate; (b) the contact time; (c) concentration of Citrus lemon zest extract."
-    },
-    {
-     "property": "colour_observation",
-     "value_text": "the mixture solution turned turbid and became reddish-brown",
-     "quote": "After 30 min, the mixture solution turned turbid and became reddish-brown, and the color of the colloidal suspension changed from yellow to brown, suggesting the formation of silver nanoparticles."
     }
    ]
   },
@@ -913,17 +1087,25 @@
    "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract",
    "variations": [
     {
-     "parameter": "silver nitrate (1 mM aqueous solution)",
+     "parameter": "concentration",
      "value_num": 0.5,
      "unit": "mM",
      "parent_value": "1 mM",
+     "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract",
+     "step_order": 1
+    },
+    {
+     "parameter": "Citrus limon zest extract (route Citrus_limon_zest_extract)",
+     "value_num": 9,
+     "unit": "mL",
+     "parent_value": "10 mL",
      "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract"
     }
    ],
    "succeeded": true,
    "outcomes": [
     {
-     "property": "SPR_peak_absorbance",
+     "property": "absorbance_at_535_5_nm",
      "value_num": 0.4,
      "unit": "a.u.",
      "from_figure": "Fig. 2a",
@@ -933,6 +1115,26 @@
      "property": "synthesis_outcome",
      "value_text": "the three concentrations permit the synthesis of AgNPs",
      "quote": "It is clear that the three concentrations permit the synthesis of AgNPs"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Mix the AgNO3 solution of the tested concentration with the Citrus limon zest extract; the other parameters are only said to be the same as in the previous experiments, and the reaction time is not written.",
+     "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract, and other parameters remained the same as those used in the previous experiments",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 0.5,
+       "unit": "mM",
+       "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
     }
    ]
   },
@@ -949,10 +1151,18 @@
    "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract",
    "variations": [
     {
-     "parameter": "silver nitrate (1 mM aqueous solution)",
+     "parameter": "concentration",
      "value_num": 2,
      "unit": "mM",
      "parent_value": "1 mM",
+     "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract",
+     "step_order": 1
+    },
+    {
+     "parameter": "Citrus limon zest extract (route Citrus_limon_zest_extract)",
+     "value_num": 9,
+     "unit": "mL",
+     "parent_value": "10 mL",
      "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract"
     }
    ],
@@ -969,6 +1179,26 @@
      "property": "aggregation",
      "value_text": "the particles show aggregation and precipitation in the bottom of the flask",
      "quote": "when using the 2 nM concentration, the particles show aggregation and precipitation in the bottom of the flask"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Mix the AgNO3 solution of the tested concentration with the Citrus limon zest extract; the other parameters are only said to be the same as in the previous experiments, and the reaction time is not written.",
+     "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract, and other parameters remained the same as those used in the previous experiments",
+     "parameters": [
+      {
+       "name": "concentration",
+       "value_num": 2,
+       "unit": "mM",
+       "quote": "mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
     }
    ]
   },
@@ -988,16 +1218,16 @@
      "parameter": "Citrus limon zest extract (route Citrus_limon_zest_extract)",
      "value_num": 2,
      "unit": "mL",
-     "parent_value": "10 mL",
+     "parent_value": "1 mL",
      "quote": "varying the extract ration (1 mL, 2 mL, and 5 mL) in the reaction mixture using the same biosynthesis process"
     },
     {
      "parameter": "silver nitrate (1 mM aqueous solution)",
      "value_num": 8,
      "unit": "mL",
-     "parent_value": "90 mL",
+     "parent_value": "9 mL",
      "from_figure": "Fig. 2c",
-     "quote": "Figure 2 UV-Visible spectrum of the optimizing factor nanoparticles: (a) concentration of silver nitrate; (b) the contact time; (c) concentration of Citrus lemon zest extract."
+     "quote": "varying the extract ration (1 mL, 2 mL, and 5 mL) in the reaction mixture using the same biosynthesis process"
     }
    ],
    "succeeded": true,
@@ -1027,16 +1257,16 @@
      "parameter": "Citrus limon zest extract (route Citrus_limon_zest_extract)",
      "value_num": 5,
      "unit": "mL",
-     "parent_value": "10 mL",
+     "parent_value": "1 mL",
      "quote": "varying the extract ration (1 mL, 2 mL, and 5 mL) in the reaction mixture using the same biosynthesis process"
     },
     {
      "parameter": "silver nitrate (1 mM aqueous solution)",
      "value_num": 5,
      "unit": "mL",
-     "parent_value": "90 mL",
+     "parent_value": "9 mL",
      "from_figure": "Fig. 2c",
-     "quote": "Figure 2 UV-Visible spectrum of the optimizing factor nanoparticles: (a) concentration of silver nitrate; (b) the contact time; (c) concentration of Citrus lemon zest extract."
+     "quote": "varying the extract ration (1 mL, 2 mL, and 5 mL) in the reaction mixture using the same biosynthesis process"
     }
    ],
    "succeeded": true,
@@ -1071,12 +1301,12 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Le temps de contact : l'absorbance du pic passe d'environ 0,1 (30 min, pas de bande) à 0,82 (60 min), 1,1 (120 min), 1,4 (180 min) et 1,6 (240 min), valeurs lues sur la figure 2b. Concentration de AgNO3 : 0,5 mM donne une courbe sans pic net (~0,4), 2 mM un pic à ~0,87 mais avec agrégation et précipitation, 1 mM est retenue. Proportion d'extrait : 1:9 (~1,6) > 2:8 (~1,4) > 5:5 (~0,82) ; plus d'extrait donne une bande plasmon moins intense."
+   "text": "Le temps de contact : l'absorbance du pic passe d'environ 0,1 (30 min, pas de bande) à 0,82 (60 min), 1,1 (120 min), 1,4 (180 min) et 1,6 (240 min), valeurs lues sur la figure 2b. Concentration de AgNO3 : 0,5 mM donne une courbe sans pic net (~0,4), 2 mM un pic à ~0,87 mais avec agrégation et précipitation, 1 mM est retenue. Proportion d'extrait : 1:9 (~1,6) > 2:8 (~1,4) > 5:5 (~0,82) ; la bande baisse quand l'extrait augmente, mais le volume total reste à 10 mL, donc l'argent baisse en même temps (9, 8 puis 5 mL de AgNO3 1 mM) : l'effet de l'extrait n'est pas séparé de la dilution de l'argent."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "L'intensité de la bande plasmon augmente avec le temps de contact et diminue quand la quantité d'extrait augmente. Pour la concentration de AgNO3, la lecture de la figure 2a donne ~0,4 (0,5 mM, sans pic), ~0,77 (1 mM) et ~0,87 (2 mM) ; la valeur de 1 mM n'est pas reprise comme résultat de la voie de base car elle diffère de celle de la figure 2b à 240 min (~1,6), la durée de cette série n'étant pas écrite.",
+   "text": "L'intensité de la bande plasmon augmente avec le temps de contact et diminue quand la quantité d'extrait augmente (avec une quantité d'argent qui diminue aussi dans cette série). Pour la concentration de AgNO3, la lecture de la figure 2a donne ~0,4 (0,5 mM, sans pic), ~0,77 (1 mM) et ~0,87 (2 mM) ; la valeur de 1 mM est enregistrée à part sur AgNPs_opt (SPR_peak_absorbance_AgNO3_series_1_mM) car elle diffère de celle de la figure 2b à 240 min (~1,6), la durée de cette série n'étant pas écrite.",
    "quote": "As shown in Figure 2c, the UV-Vis spectra of AgNPs synthesis with different quantities recorded a decrease in the intensity of the SPR band with the increase in the quantity of the extract added to the AgNO3"
   },
   {
@@ -1100,12 +1330,84 @@
   {
    "type": "mecanisme_analyse",
    "route": "AgNPs_opt",
-   "text": "Hypothèse de chimiste : les polyphénols, flavonoïdes et l'acide ascorbique de l'extrait réduisent Ag+ en Ag0 (réaction du type Ag+ + e− → Ag0, avec oxydation de groupes phénol en quinones), puis les atomes nucléent et grossissent ; les biomolécules adsorbées (probablement polyphénols, protéines) coiffent la surface, ce que suggère le potentiel zêta de −21,5 mV. Le chauffage à 60 °C accélérerait la réduction ; l'obscurité éviterait probablement la photoréduction incontrôlée de AgNO3. L'excès d'extrait (5:5) diminuerait la bande plasmon, probablement par des particules plus petites ou plus polydisperses, ou par absorption propre de l'extrait."
+   "text": "Hypothèse de chimiste : les réducteurs de l'extrait (acide ascorbique, qui est rapide, flavanones glycosylées et autres polyphénols oxydés en quinones, sucres réducteurs plus lents à 60 °C dans un milieu acidifié par l'acide citrique) réduiraient Ag+ en Ag0, ce qui expliquerait une croissance de la bande sur 2 à 4 h plutôt qu'en quelques minutes. Les atomes nucléeraient puis grossiraient selon un schéma de type LaMer, et des biomolécules adsorbées (pectines, citrate, polyphénols déprotonés) coifferaient la surface ; le potentiel zêta de −21,5 mV s'expliquerait plus vraisemblablement par des carboxylates adsorbés que par des nitrates libres, et traduit une stabilité colloïdale modérée. Les chlorures du végétal pourraient précipiter un peu d'AgCl (petit pic non commenté vers 32° sur la Fig. 4, lecture incertaine). Le chauffage à 60 °C accélérerait la réduction ; l'obscurité éviterait probablement la photoréduction incontrôlée de AgNO3. La bande à 535 nm et le diamètre DLS de 82,5 nm contre 7–28 nm au MET suggèrent plutôt une agrégation partielle des particules primaires. Aucune de ces explications n'est démontrée par l'article."
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "Le nitrate d'argent est oxydant, corrosif pour la peau et les yeux, tache la peau et est très toxique pour le milieu aquatique : gants, lunettes et collecte des déchets contenant de l'argent. Le méthanol de lavage est inflammable et toxique (hotte). La centrifugation à 15 000 rpm exige des tubes équilibrés et adaptés au méthanol. Les nanoparticules d'argent séchées forment une poudre à ne pas inhaler. Les essais utilisent des souches cliniques (Candida albicans) et des bactéries : manipulation en laboratoire de niveau de biosécurité adapté."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_opt",
+   "text": "Séries DPPH probablement permutées dans le texte : interpolées, les valeurs dites « extrait » (45,39 / 53,69 / 68,56 % à 25, 50, 100 µg/mL) donnent un IC50 d'environ 39 µg/mL et celles dites « AgNPs » (22,29 / 30,59 / 54,11 %) environ 91 µg/mL, l'inverse du Tableau 4 (84 et 42,56 µg/mL), et la Fig. 7 ne s'accorde avec aucune des deux. Les valeurs sont gardées comme écrites ; elles ne doivent pas servir de référence. La plage des Méthodes (100–500 µg/mL) diffère de celle de la Fig. 7 (20–100 µg/mL) et des points du texte, l'IC50 est dit « calculé à partir de la droite de l'acide ascorbique » (sans sens pour un autre échantillon), le DPPH est lu à 517 nm où les AgNPs absorbent, aucun blanc d'échantillon n'est décrit et la base de masse (poudre ou argent) n'est pas donnée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Citrus_limon_zest_extract",
+   "text": "Les pourcentages DPPH que le texte attribue à l'extrait (45,39 / 53,69 / 68,56 %) donnent un IC50 d'environ 39 µg/mL, contre 84 µg/mL au Tableau 4 : série probablement permutée avec celle des AgNPs, à ne pas utiliser comme référence. Le Tableau 5 donne 8 mm contre C. albicans pour l'extrait alors que le texte dit qu'il n'a aucune activité antifongique ; l'Introduction et la légende de la Fig. 5 parlent de feuilles, les Méthodes de zeste. La concentration de l'extrait (matière sèche, polyphénols) et son pH ne sont pas mesurés.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_opt",
+   "text": "Durée de l'échantillon caractérisé non établie : les 4 h viennent du résumé (conditions optimales de l'optimisation par UV-visible), alors que les Méthodes ne donnent que « After 30 min » pour le changement de couleur et que le spectre de la Fig. 1 (≈ 1,38) correspond à la courbe de 180 min de la Fig. 2b plutôt qu'à celle de 240 min (≈ 1,6). L'échantillon des Fig. 4 à 7 et des tests biologiques a peut-être été préparé en environ 3 h.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_opt",
+   "text": "Une bande plasmon à 535,5 nm est incompatible avec des sphères d'argent isolées de 7–28 nm (attendu vers 394–406 nm), et les spectres des Fig. 1 et 2 ne commencent qu'à 450–480 nm : la bande dipolaire attendue n'a pas été enregistrée. La bande observée évoque plutôt des agrégats (DLS 82,5 nm), des particules non sphériques ou l'absorption de l'extrait oxydé ; l'optimisation par l'intensité à 535 nm mesure peut-être l'agrégation et non la quantité de particules. Les absorbances (≈ 1,6 pour 0,9 mM d'Ag) supposent aussi une dilution non indiquée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_opt",
+   "text": "DRX : les positions tabulées (Tableau 1, Bragg et Scherrer recalculés exacts) ne correspondent pas à la Fig. 4, où (220) et (311) se lisent vers 65,7° et 74,4° et ne respectent pas les rapports cfc ; l'élargissement instrumental n'est pas retranché. EDX : le texte place le signal fort de l'argent à 2 keV alors que la raie Ag Lα est à 2,98 keV ; les pics non étiquetés vers 2,1 et 9,7 keV évoquent l'or d'une métallisation, absent du Tableau 3 dont les pourcentages sont renormalisés sans lui. La pureté annoncée n'est pas étayée (O 31,65 % et N 5,18 % en masse).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_opt",
+   "text": "Tests antimicrobiens : le témoin AgNO3 1 mM apporte environ 0,10 µmol d'Ag par puits contre 0,51 à 0,93 µmol pour les AgNPs à 1 mg/mL, donc la comparaison n'est pas à argent égal. Le texte et le Tableau 5 se contredisent (aucune zone autour de AgNO3 contre 8, 11 et 12 mm ; C. albicans 20 contre 24 mm ; gentamicine 25 et 22 mm contre 22 et 25 mm). L'inoculum de 10^6 CFU/mL est présenté comme l'étalon 0,5 McFarland, qui vaut environ 1,5×10^8 CFU/mL.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Série d'optimisation de AgNO3 (0,5 / 1 / 2 mM) : la courbe de 1 mM de la Fig. 2a (≈ 0,77) est près de deux fois plus faible que celle de la voie de base à 240 min (≈ 1,6) alors que « les autres paramètres sont restés les mêmes » ; la série a donc été faite à une durée ou à des volumes non écrits (≈ 60 min d'après la courbe de 60 min), et le texte écrit 9 mL d'extrait. Elle ne se compare pas directement à la voie de base à 4 h. Série en extrait (1:9, 2:8, 5:5) : le volume total restant à 10 mL, l'argent passe de 9 à 8 puis 5 µmol et la baisse d'absorbance (1 / 0,875 / 0,51) suit celle de l'argent (1 / 0,89 / 0,56) : l'effet de l'extrait est confondu avec la dilution de l'argent. Un témoin correct garderait 9 mL de AgNO3 avec 1, 2 ou 5 mL d'extrait complétés à volume égal par de l'eau.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_0.5mM",
+   "text": "Durée de réaction de la série AgNO3 non écrite (la branche n'hérite plus des 4 h du parent), volume d'extrait écrit 9 mL dans le texte contre 10 mL aux Méthodes, volume de AgNO3 non donné. La courbe à 0,5 mM décroît sans maximum entre 480 et 750 nm : la preuve de formation de particules n'est pas apportée par un pic.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_2mM",
+   "text": "Durée de réaction de la série AgNO3 non écrite (la branche n'hérite plus des 4 h du parent), volume d'extrait écrit 9 mL dans le texte contre 10 mL aux Méthodes, volume de AgNO3 non donné. Le choix de 1 mM se défend par la stabilité colloïdale (agrégation et précipitation à 2 mM) plus que par le rendement, car l'absorbance à 2 mM (≈ 0,87) dépasse celle de 1 mM (≈ 0,77).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_30min",
+   "text": "La courbe de 30 min (Fig. 2b) est plate, sans bande plasmon, alors que le changement de couleur en rouge-brun « after 30 min » est décrit pour la synthèse de référence : l'observation de couleur n'est pas rattachée à cette branche et sa compatibilité avec l'absence de bande à 30 min n'est pas expliquée.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_extract_2mL",
+   "text": "Série à l'échelle de 10 mL au total (1:9, 2:8, 5:5 mL, d'après la légende de la Fig. 2c lue sur l'image) et non à celle de 100 mL des Méthodes ; la quantité d'argent baisse en même temps que l'extrait augmente, donc la baisse de la bande ne peut être attribuée à l'extrait seul.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_extract_5mL",
+   "text": "Série à l'échelle de 10 mL au total (1:9, 2:8, 5:5 mL, d'après la légende de la Fig. 2c lue sur l'image) et non à celle de 100 mL des Méthodes ; la quantité d'argent baisse en même temps que l'extrait augmente, donc la baisse de la bande ne peut être attribuée à l'extrait seul.",
+   "quote": null
   }
  ],
  "method_sources": [
@@ -1135,23 +1437,23 @@
   },
   {
    "where": "AgNPs_opt, durée de l'étape 1",
-   "issue": "Les Méthodes ne donnent pas la durée de la réaction (« After 30 min » = changement de couleur). Les 4 h viennent des conditions optimales du résumé ; l'article ne dit pas que l'échantillon caractérisé (DRX, DLS, MET, tests biologiques) a été préparé dans ces conditions, ce qui est supposé."
+   "issue": "Les Méthodes ne donnent pas la durée de la réaction (« After 30 min » = changement de couleur). Les 4 h viennent des conditions optimales du résumé et sont conservées avec ce doute : l'article ne dit pas que l'échantillon caractérisé (DRX, DLS, MET, tests biologiques) a été préparé dans ces conditions. Indice contre cette identification : le spectre de la Fig. 1 (AgNPs, bande vers 535 nm, absorbance ≈ 1,38) correspond à la courbe de 180 min de la Fig. 2b (≈ 1,38) et non à celle de 240 min (≈ 1,6)."
   },
   {
    "where": "Série AgNO3 (Fig. 2a) et AgNPs_opt",
-   "issue": "La courbe de 1 mM en Fig. 2a a une absorbance de ~0,77, très inférieure à celle de 240 min / 1:9 en Fig. 2b et 2c (~1,6) : la série a donc été faite à une autre durée (non écrite). Les branches 0,5 mM et 2 mM héritent de la durée de 4 h du parent sans que l'article le garantisse ; la valeur de 1 mM n'est pas reprise comme résultat de la voie de base."
+   "issue": "La courbe de 1 mM de la Fig. 2a a une absorbance de ≈ 0,77, très inférieure à celle de 240 min / 1:9 des Fig. 2b et 2c (≈ 1,6) alors que le texte dit « other parameters remained the same » : la série AgNO3 a donc été faite à une autre durée ou à d'autres volumes, non écrits. Les branches AgNPs_0.5mM et AgNPs_2mM n'héritent donc plus de l'étape de durée du parent (étape 1 propre, durée en not_stated). La valeur de 1 mM de cette série est enregistrée à part sur AgNPs_opt (SPR_peak_absorbance_AgNO3_series_1_mM), pas comme résultat de la voie de base à 4 h."
   },
   {
-   "where": "AgNPs_0.5mM / 2mM, texte",
-   "issue": "Le texte dit « mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract » alors que les Méthodes utilisent 10 mL d'extrait pour 90 mL de AgNO3 ; « 2 nM » et « 1 nM » sont aussi écrits à la place de mM. Lecture retenue : unités mM, volumes des Méthodes non modifiés ; un seul paramètre varie (la concentration)."
+   "where": "AgNPs_0.5mM / AgNPs_2mM, volumes de la série",
+   "issue": "Le texte dit « mixing each concentration of AgNO3 solution (2, 1, 0.5 mM) with 9 mL of Citrus limon zest extract » alors que les Méthodes utilisent 10 mL d'extrait pour 90 mL de AgNO3 : le volume d'extrait de 9 mL est extrait comme variation (parent 10 mL). Le volume de AgNO3 de la série n'est pas écrit : les 90 mL des Méthodes restent par défaut dans les réactifs hérités, sans confirmation de l'article (la légende de la série en extrait suggère une échelle de 10 mL au total, ce qui rendrait ces volumes caducs). « 2 nM » et « 1 nM » sont écrits à la place de mM ; lecture retenue : mM. Seule l'étape de mélange est reprise pour ces deux branches : l'article ne dit pas qu'elles ont été centrifugées, lavées et séchées."
   },
   {
    "where": "Série extrait (Fig. 2c)",
-   "issue": "Le texte donne 1, 2 et 5 mL d'extrait, la légende 1:9, 2:8 et 5:5 mL (extrait:AgNO3), soit un volume total de 10 mL au lieu de 100 mL des Méthodes. Le point 1:9 est identique au rapport de la voie de base et reste rattaché à celle-ci ; les branches 2 mL et 5 mL portent les volumes de AgNO3 8 et 5 mL lus dans la légende de la figure."
+   "issue": "Le texte donne 1, 2 et 5 mL d'extrait, la légende de la Fig. 2c (lue sur l'image) 1:9, 2:8 et 5:5 mL (extrait:AgNO3), soit un volume total de 10 mL au lieu de 100 mL des Méthodes. Les valeurs parent_value de ces deux branches (extrait 1 mL, AgNO3 9 mL) sont celles du point 1:9 de la série, qui a le même rapport que la voie de base (10 mL / 90 mL) sans être à la même échelle. Les volumes de AgNO3 de 8 et 5 mL ne sont lus que sur la légende de la figure (from_figure Fig. 2c, citation = phrase du texte sur la variation de l'extrait)."
   },
   {
    "where": "Branches d'optimisation (temps, AgNO3, extrait)",
-   "issue": "Ces essais sont suivis par spectre UV-visible du mélange ; l'article ne dit pas qu'ils ont subi centrifugation, lavage et séchage. Les étapes 2 à 4 du parent sont héritées par défaut (« same biosynthesis process », « other parameters remained the same »), sans confirmation."
+   "issue": "Ces essais sont suivis par spectre UV-visible du mélange ; l'article ne dit pas qu'ils ont subi centrifugation, lavage et séchage. Les étapes 2 à 4 du parent sont héritées par défaut (« same biosynthesis process », « other parameters remained the same »), sans confirmation. Exception : AgNPs_0.5mM et AgNPs_2mM n'ont plus que leur étape de mélange, sans la durée."
   },
   {
    "where": "AgNPs_opt, polydispersité",
@@ -1167,15 +1469,31 @@
   },
   {
    "where": "DPPH, Results 3.7.1 (voies Citrus_limon_zest_extract et AgNPs_opt)",
-   "issue": "Le texte attribue 45,39 / 53,69 / 68,56 % (25, 50, 100 µg/mL) à l'extrait et 22,29 / 30,59 / 54,11 % aux AgNPs, alors que l'IC50 (42,56 AgNPs contre 84 extrait) et la figure 7 (AgNPs au-dessus de l'extrait, ~70 % contre ~50 % à 100 µg/mL) vont dans l'autre sens : les étiquettes du texte sont probablement inversées. Valeurs extraites telles qu'écrites. Les Méthodes annoncent par ailleurs 100–500 µg/mL, la figure 7 va de 20 à 100 µg/mL."
+   "issue": "Le texte attribue 45,39 / 53,69 / 68,56 % (25, 50, 100 µg/mL) à l'extrait et 22,29 / 30,59 / 54,11 % aux AgNPs, alors que l'IC50 du Tableau 4 (42,56 AgNPs contre 84 extrait) et la Fig. 7 (AgNPs au-dessus de l'extrait, ≈ 70 % contre ≈ 50 % à 100 µg/mL) vont dans l'autre sens : les étiquettes du texte sont probablement permutées. Les valeurs sont conservées telles qu'écrites (la citation fait foi), sans permutation. Les Méthodes annoncent 100–500 µg/mL, la Fig. 7 va de 20 à 100 µg/mL."
   },
   {
    "where": "Introduction et légende Fig. 5",
    "issue": "L'introduction et la légende de la figure 5 parlent de feuilles (« leaves », « zest leaf extract ») alors que les Méthodes utilisent le zeste des fruits ; zeste retenu."
   },
   {
-   "where": "Citrus_limon_zest_extract étape 3",
+   "where": "Citrus_limon_zest_extract étape 4",
    "issue": "« refluxing ... at 60 °C with shaking for 15 min » : un reflux à 60 °C est inhabituel (l'eau bout à 100 °C) ; lecture littérale conservée (chauffage à 60 °C sous agitation)."
+  },
+  {
+   "where": "AgNPs_30min / AgNPs_opt, couleur à 30 min",
+   "issue": "La phrase des Méthodes « After 30 min, the mixture solution turned turbid and became reddish-brown » décrit la synthèse de référence ; elle est rangée sur AgNPs_opt (colour_observation_after_30_min) et non sur la branche 30 min. La courbe de 30 min de la Fig. 2b est plate (≈ 0,1, sans bande plasmon), ce qui contredit en apparence le changement de couleur à 30 min."
+  },
+  {
+   "where": "AgNPs_30min / AgNPs_0.5mM, absorbance sans pic",
+   "issue": "Sur la Fig. 2, les courbes de 30 min et de 0,5 mM décroissent sans maximum : la valeur lue (0,1 et 0,4) est l'absorbance vers 535 nm et non la hauteur d'un pic ; la propriété de ces deux branches est donc absorbance_at_535_5_nm (le texte compare « the SPR band at 535.5 »), alors que les autres branches de la série gardent SPR_peak_absorbance."
+  },
+  {
+   "where": "AgNPs_opt et Citrus_limon_zest_extract, essai de diffusion en puits",
+   "issue": "Le texte écrit « 106 CFU/mL (0.5 McFarland standards) », exposant aplati dans le fichier (10^6 probablement). L'étalon 0,5 McFarland vaut ≈ 1,5×10^8 CFU/mL : la densité annoncée et l'étalon ne correspondent pas. Le texte parle aussi de disques pour l'extrait alors que la méthode décrit des puits, et la concentration de l'extrait déposé dans le puits n'est pas donnée."
+  },
+  {
+   "where": "AgNPs_opt, tableaux 1 à 3",
+   "issue": "Rangées reprises comme résultats : Tableau 1 (pics 1 à 4, D de Scherrer et espacements d, rangs de pic et non indices hkl car le tableau ne les écrit pas), Tableau 2 (conductivité, écart-type du potentiel zêta), Tableau 3 (C, N, O, K). Les rangées de l'or de métallisation sont absentes du Tableau 3 de l'article."
   }
  ]
 }
