@@ -1,0 +1,195 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9069485</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9069485 — Two-phase interface hydrothermal synthesis of binder-free SnS2/graphene flexible paper electrodes for high-performance Li-ion batteries.</h1>
+<h2>Voie : SnS2</h2>
+<pre class="mermaid">flowchart LR
+  R17072([&quot;tin(IV) chloride pentahydrate&lt;br/&gt;10 mmol&quot;]):::reactif
+  R17072 --&gt;|&quot;precursor&quot;| S20344
+  R17073([&quot;citric acid&lt;br/&gt;10 mmol&quot;]):::reactif
+  R17073 --&gt;|&quot;additive&quot;| S20344
+  R17074([&quot;thioacetamide&lt;br/&gt;20 mmol&quot;]):::reactif
+  R17074 --&gt;|&quot;precursor&quot;| S20344
+  R17075([&quot;deionized water&lt;br/&gt;80 mL&quot;]):::reactif
+  R17075 --&gt;|&quot;solvent&quot;| S20344
+  R17076([&quot;deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17076 --&gt;|&quot;wash&quot;| S20344
+  R17077([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17077 --&gt;|&quot;wash&quot;| S20344
+  S20344[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S20344 --&gt; S20345
+  S20345[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 130 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S20345 --&gt; S20346
+  S20346[&quot;&lt;b&gt;3. filter&lt;/b&gt;&quot;]:::etape
+  S20346 --&gt; S20347
+  S20347[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : DI water and ethanol&lt;br/&gt;repetitions : several times&quot;]:::etape
+  S20347 --&gt; M
+  M{{&quot;SnS2 nanocrystals (pristine)&lt;br/&gt;SnS2&quot;}}:::materiau
+  O81001[&quot;phase : SnS2 without impurities (JCPD…&quot;]:::resultat
+  M -.-&gt; O81001
+  O81002[&quot;crystallite_size_Scherrer : 6.6 nm&quot;]:::resultat
+  M -.-&gt; O81002
+  O81003[&quot;particle_size_TEM : 6–10 nm&quot;]:::resultat
+  M -.-&gt; O81003
+  O81004[&quot;LIB_initial_coulombic_efficiency : 51 %&quot;]:::resultat
+  M -.-&gt; O81004
+  O81005[&quot;LIB_capacity_100mAg-1_after_200_cy… : 277 mA h g−1&quot;]:::resultat
+  M -.-&gt; O81005
+  O81006[&quot;LIB_capacity_2Ag-1 : 78 mA h g−1&quot;]:::resultat
+  M -.-&gt; O81006
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : SGP</h2>
+<pre class="mermaid">flowchart LR
+  R17078([&quot;SnS2 nanocrystals (route SnS2)&lt;br/&gt;weight ratio of 1 : 1 between…&quot;]):::reactif
+  R17078 --&gt;|&quot;intermediate&quot;| S20348
+  R17079([&quot;graphene oxide&lt;br/&gt;0.8 mg mL−1&quot;]):::reactif
+  R17079 --&gt;|&quot;precursor&quot;| S20348
+  R17080([&quot;deionized water (SnS2 redispersion)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17080 --&gt;|&quot;solvent&quot;| S20348
+  R17081([&quot;thioacetamide aqueous solution&lt;br/&gt;0.5 mol L−1&quot;]):::reactif
+  R17081 --&gt;|&quot;reducing_agent&quot;| S20348
+  S20348[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&quot;]:::etape
+  S20348 --&gt; S20349
+  S20349[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;power : 300 W&lt;br/&gt;duration : 1 h&quot;]:::etape
+  S20349 --&gt; S20350
+  S20350[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : until a homogenous suspension…&quot;]:::etape
+  S20350 --&gt; S20351
+  S20351[&quot;&lt;b&gt;4. filter&lt;/b&gt;&quot;]:::etape
+  S20351 --&gt; S20352
+  S20352[&quot;&lt;b&gt;5. collect&lt;/b&gt;&quot;]:::etape
+  S20352 --&gt; S20353
+  S20353[&quot;&lt;b&gt;6. react&lt;/b&gt;&lt;br/&gt;temperature : 180 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S20353 --&gt; M
+  M{{&quot;SnS2/graphene nanocomposite paper (SGP), binder-f…&lt;br/&gt;&quot;}}:::materiau
+  O81024[&quot;phase : hexagonal SnS2 preserved&quot;]:::resultat
+  M -.-&gt; O81024
+  O81025[&quot;SnS2_particle_size_XRD : ∼20–25 nm&quot;]:::resultat
+  M -.-&gt; O81025
+  O81026[&quot;SnS2_particle_size_TEM : 20–25 nm&quot;]:::resultat
+  M -.-&gt; O81026
+  O81027[&quot;graphene_002_2theta : 22.93 °&quot;]:::resultat
+  M -.-&gt; O81027
+  O81028[&quot;graphene_interlayer_d_spacing : 3.88 Å&quot;]:::resultat
+  M -.-&gt; O81028
+  O81029[&quot;SnS2_001_lattice_spacing_HRTEM : 0.59 nm&quot;]:::resultat
+  M -.-&gt; O81029
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12994{{&quot;SGP&quot;}}:::materiau
+  B12995[&quot;GP&quot;]:::etape
+  B12994 --&gt;|&quot;SnS2 nanocrystals (route… = absent&lt;br/&gt;deionized water (SnS2 re… = absent&quot;| B12995
+  B12996[&quot;SGP_DIwater&quot;]:::etape
+  B12994 --&gt;|&quot;thioacetamide aqueous so… = replaced by deionized wa…&quot;| B12996
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_SnS2</h2>
+<pre class="mermaid">flowchart LR
+  R17083([&quot;SnS2 nanocrystals (route SnS2)&lt;br/&gt;weight ratio of 8 : 1 : 1 (Sn…&quot;]):::reactif
+  R17083 --&gt;|&quot;intermediate&quot;| S20357
+  R17084([&quot;carbon black&lt;br/&gt;weight ratio of 8 : 1 : 1 (Sn…&quot;]):::reactif
+  R17084 --&gt;|&quot;conductive_additive&quot;| S20357
+  R17085([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;weight ratio of 8 : 1 : 1 (Sn…&quot;]):::reactif
+  R17085 --&gt;|&quot;binder&quot;| S20357
+  R17086([&quot;N-methyl-2-pyrrolidone (NMP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17086 --&gt;|&quot;solvent&quot;| S20357
+  R17087([&quot;Cu foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17087 --&gt;|&quot;substrate&quot;| S20357
+  S20357[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;mass_ratio : 8 : 1 : 1&quot;]:::etape
+  S20357 --&gt; S20358
+  S20358[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S20358 --&gt; S20359
+  S20359[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S20359 --&gt; M
+  M{{&quot;pristine SnS2 anode (SnS2 : carbon black : PVDF o…&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Electrode_LiFePO4</h2>
+<pre class="mermaid">flowchart LR
+  R17088([&quot;commercial LiFePO4&lt;br/&gt;8 : 1 : 1 ratio of active mat…&quot;]):::reactif
+  R17088 --&gt;|&quot;active_material&quot;| S20360
+  R17089([&quot;carbon black&lt;br/&gt;8 : 1 : 1 ratio of active mat…&quot;]):::reactif
+  R17089 --&gt;|&quot;conductive_additive&quot;| S20360
+  R17090([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;8 : 1 : 1 ratio of active mat…&quot;]):::reactif
+  R17090 --&gt;|&quot;binder&quot;| S20360
+  R17091([&quot;Al foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17091 --&gt;|&quot;substrate&quot;| S20360
+  S20360[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;mass_ratio : 8 : 1 : 1&quot;]:::etape
+  S20360 --&gt; S20361
+  S20361[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S20361 --&gt; S20362
+  S20362[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S20362 --&gt; M
+  M{{&quot;LiFePO4 cathode (active material : carbon black :…&lt;br/&gt;LiFePO4&quot;}}:::materiau
+  O81066[&quot;half_cell_initial_coulombic_effici… : 74.24 %&quot;]:::resultat
+  M -.-&gt; O81066
+  O81067[&quot;half_cell_reversible_capacity : 134 mA h g−1&quot;]:::resultat
+  M -.-&gt; O81067
+  O81068[&quot;half_cell_voltage_window : 2.5 to 4.5 V (vs. Li/Li+)&quot;]:::resultat
+  M -.-&gt; O81068
+  O81069[&quot;half_cell_current_density : 100 mA g-1&quot;]:::resultat
+  M -.-&gt; O81069
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Cell_half_SGP</h2>
+<pre class="mermaid">flowchart LR
+  R17092([&quot;SGP working electrode (route SGP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17092 --&gt;|&quot;intermediate&quot;| S20363
+  R17093([&quot;Li foil (counter electrode)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17093 --&gt;|&quot;counter_electrode&quot;| S20363
+  R17094([&quot;porous polypropylene membrane Celgard-2300 (…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17094 --&gt;|&quot;separator&quot;| S20363
+  R17095([&quot;1 M LiPF6 in EC/DMC 1 : 1 (v/v) (electrolyte)&lt;br/&gt;1 M LiPF6, dissolved in 1 : 1…&quot;]):::reactif
+  R17095 --&gt;|&quot;electrolyte&quot;| S20363
+  S20363[&quot;&lt;b&gt;1. assemble&lt;/b&gt;&lt;br/&gt;atmosphere : argon-filled glove box&quot;]:::etape
+  S20363 --&gt; M
+  M{{&quot;CR2032 half coin-cell with SGP working electrode …&lt;br/&gt;&quot;}}:::materiau
+  O81070[&quot;cell_voltage_window : 0.01–3.00 V (vs. Li/Li+)&quot;]:::resultat
+  M -.-&gt; O81070
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B12999{{&quot;Cell_half_SGP&quot;}}:::materiau
+  B13000[&quot;Cell_half_SnS2&quot;]:::etape
+  B12999 --&gt;|&quot;SGP working electrode (r… = replaced by the SnS2 ele…&quot;| B13000
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Cell_full_LFP_SGP</h2>
+<pre class="mermaid">flowchart LR
+  R17097([&quot;SGP anode, pre-treated (route SGP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17097 --&gt;|&quot;intermediate&quot;| S20364
+  R17098([&quot;LiFePO4 cathode (route Electrode_LiFePO4)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17098 --&gt;|&quot;intermediate&quot;| S20364
+  S20364[&quot;&lt;b&gt;1. pretreat&lt;/b&gt;&lt;br/&gt;repetitions : two galvanostatic cycles&quot;]:::etape
+  S20364 --&gt; S20365
+  S20365[&quot;&lt;b&gt;2. assemble&lt;/b&gt;&quot;]:::etape
+  S20365 --&gt; M
+  M{{&quot;LiFePO4/SGP full coin-cell&lt;br/&gt;&quot;}}:::materiau
+  O81071[&quot;initial_charge_capacity_100mAg-1 : 162 mA h g−1&quot;]:::resultat
+  M -.-&gt; O81071
+  O81072[&quot;initial_discharge_capacity_100mAg-1 : 118 mA h g−1&quot;]:::resultat
+  M -.-&gt; O81072
+  O81073[&quot;initial_coulombic_efficiency : 72.84 %&quot;]:::resultat
+  M -.-&gt; O81073
+  O81074[&quot;coulombic_efficiency_after_initial… : ›96%&quot;]:::resultat
+  M -.-&gt; O81074
+  O81075[&quot;reversible_capacity_100mAg-1 : 124 mA h g−1&quot;]:::resultat
+  M -.-&gt; O81075
+  O81076[&quot;capacity_1Ag-1 : 93 mA h g−1&quot;]:::resultat
+  M -.-&gt; O81076
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
