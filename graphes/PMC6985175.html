@@ -1,0 +1,132 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6985175</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6985175 — Rapid Synthesis of Quantum-Sized Organic-Inorganic Perovskite Nanocrystals in Glass.</h1>
+<h2>Voie : NPG</h2>
+<pre class="mermaid">flowchart LR
+  R17276([&quot;alkali borosilicate glass&lt;br/&gt;composition 7.7Na2O–4.0CaO–2.…&quot;]):::reactif
+  R17276 --&gt;|&quot;precursor&quot;| S20597
+  R17277([&quot;nitric acid (leaching solution)&lt;br/&gt;1N&quot;]):::reactif
+  R17277 --&gt;|&quot;acid&quot;| S20597
+  R17278([&quot;distilled water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17278 --&gt;|&quot;wash&quot;| S20597
+  S20597[&quot;&lt;b&gt;1. melt&lt;/b&gt;&lt;br/&gt;temperature : 1723 K&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S20597 --&gt; S20598
+  S20598[&quot;&lt;b&gt;2. cast&lt;/b&gt;&quot;]:::etape
+  S20598 --&gt; S20599
+  S20599[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 853 K&lt;br/&gt;duration : 40 h&quot;]:::etape
+  S20599 --&gt; S20600
+  S20600[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : 363 K&lt;br/&gt;duration : 24 h&lt;br/&gt;concentration : 1 N&quot;]:::etape
+  S20600 --&gt; S20601
+  S20601[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distilled water&quot;]:::etape
+  S20601 --&gt; S20602
+  S20602[&quot;&lt;b&gt;6. dry&lt;/b&gt;&quot;]:::etape
+  S20602 --&gt; M
+  M{{&quot;nanoporous glass (Vycor 7913-like, ~4-nm pores)&lt;br/&gt;&quot;}}:::materiau
+  O81898[&quot;pore_diameter : 4 nm&quot;]:::resultat
+  M -.-&gt; O81898
+  O81899[&quot;optical_transmittance_600nm : 18 %&quot;]:::resultat
+  M -.-&gt; O81899
+  O81900[&quot;XRD_pattern : typical amorphous halo pattern&quot;]:::resultat
+  M -.-&gt; O81900
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PEABr</h2>
+<pre class="mermaid">flowchart LR
+  R17279([&quot;phenethylamine&lt;br/&gt;stoichiometric ratio with HBr&quot;]):::reactif
+  R17279 --&gt;|&quot;precursor&quot;| S20603
+  R17280([&quot;hydrobromic acid&lt;br/&gt;stoichiometric ratio with phe…&quot;]):::reactif
+  R17280 --&gt;|&quot;precursor&quot;| S20603
+  R17281([&quot;N,N-dimethylformamide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17281 --&gt;|&quot;solvent&quot;| S20603
+  S20603[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S20603 --&gt; S20604
+  S20604[&quot;&lt;b&gt;2. evaporate&lt;/b&gt;&lt;br/&gt;temperature : 363 K&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S20604 --&gt; M
+  M{{&quot;phenethylammonium bromide&lt;br/&gt;C6H5C2H4NH3Br&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Phe_poly</h2>
+<pre class="mermaid">flowchart LR
+  R17282([&quot;PEABr&lt;br/&gt;molar ratio 2:1 (C6H5C2H4NH3B…&quot;]):::reactif
+  R17282 --&gt;|&quot;intermediate&quot;| S20605
+  R17283([&quot;lead(II) bromide&lt;br/&gt;molar ratio 2:1 (C6H5C2H4NH3B…&quot;]):::reactif
+  R17283 --&gt;|&quot;precursor&quot;| S20605
+  R17284([&quot;N,N-dimethylformamide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17284 --&gt;|&quot;solvent&quot;| S20605
+  S20605[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : 298 K&lt;br/&gt;duration : 3 h&quot;]:::etape
+  S20605 --&gt; S20606
+  S20606[&quot;&lt;b&gt;2. evaporate&lt;/b&gt;&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S20606 --&gt; M
+  M{{&quot;polycrystalline (C6H5C2H4NH3)2PbBr4 (Phe)&lt;br/&gt;(C6H5C2H4NH3)2PbBr4&quot;}}:::materiau
+  O81901[&quot;optical_transmittance : 0 %&quot;]:::resultat
+  M -.-&gt; O81901
+  O81902[&quot;PL_peak_wavelength : 410 nm&quot;]:::resultat
+  M -.-&gt; O81902
+  O81903[&quot;PL_peak_energy : 3.02 eV&quot;]:::resultat
+  M -.-&gt; O81903
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Phe_single</h2>
+<pre class="mermaid">flowchart LR
+  R17285([&quot;polycrystalline Phe (Phe_poly)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17285 --&gt;|&quot;intermediate&quot;| S20607
+  R17286([&quot;N,N-dimethylformamide (strong solvent)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17286 --&gt;|&quot;solvent&quot;| S20607
+  R17287([&quot;nitromethane (poor solvent)&lt;br/&gt;until just before precipitati…&quot;]):::reactif
+  R17287 --&gt;|&quot;antisolvent&quot;| S20607
+  S20607[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S20607 --&gt; S20608
+  S20608[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;volume : until just before precipitati…&quot;]:::etape
+  S20608 --&gt; S20609
+  S20609[&quot;&lt;b&gt;3. age&lt;/b&gt;&lt;br/&gt;duration : a month&quot;]:::etape
+  S20609 --&gt; M
+  M{{&quot;single crystal (C6H5C2H4NH3)2PbBr4 (Phe)&lt;br/&gt;(C6H5C2H4NH3)2PbBr4&quot;}}:::materiau
+  O81904[&quot;crystal_size : 13 mm × 13 mm × 3 mm&quot;]:::resultat
+  M -.-&gt; O81904
+  O81905[&quot;crystal_system : triclinic, space group P-1&quot;]:::resultat
+  M -.-&gt; O81905
+  O81906[&quot;lattice_a : 1.165 nm&quot;]:::resultat
+  M -.-&gt; O81906
+  O81907[&quot;lattice_b : 1.166 nm&quot;]:::resultat
+  M -.-&gt; O81907
+  O81908[&quot;lattice_c : 1.759 nm&quot;]:::resultat
+  M -.-&gt; O81908
+  O81909[&quot;lattice_alpha : 105.6 °&quot;]:::resultat
+  M -.-&gt; O81909
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : OIiG</h2>
+<pre class="mermaid">flowchart LR
+  R17288([&quot;nanoporous glass (NPG)&lt;br/&gt;weight ratio 1:2 (nanoporous …&quot;]):::reactif
+  R17288 --&gt;|&quot;intermediate&quot;| S20610
+  R17289([&quot;perovskite powders&lt;br/&gt;weight ratio 1:2 (nanoporous …&quot;]):::reactif
+  R17289 --&gt;|&quot;precursor&quot;| S20610
+  R17290([&quot;N,N-dimethylformamide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17290 --&gt;|&quot;solvent&quot;| S20610
+  S20610[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;duration : 1 h&lt;br/&gt;temperature : 298 K&lt;br/&gt;weight_ratio : 1:2&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S20610 --&gt; S20611
+  S20611[&quot;&lt;b&gt;2. evaporate&lt;/b&gt;&lt;br/&gt;temperature : 373 K&lt;br/&gt;duration : 30 min&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S20611 --&gt; M
+  M{{&quot;organic–inorganic perovskite nanocrystals in nano…&lt;br/&gt;&quot;}}:::materiau
+  O81920[&quot;sample_size : 15 mm × 15 mm × 1 mm&quot;]:::resultat
+  M -.-&gt; O81920
+  O81921[&quot;nanocrystal_diameter : 3–4 nm&quot;]:::resultat
+  M -.-&gt; O81921
+  O81922[&quot;lattice_a : 1.165 nm&quot;]:::resultat
+  M -.-&gt; O81922
+  O81923[&quot;lattice_b : 1.166 nm&quot;]:::resultat
+  M -.-&gt; O81923
+  O81924[&quot;lattice_c : 1.759 nm&quot;]:::resultat
+  M -.-&gt; O81924
+  O81925[&quot;XRD_phase : peaks attributed to Phe cryst…&quot;]:::resultat
+  M -.-&gt; O81925
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
