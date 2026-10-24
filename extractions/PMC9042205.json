@@ -543,11 +543,7 @@
    "method": "sol–gel (TEOS hydrolysis with ammonia in ethanol/water, Bacillus subtilis biosurfactant as template), then calcination",
    "quote": "The MM was synthesized following a novel procedure.",
    "scale": null,
-   "yield": {
-    "value": 87.87,
-    "unit": "%",
-    "quote": "Effectively, 87.87% yield of BMSN was obtained (weight loss: 12.13%), using the calcination temperature range of 550–600 °C."
-   },
+   "yield": null,
    "succeeded": true,
    "reagents": [
     {
@@ -636,20 +632,21 @@
     {
      "order": 2,
      "action": "add",
-     "description": "Add aqueous ammonia and ethanol to the clear solution simultaneously.",
+     "description": "Add aqueous ammonia and ethanol to the clear solution; the article says this is done simultaneously with the dropwise TEOS addition of step 3 (steps 2 and 3 are not sequential).",
      "quote": "11 mL of 25 wt% ammonia and 76 mL of ethanol were added to the clear solution simultaneously.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
       "temperature",
       "addition_rate",
-      "stirring_speed"
+      "stirring_speed",
+      "order_of_addition"
      ]
     },
     {
      "order": 3,
      "action": "add",
-     "description": "Add TEOS dropwise to the mixture while stirring; the mixture turns into a milky gel by hydrolysis of TEOS.",
+     "description": "Add TEOS dropwise to the mixture while stirring, at the same time as the ammonia and ethanol of step 2 (not after them); the mixture turns into a milky gel by hydrolysis of TEOS.",
      "quote": "At the same time, 10 mL of TEOS was also added dropwise to the mixture whilst stirring the solution.",
      "parameters": [
       {
@@ -826,13 +823,6 @@
      "quote": "In the present results, the most intense absorption band of each synthesized material was found at 256.72 nm in the ultraviolet region."
     },
     {
-     "technique": "TG-DTA",
-     "result": "total weight loss 12.13% (87.87% retained) after heating of the raw sample, no loss above 600 °C",
-     "instrument": "PerkinElmer STA 6300, USA",
-     "conditions": "30–800 °C, 10 °C min−1, nitrogen atmosphere",
-     "quote": "Next, weight loss of ∼1% was observed at 468–600 °C due to the loss of organic compounds from the material as well as the formation of mesoporous silica nanoparticles, whereas no weight loss was observed when the temperature was further increased (>600 °C)."
-    },
-    {
      "technique": "FE-SEM",
      "result": "perfectly spherical particles with less agglomeration than the non-calcined material, average size distribution 250–300 nm (450–600 °C)",
      "instrument": "Hitachi S4800-I, Japan",
@@ -958,6 +948,9 @@
     "heating_rate",
     "reaction_temperature",
     "stirring_speed"
+   ],
+   "not_stated": [
+    "yield"
    ]
   },
   {
@@ -1052,6 +1045,41 @@
      "value_num": 29.707,
      "unit": "nm",
      "quote": "MCM-41 (450 °C) | 6.5179 | 0.015763 | 29.7070"
+    },
+    {
+     "property": "FTIR_SiOSi_asym_stretch_band",
+     "value_num": 1112,
+     "unit": "cm−1",
+     "from_figure": "Fig. 1c",
+     "quote": "Fig. 1 (a) Low-angle and (b) wide-angle X-ray diffraction patterns of BMSN prepared at different calcination temperatures (450 °C, 500 °C, 550 °C, and 600 °C). (c) Fourier transform infrared spectra of synthesized BMSN material: non-calcinated and calcinated (450 °C, 500 °C, 550 °C, and 600 °C). X-ray photoelectron spectra of BMSN synthesized at different calcination temperatures: 450 °C (d), 500 °C (e), 550 °C (f), and 600 °C (g)."
+    },
+    {
+     "property": "FTIR_SiOSi_sym_stretch_band",
+     "value_num": 806,
+     "unit": "cm−1",
+     "from_figure": "Fig. 1c",
+     "quote": "Fig. 1 (a) Low-angle and (b) wide-angle X-ray diffraction patterns of BMSN prepared at different calcination temperatures (450 °C, 500 °C, 550 °C, and 600 °C). (c) Fourier transform infrared spectra of synthesized BMSN material: non-calcinated and calcinated (450 °C, 500 °C, 550 °C, and 600 °C). X-ray photoelectron spectra of BMSN synthesized at different calcination temperatures: 450 °C (d), 500 °C (e), 550 °C (f), and 600 °C (g)."
+    },
+    {
+     "property": "FTIR_SiOH_bending_band",
+     "value_num": 971,
+     "unit": "cm−1",
+     "from_figure": "Fig. 1c",
+     "quote": "Fig. 1 (a) Low-angle and (b) wide-angle X-ray diffraction patterns of BMSN prepared at different calcination temperatures (450 °C, 500 °C, 550 °C, and 600 °C). (c) Fourier transform infrared spectra of synthesized BMSN material: non-calcinated and calcinated (450 °C, 500 °C, 550 °C, and 600 °C). X-ray photoelectron spectra of BMSN synthesized at different calcination temperatures: 450 °C (d), 500 °C (e), 550 °C (f), and 600 °C (g)."
+    },
+    {
+     "property": "FTIR_OH_bending_band",
+     "value_num": 1628,
+     "unit": "cm−1",
+     "from_figure": "Fig. 1c",
+     "quote": "Fig. 1 (a) Low-angle and (b) wide-angle X-ray diffraction patterns of BMSN prepared at different calcination temperatures (450 °C, 500 °C, 550 °C, and 600 °C). (c) Fourier transform infrared spectra of synthesized BMSN material: non-calcinated and calcinated (450 °C, 500 °C, 550 °C, and 600 °C). X-ray photoelectron spectra of BMSN synthesized at different calcination temperatures: 450 °C (d), 500 °C (e), 550 °C (f), and 600 °C (g)."
+    },
+    {
+     "property": "FTIR_OH_stretching_band",
+     "value_num": 3451,
+     "unit": "cm−1",
+     "from_figure": "Fig. 1c",
+     "quote": "Fig. 1 (a) Low-angle and (b) wide-angle X-ray diffraction patterns of BMSN prepared at different calcination temperatures (450 °C, 500 °C, 550 °C, and 600 °C). (c) Fourier transform infrared spectra of synthesized BMSN material: non-calcinated and calcinated (450 °C, 500 °C, 550 °C, and 600 °C). X-ray photoelectron spectra of BMSN synthesized at different calcination temperatures: 450 °C (d), 500 °C (e), 550 °C (f), and 600 °C (g)."
     }
    ]
   },
@@ -1323,20 +1351,21 @@
     {
      "order": 2,
      "action": "add",
-     "description": "Add aqueous ammonia and ethanol to the clear solution simultaneously.",
+     "description": "Add aqueous ammonia and ethanol to the clear solution; the article says this is done simultaneously with the dropwise TEOS addition of step 3 (steps 2 and 3 are not sequential).",
      "quote": "11 mL of 25 wt% ammonia and 76 mL of ethanol were added to the clear solution simultaneously.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
       "temperature",
       "addition_rate",
-      "stirring_speed"
+      "stirring_speed",
+      "order_of_addition"
      ]
     },
     {
      "order": 3,
      "action": "add",
-     "description": "Add TEOS dropwise to the mixture while stirring; the mixture turns into a milky gel by hydrolysis of TEOS.",
+     "description": "Add TEOS dropwise to the mixture while stirring, at the same time as the ammonia and ethanol of step 2 (not after them); the mixture turns into a milky gel by hydrolysis of TEOS.",
      "quote": "At the same time, 10 mL of TEOS was also added dropwise to the mixture whilst stirring the solution.",
      "parameters": [
       {
@@ -1509,6 +1538,34 @@
      "unit": "cm−1",
      "from_figure": "Fig. 1c",
      "quote": "Fig. 1 (a) Low-angle and (b) wide-angle X-ray diffraction patterns of BMSN prepared at different calcination temperatures (450 °C, 500 °C, 550 °C, and 600 °C). (c) Fourier transform infrared spectra of synthesized BMSN material: non-calcinated and calcinated (450 °C, 500 °C, 550 °C, and 600 °C). X-ray photoelectron spectra of BMSN synthesized at different calcination temperatures: 450 °C (d), 500 °C (e), 550 °C (f), and 600 °C (g)."
+    },
+    {
+     "property": "TG_residual_mass_800C",
+     "value_num": 87.87,
+     "unit": "%",
+     "quote": "Therefore, the total percentage (%) weight loss and gain was observed to be 12.13 and 87.87% after calcination, respectively."
+    },
+    {
+     "property": "TG_total_weight_loss",
+     "value_num": 12.13,
+     "unit": "%",
+     "quote": "Therefore, the total percentage (%) weight loss and gain was observed to be 12.13 and 87.87% after calcination, respectively."
+    },
+    {
+     "property": "TG_weight_loss_30-210_C",
+     "value_num": 7.5,
+     "unit": "%",
+     "from_figure": "Fig. 2b",
+     "quote": "Fig. 2 (a) Ultraviolet-visible-near-infrared spectra of synthesized BMSN molecular sieves at different calcination temperatures (450 °C, 500 °C, 550 °C, and 600 °C). (b) Thermogravimetric/differential thermal analysis of synthesized BMSN molecular sieves at different calcination temperatures (450 °C, 500 °C, 550 °C, and 600 °C)."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "TG-DTA",
+     "result": "raw (non-calcined) sample: total weight loss 12.13% (87.87% retained) on heating to 800 °C, no loss above 600 °C",
+     "instrument": "PerkinElmer STA 6300, USA",
+     "conditions": "30–800 °C, 10 °C min−1, nitrogen atmosphere",
+     "quote": "Next, weight loss of ∼1% was observed at 468–600 °C due to the loss of organic compounds from the material as well as the formation of mesoporous silica nanoparticles, whereas no weight loss was observed when the temperature was further increased (>600 °C)."
     }
    ]
   }
@@ -1551,7 +1608,7 @@
   {
    "type": "conclusion_auteurs",
    "route": "BMSN-550",
-   "text": "Les auteurs retiennent 550 °C comme température optimale (absorption UV maximale, surface et volume poreux maximaux, Si et O les plus intenses en XPS) et annoncent un rendement de 87,87 %.",
+   "text": "Les auteurs retiennent 550 °C comme température optimale (absorption UV maximale, surface et volume poreux maximaux, Si et O les plus intenses en XPS) et annoncent un « rendement » de 87,87 % (en réalité une masse restante d'ATG : voir BMSN-uncalcined).",
    "quote": "At the optimum temperature of 550 °C, the crystallographic properties of BMSN confirmed that it was an amorphous silica material with mesoporous character."
   },
   {
@@ -1563,7 +1620,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "BMSN-550",
-   "text": "Hypothèse de chimiste : on attend un procédé de type Stöber, où l'ammoniaque catalyse l'hydrolyse et la condensation du TEOS en sphères de silice ; la surfactine, anionique et amphiphile, formerait probablement des micelles ou des agrégats autour desquels la silice se dépose par liaisons hydrogène ou par pontage, puis disparaîtrait à la calcination en laissant des pores. Le caractère sphérique et la taille de 250 à 300 nm ressemblent plus à des sphères de Stöber qu'à un MCM-41 ; le gabarit organisé, si présent, serait peu efficace, ce qui expliquerait la faible surface BET."
+   "text": "Hypothèse de chimiste : le procédé est très probablement un Stöber pur (Stöber, Fink et Bohn, 1968 ; Bogush, Tracy et Zukoski, 1988) : l'ammoniaque catalyse l'hydrolyse et la condensation du TEOS (≈ 0,3 M, NH3 ≈ 1 M) en sphères de silice amorphe de 250 à 300 nm. La surfactine est anionique, comme les oligomères de silice à pH ≈ 11 ; sans co-agent cationique (Che et al., Nat. Mater. 2003, voie de gabarit anionique), l'attraction vers la silice et la formation d'une mésophase organisée sont peu probables, dans un milieu à ≈ 52 % d'éthanol qui défavorise de plus la micellisation. Elle ne s'adsorberait qu'en faible quantité (≈ 3 % de perte organique en ATG) et la calcination brûlerait ce résidu et condenserait une partie des silanols sans créer de mésopores mesurables ; l'hystérèse d'adsorption d'azote viendrait alors des vides entre particules. Cette lecture rend compte de la faible surface BET."
   },
   {
    "type": "mecanisme_analyse",
@@ -1579,12 +1636,12 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le TEOS est inflammable et irritant et libère de l'éthanol en s'hydrolysant ; l'ammoniaque à 25 % dégage des vapeurs irritantes (hotte, gants, lunettes) ; le méthanol de lavage est toxique et inflammable ; l'acide chlorhydrique 5 M est corrosif. L'autoclave (121 °C, 15 atm) et le four à moufle (450–600 °C) demandent des protections thermiques. La silice amorphe nanométrique obtenue est une poudre fine à ne pas inhaler. La souche (collectée sur un site contaminé par du carburant) doit être traitée comme un matériel biologique : décontaminer les milieux de culture avant élimination."
+   "text": "Le TEOS est inflammable et irritant et libère de l'éthanol en s'hydrolysant ; l'ammoniaque à 25 % dégage des vapeurs irritantes (hotte, gants, lunettes) ; le méthanol de lavage est toxique et inflammable ; l'acide chlorhydrique 5 M est corrosif. L'autoclave (121 °C, soit ≈ 1 bar au-dessus de la pression atmosphérique) et le four à moufle (450–600 °C) demandent des protections thermiques. La silice amorphe nanométrique obtenue est une poudre fine à ne pas inhaler. La souche (collectée sur un site contaminé par du carburant) doit être traitée comme un matériel biologique : décontaminer les milieux de culture avant élimination. Le mélange réactionnel contient ≈ 52 % v/v d'éthanol (inflammable)."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Ce qui manque pour refaire la synthèse : durée, atmosphère et vitesse de montée en température de la calcination ; température de la synthèse (probablement ambiante, non écrite) ; vitesse d'agitation ; fournisseurs de tous les réactifs sauf le TEOS (Fluka) ; pureté du biosurfactant et sa masse produite par litre de culture ; durée exacte des lavages. Le rendement de 87,87 % est une perte de masse en ATG d'un échantillon de 11,950 mg et ne rapporte pas la masse de silice au TEOS introduit."
+   "text": "Ce qui manque pour refaire la synthèse : durée, atmosphère et vitesse de montée en température de la calcination ; température de la synthèse (probablement ambiante, non écrite) ; vitesse d'agitation ; fournisseurs de tous les réactifs sauf le TEOS (Fluka) ; pureté du biosurfactant et sa masse produite par litre de culture ; durée exacte des lavages. Aucun rendement de silice n'est donné : le « rendement » de 87,87 % de la conclusion est une masse restante d'ATG (voir BMSN-uncalcined)."
   },
   {
    "type": "limite_reproductibilite",
@@ -1595,6 +1652,56 @@
    "type": "limite_reproductibilite",
    "route": "BMSN-550",
    "text": "Figures consultées (Fig. 1 à 4) : seules les étiquettes de bandes FTIR de la Fig. 1c ont fourni des valeurs supplémentaires (voir doutes) ; les micrographies MEB et MET portent des barres d'échelle de 200 et 500 nm sans mesure par échantillon, et les isothermes et courbes BJH de la Fig. 3 ne portent pas de valeur lisible hors tableau 3. Le tableau 1 (FTIR) est reproduit en texte brut dans le fichier, avec ses colonnes avant et après calcination vides de façon irrégulière : il n'a pas été exploité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BMSN-uncalcined",
+   "text": "Le « rendement » de 87,87 % annoncé en conclusion n'est pas un rendement de synthèse : c'est la masse restante en fin d'ATG (30–800 °C, sous azote) de l'échantillon brut non calciné (Fig. 2b, courbe « Non-calcinated »), non rapportée à la silice théorique du TEOS introduit (≈ 2,69 g de SiO2 pour 10 mL). Le calcul est en outre faux dans l'article : 10,174/11,950 = 85,1 % (perte de 14,9 %), pas 87,87 % (perte de 12,13 %), et les pertes écrites (3 + 2 + 1 = 6 %) ne donnent pas non plus 12,13 %. Le texte parle d'une masse « après la calcination », alors que l'ATG décrite est celle de l'échantillon brut. Sur la Fig. 2b, la perte de 30 à 210 °C est d'environ 7,5 % (absente du texte) et celle de 210 à 307 °C d'environ 1 % (le texte écrit ~3 %). Le vrai rendement n'est pas connu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BMSN-550",
+   "text": "Porosité non démontrée : la surface BET de 6,5 à 8,3 m2 g−1 est inférieure ou égale à la surface externe d'une poudre de sphères pleines de 262 nm (≈ 10–11 m2 g−1 pour une silice de densité 2,2 g cm−3), donc le matériau n'a pratiquement pas de porosité interne ; les « pores » BJH de 15 à 30 nm et l'hystérèse correspondent plutôt aux vides entre particules agglomérées (diamètre 4V/S d'environ 9 à 10 nm contre 15 à 30 nm en BJH). Une silice mésoporeuse ordonnée de type MCM-41 ou SBA-15 donne 690 à 1 020 m2 g−1 (les MCM-41 et SBA-15 de cette base), contre 6 à 8 m2 g−1 ici : le produit ressemble aux sphères de Stöber sans gabarit de cette base (PMC5923560)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BMSN-550",
+   "text": "DRX bas angle incohérente : une maille de 62,18 Å est incompatible avec des pores BJH de 15 à 30 nm (un pore ne peut pas dépasser la maille moins l'épaisseur de paroi) ; l'indexation « d100 et d003 » n'existe pas pour un réseau hexagonal 2D (100, 110, 200), et le halo amorphe à 21–22,6° ne peut pas être indexé « d100 ». L'ordre hexagonal n'est pas démontré (aucune image de MET des canaux). La longueur d'onde est écrite « 1.540600 nm » au lieu de Å."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BMSN-550",
+   "text": "XPS non corrigé de la charge : C 1s à 283,0–283,8 eV (le carbone adventice est à 284,8 eV), Si 2p et O 1s 1 à 2 eV sous les valeurs de SiO2 ; l'écart O 1s − Si 2p reste constant à 429,4 ± 0,05 eV pour les quatre températures, donc les variations de 0,2 eV lues comme une liaison Si–O plus forte à 550 °C sont un effet de charge. Les attributions du tableau 2 (SiC, PbS, carbure de tungstène, natrolite) sont des correspondances de base de données sans rapport avec l'échantillon."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BMSN-550",
+   "text": "Gabarit peu plausible : la surfactine est anionique, comme la silice à pH ≈ 11, et la recette n'a pas de co-agent cationique (Che et al., Nat. Mater. 2003, pour les silices à gabarit anionique) ; le rapport biosurfactant/silicium est de l'ordre de 0,01 mol/mol, bien inférieur à celui du CTAB dans un MCM-41, et le « complexe Si–O–surfactine » n'est montré par aucune mesure. L'identité du biosurfactant (surfactine) n'est établie par aucune analyse (ni spectrométrie de masse, ni HPLC, ni RMN)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BMSN-550",
+   "text": "Autres réserves : calcination en four à moufle sans durée, vitesse de montée ni atmosphère, alors que l'ATG est faite sous azote (pyrolyse), donc pas représentative de la calcination ; les bandes à 2361 et 2343 cm−1 attribuées à N–H sont le doublet du CO2 atmosphérique ; l'EDX du résumé (Si 56,09 %, O 42,13 % en masse, O/Si ≈ 1,3 en atomes) est incompatible avec SiO2 (O/Si = 2) et avec l'XPS de l'article ; la disparition de la bande Si–OH à 600 °C est surprenante, car les silanols isolés persistent jusqu'à environ 1 000 °C d'après Zhuravlev (Colloids Surf. A, 2000) ; les bandes UV à 202 et 257 nm de la silice amorphe relèvent de défauts, non d'un « tamis moléculaire ». Incohérences entre sections : les tableaux 2 et 3 nomment les échantillons « MCM-41 », la surface est écrite « m3 g−1 » dans le texte, le texte annonce une surface et un volume poreux croissants jusqu'à 600 °C alors que le tableau 3 montre un maximum à 550 °C, et les tailles de MEB sont discordantes (250–300 nm, 280 nm, 264 nm, 61–300 nm)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BMSN-450",
+   "text": "Mêmes réserves que BMSN-550 : la surface BET de 6,5179 m2 g−1 est inférieure à la surface externe de sphères pleines de ≈ 260 nm (≈ 10–11 m2 g−1), donc la mésoporosité interne n'est pas démontrée ; les pores BJH correspondent à des vides interparticulaires et les valeurs XPS ne sont pas corrigées de la charge."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BMSN-500",
+   "text": "Mêmes réserves que BMSN-550 : la surface BET de 7,73 m2 g−1 est inférieure à la surface externe de sphères pleines de ≈ 260 nm (≈ 10–11 m2 g−1), donc la mésoporosité interne n'est pas démontrée ; les pores BJH correspondent à des vides interparticulaires et les valeurs XPS ne sont pas corrigées de la charge."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BMSN-600",
+   "text": "Mêmes réserves que BMSN-550 : la surface BET de 7,9856 m2 g−1 est inférieure à la surface externe de sphères pleines de ≈ 260 nm (≈ 10–11 m2 g−1), donc la mésoporosité interne n'est pas démontrée ; les pores BJH correspondent à des vides interparticulaires et les valeurs XPS ne sont pas corrigées de la charge."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Biosurfactant",
+   "text": "Autoclave « 121 °C for 20 min at 15 atm » : à 121 °C, la vapeur saturée est à ≈ 2 bar absolus, soit ≈ 15 psi (≈ 1 bar) au-dessus de la pression atmosphérique ; 15 atm est une confusion d'unité, 15 atm correspondrait à ≈ 200 °C (Centers for Disease Control and Prevention, Steam Sterilization). L'inoculum (2 µL pour un volume de culture non donné) est très inférieur aux 1 % v/v usuels, et la « DO en CFU mL−1 » mélange une grandeur sans dimension et une concentration cellulaire. Le biosurfactant n'est caractérisé par aucune analyse ; son identité (surfactine) est supposée."
   }
  ],
  "method_sources": [
@@ -1649,8 +1756,8 @@
    "issue": "Le texte écrit « m3 g−1 » pour la surface spécifique et le tableau 3 « m2 g−1 » ; l'unité du tableau est retenue. Le texte dit aussi que surface, volume poreux et diamètre de pore évoluent de façon monotone de 450 à 600 °C, alors que le tableau 3 montre un maximum de surface à 550 °C (8.2616) puis 7.9856 à 600 °C, et un diamètre de pore minimal à 550 °C (14.8516 nm) puis 16.5246 nm à 600 °C. Les valeurs du tableau sont retenues."
   },
   {
-   "where": "BMSN-550, rendement",
-   "issue": "« 87.87% yield of BMSN » (conclusion) est calculé d'après l'ATG : 10.174 mg restants sur 11.950 mg d'échantillon brut chauffé à 800 °C sous azote. Ce n'est pas un rendement par rapport au TEOS. Lecture retenue : valeur rattachée à la voie de référence BMSN-550, car la conclusion l'associe à 550–600 °C ; la même masse est aussi donnée pour l'échantillon non calciné."
+   "where": "BMSN-550 / BMSN-uncalcined, « rendement » de 87,87 %",
+   "issue": "« 87.87% yield of BMSN » (conclusion) est calculé d'après l'ATG : 10.174 mg restants sur 11.950 mg d'échantillon brut chauffé à 800 °C sous azote (Fig. 2b, courbe « Non-calcinated », ≈ 87,9 % à 800 °C). Ce n'est pas un rendement par rapport au TEOS et il n'est pas propre à 550 °C. Le champ rendement de BMSN-550 est donc laissé vide (not_stated) ; 87,87 % et 12,13 % sont rangés comme résultats d'ATG de BMSN-uncalcined. Les masses de l'article donnent en outre 10,174/11,950 = 85,1 % (et non 87,87 %), valeur de l'article non corrigée."
   },
   {
    "where": "BMSN-550, étape 8 (choix de la voie de base)",
@@ -1662,7 +1769,7 @@
   },
   {
    "where": "Résultats FTIR, positions Si–O–Si et Si–OH",
-   "issue": "Le texte donne cinq valeurs pour quatre températures (« 801, 808, 803, 802, and 808 cm−1 for the materials calcinated at 450 °C, 500 °C, 550 °C, and 600 °C, respectively ») et des listes sans ordre (1102, 1105, 1113, 1115, 1120 ; 957, 968, 966, 960 cm−1). Les positions de la Fig. 1c, étiquetées sur chaque spectre, ont servi à les attribuer : seules les étiquettes lisibles sont gardées (500, 550, 600 °C et non calciné), lues sur figure (étiquettes imprimées, précision à 1 cm−1). Pour 450 °C la figure et le texte divergent (1112 ou 1105, 806, 971 ou 968 cm−1 lus avec peu de netteté) et rien n'est extrait ; pour le non calciné la figure donne 801 cm−1 pour Si–O–Si symétrique, le texte 808 cm−1 : la figure est retenue."
+   "issue": "Le texte donne cinq valeurs pour quatre températures (« 801, 808, 803, 802, and 808 cm−1 for the materials calcinated at 450 °C, 500 °C, 550 °C, and 600 °C, respectively ») et des listes sans ordre (1102, 1105, 1113, 1115, 1120 ; 957, 968, 966, 960 cm−1). Les positions de la Fig. 1c, étiquetées sur chaque spectre, ont servi à les attribuer (étiquettes imprimées lues sur la figure, précision à 1 cm−1), pour 450, 500, 550, 600 °C et le non calciné. Pour 450 °C, la figure donne 1112 (Si–O–Si asym.), 806 (Si–O–Si sym.), 971 (Si–OH), 1628 et 3451 cm−1 (O–H), alors que le texte donne 1105 et 968 cm−1 pour ce qui semble être 450 °C : l'écart texte/figure n'est pas tranché, les valeurs de la figure sont gardées. Pour le non calciné, la figure donne 801 cm−1 (Si–O–Si sym.), le texte 808 cm−1 : la figure est retenue."
   },
   {
    "where": "Taille des particules",
@@ -1670,11 +1777,19 @@
   },
   {
    "where": "Annexes et figures",
-   "issue": "Aucune annexe (Supporting Information) n'existe dans le fichier et l'article n'en annonce pas. Les cinq images du dossier ont été ouvertes. Seules des valeurs lues sur la Fig. 1c (étiquettes de bandes FTIR, 9 valeurs de 500, 550, 600 °C et non calciné) ont été ajoutées ; les Fig. 1a, 1b et 1d–g (DRX, XPS) et 2 et 3 ne portent pas de valeur lisible par échantillon au-delà du texte et des tableaux, et les micrographies n'ont que des barres d'échelle."
+   "issue": "Aucune annexe (Supporting Information) n'existe dans le fichier et l'article n'en annonce pas. Les cinq images du dossier ont été ouvertes. Des valeurs ont été lues sur la Fig. 1c (étiquettes de bandes FTIR pour 450, 500, 550, 600 °C et non calciné) et une sur la Fig. 2b (perte d'ATG de 30 à 210 °C, ≈ 7,5 %) ; les Fig. 1a, 1b et 1d–g (DRX, XPS) et 2 et 3 ne portent pas d'autre valeur lisible par échantillon au-delà du texte et des tableaux, et les micrographies n'ont que des barres d'échelle."
   },
   {
    "where": "Biosurfactant, périmètre",
    "issue": "La production du biosurfactant (culture, précipitation acide) est un protocole unique, non optimisé, dont le produit est réellement réutilisé : conservée en voie intermédiaire. Les 11 étapes de culture et de récupération sont décrites dans l'article, avec renvoi à Maity et al. pour la procédure."
+  },
+  {
+   "where": "BMSN-uncalcined, ATG par étage (Fig. 2b)",
+   "issue": "Le texte ne donne aucune valeur pour 30–210 °C (eau adsorbée) ; la Fig. 2b montre une perte d'environ 7,5 % (lue à ±0,5 %, ajoutée en from_figure). La même figure montre ≈ 1 % entre 210 et 307 °C, alors que le texte écrit « ~3% » : le texte est gardé, l'écart est signalé ici. La somme des pertes écrites (3 + 2 + 1 = 6 %) ne vaut pas non plus le total de 12,13 %. La légende de la Fig. 2b parle d'ATG « à différentes températures de calcination » alors que le texte décrit un seul échantillon brut."
+  },
+  {
+   "where": "BMSN-550 et BMSN-uncalcined, étapes 2 et 3",
+   "issue": "Le texte écrit que l'ammoniaque et l'éthanol sont ajoutés « simultaneously », puis que le TEOS est ajouté goutte à goutte « At the same time ». Les trois ajouts sont donc simultanés selon l'article ; l'ordre, la vitesse et la durée de l'addition ne sont pas écrits. Les deux étapes sont décrites comme non séquentielles."
   }
  ]
 }
