@@ -272,9 +272,16 @@
     {
      "order": 5,
      "action": "centrifuge",
-     "description": "Separate the yellowish solution from the dark brown oily precipitate by centrifugation.",
+     "description": "Separate the yellowish solution from the dark brown oily precipitate by centrifugation; the schematic of Fig. 1 shows « remove precipitation », so the yellowish solution is the product.",
      "quote": "The yellowish solution and dark brown oily precipitate were separated by centrifugation.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "phase_retained",
+       "value_text": "remove precipitation",
+       "from_figure": "Fig. 1",
+       "quote": "Fig. 1 Synthesis of ACDs from the derivation of rigid molecular structures by a one-step solvothermal method with the employment of a coplanar structure HATU as the only precursor."
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "speed",
@@ -327,9 +334,9 @@
     },
     {
      "technique": "UV-vis",
-     "result": "absorption peaks around 290 nm and 350 nm (sample not specified among the solvents of Fig. 3b)",
+     "result": "absorption peaks around 290 nm and 350 nm",
      "instrument": "Shimadzu 1800 spectrophotometer",
-     "conditions": "250–800 nm",
+     "conditions": "250–800 nm; solvant de l'échantillon non nommé dans la phrase (la Fig. 3b montre eau, éthanol, acétonitrile et DMF)",
      "quote": "The UV-vis spectra in Fig. 3b show absorption peaks around 290 nm and 350 nm."
     },
     {
@@ -345,6 +352,13 @@
      "instrument": "GAUSSIAN16; AIMAll for QTAIM",
      "conditions": "B3LYP/6-311++G(d,p), tight SCF criterion",
      "quote": "The structures of the precursor compounds and their isomers have been optimized at the density functional theory (DFT) level using the B3LYP hybrid exchange-correlation functional and the extended 6-311++G(d,p) basis set."
+    },
+    {
+     "technique": "amphiphilicity test (toluene/water mixing)",
+     "result": "both the lower aqueous and upper organic phases exhibited blue luminescence under the 365 nm UV lamp",
+     "instrument": null,
+     "conditions": "carbon dots prepared in toluene mixed with deionized water, ultrasonicated for two minutes, kept for a couple of hours until the solution separated into two clear phases; volumes and ratio not stated",
+     "quote": "we also mixed the carbon dots prepared in toluene with deionized water, ultrasonicated them for two minutes and kept them for a couple of hours until the solution separated into two clear phases."
     }
    ],
    "outcomes": [
@@ -419,7 +433,8 @@
     "supplier_per_reagent",
     "heating_rate",
     "autoclave_volume",
-    "purification_of_the_dots"
+    "purification_of_the_dots",
+    "amphiphilicity_test_volumes"
    ]
   },
   {
@@ -449,10 +464,10 @@
      "amount": 30,
      "unit": "mL",
      "quote": "HATU (0.5 mmol) or other precursors (0.5 mmol benzyltriethylammonium chloride, 0.5 mmol 1-benzylimidazole, 1 mL diisopropylamine) were added with stirring at room temperature to poly(tetrafluoroethylene) (Teflon) lined flasks (50 mL) containing 30 mL solvent.",
-     "not_stated": [
-      "purity",
-      "supplier"
-     ]
+     "not_stated": [],
+     "purity": "Deionized water (18.2 MΩ cm)",
+     "supplier": "F’DEER",
+     "supplier_quote": "Deionized water (18.2 MΩ cm) was obtained from a F’DEER water purification system."
     }
    ],
    "outcomes": [
@@ -474,6 +489,17 @@
      "property": "dispersion_state_water",
      "value_text": "a few of the dots are aggregated together",
      "quote": "In water, acetonitrile and pyridine, a few of the dots are aggregated together while in toluene, ethanol and DMF the dots are well-dispersed."
+    },
+    {
+     "property": "HRTEM_aggregation_form",
+     "value_text": "aggregated form with two or three original dots gathered together",
+     "quote": "the morphology of the samples obtained from DMF, water and acetonitrile were in an aggregated form with two or three original dots gathered together."
+    },
+    {
+     "property": "lattice_fringes_HRTEM",
+     "value_text": "crystalline; oriented lattice fringes",
+     "from_figure": "Fig. 3a",
+     "quote": "Fig. 3a shows HRTEM images of ACD–HATU obtained from different solvents. The HRTEM suggests that these CDs are crystalline, which can be proven by the oriented lattice fringes in an enlarged view."
     }
    ]
   },
@@ -530,6 +556,12 @@
      "property": "dispersion_state_ethanol",
      "value_text": "well-dispersed dots",
      "quote": "In water, acetonitrile and pyridine, a few of the dots are aggregated together while in toluene, ethanol and DMF the dots are well-dispersed."
+    },
+    {
+     "property": "lattice_fringes_HRTEM",
+     "value_text": "crystalline; oriented lattice fringes",
+     "from_figure": "Fig. 3a",
+     "quote": "Fig. 3a shows HRTEM images of ACD–HATU obtained from different solvents. The HRTEM suggests that these CDs are crystalline, which can be proven by the oriented lattice fringes in an enlarged view."
     }
    ]
   },
@@ -586,6 +618,17 @@
      "property": "dispersion_state_acetonitrile",
      "value_text": "a few of the dots are aggregated together",
      "quote": "In water, acetonitrile and pyridine, a few of the dots are aggregated together while in toluene, ethanol and DMF the dots are well-dispersed."
+    },
+    {
+     "property": "HRTEM_aggregation_form",
+     "value_text": "aggregated form with two or three original dots gathered together",
+     "quote": "the morphology of the samples obtained from DMF, water and acetonitrile were in an aggregated form with two or three original dots gathered together."
+    },
+    {
+     "property": "lattice_fringes_HRTEM",
+     "value_text": "crystalline; oriented lattice fringes",
+     "from_figure": "Fig. 3a",
+     "quote": "Fig. 3a shows HRTEM images of ACD–HATU obtained from different solvents. The HRTEM suggests that these CDs are crystalline, which can be proven by the oriented lattice fringes in an enlarged view."
     }
    ]
   },
@@ -637,6 +680,22 @@
      "unit": "%",
      "value_text": "∼2%",
      "quote": "Their relative quantum yields (quinine sulfate in 0.1 M H2SO4 as the reference) of the ACDs were ∼7%, ∼2%, ∼20% and ∼2% prepared from water, ethanol, acetonitrile and DMF, respectively."
+    },
+    {
+     "property": "HRTEM_aggregation_form",
+     "value_text": "aggregated form with two or three original dots gathered together",
+     "quote": "the morphology of the samples obtained from DMF, water and acetonitrile were in an aggregated form with two or three original dots gathered together."
+    },
+    {
+     "property": "dispersion_state_DMF",
+     "value_text": "the dots are well-dispersed",
+     "quote": "In water, acetonitrile and pyridine, a few of the dots are aggregated together while in toluene, ethanol and DMF the dots are well-dispersed."
+    },
+    {
+     "property": "lattice_fringes_HRTEM",
+     "value_text": "crystalline; oriented lattice fringes",
+     "from_figure": "Fig. 3a",
+     "quote": "Fig. 3a shows HRTEM images of ACD–HATU obtained from different solvents. The HRTEM suggests that these CDs are crystalline, which can be proven by the oriented lattice fringes in an enlarged view."
     }
    ]
   },
@@ -679,6 +738,12 @@
      "property": "dispersion_state_pyridine",
      "value_text": "a few of the dots are aggregated together",
      "quote": "In water, acetonitrile and pyridine, a few of the dots are aggregated together while in toluene, ethanol and DMF the dots are well-dispersed."
+    },
+    {
+     "property": "lattice_fringes_HRTEM",
+     "value_text": "crystalline; oriented lattice fringes",
+     "from_figure": "Fig. 3a",
+     "quote": "Fig. 3a shows HRTEM images of ACD–HATU obtained from different solvents. The HRTEM suggests that these CDs are crystalline, which can be proven by the oriented lattice fringes in an enlarged view."
     }
    ]
   },
@@ -1072,12 +1137,47 @@
   {
    "type": "mecanisme_analyse",
    "route": "ACD-HATU",
-   "text": "Hypothèse de chimiste : à 150 °C en milieu fermé, le HATU (un sel de triazolopyridinium porteur d'un ion PF6–) se décomposerait probablement par rupture de la liaison N–O et du groupe uronium, puis carbonisation partielle des fragments aromatiques azotés pour former le cœur sp2. L'anion PF6– resterait en surface, ce qui est compatible avec le rapport P : F de 1 : 6 vu en EDS et expliquerait le caractère amphiphile, tandis que les chaînes diméthylamino apporteraient l'azote de surface. Le rôle de l'aluminium (cation Lewis) serait probablement de coordonner les groupes azotés ou oxygénés de surface et de ralentir la croissance."
+   "text": "Hypothèse de chimiste, non démontrée : à 150 °C pendant 8 h, juste sous le début de décomposition exothermique du HATU mesuré en DSC (environ 161 °C), le cation uronium se décomposerait lentement (rupture de la liaison N–O, libération de HOAt et de tétraméthylurée ou de fragments guanidinium) ; les fragments azotés hétéroaromatiques condenseraient en oligomères conjugués et peut-être en petits domaines carbonés, PF6– restant en contre-ion (compatible avec le rapport P : F de 1 : 6 vu en EDS). L'émission bleue et une part du rendement quantique pourraient venir d'espèces moléculaires ou oligomères azotées autant que de cœurs sp2 (fluorophores moléculaires signalés dans la littérature sur la synthèse solvothermale de points de carbone, par exemple Otten et al., Langmuir 2022). L'écart de rendement avec DIPA, BTEAC et BI s'expliquerait plus simplement par la réactivité (seul le HATU se décompose à 150 °C) que par la rigidité moléculaire : l'angle dièdre calculé en DFT et la bande Raman à 1080 cm–1 ne permettent pas de trancher entre les deux. Le rôle de l'aluminium reste à établir (voir la limite sur les particules Al–F–O)."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le HATU est un sensibilisant cutané et respiratoire, et les dérivés de la famille des triazoles (type HOAt) sont connus pour leur instabilité thermique : chauffer à 150 °C en autoclave scellé demande de l'attention. À cette température, le toluène (Éb. 111 °C), l'acétonitrile et l'éthanol sont bien au-dessus de leur point d'ébullition : pression interne notable, remplissage de 30 mL dans un récipient de 50 mL (60 %) à vérifier, refroidissement complet avant ouverture. L'ion PF6– peut libérer du HF en présence d'eau à chaud. Toluène, DMF (reprotoxique), pyridine (toxique, inflammable) et acétonitrile sont à manipuler sous hotte ; l'AlCl3·6H2O est irritant. Les points de carbone de moins de 5 nm sont des nanoparticules à ne pas inhaler."
+   "text": "Le HATU est un sensibilisant cutané et respiratoire et un réactif de couplage énergétique : la DSC publiée montre un début de décomposition exothermique vers 161 °C (environ –1 130 J/g, Sperry et al., Org. Process Res. Dev. 2018, valeurs relevées par la critique scientifique), donc juste au-dessus des 150 °C de la synthèse. À l'échelle décrite (0,5 mmol, environ 190 mg dans 30 mL) l'exotherme est faible (élévation adiabatique estimée à quelques kelvins), mais il ne faut ni chauffer de HATU solide ni augmenter la charge sans évaluation. À 150 °C, le toluène (Éb. 111 °C, pression de vapeur voisine de 2,8 bar), l'acétonitrile et l'éthanol sont bien au-dessus de leur point d'ébullition : remplissage de 30 mL dans 50 mL (60 %), refroidissement complet avant ouverture, sous hotte. L'ion PF6– peut s'hydrolyser à chaud, surtout en milieu acide (le HOAt formé acidifie), en libérant du HF ; l'eau du AlCl3·6H2O et l'eau solvant favorisent cette hydrolyse. Toluène, DMF (reprotoxique), pyridine (toxique, inflammable) et acétonitrile sont à manipuler sous hotte ; AlCl3·6H2O est irritant. Les points de moins de 5 nm sont des nanoparticules à ne pas inhaler."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ACD-HATU",
+   "text": "Aucune purification (ni dialyse, ni chromatographie, ni exclusion de taille) : toutes les mesures optiques portent sur la solution brute (« mother liquid »), et le rapport P : F de 1 : 6 en EDS indique du PF6– intact, donc un sel non transformé encore présent. Le rendement quantique de 29 % ne peut pas être attribué aux seuls points de carbone : des fluorophores moléculaires ou oligomères issus du HATU peuvent y contribuer (voir Essner et al., Chem. Mater. 2018, sur les impuretés fluorescentes des points de carbone)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ACD-HATU_DMF",
+   "text": "L'article donne deux états de dispersion contradictoires pour le DMF (agrégé en HRTEM dans un paragraphe, bien dispersé dans le suivant) et ne tranche pas ; les deux énoncés sont extraits et la contradiction est consignée en doute."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ACD-DIPA",
+   "text": "Le diisopropylamine est dosé en volume (1 mL, soit environ 7 mmol avec une densité voisine de 0,72 g/mL, valeur de fiche fournisseur reprise par la critique scientifique) contre 0,5 mmol pour les trois autres précurseurs : la comparaison de rigidité n'est pas faite à quantité de matière égale, et DIPA apporte environ 14 fois plus de molécules."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Pour ACD-DIPA, ACD-BTEAC et ACD-BI, l'article ne montre aucune image ni analyse qui prouve la formation de points de carbone : seuls des rendements quantiques inférieurs à 2 % sont donnés (plage globale de 0,6 à 1,7 %). Ces voies comparent donc des solutions luminescentes, pas des points caractérisés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ACD-HATU_Al",
+   "text": "1 mmol d'AlCl3·6H2O apporte 6 mmol d'eau et 1 mmol d'aluminium pour 3 mmol de fluor (0,5 mmol de HATU × 6 F), soit le rapport Al : F de 1 : 3 d'AlF3. Les « points dopés » observés dans le dépôt de centrifugation (TEM-EDS) peuvent donc en partie être des particules inorganiques Al–F–O, et le témoin compare un dépôt à une solution. Le toluène de cette synthèse est lu sur le schéma de la Fig. 1 et non dans le texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ACD-HATU_aqueous",
+   "text": "Telle qu'écrite, la préparation de la dispersion aqueuse est impossible : une mère liquide toluénique (toluène fondant vers –95 °C) ne se lyophilise pas dans un appareil courant, et l'article ne dit pas de quelle synthèse vient la mère liquide. Soit la provenance est autre (par exemple une voie en solvant plus volatil), soit il s'agit d'une évaporation ; à vérifier avant de refaire les essais cellulaires."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Autres réserves de la critique scientifique : (1) la méthode du rendement quantique de 29 % (absolue en sphère d'intégration ou relative) n'est pas dite pour cette valeur, et le sulfate de quinine, référence des valeurs relatives des autres solvants, n'absorbe presque plus au-delà de 400 nm alors que l'excitation optimale annoncée est de 410 nm (norme IUPAC de Brouwer, 2011) ; les rendements absolu et relatif ne sont pas comparables ; (2) le HATU est un sel peu soluble dans le toluène, la synthèse est probablement hétérogène (suspension) alors que l'article parle de précurseurs « dissolved in toluene » ; (3) l'XPS semble non calibré : C 1s (C–C) à 285,7 eV et F 1s vers 691 eV, soit +0,9 et +4,3 eV par rapport aux valeurs attendues, et le phosphore n'est pas cité en XPS ; (4) le texte parle d'application « in vivo » alors que seuls des essais sur cellules HeLa sont décrits ; (5) la liaison hydrogène dite « intermolecular » est invoquée pour le dièdre du HATU alors que le calcul DFT porte sur une molécule isolée."
   }
  ],
  "method_sources": [],
@@ -1085,14 +1185,6 @@
   {
    "where": "réactifs, fournisseurs",
    "issue": "L'article dit que les produits « were purchased from Energy Chemical, Vetec™, Alfa Aesar, Shanghai Dahe Chemical and Tansoole Company » sans attribuer un fournisseur à chaque réactif ; la pureté, écrite à côté de chaque nom, est extraite, le fournisseur est déclaré non cité."
-  },
-  {
-   "where": "ACD-HATU_DMF, ACD-HATU_pyridine, état de dispersion",
-   "issue": "Contradiction : un paragraphe écrit que les échantillons obtenus dans DMF, eau et acétonitrile sont agrégés, le suivant que les points sont agrégés dans l'eau, l'acétonitrile et la pyridine et bien dispersés dans le toluène, l'éthanol et le DMF. L'état de dispersion du DMF n'est donc pas extrait ; eau, acétonitrile, pyridine, toluène et éthanol sont extraits de la phrase la plus détaillée."
-  },
-  {
-   "where": "ACD-HATU_Al, solvant et nature de l'échantillon",
-   "issue": "« prepared in the same way only with AlCl3·6H2O (1 mmol) added » : le solvant n'est pas répété ; lecture retenue : toluène hérité du parent. Le TEM-EDS est fait sur le « deposit in the bottom » après centrifugation de la mère liquide, alors que les points non dopés sont observés dans la mère liquide."
   },
   {
    "where": "ACD-HATU, rendement quantique",
@@ -1107,20 +1199,44 @@
    "issue": "« average lifetime of 2 ns for the undoped ACDs » : l'échantillon non dopé n'est pas nommé (solvant non précisé) ; rattaché à la voie de base."
   },
   {
-   "where": "ACD-HATU, EDS, XPS, UV-vis, 0,21 nm",
-   "issue": "L'EDS est dit « obtained from toluene » ; XPS, UV-vis (pics à 290 et 350 nm) et distance de frange 0,21 nm ne nomment pas le solvant (la Fig. 3a n'annote 0,21 nm que sur le panneau toluène) : rattachés à la voie de base par défaut."
-  },
-  {
    "where": "solvants, héritage",
    "issue": "L'article dit seulement qu'on a « replaced toluene with other solvents » : quantités de HATU, durée et température sont supposées inchangées (condition de la Fig. 3 : ACD–HATU). Aucun résultat de synthèse propre à la pyridine n'est donné hors Fig. 3a (HRTEM)."
   },
   {
    "where": "ACD-HATU_aqueous",
-   "issue": "« The mother liquid was freeze-dried… » : on ne sait pas de quelle synthèse (toluène ?) provient la mère liquide ; la voie est créée en post_treatment sans lien avec un solvant précis."
+   "issue": "« The mother liquid was freeze-dried… » : on ne sait pas de quelle synthèse (toluène ?) provient la mère liquide ; la voie est créée en post_treatment sans lien avec un solvant précis. Lyophiliser une mère liquide toluénique n'est pas faisable tel qu'écrit (voir annotation)."
   },
   {
    "where": "valeurs lues sur figure",
-   "issue": "Fig. 2a : angles dièdres DIPA 62°, BTEAC 81°, BI 52° (étiquettes lisibles de la figure, valeurs exactes) ; Fig. 4b : classe modale 1,6–2 nm, environ 35 points sur 100 (lecture à ±2). Fig. 2b : ordre qualitatif des intensités C–N en annotation. Fig. 3 et 5 ouvertes (spectres sans échelle d'intensité, pointés de longueurs d'onde déjà dans le texte, HRTEM ; imagerie cellulaire qualitative) ; Fig. 1 et le résumé graphique non ouverts (schéma). Aucune annexe SI en image n'est dans le dépôt."
+   "issue": "Fig. 2a : angles dièdres DIPA 62°, BTEAC 81°, BI 52° (étiquettes lisibles de la figure, valeurs exactes) ; Fig. 4b : classe modale 1,6–2 nm, environ 35 points sur 100 (lecture à ±2). Fig. 2b : ordre qualitatif des intensités C–N en annotation. Fig. 3 et 5 ouvertes (spectres sans échelle d'intensité, pointés de longueurs d'onde déjà dans le texte, HRTEM ; imagerie cellulaire qualitative) ; Fig. 1 ouverte (schéma : « remove precipitation », « with /without AlCl3·6H2O in toluene », valeurs lues sur figure) ; Fig. 3a ouverte (franges sur les six panneaux, 0,21 nm sur le panneau toluène) ; résumé graphique non ouvert. Aucune annexe SI en image n'est dans le dépôt."
+  },
+  {
+   "where": "ACD-HATU, mesures sans solvant nommé (excitation 410 nm de la Fig. 5a, dépendance à l'excitation, UV-vis 290 et 350 nm, XPS, durée de vie de 2 ns, diamètre 2–5 nm)",
+   "issue": "Les phrases qui donnent ces valeurs écrivent « ACD–HATU » ou « the ACDs » sans nommer le solvant. Seul l'EDS est dit « obtained from toluene ». La Fig. 3b ne montre des spectres que pour l'eau, l'éthanol, l'acétonitrile et le DMF (maximum d'excitation voisin de 410 nm aussi sur le panneau éthanol), et la Fig. S4 est « ACD-HATU in ethanol as an example ». Les valeurs sont gardées sur la voie de base faute de mieux, sans affirmer qu'elles valent pour le toluène seul ; l'article dit la taille des points identique pour tous les solvants."
+  },
+  {
+   "where": "ACD-HATU et branches solvant, franges HRTEM",
+   "issue": "La Fig. 3a (lue) montre des franges fléchées sur les six panneaux (toluène, eau, éthanol, acétonitrile, DMF, pyridine) ; la distance de 0,21 nm n'est annotée que sur le panneau toluène, et le texte ne donne qu'une valeur globale. La cristallinité est donc ajoutée aux cinq branches solvant sans valeur de distance."
+  },
+  {
+   "where": "ACD-HATU_DMF, ACD-HATU_water, ACD-HATU_acetonitrile, ACD-HATU_pyridine, état de dispersion",
+   "issue": "Contradiction de l'article : un paragraphe écrit que les échantillons obtenus dans DMF, eau et acétonitrile sont en forme agrégée (deux ou trois points ensemble), le suivant que les points sont agrégés dans l'eau, l'acétonitrile et la pyridine et bien dispersés dans le toluène, l'éthanol et le DMF. Les deux énoncés sont extraits pour le DMF (agrégé / bien dispersé) sans trancher."
+  },
+  {
+   "where": "ACD-HATU_Al, solvant et nature de l'échantillon",
+   "issue": "« prepared in the same way only with AlCl3·6H2O (1 mmol) added » ne répète pas le solvant ; le schéma de la Fig. 1 (lu) porte « with /without AlCl3·6H2O in toluene », ce qui confirme le toluène pour la synthèse dopée. Le TEM-EDS est fait sur le « deposit in the bottom » après centrifugation de la mère liquide, alors que les points non dopés sont observés dans la mère liquide."
+  },
+  {
+   "where": "ACD-HATU step 5, phase conservée après centrifugation",
+   "issue": "Le texte sépare « the yellowish solution and dark brown oily precipitate » sans dire laquelle est le produit ; le schéma de la Fig. 1 (lu) indique « remove precipitation », donc la solution jaunâtre est conservée. Le texte appelle ensuite « mother liquid » ce qui est déposé sur grille ou lyophilisé, sans faire le lien explicite ; vitesse et durée de centrifugation absentes."
+  },
+  {
+   "where": "ACD-HATU_water, qualité de l'eau",
+   "issue": "Seule eau décrite dans l'article : « Deionized water (18.2 MΩ cm) was obtained from a F’DEER water purification system ». Elle est attribuée à l'eau solvant de cette branche, sans que l'article dise explicitement que c'est l'eau de la synthèse hydrothermale."
+  },
+  {
+   "where": "method_sources, [[cit12]] (rendement quantique absolu, sphère d'intégration)",
+   "issue": "Le renvoi [[cit12]] (Porres et al., J. Fluoresc. 2006) clôt un paragraphe d'équations de la mesure absolue, sans formule de renvoi (« according to », « as described in ») : pas retenu comme source de méthode ; [[cit13]] est accroché à une équation de calcul. Aucune source de méthode n'est donc déclarée."
   }
  ]
 }
