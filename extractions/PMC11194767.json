@@ -548,8 +548,8 @@
     {
      "name": "sodium chloride",
      "formula": "NaCl",
-     "role": "mineralizer",
-     "quote": "only the OH−counter ions in the membrane were exchanged with chloride ions",
+     "role": "ion_exchange_agent",
+     "quote": "brane has been exchanged with sodium chloride",
      "supplier": "AkzoNobel",
      "supplier_quote": "sodium chloride (NaCl) (Sanal P; AkzoNobel)",
      "not_stated": [
@@ -624,8 +624,8 @@
     },
     {
      "order": 4,
-     "action": "soak",
-     "description": "Exchange the OH− counter ions of the membrane with chloride ions (NaCl); no procedure is given.",
+     "action": "exchange",
+     "description": "Exchange the OH− counter ions of the membrane with chloride ions (sodium chloride according to the Figure S1 caption). The article gives neither the procedure nor the place of this step relative to the 24 h soak in water: the position (after the soak, before assembling the cell) is assumed, not cited.",
      "quote": "only the OH−counter ions in the membrane were exchanged with chloride ions",
      "parameters": [],
      "equipment": [],
@@ -633,7 +633,8 @@
       "concentration",
       "duration",
       "temperature",
-      "volume"
+      "volume",
+      "position_in_sequence"
      ]
     },
     {
@@ -730,6 +731,13 @@
       "duration"
      ]
     }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology_vs_original_4h",
+     "value_text": "similar morphology for both adapted synthesis methods, clearly different from the original 4-hour synthesis",
+     "quote": "both the adapted synthesis methods show a similar morphology, while it is clearly different from the original 4-hour synthesis in the main text and shows"
+    }
    ]
   },
   {
@@ -756,11 +764,16 @@
      "parameter": "sodium hydroxide",
      "value_text": "titrated with NaOH to prevent excess OH−",
      "parent_value": "stoichiometric amount",
-     "quote": "brane has been exchanged with sodium chloride and where the Na-BTC has been titrated"
+     "quote": "the Na-BTC has been titrated with NaOH to prevent excess OH−."
     }
    ],
    "succeeded": true,
    "outcomes": [
+    {
+     "property": "morphology_vs_original_4h",
+     "value_text": "similar morphology for both adapted synthesis methods, clearly different from the original 4-hour synthesis",
+     "quote": "both the adapted synthesis methods show a similar morphology, while it is clearly different from the original 4-hour synthesis in the main text and shows"
+    },
     {
      "property": "EDS_composition_vs_original",
      "value_text": "almost identical composition results to the original syntheses",
@@ -1310,12 +1323,26 @@
      "property": "surface_morphology_HMIM_side",
      "value_text": "small individual crystals, slightly more than after 24 h",
      "quote": "On the HMIM side, there are small individual crystals present on the surface after 24 h and slightly more after 48 h"
+    },
+    {
+     "property": "surface_coverage_cause",
+     "value_text": "the seemingly lower surface coverage after 48 h can be attributed to the drying stresses of the sample preparation",
+     "quote": "The seemingly lower surface coverage after 48 h can be attributed to the drying stresses of the sample preparation."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "EDS",
+     "result": "Figure S9 gives the EDS of the zinc nitrate side and the HMIM side after 48 h; zinc is only found on the zinc nitrate side (statement of the article for the Figure S9 samples; nitrogen content higher than in the bare membrane)",
+     "instrument": null,
+     "conditions": "15 kV; settings adjusted for each analysis so that the electron count rate was above 2000",
+     "quote": "zinc is only found on the zinc nitrate solution side"
     }
    ]
   },
   {
    "label": "ZIF8-water-NH3-16h",
-   "parent": "ZIF8-MeOH-24h",
+   "parent": null,
    "material": {
     "name": "ZIF-8 film on an anion exchange membrane",
     "formula": "Zn(C4H5N2)2",
@@ -1323,36 +1350,36 @@
     "phase": null,
     "morphology": "no ZIF-8 reported; opaque zinc nitrate reservoir (zinc hydroxide)"
    },
-   "quote": "synthesis in water. To make sure that the HMIM was sufficiently dissociated, ammonia was",
-   "variations": [
-    {
-     "parameter": "methanol",
-     "value_text": "replaced by water",
-     "parent_value": "methanol",
-     "quote": "synthesis in water. To make sure that the HMIM was sufficiently dissociated, ammonia was"
-    },
-    {
-     "parameter": "additive",
-     "value_text": "ammonia added to the HMIM solution to increase the pH",
-     "parent_value": "none",
-     "quote": "To make sure that the HMIM was sufficiently dissociated, ammonia was"
-    },
-    {
-     "parameter": "duration",
-     "step_order": 3,
-     "value_num": 16,
-     "unit": "hr",
-     "parent_value": "24 h",
-     "quote": "Diffusion cell after 16 hr with zinc nitrate in the left and HMIM with ammonia"
-    }
-   ],
+   "quote": "Next to the shown experiments in the main text of ZIF-8 in methanol, we also performed the synthesis in water. To make sure that the HMIM was sufficiently dissociated, ammonia was added to increase the pH.",
    "succeeded": false,
    "reagents": [
+    {
+     "name": "zinc nitrate",
+     "formula": "Zn(NO3)2",
+     "role": "precursor",
+     "quote": "Diffusion cell after 16 hr with zinc nitrate in the left and HMIM with ammonia in the right reservoir",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "2-methylimidazole (HMIM)",
+     "formula": "C4H6N2",
+     "role": "precursor",
+     "quote": "Diffusion cell after 16 hr with zinc nitrate in the left and HMIM with ammonia in the right reservoir",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
     {
      "name": "water",
      "formula": "H2O",
      "role": "solvent",
-     "quote": "we also performed the",
+     "quote": "we also performed the synthesis in water. To make sure that the HMIM was sufficiently dissociated, ammonia was added to increase the pH.",
      "not_stated": [
       "amount",
       "purity",
@@ -1363,12 +1390,18 @@
      "name": "ammonia",
      "formula": "NH3",
      "role": "base",
-     "quote": "To make sure that the HMIM was sufficiently dissociated, ammonia was",
+     "quote": "To make sure that the HMIM was sufficiently dissociated, ammonia was added to increase the pH.",
      "not_stated": [
       "amount",
       "purity",
       "supplier"
      ]
+    },
+    {
+     "name": "anion exchange membrane",
+     "formula": null,
+     "role": "substrate",
+     "quote": "for both anion and cation membrane in the left and right figure"
     }
    ],
    "steps": [
@@ -1376,7 +1409,7 @@
      "order": 1,
      "action": "dissolve",
      "description": "Prepare the zinc nitrate solution in water; concentration not given.",
-     "quote": "we also performed the",
+     "quote": "we also performed the synthesis in water. To make sure that the HMIM was sufficiently dissociated, ammonia was added to increase the pH.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
@@ -1390,7 +1423,7 @@
      "order": 2,
      "action": "dissolve",
      "description": "Prepare the HMIM solution in water and add ammonia to increase the pH so that HMIM is sufficiently dissociated; neither the HMIM concentration nor the amount of ammonia is given.",
-     "quote": "To make sure that the HMIM was sufficiently dissociated, ammonia was",
+     "quote": "To make sure that the HMIM was sufficiently dissociated, ammonia was added to increase the pH.",
      "parameters": [],
      "equipment": [],
      "not_stated": [
@@ -1404,24 +1437,18 @@
     {
      "order": 3,
      "action": "react",
-     "description": "Diffusion cell with zinc nitrate in the left reservoir and HMIM with ammonia in the right one, observed after 16 h.",
-     "quote": "Diffusion cell after 16 hr with zinc nitrate in the left and HMIM with ammonia",
-     "parameters": [
-      {
-       "name": "duration",
-       "quote": "Diffusion cell after 16 hr with zinc nitrate in the left and HMIM with ammonia",
-       "value_num": 16,
-       "unit": "hr"
-      }
-     ],
+     "description": "Zinc nitrate in the left reservoir and HMIM with ammonia in the right reservoir of the diffusion cell. The 16 h is the age of the cell on the photograph of Figure S4, not a reaction time set by the authors.",
+     "quote": "Diffusion cell after 16 hr with zinc nitrate in the left and HMIM with ammonia in the right reservoir",
+     "parameters": [],
      "equipment": [
       {
        "type": "diffusion cell",
        "detail": "anion exchange membrane (left photo of Figure S4)",
-       "quote": "Diffusion cell after 16 hr with zinc nitrate in the left and HMIM with ammonia"
+       "quote": "Diffusion cell after 16 hr with zinc nitrate in the left and HMIM with ammonia in the right reservoir"
       }
      ],
      "not_stated": [
+      "duration",
       "temperature",
       "stirring_speed"
      ]
@@ -1432,7 +1459,25 @@
      "property": "zinc_nitrate_reservoir",
      "value_text": "turned opaque, indicating the formation of insoluble zinc hydroxide",
      "quote": "the zinc nitrate reservoir turned opaque"
+    },
+    {
+     "property": "cell_age_on_photograph",
+     "value_num": 16,
+     "unit": "hr",
+     "quote": "Figure S4: Diffusion cell after 16 hr with zinc nitrate in the left"
     }
+   ],
+   "is_baseline": true,
+   "method": "counter-diffusion in a two-compartment diffusion cell across an anion exchange membrane, water, ammonia added to the HMIM reservoir, room temperature not stated",
+   "not_stated": [
+    "yield"
+   ],
+   "missing_fields": [
+    "concentrations",
+    "quantite d'ammoniaque",
+    "temperature",
+    "membrane exacte",
+    "volumes"
    ]
   }
  ],
@@ -1456,7 +1501,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Cu-BTC dans l'eau : cristaux isolés à 30 min, structure en flocons (aiguilles d'après le SI) recouvrant les fibres à 4 h, surface plus uniforme à 24 et 48 h, épaisseur d'environ 20 μm à 24 h (SI : 20 μm aussi à 48 h, donc plus de croissance). Côté Na-BTC, pas de croissance constante même à 48 h. Dans le méthanol, Cu-BTC à 4 h ne donne que quelques petits cristaux isolés, donc une cinétique nettement plus lente. ZIF-8 dans le méthanol : film d'environ 0,5 μm à 24 h, plus mince que Cu-BTC (20 μm), avec une couverture apparemment plus faible à 48 h. ZIF-8 dans l'eau : le réservoir de nitrate de zinc devient opaque (hydroxyde de zinc), la voie échoue."
+   "text": "Cu-BTC dans l'eau : cristaux isolés à 30 min, structure en flocons (aiguilles d'après le SI) recouvrant les fibres à 4 h, surface plus uniforme à 24 et 48 h, épaisseur d'environ 20 μm à 24 h (SI : 20 μm aussi à 48 h, donc plus de croissance). Côté Na-BTC, pas de croissance constante même à 48 h. Dans le méthanol, Cu-BTC à 4 h ne donne que quelques petits cristaux isolés, donc une cinétique nettement plus lente. ZIF-8 dans le méthanol : film d'environ 0,5 μm à 24 h, plus mince que Cu-BTC (20 μm), avec une couverture apparemment plus faible à 48 h, que les auteurs attribuent aux contraintes de séchage de la préparation MEB et non à la synthèse. ZIF-8 dans l'eau : le réservoir de nitrate de zinc devient opaque (hydroxyde de zinc), la voie échoue."
   },
   {
    "type": "tendance_observee",
@@ -1496,12 +1541,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "CuBTC-water-24h",
-   "text": "Hypothèse de chimiste : à la surface côté cuivre, les anions BTC3− qui diffusent à travers la membrane rencontrent les ions Cu2+ du réservoir et précipitent un carboxylate de cuivre insoluble, qui forme le film ; la couche déjà formée freine ensuite le passage de BTC (les ions de forte valence traversent difficilement un MOF), ce qui expliquerait le plafond d'épaisseur de 20 μm. Le pH 10 de la solution de Na-BTC et les contre-ions OH− de la membrane favorisent probablement un peu d'hydroxyde de cuivre ou une morphologie en aiguilles aux temps courts."
+   "text": "Hypothèse de chimiste : à la surface côté cuivre, les anions BTC3− qui diffusent à travers la membrane rencontrent les ions Cu2+ du réservoir et précipitent un carboxylate de cuivre ; la couche déjà formée freinerait ensuite le passage de BTC, ce qui expliquerait le plafond d'épaisseur de 20 μm (un film dense de 20 μm ne consomme que quelques µmol par cm², très peu devant les réservoirs : ce n'est pas un épuisement). La nature du solide n'est pas démontrée : dans l'eau et à température ambiante, la référence de Siddiqui et al. (2022, 10.1039/D1MA00866H) décrit plutôt un polymère de coordination non poreux Cu(BTC)·3H2O en aiguilles, dans lequel HKUST-1 se transforme ; un hydroxyde ou un nitrate basique de cuivre est aussi possible aux temps courts. Le pH 10 de la solution de Na-BTC et les contre-ions OH− de la membrane favorisent probablement un peu d'hydroxyde de cuivre ou une morphologie en aiguilles aux temps courts."
   },
   {
    "type": "mecanisme_analyse",
    "route": "ZIF8-MeOH-24h",
-   "text": "Hypothèse de chimiste : le méthylimidazole neutre ou peu dissocié dans le méthanol traverse la membrane et réagit avec Zn2+ côté zinc, probablement après déprotonation partielle ; la faible dissociation de Zn(NO3)2 et celle de HMIM dans le méthanol ralentissent la nucléation, d'où un film très mince (0,5 μm). Dans l'eau, Zn2+ réagit avec OH− pour donner l'hydroxyde de zinc, ce qui défavorise ZIF-8."
+   "text": "Hypothèse de chimiste : le méthylimidazole, neutre dans le méthanol, traverse la membrane par diffusion simple (il est huit fois plus concentré que le zinc) et réagit avec Zn2+ côté zinc, où il joue le rôle de base et de ligand. Avec une charge fixe de l'ordre de 50 mM, annoncée par les auteurs, la même que la concentration en zinc, un calcul de Donnan idéal donne dans la membrane environ 60 % de la concentration externe en cation (ZnNO3+), contre environ 4 % pour Cu2+ dans l'eau avec une charge fixe de 1 M : l'exclusion de Donnan est ici faible et la localisation côté zinc vient surtout de la diffusion de HMIM neutre. Calcul du critique scientifique, non vérifié dans l'article. La faible épaisseur (0,5 μm) vient probablement d'une nucléation à faible flux de HMIM, non d'un enrichissement de Donnan du ligand."
   },
   {
    "type": "securite_analyse",
@@ -1512,6 +1557,37 @@
    "type": "limite_reproductibilite",
    "route": "ZIF8-water-NH3-16h",
    "text": "L'essai de ZIF-8 dans l'eau n'est décrit qu'en deux phrases du SI et par la photographie de la figure S4 (reproduite d'une thèse) : ni concentrations, ni quantité d'ammoniaque, ni membrane précise, ni température. La photographie montre aussi une membrane cationique, dont rien n'est dit."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CuBTC-water-4h",
+   "text": "Hypothèse de chimiste : aux temps courts, les OH− relâchés par la membrane lors de l'échange avec BTC3− peuvent précipiter Cu2+ en hydroxyde (ou nitrate basique) en aiguilles à la surface ; une membrane sous forme hydroxyde (charge fixe de l'ordre de 1 M, environ 120 μm d'épaisseur d'après la littérature) contient de quoi former jusqu'à environ 1,7 μm de Cu(OH)2 dense par cm². La structure en aiguilles à 4 h pourrait donc être de l'hydroxyde de cuivre et non un Cu-BTC à morphologie modifiée, ce que l'EDS du SI ne tranche pas (la membrane domine le carbone et l'oxygène). Calcul d'ordre de grandeur du critique scientifique."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZIF8-water-NH3-16h",
+   "text": "Hypothèse de chimiste : l'ammoniaque ne déprotone presque pas HMIM (pKa N–H d'environ 14,5, moins de 0,2 % de HMIM déprotoné même dans l'ammoniaque 1 M) ; elle empêche seulement la protonation en imidazolium. En revanche OH− (contre-ion d'une membrane échangeuse d'anions) et NH3 neutre traversent la membrane et font précipiter Zn(OH)2 ou un nitrate basique de zinc côté zinc, tant que le rapport local HMIM/Zn reste faible : l'opacité du réservoir de zinc est alors la conséquence du montage et non une propriété du nitrate de zinc."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuBTC-water-24h",
+   "text": "Le texte principal nomme l'acide trimésique « benzene 1,2,3-tricarboxylic acid » : c'est le nom de l'isomère hémimellitique ; l'acide trimésique est l'acide benzène-1,3,5-tricarboxylique (Chui et al., Science 1999, 10.1126/science.283.5405.1148). Le nom commercial et le fournisseur désignent bien le bon composé, mais commander d'après le nom systématique écrit donnerait le mauvais isomère.",
+   "quote": "trimesic acid (benzene 1,2,3-tricarboxylic acid) as the organic ligand"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CuBTC-water-24h",
+   "text": "L'identité de la phase du film « Cu-BTC » n'est pas démontrée (ni DRX, ni autre preuve de phase dans l'article ; les auteurs jugent l'EDS trop influencé par la membrane). La référence que les auteurs invoquent pour la morphologie en aiguilles (Siddiqui et al., Mater. Adv. 2022, 10.1039/D1MA00866H) décrit, dans l'eau à température ambiante, le polymère de coordination non poreux Cu(BTC)·3H2O et la transformation de HKUST-1 en ce solide ; Cu(OH)2 ou un nitrate basique sont aussi possibles. Lire « solide cuivre–BTC de phase non établie ». Une DRX en incidence rasante ou sur fragments détachés (raies de HKUST-1 vers 5,8, 6,7 et 9,5° 2θ au Cu Kα) trancherait."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZIF8-water-NH3-16h",
+   "text": "Les auteurs justifient l'ammoniaque par une « dissociation » de HMIM, ce que le pKa N–H d'environ 14,5 ne permet pas, et concluent que le nitrate de zinc est un précurseur inadapté dans l'eau. Cette conclusion est contredite par la référence qu'ils citent (Kida et al., CrystEngComm 2013, 10.1039/C2CE26847G), qui obtient du ZIF-8 très cristallin dans l'eau à partir du nitrate de zinc avec un fort excès de HMIM ; l'échec observé tient plutôt au montage (OH− et NH3 traversent la membrane, rapport local HMIM/Zn faible côté zinc). Ne pas ajouter de base côté ligand avec une membrane échangeuse d'anions."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Trois points à régler avant de refaire l'expérience : la forme ionique de la membrane Fujifilm Type 1 à réception (hydroxyde selon les auteurs, chlorure possible d'après des études de transport sur ces membranes) n'est pas donnée par le fournisseur dans l'article ; la solution de Na-BTC à pH 10 suppose un excès de soude d'environ 0,03 % de la quantité stœchiométrique, trop faible pour être pesé : ajuster au pH-mètre ; enfin, pour ZIF-8 dans le méthanol, il manque le témoin décisif d'une membrane neutre de même épaisseur pour attribuer la localisation à l'exclusion de Donnan."
   }
  ],
  "method_sources": [
@@ -1537,7 +1613,7 @@
   },
   {
    "where": "CuBTC-water-4h-Cl et CuBTC-water-4h-Cl-pH6.8",
-   "issue": "Le SI décrit « two different synthesis approaches » : (1) membrane échangée au chlorure ; (2) Na-BTC à pH 6.8 par titration avec une membrane au chlorure. Les légendes (« NaCl exchanged », « NaOH titrated ») sont lues ainsi. Les étapes ont été recopiées avec une étape d'échange insérée après le trempage de la membrane, mais l'ordre réel, la concentration de NaCl et la durée ne sont pas donnés."
+   "issue": "Le SI décrit « two different synthesis approaches » : (1) membrane échangée au chlorure ; (2) Na-BTC à pH 6.8 par titration avec une membrane au chlorure. L'existence de l'échange est citée (SI S1, légende de la figure S1 : « exchanged with sodium chloride »), mais l'action « échange » placée à l'étape 4, après le trempage dans l'eau et avant l'assemblage de la cellule, est une position supposée : l'article ne donne ni le sel autrement que dans la légende, ni la concentration, ni la durée, ni l'ordre par rapport au trempage de 24 h."
   },
   {
    "where": "CuBTC-water-24h-Cl-pH6.8",
@@ -1549,19 +1625,31 @@
   },
   {
    "where": "ZIF8-water-NH3-16h",
-   "issue": "Le SI parle d'essais de synthèse dans l'eau avec ammoniaque, et la figure S4 est une photographie reproduite d'une thèse après 16 h, avec membrane anionique (gauche) et cationique (droite). La voie ne décrit que le montage de gauche, sans concentrations ni température ; elle est marquée succeeded:false car le réservoir devient opaque (hydroxyde de zinc)."
+   "issue": "Le SI parle d'essais de synthèse dans l'eau avec ammoniaque, et la figure S4 est une photographie reproduite d'une thèse après 16 h, avec membrane anionique (gauche) et cationique (droite). La voie est indépendante (l'article ne dit pas que l'essai a suivi les concentrations ni le trempage au méthanol de la voie ZIF-8 dans le méthanol) et ne décrit que le montage de gauche, sans concentrations ni température ; elle est marquée succeeded:false car le réservoir devient opaque (hydroxyde de zinc)."
   },
   {
    "where": "figures lues",
    "issue": "Les figures 3 et 4 du dossier corpus/fig ont été ouvertes ; ce sont des images MEB qualitatives sans valeur chiffrée : aucune valeur n'a été lue sur figure. Les figures du SI (S1, S2, S5 à S9) ne sont pas dans corpus/fig."
   },
   {
-   "where": "ZIF8-water-NH3-16h, variation 'additive'",
-   "issue": "L'avertissement du contrôle sur le nom « additive » est voulu : l'ammoniaque est un ajout absent du parent (parent_value « none »), conformément à la règle du RUNBOOK sur les variations qui ajoutent un réactif."
-  },
-  {
    "where": "ZIF8-MeOH-24h, épaisseur",
    "issue": "Épaisseur de 0,5 μm estimée « roughly » sur une coupe transversale coupée à la lame ; le SI confirme 0,5 micromètre. Pour Cu-BTC, 20 μm est une estimation sur fragments détachés (SI)."
+  },
+  {
+   "where": "ZIF8-water-NH3-16h, durée",
+   "issue": "Les 16 h sont l'âge de la cellule photographiée (légende de la figure S4), non une durée de réaction imposée par les auteurs : elles sont consignées comme résultat (cell_age_on_photograph), pas comme paramètre."
+  },
+  {
+   "where": "ZIF8-water-NH3-16h, pureté et fournisseur",
+   "issue": "Pureté et fournisseur du nitrate de zinc et de HMIM ne sont pas repris de la liste du texte principal (qui vise la préparation des MOFs de l'article) : la figure S4 est reproduite d'une thèse et le SI ne dit pas quels produits ont servi à cet essai."
+  },
+  {
+   "where": "CuBTC-water-4h-Cl, rôle de NaCl",
+   "issue": "NaCl sert à échanger les contre-ions de la membrane (rôle consigné ion_exchange_agent, hors vocabulaire du RUNBOOK) ; le sel n'est nommé que dans la légende de la figure S1 et sa fourniture (AkzoNobel) vient de la liste générale des produits."
+  },
+  {
+   "where": "CuBTC-water-24h, réactif acide trimésique",
+   "issue": "Le texte principal écrit « trimesic acid (benzene 1,2,3-tricarboxylic acid) » ; le nom de réactif est gardé tel que l'article l'écrit, l'acide trimésique étant le dérivé 1,3,5 (voir l'annotation limite_reproductibilite)."
   }
  ]
 }
