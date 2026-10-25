@@ -1,0 +1,135 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC5979620</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC5979620 — Low-Temperature Combustion Synthesis of a Spinel NiCo2O4 Hole Transport Layer for Perovskite Photovoltaics.</h1>
+<h2>Voie : NiCo2O4-250</h2>
+<pre class="mermaid">flowchart LR
+  R18314([&quot;nickel(II) nitrate hexahydrate&lt;br/&gt;0.5 mmol&quot;]):::reactif
+  R18314 --&gt;|&quot;precursor&quot;| S21684
+  R18315([&quot;cobalt(II) nitrate hexahydrate&lt;br/&gt;1 mmol&quot;]):::reactif
+  R18315 --&gt;|&quot;precursor&quot;| S21684
+  R18316([&quot;tartaric acid&lt;br/&gt;ratio of the total metal nitr…&quot;]):::reactif
+  R18316 --&gt;|&quot;fuel&quot;| S21684
+  R18317([&quot;2-methoxyethanol&lt;br/&gt;15 mL&quot;]):::reactif
+  R18317 --&gt;|&quot;solvent&quot;| S21684
+  R18318([&quot;nitric acid&lt;br/&gt;150 uL&quot;]):::reactif
+  R18318 --&gt;|&quot;acid&quot;| S21684
+  S21684[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S21684 --&gt; S21685
+  S21685[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S21685 --&gt; S21686
+  S21686[&quot;&lt;b&gt;3. stir&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;temperature : 60 °C&quot;]:::etape
+  S21686 --&gt; S21687
+  S21687[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&quot;]:::etape
+  S21687 --&gt; S21688
+  S21688[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S21688 --&gt; S21689
+  S21689[&quot;&lt;b&gt;6. calcine&lt;/b&gt;&lt;br/&gt;temperature : 250 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : ambient atmosphere&quot;]:::etape
+  S21689 --&gt; S21690
+  S21690[&quot;&lt;b&gt;7. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S21690 --&gt; M
+  M{{&quot;nickel cobaltite nanoparticles&lt;br/&gt;NiCo2O4&quot;}}:::materiau
+  O85551[&quot;phase : cubic spinel NiCo2O4, no addi…&quot;]:::resultat
+  M -.-&gt; O85551
+  O85552[&quot;grain_size_XRD : 3.5 nm&quot;]:::resultat
+  M -.-&gt; O85552
+  O85553[&quot;particle_diameter_TEM : 4 nm&quot;]:::resultat
+  M -.-&gt; O85553
+  O85554[&quot;DSC_exothermic_peak_temperature : 260 °C&quot;]:::resultat
+  M -.-&gt; O85554
+  O85555[&quot;TGA_abrupt_mass_loss_temperature : 250 °C&quot;]:::resultat
+  M -.-&gt; O85555
+  O85556[&quot;TGA_residual_mass_at_400C : 20 %&quot;]:::resultat
+  M -.-&gt; O85556
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13761{{&quot;NiCo2O4-250&quot;}}:::materiau
+  B13762[&quot;NiCo2O4-200&quot;]:::etape
+  B13761 --&gt;|&quot;temperature = 200 °C&quot;| B13762
+  B13763[&quot;NiCo2O4-300&quot;]:::etape
+  B13761 --&gt;|&quot;temperature = 300 °C&quot;| B13763
+  B13764[&quot;Film_15nm&quot;]:::etape
+  B13761 --&gt;|&quot;film_thickness = 15 nm&quot;| B13764
+  B13765[&quot;Film_20nm&quot;]:::etape
+  B13761 --&gt;|&quot;film_thickness = 20 nm&quot;| B13765
+  B13766[&quot;Film_30nm&quot;]:::etape
+  B13761 --&gt;|&quot;film_thickness = 30 nm&quot;| B13766
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PVSC_15nm</h2>
+<pre class="mermaid">flowchart LR
+  R18319([&quot;glass/ITO substrate (prepatterned)&lt;br/&gt;sheet resistance 4Ω sq−1&quot;]):::reactif
+  R18319 --&gt;|&quot;substrate&quot;| S21691
+  R18320([&quot;NiCo2O4 HTL film, 15 nm (route Film_15nm)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18320 --&gt;|&quot;intermediate&quot;| S21691
+  R18321([&quot;lead acetate trihydrate&lt;br/&gt;Pb(CH3CO2)2.3H2O:methylamoniu…&quot;]):::reactif
+  R18321 --&gt;|&quot;precursor&quot;| S21691
+  R18322([&quot;methylammonium iodide&lt;br/&gt;Pb(CH3CO2)2.3H2O:methylamoniu…&quot;]):::reactif
+  R18322 --&gt;|&quot;precursor&quot;| S21691
+  R18323([&quot;methylammonium bromide&lt;br/&gt;1.5% mole&quot;]):::reactif
+  R18323 --&gt;|&quot;additive&quot;| S21691
+  R18324([&quot;dimethylformamide&lt;br/&gt;36 wt% solution&quot;]):::reactif
+  R18324 --&gt;|&quot;solvent&quot;| S21691
+  R18325([&quot;PC[70]BM&lt;br/&gt;20 mg mL−1 in chlorobenzene&quot;]):::reactif
+  R18325 --&gt;|&quot;active_material&quot;| S21691
+  R18326([&quot;chlorobenzene&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18326 --&gt;|&quot;solvent&quot;| S21691
+  R18327([&quot;aluminium&lt;br/&gt;100 nm layer&quot;]):::reactif
+  R18327 --&gt;|&quot;electrode&quot;| S21691
+  R18328([&quot;Ossila E131 encapsulation epoxy resin&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18328 --&gt;|&quot;encapsulant&quot;| S21691
+  R18329([&quot;glass coverslip&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18329 --&gt;|&quot;substrate&quot;| S21691
+  R18330([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18330 --&gt;|&quot;wash&quot;| S21691
+  R18331([&quot;isopropanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18331 --&gt;|&quot;wash&quot;| S21691
+  S21691[&quot;&lt;b&gt;1. sonicate&lt;/b&gt;&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S21691 --&gt; S21692
+  S21692[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S21692 --&gt; S21693
+  S21693[&quot;&lt;b&gt;3. deposit&lt;/b&gt;&lt;br/&gt;film_thickness : 15 nm&quot;]:::etape
+  S21693 --&gt; S21694
+  S21694[&quot;&lt;b&gt;4. mix&lt;/b&gt;&lt;br/&gt;time_before_spin_coating : 30 min&quot;]:::etape
+  S21694 --&gt; S21695
+  S21695[&quot;&lt;b&gt;5. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.1 µm&quot;]:::etape
+  S21695 --&gt; S21696
+  S21696[&quot;&lt;b&gt;6. deposit&lt;/b&gt;&lt;br/&gt;spin_speed : 4000 rpm&lt;br/&gt;duration : 60 s&quot;]:::etape
+  S21696 --&gt; S21697
+  S21697[&quot;&lt;b&gt;7. anneal&lt;/b&gt;&lt;br/&gt;temperature : 85 °C&lt;br/&gt;duration : 5 min&lt;br/&gt;film_thickness : 230 nm&quot;]:::etape
+  S21697 --&gt; S21698
+  S21698[&quot;&lt;b&gt;8. deposit&lt;/b&gt;&lt;br/&gt;spin_speed : 1000 rpm&lt;br/&gt;duration : 30 s&quot;]:::etape
+  S21698 --&gt; S21699
+  S21699[&quot;&lt;b&gt;9. deposit&lt;/b&gt;&lt;br/&gt;film_thickness : 100 nm&quot;]:::etape
+  S21699 --&gt; S21700
+  S21700[&quot;&lt;b&gt;10. encapsulate&lt;/b&gt;&lt;br/&gt;wavelength : 365 nm&quot;]:::etape
+  S21700 --&gt; M
+  M{{&quot;inverted perovskite solar cell ITO/NiCo2O4 (15 nm…&lt;br/&gt;&quot;}}:::materiau
+  O85569[&quot;Jsc_forward_scan : 19.94 mA cm−2&quot;]:::resultat
+  M -.-&gt; O85569
+  O85570[&quot;Voc_forward_scan : 0.97 V&quot;]:::resultat
+  M -.-&gt; O85570
+  O85571[&quot;FF_forward_scan : 79.9 %&quot;]:::resultat
+  M -.-&gt; O85571
+  O85572[&quot;PCE_forward_scan : 15.5 %&quot;]:::resultat
+  M -.-&gt; O85572
+  O85573[&quot;Jsc_reverse_scan : 19.6 mA cm−2&quot;]:::resultat
+  M -.-&gt; O85573
+  O85574[&quot;Voc_reverse_scan : 0.99 V&quot;]:::resultat
+  M -.-&gt; O85574
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13767{{&quot;PVSC_15nm&quot;}}:::materiau
+  B13768[&quot;PVSC_20nm&quot;]:::etape
+  B13767 --&gt;|&quot;film_thickness = 20 nm&lt;br/&gt;NiCo2O4 HTL film, 15 nm … = replaced by NiCo2O4 HTL …&quot;| B13768
+  B13769[&quot;PVSC_30nm&quot;]:::etape
+  B13767 --&gt;|&quot;film_thickness = 30 nm&lt;br/&gt;NiCo2O4 HTL film, 15 nm … = replaced by NiCo2O4 HTL …&quot;| B13769
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

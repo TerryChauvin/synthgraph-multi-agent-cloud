@@ -580,6 +580,20 @@
      "instrument": "Shimadzu UV-2700 UV–vis spectrophotometer",
      "conditions": null,
      "quote": "b) Transmittance spectra of bare glass/ITO and NiCo2O4 NPs films deposited on glass/ITO substrate with thickness of 15, 20, and 30 nm."
+    },
+    {
+     "technique": "AFM",
+     "result": "surface topography of the NiCo2O4 film on ITO and on quartz (Figure 3)",
+     "instrument": "Nanosurf easy scan 2 controller",
+     "conditions": "tapping mode",
+     "quote": "AFM images were obtained using a Nanosurf easy scan 2 controller under the tapping mode."
+    },
+    {
+     "technique": "profilometry (film thickness)",
+     "result": "thickness of the films measured",
+     "instrument": "Veeco Dektak 150 profilometer",
+     "conditions": null,
+     "quote": "The thickness of the films was measured with a Veeco Dektak 150 profilometer."
     }
    ],
    "outcomes": [
@@ -637,6 +651,13 @@
      "instrument": "Shimadzu UV-2700 UV–vis spectrophotometer",
      "conditions": null,
      "quote": "b) Transmittance spectra of bare glass/ITO and NiCo2O4 NPs films deposited on glass/ITO substrate with thickness of 15, 20, and 30 nm."
+    },
+    {
+     "technique": "profilometry (film thickness)",
+     "result": "thickness of the films measured",
+     "instrument": "Veeco Dektak 150 profilometer",
+     "conditions": null,
+     "quote": "The thickness of the films was measured with a Veeco Dektak 150 profilometer."
     }
    ],
    "outcomes": [
@@ -677,6 +698,13 @@
      "instrument": "Shimadzu UV-2700 UV–vis spectrophotometer",
      "conditions": null,
      "quote": "b) Transmittance spectra of bare glass/ITO and NiCo2O4 NPs films deposited on glass/ITO substrate with thickness of 15, 20, and 30 nm."
+    },
+    {
+     "technique": "profilometry (film thickness)",
+     "result": "thickness of the films measured",
+     "instrument": "Veeco Dektak 150 profilometer",
+     "conditions": null,
+     "quote": "The thickness of the films was measured with a Veeco Dektak 150 profilometer."
     }
    ],
    "outcomes": [
@@ -818,9 +846,10 @@
      "quote": "Encapsulation was applied directly after evaporation in the glove box using a glass coverslip and an Ossila E131 encapsulation epoxy resin activated by 365 nm UV irradiation.",
      "not_stated": [
       "amount",
-      "purity",
-      "supplier"
-     ]
+      "purity"
+     ],
+     "supplier": "Ossila",
+     "supplier_quote": "Encapsulation was applied directly after evaporation in the glove box using a glass coverslip and an Ossila E131 encapsulation epoxy resin activated by 365 nm UV irradiation."
     },
     {
      "name": "glass coverslip",
@@ -891,7 +920,7 @@
     {
      "order": 3,
      "action": "deposit",
-     "description": "Deposit the NiCo2O4 HTL (blade coating of the combustion precursor, route NiCo2O4-250) on the ITO.",
+     "description": "Deposit the NiCo2O4 HTL (15 nm thick) on the ITO; the deposition mode and the heating of the HTL in the cells are not stated for the devices.",
      "quote": "Complete p‐i‐n architectures of PVSCs were fabricated employing NiCo2O4 HTLs with three different thicknesses, 30, 20, and 15 nm.",
      "parameters": [
       {
@@ -903,6 +932,7 @@
      ],
      "equipment": [],
      "not_stated": [
+      "deposition_method",
       "heating_temperature_of_HTL"
      ]
     },
@@ -1089,8 +1119,8 @@
      "technique": "Mott–Schottky",
      "result": "lower slope for the thicker film; flat-band potential and Voc higher for thinner HTL",
      "instrument": "Metrohm Autolab PGSTAT 302N",
-     "conditions": null,
-     "quote": "The M‐S slope for the thicker film is lower implying that this layer cannot extract fast enough the charge carriers, inducing their accumulation at the interface."
+     "conditions": "potential swept from higher to lower voltage (devices)",
+     "quote": "Figure 6b shows the M‐S plots of the devices when sweeping from higher to a lower voltage. The crossing of the curves at 1/C 2 = 0 is attributed to the flat band potential of the device, while the lower slope of the linear region is attributed to the charge accumulation at the interfaces, which impedes an efficient extraction of the charge carriers. The M‐S slope for the thicker film is lower implying that this layer cannot extract fast enough the charge carriers, inducing their accumulation at the interface."
     },
     {
      "technique": "photoluminescence",
@@ -1105,6 +1135,13 @@
      "instrument": "Newport System, Model 70356_70316NS",
      "conditions": null,
      "quote": "EQE measurements were performed by Newport System, Model 70356_70316NS."
+    },
+    {
+     "technique": "AFM",
+     "result": "roughness and grain size of the deposited perovskite film (Figures S2 and S3)",
+     "instrument": "Nanosurf easy scan 2 controller",
+     "conditions": "tapping mode",
+     "quote": "AFM images were obtained using a Nanosurf easy scan 2 controller under the tapping mode."
     }
    ],
    "outcomes": [
@@ -1175,14 +1212,33 @@
     },
     {
      "property": "perovskite_film_roughness",
-     "quote": "The deposited perovskite film exhibits a low roughness of 5.4 nm",
+     "quote": "On top of each NiCo2O4 HTL, a 230 nm thick perovskite film was solution processed as described in the Experimental Section. The deposited perovskite film exhibits a low roughness of 5.4 nm",
      "value_num": 5.4,
      "unit": "nm"
+    },
+    {
+     "property": "perovskite_grain_size_mean",
+     "quote": "a mean grain size of 0.22 µm with a standard deviation of 0.051 µm",
+     "value_num": 0.22,
+     "unit": "µm"
+    },
+    {
+     "property": "perovskite_grain_size_sd",
+     "quote": "a mean grain size of 0.22 µm with a standard deviation of 0.051 µm",
+     "value_num": 0.051,
+     "unit": "µm"
+    },
+    {
+     "property": "active_area",
+     "quote": "giving an active area of 0.9 mm2",
+     "value_num": 0.9,
+     "unit": "mm2"
     }
    ],
    "missing_fields": [
     "HTL heating temperature in the device",
-    "atmosphere of spin coating"
+    "atmosphere of spin coating",
+    "HTL deposition mode in the device"
    ]
   },
   {
@@ -1400,7 +1456,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Température : à 200 °C aucun pic de diffraction (structure amorphe) ; à 250 °C spinelle pur de grain ≈3,5 nm (XRD) ; à 300 °C spinelle de grain ≈5 nm. Épaisseur de HTL en cellule (balayage direct) : 15 nm donne PCE 15,5 %, FF 79,9 %, Voc 0,97 V ; 20 nm donne 12,6 %, 73,2 %, 0,93 V ; 30 nm donne 8,7 %, 61,2 %, 0,77 V. L'hystérésis diminue avec l'épaisseur."
+   "text": "Température : à 200 °C aucun pic de diffraction (structure amorphe) ; à 250 °C spinelle pur de grain ≈3,5 nm (XRD) ; à 300 °C spinelle de grain ≈5 nm. Épaisseur de HTL en cellule (balayage direct) : 15 nm donne PCE 15,5 %, FF 79,9 %, Voc 0,97 V ; 20 nm donne 12,6 %, 73,2 %, 0,93 V ; 30 nm donne 8,7 %, 61,2 %, 0,77 V. L'hystérésis diminue quand l'épaisseur de la HTL diminue (30 → 15 nm), selon les auteurs ; l'écart de PCE entre balayage direct et retour de la Table 1 n'est pas monotone (0,9 point à 30 nm, 1,5 à 20 nm, 0,1 à 15 nm), ce que l'affirmation des auteurs ne dit pas."
   },
   {
    "type": "tendance_observee",
@@ -1417,7 +1473,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pour refaire le matériau il manque : la quantité d'acide tartrique (le texte donne un rapport « 1 » dans les Méthodes et « 1:2 » dans les Résultats), la pureté des réactifs, la vitesse d'agitation, les paramètres du doctor blade (vitesse, écartement, volume déposé) et surtout la façon d'obtenir les épaisseurs de 15, 20 et 30 nm. La vitesse de chauffe n'est pas donnée (four préchauffé). Pour les cellules, la température de chauffage de la HTL, l'atmosphère des dépôts de pérovskite et de PC[70]BM, la durée de l'exposition UV d'encapsulation et la pression d'évaporation ne sont pas citées. Les valeurs de l'EQE et des boîtes à moustaches (Fig. S4 et S5) ne sont données qu'en figures d'annexe, non extraites."
+   "text": "Pour refaire le matériau il manque : la quantité d'acide tartrique (seul un rapport « 1 » sans unité est donné dans les Méthodes), la pureté des réactifs, la vitesse d'agitation, les paramètres du doctor blade (vitesse, écartement, volume déposé) et surtout la façon d'obtenir les épaisseurs de 15, 20 et 30 nm. La vitesse de chauffe n'est pas donnée (four préchauffé). Pour les cellules, la température de chauffage de la HTL, l'atmosphère des dépôts de pérovskite et de PC[70]BM, la durée de l'exposition UV d'encapsulation et la pression d'évaporation ne sont pas citées. Les valeurs de l'EQE et des boîtes à moustaches (Fig. S4 et S5) ne sont données qu'en figures d'annexe, non extraites."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1428,12 +1484,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "NiCo2O4-250",
-   "text": "Hypothèse de chimiste : les nitrates jouent le rôle d'oxydant interne et l'acide tartrique celui de combustible chélatant ; lors du chauffage, le gel de complexes se décompose de façon exothermique (pic DSC vers 260 °C), libérant CO2, N2 et vapeur d'eau, et la chaleur localement dégagée suffirait à cristalliser le spinelle à une température bien inférieure à celle d'un recuit sol–gel. À 200 °C, la combustion n'aurait probablement pas démarré (matériau amorphe). Le degré d'oxydation de Co(II) en Co(III) dans NiCo2O4 vient probablement de l'oxydation à l'air et par les nitrates en cours de combustion."
+   "text": "Hypothèse de chimiste : les nitrates jouent le rôle d'oxydant interne et l'acide tartrique celui de combustible chélatant ; lors du chauffage, le gel de complexes se décompose de façon exothermique (pic DSC vers 260 °C), libérant CO2, N2 et vapeur d'eau, et la chaleur localement dégagée suffirait à cristalliser le spinelle à une température bien inférieure à celle d'un recuit sol–gel. À 200 °C, la combustion n'aurait probablement pas démarré (matériau amorphe). Le degré d'oxydation de Co(II) en Co(III) dans NiCo2O4 vient probablement de l'oxydation à l'air et par les nitrates en cours de combustion. Hypothèse du critique scientifique (non écrite par les auteurs) : l'acide tartrique chélate Ni2+ et Co2+ (Co3+ libre n'est pas stable en solution et rien n'indique une oxydation avant la combustion) et forme en séchant un gel amorphe de nitrates et de tartrates ; vers 250 °C la réaction redox interne entre nitrates et tartrate, avec l'HNO3 résiduel, s'allume et la chaleur dégagée cristallise le spinelle en grains de 3 à 5 nm. Selon les valences de Jain et al. (1981, 10.1016/0010-2180(81)90111-5), un rapport nitrates/acide de 1 donne un mélange stœchiométrique (φ = 1) et un rapport de 1:2 un mélange riche en combustible (φ = 2). Équation équilibrée proposée par le critique pour φ = 1 : Ni(NO3)2 + 2 Co(NO3)2 + 3 C4H6O6 + ½ O2 → NiCo2O4 + 12 CO2 + 9 H2O + 3 N2 (eau d'hydratation en plus) ; elle ne remplace pas l'équation de la Fig. 1a. Référence générale : Varma et al., Chem. Rev. 2016, 10.1021/acs.chemrev.6b00279."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les nitrates mélangés à un combustible organique brûlent de façon exothermique avec dégagement de gaz (oxydes d'azote possibles) : chauffer de petites quantités, sous hotte, sans confinement. L'acide nitrique à 69 % est corrosif et oxydant ; le 2-méthoxyéthanol est toxique pour la reproduction ; les sels de nickel et de cobalt sont sensibilisants et cancérogènes suspectés ; l'acétate de plomb de la pérovskite est toxique et le DMF et le chlorobenzène sont des solvants nocifs. Les nanoparticules (≈4 nm) sont à ne pas inhaler."
+   "text": "Les nitrates mélangés à un combustible organique brûlent de façon exothermique avec dégagement de gaz (oxydes d'azote, CO2) : chauffer de petites quantités, sous hotte, sans confinement. L'acide nitrique à 69 % est corrosif et oxydant ; l'ajouter lentement, comme le disent les auteurs, dans le 2-méthoxyéthanol, solvant reprotoxique (H360FD, PubChem), qui peut former des peroxydes et est incompatible avec les oxydants forts : utiliser un solvant exempt de peroxydes, sous hotte, avant de chauffer à 60 °C. Les sels de nickel et de cobalt sont sensibilisants et cancérogènes suspectés ; l'acétate de plomb de la pérovskite est reprotoxique, le DMF est reprotoxique et le chlorobenzène nocif. L'évaporation d'aluminium se fait sous vide et la résine époxy se durcit sous UV de 365 nm (protéger les yeux). Les nanoparticules (≈4 nm) sont à ne pas inhaler. Point relevé par le critique scientifique, non écrit dans l'article."
   },
   {
    "type": "limite_reproductibilite",
@@ -1444,6 +1500,31 @@
    "type": "limite_reproductibilite",
    "route": "Film_15nm",
    "text": "Transmittance à 600 nm lue sur la Fig. 4b : précision de lecture d'environ ±2 points de pourcentage ; les valeurs de 15, 20 et 30 nm sont très proches."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2O4-250",
+   "text": "Incohérence de l'article : la quantité d'acide tartrique est donnée comme un rapport « 1 » (Méthodes) alors que les Résultats citent « 1:2 » ; selon le critique scientifique, la lecture 1:2 nitrates/acide doublerait le combustible (rapport combustible/oxydant de 1 à 2 selon Jain et al., 1981, 10.1016/0010-2180(81)90111-5), ce qui change la flamme, le dégagement gazeux et le degré d'oxydation du cobalt : essayer les deux lectures avant de conclure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2O4-250",
+   "text": "Incohérence de l'article : les Résultats donnent « 0.24 × 10−3 m » de HNO3 alors que 150 µL de HNO3 à 69 % dans 15 mL correspondent à environ 0,15 mol/L (≈ 2,3 mmol, masse volumique de manuel ≈ 1,41 g/mL), soit environ 640 fois plus ; la valeur des Résultats ressemble à une quantité (≈ 2,4 × 10−3 mol) écrite comme une concentration. Les Méthodes (150 µL) sont plus plausibles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2O4-250",
+   "text": "Coquille probable des auteurs en HRTEM : la frange de ≈ 2,4 Å est attribuée au plan (331), dont la distance est d ≈ 1,86 Å avec a = 8,11 Å ; 2,4 Å correspond à (311) (d ≈ 2,445 Å), raie marquée « (311/222) » sur la Fig. 2a. La frange de 2,8 Å (220) est correcte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NiCo2O4-250",
+   "text": "Preuve de phase peu discriminante : avec des raies de DRX et des anneaux SAED très larges (grains de 3 à 5 nm), NiCo2O4 (a = 8,11 Å) ne se distingue pas de Co3O4 (a = 8,08 Å) ni d'un spinelle Co3−xNixO4 avec une phase de nickel amorphe ; l'EDS ne donne qu'un rapport Ni:Co global. Il faudrait une cartographie EDS par particule, de l'XPS ou du Raman. L'ATG est faite sur un précurseur encore humide (55 % de perte avant 245 °C)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PVSC_15nm",
+   "text": "Le témoin de photoluminescence (« reference structure (without NiCo2O4 HTL) ») n'est pas décrit (verre ou ITO nu ?) et le substrat change aussi la cristallisation de la pérovskite : l'extinction de plus de 90 % de la PL ne sépare pas l'extraction des trous de la recombinaison non radiative. De même, la température et la durée de chauffage de la HTL dans les cellules ne sont pas écrites (250 °C n'est dit que pour les films)."
   }
  ],
  "method_sources": [
@@ -1469,11 +1550,11 @@
  "doubts": [
   {
    "where": "NiCo2O4-250, réactif acide tartrique",
-   "issue": "Les Résultats disent « metal precursors (Ni and Co nitrates) and tartaric acid (at a 1:2 molar ratio, respectively) » alors que les Méthodes disent « The ratio of the total metal nitrates and tartaric acid was 1 ». La quantité d'acide tartrique n'est donc pas chiffrée et les deux lectures (1:1 ou 1:2 nitrates/acide) sont possibles. Lecture littérale des Méthodes conservée dans amount_text."
+   "issue": "Les Résultats écrivent « metal precursors (Ni and Co nitrates) and tartaric acid (at a 1:2 molar ratio, respectively) » ; les Méthodes écrivent « The ratio of the total metal nitrates and tartaric acid was 1 » (unité non précisée). « respectively » est lu comme portant sur Ni et Co : 1:2 est alors le rapport Ni:Co, cohérent avec 0,5 mmol Ni et 1 mmol Co des Méthodes, et les Résultats ne disent rien de l'acide tartrique. La quantité d'acide tartrique n'est chiffrée nulle part en mmol ; la phrase des Méthodes est conservée en amount_text. La lecture « 1:2 = nitrates/acide tartrique » (qui doublerait la quantité d'acide) n'est pas exclue par la syntaxe de la phrase et reste à trancher par les auteurs."
   },
   {
    "where": "NiCo2O4-250, réactif acide nitrique",
-   "issue": "Les Résultats annoncent « a small amount of 0.24 × 10−3 m HNO3 » alors que les Méthodes donnent 150 uL de HNO3 à 69 wt% pour 15 mL de solution, soit de l'ordre de 0,15 mol/L (calcul de l'extracteur, non écrit par les auteurs). Valeur des Méthodes (150 uL) retenue ; la concentration des Résultats n'est pas extraite."
+   "issue": "Les Résultats annoncent « a small amount of 0.24 × 10−3 m HNO3 » alors que les Méthodes donnent 150 uL de HNO3 à 69 wt% pour 15 mL de solution, soit de l'ordre de 0,15 mol/L (calcul de l'extracteur, non écrit par les auteurs). Valeur des Méthodes (150 uL) retenue ; la concentration des Résultats n'est pas extraite. L'ordre d'ajout diffère aussi : les Résultats dissolvent les nitrates et l'acide tartrique dans le 2-méthoxyéthanol « containing » le HNO3, les Méthodes ajoutent le HNO3 « slowly into the mixture » après les sels. L'ordre des Méthodes est retenu."
   },
   {
    "where": "NiCo2O4-250, réactif nitrate de cobalt",
@@ -1493,7 +1574,7 @@
   },
   {
    "where": "PVSC_15nm, étape 3 (HTL)",
-   "issue": "L'article ne dit pas à quelle température la HTL des cellules est chauffée ; la HTL est rattachée au film Film_15nm (chauffé à 250 °C dans les films de transmittance) sans que l'article le dise pour les dispositifs. PVSC_15nm est pris comme voie de base du dispositif car c'est la structure optimisée ; l'article ne désigne pas de référence."
+   "issue": "La citation de l'étape 3 ne donne que les épaisseurs des HTL (30, 20 et 15 nm). L'article ne dit ni le mode de dépôt de la HTL dans les cellules ni la température de chauffage ; le blade coating et les 250 °C ne sont écrits que pour les films (Film_15nm, transmittance). La HTL est rattachée au film Film_15nm sans que l'article le dise pour les dispositifs, donc mode de dépôt et température déclarés not_stated. PVSC_15nm est pris comme voie de base du dispositif car c'est la structure optimisée ; l'article ne désigne pas de référence."
   },
   {
    "where": "PVSC_15nm étape 2",
@@ -1504,8 +1585,8 @@
    "issue": "Le texte écrit « for the reversed sweep the V oc was increased from 0.90 to 0.99 V and the FF from 53.0% to 79.9% » mais le FF de 79,9 % est celui du balayage direct (Table 1) ; le balayage retour donne 79,2 %. De même « J sc ... for a forward sweep from 18.47 to 19.94 mA cm−2 » compare le 20 nm à 15 nm alors que le 30 nm donne 18.45 en balayage direct. Les valeurs de la Table 1 sont extraites."
   },
   {
-   "where": "PVSC_15nm, rugosité du film de pérovskite (5,4 nm)",
-   "issue": "La rugosité du film de pérovskite (Fig. S2) est donnée pour « the deposited perovskite film » sans préciser sur quelle HTL ; rattachée à PVSC_15nm par défaut. De même pour la moyenne de 14,5 % (16 devices, Fig. S5) rattachée au dispositif de 15 nm (meilleure cellule à 15,5 %)."
+   "where": "PVSC_15nm, rugosité et taille de grain du film de pérovskite (5,4 nm ; 0,22 µm)",
+   "issue": "Le texte écrit « On top of each NiCo2O4 HTL, a 230 nm thick perovskite film was solution processed » puis « The deposited perovskite film exhibits a low roughness of 5.4 nm (Figure S2) and a mean grain size of 0.22 µm ... (Figure S3) » sans dire sur quelle HTL le film a été mesuré. Les deux valeurs ne sont donc pas propres au dispositif de 15 nm ; elles sont portées par PVSC_15nm, voie de base du dispositif dont l'étape de dépôt de la pérovskite est commune aux trois épaisseurs, sans attribution à une épaisseur de HTL. La moyenne de 14,5 % (16 devices, Fig. S5) est rattachée au dispositif de 15 nm parce que la meilleure cellule citée (15,5 %) est celle de la Table 1 à 15 nm."
   },
   {
    "where": "Résultats vs Méthodes (DSC / DTA)",
@@ -1518,6 +1599,10 @@
   {
    "where": "Références sans voie",
    "issue": "Les cellules à HTL de CuO (« our previously reported solvothermal synthesized CuO‐HTL », PCE moyen ≈12,5 %, meilleure 15,3 %) et la structure de référence sans HTL (PL) sont des témoins sans protocole décrit : ils sont dans l'inventaire sans voie."
+  },
+  {
+   "where": "Résultats vs Méthodes (épaisseur de la pérovskite)",
+   "issue": "Les Méthodes donnent « a film with a thickness of ≈230 nm » (et les Résultats « a 230 nm thick perovskite film »), la discussion de l'EQE parle de « the relatively thin perovskite layer (≈250 nm) ». Valeur 230 nm retenue pour l'étape 7 ; la valeur de 250 nm n'est pas extraite."
   }
  ]
 }
