@@ -109,6 +109,11 @@
        "value_num": 10,
        "unit": "min",
        "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min."
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1)",
+       "quote": "With the reactant ratio fixed at n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1), reaction temperature at 130 °C, and reaction time for 5 h"
       }
      ],
      "equipment": [],
@@ -192,7 +197,7 @@
     {
      "order": 6,
      "action": "add",
-     "description": "Add four volumes of acetonitrile to the obtained solution to precipitate the raw material.",
+     "description": "Add four volumes of acetonitrile to the obtained solution.",
      "quote": "four volumes of acetonitrile were added to the obtained solution",
      "parameters": [
       {
@@ -257,10 +262,10 @@
     },
     {
      "technique": "FT-IR",
-     "result": "carbonyl band at 1663 cm−1 (absent from b-SiQDs); N–H, O–H, –CH=N–, CH3, Si–O bands",
+     "result": "surface groups quite similar to b-SiQDs and g-SiQDs: N–H, O–H at 3277 cm−1 and 3367 cm−1; –CH=N– at 1595 cm−1; CH3 at 2935 cm−1 and 1462 cm−1; Si–O at 1310 cm−1 and Si–O–Si at 1130–1010 cm−1; carbonyl band at 1663 cm−1 (see outcome FTIR_carbonyl_band)",
      "instrument": "Nicolet 6700 spectrometer (Thermo Fisher Scientific)",
      "conditions": null,
-     "quote": "FT-IR spectra were obtained on a Nicolet 6700 spectrometer (Thermo Fisher Scientific, Waltham, MA, USA)."
+     "quote": "including the stretching vibration of N–H [], O–H [] at 3277 cm−1 and 3367 cm−1, and the stretching vibrations of –CH=N– [] at 1595 cm−1. Stretching and bending vibrations due to methyl groups [] were represented by the bands at 2935 cm−1 and 1462 cm−1, the asymmetrical deformation vibration of Si–O and the stretching vibrations of Si–O–Si at 1310 cm−1 and 1130–1010 cm−1 []"
     },
     {
      "technique": "zeta potential",
@@ -300,7 +305,7 @@
     {
      "property": "emission_color",
      "value_text": "yellow",
-     "quote": "y-SiQDs were acquired at a temperature of 130 °C with QYs at 29.4%, and g-SiQDs were acquired at 150 °C with QYs at 38.3%"
+     "quote": "the prepared SiQDs emitted yellow fluorescence with Na-citrate/CC as reducing reagent pair"
     },
     {
      "property": "average_diameter",
@@ -354,8 +359,8 @@
     },
     {
      "property": "FTIR_carbonyl_band",
-     "value_text": "carbonyl band at 1663 cm−1 present (as for g-SiQDs, absent for b-SiQDs)",
-     "quote": "However, the spectra of b-SiQDs do not exhibit carbonyl groups"
+     "value_text": "carbonyl groups absorption peak at 1663 cm−1",
+     "quote": "absorption peak at 1663 cm−1 as is the case with both y-SiQDs and g-SiQDs"
     },
     {
      "property": "UV_absorption_peaks",
@@ -382,6 +387,11 @@
      "property": "fluorescence_ink_pattern",
      "value_text": "bright yellow fluorescence of the pattern drawn with y-SiQDs on filter paper under UV light (365 nm)",
      "quote": "The filter paper exhibits a strong bright yellow and green fluorescence pattern under UV light."
+    },
+    {
+     "property": "second_particle_population_diameter",
+     "value_text": "particles around ~5 nm, in addition to the large particles of y-SiQDs (Fig. S4a)",
+     "quote": "the number of particles around ~5 nm is also higher than the normal level, in addition to the large particles of y-SiQDs"
     }
    ],
    "missing_fields": [
@@ -401,7 +411,7 @@
     "name": "green-emitting silicon quantum dots (g-SiQDs)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": "not given (TEM not shown for g-SiQDs)"
    },
    "quote": "g-SiQDs were acquired at 150 °C with QYs at 38.3%",
@@ -426,10 +436,17 @@
     },
     {
      "technique": "FT-IR",
-     "result": "carbonyl band at 1663 cm−1 like y-SiQDs",
+     "result": "surface groups quite similar to b-SiQDs and g-SiQDs: N–H, O–H at 3277 cm−1 and 3367 cm−1; –CH=N– at 1595 cm−1; CH3 at 2935 cm−1 and 1462 cm−1; Si–O at 1310 cm−1 and Si–O–Si at 1130–1010 cm−1; carbonyl band at 1663 cm−1 (see outcome FTIR_carbonyl_band)",
      "instrument": "Nicolet 6700 spectrometer (Thermo Fisher Scientific)",
      "conditions": null,
-     "quote": "However, the spectra of b-SiQDs do not exhibit carbonyl groups"
+     "quote": "including the stretching vibration of N–H [], O–H [] at 3277 cm−1 and 3367 cm−1, and the stretching vibrations of –CH=N– [] at 1595 cm−1. Stretching and bending vibrations due to methyl groups [] were represented by the bands at 2935 cm−1 and 1462 cm−1, the asymmetrical deformation vibration of Si–O and the stretching vibrations of Si–O–Si at 1310 cm−1 and 1130–1010 cm−1 []"
+    },
+    {
+     "technique": "UV–visible absorption (Supporting Information, Fig. S2)",
+     "result": "main absorption peak at 430 nm (λex 420 nm, emission at 520 nm); the spectrum does not exhibit a similar spectra shape to y-SiQDs",
+     "instrument": "Lambda-35 UV-visible spectrophotometer (PerkinElmer)",
+     "conditions": "room temperature, ambient conditions",
+     "quote": "The main absorption peak of ultraviolet light is located at 430 nm."
     }
    ],
    "outcomes": [
@@ -482,6 +499,11 @@
      "property": "fluorescence_ink_pattern",
      "value_text": "bright green fluorescence of the pattern drawn with g-SiQDs on filter paper under UV light (365 nm)",
      "quote": "The filter paper exhibits a strong bright yellow and green fluorescence pattern under UV light."
+    },
+    {
+     "property": "FTIR_carbonyl_band",
+     "value_text": "carbonyl groups absorption peak at 1663 cm−1",
+     "quote": "absorption peak at 1663 cm−1 as is the case with both y-SiQDs and g-SiQDs"
     }
    ]
   },
@@ -492,7 +514,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 110 °C)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "the drop of reaction temperature from 150 °C to 110 °C renders λem red shifts from 520 nm to 545 nm",
@@ -529,7 +551,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 120 °C)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Figure 3 PL spectra of SiQDs synthesized with CC and Na-citrate at (a) different reaction time and (b) at different reaction temperature. Inset: the picture shows the increasing trend of QYs and the photos are of g-SiQDs and y-SiQDs.",
@@ -562,7 +584,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 140 °C)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Figure 3 PL spectra of SiQDs synthesized with CC and Na-citrate at (a) different reaction time and (b) at different reaction temperature. Inset: the picture shows the increasing trend of QYs and the photos are of g-SiQDs and y-SiQDs.",
@@ -595,7 +617,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 2 h)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "the increased reaction time from 2 h to 6 h enhanced the fluorescence intensity of the prepared SiQDs, with the λem blue shifts from 546 nm to 535 nm (Figure 3a)",
@@ -633,7 +655,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 3 h)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Figure 3 PL spectra of SiQDs synthesized with CC and Na-citrate at (a) different reaction time and (b) at different reaction temperature. Inset: the picture shows the increasing trend of QYs and the photos are of g-SiQDs and y-SiQDs.",
@@ -666,7 +688,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 4 h)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Figure 3 PL spectra of SiQDs synthesized with CC and Na-citrate at (a) different reaction time and (b) at different reaction temperature. Inset: the picture shows the increasing trend of QYs and the photos are of g-SiQDs and y-SiQDs.",
@@ -699,7 +721,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 6 h)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "the increased reaction time from 2 h to 6 h enhanced the fluorescence intensity of the prepared SiQDs, with the λem blue shifts from 546 nm to 535 nm (Figure 3a)",
@@ -737,7 +759,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 0.275 mg catechol)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Figure 2 PL spectra of SiQDs synthesized with CC and Na-Citrate (a) with different addition mass of Na-citrate (b) with different addition masses of CC. The insets show the corresponding QYs.",
@@ -775,7 +797,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 0.55 mg catechol)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Figure 2 PL spectra of SiQDs synthesized with CC and Na-Citrate (a) with different addition mass of Na-citrate (b) with different addition masses of CC. The insets show the corresponding QYs.",
@@ -807,7 +829,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 2.2 mg catechol)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Figure 2 PL spectra of SiQDs synthesized with CC and Na-Citrate (a) with different addition mass of Na-citrate (b) with different addition masses of CC. The insets show the corresponding QYs.",
@@ -839,7 +861,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 3.3 mg catechol)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Figure 2 PL spectra of SiQDs synthesized with CC and Na-Citrate (a) with different addition mass of Na-citrate (b) with different addition masses of CC. The insets show the corresponding QYs.",
@@ -877,7 +899,7 @@
     "name": "silicon quantum dots (CC / Na-citrate pair, 13.6 mg Na-citrate)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "When the addition mass of Na-citrate was raised to 13.6 mg, the fluorescence intensity of the prepared SiQDs reached a maximum.",
@@ -911,7 +933,7 @@
     "name": "silicon quantum dots (catechol + sodium sulfite)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
@@ -944,6 +966,160 @@
      "from_figure": "Fig. 1",
      "quote": "Figure 1 QYs of SiQDs synthesized with single reductant (CC) and double reductants (CC with other reductants)."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve sodium sulfite in water (the same concentration as Na-citrate was used).",
+     "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add DAMO to the solution and continue stirring.",
+     "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min."
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1)",
+       "quote": "With the reactant ratio fixed at n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1), reaction temperature at 130 °C, and reaction time for 5 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add catechol to the solution with stirring.",
+     "quote": "Finally, 1.1 mg CC was added to the solution with stirring for 1 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "min",
+       "quote": "Finally, 1.1 mg CC was added to the solution with stirring for 1 min."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the solution in a Teflon-equipped stainless-steel autoclave at 130 °C for 5 h.",
+     "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 130,
+       "unit": "°C",
+       "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "h",
+       "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-equipped stainless-steel autoclave",
+       "detail": null,
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Let the autoclave cool naturally to room temperature.",
+     "quote": "After naturally cooling to room temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After naturally cooling to room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "add",
+     "description": "Add four volumes of acetonitrile to the obtained solution.",
+     "quote": "four volumes of acetonitrile were added to the obtained solution",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_text": "four volumes",
+       "quote": "four volumes of acetonitrile were added to the obtained solution"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge the mixture to remove raw material.",
+     "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 8000,
+       "unit": "rpm",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      },
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "supernatant_or_precipitate_kept"
+     ]
+    }
    ]
   },
   {
@@ -953,7 +1129,7 @@
     "name": "silicon quantum dots (catechol + ascorbic acid)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
@@ -986,6 +1162,160 @@
      "from_figure": "Fig. 1",
      "quote": "Figure 1 QYs of SiQDs synthesized with single reductant (CC) and double reductants (CC with other reductants)."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve ascorbic acid in water (the same concentration as Na-citrate was used).",
+     "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add DAMO to the solution and continue stirring.",
+     "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min."
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1)",
+       "quote": "With the reactant ratio fixed at n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1), reaction temperature at 130 °C, and reaction time for 5 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add catechol to the solution with stirring.",
+     "quote": "Finally, 1.1 mg CC was added to the solution with stirring for 1 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "min",
+       "quote": "Finally, 1.1 mg CC was added to the solution with stirring for 1 min."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the solution in a Teflon-equipped stainless-steel autoclave at 130 °C for 5 h.",
+     "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 130,
+       "unit": "°C",
+       "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "h",
+       "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-equipped stainless-steel autoclave",
+       "detail": null,
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Let the autoclave cool naturally to room temperature.",
+     "quote": "After naturally cooling to room temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After naturally cooling to room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "add",
+     "description": "Add four volumes of acetonitrile to the obtained solution.",
+     "quote": "four volumes of acetonitrile were added to the obtained solution",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_text": "four volumes",
+       "quote": "four volumes of acetonitrile were added to the obtained solution"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge the mixture to remove raw material.",
+     "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 8000,
+       "unit": "rpm",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      },
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "supernatant_or_precipitate_kept"
+     ]
+    }
    ]
   },
   {
@@ -995,7 +1325,7 @@
     "name": "silicon quantum dots (catechol + thiourea)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
@@ -1028,6 +1358,160 @@
      "from_figure": "Fig. 1",
      "quote": "Figure 1 QYs of SiQDs synthesized with single reductant (CC) and double reductants (CC with other reductants)."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve thiourea in water (the same concentration as Na-citrate was used).",
+     "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add DAMO to the solution and continue stirring.",
+     "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min."
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1)",
+       "quote": "With the reactant ratio fixed at n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1), reaction temperature at 130 °C, and reaction time for 5 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add catechol to the solution with stirring.",
+     "quote": "Finally, 1.1 mg CC was added to the solution with stirring for 1 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "min",
+       "quote": "Finally, 1.1 mg CC was added to the solution with stirring for 1 min."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the solution in a Teflon-equipped stainless-steel autoclave at 130 °C for 5 h.",
+     "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 130,
+       "unit": "°C",
+       "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "h",
+       "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-equipped stainless-steel autoclave",
+       "detail": null,
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Let the autoclave cool naturally to room temperature.",
+     "quote": "After naturally cooling to room temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After naturally cooling to room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "add",
+     "description": "Add four volumes of acetonitrile to the obtained solution.",
+     "quote": "four volumes of acetonitrile were added to the obtained solution",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_text": "four volumes",
+       "quote": "four volumes of acetonitrile were added to the obtained solution"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge the mixture to remove raw material.",
+     "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 8000,
+       "unit": "rpm",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      },
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "supernatant_or_precipitate_kept"
+     ]
+    }
    ]
   },
   {
@@ -1037,7 +1521,7 @@
     "name": "silicon quantum dots (catechol + urea)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
@@ -1070,6 +1554,160 @@
      "from_figure": "Fig. 1",
      "quote": "Figure 1 QYs of SiQDs synthesized with single reductant (CC) and double reductants (CC with other reductants)."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve urea in water (the same concentration as Na-citrate was used).",
+     "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add DAMO to the solution and continue stirring.",
+     "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min."
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1)",
+       "quote": "With the reactant ratio fixed at n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1), reaction temperature at 130 °C, and reaction time for 5 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add catechol to the solution with stirring.",
+     "quote": "Finally, 1.1 mg CC was added to the solution with stirring for 1 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "min",
+       "quote": "Finally, 1.1 mg CC was added to the solution with stirring for 1 min."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the solution in a Teflon-equipped stainless-steel autoclave at 130 °C for 5 h.",
+     "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 130,
+       "unit": "°C",
+       "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "h",
+       "quote": "The same concentration of sodium sulfite, ascorbic acid, thiourea, or urea was used instead of Na-citrate, and heated at 130 °C for 5 h to obtain SiQDs of different reducing agent combinations to compare their relative quantum yields."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-equipped stainless-steel autoclave",
+       "detail": null,
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Let the autoclave cool naturally to room temperature.",
+     "quote": "After naturally cooling to room temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After naturally cooling to room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "add",
+     "description": "Add four volumes of acetonitrile to the obtained solution.",
+     "quote": "four volumes of acetonitrile were added to the obtained solution",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_text": "four volumes",
+       "quote": "four volumes of acetonitrile were added to the obtained solution"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge the mixture to remove raw material.",
+     "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 8000,
+       "unit": "rpm",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      },
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "supernatant_or_precipitate_kept"
+     ]
+    }
    ]
   },
   {
@@ -1079,7 +1717,7 @@
     "name": "silicon quantum dots (Na-citrate + ascorbic acid (VitC))",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Na-citrate/VitC and Na-citrate/VitC-Na pairs could be used to prepare green-emitting SiQDs (λem ~ 500 nm) with QYs of 5.5% and 6.4%.",
@@ -1118,6 +1756,160 @@
      "value_text": "green (λem ~ 500 nm)",
      "quote": "Na-citrate/VitC and Na-citrate/VitC-Na pairs could be used to prepare green-emitting SiQDs (λem ~ 500 nm) with QYs of 5.5% and 6.4%."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve sodium citrate in water under stirring.",
+     "quote": "Na-citrate (9.24 × 10−5 mol·L−1) was dissolved in water (10 mL) under stirring for 10 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "Na-citrate (9.24 × 10−5 mol·L−1) was dissolved in water (10 mL) under stirring for 10 min."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add DAMO to the solution and continue stirring.",
+     "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min."
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1)",
+       "quote": "With the reactant ratio fixed at n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1), reaction temperature at 130 °C, and reaction time for 5 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add ascorbic acid (VitC) to the solution in place of catechol.",
+     "quote": "Na-citrate/VitC and Na-citrate/VitC-Na pairs could be used to prepare green-emitting SiQDs (λem ~ 500 nm) with QYs of 5.5% and 6.4%.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the solution in a Teflon-equipped stainless-steel autoclave (130 °C gives y-SiQDs, 150 °C gives g-SiQDs).",
+     "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 130,
+       "unit": "°C",
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "h",
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-equipped stainless-steel autoclave",
+       "detail": null,
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Let the autoclave cool naturally to room temperature.",
+     "quote": "After naturally cooling to room temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After naturally cooling to room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "add",
+     "description": "Add four volumes of acetonitrile to the obtained solution.",
+     "quote": "four volumes of acetonitrile were added to the obtained solution",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_text": "four volumes",
+       "quote": "four volumes of acetonitrile were added to the obtained solution"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge the mixture to remove raw material.",
+     "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 8000,
+       "unit": "rpm",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      },
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "supernatant_or_precipitate_kept"
+     ]
+    }
    ]
   },
   {
@@ -1127,7 +1919,7 @@
     "name": "silicon quantum dots (Na-citrate + sodium ascorbate (VitC-Na))",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "Na-citrate/VitC and Na-citrate/VitC-Na pairs could be used to prepare green-emitting SiQDs (λem ~ 500 nm) with QYs of 5.5% and 6.4%.",
@@ -1165,6 +1957,160 @@
      "value_text": "green (λem ~ 500 nm)",
      "quote": "Na-citrate/VitC and Na-citrate/VitC-Na pairs could be used to prepare green-emitting SiQDs (λem ~ 500 nm) with QYs of 5.5% and 6.4%."
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve sodium citrate in water under stirring.",
+     "quote": "Na-citrate (9.24 × 10−5 mol·L−1) was dissolved in water (10 mL) under stirring for 10 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "Na-citrate (9.24 × 10−5 mol·L−1) was dissolved in water (10 mL) under stirring for 10 min."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add DAMO to the solution and continue stirring.",
+     "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 10,
+       "unit": "min",
+       "quote": "Then, DAMO (0.2 mL) was added to the solution and stirring continued for 10 min."
+      },
+      {
+       "name": "molar_ratio",
+       "value_text": "n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1)",
+       "quote": "With the reactant ratio fixed at n(DAMO):n(CC):n(Na-Citrate) = 1:0.11:0.47 (cDAMO = 8.29 × 10−2 mol·L−1), reaction temperature at 130 °C, and reaction time for 5 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add sodium ascorbate (VitC-Na) to the solution in place of catechol.",
+     "quote": "Na-citrate/VitC and Na-citrate/VitC-Na pairs could be used to prepare green-emitting SiQDs (λem ~ 500 nm) with QYs of 5.5% and 6.4%.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "temperature",
+      "stirring_speed",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Hydrothermal treatment of the solution in a Teflon-equipped stainless-steel autoclave (130 °C gives y-SiQDs, 150 °C gives g-SiQDs).",
+     "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 130,
+       "unit": "°C",
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "h",
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-equipped stainless-steel autoclave",
+       "detail": null,
+       "quote": "Subsequently, the resulting products were heated in a Teflon-equipped stainless-steel autoclave at 130 °C or 150 °C for 5 h."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "cool",
+     "description": "Let the autoclave cool naturally to room temperature.",
+     "quote": "After naturally cooling to room temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "After naturally cooling to room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "add",
+     "description": "Add four volumes of acetonitrile to the obtained solution.",
+     "quote": "four volumes of acetonitrile were added to the obtained solution",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_text": "four volumes",
+       "quote": "four volumes of acetonitrile were added to the obtained solution"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge the mixture to remove raw material.",
+     "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "value_num": 8000,
+       "unit": "rpm",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      },
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "the mixture was centrifuged at 8000 rpm for 15 min to remove raw material"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "supernatant_or_precipitate_kept"
+     ]
+    }
    ]
   },
   {
@@ -1174,7 +2120,7 @@
     "name": "silicon quantum dots with catechol as the only reducing agent, SiQDs(CC)",
     "formula": "Si",
     "family": "quantum_dot",
-    "phase": "cubic diamond silicon (111) lattice, 0.31 nm",
+    "phase": null,
     "morphology": null
    },
    "quote": "SiQDs(CC) (DAMO as silicon source, CC as reducing agent)",
@@ -1203,6 +2149,22 @@
      "value_num": 550,
      "unit": "nm",
      "quote": "the λem of SiQDs(CC) only changes in fluorescence intensity at 550 nm"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "synthesize",
+     "description": "Synthesis of SiQDs with DAMO as silicon source and catechol as the only reducing agent; the protocol is not described.",
+     "quote": "SiQDs(CC) (DAMO as silicon source, CC as reducing agent)",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "stirring_speed",
+      "atmosphere"
+     ]
     }
    ]
   },
@@ -1426,13 +2388,71 @@
   {
    "type": "mecanisme_auteurs",
    "route": "y-SiQDs",
-   "text": "Selon les auteurs, le citrate hydrolyse et réduit rapidement le silane pour former le noyau de silicium, tandis que les groupes hydroxyle phénoliques du catéchol se lient aux résidus du silane hydrolysé et forment à la surface un fluorophore conjugué portant un groupe C=O, responsable du décalage vers le rouge. À haute température la structure du catéchol serait détruite et ne participerait plus à la surface.",
-   "quote": "the phenolic hydroxyl group on the surface of the CC can be further combined with the residue on the surface of the hydrolyzed product of DAMO to form a fluorophore having a larger conjugated system and a C=O structure on the surface"
+   "text": "Selon les auteurs, le citrate favorise l'hydrolyse et la réduction rapides du silane pour former le noyau de silicium, tandis que les groupes hydroxyle phénoliques du catéchol se lient aux résidus du silane hydrolysé et forment à la surface un fluorophore à plus grand système conjugué portant un groupe C=O, responsable du décalage vers le rouge.",
+   "quote": "Na-citrate is beneficial for the rapid hydrolysis and reduction of silane to form a silicon core. In addition to participating in the reduction of silane during the synthesis, the phenolic hydroxyl group on the surface of the CC can be further combined with the residue on the surface of the hydrolyzed product of DAMO to form a fluorophore having a larger conjugated system and a C=O structure on the surface"
   },
   {
    "type": "mecanisme_analyse",
    "route": "y-SiQDs",
-   "text": "Hypothèse de chimiste : le DAMO s'hydrolyse en silanols (libération de méthanol) qui se condensent en un réseau polysiloxane portant des chaînes éthylènediamine ; le citrate, réducteur et agent de coiffage, limiterait la croissance. Le catéchol, oxydé en ortho-quinone à chaud, pourrait former des imines (liaisons –CH=N–, vues à 1595 cm−1) avec les amines du DAMO, ce qui expliquerait le conjugué à C=O. La baisse du rendement quantique à basse température serait probablement due à une condensation incomplète du silane."
+   "text": "Hypothèse du critique scientifique (non démontrée ; d'après Ddungu et al., Faraday Discuss. 2020, 10.1039/c9fd00127a, Oliinyk et al., Chem. Mater. 2019, 10.1021/acs.chemmater.9b01067, Weil-Malherbe, Pharmacol. Rev. 1959, Karim et al., J. Fluoresc. 2007, 10.1007/s10895-007-0188-y, Song et al., J. Mater. Chem. C 2015, 10.1039/C5TC00813A) : en milieu basique (pH proche de 11 apporté par les amines du DAMO), le DAMO s'hydrolyse en silanols (libération de méthanol) qui se condensent en oligomères ou nanoparticules de polysiloxane portant des chaînes aminoéthylaminopropyle ; le silicium reste Si(IV). Le citrate se condenserait avec le motif éthylènediamine pour donner des fluorophores de type IPCA (émission bleue vers 440–455 nm), et le catéchol, oxydé en ortho-quinone, avec ce même motif pour donner les produits jaune-vert de la méthode de condensation à l'éthylènediamine (λex vers 420 nm, λem vers 505–540 nm). Ces fluorophores, libres ou greffés sur le polysiloxane, expliqueraient les deux émissions de y-SiQDs, le rapport C/Si élevé en EDS et la bande à 1663 cm−1 ; le cœur de silicium(0) cristallin invoqué par les auteurs n'est pas démontré."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "y-SiQDs",
+   "text": "Les auteurs expliquent le passage au jaune à basse température par la stabilité de la structure du catéchol : à haute température elle serait détruite et ne participerait plus aux groupes lumineux de surface (g-SiQDs verts à 150 °C).",
+   "quote": "We suspect that the possible reason is that this is not conducive to the stable existence of the CC structure at high temperature conditions, and thus cannot participate in the formation of the surface luminescent groups of y-SiQDs."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "y-SiQDs",
+   "text": "Les auteurs attribuent le comportement complexe des spectres 3D de y-SiQDs à la présence de deux types de SiQDs dans l'échantillon (une population autour de 5 nm en plus des grosses particules, Fig. S4a), due à une compétition entre les deux réducteurs et le silane : le citrate se combine plus facilement au silane et donne des SiQDs bleus.",
+   "quote": "This shows that the complex behavior of the 3D spectra of y-SiQDs is likely to originate from the presence of two types of SiQDs in the sample. This phenomenon may be due to a competitive reaction between the two reducing agents and the silicon source during the synthesis."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "y-SiQDs",
+   "text": "Les auteurs concluent de la comparaison de taille entre b-SiQDs (2,8 nm) et y-SiQDs (12 nm) que l'augmentation de la taille des particules décale l'émission vers le rouge.",
+   "quote": "It is thus proven that the increase of particle size could effectively make the emission peak redshift."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "b-SiQDs",
+   "text": "Hypothèse du critique scientifique (non démontrée ; d'après Song et al., J. Mater. Chem. C 2015, 10.1039/C5TC00813A, et Ddungu et al., Faraday Discuss. 2020, 10.1039/c9fd00127a) : hydrolyse–condensation du DAMO en polysiloxane aminé et condensation du citrate avec le motif diamine en fluorophore moléculaire de type IPCA, sans réduction de Si(IV). Excitation maximale à 370 nm, émission fixe à 453 nm indépendante de λex et rendement quantique élevé sont la signature de tels fluorophores."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "y-SiQDs",
+   "text": "Les trois quantités de la recette de référence ne sont pas compatibles entre elles. Avec cDAMO = 8,29 × 10−2 mol·L−1 (≈ 0,83 mmol dans 10 mL), 1,1 mg de catéchol vaut ≈ 0,012 équivalent et non 0,11 (≈ 10 mg seraient attendus) ; le citrate vaut ≈ 0,0011 équivalent d'après 9,24 × 10−5 mol·L−1, ≈ 0,056 d'après 13,6 mg et 0,47 d'après le rapport annoncé (facteurs 8 à 420). Lire 9,24 × 10−5 comme une quantité en mol donnerait 0,11 équivalent : une inversion d'unités ou de colonnes dans le rapport est possible, mais ce n'est qu'une hypothèse à confirmer auprès des auteurs. La même recette sert à g-SiQDs et à toutes les branches ; les quantités de remplacement « à la même concentration » héritent de cette incohérence."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "y-SiQDs",
+   "text": "La réduction de Si(IV) d'un alcoxysilane en Si(0) par le citrate, le catéchol, l'urée ou le sulfite à 130–150 °C dans l'eau n'est pas plausible (couple SiO2/Si, E° ≈ −0,86 V) ; deux études critiques de synthèses aminosilane + citrate concluent à l'absence de nanoparticules de Si(0) (Ddungu et al., Faraday Discuss. 222, 350–361, 2020, 10.1039/c9fd00127a ; Oliinyk et al., Chem. Mater. 31, 7167–7172, 2019, 10.1021/acs.chemmater.9b01067). L'identité « boîtes quantiques de silicium » est donc à prendre avec réserve."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "y-SiQDs",
+   "text": "Taille et couleur ne sont pas compatibles avec un confinement quantique dans un cœur de silicium : 12 nm devrait émettre vers 1 000 nm, et l'émission de cœur des nanocristaux de Si ne dépasse guère 2,1 eV (≈ 590 nm) ; l'émission bleu-vert vient plutôt d'états de surface ou d'espèces moléculaires (Wen et al., Sci. Rep. 5, 12469, 2015, 10.1038/srep12469). L'explication des auteurs par l'effet de taille du cœur est donc douteuse."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "y-SiQDs",
+   "text": "Les preuves de la présence de silicium(0) ne sont pas discriminantes : ni DRX, ni XPS Si 2p, ni Raman ; une seule frange à 0,31 nm (compatible avec Si(111), non exclusive) ; EDS dominé par le carbone (C/Si ≈ 8,3) ; aucune dialyse, et le surnageant mesuré contient les espèces moléculaires solubles. Des fluorophores moléculaires seraient alors indiscernables des « points » (cas décrit pour les points de carbone : Essner et al., Chem. Mater. 2018, 10.1021/acs.chemmater.7b04446)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "b-SiQDs",
+   "text": "Excitation maximale à 370 nm, émission fixe à 453 nm indépendante de λex et rendement quantique de 73,3 % rappellent la signature des fluorophores moléculaires citrate–diamine de type IPCA (Song et al., J. Mater. Chem. C, 2015, 10.1039/C5TC00813A) plus qu'un cœur de silicium de 2,8 nm, qui émettrait vers 620 nm. Le protocole (quantités, solvant, mode de chauffage ; 15 min à 200 °C est typique d'un réacteur micro-ondes) et l'origine du rendement de 73,3 % ne sont pas donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Urea_CC",
+   "text": "L'urée n'est pas un réducteur : à 130 °C elle s'hydrolyse lentement en NH3 et CO2. Le rendement quantique de 23 % ne peut donc pas être lu comme une synergie de deux réducteurs ; l'urée est un témoin mal choisi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "VitC_CC",
+   "text": "L'acide ascorbique (pKa1 ≈ 4,1) neutralise une partie des amines alors que le citrate trisodique est basique : ce témoin change à la fois le réducteur et le pH. Un témoin à l'ascorbate de sodium serait nécessaire pour isoler l'effet du réducteur."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1443,17 +2463,17 @@
   {
    "type": "securite_analyse",
    "route": "y-SiQDs",
-   "text": "L'article ne mentionne aucune précaution. Le chauffage à 130–150 °C en autoclave fermé impose de ne pas dépasser le taux de remplissage usuel et de refroidir avant d'ouvrir. L'hydrolyse du DAMO libère du méthanol (toxique, inflammable). Le catéchol est irritant et toxique par contact et ingestion, l'acétonitrile est inflammable et toxique, la thiourée est un cancérogène suspecté. Les SiQDs sont des nanoparticules : éviter l'inhalation de poudre sèche."
+   "text": "L'article ne mentionne aucune précaution. Le chauffage à 130–200 °C en autoclave fermé impose de respecter le taux de remplissage usuel (non donné ici) et de refroidir avant d'ouvrir. L'hydrolyse du DAMO libère du méthanol (toxique, inflammable) ; l'acétonitrile (quatre volumes, soit une quarantaine de mL par lot) est inflammable et toxique. Le catéchol (pyrocatéchol) est classé cancérogène de catégorie 1B (H350), mutagène de catégorie 2 (H341) et toxique aigu de catégorie 3 par voie orale et cutanée (classification harmonisée UE, règlement délégué (UE) 2018/1480, https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32018R1480) : gants et sorbonne. La classification de la thiourée (branche Thiourea_CC) n'est pas vérifiée ici. Les SiQDs sont des nanoparticules : éviter l'inhalation de poudre sèche."
   },
   {
    "type": "limite_reproductibilite",
    "route": "y-SiQDs",
-   "text": "La quantité de citrate est donnée comme une concentration (9,24 × 10−5 mol·L−1) incompatible avec le rapport molaire de 1:0,11:0,47 et la masse de 13,6 mg citée plus loin ; la masse de catéchol (1,1 mg) ne correspond pas non plus à 0,11 équivalent de 0,2 mL de DAMO. Le volume de l'autoclave, le taux de remplissage, la vitesse d'agitation, la façon de récupérer le produit après centrifugation (surnageant ou culot), le séchage et le rendement massique ne sont pas donnés."
+   "text": "Le volume de l'autoclave, le taux de remplissage, la vitesse d'agitation, la façon de récupérer le produit après centrifugation (surnageant ou culot), le séchage et le rendement massique ne sont pas donnés. Les quantités de la recette de référence sont incohérentes entre elles : voir l'annotation suivante."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les valeurs intermédiaires des séries en masse de catéchol, en temps et en température ne figurent que sur les figures 2b, 3a et 3b (lectures approximatives). La figure 2a du dépôt reproduit la série en temps au lieu de la série en masse de citrate : seule la masse de 13,6 mg (intensité maximale) est donc connue pour cette série. Les spectres des figures S1 à S8 de l'annexe sont des graphiques non exploitables en texte. La préparation des SiQDs bleus (b-SiQDs) n'est pas décrite dans les Méthodes : seuls les réactifs et la condition 200 °C, 15 min du schéma de la figure 8A sont connus."
+   "text": "Les valeurs intermédiaires des séries en masse de catéchol, en temps et en température ne figurent que sur les figures 2b, 3a et 3b (lectures approximatives). La figure 2a du dépôt reproduit la série en temps au lieu de la série en masse de citrate : seule la masse de 13,6 mg (intensité maximale) est donc connue pour cette série. Les spectres des figures S1 à S8 de l'annexe sont des graphiques non exploitables en texte. La préparation des SiQDs bleus (b-SiQDs) n'est pas décrite dans les Méthodes : seuls les réactifs et la condition 200 °C, 15 min du schéma de la figure 8A sont connus. Les branches NaSulfite_CC, VitC_CC, Thiourea_CC et Urea_CC n'ont pas de quantité propre (« même concentration » que le citrate, lui-même incohérent) ; les branches NaCit_VitC et NaCit_VitC-Na n'ont ni quantité ni conditions de chauffage propres (copiées du protocole de référence) ; le protocole de SiQDs_CC_only n'est pas décrit."
   }
  ],
  "sample_inventory": [
@@ -1696,7 +2716,7 @@
   },
   {
    "where": "t2h, t3h, t4h, t6h : température de la série en durée",
-   "issue": "Le texte dit « on fixing the other synthesis parameters » sans donner la température. Lecture retenue : 130 °C, condition de référence (le maximum de rendement quantique à 5 h vaut 29,4 %, comme y-SiQDs). La série en température est de même supposée à 5 h."
+   "issue": "Le texte dit seulement « On fixing the other synthesis parameters » : aucune température n'est écrite pour la série en durée. 130 °C (condition de référence) est gardée comme seule lecture cohérente (maximum de rendement quantique à 5 h de 29,4 %, λem de 535–546 nm comme y-SiQDs à 538 nm) mais c'est une déduction, non une valeur citée. La série en température est de même supposée à 5 h (fondé : « reaction time at 5 h » et « same reactants ratio and reaction time (5 h) »)."
   },
   {
    "where": "Fig. 2a (série en masse de citrate)",
@@ -1716,15 +2736,15 @@
   },
   {
    "where": "b-SiQDs, préparation et rendement quantique",
-   "issue": "Les Méthodes ne décrivent pas la préparation des b-SiQDs. Réactifs tirés du §3.2.1, condition 200 °C 15 min lue sur le schéma de la figure 8A, renvoi à la référence B13 pour le protocole (non dit explicitement). Le rendement quantique de 73,3 % du §3.1.1 (« The prepared SiQDs exhibit QYs as high as 73.3% with DAMO … Na-citrate ») pourrait venir de travaux antérieurs et non de cet article."
+   "issue": "Les Méthodes ne décrivent pas la préparation des b-SiQDs. Réactifs tirés du §3.2.3, condition 200 °C 15 min lue sur le schéma de la figure 8A. Le renvoi [B13] suit « to form b-SiQDs » dans la phrase du mécanisme (§3.2.3), mais l'article ne dit pas que cette référence donne le protocole : rôle protocole_complet attribué par rapprochement. Le rendement quantique de 73,3 % du §3.1.1 (« The prepared SiQDs exhibit QYs as high as 73.3% with DAMO … Na-citrate ») pourrait venir de travaux antérieurs et non de cet article."
   },
   {
    "where": "SiQDs_CC_only",
-   "issue": "Les SiQDs(CC) (catéchol seul) sont cités (§3.1.1, §3.2.1, fig. 1 et S3) sans protocole : on ne sait pas si le catéchol a été utilisé à 1,1 mg ni si les étapes et conditions sont celles de y-SiQDs. Les étapes de y-SiQDs ne s'appliquent qu'en retirant la dissolution du citrate ; la voie reste héritée de y-SiQDs avec preparation_protocol déclaré non cité. Le rendement quantique ≈ 7 % est lu sur la figure 1 (barre « CC »)."
+   "issue": "Les SiQDs(CC) (catéchol seul) sont cités (§3.1.1, §3.2.1, fig. 1 et S3) sans protocole : on ne sait pas si le catéchol a été utilisé à 1,1 mg ni si les étapes et conditions sont celles de y-SiQDs. La voie a une seule étape propre, non décrite (preparation_protocol déclaré non cité). Contradiction : le §3.1.1 dit que les préparations à un seul réducteur (VitC, VitC-Na ou CC) ont un rendement quantique faible (« quite low (<5%) ») alors que la figure 1 donne ≈ 7 % pour CC seul (valeur lue, gardée) et que le §3.2.1 donne une émission à 550 nm. Les essais à VitC seul et VitC-Na seul ne sont pas décrits comme échantillons propres."
   },
   {
    "where": "VitC_CC, NaCit_VitC",
-   "issue": "La figure 1 nomme « Vitamin + CC » ; la lecture retenue est l'acide ascorbique de la liste des réactifs (Méthodes 2.1 et 2.2). Pour les couples Na-citrate/VitC et Na-citrate/VitC-Na du §3.1.1, les quantités de VitC et de VitC-Na ne sont pas données ; les QY 5,5 % et 6,4 % sont attribués dans l'ordre de la phrase (VitC puis VitC-Na). L'ascorbate de sodium n'est pas dans la liste des réactifs."
+   "issue": "La figure 1 nomme « Vitamin + CC » ; la lecture retenue est l'acide ascorbique de la liste des réactifs (Méthodes 2.1 et 2.2). Pour les couples Na-citrate/VitC et Na-citrate/VitC-Na du §3.1.1, les quantités de VitC et de VitC-Na ne sont pas données ; les QY 5,5 % et 6,4 % sont attribués dans l'ordre de la phrase (VitC puis VitC-Na). L'ascorbate de sodium n'est pas dans la liste des réactifs. Pour NaCit_VitC et NaCit_VitC-Na, seule l'étape du catéchol est remplacée ; les autres étapes (dont 130 °C, 5 h, donnés par le §3.1.1 pour le rapport fixé) sont copiées de y-SiQDs, l'article ne décrivant pas ces essais."
   },
   {
    "where": "UV–visible de y-SiQDs",
@@ -1741,6 +2761,14 @@
   {
    "where": "Séries en température et en durée, lecture des bornes",
    "issue": "Les valeurs de 2 h et 6 h (durée) et de 110 °C (température) viennent des bornes d'une phrase « from … to … » ; les points intermédiaires (3 h, 4 h, 120 °C, 140 °C) et les masses de catéchol de 0,275 à 3,3 mg viennent des légendes des figures. Les λem de 518 et 546 nm sont attribués à 0,275 et 3,3 mg dans l'ordre de la phrase « with increasing CC amount », en accord avec les pics de la figure 2b."
+  },
+  {
+   "where": "NaCit13.6mg, parent_value et statut de branche",
+   "issue": "La masse de 13,6 mg de citrate (maximum d'intensité, §3.1.2) est dans une autre unité que la valeur de référence (9,24 × 10−5 mol·L−1) : comparaison impossible. 13,6 mg correspond peut-être à la quantité de citrate de la voie de base, dont la masse n'est jamais écrite (hypothèse, non confirmée : le rapport catéchol 1,1 mg / citrate 13,6 mg est voisin de 0,11/0,47). La branche est gardée pour le résultat « λem inchangé » ; la figure 2a du dépôt montre la série en durée, non la série en masse de citrate."
+  },
+  {
+   "where": "Résumé contre Méthodes et §3.1.2",
+   "issue": "Le résumé écrit « By controlling the reaction time, yellow-emitting silicon quantum dots and green-emitting silicon quantum dots were synthesized », alors que les Méthodes et le §3.1.2 obtiennent y-SiQDs (130 °C) et g-SiQDs (150 °C) à durée égale (5 h) : c'est la température qui fait passer du jaune au vert. Valeurs extraites des Méthodes, sans correction."
   }
  ]
 }
