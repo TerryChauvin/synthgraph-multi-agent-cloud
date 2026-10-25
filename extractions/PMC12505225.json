@@ -314,13 +314,13 @@
      "result": "pics O et Si ; pic mineur du carbone vers 0,2 keV",
      "instrument": "FEI Quanta FEG 250 with EDAX EDS Detector",
      "conditions": "secondary electron mode, accelerating voltages of 5 kV, 10 kV, and 20 kV, spot sizes of 2.5 and 3.5",
-     "quote": "Along with this, we see that a minor peak at around 0.2 keV which"
+     "quote": "EDS spectrum shows the characteristic peaks of O and Si. Along with this, we see that a minor peak at around 0.2 keV which corresponds to carbon."
     }
    ],
    "outcomes": [
     {
      "property": "eds_minor_carbon_peak_energy",
-     "quote": "Along with this, we see that a minor peak at around 0.2 keV which",
+     "quote": "EDS spectrum shows the characteristic peaks of O and Si. Along with this, we see that a minor peak at around 0.2 keV which corresponds to carbon.",
      "value_num": 0.2,
      "unit": "keV"
     }
@@ -374,6 +374,13 @@
      "instrument": "Bruker-ALPHA",
      "conditions": "400–4000 cm−1",
      "quote": "Across all three annealing temperatures, a strong band at 803 cm−1 and 1064 cm−1 is consistently observed and attributed to the symmetric and asymmetric stretching vibrations of the Si–O–Si bonds."
+    },
+    {
+     "technique": "EDS",
+     "result": "pics O et Si ; même pic mineur du carbone vers 0,2 keV qu'à 700 °C, plus intense (Fig. S2)",
+     "instrument": "FEI Quanta FEG 250 with EDAX EDS Detector",
+     "conditions": "secondary electron mode, accelerating voltages of 5 kV, 10 kV, and 20 kV, spot sizes of 2.5 and 3.5",
+     "quote": "Minor agglomeration is observed on the surface of the particle. EDS spectrum shows the characteristic peaks of O and Si. Along with this, we see the same 0.2keV peak seen in Fig. S1. with a higher intensity."
     }
    ],
    "outcomes": [
@@ -431,6 +438,13 @@
      "instrument": "Bruker-ALPHA",
      "conditions": "400–4000 cm−1",
      "quote": "Across all three annealing temperatures, a strong band at 803 cm−1 and 1064 cm−1 is consistently observed and attributed to the symmetric and asymmetric stretching vibrations of the Si–O–Si bonds."
+    },
+    {
+     "technique": "EDS",
+     "result": "pics O et Si (Fig. 6b, SiO2 recuit à 900 °C) ; pic mineur du carbone vers 0,28 keV",
+     "instrument": "FEI Quanta FEG 250 with EDAX EDS Detector",
+     "conditions": "secondary electron mode, accelerating voltages of 5 kV, 10 kV, and 20 kV, spot sizes of 2.5 and 3.5",
+     "quote": "EDS analysis (Fig. 6b) consistently confirmed a homogeneous distribution of silicon and oxygen throughout all samples, with elemental spectra matching the expected stoichiometry of SiO2."
     }
    ],
    "outcomes": [
@@ -439,6 +453,19 @@
      "quote": "in the sample annealed at 900 °C, we see a sharp peak at 27°",
      "value_num": 27,
      "unit": "°"
+    },
+    {
+     "property": "ftir_si_o_si_band_minimum_position",
+     "value_num": 1075.54,
+     "unit": "cm-1",
+     "from_figure": "Fig. 5",
+     "quote": "Increase in absorption intensity on incorporation of Zn into the SiO2 matrix."
+    },
+    {
+     "property": "eds_minor_carbon_peak_energy",
+     "value_num": 0.28,
+     "unit": "keV",
+     "quote": "We see a minor carbon peak at ∼0.28 keV in the EDS spectrum."
     }
    ]
   },
@@ -639,8 +666,8 @@
     "name": "ZnO–SiO2 nanocomposite (10 : 90)",
     "formula": null,
     "family": "composite",
-    "phase": "predominantly amorphous silica matrix with nanocrystalline wurtzite ZnO at 900 °C",
-    "morphology": "angular blocky shards (700 °C), coalesced particles (900 °C)"
+    "phase": "predominantly amorphous silica matrix; no distinct diffraction peaks at 700 °C",
+    "morphology": "angular blocky shards with sharp edges and strong surface roughness"
    },
    "method": "sol–gel (acid-catalysed TEOS hydrolysis, Zn acetate incorporation), aging 18 h, annealing",
    "quote": "The composite (10 : 90 ZnO : SiO2) was prepared by combining TEOS hydrolysis (using HCl as catalyst) with subsequent incorporation of the zinc acetate precursor.",
@@ -839,6 +866,12 @@
      "property": "xrd_crystalline_peaks",
      "quote": "Upon annealing at 700 °C (black curve), there is a subtle sharpening of the background, yet no distinct peaks emerge, suggesting that the material remains largely amorphous at this temperature.",
      "value_text": "no distinct peaks, largely amorphous"
+    },
+    {
+     "property": "ftir_579_band_position",
+     "value_num": 579,
+     "unit": "cm-1",
+     "quote": "At the wavenumber 579 cm−1, a smaller absorption peak emerges and becomes increasingly defined with rising annealing temperature."
     }
    ],
    "missing_fields": [
@@ -856,8 +889,8 @@
     "name": "ZnO–SiO2 nanocomposite (10 : 90)",
     "formula": null,
     "family": "composite",
-    "phase": "predominantly amorphous silica matrix with nanocrystalline wurtzite ZnO at 900 °C",
-    "morphology": "angular blocky shards (700 °C), coalesced particles (900 °C)"
+    "phase": "predominantly amorphous silica matrix; incipient minor diffraction peaks, too weak to assess at 800 °C",
+    "morphology": "particle coalescence and facet smoothing, larger domains"
    },
    "quote": "SEM images of ZnO–SiO2 composite at annealing temperatures (a) 700 °C, (b) 800 °C and (c) 900 °C",
    "variations": [
@@ -905,6 +938,12 @@
      "property": "xrd_crystalline_peaks",
      "quote": "At 800 °C (red curve), the XRD pattern exhibits a similar profile; while the incipient formation of minor peaks is noted, their intensity remains too weak for reliable assessment, indicating only marginal increases in crystallinity.",
      "value_text": "incipient minor peaks, too weak for reliable assessment"
+    },
+    {
+     "property": "ftir_579_band_position",
+     "value_num": 579,
+     "unit": "cm-1",
+     "quote": "At the wavenumber 579 cm−1, a smaller absorption peak emerges and becomes increasingly defined with rising annealing temperature."
     }
    ]
   },
@@ -915,8 +954,8 @@
     "name": "ZnO–SiO2 nanocomposite (10 : 90)",
     "formula": null,
     "family": "composite",
-    "phase": "predominantly amorphous silica matrix with nanocrystalline wurtzite ZnO at 900 °C",
-    "morphology": "angular blocky shards (700 °C), coalesced particles (900 °C)"
+    "phase": "predominantly amorphous silica matrix with weak wurtzite ZnO peaks (also α-quartz and tridymite peaks) at 900 °C",
+    "morphology": "extensive grain growth and densification; ZnO crystals in a glassy SiO2 matrix; occasional micro-cracks"
    },
    "quote": "SEM images of ZnO–SiO2 composite at annealing temperatures (a) 700 °C, (b) 800 °C and (c) 900 °C",
    "variations": [
@@ -995,6 +1034,25 @@
      "property": "xrd_crystalline_phases",
      "quote": "The peak in the SiO2 annealed at 900 °C, is again observed here, which corresponds to the crystalline α-quartz.",
      "value_text": "α-quartz peak also observed"
+    },
+    {
+     "property": "ftir_si_o_si_absorption_increase_vs_sio2",
+     "value_num": 46.71,
+     "unit": "%",
+     "quote": "On normalization, A 46.71% increase is observed in the absorption intensity when ZnO is introduced."
+    },
+    {
+     "property": "ftir_si_o_si_band_minimum_position",
+     "value_num": 1098.21,
+     "unit": "cm-1",
+     "from_figure": "Fig. 5",
+     "quote": "Increase in absorption intensity on incorporation of Zn into the SiO2 matrix."
+    },
+    {
+     "property": "ftir_579_band_position",
+     "value_num": 579,
+     "unit": "cm-1",
+     "quote": "At the wavenumber 579 cm−1, a smaller absorption peak emerges and becomes increasingly defined with rising annealing temperature."
     }
    ]
   }
@@ -1036,8 +1094,8 @@
   },
   {
    "type": "tendance_observee",
-   "route": null,
-   "text": "Les auteurs rapportent une hausse de 46,71 % de l'intensité d'absorption de la bande Si–O–Si (1070–1100 cm-1) après normalisation, quand ZnO est introduit dans la silice ; la température de recuit des spectres comparés n'est pas précisée.",
+   "route": "ZnO-SiO2-900",
+   "text": "Les auteurs rapportent une hausse de 46,71 % de l'intensité d'absorption (creux de transmission) de la bande Si–O–Si (1070–1100 cm-1) après normalisation, quand ZnO est introduit dans la silice. D'après les étiquettes imprimées sur la Fig. 5 (« SiO2 at 900 °C » et « SiO2-ZnO at 900 °C »), la comparaison porte sur les poudres recuites à 900 °C : minimum de transmission à 1075,54 cm-1 pour la silice, à 1098,21 cm-1 pour le composite. La légende textuelle et le texte ne donnent pas cette température.",
    "quote": "On normalization, A 46.71% increase is observed in the absorption intensity when ZnO is introduced."
   },
   {
@@ -1067,17 +1125,27 @@
   {
    "type": "mecanisme_analyse",
    "route": "SiO2-700",
-   "text": "Probablement : hydrolyse du TEOS en silanols (catalysée par l'acide acétique), puis condensation en réseau Si–O–Si à 75 °C ; le séchage à 120 °C élimine l'éthanol et l'eau, et le recuit à 700–900 °C élimine les groupes éthoxy et acétate résiduels et densifie le réseau. À 900 °C une cristallisation partielle en α-quartz et tridymite est possible."
+   "text": "Probablement : hydrolyse du TEOS en silanols (catalysée par l'acide acétique), puis condensation en réseau Si–O–Si ; le gel se forme à 75 °C, le séchage à 120 °C élimine l'éthanol et l'eau, et le recuit à 700–900 °C élimine les groupes éthoxy et silanols résiduels et densifie le réseau. La silice reste amorphe dans ce domaine de température (hypothèse du critique scientifique, d'après Hench et West, Chem. Rev. 1990)."
   },
   {
    "type": "mecanisme_analyse",
    "route": "ZnO-450",
-   "text": "Probablement : NaOH hydrolyse l'acétate de zinc en Zn(OH)2 dans l'éthanol ; le recuit à 450 °C déshydrate Zn(OH)2 en ZnO (Zn(OH)2 → ZnO + H2O) et brûle l'acétate résiduel."
+   "text": "Hypothèse du critique scientifique : dans l'éthanol, NaOH ajouté à l'acétate de zinc en partie non dissous forme des acétates basiques puis Zn(OH)2 ou ZnO déjà cristallisé en solution ; un excès local de base donne des ions zincate dont la croissance anisotrope selon c produit bâtonnets et fleurs pendant les 24 h de vieillissement. Le recuit à 450 °C déshydrate l'hydroxyde restant, brûle les acétates et fait croître les cristallites (≈ 18 nm) sans créer la morphologie en fleur. L'explication des auteurs (polarité de l'éthanol qui ralentit la formation des ions hydroxyde) n'a pas de sens ici, car NaOH apporte directement OH-."
   },
   {
    "type": "mecanisme_analyse",
    "route": "ZnO-SiO2-900",
-   "text": "Probablement : le zinc, dispersé dans la silice sous forme de Zn2+ lié à des silanols (Si–O–Zn), ne forme des domaines de ZnO détectables en DRX qu'à 900 °C, quand la mobilité atomique permet la ségrégation ; la formation d'un silicate de zinc reste possible, car les pics à 31,7°, 34,4° et 36,2° sont communs aux deux phases."
+   "text": "Hypothèse du critique scientifique : à 900 °C, la diffusion du zinc dans la silice amorphe donne des nanocristaux de ZnO et peut-être une silicatation partielle en willémite Zn2SiO4 (rapportée dès 800 °C par Alibe et al., 2018), avec densification visqueuse de la matrice. Le pic vers 21° reste d'attribution incertaine (cristobalite, tridymite ou willémite). Les auteurs notent que les pics à 31,7°, 34,4° et 36,2° sont communs à ZnO et à un silicate de zinc."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "SiO2-900",
+   "text": "Hypothèse du critique scientifique : densification visqueuse de la silice amorphe à 900 °C. La cristallisation d'α-quartz à cette température, sans minéralisateur, est peu probable ; l'origine du pic unique à 27° (contamination par un mortier ou un porte-échantillon, impureté alcaline) reste à établir."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZnO-SiO2-700",
+   "text": "Hypothèse du critique scientifique : hydrolyse acide du TEOS, Zn2+ (avec ses acétates) piégé dans le gel sous forme dispersée ; au séchage et au recuit les acétates brûlent et Zn2+ reste lié aux silanols (Si–O–Zn, vitreux) jusqu'à 700–800 °C. Vers 800–900 °C, la diffusion du zinc dans la silice forme soit des nanocristaux de ZnO, soit de la willémite Zn2SiO4."
   },
   {
    "type": "securite_analyse",
@@ -1093,6 +1161,51 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Les courbes de DRX (Fig. 1 à 3) et de FTIR (Fig. 4) ne sont pas fournies sous forme de tableaux de valeurs ; les rapports d'intensité et les largeurs de raies ne peuvent pas être repris sans lecture graphique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-450",
+   "text": "Solubilité dépassée : 10 g d'acétate de zinc dihydraté dans 100 mL d'éthanol font ≈ 12,7 g pour 100 g d'éthanol, environ quatre fois la solubilité du sel dans l'alcool à 25 °C (≈ 3 g/100 g selon PubChem/HSDB, acétate de zinc CID 11192, cité par le critique scientifique). À température ambiante la « solution » n'en est pas une, sauf chauffage ou ajout d'eau, que le texte ne mentionne pas. Le volume de NaOH 1 M, son solvant, le lavage et le séchage du précipité ne sont pas non plus donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Erreur d'unité probable dans l'article : la longueur d'onde du rayonnement Cu Kα1 est écrite « 1.54 nm », alors qu'elle vaut 0,154 nm (1,54 Å). Avec la valeur écrite aucune diffraction n'est possible (sin θ > 1 pour la raie (100) du ZnO) ; un lecteur qui recalcule d ou la taille de Scherrer avec la valeur écrite obtient des résultats faux d'un facteur 10. Valeur de l'article gardée telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-SiO2-700",
+   "text": "Protocole du composite contraire à la méthode G4 citée : selon le critique scientifique, qui cite Mocioiu et al. (Gels 2022, 8, 498), G4 ajoute le TEOS en dernier à une solution d'acétate de zinc, d'eau, de HCl et d'éthanol (rapport molaire 10 : 1 : 3 : 0,03) pour 10 % molaire de ZnO ; ici le TEOS est ajouté en premier, puis HCl/eau, puis le zinc, sans éthanol, avec « HCl 0,03 M » (probablement le rapport molaire 0,03 lu comme une concentration) et 10 % en masse. On ne sait pas lequel des deux protocoles a été suivi."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-SiO2-700",
+   "text": "Sans éthanol, le TEOS et l'eau ne sont pas miscibles : le mélange est biphasique jusqu'à ce que l'hydrolyse libère assez d'éthanol, et 30 min d'agitation à 500 rpm ne garantissent pas l'homogénéité (critique scientifique). Aucune étape ne mène non plus du sol à la poudre (ni gélification ni séchage) : après 18 h de vieillissement, le texte passe directement au recuit d'une « poudre » ; chez Mocioiu et al. (2022) le sol G4 ne gélifie qu'après un mois et la solution vieillie est séchée 18 h à 200 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-SiO2-900",
+   "text": "Contradiction dans l'article : le résumé et la conclusion annoncent une distribution homogène de Si, Zn et O, alors que les Résultats disent que le zinc est « sparse and unevenly distributed » et que le MEB à 900 °C décrit des « individual ZnO crystals » dans un verre de silice. Une faible teneur en zinc explique un signal faible, pas une répartition inégale. Valeurs de l'article gardées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-SiO2-900",
+   "text": "Attribution de phase fragile à 900 °C : les auteurs écrivent « ZnSiO4 » alors que le silicate de zinc est Zn2SiO4 (willémite), et disent les pics à 31,7°, 34,4° et 36,2° partagés par ZnO et ce silicate ; pour le critique scientifique, qui cite Alibe et al. (Arch. Metall. Mater. 2018, 63, 539), la raie à 36,2° est propre au ZnO et la coexistence de ZnO et de willémite est la lecture la plus probable, à confirmer par des raies propres à la willémite (fiche JCPDS à consulter). Le quartz (pic unique à 27°) et la tridymite (pic unique vers 21°) sont aussi identifiés sur un seul pic, ce qui ne suffit pas à distinguer ces phases de la cristobalite ou de la willémite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-450",
+   "text": "Décalage constant des raies DRX du ZnO pur : les 11 raies citées (32,2 ; 34,85 ; 36,7°…) sont décalées de +0,33 à +0,51° (moyenne +0,42°) par rapport à la fiche JCPDS 05-0664, alors que les raies du composite à 900 °C (31,7 ; 34,4 ; 36,2°) coïncident avec la fiche (critique scientifique). Le décalage vient probablement du zéro ou de la hauteur d'échantillon, pas de la maille ; la taille de Scherrer n'est pas affectée. Les positions du composite sont peut-être celles de la fiche plutôt que des positions mesurées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZnO-SiO2-700",
+   "text": "Le rôle annoncé de HCl (éviter la précipitation de Zn(OH)2) ne tient pas à ces quantités : l'acétate apporté par l'acétate de zinc neutralise tout le HCl à 0,03 mol par mole de TEOS, et le milieu est tamponné vers pH 5–7 (critique scientifique). Ce qui évite la précipitation est l'absence de base, pas l'acide."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SiO2-700",
+   "text": "Pic du carbone en EDS : les auteurs l'attribuent à des composés organiques réadsorbés ; l'alternative la plus simple, non discutée, est un ruban adhésif carboné ou une métallisation au carbone du porte-échantillon MEB (critique scientifique), ce qui rendrait le pic sans lien avec la synthèse. Le même doute vaut pour le petit pic vers 0,28 keV visible sur l'EDS du composite à 900 °C (Fig. 8d), alors que les auteurs écrivent « no discernible residual carbon » : l'absence de carbone résiduel n'est pas nette sur la figure."
   }
  ],
  "method_sources": [
@@ -1109,10 +1222,22 @@
    "quote": "This combination was selected based on Fardad's work, which demonstrated that low water content and acetic acid catalysis favor the formation of mesoporous structures while minimizing microcrack formation."
   },
   {
-   "route": "ZnO-450",
-   "ref_id": "cit39",
-   "role": "autre",
-   "quote": "This approach aligns with Hasnidawani et al., who demonstrated that ethanol enables the controlled nucleation of rod-like ZnO structures."
+   "route": "SiO2-700",
+   "ref_id": "cit33",
+   "role": "protocole_adapte",
+   "quote": "The thermal treatment regime was carefully staged, beginning with gelation at 75 °C, followed by drying at 120 °C, and concluding with annealing in the 700–900 °C range, a sequence that was designed to minimize structural collapse as depicted from ref."
+  },
+  {
+   "route": "SiO2-700",
+   "ref_id": "cit34",
+   "role": "protocole_adapte",
+   "quote": "The thermal treatment regime was carefully staged, beginning with gelation at 75 °C, followed by drying at 120 °C, and concluding with annealing in the 700–900 °C range, a sequence that was designed to minimize structural collapse as depicted from ref."
+  },
+  {
+   "route": "ZnO-SiO2-700",
+   "ref_id": "cit33",
+   "role": "protocole_adapte",
+   "quote": "A layered annealing protocol, spanning 700–900 °C, was employed to mitigate interfacial thermal stress and reinforce structural integrity."
   }
  ],
  "doubts": [
@@ -1137,12 +1262,12 @@
    "issue": "Le paragraphe du composite ne cite ni gélification à 75 °C, ni séchage à 120 °C, ni solvant. Ces étapes de la voie SiO2 ne sont pas héritées : elles sont déclarées dans missing_fields."
   },
   {
-   "where": "SiO2-700, résultat EDS",
-   "issue": "Le texte principal place le petit pic du carbone à ~0,28 keV (Fig. 6b), la Fig. S1 de l'annexe à environ 0,2 keV. Valeur de l'annexe retenue pour le 700 °C car elle porte sur cet échantillon."
+   "where": "SiO2, EDS, pic du carbone",
+   "issue": "Le texte principal place le petit pic du carbone à ~0,28 keV pour SiO2 recuit à 900 °C (Fig. 6b : légende « EDS mapping of SiO2 annealed at 900 °C »), l'annexe vers 0,2 keV pour SiO2 recuit à 700 °C (Fig. S1) et à 800 °C (Fig. S2). Ce sont des échantillons différents, pas une contradiction sur le même spectre ; chaque valeur est rangée sur son échantillon. La raie C Kα est à ≈ 0,28 keV, les « 0,2 keV » de l'annexe sont approximatifs."
   },
   {
-   "where": "annotation tendance_observee (46,71 %)",
-   "issue": "La hausse de 46,71 % de l'absorption entre silice et composite (Fig. 5) ne précise pas la température de recuit des deux spectres comparés ; elle n'est donc rattachée à aucune voie."
+   "where": "ZnO-SiO2-900, hausse de 46,71 % (Fig. 5)",
+   "issue": "Ni le texte ni la légende textuelle de la Fig. 5 ne donnent la température de recuit. Les étiquettes imprimées dans l'image (« SiO2 at 900 °C », « SiO2-ZnO at 900 °C ») la donnent : la valeur est rattachée à ZnO-SiO2-900, comparée à SiO2-900. Le texte parle d'intensité d'absorption, la figure trace la transmittance (creux de 46,71 %)."
   },
   {
    "where": "ZnO-SiO2-900, DRX",
@@ -1154,7 +1279,15 @@
   },
   {
    "where": "figures",
-   "issue": "Les Fig. 1 et 3 (DRX) ont été ouvertes : elles confirment qualitativement le texte (courbe à 800 °C avec un très faible pic vers 36°) mais n'ont fourni aucune valeur numérique reprise ; aucune valeur lue sur figure n'est dans le JSON."
+   "issue": "Les Fig. 1 et 3 (DRX) ont été ouvertes : elles confirment qualitativement le texte (courbe à 800 °C avec un très faible pic vers 36°) sans valeur numérique reprise. Seules valeurs lues sur figure : les minima de transmission de la Fig. 5 (1075,54 et 1098,21 cm-1), imprimés tels quels sur la figure. Les bandeaux des Fig. 6 à 8 ont été lus pour le doute sur le mode MEB."
+  },
+  {
+   "where": "caractérisation MEB, mode d'acquisition",
+   "issue": "Le texte dit « secondary electron mode » pour toutes les images, mais les bandeaux des figures montrent des détecteurs et des conditions propres à chaque image : Fig. 6a (SiO2, 900 °C) 10 kV, spot 3,5, détecteur BSED ; Fig. 7a (ZnO) 5 kV, spot 3,5, détecteur CBS, ×50 000 ; Fig. 8a-b (composite, 700 et 800 °C) 5 kV, spot 2,5, détecteur ETD ; Fig. 8c (900 °C) 10 kV, spot 2,5, ETD. BSED et CBS sont des détecteurs d'électrons rétrodiffusés. Les conditions du texte sont recopiées ; le mode réel par échantillon reste à confirmer."
+  },
+  {
+   "where": "ZnO-SiO2-900, EDS (Fig. 8d), carbone résiduel",
+   "issue": "Les auteurs écrivent « no discernible residual carbon », mais la Fig. 8d montre un petit pic vers 0,28 keV à gauche du pic de l'oxygène, comme sur l'EDS de SiO2 (Fig. 6b). Citation des auteurs gardée ; voir l'annotation limite_reproductibilite."
   }
  ]
 }

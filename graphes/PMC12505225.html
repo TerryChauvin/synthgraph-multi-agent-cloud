@@ -1,0 +1,108 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC12505225</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC12505225 — Sol-gel synthesis and characterization of ZnO-SiO2 nanocomposites: a comparative study with pure ZnO and SiO2.</h1>
+<h2>Voie : SiO2-700</h2>
+<pre class="mermaid">flowchart LR
+  R18666([&quot;tetraethyl orthosilicate (TEOS)&lt;br/&gt;1 (molar ratio TEOS : EtOH : …&quot;]):::reactif
+  R18666 --&gt;|&quot;precursor&quot;| S22117
+  R18667([&quot;ethanol&lt;br/&gt;10 (molar ratio TEOS : EtOH :…&quot;]):::reactif
+  R18667 --&gt;|&quot;solvent&quot;| S22117
+  R18668([&quot;water&lt;br/&gt;4 (molar ratio TEOS : EtOH : …&quot;]):::reactif
+  R18668 --&gt;|&quot;hydrolysis_agent&quot;| S22117
+  R18669([&quot;acetic acid&lt;br/&gt;0.05 mol per mol TEOS&quot;]):::reactif
+  R18669 --&gt;|&quot;acid&quot;| S22117
+  S22117[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 1 : 10 : 4 (TEOS : EtOH : H2O)&quot;]:::etape
+  S22117 --&gt; S22118
+  S22118[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;stirring_speed : 300 rpm&lt;br/&gt;duration : 3 h&lt;br/&gt;temperature : 25 °C&quot;]:::etape
+  S22118 --&gt; S22119
+  S22119[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 75 °C&quot;]:::etape
+  S22119 --&gt; S22120
+  S22120[&quot;&lt;b&gt;4. age&lt;/b&gt;&lt;br/&gt;duration : 18 h&quot;]:::etape
+  S22120 --&gt; S22121
+  S22121[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&quot;]:::etape
+  S22121 --&gt; S22122
+  S22122[&quot;&lt;b&gt;6. anneal&lt;/b&gt;&lt;br/&gt;temperature : 700 °C&quot;]:::etape
+  S22122 --&gt; M
+  M{{&quot;amorphous silica powder&lt;br/&gt;SiO2&quot;}}:::materiau
+  O87303[&quot;eds_minor_carbon_peak_energy : 0.2 keV&quot;]:::resultat
+  M -.-&gt; O87303
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13994{{&quot;SiO2-700&quot;}}:::materiau
+  B13995[&quot;SiO2-800&quot;]:::etape
+  B13994 --&gt;|&quot;temperature = 800 °C&quot;| B13995
+  B13996[&quot;SiO2-900&quot;]:::etape
+  B13994 --&gt;|&quot;temperature = 900 °C&quot;| B13996
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZnO-450</h2>
+<pre class="mermaid">flowchart LR
+  R18670([&quot;zinc acetate dihydrate&lt;br/&gt;10 g&quot;]):::reactif
+  R18670 --&gt;|&quot;precursor&quot;| S22123
+  R18671([&quot;ethanol&lt;br/&gt;100 mL&quot;]):::reactif
+  R18671 --&gt;|&quot;solvent&quot;| S22123
+  R18672([&quot;sodium hydroxide&lt;br/&gt;1 M&quot;]):::reactif
+  R18672 --&gt;|&quot;base&quot;| S22123
+  S22123[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S22123 --&gt; S22124
+  S22124[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;concentration : 1 M&lt;br/&gt;addition_rate : gradual addition&quot;]:::etape
+  S22124 --&gt; S22125
+  S22125[&quot;&lt;b&gt;3. age&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S22125 --&gt; S22126
+  S22126[&quot;&lt;b&gt;4. anneal&lt;/b&gt;&lt;br/&gt;temperature : 450 °C&quot;]:::etape
+  S22126 --&gt; M
+  M{{&quot;zinc oxide nanoparticles&lt;br/&gt;ZnO&quot;}}:::materiau
+  O87309[&quot;crystallite_size_scherrer : 18.4 nm&quot;]:::resultat
+  M -.-&gt; O87309
+  O87310[&quot;ftir_zn_o_stretching_band : 461 cm-1&quot;]:::resultat
+  M -.-&gt; O87310
+  O87311[&quot;sem_morphology : hierarchical, three-dimension…&quot;]:::resultat
+  M -.-&gt; O87311
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZnO-SiO2-700</h2>
+<pre class="mermaid">flowchart LR
+  R18673([&quot;tetraethyl orthosilicate (TEOS)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18673 --&gt;|&quot;precursor&quot;| S22127
+  R18674([&quot;hydrochloric acid&lt;br/&gt;0.03 M&quot;]):::reactif
+  R18674 --&gt;|&quot;acid&quot;| S22127
+  R18675([&quot;water (with the HCl)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18675 --&gt;|&quot;hydrolysis_agent&quot;| S22127
+  R18676([&quot;zinc acetate&lt;br/&gt;ZnO loading of 10% (by weight…&quot;]):::reactif
+  R18676 --&gt;|&quot;precursor&quot;| S22127
+  S22127[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S22127 --&gt; S22128
+  S22128[&quot;&lt;b&gt;2. add&lt;/b&gt;&lt;br/&gt;concentration : 0.03 M&quot;]:::etape
+  S22128 --&gt; S22129
+  S22129[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S22129 --&gt; S22130
+  S22130[&quot;&lt;b&gt;4. stir&lt;/b&gt;&lt;br/&gt;stirring_speed : 500 rpm&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S22130 --&gt; S22131
+  S22131[&quot;&lt;b&gt;5. age&lt;/b&gt;&lt;br/&gt;duration : 18 h&quot;]:::etape
+  S22131 --&gt; S22132
+  S22132[&quot;&lt;b&gt;6. anneal&lt;/b&gt;&lt;br/&gt;temperature : 700 °C&quot;]:::etape
+  S22132 --&gt; M
+  M{{&quot;ZnO–SiO2 nanocomposite (10 : 90)&lt;br/&gt;&quot;}}:::materiau
+  O87312[&quot;xrd_crystalline_peaks : no distinct peaks, largely am…&quot;]:::resultat
+  M -.-&gt; O87312
+  O87313[&quot;ftir_579_band_position : 579 cm-1&quot;]:::resultat
+  M -.-&gt; O87313
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13998{{&quot;ZnO-SiO2-700&quot;}}:::materiau
+  B13999[&quot;ZnO-SiO2-800&quot;]:::etape
+  B13998 --&gt;|&quot;temperature = 800 °C&quot;| B13999
+  B14000[&quot;ZnO-SiO2-900&quot;]:::etape
+  B13998 --&gt;|&quot;temperature = 900 °C&quot;| B14000
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
