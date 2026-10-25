@@ -39,6 +39,15 @@
    ]
   },
   {
+   "sample": "SCN avant frittage",
+   "defined_in": "Supporting Information, Figure S1 caption",
+   "route": null,
+   "why": "Matériau intermédiaire de la voie SCN (poudre blanche séchée avant le frittage à 500 °C, étape 7 de SCN), seulement montré en image (pores bouchés) ; aucun résultat chiffré, pas de voie propre.",
+   "results_in": [
+    "Fig. S1"
+   ]
+  },
+  {
    "sample": "HCN",
    "defined_in": "Methods, Preparation of acid-treated BCN (HCl)",
    "route": "HCN",
@@ -287,7 +296,7 @@
      "technique": "XPS",
      "result": "C/N molar ratio from XPS, see outcomes",
      "instrument": "Sigma Probe (Thermo Fisher Scientific)",
-     "conditions": null,
+     "conditions": "survey spectra and deconvoluted C 1s and N 1s regions (Figs. S3A–C); no acquisition parameters given",
      "quote": "The chemical states of the bulk and acid-treated g-C3N4 structures were analyzed using X-ray photoelectron spectroscopy (XPS)."
     },
     {
@@ -296,6 +305,27 @@
      "instrument": "F7000 fluorescence spectrometer with femtosecond pulsed laser",
      "conditions": "excitation wavelength = 325 nm; room temperature; double-exponential fit",
      "quote": "Time-resolved photoluminescence (TRPL) emission spectra were recorded to study the dynamics of the charge carriers in the exfoliated and bulk g-C3N4 structures."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "sharp band at 810 cm−1 (out-of-plane breathing modes of the heterocyclic triazine ring); small sharp band at ca. 880 cm−1 (assigned to the N–O stretching mode); broad band at 3500 cm−1 (assigned to the hydroxyl stretching mode)",
+     "instrument": null,
+     "conditions": "KBr pellets, resolution 1 cm−1, ambient temperature (« Fourier transform infrared (FT-IR) spectra were recorded at a resolution of 1 cm−1 with KBr pellets at ambient temperature. »)",
+     "quote": "The sharp band at 810 cm−1 corresponds to the out-of-plane breathing modes of the heterocyclic triazine ring. The small, sharp band at ca. 880 cm−1 was assigned to the stretching mode of the N–O group. Additionally, the broad band at 3500 cm−1 was assigned to the stretching mode of the hydroxyl group."
+    },
+    {
+     "technique": "PL",
+     "result": null,
+     "instrument": "fluorescence spectrophotometer (Dong Woo Optron)",
+     "conditions": "room temperature; excitation wavelength 325 nm; He–Cd laser",
+     "quote": "Room-temperature photoluminescence (PL) spectra were measured at an excitation wavelength of 325 nm using a He–Cd laser attached to a fluorescence spectrophotometer (Dong Woo Optron)."
+    },
+    {
+     "technique": "XPS (C 1s and N 1s peaks)",
+     "result": "C 1s peaks at 287.93 (C1), 285.94 (C2), 284.60 (C3) and 283.16 eV (C4); N 1s peaks at 400.28 (N1) and 398.25 eV (N2)",
+     "instrument": "Sigma Probe (Thermo Fisher Scientific)",
+     "conditions": "peaks reported for the four samples together, without attribution to a single sample (Figs. S3B, S3C)",
+     "quote": "Four distinctive peaks were observed in the deconvoluted C 1s feature (Figure S3B). The two major peaks at 287.93 (C1) and 284.60 eV (C3) were assigned to hybridized carbon in the triazine ring and carbon nitride with low graphitic content. The peak at 285.94 eV (C2) of relatively low intensity was attributed to the aromatic structure of sp2 carbon atoms bonded with nitrogen. The additional peak at 283.16 eV (C4) was attributed to carbon contamination. The deconvoluted N 1s band showed two peaks at 400.28 (N1) and 398.25 eV (N2) that were assigned to the pyrollic and pyridinic nitrogen centers in triazine rings (Figure S3C)."
     }
    ],
    "outcomes": [
@@ -357,6 +387,18 @@
      "value_num": 1.12,
      "unit": "μA",
      "quote": "Notably, the photocurrent of the SCN (7.09 μA) was considerably higher than those of the BCN (1.12 μA), HCN (1.33 μA), and NCN (1.87 μA) samples."
+    },
+    {
+     "property": "C_content_XPS",
+     "value_num": 46.05,
+     "unit": "%",
+     "quote": "BCN HCN NCN SCN C conc. % 46.05 49.85 50.08 66.35"
+    },
+    {
+     "property": "N_content_XPS",
+     "value_num": 49.53,
+     "unit": "%",
+     "quote": "BCN HCN NCN SCN C conc. % 46.05 49.85 50.08 66.35 N conc. % 49.53 50.14 49.90 33.64"
     }
    ],
    "missing_fields": [
@@ -434,7 +476,13 @@
      "action": "add",
      "description": "Add BCN powder to concentrated H2SO4 in a 250 mL conical flask under magnetic stirring.",
      "quote": "The BCN powder (2 g) was added to 100 mL of concentrated H2SO4 in a 250 mL conical flask under constant magnetic stirring to form a pale-yellow-colored solution.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "The bulk structure of g-C3N4 was degraded into nanoporous microrods via chemical means at room temperature as follows."
+      }
+     ],
      "equipment": [
       {
        "type": "conical flask",
@@ -448,7 +496,6 @@
       }
      ],
      "not_stated": [
-      "temperature",
       "stirring_speed",
       "addition_rate"
      ]
@@ -522,7 +569,8 @@
        "name": "duration",
        "value_num": 12,
        "unit": "h",
-       "quote": "The resulting white-colored solution was magnetically stirred for about 12 h at room temperature"
+       "quote": "The resulting white-colored solution was magnetically stirred for about 12 h at room temperature",
+       "value_text": "about 12 h"
       },
       {
        "name": "temperature",
@@ -675,10 +723,10 @@
     },
     {
      "technique": "XRD",
-     "result": "two peaks, (100) near 14.1° and (002) near 27.68°, same basic g-C3N4 structure",
+     "result": "two peaks, same basic g-C3N4 atomic structure; the (002) diffraction peak position shifted from 27.16° from 27.68°; reduced intensity of the (002) plane peak",
      "instrument": "Rigaku D/MAX-2500/PC diffractometer",
      "conditions": "Cu Kα radiation (λ = 0.15418 nm), 40 kV and 100 mA, room temperature",
-     "quote": "Figure 4 shows that all of the samples exhibited two peaks, indicating the same basic g-C3N4 atomic structure."
+     "quote": "More importantly, the (002) diffraction peak position shifted from 27.16° from 27.68°, which confirmed the expansion of the interlayer gap."
     },
     {
      "technique": "photocatalytic MB degradation",
@@ -719,7 +767,7 @@
      "technique": "XPS",
      "result": "C/N molar ratio from XPS, see outcomes",
      "instrument": "Sigma Probe (Thermo Fisher Scientific)",
-     "conditions": null,
+     "conditions": "survey spectra and deconvoluted C 1s and N 1s regions (Figs. S3A–C); no acquisition parameters given",
      "quote": "The chemical states of the bulk and acid-treated g-C3N4 structures were analyzed using X-ray photoelectron spectroscopy (XPS)."
     },
     {
@@ -728,6 +776,27 @@
      "instrument": "F7000 fluorescence spectrometer with femtosecond pulsed laser",
      "conditions": "excitation wavelength = 325 nm; room temperature; double-exponential fit",
      "quote": "Time-resolved photoluminescence (TRPL) emission spectra were recorded to study the dynamics of the charge carriers in the exfoliated and bulk g-C3N4 structures."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "sharp band at 810 cm−1 (out-of-plane breathing modes of the heterocyclic triazine ring); small sharp band at ca. 880 cm−1 (assigned to the N–O stretching mode); broad band at 3500 cm−1 (assigned to the hydroxyl stretching mode); the 3500 cm−1 band was strongest for the SCN sample",
+     "instrument": null,
+     "conditions": "KBr pellets, resolution 1 cm−1, ambient temperature (« Fourier transform infrared (FT-IR) spectra were recorded at a resolution of 1 cm−1 with KBr pellets at ambient temperature. »)",
+     "quote": "The sharp band at 810 cm−1 corresponds to the out-of-plane breathing modes of the heterocyclic triazine ring. The small, sharp band at ca. 880 cm−1 was assigned to the stretching mode of the N–O group. Additionally, the broad band at 3500 cm−1 was assigned to the stretching mode of the hydroxyl group. Curiously, this band was strongest for the SCN sample"
+    },
+    {
+     "technique": "PL",
+     "result": null,
+     "instrument": "fluorescence spectrophotometer (Dong Woo Optron)",
+     "conditions": "room temperature; excitation wavelength 325 nm; He–Cd laser",
+     "quote": "Room-temperature photoluminescence (PL) spectra were measured at an excitation wavelength of 325 nm using a He–Cd laser attached to a fluorescence spectrophotometer (Dong Woo Optron)."
+    },
+    {
+     "technique": "XPS (C 1s and N 1s peaks)",
+     "result": "C 1s peaks at 287.93 (C1), 285.94 (C2), 284.60 (C3) and 283.16 eV (C4); N 1s peaks at 400.28 (N1) and 398.25 eV (N2)",
+     "instrument": "Sigma Probe (Thermo Fisher Scientific)",
+     "conditions": "peaks reported for the four samples together, without attribution to a single sample (Figs. S3B, S3C)",
+     "quote": "Four distinctive peaks were observed in the deconvoluted C 1s feature (Figure S3B). The two major peaks at 287.93 (C1) and 284.60 eV (C3) were assigned to hybridized carbon in the triazine ring and carbon nitride with low graphitic content. The peak at 285.94 eV (C2) of relatively low intensity was attributed to the aromatic structure of sp2 carbon atoms bonded with nitrogen. The additional peak at 283.16 eV (C4) was attributed to carbon contamination. The deconvoluted N 1s band showed two peaks at 400.28 (N1) and 398.25 eV (N2) that were assigned to the pyrollic and pyridinic nitrogen centers in triazine rings (Figure S3C)."
     }
    ],
    "outcomes": [
@@ -808,7 +877,7 @@
     },
     {
      "property": "XRD_peak_002_position",
-     "value_text": "shifted from 27.16° from 27.68° (phrase as written)",
+     "value_text": "shifted from 27.16° from 27.68°",
      "quote": "More importantly, the (002) diffraction peak position shifted from 27.16° from 27.68°, which confirmed the expansion of the interlayer gap."
     },
     {
@@ -820,6 +889,18 @@
      "property": "EIS_charge_transfer_resistance",
      "value_text": "lowest interfacial charge transfer resistance of the four samples",
      "quote": "Notably, the 1D structure synthesized using sulfuric acid had the lowest interfacial charge transfer resistance, which resulted in remarkable charge separation and transport."
+    },
+    {
+     "property": "C_content_XPS",
+     "value_num": 66.35,
+     "unit": "%",
+     "quote": "BCN HCN NCN SCN C conc. % 46.05 49.85 50.08 66.35"
+    },
+    {
+     "property": "N_content_XPS",
+     "value_num": 33.64,
+     "unit": "%",
+     "quote": "BCN HCN NCN SCN C conc. % 46.05 49.85 50.08 66.35 N conc. % 49.53 50.14 49.90 33.64"
     }
    ],
    "missing_fields": [
@@ -859,10 +940,10 @@
      "supplier": "Dae-Jung Co., Ltd.",
      "supplier_quote": "All chemicals were purchased from Junsei Chemical Co., Ltd. (melamine) and Dae-Jung Co., Ltd. (HCl, HNO3, and H2SO4) and were used without further purification.",
      "not_stated": [
-      "amount",
       "purity"
      ],
-     "quote": "For comparison, the BCN powder was also separately treated with concentrated HCl and HNO3 acids under the same experimental conditions."
+     "quote": "For comparison, the BCN powder was also separately treated with concentrated HCl and HNO3 acids under the same experimental conditions.",
+     "amount_text": "same experimental conditions"
     }
    ],
    "succeeded": true,
@@ -927,7 +1008,7 @@
      "technique": "XPS",
      "result": "C/N molar ratio from XPS, see outcomes",
      "instrument": "Sigma Probe (Thermo Fisher Scientific)",
-     "conditions": null,
+     "conditions": "survey spectra and deconvoluted C 1s and N 1s regions (Figs. S3A–C); no acquisition parameters given",
      "quote": "The chemical states of the bulk and acid-treated g-C3N4 structures were analyzed using X-ray photoelectron spectroscopy (XPS)."
     },
     {
@@ -936,6 +1017,27 @@
      "instrument": "F7000 fluorescence spectrometer with femtosecond pulsed laser",
      "conditions": "excitation wavelength = 325 nm; room temperature; double-exponential fit",
      "quote": "Time-resolved photoluminescence (TRPL) emission spectra were recorded to study the dynamics of the charge carriers in the exfoliated and bulk g-C3N4 structures."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "sharp band at 810 cm−1 (out-of-plane breathing modes of the heterocyclic triazine ring); small sharp band at ca. 880 cm−1 (assigned to the N–O stretching mode); broad band at 3500 cm−1 (assigned to the hydroxyl stretching mode)",
+     "instrument": null,
+     "conditions": "KBr pellets, resolution 1 cm−1, ambient temperature (« Fourier transform infrared (FT-IR) spectra were recorded at a resolution of 1 cm−1 with KBr pellets at ambient temperature. »)",
+     "quote": "The sharp band at 810 cm−1 corresponds to the out-of-plane breathing modes of the heterocyclic triazine ring. The small, sharp band at ca. 880 cm−1 was assigned to the stretching mode of the N–O group. Additionally, the broad band at 3500 cm−1 was assigned to the stretching mode of the hydroxyl group."
+    },
+    {
+     "technique": "PL",
+     "result": null,
+     "instrument": "fluorescence spectrophotometer (Dong Woo Optron)",
+     "conditions": "room temperature; excitation wavelength 325 nm; He–Cd laser",
+     "quote": "Room-temperature photoluminescence (PL) spectra were measured at an excitation wavelength of 325 nm using a He–Cd laser attached to a fluorescence spectrophotometer (Dong Woo Optron)."
+    },
+    {
+     "technique": "XPS (C 1s and N 1s peaks)",
+     "result": "C 1s peaks at 287.93 (C1), 285.94 (C2), 284.60 (C3) and 283.16 eV (C4); N 1s peaks at 400.28 (N1) and 398.25 eV (N2)",
+     "instrument": "Sigma Probe (Thermo Fisher Scientific)",
+     "conditions": "peaks reported for the four samples together, without attribution to a single sample (Figs. S3B, S3C)",
+     "quote": "Four distinctive peaks were observed in the deconvoluted C 1s feature (Figure S3B). The two major peaks at 287.93 (C1) and 284.60 eV (C3) were assigned to hybridized carbon in the triazine ring and carbon nitride with low graphitic content. The peak at 285.94 eV (C2) of relatively low intensity was attributed to the aromatic structure of sp2 carbon atoms bonded with nitrogen. The additional peak at 283.16 eV (C4) was attributed to carbon contamination. The deconvoluted N 1s band showed two peaks at 400.28 (N1) and 398.25 eV (N2) that were assigned to the pyrollic and pyridinic nitrogen centers in triazine rings (Figure S3C)."
     }
    ],
    "outcomes": [
@@ -996,6 +1098,18 @@
      "property": "XRD_peak_002_position",
      "value_text": "no peak shift (HCl and HNO3 treated samples)",
      "quote": "Additionally, the absence of a peak shift indicated that the HCl and HNO3 acids were unable to delaminate the BCN structure."
+    },
+    {
+     "property": "C_content_XPS",
+     "value_num": 49.85,
+     "unit": "%",
+     "quote": "BCN HCN NCN SCN C conc. % 46.05 49.85 50.08 66.35"
+    },
+    {
+     "property": "N_content_XPS",
+     "value_num": 50.14,
+     "unit": "%",
+     "quote": "BCN HCN NCN SCN C conc. % 46.05 49.85 50.08 66.35 N conc. % 49.53 50.14 49.90 33.64"
     }
    ]
   },
@@ -1027,10 +1141,10 @@
      "supplier": "Dae-Jung Co., Ltd.",
      "supplier_quote": "All chemicals were purchased from Junsei Chemical Co., Ltd. (melamine) and Dae-Jung Co., Ltd. (HCl, HNO3, and H2SO4) and were used without further purification.",
      "not_stated": [
-      "amount",
       "purity"
      ],
-     "quote": "For comparison, the BCN powder was also separately treated with concentrated HCl and HNO3 acids under the same experimental conditions."
+     "quote": "For comparison, the BCN powder was also separately treated with concentrated HCl and HNO3 acids under the same experimental conditions.",
+     "amount_text": "same experimental conditions"
     }
    ],
    "succeeded": true,
@@ -1095,7 +1209,7 @@
      "technique": "XPS",
      "result": "C/N molar ratio from XPS, see outcomes",
      "instrument": "Sigma Probe (Thermo Fisher Scientific)",
-     "conditions": null,
+     "conditions": "survey spectra and deconvoluted C 1s and N 1s regions (Figs. S3A–C); no acquisition parameters given",
      "quote": "The chemical states of the bulk and acid-treated g-C3N4 structures were analyzed using X-ray photoelectron spectroscopy (XPS)."
     },
     {
@@ -1104,6 +1218,27 @@
      "instrument": "F7000 fluorescence spectrometer with femtosecond pulsed laser",
      "conditions": "excitation wavelength = 325 nm; room temperature; double-exponential fit",
      "quote": "Time-resolved photoluminescence (TRPL) emission spectra were recorded to study the dynamics of the charge carriers in the exfoliated and bulk g-C3N4 structures."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "sharp band at 810 cm−1 (out-of-plane breathing modes of the heterocyclic triazine ring); small sharp band at ca. 880 cm−1 (assigned to the N–O stretching mode); broad band at 3500 cm−1 (assigned to the hydroxyl stretching mode)",
+     "instrument": null,
+     "conditions": "KBr pellets, resolution 1 cm−1, ambient temperature (« Fourier transform infrared (FT-IR) spectra were recorded at a resolution of 1 cm−1 with KBr pellets at ambient temperature. »)",
+     "quote": "The sharp band at 810 cm−1 corresponds to the out-of-plane breathing modes of the heterocyclic triazine ring. The small, sharp band at ca. 880 cm−1 was assigned to the stretching mode of the N–O group. Additionally, the broad band at 3500 cm−1 was assigned to the stretching mode of the hydroxyl group."
+    },
+    {
+     "technique": "PL",
+     "result": null,
+     "instrument": "fluorescence spectrophotometer (Dong Woo Optron)",
+     "conditions": "room temperature; excitation wavelength 325 nm; He–Cd laser",
+     "quote": "Room-temperature photoluminescence (PL) spectra were measured at an excitation wavelength of 325 nm using a He–Cd laser attached to a fluorescence spectrophotometer (Dong Woo Optron)."
+    },
+    {
+     "technique": "XPS (C 1s and N 1s peaks)",
+     "result": "C 1s peaks at 287.93 (C1), 285.94 (C2), 284.60 (C3) and 283.16 eV (C4); N 1s peaks at 400.28 (N1) and 398.25 eV (N2)",
+     "instrument": "Sigma Probe (Thermo Fisher Scientific)",
+     "conditions": "peaks reported for the four samples together, without attribution to a single sample (Figs. S3B, S3C)",
+     "quote": "Four distinctive peaks were observed in the deconvoluted C 1s feature (Figure S3B). The two major peaks at 287.93 (C1) and 284.60 eV (C3) were assigned to hybridized carbon in the triazine ring and carbon nitride with low graphitic content. The peak at 285.94 eV (C2) of relatively low intensity was attributed to the aromatic structure of sp2 carbon atoms bonded with nitrogen. The additional peak at 283.16 eV (C4) was attributed to carbon contamination. The deconvoluted N 1s band showed two peaks at 400.28 (N1) and 398.25 eV (N2) that were assigned to the pyrollic and pyridinic nitrogen centers in triazine rings (Figure S3C)."
     }
    ],
    "outcomes": [
@@ -1159,6 +1294,18 @@
      "value_num": 1.87,
      "unit": "μA",
      "quote": "Notably, the photocurrent of the SCN (7.09 μA) was considerably higher than those of the BCN (1.12 μA), HCN (1.33 μA), and NCN (1.87 μA) samples."
+    },
+    {
+     "property": "C_content_XPS",
+     "value_num": 50.08,
+     "unit": "%",
+     "quote": "BCN HCN NCN SCN C conc. % 46.05 49.85 50.08 66.35"
+    },
+    {
+     "property": "N_content_XPS",
+     "value_num": 49.9,
+     "unit": "%",
+     "quote": "BCN HCN NCN SCN C conc. % 46.05 49.85 50.08 66.35 N conc. % 49.53 50.14 49.90 33.64"
     }
    ]
   },
@@ -1425,7 +1572,7 @@
   {
    "type": "pourquoi_ces_donnees",
    "route": null,
-   "text": "Le seul paramètre balayé est la nature de l'acide concentré (H2SO4, HCl, HNO3), toutes autres conditions étant déclarées « identiques ». Le comparer avec l'échantillon massif non traité permet d'isoler le rôle de l'acide sulfurique (oxydant fort, gros ion sulfate intercalable) sur la morphologie, la surface, la charge de surface et les performances. Un témoin « BCN fritté » est testé pour montrer que le recuit à 500 °C final ne suffit pas à expliquer l'amélioration."
+   "text": "Le seul paramètre balayé est la nature de l'acide concentré (H2SO4, HCl, HNO3), toutes autres conditions étant déclarées « identiques ». Le comparer avec l'échantillon massif non traité permet d'isoler le rôle de l'acide sulfurique (oxydant fort, gros ion sulfate intercalable) sur la morphologie, la surface, la charge de surface et les performances. Un témoin « BCN fritté », dont l'article ne donne ni température ni durée ni atmosphère, est testé pour vérifier le rôle de la température ; les auteurs concluent que le frittage seul n'a pas d'effet sur l'exfoliation ni sur les performances photocatalytiques."
   },
   {
    "type": "comparaison_branches",
@@ -1453,7 +1600,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "SCN",
-   "text": "Hypothèse de chimiste : l'acide sulfurique concentré protone les azotes de la tri-s-triazine et s'intercale entre les feuillets ; l'ajout d'eau libère de la chaleur et fait précipiter le solide protoné, ce qui expliquerait le changement de couleur jaune puis blanc observé. Le frittage à 500 °C éliminerait probablement les espèces sulfatées résiduelles et ré-établirait le réseau g-C3N4. La perte d'azote relevée par XPS (C/N de 0,93 à 1,97) suggère une oxydation partielle par H2SO4 concentré."
+   "text": "Hypothèse de chimiste : l'acide sulfurique concentré protone les azotes de la tri-s-triazine et s'intercale entre les feuillets ; l'ajout d'eau libère de la chaleur et fait précipiter le solide protoné, ce qui expliquerait le changement de couleur jaune puis blanc observé. Le frittage à 500 °C éliminerait probablement les espèces sulfatées résiduelles et ré-établirait le réseau g-C3N4. La perte d'azote relevée par XPS (C/N de 0,93 à 1,97) suggère une oxydation partielle par H2SO4 concentré. Hypothèse alternative du critique scientifique, non démontrée par l'article : H2SO4 concentré dépolymériserait partiellement le g-C3N4 (protonation, coupure de ponts C–NH–C, libération d'oligomères et de melem protonés) ; l'ajout d'eau ferait reprécipiter ces espèces en cristaux allongés, que le frittage à 500 °C recondenserait en g-C3N4 en dégageant NH3 et oxydes de soufre, d'où des bâtonnets poreux plutôt qu'un simple détachement de couches (cas voisin : « A top-down design for easy gram scale synthesis of melem nano rectangular prisms with improved surface area », RSC Advances 2021, melem en prismes obtenu par H2SO4 concentré). Aucune analyse (DRX, IR, soufre) de la poudre blanche avant frittage n'est montrée pour trancher."
   },
   {
    "type": "securite_auteurs",
@@ -1464,17 +1611,37 @@
   {
    "type": "securite_analyse",
    "route": "SCN",
-   "text": "L'acide sulfurique concentré est très corrosif et l'ajout d'eau à 100 mL d'acide est fortement exothermique : il faut verser l'eau lentement dans un bain de glace, avec gants, lunettes et blouse. Les acides concentrés HCl et HNO3 des branches HCN et NCN dégagent des vapeurs irritantes (HCl, NOx) et nécessitent la hotte. Le frittage à 500 °C de poudres imprégnées de sulfate peut libérer des oxydes de soufre ; la mélamine chauffée à 520 °C dégage de l'ammoniac, des gaz toxiques à évacuer."
+   "text": "Les auteurs ajoutent 100 mL d'eau dans 100 mL d'acide sulfurique concentré, soit l'ordre inverse de la règle habituelle (verser l'acide dans l'eau) : la dilution est très exothermique (échauffement estimé à une centaine de kelvins sans refroidissement, ballon de 250 mL rempli à 80 % environ) et peut projeter de l'acide. Le bain de glace, l'addition lente et la hotte, que les auteurs mentionnent, sont indispensables, avec gants, lunettes-écran et blouse ; verser plutôt la suspension acide sur de la glace est plus sûr. Les acides concentrés HCl et HNO3 des branches HCN et NCN dégagent des vapeurs irritantes (HCl, NOx) et nécessitent la hotte. Le frittage à 500 °C de poudres imprégnées de sulfate peut libérer des oxydes de soufre ; la mélamine chauffée à 520 °C dégage de l'ammoniac, des gaz toxiques à évacuer."
   },
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Pureté de la mélamine, concentration exacte des acides (« concentrated »), volume d'acide pour HCN et NCN (« same experimental conditions »), vitesse d'agitation, durée du séchage sous vide, conditions de frittage du témoin BCN fritté et rendement de chaque synthèse ne sont pas donnés. Les figures S1 à S4 du matériel complémentaire (isothermes, XPS, comparaison BCN fritté) sont des images non lues ici ; les surfaces BET, rapports C/N et valeurs de H2 du fritté viennent du texte."
+   "text": "Pureté de la mélamine, concentration exacte des acides (« concentrated »), volume d'acide pour HCN et NCN (« same experimental conditions »), vitesse d'agitation, durée du séchage sous vide, conditions de frittage du témoin BCN fritté et rendement de chaque synthèse ne sont pas donnés. Les figures S1 à S4 du matériel complémentaire (isothermes, XPS, comparaison BCN fritté) sont des images non lues ici ; les surfaces BET, rapports C/N et valeurs de H2 du fritté viennent du texte. La concentration de la solution d'acide chloroplatinique (30 μL pour 0,5 % en masse de Pt) et la lampe de la dégradation du bleu de méthylène (« the lamp was turned on for visible-light irradiation ») ne sont pas décrites."
   },
   {
    "type": "limite_reproductibilite",
    "route": "Electrode_g-C3N4",
    "text": "Le fournisseur et la composition de la solution « Liquion », la quantité déposée, le nombre de couches et la taille de l'électrode de travail ne sont pas donnés ; les courbes d'impédance (Fig. 9C) ne sont décrites que qualitativement. Les électrodes sont préparées de la même façon pour BCN, HCN, NCN et SCN."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SCN",
+   "text": "Durée du frittage contradictoire : les Résultats écrivent « sintering at 500 °C for 1 h in air », les Méthodes « for 2 h in a muffle furnace in air » (2 h retenue). Selon le critique scientifique, la gravure oxydante lente du g-C3N4 à 500 °C sous air (Niu et al., Adv. Funct. Mater. 2012) dépend de la durée : la différence peut changer surface et porosité. De plus, le titre et le résumé annoncent une synthèse « à température ambiante », alors que la voie exige un frittage à 500 °C (et un BCN de départ à 520 °C pendant 4 h) ; seule l'attaque acide est à température ambiante."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SCN",
+   "text": "Les rapports C/N XPS de la table TS1 (0,93 pour BCN, 1,97 pour SCN) sont difficiles à concilier avec le reste : un C/N proche de 2 signifierait une perte de plus de la moitié de l'azote par rapport à C3N4 (0,75), alors que l'IR indique la même composition, que la DRX est inchangée et que la poudre est blanche ; le pic C 1s à 284,6 eV est aussi la position usuelle du carbone de contamination, qui gonfle le rapport, et C + N vaut 100 % pour SCN alors que le texte y dit l'oxygène plus abondant. Une analyse élémentaire par combustion trancherait."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SCN",
+   "text": "Interprétations des auteurs que le critique scientifique juge incompatibles avec les données : (1) un potentiel zêta positif est lu comme une charge de surface négative, et l'inverse pour BCN, alors que le signe du zêta est celui de la charge de surface ; de plus le protocole du zêta (ELSZ–1000 sans ajustement du pH, ou ZetaProbe à pH neutre) n'est pas univoque ; (2) la hausse de la bande interdite (2,54 à 2,72 eV) est attribuée à un « strong quantum confinement effect » pour des bâtonnets de 0,3 à 1 μm de diamètre, alors que le confinement quantique du g-C3N4 n'apparaît que pour quelques nanomètres d'épaisseur (nanofeuillets d'environ 2 nm chez Niu et al. 2012) ; une origine chimique (protonation, oxydation) est plus probable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Cinétique et hydrogène : les constantes de vitesse du tableau 2 (× 10−3 min−1) ne redonnent pas les pourcentages dégradés à 90 min avec ln(A0/A) = kt (19 à 76 % au lieu de 44 à 100 %) mais les redonnent avec un logarithme décimal ; le texte les écrit sans le facteur 10−3 (« 15.61 min−1 »). Pour H2, les valeurs du texte sont en μmol g−1 alors que la Fig. 8 est en μmol ; 34 μmol g−1 sur 25 mg font 0,85 μmol, et la comparaison du tableau TS2 aux autres travaux mélange des unités (μmol h−1, μmol g−1), donc « comparable/higher » n'est pas vérifiable. Les valeurs de l'article sont conservées telles quelles."
   }
  ],
  "method_sources": [
@@ -1498,7 +1665,7 @@
   },
   {
    "where": "HCN et NCN, héritage des étapes",
-   "issue": "L'article dit seulement « under the same experimental conditions » pour HCl et HNO3. L'héritage de toutes les étapes de SCN (agitation 12 h, addition de 100 mL d'eau, centrifugation, lavage, séchage, frittage à 500 °C 2 h) est supposé ; la quantité d'acide n'est pas écrite (déclarée non citée). Le frittage final de HCN/NCN est plausible (le témoin BCN fritté est introduit pour « confirmer le rôle de la température ») mais non écrit."
+   "issue": "L'article dit seulement « under the same experimental conditions » pour HCl et HNO3. L'héritage de toutes les étapes de SCN (agitation 12 h, addition de 100 mL d'eau, centrifugation, lavage, séchage, frittage à 500 °C 2 h) est supposé ; la quantité d'acide n'est pas écrite : elle est donnée en amount_text « same experimental conditions », sans chiffre. Le frittage final de HCN/NCN est plausible (le témoin BCN fritté est introduit pour « confirmer le rôle de la température ») mais non écrit."
   },
   {
    "where": "BCN_sintered",
@@ -1525,12 +1692,32 @@
    "issue": "La plage de fréquences est écrite « 0.01–105 Hz » : probablement 10^5 Hz avec l'exposant aplati. Texte recopié tel quel dans les conditions."
   },
   {
-   "where": "Annexe TS1",
-   "issue": "Les teneurs en C et N (en %) de Table TS1 sont dispersées sur des lignes séparées dans le fichier texte et ne peuvent pas être citées par rangée ; seuls les rapports C/N cités dans le corps du texte sont extraits."
-  },
-  {
    "where": "Figures lues",
    "issue": "Seule la Fig. 4 (XRD) a été ouverte, pour vérifier la position du pic (100) ; aucune valeur n'en est tirée. Les autres résultats comparatifs sont dans le texte et les tableaux. Fig. 7A, 8 et 9 non lues (valeurs données dans le texte)."
+  },
+  {
+   "where": "Annexe TS1, teneurs C et N",
+   "issue": "Dans le fichier texte, chaque cellule de la table TS1 est sur sa ligne. L'en-tête « BCN HCN NCN SCN » fixe l'ordre des quatre colonnes et les rapports C/N de la dernière rangée (0,93 ; 0,99 ; 1,01 ; 1,97), cités dans le corps du texte avec les noms d'échantillons, concordent avec cet ordre. Les teneurs C et N sont donc rangées dans cet ordre (pourcentages, unité « % » reprise de l'en-tête « C conc. % »). Le calcul 50,08/49,90 donne 1,00, la table et le texte écrivent 1,01."
+  },
+  {
+   "where": "Potentiel zêta, protocole",
+   "issue": "Deux protocoles sont écrits dans les Méthodes : analyseur ELSZ–1000, poudre à 0,1 mg mL−1 dans l'eau « without adjusting the pH », puis « The zeta potential of the g-C3N4 suspension at neutral pH was measured by a ZetaProbe ». Instrument et pH ne sont pas univoques ; aucun choix n'est fait, les deux sont rapportés."
+  },
+  {
+   "where": "UV-vis DRS, bords d'absorption",
+   "issue": "Le texte écrit « the absorption edge clearly shifted from a longer to a shorter wavelength (487 to 454 nm) » pour les échantillons traités par acide sans dire quelle longueur d'onde appartient à quel échantillon (BCN et SCN seraient cohérents avec 2,54 et 2,72 eV, mais ce n'est pas écrit). Aucune valeur de bord d'absorption n'est extraite."
+  },
+  {
+   "where": "PL, spectres de photoluminescence",
+   "issue": "Les Méthodes décrivent des spectres PL stationnaires (325 nm, laser He–Cd) mais le texte ne rapporte aucun résultat de PL stationnaire, seulement la TRPL ; la caractérisation PL est donc enregistrée sans résultat."
+  },
+  {
+   "where": "Dégagement de H2, unité",
+   "issue": "Le texte donne les valeurs en μmol g−1 (34,00 ; 1,26 ; 5,54 ; 6,80 ; 1,49) alors que l'ordonnée de la Fig. 8, lue par le critique de fidélité, est « Produced H2/μmol » (SCN ≈ 34 μmol à 4 h pour 25 mg de photocatalyseur, d'où un facteur 40 si la figure est en quantité totale). Valeurs du texte et unité du texte gardées, sans conversion."
+  },
+  {
+   "where": "Fig. 9D, stabilité de BCN",
+   "issue": "La Fig. 9D compare la stabilité du photocourant de SCN et de BCN sur 24 h, mais le texte ne décrit aucun résultat pour BCN (seule la stabilité de SCN est commentée) : aucun résultat BCN n'est extrait."
   }
  ]
 }
