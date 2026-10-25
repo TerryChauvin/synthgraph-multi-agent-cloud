@@ -504,14 +504,14 @@
      "technique": "transient absorption (pump–probe)",
      "result": "temps de relaxation X2 vers X1 de 340 à 420 fs selon la taille ; pas de goulot d'étranglement des phonons",
      "instrument": "Ti:sapphire regenerative amplifié (Coherent), spectromètre Femto-100 (Time-Tech LLC), OPA TOPAS, continuum de lumière blanche (saphir ou CaF2)",
-     "conditions": "pompe à 430 nm excitant sélectivement X2 pour L = 4.3 nm ; densités d'excitation assez basses pour détecter des excitons uniques ; échantillons dans des cuvettes de 1 mm sous agitation vigoureuse ; hacheur à 500 Hz",
+     "conditions": "pompe à 430 nm excitant sélectivement X2 pour L = 4.3 nm ; densités d'excitation assez basses pour détecter des excitons uniques ; échantillons dans des cuvettes de 1 mm sous agitation vigoureuse ; hacheur à 500 Hz; comparaison avec une pompe à 400 nm (Fig. S2 de l'annexe, non disponible)",
      "quote": "Fig. 1b shows the TA spectra of L = 4.3 nm NCs within 1 ps following the excitation by a 430 nm pump pulse which selectively excites X2."
     },
     {
      "technique": "transient absorption (pump–probe)",
      "result": "dynamique de formation de B1 identique à toutes les températures de 85 à 295 K (cinétiques virtuellement identiques)",
      "instrument": null,
-     "conditions": "températures 295, 280, 260, 245, 225, 165, 135, 110 et 85 K (lues dans la légende de la Fig. 3a)",
+     "conditions": "températures 295, 280, 260, 245, 225, 165, 135, 110 et 85 K (lues sur l'image de la Fig. 3a ; la légende texte ne dit que « varying temperatures »)",
      "from_figure": "Fig. 3a",
      "quote": "(a) Hot exciton relaxation dynamics (monitored at B1) for L = 4.3 nm NCs at varying temperatures."
     }
@@ -560,6 +560,25 @@
      "property": "relaxation_dynamics_temperature_dependence",
      "value_text": "negligible temperature dependence (kinetic traces virtually the same within the noise level)",
      "quote": "The kinetic traces are virtually the same within the noise level, showing negligible temperature dependence."
+    },
+    {
+     "property": "TA_pump_400nm_vs_430nm_relaxation_dynamics",
+     "value_text": "similar hot carrier relaxation dynamics",
+     "quote": "excitation at 400 nm generates similar hot carrier relaxation dynamics to the case of 430 nm excitation"
+    },
+    {
+     "property": "B1_exciton_bleach_wavelength",
+     "value_num": 470,
+     "unit": "nm",
+     "value_text": "∼470 nm",
+     "quote": "an exciton bleach (B1) feature at ∼470 nm"
+    },
+    {
+     "property": "A1_induced_absorption_wavelength",
+     "value_num": 490,
+     "unit": "nm",
+     "value_text": "∼490 nm",
+     "quote": "an induced absorption (A1) at ∼490 nm"
     }
    ],
    "missing_fields": [
@@ -589,6 +608,13 @@
      "unit": "°C",
      "parent_value": "120 °C",
      "quote": "140 °C for 6.2 nm"
+    },
+    {
+     "parameter": "acetone",
+     "value_num": 8,
+     "unit": "mL",
+     "parent_value": "added dropwise until the mixture just turned turbid",
+     "quote": "8 mL of acetone was directly added to the supernatant to precipitate the NCs followed by centrifugation at 3500 rpm for 3 min."
     }
    ],
    "succeeded": true,
@@ -951,6 +977,20 @@
       "drying_conditions"
      ]
     }
+   ],
+   "reagents": [
+    {
+     "name": "acetone",
+     "formula": null,
+     "role": "antisolvent",
+     "amount": 8,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "8 mL of acetone was directly added to the supernatant to precipitate the NCs followed by centrifugation at 3500 rpm for 3 min."
+    }
    ]
   },
   {
@@ -971,6 +1011,12 @@
      "value_num": 130,
      "unit": "°C",
      "parent_value": "120 °C",
+     "quote": "130 °C for 5.0 nm"
+    },
+    {
+     "parameter": "acetone",
+     "value_text": "absent",
+     "parent_value": "added dropwise until the mixture just turned turbid",
      "quote": "130 °C for 5.0 nm"
     }
    ],
@@ -1318,12 +1364,6 @@
      "unit": "°C",
      "parent_value": "120 °C",
      "quote": "120 °C for 4.3 nm and 4.5 nm"
-    },
-    {
-     "parameter": "zinc bromide",
-     "value_text": "varying amounts (0–600 mg)",
-     "parent_value": "varying amounts (0–600 mg)",
-     "quote": "varying amounts of ZnBr2 (0–600 mg)"
     }
    ],
    "succeeded": true,
@@ -1979,7 +2019,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article synthétise par injection à chaud des nanocristaux cubiques de CsPbBr3 de huit tailles (arêtes de 2,6 à 6,2 nm), tous en régime de fort confinement quantique, en réglant la température de réaction (88 à 140 °C) et la quantité de ZnBr2. Par absorption transitoire femtoseconde, les auteurs mesurent la relaxation d'un exciton chaud (X2 vers X1) en 340 à 420 fs, presque indépendante de la taille, et un taux de perte d'énergie qui augmente quand la taille diminue : il n'y a donc pas de goulot d'étranglement des phonons. Un échange de ligands oléate vers dodécanethiol et une série en température écartent respectivement le transfert d'énergie aux ligands et l'émission multiphonon.",
+   "text": "L'article synthétise par injection à chaud des nanocristaux cubiques de CsPbBr3 de huit tailles (arêtes de 2,6 à 6,2 nm), tous en régime de fort confinement quantique, en réglant la température de réaction (88 à 140 °C) ; la quantité de ZnBr2 varie aussi (0 à 600 mg), mais l'article ne dit pas son rôle sur la taille. Par absorption transitoire femtoseconde, les auteurs mesurent la relaxation d'un exciton chaud (X2 vers X1) en 340 à 420 fs, presque indépendante de la taille, et un taux de perte d'énergie qui augmente quand la taille diminue : il n'y a donc pas de goulot d'étranglement des phonons. Un échange de ligands oléate vers dodécanethiol et une série en température écartent respectivement le transfert d'énergie aux ligands et l'émission multiphonon.",
    "quote": "Strongly confined CsPbBr3 perovskite nanocrystals exhibit sub-ps hot exciton relaxation dynamics and the absence of a phonon bottleneck."
   },
   {
@@ -2029,7 +2069,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "CsPbBr3-4.3nm",
-   "text": "Hypothèse : l'oléate de césium (0,25 g de Cs2CO3, soit ≈ 0,77 mmol, donc ≈ 1,5 mmol de Cs, dans ≈ 10 mL, dont 0,4 mL injecté, soit ≈ 0,06 mmol de Cs) réagit avec PbBr2 (75 mg, ≈ 0,20 mmol) en excès de plomb et de bromure, probablement complexés par l'acide oléique et l'oleylamine ; ZnBr2 apporte probablement du bromure et favorise une nucléation abondante, donc de petits cristaux. Une température basse et un temps court limiteraient la croissance, ce qui expliquerait les tailles de 2,6 à 6,2 nm quand la température passe de 88 à 140 °C. La trempe à la glace arrête la croissance."
+   "text": "Hypothèse du critique scientifique (non écrite par les auteurs) : la recette (0,25 g de Cs2CO3, soit ≈ 0,77 mmol et ≈ 1,5 mmol de Cs dans ≈ 10 mL d'oléate, dont 0,4 mL injecté, soit ≈ 0,06 mmol de Cs ; 75 mg de PbBr2, soit ≈ 0,20 mmol, donc Pb/Cs ≈ 3,3) est celle de Dong et al. (Nano Lett. 2018, 18, 3716), où la taille est fixée par un équilibre thermodynamique et non par l'arrêt de la croissance : à une température donnée, un excès de bromure (apporté par ZnBr2) stabilise la surface et rend stables de petits cristaux ; la taille d'équilibre diminue quand le rapport Br/Pb augmente et quand la température baisse. Le césium est le réactif limitant. Les temps plus longs aux basses températures (100 à 180 s) traduiraient une mise à l'équilibre plus lente. La trempe à la glace fige l'état. Cette lecture diffère d'une hypothèse purement cinétique (nucléation abondante, croissance limitée par une température basse et un temps court) ; le rôle de ZnBr2 sur la taille n'est pas donné par l'article."
   },
   {
    "type": "securite_analyse",
@@ -2040,6 +2080,31 @@
    "type": "securite_analyse",
    "route": "CsPbBr3-DDT",
    "text": "Le dodécanethiol a une odeur très forte et est irritant ; le flacon scellé de 4 mL contenant de l'hexane (ébullition vers 69 °C) chauffé à 50 °C sous sonication peut monter en pression, ce qui est à surveiller."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3-5.0nm",
+   "text": "Deux incohérences de l'article touchent cet échantillon. (1) La température de 130 °C n'entre dans aucune des deux plages de purification décrites (80–120 °C et 140–190 °C, elles-mêmes incompatibles avec les températures de réaction de 88 à 140 °C) : la purification de cet échantillon ne peut pas être déterminée. (2) Dans le Tableau 1, dE/dt = 0,24 eV ps–1 alors que ΔE/2τr = 0,22/(2 × 0,400) ≈ 0,275 eV ps–1, alors que les sept autres lignes se recalculent à l'arrondi près (critique scientifique) ; la valeur publiée est gardée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3-4.5nm",
+   "text": "L'échantillon de 4,5 nm est préparé à la même température (120 °C) que celui de 4,3 nm et l'article n'écrit pas ce qui les distingue (la quantité de ZnBr2, non donnée, est le seul autre paramètre de taille de la méthode source, Dong et al., Nano Lett. 2018) : cet échantillon ne peut pas être refait de façon distincte de celui de 4,3 nm."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3-2.6nm",
+   "text": "La synthèse triplée utilisée pour 2,6, 3,0 et 3,5 nm représente ≈ 34 mL de liquide (3 × 11 mL de solution de Pb et Br + 1,2 mL d'oléate de Cs), ce qui ne tient pas dans le ballon tricol de 25 mL des Méthodes : le récipient réellement utilisé n'est pas dit, et un plus grand volume ralentirait la trempe dans le bain de glace (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3-DDT",
+   "text": "Le séchage « 2 mL DDT and 5 mL hexane were vacuum-dried for 1 h at 100 °C » évapore l'hexane (ébullition vers 69 °C) : la solution diluée de DDT utilisée ensuite n'existe pas telle qu'écrite, et la dose injectée (0,1 mL) vaut ≈ 0,12 mmol de DDT si l'hexane reste ou ≈ 0,42 mmol s'il est parti (critique scientifique). Le test d'échange est en outre peu discriminant : l'écart ΔE de 4,3 nm (≈ 0,26 eV, soit ≈ 2 100 cm–1) est mal recouvert par les bandes vibrationnelles de l'acide oléique et du dodécanethiol, et aucun IR ni RMN ne confirme l'échange."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Phase cristalline non caractérisée : ni diffraction des rayons X ni diffraction électronique, seulement la forme cubique en TEM et les pics excitoniques ; la présence de Cs4PbBr6 ou d'une incorporation de zinc n'est pas écartée par une mesure (critique scientifique, d'après Cottingham et Brutchey, Chem. Commun. 2016). Le texte annonce par ailleurs ΔE de 0,18 à 0,32 eV alors que le Tableau 1 va jusqu'à 0,37 eV."
   }
  ],
  "method_sources": [
@@ -2083,7 +2148,7 @@
   },
   {
    "where": "CsPbBr3-4.5nm",
-   "issue": "4,3 et 4,5 nm sont tous deux synthétisés à 120 °C (« 120 °C for 4.3 nm and 4.5 nm »). Ce qui les distingue n'est pas écrit ; la quantité de ZnBr2 (0–600 mg) est la seule autre variable citée. La variation « zinc bromide » reprend donc la plage de l'article, sans valeur propre à cet échantillon."
+   "issue": "4,3 et 4,5 nm sont tous deux synthétisés à 120 °C (« 120 °C for 4.3 nm and 4.5 nm »). L'article n'écrit pas ce qui distingue les deux échantillons : aucune variation de synthèse propre à 4,5 nm n'est enregistrée (la plage de ZnBr2 0–600 mg s'applique à toute la série, sans être attribuée à cet échantillon). La branche est gardée car 4,5 nm est un échantillon distinct du Tableau 1."
   },
   {
    "where": "Réactif ZnBr2 (voie de base)",
@@ -2106,12 +2171,16 @@
    "issue": "Les NCs utilisés sont 4,3, 4,0 et 5,0 nm dans le texte, mais 3,9, 4,3 et 5,0 nm dans la légende de la Fig. S11 ; une seule voie post_treatment est créée, sans voie par taille. Le texte principal est retenu."
   },
   {
-   "where": "Figure S2 (légende) et texte",
-   "issue": "Le texte cite L = 4.0 et 4.5 nm pour la comparaison d'excitation à 400 nm (Fig. S2), alors que la légende de Fig. S2 donne 3.5, 4.0 et 4.3 nm."
+   "where": "Figure S2 (légende) et texte ; pompe à 400 nm",
+   "issue": "Le texte cite L = 4.0 et 4.5 nm pour la comparaison d'excitation à 400 nm (Fig. S2), alors que la légende de Fig. S2 donne 3.5, 4.0 et 4.3 nm. La comparaison pompe 400 nm contre 430 nm est enregistrée en résultat de la voie 4,3 nm (légende de Fig. S2 : 3,5, 4,0 et 4,3 nm) ; la taille exacte des échantillons de Fig. S2 reste en doute."
   },
   {
    "where": "Figures lues",
-   "issue": "Fig. 1 (a, b, c), Fig. 3 (a, b) et Fig. 4 ouvertes : elles ne portent aucune valeur absente du texte ou du Tableau 1 (Fig. 4 reprend le tableau en graphique et les surfaces calculées par le modèle EMA), donc aucune valeur lue sur figure. Seules les températures de la légende de Fig. 3a (295 à 85 K) sont reportées dans les conditions de caractérisation. Fig. 2 non ouverte (tracé du Tableau 1)."
+   "issue": "Fig. 1 (a, b, c), Fig. 3 (a, b) et Fig. 4 ouvertes : elles ne portent aucune valeur absente du texte ou du Tableau 1 (Fig. 4 reprend le tableau en graphique et les surfaces calculées par le modèle EMA), donc aucune valeur lue sur figure. Seules les températures inscrites dans l'image de la Fig. 3a (295 à 85 K ; la légende texte ne dit que « varying temperatures ») sont reportées dans les conditions de caractérisation, comme lues sur la figure. Fig. 2 non ouverte (tracé du Tableau 1)."
+  },
+  {
+   "where": "CsPbBr3-6.2nm et CsPbBr3-5.0nm, acétone",
+   "issue": "L'acétone de la voie de base est ajoutée goutte à goutte (protocole 80–120 °C). Pour 6,2 nm (140 °C) elle est remplacée par 8 mL ajoutés directement ; pour 5,0 nm (130 °C) elle est marquée absente car l'article n'attribue aucun protocole de précipitation à 130 °C (hors des plages 80–120 et 140–190 °C), sans dire qu'aucune acétone n'a été ajoutée."
   }
  ]
 }
