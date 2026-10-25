@@ -375,21 +375,6 @@
      "quote": "In comparison, the highest temperature for total HT-CO3 removal for the (NH4)2CO3 prepared materials was also 440 °C.",
      "value_num": 440,
      "unit": "°C"
-    },
-    {
-     "property": "EGA_first_weight_loss",
-     "quote": "Evolved gas analysis (EGA) determined the first weight loss to occur between 100–200 °C and was associated with a simultaneous release of CO2 (m/z = 44) and H2O (m/z = 18)",
-     "value_text": "first weight loss between 100–200 °C with simultaneous release of CO2 (m/z = 44) and H2O (m/z = 18)"
-    },
-    {
-     "property": "EGA_mass_loss_above_350C",
-     "quote": "whilst the mass loss at temperatures >350 °C was exclusively due to loss of CO2 (ESI Fig. 6†)",
-     "value_text": "mass loss at temperatures >350 °C exclusively due to loss of CO2"
-    },
-    {
-     "property": "EGA_NOx_detected",
-     "quote": "For zincian georgeite samples prepared using (NH4)2CO3, small amounts of NOx (m/z = 30 and 46) being emitted were also detected.",
-     "value_text": "small amounts of NOx (m/z = 30 and 46) detected for samples prepared using (NH4)2CO3"
     }
    ],
    "missing_fields": [
@@ -687,6 +672,21 @@
      "property": "DTA_decomposition",
      "quote": "Analysis of the DTA profiles indicated that this was associated with a highly exothermic decomposition (Fig. 8B).",
      "value_text": "highly exothermic decomposition"
+    },
+    {
+     "property": "EGA_first_weight_loss",
+     "quote": "Evolved gas analysis (EGA) determined the first weight loss to occur between 100–200 °C and was associated with a simultaneous release of CO2 (m/z = 44) and H2O (m/z = 18)",
+     "value_text": "first weight loss between 100–200 °C with simultaneous release of CO2 (m/z = 44) and H2O (m/z = 18)"
+    },
+    {
+     "property": "EGA_mass_loss_above_350C",
+     "quote": "whilst the mass loss at temperatures >350 °C was exclusively due to loss of CO2 (ESI Fig. 6†)",
+     "value_text": "mass loss at temperatures >350 °C exclusively due to loss of CO2"
+    },
+    {
+     "property": "EGA_NOx_detected",
+     "quote": "For zincian georgeite samples prepared using (NH4)2CO3, small amounts of NOx (m/z = 30 and 46) being emitted were also detected.",
+     "value_text": "small amounts of NOx (m/z = 30 and 46) detected for samples prepared using (NH4)2CO3"
     }
    ]
   },
@@ -2869,10 +2869,6 @@
    "issue": "Le texte principal donne « exposed to CO2 (50 ml min–1) for 30 min », l'annexe « exposed to an excess quantity of CO2 (80 ml/min) for 30 min ». Valeur du texte principal gardée dans les conditions de la caractérisation, le désaccord y est signalé."
   },
   {
-   "where": "ZG-AC, EGA (Fig. S6) contre texte principal",
-   "issue": "La légende de la Fig. S6 dit que l'EGA a été faite sur le (NH4)2CO3 non lavé (rampe de 5 °C min–1), alors que le texte principal rapporte de cette EGA une perte de masse >350 °C due au seul CO2 (carbonate de haute température) et écrit, pour ce même matériau non lavé, qu'il n'y a pas d'étape de décomposition HT-CO3. Les résultats d'EGA sont rangés tels qu'écrits dans le texte, sans trancher."
-  },
-  {
    "where": "Étalons commerciaux, composition",
    "issue": "La note c du Tableau 2 donne la composition de l'étalon commercial « CuO/ZnO/Al2O3 wt% = 60 : 30 : 10 », la légende de la Fig. 4 « 50 : 33 : 17 CuO/ZnO/Al2O3 ». L'étalon n'est pas une voie de l'article ; la contradiction est consignée sans correction."
   },
@@ -2883,6 +2879,10 @@
   {
    "where": "Calc_ZG-AC et Calc_ZM-2to1, Table S1 (annexe)",
    "issue": "Le tableau S1 est lisible dans le fichier texte mais ses en-têtes de colonnes sont séparés des valeurs ; seule la colonne « MeOH (ppm) » est attribuée sans ambiguïté (rangées « zincian georgeite derived », « zincian malachite derived », « LTS standard » à 67.5 h et 91.5 h) et reprise en résultats."
+  },
+  {
+   "where": "ZG-AC_nowash, résultats EGA",
+   "issue": "Les résultats EGA (ESI Fig. 6) sont rangés sur le matériau non lavé, d'après la légende « The hydroxycarbonate had not been washed » ; le texte présente pourtant la perte >350 °C (HT-CO3) comme générale, alors qu'il dit aussi que le non lavé n'a pas d'étape HT-CO3 : contradiction de l'article (relecture intégrale, orchestrateur)."
   }
  ]
 }
