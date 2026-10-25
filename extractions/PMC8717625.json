@@ -348,16 +348,12 @@
        "quote": "Then, under an Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture and the temperature was raised to 180 °C and kept for 10 min.",
        "value_num": 10,
        "unit": "min"
-      },
-      {
-       "name": "atmosphere",
-       "quote": "Then, under an Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture and the temperature was raised to 180 °C and kept for 10 min.",
-       "value_text": "Ar atmosphere"
       }
      ],
      "equipment": [],
      "not_stated": [
-      "heating_rate"
+      "heating_rate",
+      "atmosphere"
      ]
     },
     {
@@ -640,6 +636,20 @@
      "instrument": "spectromètre à réseau de SPAD (réseau linéaire de 512 pixels) monté sur un microscope inversé Eclipse Ti-U (Nikon)",
      "conditions": "laser pulsé 470 nm, 5 MHz (LDH-P-C-470B, PicoQuant) ; objectif à huile ×100, 1.3 NA ; trente pixels de 2.32 à 2.53 « meV » (sic) ; mesure de 5 min sur le nanocristal de la Fig. 2 ; ⟨N⟩ ∼ 0.1",
      "quote": "An oil immersion objective (×100, 1.3 NA, Nikon) is used to focus light from a pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant) on a single NC and collect the emitted PL."
+    },
+    {
+     "technique": "estimation de ⟨N⟩ (excitation, annexe S3)",
+     "result": "nombre moyen d'excitons par impulsion ⟨N⟩ = 0.13 ± 0.04 (CsPbBr3), pour les mesures des Fig. 3 et 4 (annexe S3)",
+     "instrument": null,
+     "conditions": "valeur estimée de l'annexe S3, à côté de ⟨N⟩ ∼ 0.1 (CsPbBr3) et ⟨N⟩ ∼ 0.3 (CsPbI3) du texte principal",
+     "quote": "For the measurements shown in Figures 3 and 4 of the main text, ⟨N⟩CsPbBr3 = 0.13 ± 0.04 and ⟨N⟩CsPbI3 = 0.28 ± 0.18."
+    },
+    {
+     "technique": "absorption and emission spectra of the nanocrystal ensemble (Fig. 1c)",
+     "result": "spectres d'émission et d'absorption d'ensemble ; pic d'émission d'ensemble à 2.44 eV (CsPbBr3)",
+     "instrument": null,
+     "conditions": "ligne bleue de la Fig. 1c : longueur d'onde d'excitation 470 nm",
+     "quote": "(c) Ensemble emission (solid lines) and absorption (dashed dotted lines) of the CsPbBr3 (green) and CsPbI3 (red) NCs."
     }
    ],
    "outcomes": [
@@ -1049,6 +1059,20 @@
      "instrument": "spectromètre à réseau de SPAD (réseau linéaire de 512 pixels) monté sur un microscope inversé Eclipse Ti-U (Nikon)",
      "conditions": "laser pulsé 470 nm, 5 MHz (LDH-P-C-470B, PicoQuant) ; objectif à huile ×100, 1.3 NA ; 43 pixels de 1.76 à 1.93 « meV » (sic), dont un défectueux omis ; ⟨N⟩ ∼ 0.3",
      "quote": "An oil immersion objective (×100, 1.3 NA, Nikon) is used to focus light from a pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant) on a single NC and collect the emitted PL."
+    },
+    {
+     "technique": "estimation de ⟨N⟩ (excitation, annexe S3)",
+     "result": "nombre moyen d'excitons par impulsion ⟨N⟩ = 0.28 ± 0.18 (CsPbI3), pour les mesures des Fig. 3 et 4 (annexe S3)",
+     "instrument": null,
+     "conditions": "valeur estimée de l'annexe S3, à côté de ⟨N⟩ ∼ 0.1 (CsPbBr3) et ⟨N⟩ ∼ 0.3 (CsPbI3) du texte principal",
+     "quote": "For the measurements shown in Figures 3 and 4 of the main text, ⟨N⟩CsPbBr3 = 0.13 ± 0.04 and ⟨N⟩CsPbI3 = 0.28 ± 0.18."
+    },
+    {
+     "technique": "absorption and emission spectra of the nanocrystal ensemble (Fig. 1c)",
+     "result": "spectres d'émission et d'absorption d'ensemble ; pic d'émission d'ensemble à 1.84 eV (CsPbI3)",
+     "instrument": null,
+     "conditions": "ligne bleue de la Fig. 1c : longueur d'onde d'excitation 470 nm",
+     "quote": "(c) Ensemble emission (solid lines) and absorption (dashed dotted lines) of the CsPbBr3 (green) and CsPbI3 (red) NCs."
     }
    ],
    "outcomes": [
@@ -1355,7 +1379,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "CsPbI3",
-   "text": "Hypothèse : même principe d'injection à chaud, avec PbI2 solubilisé par l'oléylamine, le TDPA et le TOPO à 280 °C ; la température plus haute et le temps de réaction de 15 s conduiraient à des nanocristaux plus gros et à deux populations de taille. La stabilité moindre de CsPbI3 en phase cubique (rapportée dans la littérature) expliquerait le rendement quantique plus faible (∼42%) et la dégradation observée sous excitation."
+   "text": "Hypothèse : même principe d'injection à chaud (métathèse ionique) que pour CsPbBr3, avec PbI2 solubilisé par l'oléylamine et l'acide tétradécylphosphonique, qui se lie fortement au plomb de surface ; la dose de TOPO écrite (3,9 µmol, 2 % du plomb) est trop faible pour participer. À 280 °C la croissance serait très rapide et la sursaturation retomberait en quelques secondes ; le mûrissement pendant les 15 s avant la trempe pourrait produire la seconde population de gros nanocristaux. La stabilité moindre de CsPbI3 en phase cubique (rapportée dans la littérature) expliquerait le rendement quantique plus faible (∼42%) et la dégradation observée sous excitation."
   },
   {
    "type": "mecanisme_analyse",
@@ -1370,7 +1394,7 @@
   {
    "type": "securite_analyse",
    "route": "CsPbI3",
-   "text": "Même vigilance que pour CsPbBr3 (plomb toxique) avec une injection à 280 °C, plus proche du point d'éclair de l'octadécène ; l'acide tétradécylphosphonique et l'oxyde de trioctylphosphine sont irritants ; l'hexane est très inflammable."
+   "text": "Même vigilance que pour CsPbBr3 (plomb toxique), avec une injection à 280 °C : l'octadécène a un point d'éclair d'environ 154 °C (fiche fournisseur Sigma-Aldrich/Millipore), déjà dépassé dès 180 °C ; à 280 °C il est encore sous son ébullition (315 °C) mais il polymérise de façon notable (Dhaene et al., Nano Letters, 2019). L'argon est impératif, sans entrée d'air pendant l'injection, avec un écran, et la trempe dans la glace d'un ballon à 280 °C expose la verrerie au choc thermique ; l'acide tétradécylphosphonique et l'oxyde de trioctylphosphine sont irritants, l'hexane est très inflammable."
   },
   {
    "type": "securite_analyse",
@@ -1380,7 +1404,7 @@
   {
    "type": "securite_analyse",
    "route": "Cs-oleate",
-   "text": "Le chauffage sous vide à 120 °C puis à 160 °C d'un mélange acide oléique/carbonate de césium libère du CO2 et de la vapeur d'eau : prévoir une évacuation du gaz pour éviter la surpression de la verrerie."
+   "text": "Le chauffage sous vide à 120 °C puis à 160 °C d'un mélange acide oléique/carbonate de césium libère de la vapeur d'eau et un peu de CO2 : environ 7 mL de gaz pour 0,31 mmol de carbonate, sous vide, donc sans risque réel de surpression. Le danger plus probable est la mousse au début du chauffage sous vide ; monter la température progressivement."
   },
   {
    "type": "securite_analyse",
@@ -1391,6 +1415,31 @@
    "type": "comparaison_branches",
    "route": null,
    "text": "Il n'y a pas de branches : CsPbBr3 et CsPbI3 sont deux voies de base indépendantes. Elles diffèrent par le sel de plomb (PbBr2 ou PbI2), les ligands (acide oléique et oléylamine pour Br ; oléylamine, TDPA et TOPO pour I), la température de palier (180 ou 280 °C) et le temps avant trempe (25 s ou 15 s), et par le traitement NH4BF4 appliqué seulement à CsPbBr3. Elles donnent des nanocristaux de 5.9 ± 1.3 nm (∼100% de rendement quantique) ou de 7.2 ± 1.9 nm et 15.4 ± 3.3 nm (∼42%)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_NH4BF4",
+   "text": "Le volume de nanocristaux traités par 1 mL de solution saturée de NH4BF4 est de 25 mL dans les Méthodes et de 0,25 mL dans l'annexe S2, soit un facteur 100 sur la dose de BF4− ; 0,25 mL est plus vraisemblable (25 mL dépasserait de près de quatre fois le volume total de la synthèse), mais c'est un choix du lecteur. La concentration des nanocristaux et celle de la solution « saturée » de NH4BF4 dans le toluène (sel ionique très peu soluble, dépendant de l'eau résiduelle) ne sont données nulle part : la dose effective de BF4− n'est pas reproductible à partir du texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbBr3_NH4BF4",
+   "text": "La borne de durée de vie du biexciton de CsPbBr3 est écrite « 234±44 ns » (annexe S5) ; elle est incompatible avec la fenêtre de 1 ns de la mesure, la particule de la Fig. 2 à 190 ps et la valeur de 306 ps de CsPbI3, et il faut sans doute lire 234 ± 44 ps (Ashner et al., ACS Energy Letters, 2019, donnent 35–200 ps pour CsPbBr3). La valeur est conservée telle qu'écrite par les auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les plages d'énergie des pixels du détecteur sont écrites « 2.32 meV to 2.53 meV » (CsPbBr3) et « 1.76 meV to 1.93 meV » (CsPbI3) dans l'annexe S4 : ce sont des eV, sans effet sur la synthèse (30 pixels de 7,2 meV couvrent environ 0,22 eV)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbI3",
+   "text": "La quantité de TOPO (1,5 mg, soit 3,9 µmol et 2 % du plomb) est trop faible pour jouer un rôle de ligand ou de solubilisant ; une erreur d'unité est possible mais non démontrable, car la recette source (Pan et al., ACS Applied Nano Materials, 2020, réf. 13) n'a pas pu être consultée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CsPbI3",
+   "text": "Le produit contient deux populations de taille (7,2 ± 1,9 nm et 15,4 ± 3,3 nm) et les énergies de liaison du biexciton négatives peuvent venir des gros nanocristaux plutôt que d'un effet de surface, car la taille de chaque particule mesurée n'est pas connue. La purification est décrite de deux façons (« two-step centrifugation in hexane » dans les Méthodes, centrifugation du brut puis lavage du culot à l'hexane et seconde centrifugation dans l'annexe), sans dire quelle fraction est gardée, culot ou surnageant."
   }
  ],
  "method_sources": [
@@ -1441,8 +1490,8 @@
    "issue": "L'annexe S5 écrit « 234±44 ns (CsPbBr3) and 306±50 ps (CsPbI3) » : l'unité « ns » du CsPbBr3 est probablement une faute de frappe pour « ps » (valeur unique mesurée 190 ps ; durées de vie BX sub-ns dans l'article). La valeur est extraite telle qu'écrite, sans la convertir."
   },
   {
-   "where": "CsPbBr3 étapes 4 à 6, température et atmosphère",
-   "issue": "L'article ne donne pas la température du mélange après l'injection du Cs-oleate (implicitement le palier à 180 °C) : déclarée non citée. L'atmosphère d'argon est écrite pour l'injection de l'OA et de l'OLA (« under an Ar atmosphere ») et reprise pour le palier à 180 °C, qui suit dans la même phrase."
+   "where": "CsPbBr3 étapes 3 à 6, température et atmosphère",
+   "issue": "L'article ne donne pas la température du mélange après l'injection du Cs-oleate (implicitement le palier à 180 °C) : déclarée non citée. Le texte principal écrit « under an Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture and the temperature was raised to 180 °C and kept for 10 min » dans une seule phrase, mais l'annexe S2 coupe après l'injection et la phrase suivante, sur le palier à 180 °C, n'a pas d'atmosphère : l'argon est donc retenu pour l'injection (étape 3) seulement, et l'atmosphère de l'étape 4 est déclarée non citée (extension de l'argon au palier = lecture possible du texte principal, non confirmée par l'annexe)."
   },
   {
    "where": "CsPbI3, deux populations de taille",

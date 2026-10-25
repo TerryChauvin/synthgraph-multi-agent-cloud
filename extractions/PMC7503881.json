@@ -561,7 +561,7 @@
     {
      "order": 6,
      "action": "add",
-     "description": "Add the phosphate solution drop by drop to the Ca/chitosan solution (in-situ HA formation; target HA content, Ca/P ratio from Scheme 1).",
+     "description": "Add the phosphate solution drop by drop to the Ca/chitosan solution (in-situ HA formation; target HA content; the Ca/P = 1.67 is the nominal precursor molar ratio read on Scheme 1, written nowhere in the text).",
      "quote": "Then, the phosphate solution was introduced drop by drop to Ca/CS solution and stirred for 24 h.",
      "parameters": [
       {
@@ -719,7 +719,7 @@
      "technique": "XRD",
      "result": "HA characteristic peaks (JSPDS 09-432), crystallinity about 23%, crystallite size about 33 nm",
      "instrument": "Philips X’Pert-MPD system",
-     "conditions": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA, between 10 to 60° on a 2θ scale in steps of 0.02 intervals with a counting time of 2 s at each step); composite powders, washed with dH2O to remove sodium nitrate",
+     "conditions": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA, between 10 to 60° on a 2θ scale in steps of 0.02 intervals with a counting time of 2 s at each step); measured on washed CS/HA composite powders (washed several times in dH2O to remove sodium nitrate), not on the coating deposited on Ti6Al4V",
      "quote": "XRD patterns of CS/HA composite powders (Figure 3a) confirmed the presence of HA characteristic peaks, matched with a JSPDS card number of 09-432"
     },
     {
@@ -731,7 +731,7 @@
     },
     {
      "technique": "FTIR",
-     "result": "phosphate bands at 564, 606 and 1030–1105 cm−1; amide II band shifted (1565 to 1571 and 1581 cm−1) with increasing chitosan",
+     "result": "phosphate bands at 564, 606 and 1030–1105 cm−1 (series of three compositions; amide II shift: see group annotation)",
      "instrument": "Thermo Nicolet Avatar",
      "conditions": null,
      "quote": "Fourier transform infrared (FTIR) spectroscopy (Thermo Nicolet Avatar, Jersey City, NJ, USA) was applied to determine different functional groups."
@@ -779,13 +779,13 @@
      "quote": "HA with Ca/P ratio around 1.74 (CS/10wt.% HA), 1.63 (CS/50 wt.% HA), and 1.68 (CS/60 wt.% HA) was obtained in the composite material"
     },
     {
-     "property": "HA_crystallinity",
+     "property": "HA_crystallinity_washed_powder",
      "value_num": 23,
      "unit": "%",
      "quote": "the crystallinity of HA in the CS/HA with 10, 50 and 60 wt.% of HA is determined to be about 23%, 28%, and 33%, respectively"
     },
     {
-     "property": "HA_crystallite_size",
+     "property": "HA_crystallite_size_washed_powder",
      "value_num": 33,
      "unit": "nm",
      "quote": "the crystalline size of HA in nanocomposites consisting of 10, 50 and 60 wt.% HA was estimated about 33, 50 and 53 nm, respectively"
@@ -868,6 +868,11 @@
      "property": "hMSC_proliferation",
      "value_text": "highest proliferation among the three coatings",
      "quote": "CS/10 wt.% HA coating presented the highest proliferation compared to other samples"
+    },
+    {
+     "property": "hMSC_morphology_SEM_day3",
+     "value_text": "the cells showed a spread appearance on the coating surface",
+     "quote": "In the presence of 10 wt.% HA, the cells showed a spread appearance on the coating surface."
     }
    ],
    "missing_fields": [
@@ -923,7 +928,7 @@
      "technique": "XRD",
      "result": "HA characteristic peaks (JSPDS 09-432), crystallinity about 28%, crystallite size about 50 nm",
      "instrument": "Philips X’Pert-MPD system",
-     "conditions": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA, between 10 to 60° on a 2θ scale in steps of 0.02 intervals with a counting time of 2 s at each step); composite powders, washed with dH2O to remove sodium nitrate",
+     "conditions": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA, between 10 to 60° on a 2θ scale in steps of 0.02 intervals with a counting time of 2 s at each step); measured on washed CS/HA composite powders (washed several times in dH2O to remove sodium nitrate), not on the coating deposited on Ti6Al4V",
      "quote": "XRD patterns of CS/HA composite powders (Figure 3a) confirmed the presence of HA characteristic peaks, matched with a JSPDS card number of 09-432"
     },
     {
@@ -935,7 +940,7 @@
     },
     {
      "technique": "FTIR",
-     "result": "phosphate bands at 564, 606 and 1030–1105 cm−1; amide II band shifted (1565 to 1571 and 1581 cm−1) with increasing chitosan",
+     "result": "phosphate bands at 564, 606 and 1030–1105 cm−1 (series of three compositions; amide II shift: see group annotation)",
      "instrument": "Thermo Nicolet Avatar",
      "conditions": null,
      "quote": "Fourier transform infrared (FTIR) spectroscopy (Thermo Nicolet Avatar, Jersey City, NJ, USA) was applied to determine different functional groups."
@@ -983,13 +988,13 @@
      "quote": "HA with Ca/P ratio around 1.74 (CS/10wt.% HA), 1.63 (CS/50 wt.% HA), and 1.68 (CS/60 wt.% HA) was obtained in the composite material"
     },
     {
-     "property": "HA_crystallinity",
+     "property": "HA_crystallinity_washed_powder",
      "value_num": 28,
      "unit": "%",
      "quote": "the crystallinity of HA in the CS/HA with 10, 50 and 60 wt.% of HA is determined to be about 23%, 28%, and 33%, respectively"
     },
     {
-     "property": "HA_crystallite_size",
+     "property": "HA_crystallite_size_washed_powder",
      "value_num": 50,
      "unit": "nm",
      "quote": "the crystalline size of HA in nanocomposites consisting of 10, 50 and 60 wt.% HA was estimated about 33, 50 and 53 nm, respectively"
@@ -1067,10 +1072,18 @@
      "property": "apatite_morphology_after_SBF_21d",
      "value_text": "“cauliflower” morphology of apatite made of needle-like crystals",
      "quote": "A typical “cauliflower” morphology was distinctly observed for CS/50 wt.% HA and CS/60 wt.% HA samples after 21 days of incubation, in which each apatite particles included many needle-like crystals."
+    },
+    {
+     "property": "hMSC_morphology_SEM_day3",
+     "value_text": "only fewer cells stretch and proliferate on the coating surface",
+     "quote": "By increasing the amount of HA content, only fewer cells stretch and proliferate on the coating surface due to HA nanoparticles agglomeration."
     }
    ],
    "missing_fields": [
     "quantities_of_chitosan_Ca_and_P_solutions"
+   ],
+   "not_stated": [
+    "molar_ratio_Ca_P_step6"
    ]
   },
   {
@@ -1118,7 +1131,7 @@
      "technique": "XRD",
      "result": "HA characteristic peaks (JSPDS 09-432), crystallinity about 33%, crystallite size about 53 nm",
      "instrument": "Philips X’Pert-MPD system",
-     "conditions": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA, between 10 to 60° on a 2θ scale in steps of 0.02 intervals with a counting time of 2 s at each step); composite powders, washed with dH2O to remove sodium nitrate",
+     "conditions": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA, between 10 to 60° on a 2θ scale in steps of 0.02 intervals with a counting time of 2 s at each step); measured on washed CS/HA composite powders (washed several times in dH2O to remove sodium nitrate), not on the coating deposited on Ti6Al4V",
      "quote": "XRD patterns of CS/HA composite powders (Figure 3a) confirmed the presence of HA characteristic peaks, matched with a JSPDS card number of 09-432"
     },
     {
@@ -1130,7 +1143,7 @@
     },
     {
      "technique": "FTIR",
-     "result": "phosphate bands at 564, 606 and 1030–1105 cm−1; amide II band shifted (1565 to 1571 and 1581 cm−1) with increasing chitosan",
+     "result": "phosphate bands at 564, 606 and 1030–1105 cm−1 (series of three compositions; amide II shift: see group annotation)",
      "instrument": "Thermo Nicolet Avatar",
      "conditions": null,
      "quote": "Fourier transform infrared (FTIR) spectroscopy (Thermo Nicolet Avatar, Jersey City, NJ, USA) was applied to determine different functional groups."
@@ -1178,13 +1191,13 @@
      "quote": "HA with Ca/P ratio around 1.74 (CS/10wt.% HA), 1.63 (CS/50 wt.% HA), and 1.68 (CS/60 wt.% HA) was obtained in the composite material"
     },
     {
-     "property": "HA_crystallinity",
+     "property": "HA_crystallinity_washed_powder",
      "value_num": 33,
      "unit": "%",
      "quote": "the crystallinity of HA in the CS/HA with 10, 50 and 60 wt.% of HA is determined to be about 23%, 28%, and 33%, respectively"
     },
     {
-     "property": "HA_crystallite_size",
+     "property": "HA_crystallite_size_washed_powder",
      "value_num": 53,
      "unit": "nm",
      "quote": "the crystalline size of HA in nanocomposites consisting of 10, 50 and 60 wt.% HA was estimated about 33, 50 and 53 nm, respectively"
@@ -1272,10 +1285,18 @@
      "property": "XRD_after_SBF_21d",
      "value_text": "apatite formed on the CS/60 wt.% HA coating, low crystallinity",
      "quote": "the XRD pattern (Figure 5d) confirmed the apatite formation on the surface of CS/60 wt.% HA coating after biomimetic treatment for 21 days"
+    },
+    {
+     "property": "hMSC_morphology_SEM_day3",
+     "value_text": "only fewer cells stretch and proliferate on the coating surface",
+     "quote": "By increasing the amount of HA content, only fewer cells stretch and proliferate on the coating surface due to HA nanoparticles agglomeration."
     }
    ],
    "missing_fields": [
     "quantities_of_chitosan_Ca_and_P_solutions"
+   ],
+   "not_stated": [
+    "molar_ratio_Ca_P_step6"
    ]
   }
  ],
@@ -1333,7 +1354,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "CS-50HA",
-   "text": "Le protocole des revêtements à 50 et 60 % n'est donné que par la phrase « The amount of Ca, P and CS solutions were modified » ; aucune quantité n'est écrite, et la définition de la teneur (rapport massique HA sur chitosane sec) n'est pas explicitée.",
+   "text": "Le protocole des revêtements à 50 et 60 % n'est donné que par la phrase « The amount of Ca, P and CS solutions were modified » ; aucune quantité n'est écrite, le rapport Ca/P nominal de ces compositions n'est pas écrit non plus (1,67 n'apparaît que sur le schéma 1, pour une procédure générique), et la définition de la teneur (rapport massique HA sur chitosane sec) n'est pas explicitée.",
    "quote": "The amount of Ca, P and CS solutions were modified to have the composite with the composition of 10, 50, and 60 wt.% HA in CS matrix."
   },
   {
@@ -1351,12 +1372,64 @@
   {
    "type": "mecanisme_analyse",
    "route": "CS-10HA",
-   "text": "Hypothèse de chimiste : l'acide acétique à 1 % protone le chitosane (–NH3+), qui se dissout et complexe Ca2+ par ses fonctions amine et hydroxyle. L'ajout goutte à goutte du phosphate puis de NaOH élève le pH vers 10 : HPO4 2− et OH− précipitent probablement de l'hydroxyapatite (10 Ca2+ + 6 HPO4 2− + 8 OH− → Ca10(PO4)6(OH)2 + 6 H2O), alors que les ions ammonium sont déprotonés en NH3 (consommant ≈ 12 équivalents d'OH− de plus). Le nitrate de sodium formé est le sel que les auteurs observent en XRD avant lavage. Au-dessus de pH ≈ 6,5 le chitosane perd sa charge et gélifie ou précipite autour des cristaux, ce qui fige l'HA dans la matrice. Le rapport Ca/P de 1,67 du schéma 1 est le rapport stœchiométrique de l'HA ; les rapports mesurés en EDS (1,63 à 1,74) en sont proches. Le séchage et le vieillissement à 37 °C ne permettent probablement pas la cristallisation poussée, ce qui est cohérent avec la cristallinité de 23 à 33 %."
+   "text": "Hypothèse de chimiste, non démontrée par l'article : le chitosane est protoné par l'acide acétique et complexe faiblement Ca2+ par ses fonctions amine et hydroxyle. Pendant l'ajout du phosphate en milieu acide, rien ne précipite probablement ; la précipitation n'aurait lieu qu'à l'ajout de NaOH (pH vers 10) : 10 Ca2+ + 6 HPO4 2− + 8 OH− → Ca10(PO4)6(OH)2 + 6 H2O, avec déprotonation de NH4+ en NH3 (≈ 12 équivalents d'OH− de plus). Un phosphate de calcium amorphe se formerait d'abord, puis évoluerait lentement à 25–37 °C vers une apatite peu cristallisée, ce qui est cohérent avec la cristallinité de 23 à 33 %. Au-dessus de pH ≈ 6,5 le chitosane perd sa charge et coagule autour des cristaux : le bain à pH 10 serait donc une suspension ou un gel, non un sol limpide. Le nitrate de sodium formé est le sel que les auteurs observent en XRD avant lavage ; le rapport Ca/P de 1,67 du schéma 1 est le rapport stœchiométrique de l'HA, proche des rapports EDS (1,63 à 1,74). Les 24 h d'agitation après l'ajout du phosphate ne serviraient qu'au mélange, la durée utile étant celle passée à pH 10."
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "L'article ne mentionne aucune précaution. NaOH 5 M à 60 °C pendant 48 h est fortement corrosif (gants, lunettes, récipient en polymère résistant). À pH 10, l'ammonium du phosphate de diammonium libère de l'ammoniac, irritant : travailler sous hotte. L'acétone de nettoyage est inflammable et l'acide acétique irritant. Les poudres d'HA nanométriques et sèches ne doivent pas être inhalées. Le glutaraldéhyde de la fixation cellulaire est toxique (hors synthèse)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le lavage à l'eau distillée pour éliminer le nitrate de sodium n'est décrit que pour les poudres composites analysées en XRD (et FTIR) ; l'article ne dit pas que le sol servant au trempage est lavé, et le nombre de lavages n'est pas écrit. Les résultats de cristallinité (23, 28, 33 %) et de taille de cristallites (33, 50, 53 nm) portent donc sur des poudres lavées, non sur le revêtement déposé sur Ti6Al4V.",
+   "quote": "consequently composites washed several times in dH2O to remove sodium nitrate residues"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Spectres FTIR des trois compositions : l'amide II est à 1565 cm−1 puis se déplace à 1571 et 1581 cm−1 quand la part de chitosane augmente, mais l'article ne dit pas quelle bande correspond à quelle composition (10, 50 ou 60 % d'HA). Les trois bandes sont donc rapportées pour la série, non attribuées à une voie.",
+   "quote": "The band at 1565 cm−1 was related to NH bending (amide II), which shifted to a higher wavenumber at 1571 cm−1 and 1581 cm−1 corresponding to the increasing of CS in composites"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CS-10HA",
+   "text": "La « solution de chitosane à 10 % dans l'acide acétique à 1 % » ne se refait pas telle quelle : 10 g de chitosane (degré de désacétylation supposé de 0,8) portent environ 47 mmol d'amines pour environ 15 mmol d'acide, soit 0,3 proton par amine, alors qu'il en faut au moins un pour dissoudre le chitosane (Rinaudo, Progress in Polymer Science, 2006). Le « 10 wt.% » désigne probablement une autre grandeur ; les autres voies de la base utilisent 2 à 5 % de chitosane avec un excès d'acide."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CS-10HA",
+   "text": "Le sol n'est pas lavé avant le trempage (seules les poudres pour XRD le sont) : les nitrates de sodium et d'ammonium résiduels représenteraient, par calcul du critique scientifique avec l'hypothèse que tout le sol est déposé tel quel, environ 14 % de la masse sèche du dépôt à 10 % d'HA et 46 à 50 % à 50 et 60 % d'HA. Ces sels très solubles peuvent fausser les mesures en SBF (pH, ions), l'angle de contact et la culture cellulaire, et expliquer une part des tendances attribuées à la teneur en HA."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CS-10HA",
+   "text": "La bande FTIR la plus intense, à environ 1375 cm−1, est attribuée par les auteurs au CH3 du chitosane, mais elle correspond plutôt aux nitrates résiduels (élongation N–O du NaNO3 vers 1370–1385 cm−1, d'après une revue sur les sels de nitrate, Materials, MDPI, 2021) ; la coordination –NH2···Ca2+ déduite du déplacement de l'amide II n'est donc pas démontrée par ces spectres."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'affirmation du résumé selon laquelle la stratégie permet de « répondre à la performance clinique » n'est pas soutenue par les résultats : l'adhérence mesurée (2,05 à 3,42 MPa) et la cristallinité (23 à 33 %) sont très inférieures aux seuils de la norme ISO 13779-2 pour les revêtements d'HA (15 MPa et 45 %)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ti6Al4V_alkali",
+   "text": "Une rugosité Ra de 8 ± 2 µm est incompatible avec une surface polie au papier SiC 1000 puis traitée par NaOH : la couche de titanate fait environ 1 µm (Kokubo et Yamaguchi, Materials, MDPI) et ses pores 100–300 nm ; la valeur inclut très probablement l'ondulation de la surface sur 3 mm, sans filtrage décrit, et ne se compare ni aux Ra des revêtements ni à la littérature."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CS-60HA",
+   "text": "Le diagramme XRD après 21 jours en SBF (Fig. 5d) montre des raies d'HA, mais le revêtement contient déjà 60 % d'HA avant immersion et aucun diagramme du même revêtement avant SBF n'est montré : il ne prouve pas la formation d'une apatite nouvelle, que seule la morphologie au MEB appuie."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Aucune masse de précurseur n'est donnée. Calcul minimal du critique scientifique par gramme de chitosane sec, en supposant une teneur définie comme HA/(HA + chitosane sec) et Ca/P = 1,67 : 10 % d'HA correspondent à 0,261 g de Ca(NO3)2·4H2O et 0,088 g de (NH4)2HPO4 ; 50 % à 2,351 g et 0,789 g ; 60 % à 3,526 g et 1,183 g. La soude 1 M nécessaire pour atteindre pH 10 passerait d'environ 3,5 mL (10 %) à 19,6 mL (50 %) et 28,7 mL (60 %) par gramme de chitosane, ce qui change la concentration et la viscosité du bain d'une composition à l'autre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Réserves de lecture : le schéma 1 et le texte divergent (pH > 10 contre environ 10, vieillissement avant ou après le trempage) ; le rapport Ca/P de 1,67 n'est écrit que sur le schéma 1 et les rapports mesurés en EDS (1,63 à 1,74) lui sont cohérents ; les disques d'adhérence (25 mm × 1 mm) diffèrent des plaquettes de 20 × 10 × 2 mm sans que leur traitement soit décrit ; le témoin CTR des Fig. 5c et 6 n'est pas défini ; le phosphore final dans le SBF (37 à 43 mg/L) dépasse le phosphore nominal du SBF (31 mg/L) malgré un phosphore dit consommé, de sorte que les données ICP ne prouvent pas un dépôt net d'apatite."
   }
  ],
  "method_sources": [
@@ -1388,7 +1461,7 @@
   },
   {
    "where": "CS-10HA, lavage",
-   "issue": "« composites washed several times in dH2O to remove sodium nitrate residues » est écrit à propos des poudres analysées par XRD ; l'article ne dit pas si le sol servant au revêtement est lavé. Aucune étape de lavage n'a été ajoutée à la voie."
+   "issue": "« composites washed several times in dH2O to remove sodium nitrate residues » est écrit à propos des poudres analysées par XRD ; l'article ne dit pas si le sol servant au revêtement est lavé. Aucune étape de lavage n'a été ajoutée aux voies ; le passage est consigné en annotation limite_reproductibilité (poudres lavées, nombre de lavages non cité)."
   },
   {
    "where": "CS-10HA étape 9 (trempage)",
@@ -1405,6 +1478,22 @@
   {
    "where": "Géométrie des échantillons",
    "issue": "Les substrats sont des plaquettes de 20 × 10 × 2 mm, mais l'essai d'adhérence utilise des disques de 25 mm de diamètre et 1 mm d'épaisseur. L'article ne dit pas que ces disques suivent le même protocole de traitement et de revêtement ; la même voie leur est attribuée."
+  },
+  {
+   "where": "CS-10HA étape 6, Ca/P = 1,67",
+   "issue": "La valeur 1,67 n'est lue que sur le schéma 1 (case « Adding Phosphate solution to Ca/Cs solution (dropwise) (Ca/P)=1.67 ») ; elle est absente du texte et la légende citée ne la contient pas. Gardée comme rapport molaire nominal des précurseurs, lu sur le schéma, distinct du Ca/P mesuré en EDS."
+  },
+  {
+   "where": "CS-50HA et CS-60HA, Ca/P nominal",
+   "issue": "L'article dit seulement que les quantités de Ca, P et chitosane « were modified » pour ces teneurs : le Ca/P nominal de ces compositions n'est pas écrit, et la valeur 1,67 du schéma générique n'est pas reprise (case not_stated)."
+  },
+  {
+   "where": "CS-10HA/50HA/60HA, FTIR amide II",
+   "issue": "Les bandes 1565, 1571 et 1581 cm−1 sont données pour la série ; l'article ne dit pas quelle bande va avec quelle composition. Elles ne sont donc pas attribuées par voie (annotation de groupe)."
+  },
+  {
+   "where": "CS-50HA et CS-60HA, morphologie des hMSC",
+   "issue": "La phrase « By increasing the amount of HA content, only fewer cells stretch and proliferate » compare à la teneur de 10 % sans distinguer 50 et 60 % ; elle est rapportée aux deux voies par lecture de la comparaison du paragraphe."
   }
  ]
 }
