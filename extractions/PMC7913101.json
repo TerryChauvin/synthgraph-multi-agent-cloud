@@ -148,12 +148,12 @@
      "technique": "TG in Ar",
      "result": "perte de masse d'environ 4,8 % jusqu'à 850 °C, attribuée à la décomposition de BaCO3 présent",
      "instrument": "simultaneous thermal analysis equipment (STA 449 F5 Jupiter, Netzsch)",
-     "conditions": "60–80 mg of powders, alumina sample pan, 10 °C/min from room temperature up to 1100 °C, flowing air (50 mL/min) or Ar (50 mL/min)",
+     "conditions": "60–80 mg of powders, alumina sample pan, 10 °C/min, flowing Ar (50 mL/min), up to 850 °C",
      "quote": "A weight loss of ~4.8% was observed when the PBMO-m sample was heated up to 850 °C in a flowing Ar atmosphere."
     },
     {
      "technique": "EDX (cations)",
-     "result": "composition en cations proche de Pr = Ba = 25 % et Mn = 50 % at., écart-type maximal ±2,3 %",
+     "result": "composition cationique moyenne imprimée sur Fig. 7d : Pr 27.3 / Ba 26.4 / Mn 46.3 at.% ; proche de Pr = Ba = 25 % et Mn = 50 % at., écart-type maximal ±2,3 %",
      "instrument": null,
      "conditions": "EDX couplé au SEM (20 kV) ou au TEM",
      "quote": "the found experimental data are around these values with a maximum standard deviation of ±2.3%"
@@ -213,6 +213,27 @@
      "property": "secondary_phase",
      "value_text": "minor BaCO3, already present in the starting BaO2",
      "quote": "Only the existence of a minor amount of BaCO3, which was already present in the starting BaO2 as a minor phase, was observed."
+    },
+    {
+     "property": "cation_content_Pr_EDX",
+     "value_num": 27.3,
+     "unit": "at.%",
+     "from_figure": "Fig. 7d",
+     "quote": "Figure 7 Microcharacterization of PBMO-m sample: (a,b) TEM images at different magnifications; (c) the corresponding selected area electron diffraction (SAED) pattern-rings and (d) summary results of the EDX measurements."
+    },
+    {
+     "property": "cation_content_Ba_EDX",
+     "value_num": 26.4,
+     "unit": "at.%",
+     "from_figure": "Fig. 7d",
+     "quote": "Figure 7 Microcharacterization of PBMO-m sample: (a,b) TEM images at different magnifications; (c) the corresponding selected area electron diffraction (SAED) pattern-rings and (d) summary results of the EDX measurements."
+    },
+    {
+     "property": "cation_content_Mn_EDX",
+     "value_num": 46.3,
+     "unit": "at.%",
+     "from_figure": "Fig. 7d",
+     "quote": "Figure 7 Microcharacterization of PBMO-m sample: (a,b) TEM images at different magnifications; (c) the corresponding selected area electron diffraction (SAED) pattern-rings and (d) summary results of the EDX measurements."
     }
    ],
    "missing_fields": [
@@ -593,7 +614,7 @@
      "technique": "TG in air",
      "result": "gain de masse de 2,75 % entre 200 et 300 °C (oxydation de la phase réduite en PrBaMn2O6-δ)",
      "instrument": "simultaneous thermal analysis equipment (STA 449 F5 Jupiter, Netzsch)",
-     "conditions": "60–80 mg of powders, alumina sample pan, 10 °C/min from room temperature up to 1100 °C, flowing air (50 mL/min) or Ar (50 mL/min)",
+     "conditions": "60–80 mg of powders, alumina sample pan, 10 °C/min, flowing air (50 mL/min)",
      "quote": "when the PBMO-m + 900 °C/Ar and PBMO-m + 1100 °C/Ar samples were heated in air, a weight gain was observed in the 200–300 °C temperature range (Figure 4b,c, respectively)"
     }
    ],
@@ -697,7 +718,14 @@
      "quote": "The pseudo-cubic symmetry seemed to be maintained up to 800 °C."
     }
    ],
-   "succeeded": true
+   "succeeded": null,
+   "outcomes": [
+    {
+     "property": "crystal_symmetry",
+     "value_text": "The pseudo-cubic symmetry seemed to be maintained up to 800 °C.",
+     "quote": "The pseudo-cubic symmetry seemed to be maintained up to 800 °C."
+    }
+   ]
   },
   {
    "label": "PBMO-m + 800 °C/Ar",
@@ -779,6 +807,27 @@
      "value_text": "between 300 and 700 nm",
      "unit": "nm",
      "quote": "displaying a wide range of sizes between 300 and 700 nm (Figure 6b) and a polygonal shape (inset)"
+    },
+    {
+     "property": "cation_content_Pr_EDX",
+     "value_num": 26.4,
+     "unit": "at.%",
+     "from_figure": "Fig. 8b",
+     "quote": "Figure 8 Microcharacterization of PBMO-m + 1150 °C/Ar sample: (a) TEM image; (b) representative EDX spectrum and the average atomic percentage of the sample; (c–e) HRTEM micrographs and the corresponding fast Fourier transform (FFT) and simulated ED patterns (insets)."
+    },
+    {
+     "property": "cation_content_Ba_EDX",
+     "value_num": 24.8,
+     "unit": "at.%",
+     "from_figure": "Fig. 8b",
+     "quote": "Figure 8 Microcharacterization of PBMO-m + 1150 °C/Ar sample: (a) TEM image; (b) representative EDX spectrum and the average atomic percentage of the sample; (c–e) HRTEM micrographs and the corresponding fast Fourier transform (FFT) and simulated ED patterns (insets)."
+    },
+    {
+     "property": "cation_content_Mn_EDX",
+     "value_num": 48.8,
+     "unit": "at.%",
+     "from_figure": "Fig. 8b",
+     "quote": "Figure 8 Microcharacterization of PBMO-m + 1150 °C/Ar sample: (a) TEM image; (b) representative EDX spectrum and the average atomic percentage of the sample; (c–e) HRTEM micrographs and the corresponding fast Fourier transform (FFT) and simulated ED patterns (insets)."
     }
    ],
    "characterizations": [
@@ -795,6 +844,13 @@
      "instrument": "JEOL-2100-PLUS (200 kV, filament LaB6)",
      "conditions": "résolution ponctuelle 0,25 nm",
      "quote": "However, it was possible to find HRTEM images whose FFT could only be assigned to the tetragonal P4/nmm structure."
+    },
+    {
+     "technique": "EDX (cations)",
+     "result": "composition cationique moyenne imprimée sur Fig. 8b : Pr 26.4 / Ba 24.8 / Mn 48.8 at.% (attendu Pr = Ba = 25 %, Mn = 50 %)",
+     "instrument": null,
+     "conditions": "EDX couplé au SEM (20 kV) ou au TEM",
+     "quote": "The chemical composition (regarding the cations) of the three samples (PBMO-m, PBMO-m + 1100 °C/Ar and PBMO-m + 1100 °C/Ar + ATG/air) was analyzed by EDX spectroscopy and the corresponding spectra and average atomic percentage of the cations are presented in Figure 7d, Figure 8b and Figure 9b, respectively."
     }
    ],
    "succeeded": true
@@ -899,6 +955,13 @@
      "instrument": "Hitachi S-4800 SEM-FEG microscope",
      "conditions": "secondary electron mode at an acceleration voltage of 5 kV",
      "quote": "presents quite similar morphology (Figure 6c); nevertheless, the crystal size, due to the TG heating, increased, exceeding 1 μm"
+    },
+    {
+     "technique": "EDX (cations)",
+     "result": "composition cationique moyenne imprimée sur Fig. 9b : Pr 27.1 / Ba 24.7 / Mn 48.2 at.% (attendu Pr = Ba = 25 %, Mn = 50 %)",
+     "instrument": null,
+     "conditions": "EDX couplé au SEM (20 kV) ou au TEM",
+     "quote": "The chemical composition (regarding the cations) of the three samples (PBMO-m, PBMO-m + 1100 °C/Ar and PBMO-m + 1100 °C/Ar + ATG/air) was analyzed by EDX spectroscopy and the corresponding spectra and average atomic percentage of the cations are presented in Figure 7d, Figure 8b and Figure 9b, respectively."
     }
    ],
    "outcomes": [
@@ -918,6 +981,27 @@
      "property": "crystal_size_SEM",
      "value_text": "exceeding 1 μm",
      "quote": "the crystal size, due to the TG heating, increased, exceeding 1 μm"
+    },
+    {
+     "property": "cation_content_Pr_EDX",
+     "value_num": 27.1,
+     "unit": "at.%",
+     "from_figure": "Fig. 9b",
+     "quote": "Figure 9 Microcharacterization of PBMO-m + 1150 °C/Ar + TG/air sample: (a) TEM image and a SAED pattern (inset); (b) representative EDX spectrum and the average atomic percentage of the sample; (c,d) HRTEM micrographs and the corresponding FFT and simulated ED patterns (insets)."
+    },
+    {
+     "property": "cation_content_Ba_EDX",
+     "value_num": 24.7,
+     "unit": "at.%",
+     "from_figure": "Fig. 9b",
+     "quote": "Figure 9 Microcharacterization of PBMO-m + 1150 °C/Ar + TG/air sample: (a) TEM image and a SAED pattern (inset); (b) representative EDX spectrum and the average atomic percentage of the sample; (c,d) HRTEM micrographs and the corresponding FFT and simulated ED patterns (insets)."
+    },
+    {
+     "property": "cation_content_Mn_EDX",
+     "value_num": 48.2,
+     "unit": "at.%",
+     "from_figure": "Fig. 9b",
+     "quote": "Figure 9 Microcharacterization of PBMO-m + 1150 °C/Ar + TG/air sample: (a) TEM image and a SAED pattern (inset); (b) representative EDX spectrum and the average atomic percentage of the sample; (c,d) HRTEM micrographs and the corresponding FFT and simulated ED patterns (insets)."
     }
    ],
    "missing_fields": [
@@ -931,7 +1015,7 @@
    "is_baseline": true,
    "kind": "device",
    "material": {
-    "name": "dense PrBaMn2O5+δ pellet for impedance measurements",
+    "name": "PrBaMn2O5+δ pellet for impedance measurements",
     "formula": "PrBaMn2O5+δ",
     "family": "perovskite",
     "phase": "reduced layered PrBaMn2O5+δ",
@@ -1323,7 +1407,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Série de broyage : la conversion en pérovskite lue sur la figure 2 passe d'environ 14 % à 15 min à environ 98 % à 150 min. Série de recuit sous argon (3 h) : à 500 °C le carbonate BaCO3 disparaît ; la symétrie reste pseudo-cubique jusqu'à 700 °C, commence à évoluer vers le tétragonal à 800 °C, et la structure tétragonale P4/nmm est bien définie à 900 °C (a = 5,6179 Å, c = 7,7695 Å) ; à 1100 °C les paramètres sont voisins (a = 5,6219 Å, c = 7,7584 Å) avec des pics plus fins. Le gain de masse sous air est de 2,75 % pour 900 °C (PrBaMn2O5,20) et de 3,26 % pour 1100 °C (PrBaMn2O5,05), donc la phase est d'autant plus proche de la phase entièrement réduite que le recuit est chaud.",
+   "text": "Série de broyage : la conversion en pérovskite lue sur la figure 2 passe d'environ 14 % à 15 min à environ 98 % à 150 min. Série de recuit sous argon (3 h) : à 500 °C le carbonate BaCO3 disparaît ; la symétrie reste pseudo-cubique jusqu'à 700 °C, commence à évoluer vers le tétragonal à 800 °C, et la structure tétragonale P4/nmm est bien définie à 900 °C (a = 5,6179 Å, c = 7,7695 Å) ; à 1100 °C les paramètres sont voisins (a = 5,6219 Å, c = 7,7584 Å) avec des pics plus fins. Le gain de masse sous air est de 2,75 % pour 900 °C (PrBaMn2O5,20) et de 3,26 % pour 1100 °C (PrBaMn2O5,05), donc la phase est d'autant plus proche de la phase entièrement réduite que le recuit est chaud. Point de départ de la série de broyage : 0 % de conversion en pérovskite à 0 min (mélange de réactifs de départ, non synthétisé, figure 2).",
    "quote": "the weight gains of 2.75 and 3.26 wt.% determined are in agreement with an approximated oxygen stoichiometry of PrBaMn2O5.20 and PrBaMn2O5.05 for the PBMO-m + 900 °C/Ar and PBMO-m + 1100 °C/Ar samples, respectively"
   },
   {
@@ -1358,6 +1442,26 @@
    "type": "securite_analyse",
    "route": null,
    "text": "BaO2 est un oxydant fort et les composés solubles du baryum sont toxiques ; les poudres d'oxydes nanométriques issues du broyage sont à manipuler sous aspiration, jarre fermée, et le broyage à 600 rpm de poudres oxydantes demande une jarre bien refermée. Les frittages à 1500 °C et les montées sous Ar/H2 exigent un four adapté, et Ar/H2 à 10 % d'hydrogène nécessite des précautions contre l'inflammation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Critique scientifique : la perte de 4,8 % en TG sous Ar, attribuée par les auteurs au seul BaCO3 « minoritaire », est quantitativement incompatible avec 98 % de pérovskite : en retirant la perte d'oxygène maximale (≈ 3,3 %), il faudrait au moins 6,7 % en masse de BaCO3 ; l'eau et le CO2 adsorbés sur la poudre broyée à l'air ou un carbonate amorphe sont plus plausibles, donc la pureté réelle de PBMO-m est inconnue."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Critique scientifique : la formation de la phase réduite PrBaMn2O5+δ sous argon « inerte », sans gaz réducteur, dépend de la pression partielle d'oxygène réelle du four (pureté de l'argon, débit, étanchéité), que l'article ne précise pas ; aucun témoin (même pérovskite préparée par une autre voie recuite dans le même four) ne sépare l'effet de la voie mécanochimique de celui de l'atmosphère. Les auteurs citent eux-mêmes un travail où PrBaMn2O6 chauffé sous gaz inerte à 980 °C ne perd que peu d'oxygène (Journal of Solid State Chemistry 239, 2016)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PBMO-m_pellet_1500Ar",
+   "text": "Critique scientifique : l'énergie d'activation de 0,33 eV annoncée pour l'état réduit (Ar/H2) ne correspond pas à la pente de la figure 10 : les points lus donnent environ 0,06 à 0,12 eV selon la forme d'Arrhenius utilisée (0,06 eV annoncé sous air, cohérent). Valeur de l'article conservée telle quelle ; erreur probable des auteurs (autre échantillon, autre domaine de température ou unité), à recalculer sur les données brutes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Critique scientifique (réserve) : si 26,4 g est la masse d'une bille de WC (cohérent avec une masse volumique de ≈ 14,9 g/cm3 pour un diamètre de 15 mm), le rapport masse de billes sur masse de poudre est d'environ 32:1 pour six billes et 5 g de poudre ; calcul de l'analyse, non donné par l'article. La pureté de 95 % de BaO2 n'est pas corrigée dans les quantités « stœchiométriques », ce qui peut décaler le rapport Ba/Pr/Mn de quelques pour cent, non détectable par l'EDX (±2,3 %)."
   }
  ],
  "method_sources": [],
@@ -1368,7 +1472,7 @@
   },
   {
    "where": "PBMO-m + 1100 °C/Ar + TG/air, étape 1",
-   "issue": "Les Méthodes disent que la TG va « from room temperature up to 1100 °C », alors que les Résultats et la figure 4 s'arrêtent à 850 °C. Valeur des Méthodes retenue (section la plus détaillée) ; la température réellement atteinte sous air est incertaine."
+   "issue": "Les Méthodes disent que la TG va « from room temperature up to 1100 °C », alors que les Résultats (« heated up to 850 °C ») et la figure 4 (axe des abscisses de 50 à 850 °C pour les courbes a, b et c) s'arrêtent à 850 °C. Valeur des Méthodes (1100 °C) retenue car citée, mais la figure 4 la contredit : la température réellement atteinte sous air est incertaine ; la phrase des Méthodes ne dit pas laquelle des deux atmosphères va à 1100 °C."
   },
   {
    "where": "Légendes des figures 8 et 9",
