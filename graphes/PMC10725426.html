@@ -1,0 +1,106 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC10725426</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC10725426 — On-water surface synthesis of electronically coupled 2D polyimide-MoS2 van der Waals heterostructure.</h1>
+<h2>Voie : 2DPI-monolayer</h2>
+<pre class="mermaid">flowchart LR
+  R18345([&quot;tetra(4-aminophenyl)porphyrin (M1)&lt;br/&gt;50 μL&quot;]):::reactif
+  R18345 --&gt;|&quot;precursor&quot;| S21711
+  R18346([&quot;chloroform&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18346 --&gt;|&quot;solvent&quot;| S21711
+  R18347([&quot;perylenetetracarboxylic dianhydride (M2)&lt;br/&gt;20 mL&quot;]):::reactif
+  R18347 --&gt;|&quot;precursor&quot;| S21711
+  R18348([&quot;lithium hydroxide&lt;br/&gt;1 mg/mL aqueous solution used…&quot;]):::reactif
+  R18348 --&gt;|&quot;base&quot;| S21711
+  R18349([&quot;purified water (Milli-Q), subphase&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18349 --&gt;|&quot;solvent&quot;| S21711
+  S21711[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;volume : 50 μL&lt;br/&gt;concentration : 1 mg/mL&quot;]:::etape
+  S21711 --&gt; S21712
+  S21712[&quot;&lt;b&gt;2. compress&lt;/b&gt;&lt;br/&gt;surface_pressure : 10 mN/m&quot;]:::etape
+  S21712 --&gt; S21713
+  S21713[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;volume : 20 mL&lt;br/&gt;concentration_m2 : 1 mg/mL&lt;br/&gt;concentration_lioh : 1 mg/mL&quot;]:::etape
+  S21713 --&gt; S21714
+  S21714[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : room temperature&lt;br/&gt;duration : 30 hours&lt;br/&gt;ph : 11&quot;]:::etape
+  S21714 --&gt; S21715
+  S21715[&quot;&lt;b&gt;5. transfer&lt;/b&gt;&lt;br/&gt;transfer_method : Langmuir-Schafer method&quot;]:::etape
+  S21715 --&gt; M
+  M{{&quot;two-dimensional polyimide (2DPI) monolayer from t…&lt;br/&gt;&quot;}}:::materiau
+  O85650[&quot;film_area : tens of cm2&quot;]:::resultat
+  M -.-&gt; O85650
+  O85651[&quot;film_appearance : shiny brownish-orange color f…&quot;]:::resultat
+  M -.-&gt; O85651
+  O85652[&quot;film_thickness_AFM : 0.8 nm&quot;]:::resultat
+  M -.-&gt; O85652
+  O85653[&quot;M1_monolayer_collapse_surface_pres… : 55 mN/m&quot;]:::resultat
+  M -.-&gt; O85653
+  O85654[&quot;M1_monolayer_mean_molecular_area : 50 Å²&quot;]:::resultat
+  M -.-&gt; O85654
+  O85655[&quot;mean_molecular_area_after_M2_injec… : 180 Å²&quot;]:::resultat
+  M -.-&gt; O85655
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : 2DPI-MoS2_vdWH</h2>
+<pre class="mermaid">flowchart LR
+  R18350([&quot;2DPI monolayer (route 2DPI-monolayer)&lt;br/&gt;one monolayer&quot;]):::reactif
+  R18350 --&gt;|&quot;intermediate&quot;| S21716
+  R18351([&quot;electrochemically exfoliated few-layer MoS2&lt;br/&gt;large-area flakes (~100 μm2),…&quot;]):::reactif
+  R18351 --&gt;|&quot;precursor&quot;| S21716
+  R18352([&quot;SiO2/Si substrate&lt;br/&gt;300 nm SiO2/Si wafers&quot;]):::reactif
+  R18352 --&gt;|&quot;substrate&quot;| S21716
+  S21716[&quot;&lt;b&gt;1. transfer&lt;/b&gt;&lt;br/&gt;transfer_method : wet transfer method&quot;]:::etape
+  S21716 --&gt; S21717
+  S21717[&quot;&lt;b&gt;2. transfer&lt;/b&gt;&quot;]:::etape
+  S21717 --&gt; S21718
+  S21718[&quot;&lt;b&gt;3. anneal&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 2 hours&quot;]:::etape
+  S21718 --&gt; M
+  M{{&quot;2DPI-MoS2 van der Waals heterostructure (monolaye…&lt;br/&gt;&quot;}}:::materiau
+  O85664[&quot;MoS2_A1g_red_shift_in_vdWH : 1.22 cm–1&quot;]:::resultat
+  M -.-&gt; O85664
+  O85665[&quot;MoS2_E2g_shift_in_vdWH : unaltered&quot;]:::resultat
+  M -.-&gt; O85665
+  O85666[&quot;PL_red_shift_vs_pristine_MoS2 : 20 meV&quot;]:::resultat
+  M -.-&gt; O85666
+  O85667[&quot;PL_intensity_vs_pristine_MoS2 : partial quenching of the inte…&quot;]:::resultat
+  M -.-&gt; O85667
+  O85668[&quot;MoS2_flake_thickness_before_stacki… : 7.9–8.6 nm&quot;]:::resultat
+  M -.-&gt; O85668
+  O85669[&quot;MoS2_flake_area : ~100 μm2&quot;]:::resultat
+  M -.-&gt; O85669
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : FET_MoS2_pristine</h2>
+<pre class="mermaid">flowchart LR
+  R18353([&quot;MoS2 flake (channel material)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18353 --&gt;|&quot;active_material&quot;| S21719
+  R18354([&quot;source and drain electrodes&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18354 --&gt;|&quot;electrode&quot;| S21719
+  R18355([&quot;SiO2/Si substrate (bottom dielectric)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18355 --&gt;|&quot;substrate&quot;| S21719
+  S21719[&quot;&lt;b&gt;1. fabricate&lt;/b&gt;&lt;br/&gt;dielectric_thickness : 300 nm&lt;br/&gt;channel_length_width_rat… : ¼&quot;]:::etape
+  S21719 --&gt; M
+  M{{&quot;back-gated field-effect transistor based on prist…&lt;br/&gt;&quot;}}:::materiau
+  O85671[&quot;electron_mobility : 8 cm2/V–s&quot;]:::resultat
+  M -.-&gt; O85671
+  O85672[&quot;on_off_ratio : approximately 105&quot;]:::resultat
+  M -.-&gt; O85672
+  O85673[&quot;electron_mobility_row_1_TableT1 : 5.4&quot;]:::resultat
+  M -.-&gt; O85673
+  O85674[&quot;electron_mobility_row_2_TableT1 : 8&quot;]:::resultat
+  M -.-&gt; O85674
+  O85675[&quot;electron_mobility_average_TableT1 : 6.72&quot;]:::resultat
+  M -.-&gt; O85675
+  O85676[&quot;threshold_voltage_row_1_TableT1 : 0&quot;]:::resultat
+  M -.-&gt; O85676
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13794{{&quot;FET_MoS2_pristine&quot;}}:::materiau
+  B13795[&quot;FET_2DPI-MoS2&quot;]:::etape
+  B13794 --&gt;|&quot;MoS2 flake (channel mate… = 2DPI-MoS2 vdWH film&quot;| B13795
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
