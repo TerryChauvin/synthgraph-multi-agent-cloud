@@ -205,7 +205,13 @@
      "action": "add",
      "description": "Ajouter KMnO4 en plusieurs portions, chaque fois que la couleur verte de MnO3− s'estompe.",
      "quote": "Subsequently, an amount of 2.4 g KMnO4 was added. Additional amounts of KMnO4 were added when the green color of MnO3− diminished. A total of 5 equivalent weights of KMnO4 were sequentially added.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "total_amount",
+       "quote": "A total of 5 equivalent weights of KMnO4 were sequentially added.",
+       "value_text": "5 equivalent weights"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "temperature",
@@ -218,16 +224,19 @@
      "action": "quench",
      "description": "Ajouter la glace en maintenant le mélange dans le bain de glace pour limiter l'élévation de température.",
      "quote": "After the MnO3− was completely oxidized, 400 g of ice was added to the solution while keep in the ice bath to reduce the increasing temperature reaction",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "while keep in the ice bath to reduce the increasing temperature reaction",
+       "value_text": "ice bath"
+      }
+     ],
      "equipment": [
       {
        "type": "ice bath",
        "detail": null,
        "quote": "400 g of ice was added to the solution while keep in the ice bath to reduce the increasing temperature reaction"
       }
-     ],
-     "not_stated": [
-      "temperature"
      ]
     },
     {
@@ -332,14 +341,14 @@
      "technique": "Raman",
      "result": "rapport ID/IG de 0,28 (graphite) à 0,86 (GO)",
      "instrument": "confocal micro-Raman spectroscope (Labram Hr800, Horiba, Ltd., Kyoto, Japan)",
-     "conditions": "longueur d'onde 785 nm, puissance 30 mW",
+     "conditions": "plage 1000–2000, longueur d'onde 785 nm, puissance 30 mW",
      "quote": "When GO was oxidized from graphite, the ID/IG ratio greatly increase from 0.28 to 0.86."
     },
     {
      "technique": "FTIR",
      "result": "pics à 3404, 1718, 1625 et 1055 cm−1 (C–OH, C=O, C=C, C–O)",
      "instrument": "Fourier transform infrared spectroscopy (FT-IR) (model Horiba FT-730, Minami-ku, Kyoto, Japan)",
-     "conditions": "plage 1000–2000",
+     "conditions": null,
      "quote": "a Fourier-transform infrared spectroscopy (FTIR) analysis of the GO spectra (Figure 4a) indicated peaks at 3404, 1718, 1625, and 1055 cm−1 corresponding to the C–OH (hydroxyl), C=O, C=C (possibly due to the skeletal vibration of oxidized graphite domains), and the C–O stretching vibrations, respectively"
     },
     {
@@ -434,6 +443,13 @@
      "property": "inhibition_S.A._10_ppm",
      "quote": "whereas almost no inhibition was observed in the GO sample",
      "value_text": "almost no inhibition"
+    },
+    {
+     "property": "inhibition_P.A._10_ppm",
+     "quote": "The inhibition percentages of the P.A. and S.A. bacteria treated with pristine GO, GO-Ag 0.1 M, and GO-Ag 0.2 M composites at a concentration of 10 ppm.",
+     "value_num": 0.9,
+     "unit": "%",
+     "from_figure": "Fig. 7"
     },
     {
      "property": "inhibition_S.A._20_ppm",
@@ -845,7 +861,7 @@
      "technique": "FTIR",
      "result": "pics à 1200 (C=S), 620 (S–S) et 838 cm−1 (C–SH)",
      "instrument": "Fourier transform infrared spectroscopy (FT-IR) (model Horiba FT-730, Minami-ku, Kyoto, Japan)",
-     "conditions": "plage 1000–2000",
+     "conditions": null,
      "quote": "This was clearly confirmed by FTIR characteristic peaks at 1200, 620, and 838 cm−1 corresponding to the C=S stretch, S–S weak peak, and the secondary bond of thiol group C–SH bending, respectively (Figure 4a)"
     },
     {
@@ -1160,14 +1176,14 @@
      "technique": "Raman",
      "result": "bandes G et D à 1604 et 1354 cm−1 ; ID/IG de 0,86 (GO) à 1,07",
      "instrument": "confocal micro-Raman spectroscope (Labram Hr800, Horiba, Ltd., Kyoto, Japan)",
-     "conditions": "longueur d'onde 785 nm, puissance 30 mW",
+     "conditions": "plage 1000–2000, longueur d'onde 785 nm, puissance 30 mW",
      "quote": "The ratio intensity of ID/IG increased for GO from 0.86 to 1.07, indicating that a new defect was created during the Ag NPs formation process."
     },
     {
      "technique": "FTIR",
      "result": "bande –OH élargie ; pic C=C sp3 à 1564 cm−1",
      "instrument": "Fourier transform infrared spectroscopy (FT-IR) (model Horiba FT-730, Minami-ku, Kyoto, Japan)",
-     "conditions": "plage 1000–2000",
+     "conditions": null,
      "quote": "Remarkably, the peak of the C=C of sp3 clearly appeared in the GO-Ag samples at 1564 cm−1 during the Ag NPs formation attachment to GO sheets."
     },
     {
@@ -1190,6 +1206,13 @@
      "instrument": "thermogravimetric analyzer (TGA, Model TA-TGA Q-500, TA Instrument, New Castle, DE, USA)",
      "conditions": "température ambiante jusqu'à 600 °C",
      "quote": "The Ag content was 31% in GO-Ag 0.1 M while the percentages were 43% and 65% which correspond to the samples of GO-Ag 0.2 M and GO-Ag 0.25 M composites, respectively (Figure 6)."
+    },
+    {
+     "technique": "zeta",
+     "result": "potentiel zêta plus négatif et moins variable que celui de GO (profil de pH 2 à 10, Fig. 5b)",
+     "instrument": "dynamic laser scattering analyzer (Zetasizer, 2000 HAS, Malvern, Worcestershire, UK)",
+     "conditions": "suspensions en cuvette, en triplicats, température ambiante, pH ajusté par HCl ou NH3",
+     "quote": "Moreover, the zeta potential value of GO-Ag has less variation and more negative charge than the GO sample."
     }
    ],
    "outcomes": [
@@ -1273,6 +1296,27 @@
      "property": "inhibition_P.A._100_ppm",
      "quote": "The GO-Ag resulted in an almost 100% inhibition (Figure 9a).",
      "value_text": "almost 100%"
+    },
+    {
+     "property": "zeta_potential_pH_8",
+     "quote": "(b) zeta potential profiles of pristine GO and GO-Ag 0.2 M composite.",
+     "value_num": -40,
+     "unit": "mV",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "zeta_potential_pH_9",
+     "quote": "(b) zeta potential profiles of pristine GO and GO-Ag 0.2 M composite.",
+     "value_num": -42,
+     "unit": "mV",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "zeta_potential_pH_10",
+     "quote": "(b) zeta potential profiles of pristine GO and GO-Ag 0.2 M composite.",
+     "value_num": -40,
+     "unit": "mV",
+     "from_figure": "Fig. 5b"
     }
    ],
    "missing_fields": [
@@ -1464,13 +1508,13 @@
   {
    "type": "mecanisme_analyse",
    "route": "GO",
-   "text": "Dans la méthode de Hummers, KMnO4 dans H2SO4 concentré intercale et oxyde le graphite (formation d'époxydes, d'hydroxyles et de carboxyles) ; les ajouts successifs de KMnO4 compensent la consommation de l'oxydant et l'ajout de glace dilue l'acide et dissipe la chaleur. Le MnO3− cité par les auteurs est probablement un manganate(V) ou une espèce voisine ; l'article ne précise pas la nature exacte de l'espèce verte.",
+   "text": "Hypothèse du critique scientifique (non sourcée dans l'article ; appuyée sur Dreyer et al., Chem. Soc. Rev. 2010, 10.1039/B917103G, et Marcano et al., ACS Nano 2010, 10.1021/nn1006368) : H2SO4 s'intercale dans le graphite, puis KMnO4 donne dans l'acide concentré le cation permanganyle MnO3+ et Mn2O7 (huile rouge sombre), qui oxydent le graphite : époxydes et hydroxyles sur le plan basal, carbonyles et carboxyles en bordure. L'espèce verte que les auteurs notent « MnO3− » est donc plutôt MnO3+ ; les ajouts successifs de KMnO4 compensent l'oxydant consommé, et l'ajout de glace hydrolyse et achève la formation des groupes oxygénés, tout en exfoliant partiellement les feuillets (d(001) ≈ 0,76 nm).",
    "quote": null
   },
   {
    "type": "mecanisme_analyse",
    "route": "GO-Ag 0.2 M",
-   "text": "On attend que l'hydrosulfure greffé sur le GO (thiolates) lie Ag+ par affinité soufre–argent, puis que le milieu basique et les fonctions oxygénées du GO (phénolates, hydroquinones) réduisent Ag+ en Ag0 sur ces sites. Le nombre limité de sites d'ancrage expliquerait la très petite taille (≈ 1 nm) des particules. Le choix de la durée (20 h) et de NaOH 0,1 M n'est pas justifié dans l'article.",
+   "text": "Hypothèse du critique scientifique (non sourcée dans l'article ; appuyée sur Cao et al., Sci. Total Environ. 2019, 679, 270–278, 10.1016/j.scitotenv.2019.05.034) : en milieu NaOH, Ag+ précipite d'abord en Ag2O/AgOH sur et entre les feuillets (OH−/Ag+ = 5 pour 0,2 M), puis est réduit lentement par les fonctions phénol/hydroquinone du GO partiellement réduit (et par la lumière), qui s'oxydent en quinones et carboxylates ; les rares sites soufrés et le sulfure résiduel fixent Ag+ et donnent des germes d'Ag ou d'Ag2S très petits, tandis que l'excès d'argent mûrit en cristallites de plusieurs dizaines de nanomètres (pics XRD fins). L'ancrage « orienté » par des groupes –SH n'est pas démontré ; aucune analyse de phase n'exclut Ag2S ou Ag2O. Le choix de la durée (20 h) et de NaOH 0,1 M n'est pas justifié dans l'article.",
    "quote": null
   },
   {
@@ -1482,7 +1526,7 @@
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "La synthèse du GO emploie H2SO4 concentré et KMnO4, oxydants forts et corrosifs, avec un dégagement de chaleur ; l'ajout d'eau ou de glace doit être lent. NaSH est toxique et libère du sulfure d'hydrogène (H2S) au contact d'acides ou d'humidité : à manipuler sous hotte. Les nanoparticules d'argent et les poudres de GO fines demandent des gants et une protection respiratoire ; les déchets contenant de l'argent sont à collecter à part.",
+   "text": "La synthèse du GO emploie H2SO4 concentré et KMnO4 : Mn2O7, formé dans ce mélange, détone au contact de matières organiques ou au-dessus de ≈ 55 °C ; les ajouts de KMnO4 demandent une température contrôlée (aucune n'est donnée), et l'ajout de 400 g de glace à ≈ 5,4 mol de H2SO4 concentré dégage plus de chaleur que la fusion de la glace n'en absorbe : ajout très lent sous agitation, avec bain de glace et thermomètre. Aucun H2O2 n'est ajouté pour détruire le permanganate et MnO2 résiduels. NaSH à ≈ 4,8 mol/L (8 g dans 30 mL) chauffé à 55 °C pendant 20 h dégage du sulfure d'hydrogène (H2S, très toxique et inflammable), davantage dès que le pH baisse (les carboxyles du GO acidifient le milieu) : hotte, piège à H2S, aucun lavage acide. Ne jamais ajouter d'ammoniac aux surnageants contenant Ag+ en milieu basique (risque de nitrure d'argent explosif à sec). Les nanoparticules d'argent et les poudres de GO fines demandent des gants et une protection respiratoire ; les déchets argentés sont à collecter à part.",
    "quote": null
   },
   {
@@ -1490,6 +1534,66 @@
    "route": null,
    "text": "Pour refaire la synthèse du GO, il manque la masse totale de KMnO4 (« 5 equivalent weights » sans base de calcul claire), les moments des ajouts, la température du bain, la durée précise (« a few days ») et le nombre de lavages. Pour GO-SH et GO-Ag, les températures de synthèse, les vitesses d'agitation, la puissance de sonication, les lavages, la durée de la dialyse et la nature du boyau de dialyse sont absents, ainsi que le rendement. NaOH n'a ni pureté ni fournisseur dans la section Matériaux. Le test antibactérien (bactéries, PBS, plaques, densité optique à 600 nm) n'est pas rangé en voie car il porte sur le matériau fini ; ses résultats sont en résultats des voies.",
    "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Essai antibactérien (section 3.7) : souches S. aureus (S.A.) et P. aeruginosa (P.A.) ; 450 µL de suspension bactérienne dans PBS et 50 µL d'échantillon en plaque 48 puits, 1 h d'incubation, puis 10 µL du mélange et 90 µL de bouillon NB en plaque 96 puits, lecture de la densité optique à 600 nm pendant 4 h. Les plaques sont aussi exposées à une lampe LED (20 cm, 0,6069537 J/cm², 15 min) ; l'ordre exact (lumière avant ou pendant l'incubation) n'est pas clair et l'éclairement peut influencer l'inhibition mesurée.",
+   "quote": "The distance between light and the culture plate was 20 cm and the light energy at that distance was 0.6069537 J/cm2 for a duration of 15 min."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-Ag 0.2 M",
+   "text": "Bilan de l'argent incohérent (critique scientifique) : 2 mL d'AgNO3 0,1, 0,2 et 0,25 M sur 0,1 g de GO-SH apportent 21,6, 43,1 et 53,9 mg d'Ag, soit au plus ≈ 18, 30 et 35 % en masse du produit, alors que la TGA donne 31, 43 et 65 % (EDX : 32,4, 44,3 et 62,0 %) ; ni masse récupérée ni rendement ne sont donnés. Le résidu de TGA sous air à 600 °C peut aussi contenir des sels de Na et de S (Na2SO4, Ag2SO4…), ce qui majore la teneur en Ag ; les valeurs de l'article sont conservées telles quelles.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le Tableau 2 est légendé en « at % » alors que le texte parle de « weight percentage » : en pourcentage atomique, 44,3 % d'Ag correspondraient à environ 87 % en masse, incompatible avec la TGA ; l'étiquette est probablement fausse (critique scientifique).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-Ag 0.2 M",
+   "text": "Taille de l'argent contradictoire (critique scientifique) : le TEM donne 1,24 nm (« 1–2 nm » dans le résumé), mais les pics XRD de l'Ag cfc sont fins (« sharp peak at 38.1° ») ; pour 1–2 nm, la largeur de Scherrer attendue serait de 4 à 7°, alors que des pics de moins de 0,5° indiquent des cristallites d'au moins 20–30 nm. La bande plasmon nette à 401 nm n'est pas non plus attendue pour 1,24 nm. L'échantillon contient donc probablement une population d'Ag beaucoup plus grosse que celle comptée au TEM (Fig. 2g).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO",
+   "text": "Signe du potentiel zêta du GO (critique scientifique) : le texte écrit « 28.2 to 30.3 mV » (positif), alors que la Fig. 5b montre un GO négatif à tout pH de 2 à 10 (≈ −13 à ≈ −33 mV), comme attendu pour des carboxylates ; le signe moins a probablement été perdu et la plage dépend du pH (Li et al., Nature Nanotechnology 2008, 10.1038/nnano.2007.451).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GO-SH",
+   "text": "Le greffage de groupes –SH n'est pas démontré (critique scientifique) : pas de bande S–H vers 2550 cm−1 en FTIR, « C=S » à 1200 cm−1 et « S–S » à 620 cm−1 sont des attributions faibles, aucun spectre XPS S 2p ni dosage du soufre n'est donné. NaSH réduit surtout le GO en rGO faiblement soufré, et le large pic XRD à 25° est celui d'un rGO réempilé plutôt qu'une « contribution of –SH group » (Rabchinskii et al., Nanomaterials 2021, 10.3390/nano12010045 ; Thomas et al., Angew. Chem. 2014, 10.1002/anie.201403085 ou PMID 24895067).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag NPs",
+   "text": "Témoin mal apparié (critique scientifique) : les Ag NPs « sans NaSH ni GO » diffèrent de GO-Ag par le réducteur (citrate), la température (90 °C), l'absence de NaOH et la concentration en Ag (≈ 0,9 mM contre ≈ 7,7 mM) ; la conclusion que NaSH réduit la taille des particules d'Ag n'est donc pas démontrée par ce témoin.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Autres réserves du critique scientifique : « vigorously boiling at 90 °C » est contradictoire (l'eau bout à 100 °C), la cinétique de réduction par le citrate dépend de ce choix ; le plasmon des Ag NPs à 443 nm est plus rouge que ce qu'on attend pour des particules de 19 nm au citrate (≈ 400–410 nm), ce qui évoque des particules plus grosses ou agrégées ; l'espèce verte « MnO3− » n'existe pas sous cette charge (dans H2SO4 concentré, KMnO4 donne MnO3+ puis Mn2O7) et c'est le graphite qui est oxydé, non l'espèce verte ; les bandes Raman D et G sont inversées dans le texte (D vers 1350 cm−1, G vers 1580–1600 cm−1) ; la poudre sèche est « filtrée sur boyau de dialyse », ce qui suppose une redispersion non écrite ; aucun lavage ne détruit le MnO2 résiduel (pas de H2O2) ; le Raman ID/IG de 0,86 à 1,07 n'établit pas à lui seul la création de défauts ; « C=C of sp3 » (1564 cm−1) est un contresens, C=C étant sp2.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "GO-SH",
+   "quote": null,
+   "text": "Hypothèse du critique scientifique (non sourcée dans l'article ; appuyée sur Rabchinskii et al., Nanomaterials 2021, 10.3390/nano12010045, et Fu et al., Environ. Toxicol. Chem. 2014, PMID 25158152) : HS− ouvre une partie des époxydes par attaque nucléophile (β-hydroxythiols) mais agit surtout comme réducteur : élimination des époxydes et hydroxyles, restauration partielle du réseau sp2 (halo (002) vers 25°) et oxydation de HS− en soufre ou polysulfures. Le produit est mieux décrit comme un rGO partiellement réduit, faiblement soufré et chargé en Na, que comme un « GO–SH »."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Ag NPs",
+   "quote": null,
+   "text": "Hypothèse du critique scientifique (non sourcée dans l'article ; appuyée sur Lee et Meisel, J. Phys. Chem. 1982, 10.1021/j100214a025) : à chaud, le citrate réduit Ag+ (en s'oxydant en acétonedicarboxylate), la nucléation est lente puis les particules croissent, et le citrate adsorbé les stabilise électrostatiquement. Cette synthèse est lente et polydisperse, ce qui expliquerait une bande plasmon large et décalée vers le rouge (443 nm)."
   }
  ],
  "method_sources": [
@@ -1521,7 +1625,7 @@
  "doubts": [
   {
    "where": "GO outcomes, zeta_potential_surface_charge",
-   "issue": "Le texte dit « The surface charge of GO ranged from 28.2 to 30.3 mV » (valeurs positives) alors qu'il décrit ensuite une réponse « négative » avec le pH et un GO-Ag « plus négatif » ; le signe moins a probablement été perdu. Valeur recopiée telle qu'écrite, en texte."
+   "issue": "Le texte dit « The surface charge of GO ranged from 28.2 to 30.3 mV » (valeurs positives, sans pH) alors qu'il décrit ensuite une réponse « négative » avec le pH et un GO-Ag « plus négatif » ; le signe moins a probablement été perdu. La Fig. 5b montre des valeurs négatives pour GO, de ≈ −13 mV (pH 2) à ≈ −33 mV (pH 9), avec ≈ −28 mV à pH 8 et ≈ −30 mV à pH 10 : la plage du texte ne correspond qu'à |ζ| à pH 8–10, pas à toute la série. Valeur recopiée telle qu'écrite, en texte."
   },
   {
    "where": "GO-Ag 0.1/0.2/0.25 M, Ag_content_EDX",
@@ -1541,7 +1645,7 @@
   },
   {
    "where": "GO step 2, KMnO4",
-   "issue": "« 2.4 g KMnO4 » puis « a total of 5 equivalent weights of KMnO4 » : le total (5 × 2.4 g = 12 g ?) n'est pas écrit. Seule la première portion de 2.4 g est extraite."
+   "issue": "« 2.4 g KMnO4 » puis « a total of 5 equivalent weights of KMnO4 » : le total (5 × 2.4 g = 12 g ?) n'est pas écrit en masse. Le réactif garde la première portion de 2.4 g ; le total est noté en texte (« 5 equivalent weights ») à l'étape 2, sans conversion."
   },
   {
    "where": "Ag NPs, AgNO3",
@@ -1554,6 +1658,14 @@
   {
    "where": "GO-Ag 0.1/0.25 M, hérédité",
    "issue": "Les branches 0.1 M et 0.25 M héritent des étapes de GO-Ag 0.2 M, choisi comme voie de base car c'est l'échantillon le plus caractérisé ; l'article dit seulement qu'une série de solutions d'AgNO3 a été ajoutée « respectively » au GO-SH."
+  },
+  {
+   "where": "GO-Ag 0.2 M, zeta (Fig. 5b)",
+   "issue": "Valeurs de zêta de GO-Ag 0.2 M à pH 8, 9 et 10 (≈ −40, −42, −40 mV) lues sur la Fig. 5b, précision de lecture ± 2–3 mV ; le texte ne donne aucun chiffre pour GO-Ag, seulement « more negative charge than the GO sample »."
+  },
+  {
+   "where": "Fig. 7, inhibition de GO sur P.A. à 10 ppm",
+   "issue": "Le texte dit seulement « almost no inhibition » pour GO ; la valeur ≈ 0,9 % (barre noire P.A.) est lue sur la Fig. 7, précision ± 0,3 point."
   }
  ]
 }
