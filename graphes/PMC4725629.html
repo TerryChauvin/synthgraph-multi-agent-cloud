@@ -1,0 +1,105 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC4725629</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC4725629 — Synthesis of antimicrobial silver nanoparticles through a photomediated reaction in an aqueous environment.</h1>
+<h2>Voie : AgNP_LB_PVP_420nm</h2>
+<pre class="mermaid">flowchart LR
+  R19132([&quot;silver nitrate&lt;br/&gt;1 mM&quot;]):::reactif
+  R19132 --&gt;|&quot;precursor&quot;| S22849
+  R19133([&quot;polyvinylpyrrolidone (PVP, molecular weight …&lt;br/&gt;300 mg&quot;]):::reactif
+  R19133 --&gt;|&quot;capping_agent&quot;| S22849
+  R19134([&quot;LB medium (lysogeny broth)&lt;br/&gt;10 mL&quot;]):::reactif
+  R19134 --&gt;|&quot;additive&quot;| S22849
+  R19135([&quot;deionized water&lt;br/&gt;200 mL&quot;]):::reactif
+  R19135 --&gt;|&quot;solvent&quot;| S22849
+  S22849[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&quot;]:::etape
+  S22849 --&gt; S22850
+  S22850[&quot;&lt;b&gt;2. react&lt;/b&gt;&lt;br/&gt;wavelength : 420 nm&lt;br/&gt;duration : 10 min&lt;br/&gt;power : 1 W&lt;br/&gt;distance : 60 mm&lt;br/&gt;leds_per_plate : 5&lt;br/&gt;plate_dimensions : 70×70 mm&quot;]:::etape
+  S22850 --&gt; S22851
+  S22851[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 15000 rcf&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S22851 --&gt; M
+  M{{&quot;silver nanoparticles (LB medium, PVP, 420 nm LED)&lt;br/&gt;Ag&quot;}}:::materiau
+  O89267[&quot;synthesis_efficiency : 96.3 %&quot;]:::resultat
+  M -.-&gt; O89267
+  O89268[&quot;reaction_color : colorless or slightly yellow …&quot;]:::resultat
+  M -.-&gt; O89268
+  O89269[&quot;morphology_during_reaction : no change in morphology durin…&quot;]:::resultat
+  M -.-&gt; O89269
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14287{{&quot;AgNP_LB_PVP_420nm&quot;}}:::materiau
+  B14288[&quot;LB_other_wavelengths&quot;]:::etape
+  B14287 --&gt;|&quot;wavelength = any other wavelength bet…&quot;| B14288
+  B14289[&quot;LB_mixture_alone&quot;]:::etape
+  B14287 --&gt;|&quot;LB medium (lysogeny brot… = absent&quot;| B14289
+  B14290[&quot;LB_peptone_fraction&quot;]:::etape
+  B14287 --&gt;|&quot;LB medium (lysogeny brot… = replaced by its peptone …&quot;| B14290
+  B14291[&quot;LB_single_amino_acids&quot;]:::etape
+  B14287 --&gt;|&quot;LB medium (lysogeny brot… = replaced by individual a…&quot;| B14291
+  B14292[&quot;LB_alanine&quot;]:::etape
+  B14287 --&gt;|&quot;LB medium (lysogeny brot… = replaced by alanine&quot;| B14292
+  B14293[&quot;LB_leucine&quot;]:::etape
+  B14287 --&gt;|&quot;LB medium (lysogeny brot… = replaced by leucine&quot;| B14293
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNP_Glycine</h2>
+<pre class="mermaid">flowchart LR
+  R19140([&quot;silver nitrate&lt;br/&gt;1 mM&quot;]):::reactif
+  R19140 --&gt;|&quot;precursor&quot;| S22852
+  R19141([&quot;polyvinylpyrrolidone (PVP)&lt;br/&gt;150 mg per 100 mL&quot;]):::reactif
+  R19141 --&gt;|&quot;capping_agent&quot;| S22852
+  R19142([&quot;glycine&lt;br/&gt;14 mM&quot;]):::reactif
+  R19142 --&gt;|&quot;additive&quot;| S22852
+  R19143([&quot;Tris-HCl (1 M, pH 8.5)&lt;br/&gt;20 μL per 100 mL&quot;]):::reactif
+  R19143 --&gt;|&quot;additive&quot;| S22852
+  R19144([&quot;water (solvent)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19144 --&gt;|&quot;solvent&quot;| S22852
+  R19145([&quot;deionized water (resuspension)&lt;br/&gt;2 mL&quot;]):::reactif
+  R19145 --&gt;|&quot;solvent&quot;| S22852
+  S22852[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;volume : 200 mL&quot;]:::etape
+  S22852 --&gt; S22853
+  S22853[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S22853 --&gt; S22854
+  S22854[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;wavelength : 420 nm&lt;br/&gt;duration : 10 min&lt;br/&gt;power : 1 W&lt;br/&gt;distance : 60 mm&lt;br/&gt;leds_per_plate : 5&lt;br/&gt;plate_dimensions : 70×70 mm&quot;]:::etape
+  S22854 --&gt; S22855
+  S22855[&quot;&lt;b&gt;4. filter&lt;/b&gt;&lt;br/&gt;pore_size : 0.2 μm&quot;]:::etape
+  S22855 --&gt; S22856
+  S22856[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 15000 rcf&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S22856 --&gt; S22857
+  S22857[&quot;&lt;b&gt;6. disperse&lt;/b&gt;&lt;br/&gt;volume : 2 mL&quot;]:::etape
+  S22857 --&gt; M
+  M{{&quot;silver nanoparticles (glycine)&lt;br/&gt;Ag&quot;}}:::materiau
+  O89276[&quot;morphology : spherical&quot;]:::resultat
+  M -.-&gt; O89276
+  O89277[&quot;size_regularity : highly irregular in size, ten…&quot;]:::resultat
+  M -.-&gt; O89277
+  O89278[&quot;yield_among_key_amino_acids : its addition produced the hig…&quot;]:::resultat
+  M -.-&gt; O89278
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14294{{&quot;AgNP_Glycine&quot;}}:::materiau
+  B14295[&quot;Glycine_alt_chloride_sources&quot;]:::etape
+  B14294 --&gt;|&quot;Tris-HCl (1 M, pH 8.5) = replaced by hydrochloric…&quot;| B14295
+  B14296[&quot;Glycine_NaClO&quot;]:::etape
+  B14294 --&gt;|&quot;Tris-HCl (1 M, pH 8.5) = replaced by sodium hypoc…&quot;| B14296
+  B14298[&quot;AgNP_PVP_NaClO&quot;]:::etape
+  B14294 --&gt;|&quot;silver nitrate = 4 mM&lt;br/&gt;polyvinylpyrrolidone (PV… = 200 mg per 100 mL&lt;br/&gt;glycine = absent&lt;br/&gt;Tris-HCl (1 M, pH 8.5) = absent&quot;| B14298
+  B14297[&quot;Glycine_NaCl_H2O2&quot;]:::etape
+  B14296 --&gt;|&quot;sodium hypochlorite (NaC… = replaced by NaCl with hy…&quot;| B14297
+  B14299[&quot;PVP_Fig2B_200mg&quot;]:::etape
+  B14298 --&gt;|&quot;silver nitrate = 1 mM&lt;br/&gt;sodium hypochlorite (5.2… = 1 mL per 100 mL&quot;| B14299
+  B14301[&quot;AgNP_SDS_NaClO&quot;]:::etape
+  B14298 --&gt;|&quot;silver nitrate = 8 mM&lt;br/&gt;polyvinylpyrrolidone (PV… = absent&lt;br/&gt;surfactant = 2.5 mM&quot;| B14301
+  B14300[&quot;PVP_Fig2A_400mg&quot;]:::etape
+  B14299 --&gt;|&quot;polyvinylpyrrolidone (PV… = 400 mg per 100 mL&quot;| B14300
+  B14302[&quot;SDS_Fig3_5mM&quot;]:::etape
+  B14301 --&gt;|&quot;silver nitrate = 2 mM&lt;br/&gt;sodium dodecyl sulfate (… = 5 mM&quot;| B14302
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
