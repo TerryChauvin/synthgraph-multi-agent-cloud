@@ -1,0 +1,119 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC8434467</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC8434467 — Effect of pH on the In Vitro Biocompatibility of Surfactant-Assisted Synthesis and Hydrothermal Precipitation of Rod-Shaped Nano-Hydroxyapatite.</h1>
+<h2>Voie : CTAB_pH4</h2>
+<pre class="mermaid">flowchart LR
+  R18900([&quot;calcium hydrogen phosphate dihydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18900 --&gt;|&quot;precursor&quot;| S22485
+  R18901([&quot;calcium hydroxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18901 --&gt;|&quot;precursor&quot;| S22485
+  R18902([&quot;deionized water&lt;br/&gt;160 mL&quot;]):::reactif
+  R18902 --&gt;|&quot;solvent&quot;| S22485
+  R18903([&quot;hexadecyltrimethylammonium bromide (CTAB)&lt;br/&gt;1 g&quot;]):::reactif
+  R18903 --&gt;|&quot;surfactant&quot;| S22485
+  R18904([&quot;2 M acetic acid or sodium acetate aqueous so…&lt;br/&gt;2 M aqueous solution&quot;]):::reactif
+  R18904 --&gt;|&quot;acid&quot;| S22485
+  R18905([&quot;double-distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18905 --&gt;|&quot;wash&quot;| S22485
+  S22485[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 1.67&quot;]:::etape
+  S22485 --&gt; S22486
+  S22486[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S22486 --&gt; S22487
+  S22487[&quot;&lt;b&gt;3. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 4&lt;br/&gt;concentration : 2 M&quot;]:::etape
+  S22487 --&gt; S22488
+  S22488[&quot;&lt;b&gt;4. react&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S22488 --&gt; S22489
+  S22489[&quot;&lt;b&gt;5. filter&lt;/b&gt;&quot;]:::etape
+  S22489 --&gt; S22490
+  S22490[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : double-distilled water (ddH2O)&quot;]:::etape
+  S22490 --&gt; S22491
+  S22491[&quot;&lt;b&gt;7. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S22491 --&gt; M
+  M{{&quot;hydroxyapatite rods (CTAB-assisted)&lt;br/&gt;Ca10(PO4)6(OH)2&quot;}}:::materiau
+  O88082[&quot;XRD_phase : HA&quot;]:::resultat
+  M -.-&gt; O88082
+  O88083[&quot;XRD_c-axis_(002)_to_(100)_thicknes… : 1.03&quot;]:::resultat
+  M -.-&gt; O88083
+  O88084[&quot;length_to_diameter_ratio_SEM : 9.5&quot;]:::resultat
+  M -.-&gt; O88084
+  O88085[&quot;crystal_length_SEM : 4.6 μm&quot;]:::resultat
+  M -.-&gt; O88085
+  O88086[&quot;crystal_size_length_diameter : hexagonal columnar crystals, …&quot;]:::resultat
+  M -.-&gt; O88086
+  O88087[&quot;cytotoxicity_NIH-3T3_24h : cell viability below 70 %: cy…&quot;]:::resultat
+  M -.-&gt; O88087
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14139{{&quot;CTAB_pH4&quot;}}:::materiau
+  B14140[&quot;P_pH4&quot;]:::etape
+  B14139 --&gt;|&quot;hexadecyltrimethylammoni… = absent&quot;| B14140
+  B14141[&quot;SDS_pH4&quot;]:::etape
+  B14139 --&gt;|&quot;hexadecyltrimethylammoni… = replaced by sodium dodec…&quot;| B14141
+  B14142[&quot;F127_pH4&quot;]:::etape
+  B14139 --&gt;|&quot;hexadecyltrimethylammoni… = replaced by Pluronic F12…&quot;| B14142
+  B14143[&quot;CAPB_pH4&quot;]:::etape
+  B14139 --&gt;|&quot;hexadecyltrimethylammoni… = replaced by cocamidoprop…&quot;| B14143
+  B14145[&quot;CTAB_pH9&quot;]:::etape
+  B14139 --&gt;|&quot;ph = 9&quot;| B14145
+  B14144[&quot;P_pH9&quot;]:::etape
+  B14140 --&gt;|&quot;ph = 9&quot;| B14144
+  B14146[&quot;SDS_pH9&quot;]:::etape
+  B14141 --&gt;|&quot;ph = 9&quot;| B14146
+  B14147[&quot;F127_pH9&quot;]:::etape
+  B14142 --&gt;|&quot;ph = 9&quot;| B14147
+  B14148[&quot;CAPB_pH9&quot;]:::etape
+  B14143 --&gt;|&quot;ph = 9&quot;| B14148
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CTAB-C_pH4</h2>
+<pre class="mermaid">flowchart LR
+  R18909([&quot;hydrothermally synthesized HA powder (route …&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18909 --&gt;|&quot;intermediate&quot;| S22498
+  S22498[&quot;&lt;b&gt;1. sinter&lt;/b&gt;&lt;br/&gt;heating_rate : 15 °C/min&lt;br/&gt;temperature : 900 °C&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S22498 --&gt; S22499
+  S22499[&quot;&lt;b&gt;2. cool&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S22499 --&gt; M
+  M{{&quot;calcined hydroxyapatite rods (CTAB-assisted)&lt;br/&gt;Ca10(PO4)6(OH)2&quot;}}:::materiau
+  O88160[&quot;XRD_phase_after_calcination : HA + β-TCP&quot;]:::resultat
+  M -.-&gt; O88160
+  O88161[&quot;XRD_c-axis_(002)_to_(100)_thicknes… : 0.8&quot;]:::resultat
+  M -.-&gt; O88161
+  O88162[&quot;length_to_diameter_ratio_SEM : 6.2&quot;]:::resultat
+  M -.-&gt; O88162
+  O88163[&quot;crystal_length_SEM : 6.1 μm&quot;]:::resultat
+  M -.-&gt; O88163
+  O88164[&quot;crystal_size_change_after_calcinat… : size increased slightly after…&quot;]:::resultat
+  M -.-&gt; O88164
+  O88165[&quot;cytotoxicity_NIH-3T3_24h : no cytotoxicity after calcina…&quot;]:::resultat
+  M -.-&gt; O88165
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14149{{&quot;CTAB-C_pH4&quot;}}:::materiau
+  B14150[&quot;P-C_pH4&quot;]:::etape
+  B14149 --&gt;|&quot;hydrothermally synthesiz… = hydrothermally synthesiz…&quot;| B14150
+  B14151[&quot;SDS-C_pH4&quot;]:::etape
+  B14149 --&gt;|&quot;hydrothermally synthesiz… = hydrothermally synthesiz…&quot;| B14151
+  B14152[&quot;F127-C_pH4&quot;]:::etape
+  B14149 --&gt;|&quot;hydrothermally synthesiz… = hydrothermally synthesiz…&quot;| B14152
+  B14153[&quot;CAPB-C_pH4&quot;]:::etape
+  B14149 --&gt;|&quot;hydrothermally synthesiz… = hydrothermally synthesiz…&quot;| B14153
+  B14154[&quot;P-C_pH9&quot;]:::etape
+  B14149 --&gt;|&quot;hydrothermally synthesiz… = hydrothermally synthesiz…&quot;| B14154
+  B14155[&quot;CTAB-C_pH9&quot;]:::etape
+  B14149 --&gt;|&quot;hydrothermally synthesiz… = hydrothermally synthesiz…&quot;| B14155
+  B14156[&quot;SDS-C_pH9&quot;]:::etape
+  B14149 --&gt;|&quot;hydrothermally synthesiz… = hydrothermally synthesiz…&quot;| B14156
+  B14157[&quot;F127-C_pH9&quot;]:::etape
+  B14149 --&gt;|&quot;hydrothermally synthesiz… = hydrothermally synthesiz…&quot;| B14157
+  B14158[&quot;CAPB-C_pH9&quot;]:::etape
+  B14149 --&gt;|&quot;hydrothermally synthesiz… = hydrothermally synthesiz…&quot;| B14158
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
