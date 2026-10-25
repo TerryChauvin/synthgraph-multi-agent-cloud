@@ -145,11 +145,13 @@
    "succeeded": true,
    "reagents": [
     {
-     "name": "FTO substrate",
+     "name": "FTO substrate (FTO TEC-8, LOF)",
      "formula": null,
      "role": "substrate",
      "quote": "Fluorine-doped tin oxide substrates (FTO TEC-8, LOF) were first cleaned through sonication in acetone/ethanol for 30 min and then hydrolyzed in boiling deionized water at 100 °C for 30 min followed by air-drying.",
-     "not_stated": []
+     "not_stated": [],
+     "supplier": "LOF",
+     "supplier_quote": "Fluorine-doped tin oxide substrates (FTO TEC-8, LOF)"
     },
     {
      "name": "acetone/ethanol (sonication)",
@@ -414,6 +416,11 @@
        "quote": "the solutions were refreshed during the reaction period (solution turnover time 2.5 h)",
        "value_num": 2.5,
        "unit": "h"
+      },
+      {
+       "name": "substrate_orientation",
+       "quote": "ZnO nanowire arrays were grown by placing vertically the ZnO-seeded FTO substrates in solutions with 25 mM Zn(NO3)2, 25 mM hexamethylenetetramine (HMT) and 7.3 mM polyethyleneimine at 92.5 °C.",
+       "value_text": "vertically"
       }
      ],
      "equipment": [],
@@ -422,8 +429,7 @@
       "volume",
       "stirring_speed",
       "heating_rate",
-      "cooling_rate",
-      "substrate_orientation_angle"
+      "cooling_rate"
      ]
     },
     {
@@ -659,12 +665,6 @@
      "quote": "The FTO substrates were dip-coated in a 2.5 mM ethanolic solution of zinc acetate dehydrate."
     },
     {
-     "parameter": "ethanolamine",
-     "value_text": "absent",
-     "parent_value": "0.75 M",
-     "quote": "The FTO substrates were dip-coated in a 2.5 mM ethanolic solution of zinc acetate dehydrate."
-    },
-    {
      "parameter": "2-methoxyethanol",
      "value_text": "replaced by ethanol",
      "parent_value": "2-methoxyethanol",
@@ -838,6 +838,11 @@
        "quote": "the solutions were refreshed during the reaction period (solution turnover time 2.5 h)",
        "value_num": 2.5,
        "unit": "h"
+      },
+      {
+       "name": "substrate_orientation",
+       "quote": "ZnO nanowire arrays were grown by placing vertically the ZnO-seeded FTO substrates in solutions with 25 mM Zn(NO3)2, 25 mM hexamethylenetetramine (HMT) and 7.3 mM polyethyleneimine at 92.5 °C.",
+       "value_text": "vertically"
       }
      ],
      "equipment": [],
@@ -846,8 +851,7 @@
       "volume",
       "stirring_speed",
       "heating_rate",
-      "cooling_rate",
-      "substrate_orientation_angle"
+      "cooling_rate"
      ]
     },
     {
@@ -1088,11 +1092,6 @@
    ],
    "outcomes": [
     {
-     "property": "zno_buffer_layer_thickness_six_films_C_and_D",
-     "value_text": "~500 nm",
-     "quote": "The six ZnO nanowire films had a similar thickness of ZnO buffer layer (~500 nm)."
-    },
-    {
      "property": "nanowire_diameter_sample_C1",
      "value_num": 170,
      "unit": "nm",
@@ -1246,7 +1245,7 @@
    "succeeded": true,
    "variations": [
     {
-     "parameter": "FTO substrate",
+     "parameter": "FTO substrate (FTO TEC-8, LOF)",
      "value_text": "replaced by TiO2-coated FTO substrate",
      "parent_value": "bare FTO substrate",
      "quote": "ZnO nanowire arrays prepared with 7.3 mM of PEI for 40 h on the bare FTO substrate and on the TiO2-coated FTO substrate with the ZnO seeds prepared by dip-coating"
@@ -1449,6 +1448,11 @@
        "quote": "the solutions were refreshed during the reaction period (solution turnover time 2.5 h)",
        "value_num": 2.5,
        "unit": "h"
+      },
+      {
+       "name": "substrate_orientation",
+       "quote": "ZnO nanowire arrays were grown by placing vertically the ZnO-seeded FTO substrates in solutions with 25 mM Zn(NO3)2, 25 mM hexamethylenetetramine (HMT) and 7.3 mM polyethyleneimine at 92.5 °C.",
+       "value_text": "vertically"
       }
      ],
      "equipment": [],
@@ -1457,8 +1461,7 @@
       "volume",
       "stirring_speed",
       "heating_rate",
-      "cooling_rate",
-      "substrate_orientation_angle"
+      "cooling_rate"
      ]
     },
     {
@@ -1519,11 +1522,6 @@
      "value_num": 50,
      "unit": "nm",
      "quote": "a dense, thin TiO2blocking layer (about 50 nm thick, as can be seen from Fig. 4h, j and l)"
-    },
-    {
-     "property": "zno_buffer_layer_thickness_six_films_C_and_D",
-     "value_text": "~500 nm",
-     "quote": "The six ZnO nanowire films had a similar thickness of ZnO buffer layer (~500 nm)."
     },
     {
      "property": "nanowire_diameter_sample_D1",
@@ -1714,10 +1712,11 @@
      "role": "solvent",
      "quote": "The resulting substrates were immersed in dry ethanol containing 0.3 mM of N719 for 40 min.",
      "not_stated": [
-      "amount",
-      "purity",
-      "supplier"
-     ]
+      "amount"
+     ],
+     "purity": "analytical reagent grade",
+     "supplier": "Beijing Chemical Co.",
+     "supplier_quote": "Other chemicals (Beijing Chemical Co.) used in our experiments were of analytical reagent grade without further purification."
     },
     {
      "name": "Pt-coated conducting glass (counter electrode)",
@@ -1929,12 +1928,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "NW_TiO2FTO_40h",
-   "text": "Hypothèse de chimiste : la couche compacte de TiO2 pulvérisée (probablement par pulvérisation réactive d'une cible de titane sous Ar/O2) bloque le contact direct entre l'électrolyte et le FTO, ce qui réduit la recombinaison des électrons vers I3− et expliquerait l'augmentation de Voc. L'augmentation du rapport d'aspect s'explique probablement par une germination différente sur TiO2 (moins de nanofils, plus fins)."
+   "text": "Hypothèse du critique scientifique : la couche compacte de TiO2 pulvérisée (probablement par pulvérisation réactive d'une cible de titane sous Ar/O2) serait censée bloquer le contact direct entre l'électrolyte et le FTO et réduire la recombinaison des électrons vers I3−, ce qui expliquerait la hausse de Voc ; ce n'est pas démontré. La sous-couche change aussi la germination et la morphologie des fils (diamètre de 160–170 à 120–135 nm, densité de 1,4–1,6 à 1,1–1,5 ×10^9 fils cm−2) : d'après Law et al. 2005 (Nature Materials 4, 455), les cellules à faible facteur de rugosité ont un Voc plus élevé, de sorte que la baisse de surface des fils peut expliquer une partie de la hausse de Voc sans effet de blocage. De plus, une couche tampon de ZnO d'environ 500 nm couvre déjà le substrat dans C comme dans D : si elle est compacte, le TiO2 placé dessous ne peut pas supprimer un contact FTO–électrolyte qui n'existe plus. L'augmentation du rapport d'aspect s'expliquerait probablement par une germination différente sur TiO2 (moins de nanofils, plus fins)."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Dangers que l'article ne mentionne pas : le 2-méthoxyéthanol est reprotoxique, l'éthanolamine corrosive, l'acétonitrile et l'éthanol inflammables, l'acétonitrile toxique ; le nitrate de zinc est comburant ; l'iode et l'iodure de lithium irritent ; la tert-butylpyridine est toxique et irritante. La croissance se fait à 92,5 °C en solution aqueuse (récipient et fermeture non précisés) : éviter tout récipient fermé sans soupape. Le recuit à 300–400 °C demande un four ventilé. La pulvérisation cathodique exige les précautions du matériel sous vide et haute tension. Les poudres ou débris de ZnO nanométrique ne doivent pas être inhalés."
+   "text": "Dangers que l'article ne mentionne pas : le 2-méthoxyéthanol est reprotoxique, l'éthanolamine corrosive, l'acétonitrile et l'éthanol inflammables, l'acétonitrile toxique ; le nitrate de zinc est comburant ; l'iode et l'iodure de lithium irritent ; la tert-butylpyridine est toxique et irritante. La croissance se fait à 92,5 °C en solution aqueuse (récipient et fermeture non précisés) : éviter tout récipient fermé sans soupape. Le recuit à 300–400 °C demande un four ventilé. La pulvérisation cathodique exige les précautions du matériel sous vide et haute tension. Les poudres ou débris de ZnO nanométrique ne doivent pas être inhalés. L'HMT s'hydrolyse à chaud en formaldéhyde et ammoniac (jusqu'à 150 mM de formaldéhyde et 100 mM de NH3 par bain en cas d'hydrolyse totale, calcul du critique scientifique, fiche CAMEO Chemicals de l'HMT), pendant 30 à 40 h à 92,5 °C et avec 12 à 16 bains chauds à vider : travailler sous sorbonne et traiter les effluents."
   },
   {
    "type": "limite_reproductibilite",
@@ -1958,6 +1957,54 @@
    "route": "DSSC_assembly",
    "text": "La cellule est décrite sans surface active, sans volume d'électrolyte, sans description du rinçage après le colorant ni du lot d'éclairage (simulateur non nommé).",
    "quote": "Photocurrent–voltage measurements were performed using simulated AM 1.5 sunlight with an output power of 100 mW cm−2."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les six films de nanofils de la seconde série (C1–C3 sur FTO nu, D1–D3 sur FTO recouvert de TiO2) ont une couche tampon de ZnO d'épaisseur voisine, environ 500 nm, donnée une seule fois pour les six films et non par échantillon. La conclusion donne « ~300–500 nm » pour les films à germes trempés (voir les doutes).",
+   "quote": "The six ZnO nanowire films had a similar thickness of ZnO buffer layer (~500 nm)."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "DSSC_assembly",
+   "text": "Cette voie décrit l'assemblage commun aux douze cellules. Les performances de chaque cellule (Isc, Voc, facteur de forme, rendement ; Tables 2 et 4) sont rangées en résultats sur la voie du matériau qui sert de photoanode : NW_spin_seed pour A1–A3, NW_dip_seed pour B1–B3, NW_bareFTO_40h pour C1–C3 et NW_TiO2FTO_40h pour D1–D3.",
+   "quote": "The parameters of the cells are summarized in Table 4."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "NW_TiO2FTO_40h",
+   "text": "Dans les Résultats et la Table 4, la sous-couche de TiO2 augmente le Voc de 3,9 à 12,5 % et le rendement de 2,4 à 41,7 % ; le résumé et la conclusion écrivent l'inverse (rendement 3,9–12,5 %, Voc 2,4–41,7 %). Les valeurs extraites suivent la Table 4 (par exemple 0,53/0,51 = +3,9 % pour le Voc et 1,02/0,72 = +41,7 % pour le rendement).",
+   "quote": "Voc was increased by 3.9–12.5% from 0.48–0.51 to 0.53–0.55 V. As a result, η was improved by 2.4–41.7% from 0.72–0.84 to 0.86–1.02% by introducing the TiO2 blocking layer."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NW_dip_seed",
+   "text": "Les auteurs attribuent l'Isc plus élevé de B (germes trempés) à un rapport d'aspect plus grand, donc à plus de colorant adsorbé. Calculée à partir de leur Table 1 (N·π·d·L), la surface latérale des fils par cm² de substrat est pourtant plus faible en B (≈ 48–62) qu'en A (≈ 108–125) ; la quantité de colorant n'est pas mesurée. Le gain d'Isc a donc une autre cause possible (accès du colorant et de l'électrolyte entre des fils A presque jointifs, collecte, couche tampon), et le critique rappelle que Law et al. 2005 (Nature Materials 4, 455, 10.1038/nmat1387) relient l'Isc au facteur de rugosité."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NW_TiO2FTO_40h",
+   "text": "Même contradiction pour la seconde série : les auteurs attribuent la hausse d'Isc de D à un rapport d'aspect plus grand (plus de colorant), alors que la surface latérale des fils de D, calculée à partir de la Table 3, est environ 1,3 à 1,7 fois plus faible que celle des fils de C. La quantité de colorant adsorbé n'est pas mesurée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NW_TiO2FTO_40h",
+   "text": "Le résumé et la conclusion inversent les gains de la sous-couche de TiO2 : ils attribuent 3,9–12,5 % au rendement et 2,4–41,7 % au Voc, alors que les Résultats et la Table 4 donnent l'inverse (erreur des auteurs). Les intervalles de gain annoncés ne suivent pas non plus une règle unique : la borne basse de +4,2 % pour l'Isc correspond à D1/C3 alors que D3 (3,72 mA/cm²) est sous C3 (3,77), de sorte que l'intervalle min–max va de −1,3 à +25,1 % ; la borne haute du Voc (12,5 %) est D3/C3 alors que max/min donne 14,6 %. Avec trois cellules par condition et sans écart-type, le gain d'Isc n'est pas établi statistiquement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NW_TiO2FTO_40h",
+   "text": "L'effet de blocage de la recombinaison par le TiO2 n'est pas démontré : la sous-couche change aussi la germination et la morphologie des fils (diamètre, densité, surface latérale), la couche tampon de ZnO d'environ 500 nm couvre déjà le substrat dans C comme dans D, et aucune mesure de recombinaison (courant d'obscurité, impédance, déclin de Voc) n'est présentée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NW_TiO2FTO_40h",
+   "text": "La phase finale du TiO2 pulvérisé à température ambiante (amorphe ou anatase, après 15 min à 300 °C puis 30 min à 400 °C) n'est ni donnée ni mesurée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NW_spin_seed",
+   "text": "La notation « 7.3 mM polyethyleneimine (M.W. 600) » est ambiguë : en chaînes de 600 g/mol elle représente ≈ 4,4 g/L de PEI (≈ 100 mM d'azote, soit N/Zn ≈ 4), en unités éthylèneimine ≈ 0,3 g/L, un facteur 14 d'écart. Le critique note que Law et al. 2005 emploient la même notation (« 5–7 mM ») sans la préciser non plus."
   }
  ],
  "method_sources": [
@@ -1987,11 +2034,11 @@
   },
   {
    "where": "Résumé et Conclusion contre Résultats",
-   "issue": "Le résumé et la conclusion disent que le rendement et le Voc augmentent de « 3.9–12.5 and 2.4–41.7%, respectively », alors que les Résultats donnent Voc +3,9–12,5 % et η +2,4–41,7 % (les valeurs de Table 4 confirment les Résultats). Aucune valeur extraite n'est concernée : l'inversion est notée ici et dans l'annotation de tendance."
+   "issue": "Le résumé et la conclusion disent que le rendement et le Voc augmentent de « 3.9–12.5 and 2.4–41.7%, respectively », alors que les Résultats donnent Voc +3,9–12,5 % et η +2,4–41,7 % (les valeurs de Table 4 confirment les Résultats). Aucune valeur extraite n'est concernée : l'inversion est notée ici, dans une annotation tendance_observee et dans une annotation limite_reproductibilité de NW_TiO2FTO_40h."
   },
   {
    "where": "NW_bareFTO_40h et NW_TiO2FTO_40h, épaisseur de la couche tampon",
-   "issue": "Les Résultats donnent « ~500 nm » pour les six films C et D, la Conclusion « ~300–500 nm » ; la valeur des Résultats (plus détaillée) est retenue."
+   "issue": "Les Résultats donnent « ~500 nm » pour les six films C et D, la Conclusion « ~300–500 nm » ; la valeur des Résultats (plus détaillée) est retenue. L'épaisseur n'est pas rangée en résultat : la phrase des Résultats vise les six films ensemble, elle est portée par une annotation tendance_observee."
   },
   {
    "where": "Table 3, en-tête de première colonne",
@@ -1999,7 +2046,7 @@
   },
   {
    "where": "Réactifs, pureté et fournisseur",
-   "issue": "« Other chemicals (Beijing Chemical Co.) … analytical reagent grade » est appliqué à l'acétate de zinc, l'éthanolamine, le 2-méthoxyéthanol, le nitrate de zinc, l'HMT et l'éthanol ; la phrase suit celles qui nomment la PEI (Aldrich) et le N719 (Solaronix), donc « other » les exclut ; elle ne cite toutefois pas ces réactifs un par un. Les réactifs de l'électrolyte portent « (Aldrich) » dans leur phrase."
+   "issue": "« Other chemicals (Beijing Chemical Co.) … analytical reagent grade » est appliqué à l'acétate de zinc, l'éthanolamine, le 2-méthoxyéthanol, le nitrate de zinc, l'HMT, l'éthanol de trempage et l'éthanol « dry » de la solution de colorant ; la phrase suit celles qui nomment la PEI (Aldrich) et le N719 (Solaronix), donc « other » les exclut ; elle ne cite toutefois pas ces réactifs un par un. Les réactifs de l'électrolyte portent « (Aldrich) » dans leur phrase."
   },
   {
    "where": "NW_TiO2FTO_40h étape 4 (nettoyage du FTO avant le TiO2)",
@@ -2012,6 +2059,10 @@
   {
    "where": "Figures 1 et 4 (lues)",
    "issue": "Les figures 1 et 4 (images MEB) ont été ouvertes : elles ne portent aucune valeur chiffrée absente du texte ou des tableaux (barres d'échelle seulement), donc aucune valeur lue sur figure. Les courbes courant–tension des Fig. 3 et 5 sont résumées par les Tables 2 et 4."
+  },
+  {
+   "where": "NW_dip_seed, éthanolamine de la solution de germes",
+   "issue": "La solution de trempage est décrite comme « a 2.5 mM ethanolic solution of zinc acetate dehydrate » : l'éthanolamine n'y est pas nommée. Aucune phrase ne dit qu'elle est absente, donc aucune variation « ethanolamine = absent » n'est déclarée (retirée après la critique de fidélité) ; la lecture « sans éthanolamine » est plausible mais non écrite, et la branche hérite formellement de l'éthanolamine du parent."
   }
  ]
 }
