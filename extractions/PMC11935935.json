@@ -371,8 +371,7 @@
       "pressure",
       "ozone_concentration",
       "precursor_dose",
-      "pulse_order",
-      "ozone_pulse_duration"
+      "pulse_order"
      ]
     }
    ],
@@ -526,6 +525,27 @@
      "value_num": 2.8,
      "unit": "%",
      "quote": "Z250 5.11 2.8675(1) 14.1734(9) 100.925(9) 0.257(1) 0.6(3) 0.22(9) 2.8(0.9)"
+    },
+    {
+     "property": "cycling_performance_SSB_screening",
+     "value_text": "major improvements in capacity and rate capability",
+     "quote": "revealed major improvements in capacity and rate capability for the as‐coated CAMs (after 5, 10, and 15 TEMAZ/O3 ALD cycles, see Figure S1, Supporting Information)"
+    },
+    {
+     "property": "discharge_capacity_0.2C_50th_cycle_vs_uncoated_SSB",
+     "value_text": "larger specific capacities than the uncoated CAM (by 16–35 mAh gCAM −1 in the 50th cycle)",
+     "quote": "only Z250, Z300, and Z400 were capable of delivering larger specific capacities than the uncoated CAM (by 16–35 mAh gCAM −1 in the 50th cycle)"
+    },
+    {
+     "property": "additional_discharge_capacity_origin_SSB",
+     "value_text": "improved lithiation at low voltages",
+     "quote": "The voltage profiles further revealed that the “additional” discharge capacity for Z250, Z300, and Z400 can be attributed to improved lithiation at low voltages."
+    },
+    {
+     "property": "dQ_dV_peak_potential_SSB",
+     "value_num": 1.95,
+     "unit": "V",
+     "quote": "This is also apparent from the peak at ≈1.95 V in the corresponding differential capacity curves (see Figure S9, Supporting Information)."
     }
    ],
    "missing_fields": [
@@ -543,8 +563,8 @@
     "name": "ZrO2@NCM85, as-coated, 2 ALD cycles",
     "formula": "ZrO2@LiNi0.85Co0.10Mn0.05O2",
     "family": "batterie",
-    "phase": "layered R-3m oxide with tetragonal ZrO2 nanocoating",
-    "morphology": "secondary particles with a 4–5 nm ZrO2 nanocoating"
+    "phase": null,
+    "morphology": null
    },
    "quote": "The coating process comprised 2–15 ALD cycles",
    "succeeded": true,
@@ -555,7 +575,8 @@
      "value_num": 2,
      "unit": "ALD cycles",
      "parent_value": "15 ALD cycles",
-     "quote": "The coating process comprised 2–15 ALD cycles"
+     "quote": "ZrO2 mass fraction and estimated film thickness on the NCM85 substrate depending on the number of tetrakis(ethylmethylamido)zirconium(IV) (TEMAZ)/O3 atomic layer deposition (ALD) cycles.",
+     "from_figure": "Fig. 1"
     }
    ],
    "outcomes": [
@@ -576,8 +597,8 @@
     "name": "ZrO2@NCM85, as-coated, 5 ALD cycles",
     "formula": "ZrO2@LiNi0.85Co0.10Mn0.05O2",
     "family": "batterie",
-    "phase": "layered R-3m oxide with tetragonal ZrO2 nanocoating",
-    "morphology": "secondary particles with a 4–5 nm ZrO2 nanocoating"
+    "phase": null,
+    "morphology": null
    },
    "quote": "for the as‐coated CAMs (after 5, 10, and 15 TEMAZ/O3 ALD cycles, see Figure S1, Supporting Information)",
    "succeeded": true,
@@ -598,6 +619,11 @@
      "unit": "wt%",
      "from_figure": "Fig. 1",
      "quote": "ZrO2 mass fraction and estimated film thickness on the NCM85 substrate depending on the number of tetrakis(ethylmethylamido)zirconium(IV) (TEMAZ)/O3 atomic layer deposition (ALD) cycles."
+    },
+    {
+     "property": "cycling_performance_SSB_screening",
+     "value_text": "major improvements in capacity and rate capability",
+     "quote": "revealed major improvements in capacity and rate capability for the as‐coated CAMs (after 5, 10, and 15 TEMAZ/O3 ALD cycles, see Figure S1, Supporting Information)"
     }
    ]
   },
@@ -609,8 +635,8 @@
     "name": "ZrO2@NCM85, as-coated, 10 ALD cycles",
     "formula": "ZrO2@LiNi0.85Co0.10Mn0.05O2",
     "family": "batterie",
-    "phase": "layered R-3m oxide with tetragonal ZrO2 nanocoating",
-    "morphology": "secondary particles with a 4–5 nm ZrO2 nanocoating"
+    "phase": null,
+    "morphology": null
    },
    "quote": "for the as‐coated CAMs (after 5, 10, and 15 TEMAZ/O3 ALD cycles, see Figure S1, Supporting Information)",
    "succeeded": true,
@@ -630,6 +656,16 @@
      "value_num": 0.9,
      "unit": "wt%",
      "quote": "the 10 ALD cycle sample (≈0.9 wt% ZrO2) delivered larger reversible capacities in the later cycles, especially at higher rates"
+    },
+    {
+     "property": "cycling_performance_SSB_screening",
+     "value_text": "major improvements in capacity and rate capability",
+     "quote": "revealed major improvements in capacity and rate capability for the as‐coated CAMs (after 5, 10, and 15 TEMAZ/O3 ALD cycles, see Figure S1, Supporting Information)"
+    },
+    {
+     "property": "cycling_performance_SSB_vs_other_coated",
+     "value_text": "similar initial specific capacities; larger reversible capacities in the later cycles, especially at higher rates",
+     "quote": "While showing similar initial specific capacities, the 10 ALD cycle sample (≈0.9 wt% ZrO2) delivered larger reversible capacities in the later cycles, especially at higher rates."
     }
    ]
   },
@@ -642,7 +678,7 @@
     "formula": "ZrO2@LiNi0.85Co0.10Mn0.05O2",
     "family": "batterie",
     "phase": "layered R-3m oxide with tetragonal ZrO2 nanocoating",
-    "morphology": "secondary particles with a 4–5 nm ZrO2 nanocoating"
+    "morphology": "secondary particles with a ZrO2 nanocoating"
    },
    "method": "as-coated ZrO2@NCM85 (15 ALD cycles) annealed in O2 at 300 °C for 30 min",
    "quote": "the 15 ALD cycle sample (with ≈1.2 wt% ZrO2) was selected for post‐treatment in O2 at temperatures of 300, 400, 550, and 700 °C",
@@ -812,8 +848,7 @@
       "pressure",
       "ozone_concentration",
       "precursor_dose",
-      "pulse_order",
-      "ozone_pulse_duration"
+      "pulse_order"
      ]
     },
     {
@@ -926,6 +961,22 @@
      "value_num": 3.2,
      "unit": "%",
      "quote": "Z300 4.48 2.8673(1) 14.1717(9) 100.900(9) 0.257(1) 0.5(3) 0.16(9) 3.2(1.0)"
+    },
+    {
+     "property": "discharge_capacity_0.2C_50th_cycle_vs_uncoated_SSB",
+     "value_text": "larger specific capacities than the uncoated CAM (by 16–35 mAh gCAM −1 in the 50th cycle)",
+     "quote": "only Z250, Z300, and Z400 were capable of delivering larger specific capacities than the uncoated CAM (by 16–35 mAh gCAM −1 in the 50th cycle)"
+    },
+    {
+     "property": "additional_discharge_capacity_origin_SSB",
+     "value_text": "improved lithiation at low voltages",
+     "quote": "The voltage profiles further revealed that the “additional” discharge capacity for Z250, Z300, and Z400 can be attributed to improved lithiation at low voltages."
+    },
+    {
+     "property": "dQ_dV_peak_potential_SSB",
+     "value_num": 1.95,
+     "unit": "V",
+     "quote": "This is also apparent from the peak at ≈1.95 V in the corresponding differential capacity curves (see Figure S9, Supporting Information)."
     }
    ]
   },
@@ -938,7 +989,7 @@
     "formula": "ZrO2@LiNi0.85Co0.10Mn0.05O2",
     "family": "batterie",
     "phase": "layered R-3m oxide with tetragonal ZrO2 nanocoating",
-    "morphology": "secondary particles with a 4–5 nm ZrO2 nanocoating"
+    "morphology": "secondary particles with a ZrO2 nanocoating"
    },
    "quote": "the 15 ALD cycle sample (with ≈1.2 wt% ZrO2) was selected for post‐treatment in O2 at temperatures of 300, 400, 550, and 700 °C",
    "succeeded": true,
@@ -1020,6 +1071,22 @@
      "value_num": 2.8,
      "unit": "%",
      "quote": "Z400 4.09 2.8675(1) 14.1734(9) 100.929(9) 0.257(1) 0.6(3) 0.17(8) 2.8(0.9)"
+    },
+    {
+     "property": "discharge_capacity_0.2C_50th_cycle_vs_uncoated_SSB",
+     "value_text": "larger specific capacities than the uncoated CAM (by 16–35 mAh gCAM −1 in the 50th cycle)",
+     "quote": "only Z250, Z300, and Z400 were capable of delivering larger specific capacities than the uncoated CAM (by 16–35 mAh gCAM −1 in the 50th cycle)"
+    },
+    {
+     "property": "additional_discharge_capacity_origin_SSB",
+     "value_text": "improved lithiation at low voltages",
+     "quote": "The voltage profiles further revealed that the “additional” discharge capacity for Z250, Z300, and Z400 can be attributed to improved lithiation at low voltages."
+    },
+    {
+     "property": "dQ_dV_peak_potential_SSB",
+     "value_num": 1.95,
+     "unit": "V",
+     "quote": "This is also apparent from the peak at ≈1.95 V in the corresponding differential capacity curves (see Figure S9, Supporting Information)."
     }
    ]
   },
@@ -1031,8 +1098,8 @@
     "name": "ZrO2@NCM85 annealed in O2 at 550 °C",
     "formula": "ZrO2@LiNi0.85Co0.10Mn0.05O2",
     "family": "batterie",
-    "phase": "layered R-3m oxide with tetragonal ZrO2 nanocoating",
-    "morphology": "secondary particles with a 4–5 nm ZrO2 nanocoating"
+    "phase": "layered R-3m oxide with tetragonal ZrO2 nanocoating, some crystals appearing monoclinic (baddeleyite)",
+    "morphology": "secondary particles with 7 to 8 nm ZrO2 nanocrystals in the coating"
    },
    "quote": "the 15 ALD cycle sample (with ≈1.2 wt% ZrO2) was selected for post‐treatment in O2 at temperatures of 300, 400, 550, and 700 °C",
    "succeeded": true,
@@ -1107,6 +1174,11 @@
      "value_num": 2.5,
      "unit": "%",
      "quote": "Z550 4.62 2.8676(1) 14.1752(9) 100.950(9) 0.257(1) 0.5(3) 0.16(9) 2.5(1.0)"
+    },
+    {
+     "property": "discharge_capacity_0.2C_vs_uncoated_SSB",
+     "value_text": "only Z250, Z300, and Z400 were capable of delivering larger specific capacities than the uncoated CAM",
+     "quote": "only Z250, Z300, and Z400 were capable of delivering larger specific capacities than the uncoated CAM (by 16–35 mAh gCAM −1 in the 50th cycle)"
     }
    ],
    "characterizations": [
@@ -1134,8 +1206,8 @@
     "name": "ZrO2@NCM85 annealed in O2 at 700 °C",
     "formula": "ZrO2@LiNi0.85Co0.10Mn0.05O2",
     "family": "batterie",
-    "phase": "layered R-3m oxide with tetragonal ZrO2 nanocoating",
-    "morphology": "secondary particles with a 4–5 nm ZrO2 nanocoating"
+    "phase": "layered R-3m oxide, ZrO2 coating with crystallinity partially lost",
+    "morphology": "secondary particles with a ZrO2 coating, amorphous layer in some regions of the surface"
    },
    "quote": "the 15 ALD cycle sample (with ≈1.2 wt% ZrO2) was selected for post‐treatment in O2 at temperatures of 300, 400, 550, and 700 °C",
    "succeeded": true,
@@ -1230,6 +1302,11 @@
      "value_num": 2.8,
      "unit": "%",
      "quote": "Z700 3.81 2.8676(1) 14.1755(9) 100.949(9) 0.257(1) 0.6(3) 0.21(8) 2.8(0.9)"
+    },
+    {
+     "property": "discharge_capacity_0.2C_vs_uncoated_SSB",
+     "value_text": "only Z250, Z300, and Z400 were capable of delivering larger specific capacities than the uncoated CAM",
+     "quote": "only Z250, Z300, and Z400 were capable of delivering larger specific capacities than the uncoated CAM (by 16–35 mAh gCAM −1 in the 50th cycle)"
     }
    ],
    "characterizations": [
@@ -1260,6 +1337,13 @@
      "instrument": null,
      "conditions": null,
      "quote": "Apart from that, a structurally distorted (dislocations, etc.) interlayer between coating and CAM was found by high‐resolution STEM (see Figure S7, Supporting Information)."
+    },
+    {
+     "technique": "SEM",
+     "result": "Increasing surface roughness for Z550 and Z700, suggesting an altered coating microstructure and decreasing uniformity.",
+     "instrument": null,
+     "conditions": null,
+     "quote": "In addition, increasing surface roughness was noticed for Z550 and Z700, suggesting an altered coating microstructure and decreasing uniformity above a certain threshold temperature."
     }
    ]
   },
@@ -1271,8 +1355,8 @@
     "name": "ZrO2@NCM85, 10 ALD cycles, post-annealed at 350 °C",
     "formula": "ZrO2@LiNi0.85Co0.10Mn0.05O2",
     "family": "batterie",
-    "phase": "layered R-3m oxide with tetragonal ZrO2 nanocoating",
-    "morphology": "secondary particles with a 4–5 nm ZrO2 nanocoating"
+    "phase": null,
+    "morphology": null
    },
    "quote": "The long‐term cycling performance of SSB cells using a selected ZrO2@NCM85 CAM (10 ALD cycle sample, 350 °C post‐annealing) was studied at a rate of 0.5C in some more detail.",
    "succeeded": true,
@@ -1888,6 +1972,11 @@
        "value_num": 45,
        "unit": "°C",
        "quote": "They were cycled at 0.1C and 45 °C in the same voltage range as the SSB cells."
+      },
+      {
+       "name": "voltage_window",
+       "value_text": "2.9–4.3 V versus Li+/Li",
+       "quote": "c) First‐cycle voltage profiles for the uncoated NCM85, Z400, and Z700 in LIB cells at 0.1C and 45 °C in the voltage range 2.9–4.3 V versus Li+/Li"
       }
      ],
      "equipment": [],
@@ -1928,7 +2017,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Z250, Z300 et Z400 (recuit ≤ 400 °C) gardent des nanocristaux de ZrO2 de 4 à 5 nm, sans diffusion détectable du Zr, et donnent une efficacité coulombique de 86,6 %, 90,6 % et 90,2 % au premier cycle contre 81,2 % pour NCM85 nu (Fig. 7a) ; Z400 atteint 199 mAh g−1 à 0,1C et 124 mAh g−1 à 1C (≈62 % de la capacité à 0,1C, contre ≈43 % pour NCM85 nu). Z550 (cristaux de 7 à 8 nm, début de phase monoclinique) et Z700 (cristallinité partiellement perdue, diffusion du Zr sur ≈40 nm, D ≈ 3,8 × 10−16 cm2 s−1, couche de NiO) chutent à 24,5 % et 11 % de rétention de capacité à 1C et à des efficacités coulombiques de 82,1 % et 81,5 %. Les paramètres de maille de Rietveld (Table S1) sont presque identiques pour tous : le cœur du matériau ne change pas."
+   "text": "Z250 garde des nanocristaux de ZrO2 de 4 à 5 nm (taille mesurée pour cet échantillon seulement) ; les tailles de Z300 et Z400 ne sont pas données, les auteurs concluant à une croissance des nanocristaux en dessous de 550 °C. Z250, Z300 et Z400 (recuit ≤ 400 °C) ne montrent pas de diffusion détectable du Zr et donnent une efficacité coulombique de 86,6 %, 90,6 % et 90,2 % au premier cycle contre 81,2 % pour NCM85 nu (Fig. 7a) ; Z400 atteint 199 mAh g−1 à 0,1C et 124 mAh g−1 à 1C (≈62 % de la capacité à 0,1C, contre ≈43 % pour NCM85 nu). Z550 (cristaux de 7 à 8 nm, début de phase monoclinique) et Z700 (cristallinité partiellement perdue, diffusion du Zr sur ≈40 nm, D ≈ 3,8 × 10−16 cm2 s−1, couche de NiO) chutent à 24,5 % et 11 % de rétention de capacité à 1C et à des efficacités coulombiques de 82,1 % et 81,5 %. Les paramètres de maille de Rietveld (Table S1) sont presque identiques pour tous : le cœur du matériau ne change pas."
   },
   {
    "type": "tendance_observee",
@@ -1945,7 +2034,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Seuls Z250, Z300 et Z400 donnent en cyclage à 0,2C des capacités supérieures à celles du matériau nu, de 16 à 35 mAh g−1 au 50e cycle, avec une décroissance plus lente ; Z550 et Z700 restent en dessous.",
+   "text": "Seuls Z250, Z300 et Z400 donnent en cyclage à 0,2C des capacités supérieures à celles du matériau nu, de 16 à 35 mAh g−1 au 50e cycle, avec une décroissance plus lente ; Z550 et Z700 ne figurent pas parmi les échantillons qui dépassent le matériau nu (l'article ne les nomme pas).",
    "quote": "only Z250, Z300, and Z400 were capable of delivering larger specific capacities than the uncoated CAM (by 16–35 mAh gCAM −1 in the 50th cycle)"
   },
   {
@@ -1984,7 +2073,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "Z250",
-   "text": "Probablement, le TEMAZ se chimisorbe sur les sites de surface de la poudre (groupes hydroxyle ou carbonate résiduels, d'où l'utilité du traitement à 750 °C qui abaisse le carbonate à ≈0,5 % en masse) en perdant des ligands éthylméthylamide, puis l'ozone oxyde les ligands restants et laisse une couche de ZrO2 amorphe à nanocristalline ; la croissance de ≈0,09 % en masse par cycle indique un régime de saturation. Le recuit sous O2 densifie et cristallise cette couche, puis, aux températures élevées, Zr et Li/Ni interdiffusent à l'interface."
+   "text": "Probablement, le TEMAZ se chimisorbe sur les sites de surface de la poudre (groupes hydroxyle ou carbonate résiduels, d'où l'utilité du traitement à 750 °C qui abaisse le carbonate à ≈0,5 % en masse) en perdant des ligands éthylméthylamide, puis l'ozone oxyde les ligands restants et laisse une couche de ZrO2 amorphe à nanocristalline. Hypothèse du critique scientifique : la croissance mesurée (≈0,21 nm par cycle sur la surface BET, 0,27–0,33 nm d'après le TEM) est élevée pour un ALD saturé, ce qui suggère une part non autolimitée (décomposition partielle de TEMAZ à 250 °C ou purge incomplète du lit de poudre) ; elle est propre au réacteur et à la poudre et se vérifie par un étalonnage ICP-OES. Le recuit sous O2 densifie et cristallise la couche, puis, aux températures élevées, Zr et Li/Ni interdiffusent à l'interface."
   },
   {
    "type": "securite_auteurs",
@@ -1996,6 +2085,26 @@
    "type": "securite_analyse",
    "route": null,
    "text": "Le TEMAZ est un amidure métallique sensible à l'eau et à l'air, inflammable et irritant ; il est chauffé à 105 °C dans le conteneur de précurseur. L'ozone est un oxydant toxique pour les voies respiratoires, à détruire en sortie de réacteur. Les poudres de cathode Ni-riches (nickel et cobalt) sont sensibilisantes et suspectes de cancérogénicité, à manipuler en boîte à gants ou sous aspiration. L'électrolyte LPSCl libère du H2S au contact de l'humidité (d'où l'argon), la NMP est reprotoxique, et LiPF6 dans les carbonates libère du HF au contact de l'eau ; le lithium métal est pyrophorique."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SSB_cell",
+   "text": "Le témoin NCM85 non revêtu cumule plusieurs différences avec les échantillons revêtus : l'article ne dit pas s'il a subi le chauffage de 3 h à 750 °C sous O2, ni le passage dans le réacteur ALD (250 °C, ozone), et aucun NCM85 nu n'a été recuit aux mêmes températures. Le gain d'efficacité coulombique et de capacité attribué au revêtement mêle donc plusieurs effets, et la conclusion n'est pas démontrée à une variable près."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Z250",
+   "text": "La croissance par cycle (≈0,09 % en masse et ≈0,21 nm par cycle) est propre au réacteur et à la poudre : la valeur est élevée pour un ALD saturé (part non autolimitée probable) et dépend de la surface spécifique du lot (0,71 m2 g−1 ici). La pente de 0,09 % par cycle est ajustée avec une ordonnée nulle et tirée par les points à 5 et 10 cycles ; 15 × 0,09 donne ≈1,35 % contre ≈1,2 % mesuré. Pour viser une charge, se caler sur les points mesurés (≈0,9 % à 10 cycles, ≈1,2 % à 15 cycles) et refaire l'étalonnage par ICP-OES."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Z250",
+   "text": "L'écart entre l'épaisseur estimée (2,9 nm pour 15 cycles, calculée sur la surface BET) et les 4–5 nm vus au TEM s'explique, selon le critique scientifique, par un dépôt limité à la surface externe des agrégats secondaires (pas de dépôt aux joints de grains internes), donc une surface effective plus faible que la surface BET. Les épaisseurs calculées sont des bornes basses."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Z550",
+   "text": "L'article attribue la transformation partielle tétragonal vers monoclinique à la dépendance de la phase à la taille des cristaux, mais des cristaux de 7 à 8 nm sont sous la taille critique d'environ 20–30 nm au-dessous de laquelle ZrO2 non dopé est métastable en phase tétragonale (Garvie, 1965, 10.1021/j100888a024) ; la preuve repose sur une seule réflexion supplémentaire dans la FFT de quelques cristaux. Une autre cause (contraintes d'interface, lithium ou nickel incorporé) n'est pas exclue : confirmer la phase par une autre méthode."
   }
  ],
  "method_sources": [
@@ -2027,7 +2136,7 @@
  "doubts": [
   {
    "where": "Z250 étape 4 (ALD)",
-   "issue": "« A typical sequence consisted of 100 pulses of 0.1 s duration, each followed by 2 s reactor purging and 60 s purging after the last pulse » : l'article ne dit pas si ces 100 impulsions forment un cycle ou si elles se répartissent sur l'ensemble des 2 à 15 cycles. Lecture littérale retenue, en paramètres d'étape, sans les rapporter à un cycle."
+   "issue": "« A typical sequence consisted of 100 pulses of 0.1 s duration, each followed by 2 s reactor purging and 60 s purging after the last pulse » : l'article ne dit pas si ces 100 impulsions forment un cycle ou si elles se répartissent sur l'ensemble des 2 à 15 cycles. Lecture littérale retenue, en paramètres d'étape, sans les rapporter à un cycle. Les Méthodes parlent de « the same pulse sequence for O3 and … TEMAZ » sans donner de durée distincte par précurseur : la durée d'impulsion de 0,1 s est donc retenue pour les deux, et n'est plus déclarée non citée pour l'ozone."
   },
   {
    "where": "Z300, étapes propres",
@@ -2035,11 +2144,11 @@
   },
   {
    "where": "Z350-10cyc",
-   "issue": "L'échantillon de l'essai de longue durée (10 cycles ALD, 350 °C) n'a pas de durée de recuit écrite ; il hérite des 30 min de l'étape 5 de Z300 par la phrase des Méthodes (« 300 to 700 °C for 30 min »), mais 350 °C ne fait pas partie des températures listées (300, 400, 550, 700 °C)."
+   "issue": "L'échantillon de l'essai de longue durée (10 cycles ALD, 350 °C) n'a pas de durée de recuit écrite pour lui-même. Les 30 min et les rampes de 10 °C min−1 viennent de la phrase des Méthodes « heated in O2 flow at temperatures ranging from 300 to 700 °C for 30 min (heating and cooling rates set to 10 °C min−1) », dont la plage contient 350 °C, mais l'article n'écrit jamais la durée pour cet échantillon : valeur déduite de la plage, héritée de l'étape 5 de Z300."
   },
   {
    "where": "ALD2",
-   "issue": "L'échantillon à 2 cycles n'apparaît que dans la Fig. 1 (point à 2 cycles) et dans la plage « 2–15 ALD cycles » des Méthodes ; branche créée à partir du point de la figure, avec une valeur lue sur figure (≈0,19 %)."
+   "issue": "L'échantillon à 2 cycles n'apparaît que dans la Fig. 1 (point à 2 cycles, valeur lue sur figure ≈0,19 %) ; la variation est citée avec la légende de la Fig. 1, et la plage « 2–15 ALD cycles » des Méthodes n'en donne que la borne basse. Le texte ne mentionne jamais cet échantillon."
   },
   {
    "where": "uncoated NCM85",
@@ -2060,6 +2169,18 @@
   {
    "where": "Z400 / Z700, rapports de capacité",
    "issue": "Le texte donne ≈62 % pour Z400 et ≈11 % pour Z700 ; la Fig. 7b imprime 62,1 % et 11,3 %. Les valeurs du texte sont retenues pour ces deux échantillons, les valeurs imprimées de la figure pour Z250, Z300 et Z550."
+  },
+  {
+   "where": "Z250 / Z300 / Z400, cyclage à 0,2C",
+   "issue": "L'écart de 16 à 35 mAh g−1 au 50e cycle est donné par l'article pour les trois échantillons ensemble ; la valeur propre à chacun n'est pas écrite (Fig. 7d). Pour Z550 et Z700, l'article ne les nomme pas : le résultat repose sur « only Z250, Z300, and Z400 », par exclusion."
+  },
+  {
+   "where": "Z250 / Z300 / Z400, pic dQ/dV",
+   "issue": "Le pic à ≈1,95 V est écrit sans préciser l'échelle de potentiel (cellule tout-solide ou Li+/Li) ; la légende de la Fig. S9 parle de 2,9–4,3 V vs Li+/Li. Valeur recopiée telle quelle, sans référence."
+  },
+  {
+   "where": "ALD10 / ALD5, Fig. S1",
+   "issue": "Les capacités des échantillons à 5 et 10 cycles figurent sur la Fig. S1, absente du dépôt ; seuls les énoncés qualitatifs du texte sont extraits, rien n'est lu sur image."
   }
  ]
 }
