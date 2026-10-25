@@ -70,10 +70,10 @@
    ]
   },
   {
-   "sample": "MG⊂Reo-MOF-1 (after aqueous adsorption, IR/Raman/TGA)",
+   "sample": "MG⊂Reo-MOF-1 (IR/Raman/TGA)",
    "defined_in": "Results, Proposed adsorption mechanism",
    "route": null,
-   "why": "préparation non décrite séparément : H+⊂Reo-MOF-1 chargé en MG lors des essais d'adsorption ; ses caractérisations (Fig. 7a, 7b, 7d) sont rattachées à la voie H+-Reo-MOF-1 avec le nom de l'échantillon",
+   "why": "préparation non décrite séparément et milieu de chargement en MG non dit (eau ou chloroforme) ; ses caractérisations (Fig. 7a, 7b, 7d) sont rattachées à la voie H+-Reo-MOF-1 avec le nom de l'échantillon",
    "results_in": [
     "Fig. 7a",
     "Fig. 7b",
@@ -394,6 +394,13 @@
      "instrument": "Labsys Evo 1600 TGA, SETARAM",
      "conditions": "10 °C min−1 under dry air and argon, 25–800 °C",
      "quote": "the framework of H+⊂Reo-MOF-1 and DMA⊂Reo-MOF-1 is thermally stable up to 450 °C with reasonable specific exothermic and endothermic peaks, even in argon and dry air medium"
+    },
+    {
+     "technique": "FT-IR (lecture des Résultats)",
+     "result": "bandes C–O et SO3− de DMA⊂Reo-MOF-1 à 1598, 1411 et 1178 cm−1, à nombre d'onde plus bas que H+⊂Reo-MOF-1",
+     "instrument": "spectrophotometer (FT/IR-6600, Jasco)",
+     "conditions": "Attenuated Total Reflectance sampling method",
+     "quote": "In particular, the bands of C–O and SO3− groups within DMA⊂Reo-MOF-1 emerged at lower vibrational frequency ranges of 1598, 1411, and 1178 cm−1, respectively."
     }
    ],
    "outcomes": [
@@ -732,6 +739,27 @@
      "instrument": null,
      "conditions": "120 mg of material, 50 mL of 0.01 M NaCl, initial pH 2 to 11, stirred 48 h",
      "quote": "To find the pH point of zero charge (pHpzc) of H+⊂Reo-MOF-1, the material (120 mg) was added to 100 mL of glass flasks containing 50 mL of 0.01 M NaCl solutions with various initial pH ranges (pHi) from 2 to 11."
+    },
+    {
+     "technique": "adsorption test: suivi UV-Vis dans le temps (Fig. S14)",
+     "result": "spectres UV-Vis du MG après adsorption sur H+⊂Reo-MOF-1 aux intervalles de 0, 5, 10, 15 et 20 min",
+     "instrument": null,
+     "conditions": "5 mg de H+⊂Reo-MOF-1 dans 100 mL de solution de MG à 18 mg L−1, agitation à température ambiante, intervalles de 0, 5, 10, 15 et 20 min",
+     "quote": "UV-Vis spectra of MG dye after absorbed onto H+Reo-MOF-1 at the intervals of 0, 5, 10, 15 and 20 min, respectively. Herein, 5 mg H+Reo-MOF-1 was introduced into 100 mL of MG solution (18 mg L-1) and stirred at room temperature with the mentioned intervals."
+    },
+    {
+     "technique": "UV-Vis calibration of MG (Fig. S13)",
+     "result": "relation entre l'intensité absorbée du MG et la concentration, ajustement linéaire",
+     "instrument": null,
+     "conditions": "concentrations de MG de 0 à 18 mg L−1, ajustement linéaire",
+     "quote": "The relationship between the absorbed intensity (red dots) of MG and different concentrations of 0 - 18 mg L-1 by linear fitting."
+    },
+    {
+     "technique": "adsorption test: conditions générales des expériences d'adsorption de MG",
+     "result": "les expériences d'adsorption de MG sont menées à température ambiante sous agitation constante de 500 rpm",
+     "instrument": null,
+     "conditions": "température ambiante, agitation constante de 500 rpm",
+     "quote": "The MG adsorption experiments were conducted at room temperature with a constant stirring rate of 500 rpm."
     }
    ],
    "outcomes": [
@@ -1671,6 +1699,14 @@
     },
     {
      "order": 3,
+     "action": "analyze",
+     "description": "Check the filtrate by UV-Vis for any MG signal after the 24 h immersion.",
+     "quote": "To further confirm the complete removal of the MG dye from the material, the filtration was checked without any MG signal indicated in the UV-Vis spectrophotometer.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 4,
      "action": "centrifuge",
      "description": "Centrifuge the material.",
      "quote": "Next, the material was centrifugated and exchanged with ethanol many times.",
@@ -1682,9 +1718,9 @@
      ]
     },
     {
-     "order": 4,
+     "order": 5,
      "action": "wash",
-     "description": "Exchange with ethanol until no MG signal appears in the filtrate (UV-Vis).",
+     "description": "Exchange the material with ethanol many times.",
      "quote": "Next, the material was centrifugated and exchanged with ethanol many times.",
      "parameters": [
       {
@@ -1701,7 +1737,7 @@
      "equipment": []
     },
     {
-     "order": 5,
+     "order": 6,
      "action": "dry",
      "description": "Dry and activate the material under vacuum.",
      "quote": "Finally, H+⊂Reo-MOF-1 was dried, activated at 80 °C under vacuum for 24 h, and utilized for the subsequent experiments.",
@@ -1896,7 +1932,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Il n'y a pas de branche : chaque matériau a sa propre voie. La comparaison porte sur les matériaux. DUT-52, sans sulfonate et à fenêtres de pore de 7,6 et 9,0 Å, adsorbe très peu de MG (qmax 20,9 mg g−1), alors que H+⊂Reo-MOF-1, à cages de 9,0 et 16,9 Å et à groupes SO3H, atteint 1685,1 mg g−1 à 400 mg L−1 de MG et 2532,1 mg g−1 au plateau."
+   "text": "Il n'y a pas de branche : chaque matériau a sa propre voie. La comparaison porte sur les matériaux. DUT-52, sans sulfonate et à cages de 7,6 et 9,0 Å, adsorbe très peu de MG (qmax 20,9 mg g−1), alors que H+⊂Reo-MOF-1, à cages de 9,0 et 16,9 Å et à groupes SO3H, atteint 1685,1 mg g−1 à 400 mg L−1 de MG et 2532,1 mg g−1 au plateau."
   },
   {
    "type": "tendance_observee",
@@ -1919,7 +1955,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "DMA-Reo-MOF-1",
-   "text": "Hypothèse de chimiste : à 120 °C, l'acide formique se coordonne aux clusters Zr6 et ralentit la nucléation (modulation) ; l'eau du sel hydraté fournit les ponts oxo/hydroxo des clusters. Le ligand à trois fonctions acide (deux carboxylates et un sulfonate) et le fort taux de modulateur (7 mL pour 28 mL de DMF) favorisent probablement des clusters à 8 connexions plutôt que 12 (réseau fcu de DUT-52). La décomposition lente du DMF en diméthylamine donnerait DMA+ qui équilibre la charge du sulfonate. À l'étape d'acidification, H2SO4 protone le sulfonate et échange DMA+ contre H+."
+   "text": "Hypothèse de la critique scientifique, non établie par l'article : l'hydrolyse de ZrOCl2·8H2O dans le DMF (eau de l'hydrate) forme les clusters Zr6, et l'acide formique, en très large excès (≈ 300 équivalents par Zr), coordonne une partie des sites et ralentit la nucléation. Le ligand SNDC étant linéaire (le terme « bending ligand » des auteurs ne s'y applique pas), un réseau reo équivaut à un réseau fcu de type DUT-52 ou UiO dont un quart des clusters manque ; ces phases à clusters manquants ordonnés sont favorisées par l'acide formique comme modulateur (Cliffe et al., Nat. Commun. 2014, 5, 4176 ; Shearer et al., Chem. Mater. 2016, 28, 3749). L'acide formique et le HCl libéré par le sel hydrolysent lentement le DMF en diméthylamine, d'où DMA+, qui compense la charge des sulfonates (1 DMA+ par SO3−). Avec presque les mêmes réactifs, le même groupe obtient la phase bcu VNU-17 : la sélection reo/bcu dépend de détails (rapport modulateur/DMF, durée, concentration) que l'article n'explicite pas. À l'étape d'échange, H2SO4 protone le sulfonate et DMA+ part sous forme d'hydrogénosulfate de diméthylammonium."
   },
   {
    "type": "mecanisme_auteurs",
@@ -1947,6 +1983,62 @@
    "type": "limite_reproductibilite",
    "route": "MG-Reo-MOF-1_CHCl3",
    "text": "La concentration de MG dans le chloroforme, la durée et la température du trempage et les conditions d'activation de l'échantillon ne sont pas données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Annexe S6 : une surface BET de 35,252 m2 g−1 (P/P0 0,057–0,085, C = 102,92, Qm 8,0970 cm3 g−1 STP, section 0,1620 nm2) est donnée sans nom d'échantillon ; la légende de la Fig. S8 cite à la fois DMA⊂Reo-MOF-1 et H+⊂Reo-MOF-1. Elle n'est donc rattachée à aucune voie. Elle est faible pour un MOF poreux et un chimiste doit la connaître avant de viser les capacités d'adsorption annoncées.",
+   "quote": "BET surface area (m2 g-1) 35.252"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H+-Reo-MOF-1",
+   "text": "La capacité de 2532,1 mg g−1 (7,7 mmol g−1 de MG+) vaut environ 3,8 fois la capacité d'échange des 2,0 mmol g−1 de SO3H (au plus ≈ 660 mg g−1 par échange MG+/H+). Elle est aussi incompatible avec la surface BET de 35 m2 g−1 de l'annexe, et le résidu de l'ATG de MG⊂Reo-MOF-1 (≈ 46 % sous air, Fig. 7d) est supérieur à celui attendu pour un MOF chargé à cette valeur (≈ 10 %). L'article ne l'explique pas ; la critique scientifique appuie la comparaison sur la surface d'un réseau reo de Zr intact (Bon, Senkovska, Baburin, Kaskel, Cryst. Growth Des. 2013, DUT-67 : 1064 m2 g−1)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H+-Reo-MOF-1",
+   "text": "Le pHpzc de 4,3 et le plateau du pH final à 6,1 (Fig. 3b) sont incompatibles avec 120 mg d'un solide portant 2,0 mmol g−1 de SO3H libres dans 50 mL de NaCl 0,01 M, qui devrait amener le pH vers 2,3–2,4 (pKa des acides arylsulfoniques ≈ 0,2–0,7, Stenutz, tables de pKa). L'espèce « SO3H2+ » invoquée à pH 1–4 est chimiquement impossible. Le solide testé contient peut-être bien moins de SO3H libres que la formule annoncée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H+-Reo-MOF-1",
+   "text": "Conditions de l'isotherme contradictoires : Méthodes, 15 mg dans 100 mL de MG à 100–1200 mg L−1 ; Résultats, 10 mg dans 50 mL à 20–400 mg L−1. Les points de la Fig. 3a dépassent le maximum possible avec 10 mg dans 50 mL, et seuls 15 mg dans 100 mL sont compatibles avec les couples (Ce, qe) de la Fig. 4b. Les valeurs ont été rangées telles qu'écrites ; un chimiste doit retenir 15 mg dans 100 mL."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H+-Reo-MOF-1",
+   "text": "Aucun essai témoin sans adsorbant n'est décrit et le pH final n'est pas donné. À pH 7, près du pK de 6,9 du couple MG+/carbinol, une partie du vert de malachite peut se convertir en carbinol incolore peu soluble (IARC Monographs vol. 129, Malachite Green and Leucomalachite Green, 2022) : la baisse de l'absorbance à 617 nm n'est donc pas forcément de l'adsorption. L'échange libère aussi des H+ qui déplacent cet équilibre."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H+-Reo-MOF-1",
+   "text": "k2 = 2300 g mg−1 min−1 est environ 10^6 fois trop grand pour la Fig. 5a (valeur recalculée par la critique scientifique ≈ 1–2×10^-3 g mg−1 min−1) ; les unités des constantes de diffusion intraparticulaire (ki, g mg−1 min−1 au lieu de mg g−1 min−1/2) et de KDR sont aussi fausses. Les valeurs sont gardées telles qu'écrites. Un bon ajustement du pseudo-second ordre ne prouve pas une chimisorption, et 0 < RL < 1 indique une adsorption favorable, non irréversible (Tran, You, Hosseini-Bandegharaei, Chao, Water Res. 2017, 120, 88)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H+-Reo-MOF-1",
+   "text": "Réserve sur l'échange DMA+ → H+ : les carboxylates de Zr(IV) supportent en général H2SO4 0,2 M, mais 0,005–0,1 M de H2SO4 suffit à greffer des sulfates sur les sites terminaux des clusters Zr6 de MOF-808 (Jiang et al., J. Am. Chem. Soc. 2014, 136, 12844). Dix bains acides peuvent donc ajouter des sulfates liés à Zr, indiscernables en EDX et invisibles en RMN de digestion ; il faut doser S et formiate avant et après l'échange."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MG-Reo-MOF-1_CHCl3",
+   "text": "Un sel de MG dissous dans le chloroforme donne des paires d'ions MG+X−, non une « forme neutre » du colorant (la forme neutre est le carbinol ou la forme leuco ; IARC Monographs vol. 129, 2022). La conservation de la DRX après activation montre qu'un invité remplit les pores, mais ne distingue pas une interaction π–π d'une interaction électrostatique, et la charge en MG n'est pas mesurée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DMA-Reo-MOF-1",
+   "text": "Topologie reo contre bcu : le même groupe obtient la phase bcu VNU-17 avec presque les mêmes réactifs (rapport ligand/Zr 1,13 contre 0,94 ici, 2 jours contre 72 h ; Nguyen et al., voir PMC9043424). L'article n'indique pas ce qui fixe la topologie et ne cite pas l'origine du diagramme simulé « Reo-MOF-1 » ; comparer le premier pic de diffraction (≈ 3,9° 2θ pour reo, ≈ 6,4° pour bcu)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "DMA-Reo-MOF-1",
+   "text": "La preuve RMN de l'échange (disparition du signal DMA à 2,51 ppm) se situe sur le signal résiduel du DMSO-d6 (≈ 2,50 ppm) et ne discrimine donc pas ; aucune analyse élémentaire n'appuie la formule (DMA)4[Zr6O8(H2O)8(SNDC)4]. Il faut intégrer le signal contre les protons aromatiques avec un étalon ou doser l'azote."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H+-Reo-MOF-1_regenerated",
+   "text": "Une désorption presque complète par l'éthanol pur s'accorde mal avec un MG+ fixé par échange sur SO3− (l'éthanol n'apporte aucun cation) et plutôt avec un MG retenu en paire d'ions ou en agrégat. Les conditions des cycles (masse, concentration, volume d'éthanol, nombre de lavages) ne sont pas données, et « 94 % » est un taux d'enlèvement, non une capacité."
   }
  ],
  "method_sources": [
@@ -2010,7 +2102,7 @@
   },
   {
    "where": "Annexe S6, surface BET",
-   "issue": "Le tableau de la section S6 donne une surface BET de 35,252 m2 g−1 (P/P0 0,057–0,085, C = 102,92) sans dire s'il porte sur DMA⊂Reo-MOF-1 ou H+⊂Reo-MOF-1 (légende de la Fig. S8 : « DMAReo-MOF-1 and H+Reo-MOF-1 »). Valeur non extraite."
+   "issue": "Le tableau de la section S6 donne une surface BET de 35,252 m2 g−1 (P/P0 0,057–0,085, C = 102,92) sans dire s'il porte sur DMA⊂Reo-MOF-1 ou H+⊂Reo-MOF-1 (légende de la Fig. S8 : « DMAReo-MOF-1 and H+Reo-MOF-1 »). Valeur non extraite. Elle figure en annotation limite_reproductibilite, sans voie rattachée."
   },
   {
    "where": "H+-Reo-MOF-1 étape 1",
@@ -2027,6 +2119,18 @@
   {
    "where": "Figures lues",
    "issue": "Valeurs lues sur figures avec 2 chiffres significatifs, précision de lecture d'environ ±3 % de l'échelle : Fig. 3c (capacité à pH 1 à 7), Fig. 3d (10 et 15 mg), Fig. 4a (50, 100, 200, 600, 800 mg L−1), Fig. 5a (5, 15, 60 min), Fig. 6 (cycle 1). Fig. 3a (DUT-52) non chiffrée, la valeur du tableau 3 est utilisée."
+  },
+  {
+   "where": "H+-Reo-MOF-1, FT-IR et Raman de MG⊂Reo-MOF-1 (Fig. 7a, 7b)",
+   "issue": "Le texte donne 1554 et 1166 cm−1 (FT-IR) et 1154 cm−1 pour la bande C=C (Raman) ; les étiquettes des figures donnent 1544 cm−1 (FT-IR, C–O de MG⊂Reo-MOF-1) et 840 cm−1 (Raman, bande C–C). Le texte et la figure ne concordent pas ; valeurs du texte gardées."
+  },
+  {
+   "where": "DMA-Reo-MOF-1, FT-IR",
+   "issue": "Les Résultats donnent les bandes C–O et SO3− de DMA⊂Reo-MOF-1 à 1598, 1411 et 1178 cm−1 ; la liste expérimentale donne 1564 (s), 1413 (s) et 1178 (s) cm−1 et aucune bande à 1598. Les deux lectures sont gardées, chacune avec sa citation."
+  },
+  {
+   "where": "H+-Reo-MOF-1, conditions générales des essais d'adsorption",
+   "issue": "La phrase « The MG adsorption experiments were conducted at room temperature with a constant stirring rate of 500 rpm » suit le réglage du pH dans la section Adsorption studies ; sa formulation vise toutes les expériences d'adsorption de MG, mais l'article ne la répète pas pour le dosage, l'isotherme et la cinétique. Elle est rangée en entrée propre et non ajoutée aux conditions des autres essais."
   }
  ]
 }
