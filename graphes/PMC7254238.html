@@ -1,0 +1,104 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7254238</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7254238 — Lanthanum Ferrite Ceramic Powders: Synthesis, Characterization and Electrochemical Detection Application.</h1>
+<h2>Voie : LaFe-oxalate-precursor</h2>
+<pre class="mermaid">flowchart LR
+  R18386([&quot;lanthanum nitrate hexahydrate&lt;br/&gt;molar ratio 1 (La : Fe : 1,2-…&quot;]):::reactif
+  R18386 --&gt;|&quot;precursor&quot;| S21745
+  R18387([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;molar ratio 1 (La : Fe : 1,2-…&quot;]):::reactif
+  R18387 --&gt;|&quot;precursor&quot;| S21745
+  R18388([&quot;1,2-ethanediol&lt;br/&gt;molar ratio 3 (La : Fe : 1,2-…&quot;]):::reactif
+  R18388 --&gt;|&quot;reducing_agent&quot;| S21745
+  R18389([&quot;nitric acid (2 M solution)&lt;br/&gt;molar ratio 2 (La : Fe : 1,2-…&quot;]):::reactif
+  R18389 --&gt;|&quot;acid&quot;| S21745
+  R18390([&quot;water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18390 --&gt;|&quot;solvent&quot;| S21745
+  R18391([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18391 --&gt;|&quot;wash&quot;| S21745
+  S21745[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 1:1:3:2&lt;br/&gt;ph : 3&quot;]:::etape
+  S21745 --&gt; S21746
+  S21746[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S21746 --&gt; S21747
+  S21747[&quot;&lt;b&gt;3. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : acetone&quot;]:::etape
+  S21747 --&gt; S21748
+  S21748[&quot;&lt;b&gt;4. dry&lt;/b&gt;&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S21748 --&gt; M
+  M{{&quot;lanthanum iron oxalate trihydrate precursor&lt;br/&gt;LaFe(C2O4)3·3H2O&quot;}}:::materiau
+  O85964[&quot;phase : amorphous (XRD)&quot;]:::resultat
+  M -.-&gt; O85964
+  O85965[&quot;mass_loss_25-160C : 11.1 %&quot;]:::resultat
+  M -.-&gt; O85965
+  O85966[&quot;mass_loss_160-280C : 10.4 %&quot;]:::resultat
+  M -.-&gt; O85966
+  O85967[&quot;mass_loss_280-550C : 34.03 %&quot;]:::resultat
+  M -.-&gt; O85967
+  O85968[&quot;mass_loss_25-160C_calcd_by_authors : 10.53 %&quot;]:::resultat
+  M -.-&gt; O85968
+  O85969[&quot;mass_loss_160-280C_calcd_by_authors : 10.92 %&quot;]:::resultat
+  M -.-&gt; O85969
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LaFeO3-550</h2>
+<pre class="mermaid">flowchart LR
+  R18392([&quot;LaFe(C2O4)3·3H2O oxalate precursor (route La…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18392 --&gt;|&quot;intermediate&quot;| S21749
+  S21749[&quot;&lt;b&gt;1. calcine&lt;/b&gt;&lt;br/&gt;temperature : 550 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : air&lt;br/&gt;heating_rate : 10 °C min−1&quot;]:::etape
+  S21749 --&gt; M
+  M{{&quot;lanthanum ferrite ceramic powder&lt;br/&gt;LaFeO3&quot;}}:::materiau
+  O85972[&quot;phase : orthorhombic LaFeO3 perovskit…&quot;]:::resultat
+  M -.-&gt; O85972
+  O85973[&quot;average_crystallite_size : 17.5 nm&quot;]:::resultat
+  M -.-&gt; O85973
+  O85974[&quot;particle_size_FE-SEM : most below 15 nm&quot;]:::resultat
+  M -.-&gt; O85974
+  O85975[&quot;particle_size_TEM : 10–20 nm&quot;]:::resultat
+  M -.-&gt; O85975
+  O85976[&quot;particle_size_HRTEM : 6.5–10 nm&quot;]:::resultat
+  M -.-&gt; O85976
+  O85977[&quot;crystallinity : 18 %&quot;]:::resultat
+  M -.-&gt; O85977
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13816{{&quot;LaFeO3-550&quot;}}:::materiau
+  B13817[&quot;LaFeO3-600&quot;]:::etape
+  B13816 --&gt;|&quot;temperature = 600 °C&quot;| B13817
+  B13818[&quot;LaFeO3-700&quot;]:::etape
+  B13816 --&gt;|&quot;temperature = 700 °C&quot;| B13818
+  B13819[&quot;LaFeO3-800&quot;]:::etape
+  B13816 --&gt;|&quot;temperature = 800 °C&quot;| B13819
+  B13820[&quot;LaFeO3-500&quot;]:::etape
+  B13816 --&gt;|&quot;temperature = 500 °C&quot;| B13820
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LaFeO3-BDD_electrode</h2>
+<pre class="mermaid">flowchart LR
+  R18393([&quot;boron-doped diamond (BDD) electrode, Windsor…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18393 --&gt;|&quot;substrate&quot;| S21751
+  R18394([&quot;LaFeO3 powder calcined at 550 °C (route LaFe…&lt;br/&gt;5 mg mL−1&quot;]):::reactif
+  R18394 --&gt;|&quot;intermediate&quot;| S21751
+  S21751[&quot;&lt;b&gt;1. deposit&lt;/b&gt;&lt;br/&gt;concentration : 5 mg mL−1&quot;]:::etape
+  S21751 --&gt; S21752
+  S21752[&quot;&lt;b&gt;2. stabilize&lt;/b&gt;&lt;br/&gt;repetitions : 10&quot;]:::etape
+  S21752 --&gt; M
+  M{{&quot;LaFeO3-modified boron-doped diamond electrode&lt;br/&gt;&quot;}}:::materiau
+  O86036[&quot;response_unmodified_BDD_5uM_CCB : no signal&quot;]:::resultat
+  M -.-&gt; O86036
+  O86037[&quot;CV_linear_dependence_current_vs_CCB : linear at −0.4 V/SCE and 0.4 …&quot;]:::resultat
+  M -.-&gt; O86037
+  O86038[&quot;DPV_CCB_reduction_peak_potential : −1.02 V/SCE&quot;]:::resultat
+  M -.-&gt; O86038
+  O86039[&quot;sensitivity_CV_oxidation_-0.40V : 0.257 µA µM−1 cm−2&quot;]:::resultat
+  M -.-&gt; O86039
+  O86040[&quot;correlation_coefficient_R2_CV_oxid… : 0.971&quot;]:::resultat
+  M -.-&gt; O86040
+  O86041[&quot;LOD_CV_oxidation_-0.40V : 0.021 µM&quot;]:::resultat
+  M -.-&gt; O86041
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
