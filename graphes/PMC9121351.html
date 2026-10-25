@@ -1,0 +1,326 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9121351</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9121351 — Caffeine Encapsulation in Metal Organic Framework MIL-53(Al) at Pilot Plant Scale for Preparation of Polyamide Textile Fibers with Cosmetic Properties.</h1>
+<h2>Voie : MIL53_H2O_220C_72h</h2>
+<pre class="mermaid">flowchart LR
+  R18742([&quot;aluminum nitrate nonahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18742 --&gt;|&quot;precursor&quot;| S22228
+  R18743([&quot;terephthalic acid (BDC)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18743 --&gt;|&quot;ligand&quot;| S22228
+  R18744([&quot;deionized water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18744 --&gt;|&quot;solvent&quot;| S22228
+  R18745([&quot;ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18745 --&gt;|&quot;wash&quot;| S22228
+  S22228[&quot;&lt;b&gt;1. disperse&lt;/b&gt;&lt;br/&gt;molar_ratio : 1Al(NO3)3·9H2O/0.5BDC/80H2O&quot;]:::etape
+  S22228 --&gt; S22229
+  S22229[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 220 °C&lt;br/&gt;duration : 3 days&lt;br/&gt;autoclave_volume : 40 mL&quot;]:::etape
+  S22229 --&gt; S22230
+  S22230[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 10000 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S22230 --&gt; S22231
+  S22231[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&quot;]:::etape
+  S22231 --&gt; S22232
+  S22232[&quot;&lt;b&gt;5. centrifuge&lt;/b&gt;&quot;]:::etape
+  S22232 --&gt; S22233
+  S22233[&quot;&lt;b&gt;6. dry&lt;/b&gt;&lt;br/&gt;temperature : 65 °C&lt;br/&gt;duration : overnight&quot;]:::etape
+  S22233 --&gt; M
+  M{{&quot;MIL-53(Al) as-synthesized (water)&lt;br/&gt;Al(OH)(BDC)&quot;}}:::materiau
+  O87530[&quot;trapped_BDC : 27.5 wt %&quot;]:::resultat
+  M -.-&gt; O87530
+  O87531[&quot;crystal_size_SEM : about 3 μm, up to 10 μm&quot;]:::resultat
+  M -.-&gt; O87531
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14032{{&quot;MIL53_H2O_220C_72h&quot;}}:::materiau
+  B14033[&quot;MIL53_H2O_pilot_failed&quot;]:::etape
+  B14032 --&gt;|&quot;autoclave_volume = 3.75 L&lt;br/&gt;aluminum nitrate nonahyd… = amounts of reactants mul…&lt;br/&gt;terephthalic acid (BDC) = amounts of reactants mul…&lt;br/&gt;deionized water = amounts of reactants mul…&quot;| B14033
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Act_cal380</h2>
+<pre class="mermaid">flowchart LR
+  R18746([&quot;MIL-53(Al)as (route MIL53_H2O_220C_72h)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18746 --&gt;|&quot;intermediate&quot;| S22236
+  S22236[&quot;&lt;b&gt;1. calcine&lt;/b&gt;&lt;br/&gt;temperature : 380 °C&quot;]:::etape
+  S22236 --&gt; M
+  M{{&quot;MIL-53(Al) activated by calcination at 380 °C&lt;br/&gt;Al(OH)(BDC)&quot;}}:::materiau
+  O87534[&quot;trapped_BDC_after_activation : complete activation&quot;]:::resultat
+  M -.-&gt; O87534
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14034{{&quot;Act_cal380&quot;}}:::materiau
+  B14035[&quot;Act_cal350&quot;]:::etape
+  B14034 --&gt;|&quot;temperature = 350 °C&quot;| B14035
+  B14036[&quot;Act_cal330&quot;]:::etape
+  B14034 --&gt;|&quot;temperature = 330 °C&quot;| B14036
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Act_MeOH_reflux</h2>
+<pre class="mermaid">flowchart LR
+  R18747([&quot;MIL-53(Al)as (route MIL53_H2O_220C_72h)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18747 --&gt;|&quot;intermediate&quot;| S22237
+  R18748([&quot;methanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18748 --&gt;|&quot;solvent&quot;| S22237
+  S22237[&quot;&lt;b&gt;1. reflux&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&quot;]:::etape
+  S22237 --&gt; M
+  M{{&quot;MIL-53(Al) after methanol extraction&lt;br/&gt;Al(OH)(BDC)&quot;}}:::materiau
+  O87535[&quot;trapped_BDC_after_activation : 17.4 wt %&quot;]:::resultat
+  M -.-&gt; O87535
+  O87536[&quot;trapped_BDC_after_activation_text : 17.4 wt %&quot;]:::resultat
+  M -.-&gt; O87536
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Act_DMF</h2>
+<pre class="mermaid">flowchart LR
+  R18749([&quot;MIL-53(Al)as (route MIL53_H2O_220C_72h)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18749 --&gt;|&quot;intermediate&quot;| S22238
+  R18750([&quot;N,N-dimethylformamide (DMF)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18750 --&gt;|&quot;solvent&quot;| S22238
+  S22238[&quot;&lt;b&gt;1. heat&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&quot;]:::etape
+  S22238 --&gt; M
+  M{{&quot;MIL-53(Al) after DMF treatment&lt;br/&gt;Al(OH)(BDC)&quot;}}:::materiau
+  O87537[&quot;trapped_BDC_after_activation : 2.3 wt %&quot;]:::resultat
+  M -.-&gt; O87537
+  O87538[&quot;trapped_BDC_after_activation_text : 2.3 wt %&quot;]:::resultat
+  M -.-&gt; O87538
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MIL53_H2OMeOH_150C_12h</h2>
+<pre class="mermaid">flowchart LR
+  R18751([&quot;aluminum nitrate nonahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18751 --&gt;|&quot;precursor&quot;| S22239
+  R18752([&quot;terephthalic acid (BDC)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18752 --&gt;|&quot;ligand&quot;| S22239
+  R18753([&quot;water&lt;br/&gt;10 mL&quot;]):::reactif
+  R18753 --&gt;|&quot;solvent&quot;| S22239
+  R18754([&quot;methanol&lt;br/&gt;10 mL&quot;]):::reactif
+  R18754 --&gt;|&quot;solvent&quot;| S22239
+  S22239[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 1Al(NO3)3·9H2O/0.5BDC/40H2O/1…&lt;br/&gt;solvent_ratio : 50/50 (v%) water/methanol&quot;]:::etape
+  S22239 --&gt; S22240
+  S22240[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&lt;br/&gt;duration : 12 h&lt;br/&gt;autoclave_volume : 40 mL&quot;]:::etape
+  S22240 --&gt; M
+  M{{&quot;MIL-53(Al) as-synthesized (water/methanol)&lt;br/&gt;Al(OH)(BDC)&quot;}}:::materiau
+  O87539[&quot;trapped_BDC : 9.9 wt %&quot;]:::resultat
+  M -.-&gt; O87539
+  O87540[&quot;MOF_mass : 1.5 g&quot;]:::resultat
+  M -.-&gt; O87540
+  O87541[&quot;crystal_size_SEM : 0.5 μm&quot;]:::resultat
+  M -.-&gt; O87541
+  O87542[&quot;yield_wrt_limiting_reagent : greater than 50% (nitrate and…&quot;]:::resultat
+  M -.-&gt; O87542
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14039{{&quot;MIL53_H2OMeOH_150C_12h&quot;}}:::materiau
+  B14040[&quot;MIL53_H2OMeOH_150C_24h&quot;]:::etape
+  B14039 --&gt;|&quot;duration = 24 h&quot;| B14040
+  B14041[&quot;MIL53_H2OMeOH_150C_48h&quot;]:::etape
+  B14039 --&gt;|&quot;duration = 48 h&quot;| B14041
+  B14042[&quot;MIL53_H2OMeOH_150C_72h&quot;]:::etape
+  B14039 --&gt;|&quot;duration = 72 h&quot;| B14042
+  B14043[&quot;MIL53_H2OMeOH_180C&quot;]:::etape
+  B14039 --&gt;|&quot;temperature = 180 °C&lt;br/&gt;duration = from 72 to 48, 24, and 1…&quot;| B14043
+  B14044[&quot;MIL53_H2OMeOH_400mL&quot;]:::etape
+  B14039 --&gt;|&quot;autoclave_volume = 400 mL&lt;br/&gt;aluminum nitrate nonahyd… = multiplying the amounts …&lt;br/&gt;terephthalic acid (BDC) = multiplying the amounts …&lt;br/&gt;water = multiplying the amounts …&quot;| B14044
+  B14045[&quot;MIL53_H2OMeOH_pilot_3.75L&quot;]:::etape
+  B14039 --&gt;|&quot;autoclave_volume = 3.75 L&lt;br/&gt;aluminum nitrate nonahyd… = (×80)&lt;br/&gt;terephthalic acid (BDC) = (×80)&lt;br/&gt;water = (×80)&quot;| B14045
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : MIL53_SUFAL_40mL_150C_24h</h2>
+<pre class="mermaid">flowchart LR
+  R18755([&quot;aluminum sulfate (SUFAL 8.2)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18755 --&gt;|&quot;precursor&quot;| S22241
+  R18756([&quot;terephthalic acid (BDC)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18756 --&gt;|&quot;ligand&quot;| S22241
+  R18757([&quot;water&lt;br/&gt;10 mL&quot;]):::reactif
+  R18757 --&gt;|&quot;solvent&quot;| S22241
+  R18758([&quot;methanol&lt;br/&gt;10 mL&quot;]):::reactif
+  R18758 --&gt;|&quot;solvent&quot;| S22241
+  S22241[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S22241 --&gt; S22242
+  S22242[&quot;&lt;b&gt;2. heat&lt;/b&gt;&lt;br/&gt;temperature : 150 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;autoclave_volume : 40 mL&quot;]:::etape
+  S22242 --&gt; M
+  M{{&quot;MIL-53(Al) as-synthesized (aluminum sulfate SUFAL…&lt;br/&gt;Al(OH)(BDC)&quot;}}:::materiau
+  O87549[&quot;MOF_mass : 1.5 g&quot;]:::resultat
+  M -.-&gt; O87549
+  O87550[&quot;yield_wrt_limiting_reagent : greater than 50% (nitrate and…&quot;]:::resultat
+  M -.-&gt; O87550
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14046{{&quot;MIL53_SUFAL_40mL_150C_24h&quot;}}:::materiau
+  B14047[&quot;MIL53_SUFAL_150mL_150C_24h&quot;]:::etape
+  B14046 --&gt;|&quot;autoclave_volume = 150 mL&lt;br/&gt;aluminum sulfate (SUFAL … = (×3)&lt;br/&gt;terephthalic acid (BDC) = (×3)&lt;br/&gt;water = (×3)&quot;| B14047
+  B14048[&quot;MIL53_SUFAL_150mL_150C_48h&quot;]:::etape
+  B14046 --&gt;|&quot;autoclave_volume = 150 mL&lt;br/&gt;duration = 48 h&lt;br/&gt;aluminum sulfate (SUFAL … = (×3)&lt;br/&gt;terephthalic acid (BDC) = (×3)&quot;| B14048
+  B14049[&quot;MIL53_SUFAL_150mL_180C_24h&quot;]:::etape
+  B14046 --&gt;|&quot;autoclave_volume = 150 mL&lt;br/&gt;temperature = 180 °C&lt;br/&gt;aluminum sulfate (SUFAL … = (×3)&lt;br/&gt;terephthalic acid (BDC) = (×3)&quot;| B14049
+  B14050[&quot;MIL53_SUFAL_400mL_150C_24h&quot;]:::etape
+  B14046 --&gt;|&quot;autoclave_volume = 400 mL&lt;br/&gt;aluminum sulfate (SUFAL … = (×8)&lt;br/&gt;terephthalic acid (BDC) = (×8)&lt;br/&gt;water = (×8)&quot;| B14050
+  B14051[&quot;MIL53_SUFAL_pilot_180C_12h&quot;]:::etape
+  B14046 --&gt;|&quot;autoclave_volume = 3.75 L&lt;br/&gt;temperature = 180 °C&lt;br/&gt;duration = 12 h&lt;br/&gt;aluminum sulfate (SUFAL … = (×80)&quot;| B14051
+  B14052[&quot;MIL53_SUFAL_pilot_150C_12h&quot;]:::etape
+  B14046 --&gt;|&quot;autoclave_volume = 3.75 L&lt;br/&gt;duration = 12 h&lt;br/&gt;aluminum sulfate (SUFAL … = (×80)&lt;br/&gt;terephthalic acid (BDC) = (×80)&quot;| B14052
+  B14053[&quot;MIL53_SUFAL_pilot_150C_24h&quot;]:::etape
+  B14046 --&gt;|&quot;autoclave_volume = 3.75 L&lt;br/&gt;aluminum sulfate (SUFAL … = (×80)&lt;br/&gt;terephthalic acid (BDC) = (×80)&lt;br/&gt;water = (×80)&quot;| B14053
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : Act_SUFAL_cal380_24h</h2>
+<pre class="mermaid">flowchart LR
+  R18759([&quot;MIL-53(Al)as made with SUFAL 8.2 at large sc…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18759 --&gt;|&quot;intermediate&quot;| S22243
+  S22243[&quot;&lt;b&gt;1. calcine&lt;/b&gt;&lt;br/&gt;temperature : 380 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S22243 --&gt; M
+  M{{&quot;MIL-53(Al) (SUFAL 8.2) activated by calcination&lt;br/&gt;Al(OH)(BDC)&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZIF8_25C_2h</h2>
+<pre class="mermaid">flowchart LR
+  R18760([&quot;zinc nitrate hexahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18760 --&gt;|&quot;precursor&quot;| S22244
+  R18761([&quot;Im (imidazolate ligand, abbreviation not def…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18761 --&gt;|&quot;ligand&quot;| S22244
+  R18762([&quot;methanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18762 --&gt;|&quot;solvent&quot;| S22244
+  R18763([&quot;water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18763 --&gt;|&quot;solvent&quot;| S22244
+  S22244[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;molar_ratio : 1Zn(NO3)2·6H2O/12Im/312.5MeOH…&lt;br/&gt;duration : 2 h&lt;br/&gt;temperature : 25 °C&quot;]:::etape
+  S22244 --&gt; S22245
+  S22245[&quot;&lt;b&gt;2. centrifuge&lt;/b&gt;&quot;]:::etape
+  S22245 --&gt; M
+  M{{&quot;ZIF-8&lt;br/&gt;&quot;}}:::materiau
+  O87564[&quot;particle_size : 100 nm&quot;]:::resultat
+  M -.-&gt; O87564
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : ZeoliteY_pretreatment_250C</h2>
+<pre class="mermaid">flowchart LR
+  R18764([&quot;zeolite Y (SIOLITE, SiO2/Al2O3 4.8)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18764 --&gt;|&quot;precursor&quot;| S22246
+  S22246[&quot;&lt;b&gt;1. heat&lt;/b&gt;&lt;br/&gt;temperature : 250 °C&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S22246 --&gt; M
+  M{{&quot;zeolite Y (SIOLITE), pretreated&lt;br/&gt;&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CAF_MIL53_H2OMeOH_lab</h2>
+<pre class="mermaid">flowchart LR
+  R18765([&quot;MIL-53(Al)as_H2O/MeOH (route MIL53_H2OMeOH_1…&lt;br/&gt;0.3 g&quot;]):::reactif
+  R18765 --&gt;|&quot;intermediate&quot;| S22247
+  R18766([&quot;caffeine&lt;br/&gt;0.6 g&quot;]):::reactif
+  R18766 --&gt;|&quot;active_material&quot;| S22247
+  R18767([&quot;water&lt;br/&gt;60 g&quot;]):::reactif
+  R18767 --&gt;|&quot;solvent&quot;| S22247
+  S22247[&quot;&lt;b&gt;1. react&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;caffeine_to_mof_weight_r… : double amount by weight of ca…&quot;]:::etape
+  S22247 --&gt; S22248
+  S22248[&quot;&lt;b&gt;2. filter&lt;/b&gt;&quot;]:::etape
+  S22248 --&gt; S22249
+  S22249[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : room temperature&quot;]:::etape
+  S22249 --&gt; S22250
+  S22250[&quot;&lt;b&gt;4. heat&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 12 h&quot;]:::etape
+  S22250 --&gt; M
+  M{{&quot;CAF@MIL-53(Al) (MOF synthesized in water/methanol)&lt;br/&gt;&quot;}}:::materiau
+  O87565[&quot;caffeine_content : 36.5 wt %&quot;]:::resultat
+  M -.-&gt; O87565
+  O87566[&quot;caffeine_content_text : 38 wt %&quot;]:::resultat
+  M -.-&gt; O87566
+  O87567[&quot;caffeine_content_UV_vis : 38.9 %&quot;]:::resultat
+  M -.-&gt; O87567
+  O87568[&quot;caffeine_released_6_days : 22 %&quot;]:::resultat
+  M -.-&gt; O87568
+  O87569[&quot;caffeine_released_1_day : 20 %&quot;]:::resultat
+  M -.-&gt; O87569
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14057{{&quot;CAF_MIL53_H2OMeOH_lab&quot;}}:::materiau
+  B14058[&quot;CAF_MIL53_H2OMeOH_pilot&quot;]:::etape
+  B14057 --&gt;|&quot;MIL-53(Al)as_H2O/MeOH (r… = replaced by MIL-53(Al) f…&lt;br/&gt;caffeine = 120 g&lt;br/&gt;water = all of the above quantit…&quot;| B14058
+  B14059[&quot;CAF_MIL53_H2O_cal380&quot;]:::etape
+  B14057 --&gt;|&quot;MIL-53(Al)as_H2O/MeOH (r… = replaced by MIL-53(Al) s…&quot;| B14059
+  B14060[&quot;CAF_MIL53_H2O_DMF&quot;]:::etape
+  B14057 --&gt;|&quot;MIL-53(Al)as_H2O/MeOH (r… = replaced by MIL-53(Al) s…&quot;| B14060
+  B14061[&quot;CAF_MIL53_H2O_nonactivated&quot;]:::etape
+  B14057 --&gt;|&quot;MIL-53(Al)as_H2O/MeOH (r… = replaced by non-activate…&quot;| B14061
+  B14062[&quot;CAF_MIL53_SUFAL_cal380&quot;]:::etape
+  B14057 --&gt;|&quot;MIL-53(Al)as_H2O/MeOH (r… = replaced by MIL-53(Al) m…&quot;| B14062
+  B14063[&quot;CAF_ZIF8&quot;]:::etape
+  B14057 --&gt;|&quot;MIL-53(Al)as_H2O/MeOH (r… = replaced by ZIF-8 (route…&quot;| B14063
+  B14064[&quot;CAF_zeoliteY&quot;]:::etape
+  B14057 --&gt;|&quot;MIL-53(Al)as_H2O/MeOH (r… = replaced by zeolite Y pr…&quot;| B14064
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PA6_fiber_MIL53_0.45wt</h2>
+<pre class="mermaid">flowchart LR
+  R18775([&quot;polyamide-6 (PA-6)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18775 --&gt;|&quot;polymer&quot;| S22255
+  R18776([&quot;CAF@MIL-53(Al) capsules (route CAF_MIL53_H2O…&lt;br/&gt;0.45 wt %&quot;]):::reactif
+  R18776 --&gt;|&quot;intermediate&quot;| S22255
+  R18777([&quot;TiO2 white pigment&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18777 --&gt;|&quot;additive&quot;| S22255
+  S22255[&quot;&lt;b&gt;1. extrude&lt;/b&gt;&lt;br/&gt;temperature : up to 260 °C can be reached f…&quot;]:::etape
+  S22255 --&gt; S22256
+  S22256[&quot;&lt;b&gt;2. spin&lt;/b&gt;&quot;]:::etape
+  S22256 --&gt; S22257
+  S22257[&quot;&lt;b&gt;3. cool&lt;/b&gt;&quot;]:::etape
+  S22257 --&gt; S22258
+  S22258[&quot;&lt;b&gt;4. wind&lt;/b&gt;&lt;br/&gt;winding_speed : 5000 m/min&quot;]:::etape
+  S22258 --&gt; M
+  M{{&quot;PA-6 fibers containing 0.45 wt % CAF@MIL-53(Al)&lt;br/&gt;&quot;}}:::materiau
+  O87582[&quot;theoretical_caffeine : 1575 ppm&quot;]:::resultat
+  M -.-&gt; O87582
+  O87583[&quot;caffeine_in_fibers_GC_MS : 1489 ppm&quot;]:::resultat
+  M -.-&gt; O87583
+  O87584[&quot;remaining_caffeine : 94.5 %&quot;]:::resultat
+  M -.-&gt; O87584
+  O87585[&quot;tenacity : 3.1–3.3 cN/dtex (standard fib…&quot;]:::resultat
+  M -.-&gt; O87585
+  O87586[&quot;elongation_at_break : 64–71% (70% for conventional …&quot;]:::resultat
+  M -.-&gt; O87586
+  O87587[&quot;caffeine_in_fabric_after_scouring : 103 ppm&quot;]:::resultat
+  M -.-&gt; O87587
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14065{{&quot;PA6_fiber_MIL53_0.45wt&quot;}}:::materiau
+  B14066[&quot;PA6_fiber_MIL53_0.35wt&quot;]:::etape
+  B14065 --&gt;|&quot;CAF@MIL-53(Al) capsules … = 0.35 wt %&quot;| B14066
+  B14067[&quot;PA6_fiber_MIL53_0.70wt&quot;]:::etape
+  B14065 --&gt;|&quot;CAF@MIL-53(Al) capsules … = 0.7 wt %&quot;| B14067
+  B14068[&quot;PA6_fiber_zeoliteY_0.28wt&quot;]:::etape
+  B14065 --&gt;|&quot;CAF@MIL-53(Al) capsules … = replaced by CAF@zeolite …&quot;| B14068
+  B14069[&quot;PA6_fiber_ZIF8_0.60wt&quot;]:::etape
+  B14065 --&gt;|&quot;CAF@MIL-53(Al) capsules … = replaced by CAF@ZIF-8 ca…&quot;| B14069
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
