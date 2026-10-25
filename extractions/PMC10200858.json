@@ -131,7 +131,10 @@
      "purity": "37%",
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Sigma-Aldrich Co., USA, provided the nonionic surfactant of EO20PO70EO20, (Pluronic P123), ethanol (99%), TEOS (tetraethyl orthosilicate), FeCl3, and hydrochloric acid (HCl, 37%).",
-     "quote": "4 g of pluronic 123 were dissolved in 60 g of HCl (4 M)"
+     "quote": "4 g of pluronic 123 were dissolved in 60 g of HCl (4 M)",
+     "not_stated": [
+      "dilution"
+     ]
     },
     {
      "name": "tetraethyl orthosilicate (TEOS)",
@@ -157,7 +160,9 @@
      "supplier": "Sigma-Aldrich",
      "supplier_quote": "Sigma-Aldrich Co., USA, provided the nonionic surfactant of EO20PO70EO20, (Pluronic P123), ethanol (99%), TEOS (tetraethyl orthosilicate), FeCl3, and hydrochloric acid (HCl, 37%).",
      "not_stated": [
-      "purity"
+      "form",
+      "purity",
+      "solvent"
      ],
      "quote": "50 mL of 0.1 M FeCl3 (Si 35 mmol: Fe 5 mmol)"
     },
@@ -473,6 +478,20 @@
      "instrument": "SP-UV200 UV/VIS Spectrophotometer",
      "conditions": "664 nm; 50 mL of 100 mg/L MB, 50 mg adsorbent; pH adjusted with a universal pH buffer (pH 2–12)",
      "quote": "50 mL of 100 mg/L MB solution was first made, and 50 mg of Fe-γ–CS–SBA-15 was subsequently added."
+    },
+    {
+     "technique": "XPS (C1s)",
+     "result": "C1s components at 284.9 eV (aliphatic C–C, C–H), 286.5 eV (CH and C=N groups) and 288.1 eV (C=O groups)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Three elements in the C1s spectrum have chemical shifts that correspond to the following groups: aliphatic (C–C, C–H) groups (284.9 eV (0.1))"
+    },
+    {
+     "technique": "UV-Vis (adsorption isotherm of methylene blue)",
+     "result": "Langmuir isotherm, Qmax 176.70 mg/g, R2 0.9945",
+     "instrument": "SP-UV200 UV/VIS Spectrophotometer",
+     "conditions": "adsorbent dosage 0.05 g, [MB] 20–300 mg/L, time 30 min, pH 9 (légende de la Fig. 13)",
+     "quote": "Fig. 13 Adsorption isotherms of MB on Fe-γ–CS–SBA-15 (adsorbent dosage 0.05 g, [MB] 20–300 mg/L, Time 30 min, pH 9)."
     }
    ],
    "outcomes": [
@@ -766,6 +785,41 @@
      "instrument": "Quantachrome Instruments v11.0",
      "conditions": "N2 as adsorbate at 77.3 K",
      "quote": "Brunauer-Emmett-Teller (BET) surface area was measured with N2 as adsorbate at 77.3 K by Quantachrome Instruments v11.0."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "band at 798 cm−1 (written SiO–H) present in the spectra of the four samples including Fe-SBA-15; Si–O–Si bands at 1062 and 557 cm−1 described jointly for the spectra; the additional N–H band at 1541 cm−1 is reported for Fe-γ–CS–SBA-15 only",
+     "instrument": "Bruker model ALPHA",
+     "conditions": null,
+     "quote": "Fig. 7 displays the FTIR spectra of γ-CS, SBA-15, Fe-SBA-15 and Fe-γ–CS–SBA-15, which have significant intensity peaks at 798 cm−1"
+    },
+    {
+     "technique": "wide-angle XRD",
+     "result": "one broad peak between 2θ 20–30°, typical of mesoporous SBA-15; no Fe diffraction peaks",
+     "instrument": "Bruker D8 Advance A25",
+     "conditions": null,
+     "quote": "Fig. 6 displays the wide angle XRD patterns of Fe-SBA-15 and Fe-γ–CS–SBA-15, which are typical of mesoporous SBA-15 and have just one broad peak between 2θ values of 20–30°"
+    },
+    {
+     "technique": "small-angle XRD",
+     "result": "d100 identical to that of Fe-γ–CS–SBA-15; unit cell parameter a0 = 14.98 nm",
+     "instrument": "Bruker D8 Advance A25 diffractometer with Ni filter and Lynxeye one-dimensional multistrip detector",
+     "conditions": "Cu K radiation: 0.154184 nm",
+     "quote": "the d100 interplanar spacings can be calculated to be 12.98 that Fe-SBA-15 and Fe-γ–CS–SBA-15 are the same d100"
+    },
+    {
+     "technique": "HRTEM",
+     "result": "pore size 7.2 nm",
+     "instrument": "JEOL JEM-ARM200F microscope with HAADF detector",
+     "conditions": null,
+     "quote": "Pore sizes of 7.2 and 9.1 nm for the mesoporous silicas Fe-SBA-15 and Fe-γ–CS–SBA-15, respectively, were estimated from numerous HRTEM images."
+    },
+    {
+     "technique": "ICP-MS",
+     "result": "Fe loading 11.28 mg/kg",
+     "instrument": "Agilent 7500ce (USA)",
+     "conditions": null,
+     "quote": "Fe-SBA-15 and Fe-γ–CS–SBA-15 had Fe loading efficiencies of 11.28 mg/kg and 21.68 mg/kg, respectively."
     }
    ],
    "outcomes": [
@@ -856,6 +910,29 @@
      "from_figure": "Fig. 12",
      "quote": "Fig. 12 Effect of adsorbent dosage on adsorption of methylene blue ([MB] 100 mg/L, pH 9, Time 30 min)"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "hydrothermal",
+     "description": "Synthèse hydrothermale directe de la silice SBA-15 substituée au fer, sans chitosane, en conditions faiblement acides ; l'article ne donne pour cet échantillon ni réactifs, ni quantités, ni températures, ni durées, ni retrait du tensioactif.",
+     "quote": "Materials with iron substitution in SBA-15 (Fe-SBA-15) have been synthesized using a straightforward direct hydrothermal process and minimally acidic conditions.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "reagents",
+      "amounts",
+      "surfactant_removal",
+      "acid_concentration"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "protocole complet de Fe-SBA-15",
+    "quantités de réactifs",
+    "retrait du tensioactif"
    ]
   }
  ],
@@ -896,7 +973,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "L'irradiation gamma du chitosane (dose, source, masse molaire obtenue) n'est pas décrite ; la quantité de TEOS n'est donnée que comme Si 35 mmol ; la vitesse d'agitation, le volume de lavage, la durée du séchage à 100 °C et le rendement sont absents. Le protocole de l'échantillon Fe-SBA-15 sans chitosane n'est jamais écrit : il est rattaché à la voie de base par une lecture littérale de « chitosan-free synthesis ». Le pH de la synthèse et la température de l'essai d'adsorption (« room temperature » dans la conclusion seulement) ne sont pas précisés dans les méthodes."
+   "text": "L'irradiation gamma du chitosane (dose, source, masse molaire obtenue) n'est pas décrite ; la quantité de TEOS n'est donnée que comme Si 35 mmol ; la vitesse d'agitation, le volume de lavage, la durée du séchage à 100 °C et le rendement sont absents. Le protocole de l'échantillon Fe-SBA-15 sans chitosane n'est jamais écrit (seulement « direct hydrothermal process and minimally acidic conditions » et « chitosan-free synthesis ») : il n'hérite donc d'aucune étape de la voie de base, qui est utilisée seulement comme point de comparaison. Le pH de la synthèse et la température de l'essai d'adsorption (« room temperature » dans la conclusion seulement) ne sont pas précisés dans les méthodes."
   },
   {
    "type": "limite_reproductibilite",
@@ -912,50 +989,46 @@
   {
    "type": "mecanisme_analyse",
    "route": "Fe-γ–CS–SBA-15",
-   "text": "Hypothèse de chimiste : en milieu HCl 4 M, le TEOS s'hydrolyse puis se condense autour des micelles de P123 (voie classique de SBA-15), tandis que les amines du chitosane, protonées en NH3+, sont liées aux silanols et aux ions chlorure ferriques ; le chitosane serait ainsi piégé dans la paroi et le fer retenu par chélation, ce qui expliquerait l'élargissement des pores et la teneur plus forte en fer. Le fer reste probablement sous forme d'oxyde ou d'espèces Fe(III) dispersées, non détectées en XRD grand angle. L'extraction Soxhlet à l'éthanol retire le P123 sans calcination, ce qui préserve le chitosane."
+   "text": "Hypothèse de chimiste : en milieu HCl 4 M, le TEOS s'hydrolyse puis se condense autour des micelles de P123 (voie classique de SBA-15). Après l'ajout de la solution de fer, l'acidité du mélange reste très élevée (de l'ordre de 2 M en HCl, estimation sur les quantités de l'article) : les amines du chitosane, dont le pKa est voisin de 6,5, y seraient entièrement protonées en NH3+ et liées aux silanols ou aux anions chlorure plutôt que de chélater le fer ; la composante N1s à 401,56 eV attribuée par les auteurs à NH2–Fe pourrait donc correspondre à un ammonium, ce que ni Fe2p (non détecté) ni un témoin sans fer ne permettent de trancher. L'état du fer est indéterminé : le titre annonce un « oxyde de fer », mais aucune raie d'oxyde n'apparaît en DRX grand angle ; il s'agirait plutôt d'espèces Fe(III) dispersées ou d'un oxyde amorphe, et l'incorporation de presque tout le fer dans un gel aussi acide serait surprenante. Pendant 20 h à 40 °C puis 24 h à 100 °C dans cet acide, le chitosane s'hydrolyserait probablement (coupure des liaisons glycosidiques), si bien que la masse molaire du polymère retenu n'est pas celle du réactif et que des fragments solubles peuvent partir aux lavages. L'extraction Soxhlet à l'éthanol retire le P123 sans calcination, ce qui préserve le chitosane."
   },
   {
    "type": "securite_analyse",
    "route": "Fe-γ–CS–SBA-15",
-   "text": "L'acide chlorhydrique 4 M est corrosif ; le TEOS est inflammable et irritant et libère de l'éthanol à l'hydrolyse ; le chlorure ferrique est corrosif. L'étape à 100 °C dans un récipient en Téflon (autoclave, non précisé) se fait sous pression autogène avec une solution acide chaude : l'article ne donne pas le taux de remplissage. Le bleu de méthylène est nocif ; la source de rayons gamma utilisée pour irradier le chitosane exige une installation habilitée."
+   "text": "L'acide chlorhydrique 4 M est corrosif et dégage des vapeurs de HCl à 40 °C pendant 20 h puis à 100 °C ; le TEOS est inflammable et irritant et libère de l'éthanol à l'hydrolyse ; le chlorure ferrique est corrosif. L'étape à 100 °C dans un récipient en Téflon (autoclave ou flacon fermé, non précisé) se fait sous pression autogène avec une solution acide chaude : un récipient ouvert ne conviendrait pas et l'article ne donne ni la capacité ni le taux de remplissage. L'extraction Soxhlet à l'éthanol pendant 48 h (liquide inflammable) demande un chauffage sans flamme. La poudre de silice mésoporeuse fine est à manipuler sans l'inhaler. Le bleu de méthylène est nocif ; la source de rayons gamma utilisée pour irradier le chitosane exige une installation habilitée et n'est pas décrite. L'article ne mentionne aucune de ces précautions."
   },
   {
    "type": "mecanisme_analyse",
    "route": "Fe-SBA-15",
-   "text": "Hypothèse : sans chitosane, la formation de la silice SBA-15 suit la voie classique P123/TEOS en milieu acide, avec une insertion du fer limitée aux silanols de la paroi, ce qui expliquerait la teneur en fer plus faible mesurée par EDS et ICP-MS."
+   "text": "Hypothèse : sans chitosane, la formation de la silice SBA-15 suit la voie classique P123/TEOS en milieu acide, avec une insertion du fer limitée aux silanols de la paroi, ce qui expliquerait la teneur en fer plus faible mesurée par EDS et ICP-MS. L'absence de carbone dans l'EDS de cet échantillon, alors que la voie de base contient 17 % atomique de C, laisse penser que le tensioactif a été retiré autrement (calcination ?) : le témoin changerait alors plus d'une variable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Fe-SBA-15",
+   "text": "Le protocole de Fe-SBA-15 n'est pas décrit : l'article dit seulement « a straightforward direct hydrothermal process and minimally acidic conditions » et parle de « chitosan-free synthesis ». Les réactifs listés ici viennent de la voie de base par comparaison et ne sont pas confirmés pour cet échantillon ; en outre « minimally acidic conditions » s'accorde mal avec HCl 4 M. L'EDS ne trouve aucun carbone dans cet échantillon alors que la voie de base en contient 17 % atomique : le retrait du tensioactif a pu être différent, et la comparaison avec et sans chitosane peut changer plus d'une variable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Teneur en fer : les trois mesures de l'article ne sont pas compatibles. L'EDS (3,90 % atomique de Fe, soit environ 11 % en masse) correspond à presque tout le fer engagé (Si 35 mmol : Fe 5 mmol), l'ICP-MS donne 21,68 mg/kg, soit environ 5 000 fois moins (facteur voisin pour Fe-SBA-15 : 11,28 mg/kg contre 2,27 % atomique), et le Fe2p n'est pas détecté en XPS. Une erreur d'unité ou de dilution de l'ICP-MS est possible, mais la teneur réelle en fer reste inconnue ; les valeurs sont recopiées telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Diamètre de pore : le diamètre BJH de 3,4 nm (3,1 nm pour Fe-SBA-15) n'est compatible ni avec le diamètre moyen 4V/S tiré du tableau 2 (environ 7,0 nm), ni avec l'HRTEM (9,1 et 7,2 nm), ni avec une hystérèse de type H1, qui exige des pores cylindriques de plus de 4 nm environ (IUPAC, Thommes 2015). Le BJH semble avoir été calculé sur la branche de désorption, dont la fermeture forcée vers P/P0 ≈ 0,42 donne un pic artificiel (Groen, 2003) ; l'article ne précise pas la branche utilisée, et la différence de 0,3 nm entre les deux échantillons n'est pas démonstrative."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Autres points relevés par la critique scientifique : le d100 « 12,98 » est écrit sans unité (la loi de Bragg avec 2θ = 0,68° donne 12,99 nm, cohérent avec a0 = 14,98 nm, d'où nm) ; le titre annonce un « oxyde de fer » qu'aucune mesure ne montre ; la valeur de 76 % d'élimination à 0,02 g d'adsorbant (Fig. 12) correspond à un qe d'environ 190 mg/g si le volume est de 50 mL, au-dessus du Qmax de Langmuir de 176,70 mg/g (le volume de l'essai de la Fig. 12 n'est pas écrit) ; l'ordre hexagonal n'est établi que par un seul pic (« both reflections » dans le texte). Le gain de fer attribué au chitosane repose en outre sur un EDS peu quantitatif pour les éléments légers."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Le chitosane irradié par rayons gamma est plus soluble en milieu acide que le chitosane non irradié (photographies de la Fig. 1, sans valeur chiffrée) ; c'est l'argument des auteurs pour l'introduire dans la synthèse en milieu HCl 4 M.",
+   "quote": "gamma-irradiated chitosan (Fig. 1(a)) was more soluble than non-irradiated chitosan (Fig. 1(b)) in an acidic environment"
   }
  ],
  "method_sources": [
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib30",
-   "role": "protocole_adapte",
-   "quote": "Pluronic 123 was used as the structure-directing agent during the synthesis of Fe-γ–CS–SBA-15 in an acidic environment"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib31",
-   "role": "protocole_adapte",
-   "quote": "Pluronic 123 was used as the structure-directing agent during the synthesis of Fe-γ–CS–SBA-15 in an acidic environment"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib32",
-   "role": "autre",
-   "quote": "To create the pluronic 123 solution, 4 g of pluronic 123 were dissolved in 60 g of HCl (4 M), then the mixture was stirred at 40 °C until the pluronic 123 was completely dissolved"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib33",
-   "role": "autre",
-   "quote": "To create the pluronic 123 solution, 4 g of pluronic 123 were dissolved in 60 g of HCl (4 M), then the mixture was stirred at 40 °C until the pluronic 123 was completely dissolved"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib34",
-   "role": "autre",
-   "quote": "To create the pluronic 123 solution, 4 g of pluronic 123 were dissolved in 60 g of HCl (4 M), then the mixture was stirred at 40 °C until the pluronic 123 was completely dissolved"
-  },
   {
    "route": "Fe-γ–CS–SBA-15",
    "ref_id": "bib35",
@@ -970,82 +1043,12 @@
   },
   {
    "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib37",
-   "role": "autre",
-   "quote": "The gel mixture was put into a Teflon container and matured for 24 h at 100 °C"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib38",
-   "role": "autre",
-   "quote": "The gel mixture was put into a Teflon container and matured for 24 h at 100 °C"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib39",
-   "role": "autre",
-   "quote": "The gel mixture was put into a Teflon container and matured for 24 h at 100 °C"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib40",
-   "role": "autre",
-   "quote": "The gel mixture was put into a Teflon container and matured for 24 h at 100 °C"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib41",
-   "role": "autre",
-   "quote": "Soxhlet extraction with ethanol for 48 h and drying in an oven at 100 °C were used to remove the surfactant"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib42",
-   "role": "autre",
-   "quote": "Soxhlet extraction with ethanol for 48 h and drying in an oven at 100 °C were used to remove the surfactant"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib43",
-   "role": "autre",
-   "quote": "Soxhlet extraction with ethanol for 48 h and drying in an oven at 100 °C were used to remove the surfactant"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib44",
-   "role": "autre",
-   "quote": "Soxhlet extraction with ethanol for 48 h and drying in an oven at 100 °C were used to remove the surfactant"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
    "ref_id": "bib29",
    "role": "autre",
    "quote": "The Agilent 7500ce (USA) inductively coupled plasma-mass spectrometry (ICP-MS) was used to analysis of Fe element"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib45",
-   "role": "autre",
-   "quote": "A universal pH buffer for the pH range of 2–12, was used to change the pH of solutions"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib46",
-   "role": "autre",
-   "quote": "A universal pH buffer for the pH range of 2–12, was used to change the pH of solutions"
-  },
-  {
-   "route": "Fe-γ–CS–SBA-15",
-   "ref_id": "bib47",
-   "role": "autre",
-   "quote": "A universal pH buffer for the pH range of 2–12, was used to change the pH of solutions"
   }
  ],
  "doubts": [
-  {
-   "where": "Fe-SBA-15 (rattachement à la voie de base)",
-   "issue": "L'article ne décrit jamais la synthèse de Fe-SBA-15 : il parle seulement de « chitosan-free synthesis » (EDS) et d'échantillon sans chitosane. Lecture littérale retenue : même protocole que Fe-γ–CS–SBA-15 sans le γ-CS, variation « absent » du réactif. L'autre lecture est un protocole différent, non décrit."
-  },
   {
    "where": "TEOS, quantité",
    "issue": "La seule quantité de silicium est « Si 35 mmol: Fe 5 mmol ». Elle est enregistrée en amount_text pour le TEOS (source de silicium), sans conversion en volume ou en masse."
@@ -1077,6 +1080,22 @@
   {
    "where": "étape 8 (Soxhlet)",
    "issue": "L'article écrit « Soxhlet extraction with ethanol for 48 h and drying in an oven at 100 °C » : découpé en deux étapes ; la durée du séchage à 100 °C n'est pas donnée."
+  },
+  {
+   "where": "Fe-SBA-15 (rattachement à la voie de base)",
+   "issue": "L'article ne décrit jamais la synthèse de Fe-SBA-15 : il parle seulement de « direct hydrothermal process and minimally acidic conditions » et de « chitosan-free synthesis ». La branche reste rattachée à Fe-γ–CS–SBA-15 pour la comparaison (variation « absent » du γ-CS) mais porte sa propre étape unique, sans étape héritée ; les réactifs de la voie de base ne sont pas confirmés pour cet échantillon. Une autre lecture est un protocole différent (le carbone est absent de son EDS)."
+  },
+  {
+   "where": "Fe-γ–CS–SBA-15 réactif HCl",
+   "issue": "37 % est le titre du HCl commercial (section Materials) ; la quantité écrite est « 60 g of HCl (4 M) », solution à 4 M obtenue par une dilution que l'article ne décrit pas (déclarée non citée)."
+  },
+  {
+   "where": "Fe-γ–CS–SBA-15 XPS C1s",
+   "issue": "Dans le texte source, les signes « = » des groupes C=N (286,5 eV) et C=O (288,1 eV) sont des images ; le sens est lu sur ce glyphe à deux traits. L'incertitude du premier pic est écrite « (0.1) » sans ±."
+  },
+  {
+   "where": "Fe-SBA-15 FT-IR",
+   "issue": "Le texte attribue 798 cm−1 aux quatre spectres de la Fig. 7 ; il ne dit pas pour quels spectres valent 1062, 557 et 1632 cm−1 (« the peaks »). La bande à 1541 cm−1 n'est mentionnée que pour Fe-γ–CS–SBA-15. Lecture graphique de la droite t/q de la Fig. 14b non faite (facultative)."
   }
  ]
 }
