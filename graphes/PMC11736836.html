@@ -1,0 +1,96 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11736836</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11736836 — Experimental and Computational Synthesis of TiO2 Sol-Gel Coatings.</h1>
+<h2>Voie : TiO2_sol</h2>
+<pre class="mermaid">flowchart LR
+  R18959([&quot;titanium(IV) butoxide&lt;br/&gt;molar ratio 1 (Ti(OBu)4:EtOH:…&quot;]):::reactif
+  R18959 --&gt;|&quot;precursor&quot;| S22572
+  R18960([&quot;ethanol&lt;br/&gt;molar ratio 27.95 (Ti(OBu)4:E…&quot;]):::reactif
+  R18960 --&gt;|&quot;solvent&quot;| S22572
+  R18961([&quot;nitric acid&lt;br/&gt;molar ratio 0.49 (Ti(OBu)4:Et…&quot;]):::reactif
+  R18961 --&gt;|&quot;acid&quot;| S22572
+  R18962([&quot;ultrapure water&lt;br/&gt;molar ratio 0.82 (Ti(OBu)4:Et…&quot;]):::reactif
+  R18962 --&gt;|&quot;hydrolysis_agent&quot;| S22572
+  S22572[&quot;&lt;b&gt;1. mix&lt;/b&gt;&quot;]:::etape
+  S22572 --&gt; S22573
+  S22573[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 2 h&lt;br/&gt;temperature : 60 °C&lt;br/&gt;stirring_speed : 400 rpm&quot;]:::etape
+  S22573 --&gt; S22574
+  S22574[&quot;&lt;b&gt;3. age&lt;/b&gt;&lt;br/&gt;duration : 1 day&quot;]:::etape
+  S22574 --&gt; M
+  M{{&quot;TiO2 precursor sol (1-day aged)&lt;br/&gt;&quot;}}:::materiau
+  O88449[&quot;z_average_diameter : 2.7 nm&quot;]:::resultat
+  M -.-&gt; O88449
+  O88450[&quot;size_distribution_fwhm : 2.7 nm&quot;]:::resultat
+  M -.-&gt; O88450
+  O88451[&quot;polydispersity_index : 0.098&quot;]:::resultat
+  M -.-&gt; O88451
+  O88452[&quot;zeta_potential : 20.3 mV&quot;]:::resultat
+  M -.-&gt; O88452
+  O88453[&quot;AFM_RMS_roughness_Sq_diluted_sol_C… : 455.5 pm&quot;]:::resultat
+  M -.-&gt; O88453
+  O88454[&quot;AFM_mean_roughness_Sa_diluted_sol_… : 353.2 pm&quot;]:::resultat
+  M -.-&gt; O88454
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : TiO2_coating_quartz</h2>
+<pre class="mermaid">flowchart LR
+  R18963([&quot;TiO2 precursor sol (1-day aged)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18963 --&gt;|&quot;intermediate&quot;| S22575
+  R18964([&quot;quartz glass slide&lt;br/&gt;25 × 30 × 1.05 mm&quot;]):::reactif
+  R18964 --&gt;|&quot;substrate&quot;| S22575
+  R18965([&quot;2-propanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18965 --&gt;|&quot;wash&quot;| S22575
+  R18966([&quot;distilled water&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18966 --&gt;|&quot;wash&quot;| S22575
+  S22575[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : 2-PrOH and distilled water&quot;]:::etape
+  S22575 --&gt; S22576
+  S22576[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&lt;br/&gt;withdrawal_speed : 12 cm/min&quot;]:::etape
+  S22576 --&gt; S22577
+  S22577[&quot;&lt;b&gt;3. anneal&lt;/b&gt;&lt;br/&gt;temperature : 450 °C&lt;br/&gt;duration : 30 min&lt;br/&gt;heating_rate : 5 °C/min&quot;]:::etape
+  S22577 --&gt; M
+  M{{&quot;TiO2 sol–gel coating (mesoporous thin film)&lt;br/&gt;TiO2&quot;}}:::materiau
+  O88455[&quot;effective_refractive_index_632.8nm… : 2.0341&quot;]:::resultat
+  M -.-&gt; O88455
+  O88456[&quot;thickness_UV-vis : 53 nm&quot;]:::resultat
+  M -.-&gt; O88456
+  O88457[&quot;porosity_Lorentz-Lorenz_UV-vis : 17 %&quot;]:::resultat
+  M -.-&gt; O88457
+  O88458[&quot;effective_refractive_index_632.8nm… : 2.0504&quot;]:::resultat
+  M -.-&gt; O88458
+  O88459[&quot;thickness_SAR : 56 nm&quot;]:::resultat
+  M -.-&gt; O88459
+  O88460[&quot;porosity_Lorentz-Lorenz_SAR : 16 %&quot;]:::resultat
+  M -.-&gt; O88460
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14192{{&quot;TiO2_coating_quartz&quot;}}:::materiau
+  B14193[&quot;TiO2_coating_Si&quot;]:::etape
+  B14192 --&gt;|&quot;quartz glass slide = replaced by silicon wafer&lt;br/&gt;surface_treatment = O2 plasma, 10 min (0.4 m…&quot;| B14193
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : TiO2_powder_80C</h2>
+<pre class="mermaid">flowchart LR
+  R18969([&quot;TiO2 precursor sol (1-day aged)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18969 --&gt;|&quot;intermediate&quot;| S22582
+  S22582[&quot;&lt;b&gt;1. dry&lt;/b&gt;&lt;br/&gt;duration : 2 h&quot;]:::etape
+  S22582 --&gt; S22583
+  S22583[&quot;&lt;b&gt;2. dry&lt;/b&gt;&lt;br/&gt;temperature : 80 °C&lt;br/&gt;duration : 40 min&quot;]:::etape
+  S22583 --&gt; M
+  M{{&quot;TiO2 powder dried at 80 °C&lt;br/&gt;TiO2&quot;}}:::materiau
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14194{{&quot;TiO2_powder_80C&quot;}}:::materiau
+  B14195[&quot;TiO2_powder_450C&quot;]:::etape
+  B14194 --&gt;|&quot;temperature = 450 °C&lt;br/&gt;duration = 30 min&lt;br/&gt;heating_rate = 5 °C/min&quot;| B14195
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>

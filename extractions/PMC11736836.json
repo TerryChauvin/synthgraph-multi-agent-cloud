@@ -19,7 +19,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "scale"
    ],
    "succeeded": true,
    "reagents": [
@@ -152,6 +153,13 @@
      "instrument": "AIST-NT SmartSPM-1000, NanoSensors PPP-NCHR probes",
      "conditions": "noncontact and tapping modes; sol diluted 10, 100 and 200 times in ethanol, 50 μL spin-coated on cleaned plasma-treated Si at 6000 rpm",
      "quote": "Based on the AFM images (Figures SI1 and SI2 in the Supporting Information), it can be concluded that the dilution of the precursor sol influences the structure due to evaporation; however, individual particles are not visible."
+    },
+    {
+     "technique": "AFM (Supporting Information 2.1)",
+     "result": "C0/10 sample smooth and homogeneous, fine granular character in a 400 × 400 nm2 window; C0/100 shows holes and craters; C0/200 shows larger holes and craters separated by mesh-like walls.",
+     "instrument": "AIST-NT SmartSPM-1000, NanoSensors PPP-NCHR probes",
+     "conditions": "sol diluted 10, 100 and 200 times in ethanol (C0/10, C0/100, C0/200), 50 μL spin-coated on cleaned plasma-treated Si at 6000 rpm; images 10 × 10 µm2 (C0/10) and 1 × 1 µm2 (C0/100, C0/200)",
+     "quote": "On the C0/100 sample, “holes” and “craters” appear on the surface."
     }
    ],
    "outcomes": [
@@ -179,6 +187,18 @@
      "value_num": 20.3,
      "value_text": "+20.30 ± 1.39 mV",
      "unit": "mV"
+    },
+    {
+     "property": "AFM_RMS_roughness_Sq_diluted_sol_C0_10",
+     "quote": "The C0/10 sample was found to be smooth, the RMS roughness measured over a 10 × 10 µm2 area was Sq = 455.5 pm, the mean roughness Sa = 353.2 pm.",
+     "value_num": 455.5,
+     "unit": "pm"
+    },
+    {
+     "property": "AFM_mean_roughness_Sa_diluted_sol_C0_10",
+     "quote": "The C0/10 sample was found to be smooth, the RMS roughness measured over a 10 × 10 µm2 area was Sq = 455.5 pm, the mean roughness Sa = 353.2 pm.",
+     "value_num": 353.2,
+     "unit": "pm"
     }
    ],
    "missing_fields": [
@@ -203,7 +223,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "scale"
    ],
    "succeeded": true,
    "reagents": [
@@ -223,13 +244,15 @@
      "quote": "Quartz glass slides (25 × 30 × 1.05 mm, Suprasil 1, Optilab Kft., Hungary) and silicon wafers (Siegert, (100), p-type, prime grade) were used as solid substrates of the coatings. Solid substrates were cleaned using 2-propanol (2-PrOH, for analysis, ACS reagent) and ultrapure water.",
      "amount_text": "25 × 30 × 1.05 mm",
      "supplier": "Optilab Kft., Hungary",
-     "supplier_quote": "Quartz glass slides (25 × 30 × 1.05 mm, Suprasil 1, Optilab Kft., Hungary) and silicon wafers (Siegert, (100), p-type, prime grade) were used as solid substrates of the coatings. Solid substrates were cleaned using 2-propanol (2-PrOH, for analysis, ACS reagent) and ultrapure water."
+     "supplier_quote": "Quartz glass slides (25 × 30 × 1.05 mm, Suprasil 1, Optilab Kft., Hungary) and silicon wafers (Siegert, (100), p-type, prime grade) were used as solid substrates of the coatings. Solid substrates were cleaned using 2-propanol (2-PrOH, for analysis, ACS reagent) and ultrapure water.",
+     "purity": "Suprasil 1"
     },
     {
      "name": "2-propanol",
      "formula": "C3H8O",
      "role": "wash",
-     "quote": "Quartz glass slides (25 × 30 × 1.05 mm, Suprasil 1, Optilab Kft., Hungary) and silicon wafers (Siegert, (100), p-type, prime grade) were used as solid substrates of the coatings. Solid substrates were cleaned using 2-propanol (2-PrOH, for analysis, ACS reagent) and ultrapure water."
+     "quote": "Quartz glass slides (25 × 30 × 1.05 mm, Suprasil 1, Optilab Kft., Hungary) and silicon wafers (Siegert, (100), p-type, prime grade) were used as solid substrates of the coatings. Solid substrates were cleaned using 2-propanol (2-PrOH, for analysis, ACS reagent) and ultrapure water.",
+     "purity": "for analysis, ACS reagent"
     },
     {
      "name": "distilled water",
@@ -750,10 +773,26 @@
      "quote": "The lowest binding energy component at 530.0 eV can be ascribed to lattice oxygen (LO), namely, the Ti–O bonds in TiO2, while the components at 531.3 and 532.3 eV can be attributed to oxygen vacancy/defects (VO) and loosely adsorbed, dissociated oxygen or OH species (CO).",
      "value_num": 530.0,
      "unit": "eV"
+    },
+    {
+     "property": "O_1s_oxygen_vacancy_defects_binding_energy",
+     "quote": "The lowest binding energy component at 530.0 eV can be ascribed to lattice oxygen (LO), namely, the Ti–O bonds in TiO2, while the components at 531.3 and 532.3 eV can be attributed to oxygen vacancy/defects (VO) and loosely adsorbed, dissociated oxygen or OH species (CO).",
+     "value_num": 531.3,
+     "unit": "eV"
+    },
+    {
+     "property": "O_1s_adsorbed_oxygen_OH_binding_energy",
+     "quote": "The lowest binding energy component at 530.0 eV can be ascribed to lattice oxygen (LO), namely, the Ti–O bonds in TiO2, while the components at 531.3 and 532.3 eV can be attributed to oxygen vacancy/defects (VO) and loosely adsorbed, dissociated oxygen or OH species (CO).",
+     "value_num": 532.3,
+     "unit": "eV"
     }
    ],
    "missing_fields": [
     "XRD of the coating (no peaks detectable)"
+   ],
+   "not_stated": [
+    "yield",
+    "scale"
    ]
   },
   {
@@ -773,7 +812,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "scale"
    ],
    "succeeded": true,
    "reagents": [
@@ -947,7 +987,11 @@
      "quote": "In the case of the powder sample heat treated at 450 °C, all XRD peaks (Figure SI4, red pattern) are attributed to the anatase [PDF 98-000-9852] crystalline phase of TiO2 which was also expected based on the applied annealing temperature during sample preparation, and it is in accordance with our previous results."
     }
    ],
-   "outcomes": []
+   "outcomes": [],
+   "not_stated": [
+    "yield",
+    "scale"
+   ]
   }
  ],
  "sample_inventory": [
@@ -1019,8 +1063,7 @@
   {
    "sample": "sol diluted C0/10 (AFM)",
    "defined_in": "Investigation Methods, AFM",
-   "route": null,
-   "why": "échantillon de caractérisation (dilution du sol dans l'éthanol et dépôt à la tournette sur Si pour l'AFM), sans résultat de matériau : particules non visibles",
+   "route": "TiO2_sol",
    "results_in": [
     "Fig. SI1",
     "Fig. SI2a"
@@ -1029,8 +1072,7 @@
   {
    "sample": "sol diluted C0/100 (AFM)",
    "defined_in": "Investigation Methods, AFM",
-   "route": null,
-   "why": "échantillon de caractérisation AFM (dilution 100 fois), sans résultat de matériau",
+   "route": "TiO2_sol",
    "results_in": [
     "Fig. SI2b"
    ]
@@ -1038,8 +1080,7 @@
   {
    "sample": "sol diluted C0/200 (AFM)",
    "defined_in": "Investigation Methods, AFM",
-   "route": null,
-   "why": "échantillon de caractérisation AFM (dilution 200 fois), sans résultat de matériau",
+   "route": "TiO2_sol",
    "results_in": [
     "Fig. SI2c"
    ]
@@ -1103,12 +1144,12 @@
   {
    "type": "mecanisme_analyse",
    "route": "TiO2_sol",
-   "text": "Probablement, HNO3 protone les groupes butoxy du Ti(OBu)4 et ralentit l'hydrolyse ; avec seulement 0,82 équivalent d'eau par Ti, l'hydrolyse reste partielle et la condensation (Ti–O–Ti) donne de petits oligomères en chaîne, d'où un sol stable (potentiel zêta positif de +20 mV, charge de surface protonée) plutôt qu'un précipité de TiO2. Le butanol libéré reste dans l'éthanol. Au séchage et au recuit à 450 °C, la condensation s'achève, la matière organique résiduelle est brûlée et l'anatase cristallise."
+   "text": "Hypothèse (critique scientifique) : dans environ 28 équivalents d'éthanol, Ti(OBu)4 échange probablement une partie de ses butoxydes contre des éthoxydes, ce qui libère du butanol (≈ 12 % molaire des alcools). L'eau hydrolyse partiellement les alcoxydes ; cette réaction est très rapide pour le titane et l'acide ne la ralentit probablement pas. C'est plutôt la condensation qui serait freinée : en milieu HNO3 (H+/Ti ≈ 0,5) les groupes Ti–OH seraient protonés, l'olation et l'oxolation limitées, et les oligomères oxo-alcoxydes, chargés positivement (potentiel zêta de +20 mV), resteraient dispersés. Avec un rapport d'hydrolyse total inférieur à 2, on attend de petits oligomères ou clusters de 2–3 nm plutôt que des particules de TiO2 (cohérent avec la DLS et l'absence de particules en MET). Au séchage et au recuit à 450 °C, la condensation s'achève, la matière organique et les nitrates partent et l'anatase cristallise (observée sur la poudre). Le rapport H2O/Ti de 0,82 de l'article ne peut pas représenter l'eau totale : voir l'annotation de limite de reproductibilité sur le rapport d'hydrolyse."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Le butoxyde de titane(IV) est inflammable et sensible à l'humidité (hydrolyse exothermique) ; l'éthanol est très inflammable ; l'acide nitrique à 65 % est corrosif et oxydant, à manipuler en hotte avec gants et lunettes. Le plasma O2 basse pression (300 W) et le four à 450 °C demandent les précautions habituelles (surfaces chaudes, ozone produit par le plasma)."
+   "text": "Le butoxyde de titane(IV) est inflammable et sensible à l'humidité (hydrolyse exothermique) ; l'éthanol et le 2-propanol (nettoyage des substrats) sont très inflammables ; l'acide nitrique à 65 % (≈ 14 mol/L) est corrosif et oxydant, à manipuler en hotte avec gants et lunettes. L'acide nitrique concentré réagit violemment avec les alcools et peut former des nitrates d'alkyle : l'ordre d'addition n'est pas donné, et il vaut mieux prédiluer l'acide dans l'éthanol froid, sans chauffer le mélange concentré ni fermer hermétiquement les déchets éthanol/HNO3 (fiche CAMEO Chemicals de la NOAA). Le séchage en masse du sol (poudres) concentre l'acide dans le résidu organique : dégagement de NOx possible, à faire sous hotte. Le plasma O2 basse pression (300 W) et le four à 450 °C demandent les précautions habituelles (surfaces chaudes, ozone produit par le plasma)."
   },
   {
    "type": "limite_reproductibilite",
@@ -1119,9 +1160,36 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Périmètre : la « synthèse computationnelle » (dynamique moléculaire ReaxFF de 20 nanoparticules de TiO2 dans une boîte de 13,7 nm, pressions externes de 100 à 20 000 atm, protocole à 7 étapes du tableau 4, tableaux 5 et 6) n'est pas une synthèse de laboratoire et n'a pas été extraite en voie. Seul le protocole expérimental (sol, revêtements, poudres) l'est."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2_sol",
+   "text": "Le rapport molaire H2O/Ti = 0,82 ne peut pas compter l'eau de l'acide nitrique à 65 % : 0,49 HNO3 par Ti apportent déjà environ 0,92 H2O par Ti (calcul du critique scientifique à partir des valeurs de l'article). La seule lecture cohérente est que 0,82 désigne l'eau ultrapure ajoutée seule, ce qui donne un rapport d'hydrolyse réel d'environ 1,7 (jusqu'à ≈ 1,9 si l'éthanol contient 0,2 % d'eau), soit le double de la valeur affichée. L'article ne le précise pas ; la valeur 0,82 est gardée telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2_sol",
+   "text": "Réserves du critique scientifique sur le sol : le récipient (fermé, à reflux ou ouvert) n'est pas indiqué alors que 60 °C pendant 2 h fait évaporer une part notable de l'éthanol en récipient ouvert ; l'ordre d'addition n'est pas donné (acide concentré et alcools) ; pour la DLS, la viscosité du milieu (éthanol pur ou mélange éthanol–butanol) n'est pas précisée, et un diamètre de 2,7 nm serait sous-estimé si l'éthanol pur a été pris ; le seuil de ±25 mV cité par les auteurs vaut pour un milieu aqueux, non pour un sol éthanolique d'oligomères amorphes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2_coating_quartz",
+   "text": "Les porosités Lorentz–Lorenz (17, 16 et 12 % sur quartz) sont recalculées avec un indice de 2,400 pour le TiO2 dense, non justifié par une source ; avec l'indice de l'anatase dense (≈ 2,485 à 633 nm, Möls et al., Optical Materials 2019), elles passeraient à environ 19, 18 et 15 %. Les porosités absolues sont donc conventionnelles ; seules les comparaisons faites avec le même indice sont robustes. Par ailleurs l'anatase n'est démontrée que sur la poudre traitée à 450 °C, pas sur les films (aucun pic de DRX, couche trop mince) : la poudre ne prouve pas la phase d'un film de 50 nm."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "TiO2_coating_Si",
+   "text": "L'attribution de la composante O 1s à 531,3 eV à des lacunes d'oxygène est contestée : le signal à 531–532 eV vient surtout d'hydroxyles et d'espèces adsorbées (Idriss, Surface Science 2021, 121894). Cette composante ne prouve pas de lacunes dans le film ; l'attribution donnée est celle des auteurs."
   }
  ],
- "method_sources": [],
+ "method_sources": [
+  {
+   "route": "TiO2_sol",
+   "ref_id": "ref43",
+   "role": "autre",
+   "quote": "The mixture was stirred for 2 h at 60 °C at 400 rpm."
+  }
+ ],
  "doubts": [
   {
    "where": "TiO2_coating_Si, épaisseur par porosimétrie ellipsométrique",
@@ -1154,6 +1222,10 @@
   {
    "where": "Échantillons de l'annexe",
    "issue": "Aucune figure de corpus/fig/ n'a été lue : les résultats expérimentaux sont tous dans le texte et les tableaux 1 à 3 ; les figures 5 et 6 ne portent que la simulation."
+  },
+  {
+   "where": "TiO2_sol, échantillons AFM dilués C0/10, C0/100, C0/200",
+   "issue": "Ces échantillons (sol dilué dans l'éthanol et déposé à la tournette sur Si) servent à caractériser le sol : leurs résultats (rugosité Sq et Sa de C0/10, description des trous et cratères de C0/100 et C0/200) sont rattachés à la voie TiO2_sol, avec la dilution dans le nom de la propriété."
   }
  ]
 }
