@@ -1,0 +1,937 @@
+{
+ "pmcid": "PMC6443225",
+ "format": 2,
+ "routes": [
+  {
+   "label": "AuNPs",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "starch-capped gold nanoparticles",
+    "formula": "Au",
+    "family": "nanoparticule_metallique",
+    "phase": "face-centered cubic",
+    "morphology": "quasi-spherical, multiple twinned"
+   },
+   "method": "wet chemical reduction by starch (reducing and capping agent) in water, 70 °C, pH 11",
+   "quote": "The synthesis of colloidal AuNPs and Ag/Au alloy NPs (or simply Ag/AuNPs) was carried out using an improved method based on a previous work.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "kind": "material",
+   "reagents": [
+    {
+     "name": "starch (1% w/v aqueous solution)",
+     "formula": null,
+     "role": "reducing_agent",
+     "amount": 500,
+     "unit": "µL",
+     "quote": "AuNPs | 500 | 0 | 250",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "water (boiling, starch solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "a 1% w/v starch solution was prepared using boiling water",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "sodium hydroxide",
+     "formula": "NaOH",
+     "role": "base",
+     "purity": "minimum 99%",
+     "supplier": "Fermont",
+     "supplier_quote": "Silver nitrate (AgNO3) was purchased from Thermo Fisher Scientific (Waltham, MA, USA), sodium tetrachloroaurate (NaAuCl4) was purchased from Sigma-Aldrich Co. (St Louis, MO, USA) and sodium hydroxide (NaOH) was purchased from Fermont (Monterrey, Mexico). All chemicals were used without further purification and were at a minimum 99% purity.",
+     "quote": "sodium hydroxide (NaOH) was purchased from Fermont (Monterrey, Mexico)",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "sodium tetrachloroaurate (25 mM solution)",
+     "formula": "NaAuCl4",
+     "role": "precursor",
+     "amount": 250,
+     "unit": "µL",
+     "purity": "minimum 99%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Silver nitrate (AgNO3) was purchased from Thermo Fisher Scientific (Waltham, MA, USA), sodium tetrachloroaurate (NaAuCl4) was purchased from Sigma-Aldrich Co. (St Louis, MO, USA) and sodium hydroxide (NaOH) was purchased from Fermont (Monterrey, Mexico). All chemicals were used without further purification and were at a minimum 99% purity.",
+     "quote": "AuNPs | 500 | 0 | 250"
+    },
+    {
+     "name": "deionized water (redispersion)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 10,
+     "unit": "mL",
+     "purity": "σ=18.2 MΩ cm",
+     "supplier_quote": "All experiments were completed using deionized water (σ=18.2 MΩ cm).",
+     "quote": "the supernatant was discarded and the pellet was redispersed in 10 mL of deionized water",
+     "not_stated": [
+      "supplier"
+     ]
+    }
+   ],
+   "not_stated": [
+    "yield"
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Préparer une solution d'amidon à 1 % m/v dans de l'eau bouillante.",
+     "quote": "a 1% w/v starch solution was prepared using boiling water",
+     "parameters": [
+      {
+       "name": "concentration",
+       "quote": "a 1% w/v starch solution was prepared using boiling water",
+       "value_num": 1,
+       "unit": "% w/v"
+      },
+      {
+       "name": "temperature",
+       "quote": "a 1% w/v starch solution was prepared using boiling water",
+       "value_text": "boiling water"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "volume"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "reflux",
+     "description": "Chauffer la solution d'amidon à reflux sous agitation pendant 30 minutes.",
+     "quote": "The starch solution was heated under constant reflux and stirred for 30 minutes.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The starch solution was heated under constant reflux and stirred for 30 minutes.",
+       "value_num": 30,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "centrifuge",
+     "description": "Centrifuger la solution d'amidon et garder le surnageant.",
+     "quote": "the starch solution was centrifuged for 10 minutes at 3,500 rpm and the supernatant was used further",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "the starch solution was centrifuged for 10 minutes at 3,500 rpm and the supernatant was used further",
+       "value_num": 3500,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "the starch solution was centrifuged for 10 minutes at 3,500 rpm and the supernatant was used further",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Amener le mélange réactionnel à la température fixée de 70 °C (±1 °C).",
+     "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
+       "value_num": 70,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "heating_rate",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "adjust_ph",
+     "description": "Amener le mélange réactionnel à pH 11 (±0,2), mesuré avec une sonde Vernier.",
+     "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
+       "value_num": 11
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "base_amount",
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "add",
+     "description": "Ajouter à la fin la solution du précurseur métallique (25 mM NaAuCl4, 250 µL) au mélange à 70 °C et pH 11.",
+     "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
+     "parameters": [
+      {
+       "name": "concentration",
+       "quote": "System | 1% (w/v) starch solution (μL) | 25 mM AgNO3 (μL) | 25 mM NaAuCl4 (μL)",
+       "value_num": 25,
+       "unit": "mM"
+      },
+      {
+       "name": "volume",
+       "quote": "AuNPs | 500 | 0 | 250",
+       "value_num": 250,
+       "unit": "µL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "react",
+     "description": "Laisser réagir 2 heures à 70 °C et pH 11.",
+     "quote": "Reaction time was set to 2 hours at 70°C and pH=11 for both systems.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Reaction time was set to 2 hours at 70°C and pH=11 for both systems.",
+       "value_num": 70,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Reaction time was set to 2 hours at 70°C and pH=11 for both systems.",
+       "value_num": 2,
+       "unit": "hours"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "centrifuge",
+     "description": "Centrifuger le colloïde 60 minutes à 12 500 rpm.",
+     "quote": "The reaction time was set to 2 hours, followed by a centrifugation process for 60 minutes at 12,500 rpm.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "The reaction time was set to 2 hours, followed by a centrifugation process for 60 minutes at 12,500 rpm.",
+       "value_num": 12500,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "The reaction time was set to 2 hours, followed by a centrifugation process for 60 minutes at 12,500 rpm.",
+       "value_num": 60,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "disperse",
+     "description": "Éliminer le surnageant et redisperser le culot dans 10 mL d'eau déionisée.",
+     "quote": "the supernatant was discarded and the pellet was redispersed in 10 mL of deionized water",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "the supernatant was discarded and the pellet was redispersed in 10 mL of deionized water",
+       "value_num": 10,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "redispersion_method"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "UV-visible",
+     "result": "bande SPR unique, λmax = 521 nm",
+     "instrument": "PerkinElmer 365 spectrometer",
+     "conditions": "300–800 nm, vitesse de balayage 20 nm/min, pas 0,5 nm ; colloïdes dilués au 1:5 avec de l'eau",
+     "quote": "the maximum wavelength (λmax) related to the surface plasmon resonance (SPR) of quasi-spherical noble metal NPs was observed at λmax=463 and 521 nm for Ag/AuNPs and AuNPs, respectively (Figure 2)"
+    },
+    {
+     "technique": "XRD",
+     "result": "réseau cubique à faces centrées, pas de phase étrangère",
+     "instrument": "Rigaku MiniFlex 600 diffractometer",
+     "conditions": "40 kV, 15 mA, Cu Kα (λ=1.542 Å), pas 0,05° (2θ), vitesse 0,2°/min, température ambiante ; échantillon séché sur le porte-échantillon (6–8 mL de colloïde)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes, respectively, for both bulk FCC Ag and Au."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "bandes de l'amidon à 3 403 cm−1 (OH) et 1 023 cm−1 (C–O), amidon présent comme agent stabilisant",
+     "instrument": "PerkinElmer Spectrum 400 FT-IR/FT-NIR",
+     "conditions": "mode ATR, 5 µg de NPs solides",
+     "quote": "All the samples showed a broad band at 3,403 cm−1 due to the stretching of hydroxyl groups and a band at 1,023 cm−1, which is characteristic of the C–O stretching from the anhydroglucose rings."
+    },
+    {
+     "technique": "DLS et potentiel ζ",
+     "result": "diamètre hydrodynamique 29,3±8,6 nm",
+     "instrument": "Malvern Zetasizer Nano ZS",
+     "conditions": "dilution 1:20 v/v, 25,0 °C±0,1 °C, laser He–Ne (λ=633 nm), rétrodiffusion à 175°, approximation de Smoluchowski pour le potentiel ζ",
+     "quote": "The hydrodynamic diameter found by DLS was 29.3±8.6 nm and 9.4±2.8 nm for AuNPs and Ag/Au alloy NPs, respectively."
+    },
+    {
+     "technique": "STEM/HRTEM",
+     "result": "NPs quasi-sphériques sans agglomération évidente, nanocristaux maclés multiples",
+     "instrument": "FEI TITAN 80–300",
+     "conditions": "canon à émission de champ tungstène, 300 kV ; dépôt par goutte sur grille cuivre-carbone, séchage à l'air, plasma d'oxygène 3 min avant imagerie",
+     "quote": "As shown in HRTEM images (insets of Figure 6), the samples consist of multiple twinned structure nanocrystals."
+    },
+    {
+     "technique": "ICP",
+     "result": "Au 95,8 µg/mL",
+     "instrument": "Thermo Scientific iCAP 6500 – ICP OES CID spectrometer",
+     "conditions": "λ = 328 nm (Ag) et 242,7 nm (Au)",
+     "quote": "The chemical content of the colloidal AuNPs and Ag/AuNPs was determined by ICP-MS analysis."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "SPR_lambda_max_single_sample",
+     "quote": "the maximum wavelength (λmax) related to the surface plasmon resonance (SPR) of quasi-spherical noble metal NPs was observed at λmax=463 and 521 nm for Ag/AuNPs and AuNPs, respectively (Figure 2)",
+     "value_num": 521,
+     "unit": "nm"
+    },
+    {
+     "property": "SPR_lambda_max_six_batches",
+     "quote": "The maximum wavelength of the absorption bands (λmax) was observed at 462±1 and 524±2 nm for Ag/AuNPs and AuNPs, respectively.",
+     "value_num": 524,
+     "unit": "nm",
+     "value_text": "524±2 nm"
+    },
+    {
+     "property": "hydrodynamic_diameter_DLS",
+     "quote": "AuNPs | 29.3±8.6 | 28.5±2.0 | 27.4±2.0 | 22.5±9.9",
+     "value_num": 29.3,
+     "unit": "nm",
+     "value_text": "29.3±8.6 nm"
+    },
+    {
+     "property": "particle_size_TEM",
+     "quote": "AuNPs | 29.3±8.6 | 28.5±2.0 | 27.4±2.0 | 22.5±9.9",
+     "value_num": 28.5,
+     "unit": "nm",
+     "value_text": "28.5±2.0 nm"
+    },
+    {
+     "property": "particle_size_UV_visible",
+     "quote": "AuNPs | 29.3±8.6 | 28.5±2.0 | 27.4±2.0 | 22.5±9.9",
+     "value_num": 27.4,
+     "unit": "nm",
+     "value_text": "27.4±2.0 nm"
+    },
+    {
+     "property": "crystallite_size_XRD",
+     "quote": "AuNPs | 4.075±0.002 | 4.0762 | 23.5±10.3",
+     "value_num": 23.5,
+     "unit": "nm",
+     "value_text": "23.5±10.3 nm"
+    },
+    {
+     "property": "lattice_parameter_a",
+     "quote": "AuNPs | 4.075±0.002 | 4.0762 | 23.5±10.3",
+     "value_num": 4.075,
+     "unit": "Å",
+     "value_text": "4.075±0.002 Å"
+    },
+    {
+     "property": "phase",
+     "quote": "The synthesized noble metal NPs were quasi-spherical in shape and presented the typical FCC crystal structure for Au and Ag/Au alloy.",
+     "value_text": "face-centered cubic (FCC), pas de phase étrangère détectée"
+    },
+    {
+     "property": "morphology",
+     "quote": "For all of the noble metal nanosystems, the NPs were quasi-spherical and no evident agglomeration was observed (Figure 6).",
+     "value_text": "quasi-sphérique, sans agglomération évidente, nanocristaux maclés"
+    },
+    {
+     "property": "colloid_color",
+     "quote": "the initial colorless solutions turned to reddish and brownish transparent colloids, which indicated the synthesis of colloidal AuNPs and Ag/AuNPs, respectively",
+     "value_text": "rougeâtre (solution initiale incolore)"
+    },
+    {
+     "property": "ICP_Au_concentration",
+     "quote": "The molar concentrations were found to be 95.8 µg/mL for colloidal AuNPs.",
+     "value_num": 95.8,
+     "unit": "µg/mL"
+    },
+    {
+     "property": "zeta_potential",
+     "quote": "Figure 5 (A) Hydrodynamic diameter distribution obtained by DLS and (B) ζ-potential values. Both measurements were carried out at 25°C.",
+     "value_num": -42,
+     "unit": "mV",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "colloid_pH_at_zeta_measurement",
+     "quote": "Figure 5 (A) Hydrodynamic diameter distribution obtained by DLS and (B) ζ-potential values. Both measurements were carried out at 25°C.",
+     "value_num": 7.8,
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "lambda_max_shift_over_storage",
+     "quote": "a slight red shift of the maximum wavelength of the absorption band (Δλmax=+1 and +3 nm, for AuNPs and Ag/AuNPs, respectively)",
+     "value_num": 1,
+     "unit": "nm",
+     "value_text": "+1 nm"
+    },
+    {
+     "property": "absorbance_change_at_lambda_max_over_storage",
+     "quote": "a reduction in the absolute absorbance at the corresponding λmax (ΔAbs@ λmax=−0.30 and −0.02, for AuNPs and Ag/AuNPs, respectively)",
+     "value_text": "−0.30"
+    },
+    {
+     "property": "IC50_MDR_E_coli",
+     "quote": "AuNPs | 7.02±1.31 | 12.29±3.77",
+     "value_num": 7.02,
+     "unit": "µg/mL",
+     "value_text": "7.02±1.31 µg/mL"
+    },
+    {
+     "property": "IC50_MRSA",
+     "quote": "AuNPs | 7.02±1.31 | 12.29±3.77",
+     "value_num": 12.29,
+     "unit": "µg/mL",
+     "value_text": "12.29±3.77 µg/mL"
+    },
+    {
+     "property": "colony_counting_MDR_E_coli",
+     "quote": "an antibacterial effect was observed at concentrations of AuNPs ranging between 10 and 20 µg/mL, with no significant inhibition at lower concentrations",
+     "value_text": "effet antibactérien de 10 à 20 µg/mL, pas d'inhibition significative en dessous"
+    },
+    {
+     "property": "colony_counting_MRSA",
+     "quote": "MRSA treatment with the same NPs (Figure 9B) showed no significant antibacterial effect over the whole range of NP concentrations, with a slight delay in the bacterial growth at the highest concentration",
+     "value_text": "aucun effet antibactérien significatif sur toute la plage, léger retard de croissance à la plus forte concentration"
+    },
+    {
+     "property": "HDF_cytotoxicity",
+     "quote": "For AuNPs, at NP concentrations between 1 and 20 µg/mL, no significant cytotoxicity in HDF (Figure 11A) was found.",
+     "value_text": "pas de cytotoxicité significative de 1 à 20 µg/mL"
+    },
+    {
+     "property": "HDF_cell_proliferation_72h_20ug_mL",
+     "quote": "Figure 11 MTS assay on HDF cells in the presence of AuNPs (A) and Ag/AuNPs (B) at concentrations ranging from 1 to 20 µg/mL.",
+     "value_num": 72,
+     "unit": "%",
+     "from_figure": "Fig. 11A"
+    },
+    {
+     "property": "melanoma_cytotoxicity",
+     "quote": "When human melanoma cells were cultured with AuNPs (Figure 12A), no significant cytotoxic effect was found",
+     "value_text": "pas d'effet cytotoxique significatif"
+    },
+    {
+     "property": "melanoma_cell_proliferation_72h_20ug_mL",
+     "quote": "Figure 12 MTS assay on melanoma cells in the presence of AuNPs (A) and Ag/AuNPs (B) at concentrations ranging from 1 to 20 µg/mL.",
+     "value_num": 93,
+     "unit": "%",
+     "from_figure": "Fig. 12A"
+    }
+   ],
+   "missing_fields": [
+    "starch_mass_for_1%_solution",
+    "volume_of_starch_solution_prepared",
+    "NaOH_amount_and_concentration",
+    "solvent_of_25_mM_precursor_solution",
+    "total_reaction_volume",
+    "stirring_speed",
+    "centrifugation_temperature",
+    "redispersion_method",
+    "yield"
+   ]
+  },
+  {
+   "label": "Ag/AuNPs",
+   "parent": "AuNPs",
+   "material": {
+    "name": "starch-capped silver/gold alloy nanoparticles",
+    "formula": null,
+    "family": "nanoparticule_metallique",
+    "phase": "face-centered cubic, alliage Ag/Au",
+    "morphology": "quasi-spherical, multiple twinned"
+   },
+   "quote": "The synthesis of colloidal AuNPs and Ag/Au alloy NPs (or simply Ag/AuNPs) was carried out using an improved method based on a previous work.",
+   "variations": [
+    {
+     "parameter": "silver_nitrate_solution",
+     "value_num": 250,
+     "unit": "µL",
+     "parent_value": "none (0 µL)",
+     "quote": "Ag/AuNPs | 500 | 250 | 250"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "silver nitrate (25 mM solution)",
+     "formula": "AgNO3",
+     "role": "precursor",
+     "amount": 250,
+     "unit": "µL",
+     "purity": "minimum 99%",
+     "supplier": "Thermo Fisher Scientific",
+     "supplier_quote": "Silver nitrate (AgNO3) was purchased from Thermo Fisher Scientific (Waltham, MA, USA), sodium tetrachloroaurate (NaAuCl4) was purchased from Sigma-Aldrich Co. (St Louis, MO, USA) and sodium hydroxide (NaOH) was purchased from Fermont (Monterrey, Mexico). All chemicals were used without further purification and were at a minimum 99% purity.",
+     "quote": "Ag/AuNPs | 500 | 250 | 250"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "technique": "UV-visible",
+     "result": "bande SPR unique, λmax = 463 nm",
+     "instrument": "PerkinElmer 365 spectrometer",
+     "conditions": "300–800 nm, vitesse de balayage 20 nm/min, pas 0,5 nm ; colloïdes dilués au 1:5 avec de l'eau",
+     "quote": "the maximum wavelength (λmax) related to the surface plasmon resonance (SPR) of quasi-spherical noble metal NPs was observed at λmax=463 and 521 nm for Ag/AuNPs and AuNPs, respectively (Figure 2)"
+    },
+    {
+     "technique": "XRD",
+     "result": "réseau cubique à faces centrées, pas de phase étrangère",
+     "instrument": "Rigaku MiniFlex 600 diffractometer",
+     "conditions": "40 kV, 15 mA, Cu Kα (λ=1.542 Å), pas 0,05° (2θ), vitesse 0,2°/min, température ambiante ; échantillon séché sur le porte-échantillon (6–8 mL de colloïde)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes, respectively, for both bulk FCC Ag and Au."
+    },
+    {
+     "technique": "FT-IR",
+     "result": "bandes de l'amidon à 3 403 cm−1 (OH) et 1 023 cm−1 (C–O), amidon présent comme agent stabilisant",
+     "instrument": "PerkinElmer Spectrum 400 FT-IR/FT-NIR",
+     "conditions": "mode ATR, 5 µg de NPs solides",
+     "quote": "All the samples showed a broad band at 3,403 cm−1 due to the stretching of hydroxyl groups and a band at 1,023 cm−1, which is characteristic of the C–O stretching from the anhydroglucose rings."
+    },
+    {
+     "technique": "DLS et potentiel ζ",
+     "result": "diamètre hydrodynamique 9,4±2,8 nm",
+     "instrument": "Malvern Zetasizer Nano ZS",
+     "conditions": "dilution 1:20 v/v, 25,0 °C±0,1 °C, laser He–Ne (λ=633 nm), rétrodiffusion à 175°, approximation de Smoluchowski pour le potentiel ζ",
+     "quote": "The hydrodynamic diameter found by DLS was 29.3±8.6 nm and 9.4±2.8 nm for AuNPs and Ag/Au alloy NPs, respectively."
+    },
+    {
+     "technique": "STEM/HRTEM",
+     "result": "NPs quasi-sphériques sans agglomération évidente, nanocristaux maclés multiples",
+     "instrument": "FEI TITAN 80–300",
+     "conditions": "canon à émission de champ tungstène, 300 kV ; dépôt par goutte sur grille cuivre-carbone, séchage à l'air, plasma d'oxygène 3 min avant imagerie",
+     "quote": "As shown in HRTEM images (insets of Figure 6), the samples consist of multiple twinned structure nanocrystals."
+    },
+    {
+     "technique": "ICP",
+     "result": "Ag 17,0 µg/mL et Au 35,1 µg/mL",
+     "instrument": "Thermo Scientific iCAP 6500 – ICP OES CID spectrometer",
+     "conditions": "λ = 328 nm (Ag) et 242,7 nm (Au)",
+     "quote": "The chemical content of the colloidal AuNPs and Ag/AuNPs was determined by ICP-MS analysis."
+    },
+    {
+     "technique": "EDS",
+     "result": "44,97±3,87 at% Ag et 55,03±3,87 at% Au sur des NPs individuelles",
+     "instrument": "EDAX, système EDS intégré au TEM",
+     "conditions": null,
+     "quote": "revealed a composition of 44.97±3.87 at% Ag and 55.03±3.87 at% Au"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "SPR_lambda_max_single_sample",
+     "quote": "the maximum wavelength (λmax) related to the surface plasmon resonance (SPR) of quasi-spherical noble metal NPs was observed at λmax=463 and 521 nm for Ag/AuNPs and AuNPs, respectively (Figure 2)",
+     "value_num": 463,
+     "unit": "nm"
+    },
+    {
+     "property": "SPR_lambda_max_six_batches",
+     "quote": "The maximum wavelength of the absorption bands (λmax) was observed at 462±1 and 524±2 nm for Ag/AuNPs and AuNPs, respectively.",
+     "value_num": 462,
+     "unit": "nm",
+     "value_text": "462±1 nm"
+    },
+    {
+     "property": "hydrodynamic_diameter_DLS",
+     "quote": "Ag/AuNPs | 9.4±2.8 | 9.7±3.2 | ~7 | 10.3±4.5",
+     "value_num": 9.4,
+     "unit": "nm",
+     "value_text": "9.4±2.8 nm"
+    },
+    {
+     "property": "particle_size_TEM",
+     "quote": "Ag/AuNPs | 9.4±2.8 | 9.7±3.2 | ~7 | 10.3±4.5",
+     "value_num": 9.7,
+     "unit": "nm",
+     "value_text": "9.7±3.2 nm"
+    },
+    {
+     "property": "particle_size_UV_visible",
+     "quote": "Ag/AuNPs | 9.4±2.8 | 9.7±3.2 | ~7 | 10.3±4.5",
+     "value_num": 7,
+     "unit": "nm",
+     "value_text": "~7 nm"
+    },
+    {
+     "property": "crystallite_size_XRD",
+     "quote": "Ag/AuNPs | 4.065±0.008 | 4.0562 | 10.3±4.5",
+     "value_num": 10.3,
+     "unit": "nm",
+     "value_text": "10.3±4.5 nm"
+    },
+    {
+     "property": "lattice_parameter_a",
+     "quote": "Ag/AuNPs | 4.065±0.008 | 4.0562 | 10.3±4.5",
+     "value_num": 4.065,
+     "unit": "Å",
+     "value_text": "4.065±0.008 Å"
+    },
+    {
+     "property": "phase",
+     "quote": "The synthesized noble metal NPs were quasi-spherical in shape and presented the typical FCC crystal structure for Au and Ag/Au alloy.",
+     "value_text": "face-centered cubic (FCC), alliage Ag/Au ; pas de phase étrangère détectée"
+    },
+    {
+     "property": "morphology",
+     "quote": "For all of the noble metal nanosystems, the NPs were quasi-spherical and no evident agglomeration was observed (Figure 6).",
+     "value_text": "quasi-sphérique, sans agglomération évidente, nanocristaux maclés"
+    },
+    {
+     "property": "colloid_color",
+     "quote": "the initial colorless solutions turned to reddish and brownish transparent colloids, which indicated the synthesis of colloidal AuNPs and Ag/AuNPs, respectively",
+     "value_text": "brunâtre (solution initiale incolore)"
+    },
+    {
+     "property": "EDS_composition_Ag",
+     "quote": "revealed a composition of 44.97±3.87 at% Ag and 55.03±3.87 at% Au",
+     "value_num": 44.97,
+     "unit": "at%",
+     "value_text": "44.97±3.87 at% Ag"
+    },
+    {
+     "property": "EDS_composition_Au",
+     "quote": "revealed a composition of 44.97±3.87 at% Ag and 55.03±3.87 at% Au",
+     "value_num": 55.03,
+     "unit": "at%",
+     "value_text": "55.03±3.87 at% Au"
+    },
+    {
+     "property": "ICP_Ag_concentration",
+     "quote": "the results confirmed the presence of both noble metals with concentrations of 17.0 and 35.1 µg/mL for Ag and Au, respectively",
+     "value_num": 17.0,
+     "unit": "µg/mL"
+    },
+    {
+     "property": "ICP_Au_concentration",
+     "quote": "the results confirmed the presence of both noble metals with concentrations of 17.0 and 35.1 µg/mL for Ag and Au, respectively",
+     "value_num": 35.1,
+     "unit": "µg/mL"
+    },
+    {
+     "property": "zeta_potential",
+     "quote": "Figure 5 (A) Hydrodynamic diameter distribution obtained by DLS and (B) ζ-potential values. Both measurements were carried out at 25°C.",
+     "value_num": -27,
+     "unit": "mV",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "colloid_pH_at_zeta_measurement",
+     "quote": "Figure 5 (A) Hydrodynamic diameter distribution obtained by DLS and (B) ζ-potential values. Both measurements were carried out at 25°C.",
+     "value_num": 6.8,
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "lambda_max_shift_over_storage",
+     "quote": "a slight red shift of the maximum wavelength of the absorption band (Δλmax=+1 and +3 nm, for AuNPs and Ag/AuNPs, respectively)",
+     "value_num": 3,
+     "unit": "nm",
+     "value_text": "+3 nm"
+    },
+    {
+     "property": "absorbance_change_at_lambda_max_over_storage",
+     "quote": "a reduction in the absolute absorbance at the corresponding λmax (ΔAbs@ λmax=−0.30 and −0.02, for AuNPs and Ag/AuNPs, respectively)",
+     "value_text": "−0.02"
+    },
+    {
+     "property": "IC50_MDR_E_coli",
+     "quote": "Ag/AuNPs | 4.92±0.81 | 6.95±1.70",
+     "value_num": 4.92,
+     "unit": "µg/mL",
+     "value_text": "4.92±0.81 µg/mL"
+    },
+    {
+     "property": "IC50_MRSA",
+     "quote": "Ag/AuNPs | 4.92±0.81 | 6.95±1.70",
+     "value_num": 6.95,
+     "unit": "µg/mL",
+     "value_text": "6.95±1.70 µg/mL"
+    },
+    {
+     "property": "colony_counting_MDR_E_coli",
+     "quote": "when the bimetallic Ag/AuNPs were tested towards MDR E. coli (Figure 9C), an antibacterial effect was observed at NP concentrations ranging between 1 and 20 μg/mL, with significant inhibition (larger than 50% inhibition of total bacterial growth) at low concentrations",
+     "value_text": "effet antibactérien de 1 à 20 µg/mL, inhibition > 50 % de la croissance totale à faible concentration"
+    },
+    {
+     "property": "colony_counting_MRSA",
+     "quote": "When the same NPs were tested with MRSA (Figure 9D), a noticeable antimicrobial effect was found at concentrations between 10 and 20 μg/mL in comparison with monometallic AuNPs",
+     "value_text": "effet antimicrobien net de 10 à 20 µg/mL"
+    },
+    {
+     "property": "HDF_cytotoxicity",
+     "quote": "A higher cytotoxic effect was found over the same range of concentrations when Ag/AuNPs (Figure 11B) were tested with the cells, especially significant on the third day of the experiment. However, over 60% of the cells grew and proliferated.",
+     "value_text": "effet cytotoxique plus élevé qu'avec AuNPs, surtout au 3e jour, mais plus de 60 % des cellules ont proliféré"
+    },
+    {
+     "property": "HDF_cell_proliferation_72h_20ug_mL",
+     "quote": "Figure 11 MTS assay on HDF cells in the presence of AuNPs (A) and Ag/AuNPs (B) at concentrations ranging from 1 to 20 µg/mL.",
+     "value_num": 65,
+     "unit": "%",
+     "from_figure": "Fig. 11B"
+    },
+    {
+     "property": "melanoma_cytotoxicity",
+     "quote": "bimetallic Ag/AuNPs showed a high degree of inhibition of cell proliferation, with a significant depletion at 15 and 20 µg/mL (Figure 12B)",
+     "value_text": "forte inhibition de la prolifération, déplétion significative à 15 et 20 µg/mL"
+    },
+    {
+     "property": "melanoma_cell_proliferation_72h_20ug_mL",
+     "quote": "Figure 12 MTS assay on melanoma cells in the presence of AuNPs (A) and Ag/AuNPs (B) at concentrations ranging from 1 to 20 µg/mL.",
+     "value_num": 44,
+     "unit": "%",
+     "from_figure": "Fig. 12B"
+    }
+   ]
+  }
+ ],
+ "sample_inventory": [
+  {
+   "sample": "AuNPs",
+   "defined_in": "Methods, Synthesis of colloidal noble metal NPs ; Table 1",
+   "route": "AuNPs",
+   "results_in": [
+    "Table 2",
+    "Table 3",
+    "Table 4",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 10",
+    "Fig. 11A",
+    "Fig. 12A"
+   ]
+  },
+  {
+   "sample": "Ag/AuNPs",
+   "defined_in": "Methods, Synthesis of colloidal noble metal NPs ; Table 1",
+   "route": "Ag/AuNPs",
+   "results_in": [
+    "Table 2",
+    "Table 3",
+    "Table 4",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 10",
+    "Fig. 11B",
+    "Fig. 12B",
+    "Fig. S3"
+   ]
+  },
+  {
+   "sample": "AgNPs (colloïdal)",
+   "defined_in": "Results, UV-visible (λmax=406±2 nm, Figures 2 et S1)",
+   "route": null,
+   "why": "Synthèse non décrite (échantillon de comparaison de l'article, Figure S1 absente du dépôt)",
+   "results_in": [
+    "Fig. 2",
+    "Fig. S1"
+   ]
+  },
+  {
+   "sample": "mélange physique AgNPs + AuNPs 1:1 v/v",
+   "defined_in": "Results, UV-visible",
+   "route": null,
+   "why": "Simple mélange de deux colloïdes, pas une synthèse",
+   "results_in": [
+    "Fig. 2"
+   ]
+  },
+  {
+   "sample": "amidon en poudre pur",
+   "defined_in": "Results, FT-IR (Figure 1c)",
+   "route": null,
+   "why": "Référence de comparaison pour l'infrarouge, non synthétisée",
+   "results_in": [
+    "Fig. 1"
+   ]
+  },
+  {
+   "sample": "six lots indépendants d'AuNPs et d'Ag/AuNPs",
+   "defined_in": "Results, UV-visible (Figure 3)",
+   "route": "AuNPs",
+   "why": "Répétitions de la même synthèse (reproductibilité) ; mêmes voies AuNPs et Ag/AuNPs",
+   "results_in": [
+    "Fig. 3"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules colloïdales d'or (AuNPs) et d'alliage argent/or (Ag/AuNPs) par réduction chimique en milieu aqueux : l'amidon de pomme de terre, hydrolysé à pH 11 et 70 °C, libère du glucose qui réduit les ions, et l'amidon coiffe les particules. Les auteurs obtiennent des particules quasi sphériques de 28,5 nm (Au) et 9,7 nm (Ag/Au), de structure cubique à faces centrées, puis testent leur effet antibactérien (E. coli multirésistant, MRSA), leur cytotoxicité sur fibroblastes et sur cellules de mélanome.",
+   "quote": null
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Établir une synthèse verte, « one-pot » et très reproductible de AuNPs et d'Ag/AuNPs avec l'amidon comme réducteur et stabilisant, et vérifier si l'alliage garde la biocompatibilité de l'or tout en gagnant une activité antimicrobienne et anticancéreuse.",
+   "quote": null
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul protocole est décrit ; la seule variable changée est la présence de nitrate d'argent (Table 1), à rapport Ag:Au de 1:1 dans le milieu. La comparaison Au contre Ag/Au sert à séparer l'effet de l'argent dans l'alliage sur la taille, la stabilité colloïdale et l'activité biologique. Aucun balayage de température, pH ou temps de réaction n'est fait.",
+   "quote": null
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "L'ajout de 250 µL de AgNO3 25 mM au même volume de NaAuCl4 divise la taille des particules par trois environ (TEM 28,5±2,0 nm pour Au contre 9,7±3,2 nm pour Ag/Au) et décale la bande plasmon de 521 à 463 nm ; la couleur passe du rouge au brun. L'alliage est moins monodisperse (écart-type relatif 32,1 % contre 7,0 %). Biologiquement, l'alliage inhibe plus fortement les bactéries (IC50 de 4,92 contre 7,02 µg/mL pour E. coli ; 6,95 contre 12,29 µg/mL pour MRSA) et réduit la prolifération des cellules de mélanome (lecture figure : environ 44 % contre 93 % à 20 µg/mL après 72 h), au prix d'une prolifération des fibroblastes un peu plus faible (environ 65 % contre 72 %).",
+   "quote": null
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Dans les deux voies, plus la concentration en nanoparticules augmente, plus la croissance bactérienne est retardée et plus le paramètre A du modèle de Gompertz (croissance maximale) diminue ; l'effet est net pour Ag/AuNPs et irrégulier pour AuNPs. Les images MEB montrent, avec les deux types de particules, des bactéries à surface plissée et plus courtes (E. coli) ou à diamètre réduit, bosselées ou lysées (MRSA). Ces résultats sont donnés pour le groupe, non par voie.",
+   "quote": "In general, this delay shows that there was a clear antimicrobial activity for the bimetallic Ag/AuNPs compared to an irregular trend for the monometallic AuNPs."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que la synthèse est reproductible, rapide et peu coûteuse, que les NPs sont stables (potentiel ζ, UV-visible sur 50 jours) et que l'alliage Ag/Au combine un effet antibactérien accru et une activité anticancéreuse sur le mélanome avec une bonne cytocompatibilité envers les fibroblastes.",
+   "quote": "We present here a highly reproducible green synthesis method and thorough characterization of colloidal monome-tallic AuNPs and bimetallic Ag/Au alloy NPs using starch as the reducing and capping agent."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Annexe absente du dépôt : les Figures S1 (spectre UV-visible des AgNPs seules), S2 (stabilité sur 50 jours), S3 (spectres EDS des Ag/AuNPs) et S4 (MEB des bactéries témoins) sont citées dans l'article mais aucune section Supporting Information n'existe dans le fichier texte.",
+   "quote": "the UV–visible spectra for each colloidal system measured up to 50 days for AuNPs and Ag/AuNPs after their synthesis was shown"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuNPs",
+   "text": "Pour refaire la synthèse il manque : la masse d'amidon (la solution est donnée à 1 % m/v sans volume préparé), la base et la quantité servant à fixer pH 11 (NaOH n'est que listé dans les produits), le solvant des solutions de précurseurs 25 mM, le volume total de la réaction, la vitesse d'agitation, la température de reflux et de centrifugation, le rendement. Les volumes de réactifs (500, 250, 250 µL) sont très petits : l'échelle réelle de préparation n'est pas dite. Les courbes de croissance bactérienne (Fig. 7), les paramètres de Gompertz (Fig. 8), les comptages de colonies (Fig. 9) et les histogrammes de taille (Fig. 6) n'ont été lus que par leurs conclusions de texte.",
+   "quote": null
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "AuNPs",
+   "text": "Selon les auteurs, l'amidon est hydrolysé à chaud en milieu basique en glucose ; le glucose, oxydé en acide gluconique, réduit Au(III) et Ag(I) en métal, tandis que les hydroxyles de l'amidon stabilisent les particules. Pour l'alliage, ils attendent la formation de AgCl par remplacement galvanique, mais la DRX n'en montre pas.",
+   "quote": "the glucose molecules, released as the product of the hydrolysis of starch at high temperatures and basic conditions, were oxidized to gluconic acid"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AuNPs",
+   "text": "Probablement, le pH 11 et les 70 °C hydrolysent partiellement l'amidon en chaînes courtes à extrémité réductrice qui donnent les électrons ; AuCl4− (E° plus élevé) est réduit en premier et sert de germe, la taille finale plus petite de l'alliage s'expliquant par une nucléation plus abondante quand Ag+ est coréduit. À pH 11, une partie de Au(III) est probablement sous forme d'hydroxochloroaurate, moins oxydante que AuCl4−, ce qui ralentit la réduction et favorise des particules monodisperses. L'amidon adsorbé coiffe les particules et empêche leur agrégation (potentiel ζ d'environ −42 mV).",
+   "quote": null
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "AgNO3 est oxydant, corrosif et tache la peau ; NaAuCl4 est irritant et sensibilisant ; NaOH concentré est corrosif (lunettes, gants). La solution d'amidon est préparée dans l'eau bouillante puis chauffée à reflux : risque de brûlure. Les colloïdes d'argent sont toxiques pour les organismes aquatiques, les déchets contenant Ag et Au ne vont pas à l'évier. Les essais sur souches résistantes (MRSA, E. coli multirésistant) demandent un laboratoire de niveau de biosécurité adapté.",
+   "quote": null
+  }
+ ],
+ "method_sources": [
+  {
+   "route": null,
+   "ref_id": "b47-ijn-14-2171",
+   "role": "protocole_adapte",
+   "quote": "The synthesis of colloidal AuNPs and Ag/Au alloy NPs (or simply Ag/AuNPs) was carried out using an improved method based on a previous work."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "AuNPs steps 4 et 5",
+   "issue": "L'article dit que le précurseur est ajouté « when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2 » sans dire dans quel ordre la température et le pH sont atteints ni comment le pH est réglé ; l'ordre chauffage (étape 4) puis réglage du pH (étape 5) est une convention d'écriture, non un fait de l'article."
+  },
+  {
+   "where": "AuNPs reagent sodium hydroxide",
+   "issue": "NaOH n'apparaît que dans la liste des produits (« sodium hydroxide (NaOH) was purchased from Fermont »). L'article ne dit pas expressément que NaOH sert à fixer pH 11 ni en quelle quantité ; lecture retenue : base de réglage du pH, quantité non citée."
+  },
+  {
+   "where": "AuNPs step 1 et reagent starch",
+   "issue": "Table 1 donne 500 µL de solution d'amidon à 1 % m/v par synthèse, alors que la préparation de l'amidon (eau bouillante, reflux, centrifugation) ne donne ni masse ni volume. Hypothèse : seuls 500 µL de surnageant sont utilisés ; le volume final de réaction n'est pas indiqué. Les 250 µL de précurseurs ne sont pas dits en solution aqueuse."
+  },
+  {
+   "where": "Ag/AuNPs variation silver_nitrate_solution",
+   "issue": "Le contrôle signale que le paramètre ne correspond à aucun nom du protocole hérité : AgNO3 est absent de la voie AuNPs (0 µL dans Table 1), donc ajouté en variation explicite. L'ordre d'ajout ou le prémélange de AgNO3 et NaAuCl4 n'est pas précisé (l'article parle de coréduction)."
+  },
+  {
+   "where": "Ag/AuNPs, ICP-MS",
+   "issue": "Le texte écrit « Ag:Au atomic ratio =1.13 » pour 17,0 et 35,1 µg/mL, mais 17,0/107,87 divisé par 35,1/196,97 donne environ 0,88 (l'inverse de 1,13). Le texte appelle aussi « molar concentrations » des valeurs en µg/mL, et l'appareil des Méthodes est un ICP OES. Valeurs recopiées telles quelles, rapport non extrait."
+  },
+  {
+   "where": "AuNPs crystallite_size_XRD",
+   "issue": "Table 2 donne 22.5±9.9 nm (AuNPs, XRD) et Table 3 donne 23.5±10.3 nm pour la même grandeur. Valeur de Table 3 retenue (tableau propre à la DRX) ; la valeur de Table 2 n'est pas extraite."
+  },
+  {
+   "where": "AuNPs particle_size_UV_visible",
+   "issue": "Le texte cite 27.4±2.0 nm comme valeur de la littérature pour des AuNPs (« in agreement with the values reported for ... 27.4±2.0 nm AuNPs (λmax=524±2 nm) ») et Table 2 range 27.4±2.0 dans la colonne UV-visible des AuNPs. Valeur de la table extraite telle quelle ; son origine (calcul de Khlebtsov ou valeur citée) n'est pas claire."
+  },
+  {
+   "where": "cytotoxicité (Fig. 11, 12)",
+   "issue": "Les Méthodes décrivent une incubation de 24 h avec les NPs, alors que les Résultats et Fig. 11-12 comparent 24 h et 72 h (« 1 and 3 days »). Aucun protocole n'est donné pour la durée de 72 h. Les valeurs de viabilité à 72 h sont lues sur figure."
+  },
+  {
+   "where": "Valeurs lues sur figure",
+   "issue": "Figures lues : Fig. 5B (potentiel ζ : Ag/AuNPs environ −27 mV, pH de mesure 6,8 ; AuNPs environ −42 mV, pH 7,8), Fig. 11A et 11B (HDF, 72 h, 20 µg/mL : environ 72 % et 65 %), Fig. 12A et 12B (mélanome, 72 h, 20 µg/mL : environ 93 % et 44 %). Précision de lecture environ ±3 points ; barres d'erreur larges (jusqu'à ±15 points). Le texte juge les deux colloïdes stables alors que la valeur lue pour Ag/AuNPs (environ −27 mV) est sous le seuil de ±30 mV que les auteurs citent."
+  },
+  {
+   "where": "AuNPs reagent water (redispersion)",
+   "issue": "« σ=18.2 MΩ cm » est écrit comme pureté de l'eau déionisée ; l'article ne donne pas de fournisseur. L'eau de la solution d'amidon est dite « boiling water », sans précision de qualité."
+  }
+ ]
+}
