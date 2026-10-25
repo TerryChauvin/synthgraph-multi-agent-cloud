@@ -9,7 +9,8 @@
    "results_in": [
     "Table 2",
     "Table 3",
-    "Fig. 8"
+    "Fig. 8",
+    "Fig. 5"
    ]
   },
   {
@@ -206,10 +207,8 @@
      "unit": "mL",
      "purity": "18.2 MΩ⋅cm",
      "supplier_quote": "Double distilled water (18.2 MΩ⋅cm; Barnstead EasyPure RoDi) was used as a solvent.",
-     "not_stated": [
-      "supplier"
-     ],
-     "quote": "The dry residue was then dissolved into 20 mL of bi-distilled water"
+     "quote": "The dry residue was then dissolved into 20 mL of bi-distilled water",
+     "supplier": "Barnstead EasyPure RoDi"
     },
     {
      "name": "ethanol (washing of the residue)",
@@ -395,7 +394,15 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "FTIR-ATR",
+     "result": "CH2 stretching peaks at 2,847 and 2,915 cm−1; main bands at 1,038 (cellulose and other polysaccharide-rich substances), 1,471 (methylene bending) and ~1,600 cm−1 (carboxylate anion); band at 1,730 cm−1 very distinctive in the spectrum of OH extract, usually associated with a carbonyl stretching vibration",
+     "instrument": "TENSOR II instrument (Bruker Optics Inc., Billerica, MA, USA), platinum ATR accessory with single reflection diamond ATR",
+     "conditions": "400–4,000 cm−1, resolution 4 cm−1, average of 16 scans; dry plant material or dry extract placed in direct contact with the diamond crystal",
+     "quote": "The two peaks observed in the region of high wavenumbers (2,847 and 2,915 cm−1) are assigned to CH2 stretching vibrations. These peaks are also visible in the spectrum of dry colloids. Both plant extracts show complex spectral features having the main vibrational bands located at 1,038 cm−1 (associated with cellulose and other polysaccharide-rich substances such as hemicelluloses and pectins), 1,471 cm−1 (associated with methylene bending) and ~1,600 cm−1 (associated with the stretching vibration of carboxylate anion –COO−). The biggest difference observed in the spectra of the two plant extracts is the band at 1,730 cm−1. This band, which is very distinctive in spectrum of OH extract, is usually associated with a carbonyl stretching vibration."
+    }
+   ],
    "outcomes": [
     {
      "property": "TPC_mg_GAE_per_g_DW",
@@ -476,7 +483,16 @@
      "quote": "In all, 2 g were weighed and extracted with 20 mL of absolute ethanol (Sigma-Aldrich Co.) on ultrasonic bath"
     }
    ],
-   "outcomes": []
+   "outcomes": [],
+   "characterizations": [
+    {
+     "technique": "FTIR-ATR",
+     "result": "similar ATR-FTIR spectrum to OH extract: CH2 stretching peaks at 2,847 and 2,915 cm−1 and main bands at 1,038, 1,471 and ~1,600 cm−1; the band at 1,730 cm−1 is described as very distinctive in the spectrum of OH extract",
+     "instrument": "TENSOR II instrument (Bruker Optics Inc., Billerica, MA, USA), platinum ATR accessory with single reflection diamond ATR",
+     "conditions": "400–4,000 cm−1, resolution 4 cm−1, average of 16 scans; dry plant material or dry extract placed in direct contact with the diamond crystal",
+     "quote": "The OH and OF extracts present similar ATR-FTIR spectra, characteristic to other plant extracts."
+    }
+   ]
   },
   {
    "label": "AuNP-OH-1mL",
@@ -525,10 +541,10 @@
      "purity": "18.2 MΩ⋅cm",
      "supplier_quote": "Double distilled water (18.2 MΩ⋅cm; Barnstead EasyPure RoDi) was used as a solvent.",
      "not_stated": [
-      "amount",
-      "supplier"
+      "amount"
      ],
-     "quote": "Double distilled water (18.2 MΩ⋅cm; Barnstead EasyPure RoDi) was used as a solvent."
+     "quote": "Double distilled water (18.2 MΩ⋅cm; Barnstead EasyPure RoDi) was used as a solvent.",
+     "supplier": "Barnstead EasyPure RoDi"
     }
    ],
    "steps": [
@@ -792,6 +808,33 @@
      "property": "SERS_propranolol_without_iodide",
      "quote": "When using 1 mL OH AuNPs as SERS substrates, one could not record the characteristic spectrum of PRNL by the simple addition of the analyte to colloidal suspension.",
      "value_text": "characteristic spectrum of PRNL could not be recorded by simple addition of the analyte"
+    },
+    {
+     "property": "SERS_methylene_blue_pH_dependence",
+     "quote": "The same type of SER spectrum was obtained right after the addition of analyte by changing the colloidal pH (Figure 6A).",
+     "value_text": "The same type of SER spectrum was obtained right after the addition of analyte by changing the colloidal pH"
+    },
+    {
+     "property": "SERS_methylene_blue_basic_enhanced_bands",
+     "quote": "It is also interesting to note that other vibrational bands are strongly enhanced (608, 889, 1,120, 1,328 and 1,350 cm−1) both after a long incubation time or in a basic environment.",
+     "value_text": "other vibrational bands are strongly enhanced (608, 889, 1,120, 1,328 and 1,350 cm−1) both after a long incubation time or in a basic environment"
+    },
+    {
+     "property": "SERS_methylene_blue_conditions_pH_series",
+     "from_figure": "Fig. 6A",
+     "quote": "(A) pH dependence of SER spectra of MB acquired using as substrates 1 mL OH AuNPs.",
+     "value_text": "MB concentration 5×10−5 M; pH =3, pH =7, pH =9, pH =11"
+    },
+    {
+     "property": "SERS_methylene_blue_conditions_time_series",
+     "from_figure": "Fig. 6B",
+     "quote": "(B) Time-dependent SER spectra of MB acquired using as substrates 1 mL OH AuNPs.",
+     "value_text": "MB concentration 5×10−5 M; 0 h, 6 h, 24 h, 7 days"
+    },
+    {
+     "property": "SERS_propranolol_basic_or_aggregating_agents",
+     "quote": "The result remained the same in basic conditions or upon the addition of different aggregating agents (NaCl, LiCl).",
+     "value_text": "the result remained the same in basic conditions or upon the addition of different aggregating agents (NaCl, LiCl)"
     }
    ],
    "missing_fields": [
@@ -953,6 +996,11 @@
      "property": "A400",
      "quote": "This value remained constant even if the volume of the plant extract was further increased up to 2 mL.",
      "value_text": "remained constant at the maximum value of about 1.3 (1 to 2 mL of extract)"
+    },
+    {
+     "property": "NIR_second_peak_trend",
+     "quote": "An increase in the absorbance values of the second peak from the NIR region and a blue shift of the maximum absorbance wavelengths have also been noticed.",
+     "value_text": "increase in the absorbance values of the second peak from the NIR region and a blue shift of the maximum absorbance wavelengths (1.5 and 2 mL together)"
     }
    ]
   },
@@ -994,6 +1042,11 @@
      "property": "A400",
      "quote": "This value remained constant even if the volume of the plant extract was further increased up to 2 mL.",
      "value_text": "remained constant at the maximum value of about 1.3 (1 to 2 mL of extract)"
+    },
+    {
+     "property": "NIR_second_peak_trend",
+     "quote": "An increase in the absorbance values of the second peak from the NIR region and a blue shift of the maximum absorbance wavelengths have also been noticed.",
+     "value_text": "increase in the absorbance values of the second peak from the NIR region and a blue shift of the maximum absorbance wavelengths (1.5 and 2 mL together)"
     }
    ]
   },
@@ -1040,6 +1093,11 @@
      "property": "NIR_peak",
      "quote": "No absorption peaks have been detected in the NIR region, suggesting that the vast majority of the NPs have a spherical shape.",
      "value_text": "no absorption peak detected in the NIR region"
+    },
+    {
+     "property": "A400",
+     "quote": "The maximum absorption peak has been obtained again for a volume of 1 mL extract, and the A400 values were very close to those observed for OH extracts.",
+     "value_text": "A400 values very close to those observed for OH extracts; maximum absorption peak obtained again for a volume of 1 mL extract (OF series 0.5, 1 and 1.5 mL together)"
     }
    ]
   },
@@ -1096,6 +1154,11 @@
      "property": "size_relative_to_OH",
      "quote": "indicating the synthesis of larger particles with respect to those synthesized using OH extracts",
      "value_text": "larger particles than those synthesized with OH extracts (qualitative, from the peak wavelengths)"
+    },
+    {
+     "property": "A400",
+     "quote": "The maximum absorption peak has been obtained again for a volume of 1 mL extract, and the A400 values were very close to those observed for OH extracts.",
+     "value_text": "A400 values very close to those observed for OH extracts; maximum absorption peak obtained again for a volume of 1 mL extract (OF series 0.5, 1 and 1.5 mL together)"
     }
    ]
   },
@@ -1142,6 +1205,11 @@
      "property": "NIR_peak",
      "quote": "No absorption peaks have been detected in the NIR region, suggesting that the vast majority of the NPs have a spherical shape.",
      "value_text": "no absorption peak detected in the NIR region"
+    },
+    {
+     "property": "A400",
+     "quote": "The maximum absorption peak has been obtained again for a volume of 1 mL extract, and the A400 values were very close to those observed for OH extracts.",
+     "value_text": "A400 values very close to those observed for OH extracts; maximum absorption peak obtained again for a volume of 1 mL extract (OF series 0.5, 1 and 1.5 mL together)"
     }
    ]
   },
@@ -1182,10 +1250,11 @@
      "unit": "mL",
      "amount_text": "0.1 mL of a 1 M solution",
      "not_stated": [
-      "purity",
       "supplier"
      ],
-     "quote": "In our case, 0.1 mL of KI solution (1 M) was added to 0.4 mL of 1 mL OH AuNP colloidal solution."
+     "quote": "In our case, 0.1 mL of KI solution (1 M) was added to 0.4 mL of 1 mL OH AuNP colloidal solution.",
+     "purity": "analytical grade",
+     "supplier_quote": "All chemicals used in this study were of analytical grade."
     },
     {
      "name": "propranolol hydrochloride (analyte)",
@@ -1257,6 +1326,23 @@
      "property": "SERS_best_spectrum_pH",
      "quote": "The best spectrum of PRNL has been measured in basic conditions (pH =10).",
      "value_num": 10
+    },
+    {
+     "property": "SERS_propranolol_spectrum_pH4",
+     "from_figure": "Fig. 7 (curve b)",
+     "quote": "SER spectra of PRNL recorded using as substrates 1 mL OH AuNPs at pH =4 (b) and pH =10 (c).",
+     "value_text": "SER spectrum of PRNL at pH =4 (curve b): bands labelled 737 and 1,383 cm−1 and a band labelled 485 cm−1; the 464 and 585 cm−1 labels appear only on the pH =10 spectrum"
+    },
+    {
+     "property": "SERS_propranolol_spectrum_pH10",
+     "from_figure": "Fig. 7 (curve c)",
+     "quote": "SER spectra of PRNL recorded using as substrates 1 mL OH AuNPs at pH =4 (b) and pH =10 (c).",
+     "value_text": "SER spectrum of PRNL at pH =10 (curve c): bands labelled 737, 1,383, 1,440 and 1,575 cm−1, plus the bands at 464 and 585 cm−1, clearly more intense than at pH =4"
+    },
+    {
+     "property": "SERS_pH_evolution",
+     "quote": "The evolution of the SER spectra with the increase in colloidal pH is similar to that observed in the case of MB.",
+     "value_text": "the evolution of the SER spectra with the increase in colloidal pH is similar to that observed in the case of MB"
     }
    ],
    "missing_fields": [
@@ -1321,7 +1407,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AuNP-OH-1mL",
-   "text": "Hypothèse de chimiste : à 85 °C, les polyphénols (acide rosmarinique, flavonoïdes) s'oxydent en quinones en réduisant AuCl4− en Au0 ; la nucléation est rapide (60 s) et les polyphénols oxydés et non oxydés restent à la surface comme agents de coiffage. Le pH final de 2,5 à 3,2 s'explique probablement par l'acide chlorhydrique libéré par la réduction de HAuCl4 et par les protons des phénols oxydés. Le volume d'extrait fixe le rapport réducteur/or et donc le nombre de germes : peu d'extrait donne peu de germes qui grossissent en plaquettes ou en agrégats, davantage d'extrait donne plus de germes et des particules plus petites."
+   "text": "Hypothèse du critique scientifique (non démontrée par l'article) : à 85 °C et pH ≈ 3, AuCl4− est réduit par les unités catéchol/galloyle des polyphénols (acide rosmarinique, flavonoïdes) oxydées en quinones, avec une contribution probable des sucres de l'extrait ; la nucléation est rapide (60 s), puis les polyphénols oxydés et non oxydés restent adsorbés et stabilisent surtout par effet stérique. Le volume d'extrait fixe le rapport réducteur/or et donc le nombre de germes : à 0,25 mL (environ 11 % des électrons nécessaires d'après le calcul du critique, à partir du TPC de la table 2), la réduction lente favorise des germes maclés qui croissent en nanoplaquettes triangulaires en milieu chlorure acide, comme pour des nanoprismes obtenus avec un extrait de plante (Shankar et al., Nature Materials 2004, DOI 10.1038/nmat1152) ; à 1 mL, la nucléation est plus abondante et les particules plus petites ; au-delà, agrégation partielle ou croissance anisotrope (bande proche infrarouge). Le pH final de 2,5 à 3,2 est cohérent avec HAuCl4 1 mM (pH ≈ 3,0) et les protons libérés par la réduction. Le rôle des « cétones » carvacrol et thymol invoqué par les auteurs est à écarter : ce sont des phénols sans groupe carbonyle (fiche PubChem du carvacrol, CID 10364), peu solubles dans l'eau et en grande partie éliminés à l'évaporation de l'éthanol."
   },
   {
    "type": "securite_analyse",
@@ -1348,6 +1434,46 @@
    "type": "securite_analyse",
    "route": "AuNP-OH-1mL_KI",
    "text": "L'iodure de potassium est peu dangereux aux faibles volumes utilisés ; le propranolol est un médicament actif (bêta-bloquant) à manipuler avec gants, et les solutions de SERS ne doivent pas être jetées à l'évier."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AuNP-OF-1mL",
+   "text": "Hypothèse du critique scientifique : la réduction se fait par les mêmes polyphénols ; l'absence de nanoplaquettes et de bande proche infrarouge avec l'extrait OF s'explique plus simplement par un autre rapport réducteur/or (le TPC de l'extrait OF n'est pas donné) et une autre cinétique de réduction que par l'absence de « cétones », car carvacrol et thymol sont des phénols (fiche PubChem du carvacrol, CID 10364). Aucune taille TEM ni PCS n'est donnée pour OF : « particules plus grosses qu'avec OH » ne repose que sur les positions de bande, et ne vaut pas à 1,5 mL (536 nm dans les deux cas)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Contradiction dans l'article : les Méthodes placent tous les maxima d'absorption plasmonique entre 522 et 546 nm, alors que les Résultats et la figure 1 donnent 534 à 560 nm (560 nm pour 0,25 mL OH, 556 nm pour 0,5 mL OF) ; aucune courbe n'est à 522 nm. Les valeurs de la figure et du texte détaillé sont retenues ; la plage des Méthodes ne doit pas servir de repère."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuNP-OH-1mL",
+   "text": "Les auteurs attribuent les nanoplaquettes triangulaires de l'extrait OH à des « cétones » comme le carvacrol et le thymol, mais ce sont des phénols monoterpéniques sans groupe carbonyle (fiche PubChem du carvacrol, CID 10364), peu solubles dans l'eau et en grande partie perdus à l'évaporation de l'éthanol. Selon le critique scientifique, la bande à 1 730 cm−1 de l'extrait OH évoque plutôt un C=O d'ester ou d'acide ; l'explication des auteurs reste une hypothèse non démontrée, et le rapport réducteur/or est une explication plus simple (Shankar et al., Nature Materials 2004, DOI 10.1038/nmat1152)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuNP-OH-1mL",
+   "text": "Essais antimicrobiens : le témoin ne change pas une seule variable. Le colloïde (environ 11 µg d'or par disque d'après le calcul du critique, avec l'extrait oxydé et un milieu acide de pH 2,5 à 3,2) est comparé à un extrait à 10 % non acidifié et à l'eau seule ; il manque un témoin HCl au même pH et un témoin surnageant. Les zones d'inhibition (par exemple 21 mm pour S. aureus et 28 mm pour C. albicans) ne peuvent donc pas être attribuées aux seules nanoparticules."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuNP-OH-1mL",
+   "text": "Souches incohérentes entre sections : la section Chemicals cite S. aureus ATCC 49444, L. monocytogenes ATCC 13076 et S. typhimurium ATCC 14028, la méthode antimicrobienne S. aureus ATCC 6538P, L. monocytogenes ATCC 13932 et S. enteritidis ATCC 13076, soit le numéro 13076 attribué à Listeria dans un cas et à Salmonella dans l'autre. La fiche ATCC 13932 confirme L. monocytogenes (sérotype 4b). On ne sait pas quelles souches ont été testées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuNP-OH-1mL",
+   "text": "Cytotoxicité : les IC50 annoncées (15,9 ± 9,2 µg/mL pour HDF et 6,5 ± 3,8 µg/mL pour WM35) dépassent la dose maximale testée (4,0 µg/mL) ; ce sont des extrapolations de régression avec des écarts d'environ 60 %, et non des valeurs mesurées. L'unité de dose (masse d'or ou de matière sèche) n'est pas définie, et la note de la figure 8 (« *p>0.05 as compared to control ») est vraisemblablement une coquille pour p < 0,05."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuNP-OH-1mL",
+   "text": "Bilan d'électrons (calcul du critique scientifique à partir du TPC de la table 2, 2 158 µg GAE/mL) : 1 mL d'extrait n'apporte que 42 % (2 e− par équivalent) à 85 % (4 e−) des 60 µmol d'électrons nécessaires pour réduire 20 µmol d'Au3+ ; la réduction complète à 1 mL suppose d'autres réducteurs (sucres, produits d'oxydation actifs) ou une oxydation poussée des polyphénols. Aucun dosage de l'or résiduel (ICP du surnageant) n'est fait : l'A400 de 1,3 est compatible avec une réduction complète, sans la prouver."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuNP-OH-1mL",
+   "text": "Test DPPH : la bande plasmon (534 nm) absorbe près de la longueur d'onde de mesure (517 nm) et le mélange 1:1 avec l'éthanol peut agréger les particules, mais aucun blanc colloïde sans DPPH n'est décrit ; le pourcentage de 70,61 % n'est donc pas interprétable tel quel."
   }
  ],
  "method_sources": [
@@ -1386,12 +1512,36 @@
    "ref_id": "b43-ijn-13-1041",
    "role": "protocole_complet",
    "quote": "The disk diffusion assay was used to determine the comparative antimicrobial activity of plant extracts and AuNP solutions against a panel of microorganisms"
+  },
+  {
+   "route": null,
+   "ref_id": "b44-ijn-13-1041",
+   "role": "autre",
+   "quote": "the results were recorded by measuring the diameter of the inhibition zone (DIZ) in millimeters."
+  },
+  {
+   "route": null,
+   "ref_id": "b45-ijn-13-1041",
+   "role": "autre",
+   "quote": "the results were recorded by measuring the diameter of the inhibition zone (DIZ) in millimeters."
+  },
+  {
+   "route": null,
+   "ref_id": "b46-ijn-13-1041",
+   "role": "autre",
+   "quote": "the results were recorded by measuring the diameter of the inhibition zone (DIZ) in millimeters."
+  },
+  {
+   "route": null,
+   "ref_id": "b47-ijn-13-1041",
+   "role": "autre",
+   "quote": "MW35 cells were maintained in the Roswell Park Memorial Institute (RPMI) medium (Sigma-Aldrich Co.) supplemented with 10% FCS, 1% antibiotic/antimycotic and 2 mM glutamine."
   }
  ],
  "doubts": [
   {
    "where": "AuNP-OH-1mL, protocole de synthèse",
-   "issue": "Les Méthodes décrivent un seul protocole avec « different volumes (between 0.25 and 2 mL) » d'extrait OH ou OF, sans protocole par échantillon. La voie de base est l'échantillon 1 mL OH (celui que les auteurs étudient ensuite) ; les autres volumes et les extraits OF sont des branches qui ne changent que le volume ou la nature de l'extrait. Température de 85 °C et agitation de 60 s sont supposées valables pour tous, car aucune autre condition n'est écrite."
+   "issue": "Les Méthodes décrivent un seul protocole : « different volumes (between 0.25 and 2 mL) of plant extract solutions (either OH or OF) were rapidly added to the heated solution containing Au3+ ions. After 60 s of stirring, the colloidal solution changed its color from pale yellow to ruby red ». Les étapes 1 à 3 (chauffage à 85 °C, ajout rapide, 60 s d'agitation) valent donc pour tous les volumes d'extrait OH et OF. L'étape 4 (refroidissement) est fondée sur « The UV–Vis spectra of the colloids, recorded after the solutions cooled down to room temperature, are presented in Figure 1 », qui couvre toute la série de la figure 1 (0,25 à 2 mL OH et 0,5 à 1,5 mL OF). La voie de base est l'échantillon 1 mL OH (celui que les auteurs étudient ensuite) ; les autres volumes et les extraits OF sont des branches qui ne changent que le volume ou la nature de l'extrait. Reste non cité pour tous : durée de chauffe jusqu'à 85 °C et vitesse d'agitation."
   },
   {
    "where": "Pic plasmon, texte contre figure 1",
@@ -1411,7 +1561,7 @@
   },
   {
    "where": "Réactifs, fournisseur de HAuCl4 et du propranolol",
-   "issue": "Dans la section Chemicals, la mention « (Sigma-Aldrich Co., St Louis, MO, USA) » suit une liste qui commence à « sodium carbonate » ; elle est attribuée à HAuCl4 et au chlorhydrate de propranolol. L'éthanol est suivi de « EMD Millipore » dans cette liste mais l'éthanol absolu de l'extraction est cité chez Sigma-Aldrich dans la section de l'extraction (valeur retenue). « analytical grade » est lu comme la pureté de tous les produits."
+   "issue": "Dans la section Chemicals, la mention « (Sigma-Aldrich Co., St Louis, MO, USA) » suit une liste qui commence à « sodium carbonate » ; elle est attribuée à HAuCl4 et au chlorhydrate de propranolol. L'éthanol est suivi de « EMD Millipore » dans cette liste mais l'éthanol absolu de l'extraction est cité chez Sigma-Aldrich dans la section de l'extraction (valeur retenue). « analytical grade » est lu comme la pureté de tous les produits. Même lecture pour le iodure de potassium de la voie AuNP-OH-1mL_KI (« All chemicals used in this study »), dont le fournisseur reste non cité car la liste Chemicals ne le nomme pas. Pour l'eau bi-distillée, « Barnstead EasyPure RoDi » est le système de production de l'eau et non un fournisseur de produit ; il est enregistré à la place du fournisseur faute d'autre mention."
   },
   {
    "where": "Souches microbiennes",
@@ -1424,6 +1574,22 @@
   {
    "where": "Échantillons sans voie",
    "issue": "Les AuNPs « classiques » à citrate (mentionnées dans la figure 7, « data not shown » pour le reste), la vitamine C (10 μg/mL), l'eau bi-distillée et les matières végétales sèches (FTIR) ne sont pas préparés dans l'article : aucune voie."
+  },
+  {
+   "where": "Figure 5 (FTIR), courbe de la bande à 1,731 cm−1",
+   "issue": "La légende de la figure 5 donne la courbe a = extrait OH sec, b = extrait OF sec, c = AuNPs 1 mL OH, et dit que la flèche marque une bande « which can be found only in the case of OH extract » ; le texte réserve aussi la bande à 1,730 cm−1 à l'extrait OH. Sur l'image, la flèche à 1,731 cm−1 est portée par la courbe b (rouge, OF selon la légende), alors que la courbe a (OH) n'en montre pas. Les bandes sont donc enregistrées comme dans le texte (propres à OH) ; l'attribution des courbes est contradictoire entre légende et image. Le texte parle de « dry plant material » pour les spectres, la légende d'« extrait sec » : l'échantillon exact n'est pas précisé."
+  },
+  {
+   "where": "Figures 6 et 7 (valeurs lues sur image)",
+   "issue": "Les conditions du SERS du bleu de méthylène (5×10−5 M ; pH 3, 7, 9, 11 en 6A ; 0 h, 6 h, 24 h et 7 jours en 6B) et les étiquettes de bandes de la figure 7 (464, 585, 737, 1,383, 1,440, 1,575 cm−1 ; 485 cm−1 à pH 4) sont lues sur les étiquettes de l'image, à l'unité près. L'intensité plus forte des bandes à 464 et 585 cm−1 à pH 10 qu'à pH 4 est une comparaison visuelle (courbes c et b), non chiffrée. Le texte donne 1,578 et 1,439 cm−1 pour le propranolol, la figure 1,575 et 1,440 cm−1 : les étiquettes de la figure sont recopiées telles quelles."
+  },
+  {
+   "where": "AuNP-OH-1mL_KI step 3, volume d'analyte",
+   "issue": "Seule phrase donnant un volume d'analyte pour les mesures SERS : « All measurements were performed in 1 mL glass vials filled with 540 μL colloid and 60 μL analyte. » Or la voie KI mélange 0,4 mL de colloïde et 0,1 mL de KI (0,5 mL), et non 540 μL ; le protocole général de mesure ne s'applique donc peut-être pas tel quel. Le volume d'analyte de la voie KI reste non cité."
+  },
+  {
+   "where": "method_sources, renvois b43–b46 et b47",
+   "issue": "Le renvoi « [[b43]]–[[b46]] » est écrit après la phrase de mesure du diamètre des zones d'inhibition : seule la plage est citée, sans dire quel renvoi couvre quelle partie du test ; b43 est classé protocole complet, b44 à b46 en « autre ». Le renvoi [[b47]] (Mosmann, test colorimétrique MTT) est placé à la fin du paragraphe de culture cellulaire, avant la description du test MTT : on ne sait pas s'il couvre la culture ou le test, classé « autre »."
   }
  ]
 }
