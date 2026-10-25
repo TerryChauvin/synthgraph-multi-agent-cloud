@@ -97,9 +97,7 @@
    "route": "AgNPs-PF127_1mg",
    "results_in": [
     "Wound Healing Study",
-    "Fig. 7",
-    "Table 3",
-    "Fig. 5"
+    "Fig. 7"
    ]
   },
   {
@@ -141,8 +139,7 @@
    "succeeded": true,
    "not_stated": [
     "yield",
-    "stirring_speed",
-    "extract_concentration"
+    "stirring_speed"
    ],
    "reagents": [
     {
@@ -152,10 +149,11 @@
      "amount": 10,
      "unit": "g",
      "not_stated": [
-      "purity",
-      "supplier"
+      "purity"
      ],
-     "quote": "Aqueous extract was prepared by adding 10 g of leaf powder to 100 mL of distil water (1:10 ratio) and heating in a water bath at 50°C for 30 min."
+     "quote": "Aqueous extract was prepared by adding 10 g of leaf powder to 100 mL of distil water (1:10 ratio) and heating in a water bath at 50°C for 30 min.",
+     "supplier": "Temasek Life Sciences Laboratory, Singapore",
+     "supplier_quote": "Leaves of neem were collected from the premises of Temasek Life Sciences Laboratory, Singapore."
     },
     {
      "name": "distil water",
@@ -235,6 +233,11 @@
        "name": "mass_volume_ratio",
        "value_text": "1:10 ratio",
        "quote": "Aqueous extract was prepared by adding 10 g of leaf powder to 100 mL of distil water (1:10 ratio) and heating in a water bath at 50°C for 30 min."
+      },
+      {
+       "name": "extract_concentration",
+       "value_text": "10 g of leaf powder to 100 mL of distil water (1:10 ratio)",
+       "quote": "Aqueous extract was prepared by adding 10 g of leaf powder to 100 mL of distil water (1:10 ratio) and heating in a water bath at 50°C for 30 min."
       }
      ],
      "equipment": [],
@@ -309,7 +312,15 @@
      ]
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "bandes de l'extrait citées comme point de départ des décalages : 3254 cm–1 (NH ou OH), 2,252 cm–1 (–C=C–), 1,612 cm–1 (–C=O– amide) et 1,408 cm–1 (-N-H-), attributions des auteurs",
+     "instrument": "Thermo Fischer Scientific",
+     "conditions": "4,000–400 cm–1",
+     "quote": "Comparative analysis of FTIR spectra of AI-extract and AI-AgNPs (Figure 2C) depict the shift in peaks from 3254 to 3211 cm–1 corresponding to NH or OH stretching vibration of amino or phenolic/hydroxyl, from 2,252 to 2,048 cm–1 corresponding to –C=C– stretching vibration of alkenes, from 1,612 to 1,550 cm–1 corresponding to –C=O– stretching vibration of amides characteristic of –COOH and from 1,408 to 1,445 cm–1 corresponding to -N-H- bending vibration of primary amines."
+    }
+   ],
    "outcomes": [
     {
      "property": "DPPH_radical_scavenging_100_ug_mL",
@@ -425,7 +436,6 @@
     }
    ],
    "missing_fields": [
-    "extract_concentration",
     "stirring_speed"
    ]
   },
@@ -529,7 +539,7 @@
     {
      "order": 3,
      "action": "react",
-     "description": "Incubate on a rotary shaker at 200 rpm, in the dark, at room temperature; colour change and UV-Vis absorbance followed every 6 h.",
+     "description": "Incubate on a rotary shaker at 200 rpm, in the dark, at room temperature, for 24 h selon les Méthodes (18 h dans les Résultats, voir doute) ; colour change and UV-Vis absorbance followed every 6 h.",
      "quote": "The resultant mixture was adjusted to pH 7 and incubated on a rotary shaker at 200 rpm, in dark, at RT for 24 h",
      "parameters": [
       {
@@ -656,10 +666,10 @@
     },
     {
      "technique": "FTIR",
-     "result": "décalage de bandes entre AI-extract et AI-AgNPs (3254 à 3211 cm–1, etc.), groupes hydroxyle/phénolique, carbonyle, amide et amine impliqués dans la réduction",
+     "result": "décalages de bandes entre AI-extract et AI-AgNPs : 3254 à 3211 cm–1 (NH ou OH), 2,252 à 2,048 cm–1 (–C=C–), 1,612 à 1,550 cm–1 (–C=O– amide) et 1,408 à 1,445 cm–1 (-N-H-), attributions des auteurs ; groupes hydroxyle/phénolique, carbonyle, amide et amine dits impliqués dans la réduction",
      "instrument": "Thermo Fischer Scientific",
      "conditions": "4,000–400 cm–1",
-     "quote": "Comparative analysis of FTIR spectra of AI-extract and AI-AgNPs (Figure 2C) depict the shift in peaks from 3254 to 3211 cm–1 corresponding to NH or OH stretching vibration of amino or phenolic/hydroxyl"
+     "quote": "Comparative analysis of FTIR spectra of AI-extract and AI-AgNPs (Figure 2C) depict the shift in peaks from 3254 to 3211 cm–1 corresponding to NH or OH stretching vibration of amino or phenolic/hydroxyl, from 2,252 to 2,048 cm–1 corresponding to –C=C– stretching vibration of alkenes, from 1,612 to 1,550 cm–1 corresponding to –C=O– stretching vibration of amides characteristic of –COOH and from 1,408 to 1,445 cm–1 corresponding to -N-H- bending vibration of primary amines."
     },
     {
      "technique": "XRD",
@@ -1056,6 +1066,36 @@
      "value_num": 75.77,
      "unit": "%",
      "quote": "Animals treated with pristine PF127 hydrogel showed 25.46, 50.11, 67.54, and 75.77 wound contraction"
+    },
+    {
+     "property": "skin_irritation_test_conditions",
+     "value_text": "20 μL of pristine PF127 hydrogel was applied on back of mice. Skin responses were noted at 1, 6, 24, and 48 h.",
+     "quote": "20 μL of pristine PF127 hydrogel and 20 μL of 3 mg AI-AgNPs-PF127 hydrogel was applied on back of mice. Skin responses were noted at 1, 6, 24, and 48 h."
+    },
+    {
+     "property": "skin_irritation",
+     "value_text": "The skin of both control and treated animals appeared normal.",
+     "quote": "The skin of both control and treated animals appeared normal."
+    },
+    {
+     "property": "pH",
+     "value_text": "5.7–5.8",
+     "quote": "pH of the two hydrogels were 5.7–5.8."
+    },
+    {
+     "property": "sol_gel_transition",
+     "value_text": "sol-gel transition between 22 and 37°C, being liquid at 4°C and hydrogel at 37°C",
+     "quote": "They exhibited impressive features in terms of sol-gel transition between 22 and 37°C, being liquid at 4°C and hydrogel at 37°C."
+    },
+    {
+     "property": "viscosity_trend",
+     "value_text": "Viscosity of the hydrogels increased with the increase in temperature",
+     "quote": "Viscosity of the hydrogels increased with the increase in temperature."
+    },
+    {
+     "property": "spreadability",
+     "value_text": "6.0–7.7 cm",
+     "quote": "Spreadability of the hydrogels was in the range of 6.0–7.7 cm."
     }
    ],
    "missing_fields": [
@@ -1196,33 +1236,29 @@
      "quote": "test group 0.3 mg AI-AgNPs-PF127 hydrogel displayed 27.22, 52.32, 75.44, and 85.52 and test group 1.0 mg AI-AgNPs-PF127 hydrogel reached 24.25, 56.43, 85.23, and 94.54 wound contraction rate on 3rd, 5th, 7th, and 10th day, respectively (Figure 7A)"
     },
     {
-     "property": "ZOI_Bacillus_cereus_hydrogel",
-     "value_num": 18.7,
-     "unit": "mm",
-     "quote": "Bacillus cereus | 17.7 ± 1.24 | 18.7 ± 0.94 | 390 | 390"
-    },
-    {
-     "property": "ZOI_Escherichia_coli_hydrogel",
-     "value_num": 20.0,
-     "unit": "mm",
-     "quote": "Escherichia coli | 18.7 ± 1.15 | 20.0 ± 1.0 | 780 | 780"
-    },
-    {
-     "property": "ZOI_Pseudomonas_aeruginosa_hydrogel",
-     "value_num": 13.0,
-     "unit": "mm",
-     "quote": "Pseudomonas aeruginosa | 10.3 ± 0.50 | 13.0 ± 0.46 | 780 | 780"
-    },
-    {
-     "property": "ZOI_Staphylococcus_aureus_hydrogel",
-     "value_num": 20.0,
-     "unit": "mm",
-     "quote": "Staphylococcus aureus | 17.7 ± 0.47 | 20.0 ± 0.47 | 390 | 390"
-    },
-    {
      "property": "wound_closure_day10",
      "value_text": "near complete wound closure on the 10th day",
      "quote": "The results showcased near complete wound closure with 1.0 mg AI-AgNPs-PF127 hydrogel on 10th day"
+    },
+    {
+     "property": "pH",
+     "value_text": "5.7–5.8",
+     "quote": "pH of the two hydrogels were 5.7–5.8."
+    },
+    {
+     "property": "sol_gel_transition",
+     "value_text": "sol-gel transition between 22 and 37°C, being liquid at 4°C and hydrogel at 37°C",
+     "quote": "They exhibited impressive features in terms of sol-gel transition between 22 and 37°C, being liquid at 4°C and hydrogel at 37°C."
+    },
+    {
+     "property": "viscosity_trend",
+     "value_text": "Viscosity of the hydrogels increased with the increase in temperature",
+     "quote": "Viscosity of the hydrogels increased with the increase in temperature."
+    },
+    {
+     "property": "spreadability",
+     "value_text": "6.0–7.7 cm",
+     "quote": "Spreadability of the hydrogels was in the range of 6.0–7.7 cm."
     }
    ],
    "missing_fields": [
@@ -1302,8 +1338,13 @@
    "outcomes": [
     {
      "property": "skin_irritation",
-     "value_text": "no skin redness, dryness, or flakiness when applied on skin of mice",
-     "quote": "AI-AgNPs-PF127 hydrogel did not produce any undesirable side effects such as skin redness, dryness, or flakiness when applied on skin of mice"
+     "value_text": "did not produce any undesirable side effects such as skin redness, dryness, or flakiness when applied on skin of mice. The skin of both control and treated animals appeared normal.",
+     "quote": "AI-AgNPs-PF127 hydrogel did not produce any undesirable side effects such as skin redness, dryness, or flakiness when applied on skin of mice. The skin of both control and treated animals appeared normal."
+    },
+    {
+     "property": "skin_irritation_test_conditions",
+     "value_text": "20 μL of 3 mg AI-AgNPs-PF127 hydrogel was applied on back of mice. Skin responses were noted at 1, 6, 24, and 48 h.",
+     "quote": "20 μL of pristine PF127 hydrogel and 20 μL of 3 mg AI-AgNPs-PF127 hydrogel was applied on back of mice. Skin responses were noted at 1, 6, 24, and 48 h."
     }
    ]
   }
@@ -1374,7 +1415,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "AI-AgNPs",
-   "text": "Hypothèse de chimiste : les polyphénols et les terpénoïdes de l'extrait réduisent probablement Ag+ en Ag0 (par transfert d'électrons ou d'hydrogène), puis les molécules oxydées et les protéines de l'extrait s'adsorbent sur la surface des particules et limitent leur croissance et leur agrégation. Le pH 7, proche de la neutralité, favorise probablement la déprotonation des phénols, donc leur pouvoir réducteur. Le travail à l'obscurité limite probablement la photoréduction non contrôlée de AgNO3."
+   "text": "Hypothèse de chimiste : ce sont probablement les polyphénols et flavonoïdes hydrosolubles de l'extrait aqueux, et non les terpènes détectés en GC-MS dans des extraits organiques, qui réduisent Ag+ en Ag0 par transfert d'électrons ou d'hydrogène. Les molécules oxydées, les protéines et les polysaccharides de l'extrait s'adsorbent ensuite probablement sur la surface des particules et limitent leur croissance et leur agrégation. Le pH 7, proche de la neutralité, favorise probablement la déprotonation des phénols, donc leur pouvoir réducteur. Le chlorure apporté par l'extrait peut précipiter une part de l'argent sous forme d'AgCl, que la lumière réduirait partiellement ; le travail à l'obscurité limite probablement cette photoréduction non contrôlée."
   },
   {
    "type": "securite_auteurs",
@@ -1386,6 +1427,67 @@
    "type": "securite_analyse",
    "route": null,
    "text": "Le nitrate d'argent est oxydant, corrosif et tache la peau ; il est toxique pour les organismes aquatiques, donc les déchets d'argent ne doivent pas aller à l'évacuation. Les nanoparticules d'argent séchées à l'air sont une poudre fine à ne pas inhaler. Le Pluronic F-127 est peu dangereux, mais les solvants (hexane, acétate d'éthyle) de l'analyse GC-MS sont inflammables."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Le Tableau 3 donne aussi une colonne « ZOI for AI-AgNPs-PF127 hydrogel (mm) » (B. cereus 18,7 ; E. coli 20,0 ; P. aeruginosa 13,0 ; S. aureus 20,0 mm), à comparer à la colonne de la poudre d'AI-AgNPs (17,7 ; 18,7 ; 10,3 ; 17,7 mm). La charge du gel utilisé pour ces disques (0,3, 1 ou 3 mg) n'est pas précisée : ces valeurs ne sont donc rattachées à aucune des trois voies de gel.",
+   "quote": "Name of the bacterial species | ZOI for AI-AgNPs (mm) | ZOI for AI-AgNPs-PF127 hydrogel (mm) | MIC for AI-AgNPs (μg/mL) | MBC for AI-AgNPs (μg/mL)"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PF127_pristine",
+   "text": "Le résultat d'irritation cutanée du gel PF127 seul est rattaché par concordance avec les Méthodes : les Résultats parlent d'un « control » sans dire si c'est la peau non traitée ou le gel PF127 seul."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AI-AgNPs",
+   "text": "Critique scientifique : les quatre positions DRX publiées (2θ = 39,24 ; 44,12 ; 63,52 ; 77,80°, indexées (111), (200), (220), (311)) ne correspondent pas à un même paramètre de maille (a de 3,97 à 4,14 Å) ; pour l'argent cubique à faces centrées, a = 4,0862 Å (NBS Monograph 25, NIST) donne 38,12 ; 44,28 ; 64,43 ; 77,47°. L'attribution à l'argent est plausible (couleur, plasmon, EDX), mais les valeurs de 2θ ne la démontrent pas telles qu'écrites ; valeurs de l'article gardées, à revérifier sur le diffractogramme."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AI-AgNPs",
+   "text": "Critique scientifique : les auteurs écrivent que les AI-AgNPs sont stables dans les cinq solutions testées, alors que leurs absorbances à 400 nm lues sur la Fig. 1B baissent d'environ 60 % dans NaCl 0,9 % et d'environ 50 % dans le DMEM par rapport à l'eau, ce qui évoque plutôt une agrégation ou une chloruration de surface ; la conclusion de stabilité n'est pas soutenue par leurs propres données."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-PF127_1mg",
+   "text": "Critique scientifique : les charges de 0,3, 1 et 3 mg d'AI-AgNPs sont ajoutées à un volume de gel PF127 jamais donné ; la concentration en nanoparticules du gel et la dose appliquée par plaie (20 μL) ne peuvent donc pas être reconstituées, et la relation dose-effet n'est pas reproductible telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-PF127_0.3mg",
+   "text": "Critique scientifique : les charges de 0,3, 1 et 3 mg d'AI-AgNPs sont ajoutées à un volume de gel PF127 jamais donné ; la concentration en nanoparticules du gel et la dose appliquée par plaie (20 μL) ne peuvent donc pas être reconstituées, et la relation dose-effet n'est pas reproductible telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-PF127_3mg",
+   "text": "Critique scientifique : les charges de 0,3, 1 et 3 mg d'AI-AgNPs sont ajoutées à un volume de gel PF127 jamais donné ; la concentration en nanoparticules du gel et la dose appliquée par plaie (20 μL) ne peuvent donc pas être reconstituées, et la relation dose-effet n'est pas reproductible telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AI-AgNPs",
+   "text": "Critique scientifique : l'agent d'ajustement à pH 7 n'est pas nommé (NaOH localement concentré peut précipiter Ag2O/AgOH, HCl donnerait AgCl) ; le chlorure de l'extrait peut aussi précipiter AgCl (Ks ≈ 1,8 × 10⁻¹⁰, soit quelques 10⁻⁷ mol/L de chlorure suffisants à 0,9 mM d'Ag+), et l'article ne liste que quatre pics DRX sans discuter les raies d'AgCl (Okaiyeto et al., 2019, PMC6930575). La plage UV-Vis annoncée « 100–900 nm » est impossible en solution aqueuse (probablement 200–900 nm)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AI-AgNPs",
+   "text": "Critique scientifique : les CMI et CMB de 390 à 780 μg/mL sont 10 à 100 fois plus élevées que les valeurs usuelles des nanoparticules d'argent biosynthétisées (Vanlalveni et al., 2021) ; la teneur réelle en argent de la poudre séchée à l'air n'est pas mesurée, donc les doses en μg/mL se rapportent à une poudre en partie organique. Le doublement de l'activité DPPH/ABTS par rapport à l'extrait n'est pas discriminant : l'argent métallique peut réduire ABTS•+ lui-même (Garcia-Leis et al., 2016) et aucun blanc de nanoparticules sans radical n'est décrit."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PF127_pristine",
+   "text": "Critique scientifique : le pH de 5,7–5,8 est mesuré après dilution du gel à 1 % dans l'eau distillée, donc avec un tampon PBS dilué 100 fois ; la valeur est proche de celle de l'eau distillée à l'air et ne renseigne pas sur le pH du gel appliqué sur la plaie. La viscosité est mesurée à 4 °C au viscosimètre d'Ostwald, sans valeur donnée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AI-extract",
+   "text": "Critique scientifique : l'analyse GC-MS (Tableau 1) porte sur des extraits à l'hexane et à l'acétate d'éthyle de feuilles broyées, et non sur l'extrait aqueux utilisé pour la synthèse ; les terpènes majoritaires y sont peu solubles dans l'eau. La composition de l'extrait aqueux réducteur, ainsi que sa matière sèche, ne sont pas établies."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AI-AgNPs",
+   "text": "Critique scientifique : les attributions FTIR des auteurs sont douteuses. La bande 2252→2048 cm–1 n'est pas une élongation C=C d'alcène (≈ 1620–1680 cm–1), 1408→1445 cm–1 n'est pas une déformation N–H d'amine primaire (≈ 1580–1650 cm–1), et l'argent métallique n'a pas de bande IR : un « pic de 1700 à 1300 cm–1 » ne prouve pas sa formation. Le FTIR ne permet pas de désigner les groupes réducteurs ; données de l'article inchangées."
   }
  ],
  "method_sources": [
@@ -1429,11 +1531,11 @@
  "doubts": [
   {
    "where": "AI-AgNPs, étape 3 (durée)",
-   "issue": "Les Méthodes donnent 24 h d'incubation (« at RT for 24 h »), les Résultats annoncent des paramètres optimisés avec « 25°C in dark at 200 rpm for 18 h ». Lecture retenue : 24 h (section la plus détaillée) ; 18 h est l'autre lecture. La température « RT » est définie plus haut comme 25 °C (extrait), gardée en value_text."
+   "issue": "Les Méthodes donnent 24 h d'incubation (« at RT for 24 h »), les Résultats annoncent des paramètres optimisés avec « 25°C in dark at 200 rpm for 18 h ». Lecture retenue : 24 h (section la plus détaillée) ; 18 h est l'autre lecture, rappelée dans la description de l'étape. La température « RT » est définie plus haut comme 25 °C (extrait), gardée en value_text."
   },
   {
-   "where": "AgNPs-PF127_1mg, résultats ZOI de l'hydrogel (Table 3)",
-   "issue": "Le tableau 3 donne le diamètre de la zone d'inhibition de « AI-AgNPs-PF127 hydrogel » sans dire quelle charge (0,3, 1 ou 3 mg) a servi aux disques. Rattaché à la voie de base 1 mg par défaut ; le chargement réel est inconnu."
+   "where": "Table 3, ZOI de l'hydrogel (hors voies)",
+   "issue": "Le tableau 3 donne le diamètre de la zone d'inhibition de « AI-AgNPs-PF127 hydrogel » sans dire quelle charge (0,3, 1 ou 3 mg) a servi aux disques. Les quatre valeurs ne sont rattachées à aucune voie de gel ; elles figurent dans une annotation comparaison_branches (charge non précisée)."
   },
   {
    "where": "AgNPs-PF127_3mg, irritation cutanée",
@@ -1454,6 +1556,14 @@
   {
    "where": "Table 3, concentration de la CMI",
    "issue": "Le texte parle de « MIB » à la place de MBC dans la phrase des résultats ; lecture retenue : MBC (le tableau écrit MBC)."
+  },
+  {
+   "where": "PF127_pristine, irritation cutanée",
+   "issue": "Les Méthodes appliquent 20 μL de gel PF127 seul et 20 μL de gel à 3 mg sur le dos des souris ; les Résultats disent « The skin of both control and treated animals appeared normal » sans préciser si le témoin (« control ») est la peau non traitée ou le gel PF127 seul. Résultat rattaché à la voie PF127_pristine par concordance avec les Méthodes, lecture incertaine."
+  },
+  {
+   "where": "Gels, pH",
+   "issue": "Le pH des hydrogels est de 5,7–5,8 dans les Résultats (« pH of the two hydrogels were 5.7–5.8 ») et de 5,5–5,8 dans la Discussion (« The pH of the AI-AgNPs-PF127 hydrogel was between 5.5-5.8 »). Valeur des Résultats retenue. Les propriétés physico-chimiques sont données une seule fois pour « the two hydrogels » (gel seul et gel chargé), sans distinguer la charge : rangées sur PF127_pristine et AgNPs-PF127_1mg."
   }
  ]
 }

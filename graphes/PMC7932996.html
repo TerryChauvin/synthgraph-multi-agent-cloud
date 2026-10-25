@@ -1,0 +1,141 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7932996</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7932996 — Synthesis, Characterization, Antibacterial and Wound Healing Efficacy of Silver Nanoparticles From Azadirachta indica.</h1>
+<h2>Voie : AI-extract</h2>
+<pre class="mermaid">flowchart LR
+  R18562([&quot;neem leaf powder&lt;br/&gt;10 g&quot;]):::reactif
+  R18562 --&gt;|&quot;precursor&quot;| S21995
+  R18563([&quot;distil water&lt;br/&gt;100 mL&quot;]):::reactif
+  R18563 --&gt;|&quot;solvent&quot;| S21995
+  R18564([&quot;running water (leaf washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18564 --&gt;|&quot;wash&quot;| S21995
+  S21995[&quot;&lt;b&gt;1. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : running water&quot;]:::etape
+  S21995 --&gt; S21996
+  S21996[&quot;&lt;b&gt;2. dry&lt;/b&gt;&quot;]:::etape
+  S21996 --&gt; S21997
+  S21997[&quot;&lt;b&gt;3. grind&lt;/b&gt;&quot;]:::etape
+  S21997 --&gt; S21998
+  S21998[&quot;&lt;b&gt;4. add&lt;/b&gt;&lt;br/&gt;mass_volume_ratio : 1:10 ratio&lt;br/&gt;extract_concentration : 10 g of leaf powder to 100 mL…&quot;]:::etape
+  S21998 --&gt; S21999
+  S21999[&quot;&lt;b&gt;5. heat&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S21999 --&gt; S22000
+  S22000[&quot;&lt;b&gt;6. cool&lt;/b&gt;&lt;br/&gt;temperature_final : 25 °C&quot;]:::etape
+  S22000 --&gt; S22001
+  S22001[&quot;&lt;b&gt;7. filter&lt;/b&gt;&quot;]:::etape
+  S22001 --&gt; M
+  M{{&quot;aqueous leaf extract of Azadirachta indica (neem)&lt;br/&gt;&quot;}}:::materiau
+  O86911[&quot;DPPH_radical_scavenging_100_ug_mL : 14.45 %&quot;]:::resultat
+  M -.-&gt; O86911
+  O86912[&quot;ABTS_radical_scavenging_100_ug_mL : 13.4 %&quot;]:::resultat
+  M -.-&gt; O86912
+  O86913[&quot;DPPH_radical_scavenging_200_ug_mL : 20.46 %&quot;]:::resultat
+  M -.-&gt; O86913
+  O86914[&quot;ABTS_radical_scavenging_200_ug_mL : 19.82 %&quot;]:::resultat
+  M -.-&gt; O86914
+  O86915[&quot;DPPH_radical_scavenging_300_ug_mL : 24.3 %&quot;]:::resultat
+  M -.-&gt; O86915
+  O86916[&quot;ABTS_radical_scavenging_300_ug_mL : 26.73 %&quot;]:::resultat
+  M -.-&gt; O86916
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AI-AgNPs</h2>
+<pre class="mermaid">flowchart LR
+  R18565([&quot;AI-extract (route AI-extract)&lt;br/&gt;5 mL&quot;]):::reactif
+  R18565 --&gt;|&quot;intermediate&quot;| S22002
+  R18566([&quot;silver nitrate&lt;br/&gt;45 mL&quot;]):::reactif
+  R18566 --&gt;|&quot;precursor&quot;| S22002
+  R18567([&quot;distil water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18567 --&gt;|&quot;wash&quot;| S22002
+  S22002[&quot;&lt;b&gt;1. add&lt;/b&gt;&lt;br/&gt;concentration : 1 mM&lt;br/&gt;addition_rate : slowly&quot;]:::etape
+  S22002 --&gt; S22003
+  S22003[&quot;&lt;b&gt;2. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 7&quot;]:::etape
+  S22003 --&gt; S22004
+  S22004[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : RT&lt;br/&gt;duration : 24 h&lt;br/&gt;stirring_speed : 200 rpm&lt;br/&gt;light : in dark&quot;]:::etape
+  S22004 --&gt; S22005
+  S22005[&quot;&lt;b&gt;4. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 4500 rpm&lt;br/&gt;duration : 20 min&quot;]:::etape
+  S22005 --&gt; S22006
+  S22006[&quot;&lt;b&gt;5. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : distil water&lt;br/&gt;repetitions : thrice&quot;]:::etape
+  S22006 --&gt; S22007
+  S22007[&quot;&lt;b&gt;6. dry&lt;/b&gt;&quot;]:::etape
+  S22007 --&gt; M
+  M{{&quot;silver nanoparticles biosynthesized with neem lea…&lt;br/&gt;Ag&quot;}}:::materiau
+  O86929[&quot;particle_diameter : 33.2 nm&quot;]:::resultat
+  M -.-&gt; O86929
+  O86930[&quot;particle_shape : spherical&quot;]:::resultat
+  M -.-&gt; O86930
+  O86931[&quot;UV_Vis_absorbance_peak : 400 nm&quot;]:::resultat
+  M -.-&gt; O86931
+  O86932[&quot;color_change : from transparent to brown wit…&quot;]:::resultat
+  M -.-&gt; O86932
+  O86933[&quot;stability_in_five_solutions_and_28… : stable in all five solutions …&quot;]:::resultat
+  M -.-&gt; O86933
+  O86934[&quot;UV_Vis_abs400_in_distil_water : 0.25 a.u.&quot;]:::resultat
+  M -.-&gt; O86934
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : PF127_pristine</h2>
+<pre class="mermaid">flowchart LR
+  R18568([&quot;Pluronic F-127 (PF127)&lt;br/&gt;30% w/v&quot;]):::reactif
+  R18568 --&gt;|&quot;polymer&quot;| S22008
+  R18569([&quot;phosphate buffered saline (PBS)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18569 --&gt;|&quot;solvent&quot;| S22008
+  S22008[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 30% w/v&lt;br/&gt;temperature : ice cold&quot;]:::etape
+  S22008 --&gt; M
+  M{{&quot;pristine Pluronic F-127 hydrogel (30% w/v in PBS)&lt;br/&gt;&quot;}}:::materiau
+  O86974[&quot;appearance : transparent&quot;]:::resultat
+  M -.-&gt; O86974
+  O86975[&quot;wound_contraction_day3 : 25.46 %&quot;]:::resultat
+  M -.-&gt; O86975
+  O86976[&quot;wound_contraction_day5 : 50.11 %&quot;]:::resultat
+  M -.-&gt; O86976
+  O86977[&quot;wound_contraction_day7 : 67.54 %&quot;]:::resultat
+  M -.-&gt; O86977
+  O86978[&quot;wound_contraction_day10 : 75.77 %&quot;]:::resultat
+  M -.-&gt; O86978
+  O86979[&quot;skin_irritation_test_conditions : 20 μL of pristine PF127 hydro…&quot;]:::resultat
+  M -.-&gt; O86979
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : AgNPs-PF127_1mg</h2>
+<pre class="mermaid">flowchart LR
+  R18570([&quot;PF127 hydrogel (route PF127_pristine)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18570 --&gt;|&quot;intermediate&quot;| S22009
+  R18571([&quot;AI-AgNPs (route AI-AgNPs)&lt;br/&gt;1 mg&quot;]):::reactif
+  R18571 --&gt;|&quot;intermediate&quot;| S22009
+  S22009[&quot;&lt;b&gt;1. add&lt;/b&gt;&quot;]:::etape
+  S22009 --&gt; S22010
+  S22010[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;duration : overnight&lt;br/&gt;temperature : cold room&quot;]:::etape
+  S22010 --&gt; S22011
+  S22011[&quot;&lt;b&gt;3. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S22011 --&gt; M
+  M{{&quot;AI-AgNPs-loaded Pluronic F-127 hydrogel (1 mg AI-…&lt;br/&gt;&quot;}}:::materiau
+  O86985[&quot;appearance : pale ash brown&quot;]:::resultat
+  M -.-&gt; O86985
+  O86986[&quot;wound_contraction_day3 : 24.25 %&quot;]:::resultat
+  M -.-&gt; O86986
+  O86987[&quot;wound_contraction_day5 : 56.43 %&quot;]:::resultat
+  M -.-&gt; O86987
+  O86988[&quot;wound_contraction_day7 : 85.23 %&quot;]:::resultat
+  M -.-&gt; O86988
+  O86989[&quot;wound_contraction_day10 : 94.54 %&quot;]:::resultat
+  M -.-&gt; O86989
+  O86990[&quot;wound_closure_day10 : near complete wound closure o…&quot;]:::resultat
+  M -.-&gt; O86990
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13923{{&quot;AgNPs-PF127_1mg&quot;}}:::materiau
+  B13924[&quot;AgNPs-PF127_0.3mg&quot;]:::etape
+  B13923 --&gt;|&quot;AI-AgNPs (route AI-AgNPs) = 0.3 mg&quot;| B13924
+  B13925[&quot;AgNPs-PF127_3mg&quot;]:::etape
+  B13923 --&gt;|&quot;AI-AgNPs (route AI-AgNPs) = 3 mg&quot;| B13925
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
