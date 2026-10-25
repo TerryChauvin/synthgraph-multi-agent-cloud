@@ -1,0 +1,99 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC7503881</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC7503881 — In-Situ Synthesis and Characterization of Chitosan/Hydroxyapatite Nanocomposite Coatings to Improve the Bioactive Properties of Ti6Al4V Substrates.</h1>
+<h2>Voie : Ti6Al4V_alkali</h2>
+<pre class="mermaid">flowchart LR
+  R17673([&quot;Ti6Al4V plate&lt;br/&gt;20 mm × 10 mm × 2 mm&quot;]):::reactif
+  R17673 --&gt;|&quot;substrate&quot;| S21048
+  R17674([&quot;sodium hydroxide&lt;br/&gt;5 M&quot;]):::reactif
+  R17674 --&gt;|&quot;etchant&quot;| S21048
+  R17675([&quot;acetone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17675 --&gt;|&quot;wash&quot;| S21048
+  R17676([&quot;distilled water (dH2O)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17676 --&gt;|&quot;wash&quot;| S21048
+  S21048[&quot;&lt;b&gt;1. grind&lt;/b&gt;&lt;br/&gt;grit_size : 240–1000&quot;]:::etape
+  S21048 --&gt; S21049
+  S21049[&quot;&lt;b&gt;2. sonicate&lt;/b&gt;&lt;br/&gt;duration : 30 min&lt;br/&gt;solvent : acetone&quot;]:::etape
+  S21049 --&gt; S21050
+  S21050[&quot;&lt;b&gt;3. react&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 48 h&lt;br/&gt;relative_humidity : 27 %&quot;]:::etape
+  S21050 --&gt; S21051
+  S21051[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : dH2O&quot;]:::etape
+  S21051 --&gt; S21052
+  S21052[&quot;&lt;b&gt;5. dry&lt;/b&gt;&lt;br/&gt;temperature : 37 °C&lt;br/&gt;duration : 24 h&lt;br/&gt;atmosphere : air&quot;]:::etape
+  S21052 --&gt; M
+  M{{&quot;alkali-treated Ti6Al4V substrate (sodium titanate…&lt;br/&gt;&quot;}}:::materiau
+  O82884[&quot;XRD_phase : sodium titanate peaks at 2θ =…&quot;]:::resultat
+  M -.-&gt; O82884
+  O82885[&quot;pore_diameter : about 100 to 300 nm&quot;]:::resultat
+  M -.-&gt; O82885
+  O82886[&quot;water_contact_angle : 16.62 °&quot;]:::resultat
+  M -.-&gt; O82886
+  O82887[&quot;surface_roughness_Ra : 8 µm&quot;]:::resultat
+  M -.-&gt; O82887
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CS-10HA</h2>
+<pre class="mermaid">flowchart LR
+  R17677([&quot;chitosan (molecular weight ca. 300 kDa)&lt;br/&gt;10 wt.%&quot;]):::reactif
+  R17677 --&gt;|&quot;polymer&quot;| S21053
+  R17678([&quot;acetic acid&lt;br/&gt;1 wt.%&quot;]):::reactif
+  R17678 --&gt;|&quot;acid&quot;| S21053
+  R17679([&quot;calcium nitrate tetrahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17679 --&gt;|&quot;precursor&quot;| S21053
+  R17680([&quot;di-ammonium hydrogen phosphate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17680 --&gt;|&quot;precursor&quot;| S21053
+  R17681([&quot;distilled water (dH2O)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17681 --&gt;|&quot;solvent&quot;| S21053
+  R17682([&quot;sodium hydroxide&lt;br/&gt;1 M&quot;]):::reactif
+  R17682 --&gt;|&quot;base&quot;| S21053
+  R17683([&quot;Ti6Al4V_alkali&lt;br/&gt;alkali-treated Ti6Al4V plates…&quot;]):::reactif
+  R17683 --&gt;|&quot;intermediate&quot;| S21053
+  S21053[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;temperature : 50 °C&lt;br/&gt;duration : 60 min&quot;]:::etape
+  S21053 --&gt; S21054
+  S21054[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;temperature : 25 °C&quot;]:::etape
+  S21054 --&gt; S21055
+  S21055[&quot;&lt;b&gt;3. dissolve&lt;/b&gt;&lt;br/&gt;duration : 24 h&lt;br/&gt;temperature : 25 °C&quot;]:::etape
+  S21055 --&gt; S21056
+  S21056[&quot;&lt;b&gt;4. add&lt;/b&gt;&quot;]:::etape
+  S21056 --&gt; S21057
+  S21057[&quot;&lt;b&gt;5. stir&lt;/b&gt;&lt;br/&gt;duration : 4 h&quot;]:::etape
+  S21057 --&gt; S21058
+  S21058[&quot;&lt;b&gt;6. add&lt;/b&gt;&lt;br/&gt;addition_rate : drop by drop&lt;br/&gt;ha_content : 10 wt.%&lt;br/&gt;molar_ratio : Ca/P = 1.67&quot;]:::etape
+  S21058 --&gt; S21059
+  S21059[&quot;&lt;b&gt;7. stir&lt;/b&gt;&lt;br/&gt;duration : 24 h&quot;]:::etape
+  S21059 --&gt; S21060
+  S21060[&quot;&lt;b&gt;8. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 10&quot;]:::etape
+  S21060 --&gt; S21061
+  S21061[&quot;&lt;b&gt;9. deposit&lt;/b&gt;&lt;br/&gt;temperature : 25 °C&lt;br/&gt;withdrawal_speed : 60 mm/min&lt;br/&gt;repetitions : two times&quot;]:::etape
+  S21061 --&gt; S21062
+  S21062[&quot;&lt;b&gt;10. dry&lt;/b&gt;&lt;br/&gt;temperature : 37 °C&lt;br/&gt;duration : 2 h&lt;br/&gt;atmosphere : air&lt;br/&gt;relative_humidity : 27 %&quot;]:::etape
+  S21062 --&gt; S21063
+  S21063[&quot;&lt;b&gt;11. age&lt;/b&gt;&lt;br/&gt;temperature : 37 °C&lt;br/&gt;duration : 48 h&quot;]:::etape
+  S21063 --&gt; M
+  M{{&quot;chitosan/hydroxyapatite nanocomposite coating wit…&lt;br/&gt;&quot;}}:::materiau
+  O82888[&quot;Ca_P_ratio_EDS_coating : 1.74&quot;]:::resultat
+  M -.-&gt; O82888
+  O82889[&quot;HA_crystallinity_washed_powder : 23 %&quot;]:::resultat
+  M -.-&gt; O82889
+  O82890[&quot;HA_crystallite_size_washed_powder : 33 nm&quot;]:::resultat
+  M -.-&gt; O82890
+  O82891[&quot;water_contact_angle : 65.91 °&quot;]:::resultat
+  M -.-&gt; O82891
+  O82892[&quot;adhesion_strength : 2.05 MPa&quot;]:::resultat
+  M -.-&gt; O82892
+  O82893[&quot;surface_roughness_Ra : 2.88 µm&quot;]:::resultat
+  M -.-&gt; O82893
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13320{{&quot;CS-10HA&quot;}}:::materiau
+  B13321[&quot;CS-50HA&quot;]:::etape
+  B13320 --&gt;|&quot;ha_content = 50 wt.%&lt;br/&gt;chitosan (molecular weig… = amount modified (not sta…&lt;br/&gt;calcium nitrate tetrahyd… = amount modified (not sta…&lt;br/&gt;di-ammonium hydrogen pho… = amount modified (not sta…&quot;| B13321
+  B13322[&quot;CS-60HA&quot;]:::etape
+  B13320 --&gt;|&quot;ha_content = 60 wt.%&lt;br/&gt;chitosan (molecular weig… = amount modified (not sta…&lt;br/&gt;calcium nitrate tetrahyd… = amount modified (not sta…&lt;br/&gt;di-ammonium hydrogen pho… = amount modified (not sta…&quot;| B13322
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
