@@ -4,7 +4,7 @@
 
 **A verifiable database of materials synthesis protocols, extracted from open-access papers by a multi-agent pipeline. Every value carries the verbatim quote that supports it.**
 
-![Publications](https://img.shields.io/badge/publications_closed-450_%2F_500-blue)
+![Publications](https://img.shields.io/badge/publications_closed-500_%2F_500-brightgreen)
 ![Routes](https://img.shields.io/badge/synthesis_routes-3708-green)
 ![Quotes](https://img.shields.io/badge/audited_quotes_found_verbatim-100%25-brightgreen)
 ![Licence](https://img.shields.io/badge/sources-Creative_Commons-lightgrey)
@@ -26,14 +26,14 @@ The goal is that a chemist can **reproduce a material from the database alone** 
 
 | | |
 |---|---|
-| Publications closed (all passes done) | 450 (450 in the nine audited batches) |
-| Synthesis routes | 4 789 (1 238 base routes, 3 551 branches) |
-| Steps / reagents / parameters | 8 535 / 6 893 / 11 273 |
-| Measured outcomes | 35 699 |
-| Fidelity and science findings | 3 038 |
-| Annotations (interpretations, kept apart from data) | 9 529 |
+| Publications closed (all passes done) | 500 (500 in the ten audited batches) — target reached |
+| Synthesis routes | 5 338 (1 382 base routes, 3 956 branches) |
+| Steps / reagents / parameters | 9 546 / 7 714 / 12 731 |
+| Measured outcomes | 39 350 |
+| Fidelity findings / science verdicts | 4 345 / 2 988 |
+| Annotations (interpretations, kept apart from data) | 10 582 |
 
-Figures as of 25 October 2026 (`synthese.db`, read-only queries on closed publications). The target is **500 publications**, built in audited batches of 50.
+Figures as of 25 October 2026 (`synthese.db`, read-only queries on closed publications). The target of **500 publications**, built in audited batches of 50, is reached.
 
 Material families covered: MOFs and ZIFs, metal nanoparticles, oxides, perovskites, zeolites and mesoporous silicas, chalcogenides and phosphides, carbons, electrode materials, ceramics, 2D materials, quantum dots.
 
@@ -90,6 +90,8 @@ Batch 7 (papers 301–350, report `audits/palier_007_relecture.md`): 9 238 quote
 Batch 8 (papers 351–400, report `audits/palier_008_relecture.md`): 9 859 quotes found verbatim (100 %), 1 181 values re-read by hand with 1 wrong (corrected), 437 fidelity findings (median 9 per paper, 11 "wrong"), 0 blocking audit finding.
 
 Batch 9 (papers 401–450, report `audits/palier_009_relecture.md`): 9 719 quotes found verbatim (100 %), 1 258 values re-read by hand with 0 wrong, 424 fidelity findings (median 8.5 per paper, 4 "wrong"), 0 blocking audit finding.
+
+Batch 10 (papers 451–500, report `audits/palier_010_relecture.md`): 9 498 quotes found verbatim (100 %), 1 222 values re-read by hand with 3 wrong (corrected), 446 fidelity findings (median 9 per paper, 11 "wrong"), 0 blocking audit finding.
 
 Most "doubtful" verdicts come from the papers themselves, not from the extraction. Typical examples: a reported cobalt content heavier than pure cobalt, a "HeNe laser at 532 nm", an aqueous dispersion "stirred at 350 °C". These are kept as written and flagged.
 
