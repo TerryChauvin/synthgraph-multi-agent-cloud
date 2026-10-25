@@ -1,0 +1,138 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC11935935</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC11935935 — Atomic Layer Deposition Derived Zirconia Coatings on Ni-Rich Cathodes in Solid-State Batteries: Correlation Between Surface Constitution and Cycling Performance.</h1>
+<h2>Voie : Z250</h2>
+<pre class="mermaid">flowchart LR
+  R18087([&quot;LiNi0.85Co0.10Mn0.05O2 (NCM85)&lt;br/&gt;2–8 g&quot;]):::reactif
+  R18087 --&gt;|&quot;substrate&quot;| S21390
+  R18088([&quot;tetrakis(ethylmethylamido)zirconium(IV) (TEM…&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18088 --&gt;|&quot;precursor&quot;| S21390
+  R18089([&quot;ozone&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18089 --&gt;|&quot;oxidant&quot;| S21390
+  R18090([&quot;oxygen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18090 --&gt;|&quot;gas&quot;| S21390
+  R18091([&quot;nitrogen&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18091 --&gt;|&quot;gas&quot;| S21390
+  S21390[&quot;&lt;b&gt;1. anneal&lt;/b&gt;&lt;br/&gt;temperature : 750 °C&lt;br/&gt;duration : 3 h&lt;br/&gt;atmosphere : O2 flow&lt;br/&gt;heating_rate : 5 °C min−1&lt;br/&gt;cooling_rate : 5 °C min−1&quot;]:::etape
+  S21390 --&gt; S21391
+  S21391[&quot;&lt;b&gt;2. load&lt;/b&gt;&lt;br/&gt;mass : 2–8 g&quot;]:::etape
+  S21391 --&gt; S21392
+  S21392[&quot;&lt;b&gt;3. heat&lt;/b&gt;&lt;br/&gt;temperature : 250 °C&lt;br/&gt;duration : 1 h&lt;br/&gt;atmosphere : flushing with N2&quot;]:::etape
+  S21392 --&gt; S21393
+  S21393[&quot;&lt;b&gt;4. deposit&lt;/b&gt;&lt;br/&gt;repetitions : 15 ALD cycles&lt;br/&gt;temperature : 250 °C&lt;br/&gt;precursor_container_temp… : 105 °C&lt;br/&gt;pulse_count : 100 pulses&lt;br/&gt;pulse_duration : 0.1 s&lt;br/&gt;purge_duration : 2 s&quot;]:::etape
+  S21393 --&gt; M
+  M{{&quot;ZrO2-coated LiNi0.85Co0.10Mn0.05O2 (ZrO2@NCM85), …&lt;br/&gt;ZrO2@LiNi0.85Co0.10Mn0.05O2&quot;}}:::materiau
+  O84730[&quot;zro2_mass_fraction : 1.2 wt%&quot;]:::resultat
+  M -.-&gt; O84730
+  O84731[&quot;estimated_film_thickness_from_ICP : 2.9 nm&quot;]:::resultat
+  M -.-&gt; O84731
+  O84732[&quot;ald_growth_per_cycle : 0.09 wt% ZrO2 per cycle&quot;]:::resultat
+  M -.-&gt; O84732
+  O84733[&quot;ald_growth_rate : 0.21 nm per ALD cycle&quot;]:::resultat
+  M -.-&gt; O84733
+  O84734[&quot;zro2_nanocrystal_size : 4 to 5 nm&quot;]:::resultat
+  M -.-&gt; O84734
+  O84735[&quot;xps_zr3d5_2_binding_energy : 181.8 eV&quot;]:::resultat
+  M -.-&gt; O84735
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13574{{&quot;Z250&quot;}}:::materiau
+  B13575[&quot;ALD2&quot;]:::etape
+  B13574 --&gt;|&quot;repetitions = 2 ALD cycles&quot;| B13575
+  B13576[&quot;ALD5&quot;]:::etape
+  B13574 --&gt;|&quot;repetitions = 5 ALD cycles&quot;| B13576
+  B13577[&quot;ALD10&quot;]:::etape
+  B13574 --&gt;|&quot;repetitions = 10 ALD cycles&quot;| B13577
+  B13578[&quot;Z300&quot;]:::etape
+  B13574 --&gt;|&quot;post_annealing_temperatu… = 300 °C&quot;| B13578
+  B13579[&quot;Z400&quot;]:::etape
+  B13578 --&gt;|&quot;temperature = 400 °C&quot;| B13579
+  B13580[&quot;Z550&quot;]:::etape
+  B13578 --&gt;|&quot;temperature = 550 °C&quot;| B13580
+  B13581[&quot;Z700&quot;]:::etape
+  B13578 --&gt;|&quot;temperature = 700 °C&quot;| B13581
+  B13582[&quot;Z350-10cyc&quot;]:::etape
+  B13578 --&gt;|&quot;repetitions = 10 ALD cycles&lt;br/&gt;temperature = 350 °C&quot;| B13582
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : SSB_cell</h2>
+<pre class="mermaid">flowchart LR
+  R18092([&quot;ZrO2@NCM85 (Z250–Z700) or uncoated NCM85&lt;br/&gt;69 parts by weight (CAM:LPSCl…&quot;]):::reactif
+  R18092 --&gt;|&quot;intermediate&quot;| S21399
+  R18093([&quot;argyrodite solid electrolyte LPSCl (cathode …&lt;br/&gt;30 parts by weight&quot;]):::reactif
+  R18093 --&gt;|&quot;electrolyte&quot;| S21399
+  R18094([&quot;Super C65 carbon black (cathode composite)&lt;br/&gt;1 part by weight&quot;]):::reactif
+  R18094 --&gt;|&quot;conductive_additive&quot;| S21399
+  R18095([&quot;carbon-coated Li4Ti5O12 (LTO)&lt;br/&gt;30 parts by weight&quot;]):::reactif
+  R18095 --&gt;|&quot;active_material&quot;| S21399
+  R18096([&quot;LPSCl (anode composite)&lt;br/&gt;65 parts by weight&quot;]):::reactif
+  R18096 --&gt;|&quot;electrolyte&quot;| S21399
+  R18097([&quot;Super C65 carbon black (anode composite)&lt;br/&gt;5 parts by weight&quot;]):::reactif
+  R18097 --&gt;|&quot;conductive_additive&quot;| S21399
+  R18098([&quot;LPSCl (separator layer)&lt;br/&gt;100 mg&quot;]):::reactif
+  R18098 --&gt;|&quot;separator&quot;| S21399
+  R18099([&quot;anode composite (in the pellet stack)&lt;br/&gt;65 mg&quot;]):::reactif
+  R18099 --&gt;|&quot;intermediate&quot;| S21399
+  R18100([&quot;cathode composite (in the pellet stack)&lt;br/&gt;11–12 mg&quot;]):::reactif
+  R18100 --&gt;|&quot;intermediate&quot;| S21399
+  R18101([&quot;argon&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18101 --&gt;|&quot;gas&quot;| S21399
+  S21399[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;weight_ratio : 69:30:1&lt;br/&gt;duration : 30 min&lt;br/&gt;rotation_speed : 140 rpm&lt;br/&gt;ball_count : 10 balls&lt;br/&gt;atmosphere : Ar&quot;]:::etape
+  S21399 --&gt; S21400
+  S21400[&quot;&lt;b&gt;2. mix&lt;/b&gt;&lt;br/&gt;weight_ratio : 30:65:5&quot;]:::etape
+  S21400 --&gt; S21401
+  S21401[&quot;&lt;b&gt;3. press&lt;/b&gt;&lt;br/&gt;diameter : 10 mm&lt;br/&gt;mass : 100 mg&lt;br/&gt;pressure : 62 MPa&quot;]:::etape
+  S21401 --&gt; S21402
+  S21402[&quot;&lt;b&gt;4. press&lt;/b&gt;&lt;br/&gt;mass_anode_composite : 65 mg&lt;br/&gt;mass_cathode_composite : 11–12 mg&lt;br/&gt;pressure : 437 MPa&quot;]:::etape
+  S21402 --&gt; S21403
+  S21403[&quot;&lt;b&gt;5. cycle&lt;/b&gt;&lt;br/&gt;temperature : 45 °C&lt;br/&gt;stack_pressure : 81 MPa&lt;br/&gt;voltage_window : 1.35 to 2.75 V versus Li4Ti5O…&quot;]:::etape
+  S21403 --&gt; S21404
+  S21404[&quot;&lt;b&gt;6. test&lt;/b&gt;&lt;br/&gt;c_rate : 0.1, 0.2, 0.5 and 1C&lt;br/&gt;current_density_at_1c_ra… : 190 mA gCAM−1&lt;br/&gt;repetitions : 200 cycles&quot;]:::etape
+  S21404 --&gt; M
+  M{{&quot;bulk-type solid-state battery pellet cell (CAM co…&lt;br/&gt;&quot;}}:::materiau
+  O84810[&quot;theoretical_areal_capacity_cathode : 2.9 mAh cm−2&quot;]:::resultat
+  M -.-&gt; O84810
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : LIB_halfcell</h2>
+<pre class="mermaid">flowchart LR
+  R18102([&quot;NCM85 or ZrO2@NCM85 CAM&lt;br/&gt;94 parts by weight (CAM:Super…&quot;]):::reactif
+  R18102 --&gt;|&quot;intermediate&quot;| S21405
+  R18103([&quot;Super C65 carbon black&lt;br/&gt;3 parts by weight&quot;]):::reactif
+  R18103 --&gt;|&quot;conductive_additive&quot;| S21405
+  R18104([&quot;polyvinylidene fluoride (PVDF)&lt;br/&gt;3 parts by weight&quot;]):::reactif
+  R18104 --&gt;|&quot;binder&quot;| S21405
+  R18105([&quot;N-methyl-2-pyrrolidone (NMP)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18105 --&gt;|&quot;solvent&quot;| S21405
+  R18106([&quot;aluminium foil&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18106 --&gt;|&quot;substrate&quot;| S21405
+  R18107([&quot;glass fiber separator GF/D&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18107 --&gt;|&quot;separator&quot;| S21405
+  R18108([&quot;1m LiPF6 in 3:7 by weight ethylene carbonate…&lt;br/&gt;95 μL&quot;]):::reactif
+  R18108 --&gt;|&quot;electrolyte&quot;| S21405
+  R18109([&quot;lithium metal anode&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18109 --&gt;|&quot;counter_electrode&quot;| S21405
+  S21405[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;weight_ratio : 94:3:3&quot;]:::etape
+  S21405 --&gt; S21406
+  S21406[&quot;&lt;b&gt;2. deposit&lt;/b&gt;&quot;]:::etape
+  S21406 --&gt; S21407
+  S21407[&quot;&lt;b&gt;3. dry&lt;/b&gt;&lt;br/&gt;temperature : 120 °C&lt;br/&gt;atmosphere : vacuum&quot;]:::etape
+  S21407 --&gt; S21408
+  S21408[&quot;&lt;b&gt;4. calender&lt;/b&gt;&lt;br/&gt;line_load : 15 N mm−1&quot;]:::etape
+  S21408 --&gt; S21409
+  S21409[&quot;&lt;b&gt;5. punch&lt;/b&gt;&lt;br/&gt;diameter : 12 mm&lt;br/&gt;areal_loading : 8 mgCAM cm−2&quot;]:::etape
+  S21409 --&gt; S21410
+  S21410[&quot;&lt;b&gt;6. cycle&lt;/b&gt;&lt;br/&gt;c_rate : 0.1C&lt;br/&gt;temperature : 45 °C&lt;br/&gt;voltage_window : 2.9–4.3 V versus Li+/Li&quot;]:::etape
+  S21410 --&gt; M
+  M{{&quot;Li-ion half-cell with liquid electrolyte (NCM85 o…&lt;br/&gt;&quot;}}:::materiau
+  O84811[&quot;areal_loading : 8 mgCAM cm−2&quot;]:::resultat
+  M -.-&gt; O84811
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
