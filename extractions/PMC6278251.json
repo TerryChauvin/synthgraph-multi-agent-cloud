@@ -180,6 +180,18 @@
        "name": "addition_rate",
        "quote": "The solution based on phosphate and zinc was slowly added into the solution based on calcium.",
        "value_text": "slowly"
+      },
+      {
+       "name": "molar_ratio",
+       "value_num": 1.67,
+       "quote": "The molar ratio of precursors, [Ca + Zn]/P, in the ZnHAp sol was minded to be equal to 1.67",
+       "value_text": "(Ca + Zn)/P"
+      },
+      {
+       "name": "zn_fraction",
+       "value_num": 0.07,
+       "quote": "with various Zn/(Zn + Ca) ion ratios (xZn = 0 and xZn = 0.07)",
+       "value_text": "Zn/(Zn + Ca)"
       }
      ],
      "equipment": [],
@@ -297,9 +309,9 @@
     },
     {
      "technique": "ultrasound velocity (pulse-echo) and FEM modelling",
-     "result": "ultrasonic velocity of the dispersion; elastic parameters (E, ν) deduced from finite-element modelling in COMSOL",
+     "result": "ultrasonic velocity of the dispersion (mesure) ; couple (E, ν) ajusté par modélisation par éléments finis (COMSOL) sur la vitesse mesurée (Fig. 10–11)",
      "instrument": "JSR Ultrasonics DPR300 pulser-receiver and Tektronix oscilloscope",
-     "conditions": "suspension stirred magnetically for 30 min, then placed in a thermally controlled container; FEM at 5 MHz (3.75–6.25 MHz)",
+     "conditions": "suspension stirred magnetically for 30 min, then placed in a thermally controlled container; FEM at 5 MHz (3.75–6.25 MHz) Vitesses simulées (sortie de simulation FEM à paramètres imposés, non mesurées) : Tableau 2, E = 6 GPa, ν = 0,3, R = 9,7 nm, 5 % vol. : 1460,5 m/s de 3,75 à 6,25 MHz ; Tableau 3, grille E = 3–6 GPa × ν = 0,2–0,3 : 1460,5 à 1492,5 m/s (1476,2 m/s pour E = 3, ν = 0,3 ; 1460,5 m/s pour E = 6, ν = 0,3).",
      "quote": "The ultrasound characterization of HAp and ZnHAp suspensions were mixed continuously on a magnetic stirrer for 30 min."
     }
    ],
@@ -371,88 +383,74 @@
      "value_text": "1476.02 ± 0.15 m/s"
     },
     {
-     "property": "FEM_velocity_biphasic_medium_3.75_MHz",
-     "quote": "3.7500 × 106 | 1454.0 | 1460.5",
-     "value_num": 1460.5,
-     "unit": "m/s"
+     "property": "XPS_Ca2p1/2_peak",
+     "value_num": 350.74,
+     "unit": "eV",
+     "from_figure": "Fig. 5b",
+     "quote": "The high-resolution XPS spectra for Ca 2p of HAp (a) and 7HApZn samples (b)."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_4.375_MHz",
-     "quote": "4.3750 × 106 | 1454.1 | 1460.5",
-     "value_num": 1460.5,
-     "unit": "m/s"
+     "property": "XPS_Ca2p3/2_peak",
+     "value_num": 347.24,
+     "unit": "eV",
+     "from_figure": "Fig. 5b",
+     "quote": "The high-resolution XPS spectra for Ca 2p of HAp (a) and 7HApZn samples (b)."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_5.0_MHz",
-     "quote": "5.0000 × 106 | 1454.1 | 1460.5",
-     "value_num": 1460.5,
-     "unit": "m/s"
+     "property": "XPS_C1s_component_1",
+     "value_num": 284.8,
+     "unit": "eV",
+     "from_figure": "Fig. 3b",
+     "quote": "The high-resolution XPS spectra for C 1s of HAp (a) and 7ZnHAp (b) samples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_5.625_MHz",
-     "quote": "5.6250 × 106 | 1454.1 | 1460.5",
-     "value_num": 1460.5,
-     "unit": "m/s"
+     "property": "XPS_C1s_component_2",
+     "value_num": 286.84,
+     "unit": "eV",
+     "from_figure": "Fig. 3b",
+     "quote": "The high-resolution XPS spectra for C 1s of HAp (a) and 7ZnHAp (b) samples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_6.25_MHz",
-     "quote": "6.2500 × 106 | 1454.1 | 1460.5",
-     "value_num": 1460.5,
-     "unit": "m/s"
+     "property": "XPS_C1s_component_3",
+     "value_num": 289.06,
+     "unit": "eV",
+     "from_figure": "Fig. 3b",
+     "quote": "The high-resolution XPS spectra for C 1s of HAp (a) and 7ZnHAp (b) samples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_E3_nu0.2",
-     "quote": "E = 10 | 1458.6 | 1456.3 | 1454.1 | E = 3 | 1492.5 | 1484.3 | 1476.2",
-     "value_num": 1492.5,
-     "unit": "m/s"
+     "property": "XPS_C1s_component_4",
+     "value_num": 290.05,
+     "unit": "eV",
+     "from_figure": "Fig. 3b",
+     "quote": "The high-resolution XPS spectra for C 1s of HAp (a) and 7ZnHAp (b) samples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_E3_nu0.25",
-     "quote": "E = 10 | 1458.6 | 1456.3 | 1454.1 | E = 3 | 1492.5 | 1484.3 | 1476.2",
-     "value_num": 1484.3,
-     "unit": "m/s"
+     "property": "XPS_Zn2p3/2_component_1",
+     "value_num": 1022.15,
+     "unit": "eV",
+     "from_figure": "Fig. 7",
+     "quote": "The high-resolution XPS spectrum for Zn 2p of and 7HApZnsamples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_E3_nu0.3",
-     "quote": "E = 10 | 1458.6 | 1456.3 | 1454.1 | E = 3 | 1492.5 | 1484.3 | 1476.2",
-     "value_num": 1476.2,
-     "unit": "m/s"
+     "property": "XPS_Zn2p3/2_component_2",
+     "value_num": 1023.52,
+     "unit": "eV",
+     "from_figure": "Fig. 7",
+     "quote": "The high-resolution XPS spectrum for Zn 2p of and 7HApZnsamples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_E4_nu0.2",
-     "quote": "E = 11 | 1457.4 | 1455.3 | 1453.2 | E = 4 | 1480.2 | 1468.3 | 1468.3",
-     "value_num": 1480.2,
-     "unit": "m/s"
+     "property": "E_fitted_range_Fig11",
+     "value_text": "≈ 3.3–5.0",
+     "unit": "GPa",
+     "from_figure": "Fig. 11b",
+     "quote": "The dependence of Poisson coefficients (ν) and the Young (E) modulus for HAp (a) and 7ZnHAp (b)."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_E4_nu0.25",
-     "quote": "E = 11 | 1457.4 | 1455.3 | 1453.2 | E = 4 | 1480.2 | 1468.3 | 1468.3",
-     "value_num": 1468.3,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E4_nu0.3",
-     "quote": "E = 11 | 1457.4 | 1455.3 | 1453.2 | E = 4 | 1480.2 | 1468.3 | 1468.3",
-     "value_num": 1468.3,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E6_nu0.2",
-     "quote": "E = 12 | 1456.3 | 1454.4 | 1452.6 | E = 6 | 1468.3 | 1464.4 | 1460.5",
-     "value_num": 1468.3,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E6_nu0.25",
-     "quote": "E = 12 | 1456.3 | 1454.4 | 1452.6 | E = 6 | 1468.3 | 1464.4 | 1460.5",
-     "value_num": 1464.4,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E6_nu0.3",
-     "quote": "E = 12 | 1456.3 | 1454.4 | 1452.6 | E = 6 | 1468.3 | 1464.4 | 1460.5",
-     "value_num": 1460.5,
-     "unit": "m/s"
+     "property": "poisson_ratio_fitted_range_Fig11",
+     "value_text": "≈ 0.29–0.20 (décroît quand E croît)",
+     "unit": null,
+     "from_figure": "Fig. 11b",
+     "quote": "The dependence of Poisson coefficients (ν) and the Young (E) modulus for HAp (a) and 7ZnHAp (b)."
     }
    ],
    "missing_fields": [
@@ -479,6 +477,13 @@
      "parameter": "zinc nitrate hexahydrate",
      "value_text": "absent",
      "parent_value": "present (xZn = 0.07)",
+     "quote": "with various Zn/(Zn + Ca) ion ratios (xZn = 0 and xZn = 0.07)"
+    },
+    {
+     "parameter": "zn_fraction",
+     "step_order": 3,
+     "value_num": 0,
+     "parent_value": "0.07",
      "quote": "with various Zn/(Zn + Ca) ion ratios (xZn = 0 and xZn = 0.07)"
     }
    ],
@@ -521,6 +526,18 @@
        "name": "addition_rate",
        "quote": "The solution based on phosphate and zinc was slowly added into the solution based on calcium.",
        "value_text": "slowly"
+      },
+      {
+       "name": "molar_ratio",
+       "value_num": 1.67,
+       "quote": "The molar ratio of precursors, [Ca + Zn]/P, in the ZnHAp sol was minded to be equal to 1.67",
+       "value_text": "(Ca + Zn)/P"
+      },
+      {
+       "name": "zn_fraction",
+       "value_num": 0,
+       "quote": "with various Zn/(Zn + Ca) ion ratios (xZn = 0 and xZn = 0.07)",
+       "value_text": "Zn/(Zn + Ca)"
       }
      ],
      "equipment": [],
@@ -638,9 +655,9 @@
     },
     {
      "technique": "ultrasound velocity (pulse-echo) and FEM modelling",
-     "result": "ultrasonic velocity of the dispersion; elastic parameters (E, ν) deduced from finite-element modelling in COMSOL",
+     "result": "ultrasonic velocity of the dispersion (mesure) ; couple (E, ν) ajusté par modélisation par éléments finis (COMSOL) sur la vitesse mesurée (Fig. 10–11)",
      "instrument": "JSR Ultrasonics DPR300 pulser-receiver and Tektronix oscilloscope",
-     "conditions": "suspension stirred magnetically for 30 min, then placed in a thermally controlled container; FEM at 5 MHz (3.75–6.25 MHz)",
+     "conditions": "suspension stirred magnetically for 30 min, then placed in a thermally controlled container; FEM at 5 MHz (3.75–6.25 MHz) Vitesses simulées (sortie de simulation FEM à paramètres imposés, non mesurées) : Tableau 2, E = 10 GPa, ν = 0,3, R = 13 nm, 5 % vol. : 1454,0 m/s à 3,75 MHz et 1454,1 m/s de 4,375 à 6,25 MHz ; Tableau 3, grille E = 10–12 GPa × ν = 0,2–0,3 : 1452,6 à 1458,6 m/s (1454,1 m/s pour E = 10, ν = 0,3).",
      "quote": "The ultrasound characterization of HAp and ZnHAp suspensions were mixed continuously on a magnetic stirrer for 30 min."
     }
    ],
@@ -712,88 +729,46 @@
      "value_text": "1454.17 ± 1.06 m/s"
     },
     {
-     "property": "FEM_velocity_biphasic_medium_3.75_MHz",
-     "quote": "3.7500 × 106 | 1454.0 | 1460.5",
-     "value_num": 1454.0,
-     "unit": "m/s"
+     "property": "XPS_C1s_component_1",
+     "value_num": 284.81,
+     "unit": "eV",
+     "from_figure": "Fig. 3a",
+     "quote": "The high-resolution XPS spectra for C 1s of HAp (a) and 7ZnHAp (b) samples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_4.375_MHz",
-     "quote": "4.3750 × 106 | 1454.1 | 1460.5",
-     "value_num": 1454.1,
-     "unit": "m/s"
+     "property": "XPS_C1s_component_2",
+     "value_num": 286.61,
+     "unit": "eV",
+     "from_figure": "Fig. 3a",
+     "quote": "The high-resolution XPS spectra for C 1s of HAp (a) and 7ZnHAp (b) samples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_5.0_MHz",
-     "quote": "5.0000 × 106 | 1454.1 | 1460.5",
-     "value_num": 1454.1,
-     "unit": "m/s"
+     "property": "XPS_C1s_component_3",
+     "value_num": 288.59,
+     "unit": "eV",
+     "from_figure": "Fig. 3a",
+     "quote": "The high-resolution XPS spectra for C 1s of HAp (a) and 7ZnHAp (b) samples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_5.625_MHz",
-     "quote": "5.6250 × 106 | 1454.1 | 1460.5",
-     "value_num": 1454.1,
-     "unit": "m/s"
+     "property": "XPS_C1s_component_4",
+     "value_num": 290.09,
+     "unit": "eV",
+     "from_figure": "Fig. 3a",
+     "quote": "The high-resolution XPS spectra for C 1s of HAp (a) and 7ZnHAp (b) samples."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_6.25_MHz",
-     "quote": "6.2500 × 106 | 1454.1 | 1460.5",
-     "value_num": 1454.1,
-     "unit": "m/s"
+     "property": "E_fitted_range_Fig11",
+     "value_text": "≈ 10–12",
+     "unit": "GPa",
+     "from_figure": "Fig. 11a",
+     "quote": "The dependence of Poisson coefficients (ν) and the Young (E) modulus for HAp (a) and 7ZnHAp (b)."
     },
     {
-     "property": "FEM_velocity_biphasic_medium_E10_nu0.2",
-     "quote": "E = 10 | 1458.6 | 1456.3 | 1454.1 | E = 3 | 1492.5 | 1484.3 | 1476.2",
-     "value_num": 1458.6,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E10_nu0.25",
-     "quote": "E = 10 | 1458.6 | 1456.3 | 1454.1 | E = 3 | 1492.5 | 1484.3 | 1476.2",
-     "value_num": 1456.3,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E10_nu0.3",
-     "quote": "E = 10 | 1458.6 | 1456.3 | 1454.1 | E = 3 | 1492.5 | 1484.3 | 1476.2",
-     "value_num": 1454.1,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E11_nu0.2",
-     "quote": "E = 11 | 1457.4 | 1455.3 | 1453.2 | E = 4 | 1480.2 | 1468.3 | 1468.3",
-     "value_num": 1457.4,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E11_nu0.25",
-     "quote": "E = 11 | 1457.4 | 1455.3 | 1453.2 | E = 4 | 1480.2 | 1468.3 | 1468.3",
-     "value_num": 1455.3,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E11_nu0.3",
-     "quote": "E = 11 | 1457.4 | 1455.3 | 1453.2 | E = 4 | 1480.2 | 1468.3 | 1468.3",
-     "value_num": 1453.2,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E12_nu0.2",
-     "quote": "E = 12 | 1456.3 | 1454.4 | 1452.6 | E = 6 | 1468.3 | 1464.4 | 1460.5",
-     "value_num": 1456.3,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E12_nu0.25",
-     "quote": "E = 12 | 1456.3 | 1454.4 | 1452.6 | E = 6 | 1468.3 | 1464.4 | 1460.5",
-     "value_num": 1454.4,
-     "unit": "m/s"
-    },
-    {
-     "property": "FEM_velocity_biphasic_medium_E12_nu0.3",
-     "quote": "E = 12 | 1456.3 | 1454.4 | 1452.6 | E = 6 | 1468.3 | 1464.4 | 1460.5",
-     "value_num": 1452.6,
-     "unit": "m/s"
+     "property": "poisson_ratio_fitted_range_Fig11",
+     "value_text": "≈ 0.29–0.26 (décroît quand E croît)",
+     "unit": null,
+     "from_figure": "Fig. 11a",
+     "quote": "The dependence of Poisson coefficients (ν) and the Young (E) modulus for HAp (a) and 7ZnHAp (b)."
     }
    ]
   }
@@ -819,13 +794,13 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Les deux échantillons sont de l'hydroxyapatite hexagonale monophasée (P63/m, Rwp = 2,4121 % pour HAp et 2,3299 % pour 7ZnHAp), mais les pics de diffraction s'élargissent avec le zinc, ce que les auteurs attribuent à une plus petite taille de cristallites. En XPS, les pics P 2p passent de 134,13 et 133,18 eV (HAp) à 133,78 et 132,91 eV (7ZnHAp), et le pic O 1s se dédouble pour 7ZnHAp (531,07 et 532,67 eV) alors que HAp n'en montre qu'un (531,4 eV). Le modèle ultrasonore donne un module d'Young plus faible pour 7ZnHAp (6 GPa contre 10 GPa) avec un rayon de particule plus petit (9,7 nm contre 13 nm), et les auteurs concluent que le gel dopé est plus stable.",
+   "text": "Les deux échantillons sont de l'hydroxyapatite hexagonale monophasée (P63/m, Rwp = 2,4121 % pour HAp et 2,3299 % pour 7ZnHAp), mais les pics de diffraction s'élargissent avec le zinc, ce que les auteurs attribuent à une plus petite taille de cristallites. En XPS, les pics P 2p passent de 134,13 et 133,18 eV (HAp) à 133,78 et 132,91 eV (7ZnHAp), les pics Ca 2p de la Fig. 5 de 350,94 et 347,4 eV (HAp) à 350,74 et 347,24 eV (7ZnHAp), et le pic O 1s se dédouble pour 7ZnHAp (531,07 et 532,67 eV) alors que HAp n'en montre qu'un (531,4 eV). Côté ultrasons, la vitesse mesurée est plus élevée pour 7ZnHAp (1476,02 contre 1454,17 m/s) et l'ajustement (E, ν) des Fig. 10–11 donne un module d'Young plus faible pour 7ZnHAp (lecture graphique ≈ 3,3–5,0 GPa contre ≈ 10–12 GPa pour HAp). Les valeurs de 10 GPa (HAp) et 6 GPa (7ZnHAp) du texte et du tableau 2, de même que les rayons de 13 et 9,7 nm, sont des paramètres d'entrée de la simulation, pas des résultats ; la simulation de 7ZnHAp à 6 GPa (1460,5 m/s) ne reproduit pas la vitesse mesurée. Les auteurs concluent que le gel dopé est plus stable.",
    "quote": "The peaks become slightly broad when the zinc concentration increased from xZn = 0 to xZn = 0.07."
   },
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "L'introduction de 7 % de zinc va avec des cristallites plus petites (pics plus larges), une baisse de l'énergie de liaison des pics Ca 2p et P 2p et une vitesse ultrasonore plus élevée pour le gel dopé (1476,02 contre 1454,17 m/s), lue par les auteurs comme une meilleure stabilité.",
+   "text": "L'introduction de zinc (xZn = 0,07) va avec des pics de diffraction plus larges (cristallites plus petites selon les auteurs), une baisse de l'énergie de liaison des pics Ca 2p et P 2p et une vitesse ultrasonore expérimentale plus élevée pour le gel dopé (1476,02 contre 1454,17 m/s). Les auteurs ne fondent pas la « meilleure stabilité » du gel dopé sur la vitesse seule mais sur le couple (E, ν) ajusté (« the parameter pair (E, ν) increases with the stability of solutions ») et sur la taille de particule plus petite.",
    "quote": "The increase in stability could have been influenced by the lower particle size in the 7ZnHAp sample."
   },
   {
@@ -843,12 +818,37 @@
   {
    "type": "mecanisme_analyse",
    "route": "7ZnHAp",
-   "text": "L'article ne décrit aucun mécanisme de formation. On attend, probablement, une précipitation sol-gel : à pH 11, les ions phosphate (HPO4^2− / PO4^3−) réagissent avec Ca2+ pour former des particules d'apatite qui s'agrègent en gel ; le zinc Zn2+ se substituerait en partie à Ca2+ dans le réseau (rayon ionique plus petit), ce qui expliquerait l'élargissement des pics et la plus petite taille de cristallites. Le chauffage prolongé à 100 °C pendant 48 h favoriserait probablement le mûrissement et la cristallisation du gel. Le rapport (Ca + Zn)/P de 1,67 est le rapport stœchiométrique de l'hydroxyapatite."
+   "text": "Hypothèse de chimiste (critique scientifique) : l'article ne décrit aucun mécanisme. Le phosphate diammonique étant insoluble dans l'éthanol, la précipitation se fait probablement à l'ajout de NH4OH (pH ≈ 10–11, eau apportée par l'ammoniaque et par les sels hydratés) : Ca2+ et Zn2+ précipitent avec HPO4^2−/PO4^3− dissous au fur et à mesure (et à la surface des grains de phosphate) en un phosphate de calcium amorphe hydraté. Pendant le chauffage prolongé (≈ 78 °C à reflux, ou avec concentration par évaporation si le récipient est ouvert), l'amorphe se convertirait par dissolution–reprécipitation en apatite nanocristalline. Zn2+ (0,74 Å contre 1,00 Å pour Ca2+) se substituerait en partie au calcium et s'adsorberait en partie en surface ; il freine la croissance et diminue la cristallinité (raies plus larges), jusqu'à une limite d'environ 15 mol % (Ren et al., Acta Biomater. 2009 ; Sadat-Shojai et al., Acta Biomater. 2013). Le « gel » serait une pâte concentrée de nanocristaux agglomérés plutôt qu'un réseau sol-gel polymérique ; NH4NO3 est éliminé aux lavages. Le rapport (Ca + Zn)/P de 1,67 est le rapport stœchiométrique de l'hydroxyapatite."
   },
   {
    "type": "securite_analyse",
    "route": null,
-   "text": "Les solutions d'ammoniaque dégagent de l'ammoniac, irritant et corrosif (hotte). L'éthanol absolu à 100 °C pendant 48 h est inflammable et dépasse son point d'ébullition (environ 78 °C) : il faut un montage à reflux ou un récipient fermé adapté, jamais un récipient ouvert chauffé. Les nitrates sont des oxydants, à tenir à l'écart des solvants organiques en chauffage. Les nanoparticules d'hydroxyapatite sont des poudres fines à ne pas inhaler."
+   "text": "Les solutions d'ammoniaque dégagent de l'ammoniac, irritant et corrosif (hotte). L'éthanol absolu à 100 °C pendant 48 h est inflammable et dépasse son point d'ébullition (environ 78 °C) : il faut un montage à reflux ou un récipient fermé adapté, jamais un récipient ouvert chauffé. Les nitrates sont des oxydants, à tenir à l'écart des solvants organiques en chauffage. Les nanoparticules d'hydroxyapatite sont des poudres fines à ne pas inhaler. La précipitation forme du nitrate d'ammonium en quantité stœchiométrique (20 mol par mole d'apatite) dans un milieu contenant de l'éthanol et des nitrates : ne jamais évaporer à sec ni sécher à chaud le gel non lavé (mélange oxydant et combustible)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "HAp",
+   "text": "Hypothèse de chimiste (critique scientifique) : comme pour 7ZnHAp sans zinc, précipitation d'un phosphate de calcium amorphe à pH ≈ 11 puis conversion en apatite nanocristalline pendant le mûrissement à chaud ; les cristallites seraient plus grosses que celles de 7ZnHAp faute d'inhibition de la croissance par Zn2+. Ici aucune eau d'hydratation d'un sel de zinc n'accompagne le phosphate, qui reste donc en suspension dans l'éthanol absolu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le protocole écrit est physiquement incohérent sur trois points. (1) Il impose 48 h à 100 °C dans l'éthanol absolu, dont le point d'ébullition est 78,3 °C (NIST Chemistry WebBook), sans reflux ni récipient fermé décrit, alors que la Conclusion parle de « room temperature » ; le même groupe écrit « under atmospheric conditions at a temperature of 100 °C » pour la même voie dans l'eau (PMC6523083), d'où probablement une consigne de plaque sur récipient ouvert. (2) (NH4)2HPO4 est « dissolved in absolute ethanol » alors qu'il y est insoluble (PubChem, d'après le CRC Handbook) : la solution de phosphate est probablement une suspension, ou de l'eau non déclarée a été ajoutée. (3) Tenir un pH de 11 par NH4OH dans l'éthanol absolu à 100 °C n'a pas de sens usuel (électrode étalonnée en milieu aqueux, ammoniac qui s'échappe) et ni le volume ni la concentration de NH4OH ne sont donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "xZn est défini comme Zn/(Zn + Ca) mais aussi porté comme indice x de Ca10−xZnx : selon la lecture, le zinc représente 7 % des cations (Ca9,3Zn0,7) ou 0,7 % (Ca9,93Zn0,07), soit un facteur 10 ; le nom 7ZnHAp et la série 7ZnHAp/20ZnHAp du même groupe (PMC6523083) font préférer 7 %. Aucune analyse élémentaire ne mesure le zinc incorporé, et le pic Zn 2p3/2 à 1022,4 eV ne distingue pas la substitution de ZnO ou de Zn(OH)2 (Biesinger et al., Appl. Surf. Sci. 2010) ; les décalages de 0,3 à 0,35 eV de Ca 2p et P 2p sont comparés entre deux échantillons mesurés avec des réglages de source différents (mode FOCUS pour l'échantillon dopé seulement)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Le modèle ultrasonore n'est pas reproductible tel qu'écrit. E = 6 GPa retenu pour 7ZnHAp donne 1460,5 m/s (tableaux 2 et 3), 15,5 m/s sous la vitesse mesurée de 1476,02 ± 0,15 m/s ; la mesure correspond à E = 3 GPa, ν = 0,3 (1476,2 m/s, tableau 3). La légende du tableau 2 donne E = 2 GPa et R = 4,98 nm, et le tableau 3 répète 1468,3 m/s trois fois. Les masses volumiques de particules annoncées (1,0129 et 1,0062 kg/m3, l'hydroxyapatite dense faisant environ 3160 kg/m3) sont impossibles, et 153 sphères dans 100 × 100 × 2000 nm font 7,0 % en volume pour R = 13 nm et 2,9 % pour R = 9,7 nm, pas 5 %. La vitesse du tableau 3 baisse quand E ou ν augmente, tendance inverse de la limite de Wood/Urick d'une suspension de nanoparticules (Povey, 1997) ; une seule vitesse ne fixe pas deux inconnues (E, ν), tout couple de même compressibilité convient ; et les modules de 10 et 6 GPa sont 8 à 25 fois plus faibles que ceux de l'hydroxyapatite dense (Saber-Samandari et Gross, Acta Biomater. 2009)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "La conclusion « 7ZnHAp dispersions were much more stable » ne repose sur aucune mesure de stabilité colloïdale (sédimentation dans le temps, potentiel zêta, DLS en fonction du temps) : la vitesse du son reflète surtout la densité et la compressibilité moyennes, et l'idée que le couple (E, ν) augmente avec la stabilité n'a pas de base physique. L'écart de 21,9 m/s entre les deux dispersions équivaut à environ 6 °C d'écart de température de l'eau (NPL, d'après Del Grosso et Mader, 1972) et la température de mesure n'est pas donnée."
   }
  ],
  "method_sources": [
@@ -896,19 +896,19 @@
   },
   {
    "where": "HAp, pics Ca 2p",
-   "issue": "La phrase donne 350,94 eV (Ca 2p1/2) et 347,27 eV (Ca 2p3/2) pour « the HAp and 7ZnHAp samples », puis dit que les deux pics sont décalés vers des valeurs plus basses pour 7ZnHAp. Les valeurs chiffrées sont donc rattachées à HAp (référence) ; aucune valeur chiffrée n'est donnée pour 7ZnHAp."
+   "issue": "La phrase donne 350,94 eV (Ca 2p1/2) et 347,27 eV (Ca 2p3/2) pour « the HAp and 7ZnHAp samples … respectively ». 350,94 eV est bien celui de HAp (Fig. 5a). 347,27 eV, rattaché ici à HAp, ne correspond à aucun pic de la Fig. 5a (347,4 eV) et est proche du pic de 7ZnHAp (347,24 eV, Fig. 5b) : valeur du texte gardée sur HAp, désaccord entre texte et figure non résolu. Les valeurs de 7ZnHAp (350,74 et 347,24 eV) sont lues sur les étiquettes de la Fig. 5b."
   },
   {
    "where": "Tableau 2 (légende) contre texte",
-   "issue": "La légende du tableau 2 donne « E = 2 Gpa, ν = 0.3, R = 4.98 nm » pour les deux échantillons, alors que le texte donne HAp (E = 10 GPa, R = 13 nm) et 7ZnHAp (E = 6 GPa, R = 9.7 nm), et que le tableau 3 relie E = 10 (HAp) et E = 6 (7ZnHAp) à ν = 0,3 par 1454.1 et 1460.5 m/s, valeurs identiques à celles du tableau 2. Les valeurs de tableau sont extraites telles quelles ; les paramètres de la légende ne sont pas repris."
+   "issue": "La légende du tableau 2 donne « E = 2 Gpa, ν = 0.3, R = 4.98 nm » pour les deux échantillons, alors que le texte donne HAp (E = 10 GPa, R = 13 nm) et 7ZnHAp (E = 6 GPa, R = 9.7 nm), et que le tableau 3 relie E = 10 (HAp) et E = 6 (7ZnHAp) à ν = 0,3 par 1454.1 et 1460.5 m/s, valeurs identiques à celles du tableau 2. Les vitesses des tableaux 2 et 3 sont des sorties de simulation à paramètres imposés : résumées dans les conditions de la caractérisation ultrasonore, pas rangées comme résultats ; les paramètres de la légende ne sont pas repris."
   },
   {
    "where": "Tableau 3, rangée E = 4 (7ZnHAp)",
-   "issue": "La rangée donne 1480.2 | 1468.3 | 1468.3 : la valeur 1468.3 apparaît pour ν = 0,25 et ν = 0,3 et aussi pour ν = 0,2 à E = 6 ; probable erreur de recopie des auteurs, valeurs extraites telles quelles. Chaque rangée porte à gauche le bloc HAp et à droite le bloc 7ZnHAp, séparés par le second « E = » ; les rangées sont attribuées par ce second « E = »."
+   "issue": "La rangée E = 4 (7ZnHAp) donne 1480.2 | 1468.3 | 1468.3 : la valeur 1468.3 apparaît pour ν = 0,25 et ν = 0,3 et aussi pour ν = 0,2 à E = 6 ; probable erreur de recopie des auteurs. Chaque rangée porte à gauche le bloc HAp et à droite le bloc 7ZnHAp, séparés par le second « E = » ; les bornes de la grille sont reprises dans les conditions de la caractérisation ultrasonore."
   },
   {
    "where": "Vitesse expérimentale",
-   "issue": "Le texte donne 1454,17 ± 1,06 m/s (HAp) et 1476,02 ± 0,15 m/s (« ZnHAp », lu comme 7ZnHAp). Le tableau 3 relie la valeur 1476,2 à E = 3 GPa pour 7ZnHAp, alors que le texte retient E = 6 GPa : incohérence interne non résolue ; valeurs du texte extraites telles quelles."
+   "issue": "Le texte donne 1454,17 ± 1,06 m/s (HAp) et 1476,02 ± 0,15 m/s (« ZnHAp », lu comme 7ZnHAp). La simulation de 7ZnHAp avec E = 6 GPa retenu par le texte donne 1460,5 m/s, loin de la mesure : elle ne reproduit pas l'expérience, alors que le tableau 3 relie 1476,2 m/s à E = 3 GPa. Incohérence interne des auteurs non résolue ; valeurs du texte extraites telles quelles. Pour HAp, E = 10 GPa donne 1454,1 m/s, en accord avec 1454,17 m/s."
   },
   {
    "where": "Préparation de la suspension pour les ultrasons",
@@ -917,6 +917,14 @@
   {
    "where": "Poudre pour XRD et XPS",
    "issue": "Les échantillons sont appelés « gels » (étape de dispersion de 6 h) mais aussi « powders » (Résumé, XRD) ; l'article ne décrit ni séchage ni broyage pour obtenir une poudre."
+  },
+  {
+   "where": "HAp, étape 3 (paramètres molar_ratio et xZn)",
+   "issue": "Le rapport (Ca + Zn)/P = 1,67 est écrit pour « the ZnHAp sol » ; il est appliqué aussi à HAp (xZn = 0, Ca/P) par renvoi à la phrase unique « various Zn/(Zn + Ca) ion ratios (xZn = 0 and xZn = 0.07) ». Le texte ne dit pas explicitement que HAp suit le même rapport."
+  },
+  {
+   "where": "Figures lues (3, 5, 7, 11)",
+   "issue": "Fig. 3 (C 1s), 5 (Ca 2p) et 7 (Zn 2p) : valeurs recopiées des étiquettes imprimées sur les spectres (lecture exacte des étiquettes, pas une estimation). Fig. 11 : courbes (E, ν) lues à environ ±0,1 GPa près, notées avec 2 chiffres significatifs ; la Fig. 10 (surfaces c(E, ν)) n'est pas exploitée en valeurs."
   }
  ]
 }

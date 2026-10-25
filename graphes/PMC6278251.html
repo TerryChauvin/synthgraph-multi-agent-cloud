@@ -1,0 +1,58 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6278251</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6278251 — Development of Zinc-Doped Hydroxyapatite by Sol-Gel Method for Medical Applications.</h1>
+<h2>Voie : 7ZnHAp</h2>
+<pre class="mermaid">flowchart LR
+  R19026([&quot;diammonium hydrogen phosphate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19026 --&gt;|&quot;precursor&quot;| S22700
+  R19027([&quot;zinc nitrate hexahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19027 --&gt;|&quot;dopant&quot;| S22700
+  R19028([&quot;calcium nitrate tetrahydrate&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19028 --&gt;|&quot;precursor&quot;| S22700
+  R19029([&quot;absolute ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19029 --&gt;|&quot;solvent&quot;| S22700
+  R19030([&quot;ammonium hydroxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19030 --&gt;|&quot;base&quot;| S22700
+  R19031([&quot;ethanol (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19031 --&gt;|&quot;wash&quot;| S22700
+  R19032([&quot;double deionized water (washing)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19032 --&gt;|&quot;wash&quot;| S22700
+  R19033([&quot;deionized water (dispersion)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19033 --&gt;|&quot;solvent&quot;| S22700
+  S22700[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S22700 --&gt; S22701
+  S22701[&quot;&lt;b&gt;2. dissolve&lt;/b&gt;&quot;]:::etape
+  S22701 --&gt; S22702
+  S22702[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;addition_rate : slowly&lt;br/&gt;molar_ratio : 1.67&lt;br/&gt;zn_fraction : 0.07&quot;]:::etape
+  S22702 --&gt; S22703
+  S22703[&quot;&lt;b&gt;4. adjust_ph&lt;/b&gt;&lt;br/&gt;ph : 11&quot;]:::etape
+  S22703 --&gt; S22704
+  S22704[&quot;&lt;b&gt;5. react&lt;/b&gt;&lt;br/&gt;temperature : 100 °C&lt;br/&gt;duration : 48 h&quot;]:::etape
+  S22704 --&gt; S22705
+  S22705[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : double deionized water and et…&lt;br/&gt;repetitions : five times&quot;]:::etape
+  S22705 --&gt; S22706
+  S22706[&quot;&lt;b&gt;7. disperse&lt;/b&gt;&lt;br/&gt;duration : 6 h&quot;]:::etape
+  S22706 --&gt; M
+  M{{&quot;zinc-doped hydroxyapatite gel (xZn = 0.07)&lt;br/&gt;Ca10−xZnx(PO4)6(OH)2&quot;}}:::materiau
+  O88799[&quot;phase : monophasic hydroxyapatite, P6…&quot;]:::resultat
+  M -.-&gt; O88799
+  O88800[&quot;Rwp : 2.3299 %&quot;]:::resultat
+  M -.-&gt; O88800
+  O88801[&quot;Rexp : 0.9188 %&quot;]:::resultat
+  M -.-&gt; O88801
+  O88802[&quot;RBragg : 1.7531 %&quot;]:::resultat
+  M -.-&gt; O88802
+  O88803[&quot;XPS_O1s_main_peak : 531.07 eV&quot;]:::resultat
+  M -.-&gt; O88803
+  O88804[&quot;XPS_O1s_second_peak : 532.67 eV&quot;]:::resultat
+  M -.-&gt; O88804
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14234{{&quot;7ZnHAp&quot;}}:::materiau
+  B14235[&quot;HAp&quot;]:::etape
+  B14234 --&gt;|&quot;zinc nitrate hexahydrate = absent&lt;br/&gt;zn_fraction = 0&quot;| B14235
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
