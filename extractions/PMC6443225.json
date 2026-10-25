@@ -21,16 +21,15 @@
    "kind": "material",
    "reagents": [
     {
-     "name": "starch (1% w/v aqueous solution)",
+     "name": "starch (potato, 1% w/v aqueous solution)",
      "formula": null,
      "role": "reducing_agent",
      "amount": 500,
      "unit": "µL",
      "quote": "AuNPs | 500 | 0 | 250",
-     "not_stated": [
-      "purity",
-      "supplier"
-     ]
+     "supplier": "directly extracted from potatoes",
+     "purity": "22.41±0.51 wt% amylose content",
+     "supplier_quote": "Starch powder was directly extracted from potatoes, and its chemical composition was determined by an enzymatic method revealing a 22.41±0.51 wt% amylose content."
     },
     {
      "name": "water (boiling, starch solution)",
@@ -46,7 +45,7 @@
     {
      "name": "sodium hydroxide",
      "formula": "NaOH",
-     "role": "base",
+     "role": "other",
      "purity": "minimum 99%",
      "supplier": "Fermont",
      "supplier_quote": "Silver nitrate (AgNO3) was purchased from Thermo Fisher Scientific (Waltham, MA, USA), sodium tetrachloroaurate (NaAuCl4) was purchased from Sigma-Aldrich Co. (St Louis, MO, USA) and sodium hydroxide (NaOH) was purchased from Fermont (Monterrey, Mexico). All chemicals were used without further purification and were at a minimum 99% purity.",
@@ -154,8 +153,8 @@
     },
     {
      "order": 4,
-     "action": "heat",
-     "description": "Amener le mélange réactionnel à la température fixée de 70 °C (±1 °C).",
+     "action": "set_conditions",
+     "description": "Le mélange réactionnel est à 70 °C (±1 °C) et pH 11 (±0,2) au moment où la solution du précurseur métallique est ajoutée ; l'article ne dit ni dans quel ordre ces deux conditions sont atteintes, ni comment (chauffage, base).",
      "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
      "parameters": [
       {
@@ -163,35 +162,28 @@
        "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
        "value_num": 70,
        "unit": "°C"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "duration",
-      "heating_rate",
-      "stirring_speed"
-     ]
-    },
-    {
-     "order": 5,
-     "action": "adjust_ph",
-     "description": "Amener le mélange réactionnel à pH 11 (±0,2), mesuré avec une sonde Vernier.",
-     "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
-     "parameters": [
+      },
       {
        "name": "ph",
        "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
        "value_num": 11
       }
      ],
-     "equipment": [],
+     "equipment": [
+      {
+       "type": "pH Sensor",
+       "detail": "Vernier Software and Technology (Beaverton, OR, USA)",
+       "quote": "the pH value was determined using a pH Sensor from Vernier Software and Technology [Beaverton, OR, USA]"
+      }
+     ],
      "not_stated": [
+      "heating_rate",
       "base_amount",
       "addition_rate"
      ]
     },
     {
-     "order": 6,
+     "order": 5,
      "action": "add",
      "description": "Ajouter à la fin la solution du précurseur métallique (25 mM NaAuCl4, 250 µL) au mélange à 70 °C et pH 11.",
      "quote": "the corresponding metal precursor solution was added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2",
@@ -216,7 +208,7 @@
      ]
     },
     {
-     "order": 7,
+     "order": 6,
      "action": "react",
      "description": "Laisser réagir 2 heures à 70 °C et pH 11.",
      "quote": "Reaction time was set to 2 hours at 70°C and pH=11 for both systems.",
@@ -240,7 +232,7 @@
      ]
     },
     {
-     "order": 8,
+     "order": 7,
      "action": "centrifuge",
      "description": "Centrifuger le colloïde 60 minutes à 12 500 rpm.",
      "quote": "The reaction time was set to 2 hours, followed by a centrifugation process for 60 minutes at 12,500 rpm.",
@@ -264,7 +256,7 @@
      ]
     },
     {
-     "order": 9,
+     "order": 8,
      "action": "disperse",
      "description": "Éliminer le surnageant et redisperser le culot dans 10 mL d'eau déionisée.",
      "quote": "the supernatant was discarded and the pellet was redispersed in 10 mL of deionized water",
@@ -469,6 +461,53 @@
      "value_num": 93,
      "unit": "%",
      "from_figure": "Fig. 12A"
+    },
+    {
+     "property": "crystallite_size_XRD_table2",
+     "value_text": "22.5±9.9 nm",
+     "quote": "AuNPs | 29.3±8.6 | 28.5±2.0 | 27.4±2.0 | 22.5±9.9",
+     "value_num": 22.5,
+     "unit": "nm"
+    },
+    {
+     "property": "Gompertz_A_vs_concentration_MDR_E_coli",
+     "value_text": "larger concentrations of NPs caused a decrease in value of parameter A, meaning a smaller maximum bacterial growth for MDR E. coli",
+     "quote": "larger concentrations of NPs caused a decrease in value of parameter A, meaning a smaller maximum bacterial growth for MDR E. coli (Figure 8A)"
+    },
+    {
+     "property": "Gompertz_A_trend",
+     "value_text": "irregular trend",
+     "quote": "compared to an irregular trend for the monometallic AuNPs"
+    },
+    {
+     "property": "Gompertz_mu_growth_rate",
+     "value_text": "higher NP concentrations resulted in a lower growth rate for the bacteria",
+     "quote": "higher NP concentrations resulted in a lower growth rate for the bacteria"
+    },
+    {
+     "property": "Gompertz_lambda_lag_phase",
+     "value_text": "higher NP concentrations led to a larger lag phase in bacterial growth",
+     "quote": "higher NP concentrations led to a larger lag phase in bacterial growth"
+    },
+    {
+     "property": "Gompertz_lambda_MDR_E_coli",
+     "value_text": "especially visible when AuNPs were present in MDR E. coli cultures",
+     "quote": "This was especially visible when AuNPs were present in MDR E. coli cultures (Figure 8E)"
+    },
+    {
+     "property": "Gompertz_lambda_MRSA",
+     "value_text": "no significant changes for experiments with MRSA",
+     "quote": "while there was a similar behavior with no significant changes for experiments with MRSA (Figure 8F)"
+    },
+    {
+     "property": "SEM_morphology_MDR_E_coli",
+     "value_text": "the surface looked corrugated, with the presence of some dimples, as well as they displayed a shorter average length",
+     "quote": "when the cells were exposed to both NPs (Figure 10A and B), the surface looked corrugated, with the presence of some dimples, as well as they displayed a shorter average length"
+    },
+    {
+     "property": "SEM_morphology_MRSA",
+     "value_text": "decreased diameters and different stages of damage in the cell membrane, with some cells having dents and some cells appearing lysed",
+     "quote": "after incubation with NPs (Figure 10C and D), the vast majority showed decreased diameters and different stages of damage in the cell membrane, with some cells having dents and some cells appearing lysed"
     }
    ],
    "missing_fields": [
@@ -500,7 +539,8 @@
      "value_num": 250,
      "unit": "µL",
      "parent_value": "none (0 µL)",
-     "quote": "Ag/AuNPs | 500 | 250 | 250"
+     "quote": "Ag/AuNPs | 500 | 250 | 250",
+     "step_order": 5
     }
    ],
    "reagents": [
@@ -730,6 +770,41 @@
      "value_num": 44,
      "unit": "%",
      "from_figure": "Fig. 12B"
+    },
+    {
+     "property": "Gompertz_A_significance",
+     "value_text": "A significant antibacterial effect was present in the case of bimetallic Ag/AuNPs for both experiments",
+     "quote": "A significant antibacterial effect was present in the case of bimetallic Ag/AuNPs for both experiments."
+    },
+    {
+     "property": "Gompertz_A_vs_concentration_MDR_E_coli",
+     "value_text": "larger concentrations of NPs caused a decrease in value of parameter A, meaning a smaller maximum bacterial growth for MDR E. coli",
+     "quote": "larger concentrations of NPs caused a decrease in value of parameter A, meaning a smaller maximum bacterial growth for MDR E. coli (Figure 8A)"
+    },
+    {
+     "property": "Gompertz_mu_growth_rate",
+     "value_text": "higher NP concentrations resulted in a lower growth rate for the bacteria",
+     "quote": "higher NP concentrations resulted in a lower growth rate for the bacteria"
+    },
+    {
+     "property": "Gompertz_mu_MRSA_significance",
+     "value_text": "the behavior became significant for the bimetallic Ag/AuNPs in the treatment of MRSA compared to their monometallic counterparts",
+     "quote": "the behavior became significant for the bimetallic Ag/AuNPs in the treatment of MRSA compared to their monometallic counterparts"
+    },
+    {
+     "property": "Gompertz_lambda_lag_phase",
+     "value_text": "higher NP concentrations led to a larger lag phase in bacterial growth",
+     "quote": "higher NP concentrations led to a larger lag phase in bacterial growth"
+    },
+    {
+     "property": "SEM_morphology_MDR_E_coli",
+     "value_text": "the surface looked corrugated, with the presence of some dimples, as well as they displayed a shorter average length",
+     "quote": "when the cells were exposed to both NPs (Figure 10A and B), the surface looked corrugated, with the presence of some dimples, as well as they displayed a shorter average length"
+    },
+    {
+     "property": "SEM_morphology_MRSA",
+     "value_text": "decreased diameters and different stages of damage in the cell membrane, with some cells having dents and some cells appearing lysed",
+     "quote": "after incubation with NPs (Figure 10C and D), the vast majority showed decreased diameters and different stages of damage in the cell membrane, with some cells having dents and some cells appearing lysed"
     }
    ]
   }
@@ -820,7 +895,7 @@
   {
    "type": "resume",
    "route": null,
-   "text": "L'article prépare des nanoparticules colloïdales d'or (AuNPs) et d'alliage argent/or (Ag/AuNPs) par réduction chimique en milieu aqueux : l'amidon de pomme de terre, hydrolysé à pH 11 et 70 °C, libère du glucose qui réduit les ions, et l'amidon coiffe les particules. Les auteurs obtiennent des particules quasi sphériques de 28,5 nm (Au) et 9,7 nm (Ag/Au), de structure cubique à faces centrées, puis testent leur effet antibactérien (E. coli multirésistant, MRSA), leur cytotoxicité sur fibroblastes et sur cellules de mélanome.",
+   "text": "L'article prépare des nanoparticules colloïdales d'or (AuNPs) et d'alliage argent/or (Ag/AuNPs) par réduction chimique en milieu aqueux : l'amidon de pomme de terre, qui selon les auteurs est hydrolysé à pH 11 et 70 °C en glucose réducteur (hypothèse non démontrée par l'article), réduit les ions et coiffe les particules. Les auteurs obtiennent des particules quasi sphériques de 28,5 nm (Au) et 9,7 nm (Ag/Au), de structure cubique à faces centrées, puis testent leur effet antibactérien (E. coli multirésistant, MRSA), leur cytotoxicité sur fibroblastes et sur cellules de mélanome.",
    "quote": null
   },
   {
@@ -844,7 +919,7 @@
   {
    "type": "tendance_observee",
    "route": null,
-   "text": "Dans les deux voies, plus la concentration en nanoparticules augmente, plus la croissance bactérienne est retardée et plus le paramètre A du modèle de Gompertz (croissance maximale) diminue ; l'effet est net pour Ag/AuNPs et irrégulier pour AuNPs. Les images MEB montrent, avec les deux types de particules, des bactéries à surface plissée et plus courtes (E. coli) ou à diamètre réduit, bosselées ou lysées (MRSA). Ces résultats sont donnés pour le groupe, non par voie.",
+   "text": "Pour MDR E. coli, plus la concentration en nanoparticules augmente, plus la croissance bactérienne est retardée et plus le paramètre A du modèle de Gompertz (croissance maximale) diminue (Fig. 8A) ; l'effet antibactérien est net pour Ag/AuNPs et de tendance irrégulière pour AuNPs. Les images MEB montrent, avec les deux types de particules, des E. coli à surface plissée et plus courtes, et des MRSA à diamètre réduit, bosselés ou lysés. Les paramètres de Gompertz et les observations MEB figurent par voie dans les résultats.",
    "quote": "In general, this delay shows that there was a clear antimicrobial activity for the bimetallic Ag/AuNPs compared to an irregular trend for the monometallic AuNPs."
   },
   {
@@ -862,7 +937,7 @@
   {
    "type": "limite_reproductibilite",
    "route": "AuNPs",
-   "text": "Pour refaire la synthèse il manque : la masse d'amidon (la solution est donnée à 1 % m/v sans volume préparé), la base et la quantité servant à fixer pH 11 (NaOH n'est que listé dans les produits), le solvant des solutions de précurseurs 25 mM, le volume total de la réaction, la vitesse d'agitation, la température de reflux et de centrifugation, le rendement. Les volumes de réactifs (500, 250, 250 µL) sont très petits : l'échelle réelle de préparation n'est pas dite. Les courbes de croissance bactérienne (Fig. 7), les paramètres de Gompertz (Fig. 8), les comptages de colonies (Fig. 9) et les histogrammes de taille (Fig. 6) n'ont été lus que par leurs conclusions de texte.",
+   "text": "Pour refaire la synthèse il manque : la masse d'amidon (la solution est donnée à 1 % m/v sans volume préparé ; l'amidon est extrait de pommes de terre par les auteurs, à 22,41 ± 0,51 % m/m d'amylose, sans procédé d'extraction décrit), la base et la quantité servant à fixer pH 11 (NaOH n'est que listé dans les produits), le solvant des solutions de précurseurs 25 mM, le volume total de la réaction, la vitesse d'agitation, la température de reflux et de centrifugation, le rendement. Les volumes de réactifs (500, 250, 250 µL) sont très petits : l'échelle réelle de préparation n'est pas dite. Les courbes de croissance bactérienne (Fig. 7), les paramètres de Gompertz (Fig. 8), les comptages de colonies (Fig. 9) et les histogrammes de taille (Fig. 6) n'ont été lus que par leurs conclusions de texte.",
    "quote": null
   },
   {
@@ -874,13 +949,55 @@
   {
    "type": "mecanisme_analyse",
    "route": "AuNPs",
-   "text": "Probablement, le pH 11 et les 70 °C hydrolysent partiellement l'amidon en chaînes courtes à extrémité réductrice qui donnent les électrons ; AuCl4− (E° plus élevé) est réduit en premier et sert de germe, la taille finale plus petite de l'alliage s'expliquant par une nucléation plus abondante quand Ag+ est coréduit. À pH 11, une partie de Au(III) est probablement sous forme d'hydroxochloroaurate, moins oxydante que AuCl4−, ce qui ralentit la réduction et favorise des particules monodisperses. L'amidon adsorbé coiffe les particules et empêche leur agrégation (potentiel ζ d'environ −42 mV).",
+   "text": "Hypothèse, non démontrée par l'article : l'hydrolyse de l'amidon en glucose libre est peu plausible à 70 °C et pH 11, car les liaisons glycosidiques sont stables en milieu basique, et la réduction de Au(III) par ce seul glucose exigerait qu'environ 30 % de toutes les unités de l'amidon (≤ 5 mg dans les 500 µL de solution) soient hydrolysées puis oxydées (41 % pour l'alliage). Il est plus probable que Au(III) (AuCl4−, en partie hydroxylé à pH 11 et alors moins oxydant) soit réduit par les extrémités réductrices des chaînes et des fragments courts formés à l'ébullition, et surtout par les fonctions alcool de l'amidon déprotonées en milieu basique (alcoolates), oxydées en carbonyles et carboxylates. Cette réduction consomme des OH− (environ 4,5 par Au) et acidifie le milieu, ce qui la ralentit : nucléation lente, croissance en particules maclées d'environ 28 nm, coiffées par l'amidon (stabilisation surtout stérique ; potentiel ζ négatif). Pour l'alliage, la taille plus petite (9,7 nm) irait avec une nucléation plus abondante quand Ag+ est coréduit ou que AgCl est présent, ce que l'article ne discute pas. Sources de l'analyse : Tongsakul et al., Carbohydrate Research 357, 2012 (l'amidon ne devient réducteur qu'à forte alcalinité) ; Gomes et al., Phys. Chem. Chem. Phys. 17, 2015 (les alcoolates réduisent Au et Ag en milieu basique).",
    "quote": null
   },
   {
    "type": "securite_analyse",
    "route": null,
    "text": "AgNO3 est oxydant, corrosif et tache la peau ; NaAuCl4 est irritant et sensibilisant ; NaOH concentré est corrosif (lunettes, gants). La solution d'amidon est préparée dans l'eau bouillante puis chauffée à reflux : risque de brûlure. Les colloïdes d'argent sont toxiques pour les organismes aquatiques, les déchets contenant Ag et Au ne vont pas à l'évier. Les essais sur souches résistantes (MRSA, E. coli multirésistant) demandent un laboratoire de niveau de biosécurité adapté.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/AuNPs",
+   "text": "Le rapport atomique Ag:Au donné par l'ICP est inversé : 17,0 µg/mL d'argent et 35,1 µg/mL d'or donnent un rapport molaire Ag:Au d'environ 0,88 et non 1,13 (valeur de l'article, qui est l'inverse Au:Ag). Avec l'EDS (0,82 ; 44,97 % at. Ag) l'ICP indique donc un alliage appauvri en argent d'environ 12 à 18 % par rapport à la charge 1:1, et non « proche » de celle-ci comme l'écrit l'article. L'article appelle aussi « molar concentrations » des valeurs en µg/mL.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/AuNPs",
+   "text": "Bilan de métal non discuté : à volume égal de NaAuCl4 (250 µL de 25 mM), le colloïde allié contient 35,1 µg/mL d'or contre 95,8 µg/mL pour AuNPs, soit 37 % de l'or du colloïde monométallique. Si l'ICP porte sur le culot redispersé dans 10 mL (seule dilution écrite, hypothèse), environ 29 % de l'or et 25 % de l'argent engagés (27 % du métal) sont retrouvés, contre environ 78 % de l'or pour AuNPs. Causes possibles : réduction incomplète, perte de petites particules au surnageant (sédimentation environ 11 fois plus lente pour 9,7 nm), précipitation de AgCl éliminée. Le rendement n'est pas donné.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ag/AuNPs",
+   "text": "AgCl précipite dès le mélange de Ag+ avec les ions Cl− de NaAuCl4 (produit ionique environ 10^6 fois le Ks) : ce n'est pas seulement un sous-produit du remplacement galvanique invoqué par les auteurs, et l'ordre d'ajout de AgNO3 et NaAuCl4 (prémélange ou ajouts séparés) n'est pas écrit alors qu'il change le résultat. La DRX ne prouve pas l'alliage (a = 4,065 ± 0,008 Å, au pas de 0,05° la résolution est d'environ 0,005 Å, contre un écart de 0,008 Å entre Au et Ag massifs) ; la meilleure preuve est le plasmon unique à 463 nm, cohérent avec la composition EDS (≈ 466 nm attendu). Le potentiel ζ de −27 mV est sous le seuil de ±30 mV que citent les auteurs, mais la stabilisation est surtout stérique (amidon).",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuNPs",
+   "text": "pH 11 non réalisable tel qu'écrit : ni la base ni sa quantité ne sont données (NaOH n'est que listé parmi les produits achetés), alors que la réduction de 6,25 µmol d'or consomme environ 4,5 OH− par Au, soit environ 28 µmol d'hydroxyde ; à pH 11 (1 µmol/mL) et pour un volume de l'ordre du millilitre, la réserve de base est environ 28 fois trop faible et le pH chute en cours de réaction, sauf ajout continu non décrit. Le pH réel de la réaction est donc inconnu (les colloïdes sont mesurés à pH 7,8 pour AuNPs et 6,8 pour Ag/AuNPs, après redispersion). Le volume total de réaction n'est pas écrit non plus.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AuNPs",
+   "text": "Mécanisme des auteurs non établi : la réduction par du glucose libéré par hydrolyse de l'amidon exigerait qu'environ 30 % de toutes les unités de l'amidon engagé (41 % pour l'alliage) soient hydrolysées puis oxydées, ce qui est peu plausible à 70 °C et pH 11 (Tongsakul et al., Carbohydrate Research 357, 2012 : l'amidon ne devient réducteur qu'à très forte alcalinité) ; aucun dosage de glucose n'est montré.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Taille UV-visible : la valeur 27,4 ± 2,0 nm des AuNPs est celle que donne la formule de Khlebtsov appliquée par les auteurs à λmax = 524 nm (moyenne des six lots), et non une valeur de la littérature comme le texte le laisse entendre ; cette formule n'est valable que pour λmax − 500 ≥ 23 nm, donc elle est hors domaine pour le spectre à 521 nm, et le ± 2,0 nm n'est pas propagé. L'accord avec le MET (28,5 nm) est en partie fortuit. La référence 53 est hybride : auteur et pages de l'article de Khlebtsov de 2008 (Anal. Chem. 80), titre et DOI d'un article de Haiss et al. de 2007. La taille de cristallite DRX des AuNPs est donnée à 22,5 ± 9,9 nm (Table 2) et à 23,5 ± 10,3 nm (Table 3) pour la même grandeur ; les deux sont extraites, sans moyen de trancher.",
+   "quote": null
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Essais biologiques : les Méthodes ne décrivent qu'une incubation de 24 h avec les nanoparticules alors que le résumé, les Résultats et les Fig. 11 à 12 donnent des valeurs à 72 h, sans protocole (renouvellement du milieu, nouvelle dose). La base de la dose en µg/mL n'est pas définie (or dosé, métal total ou masse sèche avec amidon). L'IC50 est présentée comme la concentration minimale inhibitrice, deux notions différentes. Aucun témoin d'amidon seul n'est testé, donc l'effet de l'amidon n'est pas séparé de celui du métal.",
    "quote": null
   }
  ],
@@ -894,12 +1011,12 @@
  ],
  "doubts": [
   {
-   "where": "AuNPs steps 4 et 5",
-   "issue": "L'article dit que le précurseur est ajouté « when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2 » sans dire dans quel ordre la température et le pH sont atteints ni comment le pH est réglé ; l'ordre chauffage (étape 4) puis réglage du pH (étape 5) est une convention d'écriture, non un fait de l'article."
+   "where": "AuNPs step 4",
+   "issue": "Étapes fusionnées : l'article donne une seule phrase (« added at the end when the reaction mixture was at the preset temperature of 70°C±1°C and pH=11±0.2 ») avec deux conditions simultanées au moment de l'ajout du précurseur ; il ne décrit ni chauffage, ni réglage du pH, ni leur ordre. L'étape 4 porte donc les deux conditions, sans ordre inventé."
   },
   {
    "where": "AuNPs reagent sodium hydroxide",
-   "issue": "NaOH n'apparaît que dans la liste des produits (« sodium hydroxide (NaOH) was purchased from Fermont »). L'article ne dit pas expressément que NaOH sert à fixer pH 11 ni en quelle quantité ; lecture retenue : base de réglage du pH, quantité non citée."
+   "issue": "NaOH n'apparaît que dans la liste des produits achetés (« sodium hydroxide (NaOH) was purchased from Fermont »). L'article ne dit nulle part que NaOH sert à fixer pH 11 (il parle seulement de « basic conditions » pour l'hydrolyse de l'amidon) ni en quelle quantité : rôle noté « other », quantité non citée."
   },
   {
    "where": "AuNPs step 1 et reagent starch",
@@ -907,7 +1024,7 @@
   },
   {
    "where": "Ag/AuNPs variation silver_nitrate_solution",
-   "issue": "Le contrôle signale que le paramètre ne correspond à aucun nom du protocole hérité : AgNO3 est absent de la voie AuNPs (0 µL dans Table 1), donc ajouté en variation explicite. L'ordre d'ajout ou le prémélange de AgNO3 et NaAuCl4 n'est pas précisé (l'article parle de coréduction)."
+   "issue": "Le contrôle signale que le paramètre ne correspond à aucun nom du protocole hérité : AgNO3 est absent de la voie AuNPs (0 µL dans Table 1), donc ajouté en variation explicite. Variation rattachée à l'étape 5 (ajout des précurseurs) ; l'ordre d'ajout ou le prémélange de AgNO3 et NaAuCl4 n'est pas précisé par l'article."
   },
   {
    "where": "Ag/AuNPs, ICP-MS",
@@ -915,7 +1032,7 @@
   },
   {
    "where": "AuNPs crystallite_size_XRD",
-   "issue": "Table 2 donne 22.5±9.9 nm (AuNPs, XRD) et Table 3 donne 23.5±10.3 nm pour la même grandeur. Valeur de Table 3 retenue (tableau propre à la DRX) ; la valeur de Table 2 n'est pas extraite."
+   "issue": "Table 2 donne 22.5±9.9 nm (AuNPs, XRD) et Table 3 donne 23.5±10.3 nm pour la même grandeur. Les deux valeurs sont extraites (crystallite_size_XRD pour Table 3, crystallite_size_XRD_table2 pour Table 2) ; l'article ne permet pas de trancher."
   },
   {
    "where": "AuNPs particle_size_UV_visible",
@@ -932,6 +1049,18 @@
   {
    "where": "AuNPs reagent water (redispersion)",
    "issue": "« σ=18.2 MΩ cm » est écrit comme pureté de l'eau déionisée ; l'article ne donne pas de fournisseur. L'eau de la solution d'amidon est dite « boiling water », sans précision de qualité."
+  },
+  {
+   "where": "AuNPs reagent starch",
+   "issue": "L'amidon est « directly extracted from potatoes » (teneur en amylose 22.41±0.51 wt%) : origine notée à la place du fournisseur et teneur en amylose notée en pureté ; le procédé d'extraction n'est pas décrit."
+  },
+  {
+   "where": "AuNPs outcomes Gompertz_lambda_MRSA",
+   "issue": "La phrase « while there was a similar behavior with no significant changes for experiments with MRSA (Figure 8F) » suit celle sur AuNPs et E. coli ; elle est rattachée à AuNPs, mais l'article ne le dit pas expressément."
+  },
+  {
+   "where": "SEM outcomes (les deux voies)",
+   "issue": "Le texte des Résultats décrit les images MEB « with NPs » pour les deux types de particules ensemble ; la légende de la Fig. 10 donne 8 h de traitement et les Méthodes une concentration de 10 µg/mL. Les deux voies reçoivent donc la même phrase."
   }
  ]
 }

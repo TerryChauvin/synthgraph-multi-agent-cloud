@@ -1,0 +1,54 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC6443225</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC6443225 — Starch-mediated synthesis of mono- and bimetallic silver/gold nanoparticles as antimicrobial and anticancer agents.</h1>
+<h2>Voie : AuNPs</h2>
+<pre class="mermaid">flowchart LR
+  R17723([&quot;starch (potato, 1% w/v aqueous solution)&lt;br/&gt;500 µL&quot;]):::reactif
+  R17723 --&gt;|&quot;reducing_agent&quot;| S21109
+  R17724([&quot;water (boiling, starch solution)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17724 --&gt;|&quot;solvent&quot;| S21109
+  R17725([&quot;sodium hydroxide&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R17725 --&gt;|&quot;other&quot;| S21109
+  R17726([&quot;sodium tetrachloroaurate (25 mM solution)&lt;br/&gt;250 µL&quot;]):::reactif
+  R17726 --&gt;|&quot;precursor&quot;| S21109
+  R17727([&quot;deionized water (redispersion)&lt;br/&gt;10 mL&quot;]):::reactif
+  R17727 --&gt;|&quot;solvent&quot;| S21109
+  S21109[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&lt;br/&gt;concentration : 1 % w/v&lt;br/&gt;temperature : boiling water&quot;]:::etape
+  S21109 --&gt; S21110
+  S21110[&quot;&lt;b&gt;2. reflux&lt;/b&gt;&lt;br/&gt;duration : 30 min&quot;]:::etape
+  S21110 --&gt; S21111
+  S21111[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 3500 rpm&lt;br/&gt;duration : 10 min&quot;]:::etape
+  S21111 --&gt; S21112
+  S21112[&quot;&lt;b&gt;4. set_conditions&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;ph : 11&quot;]:::etape
+  S21112 --&gt; S21113
+  S21113[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;concentration : 25 mM&lt;br/&gt;volume : 250 µL&quot;]:::etape
+  S21113 --&gt; S21114
+  S21114[&quot;&lt;b&gt;6. react&lt;/b&gt;&lt;br/&gt;temperature : 70 °C&lt;br/&gt;duration : 2 hours&quot;]:::etape
+  S21114 --&gt; S21115
+  S21115[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&lt;br/&gt;centrifuge_speed : 12500 rpm&lt;br/&gt;duration : 60 min&quot;]:::etape
+  S21115 --&gt; S21116
+  S21116[&quot;&lt;b&gt;8. disperse&lt;/b&gt;&lt;br/&gt;volume : 10 mL&quot;]:::etape
+  S21116 --&gt; M
+  M{{&quot;starch-capped gold nanoparticles&lt;br/&gt;Au&quot;}}:::materiau
+  O83362[&quot;SPR_lambda_max_single_sample : 521 nm&quot;]:::resultat
+  M -.-&gt; O83362
+  O83363[&quot;SPR_lambda_max_six_batches : 524 nm&quot;]:::resultat
+  M -.-&gt; O83363
+  O83364[&quot;hydrodynamic_diameter_DLS : 29.3 nm&quot;]:::resultat
+  M -.-&gt; O83364
+  O83365[&quot;particle_size_TEM : 28.5 nm&quot;]:::resultat
+  M -.-&gt; O83365
+  O83366[&quot;particle_size_UV_visible : 27.4 nm&quot;]:::resultat
+  M -.-&gt; O83366
+  O83367[&quot;crystallite_size_XRD : 23.5 nm&quot;]:::resultat
+  M -.-&gt; O83367
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13367{{&quot;AuNPs&quot;}}:::materiau
+  B13368[&quot;Ag/AuNPs&quot;]:::etape
+  B13367 --&gt;|&quot;silver_nitrate_solution = 250 µL&quot;| B13368
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
