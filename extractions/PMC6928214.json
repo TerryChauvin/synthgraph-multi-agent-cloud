@@ -50,10 +50,10 @@
    ]
   },
   {
-   "sample": "Vc (acide ascorbique)",
-   "defined_in": "Fig. 5 uniquement (barre de référence)",
+   "sample": "Vc",
+   "defined_in": "Fig. 5 uniquement (étiquette de barre « Vc »)",
    "route": null,
-   "why": "témoin positif commercial non décrit dans le texte"
+   "why": "référence (barre « Vc » de la Fig. 5) jamais définie dans le texte : nature et concentration non données, ni synthétisée ni décrite"
   },
   {
    "sample": "Control (eau, 0 μg/mL, témoin non traité)",
@@ -793,7 +793,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "S,Se-CQDs",
-   "text": "Hypothèse de chimiste : à 150 °C en milieu aqueux, l'acide citrique (≈ 26 mmol) se déshydrate et se condense avec l'amine de la mercaptoéthylamine (≈ 10 mmol) en amides et en structures de type citrazinate, qui forment le cœur fluorescent carboné ; le thiol de la cystéamine reste probablement en surface (-SH), ce qui est cohérent avec le signal à 4,5 ppm. Le sélénite (≈ 0,35 mmol) est probablement réduit par les thiols (formation de sélénotrisulfures RS-Se-SR puis de liaisons C-Se ou S-Se), ce qui expliquerait les liaisons S-Se observées en XPS ; l'article n'écrit aucune réaction de formation."
+   "text": "Hypothèse du critique scientifique, non écrite dans l'article : à 150 °C en eau acide, l'acide citrique s'amide avec la cystéamine puis se cyclise en un fluorophore moléculaire de type TPCA (acide 5-oxo-3,5-dihydro-2H-thiazolo[3,2-a]pyridine-7-carboxylique), dont le soufre est un thioéther et non un -SH ; le reste de l'acide citrique et des amides se condense en oligomères portant des carboxylates, et les -SH libres viendraient de la cystéamine amidée non cyclisée. Le sélénite serait réduit par les thiols (réaction de Painter, formation de sélénotrisulfures RS-Se-SR et de disulfures, voire de Se(0) ou de H2Se), sans que les spectres publiés prouvent la présence de Se lié aux points. La forte émission bleue indépendante de l'excitation et le rendement quantique élevé suggèrent que la fluorescence vient de molécules plutôt que des points de 6 nm (Kasprzyk et al., RSC Adv. 2015, 5, 34795, 10.1039/C5RA03226A ; Shi et al., Nanoscale 2016, 8, 10.1039/C6NR00451B ; Ganther, Biochemistry 1968, 7, 2898)."
   },
   {
    "type": "mecanisme_auteurs",
@@ -805,20 +805,65 @@
    "type": "securite_analyse",
    "route": "S,Se-CQDs",
    "text": "Le sélénite de sodium est toxique (poison par ingestion et inhalation de poussières) ; la mercaptoéthylamine (cystéamine) est irritante et malodorante. À 150 °C, la décomposition de thiols en présence de sélénite peut dégager H2S ou H2Se, gaz très toxiques, dans l'autoclave fermé : le laisser refroidir complètement et l'ouvrir sous hotte. Si les 40 mL de solution sont transférés dans la chemise de 50 mL, le taux de remplissage serait d'environ 80 %, au-dessus des 2/3 usuellement recommandés. Les eaux de dialyse contiennent du sélénium et doivent être traitées comme déchet. Les essais ROS emploient aussi du DPPH, du FeSO4/H2O2 et du TEMED, à manipuler avec les précautions habituelles."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Lectures graphiques de référence (± 0,02 ; ± 3 pour la Fig. 7) absentes des résultats. Fig. 5 : la barre « Vc », référence non définie dans le texte, donne environ 0,98 (DPPH, Fig. 5a), 0,76 (·OH, Fig. 5b), 0,04 avec H2O2 et 0,03 sans H2O2 (DTNB, Fig. 5c) et 0,124 (XTT, Fig. 5d), contre 0,110 pour le témoin eau de la Fig. 5d. Fig. 6 : le groupe à 0 μg/mL vaut 100 % par définition pour HeLa et MDA-MB-231. Fig. 7 : le groupe Control (poisson-zèbre) donne environ 97 % d'éclosion, 94 % de survie et 144 pour le rythme cardiaque (axe étiqueté « Heart Rate (%) »), à comparer aux 95, 92 et 145–146 des groupes traités."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S,Se-CQDs",
+   "text": "Les attributions XPS ne prouvent pas la liaison du sélénium aux points. Les pics Se3d à 63,1 et 67,1 eV sortent du domaine du sélénium (Se 3d5/2 ≈ 55 eV pour Se(0), ≈ 60–61 eV pour les oxoanions, base NIST XPS, srdata.nist.gov/xps) et le pic à 63 eV coïncide avec la raie Na 2s du sodium apporté par le sélénite. Les deux pics S2p sont séparés d'environ 1 eV, proche du doublet spin-orbite d'une seule espèce soufrée, et Se 3p recouvre cette région. L'article donne en outre des positions légèrement différentes dans le texte et sur les Fig. 4b et 4c (voir les doutes). Un dosage du Se (ICP) et un spectre Se 3d refait seraient nécessaires."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S,Se-CQDs",
+   "text": "Attributions RMN douteuses. Le signal 1H à environ 4,5 ppm attribué à -SH correspond plus probablement à l'eau résiduelle HDO dans D2O (≈ 4,8 ppm, Gottlieb et al., J. Org. Chem. 1997, 62, 7512) ; un proton SH s'échange dans D2O. Le signal 13C à environ 180 ppm attribué à C-Se est dans le domaine d'un carbonyle d'acide, de carboxylate ou d'amide, pas d'un carbone lié au sélénium."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S,Se-CQDs",
+   "text": "Le test de l'anion superoxyde donne une concentration d'XTT de 0,08 M, soit bien plus que la solubilité de l'XTT dans l'eau (quelques mg/mL d'après les fiches Thermo Scientific et APExBIO) : la solution ne peut pas être préparée telle qu'écrite, la valeur est probablement 0,08 mM ou 0,8 mM. Le test n'est pas reproductible sans ce chiffre. Le témoin (2 mL d'eau) et l'essai (1 mL d'échantillon) n'ont pas non plus le même volume."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S,Se-CQDs",
+   "text": "Le test « d'élimination de H2O2 » (DTNB) apporte H2O2 en très large excès par rapport aux thiols de l'échantillon : la baisse d'absorbance traduit l'oxydation des thiols par H2O2, pas l'élimination de H2O2, et l'effet est stœchiométrique. Aucun tampon n'est indiqué pour le DTNB et l'absorbance propre des points à 412 nm n'est pas soustraite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Dans le test ·OH (Fig. 5b), les points non dopés (CQDs, ≈ 0,24) piègent mieux que S-CQDs et S,Se-CQDs (≈ 0,15–0,18), ce qui contredit l'attribution du piégeage de ·OH aux groupes -SH. Les carboxylates résiduels pourraient complexer Fe2+ et freiner la réaction de Fenton ; un témoin d'acide citrique à même masse serait nécessaire. De même, le piégeage de DPPH par les échantillons soufrés dépasse ce que les seuls thiols peuvent réduire d'après le dosage DTNB."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S-CQDs",
+   "text": "Pour le test XTT (Fig. 5d), l'article dit que les absorbances de S-CQDs et de S,Se-CQDs ont diminué par rapport au témoin ; la lecture de S-CQDs (≈ 0,107) est pratiquement égale à celle du témoin (≈ 0,110), seul S,Se-CQDs (≈ 0,094) baisse nettement."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Se-CQDs",
+   "text": "Sans thiol dans le milieu, la réduction du sélénite et le dopage au Se ne sont pas démontrés : le seul indice donné est une bande IR à environ 750 cm-1, non discriminante, sans XPS ni dosage du Se pour cet échantillon. Le sélénite non réagi pourrait traverser la membrane de dialyse de 200 Da."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "S,Se-CQDs",
+   "text": "Informations absentes qui changent la stœchiométrie : l'acide citrique est-il anhydre ou monohydraté, la mercaptoéthylamine est-elle la base libre ou le chlorhydrate (forme commerciale courante) ? Le rapport acide citrique/amine en dépend. Le rendement quantique de 43 % est mesuré contre la quinine dans H2SO4 « 0.05 N » avec la valeur 0,577, milieu non standard (IUPAC : 0,60 dans HClO4 0,1 M), et une fluorescence d'origine moléculaire n'est pas exclue (voir l'hypothèse du critique scientifique)."
   }
  ],
  "method_sources": [
   {
    "route": "S,Se-CQDs",
    "ref_id": "CR30",
-   "role": "protocole_complet",
+   "role": "autre",
    "quote": "The toxicity of S,Se-CQDs was determined by MTT assay."
   },
   {
    "route": "S,Se-CQDs",
    "ref_id": "CR31",
-   "role": "protocole_complet",
-   "quote": "The results (Fig. 7a) of zebrafish experiment showed the hatching rate of Zebrafish fertilized egg has no significant difference after incubating with S,Se-CQDs for 72 h compared with the control group."
+   "role": "autre",
+   "quote": "The results (Fig. 7a) of zebrafish experiment"
   }
  ],
  "doubts": [
@@ -851,12 +896,20 @@
    "issue": "La légende dit « 1H NMR spectrum of CQDs (a) and 13C NMR spectrum of CQDs (b) » alors que le texte parle de S-CQDs et S,Se-CQDs ; le texte est retenu et les figures 2, 3, 4 et 8 n'ont pas été relues (les valeurs sont dans le texte)."
   },
   {
-   "where": "method_sources",
-   "issue": "Seules les références CR30 (MTT) et CR31 (poisson-zèbre) sont retenues comme renvois de méthode ; CR23 (Fenton), CR26 (DTNB), CR28 et CR29 (XTT) sont citées pour la chimie des tests, dont les quantités sont données dans les Méthodes."
-  },
-  {
    "where": "Figure 5, condition H2O2 (Fig. 5c)",
    "issue": "Les deux séries d'absorbance de la Fig. 5c (avec et sans H2O2) sont lues sur la légende de la figure (« Sample+H2O2+DTNB », « Sample+H2O+DTNB »). L'absorbance sans H2O2 de S,Se-CQDs ≈ 0,39 et de S-CQDs ≈ 0,46 reflète leur teneur en thiols."
+  },
+  {
+   "where": "S,Se-CQDs XPS, Se3d et S2p (texte contre Fig. 4b et 4c)",
+   "issue": "Le texte donne Se3d S-Se 67,1 et C-Se 63,1 eV, S2p C-S 163,1 et S-Se 164,1 eV ; les étiquettes de la Fig. 4b sont 67,5 eV (S-Se) et 62,9 eV (C-Se) et celles de la Fig. 4c 163,4 eV (C-S) et 164,2 eV (S-Se), soit un écart d'au plus 0,4 eV. Valeurs du texte conservées."
+  },
+  {
+   "where": "Fig. 5, barre « Vc »",
+   "issue": "« Vc » n'est défini nulle part dans le texte ; il s'agit probablement d'un témoin positif à base d'acide ascorbique (vitamine C), mais l'article ne l'écrit pas. Nom gardé tel qu'écrit, nature et concentration non données ; lectures de la barre consignées en annotation de comparaison, sans voie."
+  },
+  {
+   "where": "method_sources CR30 et CR31",
+   "issue": "CR30 (MTT) et CR31 (poisson-zèbre) sont cités sans formule de méthode (« according to », « as described ») : rôle « autre ». Pour CR31, aucune phrase des Méthodes ne le porte ; la citation retenue est le fragment de la phrase de Résultats où il est posé. CR23, CR26, CR28 et CR29 (chimie des tests, quantités données dans les Méthodes) ne sont pas retenus."
   }
  ]
 }
