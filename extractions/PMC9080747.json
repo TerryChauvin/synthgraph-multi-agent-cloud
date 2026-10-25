@@ -320,10 +320,11 @@
      "role": "capping_agent",
      "amount": 0.18,
      "unit": "g",
-     "purity": "99%",
-     "supplier": "Aladdin",
-     "supplier_quote": "Polyethylenimine (PEI, Mw = 6 k, 8 k, 10 k, 99%) was purchased from Aladdin (Shanghai, China).",
-     "quote": "0.15 g (0.85 mmol) of AA, 0.18 g (0.1 mmol) of PEI and 0.8 g (3.8 mmol) of CA was dissolved in 10 mL of distilled H2O"
+     "quote": "0.15 g (0.85 mmol) of AA, 0.18 g (0.1 mmol) of PEI and 0.8 g (3.8 mmol) of CA was dissolved in 10 mL of distilled H2O",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
     },
     {
      "name": "citric acid (CA)",
@@ -588,6 +589,41 @@
      "property": "ink_handwriting_under_365nm_UV",
      "value_text": "bright green fluorescence (colourless under ambient light)",
      "quote": "The handwriting on a filter paper was colorless under ambient light but showed bright green fluorescence under UV-light at a wavelength of 365 nm (Fig. 6)."
+    },
+    {
+     "property": "fluorescence_colour_under_purple_light_400-425_nm",
+     "value_text": "yellow-green fluorescence",
+     "quote": "yellow-green fluorescence under purple light (400–425 nm), and bright yellow fluorescence under blue light (465–475 nm)"
+    },
+    {
+     "property": "fluorescence_colour_under_blue_light_465-475_nm",
+     "value_text": "bright yellow fluorescence",
+     "quote": "yellow-green fluorescence under purple light (400–425 nm), and bright yellow fluorescence under blue light (465–475 nm)"
+    },
+    {
+     "property": "fluorescence_lifetime_amplitude_a1",
+     "value_num": 70.75,
+     "unit": "%",
+     "quote": "CDs(AA–PEI–CA) | 481 | 535 | 3.115 | 70.75 | 11.23 | 18.89 | 0.226 | 10.36 | 4.349"
+    },
+    {
+     "property": "fluorescence_lifetime_amplitude_a2",
+     "value_num": 18.89,
+     "unit": "%",
+     "quote": "CDs(AA–PEI–CA) | 481 | 535 | 3.115 | 70.75 | 11.23 | 18.89 | 0.226 | 10.36 | 4.349"
+    },
+    {
+     "property": "fluorescence_lifetime_amplitude_a3",
+     "value_num": 10.36,
+     "unit": "%",
+     "quote": "CDs(AA–PEI–CA) | 481 | 535 | 3.115 | 70.75 | 11.23 | 18.89 | 0.226 | 10.36 | 4.349"
+    },
+    {
+     "property": "pl_peak_intensity_fig1b",
+     "value_num": 780,
+     "unit": "a.u.",
+     "from_figure": "Fig. 1b",
+     "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
     }
    ],
    "missing_fields": [
@@ -633,10 +669,11 @@
      "role": "capping_agent",
      "amount": 0.18,
      "unit": "g",
-     "purity": "99%",
-     "supplier": "Aladdin",
-     "supplier_quote": "Polyethylenimine (PEI, Mw = 6 k, 8 k, 10 k, 99%) was purchased from Aladdin (Shanghai, China).",
-     "quote": "under ideal conditions (AA:0.2 g, PEI (Mw = 1.8 k):0.18 g, pH = 5, 100 °C, 60 min)"
+     "quote": "under ideal conditions (AA:0.2 g, PEI (Mw = 1.8 k):0.18 g, pH = 5, 100 °C, 60 min)",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
     }
    ],
    "steps": [
@@ -727,6 +764,18 @@
      "property": "fluorescence_lifetime_tau2",
      "value_num": 3.614,
      "unit": "ns",
+     "quote": "CDs(PEI–CA) | 481 | 535 | 0.3446 | 21.4 | 3.614 | 78.6 | — | — | 2.914"
+    },
+    {
+     "property": "fluorescence_lifetime_amplitude_a1",
+     "value_num": 21.4,
+     "unit": "%",
+     "quote": "CDs(PEI–CA) | 481 | 535 | 0.3446 | 21.4 | 3.614 | 78.6 | — | — | 2.914"
+    },
+    {
+     "property": "fluorescence_lifetime_amplitude_a2",
+     "value_num": 78.6,
+     "unit": "%",
      "quote": "CDs(PEI–CA) | 481 | 535 | 0.3446 | 21.4 | 3.614 | 78.6 | — | — | 2.914"
     }
    ]
@@ -907,6 +956,13 @@
      "value_num": 512,
      "unit": "nm",
      "quote": "4 | 512 | 0.15 | 0.5 | 0.18 | 60 | 150"
+    },
+    {
+     "property": "pl_peak_intensity",
+     "value_num": 440,
+     "unit": "a.u.",
+     "from_figure": "Fig. 1b",
+     "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
     }
    ]
   },
@@ -1085,7 +1141,15 @@
      "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
     }
    ],
-   "outcomes": []
+   "outcomes": [
+    {
+     "property": "pl_peak_intensity",
+     "value_num": 80,
+     "unit": "a.u.",
+     "from_figure": "Fig. 1b",
+     "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
+    }
+   ]
   },
   {
    "label": "CDs_CA0.2",
@@ -1108,7 +1172,15 @@
      "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
     }
    ],
-   "outcomes": []
+   "outcomes": [
+    {
+     "property": "pl_peak_intensity",
+     "value_num": 110,
+     "unit": "a.u.",
+     "from_figure": "Fig. 1b",
+     "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
+    }
+   ]
   },
   {
    "label": "CDs_CA0.3",
@@ -1131,7 +1203,15 @@
      "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
     }
    ],
-   "outcomes": []
+   "outcomes": [
+    {
+     "property": "pl_peak_intensity",
+     "value_num": 220,
+     "unit": "a.u.",
+     "from_figure": "Fig. 1b",
+     "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
+    }
+   ]
   },
   {
    "label": "CDs_CA0.4",
@@ -1154,7 +1234,15 @@
      "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
     }
    ],
-   "outcomes": []
+   "outcomes": [
+    {
+     "property": "pl_peak_intensity",
+     "value_num": 300,
+     "unit": "a.u.",
+     "from_figure": "Fig. 1b",
+     "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
+    }
+   ]
   },
   {
    "label": "CDs_CA0.6",
@@ -1177,7 +1265,15 @@
      "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
     }
    ],
-   "outcomes": []
+   "outcomes": [
+    {
+     "property": "pl_peak_intensity",
+     "value_num": 520,
+     "unit": "a.u.",
+     "from_figure": "Fig. 1b",
+     "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
+    }
+   ]
   },
   {
    "label": "CDs_CA1.0",
@@ -1200,7 +1296,15 @@
      "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
     }
    ],
-   "outcomes": []
+   "outcomes": [
+    {
+     "property": "pl_peak_intensity",
+     "value_num": 750,
+     "unit": "a.u.",
+     "from_figure": "Fig. 1b",
+     "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
+    }
+   ]
   },
   {
    "label": "CDs_CA1.3",
@@ -1223,7 +1327,15 @@
      "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
     }
    ],
-   "outcomes": []
+   "outcomes": [
+    {
+     "property": "pl_peak_intensity",
+     "value_num": 620,
+     "unit": "a.u.",
+     "from_figure": "Fig. 1b",
+     "quote": "(b) impacts of different amount of CA on the fluorescence intensity of CDs(AA–PEI–CA)."
+    }
+   ]
   },
   {
    "label": "CDs_T100",
@@ -1422,6 +1534,12 @@
      "unit": "a.u.",
      "from_figure": "Fig. 2b",
      "quote": "(b) impacts of different molecular weight of PEI on the fluorescence intensity of CDs(AA–PEI–CA)."
+    },
+    {
+     "property": "emission_red_shift_of_PEI_1.8k_relative_to_0.6k",
+     "value_num": 15,
+     "unit": "nm",
+     "quote": "while the PEI with high molecular weight (Mw = 1.8 k) produces the CDs with weaker fluorescence intensity (QYs = 22.2%) and wavelength red-shifting 15 nm"
     }
    ]
   },
@@ -1526,7 +1644,74 @@
      "quote": "Under the same reaction condition, the products of AA and CA exhibit no fluorescence, but PEI and CA produce CDs with blue fluorescence, and AA and PEI produce CDs with extreme weak green fluorescence (QYs = 1.43%)."
     }
    ],
-   "succeeded": false
+   "succeeded": false,
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve ascorbic acid and citric acid in distilled water (control without PEI; the control's own quantities are not stated, those of the reference preparation are assumed).",
+     "quote": "0.15 g (0.85 mmol) of AA, 0.18 g (0.1 mmol) of PEI and 0.8 g (3.8 mmol) of CA was dissolved in 10 mL of distilled H2O",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the mixture at room temperature (as in the reference preparation; not restated for this control).",
+     "quote": "the mixture was stirred at room temperature for 5 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 5,
+       "unit": "min",
+       "quote": "the mixture was stirred at room temperature for 5 min"
+      },
+      {
+       "name": "temperature",
+       "value_text": "room temperature",
+       "quote": "the mixture was stirred at room temperature for 5 min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Reaction in an autoclave 'under the same reaction condition' as the reference preparation (renvoi explicite, voir doutes).",
+     "quote": "Then the solution was transferred to an autoclave for further reaction at 150 °C for 1 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 150,
+       "unit": "°C",
+       "quote": "reaction at 150 °C for 1 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "reaction at 150 °C for 1 h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": null,
+       "quote": "the solution was transferred to an autoclave"
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
+    }
+   ]
   },
   {
    "label": "CDs_PEI-CA",
@@ -1552,6 +1737,38 @@
      "property": "fluorescence_colour",
      "value_text": "blue fluorescence",
      "quote": "Under the same reaction condition, the products of AA and CA exhibit no fluorescence, but PEI and CA produce CDs with blue fluorescence, and AA and PEI produce CDs with extreme weak green fluorescence (QYs = 1.43%)."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "react",
+     "description": "Hydrothermal ('water heat') treatment of PEI and CA, temperature and time read from the Fig. 7 scheme; quantities, solvent and work-up of this control are not stated.",
+     "quote": "Fig. 7 The possible synthesis mechanism of CDs(AA–PEI–CA).",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 200,
+       "unit": "°C",
+       "from_figure": "Fig. 7",
+       "quote": "Fig. 7 The possible synthesis mechanism of CDs(AA–PEI–CA)."
+      },
+      {
+       "name": "duration",
+       "value_num": 40,
+       "unit": "min",
+       "from_figure": "Fig. 7",
+       "quote": "Fig. 7 The possible synthesis mechanism of CDs(AA–PEI–CA)."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "cooling_rate",
+      "fill_fraction",
+      "pressure",
+      "autoclave_volume"
+     ]
     }
    ]
   }
@@ -1586,7 +1803,7 @@
   {
    "type": "tendance_observee",
    "route": "CDs_AA-PEI-CA",
-   "text": "Selon le texte, l'intensité de fluorescence augmente avec la quantité d'acide citrique puis diminue au-delà de 0,8 g, et l'émission se déplace vers le bleu ; la figure 1b n'a pas pu être lue branche par branche (couleurs des courbes non attribuables avec certitude).",
+   "text": "Selon le texte, l'intensité de fluorescence augmente avec la quantité d'acide citrique puis diminue au-delà de 0,8 g, et l'émission se déplace vers le bleu ; la Fig. 1b, lue courbe par courbe, le confirme (≈ 80 à 0,1 g, ≈ 110 à 0,2 g, ≈ 220 à 0,3 g, ≈ 300 à 0,4 g, ≈ 440 à 0,5 g, ≈ 520 à 0,6 g, maximum ≈ 780 à 0,8 g, ≈ 750 à 1,0 g, ≈ 620 à 1,3 g).",
    "quote": "with the increase of the amount of CA, the fluorescence of prepared CDs first increases, and then decreases when the amount reaches 0.8 g"
   },
   {
@@ -1610,7 +1827,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "CDs_AA-PEI-CA",
-   "text": "Probablement, l'acide ascorbique en milieu acide et à 150 °C s'oxyde en acide déhydroascorbique puis diacétogulonique ; l'acide citrique, plus stable, fournit des groupes carboxyle qui réagissent avec les amines de la PEI pour former des amides (la bande à 1713 cm−1) et des fluorophores de type pyridone, tandis que la déshydratation-carbonisation conduit au noyau. On attend aussi qu'un excès de CA favorise des points bleus (comme PEI + CA), ce qui explique le décalage vers le bleu."
+   "text": "Hypothèse de l'analyse, non démontrée par l'article : le système se comporte d'abord comme un point de carbone acide citrique–PEI, car l'acide citrique, en large excès, apporte environ 63 % du carbone et ses fonctions acides sont environ 3,6 fois plus nombreuses que les N–H acylables de la PEI ; il formerait avec les amines de la PEI des amides et des imides cycliques, puis des fluorophores de type citrazinique greffés sur la PEI (émission bleue, ≈ 450–475 nm, comme la ligne 1 du Tableau 1 à 474 nm ; Song et al. 2015, Meierhofer et al. 2020). L'acide ascorbique, qui s'oxyde en acide déhydroascorbique puis en acide dicétogulonique, pourrait réagir avec les amines de la PEI (réactions de type Maillard) pour donner des chromophores azotés conjugués à émission verte (≈ 510–540 nm, comme CDs(AA–PEI)). Le spectre mesuré serait la superposition de ces deux familles, ce que les auteurs reconnaissent (« mixed spectra of b-CDs … and g-CDs »), puis la déshydratation et la réticulation donneraient des nanoparticules de type polymère-carbone de ≈ 3–4 nm. Le rôle de « réducteur protecteur » de l'acide citrique n'est pas nécessaire pour expliquer les observations ; son effet favorable pourrait venir de l'acidité, de la chélation de traces de métaux ou de sa contribution propre aux fluorophores."
   },
   {
    "type": "securite_analyse",
@@ -1625,7 +1842,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les quantités du protocole de référence sont données pour 10 mL d'eau distillée, mais la PEI achetée est décrite avec Mw = 6 k, 8 k, 10 k alors que l'article utilise Mw = 1800 (ou 1,8 k) ; ni le fournisseur ni la pureté de la PEI de 1800 ne sont donc établis. La température et la durée de séchage, le volume de méthanol, le volume de l'autoclave et la vitesse d'agitation ne sont pas indiqués ; le rendement massique de la synthèse n'est pas donné."
+   "text": "Les quantités du protocole de référence sont données pour 10 mL d'eau distillée, mais la PEI achetée est décrite avec Mw = 6 k, 8 k, 10 k alors que l'article utilise Mw = 1800 (ou 1,8 k) ; ni le fournisseur ni la pureté de la PEI de 1800 (ou de 0,6 k) ne sont donc établis et ces deux informations sont déclarées non citées. La température et la durée de séchage, le volume de méthanol, le volume de l'autoclave et la vitesse d'agitation ne sont pas indiqués ; le rendement massique de la synthèse n'est pas donné."
   },
   {
    "type": "limite_reproductibilite",
@@ -1635,7 +1852,67 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les valeurs d'intensité lues sur Fig. 1c, 2b et 3a sont des intensités de photoluminescence en unités arbitraires, lues graphiquement à environ 5 à 10 % près ; leurs échelles diffèrent d'une figure à l'autre (la référence vaut ≈ 870 sur la Fig. 3a et ≈ 570 sur la Fig. 2b) et ne sont comparables qu'à l'intérieur d'une même figure. Les Fig. 1b (série en acide citrique) et 2a (PEI contre EDA) n'ont pas pu être lues de façon fiable."
+   "text": "Les valeurs d'intensité lues sur Fig. 1c, 2b et 3a sont des intensités de photoluminescence en unités arbitraires, lues graphiquement à environ 5 à 10 % près ; leurs échelles diffèrent d'une figure à l'autre (la référence vaut ≈ 870 sur la Fig. 3a et ≈ 570 sur la Fig. 2b) et ne sont comparables qu'à l'intérieur d'une même figure. La Fig. 1b (série en acide citrique) a été lue courbe par courbe ; la Fig. 2a (PEI contre EDA) n'a pas été lue en valeurs, sa légende contredisant le texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_AA-PEI-CA",
+   "text": "L'acide citrique est présenté comme « réducteur » protégeant l'acide ascorbique, ce qui est chimiquement peu tenable : c'est un réducteur bien plus faible que l'acide ascorbique, il ne peut pas consommer les oxydants à sa place, et l'oxygène dissous de 10 mL d'eau n'oxyderait qu'environ 0,6 % de l'acide ascorbique. De plus l'acide citrique apporte environ 63 % du carbone du mélange (acide ascorbique 14 %, PEI 23 %). Le titre « reducing reagent » et le mécanisme de protection sont une interprétation des auteurs non démontrée ; un effet d'acidité, de chélation ou de formation de fluorophores citrique–PEI est tout aussi plausible."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_AA-PEI-CA",
+   "text": "La « synergie » PEI–acide citrique n'est pas démontrée par les témoins de l'article : le rapport de rendements quantiques (1,43 % contre 22,2 %) compare des essais qui changent à la fois la présence d'acide citrique, la température (100 contre 150 °C selon la Fig. 7), la masse d'acide ascorbique (0,2 contre 0,15 g) et le pH (5 ajusté contre non ajusté), et le schéma Fig. 7 place PEI + CA à 200 °C, 40 min alors que le texte écrit « same reaction condition ». Le seul témoin à conditions égales est la ligne 5 du Tableau 1 (sans acide citrique, 150 °C, 60 min), dont le rendement quantique n'est pas mesuré."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_AA-PEI-CA",
+   "text": "La section Chemicals annonce une PEI de Mw = 6 k, 8 k, 10 k (Aladdin, 99 %) alors que la synthèse utilise la PEI 1800 et l'étude de masse molaire 0,6 k, 1,8 k et 10 k : ni l'origine ni la nature (ramifiée ou linéaire) de la PEI de 1800 ne sont donc données, et un chimiste qui suit la liste des réactifs achèterait une PEI différente. « 6 k, 8 k » est peut-être une coquille pour « 0.6 k, 1.8 k », sans certitude ; la Fig. 2b montre que la masse molaire change l'intensité et l'émission (≈ 15 nm)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_AA-PEI-CA",
+   "text": "Réserves à connaître avant de comparer les valeurs : (1) l'émission de la référence est de 504 nm (Tableau 1) mais 512 nm dans le paragraphe PEI contre EDA, et elle varie d'un facteur ≈ 1,7 en intensité d'une figure à l'autre, ce qui est du même ordre que les écarts entre lignes voisines du Tableau 1 ; (2) 0,8 g d'acide citrique valent 3,8 mmol pour le monohydraté (≈ 210 g/mol) alors que la formule C6H8O7 est celle de l'anhydre (4,2 mmol) : la forme utilisée n'est pas écrite ; (3) la bande à 1713 cm−1 attribuée à –CONH– correspond plutôt à un C=O d'acide carboxylique libre ou d'imide (amide I vers 1630–1690 cm−1), elle ne prouve donc pas des amides ; (4) le rendement quantique est mesuré à 420 nm contre la rhodamine 6G, dont l'absorption est faible à cette longueur d'onde ; (5) la purification se limite à une précipitation au méthanol et une centrifugation, sans dialyse : l'émission peut venir de fluorophores moléculaires libres ou greffés plutôt que d'un noyau carboné."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_EDA",
+   "text": "La légende de la Fig. 2a associe la courbe noire (≈ 488 nm, ≈ 540 u.a.) à CDs(AA–PEI–CA) et la courbe rouge (≈ 512 nm, ≈ 920 u.a.) à CDs(AA–EDA–CA), l'inverse du texte (PEI : 512 nm et meilleure intensité ; EDA : 488 nm). Les valeurs du texte sont conservées, mais l'intensité de la courbe noire est proche de celle de la référence sur la Fig. 2b, ce qui laisse penser que la légende est juste et le texte inversé : la conclusion « PEI is an ideal deactivator » n'est donc pas établie par la figure. La quantité d'éthylènediamine n'est pas donnée, et à masse égale l'EDA apporte plus d'azote primaire que la PEI."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_AA-PEI",
+   "text": "Le pH 5 n'est pas atteignable avec 0,2 g d'acide ascorbique et 0,18 g de PEI seuls (il manque environ 0,9 mmol d'acide, d'après Rezvani Amin et al. 2013 pour la protonation de la PEI ramifiée) : l'acide ou la base utilisé, le solvant, le volume, le récipient et la purification ne sont pas décrits et l'optimisation est renvoyée aux Fig. S1 à S5, absentes du dépôt. La voie n'est pas reproductible telle qu'écrite."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_AA-PEI",
+   "text": "La ligne du Tableau 2 attribuée ici à CDs(AA–PEI) (τ1 = 0,3446 ns, τ2 = 3,614 ns, moyenne 2,914 ns, amplitudes 21,4 % et 78,6 %) est étiquetée CDs(PEI–CA) dans l'article ; le texte et la légende de la Fig. S10 parlent de CDs(AA–PEI), qui a deux durées de vie. Coquille probable de l'étiquette, non tranchée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_PEI-CA",
+   "text": "Les conditions de ce témoin ne sont données que par le schéma Fig. 7 (200 °C, 40 min), pas par le texte, qui écrit « under the same reaction condition » ; la ligne 1 du Tableau 1 (PEI + CA, 150 °C, 60 min, 474 nm) n'est donc pas forcément le même échantillon. Les quantités, le solvant et le traitement après réaction ne sont pas cités, et la purification de la référence n'est pas reprise."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AA-CA_control",
+   "text": "Les quantités de ce témoin et son traitement après réaction ne sont pas cités : les étapes de dissolution, d'agitation et de réaction (150 °C, 1 h) sont reprises de la préparation de référence par le renvoi « under the same reaction condition », sans autre confirmation, et la purification n'est pas reprise car l'article ne la mentionne pas. Le schéma Fig. 7 ne montre pas cet essai."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_AA-PEI_140C",
+   "text": "Pour cet essai à 140 °C, l'article ne cite ni la quantité d'acide ascorbique, ni le pH, ni les autres paramètres (renvoi aux Fig. S3 et S4, non lisibles) : les conditions de CDs(AA–PEI) sont reprises par hypothèse, à l'exception du paramètre varié. La phrase de l'article dit « 140 °C or 80 min » sans préciser si le résultat (solution noire, fluorescence faible) vaut pour chaque variable seule."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CDs_AA-PEI_80min",
+   "text": "Pour cet essai à 80 min, l'article ne cite ni la quantité d'acide ascorbique, ni le pH, ni les autres paramètres (renvoi aux Fig. S3 et S4, non lisibles) : les conditions de CDs(AA–PEI) sont reprises par hypothèse, à l'exception du paramètre varié. La phrase de l'article dit « 140 °C or 80 min » sans préciser si le résultat (solution noire, fluorescence faible) vaut pour chaque variable seule."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AA_only_control",
+   "text": "Pour ce témoin (« under the same reaction environment »), l'article ne cite ni la quantité d'acide ascorbique, ni le pH, ni la température et la durée exactes ; les conditions de CDs(AA–PEI) (pH 5, 100 °C, 60 min) sont reprises par hypothèse, sans confirmation du texte."
   }
  ],
  "method_sources": [
@@ -1649,43 +1926,51 @@
  "doubts": [
   {
    "where": "Chemicals vs Preparation",
-   "issue": "La PEI achetée est décrite « Mw = 6 k, 8 k, 10 k, 99% » (Aladdin), alors que la synthèse utilise « PEI (Mw = 1800) » et les essais 0,6 k, 1,8 k, 10 k. Pureté 99 % et fournisseur Aladdin attribués à la PEI utilisée, faute d'autre indication."
+   "issue": "La PEI achetée est décrite « Mw = 6 k, 8 k, 10 k, 99% » (Aladdin), alors que la synthèse utilise « PEI (Mw = 1800) » et les essais 0,6 k, 1,8 k, 10 k : la phrase ne couvre pas la PEI utilisée. Fournisseur et pureté de la PEI de 1800 (et 1.8 k) sont donc déclarés non cités (« 6 k, 8 k » est peut-être une coquille pour « 0.6 k, 1.8 k », sans certitude)."
   },
   {
-   "where": "CDs_AA-PEI-CA outcomes",
-   "issue": "Longueur d'onde d'émission de la référence : 504 nm (Table 1 no.3 et texte de la Fig. 4) mais « λem ≈ 512 nm » dans le paragraphe sur PEI contre EDA ; les deux sont gardées (la seconde sous un nom de propriété distinct)."
+   "where": "CDs_AA-PEI-CA outcomes (504 contre 512 nm)",
+   "issue": "Longueur d'onde d'émission de la référence : 504 nm (Table 1 no.3 et texte de la Fig. 4) mais « λem ≈ 512 nm » dans le paragraphe sur PEI contre EDA ; les deux sont gardées (la seconde sous un nom de propriété distinct). La référence, préparée dans les mêmes conditions, émet selon les figures entre ≈ 490 et 512 nm : la variabilité de l'échantillon de référence est du même ordre que les écarts entre lignes voisines du Tableau 1."
   },
   {
    "where": "CDs_EDA / Fig. 2a",
-   "issue": "Dans la Fig. 2a la légende associe la courbe noire à CDs(AA-PEI-CA) (maximum ≈ 488 nm, intensité ≈ 540) et la rouge à CDs(AA-EDA-CA) (≈ 512 nm, ≈ 920), l'inverse du texte (PEI : 512 nm et meilleure intensité ; EDA : 488 nm). Valeurs du texte retenues, figure non lue."
+   "issue": "Dans la Fig. 2a la légende associe la courbe noire à CDs(AA-PEI-CA) (maximum ≈ 488 nm, intensité ≈ 540) et la rouge à CDs(AA-EDA-CA) (≈ 512 nm, ≈ 920), l'inverse du texte (PEI : 512 nm et meilleure intensité ; EDA : 488 nm). Valeurs du texte retenues (la citation fait foi) ; aucune valeur lue sur la figure. L'intensité de la courbe noire (≈ 540) est proche de celle de la référence sur la Fig. 2b (≈ 570), ce qui laisse penser que la légende est juste et le texte inversé, sans certitude."
   },
   {
    "where": "CDs_CA* branches (Fig. 1b)",
-   "issue": "Les valeurs 0,1 ; 0,2 ; 0,3 ; 0,4 ; 0,6 ; 1,0 ; 1,3 g de CA ne figurent que dans la légende de la Fig. 1b ; les courbes sont décroissantes depuis 0,1 g dans la figure alors que le texte parle d'une augmentation jusqu'à 0,8 g, et les couleurs ne permettent pas d'attribuer les intensités : aucune valeur lue, branches sans résultat."
+   "issue": "Les valeurs 0,1 ; 0,2 ; 0,3 ; 0,4 ; 0,6 ; 1,0 ; 1,3 g de CA ne figurent que dans la légende de la Fig. 1b. Sur la figure agrandie, les neuf courbes se distinguent par leur couleur et leur ordre d'intensité : intensité croissante de 0,1 g (≈ 80) à 0,8 g (≈ 775, maximum), puis décroissante (≈ 745 à 1,0 g, ≈ 620 à 1,3 g), ce qui est cohérent avec le texte ; les valeurs sont lues à 2 chiffres significatifs (précision ≈ 5 à 10 %). La référence à 0,8 g vaut ≈ 780 sur cette figure, contre ≈ 870 (Fig. 3a) et ≈ 570 (Fig. 2b) : échelles non comparables d'une figure à l'autre."
   },
   {
    "where": "Figures lues",
-   "issue": "Fig. 1c (0,07 ; 0,1 ; 0,3 g d'AA), Fig. 2b (PEI 0,6 k ; 1,8 k ; 10 k), Fig. 3a (100 à 180 °C) : intensités de pic en unités arbitraires, précision de lecture ≈ 5 à 10 %. Sur la Fig. 1c les courbes 0,15 et 0,2 g se superposent presque (≈ 500) : pas lues ; 0,2 g de la série AA est une branche sans résultat. 160 °C sur Fig. 3a lu à ≈ 580 (courbe marron), 180 °C ≈ 100."
+   "issue": "Fig. 1b (série CA), Fig. 1c (0,07 ; 0,1 ; 0,3 g d'AA), Fig. 2b (PEI 0,6 k ; 1,8 k ; 10 k), Fig. 3a (100 à 180 °C) : intensités de pic en unités arbitraires, précision de lecture ≈ 5 à 10 %. Sur la Fig. 1c les courbes 0,15 et 0,2 g se superposent presque (≈ 500) : pas lues ; 0,2 g de la série AA est une branche sans résultat. 160 °C sur Fig. 3a lu à ≈ 580 (courbe marron), 180 °C ≈ 100."
   },
   {
    "where": "Table 2 / texte",
-   "issue": "La ligne du tableau 2 est étiquetée CDs(PEI–CA) (τ moyen 2,914 ns), alors que le texte et la légende de la Fig. S10 parlent de CDs(AA–PEI) et que le tableau attribue deux durées de vie à cet échantillon, comme le texte pour CDs(AA–PEI). Lecture retenue : les valeurs de cette ligne sont attribuées à CDs_AA-PEI ; autre lecture possible : CDs_PEI-CA."
+   "issue": "La ligne du tableau 2 est étiquetée CDs(PEI–CA) (τ moyen 2,914 ns), alors que le texte (« CDs(AA–PEI) has two fluorescence lifetimes (τ1, τ2) » ; moyennes 4,349 ns et 2,914 ns pour CDs(AA–PEI–CA) et CDs(AA–PEI)) et la légende de la Fig. S10 parlent de CDs(AA–PEI), et que cette ligne a deux durées de vie comme le texte pour CDs(AA–PEI). Lecture retenue : les valeurs de cette ligne (τ1, τ2, A1, A2, moyenne) sont attribuées à CDs_AA-PEI ; coquille probable mais non tranchée (CDs(PEI–CA) est un échantillon réel de l'article)."
   },
   {
    "where": "CDs_T1_no1_noAA / CDs_PEI-CA",
-   "issue": "Table 1 no.1 (PEI + CA, 474 nm) et le témoin « PEI et CA » du paragraphe du mécanisme décrivent probablement le même échantillon ; gardés en deux branches par prudence. De même, Table 1 no.3 a les conditions de la référence et est rattaché à CDs_AA-PEI-CA."
+   "issue": "Table 1 no.1 (PEI + CA, 150 °C, 60 min, 474 nm) et le témoin « PEI et CA » du paragraphe du mécanisme sont gardés en deux branches distinctes : le schéma Fig. 7 donne pour PEI + CA « 200℃,40min », différent de Table 1 no.1, donc l'identité des deux échantillons n'est pas établie. Les conditions de CDs_PEI-CA (200 °C, 40 min) sont lues sur le schéma Fig. 7 (from_figure) ; le texte dit « under the same reaction condition ». Table 1 no.3 a les conditions de la référence et est rattaché à CDs_AA-PEI-CA."
   },
   {
    "where": "AA-CA_control, CDs_PEI-CA",
-   "issue": "« Under the same reaction condition » : quantités et traitement de ces témoins non indiqués ; les branches héritent des étapes de la référence, ce que l'article n'affirme pas pour la purification."
+   "issue": "« Under the same reaction condition » : quantités et traitement de ces témoins non indiqués. AA-CA_control reprend par renvoi les étapes de dissolution, d'agitation et de réaction (150 °C, 1 h) de la référence ; la purification (méthanol, centrifugation, séchage) n'est pas reprise, l'article ne dit pas que ces témoins ont été purifiés. CDs_PEI-CA a sa propre étape de réaction (200 °C, 40 min, Fig. 7) et aucune autre étape. Le schéma Fig. 7 ne montre pas l'essai AA + CA."
   },
   {
-   "where": "CDs_AA-PEI_140C / _80min",
-   "issue": "Le texte donne 140 °C et 80 min sans préciser la quantité d'AA ni le pH de ces essais (Fig. S3, S4) ; ils héritent des conditions de CDs(AA–PEI) (100 °C, 60 min), à l'exception du paramètre varié."
+   "where": "CDs_AA-PEI_140C / _80min / AA_only_control",
+   "issue": "Le texte donne 140 °C et 80 min (Fig. S3, S4) et « same reaction environment » pour AA seul, sans préciser la quantité d'AA, le pH ni les autres paramètres de ces essais ; ils héritent des conditions de CDs(AA–PEI) (AA 0,2 g, PEI 0,18 g, pH 5, 100 °C, 60 min), à l'exception du paramètre varié : héritage non écrit par l'article. La phrase dit « or » : l'effet noir/faible fluorescence n'est pas précisé pour chaque variable seule, le résultat est repris pour les deux branches par défaut."
   },
   {
    "where": "Distilled water / Milli-Q",
    "issue": "La préparation parle de « distilled H2O » alors que la section Chemicals indique « Milli-Q water » pour toutes les solutions ; « distilled water » retenu pour la voie, pureté non citée."
+  },
+  {
+   "where": "CDs_AA-PEI-CA reagent citric acid (CA)",
+   "issue": "0,8 g (3,8 mmol) d'acide citrique correspond à M ≈ 210 g/mol, soit l'acide citrique monohydraté, alors que la formule extraite C6H8O7 est celle de l'anhydre (0,8 g = 4,2 mmol). L'article ne donne pas la forme hydratée ; la valeur de l'article est conservée et la formule laissée à l'anhydre."
+  },
+  {
+   "where": "CDs_PEI-CA / AA + PEI / Fig. 7",
+   "issue": "Le schéma Fig. 7 et le résumé graphique indiquent « 100℃,60min » pour AA + PEI (cohérent avec CDs_AA-PEI) et « 200℃,40min » pour PEI + CA, alors que le texte écrit « under the same reaction condition » (référence : 150 °C, 1 h). Les valeurs du schéma sont lues sur figure ; la comparaison des témoins n'est pas à conditions égales."
   }
  ]
 }
