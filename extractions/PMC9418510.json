@@ -19,8 +19,9 @@
    "scale": null,
    "yield": {
     "value": 80,
-    "unit": "%",
-    "quote": "Typical isolated mass yields based on the amount of SiO2 used are at or above 80%."
+    "unit": "% (at or above)",
+    "quote": "Typical isolated mass yields based on the amount of SiO2 used are at or above 80%.",
+    "value_text": "at or above 80%"
    },
    "succeeded": true,
    "reagents": [
@@ -248,11 +249,6 @@
      "quote": "The SEM images of the crystalline ZSM-5 products from 50 min ball milled mixtures also show a progression from irregular and incompletely formed particles after 24 h of heating to faceted ∼8 μm aggregated crystallites after 48 h and finally to fairly uniform ∼13 μm particles after 72 h of heating at 180 °C (Fig. 2)."
     },
     {
-     "property": "xrd_quartz_peaks",
-     "value_text": "quartz peaks marked by asterisks in the XRD of the 48 h product (Fig. 1C)",
-     "quote": "Asterisks in (C) and (D) indicate quartz peaks."
-    },
-    {
      "property": "precursor_xrd_after_grinding",
      "value_text": "clear presence of crystalline Na2SO4 with loss of all reagent XRD peaks",
      "quote": "after another 25 min of grinding there is clear presence of crystalline Na2SO4 with loss of all reagent XRD peaks"
@@ -353,11 +349,6 @@
      "value_num": 13,
      "unit": "μm",
      "quote": "The SEM images of the crystalline ZSM-5 products from 50 min ball milled mixtures also show a progression from irregular and incompletely formed particles after 24 h of heating to faceted ∼8 μm aggregated crystallites after 48 h and finally to fairly uniform ∼13 μm particles after 72 h of heating at 180 °C (Fig. 2)."
-    },
-    {
-     "property": "xrd_quartz_peaks",
-     "value_text": "quartz peaks marked by asterisks in the XRD of the 72 h product (Fig. 1D)",
-     "quote": "Asterisks in (C) and (D) indicate quartz peaks."
     }
    ]
   },
@@ -492,6 +483,18 @@
      "property": "precursor_xrd_after_grinding",
      "value_text": "XRD peaks for both Na2SiO3 and Al2(SO4)3 are present",
      "quote": "XRD peaks for both Na2SiO3 and Al2(SO4)3 are present in the unground sample"
+    },
+    {
+     "property": "xrd_phase_after_48h_heating",
+     "value_text": "dense crystalline quartz",
+     "from_figure": "Fig. 1C, trace a",
+     "quote": "The XRD of washed products after heating at 180 °C for periods of: 24 h (B), 48 h (C), and 72 h (D). Asterisks in (C) and (D) indicate quartz peaks."
+    },
+    {
+     "property": "xrd_phase_after_72h_heating",
+     "value_text": "dense crystalline quartz",
+     "from_figure": "Fig. 1D, trace a",
+     "quote": "The XRD of washed products after heating at 180 °C for periods of: 24 h (B), 48 h (C), and 72 h (D). Asterisks in (C) and (D) indicate quartz peaks."
     }
    ]
   },
@@ -539,6 +542,18 @@
      "property": "precursor_xrd_after_grinding",
      "value_text": "crystalline reagent peaks disappear or are significantly reduced in intensity",
      "quote": "After 25 min of ball-mill grinding, the crystalline reagent peaks disappear or are significantly reduced in intensity"
+    },
+    {
+     "property": "xrd_phase_after_48h_heating",
+     "value_text": "essentially amorphous",
+     "from_figure": "Fig. 1C, trace b",
+     "quote": "The XRD of washed products after heating at 180 °C for periods of: 24 h (B), 48 h (C), and 72 h (D). Asterisks in (C) and (D) indicate quartz peaks."
+    },
+    {
+     "property": "xrd_phase_after_72h_heating",
+     "value_text": "dense crystalline quartz",
+     "from_figure": "Fig. 1D, trace b",
+     "quote": "The XRD of washed products after heating at 180 °C for periods of: 24 h (B), 48 h (C), and 72 h (D). Asterisks in (C) and (D) indicate quartz peaks."
     }
    ]
   },
@@ -704,6 +719,11 @@
      "property": "xrd_phase",
      "value_text": "ZSM-5 + mordenite",
      "quote": "7 | ZSM-5 + mordenite | Mordenite | Amorphous + trace ZSM-5 | ZSM-5"
+    },
+    {
+     "property": "crystallinity_qualifier",
+     "value_text": "Poorly crystalline ZSM-5 and mordenite",
+     "quote": "Poorly crystalline ZSM-5 and mordenite are observed with a Na2O/Al2O3 = 7 reaction ratio."
     }
    ]
   },
@@ -1748,19 +1768,13 @@
      "order": 1,
      "action": "calcine",
      "description": "Calcine the as-synthesized zeolite in air at 550 °C.",
-     "quote": "Selected zeolite products were heated to higher temperatures (550 °C, 6 h) to examine the thermal stability of their porous crystalline structures.",
+     "quote": "products from a 50 min ball mill pre-reaction followed by 180 °C heating for 24, 48, or 72 h were subsequently calcined at higher 550 °C temperatures in air",
      "parameters": [
       {
        "name": "temperature",
        "value_num": 550,
        "unit": "°C",
-       "quote": "Selected zeolite products were heated to higher temperatures (550 °C, 6 h) to examine the thermal stability of their porous crystalline structures."
-      },
-      {
-       "name": "duration",
-       "value_num": 6,
-       "unit": "h",
-       "quote": "Selected zeolite products were heated to higher temperatures (550 °C, 6 h) to examine the thermal stability of their porous crystalline structures."
+       "quote": "products from a 50 min ball mill pre-reaction followed by 180 °C heating for 24, 48, or 72 h were subsequently calcined at higher 550 °C temperatures in air"
       },
       {
        "name": "atmosphere",
@@ -1771,7 +1785,8 @@
      "equipment": [],
      "not_stated": [
       "heating_rate",
-      "cooling_rate"
+      "cooling_rate",
+      "duration"
      ]
     }
    ],
@@ -1781,6 +1796,9 @@
      "value_text": "unstable, collapsed to a dense quartz phase",
      "quote": "The sample from a 24 h synthesis was unstable and collapsed to a dense quartz phase after the calcination."
     }
+   ],
+   "missing_fields": [
+    "calcination_duration"
    ]
   },
   {
@@ -2742,7 +2760,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Sans broyage ou avec 25 min de broyage, le mélange reste amorphe après 24 h à 180 °C puis donne du quartz dense, alors qu'après 50 min de broyage on obtient du ZSM-5 (cristallinité relative 68 % et 198 m2 g−1 à 24 h, 95 % et 324 m2 g−1 à 48 h, 93 % et 311 m2 g−1 à 72 h). À SiO2/Al2O3 = 30 sans NaOH, le produit passe de amorphe (Na2O/Al2O3 = 3) à ZSM-5 (5 et 6), ZSM-5 + mordénite (7) puis mordénite (9). Avec NaOH, la mordénite apparaît dès 5 (avec du quartz) et 7. À SiO2/Al2O3 = 40, le ZSM-5 monophasé n'est obtenu qu'avec NaOH à Na2O/Al2O3 = 7 et 8 (ZSM-5-7 et ZSM-5-8). Les surfaces BET des produits monophasés sont de 287 à 324 m2 g−1 sans calcination."
+   "text": "Sans broyage ou avec 25 min de broyage, le mélange reste amorphe après 24 h à 180 °C puis donne du quartz dense (dès 48 h sans broyage, seulement à 72 h après 25 min de broyage, d'après la Fig. 1), alors qu'après 50 min de broyage on obtient du ZSM-5 (cristallinité relative 68 % et 198 m2 g−1 à 24 h, 95 % et 324 m2 g−1 à 48 h, 93 % et 311 m2 g−1 à 72 h). À SiO2/Al2O3 = 30 sans NaOH, le produit passe de amorphe (Na2O/Al2O3 = 3) à ZSM-5 (5 et 6), ZSM-5 + mordénite (7) puis mordénite (9). Avec NaOH, la mordénite apparaît dès 5 (avec du quartz) et 7. À SiO2/Al2O3 = 40, le ZSM-5 monophasé n'est obtenu qu'avec NaOH à Na2O/Al2O3 = 7 et 8 (ZSM-5-7 et ZSM-5-8). Les surfaces BET des produits monophasés sont de 287 à 324 m2 g−1 sans calcination."
   },
   {
    "type": "tendance_observee",
@@ -2765,7 +2783,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Plusieurs informations manquent pour refaire exactement les synthèses : atmosphère, rapport masse de billes sur masse de poudre et éventuelles pauses du broyage ; vitesse de montée et refroidissement du four ; taux de remplissage de l'autoclave ; mode de séparation du solide, volume et nombre de lavages ; durée du séchage à 80 °C ; pureté de la silice. Pour les échantillons non broyés ou broyés 25 min, l'article ne dit pas quelle durée de chauffage (24 à 72 h) correspond à chaque résultat. Les figures du Supporting Information (S1 à S7 : diffractogrammes des produits de rapport 40, isothermes, spectres IR) sont des images absentes du dépôt de texte ; leurs légendes sont lues. L'échange acide cite « ammonium nitrate » dans les Méthodes et « NH4Cl » dans les Résultats, sans lavage ni température précisés."
+   "text": "Plusieurs informations manquent pour refaire exactement les synthèses : atmosphère, rapport masse de billes sur masse de poudre et éventuelles pauses du broyage ; vitesse de montée et refroidissement du four ; taux de remplissage de l'autoclave ; mode de séparation du solide, volume et nombre de lavages ; durée du séchage à 80 °C ; pureté de la silice. Pour les échantillons non broyés ou broyés 25 min, le texte ne dit pas quelle durée de chauffage (24 à 72 h) correspond à chaque résultat ; elle se lit seulement sur la Fig. 1B à 1D (non broyé : quartz dès 48 h ; broyé 25 min : amorphe à 48 h, quartz à 72 h). Les figures du Supporting Information (S1 à S7 : diffractogrammes des produits de rapport 40, isothermes, spectres IR) sont des images absentes du dépôt de texte ; leurs légendes sont lues. L'échange acide cite « ammonium nitrate » dans les Méthodes et « NH4Cl » dans les Résultats, sans lavage ni température précisés."
   },
   {
    "type": "mecanisme_auteurs",
@@ -2776,7 +2794,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZSM-5-5",
-   "text": "Hypothèse de chimiste : le bilan 3 Na2SiO3·9H2O + Al2(SO4)3·18H2O → 3 Na2SO4 + « Al2(SiO3)3 » + 45 H2O libère environ 63 mmol d'eau (5,03 × 9 + 0,98 × 18) pour 0,98 mmol d'Al2(SO4)3, c'est-à-dire de l'ordre d'un gramme d'eau dans l'autoclave de 30 mL. Cette eau, avec la basicité du silicate résiduel (ou de NaOH), formerait à 180 °C un milieu hydrothermal très concentré où le gel aluminosilicate se dissout puis recristallise ; les cations Na+ stabiliseraient les unités de construction du ZSM-5 ou de la mordénite selon le rapport Na/Al, et un manque de sodium libre laisserait un solide amorphe. À sodium très élevé ou silice trop basique, le quartz serait la phase thermodynamiquement favorisée, d'où les produits denses des séries 40 sans NaOH."
+   "text": "Hypothèse du critique scientifique (non démontrée par l'article) : le broyage à 1400 tr/min déclencherait la métathèse 3 Na2SiO3 + Al2(SO4)3 → 3 Na2SO4 + aluminosilicate amorphe et libérerait environ 1,1 g d'eau d'hydratation (H2O/SiO2 ≈ 2,2 ; Na2SO4·10H2O n'en fixerait que moins de la moitié). À 180 °C en autoclave fermé, cette eau resterait presque toute liquide : une saumure alcaline concentrée (Na2SO4, silicate de sodium) mouillerait le solide, l'aluminosilicate s'y dissoudrait et se réorganiserait localement, et Na+ hydraté servirait d'agent structurant minéral, comme dans les synthèses sans gabarit et sans solvant de Xiao (Ren et al., J. Am. Chem. Soc. 2012, 10.1021/ja3044954 ; Wu et al., Acc. Chem. Res. 2018, 10.1021/acs.accounts.8b00057). Plus d'alcalinité et d'eau (x élevé) dissoudraient plus de silice, ce qui abaisserait le Si/Al du solide et orienterait vers la mordénite ; trop peu de sodium libre laisserait un solide amorphe ; un excès ou un temps long mènerait au quartz, phase dense au bout de la règle d'Ostwald. Les variables sodium, eau et alcalinité sont liées par construction (chaque Na2SiO3·9H2O apporte aussi 9 H2O) et aucun essai ne les découple."
   },
   {
    "type": "securite_auteurs",
@@ -2792,8 +2810,73 @@
   {
    "type": "limite_reproductibilite",
    "route": "Calc-24h",
-   "text": "La durée de 6 h de la calcination à 550 °C est lue dans la phrase des Méthodes qui dit que « Selected zeolite products were heated to higher temperatures (550 °C, 6 h) » ; l'article ne dit pas explicitement que les trois produits de la Fig. S2 ont suivi ces 6 h. Atmosphère (air) donnée dans les Résultats, vitesse de montée en température non citée.",
+   "text": "La durée de la calcination à 550 °C n'est pas donnée pour cette voie : la phrase des Résultats qui décrit les produits à 24, 48 et 72 h (Fig. S2) ne cite que 550 °C et l'air. La phrase des Méthodes qui parle de « 550 °C, 6 h » porte sur des produits « selected » de la série en sodium et en silicium, pas explicitement sur ces trois produits : 6 h est donc laissé non cité. Vitesse de montée en température non citée.",
    "quote": "Selected zeolite products were heated to higher temperatures (550 °C, 6 h) to examine the thermal stability of their porous crystalline structures."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Calc-48h",
+   "text": "La durée de la calcination à 550 °C n'est pas donnée pour cette voie : la phrase des Résultats qui décrit les produits à 24, 48 et 72 h (Fig. S2) ne cite que 550 °C et l'air. La phrase des Méthodes qui parle de « 550 °C, 6 h » porte sur des produits « selected » de la série en sodium et en silicium, pas explicitement sur ces trois produits : 6 h est donc laissé non cité. Vitesse de montée en température non citée.",
+   "quote": "Selected zeolite products were heated to higher temperatures (550 °C, 6 h) to examine the thermal stability of their porous crystalline structures."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Calc-72h",
+   "text": "La durée de la calcination à 550 °C n'est pas donnée pour cette voie : la phrase des Résultats qui décrit les produits à 24, 48 et 72 h (Fig. S2) ne cite que 550 °C et l'air. La phrase des Méthodes qui parle de « 550 °C, 6 h » porte sur des produits « selected » de la série en sodium et en silicium, pas explicitement sur ces trois produits : 6 h est donc laissé non cité. Vitesse de montée en température non citée.",
+   "quote": "Selected zeolite products were heated to higher temperatures (550 °C, 6 h) to examine the thermal stability of their porous crystalline structures."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Référence sans catalyseur (essai témoin, pas une synthèse) : conversion de la biomasse (rendement en HMF) de 21 % (3 %) pour le glucose et de 13 % (0,8 %) pour la cellulose. À comparer aux zéolithes synthétisées, qui donnent 72 à 83 % (31 à 42 %) pour le glucose et 40 à 53 % (22 à 30 %) pour la cellulose (Tableau 3).",
+   "quote": "In the absence of a catalyst, very low biomass conversions (HMF yield) of 21% (3%) and 13% (0.8%) were found for glucose and cellulose, respectively."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "H-ZSM-5-5",
+   "text": "Zéolithe commerciale de référence H-ZSM-5 (non synthétisée dans l'article), Tableau 3 : composition ICP 0,12 : 1,0 : 41, surface 355 m2 g−1, conversion de la biomasse 82 % (glucose) et 65 % (cellulose), rendement en HMF 48 % (glucose) et 35 % (cellulose). Les auteurs jugent l'activité des H-ZSM-5 synthétisées environ 10 à 15 % plus faible.",
+   "quote": "Comm H-ZSM-5 | 0.12 : 1.0 : 41 | 355 | 82 (65) | 48 (35)"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": "H-MOR-7",
+   "text": "Zéolithe commerciale de référence H-MOR (non synthétisée dans l'article), Tableau 3 : composition ICP 0,23 : 1,0 : 13, surface 373 m2 g−1, conversion de la biomasse 88 % (glucose) et 60 % (cellulose), rendement en HMF 37 % (glucose) et 28 % (cellulose). Référence aussi pour H-MOR-9.",
+   "quote": "Comm H-MOR | 0.23 : 1.0 : 13 | 373 | 88 (60) | 37 (28)"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZSM-5-7",
+   "text": "Le produit lavé annoncé monophasé a un rapport Na/Al de l'ordre de 5,8 (environ 32 Na pour 5,5 Al par maille MFI) : bien plus que la compensation de charge de la charpente (un Na par Al). Une phase sodique hors zéolithe (sulfate ou silicate de sodium mal lavé) est probable ; le soufre n'est pas dosé. L'interprétation des auteurs (rôle structurant du sodium) n'est soutenue par aucune mesure discriminante (critique scientifique, chimie générale)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MOR-9",
+   "text": "Même constat pour la mordénite : Na/Al ≈ 4,8, soit environ 29 Na pour 6 Al par maille, ce qui implique une phase sodique hors charpente dans un produit dit monophasé à 85 % de cristallinité (critique scientifique). Le rendement typique « at or above 80% » (base SiO2) ne peut pas valoir pour les mordénites : le silicium retenu dans le solide lavé est d'environ 45 % d'après l'ICP."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MOR-7",
+   "text": "Les auteurs attribuent la mordénite de la série avec NaOH à une basicité accrue. À rapport x égal, les mélanges avec et sans NaOH ont la même composition en oxydes ; ce qui change aussi, c'est la quantité d'eau (13 à 19 % de moins), la part de silice apportée par le silicate ou la silice fumée, et la chimie au broyage (NaOH avec le sulfate d'aluminium). L'essai avec NaOH confond donc plusieurs variables et ne prouve pas un effet de basicité (critique scientifique). Le rendement ≥ 80 % ne s'applique pas à cette mordénite (silicium retenu d'environ 43 %)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "H-ZSM-5-5",
+   "text": "La « conversion de la biomasse » est calculée à partir de la masse de solide récupéré. Pour le glucose, soluble à la concentration d'essai, ce solide est fait d'humines et non de glucose non converti : les valeurs de conversion du glucose (et le 21 % du témoin sans catalyseur) ne sont pas des conversions au sens habituel. Pour la cellulose, les humines comptent comme cellulose non convertie, ce qui sous-estime la conversion. La base du rendement en HMF (massique ou molaire) n'est pas dite. Valable pour toutes les voies H-ZSM-5 et H-MOR (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "N9-S40-OH",
+   "text": "La quantité de Na2SiO3·9H2O du Tableau S1 (7,67 mmol ici, 7,56 mmol pour N9-S30-OH) dépasse la plage de 1,7 à 7,5 mmol annoncée dans les Méthodes pour la série avec NaOH ; le Tableau S1 est retenu."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZSM-5-5",
+   "text": "Réserves de la critique scientifique : (1) « sans solvant » désigne l'absence d'eau ajoutée, mais les hydrates libèrent environ 1,1 g d'eau (H2O/SiO2 ≈ 2,2) qui reste en grande partie liquide à 180 °C dans l'autoclave fermé : le régime est proche d'une conversion hydrothermale concentrée, et Na2SO4·10H2O ne retient que moins de la moitié de cette eau ; (2) l'hydratation du sulfate d'aluminium n'est pas fixée (x = 14 à 18 dans les Matériaux, 18 dans les calculs) : à 14 H2O, l'aluminium augmente d'environ 12 % et le sodium libre baisse d'environ 17 % pour la même masse pesée ; (3) la silice est « silica gel » dans les Matériaux et « fumed silica » dans les Résultats, deux silices dont la teneur en eau et la réactivité diffèrent ; (4) la cristallinité relative intègre 22,5 à 25° 2θ et ne voit pas la raie principale du quartz, elle ne dit donc rien de la pureté de phase."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZSM-5-5",
+   "text": "Rendement : « at or above 80% » est un minimum typique, rapporté à la silice, pour la série de broyage et de chauffage ; ce n'est pas un rendement mesuré propre à ZSM-5-5, et aucune autre voie n'a de rendement."
   }
  ],
  "method_sources": [
@@ -2825,11 +2908,7 @@
  "doubts": [
   {
    "where": "Unground et Ground-25min, durée de chauffage",
-   "issue": "L'article dit que le chauffage à 180 °C a été varié de 24 à 72 h pour les mélanges non broyés et broyés 25 min, mais ne dit pas quelle durée correspond à chaque résultat. Seul le résultat à 24 h (amorphe, Fig. 1B) est explicite ; le quartz est dit « after extended heating » sans durée. Valeur retenue : durée « 24 to 72 h » en value_text, résultats rangés avec cette réserve ; la Fig. 1C et D porte des astérisques de quartz sans que la légende dise de quel échantillon."
-  },
-  {
-   "where": "ZSM-5-5 et ZSM-5-5_72h, phase",
-   "issue": "Le Tableau 1 donne « ZSM-5 » pour 5 : 1 : 30, mais la légende de la Fig. 1 indique des pics de quartz (astérisques) pour les produits chauffés 48 h (C) et 72 h (D). Ni le texte ni le tableau ne parle de quartz pour ces échantillons. Les deux informations sont gardées (phase et xrd_quartz_peaks)."
+   "issue": "Le texte dit que le chauffage à 180 °C a été varié de 24 à 72 h pour les mélanges non broyés et broyés 25 min, mais ne dit pas quelle durée correspond à chaque résultat : seul le 24 h (amorphe, Fig. 1B) est explicite, le quartz est dit « after extended heating ». Durée « 24 to 72 h » gardée en value_text. Les résultats à 48 h et 72 h sont lus sur la Fig. 1C et 1D (astérisques de quartz, légende) et marqués from_figure : non broyé (trace a) = quartz à 48 h et à 72 h ; broyé 25 min (trace b) = encore amorphe à 48 h, quartz à 72 h. Lecture qualitative, sans précision chiffrée ; le texte ne distingue pas les deux échantillons sur ce point."
   },
   {
    "where": "ZSM-5-5, quantité de silice",
@@ -2865,11 +2944,15 @@
   },
   {
    "where": "Figures lues",
-   "issue": "Fig. 6 ouverte et comparée au tableau 3 : toutes les valeurs de catalyse sont prises dans le tableau 3 (une seule différence de lecture graphique, H-ZSM-5-6 cellulose ≈ 48 % sur la figure contre 49 % au tableau, précision de lecture ≈ 2 points) ; aucune valeur n'a été lue sur figure. Les diffractogrammes et images MEB (Fig. 1 à 5) portent des résultats qualitatifs écrits dans le texte et les légendes."
+   "issue": "Fig. 6 ouverte et comparée au tableau 3 : toutes les valeurs de catalyse sont prises dans le tableau 3 (une seule différence de lecture graphique, H-ZSM-5-6 cellulose ≈ 48 % sur la figure contre 49 % au tableau, précision de lecture ≈ 2 points) ; aucune valeur chiffrée n'a été lue sur figure ; seules les phases à 48 h et 72 h de Unground et Ground-25min sont lues sur la Fig. 1C et 1D (qualitatif). Les autres diffractogrammes et images MEB (Fig. 1 à 5) portent des résultats qualitatifs écrits dans le texte et les légendes."
   },
   {
    "where": "branches avec NaOH (11 avertissements du contrôle)",
    "issue": "Le NaOH est absent de la voie de base : il est ajouté comme réactif de chaque branche avec une variation nommée « sodium hydroxide » et parent_value « none », selon la règle du RUNBOOK ; le contrôle signale donc 11 avertissements « ne correspond à aucun paramètre ni réactif du protocole hérité », attendus. Les indicateurs succeeded sont mis à false pour les produits amorphes, amorphes + traces de ZSM-5 et quartz, à true pour les produits monophasés ZSM-5 ou mordénite, et laissés vides pour les mélanges de phases (ZSM-5 + mordénite, mordénite + quartz) : les auteurs ne parlent pas d'échec."
+  },
+  {
+   "where": "Calc-24h, Calc-48h, Calc-72h, durée de calcination",
+   "issue": "Les Méthodes disent « Selected zeolite products were heated to higher temperatures (550 °C, 6 h) » dans la section des séries Na/Si/Al (48 h de chauffage) ; les Résultats décrivent la calcination des produits à 24, 48 et 72 h sans durée. La phrase ne couvre pas clairement ces trois produits : durée déclarée non citée (not_stated) ; 6 h reste une valeur plausible."
   }
  ]
 }

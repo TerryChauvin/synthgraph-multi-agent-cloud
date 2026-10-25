@@ -16,11 +16,6 @@
    "method": "continuous-pH co-precipitation of metal acetates with ammonium carbonate at 40 °C",
    "quote": "Copper–zinc hydroxycarbonates were prepared by a continuous pH co-precipitation procedure as follows:",
    "scale": null,
-   "yield": {
-    "value": 92.5,
-    "unit": "%",
-    "quote": "(NH4)2CO3 | 64 | 36 | 1.8 : 1 | 430.5 | 0 | 92.5 | 0"
-   },
    "succeeded": true,
    "reagents": [
     {
@@ -322,7 +317,7 @@
      "unit": "mg L–1"
     },
     {
-     "property": "yield_Cu_column_Table1",
+     "property": "Cu_precipitation_yield",
      "quote": "(NH4)2CO3 | 64 | 36 | 1.8 : 1 | 430.5 | 0 | 92.5 | 0",
      "value_num": 92.5,
      "unit": "%"
@@ -374,6 +369,27 @@
      "quote": "Zincain georgeite | (NH4)2CO3 | Yes | Precursor | 35 | 0.3 | — | — | — | —",
      "value_num": 0.3,
      "unit": "cm3 g–1"
+    },
+    {
+     "property": "HT-CO3_complete_decomposition_temperature_washed",
+     "quote": "In comparison, the highest temperature for total HT-CO3 removal for the (NH4)2CO3 prepared materials was also 440 °C.",
+     "value_num": 440,
+     "unit": "°C"
+    },
+    {
+     "property": "EGA_first_weight_loss",
+     "quote": "Evolved gas analysis (EGA) determined the first weight loss to occur between 100–200 °C and was associated with a simultaneous release of CO2 (m/z = 44) and H2O (m/z = 18)",
+     "value_text": "first weight loss between 100–200 °C with simultaneous release of CO2 (m/z = 44) and H2O (m/z = 18)"
+    },
+    {
+     "property": "EGA_mass_loss_above_350C",
+     "quote": "whilst the mass loss at temperatures >350 °C was exclusively due to loss of CO2 (ESI Fig. 6†)",
+     "value_text": "mass loss at temperatures >350 °C exclusively due to loss of CO2"
+    },
+    {
+     "property": "EGA_NOx_detected",
+     "quote": "For zincian georgeite samples prepared using (NH4)2CO3, small amounts of NOx (m/z = 30 and 46) being emitted were also detected.",
+     "value_text": "small amounts of NOx (m/z = 30 and 46) detected for samples prepared using (NH4)2CO3"
     }
    ],
    "missing_fields": [
@@ -382,6 +398,10 @@
     "addition rate",
     "number of washes",
     "pre-heating temperature"
+   ],
+   "yield": null,
+   "not_stated": [
+    "yield"
    ]
   },
   {
@@ -453,7 +473,7 @@
      "unit": "mg L–1"
     },
     {
-     "property": "yield_Cu_column_Table1",
+     "property": "Cu_precipitation_yield",
      "quote": "(NH4)HCO3 | 64 | 36 | 1.8 : 1 | 222.5 | 0 | 96.1 | 0",
      "value_num": 96.1,
      "unit": "%"
@@ -522,6 +542,18 @@
      "quote": "Washing resulted in this decomposition temperature shifting from 440 °C to 465 °C.",
      "value_num": 465,
      "unit": "°C"
+    },
+    {
+     "property": "Cu_content_EDX",
+     "quote": "96.1 | 0 Na2CO3 | 67 | 33 | 2 : 1 | — | — | — | —",
+     "value_num": 67,
+     "unit": "at%"
+    },
+    {
+     "property": "Zn_content_EDX",
+     "quote": "96.1 | 0 Na2CO3 | 67 | 33 | 2 : 1 | — | — | — | —",
+     "value_num": 33,
+     "unit": "at%"
     }
    ]
   },
@@ -668,11 +700,11 @@
     "phase": "zincian georgeite",
     "morphology": null
    },
-   "quote": "XRD patterns of the calcined zincian georgeite materials prepared using: (1) (NH4)2CO3 (washed), (2) (NH4)HCO3 (washed), (3) Na2CO3 (washed), (4) (NH4)2CO3 (no wash), (5) (NH4)HCO3 (no wash), and (6) Na2CO3 (no wash).",
+   "quote": "Similar findings were obtained using (NH4)HCO3 as the precipitant (ESI Fig. 7†).",
    "variations": [
     {
      "parameter": "deionised water (wash)",
-     "quote": "XRD patterns of the calcined zincian georgeite materials prepared using: (1) (NH4)2CO3 (washed), (2) (NH4)HCO3 (washed), (3) Na2CO3 (washed), (4) (NH4)2CO3 (no wash), (5) (NH4)HCO3 (no wash), and (6) Na2CO3 (no wash).",
+     "quote": "Similar findings were obtained using (NH4)HCO3 as the precipitant (ESI Fig. 7†).",
      "value_text": "absent (precipitate not washed)",
      "parent_value": "washed with deionised water (ca. 1 L, 25 °C)"
     }
@@ -789,11 +821,11 @@
     "phase": "zincian georgeite",
     "morphology": null
    },
-   "quote": "XRD patterns of the calcined zincian georgeite materials prepared using: (1) (NH4)2CO3 (washed), (2) (NH4)HCO3 (washed), (3) Na2CO3 (washed), (4) (NH4)2CO3 (no wash), (5) (NH4)HCO3 (no wash), and (6) Na2CO3 (no wash).",
+   "quote": "However, for the catalyst prepared using Na2CO3 without washing a slightly different profile is apparent, with an additional peak at 178 °C.",
    "variations": [
     {
      "parameter": "deionised water (wash)",
-     "quote": "XRD patterns of the calcined zincian georgeite materials prepared using: (1) (NH4)2CO3 (washed), (2) (NH4)HCO3 (washed), (3) Na2CO3 (washed), (4) (NH4)2CO3 (no wash), (5) (NH4)HCO3 (no wash), and (6) Na2CO3 (no wash).",
+     "quote": "However, for the catalyst prepared using Na2CO3 without washing a slightly different profile is apparent, with an additional peak at 178 °C.",
      "value_text": "absent (precipitate not washed)",
      "parent_value": "washed with deionised water (ca. 1 L, 25 °C)"
     }
@@ -1177,6 +1209,18 @@
      "quote": "Zincian malachite/aurichalcite | Na2CO3 | Yes | Precursor | 27 | 0.3 | — | — | — | —",
      "value_num": 0.3,
      "unit": "cm3 g–1"
+    },
+    {
+     "property": "Cu_content_EDX",
+     "quote": "Zincian malachite/aurichalcite | Na2CO3 | 67 | 33 | 2 : 1 | — | — | — | —",
+     "value_num": 67,
+     "unit": "at%"
+    },
+    {
+     "property": "Zn_content_EDX",
+     "quote": "Zincian malachite/aurichalcite | Na2CO3 | 67 | 33 | 2 : 1 | — | — | — | —",
+     "value_num": 33,
+     "unit": "at%"
     }
    ],
    "missing_fields": [
@@ -1390,18 +1434,15 @@
        "unit": "ml/min"
       },
       {
-       "name": "duration",
-       "quote": "Experiments were conducted for approximately 3.5 hours which resulted in the synthesis of ca. 1.1-1.3 g of solid.",
-       "value_num": 3.5,
-       "unit": "h"
-      },
-      {
        "name": "scco2_to_metal_solution_molar_ratio",
        "quote": "This gave a scCO2/metal solution molar ratio of 22:1.",
        "value_text": "22:1"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
     },
     {
      "order": 5,
@@ -1420,14 +1461,12 @@
        "quote": "This was achieved by pumping pure ethanol at 6.5 ml/min co-currently with scCO2 for 30 min, before leaving with just scCO2 to pump for a further 60 min.",
        "value_num": 60,
        "unit": "min"
-      },
-      {
-       "name": "temperature",
-       "quote": "The system pressure and temperature were maintained and the preparation conditions were carefully controlled.",
-       "value_text": "system temperature maintained (set at 40 °C earlier)"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
     },
     {
      "order": 6,
@@ -1476,7 +1515,11 @@
    ],
    "missing_fields": [
     "yield",
-    "preparation of the catalyst from the SAS precursor (calcination not restated)"
+    "preparation of the catalyst from the SAS precursor (calcination not restated)",
+    "inside diameter of the capillary",
+    "volume of the precipitation vessel",
+    "injection duration",
+    "drying temperature"
    ]
   },
   {
@@ -1536,8 +1579,8 @@
       },
       {
        "name": "atmosphere",
-       "quote": "For catalyst testing, 0.5 g of each catalyst precursor was used after being calcined in air (300 °C, 1 °C min–1, 4 h), pelleted and ground to a sieve fraction diameter of 0.6–1.0 mm.",
-       "value_text": "air"
+       "quote": "which had been calcined (300 °C, 1 °C/min, 4 h in static air)",
+       "value_text": "static air"
       }
      ],
      "equipment": [],
@@ -1572,7 +1615,7 @@
      "technique": "CO2-TPD",
      "result": "CO2 desorption peaks of the reduced catalyst (Fig. 9)",
      "instrument": "Quantachrome ChemBET with TCD",
-     "conditions": "after reduction, CO2 exposure (50 ml min–1) for 30 min at ambient temperature; desorption 25 to 600 °C at 10 °C min–1, hold 20 min under He (80 ml min–1)",
+     "conditions": "after reduction, CO2 exposure (50 ml min–1 in the main text; 80 ml/min in the ESI) for 30 min at ambient temperature; desorption 25 to 600 °C at 10 °C min–1, hold 20 min under He (80 ml min–1)",
      "quote": "Desorption was then performed by heating from 25 to 600 °C at 10 °C min–1, before holding for 20 min under a flow of helium (80 ml min–1)."
     },
     {
@@ -1584,7 +1627,7 @@
     },
     {
      "technique": "TGA/EGA",
-     "result": "total mass loss 29–32% for zincian georgeite, ca. 12% residual mass after 300 °C",
+     "result": "total mass loss 29–32% for zincian georgeite; the article writes 'ca. 12% residual mass retained after 300 °C' (ambiguous wording, see doubts)",
      "instrument": "Setaram Labsys 1600; Pyris 1 TGA with Perkin Elmer Frontier and Clarus 580 GC-MS",
      "conditions": "samples 20–50 mg to 600 °C at 1 or 5 °C min–1 in synthetic air 50 ml min–1",
      "quote": "Total mass losses measured for zincian georgeite by TGA were between 29–32% with ca. 12% residual mass retained after 300 °C (Fig. 8A)."
@@ -1686,6 +1729,36 @@
      "quote": "We attribute this signal to residual carbonate still present after reduction, with the peak maximum centred at 438 °C.",
      "value_num": 438,
      "unit": "°C"
+    },
+    {
+     "property": "CO2-TPD_low_temperature_peak_majority_of_profiles",
+     "quote": "The majority of profiles display a low temperature peak centred at 96 °C, and a much broader doublet centred at 331 and 380 °C.",
+     "value_num": 96,
+     "unit": "°C"
+    },
+    {
+     "property": "CO2-TPD_doublet_first_peak_majority_of_profiles",
+     "quote": "The majority of profiles display a low temperature peak centred at 96 °C, and a much broader doublet centred at 331 and 380 °C.",
+     "value_num": 331,
+     "unit": "°C"
+    },
+    {
+     "property": "CO2-TPD_doublet_second_peak_majority_of_profiles",
+     "quote": "The majority of profiles display a low temperature peak centred at 96 °C, and a much broader doublet centred at 331 and 380 °C.",
+     "value_num": 380,
+     "unit": "°C"
+    },
+    {
+     "property": "MeOH_in_LTS_product_67.5h",
+     "quote": "zincian georgeite derived 67.5 461 0.0997 30.234 0.33 91.5 480",
+     "value_num": 461,
+     "unit": "ppm"
+    },
+    {
+     "property": "MeOH_in_LTS_product_91.5h",
+     "quote": "zincian georgeite derived 67.5 461 0.0997 30.234 0.33 91.5 480",
+     "value_num": 480,
+     "unit": "ppm"
     }
    ],
    "missing_fields": [
@@ -1743,6 +1816,25 @@
      "value_num": 148,
      "unit": "mg(Na) kg(CuO/ZnO)–1"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Calcination of the dried precipitate; the article gives no conditions for this sample.",
+     "quote": "MP-AES analysis of the various calcined materials to determine effect of precipitant identity and washing treatment on resultant Na loadings",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "calcination conditions (temperature, duration, heating rate, atmosphere)"
    ]
   },
   {
@@ -1825,6 +1917,25 @@
      "value_num": 132,
      "unit": "°C"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Calcination of the dried precipitate; the article gives no conditions for this sample.",
+     "quote": "MP-AES analysis of the various calcined materials to determine effect of precipitant identity and washing treatment on resultant Na loadings",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "calcination conditions (temperature, duration, heating rate, atmosphere)"
    ]
   },
   {
@@ -1913,6 +2024,25 @@
      "value_num": 10,
      "unit": "m2 gCu–1"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Calcination of the dried precipitate; the article gives no conditions for this sample.",
+     "quote": "MP-AES analysis of the various calcined materials to determine effect of precipitant identity and washing treatment on resultant Na loadings",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "calcination conditions (temperature, duration, heating rate, atmosphere)"
    ]
   },
   {
@@ -1965,6 +2095,25 @@
      "value_num": 340,
      "unit": "mg(Na) kg(CuO/ZnO)–1"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Calcination of the dried precipitate; the article gives no conditions for this sample.",
+     "quote": "MP-AES analysis of the various calcined materials to determine effect of precipitant identity and washing treatment on resultant Na loadings",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "calcination conditions (temperature, duration, heating rate, atmosphere)"
    ]
   },
   {
@@ -2058,6 +2207,25 @@
      "value_num": 178,
      "unit": "°C"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Calcination of the dried precipitate; the article gives no conditions for this sample.",
+     "quote": "MP-AES analysis of the various calcined materials to determine effect of precipitant identity and washing treatment on resultant Na loadings",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "calcination conditions (temperature, duration, heating rate, atmosphere)"
    ]
   },
   {
@@ -2165,6 +2333,18 @@
      "property": "XRD_calcined",
      "quote": "In fact, little change was observed in the XRD pattern from the latter conventional materials after calcination, except for a subtle decrease in the peak intensities.",
      "value_text": "little change after calcination except a subtle decrease in peak intensities; CuO/ZnO reflections not assignable because of overlap"
+    },
+    {
+     "property": "MeOH_in_LTS_product_67.5h",
+     "quote": "zincian malachite derived 67.5 140 0.0302 24.409 0.12 91.5 108",
+     "value_num": 140,
+     "unit": "ppm"
+    },
+    {
+     "property": "MeOH_in_LTS_product_91.5h",
+     "quote": "zincian malachite derived 67.5 140 0.0302 24.409 0.12 91.5 108",
+     "value_num": 108,
+     "unit": "ppm"
     }
    ]
   },
@@ -2213,6 +2393,25 @@
      "value_num": 425,
      "unit": "mg(Na) kg(CuO/ZnO)–1"
     }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Calcination of the dried precipitate; the article gives no conditions for this sample.",
+     "quote": "MP-AES analysis of the various calcined materials to determine effect of precipitant identity and washing treatment on resultant Na loadings",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate"
+     ]
+    }
+   ],
+   "missing_fields": [
+    "calcination conditions (temperature, duration, heating rate, atmosphere)"
    ]
   }
  ],
@@ -2457,13 +2656,13 @@
   {
    "type": "tendance_observee",
    "route": "ZG-AC",
-   "text": "Pour la georgeite lavée, les trois précipitants donnent une perte de masse totale de 29 à 32 % en TGA et environ 12 % de masse résiduelle après 300 °C ; ce résultat est donné pour l'ensemble des échantillons de georgeite et non par précipitant.",
+   "text": "En TGA, les échantillons de georgeite perdent 29 à 32 % de leur masse au total ; ce chiffre est donné pour l'ensemble des échantillons de georgeite, non par précipitant (la Fig. 8A ne montre que deux précipitants, le bicarbonate est en Fig. S7). L'article écrit « ca. 12% residual mass retained after 300 °C » : la formulation est ambiguë et, d'après la Fig. 8A, elle correspond plutôt à la perte de masse restant à venir entre 300 et 600 °C (carbonate de haute température) qu'à une masse résiduelle.",
    "quote": "Total mass losses measured for zincian georgeite by TGA were between 29–32% with ca. 12% residual mass retained after 300 °C (Fig. 8A)."
   },
   {
    "type": "tendance_observee",
    "route": "ZG-AC",
-   "text": "L'acétate d'ammonium retenu comme sous-produit dans la georgeite non lavée se décompose de façon très exothermique à la calcination, ce qui favorise le frittage des cristallites d'oxyde et l'élimination du carbonate de haute température ; le lavage réduit cette impureté. Pour les matériaux au (NH4)2CO3, la température de décomposition complète du carbonate de haute température est la même (440 °C), lavés ou non.",
+   "text": "L'acétate d'ammonium retenu comme sous-produit dans la georgeite non lavée se décompose de façon très exothermique à la calcination, ce qui favorise le frittage des cristallites d'oxyde et l'élimination du carbonate de haute température ; le lavage réduit cette impureté. Pour le (NH4)2CO3 lavé (Fig. 8A), l'élimination complète du carbonate de haute température se termine à 440 °C ; pour le (NH4)2CO3 non lavé, l'article ne voit aucune étape de décomposition de ce carbonate (décomposition complète après 245 °C).",
    "quote": "In comparison, the highest temperature for total HT-CO3 removal for the (NH4)2CO3 prepared materials was also 440 °C."
   },
   {
@@ -2481,7 +2680,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "ZG-AC",
-   "text": "Hypothèse de chimiste : les ions Cu2+ et Zn2+ réagissent avec les ions carbonate et hydroxyde du tampon carbonate pour précipiter un hydroxycarbonate mixte, par exemple 2 Cu2+ + CO3 2− + 2 OH− → Cu2(OH)2CO3 avec substitution partielle de Cu par Zn, l'acétate restant en solution sous forme d'acétate d'ammonium ou de sodium. Le pH maintenu entre 6,5 et 7,0 donne probablement un précipité mal cristallisé à cette basse température. Avec NH3 libre, une partie du Cu2+ passe sous forme de [Cu(NH3)4]2+, ce qui explique le rapport Cu : Zn de 1,8 : 1. Le Zn stabilise probablement la phase en s'incorporant à la structure et en réduisant la distorsion de Jahn–Teller du cuivre."
+   "text": "Hypothèse du critique scientifique : au mélange à pH 6,5–7,0, Cu2+ et Zn2+ précipitent avec CO3 2−/HCO3− (et OH− issu de l'hydrolyse du carbonate, avec dégagement de CO2) en un hydroxycarbonate mixte amorphe, phase initiale connue des co-précipitations de malachite ; le zinc incorporé limite la distorsion de Jahn–Teller et freine la dissolution-recristallisation en malachite zincifère, lente à 40 °C et en 15 min. Une partie du cuivre reste en solution sous forme d'ammine (NH3 libre de quelques mM à ce pH) et l'acétate d'ammonium (ou de sodium) imprègne le solide s'il n'est pas lavé. Sources citées par le critique : Kondrat et al., Nature 531, 83–87 (2016), doi 10.1038/nature16935 ; Zander, Seidlhofer et Behrens, Dalton Trans. 2012, doi 10.1039/c2dt31236k."
   },
   {
    "type": "securite_auteurs",
@@ -2502,7 +2701,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Annexe absente du dépôt : les figures de l'ESI (Figures S1 à S8 : STEM de la malachite, Raman, sous-produits, activité LTS, TGA-EGA, TGA/DTA du bicarbonate et sous azote) ne sont lues que par leurs légendes, sans leurs images ; le tableau S1 (taux de méthanol en LTS) est aplati dans le fichier texte et n'est pas repris. Les figures 1, 2, 3, 6, 7 et 9 (spectres, diffractogrammes, images, profils de désorption) et la figure 8B-C ne sont pas lues en valeurs ; les valeurs de la figure 5 (volumes poreux) sont celles des tableaux."
+   "text": "Annexe absente du dépôt : les figures de l'ESI (Figures S1 à S8 : STEM de la malachite, Raman, sous-produits, activité LTS, TGA-EGA, TGA/DTA du bicarbonate et sous azote) ne sont lues que par leurs légendes, sans leurs images ; du tableau S1 (méthanol en LTS), seule la colonne « MeOH (ppm) » est reprise en résultats, car les autres en-têtes de colonnes sont séparés des valeurs dans le fichier texte. Les figures 1, 2, 3, 6, 7 et 9 (spectres, diffractogrammes, images, profils de désorption) et la figure 8B-C ne sont pas lues en valeurs ; les valeurs de la figure 5 (volumes poreux) sont celles des tableaux."
   },
   {
    "type": "limite_reproductibilite",
@@ -2512,12 +2711,68 @@
   {
    "type": "mecanisme_analyse",
    "route": "Calc_ZG-AC",
-   "text": "Hypothèse de chimiste : la calcination à 300 °C décompose le carbonate (libération de CO2 et d'eau entre 100 et 200 °C) et forme un mélange intime de nano-cristallites de CuO et de ZnO ; une petite part de carbonate de haute température reste occluse et limiterait le frittage du cuivre à la réduction suivante, ce qui concorde avec la discussion des auteurs."
+   "text": "Hypothèse du critique scientifique : entre 100 et 200 °C, l'hydroxycarbonate amorphe perd H2O et CO2 et donne un mélange intime de nanocristaux de CuO et de ZnO (3–10 nm) ; une part du carbonate (environ 0,3 CO3 par métal) reste occluse jusqu'à 440 °C et freine le frittage à la réduction. Sans lavage, l'acétate d'ammonium brûle de façon exothermique vers 245 °C, chauffe localement le solide, élimine le carbonate occlus et fait croître les cristallites, d'où une surface de cuivre trois fois plus faible. Source citée par le critique : Kondrat et al., Nature 531, 83–87 (2016), doi 10.1038/nature16935."
   },
   {
    "type": "securite_analyse",
    "route": "Calc_ZG-AC",
    "text": "La calcination du précurseur non lavé libère CO2, eau et NOx dans une décomposition fortement exothermique (acétate d'ammonium) : prévoir une montée lente (1 °C min−1, comme dans l'article) et une extraction des gaz. Le catalyseur de cuivre réduit est pyrophorique en poudre fine : le passiver avant exposition à l'air."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Aucun protocole n'est décrit pour les échantillons non lavés (rangées « N/A » du Tableau 3, « no wash » de la Fig. 6, TGA « unwashed »). Les étapes de précipitation, de vieillissement et de filtration des trois voies *_nowash sont celles des échantillons lavés, lues ainsi par l'extraction (seul le lavage est supprimé) ; ce point est une lecture raisonnable mais non écrite dans l'article. Le séchage de ces échantillons n'est pas décrit."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "L'étalon commercial n'est pas synthétisé dans l'article et n'a donc pas de voie. Ses productivités en méthanol (Tableau 2) sont de 3,64 et 6,01 mol MeOH h−1 kgcat−1 à 190 et 205 °C, soit 7,58 et 12,51 mol MeOH h−1 kgCu−1, contre 3,19 / 4,46 et 5,23 / 7,31 pour le catalyseur issu de la georgeite : « presque aussi actif que l'étalon industriel » se vérifie sur ces chiffres. En LTS, le tableau S1 donne 236 ppm de méthanol à 67,5 h et 227 ppm à 91,5 h pour l'étalon.",
+   "quote": "Commercial standard c | 3.64 | 6.01 | 7.58 | 12.51"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZG-AC",
+   "text": "Le Tableau 1 donne un rendement de Zn de 0 % alors que l'effluent ne contient pas de Zn et que le solide contient 36 at% de Zn : cette colonne est impossible telle qu'écrite (attendu ≈ 100 %, ou la colonne désigne une perte). Les pertes de Cu ne concordent pas non plus entre méthodes : environ 10 % d'après l'EDX et le texte, 7,5 % d'après le Tableau 1 pour le (NH4)2CO3 (critique scientifique). Les valeurs de l'article sont gardées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Calc_ZG-AC",
+   "text": "Dans le Tableau 2, les productivités par kg de Cu supposent une fraction de Cu de 0,61 pour les catalyseurs 64 : 36 et 67 : 33 et de 0,48 pour l'étalon : 0,61 ne correspond ni à la base oxyde (0,51) ni à la base réduite (0,59) du catalyseur 64 : 36. Selon le recalcul du critique scientifique, sur une même base oxyde, la georgeite ferait 6,24 et non 5,23 mol h−1 kgCu−1 à 190 °C, et l'écart avec l'étalon passerait d'environ 45 à 21 % ; l'affirmation d'un écart plus net rapporté à la masse de Cu repose donc sur une normalisation sans base cohérente. Les valeurs de l'article sont gardées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Calc_ZG-AC",
+   "text": "Les essais de conversion du gaz à l'eau (LTS) se font à 94 % de conversion alors que la conversion d'équilibre à 220 °C vaut environ 97,8 % (recalcul du critique scientifique avec la corrélation de Moe, 1962, lue dans des sources secondaires) : près de l'équilibre, la conversion est peu sensible à l'activité et la désactivation de la georgeite paraît atténuée. L'article donne en outre une baisse après 135 h, alors que la Fig. 4 s'arrête vers 111 h."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZG-AC",
+   "text": "L'acétate de cuivre à 0,35 M (≈ 69,9 g/L) est proche de sa solubilité dans l'eau froide (≈ 72 g/L d'après Wikipedia et la fiche TCI C2346) : la solution peut cristalliser si elle n'est pas préparée chaude ou gardée préchauffée. Le « carbonate d'ammonium » commercial (qualité ACS) est un mélange d'hydrogénocarbonate et de carbamate d'ammonium : la solution « 0,55 M » dépend donc de la masse molaire retenue et dérive au préchauffage (perte de NH3 et de CO2), ce qui change le volume nécessaire pour tenir le pH (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZG-AC_nowash",
+   "text": "L'exotherme de la décomposition du précurseur non lavé est attribué à l'acétate d'ammonium dans le texte et à « ammonium carbonate » dans la légende de la Fig. S8 ; il disparaît sous azote, ce qui indique une combustion (oxydation de l'acétate et de NH3) plutôt qu'une décomposition propre. L'identification de NOx (m/z 30 et 46) sous hélium reste fragile, ces masses étant aussi celles de fragments organiques (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "ZM-2to1",
+   "text": "La référence malachite diffère de la georgeite par plusieurs variables à la fois : anion (nitrate au lieu d'acétate), précipitant (Na2CO3), concentration (1,5 contre 0,525 M), température (65 contre 40 °C), vieillissement (30 contre 15 min), lavage (6 L à 65 °C contre 1 L à 25 °C), séchage (110 °C contre 40 °C sous vide) et sodium résiduel. La comparaison d'activité compare donc deux recettes, non deux phases seules. La température de précipitation est de 65 °C dans les Méthodes et de 70 °C dans la légende de la Fig. 5, la durée de calcination de 4 h dans le texte et de 2 h dans la légende de la Fig. S5 (critique scientifique)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SAS-ZG",
+   "text": "Le rapport scCO2/solution de 22 : 1 annoncé est recalculé à environ 18 : 1 par le critique scientifique (6,5 kg/h de CO2 et 6,5 mL/min de solution à 10 vol% d'eau), avec une base de calcul non dite ; l'injection des 500 mL dure environ 77 min, les 3,5 h étant la durée de l'essai entier."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZM-2to1",
+   "text": "Hypothèse du critique scientifique : le précipité amorphe initial (georgeite) se dissout et recristallise en malachite zincifère à 65 °C en 30 min, avec dégagement de CO2 (le changement de couleur de la liqueur mère, du bleu au vert, en est l'indice) ; le zinc au-delà d'environ 27 at% ne peut plus entrer dans la malachite et forme de l'aurichalcite. Source citée par le critique : Zander, Seidlhofer et Behrens, Dalton Trans. 2012, doi 10.1039/c2dt31236k."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "SAS-ZG",
+   "text": "Hypothèse du critique scientifique : le CO2 supercritique diffuse dans les gouttelettes d'eau et d'éthanol, ce qui fait s'effondrer leur pouvoir solvant ; les acétates précipitent à forte sursaturation et, avec l'eau et le CO2, donnent l'hydroxycarbonate amorphe ; le séchage au scCO2 empêche le vieillissement en malachite. Source citée par le critique : Kondrat et al., Nature 531, 83–87 (2016), doi 10.1038/nature16935."
   }
  ],
  "method_sources": [
@@ -2538,16 +2793,28 @@
    "ref_id": "cit41",
    "role": "autre",
    "quote": "Commercial catalysts for methanol synthesis and the LTS reaction were used as standards and have been described elsewhere."
+  },
+  {
+   "route": "ZM-2to1",
+   "ref_id": "cit1",
+   "role": "protocole_adapte",
+   "quote": "For comparative purposes, copper–zinc hydroxycarbonates were also made as follows by the conventional co-precipitation procedure."
+  },
+  {
+   "route": "ZM-1to1",
+   "ref_id": "cit1",
+   "role": "protocole_adapte",
+   "quote": "For comparative purposes, copper–zinc hydroxycarbonates were also made as follows by the conventional co-precipitation procedure."
   }
  ],
  "doubts": [
   {
    "where": "ZG-AC, Table 1 colonnes « Yield (%) Cu | Zn »",
-   "issue": "Le tableau 1 donne pour (NH4)2CO3 « 92.5 | 0 » et pour (NH4)HCO3 « 96.1 | 0 » sous un titre « product yields » ; la lecture retenue est un rendement en Cu de 92,5 % (96,1 %) et un rendement Zn de 0 tel qu'écrit (probablement une perte de Zn nulle, comme la concentration d'effluent). Le rendement du produit n'est pas défini autrement ; la valeur est portée en `yield` et en résultats `yield_Cu_column_Table1` et `yield_Zn_column_Table1`."
+   "issue": "Le tableau 1 donne pour (NH4)2CO3 « 92.5 | 0 » et pour (NH4)HCO3 « 96.1 | 0 » sous l'en-tête « Yield (%) Cu | Zn ». Ce n'est pas un rendement du solide : la colonne Cu est rangée en résultat « Cu_precipitation_yield », la colonne Zn (0, impossible puisque le solide contient 36 at% de Zn) en « yield_Zn_column_Table1 ». Le rendement de la voie (`yield`) est déclaré non cité. La perte de Cu déduite (7,5 %) ne s'accorde pas avec « ca. 10 at% of the initial Cu content was lost »."
   },
   {
    "where": "ZG-AC_nowash, ZG-ABC_nowash, ZG-SC_nowash",
-   "issue": "L'article ne décrit pas le protocole des échantillons non lavés (« N/A » en Table 3, « no wash » en Fig. 6). Lecture retenue : même précipitation, vieillissement et filtration que ZG-AC/ZG-ABC/ZG-SC, sans l'étape de lavage ; le séchage n'est pas dit et est déclaré non cité (`drying_after_filtration`). Ces voies portent leurs propres étapes pour ne pas hériter du lavage."
+   "issue": "L'article ne décrit pas le protocole des échantillons non lavés (« N/A » en Table 3, « no wash » en Fig. 6). Lecture retenue : même précipitation, vieillissement et filtration que ZG-AC/ZG-ABC/ZG-SC, sans l'étape de lavage ; le séchage n'est pas dit et est déclaré non cité (`drying_after_filtration`). Ces voies portent leurs propres étapes pour ne pas hériter du lavage. Les citations de variation de ZG-ABC_nowash et ZG-SC_nowash sont des phrases du texte qui nomment le précipitant et l'absence de lavage (« Similar findings were obtained using (NH4)HCO3 ... », « the catalyst prepared using Na2CO3 without washing ... »), faute de phrase décrivant la préparation elle-même ; la légende de la Fig. 6 (matériaux calcinés) n'est plus utilisée pour ces deux voies."
   },
   {
    "where": "Calc_ZG-AC et variantes, Table 4, colonnes de surface de cuivre",
@@ -2563,7 +2830,7 @@
   },
   {
    "where": "Calc_ZG-AC, quantité de précurseur",
-   "issue": "La quantité de 0,5 g vient de la phrase sur les tests catalytiques (« 0.5 g of each catalyst precursor ... after being calcined ») ; pour les échantillons de caractérisation (BET, TPD, Cu), la quantité calcinée n'est pas dite. L'annexe précise « in static air » pour la calcination des tests, alors que le texte dit seulement « in air » : valeur du texte gardée."
+   "issue": "La quantité de 0,5 g vient de la phrase sur les tests catalytiques (« 0.5 g of each catalyst precursor ... after being calcined ») ; pour les échantillons de caractérisation (BET, TPD, Cu), la quantité calcinée n'est pas dite. L'atmosphère « static air » vient de l'annexe (« calcined (300 °C, 1 °C/min, 4 h in static air) »), précision et non contradiction du texte principal (« in air »)."
   },
   {
    "where": "Calc_ZG-SC_nowash, Table 3",
@@ -2580,6 +2847,42 @@
   {
    "where": "Figures lues",
    "issue": "Fig. 4 (CO conversion LTS à l'origine et à 111 h) et Fig. 8A (masse résiduelle à 600 °C des courbes TGA) : précision de lecture environ ±1 point de pourcentage, deux chiffres significatifs. Dans la Fig. 8A, les courbes lavées sont tracées à 1 et 5 °C min−1 et les non lavées à 5 °C min−1 ; l'attribution des courbes suit la légende du graphique. Les figures 1 (ouverte), 5 (ouverte, valeurs identiques aux tableaux), 2, 3, 6, 7 et 9 portent des spectres, diffractogrammes, images ou profils sans valeur chiffrée à extraire au-delà du texte."
+  },
+  {
+   "where": "Calc_ZG-AC et ZG-AC, TGA : « ca. 12% residual mass retained after 300 °C »",
+   "issue": "La phrase « Total mass losses ... between 29–32% with ca. 12% residual mass retained after 300 °C (Fig. 8A) » est ambiguë : sur la Fig. 8A, la masse restante à 300 °C est d'environ 80 % et celle à 600 °C d'environ 70 % ; les « 12 % » correspondent donc à la perte entre 300 et 600 °C (carbonate de haute température), pas à une masse résiduelle. La citation est gardée telle quelle. La perte de 29–32 % n'est pas donnée par précipitant, et la Fig. 8A ne montre que deux précipitants ((NH4)HCO3 est en Fig. S7)."
+  },
+  {
+   "where": "Calc_ZG-ABC, Calc_ZG-SC, Calc_ZG-AC_nowash, Calc_ZG-ABC_nowash, Calc_ZG-SC_nowash, Calc_ZM-1to1 : calcination",
+   "issue": "Les conditions « 300 °C, 1 °C min–1, 4 h » ne sont données que pour les deux précurseurs testés en catalyse : « The microstructural characteristics of the zincian georgeite and zincian malachite/aurichalcite hydroxycarbonates used in the catalyst tests were then examined, as well as after calcination (300 °C, 1 °C min–1, 4 h) ». Aucune phrase ne dit que les échantillons au bicarbonate, au Na2CO3, non lavés ou la malachite 1 : 1 ont subi la même calcination ; ces voies ne les héritent plus et déclarent température, durée, vitesse de chauffe et atmosphère non citées. Seul « calcined at 300 °C » apparaît pour l'échantillon de la Fig. 7 (georgeite au (NH4)2CO3)."
+  },
+  {
+   "where": "ZM-2to1 étape 7, volume de lavage",
+   "issue": "Les Méthodes donnent « washed with deionised water (ca. 6 L, 65 °C) » alors que le Tableau 3 donne « 1 L water (65 °C) » pour la malachite/aurichalcite (Na2CO3, 0.07 a | 695 a). Valeur des Méthodes (6 L) retenue pour l'étape de lavage ; le Tableau 3 est repris tel quel dans les résultats de Calc_ZM-2to1."
+  },
+  {
+   "where": "Calc_ZM-2to1, durée de calcination",
+   "issue": "La légende de la Fig. S5 (annexe) dit que le précurseur de malachite est calciné « at 300 °C for 2 h », alors que le texte principal donne « 300 °C, 1 °C min–1, 4 h » pour les précurseurs testés. Valeur du texte principal gardée."
+  },
+  {
+   "where": "Calc_ZG-AC, CO2-TPD, débit de CO2",
+   "issue": "Le texte principal donne « exposed to CO2 (50 ml min–1) for 30 min », l'annexe « exposed to an excess quantity of CO2 (80 ml/min) for 30 min ». Valeur du texte principal gardée dans les conditions de la caractérisation, le désaccord y est signalé."
+  },
+  {
+   "where": "ZG-AC, EGA (Fig. S6) contre texte principal",
+   "issue": "La légende de la Fig. S6 dit que l'EGA a été faite sur le (NH4)2CO3 non lavé (rampe de 5 °C min–1), alors que le texte principal rapporte de cette EGA une perte de masse >350 °C due au seul CO2 (carbonate de haute température) et écrit, pour ce même matériau non lavé, qu'il n'y a pas d'étape de décomposition HT-CO3. Les résultats d'EGA sont rangés tels qu'écrits dans le texte, sans trancher."
+  },
+  {
+   "where": "Étalons commerciaux, composition",
+   "issue": "La note c du Tableau 2 donne la composition de l'étalon commercial « CuO/ZnO/Al2O3 wt% = 60 : 30 : 10 », la légende de la Fig. 4 « 50 : 33 : 17 CuO/ZnO/Al2O3 ». L'étalon n'est pas une voie de l'article ; la contradiction est consignée sans correction."
+  },
+  {
+   "where": "SAS-ZG étape 4, durée de 3,5 h",
+   "issue": "« Experiments were conducted for approximately 3.5 hours » est la durée de l'essai entier (mise en pression, solvant seul 15 min, injection, séchage 30 + 60 min, détente), pas celle de l'injection de la solution : elle n'est plus attribuée à l'étape de précipitation (durée d'injection non citée) et reste dans le résultat « solid_mass_obtained »."
+  },
+  {
+   "where": "Calc_ZG-AC et Calc_ZM-2to1, Table S1 (annexe)",
+   "issue": "Le tableau S1 est lisible dans le fichier texte mais ses en-têtes de colonnes sont séparés des valeurs ; seule la colonne « MeOH (ppm) » est attribuée sans ambiguïté (rangées « zincian georgeite derived », « zincian malachite derived », « LTS standard » à 67.5 h et 91.5 h) et reprise en résultats."
   }
  ]
 }
