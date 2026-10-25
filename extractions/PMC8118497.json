@@ -57,15 +57,18 @@
      "amount": 1,
      "unit": "mL",
      "not_stated": [
-      "purity",
       "supplier"
-     ]
+     ],
+     "purity": "prepared by using ion exchange method",
+     "supplier_quote": "Double deionized water was prepared by using ion exchange method."
     },
     {
      "name": "deionized water (washing)",
      "formula": "H2O",
      "role": "wash",
-     "quote": "The resulting white solid species named PEIs@TA was recovered by suction filtration and washed multiple times with deionized water."
+     "quote": "The resulting white solid species named PEIs@TA was recovered by suction filtration and washed multiple times with deionized water.",
+     "purity": "prepared by using ion exchange method",
+     "supplier_quote": "Double deionized water was prepared by using ion exchange method."
     }
    ],
    "steps": [
@@ -230,9 +233,10 @@
      "amount": 30,
      "unit": "mL",
      "not_stated": [
-      "purity",
       "supplier"
-     ]
+     ],
+     "purity": "prepared by using ion exchange method",
+     "supplier_quote": "Double deionized water was prepared by using ion exchange method."
     },
     {
      "name": "tetraethoxysilane (TEOS)",
@@ -257,7 +261,9 @@
      "name": "water (washing)",
      "formula": "H2O",
      "role": "wash",
-     "quote": "The product was collected by centrifugation, washed by ethanol and water for several times, and dried thoroughly."
+     "quote": "The product was collected by centrifugation, washed by ethanol and water for several times, and dried thoroughly.",
+     "purity": "prepared by using ion exchange method",
+     "supplier_quote": "Double deionized water was prepared by using ion exchange method."
     }
    ],
    "steps": [
@@ -271,6 +277,11 @@
        "name": "stirring_speed",
        "quote": "dispersed into 30 mL deionized water under vigorous stirring",
        "value_text": "vigorous stirring"
+      },
+      {
+       "name": "temperature",
+       "quote": "CMS was able to be facile synthesized at ambient conditions (ambient temperature, neutral pH and ambient pressure)",
+       "value_text": "ambient temperature"
       }
      ],
      "equipment": [],
@@ -283,11 +294,16 @@
      "action": "add",
      "description": "Add 6 mL TEOS immediately.",
      "quote": "6 mL TEOS was immediately added to the system",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "CMS was able to be facile synthesized at ambient conditions (ambient temperature, neutral pH and ambient pressure)",
+       "value_text": "ambient temperature"
+      }
+     ],
      "equipment": [],
      "not_stated": [
-      "addition_rate",
-      "temperature"
+      "addition_rate"
      ]
     },
     {
@@ -306,6 +322,11 @@
        "name": "ph",
        "quote": "neutral pH",
        "value_text": "neutral"
+      },
+      {
+       "name": "temperature",
+       "quote": "CMS was able to be facile synthesized at ambient conditions (ambient temperature, neutral pH and ambient pressure)",
+       "value_text": "ambient temperature"
       }
      ],
      "equipment": [],
@@ -327,7 +348,7 @@
       },
       {
        "name": "temperature",
-       "quote": "ambient temperature, neutral pH and ambient pressure",
+       "quote": "CMS was able to be facile synthesized at ambient conditions (ambient temperature, neutral pH and ambient pressure)",
        "value_text": "ambient temperature"
       }
      ],
@@ -437,6 +458,20 @@
      "instrument": "Zeta-Potential/Particle Sizer (3000 HAS, UK)",
      "conditions": "average of three consecutive measurements",
      "quote": "The size distribution was further studied using a Zeta-Potential/Particle Sizer (3000 HAS, UK) and the value was the average of three consecutive measurements."
+    },
+    {
+     "technique": "XRD",
+     "result": "broad bands between 5° and 40° (2θ): amorphous material",
+     "instrument": "X'pert PRO diffractometer (PANalytical, Netherlands)",
+     "conditions": "2θ range of 5° to 40°, scanning speed 0.05°",
+     "quote": "while PEIs@TA-CMS and MCM41 showed broad bands between the 2θ range of 5° and 40°, suggested that they were kinds of amorphous materials."
+    },
+    {
+     "technique": "DSC",
+     "result": "almost smooth lines: amorphous state of the silica",
+     "instrument": "Q1000 thermal analyzer (TA Instrument, USA)",
+     "conditions": "25 to 200 °C under N2 flow, 10 °C/min",
+     "quote": "the DSC curves of PEIs@TA-CMS and MCM41 (Figure 5C,D) were almost smooth lines, meant the amorphous state of silica materials."
     }
    ],
    "outcomes": [
@@ -687,15 +722,15 @@
      "technique": "in vivo pharmacokinetics (rats)",
      "result": "plasma concentration–time profile and parameters in Sprague-Dawley rats",
      "instrument": "HPLC, Kromasil ODS-2C18 column",
-     "conditions": "twelve male SD rats (n = 4 per group); UV detector 240 nm; methanol/acetonitrile/water 3:4:3 mobile phase, 1 mL/min",
+     "conditions": "twelve male SD rats (n = 4 per group); oral dose 2.5 mg NMP as water suspension; UV detector 240 nm; methanol/acetonitrile/water 3:4:3 mobile phase, 1 mL/min",
      "quote": "The animals were orally administered the water suspensions of NMP, NMP/PEIs@TA-CMS and NMP/MCM4 with a drug dose of 2.5 mg."
     },
     {
      "technique": "in vivo pharmacodynamics (mice)",
      "result": "survival time of mice with NaNO2-induced cerebral anoxia",
      "instrument": null,
-     "conditions": "36 SPF Kunming mice, six groups (n = 6); NaNO2 (0.4 mL, 0.2%, w/v) injected intraperitoneally 90 min after dosing",
-     "quote": "Normal saline suspensions of NMP/PEIs@TA-CMS and NMP/MCM41 containing 0.5 mg NMP were also oral administrated to mice."
+     "conditions": "36 SPF Kunming mice, six groups (n = 6); oral doses: NMP/PEIs@TA-CMS middle dose = 0.5 mg NMP, low dose = 0.25 mg, high dose = 1 mg, NMP and NMP/MCM41 = 0.5 mg, normal saline group = 0.5 mL; NaNO2 (0.4 mL, 0.2%, w/v) injected intraperitoneally 90 min after dosing",
+     "quote": "Normal saline suspensions of NMP/PEIs@TA-CMS and NMP/MCM41 containing 0.5 mg NMP were also oral administrated to mice. Meanwhile, half and twice of the dose in NMP/PEIs@TA-CMS (middle dose) group, which were respectively in doses equivalent to 0.25 mg and 1 mg NMP, were given to mice to further study the influence of dose."
     }
    ],
    "outcomes": [
@@ -850,9 +885,10 @@
     },
     {
      "property": "drug_release_within_240_min",
-     "quote": "The cumulative drug release amount of NMP/PEIs@TA-CMS was in the range of 47.67% to 70.03% within 240 min, and was followed the order: NMP/PEIs@TA-CMS (1:1) sample < NMP/2PEIs@TA-CMS (1:2) < NMP/3PEIs@TA-CMS sample.",
-     "value_num": 47.67,
-     "unit": "%"
+     "quote": "Figure 6. (A) In vitro drug release profiles of NMP, NMP/PEIs@TA-CMS and NMP/MCM41; (B) in vitro drug release profiles of NMP/PEIs@TA-CMS (1:1), NMP/PEIs@TA-CMS (1:2) and NMP/PEIs@TA-CMS;",
+     "value_num": 48,
+     "unit": "%",
+     "from_figure": "Fig. 6B"
     },
     {
      "property": "drug_release_within_60_min",
@@ -1045,6 +1081,29 @@
      "quote": "the survival period of NMP/PEIs@TA-CMS (middle dose) and NMP/MCM41 underwent a further prolongation to 17.33 min and 15.26 min",
      "value_num": 15.26,
      "unit": "min"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "FTIR",
+     "result": "silica carrier bands remain, most NMP bands disappear after loading",
+     "instrument": "Spectrum 1000 spectrometer (Perkin Elmer, USA)",
+     "conditions": "400–4000 cm−1",
+     "quote": "After drug loading, both NMP/PEIs@TA-CMS and NMP/MCM41 presented characteristic adsorption of the silica carriers with the disappearance of most of the NMP bands, demonstrating the successful loading of NMP into the nanospace in silica carriers."
+    },
+    {
+     "technique": "XRD",
+     "result": "absence of distinctive peaks after loading: amorphization of NMP",
+     "instrument": "X'pert PRO diffractometer (PANalytical, Netherlands)",
+     "conditions": "2θ range of 5° to 40°, scanning speed 0.05°",
+     "quote": "After completion of the drug loading, the XRD patterns of NMP/PEIs@TA-CMS and NMP/MCM41 showed the absence of distinctive peaks."
+    },
+    {
+     "technique": "DSC",
+     "result": "no melting peak of NMP observed",
+     "instrument": "Q1000 thermal analyzer (TA Instrument, USA)",
+     "conditions": "25 to 200 °C under N2 flow, 10 °C/min",
+     "quote": "Similar situation was happened in the case of NMP/MCM41, and no melting peak of NMP was observed."
     }
    ]
   },
@@ -1363,7 +1422,7 @@
   {
    "type": "comparaison_branches",
    "route": null,
-   "text": "Quand la part de support augmente de 1:1 à 1:3, la teneur en médicament passe de 52,1 % à 24,9 %, la surface BET résiduelle de 421,31 à 204,81 m2/g, et la libération à 240 min de 47,67 % à 70,03 % (la valeur du 1:2, environ 56 %, est lue sur la figure 6B). À rapport égal (1:3), NMP/MCM41 charge 22,9 % de médicament et libère 53,6 % à 240 min contre 70,03 % pour NMP/PEIs@TA-CMS, malgré une surface BET de départ voisine (995,33 contre 1009,94 m2/g).",
+   "text": "Quand la part de support augmente de 1:1 à 1:3, la teneur en médicament passe de 52,1 % à 24,9 %, la surface BET résiduelle de 421,31 à 204,81 m2/g, et la libération à 240 min de la borne basse (47,67 %) à la borne haute (70,03 %) de la plage donnée par l'article, dans l'ordre 1:1 < 1:2 < 1:3 (lecture graphique de la figure 6B : environ 48 % au 1:1 et 56 % au 1:2). À rapport égal (1:3), NMP/MCM41 charge 22,9 % de médicament et libère 53,6 % à 240 min contre 70,03 % pour NMP/PEIs@TA-CMS, malgré une surface BET de départ voisine (995,33 contre 1009,94 m2/g).",
    "quote": "The cumulative drug release amount of NMP/PEIs@TA-CMS was in the range of 47.67% to 70.03% within 240 min, and was followed the order: NMP/PEIs@TA-CMS (1:1) sample < NMP/2PEIs@TA-CMS (1:2) < NMP/3PEIs@TA-CMS sample."
   },
   {
@@ -1393,7 +1452,7 @@
   {
    "type": "mecanisme_analyse",
    "route": "PEIs@TA-CMS",
-   "text": "On attend que les amines de la PEIs catalysent l'hydrolyse du TEOS par catalyse nucléophile/basique, tandis que les carboxylates tartriques stabilisent les chaînes protonées par liaisons ioniques et hydrogène, ce qui rassemble les oligomères de silicate au contact du gabarit ; la calcination à 550 °C brûle PEIs et tartrate et libère la porosité, ce qui explique la chute de la fraction organique et une surface BET d'environ 1000 m2/g."
+   "text": "Hypothèse du critique scientifique, non démontrée par l'article : les amines de la PEI (libres ou partiellement protonées) catalysent comme base l'hydrolyse du TEOS à l'interface TEOS/eau ; les oligosilicates anioniques s'associent aux segments ammonium de la PEI et condensent autour des agrégats de complexe ou des chaînes dispersées, ce qui donne des sphères hybrides de type Stöber. La calcination à 550 °C brûle la PEI et le tartrate et laisse surtout des micropores ; la boucle d'hystérèse à haute pression relative vient plutôt des vides entre sphères. Une chiralité locale des clusters Si–O imprimée par le tartrate est possible, mais elle n'est établie que par dichroïsme circulaire, absent ici."
   },
   {
    "type": "mecanisme_analyse",
@@ -1415,6 +1474,92 @@
    "type": "limite_reproductibilite",
    "route": null,
    "text": "Masse molaire et fournisseur détaillé (référence) de la PEIs linéaire non cités ; quantité de PEIs@TA engagée dans la synthèse de la silice non citée (le rendement du complexe n'est pas donné non plus) ; vitesse d'agitation, vitesse et durée de centrifugation, conditions de séchage, atmosphère et vitesse de chauffe numérique de la calcination (« slow heating rate ») absentes. La masse de support du chargement n'est donnée que par le rapport massique, sans valeur absolue ; les durées de séchage sous vide et de mélange physique manquent."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin sans voie, NMP pur : libération in vitro dans le SDS à 0,5 % de 29,24 % à 60 min et de 41,32 % à 240 min, à comparer aux 57,31 % et 70,03 % de NMP/PEIs@TA-CMS au rapport 1:3.",
+   "quote": "Pure NMP exhibited slow and incomplete release, in which 29.24% was dissolved within 60 min and 41.32% was dissolved within 240 min."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin sans voie, NMP pur : AUC0-∞ de 1,19 ± 0,16 mg/L·h chez le rat (tableau 2), référence de la biodisponibilité relative (100 %), contre 3,89 et 3,29 pour NMP/PEIs@TA-CMS et NMP/MCM41.",
+   "quote": "AUC0-∞ (mg/L*h) | 1.19 ± 0.16 | 3.89 ± 0.33 | 3.29 ± 0.21"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin sans voie, NMP pur : Cmax de 0,10 ± 0,02 mg/L chez le rat (tableau 2), contre 0,35 et 0,26 mg/L pour NMP/PEIs@TA-CMS et NMP/MCM41.",
+   "quote": "Cmax (mg/L) | 0.10 ± 0.02 | 0.35 ± 0.09 | 0.26 ± 0.04"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin sans voie, groupe sérum physiologique (témoin négatif) : survie des souris de 10,98 min après l'injection de nitrite de sodium, à comparer aux survies sous médicament.",
+   "quote": "the survival time of mice after the injection of NaNO2 was found to be 10.98 min"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin sans voie, NMP pur à 0,5 mg (témoin positif) : survie des souris de 14,33 min, contre 17,33 min pour NMP/PEIs@TA-CMS à dose moyenne et 15,26 min pour NMP/MCM41.",
+   "quote": "the survival time of mice was prolonged to 14.33 min"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Témoin sans voie, NMP pur : pic de fusion en DSC à 114,4 °C, que les auteurs disent conforme au point de fusion intrinsèque ; il disparaît dans NMP/PEIs@TA-CMS et NMP/MCM41.",
+   "quote": "The characteristic melting peaks of pure NMP were observed at 114.4 °C, which was in accordance with the intrinsic melting point"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NMP/PEIs@TA-CMS",
+   "text": "Les facteurs de comparaison du texte ne correspondent pas à ses propres tableaux : « 1.83-fold higher » pour la libération à 60 min (57,31/29,24 donne environ 1,96), « 1.45-fold » en Cmax et « 1.20-fold » en AUC contre NMP/MCM41 (0,35/0,26 et 3,89/3,29 donnent environ 1,35 et 1,18), et « 3.26-fold higher » pour une biodisponibilité relative de 326 % (soit 3,26 fois la référence). Le classement des échantillons n'est pas remis en cause, mais ces facteurs ne sont pas fiables ; les valeurs des tableaux sont gardées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PEIs@TA-CMS",
+   "text": "La chiralité de la silice n'est pas démontrée : ni dichroïsme circulaire du solide, ni témoin préparé avec l'acide D ou racémique, ni morphologie hélicoïdale (sphères lisses). Le critère du groupe de Jin cité par le critique (Liu et al., RSC Adv. 2018, 10.1039/c8ra02926a) est le dichroïsme circulaire ; ici « chiral » repose seulement sur l'usage d'acide L-tartrique, brûlé à 550 °C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PEIs@TA-CMS",
+   "text": "La porosité est mal qualifiée : l'isotherme décrite « de type IV » avec « pores uniformes » montre surtout un remplissage de micropores à basse pression et une boucle d'hystérèse à p/p0 élevé qui vient plutôt des vides entre sphères (critère IUPAC, Thommes et al., Pure Appl. Chem. 2015, 10.1515/pac-2014-1117) ; « < 2,21 nm » est la borne basse du calcul BJH et non un mode mesuré, et la discussion cite 2,8 nm. Le matériau est probablement surtout microporeux ; les valeurs du tableau 1 sont gardées telles quelles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PEIs@TA",
+   "text": "L'article dissout 0,316 g de PEI et 0,3 g d'acide tartrique dans 1 mL d'eau, alors que la recette du groupe de Jin dont la méthode est tirée utilise les mêmes masses dans 160 mL d'eau (Liu et al., RSC Adv. 2018, 10.1039/c8ra02926a), avec ajustement du pH à environ 4 ; le « 1 mL » est peut-être une coquille, à vérifier avant de refaire. Le rendement et la cristallinité du complexe ne sont pas montrés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PEIs@TA-CMS",
+   "text": "La quantité de gabarit PEIs@TA engagée dans la silicification n'est pas donnée, donc le rapport gabarit:TEOS qui fixe la porosité ne peut pas être refait ; le « pH neutre » est affirmé sans mesure, alors que le complexe lavé contient encore des amines en excès."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NMP/PEIs@TA-CMS (1:1)",
+   "text": "Le tableau 1 est incohérent aux rapports 1:1 et 1:2 : ramenés au gramme de support, le volume poreux résiduel de l'échantillon 1:1 dépasse celui du support vide (0,63 cm3/g au tableau 1) et la surface résiduelle croît avec la charge en médicament (de 1:3 à 1:1), à l'inverse de ce que suppose l'occupation des pores. Les valeurs de SBET et de Vt de ces deux échantillons ne peuvent pas toutes être justes ; elles sont gardées telles qu'écrites."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NMP/PEIs@TA-CMS (1:1)",
+   "text": "La teneur mesurée de 52,1 % dépasse la teneur théorique (50 %) et ce que les pores peuvent contenir malgré le lavage à l'éthanol censé retirer le médicament de surface ; une partie du médicament est donc probablement cristalline à ce rapport. L'état amorphe n'est prouvé (DRX, DSC) qu'au rapport 1:3, pas à 1:1 ni à 1:2, et la libération plus lente du 1:1 peut en être une conséquence."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NMP/PEIs@TA-CMS (1:2)",
+   "text": "Même incohérence du tableau 1 qu'au rapport 1:1 : la surface résiduelle par gramme de support croît avec la charge en médicament, et l'état amorphe n'est pas mesuré à ce rapport."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NMP/PEIs@TA-CMS",
+   "text": "La dose de nitrite de sodium du modèle d'anoxie (0,4 mL à 0,2 %, soit environ 40 mg/kg par voie intrapéritonéale) paraît faible pour tuer les souris témoins en 11 minutes (DL50 orale de la souris de 175 mg/kg selon une fiche fournisseur de CDH Fine Chemical) : concentration peut-être mal écrite, et elle n'est pas répétée dans les Résultats. Le pic de fusion du NMP pur à 114,4 °C est inférieur à la valeur de PubChem (125 °C pour la forme I) : autre polymorphe ou autre lot possible, non identifié. Le lavage final à 2 mL d'éthanol peut dissoudre une partie du médicament confiné, et la teneur mesurée n'est pas dite mesurée avant ou après lavage."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NMP/MCM41",
+   "text": "La biodisponibilité relative de 270,53 % au tableau 2 ne concorde pas exactement avec un recalcul approximatif sur les AUC moyennes (écart d'environ 2 %) : elle vient peut-être d'une moyenne par animal, non expliquée ; le tableau 2 est gardé tel quel."
   }
  ],
  "method_sources": [
@@ -1436,11 +1581,11 @@
   },
   {
    "where": "NMP/PEIs@TA-CMS (1:1), libération à 240 min",
-   "issue": "Le texte donne seulement la plage « 47.67% to 70.03% » et l'ordre 1:1 < 1:2 < 1:3 ; 47,67 % est attribué au 1:1 (borne basse) et 70,03 % au 1:3 par l'ordre. Le 1:2 n'est chiffré que sur la figure 6B."
+   "issue": "Le texte donne seulement la plage « 47.67% to 70.03% » et l'ordre 1:1 < 1:2 < 1:3 ; aucune phrase n'écrit « 1:1 = 47,67 % ». La valeur du 1:1 à 240 min est donc une lecture de la Fig. 6B (≈ 48 %, 2 chiffres significatifs), qui concorde avec la borne basse de la plage ; 70,03 % est attribué au 1:3 par l'ordre et par la phrase sur le rapport 1:3. Le 1:2 n'est chiffré que sur la figure 6B."
   },
   {
    "where": "Figures lues (Fig. 6B)",
-   "issue": "Lecture graphique des courbes de libération des rapports 1:1 (à 60 min) et 1:2 (à 60 et 240 min) : environ 31 %, 37 % et 56 %, précision de lecture ±3 points, 2 chiffres significatifs."
+   "issue": "Lecture graphique des courbes de libération des rapports 1:1 (à 60 et 240 min) et 1:2 (à 60 et 240 min) : environ 31 %, 48 %, 37 % et 56 %, précision de lecture ±3 points, 2 chiffres significatifs."
   },
   {
    "where": "Nom de l'échantillon 1:3",
@@ -1451,12 +1596,16 @@
    "issue": "« at 60 °C. 4 h later, the solution was cooled » : on ne sait pas si les 4 h se déroulent à 60 °C et avec agitation ; température de l'étape de 4 h déclarée non citée."
   },
   {
-   "where": "PEIs@TA-CMS, étape de 24 h statique",
-   "issue": "L'article place la synthèse sous « ambient temperature » (résumé des atouts) sans donner de valeur ; température de l'étape de 24 h statique extraite en texte (« ambient temperature »), non convertie."
+   "where": "PEIs@TA-CMS, température des étapes 1 à 4",
+   "issue": "L'article place la synthèse sous « ambient temperature » (liste des atouts, sans valeur) : cette phrase est portée aux étapes de dispersion, d'ajout du TEOS, d'agitation de 24 h et de repos de 24 h, en texte, sans conversion ; l'article ne détaille pas la température étape par étape."
   },
   {
    "where": "Taille de la MCM41",
    "issue": "Les Méthodes donnent 200–300 nm pour le produit acheté, la mesure des auteurs 240–260 nm ; sans voie propre (échantillon commercial), non extrait."
+  },
+  {
+   "where": "PEIs@TA-CMS, température de séchage et de centrifugation",
+   "issue": "La phrase « ambient conditions » n'est pas reprise pour la centrifugation, le lavage ni le séchage, dont la température reste non citée."
   }
  ]
 }
