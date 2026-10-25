@@ -1,0 +1,64 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC9064545</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC9064545 — Self-assembly of iron oxide precursor micelles driven by magnetic stirring time in sol-gel coatings.</h1>
+<h2>Voie : GLY-CTAB_1d</h2>
+<pre class="mermaid">flowchart LR
+  R19229([&quot;iron(III) nitrate nonahydrate&lt;br/&gt;molar concentration 1 (relati…&quot;]):::reactif
+  R19229 --&gt;|&quot;precursor&quot;| S22950
+  R19230([&quot;barium nitrate&lt;br/&gt;molar concentration 0.002 (re…&quot;]):::reactif
+  R19230 --&gt;|&quot;additive&quot;| S22950
+  R19231([&quot;cetyl-trimethylammonium bromide (CTAB)&lt;br/&gt;molar concentration 0.1 (rela…&quot;]):::reactif
+  R19231 --&gt;|&quot;surfactant&quot;| S22950
+  R19232([&quot;absolute ethanol&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19232 --&gt;|&quot;solvent&quot;| S22950
+  R19233([&quot;tetraethyl orthosilicate (TEOS)&lt;br/&gt;Fe : Si molar ratio of 1 : 1&quot;]):::reactif
+  R19233 --&gt;|&quot;precursor&quot;| S22950
+  R19234([&quot;nitric acid&lt;br/&gt;100 μl&quot;]):::reactif
+  R19234 --&gt;|&quot;acid&quot;| S22950
+  R19235([&quot;glycerol (GLY)&lt;br/&gt;TEOS : GLY molar ratio of 1 :…&quot;]):::reactif
+  R19235 --&gt;|&quot;ligand&quot;| S22950
+  R19236([&quot;Si(100) wafer&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R19236 --&gt;|&quot;substrate&quot;| S22950
+  S22950[&quot;&lt;b&gt;1. dissolve&lt;/b&gt;&quot;]:::etape
+  S22950 --&gt; S22951
+  S22951[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 15 min&lt;br/&gt;stirring_speed : high speed&quot;]:::etape
+  S22951 --&gt; S22952
+  S22952[&quot;&lt;b&gt;3. add&lt;/b&gt;&lt;br/&gt;addition_rate : dropwise&lt;br/&gt;molar_ratio : Fe : Si 1 : 1&quot;]:::etape
+  S22952 --&gt; S22953
+  S22953[&quot;&lt;b&gt;4. adjust_ph&lt;/b&gt;&lt;br/&gt;volume : 100 μl&lt;br/&gt;ph : close to 1.0&quot;]:::etape
+  S22953 --&gt; S22954
+  S22954[&quot;&lt;b&gt;5. add&lt;/b&gt;&lt;br/&gt;addition_rate : dropwise&lt;br/&gt;duration : one hour&lt;br/&gt;molar_ratio : TEOS : GLY 1 : 1.5&quot;]:::etape
+  S22954 --&gt; S22955
+  S22955[&quot;&lt;b&gt;6. stir&lt;/b&gt;&lt;br/&gt;duration : 1 day&lt;br/&gt;temperature : room temperature&lt;br/&gt;stirring_speed : vigorous motion&quot;]:::etape
+  S22955 --&gt; S22956
+  S22956[&quot;&lt;b&gt;7. deposit&lt;/b&gt;&lt;br/&gt;substrate_cleaning : as received&quot;]:::etape
+  S22956 --&gt; S22957
+  S22957[&quot;&lt;b&gt;8. dry&lt;/b&gt;&lt;br/&gt;temperature : 60 °C&lt;br/&gt;duration : 7 days&lt;br/&gt;atmosphere : air oven&quot;]:::etape
+  S22957 --&gt; S22958
+  S22958[&quot;&lt;b&gt;9. calcine&lt;/b&gt;&lt;br/&gt;temperature : 960 °C&lt;br/&gt;atmosphere : air&lt;br/&gt;heating_rate : 1 °C min−1&quot;]:::etape
+  S22958 --&gt; M
+  M{{&quot;ε-Fe2O3 nanoparticles in a SiO2 sol–gel coating o…&lt;br/&gt;Fe2O3&quot;}}:::materiau
+  O89526[&quot;iron_oxide_content_in_SiO2 : 54 wt%&quot;]:::resultat
+  M -.-&gt; O89526
+  O89527[&quot;eps_Fe2O3_crystal_domain_size_1_day : 10.9 nm&quot;]:::resultat
+  M -.-&gt; O89527
+  O89528[&quot;XRD_phases_1_day : only ε-Fe2O3 present accordin…&quot;]:::resultat
+  M -.-&gt; O89528
+  O89529[&quot;eps_Fe2O3_purity_CRM_1_day : 90 %&quot;]:::resultat
+  M -.-&gt; O89529
+  O89530[&quot;morphology_coating_1_day : coating not continuous, islan…&quot;]:::resultat
+  M -.-&gt; O89530
+  O89531[&quot;AFM_porosity_1_day : flat area with surface porosi…&quot;]:::resultat
+  M -.-&gt; O89531
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B14352{{&quot;GLY-CTAB_1d&quot;}}:::materiau
+  B14353[&quot;GLY-CTAB_3d&quot;]:::etape
+  B14352 --&gt;|&quot;duration = 3 days&quot;| B14353
+  B14354[&quot;GLY-CTAB_7d&quot;]:::etape
+  B14352 --&gt;|&quot;duration = 7 days&quot;| B14354
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
