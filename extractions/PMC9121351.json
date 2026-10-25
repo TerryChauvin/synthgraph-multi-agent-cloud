@@ -1690,13 +1690,6 @@
       "heating_rate"
      ]
     }
-   ],
-   "outcomes": [
-    {
-     "property": "nonreacted_ligand_before_activation",
-     "quote": "The TGA curve in Figure 4a depicts a large amount of nonreacted carboxylate ligand (25–30 wt %, corresponding to the step at about 200 °C) that could interfere in the encapsulation process.",
-     "value_text": "25–30 wt % of nonreacted carboxylate ligand in the as-synthesized SUFAL MOF (before calcination)"
-    }
    ]
   },
   {
@@ -2182,10 +2175,9 @@
      "name": "MIL-53(Al) activated at 380 °C (route Act_cal380)",
      "formula": "Al(OH)(BDC)",
      "role": "intermediate",
-     "quote": "Figure S5 shows a comparison of the X-ray diffraction of MIL-53(Al) synthesized under the different conditions: in water and water/methanol mixture solvent and caffeine encapsulation taking both, the former, calcined at 380 °C and, the latter, as-synthesized capsules.",
-     "not_stated": [
-      "amount"
-     ]
+     "quote": "In a typical lab-scale encapsulation 0.3 g of MOF and 0.6 g of caffeine in 60 g of water are used.",
+     "amount": 0.3,
+     "unit": "g"
     }
    ],
    "variations": [
@@ -2246,10 +2238,9 @@
      "name": "MIL-53(Al) activated by DMF (route Act_DMF)",
      "formula": "Al(OH)(BDC)",
      "role": "intermediate",
-     "quote": "eObtained from MIL-53(Al) activated by DMF treatment.",
-     "not_stated": [
-      "amount"
-     ]
+     "quote": "In a typical lab-scale encapsulation 0.3 g of MOF and 0.6 g of caffeine in 60 g of water are used.",
+     "amount": 0.3,
+     "unit": "g"
     }
    ],
    "variations": [
@@ -2296,10 +2287,9 @@
      "name": "MIL-53(Al)as_H2O (route MIL53_H2O_220C_72h)",
      "formula": "Al(OH)(BDC)",
      "role": "intermediate",
-     "quote": "In addition, Figure S4a shows that the encapsulation of caffeine in MIL-53(Al)as_H2O without activation was not carried out properly since the material after the encapsulation process presents practically the same thermogram as the starting material.",
-     "not_stated": [
-      "amount"
-     ]
+     "quote": "In a typical lab-scale encapsulation 0.3 g of MOF and 0.6 g of caffeine in 60 g of water are used.",
+     "amount": 0.3,
+     "unit": "g"
     }
    ],
    "variations": [
@@ -2334,10 +2324,9 @@
      "name": "MIL-53(Al) SUFAL 8.2 calcined at 380 °C (route Act_SUFAL_cal380_24h)",
      "formula": "Al(OH)(BDC)",
      "role": "intermediate",
-     "quote": "As inferred from Figure 4a, 31 wt % of caffeine was encapsulated in MIL-53(Al) synthesized with SUFAL 8.2 at large scale after calcination of the material at 380 °C.",
-     "not_stated": [
-      "amount"
-     ]
+     "quote": "In a typical lab-scale encapsulation 0.3 g of MOF and 0.6 g of caffeine in 60 g of water are used.",
+     "amount": 0.3,
+     "unit": "g"
     }
    ],
    "variations": [
@@ -2383,10 +2372,9 @@
      "name": "ZIF-8 (route ZIF8_25C_2h)",
      "formula": null,
      "role": "intermediate",
-     "quote": "Note that the same encapsulation process was followed for ZIF-8 and zeolite Y microporous materials.",
-     "not_stated": [
-      "amount"
-     ]
+     "quote": "In a typical lab-scale encapsulation 0.3 g of MOF and 0.6 g of caffeine in 60 g of water are used.",
+     "amount": 0.3,
+     "unit": "g"
     }
    ],
    "steps": [
@@ -2511,10 +2499,9 @@
      "name": "zeolite Y pretreated (route ZeoliteY_pretreatment_250C)",
      "formula": null,
      "role": "intermediate",
-     "quote": "Note that the same encapsulation process was followed for ZIF-8 and zeolite Y microporous materials.",
-     "not_stated": [
-      "amount"
-     ]
+     "quote": "In a typical lab-scale encapsulation 0.3 g of MOF and 0.6 g of caffeine in 60 g of water are used.",
+     "amount": 0.3,
+     "unit": "g"
     }
    ],
    "variations": [
@@ -2592,10 +2579,8 @@
      "parameters": [
       {
        "name": "temperature",
-       "quote": "the capsule with the additive trapped must be stable under the spinning conditions to produce the polyamide fibers and the fabric (about 260 °C)",
-       "value_num": 260,
-       "unit": "°C",
-       "value_text": "about 260 °C"
+       "quote": "where up to 260 °C can be reached for short times",
+       "value_text": "up to 260 °C can be reached for short times"
       }
      ],
      "equipment": [
@@ -2697,6 +2682,20 @@
      "quote": "These new functionalized fibers showed tenacity in the range of 3.1–3.3 versus 3.6 cN/dtex or standard fibers, and an elongation break of 64–71% (being 70% for conventional nylon fibers).",
      "unit": "%",
      "value_text": "64–71% (70% for conventional nylon fibers)"
+    },
+    {
+     "property": "caffeine_in_fabric_after_scouring",
+     "quote": "0.45 | | 103b",
+     "value_num": 103,
+     "unit": "ppm",
+     "value_text": "103 ppm; scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L)"
+    },
+    {
+     "property": "remaining_caffeine_after_scouring",
+     "quote": "As seen in Table 4, it was found that in the CAF@MIL-53(Al) fabric with 0.45 wt % of MIL-53(Al), when scouring takes place only 6.9% of the initial caffeine remains.",
+     "value_num": 6.9,
+     "unit": "%",
+     "value_text": "6.9%; scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L)"
     }
    ],
    "missing_fields": [
@@ -2744,6 +2743,34 @@
      "quote": "MIL-53(Al) nitrate | 35 | 0.35 | 1225 | 1119 | 91.4",
      "value_num": 91.4,
      "unit": "%"
+    },
+    {
+     "property": "caffeine_in_fabric_after_washing",
+     "quote": "MIL-53(Al) nitrate | 0.35 | 51 | 15c",
+     "value_num": 51,
+     "unit": "ppm",
+     "value_text": "51 ppm; long washing machine (30 °C, 90 min, and neutral soap)"
+    },
+    {
+     "property": "remaining_caffeine_after_washing",
+     "quote": "It can be noted that a similar percentage (4.5%, corresponding to 51 ppm) was obtained when the content of capsules was reduced to 0.35 wt %.",
+     "value_num": 4.5,
+     "unit": "%",
+     "value_text": "4.5%; long washing machine (30 °C, 90 min, and neutral soap)"
+    },
+    {
+     "property": "caffeine_in_fabric_after_staining",
+     "quote": "MIL-53(Al) nitrate | 0.35 | 51 | 15c",
+     "value_num": 15,
+     "unit": "ppm",
+     "value_text": "15 ppm; staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water)"
+    },
+    {
+     "property": "remaining_caffeine_after_staining",
+     "quote": "when the fibers with MIL-53(Al) are stained in blue, 1.3% and 1.7% of the initial caffeine remain for the fabrics with 0.35 and 0.70 wt % of capsules, respectively.",
+     "value_num": 1.3,
+     "unit": "%",
+     "value_text": "1.3%; staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water)"
     }
    ]
   },
@@ -2821,6 +2848,62 @@
      "quote": "Figure S10 shows the fibers woven into the garment once they were freeze fractured with liquid nitrogen: longitudinal view (Figure S10a), with fiber diameters of about 15–20 μm, and cross-section (Figure S10b).",
      "unit": "μm",
      "value_text": "about 15–20 μm"
+    },
+    {
+     "property": "caffeine_in_fabric_after_washing",
+     "quote": "0.70 | 81 | 30c",
+     "value_num": 81,
+     "unit": "ppm",
+     "value_text": "81 ppm; long washing machine (30 °C, 90 min, and neutral soap)"
+    },
+    {
+     "property": "remaining_caffeine_after_washing",
+     "quote": "Up to 81 ppm of caffeine was detected when 0.70 wt % of CAF@MIL-53(Al) was in the fiber. This corresponds to 4.7% of the caffeine that remained after washing.",
+     "value_num": 4.7,
+     "unit": "%",
+     "value_text": "4.7%; long washing machine (30 °C, 90 min, and neutral soap)"
+    },
+    {
+     "property": "caffeine_in_fabric_after_staining",
+     "quote": "0.70 | 81 | 30c",
+     "value_num": 30,
+     "unit": "ppm",
+     "value_text": "30 ppm; staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water)"
+    },
+    {
+     "property": "remaining_caffeine_after_staining",
+     "quote": "when the fibers with MIL-53(Al) are stained in blue, 1.3% and 1.7% of the initial caffeine remain for the fabrics with 0.35 and 0.70 wt % of capsules, respectively.",
+     "value_num": 1.7,
+     "unit": "%",
+     "value_text": "1.7%; staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water)"
+    },
+    {
+     "property": "EDX_Al_atomic_percent_points_1_to_5",
+     "quote": "Figure 8 SEM-EDX study of a PA-6 fiber section containing 0.70 wt % CAF@MIL-53. (a) SEM image. (b) Elemental analysis of five points.",
+     "unit": "% atomic",
+     "value_text": "2.3 / 1.8 / 2.3 / 0.1 / 0.0 (points 1 to 5)",
+     "from_figure": "Fig. 8b"
+    },
+    {
+     "property": "EDX_Ti_atomic_percent_points_1_to_5",
+     "quote": "Figure 8 SEM-EDX study of a PA-6 fiber section containing 0.70 wt % CAF@MIL-53. (a) SEM image. (b) Elemental analysis of five points.",
+     "unit": "% atomic",
+     "value_text": "0.0 / 0.0 / 0.0 / 3.5 / 0.0 (points 1 to 5)",
+     "from_figure": "Fig. 8b"
+    },
+    {
+     "property": "EDX_C_atomic_percent_points_1_to_5",
+     "quote": "Figure 8 SEM-EDX study of a PA-6 fiber section containing 0.70 wt % CAF@MIL-53. (a) SEM image. (b) Elemental analysis of five points.",
+     "unit": "% atomic",
+     "value_text": "78.5 / 81.4 / 77.7 / 73.6 / 85.8 (points 1 to 5)",
+     "from_figure": "Fig. 8b"
+    },
+    {
+     "property": "EDX_O_atomic_percent_points_1_to_5",
+     "quote": "Figure 8 SEM-EDX study of a PA-6 fiber section containing 0.70 wt % CAF@MIL-53. (a) SEM image. (b) Elemental analysis of five points.",
+     "unit": "% atomic",
+     "value_text": "19.3 / 16.8 / 21.0 / 22.9 / 14.2 (points 1 to 5)",
+     "from_figure": "Fig. 8b"
     }
    ]
   },
@@ -2927,427 +3010,6 @@
      "unit": "%"
     }
    ]
-  },
-  {
-   "label": "Fabric_washing",
-   "parent": null,
-   "material": {
-    "name": "PA-6 fabric after washing machine treatment",
-    "formula": null,
-    "family": "composite",
-    "phase": null,
-    "morphology": "fabric"
-   },
-   "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-   "is_baseline": true,
-   "method": "washing of the composite fabric",
-   "not_stated": [
-    "yield"
-   ],
-   "kind": "post_treatment",
-   "reagents": [
-    {
-     "name": "composite PA-6 fabric (routes PA6_fiber_MIL53_*)",
-     "formula": null,
-     "role": "intermediate",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "not_stated": [
-      "amount"
-     ]
-    },
-    {
-     "name": "neutral soap",
-     "formula": null,
-     "role": "wash",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water)."
-    },
-    {
-     "name": "water",
-     "formula": "H2O",
-     "role": "solvent",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "not_stated": [
-      "amount",
-      "purity",
-      "supplier"
-     ]
-    }
-   ],
-   "steps": [
-    {
-     "order": 1,
-     "action": "treat",
-     "description": "Long washing machine cycle with neutral soap.",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "parameters": [
-      {
-       "name": "temperature",
-       "quote": "(a) long washing machine (30 °C, 90 min, and neutral soap)",
-       "value_num": 30,
-       "unit": "°C"
-      },
-      {
-       "name": "duration",
-       "quote": "(a) long washing machine (30 °C, 90 min, and neutral soap)",
-       "value_num": 90,
-       "unit": "min"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "liquor_ratio",
-      "soap_concentration"
-     ]
-    },
-    {
-     "order": 2,
-     "action": "wash",
-     "description": "Rinse the fabric abundantly with water.",
-     "quote": "The last step for the three procedures consists of an abundant water rinsing followed by centrifugation and drying.",
-     "parameters": [
-      {
-       "name": "wash_solvent",
-       "quote": "an abundant water rinsing",
-       "value_text": "water"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "repetitions"
-     ]
-    },
-    {
-     "order": 3,
-     "action": "centrifuge",
-     "description": "Centrifuge the fabric.",
-     "quote": "The last step for the three procedures consists of an abundant water rinsing followed by centrifugation and drying.",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": [
-      "speed",
-      "duration"
-     ]
-    },
-    {
-     "order": 4,
-     "action": "dry",
-     "description": "Dry the fabric.",
-     "quote": "The last step for the three procedures consists of an abundant water rinsing followed by centrifugation and drying.",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": [
-      "temperature",
-      "duration"
-     ]
-    }
-   ],
-   "outcomes": [
-    {
-     "property": "caffeine_in_fabric_0.35wt_capsules",
-     "quote": "MIL-53(Al) nitrate | 0.35 | 51 | 15c",
-     "value_num": 51,
-     "unit": "ppm"
-    },
-    {
-     "property": "caffeine_in_fabric_0.70wt_capsules",
-     "quote": "0.70 | 81 | 30c",
-     "value_num": 81,
-     "unit": "ppm"
-    },
-    {
-     "property": "remaining_caffeine_after_washing_0.70wt_capsules",
-     "quote": "Up to 81 ppm of caffeine was detected when 0.70 wt % of CAF@MIL-53(Al) was in the fiber. This corresponds to 4.7% of the caffeine that remained after washing.",
-     "value_num": 4.7,
-     "unit": "%"
-    },
-    {
-     "property": "remaining_caffeine_after_washing_0.35wt_capsules",
-     "quote": "It can be noted that a similar percentage (4.5%, corresponding to 51 ppm) was obtained when the content of capsules was reduced to 0.35 wt %.",
-     "value_num": 4.5,
-     "unit": "%"
-    }
-   ]
-  },
-  {
-   "label": "Fabric_scouring",
-   "parent": null,
-   "material": {
-    "name": "PA-6 fabric after scouring",
-    "formula": null,
-    "family": "composite",
-    "phase": null,
-    "morphology": "fabric"
-   },
-   "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-   "is_baseline": true,
-   "method": "scouring of the composite fabric",
-   "not_stated": [
-    "yield"
-   ],
-   "kind": "post_treatment",
-   "reagents": [
-    {
-     "name": "composite PA-6 fabric (routes PA6_fiber_MIL53_*)",
-     "formula": null,
-     "role": "intermediate",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "not_stated": [
-      "amount"
-     ]
-    },
-    {
-     "name": "liquid detergent",
-     "formula": null,
-     "role": "wash",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "amount": 0.5,
-     "unit": "g/L"
-    },
-    {
-     "name": "water",
-     "formula": "H2O",
-     "role": "solvent",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "not_stated": [
-      "amount",
-      "purity",
-      "supplier"
-     ]
-    }
-   ],
-   "steps": [
-    {
-     "order": 1,
-     "action": "treat",
-     "description": "Scouring with liquid detergent.",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "parameters": [
-      {
-       "name": "temperature",
-       "quote": "(b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L)",
-       "value_num": 40,
-       "unit": "°C"
-      },
-      {
-       "name": "duration",
-       "quote": "(b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L)",
-       "value_num": 10,
-       "unit": "min",
-       "value_text": "minimum of 10 min"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "liquor_ratio"
-     ]
-    },
-    {
-     "order": 2,
-     "action": "wash",
-     "description": "Rinse the fabric abundantly with water.",
-     "quote": "The last step for the three procedures consists of an abundant water rinsing followed by centrifugation and drying.",
-     "parameters": [
-      {
-       "name": "wash_solvent",
-       "quote": "an abundant water rinsing",
-       "value_text": "water"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "repetitions"
-     ]
-    },
-    {
-     "order": 3,
-     "action": "centrifuge",
-     "description": "Centrifuge the fabric.",
-     "quote": "The last step for the three procedures consists of an abundant water rinsing followed by centrifugation and drying.",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": [
-      "speed",
-      "duration"
-     ]
-    },
-    {
-     "order": 4,
-     "action": "dry",
-     "description": "Dry the fabric.",
-     "quote": "The last step for the three procedures consists of an abundant water rinsing followed by centrifugation and drying.",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": [
-      "temperature",
-      "duration"
-     ]
-    }
-   ],
-   "outcomes": [
-    {
-     "property": "caffeine_in_fabric_0.45wt_capsules",
-     "quote": "0.45 | | 103b",
-     "value_num": 103,
-     "unit": "ppm"
-    },
-    {
-     "property": "remaining_caffeine_after_scouring_0.45wt_capsules",
-     "quote": "As seen in Table 4, it was found that in the CAF@MIL-53(Al) fabric with 0.45 wt % of MIL-53(Al), when scouring takes place only 6.9% of the initial caffeine remains.",
-     "value_num": 6.9,
-     "unit": "%"
-    }
-   ]
-  },
-  {
-   "label": "Fabric_staining",
-   "parent": null,
-   "material": {
-    "name": "PA-6 fabric after blue staining",
-    "formula": null,
-    "family": "composite",
-    "phase": null,
-    "morphology": "fabric"
-   },
-   "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-   "is_baseline": true,
-   "method": "acid dye staining of the composite fabric in a horizontal autoclave",
-   "not_stated": [
-    "yield"
-   ],
-   "kind": "post_treatment",
-   "reagents": [
-    {
-     "name": "composite PA-6 fabric (routes PA6_fiber_MIL53_*)",
-     "formula": null,
-     "role": "intermediate",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "not_stated": [
-      "amount"
-     ]
-    },
-    {
-     "name": "Turquoise M-5G acid dye",
-     "formula": null,
-     "role": "precursor",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "amount": 1.5,
-     "unit": "%",
-     "not_stated": [
-      "purity",
-      "supplier"
-     ]
-    },
-    {
-     "name": "deionized water",
-     "formula": "H2O",
-     "role": "solvent",
-     "quote": "In all of them, the composite PA-6 fabrics were put in contact with water at different time and temperature conditions: (a) long washing machine (30 °C, 90 min, and neutral soap), (b) scouring (40 °C, minimum of 10 min, liquid detergent (0.5 g/L), and (c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water).",
-     "not_stated": [
-      "amount",
-      "purity",
-      "supplier"
-     ]
-    }
-   ],
-   "steps": [
-    {
-     "order": 1,
-     "action": "treat",
-     "description": "Stain the fabric in blue in a horizontal autoclave.",
-     "quote": "The staining procedure of the fabrics was done by using a horizontal autoclave.",
-     "parameters": [
-      {
-       "name": "temperature",
-       "quote": "(c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water)",
-       "value_num": 100,
-       "unit": "°C"
-      },
-      {
-       "name": "duration",
-       "quote": "(c) staining in blue (100 °C for 1 h, Turquoise M-5G acid dye at 1.5% in deionized water)",
-       "value_num": 1,
-       "unit": "h"
-      }
-     ],
-     "equipment": [
-      {
-       "type": "horizontal autoclave",
-       "detail": null,
-       "quote": "The staining procedure of the fabrics was done by using a horizontal autoclave."
-      }
-     ],
-     "not_stated": [
-      "liquor_ratio"
-     ]
-    },
-    {
-     "order": 2,
-     "action": "wash",
-     "description": "Rinse the fabric abundantly with water.",
-     "quote": "The last step for the three procedures consists of an abundant water rinsing followed by centrifugation and drying.",
-     "parameters": [
-      {
-       "name": "wash_solvent",
-       "quote": "an abundant water rinsing",
-       "value_text": "water"
-      }
-     ],
-     "equipment": [],
-     "not_stated": [
-      "repetitions"
-     ]
-    },
-    {
-     "order": 3,
-     "action": "centrifuge",
-     "description": "Centrifuge the fabric.",
-     "quote": "The last step for the three procedures consists of an abundant water rinsing followed by centrifugation and drying.",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": [
-      "speed",
-      "duration"
-     ]
-    },
-    {
-     "order": 4,
-     "action": "dry",
-     "description": "Dry the fabric.",
-     "quote": "The last step for the three procedures consists of an abundant water rinsing followed by centrifugation and drying.",
-     "parameters": [],
-     "equipment": [],
-     "not_stated": [
-      "temperature",
-      "duration"
-     ]
-    }
-   ],
-   "outcomes": [
-    {
-     "property": "caffeine_in_fabric_0.35wt_capsules",
-     "quote": "MIL-53(Al) nitrate | 0.35 | 51 | 15c",
-     "value_num": 15,
-     "unit": "ppm"
-    },
-    {
-     "property": "caffeine_in_fabric_0.70wt_capsules",
-     "quote": "0.70 | 81 | 30c",
-     "value_num": 30,
-     "unit": "ppm"
-    },
-    {
-     "property": "remaining_caffeine_after_staining_0.35wt_capsules",
-     "quote": "when the fibers with MIL-53(Al) are stained in blue, 1.3% and 1.7% of the initial caffeine remain for the fabrics with 0.35 and 0.70 wt % of capsules, respectively.",
-     "value_num": 1.3,
-     "unit": "%"
-    },
-    {
-     "property": "remaining_caffeine_after_staining_0.70wt_capsules",
-     "quote": "when the fibers with MIL-53(Al) are stained in blue, 1.3% and 1.7% of the initial caffeine remain for the fabrics with 0.35 and 0.70 wt % of capsules, respectively.",
-     "value_num": 1.7,
-     "unit": "%"
-    }
-   ]
   }
  ],
  "annotations": [
@@ -3397,7 +3059,7 @@
   {
    "type": "limite_reproductibilite",
    "route": null,
-   "text": "Les figures du texte principal portent surtout des courbes (ATG, DRX, IR, MEB) dont les valeurs chiffrées sont déjà dans le texte ou les tableaux ; seule la figure 6 (libération de la caféine) a été lue (valeur à 1 jour, précision d'environ ±1 point). Les figures 1 à 5, 7 et 8 n'ont pas été exploitées pour des valeurs."
+   "text": "Les figures du texte principal portent surtout des courbes (ATG, DRX, IR, MEB) dont les valeurs chiffrées sont déjà dans le texte ou les tableaux ; la figure 6 (libération de la caféine, valeur à 1 jour, précision d'environ ±1 point) et le tableau de la figure 8b (EDX, % atomique, points 1 à 5) ont été lus. Les figures 1 à 5 et 7 n'ont pas été exploitées pour des valeurs."
   },
   {
    "type": "mecanisme_auteurs",
@@ -3431,6 +3093,42 @@
    "type": "securite_analyse",
    "route": null,
    "text": "Les synthèses se font en autoclave fermé avec du méthanol (inflammable et toxique) à 150–220 °C ; les pressions mesurées atteignent 46 bar au pilote et le disque de rupture a cédé deux fois à 220 °C : il faut un réacteur dimensionné et protégé. La calcination à 380 °C de grandes quantités de MOF qui contient du téréphtalique libère des vapeurs organiques ; les poudres de MOF et de ZIF-8 (environ 100 nm) demandent une protection respiratoire. Le filage à 260 °C d'un polymère chargé de capsules relève des consignes de l'industriel."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MIL53_H2OMeOH_pilot_3.75L",
+   "text": "Bilan de masse du pilote de 3,75 L non cohérent : 161 ± 15 g de solide ne peuvent pas venir de 0,553 mol de BDC (le maximum calculé par le critique scientifique est de 111 à 120 g), et le lot de 400 mL est déjà au maximum. Le rapport de réactifs, ou un solide contenant de l'Al hors réseau, de nitrates non lavés ou du solvant, reste à vérifier avant de reprendre la synthèse ; l'annonce d'un rendement supérieur à 50 % est à lire avec prudence. Les valeurs de l'article sont conservées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MIL53_H2O_pilot_failed",
+   "text": "Les auteurs attribuent la surpression et la rupture du disque à de l'hydrogène issu de l'acide nitrique ; or l'acide nitrique chaud agit surtout par le nitrate et dégage des oxydes d'azote (NOx, toxiques), pas de H2. La corrosion du disque par HNO3 à 220 °C est plausible, mais la nature du gaz n'est pas établie : prévoir un réacteur chemisé ou résistant à l'acide et l'analyse du gaz de ciel. Explication des auteurs conservée comme mecanisme_auteurs."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MIL53_SUFAL_pilot_180C_12h",
+   "text": "La conclusion selon laquelle le sulfate diminue la pression n'est pas soutenue par les Résultats : la pression de la synthèse au nitrate n'est pas mesurée au pilote, et les 46 bar du sulfate à 180 °C sont jugés « dans la gamme » du nitrate. L'hydrogène invoqué par les auteurs implique une corrosion active de l'acier du réacteur, qui pourrait polluer le MOF en métaux (non dosés)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "PA6_fiber_MIL53_0.45wt",
+   "text": "La protection de la caféine par le MOF dans la fibre n'est pas démontrée : environ 95 % de la caféine partent au premier lavage (4,5 à 4,7 % restants à 0,35 et 0,70 % de capsules, 6,9 % après décreusage à 0,45 %, 1,3 à 1,7 % après teinture), alors que les capsules seules ne libèrent que 22 % en 6 jours dans l'eau. Le critique scientifique propose que la caféine ait quitté les capsules pendant le filage à 260 °C et se soit dissoute dans le PA-6. Aucun témoin (fibre avec caféine libre, ou capsules vides) n'attribue la rétention résiduelle au MOF."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les traitements textiles des tissus (lavage, décreusage, teinture) sont des essais de rétention du matériau fini, rangés en résultats des voies de fibre. Non cités : rapport de bain, concentration du savon neutre, température et durée de la centrifugation et du séchage ; le rinçage final (« abundant water rinsing ») n'est pas quantifié. La teinture se fait dans un autoclave horizontal (volume non donné)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Termes à lire avec prudence : le « reflux du méthanol à 80 °C » dépasse l'ébullition du méthanol (64,7 °C), 80 °C est au mieux la consigne du bain ; l'eau apportée par la solution aqueuse SUFAL 8.2 n'est pas comptée ; l'encapsulation du ZIF-8 dans l'eau à 80 °C expose ce support à l'hydrolyse sans contrôle par DRX ; la caféine est donnée avec un « boiling point » de 178 °C, qui est en réalité une sublimation."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Au moins 25 à 30 % massiques de ligand non réagi sont présents dans le MOF synthétisé avec le SUFAL 8.2 à l'échelle pilote avant calcination (palier de l'ATG vers 200 °C) ; l'article ne dit pas lequel des trois lots pilotes (180 °C 12 h, 150 °C 12 h, 150 °C 24 h) a été mesuré, donc la valeur n'est pas rattachée à une voie.",
+   "quote": "The TGA curve in Figure 4a depicts a large amount of nonreacted carboxylate ligand (25–30 wt %, corresponding to the step at about 200 °C) that could interfere in the encapsulation process."
   }
  ],
  "method_sources": [
@@ -3787,30 +3485,6 @@
    ]
   },
   {
-   "sample": "fabrics after washing",
-   "defined_in": "Methods",
-   "route": "Fabric_washing",
-   "results_in": [
-    "Table 4"
-   ]
-  },
-  {
-   "sample": "fabrics after scouring",
-   "defined_in": "Methods",
-   "route": "Fabric_scouring",
-   "results_in": [
-    "Table 4"
-   ]
-  },
-  {
-   "sample": "fabrics after staining",
-   "defined_in": "Methods",
-   "route": "Fabric_staining",
-   "results_in": [
-    "Table 4"
-   ]
-  },
-  {
    "sample": "caffeine recrystallized under the conditions of synthesis of MIL-53(Al)",
    "defined_in": "Fig. 1 caption",
    "route": null,
@@ -3825,6 +3499,15 @@
    "route": null,
    "why": "témoin commercial, simple valeur de comparaison",
    "results_in": []
+  },
+  {
+   "sample": "composite PA-6 fabrics after washing, scouring and staining",
+   "defined_in": "Methods, Washing, Scouring, and Staining Procedures in Fabrics",
+   "route": null,
+   "why": "essais de rétention du matériau fini, rangés en résultats des voies de fibre à 0,35, 0,45 et 0,70 % de capsules",
+   "results_in": [
+    "Table 4"
+   ]
   }
  ],
  "doubts": [
@@ -3834,7 +3517,7 @@
   },
   {
    "where": "CAF_MIL53_H2O_cal380 / CAF_MIL53_H2O_DMF",
-   "issue": "Le MOF aqueux activé qui a servi à l'encapsulation n'est pas identifié de façon constante : la figure 1 et la figure S5 parlent d'une calcination à 380 °C, la note e du tableau 1 de l'activation au DMF pour les 38,0 %. Les deux voies sont créées ; la libération à 6 jours (20 %) de « CAF@MIL-53(Al)_H2O » est rangée sur la voie calcinée par défaut, sans que l'article précise l'activation de cet échantillon."
+   "issue": "Le MOF aqueux activé qui a servi à l'encapsulation n'est pas identifié de façon constante : la figure 1 et la figure S5 parlent d'une calcination à 380 °C, la note e du tableau 1 de l'activation au DMF pour les 38,0 %. Les deux voies sont créées ; la libération à 6 jours (20 %) et la valeur à 1 jour lue sur la figure 6 (environ 20 %) de « CAF@MIL-53(Al)_H2O » est rangée sur la voie calcinée par défaut, sans que l'article précise l'activation de cet échantillon."
   },
   {
    "where": "CAF_MIL53_H2OMeOH_lab, MOF de l'encapsulation « typique »",
@@ -3854,11 +3537,11 @@
   },
   {
    "where": "MIL53_SUFAL_pilot_*, Act_SUFAL_cal380_24h",
-   "issue": "Parmi les trois synthèses SUFAL à 3,75 L (180 °C/12 h, 150 °C/12 h, 150 °C/24 h), l'article ne dit pas laquelle a été calcinée à 380 °C (24 h) puis chargée en caféine (31 % ; figures 4 et 5) ; la voie de calcination renvoie au MOF « SUFAL grande échelle » sans choisir."
+   "issue": "Parmi les trois synthèses SUFAL à 3,75 L (180 °C/12 h, 150 °C/12 h, 150 °C/24 h), l'article ne dit pas laquelle a été calcinée à 380 °C (24 h) puis chargée en caféine (31 % ; figures 4 et 5) ; la voie de calcination renvoie au MOF « SUFAL grande échelle » sans choisir. Le même flou touche le ligand non réagi de 25 à 30 % (figure 4a, MOF pilote avant calcination) : noté en annotation, sans voie."
   },
   {
-   "where": "Fabric_staining, Table 4",
-   "issue": "Le tableau 4 note les valeurs de teinture avec l'appel c (« Souring + staining », sic) alors que le texte ne parle que de teinture ; les 15 et 30 ppm sont rangés sur la voie de teinture."
+   "where": "PA6_fiber_MIL53_0.35wt / 0.70wt, Table 4 (teinture)",
+   "issue": "Le tableau 4 note les valeurs de teinture avec l'appel c (« Souring + staining », sic) alors que le texte ne parle que de teinture ; les 15 et 30 ppm sont rangés comme résultats de teinture sur les voies de fibre à 0,35 et 0,70 %, sans dire si les tissus avaient d'abord subi le décreusage."
   },
   {
    "where": "PA6_fiber_MIL53_0.45wt, propriétés mécaniques",
@@ -3870,7 +3553,7 @@
   },
   {
    "where": "ZIF8_25C_2h",
-   "issue": "L'abréviation « Im » du rapport molaire n'est pas définie dans l'article ; le nom du réactif la reprend telle quelle. La quantité de CAF@ZIF-8 à grande échelle (500 g) est celle de la recette ex situ, et la quantité de ZIF-8 chargée n'est pas précisée."
+   "issue": "L'abréviation « Im » du rapport molaire n'est pas définie dans l'article ; le nom du réactif la reprend telle quelle. La quantité de CAF@ZIF-8 à grande échelle (500 g) est celle de la recette ex situ, et la quantité de ZIF-8 chargée n'est pas précisée. La quantité de MOF « typique » (0,3 g) de l'encapsulation de laboratoire est reprise sur les branches ZIF-8 et zéolithe Y, dont les échantillons du tableau 3 sont à grande échelle : valeur typique, pas la quantité de ces essais."
   },
   {
    "where": "Act_cal350, Act_cal330, MIL53_H2OMeOH_150C_24h/48h/72h, MIL53_H2OMeOH_180C",
@@ -3883,6 +3566,18 @@
   {
    "where": "Fibres, tableau 3 et texte",
    "issue": "Le texte arrondit les caféines restantes (68 % pour la zéolithe Y, 39 % pour le ZIF-8) alors que le tableau 3 donne 67,6 % et 38,5 % ; les valeurs du tableau sont extraites."
+  },
+  {
+   "where": "CAF_ZIF8, renvoi ref33",
+   "issue": "La phrase « The recipe of CAF@ZIF-8 ex situ ... » renvoie à ref33, qui dans la liste est Bayliss et al., synthèse de MOF en flux continu (Green Chem. 2014), sans recette CAF@ZIF-8 ; la référence CAF@ZIF-8 (Liedana et al., 2012) est ref35, déjà utilisée pour la synthèse du ZIF-8. Renvoi non repris en method_sources faute de source décrivant la recette."
+  },
+  {
+   "where": "PA6_fiber_MIL53_0.45wt, étape d'extrusion",
+   "issue": "« up to 260 °C can be reached for short times » est la température maximale atteinte pendant la fabrication du fil, pas une consigne d'extrudeuse : la température d'extrusion n'est pas donnée ; valeur gardée en value_text sans valeur numérique."
+  },
+  {
+   "where": "PA6_fiber_MIL53_0.70wt, EDX (figure 8b)",
+   "issue": "Le texte dit que les points 4 et 5 « did not reveal Al », alors que le tableau de la figure 8b donne 0,1 % atomique d'Al au point 4 (0,0 au point 5) ; les deux sont extraits, le point 4 portant aussi 3,5 % de Ti (particule de TiO2)."
   }
  ]
 }
