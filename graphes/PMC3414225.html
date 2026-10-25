@@ -1,0 +1,103 @@
+<!doctype html><meta charset='utf-8'><title>Graphe PMC3414225</title><style>body{font-family:system-ui,sans-serif;margin:16px;background:#fff;color:#111}h1{font-size:18px}h2{font-size:15px;margin-top:28px}pre.mermaid{overflow-x:auto}</style><h1>PMC3414225 — Synthesis and application of luminescent single CdS quantum dot encapsulated silica nanoparticles directed for precision optical bioimaging.</h1>
+<h2>Voie : CdS_QD</h2>
+<pre class="mermaid">flowchart LR
+  R18110([&quot;cadmium nitrate&lt;br/&gt;190 mg&quot;]):::reactif
+  R18110 --&gt;|&quot;precursor&quot;| S21411
+  R18111([&quot;deionized water (aqueous Cd solution)&lt;br/&gt;2 mL&quot;]):::reactif
+  R18111 --&gt;|&quot;solvent&quot;| S21411
+  R18112([&quot;ammonium sulfide solution&lt;br/&gt;2 mL&quot;]):::reactif
+  R18112 --&gt;|&quot;precursor&quot;| S21411
+  R18113([&quot;cyclohexane&lt;br/&gt;20 mL&quot;]):::reactif
+  R18113 --&gt;|&quot;solvent&quot;| S21411
+  R18114([&quot;IGEPAL&lt;br/&gt;8 mL&quot;]):::reactif
+  R18114 --&gt;|&quot;surfactant&quot;| S21411
+  R18115([&quot;ethanol&lt;br/&gt;25 mL&quot;]):::reactif
+  R18115 --&gt;|&quot;wash&quot;| S21411
+  S21411[&quot;&lt;b&gt;1. mix&lt;/b&gt;&lt;br/&gt;volume : 20 mL&quot;]:::etape
+  S21411 --&gt; S21412
+  S21412[&quot;&lt;b&gt;2. add&lt;/b&gt;&quot;]:::etape
+  S21412 --&gt; S21413
+  S21413[&quot;&lt;b&gt;3. add&lt;/b&gt;&quot;]:::etape
+  S21413 --&gt; S21414
+  S21414[&quot;&lt;b&gt;4. mix&lt;/b&gt;&lt;br/&gt;delay_before_mixing : 5 min&quot;]:::etape
+  S21414 --&gt; S21415
+  S21415[&quot;&lt;b&gt;5. precipitate&lt;/b&gt;&quot;]:::etape
+  S21415 --&gt; S21416
+  S21416[&quot;&lt;b&gt;6. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : ethanol&lt;br/&gt;volume : 25 mL&lt;br/&gt;repetitions : repeatedly&quot;]:::etape
+  S21416 --&gt; S21417
+  S21417[&quot;&lt;b&gt;7. centrifuge&lt;/b&gt;&quot;]:::etape
+  S21417 --&gt; M
+  M{{&quot;bare CdS quantum dots&lt;br/&gt;CdS&quot;}}:::materiau
+  O84812[&quot;particle_size : 4–5 nm&quot;]:::resultat
+  M -.-&gt; O84812
+  O84813[&quot;absorption_peak : 400 nm&quot;]:::resultat
+  M -.-&gt; O84813
+  O84814[&quot;emission_peak : 600 nm&quot;]:::resultat
+  M -.-&gt; O84814
+  O84815[&quot;quantum_yield : 0.02 %&quot;]:::resultat
+  M -.-&gt; O84815
+  O84816[&quot;crystal_structure : cubic&quot;]:::resultat
+  M -.-&gt; O84816
+  O84817[&quot;shelf_life_fluorescence : no fluorescence recorded afte…&quot;]:::resultat
+  M -.-&gt; O84817
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<pre class="mermaid">flowchart LR
+  B13585{{&quot;CdS_QD&quot;}}:::materiau
+  B13586[&quot;SiO2_CdS_8h&quot;]:::etape
+  B13585 --&gt;|&quot;tetraethoxysilane = 1 mL&lt;br/&gt;ammonia_solution = 0.2 mL&quot;| B13586
+  B13587[&quot;SiO2_CdS_2-3h&quot;]:::etape
+  B13586 --&gt;|&quot;duration = 2–3 hours&quot;| B13587
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre>
+<h2>Voie : CD31_SiO2_CdS</h2>
+<pre class="mermaid">flowchart LR
+  R18120([&quot;amine-functionalized silica-coated CdS QDs (…&lt;br/&gt;10 mg&quot;]):::reactif
+  R18120 --&gt;|&quot;intermediate&quot;| S21434
+  R18121([&quot;3-aminopropyltriethoxysilane (APTES)&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18121 --&gt;|&quot;precursor&quot;| S21434
+  R18122([&quot;glutaraldehyde&lt;br/&gt;2 mL&quot;]):::reactif
+  R18122 --&gt;|&quot;crosslinker&quot;| S21434
+  R18123([&quot;phosphate-buffered saline (PBS) wash&lt;br/&gt;10 mL&quot;]):::reactif
+  R18123 --&gt;|&quot;wash&quot;| S21434
+  R18124([&quot;phosphate-buffered saline (PBS) redispersion&lt;br/&gt;quantité non citée&quot;]):::reactif
+  R18124 --&gt;|&quot;solvent&quot;| S21434
+  R18125([&quot;CD31 antibody (mouse monoclonal)&lt;br/&gt;50 μL&quot;]):::reactif
+  R18125 --&gt;|&quot;ligand&quot;| S21434
+  S21434[&quot;&lt;b&gt;1. functionalize&lt;/b&gt;&quot;]:::etape
+  S21434 --&gt; S21435
+  S21435[&quot;&lt;b&gt;2. stir&lt;/b&gt;&lt;br/&gt;duration : 5 hours&quot;]:::etape
+  S21435 --&gt; S21436
+  S21436[&quot;&lt;b&gt;3. centrifuge&lt;/b&gt;&quot;]:::etape
+  S21436 --&gt; S21437
+  S21437[&quot;&lt;b&gt;4. wash&lt;/b&gt;&lt;br/&gt;wash_solvent : PBS&lt;br/&gt;volume : 10 mL&lt;br/&gt;repetitions : thrice&quot;]:::etape
+  S21437 --&gt; S21438
+  S21438[&quot;&lt;b&gt;5. disperse&lt;/b&gt;&quot;]:::etape
+  S21438 --&gt; S21439
+  S21439[&quot;&lt;b&gt;6. add&lt;/b&gt;&lt;br/&gt;volume : 50 μL&quot;]:::etape
+  S21439 --&gt; S21440
+  S21440[&quot;&lt;b&gt;7. react&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&lt;br/&gt;duration : 4 hours&lt;br/&gt;agitation : gentle shaking&quot;]:::etape
+  S21440 --&gt; S21441
+  S21441[&quot;&lt;b&gt;8. store&lt;/b&gt;&lt;br/&gt;temperature : 4 °C&quot;]:::etape
+  S21441 --&gt; M
+  M{{&quot;CD31 antibody-conjugated silica-coated CdS quantu…&lt;br/&gt;&quot;}}:::materiau
+  O84856[&quot;emission_peak : 600 nm&quot;]:::resultat
+  M -.-&gt; O84856
+  O84857[&quot;HUVEC_cell_viability_1000_ug_per_mL : 58 %&quot;]:::resultat
+  M -.-&gt; O84857
+  O84858[&quot;HUVEC_cell_viability_100_ug_per_mL : 82 %&quot;]:::resultat
+  M -.-&gt; O84858
+  O84859[&quot;HUVEC_cell_viability_10_ug_per_mL : 93 %&quot;]:::resultat
+  M -.-&gt; O84859
+  O84860[&quot;HUVEC_cell_viability_1_ug_per_mL : 99 %&quot;]:::resultat
+  M -.-&gt; O84860
+  O84861[&quot;Gl1_cell_viability_1000_ug_per_mL : 52 %&quot;]:::resultat
+  M -.-&gt; O84861
+  classDef reactif fill:#e8f1fb,stroke:#3b6ea5,color:#102a43
+  classDef etape fill:#fff7e0,stroke:#b7791f,color:#3d2c00
+  classDef materiau fill:#e3f6e8,stroke:#2f855a,color:#123524
+  classDef resultat fill:#f4f4f5,stroke:#71717a,color:#27272a</pre><script src='https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.1/mermaid.min.js'></script><script>mermaid.initialize({startOnLoad:true,securityLevel:'loose',flowchart:{htmlLabels:true}});</script>
