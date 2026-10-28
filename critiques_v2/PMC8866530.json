@@ -1,0 +1,125 @@
+{
+ "pmcid": "PMC8866530",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "faux",
+   "where": "annotation mecanisme_analyse (CFO_phi1.325_900), sens de l'oxygène selon ϕ",
+   "extracted": "ϕ = 1 correspond à l'oxydation complète sans O2 extérieur, ϕ < 1 consomme de l'oxygène de l'air et ϕ > 1 laisse du combustible en excès",
+   "article_says": "CaNO32·4H2O+2FeNO33·9H2O+40/9ϕC2H5NO2+10ϕ-1O2→CaFe2O4",
+   "fix": "Dans l'équation de l'article, O2 est un réactif de coefficient 10(ϕ − 1) : il est consommé pour ϕ > 1 (fuel-rich) et dégagé (coefficient négatif) pour ϕ < 1. Corriger la phrase : ϕ < 1 libère de l'O2 (excès d'oxydant), ϕ > 1 en consomme.",
+   "confidence": "sure"
+  },
+  {
+   "severity": "attribution",
+   "where": "XPS Fig. 4 : énergies de liaison Ca 2p, Fe 2p, O 1s, C 1s rangées sur la seule voie CFO_phi1.325_900",
+   "extracted": "xps_binding_energy_Ca2p32_primary = 345.3 eV (et 11 autres valeurs) sur CFO_phi1.325_900 seulement",
+   "article_says": "The Ca 2p spectra have two primary peaks at binding energies of 345.3 eV and 348.7 eV",
+   "fix": "Le texte donne ces valeurs pour la série en ϕ (Fig. 4, trois échantillons) sans distinguer ; les ranger aussi sur CFO_phi1_900 et CFO_phi0.675_900 (ou les marquer « série ») au lieu de les réserver à ϕ = 1.325. Même remarque pour Fe 2p, O 1s et C 1s.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "coulombic_efficiency, voies CFO_phi1_900, CFO_phi0.675_900, CFO_phi1.325_700/550/nocalc",
+   "extracted": "coulombic_efficiency présent seulement sur CFO_phi1.325_900 (« all samples, Fig. S2 »)",
+   "article_says": "Coulombic efficiencies are consistently near 100% for all samples, demonstrating excellent reversibility (Figure S2).",
+   "fix": "La phrase vise les six échantillons : ajouter le résultat (measured_by = leur propre mesure ec_*) aux cinq autres voies.",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: property retention_stability_irreversible_capacity_loss_first_to_second_discharge = 64 % (CFO_phi1.325_900)",
+   "extracted": "64 % rangé sous un nom « irreversible_capacity_loss » de la famille retention_stability",
+   "article_says": "The second discharge drops in capacity from the initial discharge by 64% to 637 mAh-g-1",
+   "fix": "995 → 637 mAh/g est une chute de 36 % (637/995 = 64 % de rétention) : l'article est incohérent avec ses propres chiffres. Garder la valeur écrite mais ajouter une annotation limite_reproductibilite ; le nom de propriété (perte irréversible) contredit les chiffres, préférer un nom neutre (rétention 1re→2e décharge).",
+   "confidence": "sure"
+  },
+  {
+   "severity": "deduit",
+   "where": "v3: characterizations ec_* settings reference_electrode",
+   "extracted": "reference_electrode = « potentials given vs. Li/Li+ »",
+   "article_says": "All tests were between 0.01 and 3 V vs. Li/Li+",
+   "fix": "L'article ne nomme aucune électrode de référence (demi-pile : « Li chip as anode ») ; déclarer reference_electrode dans not_stated sur les six mesures ec_* plutôt que d'en déduire une.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: characterizations ec_* settings (courants en mA, palier à tension constante, courant des 500 cycles)",
+   "extracted": "seules les densités de courant (Table S2) et la fenêtre de potentiel sont des réglages ; le reste n'est que dans le texte libre « result »",
+   "article_says": "For rate performance, cells were charged-discharged at 0.099, 0.198, 0.495, and 0.99 mA.",
+   "fix": "Ajouter des réglages : courants 0.099/0.198/0.495/0.99 mA (test de débit), 0.99 mA pour les 500 cycles, palier de 1 min à 3 V entre charge et décharge (absent des 500 cycles : « with no constant voltage step »), définition du cycle (« charge up then charge down = 1 cycle »).",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: characterizations sem_1 settings (grossissement)",
+   "extracted": "settings vide ; not_stated = accelerating_voltage, sample_preparation",
+   "article_says": "FESEM images of pCFO at low magnification (× 3–9 k) and high magnification (× 20–35 k)",
+   "fix": "Ajouter un réglage de grossissement (nom à ajouter au vocabulaire SEM) avec cette légende de la Fig. 3.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: valeurs XPS du texte absentes (Cl, Fe3+, doublets Ca 2p de la Fig. 5)",
+   "extracted": "aucun résultat pour Cl 2p / Cl 2s, ni pour les doublets Ca 2p de la série en calcination, ni pour l'état d'oxydation du fer",
+   "article_says": "Cl (Cl 2p doublet at ~ 200 eV and Cl 2 s at ~ 260 eV)",
+   "fix": "Ajouter Cl 2p ≈ 200 eV et Cl 2s ≈ 260 eV (série en ϕ à 900 °C) ; Fe 3+ (« characteristic of Fe in the 3+ oxidation state ») ; doublet secondaire Ca 2p 346.5/350.0 eV devenant primaire 345.3/348.7 eV avec la température (le doute existant explique l'incertitude d'attribution : l'extraire au moins au niveau de la série).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: valeurs chiffrées du texte non extraites (rapports de capacité, 70/30, temps de la Fig. 1a)",
+   "extracted": "seulement dans les annotations tendance_observee/comparaison_branches, pas en outcomes",
+   "article_says": "pCFO prepared in a fuel-rich (ϕ = 1.325) condition jumps up in capacity between 1.2 and 1.5 times its counterparts",
+   "fix": "Ajouter en outcomes : ×1.15 pour la première décharge selon ϕ, ×1.2–1.5 aux courants suivants, ×1.2 en moyenne sur 500 cycles ; 900 °C = 1.1–1.6 × le non calciné, 550/700 °C = 1.5–2.2 × ; « near 70/30 across ϕ » (espèces Ca) ; après 550 °C « ~ 70% of other carbon contaminates and 20% of oxygen » éliminés ; temps de la Fig. 1a pour ϕ = 0.675 (0, 21, 22, 24 min, lus sur la figure).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "CFO_phi0.675_900 variation temperature (étape 3) = 300 °C",
+   "extracted": "variation « 300 °C » (parent 250–300 °C) rattachée à ϕ = 0.675",
+   "article_says": "timeline of synthesis by setting the hot plate surface temperature to 300 °C",
+   "fix": "Le 300 °C vient de la légende de la Fig. 1 (chronologie illustrée sur un échantillon) ; l'Experimental donne 250–300 °C pour tous. En faire une variation de ϕ = 0.675 suggère que les autres échantillons ont été chauffés autrement, ce que l'article ne dit pas : la retirer des variations et la garder en note.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "xps_binding_energy_O1s_primary, voies CFO_phi1.325_700 et CFO_phi1.325_550",
+   "extracted": "between 529.0 and 529.5 eV eV (unité doublée dans value_text)",
+   "article_says": "one primary peak at binding energies between 529.0 and 529.5 eV and a secondary peak at a binding energy of 531.0 eV",
+   "fix": "value_text « between 529.0 and 529.5 » avec unit eV.",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "xps_species_fraction_Ca2p_A_Ap / B_Bp, CFO_phi1.325_550 (Fig. S1)",
+   "extracted": "20.41 % et 70.59 % (somme 91 %), signalé seulement dans doubts",
+   "article_says": "Relative concentration of two Ca species",
+   "fix": "La somme ≠ 100 % vient de l'annexe (les autres colonnes font 100 %) : ajouter une annotation limite_reproductibilite pour que le chimiste le sache.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: Electrode_pCFO étape 10, action store",
+   "extracted": "action store (« Conserver le produit ou une solution ») pour le repos de la pile",
+   "article_says": "left alone to stabilize for at least 2 h before testing",
+   "fix": "Le repos de la pile assemblée avant test correspond mieux à age (laisser reposer, cases temperature/duration) qu'à store ; la température de repos serait alors à déclarer dans not_stated.",
+   "confidence": "probable"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": 6,
+  "branches_extracted": 6,
+  "not_stated_checked": 27,
+  "not_stated_wrong": 0,
+  "v3_settings_checked": "XRD 3 + 1 not_stated, SEM 0 + 2 not_stated, XPS 4, ec 6 + 1 not_stated par mesure",
+  "figure_values_checked": "6 valeurs lues sur Fig. 7b/7d (≈ 280, 230, 260, 350, 80 mAh/g) et scan_range 10–80° (Fig. 2) : écart < 5 %"
+ },
+ "reproducibility_gaps": [
+  "masses de Ca(NO3)2·4H2O, Fe(NO3)3·9H2O et glycine pour chaque ϕ : l'article ne donne que « precalculated amounts » et ~12 mL d'eau",
+  "taille de lot, rendement, vitesse de refroidissement après calcination, facteur K de Scherrer",
+  "XRD : pas de balayage ; MEB : tension d'accélération et préparation ; électrolyte : 50–80 μL (plage), volume d'eau ajouté à l'électrode, durée et température du séchage à l'air, masse de lithium"
+ ],
+ "mechanism_check": "à revoir : le sens de la consommation de O2 selon ϕ est inversé dans mecanisme_analyse (voir constat faux)",
+ "notes": "Valeurs de Tables 1, S1, S2 et Fig. S1 revérifiées colonne par colonne pour les six échantillons (0 erreur de rangée ; l'ordre des colonnes recoupé avec les courants de Table S2). Toutes les citations de l'extraction sont des sous-chaînes du texte. method_sources (CR39, CR49) correct ; CR41/CR48 (équation de combustion) et CR46 (Scherrer) écartés selon la règle du 2026-10-13. Points laissés hors constats : Fig. 7 donne des densités de courant en mA·cm-2 (0.05–0.5) que le texte n'écrit pas ; l'identification A+A’ = espèce primaire reste une hypothèse, bien signalée dans doubts. Non-constats : fusion des durées d'ébullition et de batter dans l'étape 3 (l'article les donne dans une même phrase)."
+}
