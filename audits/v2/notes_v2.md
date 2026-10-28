@@ -26,3 +26,4 @@
 - PMC4973716 : 9e cas témoins (alun, PBS, Rabipur, saline) en outcomes suffixés de la voie voisine ; unité « ° » ajoutée par l'agent pour des pics « at 2θ » sans unité (déduction légère, contraire à la règle « rien de déduit »).
 - PMC5882680 : les noms de propriété de `comparisons` ne sont pas contrôlés par le vocabulaire (conduction_band_potential accepté là, refusé en outcomes) → trou du contrôle à fermer dans load.py.
 - PMC7563594 : 9 ajouts (filtration membranaire) ; réglage `xray_tube_voltage_current` (défini pour la DRX) réutilisé pour la source XPS → définition à élargir ou nom propre à la fusion.
+- PMC11931415 : 7 ajouts (dont 2 méthodes, granulation et physical_mixing) ; adsorbants commerciaux mesurés par les auteurs mis en annotation (10e cas témoins) ; méthode solution_reflux choisie alors que l'article ne parle pas de reflux (Fig. 1 dit hydrothermal).
