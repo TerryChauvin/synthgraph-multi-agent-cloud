@@ -104,11 +104,11 @@ ACTIONS = [
     ("polymerize", "Polymériser.", ["temperature", "duration"]),
     ("functionalize", "Greffer ou fonctionnaliser une surface.", ["temperature", "duration"]),
     ("irradiate", "Irradier (lumière UV ou visible, laser, rayonnement).", ["irradiation", "duration"]),
+    ("compute", "Étape de calcul ou de traitement de données dans une voie `calcul` : construction d'un modèle, calcul DFT, algorithme d'analyse, ajustement.", []),
     ("collect", "Récupérer le produit.", []),
     ("store", "Conserver le produit ou une solution.", []),
     ("assemble", "Assembler un dispositif (cellule, électrode, capteur).", []),
     ("transfer", "Transférer un matériau ou un mélange vers un autre récipient ou un substrat.", []),
-    ("other", "Opération ne correspondant à aucune action de la liste ; à remplacer par une action ajoutée avec définition si elle revient.", []),
 ]
 
 # ---------------------------------------------------------------- paramètres d'étape
@@ -151,8 +151,8 @@ PARAMETRES = [
     ("volume_ratio", "Rapport volumique de solvants ou de solutions.", "sans unité"),
     ("solvent", "Solvant de l'étape quand il n'est pas un réactif listé.", "texte"),
     ("substrate", "Substrat ou support de l'étape.", "texte"),
+    ("algorithm_setting", "Réglage d'un calcul ou d'un algorithme dans une voie `calcul` : fonctionnelle, base, énergie de coupure, contrainte, nombre de composantes, critère de convergence.", "texte ou nombre"),
     ("dimension", "Dimension d'un objet ou d'un équipement (taille de tamis, seuil de membrane, surface d'électrode).", "mm, kDa, cm2"),
-    ("mode", "Mode opératoire qualitatif qui n'entre dans aucun autre nom.", "texte"),
 ]
 
 # ---------------------------------------------------------------- techniques de mesure et leurs réglages
@@ -356,7 +356,6 @@ PROPRIETES = [
     ("visual_appearance", "Couleur ou aspect du produit.", []),
     ("product_identity", "Nature du produit obtenu ou réussite de la synthèse, sans mesure chiffrée.", []),
     ("statistic", "Statistique de l'article (R², p, écart-type, ANOVA) se rapportant à un résultat.", []),
-    ("other", "Propriété qui n'entre dans aucun nom de la liste ; à remplacer par une propriété ajoutée avec définition si elle revient.", []),
 ]
 
 # ---------------------------------------------------------------- mots-clés anglais (synonymes de recherche)
@@ -436,5 +435,6 @@ MOTS = {
     "functionalize": ["functionalization", "graft", "modify surface"],
     "irradiate": ["irradiation", "uv irradiation", "photoreduction"],
     "collect": ["obtain", "harvest"],
+    "compute": ["calculation", "dft calculation", "simulation", "data analysis", "pca", "fitting algorithm"],
     "transfer": ["move"],
 }

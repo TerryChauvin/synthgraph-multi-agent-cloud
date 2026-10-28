@@ -1,0 +1,44 @@
+{
+ "pmcid": "PMC7254238",
+ "ajouts": [
+  {
+   "type": "propriete",
+   "nom": "analytical_sensitivity",
+   "definition": "Sensibilité analytique d'un capteur ou d'une méthode de dosage : pente de la droite d'étalonnage (réponse par unité de concentration, éventuellement normalisée par la surface de l'électrode), avec la plage de concentration associée si elle est donnée dans le nom.",
+   "ecarte": "limit_of_detection: c'est la plus petite concentration détectable, pas la pente d'étalonnage; retention_stability: concerne la tenue dans le temps, pas la réponse à l'analyte",
+   "date": "2026-10-28 21:07",
+   "techniques": [
+    "electrochemistry",
+    "PL",
+    "UV_vis",
+    "chromatography_ms"
+   ],
+   "unite": "µA µM−1 cm−2"
+  },
+  {
+   "type": "propriete",
+   "nom": "limit_of_quantification",
+   "definition": "Limite de quantification d'un capteur ou d'une méthode de dosage pour un analyte (plus petite concentration dosable avec une précision acceptable), avec la plage linéaire associée si elle est donnée dans le nom.",
+   "ecarte": "limit_of_detection: seuil de détection et non de dosage quantitatif; analytical_sensitivity: pente d'étalonnage",
+   "date": "2026-10-28 21:07",
+   "techniques": [
+    "electrochemistry",
+    "PL",
+    "UV_vis",
+    "chromatography_ms"
+   ],
+   "unite": "µM"
+  },
+  {
+   "type": "action",
+   "nom": "electrochemical_conditioning",
+   "definition": "Cycler ou polariser une électrode (voltampérométrie cyclique répétée, polarisation) pour la stabiliser ou l'activer avant la mesure ou l'essai, sans déposer de matière.",
+   "ecarte": "electrodeposit: dépose de la matière à courant imposé alors qu'ici seule l'électrode est stabilisée; other: nom générique",
+   "date": "2026-10-28 21:07",
+   "cases": [
+    "repetitions",
+    "potential_current"
+   ]
+  }
+ ]
+}

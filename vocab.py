@@ -184,6 +184,8 @@ def cmd_ajoute(pmcid, args):
         raise SystemExit(f"type inconnu {typ!r} ; types : {', '.join(TYPES)}")
     if norm(nom) != nom.lower().replace("-", "_") and typ != "technique":
         raise SystemExit("nom en anglais snake_case (lettres, chiffres, _)")
+    if re.match(r"^(other|others|autre|misc|miscellaneous|unknown|generic|various)(_|$)", nom, re.I):
+        raise SystemExit("refusé : nom générique (other, autre…) ; donner un nom qui dit ce que c'est")
     if len(df) < 25:
         raise SystemExit("définition trop courte : une phrase qui dise ce que le nom désigne")
     log = journal(pmcid)

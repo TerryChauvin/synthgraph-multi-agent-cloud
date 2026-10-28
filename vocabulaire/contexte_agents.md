@@ -98,11 +98,11 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `polymerize` — Polymériser. [cases : temperature, duration]
 - `functionalize` — Greffer ou fonctionnaliser une surface. [cases : temperature, duration]
 - `irradiate` — Irradier (lumière UV ou visible, laser, rayonnement). [cases : irradiation, duration]
+- `compute` — Étape de calcul ou de traitement de données dans une voie `calcul` : construction d'un modèle, calcul DFT, algorithme d'analyse, ajustement.
 - `collect` — Récupérer le produit.
 - `store` — Conserver le produit ou une solution.
 - `assemble` — Assembler un dispositif (cellule, électrode, capteur).
 - `transfer` — Transférer un matériau ou un mélange vers un autre récipient ou un substrat.
-- `other` — Opération ne correspondant à aucune action de la liste ; à remplacer par une action ajoutée avec définition si elle revient.
 
 ## Paramètres d'étape (`parameters[].name`, suffixe de précision permis : `temperature_final`)
 
@@ -143,8 +143,8 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `volume_ratio` — Rapport volumique de solvants ou de solutions.
 - `solvent` — Solvant de l'étape quand il n'est pas un réactif listé.
 - `substrate` — Substrat ou support de l'étape.
+- `algorithm_setting` — Réglage d'un calcul ou d'un algorithme dans une voie `calcul` : fonctionnelle, base, énergie de coupure, contrainte, nombre de composantes, critère de convergence.
 - `dimension` — Dimension d'un objet ou d'un équipement (taille de tamis, seuil de membrane, surface d'électrode).
-- `mode` — Mode opératoire qualitatif qui n'entre dans aucun autre nom.
 
 ## Techniques de mesure (`characterizations[].technique`) et leurs réglages attendus
 
@@ -343,4 +343,3 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `visual_appearance` — Couleur ou aspect du produit. [aucune mesure]
 - `product_identity` — Nature du produit obtenu ou réussite de la synthèse, sans mesure chiffrée. [aucune mesure]
 - `statistic` — Statistique de l'article (R², p, écart-type, ANOVA) se rapportant à un résultat. [aucune mesure]
-- `other` — Propriété qui n'entre dans aucun nom de la liste ; à remplacer par une propriété ajoutée avec définition si elle revient. [aucune mesure]

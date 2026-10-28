@@ -1263,7 +1263,7 @@
    "steps": [
     {
      "order": 1,
-     "action": "other",
+     "action": "compute",
      "description": "Assemblage des 48 spectres de PL (8 excitations x 6 pH, 401 points chacun) en une matrice D.",
      "quote": "all the spectra were put together to form the two dimensional (2D) matrix; i.e., D having a dimension (48 × 401) containing the entire PL data set",
      "parameters": [
@@ -1277,12 +1277,12 @@
     },
     {
      "order": 2,
-     "action": "other",
+     "action": "compute",
      "description": "ACP de la matrice D (algorithme NIPALS).",
      "quote": "The PCA analysis of D matrix resulted to two-sub matrix of S (score) and L (loading) using NIPAL algorithm",
      "parameters": [
       {
-       "name": "mode",
+       "name": "algorithm_setting",
        "quote": "using NIPAL algorithm",
        "value_text": "NIPAL algorithm"
       }
@@ -1291,17 +1291,17 @@
     },
     {
      "order": 3,
-     "action": "other",
+     "action": "compute",
      "description": "MCR-ALS avec contrainte de non-négativité, deux composantes (nombre fixé par l'ACP).",
      "quote": "with non-negative constrained was performed using MCR-ALS tool",
      "parameters": [
       {
-       "name": "mode_constraint",
+       "name": "algorithm_setting_constraint",
        "quote": "with non-negative constrained was performed using MCR-ALS tool",
        "value_text": "non-negative constrained"
       },
       {
-       "name": "mode_number_of_components",
+       "name": "algorithm_setting_number_of_components",
        "quote": "The number of components using PCA was found to be two",
        "value_text": "two"
       }
@@ -1310,17 +1310,17 @@
     },
     {
      "order": 4,
-     "action": "other",
+     "action": "compute",
      "description": "NMF parcimonieuse (HALS) avec prior ARD et contrainte orthogonale douce (0,1).",
      "quote": "Sparse NMF was optimized for a soft orthogonal constrained (0.1) with exponential prior",
      "parameters": [
       {
-       "name": "mode_soft_orthogonal_constraint",
+       "name": "algorithm_setting_soft_orthogonal_constraint",
        "quote": "Sparse NMF was optimized for a soft orthogonal constrained (0.1) with exponential prior",
        "value_num": 0.1
       },
       {
-       "name": "mode_prior",
+       "name": "algorithm_setting_prior",
        "quote": "Sparse NMF was optimized for a soft orthogonal constrained (0.1) with exponential prior",
        "value_text": "exponential prior"
       }

@@ -1015,6 +1015,20 @@
   },
   {
    "type": "action",
+   "nom": "compute",
+   "definition": "Étape de calcul ou de traitement de données dans une voie `calcul` : construction d'un modèle, calcul DFT, algorithme d'analyse, ajustement.",
+   "cases": [],
+   "synonymes": [
+    "calculation",
+    "dft calculation",
+    "simulation",
+    "data analysis",
+    "pca",
+    "fitting algorithm"
+   ]
+  },
+  {
+   "type": "action",
    "nom": "collect",
    "definition": "Récupérer le produit.",
    "cases": [],
@@ -1045,13 +1059,6 @@
    "synonymes": [
     "move"
    ]
-  },
-  {
-   "type": "action",
-   "nom": "other",
-   "definition": "Opération ne correspondant à aucune action de la liste ; à remplacer par une action ajoutée avec définition si elle revient.",
-   "cases": [],
-   "synonymes": []
   },
   {
    "type": "parametre",
@@ -1277,15 +1284,15 @@
   },
   {
    "type": "parametre",
-   "nom": "dimension",
-   "definition": "Dimension d'un objet ou d'un équipement (taille de tamis, seuil de membrane, surface d'électrode).",
-   "unite": "mm, kDa, cm2"
+   "nom": "algorithm_setting",
+   "definition": "Réglage d'un calcul ou d'un algorithme dans une voie `calcul` : fonctionnelle, base, énergie de coupure, contrainte, nombre de composantes, critère de convergence.",
+   "unite": "texte ou nombre"
   },
   {
    "type": "parametre",
-   "nom": "mode",
-   "definition": "Mode opératoire qualitatif qui n'entre dans aucun autre nom.",
-   "unite": "texte"
+   "nom": "dimension",
+   "definition": "Dimension d'un objet ou d'un équipement (taille de tamis, seuil de membrane, surface d'électrode).",
+   "unite": "mm, kDa, cm2"
   },
   {
    "type": "technique",
@@ -2795,12 +2802,6 @@
    "type": "propriete",
    "nom": "statistic",
    "definition": "Statistique de l'article (R², p, écart-type, ANOVA) se rapportant à un résultat.",
-   "techniques": []
-  },
-  {
-   "type": "propriete",
-   "nom": "other",
-   "definition": "Propriété qui n'entre dans aucun nom de la liste ; à remplacer par une propriété ajoutée avec définition si elle revient.",
    "techniques": []
   }
  ]

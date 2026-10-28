@@ -453,6 +453,9 @@ SUSPECT = {  # motif d'une valeur présente dans la citation d'une étape alors 
 }
 
 
+GENERIQUE = re.compile(r"^(other|others|autre|misc|miscellaneous|unknown|generic|various)(_|$)", re.I)
+
+
 def validate_v3(c, data, order, by_label):
     """Contrôles de l'architecture v2 : noms du vocabulaire, grille par technique, réglages structurés,
     lien résultat → mesure, « non cité » suspects (avertissements)."""
@@ -460,6 +463,17 @@ def validate_v3(c, data, order, by_label):
     hint_v = "nom absent du vocabulaire : `python3 -I vocab.py cherche <PMCID> \"…\"` puis, si rien ne convient, `vocab.py ajoute`"
     _, entries = vocab_index()
     char_ids = {}   # id -> (route label, technique officielle)
+    interdit = "nom générique interdit (other, autre…) : choisir un nom de la liste (`vocab.py cherche`) ou en ajouter un avec sa définition (`vocab.py ajoute`)"
+    for r in order:
+        noms = [("méthode", m) for m in r.get("methods") or []]
+        noms += [("action", s.get("action")) for s in r.get("steps") or []]
+        noms += [("paramètre", p.get("name")) for s in r.get("steps") or [] for p in s.get("parameters") or []]
+        noms += [("technique", ch.get("technique")) for ch in r.get("characterizations") or []]
+        noms += [("réglage", st.get("name")) for ch in r.get("characterizations") or [] for st in ch.get("settings") or []]
+        noms += [("propriété", o.get("property")) for o in r.get("outcomes") or []]
+        for typ, n in noms:
+            if n and GENERIQUE.match(str(n)):
+                c.err(f"route {r['label']}", f"{typ} {n!r} : {interdit}")
     for r in order:
         w = f"route {r['label']}"
         if not r.get("parent") and r.get("kind") != "calcul":
@@ -473,8 +487,6 @@ def validate_v3(c, data, order, by_label):
             ws = f"{w} step {s.get('order')}"
             if vocab_name("action", s.get("action") or "") is None:
                 c.err(ws, f"action {s.get('action')!r} : {hint_v}")
-            if vocab_name("action", s.get("action") or "") == "other":
-                c.warn(ws, "action `other` : chercher une action existante ou en ajouter une avec définition et cases")
             for p in s.get("parameters") or []:
                 if vocab_name("parametre", p.get("name") or "", prefix_ok=True) is None:
                     c.err(f"{ws} param {p.get('name')!r}", hint_v)
@@ -526,8 +538,7 @@ def validate_v3(c, data, order, by_label):
             if prop is None:
                 c.err(wo, f"propriété : {hint_v}")
                 continue
-            if prop == "other":
-                c.warn(wo, "propriété `other_…` : chercher un nom existant ou un ajout récent (`vocab.py cherche`), sinon ajouter un nom avec définition")
+
             techs = entries[("propriete", prop)].get("techniques") or []
             mb = o.get("measured_by")
             if not techs:
