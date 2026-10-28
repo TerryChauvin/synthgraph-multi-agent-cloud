@@ -154,7 +154,7 @@
      "unit": "mL",
      "purity": "70%",
      "supplier": "Sigma-Aldrich",
-     "supplier_quote": "oleylamine (OLA, 70%, Sigma- Aldrich)"
+     "supplier_quote": "oleylamine (OLA, 70%, Sigma- Aldrich), PbBr2 (98%, Sigma-Aldrich)"
     },
     {
      "name": "Cs-oleate",
@@ -372,13 +372,13 @@
        "unit": "min"
       },
       {
-       "name": "volume_NH4BF4_solution",
+       "name": "volume_saturated_solution",
        "quote": "NH4BF4 saturated solution (1 mL) was then stirred with CsPbBr3 NCs precipitation in toluene (0.25mL) for 30 min",
        "value_num": 1,
        "unit": "mL"
       },
       {
-       "name": "volume_NC_dispersion",
+       "name": "volume_nc_dispersion",
        "quote": "NH4BF4 saturated solution (1 mL) was then stirred with CsPbBr3 NCs precipitation in toluene (0.25mL) for 30 min",
        "value_num": 0.25,
        "unit": "mL"
@@ -502,6 +502,32 @@
        "name": "spectral_resolution",
        "quote": "a spectral resolution of ∼4.5 ˚A. The detec- tor active pixel pitch is 52.4 µm, and as a result, the pixel pitch in wavelength is ∼1.5 nm. This corresponds to pixel pitch of ∼7 meV and ∼4 meV at the emission spectral ranges of CsPbBr3 and CsPbI3, respectively.",
        "value_text": "spectral resolution of ∼4.5 ˚A; pixel pitch ∼1.5 nm, ∼7 meV (CsPbBr3) and ∼4 meV (CsPbI3)"
+      },
+      {
+       "name": "wavelength_range",
+       "quote": "In CsPbBr3 measurements, 30 pixels of the linear SPAD array were used, spanning the range of 2.32 meV to 2.53 meV photon energies.",
+       "value_text": "30 pixels of the linear SPAD array, spanning the range of 2.32 meV to 2.53 meV photon energies"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "plsp_br",
+     "technique": "PL",
+     "instrument": "SPAD array spectrometer (Czerny–Turner spectrometer, 512-pixel linear SPAD array, 64 TDCs on FPGA) built around an Eclipse Ti-U inverted microscope (Nikon), oil immersion objective ×100, 1.3 NA; laser LDH-P-C-470B (PicoQuant)",
+     "result": "single-particle time-resolved photoluminescence and BX/1X spectra from the SPAD array data (PL decay lifetimes, spectral widths)",
+     "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 470,
+       "unit": "nm"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "single cesium lead halide perovskite nanocrystals at room temperature.",
+       "value_text": "room temperature"
       },
       {
        "name": "wavelength_range",
@@ -666,99 +692,99 @@
     {
      "property": "PL_lifetime_1X_mean",
      "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 5.9,
      "unit": "ns"
     },
     {
      "property": "PL_lifetime_1X_std",
      "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 1.6,
      "unit": "ns"
     },
     {
      "property": "PL_lifetime_BX_upper_bound_mean",
      "quote": "the estimated upper bounds on BX PL decay lifetimes are 234±44 ns (CsPbBr3) and 306±50 ps (CsPbI3).",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 234,
      "unit": "ns"
     },
     {
      "property": "PL_lifetime_BX_upper_bound_std",
      "quote": "the estimated upper bounds on BX PL decay lifetimes are 234±44 ns (CsPbBr3) and 306±50 ps (CsPbI3).",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 44,
      "unit": "ns"
     },
     {
      "property": "FWHM_ratio_BX_to_1X",
      "quote": "the CsPbBr3 NCs BX spectrum is broader by a factor of 1.4 ± 0.4 compared to the 1X spectrum",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 1.4
     },
     {
      "property": "FWHM_ratio_BX_to_1X_std",
      "quote": "the CsPbBr3 NCs BX spectrum is broader by a factor of 1.4 ± 0.4 compared to the 1X spectrum",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 0.4
     },
     {
      "property": "PL_lifetime_example_NC_tau1",
      "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 0.3,
      "unit": "ns"
     },
     {
      "property": "PL_lifetime_example_NC_tau2",
      "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 1.6,
      "unit": "ns"
     },
     {
      "property": "PL_lifetime_example_NC_tau3_1X",
      "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 6.6,
      "unit": "ns"
     },
     {
      "property": "PL_lifetime_example_NC_tau4",
      "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 36.6,
      "unit": "ns"
     },
     {
      "property": "PL_lifetime_example_NC_amplitude1",
      "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 0.69
     },
     {
      "property": "PL_lifetime_example_NC_amplitude2",
      "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 0.16
     },
     {
      "property": "PL_lifetime_example_NC_amplitude3",
      "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 0.2
     },
     {
      "property": "PL_lifetime_example_NC_amplitude4",
      "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 0.01
     },
     {
      "property": "PL_lifetime_BX_upper_bound_example_NC",
      "quote": "For this specific NC the result is τ ≈190 ps.",
-     "measured_by": "hs_br",
+     "measured_by": "plsp_br",
      "value_num": 190,
      "unit": "ps"
     },
@@ -900,7 +926,7 @@
      "unit": "mL",
      "purity": "70%",
      "supplier": "Sigma-Aldrich",
-     "supplier_quote": "oleylamine (OLA, 70%, Sigma- Aldrich)"
+     "supplier_quote": "oleylamine (OLA, 70%, Sigma- Aldrich), PbBr2 (98%, Sigma-Aldrich)"
     },
     {
      "name": "tetradecylphosphonic acid",
@@ -1249,6 +1275,32 @@
      "not_stated": []
     },
     {
+     "id": "plsp_i",
+     "technique": "PL",
+     "instrument": "SPAD array spectrometer (Czerny–Turner spectrometer, 512-pixel linear SPAD array, 64 TDCs on FPGA) built around an Eclipse Ti-U inverted microscope (Nikon), oil immersion objective ×100, 1.3 NA; laser LDH-P-C-470B (PicoQuant)",
+     "result": "single-particle time-resolved photoluminescence and BX/1X spectra from the SPAD array data (PL decay lifetimes, spectral widths)",
+     "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 470,
+       "unit": "nm"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "single cesium lead halide perovskite nanocrystals at room temperature.",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "wavelength_range",
+       "quote": "For CsPbI3 measurements, 43 pixels of the array were used, spanning the range of 1.76 meV to 1.93 meV photon energies.",
+       "value_text": "43 pixels of the array, spanning the range of 1.76 meV to 1.93 meV photon energies (one malfunctioning pixel omitted)"
+      }
+     ],
+     "not_stated": []
+    },
+    {
      "id": "g2_i",
      "technique": "single_particle_spectroscopy",
      "instrument": "SPAD array spectrometer (Czerny–Turner spectrometer, 512-pixel linear SPAD array, 64 TDCs on FPGA) built around an Eclipse Ti-U inverted microscope (Nikon), oil immersion objective ×100, 1.3 NA; laser LDH-P-C-470B (PicoQuant)",
@@ -1377,7 +1429,7 @@
     {
      "property": "PL_emission_peak_1X_sign_change_threshold",
      "quote": "1X emission peak lower (higher) than 1.845 eV or g(2)(0) higher (lower) than 0.25",
-     "measured_by": "hs_i",
+     "measured_by": "plsp_i",
      "value_num": 1.845,
      "unit": "eV"
     },
@@ -1390,41 +1442,41 @@
     {
      "property": "PL_lifetime_1X_mean",
      "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
-     "measured_by": "hs_i",
+     "measured_by": "plsp_i",
      "value_num": 8.1,
      "unit": "ns"
     },
     {
      "property": "PL_lifetime_1X_std",
      "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
-     "measured_by": "hs_i",
+     "measured_by": "plsp_i",
      "value_num": 1.4,
      "unit": "ns"
     },
     {
      "property": "PL_lifetime_BX_upper_bound_mean",
      "quote": "the estimated upper bounds on BX PL decay lifetimes are 234±44 ns (CsPbBr3) and 306±50 ps (CsPbI3).",
-     "measured_by": "hs_i",
+     "measured_by": "plsp_i",
      "value_num": 306,
      "unit": "ps"
     },
     {
      "property": "PL_lifetime_BX_upper_bound_std",
      "quote": "the estimated upper bounds on BX PL decay lifetimes are 234±44 ns (CsPbBr3) and 306±50 ps (CsPbI3).",
-     "measured_by": "hs_i",
+     "measured_by": "plsp_i",
      "value_num": 50,
      "unit": "ps"
     },
     {
      "property": "FWHM_ratio_BX_to_1X",
      "quote": "The BX to 1X spectrum broadening ratio dis- tribution for CsPbI3 is 1.2 ± 0.7.",
-     "measured_by": "hs_i",
+     "measured_by": "plsp_i",
      "value_num": 1.2
     },
     {
      "property": "FWHM_ratio_BX_to_1X_std",
      "quote": "The BX to 1X spectrum broadening ratio dis- tribution for CsPbI3 is 1.2 ± 0.7.",
-     "measured_by": "hs_i",
+     "measured_by": "plsp_i",
      "value_num": 0.7
     },
     {
@@ -1719,7 +1771,7 @@
      "unit": "mg",
      "purity": "99.999%",
      "supplier": "Sigma-Aldrich",
-     "supplier_quote": "NH4BF4, 99.999%, Sigma- Aldrich)"
+     "supplier_quote": "NH4BF4, 99.999%, Sigma- Aldrich), tetradecylphosphonic acid (TDPA, 99%, Sigma-Aldrich)"
     }
    ],
    "steps": [
@@ -1899,6 +1951,7 @@
   {
    "label": "CsPbI3-NC-film",
    "parent": "CsPbBr3-NC-film",
+   "succeeded": true,
    "material": {
     "name": "isolated CsPbI3 NCs in a PMMA film on a glass coverslip",
     "formula": "CsPbI3",
@@ -2201,6 +2254,10 @@
   {
    "where": "Cs-oleate, étapes de séchage de OA et OLA",
    "issue": "L'article parle d'acide oléique et d'oléylamine « dried » (séchés) sans en décrire le séchage ; non extrait."
+  },
+  {
+   "where": "fournisseurs (annexe S2)",
+   "issue": "La liste « Materials » de l'annexe est coupée par des sauts de ligne du PDF (« Sigma- Aldrich » pour l'oleylamine et le NH4BF4) ; pour ces deux réactifs la citation du fournisseur est donc prise sur deux éléments consécutifs de la liste, qui contient aussi « Sigma-Aldrich » en un seul tenant."
   },
   {
    "where": "CsPbBr3-NC-film",
