@@ -132,7 +132,9 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions",
+    "purification"
    ],
    "succeeded": true,
    "reagents": [
@@ -208,7 +210,8 @@
       }
      ],
      "not_stated": [
-      "volume"
+      "volume",
+      "addition_rate"
      ]
     },
     {
@@ -284,7 +287,10 @@
       "atmosphere",
       "probe_immersion_depth",
       "vessel",
-      "stirring_during_sonication"
+      "stirring_during_sonication",
+      "ph",
+      "cooling_mode",
+      "storage"
      ]
     }
    ],
@@ -313,15 +319,15 @@
     {
      "technique": "SAED",
      "result": "diffuse band, partial crystalline / amorphous nature",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "FEI TECNAI G2 spirit twin (transmission electron microscope; size and diffraction pattern studied on the same instrument)",
+     "conditions": "diffraction pattern of the Ag-Nps (Fig. 7), images taken after 4 days",
      "quote": "selected area electron diffraction pattern explains their partial crystalline nature"
     },
     {
      "technique": "FTIR-ATR",
      "result": "OH and C=O bands shifted from 3304 and 1639 cm−1 (starch) to 3338 and 1637 cm−1 (Ag-Nps)",
      "instrument": "PerkinElmer Spectrum two",
-     "conditions": null,
+     "conditions": "FTIR-ATR spectra of the synthesised Ag-Nps (Fig. 8a) and of starch (Fig. 8b)",
      "quote": "In Figure 8(a), there is deviation of both hydroxyl and carbonyl group; it appears at 3338 and 1637 cm−1, indicating that both were involved in synthesis of Ag-Nps."
     },
     {
@@ -337,6 +343,20 @@
      "instrument": null,
      "conditions": "1,2-phenylenediamine 1.0 mmol and o-chlorobenzaldehyde 1.0 mmol in acetonitrile 3.0 mL; 100 µL of Ag-Nps (colloid) added; stirred 10 min at room temperature",
      "quote": "A mixture of 1,2-phenylenediamine (1.0 mmol) and o-chlorobenzaldehyde (1.0 mmol) in acetonitrile (3.0 mL) was taken, and 100 μL of Ag-Nps was added at room temperature. The reaction solution was stirred at room temperature for 10 minutes."
+    },
+    {
+     "technique": "catalytic test - isolation et purification du produit",
+     "result": "filtrate evaporated under vacuum, dried; crude product purified by column chromatography (hexane/ethyl acetate) giving pure benzimidazole (approx. 95%)",
+     "instrument": "aluminium TLC sheets, silica gel 60 (MERCK), F254",
+     "conditions": "reaction monitored by TLC until completion; filtrate evaporated under vacuum then dried; column chromatography, eluent hexane/ethyl acetate",
+     "quote": "The reaction was monitored until its completion by thin layer chromatography (TLC). The filtrate was evaporated under vacuum and subsequently dried to afford the crude product which was purified by column chromatography using hexane/ethyl acetate as eluent to afford pure benzimidazole (approx. 95%)."
+    },
+    {
+     "technique": "NMR / ESI-MS / mp (2-(2-chlorophenyl)-1H-benzimidazole)",
+     "result": "white solid (~95%); mp 230-232 °C; 1H NMR δ 8.40 (dd, 1H), 7.68 (br, 2H), 7.48 (m, 1H), 7.40 (m, 2H), 7.31 (m, 2H); ESI-MS m/z 229.1 (M + 1)",
+     "instrument": "Bruker Advance 500 (500 MHz); Varian 91 500-LC ion trap mass spectrometer; digital Stuart SMP 10 melting point apparatus",
+     "conditions": "1H NMR in CDCl3, 500 MHz (11.4 Tesla), TMS internal standard; melting points uncorrected",
+     "quote": "Chemical formula: C13H9ClN2; white solid (~95%); mp 230–232°C; 1H NMR (500 MHz, CDCl3): δ 8.40 (dd, 1H), 7.68 (br, 2H), 7.48 (m, 1H), 7.40 (m, 2H), and 7.31 (m, 2H); ESI-MS: m/z = 229.1 (M + 1)."
     }
    ],
    "outcomes": [
@@ -428,6 +448,51 @@
      "unit": "a.u.",
      "from_figure": "Fig. 5",
      "quote": "Figure 5 UV-Vis spectra of Ag-Nps at different time at pH 11."
+    },
+    {
+     "property": "XRD_fcc_silver_reflections",
+     "value_text": "(111) and (200) planes of fcc silver (Ref. no-01-087-0717)",
+     "quote": "and other peaks are assigned to diffractions from the (111) and (200) planes of face-centred cubic (fcc) silver (Ref. no-01-087-0717)"
+    },
+    {
+     "property": "XRD_starch_broad_reflexion_2theta",
+     "value_text": "20° to 30°",
+     "quote": "the broad reflexion at 20° to 30° is due to the low crystallinity of the starch"
+    },
+    {
+     "property": "FTIR_OH_band_AgNps",
+     "value_num": 3338,
+     "unit": "cm-1",
+     "quote": "In Figure 8(a), there is deviation of both hydroxyl and carbonyl group; it appears at 3338 and 1637 cm−1"
+    },
+    {
+     "property": "FTIR_CO_band_AgNps",
+     "value_num": 1637,
+     "unit": "cm-1",
+     "quote": "In Figure 8(a), there is deviation of both hydroxyl and carbonyl group; it appears at 3338 and 1637 cm−1"
+    },
+    {
+     "property": "FTIR_OH_band_starch",
+     "value_num": 3304,
+     "unit": "cm-1",
+     "quote": "Figure 8(b) represents the FTIR spectrum of starch and shows bands at 3304 cm−1 for –OH stretching (aliphatic hydroxyl group), 2928 cm−1 for C–H stretching (aliphatic C–H), and 1639 cm−1 for carbonyl stretching"
+    },
+    {
+     "property": "FTIR_CH_band_starch",
+     "value_num": 2928,
+     "unit": "cm-1",
+     "quote": "Figure 8(b) represents the FTIR spectrum of starch and shows bands at 3304 cm−1 for –OH stretching (aliphatic hydroxyl group), 2928 cm−1 for C–H stretching (aliphatic C–H), and 1639 cm−1 for carbonyl stretching"
+    },
+    {
+     "property": "FTIR_CO_band_starch",
+     "value_num": 1639,
+     "unit": "cm-1",
+     "quote": "Figure 8(b) represents the FTIR spectrum of starch and shows bands at 3304 cm−1 for –OH stretching (aliphatic hydroxyl group), 2928 cm−1 for C–H stretching (aliphatic C–H), and 1639 cm−1 for carbonyl stretching"
+    },
+    {
+     "property": "benzimidazole_melting_point",
+     "value_text": "230–232 °C",
+     "quote": "mp 230–232°C"
     }
    ],
    "missing_fields": [
@@ -1226,6 +1291,18 @@
   {
    "where": "Ag-starch25-pH11, test catalytique",
    "issue": "Les conditions du test (1,0 mmol de chaque réactif, 3,0 mL d'acétonitrile, 100 µL de colloïde, 10 min à température ambiante) sont portées par une entrée de caractérisation et par la citation du résultat ; le test est un résultat de la voie et non une branche. Le colloïde utilisé (quantité d'amidon, pH, âge) n'est pas précisé."
+  },
+  {
+   "where": "Section 2.2 contre section 3.2, ordre pH / amidon",
+   "issue": "La section 2.2 ajoute l'amidon à AgNO3, agite, puis soumet aux ultrasons « at different pH (5.5−11) under sonication » ; la section 3.2 règle d'abord le pH de AgNO3 à la soude puis ajoute l'amidon « with continuous stirring ». Les étapes gardent l'ordre de 3.2 (réglage du pH puis amidon, plus précis) ; l'article ne tranche pas."
+  },
+  {
+   "where": "Conditions de mesure non écrites (complément)",
+   "issue": "Non cités : tension d'accélération et nombre de particules comptées (MET) ; plage, résolution et nombre de balayages (IRTF-ATR) ; dilution et température de mesure (DLS, UV-Vis) ; pas de comptage, durée par pas et méthode de calcul de la taille de cristallite (DRX, aucune taille de cristallite donnée) ; préparation du film mince pour la DRX."
+  },
+  {
+   "where": "Test catalytique, isolement du produit",
+   "issue": "Le texte parle d'un « filtrate » alors qu'aucune filtration (du colloïde ou du catalyseur) n'est décrite ; proportion hexane/acétate d'éthyle, atmosphère, quantité de colloïde exprimée en argent et vide/température d'évaporation non cités."
   }
  ]
 }
