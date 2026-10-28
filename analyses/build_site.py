@@ -7,6 +7,7 @@ Usage : python3 -I analyses/build_site.py
 Sorties : docs/img/<graphique>_<fr|en>.svg ; docs/index.html ; blocs entre <!-- SITE:... --> dans README.md et README.fr.md.
 Sans dépendance (SVG écrit à la main). Le texte est écrit une fois, rendu en HTML et en Markdown."""
 import os, sys, json, re, html
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 os.chdir(ROOT)
 DATA = "docs/audit_contenu/data/"
@@ -22,6 +23,16 @@ S = L("summary")[0]
 PALIERS = [(8712, 1307, 10, 10, 29, 526), (8796, 776, 0, 8, 7, 403), (10050, 981, 0, 8.5, 5, 435), (9920, 529, 0, 8, 7, 406), (9581, 1112, 0, 8, 4, 428),
            (9680, 1887, 0, 8, 3, 419), (9238, 1032, 2, 8, 9, 421), (9859, 1181, 1, 9, 11, 437), (9719, 1258, 0, 8.5, 4, 424), (9498, 1222, 3, 9, 11, 446)]
 QUOTES = sum(p[0] for p in PALIERS); RELUES = sum(p[1] for p in PALIERS); FAUSSES = sum(p[2] for p in PALIERS)
+KPI = dict(quotes=QUOTES, relues=RELUES, fausses=FAUSSES, blind=[r for r in L("verif_reextraction") if r["pmcid"] == "TOTAL"][0]["precision_params"])
+
+# titres courts des cartes de la grille d'accueil
+SHORT = {"Types de synthèse (classement par mots-clés de la méthode)": "Types de synthèse", "Synthesis types (keyword classification of the method)": "Synthesis types",
+         "Mécanisme de formation : auteurs contre critique scientifique": "Mécanisme : auteurs / critique", "Formation mechanism: authors vs. science reviewer": "Mechanism: authors vs. reviewer",
+         "Base contre plages de référence relevées sur le web": "Base contre la littérature", "Database vs. reference ranges found on the web": "Database vs. literature ranges",
+         "Voies de base de matériau par famille": "Voies de base par famille", "Propriétés attendues les moins renseignées": "Propriétés attendues manquantes",
+         "Branches sans résultat ni caractérisation": "Branches sans résultat", "Branches with no outcome or characterization": "Branches with no outcome",
+         "Motifs des limites de reproductibilité": "Limites de reproductibilité", "Reasons for reproducibility limits": "Reproducibility limits",
+         "Ré-extraction à l'aveugle de 20 publications": "Ré-extraction à l'aveugle (20)", "Blind re-extraction of 20 papers": "Blind re-extraction (20 papers)"}
 
 # ------------------------------------------------------------------ libellés
 FAM = {"composite": ("composite", "composite"), "oxyde": ("oxyde", "oxide"), "perovskite": ("pérovskite", "perovskite"), "MOF": ("MOF", "MOF"), "nanoparticule_metallique": ("nanoparticule métallique", "metal nanoparticle"),
@@ -60,6 +71,10 @@ FG, MUT = "#1d2a30", "#5b6b73"
 STYLE = ("<style>.bg{fill:#f3f6f7;stroke:#d5dde0}.tx{fill:#1d2a30}.mut{fill:#5b6b73}.gl{stroke:#d5dde0}.c1{fill:#17707f}.c2{fill:#c27c0e}.c3{fill:#a8412f}.c4{fill:#3f7d4e}.c5{fill:#9fb3bb}"
          "text{font-family:'Source Sans 3',system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px}.t{font-size:15px;font-weight:600}</style>")
 
+# variante sombre (README GitHub : <picture> + prefers-color-scheme)
+STYLE_DARK = (STYLE.replace("#f3f6f7", "#161b22").replace("#d5dde0", "#30363d").replace("#1d2a30", "#e6edf3").replace("#5b6b73", "#9198a1")
+              .replace("#17707f", "#3a9fb0").replace("#c27c0e", "#d18f1f").replace("#a8412f", "#c9583f").replace("#3f7d4e", "#4f9a62").replace("#9fb3bb", "#5d7079"))
+
 def esc(s): return html.escape(str(s), quote=False)
 
 def frame(w, h, title, sub, body, standalone):
@@ -76,19 +91,21 @@ def bars(items, title, sub, standalone, w=760, labw=230, fmt=None, vmax=None):
     sc = (w - labw - 80) / vmax; out = []
     for i, (l, v, c) in enumerate(items):
         y = top + i * rh
-        out.append(f'<text class="tx" x="{labw-8}" y="{y+15}" text-anchor="end">{esc(trunc(l, 34))}</text><rect class="{c}" x="{labw}" y="{y+3}" width="{max(1.5, v*sc):.1f}" height="{rh-8}" rx="2"/>'
+        out.append(f'<text class="tx" x="{labw-8}" y="{y+15}" text-anchor="end">{esc(trunc(l, int(labw / 7.6)))}</text><rect class="{c}" x="{labw}" y="{y+3}" width="{max(1.5, v*sc):.1f}" height="{rh-8}" rx="2"/>'
                    f'<text class="mut" x="{labw+max(1.5, v*sc)+6:.1f}" y="{y+15}">{esc(fmt(v) if fmt else v)}</text>')
     return frame(w, h, title, sub, "".join(out), standalone)
 
 def stacked(items, series, title, sub, standalone, w=760, labw=230):
     """items : (libellé, [valeurs]) ; séries : [(nom, classe)] ; barres normalisées à 100 %"""
-    top = 76; rh = 24; h = top + len(items) * rh + 12; out = []; x = 16
+    out = []; x = 16; ly = 52 if sub else 38
     for nm, c in series:
-        out.append(f'<rect class="{c}" x="{x}" y="52" width="10" height="10" rx="2"/><text class="tx" x="{x+15}" y="61">{esc(nm)}</text>'); x += 22 + 7 * len(nm)
+        if x + 22 + 7 * len(nm) > w: x = 16; ly += 18
+        out.append(f'<rect class="{c}" x="{x}" y="{ly}" width="10" height="10" rx="2"/><text class="tx" x="{x+15}" y="{ly+9}">{esc(nm)}</text>'); x += 22 + 7 * len(nm)
+    top = ly + 24; rh = 24; h = top + len(items) * rh + 12
     bw = w - labw - 24
     for i, (l, vals) in enumerate(items):
         y = top + i * rh; tot = sum(vals) or 1; acc = 0
-        out.append(f'<text class="tx" x="{labw-8}" y="{y+15}" text-anchor="end">{esc(trunc(l, 34))}</text>')
+        out.append(f'<text class="tx" x="{labw-8}" y="{y+15}" text-anchor="end">{esc(trunc(l, int(labw / 7.6)))}</text>')
         for (nm, c), v in zip(series, vals):
             wv = bw * v / tot
             if wv > 0.4: out.append(f'<rect class="{c}" x="{labw+acc:.1f}" y="{y+3}" width="{wv-1:.1f}" height="{rh-8}"><title>{esc(l)} · {esc(nm)} : {v:g}</title></rect>')
@@ -97,7 +114,17 @@ def stacked(items, series, title, sub, standalone, w=760, labw=230):
     return frame(w, h, title, sub, "".join(out), standalone)
 
 # ------------------------------------------------------------------ graphiques
-def charts(lg, standalone):
+def charts(lg, standalone, small=False):
+    """small : cartes de 440 px pour la grille de la page d'accueil (8 lignes au plus, sans sous-titre)."""
+    global bars, stacked
+    if small:
+        _b, _s = bars, stacked
+        def bars(items, title, sub, standalone, w=760, labw=230, fmt=None, vmax=None):
+            return _b(items[:8], SHORT.get(title, title), None, standalone, w=440, labw=min(labw, 175), fmt=fmt, vmax=vmax)
+        def stacked(items, series, title, sub, standalone, w=760, labw=230):
+            return _s(items[:8], series, SHORT.get(title, title), None, standalone, w=440, labw=min(labw, 150))
+        try: return charts(lg, standalone)
+        finally: bars, stacked = _b, _s
     fam = [(lab(FAM, r["famille"], lg), r["voies_base"], "c1") for r in sorted(L("by_family"), key=lambda r: -r["voies_base"])]
     meth = [(lab(METH, r["methode"], lg), r["voies"], "c5" if r["methode"] == "non_classee" else "c1") for r in L("methodes")[:14]]
     ess = sorted(L("essentiels_methode"), key=lambda r: -r["voies"])[:10]
@@ -263,11 +290,22 @@ def inline_md(s):
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s); s = re.sub(r"`(.+?)`", r"<code>\1</code>", s)
     return re.sub(r"\[(.+?)\]\((.+?)\)", r'<a href="\2">\1</a>', s)
 
-def render_md(blocks, lg, svgs, base="###", prefix="docs/img/"):
-    out = []
+def picture(light, dark, alt, width=None):
+    w = f' width="{width}"' if width else ""
+    return (f'<picture><source media="(prefers-color-scheme: dark)" srcset="{dark}">'
+            f'<img src="{light}" alt="{html.escape(alt)}"{w}></picture>')
+
+def render_md(blocks, lg, svgs, base="###", prefix="docs/img/", fold=False):
+    """fold : chaque section h2 devient un bloc <details> repliable (README, sous la grille d'accueil)."""
+    out = []; opened = False
     for b in blocks:
         t = b[0]
-        if t == "h2": out.append(f"\n{base} {b[1]}\n")
+        if t == "h2" and fold and re.match(r"\d", b[1]):
+            if opened: out.append("</details>\n")
+            out.append(f"<details><summary><b>{inline_md(b[1])}</b></summary>\n"); opened = True
+        elif t == "h2":
+            if opened: out.append("</details>\n"); opened = False
+            out.append(f"\n{base} {b[1]}\n")
         elif t == "p": out.append(b[1] + "\n")
         elif t == "note": out.append("> " + b[1] + "\n")
         elif t == "ul": out.append("\n".join(f"- {x}" for x in b[1]) + "\n")
@@ -275,7 +313,10 @@ def render_md(blocks, lg, svgs, base="###", prefix="docs/img/"):
         elif t == "kpis": out.append("| " + " | ".join(f"**{v}**" for v, _ in b[1]) + " |\n|" + "---|" * len(b[1]) + "\n| " + " | ".join(l for _, l in b[1]) + " |\n")
         elif t == "table": out.append("| " + " | ".join(b[1]) + " |\n|" + "---|" * len(b[1]) + "\n" + "\n".join("| " + " | ".join(r) + " |" for r in b[2]) + "\n")
         elif t == "code": out.append("```sql\n" + b[1] + "\n```\n")
-        elif t == "chart": out.append(f'<p align="center"><img src="{prefix}{b[1]}_{("fr","en")[lg]}.svg" alt="{html.escape(re.search(r"aria-label=\"(.*?)\"", svgs[b[1]]).group(1))}" width="760"></p>\n')
+        elif t == "chart":
+            f = f'{prefix}{b[1]}_{("fr","en")[lg]}'
+            out.append('<p align="center">' + picture(f + ".svg", f + "_dark.svg", re.search(r'aria-label="(.*?)"', svgs[b[1]]).group(1), 760) + "</p>\n")
+    if opened: out.append("</details>\n")
     return "\n".join(out)
 
 def render_html(blocks, lg, svgs):
@@ -360,16 +401,61 @@ footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);color:v
 </script></body></html>
 """
 
+# ------------------------------------------------------------------ bloc visuel de la page d'accueil (README)
+ACC_DIR = "docs/img/accueil/"
+CARDS = ["familles", "methodes", "essentiels", "trous", "branches", "mecanismes", "limites", "references", "aveugle"]
+
+def captions(lg):
+    T = lambda fr, en: (fr, en)[lg]
+    return {"familles": T(f"{n(S['voies_base_materiau'], lg)} voies de base de matériau, {S['familles']} familles", f"{n(S['voies_base_materiau'], lg)} material base routes, {S['familles']} families"),
+            "methodes": T(f"8 premières classes sur {S['methodes']} (mots-clés de la méthode)", f"top 8 of {S['methodes']} classes (method keywords)"),
+            "essentiels": T("vert : cité · orange : l'article se tait · rouge : hors grille", "green: cited · amber: paper silent · red: outside the grid"),
+            "trous": T("part des voies de la famille qui rapportent la propriété", "share of the family's routes reporting the property"),
+            "branches": T("variantes testées sans résultat ni caractérisation, en %", "tested variants with no outcome or characterization, %"),
+            "mecanismes": T(f"{S['mecanismes_compares']} voies : mécanisme des auteurs jugé par le critique", f"{S['mecanismes_compares']} routes: authors' mechanism judged by the reviewer"),
+            "limites": T(f"{p(S['pct_voies_avec_limite'], lg, 0)} des voies de base portent au moins une limite", f"{p(S['pct_voies_avec_limite'], lg, 0)} of base routes carry at least one limit"),
+            "references": T(f"{S['references_conformes']} couples sur {S['references_comparees']} dans la plage publiée", f"{S['references_conformes']} of {S['references_comparees']} pairs within the published range"),
+            "aveugle": T("20 publications ré-extraites sans voir la base", "20 papers re-extracted without seeing the database")}
+
+def visual_md(lg, code, small):
+    T = lambda fr, en: (fr, en)[lg]
+    a = lambda name: picture(f"{ACC_DIR}{name}_{code}_light.svg", f"{ACC_DIR}{name}_{code}_dark.svg", re.search(r'aria-label="(.*?)"', open(f"{ACC_DIR}{name}_{code}_light.svg", encoding="utf-8").read()).group(1), "100%")
+    cap = captions(lg); cells = []
+    for k in CARDS:
+        alt = re.search(r'aria-label="(.*?)"', small[k]).group(1)
+        cells.append(f'<td width="50%" valign="top">{picture(f"{ACC_DIR}carte_{k}_{code}.svg", f"{ACC_DIR}carte_{k}_{code}_dark.svg", alt, "100%")}<br><sub>{html.escape(cap[k])}</sub></td>')
+    more = T("Chiffres détaillés, méthode et limites : sections repliables ci-dessous, rapports <code>audits/audit_contenu.md</code> et <code>audits/audit_verification.md</code>.",
+             "Detailed figures, method and limits: collapsible sections below, reports <code>audits/audit_contenu.md</code> and <code>audits/audit_verification.md</code>.")
+    cells.append(f'<td width="50%" valign="middle"><sub>{more}</sub></td>')
+    grid = "<table>\n" + "\n".join("<tr>" + "".join(cells[i:i + 2]) + "</tr>" for i in range(0, len(cells), 2)) + "\n</table>"
+    return "\n".join([
+        f'<p align="center">{a("pipeline")}</p>', "", f'<p align="center">{a("chiffres")}</p>', "",
+        "## " + T("Le modèle de données", "The data model"), "",
+        T("Une **voie de base** décrit un protocole complet ; chaque **branche** est une variante testée par les auteurs et ne porte que ce qui change. Chaque valeur est accompagnée de sa citation exacte, et ce que l'article ne dit pas est noté.",
+          "A **base route** holds a full protocol; each **branch** is a variant tested by the authors and stores only what changes. Every value comes with its verbatim quote, and what the paper leaves out is recorded."), "",
+        f'<p align="center">{a("modele")}</p>', "",
+        "## " + T("Un exemple", "An example"), "",
+        f'<p align="center">{a("exemple")}</p>', "",
+        "## " + T("Ce que contient la base, en un coup d'œil", "The database at a glance"), "", grid, ""])
+
 def main():
     os.makedirs(IMG, exist_ok=True)
-    panels = []; md = {}
+    import build_visuels
+    build_visuels.build(S, KPI)
+    panels = []; md = {}; smalls = {}
     for lg, code in enumerate(("fr", "en")):
         svg_file = charts(lg, True); svg_inline = charts(lg, False)
         for k, v in svg_file.items(): open(f"{IMG}{k}_{code}.svg", "w", encoding="utf-8").write(v)
         pres, ana = content(lg)
         panels.append(f'<main data-panel="{code}-presentation" id="{code}-presentation">{render_html(pres, lg, svg_inline)}</main>')
         panels.append(f'<main data-panel="{code}-analysis" id="{code}-analysis" hidden>{render_html(ana, lg, svg_inline)}</main>')
-        md[code] = render_md(ana, lg, svg_file, base="###")
+        md[code] = render_md(ana, lg, svg_file, base="###", fold=True)
+        for k, v in svg_file.items(): open(f"{IMG}{k}_{code}_dark.svg", "w", encoding="utf-8").write(v.replace(STYLE, STYLE_DARK))
+        small = charts(lg, True, small=True); os.makedirs(ACC_DIR, exist_ok=True)
+        for k, v in small.items():
+            open(f"{ACC_DIR}carte_{k}_{code}.svg", "w", encoding="utf-8").write(v)
+            open(f"{ACC_DIR}carte_{k}_{code}_dark.svg", "w", encoding="utf-8").write(v.replace(STYLE, STYLE_DARK))
+        smalls[code] = small
     open("docs/index.html", "w", encoding="utf-8").write(PAGE.replace("@@PANELS@@", "\n".join(panels)).replace("@@GH@@", GH))
     open("docs/.nojekyll", "w").write("")
     # blocs de README
@@ -379,6 +465,9 @@ def main():
         block = f'<!-- SITE:analysis:begin -->\n<a id="analysis"></a>\n\n## {title}\n\n' + md[code] + '\n<!-- SITE:analysis:end -->'
         if "<!-- SITE:analysis:begin -->" in s: s = re.sub(r"<!-- SITE:analysis:begin -->[\s\S]*?<!-- SITE:analysis:end -->", lambda m: block, s)
         else: print(f"! marqueur SITE:analysis absent de {f} : bloc non inséré")
+        vis = "<!-- SITE:visual:begin -->\n" + visual_md(("fr", "en").index(code), code, smalls[code]) + "\n<!-- SITE:visual:end -->"
+        if "<!-- SITE:visual:begin -->" in s: s = re.sub(r"<!-- SITE:visual:begin -->[\s\S]*?<!-- SITE:visual:end -->", lambda m: vis, s)
+        else: print(f"! marqueur SITE:visual absent de {f} : bloc non inséré")
         open(f, "w", encoding="utf-8").write(s)
     print("ok:", len(os.listdir(IMG)), "graphiques,", os.path.getsize("docs/index.html") // 1024, "Ko de page")
 

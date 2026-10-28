@@ -1,6 +1,33 @@
-<p align="center"><a href="README.md">English</a> · <b>Français</b> · <a href="#résumé">Présentation</a> · <a href="#analysis">Analyse</a> · <a href="https://terrychauvin.github.io/synthgraph-multi-agent-cloud/#fr-presentation">Site interactif (onglets FR/EN)</a></p>
+<p align="center"><a href="README.md">English</a> · <b>Français</b> · <a href="#résumé">Résumé</a> · <a href="#analysis">Analyse</a> · <a href="#1-objectif-et-question-de-départ">Méthodologie</a></p>
 
 # Base de voies de synthèse de matériaux — méthodologie d'extraction et de vérification par pipeline multi-agent
+
+<!-- SITE:visual:begin -->
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/pipeline_fr_dark.svg"><img src="docs/img/accueil/pipeline_fr_light.svg" alt="Pipeline multi-agent : article, extraction, contrôle, deux critiques, correction, audit, base" width="100%"></picture></p>
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/chiffres_fr_dark.svg"><img src="docs/img/accueil/chiffres_fr_light.svg" alt="Chiffres clés de la base" width="100%"></picture></p>
+
+## Le modèle de données
+
+Une **voie de base** décrit un protocole complet ; chaque **branche** est une variante testée par les auteurs et ne porte que ce qui change. Chaque valeur est accompagnée de sa citation exacte, et ce que l'article ne dit pas est noté.
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/modele_fr_dark.svg"><img src="docs/img/accueil/modele_fr_light.svg" alt="Modèle de données de la base" width="100%"></picture></p>
+
+## Un exemple
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/exemple_fr_dark.svg"><img src="docs/img/accueil/exemple_fr_light.svg" alt="Exemple d&#x27;une voie et de ses branches : Sb2S3 à 120, 150 et 180 °C" width="100%"></picture></p>
+
+## Ce que contient la base, en un coup d'œil
+
+<table>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_familles_fr_dark.svg"><img src="docs/img/accueil/carte_familles_fr.svg" alt="Voies de base par famille" width="100%"></picture><br><sub>747 voies de base de matériau, 17 familles</sub></td><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_methodes_fr_dark.svg"><img src="docs/img/accueil/carte_methodes_fr.svg" alt="Types de synthèse" width="100%"></picture><br><sub>8 premières classes sur 29 (mots-clés de la méthode)</sub></td></tr>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_essentiels_fr_dark.svg"><img src="docs/img/accueil/carte_essentiels_fr.svg" alt="Paramètres essentiels par méthode" width="100%"></picture><br><sub>vert : cité · orange : l&#x27;article se tait · rouge : hors grille</sub></td><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_trous_fr_dark.svg"><img src="docs/img/accueil/carte_trous_fr.svg" alt="Propriétés attendues manquantes" width="100%"></picture><br><sub>part des voies de la famille qui rapportent la propriété</sub></td></tr>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_branches_fr_dark.svg"><img src="docs/img/accueil/carte_branches_fr.svg" alt="Branches sans résultat" width="100%"></picture><br><sub>variantes testées sans résultat ni caractérisation, en %</sub></td><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_mecanismes_fr_dark.svg"><img src="docs/img/accueil/carte_mecanismes_fr.svg" alt="Mécanisme : auteurs / critique" width="100%"></picture><br><sub>512 voies : mécanisme des auteurs jugé par le critique</sub></td></tr>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_limites_fr_dark.svg"><img src="docs/img/accueil/carte_limites_fr.svg" alt="Limites de reproductibilité" width="100%"></picture><br><sub>83 % des voies de base portent au moins une limite</sub></td><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_references_fr_dark.svg"><img src="docs/img/accueil/carte_references_fr.svg" alt="Base contre la littérature" width="100%"></picture><br><sub>31 couples sur 131 dans la plage publiée</sub></td></tr>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_aveugle_fr_dark.svg"><img src="docs/img/accueil/carte_aveugle_fr.svg" alt="Ré-extraction à l&#x27;aveugle (20)" width="100%"></picture><br><sub>20 publications ré-extraites sans voir la base</sub></td><td width="50%" valign="middle"><sub>Chiffres détaillés, méthode et limites : sections repliables ci-dessous, rapports <code>audits/audit_contenu.md</code> et <code>audits/audit_verification.md</code>.</sub></td></tr>
+</table>
+
+<!-- SITE:visual:end -->
 
 `synthese.db` (SQLite) rassemble des voies de synthèse de matériaux extraites d'articles en accès libre, où **chaque valeur porte la citation mot pour mot de l'article** qui la fonde, sa position dans le texte, et l'état de ce que l'article ne dit pas. Ce document décrit, à la manière d'une section « Matériel et méthodes », comment la base est construite, comment chaque valeur est vérifiée, ce que les contrôles mesurent, et dans quel sens, scientifiquement, on peut considérer son contenu comme juste.
 
@@ -33,39 +60,41 @@ Deux audits de contenu (28 octobre 2026) examinent ce que contiennent réellemen
 |---|---|---|---|---|---|
 | voies de base d'un matériau | classes de méthode | propriétés canoniques (sur 16 577 noms) | des voies de base avec une limite | mécanismes comparés | publications ré-extraites à l'aveugle |
 
+<details><summary><b>1. Ce que contient la base</b></summary>
 
-### 1. Ce que contient la base
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/familles_fr_dark.svg"><img src="docs/img/familles_fr.svg" alt="Voies de base de matériau par famille" width="760"></picture></p>
 
-<p align="center"><img src="docs/img/familles_fr.svg" alt="Voies de base de matériau par famille" width="760"></p>
-
-<p align="center"><img src="docs/img/methodes_fr.svg" alt="Types de synthèse (classement par mots-clés de la méthode)" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/methodes_fr_dark.svg"><img src="docs/img/methodes_fr.svg" alt="Types de synthèse (classement par mots-clés de la méthode)" width="760"></picture></p>
 
 - **hydrothermal domine** (18,6 % des voies de base), puis précipitation, sol-gel et solvothermal. Deux classements indépendants (mots-clés de la méthode, enchaînement des étapes) concordent à **68,8 %**.
 - Les 16 577 noms de propriétés libres sont ramenés à **96 propriétés canoniques** par une table d'expressions régulières ; **9,1 % des valeurs** restent non classées (noms trop spécifiques). Avant toute exploitation statistique, une liste fermée de noms est à fixer.
 
+</details>
 
-### 2. Paramètres communs et paramètres essentiels
+<details><summary><b>2. Paramètres communs et paramètres essentiels</b></summary>
 
-<p align="center"><img src="docs/img/essentiels_fr.svg" alt="Paramètres essentiels par méthode" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/essentiels_fr_dark.svg"><img src="docs/img/essentiels_fr.svg" alt="Paramètres essentiels par méthode" width="760"></picture></p>
 
 - **Température et durée sont les seuls paramètres universels** (90 à 100 % des voies des méthodes principales). Au-delà, deux voies d'une même méthode ne partagent que 25 à 45 % de leurs types de paramètres (similarité de Jaccard de 0,19 à 0,43).
 - **Les articles sont la première source de manque.** Pour les méthodes en autoclave, 39 % des paramètres essentiels ne sont pas donnés par l'article (et l'extracteur l'a écrit) ; le taux de remplissage est cité dans 1 à 5 % des voies, les rampes de chauffe et de refroidissement dans moins de 12 %.
 - **L'extraction a ses angles morts** : vitesse de refroidissement, débit de gaz, répétitions de cycles, puissance, taux de remplissage ne figurent pas dans la grille de reproductibilité, donc ne sont ni cités ni déclarés absents.
 - Les quantités de précurseurs, elles, sont données pour 87 % (hydrothermal) à 97 % (voies vertes) d'entre eux, et déclarées absentes quand elles manquent : aucun manque silencieux.
 
+</details>
 
-### 3. Trous de couverture
+<details><summary><b>3. Trous de couverture</b></summary>
 
-<p align="center"><img src="docs/img/trous_fr.svg" alt="Propriétés attendues les moins renseignées" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/trous_fr_dark.svg"><img src="docs/img/trous_fr.svg" alt="Propriétés attendues les moins renseignées" width="760"></picture></p>
 
 - **132 cases famille × méthode sur 175** comptent moins de 5 voies : hors hydrothermal et sol-gel, chaque méthode n'est représentée que par une poignée de voies par famille (électrochimie : 4 voies en tout).
 - **43 couples famille-propriété attendus** sont couverts à moins de 30 % : band gap et rendement quantique des pérovskites, surface BET des carbones, rétention de capacité des batteries, densité et dureté des céramiques.
 - Familles trop peu représentées : carbures (3 voies), phosphures (1), nitrures (17), matériaux 2D (18). Absentes ou noyées dans « autre » : polymères, verres, alliages, COF, électrolytes solides, thermoélectriques.
 
+</details>
 
-### 4. Qualité des données
+<details><summary><b>4. Qualité des données</b></summary>
 
-<p align="center"><img src="docs/img/branches_fr.svg" alt="Branches sans résultat ni caractérisation" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/branches_fr_dark.svg"><img src="docs/img/branches_fr.svg" alt="Branches sans résultat ni caractérisation" width="760"></picture></p>
 
 - **Branches** : 5,3 % sans résultat ni caractérisation, mais 24 % chez les MOF (séries de conditions dont l'article ne rapporte qu'un résultat global).
 - **Stœchiométrie nominale** : sur 60 voies contrôlables, 24 concordent à moins de 10 % avec la formule du produit ; les écarts importants sont des excès voulus ou des précurseurs apportés par une voie intermédiaire, pas des erreurs.
@@ -73,32 +102,37 @@ Deux audits de contenu (28 octobre 2026) examinent ce que contiennent réellemen
 - **Normalisation** : 682 noms de paramètres pour 27 types ; 71 % des paramètres numériques ont une valeur SI (température, durée, rampe à 99 % ; jamais les volumes, concentrations, vitesses : limite de `load.py`).
 - **Variation → effet** : 61 % des 3 064 variations numériques ont une propriété mesurée des deux côtés ; 693 séries de 3 points ou plus, dont 56 % monotones. Un changement de température déplace les propriétés de taille et de texture de 40 à 50 % en médiane, un changement de réactif les propriétés optiques de moins de 10 %.
 
+</details>
 
-### 5. Limites de reproductibilité et mécanismes
+<details><summary><b>5. Limites de reproductibilité et mécanismes</b></summary>
 
-<p align="center"><img src="docs/img/limites_fr.svg" alt="Motifs des limites de reproductibilité" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/limites_fr_dark.svg"><img src="docs/img/limites_fr.svg" alt="Motifs des limites de reproductibilité" width="760"></picture></p>
 
-<p align="center"><img src="docs/img/mecanismes_fr.svg" alt="Mécanisme de formation : auteurs contre critique scientifique" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/mecanismes_fr_dark.svg"><img src="docs/img/mecanismes_fr.svg" alt="Mécanisme de formation : auteurs contre critique scientifique" width="760"></picture></p>
 
 - **83 % des voies de base** portent au moins une limite ; la première cause est l'incohérence interne de l'article (21 %), devant les preuves non discriminantes (10 %), les interprétations contestées (10 %) et les bilans de matière impossibles (9,5 %).
 - Sur 512 voies, le mécanisme des auteurs et celui du critique scientifique sont en **accord pour 83**, en **nuance pour 346** (dont 106 articles qui ne décrivent aucun mécanisme) et en **désaccord pour 83** ; **25** mécanismes sont contredits par les conditions extraites (réduction sans réducteur, AgCl précipité avant toute réduction…).
 - Travaux fondateurs le plus souvent absents alors qu'ils fondent la méthode : Iravani 2011 (29), Cundy & Cox 2003 (16), Essner et al. 2018 (15).
 
+</details>
 
-### 6. Comparaison à la littérature
+<details><summary><b>6. Comparaison à la littérature</b></summary>
 
-<p align="center"><img src="docs/img/references_fr.svg" alt="Base contre plages de référence relevées sur le web" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/references_fr_dark.svg"><img src="docs/img/references_fr.svg" alt="Base contre plages de référence relevées sur le web" width="760"></picture></p>
 
 - Sur 131 couples matériau-propriété, 31 sont dans la plage publiée. Écarts nets : band gap du SnS (médiane 2,81 eV contre 1,07–1,40 eV massif), photoluminescence du CdS (580 nm contre 490–505 nm : émission de pièges), silices « mésoporeuses » (BET 274 contre 400–1 137 m²/g), volume microporeux du ZIF-8 (0,15 contre 0,52–0,62 cm³/g).
 - Les bases structurées (CoRE MOF, IZA, Materials Project) ne sont pas joignables depuis l'environnement d'exécution ; les plages viennent du web, avec l'URL réellement consultée.
 
+</details>
 
-### 7. Vérification par ré-extraction à l'aveugle
+<details><summary><b>7. Vérification par ré-extraction à l'aveugle</b></summary>
 
-<p align="center"><img src="docs/img/aveugle_fr.svg" alt="Ré-extraction à l&#x27;aveugle de 20 publications" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/aveugle_fr_dark.svg"><img src="docs/img/aveugle_fr.svg" alt="Ré-extraction à l&#x27;aveugle de 20 publications" width="760"></picture></p>
 
 - 20 publications tirées au sort ont été ré-extraites par un agent qui n'a vu ni l'extraction en base ni les critiques : 167 voies sur 172 appariées. **91,5 % des paramètres et 83,6 % des résultats** trouvés à l'aveugle sont dans la base, avec **0 conflit** sur les valeurs univoques.
 - Le rappel plus bas (68 % des paramètres, 57 % des résultats) mesure l'apport des critiques : la base contient environ 30 % de paramètres et 40 % de résultats de plus qu'une extraction seule. Les désaccords restants sont des attributions d'une valeur à un autre échantillon ou à une autre voie.
+
+</details>
 
 
 ### Rapports complets

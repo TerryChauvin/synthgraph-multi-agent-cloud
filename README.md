@@ -1,13 +1,35 @@
-<p align="center"><b>English</b> · <a href="README.fr.md">Français</a> · <a href="#why-this-exists">Presentation</a> · <a href="#analysis">Analysis</a> · <a href="https://terrychauvin.github.io/synthgraph-multi-agent-cloud/#en-presentation">Interactive site (EN/FR tabs)</a></p>
+<p align="center"><b>English</b> · <a href="README.fr.md">Français</a></p>
 
 # Materials Synthesis Routes Database
 
-**A verifiable database of materials synthesis protocols, extracted from open-access papers by a multi-agent pipeline. Every value carries the verbatim quote that supports it.**
+**A verifiable database of materials synthesis protocols, extracted from 500 open-access papers by a multi-agent pipeline. Every value carries the verbatim quote that supports it.**
 
-![Publications](https://img.shields.io/badge/publications_closed-500_%2F_500-brightgreen)
-![Routes](https://img.shields.io/badge/synthesis_routes-5338-green)
-![Quotes](https://img.shields.io/badge/audited_quotes_found_verbatim-100%25-brightgreen)
-![Licence](https://img.shields.io/badge/sources-Creative_Commons-lightgrey)
+<!-- SITE:visual:begin -->
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/pipeline_en_dark.svg"><img src="docs/img/accueil/pipeline_en_light.svg" alt="Multi-agent pipeline: paper, extraction, quote check, two critiques, correction, audit, database" width="100%"></picture></p>
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/chiffres_en_dark.svg"><img src="docs/img/accueil/chiffres_en_light.svg" alt="Key figures of the database" width="100%"></picture></p>
+
+## The data model
+
+A **base route** holds a full protocol; each **branch** is a variant tested by the authors and stores only what changes. Every value comes with its verbatim quote, and what the paper leaves out is recorded.
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/modele_en_dark.svg"><img src="docs/img/accueil/modele_en_light.svg" alt="Database data model" width="100%"></picture></p>
+
+## An example
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/exemple_en_dark.svg"><img src="docs/img/accueil/exemple_en_light.svg" alt="Example of a route and its branches: Sb2S3 at 120, 150 and 180 °C" width="100%"></picture></p>
+
+## The database at a glance
+
+<table>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_familles_en_dark.svg"><img src="docs/img/accueil/carte_familles_en.svg" alt="Base routes per material family" width="100%"></picture><br><sub>747 material base routes, 17 families</sub></td><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_methodes_en_dark.svg"><img src="docs/img/accueil/carte_methodes_en.svg" alt="Synthesis types" width="100%"></picture><br><sub>top 8 of 29 classes (method keywords)</sub></td></tr>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_essentiels_en_dark.svg"><img src="docs/img/accueil/carte_essentiels_en.svg" alt="Essential parameters per method" width="100%"></picture><br><sub>green: cited · amber: paper silent · red: outside the grid</sub></td><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_trous_en_dark.svg"><img src="docs/img/accueil/carte_trous_en.svg" alt="Least-reported expected properties" width="100%"></picture><br><sub>share of the family&#x27;s routes reporting the property</sub></td></tr>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_branches_en_dark.svg"><img src="docs/img/accueil/carte_branches_en.svg" alt="Branches with no outcome" width="100%"></picture><br><sub>tested variants with no outcome or characterization, %</sub></td><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_mecanismes_en_dark.svg"><img src="docs/img/accueil/carte_mecanismes_en.svg" alt="Mechanism: authors vs. reviewer" width="100%"></picture><br><sub>512 routes: authors&#x27; mechanism judged by the reviewer</sub></td></tr>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_limites_en_dark.svg"><img src="docs/img/accueil/carte_limites_en.svg" alt="Reproducibility limits" width="100%"></picture><br><sub>83% of base routes carry at least one limit</sub></td><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_references_en_dark.svg"><img src="docs/img/accueil/carte_references_en.svg" alt="Database vs. literature ranges" width="100%"></picture><br><sub>31 of 131 pairs within the published range</sub></td></tr>
+<tr><td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/carte_aveugle_en_dark.svg"><img src="docs/img/accueil/carte_aveugle_en.svg" alt="Blind re-extraction (20 papers)" width="100%"></picture><br><sub>20 papers re-extracted without seeing the database</sub></td><td width="50%" valign="middle"><sub>Detailed figures, method and limits: collapsible sections below, reports <code>audits/audit_contenu.md</code> and <code>audits/audit_verification.md</code>.</sub></td></tr>
+</table>
+
+<!-- SITE:visual:end -->
 
 ---
 
@@ -24,41 +46,19 @@ The goal is that a chemist can **reproduce a material from the database alone** 
 
 ## What is inside
 
-| | |
-|---|---|
-| Publications closed (all passes done) | 500 (500 in the ten audited batches) — target reached |
-| Synthesis routes | 5 338 (1 382 base routes, 3 956 branches) |
-| Steps / reagents / parameters | 9 546 / 7 714 / 12 731 |
-| Measured outcomes | 39 350 |
-| Fidelity findings / science verdicts | 4 345 / 2 988 |
-| Annotations (interpretations, kept apart from data) | 10 582 |
-
-Figures as of 25 October 2026 (`synthese.db`, read-only queries on closed publications). The target of **500 publications**, built in audited batches of 50, is reached.
+Key figures are in the image at the top of this page (`synthese.db`, read-only queries on closed publications, regenerated by `analyses/build_site.py`). The target of **500 publications**, built in audited batches of 50, is reached.
 
 Material families covered: MOFs and ZIFs, metal nanoparticles, oxides, perovskites, zeolites and mesoporous silicas, chalcogenides and phosphides, carbons, electrode materials, ceramics, 2D materials, quantum dots.
 
 ## How a paper becomes data
 
-Each publication goes through five passes, run by language-model agents with separate roles. No agent checks its own work.
+Each publication goes through the passes drawn in the diagram at the top, run by language-model agents with separate roles. No agent checks its own work.
 
-```
- article (Europe PMC, CC licence) + supplementary files + figures
-   │
-   ▼
- 1. Extraction ............ reads the full text, inventories every sample, writes routes,
-   │                        branches, quotes, and what is NOT stated
-   ▼
- 2. Automatic check ....... every quote must be found verbatim in the text,
-   │                        every number must appear in its quote
-   ▼
- 3. Fidelity critique ..... an independent second reader re-reads the article first,
-   │                        then compares it with the extraction
- 4. Science critique ...... stoichiometry, physical plausibility, consistency with the
-   │                        founding literature, sourced web search
-   ▼
- 5. Corrections ........... applied by a separate agent, decided by the orchestrator,
-                            each finding marked corrected or rejected with a reason
-```
+1. **Extraction** reads the full text, supplementary files and figures, inventories every sample, and writes routes, branches, quotes and what is *not* stated.
+2. **Automatic check** (`load.py`): every quote must be found verbatim in the text, every number must appear in its quote.
+3. **Fidelity critique**: an independent second reader re-reads the article first, then compares it with the extraction.
+4. **Science critique**: stoichiometry, physical plausibility, consistency with the founding literature, sourced web search.
+5. **Corrections**, applied by a separate agent and decided by the orchestrator; each finding is marked corrected or rejected with a reason.
 
 Every 50 papers, an **audit** re-checks every quote, runs physico-chemical sanity tests, re-reads a sample of values by hand, recomputes the stoichiometry of five routes, cross-compares syntheses of the same material across papers, and checks cited sources.
 
@@ -156,39 +156,41 @@ Two content audits (28 October 2026) examine what the 500 papers actually contai
 |---|---|---|---|---|---|
 | material base routes | method classes | canonical properties (from 16,577 names) | of base routes with a limit | mechanisms compared | papers re-extracted blind |
 
+<details><summary><b>1. What the database contains</b></summary>
 
-### 1. What the database contains
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/familles_en_dark.svg"><img src="docs/img/familles_en.svg" alt="Base routes per material family" width="760"></picture></p>
 
-<p align="center"><img src="docs/img/familles_en.svg" alt="Base routes per material family" width="760"></p>
-
-<p align="center"><img src="docs/img/methodes_en.svg" alt="Synthesis types (keyword classification of the method)" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/methodes_en_dark.svg"><img src="docs/img/methodes_en.svg" alt="Synthesis types (keyword classification of the method)" width="760"></picture></p>
 
 - **Hydrothermal dominates** (18.6% of base routes), then precipitation, sol-gel and solvothermal. Two independent classifications (method keywords, step sequence) agree on **68.8%**.
 - The 16,577 free property names are mapped to **96 canonical properties** by a regex table; **9.1% of values** stay unclassified (names too specific). A closed vocabulary is needed before any statistical use.
 
+</details>
 
-### 2. Common and essential parameters
+<details><summary><b>2. Common and essential parameters</b></summary>
 
-<p align="center"><img src="docs/img/essentiels_en.svg" alt="Essential parameters per method" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/essentiels_en_dark.svg"><img src="docs/img/essentiels_en.svg" alt="Essential parameters per method" width="760"></picture></p>
 
 - **Temperature and duration are the only universal parameters** (90–100% of routes of the main methods). Beyond that, two routes of the same method share only 25–45% of their parameter types (Jaccard similarity 0.19–0.43).
 - **Papers are the first source of gaps.** For autoclave methods, 39% of essential parameters are not given by the paper (and the extractor said so); fill fraction is cited in 1–5% of routes, heating and cooling rates in under 12%.
 - **The extraction has blind spots**: cooling rate, gas flow, cycle repeats, power and fill fraction are not in the reproducibility grid, so they are neither cited nor declared absent.
 - Precursor amounts, by contrast, are given for 87% (hydrothermal) to 97% (green routes) of precursors and declared absent when missing: no silent gaps.
 
+</details>
 
-### 3. Coverage gaps
+<details><summary><b>3. Coverage gaps</b></summary>
 
-<p align="center"><img src="docs/img/trous_en.svg" alt="Least-reported expected properties" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/trous_en_dark.svg"><img src="docs/img/trous_en.svg" alt="Least-reported expected properties" width="760"></picture></p>
 
 - **132 family × method cells out of 175** hold fewer than 5 routes: beyond hydrothermal and sol-gel, each method is represented by a handful of routes per family (electrochemistry: 4 routes in total).
 - **43 expected family-property pairs** are covered below 30%: band gap and quantum yield of perovskites, BET area of carbons, capacity retention of batteries, density and hardness of ceramics.
 - Under-represented families: carbides (3 routes), phosphides (1), nitrides (17), 2D materials (18). Missing or buried in "other": polymers, glasses, alloys, COFs, solid electrolytes, thermoelectrics.
 
+</details>
 
-### 4. Data quality
+<details><summary><b>4. Data quality</b></summary>
 
-<p align="center"><img src="docs/img/branches_en.svg" alt="Branches with no outcome or characterization" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/branches_en_dark.svg"><img src="docs/img/branches_en.svg" alt="Branches with no outcome or characterization" width="760"></picture></p>
 
 - **Branches**: 5.3% with neither outcome nor characterization, but 24% among MOFs (condition series for which the paper reports a single global result).
 - **Nominal stoichiometry**: of 60 checkable routes, 24 match the product formula within 10%; large gaps are intended excesses or precursors supplied by an intermediate route, not errors.
@@ -196,32 +198,37 @@ Two content audits (28 October 2026) examine what the 500 papers actually contai
 - **Normalization**: 682 parameter names for 27 types; 71% of numeric parameters have an SI value (temperature, duration, ramp at 99%; never volumes, concentrations, speeds: a `load.py` limit).
 - **Variation → effect**: 61% of 3,064 numeric variations have a property measured on both sides; 693 series of 3+ points, 56% monotonic. A temperature change shifts size and texture properties by 40–50% (median), a reagent change shifts optical properties by under 10%.
 
+</details>
 
-### 5. Reproducibility limits and mechanisms
+<details><summary><b>5. Reproducibility limits and mechanisms</b></summary>
 
-<p align="center"><img src="docs/img/limites_en.svg" alt="Reasons for reproducibility limits" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/limites_en_dark.svg"><img src="docs/img/limites_en.svg" alt="Reasons for reproducibility limits" width="760"></picture></p>
 
-<p align="center"><img src="docs/img/mecanismes_en.svg" alt="Formation mechanism: authors vs. science reviewer" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/mecanismes_en_dark.svg"><img src="docs/img/mecanismes_en.svg" alt="Formation mechanism: authors vs. science reviewer" width="760"></picture></p>
 
 - **83% of base routes** carry at least one limit; the first cause is internal inconsistency in the paper (21%), ahead of non-discriminating evidence (10%), contested interpretation (10%) and impossible mass balances (9.5%).
 - Over 512 routes, the authors' mechanism and the science reviewer's are in **agreement for 83**, **nuanced for 346** (including 106 papers that describe no mechanism) and in **disagreement for 83**; **25** mechanisms are contradicted by the extracted conditions (reduction without a reductant, AgCl precipitating before any reduction…).
 - Foundational works most often missing though they ground the method: Iravani 2011 (29), Cundy & Cox 2003 (16), Essner et al. 2018 (15).
 
+</details>
 
-### 6. Comparison with the literature
+<details><summary><b>6. Comparison with the literature</b></summary>
 
-<p align="center"><img src="docs/img/references_en.svg" alt="Database vs. reference ranges found on the web" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/references_en_dark.svg"><img src="docs/img/references_en.svg" alt="Database vs. reference ranges found on the web" width="760"></picture></p>
 
 - Of 131 material-property pairs, 31 fall within the published range. Clear deviations: SnS band gap (median 2.81 eV vs. 1.07–1.40 eV bulk), CdS photoluminescence (580 nm vs. 490–505 nm: trap emission), "mesoporous" silicas (BET 274 vs. 400–1,137 m²/g), ZIF-8 micropore volume (0.15 vs. 0.52–0.62 cm³/g).
 - Structured databases (CoRE MOF, IZA, Materials Project) are not reachable from the execution environment; ranges come from the web, with the URL actually consulted.
 
+</details>
 
-### 7. Verification by blind re-extraction
+<details><summary><b>7. Verification by blind re-extraction</b></summary>
 
-<p align="center"><img src="docs/img/aveugle_en.svg" alt="Blind re-extraction of 20 papers" width="760"></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/aveugle_en_dark.svg"><img src="docs/img/aveugle_en.svg" alt="Blind re-extraction of 20 papers" width="760"></picture></p>
 
 - 20 randomly drawn papers were re-extracted by an agent that saw neither the database extraction nor the critiques: 167 of 172 routes matched. **91.5% of parameters and 83.6% of outcomes** found blind are in the database, with **0 conflict** on unambiguous values.
 - The lower recall (68% of parameters, 57% of outcomes) measures what the critiques add: the database holds about 30% more parameters and 40% more outcomes than a single extraction. Remaining disagreements are attributions of a value to another sample or route.
+
+</details>
 
 
 ### Full reports
@@ -235,6 +242,10 @@ Two content audits (28 October 2026) examine what the 500 papers actually contai
 ## Full methodology
 
 The complete method, written as a "Materials and Methods" section with all measurements, limits and threats to validity, is in French: **[README.fr.md](README.fr.md)**.
+
+## Interactive site
+
+The same content, with EN/FR tabs, is in `docs/index.html`; it will be online at <https://terrychauvin.github.io/synthgraph-multi-agent-cloud/> once GitHub Pages is enabled (Settings → Pages → branch `main`, folder `/docs`).
 
 ## Licence and sources
 
