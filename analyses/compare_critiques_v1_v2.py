@@ -38,6 +38,14 @@ def main():
         T1 += ca; T2 += cb; V3 += v3; n1 += na; n2 += nb
         L.append(f"| {p} | {va} | {vb} | " + " | ".join(f"{ca[s]}/{cb[s]}" for s in SEV) + f" | {na}/{nb} | {v3} |")
     L.append("| **total** | | | " + " | ".join(f"{T1[s]}/{T2[s]}" for s in SEV) + f" | {n1}/{n2} | {V3} |")
+    hors = collections.Counter()
+    for p in pubs:
+        if os.path.exists(f"critiques_v2/{p}.json"):
+            for f in json.load(open(f"critiques_v2/{p}.json", encoding="utf-8")).get("findings") or []:
+                if not str(f.get("where", "")).startswith("v3:"):
+                    hors[f.get("severity")] += 1
+    L += ["", "Périmètre comparable (constats v2 hors `v3:`, c'est-à-dire sur ce que la v1 contient aussi) : "
+          + ", ".join(f"{s} {T1[s]}/{hors[s]}" for s in SEV) + f" ; total v1 {n1} / v2 {sum(hors.values())}."]
     L += ["", f"Constats graves (faux + attribution) : v1 {T1['faux'] + T1['attribution']}, v2 {T2['faux'] + T2['attribution']}.",
           "Les constats `v3:` portent sur ce qui n'existe pas en v1 (réglages, lien résultat → mesure, nom du vocabulaire) : ils ne sont pas comparables un à un."]
     open("audits/v2/critiques_v1_v2.md", "w", encoding="utf-8").write("\n".join(L) + "\n")

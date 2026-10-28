@@ -14,5 +14,7 @@ v1 : critique de l'extraction v1 avant correction (même consigne `CRITIQUE.md`)
 | PMC9667963 | corrections_mineures | corrections_mineures | 1/0 | 2/2 | 3/8 | 0/0 | 2/1 | 3/5 | 11/16 | 6 |
 | **total** | | | 1/1 | 8/12 | 19/34 | 3/8 | 10/11 | 29/47 | 70/113 | 76 |
 
+Périmètre comparable (constats v2 hors `v3:`, c'est-à-dire sur ce que la v1 contient aussi) : faux 1/1, attribution 8/4, manquant 19/11, non_cite_a_tort 3/1, deduit 10/7, mineur 29/13 ; total v1 70 / v2 37.
+
 Constats graves (faux + attribution) : v1 9, v2 13.
 Les constats `v3:` portent sur ce qui n'existe pas en v1 (réglages, lien résultat → mesure, nom du vocabulaire) : ils ne sont pas comparables un à un.
