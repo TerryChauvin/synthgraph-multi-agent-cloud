@@ -137,7 +137,9 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions",
+    "vessel"
    ],
    "succeeded": true,
    "reagents": [
@@ -227,11 +229,23 @@
      "action": "add",
      "description": "Ajouter goutte à goutte la solution de propoxyde de zirconium (IV) à l'acétoacétate d'éthyle.",
      "quote": "1.2 mL of zirconium IV propoxide solution (ZPO) was added dropwise in 1.2 mL of ethyl-acetoacetate",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "1.2 mL of zirconium IV propoxide solution (ZPO) was added dropwise in 1.2 mL of ethyl-acetoacetate"
+      },
+      {
+       "name": "addition_order",
+       "value_text": "ZPO added to ethyl-acetoacetate",
+       "quote": "1.2 mL of zirconium IV propoxide solution (ZPO) was added dropwise in 1.2 mL of ethyl-acetoacetate"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "temperature",
-      "stirring_speed"
+      "stirring_speed",
+      "addition_rate"
      ]
     },
     {
@@ -325,7 +339,8 @@
      "equipment": [],
      "not_stated": [
       "temperature",
-      "ultrasound_power"
+      "ultrasound_power",
+      "ultrasound_frequency"
      ]
     },
     {
@@ -345,6 +360,12 @@
        "value_num": 40,
        "unit": "°C",
        "quote": "magnetically stirred for 60 min at 40 °C"
+      },
+      {
+       "name": "acid_solution_ph",
+       "value_num": 0.5,
+       "unit": null,
+       "quote": "0.325 mL of HNO3 solution (pH = 0.5)"
       }
      ],
      "equipment": [
@@ -380,7 +401,8 @@
      "equipment": [],
      "not_stated": [
       "stirring_speed",
-      "volume"
+      "volume",
+      "addition_order"
      ]
     },
     {
@@ -430,7 +452,8 @@
      "equipment": [],
      "not_stated": [
       "temperature",
-      "ultrasound_power"
+      "ultrasound_power",
+      "ultrasound_frequency"
      ]
     },
     {
@@ -562,6 +585,12 @@
      "property": "xrd_phase",
      "value_text": "no XRD peaks (non crystalline)",
      "quote": "The dried ZnO materials modified with silane precursors showed no XRD peaks"
+    },
+    {
+     "property": "tga_continuous_weight_loss_onset",
+     "value_num": 300,
+     "unit": "°C",
+     "quote": "The modified ZnO nanoparticles begin to lose weight continuously after 300 °C"
     }
    ],
    "missing_fields": [
@@ -710,6 +739,12 @@
      "property": "xrd_phase",
      "value_text": "no XRD peaks (non crystalline)",
      "quote": "The dried ZnO materials modified with silane precursors showed no XRD peaks"
+    },
+    {
+     "property": "tga_continuous_weight_loss_onset",
+     "value_num": 300,
+     "unit": "°C",
+     "quote": "The modified ZnO nanoparticles begin to lose weight continuously after 300 °C"
     }
    ]
   },
@@ -854,6 +889,18 @@
      "property": "xrd_phase",
      "value_text": "no XRD peaks (non crystalline)",
      "quote": "The dried ZnO materials modified with silane precursors showed no XRD peaks"
+    },
+    {
+     "property": "esem_average_diameter",
+     "value_num": 150,
+     "unit": "nm",
+     "quote": "presents monodisperse particles with an average diameter of about 150 nm"
+    },
+    {
+     "property": "tga_continuous_weight_loss_onset",
+     "value_num": 300,
+     "unit": "°C",
+     "quote": "The modified ZnO nanoparticles begin to lose weight continuously after 300 °C"
     }
    ]
   },
@@ -998,6 +1045,18 @@
      "property": "xrd_phase",
      "value_text": "no XRD peaks (non crystalline)",
      "quote": "The dried ZnO materials modified with silane precursors showed no XRD peaks"
+    },
+    {
+     "property": "esem_average_diameter",
+     "value_num": 150,
+     "unit": "nm",
+     "quote": "presents monodisperse particles with an average diameter of about 150 nm"
+    },
+    {
+     "property": "tga_continuous_weight_loss_onset",
+     "value_num": 300,
+     "unit": "°C",
+     "quote": "The modified ZnO nanoparticles begin to lose weight continuously after 300 °C"
     }
    ]
   },
@@ -1074,7 +1133,8 @@
      ],
      "equipment": [],
      "not_stated": [
-      "repetitions"
+      "repetitions",
+      "wash_volume"
      ]
     },
     {
@@ -1087,7 +1147,8 @@
      "not_stated": [
       "duration",
       "withdrawal_speed",
-      "temperature"
+      "temperature",
+      "repetitions"
      ]
     },
     {
