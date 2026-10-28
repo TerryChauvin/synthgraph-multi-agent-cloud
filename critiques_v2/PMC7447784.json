@@ -1,0 +1,126 @@
+{
+ "pmcid": "PMC7447784",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "attribution",
+   "where": "v3: BiOCl-GO route, outcomes catalytic_performance_DCF_photolysis_UV/visible/solar_no_catalyst (measured_by cat_photolysis)",
+   "extracted": "33 %, negligible, 4 % rattachés à la voie BiOCl-GO",
+   "article_says": "The photolysis of DCF under UV, and solar irradiation was evaluated without adding the catalyst for three hours",
+   "fix": "Essais à blanc sans catalyseur : ils ne portent sur aucun des deux matériaux. Les sortir de la voie BiOCl-GO (voie témoin « photolyse, sans catalyseur » ou comparaison), ou au minimum les marquer comme blanc dans la fiche.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "attribution",
+   "where": "v3: BiOCl-GO route, outcome xrd_peak_position_GO_002 = 11.7 ° (measured_by xrd_1)",
+   "extracted": "pic (002) de GO à 11,7 ° rangé comme résultat de la voie composite",
+   "article_says": "Generally, GO characteristic peak for (002) appeared at 11.7°",
+   "fix": "La phrase est une valeur « générale » de GO (Fig. 1 montre le diagramme de GO seul), pas un résultat du composite. À rattacher à GO (échantillon d'inventaire sans voie) ou à déplacer en comparisons.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "attribution",
+   "where": "v3: cat_main settings vs résultats de la Fig. 5 (UV 60 min, solaire 34,5 %, visible 22,9 %, BiOCl 90 min / 27 % / 19 %, adsorption)",
+   "extracted": "reactant_concentration de cat_main = « 5, 15 and 25 mg L−1 », catalyst_mass 1.0 g L−1",
+   "article_says": "(catalyst mass—1 g L−1, DCF conc.—25 mg L−1, vol.—100 mL)",
+   "fix": "Les résultats de la Fig. 5 sont à 25 mg/L, 1 g/L, 100 mL (légende). Créer une mesure dédiée à la Fig. 5 avec reactant_concentration = 25 mg L−1 plutôt que de les lier à une mesure qui annonce trois concentrations.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "v3: cat_dose, cat_ph, cat_scav, cat_recycle not_stated reaction_time",
+   "extracted": "reaction_time déclaré non cité",
+   "article_says": "The suspension was then exposed to respective light sources for 180 min under continuous stirring throughout the experiment",
+   "fix": "Les Méthodes donnent 180 min pour les expériences photocatalytiques et les axes des Fig. 8–10 vont de 0 à 180 min ; extraire reaction_time = 180 min (comme pour cat_conc, qui l'a).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "v3: cat_scav et cat_recycle not_stated catalyst_mass, reaction_volume (et reactant_concentration pour cat_recycle)",
+   "extracted": "déclarés non cités",
+   "article_says": "100 mL of different concentrations of DCF (5, 15 and 25 mg L−1) were taken in 250 mL Pyrex breaker and added 1.0 g L−1 of the catalyst",
+   "fix": "Protocole général de l'article : 100 mL, 1,0 g L−1. Le protocole des piégeurs et des cycles n'en donne pas d'autre ; soit extraire avec la citation des Méthodes, soit garder non cité avec la mention « protocole général supposé ». Moins sûr que le constat précédent : la concentration de DCF des piégeurs et des cycles n'est pas écrite.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "BiOCl route steps 2–5 (stir 16 h, 25 °C ; 140 °C, 16 h ; lavage ; 105 °C, 8.0 h), step 1 add",
+   "extracted": "paramètres rangés avec la citation de la voie composite ; masse de NaBiO3 et volume/concentration de HCl de BiOCl ni extraits ni déclarés absents ; agitation de 2 h absente",
+   "article_says": "A similar method was used for the synthesis of BiOCl in the absence of GO.",
+   "fix": "L'article dit seulement « similar method » : les durées et températures de BiOCl sont héritées, pas citées. Marquer l'héritage (variation unique GO = absent, étapes héritées du parent) ou ajouter une annotation ; déclarer not_stated la masse de NaBiO3 et le volume de HCl pour BiOCl.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: BiOCl-GO route (photolyse UV), résultats spectraux absents",
+   "extracted": "aucun résultat sur le décalage du pic de DCF en photolyse",
+   "article_says": "the characteristic peak at 276 nm was shifted to 240 nm after 30 min exposure to UV light",
+   "fix": "Ajouter un résultat (absorption_peak, 276 nm → 240 nm après 30 min UV ; pics 230–250 nm à 180 min, Fig. 6), lié à une mesure UV_vis/catalytic_test, rattaché au blanc photolyse (cf. constat 1).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: XPS BiOCl et BiOCl-GO, état d'oxydation du bismuth",
+   "extracted": "aucun résultat « Bi3+ » (seulement dans le texte du résultat de la mesure xps_1)",
+   "article_says": "which is revealing the presence of Bi in the chemical state of Bi3+ in both materials",
+   "fix": "Ajouter sur chaque voie un résultat (oxidation_state ou propriété équivalente du vocabulaire, Bi3+) lié à xps_1 ; de même la présence de Bi, O, Cl et C au survey pour la voie BiOCl.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: comparisons, valeurs de la littérature",
+   "extracted": "Di Credico (CR30) et Zhang (CR29) absents de comparisons",
+   "article_says": "Di Credico observed the peaks for DCF at wavelength 210, 240, 289, and 324 nm",
+   "fix": "Ajouter : pics à 210, 240, 289 et 324 nm (Di Credico, ref CR30) et dégradation négligeable de DCF en lumière visible (Zhang, ref CR29, valeur qualitative).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: cat_photolysis setting light_source",
+   "extracted": "« UV, and solar irradiation »",
+   "article_says": "under visible light the photolysis of DCF was negligible",
+   "fix": "Le résultat visible (« negligible ») est lié à cette mesure : ajouter la lumière visible à light_source.",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: cat_main setting light_source",
+   "extracted": "type et intensités sans longueur d'onde de l'UV",
+   "article_says": "The UV light (λmax – 254 nm) energy is much higher than visible light (λmax > 400 nm)",
+   "fix": "Ajouter λmax 254 nm pour les lampes UV (et > 400 nm pour le visible) dans light_source.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: noms de propriétés (vocabulaire) adsorption_capacity_DCF_removal_dark_60min ; xps_binding_energy_Bi4f_spin_orbit_splitting ; retention_stability_run_N_degradation",
+   "extracted": "adsorption_capacity pour un % d'élimination ; xps_binding_energy pour un écart de 5,3 eV ; retention_stability pour des % de dégradation absolus par cycle",
+   "article_says": "about 17.2% and 11.9% of the pollutant were removed within 60 min by BiOCl and BiOCl–GO, respectively",
+   "fix": "adsorption_capacity est défini comme capacité d'adsorption (mg/g), pas un % d'élimination ; l'écart spin-orbite n'est pas une énergie de liaison ; les valeurs par cycle sont des dégradations, pas une rétention. Suffixes plus précis ou noms plus adaptés.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "BiOCl-GO dose 2 g L−1 outcome (50,8 %) vs Fig. 8",
+   "extracted": "texte 50,8 % retenu, sans annotation limite_reproductibilite",
+   "article_says": "36.7% and 50.8% of DCF photodegradation was found at 0.5, 1, 1.5 and 2 g L−1 BiOCl–GO mass",
+   "fix": "La courbe à 2 g L−1 de la Fig. 8 se lit vers 60 % à 180 min (écart > 10 %). Texte retenu à juste titre (cohérent avec k = 0,0042), mais le désaccord n'est que dans les doutes : ajouter une annotation limite_reproductibilite.",
+   "confidence": "sure"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": 2,
+  "branches_extracted": 2,
+  "not_stated_checked": 70,
+  "not_stated_wrong": 6
+ },
+ "reproducibility_gaps": [
+  "préparation de GO (méthode de Hummer, aucun protocole, référence CR23)",
+  "aucun réglage de DRX (rayonnement, plage, pas)",
+  "température de réaction et pH des essais de la Fig. 5, concentration et conditions des piégeurs et des cycles non écrits",
+  "remplissage et volume du réacteur hydrothermal, vitesse d'agitation, mode de séparation, nombre de lavages, atmosphère de séchage non donnés",
+  "masse de NaBiO3 et volume de HCl pour la voie BiOCl non donnés (« similar method »)",
+  "rendement non donné; annexe : seulement le titre de la Fig. S1 (pas de données chiffrées)"
+ ],
+ "mechanism_check": "ok : hypothèse de réduction Bi(V) -> Bi(III) clairement présentée comme hypothèse de chimiste; stœchiométrie HCl 120 mmol / NaBiO3 14,3 mmol correcte; mecanisme_auteurs soutenu par le texte",
+ "notes": "Valeurs chiffrées des Tables 1, 2, 3 et du texte toutes vérifiées exactes (0 faux). Figures lues : Fig. 5 (UV 33 %, solaire BiOCl 27, visible BiOCl 19, photolyse solaire 4), Fig. 9 (48/42/25), Fig. 10b (PBQ 23, IP 18, TEOA 18,5), Fig. 10c (48/47/45/43/41), Fig. 7 : écarts < 2 points. Désaccords article/figure non traités en constat : pic BiOCl (001) lu vers 12,3 ° sur la Fig. 1 contre 11,75 ° dans le texte ; sans-piégeur ≈ 47,5 % en Fig. 10b contre 49 % texte. Non retenu comme constat faute de passage : scan_range XRD (10–70 °) et wavelength_range UV-vis (300–700 nm) lisibles sur les axes des Fig. 1 et 4a mais jamais écrits ; référence JCPDS rangée en résultat phase_reference_card car aucun réglage du vocabulaire ne la reçoit (lacune de grille) ; family « autre » pour BiOCl (permise par RUNBOOK v1) ; abscisse de la Fig. 4b étiquetée nm alors qu'elle est en eV."
+}
