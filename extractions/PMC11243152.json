@@ -20,7 +20,8 @@
    "yield": null,
    "succeeded": true,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "reagents": [
     {
@@ -153,7 +154,8 @@
      "not_stated": [
       "duration",
       "volume",
-      "addition_rate"
+      "addition_rate",
+      "addition_mode"
      ]
     },
     {
@@ -246,7 +248,8 @@
       "atmosphere",
       "heating_rate",
       "furnace",
-      "crucible"
+      "crucible",
+      "cooling_mode"
      ]
     },
     {
@@ -274,7 +277,8 @@
       "heating_rate",
       "cooling_rate",
       "furnace",
-      "crucible"
+      "crucible",
+      "cooling_mode"
      ]
     }
    ],
@@ -306,6 +310,20 @@
      "instrument": "thermal analyzer SDT650, Ta Instruments, New Castle, DE, USA",
      "conditions": "heating rate of 10 °C/min in air up to 1000 °C",
      "quote": "The thermal analysis of the precursor powder was carried out using a thermal analyzer (SDT650, Ta Instruments, New Castle, DE, USA) at a heating rate of 10 °C/min in air up to 1000 °C."
+    },
+    {
+     "technique": "XRD (crystallite size by the Scherrer equation)",
+     "result": "primary particle sizes of the six powders (Table 5) calculated from the XRD data",
+     "instrument": null,
+     "conditions": "calculated from the XRD data using the Scherrer Equation",
+     "quote": "Based on the XRD data, the primary particle sizes of the powders were calculated using the Scherrer Equation"
+    },
+    {
+     "technique": "XRD (cation mixing, I(003)/I(104) criterion)",
+     "result": "I(003)/I(104) above 1.2 taken as a well-formed layered structure; the six PVA samples are above 1.2 (Table 4: 1.295195 to 1.878958)",
+     "instrument": null,
+     "conditions": "reference ionic radii: Li+ 0.76 Å, Ni2+ 0.69 Å; threshold I(003)/I(104) > 1.2 for a well-formed layered structure",
+     "quote": "To investigate the extent of cation mixing, a phenomenon where Li+ (0.76 Å) and Ni2+ (0.69 Å), which have similar ionic radii, exchange their positions in the crystal lattice, the I(003)/I(004) ratio was calculated and is shown in Table 4. Typically, when the I(003)/I(004) value exceeds 1.2, the layered structure of the cathode material is considered to be well-formed."
     }
    ],
    "outcomes": [
@@ -370,6 +388,55 @@
      "property": "particle_size_SEM_trend",
      "value_text": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1",
      "quote": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1."
+    },
+    {
+     "property": "I003_intensity",
+     "value_num": 27364.93,
+     "quote": "PS4 | 27,364.93 | 19,642.41 | 1.393155"
+    },
+    {
+     "property": "I104_intensity",
+     "value_num": 19642.41,
+     "quote": "PS4 | 27,364.93 | 19,642.41 | 1.393155"
+    },
+    {
+     "property": "xrd_highest_intensity_peak_position",
+     "value_num": 19,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "xrd_doublet_position",
+     "value_num": 44,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "layered_structure_peak_separation",
+     "value_text": "the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other",
+     "quote": "The layered structure is well-defined, as the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other"
+    },
+    {
+     "property": "tga_precursor_gel_PVA_MW50000_weight_loss_up_to_200C",
+     "value_num": 5,
+     "unit": "%",
+     "quote": "The precursor gel exhibited a weight loss of about 5% due to the thermal decomposition of residual NOx gas up to 200 °C, and a rapid weight loss of around 25% occurred between 200 and 550 °C due to the thermal decomposition and oxidation of PVA, resulting in the removal of carbon."
+    },
+    {
+     "property": "tga_precursor_gel_PVA_MW50000_weight_loss_200_550C",
+     "value_num": 25,
+     "unit": "%",
+     "quote": "The precursor gel exhibited a weight loss of about 5% due to the thermal decomposition of residual NOx gas up to 200 °C, and a rapid weight loss of around 25% occurred between 200 and 550 °C due to the thermal decomposition and oxidation of PVA, resulting in the removal of carbon."
+    },
+    {
+     "property": "impedance_order_text",
+     "value_text": "The impedance values follow the order of PS4 > PM4 > PL4",
+     "quote": "The impedance values follow the order of PS4 > PM4 > PL4."
+    },
+    {
+     "property": "real_impedance_order_text",
+     "value_text": "the PS4 demonstrates the highest real impedance, followed by the PL4 and PM4",
+     "quote": "Specifically, the PS4 demonstrates the highest real impedance, followed by the PL4 and PM4."
     }
    ],
    "missing_fields": [
@@ -445,6 +512,33 @@
      "unit": "Ω",
      "from_figure": "Fig. 11a",
      "quote": "Figure 11 (a,b) Nyquist plots of PS16, PM16, and PL16 cathode before and after 100 cycles, (c) relationship between imaginary resistance (Z’) and inverse square root of angular speed (ω−1/2)."
+    },
+    {
+     "property": "I003_intensity",
+     "value_num": 20513.67,
+     "quote": "PS16 | 20,513.67 | 13,510.91 | 1.544058"
+    },
+    {
+     "property": "I104_intensity",
+     "value_num": 13510.91,
+     "quote": "PS16 | 20,513.67 | 13,510.91 | 1.544058"
+    },
+    {
+     "property": "xrd_highest_intensity_peak_position",
+     "value_num": 19,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "xrd_doublet_position",
+     "value_num": 44,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "layered_structure_peak_separation",
+     "value_text": "the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other",
+     "quote": "The layered structure is well-defined, as the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other"
     }
    ],
    "characterizations": [
@@ -533,6 +627,43 @@
      "property": "particle_size_SEM_trend",
      "value_text": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1",
      "quote": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1."
+    },
+    {
+     "property": "I003_intensity",
+     "value_num": 26813.77,
+     "quote": "PM4 | 26,813.77 | 20,702.49 | 1.295195"
+    },
+    {
+     "property": "I104_intensity",
+     "value_num": 20702.49,
+     "quote": "PM4 | 26,813.77 | 20,702.49 | 1.295195"
+    },
+    {
+     "property": "xrd_highest_intensity_peak_position",
+     "value_num": 19,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "xrd_doublet_position",
+     "value_num": 44,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "layered_structure_peak_separation",
+     "value_text": "the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other",
+     "quote": "The layered structure is well-defined, as the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other"
+    },
+    {
+     "property": "impedance_order_text",
+     "value_text": "The impedance values follow the order of PS4 > PM4 > PL4",
+     "quote": "The impedance values follow the order of PS4 > PM4 > PL4."
+    },
+    {
+     "property": "real_impedance_order_text",
+     "value_text": "the PS4 demonstrates the highest real impedance, followed by the PL4 and PM4",
+     "quote": "Specifically, the PS4 demonstrates the highest real impedance, followed by the PL4 and PM4."
     }
    ]
   },
@@ -618,6 +749,43 @@
      "property": "particle_size_SEM_trend",
      "value_text": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1",
      "quote": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1."
+    },
+    {
+     "property": "I003_intensity",
+     "value_num": 32518.86,
+     "quote": "PL4 | 32,518.86 | 22,969 | 1.415772"
+    },
+    {
+     "property": "I104_intensity",
+     "value_num": 22969.0,
+     "quote": "PL4 | 32,518.86 | 22,969 | 1.415772"
+    },
+    {
+     "property": "xrd_highest_intensity_peak_position",
+     "value_num": 19,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "xrd_doublet_position",
+     "value_num": 44,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "layered_structure_peak_separation",
+     "value_text": "the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other",
+     "quote": "The layered structure is well-defined, as the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other"
+    },
+    {
+     "property": "impedance_order_text",
+     "value_text": "The impedance values follow the order of PS4 > PM4 > PL4",
+     "quote": "The impedance values follow the order of PS4 > PM4 > PL4."
+    },
+    {
+     "property": "real_impedance_order_text",
+     "value_text": "the PS4 demonstrates the highest real impedance, followed by the PL4 and PM4",
+     "quote": "Specifically, the PS4 demonstrates the highest real impedance, followed by the PL4 and PM4."
     }
    ]
   },
@@ -693,6 +861,33 @@
      "unit": "Ω",
      "from_figure": "Fig. 11a",
      "quote": "Figure 11 (a,b) Nyquist plots of PS16, PM16, and PL16 cathode before and after 100 cycles, (c) relationship between imaginary resistance (Z’) and inverse square root of angular speed (ω−1/2)."
+    },
+    {
+     "property": "I003_intensity",
+     "value_num": 16222.53,
+     "quote": "PM16 | 16,222.53 | 12,186.49 | 1.479811"
+    },
+    {
+     "property": "I104_intensity",
+     "value_num": 12186.49,
+     "quote": "PM16 | 16,222.53 | 12,186.49 | 1.479811"
+    },
+    {
+     "property": "xrd_highest_intensity_peak_position",
+     "value_num": 19,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "xrd_doublet_position",
+     "value_num": 44,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "layered_structure_peak_separation",
+     "value_text": "the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other",
+     "quote": "The layered structure is well-defined, as the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other"
     }
    ]
   },
@@ -767,6 +962,33 @@
      "unit": "Ω",
      "from_figure": "Fig. 11a",
      "quote": "Figure 11 (a,b) Nyquist plots of PS16, PM16, and PL16 cathode before and after 100 cycles, (c) relationship between imaginary resistance (Z’) and inverse square root of angular speed (ω−1/2)."
+    },
+    {
+     "property": "I003_intensity",
+     "value_num": 26205.09,
+     "quote": "PL16 | 26,205.09 | 13,946.61 | 1.878958"
+    },
+    {
+     "property": "I104_intensity",
+     "value_num": 13946.61,
+     "quote": "PL16 | 26,205.09 | 13,946.61 | 1.878958"
+    },
+    {
+     "property": "xrd_highest_intensity_peak_position",
+     "value_num": 19,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "xrd_doublet_position",
+     "value_num": 44,
+     "unit": "°",
+     "quote": "the peak with the highest intensity was observed at approximately 19°, and two lines were located at 44°"
+    },
+    {
+     "property": "layered_structure_peak_separation",
+     "value_text": "the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other",
+     "quote": "The layered structure is well-defined, as the (006) and (102) peaks and the (108) and (110) peaks are clearly separated from each other"
     }
    ],
    "characterizations": [
@@ -1055,6 +1277,13 @@
      "instrument": "Biologic VMP3 system",
      "conditions": "AC amplitude 10 mV; 100 kHz to 0.01 Hz; room temperature",
      "quote": "Electrochemical impedance spectroscopy (EIS) analysis was performed on a Biologic VMP3 system using an AC amplitude of 10 mV in the range from 100 kHz to 0.01 Hz at room temperature."
+    },
+    {
+     "technique": "EIS (Li+ diffusion coefficient calculation)",
+     "result": "D(Li+) computed from the Warburg factor with the equation of the article; values given for PS4, PM4 and PL4",
+     "instrument": null,
+     "conditions": "Warburg coefficient from the plot of low-frequency real impedance Zreal vs ω−1/2; constants: R = 8.314 J/mol·K, F = 96,485 C/mol; T, A, n and C not given numerically",
+     "quote": "R = the gas constant (8.314 J/mol·K)\nT = the absolute temperature (K)\nA = the surface area of the electrode (m2)\nn = the number of electrons per molecule during oxidization\nC = the concentration of Li+ (mol/L)\nσ = the Warburg factor\nF = the Faraday constant (96,485 C/mol)"
     }
    ],
    "missing_fields": [
@@ -1284,6 +1513,18 @@
    "route": null,
    "text": "Le texte dit que la taille des particules observée en MEB est plus grande à 4:1 qu'à 16:1 (sans préciser pour quels échantillons) ; le résultat est rattaché à PS4, PM4 et PL4.",
    "quote": "Particle size was larger for a PVA mixing ratio of 4:1 than for 16:1."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Surface BET et taille des pores selon le PVA : avec le PVA de masse molaire 10 000, la surface BET et la taille des pores augmentent quand la teneur en PVA diminue ; avec 50 000 et 98 000, la baisse de teneur élargit les pores et réduit la surface BET. Les lectures de la Fig. 8 (PM4 ≈ 2,2 → PM16 ≈ 1,4 m2/g ; PL4 ≈ 2,1 → PL16 ≈ 1,3 m2/g) suivent ce sens, avec 16:1 = moins de PVA d'après la Table 2.",
+   "quote": "In contrast, for PVA molecular weights of 50,000 and 98,000, a decrease in the PVA content led to an increase in the pore size and a decrease in the BET value."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les auteurs concluent que le PVA de masse molaire élevée favorise la formation de la structure en couches quand la quantité ajoutée est relativement faible. Dans la Table 4, le rapport I(003)/I(104) le plus élevé est celui de PL16 (1,878958), que la Table 2 range parmi les teneurs en PVA les plus faibles (0,8890 g).",
+   "quote": "These results suggest that PVA with a higher molecular weight is more advantageous for layer formation when a relatively small amount is added"
   }
  ],
  "method_sources": [
@@ -1354,6 +1595,36 @@
   {
    "where": "Table 4 / I(003)/I(104)",
    "issue": "Les rapports de PS16 (1,544058) et PM16 (1,479811) ne sont pas le quotient des intensités du même tableau (1,518 et 1,331) ; valeurs imprimées gardées."
+  },
+  {
+   "where": "Conditions de mesure absentes (XRD, SEM, BET, EDS)",
+   "issue": "L'article ne donne ni le rayonnement ni la plage de 2θ ni le pas de la DRX, ni la tension d'accélération du MEB (les micrographies des Fig. 5 à 7 portent « 3.0kV » dans leur bandeau, non repris faute de texte), ni le gaz et le dégazage du BET, ni les conditions de l'EDS ; le facteur de forme et la raie utilisés pour l'équation de Scherrer, le nombre de piles testées par échantillon, la masse active et le diamètre d'électrode ne sont pas donnés non plus."
+  },
+  {
+   "where": "Ordre des impédances (PS4, PM4, PL4)",
+   "issue": "Le texte écrit « The impedance values follow the order of PS4 > PM4 > PL4 » puis « PS4 demonstrates the highest real impedance, followed by the PL4 and PM4 » : les deux ordres se contredisent pour PM4 et PL4. Les deux phrases sont gardées telles quelles en résultats de PS4, PM4 et PL4, sans lever la contradiction."
+  },
+  {
+   "where": "Résultats DRX 19° et 44° (six voies)",
+   "issue": "La phrase « In samples with added PVA, … approximately 19°, … two lines were located at 44° » vise les échantillons avec PVA en général, sans dire s'il s'agit de 2θ ni de quelles raies (aucun indice hkl donné pour 19° et 44°). Elle est recopiée sur PS4, PS16, PM4, PM16, PL4 et PL16 ; l'article ne distingue pas les échantillons."
+  },
+  {
+   "where": "PS4 / ATG : résultats chiffrés",
+   "issue": "Les deux pertes de masse (5 % et 25 %) sont celles du gel fait avec le PVA de masse molaire 50 000, rapport non précisé (donc ni PS4 ni exactement PM4 ou PM16) ; elles sont rangées sur PS4, qui porte déjà la caractérisation ATG, et le nom de la propriété rappelle la masse molaire."
+  },
+  {
+   "where": "Intensités I(003) et I(104) (Table 4)",
+   "issue": "Les intensités sont sans unité dans le tableau (probablement des coups) ; elles sont gardées sans unité. Les rapports imprimés de PS16 et PM16 ne sont pas leur quotient (voir le doute sur la Table 4)."
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "LiCoO2 (LCO)",
+   "property": "theoretical_capacity",
+   "value_num": 274,
+   "unit": "mAh/g",
+   "conditions": "only approximately half of it can be used with the current technology",
+   "quote": "only approximately half of the theoretical capacity (274 mAh/g) can be used with the current technology"
   }
  ]
 }
