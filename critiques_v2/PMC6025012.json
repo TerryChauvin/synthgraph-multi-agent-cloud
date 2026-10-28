@@ -1,0 +1,120 @@
+{
+ "pmcid": "PMC6025012",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "attribution",
+   "where": "v3: ZX-ref outcome ion_exchange_capacity_Ca_Fig10b_Na2O_SiO2_3.0 (measured_by cec_1)",
+   "extracted": "CEC 230 mg/g (lue sur Fig. 10b au point Na2O/SiO2 = 3.0) rattachée à ZX-ref (vieillissement 30 °C / 60 min)",
+   "article_says": "a batch of experiments under different H2O/Na2O and Na2O/SiO2 ratios were carried out with the crystallization temperature and time of 110 °C and 5 h and the aging temperature and time of 30 °C and 30 min.",
+   "fix": "retirer ce résultat de ZX-ref (vieillissement 60 min) ; le point de Fig. 10b à 3,0 appartient à la série d'alcalinité (vieillissement 30 min) et figure déjà sur Na2O-SiO2-3p0",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "method_sources : CEC protocole (renvoi B22-materials-11-00906)",
+   "extracted": "method_sources vide",
+   "article_says": "Calcium ion exchange capacity (CEC) was determined as follows",
+   "fix": "ajouter une source de méthode pour le protocole de CEC (adsorption_test cec_1), ref_id B22-materials-11-00906 (corpus/refs : « determined as follows [[B22…]] »)",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: H2O-Na2O-40 / ZX-opt, résultat phase à H2O/Na2O = 40",
+   "extracted": "aucune phase décrite pour H2O/Na2O = 40 (ZX-opt n'a que « pure zeolite X » de la conclusion)",
+   "article_says": "When the H2O/Na2O ratios were 40 and 45, the crystallization degree reached the maximum and there were also some zeolite A impurities.",
+   "fix": "ajouter à ZX-opt (ou à une branche H2O/Na2O = 40 de la série d'alcalinité) la phase « degré de cristallisation maximal avec impuretés de zéolithe A » mesurée par xrd_1, et signaler la contradiction avec « pure zeolite X » de la conclusion",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: ZX-ref (vieillissement 60 min), résultat phase",
+   "extracted": "aucun résultat de phase sur ZX-ref liant le vieillissement de 60 min à la zéolithe A (seul Age-t120min le porte)",
+   "article_says": "However, when the aging time was up to 60 and 120 min, some obvious diffraction peaks of zeolite A appeared indicating that the aging time plays a significant role in the formation of zeolite prepared from diatomite.",
+   "fix": "ajouter à ZX-ref (60 min) ou à une branche Age-t60min un résultat phase « pics de zéolithe A visibles » (xrd_1) ; Fig. 6b marque bien les pics A à 60 min ; ajouter une doute car le texte parle de zéolithe X monophasée pour ZX-ref en section 3.2",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: ZX-ref, résultat morphology à 5 h",
+   "extracted": "seule la morphologie à 110 °C est enregistrée",
+   "article_says": "When the crystallization time reached 5 h, the synthesized products formed regular crystals with smooth faces.",
+   "fix": "ajouter à ZX-ref la morphologie « cristaux réguliers à faces lisses » (sem_1)",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: Cryst-T100, positions de pics XRD de la zéolithe X",
+   "extracted": "positions dans la citation de phase seulement, pas de résultat xrd_peak_position (alors que le quartz et la kaolinite de la diatomite en ont)",
+   "article_says": "typical diffraction peaks of X zeolite (JCPDS 38-0237) can be seen at 2θ = 6.10°, 9.97°, 11.76°, 15.39°, 18.46°, 20.12°, 23.24°, 26.58° and 30.86°",
+   "fix": "ajouter un résultat xrd_peak_position (zéolithe X) pour Cryst-T100, measured_by xrd_1 ; de même le pic d'hydroxyde d'aluminium à 18.35° pour Cryst-T90 et Cryst-T100",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: xrd_1 et xrd_dt, réglage scan_step",
+   "extracted": "scan_step = « 0.02° step at 4°/min » (le pas et la vitesse sont fondus)",
+   "article_says": "The samples were scanned in the 2θ range of 5° to 50° with a 0.02° step at a scanning speed of 4°/min.",
+   "fix": "scan_step = 0.02° ; la vitesse de balayage 4°/min en réglage séparé (nom de la liste, ou ajout au vocabulaire)",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: elemental_composition_H2O (Table 1) et elemental_composition_Si_mass, measured_by xrf_1",
+   "extracted": "measured_by = xrf_1 pour la teneur en H2O (22.90) et pour la masse de Si (3.22 g / 2.88 g)",
+   "article_says": "In addition, the contents of Si in the raw material and the synthesized X zeolite is 3.22 and 2.88 g, respectively, which is a highly efficient use of diatomite.",
+   "fix": "la fluorescence X ne dose pas l'eau et l'article ne dit pas comment les masses de Si sont obtenues : mettre measured_by = not_stated pour Si_mass, et pour H2O (22.90) not_stated (ou tga_1, dont la perte vaut 22 wt %) avec une doute",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: propriété decomposition_temperature_water_loss_endotherm (ZX-opt, 150 °C)",
+   "extracted": "propriété decomposition_temperature_… pour la perte d'eau adsorbée",
+   "article_says": "DTA curves showed that the endothermic peaks occurred at lower temperatures (150 °C) of the synthesized zeolite X sample, which could be assigned to the loss of adsorbed water.",
+   "fix": "decomposition_temperature désigne une décomposition ou stabilité thermique (définition du vocabulaire) ; une déshydratation n'en est pas une : utiliser mass_loss_residue / un nom d'événement thermique ajouté avec définition",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "succeeded des branches Cryst-T70, Cryst-T80, H2O-Na2O-55, H2O-Na2O-60 (False) et Cryst-T130, Cryst-t9h, Cryst-t12h (True)",
+   "extracted": "succeeded false / true fixé sans phase décrite par l'article",
+   "article_says": "When the H2O/Na2O ratio was up to 50, there was only one sharp diffraction peak attributable to aluminum hydroxide.",
+   "fix": "l'article ne décrit les phases qu'entre 90 et 120 °C et jusqu'à H2O/Na2O = 50 : pour 70, 80, 55 et 60 (valeur de CEC seule) et pour 130 °C, 9 h, 12 h, laisser succeeded à sa valeur neutre ou noter que le succès est déduit de la seule CEC",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "v3: parent ZX-ref des séries de vieillissement (Na2O/SiO2 = 3.0, H2O/Na2O = 40) et héritage de ZX-opt pour les séries d'alcalinité",
+   "extracted": "Age-T* et Age-t* héritent Na2O/SiO2 = 3.0 de ZX-ref ; les séries d'alcalinité héritent l'autre rapport de ZX-opt (1.4 / 40)",
+   "article_says": "the alkalinity of the base solutions at the initial values",
+   "fix": "« initial values » n'est pas défini : déclarer le rapport Na2O/SiO2 des séries de vieillissement et l'autre rapport des séries d'alcalinité comme non cités (not_stated) plutôt que hérités ; les doutes existent mais la valeur est présentée comme héritée",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: sample_inventory results_in (Fig. 9, Fig. 8b, Fig. 2a, Fig. 3)",
+   "extracted": "Na2O/SiO2 1.2, 2.0, 2.5, 3.0, 3.5, 4.0 listés dans Fig. 9 ; 2.5–4.0 dans Fig. 8b ; 70, 80, 130 °C dans Fig. 2a et Fig. 3",
+   "article_says": "Figure 9 SEM images of zeolites obtained at Na2O/SiO2 ratio of (a,b) 1.3, (c,d) 1.4 and (e,f) 1.5 upon hydrothermal treatment at 110 °C and 5 h.",
+   "fix": "corriger results_in : Fig. 9 ne porte que 1.3, 1.4, 1.5 ; Fig. 8b que 1.2–2.0 ; Fig. 2a et Fig. 3 que 90–120 °C ; les échantillons à 70, 80, 130 °C, 2.5–4.0 n'ont que la CEC (Fig. 5a, 10b)",
+   "confidence": "sure"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": "série cristallisation (T 90/100/110/120 en XRD-SEM, 70–130 °C en CEC ; t 3–6 h en XRD, 3–12 h en CEC), vieillissement (T 30–60, t 0–120), H2O/Na2O 30–60, Na2O/SiO2 1.2–4.0, optimal, diatomite, commercial",
+  "branches_extracted": "42 voies, toutes les valeurs de figure retrouvées",
+  "not_stated_checked": "environ 30 (étapes et mesures)",
+  "not_stated_wrong": 0,
+  "figure_values_checked": "Fig. 5a, 5b, 7a, 7b, 10a, 10b (46 points de CEC) et Fig. 12 (BJH 3.8 nm) : tous à moins de 5 % de ma lecture ; Fig. 2, 6, 8 : pics A/X marqués conformes (Age-T50 à 50 °C, Age-t120 non marqué sur la figure mais dit par le texte)"
+ },
+ "reproducibility_gaps": [
+  "masses de diatomite, d'Al(OH)3 et de NaOH, concentration de la soude (seuls les rapports molaires sont donnés)",
+  "durée et vitesse d'agitation de l'étape de dispersion",
+  "volume et taux de remplissage de l'autoclave, vitesse de chauffe",
+  "nombre et volume des lavages, mode de séchage (étuve ?)",
+  "rapport Na2O/SiO2 des séries de vieillissement et rapport complémentaire des séries d'alcalinité non précisés",
+  "tension d'accélération et préparation d'échantillon du MEB ; masse d'échantillon de l'ATG et de l'adsorption N2 ; formule de calcul de la CEC et pH de la solution",
+  "annexes : aucune citée"
+ ],
+ "mechanism_check": "ok",
+ "notes": "Les valeurs de CEC lues sur figure sont fidèles (écart maximal ≈ 5 %). Contradictions de l'article (pas des erreurs d'extraction, déjà en doute) : même échantillon à 218 (Fig. 5a) et 236 mg/g (Fig. 5b) ; pic à 268 mg/g à 30 min (Fig. 7b) supérieur aux 248 mg/g annoncés ; 3.0 de Na2O/SiO2 en section 3.2 contre 1.4 en conclusion ; 'pure zeolite X' contre impuretés de zéolithe A à H2O/Na2O = 40 ; Méthodes 90–120 °C / 3–9 h contre 70–130 °C / 12 h en figures. Les identifiants B34–B41 des tableaux 3 et 4 se déduiraient de la liste des références mais l'article ne les donne pas dans le texte : non signalé. Ligne « sodalite, microwave heating » du tableau 4 (sans durée) non enregistrée en comparisons : trivial. Mesures, réglages et liens measured_by autrement corrects ; noms du vocabulaire corrects (adsorption_test pour la CEC avec la propriété ajoutée ion_exchange_capacity, commercial_material, precursor_preparation, collect)."
+}

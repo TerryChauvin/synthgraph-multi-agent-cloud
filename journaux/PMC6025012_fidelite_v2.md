@@ -1,0 +1,14 @@
+# Journal de la critique de fidélité v2 (format 3), PMC6025012
+
+- Ma liste d'échantillons avant l'extraction : diatomite brute, optimum (110 °C / 5 h, vieillissement 30 °C / 30 min, 40, 1.4), zéolithe X commerciale, série de cristallisation (température 90–120 °C en XRD/SEM, 70–130 °C en CEC ; durée 3–6 h en XRD, 3–12 h en CEC), vieillissement (30–60 °C ; 0–120 min), H2O/Na2O 30–60, Na2O/SiO2 1.2–4.0. L'inventaire de l'extracteur est complet : aucun échantillon manquant.
+- Figures 5a, 5b, 7a, 7b, 10a, 10b ouvertes : les 46 valeurs de CEC lues par l'extracteur sont à moins de 5 % de ma lecture (ex. 90 °C : 105 lu contre 100 ; 30 min : 268 contre 270). Aucun constat de valeur fausse. Fig. 12 : pic BJH ≈ 3.8 nm confirmé.
+- Figures 2, 6, 8 : pics A et X marqués conformes aux phases extraites (Cryst-t7h, Age-T50, Na2O-SiO2-2p0). À 120 min la figure 6b ne marque pas de pics A mais le texte les affirme : l'extracteur a suivi le texte et l'a signalé en doute, je n'en fais pas un constat.
+- Constat d'attribution (Fig. 10b à 3.0 sur ZX-ref) : le texte 3.4 fixe le vieillissement à 30 min pour la série d'alcalinité, ZX-ref a 60 min ; le point appartient à Na2O-SiO2-3p0 seulement. `probable` parce que l'extracteur peut avoir voulu garder la correspondance nominale de ZX-ref.
+- Source de méthode : le renvoi B22 de « CEC was determined as follows » est dans corpus/refs et absent de `method_sources` : `sure`.
+- Phases manquantes (H2O/Na2O = 40 avec zéolithe A ; vieillissement 60 min avec zéolithe A) : le texte les dit explicitement ; la contradiction avec « pure zeolite X » est de l'article, pas de l'extraction. 60 min `probable` car ZX-ref est décrit monophasé en 3.2.
+- Positions de pics de la zéolithe X à 100 °C : la règle v2 §3.5 les demande, l'extracteur n'a mis que la citation dans phase ; `probable`.
+- Réglages (v3 #1) : XRD et CEC corrects ; seul constat, scan_step qui fond le pas et la vitesse. Aucun `not_stated` à tort trouvé (SEM sans tension, XRF sans digestion, CEC sans pH : réellement absents).
+- measured_by (v3 #2) : tous cohérents sauf H2O de la Table 1 et masses de Si, attribués à xrf_1 sans appui. `mineur`. La phase après 820 °C est liée à xrd_1 alors que la figure 11b a une plage de balayage différente : déjà en doute, non repris.
+- Vocabulaire (v3 #3) : decomposition_temperature pour la perte d'eau adsorbée contredit sa définition ; le reste (adsorption_test + ion_exchange_capacity ajoutée, commercial_material, precursor_preparation) est cohérent.
+- Branches à valeur de CEC seule (70, 80, 130 °C ; 55, 60 ; 9, 12 h) : `succeeded` fixé sans phase dans l'article, noté `deduit` ; ce n'est pas une branche inventée puisque les figures portent bien ces points.
+- Écarté : les numéros de référence des tableaux 3 et 4 (non écrits dans le texte, déduire B34–B41 serait un ajout) ; les contradictions internes de l'article (218/236 mg/g, 268 > 248) déjà en doutes.
