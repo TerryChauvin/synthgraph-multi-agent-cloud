@@ -2429,6 +2429,14 @@
   },
   {
    "type": "propriete",
+   "nom": "PL_excitation_peak",
+   "definition": "Pic d'excitation de photoluminescence (spectre d'excitation, PLE).",
+   "techniques": [
+    "PL"
+   ]
+  },
+  {
+   "type": "propriete",
    "nom": "quantum_yield",
    "definition": "Rendement quantique de photoluminescence.",
    "techniques": [
@@ -2538,12 +2546,14 @@
   {
    "type": "propriete",
    "nom": "retention_stability",
-   "definition": "Rétention de capacité, d'activité ou de performance après cycles ou dans le temps.",
+   "definition": "Rétention de capacité, d'activité, de luminescence ou de performance après cycles, dans le temps ou sous contrainte (irradiation, sel, pH).",
    "techniques": [
     "electrochemistry",
     "catalytic_test",
     "adsorption_test",
-    "device_test"
+    "device_test",
+    "PL",
+    "UV_vis"
    ]
   },
   {

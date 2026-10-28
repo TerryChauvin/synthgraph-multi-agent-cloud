@@ -473,6 +473,8 @@ def validate_v3(c, data, order, by_label):
             ws = f"{w} step {s.get('order')}"
             if vocab_name("action", s.get("action") or "") is None:
                 c.err(ws, f"action {s.get('action')!r} : {hint_v}")
+            if vocab_name("action", s.get("action") or "") == "other":
+                c.warn(ws, "action `other` : chercher une action existante ou en ajouter une avec définition et cases")
             for p in s.get("parameters") or []:
                 if vocab_name("parametre", p.get("name") or "", prefix_ok=True) is None:
                     c.err(f"{ws} param {p.get('name')!r}", hint_v)
@@ -524,6 +526,8 @@ def validate_v3(c, data, order, by_label):
             if prop is None:
                 c.err(wo, f"propriété : {hint_v}")
                 continue
+            if prop == "other":
+                c.warn(wo, "propriété `other_…` : chercher un nom existant ou un ajout récent (`vocab.py cherche`), sinon ajouter un nom avec définition")
             techs = entries[("propriete", prop)].get("techniques") or []
             mb = o.get("measured_by")
             if not techs:

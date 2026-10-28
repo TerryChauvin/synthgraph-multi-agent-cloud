@@ -20,7 +20,7 @@ Lis `vocabulaire/contexte_agents.md` en entier **avant d'écrire** : c'est la li
    `python3 -I vocab.py ajoute <PMCID> --type <type> --nom <nom_snake_case> --definition "<une phrase qui dit ce que le nom désigne>" [--cases "a,b"] [--reglages "a,b"] [--techniques "A,B"] [--unite U] --ecarte "<nom proche>: <pourquoi il ne convient pas>; …"`
    - une action ajoutée donne ses cases de grille (`--cases`, paramètres de la liste) ; une technique ajoutée donne ses réglages attendus (`--reglages`) ; une propriété ajoutée donne les techniques qui la mesurent (`--techniques`, vide si ce n'est pas une mesure) ;
    - l'outil refuse un ajout sans recherche préalable, un nom qui existe déjà, ou un nom proche non écarté avec une raison ;
-   - un ajout est accepté tout de suite et visible par les autres agents ; il sera relu à la fusion du palier. **Ajoute peu** : un ou deux noms par article au plus, et jamais pour une simple variante d'écriture d'un nom existant (`other` existe pour l'exceptionnel).
+   - un ajout est accepté tout de suite et visible par les autres agents ; il sera relu à la fusion du palier. **Ajoute peu** : un ou deux noms par article au plus, et jamais pour une simple variante d'écriture d'un nom existant. `other` (et `other_<précision>`) n'est permis qu'en dernier recours : le contrôle avertit, et une grandeur qui revient plusieurs fois dans l'article mérite un nom ajouté avec définition.
 
 ## 3. Nouvelles clés du format 3
 
