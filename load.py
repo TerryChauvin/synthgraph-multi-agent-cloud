@@ -241,7 +241,8 @@ def validate(pmcid, data):
             for s in steps:
                 names = [p.get("name") or "" for p in s.get("parameters") or []]
                 ns = s.get("not_stated") or []
-                for slot in expected_slots(s.get("action")):
+                slots = action_slots(s.get("action")) if (data.get("format") or 1) >= 3 else expected_slots(s.get("action"))
+                for slot in slots:
                     found = any(slot in n for n in names)
                     if not found and slot not in ns:
                         c.err(f"{w} step {s.get('order')} ({s.get('action')})",
@@ -397,7 +398,146 @@ def validate(pmcid, data):
     for i, d in enumerate(data.get("doubts") or []):
         if not d.get("issue"):
             c.err(f"doubts[{i}]", "issue manquant")
+    if (data.get("format") or 1) >= 3:
+        validate_v3(c, data, order, by_label)
     return c, order
+
+
+# ---------------------------------------------------------------- format 3 (architecture v2, 28/10/2026)
+_VOCAB = None
+
+
+def vocab_index():
+    global _VOCAB
+    if _VOCAB is None:
+        import vocab
+        _VOCAB = vocab.index_noms()
+    return _VOCAB
+
+
+def vocab_name(typ, name, prefix_ok=False):
+    """Nom officiel (ou ajout en attente) correspondant à `name`, None sinon ; avec prefix_ok, « nom_precision » est admis."""
+    import vocab
+    idx, _ = vocab_index()
+    n = vocab.norm(name)
+    if n in idx[typ]:
+        return idx[typ][n]
+    if prefix_ok:
+        parts = n.split("_")
+        for k in range(len(parts) - 1, 0, -1):
+            base = "_".join(parts[:k])
+            if base in idx[typ]:
+                return idx[typ][base]
+    return None
+
+
+def action_slots(action):
+    name = vocab_name("action", action or "")
+    if name is None:
+        return []
+    return vocab_index()[1][("action", name)].get("cases") or []
+
+
+SUSPECT = {  # motif d'une valeur présente dans la citation d'une étape alors que la case est déclarée « non cité »
+    "temperature": r"\d\s?°\s?C|\d\s?K\b|room temperature",
+    "duration": r"\d\s?(h|hr|hrs|hours?|min|minutes?|days?)\b|overnight",
+    "heating_rate": r"°\s?C\s?/?\s?min|K\s?/?\s?min",
+    "atmosphere": r"\b(air|N2|nitrogen|argon|Ar|vacuum|H2)\b",
+    "centrifuge_speed": r"\d\s?(rpm|×\s?g)",
+    "stirring_speed": r"\d\s?rpm",
+    "repetitions": r"(three|two|several|thrice|twice|\d)\s*(times|×)|thrice|twice",
+    "ph": r"\bpH\b",
+    "power": r"\d\s?W\b",
+    "fill_fraction": r"\d\s?%\s?(of|fill)|filled",
+    "cooling": r"cool(ed|ing)",
+}
+
+
+def validate_v3(c, data, order, by_label):
+    """Contrôles de l'architecture v2 : noms du vocabulaire, grille par technique, réglages structurés,
+    lien résultat → mesure, « non cité » suspects (avertissements)."""
+    import re as _re
+    hint_v = "nom absent du vocabulaire : `python3 -I vocab.py cherche <PMCID> \"…\"` puis, si rien ne convient, `vocab.py ajoute`"
+    _, entries = vocab_index()
+    char_ids = {}   # id -> (route label, technique officielle)
+    for r in order:
+        w = f"route {r['label']}"
+        if not r.get("parent") and r.get("kind") != "calcul":
+            ms = r.get("methods")
+            if not ms:
+                c.err(w, "format 3 : `methods` obligatoire pour une voie de base (liste de méthodes du vocabulaire)")
+            for m in ms or []:
+                if vocab_name("methode", m) is None:
+                    c.err(w, f"méthode {m!r} : {hint_v}")
+        for s in r.get("steps") or []:
+            ws = f"{w} step {s.get('order')}"
+            if vocab_name("action", s.get("action") or "") is None:
+                c.err(ws, f"action {s.get('action')!r} : {hint_v}")
+            for p in s.get("parameters") or []:
+                if vocab_name("parametre", p.get("name") or "", prefix_ok=True) is None:
+                    c.err(f"{ws} param {p.get('name')!r}", hint_v)
+            q = s.get("quote") or ""
+            for slot in s.get("not_stated") or []:
+                pat = SUSPECT.get(slot)
+                if pat and _re.search(pat, q, _re.I):
+                    c.warn(ws, f"« non cité » suspect : {slot} déclaré absent alors que la citation de l'étape contient un motif de cette case")
+        for i, ch in enumerate(r.get("characterizations") or []):
+            wc = f"{w} characterizations[{i}] {ch.get('technique')!r}"
+            cid = ch.get("id")
+            if not cid:
+                c.err(wc, "format 3 : `id` obligatoire (identifiant unique de la mesure, repris par outcomes[].measured_by)")
+            elif cid in char_ids:
+                c.err(wc, f"id {cid!r} en double")
+            tech = vocab_name("technique", ch.get("technique") or "")
+            if tech is None:
+                c.err(wc, f"technique : {hint_v}")
+            if cid:
+                char_ids[cid] = (r["label"], tech)
+            if ch.get("conditions"):
+                c.warn(wc, "format 3 : `conditions` en texte libre déconseillé, utiliser `settings` (un réglage par entrée, avec citation)")
+            names = []
+            for j, st in enumerate(ch.get("settings") or []):
+                wst = f"{wc} settings[{j}] {st.get('name')!r}"
+                if vocab_name("reglage", st.get("name") or "") is None:
+                    c.err(wst, hint_v)
+                names.append(vocab_name("reglage", st.get("name") or "") or st.get("name"))
+                c.quote(wst, st)
+                v = c.number(wst, st)
+                if v is None and not st.get("value_text"):
+                    c.err(wst, "ni value_num ni value_text")
+            ns = ch.get("not_stated") or []
+            if tech:
+                for reg in entries[("technique", tech)].get("reglages") or []:
+                    if reg not in names and reg not in ns:
+                        c.err(wc, f"grille de mesure : réglage {reg} ni extrait (settings) ni déclaré non cité (not_stated)")
+                    if reg in names and reg in ns:
+                        c.err(wc, f"grille de mesure : réglage {reg} à la fois extrait et déclaré non cité")
+    for r in order:
+        w = f"route {r['label']}"
+        anc, lab = set(), r["label"]
+        while lab:
+            anc.add(lab)
+            lab = by_label[lab].get("parent")
+        for i, o in enumerate(r.get("outcomes") or []):
+            wo = f"{w} outcomes[{i}] {o.get('property')!r}"
+            prop = vocab_name("propriete", o.get("property") or "", prefix_ok=True)
+            if prop is None:
+                c.err(wo, f"propriété : {hint_v}")
+                continue
+            techs = entries[("propriete", prop)].get("techniques") or []
+            mb = o.get("measured_by")
+            if not techs:
+                continue
+            if not mb:
+                c.err(wo, "format 3 : `measured_by` obligatoire (id de la mesure dans cette voie ou une voie parente, "
+                          "ou \"not_stated\" si l'article ne dit pas comment la valeur a été mesurée)")
+            elif mb != "not_stated":
+                if mb not in char_ids:
+                    c.err(wo, f"measured_by {mb!r} : aucune caractérisation avec cet id")
+                elif char_ids[mb][0] not in anc:
+                    c.err(wo, f"measured_by {mb!r} : mesure d'une autre voie ({char_ids[mb][0]}), ni cette voie ni un parent")
+                elif char_ids[mb][1] and char_ids[mb][1] not in techs:
+                    c.warn(wo, f"measured_by {mb!r} : technique {char_ids[mb][1]} inhabituelle pour {prop} (attendu : {', '.join(techs)})")
 
 
 def completeness(route, by_label):
@@ -454,6 +594,7 @@ def insert(con, pmcid, data, order, c):
         con.execute(f"DELETE FROM {t} WHERE paper_id = ?", (pid,))
     by_label = {r["label"]: r for r in order}
     ids = {}
+    char_db = {}   # id de mesure (format 3) -> characterizations.id
 
     def q(obj, required=True):
         return c.quote("", obj, required)
@@ -511,17 +652,31 @@ def insert(con, pmcid, data, order, c):
                 con.execute(
                     "INSERT INTO equipment (step_id, type, detail, quote, section, char_start, char_end)"
                     " VALUES (?,?,?,?,?,?,?)", (sid, e["type"], e.get("detail")) + q(e))
+        for m in r.get("methods") or []:
+            con.execute("INSERT INTO route_methods (route_id, method) VALUES (?,?)", (rid, m))
         for o in r.get("characterizations") or []:
-            con.execute(
+            chid = con.execute(
                 "INSERT INTO characterizations (route_id, technique, result, instrument, conditions, quote,"
                 " section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?)",
-                (rid, o["technique"], o.get("result"), o.get("instrument"), o.get("conditions")) + q(o))
+                (rid, o["technique"], o.get("result"), o.get("instrument"), o.get("conditions")) + q(o)).lastrowid
+            if o.get("id"):
+                char_db[o["id"]] = chid
+                con.execute("UPDATE characterizations SET char_key=? WHERE id=?", (o["id"], chid))
+            for st in o.get("settings") or []:
+                con.execute(
+                    "INSERT INTO char_settings (characterization_id, name, value_num, value_text, unit, from_figure,"
+                    " quote, section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?,?)",
+                    (chid, st["name"], st.get("value_num"), st.get("value_text"), st.get("unit"),
+                     st.get("from_figure")) + q(st))
+            con.executemany("INSERT INTO not_stated (route_id, scope, step_order, reagent, name) VALUES (?,?,?,?,?)",
+                            [(rid, "characterization", None, o.get("id") or o["technique"], n) for n in o.get("not_stated") or []])
         for o in r.get("outcomes") or []:
+            mb = o.get("measured_by")
             con.execute(
                 "INSERT INTO outcomes (route_id, property, value_num, value_text, unit, from_figure, quote,"
-                " section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?,?)",
+                " section, char_start, char_end, measured_by, measured_status) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
                 (rid, o["property"], o.get("value_num"), o.get("value_text"), o.get("unit"),
-                 o.get("from_figure")) + q(o))
+                 o.get("from_figure")) + q(o) + (char_db.get(mb), "non_cite" if mb == "not_stated" else ("lie" if mb else None)))
     for a in data.get("annotations") or []:
         con.execute(
             "INSERT INTO annotations (paper_id, route_id, type, text, source, quote, section, char_start,"
@@ -567,7 +722,7 @@ def main():
     if len(sys.argv) != 3 or sys.argv[1] not in ("check", "load"):
         raise SystemExit(__doc__)
     mode, pmcid = sys.argv[1], sys.argv[2]
-    path = db.EXTRACT_DIR / f"{pmcid}.json"
+    path = db.EXTRACT_DIR / f"{pmcid}.json"   # SYNTHESE_EXTRACT_DIR pour la v2 (extractions_v2/)
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as e:

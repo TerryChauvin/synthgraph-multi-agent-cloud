@@ -336,3 +336,20 @@ JOIN synthesis_routes r  ON r.id = v.route_id
 JOIN papers p            ON p.id = r.paper_id
 LEFT JOIN synthesis_routes pr ON pr.id = r.parent_route_id
 LEFT JOIN outcomes o     ON o.route_id = r.id;
+
+-- Architecture v2 (format 3, 28/10/2026) : méthodes d'une voie (vocabulaire contrôlé) et réglages structurés des mesures.
+CREATE TABLE IF NOT EXISTS route_methods (
+    route_id    INTEGER NOT NULL REFERENCES synthesis_routes(id) ON DELETE CASCADE,
+    method      TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS char_settings (
+    id                  INTEGER PRIMARY KEY,
+    characterization_id INTEGER NOT NULL REFERENCES characterizations(id) ON DELETE CASCADE,
+    name        TEXT NOT NULL,       -- réglage du vocabulaire (vocab.py, type reglage)
+    value_num   REAL,
+    value_text  TEXT,
+    unit        TEXT,
+    from_figure TEXT,
+    quote       TEXT NOT NULL,
+    section     TEXT, char_start INTEGER, char_end INTEGER
+);

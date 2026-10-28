@@ -1,0 +1,345 @@
+# Vocabulaire contrôlé (version 1, 2026-10-28)
+
+Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.py cherche <PMCID> "<termes>" --type <type>`, puis, seulement si rien ne convient, `python3 -I vocab.py ajoute …` avec une définition (voir RUNBOOK_V2.md).
+
+## Méthodes de synthèse (`methods` de la voie)
+
+- `hydrothermal` — Réaction en milieu aqueux dans un récipient fermé (autoclave) chauffé au-dessus de 100 °C, sous pression autogène.
+- `solvothermal` — Comme l'hydrothermal, mais dans un solvant non aqueux ou mixte (DMF, éthanol, éthylène glycol…), en autoclave fermé.
+- `microwave_assisted` — Synthèse en solution chauffée par micro-ondes (réacteur micro-ondes ouvert ou fermé).
+- `sol_gel` — Hydrolyse et condensation de précurseurs moléculaires (alcoxydes, sels) en sol puis gel, suivies le plus souvent d'un séchage et d'un traitement thermique.
+- `coprecipitation` — Précipitation simultanée de plusieurs cations par ajout d'un agent précipitant (base, oxalate, carbonate).
+- `precipitation` — Formation d'un solide insoluble par ajout d'un agent précipitant ou changement de solvant, pour un seul cation.
+- `chemical_reduction` — Réduction de sels métalliques en solution par un réducteur chimique (NaBH4, citrate, hydrazine…) pour former des particules métalliques.
+- `green_synthesis` — Synthèse utilisant un extrait biologique (plante, microorganisme, biomolécule) comme réducteur ou stabilisant.
+- `sonochemical` — Synthèse en solution sous ultrasons de puissance (cavitation acoustique).
+- `mechanochemical` — Réaction ou mélange par broyage mécanique (broyeur à billes, mortier), avec ou sans solvant.
+- `solid_state_reaction` — Réaction entre solides à haute température après mélange et broyage des précurseurs, souvent avec plusieurs cycles de calcination.
+- `solution_combustion` — Réaction exothermique auto-entretenue entre des sels oxydants (nitrates) et un combustible (urée, glycine, acide citrique).
+- `pyrolysis_carbonization` — Décomposition thermique d'un précurseur organique ou d'un MOF sous atmosphère inerte pour obtenir un carbone ou un composite carboné.
+- `thermal_decomposition` — Décomposition d'un précurseur moléculaire en solution chaude ou à l'état solide pour former le matériau.
+- `hot_injection` — Injection rapide d'un précurseur dans un solvant chaud contenant des ligands, pour séparer nucléation et croissance (nanocristaux colloïdaux).
+- `heat_up` — Chauffage progressif d'un mélange de précurseurs et de ligands jusqu'à la température de réaction (nanocristaux colloïdaux, sans injection).
+- `solution_reflux` — Réaction en solution chauffée à reflux, à pression atmosphérique.
+- `room_temperature_solution` — Réaction en solution à température ambiante (mélange, agitation, vieillissement), sans chauffage.
+- `electrochemical_synthesis` — Formation du matériau sur une électrode ou en solution sous courant ou potentiel imposé (électrodéposition, anodisation, électropolymérisation).
+- `chemical_vapor_deposition` — Croissance d'un solide à partir de précurseurs gazeux qui réagissent sur un substrat chauffé (CVD, y compris assistée par plasma).
+- `atomic_layer_deposition` — Dépôt couche par couche par cycles de réactions de surface auto-limitées (ALD).
+- `physical_vapor_deposition` — Dépôt par évaporation thermique, pulvérisation cathodique ou ablation laser pulsée sous vide (PVD, sputtering, PLD).
+- `solution_film_deposition` — Dépôt de film depuis une solution ou une encre : centrifugation (spin coating), trempage (dip coating), dépôt de gouttes, enduction, impression.
+- `spray_pyrolysis` — Pulvérisation d'une solution de précurseurs sur un substrat chaud ou dans un four, avec décomposition des gouttelettes.
+- `electrospinning` — Étirage d'une solution polymère en fibres sous champ électrique, souvent suivi d'un traitement thermique.
+- `ion_exchange` — Remplacement d'ions d'un solide (zéolithe, argile, MOF) par d'autres ions en solution.
+- `impregnation` — Dépôt d'un précurseur sur un support poreux par imprégnation (humide ou à humidité naissante), suivie de séchage et de traitement thermique.
+- `templating` — Synthèse dans ou autour d'un gabarit (silice, polymère, tensioactif, MOF) retiré ensuite, pour imposer la porosité ou la forme.
+- `exfoliation` — Séparation d'un matériau lamellaire en feuillets minces (exfoliation liquide, chimique ou mécanique).
+- `graphite_oxidation` — Oxydation du graphite en oxyde de graphène (méthode de Hummers et variantes), souvent suivie d'une réduction.
+- `polymerization` — Formation d'un polymère ou d'un réseau organique par polymérisation (radicalaire, condensation, oxydative).
+- `self_assembly` — Assemblage spontané ou dirigé de briques moléculaires ou colloïdales (couche par couche, cristallisation de MOF/COF à l'ambiante, auto-assemblage de micelles).
+- `post_synthetic_modification` — Modification d'un matériau déjà formé : greffage, fonctionnalisation, dopage, désalumination, échange de ligands.
+- `chemical_activation` — Traitement d'un carbone ou d'un précurseur par un agent activant (KOH, H3PO4, ZnCl2) à haute température pour créer de la porosité.
+- `thermal_treatment` — Traitement thermique d'un solide déjà formé (calcination, recuit, frittage) pour changer sa phase, sa cristallinité ou sa composition.
+- `flow_synthesis` — Synthèse en continu dans un réacteur à écoulement ou microfluidique.
+- `laser_ablation` — Ablation d'une cible par laser pulsé dans un liquide ou un gaz pour former des nanoparticules.
+- `plasma_synthesis` — Synthèse ou traitement par plasma (décharge, plasma froid, arc).
+- `biomineralization` — Formation d'un minéral dans ou par un système biologique (cellules, protéines, fluide biologique simulé).
+- `device_fabrication` — Mise en forme du matériau dans un dispositif (électrode, cellule, capteur, LED, membrane) en vue de son test.
+- `calculation` — Calcul ou simulation (DFT, dynamique moléculaire, modèle analytique) : pas de synthèse au laboratoire.
+
+## Actions d'étape (`action`) et leurs cases de grille
+
+- `dissolve` — Dissoudre un solide dans un solvant.
+- `mix` — Mélanger des solutions, des suspensions ou des poudres. [cases : duration]
+- `add` — Ajouter un réactif ou une solution à un mélange. [cases : addition_mode]
+- `inject` — Injecter rapidement une solution dans un milieu chaud (injection à chaud). [cases : temperature, addition_mode]
+- `stir` — Agiter un mélange (agitation magnétique ou mécanique). [cases : duration, stirring_speed]
+- `sonicate` — Traiter par ultrasons (bain ou sonde). [cases : duration, power]
+- `disperse` — Disperser un solide dans un liquide. [cases : duration]
+- `adjust_ph` — Ajuster le pH d'une solution par ajout d'acide ou de base. [cases : ph]
+- `degas` — Dégazer ou purger un mélange ou un récipient sous gaz inerte ou sous vide. [cases : atmosphere, duration]
+- `heat` — Chauffer un mélange en solution ou à l'état solide, sans précision de méthode particulière. [cases : temperature, duration]
+- `react` — Laisser réagir un mélange à une température donnée. [cases : temperature, duration]
+- `reflux` — Chauffer à reflux. [cases : temperature, duration]
+- `age` — Laisser vieillir ou reposer un mélange, un gel ou un précipité. [cases : temperature, duration]
+- `hydrothermal_treatment` — Chauffer en autoclave fermé en milieu aqueux. [cases : temperature, duration, autoclave_volume, fill_fraction, heating_rate, cooling]
+- `solvothermal_treatment` — Chauffer en autoclave fermé dans un solvant non aqueux ou mixte. [cases : temperature, duration, autoclave_volume, fill_fraction, heating_rate, cooling]
+- `microwave_heating` — Chauffer par micro-ondes. [cases : temperature, duration, power, pressure]
+- `cool` — Refroidir (naturellement, dans le four, à vitesse contrôlée, dans un bain). [cases : cooling]
+- `quench` — Arrêter brutalement une réaction ou un traitement (trempe, bain froid, ajout d'un réactif d'arrêt).
+- `filter` — Séparer un solide par filtration.
+- `centrifuge` — Séparer un solide par centrifugation. [cases : centrifuge_speed, duration]
+- `wash` — Laver un solide (rinçage, lavages successifs). [cases : wash_solvent, repetitions]
+- `dialyze` — Purifier par dialyse. [cases : duration, dimension]
+- `dry` — Sécher un solide ou un film (étuve, air, vide, lyophilisation). [cases : temperature, duration, drying_mode]
+- `evaporate` — Évaporer un solvant (évaporateur rotatif, plaque chauffante, ambiante). [cases : temperature]
+- `grind` — Broyer ou moudre au mortier. [cases : duration]
+- `ball_mill` — Broyer dans un broyeur à billes. [cases : milling_speed, duration, mass_ratio]
+- `press` — Presser une poudre en pastille ou en pièce. [cases : pressure]
+- `calcine` — Chauffer un solide à l'air ou sous gaz pour décomposer, oxyder ou cristalliser. [cases : temperature, duration, atmosphere, heating_rate, cooling]
+- `anneal` — Recuire un solide ou un film pour changer sa cristallinité, sa phase ou ses défauts. [cases : temperature, duration, atmosphere, heating_rate, cooling]
+- `sinter` — Fritter une poudre compactée à haute température. [cases : temperature, duration, atmosphere, heating_rate, cooling]
+- `pyrolyze` — Décomposer thermiquement sous atmosphère inerte (carbonisation, pyrolyse). [cases : temperature, duration, atmosphere, heating_rate, gas_flow, cooling]
+- `activate` — Activer un matériau (chimiquement ou thermiquement) pour développer sa porosité ou libérer ses pores. [cases : temperature, duration, atmosphere]
+- `combust` — Déclencher la combustion d'un mélange oxydant-combustible. [cases : temperature]
+- `spin_coat` — Déposer un film par centrifugation (spin coating). [cases : spin_speed, duration, volume]
+- `dip_coat` — Déposer un film par trempage et retrait. [cases : deposition_rate, duration, repetitions]
+- `drop_cast` — Déposer des gouttes d'une solution ou d'une encre sur un support. [cases : volume]
+- `coat` — Enduire, imprimer ou étaler une couche (raclette, sérigraphie, pulvérisation d'encre). [cases : thickness]
+- `spray` — Pulvériser une solution sur un substrat ou dans un four. [cases : temperature, gas_flow]
+- `electrodeposit` — Déposer par voie électrochimique à courant ou potentiel imposé. [cases : potential_current, duration, temperature]
+- `cvd_growth` — Faire croître un dépôt par CVD. [cases : temperature, duration, pressure, gas_flow, atmosphere]
+- `ald_cycles` — Réaliser des cycles de dépôt ALD. [cases : temperature, repetitions, pressure]
+- `vacuum_deposit` — Déposer sous vide par évaporation thermique, pulvérisation ou ablation laser. [cases : pressure, deposition_rate, thickness]
+- `electrospin` — Filer une solution sous champ électrique. [cases : potential_current, addition_rate, distance]
+- `ion_exchange_step` — Échanger les ions d'un solide en solution. [cases : concentration, temperature, duration, repetitions]
+- `impregnate` — Imprégner un support poreux par une solution de précurseur. [cases : concentration, duration]
+- `etch` — Attaquer chimiquement pour retirer un gabarit, une phase ou une couche. [cases : concentration, duration, temperature]
+- `exfoliate` — Exfolier un matériau lamellaire en feuillets. [cases : duration]
+- `polymerize` — Polymériser. [cases : temperature, duration]
+- `functionalize` — Greffer ou fonctionnaliser une surface. [cases : temperature, duration]
+- `irradiate` — Irradier (lumière UV ou visible, laser, rayonnement). [cases : irradiation, duration]
+- `collect` — Récupérer le produit.
+- `store` — Conserver le produit ou une solution.
+- `assemble` — Assembler un dispositif (cellule, électrode, capteur).
+- `transfer` — Transférer un matériau ou un mélange vers un autre récipient ou un substrat.
+- `other` — Opération ne correspondant à aucune action de la liste ; à remplacer par une action ajoutée avec définition si elle revient.
+
+## Paramètres d'étape (`parameters[].name`, suffixe de précision permis : `temperature_final`)
+
+- `temperature` — Température de l'étape (consigne ou mesurée).
+- `duration` — Durée de l'étape.
+- `heating_rate` — Vitesse de montée en température.
+- `cooling` — Mode ou vitesse de refroidissement (naturel, dans le four, trempe, vitesse contrôlée).
+- `atmosphere` — Gaz ou milieu dans lequel l'étape se déroule (air, N2, Ar, vide, H2/Ar).
+- `gas_flow` — Débit d'un gaz.
+- `pressure` — Pression ou niveau de vide.
+- `humidity` — Humidité relative.
+- `stirring_speed` — Vitesse d'agitation.
+- `centrifuge_speed` — Vitesse de centrifugation.
+- `spin_speed` — Vitesse de rotation d'un dépôt par centrifugation.
+- `milling_speed` — Vitesse de broyage.
+- `ph` — pH d'une solution.
+- `fill_fraction` — Taux de remplissage d'un autoclave.
+- `autoclave_volume` — Volume de l'autoclave ou du récipient fermé.
+- `power` — Puissance (micro-ondes, ultrasons, lampe, plasma, pulvérisation).
+- `frequency` — Fréquence (ultrasons, champ alternatif).
+- `potential_current` — Potentiel, tension, courant ou densité de courant imposés.
+- `irradiation` — Source lumineuse ou rayonnement et ses caractéristiques (longueur d'onde, intensité).
+- `distance` — Distance (buse-collecteur, source-substrat).
+- `thickness` — Épaisseur visée ou obtenue d'une couche.
+- `deposition_rate` — Vitesse de dépôt ou de retrait.
+- `addition_rate` — Vitesse d'ajout d'une solution (débit, goutte à goutte chiffré).
+- `addition_mode` — Manière d'ajouter (goutte à goutte, rapidement, en une fois, au pousse-seringue).
+- `addition_order` — Ordre d'ajout des réactifs.
+- `repetitions` — Nombre de répétitions d'une opération (lavages, cycles, lots).
+- `wash_solvent` — Solvant de lavage.
+- `wash_volume` — Volume de solvant de lavage.
+- `drying_mode` — Mode de séchage (étuve, air, vide, lyophilisation, sous gaz).
+- `concentration` — Concentration d'une solution dans l'étape.
+- `volume` — Volume d'une solution ou d'un mélange dans l'étape.
+- `mass` — Masse d'un solide dans l'étape (charge de catalyseur, masse de poudre).
+- `molar_ratio` — Rapport molaire.
+- `mass_ratio` — Rapport massique (y compris rapport billes/poudre).
+- `volume_ratio` — Rapport volumique de solvants ou de solutions.
+- `solvent` — Solvant de l'étape quand il n'est pas un réactif listé.
+- `substrate` — Substrat ou support de l'étape.
+- `dimension` — Dimension d'un objet ou d'un équipement (taille de tamis, seuil de membrane, surface d'électrode).
+- `mode` — Mode opératoire qualitatif qui n'entre dans aucun autre nom.
+
+## Techniques de mesure (`characterizations[].technique`) et leurs réglages attendus
+
+- `XRD` — Diffraction des rayons X sur poudre ou film (phase, cristallinité, taille de cristallite, paramètres de maille). [réglages : radiation, scan_range, scan_step, crystallite_size_method]
+- `SAED` — Diffraction électronique en aire sélectionnée au MET.
+- `SEM` — Microscopie électronique à balayage (morphologie, taille). [réglages : accelerating_voltage, sample_preparation]
+- `TEM` — Microscopie électronique en transmission, y compris haute résolution (taille, morphologie, plans réticulaires). [réglages : accelerating_voltage, particles_counted, sample_preparation]
+- `AFM` — Microscopie à force atomique (épaisseur, rugosité). [réglages : afm_mode]
+- `EDS` — Spectroscopie de rayons X à dispersion d'énergie couplée à un microscope (composition, cartographie). [réglages : accelerating_voltage]
+- `XPS` — Spectroscopie de photoélectrons X (composition de surface, états d'oxydation). [réglages : xray_source, calibration_reference]
+- `BET` — Physisorption de gaz (N2, Ar, CO2) : surface spécifique, volume et taille de pores. [réglages : adsorbate, measurement_temperature, degassing, analysis_model]
+- `UV_vis` — Spectroscopie UV-visible en absorption, transmission ou réflexion diffuse (absorption, bande interdite). [réglages : wavelength_range, band_gap_method, sample_preparation]
+- `PL` — Photoluminescence en régime stationnaire ou résolue en temps (émission, durée de vie, rendement quantique). [réglages : excitation_wavelength, wavelength_range, measurement_temperature]
+- `Raman` — Spectroscopie Raman (bandes de vibration, rapport D/G des carbones). [réglages : excitation_wavelength, laser_power]
+- `FTIR` — Spectroscopie infrarouge à transformée de Fourier (groupes fonctionnels). [réglages : wavenumber_range, sample_preparation]
+- `NMR` — Résonance magnétique nucléaire en solution ou à l'état solide. [réglages : nucleus, spectrometer_frequency, solvent_or_rotor]
+- `TGA` — Analyse thermogravimétrique et calorimétrie associée (perte de masse, stabilité thermique). [réglages : atmosphere, heating_rate, temperature_range]
+- `elemental_analysis` — Analyse élémentaire de volume : ICP-OES/MS, AAS, XRF, CHN. [réglages : digestion, calibration]
+- `DLS_zeta` — Diffusion dynamique de la lumière et potentiel zêta (taille hydrodynamique, charge de surface). [réglages : dispersant, measurement_temperature, concentration]
+- `magnetometry` — Mesures magnétiques (VSM, SQUID) : aimantation, coercivité. [réglages : field_range, measurement_temperature]
+- `XAS` — Absorption des rayons X (XANES, EXAFS) : coordination locale, état d'oxydation. [réglages : edge, beamline, fitting]
+- `EPR` — Résonance paramagnétique électronique. [réglages : measurement_temperature, microwave_frequency]
+- `TPD_TPR` — Désorption ou réduction programmée en température (acidité, réductibilité). [réglages : probe_gas, heating_rate, pretreatment]
+- `electrochemistry` — Mesures électrochimiques : voltampérométrie, charge-décharge galvanostatique, impédance, polarisation. [réglages : electrolyte, reference_electrode, counter_electrode, active_mass_loading, scan_rate, current_density, potential_window]
+- `catalytic_test` — Essai catalytique ou photocatalytique (conversion, sélectivité, dégradation, production). [réglages : catalyst_mass, reactant_concentration, reaction_volume, light_source, reaction_temperature, reaction_time, analysis_method]
+- `adsorption_test` — Essai d'adsorption en lot ou en colonne (capacité, cinétique, isotherme). [réglages : adsorbent_dose, initial_concentration, solution_volume, contact_time, solution_ph, temperature, agitation, analysis_method]
+- `biological_test` — Essai biologique (antibactérien, cytotoxicité, antioxydant, hémolyse). [réglages : organism_or_cell_line, concentration_range, incubation_conditions, assay_method, replicates]
+- `device_test` — Test d'un dispositif (cellule solaire J-V, LED, capteur, batterie complète, membrane). [réglages : device_architecture, illumination, active_area, measurement_conditions]
+- `mechanical_test` — Essai mécanique (traction, compression, dureté, nanoindentation). [réglages : specimen_geometry, loading_rate, standard]
+- `contact_angle` — Mesure d'angle de contact (mouillabilité). [réglages : probe_liquid, drop_volume]
+- `chromatography_ms` — Analyse de produits par chromatographie ou spectrométrie de masse (GC, HPLC, GC-MS, SEC). [réglages : column, detector, calibration]
+- `density_porosimetry` — Densité, porosimétrie au mercure ou pycnométrie. [réglages : method]
+- `calculation` — Calcul ou simulation (DFT, dynamique moléculaire, ajustement de modèle). [réglages : software, functional_or_model, basis_or_cutoff]
+
+## Réglages de mesure (`characterizations[].settings[].name`)
+
+- `radiation` — Rayonnement utilisé (Cu Kα, Co Kα, longueur d'onde).
+- `scan_range` — Plage de balayage (2θ, énergie, nombres d'onde).
+- `scan_step` — Pas ou vitesse de balayage.
+- `crystallite_size_method` — Méthode de calcul de la taille de cristallite (Scherrer avec K, Williamson-Hall, Rietveld).
+- `accelerating_voltage` — Tension d'accélération du microscope.
+- `particles_counted` — Nombre de particules mesurées pour une distribution de taille.
+- `sample_preparation` — Préparation de l'échantillon pour la mesure (dispersion, grille, métallisation, pastille KBr).
+- `afm_mode` — Mode de l'AFM (contact, tapping).
+- `xray_source` — Source de rayons X de l'XPS (Al Kα, Mg Kα, monochromatée).
+- `calibration_reference` — Référence d'étalonnage des énergies (C 1s à 284,8 eV…).
+- `adsorbate` — Gaz adsorbé (N2, Ar, CO2).
+- `measurement_temperature` — Température de mesure.
+- `degassing` — Conditions de dégazage avant mesure (température, durée, vide).
+- `analysis_model` — Modèle d'analyse (BET, BJH, NLDFT, t-plot, Langmuir).
+- `wavelength_range` — Plage de longueurs d'onde.
+- `band_gap_method` — Méthode de détermination de la bande interdite (Tauc, Kubelka-Munk, type de transition).
+- `excitation_wavelength` — Longueur d'onde d'excitation.
+- `laser_power` — Puissance du laser.
+- `wavenumber_range` — Plage de nombres d'onde.
+- `nucleus` — Noyau observé (1H, 13C, 29Si…).
+- `spectrometer_frequency` — Fréquence du spectromètre.
+- `solvent_or_rotor` — Solvant deutéré ou conditions de rotation à l'angle magique.
+- `atmosphere` — Atmosphère de la mesure.
+- `heating_rate` — Vitesse de chauffe de la mesure.
+- `temperature_range` — Plage de température de la mesure.
+- `digestion` — Mise en solution de l'échantillon avant analyse.
+- `calibration` — Étalonnage de la mesure (étalons, droite d'étalonnage).
+- `dispersant` — Milieu de dispersion de la mesure.
+- `concentration` — Concentration de l'échantillon mesuré.
+- `field_range` — Plage de champ magnétique.
+- `edge` — Seuil d'absorption mesuré.
+- `beamline` — Ligne de lumière ou source.
+- `fitting` — Procédure d'ajustement des spectres.
+- `microwave_frequency` — Fréquence micro-onde.
+- `probe_gas` — Gaz sonde (NH3, H2, CO2).
+- `pretreatment` — Prétraitement de l'échantillon avant mesure.
+- `electrolyte` — Électrolyte (nature et concentration).
+- `reference_electrode` — Électrode de référence.
+- `counter_electrode` — Contre-électrode.
+- `active_mass_loading` — Masse de matière active ou charge surfacique de l'électrode.
+- `scan_rate` — Vitesse de balayage en potentiel.
+- `current_density` — Densité de courant de charge-décharge.
+- `potential_window` — Fenêtre de potentiel.
+- `catalyst_mass` — Masse ou dose de catalyseur.
+- `reactant_concentration` — Concentration du substrat ou du réactif.
+- `reaction_volume` — Volume de réaction.
+- `light_source` — Source lumineuse (type, puissance, filtre, intensité).
+- `reaction_temperature` — Température de l'essai.
+- `reaction_time` — Durée de l'essai.
+- `analysis_method` — Méthode de dosage ou d'analyse des produits.
+- `adsorbent_dose` — Dose ou masse d'adsorbant.
+- `initial_concentration` — Concentration initiale de l'adsorbat.
+- `solution_volume` — Volume de solution.
+- `contact_time` — Temps de contact.
+- `solution_ph` — pH de la solution d'essai.
+- `temperature` — Température de l'essai.
+- `agitation` — Agitation pendant l'essai.
+- `organism_or_cell_line` — Organisme ou lignée cellulaire testés.
+- `concentration_range` — Plage de concentrations testées.
+- `incubation_conditions` — Conditions d'incubation (température, durée, milieu).
+- `assay_method` — Méthode d'essai (diffusion en gélose, CMI, MTT…).
+- `replicates` — Nombre de répétitions de l'essai.
+- `device_architecture` — Architecture du dispositif testé.
+- `illumination` — Éclairement de test (AM1.5G, intensité).
+- `active_area` — Surface active.
+- `measurement_conditions` — Autres conditions de mesure du dispositif (balayage, atmosphère, température).
+- `specimen_geometry` — Géométrie de l'éprouvette.
+- `loading_rate` — Vitesse de chargement.
+- `standard` — Norme suivie.
+- `probe_liquid` — Liquide sonde.
+- `drop_volume` — Volume de goutte.
+- `column` — Colonne chromatographique.
+- `detector` — Détecteur.
+- `method` — Méthode de mesure.
+- `software` — Logiciel de calcul.
+- `functional_or_model` — Fonctionnelle ou modèle de calcul.
+- `basis_or_cutoff` — Base ou énergie de coupure.
+
+## Propriétés (`outcomes[].property`, suffixe de précision permis : `lattice_parameter_a`) et techniques qui les mesurent
+
+- `phase` — Phase cristalline identifiée. [XRD, SAED, Raman]
+- `crystallinity` — Degré de cristallinité. [XRD]
+- `crystallite_size` — Taille de cristallite (domaine cohérent). [XRD]
+- `lattice_parameter` — Paramètre de maille (a, b, c, volume de maille ; préciser l'axe dans le nom : lattice_parameter_a). [XRD, SAED, TEM]
+- `d_spacing` — Distance interréticulaire. [XRD, TEM, SAED]
+- `xrd_peak_position` — Position d'un pic de diffraction. [XRD]
+- `xrd_peak_intensity` — Intensité ou rapport d'intensités de pics de diffraction. [XRD]
+- `FWHM` — Largeur à mi-hauteur d'un pic. [XRD, PL, Raman]
+- `microstrain_dislocation` — Microdéformation ou densité de dislocations. [XRD]
+- `rietveld_fit` — Résultat d'affinement Rietveld (facteurs d'accord, fractions de phases). [XRD]
+- `BET_surface_area` — Surface spécifique (BET ou Langmuir). [BET]
+- `pore_volume_total` — Volume poreux total. [BET, density_porosimetry]
+- `micropore_volume` — Volume microporeux. [BET]
+- `mesopore_volume` — Volume mésoporeux. [BET]
+- `micropore_surface_area` — Surface microporeuse. [BET]
+- `external_surface_area` — Surface externe. [BET]
+- `pore_diameter` — Diamètre ou taille de pores. [BET, density_porosimetry]
+- `porosity` — Porosité. [BET, density_porosimetry]
+- `particle_size` — Taille de particule ou de grain observée. [SEM, TEM, AFM, XRD]
+- `size_dispersity` — Dispersion de taille (écart-type, PDI). [SEM, TEM, AFM, DLS_zeta]
+- `thickness_layers` — Épaisseur ou nombre de couches. [SEM, TEM, AFM, Raman]
+- `morphology` — Morphologie observée (forme, texture). [SEM, TEM, AFM]
+- `roughness` — Rugosité de surface. [AFM]
+- `hydrodynamic_size` — Taille hydrodynamique en suspension. [DLS_zeta]
+- `zeta_potential` — Potentiel zêta. [DLS_zeta]
+- `point_of_zero_charge` — pH de charge nulle. [DLS_zeta, adsorption_test]
+- `elemental_composition` — Composition élémentaire ou teneur en un élément. [EDS, XPS, elemental_analysis]
+- `xps_binding_energy` — Énergie de liaison XPS. [XPS]
+- `ftir_band` — Bande infrarouge. [FTIR]
+- `raman_band` — Bande Raman. [Raman]
+- `raman_ID_IG` — Rapport d'intensité D/G (carbones). [Raman]
+- `nmr_signal` — Signal RMN (déplacement chimique, aire). [NMR]
+- `band_gap` — Bande interdite optique. [UV_vis]
+- `absorption_peak` — Maximum ou bord d'absorption. [UV_vis]
+- `transmittance_reflectance` — Transmittance ou réflectance. [UV_vis]
+- `PL_emission_peak` — Pic d'émission de photoluminescence. [PL]
+- `PL_lifetime` — Durée de vie de photoluminescence. [PL]
+- `quantum_yield` — Rendement quantique de photoluminescence. [PL]
+- `refractive_index` — Indice de réfraction. [UV_vis]
+- `decomposition_temperature` — Température de décomposition ou de stabilité thermique. [TGA]
+- `mass_loss_residue` — Perte de masse ou résidu en analyse thermique. [TGA]
+- `melting_glass_transition` — Température de fusion ou de transition vitreuse. [TGA]
+- `conductivity` — Conductivité électrique ou ionique. [electrochemistry, device_test]
+- `resistivity` — Résistivité ou résistance de couche. [electrochemistry, device_test]
+- `impedance_resistance` — Résistance tirée d'une impédance (Rs, Rct). [electrochemistry]
+- `carrier_transport` — Transport de porteurs (mobilité, concentration, type, travail de sortie). [electrochemistry, device_test]
+- `dielectric` — Permittivité ou pertes diélectriques. [electrochemistry, device_test]
+- `specific_capacitance` — Capacité spécifique. [electrochemistry]
+- `specific_capacity` — Capacité spécifique d'une électrode de batterie. [electrochemistry]
+- `coulombic_efficiency` — Efficacité coulombique. [electrochemistry]
+- `retention_stability` — Rétention de capacité, d'activité ou de performance après cycles ou dans le temps. [electrochemistry, catalytic_test, adsorption_test, device_test]
+- `overpotential_tafel` — Surtension ou pente de Tafel. [electrochemistry]
+- `voltage_window_potential` — Potentiel caractéristique (plateau, pic, fenêtre). [electrochemistry]
+- `PCE` — Rendement de conversion d'un dispositif photovoltaïque. [device_test]
+- `Voc` — Tension en circuit ouvert. [device_test]
+- `Jsc` — Densité de courant de court-circuit. [device_test]
+- `fill_factor` — Facteur de forme d'une cellule. [device_test]
+- `IPCE_EQE` — Rendement quantique externe ou IPCE. [device_test]
+- `catalytic_performance` — Performance catalytique (conversion, sélectivité, vitesse, TOF, dégradation). [catalytic_test]
+- `kinetics_fit` — Paramètre d'un modèle cinétique ajusté (constante de vitesse, ordre). [catalytic_test, adsorption_test]
+- `adsorption_capacity` — Capacité d'adsorption. [adsorption_test]
+- `adsorption_isotherm_fit` — Paramètre d'un modèle d'isotherme ajusté (Langmuir, Freundlich). [adsorption_test]
+- `activation_energy` — Énergie d'activation. [catalytic_test, adsorption_test, electrochemistry, TGA]
+- `acidity` — Acidité de surface (quantité, force des sites). [TPD_TPR, FTIR]
+- `magnetic` — Propriété magnétique (aimantation, coercivité, température de Curie). [magnetometry]
+- `antibacterial` — Activité antibactérienne ou antifongique. [biological_test]
+- `biological` — Autre réponse biologique (cytotoxicité, viabilité, activité antioxydante). [biological_test]
+- `hardness` — Dureté. [mechanical_test]
+- `elastic_modulus` — Module d'élasticité. [mechanical_test]
+- `strength` — Résistance mécanique. [mechanical_test]
+- `mechanical` — Autre propriété mécanique. [mechanical_test]
+- `density` — Masse volumique ou densité relative. [density_porosimetry]
+- `contact_angle` — Angle de contact. [contact_angle]
+- `molecular_weight` — Masse molaire d'un polymère. [chromatography_ms]
+- `solution_concentration` — Concentration mesurée en solution (relargage, résidu, surnageant). [elemental_analysis, chromatography_ms, UV_vis]
+- `purity` — Pureté ou présence d'impuretés. [XRD, elemental_analysis, chromatography_ms]
+- `calculated_value` — Valeur calculée (énergie, bande, barrière) dans une voie de calcul. [calculation]
+- `yield` — Rendement de la synthèse ou masse de produit. [aucune mesure]
+- `visual_appearance` — Couleur ou aspect du produit. [aucune mesure]
+- `product_identity` — Nature du produit obtenu ou réussite de la synthèse, sans mesure chiffrée. [aucune mesure]
+- `statistic` — Statistique de l'article (R², p, écart-type, ANOVA) se rapportant à un résultat. [aucune mesure]
+- `other` — Propriété qui n'entre dans aucun nom de la liste ; à remplacer par une propriété ajoutée avec définition si elle revient. [aucune mesure]

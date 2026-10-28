@@ -7,12 +7,14 @@ import unicodedata
 from datetime import datetime, timezone
 from pathlib import Path
 
+import os
 ROOT = Path(__file__).resolve().parent
-DB_PATH = ROOT / "synthese.db"
+# architecture v2 : base et dossier d'extractions séparés (SYNTHESE_DB=synthese_v2.db SYNTHESE_EXTRACT_DIR=extractions_v2)
+DB_PATH = ROOT / os.environ.get("SYNTHESE_DB", "synthese.db")
 XML_DIR = ROOT / "corpus" / "xml"
 TEXT_DIR = ROOT / "corpus" / "text"
 PDF_DIR = ROOT / "corpus" / "pdf"
-EXTRACT_DIR = ROOT / "extractions"
+EXTRACT_DIR = ROOT / os.environ.get("SYNTHESE_EXTRACT_DIR", "extractions")
 AUDIT_DIR = ROOT / "audits"
 PALIER_SIZE = 50
 
@@ -48,7 +50,9 @@ def connect():
             ("parameters", "from_figure", "TEXT"), ("outcomes", "from_figure", "TEXT"),
             ("route_variations", "from_figure", "TEXT"),
             ("papers", "si_status", "TEXT"), ("papers", "si_files", "INTEGER"),
-            ("papers", "critic_status", "TEXT NOT NULL DEFAULT 'none'")):
+            ("papers", "critic_status", "TEXT NOT NULL DEFAULT 'none'"),
+            ("characterizations", "char_key", "TEXT"), ("outcomes", "measured_by", "INTEGER"),
+            ("outcomes", "measured_status", "TEXT")):
         if column not in [r[1] for r in con.execute(f"PRAGMA table_info({table})")]:
             con.execute(f"ALTER TABLE {table} ADD COLUMN {column} {decl}")
     if "param_score" not in [r[1] for r in con.execute("PRAGMA table_info(papers)")]:

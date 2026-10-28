@@ -69,8 +69,9 @@ def match_values(A, B, reagent=False, ctx=None):
     return found, conflicts
 
 
-def compare(pmcid):
-    O = json.load(open(f"extractions/{pmcid}.json")); B = json.load(open(f"audits/verification/aveugle/{pmcid}.json"))
+def compare(pmcid, O=None, B=None):
+    """O = extraction de référence, B = extraction comparée (par défaut : base et ré-extraction à l'aveugle)."""
+    O = O or json.load(open(f"extractions/{pmcid}.json")); B = B or json.load(open(f"audits/verification/aveugle/{pmcid}.json"))
     ro, rb = O.get("routes") or [], B.get("routes") or []
     def key(r):
         return toks(r.get("label"), (r.get("material") or {}).get("name"), (r.get("material") or {}).get("formula"))
