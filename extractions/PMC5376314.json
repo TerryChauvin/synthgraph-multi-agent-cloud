@@ -98,7 +98,9 @@
      ],
      "not_stated": [
       "temperature",
-      "stirring_speed"
+      "stirring_speed",
+      "ph",
+      "addition_mode"
      ]
     },
     {
@@ -141,7 +143,8 @@
      "not_stated": [
       "temperature",
       "pulse_mode",
-      "probe_immersion_depth"
+      "probe_immersion_depth",
+      "power"
      ]
     },
     {
@@ -180,7 +183,10 @@
        "quote": "washed twice with water and twice with absolute ethanol"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
     },
     {
      "order": 5,
@@ -197,6 +203,11 @@
       {
        "name": "atmosphere",
        "value_text": "air",
+       "quote": "air-dried for 24 h"
+      },
+      {
+       "name": "drying_mode",
+       "value_text": "air-dried",
        "quote": "air-dried for 24 h"
       }
      ],
@@ -300,6 +311,9 @@
     "drying_temperature",
     "water_purity",
     "stirring_speed"
+   ],
+   "not_stated": [
+    "repetitions"
    ]
   },
   {
@@ -603,6 +617,15 @@
      "value_text": "common average of samples Ni5 and Ni6 together (not a value specific to this sample): 64.4 ± 0.3%",
      "quote": "while for samples Ni5 and Ni6 the results (64.4 ± 0.3%) were even closer to the calculated value"
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "AAS",
+     "result": "64.4 ± 0.3% Ni, one result given for samples Ni5 and Ni6 together (calculated for NiS: 64.7% Ni)",
+     "instrument": "Varian SpectrAA-10 flame atomic spectrometer equipped with a deuterium background corrector",
+     "conditions": "samples heated in PTFE vessels in a CEM MDS 2000 microwave oven with concentrated HNO3, cooled to room temperature and diluted to a total volume of 50 mL",
+     "quote": "while for samples Ni5 and Ni6 the results (64.4 ± 0.3%) were even closer to the calculated value"
+    }
    ]
   },
   {
@@ -646,6 +669,15 @@
     {
      "property": "Ni_content_AAS",
      "value_text": "common average of samples Ni5 and Ni6 together (not a value specific to this sample): 64.4 ± 0.3%",
+     "quote": "while for samples Ni5 and Ni6 the results (64.4 ± 0.3%) were even closer to the calculated value"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "AAS",
+     "result": "64.4 ± 0.3% Ni, one result given for samples Ni5 and Ni6 together (calculated for NiS: 64.7% Ni)",
+     "instrument": "Varian SpectrAA-10 flame atomic spectrometer equipped with a deuterium background corrector",
+     "conditions": "samples heated in PTFE vessels in a CEM MDS 2000 microwave oven with concentrated HNO3, cooled to room temperature and diluted to a total volume of 50 mL",
      "quote": "while for samples Ni5 and Ni6 the results (64.4 ± 0.3%) were even closer to the calculated value"
     }
    ]
@@ -900,6 +932,15 @@
      "unit": "%",
      "quote": "The AAS analysis showed that the sample Ni11 contained 58.6% Ni, which is higher than the calculated value for Ni3S4 (57.9%), confirming the results of XRD measurements."
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "AAS",
+     "result": "58.6% Ni in sample Ni11 (calculated for Ni3S4: 57.9% Ni)",
+     "instrument": "Varian SpectrAA-10 flame atomic spectrometer equipped with a deuterium background corrector",
+     "conditions": "samples heated in PTFE vessels in a CEM MDS 2000 microwave oven with concentrated HNO3, cooled to room temperature and diluted to a total volume of 50 mL",
+     "quote": "The AAS analysis showed that the sample Ni11 contained 58.6% Ni, which is higher than the calculated value for Ni3S4 (57.9%)"
+    }
    ]
   },
   {
@@ -989,7 +1030,13 @@
        "quote": "Co1 | C2H5NS | 1:1 | - | 60 | 70 | CoS1.097 | 26 | 32.1"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "ph",
+      "addition_mode"
+     ]
     },
     {
      "order": 2,
@@ -1010,7 +1057,13 @@
        "quote": "sonicated the solution for 1 h at 70% amplitude"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "power",
+      "pulse_mode",
+      "probe_immersion_depth"
+     ]
     },
     {
      "order": 3,
@@ -1047,7 +1100,10 @@
        "quote": "The black precipitate obtained after 1 h of sonication was handled as described above."
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
     },
     {
      "order": 5,
@@ -1088,14 +1144,35 @@
        "value_num": 2,
        "unit": "h",
        "quote": "nanocrystalline products were obtained by heating the precursors obtained by the sonochemical reaction for 2 h at 500 °C"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "nitrogen",
+       "quote": "We heated the as-obtained amorphous products using a Mettler TGA/SDTA 851e system and Al2O3 crucibles in the temperature range 30−500 °C in a nitrogen stream of 100 mL/min with a heating rate of 10 K/min."
+      },
+      {
+       "name": "gas_flow",
+       "value_num": 100,
+       "unit": "mL/min",
+       "quote": "We heated the as-obtained amorphous products using a Mettler TGA/SDTA 851e system and Al2O3 crucibles in the temperature range 30−500 °C in a nitrogen stream of 100 mL/min with a heating rate of 10 K/min."
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 10,
+       "unit": "K/min",
+       "quote": "We heated the as-obtained amorphous products using a Mettler TGA/SDTA 851e system and Al2O3 crucibles in the temperature range 30−500 °C in a nitrogen stream of 100 mL/min with a heating rate of 10 K/min."
       }
      ],
-     "equipment": [],
+     "equipment": [
+      {
+       "type": "thermobalance (TGA/SDTA)",
+       "detail": "Mettler TGA/SDTA 851e system, Al2O3 crucibles",
+       "quote": "We heated the as-obtained amorphous products using a Mettler TGA/SDTA 851e system and Al2O3 crucibles in the temperature range 30−500 °C in a nitrogen stream of 100 mL/min with a heating rate of 10 K/min."
+      }
+     ],
      "not_stated": [
-      "atmosphere",
-      "heating_rate",
-      "gas_flow",
-      "cooling_rate"
+      "cooling_rate",
+      "vessel"
      ]
     }
    ],
@@ -1139,6 +1216,9 @@
     "sonication_temperature",
     "furnace_or_tga_used_for_the_2_h_heating",
     "water_purity"
+   ],
+   "not_stated": [
+    "repetitions"
    ]
   },
   {
@@ -1577,6 +1657,22 @@
   {
    "where": "Section Experimental, fournisseurs",
    "issue": "La phrase « Both nickel and copper precursors, Ni(CH3COO)2 ∙ 4H2O (≥ 99.0%), Co(CH3COO)2 ∙ 2H2O (≥ 99.0%), were obtained from Sigma-Aldrich » parle de cuivre alors que les deux précurseurs cités sont ceux du nickel et du cobalt (probablement une coquille). Pureté et fournisseur attribués aux acétates de nickel et de cobalt."
+  },
+  {
+   "where": "Co1 étape 6 (complément)",
+   "issue": "Complément : l'Experimental, dans le paragraphe du cobalt, dit « We heated the as-obtained amorphous products using a Mettler TGA/SDTA 851e system ... nitrogen stream of 100 mL/min ... heating rate of 10 K/min ». Cette phrase décrit le chauffage des produits amorphes du cobalt ; atmosphère, débit, vitesse de chauffe et appareil sont donc rattachés à l'étape 6 (cases non citées retirées). Le texte ne dit pas explicitement que le palier de 2 h à 500 °C (Résultats) a été fait dans cette thermobalance (plage donnée : 30−500 °C, sans palier) : lecture retenue plausible mais non écrite ; la remarque de la première relecture sur ce point reste valable pour la durée."
+  },
+  {
+   "where": "Co1 étapes 1-2 (renvoi « same general procedure »)",
+   "issue": "Le récipient (bécher à fond plat de 100 mL) et le sonicateur (VCX 600, 20 kHz) sont décrits pour le nickel seulement ; pour le cobalt l'article dit « The same general procedure was used ». Équipements non recopiés dans Co1, ni la fréquence : ajout de cases non citées seulement pour température, puissance, pulsation, immersion et agitation."
+  },
+  {
+   "where": "EDX (Ni3, Co2)",
+   "issue": "Aucune condition d'acquisition de l'EDX (détecteur, tension, nombre de zones) n'est donnée ; l'article parle de « TEM including EDX analysis » et le MET est un JEOL 2100 à 200 kV, mais le texte ne dit pas que l'EDX est celui de ce MET. Instrument et conditions laissés vides."
+  },
+  {
+   "where": "AAS Ni5 et Ni6",
+   "issue": "Un seul résultat commun (64,4 ± 0,3 %) est donné pour Ni5 et Ni6 ; il est reporté tel quel dans les deux branches, comme pour Ni2-Ni4."
   }
  ]
 }
