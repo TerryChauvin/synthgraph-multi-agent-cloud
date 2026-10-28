@@ -104,7 +104,8 @@
    "yield": null,
    "not_stated": [
     "yield",
-    "gamma_irradiation_dose"
+    "gamma_irradiation_dose",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -232,6 +233,11 @@
        "value_num": 40,
        "unit": "min",
        "quote": "TEOS was gradually added and mixed for 40 min at 40 °C."
+      },
+      {
+       "name": "addition_mode",
+       "value_text": "gradually",
+       "quote": "TEOS was gradually added and mixed for 40 min at 40 °C."
       }
      ],
      "equipment": [],
@@ -257,12 +263,18 @@
        "value_num": 20,
        "unit": "h",
        "quote": "Then, the mixtures between 50 mL of 0.1 M FeCl3 (Si 35 mmol: Fe 5 mmol) [,] and 0.5 g of γ-CS was added slowly and stirred at 40 °C for 20 h."
+      },
+      {
+       "name": "addition_mode",
+       "value_text": "slowly",
+       "quote": "Then, the mixtures between 50 mL of 0.1 M FeCl3 (Si 35 mmol: Fe 5 mmol) [,] and 0.5 g of γ-CS was added slowly and stirred at 40 °C for 20 h."
       }
      ],
      "equipment": [],
      "not_stated": [
       "addition_rate",
-      "stirring_speed"
+      "stirring_speed",
+      "addition_order"
      ]
     },
     {
@@ -295,7 +307,9 @@
       "heating_rate",
       "cooling_rate",
       "fill_fraction",
-      "pressure"
+      "pressure",
+      "autoclave_volume",
+      "cooling_mode"
      ]
     },
     {
@@ -420,14 +434,14 @@
      "technique": "HRTEM / HAADF-STEM",
      "result": "honeycomb-shaped network of SBA-15; pore size about 9.1 nm",
      "instrument": "JEOL JEM-ARM200F microscope with HAADF detector",
-     "conditions": null,
+     "conditions": "pore sizes estimated from numerous HRTEM images",
      "quote": "It supports the honeycomb-shaped network of SBA-15"
     },
     {
      "technique": "EDS",
      "result": "Fe, Si, O, C and N detected, uniformly distributed in the SBA-15 channels",
      "instrument": "energy-dispersive spectrometer of the JEOL JEM-ARM200F",
-     "conditions": null,
+     "conditions": "EDS mapping",
      "quote": "Fe, Si, O, C, and N elements were identified using EDS mapping of Fe-γ–CS–SBA-15 (Fig. 3(a)) and Fe-SBA-15 (Fig. 3(b))."
     },
     {
@@ -448,7 +462,7 @@
      "technique": "wide-angle XRD",
      "result": "one broad peak between 2θ 20–30°, no γ-CS or Fe diffraction peaks",
      "instrument": "Bruker D8 Advance A25",
-     "conditions": null,
+     "conditions": "Cu K radiation: 0.154184 nm; one-dimensional multistrip detector (Lynxeye, 192 channels on 2.95°)",
      "quote": "Fig. 6 displays the wide angle XRD patterns of Fe-SBA-15 and Fe-γ–CS–SBA-15"
     },
     {
@@ -492,6 +506,13 @@
      "instrument": "SP-UV200 UV/VIS Spectrophotometer",
      "conditions": "adsorbent dosage 0.05 g, [MB] 20–300 mg/L, time 30 min, pH 9 (légende de la Fig. 13)",
      "quote": "Fig. 13 Adsorption isotherms of MB on Fe-γ–CS–SBA-15 (adsorbent dosage 0.05 g, [MB] 20–300 mg/L, Time 30 min, pH 9)."
+    },
+    {
+     "technique": "UV-Vis (MB adsorption: pH, dose and contact-time series)",
+     "result": "adsorption nearly constant over pH 5–11, best range pH 8–11, drop at pH 12 (Fig. 11); 0.05 g retained as adsorbent dose (Fig. 12); 96% removal reached at 30 min (Fig. 14a)",
+     "instrument": "SP-UV200 UV/VIS Spectrophotometer",
+     "conditions": "664 nm; Fig. 11 (pH series): Fe-γ–CS–SBA-15 0.05 g, [MB] 100 mg/L, Time 1 h; Fig. 12 (dose series): [MB] 100 mg/L, pH 9, Time 30 min; Fig. 14 (time series): 0.05 g, [MB] 100 mg/L, pH 9; best conditions at room temperature",
+     "quote": "The pH 8 to pH 11 range was shown to be the best range for eliminating methylene blue."
     }
    ],
    "outcomes": [
@@ -742,6 +763,48 @@
      "unit": "%",
      "from_figure": "Fig. 14a",
      "quote": "Fig. 14 (a) Effect of contact time on the adsorption of methylene blue and (b) The pseudo-second-order adsorption kinetic equation (Fe-γ–CS–SBA-15 0.05 g, [MB] 100 mg/L, pH 9)."
+    },
+    {
+     "property": "XPS_Si2p_binding_energy",
+     "value_num": 103.5,
+     "unit": "eV",
+     "quote": "A prominent signal at 103.5 eV, which is typical of SiO2-based materials, can be seen in the Si2p spectrum."
+    },
+    {
+     "property": "XPS_O1s_binding_energy",
+     "value_num": 533.0,
+     "unit": "eV",
+     "quote": "The lattice oxygen of silica is responsible for the first peak with a higher binding energy of 533.0 eV."
+    },
+    {
+     "property": "XPS_N1s_binding_energy_NH2_O",
+     "value_num": 399.5,
+     "unit": "eV",
+     "quote": "the N 1 s band at 399.5 eV"
+    },
+    {
+     "property": "XPS_N1s_binding_energy_NH2_Fe",
+     "value_num": 401.56,
+     "unit": "eV",
+     "quote": "this band's binding energies of 401.56 eV were associated with chelation between amino groups and iron ions (NH2–Fe)"
+    },
+    {
+     "property": "XPS_C1s_binding_energy_aliphatic_CC_CH",
+     "value_num": 284.9,
+     "unit": "eV",
+     "quote": "aliphatic (C–C, C–H) groups (284.9 eV (0.1))"
+    },
+    {
+     "property": "XPS_C1s_binding_energy_CH_CN",
+     "value_num": 286.5,
+     "unit": "eV",
+     "quote": "groups (286.5 eV (±0.1))"
+    },
+    {
+     "property": "XPS_C1s_binding_energy_C_O",
+     "value_num": 288.1,
+     "unit": "eV",
+     "quote": "groups (288.1 eV (±0.1))"
     }
    ],
    "missing_fields": [
@@ -776,7 +839,7 @@
      "technique": "EDS",
      "result": "Si 39.57, O 58.16, Fe 2.27 atomic %",
      "instrument": null,
-     "conditions": null,
+     "conditions": "EDS mapping",
      "quote": "Fe, Si, O, C, and N elements were identified using EDS mapping of Fe-γ–CS–SBA-15 (Fig. 3(a)) and Fe-SBA-15 (Fig. 3(b))."
     },
     {
@@ -797,7 +860,7 @@
      "technique": "wide-angle XRD",
      "result": "one broad peak between 2θ 20–30°, typical of mesoporous SBA-15; no Fe diffraction peaks",
      "instrument": "Bruker D8 Advance A25",
-     "conditions": null,
+     "conditions": "Cu K radiation: 0.154184 nm; one-dimensional multistrip detector (Lynxeye, 192 channels on 2.95°)",
      "quote": "Fig. 6 displays the wide angle XRD patterns of Fe-SBA-15 and Fe-γ–CS–SBA-15, which are typical of mesoporous SBA-15 and have just one broad peak between 2θ values of 20–30°"
     },
     {
@@ -811,7 +874,7 @@
      "technique": "HRTEM",
      "result": "pore size 7.2 nm",
      "instrument": "JEOL JEM-ARM200F microscope with HAADF detector",
-     "conditions": null,
+     "conditions": "pore sizes estimated from numerous HRTEM images",
      "quote": "Pore sizes of 7.2 and 9.1 nm for the mesoporous silicas Fe-SBA-15 and Fe-γ–CS–SBA-15, respectively, were estimated from numerous HRTEM images."
     },
     {
@@ -820,6 +883,13 @@
      "instrument": "Agilent 7500ce (USA)",
      "conditions": null,
      "quote": "Fe-SBA-15 and Fe-γ–CS–SBA-15 had Fe loading efficiencies of 11.28 mg/kg and 21.68 mg/kg, respectively."
+    },
+    {
+     "technique": "UV-Vis (MB adsorption, adsorbent-dose series)",
+     "result": "MB removal at 0.02, 0.05, 0.1 and 0.15 g read on Fig. 12 (see outcomes)",
+     "instrument": "SP-UV200 UV/VIS Spectrophotometer",
+     "conditions": "664 nm; Fig. 12: [MB] 100 mg/L, pH 9, Time 30 min",
+     "quote": "Fig. 12 Effect of adsorbent dosage on adsorption of methylene blue ([MB] 100 mg/L, pH 9, Time 30 min)"
     }
    ],
    "outcomes": [
@@ -1096,6 +1166,10 @@
   {
    "where": "Fe-SBA-15 FT-IR",
    "issue": "Le texte attribue 798 cm−1 aux quatre spectres de la Fig. 7 ; il ne dit pas pour quels spectres valent 1062, 557 et 1632 cm−1 (« the peaks »). La bande à 1541 cm−1 n'est mentionnée que pour Fe-γ–CS–SBA-15. Lecture graphique de la droite t/q de la Fig. 14b non faite (facultative)."
+  },
+  {
+   "where": "passe de complément, points écartés",
+   "issue": "Conditions de mesure absentes de l'article pour XPS (source, instrument), ICP-MS (mise en solution), FT-IR (préparation), HRTEM (tension d'accélération, nombre de particules comptées), EDS (tension) et BET (dégazage) : rien n'est ajouté. Les valeurs de XPS ajoutées proviennent du texte, la mention « (0.1) » au lieu de « ±0.1 » pour C1s 284.9 eV est recopiée telle quelle."
   }
  ]
 }
