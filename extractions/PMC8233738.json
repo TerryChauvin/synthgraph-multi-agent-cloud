@@ -477,7 +477,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -646,7 +647,7 @@
      "technique": "ICP-AES",
      "result": "silica and alumina concentrations of the supernatants (mg/L) used for the conversion rates",
      "instrument": "PE Avio 500 type inductively coupled plasma atomic emission spectroscope",
-     "conditions": null,
+     "conditions": "silica and alumina concentrations in the CFA-derived supernatants and Pb(II) solutions",
      "quote": "The concentrations of silica and alumina in the CFA-derived supernatants and of Pb(II) solutions were detected by the ICP technique using a PE Avio 500 type inductively coupled plasma atomic emission spectroscope (ICP-AES)."
     },
     {
@@ -667,8 +668,15 @@
      "technique": "XRD (raw ash, Fig. 1)",
      "result": "CFA1 crystalline phases: quartz and mullite (major); hematite and berlinite (minor)",
      "instrument": "Bruker D8 Advance XRD diffractometer",
-     "conditions": null,
+     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "The major crystalline phases for CFA1–3, i.e., the PC ashes, were quartz and mullite, together with some minor phases such as hematite and berlinite for 1 and 3, and only hematite for 2."
+    },
+    {
+     "technique": "SEM (raw CFA1–4 and fusion residues, Fig. 3)",
+     "result": "spherical particles for CFA1–3 (PC boiler ashes), particle size ca. 1 to more than 10 μm; irregular bulks after alkaline fusion; few spherical particles for CFA4 (CFB ash)",
+     "instrument": "U8010 SEM",
+     "conditions": "1000× and 5000× magnification (Fig. 3 caption); residues after fusion at 5000×",
+     "quote": "Spherical particles can be observed for CFA1–3, i.e., PC boiler ashes. The particle size ranged from ca. 1 to more than 10 μm"
     }
    ],
    "outcomes": [
@@ -695,6 +703,72 @@
      "value_num": 1.32,
      "quote": "CFA1 | Hydro | 100 | 3 | 0.52 | 4 | 9303 | 347 | 12.7 | 1.32",
      "unit": "%"
+    },
+    {
+     "property": "ash_SiO2_content",
+     "value_num": 62.7,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "ash_Al2O3_content",
+     "value_num": 19.8,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "ash_Fe2O3_content",
+     "value_num": 3.8,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "ash_CaO_content",
+     "value_num": 6.4,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "ash_K2O_content",
+     "value_num": 2.2,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "ash_MgO_content",
+     "value_num": 1.0,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "ash_quartz_content",
+     "value_num": 38.3,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "ash_mullite_content",
+     "value_num": 19.6,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "ash_glass_SiO2_content",
+     "value_num": 18.9,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "ash_glass_Al2O3_content",
+     "value_num": 5.7,
+     "unit": "wt.%",
+     "quote": "CFA1 | 62.7 | 19.8 | 3.8 | 6.4 | 2.2 | 1.0 | 38.3 | 19.6 | 18.9 | 5.7"
+    },
+    {
+     "property": "cfa_particle_size_SEM_CFA1-3",
+     "value_text": "ca. 1 to more than 10 μm",
+     "unit": "μm",
+     "quote": "The particle size ranged from ca. 1 to more than 10 μm"
     }
    ],
    "missing_fields": [
@@ -736,8 +810,8 @@
     {
      "technique": "XRD (residue)",
      "result": "after 200 °C treatment (about 1.55 MPa) many original peaks disappeared and zeolite peaks appeared: analcime, sodalite, cancrinite, zeolite P and zeolite I",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Bruker D8 Advance XRD diffractometer",
+     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "When the temperature increased to 200 °C (corresponding pressure of ca. 1.55 MPa), many original diffraction peaks disappeared along with the appearance of several additional ones ascribed to zeolites. They were analcime, sodalite, cancrinite, zeolite P, and zeolite I."
     }
    ],
@@ -821,7 +895,7 @@
      "technique": "XRD (raw ash, Fig. 1)",
      "result": "CFA2 crystalline phases: quartz and mullite (major); hematite (minor)",
      "instrument": "Bruker D8 Advance XRD diffractometer",
-     "conditions": null,
+     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "The major crystalline phases for CFA1–3, i.e., the PC ashes, were quartz and mullite, together with some minor phases such as hematite and berlinite for 1 and 3, and only hematite for 2."
     }
    ],
@@ -849,6 +923,66 @@
      "value_num": 1.24,
      "quote": "CFA2 | Hydro | 100 | 3 | 0.52 | 4 | 4351 | 341 | 5.9 | 1.24",
      "unit": "%"
+    },
+    {
+     "property": "ash_SiO2_content",
+     "value_num": 63.2,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "property": "ash_Al2O3_content",
+     "value_num": 20.9,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "property": "ash_Fe2O3_content",
+     "value_num": 4.4,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "property": "ash_CaO_content",
+     "value_num": 5.7,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "property": "ash_K2O_content",
+     "value_num": 2.5,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "property": "ash_MgO_content",
+     "value_num": 1.1,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "property": "ash_quartz_content",
+     "value_num": 44.7,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "property": "ash_mullite_content",
+     "value_num": 21.7,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "property": "ash_glass_SiO2_content",
+     "value_num": 12.4,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
+    },
+    {
+     "property": "ash_glass_Al2O3_content",
+     "value_num": 5.3,
+     "unit": "wt.%",
+     "quote": "CFA2 | 63.2 | 20.9 | 4.4 | 5.7 | 2.5 | 1.1 | 44.7 | 21.7 | 12.4 | 5.3"
     }
    ]
   },
@@ -963,7 +1097,7 @@
      "technique": "XRD (raw ash, Fig. 1)",
      "result": "CFA3 crystalline phases: quartz and mullite (major); hematite and berlinite (minor)",
      "instrument": "Bruker D8 Advance XRD diffractometer",
-     "conditions": null,
+     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "The major crystalline phases for CFA1–3, i.e., the PC ashes, were quartz and mullite, together with some minor phases such as hematite and berlinite for 1 and 3, and only hematite for 2."
     }
    ],
@@ -991,6 +1125,66 @@
      "value_num": 0.97,
      "quote": "CFA3 | Hydro | 100 | 3 | 0.52 | 4 | 5700 | 291 | 7.6 | 0.97",
      "unit": "%"
+    },
+    {
+     "property": "ash_SiO2_content",
+     "value_num": 64.3,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "property": "ash_Al2O3_content",
+     "value_num": 22.7,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "property": "ash_Fe2O3_content",
+     "value_num": 5.0,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "property": "ash_CaO_content",
+     "value_num": 2.6,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "property": "ash_K2O_content",
+     "value_num": 2.5,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "property": "ash_MgO_content",
+     "value_num": 1.1,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "property": "ash_quartz_content",
+     "value_num": 43.5,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "property": "ash_mullite_content",
+     "value_num": 25.3,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "property": "ash_glass_SiO2_content",
+     "value_num": 13.7,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
+    },
+    {
+     "property": "ash_glass_Al2O3_content",
+     "value_num": 4.5,
+     "unit": "wt.%",
+     "quote": "CFA3 | 64.3 | 22.7 | 5.0 | 2.6 | 2.5 | 1.1 | 43.5 | 25.3 | 13.7 | 4.5"
     }
    ]
   },
@@ -1105,7 +1299,7 @@
      "technique": "XRD (raw ash, Fig. 1)",
      "result": "CFA4 crystalline phases: quartz solely predominant; only one diffraction peak matching mullite",
      "instrument": "Bruker D8 Advance XRD diffractometer",
-     "conditions": null,
+     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "However, quartz became the solely predominant crystalline phase for CFA4, i.e., the CFB ash, and only one diffraction peak matched the mullite PDF pattern."
     }
    ],
@@ -1133,6 +1327,66 @@
      "value_num": 1.59,
      "quote": "CFA4 | Hydro | 100 | 3 | 0.52 | 4 | 3644 | 449 | 5.3 | 1.59",
      "unit": "%"
+    },
+    {
+     "property": "ash_SiO2_content",
+     "value_num": 58.9,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "property": "ash_Al2O3_content",
+     "value_num": 21.3,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "property": "ash_Fe2O3_content",
+     "value_num": 9.1,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "property": "ash_CaO_content",
+     "value_num": 5.3,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "property": "ash_K2O_content",
+     "value_num": 2.4,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "property": "ash_MgO_content",
+     "value_num": 1.1,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "property": "ash_quartz_content",
+     "value_num": 41.1,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "property": "ash_mullite_content",
+     "value_num": 9.1,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "property": "ash_glass_SiO2_content",
+     "value_num": 16.2,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
+    },
+    {
+     "property": "ash_glass_Al2O3_content",
+     "value_num": 12.1,
+     "unit": "wt.%",
+     "quote": "CFA4 | 58.9 | 21.3 | 9.1 | 5.3 | 2.4 | 1.1 | 41.1 | 9.1 | 16.2 | 12.1"
     }
    ]
   },
@@ -1290,7 +1544,9 @@
      "not_stated": [
       "power",
       "stirring_speed",
-      "heating_rate"
+      "heating_rate",
+      "frequency",
+      "cooling_rate"
      ]
     }
    ],
@@ -1351,8 +1607,8 @@
     {
      "technique": "XRD (residue)",
      "result": "peaks ascribed to Na2SiO3 observed after 3 h of microwave-assisted activation, intensities of the other peaks further decreased",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Bruker D8 Advance XRD diffractometer",
+     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 10–90°, interval 0.02°, rate 10°/min",
      "quote": "We also observed peaks ascribed to Na2SiO3, likely due to insufficient stirring."
     }
    ],
@@ -1400,7 +1656,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -1494,7 +1751,9 @@
      "not_stated": [
       "heating_rate",
       "cooling_rate",
-      "atmosphere"
+      "atmosphere",
+      "vessel",
+      "gas_flow"
      ]
     },
     {
@@ -2241,7 +2500,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -2389,6 +2649,11 @@
        "name": "ph",
        "quote": "The solution pH was adjusted to 10.5 by adding glacial acetic acid dropwise.",
        "value_num": 10.5
+      },
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The solution pH was adjusted to 10.5 by adding glacial acetic acid dropwise."
       }
      ],
      "equipment": [],
@@ -2506,7 +2771,9 @@
      "not_stated": [
       "duration",
       "stirring_speed",
-      "mass_of_solid"
+      "mass_of_solid",
+      "power",
+      "frequency"
      ]
     },
     {
@@ -2528,7 +2795,10 @@
        "unit": "min"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
     },
     {
      "order": 11,
@@ -2582,13 +2852,13 @@
      "technique": "TEM",
      "result": "honeycomb-like hexagonal pores (region A1) and parallel lines (region A2); basal spacings 4.13 and 4.27 nm",
      "instrument": "JEM-2100 TEM",
-     "conditions": null,
+     "conditions": "basal spacings evaluated with the Digital Micrograph tool on five pore arrays in Region A1 and six in Region A2",
      "quote": "There were honeycomb-like hexagonal pores in Region A1 and parallel lines in Region A2 when the electron beam illuminated the pores vertically and parallelly, respectively."
     },
     {
      "technique": "29Si MAS NMR (Table 6, déconvolution)",
      "result": "Q4 at −112 ppm and Q3 at −102 ppm; areas 21,143 and 11,746; Q4/Q3 = 1.8",
-     "instrument": null,
+     "instrument": "Agilent 600 M NMR spectrometer",
      "conditions": null,
      "quote": "AM41E-120-48 | −112 | −102 | 21,143 | 11,746 | 1.8"
     },
@@ -2909,8 +3179,8 @@
     {
      "technique": "N2 adsorption–desorption",
      "result": "comparatively wide pore size distribution, gentle capillary-condensation slope, unapparent inflection point (the text names it AM41ES-30-48)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Micromeritics ASAP 2050 adsorber",
+     "conditions": "degassed at 300 °C for 2 h before each measurement; BET (SBET), BJH (pore size distribution), VPORE at p/p0 = 0.99",
      "quote": "However, AM41ES-30-48 had a comparatively wide pore size distribution, which matched the characteristics of the isotherms with a gentle slope of capillary condensation and an unapparent inflection point."
     }
    ]
@@ -3214,6 +3484,11 @@
        "name": "ph",
        "quote": "The solution pH was adjusted to 10.5 by adding glacial acetic acid dropwise.",
        "value_num": 10.5
+      },
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "The solution pH was adjusted to 10.5 by adding glacial acetic acid dropwise."
       }
      ],
      "equipment": [],
@@ -3337,7 +3612,10 @@
      "equipment": [],
      "not_stated": [
       "atmosphere",
-      "heating_rate"
+      "heating_rate",
+      "cooling_rate",
+      "gas_flow",
+      "vessel"
      ]
     }
    ],
@@ -3398,15 +3676,15 @@
     {
      "technique": "SXRD",
      "result": "calcined product more ordered but with a narrower d100 than the solvent-extracted one (the text names the latter AM41S-120-48, i.e. AM41E-120-48); lattice contraction invoked by the authors",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "PANalytical Empyrean version XRD diffractometer",
+     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 0.5–10°, interval 0.02°, rate 1°/min",
      "quote": "the calcined product (AM41C-120-48) had a more ordered structure but a narrower d100 compared to the extracted one (AM41S-120-48)"
     },
     {
      "technique": "N2 adsorption–desorption",
      "result": "calcined product has a larger pore volume than the solvent-extracted one (Fig. 5c)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Micromeritics ASAP 2050 adsorber",
+     "conditions": "degassed at 300 °C for 2 h before each measurement; BET (SBET), BJH (pore size distribution), VPORE at p/p0 = 0.99",
      "quote": "Therefore, the calcined product (AM41C-120-48) had a larger pore volume, as shown in Figure 5c."
     }
    ]
@@ -3428,7 +3706,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -3504,6 +3783,9 @@
        "detail": null,
        "quote": "Briefly, the removed template of Al-MCM-41 was degassed at 150 °C for 1 h under vacuum in a vacuum oven."
       }
+     ],
+     "not_stated": [
+      "pressure"
      ]
     },
     {
@@ -3539,7 +3821,9 @@
      ],
      "equipment": [],
      "not_stated": [
-      "atmosphere"
+      "atmosphere",
+      "vessel",
+      "stirring_speed"
      ]
     },
     {
@@ -3612,15 +3896,15 @@
     {
      "technique": "SXRD",
      "result": "after grafting three hk0 diffraction peaks still visible but weaker; mesoporous structure intact (Fig. 4d)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "PANalytical Empyrean version XRD diffractometer",
+     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 0.5–10°, interval 0.02°, rate 1°/min",
      "quote": "Upon ligand (MPTMS and APTMS) grafting on AM41E-120-48, as shown in Figure 4d, three hk0 diffraction peaks were still visible but decreased in intensities, illustrating the successful ligand grafting and still intact mesoporous structure []"
     },
     {
      "technique": "N2 adsorption–desorption",
      "result": "type IV isotherm still legible after grafting; pore volume dramatically decreased (pore filling), Fig. 5d (text states ligand grafting in general, MPTMS and APTMS)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "Micromeritics ASAP 2050 adsorber",
+     "conditions": "degassed at 300 °C for 2 h before each measurement; BET (SBET), BJH (pore size distribution), VPORE at p/p0 = 0.99",
      "quote": "As for ligand grafting, as shown in Figure 5d, the traits of type IV isotherms were still legible. However, the pore volumes dramatically decreased due to the pore filling."
     }
    ],
@@ -4435,7 +4719,7 @@
      "technique": "N2 adsorption–desorption",
      "result": "poor pore order compared with AM41ES-60-48 (Fig. 12)",
      "instrument": "Micromeritics ASAP 2050 adsorber",
-     "conditions": null,
+     "conditions": "degassed at 300 °C for 2 h before each measurement; BET (SBET), BJH (pore size distribution), VPORE at p/p0 = 0.99",
      "quote": "The N2 isotherms indicated that AM41ES-60-24 had a poor pore order compared to its counterpart, as shown in Figure 12."
     }
    ]
@@ -4889,9 +5173,16 @@
     {
      "technique": "SXRD",
      "result": "after grafting three hk0 diffraction peaks still visible but weaker; mesoporous structure intact (Fig. 4d)",
-     "instrument": null,
-     "conditions": null,
+     "instrument": "PANalytical Empyrean version XRD diffractometer",
+     "conditions": "CuKα radiation, 40 kV, 200 mA, 2θ = 0.5–10°, interval 0.02°, rate 1°/min",
      "quote": "Upon ligand (MPTMS and APTMS) grafting on AM41E-120-48, as shown in Figure 4d, three hk0 diffraction peaks were still visible but decreased in intensities, illustrating the successful ligand grafting and still intact mesoporous structure []"
+    },
+    {
+     "technique": "N2 adsorption–desorption",
+     "result": "S_BET 261 m2/g, d_BJH 3.21 nm, V_pore 0.21 cm3/g (Table 5)",
+     "instrument": "Micromeritics ASAP 2050 adsorber",
+     "conditions": "degassed at 300 °C for 2 h before each measurement; BET (SBET), BJH (pore size distribution), VPORE at p/p0 = 0.99",
+     "quote": "AM41EA-120-48 | 3.98 | 4.60 | 261 | 3.21 | 0.21 | -"
     }
    ],
    "outcomes": [
@@ -5400,6 +5691,34 @@
   {
    "where": "AM41E-120-48 / AM41ES-120-48 / AM41EA-120-48 (noms d'échantillons)",
    "issue": "Le texte nomme « AM41S-120-48 » l'échantillon extrait (AM41E-120-48) et « AM41A-120-48 » l'échantillon greffé à l'APTMS (AM41EA-120-48) ; ces noms ne sont pas définis dans la Table 12 et sont rattachés aux échantillons correspondants."
+  },
+  {
+   "where": "AM41E-120-48 step 6 / branches AM41E-120-24 et -72",
+   "issue": "L'article appelle « aging time (24, 48, and 72 h) » la durée de cristallisation en autoclave à 120 °C (étape 6) : aucune étape de vieillissement ou de repos distincte n'est décrite (le gel est transféré après 1 h d'agitation). Rien n'a été ajouté comme étape de vieillissement."
+  },
+  {
+   "where": "AM41E-120-48 step 9 (sonication)",
+   "issue": "« except using sonication » n'est suivi d'aucune puissance, fréquence, durée ni étape dédiée. Les cases power et frequency sont déclarées non citées sur l'étape 9 (dispersion dans NH4Cl/méthanol), par défaut de rattachement plus précis ; le texte écrit aussi « Continuous stirring followed »."
+  },
+  {
+   "where": "CFA1-Fusion-550 / Fig. 3",
+   "issue": "Le texte (section 2.1.2) dit que la Fig. 3 montre les résidus « after 650 °C of fusion », la légende de la Fig. 3 dit « after 550 °C of fusion ». Contradiction texte/légende non tranchée ; la caractérisation MEB ajoutée cite le texte."
+  },
+  {
+   "where": "AM41E-30-48 SEM (Fig. 7)",
+   "issue": "Les Méthodes ne citent le MEB (U8010) que pour les particules de cendre et le MET (JEM-2100) pour Al-MCM-41, alors que la Fig. 7 donne des images MEB d'Al-MCM-41 : appareil, tension et grandissement de cette série non cités."
+  },
+  {
+   "where": "N2 adsorption–desorption (Méthodes)",
+   "issue": "La température d'analyse (77 K), la plage de p/p0 pour le BET et le gaz de dégazage ne sont pas écrits ; seuls le dégazage à 300 °C pendant 2 h et p/p0 = 0,99 pour le volume poreux le sont."
+  },
+  {
+   "where": "CFA1-4 Table 1 (résultats ajoutés)",
+   "issue": "Les en-têtes de Table 1 (composition chimique : SiO2, Al2O3, Fe2O3, CaO, K2O, MgO ; phases cristallines : quartz, mullite ; phase vitreuse : SiO2, Al2O3) sont attribués aux colonnes par position. Les Méthodes rattachent la composition chimique à la fluorescence X, les phases à l'analyse quantitative des DRX."
+  },
+  {
+   "where": "not_stated « repetitions » au niveau de la voie",
+   "issue": "Dans CFA1-Hydro-100, CFA1-Fusion-550, AM41E-120-48 et AM41ES-120-48, « repetitions » désigne le nombre de lots ou de répétitions indépendantes de la préparation (non cité) ; il ne se confond pas avec les deux répétitions reflux/filtration de l'étape 12 d'AM41E-120-48."
   }
  ]
 }
