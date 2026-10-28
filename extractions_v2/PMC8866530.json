@@ -1,0 +1,2467 @@
+{
+ "pmcid": "PMC8866530",
+ "format": 3,
+ "routes": [
+  {
+   "label": "CFO_phi1.325_900",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "porous CaFe2O4 (pCFO), fuel-rich ϕ = 1.325, calcined at 900 °C",
+    "formula": "CaFe2O4",
+    "family": "oxyde",
+    "phase": "orthorhombic",
+    "morphology": "oblong particles, deeply macroporous"
+   },
+   "methods": [
+    "solution_combustion",
+    "thermal_treatment"
+   ],
+   "method": "solution combustion synthesis (glycine fuel, metal nitrate oxidizers) followed by calcination in air",
+   "quote": "Porous CaFe2O4 (pCFO) was synthesized using Solution Combustion Synthesis (SCS).",
+   "scale": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "calcium nitrate tetrahydrate",
+     "formula": "Ca(NO3)2·4H2O",
+     "role": "precursor",
+     "purity": "≥ 99.0%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Calcium nitrate tetrahydrate (Ca(NO3)2 · 4H2O, ≥ 99.0%, Sigma-Aldrich)",
+     "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "iron nitrate nonahydrate",
+     "formula": "Fe(NO3)3·9H2O",
+     "role": "precursor",
+     "purity": "ACS reagent, ≥ 99.0%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "iron nitrate nonahydrate (Fe(NO3)3 · 9H2O, ACS reagent, ≥ 99.0%, Sigma-Aldrich)",
+     "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "glycine",
+     "formula": "C2H5NO2",
+     "role": "fuel",
+     "purity": "USP & FCC grade",
+     "supplier": "J. T. Baker",
+     "supplier_quote": "glycine (C2H5NO2, USP & FCC grade, J. T. Baker)",
+     "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 12,
+     "unit": "mL",
+     "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve the calcium nitrate, iron nitrate and glycine in about 12 mL of deionized water in a beaker (amounts precalculated from the fuel-to-oxidizer ratio, not given).",
+     "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O",
+       "value_num": 12,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "beaker",
+       "detail": null,
+       "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir on a stir/hot plate at room temperature for 5 min with a magnetic stir bar at 200 rpm.",
+     "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+       "value_num": 5,
+       "unit": "min"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+       "value_num": 200,
+       "unit": "rpm"
+      },
+      {
+       "name": "temperature",
+       "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "stir/hot plate with magnetic stir bar",
+       "detail": null,
+       "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Heat the plate to 250–300 °C with continuous stirring: the solution boils, then turns into a dark-brown roiling batter.",
+     "quote": "Next, the plate was heated to 250–300 °C with continuous stirring, starting the Solution Combustion Synthesis (SCS).",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Next, the plate was heated to 250–300 °C with continuous stirring, starting the Solution Combustion Synthesis (SCS).",
+       "value_text": "250–300 °C"
+      },
+      {
+       "name": "duration",
+       "quote": "After 10–15 min, the solution began to boil while maintaining mostly the same dark-red color, opaqueness, and liquid consistency as it had at room temperature. After another 10–15 min, the solution became a dark-brown, roiling batter",
+       "value_text": "10–15 min, then another 10–15 min"
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "combust",
+     "description": "Self-combustion of the batter (rapid, < 3 s), yielding a dark crumbly low-density foam.",
+     "quote": "and within 3–5 more minutes, the rapid (< 3 s) self-combustion reaction occurred",
+     "parameters": [
+      {
+       "name": "duration_to_combustion",
+       "quote": "and within 3–5 more minutes, the rapid (< 3 s) self-combustion reaction occurred",
+       "value_text": "within 3–5 more minutes"
+      },
+      {
+       "name": "duration_combustion",
+       "quote": "and within 3–5 more minutes, the rapid (< 3 s) self-combustion reaction occurred",
+       "value_text": "< 3 s"
+      }
+     ],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "grind",
+     "description": "Grind the foam into a terra-cotta powder.",
+     "quote": "The product was a dark, crumbly, low-density foam that easily ground into a terra-cotta powder.",
+     "parameters": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "calcine",
+     "description": "Calcine the powder in air for 3 h (ramp 10 °C per minute) at a holding temperature of 550, 700 or 900 °C; 900 °C for this sample.",
+     "quote": "This powder was then calcined in air at different holding temperatures of 550, 700, or 900 °C (furnace ramping rate of 10 °C per minute) for 3 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "This powder was then calcined in air at different holding temperatures of 550, 700, or 900 °C (furnace ramping rate of 10 °C per minute) for 3 h",
+       "value_num": 900,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "This powder was then calcined in air at different holding temperatures of 550, 700, or 900 °C (furnace ramping rate of 10 °C per minute) for 3 h",
+       "value_num": 3,
+       "unit": "h"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "This powder was then calcined in air at different holding temperatures of 550, 700, or 900 °C (furnace ramping rate of 10 °C per minute) for 3 h",
+       "value_text": "air"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "This powder was then calcined in air at different holding temperatures of 550, 700, or 900 °C (furnace ramping rate of 10 °C per minute) for 3 h",
+       "value_num": 10,
+       "unit": "°C/min"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "furnace",
+       "detail": null,
+       "quote": "This powder was then calcined in air at different holding temperatures of 550, 700, or 900 °C (furnace ramping rate of 10 °C per minute) for 3 h"
+      }
+     ],
+     "not_stated": [
+      "cooling"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "SmartLab X-ray Diffractometer, Rigaku (Bragg Brentano geometry)",
+     "result": "orthorhombic CaFe2O4 at 900 °C for all ϕ; lower calcination temperatures give broader, noisier patterns with extra peaks (Fig. 2)",
+     "quote": "The phase and crystal information of powder samples were measured via x-ray diffraction (XRD) using a SmartLab X-ray Diffractometer, Rigaku, ran in the Bragg Brentano geometry with a Cu x-ray source.",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "with a Cu x-ray source",
+       "value_text": "Cu x-ray source"
+      },
+      {
+       "name": "scan_range",
+       "quote": "Figure 2 XRD patterns of CaFe2O4: (a) synthesized at increasing ϕ and calcined at 900 °C, (b) synthesized at ϕ = 1.325 and calcined at different temperatures.",
+       "value_text": "10–80° (2θ axis of the plotted patterns)",
+       "from_figure": "Fig. 2"
+      },
+      {
+       "name": "crystallite_size_method",
+       "quote": "Estimations of average crystallite size, based on the Scherrer equation",
+       "value_text": "Scherrer equation"
+      }
+     ],
+     "not_stated": [
+      "scan_step"
+     ]
+    },
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": "Hitachi SU8010 (field emission SEM)",
+     "result": "particle morphology of all samples (Fig. 3)",
+     "quote": "Morphology was observed via field emission scanning electron microscopy (FESEM; Hitachi SU8010).",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "xps_1",
+     "technique": "XPS",
+     "instrument": "Kratos Axis Ultra DLD",
+     "result": "surface composition and electronic states of all samples (Figs. 4, 5, Table 1, Fig. S1)",
+     "quote": "Composition and electronic states of sample surfaces were measured using x-ray photoelectron spectroscopy (XPS; Kratos Axis Ultra DLD, monochromatic Al Kα source).",
+     "settings": [
+      {
+       "name": "xray_source",
+       "quote": "monochromatic Al Kα source",
+       "value_text": "monochromatic Al Kα source"
+      },
+      {
+       "name": "calibration_reference",
+       "quote": "All XPS data were corrected to the C 1 s peak at 284.6 eV.",
+       "value_text": "C 1 s peak at 284.6 eV"
+      },
+      {
+       "name": "pass_energy",
+       "quote": "Survey and high-resolution scans were acquired at pass energies of 80 eV and 20 eV, respectively.",
+       "value_text": "80 eV (survey scans), 20 eV (high-resolution scans)"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Samples were pressed into indium metal, and a charge neutralizer was used to minimize charging effects.",
+       "value_text": "pressed into indium metal; charge neutralizer used to minimize charging"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "ec_CFO_phi1.325_900",
+     "technique": "electrochemistry",
+     "instrument": "8 Channel Battery Analyzer (MTI Corp.), CR2032 half cell vs. Li",
+     "result": "galvanostatic charge-discharge: rate test at four currents (cycles 1–20, one-minute constant-voltage step at 3 V between charge and discharge) then 500 cycles at the highest current",
+     "quote": "Galvanostatic electrochemical performance was evaluated using an 8 Channel Battery Analyzer (MTI Corp.).",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich)",
+       "value_text": "1 M LiPF6 in EC/DMC 1:1 (50–80 μL; Sigma-Aldrich)"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "potentials given vs. Li/Li+"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "Li chip as anode",
+       "value_text": "Li chip"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "| 1.325 | 0.91 | 109 | 218 | 544 | 1088 |",
+       "value_num": 0.91,
+       "unit": "mg"
+      },
+      {
+       "name": "current_density",
+       "quote": "| 1.325 | 0.91 | 109 | 218 | 544 | 1088 |",
+       "value_text": "109, 218, 544, 1088 mA g-1"
+      },
+      {
+       "name": "potential_window",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "between 0.01 and 3 V vs. Li/Li+"
+      }
+     ],
+     "not_stated": [
+      "scan_rate"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size",
+     "quote": "Estimations of average crystallite size, based on the Scherrer equation, are 107.9 nm, 96.5 nm, and 102.6 nm for samples prepared at ϕ = 0.675, 1, and 1.325, respectively",
+     "measured_by": "xrd_1",
+     "value_num": 102.6,
+     "unit": "nm"
+    },
+    {
+     "property": "phase",
+     "quote": "At full calcination (900 °C), the diffraction peaks match, both in position and relative intensity, with indexed orthorhombic CaFe2O4 (PDF card No. 00-032-0168), indicating strong phase purity and consistency between batched syntheses of pCFO across fuel-to-oxidizer ratios.",
+     "measured_by": "xrd_1",
+     "value_text": "orthorhombic CaFe2O4 (PDF card No. 00-032-0168), strong phase purity"
+    },
+    {
+     "property": "morphology",
+     "quote": "Across the board, particles are randomly distributed, smooth, and shaped like oblong beans or Tic Tacs that range in length from 200 nm to 2 μm.",
+     "measured_by": "sem_1",
+     "value_text": "randomly distributed, smooth, shaped like oblong beans or Tic Tacs"
+    },
+    {
+     "property": "particle_size_length",
+     "quote": "Across the board, particles are randomly distributed, smooth, and shaped like oblong beans or Tic Tacs that range in length from 200 nm to 2 μm.",
+     "measured_by": "sem_1",
+     "value_text": "200 nm to 2 μm"
+    },
+    {
+     "property": "particle_size_growth_on_calcination",
+     "quote": "When pCFO is fully heated to 900 °C, its particles “popcorn” to a significantly larger size with both greater CaFe2O4 crystallite size and crystallinity (Fig. 2b) and interparticle spacing (Fig. 3b).",
+     "measured_by": "sem_1",
+     "value_text": "particles “popcorn” to a significantly larger size, with greater interparticle spacing"
+    },
+    {
+     "property": "elemental_composition_Fe_to_Ca_atomic_ratio",
+     "quote": "Fe | 2 | 2.6 | 2.4 | 2.2 | 2.6 | 4.0 | 2.6 | 2.2",
+     "measured_by": "xps_1",
+     "value_num": 2.2,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_O_to_Ca_atomic_ratio",
+     "quote": "O | 4 | 5.6 | 5.6 | 5.0 | 9.0 | 7.2 | 5.7 | 5.0",
+     "measured_by": "xps_1",
+     "value_num": 5.0,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_C_to_Ca_atomic_ratio",
+     "quote": "C | – | 1.9 | 1.8 | 1.5 | 7.8 | 2.4 | 1.7 | 1.5",
+     "measured_by": "xps_1",
+     "value_num": 1.5,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_Cl_to_Ca_atomic_ratio",
+     "quote": "Cl | – | 0.08 | 0.1 | 0.1 | – | – | – | 0.1",
+     "measured_by": "xps_1",
+     "value_num": 0.1,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_A_Ap",
+     "quote": "A+A’ | 68.68 | 76.05 | 64.28 | - | 20.41 | 63.29 | 64.28",
+     "measured_by": "xps_1",
+     "value_num": 64.28,
+     "unit": "%"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_B_Bp",
+     "quote": "B+B’ | 31.32 | 23.95 | 35.72 | 100 | 70.59 | 36.71 | 35.72",
+     "measured_by": "xps_1",
+     "value_num": 35.72,
+     "unit": "%"
+    },
+    {
+     "property": "xps_binding_energy_Ca2p32_primary",
+     "quote": "The Ca 2p spectra have two primary peaks at binding energies of 345.3 eV and 348.7 eV, corresponding to Ca 2p3/2 and Ca 2p1/2, respectively, of pCFO (Fig. 4b).",
+     "measured_by": "xps_1",
+     "value_num": 345.3,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_Ca2p12_primary",
+     "quote": "The Ca 2p spectra have two primary peaks at binding energies of 345.3 eV and 348.7 eV, corresponding to Ca 2p3/2 and Ca 2p1/2, respectively, of pCFO (Fig. 4b).",
+     "measured_by": "xps_1",
+     "value_num": 348.7,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_Ca2p32_secondary",
+     "quote": "The Ca 2p spectra also show the existence of lower intensity peaks at binding energies of 347.0 eV and 350.4 eV, corresponding to Ca 2p3/2 and Ca 2p1/2, respectively, of a secondary Ca-based oxide or hydroxide species",
+     "measured_by": "xps_1",
+     "value_num": 347.0,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_Ca2p12_secondary",
+     "quote": "The Ca 2p spectra also show the existence of lower intensity peaks at binding energies of 347.0 eV and 350.4 eV, corresponding to Ca 2p3/2 and Ca 2p1/2, respectively, of a secondary Ca-based oxide or hydroxide species",
+     "measured_by": "xps_1",
+     "value_num": 350.4,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_Fe2p32",
+     "quote": "The Fe 2p spectra have two primary peaks at binding energies of 710.0 eV and 723.8 eV, corresponding to Fe 2p3/2 and Fe 2p1/2, respectively, and broad satellite peaks at binding energies of 718.1 eV and 732.0 eV that are characteristic of Fe in the 3+ oxidation state (Fig. 4c).",
+     "measured_by": "xps_1",
+     "value_num": 710.0,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_Fe2p12",
+     "quote": "The Fe 2p spectra have two primary peaks at binding energies of 710.0 eV and 723.8 eV, corresponding to Fe 2p3/2 and Fe 2p1/2, respectively, and broad satellite peaks at binding energies of 718.1 eV and 732.0 eV that are characteristic of Fe in the 3+ oxidation state (Fig. 4c).",
+     "measured_by": "xps_1",
+     "value_num": 723.8,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_Fe2p_satellite_1",
+     "quote": "The Fe 2p spectra have two primary peaks at binding energies of 710.0 eV and 723.8 eV, corresponding to Fe 2p3/2 and Fe 2p1/2, respectively, and broad satellite peaks at binding energies of 718.1 eV and 732.0 eV that are characteristic of Fe in the 3+ oxidation state (Fig. 4c).",
+     "measured_by": "xps_1",
+     "value_num": 718.1,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_Fe2p_satellite_2",
+     "quote": "The Fe 2p spectra have two primary peaks at binding energies of 710.0 eV and 723.8 eV, corresponding to Fe 2p3/2 and Fe 2p1/2, respectively, and broad satellite peaks at binding energies of 718.1 eV and 732.0 eV that are characteristic of Fe in the 3+ oxidation state (Fig. 4c).",
+     "measured_by": "xps_1",
+     "value_num": 732.0,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_O1s_primary",
+     "quote": "The O 1 s spectra have one primary peak at a binding energy of 529.0 eV, most likely indicative of lattice oxygen, and a secondary peak at a binding energy of 531.0 eV, which most likely corresponds to surface hydroxyl groups (Fig. 4d)",
+     "measured_by": "xps_1",
+     "value_num": 529.0,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_O1s_secondary",
+     "quote": "The O 1 s spectra have one primary peak at a binding energy of 529.0 eV, most likely indicative of lattice oxygen, and a secondary peak at a binding energy of 531.0 eV, which most likely corresponds to surface hydroxyl groups (Fig. 4d)",
+     "measured_by": "xps_1",
+     "value_num": 531.0,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_C1s_primary",
+     "quote": "The C 1 s spectra have one primary peak corrected to a binding energy of 284.6 eV due to C–C and C=C species, and a secondary peak at a binding energy of 289.0 eV due to C=O species (Fig. 4e)",
+     "measured_by": "xps_1",
+     "value_num": 284.6,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_C1s_secondary",
+     "quote": "The C 1 s spectra have one primary peak corrected to a binding energy of 284.6 eV due to C–C and C=C species, and a secondary peak at a binding energy of 289.0 eV due to C=O species (Fig. 4e)",
+     "measured_by": "xps_1",
+     "value_num": 289.0,
+     "unit": "eV"
+    },
+    {
+     "property": "specific_capacity_first_discharge_109mAg-1",
+     "quote": "Highest Initial Discharge (mAh/g @ mA/g) | ~900 @ 50 | 1050 @ 100 | 718 @ 74 | 861 @ 94 | 995 @ 109 | 919 @ 94 | 967 @ 129 | 922 @ 129 | 995 @ 109",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 995.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_second_discharge_109mAg-1",
+     "quote": "Highest Second Discharge (mAh/g @ mA/g) | ~560 @ 50 | 671 @ 100 | 501 @ 74 | 504 @ 94 | 637 @ 109 | 630 @ 94 | 775 @ 129 | 692 @ 129 | 637 @ 109",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 637.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_lowest_discharge_1088mAg-1",
+     "quote": "Lowest Discharge (mAh/g @ mA/g) | 321 @ 1000 | 311 @ 5000 | 298 @ 744 | 265 @ 943 | 383 @ 1088 | 247 @ 943 | 488 @ 1286 | 551 @ 1286 | 383 @ 1088",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 383.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_end_rate_recovery_109mAg-1",
+     "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94 | 621 @ 109 | 412 @ 94 | 597 @ 129 | 731 @ 129 | 621 @ 109",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 621.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "retention_stability_longterm_cycling_shape",
+     "quote": "Longterm Cycling Shape | Flat | Flat | Flat | Flat | Small Hill | Dip-plateau | Dip-plateau | Dip-plateau | Small Hill",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_text": "Small Hill"
+    },
+    {
+     "property": "specific_capacity_about_500_cycles_1088mAg-1",
+     "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943 | ~487 @ 1088 | 29-220 @ 943 | 137-432 @ 1286 | 136-594 @ 1286 | ~487 @ 1088",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_text": "~487 mAh/g @ 1088 mA/g"
+    },
+    {
+     "property": "voltage_window_potential_first_discharge_plateau",
+     "quote": "The first discharge plateaus at ~ 0.7 V vs. Li/Li+ and delivers a specific capacity of 995 mAh-g-1 at a current density of 109 mA-g-1 (Fig. 6a)",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_text": "~ 0.7 V vs. Li/Li+"
+    },
+    {
+     "property": "voltage_window_potential_charge",
+     "quote": "The subsequent charge at the same current density corresponds to the oxidation of metal iron particles and reduction/delithiation of Li2O between 1.3 and 1.7 V vs. Li/Li+",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_text": "between 1.3 and 1.7 V vs. Li/Li+"
+    },
+    {
+     "property": "retention_stability_irreversible_capacity_loss_first_to_second_discharge",
+     "quote": "The second discharge drops in capacity from the initial discharge by 64% to 637 mAh-g-1",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 64,
+     "unit": "%"
+    },
+    {
+     "property": "specific_capacity_last_cycle_at_109mAg-1",
+     "quote": "The discharge specific capacities corresponding to the last cycle of each of these current densities are 615, 526, 453, and 395 mAh-g-1, respectively.",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 615,
+     "unit": "mAh g-1"
+    },
+    {
+     "property": "specific_capacity_last_cycle_at_218mAg-1",
+     "quote": "The discharge specific capacities corresponding to the last cycle of each of these current densities are 615, 526, 453, and 395 mAh-g-1, respectively.",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 526,
+     "unit": "mAh g-1"
+    },
+    {
+     "property": "specific_capacity_last_cycle_at_544mAg-1",
+     "quote": "The discharge specific capacities corresponding to the last cycle of each of these current densities are 615, 526, 453, and 395 mAh-g-1, respectively.",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 453,
+     "unit": "mAh g-1"
+    },
+    {
+     "property": "specific_capacity_last_cycle_at_1088mAg-1",
+     "quote": "The discharge specific capacities corresponding to the last cycle of each of these current densities are 615, 526, 453, and 395 mAh-g-1, respectively.",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 395,
+     "unit": "mAh g-1"
+    },
+    {
+     "property": "retention_stability_rate_lowest_cycles_13-16_vs_highest_cycles_2-4",
+     "quote": "the lowest capacities of cycles 13–16 are still, on average, a formidable 63% of the average highest capacities of cycles 2–4",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 63,
+     "unit": "%"
+    },
+    {
+     "property": "retention_stability_recovery_cycles_17-20_vs_2-4",
+     "quote": "Discharge capacity recovery is also strong, maintaining an average of 100% of the discharge capacity between cycles 2–4 and 17–20.",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 100,
+     "unit": "%"
+    },
+    {
+     "property": "specific_capacity_cycling_start",
+     "quote": "Cyclic stability for pCFO is great (Fig. 6d), starting at 445 mAh-g-1, peaking to 542 mAh-g-1 at cycle 220, and falling back down to 435 mAh-g-1 at the end of the additional 500th cycle.",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 445,
+     "unit": "mAh-g-1"
+    },
+    {
+     "property": "specific_capacity_cycling_peak_cycle_220",
+     "quote": "Cyclic stability for pCFO is great (Fig. 6d), starting at 445 mAh-g-1, peaking to 542 mAh-g-1 at cycle 220, and falling back down to 435 mAh-g-1 at the end of the additional 500th cycle.",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 542,
+     "unit": "mAh-g-1"
+    },
+    {
+     "property": "specific_capacity_cycling_end_cycle_500",
+     "quote": "Cyclic stability for pCFO is great (Fig. 6d), starting at 445 mAh-g-1, peaking to 542 mAh-g-1 at cycle 220, and falling back down to 435 mAh-g-1 at the end of the additional 500th cycle.",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_num": 435,
+     "unit": "mAh-g-1"
+    },
+    {
+     "property": "retention_stability_500_cycles_pct_of_initial",
+     "quote": "the capacity for the fully calcined sample (900 °C) floats between 97 and 122% of its initial capacity across all 500 cycles",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_text": "between 97 and 122% of its initial capacity"
+    },
+    {
+     "property": "coulombic_efficiency",
+     "quote": "Excluding current transitions and beginnings of tests, Coulombic efficiencies are consistently near 100% for all samples, demonstrating excellent reversibility (Figure S2).",
+     "measured_by": "ec_CFO_phi1.325_900",
+     "value_text": "consistently near 100% (all samples, Fig. S2)"
+    }
+   ],
+   "missing_fields": [
+    "masses of the precursors and of glycine (only 'precalculated amounts')",
+    "yield",
+    "furnace cooling"
+   ]
+  },
+  {
+   "label": "CFO_phi1_900",
+   "parent": "CFO_phi1.325_900",
+   "material": {
+    "name": "pCFO",
+    "formula": "CaFe2O4",
+    "family": "oxyde",
+    "phase": "orthorhombic CaFe2O4",
+    "morphology": "oblong particles with macroporous voids"
+   },
+   "quote": "different batches of pCFO were synthesized at ϕ’s of 0.675 (fuel-lean condition), 1 (stoichiometrically balanced condition), and 1.325 (fuel-rich condition), which also correspond to the fuel-to-oxidizer mole ratios, n, of 1, 1.48, and 1.96, respectively",
+   "variations": [
+    {
+     "parameter": "glycine",
+     "value_text": "ϕ = 1, stoichiometrically balanced (fuel-to-oxidizer mole ratio n = 1.48)",
+     "parent_value": "ϕ = 1.325 (n = 1.96)",
+     "quote": "different batches of pCFO were synthesized at ϕ’s of 0.675 (fuel-lean condition), 1 (stoichiometrically balanced condition), and 1.325 (fuel-rich condition), which also correspond to the fuel-to-oxidizer mole ratios, n, of 1, 1.48, and 1.96, respectively"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "id": "ec_CFO_phi1_900",
+     "technique": "electrochemistry",
+     "instrument": "8 Channel Battery Analyzer (MTI Corp.), CR2032 half cell vs. Li",
+     "result": "galvanostatic charge-discharge: rate test at four currents (cycles 1–20, one-minute constant-voltage step at 3 V between charge and discharge) then 500 cycles at the highest current",
+     "quote": "Galvanostatic electrochemical performance was evaluated using an 8 Channel Battery Analyzer (MTI Corp.).",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich)",
+       "value_text": "1 M LiPF6 in EC/DMC 1:1 (50–80 μL; Sigma-Aldrich)"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "potentials given vs. Li/Li+"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "Li chip as anode",
+       "value_text": "Li chip"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "| 1 | 1.05 | 94 | 189 | 471 | 943 |",
+       "value_num": 1.05,
+       "unit": "mg"
+      },
+      {
+       "name": "current_density",
+       "quote": "| 1 | 1.05 | 94 | 189 | 471 | 943 |",
+       "value_text": "94, 189, 471, 943 mA g-1"
+      },
+      {
+       "name": "potential_window",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "between 0.01 and 3 V vs. Li/Li+"
+      }
+     ],
+     "not_stated": [
+      "scan_rate"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size",
+     "quote": "Estimations of average crystallite size, based on the Scherrer equation, are 107.9 nm, 96.5 nm, and 102.6 nm for samples prepared at ϕ = 0.675, 1, and 1.325, respectively",
+     "measured_by": "xrd_1",
+     "value_num": 96.5,
+     "unit": "nm"
+    },
+    {
+     "property": "phase",
+     "quote": "At full calcination (900 °C), the diffraction peaks match, both in position and relative intensity, with indexed orthorhombic CaFe2O4 (PDF card No. 00-032-0168), indicating strong phase purity and consistency between batched syntheses of pCFO across fuel-to-oxidizer ratios.",
+     "measured_by": "xrd_1",
+     "value_text": "orthorhombic CaFe2O4 (PDF card No. 00-032-0168), strong phase purity"
+    },
+    {
+     "property": "morphology",
+     "quote": "Across the board, particles are randomly distributed, smooth, and shaped like oblong beans or Tic Tacs that range in length from 200 nm to 2 μm.",
+     "measured_by": "sem_1",
+     "value_text": "randomly distributed, smooth, shaped like oblong beans or Tic Tacs"
+    },
+    {
+     "property": "particle_size_length",
+     "quote": "Across the board, particles are randomly distributed, smooth, and shaped like oblong beans or Tic Tacs that range in length from 200 nm to 2 μm.",
+     "measured_by": "sem_1",
+     "value_text": "200 nm to 2 μm"
+    },
+    {
+     "property": "elemental_composition_Fe_to_Ca_atomic_ratio",
+     "quote": "Fe | 2 | 2.6 | 2.4 | 2.2 | 2.6 | 4.0 | 2.6 | 2.2",
+     "measured_by": "xps_1",
+     "value_num": 2.4,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_O_to_Ca_atomic_ratio",
+     "quote": "O | 4 | 5.6 | 5.6 | 5.0 | 9.0 | 7.2 | 5.7 | 5.0",
+     "measured_by": "xps_1",
+     "value_num": 5.6,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_C_to_Ca_atomic_ratio",
+     "quote": "C | – | 1.9 | 1.8 | 1.5 | 7.8 | 2.4 | 1.7 | 1.5",
+     "measured_by": "xps_1",
+     "value_num": 1.8,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_Cl_to_Ca_atomic_ratio",
+     "quote": "Cl | – | 0.08 | 0.1 | 0.1 | – | – | – | 0.1",
+     "measured_by": "xps_1",
+     "value_num": 0.1,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_A_Ap",
+     "quote": "A+A’ | 68.68 | 76.05 | 64.28 | - | 20.41 | 63.29 | 64.28",
+     "measured_by": "xps_1",
+     "value_num": 76.05,
+     "unit": "%"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_B_Bp",
+     "quote": "B+B’ | 31.32 | 23.95 | 35.72 | 100 | 70.59 | 36.71 | 35.72",
+     "measured_by": "xps_1",
+     "value_num": 23.95,
+     "unit": "%"
+    },
+    {
+     "property": "specific_capacity_first_discharge_94mAg-1",
+     "quote": "Highest Initial Discharge (mAh/g @ mA/g) | ~900 @ 50 | 1050 @ 100 | 718 @ 74 | 861 @ 94 | 995 @ 109 | 919 @ 94 | 967 @ 129 | 922 @ 129 | 995 @ 109",
+     "measured_by": "ec_CFO_phi1_900",
+     "value_num": 861.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_second_discharge_94mAg-1",
+     "quote": "Highest Second Discharge (mAh/g @ mA/g) | ~560 @ 50 | 671 @ 100 | 501 @ 74 | 504 @ 94 | 637 @ 109 | 630 @ 94 | 775 @ 129 | 692 @ 129 | 637 @ 109",
+     "measured_by": "ec_CFO_phi1_900",
+     "value_num": 504.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_lowest_discharge_943mAg-1",
+     "quote": "Lowest Discharge (mAh/g @ mA/g) | 321 @ 1000 | 311 @ 5000 | 298 @ 744 | 265 @ 943 | 383 @ 1088 | 247 @ 943 | 488 @ 1286 | 551 @ 1286 | 383 @ 1088",
+     "measured_by": "ec_CFO_phi1_900",
+     "value_num": 265.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_end_rate_recovery_94mAg-1",
+     "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94 | 621 @ 109 | 412 @ 94 | 597 @ 129 | 731 @ 129 | 621 @ 109",
+     "measured_by": "ec_CFO_phi1_900",
+     "value_num": 502.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "retention_stability_longterm_cycling_shape",
+     "quote": "Longterm Cycling Shape | Flat | Flat | Flat | Flat | Small Hill | Dip-plateau | Dip-plateau | Dip-plateau | Small Hill",
+     "measured_by": "ec_CFO_phi1_900",
+     "value_text": "Flat"
+    },
+    {
+     "property": "specific_capacity_about_500_cycles_943mAg-1",
+     "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943 | ~487 @ 1088 | 29-220 @ 943 | 137-432 @ 1286 | 136-594 @ 1286 | ~487 @ 1088",
+     "measured_by": "ec_CFO_phi1_900",
+     "value_text": "~288 mAh/g @ 943 mA/g"
+    },
+    {
+     "property": "specific_capacity_cycling_end_cycle_500",
+     "quote": "(b) subsequent long-term cycling performance of pCFO synthesized at increasing ϕ and calcined at 900 °C",
+     "measured_by": "ec_CFO_phi1_900",
+     "value_num": 280,
+     "unit": "mAh-g-1",
+     "from_figure": "Fig. 7b"
+    }
+   ]
+  },
+  {
+   "label": "CFO_phi0.675_900",
+   "parent": "CFO_phi1.325_900",
+   "material": {
+    "name": "pCFO",
+    "formula": "CaFe2O4",
+    "family": "oxyde",
+    "phase": "orthorhombic CaFe2O4",
+    "morphology": "oblong particles with macroporous voids"
+   },
+   "quote": "different batches of pCFO were synthesized at ϕ’s of 0.675 (fuel-lean condition), 1 (stoichiometrically balanced condition), and 1.325 (fuel-rich condition), which also correspond to the fuel-to-oxidizer mole ratios, n, of 1, 1.48, and 1.96, respectively",
+   "variations": [
+    {
+     "parameter": "glycine",
+     "value_text": "ϕ = 0.675, fuel-lean (fuel-to-oxidizer mole ratio n = 1)",
+     "parent_value": "ϕ = 1.325 (n = 1.96)",
+     "quote": "different batches of pCFO were synthesized at ϕ’s of 0.675 (fuel-lean condition), 1 (stoichiometrically balanced condition), and 1.325 (fuel-rich condition), which also correspond to the fuel-to-oxidizer mole ratios, n, of 1, 1.48, and 1.96, respectively"
+    },
+    {
+     "parameter": "temperature",
+     "step_order": 3,
+     "value_num": 300,
+     "unit": "°C",
+     "parent_value": "250–300 °C",
+     "quote": "timeline of synthesis by setting the hot plate surface temperature to 300 °C"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "id": "ec_CFO_phi0.675_900",
+     "technique": "electrochemistry",
+     "instrument": "8 Channel Battery Analyzer (MTI Corp.), CR2032 half cell vs. Li",
+     "result": "galvanostatic charge-discharge: rate test at four currents (cycles 1–20, one-minute constant-voltage step at 3 V between charge and discharge) then 500 cycles at the highest current",
+     "quote": "Galvanostatic electrochemical performance was evaluated using an 8 Channel Battery Analyzer (MTI Corp.).",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich)",
+       "value_text": "1 M LiPF6 in EC/DMC 1:1 (50–80 μL; Sigma-Aldrich)"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "potentials given vs. Li/Li+"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "Li chip as anode",
+       "value_text": "Li chip"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "| 0.675 | 1.33 | 74 | 149 | 372 | 744 |",
+       "value_num": 1.33,
+       "unit": "mg"
+      },
+      {
+       "name": "current_density",
+       "quote": "| 0.675 | 1.33 | 74 | 149 | 372 | 744 |",
+       "value_text": "74, 149, 372, 744 mA g-1"
+      },
+      {
+       "name": "potential_window",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "between 0.01 and 3 V vs. Li/Li+"
+      }
+     ],
+     "not_stated": [
+      "scan_rate"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size",
+     "quote": "Estimations of average crystallite size, based on the Scherrer equation, are 107.9 nm, 96.5 nm, and 102.6 nm for samples prepared at ϕ = 0.675, 1, and 1.325, respectively",
+     "measured_by": "xrd_1",
+     "value_num": 107.9,
+     "unit": "nm"
+    },
+    {
+     "property": "phase",
+     "quote": "At full calcination (900 °C), the diffraction peaks match, both in position and relative intensity, with indexed orthorhombic CaFe2O4 (PDF card No. 00-032-0168), indicating strong phase purity and consistency between batched syntheses of pCFO across fuel-to-oxidizer ratios.",
+     "measured_by": "xrd_1",
+     "value_text": "orthorhombic CaFe2O4 (PDF card No. 00-032-0168), strong phase purity"
+    },
+    {
+     "property": "morphology",
+     "quote": "Across the board, particles are randomly distributed, smooth, and shaped like oblong beans or Tic Tacs that range in length from 200 nm to 2 μm.",
+     "measured_by": "sem_1",
+     "value_text": "randomly distributed, smooth, shaped like oblong beans or Tic Tacs"
+    },
+    {
+     "property": "particle_size_length",
+     "quote": "Across the board, particles are randomly distributed, smooth, and shaped like oblong beans or Tic Tacs that range in length from 200 nm to 2 μm.",
+     "measured_by": "sem_1",
+     "value_text": "200 nm to 2 μm"
+    },
+    {
+     "property": "elemental_composition_Fe_to_Ca_atomic_ratio",
+     "quote": "Fe | 2 | 2.6 | 2.4 | 2.2 | 2.6 | 4.0 | 2.6 | 2.2",
+     "measured_by": "xps_1",
+     "value_num": 2.6,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_O_to_Ca_atomic_ratio",
+     "quote": "O | 4 | 5.6 | 5.6 | 5.0 | 9.0 | 7.2 | 5.7 | 5.0",
+     "measured_by": "xps_1",
+     "value_num": 5.6,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_C_to_Ca_atomic_ratio",
+     "quote": "C | – | 1.9 | 1.8 | 1.5 | 7.8 | 2.4 | 1.7 | 1.5",
+     "measured_by": "xps_1",
+     "value_num": 1.9,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_Cl_to_Ca_atomic_ratio",
+     "quote": "Cl | – | 0.08 | 0.1 | 0.1 | – | – | – | 0.1",
+     "measured_by": "xps_1",
+     "value_num": 0.08,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_A_Ap",
+     "quote": "A+A’ | 68.68 | 76.05 | 64.28 | - | 20.41 | 63.29 | 64.28",
+     "measured_by": "xps_1",
+     "value_num": 68.68,
+     "unit": "%"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_B_Bp",
+     "quote": "B+B’ | 31.32 | 23.95 | 35.72 | 100 | 70.59 | 36.71 | 35.72",
+     "measured_by": "xps_1",
+     "value_num": 31.32,
+     "unit": "%"
+    },
+    {
+     "property": "specific_capacity_first_discharge_74mAg-1",
+     "quote": "Highest Initial Discharge (mAh/g @ mA/g) | ~900 @ 50 | 1050 @ 100 | 718 @ 74 | 861 @ 94 | 995 @ 109 | 919 @ 94 | 967 @ 129 | 922 @ 129 | 995 @ 109",
+     "measured_by": "ec_CFO_phi0.675_900",
+     "value_num": 718.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_second_discharge_74mAg-1",
+     "quote": "Highest Second Discharge (mAh/g @ mA/g) | ~560 @ 50 | 671 @ 100 | 501 @ 74 | 504 @ 94 | 637 @ 109 | 630 @ 94 | 775 @ 129 | 692 @ 129 | 637 @ 109",
+     "measured_by": "ec_CFO_phi0.675_900",
+     "value_num": 501.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_lowest_discharge_744mAg-1",
+     "quote": "Lowest Discharge (mAh/g @ mA/g) | 321 @ 1000 | 311 @ 5000 | 298 @ 744 | 265 @ 943 | 383 @ 1088 | 247 @ 943 | 488 @ 1286 | 551 @ 1286 | 383 @ 1088",
+     "measured_by": "ec_CFO_phi0.675_900",
+     "value_num": 298.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_end_rate_recovery_74mAg-1",
+     "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94 | 621 @ 109 | 412 @ 94 | 597 @ 129 | 731 @ 129 | 621 @ 109",
+     "measured_by": "ec_CFO_phi0.675_900",
+     "value_num": 484.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "retention_stability_longterm_cycling_shape",
+     "quote": "Longterm Cycling Shape | Flat | Flat | Flat | Flat | Small Hill | Dip-plateau | Dip-plateau | Dip-plateau | Small Hill",
+     "measured_by": "ec_CFO_phi0.675_900",
+     "value_text": "Flat"
+    },
+    {
+     "property": "specific_capacity_about_500_cycles_744mAg-1",
+     "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943 | ~487 @ 1088 | 29-220 @ 943 | 137-432 @ 1286 | 136-594 @ 1286 | ~487 @ 1088",
+     "measured_by": "ec_CFO_phi0.675_900",
+     "value_text": "~288 mAh/g @ 744 mA/g"
+    },
+    {
+     "property": "specific_capacity_cycling_end_cycle_500",
+     "quote": "(b) subsequent long-term cycling performance of pCFO synthesized at increasing ϕ and calcined at 900 °C",
+     "measured_by": "ec_CFO_phi0.675_900",
+     "value_num": 230,
+     "unit": "mAh-g-1",
+     "from_figure": "Fig. 7b"
+    }
+   ]
+  },
+  {
+   "label": "CFO_phi1.325_700",
+   "parent": "CFO_phi1.325_900",
+   "material": {
+    "name": "pCFO calcined at 700 °C",
+    "formula": "CaFe2O4",
+    "family": "oxyde",
+    "phase": "CaFe2O4 with unidentified extra phase",
+    "morphology": "fuzzy pieces of shale or coral-encased rock, 1–15 μm"
+   },
+   "quote": "To evaluate the effectiveness of calcination temperature on pCFO prepared in fuel-rich (ϕ = 1.325) conditions, pCFO samples were heated to various temperatures after synthesis",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 6,
+     "value_num": 700,
+     "unit": "°C",
+     "parent_value": "900 °C",
+     "quote": "This powder was then calcined in air at different holding temperatures of 550, 700, or 900 °C (furnace ramping rate of 10 °C per minute) for 3 h"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "id": "ec_CFO_phi1.325_700",
+     "technique": "electrochemistry",
+     "instrument": "8 Channel Battery Analyzer (MTI Corp.), CR2032 half cell vs. Li",
+     "result": "galvanostatic charge-discharge: rate test at four currents (cycles 1–20, one-minute constant-voltage step at 3 V between charge and discharge) then 500 cycles at the highest current",
+     "quote": "Galvanostatic electrochemical performance was evaluated using an 8 Channel Battery Analyzer (MTI Corp.).",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich)",
+       "value_text": "1 M LiPF6 in EC/DMC 1:1 (50–80 μL; Sigma-Aldrich)"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "potentials given vs. Li/Li+"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "Li chip as anode",
+       "value_text": "Li chip"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "| 700 ⁰C | 0.77 | 129 | 257 | 643 | 1286 |",
+       "value_num": 0.77,
+       "unit": "mg"
+      },
+      {
+       "name": "current_density",
+       "quote": "| 700 ⁰C | 0.77 | 129 | 257 | 643 | 1286 |",
+       "value_text": "129, 257, 643, 1286 mA g-1"
+      },
+      {
+       "name": "potential_window",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "between 0.01 and 3 V vs. Li/Li+"
+      }
+     ],
+     "not_stated": [
+      "scan_rate"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size",
+     "quote": "with sizes of 6.6 nm, 19.7 nm, 27.8 nm, and 102.6 nm corresponding to the no calcination temperature, 550 °C, 700 °C, and 900 °C samples, respectively",
+     "measured_by": "xrd_1",
+     "value_num": 27.8,
+     "unit": "nm"
+    },
+    {
+     "property": "phase",
+     "quote": "we observe peaks at two theta (2θ) values of 34.4 in the 700 °C sample and 29.36 in the 550 °C sample that do not match with any significant peaks of orthorhombic CaFe2O4, indicating the existence of other as yet identified phases besides CaFe2O4 in these samples",
+     "measured_by": "xrd_1",
+     "value_text": "CaFe2O4 plus other as yet unidentified phases"
+    },
+    {
+     "property": "xrd_peak_position_unassigned",
+     "quote": "peaks at two theta (2θ) values of 34.4 in the 700 °C sample and 29.36 in the 550 °C sample",
+     "measured_by": "xrd_1",
+     "value_num": 34.4,
+     "unit": "2θ"
+    },
+    {
+     "property": "morphology",
+     "quote": "For all samples examined before full calcination at 900 °C, pCFO appears as fuzzy pieces of shale or coral-encased rock between 1 and 15 μm in diameter.",
+     "measured_by": "sem_1",
+     "value_text": "fuzzy pieces of shale or coral-encased rock between 1 and 15 μm in diameter"
+    },
+    {
+     "property": "particle_size_grain",
+     "quote": "Higher magnification inspections reveal smaller grains (50–200 nm) of material that dot the surface of the larger pieces, creating dense, nano-sized alcoves on the surface.",
+     "measured_by": "sem_1",
+     "value_text": "smaller grains (50–200 nm) on the surface of the larger pieces"
+    },
+    {
+     "property": "elemental_composition_Fe_to_Ca_atomic_ratio",
+     "quote": "Fe | 2 | 2.6 | 2.4 | 2.2 | 2.6 | 4.0 | 2.6 | 2.2",
+     "measured_by": "xps_1",
+     "value_num": 2.6,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_O_to_Ca_atomic_ratio",
+     "quote": "O | 4 | 5.6 | 5.6 | 5.0 | 9.0 | 7.2 | 5.7 | 5.0",
+     "measured_by": "xps_1",
+     "value_num": 5.7,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_C_to_Ca_atomic_ratio",
+     "quote": "C | – | 1.9 | 1.8 | 1.5 | 7.8 | 2.4 | 1.7 | 1.5",
+     "measured_by": "xps_1",
+     "value_num": 1.7,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_A_Ap",
+     "quote": "A+A’ | 68.68 | 76.05 | 64.28 | - | 20.41 | 63.29 | 64.28",
+     "measured_by": "xps_1",
+     "value_num": 63.29,
+     "unit": "%"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_B_Bp",
+     "quote": "B+B’ | 31.32 | 23.95 | 35.72 | 100 | 70.59 | 36.71 | 35.72",
+     "measured_by": "xps_1",
+     "value_num": 36.71,
+     "unit": "%"
+    },
+    {
+     "property": "xps_binding_energy_O1s_primary",
+     "quote": "The O 1 s spectra for calcined samples have one primary peak at binding energies between 529.0 and 529.5 eV and a secondary peak at a binding energy of 531.0 eV (Fig. 5d)",
+     "measured_by": "xps_1",
+     "unit": "eV",
+     "value_text": "between 529.0 and 529.5 eV"
+    },
+    {
+     "property": "xps_binding_energy_O1s_secondary",
+     "quote": "The O 1 s spectra for calcined samples have one primary peak at binding energies between 529.0 and 529.5 eV and a secondary peak at a binding energy of 531.0 eV (Fig. 5d)",
+     "measured_by": "xps_1",
+     "value_num": 531.0,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_C1s_primary",
+     "quote": "The C 1 s spectra for calcined samples mimic those of the increasing ϕ samples with two adventitious carbon peaks at binding energies of 284.6 eV and 289.1 eV (Fig. 5e)",
+     "measured_by": "xps_1",
+     "value_num": 284.6,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_C1s_secondary",
+     "quote": "The C 1 s spectra for calcined samples mimic those of the increasing ϕ samples with two adventitious carbon peaks at binding energies of 284.6 eV and 289.1 eV (Fig. 5e)",
+     "measured_by": "xps_1",
+     "value_num": 289.1,
+     "unit": "eV"
+    },
+    {
+     "property": "specific_capacity_first_discharge_129mAg-1",
+     "quote": "Highest Initial Discharge (mAh/g @ mA/g) | ~900 @ 50 | 1050 @ 100 | 718 @ 74 | 861 @ 94 | 995 @ 109 | 919 @ 94 | 967 @ 129 | 922 @ 129 | 995 @ 109",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_num": 922.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_second_discharge_129mAg-1",
+     "quote": "Highest Second Discharge (mAh/g @ mA/g) | ~560 @ 50 | 671 @ 100 | 501 @ 74 | 504 @ 94 | 637 @ 109 | 630 @ 94 | 775 @ 129 | 692 @ 129 | 637 @ 109",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_num": 692.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_lowest_discharge_1286mAg-1",
+     "quote": "Lowest Discharge (mAh/g @ mA/g) | 321 @ 1000 | 311 @ 5000 | 298 @ 744 | 265 @ 943 | 383 @ 1088 | 247 @ 943 | 488 @ 1286 | 551 @ 1286 | 383 @ 1088",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_num": 551.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_end_rate_recovery_129mAg-1",
+     "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94 | 621 @ 109 | 412 @ 94 | 597 @ 129 | 731 @ 129 | 621 @ 109",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_num": 731.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "retention_stability_longterm_cycling_shape",
+     "quote": "Longterm Cycling Shape | Flat | Flat | Flat | Flat | Small Hill | Dip-plateau | Dip-plateau | Dip-plateau | Small Hill",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_text": "Dip-plateau"
+    },
+    {
+     "property": "specific_capacity_about_500_cycles_1286mAg-1",
+     "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943 | ~487 @ 1088 | 29-220 @ 943 | 137-432 @ 1286 | 136-594 @ 1286 | ~487 @ 1088",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_text": "136-594 mAh/g @ 1286 mA/g"
+    },
+    {
+     "property": "retention_stability_500_cycles_pct_of_initial",
+     "quote": "The capacities for the partially calcined samples (550 °C and 700 °C) dramatically drop to 25–35% of their initial capacities around the 100th cycle and only rise to 83% and 43% of their initial capacities, respectively, by the end of the 500 cycles",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_num": 43,
+     "unit": "%"
+    },
+    {
+     "property": "retention_stability_cycle_100_pct_of_initial",
+     "quote": "The capacities for the partially calcined samples (550 °C and 700 °C) dramatically drop to 25–35% of their initial capacities around the 100th cycle and only rise to 83% and 43% of their initial capacities, respectively, by the end of the 500 cycles",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_text": "25–35% of initial capacity around the 100th cycle"
+    },
+    {
+     "property": "specific_capacity_average_cycles_17-20",
+     "quote": "The 700 °C sample also shows a stronger recovery and bounces back to an average of 733 mAh-g-1 across cycles 17–20, compared to an average of 690 mAh-g-1 across earlier cycles 2–4 at the same current.",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_num": 733,
+     "unit": "mAh-g-1"
+    },
+    {
+     "property": "specific_capacity_average_cycles_2-4",
+     "quote": "The 700 °C sample also shows a stronger recovery and bounces back to an average of 733 mAh-g-1 across cycles 17–20, compared to an average of 690 mAh-g-1 across earlier cycles 2–4 at the same current.",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_num": 690,
+     "unit": "mAh-g-1"
+    },
+    {
+     "property": "specific_capacity_cycling_end_cycle_500",
+     "quote": "(d) subsequent long-term cycling performance of pCFO synthesized at ϕ = 1.325 and calcined at different temperatures",
+     "measured_by": "ec_CFO_phi1.325_700",
+     "value_num": 260,
+     "unit": "mAh-g-1",
+     "from_figure": "Fig. 7d"
+    }
+   ]
+  },
+  {
+   "label": "CFO_phi1.325_550",
+   "parent": "CFO_phi1.325_900",
+   "material": {
+    "name": "pCFO calcined at 550 °C",
+    "formula": "CaFe2O4",
+    "family": "oxyde",
+    "phase": "CaFe2O4 with unidentified extra phase",
+    "morphology": "fuzzy pieces of shale or coral-encased rock, 1–15 μm"
+   },
+   "quote": "To evaluate the effectiveness of calcination temperature on pCFO prepared in fuel-rich (ϕ = 1.325) conditions, pCFO samples were heated to various temperatures after synthesis",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 6,
+     "value_num": 550,
+     "unit": "°C",
+     "parent_value": "900 °C",
+     "quote": "This powder was then calcined in air at different holding temperatures of 550, 700, or 900 °C (furnace ramping rate of 10 °C per minute) for 3 h"
+    }
+   ],
+   "succeeded": true,
+   "characterizations": [
+    {
+     "id": "ec_CFO_phi1.325_550",
+     "technique": "electrochemistry",
+     "instrument": "8 Channel Battery Analyzer (MTI Corp.), CR2032 half cell vs. Li",
+     "result": "galvanostatic charge-discharge: rate test at four currents (cycles 1–20, one-minute constant-voltage step at 3 V between charge and discharge) then 500 cycles at the highest current",
+     "quote": "Galvanostatic electrochemical performance was evaluated using an 8 Channel Battery Analyzer (MTI Corp.).",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich)",
+       "value_text": "1 M LiPF6 in EC/DMC 1:1 (50–80 μL; Sigma-Aldrich)"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "potentials given vs. Li/Li+"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "Li chip as anode",
+       "value_text": "Li chip"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "| 550 ⁰C | 0.77 | 129 | 257 | 643 | 1286 |",
+       "value_num": 0.77,
+       "unit": "mg"
+      },
+      {
+       "name": "current_density",
+       "quote": "| 550 ⁰C | 0.77 | 129 | 257 | 643 | 1286 |",
+       "value_text": "129, 257, 643, 1286 mA g-1"
+      },
+      {
+       "name": "potential_window",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "between 0.01 and 3 V vs. Li/Li+"
+      }
+     ],
+     "not_stated": [
+      "scan_rate"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size",
+     "quote": "with sizes of 6.6 nm, 19.7 nm, 27.8 nm, and 102.6 nm corresponding to the no calcination temperature, 550 °C, 700 °C, and 900 °C samples, respectively",
+     "measured_by": "xrd_1",
+     "value_num": 19.7,
+     "unit": "nm"
+    },
+    {
+     "property": "phase",
+     "quote": "we observe peaks at two theta (2θ) values of 34.4 in the 700 °C sample and 29.36 in the 550 °C sample that do not match with any significant peaks of orthorhombic CaFe2O4, indicating the existence of other as yet identified phases besides CaFe2O4 in these samples",
+     "measured_by": "xrd_1",
+     "value_text": "CaFe2O4 plus other as yet unidentified phases"
+    },
+    {
+     "property": "xrd_peak_position_unassigned",
+     "quote": "peaks at two theta (2θ) values of 34.4 in the 700 °C sample and 29.36 in the 550 °C sample",
+     "measured_by": "xrd_1",
+     "value_num": 29.36,
+     "unit": "2θ"
+    },
+    {
+     "property": "morphology",
+     "quote": "For all samples examined before full calcination at 900 °C, pCFO appears as fuzzy pieces of shale or coral-encased rock between 1 and 15 μm in diameter.",
+     "measured_by": "sem_1",
+     "value_text": "fuzzy pieces of shale or coral-encased rock between 1 and 15 μm in diameter"
+    },
+    {
+     "property": "particle_size_grain",
+     "quote": "Higher magnification inspections reveal smaller grains (50–200 nm) of material that dot the surface of the larger pieces, creating dense, nano-sized alcoves on the surface.",
+     "measured_by": "sem_1",
+     "value_text": "smaller grains (50–200 nm) on the surface of the larger pieces"
+    },
+    {
+     "property": "elemental_composition_Fe_to_Ca_atomic_ratio",
+     "quote": "Fe | 2 | 2.6 | 2.4 | 2.2 | 2.6 | 4.0 | 2.6 | 2.2",
+     "measured_by": "xps_1",
+     "value_num": 4.0,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_O_to_Ca_atomic_ratio",
+     "quote": "O | 4 | 5.6 | 5.6 | 5.0 | 9.0 | 7.2 | 5.7 | 5.0",
+     "measured_by": "xps_1",
+     "value_num": 7.2,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_C_to_Ca_atomic_ratio",
+     "quote": "C | – | 1.9 | 1.8 | 1.5 | 7.8 | 2.4 | 1.7 | 1.5",
+     "measured_by": "xps_1",
+     "value_num": 2.4,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_A_Ap",
+     "quote": "A+A’ | 68.68 | 76.05 | 64.28 | - | 20.41 | 63.29 | 64.28",
+     "measured_by": "xps_1",
+     "value_num": 20.41,
+     "unit": "%"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_B_Bp",
+     "quote": "B+B’ | 31.32 | 23.95 | 35.72 | 100 | 70.59 | 36.71 | 35.72",
+     "measured_by": "xps_1",
+     "value_num": 70.59,
+     "unit": "%"
+    },
+    {
+     "property": "xps_binding_energy_O1s_primary",
+     "quote": "The O 1 s spectra for calcined samples have one primary peak at binding energies between 529.0 and 529.5 eV and a secondary peak at a binding energy of 531.0 eV (Fig. 5d)",
+     "measured_by": "xps_1",
+     "unit": "eV",
+     "value_text": "between 529.0 and 529.5 eV"
+    },
+    {
+     "property": "xps_binding_energy_O1s_secondary",
+     "quote": "The O 1 s spectra for calcined samples have one primary peak at binding energies between 529.0 and 529.5 eV and a secondary peak at a binding energy of 531.0 eV (Fig. 5d)",
+     "measured_by": "xps_1",
+     "value_num": 531.0,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_C1s_primary",
+     "quote": "The C 1 s spectra for calcined samples mimic those of the increasing ϕ samples with two adventitious carbon peaks at binding energies of 284.6 eV and 289.1 eV (Fig. 5e)",
+     "measured_by": "xps_1",
+     "value_num": 284.6,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_C1s_secondary",
+     "quote": "The C 1 s spectra for calcined samples mimic those of the increasing ϕ samples with two adventitious carbon peaks at binding energies of 284.6 eV and 289.1 eV (Fig. 5e)",
+     "measured_by": "xps_1",
+     "value_num": 289.1,
+     "unit": "eV"
+    },
+    {
+     "property": "specific_capacity_first_discharge_129mAg-1",
+     "quote": "Highest Initial Discharge (mAh/g @ mA/g) | ~900 @ 50 | 1050 @ 100 | 718 @ 74 | 861 @ 94 | 995 @ 109 | 919 @ 94 | 967 @ 129 | 922 @ 129 | 995 @ 109",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_num": 967.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_second_discharge_129mAg-1",
+     "quote": "Highest Second Discharge (mAh/g @ mA/g) | ~560 @ 50 | 671 @ 100 | 501 @ 74 | 504 @ 94 | 637 @ 109 | 630 @ 94 | 775 @ 129 | 692 @ 129 | 637 @ 109",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_num": 775.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_lowest_discharge_1286mAg-1",
+     "quote": "Lowest Discharge (mAh/g @ mA/g) | 321 @ 1000 | 311 @ 5000 | 298 @ 744 | 265 @ 943 | 383 @ 1088 | 247 @ 943 | 488 @ 1286 | 551 @ 1286 | 383 @ 1088",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_num": 488.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_end_rate_recovery_129mAg-1",
+     "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94 | 621 @ 109 | 412 @ 94 | 597 @ 129 | 731 @ 129 | 621 @ 109",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_num": 597.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "retention_stability_longterm_cycling_shape",
+     "quote": "Longterm Cycling Shape | Flat | Flat | Flat | Flat | Small Hill | Dip-plateau | Dip-plateau | Dip-plateau | Small Hill",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_text": "Dip-plateau"
+    },
+    {
+     "property": "specific_capacity_about_500_cycles_1286mAg-1",
+     "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943 | ~487 @ 1088 | 29-220 @ 943 | 137-432 @ 1286 | 136-594 @ 1286 | ~487 @ 1088",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_text": "137-432 mAh/g @ 1286 mA/g"
+    },
+    {
+     "property": "retention_stability_500_cycles_pct_of_initial",
+     "quote": "The capacities for the partially calcined samples (550 °C and 700 °C) dramatically drop to 25–35% of their initial capacities around the 100th cycle and only rise to 83% and 43% of their initial capacities, respectively, by the end of the 500 cycles",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_num": 83,
+     "unit": "%"
+    },
+    {
+     "property": "retention_stability_cycle_100_pct_of_initial",
+     "quote": "The capacities for the partially calcined samples (550 °C and 700 °C) dramatically drop to 25–35% of their initial capacities around the 100th cycle and only rise to 83% and 43% of their initial capacities, respectively, by the end of the 500 cycles",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_text": "25–35% of initial capacity around the 100th cycle"
+    },
+    {
+     "property": "retention_stability_rate_degradation_cycles_13-20",
+     "quote": "While the 550 °C sample has the highest capacities in cycles 2–8, and so might initially appear to be the strongest between the remaining two, it shows a noticeable sloping decrease in capacity across cycles 13–16 and cycles 17–20, indicating a type of degradation at those currents that is not present in the 700 °C sample.",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_text": "noticeable sloping decrease in capacity across cycles 13–16 and 17–20"
+    },
+    {
+     "property": "specific_capacity_cycling_end_cycle_500",
+     "quote": "(d) subsequent long-term cycling performance of pCFO synthesized at ϕ = 1.325 and calcined at different temperatures",
+     "measured_by": "ec_CFO_phi1.325_550",
+     "value_num": 350,
+     "unit": "mAh-g-1",
+     "from_figure": "Fig. 7d"
+    }
+   ]
+  },
+  {
+   "label": "CFO_phi1.325_nocalc",
+   "parent": "CFO_phi1.325_900",
+   "material": {
+    "name": "as-synthesized (non-calcined) pCFO",
+    "formula": "CaFe2O4",
+    "family": "oxyde",
+    "phase": "poorly crystalline",
+    "morphology": "fuzzy pieces of shale or coral-encased rock, 1–15 μm"
+   },
+   "quote": "To evaluate the effectiveness of calcination temperature on pCFO prepared in fuel-rich (ϕ = 1.325) conditions, pCFO samples were heated to various temperatures after synthesis",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 6,
+     "value_text": "absent (no calcination)",
+     "parent_value": "900 °C",
+     "quote": "with sizes of 6.6 nm, 19.7 nm, 27.8 nm, and 102.6 nm corresponding to the no calcination temperature, 550 °C, 700 °C, and 900 °C samples, respectively"
+    }
+   ],
+   "succeeded": true,
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve the calcium nitrate, iron nitrate and glycine in about 12 mL of deionized water in a beaker (amounts precalculated from the fuel-to-oxidizer ratio, not given).",
+     "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O",
+       "value_num": 12,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "beaker",
+       "detail": null,
+       "quote": "precalculated amounts of the precursor Ca-species, the Fe-species, and glycine were endothermically dissolved in a beaker with ~ 12 mL of DI H2O"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir on a stir/hot plate at room temperature for 5 min with a magnetic stir bar at 200 rpm.",
+     "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+       "value_num": 5,
+       "unit": "min"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+       "value_num": 200,
+       "unit": "rpm"
+      },
+      {
+       "name": "temperature",
+       "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "stir/hot plate with magnetic stir bar",
+       "detail": null,
+       "quote": "placed on a stir/hot plate, and stirred at room temperature for 5 min with a magnetic stir bar spinning at 200 rpm"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Heat the plate to 250–300 °C with continuous stirring: the solution boils, then turns into a dark-brown roiling batter.",
+     "quote": "Next, the plate was heated to 250–300 °C with continuous stirring, starting the Solution Combustion Synthesis (SCS).",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Next, the plate was heated to 250–300 °C with continuous stirring, starting the Solution Combustion Synthesis (SCS).",
+       "value_text": "250–300 °C"
+      },
+      {
+       "name": "duration",
+       "quote": "After 10–15 min, the solution began to boil while maintaining mostly the same dark-red color, opaqueness, and liquid consistency as it had at room temperature. After another 10–15 min, the solution became a dark-brown, roiling batter",
+       "value_text": "10–15 min, then another 10–15 min"
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "combust",
+     "description": "Self-combustion of the batter (rapid, < 3 s), yielding a dark crumbly low-density foam.",
+     "quote": "and within 3–5 more minutes, the rapid (< 3 s) self-combustion reaction occurred",
+     "parameters": [
+      {
+       "name": "duration_to_combustion",
+       "quote": "and within 3–5 more minutes, the rapid (< 3 s) self-combustion reaction occurred",
+       "value_text": "within 3–5 more minutes"
+      },
+      {
+       "name": "duration_combustion",
+       "quote": "and within 3–5 more minutes, the rapid (< 3 s) self-combustion reaction occurred",
+       "value_text": "< 3 s"
+      }
+     ],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "grind",
+     "description": "Grind the foam into a terra-cotta powder.",
+     "quote": "The product was a dark, crumbly, low-density foam that easily ground into a terra-cotta powder.",
+     "parameters": [],
+     "not_stated": [
+      "duration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "ec_CFO_phi1.325_nocalc",
+     "technique": "electrochemistry",
+     "instrument": "8 Channel Battery Analyzer (MTI Corp.), CR2032 half cell vs. Li",
+     "result": "galvanostatic charge-discharge: rate test at four currents (cycles 1–20, one-minute constant-voltage step at 3 V between charge and discharge) then 500 cycles at the highest current",
+     "quote": "Galvanostatic electrochemical performance was evaluated using an 8 Channel Battery Analyzer (MTI Corp.).",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich)",
+       "value_text": "1 M LiPF6 in EC/DMC 1:1 (50–80 μL; Sigma-Aldrich)"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "potentials given vs. Li/Li+"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "Li chip as anode",
+       "value_text": "Li chip"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "| Non-calcined | 1.05 | 94 | 189 | 471 | 943 |",
+       "value_num": 1.05,
+       "unit": "mg"
+      },
+      {
+       "name": "current_density",
+       "quote": "| Non-calcined | 1.05 | 94 | 189 | 471 | 943 |",
+       "value_text": "94, 189, 471, 943 mA g-1"
+      },
+      {
+       "name": "potential_window",
+       "quote": "All tests were between 0.01 and 3 V vs. Li/Li+",
+       "value_text": "between 0.01 and 3 V vs. Li/Li+"
+      }
+     ],
+     "not_stated": [
+      "scan_rate"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallite_size",
+     "quote": "with sizes of 6.6 nm, 19.7 nm, 27.8 nm, and 102.6 nm corresponding to the no calcination temperature, 550 °C, 700 °C, and 900 °C samples, respectively",
+     "measured_by": "xrd_1",
+     "value_num": 6.6,
+     "unit": "nm"
+    },
+    {
+     "property": "morphology",
+     "quote": "For all samples examined before full calcination at 900 °C, pCFO appears as fuzzy pieces of shale or coral-encased rock between 1 and 15 μm in diameter.",
+     "measured_by": "sem_1",
+     "value_text": "fuzzy pieces of shale or coral-encased rock between 1 and 15 μm in diameter"
+    },
+    {
+     "property": "particle_size_grain",
+     "quote": "Higher magnification inspections reveal smaller grains (50–200 nm) of material that dot the surface of the larger pieces, creating dense, nano-sized alcoves on the surface.",
+     "measured_by": "sem_1",
+     "value_text": "smaller grains (50–200 nm) on the surface of the larger pieces"
+    },
+    {
+     "property": "elemental_composition_Fe_to_Ca_atomic_ratio",
+     "quote": "Fe | 2 | 2.6 | 2.4 | 2.2 | 2.6 | 4.0 | 2.6 | 2.2",
+     "measured_by": "xps_1",
+     "value_num": 2.6,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_O_to_Ca_atomic_ratio",
+     "quote": "O | 4 | 5.6 | 5.6 | 5.0 | 9.0 | 7.2 | 5.7 | 5.0",
+     "measured_by": "xps_1",
+     "value_num": 9.0,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_C_to_Ca_atomic_ratio",
+     "quote": "C | – | 1.9 | 1.8 | 1.5 | 7.8 | 2.4 | 1.7 | 1.5",
+     "measured_by": "xps_1",
+     "value_num": 7.8,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "elemental_composition_N_to_Ca_atomic_ratio",
+     "quote": "N | – | – | – | – | 3.5 | – | – | –",
+     "measured_by": "xps_1",
+     "value_num": 3.5,
+     "unit": "atomic ratio (Ca = 1)"
+    },
+    {
+     "property": "xps_species_fraction_Ca2p_B_Bp",
+     "quote": "B+B’ | 31.32 | 23.95 | 35.72 | 100 | 70.59 | 36.71 | 35.72",
+     "measured_by": "xps_1",
+     "value_num": 100,
+     "unit": "%"
+    },
+    {
+     "property": "xps_binding_energy_N1s",
+     "quote": "The second is a sharp N 1 s peak at a binding energy of 400.0 eV in the as-synthesized sample only",
+     "measured_by": "xps_1",
+     "value_num": 400.0,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_O1s_major_component",
+     "quote": "the as-synthesized sample has a very broad, asymmetric peak with a major component at a binding energy of 530.5 eV",
+     "measured_by": "xps_1",
+     "value_num": 530.5,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_C1s_primary",
+     "quote": "the C 1 s spectrum of the as-synthesized sample shows a deviation from its calcined counterparts with a primary peak at a binding energy of 284.6 eV and a taller secondary peak at a binding energy of 287.5 eV",
+     "measured_by": "xps_1",
+     "value_num": 284.6,
+     "unit": "eV"
+    },
+    {
+     "property": "xps_binding_energy_C1s_secondary",
+     "quote": "the C 1 s spectrum of the as-synthesized sample shows a deviation from its calcined counterparts with a primary peak at a binding energy of 284.6 eV and a taller secondary peak at a binding energy of 287.5 eV",
+     "measured_by": "xps_1",
+     "value_num": 287.5,
+     "unit": "eV"
+    },
+    {
+     "property": "specific_capacity_first_discharge_94mAg-1",
+     "quote": "Highest Initial Discharge (mAh/g @ mA/g) | ~900 @ 50 | 1050 @ 100 | 718 @ 74 | 861 @ 94 | 995 @ 109 | 919 @ 94 | 967 @ 129 | 922 @ 129 | 995 @ 109",
+     "measured_by": "ec_CFO_phi1.325_nocalc",
+     "value_num": 919.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_second_discharge_94mAg-1",
+     "quote": "Highest Second Discharge (mAh/g @ mA/g) | ~560 @ 50 | 671 @ 100 | 501 @ 74 | 504 @ 94 | 637 @ 109 | 630 @ 94 | 775 @ 129 | 692 @ 129 | 637 @ 109",
+     "measured_by": "ec_CFO_phi1.325_nocalc",
+     "value_num": 630.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_lowest_discharge_943mAg-1",
+     "quote": "Lowest Discharge (mAh/g @ mA/g) | 321 @ 1000 | 311 @ 5000 | 298 @ 744 | 265 @ 943 | 383 @ 1088 | 247 @ 943 | 488 @ 1286 | 551 @ 1286 | 383 @ 1088",
+     "measured_by": "ec_CFO_phi1.325_nocalc",
+     "value_num": 247.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "specific_capacity_end_rate_recovery_94mAg-1",
+     "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94 | 621 @ 109 | 412 @ 94 | 597 @ 129 | 731 @ 129 | 621 @ 109",
+     "measured_by": "ec_CFO_phi1.325_nocalc",
+     "value_num": 412.0,
+     "unit": "mAh/g"
+    },
+    {
+     "property": "retention_stability_longterm_cycling_shape",
+     "quote": "Longterm Cycling Shape | Flat | Flat | Flat | Flat | Small Hill | Dip-plateau | Dip-plateau | Dip-plateau | Small Hill",
+     "measured_by": "ec_CFO_phi1.325_nocalc",
+     "value_text": "Dip-plateau"
+    },
+    {
+     "property": "specific_capacity_about_500_cycles_943mAg-1",
+     "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943 | ~487 @ 1088 | 29-220 @ 943 | 137-432 @ 1286 | 136-594 @ 1286 | ~487 @ 1088",
+     "measured_by": "ec_CFO_phi1.325_nocalc",
+     "value_text": "29-220 mAh/g @ 943 mA/g"
+    },
+    {
+     "property": "retention_stability_500_cycles_qualitative",
+     "quote": "The non-calcined sample shows the least stability, with a drop in capacity over the first 100 cycles that appears to stabilize over the next 180 cycles but drops dramatically between cycles 300–370 and only partially recovers for the remaining cycles.",
+     "measured_by": "ec_CFO_phi1.325_nocalc",
+     "value_text": "least stable: drop over first 100 cycles, stabilization over next 180, dramatic drop between cycles 300–370, partial recovery"
+    },
+    {
+     "property": "specific_capacity_cycling_end_cycle_500",
+     "quote": "(d) subsequent long-term cycling performance of pCFO synthesized at ϕ = 1.325 and calcined at different temperatures",
+     "measured_by": "ec_CFO_phi1.325_nocalc",
+     "value_num": 80,
+     "unit": "mAh-g-1",
+     "from_figure": "Fig. 7d"
+    }
+   ]
+  },
+  {
+   "label": "Electrode_pCFO",
+   "parent": null,
+   "kind": "device",
+   "methods": [
+    "device_fabrication"
+   ],
+   "material": {
+    "name": "pCFO composite electrode in a CR2032 half cell vs. Li",
+    "formula": null,
+    "family": "batterie",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "manual slurry mixing and painting of an electrode, then coin-cell assembly",
+   "quote": "Electrodes were prepared via a manual slurry mixing and deposition process.",
+   "scale": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "pCFO active material (any sample of the series, routes CFO_*)",
+     "formula": "CaFe2O4",
+     "role": "intermediate",
+     "amount_text": "7 (of a 7:2:1 mass ratio)",
+     "quote": "Active material (pCFO), carbon black (acetylene black), and carboxymethyl cellulose sodium salt (CMC; dissolved in DI H2O overnight at 12.5 mg-mL-1) were combined in a 7:2:1 mass ratio."
+    },
+    {
+     "name": "acetylene black carbon black",
+     "formula": "C",
+     "role": "conductive_additive",
+     "amount_text": "2 (of a 7:2:1 mass ratio)",
+     "purity": "99.9 + %",
+     "supplier": "Alfa Aesar",
+     "supplier_quote": "carbon black (acetylene black, 99.9 + %, Alfa Aesar)",
+     "quote": "Active material (pCFO), carbon black (acetylene black), and carboxymethyl cellulose sodium salt (CMC; dissolved in DI H2O overnight at 12.5 mg-mL-1) were combined in a 7:2:1 mass ratio."
+    },
+    {
+     "name": "carboxymethyl cellulose sodium salt (CMC)",
+     "formula": null,
+     "role": "binder",
+     "amount_text": "1 (of a 7:2:1 mass ratio; dissolved in DI H2O overnight at 12.5 mg-mL-1)",
+     "supplier": "Tokyo Chemical Industry",
+     "supplier_quote": "carboxymethyl cellulose sodium salt (CMC, n ~ 1050, Tokyo Chemical Industry)",
+     "quote": "Active material (pCFO), carbon black (acetylene black), and carboxymethyl cellulose sodium salt (CMC; dissolved in DI H2O overnight at 12.5 mg-mL-1) were combined in a 7:2:1 mass ratio.",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "deionized water (additional, for resuspension)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "The dried material was then resuspended with additional DI H2O, mixed for 1–2 min",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "stainless steel spacers (15.5 mm diameter)",
+     "formula": null,
+     "role": "substrate",
+     "supplier": "MTI Corp.",
+     "supplier_quote": "deposited onto stainless steel spacers (15.5 mm diameter, MTI Corp.) while wet via a concentric circle painting technique",
+     "quote": "deposited onto stainless steel spacers (15.5 mm diameter, MTI Corp.) while wet via a concentric circle painting technique"
+    },
+    {
+     "name": "1 M LiPF6 in EC/DMC 1:1",
+     "formula": "LiPF6",
+     "role": "electrolyte",
+     "amount_text": "50–80 μL",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich)",
+     "quote": "Components were typically arranged as follows: cathode-side can, wave spring, pCFO electrode as cathode, separator (Celgard), electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich), Li chip as anode, stainless steel spacer (15.5 mm diameter × 0.5 mm thickness), and anode-side cap.",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "Celgard separator",
+     "formula": null,
+     "role": "separator",
+     "supplier": "Celgard",
+     "supplier_quote": "Components were typically arranged as follows: cathode-side can, wave spring, pCFO electrode as cathode, separator (Celgard), electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich), Li chip as anode, stainless steel spacer (15.5 mm diameter × 0.5 mm thickness), and anode-side cap.",
+     "quote": "Components were typically arranged as follows: cathode-side can, wave spring, pCFO electrode as cathode, separator (Celgard), electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich), Li chip as anode, stainless steel spacer (15.5 mm diameter × 0.5 mm thickness), and anode-side cap.",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "lithium chip",
+     "formula": "Li",
+     "role": "counter_electrode",
+     "quote": "Components were typically arranged as follows: cathode-side can, wave spring, pCFO electrode as cathode, separator (Celgard), electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich), Li chip as anode, stainless steel spacer (15.5 mm diameter × 0.5 mm thickness), and anode-side cap.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Dry mix the active material and the carbon black.",
+     "quote": "First, the active material and carbon black powders were dry mixed for 5 min.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "First, the active material and carbon black powders were dry mixed for 5 min.",
+       "value_num": 5,
+       "unit": "min"
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the CMC solution dropwise.",
+     "quote": "Then, CMC was added dropwise",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "Then, CMC was added dropwise",
+       "value_text": "dropwise"
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "action": "grind",
+     "description": "Grind the slurry with a mortar and pestle until the liquid has evaporated.",
+     "quote": "the whole slurry was thoroughly ground with a mortar and pestle until the liquid had evaporated (~ 30 min)",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "the whole slurry was thoroughly ground with a mortar and pestle until the liquid had evaporated (~ 30 min)",
+       "value_num": 30,
+       "unit": "min"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "mortar and pestle",
+       "detail": null,
+       "quote": "the whole slurry was thoroughly ground with a mortar and pestle until the liquid had evaporated (~ 30 min)"
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "action": "disperse",
+     "description": "Resuspend the dried material with additional DI water.",
+     "quote": "The dried material was then resuspended with additional DI H2O, mixed for 1–2 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The dried material was then resuspended with additional DI H2O, mixed for 1–2 min",
+       "value_text": "1–2 min"
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "action": "coat",
+     "description": "Deposit the wet slurry on stainless steel spacers by a concentric circle painting technique.",
+     "quote": "deposited onto stainless steel spacers (15.5 mm diameter, MTI Corp.) while wet via a concentric circle painting technique",
+     "parameters": [
+      {
+       "name": "mass",
+       "quote": "Active material mass loadings were between 0.4 and 0.7 mg-cm-2.",
+       "value_text": "between 0.4 and 0.7 mg-cm-2 (active material loading)"
+      },
+      {
+       "name": "substrate",
+       "quote": "deposited onto stainless steel spacers (15.5 mm diameter, MTI Corp.) while wet via a concentric circle painting technique",
+       "value_text": "stainless steel spacers (15.5 mm diameter, MTI Corp.)"
+      }
+     ],
+     "not_stated": [
+      "thickness"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry the electrodes in air.",
+     "quote": "After drying in air",
+     "parameters": [
+      {
+       "name": "drying_mode",
+       "quote": "After drying in air",
+       "value_text": "air"
+      }
+     ],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "dry",
+     "description": "Dry the electrodes further in vacuum at 80 °C for 5 h.",
+     "quote": "electrodes were further dried in vacuum at 80 °C for 5 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "electrodes were further dried in vacuum at 80 °C for 5 h",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "electrodes were further dried in vacuum at 80 °C for 5 h",
+       "value_num": 5,
+       "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "electrodes were further dried in vacuum at 80 °C for 5 h",
+       "value_text": "vacuum"
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "action": "assemble",
+     "description": "Assemble a type 2032 coin half cell: can, wave spring, pCFO electrode, Celgard separator, electrolyte, Li chip, spacer, cap.",
+     "quote": "Coin cells (type 2032) were assembled as half cells in an argon-filled glovebox (< 0.5 ppm H2O, < 0.5 ppm O2).",
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "quote": "Coin cells (type 2032) were assembled as half cells in an argon-filled glovebox (< 0.5 ppm H2O, < 0.5 ppm O2).",
+       "value_text": "argon-filled glovebox (< 0.5 ppm H2O, < 0.5 ppm O2)"
+      },
+      {
+       "name": "volume",
+       "quote": "electrolyte (50–80 μL of 1 M LiPF6 in EC/DMC 1:1; Sigma-Aldrich)",
+       "value_text": "50–80 μL (electrolyte)"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "coin cell (type 2032)",
+       "detail": "half cell",
+       "quote": "Coin cells (type 2032) were assembled as half cells in an argon-filled glovebox (< 0.5 ppm H2O, < 0.5 ppm O2)."
+      }
+     ]
+    },
+    {
+     "order": 9,
+     "action": "assemble",
+     "description": "Crimp the cell manually for a hermetic seal.",
+     "quote": "Devices were manually crimped for a hermetical seal",
+     "parameters": []
+    },
+    {
+     "order": 10,
+     "action": "store",
+     "description": "Leave the cell to stabilize before testing.",
+     "quote": "then left alone to stabilize for at least 2 h before testing",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "then left alone to stabilize for at least 2 h before testing",
+       "value_text": "at least 2 h"
+      }
+     ]
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [
+    {
+     "property": "voltage_window_potential_open_circuit_voltage",
+     "quote": "Open circuit voltage of devices before testing was usually 2.5—2.7 V vs. Li/Li+.",
+     "measured_by": "not_stated",
+     "value_text": "usually 2.5—2.7 V vs. Li/Li+"
+    }
+   ],
+   "missing_fields": [
+    "current collector besides the spacer",
+    "volume of added DI water"
+   ]
+  }
+ ],
+ "sample_inventory": [
+  {
+   "sample": "ϕ = 0.675 (fuel-lean), calcined 900 °C",
+   "defined_in": "Results, Preparation; Experimental",
+   "route": "CFO_phi0.675_900",
+   "results_in": [
+    "Table 1",
+    "Fig. 2a",
+    "Fig. 3a",
+    "Fig. 4",
+    "Fig. 7a, b",
+    "Table S1",
+    "Table S2",
+    "Fig. S1"
+   ]
+  },
+  {
+   "sample": "ϕ = 1 (stoichiometric), calcined 900 °C",
+   "defined_in": "Results, Preparation",
+   "route": "CFO_phi1_900",
+   "results_in": [
+    "Table 1",
+    "Fig. 2a",
+    "Fig. 3a",
+    "Fig. 4",
+    "Fig. 7a, b",
+    "Table S1",
+    "Table S2",
+    "Fig. S1"
+   ]
+  },
+  {
+   "sample": "ϕ = 1.325 (fuel-rich), calcined 900 °C (also the 900 °C sample of the calcination series)",
+   "defined_in": "Results, Preparation",
+   "route": "CFO_phi1.325_900",
+   "results_in": [
+    "Table 1",
+    "Figs. 2–7",
+    "Table S1",
+    "Table S2",
+    "Fig. S1"
+   ]
+  },
+  {
+   "sample": "ϕ = 1.325, calcined 700 °C",
+   "defined_in": "Experimental, Active material synthesis; Results",
+   "route": "CFO_phi1.325_700",
+   "results_in": [
+    "Table 1",
+    "Fig. 2b",
+    "Fig. 3b",
+    "Fig. 5",
+    "Fig. 7c, d",
+    "Table S1",
+    "Table S2",
+    "Fig. S1"
+   ]
+  },
+  {
+   "sample": "ϕ = 1.325, calcined 550 °C",
+   "defined_in": "Experimental, Active material synthesis; Results",
+   "route": "CFO_phi1.325_550",
+   "results_in": [
+    "Table 1",
+    "Fig. 2b",
+    "Fig. 3b",
+    "Fig. 5",
+    "Fig. 7c, d",
+    "Table S1",
+    "Table S2",
+    "Fig. S1"
+   ]
+  },
+  {
+   "sample": "ϕ = 1.325, non-calcined (as-synthesized)",
+   "defined_in": "Results, Material characterization",
+   "route": "CFO_phi1.325_nocalc",
+   "results_in": [
+    "Table 1",
+    "Fig. 2b",
+    "Fig. 3b",
+    "Fig. 5",
+    "Fig. 7c, d",
+    "Table S1",
+    "Table S2",
+    "Fig. S1"
+   ]
+  },
+  {
+   "sample": "pCFO of Shaji et al. (Table S1, Ref [1])",
+   "defined_in": "Table S1",
+   "route": null,
+   "why": "Valeurs de la littérature (solution combustion), rangées dans comparisons"
+  },
+  {
+   "sample": "pCFO of Han et al. (Table S1, Ref [2])",
+   "defined_in": "Table S1",
+   "route": null,
+   "why": "Valeurs de la littérature (sol–gel), rangées dans comparisons"
+  },
+  {
+   "sample": "electrodes and coin cells (all samples)",
+   "defined_in": "Experimental, Electrode preparation, Coin cell preparation",
+   "route": "Electrode_pCFO",
+   "results_in": [
+    "Figs. 6, 7"
+   ]
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "porous CaFe2O4 by solution combustion (Table S1, Ref [1], Shaji et al.)",
+   "property": "highest_initial_discharge_capacity",
+   "value_text": "~900 @ 50 (mAh/g @ mA/g)",
+   "ref_id": "CR39",
+   "quote": "Highest Initial Discharge (mAh/g @ mA/g) | ~900 @ 50 | 1050 @ 100 | 718 @ 74 | 861 @ 94 | 995 @ 109 | 919 @ 94 | 967 @ 129 | 922 @ 129 | 995 @ 109"
+  },
+  {
+   "material": "porous CaFe2O4 by sol–gel (Table S1, Ref [2], Han et al.)",
+   "property": "highest_initial_discharge_capacity",
+   "value_text": "1050 @ 100 (mAh/g @ mA/g)",
+   "ref_id": "CR34",
+   "quote": "Highest Initial Discharge (mAh/g @ mA/g) | ~900 @ 50 | 1050 @ 100 | 718 @ 74 | 861 @ 94 | 995 @ 109 | 919 @ 94 | 967 @ 129 | 922 @ 129 | 995 @ 109"
+  },
+  {
+   "material": "porous CaFe2O4 by solution combustion (Table S1, Ref [1], Shaji et al.)",
+   "property": "highest_second_discharge_capacity",
+   "value_text": "~560 @ 50 (mAh/g @ mA/g)",
+   "ref_id": "CR39",
+   "quote": "Highest Second Discharge (mAh/g @ mA/g) | ~560 @ 50 | 671 @ 100 | 501 @ 74 | 504 @ 94 | 637 @ 109 | 630 @ 94 | 775 @ 129 | 692 @ 129 | 637 @ 109"
+  },
+  {
+   "material": "porous CaFe2O4 by sol–gel (Table S1, Ref [2], Han et al.)",
+   "property": "highest_second_discharge_capacity",
+   "value_text": "671 @ 100 (mAh/g @ mA/g)",
+   "ref_id": "CR34",
+   "quote": "Highest Second Discharge (mAh/g @ mA/g) | ~560 @ 50 | 671 @ 100 | 501 @ 74 | 504 @ 94 | 637 @ 109 | 630 @ 94 | 775 @ 129 | 692 @ 129 | 637 @ 109"
+  },
+  {
+   "material": "porous CaFe2O4 by solution combustion (Table S1, Ref [1], Shaji et al.)",
+   "property": "lowest_discharge_capacity",
+   "value_text": "321 @ 1000 (mAh/g @ mA/g)",
+   "ref_id": "CR39",
+   "quote": "Lowest Discharge (mAh/g @ mA/g) | 321 @ 1000 | 311 @ 5000 | 298 @ 744 | 265 @ 943 | 383 @ 1088 | 247 @ 943 | 488 @ 1286 | 551 @ 1286 | 383 @ 1088"
+  },
+  {
+   "material": "porous CaFe2O4 by sol–gel (Table S1, Ref [2], Han et al.)",
+   "property": "lowest_discharge_capacity",
+   "value_text": "311 @ 5000 (mAh/g @ mA/g)",
+   "ref_id": "CR34",
+   "quote": "Lowest Discharge (mAh/g @ mA/g) | 321 @ 1000 | 311 @ 5000 | 298 @ 744 | 265 @ 943 | 383 @ 1088 | 247 @ 943 | 488 @ 1286 | 551 @ 1286 | 383 @ 1088"
+  },
+  {
+   "material": "porous CaFe2O4 by solution combustion (Table S1, Ref [1], Shaji et al.)",
+   "property": "end_of_rate_performance_capacity_recovery",
+   "value_text": "~600 @ 50 (mAh/g @ mA/g)",
+   "ref_id": "CR39",
+   "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94 | 621 @ 109 | 412 @ 94 | 597 @ 129 | 731 @ 129 | 621 @ 109"
+  },
+  {
+   "material": "porous CaFe2O4 by sol–gel (Table S1, Ref [2], Han et al.)",
+   "property": "end_of_rate_performance_capacity_recovery",
+   "value_text": "733 @ 100 (mAh/g @ mA/g)",
+   "ref_id": "CR34",
+   "quote": "End of Rate Performance Capacity Recovery (mAh/g @ mA/g) | ~600 @ 50 | 733 @ 100 | 484 @ 74 | 502 @ 94 | 621 @ 109 | 412 @ 94 | 597 @ 129 | 731 @ 129 | 621 @ 109"
+  },
+  {
+   "material": "porous CaFe2O4 by solution combustion (Table S1, Ref [1], Shaji et al.)",
+   "property": "longterm_cycling_shape",
+   "value_text": "Flat",
+   "ref_id": "CR39",
+   "quote": "Longterm Cycling Shape | Flat | Flat | Flat | Flat | Small Hill | Dip-plateau | Dip-plateau | Dip-plateau | Small Hill"
+  },
+  {
+   "material": "porous CaFe2O4 by sol–gel (Table S1, Ref [2], Han et al.)",
+   "property": "longterm_cycling_shape",
+   "value_text": "Flat",
+   "ref_id": "CR34",
+   "quote": "Longterm Cycling Shape | Flat | Flat | Flat | Flat | Small Hill | Dip-plateau | Dip-plateau | Dip-plateau | Small Hill"
+  },
+  {
+   "material": "porous CaFe2O4 by solution combustion (Table S1, Ref [1], Shaji et al.)",
+   "property": "capacity_about_500_cycles",
+   "value_text": "437 @ 500 (mAh/g @ mA/g)",
+   "ref_id": "CR39",
+   "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943 | ~487 @ 1088 | 29-220 @ 943 | 137-432 @ 1286 | 136-594 @ 1286 | ~487 @ 1088"
+  },
+  {
+   "material": "porous CaFe2O4 by sol–gel (Table S1, Ref [2], Han et al.)",
+   "property": "capacity_about_500_cycles",
+   "value_text": "~450 @ 1000 (mAh/g @ mA/g)",
+   "ref_id": "CR34",
+   "quote": "~500 Cycles (mAh/g @ mA/g) | 437 @ 500 | ~450 @ 1000 | ~288 @ 744 | ~288 @ 943 | ~487 @ 1088 | 29-220 @ 943 | 137-432 @ 1286 | 136-594 @ 1286 | ~487 @ 1088"
+  },
+  {
+   "material": "porous CaFe2O4 (Shaji et al., solution combustion)",
+   "property": "specific_capacity_end_of_500_cycle_test_500mAg-1",
+   "value_num": 437,
+   "unit": "mAh-g-1",
+   "conditions": "500 cycles at 500 mA-g-1",
+   "ref_id": "CR39",
+   "quote": "Shaji et al. found that their pCFO created via SCS reached a specific capacity of 437 mAh-g-1 at the end of a 500 cycle test at 500 mA-g-1"
+  },
+  {
+   "material": "porous CaFe2O4 (Han et al., sol–gel)",
+   "property": "theoretical_capacity",
+   "value_num": 745,
+   "unit": "mAh-g-1",
+   "ref_id": "CR34",
+   "quote": "porous CaFe2O4 (pCFO; theoretical capacity 745 mAh-g-1)"
+  },
+  {
+   "material": "Li4Ti5O12 (LTO)",
+   "property": "theoretical_capacity",
+   "value_num": 175,
+   "unit": "mAh-g-1",
+   "quote": "LTO suffers from a relatively high voltage plateau at 1.55 V vs. Li+/Li, a relatively low theoretical capacity at 175 mAh-g-1"
+  },
+  {
+   "material": "Li4Ti5O12 (LTO)",
+   "property": "voltage_plateau",
+   "value_num": 1.55,
+   "unit": "V vs. Li+/Li",
+   "quote": "LTO suffers from a relatively high voltage plateau at 1.55 V vs. Li+/Li, a relatively low theoretical capacity at 175 mAh-g-1"
+  },
+  {
+   "material": "graphite",
+   "property": "theoretical_capacity",
+   "value_num": 372,
+   "unit": "mAh-g-1",
+   "quote": "Graphite has a lower voltage potential (0.1–0.2 V vs. Li/Li+) and a higher theoretical capacity (372 mAh-g-1) than LTO"
+  },
+  {
+   "material": "graphite",
+   "property": "voltage_potential",
+   "value_text": "0.1–0.2 V vs. Li/Li+",
+   "quote": "Graphite has a lower voltage potential (0.1–0.2 V vs. Li/Li+) and a higher theoretical capacity (372 mAh-g-1) than LTO"
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare de la ferrite de calcium poreuse CaFe2O4 (pCFO) par synthèse par combustion en solution : nitrates de calcium et de fer comme oxydants, glycine comme combustible, chauffage sur plaque à 250–300 °C jusqu'à l'auto-combustion, puis calcination à l'air. Deux séries sont comparées : le rapport combustible/oxydant ϕ (0,675 ; 1 ; 1,325) à calcination fixe de 900 °C, et la température de calcination (aucune, 550, 700, 900 °C) à ϕ = 1,325. Les poudres sont caractérisées par DRX, MEB et XPS, puis testées comme anode de pile bouton Li-ion (tests de débit et 500 cycles)."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir comment le rapport combustible/oxydant (avant synthèse) et la température de calcination (après synthèse) modifient les performances électrochimiques de CaFe2O4 poreux préparé par combustion en solution, alors que cette méthode plus rapide et plus écologique que le sol–gel n'avait pas encore été optimisée.",
+   "quote": "However, it has not yet been shown how modifying the SCS method may improve pCFO electrochemical performance."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Deux paramètres sont balayés séparément. ϕ prend trois valeurs (0,675 pauvre en combustible, 1 stœchiométrique, 1,325 riche) qui correspondent à des rapports molaires combustible/oxydant n de 1, 1,48 et 1,96, pour relier la quantité de glycine à la pureté de composition et à la capacité. La température de calcination (aucune, 550, 700, 900 °C) est balayée à ϕ = 1,325, la valeur la plus riche, pour relier cristallinité, taille de particules et stabilité en cyclage. Les échantillons sont comparés dans les mêmes tests de débit puis de 500 cycles."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Série en ϕ (calcinée à 900 °C) : les tailles de cristallite sont voisines (107,9 ; 96,5 ; 102,6 nm pour ϕ = 0,675 ; 1 ; 1,325) et la morphologie ne change pas, mais la composition de surface approche le rapport idéal Ca:Fe:O = 1:2:4 (Fe/Ca 2,6 ; 2,4 ; 2,2) et la première décharge passe de 718 à 861 puis 995 mAh/g ; à ϕ = 1,325 les capacités à fort courant sont 1,2 à 1,5 fois supérieures. Série en calcination (ϕ = 1,325) : la cristallite passe de 6,6 nm (non calciné) à 19,7, 27,8 puis 102,6 nm ; les échantillons à 550 et 700 °C ont de fortes capacités initiales mais chutent à 25–35 % de leur capacité vers le centième cycle (puis 83 % et 43 % à la fin), alors que l'échantillon à 900 °C reste entre 97 et 122 % de sa capacité initiale pendant 500 cycles ; le non calciné est le moins stable."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Pour les trois échantillons de la série en ϕ, les capacités de première décharge augmentent linéairement d'un facteur d'environ 1,15 quand ϕ augmente ; les échantillons ϕ = 0,675 et ϕ = 1 se superposent presque ensuite, alors que ϕ = 1,325 est 1,2 à 1,5 fois plus haut aux courants suivants et 1,2 fois plus haut en moyenne sur les 500 cycles. Les auteurs l'attribuent à une meilleure pureté de composition (Fe/Ca plus proche de 2) plutôt qu'à la morphologie, au carbone ou à la cristallinité.",
+   "quote": "For initial discharges, the capacities increase linearly by a factor of ~ 1.15 as ϕ increases (Fig. 7a)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Dans la série en calcination, la taille de cristallite et le rapport signal/bruit du diffractogramme croissent avec la température ; la taille de particule ne grandit pas entre 550 et 700 °C mais fait un saut entre 700 et 900 °C (« popcorn »). Les capacités de départ sont proches (900 à 1000 mAh/g) mais seul l'échantillon à 900 °C est stable sur 500 cycles. Sur le test de débit, les échantillons à 550 et 700 °C donnent 1,5 à 2,2 fois les capacités du non calciné et celui à 900 °C 1,1 à 1,6 fois.",
+   "quote": "Calcination temperature has a much more marked effect on average crystallite size, however"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "CFO_phi1.325_900",
+   "text": "Les auteurs retiennent ϕ = 1,325 et une calcination à 900 °C : première décharge de 995 mAh/g à environ 100 mA/g, capacités voisines de 615 mAh/g à ce courant avec 100 % de récupération après les cycles à fort courant, et 435 à 542 mAh/g à environ 1000 mA/g sur 500 cycles supplémentaires. Ils attribuent le gain en ϕ à la pureté de composition, et la stabilité à 900 °C à la taille de cristallite, de particule et à l'espacement entre particules.",
+   "quote": "With an improved fuel-to-oxidizer ratio of 1.325 and calcination temperature of 900 °C, porous CaFe2O4 can reach an initial discharge capacity of 995 mAh-g-1 at ~ 100 mA-g-1"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CFO_phi1.325_900",
+   "text": "Les auteurs écrivent la réaction globale de combustion avec les sels de Ca et de Fe comme oxydants et la glycine comme combustible ; ϕ en est le facteur multiplicatif du combustible. Le rôle des étapes (ébullition, batterie visqueuse brune, auto-combustion en moins de 3 s) est décrit sans mécanisme de nucléation. Pendant la décharge, ils décrivent la lithiation de CaFe2O4 en Fe métallique, Li2O et CaO.",
+   "quote": "The SCS reaction progresses according to the following equation, with the Ca- and Fe-species as the oxidizers and glycine as the fuel"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CFO_phi1.325_900",
+   "text": "La réaction globale écrite par les auteurs est Ca(NO3)2·4H2O + 2 Fe(NO3)3·9H2O + (40/9) ϕ C2H5NO2 + 10 (ϕ − 1) O2 → CaFe2O4 + [(100/9) ϕ + 22] H2O + [(20/9) ϕ + 4] N2 + (80/9) ϕ CO2 (bilans de N, C, H et O vérifiés). Elle suppose 1 mol de Ca pour 2 mol de Fe et (40/9) ϕ mol de glycine par mole de Ca : ϕ = 1 correspond à l'oxydation complète sans O2 extérieur, ϕ < 1 consomme de l'oxygène de l'air et ϕ > 1 laisse du combustible en excès, source probable de carbone résiduel et d'espèces de calcium secondaires. L'ébullition puis l'évaporation de l'eau concentrent les nitrates et la glycine en un gel visqueux qui s'enflamme vers la température d'auto-ignition ; le dégagement rapide de gaz (N2, CO2, vapeur) explique la mousse poreuse de faible densité. La calcination ultérieure brûle les résidus organiques azotés et carbonés et fait croître les cristallites, ce que confirment l'XPS (disparition de N à 550 °C) et la DRX."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "CFO_phi1.325_900",
+   "text": "La combustion de nitrates avec un combustible organique est brutale et dégage de la vapeur, du CO2, du N2 et possiblement des oxydes d'azote : à faire sous hotte, dans un bécher large et avec une protection contre les projections, la plaque étant à 250–300 °C. Les nitrates de fer sont oxydants et irritants ; la poudre fine produite est à manipuler avec un masque. Le four à 900 °C impose des gants thermiques. Pour la pile, le lithium métallique et l'électrolyte LiPF6 dans un mélange de carbonates (inflammable, hydrolyse possible en HF au contact de l'humidité) justifient la boîte à gants et la sertissure soignée des piles."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CFO_phi1.325_900",
+   "text": "Les masses de nitrates de calcium et de fer et de glycine ne sont pas données (« precalculated amounts ») : seul le rapport stœchiométrique peut être reconstruit à partir de l'équation (1 Ca : 2 Fe : (40/9) ϕ glycine), et le volume d'eau est approximatif (~ 12 mL). Ni la taille du lot, ni le rendement, ni la vitesse de refroidissement ou le gaz exact du four de calcination ne sont précisés ; la durée totale jusqu'à la combustion varie selon le texte (10–15 + 10–15 + 3–5 min contre « typiquement moins de 30 min »). Les conditions de la DRX (plage, pas) ne sont lisibles que sur les figures, et la tension d'accélération du MEB n'est pas donnée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Electrode_pCFO",
+   "text": "La fabrication de l'électrode donne les rapports massiques 7:2:1 dans l'ordre d'énumération (matière active, noir d'acétylène, CMC), mais pas le volume d'eau d'ajout ni la température et la durée du séchage à l'air. Les piles sont décrites sans la masse de lithium ni les dimensions du séparateur. Les charges de matière active varient entre 0,4 et 0,7 mg-cm-2 selon l'échantillon (Table S2 donne la masse par échantillon).",
+   "quote": "Active material mass loadings were between 0.4 and 0.7 mg-cm-2."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les figures 3 (MEB), 4 et 5 (XPS) n'ont pas été relues pour en extraire des valeurs au-delà du texte ; les valeurs lues sur les figures 7b et 7d (capacité au 500e cycle de cinq échantillons) sont approximatives, à 2 chiffres significatifs. La figure S1 (ajustement du spectre Ca 2p) et S2 (efficacité coulombique) ne sont citées que par leurs tableaux et légendes."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "CFO_phi1.325_900",
+   "ref_id": "CR39",
+   "role": "protocole_adapte",
+   "quote": "The active material, porous CaFe2O4 (pCFO), was prepared in a similar way to previous reports"
+  },
+  {
+   "route": "CFO_phi1.325_900",
+   "ref_id": "CR49",
+   "role": "protocole_adapte",
+   "quote": "The active material, porous CaFe2O4 (pCFO), was prepared in a similar way to previous reports"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "CFO_phi1.325_900 (voie de base)",
+   "issue": "Les séries en ϕ (900 °C) et en température (ϕ = 1.325) partagent l'échantillon ϕ = 1.325 / 900 °C ; les valeurs des colonnes « 1.325 » et « 900 °C » des Tables 1, S1, S2 et de la Figure S1 sont identiques. Une seule voie est créée, valeurs prises dans la colonne ϕ."
+  },
+  {
+   "where": "CFO_phi1.325_nocalc, étapes",
+   "issue": "L'échantillon non calciné n'a pas l'étape de calcination du parent : il a ses propres étapes 1 à 5 (copie), la variation porte sur la température de l'étape 6 absente. L'article ne décrit pas ce témoin séparément ; il parle de « no calcination temperature » et d'échantillon « as-synthesized »."
+  },
+  {
+   "where": "Table S1 et Table 1, attribution par position",
+   "issue": "Les rangées de Table S1, de Table 1 et de la Figure S1 n'ont pas le nom d'échantillon dans la rangée : l'ordre des colonnes de l'en-tête (Ref [1], Ref [2], ϕ 0,675, 1, 1,325, aucune, 550, 700, 900 °C pour S1 ; Ideal, ϕ 0,675, 1, 1,325, aucune, 550, 700, 900 °C pour Table 1) a été appliqué, et recoupé avec les courants de Table S2."
+  },
+  {
+   "where": "Table 1, cellules « – »",
+   "issue": "Les cellules « – » (Cl pour les échantillons non calciné, 550 et 700 °C, C et N pour certains) n'ont pas été extraites comme valeurs ; l'article ne dit pas s'il s'agit d'absence de détection ou de non-mesure."
+  },
+  {
+   "where": "Figure S1, échantillon 550 °C",
+   "issue": "Les deux fractions des espèces de Ca du 550 °C (20,41 % et 70,59 %) ne totalisent pas 100 % alors que les autres colonnes le font (ex. 63,29 + 36,71) ; valeurs recopiées telles quelles. L'identification de A+A’ à l'espèce primaire et B+B’ à l'espèce secondaire n'est pas écrite explicitement (le texte parle seulement de « primary to secondary »)."
+  },
+  {
+   "where": "XPS, valeurs de la Figure 4",
+   "issue": "Les énergies de liaison de la Fig. 4 (série ϕ à 900 °C) sont données sans distinction entre ϕ dans le texte ; elles sont rangées sur la voie ϕ = 1.325 / 900 °C. Pour C 1s secondaire, 289,0 eV (Fig. 4) contre 289,1 eV (calcinés, Fig. 5) : les deux valeurs sont retenues telles qu'écrites, chacune pour sa série."
+  },
+  {
+   "where": "Ca 2p secondaire de la Figure 5",
+   "issue": "Le texte donne un doublet secondaire à 346,5 et 350,0 eV qui devient primaire quand la température monte, sans dire à quel échantillon précis il appartient ; non extrait. Il est probablement associé à l'échantillon non calciné (Fig. S1 : 100 % d'espèce B+B’) mais l'article ne l'écrit pas."
+  },
+  {
+   "where": "CFO_phi1.325_900 étape 3, durée",
+   "issue": "La section Preparation parle d'une réaction SCS « typically less than 30-min » alors que les trois durées de la section Experimental totalisent 23–35 min ; les durées de l'Experimental sont extraites (10–15 min, puis 10–15 min, puis 3–5 min), la valeur « less than 30-min » est notée dans limite_reproductibilite."
+  },
+  {
+   "where": "CFO_phi0.675_900, variation de température de plaque",
+   "issue": "La légende de la Fig. 1 précise que la plaque a été réglée à 300 °C pour la synthèse ϕ = 0.675 ; l'Experimental dit 250–300 °C pour toutes. Lecture retenue : 300 °C comme variation de cet échantillon, sans en conclure que les autres sont à 250 °C."
+  },
+  {
+   "where": "CFO_phi1_900 et CFO_phi0.675_900, quantité de glycine",
+   "issue": "La variation porte sur le réactif « glycine » avec le texte « ϕ = … (n = …) » car l'article ne donne aucune masse ni mole de glycine ; n = 1,48 et 1,96 sont des rapports molaires combustible/oxydant écrits par les auteurs."
+  },
+  {
+   "where": "Figure 7 : lecture graphique",
+   "issue": "Les valeurs au 500e cycle de ϕ = 0,675 et 1 (Fig. 7b, ≈ 230 et ≈ 280 mAh/g) et de 550, 700 °C et non calciné (Fig. 7d, ≈ 350, 260 et 80 mAh/g) sont lues sur le graphique, précision ≈ 10 mAh/g ; la Table S1 donne « ~288 @ 744 », « ~288 @ 943 » pour les deux premiers, ce qui est la valeur approchée d'un autre point du cycle (non précisé). Les fichiers d'images portent les panneaux a-b (Fig7a) et c-d (Fig7b), contrairement à leur nom."
+  },
+  {
+   "where": "XRD, plage de balayage",
+   "issue": "La plage 10–80° est lue sur l'axe des diffractogrammes de la Fig. 2 (réglage non écrit dans le texte), marquée from_figure."
+  },
+  {
+   "where": "Electrode_pCFO, rapport 7:2:1",
+   "issue": "Le rapport massique 7:2:1 suit l'ordre « active material, carbon black, CMC » de la phrase ; l'attribution à chaque composant repose sur l'ordre d'énumération (cohérent avec 70 % de matière active)."
+  },
+  {
+   "where": "Electrode_pCFO et résultats électrochimiques",
+   "issue": "Une seule fabrication d'électrode est décrite pour tous les échantillons ; elle est rangée dans une voie device unique, et les résultats électrochimiques restent sur les voies matériau avec leur propre mesure (ec_*), qui porte la masse de matière active et les courants de chaque échantillon (Table S2)."
+  }
+ ]
+}
