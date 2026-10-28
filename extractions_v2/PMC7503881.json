@@ -1,0 +1,2038 @@
+{
+ "pmcid": "PMC7503881",
+ "format": 3,
+ "routes": [
+  {
+   "label": "Ti6Al4V_alkali",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "intermediate",
+   "methods": [
+    "post_synthetic_modification"
+   ],
+   "material": {
+    "name": "alkali-treated Ti6Al4V substrate (porous sodium titanate surface layer)",
+    "formula": null,
+    "family": "oxyde",
+    "phase": "sodium titanate surface layer on Ti6Al4V",
+    "morphology": "nanoporous surface"
+   },
+   "method": "alkali (NaOH 5 M) treatment of polished Ti6Al4V plates",
+   "quote": "The alkali treatment of Ti6Al4V substrate was executed by incubating the samples in NaOH (5 M) solution at 60 °C for 48 h at 27% RH (relative humidity).",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "Ti6Al4V plate",
+     "formula": null,
+     "role": "substrate",
+     "amount_text": "20 mm × 10 mm × 2 mm",
+     "quote": "Ti6Al4V substrates with the dimension of 20 mm × 10 mm × 2 mm were mechanically polished with 240–1000 grit-sized SiC papers",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "acetone",
+     "formula": "C3H6O",
+     "role": "wash",
+     "quote": "ultrasonically cleaned in acetone for 30 min"
+    },
+    {
+     "name": "sodium hydroxide",
+     "formula": "NaOH",
+     "role": "etchant",
+     "amount_text": "5 M solution",
+     "quote": "incubating the samples in NaOH (5 M) solution at 60 °C for 48 h at 27% RH",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "sodium hydroxide (NaOH, Sigma-Aldrich, Milano, Italy)",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "distilled water (dH2O)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "Then, the specimens were rinsed with dH2O"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "polish",
+     "description": "Mechanical polishing of the Ti6Al4V plates (20 mm × 10 mm × 2 mm) with 240–1000 grit-sized SiC papers.",
+     "quote": "Ti6Al4V substrates with the dimension of 20 mm × 10 mm × 2 mm were mechanically polished with 240–1000 grit-sized SiC papers",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "SiC papers",
+       "detail": "240–1000 grit",
+       "quote": "Ti6Al4V substrates with the dimension of 20 mm × 10 mm × 2 mm were mechanically polished with 240–1000 grit-sized SiC papers"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Ultrasonic cleaning of the polished plates in acetone.",
+     "quote": "ultrasonically cleaned in acetone for 30 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "ultrasonically cleaned in acetone for 30 min",
+       "value_num": 30,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "etch",
+     "description": "Alkali treatment: incubation of the plates in 5 M NaOH solution at 60 °C for 48 h at 27% relative humidity.",
+     "quote": "incubating the samples in NaOH (5 M) solution at 60 °C for 48 h at 27% RH",
+     "parameters": [
+      {
+       "name": "concentration",
+       "quote": "incubating the samples in NaOH (5 M) solution at 60 °C for 48 h at 27% RH",
+       "value_num": 5,
+       "unit": "M"
+      },
+      {
+       "name": "temperature",
+       "quote": "incubating the samples in NaOH (5 M) solution at 60 °C for 48 h at 27% RH",
+       "value_num": 60,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "incubating the samples in NaOH (5 M) solution at 60 °C for 48 h at 27% RH",
+       "value_num": 48,
+       "unit": "h"
+      },
+      {
+       "name": "humidity",
+       "quote": "incubating the samples in NaOH (5 M) solution at 60 °C for 48 h at 27% RH",
+       "value_num": 27,
+       "unit": "% RH"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "wash",
+     "description": "Rinse the specimens with distilled water.",
+     "quote": "Then, the specimens were rinsed with dH2O",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "Then, the specimens were rinsed with dH2O",
+       "value_text": "dH2O"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "dry",
+     "description": "Dry the rinsed specimens at 37 °C for 24 h in air.",
+     "quote": "dried at 37 °C for 24 h in air atmosphere",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 37 °C for 24 h in air atmosphere",
+       "value_num": 37,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "dried at 37 °C for 24 h in air atmosphere",
+       "value_num": 24,
+       "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "dried at 37 °C for 24 h in air atmosphere",
+       "value_text": "in air atmosphere"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_alk",
+     "technique": "XRD",
+     "instrument": "Philips X’Pert-MPD system (Eindhoven, The Netherlands)",
+     "result": "XRD pattern of the alkali-treated Ti6Al4V: sodium titanate peaks (Fig. 1a)",
+     "quote": "The effect of alkali-treatment on Ti6Al4V substrate was determined using XRD and SEM techniques.",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA",
+       "value_text": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA)"
+      },
+      {
+       "name": "scan_range",
+       "quote": "between 10 to 60° on a 2θ scale",
+       "value_text": "between 10 to 60° on a 2θ scale"
+      },
+      {
+       "name": "scan_step",
+       "quote": "in steps of 0.02 intervals with a counting time of 2 s at each step",
+       "value_text": "steps of 0.02 intervals with a counting time of 2 s at each step"
+      }
+     ],
+     "not_stated": [
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "sem_alk",
+     "technique": "SEM",
+     "instrument": "Quanta 200, FEI Europe (Eindhoven, The Netherlands)",
+     "result": "porous surface structure of the alkali-treated substrate (Fig. 1b)",
+     "quote": "SEM image of alkali-treatment samples (Figure 1b) also indicated the presence of a porous structure",
+     "settings": [
+      {
+       "name": "magnification",
+       "quote": "different magnifications (500–20,000×)",
+       "value_text": "500–20,000×"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "For SEM analysis, the materials were coated with Au in a sputter coater (Coxem) up to a thickness of around 20 nm.",
+       "value_text": "coated with Au in a sputter coater (Coxem), thickness of around 20 nm"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "ca_alk",
+     "technique": "contact_angle",
+     "instrument": "CAM-PLUS, TANTEC (Schaumburg, IL, USA)",
+     "result": "static water contact angle of the alkali-treated Ti6Al4V",
+     "quote": "The hydrophilicity of the Ti6Al4V substrate before and after coating process was analyzed by water contact angle measurements in air, which were carried out using a drop shape analysis method (CAM-PLUS; TANTEC, Schaumburg, IL, USA).",
+     "settings": [
+      {
+       "name": "probe_liquid",
+       "quote": "Four replicas of each sample were used and three drops of approximately 10 μL of deionized water were dropped onto three different points of each sample surfaces",
+       "value_text": "deionized water"
+      },
+      {
+       "name": "drop_volume",
+       "quote": "Four replicas of each sample were used and three drops of approximately 10 μL of deionized water were dropped onto three different points of each sample surfaces",
+       "value_num": 10,
+       "value_text": "approximately 10 μL",
+       "unit": "µL"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "The measurements were performed by the sessile drop method at 25 °C and 27% RH.",
+       "value_num": 25,
+       "unit": "°C"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The hydrophilicity of the Ti6Al4V substrate before and after coating process was analyzed by water contact angle measurements in air, which were carried out using a drop shape analysis method (CAM-PLUS; TANTEC, Schaumburg, IL, USA).",
+       "value_text": "in air"
+      },
+      {
+       "name": "replicates",
+       "quote": "Four replicas of each sample were used and three drops of approximately 10 μL of deionized water were dropped onto three different points of each sample surfaces",
+       "value_text": "four replicas of each sample, three drops on three different points"
+      }
+     ]
+    },
+    {
+     "id": "prof_alk",
+     "technique": "profilometry",
+     "instrument": "laser profilometer NCLP-Taicaan Technologies (Southampton, United Kingdom)",
+     "result": "surface roughness (Ra) of the alkali-treated Ti6Al4V",
+     "quote": "the surface macroscopic topography was studied using laser profilometer (NCLP-Taicaan® Technologies-Southampton, Southampton, United Kingdom) at 3 mm × 3 mm scans to determine the surface roughness",
+     "settings": [
+      {
+       "name": "method",
+       "quote": "at 3 mm × 3 mm scans to determine the surface roughness",
+       "value_text": "laser profilometer, 3 mm × 3 mm scans"
+      },
+      {
+       "name": "software",
+       "quote": "gwyddion Software (version 2.56, Czech Metrology Institute, Jihlava, Czech Republic)",
+       "value_text": "gwyddion Software (version 2.56, Czech Metrology Institute)"
+      }
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "quote": "the XRD pattern of alkali treated Ti6Al4V indicated two peaks of sodium titanate at 2θ = 44 and 48°",
+     "value_text": "sodium titanate",
+     "measured_by": "xrd_alk"
+    },
+    {
+     "property": "xrd_peak_position_sodium_titanate",
+     "quote": "the XRD pattern of alkali treated Ti6Al4V indicated two peaks of sodium titanate at 2θ = 44 and 48°",
+     "value_text": "two peaks at 2θ = 44 and 48°",
+     "unit": "°",
+     "measured_by": "xrd_alk"
+    },
+    {
+     "property": "xrd_peak_position_broad_sodium_titanate",
+     "quote": "there were broad diffraction peaks at 2θ = 23–30°, relating to the sodium titanate formed on the Ti6Al4V substrate",
+     "value_text": "broad diffraction peaks at 2θ = 23–30°",
+     "unit": "°",
+     "measured_by": "xrd_alk"
+    },
+    {
+     "property": "morphology",
+     "quote": "SEM image of alkali-treatment samples (Figure 1b) also indicated the presence of a porous structure",
+     "value_text": "porous structure (corrosive attack of the hydroxyl groups of the NaOH solution)",
+     "measured_by": "sem_alk"
+    },
+    {
+     "property": "pore_diameter",
+     "quote": "The presence of the nanoporous structure with an average diameter of about 100 to 300 nm",
+     "value_text": "average diameter of about 100 to 300 nm",
+     "unit": "nm",
+     "measured_by": "sem_alk"
+    },
+    {
+     "property": "contact_angle",
+     "quote": "the water contact angle of the alkali-treated Ti6Al4V surface was 16.62±0.48°",
+     "value_num": 16.62,
+     "value_text": "16.62±0.48°",
+     "unit": "°",
+     "measured_by": "ca_alk"
+    },
+    {
+     "property": "roughness",
+     "quote": "Results approved the presence of porous structure obtained during alkali-treatment according to enhance in the surface roughness (Ra = 8 ± 2 µm)",
+     "value_num": 8,
+     "value_text": "Ra = 8 ± 2 µm",
+     "unit": "µm",
+     "measured_by": "prof_alk"
+    }
+   ]
+  },
+  {
+   "label": "CS/10 wt.% HA",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "sol_gel",
+    "solution_film_deposition"
+   ],
+   "material": {
+    "name": "chitosan/hydroxyapatite nanocomposite coating (10 wt.% HA) on alkali-treated Ti6Al4V",
+    "formula": null,
+    "family": "composite",
+    "phase": "hydroxyapatite (low crystallinity) in a chitosan matrix",
+    "morphology": "crack-free dense coating"
+   },
+   "method": "in-situ sol-gel precipitation of hydroxyapatite in a chitosan solution, then dip-coating on alkali-treated Ti6Al4V",
+   "quote": "CS/HA coatings containing different amount of HA, 10, 50 and 60 wt %, were synthesized by sol-gel technology.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "chitosan (molecular weight ca. 300 kDa)",
+     "formula": null,
+     "role": "polymer",
+     "quote": "Initially, 10 wt.% chitosan solution in 1.0 wt.% acetic acid was prepared after 60 min stirring at 50 °C.",
+     "amount_text": "10 wt.% solution in 1.0 wt.% acetic acid",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "chitosan (molecular weight ca. 300 kDa, Sigma-Aldrich, Milano, Italy)",
+     "not_stated": [
+      "purity",
+      "degree_of_deacetylation"
+     ]
+    },
+    {
+     "name": "acetic acid",
+     "formula": "CH3COOH",
+     "role": "acid",
+     "quote": "Initially, 10 wt.% chitosan solution in 1.0 wt.% acetic acid was prepared after 60 min stirring at 50 °C.",
+     "amount_text": "1.0 wt.% solution",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "acetic acid (CH3COOH, Sigma-Aldrich, Milano, Italy)",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "calcium nitrate tetrahydrate",
+     "formula": "Ca(NO3)2·4H2O",
+     "role": "precursor",
+     "quote": "For the in situ synthesis of HA, calcium nitrate tetrahydrate (Ca(NO₃)₂·4H₂O) and di-ammonium hydrogen phosphate ((NH4)2HPO4) were separately dissolved in distilled water (dH2O) and stirred for 24 h at 25 °C.",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "calcium nitrate tetrahydrate (Ca(NO₃)₂·4H₂O, Sigma-Aldrich, Milano, Italy)",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "di-ammonium hydrogen phosphate",
+     "formula": "(NH4)2HPO4",
+     "role": "precursor",
+     "quote": "For the in situ synthesis of HA, calcium nitrate tetrahydrate (Ca(NO₃)₂·4H₂O) and di-ammonium hydrogen phosphate ((NH4)2HPO4) were separately dissolved in distilled water (dH2O) and stirred for 24 h at 25 °C.",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "di-ammonium hydrogen phosphate ((NH4)2HPO4, Sigma-Aldrich, Milano, Italy)",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "distilled water (dH2O)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "For the in situ synthesis of HA, calcium nitrate tetrahydrate (Ca(NO₃)₂·4H₂O) and di-ammonium hydrogen phosphate ((NH4)2HPO4) were separately dissolved in distilled water (dH2O) and stirred for 24 h at 25 °C.",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "sodium hydroxide",
+     "formula": "NaOH",
+     "role": "base",
+     "quote": "At last, sodium hydroxide solution (1 M, NaOH) was used to adjust pH about 10.",
+     "amount_text": "1 M solution",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "sodium hydroxide (NaOH, Sigma-Aldrich, Milano, Italy)",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "alkali-treated Ti6Al4V substrate (route Ti6Al4V_alkali)",
+     "formula": null,
+     "role": "intermediate",
+     "quote": "the alkali-treated Ti6Al4V substrates were dipped vertically into CS/HA solution and pulled out at a constant speed of 60 (mm/min)",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Prepare a 10 wt.% chitosan solution in 1.0 wt.% acetic acid under stirring at 50 °C.",
+     "quote": "Initially, 10 wt.% chitosan solution in 1.0 wt.% acetic acid was prepared after 60 min stirring at 50 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Initially, 10 wt.% chitosan solution in 1.0 wt.% acetic acid was prepared after 60 min stirring at 50 °C.",
+       "value_num": 50,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Initially, 10 wt.% chitosan solution in 1.0 wt.% acetic acid was prepared after 60 min stirring at 50 °C.",
+       "value_num": 60,
+       "unit": "min"
+      },
+      {
+       "name": "concentration_chitosan",
+       "quote": "Initially, 10 wt.% chitosan solution in 1.0 wt.% acetic acid was prepared after 60 min stirring at 50 °C.",
+       "value_num": 10,
+       "unit": "wt.%"
+      },
+      {
+       "name": "concentration_acetic_acid",
+       "quote": "Initially, 10 wt.% chitosan solution in 1.0 wt.% acetic acid was prepared after 60 min stirring at 50 °C.",
+       "value_num": 1.0,
+       "unit": "wt.%"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the chitosan solution for 24 h at 25 °C.",
+     "quote": "The solution was stirred for 24 h at 25 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The solution was stirred for 24 h at 25 °C.",
+       "value_num": 24,
+       "unit": "h"
+      },
+      {
+       "name": "temperature",
+       "quote": "The solution was stirred for 24 h at 25 °C.",
+       "value_num": 25,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "dissolve",
+     "description": "Dissolve calcium nitrate tetrahydrate and di-ammonium hydrogen phosphate separately in distilled water.",
+     "quote": "For the in situ synthesis of HA, calcium nitrate tetrahydrate (Ca(NO₃)₂·4H₂O) and di-ammonium hydrogen phosphate ((NH4)2HPO4) were separately dissolved in distilled water (dH2O) and stirred for 24 h at 25 °C.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "volume",
+      "concentration"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the two salt solutions for 24 h at 25 °C.",
+     "quote": "For the in situ synthesis of HA, calcium nitrate tetrahydrate (Ca(NO₃)₂·4H₂O) and di-ammonium hydrogen phosphate ((NH4)2HPO4) were separately dissolved in distilled water (dH2O) and stirred for 24 h at 25 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "For the in situ synthesis of HA, calcium nitrate tetrahydrate (Ca(NO₃)₂·4H₂O) and di-ammonium hydrogen phosphate ((NH4)2HPO4) were separately dissolved in distilled water (dH2O) and stirred for 24 h at 25 °C.",
+       "value_num": 24,
+       "unit": "h"
+      },
+      {
+       "name": "temperature",
+       "quote": "For the in situ synthesis of HA, calcium nitrate tetrahydrate (Ca(NO₃)₂·4H₂O) and di-ammonium hydrogen phosphate ((NH4)2HPO4) were separately dissolved in distilled water (dH2O) and stirred for 24 h at 25 °C.",
+       "value_num": 25,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "add",
+     "description": "Add the calcium-based solution to the chitosan solution.",
+     "quote": "Subsequently, Ca-based solution was added to the CS solution and the mixture was stirred for 4 h.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "stir",
+     "description": "Stir the Ca/chitosan mixture for 4 h.",
+     "quote": "Subsequently, Ca-based solution was added to the CS solution and the mixture was stirred for 4 h.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "Subsequently, Ca-based solution was added to the CS solution and the mixture was stirred for 4 h.",
+       "value_num": 4,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "add",
+     "description": "Introduce the phosphate solution drop by drop to the Ca/chitosan solution; the amounts of Ca, P and chitosan set the HA content of the composite (10 wt.% HA in this sample).",
+     "quote": "Then, the phosphate solution was introduced drop by drop to Ca/CS solution and stirred for 24 h.",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "Then, the phosphate solution was introduced drop by drop to Ca/CS solution and stirred for 24 h.",
+       "value_text": "drop by drop"
+      },
+      {
+       "name": "mass_ratio_ha_in_composite",
+       "quote": "CS/HA coatings containing different amount of HA, 10, 50 and 60 wt %, were synthesized by sol-gel technology.",
+       "value_num": 10,
+       "unit": "wt.%"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate",
+      "temperature"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "stir",
+     "description": "Stir the mixture for 24 h after the phosphate addition.",
+     "quote": "Then, the phosphate solution was introduced drop by drop to Ca/CS solution and stirred for 24 h.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "Then, the phosphate solution was introduced drop by drop to Ca/CS solution and stirred for 24 h.",
+       "value_num": 24,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "adjust_ph",
+     "description": "Adjust the pH of the sol to about 10 with 1 M sodium hydroxide solution.",
+     "quote": "At last, sodium hydroxide solution (1 M, NaOH) was used to adjust pH about 10.",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "At last, sodium hydroxide solution (1 M, NaOH) was used to adjust pH about 10.",
+       "value_num": 10,
+       "value_text": "about 10"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "dip_coat",
+     "description": "Dip-coat the alkali-treated Ti6Al4V substrates vertically in the CS/HA sol at 25 °C, withdrawn at a constant 60 mm/min; the dip-and-dry step is repeated two times.",
+     "quote": "the alkali-treated Ti6Al4V substrates were dipped vertically into CS/HA solution and pulled out at a constant speed of 60 (mm/min)",
+     "parameters": [
+      {
+       "name": "deposition_rate",
+       "quote": "the alkali-treated Ti6Al4V substrates were dipped vertically into CS/HA solution and pulled out at a constant speed of 60 (mm/min)",
+       "value_num": 60,
+       "unit": "mm/min"
+      },
+      {
+       "name": "temperature",
+       "quote": "The coating process was applied using a simple dip-coating process at 25 °C.",
+       "value_num": 25,
+       "unit": "°C"
+      },
+      {
+       "name": "repetitions",
+       "quote": "This step repeated two times to obtain a suitable thickness.",
+       "value_text": "two times"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 11,
+     "action": "dry",
+     "description": "Dry the dip-coated substrates at 37 °C in air for 2 h at 27% RH.",
+     "quote": "then dried at 37 °C in air for 2 h at 27% RH",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "then dried at 37 °C in air for 2 h at 27% RH",
+       "value_num": 37,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "then dried at 37 °C in air for 2 h at 27% RH",
+       "value_num": 2,
+       "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "then dried at 37 °C in air for 2 h at 27% RH",
+       "value_text": "in air"
+      },
+      {
+       "name": "humidity",
+       "quote": "then dried at 37 °C in air for 2 h at 27% RH",
+       "value_num": 27,
+       "unit": "% RH"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 12,
+     "action": "heat",
+     "description": "Final treatment of the coated substrates at 37 °C for 48 h.",
+     "quote": "Finally, the coated substrates were treated at 37 °C for 48 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Finally, the coated substrates were treated at 37 °C for 48 h.",
+       "value_num": 37,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Finally, the coated substrates were treated at 37 °C for 48 h.",
+       "value_num": 48,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "Philips X’Pert-MPD system (Eindhoven, The Netherlands)",
+     "result": "HA characteristic peaks (JSPDS 09-432) and sodium nitrate in the CS/HA composite powders (Fig. 3a); apatite on the CS/60 coating after SBF (Fig. 5d)",
+     "quote": "X-Ray Diffraction (XRD, Philips X’Pert-MPD system (Eindhoven, The Netherlands)",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA",
+       "value_text": "CuKα radiation (λ = 0.154 nm, 40 kV, 40 mA)"
+      },
+      {
+       "name": "scan_range",
+       "quote": "between 10 to 60° on a 2θ scale",
+       "value_text": "between 10 to 60° on a 2θ scale"
+      },
+      {
+       "name": "scan_step",
+       "quote": "in steps of 0.02 intervals with a counting time of 2 s at each step",
+       "value_text": "steps of 0.02 intervals with a counting time of 2 s at each step"
+      },
+      {
+       "name": "crystallite_size_method",
+       "quote": "the HA nanocrystals size in CS/HA nano-composites was evaluated by using the Scherrer’s formula (Equation (1))",
+       "value_text": "Scherrer’s formula (Equation (1))"
+      },
+      {
+       "name": "method",
+       "quote": "the HA crystallinity was calculated according to Equation (2)",
+       "value_text": "HA crystallinity calculated according to Equation (2)"
+      },
+      {
+       "name": "method",
+       "quote": "matched with a JSPDS card number of 09-432",
+       "value_text": "phase identification against JSPDS card 09-432"
+      }
+     ]
+    },
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": "Quanta 200, FEI Europe (Eindhoven, The Netherlands)",
+     "result": "surface morphology and cross-section of the CS/HA coatings (Fig. 2)",
+     "quote": "SEM: Quanta 200, FEI Europe, Eindhoven, The Netherlands, different magnifications (500–20,000×)",
+     "settings": [
+      {
+       "name": "magnification",
+       "quote": "different magnifications (500–20,000×)",
+       "value_text": "500–20,000×"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "For SEM analysis, the materials were coated with Au in a sputter coater (Coxem) up to a thickness of around 20 nm.",
+       "value_text": "coated with Au in a sputter coater (Coxem), thickness of around 20 nm"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "eds_1",
+     "technique": "EDS",
+     "instrument": null,
+     "result": "EDS mapping of the coatings and Ca/P ratio of HA in the coatings (Fig. S1) and of the apatite deposited after SBF (Fig. S2)",
+     "quote": "SEM images and EDS mapping of CS/HA coatings with different HA content (10, 50 and 60 wt.%) are showed in Figure 2.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "ftir_1",
+     "technique": "FTIR",
+     "instrument": "Thermo Nicolet Avatar (Jersey City, NJ, USA)",
+     "result": "functional groups of the CS/HA nanocomposites (Fig. 3b)",
+     "quote": "Fourier transform infrared (FTIR) spectroscopy (Thermo Nicolet Avatar, Jersey City, NJ, USA) was applied to determine different functional groups.",
+     "settings": [],
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "ca_1",
+     "technique": "contact_angle",
+     "instrument": "CAM-PLUS, TANTEC (Schaumburg, IL, USA)",
+     "result": "static water contact angle of the CS/HA coatings (Fig. 3d)",
+     "quote": "The hydrophilicity of the Ti6Al4V substrate before and after coating process was analyzed by water contact angle measurements in air, which were carried out using a drop shape analysis method (CAM-PLUS; TANTEC, Schaumburg, IL, USA).",
+     "settings": [
+      {
+       "name": "probe_liquid",
+       "quote": "Four replicas of each sample were used and three drops of approximately 10 μL of deionized water were dropped onto three different points of each sample surfaces",
+       "value_text": "deionized water"
+      },
+      {
+       "name": "drop_volume",
+       "quote": "Four replicas of each sample were used and three drops of approximately 10 μL of deionized water were dropped onto three different points of each sample surfaces",
+       "value_num": 10,
+       "value_text": "approximately 10 μL",
+       "unit": "µL"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "The measurements were performed by the sessile drop method at 25 °C and 27% RH.",
+       "value_num": 25,
+       "unit": "°C"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The hydrophilicity of the Ti6Al4V substrate before and after coating process was analyzed by water contact angle measurements in air, which were carried out using a drop shape analysis method (CAM-PLUS; TANTEC, Schaumburg, IL, USA).",
+       "value_text": "in air"
+      },
+      {
+       "name": "replicates",
+       "quote": "Four replicas of each sample were used and three drops of approximately 10 μL of deionized water were dropped onto three different points of each sample surfaces",
+       "value_text": "four replicas of each sample, three drops on three different points"
+      }
+     ]
+    },
+    {
+     "id": "adh_1",
+     "technique": "mechanical_test",
+     "instrument": "Hounsfield H5KS universal tensile testing machine (Redhill, United Kingdom)",
+     "result": "adhesion strength of the coatings by tensile test (Fig. 3e)",
+     "quote": "The adhesion strength between the coatings and substrate was determined according to standard ISO 13779-4 guideline",
+     "settings": [
+      {
+       "name": "standard",
+       "quote": "The adhesion strength between the coatings and substrate was determined according to standard ISO 13779-4 guideline",
+       "value_text": "ISO 13779-4 guideline"
+      },
+      {
+       "name": "specimen_geometry",
+       "quote": "the CS/HA coated disks (diameter and thickness of 25 and 1 mm)",
+       "value_text": "coated disks, diameter 25 mm and thickness 1 mm"
+      },
+      {
+       "name": "loading_rate",
+       "quote": "at a fixed speed of 1 mm/min",
+       "value_num": 1,
+       "unit": "mm/min"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "epoxy adhesive (RapidChem EA2003/H406, New Taipei City, Taiwan)",
+       "value_text": "epoxy adhesive RapidChem EA2003/H406 (New Taipei City, Taiwan)"
+      },
+      {
+       "name": "replicates",
+       "quote": "the analysis was performed in triplicate for each sample",
+       "value_text": "triplicate for each sample"
+      },
+      {
+       "name": "method",
+       "quote": "The adhesion strength of the coated samples was computed by dividing the load, at the failure, by the original cross-sectional area",
+       "value_text": "load at failure divided by the original cross-sectional area"
+      }
+     ]
+    },
+    {
+     "id": "prof_1",
+     "technique": "profilometry",
+     "instrument": "laser profilometer NCLP-Taicaan Technologies (Southampton, United Kingdom)",
+     "result": "surface roughness (Ra) of the CS/HA coatings (Fig. 4)",
+     "quote": "the surface macroscopic topography was studied using laser profilometer (NCLP-Taicaan® Technologies-Southampton, Southampton, United Kingdom) at 3 mm × 3 mm scans to determine the surface roughness",
+     "settings": [
+      {
+       "name": "method",
+       "quote": "at 3 mm × 3 mm scans to determine the surface roughness",
+       "value_text": "laser profilometer, 3 mm × 3 mm scans"
+      },
+      {
+       "name": "software",
+       "quote": "gwyddion Software (version 2.56, Czech Metrology Institute, Jihlava, Czech Republic)",
+       "value_text": "gwyddion Software (version 2.56, Czech Metrology Institute)"
+      }
+     ]
+    },
+    {
+     "id": "sbf_1",
+     "technique": "SBF_immersion",
+     "instrument": null,
+     "result": "in vitro bioactivity of the coatings soaked in SBF for 21 days: pH, Ca and P concentrations, apatite formation (Fig. 5)",
+     "quote": "In vitro bioactive behavior of the CS/HA coatings was assessed in simulated body fluid (SBF) solution which prepared according to Kokubo and Takadama’s protocol",
+     "settings": [
+      {
+       "name": "test_medium",
+       "quote": "In vitro bioactive behavior of the CS/HA coatings was assessed in simulated body fluid (SBF) solution which prepared according to Kokubo and Takadama’s protocol",
+       "value_text": "simulated body fluid (SBF) prepared according to Kokubo and Takadama’s protocol"
+      },
+      {
+       "name": "test_medium",
+       "quote": "CS-HA coatings immersed in SBF 1X for 21 days",
+       "value_text": "SBF 1X"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "After day 21 of soaking",
+       "value_num": 21,
+       "unit": "days"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "the materials were taken out from SBF, cleaned with dH2O and dried at 37 °C and 27% RH for 24 h",
+       "value_text": "after soaking: cleaned with dH2O and dried at 37 °C and 27% RH for 24 h"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "The surface morphology was examined using SEM microscopy. Moreover, the Ca and P ions concentrations after the incubation of samples were determined using the ICP-OES technique (Optima 7300DV, Perkin Elmer, Waltham, MA, USA).",
+       "value_text": "SEM for surface morphology; ICP-OES for Ca and P concentrations"
+      }
+     ],
+     "not_stated": [
+      "reaction_temperature",
+      "solution_volume"
+     ]
+    },
+    {
+     "id": "sem_sbf_1",
+     "technique": "SEM",
+     "instrument": null,
+     "result": "apatite deposited on the coatings after 21 days in SBF (Fig. 5a)",
+     "quote": "Figure 5a represents SEM images of CS/HA coatings at day 21 of incubation in SBF.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "the materials were taken out from SBF, cleaned with dH2O and dried at 37 °C and 27% RH for 24 h",
+       "value_text": "cleaned with dH2O and dried at 37 °C and 27% RH for 24 h after soaking"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "icp_1",
+     "technique": "elemental_analysis",
+     "instrument": "ICP-OES Optima 7300DV, Perkin Elmer (Waltham, MA, USA)",
+     "result": "Ca and P concentrations of the SBF after soaking (Fig. 5c)",
+     "quote": "the Ca and P ions concentrations after the incubation of samples were determined using the ICP-OES technique (Optima 7300DV, Perkin Elmer, Waltham, MA, USA)",
+     "settings": [],
+     "not_stated": [
+      "digestion",
+      "calibration"
+     ]
+    },
+    {
+     "id": "bio_1",
+     "technique": "biological_test",
+     "instrument": "Victor X3 spectrophotometer, Perkin Elmer (Milano, Italy)",
+     "result": "hMSC proliferation on the coatings by Alamar blue assay after 1, 3 and 7 days (Fig. 6)",
+     "quote": "The cell proliferation was investigated using Alamar blueTM assay (AbD Serotec, Milano, Italy)",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "using human Mesenchymal Stem cells (hMSC) obtained from LONZA (Milan, Italy)",
+       "value_text": "human Mesenchymal Stem cells (hMSC) from LONZA (Milan, Italy)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "The cells were growth in alpha-MEM (Eagle’s alpha Minimum Essential Medium) supplemented with 10% FBS (Fetal Bovine Serum), antibiotic solution (streptomycin 100 µg/mL and penicillin 100 U/mL, Sigma Aldrich, Milano, Italy) and 2 mM L-glutamine at 37 °C and 5% CO2",
+       "value_text": "alpha-MEM, 10% FBS, streptomycin 100 µg/mL, penicillin 100 U/mL, 2 mM L-glutamine, 37 °C, 5% CO2"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "the seeded substrates were incubated for 4 h at 37 °C, 5% CO2 with 500 µL of Alamar BlueTM diluted 1:10 in DMEM without phenol red",
+       "value_text": "Alamar blue assay incubation: 4 h at 37 °C, 5% CO2, 500 µL Alamar Blue diluted 1:10 in DMEM without phenol red"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "The hMSCs were seeded at a density of 1 × 104 cells/mL on the material surface and cultured for 1, 3, and 7 days.",
+       "value_text": "seeded at 1 × 104 cells/mL on the material surface, cultured for 1, 3 and 7 days"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The cell proliferation was investigated using Alamar blueTM assay (AbD Serotec, Milano, Italy)",
+       "value_text": "Alamar blue assay (AbD Serotec)"
+      },
+      {
+       "name": "wavelength_range",
+       "quote": "for colorimetric analysis at wavelengths of 570 and 600 nm",
+       "value_text": "570 and 600 nm"
+      },
+      {
+       "name": "detector",
+       "quote": "by using a spectrophotometer (Victor X3, Perkin Elmer, Milano, Italy)",
+       "value_text": "spectrophotometer (Victor X3, Perkin Elmer)"
+      },
+      {
+       "name": "replicates",
+       "quote": "The experiment was performed in triplicate for three times.",
+       "value_text": "in triplicate for three times"
+      }
+     ],
+     "not_stated": [
+      "concentration_range"
+     ]
+    },
+    {
+     "id": "sem_cells_1",
+     "technique": "SEM",
+     "instrument": null,
+     "result": "hMSC morphology on the coatings after 3 days of culture (Fig. 7)",
+     "quote": "Moreover, the cell-material interaction was studied using SEM microscopy after 3 days of culture.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "the cells seeded on material surface were fixed using 2.5% glutaraldehyde solution for 2h and were dehydrated using graded ethanol solutions (25%, 50%, 75%, 90%, and 100%)",
+       "value_text": "fixed in 2.5% glutaraldehyde for 2 h, dehydrated in graded ethanol (25, 50, 75, 90, 100%)"
+      },
+      {
+       "name": "magnification",
+       "quote": "SEM micrographs of hMSCs on the CS/HA coatings at two different magnifications (5000× and 20,000×)",
+       "value_text": "5000× and 20,000×"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallinity",
+     "quote": "By Equation (2), the crystallinity of HA in the CS/HA with 10, 50 and 60 wt.% of HA is determined to be about 23%, 28%, and 33%, respectively.",
+     "value_num": 23,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size",
+     "quote": "Moreover, the crystalline size of HA in nanocomposites consisting of 10, 50 and 60 wt.% HA was estimated about 33, 50 and 53 nm, respectively.",
+     "value_num": 33,
+     "unit": "nm",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase",
+     "quote": "XRD patterns of CS/HA composite powders (Figure 3a) confirmed the presence of HA characteristic peaks, matched with a JSPDS card number of 09-432, but the XRD patterns showed the presence of sodium nitrate",
+     "value_text": "HA characteristic peaks (JSPDS 09-432) and sodium nitrate (washed afterwards to remove it)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "contact_angle",
+     "quote": "However, the water contact angle of samples enhanced to 65.91 ± 3.78°, 54.57 ± 2.27° and 43.1 ± 1.6°, after surface treatment with CS/HA coatings containing 10, 50 and 60 wt.% HA, respectively.",
+     "value_num": 65.91,
+     "value_text": "65.91 ± 3.78°",
+     "unit": "°",
+     "measured_by": "ca_1"
+    },
+    {
+     "property": "strength_adhesion",
+     "quote": "The adhesion strength of CS/HA coatings containing 10, 50 and 60 wt.% HA was 2.05 ± 0.08, 3.11 ± 0.16 and 3.42 ± 0.14 (MPa), respectively.",
+     "value_num": 2.05,
+     "value_text": "2.05 ± 0.08 MPa",
+     "unit": "MPa",
+     "measured_by": "adh_1"
+    },
+    {
+     "property": "roughness",
+     "quote": "(CS/10 wt.% HA, Ra = 2.88 ± 1.5 µm; CS/50 wt.% HA, Ra = 6.67 ± 2.1 µm; CS/60 wt.% HA, Ra = 12.93 ± 4.5 µm)",
+     "value_num": 2.88,
+     "value_text": "Ra = 2.88 ± 1.5 µm",
+     "unit": "µm",
+     "measured_by": "prof_1"
+    },
+    {
+     "property": "thickness_layers",
+     "quote": "dense and uniform coatings with a thickness in the range of 15–50 µm",
+     "value_text": "in the range of 15–50 µm (cross-section, the three coatings)",
+     "unit": "µm",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "elemental_composition_CaP_ratio_HA",
+     "quote": "According to the EDS analysis of CS/HA coatings (Supplementary Figure S1), HA with Ca/P ratio around 1.74 (CS/10wt.% HA), 1.63 (CS/50 wt.% HA), and 1.68 (CS/60 wt.% HA) was obtained in the composite material.",
+     "value_num": 1.74,
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "elemental_composition_CaP_ratio_apatite_after_SBF",
+     "quote": "According to Figure S2, the deposition consisted of Ca and P atoms with the ratio around 1.64 (CS/10 wt.% HA), 1.66 (CS/50 wt.% HA), and 1.61 (CS/60 wt.% HA), which were close to 1.67 of bone-like apatite.",
+     "value_num": 1.64,
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "ftir_band_amide_II",
+     "quote": "The band at 1565 cm−1 was related to NH bending (amide II), which shifted to a higher wavenumber at 1571 cm−1 and 1581 cm−1 corresponding to the increasing of CS in composites",
+     "value_num": 1581,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "ftir_band_phosphate",
+     "quote": "According to this figure, the ionic agent of phosphate (PO43−) bands at around 564, 606 (bending vibration bands) and 1030–1105 cm−1 (stretching vibration bands) were observed",
+     "value_text": "PO4 3− bands at around 564, 606 cm−1 (bending) and 1030–1105 cm−1 (stretching)",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_carbonate",
+     "quote": "the band at around 857 cm−1 was associated with ν2 vibrations of carbonate groups",
+     "value_text": "band at around 857 cm−1 associated with ν2 vibrations of carbonate groups (Costescu et al.)",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CO_CH3",
+     "quote": "the appearance of bands at 1033, 1100, and 1375 cm−1 may be also associated to the stretching of C-O and CH3 wagging, respectively",
+     "value_text": "bands at 1033, 1100 and 1375 cm−1 associated to C-O stretching and CH3 wagging",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_polymer",
+     "quote": "The broad band at 1030 cm−1 corresponded to the polymer and its interaction with the phosphate groups in composite",
+     "value_text": "broad band at 1030 cm−1 corresponding to the polymer and its interaction with phosphate groups",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "apatite_formation",
+     "quote": "All samples showed the nucleation of apatite particles on the surface of CS/HA coating.",
+     "value_text": "nucleation of apatite particles on the coating surface after 21 days in SBF",
+     "measured_by": "sbf_1"
+    },
+    {
+     "property": "medium_ph_day4",
+     "quote": "(b) pH of the SBF solution, after soaking the CS/HA coatings",
+     "value_num": 7.6,
+     "measured_by": "sbf_1",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "medium_ph_day21",
+     "quote": "(b) pH of the SBF solution, after soaking the CS/HA coatings",
+     "value_num": 7.5,
+     "measured_by": "sbf_1",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "solution_concentration_Ca_day21",
+     "quote": "(c) Ca and P ions concentrations of the CS/HA coatings after 21 days soaking",
+     "value_num": 110,
+     "unit": "mg/L",
+     "measured_by": "icp_1",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "solution_concentration_P_day21",
+     "quote": "(c) Ca and P ions concentrations of the CS/HA coatings after 21 days soaking",
+     "value_num": 37,
+     "unit": "mg/L",
+     "measured_by": "icp_1",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "biological_proliferation_alamar_day1",
+     "quote": "Figure 6 Alamar blue assay after 1, 3 and 7 days of cell culture.",
+     "value_num": 35,
+     "unit": "% reduction of Alamar blue",
+     "measured_by": "bio_1",
+     "from_figure": "Fig. 6"
+    },
+    {
+     "property": "biological_proliferation_alamar_day3",
+     "quote": "Figure 6 Alamar blue assay after 1, 3 and 7 days of cell culture.",
+     "value_num": 51,
+     "unit": "% reduction of Alamar blue",
+     "measured_by": "bio_1",
+     "from_figure": "Fig. 6"
+    },
+    {
+     "property": "biological_proliferation_alamar_day7",
+     "quote": "Figure 6 Alamar blue assay after 1, 3 and 7 days of cell culture.",
+     "value_num": 41,
+     "unit": "% reduction of Alamar blue",
+     "measured_by": "bio_1",
+     "from_figure": "Fig. 6"
+    },
+    {
+     "property": "statistic_p_proliferation_day1_vs_day3",
+     "quote": "There was a significant difference in cell proliferation among the CS/HA coatings with 10, 50 and 60 wt.% of HA at one day compared to three days (P ˂ 0.05).",
+     "value_text": "P < 0.05",
+     "measured_by": "bio_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "The SEM images represented the formation of crack-free coatings without any imperfections, especially at CS/10 wt.% HA coating.",
+     "value_text": "crack-free coatings without any imperfections, especially at CS/10 wt.% HA",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "In the homogeneous and smooth CS/10 wt.% HA coating, HA crystals grew slowly with uniform distribution.",
+     "value_text": "homogeneous and smooth coating; HA crystals grew slowly with uniform distribution",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "elemental_composition_HA_distribution",
+     "quote": "EDS mapping-analysis confirmed the homogenous distribution of HA, specifically at CS/10 wt.% HA coating.",
+     "value_text": "homogenous distribution of HA (EDS mapping)",
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "apatite_formation",
+     "quote": "SEM images of CS/10 wt.% HA coating showed that surfaces were coated with formless apatite particles after 21days of soaking in SBF.",
+     "value_text": "surfaces coated with formless apatite particles after 21 days of soaking in SBF",
+     "measured_by": "sem_sbf_1"
+    },
+    {
+     "property": "biological_cell_morphology_sem",
+     "quote": "In the presence of 10 wt.% HA, the cells showed a spread appearance on the coating surface.",
+     "value_text": "cells showed a spread appearance on the coating surface (day 3)",
+     "measured_by": "sem_cells_1"
+    },
+    {
+     "property": "biological",
+     "quote": "CS/10 wt.% HA coating presented the highest proliferation compared to other samples",
+     "value_text": "highest proliferation compared to the other samples",
+     "measured_by": "bio_1"
+    },
+    {
+     "property": "statistic_p_proliferation_day3_vs_CS50_and_CTR",
+     "quote": "Considerable differences were observed at day 3 for CS/10 wt.% HA vs CS/50 wt.% HA and control (CTR) (P ˂ 0.05).",
+     "value_text": "P < 0.05",
+     "measured_by": "bio_1"
+    }
+   ]
+  },
+  {
+   "label": "CS/50 wt.% HA",
+   "parent": "CS/10 wt.% HA",
+   "kind": "material",
+   "material": {
+    "name": "chitosan/hydroxyapatite nanocomposite coating (50 wt.% HA) on alkali-treated Ti6Al4V",
+    "formula": null,
+    "family": "composite",
+    "phase": "hydroxyapatite (low crystallinity) in a chitosan matrix",
+    "morphology": "denser, rougher coating with HA clusters"
+   },
+   "quote": "The amount of Ca, P and CS solutions were modified to have the composite with the composition of 10, 50, and 60 wt.% HA in CS matrix.",
+   "succeeded": true,
+   "variations": [
+    {
+     "parameter": "mass_ratio_ha_in_composite",
+     "step_order": 7,
+     "value_num": 50,
+     "unit": "wt.%",
+     "parent_value": "10 wt.%",
+     "quote": "CS/HA coatings containing different amount of HA, 10, 50 and 60 wt %, were synthesized by sol-gel technology."
+    },
+    {
+     "parameter": "chitosan (molecular weight ca. 300 kDa)",
+     "value_text": "amount modified to give 50 wt.% HA (value not stated)",
+     "parent_value": "not stated",
+     "quote": "The amount of Ca, P and CS solutions were modified to have the composite with the composition of 10, 50, and 60 wt.% HA in CS matrix."
+    },
+    {
+     "parameter": "calcium nitrate tetrahydrate",
+     "value_text": "amount modified to give 50 wt.% HA (value not stated)",
+     "parent_value": "not stated",
+     "quote": "The amount of Ca, P and CS solutions were modified to have the composite with the composition of 10, 50, and 60 wt.% HA in CS matrix."
+    },
+    {
+     "parameter": "di-ammonium hydrogen phosphate",
+     "value_text": "amount modified to give 50 wt.% HA (value not stated)",
+     "parent_value": "not stated",
+     "quote": "The amount of Ca, P and CS solutions were modified to have the composite with the composition of 10, 50, and 60 wt.% HA in CS matrix."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallinity",
+     "quote": "By Equation (2), the crystallinity of HA in the CS/HA with 10, 50 and 60 wt.% of HA is determined to be about 23%, 28%, and 33%, respectively.",
+     "value_num": 28,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size",
+     "quote": "Moreover, the crystalline size of HA in nanocomposites consisting of 10, 50 and 60 wt.% HA was estimated about 33, 50 and 53 nm, respectively.",
+     "value_num": 50,
+     "unit": "nm",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase",
+     "quote": "XRD patterns of CS/HA composite powders (Figure 3a) confirmed the presence of HA characteristic peaks, matched with a JSPDS card number of 09-432, but the XRD patterns showed the presence of sodium nitrate",
+     "value_text": "HA characteristic peaks (JSPDS 09-432) and sodium nitrate (washed afterwards to remove it)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "contact_angle",
+     "quote": "However, the water contact angle of samples enhanced to 65.91 ± 3.78°, 54.57 ± 2.27° and 43.1 ± 1.6°, after surface treatment with CS/HA coatings containing 10, 50 and 60 wt.% HA, respectively.",
+     "value_num": 54.57,
+     "value_text": "54.57 ± 2.27°",
+     "unit": "°",
+     "measured_by": "ca_1"
+    },
+    {
+     "property": "strength_adhesion",
+     "quote": "The adhesion strength of CS/HA coatings containing 10, 50 and 60 wt.% HA was 2.05 ± 0.08, 3.11 ± 0.16 and 3.42 ± 0.14 (MPa), respectively.",
+     "value_num": 3.11,
+     "value_text": "3.11 ± 0.16 MPa",
+     "unit": "MPa",
+     "measured_by": "adh_1"
+    },
+    {
+     "property": "roughness",
+     "quote": "(CS/10 wt.% HA, Ra = 2.88 ± 1.5 µm; CS/50 wt.% HA, Ra = 6.67 ± 2.1 µm; CS/60 wt.% HA, Ra = 12.93 ± 4.5 µm)",
+     "value_num": 6.67,
+     "value_text": "Ra = 6.67 ± 2.1 µm",
+     "unit": "µm",
+     "measured_by": "prof_1"
+    },
+    {
+     "property": "thickness_layers",
+     "quote": "dense and uniform coatings with a thickness in the range of 15–50 µm",
+     "value_text": "in the range of 15–50 µm (cross-section, the three coatings)",
+     "unit": "µm",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "elemental_composition_CaP_ratio_HA",
+     "quote": "According to the EDS analysis of CS/HA coatings (Supplementary Figure S1), HA with Ca/P ratio around 1.74 (CS/10wt.% HA), 1.63 (CS/50 wt.% HA), and 1.68 (CS/60 wt.% HA) was obtained in the composite material.",
+     "value_num": 1.63,
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "elemental_composition_CaP_ratio_apatite_after_SBF",
+     "quote": "According to Figure S2, the deposition consisted of Ca and P atoms with the ratio around 1.64 (CS/10 wt.% HA), 1.66 (CS/50 wt.% HA), and 1.61 (CS/60 wt.% HA), which were close to 1.67 of bone-like apatite.",
+     "value_num": 1.66,
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "ftir_band_amide_II",
+     "quote": "The band at 1565 cm−1 was related to NH bending (amide II), which shifted to a higher wavenumber at 1571 cm−1 and 1581 cm−1 corresponding to the increasing of CS in composites",
+     "value_num": 1571,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "ftir_band_phosphate",
+     "quote": "According to this figure, the ionic agent of phosphate (PO43−) bands at around 564, 606 (bending vibration bands) and 1030–1105 cm−1 (stretching vibration bands) were observed",
+     "value_text": "PO4 3− bands at around 564, 606 cm−1 (bending) and 1030–1105 cm−1 (stretching)",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_carbonate",
+     "quote": "the band at around 857 cm−1 was associated with ν2 vibrations of carbonate groups",
+     "value_text": "band at around 857 cm−1 associated with ν2 vibrations of carbonate groups (Costescu et al.)",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CO_CH3",
+     "quote": "the appearance of bands at 1033, 1100, and 1375 cm−1 may be also associated to the stretching of C-O and CH3 wagging, respectively",
+     "value_text": "bands at 1033, 1100 and 1375 cm−1 associated to C-O stretching and CH3 wagging",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_polymer",
+     "quote": "The broad band at 1030 cm−1 corresponded to the polymer and its interaction with the phosphate groups in composite",
+     "value_text": "broad band at 1030 cm−1 corresponding to the polymer and its interaction with phosphate groups",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "apatite_formation",
+     "quote": "All samples showed the nucleation of apatite particles on the surface of CS/HA coating.",
+     "value_text": "nucleation of apatite particles on the coating surface after 21 days in SBF",
+     "measured_by": "sbf_1"
+    },
+    {
+     "property": "medium_ph_day4",
+     "quote": "(b) pH of the SBF solution, after soaking the CS/HA coatings",
+     "value_num": 7.7,
+     "measured_by": "sbf_1",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "medium_ph_day21",
+     "quote": "(b) pH of the SBF solution, after soaking the CS/HA coatings",
+     "value_num": 7.6,
+     "measured_by": "sbf_1",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "solution_concentration_Ca_day21",
+     "quote": "(c) Ca and P ions concentrations of the CS/HA coatings after 21 days soaking",
+     "value_num": 140,
+     "unit": "mg/L",
+     "measured_by": "icp_1",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "solution_concentration_P_day21",
+     "quote": "(c) Ca and P ions concentrations of the CS/HA coatings after 21 days soaking",
+     "value_num": 41,
+     "unit": "mg/L",
+     "measured_by": "icp_1",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "biological_proliferation_alamar_day1",
+     "quote": "Figure 6 Alamar blue assay after 1, 3 and 7 days of cell culture.",
+     "value_num": 22,
+     "unit": "% reduction of Alamar blue",
+     "measured_by": "bio_1",
+     "from_figure": "Fig. 6"
+    },
+    {
+     "property": "biological_proliferation_alamar_day3",
+     "quote": "Figure 6 Alamar blue assay after 1, 3 and 7 days of cell culture.",
+     "value_num": 35,
+     "unit": "% reduction of Alamar blue",
+     "measured_by": "bio_1",
+     "from_figure": "Fig. 6"
+    },
+    {
+     "property": "biological_proliferation_alamar_day7",
+     "quote": "Figure 6 Alamar blue assay after 1, 3 and 7 days of cell culture.",
+     "value_num": 29,
+     "unit": "% reduction of Alamar blue",
+     "measured_by": "bio_1",
+     "from_figure": "Fig. 6"
+    },
+    {
+     "property": "statistic_p_proliferation_day1_vs_day3",
+     "quote": "There was a significant difference in cell proliferation among the CS/HA coatings with 10, 50 and 60 wt.% of HA at one day compared to three days (P ˂ 0.05).",
+     "value_text": "P < 0.05",
+     "measured_by": "bio_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "The SEM images represented the formation of crack-free coatings without any imperfections, especially at CS/10 wt.% HA coating.",
+     "value_text": "crack-free coatings without any imperfections",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "Meanwhile, in the samples with higher HA amount (CS/50 wt.% HA and CS/60 wt.% HA coatings) some clusters of HA nanoparticles were observed.",
+     "value_text": "some clusters of HA nanoparticles observed (EDS mapping and SEM)",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "In contrary, incorporation in the coatings of HA at higher amount (50 and 60 wt.% of HA) resulted in the formation of much denser and roughness surface.",
+     "value_text": "much denser and rougher surface",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "apatite_formation",
+     "quote": "A typical “cauliflower” morphology was distinctly observed for CS/50 wt.% HA and CS/60 wt.% HA samples after 21 days of incubation, in which each apatite particles included many needle-like crystals.",
+     "value_text": "typical “cauliflower” morphology, each apatite particle made of many needle-like crystals, after 21 days in SBF",
+     "measured_by": "sem_sbf_1"
+    },
+    {
+     "property": "biological_cell_morphology_sem",
+     "quote": "By increasing the amount of HA content, only fewer cells stretch and proliferate on the coating surface due to HA nanoparticles agglomeration.",
+     "value_text": "only fewer cells stretch and proliferate on the coating surface (day 3)",
+     "measured_by": "sem_cells_1"
+    },
+    {
+     "property": "statistic_p_proliferation_CS50_vs_CS60",
+     "quote": "By increasing HA content, there were no significant differences between CS/50 wt.% HA and CS/60 wt.% HA coatings (P > 0.05).",
+     "value_text": "P > 0.05 (no significant difference between CS/50 and CS/60 wt.% HA)",
+     "measured_by": "bio_1"
+    }
+   ]
+  },
+  {
+   "label": "CS/60 wt.% HA",
+   "parent": "CS/10 wt.% HA",
+   "kind": "material",
+   "material": {
+    "name": "chitosan/hydroxyapatite nanocomposite coating (60 wt.% HA) on alkali-treated Ti6Al4V",
+    "formula": null,
+    "family": "composite",
+    "phase": "hydroxyapatite (low crystallinity) in a chitosan matrix",
+    "morphology": "denser, rougher coating with HA clusters"
+   },
+   "quote": "The amount of Ca, P and CS solutions were modified to have the composite with the composition of 10, 50, and 60 wt.% HA in CS matrix.",
+   "succeeded": true,
+   "variations": [
+    {
+     "parameter": "mass_ratio_ha_in_composite",
+     "step_order": 7,
+     "value_num": 60,
+     "unit": "wt.%",
+     "parent_value": "10 wt.%",
+     "quote": "CS/HA coatings containing different amount of HA, 10, 50 and 60 wt %, were synthesized by sol-gel technology."
+    },
+    {
+     "parameter": "chitosan (molecular weight ca. 300 kDa)",
+     "value_text": "amount modified to give 60 wt.% HA (value not stated)",
+     "parent_value": "not stated",
+     "quote": "The amount of Ca, P and CS solutions were modified to have the composite with the composition of 10, 50, and 60 wt.% HA in CS matrix."
+    },
+    {
+     "parameter": "calcium nitrate tetrahydrate",
+     "value_text": "amount modified to give 60 wt.% HA (value not stated)",
+     "parent_value": "not stated",
+     "quote": "The amount of Ca, P and CS solutions were modified to have the composite with the composition of 10, 50, and 60 wt.% HA in CS matrix."
+    },
+    {
+     "parameter": "di-ammonium hydrogen phosphate",
+     "value_text": "amount modified to give 60 wt.% HA (value not stated)",
+     "parent_value": "not stated",
+     "quote": "The amount of Ca, P and CS solutions were modified to have the composite with the composition of 10, 50, and 60 wt.% HA in CS matrix."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallinity",
+     "quote": "By Equation (2), the crystallinity of HA in the CS/HA with 10, 50 and 60 wt.% of HA is determined to be about 23%, 28%, and 33%, respectively.",
+     "value_num": 33,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size",
+     "quote": "Moreover, the crystalline size of HA in nanocomposites consisting of 10, 50 and 60 wt.% HA was estimated about 33, 50 and 53 nm, respectively.",
+     "value_num": 53,
+     "unit": "nm",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase",
+     "quote": "XRD patterns of CS/HA composite powders (Figure 3a) confirmed the presence of HA characteristic peaks, matched with a JSPDS card number of 09-432, but the XRD patterns showed the presence of sodium nitrate",
+     "value_text": "HA characteristic peaks (JSPDS 09-432) and sodium nitrate (washed afterwards to remove it)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "contact_angle",
+     "quote": "However, the water contact angle of samples enhanced to 65.91 ± 3.78°, 54.57 ± 2.27° and 43.1 ± 1.6°, after surface treatment with CS/HA coatings containing 10, 50 and 60 wt.% HA, respectively.",
+     "value_num": 43.1,
+     "value_text": "43.1 ± 1.6°",
+     "unit": "°",
+     "measured_by": "ca_1"
+    },
+    {
+     "property": "strength_adhesion",
+     "quote": "The adhesion strength of CS/HA coatings containing 10, 50 and 60 wt.% HA was 2.05 ± 0.08, 3.11 ± 0.16 and 3.42 ± 0.14 (MPa), respectively.",
+     "value_num": 3.42,
+     "value_text": "3.42 ± 0.14 MPa",
+     "unit": "MPa",
+     "measured_by": "adh_1"
+    },
+    {
+     "property": "roughness",
+     "quote": "(CS/10 wt.% HA, Ra = 2.88 ± 1.5 µm; CS/50 wt.% HA, Ra = 6.67 ± 2.1 µm; CS/60 wt.% HA, Ra = 12.93 ± 4.5 µm)",
+     "value_num": 12.93,
+     "value_text": "Ra = 12.93 ± 4.5 µm",
+     "unit": "µm",
+     "measured_by": "prof_1"
+    },
+    {
+     "property": "thickness_layers",
+     "quote": "dense and uniform coatings with a thickness in the range of 15–50 µm",
+     "value_text": "in the range of 15–50 µm (cross-section, the three coatings)",
+     "unit": "µm",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "elemental_composition_CaP_ratio_HA",
+     "quote": "According to the EDS analysis of CS/HA coatings (Supplementary Figure S1), HA with Ca/P ratio around 1.74 (CS/10wt.% HA), 1.63 (CS/50 wt.% HA), and 1.68 (CS/60 wt.% HA) was obtained in the composite material.",
+     "value_num": 1.68,
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "elemental_composition_CaP_ratio_apatite_after_SBF",
+     "quote": "According to Figure S2, the deposition consisted of Ca and P atoms with the ratio around 1.64 (CS/10 wt.% HA), 1.66 (CS/50 wt.% HA), and 1.61 (CS/60 wt.% HA), which were close to 1.67 of bone-like apatite.",
+     "value_num": 1.61,
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "ftir_band_amide_II",
+     "quote": "The band at 1565 cm−1 was related to NH bending (amide II), which shifted to a higher wavenumber at 1571 cm−1 and 1581 cm−1 corresponding to the increasing of CS in composites",
+     "value_num": 1565,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "ftir_band_phosphate",
+     "quote": "According to this figure, the ionic agent of phosphate (PO43−) bands at around 564, 606 (bending vibration bands) and 1030–1105 cm−1 (stretching vibration bands) were observed",
+     "value_text": "PO4 3− bands at around 564, 606 cm−1 (bending) and 1030–1105 cm−1 (stretching)",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_carbonate",
+     "quote": "the band at around 857 cm−1 was associated with ν2 vibrations of carbonate groups",
+     "value_text": "band at around 857 cm−1 associated with ν2 vibrations of carbonate groups (Costescu et al.)",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CO_CH3",
+     "quote": "the appearance of bands at 1033, 1100, and 1375 cm−1 may be also associated to the stretching of C-O and CH3 wagging, respectively",
+     "value_text": "bands at 1033, 1100 and 1375 cm−1 associated to C-O stretching and CH3 wagging",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_polymer",
+     "quote": "The broad band at 1030 cm−1 corresponded to the polymer and its interaction with the phosphate groups in composite",
+     "value_text": "broad band at 1030 cm−1 corresponding to the polymer and its interaction with phosphate groups",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "apatite_formation",
+     "quote": "All samples showed the nucleation of apatite particles on the surface of CS/HA coating.",
+     "value_text": "nucleation of apatite particles on the coating surface after 21 days in SBF",
+     "measured_by": "sbf_1"
+    },
+    {
+     "property": "medium_ph_day4",
+     "quote": "(b) pH of the SBF solution, after soaking the CS/HA coatings",
+     "value_num": 7.9,
+     "measured_by": "sbf_1",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "medium_ph_day21",
+     "quote": "(b) pH of the SBF solution, after soaking the CS/HA coatings",
+     "value_num": 7.6,
+     "measured_by": "sbf_1",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "solution_concentration_Ca_day21",
+     "quote": "(c) Ca and P ions concentrations of the CS/HA coatings after 21 days soaking",
+     "value_num": 150,
+     "unit": "mg/L",
+     "measured_by": "icp_1",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "solution_concentration_P_day21",
+     "quote": "(c) Ca and P ions concentrations of the CS/HA coatings after 21 days soaking",
+     "value_num": 43,
+     "unit": "mg/L",
+     "measured_by": "icp_1",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "biological_proliferation_alamar_day1",
+     "quote": "Figure 6 Alamar blue assay after 1, 3 and 7 days of cell culture.",
+     "value_num": 20,
+     "unit": "% reduction of Alamar blue",
+     "measured_by": "bio_1",
+     "from_figure": "Fig. 6"
+    },
+    {
+     "property": "biological_proliferation_alamar_day3",
+     "quote": "Figure 6 Alamar blue assay after 1, 3 and 7 days of cell culture.",
+     "value_num": 31,
+     "unit": "% reduction of Alamar blue",
+     "measured_by": "bio_1",
+     "from_figure": "Fig. 6"
+    },
+    {
+     "property": "biological_proliferation_alamar_day7",
+     "quote": "Figure 6 Alamar blue assay after 1, 3 and 7 days of cell culture.",
+     "value_num": 28,
+     "unit": "% reduction of Alamar blue",
+     "measured_by": "bio_1",
+     "from_figure": "Fig. 6"
+    },
+    {
+     "property": "statistic_p_proliferation_day1_vs_day3",
+     "quote": "There was a significant difference in cell proliferation among the CS/HA coatings with 10, 50 and 60 wt.% of HA at one day compared to three days (P ˂ 0.05).",
+     "value_text": "P < 0.05",
+     "measured_by": "bio_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "The SEM images represented the formation of crack-free coatings without any imperfections, especially at CS/10 wt.% HA coating.",
+     "value_text": "crack-free coatings without any imperfections",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "Meanwhile, in the samples with higher HA amount (CS/50 wt.% HA and CS/60 wt.% HA coatings) some clusters of HA nanoparticles were observed.",
+     "value_text": "some clusters of HA nanoparticles observed (EDS mapping and SEM)",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "In contrary, incorporation in the coatings of HA at higher amount (50 and 60 wt.% of HA) resulted in the formation of much denser and roughness surface.",
+     "value_text": "much denser and rougher surface",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "apatite_formation",
+     "quote": "A typical “cauliflower” morphology was distinctly observed for CS/50 wt.% HA and CS/60 wt.% HA samples after 21 days of incubation, in which each apatite particles included many needle-like crystals.",
+     "value_text": "typical “cauliflower” morphology, each apatite particle made of many needle-like crystals, after 21 days in SBF",
+     "measured_by": "sem_sbf_1"
+    },
+    {
+     "property": "biological_cell_morphology_sem",
+     "quote": "By increasing the amount of HA content, only fewer cells stretch and proliferate on the coating surface due to HA nanoparticles agglomeration.",
+     "value_text": "only fewer cells stretch and proliferate on the coating surface (day 3)",
+     "measured_by": "sem_cells_1"
+    },
+    {
+     "property": "statistic_p_proliferation_CS50_vs_CS60",
+     "quote": "By increasing HA content, there were no significant differences between CS/50 wt.% HA and CS/60 wt.% HA coatings (P > 0.05).",
+     "value_text": "P > 0.05 (no significant difference between CS/50 and CS/60 wt.% HA)",
+     "measured_by": "bio_1"
+    },
+    {
+     "property": "apatite_formation",
+     "quote": "The surface morphology for CS/60 wt.% HA coating indicated highly dense apatite deposition and growth compared to other samples.",
+     "value_text": "highly dense apatite deposition and growth compared to the other samples",
+     "measured_by": "sem_sbf_1"
+    },
+    {
+     "property": "phase",
+     "quote": "Furthermore, the XRD pattern (Figure 5d) confirmed the apatite formation on the surface of CS/60 wt.% HA coating after biomimetic treatment for 21 days and it was also determined the low crystallization similar to the HA of natural bone.",
+     "value_text": "apatite (hydroxyapatite) formed on the coating after 21 days in SBF, low crystallization similar to the HA of natural bone",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position_HA_after_SBF",
+     "quote": "(d) XRD pattern of CS/60 wt.% HA coating after 21 days soaking",
+     "value_text": "hydroxyapatite peaks marked at about 26, 32 and 35°; Ti6Al4V peaks at about 38, 40 and 53°",
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "from_figure": "Fig. 5d"
+    }
+   ]
+  }
+ ],
+ "sample_inventory": [
+  {
+   "sample": "Ti6Al4V plates (polished, untreated)",
+   "defined_in": "Methods 2.2",
+   "route": null,
+   "why": "substrat de départ, simple réactif de la voie Ti6Al4V_alkali ; aucun résultat propre (le substrat non traité n'est pas mesuré)",
+   "results_in": []
+  },
+  {
+   "sample": "alkali-treated Ti6Al4V (« Ti6Al4V » in Fig. 3d)",
+   "defined_in": "Methods 2.2; Results 3.1",
+   "route": "Ti6Al4V_alkali",
+   "results_in": [
+    "Fig. 1a",
+    "Fig. 1b",
+    "Fig. 3d",
+    "Fig. 4"
+   ]
+  },
+  {
+   "sample": "CS/10 wt.% HA",
+   "defined_in": "Methods 2.2",
+   "route": "CS/10 wt.% HA",
+   "results_in": [
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. S1",
+    "Fig. S2"
+   ]
+  },
+  {
+   "sample": "CS/50 wt.% HA",
+   "defined_in": "Methods 2.2",
+   "route": "CS/50 wt.% HA",
+   "results_in": [
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. S1",
+    "Fig. S2"
+   ]
+  },
+  {
+   "sample": "CS/60 wt.% HA",
+   "defined_in": "Methods 2.2",
+   "route": "CS/60 wt.% HA",
+   "results_in": [
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. S1",
+    "Fig. S2"
+   ]
+  },
+  {
+   "sample": "CS/HA composite powders (10, 50, 60 wt.% HA, washed with dH2O)",
+   "defined_in": "Results 3.2",
+   "route": null,
+   "why": "préparation des poudres non décrite (lavage à l'eau cité, séchage non cité) ; leurs résultats DRX et FTIR sont rattachés aux trois voies CS/HA",
+   "results_in": [
+    "Fig. 3a",
+    "Fig. 3b"
+   ]
+  },
+  {
+   "sample": "CTR (control)",
+   "defined_in": "Results 3.3; Fig. 5c and Fig. 6",
+   "route": null,
+   "why": "témoin non synthétisé (SBF sans revêtement, cellules sans revêtement) ; valeurs lues sur figure notées dans une annotation",
+   "results_in": [
+    "Fig. 5c",
+    "Fig. 6"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des revêtements nanocomposites chitosane/hydroxyapatite (CS/HA) à 10, 50 et 60 % massiques de HA, synthétisés in situ par un procédé sol-gel (précipitation de HA dans une solution de chitosane à pH ≈ 10), puis déposés par trempage-retrait sur du Ti6Al4V préalablement traité à la soude. Les auteurs mesurent la morphologie, la rugosité, l'angle de contact, l'adhérence, la bioactivité en fluide corporel simulé (SBF) et la prolifération de cellules souches mésenchymateuses : plus de HA augmente la rugosité, l'hydrophilie, l'adhérence et la formation d'apatite, mais le revêtement à 10 % de HA donne la meilleure prolifération.",
+   "quote": "This research aims to produce and investigate in-situ chitosan/hydroxyapatite (CS/HA) nanocomposite coatings based on different amounts of HA (10, 50 and 60 wt.%) on alkali-treated Ti6Al4V substrate through the sol-gel process to enhance in vitro bioactivity."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir s'il est possible d'obtenir par synthèse in situ sol-gel des revêtements CS/HA denses et sans fissures, avec jusqu'à 60 % de HA, sur un substrat Ti6Al4V traité en milieu alcalin, et comment la teneur en HA modifie l'hydrophilie, l'adhérence, la rugosité, la bioactivité et la réponse des cellules.",
+   "quote": "In this way, this study aims to in-situ synthesize CS/HA nanocomposite coatings (HA content to 60 wt.%) on alkali-treated Ti6Al4V substrate via sol-gel process to obtain the crack-free coatings without any imperfection and pores."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul paramètre de synthèse est balayé : la teneur massique en HA du composite (10, 50 et 60 %), obtenue en changeant les quantités de calcium, de phosphate et de chitosane. Elle sert à relier la composition à la structure du revêtement (taille des cristaux, rugosité, agglomération) puis à ses propriétés d'usage pour un implant dentaire : mouillabilité, adhérence au substrat, bioactivité en SBF et prolifération cellulaire. Le substrat alcalin est traité une seule fois dans les mêmes conditions pour tous les échantillons, afin d'ancrer mécaniquement le revêtement."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Quand la teneur en HA passe de 10 à 50 puis 60 % : la cristallinité de HA passe de 23 à 28 puis 33 % et la taille des cristaux de 33 à 50 puis 53 nm ; l'angle de contact baisse de 65,91° à 54,57° puis 43,1° (plus hydrophile) ; l'adhérence monte de 2,05 à 3,11 puis 3,42 MPa ; la rugosité Ra passe de 2,88 à 6,67 puis 12,93 µm. En SBF, la couche d'apatite devient plus dense (formes sans forme à 10 %, « chou-fleur » à 50 et 60 %). La prolifération des hMSC est en revanche la plus forte à 10 % de HA (≈ 51 % de réduction d'Alamar blue au jour 3 contre ≈ 35 et 31 %)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Plus le revêtement contient de HA, plus il est rugueux (agglomération de HA dans la matrice de chitosane), plus il est hydrophile et adhérent, et plus il offre de sites de nucléation à l'apatite en SBF ; à l'inverse, la surface lisse et homogène à 10 % de HA favorise l'étalement et la prolifération des cellules. Le pH du SBF monte plus vite quand la teneur en HA augmente (≈ 7,6 ; 7,7 ; 7,9 au jour 4).",
+   "quote": "It appears that because of the increasing HA content in coating, more nucleation sites were offered to promote nuclei formation and crystallization of apatite layer."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs retiennent le CS/10 wt.% HA pour la réponse cellulaire (distribution homogène de HA, faible rugosité), et les teneurs plus élevées (50 et 60 %) pour l'hydrophilie, l'adhérence et la bioactivité en SBF.",
+   "quote": "In particular, samples with less HA content (CS/10 wt.% HA) show homogeneous HA distribution and lower surface roughness with a good cellular response in terms of cell proliferation."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les masses ou volumes de chitosane, de nitrate de calcium, d'hydrogénophosphate d'ammonium et d'eau ne sont jamais donnés (seulement « the amount ... were modified » pour obtenir 10, 50 et 60 % de HA) ; ni la vitesse d'agitation, ni le volume de soude 1 M, ni la durée de trempage, ni le matériel de trempage-retrait. Le nombre de couches (« repeated two times ») est ambigu. Le lavage des composites à l'eau pour éliminer le nitrate de sodium est cité sans que l'on sache s'il vise les poudres analysées en DRX ou aussi le sol de revêtement, ni comment ces poudres sont obtenues. Le pH final est « about 10 » (le schéma 1, image sans texte extractible, indique pH > 10 et un rapport Ca/P de 1,67). Le diamètre des disques d'adhérence (25 mm) diffère du coupon de substrat (20 × 10 × 2 mm). Les figures des annexes S1 et S2 (EDS) ne sont présentes que par leur titre : seuls les rapports Ca/P du texte sont extraits. Les valeurs de pH, de concentrations en Ca et P et de prolifération sont lues sur figure (précision de lecture limitée)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Ti6Al4V_alkali",
+   "text": "Les réactions de l'attaque alcaline du TiO2 (R1 et suivantes) sont absentes du texte extrait (équations non transcrites) ; seul le déroulé qualitatif est cité. La température du fluide SBF pendant le trempage, son volume et la fréquence des mesures de pH ne sont pas donnés.",
+   "quote": "during the alkali treatment, the superficial TiO2 layer partially dissolved into the alkaline solution due to the attack by hydroxyl groups"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Ti6Al4V_alkali",
+   "text": "Pendant le traitement alcalin, la couche superficielle de TiO2 se dissout partiellement sous l'attaque des groupes hydroxyle ; le titane réagit aussi avec la soude, les hydrates de titanate chargés négativement réagissent avec Na+ et forment un hydrogel poreux de titanate de sodium qui sert d'ancrage mécanique au revêtement.",
+   "quote": "Finally, titanate hydroxide (HTiO3−·nH2O) reacted with Na+ ions and porous shaped sodium titanate hydrogel was formed on Ti6Al4V surface"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Ti6Al4V_alkali",
+   "text": "Hypothèse de chimiste : la soude 5 M à 60 °C pendant 48 h dissout la couche passive de TiO2 et attaque Ti6Al4V ; le titanate hydraté formé se combine à Na+ pour donner une couche poreuse de titanate de sodium (pores de 100 à 300 nm). Cette couche, hydrophile (angle de contact 16,62°), offre une grande surface et des sites d'ancrage mécanique pour le sol de chitosane/HA, ce qui explique le bon contact interfacial observé en coupe."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "Ti6Al4V_alkali",
+   "text": "La soude 5 M chauffée à 60 °C pendant 48 h est corrosive (gants, lunettes, récipient en polymère adapté, pas de fermeture hermétique). L'acétone est inflammable (ultrasons en bain à surveiller). Le polissage au papier SiC produit des poussières de métal et de carbure à ne pas inhaler."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CS/10 wt.% HA",
+   "text": "Les auteurs proposent une liaison de coordination entre les groupes –NH2 du chitosane et les ions Ca2+ de la surface des cristaux de HA (Ca2+ de coordinence 7), avec liaisons hydrogène –NH2/–OH, ce qui décale vers les bas nombres d'onde les bandes amine et amide du chitosane pur.",
+   "quote": "there might be formed the coordination bond between the –NH2 of chitosan and Ca2+ of HA (Figure 3c)"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CS/10 wt.% HA",
+   "text": "Hypothèse de chimiste : en milieu basique (pH ≈ 10), les ions Ca2+ (apportés par le nitrate) et HPO4 2−/PO4 3− (apportés par l'hydrogénophosphate d'ammonium) précipitent en hydroxyapatite Ca10(PO4)6(OH)2 de faible cristallinité, selon environ 10 Ca2+ + 6 HPO4 2− + 8 OH− → Ca10(PO4)6(OH)2 + 6 H2O, la précipitation se faisant au sein de la solution de chitosane dont les groupes amine retiennent Ca2+ (germination hétérogène). Le nitrate de sodium, sous-produit visible en DRX, vient de NO3− et de la soude ajoutée ; les rapports Ca/P mesurés (1,63 à 1,74) sont proches du 1,67 stœchiométrique. À pH 10 le chitosane (pKa ≈ 6,5) est probablement déprotoné et précipite en gel, ce qui expliquerait un sol visqueux et un revêtement épais (15–50 µm)."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CS/10 wt.% HA",
+   "text": "Dans le SBF, l'échange d'ions de type Kokubo (libération de Ca2+, hausse du pH) puis dissolution et reprécipitation du revêtement conduisent à la formation d'une couche d'apatite, d'autant plus facilement que le revêtement contient plus de HA (plus de sites de nucléation).",
+   "quote": "may be described by the Kokubo exchange mechanism for the formation and growth of the apatite on the surface coatings"
+  },
+  {
+   "type": "securite_analyse",
+   "route": "CS/10 wt.% HA",
+   "text": "Le nitrate de calcium (oxydant) et l'hydrogénophosphate d'ammonium sont irritants ; l'acide acétique est corrosif ; la soude 1 M est caustique. Le glutaraldéhyde (2,5 %) utilisé pour fixer les cellules est toxique et sensibilisant (hotte), le milieu de culture et les cellules humaines doivent être manipulés selon les règles de biosécurité. L'époxy de collage des essais d'adhérence est un sensibilisant cutané."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Contrôle (CTR, cellules sans revêtement) lu sur la figure 6 : environ 21 (jour 1), 35 (jour 3) et 31 % (jour 7) de réduction d'Alamar blue, donc proche des revêtements à 50 et 60 % de HA et nettement sous celui à 10 % ; dans le SBF, le témoin (CTR) contient environ 100 mg/L de Ca et 50 mg/L de P après 21 jours (figure 5c). Ces valeurs ne sont pas rattachées à une voie car le témoin n'est pas un échantillon synthétisé."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": null,
+   "ref_id": "B41-materials-13-03772",
+   "role": "protocole_complet",
+   "quote": "In vitro bioactive behavior of the CS/HA coatings was assessed in simulated body fluid (SBF) solution which prepared according to Kokubo and Takadama’s protocol"
+  },
+  {
+   "route": null,
+   "ref_id": "B40-materials-13-03772",
+   "role": "protocole_adapte",
+   "quote": "The adhesion strength between the coatings and substrate was determined according to standard ISO 13779-4 guideline"
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "bone-like apatite",
+   "property": "elemental_composition_CaP_ratio",
+   "value_num": 1.67,
+   "unit": null,
+   "conditions": "valeur de comparaison pour le rapport Ca/P de l'apatite déposée en SBF",
+   "quote": "which were close to 1.67 of bone-like apatite"
+  },
+  {
+   "material": "pure chitosan",
+   "property": "ftir_band_amine_amide",
+   "value_text": "amine 1655 cm−1 and amide 1599 cm−1",
+   "unit": "cm−1",
+   "conditions": "bandes du chitosane pur, décalées vers les bas nombres d'onde dans CS/HA",
+   "ref_id": "B15-materials-13-03772",
+   "quote": "the bands were related to the amine (1655 cm−1) and amide (1599 cm−1) in pure chitosan"
+  },
+  {
+   "material": "coated implants (literature)",
+   "property": "roughness",
+   "value_text": "between 1 and 20 µm (Ra)",
+   "unit": "µm",
+   "conditions": "rugosité Ra de surfaces d'implants revêtus citée par les auteurs",
+   "ref_id": "B18-materials-13-03772",
+   "quote": "the surface roughness of the coated implants was measured to be between 1 and 20 μm according to the Ra parameter"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "CS/10 wt.% HA, lavage des composites",
+   "issue": "« consequently composites washed several times in dH2O to remove sodium nitrate residues » : le texte ne dit pas si ce lavage porte sur les poudres analysées en DRX (figure 3a) ou aussi sur le sol de revêtement, ni à quelle étape du protocole il se place. Aucune étape de lavage n'est donc ajoutée à la voie ; le point est signalé en limite de reproductibilité."
+  },
+  {
+   "where": "CS/10 wt.% HA étapes 7 à 9",
+   "issue": "Le schéma 1 (image, sans transcription dans le texte) place l'agitation de 24 h et le pH > 10 après l'ajout du phosphate, avec un vieillissement à 37 °C ; le texte donne « stirred for 24 h » après l'ajout, puis l'ajustement du pH à « about 10 ». Le texte est suivi tel quel."
+  },
+  {
+   "where": "CS/10 wt.% HA étape 10",
+   "issue": "« This step repeated two times » : le « step » regroupe le trempage et le séchage ; on ne sait pas si cela donne deux ou trois couches. La valeur « two times » est reportée telle quelle dans repetitions, sans durée de trempage."
+  },
+  {
+   "where": "CS/10 wt.% HA étape 12",
+   "issue": "« treated at 37 °C for 48 h » : l'action est notée heat faute de précision (le schéma 1 parle de vieillissement, aging, à 37 °C). Atmosphère et humidité non données pour cette étape."
+  },
+  {
+   "where": "CS/10 wt.% HA étape 2",
+   "issue": "« The solution was stirred for 24 h at 25 °C » suit la dissolution du chitosane à 50 °C ; lecture retenue : agitation de la solution de chitosane (et non d'une autre solution)."
+  },
+  {
+   "where": "mass_ratio_ha_in_composite",
+   "issue": "Le texte ne définit pas comment la teneur en HA (10, 50, 60 wt.%) est calculée (masse de HA théorique rapportée au composite, ou mesurée) ; le paramètre est rangé à l'étape d'ajout du phosphate, qui fixe la composition, alors que la teneur dépend des quantités de tous les réactifs. Les quantités sont absentes."
+  },
+  {
+   "where": "voie CS/HA, résultats rattachés aux voies",
+   "issue": "L'article dit « CS/HA composite powders » pour la DRX et le FTIR, sans décrire la préparation des poudres ; ces résultats (cristallinité, taille des cristaux, bandes FTIR) sont rattachés aux trois voies CS/HA. L'épaisseur de 15–50 µm est donnée pour l'ensemble des trois revêtements et copiée sur chaque voie."
+  },
+  {
+   "where": "FTIR, bandes d'amide II (1581, 1571, 1565 cm−1)",
+   "issue": "Le texte dit que la bande à 1565 cm−1 se déplace à 1571 et 1581 cm−1 « corresponding to the increasing of CS » ; l'attribution aux échantillons vient des étiquettes de la figure 3b (CS/60 : 1565 ; CS/50 : 1571 ; CS/10 : 1581), cohérente avec le sens du texte."
+  },
+  {
+   "where": "Figures 5b, 5c, 6 et 5d (valeurs lues)",
+   "issue": "Valeurs lues sur figure, à 2 chiffres significatifs : pH du SBF aux jours 4 et 21 (±0,05), Ca et P en mg/L au jour 21 (±5 mg/L ; 7,85 arrondi à 7,9 pour CS/60 au jour 4), réduction d'Alamar blue aux jours 1, 3 et 7 (±1 %), positions approximatives des pics de DRX de la figure 5d (±0,5°)."
+  },
+  {
+   "where": "Section 2.4, densité d'ensemencement",
+   "issue": "« 1 × 104 cells/mL » : l'exposant de 10 est aplati dans le fichier texte (10^4 attendu) ; la valeur est recopiée telle quelle."
+  },
+  {
+   "where": "DRX, longueur d'onde",
+   "issue": "La section 2.3 donne λ = 0,154 nm pour l'appareil et λ = 0,15418 nm pour la formule de Scherrer ; simple arrondi, les deux sont conservés dans leur contexte."
+  },
+  {
+   "where": "Conclusion du résumé",
+   "issue": "Le résumé parle de « bioprocess » et de performance clinique, sans lien avec une étape de procédé extraite ; sans effet sur les voies."
+  },
+  {
+   "where": "Ti6Al4V_alkali, polissage",
+   "issue": "Les grains des papiers SiC (240–1000 grit) sont dans la citation et la description de l'étape, pas dans un paramètre, faute de nom de paramètre adapté dans le vocabulaire (grain d'abrasif)."
+  }
+ ]
+}

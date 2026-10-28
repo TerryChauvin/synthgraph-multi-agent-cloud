@@ -1,0 +1,1104 @@
+{
+ "pmcid": "PMC5727554",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "Degussa P25 precursor (2a)",
+   "defined_in": "Methods, Chemical reagents",
+   "route": null,
+   "why": "précurseur commercial, non synthétisé ; ses résultats mesurés sont rangés dans la voie Na-titanate_nanosheets avec le suffixe _P25_precursor",
+   "results_in": [
+    "Fig. 2a",
+    "Fig. 3",
+    "Fig. 4",
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "nanosheets after hydrothermal treatment (2b)",
+   "defined_in": "Methods, Synthesis",
+   "route": "Na-titanate_nanosheets",
+   "results_in": [
+    "Fig. 2b",
+    "Fig. 5",
+    "Fig. 6a",
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "nanotubes after HCl washing (2c)",
+   "defined_in": "Methods, Synthesis",
+   "route": "TiO2NT_HCl",
+   "results_in": [
+    "Fig. 2c",
+    "Fig. 6b",
+    "Fig. 7",
+    "Fig. 8",
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "nanotubes annealed at 400 °C (2d)",
+   "defined_in": "Methods, Synthesis",
+   "route": "TiO2NT-400",
+   "results_in": [
+    "Fig. 2d",
+    "Fig. 9",
+    "Fig. 10a",
+    "Fig. 13",
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "nanotubes annealed at 600 °C (2e)",
+   "defined_in": "Methods, Synthesis",
+   "route": "TiO2NT-600",
+   "results_in": [
+    "Fig. 2e",
+    "Fig. 9",
+    "Fig. 10b",
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "nanoparticles annealed at 800 °C (2f)",
+   "defined_in": "Methods, Synthesis",
+   "route": "TiO2NT-800",
+   "results_in": [
+    "Fig. 2f",
+    "Fig. 11",
+    "Fig. 12",
+    "Table 2"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "label": "Na-titanate_nanosheets",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "intermediate",
+   "material": {
+    "name": "sodium titanate (Na2Ti3O7) nanosheets after alkaline hydrothermal treatment",
+    "formula": "Na2Ti3O7",
+    "family": "oxyde",
+    "phase": "monoclinic Na2Ti3O7 (low crystallinity)",
+    "morphology": "nanosheets with curled ends"
+   },
+   "methods": [
+    "hydrothermal",
+    "ion_exchange",
+    "thermal_treatment"
+   ],
+   "method": "alkaline hydrothermal treatment of Degussa P25 in 10 M NaOH (Kasuga-type), followed by HCl washing and annealing (the later stages are the routes below)",
+   "quote": "TiO2 nanotubes were synthesized using a procedure similar to that described by Kasuga et al.",
+   "succeeded": true,
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "Degussa P25 TiO2 nanoparticles",
+     "formula": "TiO2",
+     "role": "precursor",
+     "amount": 0.3,
+     "unit": "g",
+     "purity": "analytical grade",
+     "supplier": "Aeroxide (Evonik, Germany)",
+     "supplier_quote": "All chemical reagents used in this study were analytical grade (Table 1). For the synthesis of TiO2 nanotubes, Degussa P25 (88% anatase and 12% rutile) was used as a precursor from Aeroxide (Evonik, Germany).",
+     "quote": "0.3 g of Degussa P25 TiO2 nanoparticles were dispersed into 30 ml of a 10 M sodium hydroxide solution."
+    },
+    {
+     "name": "sodium hydroxide solution (10 M)",
+     "formula": "NaOH",
+     "role": "base",
+     "amount": 30,
+     "unit": "mL",
+     "purity": "analytical grade",
+     "supplier": "J.T. Baker (Center Valley, PA, USA)",
+     "supplier_quote": "All chemical reagents used in this study were analytical grade (Table 1). For the synthesis of TiO2 nanotubes, Degussa P25 (88% anatase and 12% rutile) was used as a precursor from Aeroxide (Evonik, Germany). Sodium hydroxide (NaOH) and hydrochloric acid (HCl) were purchased form J.T. Baker (Center Valley, PA, USA).",
+     "quote": "0.3 g of Degussa P25 TiO2 nanoparticles were dispersed into 30 ml of a 10 M sodium hydroxide solution."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "disperse",
+     "description": "Disperse the Degussa P25 nanoparticles in the 10 M NaOH solution.",
+     "quote": "0.3 g of Degussa P25 TiO2 nanoparticles were dispersed into 30 ml of a 10 M sodium hydroxide solution.",
+     "parameters": [
+      {
+       "name": "mass",
+       "quote": "0.3 g of Degussa P25 TiO2 nanoparticles were dispersed into 30 ml of a 10 M sodium hydroxide solution.",
+       "value_num": 0.3,
+       "unit": "g"
+      },
+      {
+       "name": "concentration",
+       "quote": "0.3 g of Degussa P25 TiO2 nanoparticles were dispersed into 30 ml of a 10 M sodium hydroxide solution.",
+       "value_num": 10,
+       "unit": "M"
+      },
+      {
+       "name": "volume",
+       "quote": "0.3 g of Degussa P25 TiO2 nanoparticles were dispersed into 30 ml of a 10 M sodium hydroxide solution.",
+       "value_num": 30,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the suspension vigorously at 30 °C for 2 h.",
+     "quote": "The suspension was stirred vigorously for 2 hours at 30 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The suspension was stirred vigorously for 2 hours at 30 °C.",
+       "value_num": 2,
+       "unit": "hours"
+      },
+      {
+       "name": "temperature",
+       "quote": "The suspension was stirred vigorously for 2 hours at 30 °C.",
+       "value_num": 30,
+       "unit": "°C"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "The suspension was stirred vigorously for 2 hours at 30 °C.",
+       "value_text": "vigorously"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "hydrothermal_treatment",
+     "description": "Autoclave the suspension at 110 °C for 72 h.",
+     "quote": "Then, the suspension was autoclaved at 110 °C for 72 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Then, the suspension was autoclaved at 110 °C for 72 h.",
+       "value_num": 110,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Then, the suspension was autoclaved at 110 °C for 72 h.",
+       "value_num": 72,
+       "unit": "h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "autoclave",
+       "detail": null,
+       "quote": "Then, the suspension was autoclaved at 110 °C for 72 h."
+      }
+     ],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "Bruker AXS-D5000 diffractometer",
+     "result": "phase evolution along the whole series (P25, titanate, anatase, anatase/rutile), profile fitting by the Le Bail method",
+     "quote": "A Bruker AXS-D5000 diffractometer was used with a Cu Kα wavelength (λ = 1.5418 Å), diffraction angle (2θ) ranging from 5° to 90°, step size of 0.020°, scan speed of 0.6 s/step and a temperature of 300 K.",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "Cu Kα wavelength (λ = 1.5418 Å)",
+       "value_text": "Cu Kα (λ = 1.5418 Å)"
+      },
+      {
+       "name": "scan_range",
+       "quote": "diffraction angle (2θ) ranging from 5° to 90°",
+       "value_text": "2θ from 5° to 90°"
+      },
+      {
+       "name": "scan_step",
+       "quote": "step size of 0.020°, scan speed of 0.6 s/step",
+       "value_text": "step size of 0.020°, scan speed of 0.6 s/step"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "a temperature of 300 K",
+       "value_num": 300,
+       "unit": "K"
+      },
+      {
+       "name": "crystallite_size_method",
+       "quote": "The average size of nanoparticles was estimated using the Scherrer equation (Eq. (1)).",
+       "value_text": "Scherrer equation"
+      },
+      {
+       "name": "calculation_constant",
+       "quote": "K is the shape factor, in this case was taken as 0.89",
+       "value_num": 0.89
+      },
+      {
+       "name": "profile_fitting",
+       "quote": "The profile fitting was conducted following the Le Bail method and using the FULLPROF software",
+       "value_text": "Le Bail method, FULLPROF software"
+      },
+      {
+       "name": "reference_pattern",
+       "quote": "by profile fitting using the PDF-2 database from the International Center for Diffraction Data",
+       "value_text": "PDF-2 database (International Center for Diffraction Data)"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "tem_1",
+     "technique": "TEM",
+     "instrument": "JEM-2100 (JEOL) transmission electron microscope",
+     "result": "average size and morphology of precursor, nanosheets, nanotubes and annealed products (histograms Figs. 4, 8, 10, 12)",
+     "quote": "Average size, composition and morphology of nanotubes were examined using a JEM-2100 (JEOL) transmission electron microscope (TEM).",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "Annealed samples were powdered by using an agate mortar and then analyzed.",
+       "value_text": "annealed samples powdered in an agate mortar"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted"
+     ]
+    },
+    {
+     "id": "eds_1",
+     "technique": "EDS",
+     "instrument": null,
+     "result": "Na signal before and after HCl washing (Fig. 6)",
+     "quote": "The samples were placed in a sample holder and analyzed by energy-dispersive spectroscopy (EDS).",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "accelerating voltage, 15 eV",
+       "value_text": "15 eV (as written)"
+      },
+      {
+       "name": "beam_current",
+       "quote": "current, 75 mA",
+       "value_num": 75,
+       "unit": "mA"
+      },
+      {
+       "name": "chamber_pressure",
+       "quote": "pressure, 1.3 × 10−3 Pa",
+       "value_text": "1.3 × 10−3 Pa"
+      },
+      {
+       "name": "working_distance",
+       "quote": "working distance, 25 mm",
+       "value_num": 25,
+       "unit": "mm"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "quote": "as seen, good fitting to the Na2Ti3O7 monoclinic phase (JCPDS 00-059-0666) was observed",
+     "value_text": "Na2Ti3O7 monoclinic phase (JCPDS 00-059-0666)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position",
+     "quote": "Three main peaks located at 9.6°, 25.1° and 29.5° were identified.",
+     "value_num": 9.6,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position",
+     "quote": "Three main peaks located at 9.6°, 25.1° and 29.5° were identified.",
+     "value_num": 25.1,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position",
+     "quote": "Three main peaks located at 9.6°, 25.1° and 29.5° were identified.",
+     "value_num": 29.5,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position",
+     "quote": "the experimental profile also presented an important peak at 48.4°",
+     "value_num": 48.4,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallinity",
+     "quote": "Due to the low crystallinity of the sample, the Le Bail profile fitting could not be determined.",
+     "value_text": "low crystallinity (Le Bail fit not possible)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "In Fig. 5, the formation of nanosheets (2D) with a random distribution and a nearly curled end was observed.",
+     "value_text": "nanosheets (2D) with random distribution and nearly curled end",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "morphology_tubular_structure",
+     "quote": "no tubular structures or particles were identified, but nanosheets structures were clearly observed",
+     "value_text": "no tubular structures or particles identified",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_nanosheet",
+     "quote": "2b | Hydrothermal treatment | Monoclinic | Nanosheet | 30",
+     "value_num": 30,
+     "unit": "nm",
+     "measured_by": "not_stated"
+    },
+    {
+     "property": "elemental_composition",
+     "quote": "Fig. 6 EDS spectra of nanotubes (a) after hydrothermal treatment without acid washing process, (b) after acid washing process.",
+     "value_text": "Na peak clearly present next to Ti and O (before HCl washing)",
+     "measured_by": "eds_1",
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "phase_fraction_anatase_P25_precursor",
+     "quote": "Le Bail profile fitting reveled an 88% of anatase and 12% of rutile phases.",
+     "value_num": 88,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase_fraction_rutile_P25_precursor",
+     "quote": "Le Bail profile fitting reveled an 88% of anatase and 12% of rutile phases.",
+     "value_num": 12,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_P25_precursor",
+     "quote": "The estimated average crystallite size was 24 nm",
+     "value_num": 24,
+     "unit": "nm",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "particle_size_P25_precursor",
+     "quote": "According to the histogram (Fig. 4) the average size was 25 nm with a standard deviation of 2.83 nm.",
+     "value_num": 25,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "size_dispersity_P25_precursor",
+     "quote": "According to the histogram (Fig. 4) the average size was 25 nm with a standard deviation of 2.83 nm.",
+     "value_num": 2.83,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "morphology_P25_precursor",
+     "quote": "2a | Precursor Degussa P25 | Anatase 88%, Rutile 12% | Irregular | 25",
+     "value_text": "Irregular",
+     "measured_by": "tem_1"
+    }
+   ],
+   "missing_fields": [
+    "pressure_autogenous",
+    "separation_of_hydrothermal_product_before_acid"
+   ]
+  },
+  {
+   "label": "TiO2NT_HCl",
+   "parent": "Na-titanate_nanosheets",
+   "kind": "material",
+   "material": {
+    "name": "TiO2 nanotubes after HCl washing (not annealed)",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "anatase (low crystallinity)",
+    "morphology": "nanotubes (inner 7.5 nm, outer 8.4 nm, length 34 nm)"
+   },
+   "quote": "The product obtained was redispersed in 200 ml of a 0.1 M HCl solution for 3 hours",
+   "succeeded": true,
+   "variations": [
+    {
+     "parameter": "acid_washing",
+     "value_text": "redispersed in 200 ml of a 0.1 M HCl solution for 3 hours",
+     "parent_value": "none",
+     "quote": "The product obtained was redispersed in 200 ml of a 0.1 M HCl solution for 3 hours"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "hydrochloric acid solution (0.1 M)",
+     "formula": "HCl",
+     "role": "acid",
+     "amount": 200,
+     "unit": "mL",
+     "purity": "analytical grade",
+     "supplier": "J.T. Baker (Center Valley, PA, USA)",
+     "supplier_quote": "All chemical reagents used in this study were analytical grade (Table 1). For the synthesis of TiO2 nanotubes, Degussa P25 (88% anatase and 12% rutile) was used as a precursor from Aeroxide (Evonik, Germany). Sodium hydroxide (NaOH) and hydrochloric acid (HCl) were purchased form J.T. Baker (Center Valley, PA, USA).",
+     "quote": "The product obtained was redispersed in 200 ml of a 0.1 M HCl solution for 3 hours"
+    },
+    {
+     "name": "distilled water",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "Then, the suspension was centrifuged and the solid sample was washed with distilled water until pH was stabilized at 6.7."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "ion_exchange_step",
+     "description": "Redisperse the hydrothermal product in 0.1 M HCl to exchange Na+ for H3O+.",
+     "quote": "The product obtained was redispersed in 200 ml of a 0.1 M HCl solution for 3 hours",
+     "parameters": [
+      {
+       "name": "concentration",
+       "quote": "The product obtained was redispersed in 200 ml of a 0.1 M HCl solution for 3 hours",
+       "value_num": 0.1,
+       "unit": "M"
+      },
+      {
+       "name": "volume",
+       "quote": "The product obtained was redispersed in 200 ml of a 0.1 M HCl solution for 3 hours",
+       "value_num": 200,
+       "unit": "mL"
+      },
+      {
+       "name": "duration",
+       "quote": "The product obtained was redispersed in 200 ml of a 0.1 M HCl solution for 3 hours",
+       "value_num": 3,
+       "unit": "hours"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "repetitions",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "centrifuge",
+     "description": "Centrifuge the suspension to collect the solid.",
+     "quote": "Then, the suspension was centrifuged and the solid sample was washed with distilled water until pH was stabilized at 6.7.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "centrifuge_speed",
+      "duration"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "wash",
+     "description": "Wash the solid with distilled water until the pH is stable at 6.7.",
+     "quote": "Then, the suspension was centrifuged and the solid sample was washed with distilled water until pH was stabilized at 6.7.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "Then, the suspension was centrifuged and the solid sample was washed with distilled water until pH was stabilized at 6.7.",
+       "value_text": "distilled water"
+      },
+      {
+       "name": "repetitions",
+       "quote": "Then, the suspension was centrifuged and the solid sample was washed with distilled water until pH was stabilized at 6.7.",
+       "value_text": "until pH was stabilized at 6.7"
+      },
+      {
+       "name": "ph",
+       "quote": "Then, the suspension was centrifuged and the solid sample was washed with distilled water until pH was stabilized at 6.7.",
+       "value_num": 6.7
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "dry",
+     "description": "Dry the washed solid in a vacuum oven.",
+     "quote": "Finally, the sample was dried at 80 °C for 24 h in a vacuum oven.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Finally, the sample was dried at 80 °C for 24 h in a vacuum oven.",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Finally, the sample was dried at 80 °C for 24 h in a vacuum oven.",
+       "value_num": 24,
+       "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "Finally, the sample was dried at 80 °C for 24 h in a vacuum oven.",
+       "value_text": "vacuum oven"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "vacuum oven",
+       "detail": null,
+       "quote": "Finally, the sample was dried at 80 °C for 24 h in a vacuum oven."
+      }
+     ],
+     "not_stated": [
+      "pressure"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "quote": "These peaks have a good fitting with the anatase phase (JCPDS 01-089-4921)",
+     "value_text": "anatase (JCPDS 01-089-4921)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position",
+     "quote": "The profile (c) in Fig. 2 presents two peaks located at 25.3° and 48.1°.",
+     "value_num": 25.3,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position",
+     "quote": "The profile (c) in Fig. 2 presents two peaks located at 25.3° and 48.1°.",
+     "value_num": 48.1,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallinity",
+     "quote": "the profile fitting could not be determined due to the low crystallinity of the sample",
+     "value_text": "low crystallinity (nanosheets as precursor of the nanotubes)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "Formation of nanotubes after the acid washing process was observed from TEM results (Fig. 7).",
+     "value_text": "nanotubes",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_inner_diameter",
+     "quote": "From the histogram (Fig. 8) the average inner diameter was determined as 7.5 nm, the external diameter as 8.4 nm and the length as 34 nm.",
+     "value_num": 7.5,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_outer_diameter",
+     "quote": "From the histogram (Fig. 8) the average inner diameter was determined as 7.5 nm, the external diameter as 8.4 nm and the length as 34 nm.",
+     "value_num": 8.4,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_length",
+     "quote": "From the histogram (Fig. 8) the average inner diameter was determined as 7.5 nm, the external diameter as 8.4 nm and the length as 34 nm.",
+     "value_num": 34,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "size_dispersity",
+     "quote": "Fig. 8 Average size distribution of nanotubes after the acid washing process.",
+     "value_num": 2.01,
+     "unit": "nm",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "elemental_composition",
+     "quote": "Fig. 6 EDS spectra of nanotubes (a) after hydrothermal treatment without acid washing process, (b) after acid washing process.",
+     "value_text": "Na peak almost absent, Ti and O peaks remain (after HCl washing)",
+     "measured_by": "eds_1",
+     "from_figure": "Fig. 6b"
+    }
+   ]
+  },
+  {
+   "label": "TiO2NT-400",
+   "parent": "TiO2NT_HCl",
+   "kind": "post_treatment",
+   "material": {
+    "name": "TiO2 nanotubes annealed at 400 °C",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "anatase 72% / rutile 28%",
+    "morphology": "nanotubes (inner 7.2 nm, outer 8.1 nm, length 20–30 nm)"
+   },
+   "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively.",
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "quote": "The profile (d) reveals that both anatase and rutile phases were present in this sample.",
+     "value_text": "anatase and rutile",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase_fraction_anatase",
+     "quote": "The main phase was anatase with 72%, while rutile represented 28%.",
+     "value_num": 72,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase_fraction_rutile",
+     "quote": "The main phase was anatase with 72%, while rutile represented 28%.",
+     "value_num": 28,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "As seen, the tubular morphology did not change in both temperatures.",
+     "value_text": "tubular morphology unchanged",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "morphology_sem",
+     "quote": "The tubular morphology is proved observing the SEM images for each annealing temperature.",
+     "value_text": "tubular morphology confirmed",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "particle_size_inner_diameter",
+     "quote": "the characteristics of the nanotubes annealed at 400 °C were, inner diameter: 7.2 nm, outer diameter: 8.1 nm, length: 20–30 nm.",
+     "value_num": 7.2,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_outer_diameter",
+     "quote": "the characteristics of the nanotubes annealed at 400 °C were, inner diameter: 7.2 nm, outer diameter: 8.1 nm, length: 20–30 nm.",
+     "value_num": 8.1,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_length",
+     "quote": "the characteristics of the nanotubes annealed at 400 °C were, inner diameter: 7.2 nm, outer diameter: 8.1 nm, length: 20–30 nm.",
+     "value_text": "20–30 nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "size_dispersity",
+     "quote": "Fig. 10 Average size distribution of nanotubes annealed at 400 °C (a) and 600 °C (b).",
+     "value_num": 2.73,
+     "unit": "nm",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 10a"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "The absorption was found to be 378 nm and the band gap energy of Eg = 3.28 eV.",
+     "value_num": 378,
+     "unit": "nm",
+     "measured_by": "uv_1"
+    },
+    {
+     "property": "band_gap",
+     "quote": "The absorption was found to be 378 nm and the band gap energy of Eg = 3.28 eV.",
+     "value_num": 3.28,
+     "unit": "eV",
+     "measured_by": "uv_1"
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "annealing_temperature",
+     "value_num": 400,
+     "unit": "°C",
+     "parent_value": "none",
+     "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "anneal",
+     "description": "Anneal one of the three portions of the dried sample in air for 2 h.",
+     "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively.",
+       "value_num": 400,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively.",
+       "value_num": 2,
+       "unit": "hours"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "nanotubes after annealing treatment in air for 2 h at 400 °C, 600 °C, and 800 °C",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": null,
+     "result": "tubular morphology at each annealing temperature (Fig. 9)",
+     "quote": "The tubular morphology is proved observing the SEM images for each annealing temperature.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "Annealed samples were powdered by using an agate mortar and then analyzed.",
+       "value_text": "annealed samples powdered in an agate mortar"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "uv_1",
+     "technique": "UV_vis",
+     "instrument": "Varian, Cary-100 scan spectrophotometer",
+     "result": "DRS spectrum of the 400 °C nanotubes (Fig. 13), Kubelka–Munk band gap",
+     "quote": "Additionally, Varian, Cary-100 scan spectrophotometer was used for evaluating the band-gap values of synthesized TiO2 nanotubes.",
+     "settings": [
+      {
+       "name": "method",
+       "quote": "The optical band-gap energy of TiO2 nanotubes was obtained from UV–vis reflectance spectra.",
+       "value_text": "UV–vis reflectance spectra (DRS)"
+      },
+      {
+       "name": "band_gap_method",
+       "quote": "The band gap energy (Eg) of the nanotubes sample was estimated using the Kubelka–Munk model and by plotting a line from the maximum slope of the curve to the x-axis.",
+       "value_text": "Kubelka–Munk model, tangent from the maximum slope to the x-axis"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Annealed samples were powdered by using an agate mortar and then analyzed.",
+       "value_text": "annealed samples powdered in an agate mortar"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    }
+   ]
+  },
+  {
+   "label": "TiO2NT-600",
+   "parent": "TiO2NT-400",
+   "kind": "post_treatment",
+   "material": {
+    "name": "TiO2 nanotubes annealed at 600 °C",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "anatase 100%",
+    "morphology": "nanotubes (inner 7.1 nm, outer 8.1 nm, length 28 nm)"
+   },
+   "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively.",
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase_fraction_anatase",
+     "quote": "The profile (e) presented 100% of anatase phase, accordingly to profile fitting pattern.",
+     "value_num": 100,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "As seen, the tubular morphology did not change in both temperatures.",
+     "value_text": "tubular morphology unchanged",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "morphology_sem",
+     "quote": "The tubular morphology is proved observing the SEM images for each annealing temperature.",
+     "value_text": "tubular morphology confirmed",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "particle_size_inner_diameter",
+     "quote": "the dimensions of nanotubes annealed at 600 °C (Fig. 10b) were, inner diameter: 7.1 nm, outer diameter: 8.1 nm, length: 28 nm.",
+     "value_num": 7.1,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_outer_diameter",
+     "quote": "the dimensions of nanotubes annealed at 600 °C (Fig. 10b) were, inner diameter: 7.1 nm, outer diameter: 8.1 nm, length: 28 nm.",
+     "value_num": 8.1,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_length",
+     "quote": "the dimensions of nanotubes annealed at 600 °C (Fig. 10b) were, inner diameter: 7.1 nm, outer diameter: 8.1 nm, length: 28 nm.",
+     "value_num": 28,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "size_dispersity",
+     "quote": "Fig. 10 Average size distribution of nanotubes annealed at 400 °C (a) and 600 °C (b).",
+     "value_num": 2.02,
+     "unit": "nm",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 10b"
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 1,
+     "value_num": 600,
+     "unit": "°C",
+     "parent_value": "400 °C",
+     "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively."
+    }
+   ]
+  },
+  {
+   "label": "TiO2NT-800",
+   "parent": "TiO2NT-400",
+   "kind": "post_treatment",
+   "material": {
+    "name": "TiO2 nanoparticles formed by annealing the nanotubes at 800 °C",
+    "formula": "TiO2",
+    "family": "oxyde",
+    "phase": "anatase 40% / rutile 60%",
+    "morphology": "non-uniform nanoparticles, average diameter 116 nm"
+   },
+   "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively.",
+   "succeeded": false,
+   "outcomes": [
+    {
+     "property": "phase_fraction_anatase",
+     "quote": "Le Bail profile fitting showed a phases distribution of 40% for anatase and 60% for rutile.",
+     "value_num": 40,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase_fraction_rutile",
+     "quote": "Le Bail profile fitting showed a phases distribution of 40% for anatase and 60% for rutile.",
+     "value_num": 60,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "TEM images reveals that nanotubes were destroyed and converted into non-uniform nanoparticles at annealing temperatures greater than 600 °C",
+     "value_text": "nanotubes destroyed, non-uniform nanoparticles",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size",
+     "quote": "nanotubes morphology disappeared to form nanoparticles with average diameter of 116 nm (Fig. 12)",
+     "value_num": 116,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "size_dispersity",
+     "quote": "Fig. 12 Average size distribution of nanoparticles formed after annealing nanotubes at 800 °C.",
+     "value_num": 18.5,
+     "unit": "nm",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 12"
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 1,
+     "value_num": 800,
+     "unit": "°C",
+     "parent_value": "400 °C",
+     "quote": "The dried sample was divided into three portions and then annealed at 400 °C, 600 °C and 800 °C for 2 hours, respectively."
+    }
+   ]
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "anatase (bulk)",
+   "property": "band_gap",
+   "value_num": 3.2,
+   "unit": "eV",
+   "ref_id": "bib0195",
+   "route": "TiO2NT-400",
+   "quote": "band gap values reported for anatase phase in bulk is approximately 3.2 eV"
+  },
+  {
+   "material": "H2Ti3O7",
+   "property": "phase",
+   "value_text": "anatase obtained by annealing at 700 °C for 2 h",
+   "ref_id": "bib0125",
+   "conditions": "700 °C, 2 h",
+   "quote": "anatase structure may be obtained by annealing the H2Ti3O7 at 700 °C for 2 h"
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanotubes de TiO2 par traitement hydrothermal alcalin de la poudre commerciale Degussa P25 dans NaOH 10 M à 110 °C pendant 72 h, lavage à l'acide chlorhydrique 0,1 M, séchage sous vide puis recuit à 400, 600 et 800 °C. Il suit chaque étape par DRX, MET, MEB et EDS : le traitement hydrothermal donne des nanofeuillets de titanate de sodium, le lavage acide les convertit en nanotubes, le recuit à 400–600 °C conserve les nanotubes (anatase) et à 800 °C ils s'effondrent en nanoparticules d'anatase et de rutile.",
+   "quote": "Hydrothermal treatment of TiO2 precursor nanoparticles and acid washing are fundamental to form and define the nanotubes structure."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir quel rôle jouent le traitement hydrothermal, le lavage acide et la température de recuit dans la formation, la structure et la stabilité thermique des nanotubes de TiO2, point que les travaux de Kasuga et d'autres n'avaient pas traité pour le recuit."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul protocole hydrothermal est décrit (110 °C, 72 h, NaOH 10 M, HCl 0,1 M). Chaque étape (hydrothermal, lavage acide) est caractérisée sur un échantillon prélevé, et la température de recuit est balayée à 400, 600 et 800 °C sur trois portions du même échantillon séché, pour repérer la plage où les nanotubes restent stables et la température où ils s'effondrent."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Le matériau passe d'un précurseur P25 (88 % anatase, 12 % rutile, 25 nm) à des nanofeuillets de titanate monoclinique peu cristallins (30 nm), puis à des nanotubes d'anatase peu cristallins après lavage (diamètre interne 7,5 nm, externe 8,4 nm, longueur 34 nm). Le recuit à 400 °C donne 72 % d'anatase et 28 % de rutile, à 600 °C 100 % d'anatase, avec des nanotubes quasi inchangés (7,1–7,2 nm de diamètre interne, 8,1 nm de diamètre externe). À 800 °C, 40 % d'anatase et 60 % de rutile et des nanoparticules de 116 nm : les nanotubes ont disparu."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Plus la température de recuit monte, plus la phase rutile apparaît (28 % à 400 °C, absente à 600 °C selon l'affinement, 60 % à 800 °C) et plus l'objet perd sa forme tubulaire : au-delà de 600 °C les nanotubes s'effondrent.",
+   "quote": "Temperatures greater than 600 °C change the morphology of nanotubes from tubular to an irregular structure of nanoparticles, which are bigger than those of the precursor material"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "TiO2NT-600",
+   "text": "Les auteurs retiennent une plage de recuit de 400 à 600 °C comme optimale pour garder des nanotubes de TiO2 stables, et jugent que le lavage acide est indispensable à l'obtention de nanotubes purs.",
+   "quote": "Annealing temperatures in the range of 400 °C and 600 °C are optimum to maintain a highly stable tubular morphology of nanotubes."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Plusieurs paramètres manquent pour refaire la synthèse : volume et nature de l'autoclave et taux de remplissage, vitesse d'agitation chiffrée (« vigorously »), séparation du produit hydrothermal avant le lavage acide, vitesse et durée de centrifugation, volume et nombre de lavages (« until pH was stabilized at 6.7 »), vitesse de montée en température et refroidissement du recuit, type de four. Les puretés sont données comme « analytical grade », valeurs numériques du tableau 1 non reprises. Les conditions d'EDS (tension de 15 eV, courant en mA) sont probablement mal écrites par les auteurs."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Na-titanate_nanosheets",
+   "text": "Les auteurs expliquent que le traitement hydrothermal casse une partie des liaisons Ti–O–Ti du TiO2 pour former un monomère [Ti(OH)6]2 qui se condense en noyaux puis en nanofeuillets de Na2Ti3O7 à croissance anisotrope le long de l'axe b ; l'échange Na+/H3O+ au lavage acide donne H2Ti3O7, et les feuillets s'enroulent ensuite en nanotubes sous l'effet de la tension de surface.",
+   "quote": "Through the hydrothermal treatment, shown in reaction (2), some of the Ti–O–Ti bonds of the TiO2 precursor break and a six-coordinated monomer [Ti(OH)6]2 is formed and saturated."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Na-titanate_nanosheets",
+   "text": "Hypothèse de chimiste : dans NaOH 10 M, l'hydroxyde attaque le réseau TiO2 et le sodium s'insère entre des feuillets de [TiO6], d'où le titanate de sodium Na2Ti3O7 ; le lavage à HCl 0,1 M remplace le sodium par des protons, ce qui abaisse la charge entre feuillets et favorise l'enroulement des feuillets. À 400–600 °C, la déshydratation de H2Ti3O7 donne probablement l'anatase en conservant la forme, tandis qu'à 800 °C la transformation anatase vers rutile, qui s'accompagne d'un grossissement des grains, détruit les tubes."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "La soude à 10 M est très corrosive et chauffée à 110 °C en autoclave fermé sous pression autogène : porter gants et lunettes, ne pas dépasser le taux de remplissage recommandé (environ deux tiers) et laisser refroidir avant d'ouvrir. L'acide chlorhydrique dilué est irritant. Les poudres de TiO2 nanométriques ne doivent pas être inhalées (masque, hotte), et le recuit à 800 °C demande un four ventilé et des protections thermiques."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "Na-titanate_nanosheets",
+   "ref_id": "bib0050",
+   "role": "protocole_adapte",
+   "quote": "TiO2 nanotubes were synthesized using a procedure similar to that described by Kasuga et al."
+  },
+  {
+   "route": "TiO2NT_HCl",
+   "ref_id": "bib0080",
+   "role": "protocole_adapte",
+   "quote": "The product obtained was redispersed in 200 ml of a 0.1 M HCl solution for 3 hours"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "Na-titanate_nanosheets, résultats du précurseur P25",
+   "issue": "Le précurseur commercial Degussa P25 (échantillon 2a) n'a pas de voie propre. Ses résultats mesurés par les auteurs (phases 88/12 %, taille de cristallite 24 nm, taille MET 25 nm, écart-type 2,83 nm, morphologie irrégulière) sont rangés dans la voie Na-titanate_nanosheets avec le suffixe `_P25_precursor` dans le nom de la propriété, car la voie est celle dont P25 est le réactif."
+  },
+  {
+   "where": "Chaîne de voies",
+   "issue": "Le protocole est un seul enchaînement. Il est découpé en quatre voies parentes (nanofeuillets, lavage acide, recuit) selon les échantillons caractérisés (2b, 2c, 2d–f). Le lavage acide et le recuit sont des voies à étapes propres ; leur variation est une étape ajoutée (parent_value « none »), donc l'avertissement « ne correspond à aucun paramètre du protocole hérité » est attendu."
+  },
+  {
+   "where": "Fig. 2c, légende et texte",
+   "issue": "Le texte et la légende de la figure 2 décrivent l'échantillon (c) comme « annealed nanotubes after acid washing », mais le tableau 2 et la méthode indiquent un lavage acide sans recuit (le recuit ne vient qu'en d, e, f). Lecture retenue : (c) est l'échantillon lavé et séché, non recuit."
+  },
+  {
+   "where": "Purity et fournisseur",
+   "issue": "Les puretés numériques sont dans le tableau 1 (P25 ≥ 99,5 ; NaOH 99,1 ; HCl 99,7), mais le fournisseur est dans une autre phrase. La pureté est donc recopiée comme « analytical grade » (phrase générale contiguë à celle du fournisseur) ; les valeurs numériques du tableau ne sont pas dans la base."
+  },
+  {
+   "where": "EDS, conditions",
+   "issue": "« accelerating voltage, 15 eV; current, 75 mA; pressure, 1.3 × 10−3 Pa; working distance, 25 mm » suit la phrase sur l'EDS, ce qui fait attribuer ces réglages à l'EDS. Les unités (eV, mA) sont probablement erronées (kV, nA), copiées telles quelles. Instrument de l'EDS non nommé (JEM-2100 est cité pour le MET). Tension d'accélération du MET non citée."
+  },
+  {
+   "where": "Résultats du recuit à 600 °C",
+   "issue": "Le texte donne 100 % d'anatase à 600 °C d'après l'affinement ; l'échantillon à 800 °C est dit passer d'une « complete anatase phase at 600 °C » à 40/60. Rien ne dit que le rutile de 400 °C (28 %) disparaît à 600 °C autrement que par l'affinement de profil."
+  },
+  {
+   "where": "TiO2NT-800, succeeded",
+   "issue": "L'échantillon à 800 °C est marqué succeeded: false car les nanotubes ont été détruits (nanoparticules de 116 nm). Les auteurs ne parlent pas d'échec ; ils décrivent un effondrement des nanotubes. Lecture possible : le matériau est un produit réussi mais d'une autre morphologie."
+  },
+  {
+   "where": "Fig. 13 et bande interdite",
+   "issue": "Le texte donne Eg = 3,28 eV (absorption à 378 nm, cohérent : 1240/3,28 ≈ 378 nm), mais le prolongement de la tangente sur la figure 13 coupe l'axe vers 3,2 eV. La valeur du texte est retenue ; la lecture graphique n'est pas ajoutée."
+  },
+  {
+   "where": "Figures lues",
+   "issue": "Les valeurs d'écart-type σ des histogrammes (2,01 nm Fig. 8, 2,73 nm Fig. 10a, 2,02 nm Fig. 10b, 18,5 nm Fig. 12) sont écrites sur les figures et lues telles quelles ; elles ne sont pas dans le texte. La figure 6 (EDS) est lue de façon qualitative (pic Na présent en a, quasi absent en b), sans pourcentage atomique."
+  },
+  {
+   "where": "Étape 1 de TiO2NT_HCl",
+   "issue": "Le texte dit « the product obtained was redispersed » en milieu HCl : la séparation du produit hydrothermal de la solution de NaOH avant la redispersion n'est pas décrite, ni l'agitation pendant 3 h. Solvant des solutions de NaOH et de HCl non nommé (eau supposée, non extraite)."
+  },
+  {
+   "where": "Table 2, taille 30 nm des nanofeuillets",
+   "issue": "Le tableau 2 donne une taille moyenne de 30 nm pour l'échantillon 2b (nanofeuillets) sans dire par quelle mesure ; elle est enregistrée avec measured_by « not_stated »."
+  },
+  {
+   "where": "TEM, nombre de particules",
+   "issue": "Le nombre de particules mesurées n'est pas écrit ; les histogrammes montrent environ 70 à 80 comptages au total mais cette lecture n'est pas retenue."
+  }
+ ]
+}
