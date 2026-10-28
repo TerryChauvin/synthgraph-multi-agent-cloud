@@ -1,0 +1,57 @@
+{
+ "pmcid": "PMC9999475",
+ "ajouts": [
+  {
+   "type": "action",
+   "nom": "sieve",
+   "definition": "Tamiser une poudre ou un composite à travers un tamis de maille donnée pour en contrôler la granulométrie.",
+   "ecarte": "filter: sépare un solide d'un liquide, pas une classe de taille",
+   "date": "2026-10-28 23:13",
+   "cases": [
+    "dimension"
+   ]
+  },
+  {
+   "type": "action",
+   "nom": "punch_cut",
+   "definition": "Découper ou poinçonner un film, une électrode ou une feuille en pièces de forme et de taille définies (disques d'électrode, éprouvettes).",
+   "ecarte": "coat: dépose une couche et ne découpe pas; press: compacte une poudre",
+   "date": "2026-10-28 23:13",
+   "cases": [
+    "dimension"
+   ]
+  },
+  {
+   "type": "parametre",
+   "nom": "milling_media",
+   "definition": "Nature du bol et des billes de broyage d'un broyeur (matériau, volume du bol, diamètre des billes).",
+   "ecarte": "milling_speed: vitesse et non nature des pièces; mass_ratio: rapport de masses et non nature du bol",
+   "date": "2026-10-28 23:13",
+   "unite": "texte"
+  },
+  {
+   "type": "propriete",
+   "nom": "oxidation_state",
+   "definition": "État d'oxydation moyen d'un élément (Mn, V, Fe…) du matériau, déduit d'un spectre XANES, XPS ou d'un dosage ; préciser l'élément par un suffixe (oxidation_state_Mn).",
+   "ecarte": "xas_feature: position ou intensité d'un trait de spectre, pas l'état d'oxydation déduit; xps_species_fraction: part d'une espèce dans un spectre XPS",
+   "date": "2026-10-28 23:13",
+   "techniques": [
+    "XAS",
+    "XPS",
+    "EPR",
+    "elemental_analysis"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "phase_transition_temperature",
+   "definition": "Température ou domaine de température d'une transition de phase solide–solide ou d'un événement thermique réversible ou non, relevé en DSC ou en analyse thermique (pic, épaulement, seuil).",
+   "ecarte": "melting_glass_transition: fusion ou transition vitreuse seulement; decomposition_temperature: perte du matériau et non transformation de phase",
+   "date": "2026-10-28 23:13",
+   "techniques": [
+    "TGA",
+    "XRD"
+   ]
+  }
+ ]
+}
