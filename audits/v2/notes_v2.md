@@ -1,0 +1,5 @@
+- PMC6812203 : mesures dupliquées sur deux voies de base indépendantes (measured_by ne peut viser qu'une voie parente) ; piste : mesures de niveau article pour les sections « Characterization » communes.
+- PMC13315215 : réglage attendu sans objet (light_source d'un essai non photocatalytique) déclaré « non cité » faute d'un état « non applicable » ; méthode solvothermal choisie « par analogie » pour un chauffage à l'étuve en flacon (à relire).
+- PMC9419793 : 7 ajouts (rheometry, optical_microscopy, electrical_measurement, viscosity, filtration_time, thickness_used, acquisition_parameters) ; `acquisition_parameters` quasi générique → à refuser/renommer à la fusion ; 11 avertissements « technique inhabituelle » : listes propriété→techniques incomplètes (conductivity ← four-point probe ; crystallinity ← SAED/HRTEM ; particle_size ← microscopie optique ; épaisseur ← micromètre) à compléter à la fusion.
+- PMC5680254 : 4 ajouts ; température 358 K donnée pour 10 mM seulement, appliquée à toutes les voies (doute).
+- PMC8866530 : capacités 500e cycle lues sur figure ; plage XRD lue sur l'axe (from_figure) alors que la règle demande « non cité ».
