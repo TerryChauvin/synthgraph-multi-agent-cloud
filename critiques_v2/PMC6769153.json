@@ -1,0 +1,153 @@
+{
+ "pmcid": "PMC6769153",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "attribution",
+   "where": "C-QD_500C_3h outcomes ftir_band_precursor_* (6) and elemental_composition_precursor_XPS; measured_by ftir_1 / xps_1",
+   "extracted": "FTIR bands (3296, 2921, 2851, 1742, 1597, 1027 cm-1) and XPS composition (C, N, O) of the ground fennel powder stored as outcomes of the final C-QD route, measured_by ftir_1 / xps_1 (sample_preparation 'dried C-QDs')",
+   "article_says": "The FT-IR spectra of ground fennel powder have peaks at 3296, 2921, 2851, 1742, 1597 and 1027 cm−1",
+   "fix": "v3: these are measurements of the precursor, not of the C-QDs; give the fennel powder its own measurement entries (ftir_precursor, xps_precursor, same instruments) and attach the results to them, or to a precursor sample route; do not link them to ftir_1/xps_1 whose settings describe the C-QDs",
+   "confidence": "sure"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "v3: characterizations pl_ph not_stated wavelength_range",
+   "extracted": "wavelength_range declared not_stated for the pH series",
+   "article_says": "N is the number of data points acquired in the spectral range 300–750 nm",
+   "fix": "v3: the 48 PL spectra include all pH 3-13 (same sentence lists the pH), so spectral range 300-750 nm applies to pl_ph; add it to settings with this quote (also plausible for pl_1, already done)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "attribution",
+   "where": "v3: C-QD_500C_3h outcome raman_ID_IG_G_over_D = 1.58",
+   "extracted": "property raman_ID_IG (vocabulary: rapport D/G) with suffix _G_over_D, value 1.58",
+   "article_says": "The intensity ratio of the peak of the G band to the D band was found to be 1.58",
+   "fix": "v3: the vocabulary definition of raman_ID_IG is D/G; the article gives G/D (inverse). Once canonicalised the value 1.58 will be read as ID/IG. Add a distinct property name (e.g. raman_IG_ID with a definition) or keep the value out of raman_ID_IG",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: xps_1 / Table S1 (wide scan) binding energies",
+   "extracted": "only atomic percentages 71.2 and 28.8 at. % extracted; doubt says survey positions deliberately skipped",
+   "article_says": "The survey scan of C-QDs XPS in Fig. 7A shows that the C-QDs are mainly composed of carbon and oxygen; i.e., C1s (71.2 at. %) and O 1s (28.8 at. %), respectively (see the SI Table S1)",
+   "fix": "v3: Table S1 of the SI gives peak position BE 285 eV (C 1s) and 531 eV (O 1s) for the wide scan; add as xps_binding_energy_C1s_survey and _O1s_survey (quote the table row) measured_by xps_1",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: PL_ML_analysis outcome calculated_value_PCA_groups",
+   "extracted": "value_text 'three groups' only",
+   "article_says": "PCA analysis has clustered the integrated PL data set into three groups: (i) excitation at 200 nm (for all pH 3 to 13) & 220 to 340 nm (for acidic pH 3 & 5), (ii) excitation at 300, 320 and 340 nm (for basic pH 9, 11, 13), and (iii) excitation 240, 260 and 280 nm (for basic pH 7, 9, 11, 13)",
+   "fix": "v3: add the composition of each group (excitations and pH) as three results, and the sentence that there is no noticeable peak shift in acidic pH (group i)",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: tem_1 settings",
+   "extracted": "particles_counted 148 only",
+   "article_says": "in total, forty-two high-resolution TEM images of C-QDs were recorded",
+   "fix": "v3: add the number of HRTEM images (42) as a setting (or particles_counted note); the EDS spot-size and grid-carbon caveat (see next finding) are also absent",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: eds_1 settings and result",
+   "extracted": "settings empty; result 'only carbon and oxygen peaks'",
+   "article_says": "The electron beam spot size was only a few nanometers and was directed on to a few C-QDs.",
+   "fix": "v3: record the beam spot size as setting and add to the result the authors' caveat that the carbon peak may come from the carbon film of the TEM grid (EDS only shows absence of foreign elements), otherwise the C/O result reads as a composition",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: outcomes PL_intensity_photoirradiation_stability, PL_intensity_trend_pH, PL_intensity_maximum_pH, PL_intensity_change, visual_appearance_storage_15_months",
+   "extracted": "property names starting with PL_intensity_ (no such name in the vocabulary) and a storage-stability result filed under visual_appearance",
+   "article_says": "Continuous irradiation from a xenon lamp of 150 W for 4 hours attribute almost no meaningful reduction in the PL intensity",
+   "fix": "v3: retention_stability is defined as retention of luminescence under irradiation, pH or time and lists PL as technique: use retention_stability_photoirradiation (and for the 15-month turbidity result); for pH trend/max, add a PL_intensity name with definition if none fits instead of an unlisted prefix",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: outcomes FWHM_XPS_C1s_*, FWHM_XPS_O1s_* (5)",
+   "extracted": "property FWHM (techniques XRD, PL, Raman) measured_by xps_1",
+   "article_says": "Table S2. Peak fitting results obtained after deconvolution of carbon peak",
+   "fix": "v3: XPS component widths do not fit the FWHM definition; add a dedicated property (xps_peak_width, technique XPS) with its definition, as the doubt already anticipates",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: method pyrolysis_carbonization / action pyrolyze, step 2",
+   "extracted": "pyrolyze, defined 'sous atmosphère inerte'",
+   "article_says": "heated using a heat plate (AS ONE, Japan) at a constant temperature of 500 °C for 3 hours",
+   "fix": "v3: crucible on a hot plate, atmosphere not stated (probably open air), so the 'inert atmosphere' of the definition is not what the article describes; the authors call it pyrolysis, so keep the name only if the definition is relaxed, or note the conflict in a doubt",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: C-QD_300C_3h outcomes ftir_band_CH2_present and product_identity, measured_by ftir_1",
+   "extracted": "measured_by ftir_1 (FTIR-4100, sample 'dried C-QDs')",
+   "article_says": "The presence of CH2 peaks in FTIR at 2921 and 2851 cm-1",
+   "fix": "v3: the article gives no instrument for this trial; create a separate ftir entry for the trial (instrument null) or set measured_by to not_stated; the doubt admits the link is a hypothesis",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "C-QD_200C, C-QD_300C, C-QD_300C_3h, C-QD_400C, C-QD_500C_longer material",
+   "extracted": "phase 'graphitic sp2 carbon, crystalline (lattice spacing 0.21 nm)' and morphology 'spherical nanoparticles, mono-dispersed' copied on every branch",
+   "article_says": "FT-IR results show that with an increase in temperature and time, the symmetric and asymmetric peaks of CH2 at 2921 and 2851 cm−1 gradually started to decrease and eventually vanished",
+   "fix": "the crystalline/spherical description is measured only for the 500 °C 3 h product; the 300 °C 3 h trial is explicitly incompletely pyrolysed, and no phase or shape is given for 200/300/400 °C: leave phase and morphology null on those branches",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "variations step_order on C-QD_200C, C-QD_300C, C-QD_400C, C-QD_500C_longer",
+   "extracted": "variations point to step_order 2 while the branch's own pyrolyze step has order 1",
+   "article_says": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+   "fix": "align step_order of the variations with the branch's own step (1), or with the parent's pyrolysis step consistently; also these branches carry a duration 'keeping it longer' / '1 to 5 hours' in value_text, which is a range of conditions rather than a sample",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: C-QD_500C_3h outcome zeta_potential",
+   "extracted": "value_text 'negative 23 mV', no value_num",
+   "article_says": "Zeta-potential of the C-QDs shows a single peak at negative 23 mV with a peak width of 10.01 mV",
+   "fix": "v3: the sign is written in words but the value is explicit; store value_num -23, unit mV, keeping the quote (no deduction involved), otherwise the result cannot be compared across papers",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "annotation mecanisme_auteurs",
+   "extracted": "quote supports only 'hydrocarbon converted to the graphitic structure'; text also attributes PL to n-π* of C=O, no fluorophores, no quantum confinement",
+   "article_says": "it is believed that the fluorescence mechanism in the present case is attributed to the surface states transition of C=O functional group (n–π*)",
+   "fix": "add a second quote for the PL part or split the annotation",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "method_sources CR50, CR26, CR51 (PL_ML_analysis)",
+   "extracted": "three data-analysis references, role 'autre'",
+   "article_says": "The MCR-ALS analysis helps to extracts the pure spectral profile of a PL spectrum from the integrated PL data-set of C-QDs",
+   "fix": "per the rule of 2026-10-13, analysis formulas/algorithms are not method sources; CR26 and CR50 are context citations (the SI itself assigns NIPALS to its ref [1]=Felten and MCR-ALS tool to [2]=Maslova, i.e. the reverse of the extraction's quote/ref pairing); drop them or keep only those needed to rerun the calculation. No method reference is missing for the synthesis (Experimental Methods cites none)",
+   "confidence": "probable"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": 7,
+  "branches_extracted": 6,
+  "not_stated_checked": 45,
+  "not_stated_wrong": 1,
+  "note": "samples in article: C-QDs 500C/3h, fennel powder precursor, trials 200/300/400 C (1-5 h), typical trial 300C/3h (SI S5), longer than 3 h at 500 C, 15-month stored C-QDs, pH series/PL dataset; precursor and stored/pH samples are held as outcomes of the base route, not as routes"
+ },
+ "reproducibility_gaps": [
+  "atmosphere of pyrolysis (open crucible on a hot plate?)",
+  "heating rate of the hot plate and how temperature was measured",
+  "volume of deionized water for dissolution, sonication type/power",
+  "MWCO and duration of dialysis, dialysis medium volume",
+  "grinding time, particle size of the powder",
+  "yield of C-QDs",
+  "durations actually run at 200/300/400 C and whether the screening trials were purified",
+  "TLC eluent, UV-vis range, XRD absent, XPS source and calibration, accelerating voltages"
+ ],
+ "mechanism_check": "ok : annotations follow the text; mecanisme_auteurs quote covers only the first half",
+ "notes": "No figure folder in the repository (corpus/fig/PMC6769153 absent), so nothing could be read from figures and no from_figure value exists. Numerical values, units and table rows (Tables S1-S3, FTIR band assignments, Raman, XPS, DLS/zeta, QY, PCA/MCR/NMF peaks) all match the text. Not raised as findings: branching into 200/300/400 C is a defensible reading of an ambiguous range sentence (documented in doubts); the TLC plate filed under the setting name column (vocabulary: chromatographic column) and TLC under chromatography_ms are loose but acceptable; pl_1 quote does not contain 417/470 nm but the values are in the text and in the outcomes."
+}
