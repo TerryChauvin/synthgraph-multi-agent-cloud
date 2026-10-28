@@ -220,7 +220,8 @@ def validate(pmcid, data):
 
         # grille de reproductibilite (format 2) : chaque information attendue est soit extraite,
         # soit declaree « non cite » apres recherche dans l'article ; jamais oubliee
-        if (data.get("format") or 1) >= 2:
+        # une voie de calcul (DFT, simulation) n'a ni rendement, ni reactifs, ni etapes de laboratoire
+        if (data.get("format") or 1) >= 2 and r.get("kind") != "calcul":
             hint = "donner la valeur avec sa citation, ou l'ajouter a not_stated si l'article ne la donne pas"
             if not r.get("parent") and not r.get("yield") and "yield" not in (r.get("not_stated") or []):
                 c.err(w, f"grille : rendement (yield) ni extrait ni declare non cite ({hint})")
