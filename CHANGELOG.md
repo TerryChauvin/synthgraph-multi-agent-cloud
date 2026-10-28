@@ -1,9 +1,25 @@
 # Changelog
 
-Un palier = 50 publications closes et auditées. Sources : `audits/palier_00N_relecture.md`, `state.py status`, `synthese.db` (lecture seule). État au 17 octobre 2026.
+Un palier = 50 publications closes et auditées. Sources : `audits/palier_00N_relecture.md`, `state.py status`, `synthese.db` (lecture seule). État au 28 octobre 2026 : cible de 500 publications atteinte.
 
-## En cours — palier 6
-268 publications closes au total, 18 au-delà du palier 5 ; 2 sans critique. Non audité.
+## Audit de contenu et vérification de la base (28 octobre 2026)
+Hors palier. `analyses/audit_contenu.py` : types de synthèse (29 classes de méthode), 73 propriétés canoniques, conditions par voie, trous, qualité, limites, mécanismes, références. `analyses/audit_parametres.py` et `analyses/audit_verification.py` : profils de paramètres par méthode, paramètres essentiels cités / déclarés absents / hors grille, branches sans résultat, stœchiométrie nominale, synonymes, conversions SI. Ré-extraction à l'aveugle de 20 publications (`analyses/check_blind.py`, `analyses/compare_blind.py`, `audits/verification/aveugle/`) : paramètres concordants à 91,5 %, résultats à 84 %, 0 conflit sur valeur univoque. Rapports `audits/audit_contenu.md` et `audits/audit_verification.md` ; tableau de bord interactif (claude.ai) ; page publique `docs/index.html` (onglets Présentation / Analyse, FR / EN) et blocs « Analyse » des README, générés par `analyses/build_site.py`.
+
+## Palier 10 — publications 451 à 500 (25 octobre 2026) — cible atteinte
+549 voies, 9 498 citations exactes, 10 relectures intégrales (1 222 valeurs, 3 fausses corrigées dans PMC5369406), 446 constats (médiane 9, 11 « faux »), 0 bloquant, 39 avertissements acceptés et 2 corrigés, 0,71 M jetons. 247 DOI à vérifier.
+
+## Palier 9 — publications 401 à 450 (22–25 octobre 2026)
+566 voies, 9 719 citations exactes, 11 relectures intégrales (1 258 valeurs, 0 fausse), 424 constats (médiane 8,5, 4 « faux »), 0 bloquant, 14 avertissements acceptés et 2 corrigés, 0,69 M jetons. 278 DOI à vérifier.
+
+## Palier 8 — publications 351 à 400 (18–22 octobre 2026)
+515 voies, 9 859 citations exactes, 8 relectures intégrales (1 181 valeurs, 1 fausse corrigée dans PMC5535248), 437 constats (médiane 9, 11 « faux »), 0 bloquant, 134 avertissements acceptés, 0,67 M jetons. 259 DOI à vérifier.
+
+## Palier 7 — publications 301 à 350 (18 octobre 2026)
+424 voies, 9 238 citations exactes, 9 relectures intégrales (1 032 valeurs, 2 fausses corrigées dans PMC9034275), 421 constats (médiane 8, 9 « faux »), 0 bloquant, 46 avertissements acceptés, 0,69 M jetons. Défaut relevé : `sections.py` aplatit les exposants du XML (`10<sup>5</sup>` devient `105`). 
+Le prompt de correction a été nettoyé de décisions résiduelles d'une autre publication.
+
+## Palier 6 — publications 251 à 300 (17–18 octobre 2026)
+554 voies, 9 680 citations exactes, 10 relectures intégrales (1 887 valeurs, 0 fausse), 419 constats (médiane 8, 3 « faux »), 0 bloquant, 56 avertissements acceptés, 0,65 M jetons. Trois sessions cloud en parallèle (orchestrateur, vérification, documentation). 
 
 ## Palier 5 — publications 201 à 250 (15–17 octobre 2026)
 466 voies, 9 581 citations exactes, 9 relectures intégrales (1 112 valeurs, 0 fausse), 428 constats de fidélité (médiane 8, 4 « faux »), 0 bloquant, 35 avertissements acceptés, 0,66 M jetons par publication. Défaut de `sections.py` corrigé et 4 publications closes complétées. 176 DOI à vérifier.

@@ -1,10 +1,10 @@
-<p align="center"><a href="README.md">English</a> · <b>Français</b></p>
+<p align="center"><a href="README.md">English</a> · <b>Français</b> · <a href="#résumé">Présentation</a> · <a href="#analysis">Analyse</a> · <a href="https://terrychauvin.github.io/synthgraph-multi-agent-cloud/#fr-presentation">Site interactif (onglets FR/EN)</a></p>
 
 # Base de voies de synthèse de matériaux — méthodologie d'extraction et de vérification par pipeline multi-agent
 
 `synthese.db` (SQLite) rassemble des voies de synthèse de matériaux extraites d'articles en accès libre, où **chaque valeur porte la citation mot pour mot de l'article** qui la fonde, sa position dans le texte, et l'état de ce que l'article ne dit pas. Ce document décrit, à la manière d'une section « Matériel et méthodes », comment la base est construite, comment chaque valeur est vérifiée, ce que les contrôles mesurent, et dans quel sens, scientifiquement, on peut considérer son contenu comme juste.
 
-État au 18 octobre 2026 : 350 publications closes et auditées (sept paliers de 50), 3 708 voies (`synthese.db`, requêtes en lecture seule) ; 65 977 citations vérifiées sur les 350 auditées (37 478 aux paliers 1 à 4, 9 581 au palier 5, 9 680 au palier 6, 9 238 au palier 7) ; rapport du palier 7 : `audits/palier_007_relecture.md`. Les mesures détaillées des sections 6 et suivantes portent sur les paliers 1 à 4 ; les paliers 5 à 7 sont résumés en 6.3.
+État au 28 octobre 2026 : **500 publications closes et auditées** (dix paliers de 50, cible atteinte), 5 338 voies (1 382 voies de base, 3 956 branches), 39 350 résultats mesurés (`synthese.db`, requêtes en lecture seule) ; 95 053 citations vérifiées mot pour mot (100 %) sur les dix paliers ; rapports `audits/palier_00N_relecture.md` (N = 1 à 10) et `audits/palier_010_relecture.md` pour le dernier. Les mesures détaillées des sections 6.1 à 6.2 portent sur les paliers 1 à 4 ; les paliers 5 à 10 sont résumés en 6.3 et 6.4. Deux audits postérieurs à la cible décrivent le contenu (`audits/audit_contenu.md`) et vérifient la base (`audits/audit_verification.md`) : voir la section « Analyse de la base » ci-dessous.
 
 ---
 
@@ -21,6 +21,93 @@
 **Portée.** La base garantit la fidélité à la source et rend explicite ce qui manque pour reproduire ; elle ne garantit pas qu'un protocole publié fonctionne. Cette limite est inscrite dans sa structure.
 
 ---
+
+<!-- SITE:analysis:begin -->
+<a id="analysis"></a>
+
+## Analyse de la base
+
+Deux audits de contenu (28 octobre 2026) examinent ce que contiennent réellement les 500 publications et si l'extraction est fiable. Tout est reproductible : `python3 -I analyses/audit_contenu.py`, `audit_parametres.py`, `audit_verification.py`, `compare_blind.py`, puis `build_site.py` pour cette page.
+
+| **747** | **29** | **73** | **83 %** | **512** | **20** |
+|---|---|---|---|---|---|
+| voies de base d'un matériau | classes de méthode | propriétés canoniques (sur 16 577 noms) | des voies de base avec une limite | mécanismes comparés | publications ré-extraites à l'aveugle |
+
+
+### 1. Ce que contient la base
+
+<p align="center"><img src="docs/img/familles_fr.svg" alt="Voies de base de matériau par famille" width="760"></p>
+
+<p align="center"><img src="docs/img/methodes_fr.svg" alt="Types de synthèse (classement par mots-clés de la méthode)" width="760"></p>
+
+- **hydrothermal domine** (18,6 % des voies de base), puis précipitation, sol-gel et solvothermal. Deux classements indépendants (mots-clés de la méthode, enchaînement des étapes) concordent à **68,8 %**.
+- Les 16 577 noms de propriétés libres sont ramenés à **73 propriétés canoniques** par une table d'expressions régulières ; **25,8 % des valeurs** restent non classées (noms trop spécifiques). Avant toute exploitation statistique, une liste fermée de noms est à fixer.
+
+
+### 2. Paramètres communs et paramètres essentiels
+
+<p align="center"><img src="docs/img/essentiels_fr.svg" alt="Paramètres essentiels par méthode" width="760"></p>
+
+- **Température et durée sont les seuls paramètres universels** (90 à 100 % des voies des méthodes principales). Au-delà, deux voies d'une même méthode ne partagent que 25 à 45 % de leurs types de paramètres (similarité de Jaccard de 0,19 à 0,43).
+- **Les articles sont la première source de manque.** Pour les méthodes en autoclave, 39 % des paramètres essentiels ne sont pas donnés par l'article (et l'extracteur l'a écrit) ; le taux de remplissage est cité dans 1 à 5 % des voies, les rampes de chauffe et de refroidissement dans moins de 12 %.
+- **L'extraction a ses angles morts** : vitesse de refroidissement, débit de gaz, répétitions de cycles, puissance, taux de remplissage ne figurent pas dans la grille de reproductibilité, donc ne sont ni cités ni déclarés absents.
+- Les quantités de précurseurs, elles, sont données pour 87 % (hydrothermal) à 97 % (voies vertes) d'entre eux, et déclarées absentes quand elles manquent : aucun manque silencieux.
+
+
+### 3. Trous de couverture
+
+<p align="center"><img src="docs/img/trous_fr.svg" alt="Propriétés attendues les moins renseignées" width="760"></p>
+
+- **132 cases famille × méthode sur 175** comptent moins de 5 voies : hors hydrothermal et sol-gel, chaque méthode n'est représentée que par une poignée de voies par famille (électrochimie : 4 voies en tout).
+- **43 couples famille-propriété attendus** sont couverts à moins de 30 % : band gap et rendement quantique des pérovskites, surface BET des carbones, rétention de capacité des batteries, densité et dureté des céramiques.
+- Familles trop peu représentées : carbures (3 voies), phosphures (1), nitrures (17), matériaux 2D (18). Absentes ou noyées dans « autre » : polymères, verres, alliages, COF, électrolytes solides, thermoélectriques.
+
+
+### 4. Qualité des données
+
+<p align="center"><img src="docs/img/branches_fr.svg" alt="Branches sans résultat ni caractérisation" width="760"></p>
+
+- **Branches** : 5,3 % sans résultat ni caractérisation, mais 24 % chez les MOF (séries de conditions dont l'article ne rapporte qu'un résultat global).
+- **Stœchiométrie nominale** : sur 60 voies contrôlables, 24 concordent à moins de 10 % avec la formule du produit ; les écarts importants sont des excès voulus ou des précurseurs apportés par une voie intermédiaire, pas des erreurs.
+- **7 valeurs hors plage physique**, toutes recopiées de l'article (rendements quantiques de 112 à 241 % pour des points de carbone, mesurés par rapport à un étalon).
+- **Normalisation** : 682 noms de paramètres pour 27 types ; 71 % des paramètres numériques ont une valeur SI (température, durée, rampe à 99 % ; jamais les volumes, concentrations, vitesses : limite de `load.py`).
+- **Variation → effet** : 61 % des 3 064 variations numériques ont une propriété mesurée des deux côtés ; 693 séries de 3 points ou plus, dont 56 % monotones. Un changement de température déplace les propriétés de taille et de texture de 40 à 50 % en médiane, un changement de réactif les propriétés optiques de moins de 10 %.
+
+
+### 5. Limites de reproductibilité et mécanismes
+
+<p align="center"><img src="docs/img/limites_fr.svg" alt="Motifs des limites de reproductibilité" width="760"></p>
+
+<p align="center"><img src="docs/img/mecanismes_fr.svg" alt="Mécanisme de formation : auteurs contre critique scientifique" width="760"></p>
+
+- **83 % des voies de base** portent au moins une limite ; la première cause est l'incohérence interne de l'article (21 %), devant les preuves non discriminantes (10 %), les interprétations contestées (10 %) et les bilans de matière impossibles (9,5 %).
+- Sur 512 voies, le mécanisme des auteurs et celui du critique scientifique sont en **accord pour 83**, en **nuance pour 346** (dont 106 articles qui ne décrivent aucun mécanisme) et en **désaccord pour 83** ; **25** mécanismes sont contredits par les conditions extraites (réduction sans réducteur, AgCl précipité avant toute réduction…).
+- Travaux fondateurs le plus souvent absents alors qu'ils fondent la méthode : Iravani 2011 (29), Cundy & Cox 2003 (16), Essner et al. 2018 (15).
+
+
+### 6. Comparaison à la littérature
+
+<p align="center"><img src="docs/img/references_fr.svg" alt="Base contre plages de référence relevées sur le web" width="760"></p>
+
+- Sur 131 couples matériau-propriété, 31 sont dans la plage publiée. Écarts nets : band gap du SnS (médiane 2,81 eV contre 1,07–1,40 eV massif), photoluminescence du CdS (580 nm contre 490–505 nm : émission de pièges), silices « mésoporeuses » (BET 274 contre 400–1 137 m²/g), volume microporeux du ZIF-8 (0,15 contre 0,52–0,62 cm³/g).
+- Les bases structurées (CoRE MOF, IZA, Materials Project) ne sont pas joignables depuis l'environnement d'exécution ; les plages viennent du web, avec l'URL réellement consultée.
+
+
+### 7. Vérification par ré-extraction à l'aveugle
+
+<p align="center"><img src="docs/img/aveugle_fr.svg" alt="Ré-extraction à l&#x27;aveugle de 20 publications" width="760"></p>
+
+- 20 publications tirées au sort ont été ré-extraites par un agent qui n'a vu ni l'extraction en base ni les critiques : 167 voies sur 172 appariées. **91,5 % des paramètres et 83,6 % des résultats** trouvés à l'aveugle sont dans la base, avec **0 conflit** sur les valeurs univoques.
+- Le rappel plus bas (68 % des paramètres, 57 % des résultats) mesure l'apport des critiques : la base contient environ 30 % de paramètres et 40 % de résultats de plus qu'une extraction seule. Les désaccords restants sont des attributions d'une valeur à un autre échantillon ou à une autre voie.
+
+
+### Rapports complets
+
+- [audits/audit_contenu.md](https://github.com/TerryChauvin/synthgraph-multi-agent-cloud/blob/main/audits/audit_contenu.md) — types de synthèse, propriétés, conditions, trous, qualité, mécanismes, références
+- [audits/audit_verification.md](https://github.com/TerryChauvin/synthgraph-multi-agent-cloud/blob/main/audits/audit_verification.md) — paramètres par méthode et sept contrôles de vérification
+- [audits/palier_010_relecture.md](https://github.com/TerryChauvin/synthgraph-multi-agent-cloud/blob/main/audits/palier_010_relecture.md) — dernier audit de palier
+
+<!-- SITE:analysis:end -->
 
 ## 1. Objectif et question de départ
 
@@ -249,7 +336,7 @@ Chaque anomalie `bloquant` ou `avertissement` est traitée en retournant à l'ar
 
 Une erreur vue deux fois devient une règle écrite dans `RUNBOOK.md`, `CRITIQUE.md`, `PLAUSIBILITE.md` ou `PROMPT_CORRECTION.md`, avec sa date. Ces fichiers sont versionnés : l'état des consignes au moment où chaque publication a été traitée est reconstituable. C'est ainsi que le taux d'erreur est passé de 1,6 % sur le calibrage à 0,03 % ensuite (§ 6.2), et que les contrôles du critique scientifique ont été fixés à partir des problèmes réels du premier palier plutôt qu'a priori.
 
-## 6. Résultats mesurés (200 publications, paliers 1 à 4)
+## 6. Résultats mesurés (500 publications, paliers 1 à 10)
 
 ### 6.1 Volume et fidélité par palier
 
@@ -275,6 +362,18 @@ Une erreur vue deux fois devient une règle écrite dans `RUNBOOK.md`, `CRITIQUE
 ### 6.3 Palier 5 (publications 201 à 250)
 
 466 voies, 9 581 citations exactes (100 %), 9 publications relues intégralement (1 112 valeurs, 0 fausse), 428 constats de fidélité (médiane 8, dont 4 « faux »), 0 anomalie bloquante, 35 avertissements acceptés (faux positifs ou limites de l'article), 0,66 M jetons par publication (médiane). Source : `audits/palier_005_relecture.md`.
+
+### 6.4 Paliers 6 à 10 (publications 251 à 500)
+
+| Palier | Voies | Citations exactes | Relectures intégrales : pub. / valeurs / fausses | Constats de fidélité (médiane) | dont « faux » | Bloquants | Jetons par publication |
+|---|---|---|---|---|---|---|---|
+| 6 | 554 | 9 680 | 10 / 1 887 / 0 | 419 (8) | 3 | 0 | 0,65 M |
+| 7 | 424 | 9 238 | 9 / 1 032 / 2 (corrigées) | 421 (8) | 9 | 0 | 0,69 M |
+| 8 | 515 | 9 859 | 8 / 1 181 / 1 (corrigée) | 437 (9) | 11 | 0 | 0,67 M |
+| 9 | 566 | 9 719 | 11 / 1 258 / 0 | 424 (8,5) | 4 | 0 | 0,69 M |
+| 10 | 549 | 9 498 | 10 / 1 222 / 3 (corrigées) | 446 (9) | 11 | 0 | 0,71 M |
+
+Les citations restent exactes à 100 % ; les 6 valeurs fausses trouvées par relecture intégrale sur 6 580 valeurs ont été corrigées (0,09 %) et les avertissements d'audit, tous vérifiés dans le texte, acceptés (faux positifs du contrôle chimique surtout) ou corrigés. Sources : `audits/palier_006_relecture.md` à `audits/palier_010_relecture.md`.
 
 ## 7. Discussion : en quel sens le contenu de la base est « juste »
 
