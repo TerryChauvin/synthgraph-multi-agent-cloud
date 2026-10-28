@@ -38,7 +38,10 @@ def route_items(r):
     return P, O, R
 
 
-def match_values(A, B, reagent=False):
+CONFLICTS = []
+
+
+def match_values(A, B, reagent=False, ctx=None):
     """Pour chaque élément de A, existe-t-il dans B un élément de même clé (ou réactif proche), même unité (ou unité absente d'un côté) et valeur à ±2 % ? Renvoie (trouvés, conflits)."""
     found = 0; conflicts = 0; used = set()
     for k, v, u, raw in A:
@@ -51,29 +54,39 @@ def match_values(A, B, reagent=False):
                 continue
             if close(v, v2):
                 best = j; break
-            if best is None and not reagent:
+            if best is None and not reagent and sum(1 for x in A if x[0] == k) == 1 and sum(1 for x in B if x[0] == k2) == 1:
                 best = ("conflict", j)
         if isinstance(best, int):
             found += 1; used.add(best)
         elif best is not None:
             conflicts += 1
+            if ctx:
+                k2, v2, u2, raw2 = B[best[1]]
+                CONFLICTS.append(dict(pmcid=ctx[0], voie=ctx[1], type=ctx[2], cle=k if isinstance(k, str) else "", nom_base=raw, valeur_base=v, nom_aveugle=raw2, valeur_aveugle=v2, unite=u or u2))
     return found, conflicts
 
 
 def compare(pmcid):
     O = json.load(open(f"extractions/{pmcid}.json")); B = json.load(open(f"verification/blind/{pmcid}.json"))
     ro, rb = O.get("routes") or [], B.get("routes") or []
-    key = lambda r: toks(r.get("label"), (r.get("material") or {}).get("name"), (r.get("material") or {}).get("formula"))
+    def key(r):
+        return toks(r.get("label"), (r.get("material") or {}).get("name"), (r.get("material") or {}).get("formula"))
+
+    def rkey(r):
+        k = set()
+        for g in (r.get("reagents") or [])[:8]:
+            k |= toks(g.get("name"), g.get("formula"))
+        return k
     pairs = []; usedb = set()
     for i, r in enumerate(ro):
         best, bs = None, 0.0
         for j, r2 in enumerate(rb):
             if j in usedb:
                 continue
-            s = jac(key(r), key(r2))
+            s = jac(key(r), key(r2)) + 0.5 * jac(rkey(r), rkey(r2))
             if s > bs:
                 best, bs = j, s
-        if best is not None and bs >= 0.2:
+        if best is not None and bs >= 0.15:
             pairs.append((i, best)); usedb.add(best)
     stats = dict(pmcid=pmcid, voies_base=len(ro), voies_aveugle=len(rb), voies_appariees=len(pairs), branches_base=sum(1 for r in ro if r.get("parent")), branches_aveugle=sum(1 for r in rb if r.get("parent")),
                  doutes_base=len(O.get("doubts") or []), doutes_aveugle=len(B.get("doubts") or []))
@@ -87,15 +100,15 @@ def compare(pmcid):
     # appariement par voie (rappel strict) puis global (la valeur existe quelque part)
     for i, j in pairs:
         Po, Oo, Ro = route_items(ro[i]); Pb, Ob, Rb = route_items(rb[j])
-        f, c = match_values(Po, Pb); tot["params_base"] += len(Po); tot["params_trouves"] += f; tot["params_conflits"] += c
-        f, c = match_values(Oo, Ob); tot["resultats_base"] += len(Oo); tot["resultats_trouves"] += f; tot["resultats_conflits"] += c
+        f, c = match_values(Po, Pb, ctx=(pmcid, ro[i].get("label"), "parametre")); tot["params_base"] += len(Po); tot["params_trouves"] += f; tot["params_conflits"] += c
+        f, c = match_values(Oo, Ob, ctx=(pmcid, ro[i].get("label"), "resultat")); tot["resultats_base"] += len(Oo); tot["resultats_trouves"] += f; tot["resultats_conflits"] += c
         f, _ = match_values(Ro, Rb, reagent=True); tot["reactifs_base"] += len(Ro); tot["reactifs_trouves"] += f
     unmatched_o = [i for i in range(len(ro)) if i not in {i for i, _ in pairs}]
     for i in unmatched_o:
         Po, Oo, Ro = route_items(ro[i]); tot["params_base"] += len(Po); tot["resultats_base"] += len(Oo); tot["reactifs_base"] += len(Ro)
     gP, _ = match_values(allP_o, allP_b); gO, _ = match_values(allO_o, allO_b); gR, _ = match_values(allR_o, allR_b, reagent=True)
     iP, _ = match_values(allP_b, allP_o); iO, _ = match_values(allO_b, allO_o); iR, _ = match_values(allR_b, allR_o, reagent=True)
-    tot.update(params_aveugle=len(allP_b), params_trouves_inv=iP, resultats_aveugle=len(allO_b), resultats_trouves_inv=iO, reactifs_aveugle=len(allR_b), reactifs_trouves_inv=iR)
+    tot.update(params_aveugle=len(allP_b), params_trouves_inv=iP, resultats_aveugle=len(allO_b), resultats_trouves_inv=iO, reactifs_aveugle=len(allR_b), reactifs_trouves_inv=iR, params_trouves_global=gP, resultats_trouves_global=gO, reactifs_trouves_global=gR)
     stats.update(tot)
     pct = lambda a, b: round(100 * a / b, 1) if b else None
     stats.update(rappel_voies=pct(len(pairs), len(ro)), rappel_params=pct(tot["params_trouves"], tot["params_base"]), rappel_params_global=pct(gP, len(allP_o)), precision_params=pct(iP, len(allP_b)),
@@ -113,15 +126,16 @@ def main():
         pct = lambda a, b: round(100 * a / b, 1) if b else None
         rows.append(dict(pmcid="TOTAL", voies_base=s("voies_base"), voies_aveugle=s("voies_aveugle"), voies_appariees=s("voies_appariees"), branches_base=s("branches_base"), branches_aveugle=s("branches_aveugle"), doutes_base=s("doutes_base"), doutes_aveugle=s("doutes_aveugle"),
                          params_base=s("params_base"), params_trouves=s("params_trouves"), params_aveugle=s("params_aveugle"), params_trouves_inv=s("params_trouves_inv"), params_conflits=s("params_conflits"), resultats_base=s("resultats_base"), resultats_trouves=s("resultats_trouves"), resultats_aveugle=s("resultats_aveugle"), resultats_trouves_inv=s("resultats_trouves_inv"), resultats_conflits=s("resultats_conflits"),
-                         reactifs_base=s("reactifs_base"), reactifs_trouves=s("reactifs_trouves"), reactifs_aveugle=s("reactifs_aveugle"), reactifs_trouves_inv=s("reactifs_trouves_inv"), rappel_voies=pct(s("voies_appariees"), s("voies_base")), rappel_params=pct(s("params_trouves"), s("params_base")), rappel_params_global=None, precision_params=pct(s("params_trouves_inv"), s("params_aveugle")),
-                         rappel_resultats=pct(s("resultats_trouves"), s("resultats_base")), rappel_resultats_global=None, precision_resultats=pct(s("resultats_trouves_inv"), s("resultats_aveugle")), rappel_reactifs=pct(s("reactifs_trouves"), s("reactifs_base")), rappel_reactifs_global=None, precision_reactifs=pct(s("reactifs_trouves_inv"), s("reactifs_aveugle")), publications=len(rows)))
+                         reactifs_base=s("reactifs_base"), reactifs_trouves=s("reactifs_trouves"), reactifs_aveugle=s("reactifs_aveugle"), reactifs_trouves_inv=s("reactifs_trouves_inv"), rappel_voies=pct(s("voies_appariees"), s("voies_base")), rappel_params=pct(s("params_trouves"), s("params_base")), rappel_params_global=pct(s("params_trouves_global"), s("params_base")), precision_params=pct(s("params_trouves_inv"), s("params_aveugle")),
+                         rappel_resultats=pct(s("resultats_trouves"), s("resultats_base")), rappel_resultats_global=pct(s("resultats_trouves_global"), s("resultats_base")), precision_resultats=pct(s("resultats_trouves_inv"), s("resultats_aveugle")), rappel_reactifs=pct(s("reactifs_trouves"), s("reactifs_base")), rappel_reactifs_global=pct(s("reactifs_trouves_global"), s("reactifs_base")), precision_reactifs=pct(s("reactifs_trouves_inv"), s("reactifs_aveugle")), publications=len(rows)))
     json.dump(rows, open(out, "w"), ensure_ascii=False, separators=(",", ":"))
+    json.dump(CONFLICTS, open(out.replace("verif_reextraction", "verif_reextraction_conflits"), "w"), ensure_ascii=False, separators=(",", ":"))
     rows = rows[:-1]
     for r in rows:
         print(f"{r['pmcid']}: voies {r['voies_base']}/{r['voies_aveugle']} appariées {r['voies_appariees']} | params rappel {r['rappel_params']}% (global {r['rappel_params_global']}%) précision {r['precision_params']}% conflits {r['params_conflits']} | résultats rappel {r['rappel_resultats']}% (global {r['rappel_resultats_global']}%) précision {r['precision_resultats']}% conflits {r['resultats_conflits']} | réactifs rappel {r['rappel_reactifs']}% précision {r['precision_reactifs']}%")
     if rows:
         s = lambda k: sum(r[k] for r in rows)
-        print(f"TOTAL {len(rows)} publications : voies appariées {s('voies_appariees')}/{s('voies_base')} ; params rappel {round(100*s('params_trouves')/s('params_base'),1)}% précision {round(100*s('params_trouves_inv')/s('params_aveugle'),1)}% conflits {s('params_conflits')} ; résultats rappel {round(100*s('resultats_trouves')/s('resultats_base'),1)}% précision {round(100*s('resultats_trouves_inv')/s('resultats_aveugle'),1)}% conflits {s('resultats_conflits')} ; réactifs rappel {round(100*s('reactifs_trouves')/max(1,s('reactifs_base')),1)}%")
+        print(f"TOTAL {len(rows)} publications : voies appariées {s('voies_appariees')}/{s('voies_base')} ; params rappel {round(100*s('params_trouves')/s('params_base'),1)}% (global {round(100*s('params_trouves_global')/s('params_base'),1)}%) résultats global {round(100*s('resultats_trouves_global')/s('resultats_base'),1)}% réactifs global {round(100*s('reactifs_trouves_global')/max(1,s('reactifs_base')),1)}% ; précision {round(100*s('params_trouves_inv')/s('params_aveugle'),1)}% conflits {s('params_conflits')} ; résultats rappel {round(100*s('resultats_trouves')/s('resultats_base'),1)}% précision {round(100*s('resultats_trouves_inv')/s('resultats_aveugle'),1)}% conflits {s('resultats_conflits')} ; réactifs rappel {round(100*s('reactifs_trouves')/max(1,s('reactifs_base')),1)}%")
 
 
 if __name__ == "__main__":
