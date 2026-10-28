@@ -18,7 +18,9 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "scale",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -121,7 +123,9 @@
      "not_stated": [
       "temperature",
       "volume",
-      "alkoxide_volume"
+      "alkoxide_volume",
+      "vessel",
+      "atmosphere"
      ]
     },
     {
@@ -219,7 +223,8 @@
       "heating_rate",
       "cooling_rate",
       "furnace_type",
-      "sample_mass"
+      "sample_mass",
+      "cooling_mode"
      ]
     }
    ],
@@ -1489,6 +1494,33 @@
      "quote": "Total 116.7 mg, 100.4%",
      "value_num": 100.4,
      "unit": "%"
+    },
+    {
+     "property": "TDS_dry_post_reaction_mass",
+     "quote": "Dry, Post-Reaction Materialb\n73.0 mg",
+     "value_num": 73.0,
+     "unit": "mg"
+    },
+    {
+     "property": "TDS_remaining_mass_humins",
+     "quote": "Remaining Post-Reaction Mass\n73.0 – 46.8 – 4.9 = 21.3 mg",
+     "value_num": 21.3,
+     "unit": "mg"
+    },
+    {
+     "property": "TDS_mass_balance_total",
+     "quote": "Total\n116.7 mg, 100.4%",
+     "value_num": 100.4,
+     "unit": "%"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "total dissolved solids (TDS) gravimetric analysis",
+     "instrument": "25 mL round-bottom flask and pre-weighed Whatman ME 25/21 ST cellulose membrane filter, preheated oil bath at 150 °C",
+     "conditions": "magnetic stirring (speed not stated); quench with water; filter and catalyst dried under reduced pressure; reaction mixture concentrated to dryness under reduced pressure for 48 h; 13C NMR in 10% D2O with ethanol internal standard",
+     "result": "mass of species not observable by 13C NMR (humins) from the dry post-reaction mass",
+     "quote": "The filter and catalyst were then dried under reduced pressure to obtain the post-reaction catalyst mass. Similarly, the reaction mixture was concentrated to dryness in the pre-weighed reaction flask under reduced pressure for 48 h, after which the final mass was recorded."
     }
    ]
   },
@@ -3343,6 +3375,15 @@
    "not_stated": [
     "drying",
     "grinding"
+   ],
+   "characterizations": [
+    {
+     "technique": "TGA",
+     "instrument": "Discovery TGA 5500",
+     "conditions": "ramping at 10 °C/min (Figure S11 caption); atmosphere and temperature range not stated for this sample",
+     "result": "thermal behaviour of the uncalcined 0.5-SZ precatalyst; the three calcination temperatures marked on the curve",
+     "quote": "was recorded using a Discovery TGA 5500 instrument, ramping at a rate of 10 °C/min."
+    }
    ]
   },
   {
@@ -3543,6 +3584,13 @@
      "conditions": "500–4000 cm–1",
      "result": "new C–H bending and stretching regions on the spent catalyst, absent in the regenerated sample",
      "quote": "Infrared spectra obtained via DRIFTS (Figure S13) exhibit two new distinct regions corresponding to C–H bending (δC–H) and stretching (νC–H) modes from surface organic deposits, however absent in the regenerated sample."
+    },
+    {
+     "technique": "quantitative 13C NMR (recycling samples, sample preparation)",
+     "instrument": null,
+     "conditions": "the two MeOH fractions combined, concentrated under reduced pressure, filtered through a 0.2 μm syringe filter; no GdCl3; otherwise as described for the reaction analysis (10% D2O, ethanol internal standard)",
+     "result": "conversion and yields of the recycling tests",
+     "quote": "The two MeOH fractions were combined, concentrated under reduced pressure, filtered through a 0.2 μm syringe filter, and prepared for 13C NMR analysis without GdCl3 as described above."
     }
    ],
    "outcomes": [
@@ -4394,6 +4442,10 @@
   {
    "where": "0.5-SZ-625, ajustement de la Figure 10",
    "issue": "La légende donne « y = Ax2 + Bx + C ; A = 1.44, B = −0.322, C = 0 » alors que l'équation imprimée sur la figure est y = 1,44x − 0,332x2 (R2 = 0,9894) : coefficients intervertis entre le terme en x2 et le terme en x, et 0,322 contre 0,332. Le texte place le maximum à ~2,25 nm–2. Les deux versions sont extraites telles quelles, sans choisir."
+  },
+  {
+   "where": "0.5-SZ-625_regenerated étape 1 (réaction de recyclage)",
+   "issue": "La section Catalytic Reactions décrit en général des tubes en verre dans un bain d'huile, sous agitation magnétique à 450 rpm, à l'air ambiant ; la section Recycling ne reprend ni le récipient ni l'agitation. Ils restent déclarés non cités pour cette voie plutôt que hérités par hypothèse."
   }
  ]
 }
