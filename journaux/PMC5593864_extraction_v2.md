@@ -1,0 +1,19 @@
+# Journal d'extraction v2 — PMC5593864
+
+- **Découpage** : C1 (avec NaHCO3) est la voie de base ; C2 (sans NaHCO3) est une branche de C1 (« with the other experimental conditions unchanged »), avec ses propres étapes puisque l'étape d'ajout de NaHCO3 n'existe pas ; C3 (recuit de C2, 300 °C, N2, 2 h) est une voie `post_treatment` indépendante, avec le réactif `intermediate` « C2 sample ».
+- **GO** : préparé « according to the modified Hummers method » sans aucun détail. J'en ai fait une voie `intermediate` à une seule étape (`react`, température et durée non citées) pour pouvoir rattacher ses caractérisations (DRX 9,4 et 26,5°, FTIR, Raman, MET) ; réactif de C1 en rôle `intermediate`. Renvois CR71 et CR72 en `method_sources`.
+- **α-FeOOH NRs de référence** : synthèse dans le Supporting Information, absent ; échantillon sans voie dans `sample_inventory`, annexe signalée en `limite_reproductibilite`.
+- **C2, étapes** : volume d'autoclave, refroidissement et centrifugation de C2 repris de C1 à cause de la phrase « other experimental conditions unchanged » ; doute écrit. La température et la durée hydrothermales, le lavage et le séchage portent la citation de la phrase de C2.
+- **Mélange de C1** : l'article ne décrit pas le mélange GO + FeSO4 avant NaHCO3 ; étape `mix` créée sur la seule mention « GO and FeSO4 mixed solution », durée non citée.
+- **Refroidissement** : « After being cooling to RT » rangé comme paramètre `cooling` de l'étape hydrothermale (case de la grille), pas comme étape `cool` séparée.
+- **Pureté** : « analytically pure » appliquée à FeSO4 et NaHCO3 (phrase générale sur tous les réactifs), pas à l'eau (« deionized ») ni à GO (préparé par les auteurs).
+- **Dispositif** : l'éprouvette coaxiale à 30 % en masse dans la paraffine est une voie `device` ; la masse de paraffine n'est pas citée. Les résultats micro-ondes restent sur C1, C2, C3 (un seul échantillon par matériau), comme dans l'extraction de référence PMC6199062.
+- **Mesure micro-ondes** : aucun nom du vocabulaire ne convenait ; ajout de la technique `microwave_vna` et de quatre propriétés (`microwave_reflection_loss`, `microwave_absorption_bandwidth`, `microwave_matching_thickness`, `electromagnetic_parameter`), avec écartement de `dielectric`, `thickness_layers`, `magnetic`, `absorption_peak`, `retention_stability`.
+- **Mesure de C2** : sa DRX, son MET, son Raman et sa mesure micro-ondes sont celles de la voie de base C1 par héritage (`measured_by` vers `xrd_C1`, etc.) ; le FTIR de C2 a sa propre entrée car seuls GO, C2 et C3 ont un spectre FTIR.
+- **Raman** : positions D, G, 2D, D+D′ rangées sur GO, C1 et C2 (spectres de la Fig. 5b) ; la phrase sur 2D et D+D′ dit « over the as-synthesized samples », lecture littérale.
+- **Bandes passantes** : prises de la rangée « this work » de la Table 1 (citation d'une rangée entière), les minima et épaisseurs de la phrase du texte (ordre « respectively » : C1, C2, C3 vérifié avec la Table 1 : −32,3 / −37,4 / −71,4).
+- **Table 1** : les 9 rangées de la littérature vont dans `comparisons` (25 valeurs, les tirets « — » ignorés) ; colonne des références vide, donc sans `ref_id`.
+- **Figures** : Fig. 4, 5 et 9 ouvertes ; aucune valeur reprise de figure (positions de pics de C2 et C3 seulement étiquetées en (hkl) ; axe dm de la Fig. 9 en « mm » incohérent avec les épaisseurs du texte, doute écrit). Fig. 6 à 8 (courbes) non numérisées.
+- **Calcul** : le modèle du quart d'onde (éq. 5, n = 3 d'après la légende de la Fig. 9) est une voie `calcul` avec un seul résultat qualitatif (accord dm simulée / expérimentale).
+- **TEM à 20 kV** : valeur écrite telle quelle (probable erreur pour 200 kV), doute écrit.
+- **Résultats de groupe** (ordres de ε′ et ε″, tendance de μ) : une annotation `tendance_observee`, pas de valeur recopiée par voie ; attenuation, perte diélectrique et adaptation d'impédance gardées en `value_text` par voie car la phrase désigne l'échantillon.

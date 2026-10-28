@@ -1,0 +1,60 @@
+{
+ "pmcid": "PMC5593864",
+ "ajouts": [
+  {
+   "type": "technique",
+   "nom": "microwave_vna",
+   "definition": "Mesure de la permittivité et de la perméabilité complexes d'un absorbeur de micro-ondes (éprouvette coaxiale ou en guide) à l'analyseur de réseau vectoriel, dont on déduit la perte par réflexion, l'épaisseur d'accord et la bande passante d'absorption.",
+   "ecarte": "device_test: test de dispositif photovoltaïque, LED ou capteur, sans mesure de permittivité; electrochemistry: mesure électrochimique en cellule, pas une mesure hyperfréquence; mechanical_test: essai mécanique, sans rapport avec des micro-ondes",
+   "date": "2026-10-28 21:58",
+   "reglages": [
+    "frequency_range",
+    "sample_preparation",
+    "specimen_geometry"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "microwave_reflection_loss",
+   "definition": "Perte par réflexion d'un absorbeur de micro-ondes (RL en dB, calculée par la ligne de transmission à partir de la permittivité et de la perméabilité) ; préciser dans le nom ou la citation la fréquence et l'épaisseur du minimum.",
+   "ecarte": "dielectric: permittivité ou pertes diélectriques mesurées par électrochimie ou test de dispositif, pas la perte par réflexion d'un absorbeur hyperfréquence; thickness_layers: épaisseur ou nombre de couches observées en microscopie, pas une épaisseur d'accord électromagnétique; magnetic: aimantation et coercivité, pas la perméabilité hyperfréquence; absorption_peak: maximum d'absorption optique UV-visible, pas la perte par réflexion micro-onde; retention_stability: rétention de performance dans le temps, sans rapport",
+   "date": "2026-10-28 21:58",
+   "techniques": [
+    "microwave_vna"
+   ],
+   "unite": "dB"
+  },
+  {
+   "type": "propriete",
+   "nom": "microwave_absorption_bandwidth",
+   "definition": "Plage de fréquences (GHz) où la perte par réflexion reste sous un seuil (−10 dB ou −20 dB) pour une épaisseur donnée ; préciser le seuil dans le nom (microwave_absorption_bandwidth_RLm20).",
+   "ecarte": "dielectric: permittivité ou pertes diélectriques mesurées par électrochimie ou test de dispositif, pas la perte par réflexion d'un absorbeur hyperfréquence; thickness_layers: épaisseur ou nombre de couches observées en microscopie, pas une épaisseur d'accord électromagnétique; magnetic: aimantation et coercivité, pas la perméabilité hyperfréquence; absorption_peak: maximum d'absorption optique UV-visible, pas la perte par réflexion micro-onde; retention_stability: rétention de performance dans le temps, sans rapport",
+   "date": "2026-10-28 21:58",
+   "techniques": [
+    "microwave_vna"
+   ],
+   "unite": "GHz"
+  },
+  {
+   "type": "propriete",
+   "nom": "microwave_matching_thickness",
+   "definition": "Épaisseur d'accord (matching thickness) d'un absorbeur de micro-ondes pour laquelle la perte par réflexion est minimale, mesurée sur les courbes de RL ou simulée par le modèle du quart d'onde ; préciser la fréquence du minimum dans la citation.",
+   "ecarte": "dielectric: permittivité ou pertes diélectriques mesurées par électrochimie ou test de dispositif, pas la perte par réflexion d'un absorbeur hyperfréquence; thickness_layers: épaisseur ou nombre de couches observées en microscopie, pas une épaisseur d'accord électromagnétique; magnetic: aimantation et coercivité, pas la perméabilité hyperfréquence; absorption_peak: maximum d'absorption optique UV-visible, pas la perte par réflexion micro-onde; retention_stability: rétention de performance dans le temps, sans rapport",
+   "date": "2026-10-28 21:58",
+   "techniques": [
+    "microwave_vna"
+   ],
+   "unite": "mm"
+  },
+  {
+   "type": "propriete",
+   "nom": "electromagnetic_parameter",
+   "definition": "Paramètre électromagnétique d'un absorbeur mesuré sur une plage de fréquences : permittivité (ε′, ε″), perméabilité (μ′, μ″), tangente de pertes diélectriques ou magnétiques, constante d'atténuation α, rapport d'adaptation d'impédance ; préciser la grandeur dans le suffixe (electromagnetic_parameter_attenuation_constant).",
+   "ecarte": "dielectric: permittivité ou pertes diélectriques mesurées par électrochimie ou test de dispositif, pas la perte par réflexion d'un absorbeur hyperfréquence; thickness_layers: épaisseur ou nombre de couches observées en microscopie, pas une épaisseur d'accord électromagnétique; magnetic: aimantation et coercivité, pas la perméabilité hyperfréquence; absorption_peak: maximum d'absorption optique UV-visible, pas la perte par réflexion micro-onde; retention_stability: rétention de performance dans le temps, sans rapport",
+   "date": "2026-10-28 21:58",
+   "techniques": [
+    "microwave_vna"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2210 @@
+{
+ "pmcid": "PMC8717625",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "CsPbBr3 NCs",
+   "defined_in": "Methods, Synthesis of CsPbBr3 Nanocrystals; SI S2",
+   "route": "CsPbBr3-NC",
+   "results_in": [
+    "Results, Nanocrystals in This Work",
+    "Fig. 1a,c",
+    "Fig. 3",
+    "SI S3-S6"
+   ]
+  },
+  {
+   "sample": "CsPbI3 NCs",
+   "defined_in": "Methods, Synthesis of CsPbI3 Nanocrystals; SI S2",
+   "route": "CsPbI3-NC",
+   "results_in": [
+    "Results, Nanocrystals in This Work",
+    "Fig. 1b,c",
+    "Fig. 4",
+    "SI S3-S6"
+   ]
+  },
+  {
+   "sample": "larger CsPbI3 NCs (edge 15.4 ± 3.3 nm)",
+   "defined_in": "Results, Nanocrystals in This Work",
+   "route": "CsPbI3-NC",
+   "results_in": [
+    "Fig. 1b"
+   ],
+   "why": "population de taille minoritaire du même lot, sans protocole propre"
+  },
+  {
+   "sample": "Cs-oleate solution",
+   "defined_in": "SI S2, Cs-Oleate Preparation",
+   "route": "Cs-oleate",
+   "results_in": []
+  },
+  {
+   "sample": "saturated NH4BF4 toluene solution",
+   "defined_in": "SI S2, Synthesis of CsPbBr3 Nanocrystals",
+   "route": "NH4BF4-sat-sol",
+   "results_in": []
+  },
+  {
+   "sample": "single CsPbBr3 NC of Fig. 2",
+   "defined_in": "Results, Single-Particle Heralded Spectroscopy",
+   "route": "CsPbBr3-NC",
+   "results_in": [
+    "Fig. 2",
+    "SI Fig. S1, S3, S4"
+   ],
+   "why": "particule unique du lot CsPbBr3, ses valeurs sont des résultats de la voie"
+  },
+  {
+   "sample": "60 single CsPbBr3 NCs",
+   "defined_in": "Results, CsPbBr3 NCs",
+   "route": "CsPbBr3-NC",
+   "results_in": [
+    "Fig. 3",
+    "SI Fig. S5"
+   ]
+  },
+  {
+   "sample": "20 single CsPbI3 NCs",
+   "defined_in": "Results, CsPbI3 NCs",
+   "route": "CsPbI3-NC",
+   "results_in": [
+    "Fig. 4",
+    "SI Fig. S5"
+   ]
+  },
+  {
+   "sample": "isolated NCs in PMMA on glass coverslip",
+   "defined_in": "Results, Nanocrystals in This Work",
+   "route": "CsPbBr3-NC-film",
+   "results_in": []
+  },
+  {
+   "sample": "CsPbI3 NCs in PMMA on glass coverslip",
+   "defined_in": "Results, Nanocrystals in This Work",
+   "route": "CsPbI3-NC-film",
+   "results_in": []
+  }
+ ],
+ "routes": [
+  {
+   "label": "CsPbBr3-NC",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "hot_injection",
+    "post_synthetic_modification"
+   ],
+   "method": "hot-injection synthesis of CsPbBr3 nanocrystals in octadecene, followed by surface treatment with a saturated NH4BF4 toluene solution",
+   "material": {
+    "name": "CsPbBr3 perovskite nanocrystals",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocrystals"
+   },
+   "quote": "CsPbBr3 NCs were synthesized according to a reported recipe with slight modifications.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "octadecene",
+     "formula": "C18H36",
+     "role": "solvent",
+     "quote": "ODE (5 mL) and PbBr2 (69 mg) were mixed in a 25 mL 3-neck flask",
+     "amount": 5,
+     "unit": "mL",
+     "purity": "90%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "(ODE, 90%, Sigma-Aldrich)"
+    },
+    {
+     "name": "lead bromide",
+     "formula": "PbBr2",
+     "role": "precursor",
+     "quote": "ODE (5 mL) and PbBr2 (69 mg) were mixed in a 25 mL 3-neck flask",
+     "amount": 69,
+     "unit": "mg",
+     "purity": "98%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "PbBr2 (98%, Sigma-Aldrich)"
+    },
+    {
+     "name": "oleic acid (dried)",
+     "formula": "C18H34O2",
+     "role": "ligand",
+     "quote": "dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture",
+     "amount": 0.5,
+     "unit": "mL",
+     "purity": "90%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "oleic acid (OA, 90%, Sigma-Aldrich)"
+    },
+    {
+     "name": "oleylamine (dried)",
+     "formula": "C18H37N",
+     "role": "ligand",
+     "quote": "dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture",
+     "amount": 0.5,
+     "unit": "mL",
+     "purity": "70%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "oleylamine (OLA, 70%, Sigma- Aldrich)"
+    },
+    {
+     "name": "Cs-oleate",
+     "formula": null,
+     "role": "intermediate",
+     "quote": "Then, Cs-oleate solution (0.4 mL) was swiftly injected",
+     "amount": 0.4,
+     "unit": "mL"
+    },
+    {
+     "name": "toluene (anhydrous)",
+     "formula": "C7H8",
+     "role": "solvent",
+     "quote": "After the centrifuge, the supernatant was discarded and the particles were re- 1 Table S1: Measured values of the BX binding energy in cesium lead halide nanocrystals published in the literature. ⟨N⟩is the average number of photons absorbed per particle per pump pulse. Positive BX binding energy values correspond to an attractive exciton-exciton interaction. Reference Technique* Material Edge length (nm) ⟨N⟩ BX binding energy (meV) Wang et al. (2015)1 PDPL (CRYO) CsPbBr3 9 ** ≈50 Makarov et al. (2016)2 TA (SD) CsPbI3 11.2 ± 0.7 0.1 11 Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25 Aneesh et al. (2017)4 TA (SD) CsPbBr3 11 ≈0.04 ≈30 Yin et al. (2017)5 SP (CRYO) CsPbI3 ≈9 ≈0.05 14.26 ± 1.53 Yumoto et al. (2018)6 TA (SD) CsPbI3 6 0.1 ≈35 Ashner et al. (2019)7 TA CsPbBr3 6 8 10 0.3 −10 −3 −2 Huang et al. (2020)8 2DES (CRYO) CsPbBr3 9 < 0.1 25 −40 Shen et al. (2021)9 TA CsPbBr3 16 6.42 12.8 61.2 21.7 Dana et al. (2021)10 TA (SD) CsPbBr3 6 ± 0.7 ≥4 ∼−100 This work HS CsPbBr3 CsPbI3 5.9 ± 1.3 7.2 ± 1.9 ≈0.1 ≈0.3 10 ± 6 1 ± 9 * PDPL - Power dependent PL, CRYO - at cryogenic temperatures, TA - Transient absorption, SD - short delay, TRPL - Time resolved PL, SP - Single particle PL spectroscopy, 2DES - Two-dimensional electron spectroscopy, HS - Heralded spectroscopy. ** No ⟨N⟩quoted. Pump intensity varied from 4.5 to 54.7 µJ *** Estimated from cross section data. dispersed in anhydrous toluene",
+     "purity": "99.8%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "toluene (99.8%, Sigma-Aldrich, anhydrous)",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "NH4BF4-sat-sol",
+     "formula": "NH4BF4",
+     "role": "intermediate",
+     "quote": "NH4BF4 saturated solution (1 mL) was then stirred with CsPbBr3 NCs precipitation in toluene (0.25mL) for 30 min",
+     "amount": 1,
+     "unit": "mL"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "ODE (5 mL) and PbBr2 (69 mg) were mixed in a 25 mL 3-neck flask",
+     "quote": "ODE (5 mL) and PbBr2 (69 mg) were mixed in a 25 mL 3-neck flask",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "3-neck flask",
+       "detail": "25 mL",
+       "quote": "ODE (5 mL) and PbBr2 (69 mg) were mixed in a 25 mL 3-neck flask"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "degas",
+     "description": "were mixed and dried under vacuum for 1 h at 120 °C.",
+     "quote": "were mixed and dried under vacuum for 1 h at 120 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "were mixed and dried under vacuum for 1 h at 120 °C.",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "were mixed and dried under vacuum for 1 h at 120 °C.",
+       "value_text": "vacuum"
+      },
+      {
+       "name": "duration",
+       "quote": "were mixed and dried under vacuum for 1 h at 120 °C.",
+       "value_num": 1,
+       "unit": "h"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture",
+     "quote": "dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture",
+       "value_text": "injected"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "Then, under an Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture and the temperature was raised to 180 °C and kept for 10 min.",
+       "value_text": "Ar atmosphere"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "the temperature was raised to 180 °C and kept for 10 min.",
+     "quote": "the temperature was raised to 180 °C and kept for 10 min.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "the temperature was raised to 180 °C and kept for 10 min.",
+       "value_num": 180,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "the temperature was raised to 180 °C and kept for 10 min.",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "inject",
+     "description": "Then, Cs-oleate solution (0.4 mL) was swiftly injected",
+     "quote": "Then, Cs-oleate solution (0.4 mL) was swiftly injected",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "Then, Cs-oleate solution (0.4 mL) was swiftly injected",
+       "value_text": "swiftly injected"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "react",
+     "description": "and after 25 s, the reaction mixture was cooled by an ice water bath.",
+     "quote": "and after 25 s, the reaction mixture was cooled by an ice water bath.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "and after 25 s, the reaction mixture was cooled by an ice water bath.",
+       "value_num": 25,
+       "unit": "s"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "cool",
+     "description": "and after 25 s, the reaction mixture was cooled by an ice water bath.",
+     "quote": "and after 25 s, the reaction mixture was cooled by an ice water bath.",
+     "parameters": [
+      {
+       "name": "cooling",
+       "quote": "and after 25 s, the reaction mixture was cooled by an ice water bath.",
+       "value_text": "ice water bath"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "centrifuge",
+     "description": "the crude solution was centrifuged at 6000 rpm for 5 min.",
+     "quote": "the crude solution was centrifuged at 6000 rpm for 5 min.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "the crude solution was centrifuged at 6000 rpm for 5 min.",
+       "value_num": 6000,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "the crude solution was centrifuged at 6000 rpm for 5 min.",
+       "value_num": 5,
+       "unit": "min"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "disperse",
+     "description": "After the centrifuge, the supernatant was discarded and the particles were re- 1 Table S1: Measured values of the BX binding energy in cesium lead halide nanocrystals published in the literature. ⟨N⟩is the average number of photons absorbed per particle per pump pulse. Positive BX binding energy values correspond to an attractive exciton-exciton interaction. Reference Technique* Material Edge length (nm) ⟨N⟩ BX binding energy (meV) Wang et al. (2015)1 PDPL (CRYO) CsPbBr3 9 ** ≈50 Makarov et al. (2016)2 TA (SD) CsPbI3 11.2 ± 0.7 0.1 11 Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25 Aneesh et al. (2017)4 TA (SD) CsPbBr3 11 ≈0.04 ≈30 Yin et al. (2017)5 SP (CRYO) CsPbI3 ≈9 ≈0.05 14.26 ± 1.53 Yumoto et al. (2018)6 TA (SD) CsPbI3 6 0.1 ≈35 Ashner et al. (2019)7 TA CsPbBr3 6 8 10 0.3 −10 −3 −2 Huang et al. (2020)8 2DES (CRYO) CsPbBr3 9 < 0.1 25 −40 Shen et al. (2021)9 TA CsPbBr3 16 6.42 12.8 61.2 21.7 Dana et al. (2021)10 TA (SD) CsPbBr3 6 ± 0.7 ≥4 ∼−100 This work HS CsPbBr3 CsPbI3 5.9 ± 1.3 7.2 ± 1.9 ≈0.1 ≈0.3 10 ± 6 1 ± 9 * PDPL - Power dependent PL, CRYO - at cryogenic temperatures, TA - Transient absorption, SD - short delay, TRPL - Time resolved PL, SP - Single particle PL spectroscopy, 2DES - Two-dimensional electron spectroscopy, HS - Heralded spectroscopy. ** No ⟨N⟩quoted. Pump intensity varied from 4.5 to 54.7 µJ *** Estimated from cross section data. dispersed in anhydrous toluene",
+     "quote": "After the centrifuge, the supernatant was discarded and the particles were re- 1 Table S1: Measured values of the BX binding energy in cesium lead halide nanocrystals published in the literature. ⟨N⟩is the average number of photons absorbed per particle per pump pulse. Positive BX binding energy values correspond to an attractive exciton-exciton interaction. Reference Technique* Material Edge length (nm) ⟨N⟩ BX binding energy (meV) Wang et al. (2015)1 PDPL (CRYO) CsPbBr3 9 ** ≈50 Makarov et al. (2016)2 TA (SD) CsPbI3 11.2 ± 0.7 0.1 11 Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25 Aneesh et al. (2017)4 TA (SD) CsPbBr3 11 ≈0.04 ≈30 Yin et al. (2017)5 SP (CRYO) CsPbI3 ≈9 ≈0.05 14.26 ± 1.53 Yumoto et al. (2018)6 TA (SD) CsPbI3 6 0.1 ≈35 Ashner et al. (2019)7 TA CsPbBr3 6 8 10 0.3 −10 −3 −2 Huang et al. (2020)8 2DES (CRYO) CsPbBr3 9 < 0.1 25 −40 Shen et al. (2021)9 TA CsPbBr3 16 6.42 12.8 61.2 21.7 Dana et al. (2021)10 TA (SD) CsPbBr3 6 ± 0.7 ≥4 ∼−100 This work HS CsPbBr3 CsPbI3 5.9 ± 1.3 7.2 ± 1.9 ≈0.1 ≈0.3 10 ± 6 1 ± 9 * PDPL - Power dependent PL, CRYO - at cryogenic temperatures, TA - Transient absorption, SD - short delay, TRPL - Time resolved PL, SP - Single particle PL spectroscopy, 2DES - Two-dimensional electron spectroscopy, HS - Heralded spectroscopy. ** No ⟨N⟩quoted. Pump intensity varied from 4.5 to 54.7 µJ *** Estimated from cross section data. dispersed in anhydrous toluene",
+     "parameters": [
+      {
+       "name": "solvent",
+       "quote": "After the centrifuge, the supernatant was discarded and the particles were re- 1 Table S1: Measured values of the BX binding energy in cesium lead halide nanocrystals published in the literature. ⟨N⟩is the average number of photons absorbed per particle per pump pulse. Positive BX binding energy values correspond to an attractive exciton-exciton interaction. Reference Technique* Material Edge length (nm) ⟨N⟩ BX binding energy (meV) Wang et al. (2015)1 PDPL (CRYO) CsPbBr3 9 ** ≈50 Makarov et al. (2016)2 TA (SD) CsPbI3 11.2 ± 0.7 0.1 11 Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25 Aneesh et al. (2017)4 TA (SD) CsPbBr3 11 ≈0.04 ≈30 Yin et al. (2017)5 SP (CRYO) CsPbI3 ≈9 ≈0.05 14.26 ± 1.53 Yumoto et al. (2018)6 TA (SD) CsPbI3 6 0.1 ≈35 Ashner et al. (2019)7 TA CsPbBr3 6 8 10 0.3 −10 −3 −2 Huang et al. (2020)8 2DES (CRYO) CsPbBr3 9 < 0.1 25 −40 Shen et al. (2021)9 TA CsPbBr3 16 6.42 12.8 61.2 21.7 Dana et al. (2021)10 TA (SD) CsPbBr3 6 ± 0.7 ≥4 ∼−100 This work HS CsPbBr3 CsPbI3 5.9 ± 1.3 7.2 ± 1.9 ≈0.1 ≈0.3 10 ± 6 1 ± 9 * PDPL - Power dependent PL, CRYO - at cryogenic temperatures, TA - Transient absorption, SD - short delay, TRPL - Time resolved PL, SP - Single particle PL spectroscopy, 2DES - Two-dimensional electron spectroscopy, HS - Heralded spectroscopy. ** No ⟨N⟩quoted. Pump intensity varied from 4.5 to 54.7 µJ *** Estimated from cross section data. dispersed in anhydrous toluene",
+       "value_text": "anhydrous toluene"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "stir",
+     "description": "NH4BF4 saturated solution (1 mL) was then stirred with CsPbBr3 NCs precipitation in toluene (0.25mL) for 30 min",
+     "quote": "NH4BF4 saturated solution (1 mL) was then stirred with CsPbBr3 NCs precipitation in toluene (0.25mL) for 30 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "NH4BF4 saturated solution (1 mL) was then stirred with CsPbBr3 NCs precipitation in toluene (0.25mL) for 30 min",
+       "value_num": 30,
+       "unit": "min"
+      },
+      {
+       "name": "volume_NH4BF4_solution",
+       "quote": "NH4BF4 saturated solution (1 mL) was then stirred with CsPbBr3 NCs precipitation in toluene (0.25mL) for 30 min",
+       "value_num": 1,
+       "unit": "mL"
+      },
+      {
+       "name": "volume_NC_dispersion",
+       "quote": "NH4BF4 saturated solution (1 mL) was then stirred with CsPbBr3 NCs precipitation in toluene (0.25mL) for 30 min",
+       "value_num": 0.25,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "tem_br",
+     "technique": "TEM",
+     "instrument": null,
+     "result": "transmission electron micrograph of the CsPbBr3 NCs; edge size distribution 5.9 ± 1.3 nm",
+     "quote": "(a) Transmission electron micrograph of the CsPbBr3 NCs investigated in this work.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "uv_br",
+     "technique": "UV_vis",
+     "instrument": null,
+     "result": "ensemble absorption spectrum of the CsPbBr3 NCs",
+     "quote": "(c) Ensemble emission (solid lines) and absorption (dashed dotted lines) of the CsPbBr3 (green) and CsPbI3 (red) NCs.",
+     "settings": [],
+     "not_stated": [
+      "wavelength_range",
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "pl_br",
+     "technique": "PL",
+     "instrument": null,
+     "result": "ensemble emission peak at 2.44 eV",
+     "quote": "CsPbBr3 NCs, seen in Figure 1a, feature an edge size distribution of 5.9 ± 1.3 nm, 2.44 eV ensemble emission peak, and ∼100% quantum yield.",
+     "settings": [],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "qy_br",
+     "technique": "PL",
+     "instrument": "Quantaurus-QY, Hamamatsu (absolute photoluminescence quantum yield spectrometer)",
+     "result": "QY1X ∼100% for the CsPbBr3 NC ensemble",
+     "quote": "QY1X was measured, for an ensemble of NCs, by an abso- lute photoluminescence (PL) quantum yield spectrom- eter (Quantaurus-QY, Hamamatsu), and is ∼100% for CsPbBr3 and ∼42% for CsPbI3.",
+     "settings": [
+      {
+       "name": "quantum_yield_method",
+       "quote": "QY1X was measured, for an ensemble of NCs, by an abso- lute photoluminescence (PL) quantum yield spectrom- eter (Quantaurus-QY, Hamamatsu), and is ∼100% for CsPbBr3 and ∼42% for CsPbI3.",
+       "value_text": "absolute photoluminescence quantum yield spectrometer (Quantaurus-QY, Hamamatsu), for an ensemble of NCs"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "hs_br",
+     "technique": "single_particle_spectroscopy",
+     "instrument": "SPAD array spectrometer (Czerny–Turner spectrometer, 512-pixel linear SPAD array, 64 TDCs on FPGA) built around an Eclipse Ti-U inverted microscope (Nikon), oil immersion objective ×100, 1.3 NA; laser LDH-P-C-470B (PicoQuant)",
+     "result": "heralded spectroscopy of 60 single CsPbBr3 NCs: all attractive, εb = 10 ± 6 meV",
+     "quote": "In order to measure the BX binding energy in single NCs, we use heralded spectroscopy, a technique that utilizes the temporal correlation of photon detections to unambiguously resolve the BX and 1X emission spectra.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 470,
+       "unit": "nm"
+      },
+      {
+       "name": "excitation_repetition_rate",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 5,
+       "unit": "MHz"
+      },
+      {
+       "name": "laser_power",
+       "quote": "In our measurements, we maintain ⟨N⟩ ∼ 0.1",
+       "value_text": "⟨N⟩ ∼ 0.1"
+      },
+      {
+       "name": "detector",
+       "quote": "At the output image plane of the spectrometer, a 512 pixel on-chip linear SPAD array is placed.",
+       "value_text": "512 pixel on-chip linear SPAD array"
+      },
+      {
+       "name": "time_gate",
+       "quote": "For the first photon of the pair (BX) only detections be- tween −0.5 ns to 1 ns delay from the fluorescence tempo- ral peak were considered. Pairs were post-selected such that the second detection (1X) is detected within 0.5 ns to 30 ns following the first.",
+       "value_text": "BX photon: −0.5 ns to 1 ns from the fluorescence temporal peak; 1X photon: 0.5 ns to 30 ns following the first"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "single cesium lead halide perovskite nanocrystals at room temperature.",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "fitting",
+       "quote": "The emission peaks of the BX and 1X spectra are estimated from fits to Cauchy–Lorentz distributions (matching color lines), and the BX binding energy is estimated as the difference in peak positions.",
+       "value_text": "fits of the BX and 1X spectra to Cauchy–Lorentz distributions; εb = difference of peak positions"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Samples of isolated nanocrystals were prepared by spin coating a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene on a glass coverslip.",
+       "value_text": "spin coating a dilute solution of the NCs dispersed in a 3 wt % PMMA solution in toluene on a glass coverslip"
+      },
+      {
+       "name": "spectral_resolution",
+       "quote": "a spectral resolution of ∼4.5 ˚A. The detec- tor active pixel pitch is 52.4 µm, and as a result, the pixel pitch in wavelength is ∼1.5 nm. This corresponds to pixel pitch of ∼7 meV and ∼4 meV at the emission spectral ranges of CsPbBr3 and CsPbI3, respectively.",
+       "value_text": "spectral resolution of ∼4.5 ˚A; pixel pitch ∼1.5 nm, ∼7 meV (CsPbBr3) and ∼4 meV (CsPbI3)"
+      },
+      {
+       "name": "wavelength_range",
+       "quote": "In CsPbBr3 measurements, 30 pixels of the linear SPAD array were used, spanning the range of 2.32 meV to 2.53 meV photon energies.",
+       "value_text": "30 pixels of the linear SPAD array, spanning the range of 2.32 meV to 2.53 meV photon energies"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "g2_br",
+     "technique": "single_particle_spectroscopy",
+     "instrument": "SPAD array spectrometer (Czerny–Turner spectrometer, 512-pixel linear SPAD array, 64 TDCs on FPGA) built around an Eclipse Ti-U inverted microscope (Nikon), oil immersion objective ×100, 1.3 NA; laser LDH-P-C-470B (PicoQuant)",
+     "result": "g(2)(0) and time-gated ĝ(2)(0) of the same single-NC data sets",
+     "quote": "First, the normalized second order correlation of photon arrival times (g(2)(0)) was calculated by the method described in ref ().",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 470,
+       "unit": "nm"
+      },
+      {
+       "name": "excitation_repetition_rate",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 5,
+       "unit": "MHz"
+      },
+      {
+       "name": "laser_power",
+       "quote": "⟨N⟩CsPbBr3 = 0.13 ± 0.04",
+       "value_text": "⟨N⟩CsPbBr3 = 0.13 ± 0.04 (estimate of the supporting information, section S3)"
+      },
+      {
+       "name": "detector",
+       "quote": "At the output image plane of the spectrometer, a 512 pixel on-chip linear SPAD array is placed.",
+       "value_text": "512 pixel on-chip linear SPAD array"
+      },
+      {
+       "name": "time_gate",
+       "quote": "post-selecting only detections arriving within a time window of 1–30 ns after any excitation pulse",
+       "value_text": "gated ĝ(2)(0): detections within 1–30 ns after any excitation pulse; g(2)(0): all detections"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "single cesium lead halide perovskite nanocrystals at room temperature.",
+       "value_text": "room temperature"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size",
+     "quote": "CsPbBr3 NCs, seen in Figure 1a, feature an edge size distribution of 5.9 ± 1.3 nm, 2.44 eV ensemble emission peak, and ∼100% quantum yield.",
+     "measured_by": "tem_br",
+     "value_num": 5.9,
+     "unit": "nm"
+    },
+    {
+     "property": "size_dispersity",
+     "quote": "CsPbBr3 NCs, seen in Figure 1a, feature an edge size distribution of 5.9 ± 1.3 nm, 2.44 eV ensemble emission peak, and ∼100% quantum yield.",
+     "measured_by": "tem_br",
+     "value_num": 1.3,
+     "unit": "nm"
+    },
+    {
+     "property": "PL_emission_peak",
+     "quote": "CsPbBr3 NCs, seen in Figure 1a, feature an edge size distribution of 5.9 ± 1.3 nm, 2.44 eV ensemble emission peak, and ∼100% quantum yield.",
+     "measured_by": "pl_br",
+     "value_num": 2.44,
+     "unit": "eV"
+    },
+    {
+     "property": "quantum_yield",
+     "quote": "QY1X was measured, for an ensemble of NCs, by an abso- lute photoluminescence (PL) quantum yield spectrom- eter (Quantaurus-QY, Hamamatsu), and is ∼100% for CsPbBr3 and ∼42% for CsPbI3.",
+     "measured_by": "qy_br",
+     "value_num": 100,
+     "unit": "%"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "(c) Ensemble emission (solid lines) and absorption (dashed dotted lines) of the CsPbBr3 (green) and CsPbI3 (red) NCs.",
+     "measured_by": "uv_br",
+     "value_num": 480,
+     "unit": "nm",
+     "from_figure": "Fig. 1c"
+    },
+    {
+     "property": "biexciton_binding_energy_mean",
+     "quote": "All particles feature an attractive exciton−exciton interaction (εb > 0), and the distribution is centered around εb = 10 ± 6 meV.",
+     "measured_by": "hs_br",
+     "value_num": 10,
+     "unit": "meV"
+    },
+    {
+     "property": "biexciton_binding_energy_std",
+     "quote": "All particles feature an attractive exciton−exciton interaction (εb > 0), and the distribution is centered around εb = 10 ± 6 meV.",
+     "measured_by": "hs_br",
+     "value_num": 6,
+     "unit": "meV"
+    },
+    {
+     "property": "biexciton_binding_energy_mean_single_particle_error",
+     "quote": "obtain a mean single-particle εb error of ±3.1 meV",
+     "measured_by": "hs_br",
+     "value_num": 3.1,
+     "unit": "meV"
+    },
+    {
+     "property": "biexciton_binding_energy_sign",
+     "quote": "All particles feature an attractive exciton−exciton interaction (εb > 0), and the distribution is centered around εb = 10 ± 6 meV.",
+     "measured_by": "hs_br",
+     "value_text": "all particles attractive (εb > 0)"
+    },
+    {
+     "property": "statistic_number_of_NCs",
+     "quote": "Figure 3a shows the BX binding energy of 60 single CsPbBr3 NCs",
+     "measured_by": "hs_br",
+     "value_num": 60,
+     "unit": "NCs"
+    },
+    {
+     "property": "biexciton_binding_energy_single_NC_Fig2",
+     "quote": "For this specific NC, εb = 13.5 ± 1.8 meV",
+     "measured_by": "hs_br",
+     "value_num": 13.5,
+     "unit": "meV"
+    },
+    {
+     "property": "biexciton_binding_energy_single_NC_Fig2_error",
+     "quote": "For this specific NC, εb = 13.5 ± 1.8 meV",
+     "measured_by": "hs_br",
+     "value_num": 1.8,
+     "unit": "meV"
+    },
+    {
+     "property": "photon_antibunching_g2_single_NC_Fig2",
+     "quote": "For this specific NC, g(2)(0) = 0.175 ± 0.008 and ĝ(2)(0) = 0.012 ± 0.003.",
+     "measured_by": "g2_br",
+     "value_num": 0.175
+    },
+    {
+     "property": "photon_antibunching_g2_single_NC_Fig2_error",
+     "quote": "For this specific NC, g(2)(0) = 0.175 ± 0.008 and ĝ(2)(0) = 0.012 ± 0.003.",
+     "measured_by": "g2_br",
+     "value_num": 0.008
+    },
+    {
+     "property": "photon_antibunching_g2_gated_single_NC_Fig2",
+     "quote": "For this specific NC, g(2)(0) = 0.175 ± 0.008 and ĝ(2)(0) = 0.012 ± 0.003.",
+     "measured_by": "g2_br",
+     "value_num": 0.012
+    },
+    {
+     "property": "photon_antibunching_g2_gated_single_NC_Fig2_error",
+     "quote": "For this specific NC, g(2)(0) = 0.175 ± 0.008 and ĝ(2)(0) = 0.012 ± 0.003.",
+     "measured_by": "g2_br",
+     "value_num": 0.003
+    },
+    {
+     "property": "PL_lifetime_1X_mean",
+     "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
+     "measured_by": "hs_br",
+     "value_num": 5.9,
+     "unit": "ns"
+    },
+    {
+     "property": "PL_lifetime_1X_std",
+     "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
+     "measured_by": "hs_br",
+     "value_num": 1.6,
+     "unit": "ns"
+    },
+    {
+     "property": "PL_lifetime_BX_upper_bound_mean",
+     "quote": "the estimated upper bounds on BX PL decay lifetimes are 234±44 ns (CsPbBr3) and 306±50 ps (CsPbI3).",
+     "measured_by": "hs_br",
+     "value_num": 234,
+     "unit": "ns"
+    },
+    {
+     "property": "PL_lifetime_BX_upper_bound_std",
+     "quote": "the estimated upper bounds on BX PL decay lifetimes are 234±44 ns (CsPbBr3) and 306±50 ps (CsPbI3).",
+     "measured_by": "hs_br",
+     "value_num": 44,
+     "unit": "ns"
+    },
+    {
+     "property": "FWHM_ratio_BX_to_1X",
+     "quote": "the CsPbBr3 NCs BX spectrum is broader by a factor of 1.4 ± 0.4 compared to the 1X spectrum",
+     "measured_by": "hs_br",
+     "value_num": 1.4
+    },
+    {
+     "property": "FWHM_ratio_BX_to_1X_std",
+     "quote": "the CsPbBr3 NCs BX spectrum is broader by a factor of 1.4 ± 0.4 compared to the 1X spectrum",
+     "measured_by": "hs_br",
+     "value_num": 0.4
+    },
+    {
+     "property": "PL_lifetime_example_NC_tau1",
+     "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
+     "measured_by": "hs_br",
+     "value_num": 0.3,
+     "unit": "ns"
+    },
+    {
+     "property": "PL_lifetime_example_NC_tau2",
+     "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
+     "measured_by": "hs_br",
+     "value_num": 1.6,
+     "unit": "ns"
+    },
+    {
+     "property": "PL_lifetime_example_NC_tau3_1X",
+     "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
+     "measured_by": "hs_br",
+     "value_num": 6.6,
+     "unit": "ns"
+    },
+    {
+     "property": "PL_lifetime_example_NC_tau4",
+     "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
+     "measured_by": "hs_br",
+     "value_num": 36.6,
+     "unit": "ns"
+    },
+    {
+     "property": "PL_lifetime_example_NC_amplitude1",
+     "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
+     "measured_by": "hs_br",
+     "value_num": 0.69
+    },
+    {
+     "property": "PL_lifetime_example_NC_amplitude2",
+     "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
+     "measured_by": "hs_br",
+     "value_num": 0.16
+    },
+    {
+     "property": "PL_lifetime_example_NC_amplitude3",
+     "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
+     "measured_by": "hs_br",
+     "value_num": 0.2
+    },
+    {
+     "property": "PL_lifetime_example_NC_amplitude4",
+     "quote": "τ1,2,3,4 ≈ 0.3, 1.6, 6.6, 36.6 ns and a1,2,3,4 ≈ 0.69, 0.16, 0.20, 0.01.",
+     "measured_by": "hs_br",
+     "value_num": 0.01
+    },
+    {
+     "property": "PL_lifetime_BX_upper_bound_example_NC",
+     "quote": "For this specific NC the result is τ ≈190 ps.",
+     "measured_by": "hs_br",
+     "value_num": 190,
+     "unit": "ps"
+    },
+    {
+     "property": "statistic_cc_coeff_eb_vs_1X_emission_peak",
+     "quote": "(b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation.",
+     "measured_by": "hs_br",
+     "value_num": 0.74,
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "statistic_p_value_eb_vs_1X_emission_peak",
+     "quote": "(b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation.",
+     "measured_by": "hs_br",
+     "value_num": 2e-11,
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "statistic_cc_coeff_eb_vs_g2",
+     "quote": "(c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation.",
+     "measured_by": "hs_br",
+     "value_num": -0.62,
+     "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "statistic_p_value_eb_vs_g2",
+     "quote": "(c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation.",
+     "measured_by": "hs_br",
+     "value_num": 1e-07,
+     "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_0_to_5_meV",
+     "quote": "(a) BX binding energy histogram for 60 NCs.",
+     "measured_by": "hs_br",
+     "value_num": 10,
+     "unit": "NCs",
+     "from_figure": "Fig. 3a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_5_to_10_meV",
+     "quote": "(a) BX binding energy histogram for 60 NCs.",
+     "measured_by": "hs_br",
+     "value_num": 21,
+     "unit": "NCs",
+     "from_figure": "Fig. 3a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_10_to_15_meV",
+     "quote": "(a) BX binding energy histogram for 60 NCs.",
+     "measured_by": "hs_br",
+     "value_num": 18,
+     "unit": "NCs",
+     "from_figure": "Fig. 3a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_15_to_20_meV",
+     "quote": "(a) BX binding energy histogram for 60 NCs.",
+     "measured_by": "hs_br",
+     "value_num": 9,
+     "unit": "NCs",
+     "from_figure": "Fig. 3a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_20_to_25_meV",
+     "quote": "(a) BX binding energy histogram for 60 NCs.",
+     "measured_by": "hs_br",
+     "value_num": 1,
+     "unit": "NCs",
+     "from_figure": "Fig. 3a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_25_to_30_meV",
+     "quote": "(a) BX binding energy histogram for 60 NCs.",
+     "measured_by": "hs_br",
+     "value_num": 1,
+     "unit": "NCs",
+     "from_figure": "Fig. 3a"
+    }
+   ],
+   "missing_fields": [
+    "isolation and purification of the surface-treated NCs after the 30 min stirring",
+    "concentration of the CsPbBr3 NC dispersion in toluene",
+    "crystal phase and shape of the NCs"
+   ]
+  },
+  {
+   "label": "CsPbI3-NC",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "hot_injection"
+   ],
+   "method": "hot-injection synthesis of CsPbI3 nanocrystals in octadecene with TDPA and TOPO ligands",
+   "material": {
+    "name": "CsPbI3 perovskite nanocrystals",
+    "formula": "CsPbI3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "nanocrystals"
+   },
+   "quote": "CsPbI3 NCs were synthesized according to the recipe reported in ref () with minor modifications.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "octadecene",
+     "formula": "C18H36",
+     "role": "solvent",
+     "quote": "ODE (5 mL), PbI2 (86.7 mg), OLA (1 mL, anhydrous), TDPA (120 mg) and TOPO (1.47 mg) were mixed in a 50 mL 3-neck flask",
+     "amount": 5,
+     "unit": "mL",
+     "purity": "90%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "(ODE, 90%, Sigma-Aldrich)"
+    },
+    {
+     "name": "lead iodide",
+     "formula": "PbI2",
+     "role": "precursor",
+     "quote": "ODE (5 mL), PbI2 (86.7 mg), OLA (1 mL, anhydrous), TDPA (120 mg) and TOPO (1.47 mg) were mixed in a 50 mL 3-neck flask",
+     "amount": 86.7,
+     "unit": "mg",
+     "purity": "99%",
+     "supplier": "Aldrich",
+     "supplier_quote": "PbI2 (99%, Aldrich)"
+    },
+    {
+     "name": "oleylamine (anhydrous)",
+     "formula": "C18H37N",
+     "role": "ligand",
+     "quote": "ODE (5 mL), PbI2 (86.7 mg), OLA (1 mL, anhydrous), TDPA (120 mg) and TOPO (1.47 mg) were mixed in a 50 mL 3-neck flask",
+     "amount": 1,
+     "unit": "mL",
+     "purity": "70%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "oleylamine (OLA, 70%, Sigma- Aldrich)"
+    },
+    {
+     "name": "tetradecylphosphonic acid",
+     "formula": "C14H31O3P",
+     "role": "ligand",
+     "quote": "ODE (5 mL), PbI2 (86.7 mg), OLA (1 mL, anhydrous), TDPA (120 mg) and TOPO (1.47 mg) were mixed in a 50 mL 3-neck flask",
+     "amount": 120,
+     "unit": "mg",
+     "purity": "99%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "(TDPA, 99%, Sigma-Aldrich)"
+    },
+    {
+     "name": "trioctylphosphine oxide",
+     "formula": "C24H51OP",
+     "role": "ligand",
+     "quote": "ODE (5 mL), PbI2 (86.7 mg), OLA (1 mL, anhydrous), TDPA (120 mg) and TOPO (1.47 mg) were mixed in a 50 mL 3-neck flask",
+     "amount": 1.47,
+     "unit": "mg",
+     "purity": "90%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "(TOPO, 90%, Sigma-Aldrich)"
+    },
+    {
+     "name": "Cs-oleate",
+     "formula": null,
+     "role": "intermediate",
+     "quote": "Then Cs-oleate solution (0.4 mL) was quickly injected",
+     "amount": 0.4,
+     "unit": "mL"
+    },
+    {
+     "name": "hexane (anhydrous)",
+     "formula": "C6H14",
+     "role": "wash",
+     "quote": "precipitates were washed in anhy- drous hexane",
+     "purity": "99.5%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "hexane (99.5%, Sigma-Aldrich, anhydrous)",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "ODE (5 mL), PbI2 (86.7 mg), OLA (1 mL, anhydrous), TDPA (120 mg) and TOPO (1.47 mg) were mixed in a 50 mL 3-neck flask",
+     "quote": "ODE (5 mL), PbI2 (86.7 mg), OLA (1 mL, anhydrous), TDPA (120 mg) and TOPO (1.47 mg) were mixed in a 50 mL 3-neck flask",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "3-neck flask",
+       "detail": "50 mL",
+       "quote": "ODE (5 mL), PbI2 (86.7 mg), OLA (1 mL, anhydrous), TDPA (120 mg) and TOPO (1.47 mg) were mixed in a 50 mL 3-neck flask"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "degas",
+     "description": "dried under vacuum for 1 h at 120 °C.",
+     "quote": "dried under vacuum for 1 h at 120 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried under vacuum for 1 h at 120 °C.",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "dried under vacuum for 1 h at 120 °C.",
+       "value_text": "vacuum"
+      },
+      {
+       "name": "duration",
+       "quote": "dried under vacuum for 1 h at 120 °C.",
+       "value_num": 1,
+       "unit": "h"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "The temperature was raised to 280 °C and kept for 10 min under an Ar atmosphere.",
+     "quote": "The temperature was raised to 280 °C and kept for 10 min under an Ar atmosphere.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The temperature was raised to 280 °C and kept for 10 min under an Ar atmosphere.",
+       "value_num": 280,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The temperature was raised to 280 °C and kept for 10 min under an Ar atmosphere.",
+       "value_num": 10,
+       "unit": "min"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The temperature was raised to 280 °C and kept for 10 min under an Ar atmosphere.",
+       "value_text": "Ar atmosphere"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "inject",
+     "description": "Then Cs-oleate solution (0.4 mL) was quickly injected",
+     "quote": "Then Cs-oleate solution (0.4 mL) was quickly injected",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "Then Cs-oleate solution (0.4 mL) was quickly injected",
+       "value_text": "quickly injected"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "react",
+     "description": "after 15 s, the reaction mixture was cooled by an ice-water bath.",
+     "quote": "after 15 s, the reaction mixture was cooled by an ice-water bath.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "after 15 s, the reaction mixture was cooled by an ice-water bath.",
+       "value_num": 15,
+       "unit": "s"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "cool",
+     "description": "after 15 s, the reaction mixture was cooled by an ice-water bath.",
+     "quote": "after 15 s, the reaction mixture was cooled by an ice-water bath.",
+     "parameters": [
+      {
+       "name": "cooling",
+       "quote": "after 15 s, the reaction mixture was cooled by an ice-water bath.",
+       "value_text": "ice-water bath"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "trifuged at 6000 rpm for 5 min.",
+     "quote": "trifuged at 6000 rpm for 5 min.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "trifuged at 6000 rpm for 5 min.",
+       "value_num": 6000,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "trifuged at 6000 rpm for 5 min.",
+       "value_num": 5,
+       "unit": "min"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "wash",
+     "description": "precipitates were washed in anhy- drous hexane",
+     "quote": "precipitates were washed in anhy- drous hexane",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "precipitates were washed in anhy- drous hexane",
+       "value_text": "anhydrous hexane"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "centrifuge",
+     "description": "following additional centrifuge procedure (6000 rpm for 5 min).",
+     "quote": "following additional centrifuge procedure (6000 rpm for 5 min).",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "following additional centrifuge procedure (6000 rpm for 5 min).",
+       "value_num": 6000,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "following additional centrifuge procedure (6000 rpm for 5 min).",
+       "value_num": 5,
+       "unit": "min"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "tem_i",
+     "technique": "TEM",
+     "instrument": null,
+     "result": "transmission electron micrograph of the CsPbI3 NCs; two size populations",
+     "quote": "(b) Transmission electron micrograph of the CsPbI3 NCs investigated in this work.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "uv_i",
+     "technique": "UV_vis",
+     "instrument": null,
+     "result": "ensemble absorption spectrum of the CsPbI3 NCs",
+     "quote": "(c) Ensemble emission (solid lines) and absorption (dashed dotted lines) of the CsPbBr3 (green) and CsPbI3 (red) NCs.",
+     "settings": [],
+     "not_stated": [
+      "wavelength_range",
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "pl_i",
+     "technique": "PL",
+     "instrument": null,
+     "result": "ensemble emission peak at 1.84 eV",
+     "quote": "The ensemble emission peak is at 1.84 eV, and the quantum yield is ∼42%.",
+     "settings": [],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "qy_i",
+     "technique": "PL",
+     "instrument": "Quantaurus-QY, Hamamatsu (absolute photoluminescence quantum yield spectrometer)",
+     "result": "QY1X ∼42% for the CsPbI3 NC ensemble",
+     "quote": "QY1X was measured, for an ensemble of NCs, by an abso- lute photoluminescence (PL) quantum yield spectrom- eter (Quantaurus-QY, Hamamatsu), and is ∼100% for CsPbBr3 and ∼42% for CsPbI3.",
+     "settings": [
+      {
+       "name": "quantum_yield_method",
+       "quote": "QY1X was measured, for an ensemble of NCs, by an abso- lute photoluminescence (PL) quantum yield spectrom- eter (Quantaurus-QY, Hamamatsu), and is ∼100% for CsPbBr3 and ∼42% for CsPbI3.",
+       "value_text": "absolute photoluminescence quantum yield spectrometer (Quantaurus-QY, Hamamatsu), for an ensemble of NCs"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "hs_i",
+     "technique": "single_particle_spectroscopy",
+     "instrument": "SPAD array spectrometer (Czerny–Turner spectrometer, 512-pixel linear SPAD array, 64 TDCs on FPGA) built around an Eclipse Ti-U inverted microscope (Nikon), oil immersion objective ×100, 1.3 NA; laser LDH-P-C-470B (PicoQuant)",
+     "result": "heralded spectroscopy of 20 single CsPbI3 NCs: εb = 1 ± 9 meV, weakly attractive or weakly repulsive",
+     "quote": "CsPbI3 NCs BX binding energies were measured by the same technique (Figure 4).",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 470,
+       "unit": "nm"
+      },
+      {
+       "name": "excitation_repetition_rate",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 5,
+       "unit": "MHz"
+      },
+      {
+       "name": "laser_power",
+       "quote": "⟨N⟩ ∼ 0.3",
+       "value_text": "⟨N⟩ ∼ 0.3"
+      },
+      {
+       "name": "detector",
+       "quote": "At the output image plane of the spectrometer, a 512 pixel on-chip linear SPAD array is placed.",
+       "value_text": "512 pixel on-chip linear SPAD array"
+      },
+      {
+       "name": "time_gate",
+       "quote": "For the first photon of the pair (BX) only detections be- tween −0.5 ns to 1 ns delay from the fluorescence tempo- ral peak were considered. Pairs were post-selected such that the second detection (1X) is detected within 0.5 ns to 30 ns following the first.",
+       "value_text": "BX photon: −0.5 ns to 1 ns from the fluorescence temporal peak; 1X photon: 0.5 ns to 30 ns following the first"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "single cesium lead halide perovskite nanocrystals at room temperature.",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "fitting",
+       "quote": "The emission peaks of the BX and 1X spectra are estimated from fits to Cauchy–Lorentz distributions (matching color lines), and the BX binding energy is estimated as the difference in peak positions.",
+       "value_text": "fits of the BX and 1X spectra to Cauchy–Lorentz distributions; εb = difference of peak positions"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Samples of isolated nanocrystals were prepared by spin coating a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene on a glass coverslip.",
+       "value_text": "spin coating a dilute solution of the NCs dispersed in a 3 wt % PMMA solution in toluene on a glass coverslip"
+      },
+      {
+       "name": "spectral_resolution",
+       "quote": "a spectral resolution of ∼4.5 ˚A. The detec- tor active pixel pitch is 52.4 µm, and as a result, the pixel pitch in wavelength is ∼1.5 nm. This corresponds to pixel pitch of ∼7 meV and ∼4 meV at the emission spectral ranges of CsPbBr3 and CsPbI3, respectively.",
+       "value_text": "spectral resolution of ∼4.5 ˚A; pixel pitch ∼1.5 nm, ∼7 meV (CsPbBr3) and ∼4 meV (CsPbI3)"
+      },
+      {
+       "name": "wavelength_range",
+       "quote": "For CsPbI3 measurements, 43 pixels of the array were used, spanning the range of 1.76 meV to 1.93 meV photon energies.",
+       "value_text": "43 pixels of the array, spanning the range of 1.76 meV to 1.93 meV photon energies (one malfunctioning pixel omitted)"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "g2_i",
+     "technique": "single_particle_spectroscopy",
+     "instrument": "SPAD array spectrometer (Czerny–Turner spectrometer, 512-pixel linear SPAD array, 64 TDCs on FPGA) built around an Eclipse Ti-U inverted microscope (Nikon), oil immersion objective ×100, 1.3 NA; laser LDH-P-C-470B (PicoQuant)",
+     "result": "g(2)(0) and time-gated ĝ(2)(0) of the CsPbI3 single-NC data sets",
+     "quote": "First, the normalized second order correlation of photon arrival times (g(2)(0)) was calculated by the method described in ref ().",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 470,
+       "unit": "nm"
+      },
+      {
+       "name": "excitation_repetition_rate",
+       "quote": "pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant)",
+       "value_num": 5,
+       "unit": "MHz"
+      },
+      {
+       "name": "laser_power",
+       "quote": "⟨N⟩CsPbBr3 = 0.13 ± 0.04 and ⟨N⟩CsPbI3 = 0.28 ± 0.18",
+       "value_text": "⟨N⟩CsPbI3 = 0.28 ± 0.18 (estimate of the supporting information, section S3)"
+      },
+      {
+       "name": "detector",
+       "quote": "At the output image plane of the spectrometer, a 512 pixel on-chip linear SPAD array is placed.",
+       "value_text": "512 pixel on-chip linear SPAD array"
+      },
+      {
+       "name": "time_gate",
+       "quote": "post-selecting only detections arriving within a time window of 1–30 ns after any excitation pulse",
+       "value_text": "gated ĝ(2)(0): detections within 1–30 ns after any excitation pulse; g(2)(0): all detections"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "single cesium lead halide perovskite nanocrystals at room temperature.",
+       "value_text": "room temperature"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size_small_population",
+     "quote": "For CsPbI3, seen in Figure 1b, two size populations are visible. Smaller NCs (∼80% of the particles) with an edge size distribution of 7.2 ± 1.9 nm, and larger NCs with an edge size distribution of 15.4 ± 3.3 nm.",
+     "measured_by": "tem_i",
+     "value_num": 7.2,
+     "unit": "nm"
+    },
+    {
+     "property": "size_dispersity_small_population",
+     "quote": "For CsPbI3, seen in Figure 1b, two size populations are visible. Smaller NCs (∼80% of the particles) with an edge size distribution of 7.2 ± 1.9 nm, and larger NCs with an edge size distribution of 15.4 ± 3.3 nm.",
+     "measured_by": "tem_i",
+     "value_num": 1.9,
+     "unit": "nm"
+    },
+    {
+     "property": "particle_size_large_population",
+     "quote": "For CsPbI3, seen in Figure 1b, two size populations are visible. Smaller NCs (∼80% of the particles) with an edge size distribution of 7.2 ± 1.9 nm, and larger NCs with an edge size distribution of 15.4 ± 3.3 nm.",
+     "measured_by": "tem_i",
+     "value_num": 15.4,
+     "unit": "nm"
+    },
+    {
+     "property": "size_dispersity_large_population",
+     "quote": "For CsPbI3, seen in Figure 1b, two size populations are visible. Smaller NCs (∼80% of the particles) with an edge size distribution of 7.2 ± 1.9 nm, and larger NCs with an edge size distribution of 15.4 ± 3.3 nm.",
+     "measured_by": "tem_i",
+     "value_num": 3.3,
+     "unit": "nm"
+    },
+    {
+     "property": "morphology",
+     "quote": "For CsPbI3, seen in Figure 1b, two size populations are visible. Smaller NCs (∼80% of the particles) with an edge size distribution of 7.2 ± 1.9 nm, and larger NCs with an edge size distribution of 15.4 ± 3.3 nm.",
+     "measured_by": "tem_i",
+     "value_text": "two size populations are visible; smaller NCs ∼80% of the particles"
+    },
+    {
+     "property": "PL_emission_peak",
+     "quote": "The ensemble emission peak is at 1.84 eV, and the quantum yield is ∼42%.",
+     "measured_by": "pl_i",
+     "value_num": 1.84,
+     "unit": "eV"
+    },
+    {
+     "property": "quantum_yield",
+     "quote": "QY1X was measured, for an ensemble of NCs, by an abso- lute photoluminescence (PL) quantum yield spectrom- eter (Quantaurus-QY, Hamamatsu), and is ∼100% for CsPbBr3 and ∼42% for CsPbI3.",
+     "measured_by": "qy_i",
+     "value_num": 42,
+     "unit": "%"
+    },
+    {
+     "property": "biexciton_binding_energy_mean",
+     "quote": "Results feature εb values distributed around zero (εb = 1 ± 9 meV, ⟨N⟩ ∼ 0.3, mean single-particle εb error: ±4.8 meV).",
+     "measured_by": "hs_i",
+     "value_num": 1,
+     "unit": "meV"
+    },
+    {
+     "property": "biexciton_binding_energy_std",
+     "quote": "Results feature εb values distributed around zero (εb = 1 ± 9 meV, ⟨N⟩ ∼ 0.3, mean single-particle εb error: ±4.8 meV).",
+     "measured_by": "hs_i",
+     "value_num": 9,
+     "unit": "meV"
+    },
+    {
+     "property": "biexciton_binding_energy_mean_single_particle_error",
+     "quote": "Results feature εb values distributed around zero (εb = 1 ± 9 meV, ⟨N⟩ ∼ 0.3, mean single-particle εb error: ±4.8 meV).",
+     "measured_by": "hs_i",
+     "value_num": 4.8,
+     "unit": "meV"
+    },
+    {
+     "property": "biexciton_binding_energy_sign",
+     "quote": "Interestingly, CsPbI3 NCs showed either weakly attractive or weakly repulsive exciton−exciton interaction with an average around zero binding energy (εb = 1 ± 9 meV).",
+     "measured_by": "hs_i",
+     "value_text": "either weakly attractive or weakly repulsive exciton−exciton interaction"
+    },
+    {
+     "property": "statistic_number_of_NCs",
+     "quote": "(a) BX binding energy histogram for 20 NCs.",
+     "measured_by": "hs_i",
+     "value_num": 20,
+     "unit": "NCs"
+    },
+    {
+     "property": "PL_emission_peak_1X_sign_change_threshold",
+     "quote": "1X emission peak lower (higher) than 1.845 eV or g(2)(0) higher (lower) than 0.25",
+     "measured_by": "hs_i",
+     "value_num": 1.845,
+     "unit": "eV"
+    },
+    {
+     "property": "photon_antibunching_g2_sign_change_threshold",
+     "quote": "1X emission peak lower (higher) than 1.845 eV or g(2)(0) higher (lower) than 0.25",
+     "measured_by": "hs_i",
+     "value_num": 0.25
+    },
+    {
+     "property": "PL_lifetime_1X_mean",
+     "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
+     "measured_by": "hs_i",
+     "value_num": 8.1,
+     "unit": "ns"
+    },
+    {
+     "property": "PL_lifetime_1X_std",
+     "quote": "1X PL decay lifetimes are 5.9 ± 1.6 ns (CsPbBr3) and 8.1 ± 1.4 ns (CsPbI3).",
+     "measured_by": "hs_i",
+     "value_num": 1.4,
+     "unit": "ns"
+    },
+    {
+     "property": "PL_lifetime_BX_upper_bound_mean",
+     "quote": "the estimated upper bounds on BX PL decay lifetimes are 234±44 ns (CsPbBr3) and 306±50 ps (CsPbI3).",
+     "measured_by": "hs_i",
+     "value_num": 306,
+     "unit": "ps"
+    },
+    {
+     "property": "PL_lifetime_BX_upper_bound_std",
+     "quote": "the estimated upper bounds on BX PL decay lifetimes are 234±44 ns (CsPbBr3) and 306±50 ps (CsPbI3).",
+     "measured_by": "hs_i",
+     "value_num": 50,
+     "unit": "ps"
+    },
+    {
+     "property": "FWHM_ratio_BX_to_1X",
+     "quote": "The BX to 1X spectrum broadening ratio dis- tribution for CsPbI3 is 1.2 ± 0.7.",
+     "measured_by": "hs_i",
+     "value_num": 1.2
+    },
+    {
+     "property": "FWHM_ratio_BX_to_1X_std",
+     "quote": "The BX to 1X spectrum broadening ratio dis- tribution for CsPbI3 is 1.2 ± 0.7.",
+     "measured_by": "hs_i",
+     "value_num": 0.7
+    },
+    {
+     "property": "statistic_cc_coeff_eb_vs_1X_emission_peak",
+     "quote": "(b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation.",
+     "measured_by": "hs_i",
+     "value_num": 0.48,
+     "from_figure": "Fig. 4b"
+    },
+    {
+     "property": "statistic_p_value_eb_vs_1X_emission_peak",
+     "quote": "(b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation.",
+     "measured_by": "hs_i",
+     "value_num": 0.03,
+     "from_figure": "Fig. 4b"
+    },
+    {
+     "property": "statistic_cc_coeff_eb_vs_g2",
+     "quote": "(c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation.",
+     "measured_by": "hs_i",
+     "value_num": -0.52,
+     "from_figure": "Fig. 4c"
+    },
+    {
+     "property": "statistic_p_value_eb_vs_g2",
+     "quote": "(c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation.",
+     "measured_by": "hs_i",
+     "value_num": 0.02,
+     "from_figure": "Fig. 4c"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_minus20_to_minus15_meV",
+     "quote": "(a) BX binding energy histogram for 20 NCs.",
+     "measured_by": "hs_i",
+     "value_num": 1,
+     "unit": "NCs",
+     "from_figure": "Fig. 4a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_minus15_to_minus10_meV",
+     "quote": "(a) BX binding energy histogram for 20 NCs.",
+     "measured_by": "hs_i",
+     "value_num": 1,
+     "unit": "NCs",
+     "from_figure": "Fig. 4a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_minus10_to_minus5_meV",
+     "quote": "(a) BX binding energy histogram for 20 NCs.",
+     "measured_by": "hs_i",
+     "value_num": 2,
+     "unit": "NCs",
+     "from_figure": "Fig. 4a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_minus5_to_0_meV",
+     "quote": "(a) BX binding energy histogram for 20 NCs.",
+     "measured_by": "hs_i",
+     "value_num": 6,
+     "unit": "NCs",
+     "from_figure": "Fig. 4a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_0_to_5_meV",
+     "quote": "(a) BX binding energy histogram for 20 NCs.",
+     "measured_by": "hs_i",
+     "value_num": 3,
+     "unit": "NCs",
+     "from_figure": "Fig. 4a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_5_to_10_meV",
+     "quote": "(a) BX binding energy histogram for 20 NCs.",
+     "measured_by": "hs_i",
+     "value_num": 4,
+     "unit": "NCs",
+     "from_figure": "Fig. 4a"
+    },
+    {
+     "property": "biexciton_binding_energy_histogram_count_10_to_15_meV",
+     "quote": "(a) BX binding energy histogram for 20 NCs.",
+     "measured_by": "hs_i",
+     "value_num": 3,
+     "unit": "NCs",
+     "from_figure": "Fig. 4a"
+    }
+   ],
+   "missing_fields": [
+    "concentration and dispersion medium of the final CsPbI3 NC solution",
+    "crystal phase of the NCs"
+   ]
+  },
+  {
+   "label": "Cs-oleate",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "intermediate",
+   "methods": [
+    "precursor_preparation"
+   ],
+   "method": "preparation of the cesium oleate precursor solution in octadecene",
+   "material": {
+    "name": "cesium oleate solution in octadecene",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask, heated at 120 °C under vacuum for one hour.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "cesium carbonate",
+     "formula": "Cs2CO3",
+     "role": "precursor",
+     "quote": "Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask",
+     "amount": 101.7,
+     "unit": "mg",
+     "purity": "99.995%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cs2CO3 (99.995%, Sigma-Aldrich)"
+    },
+    {
+     "name": "oleic acid",
+     "formula": "C18H34O2",
+     "role": "ligand",
+     "quote": "Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask",
+     "amount": 312.5,
+     "unit": "µL",
+     "purity": "90%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "oleic acid (OA, 90%, Sigma-Aldrich)"
+    },
+    {
+     "name": "octadecene",
+     "formula": "C18H36",
+     "role": "solvent",
+     "quote": "Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask",
+     "amount": 5,
+     "unit": "mL",
+     "purity": "90%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "(ODE, 90%, Sigma-Aldrich)"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask",
+     "quote": "Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "round bottom flask",
+       "detail": "50 mL",
+       "quote": "Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "degas",
+     "description": "heated at 120 °C under vacuum for one hour",
+     "quote": "heated at 120 °C under vacuum for one hour",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "heated at 120 °C under vacuum for one hour",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "heated at 120 °C under vacuum for one hour",
+       "value_text": "vacuum"
+      },
+      {
+       "name": "duration",
+       "quote": "heated at 120 °C under vacuum for one hour",
+       "value_num": 1,
+       "unit": "h"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Then the temperature was raised to 160 °C and the mixture was kept for 10 min under Ar atmo- sphere.",
+     "quote": "Then the temperature was raised to 160 °C and the mixture was kept for 10 min under Ar atmo- sphere.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Then the temperature was raised to 160 °C and the mixture was kept for 10 min under Ar atmo- sphere.",
+       "value_num": 160,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Then the temperature was raised to 160 °C and the mixture was kept for 10 min under Ar atmo- sphere.",
+       "value_num": 10,
+       "unit": "min"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "Then the temperature was raised to 160 °C and the mixture was kept for 10 min under Ar atmo- sphere.",
+       "value_text": "Ar atmosphere"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "store",
+     "description": "For the injection procedure, Cs-oleate was kept at 120 °C under Ar.",
+     "quote": "For the injection procedure, Cs-oleate was kept at 120 °C under Ar.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "For the injection procedure, Cs-oleate was kept at 120 °C under Ar.",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "For the injection procedure, Cs-oleate was kept at 120 °C under Ar.",
+       "value_text": "Ar"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [],
+   "missing_fields": [
+    "concentration of the resulting Cs-oleate solution"
+   ]
+  },
+  {
+   "label": "NH4BF4-sat-sol",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "intermediate",
+   "methods": [
+    "precursor_preparation"
+   ],
+   "method": "preparation of a saturated NH4BF4 solution in toluene",
+   "material": {
+    "name": "saturated NH4BF4 toluene solution",
+    "formula": "NH4BF4",
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Preparation of saturated NH4BF4 salt solution: toluene (2 mL, anhydrous) and NH4BF4 (10 mg) were stirred for 10 min, sonicated for 10 min and then centrifuged at 6000 rpm for 5 min.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "toluene (anhydrous)",
+     "formula": "C7H8",
+     "role": "solvent",
+     "quote": "toluene (2 mL, anhydrous) and NH4BF4 (10 mg) were stirred for 10 min",
+     "amount": 2,
+     "unit": "mL",
+     "purity": "99.8%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "toluene (99.8%, Sigma-Aldrich, anhydrous)"
+    },
+    {
+     "name": "ammonium tetrafluoroborate",
+     "formula": "NH4BF4",
+     "role": "precursor",
+     "quote": "toluene (2 mL, anhydrous) and NH4BF4 (10 mg) were stirred for 10 min",
+     "amount": 10,
+     "unit": "mg",
+     "purity": "99.999%",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "NH4BF4, 99.999%, Sigma- Aldrich)"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "stir",
+     "description": "toluene (2 mL, anhydrous) and NH4BF4 (10 mg) were stirred for 10 min",
+     "quote": "toluene (2 mL, anhydrous) and NH4BF4 (10 mg) were stirred for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "toluene (2 mL, anhydrous) and NH4BF4 (10 mg) were stirred for 10 min",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "sonicated for 10 min",
+     "quote": "sonicated for 10 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "sonicated for 10 min",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "centrifuge",
+     "description": "centrifuged at 6000 rpm for 5 min.",
+     "quote": "centrifuged at 6000 rpm for 5 min.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "centrifuged at 6000 rpm for 5 min.",
+       "value_num": 6000,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "centrifuged at 6000 rpm for 5 min.",
+       "value_num": 5,
+       "unit": "min"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "collect",
+     "description": "NH4BF4 salt precipitation was discarded, resulting in a saturated solution.",
+     "quote": "NH4BF4 salt precipitation was discarded, resulting in a saturated solution.",
+     "parameters": [],
+     "equipment": []
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [],
+   "missing_fields": []
+  },
+  {
+   "label": "CsPbBr3-NC-film",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "device",
+   "methods": [
+    "solution_film_deposition"
+   ],
+   "method": "spin coating of a dilute NC/PMMA/toluene solution on a glass coverslip (sample for single-particle measurements)",
+   "material": {
+    "name": "isolated CsPbBr3 NCs in a PMMA film on a glass coverslip",
+    "formula": "CsPbBr3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "isolated nanocrystals in a polymer film"
+   },
+   "quote": "Samples of isolated nanocrystals were prepared by spin coating a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene on a glass coverslip.",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "CsPbBr3-NC",
+     "formula": "CsPbBr3",
+     "role": "intermediate",
+     "quote": "a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "poly(methyl methacrylate)",
+     "formula": "(C5H8O2)n",
+     "role": "polymer",
+     "quote": "a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene",
+     "amount": 3,
+     "unit": "wt %",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "toluene",
+     "formula": "C7H8",
+     "role": "solvent",
+     "quote": "a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "glass coverslip",
+     "formula": null,
+     "role": "substrate",
+     "quote": "Samples of isolated nanocrystals were prepared by spin coating a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene on a glass coverslip."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "disperse",
+     "description": "a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene",
+     "quote": "a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene",
+     "parameters": [
+      {
+       "name": "concentration",
+       "quote": "a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene",
+       "value_num": 3,
+       "unit": "wt %"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "spin_coat",
+     "description": "Samples of isolated nanocrystals were prepared by spin coating a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene on a glass coverslip.",
+     "quote": "Samples of isolated nanocrystals were prepared by spin coating a dilute solution of the NCs dispersed in a 3 wt % solution of poly(methyl methacrylate) (PMMA) in toluene on a glass coverslip.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "spin_speed",
+      "duration",
+      "volume"
+     ]
+    }
+   ],
+   "characterizations": [],
+   "outcomes": [],
+   "missing_fields": [
+    "NC concentration in the dilute solution",
+    "film thickness"
+   ]
+  },
+  {
+   "label": "CsPbI3-NC-film",
+   "parent": "CsPbBr3-NC-film",
+   "material": {
+    "name": "isolated CsPbI3 NCs in a PMMA film on a glass coverslip",
+    "formula": "CsPbI3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "isolated nanocrystals in a polymer film"
+   },
+   "quote": "CsPbI3 NCs BX binding energies were measured by the same technique (Figure 4).",
+   "variations": [
+    {
+     "parameter": "CsPbBr3-NC",
+     "value_text": "replaced by CsPbI3-NC",
+     "parent_value": "CsPbBr3-NC",
+     "quote": "CsPbI3 NCs BX binding energies were measured by the same technique (Figure 4)."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "CsPbI3-NC",
+     "formula": "CsPbI3",
+     "role": "intermediate",
+     "quote": "CsPbI3 NCs BX binding energies were measured by the same technique (Figure 4).",
+     "not_stated": [
+      "amount"
+     ]
+    }
+   ],
+   "outcomes": []
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "CsPbBr3 NCs, edge length 9 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "power-dependent PL at cryogenic temperature; ⟨N⟩ not quoted (pump intensity 4.5 to 54.7 µJ)",
+   "quote": "Wang et al. (2015)1 PDPL (CRYO) CsPbBr3 9 ** ≈50",
+   "value_num": 50
+  },
+  {
+   "material": "CsPbI3 NCs, edge length 11.2 ± 0.7 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption, short delay; ⟨N⟩ = 0.1",
+   "quote": "Makarov et al. (2016)2 TA (SD) CsPbI3 11.2 ± 0.7 0.1 11",
+   "value_num": 11,
+   "ref_id": "ref13"
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length ≈7.4 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "time-resolved PL; ⟨N⟩ ≈2; order of the values in the table row assumed",
+   "quote": "Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25",
+   "value_num": 100,
+   "ref_id": "ref11"
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length ≈11.5 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "time-resolved PL; ⟨N⟩ ≈2; order of the values in the table row assumed",
+   "quote": "Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25",
+   "value_num": 30,
+   "ref_id": "ref11"
+  },
+  {
+   "material": "CsPbI3 NCs, edge length ≈7.4 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "time-resolved PL; ⟨N⟩ ≈2; order of the values in the table row assumed",
+   "quote": "Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25",
+   "value_num": 90,
+   "ref_id": "ref11"
+  },
+  {
+   "material": "CsPbI3 NCs, edge length ≈12.8 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "time-resolved PL; ⟨N⟩ ≈2; order of the values in the table row assumed",
+   "quote": "Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25",
+   "value_num": 25,
+   "ref_id": "ref11"
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length 11 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption, short delay; ⟨N⟩ ≈0.04",
+   "quote": "Aneesh et al. (2017)4 TA (SD) CsPbBr3 11 ≈0.04 ≈30",
+   "value_num": 30,
+   "ref_id": "ref28"
+  },
+  {
+   "material": "CsPbI3 NCs, edge length ≈9 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "single-particle PL spectroscopy at cryogenic temperature; ⟨N⟩ ≈0.05; ± 1.53 meV",
+   "quote": "Yin et al. (2017)5 SP (CRYO) CsPbI3 ≈9 ≈0.05 14.26 ± 1.53",
+   "value_num": 14.26
+  },
+  {
+   "material": "CsPbI3 NCs, edge length 6 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption, short delay; ⟨N⟩ 0.1",
+   "quote": "Yumoto et al. (2018)6 TA (SD) CsPbI3 6 0.1 ≈35",
+   "value_num": 35,
+   "ref_id": "ref30"
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length 6 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption; ⟨N⟩ 0.3; order of the values in the table row assumed",
+   "quote": "Ashner et al., that do not employ short-delay spectra, did not result in large positive values (but rather in small negative values of a few meV). Together, these observations suggest that εb measured when both excitons are at the band edge would be lower than that measured when the first exciton is still hot. In this sense, heralded spectroscopy and short-delay TA are complementary measurements of band-edge and hot exciton−exciton interaction, respectively, and a careful comparison of the two can help uncover insights into dynamics of exciton interactions in NCs. Negative εb values, observed only for CsPbI3 NCs in this work, are less often reported in the literature for similar NCs (see Supporting Information section S1). The origin of this repulsive interaction is not immediately apparent from existing theoretical models of intrinsic homogeneous semiconductor NCs., One possible explanation is a modification of the charge-carrier wave functions induced by surface ligands. This can result in a type-II potential landscape, where the electrons or the holes are localized at the NC surface, and Coulomb repulsion might dominate the exciton−exciton interaction. Alternatively, the electrostatic field generated by charge carriers trapped in the ligand-induced trap states can result in charge separation, and a similar repulsive interaction. Another possibility, suggested by Ashner et al., is the formation of polarons, supported by the deformable nature of the perovskite lattice. The results presented in this work cannot pinpoint a certain mechanism, and present limited statistics of negative εb values. However, the apparent observation of a repulsive exciton−exciton interaction in a homogeneous nanocrystal highlights the importance of further investigating the effect of surface chemistry, environment, and perovskite lattice on charge-carrier interaction in LHP NCs. In addition to the BX binding energy, the single-particle nature of our technique also allows the investigation of the BX spectral line width. As is evident from Figure 2c and Figure S5, the CsPbBr3 NCs BX spectrum is broader by a factor of 1.4 ± 0.4 compared to the 1X spectrum (measurements of CsPbI3 NCs suggest a similar factor, but at a lower confidence). A possible explanation for this broadening is the presence of multiple decay routes from the BX to the 1X state, possibly through thermally excited hot BX states which are close energetically to the lowest BX state., We note that this is qualitatively different from observations in core/shell/shell CdSe/CdS/ZnS NCs., However, II-VI semiconductor NCs feature more pronounced spectral diffusion compared to LHP NCs., As demonstrated in ref (), attenuation of the BX spectral diffusion as compared to the 1X spectral diffusion can overwhelm BX broadening effects, if they exist, and lead to a BX spectrum that is narrower than the 1X. ## Conclusions Heralded spectroscopy enables us to unambiguously determine the biexciton binding energy (εb) of single lead halide perovskite nanocrystals. Using this technique, we demonstrate that ∼6 nm edge CsPbBr3 nanocrystals feature an attractive exciton−exciton interaction of εb = 10 ± 6 meV, which lies at the lower range of previously reported values. Interestingly, within the ensemble of ∼7 nm edge CsPbI3 nanocrystals, some exhibit weak attractive interactions, whereas others appear to exhibit weak exciton−exciton repulsion. This rarely observed phenomenon in homogeneous nanocrystals warrants further investigation of charge-carrier interactions in these particles. In nanocrystals of both materials, the strength of attractive interaction exhibits a clear correlation with single-exciton emission peak position and photoluminescence antibunching (g(2)(0)), highlighting the dependence of εb on charge-carrier confinement. These insights into the physics of exciton interactions in lead halide perovskite nanocrystals can enable the development of better engineered nanocrystals for future optoelectronic technologies. Moreover, the ability to determine the biexciton binding energy of single nanocrystals at room temperature is instrumental to their utilization in quantum technologies. ## Methods ## Synthesis of CsPbBr3 Nanocrystals CsPbBr3 NCs were synthesized according to a reported recipe with slight modifications. ODE (5 mL) and PbBr2 (69 mg) were mixed and dried under vacuum for 1 h at 120 °C. Then, under an Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture and the temperature was raised to 180 °C and kept for 10 min. Then, Cs-oleate solution (0.4 mL) was swiftly injected, and after 25 s, the reaction mixture was cooled by an ice water bath. The NCs were purified from the crude solution by centrifugation and redispersed in anhydrous toluene. Following, surface treatment was performed by a saturated NH4BF4 toluene solution (1 mL) stirred together with 25 mL of CsPbBr3 NCs in toluene (following ref () with slight modifications). ## Synthesis of CsPbI3 Nanocrystals CsPbI3 NCs were synthesized according to the recipe reported in ref () with minor modifications. ODE (5 mL), PbI2 (87 mg), OLA (1 mL, dry), TDPA (120 mg), and TOPO (1.5 mg) were mixed and dried under vacuum for 1 h at 120 °C. The temperature was raised to 280 °C and kept for 10 min under an Ar atmosphere. Then Cs-oleate solution (0.4 mL) was quickly injected, and after 15 s, the reaction mixture was cooled by an ice-water bath. The crude solution was purified by two-step centrifugation in hexane. See further details of the synthesis protocols in Supporting Information section S2. ## Optical Setup The SPAD array spectrometer is built around a commercial inverted microscope (Eclipse Ti-U, Nikon). An oil immersion objective (×100, 1.3 NA, Nikon) is used to focus light from a pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant) on a single NC and collect the emitted PL. The emitted light is then filtered through a dichroic mirror (FF484-FDi02-t3, Semrock) and a long-pass filter (BLP01-473R, Semrock). The magnified image plane (×150) serves as the input for a Czerny–Turner spectrometer that consists of a 4-f system (AC254-300-A-ML and AC254-100-A-ML, Thorlabs) with a blazed grating (53-*-321R, Richardson) at the Fourier plane. At the output image plane of the spectrometer, a 512 pixel on-chip linear SPAD array is placed. In our experiments, 30–43 pixels of the array were used (see Supporting Information section S4). The physical pixel pitch is 52.4 μm, corresponding to ∼1.5 nm wavelength difference of impinging photons between neighboring pixels. Time tagging is done by an array of 64 time-to-digital converters (TDCs) implemented on a field-programmable gate array (FPGA). The temporal instrument response function of the system features a ∼180 ps full width at half maximum (FWHM). See further details of the experimental setup in ref () and Supporting Information section S4. ## Supporting Information Available The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acsnano.1c06624. List of previously reported biexciton binding energies; nanocrystal synthesis protocol; details of supporting analyses of ⟨N⟩, g(2)(0), and ĝ(2)(0); system parameters; photoluminescence decay lifetime estimation; biexciton spectrum broadening (PDF) The authors declare the following competing financial interest(s): The authors have filed a patent application on the presented method. For the sake of transparency, the authors would like to disclose that (i) Edoardo Charbon holds the position of Chief Scientific Officer of Fastree3D, a company making LiDARs for the automotive market, and that (ii) Ivan Michel Antolovic, Claudio Bruschini and Edoardo Charbon are co-founders of Pi Imaging Technology. Both companies have not been involved with the paper drafting. ## Figure captions Figure 1 Particles investigated in this work. (a) Transmission electron micrograph of the CsPbBr3 NCs investigated in this work. (b) Transmission electron micrograph of the CsPbI3 NCs investigated in this work. Both scale bars are 20 nm. (c) Ensemble emission (solid lines) and absorption (dashed dotted lines) of the CsPbBr3 (green) and CsPbI3 (red) NCs. Blue line marks the excitation wavelength (470 nm). Figure 2 Heralded spectroscopy of a single particle. (a) A schematic illustration of the heralded spectroscopy scheme. A linear SPAD array is placed at the output of a grating spectrometer such that each SPAD pixel detects a different wavelength. The data from each SPAD pixel consists of the absolute arrival times of photons. By identifying the first and second arriving photons in each coincidence detection (BX and 1X, respectively), their corresponding energies can be extracted (EBX and E1X). (b) 2D histogram of photon pairs following the same excitation pulse, from a 5 min measurement of a single CsPbBr3 NC. Green dashed line is a guide to the eye marking both photons with the same energy (undetectable by the system). (c) BX spectrum (red dots) and 1X spectrum (blue circles) extracted by full horizontal and full vertical binning of panel (b), respectively. Gray area is the 1X spectrum (normalized) extracted by summing over all detected photons. Red solid line and blue dashed line represent fits of the BX and 1X spectra, respectively, to Cauchy–Lorentz distributions. BX binding energy for this specific NC, estimated as the difference between the spectral peaks of the two fits, is εb = 13.5 ± 1.8 meV. Figure 3 CsPbBr3 biexciton binding energy. (a) BX binding energy histogram for 60 NCs. Mean single-particle error is ±3.1 meV. (b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation. Figure 4 CsPbI3 biexciton binding energy. (a) BX binding energy histogram for 20 NCs. Mean single-particle error is ±4.8 meV. (b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation. ## Supporting Information — nn1c06624_si_001.pdf Resolving the Controversy in Biexciton Binding Energy of Cesium Lead Halide Perovskite Nanocrystals through Heralded Single-Particle Spectroscopy Gur Lubin,† Gili Yaniv,‡ Miri Kazes,‡ Arin Can Ulku,¶ Ivan Michel Antolovic,¶ Samuel Burri,¶ Claudio Bruschini,¶ Edoardo Charbon,¶ Venkata Jayasurya Yallapragada,∗,†,§ and Dan Oron∗,‡ †Deptartment of Physics of Complex Systems, Weizmann Institute of Science, Rehovot 7610001, Israel ‡Deptartment of Molecular Chemistry and Materials Science, Weizmann Institute of Science, Rehovot 7610001, Israel ¶School of Engineering, ´Ecole polytechnique f´ed´erale de Lausanne (EPFL), Neuchˆatel 2002, Switzerland §Department of Physics, Indian Institute of Technology Kanpur, Kanpur 208016, India E-mail: jayasurya@iitk.ac.in; dan.oron@weizmann.ac.il Abstract This supporting information describes in greater detail the synthesis, data analysis and system parameters, as well as provides some additional information to the work described in “Resolving the controversy in biexciton binding energy of cesium lead halide perovskite nanocrystals through heralded single-particle spectroscopy”. Sections are brought in the order of their reference in the main text: list of previously reported biexciton binding energies; nanocrystal synthesis protocol; details of supporting analyses ⟨N⟩, g(2)(0) and ˆ g(2)(0); system parameters; photoluminescence decay lifetime estimation; biexciton spectrum broadening. S1 Published Values of Biexci- ton Binding Energy in Simi- lar Nanocrystals Table S1 presents a list of previously reported values of the BX binding energy of cesium lead halide perovskite NCs. It includes only results for CsPbBr3 and CsPbI3 NCs, as investigated in this work. We adopt the con- vention used in the main text, where attractive exciton- exciton interaction is regarded as positive BX binding energy. Inspection of the data presented in the table re- veals a lack of consensus among the reported values. In addition, an objective comparison of the measurements is made difficult by variations in the size and confine- ment regime of the particles studied. The last row of the table contains the ensemble results from our present work. S2 Synthesis Protocol This section describes the synthesis protocol of the CsPbBr3 and CsPbI3 nanocrystals (NC) used in this work. Materials. Cs2CO3 (99.995%, Sigma-Aldrich), oc- tadecene (ODE, 90%, Sigma-Aldrich), oleic acid (OA, 90%, Sigma-Aldrich), oleylamine (OLA, 70%, Sigma- Aldrich), PbBr2 (98%, Sigma-Aldrich), PbI2 (99%, Aldrich), toluene (99.8%, Sigma-Aldrich, anhydrous), hexane (99.5%, Sigma-Aldrich, anhydrous) ammo- nium tetrafluoroborate (NH4BF4, 99.999%, Sigma- Aldrich), tetradecylphosphonic acid (TDPA, 99%, Sigma-Aldrich), Trioctylphosphine oxide (TOPO, 90%, Sigma-Aldrich) Cs-Oleate Preparation. Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask, heated at 120 °C under vacuum for one hour. Then the temperature was raised to 160 °C and the mixture was kept for 10 min under Ar atmo- sphere. For the injection procedure, Cs-oleate was kept at 120 °C under Ar. Synthesis of CsPbBr3 Nanocrystals. CsPbBr3 NCs were synthesized according to a reported recipe11 with slight modifications. ODE (5 mL) and PbBr2 (69 mg) were mixed in a 25 mL 3-neck flask and dried under vacuum for one hour at 120 °C. Then, under Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture. The temperature was raised to 180 °C and kept for 10 min. Cs-oleate solution (0.4 mL) was swiftly injected, and after 25 s the reaction mixture was cooled by ice water bath. For the purification of the NCs, the crude solution was centrifuged at 6000 rpm for 5 min. After the centrifuge, the supernatant was discarded and the particles were re- 1 Table S1: Measured values of the BX binding energy in cesium lead halide nanocrystals published in the literature. ⟨N⟩is the average number of photons absorbed per particle per pump pulse. Positive BX binding energy values correspond to an attractive exciton-exciton interaction. Reference Technique* Material Edge length (nm) ⟨N⟩ BX binding energy (meV) Wang et al. (2015)1 PDPL (CRYO) CsPbBr3 9 ** ≈50 Makarov et al. (2016)2 TA (SD) CsPbI3 11.2 ± 0.7 0.1 11 Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25 Aneesh et al. (2017)4 TA (SD) CsPbBr3 11 ≈0.04 ≈30 Yin et al. (2017)5 SP (CRYO) CsPbI3 ≈9 ≈0.05 14.26 ± 1.53 Yumoto et al. (2018)6 TA (SD) CsPbI3 6 0.1 ≈35 Ashner et al. (2019)7 TA CsPbBr3 6 8 10 0.3 −10 −3 −2",
+   "value_num": -10,
+   "ref_id": "ref14"
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length 8 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption; ⟨N⟩ 0.3; order of the values in the table row assumed",
+   "quote": "Ashner et al., that do not employ short-delay spectra, did not result in large positive values (but rather in small negative values of a few meV). Together, these observations suggest that εb measured when both excitons are at the band edge would be lower than that measured when the first exciton is still hot. In this sense, heralded spectroscopy and short-delay TA are complementary measurements of band-edge and hot exciton−exciton interaction, respectively, and a careful comparison of the two can help uncover insights into dynamics of exciton interactions in NCs. Negative εb values, observed only for CsPbI3 NCs in this work, are less often reported in the literature for similar NCs (see Supporting Information section S1). The origin of this repulsive interaction is not immediately apparent from existing theoretical models of intrinsic homogeneous semiconductor NCs., One possible explanation is a modification of the charge-carrier wave functions induced by surface ligands. This can result in a type-II potential landscape, where the electrons or the holes are localized at the NC surface, and Coulomb repulsion might dominate the exciton−exciton interaction. Alternatively, the electrostatic field generated by charge carriers trapped in the ligand-induced trap states can result in charge separation, and a similar repulsive interaction. Another possibility, suggested by Ashner et al., is the formation of polarons, supported by the deformable nature of the perovskite lattice. The results presented in this work cannot pinpoint a certain mechanism, and present limited statistics of negative εb values. However, the apparent observation of a repulsive exciton−exciton interaction in a homogeneous nanocrystal highlights the importance of further investigating the effect of surface chemistry, environment, and perovskite lattice on charge-carrier interaction in LHP NCs. In addition to the BX binding energy, the single-particle nature of our technique also allows the investigation of the BX spectral line width. As is evident from Figure 2c and Figure S5, the CsPbBr3 NCs BX spectrum is broader by a factor of 1.4 ± 0.4 compared to the 1X spectrum (measurements of CsPbI3 NCs suggest a similar factor, but at a lower confidence). A possible explanation for this broadening is the presence of multiple decay routes from the BX to the 1X state, possibly through thermally excited hot BX states which are close energetically to the lowest BX state., We note that this is qualitatively different from observations in core/shell/shell CdSe/CdS/ZnS NCs., However, II-VI semiconductor NCs feature more pronounced spectral diffusion compared to LHP NCs., As demonstrated in ref (), attenuation of the BX spectral diffusion as compared to the 1X spectral diffusion can overwhelm BX broadening effects, if they exist, and lead to a BX spectrum that is narrower than the 1X. ## Conclusions Heralded spectroscopy enables us to unambiguously determine the biexciton binding energy (εb) of single lead halide perovskite nanocrystals. Using this technique, we demonstrate that ∼6 nm edge CsPbBr3 nanocrystals feature an attractive exciton−exciton interaction of εb = 10 ± 6 meV, which lies at the lower range of previously reported values. Interestingly, within the ensemble of ∼7 nm edge CsPbI3 nanocrystals, some exhibit weak attractive interactions, whereas others appear to exhibit weak exciton−exciton repulsion. This rarely observed phenomenon in homogeneous nanocrystals warrants further investigation of charge-carrier interactions in these particles. In nanocrystals of both materials, the strength of attractive interaction exhibits a clear correlation with single-exciton emission peak position and photoluminescence antibunching (g(2)(0)), highlighting the dependence of εb on charge-carrier confinement. These insights into the physics of exciton interactions in lead halide perovskite nanocrystals can enable the development of better engineered nanocrystals for future optoelectronic technologies. Moreover, the ability to determine the biexciton binding energy of single nanocrystals at room temperature is instrumental to their utilization in quantum technologies. ## Methods ## Synthesis of CsPbBr3 Nanocrystals CsPbBr3 NCs were synthesized according to a reported recipe with slight modifications. ODE (5 mL) and PbBr2 (69 mg) were mixed and dried under vacuum for 1 h at 120 °C. Then, under an Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture and the temperature was raised to 180 °C and kept for 10 min. Then, Cs-oleate solution (0.4 mL) was swiftly injected, and after 25 s, the reaction mixture was cooled by an ice water bath. The NCs were purified from the crude solution by centrifugation and redispersed in anhydrous toluene. Following, surface treatment was performed by a saturated NH4BF4 toluene solution (1 mL) stirred together with 25 mL of CsPbBr3 NCs in toluene (following ref () with slight modifications). ## Synthesis of CsPbI3 Nanocrystals CsPbI3 NCs were synthesized according to the recipe reported in ref () with minor modifications. ODE (5 mL), PbI2 (87 mg), OLA (1 mL, dry), TDPA (120 mg), and TOPO (1.5 mg) were mixed and dried under vacuum for 1 h at 120 °C. The temperature was raised to 280 °C and kept for 10 min under an Ar atmosphere. Then Cs-oleate solution (0.4 mL) was quickly injected, and after 15 s, the reaction mixture was cooled by an ice-water bath. The crude solution was purified by two-step centrifugation in hexane. See further details of the synthesis protocols in Supporting Information section S2. ## Optical Setup The SPAD array spectrometer is built around a commercial inverted microscope (Eclipse Ti-U, Nikon). An oil immersion objective (×100, 1.3 NA, Nikon) is used to focus light from a pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant) on a single NC and collect the emitted PL. The emitted light is then filtered through a dichroic mirror (FF484-FDi02-t3, Semrock) and a long-pass filter (BLP01-473R, Semrock). The magnified image plane (×150) serves as the input for a Czerny–Turner spectrometer that consists of a 4-f system (AC254-300-A-ML and AC254-100-A-ML, Thorlabs) with a blazed grating (53-*-321R, Richardson) at the Fourier plane. At the output image plane of the spectrometer, a 512 pixel on-chip linear SPAD array is placed. In our experiments, 30–43 pixels of the array were used (see Supporting Information section S4). The physical pixel pitch is 52.4 μm, corresponding to ∼1.5 nm wavelength difference of impinging photons between neighboring pixels. Time tagging is done by an array of 64 time-to-digital converters (TDCs) implemented on a field-programmable gate array (FPGA). The temporal instrument response function of the system features a ∼180 ps full width at half maximum (FWHM). See further details of the experimental setup in ref () and Supporting Information section S4. ## Supporting Information Available The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acsnano.1c06624. List of previously reported biexciton binding energies; nanocrystal synthesis protocol; details of supporting analyses of ⟨N⟩, g(2)(0), and ĝ(2)(0); system parameters; photoluminescence decay lifetime estimation; biexciton spectrum broadening (PDF) The authors declare the following competing financial interest(s): The authors have filed a patent application on the presented method. For the sake of transparency, the authors would like to disclose that (i) Edoardo Charbon holds the position of Chief Scientific Officer of Fastree3D, a company making LiDARs for the automotive market, and that (ii) Ivan Michel Antolovic, Claudio Bruschini and Edoardo Charbon are co-founders of Pi Imaging Technology. Both companies have not been involved with the paper drafting. ## Figure captions Figure 1 Particles investigated in this work. (a) Transmission electron micrograph of the CsPbBr3 NCs investigated in this work. (b) Transmission electron micrograph of the CsPbI3 NCs investigated in this work. Both scale bars are 20 nm. (c) Ensemble emission (solid lines) and absorption (dashed dotted lines) of the CsPbBr3 (green) and CsPbI3 (red) NCs. Blue line marks the excitation wavelength (470 nm). Figure 2 Heralded spectroscopy of a single particle. (a) A schematic illustration of the heralded spectroscopy scheme. A linear SPAD array is placed at the output of a grating spectrometer such that each SPAD pixel detects a different wavelength. The data from each SPAD pixel consists of the absolute arrival times of photons. By identifying the first and second arriving photons in each coincidence detection (BX and 1X, respectively), their corresponding energies can be extracted (EBX and E1X). (b) 2D histogram of photon pairs following the same excitation pulse, from a 5 min measurement of a single CsPbBr3 NC. Green dashed line is a guide to the eye marking both photons with the same energy (undetectable by the system). (c) BX spectrum (red dots) and 1X spectrum (blue circles) extracted by full horizontal and full vertical binning of panel (b), respectively. Gray area is the 1X spectrum (normalized) extracted by summing over all detected photons. Red solid line and blue dashed line represent fits of the BX and 1X spectra, respectively, to Cauchy–Lorentz distributions. BX binding energy for this specific NC, estimated as the difference between the spectral peaks of the two fits, is εb = 13.5 ± 1.8 meV. Figure 3 CsPbBr3 biexciton binding energy. (a) BX binding energy histogram for 60 NCs. Mean single-particle error is ±3.1 meV. (b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation. Figure 4 CsPbI3 biexciton binding energy. (a) BX binding energy histogram for 20 NCs. Mean single-particle error is ±4.8 meV. (b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation. ## Supporting Information — nn1c06624_si_001.pdf Resolving the Controversy in Biexciton Binding Energy of Cesium Lead Halide Perovskite Nanocrystals through Heralded Single-Particle Spectroscopy Gur Lubin,† Gili Yaniv,‡ Miri Kazes,‡ Arin Can Ulku,¶ Ivan Michel Antolovic,¶ Samuel Burri,¶ Claudio Bruschini,¶ Edoardo Charbon,¶ Venkata Jayasurya Yallapragada,∗,†,§ and Dan Oron∗,‡ †Deptartment of Physics of Complex Systems, Weizmann Institute of Science, Rehovot 7610001, Israel ‡Deptartment of Molecular Chemistry and Materials Science, Weizmann Institute of Science, Rehovot 7610001, Israel ¶School of Engineering, ´Ecole polytechnique f´ed´erale de Lausanne (EPFL), Neuchˆatel 2002, Switzerland §Department of Physics, Indian Institute of Technology Kanpur, Kanpur 208016, India E-mail: jayasurya@iitk.ac.in; dan.oron@weizmann.ac.il Abstract This supporting information describes in greater detail the synthesis, data analysis and system parameters, as well as provides some additional information to the work described in “Resolving the controversy in biexciton binding energy of cesium lead halide perovskite nanocrystals through heralded single-particle spectroscopy”. Sections are brought in the order of their reference in the main text: list of previously reported biexciton binding energies; nanocrystal synthesis protocol; details of supporting analyses ⟨N⟩, g(2)(0) and ˆ g(2)(0); system parameters; photoluminescence decay lifetime estimation; biexciton spectrum broadening. S1 Published Values of Biexci- ton Binding Energy in Simi- lar Nanocrystals Table S1 presents a list of previously reported values of the BX binding energy of cesium lead halide perovskite NCs. It includes only results for CsPbBr3 and CsPbI3 NCs, as investigated in this work. We adopt the con- vention used in the main text, where attractive exciton- exciton interaction is regarded as positive BX binding energy. Inspection of the data presented in the table re- veals a lack of consensus among the reported values. In addition, an objective comparison of the measurements is made difficult by variations in the size and confine- ment regime of the particles studied. The last row of the table contains the ensemble results from our present work. S2 Synthesis Protocol This section describes the synthesis protocol of the CsPbBr3 and CsPbI3 nanocrystals (NC) used in this work. Materials. Cs2CO3 (99.995%, Sigma-Aldrich), oc- tadecene (ODE, 90%, Sigma-Aldrich), oleic acid (OA, 90%, Sigma-Aldrich), oleylamine (OLA, 70%, Sigma- Aldrich), PbBr2 (98%, Sigma-Aldrich), PbI2 (99%, Aldrich), toluene (99.8%, Sigma-Aldrich, anhydrous), hexane (99.5%, Sigma-Aldrich, anhydrous) ammo- nium tetrafluoroborate (NH4BF4, 99.999%, Sigma- Aldrich), tetradecylphosphonic acid (TDPA, 99%, Sigma-Aldrich), Trioctylphosphine oxide (TOPO, 90%, Sigma-Aldrich) Cs-Oleate Preparation. Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask, heated at 120 °C under vacuum for one hour. Then the temperature was raised to 160 °C and the mixture was kept for 10 min under Ar atmo- sphere. For the injection procedure, Cs-oleate was kept at 120 °C under Ar. Synthesis of CsPbBr3 Nanocrystals. CsPbBr3 NCs were synthesized according to a reported recipe11 with slight modifications. ODE (5 mL) and PbBr2 (69 mg) were mixed in a 25 mL 3-neck flask and dried under vacuum for one hour at 120 °C. Then, under Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture. The temperature was raised to 180 °C and kept for 10 min. Cs-oleate solution (0.4 mL) was swiftly injected, and after 25 s the reaction mixture was cooled by ice water bath. For the purification of the NCs, the crude solution was centrifuged at 6000 rpm for 5 min. After the centrifuge, the supernatant was discarded and the particles were re- 1 Table S1: Measured values of the BX binding energy in cesium lead halide nanocrystals published in the literature. ⟨N⟩is the average number of photons absorbed per particle per pump pulse. Positive BX binding energy values correspond to an attractive exciton-exciton interaction. Reference Technique* Material Edge length (nm) ⟨N⟩ BX binding energy (meV) Wang et al. (2015)1 PDPL (CRYO) CsPbBr3 9 ** ≈50 Makarov et al. (2016)2 TA (SD) CsPbI3 11.2 ± 0.7 0.1 11 Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25 Aneesh et al. (2017)4 TA (SD) CsPbBr3 11 ≈0.04 ≈30 Yin et al. (2017)5 SP (CRYO) CsPbI3 ≈9 ≈0.05 14.26 ± 1.53 Yumoto et al. (2018)6 TA (SD) CsPbI3 6 0.1 ≈35 Ashner et al. (2019)7 TA CsPbBr3 6 8 10 0.3 −10 −3 −2",
+   "value_num": -3,
+   "ref_id": "ref14"
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length 10 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption; ⟨N⟩ 0.3; order of the values in the table row assumed",
+   "quote": "Ashner et al., that do not employ short-delay spectra, did not result in large positive values (but rather in small negative values of a few meV). Together, these observations suggest that εb measured when both excitons are at the band edge would be lower than that measured when the first exciton is still hot. In this sense, heralded spectroscopy and short-delay TA are complementary measurements of band-edge and hot exciton−exciton interaction, respectively, and a careful comparison of the two can help uncover insights into dynamics of exciton interactions in NCs. Negative εb values, observed only for CsPbI3 NCs in this work, are less often reported in the literature for similar NCs (see Supporting Information section S1). The origin of this repulsive interaction is not immediately apparent from existing theoretical models of intrinsic homogeneous semiconductor NCs., One possible explanation is a modification of the charge-carrier wave functions induced by surface ligands. This can result in a type-II potential landscape, where the electrons or the holes are localized at the NC surface, and Coulomb repulsion might dominate the exciton−exciton interaction. Alternatively, the electrostatic field generated by charge carriers trapped in the ligand-induced trap states can result in charge separation, and a similar repulsive interaction. Another possibility, suggested by Ashner et al., is the formation of polarons, supported by the deformable nature of the perovskite lattice. The results presented in this work cannot pinpoint a certain mechanism, and present limited statistics of negative εb values. However, the apparent observation of a repulsive exciton−exciton interaction in a homogeneous nanocrystal highlights the importance of further investigating the effect of surface chemistry, environment, and perovskite lattice on charge-carrier interaction in LHP NCs. In addition to the BX binding energy, the single-particle nature of our technique also allows the investigation of the BX spectral line width. As is evident from Figure 2c and Figure S5, the CsPbBr3 NCs BX spectrum is broader by a factor of 1.4 ± 0.4 compared to the 1X spectrum (measurements of CsPbI3 NCs suggest a similar factor, but at a lower confidence). A possible explanation for this broadening is the presence of multiple decay routes from the BX to the 1X state, possibly through thermally excited hot BX states which are close energetically to the lowest BX state., We note that this is qualitatively different from observations in core/shell/shell CdSe/CdS/ZnS NCs., However, II-VI semiconductor NCs feature more pronounced spectral diffusion compared to LHP NCs., As demonstrated in ref (), attenuation of the BX spectral diffusion as compared to the 1X spectral diffusion can overwhelm BX broadening effects, if they exist, and lead to a BX spectrum that is narrower than the 1X. ## Conclusions Heralded spectroscopy enables us to unambiguously determine the biexciton binding energy (εb) of single lead halide perovskite nanocrystals. Using this technique, we demonstrate that ∼6 nm edge CsPbBr3 nanocrystals feature an attractive exciton−exciton interaction of εb = 10 ± 6 meV, which lies at the lower range of previously reported values. Interestingly, within the ensemble of ∼7 nm edge CsPbI3 nanocrystals, some exhibit weak attractive interactions, whereas others appear to exhibit weak exciton−exciton repulsion. This rarely observed phenomenon in homogeneous nanocrystals warrants further investigation of charge-carrier interactions in these particles. In nanocrystals of both materials, the strength of attractive interaction exhibits a clear correlation with single-exciton emission peak position and photoluminescence antibunching (g(2)(0)), highlighting the dependence of εb on charge-carrier confinement. These insights into the physics of exciton interactions in lead halide perovskite nanocrystals can enable the development of better engineered nanocrystals for future optoelectronic technologies. Moreover, the ability to determine the biexciton binding energy of single nanocrystals at room temperature is instrumental to their utilization in quantum technologies. ## Methods ## Synthesis of CsPbBr3 Nanocrystals CsPbBr3 NCs were synthesized according to a reported recipe with slight modifications. ODE (5 mL) and PbBr2 (69 mg) were mixed and dried under vacuum for 1 h at 120 °C. Then, under an Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture and the temperature was raised to 180 °C and kept for 10 min. Then, Cs-oleate solution (0.4 mL) was swiftly injected, and after 25 s, the reaction mixture was cooled by an ice water bath. The NCs were purified from the crude solution by centrifugation and redispersed in anhydrous toluene. Following, surface treatment was performed by a saturated NH4BF4 toluene solution (1 mL) stirred together with 25 mL of CsPbBr3 NCs in toluene (following ref () with slight modifications). ## Synthesis of CsPbI3 Nanocrystals CsPbI3 NCs were synthesized according to the recipe reported in ref () with minor modifications. ODE (5 mL), PbI2 (87 mg), OLA (1 mL, dry), TDPA (120 mg), and TOPO (1.5 mg) were mixed and dried under vacuum for 1 h at 120 °C. The temperature was raised to 280 °C and kept for 10 min under an Ar atmosphere. Then Cs-oleate solution (0.4 mL) was quickly injected, and after 15 s, the reaction mixture was cooled by an ice-water bath. The crude solution was purified by two-step centrifugation in hexane. See further details of the synthesis protocols in Supporting Information section S2. ## Optical Setup The SPAD array spectrometer is built around a commercial inverted microscope (Eclipse Ti-U, Nikon). An oil immersion objective (×100, 1.3 NA, Nikon) is used to focus light from a pulsed laser source (470 nm, 5 MHz, LDH-P-C-470B, PicoQuant) on a single NC and collect the emitted PL. The emitted light is then filtered through a dichroic mirror (FF484-FDi02-t3, Semrock) and a long-pass filter (BLP01-473R, Semrock). The magnified image plane (×150) serves as the input for a Czerny–Turner spectrometer that consists of a 4-f system (AC254-300-A-ML and AC254-100-A-ML, Thorlabs) with a blazed grating (53-*-321R, Richardson) at the Fourier plane. At the output image plane of the spectrometer, a 512 pixel on-chip linear SPAD array is placed. In our experiments, 30–43 pixels of the array were used (see Supporting Information section S4). The physical pixel pitch is 52.4 μm, corresponding to ∼1.5 nm wavelength difference of impinging photons between neighboring pixels. Time tagging is done by an array of 64 time-to-digital converters (TDCs) implemented on a field-programmable gate array (FPGA). The temporal instrument response function of the system features a ∼180 ps full width at half maximum (FWHM). See further details of the experimental setup in ref () and Supporting Information section S4. ## Supporting Information Available The Supporting Information is available free of charge at https://pubs.acs.org/doi/10.1021/acsnano.1c06624. List of previously reported biexciton binding energies; nanocrystal synthesis protocol; details of supporting analyses of ⟨N⟩, g(2)(0), and ĝ(2)(0); system parameters; photoluminescence decay lifetime estimation; biexciton spectrum broadening (PDF) The authors declare the following competing financial interest(s): The authors have filed a patent application on the presented method. For the sake of transparency, the authors would like to disclose that (i) Edoardo Charbon holds the position of Chief Scientific Officer of Fastree3D, a company making LiDARs for the automotive market, and that (ii) Ivan Michel Antolovic, Claudio Bruschini and Edoardo Charbon are co-founders of Pi Imaging Technology. Both companies have not been involved with the paper drafting. ## Figure captions Figure 1 Particles investigated in this work. (a) Transmission electron micrograph of the CsPbBr3 NCs investigated in this work. (b) Transmission electron micrograph of the CsPbI3 NCs investigated in this work. Both scale bars are 20 nm. (c) Ensemble emission (solid lines) and absorption (dashed dotted lines) of the CsPbBr3 (green) and CsPbI3 (red) NCs. Blue line marks the excitation wavelength (470 nm). Figure 2 Heralded spectroscopy of a single particle. (a) A schematic illustration of the heralded spectroscopy scheme. A linear SPAD array is placed at the output of a grating spectrometer such that each SPAD pixel detects a different wavelength. The data from each SPAD pixel consists of the absolute arrival times of photons. By identifying the first and second arriving photons in each coincidence detection (BX and 1X, respectively), their corresponding energies can be extracted (EBX and E1X). (b) 2D histogram of photon pairs following the same excitation pulse, from a 5 min measurement of a single CsPbBr3 NC. Green dashed line is a guide to the eye marking both photons with the same energy (undetectable by the system). (c) BX spectrum (red dots) and 1X spectrum (blue circles) extracted by full horizontal and full vertical binning of panel (b), respectively. Gray area is the 1X spectrum (normalized) extracted by summing over all detected photons. Red solid line and blue dashed line represent fits of the BX and 1X spectra, respectively, to Cauchy–Lorentz distributions. BX binding energy for this specific NC, estimated as the difference between the spectral peaks of the two fits, is εb = 13.5 ± 1.8 meV. Figure 3 CsPbBr3 biexciton binding energy. (a) BX binding energy histogram for 60 NCs. Mean single-particle error is ±3.1 meV. (b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation. Figure 4 CsPbI3 biexciton binding energy. (a) BX binding energy histogram for 20 NCs. Mean single-particle error is ±4.8 meV. (b) BX binding energy as a function of 1X emission peak. (c) BX binding energy as a function of g(2)(0). std: standard deviation; CC coeff: cross-correlation coefficient; p-value: p-value of the cross-correlation. ## Supporting Information — nn1c06624_si_001.pdf Resolving the Controversy in Biexciton Binding Energy of Cesium Lead Halide Perovskite Nanocrystals through Heralded Single-Particle Spectroscopy Gur Lubin,† Gili Yaniv,‡ Miri Kazes,‡ Arin Can Ulku,¶ Ivan Michel Antolovic,¶ Samuel Burri,¶ Claudio Bruschini,¶ Edoardo Charbon,¶ Venkata Jayasurya Yallapragada,∗,†,§ and Dan Oron∗,‡ †Deptartment of Physics of Complex Systems, Weizmann Institute of Science, Rehovot 7610001, Israel ‡Deptartment of Molecular Chemistry and Materials Science, Weizmann Institute of Science, Rehovot 7610001, Israel ¶School of Engineering, ´Ecole polytechnique f´ed´erale de Lausanne (EPFL), Neuchˆatel 2002, Switzerland §Department of Physics, Indian Institute of Technology Kanpur, Kanpur 208016, India E-mail: jayasurya@iitk.ac.in; dan.oron@weizmann.ac.il Abstract This supporting information describes in greater detail the synthesis, data analysis and system parameters, as well as provides some additional information to the work described in “Resolving the controversy in biexciton binding energy of cesium lead halide perovskite nanocrystals through heralded single-particle spectroscopy”. Sections are brought in the order of their reference in the main text: list of previously reported biexciton binding energies; nanocrystal synthesis protocol; details of supporting analyses ⟨N⟩, g(2)(0) and ˆ g(2)(0); system parameters; photoluminescence decay lifetime estimation; biexciton spectrum broadening. S1 Published Values of Biexci- ton Binding Energy in Simi- lar Nanocrystals Table S1 presents a list of previously reported values of the BX binding energy of cesium lead halide perovskite NCs. It includes only results for CsPbBr3 and CsPbI3 NCs, as investigated in this work. We adopt the con- vention used in the main text, where attractive exciton- exciton interaction is regarded as positive BX binding energy. Inspection of the data presented in the table re- veals a lack of consensus among the reported values. In addition, an objective comparison of the measurements is made difficult by variations in the size and confine- ment regime of the particles studied. The last row of the table contains the ensemble results from our present work. S2 Synthesis Protocol This section describes the synthesis protocol of the CsPbBr3 and CsPbI3 nanocrystals (NC) used in this work. Materials. Cs2CO3 (99.995%, Sigma-Aldrich), oc- tadecene (ODE, 90%, Sigma-Aldrich), oleic acid (OA, 90%, Sigma-Aldrich), oleylamine (OLA, 70%, Sigma- Aldrich), PbBr2 (98%, Sigma-Aldrich), PbI2 (99%, Aldrich), toluene (99.8%, Sigma-Aldrich, anhydrous), hexane (99.5%, Sigma-Aldrich, anhydrous) ammo- nium tetrafluoroborate (NH4BF4, 99.999%, Sigma- Aldrich), tetradecylphosphonic acid (TDPA, 99%, Sigma-Aldrich), Trioctylphosphine oxide (TOPO, 90%, Sigma-Aldrich) Cs-Oleate Preparation. Cs2CO3 (101.7 mg), OA (312.5 µL) and ODE (5 mL) were mixed in a 50 mL round bottom flask, heated at 120 °C under vacuum for one hour. Then the temperature was raised to 160 °C and the mixture was kept for 10 min under Ar atmo- sphere. For the injection procedure, Cs-oleate was kept at 120 °C under Ar. Synthesis of CsPbBr3 Nanocrystals. CsPbBr3 NCs were synthesized according to a reported recipe11 with slight modifications. ODE (5 mL) and PbBr2 (69 mg) were mixed in a 25 mL 3-neck flask and dried under vacuum for one hour at 120 °C. Then, under Ar atmosphere, dried OA (0.5 mL) and dried OLA (0.5 mL) were injected to the mixture. The temperature was raised to 180 °C and kept for 10 min. Cs-oleate solution (0.4 mL) was swiftly injected, and after 25 s the reaction mixture was cooled by ice water bath. For the purification of the NCs, the crude solution was centrifuged at 6000 rpm for 5 min. After the centrifuge, the supernatant was discarded and the particles were re- 1 Table S1: Measured values of the BX binding energy in cesium lead halide nanocrystals published in the literature. ⟨N⟩is the average number of photons absorbed per particle per pump pulse. Positive BX binding energy values correspond to an attractive exciton-exciton interaction. Reference Technique* Material Edge length (nm) ⟨N⟩ BX binding energy (meV) Wang et al. (2015)1 PDPL (CRYO) CsPbBr3 9 ** ≈50 Makarov et al. (2016)2 TA (SD) CsPbI3 11.2 ± 0.7 0.1 11 Castaneda et al. (2016)3 TRPL CsPbBr3 CsPBI3 ≈7.4 *** ≈11.5 *** ≈7.4 *** ≈12.8 *** ≈2 ≈100 ≈30 ≈90 ≈25 Aneesh et al. (2017)4 TA (SD) CsPbBr3 11 ≈0.04 ≈30 Yin et al. (2017)5 SP (CRYO) CsPbI3 ≈9 ≈0.05 14.26 ± 1.53 Yumoto et al. (2018)6 TA (SD) CsPbI3 6 0.1 ≈35 Ashner et al. (2019)7 TA CsPbBr3 6 8 10 0.3 −10 −3 −2",
+   "value_num": -2,
+   "ref_id": "ref14"
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length 9 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "two-dimensional electron spectroscopy at cryogenic temperature; ⟨N⟩ < 0.1",
+   "quote": "Huang et al. (2020)8 2DES (CRYO) CsPbBr3 9 < 0.1 25 −40",
+   "value_text": "25 −40",
+   "ref_id": "ref31"
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length 16 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption; ⟨N⟩ 6.42; the three values of the row are not assigned to a composition in the table",
+   "quote": "Shen et al. (2021)9 TA CsPbBr3 16 6.42 12.8 61.2 21.7",
+   "value_num": 12.8
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length 16 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption; ⟨N⟩ 6.42; the three values of the row are not assigned to a composition in the table",
+   "quote": "Shen et al. (2021)9 TA CsPbBr3 16 6.42 12.8 61.2 21.7",
+   "value_num": 61.2
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length 16 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption; ⟨N⟩ 6.42; the three values of the row are not assigned to a composition in the table",
+   "quote": "Shen et al. (2021)9 TA CsPbBr3 16 6.42 12.8 61.2 21.7",
+   "value_num": 21.7
+  },
+  {
+   "material": "CsPbBr3 NCs, edge length 6 ± 0.7 nm",
+   "property": "biexciton_binding_energy",
+   "unit": "meV",
+   "conditions": "transient absorption, short delay; ⟨N⟩ ≥4",
+   "quote": "Dana et al. (2021)10 TA (SD) CsPbBr3 6 ± 0.7 ≥4 ∼−100",
+   "value_text": "∼−100",
+   "ref_id": "ref12"
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "CsPbBr3-NC",
+   "ref_id": "ref18",
+   "role": "protocole_adapte",
+   "quote": "CsPbBr3 NCs were synthesized according to a reported recipe with slight modifications."
+  },
+  {
+   "route": "CsPbBr3-NC",
+   "ref_id": "ref19",
+   "role": "protocole_adapte",
+   "quote": "Following, surface treatment was performed by a saturated NH4BF4 toluene solution (1 mL) stirred together with 25 mL of CsPbBr3 NCs in toluene (following ref () with slight modifications)."
+  },
+  {
+   "route": "CsPbI3-NC",
+   "ref_id": "ref20",
+   "role": "protocole_adapte",
+   "quote": "CsPbI3 NCs were synthesized according to the recipe reported in ref () with minor modifications."
+  },
+  {
+   "route": null,
+   "ref_id": "ref16",
+   "role": "protocole_adapte",
+   "quote": "A thorough description of the system and technique is given in ref (), and some modifications made to accommodate the different fluorescence parameters of the LHP NCs are described in the Methods section"
+  },
+  {
+   "route": null,
+   "ref_id": "ref21",
+   "role": "autre",
+   "quote": "the normalized second order correlation of photon arrival times (g(2)(0)) was calculated by the method described in ref ()."
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare par injection à chaud des nanocristaux de pérovskite CsPbBr3 (avec un traitement de surface au NH4BF4) et CsPbI3, puis mesure sur des particules isolées, à température ambiante, l'énergie de liaison du biexciton par spectroscopie « héraldée » : un réseau de photodiodes à avalanche (SPAD) couplé à un spectromètre isole les paires de photons biexciton → exciton émises après la même impulsion. Résultat : εb = 10 ± 6 meV (attractif, 60 particules CsPbBr3) et 1 ± 9 meV (autour de zéro, 20 particules CsPbI3), corrélée au confinement des porteurs."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Trancher la controverse sur le signe et l'amplitude de l'interaction exciton-exciton dans les nanocristaux de pérovskite aux halogénures de plomb, dont les valeurs publiées, toutes obtenues sur des ensembles, vont de +100 à −100 meV."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Les deux compositions (CsPbBr3 et CsPbI3) sont les deux pérovskites prototypes tout inorganiques ; elles sont synthétisées séparément (deux voies de base) et mesurées particule par particule pour éviter les biais des mesures d'ensemble (modèle d'ajustement, charge, frittage, hétérogénéité de taille). Aucun paramètre de synthèse n'est balayé : la variation étudiée est la composition en halogénure, et à l'intérieur de chaque lot la dispersion de taille et de confinement entre particules."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Les deux matériaux ne sont pas des branches l'un de l'autre. CsPbBr3 (arêtes de 5,9 ± 1,3 nm, rendement quantique ∼100 %) donne un εb strictement positif (10 ± 6 meV pour 60 particules) ; CsPbI3 (7,2 ± 1,9 nm pour 80 % des particules, rendement quantique ∼42 %) donne 1 ± 9 meV, avec des particules faiblement attractives ou faiblement répulsives."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "CsPbBr3-NC",
+   "text": "Pour les deux matériaux, εb augmente avec l'énergie du pic d'émission de l'exciton simple (coefficient de corrélation 0,74 pour CsPbBr3, 0,48 pour CsPbI3) et diminue quand g(2)(0) augmente (−0,62 et −0,52) : un confinement plus fort donne une interaction attractive plus forte.",
+   "quote": "A clear correlation between the two values is evident."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que la spectroscopie héraldée détermine sans ambiguïté εb sur particule unique, que CsPbBr3 présente une interaction attractive de 10 ± 6 meV située dans le bas des valeurs publiées, et que la répulsion observée sur certaines particules CsPbI3 (phénomène rare dans un nanocristal homogène) demande des études sur la chimie de surface, l'environnement et le réseau de la pérovskite.",
+   "quote": "Heralded spectroscopy enables us to unambiguously determine the biexciton binding energy (εb) of single lead halide perovskite nanocrystals."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CsPbBr3-NC",
+   "text": "Hypothèse de chimiste : à 180 °C, l'injection de Cs-oléate dans la solution de PbBr2 solubilisé par l'acide oléique et l'oléylamine provoque une nucléation quasi instantanée de CsPbBr3 ; le refroidissement par bain de glace après 25 s arrête la croissance et fixe la taille (≈6 nm). Le traitement au NH4BF4 est probablement un échange de surface (BF4− et NH4+ remplissant des lacunes d'halogénure et remplaçant des ligands) qui passive les défauts, ce qui expliquerait le rendement quantique proche de 100 %."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CsPbI3-NC",
+   "text": "Hypothèse de chimiste : la température plus élevée (280 °C) et l'acide tétradécylphosphonique et l'oxyde de trioctylphosphine servent à solubiliser PbI2 et à passiver la surface des nanocristaux d'iodure, moins stables ; l'injection de Cs-oléate suivie d'une trempe après 15 s limite la croissance et la formation de phases non pérovskite. Le rendement quantique plus faible (∼42 %) et l'instabilité sous excitation suggèrent une passivation de surface moins bonne que pour CsPbBr3."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "Les sels de plomb (PbBr2, PbI2) sont toxiques et reprotoxiques : manipulation en boîte à gants ou sous hotte, gants, déchets métalliques séparés. Les montages sous vide à 120 °C puis sous argon à 180–280 °C avec injection rapide dans un solvant chaud (octadécène) exposent à des projections et à des brûlures ; le bain de glace de la trempe doit être prêt avant l'injection. Toluène et hexane sont inflammables et toxiques ; NH4BF4 est irritant. Les nanocristaux de plomb sont à traiter comme des poudres ou dispersions nanométriques toxiques."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "L'article ne donne ni la concentration des nanocristaux dans la solution de PMMA (dépôt à la tournette : vitesse, durée et volume non cités), ni la manière d'isoler les nanocristaux CsPbBr3 après le traitement au NH4BF4, ni les conditions des mesures d'ensemble (excitation du spectre d'émission, tension et nombre de particules du MET). Les valeurs individuelles de εb des 60 et 20 particules ne figurent que dans les figures 3 et 4 et ne sont pas reprises une à une ; les figures S1 à S5 de l'annexe ne sont pas disponibles comme images."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "CsPbBr3-NC step 10",
+   "issue": "Traitement de surface : le texte principal dit « 1 mL » de solution saturée de NH4BF4 agité avec « 25 mL » de nanocristaux CsPbBr3 dans le toluène, l'annexe dit « 1 mL » avec les nanocristaux « (0.25mL) ». Valeur de l'annexe (section la plus détaillée) retenue : 0,25 mL ; la valeur 25 mL du texte principal n'est pas extraite."
+  },
+  {
+   "where": "CsPbI3-NC reagents",
+   "issue": "Texte principal : PbI2 87 mg et TOPO 1,5 mg ; annexe : 86,7 mg et 1,47 mg. Valeurs de l'annexe retenues."
+  },
+  {
+   "where": "CsPbBr3-NC outcomes PL_lifetime_BX_upper_bound",
+   "issue": "L'annexe écrit « 234±44 ns (CsPbBr3) » et « 306±50 ps (CsPbI3) » pour les bornes supérieures de durée de vie du biexciton ; l'unité ns pour CsPbBr3 est probablement une coquille pour ps (190 ps pour la particule exemple), mais la valeur est extraite telle qu'écrite."
+  },
+  {
+   "where": "SI section S4, nombre de pixels",
+   "issue": "L'annexe écrit « 2.32 meV to 2.53 meV » et « 1.76 meV to 1.93 meV » pour les plages d'énergie des pixels utilisés : l'unité attendue est l'eV (cohérent avec 2,44 et 1,84 eV d'émission). Texte recopié tel quel dans le réglage `wavelength_range`."
+  },
+  {
+   "where": "CsPbBr3-NC et CsPbI3-NC, ⟨N⟩",
+   "issue": "⟨N⟩ ∼ 0,1 (CsPbBr3) et ∼ 0,3 (CsPbI3) dans le texte principal contre 0,13 ± 0,04 et 0,28 ± 0,18 dans l'annexe (estimation S5) ; les deux sont extraites, la première comme réglage de la mesure héraldée, la seconde comme réglage de la mesure g(2)."
+  },
+  {
+   "where": "comparisons (Table S1)",
+   "issue": "Le tableau S1 est aplati par l'extraction du PDF (une cellule par ligne). Attributions par ordre : Castañeda et al. (4 valeurs pour 2 matériaux × 2 tailles), Ashner et al. (3 tailles pour −10, −3, −2) et Shen et al. (trois valeurs 12,8, 61,2 et 21,7 pour une seule taille de 16 nm, sans composition indiquée). Les renvois du tableau S1 sont numérotés de 1 à 10 (liste de l'annexe) ; ref_id utilise les identifiants de la liste principale quand c'est la même publication (Makarov ref13, Castañeda ref11, Aneesh ref28, Yumoto ref30, Ashner ref14, Huang ref31, Dana ref12) ; Wang, Yin et Shen/An ne sont pas dans la liste principale (ref_id vide)."
+  },
+  {
+   "where": "outcomes lus sur figure",
+   "issue": "Lecture graphique approximative : effectifs des histogrammes des figures 3a (60 NCs en 6 classes de 5 meV) et 4a (20 NCs en 7 classes), coefficients de corrélation et valeurs p inscrits dans les cadres des figures 3b,c et 4b,c (valeurs écrites sur la figure, à deux chiffres significatifs), maximum d'absorption excitonique de CsPbBr3 vers 480 nm sur la figure 1c. Les figures 2 et 1b ne portent pas de valeur absente du texte ; les points individuels des figures 3 et 4 ne sont pas relevés."
+  },
+  {
+   "where": "CsPbBr3-NC",
+   "issue": "L'article ne dit pas si les nanocristaux CsPbBr3 caractérisés (MET, rendement quantique) et mesurés en particule unique sont ceux traités au NH4BF4 ou ceux de la synthèse brute ; le traitement fait suite à la synthèse dans la section Méthodes et les valeurs sont rangées sur la même voie."
+  },
+  {
+   "where": "Cs-oleate, étapes de séchage de OA et OLA",
+   "issue": "L'article parle d'acide oléique et d'oléylamine « dried » (séchés) sans en décrire le séchage ; non extrait."
+  },
+  {
+   "where": "CsPbBr3-NC-film",
+   "issue": "Le dépôt sur lamelle est décrit en une phrase commune aux deux matériaux ; la voie CsPbI3-NC-film est une branche de la voie CsPbBr3-NC-film par substitution du matériau, la citation de la variation est la phrase qui introduit les mesures de CsPbI3."
+  }
+ ]
+}
