@@ -6,7 +6,7 @@
     python3 -I vocab.py ajoute PMCID --type T --nom N --definition "…" [--cases "a,b"] [--reglages "a,b"]
                                     [--techniques "A,B"] [--unite U] --ecarte "nom1: raison; nom2: raison"
     python3 -I vocab.py attente                            # ajouts en attente, avec quasi-doublons
-    python3 -I vocab.py fusion [--renomme "ancien=nouveau" ...]   # promotion des ajouts (orchestrateur, à chaque palier)
+    python3 -I vocab.py fusion [--renomme "ancien=nouveau" ...] [--decisions F.json]   # promotion des ajouts (orchestrateur, à chaque palier)
 
 Types : methode, action, parametre, propriete, technique, reglage.
 Les ajouts d'un agent vont dans vocabulaire/ajouts/<PMCID>.json (un fichier par publication : pas de conflit
@@ -235,33 +235,108 @@ def cmd_attente():
     return aj, v
 
 
+def renomme_extractions(dossier, ren):
+    """Applique les renommages (nom exact, ou nom suivi d'un suffixe `_…`) aux extractions d'un dossier."""
+    def nv(x):
+        if not isinstance(x, str):
+            return x
+        for a, b in ren.items():
+            if x == a:
+                return b
+            if x.startswith(a + "_"):
+                return b + x[len(a):]
+        return x
+    n = 0
+    for f in sorted((ROOT / dossier).glob("PMC*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        avant = json.dumps(d, ensure_ascii=False)
+        for r in d.get("routes") or []:
+            r["methods"] = [nv(m) for m in r.get("methods") or []] if "methods" in r else r.get("methods")
+            if "methods" in r and r["methods"] is None:
+                del r["methods"]
+            for st in r.get("steps") or []:
+                st["action"] = nv(st.get("action"))
+                for x in st.get("parameters") or []:
+                    x["name"] = nv(x.get("name"))
+                if st.get("not_stated"):
+                    st["not_stated"] = [nv(x) for x in st["not_stated"]]
+            for c in r.get("characterizations") or []:
+                c["technique"] = nv(c.get("technique"))
+                for x in c.get("settings") or []:
+                    x["name"] = nv(x.get("name"))
+                if c.get("not_stated"):
+                    c["not_stated"] = [nv(x) for x in c["not_stated"]]
+            for o in r.get("outcomes") or []:
+                o["property"] = nv(o.get("property"))
+        for c in d.get("comparisons") or []:
+            c["property"] = nv(c.get("property"))
+        if json.dumps(d, ensure_ascii=False) != avant:
+            f.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+            n += 1
+    return n
+
+
 def cmd_fusion(args):
-    """Promeut les ajouts en attente ; --renomme ancien=nouveau fusionne un ajout dans un nom existant (synonyme)."""
-    ren = dict(a.split("=", 1) for a in args if "=" in a)
+    """Promeut les ajouts en attente.
+
+    --renomme ancien=nouveau : fusionne un ajout dans un nom existant ou promu (devient synonyme).
+    --decisions F.json : {"renomme": {ancien: nouveau}, "refuse": {nom: raison}, "redefinit": {nom: définition},
+                          "etend_techniques": {propriété: [techniques]}, "extractions": "dossier"} ;
+                          les renommages sont aussi appliqués aux extractions du dossier donné.
+    """
+    dec = {}
+    if "--decisions" in args:
+        dec = json.loads(Path(args[args.index("--decisions") + 1]).read_text(encoding="utf-8"))
+    ren = dict(dec.get("renomme", {}))
+    ren.update(dict(a.split("=", 1) for a in args if "=" in a and not a.endswith(".json")))
+    refuse = dec.get("refuse", {})
     v = charger_officiel()
     noms = {(e["type"], e["nom"]): e for e in v["entrees"]}
-    n_prom = n_fus = 0
-    for e in charger_ajouts():
+    n_prom = n_fus = n_ref = 0
+    attente = charger_ajouts()
+    for e in attente:  # 1. promotion de ce qui n'est ni renommé ni refusé
+        if e["nom"] in refuse:
+            n_ref += 1
+            continue
+        if e["nom"] not in ren and (e["type"], e["nom"]) not in noms:
+            e2 = {k: e[k] for k in ("type", "nom", "definition", "cases", "reglages", "techniques", "unite") if k in e}
+            e2["origine"] = e["origine"]
+            v["entrees"].append(e2)
+            noms[(e["type"], e["nom"])] = e2
+            n_prom += 1
+    for e in attente:  # 2. renommages vers un nom officiel ou promu
         if e["nom"] in ren:
             cible = noms.get((e["type"], ren[e["nom"]]))
             if cible is None:
                 raise SystemExit(f"cible {ren[e['nom']]!r} introuvable pour {e['nom']!r}")
             cible.setdefault("synonymes", []).append(e["nom"])
             n_fus += 1
-        elif (e["type"], e["nom"]) not in noms:
-            e2 = {k: e[k] for k in ("type", "nom", "definition", "cases", "reglages", "techniques", "unite") if k in e}
-            e2["origine"] = e["origine"]
-            v["entrees"].append(e2)
-            noms[(e["type"], e["nom"])] = e2
-            n_prom += 1
+    for nom, d in dec.get("redefinit", {}).items():
+        cibles = [e for e in v["entrees"] if e["nom"] == nom]
+        if not cibles:
+            raise SystemExit(f"redefinit : {nom!r} introuvable")
+        for e in cibles:
+            e["definition"] = d
+    for prop, techs in dec.get("etend_techniques", {}).items():
+        e = noms.get(("propriete", prop))
+        if e is None:
+            raise SystemExit(f"etend_techniques : propriété {prop!r} introuvable")
+        for t in techs:
+            if ("technique", t) not in noms:
+                raise SystemExit(f"etend_techniques : technique {t!r} introuvable")
+            if t not in (e.get("techniques") or []):
+                e.setdefault("techniques", []).append(t)
     v["version"] += 1
     v["date"] = time.strftime("%Y-%m-%d")
+    v.setdefault("refuses", {}).update(refuse)
     OFFICIEL.write_text(json.dumps(v, ensure_ascii=False, indent=1), encoding="utf-8")
     arch = VDIR / f"ajouts_fusionnes_v{v['version'] - 1}"
     arch.mkdir(exist_ok=True)
     for f in AJOUTS.glob("PMC*.json"):
         f.rename(arch / f.name)
-    print(f"version {v['version']} : {n_prom} promus, {n_fus} fusionnés en synonymes ; renommer dans les extractions : {ren}")
+    n_ext = renomme_extractions(dec["extractions"], ren) if dec.get("extractions") and ren else 0
+    print(f"version {v['version']} : {n_prom} promus, {n_fus} fusionnés en synonymes, {n_ref} refusés, "
+          f"{len(dec.get('etend_techniques', {}))} propriétés étendues ; {n_ext} extractions renommées")
     cmd_contexte()
 
 
