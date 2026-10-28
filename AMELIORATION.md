@@ -1,0 +1,132 @@
+# Amélioration de la base : état des lieux, décisions et pistes
+
+Document de travail ouvert le 28/10/2026 (discussion avec l'utilisateur, rien n'est encore implémenté de ce qui est marqué « à faire »). Il rassemble ce que les tests ont montré, les décisions prises, le fonctionnement actuel du pipeline et les changements envisagés. Résultats chiffrés et verdicts des tests : `audits/registre_tests.md`.
+
+## 1. Objectif
+
+Une extraction **complète** de chaque article, sur trois axes :
+
+1. **les paramètres de synthèse** qui permettent de refaire le matériau ;
+2. **les propriétés** du matériau synthétisé ;
+3. **les réglages de mesure** qui ont conduit à chaque propriété (appareil, conditions, méthode de calcul), reliés à la valeur qu'ils ont produite.
+
+Tout ce que l'article ne donne pas est **marqué comme absent**, pour pouvoir plus tard étudier ces trous (recombinaison, imputation, lecture des références citées).
+
+## 2. Ce que les tests ont montré (28/10/2026)
+
+| Axe | État | Source |
+|---|---|---|
+| Paramètres de synthèse | quasi complet : « synthèse complète » dans 20 publications sur 20 du test | `audits/test_completude.md` |
+| Propriétés | résultats principaux présents ; résultats secondaires absents (positions de pics, tableaux d'annexe, ajustements de modèles, mesures sur dispositifs : 15 à 130 ajouts par publication) | `audits/test_completude.md`, `audits/couverture_valeurs.md` |
+| Réglages de mesure | point faible : réglages présents dans la base très en dessous de ce que disent les articles ; aucun lien entre une valeur et sa mesure | `audits/audit_grilles.md` |
+| Littérature, statistiques, calculs | absents avant le test (périmètre élargi à la demande de l'utilisateur) | `audits/test_completude.md` |
+| Sélection des publications à compléter | inutile : les publications témoins sont aussi lacunaires que les autres | `audits/test_completude.md` |
+
+Chiffres clés :
+- couverture des nombres de l'article : 81 % des cellules de tableaux, 88 % des nombres avec unité du texte (500 publications) ; 99,9 % et 98,8 % après complétion sur les 20 du test ;
+- grille de synthèse : remplie à 100 % (imposée par `load.py`), mais ≈ 10 % des cases « non cité » suspectes (la valeur figure dans la citation de l'étape) ;
+- réglages hors grille ni extraits ni déclarés absents : remplissage d'autoclave 95 %, vitesse d'agitation 84 %, refroidissement 53 %, pression ou vide 43 % ;
+- réglages de caractérisation dans la base contre dans l'article : plage 2θ 46 % / 97 %, électrolyte 33 % / 99 %, masse active 1 % / 44 %, dégazage BET 32 % / 45 % ;
+- fidélité des ajouts du test : 1 faux sur 630 contrôlés, hors une erreur de source corrigée (réponses aux relecteurs prises pour l'article).
+
+## 3. Fonctionnement actuel du pipeline
+
+### 3.1 Circuit d'une publication
+
+```
+article (XML Europe PMC)
+  │ sections.py + enrich.py : texte, légendes, annexes, références, figures
+  ▼
+1. Extracteur (Sonnet) ──► extractions/PMCID.json
+  │ load.py check (automatique, bloquant)
+  ▼ load.py load → synthese.db (+ canon.py : noms canoniques)
+2. Critique de fidélité (Sonnet)   ┐ en parallèle,
+3. Critique scientifique (Opus)    ┘ chacun écrit un fichier critique
+  │ critic_load.py → table critiques
+  ▼
+4. Orchestrateur : tranche chaque constat (corriger / rejeter), écrit les décisions
+  ▼
+5. Agent de correction (Sonnet) : applique les décisions dans le JSON
+  │ load.py check + load + contrôle de quelques ajouts par l'orchestrateur
+  ▼
+Clôture. Tous les 50 articles : audit.py + relecture intégrale de 1 publication sur 5 (agent en lecture seule)
+```
+
+### 3.2 Contexte reçu par chaque agent
+
+| Tour | Modèle | Ce qu'il lit | Ce qu'il ne voit pas | Ce qu'il écrit |
+|---|---|---|---|---|
+| 1. Extraction | Sonnet, `high` | `RUNBOOK.md` (26 ko : règles, grille, format JSON), l'article en entier (texte, annexes, légendes), la liste des références, les figures utiles, une extraction modèle (`PMC6199062.json`) | aucune critique, aucune autre publication, **aucune liste de méthodes ni de paramètres** (seulement des exemples de noms dans le RUNBOOK) | le JSON et un journal de décisions |
+| 2. Fidélité | Sonnet, `high` | `CRITIQUE.md`, l'article **d'abord** (sa propre liste d'échantillons), puis l'extraction, et les figures pour les valeurs lues sur figure | le web, le journal de l'extracteur | des constats typés : faux, manquant, déduit, attribution, « non cité » à tort, mineur |
+| 3. Science | Opus, `high` | `PLAUSIBILITE.md`, une vue de l'extraction sans citations, l'article, `references/fondateurs.md` et `constantes.md`, une dizaine de recherches web | — (il ne corrige rien) | un verdict par voie, des calculs de stœchiométrie, des problèmes avec sources |
+| 4. Décision | orchestrateur (Opus) | les deux critiques, l'article aux passages concernés | — | les décisions par constat |
+| 5. Correction | Sonnet, `high` | `PROMPT_CORRECTION.md`, les deux critiques, les décisions, les passages de l'article | — | le JSON corrigé ; chaque constat marqué corrigé ou rejeté, avec la raison |
+
+Passes ajoutées le 28/10/2026 : complément (`PROMPT_COMPLEMENT.md`, guidé par la sonde), test de complétude (`PROMPT_TEST_COMPLETUDE.md`, lecture intégrale et ajout seulement), critique des ajouts (`audits/pilote_complement/CRITIQUE_AJOUTS.md`).
+
+### 3.3 Création et vérification d'une donnée
+
+1. **Création** : l'extracteur écrit chaque valeur avec la valeur (`value_num` ou `value_text`), l'unité telle qu'écrite et la citation mot pour mot.
+2. **Vérification mécanique** (`load.py check`, refus si erreur) :
+   - la citation existe exactement dans le texte de l'article (après normalisation des espaces) ;
+   - le nombre apparaît dans sa propre citation, sauf valeur lue sur figure ;
+   - unités présentes, bornes physiques (pH entre 0 et 14, température possible, durée positive) ;
+   - structure cohérente : parents, branches avec leur variation, étapes numérotées ;
+   - grille de synthèse remplie : chaque case est citée ou déclarée « non cité ».
+3. **Normalisation** au chargement : `canon.py` rattache le nom brut à un nom canonique, et la conversion SI est faite, chacun dans une colonne séparée.
+4. **Deux lectures indépendantes** : la critique de fidélité relit l'article (bonne valeur, bonne voie, rien d'oublié) ; la critique scientifique juge la vraisemblance. C'est la seule vérification de **l'attribution** (bon échantillon, bonne étape).
+5. **Audit de palier** : citations et nombres revérifiés, relecture intégrale de 20 % des publications, échantillon de 30 valeurs relu.
+
+### 3.4 Ce qui n'est pas vérifié aujourd'hui
+
+- **Les noms** : rien n'impose un nom de méthode, de paramètre ou de propriété (682 noms de paramètres pour 37 concepts, 16 577 noms de propriétés).
+- **Les « non cité »** : `load.py` vérifie qu'une case est remplie, pas que l'absence est réelle.
+- **Les chaînes `conditions`** et les `value_text` ne sont pas comparées au texte au-delà de la citation globale.
+- **Le lien résultat → mesure** n'existe pas.
+- **La grille de synthèse** ne dépend pas de la méthode (7 familles d'étapes, mêmes cases pour une hydrothermale, un sol-gel ou un dépôt de film) ; **il n'existe aucune grille de caractérisation**. La liste par méthode (`ESS` dans `analyses/audit_parametres.py`) ne sert qu'à l'audit. Le nom de méthode est du texte libre ; son classement en 29 classes ne concorde qu'à 69 % avec la signature des étapes.
+- **Omission plutôt qu'hallucination** : le modèle prend les réglages saillants (puissance, mode d'addition) et laisse les routiniers (« stirred at 500 rpm ») quand ils ne sont pas dans la grille. L'erreur inverse porte sur les « non cité » déclarés à tort (≈ 10 %).
+
+## 4. Décisions de l'utilisateur (28/10/2026)
+
+1. **Grilles aussi complètes que possible**, de synthèse (par étape et par méthode) et de caractérisation (par technique). Tout réglage absent de l'article est **marqué**.
+2. **Vocabulaire contrôlé extensible** : l'agent prend d'abord un nom de la liste ; s'il en ajoute un (méthode, paramètre, propriété, technique), le nom est **accepté directement**, avec une **définition rédigée par l'agent**.
+3. **Toutes les méthodes ont une définition** ; la liste des noms avec leurs définitions est donnée **en contexte à chaque agent**.
+4. **Revue continue** des noms ajoutés (à chaque chargement, pas seulement en fin de passe) ; un nom ajouté devient disponible pour les agents suivants.
+5. **Les trous seront étudiés plus tard**, avec les références citées par les articles.
+6. **Périmètre élargi** (déjà en place) : valeurs de référence dans `characterizations.conditions`, statistiques en `outcomes`, valeurs de la littérature dans la table `comparisons`, calculs DFT en voies `kind: calcul`.
+
+## 5. Changements envisagés (à discuter puis valider)
+
+### 5.1 Vocabulaire avec définitions
+
+- Table `vocabulaire` étendue : nom, type (méthode, paramètre, propriété, technique, réglage de mesure), **définition**, unité attendue, synonymes, origine (liste initiale ou ajouté par un agent, avec la publication), version.
+- Liste initiale construite à partir de `canon.py` (37 paramètres, 95 propriétés, 29 méthodes) ; une définition pour chaque entrée.
+- Fichier de contexte généré pour les agents (par exemple `docs/vocabulaire/contexte_agents.md`), regénéré à chaque ajout.
+- `load.py check` : un nom absent de la liste doit porter une définition ; il est alors inscrit dans la table et la liste suivante le contient.
+- La critique de fidélité vérifie aussi qu'un nom ajouté ne doublonne pas un nom existant.
+- Point ouvert : avec plusieurs agents en parallèle, deux noms peuvent être créés en même temps pour le même concept ; la revue continue les fusionne à la fin du lot.
+
+### 5.2 Grilles
+
+- **Synthèse, deux niveaux** : par type d'étape (grille actuelle élargie : agitation, refroidissement, pression ou vide, vitesse d'addition, etc.) et par méthode (autoclave : volume, remplissage, refroidissement ; micro-ondes : puissance, pression ; dépôt par centrifugation : vitesse, durée…). Les deux niveaux sont nécessaires, car une voie mêle souvent plusieurs méthodes (hydrothermale puis calcination). Méthode choisie dans la liste, ou ajoutée avec définition.
+- **Caractérisation, par technique** : réglages attendus (XRD : rayonnement, plage, pas, méthode de taille ; BET : gaz, température, dégazage ; électrochimie : électrolyte, électrodes, masse active, vitesse de balayage ; catalyse : masse, concentration, source lumineuse ; etc.), chacun cité ou déclaré absent.
+- **Lien résultat → mesure** : colonne `outcomes.characterization_id` (ou équivalent), remplie par l'agent, vérifiée par `load.py` (technique compatible avec la propriété).
+- **États d'une case** : cité / non cité (cherché, absent de l'article) / **non cherché** (la case n'existait pas quand l'article a été extrait). Sans ce troisième état, l'élargissement d'une grille transforme des cases jamais regardées en faux trous. Typage possible plus tard : « non applicable », « renvoyé à une référence ».
+- **Contrôle des « non cité »** au chargement : signaler une case déclarée absente quand la citation de l'étape contient un motif de cette case (°C, rpm, « three times »…).
+
+### 5.3 Passe de complétion sur toute la base
+
+- Consigne du test de complétude, corrigée des cinq défauts relevés : fichiers de relecture par les pairs exclus ; une condition ajoutée = une entrée avec sa citation ; valeurs d'étalonnage en une entrée par technique ; conditions de mesure absentes en doute, pas en `not_stated` ; lien résultat → mesure.
+- Sur les 480 publications restantes (les 20 du test sont faites), avec les nouvelles grilles et le vocabulaire en contexte ; critique des ajouts sur 1 publication sur 5.
+- Coût mesuré : 160–175 k jetons par publication (jusqu'à 395 k pour une publication avec annexes et calculs lourds), soit ≈ 80 M pour 480 publications, plus ≈ 15 M de critiques (≈ 10 à 12 fenêtres de 5 h).
+- Préalable : régler le poids du dépôt (`.git` ≈ 3 Go, `synthese.db` ≈ 63 Mo pour une limite GitHub de 100 Mo), car la base sera rechargée en entier.
+
+### 5.4 Ordre proposé
+
+1. Vocabulaire avec définitions et grilles (sans agent, une session).
+2. Pilote de 10 publications avec la nouvelle consigne.
+3. Décision sur la passe complète, après règlement du poids du dépôt.
+
+## 6. Fichiers liés
+
+`audits/registre_tests.md` (tous les tests et leur verdict), `audits/test_completude.md`, `audits/audit_grilles.md`, `audits/couverture_valeurs.md`, `audits/pilote_complement.md`, `audits/sonde_manques.md`, `audits/audit_verification.md`, `audits/audit_contenu.md`, `canon.py`, `docs/vocabulaire/`, `PROMPT_COMPLEMENT.md`, `PROMPT_TEST_COMPLETUDE.md`.
