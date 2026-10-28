@@ -76,7 +76,9 @@
    "yield": null,
    "succeeded": true,
    "not_stated": [
-    "yield"
+    "yield",
+    "drying_mode",
+    "repetitions"
    ],
    "reagents": [
     {
@@ -188,7 +190,8 @@
      ],
      "not_stated": [
       "gas_flow",
-      "cooling_rate"
+      "cooling_rate",
+      "cooling_mode"
      ]
     },
     {
@@ -288,6 +291,34 @@
      "instrument": "100 W lamp with a filter cutting off UV rays (200–400 nm)",
      "conditions": "80 mL of 30 mg/L RhB, 0.05 g of sample, 2 h in the dark before irradiation, sampling every 1 h, absorbance read at 553 nm after removing the catalyst by centrifuge",
      "quote": "Into 80 mL of the 30 mg/L RhB solution, 0.05 g of the sample was dispersed under continuously stirring and then the solution was kept in dark for 2 h to achieve adsorption–desorption equilibrium before irradiated by a 100 W lamp with a filter cutting off UV rays (200–400 nm)."
+    },
+    {
+     "technique": "BET (N2 adsorption–desorption)",
+     "result": "N2 adsorption–desorption curves with linear BET plots shown for MCN-500 (Supplementary Fig. 2)",
+     "instrument": "TriStar 3000",
+     "conditions": "N2 adsorption–desorption (adsorbate gas N2); degassing temperature and time not stated",
+     "quote": "N2 adsorption – desorption curves (inset: linear BET plots)"
+    },
+    {
+     "technique": "UV-vis DRS / Tauc plots",
+     "result": "optical band gaps of g-C3N4 and MoS2 derived from DRS data (Supplementary Fig. 4b–d)",
+     "instrument": null,
+     "conditions": "diffuse reflection spectra; Tauc plots of [F(R)hν]2 vs. photon energy derived from the Kubelka–Munk equation (CN-500, MCN-600, MCN-500)",
+     "quote": "Tauc plots (b) CN-500, (c) MCN-600, and (d) MCN-500 present relationship of [F(R)hν]2 vs. photon energy derived from Kubelka – Munk equation"
+    },
+    {
+     "technique": "photocatalytic RhB degradation (Supplementary Table 1, this work)",
+     "result": "90 % degradation efficiency in 7 h and rate 0.228 h−1, 2 times that of pure g-C3N4",
+     "instrument": "100 W incandescent lamp (> 400 nm)",
+     "conditions": "RhB 30 mg/L; photocatalyst concentration 0.625 g/L; light source 100 W incandescent lamp (> 400 nm)",
+     "quote": "calcination RhB/30 0.625 100 W incandescent lamp (> 400 nm) 90/7 0.228/2 This work"
+    },
+    {
+     "technique": "radical/hole scavenger experiments (photocatalysis)",
+     "result": "see outcome scavenger_test",
+     "instrument": null,
+     "conditions": "quenchers: benzoquinone (BQ) for superoxide anion (O2·−), tert-butanol (TB) for hydroxyl radicals, EDTA-Na for photo-generated holes, DMSO for electrons",
+     "quote": "The quenching experiments were conducted using benzoquinone (BQ), tert-butanol (TB), sodium salt of ethylenediaminetetraacetic acid (EDTA-Na), and dimethyl sulfoxide (DMSO) as quenchers for superoxide anion (O2·−), hydroxyl (·OH) radicals, photo-generated holes, and electrons, respectively."
     }
    ],
    "outcomes": [
@@ -415,6 +446,30 @@
      "unit": "V",
      "from_figure": "Fig. 5d",
      "quote": "the remaining CBM and VBM of MoS2 and g-C3N4 and these components in MCN-500 could be calculated as illustrated in Fig. 5d"
+    },
+    {
+     "property": "g-C3N4_(002)_2theta_in_composite",
+     "value_num": 28.0,
+     "unit": "°",
+     "quote": "the peaks corresponding to (002) plane of g-C3N4 in the composites MCN-450, MCN-500 and MCN-550 shift to diffraction angle (2θ) of 28.0° compared with pure g-C3N4 (CN-500)"
+    },
+    {
+     "property": "MoS2_(002)_interlayer_spacing_XRD",
+     "value_num": 1.01,
+     "unit": "nm",
+     "quote": "the interlayer space of (002), corresponding to the diffraction peak at 2θ of 8.7°, was calculated as 1.01 nm"
+    },
+    {
+     "property": "MoS2_(002)_2theta",
+     "value_num": 8.7,
+     "unit": "°",
+     "quote": "the interlayer space of (002), corresponding to the diffraction peak at 2θ of 8.7°, was calculated as 1.01 nm"
+    },
+    {
+     "property": "TGA_first_step_end_temperature",
+     "value_num": 345,
+     "unit": "°C",
+     "quote": "The first step, from room temperature to around 345 °C, may be attributed to the evaporation of physically adsorbed water"
     }
    ],
    "missing_fields": [
@@ -486,6 +541,18 @@
      "property": "g-C3N4_polycondensation",
      "value_text": "polycondensation of g-C3N4 incomplete at 450 °C (significant C=N–C content)",
      "quote": "However, at this temperature, polycondensation of g-C3N4 is incomplete, which is evidenced by the presence of a significant content of C=N–C group."
+    },
+    {
+     "property": "g-C3N4_(002)_2theta_in_composite",
+     "value_num": 28.0,
+     "unit": "°",
+     "quote": "the peaks corresponding to (002) plane of g-C3N4 in the composites MCN-450, MCN-500 and MCN-550 shift to diffraction angle (2θ) of 28.0° compared with pure g-C3N4 (CN-500)"
+    },
+    {
+     "property": "TGA_first_step_end_temperature",
+     "value_num": 345,
+     "unit": "°C",
+     "quote": "The first step, from room temperature to around 345 °C, may be attributed to the evaporation of physically adsorbed water"
     }
    ]
   },
@@ -549,6 +616,18 @@
      "property": "ID_over_IG_Raman",
      "value_num": 1.11,
      "quote": "The ID/IG of MCN-500, -550, and -600 are 0.91, 1.11, and 1.14, respectively"
+    },
+    {
+     "property": "g-C3N4_(002)_2theta_in_composite",
+     "value_num": 28.0,
+     "unit": "°",
+     "quote": "the peaks corresponding to (002) plane of g-C3N4 in the composites MCN-450, MCN-500 and MCN-550 shift to diffraction angle (2θ) of 28.0° compared with pure g-C3N4 (CN-500)"
+    },
+    {
+     "property": "TGA_first_step_end_temperature",
+     "value_num": 345,
+     "unit": "°C",
+     "quote": "The first step, from room temperature to around 345 °C, may be attributed to the evaporation of physically adsorbed water"
     }
    ]
   },
@@ -581,6 +660,13 @@
      "instrument": null,
      "conditions": null,
      "quote": "For the MCN-600 sample, the pattern showed peaks at angles of 2θ = 32.8°; 39.0° and 58.6°, which can be indexed to the (100), (103) and (110) planes, respectively, corresponding to the hexagonal phase of MoS2 (PDF#37-1492)"
+    },
+    {
+     "technique": "BET (N2 adsorption–desorption)",
+     "result": "N2 adsorption–desorption curves with linear BET plots shown for MCN-600 (Supplementary Fig. 2)",
+     "instrument": "TriStar 3000",
+     "conditions": "N2 adsorption–desorption (adsorbate gas N2); degassing temperature and time not stated",
+     "quote": "N2 adsorption – desorption curves (inset: linear BET plots)"
     }
    ],
    "outcomes": [
@@ -639,6 +725,12 @@
      "property": "morphology",
      "value_text": "MoS2 nanosheets reconstruct into a denser structure",
      "quote": "However, at higher temperatures, MoS2 nanosheets tend to reconstruct into denser structure as shown in Fig. 2e."
+    },
+    {
+     "property": "TGA_first_step_end_temperature",
+     "value_num": 345,
+     "unit": "°C",
+     "quote": "The first step, from room temperature to around 345 °C, may be attributed to the evaporation of physically adsorbed water"
     }
    ]
   },
@@ -693,7 +785,8 @@
       "heating_rate",
       "gas_flow",
       "cooling_rate",
-      "thiourea_mass"
+      "thiourea_mass",
+      "cooling_mode"
      ]
     },
     {
@@ -722,6 +815,20 @@
      "instrument": null,
      "conditions": null,
      "quote": "The CN-500 pattern exhibited two distinct diffraction peaks with a weak one at 13.2° and a strong one at 27.2°"
+    },
+    {
+     "technique": "BET (N2 adsorption–desorption)",
+     "result": "N2 adsorption–desorption curves with linear BET plots shown for CN-500 (Supplementary Fig. 2)",
+     "instrument": "TriStar 3000",
+     "conditions": "N2 adsorption–desorption (adsorbate gas N2); degassing temperature and time not stated",
+     "quote": "N2 adsorption – desorption curves (inset: linear BET plots)"
+    },
+    {
+     "technique": "UV-vis DRS",
+     "result": "absorption band edge at around 440 nm",
+     "instrument": null,
+     "conditions": "diffuse reflection spectra (UV–Vis DRS), Supplementary Fig. 4a; spectral range not stated",
+     "quote": "the UV–Vis DRS absorption data of g-C3N4 exhibits an absorption band edge at around 440 nm"
     }
    ],
    "outcomes": [
@@ -1106,6 +1213,14 @@
   {
    "where": "MCN-500 Fig. 5d niveaux de bande",
    "issue": "Lecture de la Fig. 5d : l'axe porte « E vs. NHE (pH = 7) » alors que le texte donne les mêmes valeurs (0,549, − 0,340, 1,007, − 0,826 V) en RHE. Les écarts entre CB et VB lus sur la figure ne retombent pas toujours sur les gaps affichés : MoS2 avant contact − 0,643 à 1,007 V = 1,65 eV pour 1,3 eV annoncé ; MoS2 après contact 1,74 eV ; g-C3N4 après contact 2,75 eV pour 2,85 eV annoncé (avant contact 2,85 eV cohérent). Valeurs recopiées telles qu'étiquetées."
+  },
+  {
+   "where": "MCN-500 espacement (002) de MoS2 : 1,01 nm à 2θ = 8,7°",
+   "issue": "Le texte donne cette valeur « in all of the composites » sans nommer d'échantillon ; elle est rattachée à MCN-500 (voie de base) seulement. Le texte la compare à une valeur théorique de 0,62 nm, et le HR-TEM de MCN-500 attribue ≈ 1 nm au plan (100) : indexation incohérente entre les deux passages (déjà notée). Valeur de l'article non corrigée."
+  },
+  {
+   "where": "Complément : TGA, premier palier jusqu'à ≈ 345 °C",
+   "issue": "Le texte dit « for all the samples » (composites) ; le palier est donc reporté sur les quatre voies MCN-T, pas sur CN-500 dont l'article ne dit pas qu'elle est incluse dans la phrase. Même remarque pour le décalage du pic (002) de g-C3N4 à 28,0° : l'article cite seulement MCN-450, MCN-500 et MCN-550."
   }
  ]
 }
