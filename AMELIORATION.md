@@ -88,97 +88,104 @@ Passes ajoutées le 28/10/2026 : complément (`PROMPT_COMPLEMENT.md`, guidé par
 
 ## 4. Décisions de l'utilisateur (28/10/2026)
 
-1. **Grilles aussi complètes que possible**, de synthèse (par étape et par méthode) et de caractérisation (par technique). Tout réglage absent de l'article est **marqué**.
-2. **Vocabulaire contrôlé extensible** : l'agent prend d'abord un nom de la liste ; s'il en ajoute un (méthode, paramètre, propriété, technique), le nom est **accepté directement**, avec une **définition rédigée par l'agent**.
-3. **Toutes les méthodes ont une définition** ; la liste des noms avec leurs définitions est donnée **en contexte à chaque agent**.
-4. **Revue continue** des noms ajoutés (à chaque chargement, pas seulement en fin de passe) ; un nom ajouté devient disponible pour les agents suivants.
+1. **Grilles aussi complètes que possible** : synthèse (par action d'étape, y compris les actions propres à une méthode) et caractérisation (par technique). Tout réglage absent de l'article est **marqué**.
+2. **Vocabulaire contrôlé extensible** : l'agent prend d'abord un nom de la liste ; s'il en ajoute un (méthode, action, paramètre, propriété, technique, réglage), le nom est **accepté directement**, avec une **définition rédigée par l'agent**.
+3. **Tout a une définition** (méthodes en premier) ; la liste des noms avec leurs définitions est donnée **en contexte à chaque agent**.
+4. **Deux rythmes pour le vocabulaire** : les ajouts sont visibles tout de suite par les autres agents ; la **fusion** (doublons, définitions, promotion dans le vocabulaire officiel) se fait **tous les 50 publications**, à l'audit de palier.
 5. **Les trous seront étudiés plus tard**, avec les références citées par les articles.
 6. **Périmètre élargi** (déjà en place) : valeurs de référence dans `characterizations.conditions`, statistiques en `outcomes`, valeurs de la littérature dans la table `comparisons`, calculs DFT en voies `kind: calcul`.
 
-## 5. Changements envisagés (à discuter puis valider)
+## 5. Chantier proposé (à valider avant lancement)
 
 ### 5.1 Vocabulaire avec définitions
 
-- Table `vocabulaire` étendue : nom, type (méthode, paramètre, propriété, technique, réglage de mesure), **définition**, unité attendue, synonymes, origine (liste initiale ou ajouté par un agent, avec la publication), version.
-- Liste initiale construite à partir de `canon.py` (37 paramètres, 95 propriétés, 29 méthodes) ; une définition pour chaque entrée.
-- Fichier de contexte généré pour les agents (par exemple `docs/vocabulaire/contexte_agents.md`), regénéré à chaque ajout.
-- `load.py check` : un nom absent de la liste doit porter une définition ; il est alors inscrit dans la table et la liste suivante le contient.
-- La critique de fidélité vérifie aussi qu'un nom ajouté ne doublonne pas un nom existant.
-- Point ouvert : avec plusieurs agents en parallèle, deux noms peuvent être créés en même temps pour le même concept ; la revue continue les fusionne à la fin du lot.
+**Constat** : 1 383 noms de méthode différents pour 1 382 voies de base (chaque agent écrit sa phrase) ; 176 actions d'étape, dont 30 couvrent 92 % des étapes et 53 n'apparaissent qu'une fois (doublons d'orthographe comme `recrystallize` / `recrystallise`) ; 682 noms de paramètres pour 37 concepts ; 16 577 noms de propriétés. Sans garde-fou, un agent crée son propre nom dès qu'il hésite.
 
-### 5.2 Grilles
+**Contenu** : table `vocabulaire` étendue, une entrée par nom :
+- type : méthode, action d'étape, paramètre, propriété, technique, réglage de mesure ;
+- **définition** (une ligne pour le contexte des agents, plus longue si besoin) ;
+- unité attendue, synonymes (anciens noms fusionnés) ;
+- pour une action : ses **cases de grille** ; pour une technique : ses **réglages attendus** et les **propriétés qu'elle peut mesurer** (table propriété → techniques admises) ;
+- origine (liste initiale, ou ajout par un agent avec la publication), version du vocabulaire.
 
-- **Synthèse, deux niveaux** : par type d'étape (grille actuelle élargie : agitation, refroidissement, pression ou vide, vitesse d'addition, etc.) et par méthode (autoclave : volume, remplissage, refroidissement ; micro-ondes : puissance, pression ; dépôt par centrifugation : vitesse, durée…). Les deux niveaux sont nécessaires, car une voie mêle souvent plusieurs méthodes (hydrothermale puis calcination). Méthode choisie dans la liste, ou ajoutée avec définition.
-- **Caractérisation, par technique** : réglages attendus (XRD : rayonnement, plage, pas, méthode de taille ; BET : gaz, température, dégazage ; électrochimie : électrolyte, électrodes, masse active, vitesse de balayage ; catalyse : masse, concentration, source lumineuse ; etc.), chacun cité ou déclaré absent.
-- **Lien résultat → mesure** : colonne `outcomes.characterization_id` (ou équivalent), remplie par l'agent, vérifiée par `load.py` (technique compatible avec la propriété).
-- **États d'une case** : cité / non cité (cherché, absent de l'article) / **non cherché** (la case n'existait pas quand l'article a été extrait). Sans ce troisième état, l'élargissement d'une grille transforme des cases jamais regardées en faux trous. Typage possible plus tard : « non applicable », « renvoyé à une référence ».
-- **Contrôle des « non cité »** au chargement : signaler une case déclarée absente quand la citation de l'étape contient un motif de cette case (°C, rpm, « three times »…).
-
-### 5.3 Passe de complétion sur toute la base
-
-- Consigne du test de complétude, corrigée des cinq défauts relevés : fichiers de relecture par les pairs exclus ; une condition ajoutée = une entrée avec sa citation ; valeurs d'étalonnage en une entrée par technique ; conditions de mesure absentes en doute, pas en `not_stated` ; lien résultat → mesure.
-- Sur les 480 publications restantes (les 20 du test sont faites), avec les nouvelles grilles et le vocabulaire en contexte ; critique des ajouts sur 1 publication sur 5.
-- Coût mesuré : 160–175 k jetons par publication (jusqu'à 395 k pour une publication avec annexes et calculs lourds), soit ≈ 80 M pour 480 publications, plus ≈ 15 M de critiques (≈ 10 à 12 fenêtres de 5 h).
-- Préalable : régler le poids du dépôt (`.git` ≈ 3 Go, `synthese.db` ≈ 63 Mo pour une limite GitHub de 100 Mo), car la base sera rechargée en entier.
-
-### 5.4 Ordre proposé
-
-1. Vocabulaire avec définitions et grilles (sans agent, une session).
-2. Pilote de 10 publications avec la nouvelle consigne.
-3. Décision sur la passe complète, après règlement du poids du dépôt.
-
-### 5.5 Corrections proposées pour les quatre défauts (discussion du 28/10/2026)
-
-**a. « Non cité » à tort**
-- Détection automatique au chargement (`load.py`, avertissement, pas erreur : faux positifs possibles) : une case déclarée absente dont la citation de l'étape contient un motif de la case (°C, h, rpm, « three times », atmosphère) ; pureté ou fournisseur déclarés absents alors qu'une phrase de l'article nomme le réactif avec un grade ou un fournisseur, ou qu'une phrase générale couvre tous les réactifs. Mesure actuelle : ≈ 10 % des « non cité » de température, durée et pureté (`audits/audit_grilles.md`).
-- Correction de l'existant : passe ciblée par agent, qui ne reçoit que la liste des cases suspectes avec leur passage ; pour chacune, valeur extraite avec citation ou absence confirmée avec raison. Petit coût (quelques dizaines de milliers de jetons par publication concernée).
-- Prévention : la règle et le contrôle automatique empêchent la récidive ; la critique de fidélité garde sa catégorie « non cité à tort ».
-
-**b. Chaînes `conditions` des mesures**
-- Problème : texte libre sans citation propre, non vérifié (les agents y ajoutent du texte en fin de chaîne).
-- Structure proposée : chaque caractérisation porte une liste de réglages `settings`, un par réglage (`name` pris dans le vocabulaire des réglages de la technique, `value_num` ou `value_text`, `unit`, `quote`), vérifiés comme les paramètres de synthèse (citation exacte, nombre dans la citation). Les réglages attendus de la technique absents de l'article vont dans un `not_stated` de la caractérisation. L'ancienne chaîne reste en lecture (`conditions_text`), sans être utilisée pour l'analyse.
-- Correction de l'existant : pas de découpage automatique fiable ; fait par la passe de complétion (l'agent retrouve la citation de chaque réglage).
-
-**c. Lien résultat → mesure**
-- Structure proposée : chaque résultat porte la référence de la caractérisation qui l'a produit (même voie ou voie parente, comme l'héritage des étapes). `load.py` vérifie que la caractérisation existe et que la technique est compatible avec la propriété (table propriété → techniques admises dans le vocabulaire : surface BET → BET ; taille de cristallite → XRD ; bande interdite → UV-vis…).
-- Correction de l'existant, en deux temps : (1) lien automatique quand une seule caractérisation compatible existe dans la voie ou ses parents ; (2) les cas ambigus ou sans mesure vont à la passe de complétion. Estimation sur la base actuelle (39 527 résultats) : 56 % ont une propriété rattachable à une technique ; parmi eux, 40 % ont une seule mesure candidate (lien automatique), 41 % plusieurs (choix par agent), 19 % aucune (mesure à créer ou à déclarer absente).
-
-**d. Grille de synthèse indépendante de la méthode**
-- Idée : la méthode se réalise dans une étape. Le vocabulaire des actions d'étape s'enrichit d'actions propres à une méthode (traitement hydrothermal ou solvothermal, chauffage micro-ondes, dépôt par centrifugation, broyage, pyrolyse sous gaz…), chacune avec sa définition et ses cases (autoclave : volume, remplissage, température, durée, refroidissement ; micro-ondes : puissance, température, pression ; dépôt par centrifugation : vitesse, durée, volume déposé ; broyage : vitesse, durée, rapport billes/poudre). La voie porte la liste de ses méthodes, prise dans le vocabulaire.
-- Les deux niveaux (étape générique et méthode) se rejoignent ainsi dans une seule grille par action, plus simple à contrôler dans `load.py`.
-- Correction de l'existant : reclassement automatique des actions existantes (par exemple « heat » avec un autoclave en équipement → traitement hydrothermal), vérifié par échantillon ; les nouvelles cases sont marquées « non cherché » jusqu'à la passe de complétion.
-
-**Ordre** : (0) relecture du vocabulaire initial avec l'utilisateur ; (1) vocabulaire avec définitions et outil `vocab.py` (méthodes, actions, réglages par technique, table propriété → techniques) ; (2) évolutions de `load.py` (avertissements « non cité », réglages structurés, lien résultat → mesure, grille par action, état « non cherché ») ; (3) liens automatiques et reclassement des actions sur l'existant ; (4) pilote de 10 publications ; (5) passe de complétion, qui traite en même temps les « non cité » suspects, les réglages structurés et les liens ambigus.
-
-### 5.6 Vocabulaire contrôlé en pratique : outil, déroulé de l'agent, fusion par palier (discussion du 28/10/2026)
-
-**Constat** : 1 383 noms de méthode différents pour 1 382 voies de base (chaque agent écrit sa phrase) ; 176 actions d'étape, dont 30 couvrent 92 % des étapes et 53 n'apparaissent qu'une fois (doublons d'orthographe comme `recrystallize` / `recrystallise`). Sans garde-fou, un agent crée son propre nom dès qu'il hésite.
+**Liste initiale** construite à partir de `canon.py` (37 paramètres, 95 propriétés), des 29 classes de méthode et des 176 actions existantes, avec une définition pour chaque entrée. **Relue avec l'utilisateur avant tout usage.**
 
 **Outil `vocab.py`** (script lancé par l'agent, comme `load.py check`) :
 - `vocab.py cherche "<termes>"` : les 5 entrées les plus proches, avec définition, cases de grille et synonymes ; cherche dans le vocabulaire officiel **et** dans les ajouts en attente de tous les agents ;
-- `vocab.py ajoute --type <méthode|action|paramètre|propriété|technique|réglage> --nom … --definition "…" [--cases "…"] --ecarte "nom1: raison, nom2: raison"` : refusé sans recherche préalable ou sans justification face aux noms proches ; signale les quasi-doublons ; une fois justifié, le nom est accepté directement (décision de l'utilisateur) et écrit dans le fichier d'ajouts de l'agent (`vocabulaire/ajouts/<PMCID>.json`), pas dans la table commune (aucun conflit d'écriture entre agents parallèles).
+- `vocab.py ajoute --type … --nom … --definition "…" [--cases "…"] --ecarte "nom1: raison, nom2: raison"` : refusé sans recherche préalable ou sans justification face aux noms proches ; signale les quasi-doublons ; une fois justifié, le nom est accepté directement et écrit dans le fichier d'ajouts de l'agent (`vocabulaire/ajouts/<PMCID>.json`), pas dans la table commune (aucun conflit d'écriture entre agents parallèles).
 
-**Déroulé de l'agent extracteur** :
+**Deux rythmes** :
+- **visibilité immédiate** : `vocab.py cherche` lit les ajouts en attente dès leur écriture ; aucun doublon pendant un lot ;
+- **fusion tous les 50 publications**, à l'audit de palier : relecture des ajouts, fusion des doublons (l'ancien nom devient synonyme), correction des définitions floues, promotion dans le vocabulaire officiel avec un nouveau numéro de version, régénération du fichier de contexte, remplacement automatique des noms fusionnés dans les extractions du lot et rechargement ; les cases de grille apportées par une action nouvelle sont marquées « non cherché » dans les publications antérieures, pour une passe ciblée ultérieure ;
+- à chaque chargement, contrôle mécanique seulement (définition présente, quasi-doublons notés pour la fusion).
+
+### 5.2 Grilles
+
+**Synthèse : une grille par action d'étape.** La méthode se réalise dans une étape : le vocabulaire des actions comprend les actions génériques (chauffer, sécher, laver, centrifuger…) et des actions propres à une méthode, chacune avec ses cases :
+- traitement hydrothermal ou solvothermal : volume d'autoclave, taux de remplissage, température, durée, rampe, refroidissement ;
+- chauffage micro-ondes : puissance, température, pression, durée ;
+- dépôt par centrifugation : vitesse, durée, volume déposé ;
+- broyage : vitesse, durée, rapport billes/poudre, atmosphère ;
+- calcination ou recuit : température, durée, atmosphère, rampe, refroidissement ;
+- cases élargies pour les actions génériques : vitesse d'agitation, refroidissement, pression ou vide, vitesse et mode d'addition, débit de gaz, etc.
+
+La voie porte la liste de ses méthodes, prise dans le vocabulaire (une voie mêle souvent plusieurs méthodes, par exemple hydrothermale puis calcination).
+
+**Caractérisation : une grille par technique.** Réglages attendus, par exemple XRD (rayonnement, plage 2θ, pas, méthode de taille de cristallite), BET (gaz, température, dégazage), microscopie (tension, nombre de particules comptées), XPS (source, référence d'étalonnage), UV-vis (plage, méthode du gap), électrochimie (électrolyte, électrodes, masse active, vitesse de balayage), catalyse et adsorption (masse, concentration, volume, source lumineuse, température).
+
+**Trois états pour chaque case** : cité (valeur et citation) ; non cité (cherché, absent de l'article) ; **non cherché** (la case n'existait pas quand l'article a été extrait). Sans le troisième état, l'élargissement d'une grille transforme des cases jamais regardées en faux trous. Typage possible plus tard : « non applicable », « renvoyé à une référence ».
+
+### 5.3 Corrections des quatre défauts
+
+**a. « Non cité » à tort** (≈ 10 % des « non cité » de température, durée et pureté, `audits/audit_grilles.md`)
+- Détection automatique au chargement (avertissement, pas erreur) : case déclarée absente alors que la citation de l'étape contient un motif de la case (°C, h, rpm, « three times », atmosphère) ; pureté ou fournisseur déclarés absents alors qu'une phrase de l'article nomme le réactif avec un grade ou un fournisseur, ou qu'une phrase générale couvre tous les réactifs.
+- Existant : traité par la passe de complétion, qui reçoit la liste des cases suspectes de chaque publication.
+- Prévention : la détection automatique empêche la récidive ; la critique de fidélité garde sa catégorie « non cité à tort ».
+
+**b. Conditions de mesure en texte libre**
+- Chaque caractérisation porte une liste de réglages structurés (`settings`) : nom pris dans la grille de la technique, valeur, unité, **citation propre**, vérifiés comme les paramètres de synthèse. Les réglages attendus absents de l'article vont dans un `not_stated` de la caractérisation.
+- L'ancienne chaîne reste en lecture (`conditions_text`), sans servir à l'analyse.
+- Existant : pas de découpage automatique fiable ; fait par la passe de complétion.
+
+**c. Lien résultat → mesure**
+- Chaque résultat porte la référence de la caractérisation qui l'a produit (même voie ou voie parente, comme l'héritage des étapes) ; `load.py` vérifie qu'elle existe et que la technique est compatible avec la propriété.
+- Existant (39 527 résultats) : 56 % ont une propriété rattachable à une technique ; parmi eux, 40 % ont une seule mesure candidate (**lien automatique, sans agent**), 41 % plusieurs (choix par la passe de complétion), 19 % aucune (mesure à créer ou à déclarer absente).
+
+**d. Grille indépendante de la méthode** : résolu par la grille par action (§ 5.2). Existant : reclassement automatique des actions (par exemple « heat » avec un autoclave en équipement → traitement hydrothermal) et des 1 383 noms de méthode vers le vocabulaire, vérifié par échantillon ; les nouvelles cases sont marquées « non cherché » jusqu'à la passe de complétion.
+
+### 5.4 Déroulé de l'agent extracteur (et de la passe de complétion)
 
 | Moment | Ce que l'agent reçoit ou fait | Garde-fou |
 |---|---|---|
-| 1. Démarrage | `RUNBOOK.md` + vocabulaire officiel en version courte (nom + définition d'une ligne ; ≈ 400 entrées, ≈ 10 k jetons) | il connaît la liste avant de lire l'article |
+| 1. Démarrage | consigne (`RUNBOOK.md` ou consigne de complétion) + vocabulaire officiel en version courte (nom + définition d'une ligne ; ≈ 400 entrées, ≈ 10 k jetons) | il connaît la liste avant de lire l'article |
 | 2. Lecture de l'article | inventaire des échantillons | — |
 | 3. Méthode de chaque voie | choix dans la liste ; `vocab.py cherche` en cas de doute | méthode hors liste = `vocab.py ajoute` |
-| 4. Chaque étape | action choisie dans la liste ; la définition de l'action porte sa grille (cases attendues) | action hors liste = ajout avec définition et cases |
-| 5. Paramètres, réglages, propriétés | nom de la liste en priorité, sinon ajout justifié | idem |
-| 6. `load.py check` | refuse un nom absent de la liste et des ajouts ; contrôle la grille de chaque action et de chaque technique ; avertit sur les « non cité » suspects et les quasi-doublons | aucun nom sans définition |
-| 7. Chargement (orchestrateur) | contrôle mécanique seulement ; les quasi-doublons sont notés pour la fusion du palier | — |
+| 4. Chaque étape | action choisie dans la liste ; la définition de l'action porte sa grille | action hors liste = ajout avec définition et cases |
+| 5. Caractérisations et résultats | technique choisie dans la liste ; réglages structurés avec citation ; chaque résultat relié à sa mesure | technique, réglage ou propriété hors liste = ajout justifié |
+| 6. `load.py check` | refuse un nom absent de la liste et des ajouts ; contrôle la grille de chaque action et de chaque technique ; contrôle le lien résultat → mesure ; avertit sur les « non cité » suspects et les quasi-doublons | aucun nom sans définition |
+| 7. Chargement (orchestrateur) | contrôle mécanique ; quasi-doublons notés pour la fusion du palier | — |
 | 8. Agents suivants du lot | voient les ajouts en attente via `vocab.py cherche` | pas de doublon pendant le lot |
-
-**Deux rythmes** (proposition de l'utilisateur, avec la condition de visibilité immédiate) :
-- **visibilité immédiate** : les ajouts en attente sont lus par `vocab.py cherche` dès leur écriture, sans fusion ;
-- **fusion tous les 50 publications**, à l'audit de palier : relecture des ajouts, fusion des doublons (l'ancien nom devient synonyme), correction des définitions floues, promotion dans le vocabulaire officiel avec un numéro de version, régénération du fichier de contexte, remplacement automatique des noms fusionnés dans les extractions du lot et rechargement ; les cases de grille apportées par une action nouvelle sont marquées « non cherché » dans les publications antérieures, pour une passe ciblée ultérieure.
-- Avantages : vocabulaire officiel stable sur un lot (même version pour tous les agents du lot, lot comparable et reproductible) ; pas de doublon dans le lot ; revue groupée au rythme de l'audit.
 
 **Ce qui empêche l'agent de recréer ses noms** : (1) la liste est donnée d'entrée, avec des définitions ; (2) créer coûte un effort (recherche, définition, justification face aux noms proches), choisir est plus simple ; (3) la grille est attachée à l'action : un nom inventé n'apporte pas de cases et doit en définir ; (4) `load.py` refuse un nom sans définition et `vocab.py` signale les quasi-doublons ; (5) la critique de fidélité vérifie qu'un ajout ne double pas un nom existant, et la fusion du palier rattrape le reste.
 
-**Mesure de réussite au pilote** : nombre de noms ajoutés par publication (cible : un ou deux au plus) et part des ajouts fusionnés à la revue.
+### 5.5 Passe de complétion sur toute la base
+
+- Consigne du test de complétude, corrigée des cinq défauts relevés : fichiers de relecture par les pairs exclus ; une condition ajoutée = un réglage avec sa citation ; valeurs d'étalonnage en une entrée par technique ; conditions de mesure absentes dans le `not_stated` de la caractérisation, jamais dans celui de la synthèse ; lien résultat → mesure.
+- Elle traite en même temps : propriétés et résultats manquants, réglages de mesure structurés, liens ambigus, « non cité » suspects, cases « non cherché », littérature et calculs.
+- Sur les 480 publications restantes (les 20 du test sont faites ; leurs réglages et liens seront repris par la même passe), par paliers de 50 avec fusion du vocabulaire à chaque palier ; critique des ajouts sur 1 publication sur 5.
+- Coût mesuré au test : 160–175 k jetons par publication (jusqu'à 395 k pour une publication avec annexes et calculs lourds), soit ≈ 80 M pour 480 publications, plus ≈ 15 M de critiques (≈ 10 à 12 fenêtres de 5 h). Les nouvelles tâches (réglages structurés, liens) peuvent l'augmenter : le pilote le mesurera.
+- **Préalable : régler le poids du dépôt** (`.git` ≈ 3 Go, `synthese.db` ≈ 63 Mo pour une limite GitHub de 100 Mo par fichier), car la base sera rechargée en entier à chaque palier.
+
+### 5.6 Ordre du chantier
+
+| Étape | Contenu | Agents | Validation de l'utilisateur |
+|---|---|---|---|
+| 0 | Vocabulaire initial avec définitions (méthodes, actions et leurs cases, techniques et leurs réglages, table propriété → techniques) | non | **oui, relecture avant usage** |
+| 1 | Outil `vocab.py` ; évolutions du schéma et de `load.py` (noms contrôlés, grille par action et par technique, réglages structurés, lien résultat → mesure, état « non cherché », avertissements « non cité ») | non | — |
+| 2 | Sur l'existant, sans agent : reclassement des actions et des méthodes, liens automatiques résultat → mesure, marquage « non cherché », rechargement | non | contrôle par échantillon |
+| 3 | Poids du dépôt (`.git`, `synthese.db`) | non | **oui, choix de la solution** |
+| 4 | Pilote de 10 publications avec la nouvelle consigne ; mesures : noms ajoutés par publication (cible : un ou deux au plus), jetons, fidélité des ajouts, couverture | oui (≈ 2 M jetons) | **oui, avant la passe complète** |
+| 5 | Passe de complétion sur les 480 publications, par paliers de 50 | oui (≈ 95 M jetons) | **oui, et plages horaires** |
 
 ## 6. Fichiers liés
 
