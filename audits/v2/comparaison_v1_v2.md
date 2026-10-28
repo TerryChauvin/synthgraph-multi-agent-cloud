@@ -15,14 +15,14 @@
 | résultats | 3278 | 5568 | 1.7 |
 | mesures (caractérisations) | 924 | 731 | 0.79 |
 | mesures avec appareil ou réglages | 878 | 691 | 0.79 |
-| réglages de mesure structurés | 0 | 2084 | — |
+| réglages de mesure structurés | 0 | 2088 | — |
 | réglages de mesure déclarés absents | 0 | 1105 | — |
 | valeurs de la littérature | 0 | 505 | — |
 | cases « non cité » (synthèse) | 2847 | 1738 | 0.61 |
 | résultats liés à leur mesure | 0 | 5406 | — |
 | résultats à mesure non citée | 0 | 57 | — |
-| doutes | 597 | 630 | 1.06 |
-| annotations | 1023 | 674 | 0.66 |
+| doutes | 597 | 631 | 1.06 |
+| annotations | 1023 | 676 | 0.66 |
 
 ## Couverture des nombres de l'article
 
@@ -78,10 +78,10 @@ Cette mesure exige le même nom canonique : elle sous-estime l'accord quand la v
 | PMC5238663 | 5/5 | 31/98 | 68 | 96 | 17 | 85.7/100.0 | 77.3 | 0 |
 | PMC7254238 | 7/7 | 110/151 | 51 | 151 | 3 | 95.8/100.0 | 65.1 | 3 |
 | PMC8866530 | 8/7 | 125/147 | 43 | 146 | 18 | None/None | 50.0 | 2 |
-| PMC9419793 | 8/8 | 93/133 | 29 | 122 | 0 | None/None | 70.9 | 7 |
+| PMC9419793 | 8/8 | 93/133 | 31 | 122 | 0 | None/None | 70.9 | 7 |
 | PMC5680254 | 9/9 | 39/45 | 16 | 43 | 5 | 100.0/100.0 | 86.7 | 4 |
 | PMC10523092 | 8/8 | 28/58 | 10 | 49 | 5 | None/None | 100.0 | 2 |
-| PMC10077337 | 1/1 | 20/165 | 32 | 165 | 20 | 8.2/100.0 | 55.6 | 2 |
+| PMC10077337 | 1/1 | 20/165 | 34 | 165 | 20 | 8.2/100.0 | 55.6 | 2 |
 | PMC6994313 | 1/1 | 15/57 | 34 | 57 | 0 | 9.1/72.7 | 93.3 | 3 |
 | PMC9908928 | 2/2 | 25/78 | 40 | 68 | 1 | 22.6/100.0 | 50.0 | 4 |
 | PMC6301278 | 11/11 | 35/68 | 15 | 66 | 15 | None/None | 78.8 | 1 |

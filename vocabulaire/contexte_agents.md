@@ -1,4 +1,4 @@
-# Vocabulaire contrôlé (version 1, 2026-10-28)
+# Vocabulaire contrôlé (version 2, 2026-10-28)
 
 Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.py cherche <PMCID> "<termes>" --type <type>`, puis, seulement si rien ne convient, `python3 -I vocab.py ajoute …` avec une définition (voir RUNBOOK_V2.md).
 
@@ -45,6 +45,13 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `biomineralization` — Formation d'un minéral dans ou par un système biologique (cellules, protéines, fluide biologique simulé).
 - `device_fabrication` — Mise en forme du matériau dans un dispositif (électrode, cellule, capteur, LED, membrane) en vue de son test.
 - `calculation` — Calcul ou simulation (DFT, dynamique moléculaire, modèle analytique) : pas de synthèse au laboratoire.
+- `precursor_preparation` — Préparation d'un réactif, d'un précurseur ou d'un extrait (complexe métal-ligand, sel dans un acide gras, solution mère, extrait végétal ou de biomasse par un solvant) destiné à une autre voie de l'article, sans être lui-même le matériau étudié.
+- `granulation` — Mise en forme d'une poudre en granulés, pastilles ou extrudés avec un liant (extrusion, découpe, pastillage), sans changer sa composition chimique.
+- `physical_mixing` — Mélange mécanique de poudres sans réaction ni solvant (mortier, mélangeur) pour préparer un composite témoin ou un mélange de phases.
+- `reverse_microemulsion` — Formation de nanoparticules dans les gouttelettes d'eau (micelles inverses) d'une microémulsion eau-dans-huile stabilisée par un tensioactif : les réactifs aqueux, apportés par deux microémulsions mélangées, réagissent dans ces nanoréacteurs ; un revêtement (silice par hydrolyse de TEOS) peut être déposé dans le même milieu.
+- `chemical_bath_deposition` — Croissance d'un film ou d'un réseau de nanostructures (nanobâtonnets de ZnO, par exemple) sur un substrat immergé dans une solution aqueuse de précurseurs chauffée à basse température (moins de 100 °C, étuve ou bain), à pression ambiante et sans autoclave scellé, le plus souvent sur une couche de germination ; les auteurs l'appellent souvent hydrothermale.
+- `commercial_material` — Matériau acheté auprès d'un fournisseur et étudié ou retraité par les auteurs sans que ceux-ci le synthétisent : la voie ne décrit que l'origine du matériau et sert de point de départ aux traitements et aux mesures.
+- `deep_eutectic_solvent_synthesis` — Dissolution de précurseurs métalliques (sels, oxydes) dans un solvant eutectique profond (chlorure de choline avec un donneur de liaison hydrogène comme l'acide malonique, l'urée ou l'éthylène glycol), puis traitement thermique du mélange pour décomposer le solvant et cristalliser le matériau.
 
 ## Actions d'étape (`action`) et leurs cases de grille
 
@@ -103,6 +110,13 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `store` — Conserver le produit ou une solution.
 - `assemble` — Assembler un dispositif (cellule, électrode, capteur).
 - `transfer` — Transférer un matériau ou un mélange vers un autre récipient ou un substrat.
+- `shape_forming` — Mettre en forme une poudre ou une pâte en objets de taille définie : extrusion à la seringue ou à la filière, découpe en granulés, pastillage avec liant. [cases : dimension]
+- `lithography` — Définir un motif sur un substrat par lithographie (électronique, optique, nano-impression) : exposition d'une résine, développement, avant dépôt ou gravure.
+- `solvent_extraction` — Extraire des composés d'une matière solide (racines, feuilles, graines) par trempage ou macération dans un solvant, avec ou sans chauffage ; le solide est ensuite séparé par filtration. [cases : temperature, duration, solvent]
+- `electrochemical_conditioning` — Cycler ou polariser une électrode (voltampérométrie cyclique répétée, polarisation) pour la stabiliser ou l'activer avant la mesure ou l'essai, sans déposer de matière. [cases : repetitions, potential_current]
+- `polish` — Polir mécaniquement la surface d'un substrat massif avec des papiers abrasifs (SiC), une pâte diamantée ou une suspension, avant un dépôt ou un traitement de surface. [cases : duration]
+- `sieve` — Tamiser une poudre ou un composite à travers un tamis de maille donnée pour en contrôler la granulométrie. [cases : dimension]
+- `punch_cut` — Découper ou poinçonner un film, une électrode ou une feuille en pièces de forme et de taille définies (disques d'électrode, éprouvettes). [cases : dimension]
 
 ## Paramètres d'étape (`parameters[].name`, suffixe de précision permis : `temperature_final`)
 
@@ -145,6 +159,8 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `substrate` — Substrat ou support de l'étape.
 - `algorithm_setting` — Réglage d'un calcul ou d'un algorithme dans une voie `calcul` : fonctionnelle, base, énergie de coupure, contrainte, nombre de composantes, critère de convergence.
 - `dimension` — Dimension d'un objet ou d'un équipement (taille de tamis, seuil de membrane, surface d'électrode).
+- `areal_density` — Masse de matière déposée par unité de surface d'un support ou d'une membrane (par exemple 25 mg/m2 de GO filtré sur un support).
+- `milling_media` — Nature du bol et des billes de broyage d'un broyeur (matériau, volume du bol, diamètre des billes).
 
 ## Techniques de mesure (`characterizations[].technique`) et leurs réglages attendus
 
@@ -179,6 +195,20 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `chromatography_ms` — Analyse de produits par chromatographie ou spectrométrie de masse (GC, HPLC, GC-MS, SEC). [réglages : column, detector, calibration]
 - `density_porosimetry` — Densité, porosimétrie au mercure ou pycnométrie. [réglages : method]
 - `calculation` — Calcul ou simulation (DFT, dynamique moléculaire, ajustement de modèle). [réglages : software, functional_or_model, basis_or_cutoff]
+- `vapor_adsorption_test` — Essai d'adsorption d'une vapeur ou d'un gaz (eau, solvant, CO2) sur un solide : isotherme gravimétrique ou volumétrique, courbe de percée en colonne à lit fixe, cyclage adsorption–désorption (capacité, temps de percée, rétention). [réglages : adsorbate, measurement_temperature, pressure_range, pretreatment, adsorbent_dose, carrier_gas_flow, analysis_method]
+- `microwave_vna` — Mesure de la permittivité et de la perméabilité complexes d'un absorbeur de micro-ondes (éprouvette coaxiale ou en guide) à l'analyseur de réseau vectoriel, dont on déduit la perte par réflexion, l'épaisseur d'accord et la bande passante d'absorption. [réglages : frequency_range, sample_preparation, specimen_geometry]
+- `release_test` — Essai de libération in vitro d'une molécule chargée dans un support (pesticide, médicament) : dispersion dans un milieu tamponné agité, prélèvements au cours du temps et dosage du libéré, cumulé en pourcentage. [réglages : tested_material_dose, test_medium, solution_volume, solution_ph, agitation, temperature, analysis_method, replicates]
+- `profilometry` — Profilométrie de surface (profilomètre laser ou à stylet, interférométrie optique) : topographie et rugosité d'un film ou d'un substrat sur une surface balayée. [réglages : method, software]
+- `SBF_immersion` — Essai de bioactivité in vitro par immersion dans un fluide corporel simulé (SBF, protocole de Kokubo) : formation d'une couche d'apatite, pH et concentrations en Ca et P du fluide au cours du trempage. [réglages : test_medium, reaction_time, reaction_temperature, solution_volume, analysis_method]
+- `membrane_filtration` — Essai de filtration ou de perméation d'une membrane (cellule frontale ou tangentielle, eau pure ou solution) : flux, perméance, rejet ou taux d'élimination d'un soluté. [réglages : device_architecture, active_area, pretreatment, operating_pressure, feed_solution, analysis_method]
+- `TOC_analysis` — Analyse du carbone organique total ou dissous d'un échantillon liquide par un analyseur TOC (oxydation puis détection du CO2). [réglages : calibration]
+- `single_particle_spectroscopy` — Spectroscopie de photoluminescence sur nanocristaux individuels isolés (microscope inversé, détecteurs de photons uniques, corrélation temporelle des photons) : énergie d'émission, énergie de liaison du biexciton, antibunching g2, durée de vie, largeur de raie par particule. [réglages : excitation_wavelength, excitation_repetition_rate, laser_power, detector, time_gate, measurement_temperature]
+- `neutron_diffraction` — Diffraction des neutrons sur poudre (réacteur ou source de spallation) : phase, paramètres de maille, positions et occupations atomiques, y compris pour les éléments légers comme Li. [réglages : radiation, scan_range, sample_container, exposure_time, instrument_standard, software]
+- `total_scattering_pdf` — Diffusion totale des rayons X (synchrotron) et fonction de distribution de paires (PDF) : ordre local, distances interatomiques à courte portée, ajustement en espace réel (small box). [réglages : radiation, scan_range, sample_container, exposure_time, instrument_standard, software]
+- `impedance_spectroscopy` — Spectroscopie d'impédance d'une pastille d'électrolyte solide entre contacts bloquants : résistances de bulk et de joints de grains, conductivité ionique, énergie d'activation par la loi d'Arrhenius. [réglages : frequency_range, ac_amplitude, electrode_contacts, measurement_temperature, sample_preparation]
+- `rheometry` — Rhéométrie d'une dispersion, d'un gel ou d'une pâte : viscosité en fonction de la vitesse de cisaillement, modules, comportement rhéofluidifiant, cristal liquide. [réglages : scan_range, measurement_temperature, concentration, specimen_geometry]
+- `optical_microscopy` — Microscopie optique (champ clair, polarisée, sur plaquette ou lame) : visualisation et mesure de grands objets, feuillets ou films à l'échelle de la dizaine de micromètres. [réglages : sample_preparation]
+- `electrical_measurement` — Mesure électrique d'un film, d'une pastille ou d'un échantillon massif : résistance de couche à quatre pointes, résistivité, conductivité, effet Hall, hors cellule électrochimique et hors dispositif complet. [réglages : method, measurement_temperature, thickness_used]
 
 ## Réglages de mesure (`characterizations[].settings[].name`)
 
@@ -259,36 +289,94 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `software` — Logiciel de calcul.
 - `functional_or_model` — Fonctionnelle ou modèle de calcul.
 - `basis_or_cutoff` — Base ou énergie de coupure.
+- `pressure_range` — Plage de pression ou de pression relative balayée pendant une mesure d'adsorption ou de sorption d'une vapeur ou d'un gaz (en kPa ou en P/P0).
+- `carrier_gas_flow` — Gaz porteur et débit total du gaz qui traverse l'échantillon pendant une mesure en flux (courbe de percée, cyclage), par exemple azote à 300 sccm.
+- `takeoff_angle` — Angle de sortie (take-off) du détecteur de rayons X d'une microanalyse EDS, qui conditionne la collecte du signal.
+- `modulation_amplitude` — Amplitude de modulation du champ magnétique en RPE (en onde continue), qui conditionne la résolution et l'intensité du spectre dérivé.
+- `microwave_power` — Puissance micro-onde appliquée à l'échantillon lors d'une mesure RPE (en mW), qui peut saturer les signaux.
+- `quantum_yield_standard` — Colorant ou fluorophore de référence dont le rendement quantique connu sert d'étalon pour calculer celui de l'échantillon (rhodamine 6G, sulfate de quinine).
+- `spectral_resolution` — Résolution spectrale de l'instrument (par exemple 4 cm−1 en infrarouge, largeur de fente ou bande passante en UV-visible).
+- `diffraction_geometry` — Géométrie ou mode de mesure d'un diffractomètre (réflexion Bragg-Brentano, transmission, incidence rasante).
+- `size_analysis_method` — Méthode et logiciel de mesure d'une taille ou d'une distribution de tailles à partir d'images (comptage manuel, ImageJ, Image Tool, ajustement).
+- `input_optical_constants` — Constantes optiques d'entrée d'une simulation optique (indice de réfraction complexe n + ik à une longueur d'onde, permittivité) prises dans la littérature ou mesurées, avec la longueur d'onde.
+- `profile_fitting` — Méthode et logiciel d'affinement de profil ou de quantification de phases appliqués à un diagramme de diffraction (Le Bail, Rietveld, FULLPROF, GSAS, TOPAS).
+- `calculation_constant` — Constante ou facteur de référence fixé par l'auteur pour calculer un résultat à partir de la mesure (facteur de forme K de Scherrer, coefficient d'extinction, densité théorique, facteur de réponse).
+- `beam_current` — Courant du faisceau d'électrons ou d'ions de l'instrument pendant la mesure (microscopie, EDS), avec son unité.
+- `working_distance` — Distance de travail entre l'échantillon et la lentille ou le détecteur d'un microscope ou d'un spectromètre EDS.
+- `chamber_pressure` — Pression ou niveau de vide de la chambre de l'instrument pendant la mesure (microscope, spectromètre).
+- `mobile_phase` — Phase mobile d'une séparation chromatographique (composition, proportions, additifs), par exemple méthanol/eau 80/20 ou acétonitrile/eau.
+- `flow_rate` — Débit de la phase mobile d'une chromatographie ou d'un liquide dans un montage de mesure (mL/min).
+- `injection_volume` — Volume d'échantillon injecté dans l'instrument de chromatographie (µL).
+- `ionization_mode` — Source d'ionisation et polarité d'un spectromètre de masse (électrospray positif ou négatif, APCI, impact électronique).
+- `mrm_transitions` — Transitions ion précurseur vers ion produit surveillées en mode MRM/SRM d'un spectromètre de masse en tandem (m/z, rôle de quantification ou de confirmation).
+- `ms_source_conditions` — Conditions de la source du spectromètre de masse : débit et température du gaz de séchage, tension capillaire, pression du gaz de nébulisation, gaz de collision.
+- `test_medium` — Milieu dans lequel le matériau est dispersé pendant un essai (tampon phosphate, solvant, tensioactif ajouté comme le Tween-80), quand il ne se réduit pas à un pH ou à un volume.
+- `rotation_rate` — Vitesse de rotation de l'électrode à disque tournant (RDE) ou à disque-anneau (RRDE) pendant la mesure, en tr/min (rpm).
+- `applied_potential` — Potentiel constant (ou potentiel initial) imposé à l'électrode de travail pendant une mesure : chronoampérométrie, impédance à potentiel fixé ; préciser la référence (vs. Ag/AgCl, vs. RHE).
+- `inoculum` — Inoculum d'un essai biologique : densité (échelle McFarland, cfu/mL) et volume de la suspension microbienne ou cellulaire ensemencée.
+- `tested_material_dose` — Quantité de matériau soumise à un essai biologique ou d'inhibition (masse de poudre déposée, dose par puits) quand elle n'est pas une plage de concentrations.
+- `reference_pattern` — Fiche ou diagramme de référence (JCPDS/PDF, CIF, base de données) utilisé pour indexer ou identifier les phases d'une mesure de diffraction.
+- `operating_pressure` — Pression appliquée au dispositif ou à la membrane pendant l'essai (pression de filtration, pression transmembranaire, en bar).
+- `feed_solution` — Composition de la solution ou du fluide d'alimentation d'un essai de filtration ou de perméation (eau pure, solutés et concentrations, pH).
+- `atr_crystal` — Cristal de réflexion totale atténuée (ATR) utilisé en infrarouge (Ge, diamant, ZnSe) ou référence de fond associée.
+- `recording_rate` — Cadence et durée d'enregistrement d'une mesure dynamique (images par seconde et durée totale, par exemple 60 FPS pendant 5 s pour un angle de contact).
+- `scattering_angle` — Angle de diffusion (ou de détection) fixé pour une mesure de diffusion de la lumière ou des rayons X, par exemple 90° en DLS.
+- `blank_reference` — Solution ou matériau utilisé comme blanc ou ligne de base d'une mesure spectroscopique (par exemple eau, solvant ou solution de précurseur soustraits du spectre).
+- `magnification` — Grossissement ou échelle d'observation d'une image de microscopie utilisée pour mesurer la taille ou la forme (10 k, ×50 000).
+- `regeneration_procedure` — Procédure de régénération de l'adsorbant ou du catalyseur entre deux cycles d'essai : éluant, concentration, durée, température, lavage et séchage, nombre de cycles.
+- `excitation_repetition_rate` — Fréquence de répétition des impulsions d'un laser pulsé d'excitation (par exemple 5 MHz), qui fixe l'intervalle entre impulsions disponible pour la détection résolue en temps.
+- `time_gate` — Fenêtre temporelle de sélection des détections par rapport à l'impulsion d'excitation ou au photon précédent (par exemple de 0,5 à 30 ns), utilisée pour isoler un état émetteur ou réduire le bruit.
+- `pass_energy` — Énergie de passage de l'analyseur d'électrons (spectres de survol et haute résolution) d'une mesure XPS.
+- `sample_container` — Contenant ou support de l'échantillon pendant la mesure (capillaire de verre scellé, conteneur de vanadium, creuset, porte-échantillon) et géométrie de mesure associée.
+- `exposure_time` — Temps d'exposition ou d'acquisition d'un diagramme ou d'un spectre (par motif de diffraction, par spectre).
+- `instrument_standard` — Étalon utilisé pour déterminer la résolution instrumentale ou l'alignement d'un appareil (LaB6, Ni, Na2Ca3Al2F14, silicium).
+- `pulse_sequence` — Séquence d'impulsions d'une mesure RMN (écho de Hahn synchronisé au rotor, écho quadripolaire, saturation-récupération, écho stimulé à gradients bipolaires) avec ses délais.
+- `diffusion_time` — Temps de diffusion Δ et durée δ des gradients d'une mesure RMN à gradients de champ pulsés (PFG).
+- `frequency_range` — Plage de fréquences balayée par une mesure d'impédance ou un autre spectre en fréquence.
+- `ac_amplitude` — Amplitude du signal alternatif appliqué lors d'une mesure d'impédance (tension ou courant).
+- `electrode_contacts` — Contacts électriques posés sur l'échantillon pour la mesure : nature (métal bloquant, électrode pulvérisée), dépôt, force de serrage.
+- `added_salt` — Sel ajouté à la solution d'essai pour étudier l'effet de la force ionique ou de l'effet de relargage (nature du sel et concentration), par exemple 0,01 M de NaCl dans un essai d'adsorption de colorant.
+- `measurement_frequency` — Fréquence unique du signal alternatif d'une mesure électrochimique à fréquence fixe (par exemple Mott–Schottky à 10 Hz), par opposition à la plage de fréquences balayée en impédance.
+- `radical_scavenger` — Piège à espèces actives ajouté à un essai photocatalytique pour identifier l'espèce responsable de la dégradation : nature (alcool isopropylique, EDTA, benzoquinone) et concentration.
+- `quantum_yield_method` — Méthode de mesure du rendement quantique de photoluminescence : absolue en sphère d'intégration, ou relative à un étalon, avec l'appareillage de collecte.
+- `xray_tube_voltage_current` — Tension et courant de la source de rayons X (tube de diffractomètre ou anode de spectromètre XPS), par exemple 40 kV et 40 mA.
+- `theoretical_density` — Densité théorique (cristallographique), souvent calculée à partir des paramètres de maille, prise comme référence pour exprimer une densité mesurée en densité relative.
+- `ir_compensation` — Correction de la chute ohmique (iR) appliquée aux courbes de polarisation : pourcentage de compensation et méthode d'estimation de la résistance non compensée.
+- `thickness_used` — Épaisseur de l'échantillon utilisée pour convertir une résistance de couche en conductivité ou une force en contrainte, avec son mode de mesure (micromètre, coupe au MEB).
+- `oxidant` — Oxydant d'un essai catalytique d'oxydation (H2O2, TBHP, O2) : nature, quantité, concentration ou rapport au substrat.
+- `internal_standard` — Étalon interne ajouté au milieu pour le dosage chromatographique des produits (n-dodécane, n-octadécane) : nature et quantité.
+- `reaction_solvent` — Solvant du milieu réactionnel d'un essai catalytique (méthanol, n-octane, acétonitrile).
+- `optical_path_length` — Longueur du trajet optique de la cuve ou de l'échantillon traversé par le faisceau (cuve de 1 cm en UV-visible).
 
 ## Propriétés (`outcomes[].property`, suffixe de précision permis : `lattice_parameter_a`) et techniques qui les mesurent
 
 - `phase` — Phase cristalline identifiée. [XRD, SAED, Raman]
 - `crystallinity` — Degré de cristallinité. [XRD, SAED, TEM, Raman]
 - `crystallite_size` — Taille de cristallite (domaine cohérent). [XRD]
-- `lattice_parameter` — Paramètre de maille (a, b, c, volume de maille ; préciser l'axe dans le nom : lattice_parameter_a). [XRD, SAED, TEM]
+- `lattice_parameter` — Paramètre de maille (a, b, c, volume de maille ; préciser l'axe dans le nom : lattice_parameter_a). [XRD, SAED, TEM, neutron_diffraction, total_scattering_pdf]
 - `d_spacing` — Distance interréticulaire. [XRD, TEM, SAED]
 - `xrd_peak_position` — Position d'un pic de diffraction. [XRD]
 - `xrd_peak_intensity` — Intensité ou rapport d'intensités de pics de diffraction. [XRD]
-- `FWHM` — Largeur à mi-hauteur d'un pic. [XRD, PL, Raman]
+- `FWHM` — Largeur à mi-hauteur d'un pic. [XRD, PL, Raman, XPS]
 - `microstrain_dislocation` — Microdéformation ou densité de dislocations. [XRD]
-- `rietveld_fit` — Résultat d'affinement Rietveld (facteurs d'accord, fractions de phases). [XRD]
+- `rietveld_fit` — Résultat d'affinement Rietveld (facteurs d'accord, fractions de phases). [XRD, neutron_diffraction, total_scattering_pdf]
 - `BET_surface_area` — Surface spécifique (BET ou Langmuir). [BET]
 - `pore_volume_total` — Volume poreux total. [BET, density_porosimetry]
 - `micropore_volume` — Volume microporeux. [BET]
 - `mesopore_volume` — Volume mésoporeux. [BET]
 - `micropore_surface_area` — Surface microporeuse. [BET]
 - `external_surface_area` — Surface externe. [BET]
-- `pore_diameter` — Diamètre ou taille de pores. [BET, density_porosimetry]
+- `pore_diameter` — Diamètre ou taille de pores. [BET, density_porosimetry, SEM, TEM]
 - `porosity` — Porosité. [BET, density_porosimetry]
-- `particle_size` — Taille de particule ou de grain observée. [SEM, TEM, AFM, SAXS, XRD]
+- `particle_size` — Taille de particule ou de grain observée. [SEM, TEM, AFM, SAXS, XRD, optical_microscopy]
 - `size_dispersity` — Dispersion de taille (écart-type, PDI). [SEM, TEM, AFM, SAXS, DLS_zeta]
-- `thickness_layers` — Épaisseur ou nombre de couches. [SEM, TEM, AFM, SAXS, Raman]
-- `morphology` — Morphologie observée (forme, texture). [SEM, TEM, AFM, SAXS]
-- `roughness` — Rugosité de surface. [AFM]
+- `thickness_layers` — Épaisseur ou nombre de couches. [SEM, TEM, AFM, SAXS, Raman, mechanical_test]
+- `morphology` — Morphologie observée (forme, texture). [SEM, TEM, AFM, SAXS, optical_microscopy]
+- `roughness` — Rugosité de surface. [AFM, profilometry]
 - `hydrodynamic_size` — Taille hydrodynamique en suspension. [DLS_zeta]
 - `zeta_potential` — Potentiel zêta. [DLS_zeta]
 - `point_of_zero_charge` — pH de charge nulle. [DLS_zeta, adsorption_test]
-- `elemental_composition` — Composition élémentaire ou teneur en un élément. [EDS, XPS, elemental_analysis]
+- `elemental_composition` — Composition élémentaire ou teneur en un élément. [EDS, XPS, elemental_analysis, XRD]
 - `xps_binding_energy` — Énergie de liaison XPS. [XPS]
 - `ftir_band` — Bande infrarouge. [FTIR]
 - `raman_band` — Bande Raman. [Raman]
@@ -305,15 +393,15 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `decomposition_temperature` — Température de décomposition ou de stabilité thermique. [TGA]
 - `mass_loss_residue` — Perte de masse ou résidu en analyse thermique. [TGA]
 - `melting_glass_transition` — Température de fusion ou de transition vitreuse. [TGA]
-- `conductivity` — Conductivité électrique ou ionique. [electrochemistry, device_test]
+- `conductivity` — Conductivité électrique ou ionique. [electrochemistry, device_test, impedance_spectroscopy, electrical_measurement, NMR]
 - `resistivity` — Résistivité ou résistance de couche. [electrochemistry, device_test]
-- `impedance_resistance` — Résistance tirée d'une impédance (Rs, Rct). [electrochemistry]
+- `impedance_resistance` — Résistance tirée d'une impédance (Rs, Rct). [electrochemistry, impedance_spectroscopy]
 - `carrier_transport` — Transport de porteurs (mobilité, concentration, type, travail de sortie). [electrochemistry, device_test]
-- `dielectric` — Permittivité ou pertes diélectriques. [electrochemistry, device_test]
+- `dielectric` — Permittivité ou pertes diélectriques. [electrochemistry, device_test, impedance_spectroscopy]
 - `specific_capacitance` — Capacité spécifique. [electrochemistry]
 - `specific_capacity` — Capacité spécifique d'une électrode de batterie. [electrochemistry]
 - `coulombic_efficiency` — Efficacité coulombique. [electrochemistry]
-- `retention_stability` — Rétention de capacité, d'activité, de luminescence ou de performance après cycles, dans le temps ou sous contrainte (irradiation, sel, pH). [electrochemistry, catalytic_test, adsorption_test, device_test, PL, UV_vis]
+- `retention_stability` — Rétention de capacité, d'activité, de luminescence ou de performance après cycles, dans le temps ou sous contrainte (irradiation, sel, pH). [electrochemistry, catalytic_test, adsorption_test, device_test, PL, UV_vis, vapor_adsorption_test]
 - `overpotential_tafel` — Surtension ou pente de Tafel. [electrochemistry]
 - `voltage_window_potential` — Potentiel caractéristique (plateau, pic, fenêtre). [electrochemistry]
 - `PCE` — Rendement de conversion d'un dispositif photovoltaïque. [device_test]
@@ -321,15 +409,15 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `Jsc` — Densité de courant de court-circuit. [device_test]
 - `fill_factor` — Facteur de forme d'une cellule. [device_test]
 - `IPCE_EQE` — Rendement quantique externe ou IPCE. [device_test]
-- `catalytic_performance` — Performance catalytique (conversion, sélectivité, vitesse, TOF, dégradation). [catalytic_test]
+- `catalytic_performance` — Performance catalytique (conversion, sélectivité, vitesse, TOF, dégradation). [catalytic_test, electrochemistry]
 - `kinetics_fit` — Paramètre d'un modèle cinétique ajusté (constante de vitesse, ordre). [catalytic_test, adsorption_test]
-- `adsorption_capacity` — Capacité d'adsorption. [adsorption_test]
+- `adsorption_capacity` — Capacité d'adsorption. [adsorption_test, vapor_adsorption_test, BET]
 - `adsorption_isotherm_fit` — Paramètre d'un modèle d'isotherme ajusté (Langmuir, Freundlich). [adsorption_test]
-- `activation_energy` — Énergie d'activation. [catalytic_test, adsorption_test, electrochemistry, TGA]
+- `activation_energy` — Énergie d'activation. [catalytic_test, adsorption_test, electrochemistry, TGA, impedance_spectroscopy, NMR]
 - `acidity` — Acidité de surface (quantité, force des sites). [TPD_TPR, FTIR]
 - `magnetic` — Propriété magnétique (aimantation, coercivité, température de Curie). [magnetometry]
 - `antibacterial` — Activité antibactérienne ou antifongique. [biological_test]
-- `biological` — Autre réponse biologique (cytotoxicité, viabilité, activité antioxydante). [biological_test]
+- `biological` — Autre réponse biologique (cytotoxicité, viabilité, activité antioxydante). [biological_test, SEM]
 - `hardness` — Dureté. [mechanical_test]
 - `elastic_modulus` — Module d'élasticité. [mechanical_test]
 - `strength` — Résistance mécanique. [mechanical_test]
@@ -338,9 +426,72 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `contact_angle` — Angle de contact. [contact_angle]
 - `molecular_weight` — Masse molaire d'un polymère. [chromatography_ms]
 - `solution_concentration` — Concentration mesurée en solution (relargage, résidu, surnageant). [elemental_analysis, chromatography_ms, UV_vis]
-- `purity` — Pureté ou présence d'impuretés. [XRD, elemental_analysis, chromatography_ms]
+- `purity` — Pureté ou présence d'impuretés. [XRD, elemental_analysis, chromatography_ms, EDS]
 - `calculated_value` — Valeur calculée (énergie, bande, barrière) dans une voie de calcul. [calculation]
 - `yield` — Rendement de la synthèse ou masse de produit. [aucune mesure]
 - `visual_appearance` — Couleur ou aspect du produit. [aucune mesure]
 - `product_identity` — Nature du produit obtenu ou réussite de la synthèse, sans mesure chiffrée. [aucune mesure]
 - `statistic` — Statistique de l'article (R², p, écart-type, ANOVA) se rapportant à un résultat. [aucune mesure]
+- `analytical_recovery` — Taux de recouvrement d'un dosage (quantité trouvée rapportée à la quantité introduite, en %) mesuré par une méthode analytique sur une solution pure, une forme galénique ou une matrice biologique dopée ; la quantité trouvée et la concentration introduite peuvent être précisées par un suffixe (analytical_recovery_1uM, analytical_found_1uM). [PL, UV_vis, electrochemistry, chromatography_ms]
+- `interference_tolerance` — Tolérance d'un dosage vis-à-vis d'espèces interférentes : concentration maximale d'une espèce coexistante (médicament, ion, excipient) qui ne change pas la réponse de la sonde ou de la méthode au-delà d'un seuil. [PL, UV_vis, electrochemistry, chromatography_ms]
+- `gelation_time` — Durée observée de gélification ou de prise d'un sol (temps entre l'ajout de l'agent gélifiant ou catalyseur et la formation du gel solide).
+- `breakthrough_time` — Temps de percée d'une colonne d'adsorption : durée (ou durée par gramme d'adsorbant) avant que la concentration en sortie atteigne un seuil du débit d'entrée. [vapor_adsorption_test]
+- `bond_length` — Longueur d'une liaison cation–oxygène ou distance interatomique calculée à partir des paramètres de maille et des positions atomiques affinés (Rietveld), en Å. [XRD]
+- `epr_zfs_parameter` — Paramètre de structure fine (éclatement en champ nul, D ou E) d'un centre paramagnétique à spin élevé (S ≥ 1), déduit d'un spectre RPE de poudre ou d'un ajustement ; préciser le centre ou le paramètre dans le suffixe (epr_zfs_parameter_D_divacancy). [EPR]
+- `thermodynamic_parameter` — Fonction thermodynamique d'une réaction, d'une activation ou d'une adsorption (ΔH, ΔS, ΔG, ΔE), tirée d'un ajustement de van't Hoff, d'Arrhenius ou d'Eyring ; préciser la grandeur et la température dans le nom (thermodynamic_parameter_dH_298K). [catalytic_test, adsorption_test, electrochemistry]
+- `colloidal_dispersibility` — Dispersibilité ou solubilité observée du matériau fini dans un milieu (eau, solvant, tampon) : soluble dans l'eau, dispersion stable ou agrégation.
+- `photocurrent` — Courant mesuré sous éclairement (UV, visible) aux bornes d'un photodétecteur ou d'un dispositif photoconducteur pour une tension appliquée donnée ; préciser la tension dans le nom ou la citation (photocurrent_10V). [device_test, electrochemistry]
+- `photocurrent_on_off_ratio` — Rapport entre le courant sous éclairement et le courant dans le noir (rapport on-off) d'un photodétecteur à une tension donnée ; préciser la tension dans le nom ou la citation. [device_test]
+- `photoresponse_time` — Durée caractéristique de la réponse transitoire d'un photodétecteur à un éclairement commuté (temps de montée, de décroissance ou de retour à e−1 du courant, reset time). [device_test]
+- `microwave_reflection_loss` — Perte par réflexion d'un absorbeur de micro-ondes (RL en dB, calculée par la ligne de transmission à partir de la permittivité et de la perméabilité) ; préciser dans le nom ou la citation la fréquence et l'épaisseur du minimum. [microwave_vna]
+- `microwave_absorption_bandwidth` — Plage de fréquences (GHz) où la perte par réflexion reste sous un seuil (−10 dB ou −20 dB) pour une épaisseur donnée ; préciser le seuil dans le nom (microwave_absorption_bandwidth_RLm20). [microwave_vna]
+- `microwave_matching_thickness` — Épaisseur d'accord (matching thickness) d'un absorbeur de micro-ondes pour laquelle la perte par réflexion est minimale, mesurée sur les courbes de RL ou simulée par le modèle du quart d'onde ; préciser la fréquence du minimum dans la citation. [microwave_vna]
+- `electromagnetic_parameter` — Paramètre électromagnétique d'un absorbeur mesuré sur une plage de fréquences : permittivité (ε′, ε″), perméabilité (μ′, μ″), tangente de pertes diélectriques ou magnétiques, constante d'atténuation α, rapport d'adaptation d'impédance ; préciser la grandeur dans le suffixe (electromagnetic_parameter_attenuation_constant). [microwave_vna]
+- `aspect_ratio` — Rapport longueur sur diamètre (ou largeur) d'un objet allongé (nanofil, nanotige, nanofeuillet) ; préciser l'endroit de mesure du diamètre dans le nom si besoin (aspect_ratio_tip, aspect_ratio_base). [SEM, TEM, AFM]
+- `areal_number_density` — Nombre d'objets (nanofils, nanotiges, particules) par unité de surface du substrat, compté sur des images de microscopie. [SEM, TEM, AFM]
+- `solution_ph` — pH mesuré ou donné d'une solution de synthèse ou de croissance (solution mère, bain de croissance), quand il est un résultat de l'article et non un réglage imposé par une étape adjust_ph.
+- `ion_exchange_capacity` — Capacité d'échange ionique d'un solide échangeur (zéolithe, argile, résine), par exemple capacité d'échange de Ca2+ en mg de Ca ou de CaCO3 par gramme, mesurée par mise en contact avec une solution et dosage de l'ion restant. [adsorption_test]
+- `residue_concentration` — Concentration résiduelle d'un pesticide ou d'un autre analyte dans un tissu ou une matrice solide (feuille, racine, fruit, sol), en mg/kg, dosée par chromatographie ; préciser la matrice, la dose et le temps dans le suffixe. [chromatography_ms]
+- `dissipation_half_life` — Demi-vie de dissipation d'un résidu (pesticide) dans un tissu, un sol ou une eau, tirée d'un ajustement cinétique du premier ordre des concentrations mesurées au cours du temps ; préciser la matrice et la dose dans le suffixe. [chromatography_ms]
+- `electron_transfer_number` — Nombre d'électrons échangés par molécule d'O2 lors de la réduction de l'oxygène sur un catalyseur, déduit d'une analyse de Koutecky-Levich (électrode à disque tournant) ou de courants disque et anneau (RRDE) ; préciser la méthode et le potentiel dans le suffixe (electron_transfer_number_KL, electron_transfer_number_RRDE_minus0p4V). [electrochemistry]
+- `peroxide_yield` — Proportion de peroxyde (HO2−) formée à l'anneau d'une électrode disque-anneau tournante (RRDE) pendant la réduction de l'oxygène, en % du courant total, à un potentiel donné (préciser le potentiel dans le suffixe : peroxide_yield_minus0p4V). [electrochemistry]
+- `limiting_current_density` — Densité de courant de réduction relevée à un potentiel donné (plateau de courant limite) sur une courbe de voltampérométrie à balayage linéaire d'une électrode tournante ; préciser le potentiel et la vitesse de rotation dans le suffixe (limiting_current_density_minus0p8V_1600rpm). [electrochemistry]
+- `PL_intensity` — Intensité (absolue ou relative) du signal de photoluminescence à une excitation donnée, y compris son évolution avec le pH, le solvant ou l'irradiation. [PL]
+- `drug_release` — Quantité de médicament libérée par un support chargé dans un milieu de libération (pourcentage cumulé ou instantané, temps de libération optimal). [adsorption_test, release_test]
+- `analytical_sensitivity` — Sensibilité analytique d'un capteur ou d'une méthode de dosage : pente de la droite d'étalonnage (réponse par unité de concentration, éventuellement normalisée par la surface de l'électrode), avec la plage de concentration associée si elle est donnée dans le nom. [electrochemistry, PL, UV_vis, chromatography_ms]
+- `limit_of_quantification` — Limite de quantification d'un capteur ou d'une méthode de dosage pour un analyte (plus petite concentration dosable avec une précision acceptable), avec la plage linéaire associée si elle est donnée dans le nom. [electrochemistry, PL, UV_vis, chromatography_ms]
+- `medium_ph` — pH mesuré d'un milieu d'essai (SBF, surnageant, solution de trempage) au cours du temps ou à une échéance ; préciser l'échéance ou le temps dans le suffixe (medium_ph_day4). [SBF_immersion]
+- `apatite_formation` — Formation d'apatite (couche, particules, morphologie qualitative) à la surface d'un matériau après immersion en SBF ; critère de bioactivité in vitro. [SBF_immersion, SEM, XRD]
+- `water_flux` — Flux d'eau pure ou de solution à travers une membrane, rapporté à la surface, au temps et à la pression appliquée (perméance, par exemple L/m2·h·bar). [membrane_filtration]
+- `removal_rate` — Taux d'élimination d'un soluté (polluant, micropolluant) par une membrane ou un adsorbant, en pourcentage de la concentration initiale ou d'alimentation ; préciser le soluté dans le nom (removal_rate_triclosan) et l'adsorption ou le total en suffixe. [membrane_filtration, adsorption_test]
+- `recombination_rate` — Vitesse de désexcitation radiative (kr) ou non radiative (knr) d'un émetteur luminescent, en s-1, calculée à partir de la durée de vie moyenne et du rendement quantique ; préciser radiative ou nonradiative par un suffixe (recombination_rate_radiative). [PL]
+- `emission_color_metrics` — Grandeur colorimétrique d'une émission lumineuse ou d'un dispositif émetteur : coordonnées chromatiques CIE, température de couleur corrélée, couverture de gamut (NTSC, Rec. 2020), longueur d'onde des pics R-V-B d'un dispositif ; préciser la grandeur par un suffixe (emission_color_metrics_CIE_blue). [PL, device_test, UV_vis]
+- `removal_efficiency` — Taux d'élimination d'un polluant d'une solution par un adsorbant ou un catalyseur dans des conditions données (pourcentage de l'adsorbat retiré de la solution initiale). [adsorption_test]
+- `adsorption_equilibrium_time` — Durée de contact au bout de laquelle la quantité adsorbée n'évolue plus (temps d'équilibre d'adsorption), lue sur la courbe de cinétique. [adsorption_test]
+- `optimal_condition` — Valeur d'une variable d'essai ou de synthèse (pH, température, dose, concentration) que les auteurs donnent comme optimale à l'issue d'un plan d'expériences ou d'un criblage ; la variable se précise par un suffixe (optimal_condition_ph).
+- `biexciton_binding_energy` — Énergie de liaison du biexciton d'un nanocristal (écart entre l'énergie d'émission du biexciton et celle de l'exciton simple, positif pour une interaction exciton-exciton attractive), pour une particule ou en moyenne sur une population ; préciser dans le nom la population ou le type de valeur (biexciton_binding_energy_mean). [single_particle_spectroscopy]
+- `photon_antibunching_g2` — Corrélation d'ordre deux des temps d'arrivée des photons à délai nul, g2(0), d'une particule unique (antibunching si inférieur à 1), éventuellement filtrée par une fenêtre temporelle (ĝ2(0)) ; reflète le rendement quantique du biexciton rapporté à celui de l'exciton simple. [single_particle_spectroscopy]
+- `xps_species_fraction` — Part relative (en pourcentage) d'une composante ou d'une espèce ajustée dans un spectre XPS (par exemple les deux espèces de calcium d'un spectre Ca 2p), avec l'espèce précisée dans le nom. [XPS]
+- `diffusion_coefficient` — Coefficient de diffusion d'une espèce mobile (Li+) déduit d'une mesure RMN (PFG, relaxation) ou d'un modèle de saut, éventuellement à une température donnée. [NMR, electrochemistry]
+- `pdf_peak_distance` — Position (distance interatomique en Å) d'un pic de la fonction de distribution de paires, avec les paires d'atomes attribuées. [total_scattering_pdf]
+- `structure_similarity` — Mesure de similitude entre deux modèles structuraux (indice de Bergerhoff, déformation spontanée du réseau, déplacement atomique maximal ou moyen) calculée par comparaison de structures. [XRD, neutron_diffraction, total_scattering_pdf]
+- `hopping_attempt_frequency` — Facteur pré-exponentiel de la vitesse de saut d'un ion (τ0^-1) déduit de l'ajustement de la relaxation spin-réseau RMN. [NMR]
+- `band_edge_potential` — Potentiel de bord de bande (bande de conduction, bande de valence ou bande plate) d'un semi-conducteur, estimé par Mott–Schottky ou équivalent ; l'échelle de référence (SCE, NHE) va dans le suffixe. [electrochemistry]
+- `linear_range` — Plage de concentrations d'analyte sur laquelle la réponse d'une sonde ou d'un capteur reste linéaire (bornes basse et haute), avec l'analyte précisé en suffixe si besoin (linear_range_Cr6). [PL, UV_vis, electrochemistry, chromatography_ms]
+- `oxygen_vacancy_evidence` — Présence, ordre ou concentration de lacunes d'oxygène dans un oxyde, telle que les auteurs la déduisent d'une mesure (bandes sombres en HAADF-STEM, taches de surstructure en SAED, distances interréticulaires élargies, XPS, RPE) ; qualitatif ou quantitatif, la preuve se précise dans la citation. [TEM, SAED, XPS, EPR, XAS]
+- `double_layer_capacitance` — Capacité de double couche géométrique (Cdl) d'une électrode, tirée de la pente de la demi-différence de densité de courant anodique et cathodique en fonction de la vitesse de balayage dans une zone non faradique ; sert de proxy à l'aire électrochimiquement active (ECSA). [electrochemistry]
+- `limit_of_detection` — Limite de détection d'un capteur ou d'une sonde pour un analyte (plus petite concentration détectable), avec la plage linéaire de réponse associée si elle est donnée dans le nom (limit_of_detection_Fe3). [PL, UV_vis, electrochemistry, chromatography_ms]
+- `fluorescence_quenching` — Réponse d'une sonde fluorescente à un analyte : extinction de la luminescence (pourcentage éteint, rapport F/F0, constante de Stern-Volmer Ksv ou de quenching kq, pente de la droite d'étalonnage). [PL]
+- `isotherm_type` — Allure de l'isotherme de physisorption ou d'adsorption de vapeur (classification IUPAC : type I, IV, V, boucle d'hystérésis H3…), qui renseigne sur la microporosité, la mésoporosité ou l'hydrophobie du solide. [BET, adsorption_test]
+- `interparticle_spacing` — Distance moyenne entre nanocristaux ou nanofeuillets voisins dans un empilement ou un super-réseau observé (espacement centre à centre ou bord à bord selon l'article), distincte de la distance interréticulaire d'un cristal ; préciser le mode de mesure dans la citation. [TEM, XRD, SAXS]
+- `viscosity` — Viscosité d'une dispersion ou d'un fluide (viscosité à vitesse de cisaillement donnée, viscosité à cisaillement nul), avec la vitesse de cisaillement précisée dans le nom si besoin. [rheometry]
+- `filtration_time` — Durée nécessaire pour filtrer un volume donné d'une dispersion (indicateur indirect de l'exfoliation, de la taille des feuillets ou du colmatage de la membrane).
+- `bioactive_loading` — Quantité de molécule bioactive (polyphénol, médicament, colorant) associée à un solide, en masse par masse de solide (mg/g, % massique) ou en molécules par nm², déterminée par ATG, dosage du surnageant ou analyse élémentaire ; préciser l'unité de surface par un suffixe (bioactive_loading_surface_density). [TGA, elemental_analysis, chromatography_ms, UV_vis]
+- `induction_time` — Période d'induction de la cristallisation : durée de chauffage au bout de laquelle les premiers pics de diffraction caractéristiques apparaissent sur le solide extrait (estimation de l'apparition de la nucléation) ; préciser le profil thermique dans le nom si besoin. [XRD]
+- `crystallization_time` — Durée totale de cristallisation jusqu'à cristallinité complète (relative crystallinity de 100 %), profil thermique compris, déduite de suivis temporels par diffraction. [XRD]
+- `xas_feature` — Caractéristique d'un spectre d'absorption des rayons X (XANES ou EXAFS) : position ou intensité d'un pic de pré-seuil, déplacement du pic Ti–O en transformée de Fourier, distance de liaison ou nombre de coordination ajustés. [XAS]
+- `urbach_energy` — Énergie d'Urbach : largeur de la queue d'absorption sous le gap, inverse de la pente de ln(α) en fonction de hν, mesure du désordre et de la densité d'états localisés. [UV_vis]
+- `optical_conductivity` — Conductivité optique calculée à partir du coefficient d'absorption et de l'indice de réfraction, tracée en fonction de l'énergie des photons ou de la fréquence. [UV_vis]
+- `electrophoretic_mobility` — Mobilité électrophorétique de particules en suspension, mesurée avec le potentiel zêta (µm·cm/V·s). [DLS_zeta]
+- `oxidation_state` — État d'oxydation moyen d'un élément (Mn, V, Fe…) du matériau, déduit d'un spectre XANES, XPS ou d'un dosage ; préciser l'élément par un suffixe (oxidation_state_Mn). [XAS, XPS, EPR, elemental_analysis]
+- `phase_transition_temperature` — Température ou domaine de température d'une transition de phase solide–solide ou d'un événement thermique réversible ou non, relevé en DSC ou en analyse thermique (pic, épaulement, seuil). [TGA, XRD]
