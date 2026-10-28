@@ -107,22 +107,26 @@ def pipeline(lg, th, S):
 # ------------------------------------------------------------------ 2. chiffres clés
 def kpis(lg, th, S, K):
     c = THEMES[th]; T = lambda fr, en: (fr, en)[lg]
+    A = json.load(open(os.path.join(ROOT, "docs/audit_contenu/data/chiffres_accueil.json"), encoding="utf-8"))
+    pc = lambda v: T(f"{v:.0f} %", f"{v:.0f}%")
+    bas, haut = round(A["usd_bas"]), round(A["usd_haut"])
+    # (valeur, titre, sous-titre, couleur, colonnes occupées)
     tiles = [
-        (nb(S["publications"], lg), T("publications closes", "papers closed"), T("10 paliers audités de 50", "10 audited batches of 50"), "data"),
-        (nb(S["voies"], lg), T("voies de synthèse", "synthesis routes"), T(f"{nb(S['voies_base'], lg)} de base + {nb(S['branches'], lg)} branches", f"{nb(S['voies_base'], lg)} base + {nb(S['branches'], lg)} branches"), "data"),
-        (nb(S["resultats"], lg), T("résultats mesurés", "measured outcomes"), T(f"dont {nb(S['resultats_lus_sur_figure'], lg)} lus sur figure", f"incl. {nb(S['resultats_lus_sur_figure'], lg)} read off figures"), "data"),
-        (nb(S["parametres"], lg), T("paramètres de synthèse", "synthesis parameters"), T(f"{nb(S['etapes'], lg)} étapes, {nb(S['reactifs'], lg)} réactifs", f"{nb(S['etapes'], lg)} steps, {nb(S['reactifs'], lg)} reagents"), "data"),
-        (nb(K["quotes"], lg), T("citations vérifiées", "quotes checked"), T("100 % mot pour mot", "100% found verbatim"), "script"),
-        (nb(K["relues"], lg), T("valeurs relues à la main", "values re-read by hand"), T(f"{K['fausses']} fausses, toutes corrigées", f"{K['fausses']} wrong, all corrected"), "script"),
-        (nb(S["cases_non_citees"], lg), T("cases « non dites »", "\"not stated\" cells"), T("l'absence est une donnée", "absence is recorded"), "warn"),
-        (T(f"{K['blind']:.1f} %".replace(".", ","), f"{K['blind']:.1f}%"), T("concordance à l'aveugle", "blind agreement"), T("paramètres, 20 publications", "parameters, 20 papers"), "agent"),
+        (nb(A["publications"], lg), T("publications étudiées", "papers studied"), T("10 paliers audités de 50", "10 audited batches of 50"), "data", 1),
+        (nb(A["voies"], lg), T("voies de synthèse extraites", "synthesis routes extracted"), T(f"{nb(S['voies_base'], lg)} de base + {nb(S['branches'], lg)} branches", f"{nb(S['voies_base'], lg)} base + {nb(S['branches'], lg)} branches"), "data", 1),
+        (nb(A["materiaux_distincts"], lg), T("matériaux différents", "distinct materials"), T(f"couples composition-phase, sur {nb(A['compositions_distinctes'], lg)} compositions", f"composition-phase pairs, {nb(A['compositions_distinctes'], lg)} compositions"), "data", 1),
+        (nb(A["methodes"], lg), T("méthodes de synthèse", "synthesis methods"), T("classes distinctes (+ non classées)", "distinct classes (+ unclassified)"), "data", 1),
+        (pc(A["pct_parametres_communs_methode"]), T("paramètres communs", "shared parameters"), T("2 voies, même méthode", "2 routes, same method"), "agent", 1),
+        (pc(A["pct_proprietes_communes_famille"]), T("propriétés communes", "shared properties"), T("2 voies, même famille", "2 routes, same family"), "agent", 1),
+        (T(f"{bas} – {haut} $", f"${bas}–{haut}"), T(f"prix API de l'extraction ({nb(A['jetons'] / 1e6, lg)} M jetons)", f"API price of the extraction ({nb(A['jetons'] / 1e6, lg)} M tokens)"),
+         T(f"{nb(A['agents'], lg)} agents Sonnet / Opus 5.5 ; bas : tout en cache, haut : tout en entrée", f"{nb(A['agents'], lg)} Sonnet / Opus 5.5 agents; low: all cached, high: all fresh input"), "opus", 2),
     ]
     W, cols, tw, th_, gx, gy, x0, y0 = 880, 4, 200, 92, 12, 12, 24, 20
     H = y0 * 2 + 2 * th_ + gy
-    o = []
-    for i, (v, l1, l2, kind) in enumerate(tiles):
-        x = x0 + (i % cols) * (tw + gx); y = y0 + (i // cols) * (th_ + gy)
-        o.append(f'<rect x="{x}" y="{y}" width="{tw}" height="{th_}" rx="8" fill="{c["bg"]}" stroke="{c["line"]}"/>')
+    o = []; slot = 0
+    for v, l1, l2, kind, span in tiles:
+        x = x0 + (slot % cols) * (tw + gx); y = y0 + (slot // cols) * (th_ + gy); w = tw * span + gx * (span - 1); slot += span
+        o.append(f'<rect x="{x}" y="{y}" width="{w}" height="{th_}" rx="8" fill="{c["bg"]}" stroke="{c["line"]}"/>')
         o.append(f'<rect x="{x}" y="{y+12}" width="4" height="{th_-24}" rx="2" fill="{c[kind]}"/>')
         o.append(txt(x + 18, y + 38, v, 28, 700, fill=c[kind]))
         o.append(txt(x + 18, y + 60, l1, 14, 600))

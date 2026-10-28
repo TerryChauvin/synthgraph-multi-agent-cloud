@@ -7,6 +7,8 @@
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/chiffres_fr_dark.svg"><img src="docs/img/accueil/chiffres_fr_light.svg" alt="Chiffres clés de la base" width="100%"></picture></p>
 
+<sub>Matériaux : couples (composition, phase) distincts, hors voies « dispositif ». Paramètres et propriétés communs : similarité de Jaccard moyenne entre deux voies de base de la même méthode (ou famille), sur le vocabulaire canonique. Prix : historique complet de <code>audits/jetons.csv</code> (chaque agent), au tarif API catalogue ; le journal ne sépare pas entrée, sortie et cache, d'où la fourchette ; l'orchestrateur et la ré-extraction à l'aveugle ne sont pas comptés. Calcul : <code>analyses/chiffres_accueil.py</code>.</sub>
+
 ## Le modèle de données
 
 Une **voie de base** décrit un protocole complet ; chaque **branche** est une variante testée par les auteurs et ne porte que ce qui change. Chaque valeur est accompagnée de sa citation exacte, et ce que l'article ne dit pas est noté.

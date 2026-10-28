@@ -9,6 +9,8 @@
 
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/chiffres_en_dark.svg"><img src="docs/img/accueil/chiffres_en_light.svg" alt="Key figures of the database" width="100%"></picture></p>
 
+<sub>Materials: distinct (composition, phase) pairs, device routes excluded. Shared parameters and properties: mean Jaccard similarity between two base routes of the same method (or family), on the canonical vocabulary. Price: full history of <code>audits/jetons.csv</code> (every agent) at list API rates; the log does not split input, output and cache, hence the range; the orchestrator and the blind re-extraction are not counted. Computed by <code>analyses/chiffres_accueil.py</code>.</sub>
+
 ## The data model
 
 A **base route** holds a full protocol; each **branch** is a variant tested by the authors and stores only what changes. Every value comes with its verbatim quote, and what the paper leaves out is recorded.
