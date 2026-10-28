@@ -1,0 +1,154 @@
+{
+ "pmcid": "PMC9667963",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "attribution",
+   "where": "P-10-80-120 outcomes xps_binding_energy_Si2p_uncalcined / _calcined",
+   "extracted": "uncalcined 103.9 eV, calcined 103.1 eV (ordre littéral des deux nombres)",
+   "article_says": "As shown in Fig. 3b, the Si 2p peak of the uncalcined sample obviously shifts to lower electron energy levels compared with the calcined P-10-80-120 (103.9 eV vs. 103.1 eV).",
+   "fix": "La phrase dit que le non calciné est plus bas, et la Fig. 3b (corpus/fig/PMC9667963/d2sc04544c-f3.jpg) montre P-10-80-120-uncal décalé d'environ 0,5 eV vers les basses énergies par rapport aux trois autres courbes : les deux nombres sont donc dans l'ordre (calciné, non calciné). Permuter : non calciné 103.1, calciné 103.9. Le doute de l'extracteur (« lecture inverse possible ») se tranche par la figure.",
+   "confidence": "sure"
+  },
+  {
+   "severity": "attribution",
+   "where": "P-0-80-120 outcomes xps_binding_energy_Si2p_uncalcined / _calcined",
+   "extracted": "uncalcined 104.2 eV, calcined 103.8 eV",
+   "article_says": "However, the peak position of P-0-80-120 only shifts slightly before and after calcination (104.2 eV vs. 103.8 eV).",
+   "fix": "Même convention que pour P-10-80-120 : sur la Fig. 3b, P-0-80-120-cal est légèrement à droite de P-0-80-120-uncal, ce qui donne non calciné 103.8 et calciné 104.2. La phrase est ambiguë (« before and after » dans l'ordre inverse du chiffre) ; à lire sur la figure, écart de lecture faible, d'où probable.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "P-0-80-120 à 24 h (série en temps du témoin)",
+   "extracted": "aucune branche ni résultat pour 24 h ; seuls 6 h, 8 h et 12 h",
+   "article_says": "In the absence of PAM, the Ti content in the solid product of P-0-80-120 gradually increases (Si/Ti ratio from 107 to 98) with the increase of the crystallization time (6–24 h)",
+   "fix": "ajouter une branche P-0-80-120_24h (durée de l'étape 120 °C = 24 h) avec elemental_composition_SiTi_ratio = 98 (measured_by icp_1), valeur du texte ; Fig. S20 donne les points intermédiaires, non lisibles ici",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: échantillon de référence nano-anatase TiO2 (route null dans l'inventaire) : résultats catalytiques",
+   "extracted": "seule la conversion maximale 1.0 % (et 1,01 % du tableau) est dans une annotation ; rien de structuré, ni comparison",
+   "article_says": "TiO2 1.01 >99 18.2 5.5",
+   "fix": "la ligne TiO2 du tableau S4 (conversion max 1,01 %, sélectivité >99 %, conversion de H2O2 18,2 %, efficacité 5,5 %) et la conversion du DBT 8,8 % (« The conversion of DBT on nano-anatase TiO2 is 8.8% », Fig. 7a, 120 min) ne sont dans aucun résultat. Soit voie à part (produit commercial, réactif Alfa Aesar 99,9 %), soit entrées de `comparisons` ; au minimum les valeurs >99, 18.2, 5.5 sont absentes même des annotations.",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "P-10-80-120 crystallinity_relative à 4 h et 6 h (Fig. 1b)",
+   "extracted": "seuls 2,5 h (50 %) et 3 h (83 %) pour P-10-80-120 ; le plateau à 100 % n'est pas extrait (doute : « valeur textuelle non extraite comme 100 % à 2,5 h »)",
+   "article_says": "a rapid crystal growth is observed which finished after ca. 2.5 h with relative crystallinity reaching 100%",
+   "fix": "La lecture de l'extracteur (fin de croissance 2,5 h après l'apparition à 1,5 h, soit 4 h à 120 °C) est confirmée par la Fig. 1b : P-10-80-120 ≈ 100 % à 4 h et ≈ 98 % à 6 h. Ajouter les branches 4 h (100 %, valeur du texte, from_figure=false) et éventuellement 6 h (≈ 98 %, figure). Sans elles, l'échantillon P-10-80-120 de base (3 h, 83 %) paraît partiellement cristallin sans que la base dise que le plateau est à 4 h : ajouter aussi une annotation limite_reproductibilite (la durée de 3 h à 120 °C du protocole donne 83 % de cristallinité relative).",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "P-10-80-120 / P-0-80-120 outcomes xps_binding_energy_N1s_* et Ti 2p TiO4",
+   "extracted": "seul le pic N 1s à 399.9 eV (N–Ti–O) et les pics Ti 2p3/2 459.1 / 457.8 / 460.2 sont extraits",
+   "article_says": "a peak at 399.9 eV is observed in addition to the acyl functional group (401.5 eV) on PAM and the N atom (402.6 eV) on the template TPAOH",
+   "fix": "ajouter pour P-10-80-120 (non calciné) les pics N 1s 401.5 eV (groupe acyle du PAM) et 402.6 eV (N de TPAOH) ; la Fig. 5b montre aussi le pic à 402.6 eV pour P-0-80-120-uncal (lecture graphique, probable). Ajouter aussi Ti 2p1/2 465.0–465.4 eV et Ti 2p3/2 460.2 eV attribués à TiO4 (« the Ti 2p3/2 and Ti 2p1/2 peaks centred at about 460.2 eV and 465.0–465.4 eV are attributed to TiO4 species »).",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "P-0-80-120 et P-5-80-120 particle_size_crystal",
+   "extracted": "seule la taille de P-20-80-120 (180 nm) est extraite",
+   "article_says": "a low PAM amount (PAM/SiO2 ≤ 0.10) has little effect on the particle size, while a high content of PAM (PAM/SiO2 = 0.20) leads to an increase in the particle size from 120–130 nm to 180 nm",
+   "fix": "ajouter particle_size_crystal = 120–130 nm (value_text) pour P-0-80-120 et P-5-80-120 (et rattacher la même fourchette à P-10-80-120, déjà 130 nm), measured_by tem_1",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "AM-10-80-120, PDDA-10-80-120, PEI-10-80-120, P800-10-80-120, P1800-10-80-120 : effet sur la vitesse de cristallisation",
+   "extracted": "seulement Si/Ti et présence d'anatase ; l'effet d'accélération par polymère n'est que dans une annotation",
+   "article_says": "The results indicate that AM and PDDA do not show the effect of accelerating the crystallization process in the TS-1 growth system, while PEI and PAM (with a MW of 8 000 000 and 18 000 000) have different degrees of acceleration effect",
+   "fix": "ajouter à chaque branche un résultat qualitatif de vitesse (AM et PDDA : pas d'accélération ; PEI, P800, P1800 : accélération « à des degrés différents ») ; la phrase suivante donne aussi « except PDDA, other CGMs could introduce Ti species into the TS-1 framework » (PDDA Si/Ti = 126 sans entrée de Ti)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: xas_1 settings (calibration de l'énergie)",
+   "extracted": "settings = edge, beamline, fitting ; not_stated = []",
+   "article_says": "The energy was calibrated according to the absorption edge of a pure Ti foil as a reference.",
+   "fix": "ajouter un réglage calibration = « pure Ti foil absorption edge » avec cette citation (le nom `calibration` existe dans la liste, utilisé pour UV_vis)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "v3: cat_dbt / cat_dbt_hcl setting oxidant",
+   "extracted": "TBHP, 0.028 g (70 wt% aqueous solution), citation « …0.028 g of TBHP at 353 K for 120 min »",
+   "article_says": "Tert-butyl hydroperoxide (TBHP, 70 wt% aqueous solution, Alfa Aesar (China) Chemicals)",
+   "fix": "la citation du réglage ne contient pas « 70 wt% » (qui vient de la liste des réactifs) ; ajouter cette seconde citation ou retirer l'information de la valeur",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: tem_1_hcl et uvvis_1_hcl result",
+   "extracted": "tem_1_hcl result = « morphology of the time-resolved solids, particle sizes, lattice fringes » ; uvvis_1_hcl = « Ti species (TiO4, TiO6, anatase)… »",
+   "article_says": "Fig. S32 TEM image and UV-vis spectrum of P-10-80-120-HCl.",
+   "fix": "textes de result recopiés de la voie de base : ils décrivent la TEM de la série en temps de P-10-80-120, pas l'image Fig. S32a de P-10-80-120-HCl ; reformuler (« TEM de P-10-80-120-HCl : structure mésoporeuse conservée », « UV-vis de P-10-80-120 et P-10-80-120-HCl »)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: mesures de gel et de surnageant rattachées à des voies de produit (nmr_1 / ftir_1 / dls_1 / nmr_liq)",
+   "extracted": "ftir_band_1050_gel, ftir_band_570_gel et nmr_signal_29Si_Q4_gel sont des résultats de la route P-10-80-120 ; hydrodynamic_size_supernatant de P-0-80-120 mesuré par dls_1 déclaré sur la route P-10-80-120",
+   "article_says": "which suggests a higher degree of cross-linking of Si species in the PAM-containing reaction gel that is the basis for the formation of WLPs",
+   "fix": "l'échantillon mesuré est le gel de synthèse (avant cristallisation) ou le surnageant du témoin, pas le solide calciné de la route ; le suffixe `_gel` le signale mais pas le champ d'échantillon de la mesure. Le résultat de dls_1 (« hydrodynamic size of the supernatant particles ») ne nomme pas l'échantillon, contrairement à nmr_liq. Préciser l'échantillon dans `result` ou créer des branches « gel » / « surnageant »",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "P-10-80-120_1.0h morphology (et branches 0,5 h–2,5 h)",
+   "extracted": "morphologie WLP + petites particules attachée à la seule branche 1.0 h ; taille de ca. 300 nm des WLP (0,5–2,5 h) uniquement en annotation",
+   "article_says": "WLPs grow to ca. 300 nm and then keep unchanged",
+   "fix": "l'énoncé vaut « from 0 h to 2.5 h » (texte : « When prolonging the crystallization time from 0 h to 2.5 h, the separated solid products are all composed of wormlike particles (WLPs) with small particles (ca. 20 nm) attached to the surface of WLPs »). Répéter le résultat morphology sur les branches 0 h, 0.5 h, 1.5 h, 2.0 h, 2.5 h ou le marquer comme groupe ; ajouter particle_size_WLP ≈ 300 nm aux branches 0.5–2.5 h",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "P-10-80-120 après recyclage et régénération (échantillons de l'inventaire sans résultat)",
+   "extracted": "inventaire : « P-10-80-120 after 5 cycles (DBT) and after 4 cycles (1-hexene) », route P-10-80-120 ; aucun résultat ni étape de régénération",
+   "article_says": "100% of the initial catalytic activity remains after 3 runs, and 87% after 5 runs and the structural properties of the catalyst remain unchanged (Fig. S34†)",
+   "fix": "ajouter le résultat qualitatif « structure inchangée » (XRD / UV-vis, Fig. S34 ; « the zeolite framework structure is maintained (Fig. S35 and S36†) » pour le 1-hexène) et la régénération « The used catalyst can be regenerated by calcination in air. » (température et durée non données : à déclarer not_stated)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "P1800-10-80-120 elemental_composition_SiTi_ratio (durée à 120 °C)",
+   "extracted": "branche duration = 8 h (tableau S1) ; résultat cité sur la rangée du tableau S3 « 3 h 6 h 59 »",
+   "article_says": "P1800-10-80-120 3 h 6 h 59",
+   "fix": "le tableau S3 donne 6 h pour la même série alors que le tableau S1 donne 8 h ; le doute le note mais aucune annotation limite_reproductibilite ne le dit, et le résultat 59 porte une citation qui contredit la branche. Ajouter l'annotation (la légende Fig. S22 « for b) is 5 h and for e) is 4 h » est aussi inintelligible)",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: P-10-80-120_1.5h phase",
+   "extracted": "phase = « first characteristic XRD peaks appear (onset of crystallization at 1.5 h, 120 °C) »",
+   "article_says": "the crystallized products of P-10-80-120 begin to form at the crystallization time of 1.5 h (120 °C)",
+   "fix": "la propriété `phase` est définie comme « phase cristalline identifiée » ; l'énoncé est l'apparition des premiers pics, soit la période d'induction, déjà extraite en induction_time = 4.5 h (3 h à 80 °C + 1.5 h) sur la route de base. Supprimer ce doublon ou le ranger en induction_time_120C",
+   "confidence": "probable"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": 27,
+  "branches_extracted": 24,
+  "not_stated_checked": 73,
+  "not_stated_wrong": 0,
+  "settings_checked": 60,
+  "measured_by_checked": 130,
+  "measured_by_wrong": 0
+ },
+ "reproducibility_gaps": [
+  "masses et volumes réels des réactifs (rapports molaires seulement), volume et remplissage de l'autoclave, vitesse d'agitation, durée d'hydrolyse avant l'ajout du PAM, forme du PAM (poudre ou solution)",
+  "centrifugation (vitesse, durée), atmosphère et rampe de la calcination à 550 °C, pureté du TEOS",
+  "préparation du gel et traitement du solide des témoins et des cristallisations en une étape (non décrits)",
+  "le protocole donne 3 h à 120 °C pour P-10-80-120, alors que la Fig. 1b ne montre 100 % de cristallinité qu'à 4 h (83 % à 3 h)",
+  "contradictions SI : H2O2 30 wt% (texte) contre 35 wt% (tableau S4), méthanol 10 mL contre 8,0 g, étalon n-octadécane (protocole) contre n-hexadécane (liste des réactifs), P1800 8 h (S1) contre 6 h (S3)",
+  "régénération du catalyseur par calcination dans l'air : température et durée absentes",
+  "figures d'annexe S1–S36 absentes du dépôt : cinétiques des séries, durée de dégazage BET et gamme de balayage XRD non vérifiables"
+ ],
+ "mechanism_check": "ok : mecanisme_auteurs reprend l'hypothèse des auteurs (TiO6(PAM), liaisons H des groupes acyle) ; l'article la présente comme une hypothèse (« we hypothesize »), l'annotation la rend comme telle",
+ "notes": "Extraction très fidèle : toutes les valeurs des tableaux S2, S3, S4 vérifiées une à une, tous les nombres du texte principal recoupés, 5 valeurs lues sur figure (Fig. 1b, 7a) concordent à moins de 3 points, 70 réglages et 'not_stated' vérifiés. Les réglages de mesure et les liens measured_by sont justes ; le seul vrai défaut de fond est le sens des deux couples de valeurs Si 2p. Choix de vocabulaire (induction_time, crystallization_time, xas_feature, noms de réglages ajoutés) cohérents avec les définitions ajoutées. Fragile dans ma lecture : l'ordre des couples de valeurs XPS du témoin P-0-80-120 (écart de 0,1–0,4 eV lu sur la figure)."
+}
