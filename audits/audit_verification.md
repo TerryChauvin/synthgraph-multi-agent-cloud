@@ -146,13 +146,36 @@ Les séries portent d'abord sur les réactifs (332), puis la température (178),
 
 71 % des 8 320 paramètres numériques ont une valeur SI. Température (99,9 %), durée (99 %) et rampe (97 %) sont converties ; volume (508 valeurs), concentration (403), centrifugation (270), épaisseur (104), vitesse de spin (91), agitation (87) ne le sont jamais, bien que leurs unités soient régulières (mL, µL, L ; M, mM, mg/mL ; rpm, × g ; nm, µm, mm). 253 paramètres numériques n'ont pas d'unité, dont les 147 pH (normal) et 40 rapports molaires (normal) ; le reste (≈ 60) est un défaut de citation à l'unité. La conversion SI est donc partielle par construction de `load.py`, qui ne connaît que les unités de temps et de température, et non par erreur d'extraction.
 
-## 8. Ré-extraction à l'aveugle
+## 8. Ré-extraction à l'aveugle (20 publications)
 
-(Section complétée à la fin de l'exécution : voir le tableau de bord, onglet Vérification, et `docs/audit_contenu/data/verif_reextraction.json`.)
+Vingt publications tirées au sort (graine 2026) ont été ré-extraites par un agent Sonnet qui n'a vu ni l'extraction en base, ni les critiques, ni les journaux (`check_blind.py`, `verification/blind/`). La comparaison (`compare_blind.py`) apparie les voies par libellé et matériau, puis cherche chaque valeur numérique de l'un dans l'autre : même type canonique, même unité normalisée, ±2 %. Deux mesures : le **rappel** (part des valeurs de la base retrouvées par l'aveugle) et la **précision** (part des valeurs de l'aveugle présentes en base). La base a passé quatre passes (extraction, critique de fidélité, critique scientifique, correction), l'aveugle une seule : le rappel mesure donc surtout l'apport des trois passes suivantes, la précision mesure la justesse de la base.
+
+| Mesure | Cumul (20 publications) | Médiane par publication |
+|---|---|---|
+| voies appariées | 167 / 172 (97 %) ; 178 voies à l'aveugle, 123 branches contre 117 | — |
+| paramètres : précision | **91,5 %** (conflits sur valeurs univoques : 0) | 100 % |
+| paramètres : rappel | 67,8 % (70,6 % toutes voies confondues) | 89 % |
+| résultats : précision | **83,6 %** | 84 % |
+| résultats : rappel | 56,8 % (67,0 % toutes voies confondues) | 63 % |
+| quantités de réactifs : précision | 78 % | — |
+| quantités de réactifs : rappel | 77 % (78 % toutes voies confondues) | — |
+| doutes déclarés | 231 en base contre 163 à l'aveugle | — |
+
+Lecture.
+
+- **Les paramètres de synthèse concordent** : 91,5 % des valeurs trouvées à l'aveugle sont dans la base, 100 % en médiane, et aucune valeur univoque (une seule température, une seule durée dans la voie) ne diffère entre les deux extracteurs. Les deux publications sous 80 % (PMC7153708, PMC9143007) le doivent à des découpages de voies différents (séries en concentration et en temps rattachées autrement), pas à des valeurs différentes.
+- **Les résultats concordent à 84 %**, avec 11 conflits sur 1 000 valeurs environ, tous des différences d'attribution et non de transcription : intensités de PL lues sur la Fig. 3a de PMC9080747 attribuées à des températures décalées par l'aveugle (la relecture intégrale avait validé la base), épaisseur de coque 4,3 nm (tableau S1) contre 8,5 nm (texte) dans PMC7153708, capacité de double couche et énergie DFT de deux échantillons différents dans PMC9043841. Les publications sous 70 % de précision (PMC4725629, PMC6600758, PMC6926885, PMC7481534, PMC7648642) sont celles où l'aveugle a rangé les mêmes mesures sur d'autres voies (témoin en voie séparée contre résultat préfixé `control_`, électrode contre pile bouton) ou lu d'autres figures.
+- **Le rappel mesure la valeur ajoutée des critiques** : la base contient en moyenne 30 % de paramètres et 40 % de résultats de plus que ce qu'une extraction seule trouve. Le cas extrême est PMC4725629 (rappel 7 %) : la correction y avait ajouté les caractéristiques de la lampe sur six voies (36 des 74 paramètres), que l'aveugle n'a pas relevées. À l'inverse, l'aveugle a trouvé 178 voies pour 172 en base et plus de branches (123 contre 117) : les découpages diffèrent à la marge (témoins, séries décrites par une plage), sans qu'un découpage soit faux.
+- **Les choix non évidents divergent de façon prévisible** : voie de base choisie dans une série (« 160, 180 ou 200 °C » : l'aveugle prend la première, la base l'échantillon optimal), essais du matériau fini en résultats plutôt qu'en branches (les deux le font, conformément au RUNBOOK), héritage des étapes pour un témoin décrit par « same condition without X » (accepté avec doute des deux côtés), quantités déclarées non citées plutôt que déduites (10 g de NaOH déductibles d'un rapport 1:1 : les deux déclarent).
+- **Trois agents sur vingt ont écrit un journal dans `journaux/`** malgré l'interdiction ; un a écrasé le journal original (restauré depuis git), les deux autres ont été déplacés dans `verification/blind/`. Aucun n'a lu les fichiers interdits d'après leurs rapports.
+
+Coût : 2,85 M jetons pour 20 publications (143 k par publication, 1,5 à 6 min chacune), soit un quart du coût des quatre passes.
+
+Conclusion de la ré-extraction : sur les valeurs qu'un extracteur indépendant trouve, la base est juste dans plus de 9 cas sur 10 pour les paramètres et plus de 8 sur 10 pour les résultats, et les désaccords restants portent sur l'attribution d'une valeur à un échantillon ou à une voie, c'est-à-dire sur les mêmes points que les critiques de fidélité signalent depuis le palier 1. La base est en outre plus riche qu'une extraction seule, ce qui est le résultat attendu des passes de critique.
 
 ## 9. Lecture d'ensemble
 
-- **Ce que la base garantit** : la fidélité des valeurs à l'article (citations vérifiées à 100 %, ré-extraction indépendante concordante sur les quantités et les paramètres), la déclaration explicite de ce que l'article ne donne pas (grille `not_stated` cohérente sur les quantités, la température, la durée, l'agitation, les rampes), et une densité variation → mesure suffisante pour l'apprentissage sur la température, la durée et les réactifs.
+- **Ce que la base garantit** : la fidélité des valeurs à l'article (citations vérifiées à 100 % ; ré-extraction indépendante : 91,5 % des paramètres et 84 % des résultats retrouvés à l'identique, aucun conflit sur les valeurs univoques), la déclaration explicite de ce que l'article ne donne pas (grille `not_stated` cohérente sur les quantités, la température, la durée, l'agitation, les rampes), et une densité variation → mesure suffisante pour l'apprentissage sur la température, la durée et les réactifs.
 - **Ce qu'elle ne garantit pas** : l'exhaustivité des paramètres de procédé hors grille (refroidissement, débit de gaz, répétitions, puissance, remplissage), l'homogénéité des noms de paramètres et de propriétés sans table de correspondance, et la conversion SI des volumes, concentrations et vitesses.
 - **Ce que disent les articles eux-mêmes** : les méthodes en autoclave sont publiées sans 40 % de leurs paramètres essentiels ; l'agitation et les rampes manquent dans 70 à 90 % des cas, toutes méthodes confondues ; les voies vertes ne précisent jamais l'atmosphère.
 - **Couverture** : les familles carbures (3 voies), phosphures (1), nitrures (17), matériaux 2D (18) et céramiques (21) sont trop peu représentées pour une comparaison intra-famille ; polymères, verres, alliages, COF, électrolytes solides, thermoélectriques et géopolymères sont absents ou noyés dans « autre » (41 voies). Les propriétés attendues les moins couvertes sont le band gap et le rendement quantique des pérovskites, la surface BET des carbones, la rétention de capacité des batteries, la densité et la dureté des céramiques, l'épaisseur des matériaux 2D ; la pureté de phase quantifiée, la distribution de taille, le rendement massique, la stabilité dans le temps et l'échelle du lot ne sont presque jamais extraits.
