@@ -1,0 +1,143 @@
+{
+ "pmcid": "PMC6301278",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "attribution",
+   "where": "v3: Extrait_racine_Rs bio_e settings concentration_range et tested_material_dose",
+   "extracted": "bio_e (test de l'extrait seul) porte « 450, 550 and 650 μL of plant extract in 10 mL of AgNO3 » et « 50 μL of AgNPs per disk »",
+   "article_says": "A total of 50 μL concentration of AgNPs was used to ensure identification of antibacterial activity.",
+   "fix": "retirer ces deux réglages de bio_e : ils décrivent les disques d'AgNPs ; l'extrait seul n'a pas de dose ni de série de volumes dans l'article (les mettre en not_stated)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "v3: AgNP_RS bio_1 / Extrait bio_e tested_material_dose",
+   "extracted": "50 μL of AgNPs per disk",
+   "article_says": "A total of 50 μL concentration of AgNPs was used to ensure identification of antibacterial activity.",
+   "fix": "« per disk » n'est pas dans l'article (« 50 μL concentration » est ambigu : volume ou concentration) ; recopier « 50 μL concentration of AgNPs » sans préciser par disque",
+   "confidence": "sure"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "v3: AgNP_RS sem_1 et eds_1 accelerating_voltage",
+   "extracted": "not_stated: accelerating_voltage (doute reconnu : bandeau de la figure)",
+   "article_says": "The size and morphology of AgNPs were investigated using JEOL-6490A-JSM scanning electron microscope (SEM).",
+   "fix": "les bandeaux des Fig. 3A et 3B portent « 20kV X70,000 » (figure lue) : extraire accelerating_voltage = 20 kV (from_figure) et le grossissement ×70 000 ; l'EDS (Fig. 4) est faite sur ce MEB, donner aussi l'instrument JEOL-6490A à eds_1",
+   "confidence": "probable"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "v3: xrd_1 scan_range et ftir_1 / ftir_e wavenumber_range",
+   "extracted": "not_stated: scan_range (XRD) ; wavenumber_range (FTIR)",
+   "article_says": "The XRD pattern has shown the intense five peaks of NPs at 31.99, 45.5, 54.85, 57.52 and 67.24, were indexed to face-centered cubic (fcc) structures of AgNPs.",
+   "fix": "l'axe de la Fig. 5 va de 25 à 70° (2θ) ; les axes de la Fig. 6 vont de ≈ 500 à 4000 cm−1 : réglages lisibles sur figure, à extraire en from_figure ou à garder not_stated avec la mention que seul l'axe de la figure les donne",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: Extrait bio_e / AgNP_RS bio_1 témoin positif",
+   "extracted": "aucune trace de la concentration ni du produit du témoin positif ; comparisons du cefipime sans concentration",
+   "article_says": "The positive control 10 mM of cefipime exhibited maximum zone of inhibition, whereas distilled water, the negative control shown no inhibition on both strains",
+   "fix": "ajouter un réglage (ou la condition des lignes comparisons du cefipime) « 10 mM » et « trade name maxipime (glaxosmithkline) » (Méthodes : « standard antibiotic cefipime (positive control) with the trade name of maxipime (glaxosmithkline) »)",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: comparisons, eau distillée en cinétique 24 h / 48 h (E. coli)",
+   "extracted": "eau distillée extraite seulement pour la comparaison Fig. 9 (0 et 0)",
+   "article_says": "distilled water 0 0 cefipime 35 36",
+   "fix": "l'annexe s006 (colonne 24 h / 48 h) donne aussi distilled water 0 0 ; ajouter deux lignes comparisons (E. coli, 24 h et 48 h, 0 mm) si s006 est bien E. coli",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: AgNP_RS xrd_1 résultats, indexation hkl",
+   "extracted": "5 positions de pics sans indice hkl",
+   "article_says": "The XRD pattern has shown the intense five peaks of NPs at 31.99, 45.5, 54.85, 57.52 and 67.24, were indexed to face-centered cubic (fcc) structures of AgNPs.",
+   "fix": "la Fig. 5 étiquette quatre pics : (111), (200), (142) et (220) ; le pic à 54,85° n'est pas étiqueté ; ajouter ces attributions (from_figure), en notant que (142) n'est pas un indice fcc",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "UV–vis AgNP_RS_250uL … 650uL absorption_peak",
+   "extracted": "380 → 250 µL, 392 → 350, 402 → 450, 414 → 550, 427 → 650 nm, avec la phrase des cinq valeurs comme citation",
+   "article_says": "the absorption peaks of AgNPs synthesized by R. stricta root extract were detected at 380, 392, 402, 414 and 427 nm wavelength.",
+   "fix": "le texte ne rattache aucune longueur d'onde à un volume : l'ordre croissant est une inférence cohérente avec la Fig. 2B ; marquer les cinq valeurs comme lues sur figure (from_figure) ou ajouter une annotation limite_reproductibilite ; de même « (no xylitol) » dans le nom des branches 250–650 µL n'est pas dit pour la série UV (la section Discussion parle de xylitol dans la solution de la Fig. 2A)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "AgNP_RS crystallite_size, phase, xrd_peak_position, elemental_composition (EDX)",
+   "extracted": "DRX et EDX rangées sur la voie sans xylitol (AgNP_RS)",
+   "article_says": "The dry powders of AgNPs synthesized with root extract of R. stricta were subjected to XRD analysis.",
+   "fix": "l'article ne dit pas si l'échantillon DRX / EDX contient de la xylitol ; la taille de 20 nm est aussi celle annoncée au MEB pour l'échantillon avec xylitol ; garder le rattachement mais le signaler par annotation limite_reproductibilite (le doute existe déjà, pas l'annotation)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: AgNP_RS étape 4 (add) stirring_speed",
+   "extracted": "stirring_speed = « continuous shaking »",
+   "article_says": "Six milliliter methanol-extracted plant roots were added drop by drop in 100 mL AgNO3 (one mM) with continuous shaking.",
+   "fix": "« continuous shaking » est un mode d'agitation, pas une vitesse (définition de stirring_speed : vitesse d'agitation) ; déclarer stirring_speed not_stated à l'étape 4 comme à l'étape 5 et garder la mention dans la description de l'étape",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "annexe s004 contre Fig. 7B (B. subtilis, série en extrait)",
+   "extracted": "450 µL : 11 mm sans xylitol, 13 avec ; 650 µL avec xylitol : 12 mm (valeurs de s004 retenues)",
+   "article_says": "AgNps of 450?l 11 13 1.414213562",
+   "fix": "la Fig. 7B donne ≈ 13,3 sans et ≈ 11,3 avec xylitol à 450 µL, et ≈ 14 avec xylitol à 650 µL (écarts de 14 à 17 %) ; l'inversion n'est que dans les doutes : ajouter une annotation limite_reproductibilite et, si possible, les valeurs de la figure en from_figure à côté de celles de l'annexe",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: comparisons (témoins et FTIR du xylitol)",
+   "extracted": "valeurs mesurées par les auteurs sur le cefipime, l'eau distillée et le xylitol rangées dans comparisons (« valeurs de la littérature »), sans measured_by",
+   "article_says": "Figure 6A shows the FTIR spectrum of xylitol displayed bands at 3,362.59 (OH of alcohol) and 1,417.88 (C–H bending of alkane).",
+   "fix": "choix défendable faute de voie pour un échantillon commercial, mais comparisons est défini comme littérature ; au minimum préciser dans conditions « mesure des auteurs » (déjà fait pour le xylitol, pas pour cefipime / eau) ; les annexes s001 et s004 nomment l'antibiotique « cefixime » alors que le texte dit « cefipime » : à signaler",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "method_sources",
+   "extracted": "seule ref-10 (diffusion sur disque) est listée",
+   "article_says": "The structural characterization and crystalline nature of AgNPs were determined by X-ray diffractometer (XRD; D8 Advance; Bruker, Billerica, MA, USA) for the vacuumed dried AgNPs ().",
+   "fix": "le renvoi [[ref-4]] de la phrase DRX est un protocole de mesure : l'ajouter (role: protocole_mesure) ; [[ref-30]] (description générale de la FTIR) n'en est pas un",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "AgNP_RS_250uL … 650uL résultats qualitatifs UV–vis",
+   "extracted": "seulement les positions de pic ; l'élargissement n'est que dans l'annotation tendance_observee",
+   "article_says": "The increasing concentration of plant extracts also increased the broadening of the peak indicating the increased size of NPs.",
+   "fix": "ajouter un résultat qualitatif (peak_broadening / taille croissante selon les auteurs) sur les branches 450–650 µL, mesuré par uv_1",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: AgNP_RS sem_1 setting sample_preparation",
+   "extracted": "« glass slides mentioned as used for sample preparation (EDX paragraph) »",
+   "article_says": "The chlorine and oxygen peaks were may be attributed to glass biomolecules that were present on the surface of AgNPs or to chlorine on the glass slides that were used for sample preparation (Fig. 4).",
+   "fix": "hypothèse des auteurs sur l'origine du chlore (EDX), pas une préparation du MEB décrite : déclarer sample_preparation not_stated pour sem_1 et garder cette phrase en annotation",
+   "confidence": "probable"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": 11,
+  "branches_extracted": 10,
+  "not_stated_checked": 34,
+  "not_stated_wrong": 4
+ },
+ "reproducibility_gaps": [
+  "vitesse d'agitation des deux étapes d'addition et de chauffage",
+  "durée, puissance et fréquence de la sonication",
+  "l'article ne dit pas si la série 250–650 µL (10 mL d'AgNO3) est chauffée, centrifugée et séchée comme la voie de base",
+  "moment et mode d'ajout des 6 mL de xylitol 10−2 M",
+  "rayonnement DRX (Cu Kα non dit), tension MEB (20 kV sur la figure seulement)",
+  "inoculum, milieu gélosé, diamètre des disques et nombre de répétitions des tests ; sens de « 50 μL concentration of AgNPs »",
+  "volume de méthanol 80 % et température d'évaporation de l'extrait racinaire"
+ ],
+ "mechanism_check": "ok : mecanisme_auteurs (xylitol coiffe, ne réduit pas) est soutenu par la citation ; mecanisme_analyse (AgCl possible) est une hypothèse de l'analyste et reste marquée comme telle",
+ "notes": "Les valeurs numériques recopiées des annexes et des figures (zones d'inhibition, bandes FTIR, pics DRX) sont toutes justes ; l'attribution des annexes aux organismes (s001 E. coli, s004 B. subtilis, s003 B. subtilis, s006 E. coli) est confirmée par les Fig. 7 et 8 (barres). Fragile dans ma lecture : s004 et la Fig. 7B se contredisent ; s006 est un tableau double mal mis en page ; « AgNO3 with xylitol » de s002 = AgNP xylitol 550 µL est confirmé par l'axe de la Fig. 9B. L'axe de la Fig. 2B dit 300–800 alors que le texte dit 300–600 nm. Une vérification de la définition des noms du vocabulaire (methods precursor_preparation, green_synthesis, actions) ne montre pas de contradiction."
+}
