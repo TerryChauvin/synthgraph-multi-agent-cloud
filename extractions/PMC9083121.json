@@ -103,7 +103,9 @@
    "quote": "To synthesize undoped CdSe QDs in aqueous medium, we have used cadmium acetate as Cd2+ precursor, sodium selenosulfate (Na2SeSO3) as Se2− precursor, and 3-MPA as stabilizing ligand with modified literature approach.",
    "scale": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "vessel",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -227,6 +229,11 @@
        "name": "ph",
        "value_num": 9.5,
        "quote": "Then the solution was made alkaline at pH value 9.5 by adding NH4OH solution dropwise (pH value would be above 12 by using NaOH solution) and the precursor solution became colorless."
+      },
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "by adding NH4OH solution dropwise"
       }
      ],
      "equipment": [],
@@ -239,7 +246,13 @@
      "action": "add",
      "description": "Inject freshly prepared sodium selenosulfate under continuous stirring; the solution turns light greenish yellow after a few minutes.",
      "quote": "After that, freshly prepared sodium selenosulfate (19.74 mg, 0.25 mmol) as Se2− precursor was injected to the above solution under continuous stirring.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "injected",
+       "quote": "sodium selenosulfate (19.74 mg, 0.25 mmol) as Se2− precursor was injected to the above solution under continuous stirring"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "addition_rate"
@@ -307,7 +320,9 @@
      ],
      "not_stated": [
       "temperature",
-      "pause_between_steps"
+      "pause_between_steps",
+      "cooling_mode",
+      "vessel"
      ]
     },
     {
@@ -432,6 +447,20 @@
      "instrument": "Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission SEM",
      "conditions": "valeurs de la Table S1 (en-tête « Atomic weight % », texte principal : atomic%)",
      "quote": "The element-wise composition of the QDs was determined by collecting EDS data using Apollo X EDS system coupled with a Nova Nano SEM 450 field-emission scanning electron microscope (SEM)."
+    },
+    {
+     "technique": "UV-vis absorption (size by effective-mass model)",
+     "result": "QD diameter 5.3 nm from the first-excited-state energy equal to the Tauc band gap 2.5 eV, using the quantum confinement equation",
+     "instrument": null,
+     "conditions": "reference values: bulk band gap of CdSe Eg = 1.84 eV; me = 0.1 m0; mh = 0.45 m0; m0 = 9.11 × 10−31 kg; dielectric constant ε = 9.2; ℏ = 6.58 × 10−16 eVs; e = 1.602 × 10−19 C; E = 2.5 eV from the Tauc plot of SA5 (ESI S4)",
+     "quote": "where E is the energy of the first excited states of CdSe, Eg = 1.84 eV is the bulk band gap of CdSe,me and mh are the effective mass of the electron and hole respectively in CdSe (here, me = 0.1m0 and mh = 0.45m0, where m0 = 9.11 × 10−31 kg is the free-electron mass), ε = 9.2 is the dielectric constant of CdSe, ℏ = 6.58 × 10−16 eVs is the reduced Planck constant, and e = 1.602 × 10−19 C is the electronic charge"
+    },
+    {
+     "technique": "XRD (Scherrer analysis, reference pattern)",
+     "result": "crystalline domain size from the FWHM of the XRD peaks by the Scherrer formula with K = 0.89, instrumental broadening considered; peaks assigned with JCPDS PDF no. 19-0191",
+     "instrument": null,
+     "conditions": "Scherrer constant K = 0.89; instrumental line broadening taken into account; reference pattern JCPDS PDF no. 19-0191 (zinc blende CdSe); X-ray wavelength not stated",
+     "quote": "where λ is the X-ray wavelength, β is the half bandwidth of the peaks, θ is the Bragg diffraction angle, and K is a correction factor, which is taken as 0.89"
     }
    ],
    "outcomes": [
@@ -517,6 +546,56 @@
      "value_num": 36.58,
      "unit": "%",
      "quote": "Se 36.58 37.11 37.42 37.48 38.48"
+    },
+    {
+     "property": "pH_with_NaOH_instead_of_NH4OH",
+     "value_text": "pH value would be above 12 by using NaOH solution",
+     "quote": "(pH value would be above 12 by using NaOH solution)"
+    },
+    {
+     "property": "PL_excitation_peak_position",
+     "value_num": 397,
+     "unit": "nm",
+     "quote": "Left-hand side dashed line curves of Fig. 2b shows the PL excitation spectra with peaks located at ∼397 nm for all samples by fixing the emission peak at 580 nm."
+    },
+    {
+     "property": "PL_emission_peak_position",
+     "value_num": 574,
+     "unit": "nm",
+     "quote": "Right-hand side solid line curves of Fig. 2b shows PL emission spectra with peaks located near 574 nm for all the samples by fixing peak excitation wavelength at 377 nm."
+    },
+    {
+     "property": "absorption_peak_position",
+     "value_num": 397,
+     "unit": "nm",
+     "quote": "The absorption peak position for all the samples were appearing at ∼397 nm."
+    },
+    {
+     "property": "XRD_peak_position_vs_bulk",
+     "value_text": "peaks at higher 2θ than bulk CdSe (attributed by the authors to the 3-MPA ligand and the Mn2+ dopant)",
+     "quote": "Finally, it is important to note that the XRD peaks of the CdSe QDs samples were located on higher 2θ angle compared to that of the bulk CdSe"
+    },
+    {
+     "property": "FTIR_C=O_band_3-MPA",
+     "value_num": 1713,
+     "unit": "cm-1",
+     "quote": "The strong band at 1713 cm-1 for the ligand refers to the C=O stretching."
+    },
+    {
+     "property": "FTIR_C-H_band_3-MPA",
+     "value_num": 2925,
+     "unit": "cm-1",
+     "quote": "The peak at 2925 cm-1 corresponds to C-H bond of CH2 group in 3-MPA."
+    },
+    {
+     "property": "FTIR_S-H_bands_absent",
+     "value_text": "S-H bands at 2663 and 2561 cm-1 absent in the CdSe QD spectrum",
+     "quote": "The absorption bands at 2663 cm-1 and 2561 cm-1 which correspond to the S-H bond in the capping agent is absent in the CdSe spectrum"
+    },
+    {
+     "property": "XPS_Cd3d_Se3d_like_SA5",
+     "value_text": "almost similar to SA5",
+     "quote": "Survey scan, Cd 3d, and Se 3d spectra for undoped CdSe QDs sample (SA1) are also showing almost similar results like SA5"
     }
    ],
    "missing_fields": [
@@ -649,6 +728,24 @@
      "value_num": 37.11,
      "unit": "%",
      "quote": "Se 36.58 37.11 37.42 37.48 38.48"
+    },
+    {
+     "property": "PL_excitation_peak_position",
+     "value_num": 397,
+     "unit": "nm",
+     "quote": "Left-hand side dashed line curves of Fig. 2b shows the PL excitation spectra with peaks located at ∼397 nm for all samples by fixing the emission peak at 580 nm."
+    },
+    {
+     "property": "PL_emission_peak_position",
+     "value_num": 574,
+     "unit": "nm",
+     "quote": "Right-hand side solid line curves of Fig. 2b shows PL emission spectra with peaks located near 574 nm for all the samples by fixing peak excitation wavelength at 377 nm."
+    },
+    {
+     "property": "absorption_peak_position",
+     "value_num": 397,
+     "unit": "nm",
+     "quote": "The absorption peak position for all the samples were appearing at ∼397 nm."
     }
    ],
    "is_baseline": false
@@ -770,6 +867,24 @@
      "value_num": 37.42,
      "unit": "%",
      "quote": "Se 36.58 37.11 37.42 37.48 38.48"
+    },
+    {
+     "property": "PL_excitation_peak_position",
+     "value_num": 397,
+     "unit": "nm",
+     "quote": "Left-hand side dashed line curves of Fig. 2b shows the PL excitation spectra with peaks located at ∼397 nm for all samples by fixing the emission peak at 580 nm."
+    },
+    {
+     "property": "PL_emission_peak_position",
+     "value_num": 574,
+     "unit": "nm",
+     "quote": "Right-hand side solid line curves of Fig. 2b shows PL emission spectra with peaks located near 574 nm for all the samples by fixing peak excitation wavelength at 377 nm."
+    },
+    {
+     "property": "absorption_peak_position",
+     "value_num": 397,
+     "unit": "nm",
+     "quote": "The absorption peak position for all the samples were appearing at ∼397 nm."
     }
    ],
    "is_baseline": false
@@ -898,6 +1013,24 @@
      "value_num": 37.48,
      "unit": "%",
      "quote": "Se 36.58 37.11 37.42 37.48 38.48"
+    },
+    {
+     "property": "PL_excitation_peak_position",
+     "value_num": 397,
+     "unit": "nm",
+     "quote": "Left-hand side dashed line curves of Fig. 2b shows the PL excitation spectra with peaks located at ∼397 nm for all samples by fixing the emission peak at 580 nm."
+    },
+    {
+     "property": "PL_emission_peak_position",
+     "value_num": 574,
+     "unit": "nm",
+     "quote": "Right-hand side solid line curves of Fig. 2b shows PL emission spectra with peaks located near 574 nm for all the samples by fixing peak excitation wavelength at 377 nm."
+    },
+    {
+     "property": "absorption_peak_position",
+     "value_num": 397,
+     "unit": "nm",
+     "quote": "The absorption peak position for all the samples were appearing at ∼397 nm."
     }
    ],
    "is_baseline": false
@@ -1125,6 +1258,64 @@
      "value_num": 38.48,
      "unit": "%",
      "quote": "Se 36.58 37.11 37.42 37.48 38.48"
+    },
+    {
+     "property": "PL_excitation_peak_position",
+     "value_num": 397,
+     "unit": "nm",
+     "quote": "The peak position of PL excitation spectra is also blue shifted to 397 nm after the microwave irradiation"
+    },
+    {
+     "property": "PL_emission_peak_position",
+     "value_num": 574,
+     "unit": "nm",
+     "quote": "Right-hand side solid line curves of Fig. 2b shows PL emission spectra with peaks located near 574 nm for all the samples by fixing peak excitation wavelength at 377 nm."
+    },
+    {
+     "property": "XPS_Cd3d_doublet_separation",
+     "value_num": 6.9,
+     "unit": "eV",
+     "quote": "(b) & (c) High-resolution spectrum of Cd 3d electrons showing doublet splitting with binding energy separated by 6.9 eV and Se 3d respectively."
+    },
+    {
+     "property": "XPS_Mn2p_doublet_separation",
+     "value_num": 10.9,
+     "unit": "eV",
+     "quote": "(d) High-resolution spectrum of Mn 2p core electrons showing doublet splitting with binding energy separated by 10.9 eV."
+    },
+    {
+     "property": "XPS_S_signal",
+     "value_text": "S peak in the survey scan, from the thiol group of 3-MPA",
+     "quote": "S peak is appeared in this because of the presence of thiol group with the 3-MPA ligand molecules."
+    },
+    {
+     "property": "EDS_S_peak_energy",
+     "value_num": 2.3,
+     "unit": "eV",
+     "quote": "The peak at 2.3 eV corresponds to sulfur (S) which is coming from the thiol group present in 3-MPA ligand molecules."
+    },
+    {
+     "property": "EDS_vs_expected_composition",
+     "value_text": "in good agreement with the expected elemental compositions (all samples)",
+     "quote": "The ratio of the peaks is in good agreement with the expected elemental compositions as shown in ESI Table S1† in terms of atomic% for all samples."
+    },
+    {
+     "property": "SAED_d_spacing_111",
+     "value_num": 3.48,
+     "unit": "Å",
+     "quote": "It is showing the bright circular ring for crystal planes (111), (220), and (311) corresponding to d-values 3.48 Å, 2.14 Å, and 1.78 Å respectively."
+    },
+    {
+     "property": "SAED_d_spacing_220",
+     "value_num": 2.14,
+     "unit": "Å",
+     "quote": "It is showing the bright circular ring for crystal planes (111), (220), and (311) corresponding to d-values 3.48 Å, 2.14 Å, and 1.78 Å respectively."
+    },
+    {
+     "property": "SAED_d_spacing_311",
+     "value_num": 1.78,
+     "unit": "Å",
+     "quote": "It is showing the bright circular ring for crystal planes (111), (220), and (311) corresponding to d-values 3.48 Å, 2.14 Å, and 1.78 Å respectively."
     }
    ],
    "is_baseline": false
@@ -1607,6 +1798,11 @@
        "value_num": 3,
        "value_text": "3 times each",
        "quote": "Briefly, substrates were sonicated in soap solution, DI water, acetone : IPA (1 : 1) for 15 minutes and 3 times each to clean, then dried and kept in vacuum."
+      },
+      {
+       "name": "drying_mode",
+       "value_text": "dried and kept in vacuum",
+       "quote": "then dried and kept in vacuum"
       }
      ],
      "equipment": [],
@@ -1798,6 +1994,11 @@
        "type": "shadow mask",
        "detail": "pre-designed",
        "quote": "At last, aluminum (Al) top electrodes were deposited with the help of pre-designed metal shadow mask to complete devices fabrication process using Kurt J. Lesker PVD75 thermal evaporator system at pressure ∼ 10−6 torr."
+      },
+      {
+       "type": "quartz crystal thickness monitor",
+       "detail": "used to maintain the Al thickness at about 80 nm",
+       "quote": "Thickness of the Al electrode was maintained about 80 nm for all devices as indicated by quartz crystal thickness monitor."
       }
      ],
      "not_stated": [
@@ -1868,6 +2069,16 @@
      "property": "device_resistivity",
      "value_text": "highest resistivity of the five devices between −1 and +1 V",
      "quote": "The device of undoped CdSe QDs (SA1) such as ITO/(PAH/CdSe)10/Al has shown the highest resistivity between this applied voltage range"
+    },
+    {
+     "property": "conduction_mechanism",
+     "value_text": "Poole–Frenkel field-enhanced thermionic emission",
+     "quote": "As a result, the conductivity of CdSe QDs film is enhanced because of the Poole–Frenkel field-enhanced thermionic emission in the crossbar electrode vicinity."
+    },
+    {
+     "property": "Poole_Frenkel_linear_fit",
+     "value_text": "undoped film needs a higher field to show the linear ln(J/E) vs E1/2 relationship than the doped films",
+     "quote": "It is evidenced from Fig. 6b that the undoped CdSe QDs based thin film needs a higher field to show the linear relationship between ln(J/E) and E1/2 compared to its doped counterparts."
     }
    ],
    "missing_fields": [
@@ -1914,6 +2125,11 @@
      "unit": "A",
      "from_figure": "Fig. 6a",
      "quote": "Fig. 6 (a) Current–voltage (I–V) characteristics of all the five devices similar to ITO/(PAH/X)10/Al. Here X is different CdSe QDs sample with varying doping concentration like undoped (SA1, solid blue line), 0.1% doped (SA2, green dash dot line), 0.2% doped (SA3, black dash dot line), 1.0% doped (SA4, pink dash line), and 2.0% doped (SA5, red dotted line)."
+    },
+    {
+     "property": "Poole_Frenkel_linear_fit",
+     "value_text": "good linear ln(J/E) vs E1/2 relationship",
+     "quote": "Because all doped samples are showing the good linear relationship as they have trapped charge carriers"
     }
    ],
    "is_baseline": false
@@ -1957,6 +2173,11 @@
      "unit": "A",
      "from_figure": "Fig. 6a",
      "quote": "Fig. 6 (a) Current–voltage (I–V) characteristics of all the five devices similar to ITO/(PAH/X)10/Al. Here X is different CdSe QDs sample with varying doping concentration like undoped (SA1, solid blue line), 0.1% doped (SA2, green dash dot line), 0.2% doped (SA3, black dash dot line), 1.0% doped (SA4, pink dash line), and 2.0% doped (SA5, red dotted line)."
+    },
+    {
+     "property": "Poole_Frenkel_linear_fit",
+     "value_text": "good linear ln(J/E) vs E1/2 relationship",
+     "quote": "Because all doped samples are showing the good linear relationship as they have trapped charge carriers"
     }
    ],
    "is_baseline": false
@@ -2000,6 +2221,11 @@
      "unit": "A",
      "from_figure": "Fig. 6a",
      "quote": "Fig. 6 (a) Current–voltage (I–V) characteristics of all the five devices similar to ITO/(PAH/X)10/Al. Here X is different CdSe QDs sample with varying doping concentration like undoped (SA1, solid blue line), 0.1% doped (SA2, green dash dot line), 0.2% doped (SA3, black dash dot line), 1.0% doped (SA4, pink dash line), and 2.0% doped (SA5, red dotted line)."
+    },
+    {
+     "property": "Poole_Frenkel_linear_fit",
+     "value_text": "good linear ln(J/E) vs E1/2 relationship",
+     "quote": "Because all doped samples are showing the good linear relationship as they have trapped charge carriers"
     }
    ],
    "is_baseline": false
@@ -2048,6 +2274,11 @@
      "property": "conductivity_enhancement_vs_SA1",
      "value_text": "enhanced by the order of 104 (10^4) compared with the undoped SA1 device (superscript lost in the text)",
      "quote": "Conductivity is enhanced by the order of 104 between undoped (SA1) and 2% Mn2+-doped CdSe QDs (SA5) sample based devices as shown in Fig. 6a."
+    },
+    {
+     "property": "Poole_Frenkel_linear_fit",
+     "value_text": "good linear ln(J/E) vs E1/2 relationship",
+     "quote": "Because all doped samples are showing the good linear relationship as they have trapped charge carriers"
     }
    ],
    "is_baseline": false
@@ -2117,6 +2348,12 @@
      "value_num": 400,
      "unit": "nm",
      "quote": "It has been observed that the peak absorption of CdSe QDs was redshifted to 400 nm in the thin film compared to that measured at 397 nm in dispersed solution."
+    },
+    {
+     "property": "QD_size_from_film_absorption_peak",
+     "value_num": 5.4,
+     "unit": "nm",
+     "quote": "This 400 nm absorption peak corresponds to the QDs size of 5.4 nm, which is not the integral multiple of actual QDs size 5.3 nm calculated from the optical Tauc plot."
     }
    ],
    "is_baseline": false
@@ -2271,6 +2508,11 @@
        "value_num": 3,
        "value_text": "3 times each",
        "quote": "Briefly, substrates were sonicated in soap solution, DI water, acetone : IPA (1 : 1) for 15 minutes and 3 times each to clean, then dried and kept in vacuum."
+      },
+      {
+       "name": "drying_mode",
+       "value_text": "dried and kept in vacuum",
+       "quote": "then dried and kept in vacuum"
       }
      ],
      "equipment": [],
@@ -2492,6 +2734,20 @@
      "instrument": "Nanosurf Naio STM, mechanically cut Pt/Ir tip",
      "conditions": "tip voltage swept from −3 V to +3 V, forward and backward, ambient, constant current mode, Spectroscopy mode",
      "quote": "Undoped CdSe is showing the almost identical current for the voltage-sweep in the forward- and backward directions."
+    },
+    {
+     "technique": "STM electrodes (work functions)",
+     "result": "Si(111) substrate (highly doped n-type) work function 4.9 eV and Pt/Ir tip work function 5.6 eV; the tip voltage is applied to the Si(111) substrate",
+     "instrument": "Nanosurf Naio STM, mechanically cut Pt/Ir tip",
+     "conditions": "reference values: work function 4.9 eV (Si(111) substrate) and 5.6 eV (Pt/Ir tip); ambient",
+     "quote": "Highly doped n-type Si(111) substrate and Pt/Ir tip with the work function of 4.9 eV and 5.6 eV respectively served as the electrodes in STM measurements."
+    },
+    {
+     "technique": "STM setup (grounding, tip calibration, processing)",
+     "result": "Si(111) substrates grounded with Ag paste on the metallic substrate holder; tips checked on HOPG and gold; images processed with WSxM",
+     "instrument": "Nanosurf Naio STM",
+     "conditions": "tip standardized on HOPG and gold surfaces at set current 1 nA and tip bias 50 mV (ESI Fig. S1); all parameters including PID values of imaging mode kept the same throughout; STM topographic images processed with WSxM software",
+     "quote": "For this measurements, the Si(111) substrates were grounded using Ag paste with the metallic substrate holder."
     }
    ],
    "outcomes": [
@@ -2510,6 +2766,11 @@
      "property": "resistive_switching_in_±3_V",
      "value_text": "none; a much higher voltage amplitude is needed to evidence conductance switching",
      "quote": "As the monolayers of undoped CdSe QDs did not yield any resistive switching in that voltage range, they needed a much higher voltage amplitude to evidence conductance switching."
+    },
+    {
+     "property": "DOS_change_on_switching",
+     "value_text": "no noticeable change in DOS for both sweep directions",
+     "quote": "For the monolayer of undoped CdSe QDs, there was no noticeable change in the density of states (DOS) for both the voltage sweep direction as shown in Fig. 7c."
     }
    ],
    "missing_fields": [
@@ -2614,6 +2875,16 @@
      "property": "resistive_switching_endurance",
      "value_text": "reproducible over many cycles",
      "quote": "Such a resistive switching is reproducible over many cycles."
+    },
+    {
+     "property": "DOS_change_on_switching",
+     "value_text": "total DOS much higher in the high conducting state than in the low conducting state",
+     "quote": "The Fig. 7d shows that the calculated total DOS for the high conducting state is increased a lot compared to the low conducting state."
+    },
+    {
+     "property": "reset_tip_voltage",
+     "value_text": "switched back to the low conducting state when the tip voltage sweeps towards 3.0 V (sign as written)",
+     "quote": "The QDs monolayer devices were switched back to their original low conducting state when the tip voltage sweeps towards 3.0 V as shown in Fig. 7b."
     }
    ],
    "characterizations": [
@@ -2721,6 +2992,11 @@
      "property": "threshold_voltage_trend",
      "value_text": "VTh decreases with higher doping concentration (individual value not given in the text)",
      "quote": "It has been observed by comparing the threshold voltage of switching (VTh) among all CdSe QDs samples that the VTh is decreasing with the higher doping concentration."
+    },
+    {
+     "property": "reproducibility_different_locations",
+     "value_text": "almost similar behaviour at different locations on the film",
+     "quote": "Measurements at different locations on the same QDs film have also shown almost similar behaviour (Fig. S10 in the ESI†)."
     }
    ],
    "characterizations": [
@@ -3109,6 +3385,52 @@
   {
    "where": "SA1 à SA5, diamètre de 5,3 nm et taille de domaine de Scherrer",
    "issue": "La phrase « Average CdSe QDs diameter was calculated as 5.3 nm » s'appuie sur le seul tracé de Tauc de SA5 (Fig. S4) et est étendue à tous les échantillons par « the size of all CdSe QDs samples are the same » ; la taille de Scherrer 2,10 ± 0,69 nm est dite pour « all the samples » sans valeur par échantillon. La même valeur est donc portée sur SA1 à SA5."
+  },
+  {
+   "where": "SA5 EDS, pic du soufre",
+   "issue": "Le texte écrit « The peak at 2.3 eV » ; un pic EDS du soufre est à 2,3 keV (l'axe de la Fig. S6 est en keV d'après l'annexe). Valeur recopiée avec l'unité écrite (eV)."
+  },
+  {
+   "where": "Device_Mono_SA3 retour à l'état bas",
+   "issue": "« when the tip voltage sweeps towards 3.0 V » : le signe a pu être perdu (balayage retour vers −3,0 V ?). Recopié tel quel en value_text."
+  },
+  {
+   "where": "SA1 XRD, calcul de Scherrer",
+   "issue": "Le rayonnement et la longueur d'onde λ ne sont donnés nulle part dans l'article ni l'annexe ; seule K = 0,89 est donnée."
+  },
+  {
+   "where": "comparisons : valeurs 595 nm, 14 nm, 70 pm, 95 pm",
+   "issue": "Valeurs de la littérature rappelées par les auteurs sans renvoi bibliographique identifiable ; ref_id omis."
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "Mn2+ in CdSe QDs",
+   "property": "emission_wavelength_4T1-6A1_transition",
+   "value_num": 595,
+   "unit": "nm",
+   "quote": "The emission peaks observed here might be from excitonic emission of CdSe QDs imposed on Mn2+ spectra located at 595 nm for 4T1 → 6A1 transition."
+  },
+  {
+   "material": "Mn2+-doped CdSe QDs",
+   "property": "critical_diameter_for_auto_ionization",
+   "value_num": 14,
+   "unit": "nm",
+   "quote": "as their sizes are well below the critical diameter 14 nm"
+  },
+  {
+   "material": "Mn2+ ion",
+   "property": "ionic_radius",
+   "value_num": 70,
+   "unit": "pm",
+   "quote": "because the radius of the Mn2+ ion (70 pm) is smaller than that of the Cd2+ ion (95 pm)"
+  },
+  {
+   "material": "Cd2+ ion",
+   "property": "ionic_radius",
+   "value_num": 95,
+   "unit": "pm",
+   "quote": "because the radius of the Mn2+ ion (70 pm) is smaller than that of the Cd2+ ion (95 pm)"
   }
  ]
 }
