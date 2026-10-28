@@ -1,0 +1,158 @@
+{
+ "pmcid": "PMC9041118",
+ "ajouts": [
+  {
+   "type": "reglage",
+   "nom": "sample_container",
+   "definition": "Contenant ou support de l'échantillon pendant la mesure (capillaire de verre scellé, conteneur de vanadium, creuset, porte-échantillon) et géométrie de mesure associée.",
+   "ecarte": "specimen_geometry: géométrie d'éprouvette d'un essai mécanique; sample_preparation: préparation de l'échantillon (dispersion, pastille KBr), pas le contenant de mesure",
+   "date": "2026-10-28 21:48"
+  },
+  {
+   "type": "reglage",
+   "nom": "exposure_time",
+   "definition": "Temps d'exposition ou d'acquisition d'un diagramme ou d'un spectre (par motif de diffraction, par spectre).",
+   "ecarte": "reaction_time: durée d'un essai catalytique; contact_time: temps de contact d'un essai d'adsorption",
+   "date": "2026-10-28 21:48"
+  },
+  {
+   "type": "reglage",
+   "nom": "instrument_standard",
+   "definition": "Étalon utilisé pour déterminer la résolution instrumentale ou l'alignement d'un appareil (LaB6, Ni, Na2Ca3Al2F14, silicium).",
+   "ecarte": "calibration: étalonnage quantitatif d'un dosage par des solutions étalons; calibration_reference: référence en énergie d'un spectre XPS",
+   "date": "2026-10-28 21:48"
+  },
+  {
+   "type": "reglage",
+   "nom": "pulse_sequence",
+   "definition": "Séquence d'impulsions d'une mesure RMN (écho de Hahn synchronisé au rotor, écho quadripolaire, saturation-récupération, écho stimulé à gradients bipolaires) avec ses délais.",
+   "ecarte": "spectrometer_frequency: fréquence du spectromètre et non la séquence; solvent_or_rotor: rotor ou solvant",
+   "date": "2026-10-28 21:48"
+  },
+  {
+   "type": "reglage",
+   "nom": "diffusion_time",
+   "definition": "Temps de diffusion Δ et durée δ des gradients d'une mesure RMN à gradients de champ pulsés (PFG).",
+   "ecarte": "reaction_time: durée d'un essai catalytique; contact_time: temps de contact d'un essai d'adsorption",
+   "date": "2026-10-28 21:48"
+  },
+  {
+   "type": "reglage",
+   "nom": "frequency_range",
+   "definition": "Plage de fréquences balayée par une mesure d'impédance ou un autre spectre en fréquence.",
+   "ecarte": "wavenumber_range: plage de nombres d'onde infrarouge ou Raman; wavelength_range: plage de longueurs d'onde optiques; scan_range: plage angulaire ou énergétique de diffraction",
+   "date": "2026-10-28 21:48"
+  },
+  {
+   "type": "reglage",
+   "nom": "ac_amplitude",
+   "definition": "Amplitude du signal alternatif appliqué lors d'une mesure d'impédance (tension ou courant).",
+   "ecarte": "scan_rate: vitesse de balayage en potentiel d'une voltampérométrie; potential_window: fenêtre de potentiel balayée",
+   "date": "2026-10-28 21:48"
+  },
+  {
+   "type": "reglage",
+   "nom": "electrode_contacts",
+   "definition": "Contacts électriques posés sur l'échantillon pour la mesure : nature (métal bloquant, électrode pulvérisée), dépôt, force de serrage.",
+   "ecarte": "counter_electrode: contre-électrode d'une cellule électrochimique avec électrolyte; reference_electrode: électrode de référence",
+   "date": "2026-10-28 21:48"
+  },
+  {
+   "type": "technique",
+   "nom": "neutron_diffraction",
+   "definition": "Diffraction des neutrons sur poudre (réacteur ou source de spallation) : phase, paramètres de maille, positions et occupations atomiques, y compris pour les éléments légers comme Li.",
+   "ecarte": "XRD: mesure avec des rayons X et non des neutrons; SAED: diffraction électronique sur une aire sélectionnée au MET",
+   "date": "2026-10-28 21:48",
+   "reglages": [
+    "radiation",
+    "scan_range",
+    "sample_container",
+    "exposure_time",
+    "instrument_standard",
+    "software"
+   ]
+  },
+  {
+   "type": "technique",
+   "nom": "total_scattering_pdf",
+   "definition": "Diffusion totale des rayons X (synchrotron) et fonction de distribution de paires (PDF) : ordre local, distances interatomiques à courte portée, ajustement en espace réel (small box).",
+   "ecarte": "XRD: diffraction de Bragg sur poudre sans analyse de la diffusion diffuse ni du signal à courte portée; SAXS: petits angles, taille de particules et non distances interatomiques",
+   "date": "2026-10-28 21:48",
+   "reglages": [
+    "radiation",
+    "scan_range",
+    "sample_container",
+    "exposure_time",
+    "instrument_standard",
+    "software"
+   ]
+  },
+  {
+   "type": "technique",
+   "nom": "impedance_spectroscopy",
+   "definition": "Spectroscopie d'impédance d'une pastille d'électrolyte solide entre contacts bloquants : résistances de bulk et de joints de grains, conductivité ionique, énergie d'activation par la loi d'Arrhenius.",
+   "ecarte": "electrochemistry: mesures d'électrode ou de cellule en électrolyte liquide avec référence et contre-électrode; electrical_measurement: mesure électrique quatre pointes ou Hall d'un film, pas un spectre d'impédance en fréquence",
+   "date": "2026-10-28 21:48",
+   "reglages": [
+    "frequency_range",
+    "ac_amplitude",
+    "electrode_contacts",
+    "measurement_temperature",
+    "sample_preparation"
+   ]
+  },
+  {
+   "type": "methode",
+   "nom": "commercial_material",
+   "definition": "Matériau acheté auprès d'un fournisseur et étudié ou retraité par les auteurs sans que ceux-ci le synthétisent : la voie ne décrit que l'origine du matériau et sert de point de départ aux traitements et aux mesures.",
+   "ecarte": "device_fabrication: mise en forme d'un dispositif; thermal_treatment: traitement thermique d'un solide formé, pas l'achat d'un matériau",
+   "date": "2026-10-28 21:48"
+  },
+  {
+   "type": "propriete",
+   "nom": "diffusion_coefficient",
+   "definition": "Coefficient de diffusion d'une espèce mobile (Li+) déduit d'une mesure RMN (PFG, relaxation) ou d'un modèle de saut, éventuellement à une température donnée.",
+   "ecarte": "solution_concentration: concentration en solution et non un coefficient de transport; conductivity: conductivité mesurée, le coefficient en est la grandeur sous-jacente",
+   "date": "2026-10-28 21:48",
+   "techniques": [
+    "NMR",
+    "electrochemistry"
+   ],
+   "unite": "m2 s-1"
+  },
+  {
+   "type": "propriete",
+   "nom": "pdf_peak_distance",
+   "definition": "Position (distance interatomique en Å) d'un pic de la fonction de distribution de paires, avec les paires d'atomes attribuées.",
+   "ecarte": "d_spacing: distance interréticulaire d'un plan cristallin issue de la diffraction de Bragg; xrd_peak_position: position d'un pic de diffraction en 2θ",
+   "date": "2026-10-28 21:48",
+   "techniques": [
+    "total_scattering_pdf"
+   ],
+   "unite": "Å"
+  },
+  {
+   "type": "propriete",
+   "nom": "structure_similarity",
+   "definition": "Mesure de similitude entre deux modèles structuraux (indice de Bergerhoff, déformation spontanée du réseau, déplacement atomique maximal ou moyen) calculée par comparaison de structures.",
+   "ecarte": "microstrain_dislocation: microdéformation issue de l'élargissement des pics; lattice_parameter: paramètre de maille d'une seule structure",
+   "date": "2026-10-28 21:48",
+   "techniques": [
+    "XRD",
+    "neutron_diffraction",
+    "total_scattering_pdf"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "hopping_attempt_frequency",
+   "definition": "Facteur pré-exponentiel de la vitesse de saut d'un ion (τ0^-1) déduit de l'ajustement de la relaxation spin-réseau RMN.",
+   "ecarte": "activation_energy: barrière du saut, pas le facteur pré-exponentiel; kinetics_fit: constante cinétique d'un essai catalytique ou d'adsorption",
+   "date": "2026-10-28 21:48",
+   "techniques": [
+    "NMR"
+   ],
+   "unite": "s-1"
+  }
+ ]
+}
