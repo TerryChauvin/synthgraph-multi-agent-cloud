@@ -127,6 +127,29 @@ Passes ajoutées le 28/10/2026 : complément (`PROMPT_COMPLEMENT.md`, guidé par
 2. Pilote de 10 publications avec la nouvelle consigne.
 3. Décision sur la passe complète, après règlement du poids du dépôt.
 
+### 5.5 Corrections proposées pour les quatre défauts (discussion du 28/10/2026)
+
+**a. « Non cité » à tort**
+- Détection automatique au chargement (`load.py`, avertissement, pas erreur : faux positifs possibles) : une case déclarée absente dont la citation de l'étape contient un motif de la case (°C, h, rpm, « three times », atmosphère) ; pureté ou fournisseur déclarés absents alors qu'une phrase de l'article nomme le réactif avec un grade ou un fournisseur, ou qu'une phrase générale couvre tous les réactifs. Mesure actuelle : ≈ 10 % des « non cité » de température, durée et pureté (`audits/audit_grilles.md`).
+- Correction de l'existant : passe ciblée par agent, qui ne reçoit que la liste des cases suspectes avec leur passage ; pour chacune, valeur extraite avec citation ou absence confirmée avec raison. Petit coût (quelques dizaines de milliers de jetons par publication concernée).
+- Prévention : la règle et le contrôle automatique empêchent la récidive ; la critique de fidélité garde sa catégorie « non cité à tort ».
+
+**b. Chaînes `conditions` des mesures**
+- Problème : texte libre sans citation propre, non vérifié (les agents y ajoutent du texte en fin de chaîne).
+- Structure proposée : chaque caractérisation porte une liste de réglages `settings`, un par réglage (`name` pris dans le vocabulaire des réglages de la technique, `value_num` ou `value_text`, `unit`, `quote`), vérifiés comme les paramètres de synthèse (citation exacte, nombre dans la citation). Les réglages attendus de la technique absents de l'article vont dans un `not_stated` de la caractérisation. L'ancienne chaîne reste en lecture (`conditions_text`), sans être utilisée pour l'analyse.
+- Correction de l'existant : pas de découpage automatique fiable ; fait par la passe de complétion (l'agent retrouve la citation de chaque réglage).
+
+**c. Lien résultat → mesure**
+- Structure proposée : chaque résultat porte la référence de la caractérisation qui l'a produit (même voie ou voie parente, comme l'héritage des étapes). `load.py` vérifie que la caractérisation existe et que la technique est compatible avec la propriété (table propriété → techniques admises dans le vocabulaire : surface BET → BET ; taille de cristallite → XRD ; bande interdite → UV-vis…).
+- Correction de l'existant, en deux temps : (1) lien automatique quand une seule caractérisation compatible existe dans la voie ou ses parents ; (2) les cas ambigus ou sans mesure vont à la passe de complétion. Estimation sur la base actuelle (39 527 résultats) : 56 % ont une propriété rattachable à une technique ; parmi eux, 40 % ont une seule mesure candidate (lien automatique), 41 % plusieurs (choix par agent), 19 % aucune (mesure à créer ou à déclarer absente).
+
+**d. Grille de synthèse indépendante de la méthode**
+- Idée : la méthode se réalise dans une étape. Le vocabulaire des actions d'étape s'enrichit d'actions propres à une méthode (traitement hydrothermal ou solvothermal, chauffage micro-ondes, dépôt par centrifugation, broyage, pyrolyse sous gaz…), chacune avec sa définition et ses cases (autoclave : volume, remplissage, température, durée, refroidissement ; micro-ondes : puissance, température, pression ; dépôt par centrifugation : vitesse, durée, volume déposé ; broyage : vitesse, durée, rapport billes/poudre). La voie porte la liste de ses méthodes, prise dans le vocabulaire.
+- Les deux niveaux (étape générique et méthode) se rejoignent ainsi dans une seule grille par action, plus simple à contrôler dans `load.py`.
+- Correction de l'existant : reclassement automatique des actions existantes (par exemple « heat » avec un autoclave en équipement → traitement hydrothermal), vérifié par échantillon ; les nouvelles cases sont marquées « non cherché » jusqu'à la passe de complétion.
+
+**Ordre** : (1) vocabulaire avec définitions (méthodes, actions, réglages par technique, table propriété → techniques) ; (2) évolutions de `load.py` (avertissements « non cité », réglages structurés, lien résultat → mesure, grille par action, état « non cherché ») ; (3) liens automatiques et reclassement des actions sur l'existant ; (4) pilote de 10 publications ; (5) passe de complétion, qui traite en même temps les « non cité » suspects, les réglages structurés et les liens ambigus.
+
 ## 6. Fichiers liés
 
 `audits/registre_tests.md` (tous les tests et leur verdict), `audits/test_completude.md`, `audits/audit_grilles.md`, `audits/couverture_valeurs.md`, `audits/pilote_complement.md`, `audits/sonde_manques.md`, `audits/audit_verification.md`, `audits/audit_contenu.md`, `canon.py`, `docs/vocabulaire/`, `PROMPT_COMPLEMENT.md`, `PROMPT_TEST_COMPLETUDE.md`.
