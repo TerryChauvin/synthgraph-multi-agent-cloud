@@ -1,0 +1,1239 @@
+{
+ "pmcid": "PMC12191741",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "BiBaO3-500",
+   "defined_in": "Methods, 2.1",
+   "route": "BiBaO3-500",
+   "results_in": []
+  },
+  {
+   "sample": "BiBaO3-600",
+   "defined_in": "Methods, 2.1",
+   "route": "BiBaO3-600",
+   "results_in": []
+  },
+  {
+   "sample": "BiBaO3-700",
+   "defined_in": "Methods, 2.1 ; Fig. 1 caption",
+   "route": "BiBaO3-700",
+   "results_in": [
+    "Table 1",
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 10",
+    "Sections 3.1, 3.2, 3.6"
+   ]
+  },
+  {
+   "sample": "BiBaO3-800",
+   "defined_in": "Methods, 2.1",
+   "route": "BiBaO3-800",
+   "results_in": []
+  },
+  {
+   "sample": "BiBaO3 sintered pellet",
+   "defined_in": "Methods, 2.1",
+   "route": "BiBaO3_pellet",
+   "results_in": [
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "Sections 3.3, 3.4, 3.5"
+   ]
+  },
+  {
+   "sample": "BiBaO3 loose powder for magnetic measurements",
+   "defined_in": "Methods, 2.1",
+   "route": "BiBaO3-700",
+   "results_in": [
+    "Fig. 10",
+    "Section 3.6"
+   ]
+  },
+  {
+   "sample": "three independent synthesis batches",
+   "defined_in": "Methods, 2.1",
+   "route": null,
+   "why": "répétitions de la même synthèse pour la reproductibilité, aucun résultat distinct rapporté"
+  }
+ ],
+ "routes": [
+  {
+   "label": "BiBaO3-700",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "sol_gel",
+    "thermal_treatment"
+   ],
+   "material": {
+    "name": "bismuth barium oxide perovskite powder",
+    "formula": "BiBaO3",
+    "family": "perovskite",
+    "phase": "monoclinic (P21/n) per Rietveld refinement",
+    "morphology": "agglomerated irregular grains"
+   },
+   "method": "citrate–ethylene glycol sol–gel route from Bi nitrate and BaCO3 dissolved in nitric acid, gel dried at 120 °C and calcined in air at 700 °C",
+   "quote": "The BiBaO3 perovskite material was synthesized using the sol–gel method, which is known for its ability to produce homogeneous and fine powders at low processing temperatures.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "bismuth nitrate pentahydrate",
+     "formula": "Bi(NO3)3·5H2O",
+     "role": "precursor",
+     "amount_text": "stoichiometric amount",
+     "purity": "High purity",
+     "supplier_quote": "High purity starting precursors were used, including bismuth nitrate pentahydrate [Bi(NO3)3·5H2O] and barium carbonate [BaCO3].",
+     "not_stated": [
+      "supplier"
+     ],
+     "quote": "Initially, 20 mL of distilled water was used to dissolve the stoichiometric amount of Bi(NO3)3·5H2O."
+    },
+    {
+     "name": "barium carbonate",
+     "formula": "BaCO3",
+     "role": "precursor",
+     "purity": "High purity",
+     "supplier_quote": "High purity starting precursors were used, including bismuth nitrate pentahydrate [Bi(NO3)3·5H2O] and barium carbonate [BaCO3].",
+     "not_stated": [
+      "amount",
+      "supplier"
+     ],
+     "quote": "In a separate beaker, BaCO3 was dispersed in 40 mL of dilute nitric acid (HNO3) under continuous stirring."
+    },
+    {
+     "name": "distilled water (dissolution of Bi nitrate)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 20,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Initially, 20 mL of distilled water was used to dissolve the stoichiometric amount of Bi(NO3)3·5H2O."
+    },
+    {
+     "name": "dilute nitric acid",
+     "formula": "HNO3",
+     "role": "acid",
+     "amount": 40,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "In a separate beaker, BaCO3 was dispersed in 40 mL of dilute nitric acid (HNO3) under continuous stirring."
+    },
+    {
+     "name": "ethylene glycol",
+     "formula": "C2H6O2",
+     "role": "monomer",
+     "amount_text": "1:1 molar ratio with respect to the total metal ions",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Once a uniform mixture is achieved, ethylene glycol and citric acid were added as complexing and gelling agents in a 1:1 molar ratio with respect to the total metal ions."
+    },
+    {
+     "name": "citric acid",
+     "formula": "C6H8O7",
+     "role": "ligand",
+     "amount_text": "1:1 molar ratio with respect to the total metal ions",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Once a uniform mixture is achieved, ethylene glycol and citric acid were added as complexing and gelling agents in a 1:1 molar ratio with respect to the total metal ions."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve the stoichiometric amount of bismuth nitrate pentahydrate in distilled water.",
+     "quote": "Initially, 20 mL of distilled water was used to dissolve the stoichiometric amount of Bi(NO3)3·5H2O.",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "Initially, 20 mL of distilled water was used to dissolve the stoichiometric amount of Bi(NO3)3·5H2O.",
+       "value_num": 20,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "disperse",
+     "description": "Disperse barium carbonate in dilute nitric acid under continuous stirring; the acid dissolves BaCO3 as Ba(NO3)2 with CO2 release.",
+     "quote": "In a separate beaker, BaCO3 was dispersed in 40 mL of dilute nitric acid (HNO3) under continuous stirring.",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "In a separate beaker, BaCO3 was dispersed in 40 mL of dilute nitric acid (HNO3) under continuous stirring.",
+       "value_num": 40,
+       "unit": "mL"
+      },
+      {
+       "name": "concentration",
+       "quote": "In a separate beaker, BaCO3 was dispersed in 40 mL of dilute nitric acid (HNO3) under continuous stirring.",
+       "value_text": "dilute"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "mix",
+     "description": "Mix the two clarified solutions and stir thoroughly.",
+     "quote": "After full dissolution and clarification of the two solutions, they were mixed and stirred thoroughly.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Maintain the mixed solution under heating and stirring until it is transparent.",
+     "quote": "The mixed solution was maintained at approximately 70 °C for 5 h under continuous heating and stirring, during which a transparent solution formed.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The mixed solution was maintained at approximately 70 °C for 5 h under continuous heating and stirring, during which a transparent solution formed.",
+       "value_num": 70,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The mixed solution was maintained at approximately 70 °C for 5 h under continuous heating and stirring, during which a transparent solution formed.",
+       "value_num": 5,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "add",
+     "description": "Add ethylene glycol and citric acid as complexing and gelling agents.",
+     "quote": "Once a uniform mixture is achieved, ethylene glycol and citric acid were added as complexing and gelling agents in a 1:1 molar ratio with respect to the total metal ions.",
+     "parameters": [
+      {
+       "name": "molar_ratio",
+       "quote": "Once a uniform mixture is achieved, ethylene glycol and citric acid were added as complexing and gelling agents in a 1:1 molar ratio with respect to the total metal ions.",
+       "value_text": "1:1 with respect to the total metal ions"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode",
+      "addition_order"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "stir",
+     "description": "Continue stirring until a viscous opaque gel forms.",
+     "quote": "Stirring continued until a viscous and opaque gel formed, indicating the successful formation of a polymeric network containing the metal cations.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "Stirring continued until a viscous and opaque gel formed, indicating the successful formation of a polymeric network containing the metal cations.",
+       "value_text": "until a viscous and opaque gel formed"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "dry",
+     "description": "Dry the gel in an oven to a dry foamy precursor.",
+     "quote": "The gel was then dried in an oven at 120 °C for 12 h to remove residual water and solvents, resulting in a dry foamy precursor.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The gel was then dried in an oven at 120 °C for 12 h to remove residual water and solvents, resulting in a dry foamy precursor.",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The gel was then dried in an oven at 120 °C for 12 h to remove residual water and solvents, resulting in a dry foamy precursor.",
+       "value_num": 12,
+       "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "The gel was then dried in an oven at 120 °C for 12 h to remove residual water and solvents, resulting in a dry foamy precursor.",
+       "value_text": "oven"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "The gel was then dried in an oven at 120 °C for 12 h to remove residual water and solvents, resulting in a dry foamy precursor."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 8,
+     "action": "calcine",
+     "description": "Calcine the dried gel in air at 700 °C for 10 h.",
+     "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity.",
+       "value_num": 700,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity.",
+       "value_num": 10,
+       "unit": "h"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity.",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "grind",
+     "description": "Grind the calcined powders.",
+     "quote": "The resulting powders were then ground to obtain fine, homogeneous BiBaO3 powders for further characterization.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "Empyrean diffractometer (Malvern Panalytical)",
+     "result": "pattern with sharp peaks, no additional peaks, single-phase perovskite; Scherrer, Williamson–Hall and Rietveld analyses",
+     "quote": "The absence of additional peaks suggests phase purity, with no detectable secondary phases.",
+     "settings": [
+      {
+       "name": "radiation",
+       "value_text": "CuKα, λ = 1.54060 Å, 45 kV, 40 mA",
+       "quote": "X-ray Diffraction was performed using an Empyrean diffractometer (Malvern Panalytical Ltd., Malvern, UK) (CuKα radiation, λ = 1.54060 Å) at 45 kV and 40 mA in the Bragg–Brentano prefocusing optics configuration."
+      },
+      {
+       "name": "diffraction_geometry",
+       "value_text": "Bragg–Brentano prefocusing optics",
+       "quote": "X-ray Diffraction was performed using an Empyrean diffractometer (Malvern Panalytical Ltd., Malvern, UK) (CuKα radiation, λ = 1.54060 Å) at 45 kV and 40 mA in the Bragg–Brentano prefocusing optics configuration."
+      },
+      {
+       "name": "scan_range",
+       "value_text": "2θ = 10° to 70°",
+       "quote": "The step counting method was applied, with a step size of 0.02° and a time per step of 1 s, covering a 2θ angle range of 10° to 70°."
+      },
+      {
+       "name": "scan_step",
+       "value_text": "step 0.02°, 1 s per step",
+       "quote": "The step counting method was applied, with a step size of 0.02° and a time per step of 1 s, covering a 2θ angle range of 10° to 70°."
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_text": "Scherrer equation",
+       "quote": "To estimate the average crystallite size (D) of the sample, the Scherrer equation was employed"
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_text": "shape factor K typically 0.9",
+       "quote": "K is the shape factor (typically 0.9)"
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_text": "instrumental broadening assumed negligible",
+       "quote": "Assuming negligible instrumental broadening, the crystallite sizes for the prominent peaks were calculated as follows (Table 1):"
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_text": "Williamson–Hall method",
+       "quote": "the Williamson–Hall (W-H) method applied"
+      },
+      {
+       "name": "software",
+       "value_text": "FullProf Suite (Rietveld refinement)",
+       "quote": "Rietveld refinement was performed using the FullProf Suite."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": "Bruker Nano GmbH system with XFlash 5010 silicon drift detector",
+     "result": "heterogeneous microstructure, agglomerated irregular grains, porosity, grain growth and neck formation in Fig. 3a–c",
+     "quote": "In Figure 3a (scale: 2 μm), the microstructure appears heterogeneous, with a high degree of grain agglomeration and irregularly shaped particles.",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "value_text": "primary electron beam energy 15 keV",
+       "quote": "The SEM analysis was conducted at a primary electron beam energy of 15 keV, providing detailed surface morphology."
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "carbon coating applied to the surface",
+       "quote": "To enhance the conductivity of the sample, a carbon coating was applied to its surface before observation."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "eds_1",
+     "technique": "EDS",
+     "instrument": "Bruker Nano GmbH system with XFlash 5010 silicon drift detector (Esprit 2.3)",
+     "result": "Bi, Ba and O main elements, carbon detected; semi-quantitative wt%",
+     "quote": "The spectrum confirms the presence of the main constituent elements, bismuth (Bi), barium (Ba), and oxygen (O), in proportions that closely align with the expected stoichiometry of BiBaO3.",
+     "settings": [
+      {
+       "name": "software",
+       "value_text": "Esprit software version 2.3 (Bruker)",
+       "quote": "EDX was carried out in energy-dispersive mode using Esprit software version 2.3 (Bruker) for spectral acquisition and elemental mapping, with a take-off angle of 35° employed to optimize X-ray signal detection."
+      },
+      {
+       "name": "takeoff_angle",
+       "value_num": 35,
+       "unit": "°",
+       "quote": "EDX was carried out in energy-dispersive mode using Esprit software version 2.3 (Bruker) for spectral acquisition and elemental mapping, with a take-off angle of 35° employed to optimize X-ray signal detection."
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "mag_1",
+     "technique": "magnetometry",
+     "instrument": "Quantum Design MPMS3 SQUID magnetometer",
+     "result": "narrow symmetric S-shaped hysteresis loop at room temperature, weak ferromagnetic or soft magnetic behaviour",
+     "quote": "The loop exhibits a narrow, symmetric S-shaped curve centered near the origin, indicative of weak ferromagnetic or soft magnetic characteristics.",
+     "settings": [
+      {
+       "name": "measurement_temperature",
+       "value_text": "5 K, 300 K and 380 K (Methods); room temperature (Results)",
+       "quote": "Magnetization curves were measured at temperatures of 5 K, 300 K, and 380 K, with applied fields ranging from −70 kOe to 70 kOe."
+      },
+      {
+       "name": "field_range",
+       "value_text": "−70 kOe to 70 kOe",
+       "quote": "Magnetization curves were measured at temperatures of 5 K, 300 K, and 380 K, with applied fields ranging from −70 kOe to 70 kOe."
+      },
+      {
+       "name": "calibration",
+       "value_text": "geometry-independent moment correction (GIMC) method",
+       "quote": "To correct sample geometry and offset effects, the geometry-independent moment correction (GIMC) method was applied."
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "loose powder",
+       "quote": "For magnetic measurements, a separate portion of the powder was used in loose form to evaluate the magnetic properties using SQUID magnetometry."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "mag_2",
+     "technique": "magnetometry",
+     "instrument": "Quantum Design MPMS3 SQUID magnetometer",
+     "result": "field-cooled temperature-dependent magnetization announced in Methods; no result reported",
+     "quote": "Additionally, temperature-dependent magnetic measurements were conducted using a Field-Cooled (FC) method, with a magnetic field of 1000 Oe, and the sample was heated from 5 to 380 K.",
+     "settings": [
+      {
+       "name": "measurement_temperature",
+       "value_text": "heated from 5 to 380 K (field-cooled)",
+       "quote": "Additionally, temperature-dependent magnetic measurements were conducted using a Field-Cooled (FC) method, with a magnetic field of 1000 Oe, and the sample was heated from 5 to 380 K."
+      },
+      {
+       "name": "field_range",
+       "value_text": "1000 Oe applied field",
+       "quote": "Additionally, temperature-dependent magnetic measurements were conducted using a Field-Cooled (FC) method, with a magnetic field of 1000 Oe, and the sample was heated from 5 to 380 K."
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "single-phase perovskite, no detectable secondary phases",
+     "quote": "The absence of additional peaks suggests phase purity, with no detectable secondary phases.",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase_space_group",
+     "value_text": "monoclinic, space group P21/n",
+     "quote": "The results reveal that BiBaO3 crystallizes in a monoclinic structure with the space group P21/n.",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallinity",
+     "value_text": "sharp and well-defined peaks, high degree of crystallinity",
+     "quote": "The XRD pattern of the synthesized BiBaO3 sample exhibits sharp and well-defined peaks, indicating a high degree of crystallinity.",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "approximately 22.3°, 27.6°, 31.7°, 40.1°, 46.5°, 52.6°, 57.3°, 63.0°, and 67.1° (2θ), most intense near 31.7°",
+     "quote": "The prominent diffraction peaks are observed at 2θ values of approximately 22.3°, 27.6°, 31.7°, 40.1°, 46.5°, 52.6°, 57.3°, 63.0°, and 67.1°, with the most intense peak near 31.7°, suggesting a dominant crystallographic orientation.",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position_from_figure",
+     "value_text": "approx. 21, 29, 42, 47, 52, 61 and 68° (2θ), strongest near 29°",
+     "from_figure": "Fig. 1",
+     "quote": "Figure 1 X-ray diffraction (XRD) pattern of BiBaO3 synthesized at 700 °C, exhibiting sharp and well-defined peaks indicative of high crystallinity.",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_williamson_hall",
+     "value_num": 65.3,
+     "unit": "nm",
+     "quote": "The linear fit to the data points yields a crystallite size of approximately 65.3 nm and a microstrain of 0.0012 (or 0.12%).",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "microstrain_dislocation",
+     "value_num": 0.0012,
+     "quote": "The linear fit to the data points yields a crystallite size of approximately 65.3 nm and a microstrain of 0.0012 (or 0.12%).",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "lattice_parameter_a",
+     "value_num": 6.183,
+     "unit": "Å",
+     "quote": "The refined lattice parameters were found to be a = 6.183 Å, b = 6.137 Å, c = 8.648 Å, and β = 90.0°, confirming the monoclinic symmetry of the material.",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "lattice_parameter_b",
+     "value_num": 6.137,
+     "unit": "Å",
+     "quote": "The refined lattice parameters were found to be a = 6.183 Å, b = 6.137 Å, c = 8.648 Å, and β = 90.0°, confirming the monoclinic symmetry of the material.",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "lattice_parameter_c",
+     "value_num": 8.648,
+     "unit": "Å",
+     "quote": "The refined lattice parameters were found to be a = 6.183 Å, b = 6.137 Å, c = 8.648 Å, and β = 90.0°, confirming the monoclinic symmetry of the material.",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "lattice_parameter_beta",
+     "value_num": 90.0,
+     "unit": "°",
+     "quote": "The refined lattice parameters were found to be a = 6.183 Å, b = 6.137 Å, c = 8.648 Å, and β = 90.0°, confirming the monoclinic symmetry of the material.",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "bond_length_Ba_O",
+     "value_num": 2.75,
+     "unit": "Å",
+     "quote": "Based on these parameters, interatomic distances were calculated, yielding Ba–O and Bi–O distances of 2.75 Å and 2.60 Å, respectively",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "bond_length_Bi_O",
+     "value_num": 2.6,
+     "unit": "Å",
+     "quote": "Based on these parameters, interatomic distances were calculated, yielding Ba–O and Bi–O distances of 2.75 Å and 2.60 Å, respectively",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "morphology_fig3a",
+     "value_text": "heterogeneous, high grain agglomeration, irregularly shaped particles, pronounced porosity",
+     "quote": "In Figure 3a (scale: 2 μm), the microstructure appears heterogeneous, with a high degree of grain agglomeration and irregularly shaped particles.",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "morphology_fig3b",
+     "value_text": "smoother surface, some grain growth, less porosity, neck formation between grains",
+     "quote": "Figure 3b (scale: 5 μm), the ceramic surface becomes relatively smoother, and some degree of grain growth is evident.",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "morphology_fig3c",
+     "value_text": "more interconnected grain structure, reduced porosity, clearer grain boundaries",
+     "quote": "Figure 3c (scale: 10 μm) shows a more interconnected grain structure with reduced porosity and clearer grain boundaries.",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "elemental_composition_Bi",
+     "value_num": 50.7,
+     "unit": "wt%",
+     "quote": "The semi-quantitative data shows a predominant concentration of bismuth (50.70 wt%) and barium (34.57 wt%), with oxygen comprising 8.98 wt%.",
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "elemental_composition_Ba",
+     "value_num": 34.57,
+     "unit": "wt%",
+     "quote": "The semi-quantitative data shows a predominant concentration of bismuth (50.70 wt%) and barium (34.57 wt%), with oxygen comprising 8.98 wt%.",
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "elemental_composition_O",
+     "value_num": 8.98,
+     "unit": "wt%",
+     "quote": "The semi-quantitative data shows a predominant concentration of bismuth (50.70 wt%) and barium (34.57 wt%), with oxygen comprising 8.98 wt%.",
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "elemental_composition_C",
+     "value_num": 5.74,
+     "unit": "wt%",
+     "quote": "A small amount of carbon (5.74 wt%) was also detected",
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "magnetic_Ms",
+     "value_num": 0.0058,
+     "unit": "emu/g",
+     "quote": "Quantitative analysis of the curve yields a saturation magnetization (Ms) of approximately 0.0058 emu/g, a remanent magnetization (Mr) near 0.0004 emu/g, and an extremely low coercive field (Hc) around 0.7 Oe.",
+     "measured_by": "mag_1"
+    },
+    {
+     "property": "magnetic_Mr",
+     "value_num": 0.0004,
+     "unit": "emu/g",
+     "quote": "Quantitative analysis of the curve yields a saturation magnetization (Ms) of approximately 0.0058 emu/g, a remanent magnetization (Mr) near 0.0004 emu/g, and an extremely low coercive field (Hc) around 0.7 Oe.",
+     "measured_by": "mag_1"
+    },
+    {
+     "property": "magnetic_Hc",
+     "value_num": 0.7,
+     "unit": "Oe",
+     "quote": "Quantitative analysis of the curve yields a saturation magnetization (Ms) of approximately 0.0058 emu/g, a remanent magnetization (Mr) near 0.0004 emu/g, and an extremely low coercive field (Hc) around 0.7 Oe.",
+     "measured_by": "mag_1"
+    },
+    {
+     "property": "magnetic_loop_shape",
+     "value_text": "narrow, symmetric S-shaped curve centered near the origin, weak ferromagnetic or soft magnetic",
+     "quote": "The loop exhibits a narrow, symmetric S-shaped curve centered near the origin, indicative of weak ferromagnetic or soft magnetic characteristics.",
+     "measured_by": "mag_1"
+    },
+    {
+     "property": "crystallite_size_scherrer_100",
+     "value_num": 45.9,
+     "unit": "nm",
+     "quote": "1 | 22.3 | 11.15 | 0.0035 | 6.11 × 10−5 | 0.981 | 45.9 | (100)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "FWHM_100",
+     "value_num": 0.0035,
+     "unit": "°",
+     "quote": "1 | 22.3 | 11.15 | 0.0035 | 6.11 × 10−5 | 0.981 | 45.9 | (100)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_scherrer_110",
+     "value_num": 56.4,
+     "unit": "nm",
+     "quote": "2 | 27.6 | 13.80 | 0.0028 | 4.89 × 10−5 | 0.972 | 56.4 | (110)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "FWHM_110",
+     "value_num": 0.0028,
+     "unit": "°",
+     "quote": "2 | 27.6 | 13.80 | 0.0028 | 4.89 × 10−5 | 0.972 | 56.4 | (110)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_scherrer_111",
+     "value_num": 71.2,
+     "unit": "nm",
+     "quote": "3 | 31.7 | 15.85 | 0.0022 | 3.84 × 10−5 | 0.961 | 71.2 | (111)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "FWHM_111",
+     "value_num": 0.0022,
+     "unit": "°",
+     "quote": "3 | 31.7 | 15.85 | 0.0022 | 3.84 × 10−5 | 0.961 | 71.2 | (111)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_scherrer_200",
+     "value_num": 80.2,
+     "unit": "nm",
+     "quote": "4 | 40.1 | 20.05 | 0.0019 | 3.32 × 10−5 | 0.940 | 80.2 | (200)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "FWHM_200",
+     "value_num": 0.0019,
+     "unit": "°",
+     "quote": "4 | 40.1 | 20.05 | 0.0019 | 3.32 × 10−5 | 0.940 | 80.2 | (200)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_scherrer_210",
+     "value_num": 89.1,
+     "unit": "nm",
+     "quote": "5 | 46.5 | 23.25 | 0.0017 | 2.97 × 10−5 | 0.920 | 89.1 | (210)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "FWHM_210",
+     "value_num": 0.0017,
+     "unit": "°",
+     "quote": "5 | 46.5 | 23.25 | 0.0017 | 2.97 × 10−5 | 0.920 | 89.1 | (210)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_scherrer_211",
+     "value_num": 101.2,
+     "unit": "nm",
+     "quote": "6 | 52.6 | 26.30 | 0.0015 | 2.62 × 10−5 | 0.898 | 101.2 | (211)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "FWHM_211",
+     "value_num": 0.0015,
+     "unit": "°",
+     "quote": "6 | 52.6 | 26.30 | 0.0015 | 2.62 × 10−5 | 0.898 | 101.2 | (211)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_scherrer_220",
+     "value_num": 108.9,
+     "unit": "nm",
+     "quote": "7 | 57.3 | 28.65 | 0.0014 | 2.44 × 10−5 | 0.878 | 108.9 | (220)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "FWHM_220",
+     "value_num": 0.0014,
+     "unit": "°",
+     "quote": "7 | 57.3 | 28.65 | 0.0014 | 2.44 × 10−5 | 0.878 | 108.9 | (220)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_scherrer_310",
+     "value_num": 117.5,
+     "unit": "nm",
+     "quote": "8 | 63.0 | 31.50 | 0.0013 | 2.27 × 10−5 | 0.852 | 117.5 | (310)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "FWHM_310",
+     "value_num": 0.0013,
+     "unit": "°",
+     "quote": "8 | 63.0 | 31.50 | 0.0013 | 2.27 × 10−5 | 0.852 | 117.5 | (310)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallite_size_scherrer_311",
+     "value_num": 125.8,
+     "unit": "nm",
+     "quote": "9 | 67.1 | 33.55 | 0.0012 | 2.09 × 10−5 | 0.832 | 125.8 | (311)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "FWHM_311",
+     "value_num": 0.0012,
+     "unit": "°",
+     "quote": "9 | 67.1 | 33.55 | 0.0012 | 2.09 × 10−5 | 0.832 | 125.8 | (311)",
+     "measured_by": "xrd_1"
+    }
+   ],
+   "missing_fields": [
+    "masses of the precursors",
+    "heating rate of the calcination",
+    "dilute nitric acid concentration"
+   ]
+  },
+  {
+   "label": "BiBaO3-500",
+   "parent": "BiBaO3-700",
+   "material": {
+    "name": "bismuth barium oxide perovskite powder",
+    "formula": "BiBaO3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity.",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 8,
+     "value_num": 500,
+     "unit": "°C",
+     "parent_value": "700 °C",
+     "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity."
+    }
+   ],
+   "characterizations": [],
+   "outcomes": []
+  },
+  {
+   "label": "BiBaO3-600",
+   "parent": "BiBaO3-700",
+   "material": {
+    "name": "bismuth barium oxide perovskite powder",
+    "formula": "BiBaO3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity.",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 8,
+     "value_num": 600,
+     "unit": "°C",
+     "parent_value": "700 °C",
+     "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity."
+    }
+   ],
+   "characterizations": [],
+   "outcomes": []
+  },
+  {
+   "label": "BiBaO3-800",
+   "parent": "BiBaO3-700",
+   "material": {
+    "name": "bismuth barium oxide perovskite powder",
+    "formula": "BiBaO3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity.",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 8,
+     "value_num": 800,
+     "unit": "°C",
+     "parent_value": "700 °C",
+     "quote": "The dried gel was subjected to calcination in air at different temperatures of 500 °C, 600 °C, 700 °C, and 800 °C for 10 h each, to study the effect of temperature on phase formation and crystallinity."
+    }
+   ],
+   "characterizations": [],
+   "outcomes": []
+  },
+  {
+   "label": "BiBaO3_pellet",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "post_treatment",
+   "methods": [
+    "thermal_treatment"
+   ],
+   "material": {
+    "name": "bismuth barium oxide sintered pellet",
+    "formula": "BiBaO3",
+    "family": "perovskite",
+    "phase": null,
+    "morphology": "disk-shaped ceramic pellet"
+   },
+   "method": "uniaxial pressing of BiBaO3 powder into disk pellets and sintering at an optimal temperature not given",
+   "quote": "To evaluate the sintering behavior and prepare the sample for electrical and magnetic measurements, pellets of the BiBaO3 powder were pressed using a uniaxial press and sintered at optimal temperatures identified through structural analysis.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": null,
+   "reagents": [
+    {
+     "name": "BiBaO3 powder (calcined, route BiBaO3-700 assumed)",
+     "formula": "BiBaO3",
+     "role": "intermediate",
+     "not_stated": [
+      "amount"
+     ],
+     "quote": "pellets of the BiBaO3 powder were pressed using a uniaxial press"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "press",
+     "description": "Press the BiBaO3 powder into disk-shaped pellets with a uniaxial press.",
+     "quote": "pellets of the BiBaO3 powder were pressed using a uniaxial press",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "uniaxial press",
+       "detail": null,
+       "quote": "pellets of the BiBaO3 powder were pressed using a uniaxial press"
+      }
+     ],
+     "not_stated": [
+      "pressure",
+      "pellet_dimensions"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "sinter",
+     "description": "Sinter the pellets at the optimal temperature identified through structural analysis.",
+     "quote": "sintered at optimal temperatures identified through structural analysis",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "atmosphere",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "is_1",
+     "technique": "impedance_spectroscopy",
+     "instrument": "Agilent 4294A precision impedance analyzer (Cp-Rp configuration)",
+     "result": "dielectric permittivity and loss, AC conductivity, electric modulus and impedance of the pellet versus frequency and temperature",
+     "quote": "The electrical properties were analyzed using impedance spectroscopy (IS), with a frequency range of 100 Hz to 1 MHz and a temperature range of 200 to 380 K, using an Agilent 4294A precision impedance analyzer in the Cp-Rp configuration.",
+     "settings": [
+      {
+       "name": "frequency_range",
+       "value_text": "100 Hz to 1 MHz (Methods)",
+       "quote": "The electrical properties were analyzed using impedance spectroscopy (IS), with a frequency range of 100 Hz to 1 MHz and a temperature range of 200 to 380 K, using an Agilent 4294A precision impedance analyzer in the Cp-Rp configuration."
+      },
+      {
+       "name": "measurement_temperature",
+       "value_text": "200 to 380 K (Methods)",
+       "quote": "The electrical properties were analyzed using impedance spectroscopy (IS), with a frequency range of 100 Hz to 1 MHz and a temperature range of 200 to 380 K, using an Agilent 4294A precision impedance analyzer in the Cp-Rp configuration."
+      },
+      {
+       "name": "electrode_contacts",
+       "value_text": "silver conducting paste on the opposite sides of the pellets",
+       "quote": "silver conducting paste was applied to the opposite sides of the pellets"
+      },
+      {
+       "name": "atmosphere",
+       "value_text": "helium",
+       "quote": "measurements were conducted in a helium atmosphere to reduce moisture and improve heat transfer"
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "powder pressed into disk-shaped pellets and sintered at the optimal temperature",
+       "quote": "For dielectric and electrical measurements, the powders were pressed into disk-shaped pellets and sintered at the optimal temperature."
+      }
+     ],
+     "not_stated": [
+      "ac_amplitude"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "dielectric_epsilon_real_100Hz_trend",
+     "value_text": "ε′ reaches its maximum at ~100 Hz, especially at higher temperatures",
+     "quote": "At low frequencies (~100 Hz), ε′ reaches its maximum value, especially at higher temperatures.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "dielectric_epsilon_real_frequency_trend",
+     "value_text": "permittivity steadily decreases toward 1 MHz, typical relaxation behavior",
+     "quote": "As the frequency increases toward 1 MHz, the permittivity steadily decreases, showing typical relaxation behavior.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "dielectric_epsilon_real_100Hz_400K",
+     "value_num": 21,
+     "unit": "F m−1",
+     "from_figure": "Fig. 5a",
+     "quote": "Figure 5 (a) Frequency and temperature dependence of the real part of dielectric permittivity (ε′) of BiBaO3. (b) Frequency and temperature dependence of dielectric loss tangent (tan δ) of BiBaO3.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "dielectric_epsilon_real_100Hz_380K",
+     "value_num": 18,
+     "unit": "F m−1",
+     "from_figure": "Fig. 5a",
+     "quote": "Figure 5 (a) Frequency and temperature dependence of the real part of dielectric permittivity (ε′) of BiBaO3. (b) Frequency and temperature dependence of dielectric loss tangent (tan δ) of BiBaO3.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "dielectric_epsilon_real_100Hz_200K",
+     "value_num": 9,
+     "unit": "F m−1",
+     "from_figure": "Fig. 5a",
+     "quote": "Figure 5 (a) Frequency and temperature dependence of the real part of dielectric permittivity (ε′) of BiBaO3. (b) Frequency and temperature dependence of dielectric loss tangent (tan δ) of BiBaO3.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "dielectric_tan_delta_text",
+     "value_text": "below 0.1 even at elevated temperatures",
+     "quote": "The low values of tan δ (below 0.1) even at elevated temperatures highlight the low dielectric loss behavior of the material",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "dielectric_tan_delta_100Hz_400K",
+     "value_num": 3.7,
+     "from_figure": "Fig. 5b",
+     "quote": "Figure 5 (a) Frequency and temperature dependence of the real part of dielectric permittivity (ε′) of BiBaO3. (b) Frequency and temperature dependence of dielectric loss tangent (tan δ) of BiBaO3.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "dielectric_tan_delta_100Hz_380K",
+     "value_num": 1.4,
+     "from_figure": "Fig. 5b",
+     "quote": "Figure 5 (a) Frequency and temperature dependence of the real part of dielectric permittivity (ε′) of BiBaO3. (b) Frequency and temperature dependence of dielectric loss tangent (tan δ) of BiBaO3.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "conductivity_ac_low_frequency_trend",
+     "value_text": "σac relatively constant at low frequency (DC-like), increases with frequency",
+     "quote": "At lower frequencies, σac remains relatively constant, corresponding to DC-like behavior where mobile charge carriers contribute to long-range conduction.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "conductivity_jonscher_exponent_s_trend",
+     "value_text": "s generally decreases with increasing temperature",
+     "quote": "The value of s generally decreases with increasing temperature, indicating a thermally activated hopping process where carriers gain sufficient energy to overcome potential barriers between localized states.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "activation_energy_conductivity_high_T",
+     "value_num": 0.36,
+     "unit": "eV",
+     "quote": "the slopes of these two regions yield activation energy values of approximately 0.36 eV for the high-temperature regime and 0.18 eV for the low-temperature regime.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "activation_energy_conductivity_low_T",
+     "value_num": 0.18,
+     "unit": "eV",
+     "quote": "the slopes of these two regions yield activation energy values of approximately 0.36 eV for the high-temperature regime and 0.18 eV for the low-temperature regime.",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "dielectric_modulus_Mreal_low_frequency",
+     "value_text": "M′ approaches zero at low frequencies",
+     "quote": "At low frequencies, M′ approaches zero, which suggests that the material allows for significant long-range charge transport without strong impedance from interfacial polarization (i.e., electrode effects)",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "dielectric_modulus_Mimag_peak_shift",
+     "value_text": "M″ peak shifts towards higher frequencies with increasing temperature",
+     "quote": "Notably, the M″ peak shifts towards higher frequencies with increasing temperature, a hallmark of thermally activated relaxation mechanisms",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "impedance_resistance_Zreal_low_frequency",
+     "value_text": "higher Z′ at low frequencies, dominant resistive behavior",
+     "quote": "At low frequencies, a higher Z′ value is observed, indicating a dominant resistive behavior attributed to grain boundary and electrode effects",
+     "measured_by": "is_1"
+    },
+    {
+     "property": "impedance_resistance_Zimag_peak_shift",
+     "value_text": "Z″ peak shifts toward higher frequencies with increasing temperature",
+     "quote": "The peak position shifts toward higher frequencies with increasing temperature, indicating thermally activated relaxation phenomena",
+     "measured_by": "is_1"
+    }
+   ],
+   "missing_fields": [
+    "sintering temperature",
+    "sintering duration",
+    "pellet diameter and thickness"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "quote": null,
+   "text": "L'article prépare le pérovskite BiBaO3 par une voie sol–gel de type citrate–éthylène glycol : nitrate de bismuth et BaCO3 dissous (eau, acide nitrique dilué), mélange chauffé à 70 °C, gélification, séchage à 120 °C puis calcination à l'air à 500, 600, 700 et 800 °C. L'échantillon étudié est celui de 700 °C (poudre pour DRX, MEB-EDX et magnétisme, pastille frittée pour les mesures diélectriques et électriques). Les auteurs rapportent une phase monoclinique P21/n, une conductivité thermiquement activée à deux énergies d'activation et un faible ferromagnétisme à température ambiante."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "quote": null,
+   "text": "Les auteurs veulent synthétiser BiBaO3 (stœchiométrie dite « inverse » de BaBiO3) par sol–gel, jamais rapporté selon eux, et caractériser en une seule étude ses propriétés structurales, microstructurales, diélectriques, électriques et magnétiques, puis les comparer à la littérature sur BaBiO3."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "quote": null,
+   "text": "Quatre températures de calcination (500, 600, 700 et 800 °C, 10 h chacune) sont citées pour étudier leur effet sur la formation de phase et la cristallinité, mais l'article ne donne de résultats que pour 700 °C : les trois autres voies sont enregistrées sans résultat. Les mesures en température de la pastille (200 à 400 K) servent à extraire énergies d'activation et relaxations."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "quote": null,
+   "text": "Seule la température de calcination change entre BiBaO3-500, -600, -700 et -800. L'article ne rapporte aucun résultat pour 500, 600 et 800 °C ; la comparaison des branches est donc impossible à partir de l'article, et 700 °C sert de référence parce que toutes les figures et mesures s'y rapportent (légende de la figure 1, section 3.2)."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "BiBaO3-700",
+   "quote": "The acid facilitates the dissolution of BaCO3 by forming soluble Ba(NO3)2 and releasing CO2 gas.",
+   "text": "L'acide nitrique dissout BaCO3 en nitrate de baryum soluble avec dégagement de CO2. L'éthylène glycol agit comme agent de polymérisation et l'acide citrique complexe les cations métalliques, ce qui répartit les cations de façon homogène dans le réseau polymère du gel (citation complémentaire : « Ethylene glycol acts as a polymerization agent, while citric acid binds metal ions, ensuring a more homogeneous distribution. »)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "BiBaO3-700",
+   "quote": null,
+   "text": "Hypothèse de chimiste : le citrate chélate Bi3+ et Ba2+, puis l'estérification avec l'éthylène glycol à 70 °C donne un gel polyester où les cations sont piégés ; le séchage à 120 °C produit un précurseur mousseux, et la calcination à l'air brûle la matrice organique et décompose les nitrates (dégagement probable de NOx et de CO2) avant cristallisation de l'oxyde mixte. Remarque de stœchiométrie : Bi3+ et Ba2+ ne compensent que 5 des 6 charges de O3 ; un perovskite BaBiO3 exige du Bi à valence moyenne 4+ (Bi3+/Bi5+), ce que l'article n'établit ni par XPS ni autrement. La calcination à l'air à 700 °C est compatible avec l'oxydation partielle du bismuth, mais le Bi2O3 est volatil et peut réagir avec le creuset à haute température."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "BiBaO3-700",
+   "quote": null,
+   "text": "L'acide nitrique est corrosif et la dissolution de BaCO3 dégage du CO2 en mousse (ajouter lentement). Les sels de baryum solubles (Ba(NO3)2) sont toxiques. La calcination d'un gel riche en nitrates et en matière organique peut s'emballer (combustion autoentretenue) et dégager des oxydes d'azote (NOx) : four ventilé et montée progressive recommandés. Les poudres fines de composés de bismuth et de baryum ne doivent pas être inhalées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": null,
+   "text": "Les masses des précurseurs ne sont pas données (« stoichiometric amount »), ni la concentration de l'acide nitrique dilué, la vitesse d'agitation, la température de gélification, la vitesse de montée et le mode de refroidissement de la calcination, ni le fournisseur et la pureté chiffrée des réactifs. Pour les pastilles, la pression de pressage, la température et la durée du frittage (« optimal temperatures identified through structural analysis ») et les dimensions ne sont pas indiquées : les mesures électriques ne sont pas reproductibles d'après l'article. Aucun résultat n'est donné pour 500, 600 et 800 °C. Les figures 6, 8 et 9 (conductivité, module, impédance à plusieurs températures) n'ont pas été numérisées : seuls les textes qualitatifs sont repris."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiBaO3-700",
+   "quote": null,
+   "text": "Plusieurs données de l'article sont incohérentes entre elles : les pics DRX cités dans le texte (22,3 ; 27,6 ; 31,7 ° …) ne correspondent pas à ceux de la figure 1 (≈ 21, 29, 42, 47, 52, 61, 68 °) ; les tailles de cristallites du tableau 1 (46 à 126 nm) ne se retrouvent pas avec la formule de Scherrer et les FWHM écrites (≈ 2 300 nm avec K = 0,9 pour la première rangée) ; l'indexation (100), (110), (111)… est celle d'une maille cubique simple et non celle d'une phase monoclinique ; la pente du tracé Williamson–Hall de la figure 2 est négative alors qu'une microdéformation de 0,0012 est annoncée. Ces points viennent de l'article et ne sont pas corrigés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "BiBaO3_pellet",
+   "quote": null,
+   "text": "La tangente de perte tan δ est annoncée sous 0,1 dans le texte alors que la figure 5b montre environ 3,7 à 400 K et 100 Hz ; la permittivité est étiquetée en F m−1 (≈ 9 à 21) sur la figure 5a. L'énergie d'activation basse température (0,18 eV) ne correspond pas à la pente de la figure 7 (≈ 0,08 eV en lecture graphique) ; la conclusion donne 0,18 et 0,37 eV là où les résultats donnent 0,18 et 0,36 eV. Plages de fréquence et de température variables d'une section à l'autre (100 Hz–1 MHz ou 100 kHz ; 200–380 K ou 400 K)."
+  }
+ ],
+ "method_sources": [],
+ "comparisons": [
+  {
+   "material": "BaBiO3 (Materials Project database)",
+   "property": "bond_length_Ba_O",
+   "value_text": "2.60 to 2.93",
+   "unit": "Å",
+   "conditions": "distances listed in the Materials Project database",
+   "route": "BiBaO3-700",
+   "quote": "Materials Project database, which lists Ba–O distances ranging from 2.60 to 2.93 Å and Bi–O distances from 2.24 to 2.66 Å for BaBiO3"
+  },
+  {
+   "material": "BaBiO3 (Materials Project database)",
+   "property": "bond_length_Bi_O",
+   "value_text": "2.24 to 2.66",
+   "unit": "Å",
+   "conditions": "distances listed in the Materials Project database",
+   "route": "BiBaO3-700",
+   "quote": "Materials Project database, which lists Ba–O distances ranging from 2.60 to 2.93 Å and Bi–O distances from 2.24 to 2.66 Å for BaBiO3"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "BiBaO3-700 (choix de la voie de base)",
+   "issue": "L'article calcine à 500, 600, 700 et 800 °C sans désigner de référence ; 700 °C est retenue comme voie de base car la légende de la figure 1 et la section 3.2 précisent « synthesized at 700 °C ». Les trois autres voies n'ont aucun résultat dans l'article."
+  },
+  {
+   "where": "BiBaO3-500/600/800 (avertissement « ni résultat ni succès »)",
+   "issue": "Voies sans résultat ni indication de succès : l'article annonce l'étude de l'effet de la température sur la phase et la cristallinité mais n'en donne aucun résultat. Aucun succès ni échec n'est inventé."
+  },
+  {
+   "where": "Réactifs, quantités",
+   "issue": "« stoichiometric amount of Bi(NO3)3·5H2O » : aucune masse. La quantité de BaCO3 n'est pas donnée. Les quantités de BaCO3 et d'éthylène glycol/acide citrique ne se déduisent pas du texte. L'expression « 1:1 molar ratio with respect to the total metal ions » peut signifier chaque agent à 1:1 avec les ions métalliques, ou un rapport 1:1 entre eux ; lecture littérale conservée dans amount_text."
+  },
+  {
+   "where": "Pureté",
+   "issue": "« High purity starting precursors » est une phrase qui vise explicitement les deux précurseurs (nitrate de bismuth et BaCO3) : recopiée comme pureté sans valeur chiffrée ; ni fournisseur ni pureté pour l'eau, l'acide nitrique, l'éthylène glycol et l'acide citrique."
+  },
+  {
+   "where": "BiBaO3-700 étape 4",
+   "issue": "« approximately 70 °C for 5 h » : valeur 70 °C portée telle quelle (l'adverbe approximately est dans la citation)."
+  },
+  {
+   "where": "BiBaO3-700 étape 6",
+   "issue": "Durée d'agitation et température de gélification non données : « until a viscous and opaque gel formed » en value_text de la durée."
+  },
+  {
+   "where": "BiBaO3_pellet (voie post_treatment)",
+   "issue": "Le frittage des pastilles est fait « at optimal temperatures identified through structural analysis » sans température ; la poudre utilisée n'est pas désignée (on suppose celle de 700 °C, qui est l'échantillon étudié). Les voies de pastille ne sont donc pas rattachées à BiBaO3-700 par parent mais par un réactif intermédiaire."
+  },
+  {
+   "where": "Section 3.6 contre 2.2 (magnétisme)",
+   "issue": "Les Méthodes décrivent un SQUID MPMS3 mesuré à 5, 300 et 380 K sous ±70 kOe ; la section 3.6 parle de vibrating sample magnetometry à température ambiante, et la figure 10 couvre seulement ±10 Oe avec une aimantation qui décroît au-delà de ≈ 3 Oe (alors que le texte évoque une augmentation quasi linéaire à champ élevé). Valeurs Ms, Mr, Hc du texte reprises ; mesure FC (mag_2) sans résultat."
+  },
+  {
+   "where": "Mesures sur la pastille, plages",
+   "issue": "Plage de fréquence 100 Hz–1 MHz (Méthodes, section 3.3) mais 100 Hz–100 kHz en section 3.4 ; température 200–380 K (Méthodes) contre 200–400 K (sections 3.3 et 3.4, figure 5 jusqu'à 400 K). Valeurs des Méthodes retenues dans les réglages."
+  },
+  {
+   "where": "Tan δ",
+   "issue": "Le texte dit « below 0.1 » ; la figure 5b montre ≈ 3,7 (400 K) et ≈ 1,4 (380 K) à 100 Hz. Les deux sont extraites (texte et lecture de figure), sans trancher."
+  },
+  {
+   "where": "Figures lues",
+   "issue": "Figure 1 (pics, précision ≈ ±1°) : les pics lus (≈ 21, 29, 42, 47, 52, 61, 68°) diffèrent de ceux du texte (22,3 ; 27,6 ; 31,7 …). Figure 5a (ε′ à 100 Hz : ≈ 21 à 400 K, ≈ 18 à 380 K, ≈ 9 à 200 K) et 5b (tan δ ≈ 3,7 et 1,4), précision ≈ ±1 sur ε′ ; unité F m−1 reprise de l'axe. Figure 7 relue seulement pour contrôle (pente basse température ≈ 0,08 eV contre 0,18 eV du texte) : aucune valeur de figure extraite. Figure 10 relue pour contrôle (pic ≈ 0,006 emu/g vers 3 Oe)."
+  },
+  {
+   "where": "Énergies d'activation",
+   "issue": "Texte : 0,36 eV (haute température) et 0,18 eV (basse) ; Conclusion : 0,18 et 0,37 eV. La valeur des résultats (0,36) est retenue ; la conclusion attribue 0,18 eV au joint de grains et 0,37 eV à la conduction en volume, comme la section 3.4."
+  },
+  {
+   "where": "Tableau 1",
+   "issue": "Les D du tableau 1 ne correspondent pas à Kλ/(β cos θ) avec les FWHM et β écrits (≈ 2 300 nm pour la rangée 1) ; les colonnes sont reprises telles qu'écrites. L'indexation hkl du tableau est incompatible avec une phase monoclinique P21/n."
+  },
+  {
+   "where": "Liste « comparisons »",
+   "issue": "Seules les distances de la base Materials Project sont des valeurs de la littérature chiffrées citées pour comparaison ; les travaux de Korotin et de Plumb sont cités sans valeurs. Pas de ref_id : la base de données n'est pas une référence numérotée."
+  },
+  {
+   "where": "Formule BiBaO3",
+   "issue": "Nom et formule repris de l'article (« reverse stoichiometry » de BaBiO3) ; la même structure monoclinique que BaBiO3 est revendiquée. Aucune analyse (XPS) ne documente l'état d'oxydation du bismuth."
+  }
+ ]
+}
