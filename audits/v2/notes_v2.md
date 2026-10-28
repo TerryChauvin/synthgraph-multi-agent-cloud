@@ -27,3 +27,9 @@
 - PMC5882680 : les noms de propriété de `comparisons` ne sont pas contrôlés par le vocabulaire (conduction_band_potential accepté là, refusé en outcomes) → trou du contrôle à fermer dans load.py.
 - PMC7563594 : 9 ajouts (filtration membranaire) ; réglage `xray_tube_voltage_current` (défini pour la DRX) réutilisé pour la source XPS → définition à élargir ou nom propre à la fusion.
 - PMC11931415 : 7 ajouts (dont 2 méthodes, granulation et physical_mixing) ; adsorbants commerciaux mesurés par les auteurs mis en annotation (10e cas témoins) ; méthode solution_reflux choisie alors que l'article ne parle pas de reflux (Fig. 1 dit hydrothermal).
+
+## Préparation de la fusion du vocabulaire (après les 50)
+- 153 ajouts en attente (63 propriétés, 59 réglages, 14 techniques, 8 méthodes, 7 actions, 2 paramètres), soit ≈ 3 par publication.
+- `acquisition_parameters` et `ms_source_conditions` regroupent plusieurs réglages dans une entrée (« 40 s acquisition time, ×50 objective lens » ; « gas flow…; gas temperature…; capillary voltage… ») → contraire à « un réglage par entrée » ; le contrôle ne peut pas le voir. À refuser à la fusion et à scinder.
+- Doublons : `biomass_extraction` / `precursor_preparation` ; `release_test` / `adsorption_test` (pour drug_release).
+- Le plus gros gisement d'avertissements : listes propriété → techniques à étendre (impedance_spectroscopy, electrical_measurement, vapor_adsorption_test, release_test, profilometry, optical_microscopy, electrochemistry pour catalytic_performance et photocurrent). `vocab.py fusion` ne sait pas encore étendre la liste des techniques d'une propriété existante.
