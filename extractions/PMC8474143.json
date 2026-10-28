@@ -15,7 +15,7 @@
    },
    "method": "sol-gel polymerisation of triethoxysilane to xerogel, two-step annealing under Ar/H2, HF etching, thermal hydrosilylation with methyl 10-undecenoate",
    "quote": "For TES method, the TES-derived xerogels were annealed at 600oC for 1h to remove residual carbon and solvent and then annealed at 950oC for 1h in a 95% Argon / 5% H2 atmosphere.",
-   "scale": null,
+   "scale": "55 mmol (approximately 10 mL) of TES; ~2.5 g xerogels; ~90 mg Si QDs from 2.2 g of annealed powders",
    "yield": {
     "value": 1,
     "unit": "%",
@@ -152,7 +152,13 @@
      "action": "mix",
      "description": "Mix 10 mL of 90 mmol/L HNO3 and 10 mL of ethanol under magnetic stirring in a Schlenk flask under argon.",
      "quote": "First, in a 100 mL Schlenk flask 10 mL of 90 mmol/L HNO3 and 10 mL of ethanol were mixed with magneton stirring in an argon atmosphere.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "value_text": "argon",
+       "quote": "First, in a 100 mL Schlenk flask 10 mL of 90 mmol/L HNO3 and 10 mL of ethanol were mixed with magneton stirring in an argon atmosphere."
+      }
+     ],
      "equipment": [
       {
        "type": "Schlenk flask",
@@ -226,7 +232,8 @@
      ],
      "equipment": [],
      "not_stated": [
-      "repetitions"
+      "repetitions",
+      "wash_volume"
      ]
     },
     {
@@ -245,6 +252,11 @@
        "quote": "transferred to vacuum to remove residual ethanol and water at room temperature for 24 hours",
        "value_num": 24,
        "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "value_text": "vacuum",
+       "quote": "transferred to vacuum to remove residual ethanol and water at room temperature for 24 hours"
       }
      ],
      "equipment": [],
@@ -274,7 +286,10 @@
      "equipment": [],
      "not_stated": [
       "atmosphere",
-      "heating_rate"
+      "heating_rate",
+      "gas_flow",
+      "cooling_mode",
+      "vessel"
      ]
     },
     {
@@ -304,7 +319,10 @@
      "equipment": [],
      "not_stated": [
       "heating_rate",
-      "cooling_rate"
+      "cooling_rate",
+      "gas_flow",
+      "cooling_mode",
+      "vessel"
      ]
     },
     {
@@ -439,6 +457,10 @@
        "detail": null,
        "quote": "the precipitate was mixed with 2.5 mL of methyl 10- undercenoate (Sigma-Aldrich, 96%), under ultrasonic for 5 min to obtain a homogeneous mixture."
       }
+     ],
+     "not_stated": [
+      "power",
+      "frequency"
      ]
     },
     {
@@ -478,7 +500,9 @@
       }
      ],
      "not_stated": [
-      "heating_rate"
+      "heating_rate",
+      "gas_flow",
+      "cooling_mode"
      ]
     },
     {
@@ -741,6 +765,24 @@
      "quote": "seventh 850 nm 39±4%",
      "value_num": 39,
      "unit": "%"
+    },
+    {
+     "property": "XRD_Si_nanocrystal_peak_positions",
+     "value_text": "28, 48, 55",
+     "unit": "°",
+     "quote": "The characteristic peaks of Si nanocrystals located at 28°, 48°, and 55° are evident in all three annealed powders, whereas they are absent from all reference samples."
+    },
+    {
+     "property": "XRD_amorphous_SiO2_broad_band_center_reference",
+     "value_num": 21,
+     "unit": "°",
+     "quote": "The broad signals centered at 21° in the reference XRD patterns are attributed to amorphous silicon dioxide."
+    },
+    {
+     "property": "QD_mean_size_TEM",
+     "value_text": "4–5",
+     "unit": "nm",
+     "quote": "Indeed, the mean size of Si QDs synthesized from all three precursors was 4–5 nm."
     }
    ],
    "missing_fields": [
@@ -1331,7 +1373,10 @@
      "equipment": [],
      "not_stated": [
       "heating_rate",
-      "cooling_rate"
+      "cooling_rate",
+      "gas_flow",
+      "cooling_mode",
+      "vessel"
      ]
     },
     {
@@ -1360,7 +1405,8 @@
       }
      ],
      "not_stated": [
-      "duration"
+      "duration",
+      "stirring_speed"
      ]
     },
     {
@@ -1450,7 +1496,11 @@
        "unit": "min"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "power",
+      "frequency"
+     ]
     },
     {
      "order": 8,
@@ -1484,7 +1534,9 @@
       }
      ],
      "not_stated": [
-      "heating_rate"
+      "heating_rate",
+      "gas_flow",
+      "cooling_mode"
      ]
     }
    ],
@@ -1500,7 +1552,7 @@
      "technique": "TEM",
      "result": "Mean size 4-5 nm; size distribution nearly monodispersed",
      "instrument": "JEM-2100F TEM operated at 200 kV",
-     "conditions": null,
+     "conditions": "QDs in toluene drop-cast on ~15 nm amorphous silicon nitride support films and dried",
      "quote": "In contrast, the size distributions of QDs-HSQ and QDs-TES are nearly monodispersed."
     },
     {
@@ -1509,6 +1561,34 @@
      "instrument": "Spectrum 100 FTIR spectrometer (PerkinElmer) with Golden Gate diamond ATR (Specac)",
      "conditions": "room temperature, resolution 4 cm−1, 4000 to 400 cm-1",
      "quote": "For QDs-HSQ and QDs-TES, the area ratio is lower than for QDs-SiO, revealing a markedly lower percentage of Si–O–Si coverage on the nanoparticle surface."
+    },
+    {
+     "technique": "UV-vis absorption and PL",
+     "result": "Almost the same absorption edge onset and PL emission peak position for the three precursors",
+     "instrument": "Lambda 750 UV-vis spectrophotometer (absorption)",
+     "conditions": "QDs in toluene solution",
+     "quote": "The absorption and PL emission spectra of Si QDs from three precursors (Figure 2b) reveal that they have almost the same absorption edge onset and PL emission peak position."
+    },
+    {
+     "technique": "PLQY (integrating sphere)",
+     "result": "Ensemble PLQY of QDs-HSQ in toluene ~35%",
+     "instrument": "home-built integrating sphere setup (6-inch Labsphere, EQ-99 xenon plasma source, SP2150i monochromator, Peltier-cooled CCD)",
+     "conditions": "excitation at 440 nm unless otherwise specified; relative error ~10%",
+     "quote": "50 ± 5% in OSTE | | | | 35 ± 4% in toluene"
+    },
+    {
+     "technique": "Spectrally resolved PL decay",
+     "result": "Lifetime 216 ± 2 µs and beta 0.90 ± 0.01 at 878 nm (stretched exponential)",
+     "instrument": "Andor Shamrock 500 spectrometer, avalanche photodiode (Becker & Hickl, DPC-230), Zeiss Axio Observer Z1 microscope",
+     "conditions": "405 nm diode laser, 15 W cm-2, pulses 100-500 μs at 0.3-2 kHz, 10x objective, room temperature",
+     "quote": "tau = 216 ± 2 µs beta = 0.90 ± 0.01 R2 = 0.998 measured at 878 nm"
+    },
+    {
+     "technique": "TGA",
+     "result": "Mass loss of the HSQ precursor from 220 to 350 °C attributed to the cage network distribution and associated loss of SiH4",
+     "instrument": "Mettler Toledo TGA/DSC1",
+     "conditions": "~10 mg in alumina pans, 25 to 900 °C, 10 °C min-1, N2 flow of 50 mL/min (Methods); legend of Fig. S3: heating rate 10oC/min from 30 to 900oC under 100% N2 atmosphere",
+     "quote": "For the mass loss of HSQ from 220 to 350oC, the cage network distribution and associate loss of SiH4 are the reason."
     }
    ],
    "outcomes": [
@@ -1555,11 +1635,32 @@
      "quote": "(b) The ratio of areas under the Si–O–Si and C=O stretching modes obtained from (a).",
      "value_num": 6.4,
      "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "XRD_Si_nanocrystal_peak_positions",
+     "value_text": "28, 48, 55",
+     "unit": "°",
+     "quote": "The characteristic peaks of Si nanocrystals located at 28°, 48°, and 55° are evident in all three annealed powders, whereas they are absent from all reference samples."
+    },
+    {
+     "property": "XRD_amorphous_SiO2_broad_band_center_reference",
+     "value_num": 21,
+     "unit": "°",
+     "quote": "The broad signals centered at 21° in the reference XRD patterns are attributed to amorphous silicon dioxide."
+    },
+    {
+     "property": "QD_mean_size_TEM",
+     "value_text": "4–5",
+     "unit": "nm",
+     "quote": "Indeed, the mean size of Si QDs synthesized from all three precursors was 4–5 nm."
     }
    ],
    "missing_fields": [
     "heating_rate",
     "stirring_speed"
+   ],
+   "not_stated": [
+    "repetitions"
    ]
   },
   {
@@ -1684,7 +1785,10 @@
      "equipment": [],
      "not_stated": [
       "heating_rate",
-      "cooling_rate"
+      "cooling_rate",
+      "gas_flow",
+      "cooling_mode",
+      "vessel"
      ]
     },
     {
@@ -1713,7 +1817,8 @@
       }
      ],
      "not_stated": [
-      "duration"
+      "duration",
+      "stirring_speed"
      ]
     },
     {
@@ -1809,7 +1914,11 @@
        "unit": "min"
       }
      ],
-     "equipment": []
+     "equipment": [],
+     "not_stated": [
+      "power",
+      "frequency"
+     ]
     },
     {
      "order": 8,
@@ -1843,7 +1952,9 @@
       }
      ],
      "not_stated": [
-      "heating_rate"
+      "heating_rate",
+      "gas_flow",
+      "cooling_mode"
      ]
     }
    ],
@@ -1859,7 +1970,7 @@
      "technique": "TEM",
      "result": "Mean size 4-5 nm but less uniform; larger agglomerates in low-magnification images",
      "instrument": "JEM-2100F TEM operated at 200 kV",
-     "conditions": null,
+     "conditions": "QDs in toluene drop-cast on ~15 nm amorphous silicon nitride support films and dried",
      "quote": "However, QDs-SiO were not as uniform as the other two."
     },
     {
@@ -1868,6 +1979,34 @@
      "instrument": "Spectrum 100 FTIR spectrometer (PerkinElmer) with Golden Gate diamond ATR (Specac)",
      "conditions": "room temperature, resolution 4 cm−1, 4000 to 400 cm-1",
      "quote": "For QDs-HSQ and QDs-TES, the area ratio is lower than for QDs-SiO, revealing a markedly lower percentage of Si–O–Si coverage on the nanoparticle surface."
+    },
+    {
+     "technique": "UV-vis absorption and PL",
+     "result": "Almost the same absorption edge onset and PL emission peak position for the three precursors",
+     "instrument": "Lambda 750 UV-vis spectrophotometer (absorption)",
+     "conditions": "QDs in toluene solution",
+     "quote": "The absorption and PL emission spectra of Si QDs from three precursors (Figure 2b) reveal that they have almost the same absorption edge onset and PL emission peak position."
+    },
+    {
+     "technique": "PLQY (integrating sphere)",
+     "result": "Ensemble PLQY of QDs-SiO in toluene ~15%, even after recipe optimization",
+     "instrument": "home-built integrating sphere setup (6-inch Labsphere, EQ-99 xenon plasma source, SP2150i monochromator, Peltier-cooled CCD)",
+     "conditions": "excitation at 440 nm unless otherwise specified; relative error ~10%",
+     "quote": "25 ± 3% in OSTE | | | | 15 ± 2% in toluene"
+    },
+    {
+     "technique": "Spectrally resolved PL decay",
+     "result": "Lifetime 136 ± 10 µs and beta 0.86 ± 0.08 at 878 nm (stretched exponential)",
+     "instrument": "Andor Shamrock 500 spectrometer, avalanche photodiode (Becker & Hickl, DPC-230), Zeiss Axio Observer Z1 microscope",
+     "conditions": "405 nm diode laser, 15 W cm-2, pulses 100-500 μs at 0.3-2 kHz, 10x objective, room temperature",
+     "quote": "tau = 136 ± 10 µs beta = 0.86 ± 0.08 R2 = 0.920 measured at 878 nm"
+    },
+    {
+     "technique": "TGA",
+     "result": "The SiO precursor barely loses mass from 30 to 900 °C under N2",
+     "instrument": "Mettler Toledo TGA/DSC1",
+     "conditions": "~10 mg in alumina pans, 25 to 900 °C, 10 °C min-1, N2 flow of 50 mL/min (Methods); legend of Fig. S3: heating rate 10oC/min from 30 to 900oC under 100% N2 atmosphere",
+     "quote": "From the TGA curves, SiO barely lose mass during heating from 30 to 900oC under 100% N2 atmosphere."
     }
    ],
    "outcomes": [
@@ -1920,11 +2059,38 @@
      "quote": "(b) The ratio of areas under the Si–O–Si and C=O stretching modes obtained from (a).",
      "value_num": 9.5,
      "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "XRD_Si_nanocrystal_peak_positions",
+     "value_text": "28, 48, 55",
+     "unit": "°",
+     "quote": "The characteristic peaks of Si nanocrystals located at 28°, 48°, and 55° are evident in all three annealed powders, whereas they are absent from all reference samples."
+    },
+    {
+     "property": "XRD_amorphous_SiO2_broad_band_center_reference",
+     "value_num": 21,
+     "unit": "°",
+     "quote": "The broad signals centered at 21° in the reference XRD patterns are attributed to amorphous silicon dioxide."
+    },
+    {
+     "property": "QD_mean_size_TEM",
+     "value_text": "4–5",
+     "unit": "nm",
+     "quote": "Indeed, the mean size of Si QDs synthesized from all three precursors was 4–5 nm."
+    },
+    {
+     "property": "XRD_preannealed_SiO_hump_centers",
+     "value_text": "28, 50",
+     "unit": "°",
+     "quote": "For preannealed SiO powders, the additional humps centered at 28°, 50° are ascribed to the broadenings of the (111) (220) (311) diffraction of Si nanoclusters."
     }
    ],
    "missing_fields": [
     "heating_rate",
     "stirring_speed"
+   ],
+   "not_stated": [
+    "repetitions"
    ]
   },
   {
@@ -2040,7 +2206,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -2112,7 +2279,9 @@
       }
      ],
      "not_stated": [
-      "duration"
+      "duration",
+      "power",
+      "frequency"
      ]
     },
     {
@@ -2123,7 +2292,8 @@
      "parameters": [],
      "equipment": [],
      "not_stated": [
-      "duration"
+      "duration",
+      "stirring_speed"
      ]
     },
     {
@@ -2822,6 +2992,10 @@
   {
    "where": "QDs-SiO/OSTE (quantités d'OSTE et de QDs)",
    "issue": "Le Supporting Information ne décrit qu'un protocole générique (« ~2 mg of Si QDs » dans 0.96 g de monomère allyle) pour le composite TES, et le texte principal dit seulement que « all samples » ont été insérés dans l'OSTE. L'héritage des quantités, de la durée d'UV et des autres étapes de QDs-TES/OSTE par cette branche est une hypothèse : l'article ne dit pas que la même procédure et les mêmes quantités ont servi."
+  },
+  {
+   "where": "TGA (QDs-TES, QDs-HSQ, QDs-SiO)",
+   "issue": "Les Méthodes du SI donnent un balayage de 25 à 900 °C (10 °C min-1, flux de N2 de 50 mL/min), la légende de la Fig. S3 de 30 à 900 °C sous 100 % N2. Les deux valeurs sont reprises telles qu'écrites ; la courbe Fig. S3 est la même pour les trois précurseurs."
   }
  ]
 }
