@@ -1,0 +1,33 @@
+{
+ "pmcid": "PMC10077337",
+ "ajouts": [
+  {
+   "type": "propriete",
+   "nom": "analytical_recovery",
+   "definition": "Taux de recouvrement d'un dosage (quantité trouvée rapportée à la quantité introduite, en %) mesuré par une méthode analytique sur une solution pure, une forme galénique ou une matrice biologique dopée ; la quantité trouvée et la concentration introduite peuvent être précisées par un suffixe (analytical_recovery_1uM, analytical_found_1uM).",
+   "ecarte": "solution_concentration: concentration mesurée d'un résidu ou d'un relargage, pas un taux de recouvrement d'un dosage; fluorescence_quenching: réponse du signal de la sonde, pas l'exactitude du dosage; limit_of_detection: plus petite concentration détectable, pas l'exactitude",
+   "date": "2026-10-28 21:21",
+   "techniques": [
+    "PL",
+    "UV_vis",
+    "electrochemistry",
+    "chromatography_ms"
+   ],
+   "unite": "%"
+  },
+  {
+   "type": "propriete",
+   "nom": "interference_tolerance",
+   "definition": "Tolérance d'un dosage vis-à-vis d'espèces interférentes : concentration maximale d'une espèce coexistante (médicament, ion, excipient) qui ne change pas la réponse de la sonde ou de la méthode au-delà d'un seuil.",
+   "ecarte": "limit_of_detection: seuil de détection de l'analyte et non d'un interférent; fluorescence_quenching: réponse à l'analyte, pas tolérance aux interférents; analytical_recovery: exactitude du dosage et non tolérance aux interférents",
+   "date": "2026-10-28 21:21",
+   "techniques": [
+    "PL",
+    "UV_vis",
+    "electrochemistry",
+    "chromatography_ms"
+   ],
+   "unite": "µM"
+  }
+ ]
+}
