@@ -1,0 +1,138 @@
+{
+ "pmcid": "PMC10523092",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "manquant",
+   "where": "v3: CdSe/CdS-triangles EDS (eds_tri), résultats chiffrés de l'annexe",
+   "extracted": "elemental_composition en texte seul (« CdSe core and CdS shell… low Se content »), aucune valeur chiffrée",
+   "article_says": "Figure S2. Energy-dispersive X-ray spectroscopy (EDX) made A) in the",
+   "fix": "Annexe, deux tableaux EDX : tableau 1 (avec Se) S 20.71 / Se 2.43 / Cd 76.85 % massique, S 47.48 / Se 2.27 / Cd 50.25 % atomique ; tableau 2 (sans Se) S 44.63 / Cd 55.37 % massique, S 73.86 / Cd 26.14 % atomique. L'ordre des tableaux et des panneaux A (centre) / B (bord) laisse penser tableau 1 = centre, tableau 2 = bord (cohérent avec « coating thicker on the edges » et « low % Se »), mais sans légende explicite : extraire avec l'attribution centre/bord en doute, ou déclarer l'ambiguïté en annotation. Ajouter 4 à 6 outcomes elemental_composition_* rattachés à eds_tri.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "CdSe/CdS-sol-gel-glass, missing_fields « composition_of_MTEOS_TEOS » et annotation limite_reproductibilite (« composition MTEOS:TEOS non donnée »)",
+   "extracted": "composition du sol déclarée non donnée",
+   "article_says": "hydrolysed in acidic medium methyltriethoxysilane and tetraethyl orthosilicate sol in tetrahydrofuran (MTEOS:TEOS, 49%, THF)",
+   "fix": "Les Résultats donnent le milieu d'hydrolyse (acide), le solvant (THF) et un « 49% » accolé à MTEOS:TEOS (sens ambigu : rapport ou teneur). Extraire en value_text sur le réactif « MTEOS/TEOS sol » avec doute sur le sens de 49 %, et corriger l'annotation (la composition n'est pas totalement absente).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "CdSe/CdS-sol-gel-glass, réactifs (MTEOS/TEOS sol : purity et supplier déclarés non cités)",
+   "extracted": "un seul réactif « MTEOS/TEOS sol », pureté et fournisseur non cités",
+   "article_says": "Methyltriethoxysilane (MTEOS, 98.0%) and tetraethyl orthosilicate (TEOS, 98.0%) were purchased from ABCR.",
+   "fix": "Ajouter MTEOS (98.0 %, ABCR) et TEOS (98.0 %, ABCR) comme réactifs du verre (sans quantité : la quantité totale du sol est 0.67 g), et laisser le « sol » comme intermédiaire ; le journal v2 reconnaît lui-même que MTEOS et TEOS d'ABCR 98 % figurent dans Materials.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "v3: uv_tri (UV_vis, triangles) not_stated « sample_preparation »",
+   "extracted": "sample_preparation déclaré non cité",
+   "article_says": "226 μl of previously prepared nanoparticles were used to prepare the CdSe/CdS NPs solutions and filled with THF to a volume of 2 ml.",
+   "fix": "La section « Preparation of colloidal suspensions for spectroscopy » donne la préparation des échantillons de spectroscopie (226 μl dans 2 ml de THF) : la renseigner comme réglage sample_preparation de uv_tri (et pl_tri) au lieu de not_stated, avec doute sur le fait que la Fig. 2A ait été mesurée dans cette suspension.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: CdSe/CdS-colloid+TBAF, outcome hydrodynamic_size",
+   "extracted": "hydrodynamic_size = « reduced colloidal stability 2 h after the addition of TBAF »",
+   "article_says": "a DLS study was also conducted, which showed reduced colloidal stability in solution 2 hours after the addition of TBAF",
+   "fix": "L'article ne donne aucune taille hydrodynamique : le nom hydrodynamic_size (définition : taille hydrodynamique en suspension) ne correspond pas à un énoncé de stabilité colloïdale. Utiliser retention_stability (ou ajouter colloidal_stability avec sa définition) ; le garder lié à dls_tbaf.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: CdSe/CdS-colloid, CdSe/CdS-colloid+TBAF, +TBAF-80 : methods [device_fabrication], kind device",
+   "extracted": "voies kind device, méthode device_fabrication",
+   "article_says": "Preparation of colloidal suspensions for spectroscopy",
+   "fix": "La définition de device_fabrication est la mise en forme dans un dispositif (électrode, cellule, capteur, LED, membrane) ; une dilution dans le THF pour spectroscopie n'en est pas un. Les suspensions sont des préparations d'échantillons de mesure : kind material ou post_treatment, méthode à choisir ou à ajouter avec définition (sample_preparation / dilution).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: CdSe/CdS-sol-gel-glass, caractérisation optmic_glass",
+   "extracted": "technique optical_microscopy (instrument « fluorescence microscope »)",
+   "article_says": "Fig. 8 Fluorescence microscope image of sol–gel glass with CdSe/CdS nanoparticles.",
+   "fix": "La définition de optical_microscopy (ajout d'un autre agent) vise champ clair ou polarisée, objets de l'ordre de la dizaine de micromètres ; l'article décrit une image de fluorescence d'un verre. Nom acceptable en l'absence de mieux, mais à relire à la fusion du vocabulaire (technique fluorescence_microscopy ?). L'avertissement du contrôle sur morphology ← optical_microscopy en découle.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: CdSe/CdS-TAA-2h outcome morphology « NPLs degraded to spherical structures », measured_by « tem_tri »",
+   "extracted": "measured_by tem_tri",
+   "article_says": "C) TEM image of the degradation of NPLs to spherical structures",
+   "fix": "tem_tri est la mesure TEM des triangles (résultat : tétraèdres de 27 nm) ; l'image de l'intermédiaire à 2 h (Fig. S1C) est une autre image, d'un autre échantillon, dont l'article ne dit ni l'appareil ni la tension. Créer une mesure TEM propre à la branche (instrument et réglages not_stated) ou mettre measured_by « not_stated ».",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "CdSe/CdS-TAA-2h, étape 3 (react) : temperature déclarée non citée",
+   "extracted": "temperature not_stated",
+   "article_says": "After 2 h, 60 μl of CdCl2/Cd(OL)2 was added and the mixture was left to mix for 72 h at room temperature.",
+   "fix": "L'état à 2 h du protocole principal (avant ajout de CdCl2/Cd(OL)2) est le même moment que l'intermédiaire de la Fig. S1C, et tout le protocole est à température ambiante et à l'air ; l'article ne le dit pas explicitement de la série TAA seule, donc not_stated se défend, mais le doute de la branche devrait signaler que 2 h = délai avant ajout du protocole parent (relecture alternative : intermédiaire de la voie principale et non branche indépendante).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: CdSe/CdS-colloid+TBAF-80, outcome particle_size",
+   "extracted": "particle_size = « increase in the size of the nanoparticle (SAXS curve after TBAF, 40 and 80 μl) »",
+   "article_says": "SAXS was measured after adding TBAF in two volumes: the same as during the entire experiment (40 μl) and in double volume (80 μl)",
+   "fix": "Le résultat est le même énoncé que celui de la voie à 40 μl : l'article ne distingue pas 40 et 80 μl (Fig. S6 non lue). Le garder une seule fois ou le formuler sans attribuer à 80 μl seul ce qui vaut pour les deux volumes ; le DLS et le PL de 80 μl ne sont pas donnés.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: CdSe/CdS-triangles, uv_tri (Fig. 2A) : aucun résultat chiffré",
+   "extracted": "uv_tri sans outcome",
+   "article_says": "Fig. 2 (A) Absorbance and emission spectra and (B) TEM image of triangular nanoparticles.",
+   "fix": "Fig. 2A (dans le dépôt) montre une absorbance décroissante avec un épaulement vers 470–480 nm et un front qui tombe vers 520–525 nm, sans pic net ; ces valeurs (bord d'absorption ≈ 520 nm, lecture à ± 10 nm) sont lisibles et aucune n'est extraite, contrairement aux pics de la Fig. 1A. À lire avec from_figure et doute sur la précision.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: xrd_tri, settings",
+   "extracted": "radiation « CuKα1,2 radiation, Bragg–Brentano geometry » ; fiche JCPDS 89-0440 absente des réglages",
+   "article_says": "The interplanar spacings calculated from the 2-theta positions of the peaks in the XRD pattern (JCPDS card no. 89-0440)",
+   "fix": "RUNBOOK_V2 §3.3 : une valeur de référence utilisée pour calculer un résultat (fiche JCPDS) est un réglage de la mesure. Ajouter la fiche (réglage reference_pattern à créer ou comparaison), et séparer la géométrie Bragg–Brentano du rayonnement.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "CdSe-NPL étapes 8-10 et CdSe/CdS-triangles étape 7 (découpage)",
+   "extracted": "ajout d'acétone fusionné à la centrifugation (étapes 8 et 10) ; repetitions « three times » portée par l'étape 7 seule",
+   "article_says": "The precipitation/dissolution procedure was repeated three times before further application.",
+   "fix": "« 2.5 ml of acetone » et « 5 ml of acetone was added » sont des ajouts séparés de la centrifugation (les quantités sont dans les réactifs mais pas dans une étape add) ; la répétition trois fois couvre les étapes 5 à 7 (ajout d'éthanol, centrifugation, redissolution), pas seulement la dissolution.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: CdSe/CdS-triangles outcome solution_concentration 5.55 mg ml−1",
+   "extracted": "propriété solution_concentration, measured_by not_stated",
+   "article_says": "The resulting colloidal solution of CdSe/CdS triangles had a concentration of 5.55 mg ml−1.",
+   "fix": "La définition de solution_concentration est une concentration mesurée en solution (relargage, résidu, surnageant) ; 5.55 mg/ml est la concentration de la suspension préparée. Valeur et citation justes, nom peu adapté (une propriété de la suspension, par exemple colloid_concentration, à ajouter si besoin).",
+   "confidence": "probable"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": 8,
+  "branches_extracted": 8,
+  "not_stated_checked": 57,
+  "not_stated_wrong": 2,
+  "note": "8 échantillons synthétisés ou comparés (NPL, mélange CdCl2/Cd(OL)2, triangles, intermédiaire TAA 2 h, suspension, +TBAF 40 µl, +TBAF 80 µl, verre) tous présents ; l'échantillon à faible émission (Fig. S4) est laissé sans voie à juste titre. Valeurs de figure vérifiées : Fig. 5C (18 points, écart ≤ 5 %), Fig. 7 (7,1e7 ✓), Fig. 1A (450/520/550 ✓), Fig. 3 (26, 44, 52 °2θ pris sur les barres de référence ; pics du diffractogramme ≈ 26, 43,5, 51,7 : écart < 2 %)."
+ },
+ "reproducibility_gaps": [
+  "préparation de l'oléate de cadmium (renvoyée à Ithurria et al.) et pureté/fournisseur de l'oléate de cadmium",
+  "préparation du sol MTEOS/TEOS (renvoi à cit19, cit29), rapport MTEOS:TEOS (« 49% » ambigu), acide d'hydrolyse et sa quantité",
+  "agitation, durées de dissolution/mélange, volume de THF de redissolution des NPs, rendement",
+  "délai de 2 h avant l'ajout de CdCl2/Cd(OL)2 : compté depuis le début des ultrasons ou la dissolution de la TAA ?",
+  "série en temps de la TAA seule (Fig. S1 : seule l'image à 2 h est identifiable, conditions non données)",
+  "réglages XRD (plage, pas), SAXS (rayonnement, plage), DLS (milieu, concentration), UV-vis (plage), PL (température) non donnés",
+  "méthode de mesure du rendement quantique (52 %) et de l'épaisseur des NPLs (5,5 monocouches) non décrites",
+  "attribution centre/bord des deux tableaux EDX de l'annexe ; figures S1–S8 absentes du dépôt",
+  "séchage à 45 °C pendant 3 jours (Méthodes) contre 40 °C (Résultats)"
+ ],
+ "mechanism_check": "ok : mecanisme_auteurs citent bien « nanoplatelets rearranged into CdSe quantum dots » et « explained by the presence of F− anions » ; mecanisme_analyse formulé comme hypothèse ; securite_analyse pertinent (Cd, Se, TAA, THF) et signale à juste titre qu'aucune précaution n'est écrite.",
+ "notes": "Extraction globalement très fidèle : toutes les quantités, purités et fournisseurs de Materials vérifiés (Se 99.5 % Sigma, ODE et hexane Fisher-Agros, acétone Fisher Chemical, etc.), citations exactes, 0 valeur fausse trouvée. Points fragiles : (1) la branche CdSe/CdS-TAA-2h repose sur la seule légende de Fig. S1C (le « 2 h » coïncide avec l'attente avant ajout de CdCl2/Cd(OL)2 dans le protocole principal) ; (2) l'indice (331) du texte et de la Fig. 3 est probablement (311) pour la blende de CdS, mais c'est le texte de l'article, donc non corrigé ; (3) PL à 680 nm (texte) contre 682 (axe Fig. 5C) et ≈ 685 (Fig. 2A) : doute déjà signalé par l'extracteur ; (4) le renvoi [[cit34]] (Meyns, halogénures) accolé à l'ajout de CdCl2/Cd(OL)2 est un renvoi de justification, non retenu comme source de méthode (accord avec l'extraction) ; (5) le journal v2 dit « SAXS rangé sous XRD » alors que le JSON utilise la technique SAXS : incohérence du journal seulement. Aucune figure S1–S8 n'est dans le dépôt, donc non vérifiables."
+}
