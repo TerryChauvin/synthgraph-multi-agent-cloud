@@ -20,3 +20,4 @@
 - PMC5727554 : 5e cas témoin (P25 commercial rangé sur la voie de base avec suffixe) ; une seule citation fournisseur par réactif → puretés numériques du tableau 1 perdues (2e cas) ; jetons notés après reprise sur 429 (236 839, outils et durée de la 2e partie seulement).
 - PMC7503881 : valeurs de groupe (« 15–50 µm » pour toutes les compositions) copiées sur 3 voies ; témoin CTR sans voie mis en annotation (6e forme de contournement) ; jetons après reprise sur 429.
 - PMC7672297 : témoins (gentamicine, extrait, eau) en outcomes de la voie AgNPs avec noms suffixés (7e cas) ; rôle « autre » dans method_sources (champ non contrôlé par l'interdiction des noms génériques).
+- PMC9059895 : essais à blanc sans catalyseur rangés sur CdS/Cu7S4-5 avec `no_catalyst` dans le nom (8e cas témoins → résultat attribué à un échantillon qui n'a pas été utilisé) ; 231 résultats.
