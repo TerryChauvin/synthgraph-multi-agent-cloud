@@ -79,7 +79,8 @@
    "yield": null,
    "succeeded": true,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "reagents": [
     {
@@ -153,7 +154,9 @@
      "not_stated": [
       "duration",
       "temperature",
-      "sonication_power"
+      "sonication_power",
+      "power",
+      "frequency"
      ]
     },
     {
@@ -183,7 +186,9 @@
      "equipment": [],
      "not_stated": [
       "temperature",
-      "sonication_power"
+      "sonication_power",
+      "power",
+      "frequency"
      ]
     },
     {
@@ -302,7 +307,8 @@
      "equipment": [],
      "not_stated": [
       "atmosphere",
-      "pressure"
+      "pressure",
+      "drying_mode"
      ]
     }
    ],
@@ -360,7 +366,7 @@
      "technique": "N2 adsorption–desorption (BET)",
      "result": "ZIF-8 type I; TPPa type IV with H3 loop; ZIF-8@TPPa combines type I and IV features; BET 162.2 m2/g for the composite against 1700.8 m2/g for ZIF-8",
      "instrument": null,
-     "conditions": null,
+     "conditions": "adsorbate gas N2 (N2 adsorption–desorption isotherms); measurement temperature, degassing conditions and instrument not stated in the main text (Text S3 absent)",
      "quote": "the specific surface area of ZIF-8@TPPa (162.2 m2/g) was significantly lower than that of pristine ZIF-8 (1700.8 m2/g)"
     },
     {
@@ -766,6 +772,21 @@
      "property": "adsorption_efficiency_with_H3PO4_overall",
      "value_text": "above 80%",
      "quote": "Nevertheless, the overall adsorption efficiency still remained above 80%."
+    },
+    {
+     "property": "EDS_mapping_elemental_distribution",
+     "value_text": "uniform distribution of C, N and O across the entire particle; Zn localized at the center (qualitative, no atomic percentages given)",
+     "quote": "the energy-dispersive spectroscopy (EDS) elemental mapping images reveal a uniform distribution of C, N, and O across the entire particle, while the Zn signal is localized at the center"
+    },
+    {
+     "property": "FTIR_composite_band_positions",
+     "value_text": "3300–3500 cm−1 (weak -NH) and 1638 cm−1 (-C=C) from TPPa; 1554, 1256, 1147 and 421 cm−1 (-C=C, -C-N, imidazole ring, Zn-N) from ZIF-8",
+     "quote": "the FT-IR spectrum of the composite showed characteristic peaks at 3300–3500 cm−1 and 1638 cm−1, which correspond to a weak -NH stretching vibration peak and a typical -C=C absorption peak, respectively"
+    },
+    {
+     "property": "XPS_N1s_binding_energies_composite",
+     "value_text": "399.38 eV (C-N) and 399.68 eV (Zn-N), N 1s spectra of ZIF-8 and ZIF-8@TPPa",
+     "quote": "the peaks at 399.38 eV and 399.68 eV were assigned to C-N and Zn-N bonds"
     }
    ],
    "missing_fields": [
@@ -946,6 +967,10 @@
   {
    "where": "Résultats 2.5 contre 2.1 et 2.2 (classement des herbicides)",
    "issue": "La section 2.5 écrit « pendimethalin > butachlor > anilofos », alors que les taux à 10 mg/L de 2.1 et 2.2 donnent anilofos au-dessus de butachlor (93 % contre 90 % en 2.1). Le classement de 2.5 ne colle qu'aux qe à 200 mg/L (Table 1). Valeurs gardées, sans correction."
+  },
+  {
+   "where": "ZIF-8@TPPa, conditions de mesure XRD, SEM/TEM, EDS, XPS, FT-IR, BET",
+   "issue": "Le texte principal ne donne ni appareil, ni rayonnement, ni plage, ni tension, ni température de dégazage : « Characterization of ZIF-8@TPPa: Detailed information is provided in Text S3 », annexe absente du dépôt. Les champs instrument et conditions de ces techniques restent donc vides (seul le gaz N2 du BET est écrit). Le 200 rpm de l'agitation n'appartient qu'aux essais d'adsorption (déjà dans leurs conditions), pas à la synthèse."
   }
  ]
 }
