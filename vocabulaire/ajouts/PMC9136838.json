@@ -1,0 +1,44 @@
+{
+ "pmcid": "PMC9136838",
+ "ajouts": [
+  {
+   "type": "methode",
+   "nom": "deep_eutectic_solvent_synthesis",
+   "definition": "Dissolution de précurseurs métalliques (sels, oxydes) dans un solvant eutectique profond (chlorure de choline avec un donneur de liaison hydrogène comme l'acide malonique, l'urée ou l'éthylène glycol), puis traitement thermique du mélange pour décomposer le solvant et cristalliser le matériau.",
+   "ecarte": "solvothermal: se fait en autoclave fermé dans un solvant organique, ici solvant eutectique en creuset ouvert; thermal_decomposition: le solvant n'est pas seulement un précurseur décomposé, il dissout et homogénéise les cations; solid_state_reaction: les précurseurs sont dissous, pas broyés",
+   "date": "2026-10-28 23:05"
+  },
+  {
+   "type": "propriete",
+   "nom": "oxygen_vacancy_evidence",
+   "definition": "Présence, ordre ou concentration de lacunes d'oxygène dans un oxyde, telle que les auteurs la déduisent d'une mesure (bandes sombres en HAADF-STEM, taches de surstructure en SAED, distances interréticulaires élargies, XPS, RPE) ; qualitatif ou quantitatif, la preuve se précise dans la citation.",
+   "ecarte": "elemental_composition: donne la teneur en un élément, pas l'état défectueux de la sous-réseau d'oxygène; xps_species_fraction: ne couvre que la fraction relative d'une espèce XPS",
+   "date": "2026-10-28 23:05",
+   "techniques": [
+    "TEM",
+    "SAED",
+    "XPS",
+    "EPR",
+    "XAS"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "double_layer_capacitance",
+   "definition": "Capacité de double couche géométrique (Cdl) d'une électrode, tirée de la pente de la demi-différence de densité de courant anodique et cathodique en fonction de la vitesse de balayage dans une zone non faradique ; sert de proxy à l'aire électrochimiquement active (ECSA).",
+   "ecarte": "specific_capacitance: capacité massique ou surfacique d'un matériau de stockage, pas la capacité de double couche d'estimation d'ECSA",
+   "date": "2026-10-28 23:05",
+   "techniques": [
+    "electrochemistry"
+   ],
+   "unite": "mF cm-2"
+  },
+  {
+   "type": "reglage",
+   "nom": "ir_compensation",
+   "definition": "Correction de la chute ohmique (iR) appliquée aux courbes de polarisation : pourcentage de compensation et méthode d'estimation de la résistance non compensée.",
+   "ecarte": "potential_window: fenêtre de balayage, pas la correction de chute ohmique; calibration: étalonnage d'un instrument, pas une correction de données électrochimiques",
+   "date": "2026-10-28 23:05"
+  }
+ ]
+}

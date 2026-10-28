@@ -1,0 +1,1728 @@
+{
+ "pmcid": "PMC4973716",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "AgNPs",
+   "defined_in": "Green synthesis of AgNPs",
+   "route": "AgNPs",
+   "results_in": [
+    "Results, Characterization",
+    "Fig. 1-4",
+    "Fig. 8"
+   ]
+  },
+  {
+   "sample": "E. procera leaf extract",
+   "defined_in": "Green synthesis of AgNPs",
+   "route": null,
+   "why": "intermédiaire préparé dans les étapes de la voie AgNPs (étapes 1 à 4)",
+   "results_in": []
+  },
+  {
+   "sample": "AgNPs-loaded vaccine 5 mg/kg (200 µg)",
+   "defined_in": "The adjuvanticity of AgNPs",
+   "route": "AgNP_vaccine_5mgkg",
+   "results_in": [
+    "Table 1",
+    "Fig. 5"
+   ]
+  },
+  {
+   "sample": "AgNPs-loaded vaccine 10 mg/kg (400 µg)",
+   "defined_in": "The adjuvanticity of AgNPs",
+   "route": "AgNP_vaccine_10mgkg",
+   "results_in": [
+    "Table 1",
+    "Fig. 5"
+   ]
+  },
+  {
+   "sample": "AgNPs-loaded vaccine 15 mg/kg (600 µg)",
+   "defined_in": "The adjuvanticity of AgNPs; NIH test",
+   "route": "AgNP_vaccine_15mgkg",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 5-7",
+    "Table 4"
+   ]
+  },
+  {
+   "sample": "AgNPs-loaded vaccine 20 mg/kg (800 µg)",
+   "defined_in": "The adjuvanticity of AgNPs",
+   "route": "AgNP_vaccine_20mgkg",
+   "results_in": [
+    "Table 1",
+    "Fig. 5"
+   ]
+  },
+  {
+   "sample": "commercial vaccine containing alum (positive control)",
+   "defined_in": "The adjuvanticity of AgNPs",
+   "route": null,
+   "why": "vaccin commercial (Pasteur Institute of Iran, lot 92-1), non préparé par les auteurs ; ses résultats sont rangés en résultats de la voie AgNP_vaccine_15mgkg avec le suffixe _alum_control",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 5-8"
+   ]
+  },
+  {
+   "sample": "PBS (negative control)",
+   "defined_in": "Table 1 footnote",
+   "route": null,
+   "why": "témoin sans matériau ; résultats en résultats de AgNP_vaccine_15mgkg avec le suffixe _PBS_control",
+   "results_in": [
+    "Table 1",
+    "Fig. 5"
+   ]
+  },
+  {
+   "sample": "inactivated rabies virus alone (negative control)",
+   "defined_in": "The adjuvanticity of AgNPs",
+   "route": null,
+   "why": "témoin cité dans les Méthodes comme contrôle négatif, sans résultat chiffré distinct (le tableau 1 donne PBS comme contrôle négatif)",
+   "results_in": []
+  },
+  {
+   "sample": "reference vaccine Rabipur (Lot 2078)",
+   "defined_in": "NIH test",
+   "route": null,
+   "why": "vaccin de référence commercial ; résultats du tableau 2 rangés dans AgNP_vaccine_15mgkg avec le suffixe _reference_vaccine",
+   "results_in": [
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "AgNPs in saline (300 µg in 0.5 mL)",
+   "defined_in": "Abnormal toxicity test",
+   "route": "AgNPs_saline_iv",
+   "results_in": [
+    "Table 3",
+    "Fig. 9"
+   ]
+  },
+  {
+   "sample": "saline control (0.5 mL of 9 g/L sodium chloride)",
+   "defined_in": "Abnormal toxicity test",
+   "route": null,
+   "why": "témoin ; résultat de poids rangé en résultat de AgNPs_saline_iv avec le suffixe _saline_control",
+   "results_in": [
+    "Fig. 9"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "label": "AgNPs",
+   "parent": null,
+   "is_baseline": true,
+   "succeeded": true,
+   "methods": [
+    "biomass_extraction",
+    "green_synthesis"
+   ],
+   "method": "green synthesis of silver nanoparticles by reduction of aqueous AgNO3 with a leaf extract of Eucalyptus procera at room temperature",
+   "material": {
+    "name": "silver nanoparticles (AgNPs)",
+    "formula": "Ag",
+    "family": "nanoparticule_metallique",
+    "phase": "face-centered cubic",
+    "morphology": "spherical"
+   },
+   "quote": "In the current study, AgNPs were prepared by the reduction of aqueous silver nitrate by leaf extract of Eucalyptus procera.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "Eucalyptus procera dried leaf powder",
+     "formula": null,
+     "role": "reducing_agent",
+     "amount": 50,
+     "unit": "g",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Then, 50 g of the dried powder was weighed and boiled in 500 mL deionized water for 2 hours and then filtered through Whatman grade 1 filter paper."
+    },
+    {
+     "name": "deionized water (extract preparation)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 500,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Then, 50 g of the dried powder was weighed and boiled in 500 mL deionized water for 2 hours and then filtered through Whatman grade 1 filter paper."
+    },
+    {
+     "name": "E. procera leaf extract (prepared in this route)",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 6,
+     "unit": "mL",
+     "quote": "For synthesis of AgNPs, 6 mL of the extract was added to 100 mL of 0.01 mM AgNO3 (EMD Millipore, Billerica, MA, USA) aqueous solution and stirred gently at RT."
+    },
+    {
+     "name": "silver nitrate aqueous solution",
+     "formula": "AgNO3",
+     "role": "precursor",
+     "amount_text": "100 mL of 0.01 mM AgNO3 aqueous solution",
+     "not_stated": [
+      "purity"
+     ],
+     "supplier": "EMD Millipore",
+     "supplier_quote": "For synthesis of AgNPs, 6 mL of the extract was added to 100 mL of 0.01 mM AgNO3 (EMD Millipore, Billerica, MA, USA) aqueous solution and stirred gently at RT.",
+     "quote": "For synthesis of AgNPs, 6 mL of the extract was added to 100 mL of 0.01 mM AgNO3 (EMD Millipore, Billerica, MA, USA) aqueous solution and stirred gently at RT."
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity"
+     ],
+     "supplier": "EMD Millipore",
+     "supplier_quote": "AgNPs were resuspended in ethanol (EMD Millipore), dried at 75°C for 120 minutes, and stored at 4°C for a few days, and subsequent procedures were performed immediately.",
+     "quote": "AgNPs were resuspended in ethanol (EMD Millipore), dried at 75°C for 120 minutes, and stored at 4°C for a few days, and subsequent procedures were performed immediately."
+    },
+    {
+     "name": "distilled water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "Then, the solution was centrifuged at 13,000× g for 20 minutes, and the pellet was washed three times with distilled water."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dry",
+     "description": "Shade-dry fresh E. procera leaves at room temperature.",
+     "quote": "Fresh E. procera leaves were shade dried at room temperature (RT) and powdered using a mortar and pestle.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Fresh E. procera leaves were shade dried at room temperature (RT) and powdered using a mortar and pestle.",
+       "value_text": "room temperature (RT)"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "Fresh E. procera leaves were shade dried at room temperature (RT) and powdered using a mortar and pestle.",
+       "value_text": "shade dried"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "grind",
+     "description": "Powder the dried leaves with a mortar and pestle.",
+     "quote": "Fresh E. procera leaves were shade dried at room temperature (RT) and powdered using a mortar and pestle.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "mortar and pestle",
+       "detail": null,
+       "quote": "Fresh E. procera leaves were shade dried at room temperature (RT) and powdered using a mortar and pestle."
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Boil 50 g of dried leaf powder in 500 mL deionized water for 2 hours.",
+     "quote": "Then, 50 g of the dried powder was weighed and boiled in 500 mL deionized water for 2 hours and then filtered through Whatman grade 1 filter paper.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Then, 50 g of the dried powder was weighed and boiled in 500 mL deionized water for 2 hours and then filtered through Whatman grade 1 filter paper.",
+       "value_text": "boiled"
+      },
+      {
+       "name": "duration",
+       "quote": "Then, 50 g of the dried powder was weighed and boiled in 500 mL deionized water for 2 hours and then filtered through Whatman grade 1 filter paper.",
+       "value_num": 2,
+       "unit": "hours"
+      },
+      {
+       "name": "mass",
+       "quote": "Then, 50 g of the dried powder was weighed and boiled in 500 mL deionized water for 2 hours and then filtered through Whatman grade 1 filter paper.",
+       "value_num": 50,
+       "unit": "g"
+      },
+      {
+       "name": "volume",
+       "quote": "Then, 50 g of the dried powder was weighed and boiled in 500 mL deionized water for 2 hours and then filtered through Whatman grade 1 filter paper.",
+       "value_num": 500,
+       "unit": "mL"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "filter",
+     "description": "Filter the boiled mixture through Whatman grade 1 filter paper to obtain the extract.",
+     "quote": "Then, 50 g of the dried powder was weighed and boiled in 500 mL deionized water for 2 hours and then filtered through Whatman grade 1 filter paper.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "filter paper",
+       "detail": "Whatman grade 1",
+       "quote": "Then, 50 g of the dried powder was weighed and boiled in 500 mL deionized water for 2 hours and then filtered through Whatman grade 1 filter paper."
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "action": "add",
+     "description": "Add 6 mL of the extract to 100 mL of 0.01 mM aqueous AgNO3.",
+     "quote": "For synthesis of AgNPs, 6 mL of the extract was added to 100 mL of 0.01 mM AgNO3 (EMD Millipore, Billerica, MA, USA) aqueous solution and stirred gently at RT.",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "For synthesis of AgNPs, 6 mL of the extract was added to 100 mL of 0.01 mM AgNO3 (EMD Millipore, Billerica, MA, USA) aqueous solution and stirred gently at RT.",
+       "value_num": 6,
+       "unit": "mL"
+      },
+      {
+       "name": "concentration",
+       "quote": "For synthesis of AgNPs, 6 mL of the extract was added to 100 mL of 0.01 mM AgNO3 (EMD Millipore, Billerica, MA, USA) aqueous solution and stirred gently at RT.",
+       "value_num": 0.01,
+       "unit": "mM"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "stir",
+     "description": "Stir the mixture gently at room temperature.",
+     "quote": "For synthesis of AgNPs, 6 mL of the extract was added to 100 mL of 0.01 mM AgNO3 (EMD Millipore, Billerica, MA, USA) aqueous solution and stirred gently at RT.",
+     "parameters": [
+      {
+       "name": "stirring_speed",
+       "quote": "For synthesis of AgNPs, 6 mL of the extract was added to 100 mL of 0.01 mM AgNO3 (EMD Millipore, Billerica, MA, USA) aqueous solution and stirred gently at RT.",
+       "value_text": "gently"
+      },
+      {
+       "name": "temperature",
+       "quote": "For synthesis of AgNPs, 6 mL of the extract was added to 100 mL of 0.01 mM AgNO3 (EMD Millipore, Billerica, MA, USA) aqueous solution and stirred gently at RT.",
+       "value_text": "RT"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "react",
+     "description": "Incubate until the colorless solution turns dirty brown, revealing the formation of AgNPs.",
+     "quote": "This mixture was incubated until the colorless solution converted into dirty brown color, which revealed the formation of AgNPs.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "This mixture was incubated until the colorless solution converted into dirty brown color, which revealed the formation of AgNPs.",
+       "value_text": "until the colorless solution converted into dirty brown color"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "centrifuge",
+     "description": "Centrifuge the solution to pellet the AgNPs.",
+     "quote": "Then, the solution was centrifuged at 13,000× g for 20 minutes, and the pellet was washed three times with distilled water.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "Then, the solution was centrifuged at 13,000× g for 20 minutes, and the pellet was washed three times with distilled water.",
+       "value_num": 13000,
+       "unit": "× g"
+      },
+      {
+       "name": "duration",
+       "quote": "Then, the solution was centrifuged at 13,000× g for 20 minutes, and the pellet was washed three times with distilled water.",
+       "value_num": 20,
+       "unit": "minutes"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "wash",
+     "description": "Wash the pellet with distilled water.",
+     "quote": "Then, the solution was centrifuged at 13,000× g for 20 minutes, and the pellet was washed three times with distilled water.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "Then, the solution was centrifuged at 13,000× g for 20 minutes, and the pellet was washed three times with distilled water.",
+       "value_text": "distilled water"
+      },
+      {
+       "name": "repetitions",
+       "quote": "Then, the solution was centrifuged at 13,000× g for 20 minutes, and the pellet was washed three times with distilled water.",
+       "value_text": "three times"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 10,
+     "action": "disperse",
+     "description": "Resuspend the AgNPs in ethanol.",
+     "quote": "AgNPs were resuspended in ethanol (EMD Millipore)",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 11,
+     "action": "dry",
+     "description": "Dry the AgNPs suspended in ethanol.",
+     "quote": "dried at 75°C for 120 minutes",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 75°C for 120 minutes",
+       "value_num": 75,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "dried at 75°C for 120 minutes",
+       "value_num": 120,
+       "unit": "minutes"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "drying_mode"
+     ]
+    },
+    {
+     "order": 12,
+     "action": "store",
+     "description": "Store the AgNPs at 4 °C for a few days before the subsequent procedures.",
+     "quote": "stored at 4°C for a few days",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "stored at 4°C for a few days",
+       "value_num": 4,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "stored at 4°C for a few days",
+       "value_text": "a few days"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "uv_1",
+     "technique": "UV_vis",
+     "instrument": "Epoch UV–Vis spectrophotometer (BioTek, Bad Friedrichshall, Germany)",
+     "result": "surface plasmon resonance peak at 438 nm, no additional peak",
+     "quote": "Reduction of AgNPs was observed based on the surface plasmon resonance peak at 438 nm by using UV–Vis spectroscopy (Figure 1).",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "quote": "Optical absorption spectra of AgNPs were analyzed using an Epoch UV–Vis (UV–visible) spectrophotometer (BioTek, Bad Friedrichshall, Germany) within a range of 300–700 nm at RT.",
+       "value_text": "300–700 nm"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "Optical absorption spectra of AgNPs were analyzed using an Epoch UV–Vis (UV–visible) spectrophotometer (BioTek, Bad Friedrichshall, Germany) within a range of 300–700 nm at RT.",
+       "value_text": "RT"
+      }
+     ],
+     "not_stated": [
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": "SEM (KYKY Technology Development Ltd., Beijing, People’s Republic of China)",
+     "result": "nanoparticles of 50−70 nm",
+     "quote": "Point-to-point study of AgNPs by SEM reveals that the sizes of the nanoparticles vary and are in a range of 50−70 nm.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "The powder samples were coated by gold film for loading the dried particles on the SEM instrument. The gold coating was performed by a Sputter Coater model SCD005 made by BAL-TEC (Pfäffikon ZH, Switzerland), and the images were captured at desired magnification.",
+       "value_text": "powder samples coated by gold film (BAL-TEC Sputter Coater SCD005)"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "dls_1",
+     "technique": "DLS_zeta",
+     "instrument": "Malvern Zetasizer Nano-ZS (size analyzer and zeta potential analyzer)",
+     "result": "mean size ∼63 nm, zeta potential −14.9 mV",
+     "quote": "Size distribution profile of the biosynthesized AgNPs showed the particles with a mean size of ∼63 nm.",
+     "settings": [],
+     "not_stated": [
+      "dispersant",
+      "measurement_temperature",
+      "concentration"
+     ]
+    },
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "Rigaku D/max 2500V X-ray diffractometer",
+     "result": "face-centered cubic silver (JCPDS 04-0783), no additional peaks",
+     "quote": "The obtained characteristic diffraction peaks in this XRD pattern were observed at 2θ, 38.4, 44.5, and 64.8, which are assigned to the (111), (200), and (220) crystallographic planes of face-centered cubic structure for the silver powder sample, respectively (Joint Committee on Powder Diffraction Standards file No 04-0783).",
+     "settings": [
+      {
+       "name": "scan_range",
+       "quote": "X-ray diffraction (XRD) measurement of the produced AgNPs was carried out using X-ray diffractometer instrument (Rigaku D/max 2500V) in the angle range of 10°C–110°C at 2θ and scan axis 2:1 sym.",
+       "value_text": "10°C–110°C at 2θ"
+      }
+     ],
+     "not_stated": [
+      "radiation",
+      "scan_step",
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "mtt_1",
+     "technique": "biological_test",
+     "instrument": "spectrophotometer (reading at 570 nm and 630 nm)",
+     "result": "MTT viability of L929 cells exposed to AgNPs and to alum",
+     "quote": "The data demonstrated that alum at the concentration of 10 mg/mL was significantly toxic (P<0.05), but AgNPs were not toxic at this concentration when compared with the control group that received PBS (Figure 8).",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "L929 cell line (American Type Culture Collection TIB-67) was cultured in RPMI 1640 supplemented with 10% fetal bovine serum and 1X Pen-Strep (Thermo Fisher Scientific, Waltham, MA, USA) at 37°C in 5% CO2.",
+       "value_text": "L929 cell line (ATCC TIB-67) cultured in RPMI 1640 with 10% fetal bovine serum and 1X Pen-Strep, 5,000 cells/well"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "Approximately 100 µL of different concentrations of AgNPs (10−3 mg/mL, 10−2 mg/mL, 10−1 mg/mL, 100 mg/mL, and 101 mg/mL) was added to each well in sextuplicate and incubated for 24 hours at 37°C.",
+       "value_text": "10−3 mg/mL, 10−2 mg/mL, 10−1 mg/mL, 100 mg/mL, and 101 mg/mL"
+      },
+      {
+       "name": "tested_material_dose",
+       "quote": "Approximately 100 µL of different concentrations of AgNPs (10−3 mg/mL, 10−2 mg/mL, 10−1 mg/mL, 100 mg/mL, and 101 mg/mL) was added to each well in sextuplicate and incubated for 24 hours at 37°C.",
+       "value_text": "100 µL of each AgNP concentration per well"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "Approximately 100 µL of different concentrations of AgNPs (10−3 mg/mL, 10−2 mg/mL, 10−1 mg/mL, 100 mg/mL, and 101 mg/mL) was added to each well in sextuplicate and incubated for 24 hours at 37°C.",
+       "value_text": "24 hours at 37°C"
+      },
+      {
+       "name": "assay_method",
+       "quote": "Then, 100 µL (0.05 mg/well) of MTT (Sigma-Aldrich Co., St Louis, MO, USA) was added to each well and incubated for 4 hours at 37°C. The supernatants were removed, 100 µL of dimethyl sulfoxide (Sigma-Aldrich Co.) was added to each well, and the reaction was read at 570 nm and 630 nm using a spectrophotometer.",
+       "value_text": "MTT (100 µL, 0.05 mg/well) for 4 h at 37°C, formazan dissolved in 100 µL dimethyl sulfoxide, read at 570 nm and 630 nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "Approximately 100 µL of different concentrations of AgNPs (10−3 mg/mL, 10−2 mg/mL, 10−1 mg/mL, 100 mg/mL, and 101 mg/mL) was added to each well in sextuplicate and incubated for 24 hours at 37°C.",
+       "value_text": "sextuplicate"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "visual_appearance",
+     "quote": "This mixture was incubated until the colorless solution converted into dirty brown color, which revealed the formation of AgNPs.",
+     "value_text": "colorless solution converted into dirty brown color"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "Reduction of AgNPs was observed based on the surface plasmon resonance peak at 438 nm by using UV–Vis spectroscopy (Figure 1).",
+     "value_num": 438,
+     "unit": "nm",
+     "measured_by": "uv_1"
+    },
+    {
+     "property": "particle_size",
+     "quote": "Point-to-point study of AgNPs by SEM reveals that the sizes of the nanoparticles vary and are in a range of 50−70 nm.",
+     "value_text": "50−70 nm",
+     "measured_by": "sem_1"
+    },
+    {
+     "property": "hydrodynamic_size",
+     "quote": "Size distribution profile of the biosynthesized AgNPs showed the particles with a mean size of ∼63 nm.",
+     "value_num": 63,
+     "unit": "nm",
+     "measured_by": "dls_1"
+    },
+    {
+     "property": "zeta_potential",
+     "quote": "The zeta potential of the biosynthesized AgNPs was measured as −14.9 mV.",
+     "value_num": -14.9,
+     "unit": "mV",
+     "measured_by": "dls_1"
+    },
+    {
+     "property": "hydrodynamic_size_main_peak_intensity",
+     "quote": "Figure 3 The size distribution of green synthesized AgNPs using DLS technique.",
+     "value_num": 90,
+     "unit": "nm",
+     "measured_by": "dls_1",
+     "from_figure": "Fig. 3"
+    },
+    {
+     "property": "hydrodynamic_size_minor_peak_intensity",
+     "quote": "Figure 3 The size distribution of green synthesized AgNPs using DLS technique.",
+     "value_num": 10,
+     "unit": "nm",
+     "measured_by": "dls_1",
+     "from_figure": "Fig. 3"
+    },
+    {
+     "property": "phase",
+     "quote": "The obtained characteristic diffraction peaks in this XRD pattern were observed at 2θ, 38.4, 44.5, and 64.8, which are assigned to the (111), (200), and (220) crystallographic planes of face-centered cubic structure for the silver powder sample, respectively (Joint Committee on Powder Diffraction Standards file No 04-0783).",
+     "value_text": "face-centered cubic silver (JCPDS file No 04-0783)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position_111",
+     "quote": "The obtained characteristic diffraction peaks in this XRD pattern were observed at 2θ, 38.4, 44.5, and 64.8, which are assigned to the (111), (200), and (220) crystallographic planes of face-centered cubic structure for the silver powder sample, respectively (Joint Committee on Powder Diffraction Standards file No 04-0783).",
+     "value_num": 38.4,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position_200",
+     "quote": "The obtained characteristic diffraction peaks in this XRD pattern were observed at 2θ, 38.4, 44.5, and 64.8, which are assigned to the (111), (200), and (220) crystallographic planes of face-centered cubic structure for the silver powder sample, respectively (Joint Committee on Powder Diffraction Standards file No 04-0783).",
+     "value_num": 44.5,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "xrd_peak_position_220",
+     "quote": "The obtained characteristic diffraction peaks in this XRD pattern were observed at 2θ, 38.4, 44.5, and 64.8, which are assigned to the (111), (200), and (220) crystallographic planes of face-centered cubic structure for the silver powder sample, respectively (Joint Committee on Powder Diffraction Standards file No 04-0783).",
+     "value_num": 64.8,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "purity",
+     "quote": "No additional diffraction peaks were observed other than the characteristic peak of the silver structure showing the purity of synthesized AgNPs.",
+     "value_text": "no additional diffraction peaks other than the characteristic peaks of silver",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "The prepared AgNPs were spherical in shape, with an average size of 60 nm and a negative zeta potential of −14 mV as determined by dynamic light scattering technique.",
+     "value_text": "spherical",
+     "measured_by": "not_stated"
+    },
+    {
+     "property": "biological_cytotoxicity_L929_10mgmL",
+     "quote": "The data demonstrated that alum at the concentration of 10 mg/mL was significantly toxic (P<0.05), but AgNPs were not toxic at this concentration when compared with the control group that received PBS (Figure 8).",
+     "value_text": "AgNPs not toxic at 10 mg/mL compared with the PBS control group",
+     "measured_by": "mtt_1"
+    },
+    {
+     "property": "biological_cytotoxicity_L929_10mgmL_alum_control",
+     "quote": "The data demonstrated that alum at the concentration of 10 mg/mL was significantly toxic (P<0.05), but AgNPs were not toxic at this concentration when compared with the control group that received PBS (Figure 8).",
+     "value_text": "alum significantly toxic at 10 mg/mL (P<0.05)",
+     "measured_by": "mtt_1"
+    },
+    {
+     "property": "statistic_p_alum_vs_control_L929_10mgmL",
+     "quote": "The data demonstrated that alum at the concentration of 10 mg/mL was significantly toxic (P<0.05), but AgNPs were not toxic at this concentration when compared with the control group that received PBS (Figure 8).",
+     "value_text": "P<0.05",
+     "measured_by": "mtt_1"
+    },
+    {
+     "property": "biological_cell_viability_L929_10mgmL",
+     "quote": "Figure 8 In vitro toxicity assay of AgNPs and alum on L929 cell line.",
+     "value_num": 90,
+     "unit": "%",
+     "measured_by": "mtt_1",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_cell_viability_L929_10mgmL_alum_control",
+     "quote": "Figure 8 In vitro toxicity assay of AgNPs and alum on L929 cell line.",
+     "value_num": 72,
+     "unit": "%",
+     "measured_by": "mtt_1",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_cell_viability_L929_0.001_to_1_mgmL",
+     "quote": "Figure 8 In vitro toxicity assay of AgNPs and alum on L929 cell line.",
+     "value_text": "about 100 % for AgNPs and for alum (no reduction relative to control)",
+     "measured_by": "mtt_1",
+     "from_figure": "Fig. 8"
+    }
+   ],
+   "missing_fields": [
+    "yield",
+    "incubation_duration_and_temperature",
+    "extract_source_of_leaves",
+    "dls_dispersant"
+   ]
+  },
+  {
+   "label": "AgNP_vaccine_15mgkg",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "device",
+   "succeeded": true,
+   "methods": [
+    "device_fabrication"
+   ],
+   "method": "formulation of the inactivated rabies virus vaccine with AgNPs as adjuvant (15 mg/kg dose, 600 µg AgNPs per 1 mL of virus)",
+   "material": {
+    "name": "AgNPs-loaded inactivated rabies virus vaccine (15 mg/kg)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "AgNPs (route AgNPs)",
+     "formula": "Ag",
+     "role": "intermediate",
+     "amount": 600,
+     "unit": "µg",
+     "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions."
+    },
+    {
+     "name": "inactivated rabies virus",
+     "formula": null,
+     "role": "active_material",
+     "amount": 1,
+     "unit": "mL",
+     "not_stated": [
+      "purity"
+     ],
+     "supplier": "Pasteur Institute of Iran",
+     "supplier_quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions.",
+     "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add AgNPs to 1 mL of inactivated rabies virus under a class II biological safety laminar hood in sterile conditions.",
+     "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions.",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions.",
+       "value_num": 1,
+       "unit": "mL"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions.",
+       "value_text": "biological safety class II laminar hood in sterile conditions"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the mixture gently on a magnetic stirrer at 4 °C overnight.",
+     "quote": "The resulting mixtures were gently stirred at 4°C on a magnetic stirrer overnight.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The resulting mixtures were gently stirred at 4°C on a magnetic stirrer overnight.",
+       "value_text": "overnight"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "The resulting mixtures were gently stirred at 4°C on a magnetic stirrer overnight.",
+       "value_text": "gently"
+      },
+      {
+       "name": "temperature",
+       "quote": "The resulting mixtures were gently stirred at 4°C on a magnetic stirrer overnight.",
+       "value_num": 4,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": null,
+       "quote": "The resulting mixtures were gently stirred at 4°C on a magnetic stirrer overnight."
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "challenge_1",
+     "technique": "biological_test",
+     "instrument": "fluorescence microscope (E-200; Nikon) for the fluorescent antibody test on dead mouse brains",
+     "result": "survival of vaccinated NMRI mice after intracerebral CVS-11 challenge (21 days), death confirmed by FAT",
+     "quote": "On the 15th day, the mice were intracerebrally challenged with 0.03 mL of challenge virus strain-11 (CVS-11, 20 lethal dose [LD]50), and after the latency period of rabies disease in mice (5 days) the mice were monitored for 21 days.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The loaded vaccines (0.5 mL) were injected intraperitoneally into six Naval Medical Research Institute (NMRI) mice in each group on days 1 and 7 for immunization assessment.",
+       "value_text": "Naval Medical Research Institute (NMRI) mice"
+      },
+      {
+       "name": "replicates",
+       "quote": "The loaded vaccines (0.5 mL) were injected intraperitoneally into six Naval Medical Research Institute (NMRI) mice in each group on days 1 and 7 for immunization assessment.",
+       "value_text": "six NMRI mice in each group"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions.",
+       "value_text": "200 µg, 400 µg, 600 µg, and 800 µg AgNPs per 1 mL of inactivated rabies virus"
+      },
+      {
+       "name": "tested_material_dose",
+       "quote": "The loaded vaccines (0.5 mL) were injected intraperitoneally into six Naval Medical Research Institute (NMRI) mice in each group on days 1 and 7 for immunization assessment.",
+       "value_text": "0.5 mL of loaded vaccine injected intraperitoneally on days 1 and 7"
+      },
+      {
+       "name": "assay_method",
+       "quote": "On the 15th day, the mice were intracerebrally challenged with 0.03 mL of challenge virus strain-11 (CVS-11, 20 lethal dose [LD]50), and after the latency period of rabies disease in mice (5 days) the mice were monitored for 21 days.",
+       "value_text": "intracerebral challenge on day 15 with 0.03 mL CVS-11 (20 LD50), monitoring for 21 days after the 5-day latency period"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "All the animals were housed at RT (20°C–23°C) on a 12-hour light/dark cycle, with unlimited access to food and water, and adapted for 1 week before the tests.",
+       "value_text": "housed at RT (20°C–23°C), 12-hour light/dark cycle, 1 week adaptation"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "rffit_1",
+     "technique": "biological_test",
+     "instrument": "fluorescence microscope for the infection percentage",
+     "result": "neutralizing antibody titres of sera (rapid fluorescent focus inhibition test)",
+     "quote": "Neutralizing antibodies were measured by rapid fluorescent focus inhibition test (RFFIT).",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "Approximately 50 µL of BSR cell suspension (a clone of baby hamster kidney cells; Pasteur Institute of Iran) in minimum essential media supplemented with 10% fetal bovine serum (5×104 cells/well) was added to each well and incubated overnight at 37°C in 5% CO2.",
+       "value_text": "BSR cell suspension (clone of baby hamster kidney cells), 5×104 cells/well, in minimum essential media with 10% fetal bovine serum"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "The isolated sera were inactivated by incubation at 56°C for 30 minutes and threefold serial dilutions of reference (WHO reference) and sample sera were prepared in minimum essential media in triplicates.",
+       "value_text": "threefold serial dilutions of reference (WHO reference) and sample sera"
+      },
+      {
+       "name": "assay_method",
+       "quote": "Subsequently, 50 µL of CVS-11 (50 focus forming dose50; Pasteur Institute of Iran), sufficient to infect 80% of cells in each well, was added to each well and incubated at 37°C for 1 hour.",
+       "value_text": "50 µL of CVS-11 (50 focus forming dose50) added per well and incubated at 37°C for 1 hour; titres by the Reed and Muench method"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "Approximately 50 µL of BSR cell suspension (a clone of baby hamster kidney cells; Pasteur Institute of Iran) in minimum essential media supplemented with 10% fetal bovine serum (5×104 cells/well) was added to each well and incubated overnight at 37°C in 5% CO2.",
+       "value_text": "incubated overnight at 37°C in 5% CO2"
+      },
+      {
+       "name": "replicates",
+       "quote": "The isolated sera were inactivated by incubation at 56°C for 30 minutes and threefold serial dilutions of reference (WHO reference) and sample sera were prepared in minimum essential media in triplicates.",
+       "value_text": "in triplicates"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "nih_1",
+     "technique": "biological_test",
+     "instrument": "Bioassay Assist software Version 2.0 (NIID, Tokyo, Japan)",
+     "result": "potency of the AgNPs-loaded vaccine, alum vaccine and reference vaccine (Rabipur) by the NIH test",
+     "quote": "Finally, the mortality of the vaccinated mice with the reference and test vaccines was determined, and the potency was calculated by Probit method using Bioassay Assist software Version 2.0 (National Institute of Infectious Diseases (NIID), Tokyo, Japan).",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "Serial dilutions (1:5, 1:25, 1:125, and 1:625) of the test and the reference (Rabipur, India, Lot No 2078) vaccines were prepared in the NIH buffer (0.83 g NaCl, 0.11 g Na2HPO4, and 0.027 g KH2PO4 in 100 mL of distilled water adjusted to pH 4.7), and 0.5 mL of each dilution was intraperitoneally injected into ten NMRI mice (20 g; Pasteur Institute of Iran) on days 1 and 7.",
+       "value_text": "ten NMRI mice (20 g) per dilution"
+      },
+      {
+       "name": "replicates",
+       "quote": "Serial dilutions (1:5, 1:25, 1:125, and 1:625) of the test and the reference (Rabipur, India, Lot No 2078) vaccines were prepared in the NIH buffer (0.83 g NaCl, 0.11 g Na2HPO4, and 0.027 g KH2PO4 in 100 mL of distilled water adjusted to pH 4.7), and 0.5 mL of each dilution was intraperitoneally injected into ten NMRI mice (20 g; Pasteur Institute of Iran) on days 1 and 7.",
+       "value_text": "ten NMRI mice"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "Serial dilutions (1:5, 1:25, 1:125, and 1:625) of the test and the reference (Rabipur, India, Lot No 2078) vaccines were prepared in the NIH buffer (0.83 g NaCl, 0.11 g Na2HPO4, and 0.027 g KH2PO4 in 100 mL of distilled water adjusted to pH 4.7), and 0.5 mL of each dilution was intraperitoneally injected into ten NMRI mice (20 g; Pasteur Institute of Iran) on days 1 and 7.",
+       "value_text": "serial dilutions 1:5, 1:25, 1:125, and 1:625"
+      },
+      {
+       "name": "test_medium",
+       "quote": "Serial dilutions (1:5, 1:25, 1:125, and 1:625) of the test and the reference (Rabipur, India, Lot No 2078) vaccines were prepared in the NIH buffer (0.83 g NaCl, 0.11 g Na2HPO4, and 0.027 g KH2PO4 in 100 mL of distilled water adjusted to pH 4.7), and 0.5 mL of each dilution was intraperitoneally injected into ten NMRI mice (20 g; Pasteur Institute of Iran) on days 1 and 7.",
+       "value_text": "NIH buffer (0.83 g NaCl, 0.11 g Na2HPO4, and 0.027 g KH2PO4 in 100 mL of distilled water adjusted to pH 4.7)"
+      },
+      {
+       "name": "tested_material_dose",
+       "quote": "According to the results of the adjuvanticity test, the concentration of 15 mg/kg (300 µg AgNPs per injection dose) was used for the NIH test.",
+       "value_text": "15 mg/kg (300 µg AgNPs per injection dose); 0.5 mL of each dilution injected intraperitoneally on days 1 and 7"
+      },
+      {
+       "name": "assay_method",
+       "quote": "On the 14th day, the mice were intracerebrally challenged with 0.03 mL of challenge rabies virus strain (CVS-11, 20 LD50).",
+       "value_text": "intracerebral challenge on day 14 with 0.03 mL CVS-11 (20 LD50), 21-day monitoring, potency by the Probit method"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "All the animals were housed at RT (20°C–23°C) on a 12-hour light/dark cycle, with unlimited access to food and water, and adapted for 1 week before the tests.",
+       "value_text": "housed at RT (20°C–23°C), 12-hour light/dark cycle, 1 week adaptation"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "dog_1",
+     "technique": "biological_test",
+     "instrument": null,
+     "result": "safety of the AgNPs-loaded rabies vaccine in two dogs over 14 days",
+     "quote": "Then, a double dose of the AgNPs-loaded rabies vaccine was intramuscularly injected, and the animals were monitored at least daily for signs of abnormal local and systemic reactions for 14 days after administration.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "Two healthy female dogs (Skye Terrier breed, 12 weeks old) that did not have antibodies against rabies virus were used.",
+       "value_text": "two healthy female Skye Terrier dogs, 12 weeks old, without antibodies against rabies virus"
+      },
+      {
+       "name": "replicates",
+       "quote": "Two healthy female dogs (Skye Terrier breed, 12 weeks old) that did not have antibodies against rabies virus were used.",
+       "value_text": "two healthy female dogs"
+      },
+      {
+       "name": "tested_material_dose",
+       "quote": "Then, a double dose of the AgNPs-loaded rabies vaccine was intramuscularly injected, and the animals were monitored at least daily for signs of abnormal local and systemic reactions for 14 days after administration.",
+       "value_text": "a double dose of the AgNPs-loaded rabies vaccine injected intramuscularly"
+      },
+      {
+       "name": "assay_method",
+       "quote": "In addition, the body temperatures were monitored at 0 hour, 4 hours, and 4 days after administration.",
+       "value_text": "daily monitoring for 14 days; body temperatures at 0 hour, 4 hours, and 4 days after administration"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "All the animals were housed at RT (20°C–23°C) on a 12-hour light/dark cycle, with unlimited access to food and water, and adapted for 1 week before the tests.",
+       "value_text": "housed at RT (20°C–23°C), 12-hour light/dark cycle, 1 week adaptation"
+      }
+     ],
+     "not_stated": [
+      "concentration_range"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "biological_survived_mice_challenge",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0",
+     "value_num": 4,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_dead_mice_challenge",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6",
+     "value_num": 2,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "statistic_p_chi_square_vs_PBS_challenge",
+     "quote": "The highest percentage of viability was significantly seen at 15 mg/kg and 20 mg/kg as compared with the PBS group when analyzed by chi-square test (P<0.05).",
+     "value_text": "P<0.05",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_survived_mice_challenge_alum_control",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0",
+     "value_num": 5,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_dead_mice_challenge_alum_control",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6",
+     "value_num": 1,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_survived_mice_challenge_PBS_control",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0",
+     "value_num": 0,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_dead_mice_challenge_PBS_control",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6",
+     "value_num": 6,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_NIH_potency",
+     "quote": "Statistical analysis showed that the calculated potency for alum adjuvant vaccine is 1.897 and for the AgNPs-containing vaccine, it is 1.303.",
+     "value_num": 1.303,
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_potency_alum_control",
+     "quote": "Statistical analysis showed that the calculated potency for alum adjuvant vaccine is 1.897 and for the AgNPs-containing vaccine, it is 1.303.",
+     "value_num": 1.897,
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_survival_rate_dilution_1_5",
+     "quote": "When the vaccine was diluted to one part in five, the survival rate was 73.3%, whereas when the nanoparticle with 5 mg/kg concentration was injected, the survival rate was equivalent to 33.3%.",
+     "value_num": 73.3,
+     "unit": "%",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_survival_rate_dilution_1_25",
+     "quote": "The importance of antigen/nanoparticle ratio to AgNPs is more practical when the mice survival at 1:25 dilution (mice that actually received 600 µg/kg of AgNPs) is still higher than at the concentration of 5 mg/kg in adjuvanticity test (45.45% vs 33.3%, respectively).",
+     "value_num": 45.45,
+     "unit": "%",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "statistic_chi_square_NIH_alum_vs_AgNPs",
+     "quote": "The percentage ratio of the surviving mice to the total mice that received AgNPs-containing vaccine was comparable with that of the mice that received alum vaccine, and no significant difference was observed using chi-square statistical test (Figure 6).",
+     "value_text": "no significant difference between the alum vaccine and the AgNPs-containing vaccine",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "statistic_r2_linear_viability_vs_dilution_NIH",
+     "quote": "Figure 7 Linearity relationship between viability and vaccine dilutions in the NIH test.",
+     "value_num": 0.8806,
+     "measured_by": "nih_1",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "statistic_r2_linear_viability_vs_dilution_NIH_alum_control",
+     "quote": "Figure 7 Linearity relationship between viability and vaccine dilutions in the NIH test.",
+     "value_num": 0.7641,
+     "measured_by": "nih_1",
+     "from_figure": "Fig. 7"
+    },
+    {
+     "property": "biological_safety_dogs_14d",
+     "quote": "The animals did not show signs of either disease or local and systemic reactions (Table 4), and no fever or death was observed due to the vaccine during monitoring.",
+     "value_text": "no signs of disease or of local and systemic reactions; no fever or death",
+     "measured_by": "dog_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_5",
+     "quote": "AgNPs | 11 | 4 | 5 | 6 | 2 | 11 | 2 | 10 | 1.303",
+     "value_num": 11,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_5",
+     "quote": "AgNPs | 11 | 4 | 5 | 6 | 2 | 11 | 2 | 10 | 1.303",
+     "value_num": 4,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_25",
+     "quote": "AgNPs | 11 | 4 | 5 | 6 | 2 | 11 | 2 | 10 | 1.303",
+     "value_num": 5,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_25",
+     "quote": "AgNPs | 11 | 4 | 5 | 6 | 2 | 11 | 2 | 10 | 1.303",
+     "value_num": 6,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_125",
+     "quote": "AgNPs | 11 | 4 | 5 | 6 | 2 | 11 | 2 | 10 | 1.303",
+     "value_num": 2,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_125",
+     "quote": "AgNPs | 11 | 4 | 5 | 6 | 2 | 11 | 2 | 10 | 1.303",
+     "value_num": 11,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_625",
+     "quote": "AgNPs | 11 | 4 | 5 | 6 | 2 | 11 | 2 | 10 | 1.303",
+     "value_num": 2,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_625",
+     "quote": "AgNPs | 11 | 4 | 5 | 6 | 2 | 11 | 2 | 10 | 1.303",
+     "value_num": 10,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_5_alum_control",
+     "quote": "Alum | 12 | 4 | 8 | 7 | 5 | 10 | 2 | 14 | 1.897",
+     "value_num": 12,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_5_alum_control",
+     "quote": "Alum | 12 | 4 | 8 | 7 | 5 | 10 | 2 | 14 | 1.897",
+     "value_num": 4,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_25_alum_control",
+     "quote": "Alum | 12 | 4 | 8 | 7 | 5 | 10 | 2 | 14 | 1.897",
+     "value_num": 8,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_25_alum_control",
+     "quote": "Alum | 12 | 4 | 8 | 7 | 5 | 10 | 2 | 14 | 1.897",
+     "value_num": 7,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_125_alum_control",
+     "quote": "Alum | 12 | 4 | 8 | 7 | 5 | 10 | 2 | 14 | 1.897",
+     "value_num": 5,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_125_alum_control",
+     "quote": "Alum | 12 | 4 | 8 | 7 | 5 | 10 | 2 | 14 | 1.897",
+     "value_num": 10,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_625_alum_control",
+     "quote": "Alum | 12 | 4 | 8 | 7 | 5 | 10 | 2 | 14 | 1.897",
+     "value_num": 2,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_625_alum_control",
+     "quote": "Alum | 12 | 4 | 8 | 7 | 5 | 10 | 2 | 14 | 1.897",
+     "value_num": 14,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_5_reference_vaccine",
+     "quote": "Reference | 13 | 3 | 10 | 5 | 5 | 9 | 1 | 12 | –",
+     "value_num": 13,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_5_reference_vaccine",
+     "quote": "Reference | 13 | 3 | 10 | 5 | 5 | 9 | 1 | 12 | –",
+     "value_num": 3,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_25_reference_vaccine",
+     "quote": "Reference | 13 | 3 | 10 | 5 | 5 | 9 | 1 | 12 | –",
+     "value_num": 10,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_25_reference_vaccine",
+     "quote": "Reference | 13 | 3 | 10 | 5 | 5 | 9 | 1 | 12 | –",
+     "value_num": 5,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_125_reference_vaccine",
+     "quote": "Reference | 13 | 3 | 10 | 5 | 5 | 9 | 1 | 12 | –",
+     "value_num": 5,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_125_reference_vaccine",
+     "quote": "Reference | 13 | 3 | 10 | 5 | 5 | 9 | 1 | 12 | –",
+     "value_num": 9,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_live_mice_dilution_1_625_reference_vaccine",
+     "quote": "Reference | 13 | 3 | 10 | 5 | 5 | 9 | 1 | 12 | –",
+     "value_num": 1,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    },
+    {
+     "property": "biological_NIH_dead_mice_dilution_1_625_reference_vaccine",
+     "quote": "Reference | 13 | 3 | 10 | 5 | 5 | 9 | 1 | 12 | –",
+     "value_num": 12,
+     "unit": "mice",
+     "measured_by": "nih_1"
+    }
+   ],
+   "missing_fields": [
+    "yield",
+    "injection_dose_of_dog_vaccine_AgNP_concentration"
+   ]
+  },
+  {
+   "label": "AgNP_vaccine_5mgkg",
+   "parent": "AgNP_vaccine_15mgkg",
+   "kind": "device",
+   "succeeded": true,
+   "material": {
+    "name": "AgNPs-loaded inactivated rabies virus vaccine (5 mg/kg)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions.",
+   "variations": [
+    {
+     "parameter": "AgNPs (route AgNPs)",
+     "value_num": 200,
+     "unit": "µg",
+     "parent_value": "600 µg",
+     "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "biological_survived_mice_challenge",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0",
+     "value_num": 2,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_dead_mice_challenge",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6",
+     "value_num": 4,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_survival_rate_challenge",
+     "quote": "When the vaccine was diluted to one part in five, the survival rate was 73.3%, whereas when the nanoparticle with 5 mg/kg concentration was injected, the survival rate was equivalent to 33.3%.",
+     "value_num": 33.3,
+     "unit": "%",
+     "measured_by": "challenge_1"
+    }
+   ]
+  },
+  {
+   "label": "AgNP_vaccine_10mgkg",
+   "parent": "AgNP_vaccine_15mgkg",
+   "kind": "device",
+   "succeeded": true,
+   "material": {
+    "name": "AgNPs-loaded inactivated rabies virus vaccine (10 mg/kg)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions.",
+   "variations": [
+    {
+     "parameter": "AgNPs (route AgNPs)",
+     "value_num": 400,
+     "unit": "µg",
+     "parent_value": "600 µg",
+     "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "biological_survived_mice_challenge",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0",
+     "value_num": 2,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_dead_mice_challenge",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6",
+     "value_num": 3,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    }
+   ]
+  },
+  {
+   "label": "AgNP_vaccine_20mgkg",
+   "parent": "AgNP_vaccine_15mgkg",
+   "kind": "device",
+   "succeeded": true,
+   "material": {
+    "name": "AgNPs-loaded inactivated rabies virus vaccine (20 mg/kg)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions.",
+   "variations": [
+    {
+     "parameter": "AgNPs (route AgNPs)",
+     "value_num": 800,
+     "unit": "µg",
+     "parent_value": "600 µg",
+     "quote": "Different amounts of AgNPs (200 µg, 400 µg, 600 µg, and 800 µg) were added to 1 mL of inactivated rabies virus (Lot No 92-1; Pasteur Institute of Iran, Tehran, Iran) under biological safety class II laminar hood in sterile conditions."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "biological_survived_mice_challenge",
+     "quote": "Survived mice | ≥3.00 IU/mL | 2 | 2 | 4 | 4 | 5 | 0",
+     "value_num": 4,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "biological_dead_mice_challenge",
+     "quote": "Dead mice | ≤0.38 IU/mL | 4 | 3 | 2 | 2 | 1 | 6",
+     "value_num": 2,
+     "unit": "mice",
+     "measured_by": "challenge_1"
+    },
+    {
+     "property": "statistic_p_chi_square_vs_PBS_challenge",
+     "quote": "The highest percentage of viability was significantly seen at 15 mg/kg and 20 mg/kg as compared with the PBS group when analyzed by chi-square test (P<0.05).",
+     "value_text": "P<0.05",
+     "measured_by": "challenge_1"
+    }
+   ]
+  },
+  {
+   "label": "AgNPs_saline_iv",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "device",
+   "succeeded": true,
+   "methods": [
+    "device_fabrication"
+   ],
+   "method": "dissolution of 300 µg of AgNPs in sterile saline for the abnormal toxicity test of the European Pharmacopeia 8.0",
+   "material": {
+    "name": "AgNPs in sodium chloride solution for intravenous injection",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Briefly, 300 µg of AgNPs was dissolved in 0.5 mL of a 9 g/L sterile and pyrogen-free sodium chloride solution R and then injected intravenously into five healthy female CD1 mice.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "AgNPs (route AgNPs)",
+     "formula": "Ag",
+     "role": "intermediate",
+     "amount": 300,
+     "unit": "µg",
+     "quote": "Briefly, 300 µg of AgNPs was dissolved in 0.5 mL of a 9 g/L sterile and pyrogen-free sodium chloride solution R and then injected intravenously into five healthy female CD1 mice."
+    },
+    {
+     "name": "sterile and pyrogen-free sodium chloride solution R (9 g/L)",
+     "formula": "NaCl",
+     "role": "solvent",
+     "amount": 0.5,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Briefly, 300 µg of AgNPs was dissolved in 0.5 mL of a 9 g/L sterile and pyrogen-free sodium chloride solution R and then injected intravenously into five healthy female CD1 mice."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve 300 µg of AgNPs in 0.5 mL of 9 g/L sterile, pyrogen-free sodium chloride solution.",
+     "quote": "Briefly, 300 µg of AgNPs was dissolved in 0.5 mL of a 9 g/L sterile and pyrogen-free sodium chloride solution R and then injected intravenously into five healthy female CD1 mice.",
+     "parameters": [
+      {
+       "name": "mass",
+       "quote": "Briefly, 300 µg of AgNPs was dissolved in 0.5 mL of a 9 g/L sterile and pyrogen-free sodium chloride solution R and then injected intravenously into five healthy female CD1 mice.",
+       "value_num": 300,
+       "unit": "µg"
+      },
+      {
+       "name": "volume",
+       "quote": "Briefly, 300 µg of AgNPs was dissolved in 0.5 mL of a 9 g/L sterile and pyrogen-free sodium chloride solution R and then injected intravenously into five healthy female CD1 mice.",
+       "value_num": 0.5,
+       "unit": "mL"
+      },
+      {
+       "name": "concentration",
+       "quote": "Briefly, 300 µg of AgNPs was dissolved in 0.5 mL of a 9 g/L sterile and pyrogen-free sodium chloride solution R and then injected intravenously into five healthy female CD1 mice.",
+       "value_num": 9,
+       "unit": "g/L"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "tox_1",
+     "technique": "biological_test",
+     "instrument": null,
+     "result": "abnormal toxicity of AgNPs in CD1 mice over 24 h (European Pharmacopeia 8.0)",
+     "quote": "All the mice were monitored for abnormal reaction, signs of illness, and weight loss for 24 hours after the time of injection.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "Outbred female CD1 mice (4–5 weeks old with a body weight range of 17–24 g) supplied by the Pasteur Institute of Iran were used in this study.",
+       "value_text": "outbred female CD1 mice, 4–5 weeks old, body weight 17–24 g"
+      },
+      {
+       "name": "replicates",
+       "quote": "Briefly, 300 µg of AgNPs was dissolved in 0.5 mL of a 9 g/L sterile and pyrogen-free sodium chloride solution R and then injected intravenously into five healthy female CD1 mice.",
+       "value_text": "five healthy female CD1 mice (test); five mice for the saline control"
+      },
+      {
+       "name": "tested_material_dose",
+       "quote": "Briefly, 300 µg of AgNPs was dissolved in 0.5 mL of a 9 g/L sterile and pyrogen-free sodium chloride solution R and then injected intravenously into five healthy female CD1 mice.",
+       "value_text": "300 µg of AgNPs in 0.5 mL injected intravenously"
+      },
+      {
+       "name": "assay_method",
+       "quote": "All the mice were monitored for abnormal reaction, signs of illness, and weight loss for 24 hours after the time of injection.",
+       "value_text": "monitoring for abnormal reaction, signs of illness, and weight loss for 24 hours; two-tailed unpaired t-test"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "All the animals were housed at RT (20°C–23°C) on a 12-hour light/dark cycle, with unlimited access to food and water, and adapted for 1 week before the tests.",
+       "value_text": "housed at RT (20°C–23°C), 12-hour light/dark cycle, 1 week adaptation"
+      }
+     ],
+     "not_stated": [
+      "concentration_range"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "biological_abnormal_toxicity_24h",
+     "quote": "All the mice did not show any abnormal reactions or signs of illness 24 hours after the time of injection (Table 3).",
+     "value_text": "no abnormal reactions or signs of illness in any mouse",
+     "measured_by": "tox_1"
+    },
+    {
+     "property": "biological_weight_gain",
+     "quote": "All the animals gained weight, and the measurement of weight gain did not show any significant difference between the test and control group (Figure 9).",
+     "value_text": "all animals gained weight; no significant difference between test and control groups",
+     "measured_by": "tox_1"
+    },
+    {
+     "property": "biological_weight_gain_mean_test",
+     "quote": "Figure 9 Weight gain of mice after the injection of 300 µg of AgNPs.",
+     "value_num": 0.45,
+     "unit": "g",
+     "measured_by": "tox_1",
+     "from_figure": "Fig. 9"
+    },
+    {
+     "property": "biological_weight_gain_mean_saline_control",
+     "quote": "Figure 9 Weight gain of mice after the injection of 300 µg of AgNPs.",
+     "value_num": 0.45,
+     "unit": "g",
+     "measured_by": "tox_1",
+     "from_figure": "Fig. 9"
+    },
+    {
+     "property": "statistic_p_weight_gain_test_vs_control",
+     "quote": "Analysis of data showed no significant difference between the test and control groups (P-value =0.9166).",
+     "value_num": 0.9166,
+     "measured_by": "tox_1"
+    }
+   ],
+   "missing_fields": [
+    "yield"
+   ]
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "AgNPs of Xu et al. (adjuvant study with bovine serum albumin and ovalbumin)",
+   "property": "particle_size",
+   "value_num": 141,
+   "unit": "nm",
+   "ref_id": "b13-ijn-11-3597",
+   "route": "AgNPs",
+   "quote": "However, this phenomenon was observed at lower concentrations for both protein models in their study (2 mg/kg and 10 mg/kg for bovine serum albumin and ovalbumin, respectively) with AgNPs, which have a size of 141 nm and a charge of −30.6 mV."
+  },
+  {
+   "material": "AgNPs of Xu et al. (adjuvant study with bovine serum albumin and ovalbumin)",
+   "property": "zeta_potential",
+   "value_num": -30.6,
+   "unit": "mV",
+   "ref_id": "b13-ijn-11-3597",
+   "route": "AgNPs",
+   "quote": "However, this phenomenon was observed at lower concentrations for both protein models in their study (2 mg/kg and 10 mg/kg for bovine serum albumin and ovalbumin, respectively) with AgNPs, which have a size of 141 nm and a charge of −30.6 mV."
+  },
+  {
+   "material": "AgNPs of Xu et al., bovine serum albumin model",
+   "property": "adjuvant_effective_dose",
+   "value_num": 2,
+   "unit": "mg/kg",
+   "conditions": "bovine serum albumin; BALB/c mice",
+   "ref_id": "b13-ijn-11-3597",
+   "route": "AgNP_vaccine_15mgkg",
+   "quote": "However, this phenomenon was observed at lower concentrations for both protein models in their study (2 mg/kg and 10 mg/kg for bovine serum albumin and ovalbumin, respectively) with AgNPs, which have a size of 141 nm and a charge of −30.6 mV."
+  },
+  {
+   "material": "AgNPs of Xu et al., ovalbumin model",
+   "property": "adjuvant_effective_dose",
+   "value_num": 10,
+   "unit": "mg/kg",
+   "conditions": "ovalbumin; BALB/c mice",
+   "ref_id": "b13-ijn-11-3597",
+   "route": "AgNP_vaccine_15mgkg",
+   "quote": "However, this phenomenon was observed at lower concentrations for both protein models in their study (2 mg/kg and 10 mg/kg for bovine serum albumin and ovalbumin, respectively) with AgNPs, which have a size of 141 nm and a charge of −30.6 mV."
+  },
+  {
+   "material": "Skye Terrier dog, normal mean body temperature",
+   "property": "body_temperature_reference_range",
+   "value_text": "38.3°C–39.2°C",
+   "ref_id": "b26-ijn-11-3597",
+   "route": "AgNP_vaccine_15mgkg",
+   "quote": "It must be mentioned that the normal mean body temperature for a Skye Terrier dog is in the range of 38.3°C–39.2°C and true fever presents body temperatures ranging from 39.5°C to 41.1°C."
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules d'argent (AgNPs) par synthèse verte : un extrait aqueux de feuilles d'Eucalyptus procera réduit une solution diluée de nitrate d'argent à température ambiante. Les particules (pic plasmon à 438 nm, 50–70 nm au MEB, argent cubique à faces centrées en DRX) sont ensuite mélangées à un virus de la rage inactivé pour tester leur effet d'adjuvant sur la protection de souris contre une infection létale, en comparaison avec un vaccin commercial à l'alun. Les auteurs mesurent aussi la puissance du vaccin (test NIH) et la toxicité in vitro (cellules L929) et in vivo (souris, chiens).",
+   "quote": "In the current study, AgNPs were prepared by the reduction of aqueous silver nitrate by leaf extract of Eucalyptus procera."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si des AgNPs obtenues par synthèse verte peuvent remplacer l'alun comme adjuvant d'un vaccin vétérinaire antirabique, avec une efficacité comparable et sans toxicité. L'étude est présentée comme la première sur l'effet adjuvant des AgNPs vis-à-vis de la rage.",
+   "quote": "The main aim of this study was to evaluate green synthesized silver nanoparticles (AgNPs) as adjuvant in rabies veterinary vaccine and compare the results with the existing commercially available alum adjuvant."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "La synthèse des AgNPs n'est pas balayée : une seule préparation est décrite. Le paramètre testé est la quantité d'AgNPs ajoutée à 1 mL de virus inactivé (200, 400, 600 et 800 µg, soit 5, 10, 15 et 20 mg/kg dans les tableaux), pour trouver la dose d'adjuvant qui protège le mieux les souris. La dose retenue (15 mg/kg, 300 µg par injection) passe ensuite le test de puissance NIH, avec des dilutions successives, et les tests de toxicité."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Quatre doses d'AgNPs sont comparées, avec six souris par groupe (cinq pour le groupe à 10 mg/kg d'après le tableau 1). Survivantes après l'épreuve virale : 2/6 à 5 mg/kg, 2/5 à 10 mg/kg, 4/6 à 15 mg/kg et 4/6 à 20 mg/kg, contre 5/6 pour l'alun et 0/6 pour le PBS. Seules les doses de 15 et 20 mg/kg donnent une viabilité significativement supérieure au PBS (P<0,05), au niveau d'un plateau. Au test NIH, la puissance calculée vaut 1,303 pour le vaccin aux AgNPs et 1,897 pour le vaccin à l'alun, sans différence significative de survie entre les deux à chaque dilution.",
+   "quote": "The highest percentage of viability was significantly seen at 15 mg/kg and 20 mg/kg as compared with the PBS group when analyzed by chi-square test (P<0.05)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les titres d'anticorps neutralisants suivent la survie dans tous les groupes : les souris survivantes ont plus de 3 UI/mL et les mortes moins de 0,375 UI/mL (tableau 1). Les auteurs notent aussi que la survie dépend du rapport antigène/nanoparticules et non de la seule concentration en AgNPs (73,3 % à la dilution 1/5 du test NIH, qui apporte 3 mg/kg, contre 33,3 % pour la dose de 5 mg/kg du premier essai).",
+   "quote": "Moreover, RFFIT on the collected sera revealed that all the living mice had >3 IU/mL of neutralizing antibody titers while dead ones had <0.375 IU/mL of neutralizing antibodies (Table 1)."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "AgNP_vaccine_15mgkg",
+   "text": "Les auteurs concluent que les AgNPs de synthèse verte augmentent la puissance du vaccin antirabique vétérinaire sans toxicité in vivo, avec un effet comparable à l'alun à 15 mg/kg et 20 mg/kg. Ils demandent d'autres voies d'injection, d'autres modèles animaux et d'autres antigènes.",
+   "quote": "The adjuvanticity effect of AgNPs on rabies vaccine potency was shown for the first time."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs",
+   "text": "Pour la synthèse des AgNPs, l'article renvoie à une publication antérieure (communication de congrès, réf. 17) et ne donne ni la durée ni la température de l'incubation, ni la durée de séchage des feuilles, ni la vitesse d'agitation, ni le rendement, ni la pureté de l'AgNO3. La concentration d'AgNO3 écrite (0,01 mM) est très faible pour 6 mL d'extrait et 100 mL de solution : une erreur d'unité de l'article (0,01 M ou 1 mM) est possible, ce qui n'est pas vérifiable ici. La diffraction est mesurée de 10° à 110° mais ni le rayonnement ni le pas ne sont donnés.",
+   "quote": "The preparation method of AgNPs was described earlier."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNP_vaccine_15mgkg",
+   "text": "La correspondance entre les quantités en µg ajoutées à 1 mL de virus (200, 400, 600, 800) et les doses en mg/kg des tableaux (5, 10, 15, 20) n'est donnée explicitement que pour 15 mg/kg (300 µg par dose injectée) ; les trois autres correspondances sont déduites de l'ordre des listes. Le titre du virus inactivé, le lot du vaccin à l'alun et la concentration d'AgNPs du vaccin donné aux chiens ne sont pas précisés, et les effectifs du test NIH (dix souris par dilution annoncées) ne correspondent pas aux totaux du tableau 2.",
+   "quote": "According to the results of the adjuvanticity test, the concentration of 15 mg/kg (300 µg AgNPs per injection dose) was used for the NIH test."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "AgNPs",
+   "text": "Les auteurs désignent seulement l'extrait d'E. procera comme agent réducteur des ions argent ; aucune réaction ni espèce active de l'extrait n'est décrite.",
+   "quote": "AgNPs were prepared with E. procera extract as reducing agent from silver ions."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AgNPs",
+   "text": "Probablement, les polyphénols, flavonoïdes et terpénoïdes de l'extrait de feuilles (très riches en composés phénoliques chez les eucalyptus) réduisent Ag+ en Ag0 et se fixent à la surface des particules, ce qui expliquerait leur stabilisation et leur potentiel zêta négatif (−14,9 mV). Le virage de l'incolore au brun marque l'apparition de la résonance plasmon (pic à 438 nm). On attend que la taille et la vitesse de formation dépendent du rapport extrait/Ag+, du pH et de la température, qui ne sont pas variés ici."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "AgNP_vaccine_15mgkg",
+   "text": "Pour l'effet adjuvant, les auteurs avancent que le mécanisme principal pourrait être le piégeage et la libération prolongée de l'antigène par les AgNPs, avec une meilleure stimulation du système immunitaire inné, tout en précisant que le mécanisme n'est pas connu.",
+   "quote": "However, according to the antigen–nanoparticle ratio and accumulation properties of nanoparticles in water, the main mechanism may be trapping and sustained release of the antigen by AgNPs which leads to better stimulation of innate immune system."
+  },
+  {
+   "type": "securite_auteurs",
+   "route": "AgNP_vaccine_15mgkg",
+   "text": "Les auteurs mélangent les AgNPs au virus inactivé sous une hotte à flux laminaire de classe II en conditions stériles, et indiquent que les expériences sur animaux ont été approuvées par le comité d'éthique de l'Institut Pasteur d'Iran.",
+   "quote": "Animal experiments were approved by the ethical committee of Pasteur Institute of Iran and performed based on the ethical standards formulation in the Declaration of Helsinki."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "AgNPs",
+   "text": "Le nitrate d'argent est oxydant, corrosif et tache la peau et les surfaces ; il est toxique pour le milieu aquatique, donc à collecter comme déchet métallique. L'éthanol est inflammable. Les nanoparticules d'argent sèches sont une poudre fine à ne pas inhaler. L'extraction à l'eau bouillante pendant 2 h demande les précautions habituelles contre les brûlures."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "AgNP_vaccine_15mgkg",
+   "text": "Le virus inactivé doit être manipulé selon les règles de biosécurité du laboratoire ; la souche CVS-11 utilisée pour l'épreuve par voie intracérébrale est un virus rabique vivant (laboratoire de niveau 2 ou plus, vaccination préalable du personnel et gestion des déchets d'animaux infectés). Les injections aux animaux ne se font que sous autorisation éthique."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "AgNPs",
+   "ref_id": "b17-ijn-11-3597",
+   "role": "protocole_adapte",
+   "quote": "The preparation method of AgNPs was described earlier."
+  },
+  {
+   "route": "AgNP_vaccine_15mgkg",
+   "ref_id": "b19-ijn-11-3597",
+   "role": "protocole_adapte",
+   "quote": "The National Institutes of Health (NIH) test is a gold standard method according to WHO, British, European, and US Pharmacopeia for measuring the potency of adjuvants for rabies virus vaccine."
+  },
+  {
+   "route": "AgNP_vaccine_15mgkg",
+   "ref_id": "b20-ijn-11-3597",
+   "role": "protocole_adapte",
+   "quote": "The National Institutes of Health (NIH) test is a gold standard method according to WHO, British, European, and US Pharmacopeia for measuring the potency of adjuvants for rabies virus vaccine."
+  },
+  {
+   "route": "AgNP_vaccine_15mgkg",
+   "ref_id": "b21-ijn-11-3597",
+   "role": "protocole_adapte",
+   "quote": "The National Institutes of Health (NIH) test is a gold standard method according to WHO, British, European, and US Pharmacopeia for measuring the potency of adjuvants for rabies virus vaccine."
+  },
+  {
+   "route": "AgNP_vaccine_15mgkg",
+   "ref_id": "b22-ijn-11-3597",
+   "role": "protocole_adapte",
+   "quote": "The National Institutes of Health (NIH) test is a gold standard method according to WHO, British, European, and US Pharmacopeia for measuring the potency of adjuvants for rabies virus vaccine."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "AgNPs, taille et zêta",
+   "issue": "Le résumé donne une taille moyenne de 60 nm et un potentiel zêta de −14 mV ; les Résultats donnent ∼63 nm et −14.9 mV. Les valeurs des Résultats (section la plus détaillée) sont retenues. Le résumé attribue aussi la forme sphérique à la DLS, alors que la morphologie est mesurée au MEB : `measured_by` de morphology est donc `not_stated`."
+  },
+  {
+   "where": "AgNPs, taille en nm",
+   "issue": "50−70 nm au MEB, 63 nm en moyenne en DLS (pic principal en intensité lu vers 90 nm et pic secondaire vers 10 nm sur la figure 3, lecture à 2 chiffres significatifs). La discussion écrit que la taille « in water » est de 50–70 nm sans dire quelle technique."
+  },
+  {
+   "where": "AgNPs, XRD",
+   "issue": "Les positions de pics 38.4, 44.5 et 64.8 sont écrites sans unité (« at 2θ ») et la plage de balayage « 10°C–110°C » mélange degrés et degrés Celsius ; unité ° retenue pour les pics, plage recopiée telle quelle."
+  },
+  {
+   "where": "AgNPs, lectures sur figure",
+   "issue": "Figure 3 (pics DLS, vers 90 et 10 nm) et figure 8 (viabilité MTT de L929 à 10 mg/mL : AgNPs vers 90 %, alun vers 72 % ; vers 100 % de 0.001 à 1 mg/mL) lues à l'œil, 2 chiffres significatifs ; figures 7 et 9 : R² écrits sur la figure, moyennes de gain de poids lues vers 0.45 g pour les deux groupes."
+  },
+  {
+   "where": "MTT, concentrations",
+   "issue": "Le texte donne « 10−3 mg/mL … 100 mg/mL, and 101 mg/mL » : les exposants ont été aplatis dans le fichier (probablement 10^-3 à 10^1 mg/mL, soit 0.001 à 10 mg/mL comme sur la figure 8). Citation recopiée telle quelle."
+  },
+  {
+   "where": "AgNP_vaccine_*, doses",
+   "issue": "Les quantités (200, 400, 600, 800 µg par mL de virus) et les doses des tableaux (5, 10, 15, 20 mg/kg) sont mises en correspondance par l'ordre des listes ; seule la dose de 15 mg/kg est reliée explicitement à 300 µg par injection de 0.5 mL (soit 600 µg/mL). La voie de base est la dose de 15 mg/kg, retenue pour le test NIH ; son réactif porte 600 µg avec la phrase de la série."
+  },
+  {
+   "where": "Table 1",
+   "issue": "Le groupe à 10 mg/kg compte 5 souris (2 survivantes, 3 mortes) alors que les Méthodes annoncent six souris par groupe ; valeurs du tableau retenues. Les contrôles : les Méthodes appellent témoin négatif le virus inactivé seul, le tableau et les notes le PBS."
+  },
+  {
+   "where": "Table 2 et NIH test",
+   "issue": "Les Méthodes annoncent dix souris par dilution et un calcul de puissance par la méthode de Probit ; le tableau 2 donne des totaux de 11 à 16 souris par dilution et sa note cite la méthode de Spearman–Karber. Valeurs du tableau retenues. Les taux de survie de la discussion (73.3 %, 45.45 %) concordent avec 11/15 et 5/11."
+  },
+  {
+   "where": "Résultats pour les contrôles",
+   "issue": "Alun, PBS et vaccin de référence ne sont pas des voies (non préparés par les auteurs) : leurs résultats sont des résultats de la voie AgNP_vaccine_15mgkg avec un suffixe _alum_control, _PBS_control ou _reference_vaccine. Le témoin salin du test de toxicité suit la même règle dans AgNPs_saline_iv."
+  },
+  {
+   "where": "Test chez le chien",
+   "issue": "Le vaccin « AgNPs-loaded » administré à double dose aux chiens ne précise pas sa concentration en AgNPs ; le résultat est rangé dans la voie à 15 mg/kg (dose optimale du test NIH) par défaut. La discussion écrit aussi « 15 mg/mL » pour la dose sans effet toxique, probablement 15 mg/kg."
+  },
+  {
+   "where": "Pas de mesure de taille sur le vaccin",
+   "issue": "Aucune caractérisation des AgNPs dans le vaccin ; les résultats biologiques sont rattachés aux mesures `challenge_1`, `nih_1`, `dog_1` de la voie de base du vaccin, héritées par les branches."
+  }
+ ]
+}
