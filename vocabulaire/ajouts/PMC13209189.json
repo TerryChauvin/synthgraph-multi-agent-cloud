@@ -1,0 +1,30 @@
+{
+ "pmcid": "PMC13209189",
+ "ajouts": [
+  {
+   "type": "reglage",
+   "nom": "modulation_amplitude",
+   "definition": "Amplitude de modulation du champ magnétique en RPE (en onde continue), qui conditionne la résolution et l'intensité du spectre dérivé.",
+   "ecarte": "ac_amplitude: amplitude d'un signal alternatif d'impédance, pas la modulation de champ d'une RPE; microwave_frequency: fréquence de l'onde, pas la modulation de champ",
+   "date": "2026-10-28 22:05"
+  },
+  {
+   "type": "reglage",
+   "nom": "microwave_power",
+   "definition": "Puissance micro-onde appliquée à l'échantillon lors d'une mesure RPE (en mW), qui peut saturer les signaux.",
+   "ecarte": "microwave_frequency: fréquence de l'onde, pas sa puissance; laser_power: puissance d'un laser optique, pas d'une source micro-onde",
+   "date": "2026-10-28 22:05"
+  },
+  {
+   "type": "propriete",
+   "nom": "epr_zfs_parameter",
+   "definition": "Paramètre de structure fine (éclatement en champ nul, D ou E) d'un centre paramagnétique à spin élevé (S ≥ 1), déduit d'un spectre RPE de poudre ou d'un ajustement ; préciser le centre ou le paramètre dans le suffixe (epr_zfs_parameter_D_divacancy).",
+   "ecarte": "magnetic: propriété magnétique macroscopique (aimantation, coercivité) mesurée par magnétométrie, pas un paramètre RPE; xps_binding_energy: énergie XPS, sans rapport; nmr_signal: signal RMN et non RPE",
+   "date": "2026-10-28 22:05",
+   "techniques": [
+    "EPR"
+   ],
+   "unite": "MHz"
+  }
+ ]
+}
