@@ -1,0 +1,93 @@
+{
+ "pmcid": "PMC6154307",
+ "ajouts": [
+  {
+   "type": "reglage",
+   "nom": "mobile_phase",
+   "definition": "Phase mobile d'une séparation chromatographique (composition, proportions, additifs), par exemple méthanol/eau 80/20 ou acétonitrile/eau.",
+   "ecarte": "analysis_method: méthode de dosage globale, pas la composition de l'éluant; reaction_solvent: solvant d'un essai catalytique",
+   "date": "2026-10-28 22:21"
+  },
+  {
+   "type": "reglage",
+   "nom": "flow_rate",
+   "definition": "Débit de la phase mobile d'une chromatographie ou d'un liquide dans un montage de mesure (mL/min).",
+   "ecarte": "mobile_phase: composition de l'éluant et non son débit; solution_volume: volume et non débit",
+   "date": "2026-10-28 22:21"
+  },
+  {
+   "type": "reglage",
+   "nom": "injection_volume",
+   "definition": "Volume d'échantillon injecté dans l'instrument de chromatographie (µL).",
+   "ecarte": "solution_volume: volume de solution d'un essai et non volume injecté; drop_volume: volume d'une goutte de mesure d'angle de contact",
+   "date": "2026-10-28 22:21"
+  },
+  {
+   "type": "reglage",
+   "nom": "ionization_mode",
+   "definition": "Source d'ionisation et polarité d'un spectromètre de masse (électrospray positif ou négatif, APCI, impact électronique).",
+   "ecarte": "detector: nature du détecteur de façon générale; xray_source: source de rayons X de l'XPS",
+   "date": "2026-10-28 22:21"
+  },
+  {
+   "type": "reglage",
+   "nom": "mrm_transitions",
+   "definition": "Transitions ion précurseur vers ion produit surveillées en mode MRM/SRM d'un spectromètre de masse en tandem (m/z, rôle de quantification ou de confirmation).",
+   "ecarte": "detector: appareil de détection et non transitions surveillées; analysis_method: méthode de dosage globale",
+   "date": "2026-10-28 22:21"
+  },
+  {
+   "type": "reglage",
+   "nom": "ms_source_conditions",
+   "definition": "Conditions de la source du spectromètre de masse : débit et température du gaz de séchage, tension capillaire, pression du gaz de nébulisation, gaz de collision.",
+   "ecarte": "ionization_mode: type d'ionisation et non réglages de la source; detector: appareil et non réglages; atmosphere: atmosphère de la mesure et non gaz de source",
+   "date": "2026-10-28 22:21"
+  },
+  {
+   "type": "reglage",
+   "nom": "test_medium",
+   "definition": "Milieu dans lequel le matériau est dispersé pendant un essai (tampon phosphate, solvant, tensioactif ajouté comme le Tween-80), quand il ne se réduit pas à un pH ou à un volume.",
+   "ecarte": "solution_ph: pH seul et non composition du milieu; solution_volume: volume; dispersant: milieu de dispersion d'une mesure DLS; reaction_solvent: solvant d'un essai catalytique; incubation_conditions: conditions d'incubation biologique",
+   "date": "2026-10-28 22:21"
+  },
+  {
+   "type": "propriete",
+   "nom": "residue_concentration",
+   "definition": "Concentration résiduelle d'un pesticide ou d'un autre analyte dans un tissu ou une matrice solide (feuille, racine, fruit, sol), en mg/kg, dosée par chromatographie ; préciser la matrice, la dose et le temps dans le suffixe.",
+   "ecarte": "solution_concentration: concentration dans une solution (relargage, surnageant) et non dans un tissu; bioactive_loading: charge d'une molécule dans un solide hybride et non résidu dans un tissu; analytical_recovery: taux de recouvrement d'un dosage",
+   "date": "2026-10-28 22:21",
+   "techniques": [
+    "chromatography_ms"
+   ],
+   "unite": "mg/kg"
+  },
+  {
+   "type": "propriete",
+   "nom": "dissipation_half_life",
+   "definition": "Demi-vie de dissipation d'un résidu (pesticide) dans un tissu, un sol ou une eau, tirée d'un ajustement cinétique du premier ordre des concentrations mesurées au cours du temps ; préciser la matrice et la dose dans le suffixe.",
+   "ecarte": "kinetics_fit: constante de vitesse ou ordre d'un modèle d'essai catalytique ou d'adsorption et non une demi-vie de résidu; adsorption_equilibrium_time: temps d'équilibre d'adsorption; PL_lifetime: durée de vie de photoluminescence",
+   "date": "2026-10-28 22:21",
+   "techniques": [
+    "chromatography_ms"
+   ],
+   "unite": "days"
+  },
+  {
+   "type": "technique",
+   "nom": "release_test",
+   "definition": "Essai de libération in vitro d'une molécule chargée dans un support (pesticide, médicament) : dispersion dans un milieu tamponné agité, prélèvements au cours du temps et dosage du libéré, cumulé en pourcentage.",
+   "ecarte": "adsorption_test: essai d'adsorption (charge adsorbée) et non libération; biological_test: essai sur un organisme ou des cellules; catalytic_test: essai catalytique",
+   "date": "2026-10-28 22:21",
+   "reglages": [
+    "tested_material_dose",
+    "test_medium",
+    "solution_volume",
+    "solution_ph",
+    "agitation",
+    "temperature",
+    "analysis_method",
+    "replicates"
+   ]
+  }
+ ]
+}
