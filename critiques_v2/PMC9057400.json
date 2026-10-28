@@ -1,0 +1,172 @@
+{
+ "pmcid": "PMC9057400",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "attribution",
+   "where": "v3: route POM/CFO/MIL-101(Cr) outcomes xrd_peak_position_CFO_hkl_* (7 pics) et ftir_band_CFO_OH / ftir_band_CFO_Fe_O, measured_by xrd_final / ftir_final",
+   "extracted": "pics DRX 74.33…30.36° et bandes IR 3410 / 583 cm−1 rangés dans la voie du composite final, mesurés par xrd_final et ftir_final (mesures du composite)",
+   "article_says": "As illustrated in Fig. 1c, the general peaks observed at 74.33°, 62.70°, 57.17°, 53.68°, 43.37°, 35.7° and 30.36° were assigned to the (533), (440), (511), (422), (400), (311), and (220) planes of CFO spinel ferrite",
+   "fix": "Fig. 1c et 2c sont le CFO seul (légende : « CFO (c) »), pas le composite : créer une voie ou un échantillon CFO (sans synthèse décrite, comme l'inventaire le prévoit) avec ses propres mesures XRD et FTIR, et y rattacher ces 9 résultats ; ne pas les lier à xrd_final / ftir_final (la mesure du composite)",
+   "confidence": "sure"
+  },
+  {
+   "severity": "attribution",
+   "where": "v3: route POM/CFO/MIL-101(Cr) outcomes magnetic_saturation_magnetization_CFO (63 emu g−1), removal_efficiency_MB/RhB_fig8_CFO_reagent (26 / 18 %), measured_by vsm_final / ads_fig8f",
+   "extracted": "Ms de CFO et rendements d'adsorption de CFO seul rangés dans la voie du composite, liés aux mesures vsm_final et ads_fig8f",
+   "article_says": "The saturation magnetization (Ms) values of the CFO and POM/CFO/MIL-101(Cr) were about 63 and 13.7 emu g−1, respectively",
+   "fix": "mêmes remarques : résultats de l'échantillon CFO (témoin), à porter par la voie/échantillon CFO ; la mesure ads_fig8f décrit l'essai de la figure 8 sur le composite alors que 4 des 5 barres sont d'autres matériaux (les autres voies ont bien leur propre entrée ads_*)",
+   "confidence": "sure"
+  },
+  {
+   "severity": "attribution",
+   "where": "v3: outcome magnetic_separation_time (30 seconds), measured_by vsm_final",
+   "extracted": "30 s, mesuré par le magnétomètre à échantillon vibrant (vsm_final)",
+   "article_says": "It was observed that the cloudy magnetic particles of the sample were separated within 30 seconds under an outer magnetic field.",
+   "fix": "la séparation de 30 s est une observation visuelle d'un flacon avec un aimant (« by bringing a magnet beside a glass vial »), pas une mesure VSM : measured_by « not_stated » ou une mesure d'observation propre ; la propriété `magnetic` n'est pas non plus la bonne famille pour un temps de séparation",
+   "confidence": "sure"
+  },
+  {
+   "severity": "attribution",
+   "where": "v3: outcome retention_stability_structure_after_3_runs, measured_by ads_rec",
+   "extracted": "structure inchangée après 3 cycles, liée à l'essai d'adsorption ads_rec",
+   "article_says": "As represented in Fig. 10b and c, FT-IR, XRD, and SEM analyses of the recycled POM/CFO/MIL-101(Cr) sample after 3 runs were the same as for the fresh sample.",
+   "fix": "le constat vient de FT-IR, DRX et MEB de l'échantillon recyclé (Fig. 10b–d) ; aucune mesure FTIR/XRD/SEM de l'échantillon recyclé n'est enregistrée dans characterizations ; ajouter ces trois mesures (réglages hérités de xrd_final, ftir_final, sem_final) et lier le résultat à elles",
+   "confidence": "probable"
+  },
+  {
+   "severity": "attribution",
+   "where": "v3: measured_by ads_fig5 et ads_fig6 pour les séries en température, pH, dose et concentration (≈ 56 résultats removal_efficiency_*_temp_*, _pH_*, _dose_*, _conc_*)",
+   "extracted": "chaque résultat d'une série est lié à une mesure dont les réglages disent concentration 100 mg L−1, dose 30 mg, pH 6, 25 °C, alors que ce paramètre est justement celui qui varie dans la série (ex. removal_efficiency_MB_temp_75C lié à une mesure « temperature = 25 °C »)",
+   "article_says": "The influence of temperature on the elimination of MB (Fig. 5b) and RhB (Fig. 6b) from aqueous solutions via POM/CFO/MIL-101(Cr) was checked at several temperatures (25, 35, 45, 55, 65, and 75 °C) under fixed conditions of pH = 6 and adsorbent dosage of 30 mg.",
+   "fix": "séparer une entrée adsorption_test par série (concentration, température, pH, dose) dont le réglage variable est déclaré comme plage (« 25–200 mg L−1 ») et dont les autres sont les valeurs fixes ; sinon la valeur du réglage contredit la valeur du résultat",
+   "confidence": "probable"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "v3: characterizations zeta_mil et zeta_final, not_stated « dispersant »",
+   "extracted": "dispersant déclaré non cité",
+   "article_says": "Zeta potential curves of (a) pure MIL-101 and (b) P2Mo18/MIL-101 (Cr) in aqueous solutions at",
+   "fix": "le milieu de mesure (solutions aqueuses, pH naturel ≈ 6,5) est donné par la légende de l'annexe ; extraire dispersant = aqueous solutions (et le pH ≈ 6,5 en solution_ph), avec cette citation",
+   "confidence": "probable"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "v3: route CFO/MIL-101(Cr) step 4 (hydrothermal_treatment), not_stated « autoclave_volume »",
+   "extracted": "volume d'autoclave déclaré non cité à l'étape de chauffage, alors que 50 mL est extrait à l'étape 1 (stir)",
+   "article_says": "MIL-101(Cr) (1 g), Co(NO3)2·6H2O (0.62 g), Fe(NO3)3·9H2O (1.72 g), and 20 mL of deionized water were poured into 50 milliliter Teflon-lined autoclave and stirred for 30 min.",
+   "fix": "l'autoclave de 50 mL est celui du chauffage de l'étape 4 (même autoclave, la phrase suivante dit « The Teflon-autoclave was then heated »): porter autoclave_volume = 50 mL à l'étape 4 (et le retirer ou le garder en réactif à l'étape 1)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: XRD, setting accelerating_voltage = 40 kV (xrd_mil, xrd_pom, xrd_cfomil, xrd_pommil, xrd_final)",
+   "extracted": "accelerating_voltage = 40 kV",
+   "article_says": "XRD patterns were acquired on a Panalytical X'PERT PRO X-ray diffractometer at 40 kV using Ni-filtered Cu Kα radiation (λ = 1.5406 Å).",
+   "fix": "la définition de `accelerating_voltage` est « tension d'accélération du microscope » ; les 40 kV sont la tension du tube à rayons X : ajouter un nom de réglage (p. ex. tube_voltage) ou l'inclure dans radiation, plutôt que de détourner le nom",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: outcomes thermodynamic_parameter_nature_MB et _RhB (propriété thermodynamic_parameter)",
+   "extracted": "« spontaneous and endothermic process » rangé sous thermodynamic_parameter",
+   "article_says": "The increase in the adsorption efficiency with temperature indicates that the dye absorption is a spontaneous and endothermic process.",
+   "fix": "la définition du nom est « fonction thermodynamique (ΔH, ΔS, ΔG) tirée d'un ajustement de van't Hoff… » ; l'article n'en calcule aucune : conclusion qualitative des auteurs, à ranger en annotation ou sous un nom du type conclusion d'auteurs, pas comme paramètre thermodynamique",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: BET (bet_mil, bet_final), settings analysis_model",
+   "extracted": "analysis_model = BET et BJH seulement",
+   "article_says": "Sample | BET surface area (m2 g−1) | Langmuir surface area (m2 g−1) | Total pore volume (cm3 g−1) | Average pore diameter (nm)",
+   "fix": "le tableau 1 donne aussi une surface de Langmuir (résultat BET_surface_area_langmuir extrait) : ajouter « Langmuir » dans analysis_model, ou l'extraction lie une valeur à un modèle que la mesure ne déclare pas",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: FTIR des échantillons des figures 2a, 2d, 2e, 2f (positions de bandes portées sur la figure), route POM/MIL-101(Cr) sans entrée FTIR",
+   "extracted": "seules les bandes du texte (MIL-101 1654 / 1394, POM, CFO 3410 / 583) sont extraites",
+   "article_says": "Fig. 2 The FT-IR spectra of MIL-101(Cr) (a), POM (b), CFO (c), POM/MIL-101(Cr) (d), CFO/MIL-101(Cr) (e), and POM/CFO/MIL-101(Cr) (f).",
+   "fix": "valeurs lues sur la figure 2 (étiquettes de pics) : MIL-101(Cr) 1519 cm−1 en plus de 1654 et 1394 ; POM/MIL-101(Cr) 1631, 1394, 1091, 775 ; CFO/MIL-101(Cr) 587 ; composite 775 et 590 ; l'échantillon POM/MIL-101(Cr) n'a aucune mesure FTIR dans l'extraction alors que Fig. 2d est le sien",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: échantillon recyclé après 3 cycles, étiquettes de la figure 10b (FTIR)",
+   "extracted": "aucune bande IR de l'échantillon recyclé",
+   "article_says": "Fig. 10 The reusability of the POM/CFO/MIL-101(Cr) adsorbent in the elimination of MB (a). FTIR spectrum (b), XRD pattern (c), and SEM photograph (d) of the recovered sample after 3 runs.",
+   "fix": "la figure 10b porte les étiquettes 1623.9, 1400.03, 962, 916, 798.47 et 590.18 cm−1 (une étiquette vers 1085 peu lisible) ; à extraire comme bandes de l'échantillon recyclé",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: removal_efficiency_MO_fig4 (voie POM/CFO/MIL-101(Cr))",
+   "extracted": "texte seul : « weak adsorbent … even after 30 min », sans valeur",
+   "article_says": "the POM/CFO/MIL-101(Cr) sample is a weak adsorbent for the elimination of anionic MO dye from pollutant solution, even after 30 min",
+   "fix": "la figure 4b montre l'absorbance de MO passant d'≈ 1,9 à ≈ 0,5 après 31 min, soit ≈ 74 % d'élimination, ce qui n'est pas « faible » ; ajouter la lecture sur figure (≈ 74 %, from_figure) en signalant l'écart avec le texte",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: settings des essais d'adsorption (toutes les entrées adsorption_test)",
+   "extracted": "ni la solution mère de colorant (500 ppm), ni l'ajustement du pH (NaOH ou HCl 6 M) ne figurent dans les réglages ou dans not_stated",
+   "article_says": "The solution pH was adjusted by adding 6 M NaOH or HCl aqueous solution.",
+   "fix": "ajouter, avec citation, ces réglages d'essai (stock « The aqueous supply solutions (500 ppm) of the dyes were manufactured via dissolving MO, MB, and RhB powders in deionized water », solvant des solutions : eau déionisée, ajustement du pH) ; ils sont hors liste des réglages attendus et donc invisibles",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "comparisons / outcomes : ligne « This work » du tableau S1",
+   "extracted": "ligne non reprise (volontairement, doute consigné)",
+   "article_says": "23 min",
+   "fix": "la ligne du tableau S1 donne pour ce travail 200 mg/g, 100 mg L−1 et 23 min ; la valeur de temps (23 min) contredit les 9 min du texte et n'est nulle part dans les résultats ; l'enregistrer en résultat de la voie composite (contact_time du tableau S1) avec l'écart signalé",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: outcomes removal_efficiency_RhB_MB_fig4 et adsorption_equilibrium_time_RhB_MB_fig4",
+   "extracted": "un seul résultat pour deux colorants (« 30 s and 9 min, respectively »)",
+   "article_says": "As shown in Fig. 4a and b, the adsorption bands of cationic RhB and MB dyes disappeared in 30 s and 9 min, respectively, with an adsorption yield of 100%.",
+   "fix": "la légende donne (a) RhB, (b) MO, (c) MB et la figure montre les courbes de RhB jusqu'à 9 min et un seul spectre à 30 s pour MB : l'ordre du texte (RhB 30 s, MB 9 min) est inversé par rapport à la figure ; garder le texte mais en deux résultats par colorant, avec la contradiction signalée, plutôt qu'une phrase recopiée sans attribution",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "route POM, réactif « hydrochloric acid 4 M », purity 36 % et fournisseur Merck",
+   "extracted": "pureté 36 % rattachée à HCl 4 M",
+   "article_says": "acidified by fractional addition of HCl 4 M (250 mL; 1.00 mol)",
+   "fix": "36 % est la pureté du HCl concentré de la liste des matériaux, pas celle de la solution 4 M utilisée ; l'extracteur l'a lu comme implicite (doute consigné) : retirer la pureté ou la marquer comme source de la solution mère",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "annotation securite_analyse (remplissage d'autoclave)",
+   "extracted": "« les 29 mL de la voie MIL-101(Cr) dans 50 mL font un remplissage d'environ 58 %, au-delà des 2/3 usuels »; reflux « sans surveillance »",
+   "article_says": "Cr(NO3)3·9H2O (24 g) and H2BDC (0.98 g) were blended in 29 mL distilled water",
+   "fix": "58 % est inférieur à 2/3 (67 %), la phrase est contradictoire ; et « sans surveillance » est ajouté (l'article dit seulement « refluxed for at least 24 h »)",
+   "confidence": "sure"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": 0,
+  "branches_extracted": 0,
+  "samples_in_article": 7,
+  "samples_in_inventory": 7,
+  "not_stated_checked": 60,
+  "not_stated_wrong": 2,
+  "settings_checked": 90,
+  "figure_values_checked": 80,
+  "figure_values_off_more_than_10pct": 0
+ },
+ "reproducibility_gaps": [
+  "origine ou synthèse de CoFe2O4 (0,21 g engagés) absente de l'article et de l'annexe",
+  "24 g de Cr(NO3)3·9H2O pour 0,98 g d'acide téréphtalique : rapport Cr/ligand de 10, très éloigné du 1:1 de la voie POM/MIL-101(Cr) : quantité probablement erronée dans l'article, non vérifiable",
+  "POM/CFO/MIL-101(Cr) : volume de l'autoclave, taux de remplissage, vitesse de chauffe, refroidissement et lavage absents",
+  "volume de solution, dose d'adsorbant et temps de contact des essais cinétiques et isothermes absents ; les capacités du tableau 3 (124,4 mg g−1 à 125 mg L−1) ne se concilient pas avec la figure 5a (33 % pour 30 mg)",
+  "dégazage et température de mesure BET, plage et pas de balayage DRX, préparation des pastilles IR absents",
+  "figures S1–S7 (EDX, VSM, isothermes BET, effet des sels, zêta, isothermes, cinétique) non lisibles : effet des sels uniquement qualitatif",
+  "températures et pH de la figure 5 et 6 (85 °C ; pH 2–10) contredisent le texte (25–75 °C ; pH 2–11)"
+ ],
+ "mechanism_check": "à revoir : l'annotation securite_analyse dit 58 % « au-delà des 2/3 », ce qui est faux ; le reste (hypothèses de formation, stœchiométrie 95 %, Fe/Co = 2, 0,41 mmol de POM) est recalculé juste",
+ "notes": "Valeurs numériques vérifiées sans écart : tableaux 1 à 3 (toutes les cases), isothermes, 8 colonnes de la cinétique ; figures 5, 6, 8 et 10a relues sur image, écarts ≤ 3 points. Le contrôle de complétude n'a pas trouvé d'échantillon absent de l'inventaire. Les doutes de l'extracteur (Fig. 4, 24 g, plages de T et pH, 81 % vs 78 %, P2Mo18) correspondent bien à des incohérences de l'article et ne sont pas des erreurs d'extraction. Les noms de propriétés ajoutés par d'autres agents après l'écriture de contexte_agents.md (removal_efficiency, optimal_condition, adsorption_equilibrium_time, thermodynamic_parameter) sont dans le vocabulaire en attente ; seul thermodynamic_parameter contredit sa définition ici. Les 56 résultats lus sur figure sont codés dans le nom de la propriété (…_temp_75C) et non dans une condition structurée : choix d'extraction, signalé en attribution probable."
+}

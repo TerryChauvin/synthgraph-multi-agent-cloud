@@ -1,0 +1,94 @@
+{
+ "pmcid": "PMC4531889",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "mineur",
+   "where": "v3: ZnO-25mM-W10 sem_1 settings sample_preparation / résultat morphology",
+   "extracted": "sem_1.settings = sample_preparation « cross-sectional views » (citation de la Fig. 3a) ; morphology « densely distributed vertically aligned ZnO nanorods » liée à sem_1",
+   "article_says": "As shown in the top-view FE-SEM image, the ZnO nanorods were densely distributed between the two electrodes.",
+   "fix": "la morphologie de l'échantillon 25 mM vient de l'image vue de dessus (Fig. 2a), les diamètres et hauteurs de vues en coupe (Fig. 3a) : ajouter le réglage « top-view » ou séparer deux mesures sem (vue de dessus / coupe) et relier chaque résultat à la bonne",
+   "confidence": "probable"
+  },
+  {
+   "severity": "non_cite_a_tort",
+   "where": "v3: ZnO-25mM-W10 step 8 (wash) not_stated drying_mode, repetitions",
+   "extracted": "not_stated: repetitions, drying_mode ; étape typée wash avec wash_solvent = DI water",
+   "article_says": "Finally, the sample was carefully pulled out and dried by flowing DI water.",
+   "fix": "le mode de séchage est donné par l'article (« dried by flowing DI water ») : le déclarer en paramètre drying_mode (valeur citée) au lieu de not_stated, en gardant l'ambiguïté rinçage/séchage en doute ; l'action wash est une interprétation de l'extracteur",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "ZnO-25mM-W10 reagent hexamethylenetetramine 25 mM, et variations hexamethylenetetramine 5 et 50 mM (ZnO-5mM-W10, ZnO-50mM-W10)",
+   "extracted": "HMTA = 25 mM (citation : « the growth solution was prepared with 25 mM of concentration ») ; HMTA 5 mM et 50 mM avec la citation de la Fig. 3a",
+   "article_says": "the growth solution was prepared by dissolving zinc nitrate hexahydrate and hexamethylenetetramine with equimolar concentrations (5–50 mM) in 200 mL of de-ionized (DI) water at room temperature.",
+   "fix": "les citations ne nomment pas l'HMTA ; la valeur de l'HMTA ne vient que de l'équimolarité : prendre cette phrase comme citation de l'HMTA (le doute est déjà noté)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "ZnO-25mM-W20 variation dimension_channel_width = 20 μm",
+   "extracted": "citation de la variation : « Above 20 μm, the photocurrent on-off ratio was gradually decreased… »",
+   "article_says": "Above 20 μm, the photocurrent on-off ratio was gradually decreased because the dark current was more increased than the photocurrent with increase of the area of active region.",
+   "fix": "cette phrase ne définit pas un échantillon à 20 μm ; l'échantillon n'existe que comme point de l'encart de la Fig. 5a (vérifié sur la figure : point à 20 μm, ≈ 31) : citer la phrase de l'encart et marquer la voie comme définie par la figure",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: résultats de ZnO-25mM-W15 (transient_1, Fig. 5b)",
+   "extracted": "seuls reset time 26.1 s et photocourant 3,93 × 10−4 A à 10 V ; le champ result de transient_1 cite des polarisations ±5 et ±10 V que le texte ne donne pas",
+   "article_says": "For positive and negative bias voltages, the symmetric photoresponse curves were clearly observed due to the structural property of the MSM device.",
+   "fix": "ajouter le résultat qualitatif (réponse symétrique en polarisation positive et négative, décroissance lente, « slow decay process ») ; les pics de la Fig. 5b à 5 V et −5/−10 V (≈ 1,7 ; −1,6 ; −3,1 × 10−4 A, lus sur la figure) sont facultatifs et à marquer from_figure ; ajouter les polarisations comme réglage de transient_1",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: résultats par largeur de canal (ZnO-25mM-W5, W15, W30) et courants d'obscurité",
+   "extracted": "seuls les rapports on-off ; aucun résultat sur photocourant ni courant d'obscurité en fonction de Wch ni sur le courant d'obscurité des séries de la Fig. 3b",
+   "article_says": "When Wch increased, the photocurrent also increased because the area of active region for absorbing the UV light and generating the photocurrent was increased. However, the dark current increased with the increase of Wch, which is a negative factor for the photocurrent on-off ratio.",
+   "fix": "ajouter, sur W5, W15, W30, des résultats qualitatifs (photocourant et courant d'obscurité croissants avec Wch, d'après la Fig. 5a) ; valeurs de la Fig. 5a/3b facultatives (échelle logarithmique, lecture peu précise)",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: ZnO-50mM-W10 dimensions des nanobâtonnets",
+   "extracted": "morphology qualitative seule ; dimensions non lues sur la Fig. 3a(iii) (doute déjà noté)",
+   "article_says": "However, the diameter of ZnO nanorods was largely increased at 50 mM while the height was relatively less increased.",
+   "fix": "les dimensions à 50 mM ne sont pas chiffrées par l'article ; une lecture sur la Fig. 3a(iii) (barre de 300 nm) est possible mais imprécise ; acceptable de laisser qualitatif",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: comparisons (3,37 eV ; 75–90 °C)",
+   "extracted": "deux entrées sans ref_id ; conditions « gap direct large » (3,37 eV)",
+   "article_says": "hydrothermal synthesis has been considered as one of the promising methods for growing 1D ZnO nanostructures because it allows relatively low temperature (75–90 °C) and scalable manufacturing process",
+   "fix": "l'article donne les renvois (corpus/refs : CR1–CR3 pour 3,37 eV, CR14–CR16 pour 75–90 °C) : renseigner ref_id ; reformuler conditions (« gap direct, ZnO massif »). La valeur 3,37 eV est une propriété générale du ZnO, pas une comparaison avec les échantillons",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: ZnO-25mM-W10 outcome xrd_peak_position_au_111",
+   "extracted": "xrd_peak_position_au_111 = « Au (111) peak observed » (value_text)",
+   "article_says": "From the metal electrodes, the Au (111) XRD peak also appeared.",
+   "fix": "la propriété xrd_peak_position désigne une position (2θ) que l'article ne donne pas pour Au (111) ; de plus le pic vient de l'électrode, pas du réseau de nanobâtonnets : le ranger en phase/observation de la structure de dispositif ou le retirer",
+   "confidence": "probable"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": 9,
+  "branches_extracted": 9,
+  "not_stated_checked": 25,
+  "not_stated_wrong": 1
+ },
+ "reproducibility_gaps": [
+  "cible, température du substrat, vitesses de dépôt de la pulvérisation et de l'évaporation e-beam",
+  "résine et paramètres de photolithographie ; longueur des électrodes (aire active)",
+  "pureté et fournisseur des réactifs, pH, récipient de la solution de croissance",
+  "nombre de rinçages et mode de séchage exact (« dried by flowing DI water »)",
+  "pas de réglage de l'XRD (rayonnement, plage, pas) ni de tension d'accélération du MEB",
+  "pas d'annexe"
+ ],
+ "mechanism_check": "ok",
+ "notes": "Valeurs numériques (photocourants, on-off, absorptions, dimensions, 26,1 s) toutes justes et rattachées aux bonnes voies ; valeurs de l'encart de la Fig. 5a (9,5 ; 31 ; 27) vérifiées sur la figure, écart < 10 %. Nom de méthode chemical_bath_deposition cohérent avec la définition ajoutée (90 °C, sans autoclave) malgré le mot « hydrothermal » des auteurs ; non retenu comme constat. Résultats RCWA correctement rangés en voie calcul, non sur les échantillons. Le voltage de l'encart Fig. 5a n'est pas écrit : noms de propriété différents (_5V ou non) selon les voies, sans erreur de valeur."
+}
