@@ -1,0 +1,2966 @@
+{
+ "pmcid": "PMC8434467",
+ "format": 3,
+ "routes": [
+  {
+   "label": "P_pH4",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "hydrothermal"
+   ],
+   "method": "hydrothermal synthesis at pH 4, 120 °C, 24 h, without surfactant (control group P)",
+   "material": {
+    "name": "dicalcium phosphate anhydrous (DCPA)",
+    "formula": "CaHPO4",
+    "family": "ceramique",
+    "phase": "DCPA (no HA)",
+    "morphology": "plate and column shaped"
+   },
+   "quote": "The solution was subjected to hydrothermal synthesis.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": false,
+   "reagents": [
+    {
+     "name": "calcium hydrogen phosphate dihydrate",
+     "formula": "CaHPO4·2H2O",
+     "role": "precursor",
+     "supplier": "HSE PureChem",
+     "supplier_quote": "Calcium hydrogen phosphate (CaHPO4·2H2O) was from HSE PureChem (Austin, TX, USA), and calcium hydroxide (Ca(OH)2) was from Shikamaru’s Pure Chemicals (Osaka, Japan).",
+     "not_stated": [
+      "amount",
+      "purity"
+     ],
+     "quote": "First, CaHPO4·2H2O and Ca(OH)2 powder with a calcium-to-phosphorus atomic ratio of 1.67 was added to 160 mL of deionized water and stirred well."
+    },
+    {
+     "name": "calcium hydroxide",
+     "formula": "Ca(OH)2",
+     "role": "precursor",
+     "supplier": "Shikamaru’s Pure Chemicals",
+     "supplier_quote": "Calcium hydrogen phosphate (CaHPO4·2H2O) was from HSE PureChem (Austin, TX, USA), and calcium hydroxide (Ca(OH)2) was from Shikamaru’s Pure Chemicals (Osaka, Japan).",
+     "not_stated": [
+      "amount",
+      "purity"
+     ],
+     "quote": "First, CaHPO4·2H2O and Ca(OH)2 powder with a calcium-to-phosphorus atomic ratio of 1.67 was added to 160 mL of deionized water and stirred well."
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 160,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "First, CaHPO4·2H2O and Ca(OH)2 powder with a calcium-to-phosphorus atomic ratio of 1.67 was added to 160 mL of deionized water and stirred well."
+    },
+    {
+     "name": "acetic acid (2 M aqueous solution)",
+     "formula": "CH3COOH",
+     "role": "acid",
+     "amount_text": "2 M aqueous solution",
+     "not_stated": [
+      "purity",
+      "supplier",
+      "volume"
+     ],
+     "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution."
+    },
+    {
+     "name": "sodium acetate (2 M aqueous solution)",
+     "formula": "CH3COONa",
+     "role": "base",
+     "amount_text": "2 M aqueous solution",
+     "not_stated": [
+      "purity",
+      "supplier",
+      "volume"
+     ],
+     "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution."
+    },
+    {
+     "name": "double-distilled water (ddH2O)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed with double-distilled water (ddH2O)"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the CaHPO4·2H2O and Ca(OH)2 powders (Ca/P atomic ratio 1.67) to 160 mL of deionized water.",
+     "quote": "First, CaHPO4·2H2O and Ca(OH)2 powder with a calcium-to-phosphorus atomic ratio of 1.67 was added to 160 mL of deionized water and stirred well.",
+     "parameters": [
+      {
+       "name": "volume",
+       "value_num": 160,
+       "unit": "mL",
+       "quote": "added to 160 mL of deionized water"
+      },
+      {
+       "name": "molar_ratio_ca_to_p",
+       "value_num": 1.67,
+       "quote": "a calcium-to-phosphorus atomic ratio of 1.67"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the suspension well.",
+     "quote": "was added to 160 mL of deionized water and stirred well.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "adjust_ph",
+     "description": "Adjust the pH of the solution to 4 with 2 M acetic acid or sodium acetate aqueous solution.",
+     "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution.",
+     "parameters": [
+      {
+       "name": "ph",
+       "value_num": 4,
+       "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution."
+      },
+      {
+       "name": "concentration",
+       "value_num": 2,
+       "unit": "M",
+       "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "volume"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "hydrothermal_treatment",
+     "description": "Hydrothermal synthesis of the solution at 120 °C for 24 h.",
+     "quote": "The reaction environment was 120 °C, and the temperature was maintained for 24 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 120,
+       "unit": "°C",
+       "quote": "The reaction environment was 120 °C, and the temperature was maintained for 24 h."
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "The reaction environment was 120 °C, and the temperature was maintained for 24 h."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "filter",
+     "description": "Quickly aspirate the solution and filter to obtain the powder.",
+     "quote": "the solution was quickly aspirated and filtered to obtain the powder",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "wash",
+     "description": "Wash the powder with double-distilled water.",
+     "quote": "washed with double-distilled water (ddH2O)",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "double-distilled water (ddH2O)",
+       "quote": "washed with double-distilled water (ddH2O)"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "dry",
+     "description": "Dry the powder at 60 °C for 24 h to give the prepared HA powder.",
+     "quote": "dried at 60 °C for 24 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 60,
+       "unit": "°C",
+       "quote": "dried at 60 °C for 24 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "dried at 60 °C for 24 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "drying_mode"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "XRD-6000; Shimadzu, Japan",
+     "result": "phase identification of the powders (DCPA, HA, β-TCP) by comparison with JCPDS files",
+     "quote": "The powder was subjected to diffraction analysis by using an XRD diffractometer (XRD-6000; Shimadzu, Japan)",
+     "settings": [
+      {
+       "name": "radiation",
+       "value_text": "Ni-filtered Cu target Kα diffraction operated at 40 kV and 30 mA",
+       "quote": "with Ni-filtered Cu target Kα diffraction operated at 40 kV and 30 mA."
+      },
+      {
+       "name": "scan_range",
+       "value_text": "2θ range of 20°–60°",
+       "quote": "The scanning speed was 2°/min in the scanning 2θ range of 20°–60°."
+      },
+      {
+       "name": "scan_step",
+       "value_text": "scanning speed 2°/min",
+       "quote": "The scanning speed was 2°/min in the scanning 2θ range of 20°–60°."
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_text": "Scherrer equation L = Kλ/(β.cosθ) (K not stated)",
+       "quote": "was used to calculate the nanocrystallite size (L) by XRD radiation of wavelength λ (nm) from measuring the FWHM of peaks (β) in radians, located at any 2θ in the pattern"
+      },
+      {
+       "name": "reference_pattern",
+       "value_text": "JCPDS standard file",
+       "quote": "Different phases were identified by comparing the diffraction peaks of the sample with the JCPDS standard file."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": "S-3000N, Hitachi, Tokyo, Japan",
+     "result": "shape, structure, length and diameter of the HA powders (length-to-diameter ratio)",
+     "quote": "The shape and structure of the prepared HA were observed by scanning electron microscopy (SEM; S-3000N, Hitachi, Tokyo, Japan). Randomly selected HA powder (n = 30) was obtained to measure the length-to-diameter ratio under 10 k magnification.",
+     "settings": [
+      {
+       "name": "particles_counted",
+       "value_num": 30,
+       "quote": "Randomly selected HA powder (n = 30) was obtained to measure the length-to-diameter ratio under 10 k magnification."
+      },
+      {
+       "name": "magnification",
+       "value_text": "10 k",
+       "quote": "Randomly selected HA powder (n = 30) was obtained to measure the length-to-diameter ratio under 10 k magnification."
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tem_1",
+     "technique": "TEM",
+     "instrument": "FE-TEM, JEM-2100F; JEOL Co., Tokyo, Japan",
+     "result": "bright-field images and high-resolution lattice images of the HA crystals",
+     "quote": "The synthesized powder was also investigated using a field emission transmission electron microscope (FE-TEM, JEM-2100F; JEOL Co., Tokyo, Japan) equipped with an energy-dispersive X-ray spectrometer (EDS; X-MaxN TSR, OXFORD, Abingdon, England) and operated as a 200 kV field emission analytical electron microscope to identify the crystallinity.",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "value_num": 200,
+       "unit": "kV",
+       "quote": "operated as a 200 kV field emission analytical electron microscope"
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "powder dispersed in ethanol, collected through a 300-mesh copper mesh, and dried in an oven",
+       "quote": "The samples were prepared by dispersing the powder in ethanol, collected through a 300-mesh copper mesh, and dried in an oven."
+      }
+     ],
+     "not_stated": [
+      "particles_counted"
+     ]
+    },
+    {
+     "id": "saed_1",
+     "technique": "SAED",
+     "instrument": "FE-TEM, JEM-2100F; JEOL Co., Tokyo, Japan",
+     "result": "selective-area diffraction (SAD) patterns taken with an aperture size of 160 nm; d-spacings measured with Digital Micrograph (Gatan)",
+     "quote": "Bright-field images, selective-area diffraction (SAD) patterns taken with an aperture size of 160 nm, or high-resolution lattice images were used for image and structural analyses. The software Digital Micrograph (Gatan) was used to measure the d-space of the diffraction plane.",
+     "settings": [],
+     "not_stated": []
+    },
+    {
+     "id": "eds_1",
+     "technique": "EDS",
+     "instrument": "EDS; X-MaxN TSR, OXFORD, Abingdon, England",
+     "result": "EDS spectrometer fitted to the FE-TEM; no EDS result is reported in the article",
+     "quote": "equipped with an energy-dispersive X-ray spectrometer (EDS; X-MaxN TSR, OXFORD, Abingdon, England)",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "value_num": 200,
+       "unit": "kV",
+       "quote": "operated as a 200 kV field emission analytical electron microscope"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "ftir_1",
+     "technique": "FTIR",
+     "instrument": "FTIR-ATR (Nicolet 6700, Thermo Fisher Scientific, Waltham, MA, USA)",
+     "result": "functional groups of the synthesized HA (OH−, PO43−, HPO42−, CO32−, β-TCP bands)",
+     "quote": "The functional groups of the synthesized HA were analyzed by FTIR-ATR",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "value_text": "HA powder and KBr uniformly mixed in a ratio of 1:100 and pressed into a translucent disk with a diameter of 12 mm",
+       "quote": "The HA powder and KBr were uniformly mixed in a ratio of 1:100 and pressed into a translucent disk with a diameter of 12 mm for FTIR-ATR analysis."
+      }
+     ],
+     "not_stated": [
+      "wavenumber_range"
+     ]
+    },
+    {
+     "id": "bio_1",
+     "technique": "biological_test",
+     "instrument": "ELISA plate reader (EZ Read 400; Biochrom, Cambridge, UK)",
+     "result": "cell viability of NIH-3T3 cells cultured 24 h with extracts of the HA powders (XTT assay); cytotoxic below 70 % viability",
+     "quote": "The preparation method of the extract of the experimental group was as follows: The powder was placed in the cell culture medium and extracted at 37 °C for 24 h in a ratio of 0.2 g/mL powder to culture medium.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "value_text": "NIH-3T3 mouse fibroblast cell line in Dulbecco’s modified Eagle medium with 10% bovine serum and 1% penicillin-streptomycin",
+       "quote": "The mouse fibroblast cell line NIH-3T3 was cultured in Dulbecco’s modified Eagle medium (Gibco®, Invitrogen Taiwan Ltd., Taipei, Taiwan) containing 10% bovine serum (BS; Biolegend Co., San Diego, CA, USA) and 1% penicillin-streptomycin."
+      },
+      {
+       "name": "concentration_range",
+       "value_text": "0.2 g/mL powder to culture medium (extract)",
+       "quote": "extracted at 37 °C for 24 h in a ratio of 0.2 g/mL powder to culture medium."
+      },
+      {
+       "name": "incubation_conditions",
+       "value_text": "extract (100 μL/well) cultured with 1 × 10^4 cells for 24 h; then XTT reagent for 4 h at 37 °C, 5% CO2",
+       "quote": "After culturing for 24 h, the cell culture medium used in the experiment was aspirated, replaced with ordinary cell culture medium (100 μL/well), mixed with an XTT cell proliferation detection kit (50 μL/well; Sigma-Aldrich, Louis, MO, USA), and placed in a 37 °C, 5% CO2 incubator for 4 h."
+      },
+      {
+       "name": "assay_method",
+       "value_text": "XTT cell proliferation detection kit (50 μL/well)",
+       "quote": "mixed with an XTT cell proliferation detection kit (50 μL/well; Sigma-Aldrich, Louis, MO, USA)"
+      },
+      {
+       "name": "assay_method",
+       "value_text": "absorbance at an optical density (OD) of 492 nm with an ELISA plate reader",
+       "quote": "The viability of L929 cells was measured by absorbance at an optical density (OD) of 492 nm by using an ELISA plate reader"
+      },
+      {
+       "name": "assay_method",
+       "value_text": "positive control 15 wt% DMSO; negative control high-density polyethylene extract (1/5 g/mL); control group in normal culture medium",
+       "quote": "The positive control used was 15 wt% dimethyl sulfoxide (DMSO; Sigma-Aldrich, Louis, MO, USA), which was sterilized by filtration through a 0.22 μm filter. High-density polyethylene was used as the negative control, and the weight-to-volume ratio (g/mL) of the extracted medium was 1/5. The control group used a normal cell culture medium to culture NIH-3T3 cells."
+      }
+     ],
+     "not_stated": [
+      "replicates"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "DCPA",
+     "measured_by": "xrd_1",
+     "quote": "Surfactant-free P | DCPA | HA + β-TCP | 0.50 | 0.68 | HA | HA + β-TCP | 0.63 | 0.90"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.5,
+     "measured_by": "xrd_1",
+     "quote": "Surfactant-free P | DCPA | HA + β-TCP | 0.50 | 0.68 | HA | HA + β-TCP | 0.63 | 0.90"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 3.8,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 1.2,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 3.2,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 95,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "26.4°, 30.2°, 40.0° ((0 0 2), (−1 2 0), (0 2 2) of DCPA)",
+     "measured_by": "xrd_1",
+     "quote": "the main diffraction peaks at 2θ values of 26.4°, 30.2°, and 40.0° were assigned to corresponding (hkl) planes of (0 0 2), (−1 2 0), and (0 2 2), respectively, for the dicalcium phosphate anhydride (DCPA; CaHPO4, Monette: JCPDS 70-1425; 09-0080) phase."
+    },
+    {
+     "property": "ftir_band",
+     "value_text": "3571 cm−1 (−OH along the c-axis of HA, low sharp band)",
+     "measured_by": "ftir_1",
+     "quote": "The band at 3571 cm−1 corresponds to the vibration of the structure -OH group located along the c-axis in the HA crystal structure, and since P and SDS are templated at pH 4, it is a related low vertical sharp band."
+    },
+    {
+     "property": "ftir_band",
+     "value_text": "~875 cm−1 (P–O(H) stretching of HPO42− groups, characteristic of DCPA or calcium-deficient apatite)",
+     "measured_by": "ftir_1",
+     "quote": "In Figure 2a, the band near 875 cm−1 may be due to P–O (H) stretching in the HPO42– groups, which was characteristic of DCPA or calcium-deficient apatite."
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 4,
+     "value_text": "~4 μm",
+     "unit": "μm",
+     "measured_by": "sem_1",
+     "quote": "after calcination (P-C group), the length doubled from ~4 μm to ~8 μm, and the diameter increased from ~1 μm to 3–4 μm, which showed that the crystals combined and coarsened after calcination."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 1,
+     "value_text": "~1 μm",
+     "unit": "μm",
+     "measured_by": "sem_1",
+     "quote": "after calcination (P-C group), the length doubled from ~4 μm to ~8 μm, and the diameter increased from ~1 μm to 3–4 μm, which showed that the crystals combined and coarsened after calcination."
+    },
+    {
+     "property": "morphology",
+     "value_text": "plate and column shaped, with a large difference in size",
+     "measured_by": "sem_1",
+     "quote": "the powder was plate and column shaped, with a large difference in size."
+    },
+    {
+     "property": "biological",
+     "value_text": "excellent biocompatibility",
+     "measured_by": "bio_1",
+     "quote": "The uncalcined F127 group had excellent biocompatibility with the surfactant-free P group."
+    }
+   ]
+  },
+  {
+   "label": "CTAB_pH4",
+   "parent": "P_pH4",
+   "kind": "material",
+   "material": {
+    "name": "hydroxyapatite (HA)",
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "ceramique",
+    "phase": "hydroxyapatite (hexagonal)",
+    "morphology": "hexagonal columnar crystals"
+   },
+   "quote": "The control group without surfactant-assisted synthesis was denoted as P, and the groups assisted with different surfactants were denoted as CTAB, SDS, F127, and CAPB.",
+   "variations": [
+    {
+     "parameter": "surfactant",
+     "value_text": "CTAB",
+     "parent_value": "none",
+     "quote": "The control group without surfactant-assisted synthesis was denoted as P, and the groups assisted with different surfactants were denoted as CTAB, SDS, F127, and CAPB."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "hexadecyltrimethylammonium bromide (CTAB)",
+     "formula": "C19H42BrN",
+     "role": "surfactant",
+     "amount": 1,
+     "unit": "g",
+     "supplier": "Ferak Berlin GmbH",
+     "supplier_quote": "Four different types of surfactants were selected in this study: cationic surfactant CTAB (Ferak Berlin GmbH, Berlin, Germany)",
+     "quote": "Different surfactants were added to the solution. The addition amount was constant at 1 g, which confirmed that the micelles formed because the specified concentration was higher than the CMC.",
+     "not_stated": [
+      "purity"
+     ]
+    }
+   ],
+   "methods": [
+    "hydrothermal",
+    "templating"
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA",
+     "measured_by": "xrd_1",
+     "quote": "Cationic, CTAB | HA | HA + β-TCP | 1.03 | 0.80 | HA | HA + β-TCP | 0.74 | 0.87"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 1.03,
+     "measured_by": "xrd_1",
+     "quote": "Cationic, CTAB | HA | HA + β-TCP | 1.03 | 0.80 | HA | HA + β-TCP | 0.74 | 0.87"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 4.6,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.5,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 9.5,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 25,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "31.7°, 32.2°, 32.9° ((2 1 1), (1 1 2), (300) of HA, highest diffraction density)",
+     "measured_by": "xrd_1",
+     "quote": "HA planes of (2 1 1), (1 1 2), and (300) (HA: JCPDS 09-0432) had the highest diffraction density at 31.7°, 32.2°, and 32.9°, respectively"
+    },
+    {
+     "property": "morphology",
+     "value_text": "hexagonal columnar crystals",
+     "measured_by": "sem_1",
+     "quote": "In the CTAB group at pH 4, hexagonal columnar crystals with a length of about 5–10 μm and a diameter of about 2–3 μm were found to be HA crystals."
+    },
+    {
+     "property": "particle_size_length",
+     "value_text": "about 5–10 μm",
+     "unit": "μm",
+     "measured_by": "sem_1",
+     "quote": "In the CTAB group at pH 4, hexagonal columnar crystals with a length of about 5–10 μm and a diameter of about 2–3 μm were found to be HA crystals."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_text": "about 2–3 μm",
+     "unit": "μm",
+     "measured_by": "sem_1",
+     "quote": "In the CTAB group at pH 4, hexagonal columnar crystals with a length of about 5–10 μm and a diameter of about 2–3 μm were found to be HA crystals."
+    },
+    {
+     "property": "biological",
+     "value_text": "cell viability dropped to less than 70% after 24 h of culture, showing cytotoxicity",
+     "measured_by": "bio_1",
+     "quote": "However, in the surfactant-assisted CTAB, SDS, and CAPB uncalcined HA groups, cell viability dropped to less than 70% after 24 h of culture, showing cytotoxicity."
+    }
+   ]
+  },
+  {
+   "label": "SDS_pH4",
+   "parent": "P_pH4",
+   "kind": "material",
+   "material": {
+    "name": "dicalcium phosphate anhydrous with minor hydroxyapatite",
+    "formula": "CaHPO4",
+    "family": "ceramique",
+    "phase": "DCPA + (HA)",
+    "morphology": "small crystals, 3 μm long"
+   },
+   "quote": "The control group without surfactant-assisted synthesis was denoted as P, and the groups assisted with different surfactants were denoted as CTAB, SDS, F127, and CAPB.",
+   "variations": [
+    {
+     "parameter": "surfactant",
+     "value_text": "SDS",
+     "parent_value": "none",
+     "quote": "The control group without surfactant-assisted synthesis was denoted as P, and the groups assisted with different surfactants were denoted as CTAB, SDS, F127, and CAPB."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "sodium dodecyl sulfate (SDS)",
+     "formula": "C12H25NaO4S",
+     "role": "surfactant",
+     "amount": 1,
+     "unit": "g",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Four different types of surfactants were selected in this study: cationic surfactant CTAB (Ferak Berlin GmbH, Berlin, Germany), anionic surfactant sodium dodecyl sulfate (SDS, purity > 99.0%), non-ionic surfactant Pluronic®-F127 (F127, Mw = 12.6 kg mol−1), and zwitterionic surfactant cocamidopropyl betaine (CAPB). SDS, F127, and CAPB were all purchased from Sigma-Aldrich (St. Louis, MO, USA).",
+     "quote": "Different surfactants were added to the solution. The addition amount was constant at 1 g, which confirmed that the micelles formed because the specified concentration was higher than the CMC.",
+     "purity": "> 99.0%"
+    }
+   ],
+   "succeeded": false,
+   "methods": [
+    "hydrothermal",
+    "templating"
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "DCPA + (HA)",
+     "measured_by": "xrd_1",
+     "quote": "Anionic, SDS | DCPA + (HA) a | HA + β-TCP | 0.63 | 0.53 | HA + (DCPA) a | HA + β-TCP | 0.82 | 0.78"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.63,
+     "measured_by": "xrd_1",
+     "quote": "Anionic, SDS | DCPA + (HA) a | HA + β-TCP | 0.63 | 0.53 | HA + (DCPA) a | HA + β-TCP | 0.82 | 0.78"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 3.2,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.25,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 12,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 62,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "DCPA structure with a small HA diffraction at 31.7°",
+     "measured_by": "xrd_1",
+     "quote": "Notably, when using SDS as a nucleation template at pH 4, the diffraction peak was also based on the DCPA structure, although it contained a small amount of HA diffraction at 31.7°."
+    },
+    {
+     "property": "ftir_band",
+     "value_text": "3571 cm−1 (−OH along the c-axis of HA, low sharp band)",
+     "measured_by": "ftir_1",
+     "quote": "The band at 3571 cm−1 corresponds to the vibration of the structure -OH group located along the c-axis in the HA crystal structure, and since P and SDS are templated at pH 4, it is a related low vertical sharp band."
+    },
+    {
+     "property": "ftir_band",
+     "value_text": "~875 cm−1 (P–O(H) stretching of HPO42− groups, characteristic of DCPA or calcium-deficient apatite)",
+     "measured_by": "ftir_1",
+     "quote": "In Figure 2a, the band near 875 cm−1 may be due to P–O (H) stretching in the HPO42– groups, which was characteristic of DCPA or calcium-deficient apatite."
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 3,
+     "value_text": "only 3 μm",
+     "unit": "μm",
+     "measured_by": "sem_1",
+     "quote": "The SDS surfactant template was the smallest HA crystal in pH 4 synthesis, with a length of only 3 μm and a diameter of only 200–300 nm."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_text": "only 200–300 nm",
+     "unit": "nm",
+     "measured_by": "sem_1",
+     "quote": "The SDS surfactant template was the smallest HA crystal in pH 4 synthesis, with a length of only 3 μm and a diameter of only 200–300 nm."
+    },
+    {
+     "property": "biological",
+     "value_text": "cell viability dropped to less than 70% after 24 h of culture, showing cytotoxicity",
+     "measured_by": "bio_1",
+     "quote": "However, in the surfactant-assisted CTAB, SDS, and CAPB uncalcined HA groups, cell viability dropped to less than 70% after 24 h of culture, showing cytotoxicity."
+    }
+   ]
+  },
+  {
+   "label": "F127_pH4",
+   "parent": "P_pH4",
+   "kind": "material",
+   "material": {
+    "name": "hydroxyapatite (HA)",
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "ceramique",
+    "phase": "hydroxyapatite (hexagonal)",
+    "morphology": "rod-shaped crystals"
+   },
+   "quote": "The control group without surfactant-assisted synthesis was denoted as P, and the groups assisted with different surfactants were denoted as CTAB, SDS, F127, and CAPB.",
+   "variations": [
+    {
+     "parameter": "surfactant",
+     "value_text": "F127",
+     "parent_value": "none",
+     "quote": "The control group without surfactant-assisted synthesis was denoted as P, and the groups assisted with different surfactants were denoted as CTAB, SDS, F127, and CAPB."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "Pluronic®-F127 (F127)",
+     "formula": null,
+     "role": "surfactant",
+     "amount": 1,
+     "unit": "g",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "SDS, F127, and CAPB were all purchased from Sigma-Aldrich (St. Louis, MO, USA).",
+     "quote": "Different surfactants were added to the solution. The addition amount was constant at 1 g, which confirmed that the micelles formed because the specified concentration was higher than the CMC.",
+     "not_stated": [
+      "purity"
+     ]
+    }
+   ],
+   "methods": [
+    "hydrothermal",
+    "templating"
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA",
+     "measured_by": "xrd_1",
+     "quote": "Non-ionic, F127 | HA | HA + β-TCP | 0.68 | 0.89 | HA | HA + β-TCP | 0.63 | 1.19"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.68,
+     "measured_by": "xrd_1",
+     "quote": "Non-ionic, F127 | HA | HA + β-TCP | 0.68 | 0.89 | HA | HA + β-TCP | 0.63 | 1.19"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 5.2,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.3,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 18,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 92,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "31.7°, 32.2°, 32.9° ((2 1 1), (1 1 2), (300) of HA, highest diffraction density)",
+     "measured_by": "xrd_1",
+     "quote": "HA planes of (2 1 1), (1 1 2), and (300) (HA: JCPDS 09-0432) had the highest diffraction density at 31.7°, 32.2°, and 32.9°, respectively"
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 18,
+     "value_text": "~18",
+     "measured_by": "sem_1",
+     "quote": "The aspect ratio of non-ionic (F127) and zwitterionic (CAPB) groups was ~18"
+    },
+    {
+     "property": "biological",
+     "value_text": "excellent biocompatibility",
+     "measured_by": "bio_1",
+     "quote": "The uncalcined F127 group had excellent biocompatibility with the surfactant-free P group."
+    }
+   ]
+  },
+  {
+   "label": "CAPB_pH4",
+   "parent": "P_pH4",
+   "kind": "material",
+   "material": {
+    "name": "hydroxyapatite (HA)",
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "ceramique",
+    "phase": "hydroxyapatite (hexagonal)",
+    "morphology": "rod-shaped crystals"
+   },
+   "quote": "The control group without surfactant-assisted synthesis was denoted as P, and the groups assisted with different surfactants were denoted as CTAB, SDS, F127, and CAPB.",
+   "variations": [
+    {
+     "parameter": "surfactant",
+     "value_text": "CAPB",
+     "parent_value": "none",
+     "quote": "The control group without surfactant-assisted synthesis was denoted as P, and the groups assisted with different surfactants were denoted as CTAB, SDS, F127, and CAPB."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "cocamidopropyl betaine (CAPB)",
+     "formula": null,
+     "role": "surfactant",
+     "amount": 1,
+     "unit": "g",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "SDS, F127, and CAPB were all purchased from Sigma-Aldrich (St. Louis, MO, USA).",
+     "quote": "Different surfactants were added to the solution. The addition amount was constant at 1 g, which confirmed that the micelles formed because the specified concentration was higher than the CMC.",
+     "not_stated": [
+      "purity"
+     ]
+    }
+   ],
+   "methods": [
+    "hydrothermal",
+    "templating"
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA",
+     "measured_by": "xrd_1",
+     "quote": "Zwitterionic, CAPB | HA | HA + β-TCP | 0.72 | 0.72 | HA | HA + β-TCP | 0.81 | 1.68"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.72,
+     "measured_by": "xrd_1",
+     "quote": "Zwitterionic, CAPB | HA | HA + β-TCP | 0.72 | 0.72 | HA | HA + β-TCP | 0.81 | 1.68"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 5.9,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.35,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 18,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 42,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "31.7°, 32.2°, 32.9° ((2 1 1), (1 1 2), (300) of HA, highest diffraction density)",
+     "measured_by": "xrd_1",
+     "quote": "HA planes of (2 1 1), (1 1 2), and (300) (HA: JCPDS 09-0432) had the highest diffraction density at 31.7°, 32.2°, and 32.9°, respectively"
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 18,
+     "value_text": "~18",
+     "measured_by": "sem_1",
+     "quote": "The aspect ratio of non-ionic (F127) and zwitterionic (CAPB) groups was ~18"
+    },
+    {
+     "property": "biological",
+     "value_text": "cell viability dropped to less than 70% after 24 h of culture, showing cytotoxicity",
+     "measured_by": "bio_1",
+     "quote": "However, in the surfactant-assisted CTAB, SDS, and CAPB uncalcined HA groups, cell viability dropped to less than 70% after 24 h of culture, showing cytotoxicity."
+    }
+   ]
+  },
+  {
+   "label": "P_pH9",
+   "parent": "P_pH4",
+   "kind": "material",
+   "material": {
+    "name": "hydroxyapatite (HA)",
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "ceramique",
+    "phase": "hydroxyapatite (hexagonal)",
+    "morphology": "irregular crystals of inconsistent size"
+   },
+   "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution.",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 9,
+     "parent_value": "4",
+     "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA",
+     "measured_by": "xrd_1",
+     "quote": "Surfactant-free P | DCPA | HA + β-TCP | 0.50 | 0.68 | HA | HA + β-TCP | 0.63 | 0.90"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.63,
+     "measured_by": "xrd_1",
+     "quote": "Surfactant-free P | DCPA | HA + β-TCP | 0.50 | 0.68 | HA | HA + β-TCP | 0.63 | 0.90"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 3.7,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.3,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 13,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 98,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "morphology",
+     "value_text": "irregular and inconsistent in size",
+     "measured_by": "tem_1",
+     "quote": "The crystals of the control group without a surfactant (P) were irregular and inconsistent in size."
+    },
+    {
+     "property": "phase",
+     "value_text": "obvious HA diffraction positions of the (0 0 2), (2 1 1) and (2 2 2) planes",
+     "measured_by": "saed_1",
+     "quote": "In the SAD results, the image showed obvious HA diffraction positions of the (0 0 2), (2 1 1), and (2 2 2) planes."
+    }
+   ]
+  },
+  {
+   "label": "CTAB_pH9",
+   "parent": "CTAB_pH4",
+   "kind": "material",
+   "material": {
+    "name": "hydroxyapatite (HA)",
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "ceramique",
+    "phase": "hydroxyapatite (hexagonal)",
+    "morphology": "rod-shaped crystals"
+   },
+   "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution.",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 9,
+     "parent_value": "4",
+     "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA",
+     "measured_by": "xrd_1",
+     "quote": "Cationic, CTAB | HA | HA + β-TCP | 1.03 | 0.80 | HA | HA + β-TCP | 0.74 | 0.87"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.74,
+     "measured_by": "xrd_1",
+     "quote": "Cationic, CTAB | HA | HA + β-TCP | 1.03 | 0.80 | HA | HA + β-TCP | 0.74 | 0.87"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 2.7,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.14,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 19,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 13,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "biological",
+     "value_text": "cell death was obvious",
+     "measured_by": "bio_1",
+     "quote": "but cell death was obvious in the CTAB and SDS groups."
+    }
+   ]
+  },
+  {
+   "label": "SDS_pH9",
+   "parent": "SDS_pH4",
+   "kind": "material",
+   "material": {
+    "name": "hydroxyapatite (HA)",
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "ceramique",
+    "phase": "HA + (DCPA)",
+    "morphology": "rod-shaped crystals"
+   },
+   "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution.",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 9,
+     "parent_value": "4",
+     "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + (DCPA)",
+     "measured_by": "xrd_1",
+     "quote": "Anionic, SDS | DCPA + (HA) a | HA + β-TCP | 0.63 | 0.53 | HA + (DCPA) a | HA + β-TCP | 0.82 | 0.78"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.82,
+     "measured_by": "xrd_1",
+     "quote": "Anionic, SDS | DCPA + (HA) a | HA + β-TCP | 0.63 | 0.53 | HA + (DCPA) a | HA + β-TCP | 0.82 | 0.78"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 2.6,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.19,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 14,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 14,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "biological",
+     "value_text": "cell death was obvious",
+     "measured_by": "bio_1",
+     "quote": "but cell death was obvious in the CTAB and SDS groups."
+    }
+   ]
+  },
+  {
+   "label": "F127_pH9",
+   "parent": "F127_pH4",
+   "kind": "material",
+   "material": {
+    "name": "hydroxyapatite (HA)",
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "ceramique",
+    "phase": "hydroxyapatite (hexagonal)",
+    "morphology": "rod-shaped crystals"
+   },
+   "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution.",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 9,
+     "parent_value": "4",
+     "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA",
+     "measured_by": "xrd_1",
+     "quote": "Non-ionic, F127 | HA | HA + β-TCP | 0.68 | 0.89 | HA | HA + β-TCP | 0.63 | 1.19"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.63,
+     "measured_by": "xrd_1",
+     "quote": "Non-ionic, F127 | HA | HA + β-TCP | 0.68 | 0.89 | HA | HA + β-TCP | 0.63 | 1.19"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 3.0,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.21,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 14,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 99,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "morphology",
+     "value_text": "rod-shaped crystals, nanometer-size in diameter",
+     "measured_by": "tem_1",
+     "quote": "The rod-shaped HA crystals synthesized with F127 and CAPB as templates were nanometer-size in diameter and thickened after calcination."
+    },
+    {
+     "property": "phase",
+     "value_text": "obvious HA diffraction positions of the (0 0 2), (2 1 1) and (2 2 2) planes",
+     "measured_by": "saed_1",
+     "quote": "In the SAD results, the image showed obvious HA diffraction positions of the (0 0 2), (2 1 1), and (2 2 2) planes."
+    },
+    {
+     "property": "d_spacing",
+     "value_text": "0.40 nm ((200)), 0.28 nm ((2 1 1)), 0.27 nm ((300)) of HA (reported for the F127 and CAPB groups together)",
+     "measured_by": "tem_1",
+     "quote": "In Figure 5b, 0.40 nm corresponded to the (200) plane HA crystal, 0.28 nm corresponded to the (2 1 1) plane, and 0.27 nm corresponded to the (300) plane."
+    },
+    {
+     "property": "biological",
+     "value_text": "maintained cell viability after 24 h of culture",
+     "measured_by": "bio_1",
+     "quote": "the uncalcined rod-shaped HA crystals of the non-ionic F127 and CAPB groups maintained cell viability after 24 h of culture"
+    }
+   ]
+  },
+  {
+   "label": "CAPB_pH9",
+   "parent": "CAPB_pH4",
+   "kind": "material",
+   "material": {
+    "name": "hydroxyapatite (HA)",
+    "formula": "Ca10(PO4)6(OH)2",
+    "family": "ceramique",
+    "phase": "hydroxyapatite (hexagonal)",
+    "morphology": "rod-shaped crystals"
+   },
+   "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution.",
+   "variations": [
+    {
+     "parameter": "ph",
+     "step_order": 3,
+     "value_num": 9,
+     "parent_value": "4",
+     "quote": "The pH of the solution was adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA",
+     "measured_by": "xrd_1",
+     "quote": "Zwitterionic, CAPB | HA | HA + β-TCP | 0.72 | 0.72 | HA | HA + β-TCP | 0.81 | 1.68"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.81,
+     "measured_by": "xrd_1",
+     "quote": "Zwitterionic, CAPB | HA | HA + β-TCP | 0.72 | 0.72 | HA | HA + β-TCP | 0.81 | 1.68"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 2.65,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.25,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 10,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 100,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "morphology",
+     "value_text": "rod-shaped crystals, nanometer-size in diameter",
+     "measured_by": "tem_1",
+     "quote": "The rod-shaped HA crystals synthesized with F127 and CAPB as templates were nanometer-size in diameter and thickened after calcination."
+    },
+    {
+     "property": "phase",
+     "value_text": "obvious HA diffraction positions of the (0 0 2), (2 1 1) and (2 2 2) planes",
+     "measured_by": "saed_1",
+     "quote": "In the SAD results, the image showed obvious HA diffraction positions of the (0 0 2), (2 1 1), and (2 2 2) planes."
+    },
+    {
+     "property": "d_spacing",
+     "value_text": "0.40 nm ((200)), 0.28 nm ((2 1 1)), 0.27 nm ((300)) of HA (reported for the F127 and CAPB groups together)",
+     "measured_by": "tem_1",
+     "quote": "In Figure 5b, 0.40 nm corresponded to the (200) plane HA crystal, 0.28 nm corresponded to the (2 1 1) plane, and 0.27 nm corresponded to the (300) plane."
+    },
+    {
+     "property": "biological",
+     "value_text": "maintained cell viability after 24 h of culture",
+     "measured_by": "bio_1",
+     "quote": "the uncalcined rod-shaped HA crystals of the non-ionic F127 and CAPB groups maintained cell viability after 24 h of culture"
+    }
+   ]
+  },
+  {
+   "label": "P-C_pH4",
+   "parent": "P_pH4",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Surfactant-free P | DCPA | HA + β-TCP | 0.50 | 0.68 | HA | HA + β-TCP | 0.63 | 0.90"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.68,
+     "measured_by": "xrd_1",
+     "quote": "Surfactant-free P | DCPA | HA + β-TCP | 0.50 | 0.68 | HA | HA + β-TCP | 0.63 | 0.90"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 8.5,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 3.5,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 2.4,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 110,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "HA peaks at 31.7°, 32.2°, 32.9°; β-TCP peaks at 31.0° ((0 2 10)) and 34.4° ((2 2 0))",
+     "measured_by": "xrd_1",
+     "quote": "Except for the obvious HA diffraction peaks at 31.7°, 32.2°, and 32.9°, diffraction peaks at 31.0° and 34.4° corresponding to the (0 2 10) and (2 2 0) planes, respectively, for the beta-tricalcium phosphate (β-TCP: JCPDS 09-0169) phase in the rhombohedral structure were observed."
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 8,
+     "value_text": "~8 μm",
+     "unit": "μm",
+     "measured_by": "sem_1",
+     "quote": "after calcination (P-C group), the length doubled from ~4 μm to ~8 μm, and the diameter increased from ~1 μm to 3–4 μm, which showed that the crystals combined and coarsened after calcination."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_text": "3–4 μm",
+     "unit": "μm",
+     "measured_by": "sem_1",
+     "quote": "after calcination (P-C group), the length doubled from ~4 μm to ~8 μm, and the diameter increased from ~1 μm to 3–4 μm, which showed that the crystals combined and coarsened after calcination."
+    },
+    {
+     "property": "morphology",
+     "value_text": "crystals combined and coarsened after calcination",
+     "measured_by": "sem_1",
+     "quote": "after calcination (P-C group), the length doubled from ~4 μm to ~8 μm, and the diameter increased from ~1 μm to 3–4 μm, which showed that the crystals combined and coarsened after calcination."
+    },
+    {
+     "property": "biological",
+     "value_text": "no cytotoxicity",
+     "measured_by": "bio_1",
+     "quote": "After calcination at 900 °C, there was no cytotoxicity in each group."
+    }
+   ]
+  },
+  {
+   "label": "P-C_pH9",
+   "parent": "P_pH9",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Surfactant-free P | DCPA | HA + β-TCP | 0.50 | 0.68 | HA | HA + β-TCP | 0.63 | 0.90"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.9,
+     "measured_by": "xrd_1",
+     "quote": "Surfactant-free P | DCPA | HA + β-TCP | 0.50 | 0.68 | HA | HA + β-TCP | 0.63 | 0.90"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 2.0,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.15,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 15,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 110,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "particle_size_length",
+     "value_text": "significantly shorter in length after calcination",
+     "measured_by": "sem_1",
+     "quote": "The crystals of the other groups (P, SDS, F127, and CAPB) were significantly shorter in length after calcination."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_text": "length-to-diameter ratio significantly shortened (P group) after calcination",
+     "measured_by": "sem_1",
+     "quote": "The length-to-diameter ratio of each group showed a significant downward trend, and the P group was significantly shortened after calcination (Figure 4b)."
+    },
+    {
+     "property": "biological",
+     "value_text": "excellent biological activity and no cytotoxicity after calcination",
+     "measured_by": "bio_1",
+     "quote": "Similar to the results of pH 4, each group demonstrated excellent biological activity and no cytotoxicity after calcination at 900 °C."
+    }
+   ]
+  },
+  {
+   "label": "CTAB-C_pH4",
+   "parent": "CTAB_pH4",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Cationic, CTAB | HA | HA + β-TCP | 1.03 | 0.80 | HA | HA + β-TCP | 0.74 | 0.87"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.8,
+     "measured_by": "xrd_1",
+     "quote": "Cationic, CTAB | HA | HA + β-TCP | 1.03 | 0.80 | HA | HA + β-TCP | 0.74 | 0.87"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 6.1,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 1.0,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 6.3,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 93,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "HA peaks at 31.7°, 32.2°, 32.9°; β-TCP peaks at 31.0° ((0 2 10)) and 34.4° ((2 2 0))",
+     "measured_by": "xrd_1",
+     "quote": "Except for the obvious HA diffraction peaks at 31.7°, 32.2°, and 32.9°, diffraction peaks at 31.0° and 34.4° corresponding to the (0 2 10) and (2 2 0) planes, respectively, for the beta-tricalcium phosphate (β-TCP: JCPDS 09-0169) phase in the rhombohedral structure were observed."
+    },
+    {
+     "property": "particle_size",
+     "value_text": "increased slightly after calcination",
+     "measured_by": "sem_1",
+     "quote": "The size of CTAB-C also increased slightly after calcination."
+    },
+    {
+     "property": "biological",
+     "value_text": "no cytotoxicity",
+     "measured_by": "bio_1",
+     "quote": "After calcination at 900 °C, there was no cytotoxicity in each group."
+    }
+   ]
+  },
+  {
+   "label": "CTAB-C_pH9",
+   "parent": "CTAB_pH9",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Cationic, CTAB | HA | HA + β-TCP | 1.03 | 0.80 | HA | HA + β-TCP | 0.74 | 0.87"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.87,
+     "measured_by": "xrd_1",
+     "quote": "Cationic, CTAB | HA | HA + β-TCP | 1.03 | 0.80 | HA | HA + β-TCP | 0.74 | 0.87"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 2.6,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.18,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 15,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 100,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "particle_size_length",
+     "value_text": "length hardly changed after calcination",
+     "measured_by": "sem_1",
+     "quote": "Except for the cationic CTAB group, the length of these crystals hardly changed after calcination."
+    },
+    {
+     "property": "biological",
+     "value_text": "excellent biological activity and no cytotoxicity after calcination",
+     "measured_by": "bio_1",
+     "quote": "Similar to the results of pH 4, each group demonstrated excellent biological activity and no cytotoxicity after calcination at 900 °C."
+    }
+   ]
+  },
+  {
+   "label": "SDS-C_pH4",
+   "parent": "SDS_pH4",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Anionic, SDS | DCPA + (HA) a | HA + β-TCP | 0.63 | 0.53 | HA + (DCPA) a | HA + β-TCP | 0.82 | 0.78"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.53,
+     "measured_by": "xrd_1",
+     "quote": "Anionic, SDS | DCPA + (HA) a | HA + β-TCP | 0.63 | 0.53 | HA + (DCPA) a | HA + β-TCP | 0.82 | 0.78"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 3.6,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.35,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 10,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 110,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "HA peaks at 31.7°, 32.2°, 32.9°; β-TCP peaks at 31.0° ((0 2 10)) and 34.4° ((2 2 0))",
+     "measured_by": "xrd_1",
+     "quote": "Except for the obvious HA diffraction peaks at 31.7°, 32.2°, and 32.9°, diffraction peaks at 31.0° and 34.4° corresponding to the (0 2 10) and (2 2 0) planes, respectively, for the beta-tricalcium phosphate (β-TCP: JCPDS 09-0169) phase in the rhombohedral structure were observed."
+    },
+    {
+     "property": "biological",
+     "value_text": "no cytotoxicity",
+     "measured_by": "bio_1",
+     "quote": "After calcination at 900 °C, there was no cytotoxicity in each group."
+    }
+   ]
+  },
+  {
+   "label": "SDS-C_pH9",
+   "parent": "SDS_pH9",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Anionic, SDS | DCPA + (HA) a | HA + β-TCP | 0.63 | 0.53 | HA + (DCPA) a | HA + β-TCP | 0.82 | 0.78"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.78,
+     "measured_by": "xrd_1",
+     "quote": "Anionic, SDS | DCPA + (HA) a | HA + β-TCP | 0.63 | 0.53 | HA + (DCPA) a | HA + β-TCP | 0.82 | 0.78"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 2.1,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.23,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 8.9,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 100,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "particle_size_length",
+     "value_text": "significantly shorter in length after calcination",
+     "measured_by": "sem_1",
+     "quote": "The crystals of the other groups (P, SDS, F127, and CAPB) were significantly shorter in length after calcination."
+    },
+    {
+     "property": "biological",
+     "value_text": "excellent biological activity and no cytotoxicity after calcination",
+     "measured_by": "bio_1",
+     "quote": "Similar to the results of pH 4, each group demonstrated excellent biological activity and no cytotoxicity after calcination at 900 °C."
+    }
+   ]
+  },
+  {
+   "label": "F127-C_pH4",
+   "parent": "F127_pH4",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Non-ionic, F127 | HA | HA + β-TCP | 0.68 | 0.89 | HA | HA + β-TCP | 0.63 | 1.19"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.89,
+     "measured_by": "xrd_1",
+     "quote": "Non-ionic, F127 | HA | HA + β-TCP | 0.68 | 0.89 | HA | HA + β-TCP | 0.63 | 1.19"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 5.8,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.3,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 19,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 110,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "HA peaks at 31.7°, 32.2°, 32.9°; β-TCP peaks at 31.0° ((0 2 10)) and 34.4° ((2 2 0))",
+     "measured_by": "xrd_1",
+     "quote": "Except for the obvious HA diffraction peaks at 31.7°, 32.2°, and 32.9°, diffraction peaks at 31.0° and 34.4° corresponding to the (0 2 10) and (2 2 0) planes, respectively, for the beta-tricalcium phosphate (β-TCP: JCPDS 09-0169) phase in the rhombohedral structure were observed."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_text": "calcined aspect ratio and size changed slightly",
+     "measured_by": "sem_1",
+     "quote": "and the calcined aspect ratio and size changed slightly."
+    },
+    {
+     "property": "biological",
+     "value_text": "no cytotoxicity",
+     "measured_by": "bio_1",
+     "quote": "After calcination at 900 °C, there was no cytotoxicity in each group."
+    }
+   ]
+  },
+  {
+   "label": "F127-C_pH9",
+   "parent": "F127_pH9",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Non-ionic, F127 | HA | HA + β-TCP | 0.68 | 0.89 | HA | HA + β-TCP | 0.63 | 1.19"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 1.19,
+     "measured_by": "xrd_1",
+     "quote": "Non-ionic, F127 | HA | HA + β-TCP | 0.68 | 0.89 | HA | HA + β-TCP | 0.63 | 1.19"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 1.9,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.15,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 12,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 110,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "particle_size_length",
+     "value_text": "significantly shorter in length after calcination",
+     "measured_by": "sem_1",
+     "quote": "The crystals of the other groups (P, SDS, F127, and CAPB) were significantly shorter in length after calcination."
+    },
+    {
+     "property": "morphology",
+     "value_text": "rod-shaped crystals thickened after calcination",
+     "measured_by": "tem_1",
+     "quote": "The rod-shaped HA crystals synthesized with F127 and CAPB as templates were nanometer-size in diameter and thickened after calcination."
+    },
+    {
+     "property": "biological",
+     "value_text": "excellent biological activity and no cytotoxicity after calcination",
+     "measured_by": "bio_1",
+     "quote": "Similar to the results of pH 4, each group demonstrated excellent biological activity and no cytotoxicity after calcination at 900 °C."
+    }
+   ]
+  },
+  {
+   "label": "CAPB-C_pH4",
+   "parent": "CAPB_pH4",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Zwitterionic, CAPB | HA | HA + β-TCP | 0.72 | 0.72 | HA | HA + β-TCP | 0.81 | 1.68"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 0.72,
+     "measured_by": "xrd_1",
+     "quote": "Zwitterionic, CAPB | HA | HA + β-TCP | 0.72 | 0.72 | HA | HA + β-TCP | 0.81 | 1.68"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 5.3,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.3,
+     "unit": "μm",
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 17,
+     "from_figure": "Fig. 3b",
+     "measured_by": "sem_1",
+     "quote": "Figure 3 Powders before and after calcination in each group at pH 4. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 110,
+     "unit": "%",
+     "from_figure": "Fig. 7a",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_text": "HA peaks at 31.7°, 32.2°, 32.9°; β-TCP peaks at 31.0° ((0 2 10)) and 34.4° ((2 2 0))",
+     "measured_by": "xrd_1",
+     "quote": "Except for the obvious HA diffraction peaks at 31.7°, 32.2°, and 32.9°, diffraction peaks at 31.0° and 34.4° corresponding to the (0 2 10) and (2 2 0) planes, respectively, for the beta-tricalcium phosphate (β-TCP: JCPDS 09-0169) phase in the rhombohedral structure were observed."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_text": "calcined aspect ratio and size changed slightly",
+     "measured_by": "sem_1",
+     "quote": "and the calcined aspect ratio and size changed slightly."
+    },
+    {
+     "property": "biological",
+     "value_text": "no cytotoxicity",
+     "measured_by": "bio_1",
+     "quote": "After calcination at 900 °C, there was no cytotoxicity in each group."
+    }
+   ]
+  },
+  {
+   "label": "CAPB-C_pH9",
+   "parent": "CAPB_pH9",
+   "kind": "post_treatment",
+   "material": {
+    "name": "calcined hydroxyapatite with beta-tricalcium phosphate",
+    "formula": null,
+    "family": "ceramique",
+    "phase": "HA + β-TCP",
+    "morphology": null
+   },
+   "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+   "variations": [
+    {
+     "parameter": "calcination",
+     "value_text": "900 °C for 4 h",
+     "parent_value": "none",
+     "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Heat the hydrothermally synthesized HA powder at 15 °C/min to 900 °C, hold 4 h, then cool to room temperature.",
+     "quote": "The hydrothermally synthesized HA powder was sintered at a heating rate of 15 °C/min. After being heated to 900 °C, the temperature was maintained for 4 h and then cooled to room temperature to obtain calcined HA.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 900,
+       "unit": "°C",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "duration",
+       "value_num": 4,
+       "unit": "h",
+       "quote": "After being heated to 900 °C, the temperature was maintained for 4 h"
+      },
+      {
+       "name": "heating_rate",
+       "value_num": 15,
+       "unit": "°C/min",
+       "quote": "sintered at a heating rate of 15 °C/min"
+      },
+      {
+       "name": "cooling",
+       "value_text": "cooled to room temperature",
+       "quote": "then cooled to room temperature to obtain calcined HA."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "value_text": "HA + β-TCP",
+     "measured_by": "xrd_1",
+     "quote": "Zwitterionic, CAPB | HA | HA + β-TCP | 0.72 | 0.72 | HA | HA + β-TCP | 0.81 | 1.68"
+    },
+    {
+     "property": "xrd_peak_intensity_ratio_002_to_100",
+     "value_num": 1.68,
+     "measured_by": "xrd_1",
+     "quote": "Zwitterionic, CAPB | HA | HA + β-TCP | 0.72 | 0.72 | HA | HA + β-TCP | 0.81 | 1.68"
+    },
+    {
+     "property": "particle_size_length",
+     "value_num": 1.7,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 0.2,
+     "unit": "μm",
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "aspect_ratio",
+     "value_num": 7.8,
+     "from_figure": "Fig. 4b",
+     "measured_by": "sem_1",
+     "quote": "Figure 4 Powders before and after calcination in each group at pH 9. (a) SEM image and (b) particle size and the length-to-diameter ratio of the powder before and after calcination in each group."
+    },
+    {
+     "property": "biological_cell_viability",
+     "value_num": 110,
+     "unit": "%",
+     "from_figure": "Fig. 7b",
+     "measured_by": "bio_1",
+     "quote": "Figure 7 Cytotoxicity test of HA synthesized at (a) pH 4 and (b) pH 9 in hydrothermal synthesis without a surfactant (P) and with different surfactants: CTAB, SDS, F127, and CAPB (column before calcination: blue; column after calcination: red)."
+    },
+    {
+     "property": "particle_size_length",
+     "value_text": "significantly shorter in length after calcination",
+     "measured_by": "sem_1",
+     "quote": "The crystals of the other groups (P, SDS, F127, and CAPB) were significantly shorter in length after calcination."
+    },
+    {
+     "property": "morphology",
+     "value_text": "rod-shaped crystals thickened after calcination",
+     "measured_by": "tem_1",
+     "quote": "The rod-shaped HA crystals synthesized with F127 and CAPB as templates were nanometer-size in diameter and thickened after calcination."
+    },
+    {
+     "property": "biological",
+     "value_text": "excellent biological activity and no cytotoxicity after calcination",
+     "measured_by": "bio_1",
+     "quote": "Similar to the results of pH 4, each group demonstrated excellent biological activity and no cytotoxicity after calcination at 900 °C."
+    }
+   ]
+  }
+ ],
+ "sample_inventory": [
+  {
+   "sample": "P (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "P_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1a",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "P-C (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "P-C_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1b",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "CTAB (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "CTAB_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1a",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "CTAB-C (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "CTAB-C_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1b",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "SDS (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "SDS_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1a",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "SDS-C (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "SDS-C_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1b",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "F127 (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "F127_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1a",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "F127-C (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "F127-C_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1b",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "CAPB (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "CAPB_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1a",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "CAPB-C (pH 4)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "CAPB-C_pH4",
+   "results_in": [
+    "Table 1",
+    "Fig. 1b",
+    "Fig. 3",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "P (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "P_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1c",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "P-C (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "P-C_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1d",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "CTAB (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "CTAB_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1c",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "CTAB-C (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "CTAB-C_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1d",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "SDS (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "SDS_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1c",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "SDS-C (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "SDS-C_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1d",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "F127 (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "F127_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1c",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "F127-C (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "F127-C_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1d",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "CAPB (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis)",
+   "route": "CAPB_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1c",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "CAPB-C (pH 9)",
+   "defined_in": "Methods, 2.2 (surfactant-assisted HA powder synthesis) and calcination paragraph",
+   "route": "CAPB-C_pH9",
+   "results_in": [
+    "Table 1",
+    "Fig. 1d",
+    "Fig. 4",
+    "Fig. 7b"
+   ]
+  },
+  {
+   "sample": "CTAB surfactant alone (cytotoxicity of the four surfactants)",
+   "defined_in": "Results, 3.5; Fig. 6",
+   "route": null,
+   "why": "surfactant seul testé en cytotoxicité (Fig. 6), pas un matériau synthétisé : valeurs consignées dans une annotation",
+   "results_in": [
+    "Fig. 6"
+   ]
+  },
+  {
+   "sample": "SDS surfactant alone (cytotoxicity of the four surfactants)",
+   "defined_in": "Results, 3.5; Fig. 6",
+   "route": null,
+   "why": "surfactant seul testé en cytotoxicité (Fig. 6), pas un matériau synthétisé : valeurs consignées dans une annotation",
+   "results_in": [
+    "Fig. 6"
+   ]
+  },
+  {
+   "sample": "F127 surfactant alone (cytotoxicity of the four surfactants)",
+   "defined_in": "Results, 3.5; Fig. 6",
+   "route": null,
+   "why": "surfactant seul testé en cytotoxicité (Fig. 6), pas un matériau synthétisé : valeurs consignées dans une annotation",
+   "results_in": [
+    "Fig. 6"
+   ]
+  },
+  {
+   "sample": "CAPB surfactant alone (cytotoxicity of the four surfactants)",
+   "defined_in": "Results, 3.5; Fig. 6",
+   "route": null,
+   "why": "surfactant seul testé en cytotoxicité (Fig. 6), pas un matériau synthétisé : valeurs consignées dans une annotation",
+   "results_in": [
+    "Fig. 6"
+   ]
+  },
+  {
+   "sample": "Control (normal cell culture medium)",
+   "defined_in": "Methods, 2.6",
+   "route": null,
+   "why": "témoin de culture cellulaire",
+   "results_in": [
+    "Fig. 6",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "DMSO 15 wt% (positive control)",
+   "defined_in": "Methods, 2.6",
+   "route": null,
+   "why": "témoin positif commercial, non synthétisé",
+   "results_in": [
+    "Fig. 6",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "HDPE (negative control)",
+   "defined_in": "Methods, 2.6",
+   "route": null,
+   "why": "témoin négatif commercial, non synthétisé",
+   "results_in": [
+    "Fig. 6",
+    "Fig. 7"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare de l'hydroxyapatite (HA) en barreaux par précipitation hydrothermale (120 °C, 24 h) à partir de CaHPO4·2H2O et Ca(OH)2 (rapport Ca/P de 1,67), à pH 4 et à pH 9, avec ou sans l'un de quatre tensioactifs (CTAB cationique, SDS anionique, F127 non ionique, CAPB zwitterionique). Chaque poudre est étudiée avant et après calcination à 900 °C (phase par DRX, aspect par MEB et MET, bandes par FTIR) et sa cytotoxicité est mesurée sur cellules NIH-3T3. Sans tensioactif à pH 4, on obtient de la DCPA et non de l'HA ; les tensioactifs CTAB, F127 et CAPB donnent de l'HA pure à pH 4 ; à pH 9 toutes les poudres sont de l'HA (un peu de DCPA avec SDS).",
+   "quote": "Herein, we studied HA synthesis assisted by four surfactants, namely cation, anion, non-ionic, and zwitterion templates, to verify the synthesis phase, aspect ratio, morphology, and biocompatibility under different environments (i.e., pH 4 and 9) before and after calcination."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir comment la nature ionique du tensioactif et le pH du milieu de synthèse changent la phase, le rapport d'aspect, la morphologie et la biocompatibilité de l'HA hydrothermale, et si la calcination (qui retire le tensioactif) est nécessaire pour obtenir une poudre non cytotoxique."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Deux paramètres sont croisés : le tensioactif (aucun, cationique, anionique, non ionique, zwitterionique, à 1 g constant, au-dessus de la concentration micellaire critique) et le pH (4 acide, 9 basique). Chaque poudre est ensuite calcinée à 900 °C pour retirer l'organique. Le pH 4 est choisi parce que l'HA pure s'y forme mal sans gabarit ; le pH 9 est la condition où l'HA est stable. La comparaison avant et après calcination sépare l'effet du résidu de tensioactif de l'effet de la phase et de la taille sur la cytotoxicité."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "À pH 4, le témoin sans tensioactif (P) donne de la DCPA, SDS une DCPA avec un peu d'HA, tandis que CTAB, F127 et CAPB donnent de l'HA. Les cristaux de pH 4 sont plus gros que ceux de pH 9 (diamètre de 0,3 à 1,2 μm contre 0,14 à 0,3 μm d'après les figures) ; les rapports longueur/diamètre lus sur la figure 3b atteignent 17 à 18 pour F127 et CAPB à pH 4. Toutes les poudres calcinées contiennent HA + β-TCP. Côté cytotoxicité, seul F127 (pH 4 et 9) et CAPB (pH 9) sont non toxiques avant calcination, et toutes les poudres calcinées le sont."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Résultats donnés pour le groupe et non pour un échantillon : les largeurs à mi-hauteur de toutes les diffractions d'HA à pH 4 sont plus étroites qu'à pH 9 (cristallinité plus élevée à pH 4) ; la teneur en β-TCP après calcination est un peu plus élevée à pH 4 qu'à pH 9 ; à pH 9 les cristaux d'HA mesurent 2 à 3 μm de long et environ 150 à 250 nm de diamètre.",
+   "quote": "The diffraction patterns shown in Figure 1a,c revealed that the full-width at half-maximum (FWHM) of all HA diffractions at pH 4 (Figure 1a) was narrower than that at pH 9 (Figure 1c)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Bandes FTIR décrites pour le groupe d'HA sans attribution à un échantillon : 3570 et 633 cm−1 (groupes OH), 561–565 et 603 cm−1 (ν4 de PO43−), ~962 cm−1 (ν1), ~1033 et 1090 cm−1 (ν3) ; après calcination, épaules de β-TCP à 947, 971 et 1120 cm−1 et, pour les poudres de pH 4 calcinées, bandes de carbonate à 1460 cm−1 (type B) et 1550 cm−1 (type A). Aucune bande organique n'est détectée après calcination.",
+   "quote": "The absorption bands located at 3570 (ν3) and 633 cm−1 (νL) were attributed to the asymmetric stretching and vibration modes of hydroxyl groups (OH−) in HA, respectively"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Cytotoxicité des quatre tensioactifs seuls (figure 6, lecture graphique approximative à 2 chiffres) : F127 ≈ 75 % de viabilité (le moins toxique, au-dessus du seuil de 70 %), CTAB ≈ 48 %, SDS ≈ 10 %, CAPB ≈ 11 % ; témoin positif DMSO ≈ 28 %, témoin négatif HDPE ≈ 99 %. Ces échantillons ne sont pas des matériaux synthétisés et n'ont donc pas de voie.",
+   "quote": "non-ionic F127 has the lowest toxicity at the same concentration and exhibits more than 70% cell viability. The surfactants SDS and CAPB caused the highest cytotoxicity, and the cell viability was even lower than that of the positive control group DMSO."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs retiennent que l'HA en barreaux non calcinée issue du gabarit non ionique F127 (pH 4 et 9) et du gabarit zwitterionique CAPB (pH 9) n'est pas cytotoxique, et que toutes les poudres calcinées le sont aussi.",
+   "quote": "In conclusion, the uncalcined HA rod-shaped nanoparticles synthesized from the non-ionic template at pH 4 and 9 and the zwitterion template at pH 9, as well as all surfactant-assisted HA after calcination, had no cytotoxicity."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Manquent : les masses de CaHPO4·2H2O et de Ca(OH)2 (seul le rapport Ca/P de 1,67 et le volume d'eau de 160 mL sont donnés), le volume d'acide acétique ou d'acétate de sodium ajouté et lequel des deux sert à quel pH, la pureté des précurseurs, la durée et la vitesse d'agitation, le type et le volume de l'autoclave, son taux de remplissage, les vitesses de chauffe et de refroidissement de la synthèse hydrothermale, le nombre de lavages, le mode de séchage et l'atmosphère de la calcination. Les valeurs de taille, de rapport d'aspect et de viabilité cellulaire sont lues sur les figures 3b, 4b et 7 (précision de lecture ≈ ± 5 % de l'axe) et les barres d'erreur ne sont pas reprises. Aucune annexe n'est citée."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CTAB_pH4",
+   "text": "Pour un tensioactif cationique au-dessus de la concentration micellaire critique, les auteurs (s'appuyant sur des travaux antérieurs) décrivent des ions phosphate fixés à la surface des micelles chargées positivement, qui forment un réseau puis des micelles allongées servant de centre de nucléation ; les ions Ca2+ s'y adsorbent et la répulsion entre eux oriente la croissance en barreau. Les micelles non ioniques, non chargées, attireraient les cristaux d'HA par force de polarisation.",
+   "quote": "the cationic surfactant (hexadecyltrimethylammonium bromide, CTAB) leads to a positive charge on the micelle surfaces in an aqueous solution. Given the electrostatic attraction between phosphate (PO43−) ions and micelles, these negatively charged PO43− ions combine with the surface of positively charged micelles to form a network structure."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "P_pH4",
+   "text": "Hypothèse de chimiste : la formation de l'HA suit probablement 6 CaHPO4 + 4 Ca(OH)2 → Ca10(PO4)6(OH)2 + 6 H2O, ce qui correspond bien au rapport Ca/P de 1,67 ; la proportion molaire attendue est donc d'environ 1,5 CaHPO4 pour 1 Ca(OH)2. À pH 4, le milieu acétique garde le phosphate sous forme HPO42− et la phase thermodynamiquement favorisée est la DCPA (monétite), ce qui expliquerait l'absence d'HA sans tensioactif ; les micelles de CTAB, F127 et CAPB serviraient probablement d'interface de nucléation qui oriente la cristallisation vers l'HA malgré le pH acide. Après calcination à 900 °C, la déshydroxylation et la perte de Ca de l'HA déficiente en calcium donnent probablement le β-TCP observé."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "La synthèse hydrothermale se fait en récipient fermé chauffé à 120 °C : on attend une pression interne et il faut refroidir avant d'ouvrir (l'article ne précise pas le type d'autoclave). L'acide acétique 2 M est irritant, le CTAB et le SDS sont irritants et toxiques pour le milieu aquatique, et les poudres fines d'HA ne doivent pas être inhalées. La calcination à 900 °C demande un four adapté et le refroidissement avant manipulation."
+  }
+ ],
+ "method_sources": [],
+ "comparisons": [],
+ "doubts": [
+  {
+   "where": "P_pH4 étape 3 et réactifs",
+   "issue": "« adjusted to 4 or 9 with 2 M acetic acid or sodium acetate aqueous solution » : l'article ne dit pas lequel des deux sert à pH 4 et lequel à pH 9 (on peut penser acide acétique pour pH 4 et acétate pour pH 9), ni les volumes ajoutés. Les deux réactifs sont listés sur la voie de base, sans variation de réactif sur les voies de pH 9 (seul le pH est enregistré comme variation)."
+  },
+  {
+   "where": "Voies tensioactif (CTAB, SDS, F127, CAPB)",
+   "issue": "Dans les Méthodes, le tensioactif est ajouté après l'agitation des poudres et avant l'ajustement du pH. Les voies à tensioactif héritent des étapes du témoin P et portent le tensioactif comme réactif ajouté, sans étape propre : l'ordre d'ajout n'est donc pas modélisé."
+  },
+  {
+   "where": "CTAB_pH4, tailles",
+   "issue": "Le texte donne pour le groupe CTAB à pH 4 une longueur de 5–10 μm et un diamètre de 2–3 μm, mais la figure 3b donne environ 4,6 μm de long pour 0,5 μm de diamètre (rapport ≈ 9,5). Les deux lectures sont extraites (texte en value_text, figure en valeur lue) ; la figure est plus cohérente avec le rapport d'aspect."
+  },
+  {
+   "where": "Cellules testées",
+   "issue": "Les Méthodes disent NIH-3T3 puis « The viability of L929 cells was measured » : NIH-3T3 retenue (méthode et légende de la figure 6 concordent), L929 signalée comme probable erreur de copie."
+  },
+  {
+   "where": "Tableau 1",
+   "issue": "Le rapport « c-axis (002) plane / (100) thickness » est donné par le tableau pour chaque échantillon avant (Original) et après calcination (Calcined) ; l'ordre des colonnes (pH 4 : phase d'origine, phase après calcination, rapport original, rapport calciné ; puis pH 9) a été suivi rangée par rangée. Le texte l'appelle « aspect ratio » mais il dérive de l'intensité des pics (propriété xrd_peak_intensity_ratio…), et il diffère du rapport longueur/diamètre mesuré au MEB (le texte l'attribue à la présence de DCPA ou de β-TCP). L'exposant « a » marque la phase minoritaire entre parenthèses."
+  },
+  {
+   "where": "Section 3.1, positions de pics",
+   "issue": "« When using a nucleating agent CTAB, F127, or CTAB as a nucleation template » : le deuxième CTAB est lu comme CAPB (la phrase suivante cite CTAB, F127 et CAPB). Les positions 31,7°, 32,2° et 32,9° ((2 1 1), (1 1 2), (300)) sont attribuées aux trois échantillons à HA de pH 4."
+  },
+  {
+   "where": "Figure 5b, plans réticulaires",
+   "issue": "Les distances 0,40 nm (200), 0,28 nm (2 1 1) et 0,27 nm (300) sont données pour « the F127 and CAPB groups » à pH 9 sans dire laquelle correspond à quel échantillon ni si la poudre est calcinée. Elles sont consignées sur F127_pH9 et CAPB_pH9, avec la mention « reported together »."
+  },
+  {
+   "where": "Figures lues (3b, 4b, 6, 7a, 7b)",
+   "issue": "Valeurs lues sur graphique, à 2 chiffres significatifs au plus et à ± 5 % de l'axe environ ; barres d'erreur non reprises. Les viabilités supérieures à 100 % (poudres calcinées, environ 105–109 %) sont arrondies à 110 ou 100 ; les écarts de la figure 6 à la figure 7 pour le témoin DMSO (≈ 28 %, ≈ 22 %, ≈ 13 %) ne sont pas repris."
+  },
+  {
+   "where": "FTIR, attribution",
+   "issue": "Les bandes à 3571 cm−1 (P et SDS à pH 4, nommés dans la phrase) et à ~875 cm−1 (« In Figure 2a », sans échantillon nommé ; rattachée à P et SDS car ce sont les deux poudres à DCPA de pH 4) sont les seules attribuées à des échantillons ; les autres bandes sont des bandes de groupe, consignées en annotation. Le texte renvoie aussi à « Figure 1b,d » pour des spectres FTIR qui sont la figure 2."
+  },
+  {
+   "where": "Mesure FTIR",
+   "issue": "La méthode est nommée FTIR-ATR mais la préparation décrite est une pastille de KBr (1:100, 12 mm) : la technique FTIR est retenue et la préparation en pastille consignée telle qu'écrite."
+  },
+  {
+   "where": "P_pH4 et SDS_pH4, succeeded",
+   "issue": "Marquées succeeded: false parce que l'objectif est l'HA et que les auteurs écrivent que P « could not produce HA » et que SDS donne une structure DCPA ; les auteurs testent pourtant ces poudres comme les autres."
+  },
+  {
+   "where": "Voies calcinées",
+   "issue": "Le texte dit « sintered » alors que la poudre est calcinée à l'air supposé ; l'atmosphère n'est pas donnée (déclarée non citée) et l'action calcine est retenue. Les voies calcinées portent leurs propres étapes et la variation « calcination » (absente des paramètres du parent, d'où l'avertissement de nom)."
+  },
+  {
+   "where": "Section 3.1, conditions de calcination",
+   "issue": "La phrase « powder prepared by surfactant-assisted and hydrothermal preparation at 900 °C for 4 h under different environments » mélange la synthèse et la calcination ; la valeur de 900 °C / 4 h est prise dans la section 2.2."
+  }
+ ]
+}

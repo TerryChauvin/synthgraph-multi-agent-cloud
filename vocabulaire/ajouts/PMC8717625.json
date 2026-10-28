@@ -1,0 +1,55 @@
+{
+ "pmcid": "PMC8717625",
+ "ajouts": [
+  {
+   "type": "reglage",
+   "nom": "excitation_repetition_rate",
+   "definition": "Fréquence de répétition des impulsions d'un laser pulsé d'excitation (par exemple 5 MHz), qui fixe l'intervalle entre impulsions disponible pour la détection résolue en temps.",
+   "ecarte": "excitation_wavelength: donne la couleur du laser et non sa cadence; laser_power: puissance et non fréquence d'impulsions; frequency: paramètre d'étape de synthèse",
+   "date": "2026-10-28 21:57"
+  },
+  {
+   "type": "reglage",
+   "nom": "time_gate",
+   "definition": "Fenêtre temporelle de sélection des détections par rapport à l'impulsion d'excitation ou au photon précédent (par exemple de 0,5 à 30 ns), utilisée pour isoler un état émetteur ou réduire le bruit.",
+   "ecarte": "wavelength_range: plage en longueur d'onde et non en temps; reaction_time: durée d'un essai chimique; contact_time: temps de contact d'un adsorbant",
+   "date": "2026-10-28 21:57"
+  },
+  {
+   "type": "technique",
+   "nom": "single_particle_spectroscopy",
+   "definition": "Spectroscopie de photoluminescence sur nanocristaux individuels isolés (microscope inversé, détecteurs de photons uniques, corrélation temporelle des photons) : énergie d'émission, énergie de liaison du biexciton, antibunching g2, durée de vie, largeur de raie par particule.",
+   "ecarte": "PL: spectroscopie d'ensemble en solution ou film, sans résolution de particule unique ni corrélation de photons; TEM: image sans spectre d'émission",
+   "date": "2026-10-28 21:57",
+   "reglages": [
+    "excitation_wavelength",
+    "excitation_repetition_rate",
+    "laser_power",
+    "detector",
+    "time_gate",
+    "measurement_temperature"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "biexciton_binding_energy",
+   "definition": "Énergie de liaison du biexciton d'un nanocristal (écart entre l'énergie d'émission du biexciton et celle de l'exciton simple, positif pour une interaction exciton-exciton attractive), pour une particule ou en moyenne sur une population ; préciser dans le nom la population ou le type de valeur (biexciton_binding_energy_mean).",
+   "ecarte": "PL_emission_peak: position d'un pic d'émission et non l'écart entre deux états; xps_binding_energy: énergie de liaison d'un niveau de cœur en XPS",
+   "date": "2026-10-28 21:57",
+   "techniques": [
+    "single_particle_spectroscopy"
+   ],
+   "unite": "meV"
+  },
+  {
+   "type": "propriete",
+   "nom": "photon_antibunching_g2",
+   "definition": "Corrélation d'ordre deux des temps d'arrivée des photons à délai nul, g2(0), d'une particule unique (antibunching si inférieur à 1), éventuellement filtrée par une fenêtre temporelle (ĝ2(0)) ; reflète le rendement quantique du biexciton rapporté à celui de l'exciton simple.",
+   "ecarte": "quantum_yield: rendement quantique mesuré en sphère d'intégration, pas par statistique de photons; PL_lifetime: durée de vie et non corrélation de photons",
+   "date": "2026-10-28 21:57",
+   "techniques": [
+    "single_particle_spectroscopy"
+   ]
+  }
+ ]
+}
