@@ -1,0 +1,1319 @@
+{
+ "pmcid": "PMC6812203",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "SBA-15",
+   "defined_in": "Materials and methods, Synthesis of SBA-15",
+   "route": "SBA-15",
+   "results_in": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "BET paragraph"
+   ]
+  },
+  {
+   "sample": "NH2-SBA-15",
+   "defined_in": "Materials and methods, Surface functionalization",
+   "route": "NH2-SBA-15",
+   "results_in": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "BET paragraph",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9"
+   ]
+  },
+  {
+   "sample": "chloramphenicol-loaded NH2-SBA-15",
+   "defined_in": "Materials and methods, Chloramphenicol loading and release",
+   "route": null,
+   "why": "pas une synthèse : chargement par adsorption, traité comme essai (adsorption_test) du matériau NH2-SBA-15"
+  }
+ ],
+ "routes": [
+  {
+   "label": "SBA-15",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "SBA-15 mesoporous silica",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": "hexagonal p6mm",
+    "morphology": "small rods"
+   },
+   "methods": [
+    "sol_gel",
+    "templating",
+    "thermal_treatment"
+   ],
+   "method": "P123-templated acid sol-gel synthesis of SBA-15 followed by calcination",
+   "quote": "SBA-15 was prepared by using a standard technique discovered by Zhao et al. (1998)",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "Pluronic P123",
+     "formula": null,
+     "role": "template",
+     "quote": "6 g from the surfactant template P123 was dissolved in 45 g of distilled water",
+     "amount": 6,
+     "unit": "g",
+     "supplier": "Sigma Aldrich",
+     "supplier_quote": "Pluronic “P123” tetraethylorthosilicate (TEOS, 98%), Hydrochloric acid (HCl), distilled water (H2O), toluene (C₆H₅-CH₃), 3-aminopropyltriethoxysilane (APTES), (H2N (CH2)3Si (OC2H5)3, 99%), potassium hydrogen phosphate (K2HPO4, 99%), potassium dihydrogen phosphate (KH2PO4, 99%), chloramphenicol (99%), that from Sigma Aldrich purchased.",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "distilled water (P123 solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "6 g from the surfactant template P123 was dissolved in 45 g of distilled water",
+     "amount": 45,
+     "unit": "g",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "hydrochloric acid, 2 M",
+     "formula": "HCl",
+     "role": "acid",
+     "quote": "Then 180 g from 2M HCl was added to the previous solution at 35 °C until the surfactant was dissolved completely.",
+     "amount": 180,
+     "unit": "g",
+     "supplier": "Sigma Aldrich",
+     "supplier_quote": "Pluronic “P123” tetraethylorthosilicate (TEOS, 98%), Hydrochloric acid (HCl), distilled water (H2O), toluene (C₆H₅-CH₃), 3-aminopropyltriethoxysilane (APTES), (H2N (CH2)3Si (OC2H5)3, 99%), potassium hydrogen phosphate (K2HPO4, 99%), potassium dihydrogen phosphate (KH2PO4, 99%), chloramphenicol (99%), that from Sigma Aldrich purchased.",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "tetraethylorthosilicate (TEOS)",
+     "formula": "Si(OC2H5)4",
+     "role": "precursor",
+     "quote": "Then 12.75 g of TEOS was gradually added to the surfactant solution and mixed for 20 h at 35 °C.",
+     "amount": 12.75,
+     "unit": "g",
+     "purity": "98%",
+     "supplier": "Sigma Aldrich",
+     "supplier_quote": "Pluronic “P123” tetraethylorthosilicate (TEOS, 98%), Hydrochloric acid (HCl), distilled water (H2O), toluene (C₆H₅-CH₃), 3-aminopropyltriethoxysilane (APTES), (H2N (CH2)3Si (OC2H5)3, 99%), potassium hydrogen phosphate (K2HPO4, 99%), potassium dihydrogen phosphate (KH2PO4, 99%), chloramphenicol (99%), that from Sigma Aldrich purchased."
+    },
+    {
+     "name": "distilled water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "Then the white precipitate, which was allowed to cool to room temperature, was filtered, washed with distilled water, and then dried at standard conditions of 25 °C for 12 h."
+    }
+   ],
+   "not_stated": [
+    "yield"
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve the P123 surfactant template in distilled water.",
+     "quote": "6 g from the surfactant template P123 was dissolved in 45 g of distilled water",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add 2 M HCl to the P123 solution at 35 °C until the surfactant is completely dissolved.",
+     "quote": "Then 180 g from 2M HCl was added to the previous solution at 35 °C until the surfactant was dissolved completely.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Then 180 g from 2M HCl was added to the previous solution at 35 °C until the surfactant was dissolved completely.",
+       "value_num": 35,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add TEOS gradually to the surfactant solution.",
+     "quote": "Then 12.75 g of TEOS was gradually added to the surfactant solution and mixed for 20 h at 35 °C.",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "Then 12.75 g of TEOS was gradually added to the surfactant solution and mixed for 20 h at 35 °C.",
+       "value_text": "gradually"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "mix",
+     "description": "Mix the TEOS and surfactant solution for 20 h at 35 °C.",
+     "quote": "Then 12.75 g of TEOS was gradually added to the surfactant solution and mixed for 20 h at 35 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "Then 12.75 g of TEOS was gradually added to the surfactant solution and mixed for 20 h at 35 °C.",
+       "value_num": 20,
+       "unit": "h"
+      },
+      {
+       "name": "temperature",
+       "quote": "Then 12.75 g of TEOS was gradually added to the surfactant solution and mixed for 20 h at 35 °C.",
+       "value_num": 35,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "age",
+     "description": "Age the precipitated solution in a sealed glass bottle under static conditions.",
+     "quote": "The precipitated solution was then aged in sealed glass bottle for 24 h at 100 °C under static conditions.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The precipitated solution was then aged in sealed glass bottle for 24 h at 100 °C under static conditions.",
+       "value_num": 100,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The precipitated solution was then aged in sealed glass bottle for 24 h at 100 °C under static conditions.",
+       "value_num": 24,
+       "unit": "h"
+      },
+      {
+       "name": "mode",
+       "quote": "The precipitated solution was then aged in sealed glass bottle for 24 h at 100 °C under static conditions.",
+       "value_text": "static conditions"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "sealed glass bottle",
+       "detail": null,
+       "quote": "aged in sealed glass bottle"
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "action": "cool",
+     "description": "Let the white precipitate cool to room temperature.",
+     "quote": "Then the white precipitate, which was allowed to cool to room temperature, was filtered, washed with distilled water, and then dried at standard conditions of 25 °C for 12 h.",
+     "parameters": [
+      {
+       "name": "cooling",
+       "quote": "which was allowed to cool to room temperature",
+       "value_text": "allowed to cool to room temperature"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "filter",
+     "description": "Filter the white precipitate.",
+     "quote": "Then the white precipitate, which was allowed to cool to room temperature, was filtered, washed with distilled water, and then dried at standard conditions of 25 °C for 12 h.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "wash",
+     "description": "Wash the precipitate with distilled water.",
+     "quote": "Then the white precipitate, which was allowed to cool to room temperature, was filtered, washed with distilled water, and then dried at standard conditions of 25 °C for 12 h.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "washed with distilled water",
+       "value_text": "distilled water"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "dry",
+     "description": "Dry the precipitate at 25 °C for 12 h.",
+     "quote": "Then the white precipitate, which was allowed to cool to room temperature, was filtered, washed with distilled water, and then dried at standard conditions of 25 °C for 12 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at standard conditions of 25 °C for 12 h",
+       "value_num": 25,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "dried at standard conditions of 25 °C for 12 h",
+       "value_num": 12,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "drying_mode"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "calcine",
+     "description": "Remove the surfactant by calcination to obtain white SBA-15 powder.",
+     "quote": "A white powder, SBA-15, was obtained when the surfactant was removed by calcinations for 6 h at 550 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "A white powder, SBA-15, was obtained when the surfactant was removed by calcinations for 6 h at 550 °C",
+       "value_num": 550,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "A white powder, SBA-15, was obtained when the surfactant was removed by calcinations for 6 h at 550 °C",
+       "value_num": 6,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_SBA",
+     "technique": "XRD",
+     "instrument": "X-Ray diffractometer (XRD-6000, Shimadzu, Japan)",
+     "result": "single (100) peak at 2θ 0.96° plus (110) and (200) peaks below 2°: hexagonal p6mm lattice",
+     "quote": "Both mesoporous materials exhibit a single high-intensity peak (100) at 2Ɵ value of 0.96°, followed by two additional smaller peaks, at (110) and (200), at 2Ɵ lower than 2°, which confirms the formation of a hexagonal lattice of p6mm symmetry",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "The Cu Kα λ = 1541Å was the source of X-ray radiation",
+       "value_text": "Cu Kα, λ = 1541Å"
+      },
+      {
+       "name": "scan_range",
+       "quote": "with 2Ɵ in the range 0o to 10o",
+       "value_text": "2Ɵ from 0o to 10o"
+      },
+      {
+       "name": "scan_step",
+       "quote": "scan rate 2 (deg./min.)",
+       "value_num": 2,
+       "unit": "deg./min."
+      }
+     ],
+     "not_stated": [
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "sem_SBA",
+     "technique": "SEM",
+     "instrument": "scanning electron microscope (SEM) (AIS2300C, South Korea)",
+     "result": "particles are small rods for both samples",
+     "quote": "According to SEM images, the particles were observed to be small rods for both samples",
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "bet_SBA",
+     "technique": "BET",
+     "instrument": "surface area analyzer (Qsurf 9600, USA)",
+     "result": "BET surface area 675 m2/g, pore volume 0.7908 cm³/g",
+     "quote": "The prepared SBA-15 had a BET surface area of 675 m2/g and pore volume of 0.7908 cm³/g",
+     "settings": [
+      {
+       "name": "adsorbate",
+       "quote": "The total pore volume and specific surface area for SBA-15 before and after functionalization were obtained by using nitrogen adsorption isotherms (Brunauer, Emmett, and Teller method) on a surface area analyzer (Qsurf 9600, USA)",
+       "value_text": "nitrogen"
+      },
+      {
+       "name": "analysis_model",
+       "quote": "(Brunauer, Emmett, and Teller method)",
+       "value_text": "Brunauer, Emmett, and Teller method"
+      }
+     ],
+     "not_stated": [
+      "measurement_temperature",
+      "degassing"
+     ]
+    },
+    {
+     "id": "ftir_SBA",
+     "technique": "FTIR",
+     "instrument": null,
+     "result": "silanol band 3740–3500 cm−1, Si–O–Si bands near 1100, 800 and 400 cm−1, Si-OH bending near 950 cm−1",
+     "quote": "The IR bands are related to silanol groups on the surface stretching vibrational mode, and they appear in the range 3740–3500 cm−1",
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tga_SBA",
+     "technique": "TGA",
+     "instrument": "thermos gravimetric analyzer TG-DSC (STA PT1000, USA)",
+     "result": "mass loss of 3% at 643 °C, complete removal of the surfactant by calcination",
+     "quote": "The thermal gravimetric curve showed at 643 °C that for pure SBA-15, the mass losses were 3%",
+     "settings": [
+      {
+       "name": "heating_rate",
+       "quote": "The samples were heated under ambient pressure from room temperature to 650 °C with a rate of 10 °C/min.",
+       "value_num": 10,
+       "unit": "°C/min"
+      },
+      {
+       "name": "temperature_range",
+       "quote": "The samples were heated under ambient pressure from room temperature to 650 °C with a rate of 10 °C/min.",
+       "value_text": "room temperature to 650 °C"
+      }
+     ],
+     "not_stated": [
+      "atmosphere"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "quote": "Both mesoporous materials exhibit a single high-intensity peak (100) at 2Ɵ value of 0.96°, followed by two additional smaller peaks, at (110) and (200), at 2Ɵ lower than 2°, which confirms the formation of a hexagonal lattice of p6mm symmetry",
+     "value_text": "hexagonal lattice of p6mm symmetry",
+     "measured_by": "xrd_SBA"
+    },
+    {
+     "property": "xrd_peak_position_100",
+     "quote": "Both mesoporous materials exhibit a single high-intensity peak (100) at 2Ɵ value of 0.96°",
+     "value_num": 0.96,
+     "unit": "°",
+     "measured_by": "xrd_SBA"
+    },
+    {
+     "property": "xrd_peak_position_110_200",
+     "quote": "followed by two additional smaller peaks, at (110) and (200), at 2Ɵ lower than 2°",
+     "value_text": "at 2Ɵ lower than 2°",
+     "measured_by": "xrd_SBA"
+    },
+    {
+     "property": "BET_surface_area",
+     "quote": "The prepared SBA-15 had a BET surface area of 675 m2/g",
+     "value_num": 675,
+     "unit": "m2/g",
+     "measured_by": "bet_SBA"
+    },
+    {
+     "property": "pore_volume_total",
+     "quote": "pore volume of 0.7908 cm³/g",
+     "value_num": 0.7908,
+     "unit": "cm³/g",
+     "measured_by": "bet_SBA"
+    },
+    {
+     "property": "morphology",
+     "quote": "According to SEM images, the particles were observed to be small rods for both samples",
+     "value_text": "small rods",
+     "measured_by": "sem_SBA"
+    },
+    {
+     "property": "ftir_band_silanol",
+     "quote": "The IR bands are related to silanol groups on the surface stretching vibrational mode, and they appear in the range 3740–3500 cm−1",
+     "value_text": "3740–3500 cm−1",
+     "measured_by": "ftir_SBA"
+    },
+    {
+     "property": "ftir_band_SiOSi_asym",
+     "quote": "The band is attributed to Si–O–Si asymmetric stretching vibration at around 1100 cm-1",
+     "value_num": 1100,
+     "unit": "cm-1",
+     "value_text": "around 1100 cm-1",
+     "measured_by": "ftir_SBA"
+    },
+    {
+     "property": "ftir_band_SiOSi_sym",
+     "quote": "while the peak at around 800 cm−1 exists because of symmetric stretching vibration",
+     "value_num": 800,
+     "unit": "cm−1",
+     "value_text": "around 800 cm−1",
+     "measured_by": "ftir_SBA"
+    },
+    {
+     "property": "ftir_band_SiOSi_distortion",
+     "quote": "the pure and functionalized samples own smaller peaks at around 400 cm−1, which may be attributed to the distortion modes of Si–O–Si",
+     "value_num": 400,
+     "unit": "cm−1",
+     "value_text": "around 400 cm−1",
+     "measured_by": "ftir_SBA"
+    },
+    {
+     "property": "ftir_band_SiOH_bending",
+     "quote": "Also, the band at around 950 cm−1 may be caused by the Si-OH bending",
+     "value_num": 950,
+     "unit": "cm−1",
+     "value_text": "around 950 cm−1",
+     "measured_by": "ftir_SBA"
+    },
+    {
+     "property": "mass_loss_residue_643C",
+     "quote": "The thermal gravimetric curve showed at 643 °C that for pure SBA-15, the mass losses were 3%",
+     "value_num": 3,
+     "unit": "%",
+     "measured_by": "tga_SBA"
+    },
+    {
+     "property": "decomposition_temperature",
+     "quote": "The calcined SBA-15 indicates complete removal of the surfactant during the calcinations process, and it proves the thermal stability of SBA-15",
+     "value_text": "no surfactant left after calcination; thermally stable",
+     "measured_by": "tga_SBA"
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "wash_repetitions",
+    "calcination_atmosphere",
+    "heating_rate",
+    "yield"
+   ]
+  },
+  {
+   "label": "NH2-SBA-15",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "post_treatment",
+   "material": {
+    "name": "amino-functionalized SBA-15 (APTES-grafted)",
+    "formula": null,
+    "family": "silice_mesoporeuse",
+    "phase": "hexagonal p6mm",
+    "morphology": "small rods"
+   },
+   "methods": [
+    "post_synthetic_modification"
+   ],
+   "method": "post-synthesis grafting of 3-aminopropyltriethoxysilane on calcined SBA-15 in refluxing toluene",
+   "quote": "Amino-functionalized SBA-15 was synthesized by the method explained by Burke et al. (2009)",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "calcined SBA-15 (route SBA-15)",
+     "formula": "SiO2",
+     "role": "intermediate",
+     "quote": "1 g of calcined SBA-15 was dried for 3 hr at 100 °C",
+     "amount": 1,
+     "unit": "g"
+    },
+    {
+     "name": "toluene (reaction solvent)",
+     "formula": "C6H5CH3",
+     "role": "solvent",
+     "quote": "Then it was stirred under reflux with 40 ml of toluene and 10 ml of 3-aminopropyltriethoxysilane (APTES) for approximately 6 h.",
+     "amount": 40,
+     "unit": "ml",
+     "supplier": "Sigma Aldrich",
+     "supplier_quote": "Pluronic “P123” tetraethylorthosilicate (TEOS, 98%), Hydrochloric acid (HCl), distilled water (H2O), toluene (C₆H₅-CH₃), 3-aminopropyltriethoxysilane (APTES), (H2N (CH2)3Si (OC2H5)3, 99%), potassium hydrogen phosphate (K2HPO4, 99%), potassium dihydrogen phosphate (KH2PO4, 99%), chloramphenicol (99%), that from Sigma Aldrich purchased.",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "3-aminopropyltriethoxysilane (APTES)",
+     "formula": "H2N(CH2)3Si(OC2H5)3",
+     "role": "precursor",
+     "quote": "Then it was stirred under reflux with 40 ml of toluene and 10 ml of 3-aminopropyltriethoxysilane (APTES) for approximately 6 h.",
+     "amount": 10,
+     "unit": "ml",
+     "purity": "99%",
+     "supplier": "Sigma Aldrich",
+     "supplier_quote": "Pluronic “P123” tetraethylorthosilicate (TEOS, 98%), Hydrochloric acid (HCl), distilled water (H2O), toluene (C₆H₅-CH₃), 3-aminopropyltriethoxysilane (APTES), (H2N (CH2)3Si (OC2H5)3, 99%), potassium hydrogen phosphate (K2HPO4, 99%), potassium dihydrogen phosphate (KH2PO4, 99%), chloramphenicol (99%), that from Sigma Aldrich purchased."
+    },
+    {
+     "name": "toluene (washing)",
+     "formula": "C6H5CH3",
+     "role": "wash",
+     "quote": "The suspension was then cooled, filtered, washed with toluene, and dried at 60 °C, resulting in the white powder amino-SBA-15."
+    }
+   ],
+   "not_stated": [
+    "yield"
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dry",
+     "description": "Dry the calcined SBA-15 before grafting.",
+     "quote": "1 g of calcined SBA-15 was dried for 3 hr at 100 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "1 g of calcined SBA-15 was dried for 3 hr at 100 °C",
+       "value_num": 100,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "1 g of calcined SBA-15 was dried for 3 hr at 100 °C",
+       "value_num": 3,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "drying_mode"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "reflux",
+     "description": "Stir the dried SBA-15 under reflux with toluene and APTES.",
+     "quote": "Then it was stirred under reflux with 40 ml of toluene and 10 ml of 3-aminopropyltriethoxysilane (APTES) for approximately 6 h.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "Then it was stirred under reflux with 40 ml of toluene and 10 ml of 3-aminopropyltriethoxysilane (APTES) for approximately 6 h.",
+       "value_num": 6,
+       "unit": "h",
+       "value_text": "approximately 6 h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "stirring_speed",
+      "atmosphere"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Cool the suspension.",
+     "quote": "The suspension was then cooled, filtered, washed with toluene, and dried at 60 °C, resulting in the white powder amino-SBA-15.",
+     "parameters": [
+      {
+       "name": "cooling",
+       "quote": "The suspension was then cooled",
+       "value_text": "cooled"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "filter",
+     "description": "Filter the suspension.",
+     "quote": "The suspension was then cooled, filtered, washed with toluene, and dried at 60 °C, resulting in the white powder amino-SBA-15.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash the solid with toluene.",
+     "quote": "The suspension was then cooled, filtered, washed with toluene, and dried at 60 °C, resulting in the white powder amino-SBA-15.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "washed with toluene",
+       "value_text": "toluene"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry the amino-functionalized solid at 60 °C.",
+     "quote": "The suspension was then cooled, filtered, washed with toluene, and dried at 60 °C, resulting in the white powder amino-SBA-15.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 60 °C",
+       "value_num": 60,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "drying_mode"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_NH2",
+     "technique": "XRD",
+     "instrument": "X-Ray diffractometer (XRD-6000, Shimadzu, Japan)",
+     "result": "same (100), (110), (200) pattern as SBA-15 with much lower peak intensities: hexagonal order preserved",
+     "quote": "Both mesoporous materials exhibit a single high-intensity peak (100) at 2Ɵ value of 0.96°, followed by two additional smaller peaks, at (110) and (200), at 2Ɵ lower than 2°, which confirms the formation of a hexagonal lattice of p6mm symmetry",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "The Cu Kα λ = 1541Å was the source of X-ray radiation",
+       "value_text": "Cu Kα, λ = 1541Å"
+      },
+      {
+       "name": "scan_range",
+       "quote": "with 2Ɵ in the range 0o to 10o",
+       "value_text": "2Ɵ from 0o to 10o"
+      },
+      {
+       "name": "scan_step",
+       "quote": "scan rate 2 (deg./min.)",
+       "value_num": 2,
+       "unit": "deg./min."
+      }
+     ],
+     "not_stated": [
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "sem_NH2",
+     "technique": "SEM",
+     "instrument": "scanning electron microscope (SEM) (AIS2300C, South Korea)",
+     "result": "particles are small rods for both samples",
+     "quote": "According to SEM images, the particles were observed to be small rods for both samples",
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "bet_NH2",
+     "technique": "BET",
+     "instrument": "surface area analyzer (Qsurf 9600, USA)",
+     "result": "BET surface area 169 m2/g, pore volume 0.028 cm³/g",
+     "quote": "for functionalized SBA-15, the BET surface area is 169 m2/g and pore volume of 0.028 cm³/g",
+     "settings": [
+      {
+       "name": "adsorbate",
+       "quote": "The total pore volume and specific surface area for SBA-15 before and after functionalization were obtained by using nitrogen adsorption isotherms (Brunauer, Emmett, and Teller method) on a surface area analyzer (Qsurf 9600, USA)",
+       "value_text": "nitrogen"
+      },
+      {
+       "name": "analysis_model",
+       "quote": "(Brunauer, Emmett, and Teller method)",
+       "value_text": "Brunauer, Emmett, and Teller method"
+      }
+     ],
+     "not_stated": [
+      "measurement_temperature",
+      "degassing"
+     ]
+    },
+    {
+     "id": "ftir_NH2",
+     "technique": "FTIR",
+     "instrument": null,
+     "result": "silanol band 3740–3500 cm−1, NH bands not resolved, asymmetric NH2 bending near 1600 cm−1 (two peaks), Si–O–Si bands",
+     "quote": "the band at around 1600 cm−1, which consists of two different peaks, may be attributed to asymmetric NH2 bending, which means that an amine-group is existent, as predicted",
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tga_NH2",
+     "technique": "TGA",
+     "instrument": "thermos gravimetric analyzer TG-DSC (STA PT1000, USA)",
+     "result": "weight loss of 200–300 °C from decomposition of the organic moiety; total weight loss 18% at 642 °C",
+     "quote": "the total weight losses was 18% at 642 °C",
+     "settings": [
+      {
+       "name": "heating_rate",
+       "quote": "The samples were heated under ambient pressure from room temperature to 650 °C with a rate of 10 °C/min.",
+       "value_num": 10,
+       "unit": "°C/min"
+      },
+      {
+       "name": "temperature_range",
+       "quote": "The samples were heated under ambient pressure from room temperature to 650 °C with a rate of 10 °C/min.",
+       "value_text": "room temperature to 650 °C"
+      }
+     ],
+     "not_stated": [
+      "atmosphere"
+     ]
+    },
+    {
+     "id": "ads_time",
+     "technique": "adsorption_test",
+     "instrument": "UV analyzer",
+     "result": "chloramphenicol loading versus contact time (4 to 72 h): fast uptake in the first 4 h, plateau after 24 h, about 2% more between 24 and 72 h",
+     "quote": "However, the curve of drug loading capacity became almost horizontal after 24 h, which indicates that the surfaces of mesoporous particles were filled, (saturated) or, in other words, had reached the equilibrium adsorption.",
+     "settings": [
+      {
+       "name": "adsorbent_dose",
+       "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature",
+       "value_num": 60,
+       "unit": "mg"
+      },
+      {
+       "name": "initial_concentration",
+       "quote": "Using 20 mg/l of chloramphenicol, a solution of chloramphenicol was manufactured",
+       "value_num": 20,
+       "unit": "mg/l"
+      },
+      {
+       "name": "solution_volume",
+       "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature",
+       "value_num": 50,
+       "unit": "mL"
+      },
+      {
+       "name": "contact_time",
+       "quote": "The change in concentration was measured at different time intervals: (4, 8, 12, 24, and 48), and 72 h",
+       "value_text": "(4, 8, 12, 24, and 48), and 72 h"
+      },
+      {
+       "name": "temperature",
+       "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "agitation",
+       "quote": "Then 50 mL of drug solution was mixed with 60 mg of NH2-SBA-15 and stirred for 72 h at room temperature",
+       "value_text": "stirred"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "To calculate the amount of chloramphenicol loaded, the absorbance values that obtained at 304 nm were used",
+       "value_text": "UV analyzer, absorbance at 304 nm"
+      }
+     ],
+     "not_stated": [
+      "solution_ph"
+     ]
+    },
+    {
+     "id": "ads_conc",
+     "technique": "adsorption_test",
+     "instrument": "UV analyzer",
+     "result": "chloramphenicol loading versus initial concentration (10-120 mg/l): maximum load capacity 51% at 20 mg/l, then decreasing",
+     "quote": "The best concentration and maximum load capacity of chloramphenicol was 20 mg/l and 51% respectively",
+     "settings": [
+      {
+       "name": "adsorbent_dose",
+       "quote": "And then solution was mixed with 60 mg of SBA-15 at room temperature, stirred for 24 h contact time",
+       "value_num": 60,
+       "unit": "mg"
+      },
+      {
+       "name": "initial_concentration",
+       "quote": "At different concentration ranges from 10-120 mg/l, the change in concentration was measured",
+       "value_text": "10-120 mg/l"
+      },
+      {
+       "name": "contact_time",
+       "quote": "And then solution was mixed with 60 mg of SBA-15 at room temperature, stirred for 24 h contact time",
+       "value_num": 24,
+       "unit": "h"
+      },
+      {
+       "name": "temperature",
+       "quote": "And then solution was mixed with 60 mg of SBA-15 at room temperature, stirred for 24 h contact time",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "agitation",
+       "quote": "And then solution was mixed with 60 mg of SBA-15 at room temperature, stirred for 24 h contact time",
+       "value_text": "stirred"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "To calculate the amount of chloramphenicol loaded, the absorbance values that obtained at 304 nm were used",
+       "value_text": "UV analyzer, absorbance at 304 nm"
+      }
+     ],
+     "not_stated": [
+      "solution_volume",
+      "solution_ph"
+     ]
+    },
+    {
+     "id": "ads_dose",
+     "technique": "adsorption_test",
+     "instrument": "UV analyzer",
+     "result": "chloramphenicol loading versus NH2-SBA-15 dose (10-120 mg): load capacity rises then plateaus; best dose 40 mg",
+     "quote": "The best dosage value can be taken at the initiation of this change: 40 mg.",
+     "settings": [
+      {
+       "name": "adsorbent_dose",
+       "quote": "These variables were the dosage of NH2-SBA-15 (10–120) mg",
+       "value_text": "(10–120) mg"
+      },
+      {
+       "name": "initial_concentration",
+       "quote": "Then SBA-15 was mixed with 20 mg/l of chloramphenicol concentration for 24 hr",
+       "value_num": 20,
+       "unit": "mg/l"
+      },
+      {
+       "name": "contact_time",
+       "quote": "Then SBA-15 was mixed with 20 mg/l of chloramphenicol concentration for 24 hr",
+       "value_num": 24,
+       "unit": "h"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "To calculate the amount of chloramphenicol loaded, the absorbance values that obtained at 304 nm were used",
+       "value_text": "UV analyzer, absorbance at 304 nm"
+      }
+     ],
+     "not_stated": [
+      "solution_volume",
+      "solution_ph",
+      "temperature",
+      "agitation"
+     ]
+    },
+    {
+     "id": "release_1",
+     "technique": "adsorption_test",
+     "instrument": "UV analysis",
+     "result": "release of chloramphenicol from loaded NH2-SBA-15 in phosphate buffer pH 7.4: maximum 41% within 30 min, equilibrium at 1 h",
+     "quote": "The maximum release is within 30 minutes and at 41%, which can continue for the next 6 h.",
+     "settings": [
+      {
+       "name": "adsorbent_dose",
+       "quote": "500 mL of PBS solution at body temperature was mixed with 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol",
+       "value_num": 200,
+       "unit": "mg"
+      },
+      {
+       "name": "initial_concentration",
+       "quote": "500 mL of PBS solution at body temperature was mixed with 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol",
+       "value_num": 124.08,
+       "unit": "mg/l"
+      },
+      {
+       "name": "solution_volume",
+       "quote": "500 mL of PBS solution at body temperature was mixed with 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol",
+       "value_num": 500,
+       "unit": "mL"
+      },
+      {
+       "name": "contact_time",
+       "quote": "The amount of the drug released from the NH2-SBA-15 molecules was determined by Eq. (2) within 6 h",
+       "value_num": 6,
+       "unit": "h"
+      },
+      {
+       "name": "solution_ph",
+       "quote": "The pH was set to 7.4 for the prepared solution in order to obtain the PH desired",
+       "value_num": 7.4
+      },
+      {
+       "name": "temperature",
+       "quote": "500 mL of PBS solution at body temperature was mixed with 200 mg of NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol",
+       "value_text": "body temperature"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "Using UV analysis the release of chloramphenicol was determined",
+       "value_text": "UV analysis"
+      }
+     ],
+     "not_stated": [
+      "agitation"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "quote": "Both mesoporous materials exhibit a single high-intensity peak (100) at 2Ɵ value of 0.96°, followed by two additional smaller peaks, at (110) and (200), at 2Ɵ lower than 2°, which confirms the formation of a hexagonal lattice of p6mm symmetry",
+     "value_text": "hexagonal lattice of p6mm symmetry",
+     "measured_by": "xrd_NH2"
+    },
+    {
+     "property": "xrd_peak_position_100",
+     "quote": "Both mesoporous materials exhibit a single high-intensity peak (100) at 2Ɵ value of 0.96°",
+     "value_num": 0.96,
+     "unit": "°",
+     "measured_by": "xrd_NH2"
+    },
+    {
+     "property": "xrd_peak_position_110_200",
+     "quote": "followed by two additional smaller peaks, at (110) and (200), at 2Ɵ lower than 2°",
+     "value_text": "at 2Ɵ lower than 2°",
+     "measured_by": "xrd_NH2"
+    },
+    {
+     "property": "xrd_peak_intensity",
+     "quote": "The XRD peak intensities of NH2–SBA-15 were basically minimal compared to SBA-15",
+     "value_text": "basically minimal compared to SBA-15",
+     "measured_by": "xrd_NH2"
+    },
+    {
+     "property": "BET_surface_area",
+     "quote": "for functionalized SBA-15, the BET surface area is 169 m2/g",
+     "value_num": 169,
+     "unit": "m2/g",
+     "measured_by": "bet_NH2"
+    },
+    {
+     "property": "pore_volume_total",
+     "quote": "pore volume of 0.028 cm³/g",
+     "value_num": 0.028,
+     "unit": "cm³/g",
+     "measured_by": "bet_NH2"
+    },
+    {
+     "property": "morphology",
+     "quote": "According to SEM images, the particles were observed to be small rods for both samples",
+     "value_text": "small rods",
+     "measured_by": "sem_NH2"
+    },
+    {
+     "property": "ftir_band_silanol",
+     "quote": "The IR bands are related to silanol groups on the surface stretching vibrational mode, and they appear in the range 3740–3500 cm−1",
+     "value_text": "3740–3500 cm−1",
+     "measured_by": "ftir_NH2"
+    },
+    {
+     "property": "ftir_band_NH",
+     "quote": "the NH bands are ordinarily existent at 3380–3310 cm−1, and because analysis isn't able to recognize those bands",
+     "value_text": "NH bands (3380–3310 cm−1) not recognized",
+     "measured_by": "ftir_NH2"
+    },
+    {
+     "property": "ftir_band_NH2_bending",
+     "quote": "the band at around 1600 cm−1, which consists of two different peaks, may be attributed to asymmetric NH2 bending",
+     "value_num": 1600,
+     "unit": "cm−1",
+     "value_text": "around 1600 cm−1, two different peaks",
+     "measured_by": "ftir_NH2"
+    },
+    {
+     "property": "ftir_band_SiOSi_asym",
+     "quote": "The band is attributed to Si–O–Si asymmetric stretching vibration at around 1100 cm-1",
+     "value_num": 1100,
+     "unit": "cm-1",
+     "value_text": "around 1100 cm-1",
+     "measured_by": "ftir_NH2"
+    },
+    {
+     "property": "ftir_band_SiOSi_sym",
+     "quote": "while the peak at around 800 cm−1 exists because of symmetric stretching vibration",
+     "value_num": 800,
+     "unit": "cm−1",
+     "value_text": "around 800 cm−1",
+     "measured_by": "ftir_NH2"
+    },
+    {
+     "property": "ftir_band_SiOSi_distortion",
+     "quote": "the pure and functionalized samples own smaller peaks at around 400 cm−1, which may be attributed to the distortion modes of Si–O–Si",
+     "value_num": 400,
+     "unit": "cm−1",
+     "value_text": "around 400 cm−1",
+     "measured_by": "ftir_NH2"
+    },
+    {
+     "property": "ftir_band_SiOH_bending",
+     "quote": "Also, the band at around 950 cm−1 may be caused by the Si-OH bending",
+     "value_num": 950,
+     "unit": "cm−1",
+     "value_text": "around 950 cm−1",
+     "measured_by": "ftir_NH2"
+    },
+    {
+     "property": "mass_loss_residue_642C",
+     "quote": "the total weight losses was 18% at 642 °C",
+     "value_num": 18,
+     "unit": "%",
+     "measured_by": "tga_NH2"
+    },
+    {
+     "property": "decomposition_temperature_organic_moiety",
+     "quote": "there is a weight loss in the temperature range of 200–300 °C was due to the decomposition of organic moiety",
+     "value_text": "200–300 °C",
+     "measured_by": "tga_NH2"
+    },
+    {
+     "property": "adsorption_capacity_max_loading",
+     "quote": "The best concentration and maximum load capacity of chloramphenicol was 20 mg/l and 51% respectively",
+     "value_num": 51,
+     "unit": "%",
+     "measured_by": "ads_conc"
+    },
+    {
+     "property": "adsorption_capacity_72h_vs_24h",
+     "quote": "It is clear that 2% more than that done in the first 24 h, as shown in Fig. 5",
+     "value_num": 2,
+     "unit": "%",
+     "value_text": "2% more than that done in the first 24 h",
+     "measured_by": "ads_time"
+    },
+    {
+     "property": "drug_release_max",
+     "quote": "The maximum release is within 30 minutes and at 41%, which can continue for the next 6 h.",
+     "value_num": 41,
+     "unit": "%",
+     "measured_by": "release_1"
+    },
+    {
+     "property": "drug_release_time_max",
+     "quote": "The maximum release is within 30 minutes and at 41%, which can continue for the next 6 h.",
+     "value_num": 30,
+     "unit": "min",
+     "measured_by": "release_1"
+    },
+    {
+     "property": "drug_release_equilibrium_time",
+     "quote": "the release (desorption) increased over time until reaching equilibrium at 1 h",
+     "value_num": 1,
+     "unit": "h",
+     "measured_by": "release_1"
+    },
+    {
+     "property": "drug_release_optimum",
+     "quote": "the results for release experiments were an optimum time of half an hour and with the value of 41.35%",
+     "value_num": 41.35,
+     "unit": "%",
+     "measured_by": "release_1"
+    },
+    {
+     "property": "kinetics_fit_weibull_m",
+     "quote": "The Weibull shape parameter is m, which shows the effect of non-released drug mass on the release rate, which is (0.0025), and (ln to) be the intercept, which is 1.3875.",
+     "value_num": 0.0025,
+     "measured_by": "release_1"
+    },
+    {
+     "property": "kinetics_fit_weibull_ln_t0",
+     "quote": "The Weibull shape parameter is m, which shows the effect of non-released drug mass on the release rate, which is (0.0025), and (ln to) be the intercept, which is 1.3875.",
+     "value_num": 1.3875,
+     "measured_by": "release_1"
+    },
+    {
+     "property": "statistic_r2_weibull",
+     "quote": "A good fit of data to the modulus was achieved with a determination coefficient R2 of 0.9981.",
+     "value_num": 0.9981,
+     "measured_by": "release_1"
+    },
+    {
+     "property": "kinetics_fit_korsmeyer_peppas",
+     "quote": "When applied this equation, the value of (Mt/M∞) was more than (0.6), which doesn't comply with the boundary conditions",
+     "value_text": "the value of (Mt/M∞) was more than (0.6), which doesn't comply with the boundary conditions",
+     "measured_by": "release_1"
+    },
+    {
+     "property": "kinetics_fit_non_fickian",
+     "quote": "When this equation was applied, the value of (n) was less than one, which doesn't comply with the boundary conditions",
+     "value_text": "the value of (n) was less than one, which doesn't comply with the boundary conditions",
+     "measured_by": "release_1"
+    }
+   ],
+   "missing_fields": [
+    "reflux_temperature",
+    "stirring_speed",
+    "reaction_atmosphere",
+    "wash_repetitions",
+    "drying_duration",
+    "yield"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare la silice mésoporeuse SBA-15 (gabarit Pluronic P123, TEOS, HCl 2 M, vieillissement à 100 °C puis calcination à 550 °C), puis la greffe par de l'APTES dans le toluène à reflux pour obtenir NH2-SBA-15. Les deux solides sont caractérisés par XRD, MEB, BET, FTIR et ATG, puis NH2-SBA-15 est utilisé comme support du chloramphénicol : charge en fonction du temps, de la concentration et de la dose, puis libération en tampon phosphate à pH 7,4.",
+   "quote": "In this work, the potential of the modified SBA-15 surface was examined as a sorbent to load the drug from an aqueous solution; this was done using a post-synthesis function procedure."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si le greffage de groupes amine sur SBA-15 améliore le chargement et la libération contrôlée du chloramphénicol, antibiotique pour lequel ils ne trouvent pas d'étude sur SBA-15 aminé.",
+   "quote": "The aim from this study is to investigate the influence surface functionalization on the adsorption and release of chloramphenicol."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "La synthèse est décrite à une seule condition. Ce sont les essais de chargement qui balayent trois variables (dose de NH2-SBA-15 de 10 à 120 mg, durée de contact de 0 à 72 h, concentration initiale de 10 à 120 mg/L) pour trouver les conditions optimales de chargement, avant de mesurer la libération avec le matériau chargé. Ces essais sont rangés en résultats de NH2-SBA-15 et non en branches, car ils testent le matériau fini.",
+   "quote": "These variables were the dosage of NH2-SBA-15 (10–120) mg, contact time (0–72 h) and initial concentration (10–120 mg/L)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "NH2-SBA-15",
+   "text": "Le chargement augmente avec la dose et avec le temps de contact (plateau après 24 h), et diminue quand la concentration initiale augmente au-delà de 20 mg/L. Les valeurs de ces séries ne sont lisibles que sur les figures 5 à 7, absentes du dépôt.",
+   "quote": "Also, the loading capacity is inversely proportional to the initial concentration, but directly proportional to the NH2-SBA-15 dose and contact time."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Le greffage de l'APTES ne change pas la symétrie hexagonale (mêmes pics (100), (110), (200)), mais réduit fortement les intensités XRD, la surface BET (675 à 169 m2/g) et le volume poreux (0,7908 à 0,028 cm³/g) : les auteurs en concluent que les groupes amine sont aussi à l'intérieur des canaux.",
+   "quote": "The results show that there is a decrease in pore volume and surface area after functionalization."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "NH2-SBA-15",
+   "text": "Conditions jugées optimales par les auteurs : concentration initiale 20 mg/L (chargement maximal 51 %), durée de contact 24 h, dose de NH2-SBA-15 40 mg ; libération maximale de 41 % en 30 min (41,35 % en conclusion).",
+   "quote": "Then, The best concentration and maximum load capacity of chloramphenicol was 20 mg/l and 51% respectively"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "NH2-SBA-15",
+   "text": "Pour la libération, les auteurs invoquent la différence de concentration entre le solide chargé et le tampon phosphate comme force motrice, jusqu'à l'équilibre vers 1 h. Pour le chargement, ils attribuent l'effet des groupes amine à leur présence à la surface, sans mécanisme chimique détaillé.",
+   "quote": "This could have been because of the driving force effect (concentration variance)"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "SBA-15",
+   "text": "Hypothèse de chimiste : en milieu acide (HCl 2 M), le TEOS s'hydrolyse en silanols qui se condensent autour des micelles de P123 (interactions entre les chaînes d'oxyde d'éthylène et les espèces silicatées) ; le vieillissement à 100 °C en flacon fermé achève la condensation et élargit les pores, et la calcination à 550 °C brûle le gabarit pour libérer la porosité. Les quantités (6 g de P123, 45 g d'eau, 180 g de HCl 2 M, 12,75 g de TEOS) correspondent à 1,5 fois une recette classique de Zhao : environ 61 mmol de TEOS et 1,0 mmol de P123."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "NH2-SBA-15",
+   "text": "Hypothèse de chimiste : les groupes éthoxy de l'APTES s'hydrolysent avec l'eau résiduelle de la silice puis se condensent avec les silanols de surface (Si–OH) pour former des liaisons Si–O–Si, laissant des chaînes aminopropyle en surface. Le séchage préalable à 100 °C retire l'eau physisorbée. Le chargement du chloramphénicol se ferait probablement par liaisons hydrogène entre les amines (et les silanols restants) et les groupes hydroxyle, amide et nitro de la molécule. La très forte baisse du volume poreux (0,7908 à 0,028 cm³/g) pour 10 mL d'APTES par gramme de silice indique probablement un blocage partiel des pores."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "SBA-15",
+   "text": "Le TEOS est inflammable et irritant ; HCl 2 M est corrosif ; la calcination à 550 °C demande un four ventilé car le P123 brûle en dégageant des fumées. La silice mésoporeuse en poudre fine ne doit pas être inhalée. L'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "NH2-SBA-15",
+   "text": "Le toluène est inflammable, toxique par inhalation et reprotoxique (reflux sous hotte). L'APTES est corrosif et sensible à l'humidité. Le chloramphénicol est un antibiotique à toxicité hématologique : il se manipule avec gants et masque, en évitant la poussière. L'article ne mentionne aucune précaution."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Figures absentes du dépôt : le dossier corpus/fig/PMC6812203 n'existe pas (l'article ne cite aucune annexe). Les figures 1 à 9 (diffractogrammes, spectres, courbes de chargement et de libération) n'ont pas pu être lues : les valeurs des séries de chargement (temps, concentration, dose) et de la courbe de libération ne sont donc pas extraites, hors celles écrites dans le texte. Les équations (1) à (5) ne figurent pas dans le texte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "SBA-15",
+   "text": "Non cités : vitesse d'agitation, nombre de lavages, atmosphère, vitesse de montée en température et refroidissement de la calcination, mode de séchage, rendement. Le fournisseur (Sigma Aldrich) est donné par une phrase générale pour tous les produits listés ; la pureté n'est donnée que pour le TEOS (98 %)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NH2-SBA-15",
+   "text": "Non cités : température du reflux (celle du toluène n'est pas écrite), vitesse d'agitation, atmosphère (importante pour l'APTES), nombre de lavages au toluène, durée du séchage à 60 °C, rendement, quantité de groupes greffés (seule la perte de masse de 18 % à 642 °C est donnée). Les phrases de chargement par concentration et par dose parlent de 'SBA-15' alors que le résumé et les légendes visent NH2-SBA-15. La quantité chargée (124,08 mg/L) de la libération n'est pas reliée aux essais de chargement : 51 % de 20 mg/L dans 50 mL sur 60 mg de solide donne environ 8,5 mg de médicament par gramme, soit au plus 3,4 mg/L dans 500 mL de tampon pour 200 mg de solide, très loin de 124,08 mg/L. Les pertes de masse de SBA-15 (3 %) et de NH2-SBA-15 (18 %) sont relevées à 643 et 642 °C. La longueur d'onde du rayonnement est écrite 1541 Å (probablement 1,541 Å)."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Il n'y a pas de branche : SBA-15 et NH2-SBA-15 sont deux voies de base, la seconde partant de la première calcinée. Comparaison des deux solides : surface BET 675 contre 169 m2/g, volume poreux 0,7908 contre 0,028 cm³/g, perte de masse 3 % contre 18 %, mêmes pics XRD mais intensités très réduites, morphologie en petits bâtonnets pour les deux."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "SBA-15",
+   "ref_id": "bib28",
+   "role": "protocole_complet",
+   "quote": "SBA-15 was prepared by using a standard technique discovered by Zhao et al. (1998)"
+  },
+  {
+   "route": "SBA-15",
+   "ref_id": "bib29",
+   "role": "autre",
+   "quote": "A white powder, SBA-15, was obtained when the surfactant was removed by calcinations for 6 h at 550 °C"
+  },
+  {
+   "route": "NH2-SBA-15",
+   "ref_id": "bib30",
+   "role": "protocole_complet",
+   "quote": "Amino-functionalized SBA-15 was synthesized by the method explained by Burke et al. (2009)"
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "mesoporous silicates (MCM-41, MCM-48, SBA-15), typical",
+   "property": "BET_surface_area",
+   "value_num": 1000,
+   "unit": "m2/g",
+   "conditions": "typically",
+   "ref_id": "bib17",
+   "quote": "high surface area (typically 1000 m2/g)"
+  },
+  {
+   "material": "mesoporous silicates (MCM-41, MCM-48, SBA-15), typical",
+   "property": "pore_volume_total",
+   "value_text": "0.5–1.5 cm3/g",
+   "unit": "cm3/g",
+   "ref_id": "bib17",
+   "quote": "high porosity (pore volumes 0.5–1.5 cm3/g)"
+  },
+  {
+   "material": "mesoporous silicates (MCM-41, MCM-48, SBA-15), typical",
+   "property": "pore_diameter",
+   "value_text": "2–15 nm",
+   "unit": "nm",
+   "conditions": "typically",
+   "ref_id": "bib17",
+   "quote": "tunable pores (typically 2–15 nm pore diameter)"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "NH2-SBA-15, essais de chargement (concentration, dose)",
+   "issue": "Les phrases des Méthodes disent 'mixed with 60 mg of SBA-15' et 'SBA-15 was mixed with 20 mg/l' alors que le résumé, les légendes des figures 5 à 7 et les Résultats visent NH2-SBA-15. Lecture retenue : le solide est NH2-SBA-15 ; l'autre lecture (SBA-15 non greffé) est possible pour ces deux phrases."
+  },
+  {
+   "where": "NH2-SBA-15, libération",
+   "issue": "Le résumé donne 41 % 'at 1 hour', les Résultats 41 % 'within 30 minutes' avec équilibre à 1 h, la conclusion 41,35 % avec 'an optimum time of half an hour'. Les trois valeurs sont extraites séparément, sans trancher."
+  },
+  {
+   "where": "NH2-SBA-15, libération",
+   "issue": "'NH2-SBA-15 loaded with 124.08 mg/l of chloramphenicol' est incohérent en unité (une concentration pour un solide) et en ordre de grandeur avec les essais de chargement à 20 mg/L. Valeur recopiée comme réglage 'initial_concentration' de la libération, sans interprétation."
+  },
+  {
+   "where": "SBA-15 et NH2-SBA-15, caractérisation FTIR",
+   "issue": "La bande vers 1600 cm−1 (NH2) est attribuée à NH2-SBA-15 car le texte l'utilise pour prouver la présence d'amine ; les autres bandes (silanol, Si–O–Si, Si–OH) sont données pour les échantillons purs et fonctionnalisés et sont attribuées aux deux voies. Le texte ne dit pas quelle bande vient de quel spectre."
+  },
+  {
+   "where": "Réactifs, fournisseur",
+   "issue": "Une seule phrase attribue à Sigma Aldrich tous les produits listés, dont l'eau distillée et les sels de phosphate ; pour l'eau distillée, le fournisseur est déclaré non cité."
+  },
+  {
+   "where": "XRD",
+   "issue": "Le rayonnement est écrit 'λ = 1541Å' ; recopié tel quel (probablement 1,541 Å)."
+  },
+  {
+   "where": "Résultats BET et ATG",
+   "issue": "'functionalized SBA-15' désigne NH2-SBA-15. Les pertes de masse sont données à 643 °C (SBA-15) et 642 °C (NH2-SBA-15), températures conservées dans le nom de la propriété."
+  },
+  {
+   "where": "Figures 1 à 9",
+   "issue": "Dossier corpus/fig/PMC6812203 absent : aucune lecture graphique n'a été possible (courbes de chargement, de libération, diffractogrammes, spectres, ATG)."
+  }
+ ]
+}
