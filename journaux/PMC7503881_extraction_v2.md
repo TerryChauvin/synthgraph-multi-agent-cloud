@@ -1,0 +1,12 @@
+# Journal de décisions — extraction v2 de PMC7503881
+
+- Découpage : 4 voies. `Ti6Al4V_alkali` (kind intermediate, méthode post_synthetic_modification) pour le substrat traité à NaOH 5 M, car il a ses propres étapes et résultats (Fig. 1, Ra = 8 µm, angle 16,62°) et est réutilisé par les revêtements ; `CS/10 wt.% HA` voie de base (sol-gel + dip-coating), `CS/50` et `CS/60 wt.% HA` en branches (« the amount of Ca, P and CS solutions were modified »).
+- Teneur en HA : aucune quantité de réactif n'est donnée. La variation distinctive est le paramètre `mass_ratio_ha_in_composite` (10, 50, 60 wt.%), rangé à l'étape d'ajout du phosphate ; trois variations supplémentaires marquent que les quantités de chitosane, Ca et P changent (valeur non citée).
+- Lavage « composites washed several times in dH2O » (Fig. 3a, sodium nitrate) : non rangé en étape, car le texte ne dit ni à quelle étape ni si cela concerne le sol ou les poudres de DRX ; doute + limite_reproductibilite. Poudres CS/HA et CTR : dans l'inventaire sans voie, avec raison.
+- Étape finale « treated at 37 °C for 48 h » : action `heat` (le schéma 1 dit aging, image non citable). « repeated two times » : value_text, ambigu (2 ou 3 couches).
+- Action `polish` ajoutée (aucun polissage de surface dans la liste ; `grind` écarté). Techniques ajoutées : `profilometry`, `SBF_immersion` ; propriétés `medium_ph`, `apatite_formation`. Avertissements restants : roughness mesurée par profilométrie (la liste n'attend que l'AFM) et pore_diameter/biological mesurés par SEM.
+- Valeurs lues sur figure : pH du SBF (Fig. 5b, jours 4 et 21), Ca et P (Fig. 5c), Alamar blue (Fig. 6, jours 1, 3, 7), pics DRX (Fig. 5d), attribution des bandes amide II aux échantillons (Fig. 3b) ; 2 chiffres significatifs (7,85 arrondi à 7,9 ; 144 → 140). Témoin CTR lu mais mis en annotation faute de voie.
+- Valeurs de groupe du texte (épaisseur 15–50 µm, bandes FTIR générales) copiées sur les trois voies CS/HA, signalé dans les doutes.
+- Comparaisons : seulement trois valeurs de littérature (Ra 1–20 µm, chitosane pur 1655/1599 cm−1, Ca/P 1,67 de l'apatite osseuse) ; ISO 13779-4 et protocole SBF de Kokubo en method_sources (B40, B41), équations de Scherrer et de cristallinité exclues.
+- Exposant « 1 × 104 cells/mL » aplati dans le texte : recopié tel quel, doute.
+- Annexes S1/S2 : seuls les titres existent dans le texte ; les rapports Ca/P viennent du corps de l'article.
