@@ -1,0 +1,3183 @@
+{
+ "pmcid": "PMC5238663",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "graphite powder",
+   "defined_in": "Materials; Synthesis of graphene oxide",
+   "route": null,
+   "why": "réactif commercial (Alfa Aesar) ; ses pics XRD sont rangés sur la voie GO",
+   "results_in": [
+    "Fig. 1a"
+   ]
+  },
+  {
+   "sample": "GO",
+   "defined_in": "Synthesis of graphene oxide",
+   "route": "GO",
+   "results_in": [
+    "Fig. 1b",
+    "Fig. 2",
+    "Fig. 4a",
+    "Fig. 6a",
+    "Fig. 7a",
+    "Fig. 8"
+   ]
+  },
+  {
+   "sample": "ZnO NR",
+   "defined_in": "Synthesis of ZnO nanorods",
+   "route": "ZnO-NR",
+   "results_in": [
+    "Fig. 1c",
+    "Fig. 2",
+    "Fig. 3a",
+    "Fig. 4c,d",
+    "Fig. 7b",
+    "Fig. 8"
+   ]
+  },
+  {
+   "sample": "CdS NP",
+   "defined_in": "Synthesis of CdS nanoparticles",
+   "route": "CdS-NP",
+   "results_in": [
+    "Fig. 1d",
+    "Fig. 2",
+    "Fig. 3b",
+    "Fig. 4b",
+    "Fig. 6b",
+    "Fig. 7c",
+    "Fig. 8"
+   ]
+  },
+  {
+   "sample": "CdS–ZnO",
+   "defined_in": "Synthesis of CdS–ZnO binary nanocomposite",
+   "route": "CdS-ZnO",
+   "results_in": [
+    "Fig. 1e",
+    "Fig. 2",
+    "Fig. 3c",
+    "Fig. 5a,b",
+    "Fig. 6c,e",
+    "Fig. 7d",
+    "Fig. 8",
+    "Fig. 9b,d",
+    "Fig. 10",
+    "Fig. 11"
+   ]
+  },
+  {
+   "sample": "CdS–ZnO–RGO",
+   "defined_in": "Synthesis of CdS–ZnO–RGO ternary nanocomposite",
+   "route": "CdS-ZnO-RGO",
+   "results_in": [
+    "Fig. 1f",
+    "Fig. 2",
+    "Fig. 3d",
+    "Fig. 5c,d",
+    "Fig. 6d,f",
+    "Fig. 7e",
+    "Fig. 8",
+    "Fig. 9a,c",
+    "Fig. 10",
+    "Fig. 11",
+    "Table 1"
+   ]
+  },
+  {
+   "sample": "RGO",
+   "defined_in": "Synthesis of CdS–ZnO–RGO ternary nanocomposite",
+   "route": null,
+   "why": "formé in situ à partir de GO dans la voie CdS-ZnO-RGO ; aucun échantillon RGO séparé",
+   "results_in": []
+  }
+ ],
+ "routes": [
+  {
+   "label": "GO",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "intermediate",
+   "methods": [
+    "graphite_oxidation"
+   ],
+   "material": {
+    "name": "graphene oxide (graphite oxide)",
+    "formula": null,
+    "family": "carbone",
+    "phase": "lamellar GO",
+    "morphology": "flake-like sheets"
+   },
+   "method": "modified Hummers' method",
+   "quote": "Graphene oxide (GO) was synthesized from natural graphite flakes using a modified Hummers’ method",
+   "succeeded": true,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "graphite powder",
+     "formula": "C",
+     "role": "precursor",
+     "quote": "1.0 g of graphite powder and 0.5 g of NaNO3 was stirred in 23 mL of concentrated H2SO4 in an ice bath to maintain a reaction temperature below 10 °C",
+     "amount": 1.0,
+     "unit": "g",
+     "purity": "99%",
+     "supplier": "Alfa Aesar",
+     "supplier_quote": "graphite powder (crystalline, −300 mesh, 99%) was purchased from Alfa Aesar"
+    },
+    {
+     "name": "sodium nitrate",
+     "formula": "NaNO3",
+     "role": "oxidant",
+     "quote": "1.0 g of graphite powder and 0.5 g of NaNO3 was stirred in 23 mL of concentrated H2SO4 in an ice bath to maintain a reaction temperature below 10 °C",
+     "amount": 0.5,
+     "unit": "g",
+     "supplier": "Merck",
+     "supplier_quote": "sodium nitrate (NaNO3), sulfuric acid (H2SO4), potassium permanganate (KMnO4) and hydrogen peroxide (H2O2) were purchased from Merck",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "sulfuric acid, concentrated",
+     "formula": "H2SO4",
+     "role": "acid",
+     "quote": "1.0 g of graphite powder and 0.5 g of NaNO3 was stirred in 23 mL of concentrated H2SO4 in an ice bath to maintain a reaction temperature below 10 °C",
+     "amount": 23,
+     "unit": "mL",
+     "supplier": "Merck",
+     "supplier_quote": "sodium nitrate (NaNO3), sulfuric acid (H2SO4), potassium permanganate (KMnO4) and hydrogen peroxide (H2O2) were purchased from Merck",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "potassium permanganate",
+     "formula": "KMnO4",
+     "role": "oxidant",
+     "quote": "This was followed by the slow addition of 3.0 g of KMnO4 to the reaction mixture with continuous stirring",
+     "amount": 3.0,
+     "unit": "g",
+     "supplier": "Merck",
+     "supplier_quote": "sodium nitrate (NaNO3), sulfuric acid (H2SO4), potassium permanganate (KMnO4) and hydrogen peroxide (H2O2) were purchased from Merck",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "deionized water (reaction termination)",
+     "formula": "H2O",
+     "role": "quencher",
+     "quote": "The reaction was terminated by slow addition of deionized water (90 mL)",
+     "amount": 90,
+     "unit": "mL",
+     "purity": "18.2 MΩ·cm",
+     "supplier": "ELGA PURELAB Option-R7",
+     "supplier_quote": "Deionized water (18.2 MΩ·cm) used in synthesis was obtained from a double-stage water purifier (ELGA PURELAB Option-R7)"
+    },
+    {
+     "name": "hydrogen peroxide",
+     "formula": "H2O2",
+     "role": "quencher",
+     "quote": "This is followed by the addition of 10 mL H2O2 to remove unreacted KMnO4 in the reaction mixture",
+     "amount": 10,
+     "unit": "mL",
+     "supplier": "Merck",
+     "supplier_quote": "sodium nitrate (NaNO3), sulfuric acid (H2SO4), potassium permanganate (KMnO4) and hydrogen peroxide (H2O2) were purchased from Merck",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "hydrochloric acid, 10%",
+     "formula": "HCl",
+     "role": "wash",
+     "quote": "the mixture was washed with 10% HCl and then with deionized water until pH value of the filtrate was neutral"
+    },
+    {
+     "name": "deionized water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "the mixture was washed with 10% HCl and then with deionized water until pH value of the filtrate was neutral"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "stir",
+     "description": "Stir graphite and NaNO3 in concentrated H2SO4 in an ice bath below 10 °C.",
+     "quote": "1.0 g of graphite powder and 0.5 g of NaNO3 was stirred in 23 mL of concentrated H2SO4 in an ice bath to maintain a reaction temperature below 10 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "1.0 g of graphite powder and 0.5 g of NaNO3 was stirred in 23 mL of concentrated H2SO4 in an ice bath to maintain a reaction temperature below 10 °C",
+       "value_text": "below 10 °C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ice bath",
+       "detail": null,
+       "quote": "1.0 g of graphite powder and 0.5 g of NaNO3 was stirred in 23 mL of concentrated H2SO4 in an ice bath to maintain a reaction temperature below 10 °C"
+      }
+     ],
+     "not_stated": [
+      "duration",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Slowly add KMnO4 to the reaction mixture under continuous stirring.",
+     "quote": "This was followed by the slow addition of 3.0 g of KMnO4 to the reaction mixture with continuous stirring",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "This was followed by the slow addition of 3.0 g of KMnO4 to the reaction mixture with continuous stirring",
+       "value_text": "slow addition"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Stir the mixture in an oil bath at 35 °C until a brown paste forms.",
+     "quote": "the reaction mixture was stirred in an oil bath at 35 °C until a brown colored paste was formed after about 4 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "the reaction mixture was stirred in an oil bath at 35 °C until a brown colored paste was formed after about 4 h",
+       "value_num": 35,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "the reaction mixture was stirred in an oil bath at 35 °C until a brown colored paste was formed after about 4 h",
+       "value_num": 4,
+       "unit": "h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oil bath",
+       "detail": null,
+       "quote": "the reaction mixture was stirred in an oil bath at 35 °C until a brown colored paste was formed after about 4 h"
+      }
+     ],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "quench",
+     "description": "Terminate the reaction by slow addition of deionized water.",
+     "quote": "The reaction was terminated by slow addition of deionized water (90 mL)",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "The reaction was terminated by slow addition of deionized water (90 mL)",
+       "value_num": 90,
+       "unit": "mL"
+      },
+      {
+       "name": "addition_mode",
+       "quote": "The reaction was terminated by slow addition of deionized water (90 mL)",
+       "value_text": "slow addition"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 5,
+     "action": "heat",
+     "description": "Hold the suspension at the temperature reached after water addition.",
+     "quote": "which increased the temperature to 95–98 °C and resulting suspension was maintained at this temperature for 15–20 min",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "which increased the temperature to 95–98 °C and resulting suspension was maintained at this temperature for 15–20 min",
+       "value_text": "95–98 °C"
+      },
+      {
+       "name": "duration",
+       "quote": "which increased the temperature to 95–98 °C and resulting suspension was maintained at this temperature for 15–20 min",
+       "value_text": "15–20 min"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "add",
+     "description": "Dilute the suspension with deionized water.",
+     "quote": "the suspension was then diluted to about 250 mL by the addition of deionized water",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "the suspension was then diluted to about 250 mL by the addition of deionized water",
+       "value_num": 250,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "quench",
+     "description": "Add hydrogen peroxide to remove unreacted KMnO4.",
+     "quote": "This is followed by the addition of 10 mL H2O2 to remove unreacted KMnO4 in the reaction mixture",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "This is followed by the addition of 10 mL H2O2 to remove unreacted KMnO4 in the reaction mixture",
+       "value_num": 10,
+       "unit": "mL"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "wash",
+     "description": "Wash with 10% HCl then deionized water until neutral filtrate.",
+     "quote": "the mixture was washed with 10% HCl and then with deionized water until pH value of the filtrate was neutral",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "the mixture was washed with 10% HCl and then with deionized water until pH value of the filtrate was neutral",
+       "value_text": "10% HCl and then with deionized water"
+      },
+      {
+       "name": "repetitions",
+       "quote": "the mixture was washed with 10% HCl and then with deionized water until pH value of the filtrate was neutral",
+       "value_text": "until pH value of the filtrate was neutral"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "sonicate",
+     "description": "Ultrasonicate the graphite oxide to exfoliate it.",
+     "quote": "Obtained graphite oxide was subjected to ultrasonication for its exfoliation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "power"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "centrifuge",
+     "description": "Centrifuge.",
+     "quote": "followed by centrifugation at 4500 rpm for 15 min",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "followed by centrifugation at 4500 rpm for 15 min",
+       "value_num": 4500,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "followed by centrifugation at 4500 rpm for 15 min",
+       "value_num": 15,
+       "unit": "min"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 11,
+     "action": "evaporate",
+     "description": "Dry with a rotary evaporator at 40 °C.",
+     "quote": "drying with rotary evaporator at 40 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "drying with rotary evaporator at 40 °C",
+       "value_num": 40,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "rotary evaporator",
+       "detail": null,
+       "quote": "drying with rotary evaporator at 40 °C"
+      }
+     ]
+    },
+    {
+     "order": 12,
+     "action": "dry",
+     "description": "Vacuum drying overnight at the same temperature.",
+     "quote": "followed by vacuum drying overnight at same temperature",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "followed by vacuum drying overnight at same temperature",
+       "value_text": "same temperature"
+      },
+      {
+       "name": "duration",
+       "quote": "followed by vacuum drying overnight at same temperature",
+       "value_text": "overnight"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "followed by vacuum drying overnight at same temperature",
+       "value_text": "vacuum drying"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_GO",
+     "technique": "XRD",
+     "instrument": "Agilent Supernova X-ray diffractometer",
+     "result": "(001) reflection at 2θ ≈ 8.5° (interlayer ≈ 1.08 nm); (002) peak of graphite disappears",
+     "quote": "The disappearance of characteristic (002) reflection peak and appearance of (001) reflection peak confirms the oxidation of graphite and formation of GO with well-defined lamellar structure",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "using the Agilent Supernova X-ray diffractometer using Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA",
+       "value_text": "Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA"
+      },
+      {
+       "name": "scan_range",
+       "quote": "in 2θ ranging from 5 to 80°",
+       "value_text": "2θ ranging from 5 to 80°"
+      },
+      {
+       "name": "scan_step",
+       "quote": "with a scan rate of 2°·min−1",
+       "value_text": "scan rate of 2°·min−1"
+      }
+     ],
+     "not_stated": [
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "drs_GO",
+     "technique": "UV_vis",
+     "instrument": "Perkin Elmer UV/VIS/NIR Lambda 750 spectrophotometer",
+     "result": "excellent light absorption in 200–800 nm",
+     "quote": "Bare GO also shows the excellent light absorption in the range of 200–800 nm",
+     "settings": [
+      {
+       "name": "band_gap_method",
+       "quote": "Plots obtained by the transformation of the Kubelka–Munk function vs the energy of light are presented in Figure 3",
+       "value_text": "transformation of the Kubelka–Munk function vs the energy of light"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "in which polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard",
+       "value_text": "polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "uv_GO",
+     "technique": "UV_vis",
+     "instrument": "Shimadzu UV-2450 spectrophotometer",
+     "result": "two absorption peaks at 227–230 nm and a shoulder at 303 nm",
+     "quote": "shows two absorption peaks with maximum at 227–230 nm due to aromatic π→π* transition and a small shoulder at 303 nm due to the n→π* transition of carbonyl groups",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "quote": "recorded using Shimadzu UV-2450 spectrophotometer in the wavelength range from 200 to 800 nm",
+       "value_text": "200 to 800 nm"
+      }
+     ],
+     "not_stated": [
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "sem_GO",
+     "technique": "SEM",
+     "instrument": "field-emission scanning electron microscope (FESEM) JFEI Nova Nano SEM-450",
+     "result": "flake-like GO sheets",
+     "quote": "GO sheets show a flake-like morphology",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tem_GO",
+     "technique": "TEM",
+     "instrument": "high resolution transmission electron microscope (HRTEM) FEI Tecnai G2 20 S-twin",
+     "result": "flake-like shape",
+     "quote": "The TEM image of GO shows the flake-like shape (Figure 6a)",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "FEI Tecnai G2 20 S-twin microscope operating at 200 kV",
+       "value_num": 200,
+       "unit": "kV"
+      }
+     ],
+     "not_stated": [
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "ftir_GO",
+     "technique": "FTIR",
+     "instrument": "Agilent K8002AA Carry 660 FTIR instrument",
+     "result": "O–H, C=O, C–O and C=C bands of GO",
+     "quote": "The FTIR spectrum of GO shows strong broad absorption peaks at 3309 cm−1 and 1404 cm−1, which could be attributed to the O–H stretching vibrations and deformation vibrations of intercalated water",
+     "settings": [],
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "xrd_peak_position_001",
+     "quote": "which is indicated by the characteristic (001) reflection peak of about 2θ = 8.5°, which correspond to an interlayer distance of about 1.08 nm",
+     "value_num": 8.5,
+     "unit": "°",
+     "measured_by": "xrd_GO"
+    },
+    {
+     "property": "d_spacing_001",
+     "quote": "which is indicated by the characteristic (001) reflection peak of about 2θ = 8.5°, which correspond to an interlayer distance of about 1.08 nm",
+     "value_num": 1.08,
+     "unit": "nm",
+     "measured_by": "xrd_GO"
+    },
+    {
+     "property": "phase",
+     "quote": "The disappearance of characteristic (002) reflection peak and appearance of (001) reflection peak confirms the oxidation of graphite and formation of GO with well-defined lamellar structure",
+     "value_text": "GO with well-defined lamellar structure",
+     "measured_by": "xrd_GO"
+    },
+    {
+     "property": "xrd_peak_position_graphite_precursor_002",
+     "quote": "Graphite powder shows a very strong peak at 2θ = 26.5°, which could be assigned to (002) reflection plane corresponding to the interlayer distance of about 0.34 nm",
+     "value_num": 26.5,
+     "unit": "°",
+     "measured_by": "xrd_GO"
+    },
+    {
+     "property": "d_spacing_graphite_precursor_002",
+     "quote": "Graphite powder shows a very strong peak at 2θ = 26.5°, which could be assigned to (002) reflection plane corresponding to the interlayer distance of about 0.34 nm",
+     "value_num": 0.34,
+     "unit": "nm",
+     "measured_by": "xrd_GO"
+    },
+    {
+     "property": "xrd_peak_position_graphite_precursor_004",
+     "quote": "In addition to this peak there is another (004) reflection peak at 2θ = 54.3° corresponding to the interlayer distance of 0.17 nm",
+     "value_num": 54.3,
+     "unit": "°",
+     "measured_by": "xrd_GO"
+    },
+    {
+     "property": "d_spacing_graphite_precursor_004",
+     "quote": "In addition to this peak there is another (004) reflection peak at 2θ = 54.3° corresponding to the interlayer distance of 0.17 nm",
+     "value_num": 0.17,
+     "unit": "nm",
+     "measured_by": "xrd_GO"
+    },
+    {
+     "property": "absorption_peak_200_800nm",
+     "quote": "Bare GO also shows the excellent light absorption in the range of 200–800 nm",
+     "value_text": "excellent light absorption in the range of 200–800 nm",
+     "measured_by": "drs_GO"
+    },
+    {
+     "property": "absorption_peak_pi_pi_star",
+     "quote": "shows two absorption peaks with maximum at 227–230 nm due to aromatic π→π* transition",
+     "value_text": "227–230 nm",
+     "measured_by": "uv_GO"
+    },
+    {
+     "property": "absorption_peak_n_pi_star_shoulder",
+     "quote": "a small shoulder at 303 nm due to the n→π* transition of carbonyl groups",
+     "value_num": 303,
+     "unit": "nm",
+     "measured_by": "uv_GO"
+    },
+    {
+     "property": "morphology",
+     "quote": "GO sheets show a flake-like morphology",
+     "value_text": "flake-like",
+     "measured_by": "sem_GO"
+    },
+    {
+     "property": "morphology",
+     "quote": "The TEM image of GO shows the flake-like shape (Figure 6a)",
+     "value_text": "flake-like shape",
+     "measured_by": "tem_GO"
+    },
+    {
+     "property": "ftir_band_oh_stretching",
+     "quote": "The FTIR spectrum of GO shows strong broad absorption peaks at 3309 cm−1 and 1404 cm−1, which could be attributed to the O–H stretching vibrations and deformation vibrations of intercalated water",
+     "value_num": 3309,
+     "unit": "cm−1",
+     "measured_by": "ftir_GO"
+    },
+    {
+     "property": "ftir_band_water_deformation",
+     "quote": "The FTIR spectrum of GO shows strong broad absorption peaks at 3309 cm−1 and 1404 cm−1, which could be attributed to the O–H stretching vibrations and deformation vibrations of intercalated water",
+     "value_num": 1404,
+     "unit": "cm−1",
+     "measured_by": "ftir_GO"
+    },
+    {
+     "property": "ftir_band_c_o_stretching",
+     "quote": "Absorption peaks at 1032 cm−1, 1229 cm−1 and 1725 cm−1 are the characteristic stretching vibrations of C–O, epoxy C–O, and C=O of carbonyl groups, respectively, which are present at the edges of the GO sheets",
+     "value_num": 1032,
+     "unit": "cm−1",
+     "measured_by": "ftir_GO"
+    },
+    {
+     "property": "ftir_band_epoxy_c_o",
+     "quote": "Absorption peaks at 1032 cm−1, 1229 cm−1 and 1725 cm−1 are the characteristic stretching vibrations of C–O, epoxy C–O, and C=O of carbonyl groups, respectively, which are present at the edges of the GO sheets",
+     "value_num": 1229,
+     "unit": "cm−1",
+     "measured_by": "ftir_GO"
+    },
+    {
+     "property": "ftir_band_c_double_o_carbonyl",
+     "quote": "Absorption peaks at 1032 cm−1, 1229 cm−1 and 1725 cm−1 are the characteristic stretching vibrations of C–O, epoxy C–O, and C=O of carbonyl groups, respectively, which are present at the edges of the GO sheets",
+     "value_num": 1725,
+     "unit": "cm−1",
+     "measured_by": "ftir_GO"
+    },
+    {
+     "property": "ftir_band_aromatic_c_c",
+     "quote": "The absorption peak at 1622 cm−1 could be attributed to the aromatic C=C stretching vibrations in GO",
+     "value_num": 1622,
+     "unit": "cm−1",
+     "measured_by": "ftir_GO"
+    }
+   ]
+  },
+  {
+   "label": "ZnO-NR",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "solvothermal"
+   ],
+   "material": {
+    "name": "zinc oxide nanorods",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "wurtzite",
+    "morphology": "nanorods"
+   },
+   "method": "solvothermal synthesis (ethanolic ZnCl2 into aqueous NaOH, autoclave 180 °C)",
+   "quote": "ZnO nanorods (NR) were synthesized through a previously reported solvothermal method",
+   "succeeded": true,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "zinc chloride, 0.2 M solution in ethanol",
+     "formula": "ZnCl2",
+     "role": "precursor",
+     "quote": "10 mL of 0.2 M zinc chloride (ZnCl2) solution in ethanol was added into 70 mL of 0.5 M sodium hydroxide (NaOH) solution dropwise under vigorous stirring",
+     "amount": 10,
+     "unit": "mL",
+     "supplier": "Merck",
+     "supplier_quote": "Zinc chloride (ZnCl2), sodium hydroxide (NaOH), cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O), sodium sulfide (Na2S), ammonia solution and methyl orange were also supplied by Merck",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "sodium hydroxide, 0.5 M solution",
+     "formula": "NaOH",
+     "role": "base",
+     "quote": "10 mL of 0.2 M zinc chloride (ZnCl2) solution in ethanol was added into 70 mL of 0.5 M sodium hydroxide (NaOH) solution dropwise under vigorous stirring",
+     "amount": 70,
+     "unit": "mL",
+     "supplier": "Merck",
+     "supplier_quote": "Zinc chloride (ZnCl2), sodium hydroxide (NaOH), cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O), sodium sulfide (Na2S), ammonia solution and methyl orange were also supplied by Merck",
+     "not_stated": [
+      "purity",
+      "solvent"
+     ]
+    },
+    {
+     "name": "ethanol (solvent of the ZnCl2 solution)",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "quote": "10 mL of 0.2 M zinc chloride (ZnCl2) solution in ethanol was added into 70 mL of 0.5 M sodium hydroxide (NaOH) solution dropwise under vigorous stirring",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "deionized water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed several times with deionized water and ethanol"
+    },
+    {
+     "name": "ethanol (washing)",
+     "formula": "C2H5OH",
+     "role": "wash",
+     "quote": "washed several times with deionized water and ethanol"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the ethanolic ZnCl2 solution dropwise into the NaOH solution under vigorous stirring.",
+     "quote": "10 mL of 0.2 M zinc chloride (ZnCl2) solution in ethanol was added into 70 mL of 0.5 M sodium hydroxide (NaOH) solution dropwise under vigorous stirring",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "10 mL of 0.2 M zinc chloride (ZnCl2) solution in ethanol was added into 70 mL of 0.5 M sodium hydroxide (NaOH) solution dropwise under vigorous stirring",
+       "value_text": "dropwise"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "10 mL of 0.2 M zinc chloride (ZnCl2) solution in ethanol was added into 70 mL of 0.5 M sodium hydroxide (NaOH) solution dropwise under vigorous stirring",
+       "value_text": "vigorous stirring"
+      },
+      {
+       "name": "concentration_zncl2",
+       "quote": "10 mL of 0.2 M zinc chloride (ZnCl2) solution in ethanol was added into 70 mL of 0.5 M sodium hydroxide (NaOH) solution dropwise under vigorous stirring",
+       "value_num": 0.2,
+       "unit": "M"
+      },
+      {
+       "name": "concentration_naoh",
+       "quote": "10 mL of 0.2 M zinc chloride (ZnCl2) solution in ethanol was added into 70 mL of 0.5 M sodium hydroxide (NaOH) solution dropwise under vigorous stirring",
+       "value_num": 0.5,
+       "unit": "M"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "sonicate",
+     "description": "Ultrasonic treatment for homogenization.",
+     "quote": "This was followed by ultrasonic treatment of the solution for 30 min for homogenization",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "This was followed by ultrasonic treatment of the solution for 30 min for homogenization",
+       "value_num": 30,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "power"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "solvothermal_treatment",
+     "description": "Autoclave treatment of the homogeneous solution.",
+     "quote": "Then, this homogenous solution was transferred to a 100 mL teflon-lined stainless steel autoclave, sealed tightly and maintained at 180 °C for 12 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Then, this homogenous solution was transferred to a 100 mL teflon-lined stainless steel autoclave, sealed tightly and maintained at 180 °C for 12 h",
+       "value_num": 180,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Then, this homogenous solution was transferred to a 100 mL teflon-lined stainless steel autoclave, sealed tightly and maintained at 180 °C for 12 h",
+       "value_num": 12,
+       "unit": "h"
+      },
+      {
+       "name": "autoclave_volume",
+       "quote": "Then, this homogenous solution was transferred to a 100 mL teflon-lined stainless steel autoclave, sealed tightly and maintained at 180 °C for 12 h",
+       "value_num": 100,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "teflon-lined stainless steel autoclave",
+       "detail": "100 mL",
+       "quote": "Then, this homogenous solution was transferred to a 100 mL teflon-lined stainless steel autoclave, sealed tightly and maintained at 180 °C for 12 h"
+      }
+     ],
+     "not_stated": [
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "centrifuge",
+     "description": "Collect the white precipitate by centrifugation.",
+     "quote": "White precipitates of ZnO NR were collected by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "centrifuge_speed",
+      "duration"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash with deionized water and ethanol.",
+     "quote": "washed several times with deionized water and ethanol",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "washed several times with deionized water and ethanol",
+       "value_text": "deionized water and ethanol"
+      },
+      {
+       "name": "repetitions",
+       "quote": "washed several times with deionized water and ethanol",
+       "value_text": "several times"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry at 60 °C.",
+     "quote": "finally dried at 60 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "finally dried at 60 °C",
+       "value_num": 60,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "drying_mode"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_ZnO",
+     "technique": "XRD",
+     "instrument": "Agilent Supernova X-ray diffractometer",
+     "result": "polycrystalline wurtzite ZnO, JCPDS no. 36-1451",
+     "quote": "indicating the prepared ZnO NR have polycrystalline wurtzite structure (JCPDS no. 36-1451)",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "using the Agilent Supernova X-ray diffractometer using Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA",
+       "value_text": "Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA"
+      },
+      {
+       "name": "scan_range",
+       "quote": "in 2θ ranging from 5 to 80°",
+       "value_text": "2θ ranging from 5 to 80°"
+      },
+      {
+       "name": "scan_step",
+       "quote": "with a scan rate of 2°·min−1",
+       "value_text": "scan rate of 2°·min−1"
+      }
+     ],
+     "not_stated": [
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "drs_ZnO",
+     "technique": "UV_vis",
+     "instrument": "Perkin Elmer UV/VIS/NIR Lambda 750 spectrophotometer",
+     "result": "absorption band edge at 390 nm, band gap 3.23 eV",
+     "quote": "ZnO NR have an absorption band edge at 390 nm corresponding to a band gap value of 3.23 eV",
+     "settings": [
+      {
+       "name": "band_gap_method",
+       "quote": "Plots obtained by the transformation of the Kubelka–Munk function vs the energy of light are presented in Figure 3",
+       "value_text": "transformation of the Kubelka–Munk function vs the energy of light"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "in which polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard",
+       "value_text": "polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "uv_ZnO",
+     "technique": "UV_vis",
+     "instrument": "Shimadzu UV-2450 spectrophotometer",
+     "result": "absorbance peak at 372 nm",
+     "quote": "The absorbance peak of ZnO appears at 372 nm",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "quote": "recorded using Shimadzu UV-2450 spectrophotometer in the wavelength range from 200 to 800 nm",
+       "value_text": "200 to 800 nm"
+      }
+     ],
+     "not_stated": [
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "sem_ZnO",
+     "technique": "SEM",
+     "instrument": "field-emission scanning electron microscope (FESEM) JFEI Nova Nano SEM-450",
+     "result": "rod-like, length 2–3 µm, diameter 30–50 nm",
+     "quote": "ZnO has a rod-like morphology with lengths in the range of 2 to 3 µm and diameters from 30 to 50 nm",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "ftir_ZnO",
+     "technique": "FTIR",
+     "instrument": "Agilent K8002AA Carry 660 FTIR instrument",
+     "result": "O–H bands and Zn–O stretching at 504 cm−1",
+     "quote": "Similarly in FTIR spectra of ZnO NP, the broad absorption band at 3454 cm−1 and 1424 cm−1 could be attributed to O–H stretching and deformation of C–OH groups of water molecules. Zn–O bond stretching vibrations appears at 504 cm−1",
+     "settings": [],
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "xrd_peak_position_100",
+     "quote": "The XRD patterns of ZnO nanorods show peaks at 2θ = 31.67, 34.31, 36.14, 47.40, 56.52, 62.73, 66.28, 67.91 and 69.03°, which could be assigned to the (100), (002), (101), (102), (110), (103), (200), (112) and (201) lattice planes, respectively",
+     "value_num": 31.67,
+     "unit": "°",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "xrd_peak_position_002",
+     "quote": "The XRD patterns of ZnO nanorods show peaks at 2θ = 31.67, 34.31, 36.14, 47.40, 56.52, 62.73, 66.28, 67.91 and 69.03°, which could be assigned to the (100), (002), (101), (102), (110), (103), (200), (112) and (201) lattice planes, respectively",
+     "value_num": 34.31,
+     "unit": "°",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "xrd_peak_position_101",
+     "quote": "The XRD patterns of ZnO nanorods show peaks at 2θ = 31.67, 34.31, 36.14, 47.40, 56.52, 62.73, 66.28, 67.91 and 69.03°, which could be assigned to the (100), (002), (101), (102), (110), (103), (200), (112) and (201) lattice planes, respectively",
+     "value_num": 36.14,
+     "unit": "°",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "xrd_peak_position_102",
+     "quote": "The XRD patterns of ZnO nanorods show peaks at 2θ = 31.67, 34.31, 36.14, 47.40, 56.52, 62.73, 66.28, 67.91 and 69.03°, which could be assigned to the (100), (002), (101), (102), (110), (103), (200), (112) and (201) lattice planes, respectively",
+     "value_num": 47.4,
+     "unit": "°",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "xrd_peak_position_110",
+     "quote": "The XRD patterns of ZnO nanorods show peaks at 2θ = 31.67, 34.31, 36.14, 47.40, 56.52, 62.73, 66.28, 67.91 and 69.03°, which could be assigned to the (100), (002), (101), (102), (110), (103), (200), (112) and (201) lattice planes, respectively",
+     "value_num": 56.52,
+     "unit": "°",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "xrd_peak_position_103",
+     "quote": "The XRD patterns of ZnO nanorods show peaks at 2θ = 31.67, 34.31, 36.14, 47.40, 56.52, 62.73, 66.28, 67.91 and 69.03°, which could be assigned to the (100), (002), (101), (102), (110), (103), (200), (112) and (201) lattice planes, respectively",
+     "value_num": 62.73,
+     "unit": "°",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "xrd_peak_position_200",
+     "quote": "The XRD patterns of ZnO nanorods show peaks at 2θ = 31.67, 34.31, 36.14, 47.40, 56.52, 62.73, 66.28, 67.91 and 69.03°, which could be assigned to the (100), (002), (101), (102), (110), (103), (200), (112) and (201) lattice planes, respectively",
+     "value_num": 66.28,
+     "unit": "°",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "xrd_peak_position_112",
+     "quote": "The XRD patterns of ZnO nanorods show peaks at 2θ = 31.67, 34.31, 36.14, 47.40, 56.52, 62.73, 66.28, 67.91 and 69.03°, which could be assigned to the (100), (002), (101), (102), (110), (103), (200), (112) and (201) lattice planes, respectively",
+     "value_num": 67.91,
+     "unit": "°",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "xrd_peak_position_201",
+     "quote": "The XRD patterns of ZnO nanorods show peaks at 2θ = 31.67, 34.31, 36.14, 47.40, 56.52, 62.73, 66.28, 67.91 and 69.03°, which could be assigned to the (100), (002), (101), (102), (110), (103), (200), (112) and (201) lattice planes, respectively",
+     "value_num": 69.03,
+     "unit": "°",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "phase",
+     "quote": "indicating the prepared ZnO NR have polycrystalline wurtzite structure (JCPDS no. 36-1451)",
+     "value_text": "polycrystalline wurtzite structure (JCPDS no. 36-1451)",
+     "measured_by": "xrd_ZnO"
+    },
+    {
+     "property": "absorption_peak_edge",
+     "quote": "ZnO NR have an absorption band edge at 390 nm corresponding to a band gap value of 3.23 eV",
+     "value_num": 390,
+     "unit": "nm",
+     "measured_by": "drs_ZnO"
+    },
+    {
+     "property": "band_gap",
+     "quote": "ZnO NR have an absorption band edge at 390 nm corresponding to a band gap value of 3.23 eV",
+     "value_num": 3.23,
+     "unit": "eV",
+     "measured_by": "drs_ZnO"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "The absorbance peak of ZnO appears at 372 nm",
+     "value_num": 372,
+     "unit": "nm",
+     "measured_by": "uv_ZnO"
+    },
+    {
+     "property": "morphology",
+     "quote": "ZnO has a rod-like morphology with lengths in the range of 2 to 3 µm and diameters from 30 to 50 nm",
+     "value_text": "rod-like",
+     "measured_by": "sem_ZnO"
+    },
+    {
+     "property": "particle_size_length",
+     "quote": "ZnO has a rod-like morphology with lengths in the range of 2 to 3 µm and diameters from 30 to 50 nm",
+     "value_text": "2 to 3 µm",
+     "measured_by": "sem_ZnO"
+    },
+    {
+     "property": "particle_size_diameter",
+     "quote": "ZnO has a rod-like morphology with lengths in the range of 2 to 3 µm and diameters from 30 to 50 nm",
+     "value_text": "30 to 50 nm",
+     "measured_by": "sem_ZnO"
+    },
+    {
+     "property": "ftir_band_oh_stretching",
+     "quote": "Similarly in FTIR spectra of ZnO NP, the broad absorption band at 3454 cm−1 and 1424 cm−1 could be attributed to O–H stretching and deformation of C–OH groups of water molecules. Zn–O bond stretching vibrations appears at 504 cm−1",
+     "value_num": 3454,
+     "unit": "cm−1",
+     "measured_by": "ftir_ZnO"
+    },
+    {
+     "property": "ftir_band_c_oh_deformation",
+     "quote": "Similarly in FTIR spectra of ZnO NP, the broad absorption band at 3454 cm−1 and 1424 cm−1 could be attributed to O–H stretching and deformation of C–OH groups of water molecules. Zn–O bond stretching vibrations appears at 504 cm−1",
+     "value_num": 1424,
+     "unit": "cm−1",
+     "measured_by": "ftir_ZnO"
+    },
+    {
+     "property": "ftir_band_zn_o_stretching",
+     "quote": "Similarly in FTIR spectra of ZnO NP, the broad absorption band at 3454 cm−1 and 1424 cm−1 could be attributed to O–H stretching and deformation of C–OH groups of water molecules. Zn–O bond stretching vibrations appears at 504 cm−1",
+     "value_num": 504,
+     "unit": "cm−1",
+     "measured_by": "ftir_ZnO"
+    }
+   ]
+  },
+  {
+   "label": "CdS-NP",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "precipitation",
+    "solution_reflux"
+   ],
+   "material": {
+    "name": "cadmium sulfide nanoparticles",
+    "formula": "CdS",
+    "family": "chalcogenure",
+    "phase": "hexagonal (as stated by the authors)",
+    "morphology": "nanoparticles"
+   },
+   "method": "precipitation of CdS from Cd acetate and Na2S with PVP, then reflux at 70 °C",
+   "quote": "CdS nanoparticles were synthesized as per a previously reported method",
+   "succeeded": true,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "cadmium acetate dihydrate, 0.2 M solution",
+     "formula": "Cd(OOCCH3)2·2H2O",
+     "role": "precursor",
+     "quote": "about 20 mL of cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O) (0.2 M) was prepared in deionized water",
+     "amount": 20,
+     "unit": "mL",
+     "supplier": "Merck",
+     "supplier_quote": "Zinc chloride (ZnCl2), sodium hydroxide (NaOH), cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O), sodium sulfide (Na2S), ammonia solution and methyl orange were also supplied by Merck",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "deionized water (solvent of Cd acetate)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "about 20 mL of cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O) (0.2 M) was prepared in deionized water",
+     "purity": "18.2 MΩ·cm",
+     "supplier": "ELGA PURELAB Option-R7",
+     "supplier_quote": "Deionized water (18.2 MΩ·cm) used in synthesis was obtained from a double-stage water purifier (ELGA PURELAB Option-R7)",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "sodium sulfide, 0.2 M solution",
+     "formula": "Na2S",
+     "role": "precursor",
+     "quote": "To this solution, 20 mL of sodium sulfide (Na2S) solution (0.2 M) was added dropwise under continuous stirring",
+     "amount": 20,
+     "unit": "mL",
+     "supplier": "Merck",
+     "supplier_quote": "Zinc chloride (ZnCl2), sodium hydroxide (NaOH), cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O), sodium sulfide (Na2S), ammonia solution and methyl orange were also supplied by Merck",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "polyvinyl pyrrolidone",
+     "formula": "PVP",
+     "role": "capping_agent",
+     "quote": "After 10 min of stirring, 0.5 g of PVP was added as capping agent under vigorous stirring",
+     "amount": 0.5,
+     "unit": "g",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Polyvinyl pyrrolidone (PVP) used in synthesis was purchased from Sigma-Aldrich",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "ammonia solution",
+     "formula": "NH3",
+     "role": "base",
+     "quote": "The pH value of the solution was maintained at around 10 by adding ammonia solution",
+     "supplier": "Merck",
+     "supplier_quote": "Zinc chloride (ZnCl2), sodium hydroxide (NaOH), cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O), sodium sulfide (Na2S), ammonia solution and methyl orange were also supplied by Merck",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "deionized water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "the product was washed with deionized water and ethanol thrice"
+    },
+    {
+     "name": "ethanol (washing)",
+     "formula": "C2H5OH",
+     "role": "wash",
+     "quote": "the product was washed with deionized water and ethanol thrice"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Prepare the cadmium acetate solution in deionized water.",
+     "quote": "about 20 mL of cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O) (0.2 M) was prepared in deionized water",
+     "parameters": [
+      {
+       "name": "concentration",
+       "quote": "about 20 mL of cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O) (0.2 M) was prepared in deionized water",
+       "value_num": 0.2,
+       "unit": "M"
+      },
+      {
+       "name": "volume",
+       "quote": "about 20 mL of cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O) (0.2 M) was prepared in deionized water",
+       "value_num": 20,
+       "unit": "mL"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the sodium sulfide solution dropwise under continuous stirring.",
+     "quote": "To this solution, 20 mL of sodium sulfide (Na2S) solution (0.2 M) was added dropwise under continuous stirring",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "To this solution, 20 mL of sodium sulfide (Na2S) solution (0.2 M) was added dropwise under continuous stirring",
+       "value_text": "dropwise"
+      },
+      {
+       "name": "concentration",
+       "quote": "To this solution, 20 mL of sodium sulfide (Na2S) solution (0.2 M) was added dropwise under continuous stirring",
+       "value_num": 0.2,
+       "unit": "M"
+      },
+      {
+       "name": "volume",
+       "quote": "To this solution, 20 mL of sodium sulfide (Na2S) solution (0.2 M) was added dropwise under continuous stirring",
+       "value_num": 20,
+       "unit": "mL"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Stir for 10 min.",
+     "quote": "After 10 min of stirring, 0.5 g of PVP was added as capping agent under vigorous stirring",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "After 10 min of stirring, 0.5 g of PVP was added as capping agent under vigorous stirring",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add PVP as capping agent under vigorous stirring.",
+     "quote": "After 10 min of stirring, 0.5 g of PVP was added as capping agent under vigorous stirring",
+     "parameters": [
+      {
+       "name": "stirring_speed",
+       "quote": "After 10 min of stirring, 0.5 g of PVP was added as capping agent under vigorous stirring",
+       "value_text": "vigorous stirring"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode",
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "adjust_ph",
+     "description": "Maintain the pH around 10 with ammonia solution.",
+     "quote": "The pH value of the solution was maintained at around 10 by adding ammonia solution",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "The pH value of the solution was maintained at around 10 by adding ammonia solution",
+       "value_num": 10
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "reflux",
+     "description": "Reflux the solution.",
+     "quote": "The resultant solution was refluxed for about 1 h at 70 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The resultant solution was refluxed for about 1 h at 70 °C",
+       "value_num": 70,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The resultant solution was refluxed for about 1 h at 70 °C",
+       "value_num": 1,
+       "unit": "h"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 7,
+     "action": "wash",
+     "description": "Wash the product with deionized water and ethanol.",
+     "quote": "the product was washed with deionized water and ethanol thrice",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "the product was washed with deionized water and ethanol thrice",
+       "value_text": "deionized water and ethanol"
+      },
+      {
+       "name": "repetitions",
+       "quote": "the product was washed with deionized water and ethanol thrice",
+       "value_text": "thrice"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "dry",
+     "description": "Dry in an oven.",
+     "quote": "finally yellow colored CdS NP were formed after drying in an oven at 80 °C for 2 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "finally yellow colored CdS NP were formed after drying in an oven at 80 °C for 2 h",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "finally yellow colored CdS NP were formed after drying in an oven at 80 °C for 2 h",
+       "value_num": 2,
+       "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "finally yellow colored CdS NP were formed after drying in an oven at 80 °C for 2 h",
+       "value_text": "oven"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "finally yellow colored CdS NP were formed after drying in an oven at 80 °C for 2 h"
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_CdS",
+     "technique": "XRD",
+     "instrument": "Agilent Supernova X-ray diffractometer",
+     "result": "three diffraction peaks indexed to hexagonal CdS (JCPDS 42-1411)",
+     "quote": "The powder XRD pattern of the prepared CdS NP shows three diffraction peaks at 2θ = 26.8, 44.1 and 55.2°, which corresponds to the (111), (220) and (311) planes of hexagonal CdS (JCPDS 42-1411)",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "using the Agilent Supernova X-ray diffractometer using Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA",
+       "value_text": "Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA"
+      },
+      {
+       "name": "scan_range",
+       "quote": "in 2θ ranging from 5 to 80°",
+       "value_text": "2θ ranging from 5 to 80°"
+      },
+      {
+       "name": "scan_step",
+       "quote": "with a scan rate of 2°·min−1",
+       "value_text": "scan rate of 2°·min−1"
+      }
+     ],
+     "not_stated": [
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "drs_CdS",
+     "technique": "UV_vis",
+     "instrument": "Perkin Elmer UV/VIS/NIR Lambda 750 spectrophotometer",
+     "result": "absorption edge around 580 nm, band gap about 2.12 eV",
+     "quote": "As-prepared CdS NP have an absorption edge around 580 nm, which corresponds to a band gap value of about 2.12 eV",
+     "settings": [
+      {
+       "name": "band_gap_method",
+       "quote": "Plots obtained by the transformation of the Kubelka–Munk function vs the energy of light are presented in Figure 3",
+       "value_text": "transformation of the Kubelka–Munk function vs the energy of light"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "in which polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard",
+       "value_text": "polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "uv_CdS",
+     "technique": "UV_vis",
+     "instrument": "Shimadzu UV-2450 spectrophotometer",
+     "result": "absorbance band in 400–500 nm",
+     "quote": "UV–vis spectra for CdS NP shows a clear absorbance band in 400–500 nm range",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "quote": "recorded using Shimadzu UV-2450 spectrophotometer in the wavelength range from 200 to 800 nm",
+       "value_text": "200 to 800 nm"
+      }
+     ],
+     "not_stated": [
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "sem_CdS",
+     "technique": "SEM",
+     "instrument": "field-emission scanning electron microscope (FESEM) JFEI Nova Nano SEM-450",
+     "result": "agglomerated CdS NP",
+     "quote": "GO sheets show a flake-like morphology and the pristine CdS NP are agglomerated",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tem_CdS",
+     "technique": "TEM",
+     "instrument": "high resolution transmission electron microscope (HRTEM) FEI Tecnai G2 20 S-twin",
+     "result": "CdS NP about 20 nm",
+     "quote": "The CdS NP are about 20 nm in size (Figure 6b)",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "FEI Tecnai G2 20 S-twin microscope operating at 200 kV",
+       "value_num": 200,
+       "unit": "kV"
+      }
+     ],
+     "not_stated": [
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "ftir_CdS",
+     "technique": "FTIR",
+     "instrument": "Agilent K8002AA Carry 660 FTIR instrument",
+     "result": "O–H of adsorbed water; PVP bands",
+     "quote": "FTIR spectra of CdS NP also reveal the presence of O–H stretching vibrations of adsorbed water molecules on its surface",
+     "settings": [],
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "xrd_peak_position_111",
+     "quote": "The powder XRD pattern of the prepared CdS NP shows three diffraction peaks at 2θ = 26.8, 44.1 and 55.2°, which corresponds to the (111), (220) and (311) planes of hexagonal CdS (JCPDS 42-1411)",
+     "value_num": 26.8,
+     "unit": "°",
+     "measured_by": "xrd_CdS"
+    },
+    {
+     "property": "xrd_peak_position_220",
+     "quote": "The powder XRD pattern of the prepared CdS NP shows three diffraction peaks at 2θ = 26.8, 44.1 and 55.2°, which corresponds to the (111), (220) and (311) planes of hexagonal CdS (JCPDS 42-1411)",
+     "value_num": 44.1,
+     "unit": "°",
+     "measured_by": "xrd_CdS"
+    },
+    {
+     "property": "xrd_peak_position_311",
+     "quote": "The powder XRD pattern of the prepared CdS NP shows three diffraction peaks at 2θ = 26.8, 44.1 and 55.2°, which corresponds to the (111), (220) and (311) planes of hexagonal CdS (JCPDS 42-1411)",
+     "value_num": 55.2,
+     "unit": "°",
+     "measured_by": "xrd_CdS"
+    },
+    {
+     "property": "phase",
+     "quote": "The powder XRD pattern of the prepared CdS NP shows three diffraction peaks at 2θ = 26.8, 44.1 and 55.2°, which corresponds to the (111), (220) and (311) planes of hexagonal CdS (JCPDS 42-1411)",
+     "value_text": "hexagonal CdS (JCPDS 42-1411)",
+     "measured_by": "xrd_CdS"
+    },
+    {
+     "property": "absorption_peak_edge",
+     "quote": "As-prepared CdS NP have an absorption edge around 580 nm",
+     "value_num": 580,
+     "unit": "nm",
+     "measured_by": "drs_CdS"
+    },
+    {
+     "property": "band_gap",
+     "quote": "which corresponds to a band gap value of about 2.12 eV",
+     "value_num": 2.12,
+     "unit": "eV",
+     "measured_by": "drs_CdS"
+    },
+    {
+     "property": "band_gap_kubelka_munk_plot",
+     "quote": "Plots of the transformed Kubelka–Munk function vs the energy of light: (a) ZnO NR, (b) CdS NP, (c) CdS–ZnO and (d) CdS–ZnO–RGO nanocomposite.",
+     "value_num": 2.2,
+     "unit": "eV",
+     "measured_by": "drs_CdS",
+     "from_figure": "Fig. 3b"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "UV–vis spectra for CdS NP shows a clear absorbance band in 400–500 nm range",
+     "value_text": "400–500 nm",
+     "measured_by": "uv_CdS"
+    },
+    {
+     "property": "morphology",
+     "quote": "GO sheets show a flake-like morphology and the pristine CdS NP are agglomerated",
+     "value_text": "agglomerated",
+     "measured_by": "sem_CdS"
+    },
+    {
+     "property": "particle_size",
+     "quote": "The CdS NP are about 20 nm in size (Figure 6b)",
+     "value_num": 20,
+     "unit": "nm",
+     "measured_by": "tem_CdS"
+    },
+    {
+     "property": "ftir_band_oh_stretching",
+     "quote": "FTIR spectra of CdS NP also reveal the presence of O–H stretching vibrations of adsorbed water molecules on its surface",
+     "value_text": "O–H stretching vibrations of adsorbed water molecules (wavenumber not given)",
+     "measured_by": "ftir_CdS"
+    },
+    {
+     "property": "ftir_band_c_n_stretching_pvp",
+     "quote": "The peak at 1550 cm−1 is attributed to the C–N stretching vibration of the PVP monomer, which was used as capping agent",
+     "value_num": 1550,
+     "unit": "cm−1",
+     "measured_by": "ftir_CdS"
+    },
+    {
+     "property": "ftir_band_c_h_pvp",
+     "quote": "The 1404 cm−1 peak corresponds to the C–H bond of PVP",
+     "value_num": 1404,
+     "unit": "cm−1",
+     "measured_by": "ftir_CdS"
+    }
+   ]
+  },
+  {
+   "label": "CdS-ZnO",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "hydrothermal"
+   ],
+   "material": {
+    "name": "CdS–ZnO binary nanocomposite",
+    "formula": "CdS–ZnO",
+    "family": "composite",
+    "phase": "ZnO and CdS phases",
+    "morphology": "CdS nanoparticles on ZnO nanorods"
+   },
+   "method": "one-pot hydrothermal synthesis at 140 °C for 48 h",
+   "quote": "CdS–ZnO binary nanocomposite was prepared by employing a reported hydrothermal strategy",
+   "succeeded": true,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "zinc chloride, 0.2 M",
+     "formula": "ZnCl2",
+     "role": "precursor",
+     "quote": "0.2 M ZnCl2 was dispersed in 40 mL deionized water",
+     "supplier": "Merck",
+     "supplier_quote": "Zinc chloride (ZnCl2), sodium hydroxide (NaOH), cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O), sodium sulfide (Na2S), ammonia solution and methyl orange were also supplied by Merck",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "deionized water (dispersion of ZnCl2)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "0.2 M ZnCl2 was dispersed in 40 mL deionized water",
+     "amount": 40,
+     "unit": "mL",
+     "purity": "18.2 MΩ·cm",
+     "supplier": "ELGA PURELAB Option-R7",
+     "supplier_quote": "Deionized water (18.2 MΩ·cm) used in synthesis was obtained from a double-stage water purifier (ELGA PURELAB Option-R7)"
+    },
+    {
+     "name": "sodium hydroxide, 0.5 M solution",
+     "formula": "NaOH",
+     "role": "base",
+     "quote": "followed by the addition of 0.5 M NaOH solution dropwise with continuous stirring",
+     "supplier": "Merck",
+     "supplier_quote": "Zinc chloride (ZnCl2), sodium hydroxide (NaOH), cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O), sodium sulfide (Na2S), ammonia solution and methyl orange were also supplied by Merck",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "aqueous ammonia",
+     "formula": "NH3",
+     "role": "base",
+     "quote": "Aqueous ammonia was added to maintain the pH value around 8",
+     "supplier": "Merck",
+     "supplier_quote": "Zinc chloride (ZnCl2), sodium hydroxide (NaOH), cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O), sodium sulfide (Na2S), ammonia solution and methyl orange were also supplied by Merck",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "cadmium acetate dihydrate, 0.2 M",
+     "formula": "Cd(OOCCH3)2·2H2O",
+     "role": "precursor",
+     "quote": "Finally, Cd(OOCCH3)2·2H2O (0.2 M) and 4 mL of thioglycolic acid (0.2 M) was added into 40 mL of above solution under vigorous stirring",
+     "supplier": "Merck",
+     "supplier_quote": "Zinc chloride (ZnCl2), sodium hydroxide (NaOH), cadmium acetate dihydrate (Cd(OOCCH3)2·2H2O), sodium sulfide (Na2S), ammonia solution and methyl orange were also supplied by Merck",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "thioglycolic acid, 0.2 M",
+     "formula": "HSCH2COOH",
+     "role": "precursor",
+     "quote": "Finally, Cd(OOCCH3)2·2H2O (0.2 M) and 4 mL of thioglycolic acid (0.2 M) was added into 40 mL of above solution under vigorous stirring",
+     "amount": 4,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "ethanol (washing)",
+     "formula": "C2H5OH",
+     "role": "wash",
+     "quote": "washed with ethanol and deionized water thrice"
+    },
+    {
+     "name": "deionized water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed with ethanol and deionized water thrice"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "disperse",
+     "description": "Disperse ZnCl2 in deionized water.",
+     "quote": "0.2 M ZnCl2 was dispersed in 40 mL deionized water",
+     "parameters": [
+      {
+       "name": "concentration",
+       "quote": "0.2 M ZnCl2 was dispersed in 40 mL deionized water",
+       "value_num": 0.2,
+       "unit": "M"
+      },
+      {
+       "name": "volume",
+       "quote": "0.2 M ZnCl2 was dispersed in 40 mL deionized water",
+       "value_num": 40,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add NaOH solution dropwise under continuous stirring.",
+     "quote": "followed by the addition of 0.5 M NaOH solution dropwise with continuous stirring",
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "quote": "followed by the addition of 0.5 M NaOH solution dropwise with continuous stirring",
+       "value_text": "dropwise"
+      },
+      {
+       "name": "concentration",
+       "quote": "followed by the addition of 0.5 M NaOH solution dropwise with continuous stirring",
+       "value_num": 0.5,
+       "unit": "M"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "adjust_ph",
+     "description": "Maintain the pH around 8 with aqueous ammonia.",
+     "quote": "Aqueous ammonia was added to maintain the pH value around 8",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "Aqueous ammonia was added to maintain the pH value around 8",
+       "value_num": 8
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Add Cd acetate and thioglycolic acid to 40 mL of the above solution under vigorous stirring.",
+     "quote": "Finally, Cd(OOCCH3)2·2H2O (0.2 M) and 4 mL of thioglycolic acid (0.2 M) was added into 40 mL of above solution under vigorous stirring",
+     "parameters": [
+      {
+       "name": "stirring_speed",
+       "quote": "Finally, Cd(OOCCH3)2·2H2O (0.2 M) and 4 mL of thioglycolic acid (0.2 M) was added into 40 mL of above solution under vigorous stirring",
+       "value_text": "vigorous stirring"
+      },
+      {
+       "name": "concentration",
+       "quote": "Finally, Cd(OOCCH3)2·2H2O (0.2 M) and 4 mL of thioglycolic acid (0.2 M) was added into 40 mL of above solution under vigorous stirring",
+       "value_num": 0.2,
+       "unit": "M"
+      },
+      {
+       "name": "volume",
+       "quote": "Finally, Cd(OOCCH3)2·2H2O (0.2 M) and 4 mL of thioglycolic acid (0.2 M) was added into 40 mL of above solution under vigorous stirring",
+       "value_num": 4,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode",
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "hydrothermal_treatment",
+     "description": "Autoclave treatment of the homogeneous suspension.",
+     "quote": "this homogenous suspension was transferred to 50 mL teflon-lined stainless steel autoclave and kept at 140 °C for 48 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "this homogenous suspension was transferred to 50 mL teflon-lined stainless steel autoclave and kept at 140 °C for 48 h",
+       "value_num": 140,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "this homogenous suspension was transferred to 50 mL teflon-lined stainless steel autoclave and kept at 140 °C for 48 h",
+       "value_num": 48,
+       "unit": "h"
+      },
+      {
+       "name": "autoclave_volume",
+       "quote": "this homogenous suspension was transferred to 50 mL teflon-lined stainless steel autoclave and kept at 140 °C for 48 h",
+       "value_num": 50,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "teflon-lined stainless steel autoclave",
+       "detail": "50 mL",
+       "quote": "this homogenous suspension was transferred to 50 mL teflon-lined stainless steel autoclave and kept at 140 °C for 48 h"
+      }
+     ],
+     "not_stated": [
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "centrifuge",
+     "description": "Collect the product by centrifugation.",
+     "quote": "the product was collected by centrifugation",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "centrifuge_speed",
+      "duration"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "wash",
+     "description": "Wash with ethanol and deionized water.",
+     "quote": "washed with ethanol and deionized water thrice",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "washed with ethanol and deionized water thrice",
+       "value_text": "ethanol and deionized water"
+      },
+      {
+       "name": "repetitions",
+       "quote": "washed with ethanol and deionized water thrice",
+       "value_text": "thrice"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 8,
+     "action": "dry",
+     "description": "Dry in vacuum.",
+     "quote": "dried in vacuum",
+     "parameters": [
+      {
+       "name": "drying_mode",
+       "quote": "dried in vacuum",
+       "value_text": "in vacuum"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_B",
+     "technique": "XRD",
+     "instrument": "Agilent Supernova X-ray diffractometer",
+     "result": "ZnO and CdS crystal phases retained",
+     "quote": "all peaks that are ascribable to ZnO and CdS structures are evident, which demonstrates that the same crystal phases are retained in both binary (CdS–ZnO) and ternary (CdS–ZnO–RGO) nanocomposites",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "using the Agilent Supernova X-ray diffractometer using Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA",
+       "value_text": "Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA"
+      },
+      {
+       "name": "scan_range",
+       "quote": "in 2θ ranging from 5 to 80°",
+       "value_text": "2θ ranging from 5 to 80°"
+      },
+      {
+       "name": "scan_step",
+       "quote": "with a scan rate of 2°·min−1",
+       "value_text": "scan rate of 2°·min−1"
+      }
+     ],
+     "not_stated": [
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "drs_B",
+     "technique": "UV_vis",
+     "instrument": "Perkin Elmer UV/VIS/NIR Lambda 750 spectrophotometer",
+     "result": "absorption edge in 400–500 nm; ZnO band gap slightly decreased",
+     "quote": "exhibits an absorption edge in the range of 400–500 nm indicating the presence of CdS NP in the binary composite",
+     "settings": [
+      {
+       "name": "band_gap_method",
+       "quote": "Plots obtained by the transformation of the Kubelka–Munk function vs the energy of light are presented in Figure 3",
+       "value_text": "transformation of the Kubelka–Munk function vs the energy of light"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "in which polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard",
+       "value_text": "polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "uv_B",
+     "technique": "UV_vis",
+     "instrument": "Shimadzu UV-2450 spectrophotometer",
+     "result": "absorption in UV and visible",
+     "quote": "The UV–vis spectrum of the binary nanocomposite (CdS–ZnO) shows the absorption both in the UV and the visible region",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "quote": "recorded using Shimadzu UV-2450 spectrophotometer in the wavelength range from 200 to 800 nm",
+       "value_text": "200 to 800 nm"
+      }
+     ],
+     "not_stated": [
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "sem_B",
+     "technique": "SEM",
+     "instrument": "field-emission scanning electron microscope (FESEM) JFEI Nova Nano SEM-450",
+     "result": "CdS NP on the surface of ZnO NR",
+     "quote": "Figure 5a,b indicate the coupling between CdS and ZnO, wherein CdS NP are present on the surface of ZnO NR",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tem_B",
+     "technique": "TEM",
+     "instrument": "high resolution transmission electron microscope (HRTEM) FEI Tecnai G2 20 S-twin",
+     "result": "TEM images of the binary composite (Fig. 6c)",
+     "quote": "The TEM images of the CdS–ZnO binary and CdS–ZnO–RGO ternary nanocomposites are shown in Figure 6c and Figure 6d, respectively",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "FEI Tecnai G2 20 S-twin microscope operating at 200 kV",
+       "value_num": 200,
+       "unit": "kV"
+      }
+     ],
+     "not_stated": [
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "eds_B",
+     "technique": "EDS",
+     "instrument": "energy dispersive X-ray spectroscopy (EDAX) on the FEI Tecnai G2 20 S-twin HRTEM",
+     "result": "peaks of all constituent components",
+     "quote": "The existence of all the constituent components in the final binary and ternary nanocomposites has been proved by the presence of corresponding peaks in the energy dispersive X-ray spectra (EDAX), as shown in Figure 6e and Figure 6f.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "ftir_B",
+     "technique": "FTIR",
+     "instrument": "Agilent K8002AA Carry 660 FTIR instrument",
+     "result": "O–H, Zn–O and C–H (capping agent) bands",
+     "quote": "CdS–ZnO nanocomposite also shows O–H stretching vibrations in the range of 3000–3500 cm−1 range and Zn–O stretching vibrations between 500 and 600 cm−1",
+     "settings": [],
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "cat_vis_B",
+     "technique": "catalytic_test",
+     "instrument": "UV–vis spectrophotometer",
+     "result": "about 70% MO degraded in 90 min, visible light (solar simulator)",
+     "quote": "In accordance with the above equation, with CdS–ZnO–RGO ternary photocatalyst about 98% of dye was degraded in 90 min, under visible light illumination from a solar simulator, but with CdS–ZnO binary photocatalyst, only about 70% of dye was degraded.",
+     "settings": [
+      {
+       "name": "catalyst_mass",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_num": 10,
+       "unit": "mg"
+      },
+      {
+       "name": "reaction_volume",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_num": 50,
+       "unit": "mL"
+      },
+      {
+       "name": "reactant_concentration",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_text": "MO (10−5 M)"
+      },
+      {
+       "name": "reaction_temperature",
+       "quote": "monitoring the decomposition of MO dye at room temperature",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "pretreatment",
+       "quote": "Initially, the suspension was magnetically stirred in the dark for 30 min to attain adsorption–desorption equilibrium",
+       "value_text": "magnetically stirred in the dark for 30 min to attain adsorption–desorption equilibrium"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "by monitoring the main absorption peak (λ = 454 nm) of MO",
+       "value_text": "monitoring the main absorption peak (λ = 454 nm) of MO with a UV–vis spectrophotometer"
+      },
+      {
+       "name": "light_source",
+       "quote": "a solar simulator (OAI Trisol, AM 1.5, 100 mW·cm−2) having a UV cut-off filter (λ > 420 nm) was used for visible light illumination",
+       "value_text": "solar simulator (OAI Trisol, AM 1.5, 100 mW·cm−2) having a UV cut-off filter (λ > 420 nm)"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "about 98% of dye was degraded in 90 min, under visible light illumination from a solar simulator",
+       "value_num": 90,
+       "unit": "min"
+      }
+     ]
+    },
+    {
+     "id": "cat_sun_B",
+     "technique": "catalytic_test",
+     "instrument": "UV–vis spectrophotometer",
+     "result": "about 70% MO degraded within 60 min, natural sunlight",
+     "quote": "Similarly, within 60 min the CdS–ZnO binary nanocomposite degraded about 70% of the dye, while it took about 90 min under the visible light irradiation from a solar simulator.",
+     "settings": [
+      {
+       "name": "catalyst_mass",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_num": 10,
+       "unit": "mg"
+      },
+      {
+       "name": "reaction_volume",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_num": 50,
+       "unit": "mL"
+      },
+      {
+       "name": "reactant_concentration",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_text": "MO (10−5 M)"
+      },
+      {
+       "name": "reaction_temperature",
+       "quote": "monitoring the decomposition of MO dye at room temperature",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "pretreatment",
+       "quote": "Initially, the suspension was magnetically stirred in the dark for 30 min to attain adsorption–desorption equilibrium",
+       "value_text": "magnetically stirred in the dark for 30 min to attain adsorption–desorption equilibrium"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "by monitoring the main absorption peak (λ = 454 nm) of MO",
+       "value_text": "monitoring the main absorption peak (λ = 454 nm) of MO with a UV–vis spectrophotometer"
+      },
+      {
+       "name": "light_source",
+       "quote": "Another set of experiments were performed under natural sunlight and the light intensity was measured using a LX-101A digital luxmeter",
+       "value_text": "natural sunlight; light intensity measured using a LX-101A digital luxmeter"
+      },
+      {
+       "name": "light_source",
+       "quote": "under natural sunlight illumination having an intensity of 9.5 × 104 lux",
+       "value_text": "natural sunlight illumination having an intensity of 9.5 × 104 lux"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "about 98% degradation of the dye could be achieved within 60 min",
+       "value_num": 60,
+       "unit": "min"
+      }
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "elemental_composition_nominal_ratio_CdS_ZnO",
+     "quote": "Based on the molar ratio of the precursors used in the synthesis, the ratio of CdS to ZnO is expected to be 1:1 in this binary nanocomposite.",
+     "value_text": "CdS to ZnO ratio expected to be 1:1 (from the molar ratio of precursors)",
+     "measured_by": "not_stated"
+    },
+    {
+     "property": "phase",
+     "quote": "all peaks that are ascribable to ZnO and CdS structures are evident, which demonstrates that the same crystal phases are retained in both binary (CdS–ZnO) and ternary (CdS–ZnO–RGO) nanocomposites",
+     "value_text": "same crystal phases (ZnO and CdS) retained",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "absorption_peak_edge",
+     "quote": "exhibits an absorption edge in the range of 400–500 nm indicating the presence of CdS NP in the binary composite",
+     "value_text": "400–500 nm",
+     "measured_by": "drs_B"
+    },
+    {
+     "property": "band_gap_ZnO_component",
+     "quote": "One can observe a slight decrease in the band gap value of ZnO in this binary nanocomposite compared to its pristine form.",
+     "value_text": "slight decrease compared to pristine ZnO",
+     "measured_by": "drs_B"
+    },
+    {
+     "property": "band_gap_kubelka_munk_plot_ZnO_edge",
+     "quote": "Plots of the transformed Kubelka–Munk function vs the energy of light: (a) ZnO NR, (b) CdS NP, (c) CdS–ZnO and (d) CdS–ZnO–RGO nanocomposite.",
+     "value_num": 3.18,
+     "unit": "eV",
+     "measured_by": "drs_B",
+     "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "band_gap_kubelka_munk_plot_CdS_edge",
+     "quote": "Plots of the transformed Kubelka–Munk function vs the energy of light: (a) ZnO NR, (b) CdS NP, (c) CdS–ZnO and (d) CdS–ZnO–RGO nanocomposite.",
+     "value_num": 2.21,
+     "unit": "eV",
+     "measured_by": "drs_B",
+     "from_figure": "Fig. 3c"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "The UV–vis spectrum of the binary nanocomposite (CdS–ZnO) shows the absorption both in the UV and the visible region",
+     "value_text": "absorption in both UV and visible regions",
+     "measured_by": "uv_B"
+    },
+    {
+     "property": "morphology",
+     "quote": "Figure 5a,b indicate the coupling between CdS and ZnO, wherein CdS NP are present on the surface of ZnO NR",
+     "value_text": "CdS NP present on the surface of ZnO NR",
+     "measured_by": "sem_B"
+    },
+    {
+     "property": "elemental_composition",
+     "quote": "The existence of all the constituent components in the final binary and ternary nanocomposites has been proved by the presence of corresponding peaks in the energy dispersive X-ray spectra (EDAX), as shown in Figure 6e and Figure 6f.",
+     "value_text": "peaks corresponding to all constituent components present",
+     "measured_by": "eds_B"
+    },
+    {
+     "property": "elemental_composition_elements_labelled",
+     "quote": "TEM Images (a) GO sheets, (b) CdS NP, (c) CdS–ZnO binary composite, (d) CdS–ZnO–RGO ternary composite and EDX spectrum (e) CdS–ZnO and (f) CdS–ZnO–RGO nanocomposites, respectively.",
+     "value_text": "peaks labelled C, O, Zn, S, Cd",
+     "measured_by": "eds_B",
+     "from_figure": "Fig. 6e"
+    },
+    {
+     "property": "ftir_band_oh_stretching",
+     "quote": "CdS–ZnO nanocomposite also shows O–H stretching vibrations in the range of 3000–3500 cm−1 range and Zn–O stretching vibrations between 500 and 600 cm−1",
+     "value_text": "3000–3500 cm−1 range",
+     "measured_by": "ftir_B"
+    },
+    {
+     "property": "ftir_band_zn_o_stretching",
+     "quote": "CdS–ZnO nanocomposite also shows O–H stretching vibrations in the range of 3000–3500 cm−1 range and Zn–O stretching vibrations between 500 and 600 cm−1",
+     "value_text": "between 500 and 600 cm−1",
+     "measured_by": "ftir_B"
+    },
+    {
+     "property": "ftir_band_c_h_capping_agent",
+     "quote": "The peak at 1394 cm−1 in the binary composite is assigned to C–H bonds of the capping agent",
+     "value_num": 1394,
+     "unit": "cm−1",
+     "measured_by": "ftir_B"
+    },
+    {
+     "property": "catalytic_performance_dye_degradation_visible_90min",
+     "quote": "In accordance with the above equation, with CdS–ZnO–RGO ternary photocatalyst about 98% of dye was degraded in 90 min, under visible light illumination from a solar simulator, but with CdS–ZnO binary photocatalyst, only about 70% of dye was degraded.",
+     "value_num": 70,
+     "unit": "%",
+     "measured_by": "cat_vis_B"
+    },
+    {
+     "property": "catalytic_performance_dye_degradation_sunlight_60min",
+     "quote": "Similarly, within 60 min the CdS–ZnO binary nanocomposite degraded about 70% of the dye, while it took about 90 min under the visible light irradiation from a solar simulator.",
+     "value_num": 70,
+     "unit": "%",
+     "measured_by": "cat_sun_B"
+    },
+    {
+     "property": "catalytic_performance_time_for_70pct_visible",
+     "quote": "Similarly, within 60 min the CdS–ZnO binary nanocomposite degraded about 70% of the dye, while it took about 90 min under the visible light irradiation from a solar simulator.",
+     "value_num": 90,
+     "unit": "min",
+     "measured_by": "cat_vis_B"
+    },
+    {
+     "property": "kinetics_fit_order_visible",
+     "quote": "The corresponding kinetic curves are shown in Figure 10, which indicates that in all the cases the reaction follows zero-order kinetics similar to other reports in literature",
+     "value_text": "zero-order kinetics",
+     "measured_by": "cat_vis_B"
+    },
+    {
+     "property": "kinetics_fit_order_sunlight",
+     "quote": "The corresponding kinetic curves are shown in Figure 10, which indicates that in all the cases the reaction follows zero-order kinetics similar to other reports in literature",
+     "value_text": "zero-order kinetics",
+     "measured_by": "cat_sun_B"
+    },
+    {
+     "property": "catalytic_performance_C_C0_visible_30min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 77,
+     "unit": "%",
+     "measured_by": "cat_vis_B",
+     "from_figure": "Fig. 10a"
+    },
+    {
+     "property": "catalytic_performance_C_C0_visible_60min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 50,
+     "unit": "%",
+     "measured_by": "cat_vis_B",
+     "from_figure": "Fig. 10a"
+    },
+    {
+     "property": "catalytic_performance_C_C0_visible_90min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 29,
+     "unit": "%",
+     "measured_by": "cat_vis_B",
+     "from_figure": "Fig. 10a"
+    },
+    {
+     "property": "catalytic_performance_C_C0_sunlight_30min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 68,
+     "unit": "%",
+     "measured_by": "cat_sun_B",
+     "from_figure": "Fig. 10b"
+    },
+    {
+     "property": "catalytic_performance_C_C0_sunlight_60min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 32,
+     "unit": "%",
+     "measured_by": "cat_sun_B",
+     "from_figure": "Fig. 10b"
+    }
+   ]
+  },
+  {
+   "label": "CdS-ZnO-RGO",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "solvothermal"
+   ],
+   "material": {
+    "name": "CdS–ZnO–RGO ternary nanocomposite",
+    "formula": "CdS–ZnO–RGO",
+    "family": "composite",
+    "phase": "ZnO and CdS phases with reduced graphene oxide",
+    "morphology": "CdS–ZnO on RGO sheets"
+   },
+   "method": "GO dispersed in ethanol with the prepared CdS–ZnO, treated in an autoclave at 120 °C for 24 h",
+   "quote": "For the synthesis of the CdS–ZnO–RGO ternary nanocomposite, about 0.01 g of as prepared GO was dispersed in ethanol by ultrasonication",
+   "succeeded": true,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "graphene oxide (route GO)",
+     "formula": "GO",
+     "role": "intermediate",
+     "quote": "about 0.01 g of as prepared GO was dispersed in ethanol by ultrasonication",
+     "amount": 0.01,
+     "unit": "g"
+    },
+    {
+     "name": "ethanol (dispersion of GO)",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "quote": "about 0.01 g of as prepared GO was dispersed in ethanol by ultrasonication",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "CdS–ZnO binary nanocomposite (route CdS-ZnO)",
+     "formula": "CdS–ZnO",
+     "role": "intermediate",
+     "quote": "Then, 0.2 g of previously prepared CdS–ZnO was added to the GO solution under vigorous stirring for 2 h to obtain homogenous suspension",
+     "amount": 0.2,
+     "unit": "g"
+    },
+    {
+     "name": "water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "The desired product was obtained after washing with water"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "disperse",
+     "description": "Disperse GO in ethanol by ultrasonication.",
+     "quote": "about 0.01 g of as prepared GO was dispersed in ethanol by ultrasonication",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "ultrasonicator",
+       "detail": null,
+       "quote": "about 0.01 g of as prepared GO was dispersed in ethanol by ultrasonication"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the prepared CdS–ZnO to the GO solution.",
+     "quote": "Then, 0.2 g of previously prepared CdS–ZnO was added to the GO solution under vigorous stirring for 2 h to obtain homogenous suspension",
+     "parameters": [
+      {
+       "name": "mass",
+       "quote": "Then, 0.2 g of previously prepared CdS–ZnO was added to the GO solution under vigorous stirring for 2 h to obtain homogenous suspension",
+       "value_num": 0.2,
+       "unit": "g"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode",
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Stir vigorously for 2 h to obtain a homogeneous suspension.",
+     "quote": "Then, 0.2 g of previously prepared CdS–ZnO was added to the GO solution under vigorous stirring for 2 h to obtain homogenous suspension",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "Then, 0.2 g of previously prepared CdS–ZnO was added to the GO solution under vigorous stirring for 2 h to obtain homogenous suspension",
+       "value_num": 2,
+       "unit": "h"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "Then, 0.2 g of previously prepared CdS–ZnO was added to the GO solution under vigorous stirring for 2 h to obtain homogenous suspension",
+       "value_text": "vigorous stirring"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "solvothermal_treatment",
+     "description": "Autoclave treatment of the suspension (GO reduced to RGO).",
+     "quote": "the suspension is transferred to teflon-lined stainless steel autoclave and kept at 120 °C for 24 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "the suspension is transferred to teflon-lined stainless steel autoclave and kept at 120 °C for 24 h",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "the suspension is transferred to teflon-lined stainless steel autoclave and kept at 120 °C for 24 h",
+       "value_num": 24,
+       "unit": "h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "teflon-lined stainless steel autoclave",
+       "detail": null,
+       "quote": "the suspension is transferred to teflon-lined stainless steel autoclave and kept at 120 °C for 24 h"
+      }
+     ],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash with water.",
+     "quote": "The desired product was obtained after washing with water",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "The desired product was obtained after washing with water",
+       "value_text": "water"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Dry at 60 °C.",
+     "quote": "dried at 60 °C",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 60 °C",
+       "value_num": 60,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "drying_mode"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_T",
+     "technique": "XRD",
+     "instrument": "Agilent Supernova X-ray diffractometer",
+     "result": "GO peak at ~10° and RGO peak at ~24° absent; ZnO and CdS phases retained",
+     "quote": "In the ternary composite, the characteristic peak of GO around 2θ = 10° is absent confirming its reduction to RGO.",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "using the Agilent Supernova X-ray diffractometer using Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA",
+       "value_text": "Ni-filtered Cu Kα irradiation (λ = 0.1542 nm) at 45 kV and 40 mA"
+      },
+      {
+       "name": "scan_range",
+       "quote": "in 2θ ranging from 5 to 80°",
+       "value_text": "2θ ranging from 5 to 80°"
+      },
+      {
+       "name": "scan_step",
+       "quote": "with a scan rate of 2°·min−1",
+       "value_text": "scan rate of 2°·min−1"
+      }
+     ],
+     "not_stated": [
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "drs_T",
+     "technique": "UV_vis",
+     "instrument": "Perkin Elmer UV/VIS/NIR Lambda 750 spectrophotometer",
+     "result": "continuous absorption in 400–800 nm; edges for ZnO (3.01 eV) and CdS (2.11 eV)",
+     "quote": "Similar to the binary nanocomposite, in this case as well, two distinct absorption edges, corresponding to band gap values of 3.01 and 2.11 eV attributable to ZnO NR and CdS NP, respectively, could be evidenced",
+     "settings": [
+      {
+       "name": "band_gap_method",
+       "quote": "Plots obtained by the transformation of the Kubelka–Munk function vs the energy of light are presented in Figure 3",
+       "value_text": "transformation of the Kubelka–Munk function vs the energy of light"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "in which polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard",
+       "value_text": "polytetrafluroethylene (PTFE) polymer was employed as internal reflectance standard"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "uv_T",
+     "technique": "UV_vis",
+     "instrument": "Shimadzu UV-2450 spectrophotometer",
+     "result": "absorption near 250 nm (red shift of GO band at 227 nm)",
+     "quote": "Finally the absorption spectra of ternary nanocomposite (CdS–ZnO–RGO) shows an absorption near 250 nm, which indicates the red shift of the band at 227 nm in GO",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "quote": "recorded using Shimadzu UV-2450 spectrophotometer in the wavelength range from 200 to 800 nm",
+       "value_text": "200 to 800 nm"
+      }
+     ],
+     "not_stated": [
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "sem_T",
+     "technique": "SEM",
+     "instrument": "field-emission scanning electron microscope (FESEM) JFEI Nova Nano SEM-450",
+     "result": "CdS–ZnO on the surface of RGO",
+     "quote": "This binary nanocomposite (CdS–ZnO) on the surface of RGO can be seen in Figure 5c,d to form the ternary nanocomposite",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tem_T",
+     "technique": "TEM",
+     "instrument": "high resolution transmission electron microscope (HRTEM) FEI Tecnai G2 20 S-twin",
+     "result": "CdS–ZnO coupled with RGO sheets, 2D structure retained",
+     "quote": "It can be seen that the CdS–ZnO nanocomposite is distinctly coupled with RGO sheets and the original 2D structure of GO sheets is still retained even after hydrothermal treatment",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "FEI Tecnai G2 20 S-twin microscope operating at 200 kV",
+       "value_num": 200,
+       "unit": "kV"
+      }
+     ],
+     "not_stated": [
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "eds_T",
+     "technique": "EDS",
+     "instrument": "energy dispersive X-ray spectroscopy (EDAX) on the FEI Tecnai G2 20 S-twin HRTEM",
+     "result": "peaks of all constituent components",
+     "quote": "The existence of all the constituent components in the final binary and ternary nanocomposites has been proved by the presence of corresponding peaks in the energy dispersive X-ray spectra (EDAX), as shown in Figure 6e and Figure 6f.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "ftir_T",
+     "technique": "FTIR",
+     "instrument": "Agilent K8002AA Carry 660 FTIR instrument",
+     "result": "oxygen-containing group bands weakened",
+     "quote": "characteristic peaks of oxygen containing functional groups particularly at 1725 cm−1 are weakened and the O–H stretching peak decreases with some red shift",
+     "settings": [],
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "cat_vis_T",
+     "technique": "catalytic_test",
+     "instrument": "UV–vis spectrophotometer",
+     "result": "about 98% MO degraded in 90 min, visible light (solar simulator)",
+     "quote": "In accordance with the above equation, with CdS–ZnO–RGO ternary photocatalyst about 98% of dye was degraded in 90 min, under visible light illumination from a solar simulator, but with CdS–ZnO binary photocatalyst, only about 70% of dye was degraded.",
+     "settings": [
+      {
+       "name": "catalyst_mass",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_num": 10,
+       "unit": "mg"
+      },
+      {
+       "name": "reaction_volume",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_num": 50,
+       "unit": "mL"
+      },
+      {
+       "name": "reactant_concentration",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_text": "MO (10−5 M)"
+      },
+      {
+       "name": "reaction_temperature",
+       "quote": "monitoring the decomposition of MO dye at room temperature",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "pretreatment",
+       "quote": "Initially, the suspension was magnetically stirred in the dark for 30 min to attain adsorption–desorption equilibrium",
+       "value_text": "magnetically stirred in the dark for 30 min to attain adsorption–desorption equilibrium"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "by monitoring the main absorption peak (λ = 454 nm) of MO",
+       "value_text": "monitoring the main absorption peak (λ = 454 nm) of MO with a UV–vis spectrophotometer"
+      },
+      {
+       "name": "light_source",
+       "quote": "a solar simulator (OAI Trisol, AM 1.5, 100 mW·cm−2) having a UV cut-off filter (λ > 420 nm) was used for visible light illumination",
+       "value_text": "solar simulator (OAI Trisol, AM 1.5, 100 mW·cm−2) having a UV cut-off filter (λ > 420 nm)"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "about 98% of dye was degraded in 90 min, under visible light illumination from a solar simulator",
+       "value_num": 90,
+       "unit": "min"
+      }
+     ]
+    },
+    {
+     "id": "cat_sun_T",
+     "technique": "catalytic_test",
+     "instrument": "UV–vis spectrophotometer",
+     "result": "about 98% MO degraded within 60 min, natural sunlight",
+     "quote": "It is noteworthy that about 98% degradation of the dye could be achieved within 60 min, when the CdS–ZnO–RGO ternary nanocomposite was used as the photocatalyst, which is 30 min shorter than under the simulated solar light.",
+     "settings": [
+      {
+       "name": "catalyst_mass",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_num": 10,
+       "unit": "mg"
+      },
+      {
+       "name": "reaction_volume",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_num": 50,
+       "unit": "mL"
+      },
+      {
+       "name": "reactant_concentration",
+       "quote": "10 mg of photocatalysts (CdS–ZnO or CdS–ZnO–GO) was added to 50 mL of the aqueous solution of MO (10−5 M)",
+       "value_text": "MO (10−5 M)"
+      },
+      {
+       "name": "reaction_temperature",
+       "quote": "monitoring the decomposition of MO dye at room temperature",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "pretreatment",
+       "quote": "Initially, the suspension was magnetically stirred in the dark for 30 min to attain adsorption–desorption equilibrium",
+       "value_text": "magnetically stirred in the dark for 30 min to attain adsorption–desorption equilibrium"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "by monitoring the main absorption peak (λ = 454 nm) of MO",
+       "value_text": "monitoring the main absorption peak (λ = 454 nm) of MO with a UV–vis spectrophotometer"
+      },
+      {
+       "name": "light_source",
+       "quote": "Another set of experiments were performed under natural sunlight and the light intensity was measured using a LX-101A digital luxmeter",
+       "value_text": "natural sunlight; light intensity measured using a LX-101A digital luxmeter"
+      },
+      {
+       "name": "light_source",
+       "quote": "under natural sunlight illumination having an intensity of 9.5 × 104 lux",
+       "value_text": "natural sunlight illumination having an intensity of 9.5 × 104 lux"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "about 98% degradation of the dye could be achieved within 60 min",
+       "value_num": 60,
+       "unit": "min"
+      }
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "elemental_composition_nominal_ratio_CdS_ZnO_RGO",
+     "quote": "Based on the molar ratio of the precursors used in the synthesis, the ratio of CdS to ZnO is expected to be 1:1 while having 1 wt % of RGO in this ternary nanocomposite.",
+     "value_text": "CdS to ZnO ratio expected to be 1:1 with 1 wt % of RGO (from the molar ratio of precursors)",
+     "measured_by": "not_stated"
+    },
+    {
+     "property": "phase",
+     "quote": "all peaks that are ascribable to ZnO and CdS structures are evident, which demonstrates that the same crystal phases are retained in both binary (CdS–ZnO) and ternary (CdS–ZnO–RGO) nanocomposites",
+     "value_text": "same crystal phases (ZnO and CdS) retained",
+     "measured_by": "xrd_T"
+    },
+    {
+     "property": "xrd_peak_intensity_GO_peak_10deg",
+     "quote": "In the ternary composite, the characteristic peak of GO around 2θ = 10° is absent confirming its reduction to RGO.",
+     "value_text": "absent",
+     "measured_by": "xrd_T"
+    },
+    {
+     "property": "xrd_peak_intensity_RGO_peak_24deg",
+     "quote": "The characteristic diffraction peak around 2θ = 24° due to RGO is also absent in the ternary composite, which indicates that RGO sheets are not stacked due to the CdS–ZnO composite which inhibits the stacking.",
+     "value_text": "absent",
+     "measured_by": "xrd_T"
+    },
+    {
+     "property": "absorption_peak_visible_continuum",
+     "quote": "The addition of GO to form the ternary composite (CdS–ZnO–RGO) results in continuous absorption in the region of 400–800 nm.",
+     "value_text": "continuous absorption in the region of 400–800 nm",
+     "measured_by": "drs_T"
+    },
+    {
+     "property": "band_gap_ZnO_component",
+     "quote": "corresponding to band gap values of 3.01 and 2.11 eV attributable to ZnO NR and CdS NP, respectively",
+     "value_num": 3.01,
+     "unit": "eV",
+     "measured_by": "drs_T"
+    },
+    {
+     "property": "band_gap_CdS_component",
+     "quote": "corresponding to band gap values of 3.01 and 2.11 eV attributable to ZnO NR and CdS NP, respectively",
+     "value_num": 2.11,
+     "unit": "eV",
+     "measured_by": "drs_T"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "shows an absorption near 250 nm, which indicates the red shift of the band at 227 nm in GO",
+     "value_num": 250,
+     "unit": "nm",
+     "measured_by": "uv_T"
+    },
+    {
+     "property": "morphology",
+     "quote": "This binary nanocomposite (CdS–ZnO) on the surface of RGO can be seen in Figure 5c,d to form the ternary nanocomposite",
+     "value_text": "CdS–ZnO on the surface of RGO",
+     "measured_by": "sem_T"
+    },
+    {
+     "property": "morphology",
+     "quote": "the CdS–ZnO nanocomposite is distinctly coupled with RGO sheets and the original 2D structure of GO sheets is still retained even after hydrothermal treatment",
+     "value_text": "CdS–ZnO coupled with RGO sheets; original 2D structure retained",
+     "measured_by": "tem_T"
+    },
+    {
+     "property": "elemental_composition",
+     "quote": "The existence of all the constituent components in the final binary and ternary nanocomposites has been proved by the presence of corresponding peaks in the energy dispersive X-ray spectra (EDAX), as shown in Figure 6e and Figure 6f.",
+     "value_text": "peaks corresponding to all constituent components present",
+     "measured_by": "eds_T"
+    },
+    {
+     "property": "elemental_composition_elements_labelled",
+     "quote": "TEM Images (a) GO sheets, (b) CdS NP, (c) CdS–ZnO binary composite, (d) CdS–ZnO–RGO ternary composite and EDX spectrum (e) CdS–ZnO and (f) CdS–ZnO–RGO nanocomposites, respectively.",
+     "value_text": "peaks labelled C, O, Zn, S, Cd",
+     "measured_by": "eds_T",
+     "from_figure": "Fig. 6f"
+    },
+    {
+     "property": "ftir_band_c_double_o_carbonyl",
+     "quote": "characteristic peaks of oxygen containing functional groups particularly at 1725 cm−1 are weakened and the O–H stretching peak decreases with some red shift",
+     "value_text": "peak at 1725 cm−1 weakened",
+     "measured_by": "ftir_T"
+    },
+    {
+     "property": "ftir_band_oh_stretching",
+     "quote": "characteristic peaks of oxygen containing functional groups particularly at 1725 cm−1 are weakened and the O–H stretching peak decreases with some red shift",
+     "value_text": "decreases with some red shift",
+     "measured_by": "ftir_T"
+    },
+    {
+     "property": "catalytic_performance_dye_degradation_visible_90min",
+     "quote": "In accordance with the above equation, with CdS–ZnO–RGO ternary photocatalyst about 98% of dye was degraded in 90 min, under visible light illumination from a solar simulator, but with CdS–ZnO binary photocatalyst, only about 70% of dye was degraded.",
+     "value_num": 98,
+     "unit": "%",
+     "measured_by": "cat_vis_T"
+    },
+    {
+     "property": "catalytic_performance_dye_degradation_sunlight_60min",
+     "quote": "It is noteworthy that about 98% degradation of the dye could be achieved within 60 min, when the CdS–ZnO–RGO ternary nanocomposite was used as the photocatalyst, which is 30 min shorter than under the simulated solar light.",
+     "value_num": 98,
+     "unit": "%",
+     "measured_by": "cat_sun_T"
+    },
+    {
+     "property": "catalytic_performance_completion_time_visible_table1",
+     "quote": "CdS–ZnO–RGO | hydrothermal | visible light | 1.0 × 10−5 M (MO) | 90 | this work",
+     "value_num": 90,
+     "unit": "min",
+     "measured_by": "cat_vis_T"
+    },
+    {
+     "property": "catalytic_performance_completion_time_sunlight_table1",
+     "quote": "sunlight | 1.0 × 10−5 M (MO) | 60",
+     "value_num": 60,
+     "unit": "min",
+     "measured_by": "cat_sun_T"
+    },
+    {
+     "property": "kinetics_fit_order_visible",
+     "quote": "The corresponding kinetic curves are shown in Figure 10, which indicates that in all the cases the reaction follows zero-order kinetics similar to other reports in literature",
+     "value_text": "zero-order kinetics",
+     "measured_by": "cat_vis_T"
+    },
+    {
+     "property": "kinetics_fit_order_sunlight",
+     "quote": "The corresponding kinetic curves are shown in Figure 10, which indicates that in all the cases the reaction follows zero-order kinetics similar to other reports in literature",
+     "value_text": "zero-order kinetics",
+     "measured_by": "cat_sun_T"
+    },
+    {
+     "property": "catalytic_performance_C_C0_visible_30min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 71,
+     "unit": "%",
+     "measured_by": "cat_vis_T",
+     "from_figure": "Fig. 10a"
+    },
+    {
+     "property": "catalytic_performance_C_C0_visible_60min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 34,
+     "unit": "%",
+     "measured_by": "cat_vis_T",
+     "from_figure": "Fig. 10a"
+    },
+    {
+     "property": "catalytic_performance_C_C0_visible_90min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 7,
+     "unit": "%",
+     "measured_by": "cat_vis_T",
+     "from_figure": "Fig. 10a"
+    },
+    {
+     "property": "catalytic_performance_C_C0_sunlight_30min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 50,
+     "unit": "%",
+     "measured_by": "cat_sun_T",
+     "from_figure": "Fig. 10b"
+    },
+    {
+     "property": "catalytic_performance_C_C0_sunlight_60min",
+     "quote": "Kinetic curves for degradation of MO under (a) visible light irradiation from a solar simulator and (b) natural sunlight. The lines are to guide the eye.",
+     "value_num": 6,
+     "unit": "%",
+     "measured_by": "cat_sun_T",
+     "from_figure": "Fig. 10b"
+    }
+   ]
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "CdS–ZnO core-shell coupled with RGO",
+   "property": "photocatalytic_completion_time",
+   "value_num": 80,
+   "unit": "min",
+   "conditions": "synthesis route: soft chemical route; irradiation: simulated solar radiations; pollutant: 3.0 × 10−5 M (MB)",
+   "ref_id": "R75",
+   "quote": "CdS–ZnO core-shell coupled with RGO | soft chemical route | simulated solar radiations | 3.0 × 10−5 M (MB) | 80",
+   "route": null
+  },
+  {
+   "material": "ZnO–RGO–CdS",
+   "property": "photocatalytic_completion_time",
+   "value_num": 240,
+   "unit": "min",
+   "conditions": "synthesis route: hydrothermal; irradiation: 11 W UV lamp; pollutant: 1.0 × 10−5 M (MB); ca.",
+   "ref_id": "R76",
+   "quote": "ZnO–RGO–CdS | hydrothermal | 11 W UV lamp | 1.0 × 10−5 M (MB) | ca. 240",
+   "route": null
+  },
+  {
+   "material": "ZnO–graphene",
+   "property": "photocatalytic_completion_time",
+   "value_num": 90,
+   "unit": "min",
+   "conditions": "synthesis route: solvothermal; irradiation: halogen lamp; pollutant: 6.0 × 10−6 M (MO)",
+   "ref_id": "R32",
+   "quote": "ZnO–graphene | solvothermal | halogen lamp | 6.0 × 10−6 M (MO) | 90",
+   "route": null
+  },
+  {
+   "material": "3D grapene–ZnO NR",
+   "property": "photocatalytic_completion_time",
+   "value_num": 60,
+   "unit": "min",
+   "conditions": "synthesis route: CVD and hydrothermal; irradiation: UV light 300 W; pollutant: 5.0 × 10−3 M (MO); ca.",
+   "ref_id": "R77",
+   "quote": "3D grapene–ZnO NR | CVD and hydrothermal | UV light 300 W | 5.0 × 10−3 M (MO) | ca. 60",
+   "route": null
+  },
+  {
+   "material": "graphene–ZnO NR film",
+   "property": "photocatalytic_completion_time",
+   "value_num": 450,
+   "unit": "min",
+   "conditions": "synthesis route: hydrothermal; irradiation: 250 W Hg lamp (UV); pollutant: 3.0 M (MB); ca.",
+   "ref_id": "R78",
+   "quote": "graphene–ZnO NR film | hydrothermal | 250 W Hg lamp (UV) | 3.0 M (MB) | ca. 450",
+   "route": null
+  },
+  {
+   "material": "CdS–RGO composite",
+   "property": "photocatalytic_completion_time",
+   "value_num": 120,
+   "unit": "min",
+   "conditions": "synthesis route: wet chemical method; irradiation: UV; pollutant concentration: unknown (MO)",
+   "ref_id": "R79",
+   "quote": "CdS–RGO composite | wet chemical method | UV | unknown (MO) | 120",
+   "route": null
+  },
+  {
+   "material": "RGO–ZnO NR composite",
+   "property": "photocatalytic_completion_time",
+   "value_num": 90,
+   "unit": "min",
+   "conditions": "synthesis route: hydrothermal; irradiation: 500 W Hg Lamp (UV); pollutant: 1.0 × 10−5 M (Rh B)",
+   "ref_id": "R37",
+   "quote": "RGO–ZnO NR composite | hydrothermal | 500 W Hg Lamp (UV) | 1.0 × 10−5 M (Rh B) | 90",
+   "route": null
+  },
+  {
+   "material": "CdS–graphene composite",
+   "property": "photocatalytic_completion_time",
+   "value_num": 360,
+   "unit": "min",
+   "conditions": "synthesis route: hydrothermal; irradiation: 500 W Xe lamp; pollutant: 3.0 × 10−5 (MO)",
+   "ref_id": "R80",
+   "quote": "CdS–graphene composite | hydrothermal | 500 W Xe lamp | 3.0 × 10−5 (MO) | 360",
+   "route": null
+  },
+  {
+   "material": "ZnO",
+   "property": "band_gap",
+   "ref_id": "R17",
+   "quote": "Zinc oxide is a well-known semiconductor with a band gap energy of 3.37 eV",
+   "value_num": 3.37,
+   "unit": "eV"
+  },
+  {
+   "material": "ZnO",
+   "property": "exciton_binding_energy",
+   "ref_id": "R17",
+   "quote": "high exciton binding energy (60 meV)",
+   "value_num": 60,
+   "unit": "meV"
+  },
+  {
+   "material": "CdS nanoparticles",
+   "property": "band_gap",
+   "ref_id": "R23",
+   "quote": "due to the narrow band gap (2.42 eV)",
+   "value_num": 2.42,
+   "unit": "eV"
+  },
+  {
+   "material": "graphene",
+   "property": "theoretical_specific_surface_area",
+   "ref_id": "R29",
+   "quote": "high theoretical specific surface area (2630 m2·g−1)",
+   "value_num": 2630,
+   "unit": "m2·g−1"
+  },
+  {
+   "material": "CdS",
+   "property": "conduction_band_potential",
+   "ref_id": "R62",
+   "quote": "The CB potential of CdS are ECB = −0.66 eV vs NHE",
+   "value_num": -0.66,
+   "unit": "eV vs NHE"
+  },
+  {
+   "material": "CdS–ZnO",
+   "property": "charge_transfer_time",
+   "ref_id": "R64",
+   "quote": "it has been reported that this transfer occurs very rapidly in less than 18 ps",
+   "value_text": "less than 18 ps"
+  },
+  {
+   "material": "ZnO",
+   "property": "work_function",
+   "ref_id": "R65",
+   "quote": "The work function of ZnO is 5.2–5.3 eV",
+   "value_text": "5.2–5.3 eV"
+  },
+  {
+   "material": "graphene",
+   "property": "work_function",
+   "ref_id": "R65",
+   "quote": "that of graphene is 4.5 eV",
+   "value_num": 4.5,
+   "unit": "eV"
+  },
+  {
+   "material": "graphene",
+   "property": "fermi_level",
+   "ref_id": "R66",
+   "quote": "the Fermi level of graphene (−0.08 V vs NHE)",
+   "value_num": -0.08,
+   "unit": "V vs NHE"
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare quatre matériaux par voie humide, de l'oxyde de graphène (méthode de Hummers modifiée), des nanobâtonnets de ZnO (solvothermal), des nanoparticules de CdS (précipitation avec PVP, reflux à 70 °C) et un composite binaire CdS–ZnO (hydrothermal à 140 °C), puis un composite ternaire CdS–ZnO–RGO (traitement en autoclave à 120 °C avec l'oxyde de graphène). Il les caractérise par DRX, UV-vis, MEB, MET, IRTF et EDX, et compare l'activité photocatalytique du binaire et du ternaire sur la dégradation du méthylorange, sous simulateur solaire à filtre visible et sous lumière solaire naturelle."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir quel rôle joue le support d'oxyde de graphène réduit (RGO) et quel rôle joue la source d'irradiation (visible seul ou soleil complet) sur l'activité photocatalytique des nanostructures CdS–ZnO."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Deux paramètres de test sont balayés : la présence de RGO (binaire contre ternaire) et la source de lumière (simulateur solaire filtré à λ > 420 nm contre soleil naturel contenant UV et visible). La synthèse n'est pas balayée : une seule condition par matériau."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Avec RGO, environ 98 % du colorant est dégradé contre environ 70 % sans RGO, dans les deux sources de lumière ; le soleil naturel raccourcit le temps nécessaire de 90 à 60 min pour les deux catalyseurs.",
+   "quote": "Substantial improvement in the photocatalytic activity can be observed for both binary and ternary nanocomposites as shown by the histogram in Figure 11."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs attribuent l'avantage du ternaire à une meilleure séparation des charges, un transfert de charge facile et une forte adsorption du colorant sur RGO, et l'avantage du soleil à la génération de paires électron-trou dans les deux semi-conducteurs.",
+   "quote": "The RGO-supported CdS–ZnO nanocomposites exhibits considerably better photocatalytic activity compared to its unsupported counterpart, which could be attributed to the enhanced photo-generated charge separation, facile charge transfer and strong adsorption of dye on to RGO."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdS-ZnO-RGO",
+   "text": "Selon les auteurs, l'oxyde de graphène est réduit en RGO pendant le traitement en autoclave : les fonctions oxygénées (bande à 1725 cm−1) s'affaiblissent.",
+   "quote": "This is mainly attributed to the loss of oxygen containing functional groups and the reduction of GO to RGO after the hydrothermal treatment"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "GO",
+   "text": "Dans la méthode de Hummers, H2SO4 concentré intercale le graphite, KMnO4 et NaNO3 l'oxydent en graphite oxydé (groupes époxy, hydroxyle, carbonyle) ; l'eau hydrolyse l'excès d'oxydant en exothermie (95–98 °C) et H2O2 réduit le manganèse restant en Mn2+ soluble. L'ultrasonication exfolie ensuite le graphite oxydé en feuillets de GO."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZnO-NR",
+   "text": "Probablement, ZnCl2 donne en milieu très basique des hydroxozincates Zn(OH)4(2−), qui se déshydratent à 180 °C en autoclave en germes de ZnO wurtzite ; l'anisotropie de croissance le long de l'axe c, favorisée par le milieu éthanol-eau basique, donne les bâtonnets."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CdS-NP",
+   "text": "Probablement, Cd2+ et S2− précipitent aussitôt en CdS ; le PVP s'adsorbe à la surface et limite l'agglomération et la croissance, le pH voisin de 10 (ammoniaque, formation de complexes amminés de Cd) ralentit la libération de Cd2+ et le reflux à 70 °C mûrit les particules."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CdS-ZnO",
+   "text": "Probablement, Zn2+ forme Zn(OH)2 ou des hydroxozincates à pH voisin de 8, tandis que l'acide thioglycolique complexe Cd2+ par son thiol et sert de source de soufre par décomposition thermique en autoclave (140 °C, 48 h) ; CdS et ZnO se forment alors ensemble, d'où des particules de CdS sur les bâtonnets de ZnO."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CdS-ZnO-RGO",
+   "text": "On attend que, dans l'éthanol à 120 °C, les groupes oxygénés de GO soient partiellement éliminés (éthanol comme réducteur doux) et que les feuillets RGO se couplent au CdS–ZnO par interactions de surface ; la bande de GO à 10° disparaît car les feuillets ne sont plus empilés."
+  },
+  {
+   "type": "securite_auteurs",
+   "route": "GO",
+   "text": "Les auteurs refroidissent le mélange graphite, NaNO3 et H2SO4 dans un bain de glace et ajoutent KMnO4 lentement pour maîtriser la température.",
+   "quote": "stirred in 23 mL of concentrated H2SO4 in an ice bath to maintain a reaction temperature below 10 °C"
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "Plusieurs dangers ne sont pas mentionnés : le cadmium (acétate, CdS) est toxique et cancérogène, à manipuler en boîte ou sous hotte avec gestion des déchets ; H2SO4 concentré et KMnO4 forment un mélange très oxydant et exothermique (risque d'explosion de Mn2O7 si la température monte) ; l'eau ajoutée au milieu sulfurique chauffe jusqu'à 95–98 °C ; Na2S libère H2S en milieu acide ; l'acide thioglycolique est toxique et malodorant ; les autoclaves fermés à 120–180 °C sont sous pression ; NaOH concentré et l'ammoniaque sont corrosifs ; les poudres nanométriques doivent être manipulées sous hotte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Pour refaire les matériaux, il manque : les rendements, les vitesses de centrifugation et les durées de séparation (ZnO, binaire), le volume d'éthanol et le volume de NaOH ou de solution de Cd dans plusieurs étapes, la quantité de ZnCl2 et d'acétate de Cd du composite binaire (seules des concentrations 0,2 M sont données), les puretés, le solvant de la solution de NaOH du ZnO, les vitesses de chauffe et de refroidissement des autoclaves, le volume de l'autoclave du ternaire, les séparations (filtration ou centrifugation) du CdS et du ternaire, les conditions de séchage du binaire (température, durée) et la masse exacte de catalyseur par essai."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les valeurs de dégradation sont contradictoires : le texte et l'histogramme (Fig. 11) donnent environ 98 % et 70 %, mais les courbes C/C0 de la Fig. 10 lues graphiquement donnent 7 % et 29 % de colorant résiduel à 90 min (soit environ 93 % et 71 % dégradés) sous simulateur, et 6 % et 32 % à 60 min au soleil. Les spectres de la Fig. 9 sont compatibles avec 98 %."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Aucune annexe n'est citée par l'article. Les positions de pics de la Fig. 1 pour ZnO et CdS, lues sur l'axe, semblent décalées de 3 à 4° vers les bas angles par rapport aux valeurs du texte ; les valeurs du texte sont retenues."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "GO",
+   "ref_id": "R36",
+   "role": "protocole_adapte",
+   "quote": "Graphene oxide (GO) was synthesized from natural graphite flakes using a modified Hummers’ method"
+  },
+  {
+   "route": "GO",
+   "ref_id": "R34",
+   "role": "protocole_complet",
+   "quote": "As described in literature"
+  },
+  {
+   "route": "ZnO-NR",
+   "ref_id": "R37",
+   "role": "protocole_adapte",
+   "quote": "ZnO nanorods (NR) were synthesized through a previously reported solvothermal method"
+  },
+  {
+   "route": "CdS-NP",
+   "ref_id": "R38",
+   "role": "protocole_adapte",
+   "quote": "CdS nanoparticles were synthesized as per a previously reported method"
+  },
+  {
+   "route": "CdS-ZnO",
+   "ref_id": "R39",
+   "role": "protocole_adapte",
+   "quote": "CdS–ZnO binary nanocomposite was prepared by employing a reported hydrothermal strategy"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "CdS-ZnO (voie)",
+   "issue": "L'introduction et la section MEB disent que ZnO NR et CdS NP sont couplés, mais le protocole décrit est une synthèse hydrothermale en un pot à partir de ZnCl2, acétate de Cd et acide thioglycolique, sans réutiliser les ZnO NR ni les CdS NP préparés. Voie de base indépendante retenue (lecture littérale des Méthodes)."
+  },
+  {
+   "where": "CdS-ZnO step 4 (acide thioglycolique)",
+   "issue": "Le rôle de l'acide thioglycolique n'est pas dit (source de soufre, ligand ou agent de coiffage) ; aucun sulfure n'est ajouté par ailleurs. Rôle `precursor` retenu, mécanisme laissé à l'annotation d'analyse."
+  },
+  {
+   "where": "CdS-ZnO-RGO step 4",
+   "issue": "Les auteurs parlent de traitement hydrothermal, mais la suspension de GO et de CdS–ZnO est dans l'éthanol : action `solvothermal_treatment` et méthode `solvothermal` retenues d'après les définitions du vocabulaire. Le volume de l'autoclave n'est pas donné."
+  },
+  {
+   "where": "Photocatalyse, section Méthodes",
+   "issue": "Le texte écrit « CdS–ZnO or CdS–ZnO–GO » ; lu comme le ternaire CdS–ZnO–RGO (le reste de l'article ne mentionne que ce ternaire). Le texte de la section FTIR écrit aussi « ZnO NP » pour les nanobâtonnets : lu comme ZnO-NR."
+  },
+  {
+   "where": "Dégradation du colorant (Fig. 10 contre texte et Fig. 11)",
+   "issue": "Texte : environ 98 % (ternaire) et 70 % (binaire) à 90 min sous simulateur, et environ 98 % et 70 % à 60 min au soleil. Courbes C/C0 de la Fig. 10 (lues à ±2 %) : ternaire 7 % résiduel à 90 min, binaire 29 % ; au soleil à 60 min ternaire 6 %, binaire 32 %. L'histogramme Fig. 11 montre environ 98 et 70 % (simulateur) et environ 97,5 et 69 % (soleil). Valeurs du texte retenues ; les lectures de la Fig. 10 sont des résultats à part (`catalytic_performance_C_C0_…`). Les valeurs des figures sont lues sur le graphique, à 2 chiffres significatifs au plus."
+  },
+  {
+   "where": "CdS-NP band gap",
+   "issue": "Le texte donne environ 2,12 eV (spectre DRS) pour CdS NP, la Fig. 3b indique Eg = 2,20 eV. Les deux sont extraites (propriétés `band_gap` et `band_gap_kubelka_munk_plot`)."
+  },
+  {
+   "where": "CdS-NP XRD",
+   "issue": "Les plans (111), (220), (311) sont attribués à CdS « hexagonal » (JCPDS 42-1411), alors que ces indices correspondent à la structure cubique blende ; lecture littérale des auteurs conservée."
+  },
+  {
+   "where": "GO XRD (graphite)",
+   "issue": "Les pics du graphite de départ (26,5° et 54,3°, distances 0,34 et 0,17 nm) sont donnés pour le graphite commercial, qui n'a pas de voie : leurs valeurs sont rangées sur la voie GO (propriétés `…_graphite_precursor_…`)."
+  },
+  {
+   "where": "GO step 12",
+   "issue": "Le séchage sous vide se fait « at same temperature » : 40 °C d'après la phrase précédente (évaporateur rotatif), mais la citation ne le dit pas chiffre à l'appui, d'où `value_text: same temperature`."
+  },
+  {
+   "where": "Fig. 1 (XRD)",
+   "issue": "Les positions des pics de ZnO et de CdS lues sur l'axe de la Fig. 1 semblent décalées de 3 à 4° vers les bas angles par rapport au texte (par ex. le pic (100) de ZnO vers 28° sur la figure contre 31,67° dans le texte) ; valeurs du texte retenues, aucune valeur lue sur cette figure."
+  },
+  {
+   "where": "Photocatalyse, éclairement solaire",
+   "issue": "« 9.5 × 104 lux » : l'exposant est aplati dans le texte source, probablement 9,5 × 10^4 lux ; recopié tel quel."
+  },
+  {
+   "where": "Table 1 (comparaisons)",
+   "issue": "Plusieurs rangées sont suspectes (« 3.0 M (MB) » pour la rangée graphene–ZnO NR film, « 5.0 × 10−3 M (MO) » pour 3D graphene–ZnO NR) ; recopiées telles quelles. La colonne « tcompletion » n'est pas définie dans l'article (lue comme temps pour atteindre la fin de la dégradation, en minutes)."
+  },
+  {
+   "where": "Figures lues",
+   "issue": "Figures ouvertes : Fig. 1, 2, 3, 6, 10 et 11 ; valeurs lues sur Fig. 3 (étiquettes de bande interdite), Fig. 6e et 6f (éléments étiquetés) et Fig. 10 (C/C0 à 30, 60 et 90 min). Fig. 9 (spectres d'absorbance) non quantifiée."
+  }
+ ]
+}
