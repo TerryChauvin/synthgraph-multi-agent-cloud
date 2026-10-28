@@ -23,3 +23,4 @@
 - PMC9059895 : essais à blanc sans catalyseur rangés sur CdS/Cu7S4-5 avec `no_catalyst` dans le nom (8e cas témoins → résultat attribué à un échantillon qui n'a pas été utilisé) ; 231 résultats.
 - PMC9369949 : 3e cas une seule citation par réactif → pureté 99 % et quantité de tableau non portables ensemble (besoin : citations multiples par champ de réactif).
 - PMC9418622 : mélanges de lumière blanche (tableau 3) modélisés en 5 voies `calcul` avec composants en réactifs intermediate → vérifié : spectres combinés par calcul (« estimated », « spectral data were analysed »), le kind calcul est juste.
+- PMC4973716 : 9e cas témoins (alun, PBS, Rabipur, saline) en outcomes suffixés de la voie voisine ; unité « ° » ajoutée par l'agent pour des pics « at 2θ » sans unité (déduction légère, contraire à la règle « rien de déduit »).
