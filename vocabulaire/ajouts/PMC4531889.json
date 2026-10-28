@@ -1,0 +1,51 @@
+{
+ "pmcid": "PMC4531889",
+ "ajouts": [
+  {
+   "type": "methode",
+   "nom": "chemical_bath_deposition",
+   "definition": "Croissance d'un film ou d'un réseau de nanostructures (nanobâtonnets de ZnO, par exemple) sur un substrat immergé dans une solution aqueuse de précurseurs chauffée à basse température (moins de 100 °C, étuve ou bain), à pression ambiante et sans autoclave scellé, le plus souvent sur une couche de germination ; les auteurs l'appellent souvent hydrothermale.",
+   "ecarte": "hydrothermal: définition fondée sur un récipient fermé au-dessus de 100 °C sous pression autogène, ce qui n'est pas le cas d'une croissance à 90 °C en solution ouverte; solution_reflux: pas de reflux ni de substrat immergé sur une couche de germination; room_temperature_solution: la solution est chauffée à 90 °C",
+   "date": "2026-10-28 22:05"
+  },
+  {
+   "type": "propriete",
+   "nom": "photocurrent",
+   "definition": "Courant mesuré sous éclairement (UV, visible) aux bornes d'un photodétecteur ou d'un dispositif photoconducteur pour une tension appliquée donnée ; préciser la tension dans le nom ou la citation (photocurrent_10V).",
+   "ecarte": "Jsc: courant de court-circuit d'une cellule solaire à tension nulle, pas un photocourant sous polarisation; conductivity: grandeur du matériau et non courant d'un dispositif; retention_stability: mesure une conservation au cours du temps",
+   "date": "2026-10-28 22:05",
+   "techniques": [
+    "device_test"
+   ],
+   "unite": "A"
+  },
+  {
+   "type": "propriete",
+   "nom": "photocurrent_on_off_ratio",
+   "definition": "Rapport entre le courant sous éclairement et le courant dans le noir (rapport on-off) d'un photodétecteur à une tension donnée ; préciser la tension dans le nom ou la citation.",
+   "ecarte": "photocurrent: courant lui-même, pas un rapport; fill_factor: facteur de forme d'une cellule solaire",
+   "date": "2026-10-28 22:05",
+   "techniques": [
+    "device_test"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "photoresponse_time",
+   "definition": "Durée caractéristique de la réponse transitoire d'un photodétecteur à un éclairement commuté (temps de montée, de décroissance ou de retour à e−1 du courant, reset time).",
+   "ecarte": "PL_lifetime: durée de vie d'émission de photoluminescence et non réponse électrique d'un dispositif; kinetics_fit: constante cinétique d'une réaction ajustée",
+   "date": "2026-10-28 22:05",
+   "techniques": [
+    "device_test"
+   ],
+   "unite": "s"
+  },
+  {
+   "type": "reglage",
+   "nom": "input_optical_constants",
+   "definition": "Constantes optiques d'entrée d'une simulation optique (indice de réfraction complexe n + ik à une longueur d'onde, permittivité) prises dans la littérature ou mesurées, avec la longueur d'onde.",
+   "ecarte": "software: logiciel de calcul et non donnée d'entrée; functional_or_model: modèle ou fonctionnelle, pas les constantes du matériau; basis_or_cutoff: base ou énergie de coupure d'un calcul quantique",
+   "date": "2026-10-28 22:05"
+  }
+ ]
+}

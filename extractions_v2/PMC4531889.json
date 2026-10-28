@@ -1,0 +1,1187 @@
+{
+ "pmcid": "PMC4531889",
+ "format": 3,
+ "routes": [
+  {
+   "label": "ZnO-25mM-W10",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "device",
+   "material": {
+    "name": "ZnO nanorod array on ZnO seed layer between Au/Ti electrodes (MSM UV photodetector)",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "vertically aligned nanorod array"
+   },
+   "methods": [
+    "physical_vapor_deposition",
+    "chemical_bath_deposition",
+    "device_fabrication"
+   ],
+   "method": "photodétecteur MSM : électrodes Ti/Au par évaporation e-beam, couche de germination ZnO pulvérisée sous masque d'ombre, croissance de nanobâtonnets de ZnO en solution aqueuse à 90 °C (appelée hydrothermale par les auteurs)",
+   "quote": "Figure 1 displays the schematic diagram for the fabrication procedure of ZnO NRA-based MSM UV PDs: (a) selective exposure between two electrodes by a shadow mask, (b) deposition of the ZnO seed layer, and (c) hydrothermal growth of ZnO NRAs on the ZnO seed layer.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "titanium",
+     "formula": "Ti",
+     "role": "electrode",
+     "amount": 5,
+     "unit": "nm",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation"
+    },
+    {
+     "name": "gold",
+     "formula": "Au",
+     "role": "electrode",
+     "amount": 300,
+     "unit": "nm",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation"
+    },
+    {
+     "name": "SiO2-coated Si substrate",
+     "formula": null,
+     "role": "substrate",
+     "quote": "First, we patterned Ti/Au electrodes on the SiO2-coated Si substrate."
+    },
+    {
+     "name": "zinc oxide (sputtered seed layer)",
+     "formula": "ZnO",
+     "role": "precursor",
+     "amount": 50,
+     "unit": "nm",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment."
+    },
+    {
+     "name": "argon",
+     "formula": "Ar",
+     "role": "gas",
+     "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment."
+    },
+    {
+     "name": "zinc nitrate hexahydrate",
+     "formula": "Zn(NO3)2·6H2O",
+     "role": "precursor",
+     "amount": 25,
+     "unit": "mM",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "For hydrothermal synthesis, the growth solution was prepared with 25 mM of concentration."
+    },
+    {
+     "name": "hexamethylenetetramine",
+     "formula": "C6H12N4",
+     "role": "base",
+     "amount": 25,
+     "unit": "mM",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "For hydrothermal synthesis, the growth solution was prepared with 25 mM of concentration."
+    },
+    {
+     "name": "de-ionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 200,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Here, the growth solution was prepared by dissolving zinc nitrate hexahydrate and hexamethylenetetramine with equimolar concentrations (5–50 mM) in 200 mL of de-ionized (DI) water at room temperature."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "vacuum_deposit",
+     "description": "Dépôt par évaporation à faisceau d'électrons d'une couche de Ti puis d'Au sur le substrat Si recouvert de SiO2.",
+     "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation",
+     "parameters": [
+      {
+       "name": "thickness_ti",
+       "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation",
+       "value_num": 5,
+       "unit": "nm"
+      },
+      {
+       "name": "thickness_au",
+       "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation",
+       "value_num": 300,
+       "unit": "nm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "e-beam evaporator",
+       "detail": null,
+       "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation"
+      }
+     ],
+     "not_stated": [
+      "pressure",
+      "deposition_rate"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "lithography",
+     "description": "Définition du motif des électrodes par photolithographie conventionnelle et lift-off ; l'écart entre les deux électrodes (largeur de canal) vaut 10 μm pour l'échantillon de référence.",
+     "quote": "the patterns were transferred by conventional photolithography and lift-off processes",
+     "parameters": [
+      {
+       "name": "dimension_channel_width",
+       "quote": "for the same channel width (i.e., gap distance between two electrodes) of 10 μm",
+       "value_num": 10,
+       "unit": "μm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "resist",
+      "exposure_conditions"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "vacuum_deposit",
+     "description": "Dépôt par pulvérisation cathodique RF magnétron d'une couche de ZnO de 50 nm entre les électrodes, à travers un masque d'ombre positionné à la main.",
+     "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+     "parameters": [
+      {
+       "name": "thickness_zno_seed",
+       "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+       "value_num": 50,
+       "unit": "nm"
+      },
+      {
+       "name": "pressure",
+       "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+       "value_num": 6,
+       "unit": "mTorr"
+      },
+      {
+       "name": "power",
+       "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+       "value_num": 100,
+       "unit": "W"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+       "value_text": "Ar"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "RF magnetron sputtering system",
+       "detail": null,
+       "quote": "After that, the sample was covered by the shadow mask during the radio frequency (RF) magnetron sputtering process."
+      },
+      {
+       "type": "shadow mask",
+       "detail": "ouverture placée manuellement entre les électrodes sous microscope",
+       "quote": "As depicted in Fig. 1a, the opened region in the shadow mask could be covered manually between the patterned electrodes under microscope observation."
+      }
+     ],
+     "not_stated": [
+      "deposition_rate",
+      "sputtering_target",
+      "substrate_temperature"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "dissolve",
+     "description": "Dissolution du nitrate de zinc hexahydraté et de l'hexaméthylènetétramine à concentrations équimolaires dans 200 mL d'eau désionisée à température ambiante.",
+     "quote": "Here, the growth solution was prepared by dissolving zinc nitrate hexahydrate and hexamethylenetetramine with equimolar concentrations (5–50 mM) in 200 mL of de-ionized (DI) water at room temperature.",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "Here, the growth solution was prepared by dissolving zinc nitrate hexahydrate and hexamethylenetetramine with equimolar concentrations (5–50 mM) in 200 mL of de-ionized (DI) water at room temperature.",
+       "value_num": 200,
+       "unit": "mL"
+      },
+      {
+       "name": "temperature",
+       "quote": "Here, the growth solution was prepared by dissolving zinc nitrate hexahydrate and hexamethylenetetramine with equimolar concentrations (5–50 mM) in 200 mL of de-ionized (DI) water at room temperature.",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "ph"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "stir",
+     "description": "Agitation magnétique de la solution de croissance pendant 2 h.",
+     "quote": "For obtaining a homogeneous solution, it was stirred with a magnetic bar for 2 h.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "For obtaining a homogeneous solution, it was stirred with a magnetic bar for 2 h.",
+       "value_num": 2,
+       "unit": "h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirring bar",
+       "detail": null,
+       "quote": "For obtaining a homogeneous solution, it was stirred with a magnetic bar for 2 h."
+      }
+     ],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "transfer",
+     "description": "Immersion de l'échantillon (électrodes recouvertes de la couche de germination ZnO) dans la solution de croissance.",
+     "quote": "Then, to grow the ZnO NRAs, the ZnO seed layer-coated electrodes were immersed into the aqueous growth solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "container",
+      "sample_orientation"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "react",
+     "description": "Croissance des nanobâtonnets de ZnO : l'échantillon immergé est placé dans une étuve à 90 °C pendant 5 h.",
+     "quote": "After immersing the sample, it was placed into an oven at 90 °C for 5 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "After immersing the sample, it was placed into an oven at 90 °C for 5 h.",
+       "value_num": 90,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "After immersing the sample, it was placed into an oven at 90 °C for 5 h.",
+       "value_num": 5,
+       "unit": "h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "After immersing the sample, it was placed into an oven at 90 °C for 5 h."
+      }
+     ],
+     "not_stated": [
+      "heating_rate",
+      "cooling",
+      "vessel"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "wash",
+     "description": "Retrait de l'échantillon puis rinçage à l'eau désionisée courante (le texte dit « dried by flowing DI water »).",
+     "quote": "Finally, the sample was carefully pulled out and dried by flowing DI water.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "Finally, the sample was carefully pulled out and dried by flowing DI water.",
+       "value_text": "DI water"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions",
+      "drying_mode"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": "FE-SEM LEO SUPRA 55 (Carl Zeiss, Germany)",
+     "result": "nanobâtonnets de ZnO verticaux, densément répartis entre les deux électrodes ; diamètre/hauteur ~30/573 nm à 5 mM et ~45/1350 nm à 25 mM",
+     "quote": "a field-emission scanning electron microscope (FE-SEM) (LEO SUPRA 55, Carl Zeiss, Germany)",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "value_text": "cross-sectional views",
+       "quote": "Figure 3a shows the cross-sectional views of FE-SEM images for the ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM."
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "diffractomètre Mac Science M18XHF-SRA",
+     "result": "structure hexagonale wurtzite (JCPDS 89-1397), pic (002) dominant à 2θ = 34.4° (croissance selon l'axe c) ; pic Au (111) des électrodes",
+     "quote": "an X-ray diffractometer (XRD) (Mac Science, M18XHF-SRA)",
+     "settings": [
+      {
+       "name": "reference_pattern",
+       "value_text": "JCPDS card no. 89-1397",
+       "quote": "According to the standard JCPDS card no. 89-1397, the ZnO XRD peaks are in good agreement with a hexagonal wurtzite crystal structure."
+      }
+     ],
+     "not_stated": [
+      "radiation",
+      "scan_range",
+      "scan_step",
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "iv_1",
+     "technique": "device_test",
+     "instrument": "système de caractérisation de semi-conducteurs Keithley 4200",
+     "result": "courbes I-V dans le noir et sous éclairement UV 365 nm, photocourant, rapport on-off",
+     "quote": "the photocurrent was measured by using a semiconductor characterization system (Keithley 4200) under 2.8 mW/cm2 of illumination using a 365-nm UV light-emitting diode",
+     "settings": [
+      {
+       "name": "illumination",
+       "value_num": 2.8,
+       "unit": "mW/cm2",
+       "quote": "the photocurrent was measured by using a semiconductor characterization system (Keithley 4200) under 2.8 mW/cm2 of illumination using a 365-nm UV light-emitting diode"
+      },
+      {
+       "name": "light_source",
+       "value_text": "365-nm UV light-emitting diode",
+       "quote": "the photocurrent was measured by using a semiconductor characterization system (Keithley 4200) under 2.8 mW/cm2 of illumination using a 365-nm UV light-emitting diode"
+      },
+      {
+       "name": "device_architecture",
+       "value_text": "metal-semiconductor-metal PD structure",
+       "quote": "thus creating a metal-semiconductor-metal PD structure"
+      },
+      {
+       "name": "measurement_conditions",
+       "value_text": "applied bias of 10 V under 365 nm of UV light illumination",
+       "quote": "exhibited a high photocurrent of 1.91 × 10−4 A at an applied bias of 10 V under 365 nm of UV light illumination"
+      },
+      {
+       "name": "measurement_conditions",
+       "value_text": "on-off ratio at 5 V of bias voltage",
+       "quote": "an on-off ratio of 25.3 at 5 V of bias voltage"
+      }
+     ],
+     "not_stated": [
+      "active_area"
+     ]
+    },
+    {
+     "id": "transient_1",
+     "technique": "device_test",
+     "instrument": "système de caractérisation de semi-conducteurs Keithley 4200",
+     "result": "réponse transitoire du photocourant sous commutation on/off de l'éclairement, polarisations ±5 et ±10 V",
+     "quote": "Figure 5b shows the photoresponse characteristics of the ZnO NRA-based PDs grown at 25 mM with Wch = 15 μm under on/off switching of light illumination.",
+     "settings": [
+      {
+       "name": "illumination",
+       "value_num": 2.8,
+       "unit": "mW/cm2",
+       "quote": "the photocurrent was measured by using a semiconductor characterization system (Keithley 4200) under 2.8 mW/cm2 of illumination using a 365-nm UV light-emitting diode"
+      },
+      {
+       "name": "light_source",
+       "value_text": "365-nm UV light-emitting diode",
+       "quote": "the photocurrent was measured by using a semiconductor characterization system (Keithley 4200) under 2.8 mW/cm2 of illumination using a 365-nm UV light-emitting diode"
+      },
+      {
+       "name": "device_architecture",
+       "value_text": "metal-semiconductor-metal PD structure",
+       "quote": "thus creating a metal-semiconductor-metal PD structure"
+      },
+      {
+       "name": "measurement_conditions",
+       "value_text": "on/off switching of light illumination",
+       "quote": "under on/off switching of light illumination"
+      }
+     ],
+     "not_stated": [
+      "active_area"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "densely distributed vertically aligned ZnO nanorods between the two electrodes",
+     "measured_by": "sem_1",
+     "quote": "As shown in the top-view FE-SEM image, the ZnO nanorods were densely distributed between the two electrodes."
+    },
+    {
+     "property": "particle_size_diameter",
+     "value_num": 45,
+     "unit": "nm",
+     "measured_by": "sem_1",
+     "quote": "At 5 and 25 mM, the diameters/heights of ZnO nanorods were ~30/573 nm and ~45/1350 nm, respectively."
+    },
+    {
+     "property": "particle_size_height",
+     "value_num": 1350,
+     "unit": "nm",
+     "measured_by": "sem_1",
+     "quote": "At 5 and 25 mM, the diameters/heights of ZnO nanorods were ~30/573 nm and ~45/1350 nm, respectively."
+    },
+    {
+     "property": "phase",
+     "value_text": "hexagonal wurtzite ZnO",
+     "measured_by": "xrd_1",
+     "quote": "According to the standard JCPDS card no. 89-1397, the ZnO XRD peaks are in good agreement with a hexagonal wurtzite crystal structure."
+    },
+    {
+     "property": "xrd_peak_position_002",
+     "value_num": 34.4,
+     "unit": "° (2θ)",
+     "measured_by": "xrd_1",
+     "quote": "Among the ZnO XRD peaks, the dominant (002) peak was observed at 2θ = 34.4°, indicating that the ZnO NRAs were grown and crystallized along the direction of the c-axis in the crystal structure."
+    },
+    {
+     "property": "xrd_peak_position_au_111",
+     "value_text": "Au (111) peak observed",
+     "measured_by": "xrd_1",
+     "quote": "From the metal electrodes, the Au (111) XRD peak also appeared."
+    },
+    {
+     "property": "photocurrent_10V",
+     "value_num": 0.000191,
+     "unit": "A",
+     "measured_by": "iv_1",
+     "quote": "At 10 V of bias voltage, the photocurrents of 1.34 × 10−4, 1.91 × 10−4, and 1.04 × 10−4 A were obtained at solution concentrations of 5, 25, and 50 mM, respectively."
+    },
+    {
+     "property": "photocurrent_on_off_ratio_5V",
+     "value_num": 25.3,
+     "measured_by": "iv_1",
+     "quote": "In this condition, the device exhibited an on-off ratio of 25.3 at 5 V of bias voltage and a high photocurrent of 1.91 × 10−4 A at 10 V."
+    }
+   ],
+   "missing_fields": [
+    "sputtering_target",
+    "resist",
+    "substrate_temperature"
+   ]
+  },
+  {
+   "label": "ZnO-5mM-W10",
+   "parent": "ZnO-25mM-W10",
+   "material": {
+    "name": "ZnO nanorod array on ZnO seed layer between Au/Ti electrodes (MSM UV photodetector)",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "vertically aligned nanorod array"
+   },
+   "quote": "In order to investigate the morphology-dependent device characteristics of PDs, we prepared the ZnO NRAs grown at different solution concentrations.",
+   "variations": [
+    {
+     "parameter": "zinc nitrate hexahydrate",
+     "value_num": 5,
+     "unit": "mM",
+     "parent_value": "25 mM",
+     "quote": "Figure 3a shows the cross-sectional views of FE-SEM images for the ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM."
+    },
+    {
+     "parameter": "hexamethylenetetramine",
+     "value_num": 5,
+     "unit": "mM",
+     "parent_value": "25 mM",
+     "quote": "Figure 3a shows the cross-sectional views of FE-SEM images for the ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size_diameter",
+     "value_num": 30,
+     "unit": "nm",
+     "measured_by": "sem_1",
+     "quote": "At 5 and 25 mM, the diameters/heights of ZnO nanorods were ~30/573 nm and ~45/1350 nm, respectively."
+    },
+    {
+     "property": "particle_size_height",
+     "value_num": 573,
+     "unit": "nm",
+     "measured_by": "sem_1",
+     "quote": "At 5 and 25 mM, the diameters/heights of ZnO nanorods were ~30/573 nm and ~45/1350 nm, respectively."
+    },
+    {
+     "property": "photocurrent_10V",
+     "value_num": 0.000134,
+     "unit": "A",
+     "measured_by": "iv_1",
+     "quote": "At 10 V of bias voltage, the photocurrents of 1.34 × 10−4, 1.91 × 10−4, and 1.04 × 10−4 A were obtained at solution concentrations of 5, 25, and 50 mM, respectively."
+    }
+   ]
+  },
+  {
+   "label": "ZnO-50mM-W10",
+   "parent": "ZnO-25mM-W10",
+   "material": {
+    "name": "ZnO nanorod array on ZnO seed layer between Au/Ti electrodes (MSM UV photodetector)",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "vertically aligned nanorod array"
+   },
+   "quote": "In order to investigate the morphology-dependent device characteristics of PDs, we prepared the ZnO NRAs grown at different solution concentrations.",
+   "variations": [
+    {
+     "parameter": "zinc nitrate hexahydrate",
+     "value_num": 50,
+     "unit": "mM",
+     "parent_value": "25 mM",
+     "quote": "Figure 3a shows the cross-sectional views of FE-SEM images for the ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM."
+    },
+    {
+     "parameter": "hexamethylenetetramine",
+     "value_num": 50,
+     "unit": "mM",
+     "parent_value": "25 mM",
+     "quote": "Figure 3a shows the cross-sectional views of FE-SEM images for the ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "value_text": "diameter largely increased while the height was relatively less increased (compared with 25 mM)",
+     "measured_by": "sem_1",
+     "quote": "However, the diameter of ZnO nanorods was largely increased at 50 mM while the height was relatively less increased."
+    },
+    {
+     "property": "photocurrent_10V",
+     "value_num": 0.000104,
+     "unit": "A",
+     "measured_by": "iv_1",
+     "quote": "At 10 V of bias voltage, the photocurrents of 1.34 × 10−4, 1.91 × 10−4, and 1.04 × 10−4 A were obtained at solution concentrations of 5, 25, and 50 mM, respectively."
+    }
+   ]
+  },
+  {
+   "label": "ZnO-25mM-W5",
+   "parent": "ZnO-25mM-W10",
+   "material": {
+    "name": "ZnO nanorod array on ZnO seed layer between Au/Ti electrodes (MSM UV photodetector)",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "vertically aligned nanorod array"
+   },
+   "quote": "Figure 5a shows the measured I-V curves of the ZnO NRA-based PDs grown at 25 mM with different Wch of 5, 15, and 30 μm.",
+   "variations": [
+    {
+     "parameter": "dimension_channel_width",
+     "step_order": 2,
+     "value_num": 5,
+     "unit": "μm",
+     "parent_value": "10 μm",
+     "quote": "Figure 5a shows the measured I-V curves of the ZnO NRA-based PDs grown at 25 mM with different Wch of 5, 15, and 30 μm."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "photocurrent_on_off_ratio",
+     "value_num": 9.5,
+     "from_figure": "Fig. 5a (inset)",
+     "measured_by": "iv_1",
+     "quote": "The inset of a also shows the photocurrent on-off ratio with different W ch from 5 to 30 μm"
+    }
+   ]
+  },
+  {
+   "label": "ZnO-25mM-W15",
+   "parent": "ZnO-25mM-W10",
+   "material": {
+    "name": "ZnO nanorod array on ZnO seed layer between Au/Ti electrodes (MSM UV photodetector)",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "vertically aligned nanorod array"
+   },
+   "quote": "Figure 5a shows the measured I-V curves of the ZnO NRA-based PDs grown at 25 mM with different Wch of 5, 15, and 30 μm.",
+   "variations": [
+    {
+     "parameter": "dimension_channel_width",
+     "step_order": 2,
+     "value_num": 15,
+     "unit": "μm",
+     "parent_value": "10 μm",
+     "quote": "Figure 5a shows the measured I-V curves of the ZnO NRA-based PDs grown at 25 mM with different Wch of 5, 15, and 30 μm."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "photocurrent_on_off_ratio_5V",
+     "value_num": 37.4,
+     "measured_by": "iv_1",
+     "quote": "For Wch = 15 μm, a high photocurrent on-off ratio of 37.4 was observed at 5 V of bias voltage."
+    },
+    {
+     "property": "photoresponse_time_reset_10V",
+     "value_num": 26.1,
+     "unit": "s",
+     "measured_by": "transient_1",
+     "quote": "At 10 V, the proper photoresponse property was achieved with a reset time (i.e., current recover to e−1) of 26.1 s with a high photocurrent of 3.93 × 10−4 A."
+    },
+    {
+     "property": "photocurrent_10V_transient",
+     "value_num": 0.000393,
+     "unit": "A",
+     "measured_by": "transient_1",
+     "quote": "At 10 V, the proper photoresponse property was achieved with a reset time (i.e., current recover to e−1) of 26.1 s with a high photocurrent of 3.93 × 10−4 A."
+    }
+   ]
+  },
+  {
+   "label": "ZnO-25mM-W20",
+   "parent": "ZnO-25mM-W10",
+   "material": {
+    "name": "ZnO nanorod array on ZnO seed layer between Au/Ti electrodes (MSM UV photodetector)",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "vertically aligned nanorod array"
+   },
+   "quote": "Above 20 μm, the photocurrent on-off ratio was gradually decreased because the dark current was more increased than the photocurrent with increase of the area of active region.",
+   "variations": [
+    {
+     "parameter": "dimension_channel_width",
+     "step_order": 2,
+     "value_num": 20,
+     "unit": "μm",
+     "parent_value": "10 μm",
+     "quote": "Above 20 μm, the photocurrent on-off ratio was gradually decreased because the dark current was more increased than the photocurrent with increase of the area of active region."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "photocurrent_on_off_ratio",
+     "value_num": 31,
+     "from_figure": "Fig. 5a (inset)",
+     "measured_by": "iv_1",
+     "quote": "The inset of a also shows the photocurrent on-off ratio with different W ch from 5 to 30 μm"
+    }
+   ]
+  },
+  {
+   "label": "ZnO-25mM-W30",
+   "parent": "ZnO-25mM-W10",
+   "material": {
+    "name": "ZnO nanorod array on ZnO seed layer between Au/Ti electrodes (MSM UV photodetector)",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": "hexagonal wurtzite",
+    "morphology": "vertically aligned nanorod array"
+   },
+   "quote": "Figure 5a shows the measured I-V curves of the ZnO NRA-based PDs grown at 25 mM with different Wch of 5, 15, and 30 μm.",
+   "variations": [
+    {
+     "parameter": "dimension_channel_width",
+     "step_order": 2,
+     "value_num": 30,
+     "unit": "μm",
+     "parent_value": "10 μm",
+     "quote": "Figure 5a shows the measured I-V curves of the ZnO NRA-based PDs grown at 25 mM with different Wch of 5, 15, and 30 μm."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "photocurrent_on_off_ratio",
+     "value_num": 27,
+     "from_figure": "Fig. 5a (inset)",
+     "measured_by": "iv_1",
+     "quote": "The inset of a also shows the photocurrent on-off ratio with different W ch from 5 to 30 μm"
+    }
+   ]
+  },
+  {
+   "label": "ZnO-seed-only-W10",
+   "parent": "ZnO-25mM-W10",
+   "material": {
+    "name": "ZnO seed layer (50 nm) between Au/Ti electrodes, without nanorod array",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": null,
+    "morphology": "thin film"
+   },
+   "quote": "Without ZnO NRAs, the ZnO seed layer between the two electrodes did not sufficiently generate a photocurrent.",
+   "variations": [
+    {
+     "parameter": "zinc nitrate hexahydrate",
+     "value_text": "absent",
+     "parent_value": "25 mM",
+     "quote": "Without ZnO NRAs, the ZnO seed layer between the two electrodes did not sufficiently generate a photocurrent."
+    },
+    {
+     "parameter": "hexamethylenetetramine",
+     "value_text": "absent",
+     "parent_value": "25 mM",
+     "quote": "Without ZnO NRAs, the ZnO seed layer between the two electrodes did not sufficiently generate a photocurrent."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "photocurrent",
+     "value_text": "the ZnO seed layer without nanorod array did not sufficiently generate a photocurrent",
+     "measured_by": "iv_1",
+     "quote": "Without ZnO NRAs, the ZnO seed layer between the two electrodes did not sufficiently generate a photocurrent."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "vacuum_deposit",
+     "description": "Dépôt par évaporation à faisceau d'électrons d'une couche de Ti puis d'Au sur le substrat Si recouvert de SiO2.",
+     "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation",
+     "parameters": [
+      {
+       "name": "thickness_ti",
+       "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation",
+       "value_num": 5,
+       "unit": "nm"
+      },
+      {
+       "name": "thickness_au",
+       "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation",
+       "value_num": 300,
+       "unit": "nm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "e-beam evaporator",
+       "detail": null,
+       "quote": "The Ti (5 nm) and Au (300 nm) films were deposited by e-beam evaporation"
+      }
+     ],
+     "not_stated": [
+      "pressure",
+      "deposition_rate"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "lithography",
+     "description": "Définition du motif des électrodes par photolithographie conventionnelle et lift-off ; l'écart entre les deux électrodes (largeur de canal) vaut 10 μm pour l'échantillon de référence.",
+     "quote": "the patterns were transferred by conventional photolithography and lift-off processes",
+     "parameters": [
+      {
+       "name": "dimension_channel_width",
+       "quote": "for the same channel width (i.e., gap distance between two electrodes) of 10 μm",
+       "value_num": 10,
+       "unit": "μm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "resist",
+      "exposure_conditions"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "vacuum_deposit",
+     "description": "Dépôt par pulvérisation cathodique RF magnétron d'une couche de ZnO de 50 nm entre les électrodes, à travers un masque d'ombre positionné à la main.",
+     "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+     "parameters": [
+      {
+       "name": "thickness_zno_seed",
+       "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+       "value_num": 50,
+       "unit": "nm"
+      },
+      {
+       "name": "pressure",
+       "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+       "value_num": 6,
+       "unit": "mTorr"
+      },
+      {
+       "name": "power",
+       "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+       "value_num": 100,
+       "unit": "W"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "For the deposition of 50-nm-thick ZnO film, the RF magnetron sputtering was carried out at 6 mTorr of process pressure and 100 W of RF power under Ar environment.",
+       "value_text": "Ar"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "RF magnetron sputtering system",
+       "detail": null,
+       "quote": "After that, the sample was covered by the shadow mask during the radio frequency (RF) magnetron sputtering process."
+      },
+      {
+       "type": "shadow mask",
+       "detail": "ouverture placée manuellement entre les électrodes sous microscope",
+       "quote": "As depicted in Fig. 1a, the opened region in the shadow mask could be covered manually between the patterned electrodes under microscope observation."
+      }
+     ],
+     "not_stated": [
+      "deposition_rate",
+      "sputtering_target",
+      "substrate_temperature"
+     ]
+    }
+   ]
+  },
+  {
+   "label": "RCWA-absorption",
+   "parent": null,
+   "kind": "calcul",
+   "material": {
+    "name": "periodic ZnO nanorod array on ZnO seed-coated SiO2 (RCWA model)",
+    "formula": "ZnO",
+    "family": "oxyde",
+    "phase": null,
+    "morphology": "periodic nanorod array"
+   },
+   "methods": [
+    "calculation"
+   ],
+   "method": "simulation optique par analyse rigoureuse des ondes couplées (RCWA) de l'absorption de réseaux périodiques de nanobâtonnets de ZnO",
+   "quote": "Figure 4a shows the schematic diagram for investigating absorption properties of various ZnO NRAs using a rigorous coupled wave analysis (RCWA) simulation.",
+   "succeeded": true,
+   "steps": [
+    {
+     "order": 1,
+     "action": "compute",
+     "description": "Modèle : réseau périodique de nanobâtonnets verticaux (périodes Px et Py) sur la couche de germination ZnO déposée sur SiO2 ; densité D = W²/PxPy fixée à 0,7 avec Px = Py.",
+     "quote": "For approximation, we assumed that the vertical ZnO nanorods are periodically aligned on the ZnO seed-coated SiO2 insulation layer, where Px and Py are the periods along x and y directions.",
+     "parameters": [
+      {
+       "name": "algorithm_setting_density_d",
+       "quote": "Here, D is fixed to 0.7 and Px equals Py.",
+       "value_num": 0.7
+      },
+      {
+       "name": "algorithm_setting_density_definition",
+       "quote": "To set the distribution of ZnO NRAs with diameter (W) and height (H), the density (D) is defined by W2/PxPy.",
+       "value_text": "D = W2/PxPy"
+      },
+      {
+       "name": "algorithm_setting_periods",
+       "quote": "Here, D is fixed to 0.7 and Px equals Py.",
+       "value_text": "Px equals Py"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 2,
+     "action": "compute",
+     "description": "Calcul de l'absorption à 365 nm en fonction du diamètre W et de la hauteur H des nanobâtonnets (carte d'absorption de la figure 4b).",
+     "quote": "Figure 4a shows the schematic diagram for investigating absorption properties of various ZnO NRAs using a rigorous coupled wave analysis (RCWA) simulation.",
+     "parameters": [
+      {
+       "name": "algorithm_setting_wavelength",
+       "quote": "At 365 nm of incident light, the complex refractive index of ZnO nanorods is considered to be 2.1 + i0.5",
+       "value_num": 365,
+       "unit": "nm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 3,
+     "action": "compute",
+     "description": "Report des échantillons 5, 25 et 50 mM sur la carte à partir de leurs dimensions mesurées par MEB.",
+     "quote": "For three different ZnO NRAs grown at (i) 5 mM, (ii) 25 mM, and (iii) 50 mM, the corresponding absorptions are marked in the map regarding their morphological properties by the SEM images.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "calc_1",
+     "technique": "calculation",
+     "instrument": null,
+     "result": "carte d'absorption à 365 nm en fonction de W et H ; absorption de 91 à 93,5 %",
+     "quote": "Figure 4a shows the schematic diagram for investigating absorption properties of various ZnO NRAs using a rigorous coupled wave analysis (RCWA) simulation.",
+     "settings": [
+      {
+       "name": "functional_or_model",
+       "value_text": "rigorous coupled wave analysis (RCWA)",
+       "quote": "Figure 4a shows the schematic diagram for investigating absorption properties of various ZnO NRAs using a rigorous coupled wave analysis (RCWA) simulation."
+      },
+      {
+       "name": "input_optical_constants",
+       "value_text": "complex refractive index 2.1 + i0.5 at 365 nm",
+       "quote": "At 365 nm of incident light, the complex refractive index of ZnO nanorods is considered to be 2.1 + i0.5"
+      }
+     ],
+     "not_stated": [
+      "software",
+      "basis_or_cutoff"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "calculated_value_absorption_range",
+     "value_text": "from 91 to 93.5 % as W decreased or H increased",
+     "measured_by": "calc_1",
+     "quote": "As W decreased or H increased, the absorption gradually increased from 91 to 93.5 %."
+    },
+    {
+     "property": "calculated_value_absorption_25mM",
+     "value_num": 93.4,
+     "unit": "%",
+     "measured_by": "calc_1",
+     "quote": "The ZnO NRAs grown at 25 mM exhibited a relatively high absorption of 93.4 % owing to multiple scattering of small-size and long ZnO nanorods []."
+    },
+    {
+     "property": "calculated_value_absorption_5mM",
+     "value_num": 92.8,
+     "unit": "%",
+     "measured_by": "calc_1",
+     "quote": "In contrast, the ZnO NRAs grown at 5 and 50 mM have the lower absorptions of 92.8 and 91.3 %, respectively."
+    },
+    {
+     "property": "calculated_value_absorption_50mM",
+     "value_num": 91.3,
+     "unit": "%",
+     "measured_by": "calc_1",
+     "quote": "In contrast, the ZnO NRAs grown at 5 and 50 mM have the lower absorptions of 92.8 and 91.3 %, respectively."
+    }
+   ]
+  }
+ ],
+ "sample_inventory": [
+  {
+   "sample": "ZnO NRA PD, 25 mM, Wch 10 μm",
+   "defined_in": "Methods ; Results (Fig. 2)",
+   "route": "ZnO-25mM-W10",
+   "results_in": [
+    "Fig. 2b",
+    "Fig. 2c",
+    "Fig. 3a",
+    "Fig. 3b",
+    "texte"
+   ]
+  },
+  {
+   "sample": "ZnO NRA PD, 5 mM",
+   "defined_in": "Results (Fig. 3)",
+   "route": "ZnO-5mM-W10",
+   "results_in": [
+    "Fig. 3a",
+    "Fig. 3b",
+    "texte"
+   ]
+  },
+  {
+   "sample": "ZnO NRA PD, 50 mM",
+   "defined_in": "Results (Fig. 3)",
+   "route": "ZnO-50mM-W10",
+   "results_in": [
+    "Fig. 3a",
+    "Fig. 3b",
+    "texte"
+   ]
+  },
+  {
+   "sample": "ZnO seed layer without NRAs",
+   "defined_in": "Results (Fig. 2c)",
+   "route": "ZnO-seed-only-W10",
+   "results_in": [
+    "Fig. 2c"
+   ]
+  },
+  {
+   "sample": "Wch 5 μm",
+   "defined_in": "Results (Fig. 5a)",
+   "route": "ZnO-25mM-W5",
+   "results_in": [
+    "Fig. 5a",
+    "Fig. 5a inset"
+   ]
+  },
+  {
+   "sample": "Wch 10 μm (inset point)",
+   "defined_in": "Fig. 5a inset",
+   "route": "ZnO-25mM-W10",
+   "results_in": [
+    "Fig. 5a inset"
+   ]
+  },
+  {
+   "sample": "Wch 15 μm",
+   "defined_in": "Results (Fig. 5)",
+   "route": "ZnO-25mM-W15",
+   "results_in": [
+    "Fig. 5a",
+    "Fig. 5b",
+    "texte"
+   ]
+  },
+  {
+   "sample": "Wch 20 μm (inset point)",
+   "defined_in": "Fig. 5a inset ; texte « Above 20 μm »",
+   "route": "ZnO-25mM-W20",
+   "results_in": [
+    "Fig. 5a inset"
+   ]
+  },
+  {
+   "sample": "Wch 30 μm",
+   "defined_in": "Results (Fig. 5a)",
+   "route": "ZnO-25mM-W30",
+   "results_in": [
+    "Fig. 5a",
+    "Fig. 5a inset"
+   ]
+  },
+  {
+   "sample": "modèles RCWA 5, 25, 50 mM",
+   "defined_in": "Results (Fig. 4)",
+   "route": "RCWA-absorption",
+   "results_in": [
+    "Fig. 4b",
+    "texte"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article fabrique des photodétecteurs UV métal-semiconducteur-métal : des électrodes Ti/Au sont déposées sur SiO2/Si, une couche de germination de ZnO de 50 nm est pulvérisée sous masque d'ombre uniquement entre les électrodes, puis un réseau de nanobâtonnets de ZnO verticaux croît sur cette couche dans une solution aqueuse équimolaire de nitrate de zinc et d'hexaméthylènetétramine à 90 °C pendant 5 h. Les auteurs montrent que 25 mM donne le photocourant maximal et qu'une largeur de canal de 15 μm optimise le rapport on-off."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent un procédé simple pour faire croître le réseau de nanobâtonnets de ZnO exactement dans le canal entre deux électrodes, sans graver la couche de germination, puis savoir comment la concentration de la solution de croissance et la largeur du canal commandent le photocourant et le rapport on-off."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "La concentration de la solution de croissance (5, 25 et 50 mM) est balayée parce qu'elle fixe le diamètre et la hauteur des nanobâtonnets, donc la surface et l'absorption, et ainsi le photocourant ; la largeur du canal (5 à 30 μm) est balayée à 25 mM parce qu'elle règle à la fois la surface active et le courant d'obscurité, donc le compromis photocourant / rapport on-off."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Série en concentration (canal de 10 μm) : le diamètre et la hauteur passent de ~30/573 nm (5 mM) à ~45/1350 nm (25 mM), le diamètre augmente fortement à 50 mM ; le photocourant à 10 V vaut 1,34, 1,91 et 1,04 × 10−4 A, maximal à 25 mM. Série en largeur de canal (25 mM) : le photocourant augmente avec Wch mais le courant d'obscurité aussi ; le rapport on-off passe par un maximum de 37,4 à 15 μm (≈ 9,5 à 5 μm, 25,3 à 10 μm, ≈ 31 à 20 μm et ≈ 27 à 30 μm, valeurs de l'encart lues sur la figure sauf 10 et 15 μm). Sans nanobâtonnets, la couche de germination seule ne produit pas de photocourant notable."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Quand la concentration augmente, le diamètre et la hauteur des nanobâtonnets augmentent ; la surface des réseaux et l'absorption simulée suivent le photocourant, maximal à 25 mM (absorption 93,4 % contre 92,8 et 91,3 %). Quand Wch augmente, photocourant et courant d'obscurité augmentent, le rapport on-off est maximal à 15 μm.",
+   "quote": "Above 20 μm, the photocurrent on-off ratio was gradually decreased because the dark current was more increased than the photocurrent with increase of the area of active region."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs retiennent 25 mM de solution de croissance comme optimum de photocourant (canal de 10 μm) et Wch = 15 μm comme optimum du rapport on-off (37,4 à 5 V).",
+   "quote": "For 15 μm of Wch, the ZnO NRAs grown at 25 mM exhibited a relatively high photocurrent on-off ratio of 37.4 in typical transient characteristics."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "ZnO-25mM-W10",
+   "text": "Des germes de ZnO se forment à la surface de la couche de germination, des nanobâtonnets de Zn(OH)2 croissent perpendiculairement par réaction des ions hydroxyde et zinc, puis Zn(OH)2 se transforme en ZnO par déshydratation à l'air. Avec la concentration, le diamètre et la hauteur augmentent car davantage d'ions Zn diffusent vers les germes ; à 50 mM un excès de concentration accélère la croissance des facettes, d'où une croissance isotrope.",
+   "quote": "Typically, the ZnO nuclei are formed at the surface of seed layer, and the Zn(OH)2 nanorods grow in a perpendicular direction with reaction of hydroxide ions and zinc ions."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "ZnO-25mM-W10",
+   "text": "Probablement, l'hexaméthylènetétramine s'hydrolyse lentement à 90 °C en ammoniac et formaldéhyde, ce qui libère progressivement des ions hydroxyde ; Zn2+ précipite alors en Zn(OH)2 puis en ZnO sur les germes de la couche pulvérisée, dont l'orientation selon l'axe c explique la croissance verticale. La température de 90 °C reste sous 100 °C : il s'agit d'une croissance en bain chimique plutôt que d'un traitement en autoclave."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "ZnO-25mM-W10",
+   "text": "Le nitrate de zinc est un oxydant et l'hexaméthylènetétramine un solide inflammable qui libère du formaldéhyde et de l'ammoniac à chaud : travailler sous hotte. La photolithographie met en œuvre résines et solvants, l'évaporation e-beam et la pulvérisation fonctionnent sous vide, et la diode UV à 365 nm impose des lunettes de protection ; l'étuve à 90 °C est une surface chaude."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Pour refaire le dispositif il manque : la cible et la température du substrat de la pulvérisation, les vitesses de dépôt, la résine et les paramètres de photolithographie, les longueurs des électrodes (aire active), la pureté et le fournisseur du nitrate de zinc, de l'hexaméthylènetétramine et de l'eau, le pH et le récipient de la solution de croissance. Il n'est pas précisé si 25 mM est la concentration de chaque réactif ; le texte dit que l'échantillon est « dried by flowing DI water », ce qui ressemble à un rinçage. Aucune annexe n'est fournie."
+  }
+ ],
+ "method_sources": [],
+ "comparisons": [
+  {
+   "material": "ZnO",
+   "property": "band_gap",
+   "value_num": 3.37,
+   "unit": "eV",
+   "conditions": "gap direct large",
+   "quote": "Zinc oxide (ZnO) nanorod array (NRA)-based photodetectors (PDs) are alternative ultraviolet (UV) sensors because they have several advantages such as wide direct band gap (3.37 eV) and large surface area"
+  },
+  {
+   "material": "ZnO nanostructures grown by hydrothermal synthesis (literature)",
+   "property": "growth_temperature",
+   "value_text": "75–90 °C",
+   "conditions": "croissance hydrothermale de ZnO 1D à relativement basse température",
+   "quote": "hydrothermal synthesis has been considered as one of the promising methods for growing 1D ZnO nanostructures because it allows relatively low temperature (75–90 °C) and scalable manufacturing process"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "ZnO-25mM-W10 réactifs",
+   "issue": "« equimolar concentrations (5–50 mM) » et « growth solution ... 25 mM of concentration » : le texte ne dit pas si 25 mM est la concentration de chaque réactif ou de l'ensemble ; lecture littérale retenue (25 mM pour chacun, équimolaires)."
+  },
+  {
+   "where": "ZnO-25mM-W10 step 8",
+   "issue": "« dried by flowing DI water » : un séchage à l'eau est contradictoire ; extrait comme étape de rinçage (wash, solvant DI water), sans séchage déclaré ni nombre de rinçages."
+  },
+  {
+   "where": "ZnO-25mM-W10 steps 1-2",
+   "issue": "Le texte donne le dépôt Ti/Au avant la photolithographie et le lift-off ; l'ordre habituel d'un lift-off est inverse, mais l'ordre de l'article est conservé."
+  },
+  {
+   "where": "ZnO-25mM-W10 step 2",
+   "issue": "La largeur de canal de 10 μm de l'échantillon de référence n'est écrite que dans les Résultats (Fig. 2c), pas dans les Méthodes ; elle est rattachée à l'étape de photolithographie."
+  },
+  {
+   "where": "Fig. 5a inset (ZnO-25mM-W5, W20, W30)",
+   "issue": "Rapports on-off de l'encart lus sur la figure (≈ 9,5 à 5 μm, ≈ 31 à 20 μm, ≈ 27 à 30 μm, précision ± 1) ; la tension n'est pas écrite pour l'encart (5 V supposée par analogie avec 37,4 à 5 V, non extraite en nom de propriété). Le point à 20 μm n'est défini que par l'encart et par « Above 20 μm » ; 10 et 15 μm concordent avec le texte (25,3 et 37,4). Le texte renvoie par erreur à l'« inset of Fig. 4a » ; la légende place l'encart dans la Fig. 5a."
+  },
+  {
+   "where": "Fig. 3a, Fig. 3b, Fig. 5b",
+   "issue": "Figures lues : Fig. 3b (photocourants à 10 V cohérents avec le texte, aucune valeur ajoutée) et Fig. 5b (pic ≈ 3,9 × 10−4 A à 10 V, cohérent avec 3,93 × 10−4 A) ; les dimensions des nanobâtonnets à 50 mM (Fig. 3a iii) n'ont pas été lues, le texte ne les chiffrant pas."
+  },
+  {
+   "where": "méthode de la voie de base",
+   "issue": "Les auteurs parlent de croissance « hydrothermale » alors que la croissance a lieu à 90 °C dans une étuve, sans autoclave mentionné ; la méthode retenue est chemical_bath_deposition (nom ajouté au vocabulaire), la citation des auteurs reste dans le texte de la voie."
+  },
+  {
+   "where": "ZnO-25mM-W15 outcomes",
+   "issue": "Le photocourant de 3,93 × 10−4 A à 10 V (courbe transitoire de la Fig. 5b, canal de 15 μm) est un pic de photoréponse et non le photocourant statique de la Fig. 3 ; il est rangé sous un nom distinct (photocurrent_10V_transient)."
+  }
+ ]
+}

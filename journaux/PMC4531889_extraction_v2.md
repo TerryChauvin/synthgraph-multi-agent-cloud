@@ -1,0 +1,17 @@
+# Journal d'extraction v2 — PMC4531889 (photodétecteurs UV à nanobâtonnets de ZnO)
+
+- **Une seule voie de base, de type `device`** (`ZnO-25mM-W10`) : l'article fabrique un dispositif entier (électrodes Ti/Au, couche de germination ZnO pulvérisée, croissance des nanobâtonnets) ; je n'ai pas séparé « matériau » et « dispositif » pour ne pas dupliquer les étapes. Échantillon de référence = 25 mM, canal de 10 μm (Résumé et Fig. 2c).
+- **Largeur de canal 10 μm** : écrite seulement dans les Résultats (« for the same channel width ... of 10 μm ») ; rattachée comme paramètre `dimension_channel_width` de l'étape de photolithographie, ce qui permet aux branches de la faire varier (`step_order` 2).
+- **Méthode** : les auteurs écrivent « hydrothermal » mais la croissance est à 90 °C en étuve, sans autoclave mentionné. Le vocabulaire `hydrothermal` est défini pour l'autoclave fermé au-dessus de 100 °C : ajout de `chemical_bath_deposition`, avec `physical_vapor_deposition` (e-beam et pulvérisation) et `device_fabrication`. Action de croissance : `react` (pas d'action de bain chimique ; `hydrothermal_treatment` suppose un autoclave).
+- **Concentration** : « equimolar concentrations (5–50 mM) » ; les deux réactifs portent la même variation. Lecture littérale : 25 mM pour chacun (doute noté).
+- **Dernière étape** : « dried by flowing DI water » extrait comme `wash` (solvant DI water), sans étape de séchage inventée.
+- **Série en largeur de canal** : branches 5, 15, 30 μm (texte et légende) et 20 μm (encart de la Fig. 5a et « Above 20 μm »). Les rapports on-off à 5, 20, 30 μm sont lus sur l'encart (`from_figure`, ± 1) ; 10 et 15 μm viennent du texte. Tension de l'encart non écrite : propriété sans suffixe de tension pour les valeurs lues.
+- **Témoin sans nanobâtonnets** (`ZnO-seed-only-W10`) : branche avec ses propres étapes 1 à 3 (sans croissance), variations « absent » sur les deux réactifs de croissance ; l'article ne dit pas si ce témoin a subi autre chose que le dépôt de la couche de germination.
+- **Photocourant transitoire** (3,93 × 10−4 A à 10 V, Fig. 5b) rangé sous `photocurrent_10V_transient`, distinct du photocourant des courbes I-V statiques, car ce n'est pas la même mesure ni la même valeur.
+- **Deux mesures `device_test`** (`iv_1` pour les courbes I-V, `transient_1` pour la commutation on/off) avec le même appareil ; l'aire active n'est pas donnée (`not_stated`).
+- **Simulation RCWA** : voie `calcul` séparée (`RCWA-absorption`) avec les absorptions 93,4 / 92,8 / 91,3 % rangées par échantillon (suffixes 25mM, 5mM, 50mM) ; l'indice 2,1 + i0,5 est un réglage de la mesure `calc_1` (`input_optical_constants`, ajout). Pas de `comparisons` pour cet indice.
+- **Littérature** : deux valeurs en `comparisons` (gap de 3,37 eV, plage 75–90 °C de la croissance hydrothermale), sans `ref_id` car les renvois sont groupés (« [–] »).
+- **Aucune `method_sources`** : aucun renvoi ne porte sur une préparation ; les renvois portent sur du contexte ou des interprétations.
+- **Figures** : Fig. 3 et 5 ouvertes ; Fig. 3b et 5b concordent avec le texte ; Fig. 3a non exploitée en chiffres à 50 mM (rien d'écrit dans le texte).
+- **Ajouts au vocabulaire** : `chemical_bath_deposition` (méthode) ; `photocurrent`, `photocurrent_on_off_ratio`, `photoresponse_time` (propriétés) ; `input_optical_constants` (réglage). `lithography`, `reference_pattern` et `light_source` repris de la liste ou des ajouts d'autres agents.
+- Aucune annexe : l'article n'en cite pas.
