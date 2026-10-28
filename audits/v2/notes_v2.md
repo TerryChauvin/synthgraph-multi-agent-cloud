@@ -22,3 +22,4 @@
 - PMC7672297 : témoins (gentamicine, extrait, eau) en outcomes de la voie AgNPs avec noms suffixés (7e cas) ; rôle « autre » dans method_sources (champ non contrôlé par l'interdiction des noms génériques).
 - PMC9059895 : essais à blanc sans catalyseur rangés sur CdS/Cu7S4-5 avec `no_catalyst` dans le nom (8e cas témoins → résultat attribué à un échantillon qui n'a pas été utilisé) ; 231 résultats.
 - PMC9369949 : 3e cas une seule citation par réactif → pureté 99 % et quantité de tableau non portables ensemble (besoin : citations multiples par champ de réactif).
+- PMC9418622 : mélanges de lumière blanche (tableau 3) modélisés en 5 voies `calcul` avec composants en réactifs intermediate → vérifié : spectres combinés par calcul (« estimated », « spectral data were analysed »), le kind calcul est juste.
