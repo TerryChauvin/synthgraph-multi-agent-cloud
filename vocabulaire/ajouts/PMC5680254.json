@@ -1,0 +1,44 @@
+{
+ "pmcid": "PMC5680254",
+ "ajouts": [
+  {
+   "type": "propriete",
+   "nom": "aspect_ratio",
+   "definition": "Rapport longueur sur diamètre (ou largeur) d'un objet allongé (nanofil, nanotige, nanofeuillet) ; préciser l'endroit de mesure du diamètre dans le nom si besoin (aspect_ratio_tip, aspect_ratio_base).",
+   "ecarte": "particle_size: c'est une taille en unités de longueur, pas un rapport sans dimension; morphology: qualitative, pas un nombre",
+   "date": "2026-10-28 21:15",
+   "techniques": [
+    "SEM",
+    "TEM",
+    "AFM"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "areal_number_density",
+   "definition": "Nombre d'objets (nanofils, nanotiges, particules) par unité de surface du substrat, compté sur des images de microscopie.",
+   "ecarte": "porosity: concerne la fraction de vide d'un solide, pas un comptage d'objets par surface; particle_size: taille et non densité de comptage",
+   "date": "2026-10-28 21:15",
+   "techniques": [
+    "SEM",
+    "TEM",
+    "AFM"
+   ],
+   "unite": "/cm2"
+  },
+  {
+   "type": "propriete",
+   "nom": "solution_ph",
+   "definition": "pH mesuré ou donné d'une solution de synthèse ou de croissance (solution mère, bain de croissance), quand il est un résultat de l'article et non un réglage imposé par une étape adjust_ph.",
+   "ecarte": "point_of_zero_charge: pH de charge nulle d'un solide, pas pH d'une solution; solution_concentration: concentration mesurée et non pH",
+   "date": "2026-10-28 21:15"
+  },
+  {
+   "type": "action",
+   "nom": "lithography",
+   "definition": "Définir un motif sur un substrat par lithographie (électronique, optique, nano-impression) : exposition d'une résine, développement, avant dépôt ou gravure.",
+   "ecarte": "coat: dépose une couche de matière, ne structure pas un motif; etch: retire de la matière sans définir le motif d'exposition",
+   "date": "2026-10-28 21:15"
+  }
+ ]
+}

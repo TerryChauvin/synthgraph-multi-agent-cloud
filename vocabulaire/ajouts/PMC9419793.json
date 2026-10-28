@@ -1,0 +1,72 @@
+{
+ "pmcid": "PMC9419793",
+ "ajouts": [
+  {
+   "type": "technique",
+   "nom": "rheometry",
+   "definition": "Rhéométrie d'une dispersion, d'un gel ou d'une pâte : viscosité en fonction de la vitesse de cisaillement, modules, comportement rhéofluidifiant, cristal liquide.",
+   "ecarte": "density_porosimetry: mesure une densité ou une porosité, pas un écoulement; DLS_zeta: mesure une taille hydrodynamique, pas la viscosité",
+   "date": "2026-10-28 21:16",
+   "reglages": [
+    "scan_range",
+    "measurement_temperature",
+    "concentration",
+    "specimen_geometry"
+   ]
+  },
+  {
+   "type": "technique",
+   "nom": "optical_microscopy",
+   "definition": "Microscopie optique (champ clair, polarisée, sur plaquette ou lame) : visualisation et mesure de grands objets, feuillets ou films à l'échelle de la dizaine de micromètres.",
+   "ecarte": "AFM: sonde mécanique de l'épaisseur et de la rugosité, pas une image optique; SEM: électrons et non lumière visible",
+   "date": "2026-10-28 21:16",
+   "reglages": [
+    "sample_preparation"
+   ]
+  },
+  {
+   "type": "reglage",
+   "nom": "thickness_used",
+   "definition": "Épaisseur de l'échantillon utilisée pour convertir une résistance de couche en conductivité ou une force en contrainte, avec son mode de mesure (micromètre, coupe au MEB).",
+   "ecarte": "dimension: grandeur d'étape de synthèse et non réglage de mesure; specimen_geometry: forme et dimensions générales de l'éprouvette, pas l'épaisseur de calcul",
+   "date": "2026-10-28 21:16"
+  },
+  {
+   "type": "reglage",
+   "nom": "acquisition_parameters",
+   "definition": "Paramètres d'acquisition d'un spectre ou d'une image : temps d'acquisition, objectif, nombre d'accumulations, moyennage sur plusieurs points.",
+   "ecarte": "laser_power: seulement la puissance du laser; sample_preparation: préparation de l'échantillon avant la mesure et non réglage d'acquisition",
+   "date": "2026-10-28 21:16"
+  },
+  {
+   "type": "technique",
+   "nom": "electrical_measurement",
+   "definition": "Mesure électrique d'un film, d'une pastille ou d'un échantillon massif : résistance de couche à quatre pointes, résistivité, conductivité, effet Hall, hors cellule électrochimique et hors dispositif complet.",
+   "ecarte": "electrochemistry: impédance et voltampérométrie en cellule électrochimique, pas un film sec mesuré à quatre pointes; device_test: test d'un dispositif complet",
+   "date": "2026-10-28 21:16",
+   "reglages": [
+    "method",
+    "measurement_temperature",
+    "thickness_used"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "viscosity",
+   "definition": "Viscosité d'une dispersion ou d'un fluide (viscosité à vitesse de cisaillement donnée, viscosité à cisaillement nul), avec la vitesse de cisaillement précisée dans le nom si besoin.",
+   "ecarte": "density: masse volumique et non écoulement; hydrodynamic_size: taille d'objets en suspension",
+   "date": "2026-10-28 21:16",
+   "techniques": [
+    "rheometry"
+   ],
+   "unite": "Pa s"
+  },
+  {
+   "type": "propriete",
+   "nom": "filtration_time",
+   "definition": "Durée nécessaire pour filtrer un volume donné d'une dispersion (indicateur indirect de l'exfoliation, de la taille des feuillets ou du colmatage de la membrane).",
+   "ecarte": "retention_stability: évolution dans le temps sous contrainte, pas une durée de procédé; statistic: statistique d'un résultat",
+   "date": "2026-10-28 21:16"
+  }
+ ]
+}
