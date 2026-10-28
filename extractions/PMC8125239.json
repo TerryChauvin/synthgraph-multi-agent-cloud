@@ -20,7 +20,9 @@
    "yield": null,
    "succeeded": true,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions",
+    "scale"
    ],
    "reagents": [
     {
@@ -284,6 +286,55 @@
      "instrument": "X-ray photoelectron spectroscopy (XPS, AXIS-ULTRA DLD-600 W, Shimadzu, Japan)",
      "conditions": "Al Kα excitation source, experimental resolution higher than 0.1 eV, lines calibrated to C1s at 284.8 eV",
      "quote": "At around 528.5 eV in the two spectra (A: 528.3 eV; B: 528.7 eV) and 531 eV (A: 530.8 eV; B: 531.2 eV), the two main peaks were attributed to lattice oxygen (OL) and surface adsorbed oxygen (OS)"
+    },
+    {
+     "technique": "UV-CWPO catalytic test",
+     "result": "Épreuve catalytique du catalyseur en oxydation catalytique par H2O2 sous UV (UV-CWPO) du concentrat membranaire de l'eau usée de l'industrie chimique du charbon ; chaque essai réalisé en triple, moyenne retenue.",
+     "instrument": "500 mL photochemical high-pressure reactor (TFM-500, Beijing Zhongjiao Jinyuan Technology Co., Ltd., Beijing, China) et source lumineuse UV au deutérium de 30 W (CE-DD30T, Beijing Zhongjiao Jinyuan Technology Co., Ltd.)",
+     "conditions": "250 mL d'échantillon d'eau amenés à pH 3 par de l'acide sulfurique dilué ; H2O2 (30 %, Nanjing Chemical Reagent Co., Ltd.) de 10 à 60 mM ; catalyseur de 0,4 à 1,4 g/L ; air sous 0,5 à 1,7 MPa (pression de vapeur saturante de l'eau à 120 °C : 0,2 MPa selon les auteurs) ; température de réaction fixée de 60 °C à 160 °C ; lampe UV de 30 W allumée quand la température de consigne est atteinte ; prélèvements à différents temps de réaction ; trois essais catalytiques menés en parallèle, moyenne retenue. Conditions de réaction des légendes : figures 2 à 4 : LaCoO3/CeO2 = 0,8 g/L, H2O2 = 40 mM, 120 °C, 1 MPa, 60 min ; figure 10 : LaCoO3/CeO2 = 1 g/L, H2O2 = 40 mM, 120 °C, 0,5 MPa ; figure 15 : LaCoO3/CeO2 = 1 g/L, H2O2 = 40 mM, 120 °C, 0,5 MPa, 60 min ; figures 11 à 14 : voir les doutes.",
+     "quote": "In an independent catalytic oxidation experiment, 250 mL of water sample was mixed with dilute sulfuric acid to adjust the pH to 3 and placed in a 500 mL photochemical high-pressure reactor."
+    },
+    {
+     "technique": "Feed water (membrane concentrate) characterization",
+     "result": "Concentrat membranaire d'une unité de traitement avancé d'eaux usées de conversion du charbon en gaz naturel (Mongolie-Intérieure) : DCO 1510 mg/L, pH 7,86, COT 658 mg/L, UV254 1,562, NH4-N 3170 mg/L, solides dissous totaux 6200 mg/L.",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Membrane concentrate characteristics were COD 1510 mg/L, pH 7.86, TOC 658 mg/L, UV254 1.562, NH4‒N 3170 mg/L, and total dissolved solid content 6200 mg/L."
+    },
+    {
+     "technique": "COD",
+     "result": "DCO déterminée par la méthode au dichromate de potassium.",
+     "instrument": null,
+     "conditions": "méthode au dichromate de potassium",
+     "quote": "The COD of the water samples was determined by the potassium dichromate method."
+    },
+    {
+     "technique": "TOC",
+     "result": "COT mesuré avec un analyseur de carbone organique total.",
+     "instrument": "Total organic carbon analyzer (TOC, TOC-L, Shimadzu Company, Osaka, Japan)",
+     "conditions": null,
+     "quote": "Total organic carbon analyzer (TOC, TOC-L, Shimadzu Company, Osaka, Japan) was used to measure the TOC of water samples."
+    },
+    {
+     "technique": "UV-Vis (UV254)",
+     "result": "UV254 = absorbance de l'eau à 254 nm, choisi comme indice de qualité de l'eau car les composés phénoliques dominent le concentrat.",
+     "instrument": "UV-Vis spectrophotometer (UV-2600, Shimadzu Company, Osaka, Japan)",
+     "conditions": "longueur d'onde de mesure 254 nm",
+     "quote": "A UV-Vis spectrophotometer (UV-2600, Shimadzu Company, Osaka, Japan) was used to measure water UV254 at 254 nm wavelength."
+    },
+    {
+     "technique": "BOD5",
+     "result": "DBO5 mesurée avec un testeur de DBO ; BOD5/COD déterminé après cinq jours de culture biochimique.",
+     "instrument": "hash BOD tester (BODTrak II type, Loveland, CO, USA)",
+     "conditions": "cinq jours de culture biochimique",
+     "quote": "The BOD5 of the water samples was determined using hash BOD tester (BODTrak II type, Loveland, CO, USA) to investigate biochemical changes during liquid waste processing."
+    },
+    {
+     "technique": "Activated sludge respiration inhibition (biological toxicity)",
+     "result": "Taux d'inhibition respiratoire calculé par la formule (1) à partir de la consommation d'oxygène des boues activées enregistrée automatiquement (vitesse de consommation d'oxygène, OUR, relevée à 8 h).",
+     "instrument": "biological respiration meter (PF-8100, RSA Corporation, Danbury, CT, USA)",
+     "conditions": "pH de l'eau à tester ajusté à 7,5 ± 0,5 par NaOH ou HCl ; environ 250 mL de boues activées dans un flacon de réaction de 500 mL ; milieu OCDE et échantillon d'eau ajoutés ; méthode OCDE de l'influence de substances chimiques sur le métabolisme microbien prise comme référence ; blanc, eau brute et effluent comparés",
+     "quote": "The pH of wastewater to be tested was adjusted to 7.5 ± 0.5 by adding sodium hydroxide or hydrochloric acid to ensure the acid–base environment required for normal growth of activated sludge."
     }
    ],
    "outcomes": [
@@ -1019,6 +1070,16 @@
      "value_num": 96,
      "unit": "%",
      "from_figure": "Fig. 15"
+    },
+    {
+     "property": "toxicity_class_raw_water",
+     "value_text": "High toxic",
+     "quote": "Raw water | 83.66% | High toxic"
+    },
+    {
+     "property": "toxicity_class_oxidation_discharge",
+     "value_text": "Non-toxic",
+     "quote": "Oxidation discharge | No inhibition | Non-toxic"
     }
    ],
    "missing_fields": [
@@ -1898,6 +1959,47 @@
   {
    "where": "Tableau 1, diamètre de pore",
    "issue": "Les diamètres de pore du tableau 1 (4,0569 nm pour LaCoO3/CeO2, 4,9501 nm pour LaCoO3) ne se déduisent pas de V et S par 4V/S (méthode de calcul non précisée par les auteurs) ; valeurs du tableau retenues."
+  },
+  {
+   "where": "Conditions de mesure BET et XRD (LaCoO3/CeO2-800C-8h et LaCoO3)",
+   "issue": "L'article ne donne ni gaz et température d'analyse ni température et durée de dégazage pour la BET, ni pas ni vitesse de balayage ni méthode de calcul de la taille de cristallite pour la XRD (seuls la tension, le courant, le rayonnement Cu Kα et la plage 2θ de 10° à 80° sont écrits) : les champs conditions restent vides ou incomplets."
+  },
+  {
+   "where": "Constantes de référence XRD",
+   "issue": "Les fiches de référence citées sont PDF#48-0123 pour LaCoO3 et PDF#1-800 pour CeO2 (numéro tel qu'écrit dans l'article) ; aucune taille de cristallite ni facteur de forme de Scherrer n'est donné."
+  },
+  {
+   "where": "Valeurs de la littérature de l'introduction (comparisons)",
+   "issue": "Les trois valeurs (LaFeO3 pour le TCE, LaNiO3 pour le réactif noir 5) viennent de l'introduction et décrivent d'autres systèmes (photocatalyse, oxydation humide à l'air) : elles ne sont pas comparées numériquement par les auteurs à leurs propres résultats."
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "LaFeO3 (sol–gel)",
+   "property": "trichloroethylene (TCE) removal efficiency",
+   "value_num": 95,
+   "unit": "%",
+   "conditions": "TCE en solution aqueuse, LaFeO3 2 g/L comme photocatalyseur, 1 h, irradiation par lampe au xénon",
+   "ref_id": "B13-ijerph-18-04906",
+   "quote": "The removal efficiency of tricholorethylene (TCE) in aqueous solution using LaFeO3 (2 g/L) as photocatalyst can reach 95% within 1 h after xenon lamp irradiation."
+  },
+  {
+   "material": "LaNiO3 perovskite",
+   "property": "degradation rate of reactive black 5",
+   "value_num": 65.4,
+   "unit": "%",
+   "conditions": "oxydation humide catalytique, catalyseur 1 g/L, 50 °C, 1 MPa, pH 3, concentration initiale 100 mg/L",
+   "ref_id": "B14-ijerph-18-04906",
+   "quote": "Under the conditions of catalyst dosage of 1 g/L, reaction temperature of 50 °C, reaction pressure of 1 MPa, pH of 3, and initial solution concentration of 100 mg/L, the degradation and decolorization rates of reactive black 5 solution were 65.4% and 89.6%, respectively."
+  },
+  {
+   "material": "LaNiO3 perovskite",
+   "property": "decolorization rate of reactive black 5",
+   "value_num": 89.6,
+   "unit": "%",
+   "conditions": "oxydation humide catalytique, catalyseur 1 g/L, 50 °C, 1 MPa, pH 3, concentration initiale 100 mg/L",
+   "ref_id": "B14-ijerph-18-04906",
+   "quote": "Under the conditions of catalyst dosage of 1 g/L, reaction temperature of 50 °C, reaction pressure of 1 MPa, pH of 3, and initial solution concentration of 100 mg/L, the degradation and decolorization rates of reactive black 5 solution were 65.4% and 89.6%, respectively."
   }
  ]
 }
