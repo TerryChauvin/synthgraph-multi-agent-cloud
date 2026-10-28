@@ -1,0 +1,2091 @@
+{
+ "pmcid": "PMC9054292",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "ethanolic shallot extract",
+   "defined_in": "Materials and methods, Synthesis of CDs",
+   "route": "Shallot_extract",
+   "results_in": [
+    "Fig. 2B"
+   ]
+  },
+  {
+   "sample": "CDs (180 °C, 4 h)",
+   "defined_in": "Materials and methods, Synthesis of CDs",
+   "route": "CDs_180C_4h",
+   "results_in": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Table 2",
+    "Table S1"
+   ]
+  },
+  {
+   "sample": "CDs (hydrothermal time 6 h)",
+   "defined_in": "Results, Optimization of synthesis conditions",
+   "route": "CDs_6h",
+   "results_in": [
+    "Fig. S5A"
+   ]
+  },
+  {
+   "sample": "CDs (hydrothermal time 3–5 h)",
+   "defined_in": "Results, Optimization of synthesis conditions",
+   "route": null,
+   "why": "Only a range (« 3–5 h ») is given; individual conditions are in Fig. S5A, an image of the SI.",
+   "results_in": [
+    "Fig. S5A"
+   ]
+  },
+  {
+   "sample": "CDs (hydrothermal temperature series up to 200–220 °C)",
+   "defined_in": "Results, Optimization of synthesis conditions",
+   "route": null,
+   "why": "Only the range « between 200 °C and 220 °C » is written; the tested temperatures are in Fig. S5B, an image of the SI.",
+   "results_in": [
+    "Fig. S5B"
+   ]
+  },
+  {
+   "sample": "quinine sulfate",
+   "defined_in": "Quantum yield calculation",
+   "route": null,
+   "why": "Commercial reference standard (quantum yield 54 %), not synthesized."
+  },
+  {
+   "sample": "metal ion solutions (Al, Mn, Hg, Ca, Ni, Pb, Co, Zn, Fe, Ag, Mg, Cu, Cd, Cr)",
+   "defined_in": "Sensing procedure; Selectivity",
+   "route": null,
+   "why": "Commercial test solutions for selectivity, not synthesized.",
+   "results_in": [
+    "Fig. 5"
+   ]
+  },
+  {
+   "sample": "real samples (drinking water, milk 1–3, soymilk 1–2, apple juice, coconut juice, industrial wastewater 1–2)",
+   "defined_in": "Analysis of real samples",
+   "route": null,
+   "why": "Analysed matrices, not materials; results kept as outcomes of the CDs route.",
+   "results_in": [
+    "Table 2"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "label": "Shallot_extract",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "intermediate",
+   "methods": [
+    "biomass_extraction"
+   ],
+   "method": "ultrasound-assisted extraction of blended shallot with 80% ethanol (total phenolic extract)",
+   "material": {
+    "name": "ethanolic shallot extract (total phenolic precursor)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Freshly-blended shallot (20 g) was sonicated in an ultrasonic bath with 80% ethanol at 0.4 kW and 45 °C.",
+   "succeeded": true,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "shallot",
+     "formula": null,
+     "role": "precursor",
+     "amount": 20,
+     "unit": "g",
+     "purity": null,
+     "supplier": "local market of Thailand",
+     "supplier_quote": "All food samples and shallot were obtained from the local market of Thailand.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "Freshly-blended shallot (20 g)"
+    },
+    {
+     "name": "ethanol (80%)",
+     "formula": "C2H5OH",
+     "role": "solvent",
+     "purity": "analytical grade",
+     "supplier": null,
+     "supplier_quote": "All chemicals used in the present study were of the analytical grade.",
+     "not_stated": [
+      "amount",
+      "supplier"
+     ],
+     "quote": "Freshly-blended shallot (20 g) was sonicated in an ultrasonic bath with 80% ethanol at 0.4 kW and 45 °C."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "grind",
+     "description": "Shallot is physically digested (blended) before extraction.",
+     "quote": "Shallot was first physically digested by a blender.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "blender",
+       "detail": null,
+       "quote": "Shallot was first physically digested by a blender."
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "solvent_extraction",
+     "description": "The blended shallot (20 g) is sonicated with 80% ethanol in an ultrasonic bath at 0.4 kW and 45 °C for 30 min.",
+     "quote": "Freshly-blended shallot (20 g) was sonicated in an ultrasonic bath with 80% ethanol at 0.4 kW and 45 °C. After 30 min, the shallot extract solution was collected.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 45,
+       "unit": "°C",
+       "quote": "Freshly-blended shallot (20 g) was sonicated in an ultrasonic bath with 80% ethanol at 0.4 kW and 45 °C."
+      },
+      {
+       "name": "duration",
+       "value_num": 30,
+       "unit": "min",
+       "quote": "After 30 min, the shallot extract solution was collected."
+      },
+      {
+       "name": "solvent",
+       "value_text": "80% ethanol",
+       "quote": "Freshly-blended shallot (20 g) was sonicated in an ultrasonic bath with 80% ethanol at 0.4 kW and 45 °C."
+      },
+      {
+       "name": "power",
+       "value_num": 0.4,
+       "unit": "kW",
+       "quote": "Freshly-blended shallot (20 g) was sonicated in an ultrasonic bath with 80% ethanol at 0.4 kW and 45 °C."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonic bath",
+       "detail": "0.4 kW",
+       "quote": "Freshly-blended shallot (20 g) was sonicated in an ultrasonic bath with 80% ethanol at 0.4 kW and 45 °C."
+      }
+     ],
+     "not_stated": [
+      "solvent_volume"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "collect",
+     "description": "The shallot extract solution is collected.",
+     "quote": "After 30 min, the shallot extract solution was collected.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "separation_method"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "uv_ext",
+     "technique": "UV_vis",
+     "instrument": "Agilent 8453 UV-Visible spectrophotometer (Germany)",
+     "result": "absorption spectrum of the shallot extract shown in Fig. 2B (black curve), not described in the text",
+     "quote": "Fig. 2 (A) Images of CDs and shallot extract under day light (left) and UV light (right). (B) UV-Visible absorption spectra of CDs (red) & shallot (black) and fluorescence emission spectra of CDs (blue) and shallot extract (green).",
+     "settings": [],
+     "not_stated": [
+      "wavelength_range",
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "pl_ext",
+     "technique": "PL",
+     "instrument": "RF-5301PC spectrofluorometer (Shimadzu, Japan)",
+     "result": "fluorescence emission spectrum of the shallot extract shown in Fig. 2B (green curve), not described in the text",
+     "quote": "Fig. 2 (A) Images of CDs and shallot extract under day light (left) and UV light (right). (B) UV-Visible absorption spectra of CDs (red) & shallot (black) and fluorescence emission spectra of CDs (blue) and shallot extract (green).",
+     "settings": [],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "solution_concentration",
+     "value_num": 500,
+     "unit": "mg L−1",
+     "measured_by": "not_stated",
+     "quote": "After the successful extraction, the extract (500 mg L−1) was placed into a Teflon-line autoclave without any reagent."
+    },
+    {
+     "property": "absorption_peak",
+     "value_num": 260,
+     "unit": "nm",
+     "from_figure": "Fig. 2B",
+     "measured_by": "uv_ext",
+     "quote": "Fig. 2 (A) Images of CDs and shallot extract under day light (left) and UV light (right). (B) UV-Visible absorption spectra of CDs (red) & shallot (black) and fluorescence emission spectra of CDs (blue) and shallot extract (green)."
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 440,
+     "unit": "nm",
+     "from_figure": "Fig. 2B",
+     "measured_by": "pl_ext",
+     "quote": "Fig. 2 (A) Images of CDs and shallot extract under day light (left) and UV light (right). (B) UV-Visible absorption spectra of CDs (red) & shallot (black) and fluorescence emission spectra of CDs (blue) and shallot extract (green)."
+    }
+   ],
+   "missing_fields": [
+    "solvent_volume",
+    "sonication_duration_order",
+    "separation_method"
+   ]
+  },
+  {
+   "label": "CDs_180C_4h",
+   "parent": null,
+   "is_baseline": true,
+   "methods": [
+    "hydrothermal",
+    "green_synthesis"
+   ],
+   "method": "hydrothermal route in a Teflon-lined autoclave using shallot extract as the only precursor",
+   "material": {
+    "name": "self-functionalized carbon dots (CDs) from shallot extract",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": "very tiny particles"
+   },
+   "quote": "CDs were synthesized from shallot extract by a hydrothermal route.",
+   "succeeded": true,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "Shallot_extract",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 500,
+     "unit": "mg L−1",
+     "quote": "After the successful extraction, the extract (500 mg L−1) was placed into a Teflon-line autoclave without any reagent."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "transfer",
+     "description": "The shallot extract (500 mg L−1) is placed in a Teflon-lined autoclave without any other reagent.",
+     "quote": "After the successful extraction, the extract (500 mg L−1) was placed into a Teflon-line autoclave without any reagent.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "Teflon-lined autoclave",
+       "detail": null,
+       "quote": "After the successful extraction, the extract (500 mg L−1) was placed into a Teflon-line autoclave without any reagent."
+      }
+     ],
+     "not_stated": [
+      "volume"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "hydrothermal_treatment",
+     "description": "Hydrothermal synthesis at 180 °C for four hours.",
+     "quote": "The hydrothermal synthesis was carried out at 180 °C for four hours",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 180,
+       "unit": "°C",
+       "quote": "The hydrothermal synthesis was carried out at 180 °C for four hours"
+      },
+      {
+       "name": "duration",
+       "value_text": "four hours",
+       "quote": "The hydrothermal synthesis was carried out at 180 °C for four hours"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "centrifuge",
+     "description": "The clear yellow CD solution is collected after centrifugation for an hour.",
+     "quote": "A clear yellow solution of CDs was collected after centrifugation for an hour and kept in a refrigerator at 4 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_text": "an hour",
+       "quote": "A clear yellow solution of CDs was collected after centrifugation for an hour and kept in a refrigerator at 4 °C."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "centrifuge_speed"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "store",
+     "description": "The CD solution is kept in a refrigerator at 4 °C.",
+     "quote": "A clear yellow solution of CDs was collected after centrifugation for an hour and kept in a refrigerator at 4 °C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "value_num": 4,
+       "unit": "°C",
+       "quote": "A clear yellow solution of CDs was collected after centrifugation for an hour and kept in a refrigerator at 4 °C."
+      }
+     ],
+     "equipment": [
+      {
+       "type": "refrigerator",
+       "detail": null,
+       "quote": "A clear yellow solution of CDs was collected after centrifugation for an hour and kept in a refrigerator at 4 °C."
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "tem_1",
+     "technique": "TEM",
+     "instrument": null,
+     "result": "CDs composed of very tiny particles, 3.65–8.15 nm (average 4.14 nm) from 100 particles (Fig. 1)",
+     "quote": "the size distribution based on counting 100 nanoparticles of CDs were mainly distributed in the range of 3.65–8.15 nm with an average size of 4.14 nm",
+     "settings": [
+      {
+       "name": "particles_counted",
+       "value_num": 100,
+       "quote": "the size distribution based on counting 100 nanoparticles of CDs"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "ftir_1",
+     "technique": "FTIR",
+     "instrument": "TENSOR 27 attenuated total reflectance-Fourier-transform infrared system (Bruker, Germany)",
+     "result": "bands at 3300, 2900, 1700, 1650, 1560, 1400, 1060 cm−1 and 1000–1400 cm−1 (Fig. S1)",
+     "quote": "A TENSOR 27 attenuated total reflectance-Fourier-transform infrared system (Bruker, Germany) was used for infrared spectroscopy measurements.",
+     "settings": [],
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "eds_1",
+     "technique": "EDS",
+     "instrument": null,
+     "result": "C, N, O and S detected in the CDs (Fig. S2)",
+     "quote": "reveals the existence of C (0.277 keV), N (0.392 keV), O (0.525 keV), and S (2.31 keV) in CDs",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": null,
+     "result": "SEM image of the CDs given in Fig. S3 (no morphology described in the text); sample gold-coated",
+     "quote": "The EDX spectrum in Fig. S2† and the scanning electron microscopy (SEM) image in Fig. S3† reveals the existence of C (0.277 keV)",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "value_text": "gold coating",
+       "quote": "Au appeared from the gold coating."
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "uv_1",
+     "technique": "UV_vis",
+     "instrument": "Agilent 8453 UV-Visible spectrophotometer (Germany)",
+     "result": "absorption of CDs at 340 nm; π–π* and n–π* transitions (Fig. 2B)",
+     "quote": "The absorption and emission of CDs were measured by an Agilent 8453 UV-Visible spectrophotometer and an RF-5301PC spectrofluorometer (Shimadzu), respectively.",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "value_text": "315–380 nm",
+       "quote": "was examined in a UV-lighting box in the wavelength range of 315–380 nm"
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "CDs (1 mg L−1) in a buffer solution of pH = 7",
+       "quote": "The optical properties of CDs (1 mg L−1) in a buffer solution of pH = 7 were investigated."
+      }
+     ],
+     "not_stated": [
+      "band_gap_method"
+     ]
+    },
+    {
+     "id": "pl_1",
+     "technique": "PL",
+     "instrument": "RF-5301PC spectrofluorometer (Shimadzu, Japan)",
+     "result": "emission at 430 nm after excitation at 340 nm; stability of the emission (Figs. 3, 2B)",
+     "quote": "Only 1 mg L−1 of CDs had high fluorescence emission at 430 nm after excitation at 340 nm",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "value_num": 340,
+       "unit": "nm",
+       "quote": "after excitation at 340 nm"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_2",
+     "technique": "PL",
+     "instrument": "RF-5301PC spectrofluorometer (Shimadzu, Japan)",
+     "result": "excitation-dependent emission shift (Fig. 2C)",
+     "quote": "When the excitation varied from 310 nm to 380 nm, the fluorescence experienced a redshift of the maximum emission wavelength along (Fig. 2(C)).",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "value_text": "310 nm to 380 nm",
+       "quote": "When the excitation varied from 310 nm to 380 nm"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_qy",
+     "technique": "PL",
+     "instrument": "RF-5301PC spectrofluorometer (Shimadzu, Japan)",
+     "result": "relative quantum yield of the CDs against quinine sulfate",
+     "quote": "The quantum efficiency of CDs was calculated at different concentrations (0.5, 0.75, 1, 1.25 and 1.5 mg L−1).",
+     "settings": [
+      {
+       "name": "quantum_yield_standard",
+       "value_text": "quinine sulfate in 0.1 mol L−1 H2SO4 as the reference solution (quantum yield = 54 and η = 1.33)",
+       "quote": "quinine sulfate in 0.1 mol L−1 H2SO4 as the reference solution (quantum yield = 54 and η = 1.33)"
+      },
+      {
+       "name": "concentration",
+       "value_text": "0.5, 0.75, 1, 1.25 and 1.5 mg L−1",
+       "quote": "The quantum efficiency of CDs was calculated at different concentrations (0.5, 0.75, 1, 1.25 and 1.5 mg L−1)."
+      },
+      {
+       "name": "excitation_wavelength",
+       "value_num": 340,
+       "unit": "nm",
+       "quote": "The absorption and fluorescence intensity of CDs at 340 nm and 430 nm, respectively"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_sens",
+     "technique": "PL",
+     "instrument": "RF-5301PC spectrofluorometer (Shimadzu, Japan)",
+     "result": "emission spectra of CDs in the presence of Cr(iii), Cr(vi), H2O2 and other metal ions (Figs. 4, 5, S6)",
+     "quote": "After 30 min, the fluorescence emission spectra of Cr ions were recorded in the wavelength range of 400–500 nm under the excitation wavelength of 340 nm.",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "value_text": "400–500 nm",
+       "quote": "the fluorescence emission spectra of Cr ions were recorded in the wavelength range of 400–500 nm"
+      },
+      {
+       "name": "excitation_wavelength",
+       "value_num": 340,
+       "unit": "nm",
+       "quote": "under the excitation wavelength of 340 nm"
+      },
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature",
+       "quote": "was executed in a 0.05 mol L−1 phosphate buffer with pH = 7 at room temperature"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "sens_1",
+     "technique": "device_test",
+     "instrument": null,
+     "result": "Cr(vi) turn-off sensing and analytical figures of merit; real-sample analysis",
+     "quote": "The model solution was prepared by placing the calculated amounts of buffer, Cr ions, H2O2, and CDs into a test tube and mixing them thoroughly before the measurement.",
+     "settings": [
+      {
+       "name": "device_architecture",
+       "value_text": "placing the calculated amounts of buffer, Cr ions, H2O2, and CDs into a test tube",
+       "quote": "The model solution was prepared by placing the calculated amounts of buffer, Cr ions, H2O2, and CDs into a test tube and mixing them thoroughly before the measurement."
+      },
+      {
+       "name": "illumination",
+       "value_text": "excitation wavelength of 340 nm",
+       "quote": "under the excitation wavelength of 340 nm"
+      },
+      {
+       "name": "measurement_conditions",
+       "value_text": "0.05 mol L−1 phosphate buffer with pH = 7 at room temperature; After 30 min",
+       "quote": "The sensing of Cr(iii) and Cr(vi) ions was executed in a 0.05 mol L−1 phosphate buffer with pH = 7 at room temperature."
+      },
+      {
+       "name": "pretreatment",
+       "value_text": "All milk samples were pre-treated by 0.05 M HCl and heated at 80 °C for an hour",
+       "quote": "All milk samples were pre-treated by 0.05 M HCl and heated at 80 °C for an hour."
+      }
+     ],
+     "not_stated": [
+      "active_area"
+     ]
+    },
+    {
+     "id": "sens_spec",
+     "technique": "device_test",
+     "instrument": null,
+     "result": "speciation of Cr(iii) and Cr(vi) after oxidation of Cr(iii) by H2O2 (Fig. 4)",
+     "quote": "H2O2 was used as the strong oxidizing agent to oxidize Cr(iii) ions into Cr(vi) ions at 80 °C for 10 min.",
+     "settings": [
+      {
+       "name": "pretreatment",
+       "value_text": "H2O2 used to oxidize Cr(iii) ions into Cr(vi) ions at 80 °C for 10 min",
+       "quote": "H2O2 was used as the strong oxidizing agent to oxidize Cr(iii) ions into Cr(vi) ions at 80 °C for 10 min."
+      },
+      {
+       "name": "measurement_conditions",
+       "value_text": "The 20 mM H2O2 was chosen",
+       "quote": "The 20 mM H2O2 was chosen due to the approximate intensity of the decreased CDs fluorescence from direct Cr(vi) ion quenching and indirect quenching."
+      }
+     ],
+     "not_stated": [
+      "device_architecture",
+      "illumination",
+      "active_area"
+     ]
+    },
+    {
+     "id": "icp_1",
+     "technique": "elemental_analysis",
+     "instrument": null,
+     "result": "total Cr in the real samples by ICP-OES, compared with the sensor",
+     "quote": "The samples solutions were also analyzed by an inductively couple plasma optical emission spectroscopy (ICP-OES).",
+     "settings": [],
+     "not_stated": [
+      "digestion",
+      "calibration"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "visual_appearance",
+     "quote": "A clear yellow solution of CDs was collected after centrifugation for an hour and kept in a refrigerator at 4 °C.",
+     "value_text": "clear yellow solution"
+    },
+    {
+     "property": "particle_size_mean",
+     "quote": "the size distribution based on counting 100 nanoparticles of CDs were mainly distributed in the range of 3.65–8.15 nm with an average size of 4.14 nm",
+     "value_num": 4.14,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_range",
+     "quote": "the size distribution based on counting 100 nanoparticles of CDs were mainly distributed in the range of 3.65–8.15 nm with an average size of 4.14 nm",
+     "value_text": "3.65–8.15 nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "It can be seen that the product synthesized is composed of very tiny particles",
+     "value_text": "very tiny particles",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "ftir_band_3300",
+     "quote": "The broad peak at 3300 cm−1 corresponds to O–H or N–H vibrational stretching.",
+     "value_num": 3300,
+     "value_text": "O–H or N–H vibrational stretching",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_2900",
+     "quote": "The weak band at 2900 cm−1 appeared due to the stretching vibration of C–H.",
+     "value_num": 2900,
+     "value_text": "C–H stretching vibration",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_1700",
+     "quote": "The medium peaks at 1700 cm−1 and 1650 cm−1 signifies the stretching vibration of C",
+     "value_num": 1700,
+     "value_text": "stretching vibration (assignment glyph lost in the text; first of the pair 1700/1650)",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_1650",
+     "quote": "The medium peaks at 1700 cm−1 and 1650 cm−1 signifies the stretching vibration of C",
+     "value_num": 1650,
+     "value_text": "stretching vibration (assignment glyph lost in the text; second of the pair 1700/1650)",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_1560",
+     "quote": "The medium peak at 1560 cm−1 corresponds to C",
+     "value_num": 1560,
+     "value_text": "vibration (assignment glyph lost in the text)",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_1400",
+     "quote": "whereas the peak at 1400 cm−1 corresponds to C–N stretching vibration.",
+     "value_num": 1400,
+     "value_text": "C–N stretching vibration",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_1060",
+     "quote": "The peak at 1060 cm−1 originated from the bending vibration of C–O in carboxyl groups.",
+     "value_num": 1060,
+     "value_text": "bending vibration of C–O in carboxyl groups",
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_1000_1400",
+     "quote": "The IR band in the wavelength range of 1000–1400 cm−1 can be attributed to the stretching vibration of C–O, C–S, and C–H",
+     "value_text": "1000–1400 cm−1: stretching vibration of C–O, C–S, and C–H",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "elemental_composition",
+     "quote": "reveals the existence of C (0.277 keV), N (0.392 keV), O (0.525 keV), and S (2.31 keV) in CDs",
+     "value_text": "C (0.277 keV), N (0.392 keV), O (0.525 keV), and S (2.31 keV)",
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "elemental_composition_artefacts",
+     "quote": "Si appeared during sample drying. Au appeared from the gold coating. Cl, K, and Ca appeared from the shallot extract.",
+     "value_text": "Si (sample drying), Au (gold coating), Cl, K and Ca (shallot extract)",
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "The absorption and emission of CDs at 340 nm and 430 nm, respectively confirm the light emission.",
+     "value_num": 340,
+     "unit": "nm",
+     "measured_by": "uv_1"
+    },
+    {
+     "property": "absorption_peak_figure_B",
+     "quote": "(B) UV-Visible absorption spectra of CDs (red) & shallot (black) and fluorescence emission spectra of CDs (blue) and shallot extract (green).",
+     "value_num": 280,
+     "unit": "nm",
+     "measured_by": "uv_1",
+     "from_figure": "Fig. 2B"
+    },
+    {
+     "property": "absorption_peak_transitions",
+     "quote": "the absorbance regions at 250–500 nm and 280–350 nm presents π–π* and n–π* electronic transitions respectively",
+     "value_text": "250–500 nm (π–π*) and 280–350 nm (n–π*)",
+     "measured_by": "uv_1"
+    },
+    {
+     "property": "PL_emission_peak",
+     "quote": "The absorption and emission of CDs at 340 nm and 430 nm, respectively confirm the light emission.",
+     "value_num": 430,
+     "unit": "nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_emission_peak_excitation_dependence",
+     "quote": "When the excitation varied from 310 nm to 380 nm, the fluorescence experienced a redshift of the maximum emission wavelength along (Fig. 2(C)).",
+     "value_text": "redshift of the maximum emission wavelength",
+     "measured_by": "pl_2"
+    },
+    {
+     "property": "quantum_yield",
+     "quote": "The QY of CDs was calculated as 32.34%, whereas the value for quinine sulfate was 54%.",
+     "value_num": 32.34,
+     "unit": "%",
+     "measured_by": "pl_qy"
+    },
+    {
+     "property": "colloidal_dispersibility",
+     "quote": "Water was selected as the solvent of CDs (water-soluble CDs) due to its high emission intensity and eco-friendly characteristics.",
+     "value_text": "water-soluble",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "retention_stability_storage_8weeks",
+     "quote": "one mg L−1 of CDs continuously had a high light emission intensity for eight weeks",
+     "value_text": "high emission intensity maintained for eight weeks at 4 °C",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_intensity_pH",
+     "quote": "The high fluorescence intensity of CDs was detected for the pH range of 3–8. However, the fluorescence intensity of CDs slightly decreased in the pH range of 9–11",
+     "value_text": "high intensity at pH 3–8, slight decrease at pH 9–11",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_intensity_NaCl",
+     "quote": "The emission was not affected by NaCl (0.1–0.5 M), and EDTA (0–0.05 M) salts",
+     "value_text": "not affected by NaCl 0.1–0.5 M",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_intensity_EDTA",
+     "quote": "The emission was not affected by NaCl (0.1–0.5 M), and EDTA (0–0.05 M) salts",
+     "value_text": "not affected by EDTA 0–0.05 M",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_intensity_solvents",
+     "quote": "Solvents that allowed CDs to dissolve clearly demonstrated a high fluorescence intensity, whereas all non-polar solvents had a low fluorescence intensity.",
+     "value_text": "high in solvents that dissolve CDs, low in all non-polar solvents",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "retention_stability_intraday_90min",
+     "quote": "whereas the intra-day emission stability was noticed for 90 min under the ambient light",
+     "value_text": "emission stable for 90 min under ambient light",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "PL_intensity_concentration_range",
+     "quote": "The sensitivity of CDs remained constant in the range of 0.5–1.5 mg L−1.",
+     "value_text": "sensitivity constant in the range 0.5–1.5 mg L−1",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_intensity_storage_week_1",
+     "quote": "(A) Effect of standing time for 8 weeks on fluorescence intensity of inter-day stability study of CDs.",
+     "value_num": 520,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3A"
+    },
+    {
+     "property": "PL_intensity_storage_week_2",
+     "quote": "(A) Effect of standing time for 8 weeks on fluorescence intensity of inter-day stability study of CDs.",
+     "value_num": 560,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3A"
+    },
+    {
+     "property": "PL_intensity_storage_week_3",
+     "quote": "(A) Effect of standing time for 8 weeks on fluorescence intensity of inter-day stability study of CDs.",
+     "value_num": 520,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3A"
+    },
+    {
+     "property": "PL_intensity_storage_week_4",
+     "quote": "(A) Effect of standing time for 8 weeks on fluorescence intensity of inter-day stability study of CDs.",
+     "value_num": 520,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3A"
+    },
+    {
+     "property": "PL_intensity_storage_week_5",
+     "quote": "(A) Effect of standing time for 8 weeks on fluorescence intensity of inter-day stability study of CDs.",
+     "value_num": 510,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3A"
+    },
+    {
+     "property": "PL_intensity_storage_week_6",
+     "quote": "(A) Effect of standing time for 8 weeks on fluorescence intensity of inter-day stability study of CDs.",
+     "value_num": 500,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3A"
+    },
+    {
+     "property": "PL_intensity_storage_week_7",
+     "quote": "(A) Effect of standing time for 8 weeks on fluorescence intensity of inter-day stability study of CDs.",
+     "value_num": 490,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3A"
+    },
+    {
+     "property": "PL_intensity_storage_week_8",
+     "quote": "(A) Effect of standing time for 8 weeks on fluorescence intensity of inter-day stability study of CDs.",
+     "value_num": 490,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3A"
+    },
+    {
+     "property": "PL_intensity_pH_3",
+     "quote": "(B) Effect of solution pH on fluorescence intensity of CDs stability.",
+     "value_num": 310,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "PL_intensity_pH_4",
+     "quote": "(B) Effect of solution pH on fluorescence intensity of CDs stability.",
+     "value_num": 320,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "PL_intensity_pH_5",
+     "quote": "(B) Effect of solution pH on fluorescence intensity of CDs stability.",
+     "value_num": 330,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "PL_intensity_pH_6",
+     "quote": "(B) Effect of solution pH on fluorescence intensity of CDs stability.",
+     "value_num": 340,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "PL_intensity_pH_7",
+     "quote": "(B) Effect of solution pH on fluorescence intensity of CDs stability.",
+     "value_num": 320,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "PL_intensity_pH_8",
+     "quote": "(B) Effect of solution pH on fluorescence intensity of CDs stability.",
+     "value_num": 300,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "PL_intensity_pH_9",
+     "quote": "(B) Effect of solution pH on fluorescence intensity of CDs stability.",
+     "value_num": 270,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "PL_intensity_pH_10",
+     "quote": "(B) Effect of solution pH on fluorescence intensity of CDs stability.",
+     "value_num": 240,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "PL_intensity_pH_11",
+     "quote": "(B) Effect of solution pH on fluorescence intensity of CDs stability.",
+     "value_num": 220,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3B"
+    },
+    {
+     "property": "PL_intensity_NaCl_0.1M",
+     "quote": "(C) Effect of NaCl concentration on fluorescence intensity of CDs stability.",
+     "value_num": 490,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3C"
+    },
+    {
+     "property": "PL_intensity_NaCl_0.2M",
+     "quote": "(C) Effect of NaCl concentration on fluorescence intensity of CDs stability.",
+     "value_num": 520,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3C"
+    },
+    {
+     "property": "PL_intensity_NaCl_0.3M",
+     "quote": "(C) Effect of NaCl concentration on fluorescence intensity of CDs stability.",
+     "value_num": 530,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3C"
+    },
+    {
+     "property": "PL_intensity_NaCl_0.4M",
+     "quote": "(C) Effect of NaCl concentration on fluorescence intensity of CDs stability.",
+     "value_num": 550,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3C"
+    },
+    {
+     "property": "PL_intensity_NaCl_0.5M",
+     "quote": "(C) Effect of NaCl concentration on fluorescence intensity of CDs stability.",
+     "value_num": 570,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3C"
+    },
+    {
+     "property": "PL_intensity_EDTA_0M",
+     "quote": "(D) Effect of EDTA concentration on fluorescence intensity of CDs stability study.",
+     "value_num": 560,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3D"
+    },
+    {
+     "property": "PL_intensity_EDTA_0.01M",
+     "quote": "(D) Effect of EDTA concentration on fluorescence intensity of CDs stability study.",
+     "value_num": 550,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3D"
+    },
+    {
+     "property": "PL_intensity_EDTA_0.02M",
+     "quote": "(D) Effect of EDTA concentration on fluorescence intensity of CDs stability study.",
+     "value_num": 560,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3D"
+    },
+    {
+     "property": "PL_intensity_EDTA_0.03M",
+     "quote": "(D) Effect of EDTA concentration on fluorescence intensity of CDs stability study.",
+     "value_num": 560,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3D"
+    },
+    {
+     "property": "PL_intensity_EDTA_0.04M",
+     "quote": "(D) Effect of EDTA concentration on fluorescence intensity of CDs stability study.",
+     "value_num": 580,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3D"
+    },
+    {
+     "property": "PL_intensity_EDTA_0.05M",
+     "quote": "(D) Effect of EDTA concentration on fluorescence intensity of CDs stability study.",
+     "value_num": 630,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3D"
+    },
+    {
+     "property": "PL_intensity_solvent_water",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_num": 600,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_solvent_methanol",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_num": 760,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_solvent_ethanol",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_num": 1100,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_solvent_dimethyl_sulfoxide",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_num": 380,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_solvent_acetonitrile",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_num": 860,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_solvent_tetrahydrofuran",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_num": 690,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_solvent_ethyl_acetate",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_num": 350,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_solvent_butyl_acetate",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_num": 260,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_solvent_dichloromethane",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_num": 340,
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_solvent_hexane",
+     "quote": "(E) Effect of different solvents on fluorescence intensity of CDs stability.",
+     "value_text": "close to zero (about 10 on the axis)",
+     "measured_by": "pl_1",
+     "from_figure": "Fig. 3E"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_2mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 520,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_4mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 525,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_6mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 530,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_8mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 535,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_10mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 540,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_12mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 545,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_14mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 550,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_16mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 555,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_18mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 560,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_20mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 565,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_2mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 495,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_4mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 480,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_6mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 475,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_8mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 470,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_10mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 465,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_12mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 465,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_14mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 465,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_16mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 465,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_18mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 465,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr3_20mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 460,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_2mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 430,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_4mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 435,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_6mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 430,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_8mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 435,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_10mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 445,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_12mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 450,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_14mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 445,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_16mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 455,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_18mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 450,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "PL_intensity_CDs_H2O2_Cr6_20mM_H2O2",
+     "quote": "Fig. 4 Effect of H2O2 concentration on fluorescence intensity of Cr(iii) and Cr(vi).",
+     "value_num": 455,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "linear_range_Cr6",
+     "quote": "The proposed method was validated in 20–100 μM linearity",
+     "value_text": "20–100 μM",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_sensitivity_slope_20_100uM",
+     "quote": "y = 2.2346x as the set-zero intercept linear equation",
+     "value_num": 2.2346,
+     "value_text": "y = 2.2346x",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_sensitivity_slope_100_1000uM",
+     "quote": "100-1000 (M) y = 1.0928x",
+     "value_num": 1.0928,
+     "value_text": "y = 1.0928x",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "statistic_r2_calibration_20_100uM",
+     "quote": "0.9981 as the correlation coefficient",
+     "value_num": 0.9981,
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "statistic_r2_calibration_100_1000uM",
+     "quote": "100-1000 (M) 0.4725",
+     "value_num": 0.4725,
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "limit_of_detection_Cr6",
+     "quote": "3.5 μM as the limit of detection (LOD)",
+     "value_num": 3.5,
+     "unit": "μM",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "limit_of_quantification_Cr6",
+     "quote": "11.7 μM as the limit of quantification (LOQ)",
+     "value_num": 11.7,
+     "unit": "μM",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "statistic_rsd_intraday",
+     "quote": "2.78% and 5.29% as the intra-day and inter-day relative standard deviations (RSD), respectively",
+     "value_num": 2.78,
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "statistic_rsd_interday",
+     "quote": "2.78% and 5.29% as the intra-day and inter-day relative standard deviations (RSD), respectively",
+     "value_num": 5.29,
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "fluorescence_quenching_Ksv",
+     "quote": "Ksv = 1163.4 L mol−1",
+     "value_num": 1163.4,
+     "unit": "L mol−1",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "statistic_r2_stern_volmer",
+     "quote": "The correlation coefficient (R2) and the Y-axis interception were set as 0.9966 and 1, respectively, to calculate Ksv",
+     "value_num": 0.9966,
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "fluorescence_quenching_Cr6_pH4",
+     "quote": "Fe(iii) could quench CDs fluorescence for 60% that was as same as the 70% of Cr(vi) quenching",
+     "value_num": 70,
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "fluorescence_quenching_Fe3_pH4",
+     "quote": "Fe(iii) could quench CDs fluorescence for 60% that was as same as the 70% of Cr(vi) quenching",
+     "value_num": 60,
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "fluorescence_quenching_other_cations",
+     "quote": "The addition of Cr(vi) ions into CDs resulted in fluorescence quenching, whereas other cations did not affect the intensity of CDs under experimental conditions.",
+     "value_text": "Cr(vi) quenches; other cations did not affect the intensity",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "fluorescence_quenching_AlIII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": -0.09,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_MnII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.04,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_HgII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.11,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_CaII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.0,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_NiII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.09,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_PbII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.01,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_CoII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.07,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_ZnII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.03,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_FeII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.1,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_AgI_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.08,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_MgII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.01,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_CuII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.12,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_CdII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.02,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_CrIII_pH4_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.14,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5A"
+    },
+    {
+     "property": "fluorescence_quenching_AlIII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.02,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_MnII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.01,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_HgII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.3,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_CaII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.06,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_NiII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.17,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_PbII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": -0.03,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_CoII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.12,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_ZnII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.03,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_FeIII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.32,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_FeII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.25,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_AgI_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.33,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_MgII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.05,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_CuII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.17,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_CdII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": -0.02,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_CrIII_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.08,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "fluorescence_quenching_CrVI_pH7_relative",
+     "quote": "Fig. 5 Selectivity study of metal ions on quenching effect of CDs at pH 4 (A) and at pH 7 (B).",
+     "value_num": 0.97,
+     "measured_by": "pl_sens",
+     "from_figure": "Fig. 5B"
+    },
+    {
+     "property": "analytical_recovery_found_drinking_water",
+     "quote": "Drinking water | n.d. | n.d. | n.d. | 107.5 ± 1.66 | 87.77 ± 2.11 | n.d.",
+     "value_text": "n.d.",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_drinking_water_Cr3",
+     "quote": "Drinking water | n.d. | n.d. | n.d. | 107.5 ± 1.66 | 87.77 ± 2.11 | n.d.",
+     "value_num": 107.5,
+     "value_text": "107.5 ± 1.66",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_drinking_water_Cr6",
+     "quote": "Drinking water | n.d. | n.d. | n.d. | 107.5 ± 1.66 | 87.77 ± 2.11 | n.d.",
+     "value_num": 87.77,
+     "value_text": "87.77 ± 2.11",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_milk_1",
+     "quote": "Milk 1 | n.d. | n.d. | n.d. | 89.59 ± 4.75 | 83.32 ± 4.78 | n.d.",
+     "value_text": "n.d.",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_milk_1_Cr3",
+     "quote": "Milk 1 | n.d. | n.d. | n.d. | 89.59 ± 4.75 | 83.32 ± 4.78 | n.d.",
+     "value_num": 89.59,
+     "value_text": "89.59 ± 4.75",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_milk_1_Cr6",
+     "quote": "Milk 1 | n.d. | n.d. | n.d. | 89.59 ± 4.75 | 83.32 ± 4.78 | n.d.",
+     "value_num": 83.32,
+     "value_text": "83.32 ± 4.78",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_milk_2",
+     "quote": "Milk 2 | n.d. | n.d. | n.d. | 78.58 ± 6.87 | 78.62 ± 7.66 | n.d.",
+     "value_text": "n.d.",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_milk_2_Cr3",
+     "quote": "Milk 2 | n.d. | n.d. | n.d. | 78.58 ± 6.87 | 78.62 ± 7.66 | n.d.",
+     "value_num": 78.58,
+     "value_text": "78.58 ± 6.87",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_milk_2_Cr6",
+     "quote": "Milk 2 | n.d. | n.d. | n.d. | 78.58 ± 6.87 | 78.62 ± 7.66 | n.d.",
+     "value_num": 78.62,
+     "value_text": "78.62 ± 7.66",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_milk_3",
+     "quote": "Milk 3 | n.d. | n.d. | n.d. | 82.98 ± 5.83 | 83.91 ± 6.28 | n.d.",
+     "value_text": "n.d.",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_milk_3_Cr3",
+     "quote": "Milk 3 | n.d. | n.d. | n.d. | 82.98 ± 5.83 | 83.91 ± 6.28 | n.d.",
+     "value_num": 82.98,
+     "value_text": "82.98 ± 5.83",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_milk_3_Cr6",
+     "quote": "Milk 3 | n.d. | n.d. | n.d. | 82.98 ± 5.83 | 83.91 ± 6.28 | n.d.",
+     "value_num": 83.91,
+     "value_text": "83.91 ± 6.28",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_soymilk_1",
+     "quote": "Soymilk 1 | n.d. | n.d. | n.d. | 91.09 ± 3.52 | 90.69 ± 3.76 | n.d.",
+     "value_text": "n.d.",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_soymilk_1_Cr3",
+     "quote": "Soymilk 1 | n.d. | n.d. | n.d. | 91.09 ± 3.52 | 90.69 ± 3.76 | n.d.",
+     "value_num": 91.09,
+     "value_text": "91.09 ± 3.52",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_soymilk_1_Cr6",
+     "quote": "Soymilk 1 | n.d. | n.d. | n.d. | 91.09 ± 3.52 | 90.69 ± 3.76 | n.d.",
+     "value_num": 90.69,
+     "value_text": "90.69 ± 3.76",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_soymilk_2",
+     "quote": "Soymilk 2 | n.d. | n.d. | n.d. | 92.64 ± 4.29 | 99.76 ± 4.39 | n.d.",
+     "value_text": "n.d.",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_soymilk_2_Cr3",
+     "quote": "Soymilk 2 | n.d. | n.d. | n.d. | 92.64 ± 4.29 | 99.76 ± 4.39 | n.d.",
+     "value_num": 92.64,
+     "value_text": "92.64 ± 4.29",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_soymilk_2_Cr6",
+     "quote": "Soymilk 2 | n.d. | n.d. | n.d. | 92.64 ± 4.29 | 99.76 ± 4.39 | n.d.",
+     "value_num": 99.76,
+     "value_text": "99.76 ± 4.39",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_apple_juice",
+     "quote": "Apple juice | n.d. | n.d. | n.d. | 91.71 ± 2.33 | 95.74 ± 2.39 | n.d.",
+     "value_text": "n.d.",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_apple_juice_Cr3",
+     "quote": "Apple juice | n.d. | n.d. | n.d. | 91.71 ± 2.33 | 95.74 ± 2.39 | n.d.",
+     "value_num": 91.71,
+     "value_text": "91.71 ± 2.33",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_apple_juice_Cr6",
+     "quote": "Apple juice | n.d. | n.d. | n.d. | 91.71 ± 2.33 | 95.74 ± 2.39 | n.d.",
+     "value_num": 95.74,
+     "value_text": "95.74 ± 2.39",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_coconut_juice",
+     "quote": "Coconut juice | n.d. | n.d. | n.d. | 97.90 ± 2.52 | 98.01 ± 2.77 | n.d.",
+     "value_text": "n.d.",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_coconut_juice_Cr3",
+     "quote": "Coconut juice | n.d. | n.d. | n.d. | 97.90 ± 2.52 | 98.01 ± 2.77 | n.d.",
+     "value_num": 97.9,
+     "value_text": "97.90 ± 2.52",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_coconut_juice_Cr6",
+     "quote": "Coconut juice | n.d. | n.d. | n.d. | 97.90 ± 2.52 | 98.01 ± 2.77 | n.d.",
+     "value_num": 98.01,
+     "value_text": "98.01 ± 2.77",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_industrial_wastewater_1_total_Cr",
+     "quote": "Industrial wastewater 1 | 24 ± 1.7 | 4 ± 2.3 | 19.9 ± 1.5 | 107.7 ± 12.91 | 119.7 ± 13.55 | 23.4 ± 1.9",
+     "value_num": 24.0,
+     "value_text": "24 ± 1.7",
+     "unit": "μM",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_industrial_wastewater_1_Cr3",
+     "quote": "Industrial wastewater 1 | 24 ± 1.7 | 4 ± 2.3 | 19.9 ± 1.5 | 107.7 ± 12.91 | 119.7 ± 13.55 | 23.4 ± 1.9",
+     "value_num": 4.0,
+     "value_text": "4 ± 2.3",
+     "unit": "μM",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_industrial_wastewater_1_Cr6",
+     "quote": "Industrial wastewater 1 | 24 ± 1.7 | 4 ± 2.3 | 19.9 ± 1.5 | 107.7 ± 12.91 | 119.7 ± 13.55 | 23.4 ± 1.9",
+     "value_num": 19.9,
+     "value_text": "19.9 ± 1.5",
+     "unit": "μM",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "solution_concentration_industrial_wastewater_1_total_Cr_ICP_OES",
+     "quote": "Industrial wastewater 1 | 24 ± 1.7 | 4 ± 2.3 | 19.9 ± 1.5 | 107.7 ± 12.91 | 119.7 ± 13.55 | 23.4 ± 1.9",
+     "value_num": 23.4,
+     "value_text": "23.4 ± 1.9",
+     "unit": "μM",
+     "measured_by": "icp_1"
+    },
+    {
+     "property": "analytical_recovery_industrial_wastewater_1_Cr3",
+     "quote": "Industrial wastewater 1 | 24 ± 1.7 | 4 ± 2.3 | 19.9 ± 1.5 | 107.7 ± 12.91 | 119.7 ± 13.55 | 23.4 ± 1.9",
+     "value_num": 107.7,
+     "value_text": "107.7 ± 12.91",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_industrial_wastewater_1_Cr6",
+     "quote": "Industrial wastewater 1 | 24 ± 1.7 | 4 ± 2.3 | 19.9 ± 1.5 | 107.7 ± 12.91 | 119.7 ± 13.55 | 23.4 ± 1.9",
+     "value_num": 119.7,
+     "value_text": "119.7 ± 13.55",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_industrial_wastewater_2_total_Cr",
+     "quote": "Industrial wastewater 2 | 29.1 ± 5.1 | 22.4 ± 1.8 | 6.8 ± 6.1 | 116.6 ± 14.69 | 106.5 ± 19.14 | 29.5 ± 3.4",
+     "value_num": 29.1,
+     "value_text": "29.1 ± 5.1",
+     "unit": "μM",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_industrial_wastewater_2_Cr3",
+     "quote": "Industrial wastewater 2 | 29.1 ± 5.1 | 22.4 ± 1.8 | 6.8 ± 6.1 | 116.6 ± 14.69 | 106.5 ± 19.14 | 29.5 ± 3.4",
+     "value_num": 22.4,
+     "value_text": "22.4 ± 1.8",
+     "unit": "μM",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_found_industrial_wastewater_2_Cr6",
+     "quote": "Industrial wastewater 2 | 29.1 ± 5.1 | 22.4 ± 1.8 | 6.8 ± 6.1 | 116.6 ± 14.69 | 106.5 ± 19.14 | 29.5 ± 3.4",
+     "value_num": 6.8,
+     "value_text": "6.8 ± 6.1",
+     "unit": "μM",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "solution_concentration_industrial_wastewater_2_total_Cr_ICP_OES",
+     "quote": "Industrial wastewater 2 | 29.1 ± 5.1 | 22.4 ± 1.8 | 6.8 ± 6.1 | 116.6 ± 14.69 | 106.5 ± 19.14 | 29.5 ± 3.4",
+     "value_num": 29.5,
+     "value_text": "29.5 ± 3.4",
+     "unit": "μM",
+     "measured_by": "icp_1"
+    },
+    {
+     "property": "analytical_recovery_industrial_wastewater_2_Cr3",
+     "quote": "Industrial wastewater 2 | 29.1 ± 5.1 | 22.4 ± 1.8 | 6.8 ± 6.1 | 116.6 ± 14.69 | 106.5 ± 19.14 | 29.5 ± 3.4",
+     "value_num": 116.6,
+     "value_text": "116.6 ± 14.69",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    },
+    {
+     "property": "analytical_recovery_industrial_wastewater_2_Cr6",
+     "quote": "Industrial wastewater 2 | 29.1 ± 5.1 | 22.4 ± 1.8 | 6.8 ± 6.1 | 116.6 ± 14.69 | 106.5 ± 19.14 | 29.5 ± 3.4",
+     "value_num": 106.5,
+     "value_text": "106.5 ± 19.14",
+     "unit": "%",
+     "measured_by": "pl_sens"
+    }
+   ],
+   "missing_fields": [
+    "yield",
+    "autoclave_volume",
+    "fill_fraction",
+    "heating_rate",
+    "cooling",
+    "centrifuge_speed",
+    "extract_volume"
+   ]
+  },
+  {
+   "label": "CDs_6h",
+   "parent": "CDs_180C_4h",
+   "material": {
+    "name": "self-functionalized carbon dots (CDs) from shallot extract",
+    "formula": null,
+    "family": "carbone",
+    "phase": null,
+    "morphology": "very tiny particles"
+   },
+   "quote": "Fig. S5(A)† expresses that the fluorescence intensity of CDs gradually increased with the increase of the hydrothermal time. The intensity remained constant at 3–5 h and then started to decrease at the 6th hour.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_num": 6,
+     "unit": "h",
+     "parent_value": "four hours",
+     "quote": "The intensity remained constant at 3–5 h and then started to decrease at the 6th hour."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "PL_intensity_hydrothermal_time",
+     "value_text": "started to decrease at the 6th hour (constant at 3–5 h)",
+     "measured_by": "pl_1",
+     "quote": "The intensity remained constant at 3–5 h and then started to decrease at the 6th hour."
+    }
+   ]
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "carbon dots from Lemon peel waste",
+   "property": "quantum_yield",
+   "value_num": 14,
+   "unit": "%",
+   "conditions": "Hydrothermal, 200 °C, 10 h; Cr(vi) sensing",
+   "ref_id": "cit35",
+   "route": "CDs_180C_4h",
+   "quote": "Lemon peel waste | Hydrothermal | 200 °C, 10 h | 14 | Cr(vi)"
+  },
+  {
+   "material": "carbon dots from Carica papaya waste peels extract",
+   "property": "quantum_yield",
+   "value_num": 23.7,
+   "unit": "%",
+   "conditions": "Pyrolysis, 200 °C, 15 min; total chromium sensing",
+   "ref_id": "cit36",
+   "route": "CDs_180C_4h",
+   "quote": "Carica papaya waste peels extract | Pyrolysis | 200 °C, 15 min | 23.7 | Total chromium"
+  },
+  {
+   "material": "carbon dots from Ethanolamine and 1-carboxyethyl-3-methylimidazolium chloride",
+   "property": "quantum_yield",
+   "value_num": 21.85,
+   "unit": "%",
+   "conditions": "Pyrolysis, 220 °C, 2 h; Cr(vi) sensing",
+   "ref_id": "cit37",
+   "route": "CDs_180C_4h",
+   "quote": "Ethanolamine and 1-carboxyethyl-3-methylimidazolium chloride | Pyrolysis | 220 °C, 2 h | 21.85 | Cr(vi)"
+  },
+  {
+   "material": "carbon dots from Tulsi leaves",
+   "property": "quantum_yield",
+   "value_num": 3.06,
+   "unit": "%",
+   "conditions": "Hydrothermal, 200 °C, 4 h; Cr(vi) sensing",
+   "ref_id": "cit38",
+   "route": "CDs_180C_4h",
+   "quote": "Tulsi leaves | Hydrothermal | 200 °C, 4 h | 3.06 | Cr(vi)"
+  },
+  {
+   "material": "carbon dots from Wool and pig hair",
+   "property": "quantum_yield",
+   "value_num": 25.6,
+   "unit": "%",
+   "conditions": "Hydrothermal, 240 °C, 6 h; Cr(vi) sensing",
+   "ref_id": "cit39",
+   "route": "CDs_180C_4h",
+   "quote": "Wool and pig hair | Hydrothermal | 240 °C, 6 h | 25.6 | Cr(vi)"
+  },
+  {
+   "material": "carbon dots from Pineapple juice",
+   "property": "quantum_yield",
+   "value_num": 10.06,
+   "unit": "%",
+   "conditions": "Hydrothermal, 150 °C, 3 h; Cr(vi) sensing",
+   "ref_id": "cit40",
+   "route": "CDs_180C_4h",
+   "quote": "Pineapple juice | Hydrothermal | 150 °C, 3 h | 10.06 | Cr(vi)"
+  },
+  {
+   "material": "carbon dots from Sucrose and phosphoric acid",
+   "property": "quantum_yield",
+   "value_num": 0.18,
+   "unit": "%",
+   "conditions": "Acid carbonization, 85 °C, 30 min; Cr(iii) sensing",
+   "ref_id": "cit41",
+   "route": "CDs_180C_4h",
+   "quote": "Sucrose and phosphoric acid | Acid carbonization | 85 °C, 30 min | 0.18 | Cr(iii)"
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des points de carbone (CDs) auto-fonctionnalisés à partir d'un extrait éthanolique d'échalote : l'échalote broyée est extraite à l'éthanol à 80 % sous ultrasons, puis l'extrait phénolique (500 mg L−1) est chauffé à 180 °C pendant quatre heures en autoclave, sans autre réactif. Les CDs (taille moyenne 4,14 nm, rendement quantique 32,34 %) servent de sonde de fluorescence « turn-off » pour le Cr(VI), puis pour le Cr(III) après oxydation par H2O2, dans le lait, les jus et des eaux usées.",
+   "quote": "Self-functionalized carbon dots (CDs) were prepared from ethanolic shallot extract to obtain a total phenolic precursor."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à produire des CDs hydrosolubles à partir d'un déchet alimentaire (échalote) par une voie verte, et à vérifier qu'ils détectent sélectivement le chrome(VI) et permettent la spéciation Cr(III)/Cr(VI) dans des matrices alimentaires et environnementales."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Deux paramètres de la synthèse (durée et température hydrothermales) sont balayés pour choisir la condition donnant la plus forte fluorescence, mais les valeurs testées ne sont données que dans les figures S5 de l'annexe. Le pH, la force ionique, le solvant, la durée de stockage, la concentration de H2O2 et la nature des ions métalliques sont ensuite variés pour établir la stabilité, la sélectivité et les conditions d'analyse du capteur."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "La seule branche explicitement décrite est la durée de 6 h (au lieu de 4 h) : l'intensité de fluorescence, constante entre 3 et 5 h, commence à diminuer à la 6e heure, ce qui fixe 4 h comme durée retenue. Pour la température, les auteurs disent seulement que l'intensité croît jusqu'à un maximum puis décroît entre 200 et 220 °C, d'où 180 °C ; aucune valeur n'est donnée dans le texte, donc aucune branche n'a été créée.",
+   "quote": "The intensity remained constant at 3–5 h and then started to decrease at the 6th hour."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Série en durée et en température (Fig. S5, annexe non lisible ici) : la fluorescence augmente avec la durée hydrothermale, reste constante de 3 à 5 h puis baisse à 6 h, et augmente avec la température jusqu'à un maximum avant de baisser entre 200 et 220 °C. Les auteurs l'attribuent à la carbonisation et l'aromatisation qui produisent des CDs de tailles différentes.",
+   "quote": "Fig. S5(B)† reveals that the fluorescence intensity of CDs continuously increased until the highest intensity appeared."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "CDs_180C_4h",
+   "text": "Conditions jugées optimales : 180 °C et quatre heures, car l'intensité y est maximale ; le capteur fonctionne à 1 mg L−1 de CDs, pH 7, avec 20 mM de H2O2 pour la spéciation, et l'eau est retenue comme solvant pour sa faible empreinte environnementale.",
+   "quote": "Self-functional CDs were successfully synthesized using shallot as the raw material at 180 °C for four hours under high fluorescence excitation/emission at 340/430 nm."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Figures d'annexe non lisibles : les courbes de l'optimisation durée et température (Fig. S5), les spectres FTIR (Fig. S1), EDX (Fig. S2), l'image MEB (Fig. S3), le rendement quantique (Fig. S4), les courbes de Stern–Volmer (Fig. S6) et la cinétique d'oxydation du Cr(III) (Fig. S7) sont des images dans le PDF d'annexe ; seule la table S1 est du texte. Manquent aussi : volume d'éthanol d'extraction, volume et taux de remplissage de l'autoclave, vitesse de montée, mode de refroidissement, vitesse de centrifugation, pureté de l'échalote et rendement en CDs ; la concentration de l'extrait (500 mg L−1) est calibrée sur un équivalent catéchol sans autre précision.",
+   "quote": "The concentration of the crude extract was calibrated by the total phenolic of standard catechol."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CDs_180C_4h",
+   "text": "Les auteurs ne décrivent pas de réaction : ils attribuent la formation de CDs de tailles variées à une carbonisation et une aromatisation pendant le traitement hydrothermal, avec des groupes thiol et amine « auto-dopants » issus de l'extrait. Le schéma du résumé graphique (image) liste hydrolyse, déshydratation, décomposition, condensation, carbonisation, aromatisation et nucléation.",
+   "quote": "It implies that the occurrence of carbonization and aromatization produced CDs of different sizes."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CDs_180C_4h",
+   "text": "Pour la détection, les auteurs proposent une extinction dynamique (turn-off) : à pH 7 les ions Cr(VI) sont assez proches des CDs pour un transfert électronique mais pas pour former un complexe, et ils absorbent l'énergie des électrons π* vers leur orbitale d incomplète.",
+   "quote": "At pH = 7, Cr(vi) ions existed close to CDs (close enough for electronic transition; however, not enough for complex formation) absorbed the energy of π*-electrons in the LUMO of CDs to transfer them into the incompletely-filled d-orbital of Cr(vi) ions."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CDs_180C_4h",
+   "text": "Hypothèse de chimiste : les polyphénols, sucres et composés soufrés de l'extrait (thiosulfinates, acides aminés soufrés) se déshydratent et se condensent à 180 °C sous pression autogène en un noyau carboné aromatique, tandis que les fonctions amine, thiol et acide carboxylique de l'extrait restent en surface, ce qui expliquerait le dopage N et S détecté par EDX et la solubilité dans l'eau. Le rendement quantique est probablement limité par la variété des fluorophores de surface (émission dépendante de l'excitation)."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "Shallot_extract",
+   "text": "L'éthanol à 80 % est inflammable : l'extraction aux ultrasons à 45 °C se fait loin de toute flamme. Le bain à ultrasons de 0,4 kW échauffe et génère du bruit ; porter une protection auditive."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "CDs_180C_4h",
+   "text": "L'autoclave à chemise de Téflon chauffé à 180 °C contient une solution aqueuse-éthanolique sous pression autogène : respecter un taux de remplissage d'environ deux tiers au plus (non donné par l'article) et laisser refroidir avant d'ouvrir. Le Cr(VI) (dichromate de potassium) est cancérogène, mutagène et très toxique pour le milieu aquatique ; les solutions de Cr et les déchets doivent être collectés séparément. H2O2 et HCl sont corrosifs."
+  }
+ ],
+ "method_sources": [],
+ "doubts": [
+  {
+   "where": "Conclusion, rendement quantique",
+   "issue": "La Conclusion écrit « The quantum efficiency of quinine sulfate was found as 32.34% » alors que les Résultats donnent 32,34 % pour les CDs et 54 % pour le sulfate de quinine ; valeur de la section Résultats retenue pour les CDs."
+  },
+  {
+   "where": "Stabilité en pH (Résultats vs Conclusion vs Fig. 3B)",
+   "issue": "Les Résultats annoncent une forte intensité pour pH 3–8, la Conclusion pour pH 3–7 ; la Fig. 3B montre un maximum vers pH 6 et une baisse dès pH 7. Texte des Résultats extrait tel quel, valeurs lues sur la figure ajoutées."
+  },
+  {
+   "where": "Absorption des CDs (Fig. 2B)",
+   "issue": "Le texte dit que l'absorption est à 340 nm, mais la courbe rouge de la Fig. 2B passe par un maximum vers 280 nm avec un épaulement ; les deux lectures sont extraites (texte : 340 nm, figure : environ 280 nm). La plage « 315–380 nm » de la boîte UV est ambiguë (absorption, émission, ou les deux) ; rangée en réglage de l'UV-vis."
+  },
+  {
+   "where": "Séries durée et température de synthèse",
+   "issue": "Le texte ne donne que « 3–5 h », « 6th hour » et « between 200 °C and 220 °C » ; les autres valeurs testées sont dans les Fig. S5, qui sont des images de l'annexe non lisibles. Une seule branche (6 h) est créée ; la série de température et la série 3–5 h n'ont pas de voie (plages, valeurs individuelles inconnues)."
+  },
+  {
+   "where": "Fig. 3, 4, 5, 2B : lectures graphiques",
+   "issue": "Valeurs lues à l'œil sur les images : 2 chiffres significatifs pour la Fig. 3 (précision de ±10 unités d'intensité), arrondi à 5 unités pour la Fig. 4 car l'axe est tronqué (400–580) et 2 chiffres effaceraient l'écart entre séries (précision ±5), 2 décimales pour l'intensité relative de la Fig. 5 (±0,02). L'intensité est en unités arbitraires (axe « Intensity »)."
+  },
+  {
+   "where": "Fig. 5B, Cr(VI) à pH 7",
+   "issue": "Le texte ne chiffre que le pH 4 (Fe(III) 60 %, Cr(VI) 70 %) ; sur la Fig. 5B (pH 7) le Cr(VI) est lu à environ 0,97, ce qui n'est pas écrit dans le texte."
+  },
+  {
+   "where": "Table 1, ligne « This work »",
+   "issue": "Le tableau désigne l'espèce détectée comme « Total chromium » alors que l'article décrit un capteur de Cr(VI), avec Cr(III) dosé après oxydation ; la ligne « This work » n'est pas reprise dans comparisons car c'est le résultat propre de l'article (rendement quantique 32,34 %)."
+  },
+  {
+   "where": "Table 2 et résumé",
+   "issue": "Le résumé et la conclusion citent aussi l'eau du robinet (tap water), absente de la Table 2 ; seules les dix lignes du tableau sont extraites. La plage de recouvrement 78,58–119,69 % du résumé s'écrit 119,7 dans le tableau."
+  },
+  {
+   "where": "FTIR, bandes 1700, 1650 et 1560 cm−1",
+   "issue": "Dans corpus/text, les glyphes de la double liaison (C=O, C=C) sont remplacés par des balises SVG ; seules les citations amputées avant le glyphe sont possibles, et l'attribution C=O / C=C ne peut pas être lue dans le fichier. La lecture « 1700 : C=O, 1650 : C–O ou N–H » de l'article n'est donc pas recopiée."
+  },
+  {
+   "where": "Extrait d'échalote, concentration",
+   "issue": "« The concentration of the crude extract was calibrated by the total phenolic of standard catechol » puis « the extract (500 mg L−1) » : on ne sait pas si l'extrait a été dilué pour atteindre 500 mg L−1 ni dans quel solvant ; rangé comme résultat solution_concentration sans mesure précisée."
+  },
+  {
+   "where": "SEM / EDX",
+   "issue": "L'article ne donne ni l'appareil ni la tension d'accélération de l'EDX et du MEB, ni l'appareil du TEM (la barre d'information de la Fig. 1 indique JEM-2010, 200 kV, mais ce n'est pas du texte citable) ; déclarés non cités."
+  },
+  {
+   "where": "Réfs [[cit17]] (rendement quantique relatif) et [[cit34]] (RSD)",
+   "issue": "Renvois d'analyse (équation du rendement quantique relatif, calcul d'écart-type) rangés hors method_sources selon la règle des formules d'analyse ; le protocole de spéciation par H2O2 n'a pas de renvoi bibliographique associé dans le texte."
+  }
+ ]
+}
