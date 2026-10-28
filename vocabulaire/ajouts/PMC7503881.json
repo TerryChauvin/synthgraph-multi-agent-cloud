@@ -1,0 +1,62 @@
+{
+ "pmcid": "PMC7503881",
+ "ajouts": [
+  {
+   "type": "action",
+   "nom": "polish",
+   "definition": "Polir mécaniquement la surface d'un substrat massif avec des papiers abrasifs (SiC), une pâte diamantée ou une suspension, avant un dépôt ou un traitement de surface.",
+   "ecarte": "grind: broyage d'une poudre ou au mortier, pas le polissage d'une surface massive",
+   "date": "2026-10-28 22:27",
+   "cases": [
+    "duration"
+   ]
+  },
+  {
+   "type": "technique",
+   "nom": "profilometry",
+   "definition": "Profilométrie de surface (profilomètre laser ou à stylet, interférométrie optique) : topographie et rugosité d'un film ou d'un substrat sur une surface balayée.",
+   "ecarte": "AFM: microscopie à sonde locale à l'échelle nanométrique, ici profilomètre laser sur 3 mm × 3 mm",
+   "date": "2026-10-28 22:27",
+   "reglages": [
+    "method",
+    "software"
+   ]
+  },
+  {
+   "type": "technique",
+   "nom": "SBF_immersion",
+   "definition": "Essai de bioactivité in vitro par immersion dans un fluide corporel simulé (SBF, protocole de Kokubo) : formation d'une couche d'apatite, pH et concentrations en Ca et P du fluide au cours du trempage.",
+   "ecarte": "biological_test: essai avec organisme ou cellules, alors que le SBF est une solution acellulaire; adsorption_test: essai d'adsorption d'un soluté, pas de minéralisation",
+   "date": "2026-10-28 22:27",
+   "reglages": [
+    "test_medium",
+    "reaction_time",
+    "reaction_temperature",
+    "solution_volume",
+    "analysis_method"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "medium_ph",
+   "definition": "pH mesuré d'un milieu d'essai (SBF, surnageant, solution de trempage) au cours du temps ou à une échéance ; préciser l'échéance ou le temps dans le suffixe (medium_ph_day4).",
+   "ecarte": "solution_concentration: concentration d'une espèce dosée, pas un pH",
+   "date": "2026-10-28 22:27",
+   "techniques": [
+    "SBF_immersion"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "apatite_formation",
+   "definition": "Formation d'apatite (couche, particules, morphologie qualitative) à la surface d'un matériau après immersion en SBF ; critère de bioactivité in vitro.",
+   "ecarte": "morphology: forme d'un matériau synthétisé, ici dépôt minéral induit par le fluide; biological: réponse cellulaire ou antibactérienne",
+   "date": "2026-10-28 22:27",
+   "techniques": [
+    "SBF_immersion",
+    "SEM",
+    "XRD"
+   ]
+  }
+ ]
+}
