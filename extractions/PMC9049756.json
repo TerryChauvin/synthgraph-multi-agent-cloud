@@ -144,7 +144,8 @@
    "yield": null,
    "succeeded": true,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "reagents": [
     {
@@ -304,7 +305,8 @@
      ],
      "equipment": [],
      "not_stated": [
-      "cooling_rate"
+      "cooling_rate",
+      "cooling_mode"
      ]
     },
     {
@@ -518,6 +520,37 @@
      "property": "solution_color_at_135C",
      "value_text": "white at approximately 135 °C",
      "quote": "When 1.5 mL of OA is used for the reaction, the color of the solution is transparent up to 105 °C. Upon heating, the solution color changes to white at approximately 135 °C and then changes to bright yellow at 160 °C, indicating the formation of Cs3BiBr6 NCs."
+    },
+    {
+     "property": "optical_band_gap_wavelength",
+     "quote": "Compared to Cs3Bi2Br9 NPs, the onset of the absorption band-edge is blue-shifted to 3.05 eV (406 nm), indicating an increased optical band-gap in addition, very narrow first excitonic absorption is observed at 383.5 nm of peak position.",
+     "value_num": 406,
+     "unit": "nm"
+    },
+    {
+     "property": "band_gap_shift_vs_Cs3Bi2Br9",
+     "quote": "On the other hand, strong blue-shift of the band gap is observed for smaller Cs3BiBr6 NCs.",
+     "value_text": "strong blue-shift of the band gap compared with large Cs3Bi2Br9"
+    },
+    {
+     "property": "PL_color",
+     "quote": "While large Cs3Bi2Br9 NPs show weak photoluminescence properties, with an emission maximum of 461 nm, deep blue luminescence is observed in small Cs3BiBr6 NCs, with an emission maximum of 435 nm.",
+     "value_text": "deep blue luminescence"
+    },
+    {
+     "property": "CsBr_involvement_onset_temperature",
+     "quote": "When the reaction temperature is further increased to over 160 °C, CsBr precursors are involved in the reaction to form slightly yellowish Cs3BiBr6 NCs.",
+     "value_text": "over 160 °C"
+    },
+    {
+     "property": "product_color_over_160C",
+     "quote": "When the reaction temperature is further increased to over 160 °C, CsBr precursors are involved in the reaction to form slightly yellowish Cs3BiBr6 NCs.",
+     "value_text": "slightly yellowish"
+    },
+    {
+     "property": "phase_up_to_160C",
+     "quote": "Up to a reaction temperature of 160 °C, the BiOBr NPs are predominantly formed as final products and there is no evidence of reaction between the CsBr and BiBr3 precursors.",
+     "value_text": "BiOBr NPs predominantly formed; no evidence of reaction between CsBr and BiBr3"
     }
    ],
    "missing_fields": [
@@ -597,6 +630,27 @@
      "instrument": "EDINBURGH FS5",
      "conditions": "émission excitée à 358 nm, excitation mesurée pour une émission à 461 nm (légende de la Fig. 5c)",
      "quote": "While large Cs3Bi2Br9 NPs show weak photoluminescence properties, with an emission maximum of 461 nm, deep blue luminescence is observed in small Cs3BiBr6 NCs, with an emission maximum of 435 nm."
+    },
+    {
+     "technique": "SEM",
+     "result": "image MEB des nanoplaquettes Cs3Bi2Br9 (Fig. 2c)",
+     "instrument": "Carl Zeiss SIGMA",
+     "conditions": "operating at 5 kV",
+     "quote": "Scanning electron microscopy (SEM) images were recorded using Carl Zeiss SIGMA operating at 5 kV."
+    },
+    {
+     "technique": "UV-vis absorption",
+     "result": "bande interdite 2.67 eV (464 nm), proche de celle du Cs3Bi2Br9 massif",
+     "instrument": "JASCO V-770 UV-VIS-NIR spectrometer",
+     "conditions": null,
+     "quote": "The band gap of large Cs3Bi2Br9 is 2.67 eV (464 nm), which is close to the band gap of bulk Cs3Bi2Br9."
+    },
+    {
+     "technique": "time-resolved PL",
+     "result": "déclin bi-exponentiel, durée de vie moyenne 1.52 ns (Table S1)",
+     "instrument": "HORIBA Fluorolog-3 with a single photon-counting photomultiplier tube (PMT)",
+     "conditions": "pulsed laser diode 374 nm ; détection à 461 nm",
+     "quote": "Time-resolved PL decays are monitored at 440 nm and 461 nm for Cs3BiBr6 NCs and Cs3Bi2Br9 NPs, respectively, under 374 nm of excitation."
     }
    ],
    "outcomes": [
@@ -656,6 +710,22 @@
      "property": "PL_fit_chi_squared",
      "value_num": 0.94,
      "quote": "Cs3Bi2Br9 NPs 40.19 2.77 26.35 12.16 1.52 0.94"
+    },
+    {
+     "property": "optical_band_gap_wavelength",
+     "quote": "The band gap of large Cs3Bi2Br9 is 2.67 eV (464 nm), which is close to the band gap of bulk Cs3Bi2Br9.",
+     "value_num": 464,
+     "unit": "nm"
+    },
+    {
+     "property": "PL_intensity",
+     "quote": "While large Cs3Bi2Br9 NPs show weak photoluminescence properties, with an emission maximum of 461 nm, deep blue luminescence is observed in small Cs3BiBr6 NCs, with an emission maximum of 435 nm.",
+     "value_text": "weak photoluminescence"
+    },
+    {
+     "property": "XPS_elements_detected",
+     "quote": "XPS profiles confirm that the Cs3Bi2Br9 NPs comprise Cs, Bi, and Br (Fig. 2j–l).",
+     "value_text": "Cs, Bi and Br"
     }
    ]
   },
@@ -779,7 +849,8 @@
      "not_stated": [
       "heating_rate",
       "atmosphere",
-      "stirring_speed"
+      "stirring_speed",
+      "cooling_mode"
      ]
     },
     {
@@ -806,7 +877,7 @@
      "technique": "TEM/HRTEM",
      "result": "morphologie de nanoplaquettes rectangulaires",
      "instrument": "JEOL JEM-2100 (TEM) ; JEOL-F200 and JEOL JEM-3010 (HRTEM)",
-     "conditions": null,
+     "conditions": "TEM: operating at 200 kV",
      "quote": "Fig. S3a–c (ESI†) show TEM and HRTEM images of the BiOBr NPs, which exhibit a rectangular nanoplate morphology."
     },
     {
@@ -838,6 +909,16 @@
      "property": "product_color",
      "quote": "When the reaction is performed at 135 °C in the presence of 1.5 mL of OA, BiOBr NPs are formed as a final white product.",
      "value_text": "white"
+    },
+    {
+     "property": "XRD_broad_reflections",
+     "quote": "The (101) and (102) diffraction planes are relatively broad compared to the other planes, indicating that the top and bottom surfaces of the nanoplates are (001) planes.",
+     "value_text": "(101) and (102) relatively broad"
+    },
+    {
+     "property": "exposed_facet",
+     "quote": "The (101) and (102) diffraction planes are relatively broad compared to the other planes, indicating that the top and bottom surfaces of the nanoplates are (001) planes.",
+     "value_text": "top and bottom surfaces are (001) planes"
     }
    ]
   },
@@ -945,6 +1026,11 @@
      "property": "phase_after_60_min_time_series",
      "quote": "After 60 minutes of reaction, phase transformation from BiOBr NPs to Cs3Bi2Br9 NCs occurs to form the mixture of BiOBr and Cs3Bi2Br9 NCs.",
      "value_text": "mixture of BiOBr and Cs3Bi2Br9 NCs"
+    },
+    {
+     "property": "Cs3BiBr6_phase_in_XRD_time_series",
+     "quote": "As the reactions are performed at 170 °C, the Cs3BiBr6 phase is not indicated by the XRD patterns.",
+     "value_text": "not indicated"
     }
    ]
   },
@@ -1491,6 +1577,23 @@
    "route": null,
    "text": "Réserves du relecteur scientifique sur l'interprétation : (1) le décalage vers le bleu de Cs3BiBr6 (435 nm) est attribué à la petite taille, mais Cs3BiBr6 est un composé 0D à octaèdres isolés dont l'émission est intrinsèquement plus bleue (des nanocristaux de 1,5–3 nm émettent aussi vers 438 nm, Tang et al., J. Mater. Chem. C 9, 158–163, 2021) : composition et taille changent ensemble entre les deux échantillons. (2) L'origine de la photoluminescence n'est pas discriminée (pas de témoin BiBr3 seul ni de mesure du surnageant). (3) Les centrifugations courtes (3000 rpm 15 s ; 8000 rpm 3 min) ne séparent des nanocristaux de 14 nm ou des nanoplaquettes de BiOBr que s'ils sont agrégés ; l'article ne décrit pas d'antisolvant.",
    "quote": null
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Les auteurs précisent que CsBr, peu soluble dans le mélange ODE / oleylamine / acide oléique, réagit à l'état solide avec BiBr3 dissous ; c'est pourquoi CsBr est mis en excès par rapport à la stœchiométrie, faute de quoi la transformation de BiOBr en Cs3Bi2Br9 est retardée et BiOBr reste en quantité notable.",
+   "quote": "As CsBr does not completely dissolve in the ODE, OM, and OA solvent mixture, the reaction is conducted between solid-phase CsBr and dissolved BiBr3 in the solution."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": null,
+   "text": "Pour la photoluminescence, les auteurs attribuent le déclin à des transitions sous la bande interdite, à la recombinaison de porteurs de charge et à l'émission d'états de piège (références citées dans l'article), et relient la durée de déclin plus longue de Cs3BiBr6 à son meilleur rendement quantique par recombinaison radiative.",
+   "quote": "The PL decay is attributed to sub-bandgap transition, charge carrier recombination processes, and sub-bandgap state emission (trap emission)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Conditions de caractérisation non données : XRD (rayonnement, plage 2θ, pas, méthode de calcul de taille) ; XPS (source, énergies de liaison, correction de charge) ; UV-vis et PL (plage spectrale, solvant et concentration de la dispersion) ; PLQY (longueur d'onde d'excitation) ; TEM (nombre de particules comptées pour 14,22 ± 1,72 nm, préparation de la grille). L'article ne donne que le nom des appareils."
   }
  ],
  "method_sources": [],
@@ -1538,6 +1641,58 @@
   {
    "where": "Série en température jusqu'à 300 °C",
    "issue": "Le texte dit que Cs3Bi2Br9 reste majoritaire « up to 300 °C » sans donner de températures intermédiaires ; borne de plage, aucune branche créée."
+  },
+  {
+   "where": "Cs3BiBr6_NC (résultats à plus de 160 °C)",
+   "issue": "Les sorties ajoutées « CsBr_involvement_onset_temperature » (over 160 °C) et « product_color_over_160C » viennent de la série en température et non de l'échantillon à 160 °C lui-même ; elles sont rattachées à la voie de base faute de voie dédiée, et rejoignent la contradiction déjà signalée sur 160 °C."
+  },
+  {
+   "where": "comparisons (introduction)",
+   "issue": "Le renvoi bibliographique de « higher than 90% » est cit10 et celui de « FWHM 12–25 nm » cit11 (le texte en cite aussi cit12) ; pour le gap du Cs3Bi2Br9 massif (cit31) l'article ne donne pas de valeur chiffrée."
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "Cs3Bi2Br9 NCs (ligand-assisted re-precipitation, LARP)",
+   "property": "PLQY",
+   "value_num": 4.5,
+   "unit": "%",
+   "conditions": "LARP method (Yang et al.)",
+   "ref_id": "cit40",
+   "quote": "Yang et al. reported on a ligand-assisted re-precipitation method (LARP) for the synthesis of Cs3Bi2Br9 NCs; their method showed a 4.5% PLQY."
+  },
+  {
+   "material": "Cs3Bi2Br9 NCs (ethanol as antisolvent)",
+   "property": "PLQY",
+   "value_num": 20,
+   "unit": "%",
+   "conditions": "approximately; Leng et al., ethanol antisolvent",
+   "ref_id": "cit41",
+   "quote": "Moreover, Leng et al. synthesized this NC by using ethanol as the antisolvent; the PLQY reached approximately 20% with this method."
+  },
+  {
+   "material": "lead-halide perovskite NCs",
+   "property": "PLQY",
+   "value_text": "higher than 90%",
+   "unit": "%",
+   "ref_id": "cit10",
+   "quote": "Lead-halide perovskite NCs exhibit very high photoluminescence quantum yields (PLQYs), at higher than 90%"
+  },
+  {
+   "material": "lead-halide perovskite NCs",
+   "property": "PL_FWHM",
+   "value_text": "12–25 nm",
+   "unit": "nm",
+   "ref_id": "cit11",
+   "quote": "narrow absorption and emission band widths (FWHM is 12–25 nm)"
+  },
+  {
+   "material": "bulk Cs3Bi2Br9",
+   "property": "optical_band_gap",
+   "value_text": "close to the band gap of large Cs3Bi2Br9 NPs (2.67 eV); no value given",
+   "ref_id": "cit31",
+   "route": "Cs3Bi2Br9_NP",
+   "quote": "The band gap of large Cs3Bi2Br9 is 2.67 eV (464 nm), which is close to the band gap of bulk Cs3Bi2Br9."
   }
  ]
 }
