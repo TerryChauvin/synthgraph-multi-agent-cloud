@@ -1,0 +1,2977 @@
+{
+ "pmcid": "PMC13209189",
+ "format": 3,
+ "routes": [
+  {
+   "label": "0%-3h-1050°C",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "methods": [
+    "mechanochemical",
+    "solid_state_reaction"
+   ],
+   "method": "high-energy ball milling of Si, C and PTFE in isopropanol, then solid-state reaction under argon in a tube furnace, oxidative removal of carbon and HF/HNO3 cleaning",
+   "quote": "were mixed in an HEBM apparatus (Planetary Micro Mill, PULVERISETTE 7, FRITSCH, Fritsch GmbH, Idar-Oberstein, Germany) with either 0% or 10 mol% of Al at 500 RPM for 3 h with a 1:10 Ball to Powder (BPR) ratio.",
+   "scale": null,
+   "succeeded": null,
+   "yield": {
+    "value": 10,
+    "unit": "%",
+    "from_figure": "Fig. 1c",
+    "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+   },
+   "not_stated": [],
+   "reagents": [
+    {
+     "name": "activated carbon (NORIT® A SUPRA EUR USP)",
+     "formula": "C",
+     "role": "precursor",
+     "supplier": "Sigma-Aldrich, Merck KGaA, Darmstadt, Germany",
+     "quote": "Activated carbon (C, NORIT® A SUPRA EUR USP, Sigma-Aldrich, Merck KGaA, Darmstadt, Germany)",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "silicon powder (~325 mesh)",
+     "formula": "Si",
+     "role": "precursor",
+     "purity": "99% trace metals basis",
+     "supplier": "Sigma-Aldrich, Merck KGaA, Darmstadt, Germany",
+     "quote": "silicon (Si) powder (~325 mesh, 99% trace metals basis, Sigma-Aldrich, Merck KGaA, Darmstadt, Germany)",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "poly(tetrafluoroethylene) powder (PTFE, 1 µm particle size)",
+     "formula": "(C2F4)n",
+     "role": "precursor",
+     "quote": "poly(tetrafluoroethylene) powder (PTFE, 1 µm particle size)",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "isopropanol",
+     "formula": "C3H8O",
+     "role": "solvent",
+     "amount_text": "added until the samples had an oil-like consistency",
+     "quote": "Isopropanol was used as a medium to facilitate mixing and milling and was added until the samples had an oil-like consistency.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "argon",
+     "formula": "Ar",
+     "role": "gas",
+     "quote": "During milling, the samples were kept under argon to prevent oxidation."
+    },
+    {
+     "name": "polyvinyl alcohol solution (5 w/w%)",
+     "formula": null,
+     "role": "binder",
+     "amount_text": "a few drops",
+     "quote": "After this process, samples were dried and pressed into pellets using a few drops of 5 w/w% polyvinyl alcohol (PVA) solution to maintain their integrity.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "air",
+     "formula": null,
+     "role": "gas",
+     "quote": "heating the samples in air at 650 °C for 10 h"
+    },
+    {
+     "name": "hydrofluoric acid (in HF, HNO3, H2O 1:1:10)",
+     "formula": "HF",
+     "role": "etchant",
+     "amount_text": "1 (of 1:1:10)",
+     "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "nitric acid (in HF, HNO3, H2O 1:1:10)",
+     "formula": "HNO3",
+     "role": "etchant",
+     "amount_text": "1 (of 1:1:10)",
+     "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "water (in HF, HNO3, H2O 1:1:10)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount_text": "10 (of 1:1:10)",
+     "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "ball_mill",
+     "description": "High-energy ball milling of activated carbon, silicon, PTFE (and Al) in isopropanol under argon.",
+     "quote": "were mixed in an HEBM apparatus (Planetary Micro Mill, PULVERISETTE 7, FRITSCH, Fritsch GmbH, Idar-Oberstein, Germany) with either 0% or 10 mol% of Al at 500 RPM for 3 h with a 1:10 Ball to Powder (BPR) ratio.",
+     "parameters": [
+      {
+       "name": "milling_speed",
+       "quote": "were mixed in an HEBM apparatus (Planetary Micro Mill, PULVERISETTE 7, FRITSCH, Fritsch GmbH, Idar-Oberstein, Germany) with either 0% or 10 mol% of Al at 500 RPM for 3 h with a 1:10 Ball to Powder (BPR) ratio.",
+       "value_num": 500,
+       "unit": "RPM"
+      },
+      {
+       "name": "duration",
+       "quote": "were mixed in an HEBM apparatus (Planetary Micro Mill, PULVERISETTE 7, FRITSCH, Fritsch GmbH, Idar-Oberstein, Germany) with either 0% or 10 mol% of Al at 500 RPM for 3 h with a 1:10 Ball to Powder (BPR) ratio.",
+       "value_num": 3,
+       "unit": "h"
+      },
+      {
+       "name": "mass_ratio",
+       "quote": "with a 1:10 Ball to Powder (BPR) ratio",
+       "value_text": "1:10 Ball to Powder (BPR) ratio"
+      },
+      {
+       "name": "solvent",
+       "quote": "Isopropanol was used as a medium to facilitate mixing and milling and was added until the samples had an oil-like consistency.",
+       "value_text": "isopropanol"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "During milling, the samples were kept under argon to prevent oxidation.",
+       "value_text": "argon"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "planetary ball mill",
+       "detail": "Planetary Micro Mill, PULVERISETTE 7, FRITSCH",
+       "quote": "HEBM apparatus (Planetary Micro Mill, PULVERISETTE 7, FRITSCH, Fritsch GmbH, Idar-Oberstein, Germany)"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 2,
+     "action": "dry",
+     "description": "Dry the milled or mixed powder (dried before pressing).",
+     "quote": "After this process, samples were dried and pressed into pellets using a few drops of 5 w/w% polyvinyl alcohol (PVA) solution to maintain their integrity.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "drying_mode"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "press",
+     "description": "Press the dried powder into pellets with a few drops of 5 w/w% PVA solution as binder.",
+     "quote": "After this process, samples were dried and pressed into pellets using a few drops of 5 w/w% polyvinyl alcohol (PVA) solution to maintain their integrity.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "pressure"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Dwell at 200 °C under argon during the ramp to remove water (tube furnace).",
+     "quote": "During the ramp, all samples were initially subjected to a dwell at 200 °C for 60 min to ensure that no water remained during the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "During the ramp, all samples were initially subjected to a dwell at 200 °C for 60 min to ensure that no water remained during the reaction.",
+       "value_num": 200,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "During the ramp, all samples were initially subjected to a dwell at 200 °C for 60 min to ensure that no water remained during the reaction.",
+       "value_num": 60,
+       "unit": "min"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "with a temperature ramp of 5 °C per minute",
+       "value_num": 5,
+       "unit": "°C/min"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "also under argon atmosphere",
+       "value_text": "argon"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "tube furnace",
+       "detail": "Carbolite CTF 18/–/300, Carbolite Gero Ltd., Hope, UK",
+       "quote": "transferred into a Carbolite (CTF 18/–/300) Tube Furnace, Carbolite Gero Ltd., Hope, UK"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 5,
+     "action": "calcine",
+     "description": "Heat to the reaction temperature and hold 60 min under argon (reaction of Si, C and PTFE), then cool overnight.",
+     "quote": "Afterward, the samples were heated to the desired temperature and held at that temperature for another 60 min.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+       "value_num": 1050,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "held at that temperature for another 60 min",
+       "value_num": 60,
+       "unit": "min"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "also under argon atmosphere",
+       "value_text": "argon"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "with a temperature ramp of 5 °C per minute",
+       "value_num": 5,
+       "unit": "°C/min"
+      },
+      {
+       "name": "cooling",
+       "quote": "Then the samples were cooled overnight and cleaned.",
+       "value_text": "cooled overnight"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "tube furnace",
+       "detail": "Carbolite CTF 18/–/300, Carbolite Gero Ltd., Hope, UK",
+       "quote": "transferred into a Carbolite (CTF 18/–/300) Tube Furnace, Carbolite Gero Ltd., Hope, UK"
+      }
+     ],
+     "not_stated": [
+      "gas_flow"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "calcine",
+     "description": "Remove unreacted carbon by heating the powder in air.",
+     "quote": "The cleaning process began with the removal of unreacted carbon by heating the samples in air at 650 °C for 10 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The cleaning process began with the removal of unreacted carbon by heating the samples in air at 650 °C for 10 h.",
+       "value_num": 650,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The cleaning process began with the removal of unreacted carbon by heating the samples in air at 650 °C for 10 h.",
+       "value_num": 10,
+       "unit": "h"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The cleaning process began with the removal of unreacted carbon by heating the samples in air at 650 °C for 10 h.",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "etch",
+     "description": "Dissolve Al and unreacted Si in an HF/HNO3/H2O (1:1:10) solution in a Teflon beaker, gently stirred, left overnight.",
+     "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+     "parameters": [
+      {
+       "name": "volume_ratio",
+       "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+       "value_text": "HF, HNO3, and H2O (1:1:10)"
+      },
+      {
+       "name": "duration",
+       "quote": "The mixture was left overnight to remove Al and unreacted Si.",
+       "value_text": "overnight"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon beaker",
+       "detail": null,
+       "quote": "loaded into a Teflon beaker"
+      }
+     ],
+     "not_stated": [
+      "concentration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "wash",
+     "description": "Wash the powder until the washings reach pH 5.",
+     "quote": "After this, the samples were washed until the pH reached 5, then dried and prepared for measurements.",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "washed until the pH reached 5",
+       "value_num": 5
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_solvent",
+      "repetitions"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "dry",
+     "description": "Final drying before measurements.",
+     "quote": "After this, the samples were washed until the pH reached 5, then dried and prepared for measurements.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "drying_mode"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_A",
+     "technique": "XRD",
+     "instrument": "Huber G670 Guinier Imaging Plate Camera (HUBER Diffraktionstechnik GmbH & Co. KG, Rimsting, Germany)",
+     "result": "polytype distribution (3C, 2H, 4H, 6H), crystallite size and sample composition by Rietveld refinement",
+     "quote": "PXRD measurements were performed using a Huber G670 Guinier Imaging Plate Camera (HUBER Diffraktionstechnik GmbH & Co. KG, Rimsting, Germany) with Cu Kα1 radiation (1.5406 Å).",
+     "settings": [
+      {
+       "name": "radiation",
+       "value_text": "Cu Kα1 radiation (1.5406 Å)",
+       "quote": "with Cu Kα1 radiation (1.5406 Å)"
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_text": "Rietveld refinement with Topas Academic",
+       "quote": "Rietveld refinement was performed using Topas Academic to characterize the polytype formation and crystallite size."
+      },
+      {
+       "name": "software",
+       "value_text": "Topas Academic",
+       "quote": "Rietveld refinement was performed using Topas Academic"
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "special glass capillaries (Mark-tubes) with a diameter of 0.5 mm and a wall thickness of 0.01 mm",
+       "quote": "The samples were measured in special glass capillaries (Mark-tubes, WJM-Glas Müller GmbH, Berlin, Germany) with a diameter of 0.5 mm and a wall thickness of 0.01 mm to minimize background interference."
+      }
+     ],
+     "not_stated": [
+      "scan_range",
+      "scan_step"
+     ]
+    },
+    {
+     "id": "raman_A",
+     "technique": "Raman",
+     "instrument": null,
+     "result": "SiC TO (~796 cm−1) and LO (~972 cm−1) modes sharpen and their FWHM decreases at higher synthesis temperature",
+     "quote": "In the Raman spectra (Figure S2), the SiC TO (~796 cm−1) and LO (~972 cm−1) modes sharpened, and their FWHM decreased",
+     "settings": [],
+     "not_stated": [
+      "excitation_wavelength",
+      "laser_power"
+     ]
+    },
+    {
+     "id": "pl_vis_A",
+     "technique": "PL",
+     "instrument": "Renishaw inVia confocal Raman microscope (Renishaw plc, New Mills, England), 1800 lines per mm gratings",
+     "result": "visible PL spectra (Figure 2) with features near 700 nm and/or 900 nm in the 1150 °C samples",
+     "quote": "PL measurements were performed at room temperature (~295 K) in a Renishaw inVia confocal Raman microscope (Renishaw plc, New Mills, England) equipped with a 532 nm excitation laser and 1800 lines per mm gratings.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "value_num": 532,
+       "unit": "nm",
+       "quote": "equipped with a 532 nm excitation laser"
+      },
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature (~295 K)",
+       "quote": "PL measurements were performed at room temperature (~295 K)"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "pl_nir_A",
+     "technique": "PL",
+     "instrument": "NearQuest infrared spectrometer (Ocean Optics, Inc., Orlando, FL, USA)",
+     "result": "near-infrared PL spectra (Figure 4) with defect-related bands in the low-temperature samples",
+     "quote": "Near-infrared photoluminescence measurements were performed at room temperature by using 980 nm laser excitation (RLTMDL-980-2W-3, 980 nm, (Roithner GmbH, Vienna, Austria), 0.5 W output power, 1 cm2 illuminated area) and photon detection with an infrared spectrometer (NearQuest, Ocean Optics, Inc., Orlando, FL, USA).",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "value_num": 980,
+       "unit": "nm",
+       "quote": "by using 980 nm laser excitation"
+      },
+      {
+       "name": "laser_power",
+       "value_num": 0.5,
+       "unit": "W",
+       "value_text": "0.5 W output power, 1 cm2 illuminated area",
+       "quote": "0.5 W output power, 1 cm2 illuminated area"
+      },
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature",
+       "quote": "Near-infrared photoluminescence measurements were performed at room temperature"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "epr_A",
+     "technique": "EPR",
+     "instrument": "Magnettech MiniScope MS-400 X-band spectrometer (Magnettech GmbH, Berlin, Germany) with a TE102 rectangular resonator",
+     "result": "typical SiC spectrum with a central S = ½ signal (VC+ and CAV) in most samples; additional high-spin signals (D ≈ 1.3 GHz, ≈ 270 MHz, ≈ 650–780 MHz) in 0%-3h samples at 1050 and 1150 °C; subtle change of the background under illumination",
+     "quote": "EPR measurements were performed at room temperature (~295 K) using a Magnettech MiniScope (MS-400 X-band, Magnettech GmbH, Berlin, Germany) spectrometer equipped with a TE102 rectangular resonator.",
+     "settings": [
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature (~295 K)",
+       "quote": "EPR measurements were performed at room temperature (~295 K)"
+      },
+      {
+       "name": "microwave_frequency",
+       "value_num": 9.38,
+       "unit": "GHz",
+       "quote": "The magnetic field was swept from 286 to 386 mT (9.38 GHz, 0.1 mT modulation amplitude, and 10 mW microwave power)."
+      },
+      {
+       "name": "field_range",
+       "value_text": "286 to 386 mT",
+       "quote": "The magnetic field was swept from 286 to 386 mT"
+      },
+      {
+       "name": "modulation_amplitude",
+       "value_num": 0.1,
+       "unit": "mT",
+       "quote": "0.1 mT modulation amplitude"
+      },
+      {
+       "name": "microwave_power",
+       "value_num": 10,
+       "unit": "mW",
+       "quote": "10 mW microwave power"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 10,
+     "unit": "%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 45,
+     "unit": "nm",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_4H",
+     "value_num": 10,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 90,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_text": "absent (did not contain 3C-SiC)",
+     "measured_by": "xrd_A",
+     "quote": "except for the sample made at 1050 °C, which did not contain 3C-SiC"
+    },
+    {
+     "property": "epr_zfs_parameter_D_VV",
+     "value_num": 1.3,
+     "unit": "GHz",
+     "measured_by": "epr_A",
+     "quote": "The first set of peaks, with D ≈ 1.3 GHz, is present in both the 1050 and 1150 °C samples"
+    },
+    {
+     "property": "epr_zfs_parameter_D_VV",
+     "value_num": 1330,
+     "unit": "MHz",
+     "from_figure": "Fig. 3a",
+     "measured_by": "epr_A",
+     "quote": "Room-temperature EPR spectra of (a) the 0%-3 h-1050 °C sample and (b) the 0%-3 h-1150 °C sample"
+    },
+    {
+     "property": "epr_zfs_parameter_D_VSi_CSi",
+     "value_num": 270,
+     "unit": "MHz",
+     "measured_by": "epr_A",
+     "quote": "The second set of peaks, with D ≈ 270 MHz, is observed only in the 1050 °C sample and is absent at 1150 °C."
+    },
+    {
+     "property": "epr_zfs_parameter_D_VSi_CSi",
+     "value_num": 266,
+     "unit": "MHz",
+     "from_figure": "Fig. 3a",
+     "measured_by": "epr_A",
+     "quote": "Room-temperature EPR spectra of (a) the 0%-3 h-1050 °C sample and (b) the 0%-3 h-1150 °C sample"
+    },
+    {
+     "property": "epr_zfs_parameter_D_2NN_VSi_VC",
+     "value_text": "650–780 MHz",
+     "measured_by": "epr_A",
+     "quote": "The third prominent signal, with D ≈ 650–780 MHz, is present in both the 1050 and 1150 °C samples."
+    },
+    {
+     "property": "epr_zfs_parameter_D_2NN_VSi_VC",
+     "value_num": 786,
+     "unit": "MHz",
+     "from_figure": "Fig. 3a",
+     "measured_by": "epr_A",
+     "quote": "Room-temperature EPR spectra of (a) the 0%-3 h-1050 °C sample and (b) the 0%-3 h-1150 °C sample"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 1200,
+     "unit": "nm",
+     "from_figure": "Fig. 4",
+     "measured_by": "pl_nir_A",
+     "quote": "Room-temperature near-infrared PL spectra (980 nm excitation) of selected samples chosen after the EPR analysis."
+    }
+   ]
+  },
+  {
+   "label": "0%-3h-1150°C",
+   "parent": "0%-3h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1150,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 2,
+     "unit": "%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 50,
+     "unit": "nm",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 75,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 25,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "epr_zfs_parameter_D_VV",
+     "value_num": 1.3,
+     "unit": "GHz",
+     "measured_by": "epr_A",
+     "quote": "The first set of peaks, with D ≈ 1.3 GHz, is present in both the 1050 and 1150 °C samples"
+    },
+    {
+     "property": "epr_zfs_parameter_D_VV",
+     "value_num": 1204,
+     "unit": "MHz",
+     "from_figure": "Fig. 3b",
+     "measured_by": "epr_A",
+     "quote": "Room-temperature EPR spectra of (a) the 0%-3 h-1050 °C sample and (b) the 0%-3 h-1150 °C sample"
+    },
+    {
+     "property": "epr_zfs_parameter_D_VSi_CSi",
+     "value_text": "absent at 1150 °C",
+     "measured_by": "epr_A",
+     "quote": "The second set of peaks, with D ≈ 270 MHz, is observed only in the 1050 °C sample and is absent at 1150 °C."
+    },
+    {
+     "property": "epr_zfs_parameter_D_2NN_VSi_VC",
+     "value_text": "650–780 MHz",
+     "measured_by": "epr_A",
+     "quote": "The third prominent signal, with D ≈ 650–780 MHz, is present in both the 1050 and 1150 °C samples."
+    },
+    {
+     "property": "epr_zfs_parameter_D_2NN_VSi_VC",
+     "value_num": 655,
+     "unit": "MHz",
+     "from_figure": "Fig. 3b",
+     "measured_by": "epr_A",
+     "quote": "Room-temperature EPR spectra of (a) the 0%-3 h-1050 °C sample and (b) the 0%-3 h-1150 °C sample"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 1140,
+     "unit": "nm",
+     "from_figure": "Fig. 4",
+     "measured_by": "pl_nir_A",
+     "quote": "Room-temperature near-infrared PL spectra (980 nm excitation) of selected samples chosen after the EPR analysis."
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 1180,
+     "unit": "nm",
+     "from_figure": "Fig. 4",
+     "measured_by": "pl_nir_A",
+     "quote": "Room-temperature near-infrared PL spectra (980 nm excitation) of selected samples chosen after the EPR analysis."
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 1220,
+     "unit": "nm",
+     "from_figure": "Fig. 4",
+     "measured_by": "pl_nir_A",
+     "quote": "Room-temperature near-infrared PL spectra (980 nm excitation) of selected samples chosen after the EPR analysis."
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 1300,
+     "unit": "nm",
+     "from_figure": "Fig. 4",
+     "measured_by": "pl_nir_A",
+     "quote": "Room-temperature near-infrared PL spectra (980 nm excitation) of selected samples chosen after the EPR analysis."
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_text": "approximately 700 nm and/or 900 nm",
+     "measured_by": "pl_vis_A",
+     "quote": "all samples synthesized at 1150 °C displayed PL features at approximately 700 nm and/or 900 nm, regardless of Al addition or milling"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 760,
+     "unit": "nm",
+     "from_figure": "Fig. 2c",
+     "measured_by": "pl_vis_A",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "0%-3h-1250°C",
+   "parent": "0%-3h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1250,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 5,
+     "unit": "%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 25,
+     "unit": "nm",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 70,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_2H",
+     "value_num": 15,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 15,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    }
+   ]
+  },
+  {
+   "label": "0%-3h-1350°C",
+   "parent": "0%-3h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1350,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 45,
+     "unit": "%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 20,
+     "unit": "nm",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 85,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 15,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 680,
+     "unit": "nm",
+     "from_figure": "Fig. 2c",
+     "measured_by": "pl_vis_A",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "0%-3h-1450°C",
+   "parent": "0%-3h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1450,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 70,
+     "unit": "%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 20,
+     "unit": "nm",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 85,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 15,
+     "unit": "w%",
+     "from_figure": "Fig. 1c",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    }
+   ]
+  },
+  {
+   "label": "10%-3h-1050°C",
+   "parent": "0%-3h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with either 0% or 10 mol% of Al",
+   "variations": [
+    {
+     "parameter": "aluminum_content",
+     "value_num": 10,
+     "unit": "mol%",
+     "parent_value": "none",
+     "quote": "with either 0% or 10 mol% of Al"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "aluminum powder",
+     "formula": "Al",
+     "role": "additive",
+     "amount_text": "10 mol% of Al",
+     "purity": "≥91% complexometric",
+     "quote": "aluminum powder (Al, ≥91% complexometric)",
+     "supplier_quote": "with either 0% or 10 mol% of Al",
+     "not_stated": [
+      "supplier"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 10,
+     "unit": "%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 10,
+     "unit": "nm",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 70,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_2H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_4H",
+     "value_num": 15,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 10,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    }
+   ]
+  },
+  {
+   "label": "10%-3h-1150°C",
+   "parent": "10%-3h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1150,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 20,
+     "unit": "%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 5,
+     "unit": "nm",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 90,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_text": "approximately 700 nm and/or 900 nm",
+     "measured_by": "pl_vis_A",
+     "quote": "all samples synthesized at 1150 °C displayed PL features at approximately 700 nm and/or 900 nm, regardless of Al addition or milling"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 740,
+     "unit": "nm",
+     "from_figure": "Fig. 2d",
+     "measured_by": "pl_vis_A",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "10%-3h-1250°C",
+   "parent": "10%-3h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1250,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 35,
+     "unit": "%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 20,
+     "unit": "nm",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 65,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_2H",
+     "value_num": 15,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 20,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    }
+   ]
+  },
+  {
+   "label": "10%-3h-1350°C",
+   "parent": "10%-3h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1350,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 75,
+     "unit": "%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 10,
+     "unit": "nm",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 75,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_2H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_4H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 15,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 680,
+     "unit": "nm",
+     "from_figure": "Fig. 2d",
+     "measured_by": "pl_vis_A",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "10%-3h-1450°C",
+   "parent": "10%-3h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1450,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 75,
+     "unit": "%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 15,
+     "unit": "nm",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 60,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_2H",
+     "value_num": 10,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 25,
+     "unit": "w%",
+     "from_figure": "Fig. 1d",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_A"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 680,
+     "unit": "nm",
+     "from_figure": "Fig. 2d",
+     "measured_by": "pl_vis_A",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "0%-0h-1050°C",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "methods": [
+    "solid_state_reaction"
+   ],
+   "method": "mixing of Si, C and PTFE in isopropanol in a homemade mixer without milling, then solid-state reaction under argon in a tube furnace, oxidative removal of carbon and HF/HNO3 cleaning",
+   "quote": "The samples without milling (hereafter, 0 h) were mixed in a homemade mixer at 75 RPM overnight to ensure thorough mixing without milling.",
+   "scale": null,
+   "succeeded": null,
+   "yield": {
+    "value": 15,
+    "unit": "%",
+    "from_figure": "Fig. 1a",
+    "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+   },
+   "not_stated": [],
+   "reagents": [
+    {
+     "name": "activated carbon (NORIT® A SUPRA EUR USP)",
+     "formula": "C",
+     "role": "precursor",
+     "supplier": "Sigma-Aldrich, Merck KGaA, Darmstadt, Germany",
+     "quote": "Activated carbon (C, NORIT® A SUPRA EUR USP, Sigma-Aldrich, Merck KGaA, Darmstadt, Germany)",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "silicon powder (~325 mesh)",
+     "formula": "Si",
+     "role": "precursor",
+     "purity": "99% trace metals basis",
+     "supplier": "Sigma-Aldrich, Merck KGaA, Darmstadt, Germany",
+     "quote": "silicon (Si) powder (~325 mesh, 99% trace metals basis, Sigma-Aldrich, Merck KGaA, Darmstadt, Germany)",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "poly(tetrafluoroethylene) powder (PTFE, 1 µm particle size)",
+     "formula": "(C2F4)n",
+     "role": "precursor",
+     "quote": "poly(tetrafluoroethylene) powder (PTFE, 1 µm particle size)",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "isopropanol",
+     "formula": "C3H8O",
+     "role": "solvent",
+     "amount_text": "added until the samples had an oil-like consistency",
+     "quote": "Isopropanol was used as a medium to facilitate mixing and milling and was added until the samples had an oil-like consistency.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "argon",
+     "formula": "Ar",
+     "role": "gas",
+     "quote": "also under argon atmosphere"
+    },
+    {
+     "name": "polyvinyl alcohol solution (5 w/w%)",
+     "formula": null,
+     "role": "binder",
+     "amount_text": "a few drops",
+     "quote": "After this process, samples were dried and pressed into pellets using a few drops of 5 w/w% polyvinyl alcohol (PVA) solution to maintain their integrity.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "air",
+     "formula": null,
+     "role": "gas",
+     "quote": "heating the samples in air at 650 °C for 10 h"
+    },
+    {
+     "name": "hydrofluoric acid (in HF, HNO3, H2O 1:1:10)",
+     "formula": "HF",
+     "role": "etchant",
+     "amount_text": "1 (of 1:1:10)",
+     "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "nitric acid (in HF, HNO3, H2O 1:1:10)",
+     "formula": "HNO3",
+     "role": "etchant",
+     "amount_text": "1 (of 1:1:10)",
+     "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "water (in HF, HNO3, H2O 1:1:10)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount_text": "10 (of 1:1:10)",
+     "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Mix the precursors in isopropanol in a homemade mixer without milling.",
+     "quote": "The samples without milling (hereafter, 0 h) were mixed in a homemade mixer at 75 RPM overnight to ensure thorough mixing without milling.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The samples without milling (hereafter, 0 h) were mixed in a homemade mixer at 75 RPM overnight to ensure thorough mixing without milling.",
+       "value_text": "overnight"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "The samples without milling (hereafter, 0 h) were mixed in a homemade mixer at 75 RPM overnight to ensure thorough mixing without milling.",
+       "value_num": 75,
+       "unit": "RPM"
+      },
+      {
+       "name": "solvent",
+       "quote": "Isopropanol was used as a medium to facilitate mixing and milling and was added until the samples had an oil-like consistency.",
+       "value_text": "isopropanol"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "homemade mixer",
+       "detail": null,
+       "quote": "mixed in a homemade mixer at 75 RPM overnight"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 2,
+     "action": "dry",
+     "description": "Dry the milled or mixed powder (dried before pressing).",
+     "quote": "After this process, samples were dried and pressed into pellets using a few drops of 5 w/w% polyvinyl alcohol (PVA) solution to maintain their integrity.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "drying_mode"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "press",
+     "description": "Press the dried powder into pellets with a few drops of 5 w/w% PVA solution as binder.",
+     "quote": "After this process, samples were dried and pressed into pellets using a few drops of 5 w/w% polyvinyl alcohol (PVA) solution to maintain their integrity.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "pressure"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "heat",
+     "description": "Dwell at 200 °C under argon during the ramp to remove water (tube furnace).",
+     "quote": "During the ramp, all samples were initially subjected to a dwell at 200 °C for 60 min to ensure that no water remained during the reaction.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "During the ramp, all samples were initially subjected to a dwell at 200 °C for 60 min to ensure that no water remained during the reaction.",
+       "value_num": 200,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "During the ramp, all samples were initially subjected to a dwell at 200 °C for 60 min to ensure that no water remained during the reaction.",
+       "value_num": 60,
+       "unit": "min"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "with a temperature ramp of 5 °C per minute",
+       "value_num": 5,
+       "unit": "°C/min"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "also under argon atmosphere",
+       "value_text": "argon"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "tube furnace",
+       "detail": "Carbolite CTF 18/–/300, Carbolite Gero Ltd., Hope, UK",
+       "quote": "transferred into a Carbolite (CTF 18/–/300) Tube Furnace, Carbolite Gero Ltd., Hope, UK"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 5,
+     "action": "calcine",
+     "description": "Heat to the reaction temperature and hold 60 min under argon (reaction of Si, C and PTFE), then cool overnight.",
+     "quote": "Afterward, the samples were heated to the desired temperature and held at that temperature for another 60 min.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+       "value_num": 1050,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "held at that temperature for another 60 min",
+       "value_num": 60,
+       "unit": "min"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "also under argon atmosphere",
+       "value_text": "argon"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "with a temperature ramp of 5 °C per minute",
+       "value_num": 5,
+       "unit": "°C/min"
+      },
+      {
+       "name": "cooling",
+       "quote": "Then the samples were cooled overnight and cleaned.",
+       "value_text": "cooled overnight"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "tube furnace",
+       "detail": "Carbolite CTF 18/–/300, Carbolite Gero Ltd., Hope, UK",
+       "quote": "transferred into a Carbolite (CTF 18/–/300) Tube Furnace, Carbolite Gero Ltd., Hope, UK"
+      }
+     ],
+     "not_stated": [
+      "gas_flow"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "calcine",
+     "description": "Remove unreacted carbon by heating the powder in air.",
+     "quote": "The cleaning process began with the removal of unreacted carbon by heating the samples in air at 650 °C for 10 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The cleaning process began with the removal of unreacted carbon by heating the samples in air at 650 °C for 10 h.",
+       "value_num": 650,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The cleaning process began with the removal of unreacted carbon by heating the samples in air at 650 °C for 10 h.",
+       "value_num": 10,
+       "unit": "h"
+      },
+      {
+       "name": "atmosphere",
+       "quote": "The cleaning process began with the removal of unreacted carbon by heating the samples in air at 650 °C for 10 h.",
+       "value_text": "air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "etch",
+     "description": "Dissolve Al and unreacted Si in an HF/HNO3/H2O (1:1:10) solution in a Teflon beaker, gently stirred, left overnight.",
+     "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+     "parameters": [
+      {
+       "name": "volume_ratio",
+       "quote": "After that, the samples were loaded into a Teflon beaker; a prepared solution of HF, HNO3, and H2O (1:1:10) was added; and the mixture was gently stirred.",
+       "value_text": "HF, HNO3, and H2O (1:1:10)"
+      },
+      {
+       "name": "duration",
+       "quote": "The mixture was left overnight to remove Al and unreacted Si.",
+       "value_text": "overnight"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon beaker",
+       "detail": null,
+       "quote": "loaded into a Teflon beaker"
+      }
+     ],
+     "not_stated": [
+      "concentration",
+      "temperature"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "wash",
+     "description": "Wash the powder until the washings reach pH 5.",
+     "quote": "After this, the samples were washed until the pH reached 5, then dried and prepared for measurements.",
+     "parameters": [
+      {
+       "name": "ph",
+       "quote": "washed until the pH reached 5",
+       "value_num": 5
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_solvent",
+      "repetitions"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "dry",
+     "description": "Final drying before measurements.",
+     "quote": "After this, the samples were washed until the pH reached 5, then dried and prepared for measurements.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "drying_mode"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_B",
+     "technique": "XRD",
+     "instrument": "Huber G670 Guinier Imaging Plate Camera (HUBER Diffraktionstechnik GmbH & Co. KG, Rimsting, Germany)",
+     "result": "polytype distribution (3C, 2H, 4H, 6H), crystallite size and sample composition by Rietveld refinement",
+     "quote": "PXRD measurements were performed using a Huber G670 Guinier Imaging Plate Camera (HUBER Diffraktionstechnik GmbH & Co. KG, Rimsting, Germany) with Cu Kα1 radiation (1.5406 Å).",
+     "settings": [
+      {
+       "name": "radiation",
+       "value_text": "Cu Kα1 radiation (1.5406 Å)",
+       "quote": "with Cu Kα1 radiation (1.5406 Å)"
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_text": "Rietveld refinement with Topas Academic",
+       "quote": "Rietveld refinement was performed using Topas Academic to characterize the polytype formation and crystallite size."
+      },
+      {
+       "name": "software",
+       "value_text": "Topas Academic",
+       "quote": "Rietveld refinement was performed using Topas Academic"
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "special glass capillaries (Mark-tubes) with a diameter of 0.5 mm and a wall thickness of 0.01 mm",
+       "quote": "The samples were measured in special glass capillaries (Mark-tubes, WJM-Glas Müller GmbH, Berlin, Germany) with a diameter of 0.5 mm and a wall thickness of 0.01 mm to minimize background interference."
+      }
+     ],
+     "not_stated": [
+      "scan_range",
+      "scan_step"
+     ]
+    },
+    {
+     "id": "raman_B",
+     "technique": "Raman",
+     "instrument": null,
+     "result": "SiC TO (~796 cm−1) and LO (~972 cm−1) modes sharpen and their FWHM decreases at higher synthesis temperature",
+     "quote": "In the Raman spectra (Figure S2), the SiC TO (~796 cm−1) and LO (~972 cm−1) modes sharpened, and their FWHM decreased",
+     "settings": [],
+     "not_stated": [
+      "excitation_wavelength",
+      "laser_power"
+     ]
+    },
+    {
+     "id": "pl_vis_B",
+     "technique": "PL",
+     "instrument": "Renishaw inVia confocal Raman microscope (Renishaw plc, New Mills, England), 1800 lines per mm gratings",
+     "result": "visible PL spectra (Figure 2) with features near 700 nm and/or 900 nm in the 1150 °C samples",
+     "quote": "PL measurements were performed at room temperature (~295 K) in a Renishaw inVia confocal Raman microscope (Renishaw plc, New Mills, England) equipped with a 532 nm excitation laser and 1800 lines per mm gratings.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "value_num": 532,
+       "unit": "nm",
+       "quote": "equipped with a 532 nm excitation laser"
+      },
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature (~295 K)",
+       "quote": "PL measurements were performed at room temperature (~295 K)"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "pl_nir_B",
+     "technique": "PL",
+     "instrument": "NearQuest infrared spectrometer (Ocean Optics, Inc., Orlando, FL, USA)",
+     "result": "near-infrared PL spectra (Figure 4) with defect-related bands in the low-temperature samples",
+     "quote": "Near-infrared photoluminescence measurements were performed at room temperature by using 980 nm laser excitation (RLTMDL-980-2W-3, 980 nm, (Roithner GmbH, Vienna, Austria), 0.5 W output power, 1 cm2 illuminated area) and photon detection with an infrared spectrometer (NearQuest, Ocean Optics, Inc., Orlando, FL, USA).",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "value_num": 980,
+       "unit": "nm",
+       "quote": "by using 980 nm laser excitation"
+      },
+      {
+       "name": "laser_power",
+       "value_num": 0.5,
+       "unit": "W",
+       "value_text": "0.5 W output power, 1 cm2 illuminated area",
+       "quote": "0.5 W output power, 1 cm2 illuminated area"
+      },
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature",
+       "quote": "Near-infrared photoluminescence measurements were performed at room temperature"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "epr_B",
+     "technique": "EPR",
+     "instrument": "Magnettech MiniScope MS-400 X-band spectrometer (Magnettech GmbH, Berlin, Germany) with a TE102 rectangular resonator",
+     "result": "typical SiC spectrum with a central S = ½ signal (VC+ and CAV) in most samples; additional high-spin signals (D ≈ 1.3 GHz, ≈ 270 MHz, ≈ 650–780 MHz) in 0%-3h samples at 1050 and 1150 °C; subtle change of the background under illumination",
+     "quote": "EPR measurements were performed at room temperature (~295 K) using a Magnettech MiniScope (MS-400 X-band, Magnettech GmbH, Berlin, Germany) spectrometer equipped with a TE102 rectangular resonator.",
+     "settings": [
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature (~295 K)",
+       "quote": "EPR measurements were performed at room temperature (~295 K)"
+      },
+      {
+       "name": "microwave_frequency",
+       "value_num": 9.38,
+       "unit": "GHz",
+       "quote": "The magnetic field was swept from 286 to 386 mT (9.38 GHz, 0.1 mT modulation amplitude, and 10 mW microwave power)."
+      },
+      {
+       "name": "field_range",
+       "value_text": "286 to 386 mT",
+       "quote": "The magnetic field was swept from 286 to 386 mT"
+      },
+      {
+       "name": "modulation_amplitude",
+       "value_num": 0.1,
+       "unit": "mT",
+       "quote": "0.1 mT modulation amplitude"
+      },
+      {
+       "name": "microwave_power",
+       "value_num": 10,
+       "unit": "mW",
+       "quote": "10 mW microwave power"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 15,
+     "unit": "%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 40,
+     "unit": "nm",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 85,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_4H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 10,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_text": "most prominent infrared PL signal, with several narrower features",
+     "measured_by": "pl_nir_B",
+     "quote": "The most prominent PL signal was recorded from the 0%-0 h-1050 °C sample, which also showed changes in EPR spectra under illumination."
+    }
+   ]
+  },
+  {
+   "label": "0%-0h-1150°C",
+   "parent": "0%-0h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1150,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 35,
+     "unit": "%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 25,
+     "unit": "nm",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 85,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 10,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_text": "approximately 700 nm and/or 900 nm",
+     "measured_by": "pl_vis_B",
+     "quote": "all samples synthesized at 1150 °C displayed PL features at approximately 700 nm and/or 900 nm, regardless of Al addition or milling"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 750,
+     "unit": "nm",
+     "from_figure": "Fig. 2a",
+     "measured_by": "pl_vis_B",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "0%-0h-1250°C",
+   "parent": "0%-0h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1250,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 55,
+     "unit": "%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 15,
+     "unit": "nm",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 80,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_4H",
+     "value_num": 10,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 10,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    }
+   ]
+  },
+  {
+   "label": "0%-0h-1350°C",
+   "parent": "0%-0h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1350,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 85,
+     "unit": "%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 20,
+     "unit": "nm",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 50,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 45,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 680,
+     "unit": "nm",
+     "from_figure": "Fig. 2a",
+     "measured_by": "pl_vis_B",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "0%-0h-1450°C",
+   "parent": "0%-0h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1450,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 95,
+     "unit": "%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 20,
+     "unit": "nm",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 55,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_4H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 35,
+     "unit": "w%",
+     "from_figure": "Fig. 1a",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 680,
+     "unit": "nm",
+     "from_figure": "Fig. 2a",
+     "measured_by": "pl_vis_B",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "10%-0h-1050°C",
+   "parent": "0%-0h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with either 0% or 10 mol% of Al",
+   "variations": [
+    {
+     "parameter": "aluminum_content",
+     "value_num": 10,
+     "unit": "mol%",
+     "parent_value": "none",
+     "quote": "with either 0% or 10 mol% of Al"
+    }
+   ],
+   "reagents": [
+    {
+     "name": "aluminum powder",
+     "formula": "Al",
+     "role": "additive",
+     "amount_text": "10 mol% of Al",
+     "purity": "≥91% complexometric",
+     "quote": "aluminum powder (Al, ≥91% complexometric)",
+     "supplier_quote": "with either 0% or 10 mol% of Al",
+     "not_stated": [
+      "supplier"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 35,
+     "unit": "%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 35,
+     "unit": "nm",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 90,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    }
+   ]
+  },
+  {
+   "label": "10%-0h-1150°C",
+   "parent": "10%-0h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1150,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 60,
+     "unit": "%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 5,
+     "unit": "nm",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 80,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_2H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 10,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_text": "approximately 700 nm and/or 900 nm",
+     "measured_by": "pl_vis_B",
+     "quote": "all samples synthesized at 1150 °C displayed PL features at approximately 700 nm and/or 900 nm, regardless of Al addition or milling"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 750,
+     "unit": "nm",
+     "from_figure": "Fig. 2b",
+     "measured_by": "pl_vis_B",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "10%-0h-1250°C",
+   "parent": "10%-0h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1250,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 35,
+     "unit": "%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 10,
+     "unit": "nm",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 45,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_2H",
+     "value_num": 15,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 40,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    }
+   ]
+  },
+  {
+   "label": "10%-0h-1350°C",
+   "parent": "10%-0h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1350,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 30,
+     "unit": "%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 25,
+     "unit": "nm",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 90,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_2H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_4H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 680,
+     "unit": "nm",
+     "from_figure": "Fig. 2b",
+     "measured_by": "pl_vis_B",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  },
+  {
+   "label": "10%-0h-1450°C",
+   "parent": "10%-0h-1050°C",
+   "material": {
+    "name": "nanocrystalline silicon carbide powder with color centers",
+    "formula": "SiC",
+    "family": "carbure",
+    "phase": "mixture of 3C, 2H, 4H and 6H polytypes",
+    "morphology": null
+   },
+   "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 5,
+     "value_num": 1450,
+     "unit": "°C",
+     "parent_value": "1050 °C",
+     "quote": "with varying reaction temperatures (1050, 1150, 1250, 1350, and 1450 °C)"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "yield",
+     "value_num": 80,
+     "unit": "%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h."
+    },
+    {
+     "property": "crystallite_size",
+     "value_num": 10,
+     "unit": "nm",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_3C",
+     "value_num": 75,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_2H",
+     "value_num": 5,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "rietveld_fit_fraction_6H",
+     "value_num": 20,
+     "unit": "w%",
+     "from_figure": "Fig. 1b",
+     "quote": "PXRD results from the different samples made (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h.",
+     "measured_by": "xrd_B"
+    },
+    {
+     "property": "PL_emission_peak",
+     "value_num": 680,
+     "unit": "nm",
+     "from_figure": "Fig. 2b",
+     "measured_by": "pl_vis_B",
+     "quote": "PL measurements for (a) 0%-0 h, (b) 10%-0 h, (c) 0%-3 h, and (d) 10%-3 h samples."
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare du carbure de silicium nanocristallin par une réaction à l'état solide entre silicium, charbon actif et poly(tétrafluoroéthylène) (PTFE), sous argon, après un mélange ou un broyage à haute énergie, puis nettoie la poudre (oxydation du carbone, attaque HF/HNO3). Vingt échantillons sont comparés (0 ou 10 mol% d'Al, 0 ou 3 h de broyage, cinq températures de 1050 à 1450 °C). Les auteurs suivent le rendement, la taille de cristallite et la répartition des polytypes par DRX, puis les centres colorés par photoluminescence et RPE : lacunes de silicium et bilacunes aux basses températures, surtout dans les échantillons broyés sans Al."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à créer par voie chimique, sans irradiation ni implantation, des défauts ponctuels de SiC utiles aux technologies quantiques (lacunes de silicium, bilacunes), et à savoir comment la température de synthèse, le broyage et l'ajout d'aluminium gouvernent la formation du SiC, ses polytypes et ses défauts."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Trois paramètres sont croisés : la température de réaction (1050, 1150, 1250, 1350, 1450 °C), la durée de broyage à haute énergie (0 ou 3 h) et la teneur en aluminium (0 ou 10 mol%). Le balayage en température sert à repérer le seuil de formation du SiC et la disparition des défauts à haute température ; le broyage et l'Al sont testés parce que des travaux antérieurs des auteurs les avaient associés à une baisse de la température de réaction et à des défauts optiquement actifs, sans bilacunes détectées."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Le broyage ne baisse pas la température apparente de réaction : sans broyage, aucun seuil net et des rendements d'environ 50 % dès 1150 °C (35 et 60 % lus sur la figure 1 selon l'Al) ; avec broyage, la formation de SiC démarre nettement à 1250 °C. Sans broyage, plus la température monte, plus les polytypes hexagonaux augmentent ; avec broyage et sans Al, le 3C augmente sauf à 1050 °C où il est absent (6H dominant). L'Al favorise le 2H, abaisse la taille de cristallite et ne favorise pas les lacunes. Seuls les échantillons 0%-3h à 1050 et 1150 °C montrent les signaux RPE à spin élevé (D ≈ 1,3 GHz, ≈ 270 MHz à 1050 °C seulement, ≈ 650–780 MHz)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Sans broyage et sans Al, une température plus élevée donne plus de polytypes hexagonaux ; avec broyage et sans Al, le 3C augmente nettement aux mêmes températures, sauf à 1050 °C.",
+   "quote": "In non-milled, Al-free samples, increasing temperature led to higher concentrations of hexagonal polytypes, whereas milled, Al-free samples synthesized at the same temperatures exhibited a marked increase in 3C-SiC content, except for the sample made at 1050 °C, which did not contain 3C-SiC."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "L'ajout d'Al favorise constamment le polytype 2H et fait apparaître des défauts d'empilement (pic asymétrique à 33–35° 2θ) dans les seuls échantillons contenant de l'Al ; il réduit la taille de cristallite et supprime la corrélation entre rendement et taille.",
+   "quote": "Additionally, Al addition consistently promoted the formation of the 2H-SiC polytype."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Les températures basses (1050–1150 °C) donnent les défauts : en PL, tous les échantillons à 1150 °C présentent des bandes vers 700 nm et/ou 900 nm, en RPE un épaulement de VSi− apparaît dans la plupart des échantillons synthétisés sous 1250 °C ; à haute température le SiC est moins défectueux (raies Raman TO/LO plus fines).",
+   "quote": "Notably, all samples synthesized at 1150 °C displayed PL features at approximately 700 nm and/or 900 nm, regardless of Al addition or milling, indicating a dominant temperature effect."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Sans broyage, le rendement est d'environ 50 % à 1150 °C quel que soit l'Al ; avec broyage, un seuil net apparaît à 1250 °C. Les auteurs en déduisent que le broyage a augmenté la température apparente de réaction (il aurait éliminé des sites actifs).",
+   "quote": "By contrast, in the HEBM-treated samples, a clear onset of SiC formation appeared at 1250 °C."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "0%-3h-1050°C",
+   "text": "Les auteurs retiennent une température d'environ 1050 °C après 3 h de broyage, sans Al, comme condition critique donnant les signatures PL et RPE de défauts (lacunes de silicium, bilacunes). L'Al n'aide pas, car il entre en concurrence avec Si pour réagir avec le PTFE.",
+   "quote": "A critical temperature of ~1050 °C after 3 h of HEBM produces characteristic defect-related PL and EPR features in Al-free samples."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "0%-3h-1050°C",
+   "text": "Les auteurs proposent que le PTFE se décompose et réagisse avec le silicium : la réaction exothermique fond localement Si et permet sa réaction avec le carbone ; le fluor forme SiF4 volatil, d'où un déficit en silicium qui explique les lacunes de silicium. Les équations ne sont pas reprises dans le texte du dépôt.",
+   "quote": "During this process, fluorine reacts with silicon to form the volatile SiF4, leading to silicon depletion in the system"
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "10%-3h-1050°C",
+   "text": "Avec l'aluminium, l'Al rivalise avec Si pour réagir avec le PTFE, ce qui réduit la formation de lacunes de silicium ; le broyage d'un mélange contenant Al introduit en plus des défauts par soudage à froid qui favorisent la diffusion.",
+   "quote": "it competes with Si for reaction with PTFE"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "0%-3h-1050°C",
+   "text": "Hypothèse de chimiste : à basse température, le PTFE (C2F4)n se décompose probablement au-delà de 500 °C environ en espèces fluorées qui attaquent le silicium en SiF4 volatil, ce qui appauvrit le mélange en Si et laisse du carbone en excès ; le SiC se forme alors dans un milieu pauvre en Si, probablement riche en lacunes de silicium et en défauts de carbone. À plus haute température, la durée de maintien plus efficace du Si fondu permettrait probablement une cristallisation plus complète et l'élimination des défauts."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "0%-3h-1050°C",
+   "text": "Danger : la décomposition du PTFE à haute température libère des composés fluorés toxiques et corrosifs (SiF4, fluorocarbones, HF) dans le four : travailler sous hotte ou avec traitement des effluents. L'attaque HF/HNO3 exige gants, écran facial et matériel adapté (bécher en Téflon, comme l'article l'indique) ; la poudre d'Al fine est inflammable ; les poudres nanométriques de SiC ne doivent pas être inhalées ; le four sous argon impose une ventilation correcte."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Annexe absente du dépôt : figures S1 (diffractogrammes PXRD avant nettoyage), S2 (spectres Raman) et S3 (spectres RPE complets) et table S7 (paramètres Raman quantitatifs) ; les valeurs de ces figures ne sont donc pas extraites. Les fichiers d'annexe ne sont pas inclus dans le texte de l'article."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les masses de carbone, silicium, PTFE, d'aluminium (le « 10 mol% » n'est pas rapporté à une espèce) et de billes, le volume d'isopropanol, les conditions de séchage, la pression de pastillage, les débits d'argon et la température et la nature des lavages (« until the pH reached 5 ») ne sont pas donnés. Les quatre séries de la figure 1 n'ont de valeurs de rendement, de taille et de polytypes que lues sur le graphique (précision environ ±5 points)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "0%-3h-1050°C",
+   "text": "L'attribution des signaux RPE est donnée comme provisoire par les auteurs : le signal vers 650–780 MHz est « tentatively assigned » à une paire VSi–VC de deuxième voisin, sans correspondance avec un défaut déjà rapporté. Les mesures RPE et PL dans le proche infrarouge ne couvrent que 7 échantillons choisis après la RPE.",
+   "quote": "An additional EPR signal at D ≈ 650–780 MHz, not matched by any previously reported defect configuration in SiC, is tentatively assigned to a second-nearest-neighbor divacancy-like (VSi–VC) pair."
+  }
+ ],
+ "method_sources": [],
+ "comparisons": [
+  {
+   "material": "VV (neutral divacancy), 3C-SiC",
+   "property": "PL_emission_peak",
+   "unit": "nm",
+   "conditions": "3C-SiC (Table 1: zero-phonon line, ZPL)",
+   "ref_id": "B7-nanomaterials-16-00627",
+   "quote": "VV (neutral divacancy) | 3C-SiC | ~1130 nm | ~1330 MHz",
+   "value_num": 1130
+  },
+  {
+   "material": "VV (neutral divacancy), 3C-SiC",
+   "property": "epr_zfs_parameter",
+   "unit": "MHz",
+   "conditions": "3C-SiC (Table 1: D value)",
+   "ref_id": "B7-nanomaterials-16-00627",
+   "quote": "VV (neutral divacancy) | 3C-SiC | ~1130 nm | ~1330 MHz",
+   "value_num": 1330
+  },
+  {
+   "material": "VV (PL1–PL4), 4H-SiC",
+   "property": "PL_emission_peak",
+   "unit": "nm",
+   "conditions": "4H-SiC (Table 1: zero-phonon line, ZPL)",
+   "ref_id": "B38-nanomaterials-16-00627",
+   "quote": "VV (PL1–PL4) | 4H-SiC | PL1: 1132.0 nm; PL2: 1130.5 nm; PL3: 1107.6 nm; PL4: 1078.5 nm | ~1300–1360 MHz",
+   "value_text": "PL1: 1132.0 nm; PL2: 1130.5 nm; PL3: 1107.6 nm; PL4: 1078.5 nm"
+  },
+  {
+   "material": "VV (PL1–PL4), 4H-SiC",
+   "property": "epr_zfs_parameter",
+   "unit": "MHz",
+   "conditions": "4H-SiC (Table 1: D value)",
+   "ref_id": "B38-nanomaterials-16-00627",
+   "quote": "VV (PL1–PL4) | 4H-SiC | PL1: 1132.0 nm; PL2: 1130.5 nm; PL3: 1107.6 nm; PL4: 1078.5 nm | ~1300–1360 MHz",
+   "value_text": "~1300–1360 MHz"
+  },
+  {
+   "material": "VV (QL1–QL6), 6H-SiC",
+   "property": "PL_emission_peak",
+   "unit": "nm",
+   "conditions": "6H-SiC (Table 1: zero-phonon line, ZPL)",
+   "ref_id": "B30-nanomaterials-16-00627",
+   "quote": "VV (QL1–QL6) | 6H-SiC | QL1: 1139.6 nm; QL2: 1135.0 nm; QL3: 1123.9 nm; QL4: 1107.4 nm; QL5: 1093.5 nm; QL6: 1093.0 nm | ~1140–1360 MHz",
+   "value_text": "QL1: 1139.6 nm; QL2: 1135.0 nm; QL3: 1123.9 nm; QL4: 1107.4 nm; QL5: 1093.5 nm; QL6: 1093.0 nm"
+  },
+  {
+   "material": "VV (QL1–QL6), 6H-SiC",
+   "property": "epr_zfs_parameter",
+   "unit": "MHz",
+   "conditions": "6H-SiC (Table 1: D value)",
+   "ref_id": "B30-nanomaterials-16-00627",
+   "quote": "VV (QL1–QL6) | 6H-SiC | QL1: 1139.6 nm; QL2: 1135.0 nm; QL3: 1123.9 nm; QL4: 1107.4 nm; QL5: 1093.5 nm; QL6: 1093.0 nm | ~1140–1360 MHz",
+   "value_text": "~1140–1360 MHz"
+  },
+  {
+   "material": "PL6, 4H-SiC",
+   "property": "PL_emission_peak",
+   "unit": "nm",
+   "conditions": "4H-SiC (Table 1: zero-phonon line, ZPL)",
+   "ref_id": "B31-nanomaterials-16-00627",
+   "quote": "PL6 | 4H-SiC | ~1038–1040 nm | ~1365 MHz",
+   "value_text": "~1038–1040 nm"
+  },
+  {
+   "material": "PL6, 4H-SiC",
+   "property": "epr_zfs_parameter",
+   "unit": "MHz",
+   "conditions": "4H-SiC (Table 1: D value)",
+   "ref_id": "B31-nanomaterials-16-00627",
+   "quote": "PL6 | 4H-SiC | ~1038–1040 nm | ~1365 MHz",
+   "value_num": 1365
+  },
+  {
+   "material": "PL7, 4H-SiC",
+   "property": "PL_emission_peak",
+   "unit": "nm",
+   "conditions": "4H-SiC (Table 1: zero-phonon line, ZPL)",
+   "ref_id": "B39-nanomaterials-16-00627",
+   "quote": "PL7 | 4H-SiC | ~1106 nm | ~1333 MHz",
+   "value_num": 1106
+  },
+  {
+   "material": "PL7, 4H-SiC",
+   "property": "epr_zfs_parameter",
+   "unit": "MHz",
+   "conditions": "4H-SiC (Table 1: D value)",
+   "ref_id": "B39-nanomaterials-16-00627",
+   "quote": "PL7 | 4H-SiC | ~1106 nm | ~1333 MHz",
+   "value_num": 1333
+  },
+  {
+   "material": "NV−, 3C-SiC",
+   "property": "PL_emission_peak",
+   "unit": "nm",
+   "conditions": "3C-SiC (Table 1: zero-phonon line, ZPL)",
+   "ref_id": "B40-nanomaterials-16-00627",
+   "quote": "NV− | 3C-SiC | ~1289 nm | -",
+   "value_num": 1289
+  },
+  {
+   "material": "NV−, 4H-SiC",
+   "property": "PL_emission_peak",
+   "unit": "nm",
+   "conditions": "4H-SiC (Table 1: zero-phonon line, ZPL)",
+   "ref_id": "B41-nanomaterials-16-00627",
+   "quote": "NV− | 4H-SiC | 1241, 1242, 1223, and 1180 nm | ~1300 MHz",
+   "value_text": "1241, 1242, 1223, and 1180 nm"
+  },
+  {
+   "material": "NV−, 4H-SiC",
+   "property": "epr_zfs_parameter",
+   "unit": "MHz",
+   "conditions": "4H-SiC (Table 1: D value)",
+   "ref_id": "B41-nanomaterials-16-00627",
+   "quote": "NV− | 4H-SiC | 1241, 1242, 1223, and 1180 nm | ~1300 MHz",
+   "value_num": 1300
+  },
+  {
+   "material": "NV−, 6H-SiC",
+   "property": "PL_emission_peak",
+   "unit": "nm",
+   "conditions": "6H-SiC (Table 1: zero-phonon line, ZPL)",
+   "ref_id": "B42-nanomaterials-16-00627",
+   "quote": "NV− | 6H-SiC | 1240.9, 1226.4, 1203.1, 1182.9, 1182.6, 1153.7 nm | ~1300 MHz",
+   "value_text": "1240.9, 1226.4, 1203.1, 1182.9, 1182.6, 1153.7 nm"
+  },
+  {
+   "material": "NV−, 6H-SiC",
+   "property": "epr_zfs_parameter",
+   "unit": "MHz",
+   "conditions": "6H-SiC (Table 1: D value)",
+   "ref_id": "B42-nanomaterials-16-00627",
+   "quote": "NV− | 6H-SiC | 1240.9, 1226.4, 1203.1, 1182.9, 1182.6, 1153.7 nm | ~1300 MHz",
+   "value_num": 1300
+  },
+  {
+   "material": "EI4, 4H-SiC",
+   "property": "epr_zfs_parameter",
+   "unit": "MHz",
+   "conditions": "4H-SiC (Table 1: D value)",
+   "ref_id": "B34-nanomaterials-16-00627",
+   "quote": "EI4 | 4H-SiC | - | ~1030 MHz(~195 MHz)",
+   "value_text": "~1030 MHz(~195 MHz)"
+  },
+  {
+   "material": "EI4, 6H-SiC",
+   "property": "epr_zfs_parameter",
+   "unit": "MHz",
+   "conditions": "6H-SiC (Table 1: D value)",
+   "ref_id": "B9-nanomaterials-16-00627",
+   "quote": "EI4 | 6H-SiC | - | 262—295 MHz",
+   "value_text": "262—295 MHz"
+  },
+  {
+   "material": "carbon antisite vacancy (CAV), SiC",
+   "property": "PL_emission_peak",
+   "value_num": 660,
+   "unit": "nm",
+   "conditions": "commonly observed in SiC",
+   "ref_id": "B6-nanomaterials-16-00627",
+   "quote": "carbon antisite vacancies (CAV) are commonly observed near 660 nm"
+  },
+  {
+   "material": "silicon vacancy (VSi−), 4H-SiC",
+   "property": "PL_emission_peak",
+   "value_text": "approximately 858–917 nm",
+   "unit": "nm",
+   "conditions": "4H-SiC, depending on polytype and lattice site",
+   "ref_id": "B6-nanomaterials-16-00627",
+   "quote": "silicon vacancies appear in the near-infrared region (approximately 858–917 nm for 4H-SiC, for example)"
+  },
+  {
+   "material": "divacancy VV axial configurations, 4H- and 6H-SiC",
+   "property": "epr_zfs_parameter",
+   "value_text": "approximately 1.30–1.36 GHz",
+   "unit": "GHz",
+   "conditions": "4H-SiC (hh, kk, C3V) and 6H-SiC (hh, k1k1, k2k2, C3V)",
+   "ref_id": "B5-nanomaterials-16-00627",
+   "quote": "whose axial configurations in 4H-SiC (hh, kk, C3V symmetry) and 6H-SiC (hh, k1k1, k2k2, C3V symmetry) span D values of approximately 1.30–1.36 GHz"
+  }
+ ],
+ "sample_inventory": [
+  {
+   "sample": "0%-0h-1050°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-0h-1050°C",
+   "results_in": [
+    "Fig. 1a",
+    "Fig. 2a"
+   ]
+  },
+  {
+   "sample": "0%-0h-1150°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-0h-1150°C",
+   "results_in": [
+    "Fig. 1a",
+    "Fig. 2a"
+   ]
+  },
+  {
+   "sample": "0%-0h-1250°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-0h-1250°C",
+   "results_in": [
+    "Fig. 1a",
+    "Fig. 2a"
+   ]
+  },
+  {
+   "sample": "0%-0h-1350°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-0h-1350°C",
+   "results_in": [
+    "Fig. 1a",
+    "Fig. 2a"
+   ]
+  },
+  {
+   "sample": "0%-0h-1450°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-0h-1450°C",
+   "results_in": [
+    "Fig. 1a",
+    "Fig. 2a"
+   ]
+  },
+  {
+   "sample": "0%-3h-1050°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-3h-1050°C",
+   "results_in": [
+    "Fig. 1c",
+    "Fig. 2c",
+    "Fig. 3",
+    "Fig. 4"
+   ]
+  },
+  {
+   "sample": "0%-3h-1150°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-3h-1150°C",
+   "results_in": [
+    "Fig. 1c",
+    "Fig. 2c",
+    "Fig. 3",
+    "Fig. 4"
+   ]
+  },
+  {
+   "sample": "0%-3h-1250°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-3h-1250°C",
+   "results_in": [
+    "Fig. 1c",
+    "Fig. 2c",
+    "Fig. 4"
+   ]
+  },
+  {
+   "sample": "0%-3h-1350°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-3h-1350°C",
+   "results_in": [
+    "Fig. 1c",
+    "Fig. 2c"
+   ]
+  },
+  {
+   "sample": "0%-3h-1450°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "0%-3h-1450°C",
+   "results_in": [
+    "Fig. 1c",
+    "Fig. 2c"
+   ]
+  },
+  {
+   "sample": "10%-0h-1050°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-0h-1050°C",
+   "results_in": [
+    "Fig. 1b",
+    "Fig. 2b",
+    "Fig. 4"
+   ]
+  },
+  {
+   "sample": "10%-0h-1150°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-0h-1150°C",
+   "results_in": [
+    "Fig. 1b",
+    "Fig. 2b"
+   ]
+  },
+  {
+   "sample": "10%-0h-1250°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-0h-1250°C",
+   "results_in": [
+    "Fig. 1b",
+    "Fig. 2b"
+   ]
+  },
+  {
+   "sample": "10%-0h-1350°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-0h-1350°C",
+   "results_in": [
+    "Fig. 1b",
+    "Fig. 2b"
+   ]
+  },
+  {
+   "sample": "10%-0h-1450°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-0h-1450°C",
+   "results_in": [
+    "Fig. 1b",
+    "Fig. 2b"
+   ]
+  },
+  {
+   "sample": "10%-3h-1050°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-3h-1050°C",
+   "results_in": [
+    "Fig. 1d",
+    "Fig. 2d",
+    "Fig. 4"
+   ]
+  },
+  {
+   "sample": "10%-3h-1150°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-3h-1150°C",
+   "results_in": [
+    "Fig. 1d",
+    "Fig. 2d",
+    "Fig. 4"
+   ]
+  },
+  {
+   "sample": "10%-3h-1250°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-3h-1250°C",
+   "results_in": [
+    "Fig. 1d",
+    "Fig. 2d",
+    "Fig. 4"
+   ]
+  },
+  {
+   "sample": "10%-3h-1350°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-3h-1350°C",
+   "results_in": [
+    "Fig. 1d",
+    "Fig. 2d"
+   ]
+  },
+  {
+   "sample": "10%-3h-1450°C",
+   "defined_in": "Methods, 2 (Al content 0 or 10 mol%, HEBM time 0 or 3 h, reaction temperature 1050–1450 °C); Figure 1 caption",
+   "route": "10%-3h-1450°C",
+   "results_in": [
+    "Fig. 1d",
+    "Fig. 2d"
+   ]
+  },
+  {
+   "sample": "high-temperature reference samples of Figure 4",
+   "defined_in": "Figure 4 caption",
+   "route": null,
+   "why": "échantillons de référence à haute température non nommés dans la légende ; la légende de la figure ne porte que 7 courbes, dont certaines à 1250 °C"
+  },
+  {
+   "sample": "simulated EPR spectra (EasySpin)",
+   "defined_in": "Figure 3 caption",
+   "route": null,
+   "why": "simulation de spectres (divacancy, VSi− + CSi, VSi−), pas un échantillon synthétisé"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "0%-0h-*: étape 1 (mélange)",
+   "issue": "Les échantillons sans broyage (0 h) sont mélangés « in a homemade mixer at 75 RPM overnight » ; le mélange est une étape `mix` propre à la voie de base 0%-0h-1050°C, séparée de la voie broyée (0%-3h-1050°C) parce que l'étape de broyage ne s'applique pas ; l'argon pendant le mélange n'est dit que pour le broyage. Les étapes suivantes (séchage, pastillage, four, nettoyage) sont recopiées sur la foi de « After this process… » qui vise tous les échantillons."
+  },
+  {
+   "where": "Rendements à 1150 °C sans broyage",
+   "issue": "Le texte dit « yields around 50% were achieved at 1150 °C, irrespective of the presence of Al » ; la figure 1a-b donne environ 35 % (0%-0h) et 60 % (10%-0h). Valeurs de la figure retenues dans les résultats ; l'énoncé du texte n'est repris qu'en annotation."
+  },
+  {
+   "where": "Figure 1, valeurs lues sur le graphique",
+   "issue": "Rendement, taille de cristallite et fractions de polytypes de 20 échantillons sont lus sur la figure 1 (arrondis au 5 le plus proche pour les fractions, précision ±5 points). Les segments de polytype inférieurs à environ 5 % ne sont pas relevés, la somme des fractions relevées peut donc être de 90–98 %. Le polytype 3C du 0%-3h-1050°C est « absent » d'après le texte."
+  },
+  {
+   "where": "Figure 2, maxima PL visibles",
+   "issue": "Les maxima de PL visible lus sur la figure 2 (1150 °C : 750, 750, 760, 740 nm ; 1350–1450 °C : environ 680 nm) sont à ±20 nm près ; les courbes de 1050 et 1250 °C sont larges et se recouvrent et ne sont pas relevées, ni celle du 0%-3h-1450°C (plateau de 620 à 690 nm)."
+  },
+  {
+   "where": "Figure 3, valeurs de D",
+   "issue": "Les valeurs de D écrites sur la figure 3 (1330, 786, 266 MHz à 1050 °C ; 1204, 655 MHz à 1150 °C) diffèrent un peu du texte (D ≈ 1,3 GHz dans les deux échantillons) : 1204 MHz à 1150 °C est inférieur à la plage 1,30–1,36 GHz donnée pour les bilacunes. Le texte et la figure sont tous deux extraits."
+  },
+  {
+   "where": "0%-0h-1050°C, PL infrarouge",
+   "issue": "Le texte dit que « the most prominent PL signal was recorded from the 0%-0 h-1050 °C sample » dans l'infrarouge (figure 4), mais la figure 4 ne contient ni courbe 0%-0h-1050 °C ni courbe 0%-0h : sa courbe la plus intense est 0%-3h-1150 °C. Énoncé du texte extrait à la lettre, courbes de la figure 4 extraites pour les échantillons nommés dans sa légende."
+  },
+  {
+   "where": "Figure 4, échantillons sans signal",
+   "issue": "La légende parle de « high-temperature reference samples » sans signal, sans les nommer ; 10%-3h-1150 °C (1150 °C, avec Al) et 0%-3h-1250 °C semblent plats sur la figure, alors que le texte dit que les échantillons de 1050 et 1150 °C ont des signaux IR significatifs. Aucun résultat « pas de signal » n'est extrait pour ces échantillons."
+  },
+  {
+   "where": "Raman : excitation",
+   "issue": "L'article donne la longueur d'onde du laser (532 nm) et le microscope uniquement pour la PL ; le laser et la puissance de la mesure Raman ne sont pas écrits, ils sont déclarés non cités. Les valeurs Raman quantitatives sont dans la table S7, absente."
+  },
+  {
+   "where": "Al : « 10 mol% »",
+   "issue": "« 0% or 10 mol% of Al » : l'article ne dit pas par rapport à quoi (Si seul, Si+C, total) ; la quantité est notée en amount_text, sans calcul."
+  },
+  {
+   "where": "Étape de séchage et lavage final",
+   "issue": "« washed until the pH reached 5, then dried » : solvant de lavage, nombre de lavages, température, durée et mode de séchage ne sont pas donnés (déclarés non cités) ; le pH 5 est enregistré comme critère de fin de lavage."
+  },
+  {
+   "where": "Résultats, rendement et taille de cristallite",
+   "issue": "« We considered product yield and crystallite size as indirect indicators of the effective reaction temperature » : les auteurs raisonnent sur des rendements par échantillon qui ne sont donnés que par la figure 1 ; les rendements et tailles de cristallite sont lus sur ce graphique, aucune valeur n'est écrite dans le texte ou un tableau."
+  }
+ ]
+}
