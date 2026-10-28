@@ -93,7 +93,8 @@
      "not_stated": [
       "order_of_addition",
       "temperature_of_mixing",
-      "addition_rate"
+      "addition_rate",
+      "ph"
      ]
     },
     {
@@ -173,6 +174,12 @@
        "quote": "Then, the resulting particles were filtered, washed with deionized water, and dried at 100 °C for 8 h.",
        "value_num": 8,
        "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "value_text": "oven",
+       "quote": "Fig. 1 Flowchart of the synthesis of samples",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
@@ -202,7 +209,8 @@
      "not_stated": [
       "heating_rate",
       "cooling_rate",
-      "duration"
+      "duration",
+      "gas_flow"
      ]
     }
    ],
@@ -404,6 +412,11 @@
        "name": "temperature",
        "quote": "First, 10 mL of 0.1 M Cd (NO₃)2 aqueous solution was added drop by drop to 100 mL of 0.1 M NaOH and mixed for 10 min at room temperature.",
        "value_text": "room temperature"
+      },
+      {
+       "name": "addition_mode",
+       "value_text": "drop by drop",
+       "quote": "10 mL of 0.1 M Cd (NO₃)2 aqueous solution was added drop by drop to 100 mL of 0.1 M NaOH"
       }
      ],
      "equipment": [],
@@ -423,12 +436,18 @@
        "quote": "Then, 10 mL of 0.1 M Na2S was quickly added and stirred for 10 min.",
        "value_num": 10,
        "unit": "min"
+      },
+      {
+       "name": "addition_mode",
+       "value_text": "quickly",
+       "quote": "10 mL of 0.1 M Na2S was quickly added"
       }
      ],
      "equipment": [],
      "not_stated": [
       "temperature",
-      "stirring_speed"
+      "stirring_speed",
+      "ph"
      ]
     },
     {
@@ -463,7 +482,8 @@
      ],
      "equipment": [],
      "not_stated": [
-      "repetitions"
+      "repetitions",
+      "volume"
      ]
     },
     {
@@ -483,6 +503,12 @@
        "quote": "The product was then separated by centrifugation at 7000 rpm, washed with deionized water, and dried at 60 °C for 8 h.",
        "value_num": 8,
        "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "value_text": "oven",
+       "quote": "Fig. 1 Flowchart of the synthesis of samples",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
@@ -622,7 +648,8 @@
      "equipment": [],
      "not_stated": [
       "power",
-      "temperature"
+      "temperature",
+      "frequency"
      ]
     },
     {
@@ -630,7 +657,13 @@
      "action": "add",
      "description": "Ajouter goutte à goutte l'ammoniaque et le TBT.",
      "quote": "Then, 0.24 mL of ammonium hydroxide and 0.75 mL of TBT were added drop by drop to the solution, mixing continuously for 24 h at 45 °C.",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "drop by drop",
+       "quote": "0.24 mL of ammonium hydroxide and 0.75 mL of TBT were added drop by drop to the solution"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "addition_rate",
@@ -658,7 +691,9 @@
      ],
      "equipment": [],
      "not_stated": [
-      "stirring_speed"
+      "stirring_speed",
+      "ph",
+      "atmosphere"
      ]
     },
     {
@@ -711,6 +746,12 @@
        "quote": "The resulting particles were filtered, washed with ethanol and deionized water several times, and dried at 70 °C for 8 h.",
        "value_num": 8,
        "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "value_text": "oven",
+       "quote": "Fig. 1 Flowchart of the synthesis of samples",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
@@ -761,6 +802,13 @@
      "instrument": "Avaspec 2048 Tech",
      "conditions": "In the range of 300–700 nm",
      "quote": "CTM (15%) displayed reflectance close to pure CT"
+    },
+    {
+     "technique": "Bande interdite (Kubelka-Munk / Tauc)",
+     "result": "Eg = 2.64 / 2.32 / 2.29 / 2.25 eV pour n = 1/2, 3/2, 2, 3 (Table 5)",
+     "instrument": "Avaspec 2048 Tech",
+     "conditions": "fonction de Kubelka-Munk (Eq. 2) ; tracé de Tauc [F(R)hν]^n en fonction de hν, n = 1/2, 3/2, 2 et 3 ; partie linéaire du tracé (Fig. 8c) ; réflectance diffuse mesurée dans l'intervalle 300–700 nm",
+     "quote": "The bandgaps (Eg) were computed based on the Kubelka-Munk Function (Eq. 2), for different n values including, 1/2, 3/2, 2, and 3."
     }
    ],
    "outcomes": [
@@ -990,7 +1038,8 @@
      "equipment": [],
      "not_stated": [
       "power",
-      "temperature"
+      "temperature",
+      "frequency"
      ]
     },
     {
@@ -1051,6 +1100,12 @@
        "quote": "The solutions were stirred for 2 h at room temperature and then dried at 70 °C for 8 h.",
        "value_num": 8,
        "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "value_text": "oven",
+       "quote": "Fig. 1 Flowchart of the synthesis of samples",
+       "from_figure": "Fig. 1"
       }
      ],
      "equipment": [],
@@ -1143,6 +1198,28 @@
      "instrument": null,
      "conditions": "10 ml of 20 mM scavenger was added to the mixture of MB and catalyst; under optimal conditions (according to Table 7)",
      "quote": "For this purpose, 10 ml of 20 mM scavenger was added to the mixture of MB and catalyst and the photocatalytic degradation was examined."
+    },
+    {
+     "technique": "Bande interdite (Kubelka-Munk / Tauc)",
+     "result": "Eg = 2.79 / 2.32 / 2.29 / 2.26 eV pour n = 1/2, 3/2, 2, 3 (Table 5)",
+     "instrument": "Avaspec 2048 Tech",
+     "conditions": "fonction de Kubelka-Munk (Eq. 2) ; tracé de Tauc [F(R)hν]^n en fonction de hν, n = 1/2, 3/2, 2 et 3 ; partie linéaire du tracé (Fig. 8c) ; réflectance diffuse mesurée dans l'intervalle 300–700 nm",
+     "quote": "The bandgaps (Eg) were computed based on the Kubelka-Munk Function (Eq. 2), for different n values including, 1/2, 3/2, 2, and 3."
+    },
+    {
+     "technique": "Essai photocatalytique : répétitions et statistique",
+     "result": "tous les essais en triplicat ; seuil de signification 0.05 pour l'analyse statistique",
+     "instrument": null,
+     "conditions": "triplicat ; seuil de signification 0.05",
+     "quote": "All experiments were conducted in triplicate, and a significance level 0.05 was implemented for statistical analysis."
+    },
+    {
+     "technique": "Photoréacteur (schéma Fig. 2)",
+     "result": "réacteur maison à double enveloppe : lampes, capteur de pH relié à un pH-mètre, agitateur magnétique, pompe à air (aération), circulation d'eau froide (pompe et réservoir)",
+     "instrument": "home-made photoreactor",
+     "conditions": "équipements lus sur le schéma de la Fig. 2 (lamps, pH sensor, pH meter, magnetic stirrer, air pump, cold water inlet/outlet, water pump, cold water reservoir)",
+     "quote": "Fig. 2 Schematic representation of the home-made photoreactor",
+     "from_figure": "Fig. 2"
     }
    ],
    "outcomes": [
@@ -1493,6 +1570,60 @@
      "quote": "a particle size of 98.34 nm",
      "value_num": 98.34,
      "unit": "nm"
+    },
+    {
+     "property": "XPS_Ti_2p3/2_binding_energy",
+     "value_num": 464.23,
+     "unit": "eV",
+     "quote": "The Ti 2p spectrum showed two clear peaks at 464.23 eV and 470.09 eV, related to Ti 2p₃/2 and Ti 2p₁/2, respectively"
+    },
+    {
+     "property": "XPS_Ti_2p1/2_binding_energy",
+     "value_num": 470.09,
+     "unit": "eV",
+     "quote": "The Ti 2p spectrum showed two clear peaks at 464.23 eV and 470.09 eV, related to Ti 2p₃/2 and Ti 2p₁/2, respectively"
+    },
+    {
+     "property": "XPS_Cd_3d3/2_binding_energy",
+     "value_num": 417.5,
+     "unit": "eV",
+     "quote": "The Cd 3d spectrum displayed peaks at around 417.5 eV and 410.61 eV, assigned to Cd 3d₃/2 and Cd 3d₅/2, respectively"
+    },
+    {
+     "property": "XPS_Cd_3d5/2_binding_energy",
+     "value_num": 410.61,
+     "unit": "eV",
+     "quote": "The Cd 3d spectrum displayed peaks at around 417.5 eV and 410.61 eV, assigned to Cd 3d₃/2 and Cd 3d₅/2, respectively"
+    },
+    {
+     "property": "XPS_S_2p3/2_binding_energy",
+     "value_num": 154.76,
+     "unit": "eV",
+     "quote": "Characteristic peaks at 154.76 eV and 160.74 eV relate to S 2p₃/2 and S 2p₁/2, respectively"
+    },
+    {
+     "property": "XPS_S_2p1/2_binding_energy",
+     "value_num": 160.74,
+     "unit": "eV",
+     "quote": "Characteristic peaks at 154.76 eV and 160.74 eV relate to S 2p₃/2 and S 2p₁/2, respectively"
+    },
+    {
+     "property": "XPS_O_1s_peak_1_binding_energy",
+     "value_num": 528.6,
+     "unit": "eV",
+     "quote": "The O 1s spectrum presented peaks at 528.6 eV and 539.06 eV"
+    },
+    {
+     "property": "XPS_O_1s_peak_2_binding_energy",
+     "value_num": 539.06,
+     "unit": "eV",
+     "quote": "The O 1s spectrum presented peaks at 528.6 eV and 539.06 eV"
+    },
+    {
+     "property": "XPS_Si_2p_binding_energy",
+     "value_num": 109.4,
+     "unit": "eV",
+     "quote": "There is also a peak at 109.4 eV in the Si 2p spectrum"
     }
    ],
    "missing_fields": [
@@ -1553,6 +1684,13 @@
      "instrument": "BELSORP MINI II. The BEL PREP VAC II",
      "conditions": "Degassing process of CT and CTM (x%) samples at 120 ℃ for 2 h",
      "quote": "Based on the IUPAC classification, the N2 adsorption-desorption isotherm (Fig. 7) of all samples exhibited Type IV hysteresis loops, representative of mesoporous materials."
+    },
+    {
+     "technique": "Bande interdite (Kubelka-Munk / Tauc)",
+     "result": "Eg = 3.13 / 2.57 / 2.51 / 2.46 eV pour n = 1/2, 3/2, 2, 3 (Table 5)",
+     "instrument": "Avaspec 2048 Tech",
+     "conditions": "fonction de Kubelka-Munk (Eq. 2) ; tracé de Tauc [F(R)hν]^n en fonction de hν, n = 1/2, 3/2, 2 et 3 ; partie linéaire du tracé (Fig. 8c) ; réflectance diffuse mesurée dans l'intervalle 300–700 nm",
+     "quote": "The bandgaps (Eg) were computed based on the Kubelka-Munk Function (Eq. 2), for different n values including, 1/2, 3/2, 2, and 3."
     }
    ],
    "outcomes": [
@@ -2076,6 +2214,14 @@
   {
    "issue": "Durée de calcination (5 h) lisible seulement sur l'organigramme de la Fig. 1 (MCM-41 et CTM) : règle de la grille, valeur seulement sur figure = non citée ; portée en not_stated par l'orchestrateur, la lecture de la figure est conservée ici (5 h ; même figure : séchage de CTM à 60 °C contre 70 °C dans le texte, texte retenu).",
    "where": "MCM-41 et CTM (15%), étape calcine"
+  },
+  {
+   "issue": "XPS : les énergies de liaison (Ti 2p3/2 464.23 eV, Cd 3d5/2 410.61 eV, S 2p3/2 154.76 eV, Si 2p 109.4 eV) s'écartent nettement des valeurs usuelles de la littérature ; les auteurs parlent de « slightly shifted binding energy values » dues à la charge de surface, sans référence de calibration (C 1s). Valeurs extraites telles quelles, sans correction.",
+   "where": "CTM (15%)"
+  },
+  {
+   "issue": "Complément : 'drying_mode' = four (oven) lu sur l'organigramme de la Fig. 1 (le texte dit seulement « dried »). Les équipements du photoréacteur sont lus sur le schéma de la Fig. 2 (légende seule dans le texte).",
+   "where": "CdS, CT, CTM (15%)"
   }
  ]
 }

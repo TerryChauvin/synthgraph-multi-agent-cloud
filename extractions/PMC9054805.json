@@ -126,6 +126,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
+    "yield",
+    "repetitions",
     "yield"
    ],
    "succeeded": true,
@@ -362,6 +364,13 @@
      "instrument": "XRD 7000 Shimadzu, Japan",
      "conditions": "2θ 5° à 80°, vitesse de balayage 4° par minute, température ambiante",
      "quote": "In RHA2, rice husk ash at temperature 500 °C, the diffraction patterns the diffraction patterns of graphene is weak or even disappear and only broad peak at 15–30° (22–23°) matching well with Cristobalite [JCPDS 29-0085]."
+    },
+    {
+     "technique": "EDX",
+     "result": "teneurs en C et Si lues sur la figure 2a (C diminue, Si augmente avec la température de combustion)",
+     "instrument": "EDX combined with SEM JEOL JSM 6360LA, Japan",
+     "conditions": null,
+     "quote": "When the temperature is increased from 200 to 600 °C, the C content declines while the Si content increases while the O content remains constant"
     }
    ]
   },
@@ -402,6 +411,15 @@
      "quote": "Figure 2 (a) Variation the percentage of C and Si with temperature, and (b) FTIR of RHA1, RHA2, and RHA3.",
      "from_figure": "Fig. 2a"
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "EDX",
+     "result": "teneurs en C et Si lues sur la figure 2a (C diminue, Si augmente avec la température de combustion)",
+     "instrument": "EDX combined with SEM JEOL JSM 6360LA, Japan",
+     "conditions": null,
+     "quote": "When the temperature is increased from 200 to 600 °C, the C content declines while the Si content increases while the O content remains constant"
+    }
    ]
   },
   {
@@ -421,6 +439,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
+    "yield",
+    "repetitions",
     "yield"
    ],
    "succeeded": true,
@@ -534,7 +554,8 @@
       "atmosphere",
       "heating_rate",
       "cooling_rate",
-      "pressure"
+      "pressure",
+      "vessel"
      ]
     },
     {
@@ -632,9 +653,30 @@
     {
      "technique": "essai d'adsorption (TB et BPA)",
      "result": "conditions des essais de dose de la figure 10 et du tableau 2 : pH 3, concentration initiale 100 ppm, agitation 300 rpm, contact 30 min, 25 °C ; surnageant séparé par centrifugation à 4000 rpm pendant 10 min ; dosage UV/Vis à 590 nm (TB) et 280 nm (BPA)",
-     "instrument": "spectrophotomètre UV/Vis (modèle non cité)",
+     "instrument": "Spectro UV–Vis Double Beam PC Scanning, Model UVD-2960, Labomed, Inc.",
      "conditions": "pH 3 ; 100 ppm ; 300 rpm ; 30 min ; 25 °C ; centrifugation 4000 rpm, 10 min ; 590 nm (TB), 280 nm (BPA)",
      "quote": "Figure 10 Effect of dose on the adsorption of TB onto (a) FGS1, (b) FGS2, and (c) FGS3, and on the adsorption of BPA onto (d) FGS1, (e) FGS2, and (f) FGS3 [pH: 3, initial concentration:100 ppm, agitation speed: 300 rpm, contact time 30 min, and temperature 25 °C]."
+    },
+    {
+     "technique": "EDX",
+     "result": "C 84,48 % (RHA1 : 49,09 %) ; rapport C/O de FGS1 10,22",
+     "instrument": "EDX combined with SEM JEOL JSM 6360LA, Japan",
+     "conditions": null,
+     "quote": "C % increase from 49.09% for sample RHA1 to 84.48% for sample FGS1"
+    },
+    {
+     "technique": "essai d'adsorption — plages balayées",
+     "result": "temps de contact 0–60 min ; dose d'adsorbant 0,1–0,4 g/L ; concentration initiale 50–150 mg/L ; température 25 à 50 °C ; pH 2–12 (annonce du protocole ; les essais rapportés sont à pH 3)",
+     "instrument": "Spectro UV–Vis Double Beam PC Scanning, Model UVD-2960, Labomed, Inc.",
+     "conditions": "méthode en batch ; surnageant séparé par centrifugation à 4000 rpm pendant 10 min ; dosage à 590 nm (TB) et 280 nm (BPA)",
+     "quote": "analyzing the effect of contact time over a time period 0-60 min’ time interval, doses of GO/SiO2 nanocomposites utilized changed in the range 0.1-0.4 g/ L, initial pollutant dye concentration of 50-150 mg/L, solution temperature over 25 to 50 °C and the pH that was varied in range 2-12."
+    },
+    {
+     "technique": "essai d'adsorption — répétitions",
+     "result": "chaque expérience réalisée trois fois pour les trois adsorbants FGS1, FGS2 et FGS3",
+     "instrument": null,
+     "conditions": "répétitions : 3",
+     "quote": "All experiments were performed three times with three different adsorbents FGS1, FGS2, and FGS3"
     }
    ],
    "outcomes": [
@@ -806,9 +848,30 @@
     {
      "technique": "essai d'adsorption (TB et BPA)",
      "result": "conditions des essais de dose de la figure 10 et du tableau 2 : pH 3, concentration initiale 100 ppm, agitation 300 rpm, contact 30 min, 25 °C ; surnageant séparé par centrifugation à 4000 rpm pendant 10 min ; dosage UV/Vis à 590 nm (TB) et 280 nm (BPA)",
-     "instrument": "spectrophotomètre UV/Vis (modèle non cité)",
+     "instrument": "Spectro UV–Vis Double Beam PC Scanning, Model UVD-2960, Labomed, Inc.",
      "conditions": "pH 3 ; 100 ppm ; 300 rpm ; 30 min ; 25 °C ; centrifugation 4000 rpm, 10 min ; 590 nm (TB), 280 nm (BPA)",
      "quote": "Figure 10 Effect of dose on the adsorption of TB onto (a) FGS1, (b) FGS2, and (c) FGS3, and on the adsorption of BPA onto (d) FGS1, (e) FGS2, and (f) FGS3 [pH: 3, initial concentration:100 ppm, agitation speed: 300 rpm, contact time 30 min, and temperature 25 °C]."
+    },
+    {
+     "technique": "EDX",
+     "result": "rapport C/O de FGS2 6,65 (FGS1 10,22 ; FGS3 2,60) ; teneurs en C, O et Si lues sur la figure 6a",
+     "instrument": "EDX combined with SEM JEOL JSM 6360LA, Japan",
+     "conditions": null,
+     "quote": "the C/O ratio in the FGS1 (10.22) is higher than that in the FGS2 (6.65) and FGS3 (2.60)"
+    },
+    {
+     "technique": "Raman",
+     "result": "ID/IG 0,98 ; I2D/IG 0,26 ; bandes D (1347 cm−1) et G (1574 cm−1) communes aux trois échantillons",
+     "instrument": "SENTERRA, Bruker Optics, USA",
+     "conditions": "500 à 4000 cm-1, température ambiante",
+     "quote": "The ID/IG ratios from Raman spectra for FGS1, FGS2, and FGS3 were determined to be 0.26, 0.98, and 0.89, respectively, in this work."
+    },
+    {
+     "technique": "essai d'adsorption — effet de l'agitation",
+     "result": "agitation de 0 à 300 rpm : retrait TB de 9,1 à 48,57 % et BPA de 24,5 à 54,8 %",
+     "instrument": "Spectro UV–Vis Double Beam PC Scanning, Model UVD-2960, Labomed, Inc.",
+     "conditions": "concentration initiale 100 mg/L ; dose 0,1 g/L ; contact 30 min ; pH 3 ; 25 °C",
+     "quote": "[initial concentration: 100 mg/L, adsorbent dose: 0.1 g/L, contact time: 30 min, pH: 3 and temperature: 25˚C]"
     }
    ],
    "outcomes": [
@@ -1226,6 +1289,54 @@
      "value_num": 0.1117,
      "unit": "L/mg",
      "quote": "BPA | 500.00 | 0.1117 | 0.9889"
+    },
+    {
+     "property": "TB_RL_initial_50_mg_L",
+     "value_num": 0.0383,
+     "unit": null,
+     "quote": "50 | | 0.0383 | 0.1483"
+    },
+    {
+     "property": "BPA_RL_initial_50_mg_L",
+     "value_num": 0.1483,
+     "unit": null,
+     "quote": "50 | | 0.0383 | 0.1483"
+    },
+    {
+     "property": "TB_RL_initial_75_mg_L",
+     "value_num": 0.0278,
+     "unit": null,
+     "quote": "75 | | 0.0278 | 0.1127"
+    },
+    {
+     "property": "BPA_RL_initial_75_mg_L",
+     "value_num": 0.1127,
+     "unit": null,
+     "quote": "75 | | 0.0278 | 0.1127"
+    },
+    {
+     "property": "TB_RL_initial_100_mg_L",
+     "value_num": 0.0204,
+     "unit": null,
+     "quote": "100 | | 0.0204 | 0.0803"
+    },
+    {
+     "property": "BPA_RL_initial_100_mg_L",
+     "value_num": 0.0803,
+     "unit": null,
+     "quote": "100 | | 0.0204 | 0.0803"
+    },
+    {
+     "property": "TB_RL_initial_150_mg_L",
+     "value_num": 0.0141,
+     "unit": null,
+     "quote": "150 | | 0.0141 | 0.0555"
+    },
+    {
+     "property": "BPA_RL_initial_150_mg_L",
+     "value_num": 0.0555,
+     "unit": null,
+     "quote": "150 | | 0.0141 | 0.0555"
     }
    ]
   },
@@ -1283,9 +1394,30 @@
     {
      "technique": "essai d'adsorption (TB et BPA)",
      "result": "conditions des essais de dose de la figure 10 et du tableau 2 : pH 3, concentration initiale 100 ppm, agitation 300 rpm, contact 30 min, 25 °C ; surnageant séparé par centrifugation à 4000 rpm pendant 10 min ; dosage UV/Vis à 590 nm (TB) et 280 nm (BPA)",
-     "instrument": "spectrophotomètre UV/Vis (modèle non cité)",
+     "instrument": "Spectro UV–Vis Double Beam PC Scanning, Model UVD-2960, Labomed, Inc.",
      "conditions": "pH 3 ; 100 ppm ; 300 rpm ; 30 min ; 25 °C ; centrifugation 4000 rpm, 10 min ; 590 nm (TB), 280 nm (BPA)",
      "quote": "Figure 10 Effect of dose on the adsorption of TB onto (a) FGS1, (b) FGS2, and (c) FGS3, and on the adsorption of BPA onto (d) FGS1, (e) FGS2, and (f) FGS3 [pH: 3, initial concentration:100 ppm, agitation speed: 300 rpm, contact time 30 min, and temperature 25 °C]."
+    },
+    {
+     "technique": "EDX",
+     "result": "teneur en oxygène et en silicium la plus élevée de la série, teneur en carbone inférieure à celle de FGS1 ; C/O 2,60",
+     "instrument": "EDX combined with SEM JEOL JSM 6360LA, Japan",
+     "conditions": null,
+     "quote": "The highest oxygen level measured in combination with the highest silicon content in sample FGS3 indicates an increase in silica."
+    },
+    {
+     "technique": "Raman",
+     "result": "ID/IG 0,89 ; I2D/IG 0,18",
+     "instrument": "SENTERRA, Bruker Optics, USA",
+     "conditions": "500 à 4000 cm-1, température ambiante",
+     "quote": "The ID/IG ratios from Raman spectra for FGS1, FGS2, and FGS3 were determined to be 0.26, 0.98, and 0.89, respectively, in this work."
+    },
+    {
+     "technique": "XRD",
+     "result": "bande (002) non observée, donc nombre de couches non estimable ; absence de pics larges attribuée à la teneur plus élevée en silice amorphe",
+     "instrument": "XRD 7000 Shimadzu, Japan",
+     "conditions": "2θ 5° à 80°, vitesse de balayage 4° par minute, température ambiante",
+     "quote": "As a result, the absence of broad peaks in sample FSG3 is attributed to the composite's increased silica concentration."
     }
    ],
    "outcomes": [
@@ -1551,6 +1683,21 @@
   {
    "where": "Tableau S2, texte sur la concentration initiale",
    "issue": "Le texte écrit que « l'adsorption de TB et BPA » passe de 205,82 à 430,15 mg/g pour une concentration de TB de 50 à 150 mg/L, ce qui est la ligne TB du tableau S2 ; les valeurs BPA (233,03 à 434,39) sont confirmées par S2. Valeurs lues dans le tableau S2."
+  },
+  {
+   "route": "FGS1",
+   "where": "FGS1, essais d'adsorption",
+   "issue": "Les annexes annoncent un pH balayé de 2 à 12, mais aucun résultat d'effet du pH n'apparaît dans le texte ni dans les légendes des figures S2–S4 ; toutes les conditions rapportées sont à pH 3. Rien extrait pour le balayage en pH."
+  },
+  {
+   "route": "FGS2",
+   "where": "FGS2, ATG",
+   "issue": "Le texte ne cite ni appareil ni nacelle pour l'ATG, ni le débit d'azote ; seules l'atmosphère (azote), la plage (ambiante à 800 °C) et la rampe (5 °C min−1) sont données. Pour la teneur en silice, le chauffage sous air jusqu'à ~1200 °C n'a ni rampe ni débit cités."
+  },
+  {
+   "route": "FGS2",
+   "where": "FGS2, S4 (RL)",
+   "issue": "Valeurs de RL lues au tableau S4 (colonnes TB puis BPA) ; chaque citation est la rangée du tableau telle qu'aplatie dans le fichier texte (concentration | | RL TB | RL BPA)."
   }
  ]
 }
