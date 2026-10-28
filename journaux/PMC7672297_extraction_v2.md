@@ -1,0 +1,16 @@
+# Journal d'extraction v2, PMC7672297
+
+- Découpage : voie de base `AgNPs_Mm` (synthèse verte des AgNPs), voie `Extract_Mm` en `intermediate` (préparation de l'extrait de polychète, réutilisé comme réactif `intermediate` de la base), et une branche `Control_AgNO3_ddH2O` pour le témoin négatif (« mixing 10 mL of ddH2O with 90 mL of 1 mM AgNO3 solution »). Aucun balayage de paramètre dans l'article : pas d'autre branche.
+- Témoin négatif en branche avec ses propres étapes (un seul `mix`) : l'article ne dit pas qu'il a subi les 15 min et les 24 h du protocole. La courbe « Negative control-AgNO3 » de la figure 3 lui est attribuée (doute écrit : ce pourrait être la solution d'AgNO3 seule).
+- Échantillons sans voie (inventaire) : AgNPs commerciales Sigma (témoin positif, achetées), gentamicine, eau ddH2O.
+- XRD et FTIR portent sur l'extrait brut, pas sur les AgNPs (Méthodes et légendes 5 et 6) : mesures et résultats rattachés à `Extract_Mm`. Les AgNPs n'ont donc aucun résultat XRD ; noté en `limite_reproductibilite`.
+- Table 1 : les colonnes gentamicine, extrait brut et ddH2O sont rangées en `outcomes` de `AgNPs_Mm` (propriétés nommées « …_control_… »), car `measured_by` doit viser une mesure de la voie ou d'un parent. Chaque rangée entière sert de citation ; l'ordre des colonnes vient de l'en-tête (AgNPs | gentamicine | extrait | ddH2O). Écarts-types (SEM) enregistrés en `statistic_sem_…`.
+- Concentration d'AgNO3 : « 1 mM » n'est écrit que pour le témoin et le blanc UV ; la synthèse dit « 90 mL of AgNO3 solution ». Déclarée `not_stated` (concentration) pour la voie de base, malgré une probable identité.
+- Phrase « After 24 h of incubation, the samples were kept at room temperature (30 °C ± 2) » : lue comme température de l'incubation de 24 h ; « in the dark » pris dans la légende de la figure 2.
+- Figure 1 (Δ, « Heated for 15 min ») contredit le texte (pré-incubation sans chauffage) : le texte est suivi, température de l'étape 2 non citée, doute écrit.
+- Figures lues : Fig. 3 (absorbance maximale ≈ 1,3 ; témoin plat), Fig. 4d (8 classes de taille, 2 chiffres significatifs), Fig. 7 (violet = croissance, selon les méthodes ; 100 % seul puits jaune). Légende de figure comme citation. Fig. 4a non reprise (le texte donne 91,21 nm).
+- Instruments FTIR contradictoires dans la section (Perkin Elmer Spectrum 100 / Nicolet 520) : les deux gardés dans `instrument`.
+- Incubation des boîtes du test de diffusion en disque non donnée (le « 37 °C overnight » est celui du repiquage) : `incubation_conditions` et `concentration_range` en `not_stated` pour `bio_disk`.
+- Vocabulaire : ajouts `reglage` `scattering_angle` (angle de diffusion DLS) et `blank_reference` (blanc de spectrométrie). Réutilisés sans ajout : `spectral_resolution`, `xray_tube_voltage_current`, `size_analysis_method`, `inoculum`, `solvent_extraction`.
+- Valeurs de la littérature (418–420 et 411 nm, deux heures et deux semaines, 40–90 nm, plages SPR) en `comparisons` avec leurs `ref_id` : les renvois sont perdus dans corpus/text (« by and ») mais retrouvés dans corpus/refs ([[bib47]], [[bib19]], [[bib31]], [[bib11]]). L'ordre « respectively » suit l'ordre bib47 puis bib19.
+- `method_sources` : bib21 (Kirby-Bauer), bib21 et bib5 (CLSI modifié), bib57 (turbidité), bib63 (extrait, rôle « autre » par prudence).

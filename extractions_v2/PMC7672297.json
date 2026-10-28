@@ -1,0 +1,1437 @@
+{
+ "pmcid": "PMC7672297",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "AgNPs biosynthesised with M. moribidii extract",
+   "defined_in": "Materials and methods, Biosynthesis of AgNPs",
+   "route": "AgNPs_Mm",
+   "results_in": [
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Table 1",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "M. moribidii crude extract",
+   "defined_in": "Materials and methods, Preparation of M. moribidii crude extract",
+   "route": "Extract_Mm",
+   "results_in": [
+    "Fig. 5",
+    "Fig. 6",
+    "Table 1 (crude extract control column)",
+    "Fig. 7 (well 10)"
+   ]
+  },
+  {
+   "sample": "negative control AgNO3 + ddH2O (1 mM)",
+   "defined_in": "Materials and methods, Biosynthesis of AgNPs",
+   "route": "Control_AgNO3_ddH2O",
+   "results_in": [
+    "Fig. 3"
+   ]
+  },
+  {
+   "sample": "commercial AgNPs (Sigma Aldrich), positive control",
+   "defined_in": "Materials and methods, Biosynthesis of AgNPs",
+   "route": null,
+   "why": "échantillon commercial acheté, non synthétisé par les auteurs",
+   "results_in": [
+    "Fig. 3",
+    "Fig. 7 (well 9)"
+   ]
+  },
+  {
+   "sample": "gentamycin (1 mg/mL), antibiotic positive control",
+   "defined_in": "Materials and methods, Disk diffusion method",
+   "route": null,
+   "why": "antibiotique commercial, témoin du test antibactérien, pas un matériau synthétisé",
+   "results_in": [
+    "Table 1",
+    "Fig. 7 (well 8)"
+   ]
+  },
+  {
+   "sample": "ddH2O, negative control of the antibacterial tests",
+   "defined_in": "Materials and methods, Disk diffusion method",
+   "route": null,
+   "why": "eau, simple témoin négatif non synthétisé",
+   "results_in": [
+    "Table 1",
+    "Fig. 7 (well 11)"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "label": "AgNPs_Mm",
+   "parent": null,
+   "is_baseline": true,
+   "methods": [
+    "green_synthesis"
+   ],
+   "material": {
+    "name": "silver nanoparticles (AgNPs) biosynthesised with M. moribidii crude extract",
+    "formula": "Ag",
+    "family": "nanoparticule_metallique",
+    "phase": null,
+    "morphology": "spherical-like nanoparticles"
+   },
+   "method": "green synthesis: reduction and stabilisation of Ag+ by an aqueous polychaete crude extract at room temperature",
+   "quote": "AgNPs were synthesised in response to silver nitrate (AgNO3) with polychaete crude extract for 24 h incubation",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "silver nitrate (AgNO3) solution",
+     "formula": "AgNO3",
+     "role": "precursor",
+     "amount": 90,
+     "unit": "mL",
+     "purity": null,
+     "supplier": "Bendosen (UK)",
+     "supplier_quote": "Silver nitrate (AgNO3) was purchased from Bendosen (UK).",
+     "not_stated": [
+      "purity",
+      "concentration"
+     ],
+     "quote": "A total of 10 mL of aqueous crude extract was added to 90 mL of AgNO3 solution."
+    },
+    {
+     "name": "M. moribidii crude extract (route Extract_Mm)",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 10,
+     "unit": "mL",
+     "quote": "A total of 10 mL of aqueous crude extract was added to 90 mL of AgNO3 solution."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add 10 mL of aqueous crude extract to 90 mL of AgNO3 solution.",
+     "quote": "A total of 10 mL of aqueous crude extract was added to 90 mL of AgNO3 solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "age",
+     "description": "Pre-incubation of the mixture (colour change to yellowish observed after 15 min).",
+     "quote": "was observed immediately after 15 min during the pre-incubation period",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 15,
+       "unit": "min",
+       "quote": "was observed immediately after 15 min during the pre-incubation period"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "react",
+     "description": "Incubation for 24 h at room temperature (30 °C ± 2), in the dark, until a yellowish-brown colour develops.",
+     "quote": "After 24 h of incubation, the samples were kept at room temperature (30 °C ± 2)",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 24,
+       "unit": "h",
+       "quote": "After 24 h of incubation"
+      },
+      {
+       "name": "temperature",
+       "value_num": 30,
+       "value_text": "room temperature (30 °C ± 2)",
+       "unit": "°C",
+       "quote": "room temperature (30 °C ± 2)"
+      },
+      {
+       "name": "irradiation",
+       "value_text": "in the dark",
+       "quote": "(c) AgNPs after 24 h of incubation in the dark."
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "uv_vis_1",
+     "technique": "UV_vis",
+     "instrument": "UV 1800, Shimadzu, Japan",
+     "result": "SPR absorption peak at 398–400 nm",
+     "quote": "A strong broad absorption peak was observed at 398 nm–400 nm, which attributed to the SPR of the AgNPs.",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "quote": "within a range of 300–600 nm using the UV-Vis spectrophotometer (UV 1800, Shimadzu, Japan)",
+       "value_text": "300–600 nm"
+      },
+      {
+       "name": "blank_reference",
+       "quote": "Aqueous AgNO3 (1 mM) was used as a blank.",
+       "value_text": "aqueous AgNO3 (1 mM)"
+      },
+      {
+       "name": "software",
+       "quote": "The UV-Vis spectra were obtained from automated software UV Probe.",
+       "value_text": "UV Probe"
+      }
+     ],
+     "not_stated": [
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "dls_1",
+     "technique": "DLS_zeta",
+     "instrument": "ZETA Sizers Nanoseries (Malvern Instruments Nano ZS, Malvern Analytical, USA)",
+     "result": "hydrodynamic size 91.21 nm, PDI 0.163",
+     "quote": "The results showed that the biosynthesised AgNPs were 91.21 nm in size with a PDI value of 0.163, indicating a moderate polydispersity sample (Figure 4(a)).",
+     "settings": [
+      {
+       "name": "measurement_temperature",
+       "quote": "at 25 ± 0.1 °C with a scattering angle of 90°",
+       "value_text": "25 ± 0.1 °C"
+      },
+      {
+       "name": "scattering_angle",
+       "quote": "at 25 ± 0.1 °C with a scattering angle of 90°",
+       "value_text": "90°"
+      },
+      {
+       "name": "dispersant",
+       "quote": "Biosynthesised AgNPs were then dispersed in water and sonicated using an ultrasonic water bath for 10 min to separate the aggregated AgNPs.",
+       "value_text": "water"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Prior to the experiment, AgNPs were filtered using a 0.2 μm syringe filter to remove unwanted debris such as dead cells. Biosynthesised AgNPs were then dispersed in water and sonicated using an ultrasonic water bath for 10 min to separate the aggregated AgNPs.",
+       "value_text": "filtered through a 0.2 μm syringe filter; dispersed in water and sonicated 10 min in an ultrasonic water bath"
+      }
+     ],
+     "not_stated": [
+      "concentration"
+     ]
+    },
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": "JSM-6390 LA (JEOL, USA)",
+     "result": "almost spherical, poorly dispersed, aggregated particles",
+     "quote": "The SEM image revealed that the observed biosynthesised AgNPs were almost spherical (Figure 4(b) in red circle).",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "was operated at an accelerating voltage of 15–20 kV",
+       "value_text": "15–20 kV"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "All samples were prepared by a mounting process in which a drop of AgNPs was deposited onto dry poly-L-lysine and left overnight. The samples were then coated with gold by means of a sputter coating (Auto Fine Coater-JEOL) before being transferred and observed under the microscope.",
+       "value_text": "drop of AgNPs on dry poly-L-lysine, left overnight, gold sputter-coated (Auto Fine Coater-JEOL)"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "tem_1",
+     "technique": "TEM",
+     "instrument": "Tecnai G2 Spirit Biotwin (FEI Company, USA)",
+     "result": "well dispersed, spherical-like particles, 20–100 nm, mean 40.19 nm",
+     "quote": "The results of TEM revealed that the biosynthesised AgNPs were well dispersed and in spherical-like in shape (Figure 4(c)).",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "at a voltage of 100–200 kV to analyse the shape and size of biosynthesised AgNPs",
+       "value_text": "100–200 kV"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "TEM was operated at ambient temperature",
+       "value_text": "ambient temperature"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Samples were prepared by drop-casting of diluted biosynthesised AgNPs on a coated copper grid.",
+       "value_text": "drop-casting of diluted AgNPs on a coated copper grid"
+      },
+      {
+       "name": "size_analysis_method",
+       "quote": "Results were analysed using ImageJ software to predict the size distribution.",
+       "value_text": "ImageJ software"
+      }
+     ],
+     "not_stated": [
+      "particles_counted"
+     ]
+    },
+    {
+     "id": "bio_disk",
+     "technique": "biological_test",
+     "instrument": null,
+     "result": "inhibition zones of 6.00 to 9.18 mm for eight bacteria (disk diffusion, Kirby-Bauer)",
+     "quote": "Antimicrobial effects of the synthesised AgNPs were evaluated against eight human pathogens (Table 1) using a disk diffusion method.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "pure cultures of eight human pathogens, namely, E. coli, K. pneumoniae, S. typhimurium, Serratia sp., S. sonnei, P. aeruginosa, S. aureus, and S. epidermidis",
+       "value_text": "E. coli, K. pneumoniae, S. typhimurium, Serratia sp., S. sonnei, P. aeruginosa, S. aureus, S. epidermidis"
+      },
+      {
+       "name": "assay_method",
+       "quote": "Sterile paper disk (Whatman filter paper No.1) was loaded with 20 μL biosynthesised AgNPs and compared to standard antibiotic gentamycin (1 mg/mL) as a positive control while crude extract and ddH2O were negative controls.",
+       "value_text": "Kirby-Bauer disk diffusion; 20 μL AgNPs per sterile Whatman No.1 paper disk; gentamycin (1 mg/mL) positive control; crude extract and ddH2O negative controls"
+      },
+      {
+       "name": "inoculum",
+       "quote": "The dry surface of the Mueller-Hinton agar (MHA) plates was inoculated with pathogenic bacterial strains (0.5 McFarland) by swabbing over the entire sterile agar surface.",
+       "value_text": "0.5 McFarland, swabbed on Mueller-Hinton agar"
+      },
+      {
+       "name": "replicates",
+       "quote": "Each experiment was at least performed triplicate.",
+       "value_text": "at least triplicate"
+      }
+     ],
+     "not_stated": [
+      "concentration_range",
+      "incubation_conditions"
+     ]
+    },
+    {
+     "id": "bio_well",
+     "technique": "biological_test",
+     "instrument": null,
+     "result": "all eight bacteria inhibited at 100% (stock solution); growth (purple-blue formazan) at the lower dilutions on Fig. 7",
+     "quote": "All the bacteria tested were inhibited at 100% concentration (stock solution) of biosynthesised AgNPs.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "(A) E. coli, (B) K. pneumoniae, (C) S. typhimurium, (D) Serratia sp., (E) S. sonnei, (F) P. aeruginosa, (G) S. aureus, and (H) S. epidermidis",
+       "value_text": "E. coli, K. pneumoniae, S. typhimurium, Serratia sp., S. sonnei, P. aeruginosa, S. aureus, S. epidermidis"
+      },
+      {
+       "name": "assay_method",
+       "quote": "Well dilution method was conducted according to the method recommended by CLSI protocol with some modifications",
+       "value_text": "well dilution (CLSI protocol with some modifications), two-fold serial dilution of AgNPs"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "(1) 100%, (2) 50%, (3) 25%, (4) 12.5%, (5) 6.25%, (6), 3.125%, (7) growth control",
+       "value_text": "100% to 3.125% of the stock solution (two-fold dilutions)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "The plate was incubated at 37 °C for 18–24 h.",
+       "value_text": "37 °C for 18–24 h"
+      },
+      {
+       "name": "inoculum",
+       "quote": "100 μL of the bacterial suspension adjusted to the 0.5 McFarland standard was added to 96-well plate",
+       "value_text": "100 μL of bacterial suspension at 0.5 McFarland per well (96-well plate)"
+      },
+      {
+       "name": "solution_volume",
+       "quote": "with a maximum volume per well of 100 μL",
+       "value_num": 100,
+       "unit": "μL"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "After incubation, 20 μL of 5 mg/mL MTT was added to each well.",
+       "value_text": "MTT (20 μL of 5 mg/mL per well), purple-blue formazan = bacterial growth"
+      },
+      {
+       "name": "replicates",
+       "quote": "Each experiment was at least performed triplicate.",
+       "value_text": "at least triplicate"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "product_identity",
+     "value_text": "AgNPs formation confirmed by colour change and SPR peak at 398–400 nm",
+     "quote": "The biosynthesis of AgNPs was confirmed through changes in colour from pinkish to yellowish-brown and formation of SPR peak at 398 nm–400 nm."
+    },
+    {
+     "property": "visual_appearance_15min",
+     "value_text": "yellowish",
+     "quote": "to yellowish (Figure 2(b)) after addition of polychaete crude extracts with AgNO3 was observed immediately after 15 min during the pre-incubation period"
+    },
+    {
+     "property": "visual_appearance_24h",
+     "value_text": "fully yellowish-brown",
+     "quote": "The colour was fully yellowish-brown (Figure 2(c)) after 24 h of incubation."
+    },
+    {
+     "property": "absorption_peak",
+     "value_text": "398 nm–400 nm",
+     "measured_by": "uv_vis_1",
+     "quote": "A strong broad absorption peak was observed at 398 nm–400 nm, which attributed to the SPR of the AgNPs."
+    },
+    {
+     "property": "absorption_peak_absorbance",
+     "value_num": 1.3,
+     "measured_by": "uv_vis_1",
+     "from_figure": "Fig. 3",
+     "quote": "UV-Vis absorption spectra of biosynthesised AgNPs, a negative control of AgNO3 solution and commercial AgNPs (positive controls) by Sigma Aldrich."
+    },
+    {
+     "property": "hydrodynamic_size",
+     "value_num": 91.21,
+     "unit": "nm",
+     "measured_by": "dls_1",
+     "quote": "the biosynthesised AgNPs were 91.21 nm in size with a PDI value of 0.163"
+    },
+    {
+     "property": "size_dispersity_PDI",
+     "value_num": 0.163,
+     "measured_by": "dls_1",
+     "quote": "the biosynthesised AgNPs were 91.21 nm in size with a PDI value of 0.163"
+    },
+    {
+     "property": "morphology_SEM",
+     "value_text": "almost spherical, poorly dispersed, aggregation of particles",
+     "measured_by": "sem_1",
+     "quote": "The SEM image revealed that the observed biosynthesised AgNPs were almost spherical (Figure 4(b) in red circle). However, the formation of biosynthesised AgNPs was poorly dispersed, and the aggregation of particles could be observed."
+    },
+    {
+     "property": "morphology_TEM",
+     "value_text": "well dispersed, spherical-like",
+     "measured_by": "tem_1",
+     "quote": "The results of TEM revealed that the biosynthesised AgNPs were well dispersed and in spherical-like in shape (Figure 4(c))."
+    },
+    {
+     "property": "particle_size_mean_TEM",
+     "value_num": 40.19,
+     "unit": "nm",
+     "measured_by": "tem_1",
+     "quote": "The biosynthesised AgNPs were in a range between 20 nm and 100 nm with an average particles size of 40.19 nm (Figure 4(d))."
+    },
+    {
+     "property": "particle_size_range_TEM",
+     "value_text": "between 20 nm and 100 nm",
+     "measured_by": "tem_1",
+     "quote": "The biosynthesised AgNPs were in a range between 20 nm and 100 nm with an average particles size of 40.19 nm (Figure 4(d))."
+    },
+    {
+     "property": "size_dispersity_fraction_20_30nm_TEM",
+     "value_num": 30,
+     "unit": "%",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 4d",
+     "quote": "(d) The particle size distribution of biosynthesised AgNPs obtained via TEM."
+    },
+    {
+     "property": "size_dispersity_fraction_30_40nm_TEM",
+     "value_num": 36,
+     "unit": "%",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 4d",
+     "quote": "(d) The particle size distribution of biosynthesised AgNPs obtained via TEM."
+    },
+    {
+     "property": "size_dispersity_fraction_40_50nm_TEM",
+     "value_num": 18,
+     "unit": "%",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 4d",
+     "quote": "(d) The particle size distribution of biosynthesised AgNPs obtained via TEM."
+    },
+    {
+     "property": "size_dispersity_fraction_50_60nm_TEM",
+     "value_num": 5,
+     "unit": "%",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 4d",
+     "quote": "(d) The particle size distribution of biosynthesised AgNPs obtained via TEM."
+    },
+    {
+     "property": "size_dispersity_fraction_60_70nm_TEM",
+     "value_num": 4,
+     "unit": "%",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 4d",
+     "quote": "(d) The particle size distribution of biosynthesised AgNPs obtained via TEM."
+    },
+    {
+     "property": "size_dispersity_fraction_70_80nm_TEM",
+     "value_num": 3,
+     "unit": "%",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 4d",
+     "quote": "(d) The particle size distribution of biosynthesised AgNPs obtained via TEM."
+    },
+    {
+     "property": "size_dispersity_fraction_80_90nm_TEM",
+     "value_num": 3,
+     "unit": "%",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 4d",
+     "quote": "(d) The particle size distribution of biosynthesised AgNPs obtained via TEM."
+    },
+    {
+     "property": "size_dispersity_fraction_90_100nm_TEM",
+     "value_num": 2,
+     "unit": "%",
+     "measured_by": "tem_1",
+     "from_figure": "Fig. 4d",
+     "quote": "(d) The particle size distribution of biosynthesised AgNPs obtained via TEM."
+    },
+    {
+     "property": "antibacterial_inhibition_zone_E_coli",
+     "value_num": 8.39,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "E.coli | 8.39 ± 0.12a,b | 28.13 ± 0.17 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_E_coli",
+     "value_num": 0.12,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "E.coli | 8.39 ± 0.12a,b | 28.13 ± 0.17 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_gentamycin_control_E_coli",
+     "value_num": 28.13,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "E.coli | 8.39 ± 0.12a,b | 28.13 ± 0.17 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_gentamycin_control_E_coli",
+     "value_num": 0.17,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "E.coli | 8.39 ± 0.12a,b | 28.13 ± 0.17 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_crude_extract_control_E_coli",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "E.coli | 8.39 ± 0.12a,b | 28.13 ± 0.17 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_ddH2O_control_E_coli",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "E.coli | 8.39 ± 0.12a,b | 28.13 ± 0.17 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_K_pneumoniae",
+     "value_num": 6.0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "K. pnemoniae | 6.00 ± 0.00a,b | 22.78 ± 0.25 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_K_pneumoniae",
+     "value_num": 0.0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "K. pnemoniae | 6.00 ± 0.00a,b | 22.78 ± 0.25 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_gentamycin_control_K_pneumoniae",
+     "value_num": 22.78,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "K. pnemoniae | 6.00 ± 0.00a,b | 22.78 ± 0.25 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_gentamycin_control_K_pneumoniae",
+     "value_num": 0.25,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "K. pnemoniae | 6.00 ± 0.00a,b | 22.78 ± 0.25 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_crude_extract_control_K_pneumoniae",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "K. pnemoniae | 6.00 ± 0.00a,b | 22.78 ± 0.25 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_ddH2O_control_K_pneumoniae",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "K. pnemoniae | 6.00 ± 0.00a,b | 22.78 ± 0.25 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_S_typhimurium",
+     "value_num": 8.13,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. typhimurium | 8.13 ± 0.20a,b | 23.79 ± 0.29 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_S_typhimurium",
+     "value_num": 0.2,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. typhimurium | 8.13 ± 0.20a,b | 23.79 ± 0.29 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_gentamycin_control_S_typhimurium",
+     "value_num": 23.79,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. typhimurium | 8.13 ± 0.20a,b | 23.79 ± 0.29 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_gentamycin_control_S_typhimurium",
+     "value_num": 0.29,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. typhimurium | 8.13 ± 0.20a,b | 23.79 ± 0.29 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_crude_extract_control_S_typhimurium",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. typhimurium | 8.13 ± 0.20a,b | 23.79 ± 0.29 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_ddH2O_control_S_typhimurium",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. typhimurium | 8.13 ± 0.20a,b | 23.79 ± 0.29 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_Serratia_sp",
+     "value_num": 7.98,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "Serratia sp. | 7.98 ± 0.11a,b | 26.15 ± 0.27 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_Serratia_sp",
+     "value_num": 0.11,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "Serratia sp. | 7.98 ± 0.11a,b | 26.15 ± 0.27 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_gentamycin_control_Serratia_sp",
+     "value_num": 26.15,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "Serratia sp. | 7.98 ± 0.11a,b | 26.15 ± 0.27 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_gentamycin_control_Serratia_sp",
+     "value_num": 0.27,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "Serratia sp. | 7.98 ± 0.11a,b | 26.15 ± 0.27 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_crude_extract_control_Serratia_sp",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "Serratia sp. | 7.98 ± 0.11a,b | 26.15 ± 0.27 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_ddH2O_control_Serratia_sp",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "Serratia sp. | 7.98 ± 0.11a,b | 26.15 ± 0.27 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_S_sonnei",
+     "value_num": 7.77,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. sonnei | 7.77 ± 0.19a,b | 23.79 ± 0.26 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_S_sonnei",
+     "value_num": 0.19,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. sonnei | 7.77 ± 0.19a,b | 23.79 ± 0.26 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_gentamycin_control_S_sonnei",
+     "value_num": 23.79,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. sonnei | 7.77 ± 0.19a,b | 23.79 ± 0.26 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_gentamycin_control_S_sonnei",
+     "value_num": 0.26,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. sonnei | 7.77 ± 0.19a,b | 23.79 ± 0.26 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_crude_extract_control_S_sonnei",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. sonnei | 7.77 ± 0.19a,b | 23.79 ± 0.26 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_ddH2O_control_S_sonnei",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. sonnei | 7.77 ± 0.19a,b | 23.79 ± 0.26 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_P_aeruginosa",
+     "value_num": 8.94,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "P. aeruginosa | 8.94 ± 0.15a,b | 31.66 ± 0.18 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_P_aeruginosa",
+     "value_num": 0.15,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "P. aeruginosa | 8.94 ± 0.15a,b | 31.66 ± 0.18 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_gentamycin_control_P_aeruginosa",
+     "value_num": 31.66,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "P. aeruginosa | 8.94 ± 0.15a,b | 31.66 ± 0.18 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_gentamycin_control_P_aeruginosa",
+     "value_num": 0.18,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "P. aeruginosa | 8.94 ± 0.15a,b | 31.66 ± 0.18 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_crude_extract_control_P_aeruginosa",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "P. aeruginosa | 8.94 ± 0.15a,b | 31.66 ± 0.18 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_ddH2O_control_P_aeruginosa",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "P. aeruginosa | 8.94 ± 0.15a,b | 31.66 ± 0.18 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_S_aureus",
+     "value_num": 8.54,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. aureus | 8.54 ± 0.13a,b | 27.00 ± 0.20 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_S_aureus",
+     "value_num": 0.13,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. aureus | 8.54 ± 0.13a,b | 27.00 ± 0.20 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_gentamycin_control_S_aureus",
+     "value_num": 27.0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. aureus | 8.54 ± 0.13a,b | 27.00 ± 0.20 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_gentamycin_control_S_aureus",
+     "value_num": 0.2,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. aureus | 8.54 ± 0.13a,b | 27.00 ± 0.20 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_crude_extract_control_S_aureus",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. aureus | 8.54 ± 0.13a,b | 27.00 ± 0.20 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_ddH2O_control_S_aureus",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. aureus | 8.54 ± 0.13a,b | 27.00 ± 0.20 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_S_epidermidis",
+     "value_num": 9.18,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. epidermidis | 9.18 ± 0.12a,b | 31.40 ± 0.24 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_S_epidermidis",
+     "value_num": 0.12,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. epidermidis | 9.18 ± 0.12a,b | 31.40 ± 0.24 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_gentamycin_control_S_epidermidis",
+     "value_num": 31.4,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. epidermidis | 9.18 ± 0.12a,b | 31.40 ± 0.24 | 0 | 0"
+    },
+    {
+     "property": "statistic_sem_inhibition_zone_gentamycin_control_S_epidermidis",
+     "value_num": 0.24,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. epidermidis | 9.18 ± 0.12a,b | 31.40 ± 0.24 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_crude_extract_control_S_epidermidis",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. epidermidis | 9.18 ± 0.12a,b | 31.40 ± 0.24 | 0 | 0"
+    },
+    {
+     "property": "antibacterial_inhibition_zone_ddH2O_control_S_epidermidis",
+     "value_num": 0,
+     "unit": "mm",
+     "measured_by": "bio_disk",
+     "quote": "S. epidermidis | 9.18 ± 0.12a,b | 31.40 ± 0.24 | 0 | 0"
+    },
+    {
+     "property": "statistic_significance_vs_crude_extract",
+     "value_text": "p < 0.05 for all eight bacteria (superscript a)",
+     "measured_by": "bio_disk",
+     "quote": "aSignificantly different when compared to crude extract, p < 0.05."
+    },
+    {
+     "property": "statistic_significance_vs_ddH2O",
+     "value_text": "p < 0.05 for all eight bacteria (superscript b)",
+     "measured_by": "bio_disk",
+     "quote": "bSignificantly different when compared to ddH2O, p < 0.05."
+    },
+    {
+     "property": "statistic_anova_significance_level",
+     "value_num": 0.05,
+     "measured_by": "bio_disk",
+     "quote": "Statistical significance of the experimental results (significance level of p < 0.05)"
+    },
+    {
+     "property": "antibacterial_well_dilution_inhibition",
+     "value_text": "all eight bacteria inhibited at 100% concentration (stock solution)",
+     "measured_by": "bio_well",
+     "quote": "All the bacteria tested were inhibited at 100% concentration (stock solution) of biosynthesised AgNPs."
+    },
+    {
+     "property": "antibacterial_well_dilution_growth_below_100pct",
+     "value_text": "purple-blue formazan (growth) in the wells at 50% to 3.125% for the eight bacteria; so 100% is the lowest inhibitory concentration tested",
+     "measured_by": "bio_well",
+     "from_figure": "Fig. 7",
+     "quote": "(1) 100%, (2) 50%, (3) 25%, (4) 12.5%, (5) 6.25%, (6), 3.125%, (7) growth control, (8) gentamycin, (9) AgNPs Sigma, (10) crude extract, (11) ddH2O, and (12) Sterility control."
+    }
+   ],
+   "missing_fields": [
+    "AgNO3_concentration",
+    "purification_procedure",
+    "stock_solution_concentration"
+   ]
+  },
+  {
+   "label": "Control_AgNO3_ddH2O",
+   "parent": "AgNPs_Mm",
+   "material": {
+    "name": "negative control: AgNO3 solution mixed with ddH2O (no extract)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "Two types of negative controls were developed by mixing 10 mL of ddH2O with 90 mL of 1 mM AgNO3 solution.",
+   "variations": [
+    {
+     "parameter": "M. moribidii crude extract (route Extract_Mm)",
+     "value_text": "replaced by ddH2O",
+     "parent_value": "10 mL crude extract",
+     "quote": "Two types of negative controls were developed by mixing 10 mL of ddH2O with 90 mL of 1 mM AgNO3 solution."
+    },
+    {
+     "parameter": "silver nitrate (AgNO3) solution",
+     "value_num": 1,
+     "unit": "mM",
+     "parent_value": "not stated",
+     "quote": "Two types of negative controls were developed by mixing 10 mL of ddH2O with 90 mL of 1 mM AgNO3 solution."
+    }
+   ],
+   "reagents": [
+    {
+     "name": "double-distilled water (ddH2O), control",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 10,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Two types of negative controls were developed by mixing 10 mL of ddH2O with 90 mL of 1 mM AgNO3 solution."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Mix 10 mL of ddH2O with 90 mL of 1 mM AgNO3 solution (negative control).",
+     "quote": "Two types of negative controls were developed by mixing 10 mL of ddH2O with 90 mL of 1 mM AgNO3 solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "absorption_peak",
+     "value_text": "no absorption peak between 300 and 600 nm (flat spectrum, absorbance below 0.1)",
+     "measured_by": "uv_vis_1",
+     "from_figure": "Fig. 3",
+     "quote": "UV-Vis absorption spectra of biosynthesised AgNPs, a negative control of AgNO3 solution and commercial AgNPs (positive controls) by Sigma Aldrich."
+    }
+   ]
+  },
+  {
+   "label": "Extract_Mm",
+   "parent": null,
+   "is_baseline": false,
+   "kind": "intermediate",
+   "methods": [
+    "green_synthesis"
+   ],
+   "material": {
+    "name": "aqueous crude extract of Marphysa moribidii (polychaete)",
+    "formula": null,
+    "family": "autre",
+    "phase": "amorphous",
+    "morphology": null
+   },
+   "method": "aqueous crude extract of whole polychaetes (crushing, 1 h incubation in ddH2O, filtration)",
+   "quote": "Polychaetes were crushed and added to 100 mL ddH2O for the preparation of the crude extract.",
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "polychaete Marphysa moribidii (whole worms)",
+     "formula": null,
+     "role": "precursor",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
+     "quote": "Polychaetes were collected during low tide from west coast of peninsular Malaysia."
+    },
+    {
+     "name": "double-distilled water (ddH2O), extraction medium",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 100,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Polychaetes were crushed and added to 100 mL ddH2O for the preparation of the crude extract."
+    },
+    {
+     "name": "tap water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "The sediment and other adherent materials were entirely removed by washing thoroughly with tap water and rinsing with ddH2O."
+    },
+    {
+     "name": "ddH2O (rinsing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "The sediment and other adherent materials were entirely removed by washing thoroughly with tap water and rinsing with ddH2O."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "wash",
+     "description": "Remove sediment and adherent material by washing thoroughly with tap water and rinsing with ddH2O.",
+     "quote": "The sediment and other adherent materials were entirely removed by washing thoroughly with tap water and rinsing with ddH2O.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "value_text": "tap water, then ddH2O",
+       "quote": "The sediment and other adherent materials were entirely removed by washing thoroughly with tap water and rinsing with ddH2O."
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "grind",
+     "description": "Crush the polychaetes.",
+     "quote": "Polychaetes were crushed and added to 100 mL ddH2O",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "solvent_extraction",
+     "description": "Add the crushed polychaetes to 100 mL ddH2O and leave the mixture on the bench for 1 h.",
+     "quote": "The mixture was incubated on the bench for 1 h before filtration with Whatman No.1 filter paper",
+     "parameters": [
+      {
+       "name": "duration",
+       "value_num": 1,
+       "unit": "h",
+       "quote": "incubated on the bench for 1 h"
+      },
+      {
+       "name": "solvent",
+       "value_text": "ddH2O",
+       "quote": "added to 100 mL ddH2O"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "filter",
+     "description": "Filter the mixture through Whatman No.1 filter paper.",
+     "quote": "The mixture was incubated on the bench for 1 h before filtration with Whatman No.1 filter paper",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "Whatman No.1 filter paper",
+       "detail": null,
+       "quote": "filtration with Whatman No.1 filter paper"
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "action": "store",
+     "description": "Store the aqueous crude extract in a refrigerator until use.",
+     "quote": "The aqueous crude extract was stored in a refrigerator for further use",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "refrigerator",
+       "detail": null,
+       "quote": "stored in a refrigerator"
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "ftir_1",
+     "technique": "FTIR",
+     "instrument": "Perkin Elmer Spectrum 100; Nicolet 520 FTIR spectrophotometer",
+     "result": "bands of O–H, nitrile, C=C, C–O/C–C, N–H and C–Br groups in the crude extract",
+     "quote": "The functional groups in the crude extract of polychaete were found to be peaks in Figure 5.",
+     "settings": [
+      {
+       "name": "wavenumber_range",
+       "quote": "All measurements were carried out in a range of 400–4000 cm−1 at a resolution of 4 cm−1.",
+       "value_text": "400–4000 cm−1"
+      },
+      {
+       "name": "spectral_resolution",
+       "quote": "All measurements were carried out in a range of 400–4000 cm−1 at a resolution of 4 cm−1.",
+       "value_num": 4,
+       "unit": "cm−1"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "A total of 40 ml of crude extract was freeze-dried and prepared using KBr disk (3% of KBr).",
+       "value_text": "40 ml of crude extract freeze-dried, KBr disk (3% of KBr)"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "MiniFlesx II diffractometer (Rigaku, Japan) equipped with X'celerator",
+     "result": "amorphous crude extract, broad hump around 2θ = 21.68°, no sharp peak, no contaminant Ag",
+     "quote": "The amorphous phase of the polychaete crude extract was demonstrated by the presence of a broad hump with a high–intensity peak around 2θ = 21.68° and no sharp diffraction peaks, as predicted for crude extract (Figure 6).",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "equipped with X'celerator using Cu Kα radiation in a range between 0 and 110° (2θ)",
+       "value_text": "Cu Kα"
+      },
+      {
+       "name": "scan_range",
+       "quote": "equipped with X'celerator using Cu Kα radiation in a range between 0 and 110° (2θ)",
+       "value_text": "0 to 110° (2θ)"
+      },
+      {
+       "name": "xray_tube_voltage_current",
+       "quote": "operated at the voltage of 30 kV and a current of 30 mA",
+       "value_text": "30 kV and 30 mA"
+      }
+     ],
+     "not_stated": [
+      "scan_step",
+      "crystallite_size_method"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "visual_appearance",
+     "value_text": "pinkish",
+     "quote": "Change in the colour of solution from pinkish (Figure 2(a)) to yellowish (Figure 2(b))"
+    },
+    {
+     "property": "phase",
+     "value_text": "amorphous (broad hump, no sharp diffraction peaks)",
+     "measured_by": "xrd_1",
+     "quote": "The amorphous phase of the polychaete crude extract was demonstrated by the presence of a broad hump with a high–intensity peak around 2θ = 21.68° and no sharp diffraction peaks"
+    },
+    {
+     "property": "xrd_peak_position",
+     "value_num": 21.68,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "a broad hump with a high–intensity peak around 2θ = 21.68°"
+    },
+    {
+     "property": "purity",
+     "value_text": "no contaminant Ag in the crude extract",
+     "measured_by": "xrd_1",
+     "quote": "indicating no presence of contaminant Ag in the polychaete crude extract"
+    },
+    {
+     "property": "ftir_band_OH_stretch",
+     "value_num": 3381.17,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "quote": "Absorption bands at 3381.17 cm−1 belong to the stretching of (O–H) group in carboxylic acids and phenols"
+    },
+    {
+     "property": "ftir_band_nitrile",
+     "value_num": 2091.41,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "quote": "The broad peak at 2091.41 cm−1 was attributed to nitrile (HC≡N) stretching."
+    },
+    {
+     "property": "ftir_band_CC_alkene",
+     "value_num": 1642.89,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "quote": "The peak at 1642.89 cm−1 was due to ν(C=C) stretching of alkenes group which exist in proteins."
+    },
+    {
+     "property": "ftir_band_CO_CC",
+     "value_num": 1402.48,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "quote": "The peak at 1402.48 cm−1 was due to ν(C–O) group in carboxylic acids or ν(C–C) group in aromatics"
+    },
+    {
+     "property": "ftir_band_NH_1226",
+     "value_num": 1226.82,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "quote": "the bands at 1226.82 cm−1, 1079.73 cm−1 and 1045.60 cm−1 can be attributed to (N–H) stretching in primary and secondary amines of amino acids, peptides and proteins"
+    },
+    {
+     "property": "ftir_band_NH_1079",
+     "value_num": 1079.73,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "quote": "the bands at 1226.82 cm−1, 1079.73 cm−1 and 1045.60 cm−1 can be attributed to (N–H) stretching in primary and secondary amines of amino acids, peptides and proteins"
+    },
+    {
+     "property": "ftir_band_NH_1045",
+     "value_num": 1045.6,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "quote": "the bands at 1226.82 cm−1, 1079.73 cm−1 and 1045.60 cm−1 can be attributed to (N–H) stretching in primary and secondary amines of amino acids, peptides and proteins"
+    },
+    {
+     "property": "ftir_band_CBr",
+     "value_num": 619.93,
+     "unit": "cm−1",
+     "measured_by": "ftir_1",
+     "quote": "the band at 619.93 cm−1 belongs to ν(C–Br) group of alkyl halides"
+    }
+   ],
+   "missing_fields": [
+    "mass_of_polychaetes",
+    "volume_or_mass_ratio_extract_to_biomass",
+    "collection_season_and_depth",
+    "extract_concentration"
+   ]
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "AgNPs from another polychaete species (ref. bib47)",
+   "property": "absorption_peak",
+   "value_text": "418 nm–420 nm",
+   "conditions": "UV-visible, SPR band",
+   "ref_id": "bib47",
+   "route": "AgNPs_Mm",
+   "quote": "The results were compared to the other studies using different polychaete species, in which and recorded an absorption spectrum of AgNPs of 418 nm–420 nm and 411 nm, respectively."
+  },
+  {
+   "material": "AgNPs from another polychaete species (ref. bib19)",
+   "property": "absorption_peak",
+   "value_num": 411,
+   "unit": "nm",
+   "conditions": "UV-visible, SPR band",
+   "ref_id": "bib19",
+   "route": "AgNPs_Mm",
+   "quote": "The results were compared to the other studies using different polychaete species, in which and recorded an absorption spectrum of AgNPs of 418 nm–420 nm and 411 nm, respectively."
+  },
+  {
+   "material": "AgNPs from another polychaete species (ref. bib47)",
+   "property": "reaction_time",
+   "value_text": "two hours",
+   "conditions": "incubation of crude extract with AgNO3",
+   "ref_id": "bib47",
+   "route": "AgNPs_Mm",
+   "quote": "synthesis using the crude extract of different polychaete species by and which required two hours and two weeks of incubation, respectively, to allow the reduction to occur"
+  },
+  {
+   "material": "AgNPs from another polychaete species (ref. bib19)",
+   "property": "reaction_time",
+   "value_text": "two weeks",
+   "conditions": "incubation of crude extract with AgNO3",
+   "ref_id": "bib19",
+   "route": "AgNPs_Mm",
+   "quote": "synthesis using the crude extract of different polychaete species by and which required two hours and two weeks of incubation, respectively, to allow the reduction to occur"
+  },
+  {
+   "material": "AgNPs from another polychaete species (ref. bib47)",
+   "property": "particle_size",
+   "value_text": "40 nm to 90 nm, relatively spherical and triangular",
+   "conditions": "TEM",
+   "ref_id": "bib47",
+   "route": "AgNPs_Mm",
+   "quote": "which showed that the biosynthesised AgNPs were relatively spherical and triangular in shape, and ranged in size from 40 nm to 90 nm"
+  },
+  {
+   "material": "AgNPs (literature, SPR formation range)",
+   "property": "absorption_peak",
+   "value_text": "380 nm–450 nm",
+   "conditions": "SPR peak indicating AgNPs formation",
+   "ref_id": "bib31",
+   "route": "AgNPs_Mm",
+   "quote": "while the presence of SPR peak at 380 nm–450 nm indicated the formation of AgNPs"
+  },
+  {
+   "material": "spherical AgNPs (literature)",
+   "property": "absorption_peak",
+   "value_text": "390 nm–420 nm",
+   "conditions": "UV-visible absorption band attributed to spherical AgNPs",
+   "ref_id": "bib11",
+   "route": "AgNPs_Mm",
+   "quote": "the absorption band located in a range of 390 nm–420 nm in the UV–Vis spectra might be attributed to the spherical-shaped AgNPs"
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules d'argent par synthèse verte : un extrait aqueux brut du ver marin Marphysa moribidii (polychète) sert à la fois de réducteur et de stabilisant d'une solution de nitrate d'argent, à température ambiante (30 °C), en 24 h. Les particules sont décrites par UV-visible (pic plasmon à 398–400 nm), DLS (91,21 nm), MEB et MET (sphériques, 20–100 nm, moyenne 40,19 nm), puis testées contre huit bactéries pathogènes par diffusion en disque (zones de 6 à 9,2 mm) et dilution en puits.",
+   "quote": "This study aimed at synthesising AgNPs using the aqueous extract of Marphysa moribidii (Annelida, Polychaeta) and to evaluate their antibacterial activities."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si l'extrait brut d'un polychète de Malaisie suffit à réduire Ag+ en nanoparticules sans réducteur ni stabilisant chimique, plus vite que les autres polychètes déjà étudiés (2 heures à 2 semaines), et si ces nanoparticules inhibent des bactéries Gram positives et négatives."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Aucun paramètre de synthèse n'est balayé : une seule préparation est décrite. Le seul point de comparaison est un témoin négatif (AgNO3 sans extrait) pour montrer que l'extrait est nécessaire à la formation des nanoparticules. L'XRD est faite sur l'extrait seul, pour vérifier que l'argent ne vient pas du ver lui-même ; les tests antibactériens comparent les nanoparticules à la gentamicine (témoin positif), à l'extrait et à l'eau (témoins négatifs)."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Seule différence entre la voie de base et le témoin négatif : l'extrait (10 mL) est remplacé par 10 mL d'eau bidistillée et la solution d'AgNO3 est donnée à 1 mM. D'après la légende de la figure 3, le témoin ne montre pas de pic plasmon alors que l'échantillon avec extrait absorbe fortement vers 400 nm (absorbance lue ≈ 1,3)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "AgNPs_Mm",
+   "text": "L'activité par diffusion en disque est modeste : de 7,77 mm (S. sonnei) à 9,18 mm (S. epidermidis), K. pneumoniae n'atteignant que 6 mm, contre 22,78 à 31,66 mm pour la gentamicine. Les auteurs attribuent l'écart à la faible diffusion des nanoparticules dans la gélose et passent à la dilution en puits, où toutes les bactéries sont inhibées à 100 % de la solution mère.",
+   "quote": "Thus, this result might be affected by the diffusion rate of particles as metal nanoparticles have low diffusion rate as compared to standard antibiotics ()."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "AgNPs_Mm",
+   "text": "Les auteurs concluent que l'extrait de M. moribidii est un réducteur et stabilisant efficace, plus rapide que les extraits d'autres polychètes, et que les AgNPs obtenues, sphériques de 40,19 nm en moyenne, constituent un agent antibactérien prometteur.",
+   "quote": "Biosynthesised AgNPs were found to be spherical with an average size of 40.19 nm."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs_Mm",
+   "text": "Pour refaire la synthèse il manque : la concentration de la solution d'AgNO3 (1 mM n'est écrite que pour le témoin négatif et le blanc UV-visible), la pureté de AgNO3, le mode d'addition et l'agitation, la température de la pré-incubation de 15 min (la figure 1 dessine un chauffage « Heated for 15 min » que le texte ne mentionne pas) et le rendement. L'étape de purification dont parle l'article n'est pas décrite.",
+   "quote": "However, the exact concentration of the stock solution cannot be determined due to the oxidation of biosynthesised AgNPs during the purification step, which is one of the limitations of this study."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Extract_Mm",
+   "text": "La masse ou le nombre de vers broyés pour 100 mL d'eau n'est pas donné : la concentration de l'extrait, donc la quantité de réducteur par synthèse, n'est pas reproductible. Il en est de même de la durée du broyage, de la température de l'incubation « sur la paillasse » et de la saison ou du lieu de collecte au-delà de « west coast of peninsular Malaysia »."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Les nanoparticules d'argent elles-mêmes ne sont pas caractérisées par XRD : le diagramme présenté est celui de l'extrait brut seul, amorphe, de sorte que la nature métallique et cristalline (Ag0 cfc) des particules repose sur le pic plasmon et la microscopie. Les zones de 6 à 9 mm sont à lire avec la taille du disque, non donnée : la valeur de 6,00 mm de K. pneumoniae correspond probablement au diamètre du disque, c'est-à-dire à l'absence d'inhibition. Sur la figure 7, les puits des AgNPs commerciales de Sigma (colonne 9) semblent violets (croissance), ce que le texte ne commente pas."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "AgNPs_Mm",
+   "text": "Les auteurs considèrent que le mécanisme exact reste inconnu, mais que des composés organiques de l'extrait (acides carboxyliques, phénols, alcènes, amines, cycles aromatiques) réduisent Ag+ puis se fixent à la surface des particules ; le groupe phénol serait oxydé en quinone en cédant des électrons, tandis que le groupe carboxylate se lie à la surface et coiffe la particule.",
+   "quote": "The phenolic-OH oxidised to its quinone form and produced electrons for reduction of Ag+, whereas the carboxylic group was bound to the surface and capped around the synthesised AgNPs"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AgNPs_Mm",
+   "text": "Hypothèse : à 30 °C, Ag+ serait réduit en Ag0 par des biomolécules à groupes réducteurs (polyphénols, peptides avec thiols ou amines, sucres réducteurs), la coloration jaune-brun traduisant l'apparition du plasmon. Les protéines et acides gras présents en grande quantité dans un extrait de ver complet se fixeraient à la surface, ce qui expliquerait la stabilité sans stabilisant ajouté, et les ions chlorure ou autres sels de l'extrait pourraient précipiter une partie de l'argent sous forme d'AgCl. La taille de 91 nm en DLS contre 40 nm en MET s'explique probablement par la couche de biomolécules et par l'agrégation."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "AgNPs_Mm",
+   "text": "AgNO3 est oxydant, corrosif pour la peau et les yeux et tache durablement ; il est très toxique pour le milieu aquatique. Les nanoparticules d'argent sont des poudres ou suspensions nanométriques à ne pas inhaler ni rejeter à l'évier. Les huit souches pathogènes (S. aureus, E. coli, P. aeruginosa, S. typhimurium…) exigent un laboratoire de niveau de confinement adapté, et la gentamicine, un antibiotique, ne doit pas être éliminée avec les déchets courants. L'article ne mentionne qu'une stérilisation à l'autoclave (121 °C) de la verrerie et des milieux."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "Extract_Mm",
+   "ref_id": "bib63",
+   "role": "autre",
+   "quote": "The aqueous crude extract was stored in a refrigerator for further use"
+  },
+  {
+   "route": "AgNPs_Mm",
+   "ref_id": "bib21",
+   "role": "protocole_complet",
+   "quote": "Disk diffusion method was performed to screen the antibacterial activity of biosynthesised AgNPs according to the Kirby-Bauer disk diffusion method"
+  },
+  {
+   "route": "AgNPs_Mm",
+   "ref_id": "bib21",
+   "role": "protocole_adapte",
+   "quote": "Well dilution method was conducted according to the method recommended by CLSI protocol with some modifications"
+  },
+  {
+   "route": "AgNPs_Mm",
+   "ref_id": "bib5",
+   "role": "protocole_adapte",
+   "quote": "Well dilution method was conducted according to the method recommended by CLSI protocol with some modifications"
+  },
+  {
+   "route": "AgNPs_Mm",
+   "ref_id": "bib57",
+   "role": "autre",
+   "quote": "Dilution was performed to obtain a reading 0.125, which is equivalent to the 0.5 McFarland turbidity standard"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "AgNPs_Mm, réactif AgNO3",
+   "issue": "La concentration de la solution d'AgNO3 de la synthèse n'est pas donnée (« 90 mL of AgNO3 solution »). « 1 mM » n'apparaît que pour le témoin négatif et le blanc UV-visible ; elle est déclarée non citée pour la voie de base, malgré l'hypothèse probable que c'est la même."
+  },
+  {
+   "where": "AgNPs_Mm étape 3",
+   "issue": "La phrase « After 24 h of incubation, the samples were kept at room temperature (30 °C ± 2) » est ambiguë (l'incubation de 24 h se fait-elle à 30 °C, ou la température ne concerne-t-elle que le stockage après 24 h ?). Lecture retenue : 30 °C pour l'incubation de 24 h. « In the dark » vient de la légende de la figure 2."
+  },
+  {
+   "where": "AgNPs_Mm étape 2",
+   "issue": "La figure 1 montre un chauffage (symbole Δ, « Heated for 15 min ») entre le mélange et l'incubation, alors que le texte parle d'une « pre-incubation period » de 15 min sans chauffage. Étape extraite d'après le texte (durée 15 min, température non citée) ; la figure n'est pas utilisée comme citation."
+  },
+  {
+   "where": "Extract_Mm, FTIR",
+   "issue": "La section FTIR cite deux appareils, « Perkin Elmer of Spectrum 100 » (composition) et « Nicolet 520 FTIR spectrophotometer » (mesure de l'absorbance). Les deux noms sont gardés dans le champ instrument sans trancher."
+  },
+  {
+   "where": "Extract_Mm, XRD",
+   "issue": "L'XRD est faite sur l'extrait brut, non sur les AgNPs (texte et légende de la figure 6) : les résultats XRD sont donc rattachés à la voie Extract_Mm et non à AgNPs_Mm. Le texte dit « 0 to 110 » sans unité dans les résultats et « 0 and 110° (2θ) » dans les méthodes."
+  },
+  {
+   "where": "Control_AgNO3_ddH2O",
+   "issue": "« Two types of negative controls » sont annoncés mais un seul (ddH2O + AgNO3 1 mM) est décrit. La courbe « Negative control-AgNO3 » de la figure 3 est attribuée à ce témoin ; elle pourrait aussi être la solution d'AgNO3 seule (le blanc UV). L'échantillon n'a pas de résultat chiffré dans le texte : la lecture « pas de pic, absorbance < 0,1 » vient de la figure 3."
+  },
+  {
+   "where": "Table 1 et AgNPs_Mm",
+   "issue": "Les colonnes gentamicine, extrait brut et ddH2O de la table 1 sont rangées comme résultats de la voie AgNPs_Mm avec des noms de propriété qui indiquent le témoin (…_gentamycin_control_…, …_crude_extract_control_…), car l'essai est une mesure de la voie de base et les mesures ne peuvent pas être liées à une voie qui n'en descend pas. Les valeurs ne décrivent pas les AgNPs."
+  },
+  {
+   "where": "Table 1, K. pnemoniae",
+   "issue": "La valeur 6.00 ± 0.00 mm est donnée comme la plus faible (« 6 mm ») ; le diamètre du disque n'est pas indiqué. Valeur recopiée telle quelle, sans interprétation dans la donnée."
+  },
+  {
+   "where": "bio_disk, incubation",
+   "issue": "L'incubation des boîtes après dépôt des disques n'est pas donnée : « incubated at 37 °C overnight » concerne le repiquage des souches sur gélose nutritive avant l'essai ; l'incubation des boîtes de diffusion est donc déclarée non citée."
+  },
+  {
+   "where": "Figures lues",
+   "issue": "Fig. 3 (absorbance maximale ≈ 1,3 pour l'échantillon à 398–400 nm ; témoin négatif < 0,1), Fig. 4d (fractions des classes de taille de 10 nm, ±1 point environ) et Fig. 7 (couleur des puits : violet = croissance d'après le texte des méthodes). Lectures approximatives à 2 chiffres significatifs au plus. Fig. 2, 5, 6 non utilisées (valeurs dans le texte). Fig. 4a (courbe DLS, maximum vers 100 nm) non reprise : le texte donne 91,21 nm."
+  },
+  {
+   "where": "method_sources bib63",
+   "issue": "La référence bib63 (Rosman et al., optimisation de la synthèse des AgNPs à partir du même extrait, « in press ») est citée à la fin du paragraphe de préparation de l'extrait ; son rôle exact (protocole de l'extraction ou de la synthèse) n'est pas précisé, rôle « autre » par prudence. bib57 (McFarland) est citée pour l'étalon de turbidité."
+  }
+ ]
+}
