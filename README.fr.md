@@ -29,7 +29,7 @@
 
 Deux audits de contenu (28 octobre 2026) examinent ce que contiennent réellement les 500 publications et si l'extraction est fiable. Tout est reproductible : `python3 -I analyses/audit_contenu.py`, `audit_parametres.py`, `audit_verification.py`, `compare_blind.py`, puis `build_site.py` pour cette page.
 
-| **747** | **29** | **73** | **83 %** | **512** | **20** |
+| **747** | **29** | **96** | **83 %** | **512** | **20** |
 |---|---|---|---|---|---|
 | voies de base d'un matériau | classes de méthode | propriétés canoniques (sur 16 577 noms) | des voies de base avec une limite | mécanismes comparés | publications ré-extraites à l'aveugle |
 
@@ -41,7 +41,7 @@ Deux audits de contenu (28 octobre 2026) examinent ce que contiennent réellemen
 <p align="center"><img src="docs/img/methodes_fr.svg" alt="Types de synthèse (classement par mots-clés de la méthode)" width="760"></p>
 
 - **hydrothermal domine** (18,6 % des voies de base), puis précipitation, sol-gel et solvothermal. Deux classements indépendants (mots-clés de la méthode, enchaînement des étapes) concordent à **68,8 %**.
-- Les 16 577 noms de propriétés libres sont ramenés à **73 propriétés canoniques** par une table d'expressions régulières ; **25,8 % des valeurs** restent non classées (noms trop spécifiques). Avant toute exploitation statistique, une liste fermée de noms est à fixer.
+- Les 16 577 noms de propriétés libres sont ramenés à **96 propriétés canoniques** par une table d'expressions régulières ; **9,1 % des valeurs** restent non classées (noms trop spécifiques). Avant toute exploitation statistique, une liste fermée de noms est à fixer.
 
 
 ### 2. Paramètres communs et paramètres essentiels
@@ -69,7 +69,7 @@ Deux audits de contenu (28 octobre 2026) examinent ce que contiennent réellemen
 
 - **Branches** : 5,3 % sans résultat ni caractérisation, mais 24 % chez les MOF (séries de conditions dont l'article ne rapporte qu'un résultat global).
 - **Stœchiométrie nominale** : sur 60 voies contrôlables, 24 concordent à moins de 10 % avec la formule du produit ; les écarts importants sont des excès voulus ou des précurseurs apportés par une voie intermédiaire, pas des erreurs.
-- **7 valeurs hors plage physique**, toutes recopiées de l'article (rendements quantiques de 112 à 241 % pour des points de carbone, mesurés par rapport à un étalon).
+- **8 valeurs hors plage physique**, toutes recopiées de l'article (rendements quantiques de 112 à 241 % pour des points de carbone, mesurés par rapport à un étalon).
 - **Normalisation** : 682 noms de paramètres pour 27 types ; 71 % des paramètres numériques ont une valeur SI (température, durée, rampe à 99 % ; jamais les volumes, concentrations, vitesses : limite de `load.py`).
 - **Variation → effet** : 61 % des 3 064 variations numériques ont une propriété mesurée des deux côtés ; 693 séries de 3 points ou plus, dont 56 % monotones. Un changement de température déplace les propriétés de taille et de texture de 40 à 50 % en médiane, un changement de réactif les propriétés optiques de moins de 10 %.
 

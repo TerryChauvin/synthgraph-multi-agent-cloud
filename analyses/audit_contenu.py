@@ -14,81 +14,7 @@ import argparse, collections, datetime, json, os, re, sqlite3, statistics
 
 # ---------------------------------------------------------------- taxonomies
 # Propriétés : (canonique, groupe, regex) ; première règle qui matche, sur le nom en minuscules.
-PROP_RULES = [
-    ("external_surface_area", "texturale", r"external_surface|\bs_?ext\b"),
-    ("micropore_surface_area", "texturale", r"micropore_(area|surface)|\bs_?micro\b"),
-    ("micropore_volume", "texturale", r"micropore_vol|\bv_?micro"),
-    ("mesopore_volume", "texturale", r"mesopore_vol|\bv_?meso"),
-    ("pore_volume_total", "texturale", r"pore_vol|total_pore|\bv_?total|\bvp\b"),
-    ("pore_diameter", "texturale", r"pore_(diameter|size|width)|average_pore|mean_pore|bjh"),
-    ("BET_surface_area", "texturale", r"^(?!.*(per_|_per_|reduction|electrode|irradiated|cm2)).*(\bbet\b|bet_|\bsbet\b|specific_surface|surface_area|s_bet|\bssa\b|langmuir_surface)"),
-    ("phase", "structurale", r"^phase$|crystal_phase|xrd_phase|phase_xrd|product_phase|^phase_|_phase$|secondary_phase|impurity_phase|phase_(identified|purity|composition|assignment)|crystal_structure|space_group|crystal_system|polymorph|crystal_formation"),
-    ("lattice_parameter", "structurale", r"^lattice_parameter$|^lattice_constant$|lattice_parameters$"),
-    ("crystallinity", "structurale", r"crystallin"),
-    ("crystallite_size", "structurale", r"crystallite|scherrer|coherence_length|domain_size|crystal_size|grain_size"),
-    ("lattice_parameter_a", "structurale", r"lattice_(parameter|constant)_?a\b|\ba_lattice|cell_(parameter_)?a\b"),
-    ("lattice_parameter_b", "structurale", r"lattice_(parameter|constant)_?b\b|cell_(parameter_)?b\b"),
-    ("lattice_parameter_c", "structurale", r"lattice_(parameter|constant)_?c\b|cell_(parameter_)?c\b"),
-    ("unit_cell_volume", "structurale", r"cell_volume|unit_cell_vol"),
-    ("d_spacing", "structurale", r"d[_-]?spacing|interplanar|interlayer|lattice_fringe|fringe"),
-    ("xrd_peak_position", "structurale", r"2theta|two_theta|xrd_peak|diffraction_peak|bragg"),
-    ("microstrain_dislocation", "structurale", r"microstrain|strain$|dislocation"),
-    ("raman_ID_IG", "structurale", r"id/ig|id_ig|i_?d/i_?g|d_g_ratio|raman_ratio|ig/id|id_over_ig"),
-    ("raman_band", "structurale", r"raman"),
-    ("ftir_band", "structurale", r"ftir|ft_ir|ir_band|infrared|wavenumber"),
-    ("xps_binding_energy", "composition", r"xps|binding_energy"),
-    ("thickness_layers", "morphologie", r"thickness|layer_number|number_of_layers|monolayer"),
-    ("FWHM", "optique", r"fwhm|linewidth|line_width|spectral_width|half_maximum"),
-    ("peak_shift", "optique", r"shift|spread"),
-    ("IPCE_EQE", "electrochimique", r"ipce|\beqe\b|external_quantum|incident_photon"),
-    ("rietveld_fit", "structurale", r"rwp|rexp|rbragg|chi2|\bgof\b|goodness|rietveld|r_factor"),
-    ("porosity", "texturale", r"porosity|isotherm"),
-    ("kinetics_fit", "fonctionnelle", r"k_obs|pseudo_|kinetic|\br2\b|r_squared|_k1\b|_k2\b|half_life|diffusion_coefficient"),
-    ("acidity", "composition", r"acid_site|acidity|\bnh3_tpd|bronsted|lewis"),
-    ("band_gap", "optique", r"^(?!.*(diameter|size|from_)).*(band_?gap|optical_gap|\beg\b|tauc)"),
-    ("quantum_yield", "optique", r"quantum_yield|plqy|\bqy\b|qy_|photoluminescence_quantum"),
-    ("PL_emission_peak", "optique", r"pl_peak|emission_(max|peak|wavelength|maximum|band)|lambda_em|pl_max|pl_wavelength|photoluminescence_peak|em_max|emission_centre|emission_center|^pl_"),
-    ("absorption_peak", "optique", r"absorption_(edge|onset|peak|max|band|maximum)|absorbance_peak|\bspr\b|spr_|plasmon|lspr|uv_vis|uv-vis|lambda_max|exciton|absorption_|absorbance"),
-    ("PL_lifetime", "optique", r"lifetime|decay_time|\btau"),
-    ("transmittance_reflectance", "optique", r"transmitt|reflect"),
-    ("refractive_index", "optique", r"refractive"),
-    ("conductivity", "electrique", r"conductiv"),
-    ("resistivity", "electrique", r"resistiv|sheet_resist|resistance"),
-    ("dielectric", "electrique", r"dielectric|permittiv"),
-    ("mobility", "electrique", r"mobility"),
-    ("retention_stability", "fonctionnelle", r"retain|retention|stability_test|after_\d+_(h|days|cycles)"),
-    ("PCE", "electrochimique", r"\bpce\b|pce_|power_conversion|conversion_efficiency|^efficiency$"),
-    ("voltage_window_potential", "electrochimique", r"voltage|potential_window|redox_potential|\bocp\b"),
-    ("Voc", "electrochimique", r"^(?!.*module).*(^voc|open_circuit)"),
-    ("Jsc", "electrochimique", r"^jsc|short_circuit"),
-    ("fill_factor", "electrochimique", r"^ff$|fill_factor"),
-    ("coulombic_efficiency", "electrochimique", r"coulombic"),
-    ("specific_capacitance", "electrochimique", r"capacitance"),
-    ("specific_capacity", "electrochimique", r"capacity(?!.*adsorp)|discharge_cap|charge_cap|mah"),
-    ("overpotential_tafel", "electrochimique", r"overpotential|tafel|onset_potential"),
-    ("adsorption_capacity", "fonctionnelle", r"adsorption|uptake|removal|q_?max|\bqe\b|loading_capacity|release"),
-    ("catalytic_performance", "fonctionnelle", r"conversion|selectivity|degradation|rate_constant|turnover|activity|photocatal|evolution|production|completion_time|reduction_time|_in_gas|gas_products"),
-    ("magnetic", "fonctionnelle", r"magnetiz|coerciv|saturation|remanen|blocking_temperature|susceptib"),
-    ("antibacterial", "fonctionnelle", r"inhibition|\bmic\b|antibact|viability|cytotox|ic50"),
-    ("decomposition_temperature", "thermique", r"decomposition|\btd\b|tga|thermal_stability|onset_temperature"),
-    ("mass_loss_residue", "thermique", r"mass_loss|weight_loss|residue|char_yield"),
-    ("melting_glass_transition", "thermique", r"melting|\btm\b|glass_transition|\btg\b"),
-    ("hardness", "mecanique", r"hardness"),
-    ("elastic_modulus", "mecanique", r"modulus|young"),
-    ("strength", "mecanique", r"strength|stress_at|toughness|elongation"),
-    ("density", "physique", r"^density|bulk_density|tap_density|true_density"),
-    ("contact_angle", "physique", r"contact_angle|wettab"),
-    ("morphology", "morphologie", r"morpholog|^shape$|shape$|structure_sem|structure_tem"),
-    ("hydrodynamic_size", "morphologie", r"hydrodynamic|\bdls\b|dls_|z_average|z-average"),
-    ("zeta_potential", "morphologie", r"zeta"),
-    ("size_dispersity", "morphologie", r"polydispersity|\bpdi\b|size_distribution|dispersity|standard_deviation|std_dev"),
-    ("particle_size", "morphologie", r"particle_size|particle_diameter|particle_length|average_(size|diameter)|mean_(size|diameter)|size_tem|tem_size|nanoparticle_size|diameter_tem|^size$|^diameter$|nc_size|nanocrystal_(size|edge)|edge_length|dot_size|core_size|qd_size|sem_size|sphere_(size|diameter)|particle_width|_size$|_diameter$|^length$|^width$|length_range|width_range|aspect_ratio|length_to_diameter|nanowire|nanorod|crystal_(length|diameter|width)|_length$|_width$|size_range|size_sem"),
-    ("elemental_composition", "composition", r"_content$|_ratio$|composition|loading$|_fraction$|atomic_percent|weight_percent|\bwt_|\bat_|_at%|_wt%|doping_level|si/al|si_al|ca/p|ca_p|stoichiometry|edx|eds|icp|elemental"),
-    ("molecular_weight", "composition", r"molecular_weight|\bmn\b|\bmw\b|mn_|mw_|degree_of_polymer"),
-    ("yield", "rendement", r"^yield|_yield$|yield_|^mass_obtained|product_mass"),
-    ("visual_appearance", "qualitatif", r"colou?r|appearance|visual|solution_color"),
-]
-PROP_RE = [(c, g, re.compile(r.replace("_", " "))) for c, g, r in PROP_RULES]  # les noms sont normalisés : '_' et '-' deviennent des espaces, donc \b fonctionne
+from canon import PROP_RULES, PROP_RE, canon_prop  # noqa: E402  (vocabulaire canonique commun)
 
 # Méthodes (texte libre de la voie) : (classe, regex) par priorité décroissante.
 METHOD_RULES = [
@@ -199,12 +125,6 @@ EXPECTED = {
 ELEM_RE = re.compile(r"(?<![a-z])(He|Li|Be|Ne|Na|Mg|Al|Si|Cl|Ar|Ca|Sc|Ti|Cr|Mn|Fe|Co|Ni|Cu|Zn|Ga|Ge|As|Se|Br|Kr|Rb|Sr|Zr|Nb|Mo|Tc|Ru|Rh|Pd|Ag|Cd|In|Sn|Sb|Te|Xe|Cs|Ba|La|Ce|Pr|Nd|Pm|Sm|Eu|Gd|Tb|Dy|Ho|Er|Tm|Yb|Lu|Hf|Ta|Re|Os|Ir|Pt|Au|Hg|Tl|Pb|Bi|Th|U|B|C|N|O|F|P|S|K|V|Y|I|W|H)(?![a-z])")
 
 
-def canon_prop(p):
-    pl = re.sub(r"[_\-]+", " ", (p or "").lower()).strip()
-    for c, g, r in PROP_RE:
-        if r.search(pl):
-            return c, g
-    return "autre", "autre"
 
 
 def canon_from(rules, text, default):

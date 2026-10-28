@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import db  # noqa: E402
+import canon  # noqa: E402
 
 ANNOT_TYPES = {"resume", "objectif_etude", "pourquoi_ces_donnees", "comparaison_branches",
                "tendance_observee", "conclusion_auteurs", "limite_reproductibilite",
@@ -539,6 +540,7 @@ def insert(con, pmcid, data, order, c):
         seq = con.execute("SELECT COALESCE(MAX(seq), 0) + 1 FROM papers").fetchone()[0]
     con.execute("UPDATE papers SET status='extracted', seq=?, palier=?, extracted_at=?, format_version=? WHERE id=?",
                 (seq, (seq - 1) // db.PALIER_SIZE + 1, db.now(), data.get("format") or 1, pid))
+    canon.apply_paper(con, pid)   # noms canoniques (canon.py), colonnes séparées des noms bruts
     con.commit()
     return seq
 

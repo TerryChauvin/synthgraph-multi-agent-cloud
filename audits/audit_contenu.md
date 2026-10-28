@@ -59,3 +59,6 @@ Audit de ce que contient `synthese.db` une fois les 500 publications closes : ty
 - `analyses/audit_contenu.py` : script d'audit (taxonomies, fusion des synonymes, conditions par voie, trous, qualité, limites, agrégation des sorties d'agents).
 - `docs/audit_contenu/data/` : 39 jeux de données complets ; `docs/audit_contenu/dash/` : 18 jeux pour la page ; `docs/audit_contenu/index.html` : page du tableau de bord ; `docs/audit_contenu/sources/` : prompts et sorties des agents (mécanismes A et B, références web, journaux).
 - Coût des agents : mécanismes 346 k + 357 k jetons, références 278 k ; orchestrateur non compté.
+
+---
+*Mise à jour du 28/10/2026 (point 2 du plan d'amélioration)* : le vocabulaire canonique est désormais dans la base (`canon.py`, colonnes `name_canon` et `property_canon`, table `vocabulaire`, export `docs/vocabulaire/`). Avec les règles ajoutées, la part de propriétés non classées passe de 25,8 % à 9,1 % (95 propriétés canoniques) ; 0,9 % pour les paramètres (37 canoniques). Les chiffres de ce rapport datent d'avant cette mise à jour ; les données de `docs/audit_contenu/data/` sont régénérées.

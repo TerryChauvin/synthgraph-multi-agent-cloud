@@ -53,6 +53,9 @@ def connect():
             con.execute(f"ALTER TABLE {table} ADD COLUMN {column} {decl}")
     if "param_score" not in [r[1] for r in con.execute("PRAGMA table_info(papers)")]:
         con.execute("ALTER TABLE papers ADD COLUMN param_score REAL")
+    # vocabulaire canonique (canon.py) : name_canon, property_canon, property_group, table vocabulaire
+    import canon
+    canon.ensure_columns(con)
     return con
 
 

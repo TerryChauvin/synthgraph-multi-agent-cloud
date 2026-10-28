@@ -152,7 +152,7 @@ Human-readable sheets for each paper are in `fiches/`, and branch graphs in `gra
 
 Two content audits (28 October 2026) examine what the 500 papers actually contain and whether the extraction can be trusted. Everything is reproducible: `python3 -I analyses/audit_contenu.py`, `audit_parametres.py`, `audit_verification.py`, `compare_blind.py`, then `build_site.py` for this page.
 
-| **747** | **29** | **73** | **83%** | **512** | **20** |
+| **747** | **29** | **96** | **83%** | **512** | **20** |
 |---|---|---|---|---|---|
 | material base routes | method classes | canonical properties (from 16,577 names) | of base routes with a limit | mechanisms compared | papers re-extracted blind |
 
@@ -164,7 +164,7 @@ Two content audits (28 October 2026) examine what the 500 papers actually contai
 <p align="center"><img src="docs/img/methodes_en.svg" alt="Synthesis types (keyword classification of the method)" width="760"></p>
 
 - **Hydrothermal dominates** (18.6% of base routes), then precipitation, sol-gel and solvothermal. Two independent classifications (method keywords, step sequence) agree on **68.8%**.
-- The 16,577 free property names are mapped to **73 canonical properties** by a regex table; **25.8% of values** stay unclassified (names too specific). A closed vocabulary is needed before any statistical use.
+- The 16,577 free property names are mapped to **96 canonical properties** by a regex table; **9.1% of values** stay unclassified (names too specific). A closed vocabulary is needed before any statistical use.
 
 
 ### 2. Common and essential parameters
@@ -192,7 +192,7 @@ Two content audits (28 October 2026) examine what the 500 papers actually contai
 
 - **Branches**: 5.3% with neither outcome nor characterization, but 24% among MOFs (condition series for which the paper reports a single global result).
 - **Nominal stoichiometry**: of 60 checkable routes, 24 match the product formula within 10%; large gaps are intended excesses or precursors supplied by an intermediate route, not errors.
-- **7 out-of-range values**, all copied from the papers (quantum yields of 112–241% for carbon dots, measured against a standard).
+- **8 out-of-range values**, all copied from the papers (quantum yields of 112–241% for carbon dots, measured against a standard).
 - **Normalization**: 682 parameter names for 27 types; 71% of numeric parameters have an SI value (temperature, duration, ramp at 99%; never volumes, concentrations, speeds: a `load.py` limit).
 - **Variation → effect**: 61% of 3,064 numeric variations have a property measured on both sides; 693 series of 3+ points, 56% monotonic. A temperature change shifts size and texture properties by 40–50% (median), a reagent change shifts optical properties by under 10%.
 
