@@ -178,6 +178,23 @@ CREATE TABLE IF NOT EXISTS method_sources (
     section       TEXT, char_start INTEGER, char_end INTEGER
 );
 
+-- Valeurs de la litterature citees par l'article pour situer ses resultats (tableaux de comparaison,
+-- « reported values ») : jamais des resultats de l'article. Ajoute le 28/10/2026.
+CREATE TABLE IF NOT EXISTS comparisons (
+    id          INTEGER PRIMARY KEY,
+    paper_id    INTEGER NOT NULL REFERENCES papers(id) ON DELETE CASCADE,
+    route_id    INTEGER REFERENCES synthesis_routes(id) ON DELETE CASCADE,  -- voie de l'article comparee
+    material    TEXT NOT NULL,        -- materiau de la litterature
+    property    TEXT NOT NULL,
+    value_num   REAL,
+    value_text  TEXT,
+    unit        TEXT,
+    conditions  TEXT,                 -- conditions de la mesure citee, telles qu'ecrites
+    ref_id      TEXT,                 -- identifiant dans corpus/refs/<PMCID>.json si l'article le donne
+    quote       TEXT NOT NULL,
+    section     TEXT, char_start INTEGER, char_end INTEGER
+);
+
 -- Ce que chaque voie / branche a donne : permet de comparer les variations.
 CREATE TABLE IF NOT EXISTS outcomes (
     id          INTEGER PRIMARY KEY,

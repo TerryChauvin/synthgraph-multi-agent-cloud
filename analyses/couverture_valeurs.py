@@ -127,7 +127,7 @@ def main():
         print(json.dumps(c, ensure_ascii=False))
         for k, L in miss.items():
             print(f"\n## {k} : {len(L)} non couverts")
-            for n, p in L[:60]:
+            for n, p in (L if "--all" in sys.argv else L[:60]):
                 print(f"- {n} : « {re.sub(chr(10), ' ', txt[max(0, p - 70):p + 40])} »")
         return
     c = sqlite3.connect("synthese.db")

@@ -1,0 +1,36 @@
+# Registre des tests et analyses de contrôle
+
+Chaque ligne : ce qui a été testé, l'hypothèse, le résultat, et si le test est **positif** (l'hypothèse ou la méthode tient) ou **négatif** (elle ne tient pas, et ce qui a changé ensuite). Mis à jour à chaque nouveau test. Détails dans les rapports cités.
+
+## Construction de la base (paliers 1 à 10, 12–25/10/2026)
+
+| Test | Hypothèse | Résultat | Verdict |
+|---|---|---|---|
+| Vérification mécanique des citations (`load.py`, chaque chargement et chaque audit) | chaque valeur a une citation exacte qui la contient | ≈ 95 000 citations, 100 % exactes | positif |
+| Relectures intégrales (1 publication sur 5, 106 publications, ≈ 13 000 valeurs) | les valeurs sont justes, bien rattachées | 10 fausses sur 561 au calibrage (1,6 %), puis 6 sur ≈ 12 500 (≈ 0,05 %), toutes corrigées | positif après calibrage ; négatif au départ (règles ajoutées au RUNBOOK) |
+| Critique de fidélité indépendante (500 publications) | une seconde lecture trouve peu d'erreurs | médiane 8–10 constats par publication, dont ≈ 2 % « faux » ; surtout des manques et des précisions | positif sur la justesse ; négatif sur l'exhaustivité d'une extraction seule (d'où la passe de correction) |
+| Critique scientifique (500 publications) | les incohérences viennent des articles, pas de l'extraction | confirmé : problèmes d'auteurs restitués en annotations, aucune valeur changée sur cette base | positif |
+| Audits de palier (10) | aucune anomalie bloquante | 0 bloquant ; avertissements surtout faux positifs du contrôle chimique | positif ; heuristique chimique trop bruyante (négatif sur l'outil) |
+| Sources citées par la critique scientifique | les DOI existent | échantillons ouverts conformes ; ≈ 1 900 DOI restent à vérifier depuis le PC (Crossref bloqué) | non conclu |
+
+## Après la cible (28/10/2026)
+
+| Test | Hypothèse | Résultat | Verdict | Rapport |
+|---|---|---|---|---|
+| Ré-extraction à l'aveugle (20 publications) | une extraction indépendante retrouve les mêmes valeurs | paramètres concordants 91,5 %, résultats 84 %, 0 conflit sur valeur univoque ; la base contient 30 % de paramètres et 40 % de résultats de plus qu'une extraction seule | positif (justesse) | `audits/audit_verification.md` |
+| Stœchiométrie nominale | les quantités de précurseurs correspondent à la formule visée | 24 des 60 voies vérifiables à 10 % près ; écarts surtout dus aux articles (excès voulus, formules nominales) | non conclu (contrôle partiel) | `audits/audit_verification.md` |
+| Branches sans résultat propre | chaque branche a un résultat | 5,3 % sans résultat (24 % pour les MOF) | négatif localisé | `audits/audit_verification.md` |
+| Paramètres essentiels par méthode | les paramètres essentiels sont cités ou déclarés absents | angles morts : refroidissement, débit de gaz, répétitions, puissance, remplissage d'autoclave | négatif (grille incomplète) | `audits/audit_verification.md` |
+| Vocabulaire canonique (`canon.py`) | les noms bruts se ramènent à un vocabulaire commun | propriétés non classées 25,8 % → 9,1 % ; paramètres 0,9 % | positif | `docs/vocabulaire/README.md` |
+| Sonde des manques (`sonde_manques.py`) | un terme présent sans rien d'extrait signale un manque | ≈ la moitié des alertes de procédé sont des faux positifs (réglages d'une mesure, pas de la synthèse) | négatif comme détecteur de valeurs ; utile pour les conditions de mesure | `audits/sonde_manques.md` |
+| Pilote de complément (20 publications) | une passe guidée par la sonde ajoute des informations utiles, sans erreur | 27 paramètres, 223 `not_stated`, 187 conditions, 177 résultats ; 0 valeur retirée ; critique : 2 faux sur 217 (rattachements), 24 douteux | positif sur la justesse ; mitigé sur l'utilité (peu de paramètres, `not_stated` trop larges) | `audits/pilote_complement.md` |
+| Couverture des valeurs (`couverture_valeurs.py`, sans agent) | la base contient les nombres de l'article | 95,5 % (expérimental), 88 % (résultats en texte), 81 % (tableaux) | positif dans l'ensemble | `audits/couverture_valeurs.md` |
+| La sonde prédit-elle les valeurs manquantes ? | les publications à fortes alertes sont celles où manquent des valeurs | corrélation de rang 0,0 ; l'« option A » ne contenait que 44 % des valeurs absentes | **négatif** : option A abandonnée | `audits/couverture_valeurs.md` |
+| Le pilote a-t-il comblé les valeurs absentes ? | oui | 1 % des cellules de tableaux, 11 % des nombres du texte | **négatif** : la consigne visait autre chose | `audits/couverture_valeurs.md` |
+| Valeurs « hors périmètre » | littérature, statistiques, DFT, références sont inutiles | objection de l'utilisateur, retenue : elles servent à comprendre et comparer la mesure ; table `comparisons` et voies `calcul` ajoutées | négatif (périmètre élargi) | ce registre |
+
+## En cours
+
+| Test | Hypothèse | Plan |
+|---|---|---|
+| Test de complétude (20 publications, `PROMPT_TEST_COMPLETUDE.md`) | l'extraction contient l'essentiel ; la mesure de couverture repère les publications à compléter | tirage par strates (`audits/test_completude/tirage.json`) : 7 à forte lacune de valeurs (strate de 102), 6 à fortes alertes de conditions (170), 7 témoins (208) ; lecture intégrale, ajout de ce qui manque, relevé du tri par élément ; critique des ajouts sur 4 |

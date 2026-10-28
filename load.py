@@ -20,7 +20,7 @@ ANNOT_TYPES = {"resume", "objectif_etude", "pourquoi_ces_donnees", "comparaison_
                # format 2 : *_auteurs = ce que dit l'article (citation obligatoire) ;
                # *_analyse = explication de Claude, non sourcee (pas de citation)
                "mecanisme_auteurs", "mecanisme_analyse", "securite_auteurs", "securite_analyse"}
-ROUTE_KINDS = {"material", "intermediate", "device", "post_treatment"}
+ROUTE_KINDS = {"material", "intermediate", "device", "post_treatment", "calcul"}
 ANNOT_REQUIRED = ("resume", "objectif_etude", "pourquoi_ces_donnees")
 NAME_RE = re.compile(r"^[a-z][a-z0-9_]*$")
 WORKUP = re.compile(r"wash|dry|filter|centrifug|calcin|anneal|sinter|rinse|collect|evaporat|quench", re.I)
@@ -360,6 +360,17 @@ def validate(pmcid, data):
                 c.err(wm, f"route inconnue: {m['route']!r}")
             if known is not None and m.get("ref_id") not in known:
                 c.err(wm, "ref_id absent de corpus/refs/<PMCID>.json (recopier l'identifiant entre [[ ]])")
+        for i, m in enumerate(data.get("comparisons") or []):
+            wm = f"comparisons[{i}] {m.get('material')!r}"
+            c.quote(wm, m)
+            if not m.get("material") or not m.get("property"):
+                c.err(wm, "material et property obligatoires")
+            if m.get("value_num") is None and not m.get("value_text"):
+                c.err(wm, "value_num ou value_text obligatoire")
+            if m.get("route") and m["route"] not in by_label:
+                c.err(wm, f"route inconnue: {m['route']!r}")
+            if m.get("ref_id") and known is not None and m["ref_id"] not in known:
+                c.err(wm, "ref_id absent de corpus/refs/<PMCID>.json")
     for i, a in enumerate(annots):
         wa = f"annotation[{i}] {a.get('type')!r}"
         if a.get("type") not in ANNOT_TYPES:
@@ -438,7 +449,7 @@ def insert(con, pmcid, data, order, c):
     # un rechargement ne doit pas rouvrir les doutes deja tranches
     solved = {d["issue"]: d["resolution"] for d in con.execute(
         "SELECT issue, resolution FROM doubts WHERE paper_id=? AND status='resolved'", (pid,))}
-    for t in ("synthesis_routes", "annotations", "doubts", "method_sources"):
+    for t in ("synthesis_routes", "annotations", "doubts", "method_sources", "comparisons"):
         con.execute(f"DELETE FROM {t} WHERE paper_id = ?", (pid,))
     by_label = {r["label"]: r for r in order}
     ids = {}
@@ -527,6 +538,12 @@ def insert(con, pmcid, data, order, c):
             (pid, ids.get(m.get("route")), m["ref_id"], m.get("role"), ref.get("authors"),
              ref.get("title") or ref.get("raw"), ref.get("journal"), ref.get("year"), ref.get("doi"),
              ref.get("pmid"), ref.get("pmcid")) + q(m))
+    for m in data.get("comparisons") or []:
+        con.execute(
+            "INSERT INTO comparisons (paper_id, route_id, material, property, value_num, value_text, unit, conditions,"
+            " ref_id, quote, section, char_start, char_end) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            (pid, ids.get(m.get("route")), m["material"], m["property"], m.get("value_num"), m.get("value_text"),
+             m.get("unit"), m.get("conditions"), m.get("ref_id")) + q(m))
     for d in data.get("doubts") or []:
         con.execute("INSERT INTO doubts (paper_id, location, issue, resolution, status) VALUES (?,?,?,?,?)",
                     (pid, d.get("where"), d["issue"], solved.get(d["issue"]),
