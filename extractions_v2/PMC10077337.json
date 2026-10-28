@@ -1,0 +1,2182 @@
+{
+ "pmcid": "PMC10077337",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "N,S-CDs (stock and working solutions)",
+   "defined_in": "Experimental, Preparation of nitrogen and sulfur doped carbon dots (N,S-CDs)",
+   "route": "NS_CDs",
+   "results_in": [
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Table 1",
+    "Table 2",
+    "Table 3",
+    "Table 4",
+    "Table 5",
+    "Table S1",
+    "Table S2"
+   ]
+  },
+  {
+   "sample": "quinine sulfate (quantum-yield reference)",
+   "defined_in": "Estimation of quantum yield",
+   "route": null,
+   "why": "étalon commercial de fluorescence (Sigma-Aldrich), non synthétisé"
+  },
+  {
+   "sample": "betrixaban maleate (BTM, analyte)",
+   "defined_in": "Chemicals and materials; Standard solutions",
+   "route": null,
+   "why": "analyte commercial dosé par la sonde, non synthétisé"
+  },
+  {
+   "sample": "laboratory prepared BTM capsules",
+   "defined_in": "Determination of BTM in laboratory prepared capsules",
+   "route": null,
+   "why": "matrice d'essai (BTM et excipients) pour le dosage, pas un matériau de synthèse"
+  },
+  {
+   "sample": "spiked human plasma",
+   "defined_in": "Determination of BTM in human plasma",
+   "route": null,
+   "why": "matrice biologique d'essai pour le dosage, pas un matériau de synthèse"
+  }
+ ],
+ "routes": [
+  {
+   "label": "NS_CDs",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "nitrogen and sulfur doped carbon dots (N,S-CDs)",
+    "formula": null,
+    "family": "carbone",
+    "phase": "amorphous",
+    "morphology": "spherical nanoparticles"
+   },
+   "methods": [
+    "microwave_assisted"
+   ],
+   "method": "one-step carbonization of sucrose and thiourea in a domestic microwave oven",
+   "quote": "Synthesis of N,S-CDs was performed using domestic microwave-irradiation route with eco-friendly precursors such as sucrose (as carbon source) and thiourea (as nitrogen and sulphur source).",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "sucrose",
+     "formula": "C12H22O11",
+     "role": "carbon_source",
+     "amount": 15,
+     "unit": "g",
+     "supplier": "EL-Nasr pharmaceutical company (ADWIC), Egypt",
+     "supplier_quote": "Glacial acetic acid 99%, orthophosphoric acid, sucrose, dextrose, lactose, sodium chloride and potassium chloride were acquired from EL-Nasr pharmaceutical company (ADWIC), Egypt.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "They were prepared by dissolving 15 g of sucrose and 3 g of thiourea in 30 mL of distilled water"
+    },
+    {
+     "name": "thiourea",
+     "formula": "CH4N2S",
+     "role": "precursor",
+     "amount": 3,
+     "unit": "g",
+     "supplier": "Sigma-Aldrich, Germany",
+     "supplier_quote": "Ethanol (HPLC grade), quinine sulphate, ascorbic acid, thiourea, magnesium sulphate, ammonium chloride, sodium dihydrogen orthophosphate hydrate, zinc sulphate, oxalic acid, magnesium stearate and avisil were purchased from Sigma-Aldrich, Germany.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "They were prepared by dissolving 15 g of sucrose and 3 g of thiourea in 30 mL of distilled water"
+    },
+    {
+     "name": "distilled water (reaction medium)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 30,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "They were prepared by dissolving 15 g of sucrose and 3 g of thiourea in 30 mL of distilled water"
+    },
+    {
+     "name": "distilled water (redispersion of the residue)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 200,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "then mixed with 200 mL of distilled water"
+    },
+    {
+     "name": "distilled water (dilution to the working solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount_text": "to the 100 mL mark",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "The working solution was freshly prepared by transferring 3.2 mL of stock solution into 100 mL volumetric flask, then it was completed to the mark with distilled water."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve sucrose and thiourea in distilled water.",
+     "quote": "They were prepared by dissolving 15 g of sucrose and 3 g of thiourea in 30 mL of distilled water",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "microwave_heating",
+     "description": "Heat the solution in a domestic microwave oven until complete charring.",
+     "quote": "then heating in microwave for 7 minutes until complete charring",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "then heating in microwave for 7 minutes until complete charring",
+       "value_num": 7,
+       "unit": "minutes"
+      },
+      {
+       "name": "power",
+       "quote": "Heating was achieved by LG microwave oven (model no. MS3043BARS operating at 700 W).",
+       "value_num": 700,
+       "unit": "W"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "LG domestic microwave oven",
+       "detail": "model MS3043BARS, 700 W",
+       "quote": "Heating was achieved by LG microwave oven (model no. MS3043BARS operating at 700 W)."
+      }
+     ],
+     "not_stated": [
+      "temperature",
+      "pressure",
+      "reaction_vessel"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "cool",
+     "description": "Leave the charred residue to cool.",
+     "quote": "the resulting N,S-CDs residue were left to cool",
+     "parameters": [
+      {
+       "name": "cooling",
+       "quote": "the resulting N,S-CDs residue were left to cool",
+       "value_text": "left to cool"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "disperse",
+     "description": "Mix the cooled residue with 200 mL of distilled water.",
+     "quote": "then mixed with 200 mL of distilled water",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "then mixed with 200 mL of distilled water",
+       "value_num": 200,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "filter",
+     "description": "Filter the obtained solution.",
+     "quote": "the obtained solution was filtered",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "filter_type"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "centrifuge",
+     "description": "Centrifuge the filtered solution.",
+     "quote": "centrifuged at 6000 rpm for 10 minutes",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "centrifuged at 6000 rpm for 10 minutes",
+       "value_num": 6000,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "centrifuged at 6000 rpm for 10 minutes",
+       "value_num": 10,
+       "unit": "minutes"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Sigma 2-16P Benchtop Centrifuge",
+       "detail": null,
+       "quote": "Centrifugation was performed via Sigma 2-16P Benchtop Centrifuge."
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "action": "filter",
+     "description": "Filter the supernatant through a syringe filter.",
+     "quote": "The supernatant was filtered through a 0.45 μm syringe filter",
+     "parameters": [
+      {
+       "name": "dimension",
+       "quote": "The supernatant was filtered through a 0.45 μm syringe filter",
+       "value_num": 0.45,
+       "unit": "μm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "syringe filter",
+       "detail": "0.45 μm",
+       "quote": "The supernatant was filtered through a 0.45 μm syringe filter"
+      }
+     ]
+    },
+    {
+     "order": 8,
+     "action": "store",
+     "description": "Store the stock solution at room temperature, protected from light.",
+     "quote": "stored at room temperature protected from light",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "stored at room temperature protected from light",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 9,
+     "action": "mix",
+     "description": "Dilute the stock solution to the working solution (3.2 mL to 100 mL).",
+     "quote": "The working solution was freshly prepared by transferring 3.2 mL of stock solution into 100 mL volumetric flask, then it was completed to the mark with distilled water.",
+     "parameters": [
+      {
+       "name": "volume_stock",
+       "quote": "The working solution was freshly prepared by transferring 3.2 mL of stock solution into 100 mL volumetric flask, then it was completed to the mark with distilled water.",
+       "value_num": 3.2,
+       "unit": "mL"
+      },
+      {
+       "name": "volume_final",
+       "quote": "The working solution was freshly prepared by transferring 3.2 mL of stock solution into 100 mL volumetric flask, then it was completed to the mark with distilled water.",
+       "value_num": 100,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "volumetric flask",
+       "detail": "100 mL",
+       "quote": "The working solution was freshly prepared by transferring 3.2 mL of stock solution into 100 mL volumetric flask, then it was completed to the mark with distilled water."
+      }
+     ],
+     "not_stated": [
+      "duration",
+      "stock_concentration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "tem_1",
+     "technique": "TEM",
+     "instrument": "JEM-2100 transmission electron microscope (JEOL, Japan)",
+     "result": "spherical, uniformly dispersed N,S-CDs, size range 1.7–3.7 nm; HR-TEM shows dark dots (small carbon clusters)",
+     "quote": "The results showed spherically and uniformly dispersed N,S-CDs particles with size range of 1.7–3.7 nm.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "as a result of low electron contrast between the N,S-CDs and the carbon coated copper grid",
+       "value_text": "carbon coated copper grid"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted"
+     ]
+    },
+    {
+     "id": "saed_1",
+     "technique": "SAED",
+     "instrument": null,
+     "result": "diffused halo, amorphous N,S-CDs",
+     "quote": "The selected area electron diffraction (SAED) pattern displayed a diffused halo as appeared in (Fig. 3d) which indicates the amorphous nature of the prepared N,S-CDs.",
+     "settings": [],
+     "not_stated": []
+    },
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "Bruker Co., Germany (D8 Discover XRD)",
+     "result": "broad peak at 2θ = 26.9° (002-like), interlayer spacing 0.331 nm, amorphous",
+     "quote": "The XRD pattern for the N,S-CDs showed a broad peak at 2θ = 26.9°",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "with Cu Kα irradiation and wavelength of 1.54 Å at 40 kV and 40 mA",
+       "value_text": "Cu Kα irradiation, wavelength 1.54 Å, 40 kV and 40 mA"
+      }
+     ],
+     "not_stated": [
+      "scan_range",
+      "scan_step",
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "ftir_1",
+     "technique": "FTIR",
+     "instrument": "Thermo-Fisher Scientific Nicolet iS20 FTIR spectrometer",
+     "result": "bands at 3332, 1641, 1033, 674 and 561 cm−1 (NH/OH, C=C, C–S, C–H)",
+     "quote": "FTIR spectrum was obtained by Thermo-Fisher Scientific Nicolet iS20 FTIR spectrometer with a resolution of 4 cm−1 in the mid-infrared range (4000–400 cm−1) and KBr disc system.",
+     "settings": [
+      {
+       "name": "wavenumber_range",
+       "quote": "in the mid-infrared range (4000–400 cm−1)",
+       "value_text": "4000–400 cm−1 (mid-infrared)"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "and KBr disc system",
+       "value_text": "KBr disc"
+      },
+      {
+       "name": "acquisition_parameters",
+       "quote": "with a resolution of 4 cm−1",
+       "value_num": 4,
+       "unit": "cm−1"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "eds_1",
+     "technique": "EDS",
+     "instrument": "Oxford X-Max 20 silicon drift detector with scanning electron microscope (Jeol-jsm-6510 lv)",
+     "result": "C 32.56 %, N 36.68 %, O 28.93 %, S 1.83 %",
+     "quote": "The EDX results confirmed the presence of carbon (32.56%), nitrogen (36.68%), oxygen (28.93%) and sulfur (1.83%)",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "uv_1",
+     "technique": "UV_vis",
+     "instrument": "Shimadzu UV-1601PC UV/Visible double beam spectrophotometer",
+     "result": "two absorption peaks at 238 nm and 264 nm for the N,S-CDs; BTM absorption at 307 nm",
+     "quote": "UV-Vis absorption spectrum exhibited two peaks at 238 nm and 264 nm",
+     "settings": [],
+     "not_stated": [
+      "wavelength_range",
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "pl_1",
+     "technique": "PL",
+     "instrument": "Agilent Cary Eclipse Fluorescence Spectrophotometer",
+     "result": "blue fluorescence at 413 nm after excitation at 330 nm; excitation-dependent emission (λex 300–400 nm)",
+     "quote": "The highest intense blue fluorescence of these dots was achieved at λem = 413 nm via excitation at wavelength of 330 nm.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "via excitation at wavelength of 330 nm",
+       "value_num": 330,
+       "unit": "nm"
+      },
+      {
+       "name": "wavelength_range",
+       "quote": "upon increasing the excitation wavelength 10 nm in each (from λex = 300 nm till λex = 400 nm)",
+       "value_text": "excitation scanned from 300 to 400 nm in 10 nm steps"
+      },
+      {
+       "name": "acquisition_parameters",
+       "quote": "Agilent Cary Eclipse Fluorescence Spectrophotometer was operated at high voltage (800 V) and fitted with Xenon flash lamp with slit width of 5 nm and high resolution.",
+       "value_text": "high voltage 800 V, xenon flash lamp, slit width 5 nm"
+      }
+     ],
+     "not_stated": [
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_qy",
+     "technique": "PL",
+     "instrument": null,
+     "result": "relative quantum yield of the N,S-CDs against quinine sulfate: 0.20",
+     "quote": "Measuring the quantum yield of the synthesized N,S-CDs was performed using the following equation:",
+     "settings": [
+      {
+       "name": "method",
+       "quote": "Φx = Φst × (Fx/Fst) × (ηx/ηst)2 × (Ast/Ax)",
+       "value_text": "relative method, Φx = Φst × (Fx/Fst) × (ηx/ηst)2 × (Ast/Ax), ηx/ηst taken as 1 in aqueous solution"
+      },
+      {
+       "name": "calibration",
+       "quote": "The reference quinine sulfate sample is prepared in 0.1 M sulfuric acid, where its quantum yield is 0.54 at 350 nm.",
+       "value_text": "quinine sulfate in 0.1 M H2SO4, Φst = 0.54 at 350 nm"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_sens",
+     "technique": "PL",
+     "instrument": "Agilent Cary Eclipse Fluorescence Spectrophotometer",
+     "result": "quenching of the N,S-CDs fluorescence by BTM (1.0–100.0 μM), calibration ln(F0/F) vs concentration, r = 0.9999",
+     "quote": "The relative fluorescence intensities (RFI) were determined for the reagent blank (F0) and the drug (F) with N,S-CDs at 413 nm after excitation at 330 nm.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "with N,S-CDs at 413 nm after excitation at 330 nm",
+       "value_num": 330,
+       "unit": "nm"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "to obtain final concentrations of (1.0–100.0 μM)",
+       "value_text": "BTM 1.0–100.0 μM"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "then mixed with 0.7 mL of working solution of N,S-CDs, followed by 2 mL aliquots of Britton Robinson buffer of pH 12",
+       "value_text": "BTM aliquots + 0.7 mL working solution of N,S-CDs + 2 mL Britton Robinson buffer pH 12"
+      },
+      {
+       "name": "solution_ph",
+       "quote": "followed by 2 mL aliquots of Britton Robinson buffer of pH 12",
+       "value_num": 12
+      },
+      {
+       "name": "reaction_volume",
+       "quote": "Different aliquots of the standard solution of BTM were transferred into a series of 10 mL volumetric flasks",
+       "value_num": 10,
+       "unit": "mL"
+      },
+      {
+       "name": "contact_time",
+       "quote": "the reaction was completed within one minute and remained stable for more than half an hour",
+       "value_text": "reaction complete within 1 min, stable for more than 30 min"
+      },
+      {
+       "name": "calibration",
+       "quote": "A weighed quantity (0.0284 g) of BTM was transferred into a 100 mL volumetric flask, dissolved in 30 mL of ethanol and the volume was completed to the mark with the same solvent to prepare a standard solution (500 μM).",
+       "value_text": "BTM standard solution 500 μM in ethanol (0.0284 g in 100 mL), diluted with ethanol; stored at −5 °C, stable 7 days"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Britton Robinson buffer with pH range (2.5–12.2) was prepared by mixing equal molarities (0.04 M) of orthophosphoric acid, boric acid and acetic acid into 1 L volumetric flask",
+       "value_text": "Britton Robinson buffer: 0.04 M orthophosphoric, boric and acetic acids in 1 L, pH adjusted with 0.2 M NaOH"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "The calibration graph is constructed by plotting ln(F0/F) against final drug concentrations (μM).",
+       "value_text": "ln(F0/F) against BTM concentration (μM), linear regression"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_sv",
+     "technique": "PL",
+     "instrument": "Agilent Cary Eclipse Fluorescence Spectrophotometer",
+     "result": "Stern–Volmer plots F0/F vs [BTM] at 313, 323 and 333 K: no static or dynamic quenching",
+     "quote": "through measuring the fluorescence emission intensities in case of existence and absence of the quencher at three temperatures settings (313 K, 323 K and 333 K)",
+     "settings": [
+      {
+       "name": "measurement_temperature",
+       "quote": "at three temperatures settings (313 K, 323 K and 333 K)",
+       "value_text": "313 K, 323 K and 333 K"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "By plotting a graph of F0/F vs. molar concentrations of the quencher (Fig. 5b)",
+       "value_text": "Stern–Volmer plot F0/F vs [BTM]"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range"
+     ]
+    },
+    {
+     "id": "pl_opt",
+     "technique": "PL",
+     "instrument": "Agilent Cary Eclipse Fluorescence Spectrophotometer",
+     "result": "F0/F as a function of buffer pH, buffer volume, N,S-CDs volume, ionic strength and incubation time",
+     "quote": "The effect of changing pH on the fluorescence intensity of N,S-CDs was investigated over the pH range of (2.5–12.2) using Britton Robinson buffer",
+     "settings": [
+      {
+       "name": "solution_ph",
+       "quote": "over the pH range of (2.5–12.2) using Britton Robinson buffer",
+       "value_text": "2.5–12.2 (Britton Robinson buffer)"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "The influence of the addition of sodium chloride solution over the range of 0.1–2.0 M to the buffer solution was studied.",
+       "value_text": "NaCl 0.1–2.0 M added to the buffer"
+      },
+      {
+       "name": "contact_time",
+       "quote": "at different time intervals from 0.5 to 15 minutes",
+       "value_text": "0.5 to 15 minutes after BTM addition"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "to reach the highest F0/F value",
+       "value_text": "highest F0/F value (reagent blank / with BTM)"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_caps",
+     "technique": "PL",
+     "instrument": "Agilent Cary Eclipse Fluorescence Spectrophotometer",
+     "result": "BTM assay in laboratory prepared capsules: recoveries 101.42–103.03 %",
+     "quote": "The evolved spectrofluorometric method was employed for estimation of BTM in its laboratory prepared capsules.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "A specific weight equivalent to 0.0284 g of BTM was transferred to 100 mL volumetric flask, mixed with ethanol to prepare final BTM stock solution with concentration of (500.0 μM).",
+       "value_text": "capsule powder equivalent to 0.0284 g BTM in 100 mL ethanol (500.0 μM)"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "this solution was sonicated for 10 minutes",
+       "value_text": "sonicated 10 min, then calibration procedure"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_plasma",
+     "technique": "PL",
+     "instrument": "Agilent Cary Eclipse Fluorescence Spectrophotometer",
+     "result": "BTM assay in spiked human plasma (1.0–3.0 μM): recoveries 98.03–103.31 %",
+     "quote": "Furthermore, the high sensitivity of the developed method assisted to estimate BTM in spiked human plasma sample.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "1 mL aliquots of plasma were added to each tube and then mixed with different concentrations of BTM to reach the final concentration in the range of (1.0–3.0 μM), sonicated for 10 seconds followed by the addition of methanol up to 4 mL to precipitate the proteins.",
+       "value_text": "1 mL plasma + BTM (1.0–3.0 μM), sonication 10 s, methanol to 4 mL (protein precipitation)"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Subsequently, the mixture was sonicated for 10 seconds followed by centrifugation at 4500 rpm for 15 minutes, the supernatants were filtered through a 0.25 μm cellulose syringe filter.",
+       "value_text": "sonication 10 s, centrifugation 4500 rpm 15 min, filtration 0.25 μm cellulose"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "One mL aliquots of the clear filtrate were added into 10 mL volumetric flasks",
+       "value_text": "1 mL of filtrate into 10 mL flasks, then calibration procedure"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "to reach the final concentration in the range of (1.0–3.0 μM)",
+       "value_text": "1.0–3.0 μM BTM"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_sel",
+     "technique": "PL",
+     "instrument": "Agilent Cary Eclipse Fluorescence Spectrophotometer",
+     "result": "no obvious interference from ions, excipients and co-administered drugs",
+     "quote": "Fig. 7 Effect of some common interfering species (1.0 mM) on the spectrofluorometric determination of the BTM (20.0 μm) using the N,S-CDs sensor.",
+     "settings": [
+      {
+       "name": "concentration",
+       "quote": "Effect of some common interfering species (1.0 mM)",
+       "value_text": "interfering species 1.0 mM, BTM 20.0 μM"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "phase",
+     "quote": "Based on these consistent results, we can conclude that the prepared N,S-CDs are amorphous in nature.",
+     "measured_by": "xrd_1",
+     "value_text": "amorphous"
+    },
+    {
+     "property": "phase",
+     "quote": "The selected area electron diffraction (SAED) pattern displayed a diffused halo as appeared in (Fig. 3d) which indicates the amorphous nature of the prepared N,S-CDs.",
+     "measured_by": "saed_1",
+     "value_text": "amorphous (diffused halo)"
+    },
+    {
+     "property": "xrd_peak_position",
+     "quote": "The XRD pattern for the N,S-CDs showed a broad peak at 2θ = 26.9°, which is slightly shifted corresponding to the 002 plane of the graphite (2θ = 26.4°).",
+     "measured_by": "xrd_1",
+     "value_num": 26.9,
+     "unit": "° (2θ)"
+    },
+    {
+     "property": "d_spacing",
+     "quote": "The interlayer spacing (d) of the N,S-CDs is 0.331 nm.",
+     "measured_by": "xrd_1",
+     "value_num": 0.331,
+     "unit": "nm"
+    },
+    {
+     "property": "particle_size",
+     "quote": "The results showed spherically and uniformly dispersed N,S-CDs particles with size range of 1.7–3.7 nm.",
+     "measured_by": "tem_1",
+     "value_text": "1.7–3.7 nm",
+     "unit": "nm"
+    },
+    {
+     "property": "morphology",
+     "quote": "The results showed spherically and uniformly dispersed N,S-CDs particles with size range of 1.7–3.7 nm.",
+     "measured_by": "tem_1",
+     "value_text": "spherical, uniformly dispersed"
+    },
+    {
+     "property": "morphology",
+     "quote": "Nonetheless, the distinct dark dots visible in the HR-TEM image (Fig. 3b) are a sign that small, concentrated clusters of carbon atoms have been formed.",
+     "measured_by": "tem_1",
+     "value_text": "HR-TEM: distinct dark dots, small concentrated clusters of carbon atoms (no lattice fringes resolved)"
+    },
+    {
+     "property": "quantum_yield",
+     "quote": "These dots (N,S-CDs) were simply prepared with high quantum yield (0.20)",
+     "measured_by": "pl_qy",
+     "value_num": 0.2
+    },
+    {
+     "property": "PL_emission_peak",
+     "quote": "The highest intense blue fluorescence of these dots was achieved at λem = 413 nm via excitation at wavelength of 330 nm.",
+     "measured_by": "pl_1",
+     "value_num": 413,
+     "unit": "nm"
+    },
+    {
+     "property": "PL_excitation_peak",
+     "quote": "showed an intense blue fluorescence at 413 nm after excitation at 330 nm",
+     "measured_by": "pl_1",
+     "value_num": 330,
+     "unit": "nm"
+    },
+    {
+     "property": "PL_emission_peak_excitation_dependence",
+     "quote": "The aqueous solution of N,S-CDs possessed excitation wavelength dependent behavior, as upon increasing the excitation wavelength 10 nm in each (from λex = 300 nm till λex = 400 nm), results in changing their fluorescence and emission wavelengths.",
+     "measured_by": "pl_1",
+     "value_text": "emission wavelength and intensity change with excitation wavelength (300–400 nm)"
+    },
+    {
+     "property": "absorption_peak_238",
+     "quote": "UV-Vis absorption spectrum exhibited two peaks at 238 nm and 264 nm",
+     "measured_by": "uv_1",
+     "value_num": 238,
+     "unit": "nm"
+    },
+    {
+     "property": "absorption_peak_264",
+     "quote": "UV-Vis absorption spectrum exhibited two peaks at 238 nm and 264 nm",
+     "measured_by": "uv_1",
+     "value_num": 264,
+     "unit": "nm"
+    },
+    {
+     "property": "absorption_peak_BTM",
+     "quote": "The UV-Vis spectrum of BTM showed an absorption peak at 307 nm",
+     "measured_by": "uv_1",
+     "value_num": 307,
+     "unit": "nm"
+    },
+    {
+     "property": "elemental_composition_C",
+     "quote": "The EDX results confirmed the presence of carbon (32.56%), nitrogen (36.68%), oxygen (28.93%) and sulfur (1.83%)",
+     "measured_by": "eds_1",
+     "value_num": 32.56,
+     "unit": "%"
+    },
+    {
+     "property": "elemental_composition_N",
+     "quote": "The EDX results confirmed the presence of carbon (32.56%), nitrogen (36.68%), oxygen (28.93%) and sulfur (1.83%)",
+     "measured_by": "eds_1",
+     "value_num": 36.68,
+     "unit": "%"
+    },
+    {
+     "property": "elemental_composition_O",
+     "quote": "The EDX results confirmed the presence of carbon (32.56%), nitrogen (36.68%), oxygen (28.93%) and sulfur (1.83%)",
+     "measured_by": "eds_1",
+     "value_num": 28.93,
+     "unit": "%"
+    },
+    {
+     "property": "elemental_composition_S",
+     "quote": "The EDX results confirmed the presence of carbon (32.56%), nitrogen (36.68%), oxygen (28.93%) and sulfur (1.83%)",
+     "measured_by": "eds_1",
+     "value_num": 1.83,
+     "unit": "%"
+    },
+    {
+     "property": "ftir_band_3332",
+     "quote": "the broad band at 3332 cm−1 is corresponding to NH/OH groups",
+     "measured_by": "ftir_1",
+     "value_num": 3332,
+     "value_text": "NH/OH groups",
+     "unit": "cm−1"
+    },
+    {
+     "property": "ftir_band_1641",
+     "quote": "While, the absorption bands at 1641 cm−1 and 1033 cm−1 are corresponding to stretching vibration of C",
+     "measured_by": "ftir_1",
+     "value_num": 1641,
+     "value_text": "stretching vibration of the C=C group (paired with 1033 cm−1, CS group)",
+     "unit": "cm−1"
+    },
+    {
+     "property": "ftir_band_1033",
+     "quote": "While, the absorption bands at 1641 cm−1 and 1033 cm−1 are corresponding to stretching vibration of C",
+     "measured_by": "ftir_1",
+     "value_num": 1033,
+     "value_text": "stretching vibration of the CS group (paired with 1641 cm−1, C=C group)",
+     "unit": "cm−1"
+    },
+    {
+     "property": "ftir_band_674",
+     "quote": "The narrow bands at 674 cm−1 and 561 cm−1 correspond to C–S group and C–H group, respectively.",
+     "measured_by": "ftir_1",
+     "value_num": 674,
+     "value_text": "C–S group",
+     "unit": "cm−1"
+    },
+    {
+     "property": "ftir_band_561",
+     "quote": "The narrow bands at 674 cm−1 and 561 cm−1 correspond to C–S group and C–H group, respectively.",
+     "measured_by": "ftir_1",
+     "value_num": 561,
+     "value_text": "C–H group",
+     "unit": "cm−1"
+    },
+    {
+     "property": "limit_of_detection",
+     "quote": "Detection limit | 0.33",
+     "measured_by": "pl_sens",
+     "value_num": 0.33,
+     "unit": "µM"
+    },
+    {
+     "property": "limit_of_quantification",
+     "quote": "Quantification limit | 0.99",
+     "measured_by": "pl_sens",
+     "value_num": 0.99,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_sensitivity_linear_range",
+     "quote": "Concentration range (μM) | 1.0–100.0",
+     "measured_by": "pl_sens",
+     "value_text": "1.0–100.0 μM",
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_sensitivity_linear_range_ugml",
+     "quote": "The working range of the method is 1.0–100.0 μM (0.568–56.8 μg mL−1).",
+     "measured_by": "pl_sens",
+     "value_text": "0.568–56.8 μg mL−1",
+     "unit": "μg/mL"
+    },
+    {
+     "property": "analytical_sensitivity",
+     "quote": "Slope ± Sb | 0.17 ± 3 × 10−4",
+     "measured_by": "pl_sens",
+     "value_num": 0.17,
+     "value_text": "0.17 ± 3 × 10−4",
+     "unit": "µM−1"
+    },
+    {
+     "property": "statistic_intercept_calibration",
+     "quote": "Intercept ± Sa | −0.02 ± 17 × 10−4",
+     "measured_by": "pl_sens",
+     "value_text": "−0.02 ± 17 × 10−4"
+    },
+    {
+     "property": "statistic_r_calibration",
+     "quote": "Correlation coefficient | 0.9999",
+     "measured_by": "pl_sens",
+     "value_num": 0.9999
+    },
+    {
+     "property": "statistic_Syx_calibration",
+     "quote": "S y/x | 28 × 10−4",
+     "measured_by": "pl_sens",
+     "value_text": "28 × 10−4"
+    },
+    {
+     "property": "statistic_rsd_calibration",
+     "quote": "RSD (%) | 1.13",
+     "measured_by": "pl_sens",
+     "value_num": 1.13,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_er_calibration",
+     "quote": "Er (%) | 0.43",
+     "measured_by": "pl_sens",
+     "value_num": 0.43,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_regression_equation",
+     "quote": "ln F0/F = 0.17C − 0.02 (r = 0.9999)",
+     "measured_by": "pl_sens",
+     "value_text": "ln F0/F = 0.17C − 0.02 (r = 0.9999)"
+    },
+    {
+     "property": "analytical_recovery_pure_1uM",
+     "quote": "1.0 | 1.01 | 101.0 | 99.70",
+     "measured_by": "pl_sens",
+     "value_num": 101.0,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_pure_1uM",
+     "quote": "1.0 | 1.01 | 101.0 | 99.70",
+     "measured_by": "pl_sens",
+     "value_num": 1.01,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_pure_10uM",
+     "quote": "10.0 | 9.77 | 97.70 | 102.90",
+     "measured_by": "pl_sens",
+     "value_num": 97.7,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_pure_10uM",
+     "quote": "10.0 | 9.77 | 97.70 | 102.90",
+     "measured_by": "pl_sens",
+     "value_num": 9.77,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_pure_20uM",
+     "quote": "20.0 | 20.22 | 99.89 | 98.24",
+     "measured_by": "pl_sens",
+     "value_num": 99.89,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_pure_20uM",
+     "quote": "20.0 | 20.22 | 99.89 | 98.24",
+     "measured_by": "pl_sens",
+     "value_num": 20.22,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_pure_30uM",
+     "quote": "30.0 | 29.95 | 101.10 | 100.32",
+     "measured_by": "pl_sens",
+     "value_num": 101.1,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_pure_30uM",
+     "quote": "30.0 | 29.95 | 101.10 | 100.32",
+     "measured_by": "pl_sens",
+     "value_num": 29.95,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_pure_50uM",
+     "quote": "50.0 | 50.10 | 100.20",
+     "measured_by": "pl_sens",
+     "value_num": 100.2,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_pure_50uM",
+     "quote": "50.0 | 50.10 | 100.20",
+     "measured_by": "pl_sens",
+     "value_num": 50.1,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_pure_75uM",
+     "quote": "75.0 | 75.11 | 100.15",
+     "measured_by": "pl_sens",
+     "value_num": 100.15,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_pure_75uM",
+     "quote": "75.0 | 75.11 | 100.15",
+     "measured_by": "pl_sens",
+     "value_num": 75.11,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_pure_100uM",
+     "quote": "100.0 | 99.89 | 99.89",
+     "measured_by": "pl_sens",
+     "value_num": 99.89,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_pure_100uM",
+     "quote": "100.0 | 99.89 | 99.89",
+     "measured_by": "pl_sens",
+     "value_num": 99.89,
+     "unit": "µM"
+    },
+    {
+     "property": "statistic_mean_recovery_pure",
+     "quote": "X̄ ± SD = 99.98 ± 1.13 | 100.29 ± 1.94",
+     "measured_by": "pl_sens",
+     "value_text": "99.98 ± 1.13",
+     "unit": "%"
+    },
+    {
+     "property": "statistic_ttest_pure",
+     "quote": "t-Test = 0.34 (2.26)b",
+     "measured_by": "pl_sens",
+     "value_num": 0.34,
+     "value_text": "0.34 (tabulated 2.26, P = 0.05)"
+    },
+    {
+     "property": "statistic_Ftest_pure",
+     "quote": "F-Value = 2.99 (8.94)b",
+     "measured_by": "pl_sens",
+     "value_num": 2.99,
+     "value_text": "2.99 (tabulated 8.94, P = 0.05)"
+    },
+    {
+     "property": "analytical_recovery_intraday_10uM_rep1",
+     "quote": "Intra-day | Recoverya (%) | 97.16 | 99.72 | 100.22",
+     "measured_by": "pl_sens",
+     "value_num": 97.16,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_intraday_30uM_rep1",
+     "quote": "Intra-day | Recoverya (%) | 97.16 | 99.72 | 100.22",
+     "measured_by": "pl_sens",
+     "value_num": 99.72,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_intraday_50uM_rep1",
+     "quote": "Intra-day | Recoverya (%) | 97.16 | 99.72 | 100.22",
+     "measured_by": "pl_sens",
+     "value_num": 100.22,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_intraday_10uM_rep2",
+     "quote": "98.54 | 99.32 | 98.52",
+     "measured_by": "pl_sens",
+     "value_num": 98.54,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_intraday_30uM_rep2",
+     "quote": "98.54 | 99.32 | 98.52",
+     "measured_by": "pl_sens",
+     "value_num": 99.32,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_intraday_50uM_rep2",
+     "quote": "98.54 | 99.32 | 98.52",
+     "measured_by": "pl_sens",
+     "value_num": 98.52,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_intraday_10uM_rep3",
+     "quote": "97.77 | 100.21 | 99.96",
+     "measured_by": "pl_sens",
+     "value_num": 97.77,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_intraday_30uM_rep3",
+     "quote": "97.77 | 100.21 | 99.96",
+     "measured_by": "pl_sens",
+     "value_num": 100.21,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_intraday_50uM_rep3",
+     "quote": "97.77 | 100.21 | 99.96",
+     "measured_by": "pl_sens",
+     "value_num": 99.96,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_interday_10uM_rep1",
+     "quote": "Inter-day | Recoverya (%) | 97.16 | 99.72 | 100.22",
+     "measured_by": "pl_sens",
+     "value_num": 97.16,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_interday_30uM_rep1",
+     "quote": "Inter-day | Recoverya (%) | 97.16 | 99.72 | 100.22",
+     "measured_by": "pl_sens",
+     "value_num": 99.72,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_interday_50uM_rep1",
+     "quote": "Inter-day | Recoverya (%) | 97.16 | 99.72 | 100.22",
+     "measured_by": "pl_sens",
+     "value_num": 100.22,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_interday_10uM_rep2",
+     "quote": "100.29 | 99.63 | 101.46",
+     "measured_by": "pl_sens",
+     "value_num": 100.29,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_interday_30uM_rep2",
+     "quote": "100.29 | 99.63 | 101.46",
+     "measured_by": "pl_sens",
+     "value_num": 99.63,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_interday_50uM_rep2",
+     "quote": "100.29 | 99.63 | 101.46",
+     "measured_by": "pl_sens",
+     "value_num": 101.46,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_interday_10uM_rep3",
+     "quote": "98.07 | 101.09 | 98.21",
+     "measured_by": "pl_sens",
+     "value_num": 98.07,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_interday_30uM_rep3",
+     "quote": "98.07 | 101.09 | 98.21",
+     "measured_by": "pl_sens",
+     "value_num": 101.09,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_interday_50uM_rep3",
+     "quote": "98.07 | 101.09 | 98.21",
+     "measured_by": "pl_sens",
+     "value_num": 98.21,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_mean_recovery_intraday_10uM",
+     "quote": "X̄ | 97.82 | 99.75 | 99.57",
+     "measured_by": "pl_sens",
+     "value_num": 97.82,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_mean_recovery_intraday_30uM",
+     "quote": "X̄ | 97.82 | 99.75 | 99.57",
+     "measured_by": "pl_sens",
+     "value_num": 99.75,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_mean_recovery_intraday_50uM",
+     "quote": "X̄ | 97.82 | 99.75 | 99.57",
+     "measured_by": "pl_sens",
+     "value_num": 99.57,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_sd_recovery_intraday_10uM",
+     "quote": "±SD | 0.7 | 0.45 | 0.92",
+     "measured_by": "pl_sens",
+     "value_num": 0.7,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_sd_recovery_intraday_30uM",
+     "quote": "±SD | 0.7 | 0.45 | 0.92",
+     "measured_by": "pl_sens",
+     "value_num": 0.45,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_sd_recovery_intraday_50uM",
+     "quote": "±SD | 0.7 | 0.45 | 0.92",
+     "measured_by": "pl_sens",
+     "value_num": 0.92,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_rsd_recovery_intraday_10uM",
+     "quote": "RSD (%) | 0.70 | 0.45 | 0.92",
+     "measured_by": "pl_sens",
+     "value_num": 0.7,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_rsd_recovery_intraday_30uM",
+     "quote": "RSD (%) | 0.70 | 0.45 | 0.92",
+     "measured_by": "pl_sens",
+     "value_num": 0.45,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_rsd_recovery_intraday_50uM",
+     "quote": "RSD (%) | 0.70 | 0.45 | 0.92",
+     "measured_by": "pl_sens",
+     "value_num": 0.92,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_error_recovery_intraday_10uM",
+     "quote": "Error (%) | 0.41 | 0.26 | 0.53",
+     "measured_by": "pl_sens",
+     "value_num": 0.41,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_error_recovery_intraday_30uM",
+     "quote": "Error (%) | 0.41 | 0.26 | 0.53",
+     "measured_by": "pl_sens",
+     "value_num": 0.26,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_error_recovery_intraday_50uM",
+     "quote": "Error (%) | 0.41 | 0.26 | 0.53",
+     "measured_by": "pl_sens",
+     "value_num": 0.53,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_mean_recovery_interday_10uM",
+     "quote": "X̄ | 98.51 | 100.15 | 99.96",
+     "measured_by": "pl_sens",
+     "value_num": 98.51,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_mean_recovery_interday_30uM",
+     "quote": "X̄ | 98.51 | 100.15 | 99.96",
+     "measured_by": "pl_sens",
+     "value_num": 100.15,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_mean_recovery_interday_50uM",
+     "quote": "X̄ | 98.51 | 100.15 | 99.96",
+     "measured_by": "pl_sens",
+     "value_num": 99.96,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_sd_recovery_interday_10uM",
+     "quote": "±SD | 1.60 | 0.82 | 1.64",
+     "measured_by": "pl_sens",
+     "value_num": 1.6,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_sd_recovery_interday_30uM",
+     "quote": "±SD | 1.60 | 0.82 | 1.64",
+     "measured_by": "pl_sens",
+     "value_num": 0.82,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_sd_recovery_interday_50uM",
+     "quote": "±SD | 1.60 | 0.82 | 1.64",
+     "measured_by": "pl_sens",
+     "value_num": 1.64,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_rsd_recovery_interday_10uM",
+     "quote": "RSD (%) | 1.60 | 0.82 | 1.65",
+     "measured_by": "pl_sens",
+     "value_num": 1.6,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_rsd_recovery_interday_30uM",
+     "quote": "RSD (%) | 1.60 | 0.82 | 1.65",
+     "measured_by": "pl_sens",
+     "value_num": 0.82,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_rsd_recovery_interday_50uM",
+     "quote": "RSD (%) | 1.60 | 0.82 | 1.65",
+     "measured_by": "pl_sens",
+     "value_num": 1.65,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_error_recovery_interday_10uM",
+     "quote": "Error (%) | 0.94 | 0.47 | 0.95",
+     "measured_by": "pl_sens",
+     "value_num": 0.94,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_error_recovery_interday_30uM",
+     "quote": "Error (%) | 0.94 | 0.47 | 0.95",
+     "measured_by": "pl_sens",
+     "value_num": 0.47,
+     "unit": "%"
+    },
+    {
+     "property": "statistic_error_recovery_interday_50uM",
+     "quote": "Error (%) | 0.94 | 0.47 | 0.95",
+     "measured_by": "pl_sens",
+     "value_num": 0.95,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_capsules_20uM",
+     "quote": "In-lab prepared BTM capsules | 20.0 | 20.28 | 101.42 | 98.00",
+     "measured_by": "pl_caps",
+     "value_num": 101.42,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_capsules_20uM",
+     "quote": "In-lab prepared BTM capsules | 20.0 | 20.28 | 101.42 | 98.00",
+     "measured_by": "pl_caps",
+     "value_num": 20.28,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_capsules_40uM",
+     "quote": "40.0 | 41.14 | 102.84 | 98.65",
+     "measured_by": "pl_caps",
+     "value_num": 102.84,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_capsules_40uM",
+     "quote": "40.0 | 41.14 | 102.84 | 98.65",
+     "measured_by": "pl_caps",
+     "value_num": 41.14,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_capsules_60uM",
+     "quote": "60.0 | 61.82 | 103.03 | 101.33",
+     "measured_by": "pl_caps",
+     "value_num": 103.03,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_capsules_60uM",
+     "quote": "60.0 | 61.82 | 103.03 | 101.33",
+     "measured_by": "pl_caps",
+     "value_num": 61.82,
+     "unit": "µM"
+    },
+    {
+     "property": "statistic_mean_recovery_capsules",
+     "quote": "X̄ ± SD | 102.43 ± 0.88 | 99.33 ± 1.77",
+     "measured_by": "pl_caps",
+     "value_text": "102.43 ± 0.88",
+     "unit": "%"
+    },
+    {
+     "property": "statistic_ttest_capsules",
+     "quote": "t-Test | 2.26 (2.78)b",
+     "measured_by": "pl_caps",
+     "value_num": 2.26,
+     "value_text": "2.26 (tabulated 2.78, P = 0.05)"
+    },
+    {
+     "property": "statistic_Ftest_capsules",
+     "quote": "F-Value | 4.03 (19.0)b",
+     "measured_by": "pl_caps",
+     "value_num": 4.03,
+     "value_text": "4.03 (tabulated 19.0, P = 0.05)"
+    },
+    {
+     "property": "analytical_recovery_plasma_1_0uM",
+     "quote": "Spiked human plasma | 1.0 | 0.98 | 98.03 | 97.22",
+     "measured_by": "pl_plasma",
+     "value_num": 98.03,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_plasma_1_0uM",
+     "quote": "Spiked human plasma | 1.0 | 0.98 | 98.03 | 97.22",
+     "measured_by": "pl_plasma",
+     "value_num": 0.98,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_plasma_1_6uM",
+     "quote": "1.6 | 1.60 | 99.87 | 98.00",
+     "measured_by": "pl_plasma",
+     "value_num": 99.87,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_plasma_1_6uM",
+     "quote": "1.6 | 1.60 | 99.87 | 98.00",
+     "measured_by": "pl_plasma",
+     "value_num": 1.6,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_plasma_2_0uM",
+     "quote": "2.0 | 2.02 | 100.73 | 102.05",
+     "measured_by": "pl_plasma",
+     "value_num": 100.73,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_plasma_2_0uM",
+     "quote": "2.0 | 2.02 | 100.73 | 102.05",
+     "measured_by": "pl_plasma",
+     "value_num": 2.02,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_plasma_2_4uM",
+     "quote": "2.4 | 2.48 | 103.31",
+     "measured_by": "pl_plasma",
+     "value_num": 103.31,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_plasma_2_4uM",
+     "quote": "2.4 | 2.48 | 103.31",
+     "measured_by": "pl_plasma",
+     "value_num": 2.48,
+     "unit": "µM"
+    },
+    {
+     "property": "analytical_recovery_plasma_3_0uM",
+     "quote": "3.0 | 2.95 | 98.40",
+     "measured_by": "pl_plasma",
+     "value_num": 98.4,
+     "unit": "%"
+    },
+    {
+     "property": "analytical_recovery_found_plasma_3_0uM",
+     "quote": "3.0 | 2.95 | 98.40",
+     "measured_by": "pl_plasma",
+     "value_num": 2.95,
+     "unit": "µM"
+    },
+    {
+     "property": "statistic_mean_recovery_plasma",
+     "quote": "X̄ ± SD | 100.07 ± 2.12 | 99.09 ± 2.59",
+     "measured_by": "pl_plasma",
+     "value_text": "100.07 ± 2.12",
+     "unit": "%"
+    },
+    {
+     "property": "statistic_ttest_plasma",
+     "quote": "t-Test | 0.59 (2.45)b",
+     "measured_by": "pl_plasma",
+     "value_num": 0.59,
+     "value_text": "0.59 (tabulated 2.45, P = 0.05)"
+    },
+    {
+     "property": "statistic_Ftest_plasma",
+     "quote": "F-Value | 1.5 (19.25)b",
+     "measured_by": "pl_plasma",
+     "value_num": 1.5,
+     "value_text": "1.5 (tabulated 19.25, P = 0.05)"
+    },
+    {
+     "property": "interference_tolerance_lercanidipine",
+     "quote": "Lercanidipine hydrochloride | 280.0",
+     "measured_by": "pl_sel",
+     "value_num": 280.0,
+     "unit": "µM"
+    },
+    {
+     "property": "interference_tolerance_rosuvastatin",
+     "quote": "Rosuvastatin calcium | 137.0",
+     "measured_by": "pl_sel",
+     "value_num": 137.0,
+     "unit": "µM"
+    },
+    {
+     "property": "interference_tolerance_inactive_species",
+     "quote": "As appeared in (Fig. 7), in case of absence or presence of such materials, there is no obvious interference.",
+     "measured_by": "pl_sel",
+     "value_text": "no obvious interference from Na+, K+, Mg2+, NH4+, Zn2+, Cl−, SO42−, phosphate, oxalic acid, lactose, glucose and starch (1.0 mM)"
+    },
+    {
+     "property": "statistic_mean_recovery_robustness_buffer_volume",
+     "quote": "101.08 ± 0.79",
+     "measured_by": "pl_sens",
+     "value_text": "101.08 ± 0.79",
+     "unit": "%"
+    },
+    {
+     "property": "statistic_mean_recovery_robustness_ph",
+     "quote": "101.22 ± 0.62",
+     "measured_by": "pl_sens",
+     "value_text": "101.22 ± 0.62",
+     "unit": "%"
+    },
+    {
+     "property": "fluorescence_quenching_optimum_ph",
+     "quote": "Throughout the study, the highest F0/F value was obtained by adjusting pH at 12.",
+     "measured_by": "pl_opt",
+     "value_num": 12
+    },
+    {
+     "property": "fluorescence_quenching_optimum_buffer_volume",
+     "quote": "The maximum quenching occurred upon the addition of 2 mL of the buffer (Fig. 6b).",
+     "measured_by": "pl_opt",
+     "value_num": 2,
+     "unit": "mL"
+    },
+    {
+     "property": "fluorescence_quenching_optimum_cds_volume",
+     "quote": "Addition of 0.7 mL of N,S-CDs working solution gave the highest F0/F value, so it was selected for the whole study (Fig. 6c).",
+     "measured_by": "pl_opt",
+     "value_num": 0.7,
+     "unit": "mL"
+    },
+    {
+     "property": "fluorescence_quenching_ionic_strength",
+     "quote": "The F0/F value was found to remain constant which proved the steadiness of N,S-CDs against ionic activity (Fig. 6d).",
+     "measured_by": "pl_opt",
+     "value_text": "F0/F constant for NaCl 0.1–2.0 M"
+    },
+    {
+     "property": "fluorescence_quenching_incubation_time",
+     "quote": "The quenching was found to be unaffected by the passage of time, and the reaction was completed within one minute and remained stable for more than half an hour.",
+     "measured_by": "pl_opt",
+     "value_text": "unaffected over 0.5–15 min; complete within one minute; stable for more than half an hour"
+    },
+    {
+     "property": "fluorescence_quenching_ph_2_5",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.31,
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "fluorescence_quenching_ph_3_0",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.24,
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "fluorescence_quenching_ph_5_0",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.2,
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "fluorescence_quenching_ph_7_0",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.2,
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "fluorescence_quenching_ph_9_0",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.3,
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "fluorescence_quenching_ph_11_0",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.34,
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "fluorescence_quenching_ph_11_8",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.39,
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "fluorescence_quenching_ph_12_0",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.39,
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "fluorescence_quenching_ph_12_2",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.4,
+     "from_figure": "Fig. 6a"
+    },
+    {
+     "property": "fluorescence_quenching_buffer_volume_0_5mL",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.2,
+     "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "fluorescence_quenching_buffer_volume_1_0mL",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.28,
+     "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "fluorescence_quenching_buffer_volume_1_5mL",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.3,
+     "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "fluorescence_quenching_buffer_volume_2_0mL",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.39,
+     "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "fluorescence_quenching_buffer_volume_2_5mL",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.39,
+     "from_figure": "Fig. 6b"
+    },
+    {
+     "property": "fluorescence_quenching_cds_volume_0_3mL",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.29,
+     "from_figure": "Fig. 6c"
+    },
+    {
+     "property": "fluorescence_quenching_cds_volume_0_5mL",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.32,
+     "from_figure": "Fig. 6c"
+    },
+    {
+     "property": "fluorescence_quenching_cds_volume_0_7mL",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.39,
+     "from_figure": "Fig. 6c"
+    },
+    {
+     "property": "fluorescence_quenching_cds_volume_0_8mL",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.37,
+     "from_figure": "Fig. 6c"
+    },
+    {
+     "property": "fluorescence_quenching_ionic_strength_0_1M",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.39,
+     "from_figure": "Fig. 6d"
+    },
+    {
+     "property": "fluorescence_quenching_ionic_strength_0_5M",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.39,
+     "from_figure": "Fig. 6d"
+    },
+    {
+     "property": "fluorescence_quenching_ionic_strength_1_0M",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.39,
+     "from_figure": "Fig. 6d"
+    },
+    {
+     "property": "fluorescence_quenching_ionic_strength_2_0M",
+     "quote": "Fig. 6 Influences of different experimental parameters in the quenching efficiency of N,S-CDs: (a) pH of the buffer solution, (b) buffer volume, (c) N,S-CDs volume and (d) ionic strength.",
+     "measured_by": "pl_opt",
+     "value_num": 1.38,
+     "from_figure": "Fig. 6d"
+    },
+    {
+     "property": "fluorescence_quenching_mechanism",
+     "quote": "indicating that IFE was the mechanism that highly contributed to the fluorescence quenching of N,S-CDs by increased concentrations of the quencher (BTM).",
+     "measured_by": "pl_sens",
+     "value_text": "inner filter effect (IFE)"
+    },
+    {
+     "property": "fluorescence_quenching_mechanism_dynamic_static",
+     "quote": "Therefore, the possibility of quenching via dynamic or static mechanisms were excluded.",
+     "measured_by": "pl_sv",
+     "value_text": "dynamic and static quenching excluded"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_observed_10uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 14,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_corrected_10uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 0.8,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_observed_20uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 28,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_corrected_20uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 1.5,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_observed_50uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 57,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_corrected_50uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 8.5,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_observed_75uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 72,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_corrected_75uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 15,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_observed_100uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 81,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_efficiency_corrected_100uM",
+     "quote": "Fig. 5 (a) Percentage of suppressed efficiency of observed and corrected fluorescence of N,S-CDs after addition of various concentrations of BTM (μM).",
+     "measured_by": "pl_sens",
+     "value_num": 15,
+     "unit": "%",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "fluorescence_quenching_Ksv_313K",
+     "quote": "(b) The Stern–Volmer plot of (BTM-N,S-CDs) at different temperatures (Kelvin).",
+     "measured_by": "pl_sv",
+     "value_num": 0.216,
+     "unit": "µM−1",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "fluorescence_quenching_SV_intercept_313K",
+     "quote": "(b) The Stern–Volmer plot of (BTM-N,S-CDs) at different temperatures (Kelvin).",
+     "measured_by": "pl_sv",
+     "value_num": 0.9804,
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "fluorescence_quenching_Ksv_323K",
+     "quote": "(b) The Stern–Volmer plot of (BTM-N,S-CDs) at different temperatures (Kelvin).",
+     "measured_by": "pl_sv",
+     "value_num": 0.219,
+     "unit": "µM−1",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "fluorescence_quenching_SV_intercept_323K",
+     "quote": "(b) The Stern–Volmer plot of (BTM-N,S-CDs) at different temperatures (Kelvin).",
+     "measured_by": "pl_sv",
+     "value_num": 0.9826,
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "fluorescence_quenching_Ksv_333K",
+     "quote": "(b) The Stern–Volmer plot of (BTM-N,S-CDs) at different temperatures (Kelvin).",
+     "measured_by": "pl_sv",
+     "value_num": 0.158,
+     "unit": "µM−1",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "fluorescence_quenching_SV_intercept_333K",
+     "quote": "(b) The Stern–Volmer plot of (BTM-N,S-CDs) at different temperatures (Kelvin).",
+     "measured_by": "pl_sv",
+     "value_num": 1.0202,
+     "from_figure": "Fig. 5b"
+    }
+   ],
+   "missing_fields": [
+    "temperature reached during microwave heating",
+    "purity of sucrose and thiourea",
+    "stock solution concentration"
+   ]
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "graphite (002 plane)",
+   "property": "xrd_peak_position",
+   "quote": "which is slightly shifted corresponding to the 002 plane of the graphite (2θ = 26.4°)",
+   "route": "NS_CDs",
+   "value_num": 26.4,
+   "unit": "° (2θ)",
+   "conditions": "graphite 002 reflection quoted by the authors for comparison"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "1.0 | 1.01 | 101.0 | 99.70",
+   "route": "NS_CDs",
+   "value_num": 99.7,
+   "unit": "%",
+   "conditions": "pure form (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "10.0 | 9.77 | 97.70 | 102.90",
+   "route": "NS_CDs",
+   "value_num": 102.9,
+   "unit": "%",
+   "conditions": "pure form (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "20.0 | 20.22 | 99.89 | 98.24",
+   "route": "NS_CDs",
+   "value_num": 98.24,
+   "unit": "%",
+   "conditions": "pure form (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "30.0 | 29.95 | 101.10 | 100.32",
+   "route": "NS_CDs",
+   "value_num": 100.32,
+   "unit": "%",
+   "conditions": "pure form (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "In-lab prepared BTM capsules | 20.0 | 20.28 | 101.42 | 98.00",
+   "route": "NS_CDs",
+   "value_num": 98.0,
+   "unit": "%",
+   "conditions": "laboratory prepared capsules (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "40.0 | 41.14 | 102.84 | 98.65",
+   "route": "NS_CDs",
+   "value_num": 98.65,
+   "unit": "%",
+   "conditions": "laboratory prepared capsules (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "60.0 | 61.82 | 103.03 | 101.33",
+   "route": "NS_CDs",
+   "value_num": 101.33,
+   "unit": "%",
+   "conditions": "laboratory prepared capsules (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "Spiked human plasma | 1.0 | 0.98 | 98.03 | 97.22",
+   "route": "NS_CDs",
+   "value_num": 97.22,
+   "unit": "%",
+   "conditions": "spiked human plasma (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "1.6 | 1.60 | 99.87 | 98.00",
+   "route": "NS_CDs",
+   "value_num": 98.0,
+   "unit": "%",
+   "conditions": "spiked human plasma (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "analytical_recovery",
+   "quote": "2.0 | 2.02 | 100.73 | 102.05",
+   "route": "NS_CDs",
+   "value_num": 102.05,
+   "unit": "%",
+   "conditions": "spiked human plasma (comparison method, same amounts as the proposed method)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "statistic_mean_recovery",
+   "quote": "X̄ ± SD = 99.98 ± 1.13 | 100.29 ± 1.94",
+   "route": "NS_CDs",
+   "value_text": "100.29 ± 1.94",
+   "unit": "%",
+   "conditions": "pure form",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "statistic_mean_recovery",
+   "quote": "X̄ ± SD | 102.43 ± 0.88 | 99.33 ± 1.77",
+   "route": "NS_CDs",
+   "value_text": "99.33 ± 1.77",
+   "unit": "%",
+   "conditions": "laboratory prepared capsules",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM determined by the reported HPLC method",
+   "property": "statistic_mean_recovery",
+   "quote": "X̄ ± SD | 100.07 ± 2.12 | 99.09 ± 2.59",
+   "route": "NS_CDs",
+   "value_text": "99.09 ± 2.59",
+   "unit": "%",
+   "conditions": "spiked human plasma",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM, reported method: RP-HPLC (cyano column, acetonitrile:methanol:water 35:35:30 v/v/v, pH 3.2, UV 240 nm)",
+   "property": "analytical_sensitivity_linear_range",
+   "quote": "0.20 – 20.0",
+   "route": "NS_CDs",
+   "value_text": "0.20 – 20.0",
+   "unit": "μg/ml",
+   "conditions": "Table S2 of the Supporting Information (linearity range)",
+   "ref_id": "cit4"
+  },
+  {
+   "material": "BTM, reported method: RP-HPLC (C18 column, water:acetonitrile 88:12 v/v, UV 272 nm)",
+   "property": "analytical_sensitivity_linear_range",
+   "quote": "70.0 – 210.0",
+   "route": "NS_CDs",
+   "value_text": "70.0 – 210.0",
+   "unit": "μg/ml",
+   "conditions": "Table S2 of the Supporting Information (linearity range)",
+   "ref_id": "cit5"
+  },
+  {
+   "material": "BTM, reported method: LC-MS/MS (C18 column, ammonium formate/acetonitrile gradient)",
+   "property": "analytical_sensitivity_linear_range",
+   "quote": "0.004 – 1.0",
+   "route": "NS_CDs",
+   "value_text": "0.004 – 1.0",
+   "unit": "μg/ml",
+   "conditions": "Table S2 of the Supporting Information (linearity range)",
+   "ref_id": "cit6"
+  },
+  {
+   "material": "BTM, reported method: Spectrophotometry, first derivative amplitude at 304 nm in methanol",
+   "property": "analytical_sensitivity_linear_range",
+   "quote": "1.0 – 20.0",
+   "route": "NS_CDs",
+   "value_text": "1.0 – 20.0",
+   "unit": "μg/ml",
+   "conditions": "Table S2 of the Supporting Information (linearity range)",
+   "ref_id": "cit7"
+  },
+  {
+   "material": "BTM, reported method: Spectrophotometry, difference absorbance at 335 nm in 0.1 M NaOH versus 0.1 M HCl",
+   "property": "analytical_sensitivity_linear_range",
+   "quote": "8.0 – 80.0",
+   "route": "NS_CDs",
+   "value_text": "8.0 – 80.0",
+   "unit": "μg/ml",
+   "conditions": "Table S2 of the Supporting Information (linearity range)",
+   "ref_id": "cit7"
+  },
+  {
+   "material": "BTM, reported method: Quantitative proton NMR (3.87 ppm, DMSO-d6, phloroglucinol internal standard)",
+   "property": "analytical_sensitivity_linear_range",
+   "quote": "100 - 8000",
+   "route": "NS_CDs",
+   "value_text": "100 - 8000",
+   "unit": "μg/ml",
+   "conditions": "Table S2 of the Supporting Information (linearity range)",
+   "ref_id": "cit8"
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "quote": null,
+   "text": "L'article prépare des points de carbone dopés à l'azote et au soufre (N,S-CDs) en chauffant au four à micro-ondes domestique (7 min, 700 W) une solution aqueuse de saccharose (15 g) et de thiourée (3 g) jusqu'à carbonisation, puis en reprenant le résidu dans l'eau, en filtrant et en centrifugeant. Les points obtenus sont amorphes, sphériques (1,7 à 3,7 nm) et émettent à 413 nm sous excitation à 330 nm (rendement quantique 0,20). Ils servent de sonde fluorescente pour doser le bétrixaban (BTM) entre 1 et 100 µM, par extinction de fluorescence par effet de filtre interne, dans des gélules préparées au laboratoire et dans du plasma dopé."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "quote": null,
+   "text": "Les auteurs cherchent à obtenir, à bas coût et sans solvant ni précurseur dangereux, une sonde fluorescente à base de carbone dopé N,S pour doser un anticoagulant oral, le bétrixaban, pour lequel aucune méthode spectrofluorimétrique n'existait, et à évaluer la méthode selon l'ICH et par l'indice ComplexGapi."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "quote": null,
+   "text": "La synthèse n'est décrite qu'à une seule condition : aucun paramètre de synthèse (durée, rapport des précurseurs, puissance) n'est balayé. Les séries de l'article portent sur les conditions du dosage : pH du tampon (2,5 à 12,2), volume de tampon (0,5 à 2,5 mL), volume de sonde (0,3 à 1 mL), force ionique (NaCl 0,1 à 2,0 M), temps d'incubation, température (313 à 333 K) pour le mécanisme d'extinction, puis concentrations de BTM pour l'étalonnage, la justesse, la fidélité et la sélectivité. Elles servent à fixer des conditions optimales et à valider la méthode."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "quote": "Throughout the study, the highest F0/F value was obtained by adjusting pH at 12.",
+   "text": "Le rapport F0/F, mesure de l'extinction, est minimal entre pH 5 et 7 (environ 1,20) et remonte en milieu basique pour atteindre un plateau d'environ 1,39 entre pH 11,8 et 12,2 (valeurs lues sur la figure 6a). Il augmente aussi avec le volume de tampon jusqu'à 2 mL, puis reste constant, et ne dépend pas de la force ionique ni du temps d'incubation."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "NS_CDs",
+   "quote": "indicating that IFE was the mechanism that highly contributed to the fluorescence quenching of N,S-CDs by increased concentrations of the quencher (BTM).",
+   "text": "Les auteurs retiennent le pH 12, 2 mL de tampon de Britton-Robinson et 0,7 mL de solution de travail de N,S-CDs pour un volume final de 10 mL. Ils concluent que l'extinction est due surtout à un effet de filtre interne (recouvrement du spectre d'absorption du BTM à 307 nm avec l'excitation à 330 nm), et non à une extinction statique ou dynamique."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "NS_CDs",
+   "quote": "Doping nitrogen or sulfur atoms into the CDs leads to enhance the optical and electrical properties.",
+   "text": "Les auteurs décrivent la formation comme une carbonisation en une étape de saccharose (source de carbone) et de thiourée (source d'azote et de soufre) sous micro-ondes, sans réaction écrite, et attribuent l'amélioration de la fluorescence au dopage : le soufre apporte des états de piège émissifs et évite l'auto-extinction, l'azote injecte des électrons et modifie l'environnement électronique."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "NS_CDs",
+   "quote": null,
+   "text": "Hypothèse de chimiste : sous micro-ondes, l'eau s'évapore et le saccharose se déshydrate et se caramélise, puis se carbonise (« charring ») ; la thiourée se décompose en libérant probablement de l'ammoniac, de l'hydrogène sulfuré et des fragments cyanamide qui s'incorporent au réseau carboné en formation, d'où le dopage N,S. La reprise du résidu dans 200 mL d'eau, la filtration et la centrifugation isoleraient les nanoparticules (sub-4 nm) des particules plus grosses. La température atteinte n'étant pas donnée, la nucléation et la croissance ne peuvent pas être reliées à une valeur."
+  },
+  {
+   "type": "securite_auteurs",
+   "route": null,
+   "quote": "There were no hazardous, harsh or expensive chemicals used in the proposed method as found in HPLC or LC/MS-MS techniques.",
+   "text": "Les auteurs présentent la voie comme sûre et verte (précurseurs bon marché, pas de solvant dangereux, durée de chauffage de quelques minutes), mais ne donnent aucune précaution pratique pour l'étape de chauffage au micro-ondes."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "NS_CDs",
+   "quote": null,
+   "text": "La carbonisation de la thiourée et du saccharose dans un four à micro-ondes domestique peut dégager de l'ammoniac, du sulfure d'hydrogène, du disulfure de carbone et des oxydes de soufre et d'azote, toxiques et malodorants : travailler sous hotte, avec un four réservé au laboratoire. Le résidu carbonisé est brûlant et le récipient peut se fissurer ; laisser refroidir avant de manipuler. En aval, la poudre de carbone nanométrique ne doit pas être inhalée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NS_CDs",
+   "quote": "then heating in microwave for 7 minutes until complete charring",
+   "text": "Pour refaire les points de carbone : la température atteinte, le récipient, la pureté du saccharose et de la thiourée, la durée et la méthode de dissolution et de remise en suspension, la concentration de la solution mère et le rendement ne sont pas donnés. Le four est un four ménager de 700 W, dont la réponse varie d'un appareil à l'autre : la durée de 7 min jusqu'à carbonisation complète est difficilement transférable."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NS_CDs",
+   "quote": "The EDX results confirmed the presence of carbon (32.56%), nitrogen (36.68%), oxygen (28.93%) and sulfur (1.83%)",
+   "text": "La composition EDX annoncée (N 36,68 % supérieur à C 32,56 %) est peu compatible avec des précurseurs de 15 g de saccharose (environ 6,3 g de carbone) pour 3 g de thiourée (environ 1,1 g d'azote) ; l'article ne précise pas s'il s'agit de pourcentages massiques ou atomiques, ni sur quel support la poudre a été déposée. Le carbone de la grille ou du ruban de carbone peut fausser ces teneurs ; la valeur est donnée telle quelle."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "quote": "Table S1 Robustness data of Betrixaban maleate (BTM)",
+   "text": "Les annexes (tableaux S1 et S2) sont présentes dans le dépôt mais leur texte est aplati en une cellule par ligne : l'attribution des valeurs aux colonnes (volume de tampon, pH ; méthodes de la littérature) repose sur l'ordre de lecture et sur la cohérence des moyennes. Plusieurs figures portent des courbes (4a, 4b, 4c, 6) lues approximativement."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "NS_CDs",
+   "ref_id": "cit23",
+   "role": "autre",
+   "quote": "The reference quinine sulfate sample is prepared in 0.1 M sulfuric acid, where its quantum yield is 0.54 at 350 nm."
+  },
+  {
+   "route": null,
+   "ref_id": "cit24",
+   "role": "autre",
+   "quote": "Different pH values of the buffer solution were obtained using different volumes of 0.2 M sodium hydroxide solution."
+  },
+  {
+   "route": "NS_CDs",
+   "ref_id": "cit4",
+   "role": "autre",
+   "quote": "To ensure the accuracy of the method, the output data from the proposed method was compared with those given by a reported HPLC method."
+  },
+  {
+   "route": null,
+   "ref_id": "cit32",
+   "role": "autre",
+   "quote": "The validity of the proposed method was tested according to International Conference on Harmonization (ICH) guidelines."
+  },
+  {
+   "route": null,
+   "ref_id": "cit31",
+   "role": "autre",
+   "quote": "The method possessed good linearity upon plotting ln F0/F over different BTM concentrations (μM) over a range of (1.0–100.0 μM)."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "NS_CDs, EDS (Fig. 3g)",
+   "issue": "Les teneurs données (C 32,56 %, N 36,68 %, O 28,93 %, S 1,83 %, somme 100 %) placent l'azote au-dessus du carbone malgré 15 g de saccharose pour 3 g de thiourée ; l'article ne dit pas si ce sont des % massiques ou atomiques. Valeurs extraites telles quelles, unité « % »."
+  },
+  {
+   "where": "Table 3, précision intra- et inter-jour",
+   "issue": "La première répétition inter-jour (97.16 | 99.72 | 100.22) est identique à la première répétition intra-jour, et une valeur isolée « 99.55 » figure sous la moyenne intra-jour sans étiquette. Les moyennes intra-jour recalculées (97.82, 99.75, 99.57) concordent avec les répétitions ; les valeurs sont extraites comme écrites."
+  },
+  {
+   "where": "Fig. 6c, volume de N,S-CDs",
+   "issue": "Le texte dit 0.3–1 mL essayés, mais l'axe de la figure 6c ne porte que 0.3, 0.5, 0.7 et 0.8 mL. Seuls les quatre points visibles sont lus. De même, le texte retient pH 12 comme maximum alors que la figure 6a montre un plateau de pH 11.8 à 12.2 (1.39, 1.39, ≈1.40)."
+  },
+  {
+   "where": "Valeurs lues sur les figures 5a, 5b et 6",
+   "issue": "Lectures graphiques à ±0.01 (F0/F, fig. 6) et ±2 % (% E, fig. 5a), gardées avec 3 chiffres significatifs pour F0/F car l'étendue des valeurs (1.2–1.4) rend 2 chiffres inutilisables. Les pentes et ordonnées de Stern–Volmer (fig. 5b) sont lues sur les équations imprimées dans la figure ; l'unité µM−1 vient de l'axe [BTM] en µM."
+  },
+  {
+   "where": "Fig. 5b, effet de la température",
+   "issue": "Le texte dit qu'il n'y a pas d'effet sur la constante d'extinction, alors que les pentes imprimées sont 0.216 (313 K), 0.219 (323 K) et 0.158 (333 K). La conclusion du texte est extraite telle quelle, avec les trois pentes."
+  },
+  {
+   "where": "Annexe, tableaux S1 et S2",
+   "issue": "Le texte des annexes est aplati (une cellule par ligne). Pour S1, l'ordre de lecture est supposé : trois premières récupérations = volumes de tampon 1.8, 2.0, 2.2 mL, trois suivantes = pH 11.8, 12.0, 12.2 ; les moyennes recalculées (101.08 et 101.22) le confirment. Pour S2, la référence 7 suit la ligne « difference absorbance » ; la ligne « first derivative » est rattachée à la même référence (spectrophotométrie) par déduction."
+  },
+  {
+   "where": "Spectre FTIR, bande à 1641 et 1033 cm−1",
+   "issue": "Dans le texte l'attribution « C=C » est rendue par une image SVG (le signe égal) ; la citation s'arrête avant l'image. L'attribution C=C est confirmée par l'étiquette « C=C stretching » de la figure 3f."
+  },
+  {
+   "where": "Instruments PL",
+   "issue": "Le spectrofluorimètre Cary Eclipse n'est nommé que dans la liste d'instruments ; il est attribué à toutes les mesures de fluorescence (caractérisation, rendement quantique non précisé, dosages). Le rendement quantique de 0.20 n'a ni longueur d'onde d'excitation ni valeur de l'absorbance données."
+  },
+  {
+   "where": "Voies : sonde et dosage",
+   "issue": "La méthode de dosage (préparation du tampon, de l'étalon de BTM, des gélules, du plasma) est décrite comme réglages des mesures de fluorescence de la voie NS_CDs et non comme voie de dispositif : aucun matériau n'est synthétisé dans ces préparations. Les quantités de la synthèse sont données sans variation : une seule voie, aucune branche."
+  },
+  {
+   "where": "Annexe, tableaux S1 et S2 : valeurs non citables",
+   "issue": "Les limites de détection des méthodes de la littérature (0.04, 4.96, 0.0003, 0.23, 0.91, 19.0 μg/ml), la limite de détection de la présente méthode (0.187 μg/ml), les récupérations individuelles de la robustesse (100.33, 101.00, 101.92, 100.74, 101.00, 101.92 %) et les erreurs (0.46 et 0.36 %) sont dans des cellules de moins de 8 caractères, sans citation traçable possible dans le texte aplati ; elles ne sont pas extraites (seules les moyennes ± SD de S1 et les plages de linéarité de S2 le sont)."
+  },
+  {
+   "where": "Histogramme de taille (fig. 3c)",
+   "issue": "Seule la plage 1.7–3.7 nm est écrite dans le texte ; le diamètre moyen et le nombre de particules comptées ne sont pas donnés et l'histogramme n'est pas converti en valeurs."
+  }
+ ]
+}

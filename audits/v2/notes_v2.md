@@ -4,3 +4,4 @@
 - PMC5680254 : 4 ajouts ; température 358 K donnée pour 10 mM seulement, appliquée à toutes les voies (doute).
 - PMC8866530 : capacités 500e cycle lues sur figure ; plage XRD lue sur l'axe (from_figure) alors que la règle demande « non cité ».
 - PMC10523092 : SAXS était synonyme de XRD dans le vocabulaire initial (erreur de conception) → technique SAXS ajoutée à initial.py, mesures saxs_* corrigées par l'orchestrateur ; crystallinity accepte SAED/TEM/Raman. Ajout de méthode `precursor_preparation` à juger à la fusion (proche d'une méthode « fourre-tout »).
+- PMC10077337 : réutilise `acquisition_parameters` (vague) ; citations < 8 caractères refusées par load.py → valeurs isolées de tableaux d'annexe aplatis non extractibles (LOD 0,187, récupérations S1) : limite du contrôle des citations à traiter (citation de la ligne entière du tableau).
