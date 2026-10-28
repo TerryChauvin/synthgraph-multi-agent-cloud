@@ -163,7 +163,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -284,6 +285,11 @@
        "name": "ph",
        "quote": "Then to this mixture, 2 M aqueous solution of NaOH was added dropwise until the pH of the mixture was reached ∼11.",
        "value_num": 11
+      },
+      {
+       "name": "addition_mode",
+       "value_text": "dropwise",
+       "quote": "2 M aqueous solution of NaOH was added dropwise until the pH of the mixture was reached ∼11"
       }
      ],
      "equipment": [],
@@ -321,7 +327,8 @@
      "not_stated": [
       "heating_rate",
       "stirring_speed",
-      "closed_or_open_vessel"
+      "closed_or_open_vessel",
+      "atmosphere"
      ]
     },
     {
@@ -380,7 +387,9 @@
       }
      ],
      "equipment": [],
-     "not_stated": []
+     "not_stated": [
+      "wash_volume"
+     ]
     },
     {
      "order": 8,
@@ -404,7 +413,8 @@
      "equipment": [],
      "not_stated": [
       "atmosphere",
-      "pressure"
+      "pressure",
+      "drying_mode"
      ]
     }
    ],
@@ -565,6 +575,12 @@
      "property": "catalyst_reusability",
      "quote": "The efficiency of the catalyst was almost remained the same up to 5th cycle (Fig. S13b and S14b, ESI†).",
      "value_text": "efficiency almost the same up to the 5th cycle (magnetic recovery, washing and drying between cycles)"
+    },
+    {
+     "property": "particle_size_TEM",
+     "value_text": "15–20 nm (taille moyenne des nanoparticules de CuFe2O4, Fig. 2)",
+     "unit": "nm",
+     "quote": "average particle size of the CuFe2O4 nanoparticles are 15–20 nm"
     }
    ],
    "missing_fields": [
@@ -802,7 +818,7 @@
      "technique": "DRS",
      "result": "bande interdite optique de 1,50 eV (fonction de Kubelka–Munk)",
      "instrument": "JASCO V-770",
-     "conditions": null,
+     "conditions": "bande interdite calculée à partir du tracé de la fonction de Kubelka–Munk en fonction de l'énergie du photon",
      "quote": "These band gap values of CuFe2O4 closely match with the experimentally determined optical band gap value of CuFe2O4 (1.50 eV) (measured by Diffusive Reflection Spectra Fig. S11, ESI†), as well as the reported values in the literature Table S3 (ESI†)."
     },
     {
@@ -902,6 +918,19 @@
      "quote": "When the catalysis reaction was performed in the presence of pure CuFe2O4 ∼85% conversion of styrene with 37% selectivity of styrene oxide formation were observed. When 96CuFe2O4–4RGO was used as catalyst the conversion of styrene was increased up to ∼90%, and the selectivity of styrene oxide formation was increased significantly up to ∼65% (Fig. 5). The reaction was carried out at 80 °C for 8 h.",
      "value_num": 37,
      "unit": "%"
+    },
+    {
+     "property": "particle_size_TEM",
+     "value_text": "15–20 nm (taille moyenne des nanoparticules de CuFe2O4, Fig. 2)",
+     "unit": "nm",
+     "quote": "average particle size of the CuFe2O4 nanoparticles are 15–20 nm"
+    },
+    {
+     "property": "crystallite_size_Scherrer",
+     "value_num": 14,
+     "value_text": "∼14 nm",
+     "unit": "nm",
+     "quote": "The crystallite size of CuFe2O4 nanoparticle was determined by Scherrer's equation using (311) plane of CuFe2O4 and found to be ∼14 nm."
     }
    ]
   },
@@ -922,7 +951,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -1092,7 +1122,13 @@
      "action": "add",
      "description": "Ajouter lentement l'eau déionisée.",
      "quote": "After that 60ml of deionized water was added slowly",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "addition_mode",
+       "value_text": "slowly",
+       "quote": "After that 60ml of deionized water was added slowly"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "addition_rate",
@@ -1163,7 +1199,8 @@
      ],
      "equipment": [],
      "not_stated": [
-      "repetitions"
+      "repetitions",
+      "wash_volume"
      ]
     },
     {
@@ -1182,7 +1219,8 @@
      "equipment": [],
      "not_stated": [
       "duration",
-      "atmosphere"
+      "atmosphere",
+      "drying_mode"
      ]
     }
    ],
@@ -1233,6 +1271,20 @@
      "quote": "TGA thermogram of GO showed that (i) ∼16% weight loss in the temperature range of 30–100 °C, which might be due to the loss of surface adsorbed water molecules, and (ii) ∼5% weight loss in 100–200 °C range, and ∼26 wt% loss in 200–275 °C range, which were due to the loss of oxygen-containing groups (e.g. carbonyl, carboxyl, epoxy groups, etc.) from the surface of GO sheets, (iii) in the temperature range of ∼300 to 600 °C, the oxidative decomposition of C atoms of GO occurred.",
      "value_num": 26,
      "unit": "wt%"
+    },
+    {
+     "property": "TGA_weight_loss_30_100C",
+     "value_num": 16,
+     "value_text": "∼16%",
+     "unit": "%",
+     "quote": "∼16% weight loss in the temperature range of 30–100 °C"
+    },
+    {
+     "property": "TGA_weight_loss_100_200C",
+     "value_num": 5,
+     "value_text": "∼5%",
+     "unit": "%",
+     "quote": "∼5% weight loss in 100–200 °C range"
     }
    ],
    "missing_fields": [
@@ -1446,6 +1498,13 @@
      "instrument": "IVIUMSTAT",
      "conditions": "0,01 à 10 000 Hz au potentiel de circuit ouvert, amplitude 0,01 V",
      "quote": "Electrochemical Impedance Spectroscopy (EIS) measurements were conducted in the frequency range of 0.01–10 000 Hz at open circuit potential with an alternating current amplitude of 0.01 V. ## Characterization and instrumentation Room temperature powder X-ray diffraction (XRD) patterns of the synthesized materials were recorded using a powder X-ray diffractometer (Mini Flex II, Rigaku, Japan) with Cu Kα (λ = 0.15405 nm) radiation at a scanning speed of 3° min−1."
+    },
+    {
+     "technique": "cycling (GCD)",
+     "instrument": "galvanostat–potentiostat (IVIUMSTAT 10 V/5 A/8 MHz)",
+     "conditions": "électrolyte KOH 3 M ; courant constant de 6 A g−1, plus de 2000 cycles",
+     "result": "rétention de ~85 % de la capacité spécifique après 2000 cycles (172 F g−1 à 6 A g−1)",
+     "quote": "Cycling behavior of 96CuFe2O4–4RGO electrode has been investigated at a constant current density of 6 A g−1 for more than 2000 cycles using both the electrolytes"
     }
    ],
    "outcomes": [
@@ -1578,6 +1637,29 @@
      "unit": "W h kg−1",
      "value_text": "2.4 W h kg−1 at 460 W kg−1"
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "CV",
+     "instrument": "galvanostat–potentiostat (IVIUMSTAT 10 V/5 A/8 MHz)",
+     "conditions": "électrolyte KOH 3 M ; fenêtre 0 à 0,6 V ; vitesses de balayage 10 à 100 mV s−1 ; Ag/AgCl en référence, fil de Pt en contre-électrode",
+     "result": "paire de pics cathodique/anodique à 0,35/0,48 V",
+     "quote": "The presence of a pair of cathodic and anodic peaks (0.35/0.48 V) in the CV curve of pure CuFe2O4 electrode"
+    },
+    {
+     "technique": "GCD",
+     "instrument": "galvanostat–potentiostat (IVIUMSTAT 10 V/5 A/8 MHz)",
+     "conditions": "électrolyte KOH 3 M ; densités de courant 2 à 10 A g−1",
+     "result": "capacité spécifique de 83 F g−1 à 2 A g−1, décroissant jusqu'à 9 F g−1 à 10 A g−1",
+     "quote": "GCD behavior of the pure CuFe2O4 with varying current densities from 2 to 10 A g−1 in 3 M KOH"
+    },
+    {
+     "technique": "EIS",
+     "instrument": "galvanostat–potentiostat (IVIUMSTAT 10 V/5 A/8 MHz)",
+     "conditions": "0,01 à 10 000 Hz au potentiel de circuit ouvert, amplitude 0,01 V",
+     "result": "Rct ~26 Ω",
+     "quote": "The estimated Rct values of pure CuFe2O4 and 96CuFe2O4–4RGO were ∼26 and ∼5 Ω respectively."
+    }
    ]
   },
   {
@@ -1628,6 +1710,22 @@
      "value_num": 72,
      "unit": "F g−1",
      "value_text": "decreased from 152 to 72 F g−1 (2–10 A g−1)"
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "GCD",
+     "instrument": "galvanostat–potentiostat (IVIUMSTAT 10 V/5 A/8 MHz)",
+     "conditions": "densités de courant 2 à 10 A g−1",
+     "result": "capacité spécifique de 152 F g−1 à 2 A g−1, décroissant jusqu'à 72 F g−1 à 10 A g−1",
+     "quote": "The highest specific capacitance of RGO was 152 F g−1 at the charge density of 2 A g−1, and it was decreased from 152 to 72 F g−1 when current density was increased from 2–10 A g−1"
+    },
+    {
+     "technique": "FESEM",
+     "instrument": "Quanta 250 FEG (FEI)",
+     "conditions": null,
+     "result": "agglomération des feuillets de RGO (Fig. S19)",
+     "quote": "FESEM micrograph of synthesized RGO reveals the agglomeration of RGO sheets (Fig. S19, ESI†)."
     }
    ]
   },
@@ -1718,6 +1816,29 @@
      "unit": "%",
      "value_text": "∼92%"
     }
+   ],
+   "characterizations": [
+    {
+     "technique": "CV",
+     "instrument": "galvanostat–potentiostat (IVIUMSTAT 10 V/5 A/8 MHz)",
+     "conditions": "électrolyte KOH 3 M + K4[Fe(CN)6] 0,1 M ; fenêtre 0 à 0,6 V ; vitesses de balayage 10 à 100 mV s−1",
+     "result": "paire de pics redox à 0,32/0,40 V",
+     "quote": "During CV measurements of 96CuFe2O4–4RGO electrode at different scan rate (10–100 mV s−1)"
+    },
+    {
+     "technique": "GCD",
+     "instrument": "galvanostat–potentiostat (IVIUMSTAT 10 V/5 A/8 MHz)",
+     "conditions": "électrolyte KOH 3 M + K4[Fe(CN)6] 0,1 M ; densités de courant 2 à 10 A g−1",
+     "result": "capacité spécifique de 797 F g−1 à 2 A g−1, décroissant jusqu'à 266 F g−1 à 10 A g−1",
+     "quote": "From GCD analysis, the specific capacitance of 96CuFe2O4–4RGO electrode was also measured in 3 M KOH + 0.1 M K4[Fe(CN)6] electrolyte"
+    },
+    {
+     "technique": "cycling (GCD)",
+     "instrument": "galvanostat–potentiostat (IVIUMSTAT 10 V/5 A/8 MHz)",
+     "conditions": "électrolyte KOH 3 M + K4[Fe(CN)6] 0,1 M ; courant constant de 6 A g−1, plus de 2000 cycles",
+     "result": "rétention de ~92 % de la capacité spécifique après 2000 cycles (343 F g−1 à 6 A g−1)",
+     "quote": "Cycling behavior of 96CuFe2O4–4RGO electrode has been investigated at a constant current density of 6 A g−1 for more than 2000 cycles using both the electrolytes"
+    }
    ]
   },
   {
@@ -1794,7 +1915,15 @@
      "not_stated": []
     }
    ],
-   "characterizations": [],
+   "characterizations": [
+    {
+     "technique": "GCD",
+     "instrument": "galvanostat–potentiostat (IVIUMSTAT 10 V/5 A/8 MHz)",
+     "conditions": "cellule à deux électrodes ; électrolyte KOH 3 M + K4[Fe(CN)6] 0,1 M ; 2 A g−1",
+     "result": "capacité spécifique de 160 F g−1 à 2 A g−1",
+     "quote": "The value of specific capacitance in this condition obtained was 160 F g−1 at a current density of 2 A g−1."
+    }
+   ],
    "outcomes": [
     {
      "property": "specific_capacitance_2Ag-1_two_electrode",
@@ -2036,6 +2165,22 @@
   {
    "where": "Electrodes, capacités « 6 A g−1 »",
    "issue": "172 et 343 F g−1 sont tirées de l'essai de cyclage ; l'article les donne avec 6 A g−1 sans préciser qu'il s'agit de l'état stabilisé (Fig. 9 : plateau ≈ 172/≈ 345 contre ≈ 205/≈ 380 au départ, lecture de la critique)."
+  },
+  {
+   "where": "CuFe2O4, taille de cristallite (complément)",
+   "issue": "« The crystallite size of CuFe2O4 nanoparticle ... ∼14 nm » (Scherrer, plan (311)) ne nomme pas l'échantillon mesuré ; rattaché à CuFe2O4 pur parce que la phrase parle de « CuFe2O4 nanoparticle » et que les pics (311) existent dans tous les diffractogrammes. Attribution à confirmer."
+  },
+  {
+   "where": "Taille de particule MET (complément)",
+   "issue": "Les 15–20 nm de la MET (Fig. 2) sont donnés pour « CuFe2O4 nanoparticles » sur les micrographies de CuFe2O4 pur et du nanocomposite (Fig. 2 : 96CuFe2O4–4RGO selon l'inventaire) ; la valeur est reportée sur ces deux voies."
+  },
+  {
+   "where": "Conditions TGA / MEB / MET / VSM / EDS (complément)",
+   "issue": "L'article ne donne ni atmosphère, ni débit, ni rampe pour la TGA (DTA-60), ni tension d'accélération ni nombre de particules comptées pour la MET et le MEB, ni champ maximal pour le VSM : conditions laissées vides, rien déduit."
+  },
+  {
+   "where": "Résultats DFT (complément)",
+   "issue": "Énergie de liaison −4,38 eV, distance interfaciale 2,85 Å, expansion de ~4,3 %, bandes interdites calculées 1,62 et 1,43 eV portent sur le modèle de superréseau CuFe2O4–graphène, pas sur un échantillon synthétisé : non ajoutés aux résultats des voies."
   }
  ]
 }
