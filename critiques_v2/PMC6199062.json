@@ -1,0 +1,120 @@
+{
+ "pmcid": "PMC6199062",
+ "verdict": "corrections_mineures",
+ "findings": [
+  {
+   "severity": "faux",
+   "where": "annotation mecanisme_analyse (Sb2S3-150), phrase sur l'excès de soufre",
+   "extracted": "Le rapport 3 mmol de cystéine pour 2 mmol de SbCl3 apporte un excès de soufre par rapport à Sb2S3 (3 S pour 2 Sb)",
+   "article_says": "3 mmol l-cysteine was dissolved in 30 mL distilled water under magnetic stirring for 15 min",
+   "fix": "Supprimer « excès » : 2 mmol SbCl3 donnent 1 mmol Sb2S3, qui demande 3 mmol S ; 3 mmol de cystéine (si chacune libère un S) apportent exactement la stœchiométrie, pas un excès. Reformuler en « apport stœchiométrique (3 S pour 2 Sb) si chaque cystéine libère un soufre ».",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "annotation resume, dernière phrase",
+   "extracted": "la microsphère creuse garde la meilleure capacité et la meilleure tenue en cyclage",
+   "article_says": "The Sb2S3-120 electrode exhibits a higher discharge capacity than Sb2S3-150 at low current densities in the first 20 cycles.",
+   "fix": "Nuancer : Sb2S3-120 a la capacité la plus haute à faible courant et pendant les 20 à 30 premiers cycles ; Sb2S3-150 a la meilleure capacité conservée après cyclage et à fort courant.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "attribution",
+   "where": "v3: comparisons, lignes « Hydrothermal reaction and mechanical milling » (Sb2S3-graphite) et « Solid-state routes » (Sb2S3/C), ref_id CR53 et CR54",
+   "extracted": "Sb2S3-graphite (Hydrothermal reaction and mechanical milling) ref_id CR53 ; Sb2S3/C (Solid-state routes) ref_id CR54",
+   "article_says": "The Sb2S3/C prepared using the solid-state method [] offered a high specific capacity of 600 mAh g−1 after 100 cycles",
+   "fix": "L'article est incohérent avec lui-même : le texte renvoie le procédé solide-état à CR53 et le graphite hydrothermal + broyage à CR54 (et la bibliographie le confirme : CR53 = Park et al., Stibnite and its amorphous composite ; CR54 = Zhao et Manthiram, Amorphous Sb2S3 embedded in graphite), alors que les renvois imprimés dans le tableau 2 sont inversés. Garder les ids du tableau mais ajouter dans `conditions` la mention du conflit texte/tableau, ou retenir CR54/CR53 selon texte et bibliographie.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: comparisons, valeurs de l'introduction sur Yi et al. (CR18), capacités en vitesse",
+   "extracted": "absent : seules 548 mAh g−1 (100 cycles) est extraite pour Yi et al.",
+   "article_says": "Discharge capacities of 659.7, 564.9, 434.2, and 300.5 mAh g−1 are achieved at current densities of 100, 200, 500, and 1000 mA g−1, respectively.",
+   "fix": "Ajouter quatre entrées comparisons (specific_capacity_discharge_rate) pour Sb2S3 de Yi et al., ref_id CR18, LIB, 659.7 / 564.9 / 434.2 / 300.5 mAh g−1 à 100 / 200 / 500 / 1000 mA g−1 (la phrase suit celle de CR18 ; attribution à Yi et al. à confirmer par la phrase précédente).",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: Cell_LIB_Sb2S3-150, Cell_LIB_Sb2S3-120, Cell_LIB_Sb2S3-180, efficacité coulombique après les premiers cycles",
+   "extracted": "absent des résultats (seulement dans une annotation tendance_observee)",
+   "article_says": "After the first few charge/discharge cycles, the CE rapidly increases to about 99% for all three electrodes.",
+   "fix": "Ajouter coulombic_efficiency (≈ 99 %, après les premiers cycles) sur les trois voies Cell_LIB, measured_by gcd_lib, avec cette citation.",
+   "confidence": "sure"
+  },
+  {
+   "severity": "manquant",
+   "where": "v3: Sb2S3-150, tem_1, angle entre plans lu sur la Fig. 3b",
+   "extracted": "absent",
+   "article_says": "Figure 3b exhibits clear lattice fringes and showed that the interplanar distance between the adjacent lattices is 0.37 and 0.56 nm",
+   "fix": "La Fig. 3b (corpus/fig/PMC6199062/40820_2017_165_Fig3_HTML.jpg) porte l'annotation « 71° » entre les plans (101) et (200), absente du texte. Ajouter un résultat (angle interplanaire, 71°, from_figure) si l'on veut tout le chiffré des figures ; sinon laisser (valeur mineure).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "v3: cv_lib, eis_lib, cv_nib, eis_nib, réglage measurement_temperature = room temperature",
+   "extracted": "room temperature",
+   "article_says": "The charge/discharge measurements of the Sb2S3 electrodes were taken on a Neware battery test system at room temperature.",
+   "fix": "La phrase vise les mesures de charge-décharge sur Neware ; CV et EIS ont été faites sur Zahner Zennium, sans température écrite. Garder le réglage sur gcd_lib et gcd_nib ; déclarer measurement_temperature dans not_stated de cv_* et eis_*.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: gcd_lib et gcd_nib, réglage current_density ; eis_lib et eis_nib, réglage current_density",
+   "extracted": "gcd_lib : « 50 à 5000 mA g−1 (essai de vitesse, 5 cycles par vitesse) ; 200 puis 500 mA g−1 et 1000 mA g−1 (cyclage) » ; eis : « … ; circuit ouvert avant cyclage »",
+   "article_says": "evaluated at various current densities from 50 to 5000 mA g−1 in the voltage range of 0.01–2.0 V (vs. Li/Li+), and the samples were tested for five cycles at each current density",
+   "fix": "La citation ne soutient que la partie essai de vitesse (50 à 5000 mA g−1, cinq cycles par vitesse). Les cyclages à 200, 500 et 1000 mA g−1 (Fig. 4d, 4f ; Fig. 5c) et le « circuit ouvert avant cyclage » (légendes 4g, 5e) viennent d'autres phrases : les extraire en réglages séparés avec leur propre citation, ou raccourcir la valeur à ce que la citation dit.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "deduit",
+   "where": "v3: eis_lib, réglage fitting = equivalent electrical circuit model (Rs, Rct, CPE, Wo)",
+   "extracted": "equivalent electrical circuit model (Rs, Rct, CPE, Wo)",
+   "article_says": "The EIS data were analyzed by fitting with an equivalent electrical circuit model (Fig. 4i)",
+   "fix": "Rs, Rct, CPE et Wo ne sont pas dans le texte : ils se lisent sur la Fig. 4i (vérifié : Rs – Rct//CPE1 – Wo). Soit marquer la valeur comme lue sur figure, soit écrire seulement « equivalent electrical circuit model (Fig. 4i) ».",
+   "confidence": "sure"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: fft_1, technique SAED",
+   "extracted": "technique SAED, propriété phase_fft, measured_by fft_1",
+   "article_says": "The fast Fourier transform (FFT) pattern (Fig. 3c) reveals that the observed reflections of the Sb2S3-150 sample are uniquely indexed in the orthorhombic Sb2S3",
+   "fix": "SAED est défini comme diffraction électronique en aire sélectionnée ; l'article décrit la FFT d'une image HRTEM (Fig. 3b), pas une diffraction. Ranger la mesure sous TEM (même appareil que tem_1, sample_preparation non cité) ou ajouter un nom de technique « FFT d'image HRTEM » avec définition.",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "v3: Sb2S3-150 steps 3 et 7, not_stated 'beaker_volume' et 'separation_method'",
+   "extracted": "not_stated: beaker_volume (étape add), separation_method (étape collect)",
+   "article_says": "The Sb2S3 was gathered and washed several times with absolute ethyl alcohol and deionized water",
+   "fix": "Ces noms ne sont pas dans la liste des paramètres de contexte_agents.md ; l'action add n'a que la case addition_mode et collect n'a aucune case. Les retirer ou les ajouter au vocabulaire avec définition (le manque réel est déjà dit dans l'annotation limite_reproductibilite).",
+   "confidence": "probable"
+  },
+  {
+   "severity": "mineur",
+   "where": "Cell_LIB_Sb2S3-150, specific_capacity_discharge_rate_50mAg = 1379 mAh g−1",
+   "extracted": "1379 mAh g−1 (valeur du texte, aucune lecture de figure)",
+   "article_says": "the Sb2S3-150 electrode presents discharge capacities of 1379, 831, 774, 727, 677, 639, 601, 568, and 541 mAh g−1, respectively",
+   "fix": "Sur la Fig. 4b, le palier à 50 mA g−1 est vers 900–1000 mAh g−1 et seul le premier cycle atteint ≈ 1400 : 1379 correspond probablement au premier cycle, pas à la capacité à 50 mA g−1. Valeur du texte à garder (la citation fait foi) ; ajouter une annotation limite_reproductibilite sur cet écart texte/figure (déjà en DOUTE, pas en annotation).",
+   "confidence": "probable"
+  }
+ ],
+ "coverage_check": {
+  "branches_in_article": 3,
+  "branches_extracted": 3,
+  "not_stated_checked": 44,
+  "not_stated_wrong": 0
+ },
+ "reproducibility_gaps": [
+  "pureté et fournisseur de l-cystéine et SbCl3",
+  "vitesse d'agitation, taille du bécher",
+  "taux de remplissage de l'autoclave (non écrit ; 60 mL dans 80 mL calculable), vitesse de chauffe, refroidissement",
+  "méthode de séparation du solide, volume et nombre de lavages, pression du séchage sous vide, rendement",
+  "rayonnement et pas de la DRX, tension d'accélération du FIB-SEM, du MET et de l'EDS",
+  "électrode : quantités absolues de CMC/noir d'acétylène/matière active, collecteur de courant, mode d'enduction, séchage, épaisseur",
+  "pile : type (bouton ?), volume d'électrolyte ; EIS : plage de fréquences et amplitude",
+  "annexe : seules les légendes de Fig. S1 à S4 sont lisibles ; capacités de Sb2S3-120 et -180 dans les essais de vitesse non chiffrées"
+ ],
+ "mechanism_check": "à revoir : l'annotation mecanisme_analyse affirme un excès de soufre (3 S pour 2 Sb) alors que 3 mmol de cystéine pour 2 mmol de SbCl3 donnent exactement la stœchiométrie Sb2S3 ; le reste (Ostwald des auteurs, hypothèse cystéine source de S) est signalé comme hypothèse.",
+ "notes": "Valeurs numériques du texte et des tableaux 1 et 3 toutes vérifiées (attribution 120/150/180 correcte, ordre « respectively » respecté) ; toutes les citations sont des sous-chaînes du texte. Non retenu comme constat : measured_by sem_1 pour les tailles de nanofils et de microsphères alors que Fig. 2 g-i sont des images MET (interprétation, tem_1 aussi défendable) ; capacité de 458 mAh g−1 de la conclusion contre 469 (déjà en doute) ; valeurs en vitesse de Sb2S3-120 et -180 (Fig. 4b, 5b) illisibles avec précision ; rayons ioniques Na+ 102 pm et Li+ 76 pm (constantes de la littérature, hors périmètre). Les 3 voies LIB et 3 voies NIB par échantillon sont correctement séparées de la synthèse. method_sources vide : correct (aucun renvoi ne soutient une méthode)."
+}
