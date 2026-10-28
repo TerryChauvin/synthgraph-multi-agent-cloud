@@ -29,8 +29,12 @@ Chaque ligne : ce qui a été testé, l'hypothèse, le résultat, et si le test 
 | Le pilote a-t-il comblé les valeurs absentes ? | oui | 1 % des cellules de tableaux, 11 % des nombres du texte | **négatif** : la consigne visait autre chose | `audits/couverture_valeurs.md` |
 | Valeurs « hors périmètre » | littérature, statistiques, DFT, références sont inutiles | objection de l'utilisateur, retenue : elles servent à comprendre et comparer la mesure ; table `comparisons` et voies `calcul` ajoutées | négatif (périmètre élargi) | ce registre |
 
+| Test de complétude (20 publications par strates) | l'extraction contient l'essentiel ; la mesure de couverture repère les publications à compléter | synthèse complète dans 20/20 ; 557 résultats, 178 conditions, 341 valeurs de littérature, 5 voies de calcul ajoutés ; couverture des tableaux 83 → 99,9 % ; témoins aussi lacunaires que les sélectionnées ; critique : 1 faux sur 630 hors erreur de source (réponses aux relecteurs, 25 faux, corrigée) | **positif** sur la synthèse ; **négatif** sur l'exhaustivité des propriétés et réglages ; **négatif** sur la sélection | `audits/test_completude.md` |
+| Grille de synthèse (`load.py`) | chaque case attendue est citée ou déclarée absente, à bon escient | remplie à 100 % (imposée) ; ≈ 10 % des « non cité » de température, durée et pureté suspects (valeur présente dans la citation de l'étape) ; réglages hors grille souvent ni extraits ni déclarés (agitation 84 %, remplissage 95 %, refroidissement 53 %) | **positif** sur le remplissage ; **négatif** sur la justesse partielle et l'étendue | `audits/audit_grilles.md` |
+| Grille de caractérisation | les réglages de chaque mesure sont extraits | aucune grille imposée ; réglages présents dans la base très en dessous de ce que disent les articles (plage XRD 46 % contre 97 %, électrolyte 33 % contre 99 %, masse active 1 % contre 44 %) ; pas de lien valeur → mesure | **négatif** | `audits/audit_grilles.md` |
+
 ## En cours
 
 | Test | Hypothèse | Plan |
 |---|---|---|
-| Test de complétude (20 publications, `PROMPT_TEST_COMPLETUDE.md`) | l'extraction contient l'essentiel ; la mesure de couverture repère les publications à compléter | tirage par strates (`audits/test_completude/tirage.json`) : 7 à forte lacune de valeurs (strate de 102), 6 à fortes alertes de conditions (170), 7 témoins (208) ; lecture intégrale, ajout de ce qui manque, relevé du tri par élément ; critique des ajouts sur 4 |
+| — | — | aucun test en cours |
