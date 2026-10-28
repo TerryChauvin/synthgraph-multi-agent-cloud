@@ -192,7 +192,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -258,7 +259,8 @@
       "concentration",
       "volume",
       "temperature",
-      "stirring_speed"
+      "stirring_speed",
+      "ph"
      ]
     },
     {
@@ -278,7 +280,9 @@
       "duration",
       "stirring_speed",
       "addition_rate",
-      "fill_fraction"
+      "fill_fraction",
+      "autoclave_volume",
+      "addition_mode"
      ]
     },
     {
@@ -310,7 +314,8 @@
      "not_stated": [
       "heating_rate",
       "cooling_rate",
-      "pressure"
+      "pressure",
+      "cooling_mode"
      ]
     },
     {
@@ -399,7 +404,7 @@
      "technique": "UV-DRS",
      "result": "band gap 2.20 eV (Tauc plot, Kubelka–Munk function)",
      "instrument": "Jasco UV-VIS-NIR spectrophotometer (UV-670)",
-     "conditions": null,
+     "conditions": "diffuse reflectance spectroscopy; reflectance converted to the Kubelka–Munk function F(R); Tauc plot of [F(R)·hν]n against photon energy hν (value of n not given)",
      "quote": "CS_Na2S | 2.20 | 1.75"
     },
     {
@@ -429,6 +434,13 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "XPS valence band",
+     "result": "VBM 1.05 eV, CBM −1.15 eV",
+     "instrument": null,
+     "conditions": "VBM read from the XPS valence band spectra (Fig. 11); CBM calculated from the UV-DRS band gap",
+     "quote": "The VBM values were obtained from the valence band spectra shown in Fig. 11, and the CBM values were calculated using the values obtained from UV-DRS spectra."
     }
    ],
    "outcomes": [
@@ -555,6 +567,27 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "UV-DRS",
+     "result": "band gap 2.07 eV (Tauc plot, Kubelka–Munk function)",
+     "instrument": "Jasco UV-VIS-NIR spectrophotometer (UV-670)",
+     "conditions": "diffuse reflectance spectroscopy; reflectance converted to the Kubelka–Munk function F(R); Tauc plot of [F(R)·hν]n against photon energy hν (value of n not given)",
+     "quote": "From analysis of Tauc plots, all of the bare CdS samples showed a bandgap energy falling into the visible-light portion of the electromagnetic spectrum, i.e., 2.20, 2.37, 2.35 and 2.07 eV for CS_Na2S, CS_PEG3350, CS_PEG9000 and CS_EDTA, respectively."
+    },
+    {
+     "technique": "BET (N2 adsorption–desorption)",
+     "result": "specific surface area 4.9 m2 g−1",
+     "instrument": null,
+     "conditions": "N2 adsorption–desorption",
+     "quote": "In contrast, CdS samples with hierarchical morphologies, CS_EDTA, CS_PEG9000 and CS_PEG3350, showed lower surface areas of 4.9, 1.3 and 1.2 m2 g−1, respectively."
+    },
+    {
+     "technique": "PL",
+     "result": "higher than CS_Na2S (higher recombination rate)",
+     "instrument": "Jasco Spectrofluorometer (FP-6300)",
+     "conditions": null,
+     "quote": "In comparison, CS_PEG3350, CS_PEG9000 and CS_EDTA showed higher PL intensities, corresponding to higher recombination rates."
     }
    ],
    "outcomes": [
@@ -663,6 +696,27 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "UV-DRS",
+     "result": "band gap 2.37 eV (Tauc plot, Kubelka–Munk function)",
+     "instrument": "Jasco UV-VIS-NIR spectrophotometer (UV-670)",
+     "conditions": "diffuse reflectance spectroscopy; reflectance converted to the Kubelka–Munk function F(R); Tauc plot of [F(R)·hν]n against photon energy hν (value of n not given)",
+     "quote": "From analysis of Tauc plots, all of the bare CdS samples showed a bandgap energy falling into the visible-light portion of the electromagnetic spectrum, i.e., 2.20, 2.37, 2.35 and 2.07 eV for CS_Na2S, CS_PEG3350, CS_PEG9000 and CS_EDTA, respectively."
+    },
+    {
+     "technique": "BET (N2 adsorption–desorption)",
+     "result": "specific surface area 1.2 m2 g−1",
+     "instrument": null,
+     "conditions": "N2 adsorption–desorption",
+     "quote": "In contrast, CdS samples with hierarchical morphologies, CS_EDTA, CS_PEG9000 and CS_PEG3350, showed lower surface areas of 4.9, 1.3 and 1.2 m2 g−1, respectively."
+    },
+    {
+     "technique": "PL",
+     "result": "higher than CS_Na2S (higher recombination rate)",
+     "instrument": "Jasco Spectrofluorometer (FP-6300)",
+     "conditions": null,
+     "quote": "In comparison, CS_PEG3350, CS_PEG9000 and CS_EDTA showed higher PL intensities, corresponding to higher recombination rates."
     }
    ],
    "outcomes": [
@@ -771,6 +825,27 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "UV-DRS",
+     "result": "band gap 2.35 eV (Tauc plot, Kubelka–Munk function)",
+     "instrument": "Jasco UV-VIS-NIR spectrophotometer (UV-670)",
+     "conditions": "diffuse reflectance spectroscopy; reflectance converted to the Kubelka–Munk function F(R); Tauc plot of [F(R)·hν]n against photon energy hν (value of n not given)",
+     "quote": "From analysis of Tauc plots, all of the bare CdS samples showed a bandgap energy falling into the visible-light portion of the electromagnetic spectrum, i.e., 2.20, 2.37, 2.35 and 2.07 eV for CS_Na2S, CS_PEG3350, CS_PEG9000 and CS_EDTA, respectively."
+    },
+    {
+     "technique": "BET (N2 adsorption–desorption)",
+     "result": "specific surface area 1.3 m2 g−1",
+     "instrument": null,
+     "conditions": "N2 adsorption–desorption",
+     "quote": "In contrast, CdS samples with hierarchical morphologies, CS_EDTA, CS_PEG9000 and CS_PEG3350, showed lower surface areas of 4.9, 1.3 and 1.2 m2 g−1, respectively."
+    },
+    {
+     "technique": "PL",
+     "result": "higher than CS_Na2S (higher recombination rate)",
+     "instrument": "Jasco Spectrofluorometer (FP-6300)",
+     "conditions": null,
+     "quote": "In comparison, CS_PEG3350, CS_PEG9000 and CS_EDTA showed higher PL intensities, corresponding to higher recombination rates."
     }
    ],
    "outcomes": [
@@ -831,7 +906,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -943,7 +1019,8 @@
      "not_stated": [
       "concentration",
       "volume",
-      "temperature"
+      "temperature",
+      "ph"
      ]
     },
     {
@@ -962,7 +1039,8 @@
      "not_stated": [
       "temperature",
       "stirring_speed",
-      "addition_rate"
+      "addition_rate",
+      "addition_mode"
      ]
     },
     {
@@ -981,7 +1059,9 @@
      "not_stated": [
       "temperature",
       "stirring_speed",
-      "addition_rate"
+      "addition_rate",
+      "addition_mode",
+      "ph"
      ]
     },
     {
@@ -1035,7 +1115,8 @@
      "equipment": [],
      "not_stated": [
       "atmosphere",
-      "pressure"
+      "pressure",
+      "drying_mode"
      ]
     },
     {
@@ -1061,7 +1142,9 @@
      "not_stated": [
       "atmosphere",
       "heating_rate",
-      "cooling_rate"
+      "cooling_rate",
+      "vessel",
+      "cooling_mode"
      ]
     }
    ],
@@ -1084,7 +1167,7 @@
      "technique": "UV-DRS",
      "result": "band gap 1.75 eV, lower than bare CS_Na2S (2.20 eV)",
      "instrument": "Jasco UV-VIS-NIR spectrophotometer (UV-670)",
-     "conditions": null,
+     "conditions": "diffuse reflectance spectroscopy; reflectance converted to the Kubelka–Munk function F(R); Tauc plot of [F(R)·hν]n against photon energy hν (value of n not given)",
      "quote": "CS_Na2S | 2.20 | 1.75"
     },
     {
@@ -1093,6 +1176,20 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "PL",
+     "result": "lowest among the Pd-impregnated samples of the four morphologies",
+     "instrument": "Jasco Spectrofluorometer (FP-6300)",
+     "conditions": null,
+     "quote": "Similar trends of intensities were observed for the Pd-impregnated samples; i.e., PCS_Na2S showed the lowest intensity while PCS_PEG3300, PCS_PEG9000 and PCS_EDTA showed higher intensities."
+    },
+    {
+     "technique": "XPS valence band",
+     "result": "VBM 1.05 eV, CBM −0.70 eV",
+     "instrument": null,
+     "conditions": "VBM read from the XPS valence band spectra (Fig. 11); CBM calculated from the UV-DRS band gap",
+     "quote": "The VBM values were obtained from the valence band spectra shown in Fig. 11, and the CBM values were calculated using the values obtained from UV-DRS spectra."
     }
    ],
    "outcomes": [
@@ -1213,6 +1310,20 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "UV-DRS",
+     "result": "band gap 1.99 eV (Tauc plot, Kubelka–Munk function)",
+     "instrument": "Jasco UV-VIS-NIR spectrophotometer (UV-670)",
+     "conditions": "diffuse reflectance spectroscopy; reflectance converted to the Kubelka–Munk function F(R); Tauc plot of [F(R)·hν]n against photon energy hν (value of n not given)",
+     "quote": "For Pd-impregnated CdS, it was observed that the bandgap of all the materials decreased; i.e., 1.75, 2.34, 2.30 and 1.99 eV for CS_Na2S, CS_PEG3350, CS_PEG9000 and CS_EDTA, respectively."
+    },
+    {
+     "technique": "PL",
+     "result": "higher than PCS_Na2S",
+     "instrument": "Jasco Spectrofluorometer (FP-6300)",
+     "conditions": null,
+     "quote": "Similar trends of intensities were observed for the Pd-impregnated samples; i.e., PCS_Na2S showed the lowest intensity while PCS_PEG3300, PCS_PEG9000 and PCS_EDTA showed higher intensities."
     }
    ]
   },
@@ -1279,6 +1390,20 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "UV-DRS",
+     "result": "band gap 2.34 eV (Tauc plot, Kubelka–Munk function)",
+     "instrument": "Jasco UV-VIS-NIR spectrophotometer (UV-670)",
+     "conditions": "diffuse reflectance spectroscopy; reflectance converted to the Kubelka–Munk function F(R); Tauc plot of [F(R)·hν]n against photon energy hν (value of n not given)",
+     "quote": "For Pd-impregnated CdS, it was observed that the bandgap of all the materials decreased; i.e., 1.75, 2.34, 2.30 and 1.99 eV for CS_Na2S, CS_PEG3350, CS_PEG9000 and CS_EDTA, respectively."
+    },
+    {
+     "technique": "PL",
+     "result": "higher than PCS_Na2S",
+     "instrument": "Jasco Spectrofluorometer (FP-6300)",
+     "conditions": null,
+     "quote": "Similar trends of intensities were observed for the Pd-impregnated samples; i.e., PCS_Na2S showed the lowest intensity while PCS_PEG3300, PCS_PEG9000 and PCS_EDTA showed higher intensities."
     }
    ]
   },
@@ -1345,6 +1470,20 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "UV-DRS",
+     "result": "band gap 2.30 eV (Tauc plot, Kubelka–Munk function)",
+     "instrument": "Jasco UV-VIS-NIR spectrophotometer (UV-670)",
+     "conditions": "diffuse reflectance spectroscopy; reflectance converted to the Kubelka–Munk function F(R); Tauc plot of [F(R)·hν]n against photon energy hν (value of n not given)",
+     "quote": "For Pd-impregnated CdS, it was observed that the bandgap of all the materials decreased; i.e., 1.75, 2.34, 2.30 and 1.99 eV for CS_Na2S, CS_PEG3350, CS_PEG9000 and CS_EDTA, respectively."
+    },
+    {
+     "technique": "PL",
+     "result": "higher than PCS_Na2S",
+     "instrument": "Jasco Spectrofluorometer (FP-6300)",
+     "conditions": null,
+     "quote": "Similar trends of intensities were observed for the Pd-impregnated samples; i.e., PCS_Na2S showed the lowest intensity while PCS_PEG3300, PCS_PEG9000 and PCS_EDTA showed higher intensities."
     }
    ]
   },
@@ -1402,6 +1541,13 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "CO pulse chemisorption",
+     "result": "Pd dispersion 6.8%",
+     "instrument": "U-shaped quartz reactor with TCD detector",
+     "conditions": "about 100 mg of catalyst, pretreatment under helium at 100 °C for 30 min, then 5% CO/He mixture at 30 mL min−1, CO pulses until saturation",
+     "quote": "In order to assess the dispersion of the metal at different metal loadings (1 to 5 wt%), experiments involving CO pulse chemisorption using a TCD detector were carried out."
     }
    ]
   },
@@ -1483,6 +1629,41 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "PL",
+     "result": "lowest PL intensity among all the Pd-loaded samples (1–5 wt%)",
+     "instrument": "Jasco Spectrofluorometer (FP-6300)",
+     "conditions": null,
+     "quote": "Among all the samples prepared with varying loadings of Pd, the 3% Pd-loaded sample showed the lowest PL intensity, indicating efficient suppression of electron–hole pair recombination."
+    },
+    {
+     "technique": "CO pulse chemisorption",
+     "result": "Pd dispersion 4.0%",
+     "instrument": "U-shaped quartz reactor with TCD detector",
+     "conditions": "about 100 mg of catalyst, pretreatment under helium at 100 °C for 30 min, then 5% CO/He mixture at 30 mL min−1, CO pulses until saturation",
+     "quote": "In order to assess the dispersion of the metal at different metal loadings (1 to 5 wt%), experiments involving CO pulse chemisorption using a TCD detector were carried out."
+    },
+    {
+     "technique": "XPS valence band",
+     "result": "VBM 0.52 eV, CB −1.01 eV",
+     "instrument": null,
+     "conditions": "VBM read from the XPS valence band spectra (Fig. 11); CBM calculated from the UV-DRS band gap",
+     "quote": "The VBM values were obtained from the valence band spectra shown in Fig. 11, and the CBM values were calculated using the values obtained from UV-DRS spectra."
+    },
+    {
+     "technique": "photocatalytic recyclability test",
+     "result": "no significant change in activity after 3 cycles",
+     "instrument": null,
+     "conditions": "3 cycles of 12 h each (Fig. 14)",
+     "quote": "To determine the stability of the catalyst for long-term operation, additional experiments were performed to study the recyclability for 3 cycles of 12 h each, as shown in Fig. 14."
+    },
+    {
+     "technique": "AQE calculation (SI S4)",
+     "result": "apparent quantum efficiency 4.1%",
+     "instrument": null,
+     "conditions": "Instrument parameters (SI S4): 0.0187 amp at the detector gives the energy of one sun; area of exposure at detector 0.09 cm2; area of irradiation 50.24 cm2 corresponding to 10.44 amp; Power = Amp × Volts = 10.44 × 120 = 1252.65 W; n = 3.417 × 1021 photons",
+     "quote": "Power = Amp × Volts = 10.44 × 120 = 1252.65 W"
     }
    ],
    "outcomes": [
@@ -1547,6 +1728,11 @@
      "property": "photocatalytic_stability",
      "value_text": "no significant decline in photocatalytic activity over the 12 h test (statement made for all the catalysts)",
      "quote": "No significant decline in photocatalytic activity was observed over time for any of the catalysts, confirming their stable performance for the entire 12 h."
+    },
+    {
+     "property": "PL_intensity_value",
+     "value_num": 19.94,
+     "quote": "26.23 - 19.94 26.23 × 100"
     }
    ]
   },
@@ -1604,6 +1790,13 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "CO pulse chemisorption",
+     "result": "Pd dispersion 2.2%",
+     "instrument": "U-shaped quartz reactor with TCD detector",
+     "conditions": "about 100 mg of catalyst, pretreatment under helium at 100 °C for 30 min, then 5% CO/He mixture at 30 mL min−1, CO pulses until saturation",
+     "quote": "In order to assess the dispersion of the metal at different metal loadings (1 to 5 wt%), experiments involving CO pulse chemisorption using a TCD detector were carried out."
     }
    ]
   },
@@ -1667,6 +1860,20 @@
      "instrument": "Sciencetech Sci Sun 300 solar simulator (Xe lamp, AM 1.5 filter); gas chromatograph with TCD (Mayura Analytical Ltd)",
      "conditions": "quartz reactor with 200 mL distilled water and 50 mL each of 0.6 mM aqueous Na2S and Na2SO3 as sacrificial agents; 50 mg catalyst; magnetic stirring; argon purge at 50 mL min−1 for 20 min then 20 mL min−1; gases analysed by GC every 1 h for 12 h",
      "quote": "Photocatalytic experiments were conducted in a quartz reactor containing 200 mL of distilled water, and 0.6 mM aqueous solutions of Na2S and Na2SO3 of 50 mL each were added as sacrificial agents."
+    },
+    {
+     "technique": "UV-DRS",
+     "result": "band gap 1.43 eV at 5 wt% Pd (Tauc plot analysis)",
+     "instrument": "Jasco UV-VIS-NIR spectrophotometer (UV-670)",
+     "conditions": "diffuse reflectance spectroscopy; reflectance converted to the Kubelka–Munk function F(R); Tauc plot of [F(R)·hν]n against photon energy hν (value of n not given)",
+     "quote": "The band gap energy decreased from 1.75 eV to 1.43 eV with increasing Pd loading."
+    },
+    {
+     "technique": "CO pulse chemisorption",
+     "result": "Pd dispersion 1.6%",
+     "instrument": "U-shaped quartz reactor with TCD detector",
+     "conditions": "about 100 mg of catalyst, pretreatment under helium at 100 °C for 30 min, then 5% CO/He mixture at 30 mL min−1, CO pulses until saturation",
+     "quote": "In order to assess the dispersion of the metal at different metal loadings (1 to 5 wt%), experiments involving CO pulse chemisorption using a TCD detector were carried out."
     }
    ]
   }
@@ -1883,6 +2090,18 @@
   {
    "where": "CS_EDTA / CS_PEG3350 / CS_PEG9000, ajout du gabarit",
    "issue": "Les variations « template » et « sodium sulphide remplacé par thiourée » sont rattachées à l'étape 1 (préparation des solutions de précurseurs), seule étape où l'article mentionne les gabarits (« templates such as PEG 3350, PEG 9000, and EDTA were also added »). L'article ne dit pas dans quelle solution (Cd ou S) ni à quel moment le gabarit est ajouté, ni en quelle quantité."
+  },
+  {
+   "where": "PCS_Na2S_3wt, calcul du rendement quantique apparent (annexe S4)",
+   "issue": "L'annexe écrit « Power = Amp × Volts = 10.44 × 120 = 1252.65 W » (10,44 × 120 donne 1252,8), un nombre de photons de 3.417 × 1021 puis 3.147 × 1021 au dénominateur de l'AQE, et ne dit ni la longueur d'onde ni la bande spectrale de la lumière. Valeurs recopiées telles qu'écrites dans les conditions de mesure, sans correction."
+  },
+  {
+   "where": "Expériences témoins de l'annexe S1",
+   "issue": "L'annexe S1 décrit trois témoins de 3 h (sans photocatalyseur : aucun hydrogène ; avec photocatalyseur mais sans Na2S/Na2SO3 : très peu d'hydrogène ; avec les deux : hydrogène nettement plus élevé), sans dire quel échantillon sert de photocatalyseur ni donner de valeur chiffrée (figure S1 absente du texte). Non rattachés à une voie."
+  },
+  {
+   "where": "PCS_Na2S_3wt, intensités de PL de l'annexe S3",
+   "issue": "L'annexe S3 donne 26.23 (intensité la plus haute) et 19.94 (3 wt% Pd–CdS) sans unité et sans dire quel échantillon porte 26.23 ; seule 19.94 est ajoutée aux résultats de la voie. Figure 9b non lue."
   }
  ]
 }
