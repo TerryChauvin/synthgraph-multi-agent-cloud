@@ -1,0 +1,2317 @@
+{
+ "pmcid": "PMC6154307",
+ "format": 3,
+ "routes": [
+  {
+   "label": "MSN",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "intermediate",
+   "methods": [
+    "templating",
+    "sol_gel",
+    "thermal_treatment"
+   ],
+   "material": {
+    "name": "mesoporous silica nanoparticles (MSNs)",
+    "formula": "SiO2",
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": "monodispersed spherical particles of 200–300 nm with ordered mesopores"
+   },
+   "method": "CTAB-templated, base-catalysed hydrolysis and condensation of TEOS in water (liquid crystal templating), then calcination to remove the surfactant",
+   "quote": "In order to synthesize MSNs, in basic conditions, TEOS and CTAB were used as the silica source and structure-directing agent, respectively",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "cetyltrimethylammonium bromide (CTAB)",
+     "formula": "C19H42BrN",
+     "role": "surfactant",
+     "amount": 1.0,
+     "unit": "g",
+     "purity": "99%",
+     "supplier": "J&K Scientific Ltd., Beijing, China",
+     "supplier_quote": "Cetyltrimethylammonium bromide (CTAB, 99%) and tetraethyl orthosilicate (TEOS) were purchased from J&K Scientific Ltd., Beijing, China, and Fluorochem Ltd., Hadfield, UK, respectively.",
+     "quote": "Four hundred eighty milliliters of deionized water was used to dissolve 1.0 g of CTAB."
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount_text": "Four hundred eighty milliliters",
+     "supplier": "Millipore, USA",
+     "supplier_quote": "Deionized water was obtained from a Milli-Q water purification system from Millipore, USA.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "Four hundred eighty milliliters of deionized water was used to dissolve 1.0 g of CTAB."
+    },
+    {
+     "name": "sodium hydroxide solution (2.0 M)",
+     "formula": "NaOH",
+     "role": "base",
+     "amount": 3.5,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Then, under constant stirring, 3.5 mL of sodium hydroxide (2.0 M) was added into the CTAB solution at room temperature."
+    },
+    {
+     "name": "tetraethyl orthosilicate (TEOS)",
+     "formula": "Si(OC2H5)4",
+     "role": "precursor",
+     "amount": 5.0,
+     "unit": "mL",
+     "supplier": "Fluorochem Ltd., Hadfield, UK",
+     "supplier_quote": "Cetyltrimethylammonium bromide (CTAB, 99%) and tetraethyl orthosilicate (TEOS) were purchased from J&K Scientific Ltd., Beijing, China, and Fluorochem Ltd., Hadfield, UK, respectively.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "5.0 mL of TEOS was introduced drop by drop at the rate of 1.0 mL/min"
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "wash",
+     "quote": "which was washed by ethanol and deionized in water three times"
+    },
+    {
+     "name": "deionized water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "which was washed by ethanol and deionized in water three times"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve CTAB in deionized water.",
+     "quote": "Four hundred eighty milliliters of deionized water was used to dissolve 1.0 g of CTAB.",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "Four hundred eighty milliliters of deionized water was used to dissolve 1.0 g of CTAB.",
+       "value_text": "Four hundred eighty milliliters"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the sodium hydroxide solution to the CTAB solution under constant stirring at room temperature.",
+     "quote": "Then, under constant stirring, 3.5 mL of sodium hydroxide (2.0 M) was added into the CTAB solution at room temperature.",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "Then, under constant stirring, 3.5 mL of sodium hydroxide (2.0 M) was added into the CTAB solution at room temperature.",
+       "value_num": 3.5,
+       "unit": "mL"
+      },
+      {
+       "name": "concentration",
+       "quote": "Then, under constant stirring, 3.5 mL of sodium hydroxide (2.0 M) was added into the CTAB solution at room temperature.",
+       "value_num": 2.0,
+       "unit": "M"
+      },
+      {
+       "name": "temperature",
+       "quote": "Then, under constant stirring, 3.5 mL of sodium hydroxide (2.0 M) was added into the CTAB solution at room temperature.",
+       "value_text": "room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode",
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "heat",
+     "description": "Heat the mixture to 70 °C in an oil bath.",
+     "quote": "After the mixture was heated to 70 °C in an oil bath",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "After the mixture was heated to 70 °C in an oil bath",
+       "value_num": 70,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oil bath",
+       "detail": null,
+       "quote": "After the mixture was heated to 70 °C in an oil bath"
+      }
+     ],
+     "not_stated": [
+      "duration",
+      "heating_rate"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "add",
+     "description": "Introduce TEOS drop by drop.",
+     "quote": "5.0 mL of TEOS was introduced drop by drop at the rate of 1.0 mL/min",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "5.0 mL of TEOS was introduced drop by drop at the rate of 1.0 mL/min",
+       "value_num": 5.0,
+       "unit": "mL"
+      },
+      {
+       "name": "addition_mode",
+       "quote": "5.0 mL of TEOS was introduced drop by drop at the rate of 1.0 mL/min",
+       "value_text": "drop by drop"
+      },
+      {
+       "name": "addition_rate",
+       "quote": "5.0 mL of TEOS was introduced drop by drop at the rate of 1.0 mL/min",
+       "value_num": 1.0,
+       "unit": "mL/min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 5,
+     "action": "react",
+     "description": "Stir vigorously at 80 °C for 6 h; MSNs form as a white solid.",
+     "quote": "it was then stirred vigorously at 80 °C for 6 h",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "it was then stirred vigorously at 80 °C for 6 h",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "it was then stirred vigorously at 80 °C for 6 h",
+       "value_num": 6,
+       "unit": "h"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "it was then stirred vigorously at 80 °C for 6 h",
+       "value_text": "vigorously"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 6,
+     "action": "wash",
+     "description": "Wash the white solid with ethanol and with deionized water, three times.",
+     "quote": "which was washed by ethanol and deionized in water three times",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "which was washed by ethanol and deionized in water three times",
+       "value_text": "ethanol and deionized water"
+      },
+      {
+       "name": "repetitions",
+       "quote": "which was washed by ethanol and deionized in water three times",
+       "value_text": "three times"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "separation_method",
+      "wash_volume"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "dry",
+     "description": "Freeze-dry the washed solid under vacuum.",
+     "quote": "freeze-dried under vacuum",
+     "parameters": [
+      {
+       "name": "drying_mode",
+       "quote": "freeze-dried under vacuum",
+       "value_text": "freeze-dried under vacuum"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "calcine",
+     "description": "Calcine the synthesized MSNs to remove the surfactant completely.",
+     "quote": "In order to remove the surfactant completely, the synthesized MSNs was then calcined at 550 °C for 6 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "In order to remove the surfactant completely, the synthesized MSNs was then calcined at 550 °C for 6 h.",
+       "value_num": 550,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "In order to remove the surfactant completely, the synthesized MSNs was then calcined at 550 °C for 6 h.",
+       "value_num": 6,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "sem_MSN",
+     "technique": "SEM",
+     "instrument": "SU8000, Hitachi, Ltd., Tokyo, Japan",
+     "result": "MSNs : sphères monodisperses de 200–300 nm de diamètre moyen (pas de différence visible entre MSNs et Py-MSNs)",
+     "quote": "SEM images showed that there was no obvious difference between the MSNs and Py-MSNs, since both of them had average diameters of 200–300 nm and a monodispersed spherical structure",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "Figure 1 SEM images: (a) MSNs; (b) pyrimethanil-loaded MSNs.",
+       "value_num": 10.0,
+       "unit": "kV",
+       "from_figure": "Fig. 1a"
+      }
+     ],
+     "not_stated": [
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tem_MSN",
+     "technique": "TEM",
+     "instrument": "JEM-200CX, Jeol Ltd., Tokyo, Japan",
+     "result": "MSNs et Py-MSNs ont des structures, des diamètres moyens et une dispersion semblables ; structure mésoporeuse très ordonnée visible sur les MSNs avant chargement",
+     "quote": "In Figure 2a,c, it can be seen that MSNs and Py-MSNs have similar structures, average diameters, and dispersion, which verified the results in the SEM image.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "bet_MSN",
+     "technique": "BET",
+     "instrument": "TriStarII 3020, Micromeritics Instruments Corp, Norcross, GA, USA",
+     "result": "surface spécifique BET de 808.90 m2/g avant chargement ; isotherme de type IV",
+     "quote": "the BET specific surface area of the nanoparticles decreased sharply from 808.90 to 9.47 m2/g",
+     "settings": [
+      {
+       "name": "adsorbate",
+       "quote": "The nitrogen adsorption of MSNs and Py-MSNs was studied to show the typical pore characteristics",
+       "value_text": "nitrogen"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "using a surface area and pore size analyzer (TriStarII 3020, Micromeritics Instruments Corp, Norcross, GA, USA) at 196 °C",
+       "value_text": "196 °C"
+      },
+      {
+       "name": "degassing",
+       "quote": "Samples were degassed at 80 °C for 12 h prior to analysis.",
+       "value_text": "80 °C for 12 h prior to analysis"
+      },
+      {
+       "name": "analysis_model",
+       "quote": "The characteristics of mesoporous structure were analyzed by the BET and BJH procedures from the adsorption branches of the isotherms.",
+       "value_text": "BET and BJH procedures, adsorption branches of the isotherms"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size",
+     "quote": "SEM images showed that there was no obvious difference between the MSNs and Py-MSNs, since both of them had average diameters of 200–300 nm and a monodispersed spherical structure",
+     "value_text": "200–300 nm",
+     "measured_by": "sem_MSN"
+    },
+    {
+     "property": "morphology",
+     "quote": "SEM images showed that there was no obvious difference between the MSNs and Py-MSNs, since both of them had average diameters of 200–300 nm and a monodispersed spherical structure",
+     "value_text": "monodispersed spherical structure",
+     "measured_by": "sem_MSN"
+    },
+    {
+     "property": "morphology",
+     "quote": "It can be seen in Figure 2b that there is a highly ordered mesoporous structure, one of the typical structures of MSNs, on the surface of the MSNs before pyrimethanil loading.",
+     "value_text": "highly ordered mesoporous structure on the surface of the MSNs",
+     "measured_by": "tem_MSN"
+    },
+    {
+     "property": "BET_surface_area",
+     "quote": "After pyrimethanil-loading on the MSNs, the BET specific surface area of the nanoparticles decreased sharply from 808.90 to 9.47 m2/g.",
+     "value_num": 808.9,
+     "unit": "m2/g",
+     "measured_by": "bet_MSN"
+    },
+    {
+     "property": "porosity",
+     "quote": "the type IV isotherm curve of MSNs increased gradually from 0 to 0.3 of P/P0",
+     "value_text": "type IV isotherm, adsorbed volume increasing gradually from 0 to 0.3 of P/P0",
+     "measured_by": "bet_MSN"
+    }
+   ],
+   "missing_fields": []
+  },
+  {
+   "label": "Py-MSN",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "methods": [
+    "impregnation"
+   ],
+   "material": {
+    "name": "pyrimethanil-loaded mesoporous silica nanoparticles (Py-MSNs)",
+    "formula": null,
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": "monodispersed spherical particles of 200–300 nm, mesopores blocked by pyrimethanil"
+   },
+   "method": "loading of pyrimethanil into MSNs by simple immersion in a 6.0 mg/mL pyrimethanil solution in toluene",
+   "quote": "Pesticide molecules were loaded into MSNs by simple immersion in a concentrated toluene solution of pyrimethanil.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "MSNs (route MSN)",
+     "formula": "SiO2",
+     "role": "intermediate",
+     "amount_text": "Thirty milligrams",
+     "quote": "Thirty milligrams of synthesized MSNs was added into the pyrimethanil-toluene solution (6.0 mg/mL, 5.0 mL)."
+    },
+    {
+     "name": "pyrimethanil",
+     "formula": "C12H13N3",
+     "role": "precursor",
+     "amount_text": "6.0 mg/mL in toluene (solution of 5.0 mL)",
+     "purity": "98.0%",
+     "supplier": "Jiangsu Weunite Fine Chemical Co., Ltd.",
+     "supplier_quote": "The template pesticide, pyrimethanil (98.0%), was supplied by Jiangsu Weunite Fine Chemical Co., Ltd.",
+     "quote": "Thirty milligrams of synthesized MSNs was added into the pyrimethanil-toluene solution (6.0 mg/mL, 5.0 mL)."
+    },
+    {
+     "name": "toluene",
+     "formula": "C7H8",
+     "role": "solvent",
+     "amount_text": "5.0 mL of pyrimethanil-toluene solution",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "Thirty milligrams of synthesized MSNs was added into the pyrimethanil-toluene solution (6.0 mg/mL, 5.0 mL)."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add the MSNs to the pyrimethanil-toluene solution.",
+     "quote": "Thirty milligrams of synthesized MSNs was added into the pyrimethanil-toluene solution (6.0 mg/mL, 5.0 mL).",
+     "parameters": [
+      {
+       "name": "mass",
+       "quote": "Thirty milligrams of synthesized MSNs was added into the pyrimethanil-toluene solution (6.0 mg/mL, 5.0 mL).",
+       "value_text": "Thirty milligrams"
+      },
+      {
+       "name": "concentration",
+       "quote": "Thirty milligrams of synthesized MSNs was added into the pyrimethanil-toluene solution (6.0 mg/mL, 5.0 mL).",
+       "value_num": 6.0,
+       "unit": "mg/mL"
+      },
+      {
+       "name": "volume",
+       "quote": "Thirty milligrams of synthesized MSNs was added into the pyrimethanil-toluene solution (6.0 mg/mL, 5.0 mL).",
+       "value_num": 5.0,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the mixture magnetically for 6 h.",
+     "quote": "The mixture was magnetic stirred for 6 h",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The mixture was magnetic stirred for 6 h",
+       "value_num": 6,
+       "unit": "h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": null,
+       "quote": "The mixture was magnetic stirred for 6 h"
+      }
+     ],
+     "not_stated": [
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "centrifuge",
+     "description": "Remove the supernatant by centrifugation.",
+     "quote": "the supernatant was then removed by centrifugation at 10,000 rpm for 10 min",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "the supernatant was then removed by centrifugation at 10,000 rpm for 10 min",
+       "value_num": 10000,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "the supernatant was then removed by centrifugation at 10,000 rpm for 10 min",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 4,
+     "action": "dry",
+     "description": "Dry the pyrimethanil-loaded MSNs to remove the supernatant completely.",
+     "quote": "The pyrimethanil-loaded MSNs was dried at 50 °C for 5 h to remove the supernatant completely.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The pyrimethanil-loaded MSNs was dried at 50 °C for 5 h to remove the supernatant completely.",
+       "value_num": 50,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The pyrimethanil-loaded MSNs was dried at 50 °C for 5 h to remove the supernatant completely.",
+       "value_num": 5,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "drying_mode"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "sem_PyMSN",
+     "technique": "SEM",
+     "instrument": "SU8000, Hitachi, Ltd., Tokyo, Japan",
+     "result": "Py-MSNs : sphères monodisperses de 200–300 nm de diamètre moyen (pas de différence visible entre MSNs et Py-MSNs)",
+     "quote": "SEM images showed that there was no obvious difference between the MSNs and Py-MSNs, since both of them had average diameters of 200–300 nm and a monodispersed spherical structure",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "Figure 1 SEM images: (a) MSNs; (b) pyrimethanil-loaded MSNs.",
+       "value_num": 10.0,
+       "unit": "kV",
+       "from_figure": "Fig. 1b"
+      }
+     ],
+     "not_stated": [
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tem_PyMSN",
+     "technique": "TEM",
+     "instrument": "JEM-200CX, Jeol Ltd., Tokyo, Japan",
+     "result": "structures mésoporeuses peu visibles après chargement ; structure, diamètre moyen et dispersion semblables à ceux des MSNs",
+     "quote": "for Py-MSNs, the mesoporous structures are not obvious in Figure 2d",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "bet_PyMSN",
+     "technique": "BET",
+     "instrument": "TriStarII 3020, Micromeritics Instruments Corp, Norcross, GA, USA",
+     "result": "surface spécifique BET de 9.47 m2/g après chargement ; adsorption très réduite",
+     "quote": "After pyrimethanil-loading on the MSNs, the BET specific surface area of the nanoparticles decreased sharply from 808.90 to 9.47 m2/g.",
+     "settings": [
+      {
+       "name": "adsorbate",
+       "quote": "The nitrogen adsorption of MSNs and Py-MSNs was studied to show the typical pore characteristics",
+       "value_text": "nitrogen"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "using a surface area and pore size analyzer (TriStarII 3020, Micromeritics Instruments Corp, Norcross, GA, USA) at 196 °C",
+       "value_text": "196 °C"
+      },
+      {
+       "name": "degassing",
+       "quote": "Samples were degassed at 80 °C for 12 h prior to analysis.",
+       "value_text": "80 °C for 12 h prior to analysis"
+      },
+      {
+       "name": "analysis_model",
+       "quote": "The characteristics of mesoporous structure were analyzed by the BET and BJH procedures from the adsorption branches of the isotherms.",
+       "value_text": "BET and BJH procedures, adsorption branches of the isotherms"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "hplc_dad_loading",
+     "technique": "chromatography_ms",
+     "instrument": "HPLC, 1200-DAD (Diode Array Detector), Agilent, Santa Clara, CA, USA",
+     "result": "teneur (loading efficiency) de 29.77 % pour Py-MSNs préparés dans le toluène",
+     "quote": "In this study, the loading efficiency of MSNs was 29.77%.",
+     "settings": [
+      {
+       "name": "column",
+       "quote": "Venusil XBP-C18 column (Bonna-Agela Technologies Inc., Tianjin, China) (2.5 mm × 4.6 mm, 5 µm) was used to separate the target compound from others at 30 °C.",
+       "value_text": "Venusil XBP-C18 column (Bonna-Agela Technologies Inc., Tianjin, China) (2.5 mm × 4.6 mm, 5 µm)"
+      },
+      {
+       "name": "detector",
+       "quote": "DAD signals was used as 275 nm.",
+       "value_text": "Diode Array Detector (DAD), 275 nm"
+      },
+      {
+       "name": "mobile_phase",
+       "quote": "Methanol/water (80/20) was used as mobile phase at a flow rate of 1.0 mL/min.",
+       "value_text": "Methanol/water (80/20)"
+      },
+      {
+       "name": "flow_rate",
+       "quote": "Methanol/water (80/20) was used as mobile phase at a flow rate of 1.0 mL/min.",
+       "value_num": 1.0,
+       "unit": "mL/min"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "Venusil XBP-C18 column (Bonna-Agela Technologies Inc., Tianjin, China) (2.5 mm × 4.6 mm, 5 µm) was used to separate the target compound from others at 30 °C.",
+       "value_num": 30,
+       "unit": "°C"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "In brief, 10.0 mg of Py-MSNs were dissolved in 25.0 mL of methanol under sonication for 2 h. This process was repeated several times, and the methanol solution was combined for HPLC analysis, until the concentration level of pyrimethanil in the solution lower than the limit of detection.",
+       "value_text": "10.0 mg of Py-MSNs dissolved in 25.0 mL of methanol under sonication for 2 h, repeated several times until the pyrimethanil concentration fell below the limit of detection; methanol solutions combined for HPLC"
+      },
+      {
+       "name": "method",
+       "quote": "Loading efficiency (%) = (weight of pesticide in nanoparticles/weight of nanoparticles) × 100%.",
+       "value_text": "Loading efficiency (%) = (weight of pesticide in nanoparticles/weight of nanoparticles) × 100%"
+      }
+     ],
+     "not_stated": [
+      "calibration"
+     ]
+    },
+    {
+     "id": "release_test_1",
+     "technique": "release_test",
+     "instrument": "D-800LS dissolution tester (Tianjin University, Tianjin, China)",
+     "result": "libération cumulée de la pyrimethanil depuis Py-MSNs à pH 6.13, 6.93 et 8.06 pendant 80 h",
+     "quote": "A D-800LS dissolution tester (Tianjin University, Tianjin, China) was used for the release test at a stirring speed of 120 rpm.",
+     "settings": [
+      {
+       "name": "tested_material_dose",
+       "quote": "Twenty milligrams of Py-MSNs were dispersed in 250 mL of phosphate buffer (pH 6.13, 6.93, 8.06) with 0.1% Tween-80 emulsifier, which was used as the release medium.",
+       "value_text": "Twenty milligrams of Py-MSNs"
+      },
+      {
+       "name": "solution_volume",
+       "quote": "Twenty milligrams of Py-MSNs were dispersed in 250 mL of phosphate buffer (pH 6.13, 6.93, 8.06) with 0.1% Tween-80 emulsifier, which was used as the release medium.",
+       "value_num": 250,
+       "unit": "mL"
+      },
+      {
+       "name": "solution_ph",
+       "quote": "Twenty milligrams of Py-MSNs were dispersed in 250 mL of phosphate buffer (pH 6.13, 6.93, 8.06) with 0.1% Tween-80 emulsifier, which was used as the release medium.",
+       "value_text": "pH 6.13, 6.93, 8.06"
+      },
+      {
+       "name": "test_medium",
+       "quote": "Twenty milligrams of Py-MSNs were dispersed in 250 mL of phosphate buffer (pH 6.13, 6.93, 8.06) with 0.1% Tween-80 emulsifier, which was used as the release medium.",
+       "value_text": "phosphate buffer with 0.1% Tween-80 emulsifier"
+      },
+      {
+       "name": "agitation",
+       "quote": "A D-800LS dissolution tester (Tianjin University, Tianjin, China) was used for the release test at a stirring speed of 120 rpm.",
+       "value_num": 120,
+       "unit": "rpm"
+      },
+      {
+       "name": "temperature",
+       "quote": "Figure 4 Release rates of pyrimethanil from Py-MSNs in pH 6.13, 6.93, and 8.06 at room temperature.",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "For HPLC analysis, 0.8 mL of the release medium was withdrawn at given time intervals, and the same volume of fresh buffer solution was supplied to ensure the volume of release medium.",
+       "value_text": "HPLC analysis of 0.8 mL aliquots withdrawn at given time intervals and replaced by the same volume of fresh buffer"
+      },
+      {
+       "name": "replicates",
+       "quote": "The determination was repeated twice.",
+       "value_text": "repeated twice"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "hplc_msms_residue",
+     "technique": "chromatography_ms",
+     "instrument": "Agilent 1200 HPLC with Agilent 6410 Triple Quad LC/MS system",
+     "result": "dosage de la pyrimethanil dans les feuilles, racines et fruits de concombre ; validation par étalonnage en matrice, recouvrements et LOQ",
+     "quote": "An Agilent 6410 Triple Quad LC/MS system was applied for mass spectrometric analysis.",
+     "settings": [
+      {
+       "name": "column",
+       "quote": "reversed-phase column (ZORBAX SB-C18, 3.5 μm, 2.1 mm × 50 mm, Agilent, Santa Clara, CA, USA) at 25 °C.",
+       "value_text": "reversed-phase column (ZORBAX SB-C18, 3.5 μm, 2.1 mm × 50 mm, Agilent, Santa Clara, CA, USA)"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "reversed-phase column (ZORBAX SB-C18, 3.5 μm, 2.1 mm × 50 mm, Agilent, Santa Clara, CA, USA) at 25 °C.",
+       "value_num": 25,
+       "unit": "°C"
+      },
+      {
+       "name": "mobile_phase",
+       "quote": "Acetonitrile/water (80/20, v/v) was used as a mobile phase at a flow rate of 0.3 mL/min−1.",
+       "value_text": "Acetonitrile/water (80/20, v/v)"
+      },
+      {
+       "name": "flow_rate",
+       "quote": "Acetonitrile/water (80/20, v/v) was used as a mobile phase at a flow rate of 0.3 mL/min−1.",
+       "value_text": "0.3 mL/min−1"
+      },
+      {
+       "name": "injection_volume",
+       "quote": "The injection volume was 5 μL.",
+       "value_num": 5,
+       "unit": "μL"
+      },
+      {
+       "name": "detector",
+       "quote": "An Agilent 6410 Triple Quad LC/MS system was applied for mass spectrometric analysis.",
+       "value_text": "Agilent 6410 Triple Quad LC/MS system"
+      },
+      {
+       "name": "ionization_mode",
+       "quote": "Electrospray ionization source in positive ionization mode was used for pyrimethanil analysis.",
+       "value_text": "electrospray ionization source, positive ionization mode"
+      },
+      {
+       "name": "mrm_transitions",
+       "quote": "Two ion transitions were chosen: m/z 200→m/z 107 (quantification), and m/z 200→m/z 183 (confirmation).",
+       "value_text": "m/z 200→m/z 107 (quantification), m/z 200→m/z 183 (confirmation)"
+      },
+      {
+       "name": "ms_source_conditions",
+       "quote": "The other parameters of mass spectrometry were as follows: gas flow: 8 L min−1; gas temperature: 350 °C; capillary voltage: 4000 V; and nebulizer gas: 35 psi.",
+       "value_text": "gas flow: 8 L min−1; gas temperature: 350 °C; capillary voltage: 4000 V; nebulizer gas: 35 psi"
+      },
+      {
+       "name": "ms_source_conditions",
+       "quote": "Nitrogen gas was used as both the collision and nebulizer gas.",
+       "value_text": "nitrogen gas used as both the collision and nebulizer gas"
+      },
+      {
+       "name": "calibration",
+       "quote": "Matrix-matched calibration solutions was obtained from blank extracts with pyrimethanil in the range of 2–200, 2–200, and 0.2–20 μg/L for leaves, root, and cucumber respectively.",
+       "value_text": "matrix-matched calibration from blank extracts, 2–200, 2–200 and 0.2–20 μg/L for leaves, root and cucumber respectively"
+      },
+      {
+       "name": "calibration",
+       "quote": "Leaf | 0.01 | 78 | 8 | 0.004 | y = 3,964,048x + 9802 | 0.993",
+       "value_text": "leaf: y = 3,964,048x + 9802"
+      },
+      {
+       "name": "calibration",
+       "quote": "Root | 0.01 | 87 | 5 | 0.001 | y = 5,007,122x + 3234 | 0.998",
+       "value_text": "root: y = 5,007,122x + 3234"
+      },
+      {
+       "name": "calibration",
+       "quote": "Cucumber | 0.001 | 74 | 10 | 0.001 | y = 4,817,122x + 1329 | 0.996",
+       "value_text": "cucumber: y = 4,817,122x + 1329"
+      },
+      {
+       "name": "calibration",
+       "quote": "The retention time of pyrimethanil was 0.9 min.",
+       "value_text": "retention time of pyrimethanil 0.9 min"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "2.0 g of homogenized samples were extracted with 10.0 mL of acetonitrile, and 4.0 g of anhydrous magnesium sulfate and 1.0 g of sodium chloride was then introduced for salting out.",
+       "value_text": "2.0 g of homogenized sample extracted with 10.0 mL of acetonitrile, salting out with 4.0 g of anhydrous MgSO4 and 1.0 g of NaCl"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "the loose sorbents of 5 mg of GCB, 25 mg of PSA, and 150 mg of MgSO4 was used to clean up 1.0 mL of acetonitrile extract.",
+       "value_text": "clean-up of 1.0 mL of acetonitrile extract with 5 mg of GCB, 25 mg of PSA and 150 mg of MgSO4"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "For treated leaves, the acetonitrile extraction was diluted 20 times before HPLC-MS/MS detection.",
+       "value_text": "acetonitrile extract of treated leaves diluted 20 times"
+      },
+      {
+       "name": "software",
+       "quote": "Agilent Mass Hunter Data Acquisition and Qualitative Analysis and Quantitative Analysis software was used for method development and data acquisition.",
+       "value_text": "Agilent Mass Hunter Data Acquisition and Qualitative Analysis and Quantitative Analysis software"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "plant_study",
+     "technique": "biological_test",
+     "instrument": null,
+     "result": "traitement foliaire de plants de concombre par Py-MSNs (0,5 et 2 mg/mL) ; prélèvements de 1 à 48 jours et au stade fructification",
+     "quote": "When the cucumber seedlings had five to six leaves, 0.5 mL of Py-MSNs with two concentrations aqueous solution was added on one of the middle leaves from cucumber plant drop by drop using a pipette to stop the droplets from running off",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "For the study, non-stained cucumber seedlings were used, which were produced by the Institution of Plant Protection, Chinese Academy of Agricultural Sciences.",
+       "value_text": "non-stained cucumber seedlings produced by the Institution of Plant Protection, Chinese Academy of Agricultural Sciences"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "Two concentration levels of pyrimethanil were used for the distribution study: 0.5 and 2 mg mL−1.",
+       "value_text": "0.5 and 2 mg mL−1"
+      },
+      {
+       "name": "tested_material_dose",
+       "quote": "When the cucumber seedlings had five to six leaves, 0.5 mL of Py-MSNs with two concentrations aqueous solution was added on one of the middle leaves from cucumber plant drop by drop using a pipette to stop the droplets from running off",
+       "value_text": "0.5 mL of aqueous Py-MSN dispersion added drop by drop with a pipette on one of the middle leaves, at the five to six leaves stage"
+      },
+      {
+       "name": "test_medium",
+       "quote": "The Py-MSNs were dispersed in sterile distilled water prior to exposure.",
+       "value_text": "sterile distilled water"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "Cucumber plants were cultivated in plastic pots with potting soil.",
+       "value_text": "cultivated in plastic pots with potting soil"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "representative samples were collected 1, 3, 5, 7, 10, 14, 21, 28, 30, and 48 days after Py-MSNs treatment on cucumber plants",
+       "value_text": "samples collected 1, 3, 5, 7, 10, 14, 21, 28, 30 and 48 days after treatment"
+      },
+      {
+       "name": "assay_method",
+       "quote": "the concentrations of pyrimethanil were measured in four parts of cucumber plant, i.e., the roots and leaves (upper, middle and lower), over a period of 48 days using high performance liquid chromatography tandem mass spectrometry (HPLC-MS/MS)",
+       "value_text": "HPLC-MS/MS on roots and leaves (upper, middle and lower) over 48 days"
+      },
+      {
+       "name": "replicates",
+       "quote": "Each treatment was repeated three times.",
+       "value_text": "repeated three times"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size",
+     "quote": "SEM images showed that there was no obvious difference between the MSNs and Py-MSNs, since both of them had average diameters of 200–300 nm and a monodispersed spherical structure",
+     "value_text": "200–300 nm",
+     "measured_by": "sem_PyMSN"
+    },
+    {
+     "property": "morphology",
+     "quote": "SEM images showed that there was no obvious difference between the MSNs and Py-MSNs, since both of them had average diameters of 200–300 nm and a monodispersed spherical structure",
+     "value_text": "monodispersed spherical structure",
+     "measured_by": "sem_PyMSN"
+    },
+    {
+     "property": "morphology",
+     "quote": "This suggests that pyrimethanil was successfully loaded onto the MSNs without destroying the structure of the nanoparticles, and most of the mesoporous structures were blocked by pyrimethanil.",
+     "value_text": "nanoparticle structure preserved, most of the mesoporous structures blocked by pyrimethanil",
+     "measured_by": "tem_PyMSN"
+    },
+    {
+     "property": "BET_surface_area",
+     "quote": "After pyrimethanil-loading on the MSNs, the BET specific surface area of the nanoparticles decreased sharply from 808.90 to 9.47 m2/g.",
+     "value_num": 9.47,
+     "unit": "m2/g",
+     "measured_by": "bet_PyMSN"
+    },
+    {
+     "property": "porosity",
+     "quote": "Py-MSNs showed an obvious reduction in adsorption capacity and surface area since the mesoporous was totally blocked by pyrimethanil",
+     "value_text": "obvious reduction in adsorption capacity and surface area, mesopores totally blocked by pyrimethanil",
+     "measured_by": "bet_PyMSN"
+    },
+    {
+     "property": "bioactive_loading",
+     "quote": "In this study, the loading efficiency of MSNs was 29.77%.",
+     "value_num": 29.77,
+     "unit": "%",
+     "measured_by": "hplc_dad_loading"
+    },
+    {
+     "property": "drug_release_all_pH_30h",
+     "quote": "from 0 to 30 h, the percentages of released pyrimethanil associated with the three pH values were similar and gradually increased to about 56%",
+     "value_num": 56,
+     "unit": "%",
+     "measured_by": "release_test_1"
+    },
+    {
+     "property": "drug_release_pH_6_13_60h",
+     "quote": "Finally, 99% of pyrimethanil was released after 60 h when the pH of the release medium was 6.13",
+     "value_num": 99,
+     "unit": "%",
+     "measured_by": "release_test_1"
+    },
+    {
+     "property": "drug_release_pH_6_93_80h",
+     "quote": "In the case with pH values of 6.93 and 8.06, the pesticide-loading nanoparticles released 93% and 91% of pyrimethanil after 80 h, respectively.",
+     "value_num": 93,
+     "unit": "%",
+     "measured_by": "release_test_1"
+    },
+    {
+     "property": "drug_release_pH_8_06_80h",
+     "quote": "In the case with pH values of 6.93 and 8.06, the pesticide-loading nanoparticles released 93% and 91% of pyrimethanil after 80 h, respectively.",
+     "value_num": 91,
+     "unit": "%",
+     "measured_by": "release_test_1"
+    },
+    {
+     "property": "drug_release_pH_6_13_23h",
+     "quote": "Figure 4 Release rates of pyrimethanil from Py-MSNs in pH 6.13, 6.93, and 8.06 at room temperature.",
+     "value_num": 46,
+     "unit": "%",
+     "measured_by": "release_test_1",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "drug_release_pH_6_13_48h",
+     "quote": "Figure 4 Release rates of pyrimethanil from Py-MSNs in pH 6.13, 6.93, and 8.06 at room temperature.",
+     "value_num": 84,
+     "unit": "%",
+     "measured_by": "release_test_1",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "drug_release_pH_6_93_23h",
+     "quote": "Figure 4 Release rates of pyrimethanil from Py-MSNs in pH 6.13, 6.93, and 8.06 at room temperature.",
+     "value_num": 48,
+     "unit": "%",
+     "measured_by": "release_test_1",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "drug_release_pH_6_93_48h",
+     "quote": "Figure 4 Release rates of pyrimethanil from Py-MSNs in pH 6.13, 6.93, and 8.06 at room temperature.",
+     "value_num": 82,
+     "unit": "%",
+     "measured_by": "release_test_1",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "drug_release_pH_8_06_23h",
+     "quote": "Figure 4 Release rates of pyrimethanil from Py-MSNs in pH 6.13, 6.93, and 8.06 at room temperature.",
+     "value_num": 41,
+     "unit": "%",
+     "measured_by": "release_test_1",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "drug_release_pH_8_06_48h",
+     "quote": "Figure 4 Release rates of pyrimethanil from Py-MSNs in pH 6.13, 6.93, and 8.06 at room temperature.",
+     "value_num": 71,
+     "unit": "%",
+     "measured_by": "release_test_1",
+     "from_figure": "Fig. 4"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_0_5_mg_mL_day_1",
+     "quote": "(a) upper leaves with 0.5 mg/mL treatment",
+     "value_num": 0.162,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_0_5_mg_mL_day_3",
+     "quote": "the concentration of pyrimethanil increased to 0.210 and 0.422 mg/kg in the upper leaves, and then declined gradually to 0.011 and 0.013 mg/kg when 0.5 and 2 mg/mL of Py-MSNs were used, respectively",
+     "value_num": 0.21,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_0_5_mg_mL_day_5",
+     "quote": "(a) upper leaves with 0.5 mg/mL treatment",
+     "value_num": 0.182,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_0_5_mg_mL_day_7",
+     "quote": "(a) upper leaves with 0.5 mg/mL treatment",
+     "value_num": 0.101,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_0_5_mg_mL_day_10",
+     "quote": "(a) upper leaves with 0.5 mg/mL treatment",
+     "value_num": 0.089,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_0_5_mg_mL_day_14",
+     "quote": "(a) upper leaves with 0.5 mg/mL treatment",
+     "value_num": 0.029,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_0_5_mg_mL_day_21",
+     "quote": "(a) upper leaves with 0.5 mg/mL treatment",
+     "value_num": 0.013,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_0_5_mg_mL_day_30",
+     "quote": "(a) upper leaves with 0.5 mg/mL treatment",
+     "value_num": 0.026,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5a"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_0_5_mg_mL_day_48",
+     "quote": "the concentration of pyrimethanil increased to 0.210 and 0.422 mg/kg in the upper leaves, and then declined gradually to 0.011 and 0.013 mg/kg when 0.5 and 2 mg/mL of Py-MSNs were used, respectively",
+     "value_num": 0.011,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_2_mg_mL_day_1",
+     "quote": "(b) upper leaves with 2 mg/mL treatment",
+     "value_num": 0.097,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_2_mg_mL_day_3",
+     "quote": "the concentration of pyrimethanil increased to 0.210 and 0.422 mg/kg in the upper leaves, and then declined gradually to 0.011 and 0.013 mg/kg when 0.5 and 2 mg/mL of Py-MSNs were used, respectively",
+     "value_num": 0.422,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_2_mg_mL_day_5",
+     "quote": "(b) upper leaves with 2 mg/mL treatment",
+     "value_num": 0.191,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_2_mg_mL_day_7",
+     "quote": "(b) upper leaves with 2 mg/mL treatment",
+     "value_num": 0.131,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_2_mg_mL_day_10",
+     "quote": "(b) upper leaves with 2 mg/mL treatment",
+     "value_num": 0.085,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_2_mg_mL_day_14",
+     "quote": "(b) upper leaves with 2 mg/mL treatment",
+     "value_num": 0.124,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_2_mg_mL_day_21",
+     "quote": "(b) upper leaves with 2 mg/mL treatment",
+     "value_num": 0.014,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_2_mg_mL_day_30",
+     "quote": "(b) upper leaves with 2 mg/mL treatment",
+     "value_num": 0.026,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5b"
+    },
+    {
+     "property": "residue_concentration_upper_leaves_2_mg_mL_day_48",
+     "quote": "the concentration of pyrimethanil increased to 0.210 and 0.422 mg/kg in the upper leaves, and then declined gradually to 0.011 and 0.013 mg/kg when 0.5 and 2 mg/mL of Py-MSNs were used, respectively",
+     "value_num": 0.013,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_0_5_mg_mL_day_1",
+     "quote": "(c) lower leaves with 0.5 mg/mL treatment",
+     "value_num": 0.026,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_0_5_mg_mL_day_3",
+     "quote": "(c) lower leaves with 0.5 mg/mL treatment",
+     "value_num": 0.034,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_0_5_mg_mL_day_5",
+     "quote": "(c) lower leaves with 0.5 mg/mL treatment",
+     "value_num": 0.059,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_0_5_mg_mL_day_7",
+     "quote": "(c) lower leaves with 0.5 mg/mL treatment",
+     "value_num": 0.063,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_0_5_mg_mL_day_10",
+     "quote": "(c) lower leaves with 0.5 mg/mL treatment",
+     "value_num": 0.041,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_0_5_mg_mL_day_14",
+     "quote": "(c) lower leaves with 0.5 mg/mL treatment",
+     "value_num": 0.026,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_0_5_mg_mL_day_21",
+     "quote": "(c) lower leaves with 0.5 mg/mL treatment",
+     "value_num": 0.015,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_0_5_mg_mL_day_30",
+     "quote": "(c) lower leaves with 0.5 mg/mL treatment",
+     "value_num": 0.013,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_0_5_mg_mL_day_48",
+     "quote": "(c) lower leaves with 0.5 mg/mL treatment",
+     "value_num": 0.005,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5c"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_2_mg_mL_day_1",
+     "quote": "(d) lower leaves with 2 mg/mL treatment",
+     "value_num": 0.149,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_2_mg_mL_day_3",
+     "quote": "(d) lower leaves with 2 mg/mL treatment",
+     "value_num": 0.075,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_2_mg_mL_day_5",
+     "quote": "(d) lower leaves with 2 mg/mL treatment",
+     "value_num": 0.423,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_2_mg_mL_day_7",
+     "quote": "(d) lower leaves with 2 mg/mL treatment",
+     "value_num": 0.249,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_2_mg_mL_day_10",
+     "quote": "(d) lower leaves with 2 mg/mL treatment",
+     "value_num": 0.178,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_2_mg_mL_day_14",
+     "quote": "(d) lower leaves with 2 mg/mL treatment",
+     "value_num": 0.069,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_2_mg_mL_day_21",
+     "quote": "(d) lower leaves with 2 mg/mL treatment",
+     "value_num": 0.052,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_2_mg_mL_day_30",
+     "quote": "(d) lower leaves with 2 mg/mL treatment",
+     "value_num": 0.047,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "residue_concentration_lower_leaves_2_mg_mL_day_48",
+     "quote": "(d) lower leaves with 2 mg/mL treatment",
+     "value_num": 0.016,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5d"
+    },
+    {
+     "property": "residue_concentration_roots_0_5_mg_mL_day_1",
+     "quote": "(e) roots with 0.5 mg/mL treatment",
+     "value_num": 0.064,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "residue_concentration_roots_0_5_mg_mL_day_3",
+     "quote": "(e) roots with 0.5 mg/mL treatment",
+     "value_num": 0.022,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "residue_concentration_roots_0_5_mg_mL_day_5",
+     "quote": "(e) roots with 0.5 mg/mL treatment",
+     "value_num": 0.014,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "residue_concentration_roots_0_5_mg_mL_day_7",
+     "quote": "(e) roots with 0.5 mg/mL treatment",
+     "value_num": 0.106,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "residue_concentration_roots_0_5_mg_mL_day_10",
+     "quote": "(e) roots with 0.5 mg/mL treatment",
+     "value_num": 0.081,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "residue_concentration_roots_0_5_mg_mL_day_14",
+     "quote": "(e) roots with 0.5 mg/mL treatment",
+     "value_num": 0.04,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "residue_concentration_roots_0_5_mg_mL_day_21",
+     "quote": "(e) roots with 0.5 mg/mL treatment",
+     "value_num": 0.026,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "residue_concentration_roots_0_5_mg_mL_day_30",
+     "quote": "(e) roots with 0.5 mg/mL treatment",
+     "value_num": 0.019,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "residue_concentration_roots_0_5_mg_mL_day_48",
+     "quote": "(e) roots with 0.5 mg/mL treatment",
+     "value_num": 0.012,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "residue_concentration_roots_2_mg_mL_day_1",
+     "quote": "(f) roots with 2 mg/mL treatment",
+     "value_num": 0.014,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "residue_concentration_roots_2_mg_mL_day_3",
+     "quote": "(f) roots with 2 mg/mL treatment",
+     "value_num": 0.029,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "residue_concentration_roots_2_mg_mL_day_5",
+     "quote": "(f) roots with 2 mg/mL treatment",
+     "value_num": 0.023,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "residue_concentration_roots_2_mg_mL_day_7",
+     "quote": "(f) roots with 2 mg/mL treatment",
+     "value_num": 0.068,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "residue_concentration_roots_2_mg_mL_day_10",
+     "quote": "(f) roots with 2 mg/mL treatment",
+     "value_num": 0.048,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "residue_concentration_roots_2_mg_mL_day_14",
+     "quote": "(f) roots with 2 mg/mL treatment",
+     "value_num": 0.035,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "residue_concentration_roots_2_mg_mL_day_21",
+     "quote": "(f) roots with 2 mg/mL treatment",
+     "value_num": 0.024,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "residue_concentration_roots_2_mg_mL_day_30",
+     "quote": "(f) roots with 2 mg/mL treatment",
+     "value_num": 0.012,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "residue_concentration_roots_2_mg_mL_day_48",
+     "quote": "(f) roots with 2 mg/mL treatment",
+     "value_num": 0.01,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5f"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_0_5_mg_mL_day_1",
+     "quote": "(g) treated leaves with 0.5 mg/mL treatment",
+     "value_num": 41.5,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5g"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_0_5_mg_mL_day_3",
+     "quote": "(g) treated leaves with 0.5 mg/mL treatment",
+     "value_num": 37.5,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5g"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_0_5_mg_mL_day_5",
+     "quote": "(g) treated leaves with 0.5 mg/mL treatment",
+     "value_num": 28.91,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5g"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_0_5_mg_mL_day_7",
+     "quote": "(g) treated leaves with 0.5 mg/mL treatment",
+     "value_num": 18.4,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5g"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_0_5_mg_mL_day_10",
+     "quote": "(g) treated leaves with 0.5 mg/mL treatment",
+     "value_num": 12.3,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5g"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_0_5_mg_mL_day_14",
+     "quote": "(g) treated leaves with 0.5 mg/mL treatment",
+     "value_num": 5.36,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5g"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_0_5_mg_mL_day_21",
+     "quote": "(g) treated leaves with 0.5 mg/mL treatment",
+     "value_num": 4.51,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5g"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_0_5_mg_mL_day_30",
+     "quote": "(g) treated leaves with 0.5 mg/mL treatment",
+     "value_num": 3.39,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5g"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_0_5_mg_mL_day_48",
+     "quote": "(g) treated leaves with 0.5 mg/mL treatment",
+     "value_num": 0.213,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5g"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_2_mg_mL_day_1",
+     "quote": "(h) treated leaves with 2 mg/mL treatment",
+     "value_num": 57.4,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5h"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_2_mg_mL_day_3",
+     "quote": "(h) treated leaves with 2 mg/mL treatment",
+     "value_num": 52.0,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5h"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_2_mg_mL_day_5",
+     "quote": "(h) treated leaves with 2 mg/mL treatment",
+     "value_num": 45.1,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5h"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_2_mg_mL_day_7",
+     "quote": "(h) treated leaves with 2 mg/mL treatment",
+     "value_num": 41.3,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5h"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_2_mg_mL_day_10",
+     "quote": "(h) treated leaves with 2 mg/mL treatment",
+     "value_num": 23.9,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5h"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_2_mg_mL_day_14",
+     "quote": "(h) treated leaves with 2 mg/mL treatment",
+     "value_num": 15.3,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5h"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_2_mg_mL_day_21",
+     "quote": "(h) treated leaves with 2 mg/mL treatment",
+     "value_num": 9.1,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5h"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_2_mg_mL_day_30",
+     "quote": "(h) treated leaves with 2 mg/mL treatment",
+     "value_num": 2.67,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5h"
+    },
+    {
+     "property": "residue_concentration_treated_leaves_2_mg_mL_day_48",
+     "quote": "(h) treated leaves with 2 mg/mL treatment",
+     "value_num": 0.67,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue",
+     "from_figure": "Fig. 5h"
+    },
+    {
+     "property": "residue_concentration_cucumber_fruit_0_5_mg_mL_1",
+     "quote": "the concentrations of pyrimethanil in cucumbers were 0.003, 0.002, and 0.002 mg/kg with a low dosage level of 0.5 mg/mL, and 0.004, 0.005, and 0.003 mg/kg with the high dosage level of 2 mg/mL",
+     "value_num": 0.003,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "residue_concentration_cucumber_fruit_0_5_mg_mL_2",
+     "quote": "the concentrations of pyrimethanil in cucumbers were 0.003, 0.002, and 0.002 mg/kg with a low dosage level of 0.5 mg/mL, and 0.004, 0.005, and 0.003 mg/kg with the high dosage level of 2 mg/mL",
+     "value_num": 0.002,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "residue_concentration_cucumber_fruit_0_5_mg_mL_3",
+     "quote": "the concentrations of pyrimethanil in cucumbers were 0.003, 0.002, and 0.002 mg/kg with a low dosage level of 0.5 mg/mL, and 0.004, 0.005, and 0.003 mg/kg with the high dosage level of 2 mg/mL",
+     "value_num": 0.002,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "residue_concentration_cucumber_fruit_2_mg_mL_1",
+     "quote": "the concentrations of pyrimethanil in cucumbers were 0.003, 0.002, and 0.002 mg/kg with a low dosage level of 0.5 mg/mL, and 0.004, 0.005, and 0.003 mg/kg with the high dosage level of 2 mg/mL",
+     "value_num": 0.004,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "residue_concentration_cucumber_fruit_2_mg_mL_2",
+     "quote": "the concentrations of pyrimethanil in cucumbers were 0.003, 0.002, and 0.002 mg/kg with a low dosage level of 0.5 mg/mL, and 0.004, 0.005, and 0.003 mg/kg with the high dosage level of 2 mg/mL",
+     "value_num": 0.005,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "residue_concentration_cucumber_fruit_2_mg_mL_3",
+     "quote": "the concentrations of pyrimethanil in cucumbers were 0.003, 0.002, and 0.002 mg/kg with a low dosage level of 0.5 mg/mL, and 0.004, 0.005, and 0.003 mg/kg with the high dosage level of 2 mg/mL",
+     "value_num": 0.003,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "dissipation_half_life_upper_leaves_0_5_mg_mL",
+     "quote": "Upper leaves | 3–48 | 0.5 | y = 0.1243e−0.064(x − 3) | 0.7277 | 13.8",
+     "value_num": 13.8,
+     "unit": "days",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_regression_equation_dissipation_upper_leaves_0_5_mg_mL",
+     "quote": "Upper leaves | 3–48 | 0.5 | y = 0.1243e−0.064(x − 3) | 0.7277 | 13.8",
+     "value_text": "y = 0.1243e−0.064(x − 3)",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_dissipation_upper_leaves_0_5_mg_mL",
+     "quote": "Upper leaves | 3–48 | 0.5 | y = 0.1243e−0.064(x − 3) | 0.7277 | 13.8",
+     "value_num": 0.7277,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "dissipation_half_life_upper_leaves_2_mg_mL",
+     "quote": "| 2 | y = 0.1934e−0.073(x − 3) | 0.7484 | 12.5",
+     "value_num": 12.5,
+     "unit": "days",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_regression_equation_dissipation_upper_leaves_2_mg_mL",
+     "quote": "| 2 | y = 0.1934e−0.073(x − 3) | 0.7484 | 12.5",
+     "value_text": "y = 0.1934e−0.073(x − 3)",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_dissipation_upper_leaves_2_mg_mL",
+     "quote": "| 2 | y = 0.1934e−0.073(x − 3) | 0.7484 | 12.5",
+     "value_num": 0.7484,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "dissipation_half_life_lower_leaves_0_5_mg_mL",
+     "quote": "Lower leaves | 5–48 | 0.5 | y = 0.0540e−0.059(x − 5) | 0.9484 | 16.7",
+     "value_num": 16.7,
+     "unit": "days",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_regression_equation_dissipation_lower_leaves_0_5_mg_mL",
+     "quote": "Lower leaves | 5–48 | 0.5 | y = 0.0540e−0.059(x − 5) | 0.9484 | 16.7",
+     "value_text": "y = 0.0540e−0.059(x − 5)",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_dissipation_lower_leaves_0_5_mg_mL",
+     "quote": "Lower leaves | 5–48 | 0.5 | y = 0.0540e−0.059(x − 5) | 0.9484 | 16.7",
+     "value_num": 0.9484,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "dissipation_half_life_lower_leaves_2_mg_mL",
+     "quote": "| 2 | y = 0.2417e−0.068(x − 5) | 0.8671 | 15.2",
+     "value_num": 15.2,
+     "unit": "days",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_regression_equation_dissipation_lower_leaves_2_mg_mL",
+     "quote": "| 2 | y = 0.2417e−0.068(x − 5) | 0.8671 | 15.2",
+     "value_text": "y = 0.2417e−0.068(x − 5)",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_dissipation_lower_leaves_2_mg_mL",
+     "quote": "| 2 | y = 0.2417e−0.068(x − 5) | 0.8671 | 15.2",
+     "value_num": 0.8671,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "dissipation_half_life_roots_0_5_mg_mL",
+     "quote": "Root | 7–48 | 0.5 | y = 0.0757e−0.051(x − 7) | 0.8703 | 20.6",
+     "value_num": 20.6,
+     "unit": "days",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_regression_equation_dissipation_roots_0_5_mg_mL",
+     "quote": "Root | 7–48 | 0.5 | y = 0.0757e−0.051(x − 7) | 0.8703 | 20.6",
+     "value_text": "y = 0.0757e−0.051(x − 7)",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_dissipation_roots_0_5_mg_mL",
+     "quote": "Root | 7–48 | 0.5 | y = 0.0757e−0.051(x − 7) | 0.8703 | 20.6",
+     "value_num": 0.8703,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "dissipation_half_life_roots_2_mg_mL",
+     "quote": "| 2 | y = 0.052e−0.047(x − 7) | 0.8893 | 21.7",
+     "value_num": 21.7,
+     "unit": "days",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_regression_equation_dissipation_roots_2_mg_mL",
+     "quote": "| 2 | y = 0.052e−0.047(x − 7) | 0.8893 | 21.7",
+     "value_text": "y = 0.052e−0.047(x − 7)",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_dissipation_roots_2_mg_mL",
+     "quote": "| 2 | y = 0.052e−0.047(x − 7) | 0.8893 | 21.7",
+     "value_num": 0.8893,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "dissipation_half_life_treated_leaves_0_5_mg_mL",
+     "quote": "Treated leaves | 1–48 | 0.5 | y = 42.407e−0.106x | 0.9582 | 6.5",
+     "value_num": 6.5,
+     "unit": "days",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_regression_equation_dissipation_treated_leaves_0_5_mg_mL",
+     "quote": "Treated leaves | 1–48 | 0.5 | y = 42.407e−0.106x | 0.9582 | 6.5",
+     "value_text": "y = 42.407e−0.106x",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_dissipation_treated_leaves_0_5_mg_mL",
+     "quote": "Treated leaves | 1–48 | 0.5 | y = 42.407e−0.106x | 0.9582 | 6.5",
+     "value_num": 0.9582,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "dissipation_half_life_treated_leaves_2_mg_mL",
+     "quote": "| 2 | y = 68.458e−0.099x | 0.9916 | 7.0",
+     "value_num": 7.0,
+     "unit": "days",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_regression_equation_dissipation_treated_leaves_2_mg_mL",
+     "quote": "| 2 | y = 68.458e−0.099x | 0.9916 | 7.0",
+     "value_text": "y = 68.458e−0.099x",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_dissipation_treated_leaves_2_mg_mL",
+     "quote": "| 2 | y = 68.458e−0.099x | 0.9916 | 7.0",
+     "value_num": 0.9916,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "analytical_recovery_leaf_fortified_0_01_mg_kg",
+     "quote": "Leaf | 0.01 | 78 | 8 | 0.004 | y = 3,964,048x + 9802 | 0.993",
+     "value_num": 78,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_rsd_leaf_fortified_0_01_mg_kg",
+     "quote": "Leaf | 0.01 | 78 | 8 | 0.004 | y = 3,964,048x + 9802 | 0.993",
+     "value_num": 8,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "limit_of_quantification_leaf",
+     "quote": "Leaf | 0.01 | 78 | 8 | 0.004 | y = 3,964,048x + 9802 | 0.993",
+     "value_num": 0.004,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_calibration_leaf",
+     "quote": "Leaf | 0.01 | 78 | 8 | 0.004 | y = 3,964,048x + 9802 | 0.993",
+     "value_num": 0.993,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "analytical_recovery_leaf_fortified_0_1_mg_kg",
+     "quote": "| 0.1 | 82 | 9 |",
+     "value_num": 82,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_rsd_leaf_fortified_0_1_mg_kg",
+     "quote": "| 0.1 | 82 | 9 |",
+     "value_num": 9,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "analytical_recovery_leaf_fortified_1_mg_kg",
+     "quote": "| 1 | 85 | 6 |",
+     "value_num": 85,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_rsd_leaf_fortified_1_mg_kg",
+     "quote": "| 1 | 85 | 6 |",
+     "value_num": 6,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "analytical_recovery_root_fortified_0_01_mg_kg",
+     "quote": "Root | 0.01 | 87 | 5 | 0.001 | y = 5,007,122x + 3234 | 0.998",
+     "value_num": 87,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_rsd_root_fortified_0_01_mg_kg",
+     "quote": "Root | 0.01 | 87 | 5 | 0.001 | y = 5,007,122x + 3234 | 0.998",
+     "value_num": 5,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "limit_of_quantification_root",
+     "quote": "Root | 0.01 | 87 | 5 | 0.001 | y = 5,007,122x + 3234 | 0.998",
+     "value_num": 0.001,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_calibration_root",
+     "quote": "Root | 0.01 | 87 | 5 | 0.001 | y = 5,007,122x + 3234 | 0.998",
+     "value_num": 0.998,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "analytical_recovery_root_fortified_0_1_mg_kg",
+     "quote": "| 0.1 | 94 | 7 |",
+     "value_num": 94,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_rsd_root_fortified_0_1_mg_kg",
+     "quote": "| 0.1 | 94 | 7 |",
+     "value_num": 7,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "analytical_recovery_root_fortified_1_mg_kg",
+     "quote": "| 1 | 99 | 8 |",
+     "value_num": 99,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_rsd_root_fortified_1_mg_kg",
+     "quote": "| 1 | 99 | 8 |",
+     "value_num": 8,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "analytical_recovery_cucumber_fortified_0_001_mg_kg",
+     "quote": "Cucumber | 0.001 | 74 | 10 | 0.001 | y = 4,817,122x + 1329 | 0.996",
+     "value_num": 74,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_rsd_cucumber_fortified_0_001_mg_kg",
+     "quote": "Cucumber | 0.001 | 74 | 10 | 0.001 | y = 4,817,122x + 1329 | 0.996",
+     "value_num": 10,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "limit_of_quantification_cucumber",
+     "quote": "Cucumber | 0.001 | 74 | 10 | 0.001 | y = 4,817,122x + 1329 | 0.996",
+     "value_num": 0.001,
+     "unit": "mg/kg",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_r2_calibration_cucumber",
+     "quote": "Cucumber | 0.001 | 74 | 10 | 0.001 | y = 4,817,122x + 1329 | 0.996",
+     "value_num": 0.996,
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "analytical_recovery_cucumber_fortified_0_01_mg_kg",
+     "quote": "| 0.01 | 90 | 7 |",
+     "value_num": 90,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_rsd_cucumber_fortified_0_01_mg_kg",
+     "quote": "| 0.01 | 90 | 7 |",
+     "value_num": 7,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "analytical_recovery_cucumber_fortified_0_1_mg_kg",
+     "quote": "| 0.1 | 87 | 8 |",
+     "value_num": 87,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    },
+    {
+     "property": "statistic_rsd_cucumber_fortified_0_1_mg_kg",
+     "quote": "| 0.1 | 87 | 8 |",
+     "value_num": 8,
+     "unit": "%",
+     "measured_by": "hplc_msms_residue"
+    }
+   ],
+   "missing_fields": []
+  },
+  {
+   "label": "Py-MSN_CHCl3",
+   "parent": "Py-MSN",
+   "kind": "material",
+   "material": {
+    "name": "pyrimethanil-loaded MSNs (loading from chloroform)",
+    "formula": null,
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "three solvents—chloroform, toluene, and hexane—were used to dissolve pyrimethanil for its loading, and the loading content levels were 3.92%, 29.77% and 20.56%, respectively.",
+   "reagents": [
+    {
+     "name": "chloroform",
+     "formula": "CHCl3",
+     "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
+     "quote": "three solvents—chloroform, toluene, and hexane—were used to dissolve pyrimethanil for its loading, and the loading content levels were 3.92%, 29.77% and 20.56%, respectively."
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "toluene",
+     "value_text": "replaced by chloroform",
+     "parent_value": "toluene",
+     "quote": "three solvents—chloroform, toluene, and hexane—were used to dissolve pyrimethanil for its loading, and the loading content levels were 3.92%, 29.77% and 20.56%, respectively."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "bioactive_loading",
+     "quote": "three solvents—chloroform, toluene, and hexane—were used to dissolve pyrimethanil for its loading, and the loading content levels were 3.92%, 29.77% and 20.56%, respectively.",
+     "value_num": 3.92,
+     "unit": "%",
+     "measured_by": "not_stated"
+    }
+   ]
+  },
+  {
+   "label": "Py-MSN_hexane",
+   "parent": "Py-MSN",
+   "kind": "material",
+   "material": {
+    "name": "pyrimethanil-loaded MSNs (loading from hexane)",
+    "formula": null,
+    "family": "silice_mesoporeuse",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "three solvents—chloroform, toluene, and hexane—were used to dissolve pyrimethanil for its loading, and the loading content levels were 3.92%, 29.77% and 20.56%, respectively.",
+   "reagents": [
+    {
+     "name": "hexane",
+     "formula": "C6H14",
+     "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
+     "quote": "three solvents—chloroform, toluene, and hexane—were used to dissolve pyrimethanil for its loading, and the loading content levels were 3.92%, 29.77% and 20.56%, respectively."
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "toluene",
+     "value_text": "replaced by hexane",
+     "parent_value": "toluene",
+     "quote": "three solvents—chloroform, toluene, and hexane—were used to dissolve pyrimethanil for its loading, and the loading content levels were 3.92%, 29.77% and 20.56%, respectively."
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "bioactive_loading",
+     "quote": "three solvents—chloroform, toluene, and hexane—were used to dissolve pyrimethanil for its loading, and the loading content levels were 3.92%, 29.77% and 20.56%, respectively.",
+     "value_num": 20.56,
+     "unit": "%",
+     "measured_by": "not_stated"
+    }
+   ]
+  }
+ ],
+ "sample_inventory": [
+  {
+   "sample": "MSNs",
+   "defined_in": "3.2 Synthesis of Mesoporous Silica Nanoparticles",
+   "route": "MSN",
+   "results_in": [
+    "Fig. 1a",
+    "Fig. 2a,b",
+    "Fig. 3",
+    "2.1 (BET)"
+   ]
+  },
+  {
+   "sample": "Py-MSNs (loaded from toluene, 29.77%)",
+   "defined_in": "3.3 Loading of Pyrimethanil",
+   "route": "Py-MSN",
+   "results_in": [
+    "Fig. 1b",
+    "Fig. 2c,d",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Table 1",
+    "Table 2",
+    "2.6"
+   ]
+  },
+  {
+   "sample": "Py-MSNs loaded from chloroform (3.92%)",
+   "defined_in": "2.1",
+   "route": "Py-MSN_CHCl3",
+   "results_in": [
+    "2.1"
+   ]
+  },
+  {
+   "sample": "Py-MSNs loaded from hexane (20.56%)",
+   "defined_in": "2.1",
+   "route": "Py-MSN_hexane",
+   "results_in": [
+    "2.1"
+   ]
+  },
+  {
+   "sample": "cucumber plants treated with Py-MSNs at 0.5 mg/mL (low dosage)",
+   "defined_in": "3.5 Greenhouse Study",
+   "route": "Py-MSN",
+   "results_in": [
+    "Fig. 5a,c,e,g",
+    "Table 2",
+    "2.6"
+   ]
+  },
+  {
+   "sample": "cucumber plants treated with Py-MSNs at 2 mg/mL (high dosage)",
+   "defined_in": "3.5 Greenhouse Study",
+   "route": "Py-MSN",
+   "results_in": [
+    "Fig. 5b,d,f,h",
+    "Table 2",
+    "2.6"
+   ]
+  },
+  {
+   "sample": "blank leaf, root and cucumber extracts spiked with pyrimethanil",
+   "defined_in": "2.3 Analytical Method Validation",
+   "route": null,
+   "why": "matrices témoins de validation de la méthode analytique, non synthétisées ; leurs résultats (Table 1) sont rattachés à la voie Py-MSN comme résultats de la mesure HPLC-MS/MS",
+   "results_in": [
+    "Table 1"
+   ]
+  },
+  {
+   "sample": "classical pyrimethanil formulations (wettable powder, emulsifiable concentrate)",
+   "defined_in": "2.5",
+   "route": null,
+   "why": "formulations de la littérature citées pour comparer les demi-vies (voir comparisons)",
+   "results_in": []
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules de silice mésoporeuse (MSNs, 200–300 nm) par gabaritage au CTAB et hydrolyse basique du TEOS, puis les charge en pyrimethanil (fongicide) par simple immersion dans une solution de toluène. Le chargement atteint 29,77 % en masse et bloque les mésopores (surface BET de 808,90 à 9,47 m2/g). Le reste de l'article suit le pesticide : libération in vitro à trois pH, puis distribution, dissipation et résidu final après dépôt foliaire sur des plants de concombre, dosés par HPLC-MS/MS.",
+   "quote": "Mesoporous silica nanoparticles are used as pesticide carries in plants, which has been considered as a novel method to reduce the indiscriminate use of conventional pesticides."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir où va la pyrimethanil dans une plante de concombre quand elle est apportée par des MSNs plutôt qu'en formulation classique : sa distribution entre feuilles traitées, feuilles hautes, feuilles basses et racines, sa vitesse de dissipation, et son niveau résiduel dans le fruit comparé aux limites maximales de résidus."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Un seul paramètre de synthèse est comparé : le solvant de chargement (chloroforme, toluène, hexane), pour trouver celui qui donne la teneur la plus élevée en pesticide ; le toluène est retenu ensuite. La libération est testée à trois pH choisis pour imiter le fruit, la racine et la feuille. Deux doses (0,5 et 2 mg/mL) et des prélèvements de 1 à 48 jours servent à vérifier si la dose change la distribution et la demi-vie."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "À synthèse de MSNs identique, seul le solvant de la solution de pyrimethanil change : la teneur en pesticide vaut 3,92 % dans le chloroforme, 29,77 % dans le toluène et 20,56 % dans l'hexane. Le toluène donne donc environ 7,6 fois plus de pesticide que le chloroforme et 1,4 fois plus que l'hexane. Les auteurs n'écrivent pas que les autres conditions de chargement (masse de MSNs, concentration, durée) sont restées identiques.",
+   "quote": "three solvents—chloroform, toluene, and hexane—were used to dissolve pyrimethanil for its loading, and the loading content levels were 3.92%, 29.77% and 20.56%, respectively."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "Py-MSN",
+   "text": "Libération in vitro : les trois pH donnent des profils proches jusqu'à environ 30 h (≈ 56 %), puis la libération est plus rapide à pH 6,13 (99 % après 60 h) qu'à pH 6,93 et 8,06 (93 et 91 % après 80 h). Les auteurs associent pH 6,13, 6,93 et 8,06 au fruit, à la racine et à la feuille et en concluent que la libération serait la plus lente dans la feuille.",
+   "quote": "Then, after the 30th hour, when the pH value was 6.13, more pyrimethanil was released than those with pH values of 6.93 and 8.06."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "Py-MSN",
+   "text": "Distribution : la pyrimethanil passe plutôt vers le haut de la plante que vers le bas, les concentrations étant plus élevées dans les feuilles hautes que dans les feuilles basses et les racines. Le maximum est atteint à 3 jours dans les feuilles hautes, à 5 jours dans les feuilles basses (dose forte) et à 7 jours dans les racines. La dose n'a pas d'effet net sur la distribution ni sur les demi-vies (6,5–7,0 jours dans les feuilles traitées, 20,6–21,7 jours dans les racines).",
+   "quote": "However, there were no obvious differences in the distribution of pesticides between 0.5 and 2 mg/mL, which showed that the dosage had no effect on the distribution of Py-MSNs in cucumber plants."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "Py-MSN",
+   "text": "Le toluène est retenu comme solvant de chargement parce qu'il donne la teneur la plus élevée. Les auteurs concluent que les Py-MSNs sont plutôt absorbées vers le haut de la plante et que le risque d'accumulation de pyrimethanil dans la partie comestible est faible, les teneurs dans le fruit (0,002–0,005 mg/kg) étant très inférieures aux limites maximales de résidus (0,7–2 mg/kg).",
+   "quote": "Therefore, toluene was used as the solvent for Py-MSN preparation."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "MSN",
+   "text": "Les auteurs disent que les MSNs se forment par le mécanisme de gabarit en cristal liquide : le CTAB est l'agent structurant, le TEOS la source de silice, en milieu basique. Le CTAB est retiré par calcination à 550 °C. Aucune réaction n'est écrite.",
+   "quote": "In this study, the liquid crystal templating mechanism was used to prepare MSNs with TEOS as the silica precursor and CTAB as the surfactant in basic conditions."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "Py-MSN",
+   "text": "Pour le chargement, les auteurs invoquent une simple immersion : la pyrimethanil pénètre dans les pores, et la disparition de la structure mésoporeuse visible au MET ainsi que la chute de la surface BET montrent que la plupart des pores sont bloqués par le pesticide sans que la structure des particules soit détruite.",
+   "quote": "This suggests that pyrimethanil was successfully loaded onto the MSNs without destroying the structure of the nanoparticles, and most of the mesoporous structures were blocked by pyrimethanil."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "MSN",
+   "text": "Hypothèse de chimiste : en milieu basique (NaOH 7 mmol dans environ 483 mL, soit un pH d'environ 12) le TEOS s'hydrolyse en silanols qui se condensent autour de micelles de CTAB. Avec 1,0 g de CTAB (environ 2,7 mmol dans 480 mL, soit environ 5,7 mM, au-dessus de la concentration micellaire critique) et 5,0 mL de TEOS (environ 22 mmol), le rapport TEOS/CTAB est d'environ 8. L'ajout goutte à goutte limite la nucléation, la montée à 80 °C accélère la condensation, et la calcination brûle le CTAB et libère la porosité. Un chauffage à 70 °C avant l'ajout puis un maintien à 80 °C pendant 6 h sont décrits sans temps de montée."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "Py-MSN",
+   "text": "Hypothèse de chimiste : la pyrimethanil, une pyrimidine peu polaire (anilino-pyrimidine), se répartit entre la solution et la surface de silice riche en silanols. Le chloroforme, probablement très bon solvant du pesticide et donneur de liaison hydrogène, le retiendrait en solution, d'où une faible teneur ; l'hexane, probablement plus pauvre en affinité pour le pesticide, donnerait un dépôt moins complet ; le toluène serait un compromis. L'article ne teste pas ces explications. Une chute de la surface BET de 808,90 à 9,47 m2/g avec seulement 29,77 % de pesticide est plus forte que ce que la seule occupation du volume poreux laisse attendre : le blocage des entrées de pores par un dépôt de surface ou un dégazage à 80 °C qui n'enlève pas le pesticide paraît probable."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "Le TEOS est inflammable et libère de l'éthanol en s'hydrolysant ; le CTAB est irritant et toxique pour le milieu aquatique ; la solution de NaOH 2,0 M est corrosive. Le toluène, le chloroforme (cancérogène suspecté) et l'hexane (neurotoxique) sont à manipuler sous hotte, ainsi que le méthanol et l'acétonitrile des analyses. La pyrimethanil est un fongicide à manipuler avec gants et à ne pas rejeter. Les MSNs sont une poudre nanométrique à ne pas inhaler ; la calcination à 550 °C et la centrifugation à 10 000 rpm demandent un four et un rotor équilibré adaptés. Les plants traités et leurs déchets sont à éliminer comme déchets phytosanitaires."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "MSN",
+   "text": "Pour les MSNs, l'article ne donne ni le rendement, ni la vitesse d'agitation, ni la vitesse d'ajout de la soude, ni la durée du chauffage à 70 °C, ni le mode de séparation du solide avant lavage, ni le volume des lavages, ni les conditions de lyophilisation, ni l'atmosphère, la rampe et le refroidissement de la calcination. Le protocole est donné « en référence à Radu » (B37) sans que l'on sache ce qui a été modifié ; la pureté de la soude et de l'éthanol n'est pas donnée. Aucun diamètre de pore ni volume poreux n'est donné alors que l'analyse BJH est annoncée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "Py-MSN",
+   "text": "Pour le chargement, la durée de séchage est donnée mais pas le mode, la température de l'agitation, ni la pureté du toluène. Les branches chloroforme et hexane n'ont ni quantités ni durées propres ; seule la teneur en pesticide est donnée. La courbe d'étalonnage de l'HPLC qui sert à doser le chargement n'est pas décrite. Pour l'étude sur plante : variété de concombre, température et durée du jour, taille des pots, nombre de plants, date du prélèvement des fruits ne sont pas donnés ; la dose de 0,5 et 2 mg/mL est présentée tantôt comme concentration de pyrimethanil, tantôt de Py-MSNs. Les demi-vies du tableau 2 pour les feuilles hautes, basses et les racines ne correspondent pas à ln 2 divisé par la constante de l'équation (voir doubts)."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "MSN",
+   "ref_id": "B37-molecules-22-00817",
+   "role": "protocole_adapte",
+   "quote": "TEOS and CTAB were used as the silica source and structure-directing agent, respectively, referring to Radu"
+  },
+  {
+   "route": "Py-MSN",
+   "ref_id": "B38-molecules-22-00817",
+   "role": "protocole_adapte",
+   "quote": "For sample preparation, a modified QuEChERS method was employed to analysis the concentration of pyrimethanil in cucumbers."
+  },
+  {
+   "route": "Py-MSN",
+   "ref_id": "B39-molecules-22-00817",
+   "role": "protocole_adapte",
+   "quote": "For sample preparation, a modified QuEChERS method was employed to analysis the concentration of pyrimethanil in cucumbers."
+  },
+  {
+   "route": "Py-MSN",
+   "ref_id": "B29-molecules-22-00817",
+   "role": "autre",
+   "quote": "to exclude any results produced by matrix effects, matrix-matched calibration solutions were used to test the linearity of the method for more accurate results"
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "pyrimethanil wettable powder on cucumbers (Malhat et al.)",
+   "property": "dissipation_half_life",
+   "value_num": 2.19,
+   "unit": "days",
+   "conditions": "cucumbers, formulation classique (poudre mouillable)",
+   "ref_id": "B30-molecules-22-00817",
+   "route": "Py-MSN",
+   "quote": "Malhat et al. found that the half-life of wettable pyrimethanil powder on cucumbers was 2.19 days"
+  },
+  {
+   "material": "pyrimethanil emulsifiable concentrates on tomato (Liu et al.)",
+   "property": "dissipation_half_life",
+   "value_text": "1.8–4.2 days",
+   "unit": "days",
+   "conditions": "tomate, formulation classique (concentré émulsionnable)",
+   "ref_id": "B31-molecules-22-00817",
+   "route": "Py-MSN",
+   "quote": "Liu et al. showed that the half-lives of emulsifiable pyrimethanil concentrates on tomato were 1.8–4.2 days"
+  },
+  {
+   "material": "pyrimethanil in cucumber, limite réglementaire (Codex)",
+   "property": "maximum_residue_limit",
+   "value_num": 0.7,
+   "unit": "mg/kg",
+   "conditions": "MRL établie par Codex pour la pyrimethanil dans le concombre",
+   "route": "Py-MSN",
+   "quote": "The maximum residue limit (MRL) established by Codex, United States, Europe Union, China, and Japan for pyrimethanil in cucumber is 0.7, 1.5, 0.7, 2, and 2 mg/kg, respectively."
+  },
+  {
+   "material": "pyrimethanil in cucumber, limite réglementaire (United States)",
+   "property": "maximum_residue_limit",
+   "value_num": 1.5,
+   "unit": "mg/kg",
+   "conditions": "MRL établie par United States pour la pyrimethanil dans le concombre",
+   "route": "Py-MSN",
+   "quote": "The maximum residue limit (MRL) established by Codex, United States, Europe Union, China, and Japan for pyrimethanil in cucumber is 0.7, 1.5, 0.7, 2, and 2 mg/kg, respectively."
+  },
+  {
+   "material": "pyrimethanil in cucumber, limite réglementaire (Europe Union)",
+   "property": "maximum_residue_limit",
+   "value_num": 0.7,
+   "unit": "mg/kg",
+   "conditions": "MRL établie par Europe Union pour la pyrimethanil dans le concombre",
+   "route": "Py-MSN",
+   "quote": "The maximum residue limit (MRL) established by Codex, United States, Europe Union, China, and Japan for pyrimethanil in cucumber is 0.7, 1.5, 0.7, 2, and 2 mg/kg, respectively."
+  },
+  {
+   "material": "pyrimethanil in cucumber, limite réglementaire (China)",
+   "property": "maximum_residue_limit",
+   "value_num": 2,
+   "unit": "mg/kg",
+   "conditions": "MRL établie par China pour la pyrimethanil dans le concombre",
+   "route": "Py-MSN",
+   "quote": "The maximum residue limit (MRL) established by Codex, United States, Europe Union, China, and Japan for pyrimethanil in cucumber is 0.7, 1.5, 0.7, 2, and 2 mg/kg, respectively."
+  },
+  {
+   "material": "pyrimethanil in cucumber, limite réglementaire (Japan)",
+   "property": "maximum_residue_limit",
+   "value_num": 2,
+   "unit": "mg/kg",
+   "conditions": "MRL établie par Japan pour la pyrimethanil dans le concombre",
+   "route": "Py-MSN",
+   "quote": "The maximum residue limit (MRL) established by Codex, United States, Europe Union, China, and Japan for pyrimethanil in cucumber is 0.7, 1.5, 0.7, 2, and 2 mg/kg, respectively."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "Fig. 2 (légende) et texte 2.1",
+   "issue": "La légende de la figure 2 dit « SEM images » alors que le texte (2.1) et l'image (barres de 0.2 µm et 100 nm, franges des mésopores) indiquent du MET : les résultats de la figure 2 sont rangés dans la mesure TEM."
+  },
+  {
+   "where": "Section 2.4 et 2.5, renvois de figures",
+   "issue": "Le texte cite « Figure 2a,b », « Figure 2c–f » et « Figure 2g,h » pour les concentrations de pyrimethanil, alors que ces données sont dans la figure 5 (panneaux a–h) ; la figure 2 est l'imagerie. Les valeurs sont lues sur la figure 5."
+  },
+  {
+   "where": "Fig. 5, lecture des valeurs",
+   "issue": "Les valeurs de la figure 5 sont les étiquettes imprimées sur les barres (3 décimales), recopiées telles quelles ; les barres d'erreur (écarts-types) ne sont pas étiquetées et n'ont pas été extraites. Les temps lus sont 1, 3, 5, 7, 10, 14, 21, 30 et 48 jours : le jour 28 listé en 3.5 n'a pas de barre. L'unité mg/kg vient de l'axe des ordonnées (« Con. of pyrimethanil (mg/kg) »). Les valeurs de feuilles hautes à 3 et 48 jours sont prises dans le texte (0.210, 0.422, 0.011, 0.013)."
+  },
+  {
+   "where": "Fig. 4, lecture graphique",
+   "issue": "Les libérations à 23 h et 48 h sont lues sur la figure 4 avec une précision d'environ ±3 points de pourcentage ; les valeurs données dans le texte (56 %, 99 %, 93 %, 91 %) sont cohérentes avec la courbe. La figure 3 (isothermes) a été regardée : aucun volume ni diamètre de pore n'est donné par le texte, et seule la surface BET est reprise."
+  },
+  {
+   "where": "BET, 3.3",
+   "issue": "Le texte écrit « at 196 °C » sans signe moins pour la mesure d'azote ; la valeur est recopiée telle qu'écrite (value_text), sans correction."
+  },
+  {
+   "where": "SEM, 3.2 et Fig. 1",
+   "issue": "Le texte donne un SEM « SU8000, Hitachi » alors que le bandeau des images de la figure 1 affiche « SU8010 10.0kV » ; l'appareil du texte est retenu et la tension de 10.0 kV lue sur le bandeau (from_figure)."
+  },
+  {
+   "where": "Table 1 et texte 2.3",
+   "issue": "Le texte dit que les coefficients de détermination (R2) sont meilleurs que 0.995, mais le tableau 1 donne 0.993 pour les feuilles. Les valeurs du tableau sont extraites."
+  },
+  {
+   "where": "Table 2, demi-vies",
+   "issue": "Pour les feuilles hautes, basses et les racines, la demi-vie du tableau (13.8, 12.5, 16.7, 15.2, 20.6, 21.7 jours) vaut ln 2 / k de l'équation ajustée plus le jour de départ de la série (3, 5 ou 7 jours : 0.693/0.064 + 3 = 13.8 par exemple), alors que pour les feuilles traitées (6.5 et 7.0 jours) elle vaut ln 2 / k. Valeurs du tableau extraites sans les corriger."
+  },
+  {
+   "where": "Dosage 0.5 et 2 mg/mL",
+   "issue": "Le texte 3.5 parle de « concentration levels of pyrimethanil » de 0.5 et 2 mg mL−1, la légende de la figure 5 et le tableau 2 de « Py-MSNs » ou « Dosage (mg/mL) ». Les propriétés sont nommées d'après la dose écrite (0_5_mg_mL, 2_mg_mL) sans trancher ; avec 29.77 % de pesticide, 0.5 mg/mL de Py-MSNs ne correspond pas à 0.5 mg/mL de pyrimethanil."
+  },
+  {
+   "where": "Branches chloroforme et hexane",
+   "issue": "L'article ne donne que le solvant et la teneur obtenue. Les branches héritent des étapes de Py-MSN (masse de MSNs, concentration de 6.0 mg/mL, agitation, centrifugation, séchage) sans que l'article le dise explicitement ; seule la variation de solvant est enregistrée. La teneur est liée à la mesure HPLC seulement pour la voie de base (measured_by not_stated pour les branches)."
+  },
+  {
+   "where": "MSN, étapes 3 et 5",
+   "issue": "Le mélange est chauffé à 70 °C puis agité à 80 °C pendant 6 h : les deux températures sont recopiées (étape heat, étape react) ; le texte ne dit pas si la température passe de 70 à 80 °C avant ou pendant l'ajout du TEOS."
+  },
+  {
+   "where": "Résidus finaux dans le fruit, 2.6",
+   "issue": "Les trois valeurs par dose (0.003, 0.002, 0.002 et 0.004, 0.005, 0.003 mg/kg) ne sont pas attribuées par l'article à des échantillons ou des répétitions ; elles sont numérotées 1 à 3 dans l'ordre de la phrase."
+  },
+  {
+   "where": "Libération à pH 6.13, 6.93 et 8.06",
+   "issue": "Le texte associe ces trois pH aux « cucumbers, roots, and leaves, respectively » (fruit, racines, feuilles) ; la correspondance est notée dans une annotation, les propriétés restent nommées par pH."
+  },
+  {
+   "where": "Résultats analytiques de validation",
+   "issue": "Les recouvrements, RSD, LOQ et R2 du tableau 1 sont rangés comme résultats de la voie Py-MSN (mesure hplc_msms_residue), faute de voie dédiée à l'étalonnage ; les équations d'étalonnage sont des réglages « calibration » de cette mesure."
+  },
+  {
+   "where": "Vocabulaire",
+   "issue": "Ajouts proposés : réglages mobile_phase, flow_rate, injection_volume, ionization_mode, mrm_transitions, ms_source_conditions, test_medium ; propriétés residue_concentration et dissipation_half_life ; technique release_test. La propriété drug_release (ajout d'un autre agent) ne liste que adsorption_test comme technique : l'avertissement « inhabituelle » pour measured_by release_test_1 est attendu."
+  },
+  {
+   "where": "Rôle de la pyrimethanil dans la grille",
+   "issue": "Le rôle `precursor` est utilisé pour le pesticide chargé, faute de rôle « molécule invitée » dans la liste ; il n'est pas un précurseur du support."
+  }
+ ]
+}
