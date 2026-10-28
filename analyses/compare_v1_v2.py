@@ -80,6 +80,44 @@ def volumes(d):
     return V, noms
 
 
+def all_values(d):
+    """(valeur, unité normalisée, sorte) de tous les nombres extraits : paramètres, quantités, résultats, réglages, littérature."""
+    out = []
+    nu = compare_blind.norm_unit
+    for r in d.get("routes") or []:
+        for g in r.get("reagents") or []:
+            if isinstance(g.get("amount"), (int, float)):
+                out.append((float(g["amount"]), nu(g.get("unit")), "reactif"))
+        for s in r.get("steps") or []:
+            for x in s.get("parameters") or []:
+                if isinstance(x.get("value_num"), (int, float)):
+                    out.append((float(x["value_num"]), nu(x.get("unit")), "parametre"))
+        for v in r.get("variations") or []:
+            if isinstance(v.get("value_num"), (int, float)):
+                out.append((float(v["value_num"]), nu(v.get("unit")), "parametre"))
+        for o in r.get("outcomes") or []:
+            if isinstance(o.get("value_num"), (int, float)):
+                out.append((float(o["value_num"]), nu(o.get("unit")), "resultat"))
+        for ch in r.get("characterizations") or []:
+            for st in ch.get("settings") or []:
+                if isinstance(st.get("value_num"), (int, float)):
+                    out.append((float(st["value_num"]), nu(st.get("unit")), "reglage"))
+    return out
+
+
+def value_recall(A, B):
+    """Part des valeurs de A retrouvées dans B (même valeur à 2 %, même unité), sans tenir compte du nom."""
+    pool = list(B)
+    found = 0
+    for v, u, _ in A:
+        for i, (w, u2, _) in enumerate(pool):
+            if u == u2 and compare_blind.close(v, w):
+                found += 1
+                pool.pop(i)
+                break
+    return found, len(A)
+
+
 def tokens():
     T = {}
     for r in csv.DictReader(open("audits/jetons.csv", encoding="utf-8-sig")):
@@ -89,7 +127,25 @@ def tokens():
     return T
 
 
+def manquantes(p):
+    v1 = json.load(open(f"extractions/{p}.json", encoding="utf-8"))
+    v2 = json.load(open(f"extractions_v2/{p}.json", encoding="utf-8"))
+    B = all_values(v2)
+    for r in v1.get("routes") or []:
+        for kind, items in (("résultat", r.get("outcomes") or []), ("paramètre", [x for s in r.get("steps") or [] for x in s.get("parameters") or []]), ("réactif", r.get("reagents") or [])):
+            for x in items:
+                v = x.get("value_num", x.get("amount"))
+                if not isinstance(v, (int, float)):
+                    continue
+                u = compare_blind.norm_unit(x.get("unit"))
+                if not any(u == u2 and compare_blind.close(float(v), w) for w, u2, _ in B):
+                    print(f"{r['label']} | {kind} {x.get('property') or x.get('name')} = {v} {x.get('unit') or ''} | « {(x.get('quote') or '')[:110]} »")
+
+
 def main():
+    if "--manquantes" in sys.argv:
+        manquantes(sys.argv[-1])
+        return
     pubs = [p for p in json.load(open("audits/v2/tirage.json"))["publications"] if os.path.exists(f"extractions_v2/{p}.json")]
     T = tokens()
     ajouts = {}
@@ -104,6 +160,9 @@ def main():
         c1, _, _ = cv.cover(p, v1)
         c2, _, _ = cv.cover(p, v2)
         conc = compare_blind.compare(p, v1, v2)
+        a1, a2 = all_values(v1), all_values(v2)
+        f12, n1 = value_recall(a1, a2)
+        f21, n2 = value_recall(a2, a1)
         t = T.get(p, {})
         rows.append(dict(pmcid=p, v1=V1, v2=V2, noms_v1=N1, noms_v2=N2,
                          couverture_v1={k: c1[k]["pct"] for k in c1}, couverture_v2={k: c2[k]["pct"] for k in c2},
@@ -113,6 +172,7 @@ def main():
                                           precision_params=conc["precision_params"], rappel_resultats=conc["rappel_resultats_global"],
                                           precision_resultats=conc["precision_resultats"], rappel_reactifs=conc["rappel_reactifs_global"],
                                           conflits_params=conc["params_conflits"], conflits_resultats=conc["resultats_conflits"]),
+                         valeurs=dict(v1=n1, v2=n2, v1_dans_v2=f12, v2_dans_v1=f21),
                          ajouts_vocabulaire=ajouts.get(p, 0),
                          jetons_v1=sum(v for k, v in t.items() if not k.startswith(("v2", "complement", "test_", "critique_ajouts"))),
                          jetons_v2=t.get("v2_extraction", 0), jetons_v2_critique=t.get("v2_critique", 0)))
@@ -143,7 +203,14 @@ def main():
         b = sum(r["noms_v2"][k][0] for r in rows); n2 = sum(r["noms_v2"][k][1] for r in rows)
         d1 = len({x for r in rows for x in [r["noms_v1"][k][2]]})
         L.append(f"| {k} | {round(100 * a / max(n1, 1))} % ({a}/{n1}) | {round(100 * b / max(n2, 1))} % ({b}/{n2}) | {sum(r['noms_v1'][k][2] for r in rows)} | {sum(r['noms_v2'][k][2] for r in rows)} |")
-    L += ["", "## Concordance des valeurs (v1 comme référence)", "",
+    n1 = sum(r["valeurs"]["v1"] for r in rows); n2 = sum(r["valeurs"]["v2"] for r in rows)
+    f12 = sum(r["valeurs"]["v1_dans_v2"] for r in rows); f21 = sum(r["valeurs"]["v2_dans_v1"] for r in rows)
+    L += ["", "## Concordance des valeurs, indépendante des noms", "",
+          f"- valeurs numériques v1 retrouvées dans la v2 (même valeur à 2 %, même unité, quel que soit le nom) : {f12} / {n1} ({round(100 * f12 / max(n1, 1), 1)} %)",
+          f"- valeurs numériques v2 déjà présentes dans la v1 : {f21} / {n2} ({round(100 * f21 / max(n2, 1), 1)} %) ; le reste est nouveau en v2",
+          "- les valeurs v1 non retrouvées sont listées par `python3 -I analyses/compare_v1_v2.py --manquantes <PMCID>`"]
+    L += ["", "## Concordance par nom canonique (v1 comme référence, méthode de `compare_blind.py`)", "",
+          "Cette mesure exige le même nom canonique : elle sous-estime l'accord quand la v1 a mal nommé une valeur (par exemple des teneurs XPS en % atomique rangées sous « énergie de liaison »).", "",
           f"- voies v1 appariées à une voie v2 : {sum(r['concordance']['voies_appariees'] for r in rows)} sur {S('v1', 'voies')}",
           f"- paramètres numériques v1 retrouvés en v2 (rappel, médiane par publication) : {med(lambda r: r['concordance']['rappel_params'] or 0)} %",
           f"- paramètres numériques v2 retrouvés en v1 (médiane) : {med(lambda r: r['concordance']['precision_params'] or 0)} %",

@@ -1,0 +1,1619 @@
+{
+ "pmcid": "PMC6769153",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "C-QDs (500 °C, 3 h)",
+   "defined_in": "Experimental Methods, Synthesis of C-QD",
+   "route": "C-QD_500C_3h",
+   "results_in": [
+    "Results and Discussion",
+    "Figs 2-8",
+    "Supporting Information Figs S1-S4, S6-S8, Tables S1-S3"
+   ]
+  },
+  {
+   "sample": "ground fennel powder (précurseur)",
+   "defined_in": "Experimental Methods, Synthesis of C-QD",
+   "route": null,
+   "why": "précurseur broyé, étape 1-2 de la voie de base ; ses spectres FTIR et XPS sont rangés dans les résultats de la voie de base (suffixe precursor)",
+   "results_in": [
+    "Fig. 6A",
+    "Fig. 7B"
+   ]
+  },
+  {
+   "sample": "essais à 200 °C, 1 à 5 h",
+   "defined_in": "Results and Discussion, FTIR optimisation",
+   "route": "C-QD_200C",
+   "results_in": [
+    "tendance globale du texte"
+   ]
+  },
+  {
+   "sample": "essais à 300 °C, 1 à 5 h",
+   "defined_in": "Results and Discussion, FTIR optimisation",
+   "route": "C-QD_300C",
+   "results_in": [
+    "tendance globale du texte"
+   ]
+  },
+  {
+   "sample": "essai typique à 300 °C, 3 h",
+   "defined_in": "Supporting Information, section 7",
+   "route": "C-QD_300C_3h",
+   "results_in": [
+    "Fig. S5"
+   ]
+  },
+  {
+   "sample": "essais à 400 °C, 1 à 5 h",
+   "defined_in": "Results and Discussion, FTIR optimisation",
+   "route": "C-QD_400C",
+   "results_in": [
+    "tendance globale du texte"
+   ]
+  },
+  {
+   "sample": "maintien à 500 °C plus de 3 h",
+   "defined_in": "Results and Discussion, FTIR optimisation",
+   "route": "C-QD_500C_longer",
+   "results_in": [
+    "texte"
+   ]
+  },
+  {
+   "sample": "C-QDs stockés 15 mois",
+   "defined_in": "Results and Discussion, DLS and zeta potential",
+   "route": null,
+   "why": "même lot que la voie de base après stockage à température ambiante ; résultat rangé dans les outcomes de la voie de base",
+   "results_in": [
+    "Fig. S4"
+   ]
+  },
+  {
+   "sample": "C-QDs dispersés à pH 3, 5, 7, 9, 11, 13",
+   "defined_in": "PL data-structure for ML",
+   "route": null,
+   "why": "conditions de mesure du matériau fini (dispersions à différents pH), pas des synthèses ; résultats rangés dans les outcomes de la voie de base",
+   "results_in": [
+    "Fig. 8D",
+    "Fig. S8",
+    "Figs S9-S11"
+   ]
+  },
+  {
+   "sample": "jeu de données de PL intégré (48 spectres)",
+   "defined_in": "PL data-structure for ML",
+   "route": "PL_ML_analysis",
+   "results_in": [
+    "Fig. 9",
+    "Supporting Information section 2"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "label": "C-QD_500C_3h",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "carbon quantum dots from fennel seeds",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": "graphitic sp2 carbon, crystalline (lattice spacing 0.21 nm)",
+    "morphology": "spherical nanoparticles, mono-dispersed"
+   },
+   "methods": [
+    "pyrolysis_carbonization"
+   ],
+   "method": "single-step pyrolysis of ground fennel seeds on a heat plate at 500 °C for 3 h, then aqueous extraction, filtration and dialysis",
+   "quote": "Carbon Quantum dots were synthesized by pyrolysis method.",
+   "scale": "0.2 g of ground fennel powder",
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "ground fennel seeds (Foeniculum vulgare)",
+     "formula": null,
+     "role": "carbon_source",
+     "amount": 0.2,
+     "unit": "g",
+     "supplier": "Swati seeds, India",
+     "supplier_quote": "Fennel seeds (Swati seeds, India) were used without further purification.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "Ground greenish fennel powder (0.2 g)"
+    },
+    {
+     "name": "deionized water",
+     "formula": "H2O",
+     "role": "solvent",
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
+     "quote": "Deionized water (DI) was used throughout the experiment."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "grind",
+     "description": "Broyage des graines de fenouil au mixeur-broyeur.",
+     "quote": "As received fennel seeds were crushed using a mixer grinder (Tiger mixer grinder, Japan).",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "mixer grinder",
+       "detail": "Tiger mixer grinder, Japan",
+       "quote": "crushed using a mixer grinder (Tiger mixer grinder, Japan)"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "pyrolyze",
+     "description": "Pyrolyse de 0,2 g de poudre de fenouil dans un creuset sur plaque chauffante à 500 °C pendant 3 h, puis refroidissement à température ambiante.",
+     "quote": "Ground greenish fennel powder (0.2 g) was transferred to the crucible cup (AS ONE, Japan) and was heated using a heat plate (AS ONE, Japan) at a constant temperature of 500 °C for 3 hours.",
+     "parameters": [
+      {
+       "name": "mass",
+       "quote": "Ground greenish fennel powder (0.2 g)",
+       "value_num": 0.2,
+       "unit": "g"
+      },
+      {
+       "name": "temperature",
+       "quote": "at a constant temperature of 500 °C for 3 hours",
+       "value_num": 500,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "at a constant temperature of 500 °C for 3 hours",
+       "value_num": 3,
+       "unit": "hours"
+      },
+      {
+       "name": "cooling",
+       "quote": "the crucible was allowed to cool down to room temperature",
+       "value_text": "allowed to cool down to room temperature"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "crucible cup",
+       "detail": "AS ONE, Japan",
+       "quote": "transferred to the crucible cup (AS ONE, Japan)"
+      },
+      {
+       "type": "heat plate",
+       "detail": "AS ONE, Japan",
+       "quote": "heated using a heat plate (AS ONE, Japan)"
+      }
+     ],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "gas_flow"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "dissolve",
+     "description": "Dissolution du produit carbonisé gris foncé dans l'eau désionisée.",
+     "quote": "Carbonization of the greenish fennel powder turned into a dark-gray product, and it was dissolved in deionized water followed by the sonication for 5 minutes.",
+     "parameters": [],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "sonicate",
+     "description": "Sonication de la suspension pendant 5 min.",
+     "quote": "it was dissolved in deionized water followed by the sonication for 5 minutes",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "followed by the sonication for 5 minutes",
+       "value_num": 5,
+       "unit": "minutes"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "power"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "centrifuge",
+     "description": "Centrifugation de la suspension noire pour retirer les grosses particules non dissoutes.",
+     "quote": "The black color suspension was centrifuged at 15000 rpm for 10 minutes to remove the large un-dissolved particles.",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "centrifuged at 15000 rpm for 10 minutes",
+       "value_num": 15000,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "centrifuged at 15000 rpm for 10 minutes",
+       "value_num": 10,
+       "unit": "minutes"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 6,
+     "action": "filter",
+     "description": "Filtration du surnageant sur filtre de 100 nm.",
+     "quote": "The supernatant was filtered using 100 nm pore size filter (PALL ACRO DISC, Japan)",
+     "parameters": [
+      {
+       "name": "dimension",
+       "quote": "filtered using 100 nm pore size filter",
+       "value_num": 100,
+       "unit": "nm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "filter",
+       "detail": "PALL ACRO DISC, Japan, 100 nm pore size",
+       "quote": "100 nm pore size filter (PALL ACRO DISC, Japan)"
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "action": "dialyze",
+     "description": "Dialyse de purification avec un kit Float-A-Lyzer G2.",
+     "quote": "subjected to the dialysis using dialysis kit (Float-A-Lyzer G2 Dialysis, Japan) for further purification",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "dialysis kit",
+       "detail": "Float-A-Lyzer G2 Dialysis, Japan",
+       "quote": "dialysis using dialysis kit (Float-A-Lyzer G2 Dialysis, Japan)"
+      }
+     ],
+     "not_stated": [
+      "duration",
+      "dimension"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "store",
+     "description": "Transfert des C-QDs purifiés dans un flacon en verre pour conservation avant caractérisation.",
+     "quote": "The purified C-QDs was transferred to the glass vial and stored for further characterization.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "glass vial",
+       "detail": null,
+       "quote": "transferred to the glass vial"
+      }
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "uv_vis_1",
+     "technique": "UV_vis",
+     "instrument": "V-530, JASCO, Japan",
+     "result": "Deux bandes d'absorption : un pic très fort à 220 nm (π-π* de C=C) et un épaulement à 338 nm (n-π* de C=O).",
+     "quote": "exhibit two peaks; a very strong peak centered at 220 nm, and another small shoulder peak at 338 nm peaks, attributed to the π- π* transition of C=C and n-π* transition of C=O bonds, respectively",
+     "settings": [],
+     "not_stated": [
+      "wavelength_range",
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "pl_1",
+     "technique": "PL",
+     "instrument": "FP-6500, JASCO, Japan",
+     "result": "Émission indépendante de l'excitation (200 à 340 nm), pic principal à 417 nm et épaulement à 470 nm.",
+     "quote": "the PL emission spectra of C-QDs was independent of the excitation wavelength and had a broad asymmetric peak ranged from 355 to 627 nm",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "PL data was acquired using the excitations 200, 220, 240, 260, 280, 300, 320 and 340 nm",
+       "value_text": "200, 220, 240, 260, 280, 300, 320 and 340 nm"
+      },
+      {
+       "name": "wavelength_range",
+       "quote": "the spectral range 300–750 nm",
+       "value_text": "300–750 nm"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Figure 8C shows the PL of C-QDs dispersed in water",
+       "value_text": "dispersed in water"
+      }
+     ],
+     "not_stated": [
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_ph",
+     "technique": "PL",
+     "instrument": "FP-6500, JASCO, Japan",
+     "result": "Pic d'émission à 419 nm indépendant du pH (3 à 13) ; intensité croissante du pH acide au pH basique, maximale à pH 9–11.",
+     "quote": "Photoluminescence of C-QDs disperse in the water at different pH ranging from 3 to 13 (acidic to basic) is shown in Fig. 8D",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "(excitation wavelength 260 nm)",
+       "value_text": "260 nm"
+      },
+      {
+       "name": "sample_preparation",
+       "quote": "Photoluminescence of C-QDs disperse in the water at different pH ranging from 3 to 13",
+       "value_text": "dispersed in water at pH 3 to 13"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_qy",
+     "technique": "PL",
+     "instrument": "quantum efficiency measurement system QE-2000, Otsuka Electronics, Japan",
+     "result": "Rendement quantique de 9,5 % (excitation 260 nm).",
+     "quote": "The quantum yield of as-synthesized C-QDs (excitation wavelength 260 nm) was calculated to be 9.5%",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "(excitation wavelength 260 nm)",
+       "value_text": "260 nm"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_photostab",
+     "technique": "PL",
+     "instrument": null,
+     "result": "Aucune baisse significative de l'intensité de PL après 4 h d'irradiation continue par une lampe xénon de 150 W.",
+     "quote": "Continuous irradiation from a xenon lamp of 150 W for 4 hours attribute almost no meaningful reduction in the PL intensity",
+     "settings": [
+      {
+       "name": "light_source",
+       "quote": "Continuous irradiation from a xenon lamp of 150 W for 4 hours",
+       "value_text": "xenon lamp of 150 W for 4 hours"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "tem_1",
+     "technique": "TEM",
+     "instrument": "JEM2002-FS, JEOL",
+     "result": "C-QDs uniformes, diamètre moyen 3,90 ± 0,91 nm, franges de réseau à 0,21 nm (plan (100)).",
+     "quote": "C-QDs are highly mono-dispersed with the average size diameter of 3.90 ± 0.91 nm",
+     "settings": [
+      {
+       "name": "particles_counted",
+       "quote": "one hundred forty-eight (148) C-QDs nano-particles were taken into account",
+       "value_num": 148
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "eds_1",
+     "technique": "EDS",
+     "instrument": "JEM-2300F, JEOL (analyse ponctuelle sur grille TEM)",
+     "result": "Seuls des pics de carbone et d'oxygène (aucun élément étranger).",
+     "quote": "A point beam EDS analysis of carbon quantum dots shows that the C-QDs are consists of only carbon and oxygen peaks",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "dls_1",
+     "technique": "DLS_zeta",
+     "instrument": "Nano-ZS 90 Zetasizer, Malvern Instruments Ltd",
+     "result": "Taille moyenne 6,1 nm ; potentiel zêta négatif (pic unique à -23 mV, largeur 10,01 mV).",
+     "quote": "The average size of the C-QDs was found to be 6.1 nm",
+     "settings": [
+      {
+       "name": "dispersant",
+       "quote": "Dynamic light scattering (DLS) size distribution curve of C-QDs dispersed in water",
+       "value_text": "dispersed in water"
+      }
+     ],
+     "not_stated": [
+      "measurement_temperature",
+      "concentration"
+     ]
+    },
+    {
+     "id": "raman_1",
+     "technique": "Raman",
+     "instrument": "Lab RAM HR-800, Horiba JOBIN YVON S.A.S.",
+     "result": "Bandes D (1371 cm-1) et G (1582 cm-1), rapport G/D de 1,58.",
+     "quote": "Raman spectrum shows two distinct peaks at 1371 (D-band) and 1582 cm−1 (G-band), respectively",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "Raman spectrum of C-QDs recorded with 785 nm excitation wavelength",
+       "value_text": "785 nm"
+      }
+     ],
+     "not_stated": [
+      "laser_power"
+     ]
+    },
+    {
+     "id": "ftir_1",
+     "technique": "FTIR",
+     "instrument": "FTIR-4100, JASCO, Japan",
+     "result": "Bandes d'OH, C=O, C=C, C-H/C-O et C-H sur les C-QDs ; disparition des pics CH2 de la poudre de fenouil.",
+     "quote": "FTIR spectra of C-QDs have significant peaks at 3350, 1640, 1405, 1023, 859 cm−1 can be ascribed to OH, C=O, C=C, (C-H or C-O), C-H bending, respectively",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "Fourier transform infrared spectra (FTIR) of dried C-QDs were recorded",
+       "value_text": "dried C-QDs"
+      }
+     ],
+     "not_stated": [
+      "wavenumber_range"
+     ]
+    },
+    {
+     "id": "xps_1",
+     "technique": "XPS",
+     "instrument": "PHI Quantes, ULVAC-PHI. Inc.",
+     "result": "C 1s 71,2 at. % et O 1s 28,8 at. % ; déconvolution de C 1s et O 1s.",
+     "quote": "the C-QDs are mainly composed of carbon and oxygen; i.e., C1s (71.2 at. %) and O 1s (28.8 at. %), respectively",
+     "settings": [],
+     "not_stated": [
+      "xray_source",
+      "calibration_reference"
+     ]
+    },
+    {
+     "id": "tlc_1",
+     "technique": "chromatography_ms",
+     "instrument": "TLC Silica gel 60 F254 plate (Merck Millipore)",
+     "result": "Une seule fraction après dialyse (une seule bande luminescente).",
+     "quote": "the TLC results shows that as-synthesized C-QDs, after the dialysis, has only a single fraction",
+     "settings": [
+      {
+       "name": "column",
+       "quote": "Thin-layer chromatography (TLC) analysis was done using TLC Silica gel 60 F254 plate (Merck Millipore)",
+       "value_text": "TLC Silica gel 60 F254 plate (Merck Millipore)"
+      }
+     ],
+     "not_stated": [
+      "detector",
+      "calibration"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "product_identity",
+     "quote": "The fennel seed sample was fully carbonized at 500 °C for 3 hours",
+     "value_text": "fully carbonized at 500 °C for 3 hours"
+    },
+    {
+     "property": "visual_appearance",
+     "quote": "Carbonization of the greenish fennel powder turned into a dark-gray product",
+     "value_text": "dark-gray product"
+    },
+    {
+     "property": "visual_appearance_suspension",
+     "quote": "The black color suspension was centrifuged at 15000 rpm",
+     "value_text": "black color suspension"
+    },
+    {
+     "property": "visual_appearance_UV_365nm",
+     "quote": "The C-QDs suspended in water shows strong bluish fluorescence emission under UV exposure (365 nm).",
+     "value_text": "strong bluish fluorescence emission under UV exposure (365 nm)"
+    },
+    {
+     "property": "visual_appearance_storage_15_months",
+     "quote": "Storage of C-QDs at room temperature even after 15 month shows no sign of turbidity",
+     "value_text": "no sign of turbidity after 15 month"
+    },
+    {
+     "property": "particle_size",
+     "quote": "C-QDs are highly mono-dispersed with the average size diameter of 3.90 ± 0.91 nm",
+     "value_num": 3.9,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "size_dispersity_std",
+     "quote": "C-QDs are highly mono-dispersed with the average size diameter of 3.90 ± 0.91 nm",
+     "value_num": 0.91,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "size_dispersity_97pct_range",
+     "quote": "More than 97 % of C-QDs have diameter in the range of 2.4 – 5.9 nm",
+     "value_text": "More than 97 % of C-QDs have diameter in the range of 2.4 – 5.9 nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "d_spacing",
+     "quote": "the lattice spacing in the C-QDs was found to be 0.21 nm",
+     "value_num": 0.21,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "crystallinity",
+     "quote": "the structure of C-QDs was well crystalline",
+     "value_text": "well crystalline",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "as-synthesized C-QDs have a spherical shape (no hollow carbon structure was observed)",
+     "value_text": "spherical shape (no hollow carbon structure was observed)",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "hydrodynamic_size",
+     "quote": "The average size of the C-QDs was found to be 6.1 nm",
+     "value_num": 6.1,
+     "unit": "nm",
+     "measured_by": "dls_1"
+    },
+    {
+     "property": "hydrodynamic_size_no_1nm_peak",
+     "quote": "the DLS measurements also shows no peak having hydrodynamic diameter around 1.0 nm",
+     "value_text": "no peak having hydrodynamic diameter around 1.0 nm",
+     "measured_by": "dls_1"
+    },
+    {
+     "property": "zeta_potential",
+     "quote": "Zeta-potential of the C-QDs shows a single peak at negative 23 mV with a peak width of 10.01 mV",
+     "value_text": "negative 23 mV",
+     "measured_by": "dls_1"
+    },
+    {
+     "property": "zeta_potential_peak_width",
+     "quote": "Zeta-potential of the C-QDs shows a single peak at negative 23 mV with a peak width of 10.01 mV",
+     "value_num": 10.01,
+     "unit": "mV",
+     "measured_by": "dls_1"
+    },
+    {
+     "property": "elemental_composition_EDS",
+     "quote": "the C-QDs are consists of only carbon and oxygen peaks",
+     "value_text": "only carbon and oxygen peaks",
+     "measured_by": "eds_1"
+    },
+    {
+     "property": "elemental_composition_C1s",
+     "quote": "the C-QDs are mainly composed of carbon and oxygen; i.e., C1s (71.2 at. %) and O 1s (28.8 at. %), respectively",
+     "value_num": 71.2,
+     "unit": "at. %",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "elemental_composition_O1s",
+     "quote": "the C-QDs are mainly composed of carbon and oxygen; i.e., C1s (71.2 at. %) and O 1s (28.8 at. %), respectively",
+     "value_num": 28.8,
+     "unit": "at. %",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "elemental_composition_precursor_XPS",
+     "quote": "The survey scan of ground fennel powder shows that carbon source is made of carbon, nitrogen, oxygen",
+     "value_text": "carbon, nitrogen, oxygen",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "elemental_composition_oxidation_degree",
+     "quote": "C-QDs have a moderate degree of oxidation (<30%)",
+     "value_text": "moderate degree of oxidation (<30%)",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_C1s_Csp2",
+     "quote": "the main peak at 284.6 eV (70.2 at. %) corresponds to sp2 graphitic structure",
+     "value_num": 284.6,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "elemental_composition_C1s_component_Csp2",
+     "quote": "the main peak at 284.6 eV (70.2 at. %) corresponds to sp2 graphitic structure",
+     "value_num": 70.2,
+     "unit": "at. %",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_C1s_CO",
+     "quote": "whereas the peaks at 286.16 (20.6 at. %) and 287.2 eV (9.2 at. %) are attributed to C-O and C=O, respectively",
+     "value_num": 286.16,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "elemental_composition_C1s_component_CO",
+     "quote": "whereas the peaks at 286.16 (20.6 at. %) and 287.2 eV (9.2 at. %) are attributed to C-O and C=O, respectively",
+     "value_num": 20.6,
+     "unit": "at. %",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_C1s_carbonyl",
+     "quote": "whereas the peaks at 286.16 (20.6 at. %) and 287.2 eV (9.2 at. %) are attributed to C-O and C=O, respectively",
+     "value_num": 287.2,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "elemental_composition_C1s_component_carbonyl",
+     "quote": "whereas the peaks at 286.16 (20.6 at. %) and 287.2 eV (9.2 at. %) are attributed to C-O and C=O, respectively",
+     "value_num": 9.2,
+     "unit": "at. %",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_O1s_adsorbed_oxygen",
+     "quote": "peak at 529.13 (11.5 at. %) is attributed to physically adsorbed oxygen on the surface of C-QDs",
+     "value_num": 529.13,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "elemental_composition_O1s_component_adsorbed_oxygen",
+     "quote": "peak at 529.13 (11.5 at. %) is attributed to physically adsorbed oxygen on the surface of C-QDs",
+     "value_num": 11.5,
+     "unit": "at. %",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_O1s_functional_groups",
+     "quote": "the peak at 531.1 eV (88.5 at. %) are originated from functional groups",
+     "value_num": 531.1,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "elemental_composition_O1s_component_functional_groups",
+     "quote": "the peak at 531.1 eV (88.5 at. %) are originated from functional groups",
+     "value_num": 88.5,
+     "unit": "at. %",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "FWHM_XPS_C1s_Csp2",
+     "quote": "C 1s C-sp 2 284.60 0.98 70.2",
+     "value_num": 0.98,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "FWHM_XPS_C1s_CO",
+     "quote": "C 1s C-O 286.16 1.17 20.6",
+     "value_num": 1.17,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "FWHM_XPS_C1s_carbonyl",
+     "quote": "C 1s C=O 287.20 1.89 9.20",
+     "value_num": 1.89,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "FWHM_XPS_O1s_adsorbed_oxygen",
+     "quote": "O 1s Phy absorbed O2 529.13 1.80 11.5",
+     "value_num": 1.8,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "FWHM_XPS_O1s_functional_groups",
+     "quote": "O 1s OH/C=O, O-C=O 531.10 1.73 88.5",
+     "value_num": 1.73,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "ftir_band_OH",
+     "quote": "FTIR spectra of C-QDs have significant peaks at 3350, 1640, 1405, 1023, 859 cm−1 can be ascribed to OH, C=O, C=C, (C-H or C-O), C-H bending, respectively",
+     "value_num": 3350,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_carbonyl",
+     "quote": "FTIR spectra of C-QDs have significant peaks at 3350, 1640, 1405, 1023, 859 cm−1 can be ascribed to OH, C=O, C=C, (C-H or C-O), C-H bending, respectively",
+     "value_num": 1640,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CC",
+     "quote": "FTIR spectra of C-QDs have significant peaks at 3350, 1640, 1405, 1023, 859 cm−1 can be ascribed to OH, C=O, C=C, (C-H or C-O), C-H bending, respectively",
+     "value_num": 1405,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CH_or_CO",
+     "quote": "FTIR spectra of C-QDs have significant peaks at 3350, 1640, 1405, 1023, 859 cm−1 can be ascribed to OH, C=O, C=C, (C-H or C-O), C-H bending, respectively",
+     "value_num": 1023,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CH_bending",
+     "quote": "FTIR spectra of C-QDs have significant peaks at 3350, 1640, 1405, 1023, 859 cm−1 can be ascribed to OH, C=O, C=C, (C-H or C-O), C-H bending, respectively",
+     "value_num": 859,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CH2_absent",
+     "quote": "The absence of symmetric and asymmetric peaks of CH2 at 2921 and 2851 cm−1, respectively, in C-QDs FTIR spectra indicate that the carbon source (fennel seeds) was fully carbonized",
+     "value_text": "absence of symmetric and asymmetric peaks of CH2 at 2921 and 2851 cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_precursor_OH",
+     "quote": "The FT-IR spectra of ground fennel powder have peaks at 3296, 2921, 2851, 1742, 1597 and 1027 cm−1 can be ascribed to vibrations OH stretching, symmetric CH2, asymmetric CH2, carboxyl/carbonyl C=O, C=C and C-H bending, respectively",
+     "value_num": 3296,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_precursor_CH2_symmetric",
+     "quote": "The FT-IR spectra of ground fennel powder have peaks at 3296, 2921, 2851, 1742, 1597 and 1027 cm−1 can be ascribed to vibrations OH stretching, symmetric CH2, asymmetric CH2, carboxyl/carbonyl C=O, C=C and C-H bending, respectively",
+     "value_num": 2921,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_precursor_CH2_asymmetric",
+     "quote": "The FT-IR spectra of ground fennel powder have peaks at 3296, 2921, 2851, 1742, 1597 and 1027 cm−1 can be ascribed to vibrations OH stretching, symmetric CH2, asymmetric CH2, carboxyl/carbonyl C=O, C=C and C-H bending, respectively",
+     "value_num": 2851,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_precursor_carbonyl",
+     "quote": "The FT-IR spectra of ground fennel powder have peaks at 3296, 2921, 2851, 1742, 1597 and 1027 cm−1 can be ascribed to vibrations OH stretching, symmetric CH2, asymmetric CH2, carboxyl/carbonyl C=O, C=C and C-H bending, respectively",
+     "value_num": 1742,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_precursor_CC",
+     "quote": "The FT-IR spectra of ground fennel powder have peaks at 3296, 2921, 2851, 1742, 1597 and 1027 cm−1 can be ascribed to vibrations OH stretching, symmetric CH2, asymmetric CH2, carboxyl/carbonyl C=O, C=C and C-H bending, respectively",
+     "value_num": 1597,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_precursor_CH_bending",
+     "quote": "The FT-IR spectra of ground fennel powder have peaks at 3296, 2921, 2851, 1742, 1597 and 1027 cm−1 can be ascribed to vibrations OH stretching, symmetric CH2, asymmetric CH2, carboxyl/carbonyl C=O, C=C and C-H bending, respectively",
+     "value_num": 1027,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "raman_band_D",
+     "quote": "Raman spectrum shows two distinct peaks at 1371 (D-band) and 1582 cm−1 (G-band), respectively",
+     "value_num": 1371,
+     "unit": "cm−1",
+     "measured_by": "raman_1"
+    },
+    {
+     "property": "raman_band_G",
+     "quote": "Raman spectrum shows two distinct peaks at 1371 (D-band) and 1582 cm−1 (G-band), respectively",
+     "value_num": 1582,
+     "unit": "cm−1",
+     "measured_by": "raman_1"
+    },
+    {
+     "property": "raman_ID_IG_G_over_D",
+     "quote": "The intensity ratio of the peak of the G band to the D band was found to be 1.58",
+     "value_num": 1.58,
+     "measured_by": "raman_1"
+    },
+    {
+     "property": "absorption_peak_main",
+     "quote": "a very strong peak centered at 220 nm",
+     "value_num": 220,
+     "unit": "nm",
+     "measured_by": "uv_vis_1"
+    },
+    {
+     "property": "absorption_peak_shoulder",
+     "quote": "another small shoulder peak at 338 nm peaks",
+     "value_num": 338,
+     "unit": "nm",
+     "measured_by": "uv_vis_1"
+    },
+    {
+     "property": "quantum_yield",
+     "quote": "The quantum yield of as-synthesized C-QDs (excitation wavelength 260 nm) was calculated to be 9.5%",
+     "value_num": 9.5,
+     "unit": "%",
+     "measured_by": "pl_qy"
+    },
+    {
+     "property": "PL_emission_peak_main",
+     "quote": "the main peak centered at 417 nm (FWHM 50 nm)",
+     "value_num": 417,
+     "unit": "nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "FWHM_PL_main",
+     "quote": "the main peak centered at 417 nm (FWHM 50 nm)",
+     "value_num": 50,
+     "unit": "nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_emission_peak_shoulder",
+     "quote": "a shoulder peak at 470 nm (FWHM 90 nm)",
+     "value_num": 470,
+     "unit": "nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "FWHM_PL_shoulder",
+     "quote": "a shoulder peak at 470 nm (FWHM 90 nm)",
+     "value_num": 90,
+     "unit": "nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_emission_peak_excitation_independence",
+     "quote": "the PL emission spectra of C-QDs was independent of the excitation wavelength",
+     "value_text": "independent of the excitation wavelength",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_emission_peak_range",
+     "quote": "had a broad asymmetric peak ranged from 355 to 627 nm",
+     "value_text": "355 to 627 nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_intensity_maximum_excitation",
+     "quote": "the maximum PL intensity was also observed at 260 nm excitation",
+     "value_text": "260 nm excitation",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_emission_peak_pH3_to_13",
+     "quote": "The PL of C-QDs has a broad emission peak position, centered at 419 nm, is independent of the pH",
+     "value_num": 419,
+     "unit": "nm",
+     "measured_by": "pl_ph"
+    },
+    {
+     "property": "PL_intensity_trend_pH",
+     "quote": "changing the pH from acidic to basic resulted in a gradual increase in the PL intensity of C-QDs",
+     "value_text": "gradual increase in the PL intensity",
+     "measured_by": "pl_ph"
+    },
+    {
+     "property": "PL_intensity_maximum_pH",
+     "quote": "The highest PL intensity of C-QDs was found to be in the range of pH (9–11)",
+     "value_text": "range of pH (9–11)",
+     "measured_by": "pl_ph"
+    },
+    {
+     "property": "PL_emission_peak_shift_pH3_pH13",
+     "quote": "the emission PL peak of C-QDs in strong acidic (pH = 3) and basic media (pH = 13) shift towards the shorter and longer wavelength, respectively, however, the wavelength shift of as-synthesized C-QDs is not very significant",
+     "value_text": "shift towards the shorter and longer wavelength, respectively, however, the wavelength shift of as-synthesized C-QDs is not very significant",
+     "measured_by": "pl_ph"
+    },
+    {
+     "property": "PL_intensity_photoirradiation_stability",
+     "quote": "Continuous irradiation from a xenon lamp of 150 W for 4 hours attribute almost no meaningful reduction in the PL intensity",
+     "value_text": "almost no meaningful reduction in the PL intensity",
+     "measured_by": "pl_photostab"
+    },
+    {
+     "property": "purity_TLC",
+     "quote": "the TLC results shows that as-synthesized C-QDs, after the dialysis, has only a single fraction",
+     "value_text": "only a single fraction",
+     "measured_by": "tlc_1"
+    }
+   ],
+   "missing_fields": [
+    "atmosphere of the pyrolysis",
+    "heating rate of the heat plate",
+    "mass of the final C-QDs / yield",
+    "molecular weight cut-off and duration of the dialysis",
+    "volume of deionized water"
+   ]
+  },
+  {
+   "label": "C-QD_200C",
+   "parent": "C-QD_500C_3h",
+   "material": {
+    "name": "carbon quantum dots from fennel seeds",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": "graphitic sp2 carbon, crystalline (lattice spacing 0.21 nm)",
+    "morphology": "spherical nanoparticles, mono-dispersed"
+   },
+   "succeeded": null,
+   "quote": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+   "steps": [
+    {
+     "order": 1,
+     "action": "pyrolyze",
+     "description": "Essai de pyrolyse de la poudre de fenouil à 200 °C, durée entre 1 et 5 h (optimisation suivie par FTIR).",
+     "quote": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+       "value_num": 200,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+       "value_text": "1 to 5 hours"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "gas_flow",
+      "cooling"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 200,
+     "unit": "°C",
+     "parent_value": "500 °C",
+     "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_text": "1 to 5 hours",
+     "parent_value": "3 hours",
+     "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours"
+    }
+   ],
+   "outcomes": []
+  },
+  {
+   "label": "C-QD_300C",
+   "parent": "C-QD_500C_3h",
+   "material": {
+    "name": "carbon quantum dots from fennel seeds",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": "graphitic sp2 carbon, crystalline (lattice spacing 0.21 nm)",
+    "morphology": "spherical nanoparticles, mono-dispersed"
+   },
+   "succeeded": null,
+   "quote": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+   "steps": [
+    {
+     "order": 1,
+     "action": "pyrolyze",
+     "description": "Essai de pyrolyse de la poudre de fenouil à 300 °C, durée entre 1 et 5 h (optimisation suivie par FTIR).",
+     "quote": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+       "value_num": 300,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+       "value_text": "1 to 5 hours"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "gas_flow",
+      "cooling"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 300,
+     "unit": "°C",
+     "parent_value": "500 °C",
+     "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_text": "1 to 5 hours",
+     "parent_value": "3 hours",
+     "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours"
+    }
+   ],
+   "outcomes": []
+  },
+  {
+   "label": "C-QD_300C_3h",
+   "parent": "C-QD_300C",
+   "material": {
+    "name": "carbon quantum dots from fennel seeds",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": "graphitic sp2 carbon, crystalline (lattice spacing 0.21 nm)",
+    "morphology": "spherical nanoparticles, mono-dispersed"
+   },
+   "succeeded": false,
+   "quote": "QDs synthesis trial at 300 ºC for 3 hours",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 1,
+     "value_num": 3,
+     "unit": "hours",
+     "parent_value": "1 to 5 hours",
+     "quote": "QDs synthesis trial at 300 ºC for 3 hours"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "ftir_band_CH2_present",
+     "quote": "The presence of CH2 peaks in FTIR at 2921 and 2851 cm-1 shows incomplete pyrolysis of ground fennel powder.",
+     "value_text": "presence of CH2 peaks in FTIR at 2921 and 2851 cm-1 shows incomplete pyrolysis",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "product_identity",
+     "quote": "The presence of CH2 peaks in FTIR at 2921 and 2851 cm-1 shows incomplete pyrolysis of ground fennel powder.",
+     "value_text": "incomplete pyrolysis of ground fennel powder"
+    }
+   ]
+  },
+  {
+   "label": "C-QD_400C",
+   "parent": "C-QD_500C_3h",
+   "material": {
+    "name": "carbon quantum dots from fennel seeds",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": "graphitic sp2 carbon, crystalline (lattice spacing 0.21 nm)",
+    "morphology": "spherical nanoparticles, mono-dispersed"
+   },
+   "succeeded": null,
+   "quote": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+   "steps": [
+    {
+     "order": 1,
+     "action": "pyrolyze",
+     "description": "Essai de pyrolyse de la poudre de fenouil à 400 °C, durée entre 1 et 5 h (optimisation suivie par FTIR).",
+     "quote": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+       "value_num": 400,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours",
+       "value_text": "1 to 5 hours"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "gas_flow",
+      "cooling"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "temperature",
+     "step_order": 2,
+     "value_num": 400,
+     "unit": "°C",
+     "parent_value": "500 °C",
+     "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours"
+    },
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_text": "1 to 5 hours",
+     "parent_value": "3 hours",
+     "quote": "temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours"
+    }
+   ],
+   "outcomes": []
+  },
+  {
+   "label": "C-QD_500C_longer",
+   "parent": "C-QD_500C_3h",
+   "material": {
+    "name": "carbon quantum dots from fennel seeds",
+    "formula": null,
+    "family": "quantum_dot",
+    "phase": "graphitic sp2 carbon, crystalline (lattice spacing 0.21 nm)",
+    "morphology": "spherical nanoparticles, mono-dispersed"
+   },
+   "succeeded": true,
+   "quote": "The fennel seed sample was fully carbonized at 500 °C for 3 hours, and keeping it longer has not resulted in any significant change in either PL or crystallinity.",
+   "steps": [
+    {
+     "order": 1,
+     "action": "pyrolyze",
+     "description": "Pyrolyse à 500 °C maintenue plus de 3 h (durée exacte non donnée).",
+     "quote": "The fennel seed sample was fully carbonized at 500 °C for 3 hours, and keeping it longer has not resulted in any significant change in either PL or crystallinity.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "fully carbonized at 500 °C for 3 hours",
+       "value_num": 500,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "keeping it longer has not resulted in any significant change",
+       "value_text": "keeping it longer"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "gas_flow",
+      "cooling"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_text": "keeping it longer",
+     "parent_value": "3 hours",
+     "quote": "keeping it longer has not resulted in any significant change in either PL or crystallinity"
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "crystallinity_change",
+     "quote": "keeping it longer has not resulted in any significant change in either PL or crystallinity",
+     "value_text": "no significant change in crystallinity",
+     "measured_by": "not_stated"
+    },
+    {
+     "property": "PL_intensity_change",
+     "quote": "keeping it longer has not resulted in any significant change in either PL or crystallinity",
+     "value_text": "no significant change in PL",
+     "measured_by": "not_stated"
+    }
+   ]
+  },
+  {
+   "label": "PL_ML_analysis",
+   "parent": null,
+   "kind": "calcul",
+   "succeeded": true,
+   "material": {
+    "name": "integrated PL dataset of the fennel C-QDs (48 spectra: 8 excitations x 6 pH)",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "methods": [
+    "calculation"
+   ],
+   "method": "PCA, MCR-ALS and sparse NMF (NMF-ARD-SO) analysis of the 48 x 401 photoluminescence data matrix",
+   "quote": "2D data matrix containing PL data-set was analyzed by PCA, MCR, and sparse NMF",
+   "steps": [
+    {
+     "order": 1,
+     "action": "other",
+     "description": "Assemblage des 48 spectres de PL (8 excitations x 6 pH, 401 points chacun) en une matrice D.",
+     "quote": "all the spectra were put together to form the two dimensional (2D) matrix; i.e., D having a dimension (48 × 401) containing the entire PL data set",
+     "parameters": [
+      {
+       "name": "dimension",
+       "quote": "D having a dimension (48 × 401)",
+       "value_text": "48 × 401"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 2,
+     "action": "other",
+     "description": "ACP de la matrice D (algorithme NIPALS).",
+     "quote": "The PCA analysis of D matrix resulted to two-sub matrix of S (score) and L (loading) using NIPAL algorithm",
+     "parameters": [
+      {
+       "name": "mode",
+       "quote": "using NIPAL algorithm",
+       "value_text": "NIPAL algorithm"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 3,
+     "action": "other",
+     "description": "MCR-ALS avec contrainte de non-négativité, deux composantes (nombre fixé par l'ACP).",
+     "quote": "with non-negative constrained was performed using MCR-ALS tool",
+     "parameters": [
+      {
+       "name": "mode_constraint",
+       "quote": "with non-negative constrained was performed using MCR-ALS tool",
+       "value_text": "non-negative constrained"
+      },
+      {
+       "name": "mode_number_of_components",
+       "quote": "The number of components using PCA was found to be two",
+       "value_text": "two"
+      }
+     ],
+     "equipment": []
+    },
+    {
+     "order": 4,
+     "action": "other",
+     "description": "NMF parcimonieuse (HALS) avec prior ARD et contrainte orthogonale douce (0,1).",
+     "quote": "Sparse NMF was optimized for a soft orthogonal constrained (0.1) with exponential prior",
+     "parameters": [
+      {
+       "name": "mode_soft_orthogonal_constraint",
+       "quote": "Sparse NMF was optimized for a soft orthogonal constrained (0.1) with exponential prior",
+       "value_num": 0.1
+      },
+      {
+       "name": "mode_prior",
+       "quote": "Sparse NMF was optimized for a soft orthogonal constrained (0.1) with exponential prior",
+       "value_text": "exponential prior"
+      }
+     ],
+     "equipment": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "calc_pca",
+     "technique": "calculation",
+     "instrument": null,
+     "result": "ACP : deux premières composantes principales expliquant 99,0 % et 1,0 % de la variance.",
+     "quote": "The first two principal components (PCs), extracted from the integrated PL dataset of as-synthesized C-QDs, together explained the entire dataset",
+     "settings": [
+      {
+       "name": "functional_or_model",
+       "quote": "using NIPAL algorithm",
+       "value_text": "PCA, NIPAL algorithm"
+      },
+      {
+       "name": "basis_or_cutoff",
+       "quote": "The first two principal components (PCs), extracted from the integrated PL dataset of as-synthesized C-QDs, together explained the entire dataset",
+       "value_text": "first two principal components"
+      }
+     ],
+     "not_stated": [
+      "software"
+     ]
+    },
+    {
+     "id": "calc_mcr",
+     "technique": "calculation",
+     "instrument": null,
+     "result": "MCR-ALS : deux pics résolus à 416,2 et 475,3 nm, fortement chevauchants.",
+     "quote": "integrated PL data-set was resolved into two spectral peaks centered at 416.2 and 475.3 nm, respectively",
+     "settings": [
+      {
+       "name": "software",
+       "quote": "was performed using MCR-ALS tool",
+       "value_text": "MCR-ALS tool"
+      },
+      {
+       "name": "functional_or_model",
+       "quote": "with non-negative constrained was performed using MCR-ALS tool",
+       "value_text": "MCR-ALS, non-negative constrained, two components"
+      }
+     ],
+     "not_stated": [
+      "basis_or_cutoff"
+     ]
+    },
+    {
+     "id": "calc_nmf",
+     "technique": "calculation",
+     "instrument": null,
+     "result": "NMF-ARD-SO : un seul pic spectral à 424,7 nm.",
+     "quote": "The NMF-ARD-SO analysis of integrated data-set results into single spectral peak centered at 424.7 nm",
+     "settings": [
+      {
+       "name": "functional_or_model",
+       "quote": "Sparse NMF was optimized for a soft orthogonal constrained (0.1) with exponential prior",
+       "value_text": "sparse NMF (HALS), ARD prior, soft orthogonal constraint 0.1, exponential prior"
+      }
+     ],
+     "not_stated": [
+      "software",
+      "basis_or_cutoff"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "calculated_value_PCA_PC1_variance",
+     "quote": "given the first and second PCs contribute 99.0 and 1.0%, respectively",
+     "value_num": 99.0,
+     "unit": "%",
+     "measured_by": "calc_pca"
+    },
+    {
+     "property": "calculated_value_PCA_PC2_variance",
+     "quote": "given the first and second PCs contribute 99.0 and 1.0%, respectively",
+     "value_num": 1.0,
+     "unit": "%",
+     "measured_by": "calc_pca"
+    },
+    {
+     "property": "calculated_value_PCA_groups",
+     "quote": "PCA analysis has clustered the integrated PL data set into three groups",
+     "value_text": "three groups",
+     "measured_by": "calc_pca"
+    },
+    {
+     "property": "calculated_value_PCA_recommended_excitation",
+     "quote": "it is the same excitation wavelength (260 nm) that should be chosen for PL studies to investigate the possible PL mechanism",
+     "value_text": "260 nm",
+     "measured_by": "calc_pca"
+    },
+    {
+     "property": "calculated_value_PCA_peak_shift_basic_pH",
+     "quote": "the PL peak is marginally shifted towards higher wavelength at basic pH condition, however, the shift is not very significant; less than 1 nm",
+     "value_text": "less than 1 nm",
+     "measured_by": "calc_pca"
+    },
+    {
+     "property": "calculated_value_PCA_loading_vectors",
+     "quote": "The PCA analysis of integrated PL data-set also results in two distinct feature vectors except that the second peak for loading vector is negative",
+     "value_text": "two distinct feature vectors, second peak for loading vector negative",
+     "measured_by": "calc_pca"
+    },
+    {
+     "property": "calculated_value_MCR_peak_1",
+     "quote": "integrated PL data-set was resolved into two spectral peaks centered at 416.2 and 475.3 nm, respectively",
+     "value_num": 416.2,
+     "unit": "nm",
+     "measured_by": "calc_mcr"
+    },
+    {
+     "property": "calculated_value_MCR_peak_2",
+     "quote": "integrated PL data-set was resolved into two spectral peaks centered at 416.2 and 475.3 nm, respectively",
+     "value_num": 475.3,
+     "unit": "nm",
+     "measured_by": "calc_mcr"
+    },
+    {
+     "property": "calculated_value_NMF_peak",
+     "quote": "The NMF-ARD-SO analysis of integrated data-set results into single spectral peak centered at 424.7 nm",
+     "value_num": 424.7,
+     "unit": "nm",
+     "measured_by": "calc_nmf"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "Les auteurs préparent des points quantiques de carbone (C-QDs) en une seule étape par pyrolyse de graines de fenouil broyées (0,2 g, plaque chauffante à 500 °C, 3 h), puis dissolution dans l'eau, sonication, centrifugation, filtration à 100 nm et dialyse. Les particules sont monodisperses (3,90 ± 0,91 nm), cristallines (franges à 0,21 nm), riches en carbone sp2 et en oxygène, avec une émission bleue indépendante de l'excitation (rendement quantique 9,5 %). Des analyses par apprentissage automatique (ACP, MCR-ALS, NMF-ARD-SO) de 48 spectres de PL (8 excitations x 6 pH) servent à discuter l'origine de la PL."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Montrer qu'une source naturelle (graines de fenouil) peut donner par simple pyrolyse des C-QDs de distribution de taille étroite sans passivation de surface, et tester si l'apprentissage automatique peut classer les spectres de PL en fonction du pH et de l'excitation, recommander la meilleure excitation et renseigner l'origine de la PL."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Le balayage de température (200, 300, 400 à 500 °C) et de durée (1 à 5 h) de la pyrolyse sert à trouver les conditions où les pics CH2 du fennel (2921 et 2851 cm-1) disparaissent en FTIR, signe d'une carbonisation complète ; le pH (3 à 13) et l'excitation (200 à 340 nm) sont balayés pour étudier la stabilité de la PL et fournir un grand jeu de données à l'analyse automatique.",
+   "quote": "trials were done with temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours"
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "L'article ne donne pas de résultat par échantillon pour les essais à 200, 300 et 400 °C : seule la tendance globale est écrite (les pics CH2 diminuent puis disparaissent quand la température et la durée augmentent). Un essai typique à 300 °C pendant 3 h garde les pics CH2, donc la pyrolyse y est incomplète, alors que 500 °C pendant 3 h donne une carbonisation complète ; prolonger à 500 °C ne change plus ni la PL ni la cristallinité."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Quand la température et la durée de pyrolyse augmentent, les pics CH2 symétrique et asymétrique (2921 et 2851 cm-1) diminuent puis disparaissent ; la carbonisation est complète à 500 °C pendant 3 h.",
+   "quote": "FT-IR results show that with an increase in temperature and time, the symmetric and asymmetric peaks of CH2 at 2921 and 2851 cm−1 gradually started to decrease and eventually vanished"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les conditions retenues sont 500 °C pendant 3 h : l'échantillon est complètement carbonisé et un maintien plus long ne change rien d'important.",
+   "quote": "The fennel seed sample was fully carbonized at 500 °C for 3 hours, and keeping it longer has not resulted in any significant change in either PL or crystallinity."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "C-QD_500C_3h",
+   "text": "Selon les auteurs, la pyrolyse convertit les hydrocarbures de la graine en structure graphitique (disparition des CH2) ; la PL des C-QDs est attribuée à la transition n-π* de surface du groupe C=O (états de surface uniformes), sans fluorophores moléculaires ni confinement quantique.",
+   "quote": "indicate that the carbon source (fennel seeds) was fully carbonized (hydrocarbon converted to the graphitic structure)"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "C-QD_500C_3h",
+   "text": "Probablement, la déshydratation et la décomposition des glucides et lipides du fenouil vers 200–300 °C libèrent des espèces volatiles, puis l'aromatisation et la condensation à 400–500 °C forment des domaines graphitiques sp2 ; les fonctions oxygénées de surface (OH, C=O) proviennent de l'oxygène résiduel du précurseur et, si la pyrolyse se fait à l'air (atmosphère non précisée), de l'oxydation partielle. La centrifugation et la filtration retirent les grosses particules carbonisées, la dialyse retire les petites molécules."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "C-QD_500C_3h",
+   "text": "Une plaque chauffante à 500 °C et un creuset ouvert présentent un risque de brûlure et de dégagement de fumées de pyrolyse (composés organiques volatils, CO) : travailler sous hotte. Les poudres broyées de graines et les nanoparticules de carbone doivent être manipulées avec protection respiratoire ; la centrifugeuse à 15000 rpm demande des tubes équilibrés et adaptés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Non cités : atmosphère de la pyrolyse, vitesse de montée en température de la plaque chauffante, volume d'eau désionisée, coupure (MWCO) et durée de la dialyse, rendement et pureté des réactifs. Les résultats par échantillon des essais de température et de durée ne sont pas donnés (seule une tendance globale et la figure S5 pour un essai à 300 °C, 3 h). Figures absentes du dépôt (dossier corpus/fig/PMC6769153 manquant) : aucune valeur n'a été lue sur figure."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "C-QD_300C",
+   "text": "La durée de chaque essai à 200, 300 et 400 °C n'est donnée que comme plage (1 à 5 h) ; l'article ne dit pas quelles durées ont été réalisées à chaque température ni si ces essais ont subi sonication, centrifugation, filtration et dialyse."
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "CDs sans fluorophores (littérature)",
+   "property": "quantum_yield",
+   "value_num": 7,
+   "unit": "%",
+   "conditions": "valeur rapportée 'around 7%'",
+   "ref_id": "CR45",
+   "quote": "The quantum yield (QY) of CDs (absence of fluorophores) was reported far lower (around 7%) compared to the fluorophores-functionalized CDs, which was quite high (usually more than 50%)"
+  },
+  {
+   "material": "CDs fonctionnalisés par des fluorophores (littérature)",
+   "property": "quantum_yield",
+   "value_text": "usually more than 50%",
+   "unit": "%",
+   "ref_id": "CR45",
+   "quote": "The quantum yield (QY) of CDs (absence of fluorophores) was reported far lower (around 7%) compared to the fluorophores-functionalized CDs, which was quite high (usually more than 50%)"
+  },
+  {
+   "material": "fluorophores (littérature)",
+   "property": "hydrodynamic_size",
+   "value_text": "~1 nm",
+   "unit": "nm",
+   "ref_id": "CR47",
+   "quote": "have a hydrodynamic diameter ~1 nm"
+  },
+  {
+   "material": "fluorophores (littérature)",
+   "property": "formation_temperature",
+   "value_text": "low temperature ~200 °C",
+   "ref_id": "CR47",
+   "quote": "fluorophores are formed at mild reaction conditions (short-reaction time and low temperature ~200 °C)"
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "PL_ML_analysis",
+   "ref_id": "CR50",
+   "role": "autre",
+   "quote": "PCA is a data compression process; unknown orthogonal spectral vectors are extracted, and similar PL data is group together (see more details for PCA in SI)"
+  },
+  {
+   "route": "PL_ML_analysis",
+   "ref_id": "CR26",
+   "role": "autre",
+   "quote": "The MCR-ALS analysis helps to extracts the pure spectral profile of a PL spectrum from the integrated PL data-set of C-QDs"
+  },
+  {
+   "route": "PL_ML_analysis",
+   "ref_id": "CR51",
+   "role": "autre",
+   "quote": "technique by Shiga et Al. (hierarchical alternating least squares (HALS) algorithm) was used"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "C-QD_200C / C-QD_300C / C-QD_400C",
+   "issue": "L'article ne liste le criblage que par plages : « temperature ranging from 200-, 300-, 400- to 500 °C for 1 to 5 hours ». Une branche par température listée (500 °C = voie de base) ; la durée porte la plage « 1 to 5 hours » en value_text. Aucun résultat par échantillon n'est donné (tendance globale en annotation). Ces branches ont leur propre étape de pyrolyse : l'article ne dit pas qu'elles ont subi sonication, centrifugation, filtration et dialyse."
+  },
+  {
+   "where": "C-QD_300C_3h",
+   "issue": "L'essai « typique » de la figure S5 (300 ºC, 3 h) est rattaché à la branche 300 °C (durée 3 h). Résultat : pics CH2 présents, pyrolyse incomplète. Son spectre FTIR est rattaché à la mesure ftir_1 (appareil FTIR-4100) par hypothèse : l'article ne précise pas l'instrument des essais."
+  },
+  {
+   "where": "C-QD_500C_longer",
+   "issue": "« keeping it longer » à 500 °C n'est pas chiffré : branche créée pour ce maintien prolongé, durée en value_text ; pas de valeur numérique ni de mesure citée pour « no significant change in PL »."
+  },
+  {
+   "where": "C-QD_500C_3h step 2",
+   "issue": "Chauffage « using a heat plate » à 500 °C : l'atmosphère, la vitesse de chauffe et la façon dont la température est mesurée ne sont pas données ; l'atmosphère est donc déclarée non citée (on ne suppose pas l'air)."
+  },
+  {
+   "where": "C-QD_500C_3h outcomes zeta_potential",
+   "issue": "Le texte écrit « negative 23 mV » : valeur gardée en value_text pour conserver le signe tel qu'écrit."
+  },
+  {
+   "where": "C-QD_500C_3h outcomes crystallinity",
+   "issue": "Les auteurs concluent à une structure bien cristalline à partir du TEM (franges à 0,21 nm) et non de la XRD : la mesure liée est tem_1, d'où un avertissement de technique inhabituelle."
+  },
+  {
+   "where": "C-QD_500C_3h outcomes FWHM_XPS_*",
+   "issue": "Les largeurs à mi-hauteur XPS (tableaux S2 et S3 de l'annexe) sont rangées sous la propriété FWHM, dont les techniques listées sont XRD, PL et Raman ; avertissement de technique inhabituelle attendu. Les cellules de ces tableaux sont une par ligne dans le fichier texte : la citation les recolle en une rangée."
+  },
+  {
+   "where": "C-QD_500C_3h outcomes ftir_band_precursor_*, elemental_composition_precursor_XPS",
+   "issue": "Les spectres FTIR et XPS de la poudre de fenouil (précurseur) sont rangés dans la voie de base avec le suffixe precursor, faute d'échantillon-voie distinct ; la mesure ftir_1 / xps_1 couvre aussi ce précurseur."
+  },
+  {
+   "where": "PL_ML_analysis",
+   "issue": "Voie de calcul pour l'analyse automatique (ACP, MCR-ALS, NMF-ARD-SO). Les renvois méthodes CR50, CR26 et CR51 sont classés « autre » : CR51 (Shiga) correspond à la référence [3] de l'annexe, retrouvée dans la liste par son titre (le corps de refs ne l'indique pas). Les références [1] à [3] de l'annexe (Felten, Maslova, Shiga) sont citées avec une numérotation propre à l'annexe."
+  },
+  {
+   "where": "Fig. 8D / Fig. S8 / Figs S9-S11",
+   "issue": "Les valeurs d'intensité de PL en fonction du pH et de l'excitation ne sont lisibles que sur figure ; le dossier de figures est absent du dépôt, donc seules les tendances écrites dans le texte sont extraites."
+  },
+  {
+   "where": "Table S1 (annexe)",
+   "issue": "L'annexe donne C 1s à 285 eV et O 1s à 531 eV pour le spectre large, alors que le texte déconvolue C 1s à 284.6 eV et O 1s à 531.1 eV ; les énergies du spectre large (285 et 531 eV) ne sont pas reprises, seules les valeurs déconvoluées le sont."
+  }
+ ]
+}
