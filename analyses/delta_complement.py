@@ -54,7 +54,13 @@ def items(d):
 def main():
     pmcid = sys.argv[1]
     path = f"extractions/{pmcid}.json"
-    old = json.loads(subprocess.run(["git", "show", f"HEAD:{path}"], capture_output=True, text=True, check=True).stdout)
+    # --base <commit> : comparer à cette version au lieu de HEAD ; --auto : avant-dernier commit touchant le fichier
+    ref = "HEAD"
+    if "--base" in sys.argv:
+        ref = sys.argv[sys.argv.index("--base") + 1]
+    elif "--auto" in sys.argv:
+        ref = subprocess.run(["git", "log", "--format=%H", "-n", "2", "--", path], capture_output=True, text=True).stdout.split()[1]
+    old = json.loads(subprocess.run(["git", "show", f"{ref}:{path}"], capture_output=True, text=True, check=True).stdout)
     new = json.load(open(path, encoding="utf-8"))
     A, B = items(old), items(new)
     added = {k: {x: v for x, v in B[k].items() if x not in A[k]} for k in A}
