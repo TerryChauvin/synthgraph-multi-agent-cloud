@@ -1,0 +1,58 @@
+{
+ "pmcid": "PMC9667963",
+ "ajouts": [
+  {
+   "type": "propriete",
+   "nom": "induction_time",
+   "definition": "Période d'induction de la cristallisation : durée de chauffage au bout de laquelle les premiers pics de diffraction caractéristiques apparaissent sur le solide extrait (estimation de l'apparition de la nucléation) ; préciser le profil thermique dans le nom si besoin.",
+   "ecarte": "gelation_time: durée de gélification d'un sol, pas d'apparition de cristaux; crystallinity: degré de cristallinité à un instant donné, pas un délai",
+   "date": "2026-10-28 21:42",
+   "techniques": [
+    "XRD"
+   ],
+   "unite": "h"
+  },
+  {
+   "type": "propriete",
+   "nom": "crystallization_time",
+   "definition": "Durée totale de cristallisation jusqu'à cristallinité complète (relative crystallinity de 100 %), profil thermique compris, déduite de suivis temporels par diffraction.",
+   "ecarte": "induction_time: délai avant les premiers pics seulement; crystallinity: valeur à un instant donné",
+   "date": "2026-10-28 21:42",
+   "techniques": [
+    "XRD"
+   ],
+   "unite": "h"
+  },
+  {
+   "type": "propriete",
+   "nom": "xas_feature",
+   "definition": "Caractéristique d'un spectre d'absorption des rayons X (XANES ou EXAFS) : position ou intensité d'un pic de pré-seuil, déplacement du pic Ti–O en transformée de Fourier, distance de liaison ou nombre de coordination ajustés.",
+   "ecarte": "xrd_peak_position: pic de diffraction, pas d'absorption X; absorption_peak: absorption UV-visible",
+   "date": "2026-10-28 21:42",
+   "techniques": [
+    "XAS"
+   ]
+  },
+  {
+   "type": "reglage",
+   "nom": "oxidant",
+   "definition": "Oxydant d'un essai catalytique d'oxydation (H2O2, TBHP, O2) : nature, quantité, concentration ou rapport au substrat.",
+   "ecarte": "reactant_concentration: concerne le substrat, pas l'oxydant; catalyst_mass: concerne le catalyseur",
+   "date": "2026-10-28 21:42"
+  },
+  {
+   "type": "reglage",
+   "nom": "internal_standard",
+   "definition": "Étalon interne ajouté au milieu pour le dosage chromatographique des produits (n-dodécane, n-octadécane) : nature et quantité.",
+   "ecarte": "quantum_yield_standard: étalon de rendement quantique de luminescence, pas étalon interne de dosage chromatographique; standard: norme suivie, pas un composé ajouté; calibration: étalonnage externe de la mesure",
+   "date": "2026-10-28 21:42"
+  },
+  {
+   "type": "reglage",
+   "nom": "reaction_solvent",
+   "definition": "Solvant du milieu réactionnel d'un essai catalytique (méthanol, n-octane, acétonitrile).",
+   "ecarte": "reaction_volume: volume du milieu, pas sa nature; reactant_concentration: concentration du substrat",
+   "date": "2026-10-28 21:42"
+  }
+ ]
+}
