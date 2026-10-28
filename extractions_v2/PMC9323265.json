@@ -1,0 +1,1263 @@
+{
+ "pmcid": "PMC9323265",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "NFCDs",
+   "defined_in": "Methods, 2.2",
+   "route": "NFCDs",
+   "results_in": [
+    "Figure 1",
+    "Figure 2",
+    "Figure 3",
+    "Figure 4",
+    "Figure 5",
+    "Figure 6",
+    "Section 3.1-3.6"
+   ]
+  },
+  {
+   "sample": "NFCDs-1",
+   "defined_in": "Methods, 2.4",
+   "route": "NFCDs",
+   "results_in": [
+    "Figure 3c"
+   ],
+   "why": "même matériau que NFCDs d'après le contexte ; aucune différence de préparation donnée"
+  },
+  {
+   "sample": "NFCDs/Fe3+",
+   "defined_in": "Methods, 2.5",
+   "route": null,
+   "why": "mélange d'essai de détection (NFCDs + FeCl3), non synthétisé séparément",
+   "results_in": [
+    "Figure 5",
+    "Figure S4",
+    "Figure S5"
+   ]
+  },
+  {
+   "sample": "NFCDs/AA",
+   "defined_in": "Methods, 2.5",
+   "route": null,
+   "why": "mélange d'essai de détection (NFCDs + acide ascorbique), non synthétisé séparément",
+   "results_in": [
+    "Figure 6",
+    "Figure S6",
+    "Figure S7"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "label": "NFCDs",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "nitrogen and fluorine co-doped carbon dots",
+    "formula": null,
+    "family": "carbone",
+    "phase": "disordered carbon (broad XRD peak centered at 23°)",
+    "morphology": "quasi-spherical nanoparticles"
+   },
+   "methods": [
+    "microwave_assisted"
+   ],
+   "method": "one-step microwave-assisted synthesis from DL-malic acid and levofloxacin in water, followed by sonication, filtration, dialysis and freeze-drying",
+   "quote": "novel DL-malic acid (DL-MA)-derived carbon dots were prepared using levofloxacin (Lev) as the F source with an efficient microwave-assisted approach",
+   "scale": null,
+   "yield": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "DL-malic acid",
+     "formula": "C4H6O5",
+     "role": "precursor",
+     "unit": null,
+     "supplier": "Aladdin Biochemical Technology Co., Ltd., (Shanghai, China)",
+     "supplier_quote": "DL-malic acid and levofloxacin were purchased from Aladdin Biochemical Technology Co., Ltd., (Shanghai, China).",
+     "not_stated": [
+      "amount",
+      "purity"
+     ],
+     "quote": "the desired amounts of DL-malic acid and levofloxacin were dissolved in 10 mL of ultrapure water"
+    },
+    {
+     "name": "levofloxacin",
+     "formula": "C18H20FN3O4",
+     "role": "precursor",
+     "unit": null,
+     "supplier": "Aladdin Biochemical Technology Co., Ltd., (Shanghai, China)",
+     "supplier_quote": "DL-malic acid and levofloxacin were purchased from Aladdin Biochemical Technology Co., Ltd., (Shanghai, China).",
+     "not_stated": [
+      "amount",
+      "purity"
+     ],
+     "quote": "the desired amounts of DL-malic acid and levofloxacin were dissolved in 10 mL of ultrapure water"
+    },
+    {
+     "name": "ultrapure water (dissolution of the precursors)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 10,
+     "unit": "mL",
+     "supplier": "Milli-Q direct water purification system",
+     "supplier_quote": "The ultrapure water used was directly obtained from the lab with a Milli-Q direct water purification system.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "the desired amounts of DL-malic acid and levofloxacin were dissolved in 10 mL of ultrapure water"
+    },
+    {
+     "name": "water (redissolution of the microwave product)",
+     "formula": "H2O",
+     "role": "solvent",
+     "unit": null,
+     "not_stated": [
+      "amount",
+      "purity",
+      "supplier"
+     ],
+     "quote": "The resultant solids were dissolved in water with an ultrasound treatment (40 KHz, F-040, Fuyang Technology group Co., Ltd., Shenzhen, China) for around 24 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve the desired amounts of DL-malic acid and levofloxacin in 10 mL of ultrapure water.",
+     "quote": "the desired amounts of DL-malic acid and levofloxacin were dissolved in 10 mL of ultrapure water",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "10 mL of ultrapure water",
+       "value_num": 10,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration",
+      "stirring_speed",
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "microwave_heating",
+     "description": "Heat the aqueous solution in a microwave oven at 600 W for 5 min.",
+     "quote": "which was then heated in a microwave oven (600 W, M1-L213B, Media, China) for 5 min",
+     "parameters": [
+      {
+       "name": "power",
+       "quote": "(600 W, M1-L213B, Media, China)",
+       "value_num": 600,
+       "unit": "W"
+      },
+      {
+       "name": "duration",
+       "quote": "for 5 min",
+       "value_num": 5,
+       "unit": "min"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "microwave oven",
+       "detail": "M1-L213B, Media, China",
+       "quote": "microwave oven (600 W, M1-L213B, Media, China)"
+      }
+     ],
+     "not_stated": [
+      "temperature",
+      "pressure",
+      "reaction_vessel"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "sonicate",
+     "description": "Redissolve the resulting solids in water by ultrasound treatment at 40 kHz for around 24 h.",
+     "quote": "The resultant solids were dissolved in water with an ultrasound treatment (40 KHz, F-040, Fuyang Technology group Co., Ltd., Shenzhen, China) for around 24 h",
+     "parameters": [
+      {
+       "name": "frequency",
+       "quote": "ultrasound treatment (40 KHz,",
+       "value_num": 40,
+       "unit": "KHz"
+      },
+      {
+       "name": "duration",
+       "quote": "for around 24 h",
+       "value_text": "around 24 h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonic device",
+       "detail": "F-040, Fuyang Technology group Co., Ltd., Shenzhen, China",
+       "quote": "(40 KHz, F-040, Fuyang Technology group Co., Ltd., Shenzhen, China)"
+      }
+     ],
+     "not_stated": [
+      "power",
+      "volume"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "filter",
+     "description": "Filter the solution through a 0.22 µm membrane.",
+     "quote": "then filtered with a filtration membrane (0.22 μm)",
+     "parameters": [
+      {
+       "name": "dimension",
+       "quote": "filtration membrane (0.22 μm)",
+       "value_num": 0.22,
+       "unit": "μm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 5,
+     "action": "dialyze",
+     "description": "Purify the solution with dialysis bags for 24 h.",
+     "quote": "The obtained solution was further purified with dialysis bags (MDCO 34-1000 Da, Biomed Instrument Inc., USA) for 24 h",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "bags (MDCO 34-1000 Da, Biomed Instrument Inc., USA) for 24 h",
+       "value_num": 24,
+       "unit": "h"
+      },
+      {
+       "name": "dimension",
+       "quote": "dialysis bags (MDCO 34-1000 Da",
+       "value_text": "MDCO 34-1000 Da"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "dialysis bags",
+       "detail": "MDCO 34-1000 Da, Biomed Instrument Inc., USA",
+       "quote": "dialysis bags (MDCO 34-1000 Da, Biomed Instrument Inc., USA)"
+      }
+     ],
+     "not_stated": [
+      "dialysis_medium",
+      "dialysis_volume"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Freeze-dry the purified NFCDs solution at −70 °C.",
+     "quote": "the purified NFCDs solution was obtained and further freeze-dried at −70 °C for further characterization",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "freeze-dried at −70 °C",
+       "value_num": -70,
+       "unit": "°C"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "further freeze-dried at",
+       "value_text": "freeze-dried"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "tem_1",
+     "technique": "TEM",
+     "instrument": "JEM-2100, JEOL Corp., Japan",
+     "result": "quasi-spherical NFCDs, average size 5.5 ± 0.1 nm (83 particles, Gaussian fit), lattice spacing 0.32 nm",
+     "quote": "The nanoparticles were found to be quasi-spherical (seen in Figure 1a), and the average size was estimated to be 5.5 ± 0.1 nm, based on 83 particles using the Gaussian distribution calculation (Figure 1b).",
+     "settings": [
+      {
+       "name": "particles_counted",
+       "quote": "based on 83 particles using the Gaussian distribution calculation",
+       "value_num": 83
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "Neotoku Corporation (Japan)",
+     "result": "broad peak centered at 23°, assigned to disordered carbon",
+     "quote": "In addition, the morphology of the solid, detected by XRD in Figure 1c, demonstrated a broad peak centered at 23°, which was assigned to the disordered carbon in the NFCDs.",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "with CuKα1 radiation operated at 40 kV and 40 mA",
+       "value_text": "CuKα1 radiation operated at 40 kV and 40 mA"
+      }
+     ],
+     "not_stated": [
+      "scan_range",
+      "scan_step",
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "ftir_1",
+     "technique": "FTIR",
+     "instrument": "FIR8900",
+     "result": "bands of O-H/N-H, sp3 C-H, COOH, C=O, C-N, C-F with C=C",
+     "quote": "A FIR8900 Fourier transform infrared (FT-IR) spectrometer and X-ray photoelectron spectroscopy (XPS, Escalab 250Xi, Thermo Scientific, Waltham, MA, USA) were used to investigate the surface groups of the NFCDs.",
+     "settings": [],
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "xps_1",
+     "technique": "XPS",
+     "instrument": "Escalab 250Xi, Thermo Scientific, Waltham, MA, USA",
+     "result": "C, N, O and F present; deconvolution of C1s, O1s, N1s and F1s",
+     "quote": "A FIR8900 Fourier transform infrared (FT-IR) spectrometer and X-ray photoelectron spectroscopy (XPS, Escalab 250Xi, Thermo Scientific, Waltham, MA, USA) were used to investigate the surface groups of the NFCDs.",
+     "settings": [],
+     "not_stated": [
+      "xray_source",
+      "calibration_reference"
+     ]
+    },
+    {
+     "id": "uv_1",
+     "technique": "UV_vis",
+     "instrument": "U-4100 spectrophotometer (Hitachi, Tokyo, Japan)",
+     "result": "three absorption bands at 210, 290 and 330 nm",
+     "quote": "fluorescence light (PL) spectra were collected on a U-4100 spectrophotometer (Hitachi, Tokyo, Japan) and Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "settings": [
+      {
+       "name": "concentration",
+       "quote": "The optical properties of NFCDs solution at 0.02 mg/mL",
+       "value_num": 0.02,
+       "unit": "mg/mL"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "pl_1",
+     "technique": "PL",
+     "instrument": "Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "result": "emission maximum at about 490 nm under 280 nm excitation; emission independent of excitation wavelength",
+     "quote": "The optimal emission spectra with a maximum intensity were obtained at around 490 nm under an excitation wavelength of 280 nm",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "under an excitation wavelength of 280 nm",
+       "value_num": 280,
+       "unit": "nm"
+      },
+      {
+       "name": "concentration",
+       "quote": "The optical properties of NFCDs solution at 0.02 mg/mL",
+       "value_num": 0.02,
+       "unit": "mg/mL"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_conc",
+     "technique": "PL",
+     "instrument": "Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "result": "PL intensity rises from 0.005 to 0.06 mg/mL then falls to 0.5 mg/mL; emission centered at 490 nm at all concentrations",
+     "quote": "the concentration-dependent PL property of the NFCDs-1 was explored by collecting the PL spectra of solutions with different concentrations, ranging from 0.005 to 0.5 mg/mL",
+     "settings": [
+      {
+       "name": "concentration_range",
+       "quote": "with different concentrations, ranging from 0.005 to 0.5 mg/mL",
+       "value_text": "0.005 to 0.5 mg/mL"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_photostab",
+     "technique": "PL",
+     "instrument": "Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "result": "PL intensity after 120 min of continuous 365 nm UV exposure comparable with that before treatment",
+     "quote": "the solution was continuously exposed to UV light (365 nm) for 2 h. Upon 280 nm excitation, the PL spectra were recorded every 10 min.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "Upon 280 nm excitation",
+       "value_num": 280,
+       "unit": "nm"
+      },
+      {
+       "name": "measurement_conditions",
+       "quote": "the solution was continuously exposed to UV light (365 nm) for 2 h. Upon 280 nm excitation, the PL spectra were recorded every 10 min.",
+       "value_text": "continuous exposure to UV light (365 nm) for 2 h, spectra recorded every 10 min"
+      },
+      {
+       "name": "concentration",
+       "quote": "the photostability of the NFCDs at 0.02 mg/mL",
+       "value_num": 0.02,
+       "unit": "mg/mL"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_ph",
+     "technique": "PL",
+     "instrument": "Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "result": "PL intensity versus pH from 2.2 to 13.1",
+     "quote": "the effects of the acidic or basic environments on the emission spectra (upon 280 nm excitation) were further investigated with different pH values (ranging from 2.2 to 13.1), which were tuned using a NaOH solution (0.1 mol/L), HCl solution (0.1 mol/L), and NaH2PO3 solution (0.01 mol/L)",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "upon 280 nm excitation",
+       "value_num": 280,
+       "unit": "nm"
+      },
+      {
+       "name": "solution_ph",
+       "quote": "different pH values (ranging from 2.2 to 13.1)",
+       "value_text": "2.2 to 13.1"
+      },
+      {
+       "name": "measurement_conditions",
+       "quote": "which were tuned using a NaOH solution (0.1 mol/L), HCl solution (0.1 mol/L), and NaH2PO3 solution (0.01 mol/L)",
+       "value_text": "pH tuned with NaOH (0.1 mol/L), HCl (0.1 mol/L) and NaH2PO3 (0.01 mol/L) solutions"
+      }
+     ],
+     "not_stated": [
+      "concentration",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_ionic",
+     "technique": "PL",
+     "instrument": "Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "result": "almost 80% of the original PL intensity retained at 2 mol/L NaCl",
+     "quote": "the NFCDs possessed almost 80% of the original PL intensity when the NaCl concentration reached 2 mol/L",
+     "settings": [
+      {
+       "name": "measurement_conditions",
+       "quote": "when the NaCl concentration reached 2 mol/L",
+       "value_text": "NaCl concentration up to 2 mol/L"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature",
+      "concentration"
+     ]
+    },
+    {
+     "id": "pl_quench_Fe",
+     "technique": "PL",
+     "instrument": "Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "result": "fluorescence turn-off by Fe3+; linear response 5-30 µM, LOD 1.03 µM",
+     "quote": "For the detection of Fe3+, solutions with different Fe3+ concentrations ranging from 5 to 500 µM were prepared in 0.02 mg/mL NFCDs.",
+     "settings": [
+      {
+       "name": "concentration_range",
+       "quote": "different Fe3+ concentrations ranging from 5 to 500 µM",
+       "value_text": "Fe3+ (FeCl3) from 5 to 500 µM"
+      },
+      {
+       "name": "concentration",
+       "quote": "were prepared in 0.02 mg/mL NFCDs",
+       "value_num": 0.02,
+       "unit": "mg/mL"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "After mixing for 5 min",
+       "value_num": 5,
+       "unit": "min"
+      },
+      {
+       "name": "excitation_wavelength",
+       "quote": "the PL spectra of different solutions were recorded upon a 280 nm excitation",
+       "value_num": 280,
+       "unit": "nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "All the experiments were conducted in triplicate.",
+       "value_text": "triplicate"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature",
+      "solution_ph"
+     ]
+    },
+    {
+     "id": "pl_quench_AA",
+     "technique": "PL",
+     "instrument": "Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "result": "fluorescence turn-off by AA; linear response 5-100 µM, LOD 4.22 µM",
+     "quote": "On the other hand, the concentration of AA was set from 5 to 900 µM.",
+     "settings": [
+      {
+       "name": "concentration_range",
+       "quote": "the concentration of AA was set from 5 to 900 µM",
+       "value_text": "AA from 5 to 900 µM"
+      },
+      {
+       "name": "concentration",
+       "quote": "AA in 0.02 mg/mL NFCDs",
+       "value_num": 0.02,
+       "unit": "mg/mL"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "After mixing for 5 min",
+       "value_num": 5,
+       "unit": "min"
+      },
+      {
+       "name": "excitation_wavelength",
+       "quote": "the PL spectra of different solutions were recorded upon a 280 nm excitation",
+       "value_num": 280,
+       "unit": "nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "All the experiments were conducted in triplicate.",
+       "value_text": "triplicate"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature",
+      "solution_ph"
+     ]
+    },
+    {
+     "id": "pl_select_Fe",
+     "technique": "PL",
+     "instrument": "Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "result": "Fe3+ quenches most; other metal ions limited quenching and negligible influence on the Fe3+-quenched fluorescence",
+     "quote": "Figure 5a (yellow column) shows the PL intensity ratio (F/F0) with 500 µM interference ions with and without the addition of Fe3+.",
+     "settings": [
+      {
+       "name": "reactant_concentration",
+       "quote": "with 500 µM interference ions",
+       "value_text": "500 µM of each interference ion"
+      },
+      {
+       "name": "concentration",
+       "quote": "the fluorescence of the NFCDs at 0.02 mg/mL with various metal ions",
+       "value_num": 0.02,
+       "unit": "mg/mL"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_select_AA",
+     "technique": "PL",
+     "instrument": "Hitachi F-7000 fluorescence spectrometer (150 W xenon lamp)",
+     "result": "among nine organic molecules only AA quenched the fluorescence (83% reduction at 500 µM)",
+     "quote": "It was observed that 500 µM of AA in 0.02 mg/mL NFCDs has caused an 83% reduction of the original PL intensity.",
+     "settings": [
+      {
+       "name": "reactant_concentration",
+       "quote": "500 µM of AA in 0.02 mg/mL NFCDs",
+       "value_num": 500,
+       "unit": "µM"
+      },
+      {
+       "name": "concentration",
+       "quote": "500 µM of AA in 0.02 mg/mL NFCDs",
+       "value_num": 0.02,
+       "unit": "mg/mL"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_lifetime",
+     "technique": "PL",
+     "instrument": "FLS920 spectrophotometer, Edinburgh Instruments",
+     "result": "PL lifetime 7.69 ns (NFCDs), 8.29 ns (with 500 µM Fe3+), 8.04 ns (NFCDs/AA)",
+     "quote": "The PL decay lifetimes were measured and estimated based on an FLS920 spectrophotometer supplied by Edinburgh Instruments.",
+     "settings": [],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "pl_qy",
+     "technique": "PL",
+     "instrument": "HORIBA FLS920 with calibration sphere",
+     "result": "absolute quantum yield 21.03%",
+     "quote": "The absolute quantum yield (QY) was measured in the calibration sphere with a HORIBA FLS920.",
+     "settings": [],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "particle_size",
+     "quote": "the average size was estimated to be 5.5 ± 0.1 nm, based on 83 particles",
+     "value_num": 5.5,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "particle_size_conclusions",
+     "quote": "The as-prepared NFCDs exhibited excellent water dispersibility with an average size of 5.49 nm.",
+     "value_num": 5.49,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "The nanoparticles were found to be quasi-spherical (seen in Figure 1a)",
+     "value_text": "quasi-spherical",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "d_spacing",
+     "quote": "The lattice spacing was further measured as 0.32 nm, corresponding to the (002) diffraction plane of graphite",
+     "value_num": 0.32,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "xrd_peak_position",
+     "quote": "demonstrated a broad peak centered at 23°",
+     "value_num": 23,
+     "unit": "°",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase",
+     "quote": "which was assigned to the disordered carbon in the NFCDs",
+     "value_text": "disordered carbon",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "ftir_band_OH_NH",
+     "quote": "A characteristic peak at around 3400 cm−1 of the FT-IR spectrum was observed, attributed to the stretching vibrations of the O-H and N-H functional groups.",
+     "value_num": 3400,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CH_sp3",
+     "quote": "The peaks displayed in the region of 2850–2950 cm−1 were ascribed to the typical sp3 C-H stretching vibrations",
+     "value_text": "2850–2950 cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_COOH",
+     "quote": "The peaks located at 1735, 1616, and 1404 cm−1 were related to the stretching vibrations of COOH, C=O, and C-N, respectively",
+     "value_num": 1735,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CO",
+     "quote": "The peaks located at 1735, 1616, and 1404 cm−1 were related to the stretching vibrations of COOH, C=O, and C-N, respectively",
+     "value_num": 1616,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CN",
+     "quote": "The peaks located at 1735, 1616, and 1404 cm−1 were related to the stretching vibrations of COOH, C=O, and C-N, respectively",
+     "value_num": 1404,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CF_CC_1274",
+     "quote": "the characteristic absorption peak of the C-F bond, together with the C=C stretching vibration, was observed at 1274 and 1175 cm−1",
+     "value_num": 1274,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_CF_CC_1175",
+     "quote": "the characteristic absorption peak of the C-F bond, together with the C=C stretching vibration, was observed at 1274 and 1175 cm−1",
+     "value_num": 1175,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "elemental_composition",
+     "quote": "(a) The full survey XPS spectrum of NFCDs presented the presence of C, N, O, and F elements.",
+     "value_text": "C, N, O and F present",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_survey_C1s",
+     "quote": "Figure 2a displayed the survey spectrum of the NFCDs, revealing four typical peaks at 284.7, 401.1, 532.3, and 687.6 eV.",
+     "value_num": 284.7,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_survey_N1s",
+     "quote": "Figure 2a displayed the survey spectrum of the NFCDs, revealing four typical peaks at 284.7, 401.1, 532.3, and 687.6 eV.",
+     "value_num": 401.1,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_survey_O1s",
+     "quote": "Figure 2a displayed the survey spectrum of the NFCDs, revealing four typical peaks at 284.7, 401.1, 532.3, and 687.6 eV.",
+     "value_num": 532.3,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_survey_F1s",
+     "quote": "Figure 2a displayed the survey spectrum of the NFCDs, revealing four typical peaks at 284.7, 401.1, 532.3, and 687.6 eV.",
+     "value_num": 687.6,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_C1s_CC",
+     "quote": "C=C/C-C (284.49 eV)",
+     "value_num": 284.49,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_C1s_CN_CO",
+     "quote": "C-N/C-O (285.76 eV)",
+     "value_num": 285.76,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_C1s_OCO",
+     "quote": "O=C-O (288.62 eV)",
+     "value_num": 288.62,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_C1s_CF",
+     "quote": "C-F (290.3 eV)",
+     "value_num": 290.3,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_O1s_CO_1",
+     "quote": "C-O (531.59 eV)",
+     "value_num": 531.59,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_O1s_CO_2",
+     "quote": "C-O (532.97 eV)",
+     "value_num": 532.97,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_O1s_OCO",
+     "quote": "O-C=O (534.16 eV)",
+     "value_num": 534.16,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_N1s_pyridinic",
+     "quote": "pyridinic N (399.25 eV)",
+     "value_num": 399.25,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_N1s_graphitic",
+     "quote": "graphitic N (401.24 eV)",
+     "value_num": 401.24,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_F1s_CF",
+     "quote": "the F1s spectra displayed a single characteristic peak at 687.09 eV, assigned to the covalent C-F",
+     "value_num": 687.09,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "absorption_peak_210",
+     "quote": "A strong absorption peak was observed at 210 nm",
+     "value_num": 210,
+     "unit": "nm",
+     "measured_by": "uv_1"
+    },
+    {
+     "property": "absorption_peak_290",
+     "quote": "the second strong absorption peak, located at 290 nm",
+     "value_num": 290,
+     "unit": "nm",
+     "measured_by": "uv_1"
+    },
+    {
+     "property": "absorption_peak_330",
+     "quote": "a distinct peak, observed at 330 nm",
+     "value_num": 330,
+     "unit": "nm",
+     "measured_by": "uv_1"
+    },
+    {
+     "property": "visual_appearance",
+     "quote": "The inset displayed a colorless solution under daylight and the one with an intense green fluorescence under UV light.",
+     "value_text": "colorless solution under daylight; intense green fluorescence under UV light"
+    },
+    {
+     "property": "PL_emission_peak",
+     "quote": "The optimal emission spectra with a maximum intensity were obtained at around 490 nm under an excitation wavelength of 280 nm",
+     "value_num": 490,
+     "unit": "nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_excitation_peak_280",
+     "quote": "demonstrating two broad excitation peaks at 280 nm and 330 nm, respectively",
+     "value_num": 280,
+     "unit": "nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_excitation_peak_330",
+     "quote": "demonstrating two broad excitation peaks at 280 nm and 330 nm, respectively",
+     "value_num": 330,
+     "unit": "nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "PL_emission_peak_shift_with_excitation",
+     "quote": "the emission spectra centered at 490 nm hardly shifted with the change of the excitation wavelengths (less than 10 nm)",
+     "value_text": "less than 10 nm",
+     "measured_by": "pl_1"
+    },
+    {
+     "property": "quantum_yield",
+     "quote": "The QY was measured as 21.03%",
+     "value_num": 21.03,
+     "unit": "%",
+     "measured_by": "pl_qy"
+    },
+    {
+     "property": "PL_lifetime",
+     "quote": "compared to 7.69 ns for the NFCDs",
+     "value_num": 7.69,
+     "unit": "ns",
+     "measured_by": "pl_lifetime"
+    },
+    {
+     "property": "PL_lifetime_with_Fe3_500uM",
+     "quote": "The fluorescence lifetime of the NFCDs with 500 µM Fe3+ was estimated as 8.29 ns (Figure S5a)",
+     "value_num": 8.29,
+     "unit": "ns",
+     "measured_by": "pl_lifetime"
+    },
+    {
+     "property": "PL_lifetime_with_AA",
+     "quote": "the lifetime for the NFCDs/AA solution (8.04 ns, as seen in Figure S7a)",
+     "value_num": 8.04,
+     "unit": "ns",
+     "measured_by": "pl_lifetime"
+    },
+    {
+     "property": "PL_emission_peak_concentration_series",
+     "quote": "the emission spectra were centered at 490 nm for all the concentrations considered",
+     "value_num": 490,
+     "unit": "nm",
+     "measured_by": "pl_conc"
+    },
+    {
+     "property": "PL_intensity_vs_concentration",
+     "quote": "the PL intensity was enhanced when the concentration increased from 0.005 mg/mL until 0.06 mg/mL, after which it started decreasing from 0.06 to 0.5 mg/mL",
+     "value_text": "increases from 0.005 to 0.06 mg/mL, then decreases from 0.06 to 0.5 mg/mL",
+     "measured_by": "pl_conc"
+    },
+    {
+     "property": "retention_stability_PL_UV_365nm_120min",
+     "quote": "After 120 min, the PL intensity remained comparable with that before any treatment",
+     "value_text": "comparable with that before any treatment",
+     "measured_by": "pl_photostab"
+    },
+    {
+     "property": "retention_stability_PL_NaCl_2M",
+     "quote": "the NFCDs possessed almost 80% of the original PL intensity when the NaCl concentration reached 2 mol/L",
+     "value_num": 80,
+     "value_text": "almost 80%",
+     "unit": "%",
+     "measured_by": "pl_ionic"
+    },
+    {
+     "property": "PL_intensity_vs_pH_acidic",
+     "quote": "The results illustrated that the PL intensity in an acidic medium decreased mildly when the pH values increased from 2.2 to 6.1, which reached a maximum intensity at 7.0.",
+     "value_text": "decreases mildly from pH 2.2 to 6.1; maximum at pH 7.0",
+     "measured_by": "pl_ph"
+    },
+    {
+     "property": "PL_intensity_vs_pH_basic",
+     "quote": "In the basic solutions, a sharp decrease in the PL intensities was observed for the pH values ranging from 8.0 to 13.1",
+     "value_text": "sharp decrease from pH 8.0 to 13.1",
+     "measured_by": "pl_ph"
+    },
+    {
+     "property": "PL_emission_peak_shift_basic",
+     "quote": "as well as a blue shift of the emission peak from around 490 to 470 nm",
+     "value_text": "blue shift of the emission peak from around 490 to 470 nm",
+     "measured_by": "pl_ph"
+    },
+    {
+     "property": "fluorescence_quenching_Fe3_300uM",
+     "quote": "While the concentration reached 300 µM, around 90% of the PL fluorescence was quenched",
+     "value_num": 90,
+     "unit": "%",
+     "measured_by": "pl_quench_Fe"
+    },
+    {
+     "property": "fluorescence_quenching_linear_range_Fe3",
+     "quote": "a linear relationship between the ferric ion concentrations and PL intensities was obtained (R2 = 0.9962) when the concentration was from 5 to 30 µM",
+     "value_text": "5 to 30 µM",
+     "measured_by": "pl_quench_Fe"
+    },
+    {
+     "property": "statistic_r2_Fe3_linear",
+     "quote": "a linear relationship between the ferric ion concentrations and PL intensities was obtained (R2 = 0.9962)",
+     "value_num": 0.9962,
+     "measured_by": "pl_quench_Fe"
+    },
+    {
+     "property": "fluorescence_quenching_fit_slope_Fe3",
+     "quote": "inset: linear relationship between quenched intensity with concentrations of Fe3+, y = −0.0168x + 1.0612, R2 = 0.9962",
+     "value_num": -0.0168,
+     "measured_by": "pl_quench_Fe"
+    },
+    {
+     "property": "limit_of_detection_Fe3",
+     "quote": "Additionally, the detection limit (LOD) was estimated to be 1.03 µM",
+     "value_num": 1.03,
+     "unit": "µM",
+     "measured_by": "pl_quench_Fe"
+    },
+    {
+     "property": "fluorescence_quenching_Ksv_Fe3",
+     "quote": "the slope of the PL intensity ratio versus Fe3+ concentration was determined as 0.0318 µM−1",
+     "value_num": 0.0318,
+     "unit": "µM−1",
+     "measured_by": "pl_quench_Fe"
+    },
+    {
+     "property": "fluorescence_quenching_kq_Fe3",
+     "quote": "based on which the quenching rate constant was estimated to be 4.14 × 1012 M−1·s−1",
+     "value_text": "4.14 × 1012 M−1·s−1",
+     "measured_by": "pl_quench_Fe"
+    },
+    {
+     "property": "fluorescence_quenching_selectivity_Fe3",
+     "quote": "The presence of Fe3+ showed the strongest quenching effects on the fluorescence, while the other ions presented limited quenching abilities.",
+     "value_text": "Fe3+ gives the strongest quenching; other ions limited",
+     "measured_by": "pl_select_Fe"
+    },
+    {
+     "property": "fluorescence_quenching_interference_Fe3",
+     "quote": "the presence of other metal ions had a negligible influence on the quenched fluorescence caused by Fe3+",
+     "value_text": "negligible influence of other metal ions on the Fe3+-quenched fluorescence",
+     "measured_by": "pl_select_Fe"
+    },
+    {
+     "property": "fluorescence_quenching_AA_500uM",
+     "quote": "500 µM of AA in 0.02 mg/mL NFCDs has caused an 83% reduction of the original PL intensity",
+     "value_num": 83,
+     "unit": "%",
+     "measured_by": "pl_select_AA"
+    },
+    {
+     "property": "fluorescence_quenching_selectivity_AA",
+     "quote": "the presence of organic molecules had almost no effect on the fluorescence of the NFCDs solution, except for the AA",
+     "value_text": "only AA quenches the fluorescence",
+     "measured_by": "pl_select_AA"
+    },
+    {
+     "property": "fluorescence_quenching_linear_range_AA",
+     "quote": "A good linear relationship between the quenching ratio (F/F0) and AA concentration was exhibited from 5 to 100 µM",
+     "value_text": "5 to 100 µM",
+     "measured_by": "pl_quench_AA"
+    },
+    {
+     "property": "fluorescence_quenching_slope_AA",
+     "quote": "with the slope and LOD estimated as −0.0039 µM−1 and 4.22 µM, respectively",
+     "value_num": -0.0039,
+     "unit": "µM−1",
+     "measured_by": "pl_quench_AA"
+    },
+    {
+     "property": "limit_of_detection_AA",
+     "quote": "with the slope and LOD estimated as −0.0039 µM−1 and 4.22 µM, respectively",
+     "value_num": 4.22,
+     "unit": "µM",
+     "measured_by": "pl_quench_AA"
+    },
+    {
+     "property": "fluorescence_quenching_fit_slope_AA_caption",
+     "quote": "inset: linear relationship between quenched intensity with concentrations of AA, y = −0.0038x + 1.0010, R2 = 0.9982",
+     "value_num": -0.0038,
+     "measured_by": "pl_quench_AA"
+    },
+    {
+     "property": "statistic_r2_AA_linear",
+     "quote": "inset: linear relationship between quenched intensity with concentrations of AA, y = −0.0038x + 1.0010, R2 = 0.9982",
+     "value_num": 0.9982,
+     "measured_by": "pl_quench_AA"
+    },
+    {
+     "property": "fluorescence_quenching_kq_AA",
+     "quote": "with the quenching rate constant, kq, determined as 7.72 × 1011 M−1·s−1",
+     "value_text": "7.72 × 1011 M−1·s−1",
+     "measured_by": "pl_quench_AA"
+    }
+   ],
+   "missing_fields": [
+    "amounts of DL-malic acid and levofloxacin",
+    "microwave reaction temperature and pressure",
+    "volume of water for redissolution",
+    "dialysis medium",
+    "freeze-drying duration",
+    "yield"
+   ]
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "N-doped CDs (iron-corrosion study)",
+   "property": "limit_of_detection_Fe3",
+   "value_num": 0.9,
+   "unit": "µM",
+   "conditions": "N-doped CDs by a solvothermal approach, Fe3+ detection during iron corrosion in a NaCl solution",
+   "ref_id": "B5-nanomaterials-12-02377",
+   "quote": "The limit of detection (LOD) was estimated to be 0.9 µM"
+  },
+  {
+   "material": "B,N co-doped CDs (Zhang and colleagues)",
+   "property": "quantum_yield",
+   "value_num": 15.4,
+   "unit": "%",
+   "conditions": "boron and nitrogen co-doped CDs",
+   "ref_id": "B17-nanomaterials-12-02377",
+   "quote": "Zhang and colleagues prepared boron and nitrogen co-doped CDs (QY as 15.4%)"
+  },
+  {
+   "material": "B,N co-doped CDs (Zhang and colleagues)",
+   "property": "limit_of_detection_Fe3",
+   "value_num": 0.08,
+   "unit": "µM",
+   "conditions": "detection of Fe3+",
+   "ref_id": "B17-nanomaterials-12-02377",
+   "quote": "successfully used them for the detection of Fe3+ with a LOD of 0.08 µM"
+  },
+  {
+   "material": "N/S-doped CDs (Liu et al.)",
+   "property": "quantum_yield",
+   "value_num": 26,
+   "unit": "%",
+   "conditions": null,
+   "ref_id": "B36-nanomaterials-12-02377",
+   "quote": "Liu et al. synthesized N/S-doped CDs with an improved QY of 26%"
+  },
+  {
+   "material": "Co-doped CDs (Li and colleagues)",
+   "property": "quantum_yield",
+   "value_num": 30.4,
+   "unit": "%",
+   "conditions": "blue emission upon 350 nm excitation",
+   "ref_id": "B26-nanomaterials-12-02377",
+   "quote": "The Co-CDs showed an enhanced QY of 30.4% with a blue emission upon a 350 nm excitation"
+  },
+  {
+   "material": "N-doped CDs (Cui et al.)",
+   "property": "limit_of_detection_AA",
+   "value_num": 2.6,
+   "unit": "µM",
+   "conditions": "turn-off probe for ascorbic acid",
+   "ref_id": "B37-nanomaterials-12-02377",
+   "quote": "Cui et al. found that the N-doped CDs can be directly quenched by AA—as a “turn-off” probe—with a LOD of 2.6 µM."
+  },
+  {
+   "material": "N-doped DL-malic acid-derived CDs (previous work of the authors)",
+   "property": "quantum_yield",
+   "value_num": 9.8,
+   "unit": "%",
+   "conditions": "blue fluorescence",
+   "ref_id": "B37-nanomaterials-12-02377",
+   "quote": "In our previous work, N-doped DL-malic acid-derived CDs were synthesized with blue fluorescence and a QY of 9.8%"
+  },
+  {
+   "material": "general dynamic quenching",
+   "property": "fluorescence_quenching_kq_dynamic",
+   "value_text": "1.0 × 1010 M−1·s−1",
+   "unit": null,
+   "conditions": "general considered dynamic quenching constant (DQM)",
+   "quote": "the general considered dynamic quenching constant (DQM), 1.0 × 1010 M−1·s−1"
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare en une étape des carbones dots co-dopés à l'azote et au fluor (NFCDs) en chauffant au micro-ondes (600 W, 5 min) une solution aqueuse d'acide DL-malique et de lévofloxacine (source de F et de N), puis en redissolvant le solide par ultrasons, en filtrant, en dialysant et en lyophilisant. Les NFCDs mesurent environ 5,5 nm, émettent en vert à 490 nm (excitation 280 nm, rendement quantique 21,03 %) et servent de sonde à extinction de fluorescence pour Fe3+ (LOD 1,03 µM) et l'acide ascorbique (LOD 4,22 µM)."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à ajuster les propriétés optiques de carbones dots dérivés de l'acide DL-malique en y introduisant du fluor via la lévofloxacine, puis à tester leur usage comme sonde fluorescente sélective de Fe3+ et de l'acide ascorbique, et à comprendre le mécanisme d'extinction."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Il n'y a qu'une seule synthèse : aucun paramètre de préparation n'est balayé. Les séries testées portent sur le matériau fini : concentration du matériau (0,005 à 0,5 mg/mL), pH (2,2 à 13,1), force ionique (NaCl), temps d'irradiation UV, et concentration en ions métalliques (5 à 500 µM) ou en acide ascorbique (5 à 900 µM). Elles servent à établir la stabilité de la fluorescence, la plage de linéarité, la limite de détection et la sélectivité."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "NFCDs",
+   "text": "Les auteurs attribuent l'extinction par Fe3+ et par l'acide ascorbique à la combinaison d'un quenching statique (formation d'un complexe non fluorescent) et d'un effet de filtre interne, d'après les constantes de Stern-Volmer, l'absorption UV-visible et la durée de vie de PL quasi inchangée.",
+   "quote": "Thus, both the IFE and SQM contributed to the quenching phenomenon of NFCDs with the presence of Fe3+ and AA, respectively."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "NFCDs",
+   "text": "Formation probable : la chaleur micro-ondes de la solution aqueuse déshydrate et décarboxyle l'acide malique, qui se condense avec la lévofloxacine (amine tertiaire, acide carboxylique, fluor aromatique) pour donner un noyau carboné amorphe porteur de groupes COOH, OH et C-F ; l'azote et le fluor proviennent de l'antibiotique. On attend que la dialyse (1000 Da) retire les petites molécules et fragments non carbonisés, et que l'ultrasonication prolongée disperse le solide obtenu. Hypothèse de chimiste, l'article ne décrit pas le mécanisme de formation."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "NFCDs",
+   "text": "Chauffage micro-ondes d'une solution aqueuse : risque de surpression et de projection si le récipient est fermé (non précisé), et de surchauffe localisée. La lévofloxacine (antibiotique fluoroquinolone) est un composé biologiquement actif à manipuler avec gants et en évitant les poussières ; la décomposition thermique d'un composé fluoré peut dégager des traces de composés fluorés (HF) : travailler sous hotte. FeCl3 est corrosif."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que les NFCDs forment une sonde à émission verte unique (490 nm), indépendante de l'excitation et de la concentration, à fort rendement quantique (21,03 %), utilisable en mode turn-off pour Fe3+ (LOD 1,03 µM) et l'acide ascorbique (LOD 4,22 µM), selon un mécanisme combinant quenching statique et effet de filtre interne.",
+   "quote": "This methodology provided a rapid and low-cost approach to the synthesis of nitrogen and fluorine co-doped CDs with a high quantum yield, rapid response, and high sensitivity and selectivity as fluorescent probes to detect Fe3+ and AA in biological and environmental systems."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "NFCDs",
+   "text": "L'intensité de PL croît avec la concentration de NFCDs jusqu'à 0,06 mg/mL puis décroît jusqu'à 0,5 mg/mL, sans déplacement du maximum à 490 nm ; les auteurs relient la baisse à l'agrégation des groupes de surface à forte concentration. L'intensité diminue peu en milieu acide, passe par un maximum à pH 7,0 et chute en milieu basique.",
+   "quote": "Interestingly, the PL intensity was enhanced when the concentration increased from 0.005 mg/mL until 0.06 mg/mL, after which it started decreasing from 0.06 to 0.5 mg/mL."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "NFCDs",
+   "text": "Les quantités d'acide DL-malique et de lévofloxacine ne sont pas données (« desired amounts »), ni la température et la pression atteintes sous micro-ondes, la nature ouverte ou fermée du récipient, le volume d'eau de redissolution, le milieu de dialyse, la durée de lyophilisation ni le rendement : la synthèse n'est pas reproductible à partir de l'article seul.",
+   "quote": "the desired amounts of DL-malic acid and levofloxacin were dissolved in 10 mL of ultrapure water"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Annexe absente du dépôt : Figures S1 à S7 (spectres PLE et 3D, photostabilité, force ionique, droites de Stern-Volmer, spectres UV-vis et durées de vie de PL des mélanges NFCDs/Fe3+ et NFCDs/AA) et Tableaux S1 à S4 (valeurs d'intensité relative avec les ions et molécules testés, comparaison des LOD avec la littérature) ; le fichier texte ne contient aucune section « Supporting Information ». Les valeurs qui n'y figurent que graphiquement ne sont pas extraites."
+  }
+ ],
+ "method_sources": [],
+ "doubts": [
+  {
+   "where": "Section 2.4, « NFCDs-1 »",
+   "issue": "L'échantillon est nommé « NFCDs-1 » pour la série en concentration, alors que la synthèse ne décrit qu'un seul échantillon (« NFCDs ») ; aucune différence de préparation n'est donnée. Lecture retenue : même matériau que NFCDs."
+  },
+  {
+   "where": "Détection de Fe3+, plage de concentration",
+   "issue": "Les Méthodes (2.5) disent 5 à 500 µM de Fe3+, les Résultats (3.4) et la légende de la Figure 5b 5 à 300 µM. Valeurs conservées chacune dans sa section (réglage de pl_quench_Fe : méthodes ; 300 µM : résultat de 90 % d'extinction)."
+  },
+  {
+   "where": "Détection de l'acide ascorbique, pente",
+   "issue": "Le texte donne une pente de −0,0039 µM−1 (3.5) ; la légende de la Figure 6c donne y = −0,0038x + 1,0010 (R2 = 0,9982). Les deux valeurs sont extraites sans trancher."
+  },
+  {
+   "where": "Effet du pH, décalage spectral",
+   "issue": "Le texte (3.3) décrit un décalage vers le bleu (490 vers 470 nm) en milieu basique, la légende de la Figure 4b un « slight red shift » dans les milieux acide et basique ; la Figure 4b montre un maximum vers 460 nm à pH 7,0 et vers 500 nm à pH 2,2. Texte retenu. Le texte dit aussi une chute marquée de pH 8,0 à 13,1 alors que la Figure 4a montre que la chute se produit à partir de pH 9,5 ; la figure (unités arbitraires, sans axe chiffré) n'a pas été lue en valeurs."
+  },
+  {
+   "where": "Durées de vie de PL, appareil",
+   "issue": "Les Méthodes citent un spectrophotomètre FLS920 d'Edinburgh Instruments pour les durées de vie et un HORIBA FLS920 (sphère d'étalonnage) pour le rendement quantique : deux fabricants pour le même modèle ; retenus tels qu'écrits."
+  },
+  {
+   "where": "Constantes kq (3.6)",
+   "issue": "Le texte du dépôt aplatit les exposants : « 4.14 × 1012 M−1·s−1 » et « 7.72 × 1011 M−1·s−1 » ; d'après la constante de comparaison « 1.0 × 1010 » et Ksv = 0,0318 µM−1 divisé par τ = 7,69 ns (soit environ 4,1 × 10^12), il s'agit de puissances de dix. Valeurs gardées en value_text, comme écrites."
+  },
+  {
+   "where": "Taille moyenne",
+   "issue": "5,5 ± 0,1 nm (Résultats, Figure 1b) contre 5,49 nm (Conclusions) : deux résultats gardés (le second sous le nom particle_size_conclusions)."
+  },
+  {
+   "where": "XPS, O1s",
+   "issue": "Deux composantes sont toutes deux attribuées à « C-O » (531,59 et 532,97 eV) dans le texte ; recopiées telles quelles (O1s_CO_1 et O1s_CO_2)."
+  },
+  {
+   "where": "Section 2.4, réactifs de pH",
+   "issue": "« NaH2PO3 » est écrit tel quel dans l'article ; il s'agit probablement d'un tampon phosphate (NaH2PO4), non corrigé. De même « MDCO 34-1000 Da » pour la membrane de dialyse (probablement MWCO)."
+  },
+  {
+   "where": "Figures",
+   "issue": "Figures ouvertes : schéma 1, Figures 1, 3, 4. Les figures de PL et de pH sont en unités arbitraires sans valeurs lisibles au-delà de ce que dit le texte ; aucune valeur lue sur figure. Les Figures 5 et 6 ne portent pas de résultat absent du texte ou de la légende (barres relatives sans axe chiffré exploitable)."
+  },
+  {
+   "where": "Équation (1) de Stern-Volmer",
+   "issue": "L'équation n'est pas rendue dans le fichier texte (« where F represents… » seulement) ; la source citée [B62] est une référence d'équation, pas une source de méthode."
+  }
+ ]
+}

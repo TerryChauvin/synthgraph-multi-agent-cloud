@@ -1,0 +1,16 @@
+# Journal d'extraction v2, PMC9323265 (NFCDs, carbon dots co-dopés N/F)
+
+- Une seule voie de base (`NFCDs`, méthode `microwave_assisted`) : l'article ne balaie aucun paramètre de synthèse. Les séries (concentration, pH, NaCl, UV, Fe3+, acide ascorbique) portent sur le matériau fini : elles sont des résultats et des mesures de la voie, pas des branches.
+- « NFCDs-1 » (section 2.4, série en concentration) : même matériau que NFCDs, lecture littérale, doute posé ; inventaire avec `route: NFCDs`. Les mélanges NFCDs/Fe3+ et NFCDs/AA sont dans l'inventaire sans voie (mélanges d'essai).
+- Quantités des précurseurs absentes (« the desired amounts of DL-malic acid and levofloxacin ») : `amount` déclaré non cité pour les deux ; seul le volume d'eau (10 mL) est donné. Recherche dans tout le texte : rien dans les légendes ni le schéma 1 (image lue, sans quantités). Pas d'annexe dans le dépôt.
+- Étape 3 : « dissolved in water with an ultrasound treatment (40 KHz …) for around 24 h » rangée en `sonicate` (cases durée et puissance) ; la durée est en `value_text` « around 24 h » pour garder « around ». Eau de redissolution : réactif séparé sans quantité.
+- Étape 2 : action `microwave_heating` ; température, pression et nature du récipient non citées (déclarées).
+- Étape 5 : « MDCO 34-1000 Da » gardé tel quel en `dimension` (probable faute pour MWCO, noté en doute).
+- Fournisseurs : la phrase de la section 2.1 couvre les deux précurseurs (Aladdin) ; pour l'eau, seul le système Milli-Q du laboratoire est cité. Pureté non citée pour tous (« analytical grade » ne vise que les réactifs inorganiques).
+- Mesures : TEM, XRD, FTIR, XPS, UV_vis, puis PL en 11 entrées (émission, série en concentration, photostabilité, pH, force ionique, extinction Fe3+ et AA, sélectivités, durée de vie, rendement quantique) pour que chaque résultat ait son `measured_by`. Section 2.4 : l'excitation de 280 nm est attachée à la photostabilité et au pH ; pour la série en concentration, elle n'est pas rattachée explicitement dans le texte, donc non citée.
+- Plage de Fe3+ : Méthodes 5–500 µM (réglage de la mesure), Résultats et légende 5–300 µM (résultat de 90 % d'extinction à 300 µM) : doute.
+- Pente de l'acide ascorbique : texte −0,0039 contre légende −0,0038 : les deux sont extraites, doute.
+- Exposants aplatis dans le fichier texte (« 4.14 × 1012 ») : gardés en `value_text`, conversion non faite (règle « rien de converti »), doute posé.
+- Figures ouvertes : schéma 1, Fig. 1, 3, 4 ; unités arbitraires, rien de chiffré en plus du texte ; aucune valeur lue sur figure. Fig. 4a montre la chute à pH 9,5, pas 8,0 : écart signalé en doute, texte retenu.
+- Vocabulaire : deux propriétés ajoutées (`limit_of_detection`, `fluorescence_quenching`), car aucune propriété de la liste ne couvre la réponse d'un capteur. Intensités de PL en fonction de la concentration, du pH, de l'UV et de NaCl rangées sous `other_…` (pas de nom dédié, pas d'ajout supplémentaire).
+- Littérature : sept valeurs en `comparisons` (QY et LOD de carbones dots d'autres équipes, travail antérieur des auteurs, constante de quenching dynamique générale). Aucune source de méthode (`method_sources` vide) : le seul renvoi de méthode, la référence d'équation de Stern-Volmer, n'en est pas une.
