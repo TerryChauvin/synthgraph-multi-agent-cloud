@@ -224,6 +224,11 @@
        "quote": "Reaction time was set to 2 hours at 70°C and pH=11 for both systems.",
        "value_num": 2,
        "unit": "hours"
+      },
+      {
+       "name": "repetitions",
+       "value_text": "six lots synthétisés indépendamment pour chaque système",
+       "quote": "six sample batches that were independently synthesized for each colloidal metallic system"
       }
      ],
      "equipment": [],
@@ -280,14 +285,14 @@
      "technique": "UV-visible",
      "result": "bande SPR unique, λmax = 521 nm",
      "instrument": "PerkinElmer 365 spectrometer",
-     "conditions": "300–800 nm, vitesse de balayage 20 nm/min, pas 0,5 nm ; colloïdes dilués au 1:5 avec de l'eau",
+     "conditions": "300–800 nm, vitesse de balayage 20 nm/min, pas 0,5 nm ; colloïdes dilués au 1:5 avec de l'eau ; reproductibilité : six lots synthétisés indépendamment pour chaque système (« six sample batches that were independently synthesized for each colloidal metallic system ») ; stabilité suivie jusqu'à 50 jours ; taille moyenne des AuNPs estimée par l'équation empirique de Khlebtsov D=((X-17)1/2−1)/0.06 (nm), X=λmax−500 nm, pour X≥23 nm",
      "quote": "the maximum wavelength (λmax) related to the surface plasmon resonance (SPR) of quasi-spherical noble metal NPs was observed at λmax=463 and 521 nm for Ag/AuNPs and AuNPs, respectively (Figure 2)"
     },
     {
      "technique": "XRD",
      "result": "réseau cubique à faces centrées, pas de phase étrangère",
      "instrument": "Rigaku MiniFlex 600 diffractometer",
-     "conditions": "40 kV, 15 mA, Cu Kα (λ=1.542 Å), pas 0,05° (2θ), vitesse 0,2°/min, température ambiante ; échantillon séché sur le porte-échantillon (6–8 mL de colloïde)",
+     "conditions": "40 kV, 15 mA, Cu Kα (λ=1.542 Å), pas 0,05° (2θ), vitesse 0,2°/min, température ambiante ; échantillon séché sur le porte-échantillon (6–8 mL de colloïde) ; taille de cristallite par l'équation de Scherrer L = kλ/(B cosθ), facteur de forme k = 0,94 (cristallites supposées sphériques), B = largeur à mi-hauteur ; paramètre de maille a calculé par la loi de Bragg pour chaque plan",
      "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes, respectively, for both bulk FCC Ag and Au."
     },
     {
@@ -301,22 +306,50 @@
      "technique": "DLS et potentiel ζ",
      "result": "diamètre hydrodynamique 29,3±8,6 nm",
      "instrument": "Malvern Zetasizer Nano ZS",
-     "conditions": "dilution 1:20 v/v, 25,0 °C±0,1 °C, laser He–Ne (λ=633 nm), rétrodiffusion à 175°, approximation de Smoluchowski pour le potentiel ζ",
+     "conditions": "dilution 1:20 v/v, 25,0 °C±0,1 °C, laser He–Ne (λ=633 nm), rétrodiffusion à 175°, approximation de Smoluchowski pour le potentiel ζ ; indice de réfraction 0,20 et valeur d'absorption 3,32 pour les NPs mono- et bimétalliques ; cellules ζ jetables ; mesures à 25 °C et à 37 °C sans différence significative, valeurs de DLS retenues en nombre à 25 °C ; potentiel ζ mesuré dans les 2 jours suivant la synthèse",
      "quote": "The hydrodynamic diameter found by DLS was 29.3±8.6 nm and 9.4±2.8 nm for AuNPs and Ag/Au alloy NPs, respectively."
     },
     {
      "technique": "STEM/HRTEM",
      "result": "NPs quasi-sphériques sans agglomération évidente, nanocristaux maclés multiples",
      "instrument": "FEI TITAN 80–300",
-     "conditions": "canon à émission de champ tungstène, 300 kV ; dépôt par goutte sur grille cuivre-carbone, séchage à l'air, plasma d'oxygène 3 min avant imagerie",
+     "conditions": "canon à émission de champ tungstène, 300 kV ; dépôt par goutte sur grille cuivre-carbone, séchage à l'air, plasma d'oxygène 3 min avant imagerie ; tension 300 kV ; EDS calibré (EDAX) intégré au TEM",
      "quote": "As shown in HRTEM images (insets of Figure 6), the samples consist of multiple twinned structure nanocrystals."
     },
     {
      "technique": "ICP",
      "result": "Au 95,8 µg/mL",
      "instrument": "Thermo Scientific iCAP 6500 – ICP OES CID spectrometer",
-     "conditions": "λ = 328 nm (Ag) et 242,7 nm (Au)",
+     "conditions": "λ = 328 nm (Ag) et 242,7 nm (Au) ; étalons de référence : solutions de Ag à 1 000 µL/mL, de Au à 1 000 µL/mL et de Au à 100 µg/mL dans HNO3 2 % (AccuStandard) ; blancs multiples et courbes d'étalonnage, coefficients de corrélation 0,9998 (Ag) et 0,9996 (Au) ; limite de détection de la procédure 0,12 µg/mL (Ag) et 2,0 µg/mL (Au) ; l'article parle d'ICP-MS dans le texte et d'un spectromètre ICP OES dans les Méthodes",
      "quote": "The chemical content of the colloidal AuNPs and Ag/AuNPs was determined by ICP-MS analysis."
+    },
+    {
+     "technique": "antibacterial growth curve (OD600)",
+     "result": "croissance de MDR E. coli et de MRSA retardée de façon dose-dépendante ; paramètres A, µ, λ du modèle de Gompertz modifié",
+     "instrument": "spectrophotomètre (SpectraMax M3, Molecular Devices, cité pour la DO des cultures de nuit ; l'appareil du suivi de croissance n'est pas nommé)",
+     "conditions": "NPs de 1 à 20 µg/mL dans plaque 96 puits à fond plat transparent, inoculum 10^6 UFC/mL, DO à 600 nm toutes les 2 min pendant 24 h, témoins sans NPs et NPs + milieu seul ; souches MDR E. coli ATCC BAA-2471 et MRSA ATCC 4330, précultures de nuit dans 5 mL de milieu LB à 37 °C/200 rpm pendant 24 h ; courbes décalées à l'origine et ajustées par Gompertz modifié (solveur non linéaire GRG, moindres carrés) ; essais en triplicat, test t de Student (p≤0,05 significatif)",
+     "quote": "The plate was introduced into a spectrophotometer, and samples were measured for 24 hours at 600 nm every 2 minutes."
+    },
+    {
+     "technique": "colony-counting assay",
+     "result": "effet antibactérien dose-dépendant (voir résultats par voie)",
+     "instrument": null,
+     "conditions": "mêmes concentrations de NPs et mêmes souches ; plaque 96 puits incubée 8 h à 37 °C ; dilutions en série dans du PBS stérile de 100×, 1 000× et 10 000× ; 10 µL déposés sur gélose (méthode de la goutte) ; seconde incubation à 37 °C d'une durée dépendant de la souche (non donnée) ; comptage par logiciel ; niveaux de signification de la légende de la Fig. 9 : *p<0,1, **p<0,05, ***p<0,0005 contre témoin ; N=3",
+     "quote": "A 10 µL aliquot was then taken from each one of the dilutions and placed onto a labeled agar plate, following a drop plate method."
+    },
+    {
+     "technique": "SEM of treated bacteria",
+     "result": "surface plissée et cellules raccourcies (MDR E. coli) ; diamètre réduit, bosselures, lyse (MRSA)",
+     "instrument": "Hitachi S-4800 (SEM) ; métalliseur Cressington 208HR ; point critique Samdri-PVT-3D",
+     "conditions": "NPs à 10 µg/mL, plaque six puits avec lamelle de verre traitée à la polylysine, 8 h à 37 °C ; fixation glutaraldéhyde 2,5 % et cacodylate de sodium 0,1 M pendant 1 h, 3 lavages de 10 min au tampon cacodylate 0,1 M, post-fixation OsO4 1 % pendant 1 h, déshydratation à l'éthanol 35, 50, 70, 80, 95 et 100 % (trois fois pour 100 %), séchage au point critique (échange CO2 liquide–éthanol), montage sur plots avec ruban de carbone et graphite liquide, dépôt de platine ; tension 3 kV, courant 10 µA",
+     "quote": "Digital images of the treated and untreated bacteria were acquired using an SEM."
+    },
+    {
+     "technique": "MTS cell viability assay",
+     "result": "HDF : pas de cytotoxicité significative pour AuNPs ; mélanome : inhibition de prolifération avec Ag/AuNPs (voir résultats par voie)",
+     "instrument": "CellTiter 96 AQueous One Solution Cell Proliferation Assay (Promega) ; spectrophotomètre (non nommé)",
+     "conditions": "lignées HDF (ATCC PCS-201-012) et mélanome (ATCC CRL-1619) en DMEM, 10 % de sérum de veau fœtal et 1 % de pénicilline/streptomycine ; 5×10^4 cellules/mL en plaques 96 puits, 37 °C, incubateur humidifié à 5 % de CO2, 24 h ; puis NPs de 1 à 20 µg/mL dans le DMEM pendant 24 h (Méthodes ; 1 à 3 jours dans les Résultats) ; MTS pendant 4 h ; absorbance à 490 nm ; triplicat, test t de Student (p≤0,05) ; Fig. 11-12 : *p<0,01, **p<0,005 contre témoin",
+     "quote": "The absorbance was then measured at 490 nm, and the cell viability in response to various NP concentrations was determined."
     }
    ],
    "outcomes": [
@@ -508,6 +541,72 @@
      "property": "SEM_morphology_MRSA",
      "value_text": "decreased diameters and different stages of damage in the cell membrane, with some cells having dents and some cells appearing lysed",
      "quote": "after incubation with NPs (Figure 10C and D), the vast majority showed decreased diameters and different stages of damage in the cell membrane, with some cells having dents and some cells appearing lysed"
+    },
+    {
+     "property": "XRD_2theta_(111)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 38.3,
+     "unit": "°"
+    },
+    {
+     "property": "XRD_2theta_(200)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 44.5,
+     "unit": "°"
+    },
+    {
+     "property": "XRD_2theta_(220)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 64.8,
+     "unit": "°"
+    },
+    {
+     "property": "XRD_2theta_(311)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 77.8,
+     "unit": "°"
+    },
+    {
+     "property": "XRD_2theta_(222)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 81.8,
+     "unit": "°"
+    },
+    {
+     "property": "FTIR_band_OH_stretch",
+     "quote": "All the samples showed a broad band at 3,403 cm−1 due to the stretching of hydroxyl groups",
+     "value_num": 3403,
+     "unit": "cm-1"
+    },
+    {
+     "property": "FTIR_band_CO_stretch_anhydroglucose",
+     "quote": "a band at 1,023 cm−1, which is characteristic of the C–O stretching from the anhydroglucose rings",
+     "value_num": 1023,
+     "unit": "cm-1"
+    },
+    {
+     "property": "FTIR_band_CH_stretch",
+     "quote": "The band around 2,900 cm− was assigned to C–H bond stretching related to the ring methylene hydrogen atoms.",
+     "value_num": 2900,
+     "value_text": "~2900 (l'article écrit « around 2,900 cm− »)",
+     "unit": "cm-1"
+    },
+    {
+     "property": "DLS_zeta_difference_25C_vs_37C",
+     "quote": "Both measurements were carried out at 25°C and 37°C without any significant difference between their respective values.",
+     "value_text": "aucune différence significative entre 25 °C et 37 °C (DLS et potentiel ζ)"
+    },
+    {
+     "property": "colloid_stability_monitoring_time_UV",
+     "quote": "the UV–visible spectra for each colloidal system measured up to 50 days for AuNPs and Ag/AuNPs after their synthesis was shown",
+     "value_num": 50,
+     "unit": "days"
+    },
+    {
+     "property": "particle_size_RSD_TEM",
+     "quote": "28.5±2.0 nm (7.0%)",
+     "value_num": 7.0,
+     "unit": "%"
     }
    ],
    "missing_fields": [
@@ -562,14 +661,14 @@
      "technique": "UV-visible",
      "result": "bande SPR unique, λmax = 463 nm",
      "instrument": "PerkinElmer 365 spectrometer",
-     "conditions": "300–800 nm, vitesse de balayage 20 nm/min, pas 0,5 nm ; colloïdes dilués au 1:5 avec de l'eau",
+     "conditions": "300–800 nm, vitesse de balayage 20 nm/min, pas 0,5 nm ; colloïdes dilués au 1:5 avec de l'eau ; reproductibilité : six lots synthétisés indépendamment pour chaque système (« six sample batches that were independently synthesized for each colloidal metallic system ») ; stabilité suivie jusqu'à 50 jours",
      "quote": "the maximum wavelength (λmax) related to the surface plasmon resonance (SPR) of quasi-spherical noble metal NPs was observed at λmax=463 and 521 nm for Ag/AuNPs and AuNPs, respectively (Figure 2)"
     },
     {
      "technique": "XRD",
      "result": "réseau cubique à faces centrées, pas de phase étrangère",
      "instrument": "Rigaku MiniFlex 600 diffractometer",
-     "conditions": "40 kV, 15 mA, Cu Kα (λ=1.542 Å), pas 0,05° (2θ), vitesse 0,2°/min, température ambiante ; échantillon séché sur le porte-échantillon (6–8 mL de colloïde)",
+     "conditions": "40 kV, 15 mA, Cu Kα (λ=1.542 Å), pas 0,05° (2θ), vitesse 0,2°/min, température ambiante ; échantillon séché sur le porte-échantillon (6–8 mL de colloïde) ; taille de cristallite par l'équation de Scherrer L = kλ/(B cosθ), facteur de forme k = 0,94 (cristallites supposées sphériques), B = largeur à mi-hauteur ; paramètre de maille a calculé par la loi de Bragg pour chaque plan",
      "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes, respectively, for both bulk FCC Ag and Au."
     },
     {
@@ -583,7 +682,7 @@
      "technique": "DLS et potentiel ζ",
      "result": "diamètre hydrodynamique 9,4±2,8 nm",
      "instrument": "Malvern Zetasizer Nano ZS",
-     "conditions": "dilution 1:20 v/v, 25,0 °C±0,1 °C, laser He–Ne (λ=633 nm), rétrodiffusion à 175°, approximation de Smoluchowski pour le potentiel ζ",
+     "conditions": "dilution 1:20 v/v, 25,0 °C±0,1 °C, laser He–Ne (λ=633 nm), rétrodiffusion à 175°, approximation de Smoluchowski pour le potentiel ζ ; indice de réfraction 0,20 et valeur d'absorption 3,32 pour les NPs mono- et bimétalliques ; cellules ζ jetables ; mesures à 25 °C et à 37 °C sans différence significative, valeurs de DLS retenues en nombre à 25 °C ; potentiel ζ mesuré dans les 2 jours suivant la synthèse",
      "quote": "The hydrodynamic diameter found by DLS was 29.3±8.6 nm and 9.4±2.8 nm for AuNPs and Ag/Au alloy NPs, respectively."
     },
     {
@@ -597,15 +696,43 @@
      "technique": "ICP",
      "result": "Ag 17,0 µg/mL et Au 35,1 µg/mL",
      "instrument": "Thermo Scientific iCAP 6500 – ICP OES CID spectrometer",
-     "conditions": "λ = 328 nm (Ag) et 242,7 nm (Au)",
+     "conditions": "λ = 328 nm (Ag) et 242,7 nm (Au) ; étalons de référence : solutions de Ag à 1 000 µL/mL, de Au à 1 000 µL/mL et de Au à 100 µg/mL dans HNO3 2 % (AccuStandard) ; blancs multiples et courbes d'étalonnage, coefficients de corrélation 0,9998 (Ag) et 0,9996 (Au) ; limite de détection de la procédure 0,12 µg/mL (Ag) et 2,0 µg/mL (Au) ; l'article parle d'ICP-MS dans le texte et d'un spectromètre ICP OES dans les Méthodes",
      "quote": "The chemical content of the colloidal AuNPs and Ag/AuNPs was determined by ICP-MS analysis."
     },
     {
      "technique": "EDS",
      "result": "44,97±3,87 at% Ag et 55,03±3,87 at% Au sur des NPs individuelles",
      "instrument": "EDAX, système EDS intégré au TEM",
-     "conditions": null,
+     "conditions": "EDS (EDAX) intégré au TEM FEI TITAN 80–300 à 300 kV, spectres de NPs individuelles (Fig. S3, absente du dépôt)",
      "quote": "revealed a composition of 44.97±3.87 at% Ag and 55.03±3.87 at% Au"
+    },
+    {
+     "technique": "antibacterial growth curve (OD600)",
+     "result": "croissance de MDR E. coli et de MRSA retardée de façon dose-dépendante ; paramètres A, µ, λ du modèle de Gompertz modifié",
+     "instrument": "spectrophotomètre (SpectraMax M3, Molecular Devices, cité pour la DO des cultures de nuit ; l'appareil du suivi de croissance n'est pas nommé)",
+     "conditions": "NPs de 1 à 20 µg/mL dans plaque 96 puits à fond plat transparent, inoculum 10^6 UFC/mL, DO à 600 nm toutes les 2 min pendant 24 h, témoins sans NPs et NPs + milieu seul ; souches MDR E. coli ATCC BAA-2471 et MRSA ATCC 4330, précultures de nuit dans 5 mL de milieu LB à 37 °C/200 rpm pendant 24 h ; courbes décalées à l'origine et ajustées par Gompertz modifié (solveur non linéaire GRG, moindres carrés) ; essais en triplicat, test t de Student (p≤0,05 significatif)",
+     "quote": "The plate was introduced into a spectrophotometer, and samples were measured for 24 hours at 600 nm every 2 minutes."
+    },
+    {
+     "technique": "colony-counting assay",
+     "result": "effet antibactérien dose-dépendant (voir résultats par voie)",
+     "instrument": null,
+     "conditions": "mêmes concentrations de NPs et mêmes souches ; plaque 96 puits incubée 8 h à 37 °C ; dilutions en série dans du PBS stérile de 100×, 1 000× et 10 000× ; 10 µL déposés sur gélose (méthode de la goutte) ; seconde incubation à 37 °C d'une durée dépendant de la souche (non donnée) ; comptage par logiciel ; niveaux de signification de la légende de la Fig. 9 : *p<0,1, **p<0,05, ***p<0,0005 contre témoin ; N=3",
+     "quote": "A 10 µL aliquot was then taken from each one of the dilutions and placed onto a labeled agar plate, following a drop plate method."
+    },
+    {
+     "technique": "SEM of treated bacteria",
+     "result": "surface plissée et cellules raccourcies (MDR E. coli) ; diamètre réduit, bosselures, lyse (MRSA)",
+     "instrument": "Hitachi S-4800 (SEM) ; métalliseur Cressington 208HR ; point critique Samdri-PVT-3D",
+     "conditions": "NPs à 10 µg/mL, plaque six puits avec lamelle de verre traitée à la polylysine, 8 h à 37 °C ; fixation glutaraldéhyde 2,5 % et cacodylate de sodium 0,1 M pendant 1 h, 3 lavages de 10 min au tampon cacodylate 0,1 M, post-fixation OsO4 1 % pendant 1 h, déshydratation à l'éthanol 35, 50, 70, 80, 95 et 100 % (trois fois pour 100 %), séchage au point critique (échange CO2 liquide–éthanol), montage sur plots avec ruban de carbone et graphite liquide, dépôt de platine ; tension 3 kV, courant 10 µA",
+     "quote": "Digital images of the treated and untreated bacteria were acquired using an SEM."
+    },
+    {
+     "technique": "MTS cell viability assay",
+     "result": "HDF : pas de cytotoxicité significative pour AuNPs ; mélanome : inhibition de prolifération avec Ag/AuNPs (voir résultats par voie)",
+     "instrument": "CellTiter 96 AQueous One Solution Cell Proliferation Assay (Promega) ; spectrophotomètre (non nommé)",
+     "conditions": "lignées HDF (ATCC PCS-201-012) et mélanome (ATCC CRL-1619) en DMEM, 10 % de sérum de veau fœtal et 1 % de pénicilline/streptomycine ; 5×10^4 cellules/mL en plaques 96 puits, 37 °C, incubateur humidifié à 5 % de CO2, 24 h ; puis NPs de 1 à 20 µg/mL dans le DMEM pendant 24 h (Méthodes ; 1 à 3 jours dans les Résultats) ; MTS pendant 4 h ; absorbance à 490 nm ; triplicat, test t de Student (p≤0,05) ; Fig. 11-12 : *p<0,01, **p<0,005 contre témoin",
+     "quote": "The absorbance was then measured at 490 nm, and the cell viability in response to various NP concentrations was determined."
     }
    ],
    "outcomes": [
@@ -805,6 +932,106 @@
      "property": "SEM_morphology_MRSA",
      "value_text": "decreased diameters and different stages of damage in the cell membrane, with some cells having dents and some cells appearing lysed",
      "quote": "after incubation with NPs (Figure 10C and D), the vast majority showed decreased diameters and different stages of damage in the cell membrane, with some cells having dents and some cells appearing lysed"
+    },
+    {
+     "property": "XRD_2theta_(111)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 38.3,
+     "unit": "°"
+    },
+    {
+     "property": "XRD_2theta_(200)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 44.5,
+     "unit": "°"
+    },
+    {
+     "property": "XRD_2theta_(220)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 64.8,
+     "unit": "°"
+    },
+    {
+     "property": "XRD_2theta_(311)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 77.8,
+     "unit": "°"
+    },
+    {
+     "property": "XRD_2theta_(222)",
+     "quote": "The diffraction peaks observed at 2θ=38.3°, 44.5°, 64.8°, 77.8° and 81.8° correspond to the (111), (200), (220), (311) and (222) crystallographic planes",
+     "value_num": 81.8,
+     "unit": "°"
+    },
+    {
+     "property": "FTIR_band_OH_stretch",
+     "quote": "All the samples showed a broad band at 3,403 cm−1 due to the stretching of hydroxyl groups",
+     "value_num": 3403,
+     "unit": "cm-1"
+    },
+    {
+     "property": "FTIR_band_CO_stretch_anhydroglucose",
+     "quote": "a band at 1,023 cm−1, which is characteristic of the C–O stretching from the anhydroglucose rings",
+     "value_num": 1023,
+     "unit": "cm-1"
+    },
+    {
+     "property": "FTIR_band_CH_stretch",
+     "quote": "The band around 2,900 cm− was assigned to C–H bond stretching related to the ring methylene hydrogen atoms.",
+     "value_num": 2900,
+     "value_text": "~2900 (l'article écrit « around 2,900 cm− »)",
+     "unit": "cm-1"
+    },
+    {
+     "property": "DLS_zeta_difference_25C_vs_37C",
+     "quote": "Both measurements were carried out at 25°C and 37°C without any significant difference between their respective values.",
+     "value_text": "aucune différence significative entre 25 °C et 37 °C (DLS et potentiel ζ)"
+    },
+    {
+     "property": "colloid_stability_monitoring_time_UV",
+     "quote": "the UV–visible spectra for each colloidal system measured up to 50 days for AuNPs and Ag/AuNPs after their synthesis was shown",
+     "value_num": 50,
+     "unit": "days"
+    },
+    {
+     "property": "EDS_atomic_ratio_Ag_to_Au",
+     "quote": "ie, Ag:Au atomic ratio =0.818",
+     "value_num": 0.818
+    },
+    {
+     "property": "nominal_atomic_ratio_Ag_to_Au_feed",
+     "quote": "nominal Ag:Au atomic ratio =1.00",
+     "value_num": 1.0
+    },
+    {
+     "property": "ICP_atomic_ratio_Ag_to_Au_as_written",
+     "quote": "ie, Ag:Au atomic ratio =1.13, which is close to the composition of the feed ion molar concentration ratio",
+     "value_num": 1.13
+    },
+    {
+     "property": "SPR_lambda_max_AgNPs_control",
+     "quote": "AgNPs (λmax=406±2 nm [Figures 2 and S1])",
+     "value_num": 406,
+     "value_text": "406±2",
+     "unit": "nm"
+    },
+    {
+     "property": "SPR_lambda_max_physical_mixture_AgNPs_AuNPs_Ag_band",
+     "quote": "presented two bands at λmax=402 and 521 nm, which corresponded to the contribution of each of the noble metal NP colloids",
+     "value_num": 402,
+     "unit": "nm"
+    },
+    {
+     "property": "SPR_lambda_max_physical_mixture_AgNPs_AuNPs_Au_band",
+     "quote": "presented two bands at λmax=402 and 521 nm, which corresponded to the contribution of each of the noble metal NP colloids",
+     "value_num": 521,
+     "unit": "nm"
+    },
+    {
+     "property": "particle_size_RSD_TEM",
+     "quote": "9.7±3.2 nm (32.1%) for AuNPs and Ag/AuNPs",
+     "value_num": 32.1,
+     "unit": "%"
     }
    ]
   }
@@ -1061,6 +1288,115 @@
   {
    "where": "SEM outcomes (les deux voies)",
    "issue": "Le texte des Résultats décrit les images MEB « with NPs » pour les deux types de particules ensemble ; la légende de la Fig. 10 donne 8 h de traitement et les Méthodes une concentration de 10 µg/mL. Les deux voies reçoivent donc la même phrase."
+  },
+  {
+   "where": "Ag/AuNPs outcomes ICP_atomic_ratio_Ag_to_Au_as_written",
+   "issue": "Valeur 1,13 recopiée telle qu'écrite par les auteurs pour que le chiffre de l'article soit présent ; elle est incompatible avec leurs propres concentrations (17,0 et 35,1 µg/mL donnent environ 0,88), voir le doute « Ag/AuNPs, ICP-MS » et l'annotation de limite de reproductibilité. À ne pas utiliser comme rapport mesuré."
+  },
+  {
+   "where": "Ag/AuNPs outcomes SPR_lambda_max_AgNPs_control et physical_mixture",
+   "issue": "L'AgNPs colloïdal et le mélange physique AgNPs + AuNPs ne sont pas des voies (voir sample_inventory, route null) ; leurs λmax sont rangés dans la voie Ag/AuNPs, comparée à ces témoins dans la Fig. 2, faute de voie propre."
+  },
+  {
+   "where": "caractérisations biologiques (croissance, comptage de colonies, MEB, MTS)",
+   "issue": "L'appareil du suivi de croissance et celui de l'absorbance MTS ne sont pas nommés (seul le SpectraMax M3 est cité pour les précultures de nuit) ; la durée de la seconde incubation du comptage de colonies dépend de la souche et n'est pas donnée. Ces entrées sont identiques pour les deux voies car les essais portent sur les deux colloïdes."
+  },
+  {
+   "where": "TEM, XRD, UV-visible",
+   "issue": "Conditions de mesure non données par l'article : nombre de particules comptées pour les histogrammes de taille de la Fig. 6, nombre de balayages et concentration de colloïde déposée pour la DRX, nombre de points de la droite d'étalonnage ICP."
+  },
+  {
+   "where": "comparisons 27.4±2.0 nm AuNPs",
+   "issue": "Le texte présente 27,4±2,0 nm (λmax=524±2 nm) comme valeur publiée avec renvoi b53, mais elle coïncide avec le résultat de la formule de Khlebtsov (référence b53) appliquée à λmax=524 nm ; origine ambiguë, voir l'annotation de limite de reproductibilité. Valeur gardée dans comparisons avec le renvoi donné par l'article."
+  },
+  {
+   "where": "XRD_2theta_(hkl) outcomes",
+   "issue": "L'article donne une seule liste de positions 2θ (38,3 ; 44,5 ; 64,8 ; 77,8 ; 81,8°) pour « Ag/AuNPs and AuNPs » et la dit identique à celle de l'Ag et de l'Au massifs CFC ; les mêmes valeurs sont donc attribuées aux deux voies, sans valeurs séparées par échantillon."
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "Ag/Au alloy NPs, 5–10 nm, composition atomique nominale 1:1",
+   "property": "SPR_lambda_max",
+   "value_num": 470,
+   "unit": "nm",
+   "conditions": "valeur publiée citée par les auteurs pour comparer à leur 463 nm",
+   "ref_id": "b52-ijn-14-2171",
+   "route": "Ag/AuNPs",
+   "quote": "(λmax=470 nm, for nominal atomic composition 1:1)"
+  },
+  {
+   "material": "AuNPs, 27.4±2.0 nm",
+   "property": "SPR_lambda_max",
+   "value_num": 524,
+   "unit": "nm",
+   "conditions": "valeur annoncée comme publiée (λmax=524±2 nm) ; voir l'annotation sur l'origine possible de 27,4 nm",
+   "ref_id": "b53-ijn-14-2171",
+   "route": "AuNPs",
+   "quote": "and 27.4±2.0 nm AuNPs (λmax=524±2 nm)"
+  },
+  {
+   "material": "AuNPs",
+   "property": "particle_size_UV_visible",
+   "value_num": 27.4,
+   "unit": "nm",
+   "conditions": "valeur annoncée comme publiée, écart-type ±2,0 nm ; λmax=524±2 nm",
+   "ref_id": "b53-ijn-14-2171",
+   "route": "AuNPs",
+   "quote": "and 27.4±2.0 nm AuNPs (λmax=524±2 nm)"
+  },
+  {
+   "material": "Ag/Au alloy NPs 1:1 (valeur publiée du Tableau 3)",
+   "property": "lattice_parameter_a",
+   "value_num": 4.0562,
+   "unit": "Å",
+   "conditions": "colonne « Reported values for a/Å » du Tableau 3, ligne Ag/AuNPs ; pas de renvoi bibliographique dans le tableau",
+   "route": "Ag/AuNPs",
+   "quote": "Ag/AuNPs | 4.065±0.008 | 4.0562 | 10.3±4.5"
+  },
+  {
+   "material": "AuNPs (valeur publiée du Tableau 3)",
+   "property": "lattice_parameter_a",
+   "value_num": 4.0762,
+   "unit": "Å",
+   "conditions": "colonne « Reported values for a/Å » du Tableau 3, ligne AuNPs ; pas de renvoi bibliographique dans le tableau",
+   "route": "AuNPs",
+   "quote": "AuNPs | 4.075±0.002 | 4.0762 | 23.5±10.3"
+  },
+  {
+   "material": "couple glucose / acide gluconique",
+   "property": "standard_reduction_potential",
+   "value_num": -0.6,
+   "unit": "V vs NHE",
+   "conditions": "pH≈10 ; potentiel de référence cité par les auteurs pour justifier la réduction des précurseurs",
+   "route": "AuNPs",
+   "quote": "(standard reduction potential [E°] at pH≈10 of −0.60 V versus the normal hydrogen electrode [NHE])"
+  },
+  {
+   "material": "Ag+/Ag",
+   "property": "standard_reduction_potential",
+   "value_num": 0.8,
+   "unit": "V vs NHE",
+   "conditions": "potentiel de référence cité par les auteurs",
+   "route": "Ag/AuNPs",
+   "quote": "Ag+ (Ag+/Ag°, E°=+0.80 V versus NHE)"
+  },
+  {
+   "material": "AuCl4−/Au",
+   "property": "standard_reduction_potential",
+   "value_num": 1.0,
+   "unit": "V vs NHE",
+   "conditions": "potentiel de référence cité par les auteurs",
+   "route": "AuNPs",
+   "quote": "AuCl4– (AuCl4−/Au°, E°=+1.00 V versus NHE)"
+  },
+  {
+   "material": "colloïdes en général (critère de stabilité cité par les auteurs)",
+   "property": "zeta_potential_stability_threshold",
+   "value_num": 30,
+   "unit": "mV",
+   "conditions": "valeur absolue du potentiel ζ au-dessus de laquelle un colloïde est jugé stable ; les auteurs jugent leurs deux colloïdes stables (valeur lue sur figure pour Ag/AuNPs : environ −27 mV, voir doutes)",
+   "quote": "In general, a colloid or suspension is considered stable if the ζ-potential is above a critical value of ±30 mV."
   }
  ]
 }
