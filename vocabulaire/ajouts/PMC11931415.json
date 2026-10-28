@@ -1,0 +1,70 @@
+{
+ "pmcid": "PMC11931415",
+ "ajouts": [
+  {
+   "type": "reglage",
+   "nom": "pressure_range",
+   "definition": "Plage de pression ou de pression relative balayée pendant une mesure d'adsorption ou de sorption d'une vapeur ou d'un gaz (en kPa ou en P/P0).",
+   "ecarte": "operating_pressure: pression appliquée à une membrane ou un dispositif, pas une plage balayée en sorption; chamber_pressure: niveau de vide de l'instrument; measurement_temperature: température et non pression",
+   "date": "2026-10-28 23:18"
+  },
+  {
+   "type": "reglage",
+   "nom": "carrier_gas_flow",
+   "definition": "Gaz porteur et débit total du gaz qui traverse l'échantillon pendant une mesure en flux (courbe de percée, cyclage), par exemple azote à 300 sccm.",
+   "ecarte": "flow_rate: débit de phase mobile liquide d'une chromatographie, pas un gaz porteur; atmosphere: atmosphère statique de la mesure sans débit chiffré",
+   "date": "2026-10-28 23:18"
+  },
+  {
+   "type": "technique",
+   "nom": "vapor_adsorption_test",
+   "definition": "Essai d'adsorption d'une vapeur ou d'un gaz (eau, solvant, CO2) sur un solide : isotherme gravimétrique ou volumétrique, courbe de percée en colonne à lit fixe, cyclage adsorption–désorption (capacité, temps de percée, rétention).",
+   "ecarte": "adsorption_test: essai en lot ou en colonne en solution, dont les réglages (pH, volume de solution, concentration initiale) ne s'appliquent pas à une vapeur; BET: physisorption de N2 pour la texture, pas une capacité d'adsorption de vapeur; TGA: perte de masse en température, pas une isotherme",
+   "date": "2026-10-28 23:18",
+   "reglages": [
+    "adsorbate",
+    "measurement_temperature",
+    "pressure_range",
+    "pretreatment",
+    "adsorbent_dose",
+    "carrier_gas_flow",
+    "analysis_method"
+   ]
+  },
+  {
+   "type": "propriete",
+   "nom": "breakthrough_time",
+   "definition": "Temps de percée d'une colonne d'adsorption : durée (ou durée par gramme d'adsorbant) avant que la concentration en sortie atteigne un seuil du débit d'entrée.",
+   "ecarte": "adsorption_capacity: quantité adsorbée et non une durée; kinetics_fit: paramètre d'un modèle cinétique ajusté, pas un temps de percée mesuré; filtration_time: durée de filtration d'une dispersion",
+   "date": "2026-10-28 23:18",
+   "techniques": [
+    "vapor_adsorption_test"
+   ],
+   "unite": "min/g"
+  },
+  {
+   "type": "action",
+   "nom": "shape_forming",
+   "definition": "Mettre en forme une poudre ou une pâte en objets de taille définie : extrusion à la seringue ou à la filière, découpe en granulés, pastillage avec liant.",
+   "ecarte": "press: pressage d'une poudre en pastille par une pression chiffrée, pas une extrusion ni une découpe; coat: dépôt d'une couche sur un support; grind: réduction de taille par broyage",
+   "date": "2026-10-28 23:18",
+   "cases": [
+    "dimension"
+   ]
+  },
+  {
+   "type": "methode",
+   "nom": "granulation",
+   "definition": "Mise en forme d'une poudre en granulés, pastilles ou extrudés avec un liant (extrusion, découpe, pastillage), sans changer sa composition chimique.",
+   "ecarte": "device_fabrication: mise en forme dans un dispositif complet (électrode, cellule), pas un simple granulé du matériau; mechanochemical: mélange ou réaction par broyage; impregnation: dépôt d'un précurseur sur un support poreux",
+   "date": "2026-10-28 23:18"
+  },
+  {
+   "type": "methode",
+   "nom": "physical_mixing",
+   "definition": "Mélange mécanique de poudres sans réaction ni solvant (mortier, mélangeur) pour préparer un composite témoin ou un mélange de phases.",
+   "ecarte": "mechanochemical: broyage réactif ou à haute énergie qui provoque une réaction, pas un simple mélange; solid_state_reaction: réaction à haute température entre solides; impregnation: dépôt en solution sur un support poreux",
+   "date": "2026-10-28 23:18"
+  }
+ ]
+}

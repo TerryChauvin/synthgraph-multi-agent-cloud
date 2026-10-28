@@ -1,0 +1,17 @@
+# Journal d'extraction v2, PMC9999475
+
+- **Voie de base** : LMOF (Li2MnO2F), ball milling en deux étapes. LMVOF est une branche de LMOF et non une seconde voie de base : le texte dit « following the same procedure as described above » et change seulement précurseurs (MnO, VO2 au lieu de Mn2O3), bol et billes (acier, rapport 32:1), vitesse (500 rpm). Cela permet aux résultats de LMVOF d'hériter des mesures (XRD, MEB, XANES) rangées sur LMOF.
+- **Traitements thermiques** : HT-LMOF et HT-LMVOF sont des branches `post_treatment` de LMOF et LMVOF, avec leurs propres étapes (presser 500 mg, recuire 3 fois 5 h à 300 °C, 80 °C/h, gaz de formage). La variation `heat_treatment` (parent_value « none ») ajoute ce qui est absent du parent ; l'avertissement de nom est assumé.
+- **Essais ratés Li2Mn0.66V0.33O2F** : deux branches `succeeded: false`, rattachées à LMOF et LMVOF d'après la légende de la figure S1 (bol en nitrure de silicium ou en acier). « Analogous » est lu comme même protocole ; les quantités de V2O3 et Mn2O3 ne sont pas citées.
+- **Dispositifs** : la cathode est une voie `device` de base (Cathode_LMOF), avec trois branches où seule la matière active change. Les résultats électrochimiques et les XAFS d'électrodes cyclées sont rangés sur ces voies et non sur les poudres (règle du RUNBOOK).
+- **Rapports 60:30 et 10:90** : recopiés comme quantités relatives (parts), sans dire massique ni molaire, car l'article ne le précise pas.
+- **« Under the same conditions » (seconde mouture de LMOF)** : rapport billes/poudre, bol et atmosphère déclarés non cités à l'étape 4 (règle RUNBOOK : l'implicite est non cité), avec un doute.
+- **Étalons XANES** : les rangées V2O3, VO2, V2O5 du tableau 1 sont rangées comme réglages `calibration` de la mesure, car ce ne sont pas des échantillons des auteurs.
+- **Tableau 2** : la rangée « normal LMOF » va sur la voie LMOF (mesure xafs_rock), les rangées _20C sur les cathodes cyclées. Coquille probable (σ2 = 0.014 pour HT-LMOF_20C) et S02 « 0 » dans le texte contre 0.98 au tableau : valeurs du tableau, doutes écrits.
+- **Fig. 8** : la légende dit LMVOF_20C, le texte dit HT-LMVOF ; résultats rangés sur Cathode_HT-LMVOF, doute écrit.
+- **Figures lues** : Fig. 1 (a = 4.221, 4.212, 4.161, 4.148 Å, valeurs imprimées), Fig. 6 (capacité par bloc de régime, arrondie à 5 mAh/g au lieu de 2 chiffres significatifs, pour garder les écarts entre échantillons), Fig. 10c (résistance Re sur échelle log, ±15 %). Les résistances ohmiques Rs ne sont pas extraites.
+- **Fig. 10c, attribution des symboles** : tracés vérifiés par cohérence avec le texte (LMVOF croît vite, HT-LMOF croît, HT-LMVOF décroît, HT-LMOF non ajusté à 50 cycles).
+- **CV, fenêtre de potentiel** : « same voltage range » est implicite, donc déclaré non cité (même règle).
+- **Vocabulaire ajouté** : actions `sieve`, `punch_cut` (électrodes), paramètre `milling_media` (bol et billes, nécessaire à la variation LMOF/LMVOF), propriétés `oxidation_state`, `phase_transition_temperature`. Propriétés XAS rangées sous `xas_feature_…` (ajout d'un autre agent).
+- **Comparaison** : seule valeur de la littérature citée, LVOF 36–37 % (réf. 10), en `comparisons`.
+- **Références** : seule ref7 (détails de préparation XANES et étalons) est une source de méthode ; ref27 (ATHENA), ref28–32 (logiciels, algorithmes, ligne de lumière) sont des références d'analyse de données ou d'instrument, non retenues.

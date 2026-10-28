@@ -1,0 +1,89 @@
+{
+ "pmcid": "PMC7563594",
+ "ajouts": [
+  {
+   "type": "parametre",
+   "nom": "areal_density",
+   "definition": "Masse de matière déposée par unité de surface d'un support ou d'une membrane (par exemple 25 mg/m2 de GO filtré sur un support).",
+   "ecarte": "mass: masse totale d'un solide, pas rapportée à la surface; thickness: épaisseur de couche, pas masse par aire",
+   "date": "2026-10-28 23:15",
+   "unite": "mg/m2"
+  },
+  {
+   "type": "propriete",
+   "nom": "water_flux",
+   "definition": "Flux d'eau pure ou de solution à travers une membrane, rapporté à la surface, au temps et à la pression appliquée (perméance, par exemple L/m2·h·bar).",
+   "ecarte": "catalytic_performance: performance catalytique, pas un flux de perméation; retention_stability: évolution dans le temps, pas un flux",
+   "date": "2026-10-28 23:15",
+   "techniques": [
+    "membrane_filtration"
+   ],
+   "unite": "L/m2/h/bar"
+  },
+  {
+   "type": "propriete",
+   "nom": "removal_rate",
+   "definition": "Taux d'élimination d'un soluté (polluant, micropolluant) par une membrane ou un adsorbant, en pourcentage de la concentration initiale ou d'alimentation ; préciser le soluté dans le nom (removal_rate_triclosan) et l'adsorption ou le total en suffixe.",
+   "ecarte": "solution_concentration: concentration mesurée en solution, pas un taux d'élimination; adsorption_capacity: capacité massique d'adsorption, pas un pourcentage éliminé",
+   "date": "2026-10-28 23:15",
+   "techniques": [
+    "membrane_filtration",
+    "adsorption_test"
+   ],
+   "unite": "%"
+  },
+  {
+   "type": "reglage",
+   "nom": "operating_pressure",
+   "definition": "Pression appliquée au dispositif ou à la membrane pendant l'essai (pression de filtration, pression transmembranaire, en bar).",
+   "ecarte": "chamber_pressure: pression de la chambre d'un instrument, pas une pression appliquée à un échantillon; pretreatment: prétraitement avant mesure, pas la pression de l'essai",
+   "date": "2026-10-28 23:15"
+  },
+  {
+   "type": "reglage",
+   "nom": "feed_solution",
+   "definition": "Composition de la solution ou du fluide d'alimentation d'un essai de filtration ou de perméation (eau pure, solutés et concentrations, pH).",
+   "ecarte": "initial_concentration: concentration initiale d'un adsorbat en essai d'adsorption, pas la composition globale de l'alimentation; solution_ph: pH seul, pas la composition",
+   "date": "2026-10-28 23:15"
+  },
+  {
+   "type": "reglage",
+   "nom": "atr_crystal",
+   "definition": "Cristal de réflexion totale atténuée (ATR) utilisé en infrarouge (Ge, diamant, ZnSe) ou référence de fond associée.",
+   "ecarte": "sample_preparation: préparation de l'échantillon, pas le cristal ATR; spectral_resolution: résolution de l'instrument, pas l'accessoire ATR",
+   "date": "2026-10-28 23:15"
+  },
+  {
+   "type": "reglage",
+   "nom": "recording_rate",
+   "definition": "Cadence et durée d'enregistrement d'une mesure dynamique (images par seconde et durée totale, par exemple 60 FPS pendant 5 s pour un angle de contact).",
+   "ecarte": "acquisition_parameters: terme vague (temps d'acquisition, objectif, accumulations) pour spectres ou images, pas une cadence d'enregistrement vidéo; scan_step: pas de balayage spectral, pas une cadence temporelle",
+   "date": "2026-10-28 23:15"
+  },
+  {
+   "type": "technique",
+   "nom": "membrane_filtration",
+   "definition": "Essai de filtration ou de perméation d'une membrane (cellule frontale ou tangentielle, eau pure ou solution) : flux, perméance, rejet ou taux d'élimination d'un soluté.",
+   "ecarte": "device_test: test de dispositif électronique ou optique, réglages d'éclairement sans objet pour une membrane; adsorption_test: essai d'adsorption en lot sans écoulement forcé à travers la membrane; catalytic_test: essai de réaction, pas de filtration",
+   "date": "2026-10-28 23:16",
+   "reglages": [
+    "device_architecture",
+    "active_area",
+    "pretreatment",
+    "operating_pressure",
+    "feed_solution",
+    "analysis_method"
+   ]
+  },
+  {
+   "type": "technique",
+   "nom": "TOC_analysis",
+   "definition": "Analyse du carbone organique total ou dissous d'un échantillon liquide par un analyseur TOC (oxydation puis détection du CO2).",
+   "ecarte": "elemental_analysis: analyse élémentaire de solides ou ICP, pas le carbone organique dissous d'une solution; chromatography_ms: analyse de composés séparés, pas un paramètre global",
+   "date": "2026-10-28 23:16",
+   "reglages": [
+    "calibration"
+   ]
+  }
+ ]
+}
