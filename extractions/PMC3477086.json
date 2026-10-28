@@ -146,7 +146,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -287,7 +288,9 @@
       }
      ],
      "not_stated": [
-      "stirring_speed"
+      "stirring_speed",
+      "addition_mode",
+      "atmosphere"
      ]
     },
     {
@@ -365,6 +368,27 @@
      "instrument": "Hitachi F-7000 fluorimeter (Chiyoda-ku, Japan)",
      "conditions": "excitation wavelength 341 nm in Methods; 318 nm and 365 nm for Fig. 5A and 5B",
      "quote": "For fluorescence spectroscopy measurements, the excitation wavelength for QDs was identified as 341 nm using a Hitachi F-7000 fluorimeter (Chiyoda-ku, Japan)."
+    },
+    {
+     "technique": "XRD crystallite size (Debye-Scherrer)",
+     "result": "particle diameters of the ZnO and the 5% Cd-doped ZnO QDs estimated with the Debye-Scherrer equation; the values themselves are not written in the text",
+     "instrument": null,
+     "conditions": "D particle size, lambda wavelength of the radiation used, theta_B Bragg angle, B peak width at half maximum; peaks indexed against JCPDS 36–1451",
+     "quote": "where D is the particle size, λ is the wavelength of ra-diation used, θB is the Bragg diffraction angle and B is the peak width at half maximum"
+    },
+    {
+     "technique": "UV-visible band gap and size (Tauc plot, Brus)",
+     "result": "band gap Eg from plots of (αhν)2 versus hν (direct transitions, Fig. 4); particle diameter then estimated from Eg with the Brus effective mass approximation (6, 5.2, 3.6, 3.3, 3.2 nm); Eg values only on the figure",
+     "instrument": null,
+     "conditions": "direct transitions; bulk reference Eg(ZnO) = 3.37 eV (see comparisons)",
+     "quote": "The particle size of the ZnO QDs with different concentrations of Cd can also be estimated from the band-gap energy based on the Brus effective mass approximation formula"
+    },
+    {
+     "technique": "digital photography",
+     "result": "photos of ZnO, 5% Cd-doped ZnO and TOPO/ODA-modified QDs under ordinary light (pure white) and under UV (365 nm) (greenish-yellow luminescence), Fig. 9",
+     "instrument": "Canon EOS-500D (Ohta-ku, Japan)",
+     "conditions": "fluorescent lamp and UV light, room temperature; UV lamp 365-nm excitation",
+     "quote": "a Canon EOS-500D (Ohta-ku, Japan) was used for digital photos under a fluorescent lamp and under UV light at room temperature"
     }
    ],
    "outcomes": [
@@ -430,6 +454,12 @@
      "value_text": "31.63°, 34.50°, 36.25°, 47.50°, 56.60°, 62.80°, 67.92°",
      "unit": "°",
      "quote": "The XRD spectra in Figure 2a,b revealed broad peaks at 31.63°, 34.50°, 36.25°, 47.50°, 56.60°, 62.80° and 67.92°"
+    },
+    {
+     "property": "particle_diameter_TEM",
+     "value_text": "approximately 3 to 6 nm (all QDs of the series, circular)",
+     "unit": null,
+     "quote": "all of the QDs are circular in shape with diameters of approximately 3 to 6 nm"
     }
    ],
    "missing_fields": [
@@ -496,6 +526,16 @@
      "property": "UV_exciton_absorption_peak_shift",
      "value_text": "blue shift of the exciton absorption peak, increasing with Cd concentration (no value given in the text)",
      "quote": "For Cd-doped ZnO QDs, a blue shift was observed in the exciton absorption peak as the concentration of Cd was increased."
+    },
+    {
+     "property": "particle_size_TEM_vs_undoped",
+     "value_text": "significantly smaller than undoped ZnO QDs; size inversely proportional to the Cd concentration; all QDs about 3 to 6 nm",
+     "quote": "The images reveal that the particle sizes of the Cd-doped ZnO QDs are significantly less than those of undoped ZnO QDs."
+    },
+    {
+     "property": "PL_UV_emission_intensity_trend",
+     "value_text": "increased by the incorporation of Cd (relative to undoped ZnO)",
+     "quote": "Emission intensity in the ultraviolet region is increased due to the incorporation of Cd, which changed the ZnO bandgaps and promoted recombination luminescence of the exciton."
     }
    ]
   },
@@ -583,6 +623,25 @@
      "value_text": "31.63°, 34.50°, 36.25°, 47.50°, 56.60°, 62.80°, 67.92°",
      "unit": "°",
      "quote": "The XRD spectra in Figure 2a,b revealed broad peaks at 31.63°, 34.50°, 36.25°, 47.50°, 56.60°, 62.80° and 67.92°"
+    },
+    {
+     "property": "particle_size_TEM_vs_undoped",
+     "value_text": "significantly smaller than undoped ZnO QDs; size inversely proportional to the Cd concentration; all QDs about 3 to 6 nm",
+     "quote": "The images reveal that the particle sizes of the Cd-doped ZnO QDs are significantly less than those of undoped ZnO QDs."
+    },
+    {
+     "property": "PL_UV_emission_intensity_trend",
+     "value_text": "increased by the incorporation of Cd (relative to undoped ZnO)",
+     "quote": "Emission intensity in the ultraviolet region is increased due to the incorporation of Cd, which changed the ZnO bandgaps and promoted recombination luminescence of the exciton."
+    }
+   ],
+   "characterizations": [
+    {
+     "technique": "XRD",
+     "result": "no impurity peak associated with Cd clusters or CdO detected; wurtzite structure not disturbed by the addition of small amounts of Cd2+; same peak positions as undoped ZnO (Fig. 2a,b)",
+     "instrument": null,
+     "conditions": null,
+     "quote": "Because no impurity peak associated with Cd clusters or CdO was detected, the wurtzite structure was not disturbed by the addition of small amounts of Cd2+ during the sample preparation."
     }
    ]
   },
@@ -644,6 +703,16 @@
      "property": "UV_exciton_absorption_peak_shift",
      "value_text": "blue shift of the exciton absorption peak, increasing with Cd concentration (no value given in the text)",
      "quote": "For Cd-doped ZnO QDs, a blue shift was observed in the exciton absorption peak as the concentration of Cd was increased."
+    },
+    {
+     "property": "particle_size_TEM_vs_undoped",
+     "value_text": "significantly smaller than undoped ZnO QDs; size inversely proportional to the Cd concentration; all QDs about 3 to 6 nm",
+     "quote": "The images reveal that the particle sizes of the Cd-doped ZnO QDs are significantly less than those of undoped ZnO QDs."
+    },
+    {
+     "property": "PL_UV_emission_intensity_trend",
+     "value_text": "increased by the incorporation of Cd (relative to undoped ZnO)",
+     "quote": "Emission intensity in the ultraviolet region is increased due to the incorporation of Cd, which changed the ZnO bandgaps and promoted recombination luminescence of the exciton."
     }
    ]
   },
@@ -705,6 +774,16 @@
      "property": "UV_exciton_absorption_peak_shift",
      "value_text": "blue shift of the exciton absorption peak, increasing with Cd concentration (no value given in the text)",
      "quote": "For Cd-doped ZnO QDs, a blue shift was observed in the exciton absorption peak as the concentration of Cd was increased."
+    },
+    {
+     "property": "particle_size_TEM_vs_undoped",
+     "value_text": "significantly smaller than undoped ZnO QDs; size inversely proportional to the Cd concentration; all QDs about 3 to 6 nm",
+     "quote": "The images reveal that the particle sizes of the Cd-doped ZnO QDs are significantly less than those of undoped ZnO QDs."
+    },
+    {
+     "property": "PL_UV_emission_intensity_trend",
+     "value_text": "increased by the incorporation of Cd (relative to undoped ZnO)",
+     "quote": "Emission intensity in the ultraviolet region is increased due to the incorporation of Cd, which changed the ZnO bandgaps and promoted recombination luminescence of the exciton."
     }
    ]
   },
@@ -725,7 +804,8 @@
    "scale": null,
    "yield": null,
    "not_stated": [
-    "yield"
+    "yield",
+    "repetitions"
    ],
    "succeeded": true,
    "reagents": [
@@ -825,7 +905,8 @@
      ],
      "equipment": [],
      "not_stated": [
-      "stirring_speed"
+      "stirring_speed",
+      "atmosphere"
      ]
     },
     {
@@ -864,7 +945,8 @@
      ],
      "equipment": [],
      "not_stated": [
-      "separation_method"
+      "separation_method",
+      "wash_volume"
      ]
     }
    ],
@@ -882,6 +964,27 @@
      "instrument": "Ultima-III apparatus (Rigaku Corporation, Beijing, China)",
      "conditions": "Cu Kα radiation source",
      "quote": "Furthermore, the XRD peaks the diffraction profiles of TOPO/ODA-modified Cd-doped ZnO QDs were not as sharp as in the case of the 5% Cd-doped ZnO sample, which indicated that the polymer coated the surfaces of the Cd-doped ZnO QDs."
+    },
+    {
+     "technique": "photoluminescence",
+     "result": "emission spectra of Cd-doped ZnO QDs with TOPO/ODA mass ratios 1:5, 1:3, 1:2, 1:1, 2:1 (Fig. 7); maximum at 1:2",
+     "instrument": "Hitachi F-7000 fluorimeter (Chiyoda-ku, Japan)",
+     "conditions": "excitation at 341 nm",
+     "quote": "The emission spectra, which were derived from the excitation of Cd-doped ZnO QDs with different TOPO/ODA mass ratios at 341 nm, are shown in Figure 7."
+    },
+    {
+     "technique": "UV-visible absorption",
+     "result": "exciton absorption peaks of modified and unmodified Cd-doped ZnO QDs both at about 340 nm; blue shift for the modified QDs at TOPO/ODA 1:2 (Fig. 6)",
+     "instrument": "TU-1901 spectrophotometer (Beijing Purkinje General Instrument Co., Ltd., Beijing, China)",
+     "conditions": "room temperature, wavelength range 200 to 600 nm (Methods)",
+     "quote": "Figure 6 shows the UV-visible absorption spectra for both TOPO/ODA-modified and unmodified Cd-doped ZnO QDs."
+    },
+    {
+     "technique": "digital photography",
+     "result": "TOPO/ODA-modified QDs: pure white under ordinary light, greenish-yellow luminescence under UV (365 nm), Fig. 9 (3)",
+     "instrument": "Canon EOS-500D (Ohta-ku, Japan)",
+     "conditions": "fluorescent lamp and UV light, room temperature; UV lamp 365-nm excitation",
+     "quote": "a Canon EOS-500D (Ohta-ku, Japan) was used for digital photos under a fluorescent lamp and under UV light at room temperature"
     }
    ],
    "outcomes": [
@@ -917,6 +1020,18 @@
      "property": "PL_visible_emission_peak_wavelength_Fig9",
      "value_text": "approximately 500 nm",
      "quote": "The luminous colour is apparently due to the emission peak at approximately 500 nm in the visible region"
+    },
+    {
+     "property": "FTIR_Zn-O-Zn_stretching",
+     "value_num": 457,
+     "unit": "cm−1",
+     "quote": "Clear Zn-O-Zn stretching modes were observed at 457 cm−1"
+    },
+    {
+     "property": "FTIR_Cd=O_stretching",
+     "value_num": 1420,
+     "unit": "cm−1",
+     "quote": "The well-known stretching mode of Cd = O was observed at 1,420 cm−1."
     }
    ],
    "missing_fields": [
@@ -952,6 +1067,11 @@
      "unit": "a.u.",
      "from_figure": "Fig. 7",
      "quote": "Figure 7 Fluorescence spectra of Cd-doped ZnO QDs for different TOPO/ODA mass ratios. (a)1:5, (b) 1:3, (c) 1:2, (d) 1:1, (e) 2:1."
+    },
+    {
+     "property": "PL_intensity_trend",
+     "value_text": "luminous intensity increases with the TOPO/ODA mass ratio up to 1:2",
+     "quote": "The luminous intensity was observed to increase as the TOPO/ODA mass ratio was increased when the ratio was 1:2 or less."
     }
    ]
   },
@@ -982,6 +1102,11 @@
      "unit": "a.u.",
      "from_figure": "Fig. 7",
      "quote": "Figure 7 Fluorescence spectra of Cd-doped ZnO QDs for different TOPO/ODA mass ratios. (a)1:5, (b) 1:3, (c) 1:2, (d) 1:1, (e) 2:1."
+    },
+    {
+     "property": "PL_intensity_trend",
+     "value_text": "luminous intensity increases with the TOPO/ODA mass ratio up to 1:2",
+     "quote": "The luminous intensity was observed to increase as the TOPO/ODA mass ratio was increased when the ratio was 1:2 or less."
     }
    ]
   },
@@ -1022,6 +1147,11 @@
      "property": "PL_luminous_intensity_rank",
      "value_text": "optimal for the generation of maximum luminous intensity",
      "quote": "The results show that a 1:2 TOPO/ODA mass ratio is optimal for the generation of maximum luminous intensity."
+    },
+    {
+     "property": "UV_exciton_absorption_peak_wavelength",
+     "value_text": "approximately 340 nm (same as unmodified Cd-doped ZnO QDs, before the blue shift)",
+     "quote": "The exciton absorption peaks of both samples appear at approximately 340 nm"
     }
    ]
   },
@@ -1052,6 +1182,11 @@
      "unit": "a.u.",
      "from_figure": "Fig. 7",
      "quote": "Figure 7 Fluorescence spectra of Cd-doped ZnO QDs for different TOPO/ODA mass ratios. (a)1:5, (b) 1:3, (c) 1:2, (d) 1:1, (e) 2:1."
+    },
+    {
+     "property": "PL_intensity_trend",
+     "value_text": "excess of TOPO reduces the luminous intensity relative to 1:2",
+     "quote": "Both the TOPO and Cd coatings on the ZnO QD surfaces and an excessive amount of TOPO led to a reduction in luminous intensity."
     }
    ]
   },
@@ -1082,6 +1217,11 @@
      "unit": "a.u.",
      "from_figure": "Fig. 7",
      "quote": "Figure 7 Fluorescence spectra of Cd-doped ZnO QDs for different TOPO/ODA mass ratios. (a)1:5, (b) 1:3, (c) 1:2, (d) 1:1, (e) 2:1."
+    },
+    {
+     "property": "PL_intensity_trend",
+     "value_text": "excess of TOPO reduces the luminous intensity relative to 1:2",
+     "quote": "Both the TOPO and Cd coatings on the ZnO QD surfaces and an excessive amount of TOPO led to a reduction in luminous intensity."
     }
    ]
   }
@@ -1238,6 +1378,92 @@
   {
    "where": "ZnO_0Cd et ZnO_Cd5, positions DRX (Fig. 2a,b)",
    "issue": "Les sept positions de pic sont données une seule fois pour les figures 2a et 2b (ZnO et 5 % Cd) ; reprises telles quelles sur les deux échantillons, sans valeur propre à chacun."
+  },
+  {
+   "where": "TOPO_ODA_modified, FT-IR 457 et 1 420 cm−1",
+   "issue": "Les bandes Zn-O-Zn (457 cm−1, « in both cases ») et Cd=O (1 420 cm−1) sont ajoutées à la voie TOPO_ODA_modified ; le texte les rapporte pour les spectres de l'échantillon modifié et du non modifié, ce dernier n'ayant pas de voie (voir sample_inventory)."
+  },
+  {
+   "where": "Conditions de mesure (ajout du test de complétude)",
+   "issue": "Non cités par l'article : plage 2θ, pas et vitesse de balayage du DRX, appareil et plage du FT-IR, nombre de particules comptées en TEM, fente et vitesse de balayage de l'UV-visible. Les valeurs de bande interdite lues sur la figure 4 (intersections de droites d'extrapolation) n'ont pas été relevées : à 2 chiffres significatifs elles sont toutes 3,4 eV."
+  },
+  {
+   "where": "Tendances qualitatives ajoutées (PL UV, taille TEM)",
+   "issue": "Les phrases sur l'augmentation de l'émission UV et la diminution de taille par le Cd concernent la série dopée dans son ensemble ; elles sont reportées sur chaque voie dopée sans valeur propre à chaque teneur."
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "ZnO (bulk, hexagonal wurtzite)",
+   "property": "lattice_parameter_a",
+   "value_num": 0.325,
+   "unit": "nm",
+   "conditions": "hexagonal wurtzite structure",
+   "ref_id": "B10",
+   "quote": "ZnO is a direct and wide-band-gap semiconductor material of group II-VI with a hexagonal wurtzite structure (a = 0.325 nm, c = 0.521 nm)."
+  },
+  {
+   "material": "ZnO (bulk, hexagonal wurtzite)",
+   "property": "lattice_parameter_c",
+   "value_num": 0.521,
+   "unit": "nm",
+   "conditions": "hexagonal wurtzite structure",
+   "ref_id": "B10",
+   "quote": "ZnO is a direct and wide-band-gap semiconductor material of group II-VI with a hexagonal wurtzite structure (a = 0.325 nm, c = 0.521 nm)."
+  },
+  {
+   "material": "ZnO (bulk)",
+   "property": "band_gap",
+   "value_num": 3.37,
+   "unit": "eV",
+   "conditions": "room temperature; direct band gap",
+   "ref_id": "B10",
+   "route": "ZnO_0Cd",
+   "quote": "a wide band gap (Eg = 3.37 eV) at room temperature and a large exciton binding energy of 60 meV"
+  },
+  {
+   "material": "ZnO (bulk)",
+   "property": "exciton_binding_energy",
+   "value_num": 60,
+   "unit": "meV",
+   "conditions": "room temperature",
+   "ref_id": "B10",
+   "route": "ZnO_0Cd",
+   "quote": "a wide band gap (Eg = 3.37 eV) at room temperature and a large exciton binding energy of 60 meV"
+  },
+  {
+   "material": "CdO (bulk, cubic)",
+   "property": "lattice_parameter_a",
+   "value_num": 0.467,
+   "unit": "nm",
+   "conditions": "cubic system",
+   "ref_id": "B11",
+   "quote": "CdO belongs to the cubic system (a = 0.467 nm) of II-VI direct-band-gap semiconductor materials and exhibits a band gap of 2.3 eV"
+  },
+  {
+   "material": "CdO (bulk)",
+   "property": "band_gap",
+   "value_num": 2.3,
+   "unit": "eV",
+   "conditions": "direct band gap",
+   "ref_id": "B11",
+   "quote": "CdO belongs to the cubic system (a = 0.467 nm) of II-VI direct-band-gap semiconductor materials and exhibits a band gap of 2.3 eV"
+  },
+  {
+   "material": "Cd2+",
+   "property": "ionic_radius",
+   "value_num": 0.097,
+   "unit": "nm",
+   "conditions": "cited by the authors to explain Cd substitution of Zn in the ZnO lattice",
+   "quote": "RCd2+ (0.097 nm) is larger than RZn2+ (0.074 nm)"
+  },
+  {
+   "material": "Zn2+",
+   "property": "ionic_radius",
+   "value_num": 0.074,
+   "unit": "nm",
+   "conditions": "cited by the authors to explain Cd substitution of Zn in the ZnO lattice",
+   "quote": "RCd2+ (0.097 nm) is larger than RZn2+ (0.074 nm)"
   }
  ]
 }
