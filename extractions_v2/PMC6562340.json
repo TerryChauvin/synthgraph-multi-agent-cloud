@@ -1,0 +1,1868 @@
+{
+ "pmcid": "PMC6562340",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "g-C3N4",
+   "defined_in": "Materials and Methods, Synthesis of g-C3N4",
+   "route": "g-C3N4",
+   "results_in": [
+    "Fig. 1A",
+    "Fig. 4A",
+    "Fig. 4B"
+   ]
+  },
+  {
+   "sample": "CeO2/g-C3N4 (1:1)",
+   "defined_in": "Materials and Methods, Synthesis of CeO2/g-C3N4 Composite",
+   "route": "CeO2_gC3N4",
+   "results_in": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 10"
+   ]
+  },
+  {
+   "sample": "CeO2 (bare ceria)",
+   "defined_in": "Result and Discussion (comparaison)",
+   "route": null,
+   "why": "Témoin dont la synthèse n'est pas décrite dans l'article ; ses résultats sont rangés dans la voie du composite avec le suffixe _CeO2_bare.",
+   "results_in": [
+    "Fig. 1A",
+    "Fig. 4",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 10"
+   ]
+  },
+  {
+   "sample": "Pt/C commercial 20 wt%",
+   "defined_in": "Result and Discussion, Electrochemical Performance",
+   "route": null,
+   "why": "Catalyseur commercial, non synthétisé ; ses résultats sont rangés dans la voie du composite avec le suffixe _PtC_commercial.",
+   "results_in": [
+    "Fig. 4B",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 10"
+   ]
+  },
+  {
+   "sample": "Électrode RDE à carbone vitreux",
+   "defined_in": "Electrochemical Measurements",
+   "route": "GC_electrode_RDE",
+   "results_in": []
+  },
+  {
+   "sample": "Électrode RRDE à carbone vitreux",
+   "defined_in": "Electrochemical Measurements",
+   "route": "GC_electrode_RRDE",
+   "results_in": [
+    "Fig. 6",
+    "Fig. 7"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "label": "g-C3N4",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "intermediate",
+   "material": {
+    "name": "graphitic carbon nitride",
+    "formula": "g-C3N4",
+    "family": "nitrure",
+    "phase": null,
+    "morphology": null
+   },
+   "methods": [
+    "thermal_decomposition"
+   ],
+   "method": "polycondensation thermique de la mélamine dans un four à moufle",
+   "quote": "About 3 g of melamine was taken in china crucible and was heated for 4 h at 520°C",
+   "scale": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "melamine",
+     "formula": "C3H6N6",
+     "role": "precursor",
+     "amount": 3,
+     "unit": "g",
+     "supplier": "HIMEDIA",
+     "supplier_quote": "Melamine, Ammonium Cerium (IV) Nitrate and 1, 4-Butanediol were procured from HIMEDIA. All the chemicals were used as received.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "About 3 g of melamine was taken in china crucible"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "calcine",
+     "description": "Chauffer la mélamine dans un creuset en porcelaine dans un four à moufle (polycondensation thermique en g-C3N4), puis laisser refroidir.",
+     "quote": "About 3 g of melamine was taken in china crucible and was heated for 4 h at 520°C with a moderate heating rate of 10°C/min inside the muffle furnace.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "was heated for 4 h at 520°C with a moderate heating rate of 10°C/min",
+       "value_num": 520,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "was heated for 4 h at 520°C with a moderate heating rate of 10°C/min",
+       "value_num": 4,
+       "unit": "h"
+      },
+      {
+       "name": "heating_rate",
+       "quote": "with a moderate heating rate of 10°C/min",
+       "value_num": 10,
+       "unit": "°C/min"
+      },
+      {
+       "name": "cooling",
+       "quote": "The product obtained was cooled to room temperature.",
+       "value_text": "cooled to room temperature"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "china crucible",
+       "detail": null,
+       "quote": "About 3 g of melamine was taken in china crucible"
+      },
+      {
+       "type": "muffle furnace",
+       "detail": null,
+       "quote": "inside the muffle furnace"
+      }
+     ],
+     "not_stated": [
+      "atmosphere",
+      "crucible_lid",
+      "cooling_rate"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_gcn",
+     "technique": "XRD",
+     "instrument": "Rigaku Ultima-IV Advance X-ray Diffractometer",
+     "result": "pic fort à 27,61° (002) et pic faible à 13,12° (100)",
+     "quote": "The crystallographic phases were identified by XRD measurements using a Rigaku Ultima-IV Advance X-ray Diffractometer operating at 40 KV (radiation source Cu Kα, wavelength = 1.5418 Å).",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "The crystallographic phases were identified by XRD measurements using a Rigaku Ultima-IV Advance X-ray Diffractometer operating at 40 KV (radiation source Cu Kα, wavelength = 1.5418 Å).",
+       "value_text": "Cu Kα, wavelength = 1.5418 Å"
+      },
+      {
+       "name": "accelerating_voltage",
+       "quote": "operating at 40 KV",
+       "value_num": 40,
+       "unit": "kV"
+      }
+     ],
+     "not_stated": [
+      "scan_range",
+      "scan_step",
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "cv_gcn",
+     "technique": "electrochemistry",
+     "instrument": "Metrohm Autolab 204 B.V.",
+     "result": "pic de réduction de g-C3N4 sous O2 (CV)",
+     "quote": "The cyclic voltammogram (CV) was performed in N2 as well as O2 saturated 0.1 M KOH solution for the three materials (g-C3N4, CeO2 and CeO2/ g-C3N4) in the potential range of −0.8 to 0.2 V at various scan rates",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "The cyclic voltammogram (CV) was performed in N2 as well as O2 saturated 0.1 M KOH solution for the three materials (g-C3N4, CeO2 and CeO2/ g-C3N4) in the potential range of −0.8 to 0.2 V at various scan rates",
+       "value_text": "N2 as well as O2 saturated 0.1 M KOH solution"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "saturated Ag/AgCl electrode"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "Pt wire"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2)",
+       "value_text": "12 μl of well-dispersed catalytic ink (~0.012 mg), GC electrode of surface area 0.07067 cm2"
+      },
+      {
+       "name": "potential_window",
+       "quote": "The cyclic voltammogram (CV) was performed in N2 as well as O2 saturated 0.1 M KOH solution for the three materials (g-C3N4, CeO2 and CeO2/ g-C3N4) in the potential range of −0.8 to 0.2 V at various scan rates",
+       "value_text": "−0.8 to 0.2 V"
+      }
+     ],
+     "not_stated": [
+      "scan_rate",
+      "current_density"
+     ]
+    },
+    {
+     "id": "lsv_gcn",
+     "technique": "electrochemistry",
+     "instrument": "Metrohm Autolab 204 B.V.",
+     "result": "courbe LSV de g-C3N4 sous O2 (RDE)",
+     "quote": "linear sweep voltammetry (LSV) was recorded for the prepared materials together with commercial 20 wt% Pt/C, in O2 saturated 0.1 M KOH solution using Rotating Disk Electrode (RDE) at 1,600 RPM",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "linear sweep voltammetry (LSV) was recorded for the prepared materials together with commercial 20 wt% Pt/C, in O2 saturated 0.1 M KOH solution using Rotating Disk Electrode (RDE) at 1,600 RPM",
+       "value_text": "O2 saturated 0.1 M KOH solution"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "saturated Ag/AgCl electrode"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "Pt wire"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2)",
+       "value_text": "12 μl of well-dispersed catalytic ink (~0.012 mg), GC electrode of surface area 0.07067 cm2"
+      },
+      {
+       "name": "rotation_rate",
+       "quote": "linear sweep voltammetry (LSV) was recorded for the prepared materials together with commercial 20 wt% Pt/C, in O2 saturated 0.1 M KOH solution using Rotating Disk Electrode (RDE) at 1,600 RPM",
+       "value_text": "1,600 RPM"
+      }
+     ],
+     "not_stated": [
+      "scan_rate",
+      "current_density",
+      "potential_window"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "xrd_peak_position_002",
+     "quote": "a strong diffraction peak appears at 27.61° that corresponds to the (002) plane",
+     "value_num": 27.61,
+     "unit": "°",
+     "measured_by": "xrd_gcn"
+    },
+    {
+     "property": "xrd_peak_position_100",
+     "quote": "Another small peak at 13.12° can be assigned to the (100) plane.",
+     "value_num": 13.12,
+     "unit": "°",
+     "measured_by": "xrd_gcn"
+    },
+    {
+     "property": "voltage_window_potential_onset_CV",
+     "quote": "intense reduction peaks of g-C3N4 (Jiao et al., ), CeO2, and CeO2/g-C3N4 at Eonset −0.3, −0.24, and −0.17 V vs. Ag/AgCl, respectively, were recorded",
+     "value_num": -0.3,
+     "unit": "V vs. Ag/AgCl",
+     "measured_by": "cv_gcn"
+    },
+    {
+     "property": "voltage_window_potential_onset_LSV",
+     "quote": "the onset potential was observed to be −0.3, −0.23, and −0.2 V vs. Ag/AgCl for g-C3N4, CeO2, and CeO2/g-C3N4, respectively",
+     "value_num": -0.3,
+     "unit": "V vs. Ag/AgCl",
+     "measured_by": "lsv_gcn"
+    },
+    {
+     "property": "voltage_window_potential_E_half",
+     "quote": "(E1/2 is −0.383 V and −0.388 V for bare CeO2 and g-C3N4, respectively)",
+     "value_num": -0.388,
+     "unit": "V vs. Ag/AgCl",
+     "measured_by": "lsv_gcn"
+    },
+    {
+     "property": "limiting_current_density_minus0p8V_1600rpm",
+     "quote": "Figure 4 (A) CV study of g-C3N4, CeO2, CeO2/g-C3N4, (B) LSV study of g-C3N4, CeO2, CeO2/g-C3N4 and Pt/C at 1,600 rpm.",
+     "from_figure": "Fig. 4B",
+     "value_num": -0.4,
+     "unit": "mA cm−2",
+     "measured_by": "lsv_gcn"
+    }
+   ],
+   "missing_fields": [
+    "atmosphere du four",
+    "rendement en g-C3N4"
+   ]
+  },
+  {
+   "label": "CeO2_gC3N4",
+   "parent": null,
+   "is_baseline": true,
+   "material": {
+    "name": "CeO2/g-C3N4 nanocomposite",
+    "formula": "CeO2/g-C3N4",
+    "family": "composite",
+    "phase": null,
+    "morphology": "nanoparticules de CeO2 sur des feuillets lamellaires de g-C3N4"
+   },
+   "methods": [
+    "microwave_assisted",
+    "solvothermal"
+   ],
+   "method": "synthèse solvothermale assistée par micro-ondes (voie polyol) dans le 1,4-butanediol",
+   "quote": "Ceria (CeO2) embedded on g-C3N4 nanocomposite was synthesized by a single-step microwave-mediated solvothermal method.",
+   "scale": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "g-C3N4 (voie g-C3N4)",
+     "formula": "g-C3N4",
+     "role": "intermediate",
+     "amount": 50,
+     "unit": "mg",
+     "quote": "50 mg of the above-prepared g-C3N4 was added to 20 ml of 1, 4-butanediol"
+    },
+    {
+     "name": "1,4-butanediol",
+     "formula": "C4H10O2",
+     "role": "solvent",
+     "amount": 20,
+     "unit": "mL",
+     "supplier": "HIMEDIA",
+     "supplier_quote": "Melamine, Ammonium Cerium (IV) Nitrate and 1, 4-Butanediol were procured from HIMEDIA. All the chemicals were used as received.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "50 mg of the above-prepared g-C3N4 was added to 20 ml of 1, 4-butanediol"
+    },
+    {
+     "name": "ammonium cerium(IV) nitrate",
+     "formula": "(NH4)2Ce(NO3)6",
+     "role": "precursor",
+     "amount": 250,
+     "unit": "mg",
+     "supplier": "HIMEDIA",
+     "supplier_quote": "Melamine, Ammonium Cerium (IV) Nitrate and 1, 4-Butanediol were procured from HIMEDIA. All the chemicals were used as received.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "A total of 250 mg of ammonium cerium (IV) nitrate was added"
+    },
+    {
+     "name": "distilled water (lavage)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "The obtained light yellow-colored precipitate was centrifuged several times with distilled water, ethanol, and acetone to remove the impurities."
+    },
+    {
+     "name": "ethanol (lavage)",
+     "formula": null,
+     "role": "wash",
+     "quote": "The obtained light yellow-colored precipitate was centrifuged several times with distilled water, ethanol, and acetone to remove the impurities."
+    },
+    {
+     "name": "acetone (lavage)",
+     "formula": null,
+     "role": "wash",
+     "quote": "The obtained light yellow-colored precipitate was centrifuged several times with distilled water, ethanol, and acetone to remove the impurities."
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Ajouter le g-C3N4 préparé à 20 mL de 1,4-butanediol.",
+     "quote": "In typical synthesis 50 mg of the above-prepared g-C3N4 was added to 20 ml of 1, 4-butanediol.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Agiter à 300 tr/min dans un bécher de 50 mL pour obtenir un mélange hétérogène.",
+     "quote": "The solution was stirred at 300 rpm in a 50 ml beaker to make a heterogeneous mixture.",
+     "parameters": [
+      {
+       "name": "stirring_speed",
+       "quote": "The solution was stirred at 300 rpm in a 50 ml beaker to make a heterogeneous mixture.",
+       "value_num": 300,
+       "unit": "rpm"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "beaker",
+       "detail": "50 ml",
+       "quote": "in a 50 ml beaker"
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Ajouter le nitrate de cérium(IV) et d'ammonium au mélange hétérogène.",
+     "quote": "A total of 250 mg of ammonium cerium (IV) nitrate was added to this heterogeneous solution",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Agiter à la même vitesse pendant 10 min jusqu'au passage du jaune clair au rouge orangé.",
+     "quote": "again stirred at the same rpm for 10 min until the color of the solution changed from light yellow to orange red.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "again stirred at the same rpm for 10 min",
+       "value_num": 10,
+       "unit": "min"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "again stirred at the same rpm for 10 min",
+       "value_text": "the same rpm"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 5,
+     "action": "transfer",
+     "description": "Transvaser la solution entière dans un récipient en Téflon.",
+     "quote": "The entire solution was transferred to a Teflon vessel.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "Teflon vessel",
+       "detail": null,
+       "quote": "a Teflon vessel"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 6,
+     "action": "microwave_heating",
+     "description": "Fermer le récipient hermétiquement et irradier aux micro-ondes (MDS 6) 10 min à 180 °C.",
+     "quote": "The vessel was tightly sealed and irradiated with microwave radiation (MDS 6) for 10 min at 180°C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The vessel was tightly sealed and irradiated with microwave radiation (MDS 6) for 10 min at 180°C.",
+       "value_num": 180,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The vessel was tightly sealed and irradiated with microwave radiation (MDS 6) for 10 min at 180°C.",
+       "value_num": 10,
+       "unit": "min"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "microwave digestion system",
+       "detail": "MDS 6",
+       "quote": "microwave radiation (MDS 6)"
+      },
+      {
+       "type": "sealed Teflon vessel",
+       "detail": null,
+       "quote": "The vessel was tightly sealed"
+      }
+     ],
+     "not_stated": [
+      "power",
+      "pressure",
+      "heating_rate",
+      "autoclave_volume",
+      "fill_fraction"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "cool",
+     "description": "Laisser refroidir le mélange réactionnel à température ambiante.",
+     "quote": "The reaction mixture was allowed to cool to room temperature after completion of the reaction.",
+     "parameters": [
+      {
+       "name": "cooling",
+       "quote": "The reaction mixture was allowed to cool to room temperature after completion of the reaction.",
+       "value_text": "allowed to cool to room temperature"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 8,
+     "action": "centrifuge",
+     "description": "Centrifuger le précipité plusieurs fois.",
+     "quote": "The obtained light yellow-colored precipitate was centrifuged several times with distilled water, ethanol, and acetone to remove the impurities.",
+     "parameters": [
+      {
+       "name": "repetitions",
+       "quote": "The obtained light yellow-colored precipitate was centrifuged several times with distilled water, ethanol, and acetone to remove the impurities.",
+       "value_text": "several times"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "centrifuge_speed",
+      "duration"
+     ]
+    },
+    {
+     "order": 9,
+     "action": "wash",
+     "description": "Laver à l'eau distillée, à l'éthanol et à l'acétone.",
+     "quote": "The obtained light yellow-colored precipitate was centrifuged several times with distilled water, ethanol, and acetone to remove the impurities.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "The obtained light yellow-colored precipitate was centrifuged several times with distilled water, ethanol, and acetone to remove the impurities.",
+       "value_text": "distilled water, ethanol, and acetone"
+      },
+      {
+       "name": "repetitions",
+       "quote": "The obtained light yellow-colored precipitate was centrifuged several times with distilled water, ethanol, and acetone to remove the impurities.",
+       "value_text": "several times"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
+    },
+    {
+     "order": 10,
+     "action": "dry",
+     "description": "Sécher le produit en étuve pendant une nuit à 60 °C.",
+     "quote": "Finally, the product was kept for drying in an oven over night at 60°C.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "Finally, the product was kept for drying in an oven over night at 60°C.",
+       "value_num": 60,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "Finally, the product was kept for drying in an oven over night at 60°C.",
+       "value_text": "over night"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "Finally, the product was kept for drying in an oven over night at 60°C.",
+       "value_text": "oven"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "in an oven"
+      }
+     ],
+     "not_stated": [
+      "pressure"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_comp",
+     "technique": "XRD",
+     "instrument": "Rigaku Ultima-IV Advance X-ray Diffractometer",
+     "result": "diffractogrammes de g-C3N4, CeO2 et du composite (Fig. 1A)",
+     "quote": "The crystallographic phases were identified by XRD measurements using a Rigaku Ultima-IV Advance X-ray Diffractometer operating at 40 KV (radiation source Cu Kα, wavelength = 1.5418 Å).",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "The crystallographic phases were identified by XRD measurements using a Rigaku Ultima-IV Advance X-ray Diffractometer operating at 40 KV (radiation source Cu Kα, wavelength = 1.5418 Å).",
+       "value_text": "Cu Kα, wavelength = 1.5418 Å"
+      },
+      {
+       "name": "accelerating_voltage",
+       "quote": "operating at 40 KV",
+       "value_num": 40,
+       "unit": "kV"
+      },
+      {
+       "name": "reference_pattern",
+       "quote": "(JCPDS 81-0792)",
+       "value_text": "JCPDS 81-0792"
+      }
+     ],
+     "not_stated": [
+      "scan_range",
+      "scan_step",
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "ftir_comp",
+     "technique": "FTIR",
+     "instrument": "Thermo Fischer Nicolet iS5 FTIR instrument",
+     "result": "bandes N-H/eau, C=N, C-N et triazine du composite (Fig. 1B)",
+     "quote": "FTIR analysis was carried out with the help of Thermo Fischer Nicolet iS5 FTIR instrument.",
+     "settings": [],
+     "not_stated": [
+      "wavenumber_range",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "xps_comp",
+     "technique": "XPS",
+     "instrument": "DESA-150 electron analyzer",
+     "result": "niveaux C 1s, N 1s, O 1s et Ce 3d du composite (Fig. 3)",
+     "quote": "The XPS measurement was performed using DESA-150 electron analyzer (Staib (1253.6 eV) as radiation source.",
+     "settings": [
+      {
+       "name": "xray_source",
+       "quote": "The XPS measurement was performed using DESA-150 electron analyzer (Staib (1253.6 eV) as radiation source.",
+       "value_text": "Staib (1253.6 eV)"
+      },
+      {
+       "name": "calibration_reference",
+       "quote": "can be deconvoluted into four components including the standard reference carbon (283 eV)",
+       "value_text": "standard reference carbon (283 eV)"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "tem_comp",
+     "technique": "TEM",
+     "instrument": "FEI Technai G2 S-Twin",
+     "result": "structure lamellaire de g-C3N4 portant de petites nanoparticules sombres de CeO2 ; franges de 3,125 Å (HRTEM)",
+     "quote": "Transmission Electron Microscope (TEM) and High Resolution Transmission Electron Microscope (HRTEM) images were obtained by the Model FEI Technai G2 S-Twin",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "saed_comp",
+     "technique": "SAED",
+     "instrument": null,
+     "result": "taches brillantes et anneaux diffus",
+     "quote": "The appearance of some bright spots and the diffuse rings in the SAED pattern of CeO2/g-C3N4 corresponds to the growth of crystalline CeO2 nanoparticle on the amorphous g-C3N4 sheet",
+     "settings": [],
+     "not_stated": []
+    },
+    {
+     "id": "cv_comp",
+     "technique": "electrochemistry",
+     "instrument": "Metrohm Autolab 204 B.V.",
+     "result": "CV de g-C3N4, CeO2 et du composite sous N2 et O2",
+     "quote": "The cyclic voltammogram (CV) was performed in N2 as well as O2 saturated 0.1 M KOH solution for the three materials (g-C3N4, CeO2 and CeO2/ g-C3N4) in the potential range of −0.8 to 0.2 V at various scan rates",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "The cyclic voltammogram (CV) was performed in N2 as well as O2 saturated 0.1 M KOH solution for the three materials (g-C3N4, CeO2 and CeO2/ g-C3N4) in the potential range of −0.8 to 0.2 V at various scan rates",
+       "value_text": "N2 as well as O2 saturated 0.1 M KOH solution"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "saturated Ag/AgCl electrode"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "Pt wire"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2)",
+       "value_text": "12 μl of well-dispersed catalytic ink (~0.012 mg), GC electrode of surface area 0.07067 cm2"
+      },
+      {
+       "name": "potential_window",
+       "quote": "The cyclic voltammogram (CV) was performed in N2 as well as O2 saturated 0.1 M KOH solution for the three materials (g-C3N4, CeO2 and CeO2/ g-C3N4) in the potential range of −0.8 to 0.2 V at various scan rates",
+       "value_text": "−0.8 to 0.2 V"
+      }
+     ],
+     "not_stated": [
+      "scan_rate",
+      "current_density"
+     ]
+    },
+    {
+     "id": "lsv_comp",
+     "technique": "electrochemistry",
+     "instrument": "Metrohm Autolab 204 B.V.",
+     "result": "LSV de g-C3N4, CeO2, du composite et de Pt/C 20 % massique",
+     "quote": "linear sweep voltammetry (LSV) was recorded for the prepared materials together with commercial 20 wt% Pt/C, in O2 saturated 0.1 M KOH solution using Rotating Disk Electrode (RDE) at 1,600 RPM",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "linear sweep voltammetry (LSV) was recorded for the prepared materials together with commercial 20 wt% Pt/C, in O2 saturated 0.1 M KOH solution using Rotating Disk Electrode (RDE) at 1,600 RPM",
+       "value_text": "O2 saturated 0.1 M KOH solution"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "saturated Ag/AgCl electrode"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "Pt wire"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2)",
+       "value_text": "12 μl of well-dispersed catalytic ink (~0.012 mg), GC electrode of surface area 0.07067 cm2"
+      },
+      {
+       "name": "rotation_rate",
+       "quote": "linear sweep voltammetry (LSV) was recorded for the prepared materials together with commercial 20 wt% Pt/C, in O2 saturated 0.1 M KOH solution using Rotating Disk Electrode (RDE) at 1,600 RPM",
+       "value_text": "1,600 RPM"
+      }
+     ],
+     "not_stated": [
+      "scan_rate",
+      "current_density",
+      "potential_window"
+     ]
+    },
+    {
+     "id": "kl_comp",
+     "technique": "electrochemistry",
+     "instrument": "Metrohm Autolab 204 B.V.",
+     "result": "LSV à plusieurs vitesses de rotation et tracés de Koutecky–Levich du composite",
+     "quote": "LSVs of CeO2/g-C3N4 at different rotation speeds from 400 to 2,500 rpm were carried out with Rotating Disk Electrode (RDE) to study electron transfer kinetics during ORR process",
+     "settings": [
+      {
+       "name": "reference_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "saturated Ag/AgCl electrode"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "Pt wire"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2)",
+       "value_text": "12 μl of well-dispersed catalytic ink (~0.012 mg), GC electrode of surface area 0.07067 cm2"
+      },
+      {
+       "name": "rotation_rate",
+       "quote": "LSVs of CeO2/g-C3N4 at different rotation speeds from 400 to 2,500 rpm were carried out with Rotating Disk Electrode (RDE) to study electron transfer kinetics during ORR process",
+       "value_text": "from 400 to 2,500 rpm"
+      },
+      {
+       "name": "analysis_model",
+       "quote": "F is the Faraday constant (F = 96,485 C mol−1), D0 is the O2 diffusion coefficient (1.9 × 10−5 cm2 s−1), C0 is the bulk concentration of O2 (1.2 × 10−3 mol L−1), ν is the kinematic viscosity of the electrolyte (0.01 m2 s−1)",
+       "value_text": "Koutecky–Levich equation (F = 96,485 C mol−1; D0 = 1.9 × 10−5 cm2 s−1; C0 = 1.2 × 10−3 mol L−1; ν = 0.01 m2 s−1)"
+      }
+     ],
+     "not_stated": [
+      "electrolyte",
+      "scan_rate",
+      "current_density",
+      "potential_window"
+     ]
+    },
+    {
+     "id": "rrde_comp",
+     "technique": "electrochemistry",
+     "instrument": "Metrohm Autolab 204 B.V.",
+     "result": "électrode disque-anneau tournante (RRDE) : nombre d'électrons et formation de peroxyde de CeO2 et du composite",
+     "quote": "In RRDE, the ORR takes place at the GC disk (where the different catalysts were deposited) and the concentric Pt ring detects the peroxide production.",
+     "settings": [
+      {
+       "name": "reference_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "saturated Ag/AgCl electrode"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "Pt wire"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "About 33.3 μl of previously prepared catalyst ink was drop casted on RRDE electrode (GC disk electrode) with 5 mm diameter (S = 0.196 cm2) to make the loading the same as in RDE studies.",
+       "value_text": "33.3 μl of catalyst ink on the RRDE GC disk electrode (S = 0.196 cm2), same loading as in RDE studies"
+      },
+      {
+       "name": "analysis_model",
+       "quote": "The value of “N” is 0.25, denoting the collection efficiency which is a design parameter provided by the RRDE manufacturer.",
+       "value_text": "n and peroxide percentage from disk current ID and ring current IR; collection efficiency N = 0.25"
+      }
+     ],
+     "not_stated": [
+      "electrolyte",
+      "scan_rate",
+      "current_density",
+      "potential_window"
+     ]
+    },
+    {
+     "id": "ca_stab",
+     "technique": "electrochemistry",
+     "instrument": "Metrohm Autolab 204 B.V.",
+     "result": "chronoampérométrie de stabilité de CeO2, du composite et de Pt/C",
+     "quote": "The catalytic stability of CeO2/g-C3N4 along with commercial Pt/C and bare CeO2 were measured and compared by the Chronoamperometric response method at −0.35V vs. Ag/AgCl in 0.1 M KOH solution for 12,500 s at 1,000 rpm",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "The catalytic stability of CeO2/g-C3N4 along with commercial Pt/C and bare CeO2 were measured and compared by the Chronoamperometric response method at −0.35V vs. Ag/AgCl in 0.1 M KOH solution for 12,500 s at 1,000 rpm",
+       "value_text": "0.1 M KOH solution"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "saturated Ag/AgCl electrode"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "Pt wire"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2)",
+       "value_text": "12 μl of well-dispersed catalytic ink (~0.012 mg), GC electrode of surface area 0.07067 cm2"
+      },
+      {
+       "name": "applied_potential",
+       "quote": "The catalytic stability of CeO2/g-C3N4 along with commercial Pt/C and bare CeO2 were measured and compared by the Chronoamperometric response method at −0.35V vs. Ag/AgCl in 0.1 M KOH solution for 12,500 s at 1,000 rpm",
+       "value_text": "−0.35V vs. Ag/AgCl"
+      },
+      {
+       "name": "rotation_rate",
+       "quote": "The catalytic stability of CeO2/g-C3N4 along with commercial Pt/C and bare CeO2 were measured and compared by the Chronoamperometric response method at −0.35V vs. Ag/AgCl in 0.1 M KOH solution for 12,500 s at 1,000 rpm",
+       "value_text": "1,000 rpm"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "The catalytic stability of CeO2/g-C3N4 along with commercial Pt/C and bare CeO2 were measured and compared by the Chronoamperometric response method at −0.35V vs. Ag/AgCl in 0.1 M KOH solution for 12,500 s at 1,000 rpm",
+       "value_num": 12500,
+       "unit": "s"
+      }
+     ],
+     "not_stated": [
+      "scan_rate",
+      "current_density",
+      "potential_window"
+     ]
+    },
+    {
+     "id": "ca_meoh",
+     "technique": "electrochemistry",
+     "instrument": "Metrohm Autolab 204 B.V.",
+     "result": "chronoampérométrie de tolérance au méthanol de CeO2, du composite et de Pt/C",
+     "quote": "For methanol tolerance, test chronoamperometric measurements were performed at −0.35V vs. Ag/AgCl at 1,000 rpm in O2 saturated 0.1 M KOH solution to investigate the methanol crossover effect of CeO2, CeO2/g-C3N4 composite as well as of commercial Pt/C. A total of 25 mL of (10 wt%) 3 M methanol was injected at 600 s.",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "For methanol tolerance, test chronoamperometric measurements were performed at −0.35V vs. Ag/AgCl at 1,000 rpm in O2 saturated 0.1 M KOH solution to investigate the methanol crossover effect of CeO2, CeO2/g-C3N4 composite as well as of commercial Pt/C. A total of 25 mL of (10 wt%) 3 M methanol was injected at 600 s.",
+       "value_text": "O2 saturated 0.1 M KOH solution"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "saturated Ag/AgCl electrode"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "Pt wire"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2)",
+       "value_text": "12 μl of well-dispersed catalytic ink (~0.012 mg), GC electrode of surface area 0.07067 cm2"
+      },
+      {
+       "name": "applied_potential",
+       "quote": "For methanol tolerance, test chronoamperometric measurements were performed at −0.35V vs. Ag/AgCl at 1,000 rpm in O2 saturated 0.1 M KOH solution to investigate the methanol crossover effect of CeO2, CeO2/g-C3N4 composite as well as of commercial Pt/C. A total of 25 mL of (10 wt%) 3 M methanol was injected at 600 s.",
+       "value_text": "−0.35V vs. Ag/AgCl"
+      },
+      {
+       "name": "rotation_rate",
+       "quote": "For methanol tolerance, test chronoamperometric measurements were performed at −0.35V vs. Ag/AgCl at 1,000 rpm in O2 saturated 0.1 M KOH solution to investigate the methanol crossover effect of CeO2, CeO2/g-C3N4 composite as well as of commercial Pt/C. A total of 25 mL of (10 wt%) 3 M methanol was injected at 600 s.",
+       "value_text": "1,000 rpm"
+      },
+      {
+       "name": "reactant_concentration",
+       "quote": "For methanol tolerance, test chronoamperometric measurements were performed at −0.35V vs. Ag/AgCl at 1,000 rpm in O2 saturated 0.1 M KOH solution to investigate the methanol crossover effect of CeO2, CeO2/g-C3N4 composite as well as of commercial Pt/C. A total of 25 mL of (10 wt%) 3 M methanol was injected at 600 s.",
+       "value_text": "25 mL of (10 wt%) 3 M methanol injected at 600 s"
+      }
+     ],
+     "not_stated": [
+      "scan_rate",
+      "current_density",
+      "potential_window"
+     ]
+    },
+    {
+     "id": "eis_comp",
+     "technique": "electrochemistry",
+     "instrument": "CH660E electrochemical work station",
+     "result": "diagrammes de Nyquist de CeO2, du composite et de Pt/C ajustés par un circuit équivalent",
+     "quote": "Figure 10 shows the Nyquist plots over the frequency range 100–1 MHz for the CeO2/g-C3N4 modified electrode in 0.1 M KOH solution with an AC amplitude of 0.1 V at an initial potential of −0.210 V.",
+     "settings": [
+      {
+       "name": "electrolyte",
+       "quote": "Figure 10 shows the Nyquist plots over the frequency range 100–1 MHz for the CeO2/g-C3N4 modified electrode in 0.1 M KOH solution with an AC amplitude of 0.1 V at an initial potential of −0.210 V.",
+       "value_text": "0.1 M KOH solution"
+      },
+      {
+       "name": "reference_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "saturated Ag/AgCl electrode"
+      },
+      {
+       "name": "counter_electrode",
+       "quote": "saturated Ag/AgCl electrode, Pt wire, and modified glassy carbon (GC) electrode were used as reference, counter, and working electrode respectively",
+       "value_text": "Pt wire"
+      },
+      {
+       "name": "active_mass_loading",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2)",
+       "value_text": "12 μl of well-dispersed catalytic ink (~0.012 mg), GC electrode of surface area 0.07067 cm2"
+      },
+      {
+       "name": "frequency_range",
+       "quote": "Figure 10 shows the Nyquist plots over the frequency range 100–1 MHz for the CeO2/g-C3N4 modified electrode in 0.1 M KOH solution with an AC amplitude of 0.1 V at an initial potential of −0.210 V.",
+       "value_text": "100–1 MHz"
+      },
+      {
+       "name": "ac_amplitude",
+       "quote": "Figure 10 shows the Nyquist plots over the frequency range 100–1 MHz for the CeO2/g-C3N4 modified electrode in 0.1 M KOH solution with an AC amplitude of 0.1 V at an initial potential of −0.210 V.",
+       "value_text": "0.1 V"
+      },
+      {
+       "name": "applied_potential",
+       "quote": "Figure 10 shows the Nyquist plots over the frequency range 100–1 MHz for the CeO2/g-C3N4 modified electrode in 0.1 M KOH solution with an AC amplitude of 0.1 V at an initial potential of −0.210 V.",
+       "value_text": "initial potential of −0.210 V"
+      },
+      {
+       "name": "analysis_model",
+       "quote": "The equivalent circuit consists of charge transfer resistance (Rct), solution resistance (Rs), pseudocapacitance (CF), Warburg impedance (Zw), and double layer capacitance (Cdl)",
+       "value_text": "equivalent circuit with Rct, Rs, CF, Zw and Cdl"
+      }
+     ],
+     "not_stated": [
+      "scan_rate",
+      "current_density",
+      "potential_window"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "product_identity",
+     "quote": "From these findings it can be concluded that CeO2 nanoparticles are successfully embedded into in-planes of g-C3N4 sheets",
+     "value_text": "CeO2 nanoparticles successfully embedded into in-planes of g-C3N4 sheets"
+    },
+    {
+     "property": "elemental_composition_weight_ratio_gC3N4_CeO2",
+     "quote": "even though the weight ratio of g-C3N4 and CeO2 are nearly 1:1 in the composite",
+     "value_text": "nearly 1:1",
+     "measured_by": "not_stated"
+    },
+    {
+     "property": "visual_appearance",
+     "quote": "The obtained light yellow-colored precipitate was centrifuged several times",
+     "value_text": "light yellow-colored precipitate"
+    },
+    {
+     "property": "xrd_peak_position_gC3N4_100_absent",
+     "quote": "the XRD pattern shows an absence of peak at 13.12° even though the weight ratio of g-C3N4 and CeO2 are nearly 1:1 in the composite",
+     "value_text": "absence of the g-C3N4 peak at 13.12°",
+     "measured_by": "xrd_comp"
+    },
+    {
+     "property": "xrd_peak_position_CeO2_111_shift",
+     "quote": "The peak corresponding to the (111) plane of CeO2, which coincides with the highest intensity peak of bare g-C3N4, has been shifted to higher 2θ value, and the intensity of the peak has also been increased.",
+     "value_text": "shifted to higher 2θ value, intensity increased",
+     "measured_by": "xrd_comp"
+    },
+    {
+     "property": "phase_CeO2_bare",
+     "quote": "The diffraction peaks of the pure cubic fluorite structure of CeO2 were indexed to the (111), (200), (220), and (311) planes (JCPDS 81-0792)",
+     "value_text": "pure cubic fluorite structure, (111), (200), (220), (311) planes",
+     "measured_by": "xrd_comp"
+    },
+    {
+     "property": "ftir_band_NH_water_stretch",
+     "quote": "A broad band between 3,000 and 3,500 cm−1 was noticed in the composite, which can be attributed to stretching vibration of N-H and surface adsorbed water molecules.",
+     "value_text": "broad band between 3,000 and 3,500 cm−1",
+     "measured_by": "ftir_comp"
+    },
+    {
+     "property": "ftir_band_CN_stretch_1",
+     "quote": "The absorption peaks at 1,572 and 1,632 cm−1",
+     "value_num": 1572,
+     "unit": "cm−1",
+     "measured_by": "ftir_comp"
+    },
+    {
+     "property": "ftir_band_CN_stretch_2",
+     "quote": "The absorption peaks at 1,572 and 1,632 cm−1",
+     "value_num": 1632,
+     "unit": "cm−1",
+     "measured_by": "ftir_comp"
+    },
+    {
+     "property": "ftir_band_aromatic_CN_1",
+     "quote": "for aromatic C-N stretching, peaks at 1,253, 1,320, and 1,425 cm−1 were observed",
+     "value_num": 1253,
+     "unit": "cm−1",
+     "measured_by": "ftir_comp"
+    },
+    {
+     "property": "ftir_band_aromatic_CN_2",
+     "quote": "for aromatic C-N stretching, peaks at 1,253, 1,320, and 1,425 cm−1 were observed",
+     "value_num": 1320,
+     "unit": "cm−1",
+     "measured_by": "ftir_comp"
+    },
+    {
+     "property": "ftir_band_aromatic_CN_3",
+     "quote": "for aromatic C-N stretching, peaks at 1,253, 1,320, and 1,425 cm−1 were observed",
+     "value_num": 1425,
+     "unit": "cm−1",
+     "measured_by": "ftir_comp"
+    },
+    {
+     "property": "ftir_band_triazine_breathing",
+     "quote": "The main structural peaks at 808 cm−1 corresponded to the breathing mode of triazine units of g-C3N4",
+     "value_num": 808,
+     "unit": "cm−1",
+     "measured_by": "ftir_comp"
+    },
+    {
+     "property": "morphology",
+     "quote": "CeO2/g-C3N4 composite showed a layered structure of g-C3N4 (Figure 2a), and several small dark images of CeO2 nanoparticle appeared in the TEM image (Figure 2b).",
+     "value_text": "layered structure of g-C3N4 with several small dark CeO2 nanoparticles",
+     "measured_by": "tem_comp"
+    },
+    {
+     "property": "crystallinity",
+     "quote": "The appearance of some bright spots and the diffuse rings in the SAED pattern of CeO2/g-C3N4 corresponds to the growth of crystalline CeO2 nanoparticle on the amorphous g-C3N4 sheet",
+     "value_text": "crystalline CeO2 nanoparticles on amorphous g-C3N4 sheet",
+     "measured_by": "saed_comp"
+    },
+    {
+     "property": "d_spacing_CeO2_111",
+     "quote": "The fringe spacing was measureed to be 3.125 Å, which corresponds to the (111) lattice plane of the cubic fluorite CeO2 structure",
+     "value_num": 3.125,
+     "unit": "Å",
+     "measured_by": "tem_comp"
+    },
+    {
+     "property": "xps_binding_energy_C1s_reference_carbon",
+     "quote": "can be deconvoluted into four components including the standard reference carbon (283 eV)",
+     "value_num": 283,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_C1s_sp2_CC",
+     "quote": "The peak at 284.8 eV corresponds to sp2-bonded C-C",
+     "value_num": 284.8,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_C1s_CN",
+     "quote": "The peaks at 286.3 and 288.5 eV (Guan et al., ) are ascribed to C = N and N-C-N in g-C3N4 respectively",
+     "value_num": 286.3,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_C1s_NCN",
+     "quote": "The peaks at 286.3 and 288.5 eV (Guan et al., ) are ascribed to C = N and N-C-N in g-C3N4 respectively",
+     "value_num": 288.5,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_N1s_pyridinic",
+     "quote": "The main peak of N 1s at 398.5 eV is assigned to sp2 nitrogen (C=N-C) (pyridinic) present in triazine rings",
+     "value_num": 398.5,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_N1s_pyrrolic",
+     "quote": "while the peak at 399.6 eV arises from the tertiary nitrogen bonded to carbon atoms in the form of N–(C)3 (pyrollic)",
+     "value_num": 399.6,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_N1s_graphitic",
+     "quote": "The peak at 401.1 eV can be ascribed to g (C-N-H) (ghaphitic)",
+     "value_num": 401.1,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "elemental_composition_N_total",
+     "quote": "The % of N in total spectrum is calculated to be 7.09%.",
+     "value_num": 7.09,
+     "unit": "%",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "elemental_composition_N_pyridinic_share",
+     "quote": "The percentages of different levels of nitrogen in the system were 50.6, 34.48, and 15.05% for pyridinic, pyrrolic, and graphitic nitrogen, respectively.",
+     "value_num": 50.6,
+     "unit": "%",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "elemental_composition_N_pyrrolic_share",
+     "quote": "The percentages of different levels of nitrogen in the system were 50.6, 34.48, and 15.05% for pyridinic, pyrrolic, and graphitic nitrogen, respectively.",
+     "value_num": 34.48,
+     "unit": "%",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "elemental_composition_N_graphitic_share",
+     "quote": "The percentages of different levels of nitrogen in the system were 50.6, 34.48, and 15.05% for pyridinic, pyrrolic, and graphitic nitrogen, respectively.",
+     "value_num": 15.05,
+     "unit": "%",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_O1s_CeO2",
+     "quote": "The O 1s spectrum is deconvoluted at 529.2, 531.0, and 533.2 eV for CeO2, COOH and OH respectively.",
+     "value_num": 529.2,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_O1s_COOH",
+     "quote": "The O 1s spectrum is deconvoluted at 529.2, 531.0, and 533.2 eV for CeO2, COOH and OH respectively.",
+     "value_num": 531.0,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_O1s_OH",
+     "quote": "The O 1s spectrum is deconvoluted at 529.2, 531.0, and 533.2 eV for CeO2, COOH and OH respectively.",
+     "value_num": 533.2,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_Ce3d5_2_Ce4plus",
+     "quote": "The two peaks at 881.6 and 884.7 eV can be attributed to 3d5/2 of Ce4+ and Ce3+ core electrons respectively. Further peaks at 897.5 and 900.1 eV can be ascribed to 3d3/2 of Ce3+ and Ce4+, respectively",
+     "value_num": 881.6,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_Ce3d5_2_Ce3plus",
+     "quote": "The two peaks at 881.6 and 884.7 eV can be attributed to 3d5/2 of Ce4+ and Ce3+ core electrons respectively. Further peaks at 897.5 and 900.1 eV can be ascribed to 3d3/2 of Ce3+ and Ce4+, respectively",
+     "value_num": 884.7,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_Ce3d3_2_Ce3plus",
+     "quote": "The two peaks at 881.6 and 884.7 eV can be attributed to 3d5/2 of Ce4+ and Ce3+ core electrons respectively. Further peaks at 897.5 and 900.1 eV can be ascribed to 3d3/2 of Ce3+ and Ce4+, respectively",
+     "value_num": 897.5,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "xps_binding_energy_Ce3d3_2_Ce4plus",
+     "quote": "The two peaks at 881.6 and 884.7 eV can be attributed to 3d5/2 of Ce4+ and Ce3+ core electrons respectively. Further peaks at 897.5 and 900.1 eV can be ascribed to 3d3/2 of Ce3+ and Ce4+, respectively",
+     "value_num": 900.1,
+     "unit": "eV",
+     "measured_by": "xps_comp"
+    },
+    {
+     "property": "voltage_window_potential_no_reduction_peak_N2_saturated_CV",
+     "quote": "No reduction peaks were observed in the N2-saturated condition.",
+     "value_text": "no reduction peaks in the N2-saturated condition",
+     "measured_by": "cv_comp"
+    },
+    {
+     "property": "voltage_window_potential_onset_CV",
+     "quote": "intense reduction peaks of g-C3N4 (Jiao et al., ), CeO2, and CeO2/g-C3N4 at Eonset −0.3, −0.24, and −0.17 V vs. Ag/AgCl, respectively, were recorded",
+     "value_num": -0.17,
+     "unit": "V vs. Ag/AgCl",
+     "measured_by": "cv_comp"
+    },
+    {
+     "property": "voltage_window_potential_onset_LSV",
+     "quote": "the onset potential was observed to be −0.3, −0.23, and −0.2 V vs. Ag/AgCl for g-C3N4, CeO2, and CeO2/g-C3N4, respectively",
+     "value_num": -0.2,
+     "unit": "V vs. Ag/AgCl",
+     "measured_by": "lsv_comp"
+    },
+    {
+     "property": "voltage_window_potential_onset_shift_vs_CeO2",
+     "quote": "The shift in onset potential of 30 mV for CeO2/g-C3N4 as compared to CeO2",
+     "value_num": 30,
+     "unit": "mV",
+     "measured_by": "lsv_comp"
+    },
+    {
+     "property": "voltage_window_potential_onset_shift_vs_gC3N4",
+     "quote": "A positive shift of onset potential (100 mV) between CeO2/g-C3N4 (Eonset = −0.2V vs. Ag/AgCl) and g-C3N4",
+     "value_num": 100,
+     "unit": "mV",
+     "measured_by": "lsv_comp"
+    },
+    {
+     "property": "voltage_window_potential_E_half",
+     "quote": "We observed a small improvement in the E1/2 for CeO2/g-C3N4 composite (E1/2 is −0.383 V) as compared to their individual counterparts (E1/2 is −0.383 V and −0.388 V for bare CeO2 and g-C3N4, respectively)",
+     "value_num": -0.383,
+     "unit": "V vs. Ag/AgCl",
+     "measured_by": "lsv_comp"
+    },
+    {
+     "property": "limiting_current_density_minus0p8V_1600rpm",
+     "quote": "Figure 4 (A) CV study of g-C3N4, CeO2, CeO2/g-C3N4, (B) LSV study of g-C3N4, CeO2, CeO2/g-C3N4 and Pt/C at 1,600 rpm.",
+     "from_figure": "Fig. 4B",
+     "value_num": -1.4,
+     "unit": "mA cm−2",
+     "measured_by": "lsv_comp"
+    },
+    {
+     "property": "electron_transfer_number_KL",
+     "quote": "The n value for the CeO2/g-C3N4 nano-composite was calculated around 3",
+     "value_num": 3,
+     "measured_by": "kl_comp"
+    },
+    {
+     "property": "electron_transfer_number_KL_minus0p65V",
+     "quote": "Figure 5 (A) RDE of CeO2/g-C3N4 at various rotation rates, (B) K-L plot of CeO2/g-C3N4 at different potentials.",
+     "from_figure": "Fig. 5B",
+     "value_num": 2.92,
+     "measured_by": "kl_comp"
+    },
+    {
+     "property": "electron_transfer_number_KL_minus0p70V",
+     "quote": "Figure 5 (A) RDE of CeO2/g-C3N4 at various rotation rates, (B) K-L plot of CeO2/g-C3N4 at different potentials.",
+     "from_figure": "Fig. 5B",
+     "value_num": 2.79,
+     "measured_by": "kl_comp"
+    },
+    {
+     "property": "electron_transfer_number_KL_minus0p75V",
+     "quote": "Figure 5 (A) RDE of CeO2/g-C3N4 at various rotation rates, (B) K-L plot of CeO2/g-C3N4 at different potentials.",
+     "from_figure": "Fig. 5B",
+     "value_num": 2.65,
+     "measured_by": "kl_comp"
+    },
+    {
+     "property": "electron_transfer_number_KL_minus0p80V",
+     "quote": "Figure 5 (A) RDE of CeO2/g-C3N4 at various rotation rates, (B) K-L plot of CeO2/g-C3N4 at different potentials.",
+     "from_figure": "Fig. 5B",
+     "value_num": 2.45,
+     "measured_by": "kl_comp"
+    },
+    {
+     "property": "electron_transfer_number_RRDE_minus0p4V",
+     "quote": "At lower over potential regions (−0.4V vs. Ag/AgCl), the average value of “n” for CeO2, CeO2/g-C3N4 were 2.71, 3.2, respectively.",
+     "value_num": 3.2,
+     "measured_by": "rrde_comp"
+    },
+    {
+     "property": "electron_transfer_number_RRDE_minus0p6V",
+     "quote": "At higher over potential regions (−0.6 V vs. Ag/AgCl) the “n” of CeO2 and CeO2/g-C3N4 remains constant, i.e., 2.57 and 3.2 respectively",
+     "value_num": 3.2,
+     "measured_by": "rrde_comp"
+    },
+    {
+     "property": "peroxide_yield_minus0p4V",
+     "quote": "Figure 7 (A) Electron transfer number, (B) % of HO2- formation of CeO2 and CeO2/g-C3N4.",
+     "from_figure": "Fig. 7B",
+     "value_num": 44,
+     "unit": "%",
+     "measured_by": "rrde_comp"
+    },
+    {
+     "property": "peroxide_yield_minus0p6V",
+     "quote": "Figure 7 (A) Electron transfer number, (B) % of HO2- formation of CeO2 and CeO2/g-C3N4.",
+     "from_figure": "Fig. 7B",
+     "value_num": 50,
+     "unit": "%",
+     "measured_by": "rrde_comp"
+    },
+    {
+     "property": "retention_stability_current_decrease_12500s",
+     "quote": "after 12,500 s, relative current value for bare CeO2 and Pt/C decreased by 53 and 40% respectively, while in case of CeO2/g-C3N4 composite a 24% decrease in the relative current was observed.",
+     "value_num": 24,
+     "unit": "%",
+     "measured_by": "ca_stab"
+    },
+    {
+     "property": "retention_stability_current_retained_12500s",
+     "quote": "Figure 8 (Current–time) chronoamperometric responses for ORR on CeO2, CeO2/g-C3N4 and commercial Pt/C at −0.35 V at a rotational rate of 1,000 rpm.",
+     "from_figure": "Fig. 8",
+     "value_num": 76,
+     "unit": "%",
+     "measured_by": "ca_stab"
+    },
+    {
+     "property": "retention_stability_current_decrease_methanol",
+     "quote": "there was a 34% and 29% decrease in relative current for CeO2, Pt/C, respectively, whereas only a 10% decrease in relative current was observed for the CeO2/g-C3N4 composite system",
+     "value_num": 10,
+     "unit": "%",
+     "measured_by": "ca_meoh"
+    },
+    {
+     "property": "retention_stability_current_retained_methanol",
+     "quote": "Figure 9 Methanol tolerance test of CeO2, CeO2/g-C3N4, and commercial Pt/C.",
+     "from_figure": "Fig. 9",
+     "value_num": 90,
+     "unit": "%",
+     "measured_by": "ca_meoh"
+    },
+    {
+     "property": "impedance_resistance_Rs",
+     "quote": "The calculated Rs for the CeO2/g-C3N4 composite is 36.5 Ω.",
+     "value_num": 36.5,
+     "unit": "Ω",
+     "measured_by": "eis_comp"
+    },
+    {
+     "property": "impedance_resistance_Rct",
+     "quote": "the calculated Rct of the CeO2/g-C3N4 is 150 Ω whereas the Rct for CeO2 and Pt/C was found to be 534.4 and 77.3 Ω, respectively",
+     "value_num": 150,
+     "unit": "Ω",
+     "measured_by": "eis_comp"
+    },
+    {
+     "property": "voltage_window_potential_onset_CV_CeO2_bare",
+     "quote": "intense reduction peaks of g-C3N4 (Jiao et al., ), CeO2, and CeO2/g-C3N4 at Eonset −0.3, −0.24, and −0.17 V vs. Ag/AgCl, respectively, were recorded",
+     "value_num": -0.24,
+     "unit": "V vs. Ag/AgCl",
+     "measured_by": "cv_comp"
+    },
+    {
+     "property": "voltage_window_potential_onset_LSV_CeO2_bare",
+     "quote": "the onset potential was observed to be −0.3, −0.23, and −0.2 V vs. Ag/AgCl for g-C3N4, CeO2, and CeO2/g-C3N4, respectively",
+     "value_num": -0.23,
+     "unit": "V vs. Ag/AgCl",
+     "measured_by": "lsv_comp"
+    },
+    {
+     "property": "voltage_window_potential_E_half_CeO2_bare",
+     "quote": "We observed a small improvement in the E1/2 for CeO2/g-C3N4 composite (E1/2 is −0.383 V) as compared to their individual counterparts (E1/2 is −0.383 V and −0.388 V for bare CeO2 and g-C3N4, respectively)",
+     "value_num": -0.383,
+     "unit": "V vs. Ag/AgCl",
+     "measured_by": "lsv_comp"
+    },
+    {
+     "property": "limiting_current_density_minus0p8V_1600rpm_CeO2_bare",
+     "quote": "Figure 4 (A) CV study of g-C3N4, CeO2, CeO2/g-C3N4, (B) LSV study of g-C3N4, CeO2, CeO2/g-C3N4 and Pt/C at 1,600 rpm.",
+     "from_figure": "Fig. 4B",
+     "value_num": -1.4,
+     "unit": "mA cm−2",
+     "measured_by": "lsv_comp"
+    },
+    {
+     "property": "limiting_current_density_minus0p8V_1600rpm_PtC_commercial",
+     "quote": "Figure 4 (A) CV study of g-C3N4, CeO2, CeO2/g-C3N4, (B) LSV study of g-C3N4, CeO2, CeO2/g-C3N4 and Pt/C at 1,600 rpm.",
+     "from_figure": "Fig. 4B",
+     "value_num": -4.3,
+     "unit": "mA cm−2",
+     "measured_by": "lsv_comp"
+    },
+    {
+     "property": "electron_transfer_number_RRDE_minus0p4V_CeO2_bare",
+     "quote": "At lower over potential regions (−0.4V vs. Ag/AgCl), the average value of “n” for CeO2, CeO2/g-C3N4 were 2.71, 3.2, respectively.",
+     "value_num": 2.71,
+     "measured_by": "rrde_comp"
+    },
+    {
+     "property": "electron_transfer_number_RRDE_minus0p6V_CeO2_bare",
+     "quote": "At higher over potential regions (−0.6 V vs. Ag/AgCl) the “n” of CeO2 and CeO2/g-C3N4 remains constant, i.e., 2.57 and 3.2 respectively",
+     "value_num": 2.57,
+     "measured_by": "rrde_comp"
+    },
+    {
+     "property": "peroxide_yield_minus0p4V_CeO2_bare",
+     "quote": "Figure 7 (A) Electron transfer number, (B) % of HO2- formation of CeO2 and CeO2/g-C3N4.",
+     "from_figure": "Fig. 7B",
+     "value_num": 64,
+     "unit": "%",
+     "measured_by": "rrde_comp"
+    },
+    {
+     "property": "peroxide_yield_minus0p6V_CeO2_bare",
+     "quote": "Figure 7 (A) Electron transfer number, (B) % of HO2- formation of CeO2 and CeO2/g-C3N4.",
+     "from_figure": "Fig. 7B",
+     "value_num": 70,
+     "unit": "%",
+     "measured_by": "rrde_comp"
+    },
+    {
+     "property": "retention_stability_current_decrease_12500s_CeO2_bare",
+     "quote": "after 12,500 s, relative current value for bare CeO2 and Pt/C decreased by 53 and 40% respectively, while in case of CeO2/g-C3N4 composite a 24% decrease in the relative current was observed.",
+     "value_num": 53,
+     "unit": "%",
+     "measured_by": "ca_stab"
+    },
+    {
+     "property": "retention_stability_current_decrease_12500s_PtC_commercial",
+     "quote": "after 12,500 s, relative current value for bare CeO2 and Pt/C decreased by 53 and 40% respectively, while in case of CeO2/g-C3N4 composite a 24% decrease in the relative current was observed.",
+     "value_num": 40,
+     "unit": "%",
+     "measured_by": "ca_stab"
+    },
+    {
+     "property": "retention_stability_current_retained_12500s_CeO2_bare",
+     "quote": "Figure 8 (Current–time) chronoamperometric responses for ORR on CeO2, CeO2/g-C3N4 and commercial Pt/C at −0.35 V at a rotational rate of 1,000 rpm.",
+     "from_figure": "Fig. 8",
+     "value_num": 47,
+     "unit": "%",
+     "measured_by": "ca_stab"
+    },
+    {
+     "property": "retention_stability_current_retained_12500s_PtC_commercial",
+     "quote": "Figure 8 (Current–time) chronoamperometric responses for ORR on CeO2, CeO2/g-C3N4 and commercial Pt/C at −0.35 V at a rotational rate of 1,000 rpm.",
+     "from_figure": "Fig. 8",
+     "value_num": 59,
+     "unit": "%",
+     "measured_by": "ca_stab"
+    },
+    {
+     "property": "retention_stability_current_decrease_methanol_CeO2_bare",
+     "quote": "there was a 34% and 29% decrease in relative current for CeO2, Pt/C, respectively, whereas only a 10% decrease in relative current was observed for the CeO2/g-C3N4 composite system",
+     "value_num": 34,
+     "unit": "%",
+     "measured_by": "ca_meoh"
+    },
+    {
+     "property": "retention_stability_current_decrease_methanol_PtC_commercial",
+     "quote": "there was a 34% and 29% decrease in relative current for CeO2, Pt/C, respectively, whereas only a 10% decrease in relative current was observed for the CeO2/g-C3N4 composite system",
+     "value_num": 29,
+     "unit": "%",
+     "measured_by": "ca_meoh"
+    },
+    {
+     "property": "retention_stability_current_retained_methanol_CeO2_bare",
+     "quote": "Figure 9 Methanol tolerance test of CeO2, CeO2/g-C3N4, and commercial Pt/C.",
+     "from_figure": "Fig. 9",
+     "value_num": 66,
+     "unit": "%",
+     "measured_by": "ca_meoh"
+    },
+    {
+     "property": "retention_stability_current_retained_methanol_PtC_commercial",
+     "quote": "Figure 9 Methanol tolerance test of CeO2, CeO2/g-C3N4, and commercial Pt/C.",
+     "from_figure": "Fig. 9",
+     "value_num": 71,
+     "unit": "%",
+     "measured_by": "ca_meoh"
+    },
+    {
+     "property": "impedance_resistance_Rct_CeO2_bare",
+     "quote": "the calculated Rct of the CeO2/g-C3N4 is 150 Ω whereas the Rct for CeO2 and Pt/C was found to be 534.4 and 77.3 Ω, respectively",
+     "value_num": 534.4,
+     "unit": "Ω",
+     "measured_by": "eis_comp"
+    },
+    {
+     "property": "impedance_resistance_Rct_PtC_commercial",
+     "quote": "the calculated Rct of the CeO2/g-C3N4 is 150 Ω whereas the Rct for CeO2 and Pt/C was found to be 534.4 and 77.3 Ω, respectively",
+     "value_num": 77.3,
+     "unit": "Ω",
+     "measured_by": "eis_comp"
+    }
+   ],
+   "missing_fields": [
+    "rendement",
+    "puissance micro-ondes",
+    "volume du récipient en Téflon",
+    "vitesse de centrifugation"
+   ]
+  },
+  {
+   "label": "GC_electrode_RDE",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "device",
+   "material": {
+    "name": "glassy carbon RDE modified with CeO2/g-C3N4 catalyst ink",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "methods": [
+    "device_fabrication"
+   ],
+   "method": "encre catalytique (catalyseur, isopropanol, eau, Nafion) déposée à la goutte sur une électrode de carbone vitreux",
+   "quote": "For the preparation of catalytic ink 5 mg of as synthesized electrocatalyst was dispersed in 2 ml isopropanol, 3 ml double distilled H2O, and 25 micro liter Nafion solution (as binder) in an ultrasonic bath for 30 min",
+   "scale": null,
+   "succeeded": true,
+   "not_stated": [
+    "yield"
+   ],
+   "reagents": [
+    {
+     "name": "as-synthesized electrocatalyst (CeO2_gC3N4)",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 5,
+     "unit": "mg",
+     "quote": "5 mg of as synthesized electrocatalyst was dispersed"
+    },
+    {
+     "name": "isopropanol",
+     "formula": "C3H8O",
+     "role": "solvent",
+     "amount": 2,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "2 ml isopropanol"
+    },
+    {
+     "name": "double distilled water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 3,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "3 ml double distilled H2O"
+    },
+    {
+     "name": "Nafion solution",
+     "formula": null,
+     "role": "binder",
+     "amount": 25,
+     "unit": "μL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "25 micro liter Nafion solution (as binder)"
+    },
+    {
+     "name": "pre-cleaned glassy carbon electrode",
+     "formula": null,
+     "role": "substrate",
+     "quote": "Synthesized electrocatalyst material was loaded on a pre-cleaned GC electrode during preparation of the working electrode"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "sonicate",
+     "description": "Disperser le catalyseur dans l'isopropanol, l'eau et le Nafion dans un bain à ultrasons.",
+     "quote": "For the preparation of catalytic ink 5 mg of as synthesized electrocatalyst was dispersed in 2 ml isopropanol, 3 ml double distilled H2O, and 25 micro liter Nafion solution (as binder) in an ultrasonic bath for 30 min",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "For the preparation of catalytic ink 5 mg of as synthesized electrocatalyst was dispersed in 2 ml isopropanol, 3 ml double distilled H2O, and 25 micro liter Nafion solution (as binder) in an ultrasonic bath for 30 min",
+       "value_num": 30,
+       "unit": "min"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "ultrasonic bath",
+       "detail": null,
+       "quote": "in an ultrasonic bath for 30 min"
+      }
+     ],
+     "not_stated": [
+      "power"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "drop_cast",
+     "description": "Déposer 12 μl d'encre dispersée (~0,012 mg) sur l'électrode de carbone vitreux polie.",
+     "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2).",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2).",
+       "value_num": 12,
+       "unit": "μL"
+      },
+      {
+       "name": "mass",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2).",
+       "value_num": 0.012,
+       "unit": "mg"
+      },
+      {
+       "name": "dimension",
+       "quote": "About 12 μl of well-dispersed catalytic ink (~0.012 mg) was drop casted onto the polished GC electrode of surface area (0.07067 cm2).",
+       "value_num": 0.07067,
+       "unit": "cm2"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "polished glassy carbon electrode",
+       "detail": "surface area 0.07067 cm2",
+       "quote": "the polished GC electrode of surface area (0.07067 cm2)"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 3,
+     "action": "dry",
+     "description": "Sécher l'électrode modifiée en étuve sous vide pendant 3 h.",
+     "quote": "The modified glassy carbon electrode was dried in a vacuum oven for 3 h.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The modified glassy carbon electrode was dried in a vacuum oven for 3 h.",
+       "value_num": 3,
+       "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "The modified glassy carbon electrode was dried in a vacuum oven for 3 h.",
+       "value_text": "vacuum oven"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "vacuum oven",
+       "detail": null,
+       "quote": "in a vacuum oven"
+      }
+     ],
+     "not_stated": [
+      "temperature",
+      "pressure"
+     ]
+    }
+   ],
+   "outcomes": [],
+   "missing_fields": [
+    "polissage et nettoyage de l'électrode"
+   ]
+  },
+  {
+   "label": "GC_electrode_RRDE",
+   "parent": "GC_electrode_RDE",
+   "kind": "device",
+   "material": {
+    "name": "glassy carbon RRDE disk modified with catalyst ink",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": null
+   },
+   "quote": "About 33.3 μl of previously prepared catalyst ink was drop casted on RRDE electrode (GC disk electrode) with 5 mm diameter (S = 0.196 cm2) to make the loading the same as in RDE studies.",
+   "succeeded": true,
+   "variations": [
+    {
+     "parameter": "volume",
+     "step_order": 2,
+     "value_num": 33.3,
+     "unit": "μL",
+     "parent_value": "12 μL",
+     "quote": "About 33.3 μl of previously prepared catalyst ink was drop casted on RRDE electrode (GC disk electrode) with 5 mm diameter (S = 0.196 cm2) to make the loading the same as in RDE studies."
+    },
+    {
+     "parameter": "dimension",
+     "step_order": 2,
+     "value_num": 0.196,
+     "unit": "cm2",
+     "parent_value": "0.07067 cm2",
+     "quote": "About 33.3 μl of previously prepared catalyst ink was drop casted on RRDE electrode (GC disk electrode) with 5 mm diameter (S = 0.196 cm2) to make the loading the same as in RDE studies."
+    }
+   ],
+   "outcomes": []
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare du g-C3N4 par chauffage de la mélamine à 520 °C, puis un nanocomposite CeO2/g-C3N4 en une seule étape : le g-C3N4 est dispersé dans le 1,4-butanediol avec du nitrate de cérium(IV) et d'ammonium, puis chauffé 10 min à 180 °C dans un réacteur micro-ondes fermé. Le composite est comparé à CeO2 nu, à g-C3N4 et à Pt/C commercial pour la réduction de l'oxygène en milieu KOH 0,1 M (CV, LSV sur disque tournant, RRDE, stabilité, tolérance au méthanol, impédance).",
+   "quote": "Ceria (CeO2) embedded on g-C3N4 nanocomposite was synthesized by a single-step microwave-mediated solvothermal method."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir si l'association de CeO2, mauvais conducteur, à un support carboné azoté (g-C3N4) améliore l'activité et la stabilité pour la réduction de l'oxygène par rapport à CeO2 seul, et si la réaction suit la voie à 2 ou à 4 électrons."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Aucun paramètre de synthèse n'est balayé : une seule composition de composite (50 mg de g-C3N4 pour 250 mg de sel de cérium, 180 °C, 10 min) est préparée. Les comparaisons portent sur la nature du catalyseur (g-C3N4, CeO2, composite, Pt/C), pour attribuer le gain d'activité à l'interaction entre CeO2 et les azotes pyridiniques du g-C3N4."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "La seule branche est la préparation de l'électrode à disque-anneau (RRDE) : 33,3 μl d'encre au lieu de 12 μl, sur un disque de 0,196 cm2 au lieu de 0,07067 cm2, pour garder la même charge de catalyseur que sur l'électrode à disque seul."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "CeO2_gC3N4",
+   "text": "Par rapport à CeO2 nu, le composite décale le potentiel de début de réduction de 30 mV vers les valeurs positives, augmente le nombre d'électrons échangés en RRDE (3,2 contre 2,6 à 2,7), réduit la part de peroxyde (≈ 44–50 % contre ≈ 64–70 %), perd moins de courant en 12 500 s (24 % contre 53 %) et résiste mieux au méthanol (10 % contre 34 %). Le courant limite en LSV reste en revanche du même ordre que celui de CeO2 et bien inférieur à celui de Pt/C.",
+   "quote": "An enhancement of reaction kinetics toward the 4-electron ORR pathway is clearly observed from CeO2 to CeO2/ g-C3N4."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "CeO2_gC3N4",
+   "text": "Les auteurs concluent que le composite, riche en azote pyridinique (50,6 % de l'azote), est un meilleur électrocatalyseur de l'ORR que CeO2 nu, plus stable et plus tolérant au méthanol que Pt/C commercial.",
+   "quote": "The composites have shown excellent ORR stability and methanol tolerance behavior than commercial Pt/C."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CeO2_gC3N4",
+   "text": "Les auteurs expliquent l'activité accrue par les lacunes d'oxygène de CeO2 (états de valence mixtes Ce3+/Ce4+) et par un effet synergique entre CeO2 et le réseau carboné contenant des azotes pyridiniques, pyrroliques et graphitiques. Ils ne décrivent aucun mécanisme de formation du composite lui-même.",
+   "quote": "The improved ORR activity of CeO2/gC3N4 can be explained by considering the synergistic effect between CeO2 and carbon network containing different types of nitrogen (Pyridinc, pyrolic, and graphitic)."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CeO2_gC3N4",
+   "text": "Hypothèse de chimiste : le 1,4-butanediol joue probablement le rôle de solvant polyol réducteur et de milieu de complexation du Ce(IV), qui s'hydrolyse et précipite en nanoparticules de CeO2 ; le changement de couleur jaune clair vers rouge orangé témoigne probablement d'une complexation du cérium par le diol. Le chauffage micro-onde de 10 min à 180 °C favoriserait une nucléation rapide et homogène, et les feuillets de g-C3N4, riches en azote, serviraient probablement de sites d'ancrage aux nanoparticules. Le rapport massique visé est ≈ 1:1 mais 250 mg de (NH4)2Ce(NO3)6 (≈ 0,46 mmol) donnent au plus ≈ 78 mg de CeO2 pour 50 mg de g-C3N4."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "g-C3N4",
+   "text": "Hypothèse de chimiste : à 520 °C, la mélamine se condense en perdant de l'ammoniac pour former des unités tri-s-triazine (mélam, mélem puis polymère g-C3N4) ; le pic XRD à 27,6° correspond à l'empilement interplanaire des feuillets conjugués et le pic faible à 13,1° au motif intra-plan."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "La condensation de la mélamine dégage de l'ammoniac et un peu de HCN possible à haute température : opérer sous hotte ou four ventilé. Le nitrate de cérium(IV) et d'ammonium est un oxydant fort, à tenir à l'écart des matières organiques ; chauffé avec le 1,4-butanediol dans un récipient fermé aux micro-ondes, il peut provoquer une montée en pression et une réaction exothermique (la pression n'est pas donnée) : respecter le volume de remplissage du fabricant et laisser refroidir avant d'ouvrir. L'acétone et l'éthanol sont inflammables ; les poudres nanométriques ne doivent pas être inhalées."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "CeO2_gC3N4",
+   "text": "Le rendement, la puissance micro-onde, la pression atteinte, la montée en température, le volume du récipient en Téflon et son taux de remplissage, la vitesse et la durée de centrifugation, le nombre de lavages (« several times ») et la pureté des réactifs ne sont pas donnés. La vitesse de la seconde agitation est « the same rpm » (donc 300 tr/min par renvoi). L'article ne dit pas non plus comment CeO2 nu et le Pt/C ont été préparés ou obtenus ; leurs résultats sont rangés comme résultats de témoins.",
+   "quote": "The vessel was tightly sealed and irradiated with microwave radiation (MDS 6) for 10 min at 180°C."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "g-C3N4",
+   "text": "L'atmosphère du four à moufle (air supposé), le couvercle du creuset, la vitesse de refroidissement, le rendement et la pureté de la mélamine ne sont pas donnés.",
+   "quote": "About 3 g of melamine was taken in china crucible and was heated for 4 h at 520°C"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "GC_electrode_RDE",
+   "text": "Le nettoyage et le polissage de l'électrode de carbone vitreux, la température du four sous vide et la pression de séchage ne sont pas donnés. L'encre est décrite pour « as synthesized electrocatalyst » sans dire pour quels échantillons (composite, CeO2, g-C3N4) elle a été utilisée. Les vitesses de balayage de la CV et de la LSV et la fenêtre de potentiel de la LSV ne sont pas données.",
+   "quote": "For the preparation of catalytic ink 5 mg of as synthesized electrocatalyst was dispersed in 2 ml isopropanol, 3 ml double distilled H2O, and 25 micro liter Nafion solution (as binder) in an ultrasonic bath for 30 min"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Relecture scientifique : le texte conclut à la voie à 2 électrons à partir d'un nombre d'électrons « around 3 » obtenu par Koutecky–Levich, alors que la RRDE donne 3,2 et conclut à un processus « quasi-4-electron » : les deux interprétations des auteurs sont contradictoires. La valeur E1/2 du composite (−0,383 V) est identique à celle de CeO2 nu, bien que le texte parle d'amélioration."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "GC_electrode_RDE",
+   "ref_id": "B42",
+   "role": "protocole_adapte",
+   "quote": "For the preparation of catalytic ink 5 mg of as synthesized electrocatalyst was dispersed in 2 ml isopropanol, 3 ml double distilled H2O, and 25 micro liter Nafion solution (as binder) in an ultrasonic bath for 30 min"
+  },
+  {
+   "route": "CeO2_gC3N4",
+   "ref_id": "B42",
+   "role": "protocole_adapte",
+   "quote": "The catalytic stability of CeO2/g-C3N4 along with commercial Pt/C and bare CeO2 were measured and compared by the Chronoamperometric response method at −0.35V vs. Ag/AgCl in 0.1 M KOH solution for 12,500 s at 1,000 rpm"
+  }
+ ],
+ "comparisons": [],
+ "doubts": [
+  {
+   "where": "CeO2_gC3N4, E1/2 (LSV)",
+   "issue": "Le texte annonce « a small improvement in the E1/2 » du composite, mais donne −0,383 V pour le composite comme pour CeO2 nu (−0,388 V pour g-C3N4). Les trois valeurs sont extraites telles qu'écrites ; la contradiction vient de l'article."
+  },
+  {
+   "where": "CeO2_gC3N4, nombre d'électrons",
+   "issue": "Koutecky–Levich : « calculated around 3, which suggests the ORR kinetics proceeds through the 2-electron pathway » (n = 2,45 à 2,92 d'après la figure 5B), alors que la RRDE donne 3,2 (« quasi-4-electron »). Valeurs extraites, interprétations non tranchées."
+  },
+  {
+   "where": "CeO2_gC3N4, nombre d'électrons RRDE à −0,6 V",
+   "issue": "Le texte dit que n reste constant à 3,2 à −0,6 V, alors que la figure 7A montre un creux d'environ 3,0 autour de −0,6 V. Valeur du texte retenue."
+  },
+  {
+   "where": "Figures lues (4B, 7B)",
+   "issue": "Lectures graphiques approximatives, à 2 chiffres significatifs : courants limites à −0,8 V (Fig. 4B) : g-C3N4 ≈ −0,4, CeO2 ≈ −1,4, composite ≈ −1,4, Pt/C ≈ −4,3 mA cm−2 ; part de HO2− (Fig. 7B) à −0,4 et −0,6 V : CeO2 ≈ 64 et 70 %, composite ≈ 44 et 50 %. Les valeurs de la figure 5B (n par potentiel) et les pourcentages de la figure 8 et 9 sont écrits sur les figures elles-mêmes."
+  },
+  {
+   "where": "Témoins CeO2 nu et Pt/C",
+   "issue": "L'article ne décrit aucune synthèse de CeO2 nu ni l'origine exacte de Pt/C (« commercial 20 wt% Pt/C »). Leurs résultats sont rangés dans les résultats de la voie du composite, avec le suffixe _CeO2_bare ou _PtC_commercial dans le nom de la propriété, sans créer de voie fictive."
+  },
+  {
+   "where": "Électrodes, échantillons concernés",
+   "issue": "La préparation de l'encre est décrite pour « as synthesized electrocatalyst » sans nommer l'échantillon ; la voie d'électrode est rattachée au composite, mais les mêmes électrodes ont probablement servi pour g-C3N4 et CeO2 nu."
+  },
+  {
+   "where": "CeO2_gC3N4, étape 4",
+   "issue": "« again stirred at the same rpm » : la vitesse (300 rpm, étape 2) est renvoyée par l'article ; extraite en value_text « the same rpm » sans recopier 300."
+  },
+  {
+   "where": "EIS, plage de fréquences",
+   "issue": "« frequency range 100–1 MHz » : l'unité de la borne basse est absente (100 Hz ou 100 kHz) ; recopié tel quel."
+  },
+  {
+   "where": "XPS, C 1s",
+   "issue": "La composante de « standard reference carbon (283 eV) » est donnée à 283 eV alors que le pic sp2 C–C est à 284,8 eV, valeur habituelle de la référence ; extraite telle quelle."
+  },
+  {
+   "where": "XRD, tension 40 kV",
+   "issue": "« operating at 40 KV » est un réglage du tube à rayons X ; rangé sous le nom accelerating_voltage faute de nom plus précis dans la liste (définition rédigée pour les microscopes)."
+  },
+  {
+   "where": "Chronoampérométrie, tolérance au méthanol",
+   "issue": "« 25 mL of (10 wt%) 3 M methanol » : le volume de la cellule n'est pas donné et la concentration est donnée en deux unités ; recopié tel quel dans réactant_concentration."
+  }
+ ]
+}
