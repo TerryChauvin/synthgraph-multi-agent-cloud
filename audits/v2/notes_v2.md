@@ -24,3 +24,4 @@
 - PMC9369949 : 3e cas une seule citation par réactif → pureté 99 % et quantité de tableau non portables ensemble (besoin : citations multiples par champ de réactif).
 - PMC9418622 : mélanges de lumière blanche (tableau 3) modélisés en 5 voies `calcul` avec composants en réactifs intermediate → vérifié : spectres combinés par calcul (« estimated », « spectral data were analysed »), le kind calcul est juste.
 - PMC4973716 : 9e cas témoins (alun, PBS, Rabipur, saline) en outcomes suffixés de la voie voisine ; unité « ° » ajoutée par l'agent pour des pics « at 2θ » sans unité (déduction légère, contraire à la règle « rien de déduit »).
+- PMC5882680 : les noms de propriété de `comparisons` ne sont pas contrôlés par le vocabulaire (conduction_band_potential accepté là, refusé en outcomes) → trou du contrôle à fermer dans load.py.
