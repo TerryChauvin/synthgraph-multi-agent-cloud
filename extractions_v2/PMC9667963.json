@@ -1,0 +1,3233 @@
+{
+ "pmcid": "PMC9667963",
+ "format": 3,
+ "routes": [
+  {
+   "label": "P-10-80-120",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "TS-1 zeolite (PAM-assisted, PAM/SiO2 = 0.10)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": "crystals of about 130 nm with intragranular mesopores"
+   },
+   "methods": [
+    "hydrothermal",
+    "thermal_treatment"
+   ],
+   "method": "two-step hydrothermal crystallization (80 °C then 120 °C) of a TPAOH/TEOS/TBOT gel in the presence of polyacrylamide, then calcination",
+   "quote": "PAM-assisted TS-1 zeolite was synthesized through a two- step hydrothermal route under static conditions from the starting gels",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "tetraethyl orthosilicate (TEOS)",
+     "formula": "Si(OC2H5)4",
+     "role": "precursor",
+     "quote": "P-10-80-120 1 0.033 PAM 0.10 80 ℃ (3 h) + 120 ℃ (3 h)",
+     "amount": 1,
+     "unit": "mol per mol SiO2",
+     "supplier": "Sinopharm",
+     "supplier_quote": "Tetraethyl orthosilicate (TEOS, Sinopharm)",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "tetrabutyl orthotitanate (TBOT)",
+     "formula": "Ti(OC4H9)4",
+     "role": "precursor",
+     "quote": "P-10-80-120 1 0.033 PAM 0.10 80 ℃ (3 h) + 120 ℃ (3 h)",
+     "amount": 0.033,
+     "unit": "mol per mol SiO2",
+     "purity": "98%",
+     "supplier": "Sinopharm",
+     "supplier_quote": "tetrabutyl orthotitanate (TBOT, Sinopharm, 98%)"
+    },
+    {
+     "name": "tetrapropylammonium hydroxide (TPAOH) solution",
+     "formula": "(C3H7)4NOH",
+     "role": "template",
+     "quote": "The ratios of TPAOH/SiO2 and H2O/SiO2 are 0.27 and 30, respectively.",
+     "amount": 0.27,
+     "unit": "mol per mol SiO2",
+     "purity": "25 wt%",
+     "supplier": "Guangfu Fine Chemical Research Institute",
+     "supplier_quote": "tetrapropylammonium hydroxide solution (TPAOH; Guangfu Fine Chemical Research Institute, 25 wt%)"
+    },
+    {
+     "name": "water",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "The ratios of TPAOH/SiO2 and H2O/SiO2 are 0.27 and 30, respectively.",
+     "amount": 30,
+     "unit": "mol per mol SiO2",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "cationic polyacrylamide (PAM; MW=8000000-15000000)",
+     "formula": null,
+     "role": "modulator",
+     "quote": "SiO2: 0.033 TiO2: 0.27 TPAOH: 30 H2O: 0.1 PAM",
+     "amount": 0.1,
+     "unit": "mol per mol SiO2",
+     "supplier": "Guangfu Fine Chemical Research Institute",
+     "supplier_quote": "cationic polyacrylamide (PAM; MW=8000000-15000000, Guangfu Fine Chemical Research Institute)",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "distilled water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed with distilled water several times"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Mix the TPAOH solution with water under stirring.",
+     "quote": "Typically, the TPAOH solution was mixed with water under stirring.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add TBOT and TEOS to the TPAOH solution to obtain a clear solution under continuous stirring.",
+     "quote": "Then, TBOT and TEOS were added to the TPAOH solution to form a clear solution under continuous stirring.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "After complete hydrolysis of TEOS and TBOT, add PAM to the solution.",
+     "quote": "After complete hydrolysis of TEOS and TBOT, PAM was added into the above solution.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the mixture a further 24 h until uniform.",
+     "quote": "The reaction mixture was further stirred for another 24 hours until the solution becomes uniform.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "further stirred for another 24 hours",
+       "value_num": 24,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "hydrothermal_treatment",
+     "description": "First crystallization stage at 80 °C in a pre-heated oven (autoclave, static).",
+     "quote": "crystallized in a pre-heated oven at 80 °C for 3 hours, and then at 120 °C for 3 hours under static conditions",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "at 80 °C for 3 hours",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "at 80 °C for 3 hours",
+       "value_num": 3,
+       "unit": "h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "Teflon-lined stainless-steel autoclave",
+       "detail": null,
+       "quote": "the resulting solution was transferred into a Teflon-lined stainless-steel autoclave"
+      },
+      {
+       "type": "pre-heated oven",
+       "detail": "static conditions",
+       "quote": "crystallized in a pre-heated oven at 80 °C for 3 hours, and then at 120 °C for 3 hours under static conditions"
+      }
+     ],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "hydrothermal_treatment",
+     "description": "Second crystallization stage at 120 °C.",
+     "quote": "crystallized in a pre-heated oven at 80 °C for 3 hours, and then at 120 °C for 3 hours under static conditions",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "at 120 °C for 3 hours",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "at 120 °C for 3 hours",
+       "value_num": 3,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge to collect the solid product.",
+     "quote": "The as-synthesized solid products were centrifuged",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "centrifuge_speed",
+      "duration"
+     ]
+    },
+    {
+     "order": 8,
+     "action": "wash",
+     "description": "Wash with distilled water several times.",
+     "quote": "washed with distilled water several times",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "washed with distilled water several times",
+       "value_text": "distilled water"
+      },
+      {
+       "name": "repetitions",
+       "quote": "washed with distilled water several times",
+       "value_text": "several times"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 9,
+     "action": "dry",
+     "description": "Dry at 80 °C in an oven overnight.",
+     "quote": "dried at 80 °C in an oven overnight",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "dried at 80 °C in an oven overnight",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "dried at 80 °C in an oven overnight",
+       "value_text": "overnight"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "dried at 80 °C in an oven overnight",
+       "value_text": "in an oven"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 10,
+     "action": "calcine",
+     "description": "Calcine at 550 °C for 6 h to remove the organics.",
+     "quote": "calcination at 550 °C for 6 hours",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "calcination at 550 °C for 6 hours",
+       "value_num": 550,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "calcination at 550 °C for 6 hours",
+       "value_num": 6,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "atmosphere",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": "Rigaku Ultima IV diffractometer",
+     "result": "relative crystallinity, induction period and phase purity from powder XRD patterns of extracted solids",
+     "quote": "The crystallinity and phase purity of the samples were determined by powder X-ray diffraction (XRD) on Rigaku Ultima Ⅳ diffractometer with Cu Ka radiation (λ=1.5418 Å).",
+     "settings": [
+      {
+       "name": "radiation",
+       "quote": "with Cu Ka radiation (λ=1.5418 Å)",
+       "value_text": "Cu Ka radiation (λ=1.5418 Å)"
+      }
+     ],
+     "not_stated": [
+      "scan_range",
+      "scan_step",
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "bet_1",
+     "technique": "BET",
+     "instrument": "Micromeritics 2020 analyzer",
+     "result": "N2 physisorption: BET area, t-plot micropore/external areas and volumes, mesopore size",
+     "quote": "Nitrogen adsorption/desorption measurements were carried out on a Micromeritics 2020 analyzer at 77.3 K after degassing the samples at 350 °C under vacuum.",
+     "settings": [
+      {
+       "name": "adsorbate",
+       "quote": "Nitrogen adsorption/desorption measurements",
+       "value_text": "Nitrogen"
+      },
+      {
+       "name": "measurement_temperature",
+       "quote": "at 77.3 K",
+       "value_num": 77.3,
+       "unit": "K"
+      },
+      {
+       "name": "degassing",
+       "quote": "after degassing the samples at 350 °C under vacuum",
+       "value_text": "350 °C under vacuum (duration not given)"
+      },
+      {
+       "name": "analysis_model",
+       "quote": "bSurface area was calculated from the nitrogen adsorption isotherm using the BET method; cSmicro (micropore area), Sext (external surface area) were calculated using the t-plot method.",
+       "value_text": "BET (surface area); t-plot (Smicro, Sext, Vmicro); Vtotal at P/P0 = 0.99; Vmeso = Vtotal - Vmicro"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "icp_1",
+     "technique": "elemental_analysis",
+     "instrument": "iCAP 7000 SERIES",
+     "result": "bulk Si/Ti ratio by ICP",
+     "quote": "Chemical compositions were determined by Inductively Coupled Plasma (ICP) analysis using an iCAP 7000 SERIES.",
+     "settings": [],
+     "not_stated": [
+      "digestion",
+      "calibration"
+     ]
+    },
+    {
+     "id": "xps_1",
+     "technique": "XPS",
+     "instrument": "ESCALAB 250",
+     "result": "Si 2p, Ti 2p and N 1s spectra of calcined and uncalcined samples",
+     "quote": "X-ray photoelectron spectroscopy (XPS) was performed with an ESCALAB 250 X-ray photoelectron spectrometer using Al as the excitation source.",
+     "settings": [
+      {
+       "name": "xray_source",
+       "quote": "using Al as the excitation source",
+       "value_text": "Al (excitation source)"
+      }
+     ],
+     "not_stated": [
+      "calibration_reference"
+     ]
+    },
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": "JSM-6510 (JEOL)",
+     "result": "particle size and morphology (SEM images)",
+     "quote": "Scanning electron microscopy (SEM) and transmission electron microscopy (TEM) images were collected using a JSM- 6510 (JEOL) electron microscope and a FEI Tecnai F20 electron microscope operating at an acceleration voltage of 200 kV, respectively.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "tem_1",
+     "technique": "TEM",
+     "instrument": "FEI Tecnai F20",
+     "result": "morphology of the time-resolved solids, particle sizes, lattice fringes",
+     "quote": "Scanning electron microscopy (SEM) and transmission electron microscopy (TEM) images were collected using a JSM- 6510 (JEOL) electron microscope and a FEI Tecnai F20 electron microscope operating at an acceleration voltage of 200 kV, respectively.",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "operating at an acceleration voltage of 200 kV",
+       "value_num": 200,
+       "unit": "kV"
+      }
+     ],
+     "not_stated": [
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "saed_1",
+     "technique": "SAED",
+     "instrument": "FEI Tecnai F20",
+     "result": "electron diffraction of wormlike particles and sub-crystals",
+     "quote": "Scanning electron microscopy (SEM) and transmission electron microscopy (TEM) images were collected using a JSM- 6510 (JEOL) electron microscope and a FEI Tecnai F20 electron microscope operating at an acceleration voltage of 200 kV, respectively.",
+     "settings": [],
+     "not_stated": []
+    },
+    {
+     "id": "afm_1",
+     "technique": "AFM",
+     "instrument": "Dimension Fastscan Bio (Bruker)",
+     "result": "surface layers of crystals (AFM image)",
+     "quote": "Atomic Force Microscope (AFM) images were recorded in the tapping mode from Dimension Fastscan Bio (Bruker) under ambient conditions.",
+     "settings": [
+      {
+       "name": "afm_mode",
+       "quote": "recorded in the tapping mode",
+       "value_text": "tapping mode, ambient conditions"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "eds_1",
+     "technique": "EDS",
+     "instrument": "Quantax EDS spectroscopy (Bruker)",
+     "result": "Si/Ti ratio by SEM-EDS and elemental maps",
+     "quote": "Elemental analysis of samples was investigated by the X-ray energy dispersive spectra (EDS, Quantax EDS spectroscopy, Bruker).",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "uvvis_1",
+     "technique": "UV_vis",
+     "instrument": "SHIMADZU U-4100",
+     "result": "Ti species (TiO4, TiO6, anatase) from diffuse reflectance UV-vis spectra",
+     "quote": "Ti species were investigated by UV-vis diffuse reflectance spectroscopy (UV-Vis) over a range of 200 to 600 nm using a SHIMADZU U-4100.",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "quote": "over a range of 200 to 600 nm",
+       "value_text": "200 to 600 nm"
+      },
+      {
+       "name": "calibration",
+       "quote": "The baseline correction was carried out with powder BaSO4.",
+       "value_text": "baseline correction with powder BaSO4"
+      }
+     ],
+     "not_stated": [
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "ftir_1",
+     "technique": "FTIR",
+     "instrument": "BRUKER vertex 80v",
+     "result": "framework vibrations (960, 1050, 570 cm-1)",
+     "quote": "Fourier transform infrared (FT-IR) spectra were recorded on a BRUKER vertex 80v, samples were pelleted with KBr powder before testing.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "samples were pelleted with KBr powder before testing",
+       "value_text": "pelleted with KBr powder"
+      }
+     ],
+     "not_stated": [
+      "wavenumber_range"
+     ]
+    },
+    {
+     "id": "tga_1",
+     "technique": "TGA",
+     "instrument": "TA TGA Q500",
+     "result": "weight loss of uncalcined samples",
+     "quote": "Thermal gravimetric (TG) analyses were performed using a TA TGA Q500 at temperatures ranging from room temperature to 800 °C at a heating rate of 10 °C min-1.",
+     "settings": [
+      {
+       "name": "heating_rate",
+       "quote": "at a heating rate of 10 °C min-1",
+       "value_num": 10,
+       "unit": "°C min-1"
+      },
+      {
+       "name": "temperature_range",
+       "quote": "at temperatures ranging from room temperature to 800 °C",
+       "value_text": "room temperature to 800 °C"
+      }
+     ],
+     "not_stated": [
+      "atmosphere"
+     ]
+    },
+    {
+     "id": "nmr_1",
+     "technique": "NMR",
+     "instrument": "Bruker Avance NEO 600WB",
+     "result": "29Si MAS NMR of the synthesis gels (Q2, Q3, Q4 species)",
+     "quote": "29Si solid state magic angle rotation nuclear magnetic resonance (SS MAS NMR) and 1H→13C CP MAS NMR were collected on Bruker Avance NEO 600WB system.",
+     "settings": [
+      {
+       "name": "nucleus",
+       "quote": "29Si solid state magic angle rotation nuclear magnetic resonance (SS MAS NMR) and 1H→13C CP MAS NMR were collected on Bruker Avance NEO 600WB system.",
+       "value_text": "29Si (solid-state MAS) and 13C (1H→13C CP MAS)"
+      },
+      {
+       "name": "calibration_reference",
+       "quote": "Kaolin and Adamantane (Adam) was used as the standard sample of 29Si and 13C, respectively. And the calibration of 29Si and 13C were -91.4 ppm and 38.48 ppm, respectively.",
+       "value_text": "kaolin (29Si, -91.4 ppm) and adamantane (13C, 38.48 ppm)"
+      }
+     ],
+     "not_stated": [
+      "spectrometer_frequency",
+      "solvent_or_rotor"
+     ]
+    },
+    {
+     "id": "nmr_liq",
+     "technique": "NMR",
+     "instrument": "Bruker Avance NEO 600WB",
+     "result": "liquid 29Si NMR of the supernatant of P-0-80-120 (6 h at 120 °C)",
+     "quote": "For the liquid NMR measurement of the supernatant of sample, the supernatant was mixed with deuterium oxide (D2O) for field locking, and then placed in polytetrafluoroethylene (PTFE) sample tubes for NMR measurement.",
+     "settings": [
+      {
+       "name": "nucleus",
+       "quote": "the calibration of 29Si was 0 ppm",
+       "value_text": "29Si (liquid, supernatant)"
+      },
+      {
+       "name": "solvent_or_rotor",
+       "quote": "the supernatant was mixed with deuterium oxide (D2O) for field locking, and then placed in polytetrafluoroethylene (PTFE) sample tubes for NMR measurement",
+       "value_text": "D2O for field locking, PTFE sample tubes"
+      },
+      {
+       "name": "calibration_reference",
+       "quote": "Tetramethylsilane was used as standard sample, the calibration of 29Si was 0 ppm.",
+       "value_text": "tetramethylsilane, 0 ppm"
+      }
+     ],
+     "not_stated": [
+      "spectrometer_frequency"
+     ]
+    },
+    {
+     "id": "dls_1",
+     "technique": "DLS_zeta",
+     "instrument": "Malvern Zetaszier Nano-ZS",
+     "result": "hydrodynamic size of the supernatant particles",
+     "quote": "The dynamic light scattering test was carried out on Malvern Zetaszier Nano-ZS.",
+     "settings": [],
+     "not_stated": [
+      "dispersant",
+      "measurement_temperature",
+      "concentration"
+     ]
+    },
+    {
+     "id": "xas_1",
+     "technique": "XAS",
+     "instrument": "Sector 20-BM beamline, Advanced Photon Source",
+     "result": "Ti K-edge XANES and FT-EXAFS",
+     "quote": "X-ray absorption near-edge structure (XANES) spectra at the Ti K-edge were performed using the Sector 20-BM beamline of the S7 Advanced Photon Source at Argonne National Laboratory (Argonne, IL).",
+     "settings": [
+      {
+       "name": "edge",
+       "quote": "spectra at the Ti K-edge",
+       "value_text": "Ti K-edge"
+      },
+      {
+       "name": "beamline",
+       "quote": "X-ray absorption near-edge structure (XANES) spectra at the Ti K-edge were performed using the Sector 20-BM beamline of the S7 Advanced Photon Source at Argonne National Laboratory (Argonne, IL).",
+       "value_text": "Sector 20-BM beamline, Advanced Photon Source (Argonne National Laboratory), Si(111) double-crystal monochromator, 12-element Ge fluorescence detector"
+      },
+      {
+       "name": "fitting",
+       "quote": "Data processing and EXAFS fitting were performed using the Athena, Artemis and Igor software.",
+       "value_text": "Athena, Artemis and Igor software"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "cat_dbt",
+     "technique": "catalytic_test",
+     "instrument": "25 mL two-neck glass flask with reflux condenser; GC-MS Thermo Fisher Trace ISQ",
+     "result": "oxidative desulfurization of DBT with TBHP in model fuel",
+     "quote": "Oxidative desulfurization of dibenzothiophene (DBT). A certain amount of DBT was dissolved in n- octane to prepare the model fuel with the concentration of sulfur is about 500 ppm. The ODS reactivity was tested in a 25 mL two-neck glass flask equipped with a reflux condenser. In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+     "settings": [
+      {
+       "name": "catalyst_mass",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_num": 0.1,
+       "unit": "g"
+      },
+      {
+       "name": "reactant_concentration",
+       "quote": "A certain amount of DBT was dissolved in n- octane to prepare the model fuel with the concentration of sulfur is about 500 ppm.",
+       "value_text": "DBT in n-octane, sulfur concentration about 500 ppm"
+      },
+      {
+       "name": "reaction_volume",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_num": 10,
+       "unit": "mL"
+      },
+      {
+       "name": "reaction_temperature",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_num": 353,
+       "unit": "K"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_num": 120,
+       "unit": "min"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "Afterwards, GC-MS (Thermo Fisher Trace ISQ, equipped with a TG-5MS column, 60 m 320 μm 25 μm) was utilized to analyse the reactant and products.",
+       "value_text": "GC-MS (Thermo Fisher Trace ISQ, TG-5MS column)"
+      },
+      {
+       "name": "oxidant",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_text": "TBHP, 0.028 g (70 wt% aqueous solution)"
+      },
+      {
+       "name": "internal_standard",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_text": "n-octadecane, 0.028 g"
+      },
+      {
+       "name": "reaction_solvent",
+       "quote": "was dissolved in n- octane",
+       "value_text": "n-octane (model fuel)"
+      }
+     ],
+     "not_stated": [
+      "light_source"
+     ]
+    },
+    {
+     "id": "cat_hex",
+     "technique": "catalytic_test",
+     "instrument": "25 mL round-bottom flask with reflux condenser; GC-MS Thermo Fisher Trace ISQ",
+     "result": "epoxidation of 1-hexene with H2O2 in methanol",
+     "quote": "Epoxidation of 1-hexene with H2O2 as oxidant was carried out in a 25 mL round-bottom flask equipped with a reflux condenser.",
+     "settings": [
+      {
+       "name": "catalyst_mass",
+       "quote": "0.05 g of catalyst",
+       "value_num": 0.05,
+       "unit": "g"
+      },
+      {
+       "name": "reactant_concentration",
+       "quote": "10 mmol of 1-hexene and 3.3 mmol H2O2 (30 wt%)",
+       "value_text": "1-hexene, 10 mmol"
+      },
+      {
+       "name": "reaction_volume",
+       "quote": "10 mL of S8 methanol",
+       "value_text": "10 mL of methanol (SI text; Table S4 footnote says methanol, 8.0 g)"
+      },
+      {
+       "name": "reaction_temperature",
+       "quote": "the reaction was carried out under continual magnetic stirring at 333 K for 120 min",
+       "value_num": 333,
+       "unit": "K"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "the reaction was carried out under continual magnetic stirring at 333 K for 120 min",
+       "value_num": 120,
+       "unit": "min"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "the liquid product was centrifuged and analyzed by GC-MS (Thermo Fisher Trace ISQ, equipped with a TG-5MS column, 60 m 320 μm 25 μm) and n-dodecane as internal standard.",
+       "value_text": "GC-MS with n-dodecane as internal standard; H2O2 conversion and efficiency by iodometric method"
+      },
+      {
+       "name": "oxidant",
+       "quote": "10 mmol of 1-hexene and 3.3 mmol H2O2 (30 wt%)",
+       "value_text": "H2O2 (30 wt%), 3.3 mmol"
+      },
+      {
+       "name": "internal_standard",
+       "quote": "the liquid product was centrifuged and analyzed by GC-MS (Thermo Fisher Trace ISQ, equipped with a TG-5MS column, 60 m 320 μm 25 μm) and n-dodecane as internal standard.",
+       "value_text": "n-dodecane"
+      },
+      {
+       "name": "reaction_solvent",
+       "quote": "10 mL of S8 methanol",
+       "value_text": "methanol"
+      }
+     ],
+     "not_stated": [
+      "light_source"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "P-10-80-120 29 339 232 106 0.40 0.09 0.31",
+     "value_num": 29,
+     "measured_by": "icp_1"
+    },
+    {
+     "property": "BET_surface_area",
+     "quote": "P-10-80-120 29 339 232 106 0.40 0.09 0.31",
+     "value_num": 339,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "micropore_surface_area",
+     "quote": "P-10-80-120 29 339 232 106 0.40 0.09 0.31",
+     "value_num": 232,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "external_surface_area",
+     "quote": "P-10-80-120 29 339 232 106 0.40 0.09 0.31",
+     "value_num": 106,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "pore_volume_total",
+     "quote": "P-10-80-120 29 339 232 106 0.40 0.09 0.31",
+     "value_num": 0.4,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "micropore_volume",
+     "quote": "P-10-80-120 29 339 232 106 0.40 0.09 0.31",
+     "value_num": 0.09,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "mesopore_volume",
+     "quote": "P-10-80-120 29 339 232 106 0.40 0.09 0.31",
+     "value_num": 0.31,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "crystallinity_relative",
+     "quote": "Fig. 1 (a) Schematic diagram of the PAM-assisted synthesis of TS-1 zeolite, (b) relative crystallinity of TS-1 samples crystallized at 80 °C for 3 h and then at 120 °C for different time,",
+     "value_num": 83,
+     "unit": "%",
+     "measured_by": "xrd_1",
+     "from_figure": "Fig. 1b"
+    },
+    {
+     "property": "induction_time",
+     "quote": "P-10-80-120 was 4.5 h (80 ℃ for 3 h and 120 ℃ for 1.5 h)",
+     "value_num": 4.5,
+     "unit": "h",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallization_time",
+     "quote": "resulting in the total crystallization time decreasing from 11 h to 7 h",
+     "value_num": 7,
+     "unit": "h",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "particle_size_crystal",
+     "quote": "TS-1 crystals with a size of about ca. 130 nm are obtained",
+     "value_num": 130,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "which is the characteristic of a typical non-classical crystallization pathway, resulting in obvious mesoporous structures (Fig. 1d)",
+     "value_text": "obvious mesoporous structures (non-classical growth by attachment of small particles)",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "pore_diameter_mesopore",
+     "quote": "P-10-80-120 has the most uniform intragranular mesopores (ca. 4 nm)",
+     "value_num": 4,
+     "unit": "nm",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "mass_loss_residue_uncalcined",
+     "quote": "the weight loss of the P-10-80-120 sample is higher than that of P-0-80-120 (24 vs. 15 wt%)",
+     "value_num": 24,
+     "unit": "wt%",
+     "measured_by": "tga_1"
+    },
+    {
+     "property": "xps_binding_energy_Si2p_uncalcined",
+     "quote": "(103.9 eV vs. 103.1 eV)",
+     "value_num": 103.9,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_Si2p_calcined",
+     "quote": "(103.9 eV vs. 103.1 eV)",
+     "value_num": 103.1,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "nmr_signal_29Si_Q2_gel",
+     "quote": "The peaks around −89.2 ppm and −99.4 ppm are assigned to the hydroxyl-associated silicon species Q2 ((HO)2-Si-(OSi)2) and Q3 (HO-Si-(OSi)3), respectively.",
+     "value_num": -89.2,
+     "unit": "ppm",
+     "measured_by": "nmr_1"
+    },
+    {
+     "property": "nmr_signal_29Si_Q3_gel",
+     "quote": "The peaks around −89.2 ppm and −99.4 ppm are assigned to the hydroxyl-associated silicon species Q2 ((HO)2-Si-(OSi)2) and Q3 (HO-Si-(OSi)3), respectively.",
+     "value_num": -99.4,
+     "unit": "ppm",
+     "measured_by": "nmr_1"
+    },
+    {
+     "property": "nmr_signal_29Si_Q4_gel",
+     "quote": "a peak assigned to the Q4 species (Si-(OSi)4) appears in the P-10-80-120 gel (around −110.4 ppm)",
+     "value_num": -110.4,
+     "unit": "ppm",
+     "measured_by": "nmr_1"
+    },
+    {
+     "property": "ftir_band_1050_gel",
+     "quote": "the enhancement of band intensity at 1050 cm−1 corresponding to the asymmetric stretching of Si–O–Si bonds in silicate proves the progress of the silicon condensation process in the P-10-80-120 gel",
+     "value_num": 1050,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_570_gel",
+     "quote": "an intensity-enhanced band at 570 cm−1 is observed in the P-10-80-120-gel, which is specifically assigned to five-ring structures in pentasil zeolites",
+     "value_num": 570,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "ftir_band_960",
+     "quote": "both P-0-80-120 and P-10-80-120 contain tetracoordinated framework titanium species (TiO4) with a peak at 960 cm−1",
+     "value_num": 960,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "absorption_peak_TiO4",
+     "quote": "these two samples have a main absorption band around 210–220 nm, indicating the existence of framework TiO4 species",
+     "value_text": "main band around 210–220 nm (framework TiO4)",
+     "measured_by": "uvvis_1"
+    },
+    {
+     "property": "absorption_peak_TiO6",
+     "quote": "after addition of PAM, a new absorption band around 265 nm appears, which is usually attributed to the highly coordinated TiO6 species",
+     "value_num": 265,
+     "unit": "nm",
+     "measured_by": "uvvis_1"
+    },
+    {
+     "property": "absorption_peak_anatase",
+     "quote": "Similar to the UV-vis analysis, anatase has not been found in these two samples.",
+     "value_text": "anatase not found",
+     "measured_by": "uvvis_1"
+    },
+    {
+     "property": "xas_feature_pre_edge_intensity",
+     "quote": "Such a peak decreases obviously in P-10-80-120, which should be attributed to the structural distortion caused by the formation of some TiO6 species.",
+     "value_text": "pre-edge peak (about 4968 eV in P-0-80-120) decreases obviously, attributed to distortion by some TiO6 species",
+     "measured_by": "xas_1"
+    },
+    {
+     "property": "xas_feature_TiO_peak_shift",
+     "quote": "The positive shift of the Ti–O peak in FT-EXAFS in P-10-80-120 compared with P-0-80-120 also confirms the existence of highly coordinated Ti species (Fig. 4c).",
+     "value_text": "positive shift of the Ti–O peak in FT-EXAFS compared with P-0-80-120",
+     "measured_by": "xas_1"
+    },
+    {
+     "property": "xps_binding_energy_Ti2p3_2_uncalcined_peak1",
+     "quote": "to 459.1 eV and 457.8 eV of P-10-80-120-uncal, respectively",
+     "value_num": 459.1,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_Ti2p3_2_uncalcined_peak2",
+     "quote": "to 459.1 eV and 457.8 eV of P-10-80-120-uncal, respectively",
+     "value_num": 457.8,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_Ti2p3_2_calcined_peak1",
+     "quote": "Further calcination results in BE moving back to 460.2 eV and 459.1 eV",
+     "value_num": 460.2,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_Ti2p3_2_calcined_peak2",
+     "quote": "Further calcination results in BE moving back to 460.2 eV and 459.1 eV",
+     "value_num": 459.1,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_N1s_uncalcined_NTiO",
+     "quote": "a peak at 399.9 eV is observed in addition to the acyl functional group (401.5 eV) on PAM and the N atom (402.6 eV) on the template TPAOH",
+     "value_num": 399.9,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "catalytic_performance_DBT_conversion_40min",
+     "quote": "P-10-80-120 exhibits the best catalytic performance in removing 100.0% of DBT molecules within 40 min",
+     "value_num": 100.0,
+     "unit": "%",
+     "measured_by": "cat_dbt"
+    },
+    {
+     "property": "retention_stability_DBT_3runs",
+     "quote": "100% of the initial catalytic activity remains after 3 runs, and 87% after 5 runs",
+     "value_num": 100,
+     "unit": "%",
+     "measured_by": "cat_dbt"
+    },
+    {
+     "property": "retention_stability_DBT_5runs",
+     "quote": "100% of the initial catalytic activity remains after 3 runs, and 87% after 5 runs",
+     "value_num": 87,
+     "unit": "%",
+     "measured_by": "cat_dbt"
+    },
+    {
+     "property": "catalytic_performance_hexene_max_conversion",
+     "quote": "P-10-80-120 26.5 98 36.2 73.2",
+     "value_num": 26.5,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_hexene_epoxide_selectivity",
+     "quote": "P-10-80-120 26.5 98 36.2 73.2",
+     "value_num": 98,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_H2O2_conversion",
+     "quote": "P-10-80-120 26.5 98 36.2 73.2",
+     "value_num": 36.2,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_H2O2_efficiency",
+     "quote": "P-10-80-120 26.5 98 36.2 73.2",
+     "value_num": 73.2,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "retention_stability_hexene_4cycles",
+     "quote": "Durability testing over the P-10-80-120 catalyst shows that 20% of the conversion is maintained after four cycles",
+     "value_num": 20,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    }
+   ]
+  },
+  {
+   "label": "P-5-80-120",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 zeolite (PAM/SiO2 = 0.05)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "Furthermore, samples with different PAM additions were also synthesized by using the similar synthetic method, which are defined as P-x-80-120, where x represents the molar ratio of PAM to SiO2 times 102 employed in the synthesis.",
+   "variations": [
+    {
+     "parameter": "cationic polyacrylamide (PAM; MW=8000000-15000000)",
+     "quote": "P-5-80-120 1 0.033 PAMb 0.05 80 ℃ (3 h) + 120 ℃ (3 h)",
+     "value_num": 0.05,
+     "unit": "mol per mol SiO2",
+     "parent_value": "0.1"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "P-5-80-120 52 369 228 141 0.50 0.10 0.40",
+     "value_num": 52,
+     "measured_by": "icp_1"
+    },
+    {
+     "property": "BET_surface_area",
+     "quote": "P-5-80-120 52 369 228 141 0.50 0.10 0.40",
+     "value_num": 369,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "micropore_surface_area",
+     "quote": "P-5-80-120 52 369 228 141 0.50 0.10 0.40",
+     "value_num": 228,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "external_surface_area",
+     "quote": "P-5-80-120 52 369 228 141 0.50 0.10 0.40",
+     "value_num": 141,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "pore_volume_total",
+     "quote": "P-5-80-120 52 369 228 141 0.50 0.10 0.40",
+     "value_num": 0.5,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "micropore_volume",
+     "quote": "P-5-80-120 52 369 228 141 0.50 0.10 0.40",
+     "value_num": 0.1,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "mesopore_volume",
+     "quote": "P-5-80-120 52 369 228 141 0.50 0.10 0.40",
+     "value_num": 0.4,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "catalytic_performance_hexene_max_conversion",
+     "quote": "P-5-80-120 20.0 99 27.6 72.5",
+     "value_num": 20.0,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_hexene_epoxide_selectivity",
+     "quote": "P-5-80-120 20.0 99 27.6 72.5",
+     "value_num": 99,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_H2O2_conversion",
+     "quote": "P-5-80-120 20.0 99 27.6 72.5",
+     "value_num": 27.6,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_H2O2_efficiency",
+     "quote": "P-5-80-120 20.0 99 27.6 72.5",
+     "value_num": 72.5,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_DBT_conversion_120min",
+     "quote": "Fig. 7 (a) Catalytic oxidation of DBT with TBHP and (b) epoxidation of 1-hexene over synthesized TS-1 samples.",
+     "value_num": 99,
+     "unit": "%",
+     "measured_by": "cat_dbt",
+     "from_figure": "Fig. 7a"
+    }
+   ]
+  },
+  {
+   "label": "P-20-80-120",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 zeolite with surface anatase (PAM/SiO2 = 0.20)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI with anatase TiO2 on the surface",
+    "morphology": null
+   },
+   "quote": "Furthermore, samples with different PAM additions were also synthesized by using the similar synthetic method, which are defined as P-x-80-120, where x represents the molar ratio of PAM to SiO2 times 102 employed in the synthesis.",
+   "variations": [
+    {
+     "parameter": "cationic polyacrylamide (PAM; MW=8000000-15000000)",
+     "quote": "P-20-80-120 1 0.033 PAM 0.20 80 ℃ (3 h) + 120 ℃ (3 h)",
+     "value_num": 0.2,
+     "unit": "mol per mol SiO2",
+     "parent_value": "0.1"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "P-20-80-120 26 276 189 88 0.16 0.07 0.09",
+     "value_num": 26,
+     "measured_by": "icp_1"
+    },
+    {
+     "property": "BET_surface_area",
+     "quote": "P-20-80-120 26 276 189 88 0.16 0.07 0.09",
+     "value_num": 276,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "micropore_surface_area",
+     "quote": "P-20-80-120 26 276 189 88 0.16 0.07 0.09",
+     "value_num": 189,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "external_surface_area",
+     "quote": "P-20-80-120 26 276 189 88 0.16 0.07 0.09",
+     "value_num": 88,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "pore_volume_total",
+     "quote": "P-20-80-120 26 276 189 88 0.16 0.07 0.09",
+     "value_num": 0.16,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "micropore_volume",
+     "quote": "P-20-80-120 26 276 189 88 0.16 0.07 0.09",
+     "value_num": 0.07,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "mesopore_volume",
+     "quote": "P-20-80-120 26 276 189 88 0.16 0.07 0.09",
+     "value_num": 0.09,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "catalytic_performance_hexene_max_conversion",
+     "quote": "P-20-80-120 2.30 >99 15.2 15.1",
+     "value_num": 2.3,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_hexene_epoxide_selectivity",
+     "quote": "P-20-80-120 2.30 >99 15.2 15.1",
+     "value_text": ">99",
+     "measured_by": "cat_hex",
+     "unit": "%"
+    },
+    {
+     "property": "catalytic_performance_H2O2_conversion",
+     "quote": "P-20-80-120 2.30 >99 15.2 15.1",
+     "value_num": 15.2,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_H2O2_efficiency",
+     "quote": "P-20-80-120 2.30 >99 15.2 15.1",
+     "value_num": 15.1,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_DBT_conversion_120min",
+     "quote": "Fig. 7 (a) Catalytic oxidation of DBT with TBHP and (b) epoxidation of 1-hexene over synthesized TS-1 samples.",
+     "value_num": 22,
+     "unit": "%",
+     "measured_by": "cat_dbt",
+     "from_figure": "Fig. 7a"
+    },
+    {
+     "property": "particle_size_crystal",
+     "quote": "a high content of PAM (PAM/SiO2 = 0.20) leads to an increase in the particle size from 120–130 nm to 180 nm (Fig. S29†)",
+     "value_num": 180,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "absorption_peak_anatase",
+     "quote": "anatase TiO2 is formed on the sample surface as evidenced by XPS spectra (a peak at 458.75 eV attributed to anatase, Fig. S28†) and UV-vis spectra (a peak at 310 nm attributed to anatase, Fig. S27†)",
+     "value_text": "anatase TiO2 formed on the sample surface (UV-vis peak at 310 nm)",
+     "measured_by": "uvvis_1"
+    },
+    {
+     "property": "xps_binding_energy_Ti2p_anatase",
+     "quote": "a peak at 458.75 eV attributed to anatase, Fig. S28†",
+     "value_num": 458.75,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    }
+   ]
+  },
+  {
+   "label": "P-0-80-120",
+   "parent": "P-10-80-120",
+   "kind": "material",
+   "material": {
+    "name": "TS-1 zeolite (control without PAM)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": "crystals with smooth surfaces and layer-by-layer growth steps"
+   },
+   "quote": "Control TS-1 zeolite named P-0-80-120 was synthesized with the same molar composition of the P-10-80-120 sample without adding PAM.",
+   "variations": [
+    {
+     "parameter": "cationic polyacrylamide (PAM; MW=8000000-15000000)",
+     "quote": "Control TS-1 zeolite named P-0-80-120 was synthesized with the same molar composition of the P-10-80-120 sample without adding PAM.",
+     "value_text": "absent",
+     "parent_value": "0.1"
+    },
+    {
+     "parameter": "duration",
+     "quote": "and then at 120 °C for 6 hours under static conditions",
+     "step_order": 6,
+     "value_num": 6,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "hydrothermal_treatment",
+     "description": "First crystallization stage at 80 °C (control, no PAM).",
+     "quote": "The control sample was crystallized in a pre-heated oven at 80 °C for 3 hours, and then at 120 °C for 6 hours under static conditions.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The control sample was crystallized in a pre-heated oven at 80 °C for 3 hours",
+       "value_num": 80,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The control sample was crystallized in a pre-heated oven at 80 °C for 3 hours",
+       "value_num": 3,
+       "unit": "h"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "pre-heated oven",
+       "detail": "static conditions",
+       "quote": "The control sample was crystallized in a pre-heated oven at 80 °C for 3 hours, and then at 120 °C for 6 hours under static conditions."
+      }
+     ],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "hydrothermal_treatment",
+     "description": "Second crystallization stage at 120 °C for 6 h (control, no PAM).",
+     "quote": "The control sample was crystallized in a pre-heated oven at 80 °C for 3 hours, and then at 120 °C for 6 hours under static conditions.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "and then at 120 °C for 6 hours under static conditions",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "and then at 120 °C for 6 hours under static conditions",
+       "value_num": 6,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "P-0-80-120 107 389 276 112 0.49 0.15 0.34",
+     "value_num": 107,
+     "measured_by": "icp_1"
+    },
+    {
+     "property": "BET_surface_area",
+     "quote": "P-0-80-120 107 389 276 112 0.49 0.15 0.34",
+     "value_num": 389,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "micropore_surface_area",
+     "quote": "P-0-80-120 107 389 276 112 0.49 0.15 0.34",
+     "value_num": 276,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "external_surface_area",
+     "quote": "P-0-80-120 107 389 276 112 0.49 0.15 0.34",
+     "value_num": 112,
+     "unit": "m2 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "pore_volume_total",
+     "quote": "P-0-80-120 107 389 276 112 0.49 0.15 0.34",
+     "value_num": 0.49,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "micropore_volume",
+     "quote": "P-0-80-120 107 389 276 112 0.49 0.15 0.34",
+     "value_num": 0.15,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "mesopore_volume",
+     "quote": "P-0-80-120 107 389 276 112 0.49 0.15 0.34",
+     "value_num": 0.34,
+     "unit": "cm3 g-1",
+     "measured_by": "bet_1"
+    },
+    {
+     "property": "crystallinity_relative",
+     "quote": "whereas TS-1 crystals exhibit relatively high crystallinity (ca. 78%) and undergo complete crystallization within 2 h",
+     "value_num": 78,
+     "unit": "%",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "induction_time",
+     "quote": "the induction time was determined to be 9 h (80 ℃ for 3 h and 120 ℃ for 6 h)",
+     "value_num": 9,
+     "unit": "h",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "crystallization_time",
+     "quote": "resulting in the total crystallization time decreasing from 11 h to 7 h",
+     "value_num": 11,
+     "unit": "h",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "morphology",
+     "quote": "The obtained product possesses sharper boundaries and smoother surfaces, in which signs of layer-by-layer growth can be seemingly found as shown in the area circled in yellow (Fig. 1e).",
+     "value_text": "sharper boundaries and smoother surfaces, signs of layer-by-layer growth",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "hydrodynamic_size_supernatant",
+     "quote": "there are only crystal particles of ∼80 nm, rather than smaller particles (<40 nm)",
+     "value_num": 80,
+     "unit": "nm",
+     "measured_by": "dls_1"
+    },
+    {
+     "property": "mass_loss_residue_uncalcined",
+     "quote": "the weight loss of the P-10-80-120 sample is higher than that of P-0-80-120 (24 vs. 15 wt%)",
+     "value_num": 15,
+     "unit": "wt%",
+     "measured_by": "tga_1"
+    },
+    {
+     "property": "xps_binding_energy_Si2p_uncalcined",
+     "quote": "(104.2 eV vs. 103.8 eV)",
+     "value_num": 104.2,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_Si2p_calcined",
+     "quote": "(104.2 eV vs. 103.8 eV)",
+     "value_num": 103.8,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "nmr_signal_29Si_Q2_gel",
+     "quote": "The peaks around −89.2 ppm and −99.4 ppm are assigned to the hydroxyl-associated silicon species Q2 ((HO)2-Si-(OSi)2) and Q3 (HO-Si-(OSi)3), respectively.",
+     "value_num": -89.2,
+     "unit": "ppm",
+     "measured_by": "nmr_1"
+    },
+    {
+     "property": "nmr_signal_29Si_Q3_gel",
+     "quote": "The peaks around −89.2 ppm and −99.4 ppm are assigned to the hydroxyl-associated silicon species Q2 ((HO)2-Si-(OSi)2) and Q3 (HO-Si-(OSi)3), respectively.",
+     "value_num": -99.4,
+     "unit": "ppm",
+     "measured_by": "nmr_1"
+    },
+    {
+     "property": "ftir_band_960",
+     "quote": "both P-0-80-120 and P-10-80-120 contain tetracoordinated framework titanium species (TiO4) with a peak at 960 cm−1",
+     "value_num": 960,
+     "unit": "cm−1",
+     "measured_by": "ftir_1"
+    },
+    {
+     "property": "absorption_peak_TiO4",
+     "quote": "these two samples have a main absorption band around 210–220 nm, indicating the existence of framework TiO4 species",
+     "value_text": "main band around 210–220 nm (framework TiO4)",
+     "measured_by": "uvvis_1"
+    },
+    {
+     "property": "absorption_peak_anatase",
+     "quote": "Similar to the UV-vis analysis, anatase has not been found in these two samples.",
+     "value_text": "anatase not found",
+     "measured_by": "uvvis_1"
+    },
+    {
+     "property": "xas_feature_pre_edge_peak",
+     "quote": "a single sharp peak is found at about 4968 eV corresponding to the symmetric structure of TiO4 in the sample of P-0-80-120",
+     "value_num": 4968,
+     "unit": "eV",
+     "measured_by": "xas_1"
+    },
+    {
+     "property": "xps_binding_energy_Ti2p3_2_uncalcined_peak1",
+     "quote": "from 460.2 eV and 459.1 eV of P-0-80-120-uncal",
+     "value_num": 460.2,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "xps_binding_energy_Ti2p3_2_uncalcined_peak2",
+     "quote": "from 460.2 eV and 459.1 eV of P-0-80-120-uncal",
+     "value_num": 459.1,
+     "unit": "eV",
+     "measured_by": "xps_1"
+    },
+    {
+     "property": "absorption_peak_Ti_species_6h",
+     "quote": "The Ti species exist in the form of framework TiO4 at 6 h, and TiO6 species appear at 8 h (Fig. S21†).",
+     "value_text": "framework TiO4 at 6 h",
+     "measured_by": "uvvis_1"
+    },
+    {
+     "property": "catalytic_performance_DBT_conversion_120min",
+     "quote": "Fig. 7 (a) Catalytic oxidation of DBT with TBHP and (b) epoxidation of 1-hexene over synthesized TS-1 samples.",
+     "value_num": 45,
+     "unit": "%",
+     "measured_by": "cat_dbt",
+     "from_figure": "Fig. 7a"
+    },
+    {
+     "property": "catalytic_performance_hexene_max_conversion",
+     "quote": "P-0-80-120 18.3 >99 22.7 80.6",
+     "value_num": 18.3,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_hexene_epoxide_selectivity",
+     "quote": "P-0-80-120 18.3 >99 22.7 80.6",
+     "value_text": ">99",
+     "measured_by": "cat_hex",
+     "unit": "%"
+    },
+    {
+     "property": "catalytic_performance_H2O2_conversion",
+     "quote": "P-0-80-120 18.3 >99 22.7 80.6",
+     "value_num": 22.7,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    },
+    {
+     "property": "catalytic_performance_H2O2_efficiency",
+     "quote": "P-0-80-120 18.3 >99 22.7 80.6",
+     "value_num": 80.6,
+     "unit": "%",
+     "measured_by": "cat_hex"
+    }
+   ]
+  },
+  {
+   "label": "P-0-80-120_8h",
+   "parent": "P-0-80-120",
+   "material": {
+    "name": "TS-1 zeolite (control without PAM, 8 h at 120 °C)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "TEM images of P-10-80-120 crystallized at 120 °C for (c) 2 h and (d) 3 h, and P-0-80-120 crystallized at 120 °C for (e) 6 h and (f) 8 h, and (g) AFM image of P-0-80-120 crystallized at 120 °C for 8 h.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "quote": "TEM images of P-10-80-120 crystallized at 120 °C for (c) 2 h and (d) 3 h, and P-0-80-120 crystallized at 120 °C for (e) 6 h and (f) 8 h, and (g) AFM image of P-0-80-120 crystallized at 120 °C for 8 h.",
+     "step_order": 2,
+     "value_num": 8,
+     "unit": "h",
+     "parent_value": "6 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "crystallinity_relative",
+     "quote": "Fig. 1 (a) Schematic diagram of the PAM-assisted synthesis of TS-1 zeolite, (b) relative crystallinity of TS-1 samples crystallized at 80 °C for 3 h and then at 120 °C for different time,",
+     "value_num": 99,
+     "unit": "%",
+     "measured_by": "xrd_1",
+     "from_figure": "Fig. 1b"
+    },
+    {
+     "property": "morphology",
+     "quote": "AFM was also used to monitor the surface of P-0-80-120 samples, showing obvious layers (Fig. 1g).",
+     "value_text": "obvious layers on the surface (AFM)",
+     "measured_by": "afm_1"
+    },
+    {
+     "property": "absorption_peak_Ti_species_8h",
+     "quote": "The Ti species exist in the form of framework TiO4 at 6 h, and TiO6 species appear at 8 h (Fig. S21†).",
+     "value_text": "TiO6 species appear (in addition to framework TiO4)",
+     "measured_by": "uvvis_1"
+    }
+   ]
+  },
+  {
+   "label": "P-0-80-120_12h",
+   "parent": "P-0-80-120",
+   "material": {
+    "name": "TS-1 zeolite (control without PAM, 12 h at 120 °C)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "Fig. S10 TEM images of P-0-80-120 sample crystallizing at 80 ℃ for 3 h and then crystallizing at 120 ℃ for a) and d) 6 h, b) and e) 8 h, c) and f) 12 h.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "quote": "Fig. S10 TEM images of P-0-80-120 sample crystallizing at 80 ℃ for 3 h and then crystallizing at 120 ℃ for a) and d) 6 h, b) and e) 8 h, c) and f) 12 h.",
+     "step_order": 2,
+     "value_num": 12,
+     "unit": "h",
+     "parent_value": "6 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "crystallinity_relative",
+     "quote": "Fig. 1 (a) Schematic diagram of the PAM-assisted synthesis of TS-1 zeolite, (b) relative crystallinity of TS-1 samples crystallized at 80 °C for 3 h and then at 120 °C for different time,",
+     "value_num": 100,
+     "unit": "%",
+     "measured_by": "xrd_1",
+     "from_figure": "Fig. 1b"
+    }
+   ]
+  },
+  {
+   "label": "P-10-80-120_0h",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 precursor solid extracted after 0 h at 120 °C",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "amorphous wormlike particles and sub-crystals",
+    "morphology": null
+   },
+   "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+   "variations": [
+    {
+     "parameter": "duration",
+     "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+     "step_order": 6,
+     "value_num": 0,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "particle_size_WLP",
+     "quote": "The WLPs with ca. 200 nm in size are rapidly formed before the crystallization stage (0 h) (Fig. 2a).",
+     "value_num": 200,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    },
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "the Si/Ti ratio of the solid obtained after crystallization at 120 °C (0 h) is 23",
+     "value_num": 23,
+     "measured_by": "icp_1"
+    }
+   ]
+  },
+  {
+   "label": "P-10-80-120_0.5h",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 precursor solid extracted after 0.5 h at 120 °C",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "amorphous wormlike particles and sub-crystals",
+    "morphology": null
+   },
+   "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+   "variations": [
+    {
+     "parameter": "duration",
+     "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+     "step_order": 6,
+     "value_num": 0.5,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "the value reaches 19.6 at 120 °C (0.5 h)",
+     "value_num": 19.6,
+     "measured_by": "icp_1"
+    }
+   ]
+  },
+  {
+   "label": "P-10-80-120_1.0h",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 precursor solid extracted after 1.0 h at 120 °C",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "amorphous wormlike particles and sub-crystals",
+    "morphology": null
+   },
+   "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+   "variations": [
+    {
+     "parameter": "duration",
+     "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+     "step_order": 6,
+     "value_num": 1.0,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "quote": "When prolonging the crystallization time from 0 h to 2.5 h, the separated solid products are all composed of wormlike particles (WLPs) with small particles (ca. 20 nm) attached to the surface of WLPs.",
+     "value_text": "wormlike particles (WLPs) with small particles (ca. 20 nm) attached to their surface",
+     "measured_by": "tem_1"
+    }
+   ]
+  },
+  {
+   "label": "P-10-80-120_1.5h",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 precursor solid extracted after 1.5 h at 120 °C",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "amorphous wormlike particles and sub-crystals",
+    "morphology": null
+   },
+   "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+   "variations": [
+    {
+     "parameter": "duration",
+     "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+     "step_order": 6,
+     "value_num": 1.5,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "phase",
+     "quote": "the crystallized products of P-10-80-120 begin to form at the crystallization time of 1.5 h (120 °C)",
+     "value_text": "first characteristic XRD peaks appear (onset of crystallization at 1.5 h, 120 °C)",
+     "measured_by": "xrd_1"
+    },
+    {
+     "property": "phase_WLP",
+     "quote": "The selected area electron diffraction (SAED) of zone II (Fig. 2j) in Fig. 2h shows that the wormlike particles are amorphous",
+     "value_text": "wormlike particles are amorphous (SAED of zone II)",
+     "measured_by": "saed_1"
+    },
+    {
+     "property": "crystallinity",
+     "quote": "TS-1 sub-crystals with an obvious electron diffraction pattern appear close to the WLPs after crystallization for 1.5 hours (Fig. 2i)",
+     "value_text": "TS-1 sub-crystals with an obvious electron diffraction pattern appear close to the WLPs (Fig. 2i)",
+     "measured_by": "saed_1"
+    },
+    {
+     "property": "particle_size_subcrystal",
+     "quote": "the observed small particles of ca. 20 nm are sub-crystals containing crystal nuclei",
+     "value_num": 20,
+     "unit": "nm",
+     "measured_by": "tem_1"
+    }
+   ]
+  },
+  {
+   "label": "P-10-80-120_2.0h",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 precursor solid extracted after 2.0 h at 120 °C",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "amorphous wormlike particles and sub-crystals",
+    "morphology": null
+   },
+   "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+   "variations": [
+    {
+     "parameter": "duration",
+     "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+     "step_order": 6,
+     "value_num": 2.0,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "morphology",
+     "quote": "The small aggregated particles in Fig. 1c show that the PAM-assisted samples tend to grow more in a non-classical crystallization path",
+     "value_text": "small aggregated particles (non-classical growth, Fig. 1c)",
+     "measured_by": "tem_1"
+    }
+   ]
+  },
+  {
+   "label": "P-10-80-120_2.5h",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 precursor solid extracted after 2.5 h at 120 °C",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "amorphous wormlike particles and sub-crystals",
+    "morphology": null
+   },
+   "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+   "variations": [
+    {
+     "parameter": "duration",
+     "quote": "TEM images of P-10-80-120 samples crystallized at 80 °C for 3 h and then at 120 °C for (a) 0 h, (b) 0.5 h, (c) 1.0 h, (d) and (h) 1.5 h, (e) 2.0 h, (f) 2.5 h, and (g) 3.0 h",
+     "step_order": 6,
+     "value_num": 2.5,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "crystallinity_relative",
+     "quote": "Fig. 1 (a) Schematic diagram of the PAM-assisted synthesis of TS-1 zeolite, (b) relative crystallinity of TS-1 samples crystallized at 80 °C for 3 h and then at 120 °C for different time,",
+     "value_num": 50,
+     "unit": "%",
+     "measured_by": "xrd_1",
+     "from_figure": "Fig. 1b"
+    }
+   ]
+  },
+  {
+   "label": "P-0-120",
+   "parent": "P-0-80-120",
+   "material": {
+    "name": "TS-1 zeolite (single-step crystallization at 120 °C, no PAM)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "P-0-120 1 0.033 120 ℃ (6 h)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "quote": "P-0-120 1 0.033 120 ℃ (6 h)",
+     "step_order": 1,
+     "value_text": "absent (no 80 °C stage)",
+     "parent_value": "80 °C"
+    }
+   ],
+   "succeeded": true,
+   "steps": [
+    {
+     "order": 1,
+     "action": "hydrothermal_treatment",
+     "description": "Single-step crystallization at 120 °C.",
+     "quote": "P-0-120 1 0.033 120 ℃ (6 h)",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "P-0-120 1 0.033 120 ℃ (6 h)",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "P-0-120 1 0.033 120 ℃ (6 h)",
+       "value_num": 6,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "induction_time",
+     "quote": "the syntheses of TS-1 at a single heating temperature of 120 °C and 170 °C have been studied, wherein the nucleation induction time is shortened from 6 h to 2 h (120 °C, Fig. S3†) and from 2 h to 1 h (170 °C, Fig. S4†) in the presence of PAM",
+     "value_num": 6,
+     "unit": "h",
+     "measured_by": "xrd_1"
+    }
+   ]
+  },
+  {
+   "label": "P-10-120",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 zeolite (single-step crystallization at 120 °C, with PAM)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "P-10-120 1 0.033 PAM 0.10 120 ℃ (3 h)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "quote": "P-10-120 1 0.033 PAM 0.10 120 ℃ (3 h)",
+     "step_order": 5,
+     "value_text": "absent (no 80 °C stage)",
+     "parent_value": "80 °C"
+    }
+   ],
+   "succeeded": true,
+   "steps": [
+    {
+     "order": 1,
+     "action": "hydrothermal_treatment",
+     "description": "Single-step crystallization at 120 °C.",
+     "quote": "P-10-120 1 0.033 PAM 0.10 120 ℃ (3 h)",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "P-10-120 1 0.033 PAM 0.10 120 ℃ (3 h)",
+       "value_num": 120,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "P-10-120 1 0.033 PAM 0.10 120 ℃ (3 h)",
+       "value_num": 3,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "induction_time",
+     "quote": "the syntheses of TS-1 at a single heating temperature of 120 °C and 170 °C have been studied, wherein the nucleation induction time is shortened from 6 h to 2 h (120 °C, Fig. S3†) and from 2 h to 1 h (170 °C, Fig. S4†) in the presence of PAM",
+     "value_num": 2,
+     "unit": "h",
+     "measured_by": "xrd_1"
+    }
+   ]
+  },
+  {
+   "label": "P-0-170",
+   "parent": "P-0-80-120",
+   "material": {
+    "name": "TS-1 zeolite (single-step crystallization at 170 °C, no PAM)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "P-0-170 1 0.033 170 ℃ (3 h)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "quote": "P-0-170 1 0.033 170 ℃ (3 h)",
+     "step_order": 1,
+     "value_text": "absent (no 80 °C stage)",
+     "parent_value": "80 °C"
+    },
+    {
+     "parameter": "temperature",
+     "quote": "P-0-170 1 0.033 170 ℃ (3 h)",
+     "step_order": 2,
+     "value_num": 170,
+     "unit": "°C",
+     "parent_value": "120 °C"
+    },
+    {
+     "parameter": "duration",
+     "quote": "P-0-170 1 0.033 170 ℃ (3 h)",
+     "step_order": 2,
+     "value_num": 3,
+     "unit": "h",
+     "parent_value": "6 h"
+    }
+   ],
+   "succeeded": true,
+   "steps": [
+    {
+     "order": 1,
+     "action": "hydrothermal_treatment",
+     "description": "Single-step crystallization at 170 °C.",
+     "quote": "P-0-170 1 0.033 170 ℃ (3 h)",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "P-0-170 1 0.033 170 ℃ (3 h)",
+       "value_num": 170,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "P-0-170 1 0.033 170 ℃ (3 h)",
+       "value_num": 3,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "induction_time",
+     "quote": "the syntheses of TS-1 at a single heating temperature of 120 °C and 170 °C have been studied, wherein the nucleation induction time is shortened from 6 h to 2 h (120 °C, Fig. S3†) and from 2 h to 1 h (170 °C, Fig. S4†) in the presence of PAM",
+     "value_num": 2,
+     "unit": "h",
+     "measured_by": "xrd_1"
+    }
+   ]
+  },
+  {
+   "label": "P-10-170",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 zeolite (single-step crystallization at 170 °C, with PAM)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "P-10-170 1 0.033 PAM 0.10 170 ℃ (3 h)",
+   "variations": [
+    {
+     "parameter": "temperature",
+     "quote": "P-10-170 1 0.033 PAM 0.10 170 ℃ (3 h)",
+     "step_order": 5,
+     "value_text": "absent (no 80 °C stage)",
+     "parent_value": "80 °C"
+    },
+    {
+     "parameter": "temperature",
+     "quote": "P-10-170 1 0.033 PAM 0.10 170 ℃ (3 h)",
+     "step_order": 6,
+     "value_num": 170,
+     "unit": "°C",
+     "parent_value": "120 °C"
+    }
+   ],
+   "succeeded": true,
+   "steps": [
+    {
+     "order": 1,
+     "action": "hydrothermal_treatment",
+     "description": "Single-step crystallization at 170 °C.",
+     "quote": "P-10-170 1 0.033 PAM 0.10 170 ℃ (3 h)",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "P-10-170 1 0.033 PAM 0.10 170 ℃ (3 h)",
+       "value_num": 170,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "P-10-170 1 0.033 PAM 0.10 170 ℃ (3 h)",
+       "value_num": 3,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "autoclave_volume",
+      "fill_fraction",
+      "heating_rate",
+      "cooling"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "induction_time",
+     "quote": "the syntheses of TS-1 at a single heating temperature of 120 °C and 170 °C have been studied, wherein the nucleation induction time is shortened from 6 h to 2 h (120 °C, Fig. S3†) and from 2 h to 1 h (170 °C, Fig. S4†) in the presence of PAM",
+     "value_num": 1,
+     "unit": "h",
+     "measured_by": "xrd_1"
+    }
+   ]
+  },
+  {
+   "label": "micro-TS-1",
+   "parent": "P-0-170",
+   "material": {
+    "name": "conventional microporous TS-1",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": "microporous crystals (SEM, TEM in Fig. S31)"
+   },
+   "quote": "traditional microporous TS-1 (named micro-TS-1) have been synthesized for comparison",
+   "variations": [
+    {
+     "parameter": "tetrabutyl orthotitanate (TBOT)",
+     "quote": "micro-TS-1 1 0.014 170 ℃ (36 h)",
+     "value_num": 0.014,
+     "unit": "mol per mol SiO2",
+     "parent_value": "0.033"
+    },
+    {
+     "parameter": "water",
+     "quote": "The ratio of H2O/SiO2 is 124 for micro-TS-1.",
+     "value_num": 124,
+     "unit": "mol per mol SiO2",
+     "parent_value": "30"
+    },
+    {
+     "parameter": "duration",
+     "quote": "micro-TS-1 1 0.014 170 ℃ (36 h)",
+     "step_order": 1,
+     "value_num": 36,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "catalytic_performance_DBT_conversion_120min",
+     "quote": "Fig. 7 (a) Catalytic oxidation of DBT with TBHP and (b) epoxidation of 1-hexene over synthesized TS-1 samples.",
+     "value_num": 13,
+     "unit": "%",
+     "measured_by": "cat_dbt",
+     "from_figure": "Fig. 7a"
+    }
+   ]
+  },
+  {
+   "label": "P-S-10-80-120",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "pure silica silicalite-1",
+    "formula": "SiO2",
+    "family": "zeolithe",
+    "phase": "MFI (silicalite-1)",
+    "morphology": null
+   },
+   "quote": "pure silicon silicalite-1 zeolite (named as P-S-10-80-120)",
+   "variations": [
+    {
+     "parameter": "tetrabutyl orthotitanate (TBOT)",
+     "quote": "P-S-10-80-120 1 0 PAM 0.10 80 ℃ (3h) + 120 ℃ (3h)",
+     "value_text": "absent (TiO2 = 0)",
+     "parent_value": "0.033"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "product_identity",
+     "quote": "the acceleration effect of PAM on the nucleation and the non-classical crystallization mechanism are also presented on pure silica silicalite-1 zeolite sample (P-S-10-80-120)",
+     "value_text": "pure silica silicalite-1 zeolite; same acceleration of nucleation and non-classical crystallization by PAM as for TS-1"
+    }
+   ]
+  },
+  {
+   "label": "AM-10-80-120",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 zeolite crystallized with acrylamide (AM)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "TS-1 zeolites with different polymers were synthesized under the same conditions as P-10-80-120.",
+   "reagents": [
+    {
+     "name": "acrylamide (AM)",
+     "formula": "C3H5NO",
+     "role": "modulator",
+     "quote": "AM-10-80-120 1 0.033 AM 0.10 80 ℃ (3 h) + 120 ℃ (12 h)",
+     "amount": 0.1,
+     "unit": "mol per mol SiO2",
+     "supplier": "Tianjin Fuchen Chemical Reagent Factory",
+     "supplier_quote": "acrylamide (AM, Tianjin Fuchen Chemical Reagent Factory)",
+     "not_stated": [
+      "purity"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "cationic polyacrylamide (PAM; MW=8000000-15000000)",
+     "quote": "AM-10-80-120 1 0.033 AM 0.10 80 ℃ (3 h) + 120 ℃ (12 h)",
+     "value_text": "replaced by acrylamide (AM)",
+     "parent_value": "0.1"
+    },
+    {
+     "parameter": "duration",
+     "quote": "AM-10-80-120 1 0.033 AM 0.10 80 ℃ (3 h) + 120 ℃ (12 h)",
+     "step_order": 6,
+     "value_num": 12,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "AM-10-80-120 3 h 12 h 85",
+     "value_num": 85,
+     "measured_by": "icp_1"
+    }
+   ]
+  },
+  {
+   "label": "P800-10-80-120",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 zeolite crystallized with PAM of MW=8000000 (Adamas)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "TS-1 zeolites with different polymers were synthesized under the same conditions as P-10-80-120.",
+   "reagents": [
+    {
+     "name": "cationic polyacrylamide (PAM; MW=8000000; Adamas)",
+     "formula": null,
+     "role": "modulator",
+     "quote": "P800-10-80-120 1 0.033 PAM (MW=8000000) 0.10 80 ℃ (3 h) + 120 ℃ (3 h)",
+     "amount": 0.1,
+     "unit": "mol per mol SiO2",
+     "supplier": "Adamas",
+     "supplier_quote": "cationic polyacrylamide (PAM, MW=8000000, Adamas)",
+     "not_stated": [
+      "purity"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "cationic polyacrylamide (PAM; MW=8000000-15000000)",
+     "quote": "P800-10-80-120 1 0.033 PAM (MW=8000000) 0.10 80 ℃ (3 h) + 120 ℃ (3 h)",
+     "value_text": "replaced by PAM of MW=8000000 (Adamas)",
+     "parent_value": "0.1"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "P800-10-80-120 3 h 3 h 28",
+     "value_num": 28,
+     "measured_by": "icp_1"
+    }
+   ]
+  },
+  {
+   "label": "P1800-10-80-120",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 zeolite crystallized with PAM of MW=18000000 (Adamas)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "TS-1 zeolites with different polymers were synthesized under the same conditions as P-10-80-120.",
+   "reagents": [
+    {
+     "name": "cationic polyacrylamide (PAM; MW=18000000; Adamas)",
+     "formula": null,
+     "role": "modulator",
+     "quote": "P1800-10-80-120 1 0.033 PAM (MW=18000000) 0.10 80 ℃ (3 h) + 120 ℃ (8 h)",
+     "amount": 0.1,
+     "unit": "mol per mol SiO2",
+     "supplier": "Adamas",
+     "supplier_quote": "cationic polyacrylamide (PAM, MW=18000000, Adamas)",
+     "not_stated": [
+      "purity"
+     ]
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "cationic polyacrylamide (PAM; MW=8000000-15000000)",
+     "quote": "P1800-10-80-120 1 0.033 PAM (MW=18000000) 0.10 80 ℃ (3 h) + 120 ℃ (8 h)",
+     "value_text": "replaced by PAM of MW=18000000 (Adamas)",
+     "parent_value": "0.1"
+    },
+    {
+     "parameter": "duration",
+     "quote": "P1800-10-80-120 1 0.033 PAM (MW=18000000) 0.10 80 ℃ (3 h) + 120 ℃ (8 h)",
+     "step_order": 6,
+     "value_num": 8,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "P1800-10-80-120 3 h 6 h 59",
+     "value_num": 59,
+     "measured_by": "icp_1"
+    },
+    {
+     "property": "absorption_peak_anatase",
+     "quote": "the addition of PAM (18 000 000) and PEI results in anatase formation in the samples (Fig. S24†)",
+     "value_text": "anatase formed in the sample (UV-vis, Fig. S24)",
+     "measured_by": "uvvis_1"
+    }
+   ]
+  },
+  {
+   "label": "PEI-10-80-120",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 zeolite crystallized with polyethyleneimine (PEI)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "TS-1 zeolites with different polymers were synthesized under the same conditions as P-10-80-120.",
+   "reagents": [
+    {
+     "name": "polyethyleneimine (PEI; MW=10000)",
+     "formula": "(C2H5N)n",
+     "role": "modulator",
+     "quote": "PEI-10-80-120 1 0.033 PEI 0.10 80 ℃ (3 h) + 120 ℃ (6 h)",
+     "amount": 0.1,
+     "unit": "mol per mol SiO2",
+     "purity": "99 %",
+     "supplier": "Aladdin",
+     "supplier_quote": "polyethyleneimine (PEI, MW=10000, Aladdin, 99 %)"
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "cationic polyacrylamide (PAM; MW=8000000-15000000)",
+     "quote": "PEI-10-80-120 1 0.033 PEI 0.10 80 ℃ (3 h) + 120 ℃ (6 h)",
+     "value_text": "replaced by polyethyleneimine (PEI)",
+     "parent_value": "0.1"
+    },
+    {
+     "parameter": "duration",
+     "quote": "PEI-10-80-120 1 0.033 PEI 0.10 80 ℃ (3 h) + 120 ℃ (6 h)",
+     "step_order": 6,
+     "value_num": 6,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "PEI-10-80-120 3 h 6 h 69",
+     "value_num": 69,
+     "measured_by": "icp_1"
+    },
+    {
+     "property": "absorption_peak_anatase",
+     "quote": "the addition of PAM (18 000 000) and PEI results in anatase formation in the samples (Fig. S24†)",
+     "value_text": "anatase formed in the sample (UV-vis, Fig. S24)",
+     "measured_by": "uvvis_1"
+    }
+   ]
+  },
+  {
+   "label": "PDDA-10-80-120",
+   "parent": "P-10-80-120",
+   "material": {
+    "name": "TS-1 zeolite crystallized with polydimethyldiallyl ammonium chloride (PDDA)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": null
+   },
+   "quote": "TS-1 zeolites with different polymers were synthesized under the same conditions as P-10-80-120.",
+   "reagents": [
+    {
+     "name": "polydimethyldiallyl ammonium chloride (PDDA; MW=400000-500000)",
+     "formula": "(C8H16NCl)n",
+     "role": "modulator",
+     "quote": "PDDA-10-80-120 1 0.033 PDDA 0.10 80 ℃ (3 h) + 120 ℃ (8 h)",
+     "amount": 0.1,
+     "unit": "mol per mol SiO2",
+     "purity": "20 wt%",
+     "supplier": "Aladdin",
+     "supplier_quote": "polydimethyldiallyl ammonium chloride (PDDA, MW=400000-500000, Aladdin, 20 wt%)"
+    }
+   ],
+   "variations": [
+    {
+     "parameter": "cationic polyacrylamide (PAM; MW=8000000-15000000)",
+     "quote": "PDDA-10-80-120 1 0.033 PDDA 0.10 80 ℃ (3 h) + 120 ℃ (8 h)",
+     "value_text": "replaced by polydimethyldiallyl ammonium chloride (PDDA)",
+     "parent_value": "0.1"
+    },
+    {
+     "parameter": "duration",
+     "quote": "PDDA-10-80-120 1 0.033 PDDA 0.10 80 ℃ (3 h) + 120 ℃ (8 h)",
+     "step_order": 6,
+     "value_num": 8,
+     "unit": "h",
+     "parent_value": "3 h"
+    }
+   ],
+   "succeeded": true,
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "PDDA-10-80-120 3 h 8 h 126",
+     "value_num": 126,
+     "measured_by": "icp_1"
+    }
+   ]
+  },
+  {
+   "label": "P-10-80-120-HCl",
+   "parent": null,
+   "kind": "post_treatment",
+   "material": {
+    "name": "TS-1 zeolite after acid washing (P-10-80-120-HCl)",
+    "formula": null,
+    "family": "zeolithe",
+    "phase": "MFI (TS-1)",
+    "morphology": "hierarchical structure maintained"
+   },
+   "methods": [
+    "post_synthetic_modification"
+   ],
+   "method": "room-temperature washing of calcined P-10-80-120 with 1 M HCl to remove most TiO6 species",
+   "quote": "the sample of P-10-80-120 was washed to eliminate most TiO6 species",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "P-10-80-120 (calcined TS-1)",
+     "formula": "TS-1",
+     "role": "intermediate",
+     "quote": "1 g P-10-80- 120 sample was treated with 100 mL 1M HCl water solution at room temperature for 6 h, and then thoroughly washed with distilled water.",
+     "amount": 1,
+     "unit": "g"
+    },
+    {
+     "name": "hydrochloric acid (1 M aqueous solution)",
+     "formula": "HCl",
+     "role": "etchant",
+     "quote": "1 g P-10-80- 120 sample was treated with 100 mL 1M HCl water solution at room temperature for 6 h, and then thoroughly washed with distilled water.",
+     "amount": 100,
+     "unit": "mL",
+     "purity": "36 wt%",
+     "supplier": "Beijing Chemical Works",
+     "supplier_quote": "HCl (Beijing Chemical Works, 36 wt%)"
+    },
+    {
+     "name": "distilled water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "thoroughly washed with distilled water"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "etch",
+     "description": "Treat 1 g of P-10-80-120 with 100 mL of 1 M HCl aqueous solution at room temperature for 6 h.",
+     "quote": "1 g P-10-80- 120 sample was treated with 100 mL 1M HCl water solution at room temperature for 6 h, and then thoroughly washed with distilled water.",
+     "parameters": [
+      {
+       "name": "mass",
+       "quote": "1 g P-10-80- 120 sample",
+       "value_num": 1,
+       "unit": "g"
+      },
+      {
+       "name": "volume",
+       "quote": "100 mL 1M HCl water solution",
+       "value_num": 100,
+       "unit": "mL"
+      },
+      {
+       "name": "concentration",
+       "quote": "100 mL 1M HCl water solution",
+       "value_num": 1,
+       "unit": "M"
+      },
+      {
+       "name": "temperature",
+       "quote": "at room temperature for 6 h",
+       "value_text": "room temperature"
+      },
+      {
+       "name": "duration",
+       "quote": "at room temperature for 6 h",
+       "value_num": 6,
+       "unit": "h"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 2,
+     "action": "wash",
+     "description": "Wash thoroughly with distilled water.",
+     "quote": "thoroughly washed with distilled water",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "thoroughly washed with distilled water",
+       "value_text": "distilled water"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "repetitions"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "icp_1_hcl",
+     "technique": "elemental_analysis",
+     "instrument": "iCAP 7000 SERIES",
+     "result": "bulk Si/Ti ratio by ICP",
+     "quote": "Chemical compositions were determined by Inductively Coupled Plasma (ICP) analysis using an iCAP 7000 SERIES.",
+     "settings": [],
+     "not_stated": [
+      "digestion",
+      "calibration"
+     ]
+    },
+    {
+     "id": "tem_1_hcl",
+     "technique": "TEM",
+     "instrument": "FEI Tecnai F20",
+     "result": "morphology of the time-resolved solids, particle sizes, lattice fringes",
+     "quote": "Scanning electron microscopy (SEM) and transmission electron microscopy (TEM) images were collected using a JSM- 6510 (JEOL) electron microscope and a FEI Tecnai F20 electron microscope operating at an acceleration voltage of 200 kV, respectively.",
+     "settings": [
+      {
+       "name": "accelerating_voltage",
+       "quote": "operating at an acceleration voltage of 200 kV",
+       "value_num": 200,
+       "unit": "kV"
+      }
+     ],
+     "not_stated": [
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "uvvis_1_hcl",
+     "technique": "UV_vis",
+     "instrument": "SHIMADZU U-4100",
+     "result": "Ti species (TiO4, TiO6, anatase) from diffuse reflectance UV-vis spectra",
+     "quote": "Ti species were investigated by UV-vis diffuse reflectance spectroscopy (UV-Vis) over a range of 200 to 600 nm using a SHIMADZU U-4100.",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "quote": "over a range of 200 to 600 nm",
+       "value_text": "200 to 600 nm"
+      },
+      {
+       "name": "calibration",
+       "quote": "The baseline correction was carried out with powder BaSO4.",
+       "value_text": "baseline correction with powder BaSO4"
+      }
+     ],
+     "not_stated": [
+      "band_gap_method",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "cat_dbt_hcl",
+     "technique": "catalytic_test",
+     "instrument": "25 mL two-neck glass flask with reflux condenser; GC-MS Thermo Fisher Trace ISQ",
+     "result": "oxidative desulfurization of DBT with TBHP in model fuel",
+     "quote": "Oxidative desulfurization of dibenzothiophene (DBT). A certain amount of DBT was dissolved in n- octane to prepare the model fuel with the concentration of sulfur is about 500 ppm. The ODS reactivity was tested in a 25 mL two-neck glass flask equipped with a reflux condenser. In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+     "settings": [
+      {
+       "name": "catalyst_mass",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_num": 0.1,
+       "unit": "g"
+      },
+      {
+       "name": "reactant_concentration",
+       "quote": "A certain amount of DBT was dissolved in n- octane to prepare the model fuel with the concentration of sulfur is about 500 ppm.",
+       "value_text": "DBT in n-octane, sulfur concentration about 500 ppm"
+      },
+      {
+       "name": "reaction_volume",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_num": 10,
+       "unit": "mL"
+      },
+      {
+       "name": "reaction_temperature",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_num": 353,
+       "unit": "K"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_num": 120,
+       "unit": "min"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "Afterwards, GC-MS (Thermo Fisher Trace ISQ, equipped with a TG-5MS column, 60 m 320 μm 25 μm) was utilized to analyse the reactant and products.",
+       "value_text": "GC-MS (Thermo Fisher Trace ISQ, TG-5MS column)"
+      },
+      {
+       "name": "oxidant",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_text": "TBHP, 0.028 g (70 wt% aqueous solution)"
+      },
+      {
+       "name": "internal_standard",
+       "quote": "In a typical run, the reaction was carried out with 10 mL model fuel, 0.10 g of zeolite catalyst, 0.028 g of n-octadecane and 0.028 g of TBHP at 353 K for 120 min.",
+       "value_text": "n-octadecane, 0.028 g"
+      },
+      {
+       "name": "reaction_solvent",
+       "quote": "was dissolved in n- octane",
+       "value_text": "n-octane (model fuel)"
+      }
+     ],
+     "not_stated": [
+      "light_source"
+     ]
+    },
+    {
+     "id": "cat_hex_hcl",
+     "technique": "catalytic_test",
+     "instrument": "25 mL round-bottom flask with reflux condenser; GC-MS Thermo Fisher Trace ISQ",
+     "result": "epoxidation of 1-hexene with H2O2 in methanol",
+     "quote": "Epoxidation of 1-hexene with H2O2 as oxidant was carried out in a 25 mL round-bottom flask equipped with a reflux condenser.",
+     "settings": [
+      {
+       "name": "catalyst_mass",
+       "quote": "0.05 g of catalyst",
+       "value_num": 0.05,
+       "unit": "g"
+      },
+      {
+       "name": "reactant_concentration",
+       "quote": "10 mmol of 1-hexene and 3.3 mmol H2O2 (30 wt%)",
+       "value_text": "1-hexene, 10 mmol"
+      },
+      {
+       "name": "reaction_volume",
+       "quote": "10 mL of S8 methanol",
+       "value_text": "10 mL of methanol (SI text; Table S4 footnote says methanol, 8.0 g)"
+      },
+      {
+       "name": "reaction_temperature",
+       "quote": "the reaction was carried out under continual magnetic stirring at 333 K for 120 min",
+       "value_num": 333,
+       "unit": "K"
+      },
+      {
+       "name": "reaction_time",
+       "quote": "the reaction was carried out under continual magnetic stirring at 333 K for 120 min",
+       "value_num": 120,
+       "unit": "min"
+      },
+      {
+       "name": "analysis_method",
+       "quote": "the liquid product was centrifuged and analyzed by GC-MS (Thermo Fisher Trace ISQ, equipped with a TG-5MS column, 60 m 320 μm 25 μm) and n-dodecane as internal standard.",
+       "value_text": "GC-MS with n-dodecane as internal standard; H2O2 conversion and efficiency by iodometric method"
+      },
+      {
+       "name": "oxidant",
+       "quote": "10 mmol of 1-hexene and 3.3 mmol H2O2 (30 wt%)",
+       "value_text": "H2O2 (30 wt%), 3.3 mmol"
+      },
+      {
+       "name": "internal_standard",
+       "quote": "the liquid product was centrifuged and analyzed by GC-MS (Thermo Fisher Trace ISQ, equipped with a TG-5MS column, 60 m 320 μm 25 μm) and n-dodecane as internal standard.",
+       "value_text": "n-dodecane"
+      },
+      {
+       "name": "reaction_solvent",
+       "quote": "10 mL of S8 methanol",
+       "value_text": "methanol"
+      }
+     ],
+     "not_stated": [
+      "light_source"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "elemental_composition_SiTi_ratio",
+     "quote": "the Si/Ti ratio increases from 29 to 67 in P-10-80-120-HCl",
+     "value_num": 67,
+     "measured_by": "icp_1_hcl"
+    },
+    {
+     "property": "absorption_peak_TiO6",
+     "quote": "after washing off most TiO6 species by acid treatment without destroying the hierarchical structure (see details in Fig. S32†)",
+     "value_text": "most TiO6 species washed off by the acid treatment",
+     "measured_by": "uvvis_1_hcl"
+    },
+    {
+     "property": "morphology",
+     "quote": "although it maintains the mesoporous structure (Fig. S32a†)",
+     "value_text": "mesoporous structure maintained",
+     "measured_by": "tem_1_hcl"
+    },
+    {
+     "property": "catalytic_performance_DBT_conversion_120min",
+     "quote": "Fig. 7 (a) Catalytic oxidation of DBT with TBHP and (b) epoxidation of 1-hexene over synthesized TS-1 samples.",
+     "value_num": 69,
+     "unit": "%",
+     "measured_by": "cat_dbt_hcl",
+     "from_figure": "Fig. 7a"
+    },
+    {
+     "property": "catalytic_performance_hexene_max_conversion",
+     "quote": "P-10-80-120-HCl 21.4 99 25.7 83.3",
+     "value_num": 21.4,
+     "unit": "%",
+     "measured_by": "cat_hex_hcl"
+    },
+    {
+     "property": "catalytic_performance_hexene_epoxide_selectivity",
+     "quote": "P-10-80-120-HCl 21.4 99 25.7 83.3",
+     "value_num": 99,
+     "unit": "%",
+     "measured_by": "cat_hex_hcl"
+    },
+    {
+     "property": "catalytic_performance_H2O2_conversion",
+     "quote": "P-10-80-120-HCl 21.4 99 25.7 83.3",
+     "value_num": 25.7,
+     "unit": "%",
+     "measured_by": "cat_hex_hcl"
+    },
+    {
+     "property": "catalytic_performance_H2O2_efficiency",
+     "quote": "P-10-80-120-HCl 21.4 99 25.7 83.3",
+     "value_num": 83.3,
+     "unit": "%",
+     "measured_by": "cat_hex_hcl"
+    }
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare la zéolithe TS-1 (titanosilicate de structure MFI) par cristallisation hydrothermale en deux étapes (80 °C 3 h puis 120 °C) d'un gel TEOS/TBOT/TPAOH, en présence ou non de polyacrylamide (PAM) comme modificateur de croissance. Le PAM (PAM/SiO2 = 0,10) divise par 1,5 le temps total de cristallisation (11 h à 7 h), fait passer la voie de cristallisation d'une croissance classique à une croissance non classique par attachement de particules (via des particules vermiformes amorphes) et porte la teneur en titane à Si/Ti = 29 contre 107 sans PAM, avec des espèces TiO6 en plus de TiO4. Les échantillons sont caractérisés par XRD, MET, XPS, RMN du 29Si, IR, UV-vis, XAS, BET, et testés en désulfuration oxydante du dibenzothiophène et en époxydation du 1-hexène."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs veulent savoir si un polymère modificateur de croissance cristalline (PAM) peut basculer la cristallisation de TS-1 d'une voie classique vers une voie non classique, accélérer la nucléation et augmenter le nombre de sites actifs Ti (surtout TiO6) incorporés dans la charpente, et comment la masse molaire, la nature du polymère et sa quantité jouent sur ces effets."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Le suivi en temps à 120 °C (0 à 3 h pour P-10-80-120, 6 à 12 h pour le témoin P-0-80-120) permet de repérer l'apparition des premiers cristaux et la nature des précurseurs ; les cristallisations en une étape à 120 et 170 °C vérifient que l'accélération ne dépend pas du profil en deux étapes ; la série en quantité de PAM (0, 0,05, 0,10, 0,20) cherche le compromis entre teneur en Ti, espèces TiO6 et apparition d'anatase ; la série de polymères (AM, PAM de 8 et 18 millions, PEI, PDDA) teste le rôle de la masse molaire et du groupe fonctionnel ; la silicalite-1 sans Ti et la TS-1 conventionnelle servent de références, et le lavage acide à HCl sert à retirer les TiO6 pour attribuer l'activité catalytique."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Le PAM seul fait varier le matériau : sans PAM (P-0-80-120) la teneur en titane reste à Si/Ti = 107 et le temps d'induction est de 9 h ; avec PAM (P-10-80-120) Si/Ti = 29 et l'induction tombe à 4,5 h. Augmenter le PAM de 0 à 0,2 fait passer Si/Ti de 107 à 26, mais à 0,20 de l'anatase apparaît, la taille passe à 180 nm et le volume poreux total chute à 0,16 cm3 g-1. Parmi les autres polymères, seul le PAM de masse molaire 8 000 000 donne un Si/Ti comparable (28) ; l'AM et le PDDA n'accélèrent pas la cristallisation, le PEI et le PAM de 18 000 000 produisent de l'anatase. En catalyse, la conversion maximale du 1-hexène suit 18,3 % (P-0), 20,0 % (P-5), 26,5 % (P-10), 21,4 % (P-10-HCl) et 2,3 % (P-20)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "P-10-80-120",
+   "text": "Dans le suivi en temps de P-10-80-120, les particules vermiformes (WLPs) amorphes grossissent de 200 à environ 300 nm puis restent stables en nombre décroissant, tandis que des sous-cristaux d'environ 20 nm apparaissent à leur surface dès 1,5 h à 120 °C.",
+   "quote": "With the increase of heating time (0.5–2.5 h), WLPs grow to ca. 300 nm and then keep unchanged, but the number of WLPs decreases gradually (Fig. 2b–f)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "P-0-80-120",
+   "text": "Sans PAM, la teneur en titane du solide augmente lentement avec la durée de cristallisation (Si/Ti de 107 à 98 entre 6 et 24 h) et les espèces TiO6 n'apparaissent qu'à 8 h, ce qui est cohérent avec une voie classique où le titane entre progressivement dans les cristaux.",
+   "quote": "In the absence of PAM, the Ti content in the solid product of P-0-80-120 gradually increases (Si/Ti ratio from 107 to 98) with the increase of the crystallization time (6–24 h) (Fig. S20†)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "P-0-80-120",
+   "text": "Entre 8 et 12 h à 120 °C, les cristaux du témoin sans PAM deviennent plus lisses et plus réguliers ; la valeur n'est pas donnée par échantillon.",
+   "quote": "As the crystallization time increases (8–12 h), the surface of crystals becomes smoother and the shape becomes much more regular (Fig. 1f and S10†)."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Quantité de PAM : dans une plage adaptée, plus il y a de PAM, plus la teneur en Ti total et en TiO6 augmente ; le rapport TiO4/TiO6 se règle par la quantité de PAM. À PAM/SiO2 = 0,20, de l'anatase se forme.",
+   "quote": "Therefore, in a suitable range, the amount of PAM is positively correlated with the content of overall Ti and TiO6 in TS-1, and the ratio of TiO4/TiO6 can be adjusted by controlling the amount of PAM."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Tous les échantillons assistés par PAM cristallisent en moins de 6 h et montrent les pics de la structure MFI (valeur donnée pour le groupe, non rattachée à un échantillon).",
+   "quote": "all PAM-assisted samples can crystallize within 6 hours and show the characteristic diffraction peaks of the MFI structure (Fig. S25†)"
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Polymères : l'AM et le PDDA n'accélèrent pas la cristallisation, le PEI et les PAM de 8 et 18 millions l'accélèrent à des degrés divers ; hors PDDA, tous introduisent du Ti, le PAM de 8 millions donnant le Si/Ti le plus bas (28), et le PAM de 18 millions ainsi que le PEI donnent de l'anatase. Les auteurs en concluent qu'une masse molaire adaptée est nécessaire et que les groupes acyles comptent plus que les amines.",
+   "quote": "These results demonstrate that the effect of accelerating crystallization and introducing rich titanium requires that the PAM has a MW in a suitable range, and the cation may not be the key factor, and acyl functional groups on the polymer play a greater role than amino groups."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "Références catalytiques non synthétisées : l'anatase nanométrique commerciale donne 8,8 % de conversion du DBT et 1,0 % de conversion maximale du 1-hexène (1,01 % dans le tableau S4), donc le TiO2 hors charpente est quasi inerte ; ces valeurs ne sont pas rattachées à une voie car l'anatase est un produit du commerce.",
+   "quote": "The conversion of DBT on nano-anatase TiO2 is 8.8%, indicating that the high catalytic activity of P-10-80-120 may originate from the framework Ti species (TiO4 or TiO6) rather than the extra-framework anatase."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "En désulfuration du DBT, la conversion augmente avec la teneur en Ti, surtout en TiO6, dans la série P-x-80-120 (x = 0, 5, 10). Pour l'époxydation du 1-hexène, les TiO4 de charpente semblent un peu plus sélectifs que les TiO6.",
+   "quote": "the conversion of DBT gradually increases with the increase of Ti content, especially the TiO6 content, in the P-x-80-120 samples (x = 0, 5 and 10)"
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs retiennent P-10-80-120 comme optimum : une TS-1 sans anatase de Si/Ti = 29, un temps de cristallisation réduit de 1,5 fois et une meilleure activité en DBT et en 1-hexène.",
+   "quote": "By such an approach, we successfully synthesized anatase-free TS-1 zeolite with Si/Ti ratio up to 29, a 1.5-fold reduction in crystallization time, and improved catalytic performance for oxidative desulfurization of dibenzothiophene and epoxidation of 1-hexene."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "P-10-80-120",
+   "text": "Selon les auteurs, les groupes acyles du PAM font des liaisons hydrogène avec les monomères et oligomères de Si et de Ti, ce qui favorise l'agrégation en particules vermiformes (WLPs) ; des noyaux se forment sur ces WLPs, les sous-cristaux d'environ 20 nm croissent par attachement, et les groupes amino du PAM coordonnent le titane sous forme TiO6(PAM), incorporé directement dans les cristaux puis converti en TiO6 et TiO4 à la calcination.",
+   "quote": "the acyl groups on PAM can form hydrogen bonds with the monomers and oligomers of Si and Ti, facilitating the reach of the critical aggregation concentration (CAC) in the network region formed by the PAM long-chain entanglement, and promoting the aggregation and participation of Si and Ti precipitates in the form of WLPs."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "P-10-80-120",
+   "text": "Probablement, l'hydrolyse rapide du TBOT et du TEOS en milieu TPAOH basique donne des oligomères Si–O–Ti que le polymère piège en réseau, ce qui sépare nucléation et incorporation du titane de la croissance en phase liquide ; la basse température de 80 °C puis 120 °C limite la perte de Ti sous forme d'anatase. On attend que la calcination à 550 °C brûle le PAM et le TPA+ et libère les micropores et les mésopores intracristallins."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "Le TPAOH (base forte organique) et l'acide chlorhydrique à 1 M sont corrosifs ; les alcoxydes TEOS et TBOT dégagent de l'éthanol et du butanol à l'hydrolyse, inflammables ; l'autoclave en acier à revêtement Téflon, chauffé à 120 ou 170 °C, est sous pression autogène ; la calcination à 550 °C libère les produits de décomposition du PAM et du TPA+ ; le TBHP et le H2O2 sont des oxydants concentrés à manipuler avec précaution, et le n-octane et le méthanol sont inflammables ; le polyacrylamide peut contenir de l'acrylamide résiduel, neurotoxique, et les poudres de zéolithe sont à manipuler sous aspiration."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Pour refaire la synthèse il manque : les masses et volumes réels de réactifs (l'article ne donne que des rapports molaires par mole de SiO2 : 1 SiO2 : 0,033 TiO2 : 0,27 TPAOH : 30 H2O : 0,1 PAM, sans dire si le PAM est compté par motif ou par chaîne), le volume et le taux de remplissage de l'autoclave, la vitesse d'agitation, la durée d'hydrolyse avant l'ajout du PAM, la vitesse de centrifugation, l'atmosphère et la rampe de chauffe de la calcination, et la pureté du TEOS et du PAM. Les figures d'annexe S1 à S36 (diffractogrammes, spectres, courbes de recyclage) n'ont pas pu être lues : seules leurs légendes sont dans le dépôt, donc les cinétiques de cristallisation des cristallisations en une étape, des séries de polymères et de la série en PAM ne sont connues que par les phrases du texte et les tableaux S1 à S4."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "P-0-80-120",
+   "text": "Le protocole du témoin sans PAM se limite à « même composition molaire sans PAM » et aux deux paliers de cristallisation ; ni la préparation du gel (agitation de 24 h ?), ni le traitement du solide (centrifugation, lavage, séchage, calcination) ne sont décrits pour lui, alors que des résultats sur échantillon calciné sont donnés."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "P-0-120",
+   "text": "Les cristallisations en une étape (P-0-120, P-10-120, P-0-170, P-10-170) et les échantillons de comparaison sont définis seulement par le tableau S1 (composition et température/durée) ; la préparation du gel et le traitement du solide ne sont pas décrits pour eux."
+  }
+ ],
+ "sample_inventory": [
+  {
+   "sample": "P-10-80-120",
+   "defined_in": "SI Syntheses of PAM- assisted TS-1; Table S1",
+   "route": "P-10-80-120",
+   "results_in": [
+    "Table S2",
+    "Table S4",
+    "Fig. 1b",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "P-5-80-120",
+   "defined_in": "SI; Table S1",
+   "route": "P-5-80-120",
+   "results_in": [
+    "Table S2",
+    "Table S4",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "P-20-80-120",
+   "defined_in": "SI; Table S1",
+   "route": "P-20-80-120",
+   "results_in": [
+    "Table S2",
+    "Table S4",
+    "Fig. 7",
+    "Fig. S27",
+    "Fig. S28"
+   ]
+  },
+  {
+   "sample": "P-0-80-120",
+   "defined_in": "SI Syntheses of control; Table S1",
+   "route": "P-0-80-120",
+   "results_in": [
+    "Table S2",
+    "Table S4",
+    "Fig. 1b",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "P-0-80-120 at 8 h and 12 h",
+   "defined_in": "Fig. 1, Fig. S10",
+   "route": "P-0-80-120_8h",
+   "results_in": [
+    "Fig. 1f-g",
+    "Fig. S10",
+    "Fig. S21"
+   ]
+  },
+  {
+   "sample": "P-0-80-120 at 12 h",
+   "defined_in": "Fig. S10",
+   "route": "P-0-80-120_12h",
+   "results_in": [
+    "Fig. S10"
+   ]
+  },
+  {
+   "sample": "P-10-80-120 extracted after 0 h at 120 °C",
+   "defined_in": "Fig. 2 caption",
+   "route": "P-10-80-120_0h",
+   "results_in": [
+    "Fig. 2",
+    "Fig. S9",
+    "Fig. S16",
+    "Fig. S19"
+   ]
+  },
+  {
+   "sample": "P-10-80-120 extracted after 0.5 h at 120 °C",
+   "defined_in": "Fig. 2 caption",
+   "route": "P-10-80-120_0.5h",
+   "results_in": [
+    "Fig. 2",
+    "Fig. S9",
+    "Fig. S16",
+    "Fig. S19"
+   ]
+  },
+  {
+   "sample": "P-10-80-120 extracted after 1.0 h at 120 °C",
+   "defined_in": "Fig. 2 caption",
+   "route": "P-10-80-120_1.0h",
+   "results_in": [
+    "Fig. 2",
+    "Fig. S9",
+    "Fig. S16",
+    "Fig. S19"
+   ]
+  },
+  {
+   "sample": "P-10-80-120 extracted after 1.5 h at 120 °C",
+   "defined_in": "Fig. 2 caption",
+   "route": "P-10-80-120_1.5h",
+   "results_in": [
+    "Fig. 2",
+    "Fig. S9",
+    "Fig. S16",
+    "Fig. S19"
+   ]
+  },
+  {
+   "sample": "P-10-80-120 extracted after 2.0 h at 120 °C",
+   "defined_in": "Fig. 2 caption",
+   "route": "P-10-80-120_2.0h",
+   "results_in": [
+    "Fig. 2",
+    "Fig. S9",
+    "Fig. S16",
+    "Fig. S19"
+   ]
+  },
+  {
+   "sample": "P-10-80-120 extracted after 2.5 h at 120 °C",
+   "defined_in": "Fig. 2 caption",
+   "route": "P-10-80-120_2.5h",
+   "results_in": [
+    "Fig. 2",
+    "Fig. S9",
+    "Fig. S16",
+    "Fig. S19"
+   ]
+  },
+  {
+   "sample": "P-10-80-120 uncalcined and calcined",
+   "defined_in": "Fig. 5 captions",
+   "route": "P-10-80-120",
+   "results_in": [
+    "Fig. 3a",
+    "Fig. 3b",
+    "Fig. 5a",
+    "Fig. 5b"
+   ]
+  },
+  {
+   "sample": "P-0-80-120 uncalcined",
+   "defined_in": "Fig. 5 captions",
+   "route": "P-0-80-120",
+   "results_in": [
+    "Fig. 3a",
+    "Fig. 3b",
+    "Fig. 5a"
+   ]
+  },
+  {
+   "sample": "P-10-80-120 gel and P-0-80-120 gel",
+   "defined_in": "Fig. 3 caption",
+   "route": "P-10-80-120",
+   "results_in": [
+    "Fig. 3c",
+    "Fig. 3d"
+   ]
+  },
+  {
+   "sample": "P-0-120",
+   "defined_in": "Table S1",
+   "route": "P-0-120",
+   "results_in": [
+    "Fig. S3"
+   ]
+  },
+  {
+   "sample": "P-10-120",
+   "defined_in": "Table S1",
+   "route": "P-10-120",
+   "results_in": [
+    "Fig. S3"
+   ]
+  },
+  {
+   "sample": "P-0-170",
+   "defined_in": "Table S1",
+   "route": "P-0-170",
+   "results_in": [
+    "Fig. S4"
+   ]
+  },
+  {
+   "sample": "P-10-170",
+   "defined_in": "Table S1",
+   "route": "P-10-170",
+   "results_in": [
+    "Fig. S4"
+   ]
+  },
+  {
+   "sample": "AM-10-80-120",
+   "defined_in": "Table S1",
+   "route": "AM-10-80-120",
+   "results_in": [
+    "Table S3",
+    "Fig. S22",
+    "Fig. S24"
+   ]
+  },
+  {
+   "sample": "P800-10-80-120",
+   "defined_in": "Table S1",
+   "route": "P800-10-80-120",
+   "results_in": [
+    "Table S3",
+    "Fig. S22",
+    "Fig. S24"
+   ]
+  },
+  {
+   "sample": "P1800-10-80-120",
+   "defined_in": "Table S1",
+   "route": "P1800-10-80-120",
+   "results_in": [
+    "Table S3",
+    "Fig. S22",
+    "Fig. S24"
+   ]
+  },
+  {
+   "sample": "PEI-10-80-120",
+   "defined_in": "Table S1",
+   "route": "PEI-10-80-120",
+   "results_in": [
+    "Table S3",
+    "Fig. S23",
+    "Fig. S24"
+   ]
+  },
+  {
+   "sample": "PDDA-10-80-120",
+   "defined_in": "Table S1",
+   "route": "PDDA-10-80-120",
+   "results_in": [
+    "Table S3",
+    "Fig. S23",
+    "Fig. S24"
+   ]
+  },
+  {
+   "sample": "P-S-10-80-120",
+   "defined_in": "Table S1",
+   "route": "P-S-10-80-120",
+   "results_in": [
+    "Fig. S11",
+    "Fig. S12"
+   ]
+  },
+  {
+   "sample": "micro-TS-1",
+   "defined_in": "Table S1",
+   "route": "micro-TS-1",
+   "results_in": [
+    "Fig. S31",
+    "Fig. 7a"
+   ]
+  },
+  {
+   "sample": "P-10-80-120-HCl",
+   "defined_in": "SI Syntheses of control and acid treated TS-1",
+   "route": "P-10-80-120-HCl",
+   "results_in": [
+    "Fig. S32",
+    "Table S4",
+    "Fig. 7"
+   ]
+  },
+  {
+   "sample": "P-10-80-120 after 5 cycles (DBT) and after 4 cycles (1-hexene)",
+   "defined_in": "Fig. S34, S36",
+   "route": "P-10-80-120",
+   "results_in": [
+    "Fig. S33-S36"
+   ]
+  },
+  {
+   "sample": "nano-anatase TiO2",
+   "defined_in": "SI Reactant agents",
+   "route": null,
+   "results_in": [
+    "Table S4",
+    "Fig. 7"
+   ],
+   "why": "produit commercial (Alfa Aesar, 99.9 %) utilisé comme référence catalytique, non synthétisé"
+  }
+ ],
+ "method_sources": [],
+ "comparisons": [
+  {
+   "material": "conventional TS-1 zeolite",
+   "property": "Si/Ti ratio",
+   "value_text": "31–70",
+   "unit": null,
+   "conditions": "higher crystallization temperature than the 120 °C of the article",
+   "ref_id": null,
+   "quote": "It should be noted that the Ti content in P-0-80-120 (Si/Ti = 107) is relatively lower than that of the conventional TS-1 zeolite (Si/Ti = 31–70)"
+  }
+ ],
+ "doubts": [
+  {
+   "where": "P1800-10-80-120 duree a 120 °C",
+   "issue": "Le tableau S1 donne 120 ℃ (8 h) et le tableau S3 donne 6 h pour P1800-10-80-120 ; la valeur du tableau S1 (8 h) est retenue pour la variation, le S3 donne 59 pour Si/Ti."
+  },
+  {
+   "where": "P-10-80-120 XPS Si 2p",
+   "issue": "Le texte dit que le pic Si 2p de l'échantillon non calciné « se décale vers des énergies plus basses » que le calciné, mais donne 103.9 eV puis 103.1 eV ; extraction littérale dans l'ordre cité (non calciné 103.9 / calciné 103.1 ; témoin 104.2 / 103.8). Lecture inverse possible."
+  },
+  {
+   "where": "XPS Ti 2p3/2",
+   "issue": "Le texte dit que le pic unique à 459.1 eV n'apparaît que dans les échantillons avec PAM (TiO6), mais cite 459.1 eV aussi pour P-0-80-120-uncal (460.2 et 459.1 eV). La phrase « de 460.2 et 459.1 de P-0-80-120-uncal à 459.1 et 457.8 de P-10-80-120-uncal, respectivement » est extraite comme deux pics par échantillon (peak1, peak2), sans attribuer les deux valeurs de P-0 à une espèce."
+  },
+  {
+   "where": "Fig. 1b et Fig. 7a, valeurs lues sur figure",
+   "issue": "Cristallinité relative lue sur la Fig. 1b (P-10-80-120 : environ 50 % à 2,5 h et 83 % à 3 h à 120 °C ; P-0-80-120 : 99 % à 8 h, 100 % à 12 h), conversion du DBT à 120 min lue sur la Fig. 7a (P-0 45, P-5 99, P-20 22, HCl 69, micro-TS-1 13), précision de lecture environ 3 points. Le texte dit que la cristallisation de P-10 « finit après ca. 2,5 h » : lecture retenue, 2,5 h après le début d'apparition à 1,5 h, soit environ 4 h à 120 °C, ce que la Fig. 1b confirme ; la valeur textuelle n'est donc pas extraite comme 100 % à 2,5 h."
+  },
+  {
+   "where": "Conditions de l'époxydation du 1-hexène",
+   "issue": "Les SI (texte) donnent 0,05 g de catalyseur, 10 mL de méthanol et H2O2 à 30 wt%, la note du tableau S4 donne 50 mg, méthanol 8,0 g et H2O2 à 35 wt% ; valeurs du texte des SI retenues dans les réglages, la note citée dans le réglage de volume."
+  },
+  {
+   "where": "Essai DBT, étalon interne",
+   "issue": "Les SI citent 0,028 g de n-octadécane dans l'essai alors que la liste des réactifs mentionne le n-hexadécane et le n-octane ; réglage extrait littéralement (n-octadécane)."
+  },
+  {
+   "where": "Essai DBT, durée",
+   "issue": "Le protocole des SI fixe 120 min, le texte parle de 100 % de DBT éliminé en 40 min ; les deux valeurs sont extraites (40 min du texte, 120 min lu sur la Fig. 7a). Le réglage light_source est déclaré non cité car l'essai est thermique (sans objet)."
+  },
+  {
+   "where": "Si/Ti du témoin",
+   "issue": "Le texte dit que Si/Ti passe de 106 à 26 quand PAM/SiO2 va de 0 à 0,2, le tableau S2 et le texte ailleurs donnent 107 pour P-0-80-120 ; valeur 107 retenue."
+  },
+  {
+   "where": "P-0-80-120 étapes propres",
+   "issue": "Le témoin n'a que les deux paliers de cristallisation comme étapes propres : l'article dit seulement « même composition molaire sans PAM », donc la préparation du gel et le traitement du solide (calciné pour l'XPS) ne sont pas affirmés pour lui."
+  },
+  {
+   "where": "P-0-120, P-10-120, P-0-170, P-10-170",
+   "issue": "Voies à une étape de cristallisation définies par le tableau S1 ; seule l'étape de cristallisation est écrite, la préparation du gel n'est pas décrite. La note de la Fig. S3 écrit « P-10-80-120 was 2 h » pour l'induction : lue comme P-10-120 (2 h à 120 °C), cohérente avec « de 6 h à 2 h (120 °C) » du texte."
+  },
+  {
+   "where": "P-S-10-80-120",
+   "issue": "La voie hérite des étapes de P-10-80-120, dont l'étape 2 qui cite l'ajout de TBOT ; la variation indique que le TBOT est absent (TiO2 = 0 au tableau S1). Le traitement du solide n'est pas décrit pour elle."
+  },
+  {
+   "where": "Série en PAM",
+   "issue": "Les échantillons P-5 et P-20 sont obtenus par « similar synthetic method » avec les durées du tableau S1 ; héritage du protocole de P-10-80-120 accepté sur cette base."
+  },
+  {
+   "where": "Série en temps de P-10-80-120",
+   "issue": "Les solides prélevés à 0, 0,5, 1,0, 1,5, 2,0 et 2,5 h sont des arrêts de la même synthèse (légende de la Fig. 2) ; 1,0 h et 2,0 h n'ont que des résultats qualitatifs. Les tailles « environ 300 nm » des WLPs (0,5–2,5 h) sont données pour le groupe et sont en annotation."
+  },
+  {
+   "where": "Quantités de réactifs",
+   "issue": "L'article ne donne que des rapports molaires par mole de SiO2 (dont le PAM, 0,1) ; unité « mol per mol SiO2 » utilisée pour tous les réactifs. La masse molaire du PAM du fournisseur Guangfu est donnée par une plage (8 000 000–15 000 000) et sert de nom de réactif ; P800 (Adamas, 8 000 000) peut ne différer de la base que par le fournisseur."
+  },
+  {
+   "where": "Figures du texte non lues",
+   "issue": "Les valeurs numériques des Fig. 2 à 6 sont dans le texte ; seules les Fig. 1b et 7 ont été lues. Les figures d'annexe ne sont pas disponibles comme images."
+  }
+ ]
+}
