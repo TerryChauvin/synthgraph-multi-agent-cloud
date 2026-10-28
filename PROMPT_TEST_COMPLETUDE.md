@@ -19,6 +19,8 @@ Test demandé par l'utilisateur le 28/10/2026 : sur 20 publications tirées au s
 > - **valeurs de la littérature** citées pour comparer (tableaux de comparaison, « reported values ») : dans la liste de premier niveau `"comparisons"`, une entrée par valeur : `{"material", "property", "value_num" ou "value_text", "unit", "conditions", "ref_id" (si l'article donne le renvoi [[id]] de corpus/refs/<PMCID>.json), "route" (voie de l'article comparée, facultatif), "quote"}`. Jamais en `outcomes` ;
 > - **calculs (DFT, simulation)** : une voie à part, `"kind": "calcul"`, sans parent, `material` = le système modélisé, `method` = la méthode de calcul, étapes = paramètres de calcul (fonctionnelle, énergie de coupure, maillage), `outcomes` = valeurs calculées. Jamais mélangés aux échantillons synthétisés.
 >
+> Précisions ajoutées après les premières publications du test : les valeurs d'étalonnage d'une analyse (temps de rétention, droites d'étalonnage) tiennent en **une seule** entrée `characterizations` par technique ; une condition de mesure absente de l'article va dans `doubts`, jamais dans `not_stated` (réservé aux paramètres de synthèse).
+>
 > Ce qui n'est pas pertinent : numéros de figures, de références et d'équations ; barres d'échelle ; valeurs générales sans lien avec l'étude (température du corps, constantes universelles) ; doublons d'une valeur déjà extraite sous un autre arrondi.
 >
 > Règles : celles de `PROMPT_COMPLEMENT.md` (ajouter seulement, citation exacte, bonne voie et bonne étape, vocabulaire existant, doutes avec `where` et `issue`). Une valeur lue seulement sur une figure porte `"from_figure"` ; n'ouvre une figure que si elle porte un résultat chiffré absent du texte.
