@@ -148,7 +148,37 @@ Passes ajoutées le 28/10/2026 : complément (`PROMPT_COMPLEMENT.md`, guidé par
 - Les deux niveaux (étape générique et méthode) se rejoignent ainsi dans une seule grille par action, plus simple à contrôler dans `load.py`.
 - Correction de l'existant : reclassement automatique des actions existantes (par exemple « heat » avec un autoclave en équipement → traitement hydrothermal), vérifié par échantillon ; les nouvelles cases sont marquées « non cherché » jusqu'à la passe de complétion.
 
-**Ordre** : (1) vocabulaire avec définitions (méthodes, actions, réglages par technique, table propriété → techniques) ; (2) évolutions de `load.py` (avertissements « non cité », réglages structurés, lien résultat → mesure, grille par action, état « non cherché ») ; (3) liens automatiques et reclassement des actions sur l'existant ; (4) pilote de 10 publications ; (5) passe de complétion, qui traite en même temps les « non cité » suspects, les réglages structurés et les liens ambigus.
+**Ordre** : (0) relecture du vocabulaire initial avec l'utilisateur ; (1) vocabulaire avec définitions et outil `vocab.py` (méthodes, actions, réglages par technique, table propriété → techniques) ; (2) évolutions de `load.py` (avertissements « non cité », réglages structurés, lien résultat → mesure, grille par action, état « non cherché ») ; (3) liens automatiques et reclassement des actions sur l'existant ; (4) pilote de 10 publications ; (5) passe de complétion, qui traite en même temps les « non cité » suspects, les réglages structurés et les liens ambigus.
+
+### 5.6 Vocabulaire contrôlé en pratique : outil, déroulé de l'agent, fusion par palier (discussion du 28/10/2026)
+
+**Constat** : 1 383 noms de méthode différents pour 1 382 voies de base (chaque agent écrit sa phrase) ; 176 actions d'étape, dont 30 couvrent 92 % des étapes et 53 n'apparaissent qu'une fois (doublons d'orthographe comme `recrystallize` / `recrystallise`). Sans garde-fou, un agent crée son propre nom dès qu'il hésite.
+
+**Outil `vocab.py`** (script lancé par l'agent, comme `load.py check`) :
+- `vocab.py cherche "<termes>"` : les 5 entrées les plus proches, avec définition, cases de grille et synonymes ; cherche dans le vocabulaire officiel **et** dans les ajouts en attente de tous les agents ;
+- `vocab.py ajoute --type <méthode|action|paramètre|propriété|technique|réglage> --nom … --definition "…" [--cases "…"] --ecarte "nom1: raison, nom2: raison"` : refusé sans recherche préalable ou sans justification face aux noms proches ; signale les quasi-doublons ; une fois justifié, le nom est accepté directement (décision de l'utilisateur) et écrit dans le fichier d'ajouts de l'agent (`vocabulaire/ajouts/<PMCID>.json`), pas dans la table commune (aucun conflit d'écriture entre agents parallèles).
+
+**Déroulé de l'agent extracteur** :
+
+| Moment | Ce que l'agent reçoit ou fait | Garde-fou |
+|---|---|---|
+| 1. Démarrage | `RUNBOOK.md` + vocabulaire officiel en version courte (nom + définition d'une ligne ; ≈ 400 entrées, ≈ 10 k jetons) | il connaît la liste avant de lire l'article |
+| 2. Lecture de l'article | inventaire des échantillons | — |
+| 3. Méthode de chaque voie | choix dans la liste ; `vocab.py cherche` en cas de doute | méthode hors liste = `vocab.py ajoute` |
+| 4. Chaque étape | action choisie dans la liste ; la définition de l'action porte sa grille (cases attendues) | action hors liste = ajout avec définition et cases |
+| 5. Paramètres, réglages, propriétés | nom de la liste en priorité, sinon ajout justifié | idem |
+| 6. `load.py check` | refuse un nom absent de la liste et des ajouts ; contrôle la grille de chaque action et de chaque technique ; avertit sur les « non cité » suspects et les quasi-doublons | aucun nom sans définition |
+| 7. Chargement (orchestrateur) | contrôle mécanique seulement ; les quasi-doublons sont notés pour la fusion du palier | — |
+| 8. Agents suivants du lot | voient les ajouts en attente via `vocab.py cherche` | pas de doublon pendant le lot |
+
+**Deux rythmes** (proposition de l'utilisateur, avec la condition de visibilité immédiate) :
+- **visibilité immédiate** : les ajouts en attente sont lus par `vocab.py cherche` dès leur écriture, sans fusion ;
+- **fusion tous les 50 publications**, à l'audit de palier : relecture des ajouts, fusion des doublons (l'ancien nom devient synonyme), correction des définitions floues, promotion dans le vocabulaire officiel avec un numéro de version, régénération du fichier de contexte, remplacement automatique des noms fusionnés dans les extractions du lot et rechargement ; les cases de grille apportées par une action nouvelle sont marquées « non cherché » dans les publications antérieures, pour une passe ciblée ultérieure.
+- Avantages : vocabulaire officiel stable sur un lot (même version pour tous les agents du lot, lot comparable et reproductible) ; pas de doublon dans le lot ; revue groupée au rythme de l'audit.
+
+**Ce qui empêche l'agent de recréer ses noms** : (1) la liste est donnée d'entrée, avec des définitions ; (2) créer coûte un effort (recherche, définition, justification face aux noms proches), choisir est plus simple ; (3) la grille est attachée à l'action : un nom inventé n'apporte pas de cases et doit en définir ; (4) `load.py` refuse un nom sans définition et `vocab.py` signale les quasi-doublons ; (5) la critique de fidélité vérifie qu'un ajout ne double pas un nom existant, et la fusion du palier rattrape le reste.
+
+**Mesure de réussite au pilote** : nombre de noms ajoutés par publication (cible : un ou deux au plus) et part des ajouts fusionnés à la revue.
 
 ## 6. Fichiers liés
 
