@@ -158,7 +158,8 @@ PARAMETRES = [
 # ---------------------------------------------------------------- techniques de mesure et leurs réglages
 # (nom, définition, réglages attendus, synonymes courants)
 TECHNIQUES = [
-    ("XRD", "Diffraction des rayons X sur poudre ou film (phase, cristallinité, taille de cristallite, paramètres de maille).", ["radiation", "scan_range", "scan_step", "crystallite_size_method"], ["pxrd", "giwaxs", "saxs", "x-ray diffraction"]),
+    ("XRD", "Diffraction des rayons X sur poudre ou film (phase, cristallinité, taille de cristallite, paramètres de maille).", ["radiation", "scan_range", "scan_step", "crystallite_size_method"], ["pxrd", "giwaxs", "x-ray diffraction"]),
+    ("SAXS", "Diffusion des rayons X aux petits angles (taille, forme et organisation de particules ou de pores à l'échelle du nanomètre).", ["radiation", "scan_range"], ["small-angle x-ray scattering", "saxs", "waxs"]),
     ("SAED", "Diffraction électronique en aire sélectionnée au MET.", [], ["electron diffraction"]),
     ("SEM", "Microscopie électronique à balayage (morphologie, taille).", ["accelerating_voltage", "sample_preparation"], ["fesem", "fe-sem"]),
     ("TEM", "Microscopie électronique en transmission, y compris haute résolution (taille, morphologie, plans réticulaires).", ["accelerating_voltage", "particles_counted", "sample_preparation"], ["hrtem", "stem", "haadf"]),
@@ -272,10 +273,10 @@ REGLAGES = {
 }
 
 # ---------------------------------------------------------------- propriétés : (nom, définition, techniques admises)
-X, B, M, SP, TH, EL = ["XRD"], ["BET"], ["SEM", "TEM", "AFM"], ["XPS", "FTIR", "Raman", "UV_vis", "PL", "NMR"], ["TGA"], ["electrochemistry"]
+X, B, M, SP, TH, EL = ["XRD"], ["BET"], ["SEM", "TEM", "AFM", "SAXS"], ["XPS", "FTIR", "Raman", "UV_vis", "PL", "NMR"], ["TGA"], ["electrochemistry"]
 PROPRIETES = [
     ("phase", "Phase cristalline identifiée.", X + ["SAED", "Raman"]),
-    ("crystallinity", "Degré de cristallinité.", X),
+    ("crystallinity", "Degré de cristallinité.", X + ["SAED", "TEM", "Raman"]),
     ("crystallite_size", "Taille de cristallite (domaine cohérent).", X),
     ("lattice_parameter", "Paramètre de maille (a, b, c, volume de maille ; préciser l'axe dans le nom : lattice_parameter_a).", X + ["SAED", "TEM"]),
     ("d_spacing", "Distance interréticulaire.", X + ["TEM", "SAED"]),

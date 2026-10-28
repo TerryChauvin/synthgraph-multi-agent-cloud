@@ -149,6 +149,7 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 ## Techniques de mesure (`characterizations[].technique`) et leurs réglages attendus
 
 - `XRD` — Diffraction des rayons X sur poudre ou film (phase, cristallinité, taille de cristallite, paramètres de maille). [réglages : radiation, scan_range, scan_step, crystallite_size_method]
+- `SAXS` — Diffusion des rayons X aux petits angles (taille, forme et organisation de particules ou de pores à l'échelle du nanomètre). [réglages : radiation, scan_range]
 - `SAED` — Diffraction électronique en aire sélectionnée au MET.
 - `SEM` — Microscopie électronique à balayage (morphologie, taille). [réglages : accelerating_voltage, sample_preparation]
 - `TEM` — Microscopie électronique en transmission, y compris haute résolution (taille, morphologie, plans réticulaires). [réglages : accelerating_voltage, particles_counted, sample_preparation]
@@ -262,7 +263,7 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 ## Propriétés (`outcomes[].property`, suffixe de précision permis : `lattice_parameter_a`) et techniques qui les mesurent
 
 - `phase` — Phase cristalline identifiée. [XRD, SAED, Raman]
-- `crystallinity` — Degré de cristallinité. [XRD]
+- `crystallinity` — Degré de cristallinité. [XRD, SAED, TEM, Raman]
 - `crystallite_size` — Taille de cristallite (domaine cohérent). [XRD]
 - `lattice_parameter` — Paramètre de maille (a, b, c, volume de maille ; préciser l'axe dans le nom : lattice_parameter_a). [XRD, SAED, TEM]
 - `d_spacing` — Distance interréticulaire. [XRD, TEM, SAED]
@@ -279,10 +280,10 @@ Prends toujours un nom de cette liste. Si aucun ne convient : `python3 -I vocab.
 - `external_surface_area` — Surface externe. [BET]
 - `pore_diameter` — Diamètre ou taille de pores. [BET, density_porosimetry]
 - `porosity` — Porosité. [BET, density_porosimetry]
-- `particle_size` — Taille de particule ou de grain observée. [SEM, TEM, AFM, XRD]
-- `size_dispersity` — Dispersion de taille (écart-type, PDI). [SEM, TEM, AFM, DLS_zeta]
-- `thickness_layers` — Épaisseur ou nombre de couches. [SEM, TEM, AFM, Raman]
-- `morphology` — Morphologie observée (forme, texture). [SEM, TEM, AFM]
+- `particle_size` — Taille de particule ou de grain observée. [SEM, TEM, AFM, SAXS, XRD]
+- `size_dispersity` — Dispersion de taille (écart-type, PDI). [SEM, TEM, AFM, SAXS, DLS_zeta]
+- `thickness_layers` — Épaisseur ou nombre de couches. [SEM, TEM, AFM, SAXS, Raman]
+- `morphology` — Morphologie observée (forme, texture). [SEM, TEM, AFM, SAXS]
 - `roughness` — Rugosité de surface. [AFM]
 - `hydrodynamic_size` — Taille hydrodynamique en suspension. [DLS_zeta]
 - `zeta_potential` — Potentiel zêta. [DLS_zeta]

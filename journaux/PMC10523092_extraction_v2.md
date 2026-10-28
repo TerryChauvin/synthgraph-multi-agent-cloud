@@ -1,0 +1,15 @@
+# Journal d'extraction v2 — PMC10523092
+
+- Découpage en 8 voies : CdSe-NPL et CdCl2-CdOL2 sont des intermédiaires (kind `intermediate`) réutilisés dans la voie CdSe/CdS-triangles ; la voie de base du matériau est CdSe/CdS-triangles. Le verre sol–gel est une voie de base séparée (méthode `sol_gel`).
+- Suspensions colloïdales pour la spectroscopie (CdSe/CdS-colloid, +TBAF 40 μl, +TBAF 80 μl) : traitées comme des voies `device` (méthode `device_fabrication`, définition « mise en forme en vue de son test »), la suspension témoin étant le parent des deux branches TBAF. Le 80 μl ne vient que du SAXS (« double volume »), d'où un seul résultat qualitatif.
+- Branche CdSe/CdS-TAA-2h : bâtie sur la légende de la Fig. S1C et sur le texte (TAA seule → structures sphériques). Étapes propres (pas d'héritage des 72 h ni de la redissolution) ; réactif CdCl2/Cd(OL)2 déclaré absent par variation ; durée 2 h. Les autres temps de la série ne sont pas chiffrés, donc une seule branche et une annotation de tendance.
+- Échantillon « low-emission NPs » (Fig. S4) laissé sans voie : autre lot, préparation non décrite.
+- « Annealing at 240 °C for 10 min » (nanoplaquettes) est une étape en solution : action `react` et non `anneal` (définition du vocabulaire : solide ou film).
+- « After 2 h, 60 μl … was added » : délai porté par un paramètre `duration_before_addition` de l'étape d'ajout ; lecture ambiguë signalée en doute.
+- Répétition « The last step was reproduced once » (centrifugation) : paramètre `repetitions` sur l'étape 9 plutôt qu'une étape de plus, car les conditions ne sont pas répétées dans la phrase.
+- Valeurs lues sur figure : Fig. 1A (3 pics d'absorbance), Fig. 3 (3 pics XRD attribués 111, 220, 331 par comparaison avec les barres ZB), Fig. 5C (9 points par courbe), Fig. 7 (maximum du verre). Légende en citation, `from_figure` renseigné. Le texte (680 nm) l'emporte sur la lecture graphique (≈ 685 nm sur Fig. 2A ; 682 nm sur l'axe de la Fig. 5C, repris pour la suspension).
+- EDX de l'annexe : tableaux sans légende centre/bord lisible, aucune valeur chiffrée extraite (doute).
+- Réglages de mesure : le paragraphe « Nanoparticles characterisation » vaut pour tout l'article ; 200 kV et excitation à 400 nm attribués aux mesures concernées (doute). SAXS rangé sous la technique XRD (« saxs » est un synonyme dans la liste) avec les quatre réglages déclarés non cités ; DLS idem.
+- Vocabulaire ajouté : `precursor_preparation` (méthode, pour le mélange CdCl2/Cd(OL)2), `gelation_time` (propriété, temps de prise du sol). Tentative d'ajout d'une technique `SAXS` refusée (synonyme de XRD).
+- Sol MTEOS/TEOS : un seul réactif, pureté et fournisseur non cités (préparation adaptée de cit19 et cit29, non décrite ; MTEOS et TEOS d'ABCR 98 % figurent dans « Materials » sans quantité) ; gelation « 20–30 min » et début de solidification « 15 min » extraits tous deux ; séchage 45 °C (Méthodes) préféré à 40 °C (Résultats).
+- Comparaisons de littérature : 5 valeurs de l'introduction (Chen, Jin, Cheng, Pun, Algradee) ; ids de référence repris tels qu'ils figurent dans le texte (Chen est cité avec cit6).
