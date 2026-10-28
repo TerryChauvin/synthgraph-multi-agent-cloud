@@ -141,6 +141,8 @@ def norm_unit(u):
         return ""
     u = u.replace("−", "-").replace("–", "-").replace("⁻", "-").replace("²", "2").replace("³", "3").replace("℃", "°C").replace("μ", "µ")
     u = re.sub(r"[·∙⋅.\s]+", "", u)
+    u = re.sub(r"-(g|L|mL|cm2|m2|kg|h|s|min)-1$", r"/\1", u)
+    u = re.sub(r"(?<=[A-Za-zµ])(g|L|mL|cm2|m2|kg)-1$", r"/\1", u)
     u = re.sub(r"^(m2|cm3|cm2|mAh|mmol|mg|µmol|mL|ml|mol|g|mA|F|W|S|mg)g-1$", r"\1/g", u)
     return u
 

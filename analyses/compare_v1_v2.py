@@ -105,13 +105,13 @@ def all_values(d):
     return out
 
 
-def value_recall(A, B):
-    """Part des valeurs de A retrouvées dans B (même valeur à 2 %, même unité), sans tenir compte du nom."""
+def value_recall(A, B, same_unit=True):
+    """Part des valeurs de A retrouvées dans B (même valeur à 2 %, même unité si same_unit), sans tenir compte du nom."""
     pool = list(B)
     found = 0
     for v, u, _ in A:
         for i, (w, u2, _) in enumerate(pool):
-            if u == u2 and compare_blind.close(v, w):
+            if (u == u2 or not same_unit) and compare_blind.close(v, w):
                 found += 1
                 pool.pop(i)
                 break
@@ -163,6 +163,7 @@ def main():
         a1, a2 = all_values(v1), all_values(v2)
         f12, n1 = value_recall(a1, a2)
         f21, n2 = value_recall(a2, a1)
+        g12, _ = value_recall(a1, a2, same_unit=False)
         t = T.get(p, {})
         rows.append(dict(pmcid=p, v1=V1, v2=V2, noms_v1=N1, noms_v2=N2,
                          couverture_v1={k: c1[k]["pct"] for k in c1}, couverture_v2={k: c2[k]["pct"] for k in c2},
@@ -172,7 +173,7 @@ def main():
                                           precision_params=conc["precision_params"], rappel_resultats=conc["rappel_resultats_global"],
                                           precision_resultats=conc["precision_resultats"], rappel_reactifs=conc["rappel_reactifs_global"],
                                           conflits_params=conc["params_conflits"], conflits_resultats=conc["resultats_conflits"]),
-                         valeurs=dict(v1=n1, v2=n2, v1_dans_v2=f12, v2_dans_v1=f21),
+                         valeurs=dict(v1=n1, v2=n2, v1_dans_v2=f12, v2_dans_v1=f21, v1_dans_v2_toute_unite=g12),
                          ajouts_vocabulaire=ajouts.get(p, 0),
                          jetons_v1=sum(v for k, v in t.items() if not k.startswith(("v2", "complement", "test_", "critique_ajouts"))),
                          jetons_v2=t.get("v2_extraction", 0), jetons_v2_critique=t.get("v2_critique", 0)))
@@ -207,6 +208,7 @@ def main():
     f12 = sum(r["valeurs"]["v1_dans_v2"] for r in rows); f21 = sum(r["valeurs"]["v2_dans_v1"] for r in rows)
     L += ["", "## Concordance des valeurs, indépendante des noms", "",
           f"- valeurs numériques v1 retrouvées dans la v2 (même valeur à 2 %, même unité, quel que soit le nom) : {f12} / {n1} ({round(100 * f12 / max(n1, 1), 1)} %)",
+          f"- même mesure sans exiger la même unité (unités écrites autrement, sans unité d'un côté) : {sum(r['valeurs']['v1_dans_v2_toute_unite'] for r in rows)} / {n1} ({round(100 * sum(r['valeurs']['v1_dans_v2_toute_unite'] for r in rows) / max(n1, 1), 1)} %)",
           f"- valeurs numériques v2 déjà présentes dans la v1 : {f21} / {n2} ({round(100 * f21 / max(n2, 1), 1)} %) ; le reste est nouveau en v2",
           "- les valeurs v1 non retrouvées sont listées par `python3 -I analyses/compare_v1_v2.py --manquantes <PMCID>`"]
     L += ["", "## Concordance par nom canonique (v1 comme référence, méthode de `compare_blind.py`)", "",
