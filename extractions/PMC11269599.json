@@ -58,7 +58,9 @@
     }
    ],
    "not_stated": [
-    "yield"
+    "yield",
+    "purification",
+    "repetitions"
    ],
    "steps": [
     {
@@ -69,7 +71,7 @@
      "parameters": [],
      "equipment": [],
      "not_stated": [
-      "purification_method",
+      "purification",
       "temperature",
       "pressure"
      ]
@@ -83,7 +85,12 @@
      "equipment": [],
      "not_stated": [
       "temperature",
-      "duration"
+      "duration",
+      "atmosphere",
+      "stirring_speed",
+      "addition_mode",
+      "cooling_mode",
+      "vessel"
      ]
     },
     {
@@ -94,7 +101,9 @@
      "parameters": [],
      "equipment": [],
      "not_stated": [
-      "purification_method"
+      "purification",
+      "drying_mode",
+      "wash_solvent"
      ]
     }
    ],
@@ -110,7 +119,7 @@
      "technique": "UV–Vis",
      "result": "λmax 416, 516, 554, 592 et 649 nm (CHCl3)",
      "instrument": "UV-1800 (SHIMADZU, Kyoto, Japan)",
-     "conditions": "CHCl3",
+     "conditions": "CHCl3 ; plage 200–600 nm (section Instruments : « in the range of 200–600 nm »)",
      "quote": "UV–Vis (CHCl3) λmax: 416, 516, 554, 592 and 649 nm."
     },
     {
@@ -121,7 +130,14 @@
      "quote": "IR (ν, cm−1): 3423 ν(O−H,N–H), 1469 ν(C=N), 808, ν(macrocycle ring’s N–H out of plane bending vibration), 1599 ν(N−H bending) ,1228 ν(C−N), 1001 ν(Co−N)."
     }
    ],
-   "outcomes": [],
+   "outcomes": [
+    {
+     "property": "UV_vis_absorption_peak",
+     "quote": "UV–Vis (CHCl3) λmax: 416, 516, 554, 592 and 649 nm.",
+     "value_text": "416, 516, 554, 592, 649 (CHCl3)",
+     "unit": "nm"
+    }
+   ],
    "missing_fields": [
     "quantités des réactifs",
     "conditions de réaction",
@@ -212,7 +228,9 @@
      "equipment": [],
      "not_stated": [
       "temperature",
-      "stirring_speed"
+      "stirring_speed",
+      "atmosphere",
+      "addition_mode"
      ]
     },
     {
@@ -231,7 +249,9 @@
      "equipment": [],
      "not_stated": [
       "temperature",
-      "atmosphere"
+      "atmosphere",
+      "stirring_speed",
+      "vessel"
      ]
     },
     {
@@ -257,7 +277,13 @@
      "action": "evaporate",
      "description": "Évaporation du méthanol sous vide.",
      "quote": "and the methanol was evaporated under vacuum",
-     "parameters": [],
+     "parameters": [
+      {
+       "name": "atmosphere",
+       "value_text": "vacuum",
+       "quote": "and the methanol was evaporated under vacuum"
+      }
+     ],
      "equipment": [],
      "not_stated": [
       "temperature",
@@ -273,7 +299,8 @@
      "equipment": [],
      "not_stated": [
       "cooling_rate",
-      "final_temperature"
+      "final_temperature",
+      "cooling_mode"
      ]
     },
     {
@@ -284,7 +311,10 @@
      "parameters": [],
      "equipment": [],
      "not_stated": [
-      "separation_method"
+      "separation_method",
+      "purification",
+      "drying_mode",
+      "wash_solvent"
      ]
     }
    ],
@@ -300,7 +330,7 @@
      "technique": "UV–Vis",
      "result": "λmax 448, 544, 581 nm (CHCl3)",
      "instrument": "UV-1800 (SHIMADZU, Kyoto, Japan)",
-     "conditions": "CHCl3",
+     "conditions": "CHCl3 ; plage 200–600 nm (section Instruments : « in the range of 200–600 nm »)",
      "quote": "UV–Vis (CHCl3) λmax: 448, 544, 581 nm."
     },
     {
@@ -316,6 +346,12 @@
      "property": "product_appearance",
      "quote": "The solution was cooled, and the purple crystalline product was obtained (0.28 mmol).",
      "value_text": "purple crystalline product"
+    },
+    {
+     "property": "UV_vis_absorption_peak",
+     "quote": "UV–Vis (CHCl3) λmax: 448, 544, 581 nm.",
+     "value_text": "448, 544, 581 (CHCl3)",
+     "unit": "nm"
     }
    ],
    "missing_fields": [
@@ -403,7 +439,12 @@
       "temperature",
       "duration",
       "atmosphere",
-      "stirring_speed"
+      "stirring_speed",
+      "cooling_mode",
+      "addition_mode",
+      "purification",
+      "drying_mode",
+      "wash_solvent"
      ]
     }
    ],
@@ -423,7 +464,20 @@
      "quote": "N-phthaloyl chitosan (Fig. 4b) showed the disappearance of the peak at 2θ = 9.6° with the appearance of another peak at 6.42°, and the peak at 2θ = 20.22° was shifted to 2θ = 18.62°."
     }
    ],
-   "outcomes": [],
+   "outcomes": [
+    {
+     "property": "XRD_peak_position_2theta_new",
+     "quote": "N-phthaloyl chitosan (Fig. 4b) showed the disappearance of the peak at 2θ = 9.6° with the appearance of another peak at 6.42°, and the peak at 2θ = 20.22° was shifted to 2θ = 18.62°.",
+     "value_num": 6.42,
+     "unit": "°"
+    },
+    {
+     "property": "XRD_peak_position_2theta_shifted",
+     "quote": "N-phthaloyl chitosan (Fig. 4b) showed the disappearance of the peak at 2θ = 9.6° with the appearance of another peak at 6.42°, and the peak at 2θ = 20.22° was shifted to 2θ = 18.62°.",
+     "value_num": 18.62,
+     "unit": "°"
+    }
+   ],
    "missing_fields": [
     "isolement et purification du produit",
     "rendement",
@@ -497,7 +551,13 @@
       "temperature",
       "duration",
       "solvent",
-      "atmosphere"
+      "atmosphere",
+      "stirring_speed",
+      "addition_mode",
+      "cooling_mode",
+      "purification",
+      "drying_mode",
+      "wash_solvent"
      ]
     }
    ],
@@ -597,7 +657,8 @@
      "equipment": [],
      "not_stated": [
       "addition_rate",
-      "solvent_of_chitosan_solution"
+      "solvent_of_chitosan_solution",
+      "stirring_speed"
      ]
     },
     {
@@ -610,7 +671,12 @@
      "not_stated": [
       "temperature",
       "duration",
-      "atmosphere"
+      "atmosphere",
+      "stirring_speed",
+      "cooling_mode",
+      "purification",
+      "drying_mode",
+      "wash_solvent"
      ]
     }
    ],
@@ -630,7 +696,14 @@
      "quote": "N-Phthaloyl chitosan-[Co(II) TPHPP] shows a more broadening peak at around 2θ = 22.8° (Fig. 4c)."
     }
    ],
-   "outcomes": [],
+   "outcomes": [
+    {
+     "property": "XRD_peak_position_2theta",
+     "quote": "N-Phthaloyl chitosan-[Co(II) TPHPP] shows a more broadening peak at around 2θ = 22.8° (Fig. 4c).",
+     "value_num": 22.8,
+     "unit": "°"
+    }
+   ],
    "missing_fields": [
     "isolement et purification",
     "rendement",
@@ -723,7 +796,9 @@
      "equipment": [],
      "not_stated": [
       "atmosphere",
-      "stirring_speed"
+      "stirring_speed",
+      "cooling_mode",
+      "vessel"
      ]
     },
     {
@@ -780,7 +855,8 @@
      ],
      "equipment": [],
      "not_stated": [
-      "temperature"
+      "temperature",
+      "pressure"
      ]
     }
    ],
@@ -807,7 +883,14 @@
      "quote": "SEM micrograph of the [Co(II) TPHPP] supported on chitosan before and after GO incorporation, where the uniform distribution of [Co(II) TPHPP]-chitosan network is displayed in (Fig. 5a)."
     }
    ],
-   "outcomes": [],
+   "outcomes": [
+    {
+     "property": "XRD_peak_position_2theta",
+     "quote": "Figure 4d shows that the deprotection of the amino group of chitosan (phthaloyl group) shows a characteristic peak at 2θ = 20.81°, which indicates a higher crystallinity of this compound.",
+     "value_num": 20.81,
+     "unit": "°"
+    }
+   ],
    "missing_fields": [
     "température de séchage",
     "rendement",
@@ -881,7 +964,13 @@
      "equipment": [],
      "not_stated": [
       "temperature",
-      "duration"
+      "duration",
+      "addition_mode",
+      "stirring_speed",
+      "cooling_mode",
+      "purification",
+      "drying_mode",
+      "wash_solvent"
      ]
     }
    ],
@@ -908,7 +997,14 @@
      "quote": "The typical morphology of GO is shown in (Fig. 5b), which has a smooth, flat, soft surface and many layers stacked on top of one another in a range of sizes and forms."
     }
    ],
-   "outcomes": [],
+   "outcomes": [
+    {
+     "property": "XRD_peak_position_2theta",
+     "quote": "Figure 4e show a sharp peak at 2θ = 10.32°, which confirms that graphite powder was oxidized well, utilizing concentrated acids and KMnO4 to obtain GO.",
+     "value_num": 10.32,
+     "unit": "°"
+    }
+   ],
    "missing_fields": [
     "toutes les quantités",
     "acides utilisés",
@@ -952,7 +1048,10 @@
     }
    ],
    "not_stated": [
-    "yield"
+    "yield",
+    "purification",
+    "drying_mode",
+    "repetitions"
    ],
    "steps": [
     {
@@ -972,7 +1071,9 @@
       "duration",
       "temperature",
       "gas_atmosphere",
-      "solvent_of_GO_suspension"
+      "solvent_of_GO_suspension",
+      "ph",
+      "addition_mode"
      ]
     }
    ],
@@ -1016,7 +1117,7 @@
      "technique": "UV–Vis (suivi de la dégradation de AO7)",
      "result": "décoloration suivie à λmax = 485 nm ; 94 % en 60 min",
      "instrument": "UV-1800 (SHIMADZU, Kyoto, Japan)",
-     "conditions": "catalyseur 15 × 10−3 g/ml dans 10 mL de AO7 1,42 × 10−4 M, pH 9,0 (tampon borax/HCl), 40 °C, H2O2 8 × 10−2 M ajouté pour démarrer, aliquotes de 3 mL remises dans le flacon",
+     "conditions": "catalyseur 15 × 10−3 g/ml dans 10 mL de AO7 1,42 × 10−4 M, pH 9,0 (tampon borax/HCl), 40 °C, H2O2 8 × 10−2 M ajouté pour démarrer, aliquotes de 3 mL remises dans le flacon ; plage du spectrophotomètre 200–600 nm (section Instruments), suivi à λmax = 485 nm",
      "quote": "(15 × 10−3 g/ml) of [Co(II) TPHPP]-Cs/GO nanocomposite was put in a flask with 10 mL of (1.42 × 10−4 M) of AO7 dye aqueous solution with pH was adjusted to 9.0 by using borax and HCl buffer mixture, and the solution was stirred at 40 °C."
     },
     {
@@ -1039,6 +1140,28 @@
      "instrument": null,
      "conditions": "sel disodique de l'acide téréphtalique (NaTA) ajouté au système catalyseur/H2O2",
      "quote": "NaTA could react with ·OH to give 2-hydroxy terephthalic acid (HTA), which exhibits a bright stable fluorescence."
+    },
+    {
+     "technique": "pH-métrie (ajustement du milieu du test catalytique)",
+     "result": "pH du test varié de 7 à 11 ; optimum à pH 9,0 ; pH 9,0 fixé par tampon borax/HCl",
+     "instrument": "pH-mètre de paillasse AD1030 (Adwa, Hungary)",
+     "conditions": "pH 8 et 9 : tampon borax/HCl ; pH 10 : NaHCO3/NaOH ; pH 7 et 11 : phosphates (légende de la Fig. 8)",
+     "quote": "Effect of pH on the decolorization of AO7. The pH was adjusted to 8 and 9 using borax and HCl buffer mixture and the pH was adjusted to 10.0 using NaHCO3 and NaOH mixture. Phosphates were used to adjust the pH to 7 and 11."
+    },
+    {
+     "technique": "COT (carbone organique total)",
+     "result": "50 % d'élimination du COT après 60 min à 40 °C (minéralisation incomplète)",
+     "instrument": null,
+     "conditions": "AO7 1,42 × 10−4 M, H2O2 8 × 10−2 M, catalyseur 15 × 10−3 g/ml, pH 9, 40 °C ; appareil, méthode de mesure et prélèvement non cités",
+     "quote": "The results of total organic carbon analysis (TOC) showed 50% of dye mineralization under mild reaction conditions of AO7 (1.42 × 10−4M) with H2O2 (8 × 10−2M) in the presence of [Co(II) TPHPP]-Cs/GO nanocomposite (15 × 10−3 g/ml) and pH = 9 at 40 °C."
+    },
+    {
+     "technique": "fluorescence (spectres de la sonde NaTA, Fig. 14)",
+     "result": "bande d'émission centrée vers 420 nm, intensité croissant de 0 à 75 min (lecture de la Fig. 14)",
+     "instrument": null,
+     "conditions": "spectres tracés de 350 à 550 nm, t = 0, 15, 30, 45, 60, 75 min, sans et avec AO7 (lecture de la Fig. 14) ; appareil, longueur d'onde d'excitation et concentration de NaTA non cités",
+     "from_figure": "Fig. 14",
+     "quote": "Figure 14 Fluorescent intensity of hydroxy terephthalic acid formed with [Co(II) TPHPP]-Cs/GO nanocomposite/H2O2, in the presence and absence of AO7."
     }
    ],
    "outcomes": [
@@ -1538,6 +1661,47 @@
      "value_num": 138.03,
      "unit": "m/z",
      "from_figure": "Table 2"
+    },
+    {
+     "property": "XRD_peak_position_2theta_GO_peak_shifted",
+     "quote": "After modifying GO with modified [Co(II) TPHPP]-Cs, the significant peak of GO at 2θ = 10.32° shifted to a smaller angle and appeared at 2θ = 9.60° as shown in (Fig. 4f).",
+     "value_num": 9.6,
+     "unit": "°"
+    },
+    {
+     "property": "EDX_C_weight_percent",
+     "quote": "and (e) indicating the elements by EDX analysis.",
+     "value_num": 23.1,
+     "unit": "%",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "EDX_O_weight_percent",
+     "quote": "and (e) indicating the elements by EDX analysis.",
+     "value_num": 74.53,
+     "unit": "%",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "EDX_N_weight_percent",
+     "quote": "and (e) indicating the elements by EDX analysis.",
+     "value_num": 1.53,
+     "unit": "%",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "EDX_Co_weight_percent",
+     "quote": "and (e) indicating the elements by EDX analysis.",
+     "value_num": 0.84,
+     "unit": "%",
+     "from_figure": "Fig. 5e"
+    },
+    {
+     "property": "PL_emission_peak",
+     "quote": "Figure 14 Fluorescent intensity of hydroxy terephthalic acid formed with [Co(II) TPHPP]-Cs/GO nanocomposite/H2O2, in the presence and absence of AO7.",
+     "value_num": 420,
+     "unit": "nm",
+     "from_figure": "Fig. 14"
     }
    ],
    "missing_fields": [
@@ -1545,7 +1709,12 @@
     "nature du solvant de la suspension de GO",
     "durée et température de la synthèse",
     "rendement",
-    "préparation de la solution NaTA et de la solution d'isopropanol"
+    "préparation de la solution NaTA et de la solution d'isopropanol",
+    "vitesse d'agitation du test catalytique (« the solution was stirred at 40 °C »)",
+    "appareil de fluorescence, longueur d'onde d'excitation et concentration de NaTA",
+    "conditions de la GC–MS (colonne, programme de température, gaz vecteur, ionisation)",
+    "appareil de COT",
+    "tension d'accélération et nombre de particules comptées pour le TEM"
    ]
   }
  ],
@@ -1969,6 +2138,30 @@
   {
    "where": "Co-TPHPP-Cs-GO outcomes minéralisation TOC",
    "issue": "Le texte ne chiffre que 50 % de TOC à 40 °C ; l'effet de la température (55 °C) et de la dose de catalyseur sur la minéralisation est qualitatif (« increased », « enhanced »), sans valeur."
+  },
+  {
+   "where": "Materials, silica gel",
+   "issue": "« Silica gel (60–120 mesh) » est listé dans Matériaux sans être rattaché à une étape : probablement la phase stationnaire d'une purification chromatographique de la porphyrine (protocole « reported method »), mais l'article ne le dit pas. Aucune étape de purification ni réactif n'a été ajouté ; la purification reste « non citée »."
+  },
+  {
+   "where": "Fig. 5 / SEM",
+   "issue": "Le texte dit « 10 kV » pour le MEB ; les bandeaux de la Fig. 5 affichent 20.0 kV pour (a), (c) et (d) et 10.0 kV pour (b) (lecture sur une image de faible résolution). Valeur du texte conservée."
+  },
+  {
+   "where": "Fig. 5e / EDX",
+   "issue": "Les pourcentages massiques C 23,10, O 74,53, N 1,53 et Co 0,84 (total 100,00) sont imprimés dans le tableau de la Fig. 5e et lus tels quels ; le texte ne donne aucune quantité. C'est de l'EDX de surface (MEB), pas de l'ICP : la teneur en cobalt du catalyseur n'est pas citée par ailleurs."
+  },
+  {
+   "where": "Fig. 14 / fluorescence",
+   "issue": "Maximum d'émission lu vers 420 nm (± 5 nm) sur la Fig. 14 ; la longueur d'onde d'excitation n'est pas donnée. Les intensités lues à 75 min (≈ 215 sans AO7, ≈ 82 avec) sont proches des 220 et 80 du texte, qui restent retenus."
+  },
+  {
+   "where": "XRD des voies",
+   "issue": "Les angles XRD du texte sont écrits sans unité (« 2θ = 9.6° » mais « 5 to 90 » dans les Instruments) ; le degré est pris des citations de résultats. Les pics du chitosane de départ (9,60° et 20,22°, Fig. 4a) n'ont pas été ajoutés en résultats : ce réactif n'a pas de voie (voir sample_inventory)."
+  },
+  {
+   "where": "UV–Vis, conditions",
+   "issue": "La plage 200–600 nm de la section Instruments est ajoutée au champ conditions des trois entrées UV–Vis ; le tampon, la cuve et la vitesse de balayage ne sont pas cités."
   }
  ]
 }
