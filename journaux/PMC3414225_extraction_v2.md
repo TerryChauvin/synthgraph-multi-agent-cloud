@@ -1,0 +1,20 @@
+# Journal d'extraction v2 : PMC3414225 (CdS QD nus, enrobés de silice, ciblés CD31)
+
+- **Découpage en 4 voies.** `CdS_QD` (voie de base, microémulsion inverse) ; `SiO2_CdS_8h` (voie de base à part : l'enrobage ajoute des réactifs et des étapes propres, la solution de QD y entre comme réactif `intermediate`) ; `SiO2_CdS_2-3h` (seule branche : « reaction time was reduced from 8 hours », plage 2–3 h gardée en `value_text`) ; `SiO2_CdS_CD31` (`post_treatment`, conjugaison de l'anticorps).
+- **Solution de QD comme intermédiaire sans lavage hérité.** « added to the CdS solution » ne dit pas si les QD étaient déjà précipités et lavés. Je n'ai pas copié les étapes 6–7 de CdS_QD dans la voie enrobée et j'ai déclaré la quantité non citée.
+- **« mixed together after 5 minutes »** : lu comme durée d'agitation avant mélange (étape 4, `stir`) ; l'abrégé (« within 5 minutes ») permet aussi de lire une durée de réaction après mélange, donc `duration` de l'étape `mix` déclarée non citée. Doubt écrit.
+- **Seconde microémulsion** : une seule composition (20 mL cyclohexane + 8 mL IGEPAL) est écrite ; je n'ai pas doublé les quantités. Doubt.
+- **Agent de précipitation des QD nus** non nommé (« precipitated and repeatedly washed with 25 mL of ethanol ») : `precipitating_agent` en `not_stated` plutôt que d'affirmer l'éthanol.
+- **Pureté et fournisseur** : la phrase du paragraphe Materials suivie de « All chemicals were of an analytical grade. » est une seule citation contiguë, utilisée comme `supplier_quote` pour les réactifs de synthèse listés (cadmium nitrate, ammonium sulfide, cyclohexane, IGEPAL, eau, TEOS, ammoniaque, acétone). Glutaraldéhyde absent de la liste : fournisseur et pureté non cités. PBS et anticorps : fournisseur Invitrogen par leurs propres phrases, pureté non citée.
+- **Amination de la silice** : aucun réactif dans les Méthodes ; l'APTES n'apparaît que dans la légende de la figure 1. Je ne l'ai pas mis en réactif (déduit), seulement dans un doubt ; étape 1 avec température, durée, réactif et solvant non cités.
+- **Texte contre figure 8** (HUVEC, silice, 60/88/96 % contre ≈ 57/85/92 %) : valeurs du texte retenues. Figures lues seulement là où le texte est muet (autres concentrations, échantillon ciblé entier) ; deux chiffres significatifs, précision ≈ ±3 points, `from_figure` et légende en citation.
+- **Figure 9** : seules les barres à 1000 μg/mL sont lues ; les barres témoin ont des valeurs surprenantes (ROS ≈ 6 à 13) et sont décrites dans un doubt sans être extraites.
+- **Figure 18** : le texte (« all embryos viable ») et la figure (≈ 93 % de survie, éclosion ≈ 92 % au jour 10 puis 10 % au jour 11) diffèrent ; les deux sont enregistrés, doubt écrit. Concentration de 100 μg/mL (texte) contre 1 μg/mL (légende de la figure 17) : texte retenu.
+- **Exposants aplatis** : « nearly 104 cells » et « only 101 Gl-1 cells » (cytométrie) sont en `value_text` tel quel, sans nombre, avec un doubt.
+- **Excitation PL** : 360 nm (Méthodes) en réglage, 365 nm (Résultats) dans la citation du résultat ; doubt. La courbe de la figure 7 montre ≈ 595 nm ; le texte (600 nm) est gardé.
+- **Épaisseur de coque 20 nm** (Discussion in vivo) rattachée à `not_stated` pour la mesure : l'article ne dit pas comment elle a été obtenue, et elle est incohérente avec 35–40 nm autour de 4–5 nm.
+- **Coque mince à 2–3 h** : observation placée dans le paragraphe TEM mais non attribuée explicitement à la TEM : `measured_by: not_stated`. Toxicité de ces particules « data not shown ».
+- **Échantillons sans voie** : silice nue (témoin d'absorbance), témoins biologiques, rhodamine 6G, silice aminée (intermédiaire non isolé).
+- **Annexes** : figures S1, S2 et vidéo supplémentaire absentes du dépôt, annotation `limite_reproductibilite` correspondante.
+- **Noms ajoutés au vocabulaire** : méthode `reverse_microemulsion`, propriété `colloidal_dispersibility`, réglage `quantum_yield_standard`. Les essais de captation, de cytométrie et d'embryons passent par `biological_test` (assay_method) plutôt que par une technique nouvelle.
+- **Pas de `comparisons`** : aucune valeur de la littérature citée (les références sont du contexte).

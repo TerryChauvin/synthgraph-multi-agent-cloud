@@ -1,0 +1,2261 @@
+{
+ "pmcid": "PMC3414225",
+ "format": 3,
+ "routes": [
+  {
+   "label": "CdS_QD",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "bare CdS quantum dots (water-soluble)",
+    "formula": "CdS",
+    "family": "quantum_dot",
+    "phase": "cubic",
+    "morphology": "monodispersed quantum dots, 4–5 nm"
+   },
+   "methods": [
+    "reverse_microemulsion"
+   ],
+   "method": "reverse water-in-oil microemulsion (cyclohexane/IGEPAL), cadmium nitrate + ammonium sulfide",
+   "quote": "First, CdS QDs were prepared via a reverse microemulsion method.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "cyclohexane",
+     "formula": "C6H12",
+     "role": "solvent",
+     "quote": "A total of 20 mL of cyclohexane was mixed with 8 mL of IGEPAL to form a microemulsion.",
+     "amount": 20,
+     "unit": "mL",
+     "purity": "analytical grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cadmium nitrate, ammonium sulfide, cyclohexane, IGEPAL®, deionized water, tetraethoxysilane, ammonia, acetone, 2′,7′-dichlorfluorescein-diacetate, and a Coomassie protein estimation kit were all purchased from Sigma-Aldrich (St Louis, MO). All chemicals were of an analytical grade."
+    },
+    {
+     "name": "IGEPAL",
+     "formula": null,
+     "role": "surfactant",
+     "quote": "A total of 20 mL of cyclohexane was mixed with 8 mL of IGEPAL to form a microemulsion.",
+     "amount": 8,
+     "unit": "mL",
+     "purity": "analytical grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cadmium nitrate, ammonium sulfide, cyclohexane, IGEPAL®, deionized water, tetraethoxysilane, ammonia, acetone, 2′,7′-dichlorfluorescein-diacetate, and a Coomassie protein estimation kit were all purchased from Sigma-Aldrich (St Louis, MO). All chemicals were of an analytical grade."
+    },
+    {
+     "name": "cadmium nitrate",
+     "formula": "Cd(NO3)2",
+     "role": "precursor",
+     "quote": "An aqueous solution of cadmium nitrate (190 mg in 2 mL deionized water) was added to the first microemulsion",
+     "amount": 190,
+     "unit": "mg",
+     "purity": "analytical grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cadmium nitrate, ammonium sulfide, cyclohexane, IGEPAL®, deionized water, tetraethoxysilane, ammonia, acetone, 2′,7′-dichlorfluorescein-diacetate, and a Coomassie protein estimation kit were all purchased from Sigma-Aldrich (St Louis, MO). All chemicals were of an analytical grade."
+    },
+    {
+     "name": "deionized water (cadmium nitrate solution)",
+     "formula": "H2O",
+     "role": "solvent",
+     "quote": "An aqueous solution of cadmium nitrate (190 mg in 2 mL deionized water) was added to the first microemulsion",
+     "amount": 2,
+     "unit": "mL",
+     "purity": "analytical grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cadmium nitrate, ammonium sulfide, cyclohexane, IGEPAL®, deionized water, tetraethoxysilane, ammonia, acetone, 2′,7′-dichlorfluorescein-diacetate, and a Coomassie protein estimation kit were all purchased from Sigma-Aldrich (St Louis, MO). All chemicals were of an analytical grade."
+    },
+    {
+     "name": "ammonium sulfide solution (0.01 M)",
+     "formula": "(NH4)2S",
+     "role": "precursor",
+     "quote": "2 mL of an ammonium sulfide solution (0.01 M) were added to the second and continuously stirred",
+     "amount": 2,
+     "unit": "mL",
+     "purity": "analytical grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cadmium nitrate, ammonium sulfide, cyclohexane, IGEPAL®, deionized water, tetraethoxysilane, ammonia, acetone, 2′,7′-dichlorfluorescein-diacetate, and a Coomassie protein estimation kit were all purchased from Sigma-Aldrich (St Louis, MO). All chemicals were of an analytical grade."
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "wash",
+     "quote": "repeatedly washed with 25 mL of ethanol",
+     "amount": 25,
+     "unit": "mL"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "mix",
+     "description": "Form a water-in-oil microemulsion from cyclohexane and IGEPAL.",
+     "quote": "A total of 20 mL of cyclohexane was mixed with 8 mL of IGEPAL to form a microemulsion.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add the aqueous cadmium nitrate solution to the first microemulsion.",
+     "quote": "An aqueous solution of cadmium nitrate (190 mg in 2 mL deionized water) was added to the first microemulsion",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Add the ammonium sulfide solution (0.01 M) to the second microemulsion.",
+     "quote": "2 mL of an ammonium sulfide solution (0.01 M) were added to the second and continuously stirred",
+     "parameters": [
+      {
+       "name": "concentration",
+       "quote": "2 mL of an ammonium sulfide solution (0.01 M)",
+       "value_num": 0.01,
+       "unit": "M"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "stir",
+     "description": "Stir the microemulsions continuously until they are mixed after 5 minutes.",
+     "quote": "2 mL of an ammonium sulfide solution (0.01 M) were added to the second and continuously stirred. The two microemulsions were mixed together after 5 minutes",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The two microemulsions were mixed together after 5 minutes",
+       "value_num": 5,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "mix",
+     "description": "Mix the two microemulsions; a yellow color appears, indicating CdS QD formation.",
+     "quote": "The two microemulsions were mixed together",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "wash",
+     "description": "Precipitate the QDs and wash repeatedly with ethanol.",
+     "quote": "The so-synthesized QDs were precipitated and repeatedly washed with 25 mL of ethanol, then centrifuged to obtain the QDs.",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "repeatedly washed with 25 mL of ethanol",
+       "value_text": "ethanol"
+      },
+      {
+       "name": "wash_volume",
+       "quote": "repeatedly washed with 25 mL of ethanol",
+       "value_num": 25,
+       "unit": "mL"
+      },
+      {
+       "name": "repetitions",
+       "quote": "repeatedly washed with 25 mL of ethanol",
+       "value_text": "repeatedly"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "precipitating_agent"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "centrifuge",
+     "description": "Centrifuge to recover the QDs.",
+     "quote": "then centrifuged to obtain the QDs",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "centrifuge_speed",
+      "duration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "tem_cds",
+     "technique": "TEM",
+     "instrument": "field emission transmission electron microscope (TEM, JEM-2200-FS; JEOL, Tokyo, Japan)",
+     "result": "monodisperse QDs with lattice fringes, average size 4–5 nm",
+     "quote": "As shown in the TEM micrograph, the CdS QDs (Figure 2A and B) were highly monodispersed and exhibited good crystal lattice fringes, with average sizes of 4–5 nm.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "xrd_cds",
+     "technique": "XRD",
+     "instrument": "Rigaku (RINT) diffractometer (Tokyo, Japan) equipped with a rotating anode",
+     "result": "peaks at 2θ = 27.1°, 44.8° and 53.4°, cubic structure (Figure S1, absent from the repository)",
+     "quote": "The diffraction peaks were assigned to 2θ = 27.1°, 44.8°, and 53.4° of CdS QDs, suggesting a cubic structure.",
+     "settings": [
+      {
+       "name": "scan_step",
+       "quote": "The 2θ angle for the XRD spectra was recorded at a scanning rate of 5°/minute.",
+       "value_text": "scanning rate of 5°/minute"
+      }
+     ],
+     "not_stated": [
+      "radiation",
+      "scan_range",
+      "crystallite_size_method"
+     ]
+    },
+    {
+     "id": "eds_cds",
+     "technique": "EDS",
+     "instrument": "JEOL JED-2300T",
+     "result": "Cd and S present",
+     "quote": "The presence of Cd and S confirmed the formation of CdS QDs",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "xps_cds",
+     "technique": "XPS",
+     "instrument": "Kratos Analytical, Tokyo, Japan",
+     "result": "Cd and S peaks, wide spectrum (Figure 4)",
+     "quote": "Figure 4A and B, correspond to the Cd and S peaks, whereas Figure 4C shows the wide XPS spectra of the CdS QDs.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "The presence of Si and O was from the silica substrate used while performing XPS.",
+       "value_text": "silica substrate"
+      }
+     ],
+     "not_stated": [
+      "xray_source",
+      "calibration_reference"
+     ]
+    },
+    {
+     "id": "uvvis_cds",
+     "technique": "UV_vis",
+     "instrument": "Shimadzu UV-2100PC/3100PC UV visible spectrometer (Kyoto, Japan)",
+     "result": "peak absorption at 400 nm (data not shown)",
+     "quote": "whereas the bare QDs showed peak absorption at 400 nm",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "The particles were dissolved in double-distilled H2O, and the UV spectroscopy was carried out using a Shimadzu UV-2100PC/3100PC UV visible spectrometer (Kyoto, Japan).",
+       "value_text": "particles dissolved in double-distilled H2O"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "band_gap_method"
+     ]
+    },
+    {
+     "id": "pl_cds",
+     "technique": "PL",
+     "instrument": "JASCO FP-750 spectrophotometer (Tokyo, Japan)",
+     "result": "emission peak centred at 600 nm",
+     "quote": "The excitation wavelength was 365 nm and a clear emission peak was noted, centered at 600 nm for both particles.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "Photoluminescence spectra were recorded with an excitation wavelength of 360 nm using a JASCO FP-750 spectrophotometer (Tokyo, Japan).",
+       "value_num": 360,
+       "unit": "nm"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "qy_cds",
+     "technique": "PL",
+     "instrument": "Hitachi FP4500 spectrophotometer (Tokyo, Japan)",
+     "result": "quantum yield 0.02%",
+     "quote": "The quantum yields of bare and silica-coated CdS QDs were found to be 0.02% and 0.03%, respectively.",
+     "settings": [
+      {
+       "name": "quantum_yield_standard",
+       "quote": "Rhodamine 6G from Sigma-Aldrich (St Louis, MO) was used as the standard dye for quantum yield measurements.",
+       "value_text": "Rhodamine 6G"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "uvphoto_cds",
+     "technique": "PL",
+     "instrument": "Pentax Optio W80 digital camera (Pentax Ricoh Imaging Co, Tokyo, Japan)",
+     "result": "fluorescence of bare QDs under UV after storage under normal light",
+     "quote": "In stark contrast, the fluorescence of QDs without a silica coating was observed to have diminished drastically under normal light and no fluorescence was recorded after 1 month.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "The particle suspension was illuminated using UV and its fluorescence captured via a Pentax Optio W80 digital camera (Pentax Ricoh Imaging Co, Tokyo, Japan).",
+       "value_text": "UV illumination (wavelength not given)"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "bio_alamar_cds",
+     "technique": "biological_test",
+     "instrument": "Multidetection Microplate Scanner; Dainippon Sumitomo Pharma Co, Ltd, Osaka, Japan (microplate reader)",
+     "result": "viability of HUVECs and Gl-1 cells after 24 h with bare CdS QDs (Figure 8)",
+     "quote": "Upon the subsequent addition of the nanoparticles, cell viability decreased as a function of concentration and time.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The cytotoxicity profiles of bare and silica-coated QDs were studied on HUVECs and Gl-1 cells.",
+       "value_text": "HUVECs (Gibco) and Gl-1 glioma cells (Riken BioResource)"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "100 μL of CdS QDs, silica-coated CdS QDs, and targeted silica QDs were added at varied concentrations (1 mg and 100, 10, and 1 μg).",
+       "value_text": "1 mg and 100, 10, and 1 μg (100 μL added per well)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "After 24 hours of incubation with nanoparticles, the cells were washed with PBS and 0.2 mL of the respective medium was added.",
+       "value_text": "24 hours with nanoparticles; approximately 5000 cells seeded per well of 96-well plates"
+      },
+      {
+       "name": "assay_method",
+       "quote": "Cell viability was assayed with alamarBlue according to the manufacturer’s instructions and the fluorescence at 570 nm was measured.",
+       "value_text": "alamarBlue, fluorescence read at 570 nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "The control group was devoid of nanomaterials and the experiments were conducted in triplicate.",
+       "value_text": "triplicate"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "bio_ros_cds",
+     "technique": "biological_test",
+     "instrument": "Multidetection Microplate Scanner; Dainippon Sumitomo Pharma Co, Ltd, Osaka, Japan (microplate reader)",
+     "result": "ROS fluorescence intensity in both cell lines with bare CdS QDs (Figure 9A)",
+     "quote": "We were able to detect higher levels of ROS formation in both cell lines treated with the CdS QDs than in the control group (Figure 9A).",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The cytotoxicity profiles of bare and silica-coated QDs were studied on HUVECs and Gl-1 cells.",
+       "value_text": "HUVECs (Gibco) and Gl-1 glioma cells (Riken BioResource)"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "100 μL of CdS QDs, silica-coated CdS QDs, and targeted silica QDs were added at varied concentrations (1 mg and 100, 10, and 1 μg).",
+       "value_text": "1 mg and 100, 10, and 1 μg (100 μL added per well)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "After 24 hours of incubation with nanoparticles, the cells were washed with PBS and 0.2 mL of the respective medium was added.",
+       "value_text": "24 hours with nanoparticles; approximately 5000 cells seeded per well of 96-well plates"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The ROS, employing 2′,7′-dichlorfluorescein-diacetate dye, was measured at 480 nm.",
+       "value_text": "2′,7′-dichlorfluorescein-diacetate dye, measured at 480 nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "The control group was devoid of nanomaterials and the experiments were conducted in triplicate.",
+       "value_text": "triplicate"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "bio_protein_cds",
+     "technique": "biological_test",
+     "instrument": "Multidetection Microplate Scanner; Dainippon Sumitomo Pharma Co, Ltd, Osaka, Japan (microplate reader)",
+     "result": "Coomassie protein absorbance in both cell lines with bare CdS QDs (Figure 9B)",
+     "quote": "Coomassie protein assay showed that the total cellular protein production of both the cell lineages treated with CdS QDs was drastically reduced when compared with the control group (Figure 9B).",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The cytotoxicity profiles of bare and silica-coated QDs were studied on HUVECs and Gl-1 cells.",
+       "value_text": "HUVECs (Gibco) and Gl-1 glioma cells (Riken BioResource)"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "100 μL of CdS QDs, silica-coated CdS QDs, and targeted silica QDs were added at varied concentrations (1 mg and 100, 10, and 1 μg).",
+       "value_text": "1 mg and 100, 10, and 1 μg (100 μL added per well)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "After 24 hours of incubation with nanoparticles, the cells were washed with PBS and 0.2 mL of the respective medium was added.",
+       "value_text": "24 hours with nanoparticles; approximately 5000 cells seeded per well of 96-well plates"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The Coomassie protein reagent was employed for protein estimation studies and the resultant absorbance was read at 570 nm.",
+       "value_text": "Coomassie protein reagent, absorbance read at 570 nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "The control group was devoid of nanomaterials and the experiments were conducted in triplicate.",
+       "value_text": "triplicate"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "confocal_cds",
+     "technique": "biological_test",
+     "instrument": "confocal microscope (Olympus IX 81, under DU897 mode; Tokyo, Japan) using a fluorescein isothiocyanate filter",
+     "result": "uptake of bare CdS QDs by HUVECs and Gl-1 cells at 1 h, 2 h and 24 h (Figures 10–12)",
+     "quote": "The cellular uptake and endocytosis of these nanomaterials were studied by means of a confocal microscope to determine the cellular uptake/entry of bare and silica-coated QDs.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "HUVECs and Gl-1 cells were treated with as few as 100 μg/mL of both nanomaterials and incubated for 1 hour (Figure 10).",
+       "value_text": "HUVECs and Gl-1 cells"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "Subsequently, the nanomaterials were added to the plates at a concentration of 500 μg/mL, and the cells were incubated for 2 hours at 37°C in an incubator maintained at 5% CO2.",
+       "value_text": "500 μg/mL (Methods); 100 μg/mL (Results, Figure 10)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "Subsequently, the nanomaterials were added to the plates at a concentration of 500 μg/mL, and the cells were incubated for 2 hours at 37°C in an incubator maintained at 5% CO2.",
+       "value_text": "2 hours at 37°C, 5% CO2 (Methods); time series 1, 2, 4, 24 hours (Results)"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The cells were then washed with PBS and viewed under a confocal microscope at 488 nm excitation with a green filter.",
+       "value_text": "confocal microscopy, 488 nm excitation, green filter"
+      }
+     ],
+     "not_stated": [
+      "replicates"
+     ]
+    },
+    {
+     "id": "embryo_cds",
+     "technique": "biological_test",
+     "instrument": "Leica Microsystems AF 600 fluorescence microscope (Wetzlar, Germany) under a GFP6 filter",
+     "result": "survival of medaka embryos exposed to bare CdS QDs (Figures 17–18)",
+     "quote": "To investigate the applicability and feasibility of bare and silica-coated QDs for in vivo imaging, we employed medaka embryos as test models.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The medaka embryos were collected, sorted, and incubated with bare CdS and silica-coated CdS QDs at a concentration of 100 μg/mL of embryo-rearing medium (ERM).",
+       "value_text": "medaka embryos"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "The medaka embryos were collected, sorted, and incubated with bare CdS and silica-coated CdS QDs at a concentration of 100 μg/mL of embryo-rearing medium (ERM).",
+       "value_text": "100 μg/mL of embryo-rearing medium (ERM)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "The treated embryos were incubated at 26°C for 1 day on a 16-/8-hour light–dark cycle.",
+       "value_text": "26°C, 1 day, 16-/8-hour light–dark cycle; exposure continued until Day 13"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The embryos were rinsed on alternate days with ERM and analyzed for viability and morphological deformities.",
+       "value_text": "viability and morphological deformities; fluorescence microscopy for nanoparticle uptake"
+      },
+      {
+       "name": "replicates",
+       "quote": "Fifteen embryos were chosen for treatment with each set of nanoparticles (control, CdS QDs, and silica-coated CdS QDs) and the experiment was carried out in duplicate.",
+       "value_text": "fifteen embryos per set, experiment in duplicate"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "colloidal_dispersibility",
+     "quote": "The nanoparticles (bare and silica-coated CdS) were successfully synthesized and were highly water-soluble.",
+     "value_text": "highly water-soluble"
+    },
+    {
+     "property": "visual_appearance",
+     "quote": "the development of a yellow color was noted, indicating the formation of CdS QDs",
+     "value_text": "yellow color developed after mixing the two microemulsions"
+    },
+    {
+     "property": "particle_size",
+     "quote": "with average sizes of 4–5 nm",
+     "value_text": "4–5 nm",
+     "measured_by": "tem_cds"
+    },
+    {
+     "property": "morphology",
+     "quote": "the CdS QDs (Figure 2A and B) were highly monodispersed and exhibited good crystal lattice fringes",
+     "value_text": "highly monodispersed",
+     "measured_by": "tem_cds"
+    },
+    {
+     "property": "crystallinity",
+     "quote": "exhibited good crystal lattice fringes",
+     "value_text": "good crystal lattice fringes",
+     "measured_by": "tem_cds"
+    },
+    {
+     "property": "phase",
+     "quote": "The diffraction peaks were assigned to 2θ = 27.1°, 44.8°, and 53.4° of CdS QDs, suggesting a cubic structure.",
+     "value_text": "cubic structure",
+     "measured_by": "xrd_cds"
+    },
+    {
+     "property": "xrd_peak_position_1",
+     "quote": "The diffraction peaks were assigned to 2θ = 27.1°, 44.8°, and 53.4° of CdS QDs, suggesting a cubic structure.",
+     "value_num": 27.1,
+     "unit": "°",
+     "measured_by": "xrd_cds"
+    },
+    {
+     "property": "xrd_peak_position_2",
+     "quote": "The diffraction peaks were assigned to 2θ = 27.1°, 44.8°, and 53.4° of CdS QDs, suggesting a cubic structure.",
+     "value_num": 44.8,
+     "unit": "°",
+     "measured_by": "xrd_cds"
+    },
+    {
+     "property": "xrd_peak_position_3",
+     "quote": "The diffraction peaks were assigned to 2θ = 27.1°, 44.8°, and 53.4° of CdS QDs, suggesting a cubic structure.",
+     "value_num": 53.4,
+     "unit": "°",
+     "measured_by": "xrd_cds"
+    },
+    {
+     "property": "elemental_composition",
+     "quote": "The presence of Cd and S confirmed the formation of CdS QDs",
+     "value_text": "Cd and S present",
+     "measured_by": "eds_cds"
+    },
+    {
+     "property": "elemental_composition_xps",
+     "quote": "Figure 4A and B, correspond to the Cd and S peaks, whereas Figure 4C shows the wide XPS spectra of the CdS QDs.",
+     "value_text": "Cd and S peaks (Si and O from the silica substrate)",
+     "measured_by": "xps_cds"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "whereas the bare QDs showed peak absorption at 400 nm",
+     "value_num": 400,
+     "unit": "nm",
+     "measured_by": "uvvis_cds"
+    },
+    {
+     "property": "PL_emission_peak",
+     "quote": "The excitation wavelength was 365 nm and a clear emission peak was noted, centered at 600 nm for both particles.",
+     "value_num": 600,
+     "unit": "nm",
+     "measured_by": "pl_cds"
+    },
+    {
+     "property": "quantum_yield",
+     "quote": "The quantum yields of bare and silica-coated CdS QDs were found to be 0.02% and 0.03%, respectively.",
+     "value_num": 0.02,
+     "unit": "%",
+     "measured_by": "qy_cds"
+    },
+    {
+     "property": "retention_stability_fluorescence_1month",
+     "quote": "In stark contrast, the fluorescence of QDs without a silica coating was observed to have diminished drastically under normal light and no fluorescence was recorded after 1 month.",
+     "value_text": "fluorescence diminished drastically under normal light, none recorded after 1 month",
+     "measured_by": "uvphoto_cds"
+    },
+    {
+     "property": "biological_viability_HUVEC_1ug",
+     "quote": "Bare QDs had comparatively higher levels of toxicity, even at the lowest concentrations (1 μg), at which only 55% of cells were viable.",
+     "value_num": 55,
+     "unit": "%",
+     "measured_by": "bio_alamar_cds"
+    },
+    {
+     "property": "biological_viability_HUVEC_1mg",
+     "quote": "At the highest concentration (1 mg), only 10% of the cells were viable.",
+     "value_num": 10,
+     "unit": "%",
+     "measured_by": "bio_alamar_cds"
+    },
+    {
+     "property": "biological_viability_Gl1_1mg_mL",
+     "quote": "In the case of Gl-1 cells, the cytotoxicity of bare QDs was highly pronounced, with only 3% of cells viable at the highest concentration (1 mg/mL).",
+     "value_num": 3,
+     "unit": "%",
+     "measured_by": "bio_alamar_cds"
+    },
+    {
+     "property": "biological_viability_Gl1_1ug_mL",
+     "quote": "Even at a concentration of 1 μg/mL, we could observe only around 40% viability.",
+     "value_num": 40,
+     "unit": "%",
+     "measured_by": "bio_alamar_cds"
+    },
+    {
+     "property": "biological_viability_HUVEC_100ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 27,
+     "unit": "%",
+     "measured_by": "bio_alamar_cds",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_HUVEC_10ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 45,
+     "unit": "%",
+     "measured_by": "bio_alamar_cds",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_Gl1_100ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 18,
+     "unit": "%",
+     "measured_by": "bio_alamar_cds",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_Gl1_10ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 30,
+     "unit": "%",
+     "measured_by": "bio_alamar_cds",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_ROS_HUVEC_1000ug_mL",
+     "quote": "Effect of cadmium sulfide and silica-coated quantum dots on (A) cellular radical formation (reactive oxygen species [ROS]) and (B) on protein synthesis.",
+     "value_num": 52,
+     "unit": "a.u.",
+     "measured_by": "bio_ros_cds",
+     "from_figure": "Fig. 9A"
+    },
+    {
+     "property": "biological_ROS_Gl1_1000ug_mL",
+     "quote": "Effect of cadmium sulfide and silica-coated quantum dots on (A) cellular radical formation (reactive oxygen species [ROS]) and (B) on protein synthesis.",
+     "value_num": 68,
+     "unit": "a.u.",
+     "measured_by": "bio_ros_cds",
+     "from_figure": "Fig. 9A"
+    },
+    {
+     "property": "biological_protein_absorbance_HUVEC_1000ug_mL",
+     "quote": "Effect of cadmium sulfide and silica-coated quantum dots on (A) cellular radical formation (reactive oxygen species [ROS]) and (B) on protein synthesis.",
+     "value_num": 0.29,
+     "measured_by": "bio_protein_cds",
+     "from_figure": "Fig. 9B"
+    },
+    {
+     "property": "biological_protein_absorbance_Gl1_1000ug_mL",
+     "quote": "Effect of cadmium sulfide and silica-coated quantum dots on (A) cellular radical formation (reactive oxygen species [ROS]) and (B) on protein synthesis.",
+     "value_num": 0.3,
+     "measured_by": "bio_protein_cds",
+     "from_figure": "Fig. 9B"
+    },
+    {
+     "property": "biological_uptake_Gl1_1h",
+     "quote": "In the case of bare QDs, Gl-1 cells showed efficient uptake of nanomaterials after 1 hour of incubation.",
+     "value_text": "efficient uptake after 1 hour",
+     "measured_by": "confocal_cds"
+    },
+    {
+     "property": "biological_uptake_HUVEC_1h",
+     "quote": "However, HUVECs were not efficiently labeled with bare QDs at 1 hour.",
+     "value_text": "not efficiently labeled at 1 hour",
+     "measured_by": "confocal_cds"
+    },
+    {
+     "property": "biological_uptake_2h",
+     "quote": "After 2 hours, both cells showed efficient uptake of bare QDs and were effectively labeled.",
+     "value_text": "both cell lines efficiently labeled after 2 hours",
+     "measured_by": "confocal_cds"
+    },
+    {
+     "property": "biological_cell_death_24h",
+     "quote": "When the cells were incubated for a longer duration with bare QDs (24 hours), most of the Gl-1 cells died, rounded, and started to float (Figure 12); the HUVECs also started to undergo cell death.",
+     "value_text": "most Gl-1 cells died and floated after 24 hours; HUVECs also began to die and shrank",
+     "measured_by": "confocal_cds"
+    },
+    {
+     "property": "biological_embryo_mortality",
+     "quote": "As expected, CdS QD-treated embryos showed 100% mortality, whereas the silica-coated QD-treated embryos stayed viable and healthy throughout and after the experiments, devoid of any deformities.",
+     "value_num": 100,
+     "unit": "%",
+     "measured_by": "embryo_cds"
+    },
+    {
+     "property": "biological_embryo_survival_day2",
+     "quote": "In the case of CdS QDs, all test embryos were dead by Day 2 of nanoparticle exposure.",
+     "value_text": "all test embryos dead by Day 2",
+     "measured_by": "embryo_cds"
+    },
+    {
+     "property": "biological_embryo_appearance_24h",
+     "quote": "We found that the embryos treated with CdS QDs had all shrunk, with blood clots evidently visible (Figure 17A).",
+     "value_text": "embryos shrunk, blood clots visible; none survived within 24 hours",
+     "measured_by": "embryo_cds"
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "yield",
+    "centrifuge_speed",
+    "precipitating_agent"
+   ]
+  },
+  {
+   "label": "SiO2_CdS_8h",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "material",
+   "material": {
+    "name": "silica-coated CdS QDs, single CdS QD core in a silica sphere",
+    "formula": "CdS@SiO2",
+    "family": "composite",
+    "phase": null,
+    "morphology": "monodispersed spherical particles, 35–40 nm"
+   },
+   "methods": [
+    "reverse_microemulsion",
+    "sol_gel"
+   ],
+   "method": "silica coating of CdS QDs in the reverse microemulsion by tetraethoxysilane hydrolysis (ammonia), 8 h",
+   "quote": "For silica-coated QDs, 1 mL of tetraethoxysilane and 0.2 mL of a 28% ammonia solution were added to the CdS solution.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "CdS QD solution (route CdS_QD)",
+     "formula": "CdS",
+     "role": "intermediate",
+     "quote": "1 mL of tetraethoxysilane and 0.2 mL of a 28% ammonia solution were added to the CdS solution",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "tetraethoxysilane",
+     "formula": "Si(OC2H5)4",
+     "role": "precursor",
+     "quote": "1 mL of tetraethoxysilane and 0.2 mL of a 28% ammonia solution were added to the CdS solution",
+     "amount": 1,
+     "unit": "mL",
+     "purity": "analytical grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cadmium nitrate, ammonium sulfide, cyclohexane, IGEPAL®, deionized water, tetraethoxysilane, ammonia, acetone, 2′,7′-dichlorfluorescein-diacetate, and a Coomassie protein estimation kit were all purchased from Sigma-Aldrich (St Louis, MO). All chemicals were of an analytical grade."
+    },
+    {
+     "name": "ammonia solution (28%)",
+     "formula": "NH3",
+     "role": "base",
+     "quote": "1 mL of tetraethoxysilane and 0.2 mL of a 28% ammonia solution were added to the CdS solution",
+     "amount": 0.2,
+     "unit": "mL",
+     "purity": "analytical grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cadmium nitrate, ammonium sulfide, cyclohexane, IGEPAL®, deionized water, tetraethoxysilane, ammonia, acetone, 2′,7′-dichlorfluorescein-diacetate, and a Coomassie protein estimation kit were all purchased from Sigma-Aldrich (St Louis, MO). All chemicals were of an analytical grade."
+    },
+    {
+     "name": "acetone",
+     "formula": "C3H6O",
+     "role": "precipitating_agent",
+     "quote": "then precipitated with acetone",
+     "purity": "analytical grade",
+     "supplier": "Sigma-Aldrich",
+     "supplier_quote": "Cadmium nitrate, ammonium sulfide, cyclohexane, IGEPAL®, deionized water, tetraethoxysilane, ammonia, acetone, 2′,7′-dichlorfluorescein-diacetate, and a Coomassie protein estimation kit were all purchased from Sigma-Aldrich (St Louis, MO). All chemicals were of an analytical grade.",
+     "not_stated": [
+      "amount"
+     ]
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "wash",
+     "quote": "repeatedly washed with 25 mL of ethanol",
+     "amount": 25,
+     "unit": "mL"
+    },
+    {
+     "name": "double-distilled water",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "and then thrice with 25 mL of double-distilled H2O",
+     "amount": 25,
+     "unit": "mL"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "add",
+     "description": "Add tetraethoxysilane and ammonia solution to the CdS QD solution.",
+     "quote": "1 mL of tetraethoxysilane and 0.2 mL of a 28% ammonia solution were added to the CdS solution",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Continue stirring for 8 hours.",
+     "quote": "The stirring continued for 8 hours",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The stirring continued for 8 hours",
+       "value_num": 8,
+       "unit": "hours"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "add",
+     "description": "Precipitate the particles with acetone.",
+     "quote": "then precipitated with acetone",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "wash",
+     "description": "Wash repeatedly with ethanol.",
+     "quote": "repeatedly washed with 25 mL of ethanol",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "repeatedly washed with 25 mL of ethanol",
+       "value_text": "ethanol"
+      },
+      {
+       "name": "wash_volume",
+       "quote": "repeatedly washed with 25 mL of ethanol",
+       "value_num": 25,
+       "unit": "mL"
+      },
+      {
+       "name": "repetitions",
+       "quote": "repeatedly washed with 25 mL of ethanol",
+       "value_text": "repeatedly"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "separation_method"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "wash",
+     "description": "Wash thrice with double-distilled water.",
+     "quote": "and then thrice with 25 mL of double-distilled H2O",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "and then thrice with 25 mL of double-distilled H2O",
+       "value_text": "double-distilled H2O"
+      },
+      {
+       "name": "wash_volume",
+       "quote": "and then thrice with 25 mL of double-distilled H2O",
+       "value_num": 25,
+       "unit": "mL"
+      },
+      {
+       "name": "repetitions",
+       "quote": "and then thrice with 25 mL of double-distilled H2O",
+       "value_text": "thrice"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 6,
+     "action": "dry",
+     "description": "Desiccate the final product.",
+     "quote": "The final product was desiccated to obtain water-soluble, silica-coated CdS QDs.",
+     "parameters": [
+      {
+       "name": "drying_mode",
+       "quote": "The final product was desiccated to obtain water-soluble, silica-coated CdS QDs.",
+       "value_text": "desiccated"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "tem_sio2",
+     "technique": "TEM",
+     "instrument": "field emission transmission electron microscope (TEM, JEM-2200-FS; JEOL, Tokyo, Japan)",
+     "result": "monodisperse silica spheres, one CdS QD core each, 35–40 nm; HRTEM shows lattice patterns of the QD",
+     "quote": "Figure 2C and D show the TEM image of silica-coated CdS QDs. The silica-coated QDs were also highly monodispersed and each particle consisted of a single CdS QD at its core. The sizes of the silica-coated QDs were approximately 35–40 nm.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "eds_sio2",
+     "technique": "EDS",
+     "instrument": "JEOL JED-2300T",
+     "result": "only Si and O detected, no Cd or S",
+     "quote": "the presence of only Si and O was noted in the case of silica-coated QDs.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "eds_map_sio2",
+     "technique": "EDS",
+     "instrument": "JEOL JED-2300T",
+     "result": "EDS mapping of Cd, S, Si and O (Figure 6)",
+     "quote": "EDS mapping was performed to analyze the presence of CdS deep inside the silica shell (Figure 6).",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "xps_sio2",
+     "technique": "XPS",
+     "instrument": "Kratos Analytical, Tokyo, Japan",
+     "result": "Si and O, no Cd or S peaks (Figure 5 top)",
+     "quote": "Figure 5 corresponds to the XPS analysis of silica-coated and CD31 antibody-targeted silica-coated QDs.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "The presence of Si and O was clear; the substrate used in this case was carbon tape.",
+       "value_text": "carbon tape substrate"
+      }
+     ],
+     "not_stated": [
+      "xray_source",
+      "calibration_reference"
+     ]
+    },
+    {
+     "id": "uvvis_sio2",
+     "technique": "UV_vis",
+     "instrument": "Shimadzu UV-2100PC/3100PC UV visible spectrometer (Kyoto, Japan)",
+     "result": "slight red shift of the absorption relative to bare QDs (data not shown)",
+     "quote": "The silica-coated QDs showed a slight red shift in absorption.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "The particles were dissolved in double-distilled H2O, and the UV spectroscopy was carried out using a Shimadzu UV-2100PC/3100PC UV visible spectrometer (Kyoto, Japan).",
+       "value_text": "particles dissolved in double-distilled H2O"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "band_gap_method"
+     ]
+    },
+    {
+     "id": "pl_sio2",
+     "technique": "PL",
+     "instrument": "JASCO FP-750 spectrophotometer (Tokyo, Japan)",
+     "result": "emission peak centred at 600 nm (Figure 7)",
+     "quote": "The excitation wavelength was 365 nm and a clear emission peak was noted, centered at 600 nm for both particles.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "Photoluminescence spectra were recorded with an excitation wavelength of 360 nm using a JASCO FP-750 spectrophotometer (Tokyo, Japan).",
+       "value_num": 360,
+       "unit": "nm"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "qy_sio2",
+     "technique": "PL",
+     "instrument": "Hitachi FP4500 spectrophotometer (Tokyo, Japan)",
+     "result": "quantum yield 0.03%",
+     "quote": "The quantum yields of bare and silica-coated CdS QDs were found to be 0.02% and 0.03%, respectively.",
+     "settings": [
+      {
+       "name": "quantum_yield_standard",
+       "quote": "Rhodamine 6G from Sigma-Aldrich (St Louis, MO) was used as the standard dye for quantum yield measurements.",
+       "value_text": "Rhodamine 6G"
+      }
+     ],
+     "not_stated": [
+      "excitation_wavelength",
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "uvphoto_sio2",
+     "technique": "PL",
+     "instrument": "Pentax Optio W80 digital camera (Pentax Ricoh Imaging Co, Tokyo, Japan)",
+     "result": "fluorescence under UV light after 3 months of storage (Figure S2, absent)",
+     "quote": "To assess and affirm the increased shelf-life stability of the silica-coated CdS QDs, UV luminescent images of the nanomaterials after 3 months of storage (Figure S2) were recorded.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "The particle suspension was illuminated using UV and its fluorescence captured via a Pentax Optio W80 digital camera (Pentax Ricoh Imaging Co, Tokyo, Japan).",
+       "value_text": "UV illumination (wavelength not given)"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "bio_alamar_sio2",
+     "technique": "biological_test",
+     "instrument": "Multidetection Microplate Scanner; Dainippon Sumitomo Pharma Co, Ltd, Osaka, Japan (microplate reader)",
+     "result": "viability of HUVECs and Gl-1 cells after 24 h with silica-coated CdS QDs (Figure 8)",
+     "quote": "On the contrary, in the case of silica-coated QDs, the viability of the cells was greatly enhanced.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The cytotoxicity profiles of bare and silica-coated QDs were studied on HUVECs and Gl-1 cells.",
+       "value_text": "HUVECs (Gibco) and Gl-1 glioma cells (Riken BioResource)"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "100 μL of CdS QDs, silica-coated CdS QDs, and targeted silica QDs were added at varied concentrations (1 mg and 100, 10, and 1 μg).",
+       "value_text": "1 mg and 100, 10, and 1 μg (100 μL added per well)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "After 24 hours of incubation with nanoparticles, the cells were washed with PBS and 0.2 mL of the respective medium was added.",
+       "value_text": "24 hours with nanoparticles; approximately 5000 cells seeded per well of 96-well plates"
+      },
+      {
+       "name": "assay_method",
+       "quote": "Cell viability was assayed with alamarBlue according to the manufacturer’s instructions and the fluorescence at 570 nm was measured.",
+       "value_text": "alamarBlue, fluorescence read at 570 nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "The control group was devoid of nanomaterials and the experiments were conducted in triplicate.",
+       "value_text": "triplicate"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "bio_ros_sio2",
+     "technique": "biological_test",
+     "instrument": "Multidetection Microplate Scanner; Dainippon Sumitomo Pharma Co, Ltd, Osaka, Japan (microplate reader)",
+     "result": "ROS fluorescence intensity with silica-coated CdS QDs (Figure 9A)",
+     "quote": "However, the ROS and protein production of silica-coated CdS QDs-treated cells remained comparable to the control group except at the concentration of 1 mg/mL.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The cytotoxicity profiles of bare and silica-coated QDs were studied on HUVECs and Gl-1 cells.",
+       "value_text": "HUVECs (Gibco) and Gl-1 glioma cells (Riken BioResource)"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "100 μL of CdS QDs, silica-coated CdS QDs, and targeted silica QDs were added at varied concentrations (1 mg and 100, 10, and 1 μg).",
+       "value_text": "1 mg and 100, 10, and 1 μg (100 μL added per well)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "After 24 hours of incubation with nanoparticles, the cells were washed with PBS and 0.2 mL of the respective medium was added.",
+       "value_text": "24 hours with nanoparticles; approximately 5000 cells seeded per well of 96-well plates"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The ROS, employing 2′,7′-dichlorfluorescein-diacetate dye, was measured at 480 nm.",
+       "value_text": "2′,7′-dichlorfluorescein-diacetate dye, measured at 480 nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "The control group was devoid of nanomaterials and the experiments were conducted in triplicate.",
+       "value_text": "triplicate"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "bio_protein_sio2",
+     "technique": "biological_test",
+     "instrument": "Multidetection Microplate Scanner; Dainippon Sumitomo Pharma Co, Ltd, Osaka, Japan (microplate reader)",
+     "result": "Coomassie protein absorbance with silica-coated CdS QDs (Figure 9B)",
+     "quote": "The protein production of cells treated with 1 mg/mL of silica-coated QDs showed slightly compromised metabolic activity.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The cytotoxicity profiles of bare and silica-coated QDs were studied on HUVECs and Gl-1 cells.",
+       "value_text": "HUVECs (Gibco) and Gl-1 glioma cells (Riken BioResource)"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "100 μL of CdS QDs, silica-coated CdS QDs, and targeted silica QDs were added at varied concentrations (1 mg and 100, 10, and 1 μg).",
+       "value_text": "1 mg and 100, 10, and 1 μg (100 μL added per well)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "After 24 hours of incubation with nanoparticles, the cells were washed with PBS and 0.2 mL of the respective medium was added.",
+       "value_text": "24 hours with nanoparticles; approximately 5000 cells seeded per well of 96-well plates"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The Coomassie protein reagent was employed for protein estimation studies and the resultant absorbance was read at 570 nm.",
+       "value_text": "Coomassie protein reagent, absorbance read at 570 nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "The control group was devoid of nanomaterials and the experiments were conducted in triplicate.",
+       "value_text": "triplicate"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "confocal_sio2",
+     "technique": "biological_test",
+     "instrument": "confocal microscope (Olympus IX 81, under DU897 mode; Tokyo, Japan) using a fluorescein isothiocyanate filter",
+     "result": "uptake of silica-coated CdS QDs by HUVECs and Gl-1 cells at 1 h, 2 h, 4 h and 48 h (Figures 13–14)",
+     "quote": "Figure 13 shows the uptake and internalization of silica-coated QDs by HUVECs and Gl-1 cells after 2 hours of incubation with the nanomaterials.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "HUVECs and Gl-1 cells were treated with as few as 100 μg/mL of both nanomaterials and incubated for 1 hour (Figure 10).",
+       "value_text": "HUVECs and Gl-1 cells"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "Subsequently, the nanomaterials were added to the plates at a concentration of 500 μg/mL, and the cells were incubated for 2 hours at 37°C in an incubator maintained at 5% CO2.",
+       "value_text": "500 μg/mL (Methods); 100 μg/mL (Results, Figure 10)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "Subsequently, the nanomaterials were added to the plates at a concentration of 500 μg/mL, and the cells were incubated for 2 hours at 37°C in an incubator maintained at 5% CO2.",
+       "value_text": "2 hours at 37°C, 5% CO2 (Methods); time series 1, 2, 4, 24 hours (Results)"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The cells were then washed with PBS and viewed under a confocal microscope at 488 nm excitation with a green filter.",
+       "value_text": "confocal microscopy, 488 nm excitation, green filter"
+      }
+     ],
+     "not_stated": [
+      "replicates"
+     ]
+    },
+    {
+     "id": "embryo_sio2",
+     "technique": "biological_test",
+     "instrument": "Leica Microsystems AF 600 fluorescence microscope (Wetzlar, Germany) under a GFP6 filter",
+     "result": "survival, hatching and fluorescence of medaka embryos exposed to silica-coated CdS QDs (Figures 17–19)",
+     "quote": "All embryos treated with silica-coated QDs were viable and healthy, without any notable deformities of the embryonic body, as with their control counterparts (Figure 17B).",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The medaka embryos were collected, sorted, and incubated with bare CdS and silica-coated CdS QDs at a concentration of 100 μg/mL of embryo-rearing medium (ERM).",
+       "value_text": "medaka embryos"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "The medaka embryos were collected, sorted, and incubated with bare CdS and silica-coated CdS QDs at a concentration of 100 μg/mL of embryo-rearing medium (ERM).",
+       "value_text": "100 μg/mL of embryo-rearing medium (ERM)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "The treated embryos were incubated at 26°C for 1 day on a 16-/8-hour light–dark cycle.",
+       "value_text": "26°C, 1 day, 16-/8-hour light–dark cycle; exposure continued until Day 13"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The embryos were rinsed on alternate days with ERM and analyzed for viability and morphological deformities.",
+       "value_text": "viability and morphological deformities; fluorescence microscopy for nanoparticle uptake"
+      },
+      {
+       "name": "replicates",
+       "quote": "Fifteen embryos were chosen for treatment with each set of nanoparticles (control, CdS QDs, and silica-coated CdS QDs) and the experiment was carried out in duplicate.",
+       "value_text": "fifteen embryos per set, experiment in duplicate"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "colloidal_dispersibility",
+     "quote": "The nanoparticles (bare and silica-coated CdS) were successfully synthesized and were highly water-soluble.",
+     "value_text": "highly water-soluble"
+    },
+    {
+     "property": "particle_size",
+     "quote": "The sizes of the silica-coated QDs were approximately 35–40 nm.",
+     "value_text": "approximately 35–40 nm",
+     "measured_by": "tem_sio2"
+    },
+    {
+     "property": "size_dispersity_uniform_fraction",
+     "quote": "Nearly 90% of the particles were of uniform size (35–40 nm) and uniform spherical shape when the reaction time was 8 hours.",
+     "value_num": 90,
+     "unit": "%",
+     "measured_by": "tem_sio2"
+    },
+    {
+     "property": "morphology",
+     "quote": "The silica-coated QDs were also highly monodispersed and each particle consisted of a single CdS QD at its core.",
+     "value_text": "highly monodispersed, uniform spherical shape, single CdS QD core per particle",
+     "measured_by": "tem_sio2"
+    },
+    {
+     "property": "thickness_layers_silica_shell",
+     "quote": "The 20 nm silica shell around the core potentially plays a role in improvising biocompatibility.",
+     "value_num": 20,
+     "unit": "nm",
+     "measured_by": "not_stated"
+    },
+    {
+     "property": "elemental_composition",
+     "quote": "the presence of only Si and O was noted in the case of silica-coated QDs.",
+     "value_text": "only Si and O detected",
+     "measured_by": "eds_sio2"
+    },
+    {
+     "property": "elemental_composition_xps",
+     "quote": "In both EDS and XPS, the presence of Cd and S peaks could not be observed in the case of silica-coated QDs.",
+     "value_text": "Cd and S peaks not observed",
+     "measured_by": "xps_sio2"
+    },
+    {
+     "property": "elemental_composition_eds_mapping",
+     "quote": "The presence of all four elements was recorded by EDS mapping, confirming the presence of CdS QDs inside silica spheres.",
+     "value_text": "Cd, S, Si and O all recorded",
+     "measured_by": "eds_map_sio2"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "The silica-coated QDs showed a slight red shift in absorption.",
+     "value_text": "slight red shift relative to bare QDs (400 nm)",
+     "measured_by": "uvvis_sio2"
+    },
+    {
+     "property": "PL_emission_peak",
+     "quote": "The excitation wavelength was 365 nm and a clear emission peak was noted, centered at 600 nm for both particles.",
+     "value_num": 600,
+     "unit": "nm",
+     "measured_by": "pl_sio2"
+    },
+    {
+     "property": "quantum_yield",
+     "quote": "The quantum yields of bare and silica-coated CdS QDs were found to be 0.02% and 0.03%, respectively.",
+     "value_num": 0.03,
+     "unit": "%",
+     "measured_by": "qy_sio2"
+    },
+    {
+     "property": "retention_stability_fluorescence_3months",
+     "quote": "The silica-coated QDs exhibited excellent fluorescence under UV light, even after storage under normal light for such an extended period.",
+     "value_text": "excellent fluorescence under UV light after 3 months of storage under normal light",
+     "measured_by": "uvphoto_sio2"
+    },
+    {
+     "property": "biological_viability_HUVEC_1mg_mL",
+     "quote": "The cell viability was as high as 60% at the highest concentration of 1 mg/mL of silica-coated QDs",
+     "value_num": 60,
+     "unit": "%",
+     "measured_by": "bio_alamar_sio2"
+    },
+    {
+     "property": "biological_viability_HUVEC_10ug_mL",
+     "quote": "At concentrations of 10 and 1 μg/mL, nearly 88% and 96% of cells were viable, respectively.",
+     "value_num": 88,
+     "unit": "%",
+     "measured_by": "bio_alamar_sio2"
+    },
+    {
+     "property": "biological_viability_HUVEC_1ug_mL",
+     "quote": "At concentrations of 10 and 1 μg/mL, nearly 88% and 96% of cells were viable, respectively.",
+     "value_num": 96,
+     "unit": "%",
+     "measured_by": "bio_alamar_sio2"
+    },
+    {
+     "property": "biological_viability_Gl1_1ug_mL",
+     "quote": "With silica-coated QDs, the viability was assessed to be around 75% and 40% at lower (1 μg/mL) and higher concentrations (1 mg/mL), respectively.",
+     "value_num": 75,
+     "unit": "%",
+     "measured_by": "bio_alamar_sio2"
+    },
+    {
+     "property": "biological_viability_Gl1_1mg_mL",
+     "quote": "With silica-coated QDs, the viability was assessed to be around 75% and 40% at lower (1 μg/mL) and higher concentrations (1 mg/mL), respectively.",
+     "value_num": 40,
+     "unit": "%",
+     "measured_by": "bio_alamar_sio2"
+    },
+    {
+     "property": "biological_viability_HUVEC_100ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 77,
+     "unit": "%",
+     "measured_by": "bio_alamar_sio2",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_Gl1_100ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 56,
+     "unit": "%",
+     "measured_by": "bio_alamar_sio2",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_Gl1_10ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 68,
+     "unit": "%",
+     "measured_by": "bio_alamar_sio2",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_ROS_HUVEC_1000ug_mL",
+     "quote": "Effect of cadmium sulfide and silica-coated quantum dots on (A) cellular radical formation (reactive oxygen species [ROS]) and (B) on protein synthesis.",
+     "value_num": 23,
+     "unit": "a.u.",
+     "measured_by": "bio_ros_sio2",
+     "from_figure": "Fig. 9A"
+    },
+    {
+     "property": "biological_ROS_Gl1_1000ug_mL",
+     "quote": "Effect of cadmium sulfide and silica-coated quantum dots on (A) cellular radical formation (reactive oxygen species [ROS]) and (B) on protein synthesis.",
+     "value_num": 32,
+     "unit": "a.u.",
+     "measured_by": "bio_ros_sio2",
+     "from_figure": "Fig. 9A"
+    },
+    {
+     "property": "biological_ROS_vs_control",
+     "quote": "At this concentration, the ROS production increased slightly.",
+     "value_text": "comparable to the control except at 1 mg/mL, where ROS production increased slightly",
+     "measured_by": "bio_ros_sio2"
+    },
+    {
+     "property": "biological_protein_absorbance_HUVEC_1000ug_mL",
+     "quote": "Effect of cadmium sulfide and silica-coated quantum dots on (A) cellular radical formation (reactive oxygen species [ROS]) and (B) on protein synthesis.",
+     "value_num": 0.73,
+     "measured_by": "bio_protein_sio2",
+     "from_figure": "Fig. 9B"
+    },
+    {
+     "property": "biological_protein_absorbance_Gl1_1000ug_mL",
+     "quote": "Effect of cadmium sulfide and silica-coated quantum dots on (A) cellular radical formation (reactive oxygen species [ROS]) and (B) on protein synthesis.",
+     "value_num": 0.58,
+     "measured_by": "bio_protein_sio2",
+     "from_figure": "Fig. 9B"
+    },
+    {
+     "property": "biological_uptake_1h",
+     "quote": "After 1 hour of incubation, no uptake of silica-coated nanomaterials was recorded by either the HUVECs or Gl-1 cells.",
+     "value_text": "no uptake after 1 hour in either cell line",
+     "measured_by": "confocal_sio2"
+    },
+    {
+     "property": "biological_uptake_2h",
+     "quote": "After 2 hours, both cell lines showed uptake of nanomaterials, but not as significantly as in case of bare QDs incubated for 2 hours.",
+     "value_text": "uptake in both cell lines, less than for bare QDs",
+     "measured_by": "confocal_sio2"
+    },
+    {
+     "property": "biological_uptake_4h",
+     "quote": "When the cells were incubated with silica-coated QDs for 4 hours (Figure 14), comparable efficient uptake was observed.",
+     "value_text": "comparable efficient uptake after 4 hours",
+     "measured_by": "confocal_sio2"
+    },
+    {
+     "property": "biological_viability_48h",
+     "quote": "The cells treated with silica-coated QDs were viable even after 48 hours (data not shown), clearly indicating their biocompatibility.",
+     "value_text": "cells viable after 48 hours (data not shown)",
+     "measured_by": "confocal_sio2"
+    },
+    {
+     "property": "biological_embryo_viability_24h",
+     "quote": "All embryos treated with silica-coated QDs were viable and healthy, without any notable deformities of the embryonic body, as with their control counterparts (Figure 17B).",
+     "value_text": "all embryos viable and healthy, no notable deformities",
+     "measured_by": "embryo_sio2"
+    },
+    {
+     "property": "biological_embryo_survival_day14",
+     "quote": "Survival rate and (B) Hatching rate of embryos treated with bare cadmium sulfide (CdS) and silica-coated CdS quantum dots.",
+     "value_num": 93,
+     "unit": "%",
+     "measured_by": "embryo_sio2",
+     "from_figure": "Fig. 18A"
+    },
+    {
+     "property": "biological_embryo_hatching_day10",
+     "quote": "Survival rate and (B) Hatching rate of embryos treated with bare cadmium sulfide (CdS) and silica-coated CdS quantum dots.",
+     "value_num": 92,
+     "unit": "%",
+     "measured_by": "embryo_sio2",
+     "from_figure": "Fig. 18B"
+    },
+    {
+     "property": "biological_embryo_hatching",
+     "quote": "However, with silica-coated QDs, the embryos remained viable and hatched concurrently with the control group, with the fry exhibiting a healthy profile.",
+     "value_text": "hatched concurrently with the control group, healthy fry",
+     "measured_by": "embryo_sio2"
+    },
+    {
+     "property": "biological_embryo_uptake_fluorescence",
+     "quote": "This strong fluorescence of the silica-coated nanomaterials depicted the efficient uptake and internalization of silica-coated QDs into the embryonic body, clearly denoting the exceptional biocompatibility of the nanoparticles, along with their outstanding imaging ability.",
+     "value_text": "strong fluorescence of the embryonic body until hatching",
+     "measured_by": "embryo_sio2"
+    }
+   ],
+   "missing_fields": [
+    "stirring_speed",
+    "yield",
+    "separation_method",
+    "acetone_amount"
+   ]
+  },
+  {
+   "label": "SiO2_CdS_2-3h",
+   "parent": "SiO2_CdS_8h",
+   "material": {
+    "name": "thinly silica-coated CdS QDs",
+    "formula": "CdS@SiO2",
+    "family": "composite",
+    "phase": null,
+    "morphology": "thin silica coating"
+   },
+   "quote": "We could also control the size of the silica coating when the reaction time was reduced from 8 hours.",
+   "variations": [
+    {
+     "parameter": "duration",
+     "step_order": 2,
+     "value_text": "2–3 hours",
+     "parent_value": "8 hours",
+     "quote": "A thin silica coating was observed at 2–3 hours of reaction time."
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "thickness_layers_silica_coating",
+     "quote": "A thin silica coating was observed at 2–3 hours of reaction time.",
+     "value_text": "thin silica coating",
+     "measured_by": "not_stated"
+    },
+    {
+     "property": "biological_cytotoxicity_thin_coating",
+     "quote": "These thinly silica-coated CdS QDs rendered toxicity to cells, which may be attributed to cadmium ions leaching through the thin coat (data not shown).",
+     "value_text": "rendered toxicity to cells (data not shown), attributed to Cd ion leaching",
+     "measured_by": "not_stated"
+    }
+   ]
+  },
+  {
+   "label": "SiO2_CdS_CD31",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "post_treatment",
+   "material": {
+    "name": "CD31 antibody-conjugated silica-coated CdS QDs (targeted nanoparticles)",
+    "formula": null,
+    "family": "composite",
+    "phase": null,
+    "morphology": "no morphological difference from non-targeted silica-coated QDs"
+   },
+   "methods": [
+    "post_synthetic_modification"
+   ],
+   "method": "amine functionalization, glutaraldehyde activation and CD31 antibody conjugation of silica-coated CdS QDs",
+   "quote": "The silica-coated QDs were amine functionalized to facilitate the direct conjugation of CD31 antibodies onto the nanoparticle surface.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "silica-coated CdS QDs (route SiO2_CdS_8h), amine-functionalized",
+     "formula": "CdS@SiO2",
+     "role": "intermediate",
+     "quote": "Then the amine-functionalized nanoparticles (10 mg) were stirred with 5% glutaraldehyde (2 mL) for 5 hours",
+     "amount": 10,
+     "unit": "mg"
+    },
+    {
+     "name": "glutaraldehyde, 5%",
+     "formula": "C5H8O2",
+     "role": "precursor",
+     "quote": "Then the amine-functionalized nanoparticles (10 mg) were stirred with 5% glutaraldehyde (2 mL) for 5 hours",
+     "amount": 2,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ]
+    },
+    {
+     "name": "phosphate-buffered saline (PBS) for re-dispersion",
+     "formula": null,
+     "role": "solvent",
+     "quote": "The resulting glutaraldehyde-conjugated nanoparticles were re-dispersed in PBS.",
+     "supplier": "Invitrogen",
+     "supplier_quote": "Medium 200, Dulbecco’s modified Eagle’s medium (DMEM), heat-inactivated newborn calf serum, phosphate-buffered saline (PBS), trypsinase, and alamarBlue® were acquired from Invitrogen.",
+     "not_stated": [
+      "amount",
+      "purity"
+     ]
+    },
+    {
+     "name": "CD31 antibody (mouse monoclonal)",
+     "formula": null,
+     "role": "ligand",
+     "quote": "CD31 antibodies (50 μL) were added to this nanoparticle suspension and conjugation was carried out at 4°C under gentle shaking for 4 hours.",
+     "amount": 50,
+     "unit": "μL",
+     "supplier": "Invitrogen",
+     "supplier_quote": "Mouse monoclonal CD31 antibody was purchased from Invitrogen (Carlsbad, CA).",
+     "not_stated": [
+      "purity"
+     ]
+    },
+    {
+     "name": "PBS (wash)",
+     "formula": null,
+     "role": "wash",
+     "quote": "washed thrice with 10 mL of PBS",
+     "amount": 10,
+     "unit": "mL"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "functionalize",
+     "description": "Amine-functionalize the silica-coated QDs.",
+     "quote": "The silica-coated QDs were amine functionalized to facilitate the direct conjugation of CD31 antibodies onto the nanoparticle surface.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration",
+      "amine_reagent",
+      "solvent"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "stir",
+     "description": "Stir the amine-functionalized nanoparticles with glutaraldehyde.",
+     "quote": "Then the amine-functionalized nanoparticles (10 mg) were stirred with 5% glutaraldehyde (2 mL) for 5 hours",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "Then the amine-functionalized nanoparticles (10 mg) were stirred with 5% glutaraldehyde (2 mL) for 5 hours",
+       "value_num": 5,
+       "unit": "hours"
+      },
+      {
+       "name": "concentration",
+       "quote": "Then the amine-functionalized nanoparticles (10 mg) were stirred with 5% glutaraldehyde (2 mL) for 5 hours",
+       "value_text": "5%"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "centrifuge",
+     "description": "Centrifuge the glutaraldehyde-conjugated nanoparticles.",
+     "quote": "then centrifuged and washed thrice with 10 mL of PBS",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "centrifuge_speed",
+      "duration"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "wash",
+     "description": "Wash thrice with PBS.",
+     "quote": "washed thrice with 10 mL of PBS",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "washed thrice with 10 mL of PBS",
+       "value_text": "PBS"
+      },
+      {
+       "name": "wash_volume",
+       "quote": "washed thrice with 10 mL of PBS",
+       "value_num": 10,
+       "unit": "mL"
+      },
+      {
+       "name": "repetitions",
+       "quote": "washed thrice with 10 mL of PBS",
+       "value_text": "thrice"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 5,
+     "action": "disperse",
+     "description": "Re-disperse the nanoparticles in PBS.",
+     "quote": "The resulting glutaraldehyde-conjugated nanoparticles were re-dispersed in PBS.",
+     "parameters": [],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "add",
+     "description": "Add CD31 antibody to the suspension.",
+     "quote": "CD31 antibodies (50 μL) were added to this nanoparticle suspension",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "CD31 antibodies (50 μL) were added to this nanoparticle suspension",
+       "value_num": 50,
+       "unit": "μL"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_mode"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "react",
+     "description": "Conjugate at 4°C under gentle shaking.",
+     "quote": "CD31 antibodies (50 μL) were added to this nanoparticle suspension and conjugation was carried out at 4°C under gentle shaking for 4 hours.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "CD31 antibodies (50 μL) were added to this nanoparticle suspension and conjugation was carried out at 4°C under gentle shaking for 4 hours.",
+       "value_num": 4,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "CD31 antibodies (50 μL) were added to this nanoparticle suspension and conjugation was carried out at 4°C under gentle shaking for 4 hours.",
+       "value_num": 4,
+       "unit": "hours"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "CD31 antibodies (50 μL) were added to this nanoparticle suspension and conjugation was carried out at 4°C under gentle shaking for 4 hours.",
+       "value_text": "gentle shaking"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 8,
+     "action": "store",
+     "description": "Store the product at 4°C until use.",
+     "quote": "The product was stored at 4°C until use.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The product was stored at 4°C until use.",
+       "value_num": 4,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "tem_cd31",
+     "technique": "TEM",
+     "instrument": "field emission transmission electron microscope (TEM, JEM-2200-FS; JEOL, Tokyo, Japan)",
+     "result": "no morphological difference from non-targeted silica-coated QDs",
+     "quote": "In the case of targeted silica-coated QDs, no morphological differences with non-targeted nanomaterial were observed under TEM.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted",
+      "sample_preparation"
+     ]
+    },
+    {
+     "id": "xps_cd31",
+     "technique": "XPS",
+     "instrument": "Kratos Analytical, Tokyo, Japan",
+     "result": "enhanced N peak compared with the amine-functionalized QDs (Figure 5 bottom)",
+     "quote": "When CD31-conjugated silica-coated QDs were analyzed for elemental incidence, we observed an enhanced peak of N compared with the amine-functionalized counterpart, suggesting CD31 had successfully conjugated onto the silica-coated QDs (Figure 5 [bottom]).",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "The presence of Si and O was clear; the substrate used in this case was carbon tape.",
+       "value_text": "carbon tape substrate"
+      }
+     ],
+     "not_stated": [
+      "xray_source",
+      "calibration_reference"
+     ]
+    },
+    {
+     "id": "uvvis_cd31",
+     "technique": "UV_vis",
+     "instrument": "Shimadzu UV-2100PC/3100PC UV visible spectrometer (Kyoto, Japan)",
+     "result": "absorbance similar to silica-coated QDs (data not shown)",
+     "quote": "The targeted nanoparticles showed similar absorbance to that of the silica-coated QDs (data not shown).",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "quote": "The particles were dissolved in double-distilled H2O, and the UV spectroscopy was carried out using a Shimadzu UV-2100PC/3100PC UV visible spectrometer (Kyoto, Japan).",
+       "value_text": "particles dissolved in double-distilled H2O"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "band_gap_method"
+     ]
+    },
+    {
+     "id": "pl_cd31",
+     "technique": "PL",
+     "instrument": "JASCO FP-750 spectrophotometer (Tokyo, Japan)",
+     "result": "optical characteristics unchanged by CD31 conjugation",
+     "quote": "The conjugation of CD31 did not alter any of the optical characteristics of silica-coated CdS QDs.",
+     "settings": [
+      {
+       "name": "excitation_wavelength",
+       "quote": "Photoluminescence spectra were recorded with an excitation wavelength of 360 nm using a JASCO FP-750 spectrophotometer (Tokyo, Japan).",
+       "value_num": 360,
+       "unit": "nm"
+      }
+     ],
+     "not_stated": [
+      "wavelength_range",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "bio_alamar_cd31",
+     "technique": "biological_test",
+     "instrument": "Multidetection Microplate Scanner; Dainippon Sumitomo Pharma Co, Ltd, Osaka, Japan (microplate reader)",
+     "result": "viability of HUVECs and Gl-1 cells after 24 h with targeted silica-coated CdS QDs (Figure 8)",
+     "quote": "In the case of the targeted silica-coated CdS QDs, Gl-1 cells showed less toxicity than those cells treated with non-targeted silica-coated CdS QDs.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "The cytotoxicity profiles of bare and silica-coated QDs were studied on HUVECs and Gl-1 cells.",
+       "value_text": "HUVECs (Gibco) and Gl-1 glioma cells (Riken BioResource)"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "100 μL of CdS QDs, silica-coated CdS QDs, and targeted silica QDs were added at varied concentrations (1 mg and 100, 10, and 1 μg).",
+       "value_text": "1 mg and 100, 10, and 1 μg (100 μL added per well)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "After 24 hours of incubation with nanoparticles, the cells were washed with PBS and 0.2 mL of the respective medium was added.",
+       "value_text": "24 hours with nanoparticles; approximately 5000 cells seeded per well of 96-well plates"
+      },
+      {
+       "name": "assay_method",
+       "quote": "Cell viability was assayed with alamarBlue according to the manufacturer’s instructions and the fluorescence at 570 nm was measured.",
+       "value_text": "alamarBlue, fluorescence read at 570 nm"
+      },
+      {
+       "name": "replicates",
+       "quote": "The control group was devoid of nanomaterials and the experiments were conducted in triplicate.",
+       "value_text": "triplicate"
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "id": "confocal_cd31",
+     "technique": "biological_test",
+     "instrument": "confocal microscope (Olympus IX 81, under DU897 mode; Tokyo, Japan) using a fluorescein isothiocyanate filter",
+     "result": "uptake of CD31-labeled silica-coated CdS QDs by HUVECs and Gl-1 cells at 1 h and 2 h (Figures 15–16)",
+     "quote": "Figure 15 shows the targeted imaging of endothelial cell lines by CD31-labeled silica-coated CdS QDs.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "HUVECs and Gl-1 cells were treated with as few as 100 μg/mL of both nanomaterials and incubated for 1 hour (Figure 10).",
+       "value_text": "HUVECs and Gl-1 cells"
+      },
+      {
+       "name": "concentration_range",
+       "quote": "Subsequently, the nanomaterials were added to the plates at a concentration of 500 μg/mL, and the cells were incubated for 2 hours at 37°C in an incubator maintained at 5% CO2.",
+       "value_text": "500 μg/mL (Methods); 100 μg/mL (Results, Figure 10)"
+      },
+      {
+       "name": "incubation_conditions",
+       "quote": "Subsequently, the nanomaterials were added to the plates at a concentration of 500 μg/mL, and the cells were incubated for 2 hours at 37°C in an incubator maintained at 5% CO2.",
+       "value_text": "2 hours at 37°C, 5% CO2 (Methods); time series 1, 2, 4, 24 hours (Results)"
+      },
+      {
+       "name": "assay_method",
+       "quote": "The cells were then washed with PBS and viewed under a confocal microscope at 488 nm excitation with a green filter.",
+       "value_text": "confocal microscopy, 488 nm excitation, green filter"
+      }
+     ],
+     "not_stated": [
+      "replicates"
+     ]
+    },
+    {
+     "id": "flow_cd31",
+     "technique": "biological_test",
+     "instrument": "flow cytometry (instrument not given)",
+     "result": "flow cytometry of HUVECs and Gl-1 cells with targeted nanoparticles (Figure 15, right column)",
+     "quote": "Flow cytometry analysis was also carried out to determine the efficiency of targeted silica-coated CdS QDs with higher specificity toward HUVECs, sparing Gl-1s any internalization (Figure 15, right column).",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "quote": "Flow cytometry analysis was also carried out to determine the efficiency of targeted silica-coated CdS QDs with higher specificity toward HUVECs, sparing Gl-1s any internalization (Figure 15, right column).",
+       "value_text": "HUVECs and Gl-1 cells"
+      },
+      {
+       "name": "assay_method",
+       "quote": "Flow cytometry analysis was also carried out to determine the efficiency of targeted silica-coated CdS QDs with higher specificity toward HUVECs, sparing Gl-1s any internalization (Figure 15, right column).",
+       "value_text": "flow cytometry"
+      }
+     ],
+     "not_stated": [
+      "concentration_range",
+      "incubation_conditions",
+      "replicates"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "morphology",
+     "quote": "In the case of targeted silica-coated QDs, no morphological differences with non-targeted nanomaterial were observed under TEM.",
+     "value_text": "no morphological difference from non-targeted nanoparticles",
+     "measured_by": "tem_cd31"
+    },
+    {
+     "property": "elemental_composition_xps_nitrogen",
+     "quote": "When CD31-conjugated silica-coated QDs were analyzed for elemental incidence, we observed an enhanced peak of N compared with the amine-functionalized counterpart, suggesting CD31 had successfully conjugated onto the silica-coated QDs (Figure 5 [bottom]).",
+     "value_text": "enhanced N peak compared with the amine-functionalized QDs",
+     "measured_by": "xps_cd31"
+    },
+    {
+     "property": "absorption_peak",
+     "quote": "The targeted nanoparticles showed similar absorbance to that of the silica-coated QDs (data not shown).",
+     "value_text": "similar absorbance to silica-coated QDs",
+     "measured_by": "uvvis_cd31"
+    },
+    {
+     "property": "PL_emission_peak",
+     "quote": "The conjugation of CD31 did not alter any of the optical characteristics of silica-coated CdS QDs.",
+     "value_text": "unchanged by CD31 conjugation",
+     "measured_by": "pl_cd31"
+    },
+    {
+     "property": "biological_viability_HUVEC_vs_nontargeted",
+     "quote": "Meanwhile, in the case of HUVECs, viability remained the same as that of the non-targeted nanoparticle treatment.",
+     "value_text": "same as non-targeted silica-coated QDs",
+     "measured_by": "bio_alamar_cd31"
+    },
+    {
+     "property": "biological_viability_Gl1_vs_nontargeted",
+     "quote": "In the case of the targeted silica-coated CdS QDs, Gl-1 cells showed less toxicity than those cells treated with non-targeted silica-coated CdS QDs.",
+     "value_text": "less toxicity than with non-targeted silica-coated QDs",
+     "measured_by": "bio_alamar_cd31"
+    },
+    {
+     "property": "biological_viability_HUVEC_1000ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 58,
+     "unit": "%",
+     "measured_by": "bio_alamar_cd31",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_HUVEC_100ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 82,
+     "unit": "%",
+     "measured_by": "bio_alamar_cd31",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_HUVEC_10ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 93,
+     "unit": "%",
+     "measured_by": "bio_alamar_cd31",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_HUVEC_1ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 99,
+     "unit": "%",
+     "measured_by": "bio_alamar_cd31",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_Gl1_1000ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 52,
+     "unit": "%",
+     "measured_by": "bio_alamar_cd31",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_Gl1_100ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 73,
+     "unit": "%",
+     "measured_by": "bio_alamar_cd31",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_Gl1_10ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 87,
+     "unit": "%",
+     "measured_by": "bio_alamar_cd31",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_viability_Gl1_1ug_mL",
+     "quote": "Effect of cadmium sulfide quantum dots (CdS QDs), silica-coated CdS QDs, and CD31-targeted silica-coated CdS QDs on human umbilical vein endothelial cell (HUVEC) and glioma cell viability.",
+     "value_num": 93,
+     "unit": "%",
+     "measured_by": "bio_alamar_cd31",
+     "from_figure": "Fig. 8"
+    },
+    {
+     "property": "biological_uptake_HUVEC_1h",
+     "quote": "Highly efficient endothelial labeling was observed by the targeted nanoparticles.",
+     "value_text": "highly efficient endothelial labeling after 1 hour",
+     "measured_by": "confocal_cd31"
+    },
+    {
+     "property": "biological_uptake_Gl1_1h",
+     "quote": "whereas the Gl-1 cells showed greatly decreased uptake of nanoparticles when compared with non-targeted treatment",
+     "value_text": "greatly decreased uptake compared with non-targeted treatment",
+     "measured_by": "confocal_cd31"
+    },
+    {
+     "property": "biological_uptake_HUVEC_nucleus_2h",
+     "quote": "Excellent uptake and internalization of targeted nanomaterials into the nuclear region was visualized, currently a first (Figure 16).",
+     "value_text": "excellent uptake and internalization into the nuclear region after 2 hours",
+     "measured_by": "confocal_cd31"
+    },
+    {
+     "property": "biological_flow_cytometry_HUVEC_internalization",
+     "quote": "The flow cytometry data reveal that HUVECs showed nearly 104 cells with particle internalization, whereas only 101 Gl-1 cells showed internalization of nanoparticles.",
+     "value_text": "nearly 104 cells with particle internalization (HUVECs), only 101 (Gl-1)",
+     "measured_by": "flow_cd31"
+    }
+   ],
+   "missing_fields": [
+    "amine_reagent",
+    "yield",
+    "stirring_speed",
+    "centrifuge_speed"
+   ]
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des points quantiques de sulfure de cadmium (CdS, 4–5 nm) dans une microémulsion inverse cyclohexane/IGEPAL, puis les enrobe d'une coque de silice par hydrolyse du tétraéthoxysilane (8 h), et couple à la silice un anticorps anti-CD31 pour cibler les cellules endothéliales. Il compare cytotoxicité, stress oxydant, photostabilité, captation cellulaire (HUVEC et glioblastome Gl-1) et toxicité in vivo sur des embryons de médaka entre QD nus, QD enrobés et QD ciblés.",
+   "quote": "This paper presents the synthesis of aqueous cadmium sulfide (CdS) quantum dots (QDs) and silica-encapsulated CdS QDs by reverse microemulsion method and utilized as targeted bio-optical probes."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à savoir si l'enrobage de silice supprime la toxicité du cadmium des QD de CdS tout en gardant leur fluorescence, et si un anticorps anti-CD31 rend le marquage sélectif des cellules endothéliales par rapport aux cellules de gliome."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "La seule variation de synthèse décrite est le temps de réaction de l'enrobage de silice (8 h contre 2–3 h), qui fixe l'épaisseur de la coque et donc la fuite des ions Cd2+. Les autres comparaisons portent sur la nature de l'échantillon (nu, enrobé, ciblé), sur la concentration en nanoparticules (1 à 1000 μg/mL) et sur la durée d'incubation, pour séparer l'effet de la taille, de la coque et de l'anticorps sur la captation et la toxicité."
+  },
+  {
+   "type": "comparaison_branches",
+   "route": null,
+   "text": "Avec 8 h de réaction, les particules enrobées font 35–40 nm, avec un seul QD par particule et une coque annoncée de 20 nm ; à 2–3 h la coque est mince et les particules restent toxiques pour les cellules (fuite de cadmium), sans chiffre dans l'article (« data not shown »). Le temps de réaction est donc le levier qui règle la protection contre la toxicité.",
+   "quote": "We could also control the size of the silica coating when the reaction time was reduced from 8 hours."
+  },
+  {
+   "type": "tendance_observee",
+   "route": null,
+   "text": "La viabilité cellulaire baisse quand la concentration augmente pour tous les échantillons, mais les QD nus sont bien plus toxiques que les QD enrobés (HUVEC : 10 % de survie à 1 mg contre 60 % avec silice) ; les embryons de médaka exposés aux QD nus meurent tous en 2 jours, alors que ceux exposés aux QD enrobés survivent et éclosent.",
+   "quote": "Upon the subsequent addition of the nanoparticles, cell viability decreased as a function of concentration and time."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": "SiO2_CdS_8h",
+   "text": "Les auteurs retiennent les QD enrobés de silice (8 h) comme sondes biocompatibles, de photostabilité et de durée de conservation supérieures à celles des QD nus, et les QD ciblés CD31 comme sondes sélectives des cellules endothéliales.",
+   "quote": "Successful employment of silica-coated CdS nanomaterials as efficient cell tags was achieved, and the prominent limitations of CdS QDs – such as toxicity and faster photobleaching – could be effectively countered."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": null,
+   "text": "Annexe absente du dépôt : la figure S1 (diffractogramme XRD des QD nus), la figure S2 (images de luminescence après 3 mois de stockage) et la vidéo supplémentaire 1 (rythme cardiaque des embryons) ne figurent pas dans le texte fourni. Manquent aussi : la composition de la seconde microémulsion et la manière dont les deux sont mélangées, l'agent de précipitation et la vitesse de centrifugation des QD nus, le réactif de l'amination de la silice, le rendement, la vitesse d'agitation, et le détail du séchage (« desiccated »)."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "CdS_QD",
+   "text": "Les auteurs attribuent la toxicité des QD nus à la libération d'ions cadmium dans les cellules, qui provoque la formation d'espèces réactives de l'oxygène et la déplétion en glutathion, et la biocompatibilité des QD enrobés au blocage de cette libération par la coque de silice. Aucune réaction de formation du CdS n'est écrite.",
+   "quote": "The cytotoxicity of bare QDs is due to the release of cadmium ions inside live cells, leading to ROS production and glutathione depletion."
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "CdS_QD",
+   "text": "Hypothèse de chimiste : dans le mélange des deux microémulsions inverses, les gouttelettes d'eau (nanoréacteurs stabilisés par l'IGEPAL) échangent leur contenu par collision, Cd2+ et S2− se rencontrent et précipitent en CdS (Cd2+ + S2− → CdS) ; la taille des gouttelettes limiterait la croissance et expliquerait les 4–5 nm. Pour la silice, l'ammoniac catalyserait probablement l'hydrolyse puis la condensation du TEOS à l'interface des micelles, ce qui donnerait une coque autour d'un seul QD par particule ; une coque mince à 2–3 h laisserait passer les ions Cd2+."
+  },
+  {
+   "type": "securite_analyse",
+   "route": null,
+   "text": "Le nitrate de cadmium est toxique, cancérogène et dangereux pour l'environnement, et les QD de CdS libèrent du Cd2+ (l'article le démontre sur cellules et embryons) : travailler sous hotte, avec gants, et traiter les déchets comme déchets de métaux lourds. Le sulfure d'ammonium dégage du sulfure d'hydrogène (très toxique) et de l'ammoniac, le cyclohexane et l'acétone sont inflammables, et le glutaraldéhyde est sensibilisant et toxique."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": null,
+   "ref_id": "b44-ijn-7-3769",
+   "role": "protocole_adapte",
+   "quote": "The medaka embryos were collected, sorted, and incubated with bare CdS and silica-coated CdS QDs at a concentration of 100 μg/mL of embryo-rearing medium (ERM)."
+  }
+ ],
+ "comparisons": [],
+ "sample_inventory": [
+  {
+   "sample": "bare CdS QDs",
+   "defined_in": "Methods, Preparation of bare CdS and silica-coated CdS",
+   "route": "CdS_QD",
+   "results_in": [
+    "Figure 2A-B",
+    "Figure 3A",
+    "Figure 4",
+    "Figure 7",
+    "Figure 8",
+    "Figure 9",
+    "Figures 10-12",
+    "Figures 17-18"
+   ]
+  },
+  {
+   "sample": "silica-coated CdS QDs (8 h)",
+   "defined_in": "Methods, Preparation of bare CdS and silica-coated CdS",
+   "route": "SiO2_CdS_8h",
+   "results_in": [
+    "Figure 2C-F",
+    "Figure 3B",
+    "Figure 5",
+    "Figure 6",
+    "Figure 7",
+    "Figure 8",
+    "Figure 9",
+    "Figures 13-14",
+    "Figures 17-19"
+   ]
+  },
+  {
+   "sample": "thinly silica-coated CdS QDs (2-3 h)",
+   "defined_in": "Results, Structural and elemental characterization",
+   "route": "SiO2_CdS_2-3h",
+   "results_in": [
+    "text only (data not shown)"
+   ]
+  },
+  {
+   "sample": "CD31-targeted silica-coated CdS QDs",
+   "defined_in": "Methods, CD31 antibody labeling of nanoparticles",
+   "route": "SiO2_CdS_CD31",
+   "results_in": [
+    "Figure 5 bottom",
+    "Figure 8",
+    "Figures 15-16"
+   ]
+  },
+  {
+   "sample": "amine-functionalized silica-coated QDs",
+   "defined_in": "Methods, CD31 antibody labeling of nanoparticles",
+   "route": null,
+   "why": "intermédiaire non isolé de la voie SiO2_CdS_CD31 (étape 1), comparé au CD31 en XPS (Figure 5 bas)",
+   "results_in": [
+    "Figure 5 bottom"
+   ]
+  },
+  {
+   "sample": "plain silica",
+   "defined_in": "Results, Optical characterization",
+   "route": null,
+   "why": "témoin d'absorbance non décrit ni préparé par les auteurs",
+   "results_in": [
+    "data not shown"
+   ]
+  },
+  {
+   "sample": "control (cells and embryos without nanomaterials)",
+   "defined_in": "Methods, Cell culture and in vivo sections",
+   "route": null,
+   "why": "témoin biologique sans nanomatériau",
+   "results_in": [
+    "Figures 8-9",
+    "Figure 18"
+   ]
+  },
+  {
+   "sample": "Rhodamine 6G",
+   "defined_in": "Methods, Instruments and measurements",
+   "route": null,
+   "why": "colorant commercial de référence pour le rendement quantique",
+   "results_in": []
+  }
+ ],
+ "doubts": [
+  {
+   "where": "CdS_QD étapes 1–3",
+   "issue": "Le texte parle d'une « first microemulsion » et d'une « second » sans dire que le mélange cyclohexane/IGEPAL (20 mL/8 mL) est préparé deux fois ; il décrit une seule fois 20 mL de cyclohexane et 8 mL d'IGEPAL. Lecture retenue : une quantité unique pour la microémulsion décrite, la composition de la seconde n'étant pas donnée."
+  },
+  {
+   "where": "CdS_QD étape 4",
+   "issue": "« mixed together after 5 minutes » : retenu comme durée d'agitation avant le mélange des deux microémulsions ; l'abrégé dit aussi « QDs are synthesized rapidly (within 5 minutes) », ce qui pourrait désigner la durée de réaction après mélange. La durée après mélange est donc déclarée non citée."
+  },
+  {
+   "where": "CdS_QD étape 6",
+   "issue": "« precipitated and repeatedly washed with 25 mL of ethanol » : l'agent de précipitation n'est pas nommé ; l'éthanol est le seul solvant cité et sert aussi au lavage. Déclaré non cité (precipitating_agent)."
+  },
+  {
+   "where": "SiO2_CdS_8h réactifs",
+   "issue": "« added to the CdS solution » : on ne sait pas si les QD avaient déjà été précipités et lavés (étapes 6–7 de CdS_QD) avant l'enrobage. La solution de QD est donc modélisée comme intermédiaire de la voie CdS_QD, sans quantité, et les étapes de lavage de cette voie ne sont pas supposées appliquées."
+  },
+  {
+   "where": "SiO2_CdS_8h, épaisseur de coque",
+   "issue": "La coque est annoncée à 20 nm (Discussion in vivo) alors que les particules font 35–40 nm autour d'un cœur de 4–5 nm (soit environ 15 nm de coque). Valeur de 20 nm extraite telle quelle, sans mesure rattachée."
+  },
+  {
+   "where": "Excitation en photoluminescence",
+   "issue": "Les Méthodes donnent 360 nm, les Résultats 365 nm. Valeur des Méthodes extraite dans les réglages de mesure ; l'autre est citée dans la citation du résultat."
+  },
+  {
+   "where": "Figure 7, pic d'émission",
+   "issue": "Le texte dit « bare QDs and targeted silica-coated QDs » alors que la légende de la figure désigne « CdS QD coated with silica » ; l'émission (600 nm dans le texte, environ 595 nm sur la courbe) est rattachée aux QD nus et aux QD enrobés ; pour les QD ciblés, seule l'absence de changement des propriétés optiques est notée."
+  },
+  {
+   "where": "Imagerie confocale, concentration",
+   "issue": "Méthodes : 500 μg/mL pendant 2 h ; Résultats : « as few as 100 μg/mL » pendant 1 h, 2 h, 4 h ou 24 h. Les deux valeurs sont reprises dans le réglage concentration_range."
+  },
+  {
+   "where": "Embryons de médaka, concentration",
+   "issue": "Méthodes et Résultats : 100 μg/mL de milieu d'élevage ; la légende de la figure 17 dit 1 μg/mL. Valeur de 100 μg/mL retenue."
+  },
+  {
+   "where": "Embryons, survie",
+   "issue": "Le texte dit qu'aucun embryon exposé aux QD nus ne survit « within 24 hours » puis « dead by Day 2 », la figure 18A montre environ 10 % de survie au jour 2. Pour la silice, le texte dit « all embryos viable » alors que la figure 18A montre environ 93 % de survie du jour 5 au jour 14 et une éclosion d'environ 92 % au jour 10 puis 10 % au jour 11. Texte et lectures de figure sont tous deux enregistrés."
+  },
+  {
+   "where": "Viabilité cellulaire, texte contre figure 8",
+   "issue": "Pour les QD enrobés sur HUVEC, le texte donne 60, 88 et 96 % (1 mg, 10 μg, 1 μg) alors que la figure 8 montre environ 57, 85 et 92 %. Les valeurs du texte sont extraites avec leur citation ; les lectures de figure (2 chiffres significatifs, précision environ ±3 points) ne sont ajoutées que pour les concentrations absentes du texte, et pour l'échantillon ciblé, dont aucune valeur n'est écrite. Le texte parle de « 1 mg » et « 1 μg » sans volume, la figure d'unités en μg/mL."
+  },
+  {
+   "where": "ROS et protéines, figure 9",
+   "issue": "Le texte parle de « three concentrations » alors que la figure en montre quatre plus un témoin ; seules les valeurs à 1000 μg/mL sont lues (à ± 2 unités pour les ROS, ± 0,03 pour l'absorbance). Les barres témoin de la figure (ROS : environ 6, 10, 12 et 13 ; absorbance : environ 0,93, 0,90, 0,70 et 0,70 pour HUVEC-CdS, HUVEC-silice, Gl-1-CdS, Gl-1-silice) ne sont pas extraites."
+  },
+  {
+   "where": "Cytométrie en flux",
+   "issue": "Le texte écrit « nearly 104 cells » et « only 101 Gl-1 cells » ; les exposants sont probablement aplatis par la conversion du texte (104 = 10^4, 101 = 10^1), ce que l'article n'écrit pas tel quel. Valeurs recopiées en texte, sans nombre."
+  },
+  {
+   "where": "SiO2_CdS_CD31, amination",
+   "issue": "La silice est « amine functionalized » sans réactif ni conditions ; la légende de la figure 1 cite l'APTES (3-aminopropyltriethoxysilane) dans ses abréviations seulement. Aucun réactif d'amination n'est extrait ; l'étape 1 déclare réactif, solvant, température et durée non cités."
+  },
+  {
+   "where": "SiO2_CdS_2-3h",
+   "issue": "L'article donne une plage (2–3 h) et dit « data not shown » pour la toxicité. Une seule branche avec la plage en value_text ; l'attribution de l'observation de coque mince à la microscopie électronique est probable (paragraphe TEM) mais non écrite : measured_by not_stated."
+  },
+  {
+   "where": "Figures lues",
+   "issue": "Figure 8 (viabilité, 2 chiffres significatifs, précision environ ±3 points), figure 9A et 9B (valeurs à 1000 μg/mL), figure 18A et 18B (survie au jour 14, éclosion au jour 10). Figure 7 consultée sans extraire de valeur (le texte donne 600 nm). Les figures 2–6, 10–17 et 19 (images) n'ont pas été relevées."
+  }
+ ]
+}
