@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Profil de paramètres par méthode de synthèse et couverture des paramètres essentiels.
-Usage : python3 -I audit_parametres.py  → docs/audit_contenu/data/{profil_parametres,homogeneite_methodes,essentiels_methode,reactifs_quantites}.json
+Usage : python3 -I analyses/audit_parametres.py  → docs/audit_contenu/data/{profil_parametres,homogeneite_methodes,essentiels_methode,reactifs_quantites}.json
 Trois états par (voie, paramètre) : cité ; déclaré « non cité » par l'extracteur (manque de l'article) ; absent de la grille (manque de l'extraction)."""
+import os, sys
+HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
+sys.path[:0] = [HERE, ROOT]
+os.chdir(ROOT)  # chemins relatifs à la racine du dépôt
 import json, re, sqlite3, collections, itertools, os, sys
-sys.path.insert(0, ".")
 from audit_contenu import METHOD_RE
 
 # Paramètres essentiels par méthode (jugement de chimiste ; le même nom que dans parameters/not_stated).

@@ -3,7 +3,7 @@
 Audit de ce que contient `synthese.db` une fois les 500 publications closes : types de synthèse, propriétés communes, conditions, trous de couverture, qualité des données, limites de reproductibilité, mécanismes, comparaison à des références externes. Cadrage fixé avec l'utilisateur en quatre salves de questions (description + trous + qualité ; les 500 publications ; tableau de bord interactif par onglets ; croisements simples ; toutes les conditions potentiellement importantes).
 
 **Tableau de bord** : https://claude.ai/artifact/YGhxeXgJhHagc4cyhc1UWN (privé tant qu'il n'est pas partagé depuis son menu Partager).
-**Régénération** : `python3 -I audit_contenu.py` → `docs/audit_contenu/data/*.json` (39 jeux complets) et `docs/audit_contenu/dash/*.json` (18 jeux regroupés pour la page). La page est `docs/audit_contenu/index.html` (elle s'exécute dans le tableau de bord Claude, qui fournit `dash` et `d3` ; ce n'est pas un HTML autonome). Les sorties des agents sont dans `docs/audit_contenu/sources/`.
+**Régénération** : `python3 -I analyses/audit_contenu.py` → `docs/audit_contenu/data/*.json` (39 jeux complets) et `docs/audit_contenu/dash/*.json` (18 jeux regroupés pour la page). La page est `docs/audit_contenu/index.html` (elle s'exécute dans le tableau de bord Claude, qui fournit `dash` et `d3` ; ce n'est pas un HTML autonome). Les sorties des agents sont dans `docs/audit_contenu/sources/`.
 
 ## Méthode
 
@@ -56,6 +56,6 @@ Audit de ce que contient `synthese.db` une fois les 500 publications closes : ty
 
 ## Fichiers
 
-- `audit_contenu.py` : script d'audit (taxonomies, fusion des synonymes, conditions par voie, trous, qualité, limites, agrégation des sorties d'agents).
+- `analyses/audit_contenu.py` : script d'audit (taxonomies, fusion des synonymes, conditions par voie, trous, qualité, limites, agrégation des sorties d'agents).
 - `docs/audit_contenu/data/` : 39 jeux de données complets ; `docs/audit_contenu/dash/` : 18 jeux pour la page ; `docs/audit_contenu/index.html` : page du tableau de bord ; `docs/audit_contenu/sources/` : prompts et sorties des agents (mécanismes A et B, références web, journaux).
 - Coût des agents : mécanismes 346 k + 357 k jetons, références 278 k ; orchestrateur non compté.

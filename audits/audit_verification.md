@@ -1,6 +1,6 @@
 # Vérification de la base : paramètres communs et contrôles internes (28/10/2026)
 
-Suite de l'audit de contenu (`audits/audit_contenu.md`). Ici, la question n'est plus « que contient la base ? » mais « le travail d'extraction est-il bien fait, et la base est-elle utilisable pour comparer des synthèses ? ». Neuf analyses : profils de paramètres par méthode, paramètres essentiels absents, et sept contrôles internes dont une ré-extraction à l'aveugle. Tout est reproductible : `python3 -I audit_parametres.py`, `python3 -I audit_verification.py`, `python3 -I compare_blind.py` ; résultats dans `docs/audit_contenu/data/` et onglet **Vérification** du tableau de bord (https://claude.ai/artifact/YGhxeXgJhHagc4cyhc1UWN).
+Suite de l'audit de contenu (`audits/audit_contenu.md`). Ici, la question n'est plus « que contient la base ? » mais « le travail d'extraction est-il bien fait, et la base est-elle utilisable pour comparer des synthèses ? ». Neuf analyses : profils de paramètres par méthode, paramètres essentiels absents, et sept contrôles internes dont une ré-extraction à l'aveugle. Tout est reproductible : `python3 -I analyses/audit_parametres.py`, `python3 -I analyses/audit_verification.py`, `python3 -I analyses/compare_blind.py` ; résultats dans `docs/audit_contenu/data/` et onglet **Vérification** du tableau de bord (https://claude.ai/artifact/YGhxeXgJhHagc4cyhc1UWN).
 
 Périmètre : 747 voies de base de matériau (sans parent, nature « matériau »), 3 956 branches, 12 731 paramètres d'étape, 7 714 réactifs, 39 350 résultats.
 
@@ -31,7 +31,7 @@ Lecture. Le socle commun à toutes les méthodes se réduit à la température e
 
 ### 1.2 Paramètres essentiels : manque de l'article ou manque de l'extraction
 
-Pour chaque méthode, une liste de paramètres qu'un chimiste exige (voir `ESS` dans `audit_parametres.py` ; ex. hydrothermal : température, durée, volume, concentration, taux de remplissage, pH, rampes de chauffe et de refroidissement). Trois états par voie et paramètre : **cité** ; **déclaré absent** par l'extracteur dans la grille `not_stated` (l'article ne le donne pas) ; **hors grille** (ni cité ni déclaré : l'extraction ne l'a pas cherché).
+Pour chaque méthode, une liste de paramètres qu'un chimiste exige (voir `ESS` dans `analyses/audit_parametres.py` ; ex. hydrothermal : température, durée, volume, concentration, taux de remplissage, pH, rampes de chauffe et de refroidissement). Trois états par voie et paramètre : **cité** ; **déclaré absent** par l'extracteur dans la grille `not_stated` (l'article ne le donne pas) ; **hors grille** (ni cité ni déclaré : l'extraction ne l'a pas cherché).
 
 | Méthode | Voies | Cité | Déclaré absent | Hors grille | Paramètres les moins couverts |
 |---|---|---|---|---|---|
@@ -148,7 +148,7 @@ Les séries portent d'abord sur les réactifs (332), puis la température (178),
 
 ## 8. Ré-extraction à l'aveugle (20 publications)
 
-Vingt publications tirées au sort (graine 2026) ont été ré-extraites par un agent Sonnet qui n'a vu ni l'extraction en base, ni les critiques, ni les journaux (`check_blind.py`, `verification/blind/`). La comparaison (`compare_blind.py`) apparie les voies par libellé et matériau, puis cherche chaque valeur numérique de l'un dans l'autre : même type canonique, même unité normalisée, ±2 %. Deux mesures : le **rappel** (part des valeurs de la base retrouvées par l'aveugle) et la **précision** (part des valeurs de l'aveugle présentes en base). La base a passé quatre passes (extraction, critique de fidélité, critique scientifique, correction), l'aveugle une seule : le rappel mesure donc surtout l'apport des trois passes suivantes, la précision mesure la justesse de la base.
+Vingt publications tirées au sort (graine 2026) ont été ré-extraites par un agent Sonnet qui n'a vu ni l'extraction en base, ni les critiques, ni les journaux (`analyses/check_blind.py`, `audits/verification/aveugle/`). La comparaison (`analyses/compare_blind.py`) apparie les voies par libellé et matériau, puis cherche chaque valeur numérique de l'un dans l'autre : même type canonique, même unité normalisée, ±2 %. Deux mesures : le **rappel** (part des valeurs de la base retrouvées par l'aveugle) et la **précision** (part des valeurs de l'aveugle présentes en base). La base a passé quatre passes (extraction, critique de fidélité, critique scientifique, correction), l'aveugle une seule : le rappel mesure donc surtout l'apport des trois passes suivantes, la précision mesure la justesse de la base.
 
 | Mesure | Cumul (20 publications) | Médiane par publication |
 |---|---|---|
@@ -167,7 +167,7 @@ Lecture.
 - **Les résultats concordent à 84 %**, avec 11 conflits sur 1 000 valeurs environ, tous des différences d'attribution et non de transcription : intensités de PL lues sur la Fig. 3a de PMC9080747 attribuées à des températures décalées par l'aveugle (la relecture intégrale avait validé la base), épaisseur de coque 4,3 nm (tableau S1) contre 8,5 nm (texte) dans PMC7153708, capacité de double couche et énergie DFT de deux échantillons différents dans PMC9043841. Les publications sous 70 % de précision (PMC4725629, PMC6600758, PMC6926885, PMC7481534, PMC7648642) sont celles où l'aveugle a rangé les mêmes mesures sur d'autres voies (témoin en voie séparée contre résultat préfixé `control_`, électrode contre pile bouton) ou lu d'autres figures.
 - **Le rappel mesure la valeur ajoutée des critiques** : la base contient en moyenne 30 % de paramètres et 40 % de résultats de plus que ce qu'une extraction seule trouve. Le cas extrême est PMC4725629 (rappel 7 %) : la correction y avait ajouté les caractéristiques de la lampe sur six voies (36 des 74 paramètres), que l'aveugle n'a pas relevées. À l'inverse, l'aveugle a trouvé 178 voies pour 172 en base et plus de branches (123 contre 117) : les découpages diffèrent à la marge (témoins, séries décrites par une plage), sans qu'un découpage soit faux.
 - **Les choix non évidents divergent de façon prévisible** : voie de base choisie dans une série (« 160, 180 ou 200 °C » : l'aveugle prend la première, la base l'échantillon optimal), essais du matériau fini en résultats plutôt qu'en branches (les deux le font, conformément au RUNBOOK), héritage des étapes pour un témoin décrit par « same condition without X » (accepté avec doute des deux côtés), quantités déclarées non citées plutôt que déduites (10 g de NaOH déductibles d'un rapport 1:1 : les deux déclarent).
-- **Trois agents sur vingt ont écrit un journal dans `journaux/`** malgré l'interdiction ; un a écrasé le journal original (restauré depuis git), les deux autres ont été déplacés dans `verification/blind/`. Aucun n'a lu les fichiers interdits d'après leurs rapports.
+- **Trois agents sur vingt ont écrit un journal dans `journaux/`** malgré l'interdiction ; un a écrasé le journal original (restauré depuis git), les deux autres ont été déplacés dans `audits/verification/aveugle/`. Aucun n'a lu les fichiers interdits d'après leurs rapports.
 
 Coût : 2,85 M jetons pour 20 publications (143 k par publication, 1,5 à 6 min chacune), soit un quart du coût des quatre passes.
 
@@ -182,6 +182,6 @@ Conclusion de la ré-extraction : sur les valeurs qu'un extracteur indépendant 
 
 ## Fichiers
 
-- `audit_parametres.py` → `profil_parametres.json`, `homogeneite_methodes.json`, `essentiels_methode.json`, `reactifs_quantites.json`
-- `audit_verification.py` → `verif_branches*.json`, `verif_stoechiometrie*.json`, `verif_completude_*.json`, `verif_variation_resume.json`, `verif_series.json`, `verif_paires.json`, `verif_effet_param_prop.json`, `verif_param_synonymes*.json`, `verif_si*.json` ; regroupés pour la page dans `docs/audit_contenu/dash/verif_*.json`
-- `check_blind.py`, `compare_blind.py`, `verification/blind/<PMCID>.json` → `verif_reextraction.json`
+- `analyses/audit_parametres.py` → `profil_parametres.json`, `homogeneite_methodes.json`, `essentiels_methode.json`, `reactifs_quantites.json`
+- `analyses/audit_verification.py` → `verif_branches*.json`, `verif_stoechiometrie*.json`, `verif_completude_*.json`, `verif_variation_resume.json`, `verif_series.json`, `verif_paires.json`, `verif_effet_param_prop.json`, `verif_param_synonymes*.json`, `verif_si*.json` ; regroupés pour la page dans `docs/audit_contenu/dash/verif_*.json`
+- `analyses/check_blind.py`, `analyses/compare_blind.py`, `audits/verification/aveugle/<PMCID>.json` → `verif_reextraction.json`

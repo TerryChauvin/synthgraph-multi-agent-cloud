@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Concordance entre l'extraction en base (extractions/<PMCID>.json) et une ré-extraction à l'aveugle (verification/blind/<PMCID>.json).
-Usage : python3 -I compare_blind.py [PMCID ...]  (sans argument : tous les fichiers de verification/blind/) → docs/audit_contenu/data/verif_reextraction.json
+"""Concordance entre l'extraction en base (extractions/<PMCID>.json) et une ré-extraction à l'aveugle (audits/verification/aveugle/<PMCID>.json).
+Usage : python3 -I analyses/compare_blind.py [PMCID ...]  (sans argument : tous les fichiers de audits/verification/aveugle/) → docs/audit_contenu/data/verif_reextraction.json
 Mesures : voies appariées, rappel et précision des valeurs numériques de paramètres, de résultats et de quantités de réactifs (même nom canonique, même unité normalisée, valeur à ±2 %), conflits (même nom et même voie, valeur différente)."""
+import os, sys
+HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
+sys.path[:0] = [HERE, ROOT]
+os.chdir(ROOT)  # chemins relatifs à la racine du dépôt
 import glob, json, os, re, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from audit_contenu import canon_prop, norm_unit
 from audit_verification import canon_param
 
@@ -67,7 +70,7 @@ def match_values(A, B, reagent=False, ctx=None):
 
 
 def compare(pmcid):
-    O = json.load(open(f"extractions/{pmcid}.json")); B = json.load(open(f"verification/blind/{pmcid}.json"))
+    O = json.load(open(f"extractions/{pmcid}.json")); B = json.load(open(f"audits/verification/aveugle/{pmcid}.json"))
     ro, rb = O.get("routes") or [], B.get("routes") or []
     def key(r):
         return toks(r.get("label"), (r.get("material") or {}).get("name"), (r.get("material") or {}).get("formula"))
@@ -118,7 +121,7 @@ def compare(pmcid):
 
 
 def main():
-    ids = sys.argv[1:] or sorted(os.path.basename(f)[:-5] for f in glob.glob("verification/blind/*.json"))
+    ids = sys.argv[1:] or sorted(os.path.basename(f)[:-5] for f in glob.glob("audits/verification/aveugle/*.json"))
     rows = [compare(p) for p in ids if os.path.exists(f"extractions/{p}.json")]
     out = "docs/audit_contenu/data/verif_reextraction.json"
     if rows:

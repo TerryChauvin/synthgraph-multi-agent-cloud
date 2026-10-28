@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 """Audit de contenu de synthese.db : types de synthèse, propriétés, conditions, trous, qualité, limites.
 
-Usage : python3 -I audit_contenu.py [--out docs/audit_contenu/data]
+Usage : python3 -I analyses/audit_contenu.py [--out docs/audit_contenu/data]
 Produit un fichier JSON par jeu de données (lignes = objets) et summary.json.
 Les sorties des agents (mécanismes, références web) sont lues dans docs/audit_contenu/sources/ si présentes.
 Ne modifie jamais la base.
 """
+import os, sys
+HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
+sys.path[:0] = [HERE, ROOT]
+os.chdir(ROOT)  # chemins relatifs à la racine du dépôt
 import argparse, collections, datetime, json, os, re, sqlite3, statistics
 
 # ---------------------------------------------------------------- taxonomies

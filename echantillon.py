@@ -1,7 +1,7 @@
 """Fiche de verification humaine : tire des valeurs au hasard et les presente avec leur
 citation, le passage de l'article autour, et les liens vers l'article et le PDF local.
 
-    python -I echantillon.py            # 40 valeurs au hasard -> verification/echantillon.html
+    python -I echantillon.py            # 40 valeurs au hasard -> audits/verification/echantillon.html
     python -I echantillon.py 100 7      # 100 valeurs, graine 7 (meme graine = meme tirage)
 """
 import html
@@ -72,7 +72,7 @@ def main():
             + "".join(f"<label><input type=radio name=v{i} value={v}> {t}</label>"
                       for v, t in (("ok", "correcte"), ("faux", "fausse"), ("doute", "douteuse"))) + "</div>")
     out.append(f"<script>{JS}</script>")
-    target = db.ROOT / "verification"
+    target = db.ROOT / "audits" / "verification"
     target.mkdir(exist_ok=True)
     path = target / "echantillon.html"
     path.write_text("\n".join(out), encoding="utf-8")
