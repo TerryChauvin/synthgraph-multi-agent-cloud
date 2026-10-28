@@ -1,0 +1,1588 @@
+{
+ "pmcid": "PMC9908928",
+ "format": 3,
+ "sample_inventory": [
+  {
+   "sample": "aqueous garlic extract",
+   "defined_in": "Experimental section, Prepare fresh garlic leaf extract",
+   "route": "garlic_extract",
+   "results_in": [
+    "Fig. 6b"
+   ]
+  },
+  {
+   "sample": "Ag/AgO NPs (silver nanoparticles from garlic)",
+   "defined_in": "Experimental section, Synthesis of silver nanoparticles by green method",
+   "route": "AgNPs-garlic",
+   "results_in": [
+    "Table 1",
+    "Table 2",
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5",
+    "Fig. 6a",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "Fig. 10",
+    "Fig. 11",
+    "Fig. 12",
+    "Fig. 13"
+   ]
+  },
+  {
+   "sample": "Ag nanoparticles thin film sample",
+   "defined_in": "Results, Urbach energy and Optical bandgap analysis",
+   "route": null,
+   "why": "Film preparation not described; the Urbach, Tauc and refractive index results are attached to the Ag/AgO NPs route",
+   "results_in": [
+    "Fig. 8",
+    "Fig. 9"
+   ]
+  },
+  {
+   "sample": "negative control mice",
+   "defined_in": "Experimental section, Sperm analysis",
+   "route": null,
+   "why": "Animal group, no material synthesized",
+   "results_in": [
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "STZ diabetic control mice",
+   "defined_in": "Experimental section, Sperm analysis",
+   "route": null,
+   "why": "Animal group, no material synthesized",
+   "results_in": [
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "STZ + metformin group",
+   "defined_in": "Experimental section, Sperm analysis",
+   "route": null,
+   "why": "Commercial drug, not synthesized",
+   "results_in": [
+    "Table 2"
+   ]
+  },
+  {
+   "sample": "STZ + silver (Ag) group",
+   "defined_in": "Experimental section, Sperm analysis",
+   "route": null,
+   "why": "Silver treatment (non nano) not described or characterized, not synthesized",
+   "results_in": [
+    "Table 2"
+   ]
+  }
+ ],
+ "routes": [
+  {
+   "label": "garlic_extract",
+   "parent": null,
+   "is_baseline": true,
+   "kind": "intermediate",
+   "methods": [
+    "precursor_preparation"
+   ],
+   "material": {
+    "name": "aqueous extract of fresh garlic",
+    "formula": null,
+    "family": "autre",
+    "phase": null,
+    "morphology": null
+   },
+   "method": "hot-water extraction of ground garlic (100 °C, 30 min), filtered and centrifuged; used as reducing and stabilizing agent",
+   "quote": "15 g of finely ground garlic powder was dispersed in 500 ml DIW, which is of very high purity, using a magnetic stirrer for 30 min at 100 °C.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "fresh garlic (ground powder)",
+     "formula": null,
+     "role": "precursor",
+     "amount": 15,
+     "unit": "g",
+     "not_stated": [
+      "purity"
+     ],
+     "supplier": "traditional medicine store in Baghdad",
+     "supplier_quote": "Fresh garlic was purchased from the traditional medicine store in Baghdad.",
+     "quote": "15 g of finely ground garlic powder was dispersed in 500 ml DIW"
+    },
+    {
+     "name": "deionized water (extraction)",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 500,
+     "unit": "mL",
+     "purity": "very high purity",
+     "not_stated": [
+      "supplier"
+     ],
+     "quote": "15 g of finely ground garlic powder was dispersed in 500 ml DIW, which is of very high purity, using a magnetic stirrer for 30 min at 100 °C."
+    },
+    {
+     "name": "deionized water (garlic washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "Fresh garlic was used after washing several times with deionized water (DIW) to remove dust particles"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "wash",
+     "description": "Wash the fresh garlic several times with deionized water to remove dust.",
+     "quote": "Fresh garlic was used after washing several times with deionized water (DIW) to remove dust particles",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "Fresh garlic was used after washing several times with deionized water (DIW) to remove dust particles",
+       "value_text": "deionized water (DIW)"
+      },
+      {
+       "name": "repetitions",
+       "quote": "Fresh garlic was used after washing several times with deionized water (DIW) to remove dust particles",
+       "value_text": "several times"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "dry",
+     "description": "Leave the washed garlic in air to dry.",
+     "quote": "then the plant was left in the air to dry to remove residual moisture",
+     "parameters": [
+      {
+       "name": "drying_mode",
+       "quote": "then the plant was left in the air to dry to remove residual moisture",
+       "value_text": "left in the air"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature",
+      "duration"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "grind",
+     "description": "Grind the dry garlic with an ordinary grinder.",
+     "quote": "Dry garlic was ground using an ordinary grinder.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "grinder",
+       "detail": "ordinary grinder",
+       "quote": "Dry garlic was ground using an ordinary grinder."
+      }
+     ],
+     "not_stated": [
+      "duration"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "disperse",
+     "description": "Disperse 15 g of garlic powder in 500 mL DIW with a magnetic stirrer at 100 °C.",
+     "quote": "15 g of finely ground garlic powder was dispersed in 500 ml DIW, which is of very high purity, using a magnetic stirrer for 30 min at 100 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "15 g of finely ground garlic powder was dispersed in 500 ml DIW, which is of very high purity, using a magnetic stirrer for 30 min at 100 °C.",
+       "value_num": 30,
+       "unit": "min"
+      },
+      {
+       "name": "temperature",
+       "quote": "15 g of finely ground garlic powder was dispersed in 500 ml DIW, which is of very high purity, using a magnetic stirrer for 30 min at 100 °C.",
+       "value_num": 100,
+       "unit": "°C"
+      },
+      {
+       "name": "mass",
+       "quote": "15 g of finely ground garlic powder was dispersed in 500 ml DIW, which is of very high purity, using a magnetic stirrer for 30 min at 100 °C.",
+       "value_num": 15,
+       "unit": "g"
+      },
+      {
+       "name": "volume",
+       "quote": "15 g of finely ground garlic powder was dispersed in 500 ml DIW, which is of very high purity, using a magnetic stirrer for 30 min at 100 °C.",
+       "value_num": 500,
+       "unit": "mL"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": null,
+       "quote": "15 g of finely ground garlic powder was dispersed in 500 ml DIW, which is of very high purity, using a magnetic stirrer for 30 min at 100 °C."
+      }
+     ],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "filter",
+     "description": "Filter the extract through filter paper.",
+     "quote": "Then, the solution was filtered through filter paper and centrifuged at 4000 rpm for 30 min to remove any impurities and obtain a clear solution.",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "filter paper",
+       "detail": null,
+       "quote": "Then, the solution was filtered through filter paper and centrifuged at 4000 rpm for 30 min to remove any impurities and obtain a clear solution."
+      }
+     ],
+     "not_stated": []
+    },
+    {
+     "order": 6,
+     "action": "centrifuge",
+     "description": "Centrifuge to remove impurities and obtain a clear solution.",
+     "quote": "centrifuged at 4000 rpm for 30 min to remove any impurities and obtain a clear solution",
+     "parameters": [
+      {
+       "name": "centrifuge_speed",
+       "quote": "centrifuged at 4000 rpm for 30 min to remove any impurities and obtain a clear solution",
+       "value_num": 4000,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "centrifuged at 4000 rpm for 30 min to remove any impurities and obtain a clear solution",
+       "value_num": 30,
+       "unit": "min"
+      }
+     ],
+     "equipment": [],
+     "not_stated": []
+    },
+    {
+     "order": 7,
+     "action": "store",
+     "description": "Keep the extract in the refrigerator until use.",
+     "quote": "The extract is kept in the refrigerator for later use in the preparation of silver nanoparticles.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The extract is kept in the refrigerator for later use in the preparation of silver nanoparticles.",
+       "value_text": "refrigerator"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "duration"
+     ]
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "uvvis_extract",
+     "technique": "UV_vis",
+     "instrument": "UV–Vis spectrometer (Shimadzu-Japanese uv-2450)",
+     "result": "aqueous garlic extract absorbs with a maximum at 272 nm (Fig. 6b)",
+     "quote": "The peak of the optical absorption spectrum was observed at wavelength 272 nm when using an aqueous garlic plant extract",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "value_text": "(250–800) nm",
+       "quote": "Figure 6b shows the absorption spectrum at a wavelength range (250–800) nm of garlic plant."
+      },
+      {
+       "name": "scan_step",
+       "value_num": 1,
+       "unit": "nm",
+       "value_text": "1 nm resolution",
+       "quote": "was recorded using a UV–Vis spectrometer (Shimadzu-Japanese uv-2450) at 1 nm resolution"
+      },
+      {
+       "name": "optical_path_length",
+       "value_num": 1,
+       "unit": "cm",
+       "quote": "Samples were scanned in the 300–800 nm range, with a scanning speed of 475 nm/min, at 1 cm optical path and at room temperature."
+      },
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature",
+       "quote": "Samples were scanned in the 300–800 nm range, with a scanning speed of 475 nm/min, at 1 cm optical path and at room temperature."
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "distilled water used as blank reference",
+       "quote": "Distilled water was used as a blank reference for background yellowing from other sources."
+      }
+     ],
+     "not_stated": [
+      "band_gap_method"
+     ]
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "absorption_peak",
+     "value_num": 272,
+     "unit": "nm",
+     "measured_by": "uvvis_extract",
+     "quote": "The peak of the optical absorption spectrum was observed at wavelength 272 nm when using an aqueous garlic plant extract"
+    }
+   ],
+   "missing_fields": [
+    "extract_concentration",
+    "extract_composition"
+   ]
+  },
+  {
+   "label": "AgNPs-garlic",
+   "parent": null,
+   "is_baseline": true,
+   "methods": [
+    "green_synthesis"
+   ],
+   "material": {
+    "name": "silver/silver oxide nanoparticles (Ag/AgO NPs)",
+    "formula": "Ag/AgO",
+    "family": "nanoparticule_metallique",
+    "phase": "mixed Ag and AgO (XRD)",
+    "morphology": "spherical, aggregated"
+   },
+   "method": "green synthesis of Ag/AgO nanoparticles by reduction of AgNO3 with aqueous garlic extract at 80 °C",
+   "quote": "2 g of silver nitrate was dissolved in 25 ml of distilled water by a 600 RPM magnetic stirrer for 30 min.",
+   "scale": null,
+   "yield": null,
+   "not_stated": [
+    "yield"
+   ],
+   "succeeded": true,
+   "reagents": [
+    {
+     "name": "silver nitrate",
+     "formula": "AgNO3",
+     "role": "precursor",
+     "amount": 2,
+     "unit": "g",
+     "supplier": "Sigma Corporation, USA",
+     "supplier_quote": "Silver nitrate, Streptozotocin obtained from Sigma Corporation, USA industry was used.",
+     "not_stated": [
+      "purity"
+     ],
+     "quote": "2 g of silver nitrate was dissolved in 25 ml of distilled water by a 600 RPM magnetic stirrer for 30 min."
+    },
+    {
+     "name": "distilled water",
+     "formula": "H2O",
+     "role": "solvent",
+     "amount": 25,
+     "unit": "mL",
+     "not_stated": [
+      "purity",
+      "supplier"
+     ],
+     "quote": "2 g of silver nitrate was dissolved in 25 ml of distilled water by a 600 RPM magnetic stirrer for 30 min."
+    },
+    {
+     "name": "garlic_extract",
+     "formula": null,
+     "role": "intermediate",
+     "amount": 25,
+     "unit": "mL",
+     "quote": "we add 25 ml of garlic extract gradually"
+    },
+    {
+     "name": "ethanol",
+     "formula": "C2H5OH",
+     "role": "wash",
+     "supplier": "DUKSAN Company",
+     "supplier_quote": "Ethanol was taken from DUKSAN Company",
+     "quote": "washed with water and ethanol more than once"
+    },
+    {
+     "name": "water (washing)",
+     "formula": "H2O",
+     "role": "wash",
+     "quote": "washed with water and ethanol more than once"
+    }
+   ],
+   "steps": [
+    {
+     "order": 1,
+     "action": "dissolve",
+     "description": "Dissolve 2 g of AgNO3 in 25 mL distilled water with a magnetic stirrer at 600 rpm for 30 min.",
+     "quote": "2 g of silver nitrate was dissolved in 25 ml of distilled water by a 600 RPM magnetic stirrer for 30 min.",
+     "parameters": [
+      {
+       "name": "mass",
+       "quote": "2 g of silver nitrate was dissolved in 25 ml of distilled water by a 600 RPM magnetic stirrer for 30 min.",
+       "value_num": 2,
+       "unit": "g"
+      },
+      {
+       "name": "volume",
+       "quote": "2 g of silver nitrate was dissolved in 25 ml of distilled water by a 600 RPM magnetic stirrer for 30 min.",
+       "value_num": 25,
+       "unit": "mL"
+      },
+      {
+       "name": "stirring_speed",
+       "quote": "2 g of silver nitrate was dissolved in 25 ml of distilled water by a 600 RPM magnetic stirrer for 30 min.",
+       "value_num": 600,
+       "unit": "rpm"
+      },
+      {
+       "name": "duration",
+       "quote": "2 g of silver nitrate was dissolved in 25 ml of distilled water by a 600 RPM magnetic stirrer for 30 min.",
+       "value_num": 30,
+       "unit": "min"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": "600 RPM",
+       "quote": "2 g of silver nitrate was dissolved in 25 ml of distilled water by a 600 RPM magnetic stirrer for 30 min."
+      }
+     ],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 2,
+     "action": "add",
+     "description": "Add 25 mL of garlic extract gradually to the silver nitrate solution.",
+     "quote": "After that, we add 25 ml of garlic extract gradually with continuous magnetic stirring for an hour at 80 °C.",
+     "parameters": [
+      {
+       "name": "volume",
+       "quote": "After that, we add 25 ml of garlic extract gradually with continuous magnetic stirring for an hour at 80 °C.",
+       "value_num": 25,
+       "unit": "mL"
+      },
+      {
+       "name": "addition_mode",
+       "quote": "After that, we add 25 ml of garlic extract gradually with continuous magnetic stirring for an hour at 80 °C.",
+       "value_text": "gradually"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "addition_rate"
+     ]
+    },
+    {
+     "order": 3,
+     "action": "stir",
+     "description": "Stir continuously for one hour at 80 °C; a precipitate forms and the solution turns black.",
+     "quote": "After that, we add 25 ml of garlic extract gradually with continuous magnetic stirring for an hour at 80 °C.",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "After that, we add 25 ml of garlic extract gradually with continuous magnetic stirring for an hour at 80 °C.",
+       "value_text": "an hour"
+      },
+      {
+       "name": "temperature",
+       "quote": "After that, we add 25 ml of garlic extract gradually with continuous magnetic stirring for an hour at 80 °C.",
+       "value_num": 80,
+       "unit": "°C"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "magnetic stirrer",
+       "detail": null,
+       "quote": "After that, we add 25 ml of garlic extract gradually with continuous magnetic stirring for an hour at 80 °C."
+      }
+     ],
+     "not_stated": [
+      "stirring_speed"
+     ]
+    },
+    {
+     "order": 4,
+     "action": "age",
+     "description": "Leave the solution overnight.",
+     "quote": "The solution was then left overnight",
+     "parameters": [
+      {
+       "name": "duration",
+       "quote": "The solution was then left overnight",
+       "value_text": "overnight"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "temperature"
+     ]
+    },
+    {
+     "order": 5,
+     "action": "centrifuge",
+     "description": "Separate the precipitate by centrifugation.",
+     "quote": "the precipitate was separated by centrifuge",
+     "parameters": [],
+     "equipment": [
+      {
+       "type": "centrifuge",
+       "detail": null,
+       "quote": "the precipitate was separated by centrifuge"
+      }
+     ],
+     "not_stated": [
+      "centrifuge_speed",
+      "duration"
+     ]
+    },
+    {
+     "order": 6,
+     "action": "wash",
+     "description": "Wash the precipitate with water and ethanol more than once.",
+     "quote": "washed with water and ethanol more than once",
+     "parameters": [
+      {
+       "name": "wash_solvent",
+       "quote": "washed with water and ethanol more than once",
+       "value_text": "water and ethanol"
+      },
+      {
+       "name": "repetitions",
+       "quote": "washed with water and ethanol more than once",
+       "value_text": "more than once"
+      }
+     ],
+     "equipment": [],
+     "not_stated": [
+      "wash_volume"
+     ]
+    },
+    {
+     "order": 7,
+     "action": "dry",
+     "description": "Dry the precipitate in an oven at 85 °C for 4 h.",
+     "quote": "The precipitate is dried in an oven at 85 °C for 4 h.",
+     "parameters": [
+      {
+       "name": "temperature",
+       "quote": "The precipitate is dried in an oven at 85 °C for 4 h.",
+       "value_num": 85,
+       "unit": "°C"
+      },
+      {
+       "name": "duration",
+       "quote": "The precipitate is dried in an oven at 85 °C for 4 h.",
+       "value_num": 4,
+       "unit": "h"
+      },
+      {
+       "name": "drying_mode",
+       "quote": "The precipitate is dried in an oven at 85 °C for 4 h.",
+       "value_text": "oven"
+      }
+     ],
+     "equipment": [
+      {
+       "type": "oven",
+       "detail": null,
+       "quote": "The precipitate is dried in an oven at 85 °C for 4 h."
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "characterizations": [
+    {
+     "id": "xrd_1",
+     "technique": "XRD",
+     "instrument": null,
+     "result": "eight diffraction peaks indexed to AgO (JCPDS 01–076-1489) and Ag (JCPDS 00-001-1167); average crystallite size 30.20 nm",
+     "quote": "There are (8) peaks are shown with different intensities.",
+     "settings": [
+      {
+       "name": "radiation",
+       "value_num": 1.5406,
+       "unit": "Å",
+       "value_text": "λ = 1.5406 Å (wavelength of X-ray)",
+       "quote": "\\begin{document}$$\\lambda = 1.5406$$\\end{document}λ=1.5406 Å is the wavelength of X-ray"
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_text": "Scherrer equation (Methods)",
+       "quote": "The size of silver nanoparticles is calculated using the Scherer equation, which is shown below"
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_num": 0.94,
+       "value_text": "constant k (geometric factor) = 0.94 (Methods)",
+       "quote": "knowing that the constant k (geometric factor) is equal to \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$0.94$$\\end{document}0.94"
+      },
+      {
+       "name": "crystallite_size_method",
+       "value_text": "Debye–Scherrer equation from FWHM, with 0.9 in the Results equation",
+       "quote": "The crystallite size of Ag/AgO NPs was calculated from the full width half-maximum, Bragg reflections by the Debye–Scherrer equation:1\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$D = \\frac{0.9\\lambda }{{\\beta cos\\theta }}$$\\end{document}D=0.9λβcosθ"
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "sample centrifuged at 10,000 rpm for 15 min; precipitate collected and silver pellets dried at 50 °C in an oven",
+       "quote": "The examination was carried out by placing the sample in a centrifuge at 10,000 rpm for 15 min. The precipitate was collected and the resulting silver pellets dried at 50 °C in an oven."
+      }
+     ],
+     "not_stated": [
+      "scan_range",
+      "scan_step"
+     ]
+    },
+    {
+     "id": "sem_1",
+     "technique": "SEM",
+     "instrument": "scanning electron microscope (EDS-Mapping-Line-EBSD) made in Germany",
+     "result": "spherical nanoparticles resembling clusters, of different nano-diameters",
+     "quote": "The findings indicate the existence of spherical nanoparticles, which resemble clusters of spherical nanoparticles, with different nano-diameter.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "value_text": "sample centrifuged at 10,000 rpm for 15 min, washed with distilled water and dried at 50 °C",
+       "quote": "The examination was carried out after placing the sample in a centrifuge at a rotation speed of 10,000 rpm for 15 min, after which the sample was washed with distilled water and dried at a temperature of 50 degrees Celsius."
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "sample placed on a platinum mesh coated with palladium",
+       "quote": "The sample was placed on a platinum mesh coated with palladium"
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "eds_1",
+     "technique": "EDS",
+     "instrument": "(250 INCA Energy)",
+     "result": "Ag peak in the 3 keV region and a high oxygen content",
+     "quote": "demonstrating that NPs were made of crystalline silver.",
+     "settings": [],
+     "not_stated": [
+      "accelerating_voltage"
+     ]
+    },
+    {
+     "id": "tem_1",
+     "technique": "TEM",
+     "instrument": null,
+     "result": "spherical nanoparticles with some aggregation; sizes 50–350 nm (histogram, Fig. 4c)",
+     "quote": "The results show that the nanoparticles have a spherical shape and with some aggregation.",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "value_text": "dried precipitate dissolved in ethanol, ultrasonic bath 15 min, drop placed on a carbon-coated copper grid",
+       "quote": "An amount of the dried precipitate of nano silver was dissolved in ethanol alcohol, the suspension was placed in the ultrasonic bath for 15 min, then a drop is taken from the suspension and placed on a carbon-coated copper grid."
+      }
+     ],
+     "not_stated": [
+      "accelerating_voltage",
+      "particles_counted"
+     ]
+    },
+    {
+     "id": "afm_1",
+     "technique": "AFM",
+     "instrument": "Naio Nanosurf software, version 3.10.0.28",
+     "result": "surface roughness 9.32 nm, average square roughness 21.19 nm",
+     "quote": "The surface roughness of silver oxide/silver nanoparticles was 9.32 nm with an average square roughness of 21.19 nm",
+     "settings": [
+      {
+       "name": "sample_preparation",
+       "value_text": "sample dispersed and placed on a small glass slide",
+       "quote": "The examination was carried out after the examined sample was dispersed and placed on a small glass slide under the microscope and at room temperature"
+      },
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature",
+       "quote": "The examination was carried out after the examined sample was dispersed and placed on a small glass slide under the microscope and at room temperature"
+      }
+     ],
+     "not_stated": [
+      "afm_mode"
+     ]
+    },
+    {
+     "id": "uvvis_1",
+     "technique": "UV_vis",
+     "instrument": "UV–Vis spectrometer (Shimadzu-Japanese uv-2450)",
+     "result": "surface plasmon absorption peak at 420 nm; direct optical gap 3.39 eV (Tauc); Urbach energy 0.25 eV",
+     "quote": "the absorption peak of silver nanoparticles was at a wavelength of 420 nm",
+     "settings": [
+      {
+       "name": "wavelength_range",
+       "value_text": "300–800 nm",
+       "quote": "Samples were scanned in the 300–800 nm range, with a scanning speed of 475 nm/min, at 1 cm optical path and at room temperature."
+      },
+      {
+       "name": "scan_step",
+       "value_num": 475,
+       "unit": "nm/min",
+       "value_text": "scanning speed of 475 nm/min",
+       "quote": "Samples were scanned in the 300–800 nm range, with a scanning speed of 475 nm/min, at 1 cm optical path and at room temperature."
+      },
+      {
+       "name": "scan_step",
+       "value_num": 1,
+       "unit": "nm",
+       "value_text": "1 nm resolution",
+       "quote": "was recorded using a UV–Vis spectrometer (Shimadzu-Japanese uv-2450) at 1 nm resolution"
+      },
+      {
+       "name": "optical_path_length",
+       "value_num": 1,
+       "unit": "cm",
+       "quote": "Samples were scanned in the 300–800 nm range, with a scanning speed of 475 nm/min, at 1 cm optical path and at room temperature."
+      },
+      {
+       "name": "measurement_temperature",
+       "value_text": "room temperature",
+       "quote": "Samples were scanned in the 300–800 nm range, with a scanning speed of 475 nm/min, at 1 cm optical path and at room temperature."
+      },
+      {
+       "name": "sample_preparation",
+       "value_text": "spectra recorded 24 h after incubating the AgNO3 solution with garlic extract; distilled water as blank",
+       "quote": "UV–vis absorption spectra were recorded 24 h after incubating the AgNO3 solution with garlic extract. Distilled water was used as a blank reference for background yellowing from other sources."
+      },
+      {
+       "name": "band_gap_method",
+       "value_text": "Tauc formula",
+       "quote": "Eg was based on this Tauc formula:"
+      },
+      {
+       "name": "band_gap_method",
+       "value_text": "direct optical energy gap from the tangent of the (αhν)² plot",
+       "quote": "by drawing the tangent with the x-axis the direct optical energy gap can be calculated"
+      }
+     ],
+     "not_stated": [
+      "film_thickness"
+     ]
+    },
+    {
+     "id": "zeta_1",
+     "technique": "DLS_zeta",
+     "instrument": "HAS 300. Zeta sizer",
+     "result": "zeta potential − 19.5 mV, mobility − 1.532 μmcm/Vs",
+     "quote": "which have a zeta potential of − 19.5 (mV) and a mobility of − 1.532 (μmcm/Vs)",
+     "settings": [
+      {
+       "name": "method",
+       "value_text": "photon correlation spectroscopy",
+       "quote": "Zeta potential was determined using HAS 300. Zeta sizer based on photon correlation spectroscopy"
+      },
+      {
+       "name": "method",
+       "value_num": 60,
+       "unit": "s",
+       "value_text": "analysis time 60 s, average zeta potential determined",
+       "quote": "The analysis time was 60 s, and the average zeta potential was determined."
+      },
+      {
+       "name": "concentration",
+       "value_text": "dispersion measured as such, without dilution",
+       "quote": "Dispersion was determined as such without dilution."
+      }
+     ],
+     "not_stated": [
+      "dispersant",
+      "measurement_temperature"
+     ]
+    },
+    {
+     "id": "dls_1",
+     "technique": "DLS_zeta",
+     "instrument": "Malvern Zeta sizer from Origin/Germany",
+     "result": "highest peaks of the size distribution between 95 and 310 nm",
+     "quote": "From the figure, the results confirm that the highest peaks of AgO/AgNPs distribution were between 95 and 310 nm.",
+     "settings": [
+      {
+       "name": "method",
+       "value_text": "dynamic light scattering and multiple scattering laser diffraction method",
+       "quote": "determined by dynamic light scattering (DLS) and multiple scattering laser diffraction method"
+      },
+      {
+       "name": "measurement_temperature",
+       "value_num": 25,
+       "unit": "°C",
+       "quote": "Figure 13 Size Distribution of Ag/AgONPs by (A) Intensity and (B) Volume. At Temperature 25 °C and Duration 60 s."
+      },
+      {
+       "name": "method",
+       "value_num": 60,
+       "unit": "s",
+       "value_text": "duration 60 s",
+       "quote": "Figure 13 Size Distribution of Ag/AgONPs by (A) Intensity and (B) Volume. At Temperature 25 °C and Duration 60 s."
+      }
+     ],
+     "not_stated": [
+      "dispersant",
+      "concentration"
+     ]
+    },
+    {
+     "id": "bio_1",
+     "technique": "biological_test",
+     "instrument": "Makler Chamber and light microscope (Olympus Corporation, Tokyo, Japan)",
+     "result": "sperm motility, dead sperm, abnormalities and count in five mouse groups (Table 2)",
+     "quote": "Sperm motility, normal and damaged morphology, and sperm count were examined, and the number was found to be at least 150 sperms from each mouse.",
+     "settings": [
+      {
+       "name": "organism_or_cell_line",
+       "value_text": "thirty healthy male albino mice, about 30 ± 5 g",
+       "quote": "Thirty healthy male albino mice weighing about 30 ± 5 g used in the experiment were purchased from Biotechnology Research Center/Al-Nahrain University."
+      },
+      {
+       "name": "organism_or_cell_line",
+       "value_text": "diabetes induced by a single dose of streptozotocin, 200 mg/kg body weight",
+       "quote": "by giving them a single dose of fresh streptozotocin after being dissolved in saline in an amount \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\left( {200 \\;{\\text{mg}}/{\\text{kg}}} \\right)$$\\end{document}200mg/kg of body weight"
+      },
+      {
+       "name": "organism_or_cell_line",
+       "value_text": "mice with blood glucose higher than 245 mg/dL retained",
+       "quote": "White mice that showed a blood glucose level higher than 245 mg/dL were taken"
+      },
+      {
+       "name": "concentration_range",
+       "value_text": "silver nanoparticles 2 mg/kg body weight/day",
+       "quote": "the fifth was diabetic and treated silver nanoparticles (2 mg/kg body weight/day)"
+      },
+      {
+       "name": "concentration_range",
+       "value_text": "metformin 600 mg/kg body weight/day for 28 days",
+       "quote": "the third group was diabetic and treated with metformin (600 mg/kg body weight/day) for 28 days"
+      },
+      {
+       "name": "incubation_conditions",
+       "value_text": "silver nanoparticles: up to 35 consecutive days, one dose per day",
+       "quote": "Treatment with manufactured silver nanoparticles was tested with a long treatment period of up to 35 consecutive days and at a rate of one dose per day"
+      },
+      {
+       "name": "incubation_conditions",
+       "value_text": "22 ± 3 °C, 12 h dark / 12 h light cycle, humidity 50 ± 5%, one week of acclimatization",
+       "quote": "All animals were kept in standard conditions of 22 ± 3 °C with a constant 12 h dark and 12 h light exposure cycle, and in a controlled environment at an equilibrium humidity of 50 ± 5%."
+      },
+      {
+       "name": "assay_method",
+       "value_text": "motility by Makler chamber, graded A to D, light microscope",
+       "quote": "Sperm activity and motility analysis was performed by Makler Chamber and using a light microscope (Olympus Corporation, Tokyo, Japan)."
+      },
+      {
+       "name": "assay_method",
+       "value_text": "sperm shapes identified by optical microscope at magnification × 40",
+       "quote": "the shapes of sperms were identified by adjusting the optical microscope to magnification × 40"
+      },
+      {
+       "name": "assay_method",
+       "value_text": "slides stained with Nigrosine and Eosin (100×)",
+       "quote": "Figure 14 Sperm without tail & sperm without Head. Slide stained with Nigrosine and Eosin stain (100×)."
+      },
+      {
+       "name": "replicates",
+       "value_num": 150,
+       "value_text": "at least 150 sperms from each mouse",
+       "quote": "the number was found to be at least 150 sperms from each mouse"
+      }
+     ],
+     "not_stated": []
+    }
+   ],
+   "outcomes": [
+    {
+     "property": "visual_appearance",
+     "value_text": "a precipitate forms and the color of the solution turns black",
+     "quote": "Then a precipitate will form and the color of the solution will turn black."
+    },
+    {
+     "property": "visual_appearance_abstract",
+     "value_text": "liquid turns transparent orange then blackish brown",
+     "quote": "changing the color of the liquid to transparent orange and then blackish brown"
+    },
+    {
+     "property": "phase_AgO",
+     "value_text": "AgO, JCPDS (01–076-1489)",
+     "measured_by": "xrd_1",
+     "quote": "The diffraction angles at 27.9°, 32.2°, and 54.72° corresponding to planes (100), (111), and (220) respectively, confirm the behavior of AgO Nps and agreement with JCPDS (01–076-1489)"
+    },
+    {
+     "property": "phase_Ag",
+     "value_text": "Ag, JCPDS (00-001-1167)",
+     "measured_by": "xrd_1",
+     "quote": "These results illustrated the AgNPs has been prepared, and agreement with the JCPDS (00-001-1167)."
+    },
+    {
+     "property": "xrd_peak_position_AgO_hkl100_27p96",
+     "value_num": 27.96,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "Ag/AgO* NPs | 27.96 | (100)* | 0.590 | 13.88"
+    },
+    {
+     "property": "FWHM_AgO_hkl100_27p96",
+     "value_num": 0.59,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "Ag/AgO* NPs | 27.96 | (100)* | 0.590 | 13.88"
+    },
+    {
+     "property": "crystallite_size_AgO_hkl100_27p96",
+     "value_num": 13.88,
+     "unit": "nm",
+     "measured_by": "xrd_1",
+     "quote": "Ag/AgO* NPs | 27.96 | (100)* | 0.590 | 13.88"
+    },
+    {
+     "property": "xrd_peak_position_AgO_hkl111_32p28",
+     "value_num": 32.28,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "32.28 | (111)* | 0.590 | 14.02"
+    },
+    {
+     "property": "FWHM_AgO_hkl111_32p28",
+     "value_num": 0.59,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "32.28 | (111)* | 0.590 | 14.02"
+    },
+    {
+     "property": "crystallite_size_AgO_hkl111_32p28",
+     "value_num": 14.02,
+     "unit": "nm",
+     "measured_by": "xrd_1",
+     "quote": "32.28 | (111)* | 0.590 | 14.02"
+    },
+    {
+     "property": "xrd_peak_position_Ag_hkl111_38p2",
+     "value_num": 38.2,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "38.20 | (111) | 0.590 | 14.25"
+    },
+    {
+     "property": "FWHM_Ag_hkl111_38p2",
+     "value_num": 0.59,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "38.20 | (111) | 0.590 | 14.25"
+    },
+    {
+     "property": "crystallite_size_Ag_hkl111_38p2",
+     "value_num": 14.25,
+     "unit": "nm",
+     "measured_by": "xrd_1",
+     "quote": "38.20 | (111) | 0.590 | 14.25"
+    },
+    {
+     "property": "xrd_peak_position_Ag_hkl200_46p31",
+     "value_num": 46.31,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "46.31 | (200) | 0.590 | 14.65"
+    },
+    {
+     "property": "FWHM_Ag_hkl200_46p31",
+     "value_num": 0.59,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "46.31 | (200) | 0.590 | 14.65"
+    },
+    {
+     "property": "crystallite_size_Ag_hkl200_46p31",
+     "value_num": 14.65,
+     "unit": "nm",
+     "measured_by": "xrd_1",
+     "quote": "46.31 | (200) | 0.590 | 14.65"
+    },
+    {
+     "property": "xrd_peak_position_AgO_hkl220_54p72",
+     "value_num": 54.72,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "54.72 | (220)* | 0.095 | 94.19"
+    },
+    {
+     "property": "FWHM_AgO_hkl220_54p72",
+     "value_num": 0.095,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "54.72 | (220)* | 0.095 | 94.19"
+    },
+    {
+     "property": "crystallite_size_AgO_hkl220_54p72",
+     "value_num": 94.19,
+     "unit": "nm",
+     "measured_by": "xrd_1",
+     "quote": "54.72 | (220)* | 0.095 | 94.19"
+    },
+    {
+     "property": "xrd_peak_position_Ag_hkl220_34p74",
+     "value_num": 34.74,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "34.74 | (220) | 0.095 | 87.65"
+    },
+    {
+     "property": "FWHM_Ag_hkl220_34p74",
+     "value_num": 0.095,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "34.74 | (220) | 0.095 | 87.65"
+    },
+    {
+     "property": "crystallite_size_Ag_hkl220_34p74",
+     "value_num": 87.65,
+     "unit": "nm",
+     "measured_by": "xrd_1",
+     "quote": "34.74 | (220) | 0.095 | 87.65"
+    },
+    {
+     "property": "xrd_peak_position_Ag_hkl311_77p23",
+     "value_num": 77.23,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "77.23 | (311) | 0.092 | 110.55"
+    },
+    {
+     "property": "FWHM_Ag_hkl311_77p23",
+     "value_num": 0.092,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "77.23 | (311) | 0.092 | 110.55"
+    },
+    {
+     "property": "crystallite_size_Ag_hkl311_77p23",
+     "value_num": 110.55,
+     "unit": "nm",
+     "measured_by": "xrd_1",
+     "quote": "77.23 | (311) | 0.092 | 110.55"
+    },
+    {
+     "property": "xrd_peak_position_Ag_hkl222_81p82",
+     "value_num": 81.82,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "81.82 | (222) | 0.090 | 116.84"
+    },
+    {
+     "property": "FWHM_Ag_hkl222_81p82",
+     "value_num": 0.09,
+     "unit": "°",
+     "measured_by": "xrd_1",
+     "quote": "81.82 | (222) | 0.090 | 116.84"
+    },
+    {
+     "property": "crystallite_size_Ag_hkl222_81p82",
+     "value_num": 116.84,
+     "unit": "nm",
+     "measured_by": "xrd_1",
+     "quote": "81.82 | (222) | 0.090 | 116.84"
+    },
+    {
+     "property": "crystallite_size_average",
+     "value_num": 30.2,
+     "unit": "nm",
+     "measured_by": "xrd_1",
+     "quote": "Daveragenm | 30.20"
+    },
+    {
+     "property": "particle_size_min",
+     "value_num": 50,
+     "unit": "nm",
+     "measured_by": "tem_1",
+     "quote": "the particle size ranged between [50–350] nm"
+    },
+    {
+     "property": "particle_size_max",
+     "value_num": 350,
+     "unit": "nm",
+     "measured_by": "tem_1",
+     "quote": "the particle size ranged between [50–350] nm"
+    },
+    {
+     "property": "particle_size_histogram_mode",
+     "value_text": "most populated bin 150–200 nm (11 counts), read on the histogram",
+     "from_figure": "Fig. 4c",
+     "measured_by": "tem_1",
+     "quote": "Figure 4 TEM Images of (a,b) Ag/AgO NPs prepared by biosynthesis method with different magnification, and (c) the histogram size distribution."
+    },
+    {
+     "property": "morphology_TEM",
+     "value_text": "spherical shape with some aggregation",
+     "measured_by": "tem_1",
+     "quote": "The results show that the nanoparticles have a spherical shape and with some aggregation."
+    },
+    {
+     "property": "morphology_SEM",
+     "value_text": "spherical nanoparticles resembling clusters, with different nano-diameter",
+     "measured_by": "sem_1",
+     "quote": "The findings indicate the existence of spherical nanoparticles, which resemble clusters of spherical nanoparticles, with different nano-diameter."
+    },
+    {
+     "property": "elemental_composition_Ag",
+     "value_text": "peak in the 3 keV region: crystalline silver",
+     "measured_by": "eds_1",
+     "quote": "demonstrating that NPs were made of crystalline silver."
+    },
+    {
+     "property": "elemental_composition_O",
+     "value_text": "high content of oxygen, attributed to silver oxides",
+     "measured_by": "eds_1",
+     "quote": "The presence of a high content of oxygen may be attributed to the presence of silver oxides in the prepared sample"
+    },
+    {
+     "property": "roughness",
+     "value_num": 9.32,
+     "unit": "nm",
+     "measured_by": "afm_1",
+     "quote": "The surface roughness of silver oxide/silver nanoparticles was 9.32 nm with an average square roughness of 21.19 nm"
+    },
+    {
+     "property": "roughness_rms",
+     "value_num": 21.19,
+     "unit": "nm",
+     "value_text": "average square roughness",
+     "measured_by": "afm_1",
+     "quote": "The surface roughness of silver oxide/silver nanoparticles was 9.32 nm with an average square roughness of 21.19 nm"
+    },
+    {
+     "property": "absorption_peak",
+     "value_num": 420,
+     "unit": "nm",
+     "measured_by": "uvvis_1",
+     "quote": "the absorption peak of silver nanoparticles was at a wavelength of 420 nm"
+    },
+    {
+     "property": "absorption_peak_absorption_coefficient",
+     "value_num": 420,
+     "unit": "nm",
+     "measured_by": "uvvis_1",
+     "quote": "The results indicate a peak absorption coefficient at the wavelength of \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$420\\;{\\text{nm}}$$\\end{document}420nm with a high absorption edge close in the ultraviolet region"
+    },
+    {
+     "property": "urbach_energy",
+     "value_num": 0.25,
+     "unit": "eV",
+     "measured_by": "uvvis_1",
+     "quote": "\\left( {E_{u} = 0.25\\;{\\text{eV}}} \\right)$$\\end{document}Eu=0.25eV this low value indicates low density of localized states in the bandgap of Ag nanoparticles thin film"
+    },
+    {
+     "property": "band_gap",
+     "value_num": 3.39,
+     "unit": "eV",
+     "value_text": "direct optical gap (Tauc)",
+     "measured_by": "uvvis_1",
+     "quote": "\\begin{document}$$3.39\\;{\\text{eV}}$$\\end{document}3.39eV, this meaning the sample needs less energy to stimulate the electrons to move between the energy bands."
+    },
+    {
+     "property": "refractive_index",
+     "value_text": "0.113-0.116",
+     "measured_by": "uvvis_1",
+     "quote": "$$0.113 - 0.116$$\\end{document}0.113-0.116."
+    },
+    {
+     "property": "optical_conductivity",
+     "value_text": "increases with increasing photon energy (frequency)",
+     "measured_by": "uvvis_1",
+     "quote": "The results confirm that the conductivity increases with increasing frequency due to the high energy of the photons, causing the electrons to vibrate in the energy levels."
+    },
+    {
+     "property": "zeta_potential",
+     "value_text": "− 19.5 (mV)",
+     "unit": "mV",
+     "measured_by": "zeta_1",
+     "quote": "which have a zeta potential of − 19.5 (mV) and a mobility of − 1.532 (μmcm/Vs)"
+    },
+    {
+     "property": "electrophoretic_mobility",
+     "value_text": "− 1.532 (μmcm/Vs)",
+     "unit": "μmcm/Vs",
+     "measured_by": "zeta_1",
+     "quote": "which have a zeta potential of − 19.5 (mV) and a mobility of − 1.532 (μmcm/Vs)"
+    },
+    {
+     "property": "hydrodynamic_size",
+     "value_text": "highest peaks between 95 and 310 nm",
+     "unit": "nm",
+     "measured_by": "dls_1",
+     "quote": "From the figure, the results confirm that the highest peaks of AgO/AgNPs distribution were between 95 and 310 nm."
+    },
+    {
+     "property": "hydrodynamic_size_second_population",
+     "value_text": "second population at about 2000–3000 nm on the r.nm axis, not mentioned in the text",
+     "from_figure": "Fig. 13",
+     "measured_by": "dls_1",
+     "quote": "Figure 13 Size Distribution of Ag/AgONPs by (A) Intensity and (B) Volume. At Temperature 25 °C and Duration 60 s."
+    },
+    {
+     "property": "biological_sperm_motility_negative_control",
+     "value_num": 88.5,
+     "unit": "%",
+     "value_text": "A88.5 ± 3.11",
+     "measured_by": "bio_1",
+     "quote": "Neg. control | A88.5 ± 3.11 | D12.25 ± 2.22 | B14.5 ± 3 | A28 ± 2.94"
+    },
+    {
+     "property": "biological_sperm_dead_negative_control",
+     "value_num": 12.25,
+     "unit": "%",
+     "value_text": "D12.25 ± 2.22",
+     "measured_by": "bio_1",
+     "quote": "Neg. control | A88.5 ± 3.11 | D12.25 ± 2.22 | B14.5 ± 3 | A28 ± 2.94"
+    },
+    {
+     "property": "biological_sperm_abnormalities_negative_control",
+     "value_num": 14.5,
+     "unit": "%",
+     "value_text": "B14.5 ± 3",
+     "measured_by": "bio_1",
+     "quote": "Neg. control | A88.5 ± 3.11 | D12.25 ± 2.22 | B14.5 ± 3 | A28 ± 2.94"
+    },
+    {
+     "property": "biological_sperm_count_negative_control",
+     "value_num": 28,
+     "unit": "× 10^7",
+     "value_text": "A28 ± 2.94",
+     "measured_by": "bio_1",
+     "quote": "Neg. control | A88.5 ± 3.11 | D12.25 ± 2.22 | B14.5 ± 3 | A28 ± 2.94"
+    },
+    {
+     "property": "biological_sperm_motility_STZ",
+     "value_num": 61.75,
+     "unit": "%",
+     "value_text": "D61.75 ± 3.59",
+     "measured_by": "bio_1",
+     "quote": "STZ | D61.75 ± 3.59 | A38.75 ± 5.19 | A25.75 ± 3.86 | C17.25 ± 1.708"
+    },
+    {
+     "property": "biological_sperm_dead_STZ",
+     "value_num": 38.75,
+     "unit": "%",
+     "value_text": "A38.75 ± 5.19",
+     "measured_by": "bio_1",
+     "quote": "STZ | D61.75 ± 3.59 | A38.75 ± 5.19 | A25.75 ± 3.86 | C17.25 ± 1.708"
+    },
+    {
+     "property": "biological_sperm_abnormalities_STZ",
+     "value_num": 25.75,
+     "unit": "%",
+     "value_text": "A25.75 ± 3.86",
+     "measured_by": "bio_1",
+     "quote": "STZ | D61.75 ± 3.59 | A38.75 ± 5.19 | A25.75 ± 3.86 | C17.25 ± 1.708"
+    },
+    {
+     "property": "biological_sperm_count_STZ",
+     "value_num": 17.25,
+     "unit": "× 10^7",
+     "value_text": "C17.25 ± 1.708",
+     "measured_by": "bio_1",
+     "quote": "STZ | D61.75 ± 3.59 | A38.75 ± 5.19 | A25.75 ± 3.86 | C17.25 ± 1.708"
+    },
+    {
+     "property": "biological_sperm_motility_STZ_metformin",
+     "value_num": 80,
+     "unit": "%",
+     "value_text": "B80 ± 4.08",
+     "measured_by": "bio_1",
+     "quote": "STZ + Medformin | B80 ± 4.08 | BC23 ± 3.65 | AB20 ± 1.826 | C19.75 ± 2.22"
+    },
+    {
+     "property": "biological_sperm_dead_STZ_metformin",
+     "value_num": 23,
+     "unit": "%",
+     "value_text": "BC23 ± 3.65",
+     "measured_by": "bio_1",
+     "quote": "STZ + Medformin | B80 ± 4.08 | BC23 ± 3.65 | AB20 ± 1.826 | C19.75 ± 2.22"
+    },
+    {
+     "property": "biological_sperm_abnormalities_STZ_metformin",
+     "value_num": 20,
+     "unit": "%",
+     "value_text": "AB20 ± 1.826",
+     "measured_by": "bio_1",
+     "quote": "STZ + Medformin | B80 ± 4.08 | BC23 ± 3.65 | AB20 ± 1.826 | C19.75 ± 2.22"
+    },
+    {
+     "property": "biological_sperm_count_STZ_metformin",
+     "value_num": 19.75,
+     "unit": "× 10^7",
+     "value_text": "C19.75 ± 2.22",
+     "measured_by": "bio_1",
+     "quote": "STZ + Medformin | B80 ± 4.08 | BC23 ± 3.65 | AB20 ± 1.826 | C19.75 ± 2.22"
+    },
+    {
+     "property": "biological_sperm_motility_STZ_Ag",
+     "value_num": 72,
+     "unit": "%",
+     "value_text": "C72 ± 6.06",
+     "measured_by": "bio_1",
+     "quote": "STZ + Ag | C72 ± 6.06 | B25.5 ± 3.87 | A22.25 ± 2.5 | C20.5 ± 2.08"
+    },
+    {
+     "property": "biological_sperm_dead_STZ_Ag",
+     "value_num": 25.5,
+     "unit": "%",
+     "value_text": "B25.5 ± 3.87",
+     "measured_by": "bio_1",
+     "quote": "STZ + Ag | C72 ± 6.06 | B25.5 ± 3.87 | A22.25 ± 2.5 | C20.5 ± 2.08"
+    },
+    {
+     "property": "biological_sperm_abnormalities_STZ_Ag",
+     "value_num": 22.25,
+     "unit": "%",
+     "value_text": "A22.25 ± 2.5",
+     "measured_by": "bio_1",
+     "quote": "STZ + Ag | C72 ± 6.06 | B25.5 ± 3.87 | A22.25 ± 2.5 | C20.5 ± 2.08"
+    },
+    {
+     "property": "biological_sperm_count_STZ_Ag",
+     "value_num": 20.5,
+     "unit": "× 10^7",
+     "value_text": "C20.5 ± 2.08",
+     "measured_by": "bio_1",
+     "quote": "STZ + Ag | C72 ± 6.06 | B25.5 ± 3.87 | A22.25 ± 2.5 | C20.5 ± 2.08"
+    },
+    {
+     "property": "biological_sperm_motility_STZ_AgNPs",
+     "value_num": 85,
+     "unit": "%",
+     "value_text": "AB85 ± 4.08",
+     "measured_by": "bio_1",
+     "quote": "STZ + Ag-NPs | AB85 ± 4.08 | C19.5 ± 2.65 | B14.25 ± 6.4 | B24 ± 1.826"
+    },
+    {
+     "property": "biological_sperm_dead_STZ_AgNPs",
+     "value_num": 19.5,
+     "unit": "%",
+     "value_text": "C19.5 ± 2.65",
+     "measured_by": "bio_1",
+     "quote": "STZ + Ag-NPs | AB85 ± 4.08 | C19.5 ± 2.65 | B14.25 ± 6.4 | B24 ± 1.826"
+    },
+    {
+     "property": "biological_sperm_abnormalities_STZ_AgNPs",
+     "value_num": 14.25,
+     "unit": "%",
+     "value_text": "B14.25 ± 6.4",
+     "measured_by": "bio_1",
+     "quote": "STZ + Ag-NPs | AB85 ± 4.08 | C19.5 ± 2.65 | B14.25 ± 6.4 | B24 ± 1.826"
+    },
+    {
+     "property": "biological_sperm_count_STZ_AgNPs",
+     "value_num": 24,
+     "unit": "× 10^7",
+     "value_text": "B24 ± 1.826",
+     "measured_by": "bio_1",
+     "quote": "STZ + Ag-NPs | AB85 ± 4.08 | C19.5 ± 2.65 | B14.25 ± 6.4 | B24 ± 1.826"
+    },
+    {
+     "property": "statistic_LSD_sperm_motility",
+     "value_num": 6.484686,
+     "quote": "LSD | 6.484686 | 5.522128 | 5.812593 | 3.31266"
+    },
+    {
+     "property": "statistic_p_value_sperm_motility",
+     "value_num": 0.0002,
+     "quote": "P-value | 0.0002 | 0.00005 | 0.003 | 0.00012"
+    },
+    {
+     "property": "statistic_LSD_sperm_dead",
+     "value_num": 5.522128,
+     "quote": "LSD | 6.484686 | 5.522128 | 5.812593 | 3.31266"
+    },
+    {
+     "property": "statistic_p_value_sperm_dead",
+     "value_text": "0.00005",
+     "quote": "P-value | 0.0002 | 0.00005 | 0.003 | 0.00012"
+    },
+    {
+     "property": "statistic_LSD_sperm_abnormalities",
+     "value_num": 5.812593,
+     "quote": "LSD | 6.484686 | 5.522128 | 5.812593 | 3.31266"
+    },
+    {
+     "property": "statistic_p_value_sperm_abnormalities",
+     "value_num": 0.003,
+     "quote": "P-value | 0.0002 | 0.00005 | 0.003 | 0.00012"
+    },
+    {
+     "property": "statistic_LSD_sperm_count",
+     "value_num": 3.31266,
+     "quote": "LSD | 6.484686 | 5.522128 | 5.812593 | 3.31266"
+    },
+    {
+     "property": "statistic_p_value_sperm_count",
+     "value_num": 0.00012,
+     "quote": "P-value | 0.0002 | 0.00005 | 0.003 | 0.00012"
+    },
+    {
+     "property": "biological_sperm_motility_significance",
+     "value_text": "motility and vitality increased significantly (P ≤ 0.05) for the silver nanoparticle group vs the negative control",
+     "measured_by": "bio_1",
+     "quote": "where the motility and vitality increased significantly \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\left( {P \\le 0.05} \\right)$$\\end{document}P≤0.05 for the group treated with silver nanoparticles when compared to the negative control."
+    }
+   ],
+   "missing_fields": [
+    "yield",
+    "film_thickness",
+    "group_sizes_animals",
+    "scan_parameters_xrd"
+   ]
+  }
+ ],
+ "comparisons": [
+  {
+   "material": "silver (usual value)",
+   "property": "refractive_index",
+   "value_num": 0.135,
+   "conditions": null,
+   "quote": "This is close to the usual value of silver \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\left( {0.135} \\right)$$\\end{document}0.135"
+  }
+ ],
+ "annotations": [
+  {
+   "type": "resume",
+   "route": null,
+   "text": "L'article prépare des nanoparticules d'argent/oxyde d'argent (Ag/AgO) par synthèse verte : un extrait aqueux d'ail frais réduit une solution de nitrate d'argent à 80 °C. Le matériau est caractérisé par DRX, MEB, EDS, MET, AFM, UV-visible, potentiel zêta et DLS, puis testé chez des souris mâles diabétiques (streptozotocine) pour voir son effet sur la mobilité, la vitalité et le nombre des spermatozoïdes, comparé à la metformine."
+  },
+  {
+   "type": "objectif_etude",
+   "route": null,
+   "text": "Les auteurs cherchent à produire de façon simple et peu coûteuse des nanoparticules d'argent d'origine végétale, à les caractériser (optique, structure, taille, stabilité) et à savoir si elles protègent les spermatozoïdes des dégâts du diabète, en traitement long (35 jours), plus efficacement que la metformine."
+  },
+  {
+   "type": "pourquoi_ces_donnees",
+   "route": null,
+   "text": "Une seule voie de synthèse est décrite : aucun paramètre n'est balayé (pas de série en température, durée ou concentration). Les comparaisons de l'article portent sur le traitement biologique : témoin négatif, souris diabétiques non traitées, metformine, argent et nanoparticules d'argent, pour situer l'effet du matériau."
+  },
+  {
+   "type": "mecanisme_auteurs",
+   "route": "AgNPs-garlic",
+   "text": "Les auteurs attribuent la formation des nanoparticules à la réduction des ions Ag+ par les composés de l'extrait d'ail, qui joue aussi le rôle de stabilisant.",
+   "quote": "to ensure the reduction of silver Ag + ions to AgO using garlic extracts as a reducing agent"
+  },
+  {
+   "type": "mecanisme_analyse",
+   "route": "AgNPs-garlic",
+   "text": "Probablement, les composés soufrés (allicine et dérivés) et les polyphénols de l'extrait réduisent Ag+ en Ag(0) à 80 °C ; ces mêmes molécules s'adsorbent à la surface et stabilisent les particules (potentiel zêta négatif). La présence d'AgO dans la DRX suggère une oxydation partielle de surface à l'air ou pendant le séchage à 85 °C. La concentration élevée en nitrate d'argent (2 g dans 25 mL avant mélange, soit environ 0,47 M, ≈ 0,24 M après ajout de l'extrait) favorise vraisemblablement des particules grosses (50–350 nm) et agrégées."
+  },
+  {
+   "type": "securite_analyse",
+   "route": "AgNPs-garlic",
+   "text": "Le nitrate d'argent est oxydant, corrosif et tache la peau ; ses déchets sont très toxiques pour le milieu aquatique et les nanoparticules d'argent ne doivent pas être rejetées à l'évacuation. L'extraction à 100 °C et le séchage en étuve demandent des précautions contre les brûlures ; l'éthanol de lavage est inflammable ; la streptozotocine (utilisée pour les souris) est cancérogène et mutagène. L'article ne décrit aucune précaution chimique et ne donne que l'approbation éthique de l'expérimentation animale."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "AgNPs-garlic",
+   "text": "Chez les souris diabétiques, le traitement par nanoparticules d'argent ramène la mobilité (85 %) et la vitalité près du témoin négatif (88,5 % de mobilité, 12,25 % de spermatozoïdes morts contre 19,5 %), mieux que la metformine (80 % de mobilité) et que l'argent seul (72 %).",
+   "quote": "where the motility and vitality increased significantly \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\left( {P \\le 0.05} \\right)$$\\end{document}P≤0.05 for the group treated with silver nanoparticles when compared to the negative control."
+  },
+  {
+   "type": "tendance_observee",
+   "route": "AgNPs-garlic",
+   "text": "Les auteurs déduisent de la courbe de conductivité optique que la conductivité augmente avec la fréquence des photons.",
+   "quote": "The results confirm that the conductivity increases with increasing frequency due to the high energy of the photons, causing the electrons to vibrate in the energy levels."
+  },
+  {
+   "type": "conclusion_auteurs",
+   "route": null,
+   "text": "Les auteurs concluent que le protocole est simple, efficace et peu coûteux, que les particules de 50–350 nm sont cristallines, sphériques et stables, et qu'elles protègent mieux les spermatozoïdes du diabète que la metformine.",
+   "quote": "In this study, silver nanoparticles were successfully generated using a simple, efficient and inexpensive protocol from fresh garlic plant as reducing agent"
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-garlic",
+   "text": "Pour refaire le matériau il manque : le rendement, la pureté du nitrate d'argent, la vitesse et la durée de centrifugation de la synthèse, le nombre de lavages et le volume de solvant, la température de vieillissement, la température et la vitesse d'agitation de l'étape 2, la concentration de l'extrait (15 g de poudre dans 500 mL, aucune standardisation de ses composés). Les réglages de la DRX (plage 2θ, pas, rayonnement exact), du MEB, du MET (tension, nombre de particules comptées) et de l'AFM (mode) ne sont pas donnés. Aucune annexe n'est citée."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-garlic",
+   "text": "Plusieurs résultats sont incohérents ou mal définis dans l'article, rapportés tels qu'écrits : indice de réfraction 0,113–0,116 (inférieur à 1, et décrit comme proche de 0,135 pour l'argent), « gap » direct de 3,39 eV pour un film de nanoparticules métalliques dont le pic plasmon est à 420 nm, coefficient d'absorption calculé sans épaisseur (d) donnée, courbes d'Urbach et de Tauc attribuées à un « film mince » d'Ag dont la préparation n'est pas décrite, indexation de pics (34,74° indexé (220) de l'argent), constante de Scherrer K = 0,94 (Méthodes) contre 0,9 (Résultats)."
+  },
+  {
+   "type": "limite_reproductibilite",
+   "route": "AgNPs-garlic",
+   "text": "Essai biologique : le nombre de souris par groupe n'est pas donné (30 souris au total, cinq groupes), la durée du traitement par les nanoparticules est de 35 jours dans le résumé et l'introduction mais la metformine est donnée pendant 28 jours, la dose de l'argent non nano n'est pas indiquée, et la légende des lettres A–D du Tableau 2 est absente."
+  }
+ ],
+ "method_sources": [
+  {
+   "route": "AgNPs-garlic",
+   "ref_id": "CR24",
+   "role": "protocole_adapte",
+   "quote": "The preparation was carried out according to, with some modification."
+  },
+  {
+   "route": "AgNPs-garlic",
+   "ref_id": "CR25",
+   "role": "protocole_adapte",
+   "quote": "The preparation was carried out according to, with some modification."
+  }
+ ],
+ "doubts": [
+  {
+   "where": "AgNPs-garlic xrd_1 crystallite_size_method",
+   "issue": "Constante de Scherrer K = 0,94 dans les Méthodes mais « 0.9 » dans l'équation des Résultats ; les deux sont extraites comme réglages séparés, sans trancher."
+  },
+  {
+   "where": "AgNPs-garlic biological test",
+   "issue": "Durée du traitement : « 35 consecutive days » (résumé, introduction) pour les nanoparticules, mais 28 jours pour la metformine dans les Méthodes ; la durée pour le groupe Ag-NPs n'est pas donnée dans les Méthodes. La valeur de 35 jours (introduction) est extraite."
+  },
+  {
+   "where": "AgNPs-garlic biological test",
+   "issue": "Le texte parle de « sex groups » puis décrit cinq groupes pour trente souris ; l'effectif par groupe n'est pas donné et la dose du groupe « Silver » (argent non nano) est absente."
+  },
+  {
+   "where": "AgNPs-garlic Table 2",
+   "issue": "Les lettres A–D qui précèdent les valeurs (A88.5, D12.25…) ne sont pas expliquées ; recopiées dans value_text. L'exposant de « Count (× 107) » est aplati dans le texte (10^7), l'unité est notée × 10^7."
+  },
+  {
+   "where": "AgNPs-garlic Table 1 / texte XRD",
+   "issue": "Le pic à 34,74° est indexé (220) de l'argent alors que (220) de Ag cubique se trouve vers 64°, et (220)* à 54,72° est attribué à AgO ; indexation recopiée du tableau sans correction. Table 1 ne contient que 8 pics sur 9 lignes dont une moyenne ; positions du texte (27.9°, 32.2°) arrondies par rapport au tableau (27.96, 32.28), tableau retenu."
+  },
+  {
+   "where": "AgNPs-garlic uvvis_1 (Urbach, Tauc, coefficient d'absorption)",
+   "issue": "Ces résultats sont calculés sur un « Ag nanoparticles thin film sample » dont la préparation et l'épaisseur d (nécessaire à α) ne sont pas décrites ; interprétés comme la même poudre Ag/AgO, rattachés à la voie AgNPs-garlic. L'épaisseur est déclarée non citée (film_thickness)."
+  },
+  {
+   "where": "AgNPs-garlic refractive_index",
+   "issue": "Indice 0,113–0,116 (inférieur à 1) comparé à « la valeur usuelle de l'argent (0.135) » : valeur recopiée telle quelle, la valeur de comparaison est dans comparisons."
+  },
+  {
+   "where": "AgNPs-garlic eds_1",
+   "issue": "Figure 3 (lue) : seuls O et Ag sont étiquetés, le pic dominant à environ 1,4 keV n'est ni étiqueté ni discuté, aucune composition chiffrée ; l'EDS est décrit dans le texte comme un « pic d'absorption à 3 keV » attribué à la résonance plasmon, formulation confuse recopiée telle quelle."
+  },
+  {
+   "where": "AgNPs-garlic couleur",
+   "issue": "Méthodes : la solution devient noire ; résumé : orange transparent puis brun noirâtre ; deux résultats visual_appearance gardés."
+  },
+  {
+   "where": "Figure 2",
+   "issue": "Texte : Fig. 2b (100 nm), légende : (b) 300 nm ; barre d'échelle non retenue."
+  },
+  {
+   "where": "AgNPs-garlic MEB (Methods)",
+   "issue": "La description du MEB mélange des éléments de la microscopie en transmission (« radiation passing through the sample ») et une grille « platinum mesh coated with palladium » ; recopiée comme préparation d'échantillon sans interprétation."
+  },
+  {
+   "where": "Figures lues",
+   "issue": "Figures 3, 4c, 12 et 13 ouvertes. Fig. 4c : barre la plus haute 150–200 nm (11 comptes sur environ 32 particules comptées, histogramme à 6 classes de 50 nm, précision de lecture ±1 compte). Fig. 13 : deuxième population vers 2000–3000 nm (axe r.nm) non mentionnée dans le texte. Fig. 12 : distribution de potentiel zêta de −50 à +20 mV, sans valeur lisible en plus du texte. Les autres figures (1, 2, 5–11, 14, 15) n'apportent pas de valeur absente du texte (images ou courbes décrites par leur valeur chiffrée dans le texte)."
+  }
+ ]
+}
