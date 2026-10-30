@@ -463,7 +463,7 @@ def main():
     # blocs de README
     for f, code, intro in (("README.md", "en", ""), ("README.fr.md", "fr", "")):
         s = open(f, encoding="utf-8").read()
-        title = "Analysis" if code == "en" else "Analyse de la base"
+        title = "Analysis" if code == "en" else "7. Ce que contient la base : les résultats"
         block = f'<!-- SITE:analysis:begin -->\n<a id="analysis"></a>\n\n## {title}\n\n' + md[code] + '\n<!-- SITE:analysis:end -->'
         if "<!-- SITE:analysis:begin -->" in s: s = re.sub(r"<!-- SITE:analysis:begin -->[\s\S]*?<!-- SITE:analysis:end -->", lambda m: block, s)
         else: print(f"! marqueur SITE:analysis absent de {f} : bloc non inséré")

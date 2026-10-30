@@ -2,6 +2,9 @@
 
 Un palier = 50 publications closes et auditées. Sources : `audits/palier_00N_relecture.md`, `state.py status`, `synthese.db` (lecture seule). État au 28 octobre 2026 : cible de 500 publications atteinte.
 
+## Méthodologie v1 restructurée (30 octobre 2026)
+Hors palier. `README.fr.md` réorganisé à la demande de l'utilisateur : Europe PMC présentée (opérateur, financeurs, volume, activité, qui y publie) ; conversion des articles (texte, tableaux, figures, annexes, références) et pourquoi ; pipeline expliqué en clair puis en détail, avec un nouveau schéma des consignes et règles strictes par agent (`docs/img/accueil/pipeline_detail_*`) ; choix des modèles ; critères de validité d'une extraction ; nettoyage de la base (vocabulaire canonique, méthodes fusionnées) ; résultats sans comparaison entre paliers ; critique des résultats (besoin d'une grille stricte par méthode et par caractérisation) ; intérêt du travail et v2 ; limites mesurées (nombres manquants, paramètres non cités, ré-extraction à l'aveugle).
+
 ## Page d'accueil visuelle (28 octobre 2026)
 Hors palier. README.md et README.fr.md s'ouvrent sur des images : schéma du pipeline, huit chiffres clés, modèle de données, exemple dessiné (PMC6199062, Sb₂S₃ à 120, 150 et 180 °C, valeurs lues dans l'extraction) et grille de neuf graphiques à légende courte ; détail de l'analyse en sections repliables. Chaque image existe en clair et en sombre (`<picture>`). Chiffres clés (demande de l'utilisateur) : publications étudiées, voies extraites, matériaux différents (couples composition-phase), méthodes, part de paramètres communs par méthode et de propriétés communes par famille (Jaccard), prix API de l'extraction sur l'historique complet des jetons ; calculés par `analyses/chiffres_accueil.py` (base en lecture seule). Tout est régénéré par `python3 -I analyses/build_site.py`, qui appelle le nouveau `analyses/build_visuels.py` (sorties `docs/img/accueil/`, variantes `docs/img/*_dark.svg`).
 

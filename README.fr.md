@@ -1,6 +1,6 @@
-<p align="center"><a href="README.md">English</a> · <b>Français</b> · <a href="#résumé">Résumé</a> · <a href="#analysis">Analyse</a> · <a href="#1-objectif-et-question-de-départ">Méthodologie</a></p>
+<p align="center"><a href="README.md">English</a> · <b>Français</b> · <a href="#résumé">Résumé</a> · <a href="#analysis">Résultats</a> · <a href="#1-pourquoi-cette-base">Méthodologie</a></p>
 
-# Base de voies de synthèse de matériaux — méthodologie d'extraction et de vérification par pipeline multi-agent
+# Base de voies de synthèse de matériaux — méthodologie d'extraction et de vérification par pipeline multi-agent (v1)
 
 <!-- SITE:visual:begin -->
 <p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/pipeline_fr_dark.svg"><img src="docs/img/accueil/pipeline_fr_light.svg" alt="Pipeline multi-agent : article, extraction, contrôle, deux critiques, correction, audit, base" width="100%"></picture></p>
@@ -31,9 +31,9 @@ Une **voie de base** décrit un protocole complet ; chaque **branche** est une v
 
 <!-- SITE:visual:end -->
 
-`synthese.db` (SQLite) rassemble des voies de synthèse de matériaux extraites d'articles en accès libre, où **chaque valeur porte la citation mot pour mot de l'article** qui la fonde, sa position dans le texte, et l'état de ce que l'article ne dit pas. Ce document décrit, à la manière d'une section « Matériel et méthodes », comment la base est construite, comment chaque valeur est vérifiée, ce que les contrôles mesurent, et dans quel sens, scientifiquement, on peut considérer son contenu comme juste.
+`synthese.db` (SQLite) rassemble des voies de synthèse de matériaux extraites d'articles en accès libre. **Chaque valeur porte la citation mot pour mot de l'article** qui la fonde, sa position dans le texte, et ce que l'article ne dit pas est noté. Ce document décrit la **version 1** de la base, à la manière d'une section « Matériel et méthodes » : d'où viennent les articles, comment ils sont transformés en données, comment fonctionne le pipeline d'agents, quand une extraction est jugée bonne, ce que contient la base, ce qui lui manque, et la suite prévue (v2).
 
-État au 28 octobre 2026 : **500 publications closes et auditées** (dix paliers de 50, cible atteinte), 5 338 voies (1 382 voies de base, 3 956 branches), 39 350 résultats mesurés (`synthese.db`, requêtes en lecture seule) ; 95 053 citations vérifiées mot pour mot (100 %) sur les dix paliers ; rapports `audits/palier_00N_relecture.md` (N = 1 à 10) et `audits/palier_010_relecture.md` pour le dernier. Les mesures détaillées des sections 6.1 à 6.2 portent sur les paliers 1 à 4 ; les paliers 5 à 10 sont résumés en 6.3 et 6.4. Deux audits postérieurs à la cible décrivent le contenu (`audits/audit_contenu.md`) et vérifient la base (`audits/audit_verification.md`) : voir la section « Analyse de la base » ci-dessous.
+État au 30 octobre 2026 : 500 publications closes et auditées (dix paliers de 50). Les chiffres viennent de `synthese.db` (requêtes en lecture seule) et des rapports `audits/`.
 
 ---
 
@@ -41,20 +41,307 @@ Une **voie de base** décrit un protocole complet ; chaque **branche** est une v
 
 **Objectif.** Permettre à un chimiste de refaire un matériau à partir de la base seule, et de voir comment chaque variation de synthèse testée par les auteurs change le résultat.
 
-**Méthode.** Un corpus d'articles ouverts (Europe PMC, licences Creative Commons) est transformé en voies de synthèse structurées par un pipeline de cinq passes exécutées par des agents de langage à rôles séparés : extraction, contrôle automatique et chargement, critique de fidélité par un second lecteur indépendant, critique scientifique sourcée, application des corrections. Tous les 50 articles, un audit recontrôle chaque citation, applique des tests physico-chimiques, relit à la main un échantillon de valeurs, recalcule la stœchiométrie de cinq voies, compare les synthèses d'un même matériau entre publications et vérifie des sources citées.
+**Matériel.** 500 articles originaux en texte intégral et en accès libre (licences Creative Commons), tirés d'Europe PMC, base publique de littérature scientifique : 69 revues, publiés de 2009 à 2026.
 
-**Principes.** Aucune valeur sans citation exacte ; rien d'inventé, déduit ou converti à la place des auteurs ; toutes les variations comparées par les auteurs capturées, y compris les échecs ; les incohérences des auteurs conservées et signalées, jamais réparées ; les interprétations séparées des données ; une erreur vue deux fois devient une règle écrite.
+**Méthode.** Chaque article passe par un pipeline de six étapes confiées à des agents de langage aux rôles séparés : extraction, contrôle automatique des citations, relecture, deux critiques indépendantes (fidélité au texte, plausibilité scientifique), correction, puis un audit tous les 50 articles. Aucun agent ne contrôle son propre travail, et le texte de l'article tranche tout désaccord.
 
-**Résultats.** Sur 200 publications : 100 % des 37 478 citations retrouvées mot pour mot dans les textes ; 42 publications relues valeur par valeur (3 593 valeurs, 10 erreurs, toutes dans les 10 premières publications de calibrage ; 1 erreur sur 3 032 valeurs ensuite, soit 0,03 %, borne supérieure à 95 % ≈ 0,16 %) ; 1 770 constats du critique de fidélité dont 48 « faux », aucun d'eux n'étant, depuis le palier 2, un nombre mal recopié du texte ; 1 166 voies jugées par la critique scientifique (434 cohérentes, 604 douteuses, 46 incohérentes, 82 invérifiables), les problèmes venant des articles et non des extractions.
+**Résultats.** 5 338 voies de synthèse (1 382 voies de base, 3 956 branches), 2 387 matériaux différents, 28 classes de méthodes. 95 053 citations vérifiées mot pour mot (100 %) ; 11 285 valeurs relues à la main, dont 16 fausses, toutes corrigées ; une ré-extraction à l'aveugle de 20 publications retrouve 91,5 % des paramètres sans aucun conflit sur les valeurs.
 
-**Portée.** La base garantit la fidélité à la source et rend explicite ce qui manque pour reproduire ; elle ne garantit pas qu'un protocole publié fonctionne. Cette limite est inscrite dans sa structure.
+**Limites.** La base est fidèle mais hétérogène : deux voies d'une même méthode n'ont en moyenne que 39 % de paramètres en commun, deux voies d'une même famille 14 % de propriétés en commun. Les conditions de caractérisation sont souvent absentes et la grille de vérification de la v1 est trop courte.
+
+**Suite (v2).** Grille stricte de paramètres par méthode et par caractérisation, vocabulaire adaptatif appliqué dès l'extraction.
 
 ---
+
+## 1. Pourquoi cette base
+
+La littérature de synthèse des matériaux est abondante mais peu réutilisable. Les conditions sont dispersées entre Méthodes, Résultats, tableaux, légendes et annexes. Les séries d'échantillons comparées sont décrites par des phrases du type « the same procedure was repeated at 150 and 180 °C ». Les manques (quantité d'un réactif, atmosphère d'un recuit) ne sont pas signalés. Un chimiste qui veut refaire un matériau doit relire l'article entier et deviner le reste.
+
+La base répond à deux questions pour chaque article :
+
+1. **Que dit exactement l'article** pour chaque réactif, chaque étape, chaque paramètre, chaque résultat, et pour chaque variante comparée ?
+2. **Que ne dit-il pas**, et qu'est-ce qui, dans ce qu'il dit, est incohérent ou douteux pour un lecteur formé ?
+
+Cible de la v1 : 500 publications, traitées par paliers de 50 publications audités.
+
+## 2. D'où viennent les articles : Europe PMC
+
+### 2.1 Une base publique de littérature scientifique
+
+[Europe PMC](https://europepmc.org) est un dépôt public et gratuit de littérature en sciences de la vie et disciplines voisines : articles, prépublications, livres, thèses.
+
+| | |
+|---|---|
+| Qui l'opère | l'Institut européen de bioinformatique (EMBL-EBI, Hinxton, Royaume-Uni), en partenariat avec PubMed Central de la National Library of Medicine (États-Unis), dans le réseau PubMed Central International |
+| Depuis quand | 2007 (issue de UK PubMed Central et de CiteXplore) |
+| Qui la finance | le groupe des financeurs d'Europe PMC (36 organismes de recherche européens, dont le Wellcome Trust et le Conseil européen de la recherche), qui en font le dépôt obligatoire des publications qu'ils financent ; ressource reconnue « Core Data Resource » par ELIXIR |
+| Volume | plus de 46 millions de résumés ; environ 12,4 millions d'articles en texte intégral, dont environ 8,4 millions dans le sous-ensemble en accès libre (chiffres du site, octobre 2026) |
+| Activité | sous-ensemble en accès libre mis à jour chaque semaine ; la part des articles librement accessibles croît chaque année (près de 58 % des articles de 2025, contre moins de 10 % pour 2005) ; plus de 32 millions d'adresses IP distinctes l'ont consultée en 2023 |
+
+**Qui y publie.** Personne ne publie directement dans Europe PMC. Les éditeurs y déposent le texte intégral de leurs revues (via PubMed Central), les auteurs y déposent leur manuscrit accepté quand leur financeur l'exige, et des serveurs de prépublications y sont indexés. La chimie des matériaux y entre surtout par des revues multidisciplinaires en accès libre. Dans notre corpus : RSC Advances (77 publications), Scientific Reports (63), Nanomaterials (49), Materials (48), Molecules (27), Nanoscale Research Letters (24), ACS Omega (20).
+
+**Pourquoi cette base.** Elle donne le texte intégral en XML structuré (format JATS : sections, tableaux, légendes, bibliographie), la licence de chaque article, et une interface de programmation gratuite. Sa contrepartie : une orientation biomédicale (§ 14.4).
+
+### 2.2 Sélection des articles
+
+- **Filtre** ajouté à chaque requête (`fetch.py`) : `OPEN_ACCESS:y AND IN_EPMC:y AND HAS_FT:y NOT PUB_TYPE:review`, soit des articles originaux, en texte intégral, en accès libre.
+- **Requêtes** : une par famille de matériaux (`queries.txt` : MOF et ZIF, nanoparticules métalliques, oxydes, pérovskites, zéolithes et silices mésoporeuses, chalcogénures et phosphures, carbones, matériaux d'électrode, céramiques, matériaux 2D, points quantiques). Elles visent les articles qui **comparent des conditions de synthèse** (« effect of », « optimization », « synthesis conditions »), car ce sont eux qui portent des branches.
+- **Licences** : seules les licences Creative Commons sont retenues. Sur les 500 publications : 366 CC BY, 88 CC BY-NC, 45 CC BY-NC-ND, 1 CC BY-NC-SA. Le texte de `corpus/` reste sous la licence de chaque article ; toute réutilisation doit la respecter.
+- **Rejets** : un article sans synthèse exploitable (hors sujet, simulation, protocole entièrement renvoyé ailleurs) est écarté à l'extraction, avec sa raison écrite (13 rejets sur 513 articles traités).
+
+### 2.3 Statut des articles : des données, pas des instructions
+
+Articles, annexes et pages web sont des **données non fiables**. Ils sont lus par des bibliothèques, jamais exécutés ; Python est lancé en mode isolé (`-I`) ; chaque agent a pour consigne de ne suivre aucune instruction que ces textes contiendraient. Un article ne doit pas pouvoir influencer la façon dont on le lit.
+
+## 3. Comment un article devient des données
+
+### 3.1 Convertir l'article : pourquoi et comment
+
+**Pourquoi convertir.** La règle centrale de la base est qu'une valeur n'existe que si sa citation est retrouvée **à l'identique** dans l'article. Pour que ce contrôle soit mécanique, l'agent qui lit et le script qui vérifie doivent avoir sous les yeux **le même document, en texte plat**, où chaque passage a une position fixe. Le PDF perd la structure (colonnes, tableaux, exposants) ; le XML JATS la garde. Chaque type de contenu est donc converti selon son rôle :
+
+| Contenu de l'article | Conversion | Outil | Pourquoi |
+|---|---|---|---|
+| **Texte** (sections) | XML JATS → texte plat découpé par sections | `sections.py` → `corpus/text/<PMCID>.txt` | document de référence unique : toutes les citations et positions (`char_start`, `char_end`) s'y rapportent |
+| **Tableaux** | une rangée par ligne, cellules séparées par ` \| ` | `sections.py` | une citation = une rangée = un échantillon ; la rangée est attribuée par le nom de l'échantillon, jamais par sa position |
+| **Légendes, notes de tableau** | ajoutées en fin de fichier | `enrich.py` | les légendes portent souvent les conditions de mesure et le nom des échantillons |
+| **Annexes** (Supporting Information) | texte extrait des PDF et Word du dépôt PMC, ajouté en fin de fichier | `enrich.py` | les quantités exactes et les séries d'échantillons y sont souvent ; 68 publications citent une annexe absente du dépôt (§ 14.4) |
+| **Figures** (images) | téléchargées telles quelles | `enrich.py figs` → `corpus/fig/<PMCID>/` | lues par l'agent seulement quand un résultat n'existe que sur l'image ; valeur marquée `from_figure`, citation = la légende (6 997 résultats sur 39 350) |
+| **Références** | texte avec renvois `[[id]]` et bibliographie | `enrich.py` → `corpus/refs/<PMCID>.txt` | un « prepared as described in [12] » devient une source de méthode dont l'identifiant est contrôlé contre la bibliographie |
+
+Les ajouts se font **toujours en fin de fichier**, pour ne décaler aucune citation déjà extraite (2 709 positions recontrôlées lors de l'audit du pipeline du 12 octobre). `enrich.py` est idempotent : relancé sur un article déjà enrichi, il produit le même fichier.
+
+### 3.2 Voies, branches, variations
+
+- Une **voie de base** décrit un protocole complet : matériau visé, méthode, réactifs, étapes ordonnées avec leurs paramètres et leur matériel, caractérisations, résultats, rendement.
+- Une **branche** est une variante comparée par les auteurs. Elle hérite des réactifs et des étapes de son parent et déclare **ce qui change et par rapport à quoi** (`route_variations` : valeur du parent, valeur de la branche, citation). Les vues SQL (`v_route_complete`, `v_branches`, `v_comparaison`) reconstituent le protocole complet de n'importe quelle branche.
+- Les **essais ratés** sont des branches comme les autres (`succeeded = false`).
+- Les **tests du matériau fini** (cyclage, cytotoxicité, dose de catalyseur) sont des résultats, pas des branches. Un post-traitement qui transforme le matériau est une voie `post_treatment` ; la fabrication d'une électrode, d'une cellule ou d'une LED est une voie `device`.
+
+Sur 500 publications : 1 382 voies de base, 3 956 branches, 5 594 variations, 7 714 réactifs, 9 546 étapes, 12 731 paramètres, 39 350 résultats, 9 083 caractérisations.
+
+### 3.3 Traçabilité de chaque valeur
+
+| Colonne | Contenu |
+|---|---|
+| `quote` | passage copié mot pour mot du texte plat (°, ·, −, indices compris), assez long pour être sans ambiguïté, une seule rangée pour un tableau |
+| `char_start`, `char_end` | position du passage dans `corpus/text/<PMCID>.txt` |
+| `value_num` + `unit` ou `value_text` | la valeur telle qu'écrite ; « room temperature », « overnight » restent du texte |
+| `value_si`, `unit_si` | conversion SI faite par `load.py`, dans une colonne séparée, jamais à la place de la valeur d'origine |
+| `from_figure` | pour une valeur lue sur une image : la figure et le panneau |
+
+Deux structures rendent **l'absence** explicite :
+
+- `not_stated` (28 631 cases sur les publications closes) : chaque information de la grille de reproductibilité (§ 4.2.1) est **soit extraite avec sa citation, soit déclarée non dite** après recherche dans tout l'article.
+- `doubts` (6 761) : chaque ambiguïté qui touche une donnée ou le découpage en branches, avec les lectures possibles et la lecture retenue, tranchée par l'orchestrateur.
+
+### 3.4 Données et interprétations
+
+Les **annotations** (10 582, en français, `source = 'claude'`) sont des interprétations séparées des données : résumé, objectif, conclusion des auteurs, comparaison des branches, mécanisme, sécurité, et **limite de reproductibilité** (4 558) : tout ce qu'un chimiste doit savoir avant de refaire la synthèse. Une annotation qui rapporte les auteurs exige une citation ; une annotation d'analyse n'en a pas, pour que les deux ne se confondent jamais.
+
+Les **sources de méthode** (1 052) listent les renvois bibliographiques nécessaires pour refaire une préparation (« according to », « as described in », « modified … method »).
+
+## 4. Le pipeline : qui fait quoi
+
+### 4.1 Le pipeline en clair
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/pipeline_fr_dark.svg"><img src="docs/img/accueil/pipeline_fr_light.svg" alt="Pipeline multi-agent : article, extraction, contrôle, deux critiques, correction, audit, base" width="100%"></picture></p>
+
+Le pipeline fonctionne comme un laboratoire d'analyse où chaque échantillon passe entre plusieurs mains :
+
+1. **Un lecteur extrait** l'article : il note chaque réactif, chaque étape, chaque résultat, avec la phrase de l'article qui le dit, et la liste de ce que l'article ne dit pas.
+2. **Une machine contrôle** que chaque phrase citée existe bien, à l'identique, dans l'article.
+3. **Un responsable relit** les points douteux, et une fiche sur cinq en entier.
+4. **Deux experts indépendants** relisent : l'un vérifie que rien n'a été mal recopié ou oublié, l'autre que la chimie décrite par les auteurs tient debout.
+5. **Un correcteur** applique les décisions du responsable.
+6. **Un audit** recontrôle tout le lot tous les 50 articles avant de passer au suivant.
+
+### 4.2 Le pipeline en détail : consignes et règles de vérification
+
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="docs/img/accueil/pipeline_detail_fr_dark.svg"><img src="docs/img/accueil/pipeline_detail_fr_light.svg" alt="Pipeline détaillé : consignes et règles de vérification par étape" width="100%"></picture></p>
+
+Chaque agent reçoit des consignes écrites et versionnées (`RUNBOOK.md`, `CRITIQUE.md`, `PLAUSIBILITE.md`, `PROMPT_CORRECTION.md`). Il écrit un **journal de décisions** (`journaux/<PMCID>_<passe>.md`, 10 à 30 lignes sur ses choix non évidents). Aucun agent n'est cru sur parole : l'orchestrateur relance lui-même les contrôles et ne lit que les produits (JSON, journal, rapport court).
+
+#### 4.2.1 Extracteur (`RUNBOOK.md`)
+
+Règles absolues :
+
+1. Chaque donnée porte sa citation exacte.
+2. Rien d'inventé, de déduit ou de converti ; une valeur absente reste absente et va dans `not_stated`.
+3. Toutes les variations comparées deviennent des branches, échecs compris ; Résultats et tableaux sont lus, car les séries y sont souvent définies.
+4. Dans le doute, ne pas trancher : écrire le doute et extraire la lecture la plus littérale.
+5. Pas de synthèse exploitable → rejet motivé.
+
+**Inventaire avant d'écrire.** Avant toute voie, l'extracteur liste **tous les échantillons nommés ou comparés** : où chacun est défini, ce qui le distingue, où sont ses résultats. Une rangée de tableau = un échantillon, attribuée par son nom ; avec « respectively », l'ordre est écrit avant toute attribution. Cette règle vient des trois erreurs les plus fréquentes du premier palier (valeur rangée sur le mauvais échantillon, étape héritée sans que l'article le dise, branche oubliée).
+
+**Liste de vérification de la v1 (grille de reproductibilité).** Pour chaque élément, chaque information attendue est soit extraite avec sa citation, soit déclarée « non dite » ; `load.py` refuse toute case ni remplie ni déclarée, ou les deux à la fois. C'est une liste courte, définie par **type d'étape** et non par méthode de synthèse :
+
+| Élément | Informations attendues |
+|---|---|
+| Voie de base | rendement |
+| Réactif (sauf lavage, gaz, substrat) | quantité, pureté, fournisseur |
+| Chauffage, réaction, reflux, vieillissement | température, durée |
+| Calcination, recuit, frittage, pyrolyse | température, durée, atmosphère, vitesse de chauffe |
+| Séchage | température, durée |
+| Agitation, mélange, ultrasons, dispersion | durée |
+| Centrifugation | vitesse, durée |
+| Lavage | solvant, nombre de lavages |
+| Ajustement du pH | pH |
+
+L'extracteur peut ajouter toute autre information manquante (vitesse d'agitation, refroidissement, taux de remplissage…), mais sans obligation : c'est la principale faiblesse de la v1 (§ 8).
+
+**Annexes, figures, références.** L'extracteur lit légendes, notes de tableau et annexes en entier. Une valeur qui n'existe que sur une figure est lue sur l'image (deux chiffres significatifs au plus) et marquée `from_figure`. Un protocole renvoyé à une autre publication devient une source de méthode, jamais une valeur complétée de mémoire.
+
+#### 4.2.2 Contrôle automatique (`load.py`)
+
+`load.py check` refuse l'extraction si une règle est violée ; `load.py load` ne charge qu'à zéro erreur. Ces contrôles sont des **invariants** : on ne les affaiblit jamais pour faire passer une extraction.
+
+| Famille | Règle stricte |
+|---|---|
+| Citation | présente, assez longue, **retrouvée telle quelle dans le texte plat** ; pour chaque nombre et chaque quantité de réactif, **le nombre apparaît dans sa citation** (1,5 / 1.5 / 1·5 reconnus), sauf valeur lue sur figure |
+| Structure | libellés uniques ; parents existants, sans cycle ; une branche déclare au moins une variation ; étapes numérotées sans trou |
+| Grille | chaque case de la liste v1 extraite ou déclarée, jamais les deux |
+| Valeurs | unité pour un nombre ; pH entre 0 et 14 ; durée positive ; température physiquement possible |
+| Annotations et sources | annotations obligatoires présentes ; citation exigée quand on rapporte les auteurs ; chaque renvoi existe dans la bibliographie |
+
+Un autotest vérifie que chaque cas fautif (citation altérée, nombre absent, branche sans variation, pH impossible, case oubliée) est bien refusé.
+
+#### 4.2.3 Relecture de l'orchestrateur
+
+- **Toujours** : chaque doute est tranché en relisant le passage, avec la résolution écrite ; la présence de toutes les branches est vérifiée en parcourant tableaux et Résultats, rangée par rangée.
+- **Relecture intégrale** (chaque valeur comparée à l'article : valeur, unité, étape, branche, citation) des 10 premières publications, puis d'**une publication sur cinq tirée par le hachage SHA-1 de son identifiant** : le tirage est déterministe et ne peut pas être choisi.
+- **Seuil** : si plus de 5 % des valeurs relues sont fausses, tout le lot est relu et la règle qui évite l'erreur est ajoutée aux consignes.
+
+#### 4.2.4 Critique de fidélité (`CRITIQUE.md`)
+
+Un second agent lit **l'article avant l'extraction**, dresse sa propre liste d'échantillons, puis cherche, par ordre d'importance : valeur fausse, mauvaise attribution, branche manquante ou inventée, « non dit » à tort, valeur déduite présentée comme citée, étape mal découpée, source de méthode manquante, annotation infidèle. Chaque constat porte une gravité, une certitude et **ce que dit l'article en citation exacte** : `critic_load.py` refuse un constat dont la citation n'est pas dans le texte. Ce critique n'a pas accès au web et ne modifie rien.
+
+#### 4.2.5 Critique scientifique (`PLAUSIBILITE.md`)
+
+Un troisième agent juge le **protocole des auteurs**, voie par voie : température contre récipient (point d'ébullition, autoclave), quantités converties en moles et comparées à la formule visée, grandeurs dérivées recalculées (Bragg, Scherrer, rendement), vocabulaire physique, témoin qui change plusieurs variables, cohérence entre sections, preuve discriminante, sécurité non écrite. Trois règles le rendent contrôlable :
+
+- **calculs posés** (entrées, formule, résultat, source de chaque constante) pour être recomptés ;
+- **sources vérifiables** (titre, auteurs, année, DOI) ; une référence introuvable est déclarée, jamais inventée ;
+- **bibliothèque avant le web** : `references/fondateurs.md` (papiers fondateurs par famille, DOI vérifiés sur Crossref) et `references/constantes.md` ; une dizaine de recherches web par article au plus.
+
+Chaque voie reçoit un verdict (cohérente, douteuse, incohérente, invérifiable) et la liste de ce qu'un chimiste devrait vérifier.
+
+#### 4.2.6 Correction
+
+L'orchestrateur fixe par écrit, constat par constat, ce qui est corrigé ou rejeté :
+
+- **le texte tranche, jamais la majorité** ;
+- contradiction interne de l'article : la valeur littérale du tableau est gardée, l'autre signalée ;
+- aucun héritage non fondé ;
+- **les problèmes qui viennent de l'article deviennent des annotations « limite de reproductibilité », jamais des corrections** : la base ne répare pas un article.
+
+Un agent applique ces décisions **par script**, sur le seul fichier JSON de la publication. L'orchestrateur vérifie ensuite qu'aucune valeur n'a été perdue (`diff_valeurs.py`), relance `load.py`, contrôle quelques ajouts contre le texte et consigne le statut de chaque constat.
+
+#### 4.2.7 Clôture et sauvegarde
+
+Une publication est close quand ses deux critiques sont traitées. Chaque chargement et chaque clôture font l'objet d'un commit git poussé : l'histoire de chaque valeur (extraction, correction, raison) est consultable.
+
+### 4.3 Le choix des modèles
+
+Les modèles ont été choisis sur un pilote, puis confirmés par les mesures des premiers paliers, selon trois critères : **exactitude de la recopie** sur des textes longs à caractères spéciaux, **capacité de raisonnement** chimique, et **coût par publication**.
+
+| Rôle | Modèle | Effort | Pourquoi |
+|---|---|---|---|
+| Orchestrateur | Opus | élevé | arbitrage, relecture contre le texte, découpage en branches ; un effort moyen laissait passer des attributions fausses |
+| Extraction | Sonnet | élevé | lecture exhaustive (annexes, tableaux) et citations mot pour mot ; un effort plus bas sautait des cases de la grille |
+| Critique de fidélité | Sonnet | élevé | même exigence de lecture complète ; **même modèle que l'extracteur, volontairement** : c'est l'indépendance de la lecture (article lu en premier) qui est recherchée, pas la différence de modèle |
+| Critique scientifique | Opus | élevé | raisonnement de chimie, stœchiométrie, recherche de sources |
+| Correction | Sonnet | élevé | lecture ciblée et application par script |
+
+Écartés : **Haiku** (trop d'erreurs de recopie sur des textes longs à caractères spéciaux), **Fable** (2,5 fois le prix d'Opus sans gain mesuré sur ces tâches), les efforts « très élevé » et « maximal » (coût sans gain observé sur le pilote). Coût mesuré : environ 0,9 M jetons par publication au premier palier, puis 0,6 à 0,7 M, répartis à peu près également entre extraction, critique de fidélité, critique scientifique et correction.
+
+## 5. Quand une extraction est-elle jugée bonne et valide ?
+
+### 5.1 Les critères de validité
+
+Dans ce pipeline, une extraction est déclarée **valide** quand toutes les conditions suivantes sont remplies, dans l'ordre :
+
+1. `load.py check` rend **zéro erreur** : chaque citation est retrouvée à l'identique, chaque nombre figure dans sa citation, chaque case de la grille est extraite ou déclarée.
+2. **Chaque doute est tranché**, avec sa résolution écrite.
+3. La **critique de fidélité** est faite et chacun de ses constats a un statut : corrigé, rejeté avec motif, ou accepté avec explication.
+4. La **critique scientifique** est faite ; les problèmes venant de l'article sont restitués en limites de reproductibilité.
+5. La **correction** est vérifiée : aucune valeur perdue, rechargement à zéro erreur, ajouts contrôlés contre le texte.
+6. La publication est **close** et sauvegardée.
+
+Puis, à l'échelle du palier de 50 publications :
+
+7. L'audit rend **zéro anomalie bloquante**, et chaque avertissement est traité en retournant à l'article (corrigé, ou accepté avec explication écrite).
+8. Le **taux d'erreur des relectures intégrales** reste sous 5 % ; au-delà, tout le lot est relu.
+
+« Valide » signifie **fidèle à l'article et explicite sur ses manques**. Cela ne signifie pas que le protocole fonctionne :
+
+| Niveau | Affirmation | Comment elle est établie | Degré |
+|---|---|---|---|
+| **Fidélité** | « La base dit ce que l'article dit. » | citation exacte et position ; second lecteur sur 100 % des publications ; relecture intégrale d'une sur cinq | **mesuré** (§ 5.3) |
+| **Complétude** | « La base dit ce que l'article dit d'utile, et déclare le reste. » | grille de reproductibilité, inventaire des échantillons, constats « manquant » du critique | **contrôlé**, sans garantie d'exhaustivité (§ 14) |
+| **Cohérence** | « Ce que dit l'article tient physiquement et chimiquement. » | tests automatiques ; critique scientifique sourcée | **opinion sourcée**, incohérences restituées sans correction |
+| **Validité expérimentale** | « Le protocole donne le matériau décrit. » | — | **non établie** : seule une reproduction au laboratoire peut le dire |
+
+### 5.2 Les contrôles de l'audit de palier
+
+Tous les 50 articles, `audit.py N` relance des contrôles sur tout le palier et écrit `audits/palier_NNN.md` :
+
+| Famille | Contrôle | Gravité |
+|---|---|---|
+| Citation | chaque citation relue **à sa position** dans le texte ; absente → bloquant ; nombre absent de sa citation → bloquant | bloquant / avertissement |
+| Physique | valeur SI incohérente ; pH hors 0–14 ; température au-dessus de l'ébullition du solvant sans autoclave ni reflux ; durée de plus de 30 jours | bloquant / avertissement |
+| Chimie | chaque élément du produit doit venir d'un réactif ; atmosphère cohérente avec l'état d'oxydation | avertissement / information |
+| Cohérence | annotation obligatoire absente ; doute non tranché ; branche sans variation ; relecture due non faite | bloquant / avertissement |
+
+S'y ajoutent des contrôles manuels : 30 valeurs tirées au hasard (graine fixe) relues une par une ; stœchiométrie de 5 voies recalculée ; synthèses d'un même matériau comparées entre publications (`compare.py`) ; un échantillon de sources du critique scientifique ouvert et vérifié (une source inventée est une anomalie bloquante). Chaque palier a son rapport de relecture (`audits/palier_NNN_relecture.md`), qui dit aussi **ce qui n'a pas été vérifié**.
+
+### 5.3 Ce que les contrôles ont mesuré sur les 500 publications
+
+| Contrôle | Résultat |
+|---|---|
+| Citations vérifiées à leur position | 95 053, **100 % exactes** |
+| Relectures intégrales | 11 285 valeurs relues, 16 fausses, toutes corrigées : 10 dans les publications de calibrage (1,6 %), puis 6 sur 10 724 (0,06 %) |
+| Critique de fidélité | 4 345 constats : 4 157 corrigés, 169 rejetés avec motif, 19 acceptés ; 90 classés « faux » |
+| Doutes | 6 761, tranchés avec résolution écrite (15 encore ouverts) |
+| Critique scientifique | 2 983 voies jugées : 1 149 cohérentes, 1 493 douteuses, 108 incohérentes, 233 invérifiables ; problèmes restitués dans 4 558 limites de reproductibilité, aucune valeur changée |
+| Audits de palier | 0 anomalie bloquante sur les dix paliers ; avertissements surtout des faux positifs du contrôle chimique, chacun accepté avec sa raison |
+
+Le verdict « douteuse » recouvre surtout des réserves (information manquante pour conclure, témoin à plusieurs variables). Les problèmes viennent des articles, pas des extractions : une teneur en cobalt supérieure à celle du cobalt pur, un « laser HeNe à 532 nm », une dispersion aqueuse « agitée à 350 °C ».
+
+### 5.4 Amélioration continue
+
+Une erreur vue deux fois devient une règle écrite dans les consignes, avec sa date. Les consignes étant versionnées, l'état des règles au moment où chaque publication a été traitée est reconstituable. C'est ainsi que le taux d'erreur est passé de 1,6 % au calibrage à 0,06 % ensuite.
+
+## 6. Nettoyage de la base
+
+Cinq cents publications lues par des agents différents produisent un vocabulaire libre : le même paramètre ou la même propriété porte des noms différents d'un article à l'autre, et la méthode est une phrase. Pour comparer les voies entre elles, la base a été nettoyée **après coup**, sans toucher aux valeurs.
+
+### 6.1 Noms en trop : un vocabulaire canonique
+
+`canon.py` associe à chaque nom écrit par un extracteur un **nom canonique** et un groupe, dans des colonnes séparées (`parameters.name_canon`, `outcomes.property_canon`, `outcomes.property_group`) ; les noms d'origine restent intacts.
+
+| | Occurrences | Noms écrits | Noms canoniques | Non classés |
+|---|---|---|---|---|
+| Paramètres d'étape | 12 731 | 682 | 37 | 0,9 % |
+| Propriétés mesurées | 39 350 | 16 577 | 95 | 9,1 % (25,8 % avant) |
+
+Exemples : `temperature_final`, `temperature_initial`, `temperature_start` → `temperature` ; 62 noms de durée → `duration`. Table de correspondance complète : `docs/vocabulaire/`.
+
+### 6.2 Méthodes fusionnées
+
+La méthode est écrite en texte libre (« template-free hydrothermal reaction at 150 °C »). Une table de mots-clés la range dans **28 classes** (hydrothermal, précipitation, sol-gel, solvothermal, voie verte, dépôt de film, réduction chimique…), plus une classe « non classée » (43 voies de base). Une seconde classification, indépendante, tirée de la suite des étapes, concorde avec la première pour **68,8 %** des voies.
+
+### 6.3 Doublons et unités
+
+45 matériaux apparaissent sous plusieurs noms et 88 variantes d'unités ont été relevées ; 71 % des paramètres numériques ont une valeur SI (température, durée et rampe à 99 % ; jamais les volumes, concentrations et vitesses, une limite de `load.py`).
+
+### 6.4 Ce que le nettoyage ne fait pas
+
+Il ne change aucune valeur, ne fusionne aucune voie, et ses règles sont regénérables (`python3 -I canon.py apply`). C'est un nettoyage par expressions régulières, appliqué après l'extraction : il laisse 9,1 % des propriétés sans classe (§ 8).
 
 <!-- SITE:analysis:begin -->
 <a id="analysis"></a>
 
-## Analyse de la base
+## 7. Ce que contient la base : les résultats
 
 Deux audits de contenu (28 octobre 2026) examinent ce que contiennent réellement les 500 publications et si l'extraction est fiable. Tout est reproductible : `python3 -I analyses/audit_contenu.py`, `audit_parametres.py`, `audit_verification.py`, `compare_blind.py`, puis `build_site.py` pour cette page.
 
@@ -145,400 +432,125 @@ Deux audits de contenu (28 octobre 2026) examinent ce que contiennent réellemen
 
 <!-- SITE:analysis:end -->
 
-## 1. Objectif et question de départ
+### En résumé : les chiffres clés de la v1
 
-La littérature de synthèse des matériaux est abondante mais peu réutilisable : les conditions sont dispersées entre Méthodes, Résultats, tableaux, légendes et annexes ; les séries d'échantillons comparées sont décrites par des phrases du type « the same procedure was repeated at 150 and 180 °C » ; les manques (quantité d'un réactif, atmosphère d'un recuit) ne sont pas signalés. Un chimiste qui veut refaire un matériau doit relire l'article entier et deviner le reste.
-
-La question posée à la base est donc double :
-
-1. **Que dit exactement l'article** pour chaque réactif, chaque étape, chaque paramètre, chaque résultat, et pour chaque variante comparée ?
-2. **Que ne dit-il pas**, et qu'est-ce qui, dans ce qu'il dit, est incohérent ou douteux pour un lecteur formé ?
-
-La cible fixée est de 500 publications, traitées par paliers de 50 publications audités.
-
-## 2. Matériel : le corpus
-
-### 2.1 Sélection
-
-- **Source :** Europe PMC (`fetch.py`), avec le filtre `OPEN_ACCESS:y AND IN_EPMC:y AND HAS_FT:y NOT PUB_TYPE:review` ajouté à chaque requête : articles originaux, texte intégral disponible, accès libre.
-- **Requêtes :** une par famille de matériaux (`queries.txt` : MOF et ZIF, nanoparticules métalliques, oxydes, pérovskites, zéolithes et silices mésoporeuses, chalcogénures et phosphures, carbones, matériaux d'électrode, céramiques, matériaux 2D, points quantiques). Les requêtes visent les articles qui **comparent des conditions de synthèse** (« effect of », « optimization », « synthesis conditions »), car ce sont eux qui portent des branches.
-- **Licences :** seules les licences Creative Commons sont retenues. Sur les 200 publications closes : 136 CC BY, 39 CC BY-NC, 24 CC BY-NC-ND, 1 CC BY-NC-SA. Certaines licences sont NC (usage non commercial) ou ND (pas de modification) : le texte intégral de `corpus/` reste sous la licence d'origine de chaque article, et toute réutilisation doit la respecter.
-- **Rejets :** un article sans synthèse exploitable (hors sujet, simulation, protocole entièrement renvoyé à une autre référence ou aux annexes) est écarté à l'extraction avec une raison consignée (12 rejets sur 212 traités, soit environ 6 %).
-
-### 2.2 Préparation
-
-| Étape | Outil | Produit |
-|---|---|---|
-| XML JATS → texte plat sectionné, tableaux aplatis en lignes `a | b | c` | `sections.py` | `corpus/text/<PMCID>.txt` |
-| Annexes (Supporting Information), légendes de figures, notes de tableau, ajoutées en fin de fichier | `enrich.py` | sections `## Supporting Information`, `## Figure captions`, `## Table footnotes` |
-| Bibliographie, avec les renvois `[[id]]` placés dans le texte | `enrich.py` | `corpus/refs/<PMCID>.txt` et `.json` |
-| Figures (images) | `enrich.py figs` | `corpus/fig/<PMCID>/` |
-
-Le texte plat est **le document de référence** : toutes les citations et positions de la base s'y rapportent. `enrich.py` est idempotent (relancé sur un article déjà enrichi, il produit un fichier identique) et n'ajoute qu'en fin de fichier, ce qui a été vérifié pour ne décaler aucune position de citation existante (2 709 positions recontrôlées lors de l'audit du pipeline du 2026-10-12).
-
-### 2.3 Statut des données du corpus
-
-Articles, annexes, PDF et pages web sont des **données non fiables** : ils sont lus par des bibliothèques (ElementTree, PyMuPDF), jamais exécutés, Python est lancé en mode isolé (`-I`), et chaque agent a pour consigne explicite de ne suivre aucune instruction que ces textes contiendraient. Cette précaution relève de la sécurité (injection d'instructions) autant que de la rigueur : un article ne doit pas pouvoir influencer la façon dont on le lit.
-
-## 3. Modèle de données
-
-### 3.1 Voies, branches, variations
-
-- Une **voie de base** décrit un protocole complet : matériau visé, méthode, réactifs, étapes ordonnées avec leurs paramètres et leur matériel, caractérisations, résultats, rendement.
-- Une **branche** est une variante comparée par les auteurs. Elle hérite des réactifs et des étapes de son parent et déclare dans `route_variations` **ce qui change et par rapport à quoi** (valeur du parent, valeur de la branche, citation). Une branche qui a ses propres étapes remplace celles du parent. Les vues SQL (`v_route_complete`, `v_branches`, `v_comparaison`) reconstituent le protocole complet de n'importe quelle branche.
-- Les **essais ratés** sont des branches comme les autres (`succeeded = false`).
-- Les **tests du matériau fini** (cytotoxicité, cyclage, dose de catalyseur) sont des résultats, pas des branches. Un post-traitement qui transforme le matériau est une voie `post_treatment` ; la fabrication d'une électrode, d'une cellule ou d'une LED est une voie `device`.
-
-Sur 200 publications : 503 voies de base, 1 758 branches, 2 497 variations, 2 929 réactifs, 3 372 étapes, 4 701 paramètres, 15 944 résultats, 3 552 caractérisations.
-
-### 3.2 Traçabilité de chaque valeur
-
-Toute ligne de données porte :
-
-| Colonne | Contenu |
+| | |
 |---|---|
-| `quote` | passage copié mot pour mot du texte plat (caractères spéciaux compris : °, ·, −, indices), assez long pour être sans ambiguïté, une seule rangée pour un tableau, jamais recollé |
-| `char_start`, `char_end` | position du passage dans `corpus/text/<PMCID>.txt` |
-| `section` | section d'origine |
-| `value_num` + `unit` ou `value_text` | la valeur telle qu'écrite, dans son unité ; « room temperature », « overnight », « a few drops » restent du texte |
-| `value_si`, `unit_si` | conversion SI faite par `load.py`, dans une colonne séparée, jamais à la place de la valeur d'origine |
-| `from_figure` | pour une valeur lue sur une image : la figure et le panneau ; la citation est alors la légende |
+| Publications étudiées | 500 |
+| Voies de synthèse extraites | 5 338 (1 382 de base, 3 956 branches) |
+| Matériaux différents (couples composition-phase) | 2 387, sur 1 990 compositions |
+| Méthodes de synthèse | 28 classes |
+| Paramètres communs entre deux voies d'une même méthode | 39 % (similarité de Jaccard moyenne) |
+| Propriétés communes entre deux voies d'une même famille | 14 % |
+| Prix API de l'extraction | 61 à 774 $ pour 305 M jetons consignés (1 862 agents) ; bas : tout en lecture de cache, haut : tout en entrée ; orchestrateur non compté |
 
-Deux structures rendent **l'absence** explicite :
+Calcul : `analyses/chiffres_accueil.py`.
 
-- `not_stated` (10 935 lignes) : chaque case d'une grille minimale de reproductibilité (rendement d'une voie ; quantité, pureté, fournisseur d'un réactif ; température, durée, atmosphère, vitesse de chauffe d'un traitement thermique ; durée d'une agitation ; vitesse et durée d'une centrifugation ; solvant et répétitions d'un lavage ; pH d'un ajustement) doit être **soit extraite avec sa citation, soit déclarée non citée** après recherche dans tout l'article. Une case ni remplie ni déclarée, ou à la fois remplie et déclarée, bloque le chargement.
-- `doubts` (2 639 lignes) : chaque ambiguïté qui touche une donnée ou le découpage en branches, avec les lectures possibles et la lecture retenue ; chacune est tranchée par l'orchestrateur en relisant le passage, et la résolution est écrite.
+## 8. Ce qui manque encore : critique des résultats
 
-### 3.3 Données et interprétations
+**Une base qui demande un nettoyage.** Le vocabulaire libre des extracteurs a produit 682 noms de paramètres et 16 577 noms de propriétés. Le nettoyage après coup (§ 6) en ramène l'essentiel à un vocabulaire commun, mais par expressions régulières, avec 9,1 % de propriétés encore sans classe et une méthode qui reste une phrase.
 
-Les **annotations** (`annotations`, 4 047 lignes, `source = 'claude'`, en français) sont des interprétations distinctes des données : résumé, objectif de l'étude, pourquoi ces données, conclusion des auteurs, comparaison des branches, tendance observée, mécanisme (des auteurs, avec citation obligatoire ; ou d'analyse, sans citation), sécurité (des auteurs ou d'analyse), et **limite de reproductibilité** (1 682 lignes) : tout ce qu'un chimiste doit savoir avant de refaire la synthèse, incohérence des auteurs comprise. Une annotation `*_auteurs` sans citation est refusée ; une annotation `*_analyse` avec citation l'est aussi, pour que les deux ne se confondent jamais.
+**Une base longue et coûteuse à obtenir.** Treize jours de travail (du 12 au 25 octobre 2026), 305 millions de jetons consignés pour les agents, sans compter l'orchestrateur ; cinq agents par publication ; environ 13 publications par fenêtre d'usage de cinq heures. Le coût est le prix de la rigueur (deux critiques indépendantes par article), mais il limite le passage à l'échelle.
 
-Les **sources de méthode** (`method_sources`, 310 lignes) listent les renvois bibliographiques nécessaires pour refaire une préparation (« according to », « as described in », « modified … method »), avec l'identifiant de référence contrôlé contre la bibliographie ; un renvoi de contexte, une équation d'analyse ou une fiche JCPDS n'en sont pas.
+**Des propriétés et des caractérisations manquantes.** Deux voies d'une même famille n'ont que 14 % de propriétés en commun : chaque article mesure autre chose. Quand une technique de mesure est citée dans l'article, l'extraction n'a souvent ni ses conditions ni de résultat rattaché : 67 % des mesures de composition (ICP, EDS), 65 % des XPS, 52 % des BET (`audits/sonde_manques.md`). 43 couples famille-propriété attendus sont couverts à moins de 30 % (band gap des pérovskites, surface BET des carbones, rétention de capacité des batteries).
 
-## 4. Le pipeline : cinq passes par publication
+**Pas de grille stricte par méthode ni par caractérisation.** La liste de vérification de la v1 est définie par type d'étape (§ 4.2.1), pas par méthode. Résultat : deux voies d'une même méthode ne partagent que 39 % de leurs paramètres ; pour les méthodes en autoclave, 39 % des paramètres essentiels ne sont pas donnés par l'article ; le refroidissement, le débit de gaz, le nombre de répétitions, la puissance et le taux de remplissage ne sont **jamais cherchés**, car hors grille.
 
-### 4.1 Vue d'ensemble
+**Ce dont un chimiste a besoin.** Pour refaire une synthèse ou comparer deux voies, un chimiste a besoin d'une **grille stricte de paramètres à vérifier** :
 
-```
-corpus/text + annexes + figures
-        │
-        ▼
-[1] Extraction (agent A, modèle sonnet, effort high) ──► extractions/<PMCID>.json
-        │
-        ▼
-[2] load.py check / load (orchestrateur) ──► synthese.db      ◄── refus si une règle est violée
-        │
-        ▼
-[3] Relecture de l'orchestrateur : doutes tranchés ; relecture intégrale 1 publication sur 5
-        │
-        ├──► [4a] Critique de fidélité (agent B, sonnet, sans web, article lu AVANT l'extraction)
-        │              └► critiques/<PMCID>.json ──► critic_load.py (article_says vérifié dans le texte)
-        │
-        └──► [4b] Critique scientifique (agent C, opus, avec web, bibliothèque de références)
-                       └► critiques/<PMCID>_science.json ──► critic_load.py (source obligatoire si « littérature »)
-        │
-        ▼
-[5] Décisions de l'orchestrateur (le texte tranche) ──► agent D de correction ──► JSON corrigé
-        │
-        ▼
-diff_valeurs.py (aucune valeur perdue) → load.py check/load → critic_load.py → statuts → fiche → git commit + push
-```
+- **par méthode de synthèse** : par exemple, pour une voie hydrothermale, température, durée, taux de remplissage de l'autoclave, vitesse de chauffe, refroidissement, pH et volume ;
+- **par caractérisation** : par exemple, pour la DRX le rayonnement, la plage angulaire et le pas ; pour la BET la température et la durée de dégazage ; pour la XPS la source et la référence d'étalonnage.
 
-Chaque agent écrit en plus un **journal de décisions** (`journaux/<PMCID>_<passe>.md`, 10 à 30 lignes sur ses choix non évidents), et le nombre de jetons consommés par chaque passe est consigné (`audits/jetons.csv`).
+Sans cette grille, la base dit fidèlement ce que l'article donne, mais ne permet ni de comparer deux voies sur les mêmes critères, ni de juger d'un coup d'œil si une voie est reproductible.
 
-### 4.2 Rôles et séparation des lecteurs
+## 9. Intérêt du travail et suite (v2)
 
-| Rôle | Qui | Ce qu'il lit | Ce qu'il écrit |
-|---|---|---|---|
-| Orchestrateur | la session principale (modèle `opus`) | tout ; retourne au texte pour chaque doute, chaque constat, chaque anomalie | décisions, résolutions, rapports d'audit, règles |
-| Extracteur | agent `sonnet`, effort `high`, un article par agent | article entier, annexes, légendes, figures utiles, bibliographie | `extractions/<PMCID>.json`, journal |
-| Critique de fidélité | agent `sonnet`, effort `high`, sans web | **l'article d'abord**, puis l'extraction | `critiques/<PMCID>.json`, journal |
-| Critique scientifique | agent `opus`, effort `high`, avec web | vue sans citations de l'extraction, article, `references/` | `critiques/<PMCID>_science.json`, journal |
-| Correcteur | agent `sonnet`, effort `high` | les décisions de l'orchestrateur, les passages concernés | le JSON corrigé, par script, journal |
+### 9.1 Ce que la v1 apporte
 
-Pourquoi des lecteurs séparés : un modèle qui se relit garde ses angles morts. Les erreurs trouvées jusqu'ici (mauvaise rangée de tableau attribuée, « more layers » déduit, « excès de soufre » faux) ont toutes été vues par un lecteur **qui n'avait pas fait l'extraction** et qui a lu l'article avant de lire ce qu'on en avait tiré. Le critique de fidélité utilise volontairement le même modèle que l'extracteur : c'est l'indépendance de la lecture, pas la différence de modèle, qui est recherchée ; la critique scientifique utilise un modèle plus capable en raisonnement. Les niveaux d'effort ont été choisis sur un pilote : un effort plus bas faisait sauter des cases de la grille.
+- **Une fidélité mesurée, pas affirmée** : chaque valeur est réfutable en moins d'une minute, en ouvrant le texte à la position indiquée ; le taux d'erreur est donné avec son dénominateur.
+- **L'absence comme donnée** : 28 631 cases « non dites » montrent ce qu'un article ne donne pas, au lieu de le cacher.
+- **L'effet des variations** : les branches relient une condition de synthèse à un résultat ; 61 % des 3 064 variations numériques ont une propriété mesurée des deux côtés.
+- **Les limites de reproductibilité** : 83 % des voies de base portent au moins une limite, d'abord des incohérences internes des articles.
+- **Un pipeline réutilisable** : consignes, contrôles, critiques et audits sont écrits, versionnés et applicables à d'autres corpus.
 
-Aucun agent n'est cru sur parole : l'orchestrateur relance lui-même `load.py check`, recontrôle des ajouts contre le texte après chaque correction, et ne lit jamais la transcription d'un agent, seulement ses produits (JSON, journal, rapport final court).
+Les principes qui fondent la confiance sont ceux d'un travail scientifique : traçabilité intégrale, règles fixées avant la lecture et modifiées par écrit, lecture indépendante, échantillonnage non choisi, conservation des incohérences des auteurs, séparation des observations et des interprétations, invariants que personne ne contourne.
 
-### 4.3 Passe 1 — Extraction (`RUNBOOK.md`)
+### 9.2 Comparaison avec les méthodes fondatrices
 
-Règles absolues données à l'extracteur :
+La critique scientifique juge un protocole **par rapport à la méthode qui fonde sa famille** : injection à chaud de Protesescu pour les nanocristaux CsPbX3, excès de 2-méthylimidazole de Pan pour ZIF-8 en eau, citrate de Turkevich et Frens pour l'or, bilans réducteurs de Raveendran pour les synthèses vertes. Un écart est signalé avec sa source et devient une limite de reproductibilité si l'article ne l'explique pas. Cette comparaison sert à dire quoi vérifier, jamais à modifier une valeur.
 
-1. Chaque donnée porte sa citation exacte.
-2. Rien d'inventé, de déduit ou de converti ; une valeur absente reste absente et son nom va dans `not_stated` ou `missing_fields`.
-3. Toutes les variations comparées deviennent des branches, échecs compris ; les Résultats et les tableaux sont lus parce que les séries y sont souvent définies.
-4. Dans le doute, ne pas trancher : écrire le doute et extraire la lecture la plus littérale.
-5. Pas de synthèse exploitable → `REJET` motivé.
-6. Pureté et fournisseur ne sont repris qu'avec la phrase qui les donne.
+### 9.3 Travaux futurs : la v2
 
-**Inventaire obligatoire avant d'écrire.** Les trois erreurs les plus fréquentes du premier palier (une valeur juste rangée sur le mauvais échantillon ; une étape héritée du parent sans que l'article le dise ; une branche ou un résultat oublié) ont conduit à imposer, avant toute voie, la liste de **tous les échantillons nommés ou comparés** avec, pour chacun, où il est défini, ce qui le distingue et où sont ses résultats (`sample_inventory`). Une rangée de tableau = un échantillon, attribuée par son nom et non par sa position ; avec « respectively », l'ordre des échantillons est écrit avant toute attribution.
+1. **Une grille complète par méthode.** Passer de la liste par type d'étape à une liste de paramètres essentiels **par méthode de synthèse** (déjà esquissée pour une vingtaine de méthodes dans `analyses/audit_parametres.py`), rendue obligatoire au contrôle : chaque paramètre essentiel extrait ou déclaré non dit.
+2. **Un vocabulaire adaptatif.** Appliquer le vocabulaire canonique **dès l'extraction** : l'extracteur choisit dans la liste, propose un terme nouveau quand aucun ne convient, et l'orchestrateur le valide ou le rattache. Le vocabulaire s'enrichit au fil des articles au lieu d'être nettoyé après coup.
+3. **Des paramètres de caractérisation.** Une grille par technique (DRX, BET, XPS, MEB/MET, UV-visible, électrochimie…) avec ses conditions de mesure attendues, extraites ou déclarées non dites, comme pour la synthèse.
 
-**Grille de reproductibilité** (§ 3.2) : pour chaque case attendue, extraire ou déclarer non cité, jamais rien d'autre.
+Un premier essai de complément ciblé sur 20 publications (`audits/pilote_complement.md`) a ajouté des conditions de mesure et des résultats sans retirer aucune valeur, pour environ 139 000 jetons par publication : il sert de base de travail à la v2.
 
-**Figures :** une valeur qui n'existe que sur une image est extraite avec `from_figure`, précision de lecture indiquée dans un doute ; le texte prime sur la figure quand les deux existent.
-
-### 4.4 Passe 2 — Contrôle automatique et chargement (`load.py`)
-
-`load.py check` refuse l'extraction si l'une des règles suivantes est violée ; `load.py load` ne charge qu'à zéro erreur. Ces contrôles sont des **invariants** : la consigne du projet interdit de les affaiblir pour faire passer une extraction.
-
-| Famille | Contrôle |
-|---|---|
-| Citation | présente ; assez longue pour être traçable ; **retrouvée telle quelle dans le texte plat** ; pour chaque `value_num` et chaque quantité de réactif, **le nombre apparaît dans sa citation** (formes 1,5 / 1.5 / 1·5 / 10−4 reconnues), sauf valeur `from_figure` dont la citation est la légende |
-| Structure | PMCID conforme ; libellés de voies uniques ; parents existants, sans cycle ; une voie de base décrit ses étapes ; une branche déclare au moins une variation ; étapes numérotées sans trou ; `step_order` d'une variation existe dans le protocole hérité |
-| Grille | rendement extrait ou déclaré ; pour chaque réactif (sauf lavage, gaz, substrat) quantité, pureté, fournisseur extraits ou déclarés ; pour chaque étape, les paramètres attendus par son action ; contradiction « extrait et déclaré non cité » refusée |
-| Valeurs | quantité avec unité ; pureté et fournisseur présents dans `quote` ou `supplier_quote` ; nom de paramètre en `snake_case` ; `value_num` ou `value_text` ; unité pour un nombre ; **pH dans 0–14, durée positive, température physiquement possible** |
-| Annotations | types connus ; annotations d'article obligatoires présentes (résumé, objectif, pourquoi ces données, conclusion des auteurs) ; `comparaison_branches` obligatoire s'il y a des branches ; mécanisme et sécurité documentés ; `*_auteurs` avec citation, `*_analyse` sans |
-| Sources | `method_sources` obligatoire (liste vide autorisée) ; chaque `ref_id` existe dans la bibliographie extraite ; chaque voie citée existe |
-| Inventaire | chaque échantillon renvoie à une voie existante ou donne la raison de son absence |
-
-L'autotest de `load.py` (citation altérée, nombre absent de la citation, branche sans variation, pH impossible, case de grille oubliée ou contradictoire) vérifie que chaque cas est refusé. Le rechargement intégral des extractions (`reload_all.py`) a été contrôlé pour conserver les effectifs de toutes les tables ainsi que rangs, paliers, relectures et doutes tranchés.
-
-### 4.5 Passe 3 — Relecture de l'orchestrateur
-
-- **Toujours :** chaque doute est tranché en relisant le passage ; la résolution est écrite dans la base (`state.py doubt`). La présence de toutes les branches de l'article est vérifiée en parcourant tableaux et Résultats, et pour chaque tableau le rattachement des rangées aux échantillons est contrôlé rangée par rangée (c'est là que se logent les erreurs ; pour les plans d'expériences, ce contrôle est fait par script).
-- **Relecture intégrale** (chaque valeur comparée à l'article : valeur, unité, étape, branche, citation qui la soutient vraiment) pour les 10 premières publications (calibrage), puis pour **1 publication sur 5, tirée par le hachage SHA-1 du PMCID** (`state.py`) : le tirage est déterministe, indépendant de l'ordre de traitement, et ne peut pas être choisi. Le nombre de valeurs contrôlées et de valeurs fausses est consigné et alimente `sample_error_rate`.
-- Si le taux d'erreur de l'échantillon dépasse 5 %, tout le lot en cours est relu intégralement et la règle qui évite l'erreur est ajoutée au RUNBOOK.
-
-### 4.6 Passe 4a — Critique de fidélité (`CRITIQUE.md`)
-
-Un second agent lit **l'article avant l'extraction**, dresse sa propre liste d'échantillons, puis cherche, par ordre d'importance : valeur fausse ; mauvaise attribution (échantillon, étape, branche) ; branche manquante ou inventée ; « non cité » à tort (chaque `not_stated` est vérifié contre l'article, légendes et annexes) ; valeur déduite présentée comme citée (héritage abusif, « same conditions » non écrit) ; étape manquante ou mal découpée ; réactif, rôle ou formule faux ; source de méthode manquante ou de contexte ; annotation infidèle ; ce qui manque encore pour reproduire. Les valeurs `from_figure` sont relues sur l'image (écart de lecture supérieur à 10 % = constat).
-
-Chaque constat porte une gravité (`faux`, `attribution`, `manquant`, `non_cite_a_tort`, `deduit`, `mineur`), une certitude (`sure`, `probable`), l'endroit, ce qui est extrait, **ce que dit l'article en citation exacte** et la correction proposée. `critic_load.py` refuse un fichier dont une citation `article_says` n'est pas une sous-chaîne du texte : **un constat sans passage à l'appui n'existe pas**. Ce critique n'a pas accès au web et ne modifie rien.
-
-### 4.7 Passe 4b — Critique scientifique (`PLAUSIBILITE.md`)
-
-Un troisième agent juge le **protocole des auteurs** (et non l'extraction, dont il lit une vue sans citations) voie par voie, selon huit contrôles tirés des problèmes réels rencontrés sur les 50 premières publications :
-
-1. température contre récipient (consigne au-dessus du point d'ébullition sans reflux ni fermeture ; autoclave : volumes, taux de remplissage, pression de vapeur) ;
-2. tout en moles : chaque quantité convertie et comparée au rôle annoncé, à la formule visée, à la solubilité, à la concentration du corps pur ;
-3. grandeurs dérivées recalculées (Bragg, 4V/S, Scherrer, rendement, colorimétrie, signe de ΔS) ;
-4. vocabulaire physique des auteurs (« blue shift » vers les bas nombres d'onde, « mésopore » de 1,2 nm, polytype affirmé sans raie discriminante) ;
-5. témoin qui change plusieurs variables ;
-6. cohérence entre sections (Méthodes, Résultats, légendes, annexes, conclusion) ;
-7. preuve discriminante (la caractérisation montrée distingue-t-elle l'hypothèse d'une alternative simple ?) ;
-8. sécurité non écrite (exothermes, HF, autoclave, nanopoudres, gaz).
-
-Puis, pour chaque voie de base : bilan de matière, redox et atmosphère, thermique et transitions de phase, solubilité et pH atteignable, cinétique, mécanisme de formation, faisabilité pratique, résultats annoncés hors des ordres de grandeur connus.
-
-Trois exigences rendent ce jugement contrôlable :
-
-- **Bloc `calculs` obligatoire** pour toute voie de base ayant des quantités : chaque conversion (moles, concentration, rapport, Bragg, pression, 4V/S) y figure avec ses entrées, sa formule, son résultat et la source de chaque constante, **pour que l'orchestrateur puisse la recompter**. Au palier 2, un calcul au moins par publication a été recompté ; tous étaient exacts.
-- **Sources vérifiables** : tout appui « littérature » doit porter titre, auteurs ou éditeur, année, URL ou DOI ; une référence introuvable est déclarée dans `sources_not_found` plutôt qu'inventée. `critic_load.py` refuse un appui « littérature » sans source.
-- **Bibliothèque de référence avant le web** : `references/fondateurs.md` donne, par famille de matériaux, les papiers fondateurs et revues de référence (Protesescu 2015 pour CsPbX3, Park 2006 et Pan 2011 pour les ZIF, Turkevich 1951 et Frens 1973 pour l'or colloïdal, Raveendran 2003 pour les synthèses vertes, etc.), **chaque DOI ayant été vérifié sur Crossref** (titre et année) par `references/verif_doi.py` ; une ligne n'y entre qu'après vérification. `references/constantes.md` fixe la source à citer pour chaque grandeur (NIST WebBook, PubChem, NOAA CAMEO, ECHA, IUPAC Gold Book, NIST X-ray, COD) et la liste de ce qu'il faut recalculer systématiquement. Une dizaine de recherches web par article au plus.
-
-Le critique compare aussi la voie **aux autres synthèses du même matériau déjà dans la base** (`compare.py "<matériau>"`) : une valeur très éloignée des autres est un signal, pas une preuve. Chaque voie reçoit un verdict (`coherente`, `douteuse`, `incoherente`, `invérifiable`), une faisabilité, un jugement du mécanisme et la liste de ce qu'un chimiste devrait vérifier avant de refaire la synthèse.
-
-### 4.8 Passe 5 — Décisions et application des corrections
-
-Quand les deux critiques sont chargées, l'orchestrateur fixe par écrit, constat par constat, ce qui est corrigé et ce qui est rejeté, selon des règles stables :
-
-- **Le texte tranche, jamais la majorité.** Un désaccord entre extracteur et critique se règle en retournant au passage.
-- **Contradiction interne de l'article** (tableau contre texte, résumé qui arrondit) : la valeur littérale du tableau ou des Résultats est gardée, l'autre est signalée dans un doute et une annotation `limite_reproductibilite`.
-- **Aucun héritage non fondé** : une branche « sans X » n'hérite que de ce que l'article lui attribue.
-- **Un renvoi de contexte n'est pas une source de méthode.**
-- **Les problèmes de la critique scientifique qui viennent de l'article deviennent des annotations `limite_reproductibilite`, jamais des corrections de valeur.** La base ne « répare » pas un article.
-- Une variation d'un réactif du parent ne porte pas de `step_order` ; un test du matériau fini reste un résultat.
-
-Un agent de correction applique ces décisions **par script**, sur le seul fichier JSON de la publication, et rend `corrige` ou `rejete` avec sa raison pour chaque constat. L'orchestrateur relance alors `diff_valeurs.py` (toute valeur numérique présente avant la correction doit se retrouver après, sauf retrait voulu), `load.py check` et `load`, `critic_load.py`, contrôle quelques ajouts contre le texte, puis consigne le statut final de chaque constat dans la base.
-
-### 4.9 Clôture et sauvegarde
-
-Une publication est close quand ses deux critiques sont traitées (`state.py critic done`). Chaque chargement et chaque clôture font l'objet d'un `git commit` puis d'un `git push` : la base, les extractions, les critiques, les journaux, les fiches lisibles (`fiches/<PMCID>.md`) et l'état sont versionnés, de sorte que l'historique complet de chaque valeur (extraction, correction, raison) est consultable.
-
-## 5. Audit de palier
-
-Tous les 50 articles, `audit.py N` relance des contrôles sur l'ensemble du palier, écrit `audits/palier_NNN.md` et exporte la base (`synthese_dump.sql`). Le palier suivant ne commence qu'à **zéro anomalie bloquante**.
-
-### 5.1 Contrôles automatiques
-
-| Famille | Contrôle | Gravité |
-|---|---|---|
-| Citation | chaque `quote` de chaque table relue **à sa position** `char_start:char_end` dans le texte plat ; absente du texte → bloquant ; présente ailleurs → avertissement ; nombre absent de sa citation (hors figure) → bloquant | bloquant / avertissement |
-| Physique | valeur SI incohérente avec la valeur d'origine ; pH hors 0–14 ; température au-dessus du point d'ébullition du solvant sans autoclave, reflux ni enceinte fermée ; durée supérieure à 30 jours ; vitesse de chauffe ou de rotation invraisemblable ; unité non convertible | bloquant / avertissement |
-| Chimie | bilan d'éléments : chaque élément de la formule du produit doit avoir une source parmi les réactifs ; atmosphère cohérente avec l'état d'oxydation visé | avertissement / info |
-| Cohérence | annotation obligatoire absente ; extraction jamais contrôlée par l'orchestrateur ; relecture intégrale due non faite ; doute non tranché ; branche sans variation (bloquants) ; voie de base sans réactif ; branches identiques ; voie sans résultat | bloquant / avertissement / info |
-
-Chaque anomalie `bloquant` ou `avertissement` est traitée en retournant à l'article : erreur d'extraction → JSON corrigé, rechargé, anomalie `corrige` ; l'article dit bien cela → anomalie `accepte` avec l'explication écrite, et annotation `limite_reproductibilite` si un chimiste doit le savoir. Une anomalie acceptée ne réapparaît pas à l'audit suivant si sa description est identique ; elle reste dans la base avec sa note.
-
-### 5.2 Contrôles manuels de l'orchestrateur
-
-- **Échantillon de 30 valeurs** tiré par le rapport (graine fixe = numéro du palier), relues une par une : la citation soutient-elle la valeur, pour cette étape et cette branche ? Pour une rangée de tableau, colonne et rangée sont vérifiées contre l'en-tête.
-- **Stœchiométrie de 5 voies** : quantités converties en moles et comparées à la formule visée ; atmosphère contre état d'oxydation ; solvant et méthode compatibles ; résultat consigné voie par voie.
-- **Contrôle croisé** (`compare.py`) : pour les matériaux présents dans plusieurs publications, conditions et résultats très éloignés des autres relevés et expliqués ou annotés.
-- **Sources du critique scientifique** : échantillon de 10 sources par palier passé à Crossref (`sources_check.py`, DOI et titre), puis deux ou trois sources ouvertes pour confirmer qu'elles disent ce qui leur est attribué. Une source inventée est une anomalie bloquante et la critique scientifique de l'article est refaite.
-- **Rapport de relecture** (`audits/palier_NNN_relecture.md`) : ce qui a été vérifié, les erreurs trouvées et corrigées, les anomalies acceptées et pourquoi, le taux d'erreur, les règles ajoutées, et **ce qui n'a pas été vérifié**.
-
-### 5.3 Amélioration continue du protocole
-
-Une erreur vue deux fois devient une règle écrite dans `RUNBOOK.md`, `CRITIQUE.md`, `PLAUSIBILITE.md` ou `PROMPT_CORRECTION.md`, avec sa date. Ces fichiers sont versionnés : l'état des consignes au moment où chaque publication a été traitée est reconstituable. C'est ainsi que le taux d'erreur est passé de 1,6 % sur le calibrage à 0,03 % ensuite (§ 6.2), et que les contrôles du critique scientifique ont été fixés à partir des problèmes réels du premier palier plutôt qu'a priori.
-
-## 6. Résultats mesurés (500 publications, paliers 1 à 10)
-
-### 6.1 Volume et fidélité par palier
-
-| Palier | Publications | Voies | Citations vérifiées à l'audit (exactes) | Constats de fidélité (médiane / pub.) | dont « faux » | Relectures intégrales : pub. / valeurs / fausses | Jetons par publication |
-|---|---|---|---|---|---|---|---|
-| 1 | 50 | 609 | 8 712 (100 %) | 526 (10) | 29 | 20 / 1 307 / 10 | ≈ 0,9 M |
-| 2 | 50 | 581 | 8 796 (100 %) | 403 (8) | 7 | 9 / 776 / 0 | 0,63 M |
-| 3 | 50 | 556 | 10 050 (100 %) | 435 (8,5) | 5 | 8 / 981 / 0 | 0,61 M |
-| 4 | 50 | 515 | 9 920 (100 %) | 406 (8) | 7 | 5 / 529 / 0 | 0,63 M |
-| **Total** | **200** | **2 261** | **37 478 (100 %)** | **1 770** | **48** | **42 / 3 593 / 10** | **94 M au total** |
-
-### 6.2 Ce que disent ces chiffres
-
-- **Citations :** 37 478 passages retrouvés mot pour mot à leur position dans le texte, et chaque nombre retrouvé dans son passage. C'est la garantie mécanique de la base : elle est vérifiée à chaque chargement et à chaque audit.
-- **Relectures intégrales :** les 10 erreurs trouvées sont toutes dans les 10 publications de calibrage (9 erreurs sur 561 valeurs, 1,6 %) ; chacune est devenue une règle. Sur les 32 publications relues ensuite, tirées par hachage, **1 erreur sur 3 032 valeurs** (un rapport masse/volume nommé `molar_ratio`), soit 0,03 % ; avec une seule erreur observée, la borne supérieure de l'intervalle de confiance à 95 % est d'environ 0,16 %.
-- **Critique de fidélité :** 1 770 constats, 1 660 corrigés, 96 rejetés avec motif, 14 acceptés. Par gravité : 763 mineurs, 536 manquants (le plus souvent une case `not_stated` à compléter ou un résultat secondaire absent), 232 déduits, 109 attributions, 82 « non cité » à tort, **48 faux**. Les 48 « faux » ont été relus un par un : depuis le palier 2, **aucun n'est un nombre mal recopié du texte** ; ce sont des classements de sources de méthode, des annotations de comparaison inexactes, et des lectures de figure (une barre d'échelle prise pour une taille de particule, un R² attribué à un panneau qui n'en affiche pas, des pourcentages que l'article appelle massiques alors que son tableau les range en atomiques).
-- **Doutes :** 2 639, tous tranchés avec une résolution écrite.
-- **Critique scientifique :** 1 166 voies jugées : 434 cohérentes, 604 douteuses, 46 incohérentes, 82 invérifiables. Le verdict « douteuse » recouvre surtout des réserves (information manquante pour conclure, témoin à plusieurs variables). Constat transversal depuis le palier 1 : **les problèmes viennent des articles, pas des extractions** (erreurs de calcul, de vocabulaire ou de cohérence des auteurs, omissions de sécurité). Ils sont restitués dans 1 682 annotations `limite_reproductibilite` ; aucune valeur n'a été changée sur la foi de la critique scientifique.
-- **Audits :** 0 anomalie bloquante ouverte ; 95 avertissements, tous vérifiés dans le texte et acceptés avec une note (éléments apportés par un intermédiaire préparé dans une autre voie, sources naturelles sans formule, recuits de films déjà secs, faux positifs de l'heuristique de température quand les solvants ne sont pas rattachés à une étape) ; 1 569 informations.
-- **Sources :** `fondateurs.md` entièrement vérifié sur Crossref ; sur les critiques des paliers 2 à 4, deux à trois sources par palier ouvertes et conformes à ce qui leur est attribué, une imprécision d'attribution corrigée (une source sur Fe2Ni citée pour Fe2Co), une source non retrouvée en attente ; 463 DOI restent à passer à Crossref depuis un poste où l'API est accessible (listes `audits/palier_00N_doi_a_verifier.txt`).
-- **Coût :** 94 millions de jetons d'agents pour 200 publications, hors orchestrateur ; environ 0,9 M par publication au palier 1 (format initial puis mise à niveau), 0,61–0,63 M ensuite, répartis à parts à peu près égales entre extraction, critique de fidélité, critique scientifique et correction.
-
-### 6.3 Palier 5 (publications 201 à 250)
-
-466 voies, 9 581 citations exactes (100 %), 9 publications relues intégralement (1 112 valeurs, 0 fausse), 428 constats de fidélité (médiane 8, dont 4 « faux »), 0 anomalie bloquante, 35 avertissements acceptés (faux positifs ou limites de l'article), 0,66 M jetons par publication (médiane). Source : `audits/palier_005_relecture.md`.
-
-### 6.4 Paliers 6 à 10 (publications 251 à 500)
-
-| Palier | Voies | Citations exactes | Relectures intégrales : pub. / valeurs / fausses | Constats de fidélité (médiane) | dont « faux » | Bloquants | Jetons par publication |
-|---|---|---|---|---|---|---|---|
-| 6 | 554 | 9 680 | 10 / 1 887 / 0 | 419 (8) | 3 | 0 | 0,65 M |
-| 7 | 424 | 9 238 | 9 / 1 032 / 2 (corrigées) | 421 (8) | 9 | 0 | 0,69 M |
-| 8 | 515 | 9 859 | 8 / 1 181 / 1 (corrigée) | 437 (9) | 11 | 0 | 0,67 M |
-| 9 | 566 | 9 719 | 11 / 1 258 / 0 | 424 (8,5) | 4 | 0 | 0,69 M |
-| 10 | 549 | 9 498 | 10 / 1 222 / 3 (corrigées) | 446 (9) | 11 | 0 | 0,71 M |
-
-Les citations restent exactes à 100 % ; les 6 valeurs fausses trouvées par relecture intégrale sur 6 580 valeurs ont été corrigées (0,09 %) et les avertissements d'audit, tous vérifiés dans le texte, acceptés (faux positifs du contrôle chimique surtout) ou corrigés. Sources : `audits/palier_006_relecture.md` à `audits/palier_010_relecture.md`.
-
-## 7. Discussion : en quel sens le contenu de la base est « juste »
-
-« Juste » doit être décomposé : une base ne peut pas être vraie en bloc. Quatre affirmations distinctes sont en jeu, et le pipeline ne les établit pas toutes au même degré.
-
-### 7.1 Quatre niveaux d'affirmation
-
-| Niveau | Affirmation | Comment elle est établie | Degré |
-|---|---|---|---|
-| **Fidélité** | « La base dit ce que l'article dit. » | citation exacte et position pour chaque valeur ; nombre dans sa citation ; second lecteur indépendant sur 100 % des publications ; relecture intégrale sur 1/5 par tirage déterministe ; taux d'erreur mesuré avec son dénominateur | **mesuré** : 0,03 % (borne 0,16 %) sur les valeurs recopiées |
-| **Complétude** | « La base dit tout ce que l'article dit d'utile, et déclare ce qu'il ne dit pas. » | grille de reproductibilité (extraire ou déclarer) ; inventaire des échantillons ; constats `manquant` et `non_cite_a_tort` du critique ; `not_stated` et `missing_fields` | **contrôlé**, sans garantie d'exhaustivité : 536 manquants trouvés par le second lecteur sur 200 publications, corrigés |
-| **Cohérence** | « Ce que dit l'article est physiquement et chimiquement cohérent. » | tests automatiques (plages, bilan d'éléments, atmosphère) ; critique scientifique avec calculs recomptables, sources à DOI, comparaison aux méthodes fondatrices et aux autres synthèses de la base | **opinion sourcée** : verdict par voie, incohérences restituées sans correction |
-| **Validité** | « Le protocole fonctionne et donne le matériau décrit. » | — | **non établie** : seule une reproduction au laboratoire peut l'établir ; la base est construite pour ne jamais le prétendre |
-
-Le résultat de la base est donc un **enregistrement fidèle, complet quant à ses manques, et annoté** de ce que la littérature affirme, pas une validation de la littérature. C'est la forme la plus honnête d'un savoir extrait : chaque valeur est rapportée à qui l'affirme, où, et avec quelles réserves.
-
-### 7.2 Les principes qui fondent la confiance
-
-Ils correspondent aux pratiques qu'on exige d'un travail scientifique, transposées à une lecture automatisée.
-
-1. **Traçabilité intégrale (provenance).** Chaque valeur remonte à un passage, une position, un fichier, un PMCID et un DOI. N'importe qui, en moins d'une minute, peut ouvrir `corpus/text/<PMCID>.txt` à `char_start` et constater si la base a raison. Une affirmation de la base est donc **réfutable** individuellement, sans avoir à faire confiance au pipeline.
-2. **Règles fixées avant la lecture, modifiées par écrit.** Les consignes (RUNBOOK, CRITIQUE, PLAUSIBILITE, règles de décision) sont écrites avant le traitement et versionnées ; chaque amendement porte sa date et l'erreur qui l'a motivé. C'est l'équivalent d'un protocole pré-enregistré avec journal des amendements : on ne peut pas adapter silencieusement la règle à la donnée.
-3. **Lecture indépendante et arbitrage par la source.** Le second lecteur lit l'article avant l'extraction, dresse sa propre liste d'échantillons et ne peut signaler qu'avec un passage vérifié dans le texte. Un désaccord n'est jamais tranché au vote : seule la source primaire tranche.
-4. **Échantillonnage non choisi.** Les publications relues intégralement sont tirées par hachage du PMCID ; l'échantillon de valeurs de l'audit par une graine fixe. Le taux d'erreur est rapporté avec son dénominateur et sa borne, pas comme un chiffre isolé.
-5. **Conservation des incohérences.** Une erreur des auteurs (Ca/P impossible, 0,2 g pour 0,2 mg, « 104 s » pour 10⁴ s) est recopiée telle quelle et signalée. Corriger reviendrait à substituer une opinion à une observation ; la base garde l'observation et expose l'opinion à côté, étiquetée.
-6. **Incertitude explicite.** Valeur lue sur figure marquée `from_figure` (2 452 résultats sur 15 944) ; valeur non numérique gardée en texte ; absence déclarée dans `not_stated` ; ambiguïté écrite dans un doute avec sa résolution. La base dit ce qu'elle ne sait pas.
-7. **Séparation des observations et des interprétations.** Les annotations sont typées, en français, d'une source distincte, et ne peuvent pas porter de citation quand elles sont une analyse ni en manquer quand elles rapportent les auteurs.
-8. **Jugement scientifique contrôlable.** Les calculs du critique sont posés avec entrées, formule et constantes sourcées pour être recomptés ; ses sources portent un DOI vérifiable ; les références fondatrices ont été vérifiées sur Crossref une fois pour toutes ; une référence introuvable est déclarée, pas inventée ; une source inventée serait une anomalie bloquante.
-9. **Invariants que personne ne contourne.** Les contrôles de `load.py` et `audit.py` ne sont pas affaiblis pour faire passer une extraction ; un faux positif est corrigé dans le contrôle et noté dans l'audit, une vraie erreur est corrigée dans l'extraction.
-10. **Journal et versionnement.** Chaque agent consigne ses décisions non évidentes ; chaque chargement, correction et audit est un commit. L'histoire de chaque valeur est reconstituable.
-11. **Apprentissage par règles, pas par exception.** Une erreur vue deux fois devient une règle ; la baisse mesurée du taux d'erreur (1,6 % → 0,03 %) et du nombre de constats par publication (10 → 8) est l'effet de ces règles, pas d'un tri des articles.
-
-### 7.3 Comparaison avec les méthodes fondatrices
-
-La critique scientifique ne juge pas un protocole dans l'absolu mais **par rapport à la méthode qui fonde sa famille** : injection à chaud de Protesescu pour les nanocristaux CsPbX3, excès de 2-méthylimidazole de Pan pour ZIF-8 en eau, citrate de Turkevich et Frens pour l'or, bilans réducteurs de Raveendran pour les synthèses vertes, et ainsi de suite pour chaque famille de `references/fondateurs.md`. Un écart avec la méthode fondatrice (une quantité cent fois plus faible que la recette de référence, un rapport ligand/métal inhabituel, une phase annoncée que la référence contredit) est signalé avec la source, et devient une limite de reproductibilité si l'article ne l'explique pas. La même logique s'applique entre publications de la base (`compare.py`) : une surface BET, une taille de cristallite ou une capacité très éloignée des autres synthèses du même matériau est relevée à l'audit et annotée (par exemple une capacité au-delà de la limite faradaïque).
-
-Cette comparaison est volontairement **asymétrique** : elle sert à repérer ce qu'un chimiste doit vérifier, jamais à modifier une valeur. Un article peut avoir raison contre la méthode fondatrice ; la base le laisse dire et le signale.
-
-### 7.4 Ce que cela ne prouve pas
-
-- Qu'un protocole marche. Rien ne remplace une reproduction au laboratoire, et la base est faite pour l'accompagner (fiche, limites, ce qu'il faut vérifier avant de refaire), pas pour la remplacer.
-- Que la lecture est sans angle mort. Extracteur et critique sont des modèles de langage ; l'indépendance de lecture réduit les erreurs individuelles, pas les biais communs à ces modèles (par exemple sur des tableaux d'annexe aplatis ou des figures peu lisibles).
-- Que la critique scientifique a raison. C'est une opinion sourcée, à lire comme telle ; son utilité est de dire quoi vérifier, avec quelle source.
-
-## 8. Limites et menaces à la validité
-
-- **Relectures faites par un modèle, pas par un humain.** Les relectures intégrales, les échantillons d'audit et l'arbitrage des doutes sont faits par le modèle orchestrateur, en retournant au texte. Les outils de contrôle humain existent (`echantillon.py` tire des valeurs au hasard avec leur passage et le lien vers l'article, dans une page HTML ; `fiche.py` produit une fiche lisible par publication) mais aucun contrôle humain systématique n'a encore été consigné. C'est la prochaine mesure à faire pour étalonner les taux rapportés.
-- **Valeurs lues sur figure.** Environ 15 % des résultats viennent d'images ; leur précision est celle d'une lecture graphique (± une demi-décade sur un axe logarithmique, ± 0,2 V sur une distribution). Elles sont marquées et le critique les relit, mais elles restent approximatives par nature.
-- **Annexes.** Le texte des annexes PDF est extrait sans mise en page ; les tableaux d'annexe peuvent être mal lus. Les publications sans annexe accessible gardent un score de complétude bas.
-- **Vérification des sources incomplète.** Crossref n'est pas joignable depuis l'environnement d'exécution : 463 DOI cités par les critiques restent à vérifier automatiquement ; seuls `fondateurs.md` et deux à trois sources par palier l'ont été.
-- **Biais de corpus.** Articles en accès libre indexés dans Europe PMC, requêtes visant les études comparatives : la base ne représente pas la littérature de synthèse dans son ensemble, et les revues à dominante biomédicale y sont surreprésentées.
-- **Sources de méthode non extraites.** Les 310 renvois « as reported previously » sont listés, pas suivis : une voie qui renvoie à une autre publication reste incomplète tant que celle-ci n'est pas extraite.
-- **Hétérogénéité du premier palier.** Les 50 premières publications ont été extraites dans un format initial puis mises à niveau ; leur coût et leur nombre de constats (29 « faux ») reflètent cette histoire.
-- **Faux positifs des heuristiques.** L'audit rattache un solvant sans `step_order` à toutes les étapes, ce qui produit des avertissements de température infondés ; ils sont acceptés un par un avec la raison, et la correction de l'heuristique est notée comme amélioration à faire sans affaiblir le contrôle.
-
-## 9. Comment vérifier soi-même
+## 10. Vérifier soi-même
 
 ```bash
-python -I load.py check PMC1234567          # relance tous les contrôles sur une extraction
-python -I audit.py 3                        # relance l'audit d'un palier, écrit audits/palier_003.md
-python -I echantillon.py 100 7              # 100 valeurs au hasard (graine 7) avec leur passage → verification/echantillon.html
-python -I review.py PMC1234567              # vue compacte d'une extraction, citations comprises
-python -I review.py PMC1234567 doubts       # les doutes et leur résolution
-python -I fiche.py PMC1234567               # fiche lisible → fiches/PMC1234567.md
-python -I compare.py "ZIF-8"                # toutes les synthèses d'un matériau, conditions et résultats
-python -I sources_check.py --palier 3 10    # 10 sources du critique scientifique contre Crossref (réseau requis)
-python -I diff_valeurs.py PMC1234567        # valeurs de la version précédente absentes de la version courante
+python3 -I load.py check PMC1234567          # relance tous les contrôles sur une extraction
+python3 -I audit.py 3                        # relance l'audit d'un palier
+python3 -I echantillon.py 100 7              # 100 valeurs au hasard (graine 7) avec leur passage, en page HTML
+python3 -I review.py PMC1234567              # vue compacte d'une extraction, citations comprises
+python3 -I fiche.py PMC1234567               # fiche lisible → fiches/PMC1234567.md
+python3 -I compare.py "ZIF-8"                # toutes les synthèses d'un matériau
+python3 -I diff_valeurs.py PMC1234567        # valeurs perdues entre deux versions d'une extraction
+python3 -I analyses/couverture_valeurs.py    # part des nombres de l'article présents dans la base
 ```
 
-En SQL, chaque ligne porte `quote`, `char_start`, `char_end` : la vérification d'une valeur se réduit à comparer `quote` au contenu de `corpus/text/<PMCID>.txt` entre ces deux positions.
+En SQL, chaque ligne porte `quote`, `char_start`, `char_end` : vérifier une valeur revient à comparer `quote` au contenu de `corpus/text/<PMCID>.txt` entre ces deux positions.
 
-## 10. Reproduire le pipeline
+## 11. Refaire tourner le pipeline
 
 | Fichier | Rôle |
 |---|---|
-| `CLAUDE.md` | boucle de travail de l'orchestrateur, rôles, modèles et efforts, audit de palier, prompts |
-| `RUNBOOK.md` | consignes d'extraction et format JSON |
-| `CRITIQUE.md`, `PLAUSIBILITE.md`, `PROMPT_CORRECTION.md`, `PROMPT_MISE_A_NIVEAU.md` | consignes des critiques, de la correction, de la mise à niveau |
+| `CLAUDE.md` | boucle de travail de l'orchestrateur, rôles, modèles et efforts, audit de palier |
+| `RUNBOOK.md`, `CRITIQUE.md`, `PLAUSIBILITE.md`, `PROMPT_CORRECTION.md` | consignes des agents |
 | `schema.sql`, `db.py` | schéma, vues, accès commun |
 | `fetch.py`, `sections.py`, `enrich.py` | corpus : recherche, texte, annexes, figures, références |
-| `load.py`, `reload_all.py` | contrôles et chargement |
-| `state.py` | file de travail, tirage des relectures, résolutions, statuts, `STATE.json` |
-| `critic_load.py`, `relabel.py` | chargement contrôlé des critiques, renommage de voies |
+| `load.py`, `reload_all.py`, `canon.py` | contrôles, chargement, vocabulaire canonique |
+| `state.py` | file de travail, tirage des relectures, statuts |
+| `critic_load.py`, `relabel.py` | chargement contrôlé des critiques |
 | `audit.py`, `sources_check.py`, `compare.py`, `echantillon.py`, `diff_valeurs.py` | audit et vérification |
-| `review.py`, `fiche.py`, `graphe.py` | vues pour la relecture et le contrôle humain |
-| `references/fondateurs.md`, `references/constantes.md`, `references/verif_doi.py` | bibliothèque du critique scientifique et sa vérification Crossref |
-| `extractions/`, `critiques/`, `journaux/`, `fiches/`, `audits/` | produits du pipeline, un fichier par publication et par passe ; rapports d'audit et de relecture |
+| `analyses/` | audits de contenu et de vérification, chiffres clés, graphiques et page d'accueil (`build_site.py`) |
+| `references/` | bibliothèque du critique scientifique et sa vérification Crossref |
+| `extractions/`, `critiques/`, `journaux/`, `fiches/`, `audits/` | produits du pipeline et rapports |
 
-Ordre d'une publication : `enrich.py` → extraction → `load.py check` / `load` → doutes et relecture → critiques → `critic_load.py` → décisions → correction → `diff_valeurs.py` → rechargement → clôture → commit. Python est toujours lancé avec `-I` depuis la racine du dépôt.
+Ordre pour une publication : `enrich.py` → extraction → `load.py check` / `load` → doutes et relecture → deux critiques → `critic_load.py` → décisions → correction → `diff_valeurs.py` → rechargement → clôture → commit. Python est toujours lancé avec `-I` depuis la racine du dépôt.
 
-## 11. Utiliser la base
-
-### Tables
+## 12. Interroger la base
 
 | Table | Contenu |
 |---|---|
-| `papers` | article, licence, URL, rang et palier, niveau de relecture, statut des critiques |
+| `papers` | article, licence, URL, palier, niveau de relecture, statut des critiques |
 | `materials` | matériau visé : nom, formule, famille, phase, morphologie |
-| `synthesis_routes` | une voie ou une branche (`parent_route_id`), type (`material`, `post_treatment`, `device`), méthode, rendement, score de complétude |
+| `synthesis_routes` | une voie ou une branche (`parent_route_id`), type, méthode, rendement, score de complétude |
 | `route_variations` | ce qu'une branche change par rapport à son parent |
-| `reagents` | réactifs : rôle, quantité, pureté, fournisseur, citations |
-| `steps`, `parameters`, `equipment` | étapes ordonnées, leurs paramètres (valeur d'origine + valeur SI) et leur matériel |
-| `characterizations`, `outcomes` | techniques et conditions de caractérisation ; propriétés mesurées du produit de chaque voie |
-| `not_stated`, `method_sources` | cases déclarées non citées ; renvois bibliographiques de méthode |
-| `annotations` | interprétations typées, en français (`source = 'claude'`) |
-| `doubts`, `critiques`, `plausibility`, `audit_findings` | ambiguïtés et leur résolution ; constats de fidélité et leur statut ; jugements scientifiques ; anomalies d'audit et leur traitement |
+| `reagents`, `steps`, `parameters`, `equipment` | réactifs, étapes ordonnées, paramètres (valeur d'origine, valeur SI, nom canonique), matériel |
+| `characterizations`, `outcomes` | techniques et conditions de mesure ; propriétés mesurées (nom d'origine, nom canonique, groupe) |
+| `not_stated`, `method_sources` | cases déclarées non dites ; renvois bibliographiques de méthode |
+| `annotations`, `doubts` | interprétations typées ; ambiguïtés et leur résolution |
+| `critiques`, `plausibility`, `audit_findings` | constats de fidélité, jugements scientifiques, anomalies d'audit, avec leur statut |
+| `vocabulaire` | correspondance nom écrit → nom canonique |
 
-`synthese_dump.sql` est l'export texte de la base, régénéré à chaque audit de palier. Ouvrir la base : DB Browser for SQLite, DBeaver, ou Python (`sqlite3.connect("synthese.db")`).
-
-### Requêtes utiles
-
-Protocole complet d'une voie ou d'une branche, avec citations :
+Protocole complet d'une branche, avec citations :
 
 ```sql
-SELECT step_order, action, description, parameter, value_num, value_text, unit,
-       overridden_by_branch, quote
+SELECT step_order, action, parameter, value_num, value_text, unit, quote
 FROM v_route_complete
-WHERE pmcid = 'PMC0000000' AND branch_label = 'ZnO-180'
+WHERE pmcid = 'PMC6199062' AND branch_label = 'Sb2S3-180'
 ORDER BY step_order;
 ```
 
-Arbre des branches d'un article, puis effet de chaque variation :
+Effet de chaque variation dans un article :
 
 ```sql
-SELECT * FROM v_branches WHERE pmcid = 'PMC0000000';
-SELECT * FROM v_comparaison WHERE pmcid = 'PMC0000000' ORDER BY parameter, branch_label;
+SELECT * FROM v_comparaison WHERE pmcid = 'PMC6199062' ORDER BY parameter, branch_label;
 ```
 
-Toutes les synthèses hydrothermales d'un oxyde entre 150 et 200 °C :
+Toutes les synthèses hydrothermales entre 150 et 200 °C :
 
 ```sql
 SELECT DISTINCT pmcid, branch_label, material, value_num AS temp_C, quote
@@ -552,16 +564,56 @@ Ce qu'un article ne dit pas, et ce qu'un chimiste doit savoir avant de refaire l
 ```sql
 SELECT r.branch_label, n.scope, n.item FROM not_stated n
 JOIN synthesis_routes r ON r.id = n.route_id JOIN papers p ON p.id = r.paper_id
-WHERE p.pmcid = 'PMC0000000';
+WHERE p.pmcid = 'PMC6199062';
 
 SELECT r.branch_label, a.text FROM annotations a
 JOIN papers p ON p.id = a.paper_id LEFT JOIN synthesis_routes r ON r.id = a.route_id
-WHERE p.pmcid = 'PMC0000000' AND a.type = 'limite_reproductibilite';
+WHERE p.pmcid = 'PMC6199062' AND a.type = 'limite_reproductibilite';
 ```
 
-## 12. Références méthodologiques
+Ouvrir la base : DB Browser for SQLite, DBeaver, ou Python (`sqlite3.connect("synthese.db")`).
 
+## 13. Références
+
+- Europe PMC : présentation (<https://europepmc.org/About>), sous-ensemble en accès libre (<https://europepmc.org/downloads/openaccess>), financeurs (<https://europepmc.org/Funders>) ; « Europe PMC in 2023 », *Nucleic Acids Research* (2024), PMC10767826 ; programme ERC de soutien à Europe PMC (CORDIS, HORIZON_ERC-2025-EPMC).
 - Papiers fondateurs et revues par famille de matériaux, DOI vérifiés sur Crossref : `references/fondateurs.md`.
-- Sources des constantes : NIST Chemistry WebBook ; PubChem (NIH) ; NOAA CAMEO Chemicals ; ECHA ; IUPAC Gold Book et rapports techniques IUPAC ; NIST X-ray Transition Energies Database ; Crystallography Open Database : `references/constantes.md`.
-- Vérification des références : API Crossref (`https://api.crossref.org/works/<DOI>`), par `sources_check.py` et `references/verif_doi.py`.
-- Rapports d'audit et de relecture, leçons et coûts : `audits/pipeline_audit.md`, `audits/palier_00N.md`, `audits/palier_00N_relecture.md`, `audits/palier_001_lecons.md`, `audits/test_10_palier2.md`, `audits/jetons.csv`.
+- Sources des constantes (NIST WebBook, PubChem, NOAA CAMEO, ECHA, IUPAC Gold Book, NIST X-ray, COD) : `references/constantes.md`.
+- Rapports : `audits/palier_NNN_relecture.md`, `audits/audit_contenu.md`, `audits/audit_verification.md`, `audits/couverture_valeurs.md`, `audits/sonde_manques.md`, `audits/registre_tests.md`, `audits/jetons.csv`.
+
+## 14. Les limites : comment on les a cherchées
+
+Les limites n'ont pas été supposées : elles ont été **mesurées** par des contrôles indépendants du pipeline, lancés après la cible des 500 publications. Chaque test et son verdict (positif ou négatif) sont tenus dans `audits/registre_tests.md`.
+
+### 14.1 Les nombres manquants : couverture des valeurs
+
+Question : les nombres écrits dans l'article sont-ils dans la base ? `analyses/couverture_valeurs.py` compare, sans agent, les nombres de chaque article à ceux de son extraction.
+
+| Source | Nombres dans l'article | Absents de la base | Couverture |
+|---|---|---|---|
+| Sections expérimentales (nombres avec unité) | 13 170 | 592 | **95,5 %** |
+| Reste du texte (nombres avec unité) | 49 677 | 5 805 | 88,3 % |
+| Cellules numériques des tableaux | 19 386 | 3 626 | 81,3 % |
+
+Une bonne part des absents est hors du périmètre de la base : comparaisons avec la littérature, statistiques, calculs DFT, barres d'échelle. Sur 40 nombres absents tirés au hasard dans le texte : 15 hors périmètre, 10 conditions de mesure, 8 positions de pics, 7 résultats d'échantillon réels. Les vrais manques des tableaux (2 113 cellules) sont concentrés : 50 publications en portent 84 %. Limites de la mesure : un nombre présent ailleurs dans l'extraction compte comme couvert, et les valeurs lues sur figure ne sont pas mesurées.
+
+### 14.2 Les paramètres non cités
+
+Question : pour chaque méthode, les paramètres essentiels sont-ils cités, déclarés absents, ou jamais cherchés ? `analyses/audit_parametres.py` répartit chaque case voie × paramètre essentiel en trois : **cité** par l'article, **déclaré non dit** par l'extracteur, **hors grille** (ni l'un ni l'autre). Pour l'hydrothermal, 33 % des cases sont citées, 39 % déclarées non dites, 27 % hors grille ; pour le sol-gel, 45 %, 25 % et 31 %. La part « déclarée non dite » mesure ce que les articles omettent ; la part « hors grille » mesure ce que la v1 n'a pas cherché (refroidissement, débit de gaz, répétitions, puissance, taux de remplissage).
+
+Une sonde complémentaire (`analyses/sonde_manques.py`) cherche les termes présents dans les sections expérimentales sans rien d'extrait en face : 1 950 manques possibles, surtout des conditions de mesure. Elle a été mise à l'épreuve : environ la moitié de ses alertes de procédé sont des faux positifs, et elle **ne prédit pas** les valeurs manquantes (corrélation de rang nulle avec la mesure du § 14.1). Elle sert pour les conditions de mesure, pas comme détecteur de valeurs.
+
+### 14.3 La ré-extraction à l'aveugle
+
+20 publications tirées au hasard ont été ré-extraites par un agent qui ne voyait ni la base ni les critiques. 167 des 172 voies se correspondent ; **91,5 % des paramètres et 84 % des résultats** trouvés à l'aveugle sont dans la base, sans aucun conflit sur les valeurs univoques. Dans l'autre sens, une extraction seule ne retrouve que 68 % des paramètres et 57 % des résultats de la base : les critiques et la correction ajoutent environ 30 % de paramètres et 40 % de résultats.
+
+### 14.4 Limites et menaces à la validité
+
+- **Relectures faites par un modèle.** Relectures intégrales, échantillons d'audit et arbitrage des doutes sont faits par l'orchestrateur en retournant au texte, pas par un humain. Les outils de contrôle humain existent (`echantillon.py`, `fiche.py`), mais aucun contrôle humain systématique n'a encore été consigné.
+- **Valeurs lues sur figure.** 18 % des résultats viennent d'images ; leur précision est celle d'une lecture graphique.
+- **Annexes absentes.** 68 publications citent une annexe absente du dépôt PMC ; elles sont signalées en limite de reproductibilité et gardent une complétude basse.
+- **Exposants aplatis.** La conversion XML → texte aplatit les exposants (`10<sup>5</sup>` devient `105`). Les citations restent exactes par rapport au texte converti, mais un chimiste doit relire l'article pour ces valeurs.
+- **Sources du critique scientifique.** Crossref n'est pas joignable depuis l'environnement d'exécution : environ 1 900 DOI restent à vérifier automatiquement ; seuls `fondateurs.md` et des échantillons par palier l'ont été.
+- **Biais de corpus.** Articles en accès libre indexés par une base biomédicale, requêtes orientées vers les études comparatives, revues multidisciplinaires en accès libre surreprésentées : la base ne représente pas toute la littérature de synthèse. Familles sous-représentées : carbures (3 voies), phosphures (1), nitrures (17), matériaux 2D (18).
+- **Sources de méthode non suivies.** Les renvois « as reported previously » sont listés, pas extraits : une voie qui renvoie à une autre publication reste incomplète.
+- **Hétérogénéité du premier palier.** Les 50 premières publications ont été extraites dans un format initial, puis mises à niveau.
+- **Faux positifs des heuristiques.** Le contrôle chimique de l'audit produit des avertissements infondés ; ils sont acceptés un par un avec leur raison, sans affaiblir le contrôle.

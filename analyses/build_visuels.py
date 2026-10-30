@@ -257,13 +257,75 @@ def exemple(lg, th):
     return svg(W, H, T("Exemple d'une voie et de ses branches : Sb2S3 à 120, 150 et 180 °C", "Example of a route and its branches: Sb2S3 at 120, 150 and 180 °C"), "".join(o), th)
 
 
+
+# ------------------------------------------------------------------ 5. pipeline détaillé (consignes et règles strictes)
+def pipeline_detail(lg, th):
+    c = THEMES[th]; T = lambda fr, en: (fr, en)[lg]
+    rows = [
+        ("agent", T("1 Extraction", "1 Extraction"), T("Sonnet, sans web", "Sonnet, no web"),
+         [T("inventaire de tous les échantillons avant d'écrire", "inventory of every sample before writing"),
+          T("voie de base + une branche par variante comparée", "base route + one branch per compared variant"),
+          T("grille v1 : chaque case extraite ou déclarée", "v1 grid: every slot extracted or declared")],
+         [T("chaque valeur a sa citation mot pour mot", "every value has its verbatim quote"),
+          T("rien de déduit, converti ou hérité sans texte", "nothing inferred, converted or inherited unstated"),
+          T("dans le doute : doute écrit, lecture littérale", "when unsure: write a doubt, literal reading")]),
+        ("script", T("2 Contrôle", "2 Automatic check"), "load.py",
+         [T("citations, structure, grille, plages physiques", "quotes, structure, grid, physical ranges"),
+          T("relancé par l'orchestrateur, jamais cru sur parole", "rerun by the orchestrator, never taken on trust")],
+         [T("citation absente du texte → refus", "quote not in the text → rejected"),
+          T("nombre absent de sa citation → refus", "number missing from its quote → rejected"),
+          T("case ni remplie ni déclarée → refus", "slot neither filled nor declared → rejected")]),
+        ("opus", T("3 Relecture", "3 Review"), T("orchestrateur Opus", "Opus orchestrator"),
+         [T("chaque doute tranché en relisant le passage", "every doubt settled by re-reading the passage"),
+          T("1 publication sur 5 relue valeur par valeur", "1 paper in 5 re-read value by value")],
+         [T("tirage par hachage du PMCID (non choisi)", "drawn by PMCID hash (not chosen)"),
+          T("erreurs > 5 % → lot relu + règle ajoutée", "errors > 5% → batch re-read + new rule")]),
+        ("agent", T("4a Fidélité", "4a Fidelity"), T("Sonnet, sans web", "Sonnet, no web"),
+         [T("lit l'article AVANT l'extraction", "reads the paper BEFORE the extraction"),
+          T("cherche : faux, attribution, manquant, déduit", "looks for: wrong, attribution, missing, inferred")],
+         [T("constat sans passage exact de l'article → refusé", "finding without an exact passage → rejected"),
+          T("ne modifie rien", "changes nothing")]),
+        ("opus", T("4b Science", "4b Science"), T("Opus + web", "Opus + web"),
+         [T("stœchiométrie, redox, thermique, solubilité", "stoichiometry, redox, thermal, solubility"),
+          T("comparaison aux méthodes fondatrices", "comparison with founding methods")],
+         [T("calculs posés pour être recomptés", "calculations laid out to be recounted"),
+          T("source avec DOI, sinon déclarée introuvable", "source with DOI, or declared not found")]),
+        ("agent", T("5 Correction", "5 Correction"), T("Sonnet", "Sonnet"),
+         [T("applique les décisions écrites de l'orchestrateur", "applies the orchestrator's written decisions"),
+          T("par script, sur le seul JSON de l'article", "by script, on the paper's JSON only")],
+         [T("le texte tranche, jamais la majorité", "the text decides, never the majority"),
+          T("aucune valeur perdue (contrôle par diff)", "no value lost (checked by diff)"),
+          T("erreur de l'article → annotation, pas correction", "paper's error → annotation, not a fix")]),
+        ("script", T("6 Audit", "6 Batch audit"), T("tous les 50 articles", "every 50 papers"),
+         [T("recontrôle de toutes les citations à leur position", "every quote re-checked at its position"),
+          T("30 valeurs et 5 stœchiométries relues, sources", "30 values and 5 stoichiometries re-read, sources")],
+         [T("palier suivant seulement à 0 anomalie bloquante", "next batch only at 0 blocking finding"),
+          T("anomalie acceptée = explication écrite", "accepted finding = written explanation")]),
+    ]
+    W = 880; x1, x2, x3 = 24, 196, 532; top = 84; rh = 66
+    H = top + len(rows) * rh + 44
+    o = [txt(24, 32, T("Le pipeline en détail : ce qu'on demande à chaque étape, et ce qui bloque", "The pipeline in detail: what each stage is asked to do, and what blocks"), 16, 600),
+         txt(x2, 66, T("Consigne", "Instruction"), 13, 700, cls="m"), txt(x3, 66, T("Règle stricte (vérifiée)", "Strict rule (checked)"), 13, 700, cls="m")]
+    for i, (kind, t1, t2, cons, rule) in enumerate(rows):
+        y = top + i * rh
+        o.append(box(x1, y, 160, rh - 10, kind, c))
+        o.append(txt(x1 + 12, y + 24, t1, 14, 700, fill=c[kind])); o.append(txt(x1 + 12, y + 42, t2, 12, cls="m"))
+        o.append(f'<rect x="{x2}" y="{y}" width="{x3 - x2 - 12}" height="{rh - 10}" rx="6" fill="{c["bg"]}" stroke="{c["line"]}"/>')
+        o.append(f'<rect x="{x3}" y="{y}" width="{W - 24 - x3}" height="{rh - 10}" rx="6" fill="{c["warn_bg"]}" stroke="{c["line"]}"/>')
+        for j, l in enumerate(cons): o.append(txt(x2 + 10, y + 18 + j * 16, "· " + l, 12))
+        for j, l in enumerate(rule): o.append(txt(x3 + 10, y + 18 + j * 16, "✓ " + l, 12, fill=c["tx"]))
+        if i < len(rows) - 1: o.append(arrow(x1 + 80, y + rh - 10, x1 + 80, y + rh - 1, c))
+    o.append(txt(24, H - 16, T("Chaque agent tient un journal de ses choix ; une erreur vue deux fois devient une règle écrite dans les consignes.",
+                               "Each agent keeps a log of its choices; a mistake seen twice becomes a written rule in the instructions."), 12, cls="m"))
+    return svg(W, H, T("Pipeline détaillé : consignes et règles de vérification par étape", "Detailed pipeline: instructions and checking rules per stage"), "".join(o), th)
+
 # ------------------------------------------------------------------ écriture
 def build(S, K):
     """S : summary.json ; K : dict(quotes, relues, fausses, blind). Renvoie la liste des fichiers écrits."""
     os.makedirs(os.path.join(ROOT, OUT), exist_ok=True); files = []
     for lg, code in enumerate(("fr", "en")):
         for th in THEMES:
-            for name, s in (("pipeline", pipeline(lg, th, S)), ("chiffres", kpis(lg, th, S, K)), ("modele", modele(lg, th)), ("exemple", exemple(lg, th))):
+            for name, s in (("pipeline", pipeline(lg, th, S)), ("chiffres", kpis(lg, th, S, K)), ("modele", modele(lg, th)), ("exemple", exemple(lg, th)), ("pipeline_detail", pipeline_detail(lg, th))):
                 f = f"{OUT}{name}_{code}_{th}.svg"; open(os.path.join(ROOT, f), "w", encoding="utf-8").write(s); files.append(f)
     return files
 
